@@ -266,3 +266,20 @@
         align-self: center;
     }
 }
+
+/* 言語切り替えボタンの調整（マニュアルページ用） */
+.language-selector {
+    position: relative;
+    z-index: 1000;
+}
+
+/* ヘッダーの調整 */
+.header {
+    position: relative;
+    z-index: 100;
+}
+
+/* メインコンテンツとの間隔調整 */
+.main-content {
+    margin-top: 2rem;
+}
