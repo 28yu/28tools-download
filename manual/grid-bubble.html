@@ -6,111 +6,241 @@
     <title>符号ON/OFF - 28 Tools Manual</title>
     <!-- favicon.ico エラー解消 -->
     <link rel="icon" href="data:,">
+    <!-- フォント読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/manual.css">
     <style>
-        /* ヘッダー */
+        /* CSS変数 */
+        :root {
+            --concrete-gray: #2c3e50;
+            --light-concrete: #ecf0f1;
+            --steel-blue: #34495e;
+            --glass-white: #ffffff;
+            --architect-green: #27ae60;
+            --construction-orange: #e67e22;
+            --blueprint-blue: #3498db;
+            --disabled-gray: #95a5a6;
+            --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
+            --shadow-medium: 0 8px 30px rgba(0,0,0,0.12);
+            --shadow-heavy: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        /* ベースフォント */
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--light-concrete);
+            color: var(--concrete-gray);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* 建築的モダンヘッダー */
         .header {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            color: white;
+            background: linear-gradient(135deg, var(--concrete-gray) 0%, var(--steel-blue) 100%);
+            color: var(--glass-white);
             padding: 2rem 0;
             position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.05) 50%, transparent 70%);
+            pointer-events: none;
         }
         
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .header-left {
+            flex: 1;
         }
         
         .site-title {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 700;
             margin: 0;
-            background: linear-gradient(45deg, #ffffff, #ecf0f1);
+            background: linear-gradient(45deg, #ffffff, #ecf0f1, #ffffff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            letter-spacing: -0.02em;
         }
         
         .site-subtitle {
-            font-size: 1.1rem;
-            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            margin: 0.8rem 0 0 0;
             opacity: 0.9;
+            font-weight: 400;
+            position: relative;
         }
         
-        /* 言語切り替え */
+        .site-subtitle::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue));
+            border-radius: 1px;
+        }
+        
+        /* 建築的言語切り替えボタン */
         .language-selector {
             position: relative;
+            z-index: 1000;
         }
         
         .language-btn {
             background: rgba(255, 255, 255, 0.1);
             border: 2px solid rgba(255, 255, 255, 0.2);
-            border-radius: 8px;
-            padding: 0.75rem 1rem;
-            color: white;
+            border-radius: 12px;
+            padding: 0.8rem 1.2rem;
+            color: var(--glass-white);
             cursor: pointer;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+            font-weight: 500;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            transition: all 0.3s ease;
+            gap: 0.6rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            box-shadow: var(--shadow-light);
         }
         
         .language-btn:hover {
             background: rgba(255, 255, 255, 0.2);
             border-color: rgba(255, 255, 255, 0.4);
             transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .language-btn:active {
+            transform: translateY(0);
         }
         
         .dropdown-arrow {
-            transition: transform 0.3s ease;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.8rem;
         }
         
         .language-btn.active .dropdown-arrow {
             transform: rotate(180deg);
         }
         
+        /* 建築的ドロップダウン */
         .language-dropdown {
             position: absolute !important;
-            top: calc(100% + 0.5rem) !important;
+            top: calc(100% + 0.8rem) !important;
             right: 0 !important;
-            background: white !important;
-            border: 2px solid #ecf0f1 !important;
-            border-radius: 8px !important;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.3) !important;
-            min-width: 150px !important;
-            z-index: 999999 !important;
+            background: var(--glass-white) !important;
+            border: 2px solid var(--light-concrete) !important;
+            border-radius: 12px !important;
+            box-shadow: var(--shadow-heavy) !important;
+            min-width: 160px !important;
+            z-index: 10000 !important;
             display: none !important;
             opacity: 0;
-            transform: translateY(-10px);
-            transition: all 0.3s ease;
+            transform: translateY(-10px) scale(0.95);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(20px);
+            overflow: hidden;
         }
         
         .language-dropdown.show {
             display: block !important;
             opacity: 1;
-            transform: translateY(0);
+            transform: translateY(0) scale(1);
         }
         
         .language-option {
-            padding: 0.75rem 1rem !important;
+            padding: 0.9rem 1.2rem !important;
             cursor: pointer !important;
-            color: #2c3e50 !important;
-            border-bottom: 1px solid #ecf0f1 !important;
-            transition: background-color 0.2s ease;
+            color: var(--concrete-gray) !important;
+            border-bottom: 1px solid var(--light-concrete) !important;
+            transition: all 0.2s ease !important;
+            font-weight: 500 !important;
+            font-family: 'Inter', 'Noto Sans JP', sans-serif !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 0.6rem !important;
         }
         
         .language-option:hover {
-            background: #f8f9fa !important;
+            background: linear-gradient(135deg, var(--light-concrete) 0%, #f8f9fa 100%) !important;
+            color: var(--steel-blue) !important;
+            transform: translateX(4px) !important;
         }
         
         .language-option:last-child {
             border-bottom: none !important;
+        }
+        
+        .language-option:first-child {
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .language-option:last-child {
+            border-radius: 0 0 10px 10px;
+        }
+        
+        /* 絵文字の確実な表示 */
+        .flag-emoji {
+            font-size: 1.1em !important;
+            line-height: 1 !important;
+            display: inline-block !important;
+            font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols" !important;
+            font-style: normal !important;
+            font-variant: normal !important;
+            text-rendering: auto !important;
+            -webkit-font-smoothing: antialiased !important;
+        }
+        
+        /* レスポンシブ対応 */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+            
+            .site-title {
+                font-size: 2.2rem;
+            }
+            
+            .language-dropdown {
+                right: 50% !important;
+                transform: translateX(50%) translateY(-10px) scale(0.95) !important;
+            }
+            
+            .language-dropdown.show {
+                transform: translateX(50%) translateY(0) scale(1) !important;
+            }
         }
     </style>
 </head>
@@ -125,13 +255,19 @@
                 </div>
                 <div class="language-selector">
                     <button class="language-btn" id="languageBtn">
-                        <span id="currentLanguage">🇯🇵 日本語</span>
+                        <span id="currentLanguage"><span class="flag-emoji">🇯🇵</span> 日本語</span>
                         <span class="dropdown-arrow">▼</span>
                     </button>
                     <div class="language-dropdown" id="languageDropdown">
-                        <div class="language-option" data-lang="ja">🇯🇵 日本語</div>
-                        <div class="language-option" data-lang="en">🇺🇸 English</div>
-                        <div class="language-option" data-lang="zh">🇨🇳 中文</div>
+                        <div class="language-option" data-lang="ja">
+                            <span class="flag-emoji">🇯🇵</span> 日本語
+                        </div>
+                        <div class="language-option" data-lang="en">
+                            <span class="flag-emoji">🇺🇸</span> English
+                        </div>
+                        <div class="language-option" data-lang="zh">
+                            <span class="flag-emoji">🇨🇳</span> 中文
+                        </div>
                     </div>
                 </div>
             </div>
@@ -257,9 +393,8 @@
         </div>
     </footer>
 
-    <!-- JavaScript（シンプル版） -->
+    <!-- JavaScript -->
     <script>
-        // マニュアルページ専用の言語切り替え
         document.addEventListener('DOMContentLoaded', function() {
             const languageBtn = document.getElementById('languageBtn');
             const languageDropdown = document.getElementById('languageDropdown');
@@ -411,12 +546,12 @@
                         
                         const lang = this.getAttribute('data-lang');
                         const langMap = {
-                            'ja': '🇯🇵 日本語',
-                            'en': '🇺🇸 English',
-                            'zh': '🇨🇳 中文'
+                            'ja': '<span class="flag-emoji">🇯🇵</span> 日本語',
+                            'en': '<span class="flag-emoji">🇺🇸</span> English',
+                            'zh': '<span class="flag-emoji">🇨🇳</span> 中文'
                         };
                         
-                        currentLanguage.textContent = langMap[lang];
+                        currentLanguage.innerHTML = langMap[lang];
                         updateLanguage(lang);
                         localStorage.setItem('selectedLanguage', lang);
                         
@@ -428,11 +563,11 @@
                 // 初期設定
                 const savedLang = localStorage.getItem('selectedLanguage') || 'ja';
                 const langMap = {
-                    'ja': '🇯🇵 日本語',
-                    'en': '🇺🇸 English',
-                    'zh': '🇨🇳 中文'
+                    'ja': '<span class="flag-emoji">🇯🇵</span> 日本語',
+                    'en': '<span class="flag-emoji">🇺🇸</span> English',
+                    'zh': '<span class="flag-emoji">🇨🇳</span> 中文'
                 };
-                currentLanguage.textContent = langMap[savedLang];
+                currentLanguage.innerHTML = langMap[savedLang];
                 updateLanguage(savedLang);
             }
         });
