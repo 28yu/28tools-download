@@ -1,4 +1,4 @@
-// 28 Tools 配布サイト - メインJavaScript（マニュアルページ対応版）
+// 28 Tools 配布サイト - メインJavaScript（完全修正版）
 
 // 言語情報
 const languageInfo = {
@@ -232,7 +232,7 @@ const passwords = {
     '2026': 'tools2026'
 };
 
-// モーダルコンテンツ（既存のまま）
+// モーダルコンテンツ
 const modalContents = {
     install: {
         ja: {
@@ -440,7 +440,7 @@ const modalContents = {
     }
 };
 
-// モーダル表示機能（既存のまま）
+// モーダル表示機能
 function showModal(type) {
     const currentLang = localStorage.getItem('selectedLanguage') || 'ja';
     const content = modalContents[type][currentLang];
@@ -489,48 +489,69 @@ function showModal(type) {
     document.addEventListener('keydown', handleEsc);
 }
 
-// DOMContentLoaded イベントリスナー
+// DOMContentLoaded イベントリスナー（完全修正版）
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Main.js loaded');
 
-    // 言語切り替えボタンの設定（要素の存在確認）
+    // 言語切り替えボタンの設定（要素の存在確認強化）
     const languageBtn = document.getElementById('languageBtn');
     const languageDropdown = document.getElementById('languageDropdown');
 
     if (languageBtn && languageDropdown) {
         console.log('Language elements found');
         
-        // 言語切り替えボタンクリック
+        // 言語切り替えボタンクリック（修正版）
         languageBtn.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
             console.log('Language button clicked');
             
-            languageDropdown.classList.toggle('show');
+            // showクラスの切り替え（より確実な方法）
+            const isShown = languageDropdown.classList.contains('show');
+            if (isShown) {
+                languageDropdown.classList.remove('show');
+                console.log('Dropdown hidden');
+            } else {
+                languageDropdown.classList.add('show');
+                console.log('Dropdown shown');
+            }
         });
 
         // ドロップダウン外クリックで閉じる
         document.addEventListener('click', function(e) {
             if (!languageBtn.contains(e.target) && !languageDropdown.contains(e.target)) {
                 languageDropdown.classList.remove('show');
+                console.log('Dropdown closed by outside click');
             }
         });
 
-        // 言語選択
+        // ESCキーで閉じる
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                languageDropdown.classList.remove('show');
+                console.log('Dropdown closed by ESC key');
+            }
+        });
+
+        // 言語選択（修正版）
         const languageOptions = document.querySelectorAll('.language-option');
         console.log('Language options found:', languageOptions.length);
         
-        languageOptions.forEach(option => {
+        languageOptions.forEach((option, index) => {
             option.addEventListener('click', function(e) {
+                e.preventDefault();
                 e.stopPropagation();
                 const lang = this.getAttribute('data-lang');
-                console.log('Language selected:', lang);
+                console.log('Language selected:', lang, 'by option', index);
                 updateLanguage(lang);
                 languageDropdown.classList.remove('show');
             });
         });
     } else {
-        console.warn('Language elements not found');
+        console.warn('Language elements not found:', {
+            languageBtn: !!languageBtn,
+            languageDropdown: !!languageDropdown
+        });
     }
 
     // バージョンタブの設定（メインページのみ）
@@ -564,8 +585,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const footerLinks = document.querySelectorAll('.footer-link');
     if (footerLinks.length > 0) {
         console.log('Footer links found:', footerLinks.length);
-        
-        footerLinks.forEach(link => {
+                footerLinks.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
                 const type = this.getAttribute('data-type');
