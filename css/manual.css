@@ -41,8 +41,8 @@ body {
 /* ヘッダースタイル（メインサイトと同じ） */
 .header {
     background: linear-gradient(135deg, 
-        rgba(52, 73, 94, 1) 0%,     /* #34495e */
-        rgba(44, 62, 80, 1) 100%    /* #2c3e50 */
+        hsl(210, 29%, 29%) 0%,      /* より明るいブルーグレー */
+        hsl(210, 29%, 24%) 100%     /* 少し暗いブルーグレー */
     );
     color: var(--glass-white);
     padding: 2rem 0;
@@ -57,7 +57,11 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.05) 50%, transparent 70%);
+    background: linear-gradient(45deg, 
+        transparent 30%, 
+        rgba(255,255,255,0.08) 50%,  /* より明るいオーバーレイ */
+        transparent 70%
+    );
     pointer-events: none;
 }
 
