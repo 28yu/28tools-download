@@ -227,18 +227,10 @@ body {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
-    min-height: 140px;          /* 追加: 最小高さを指定 */
-    display: flex;              /* 追加: フレックスレイアウト */
-    flex-direction: column;     /* 追加: 縦方向配置 */
-    justify-content: space-between; /* 追加: 要素を均等配置 */
-}
-
-/* 説明文の高さ統一 */
-.feature-description {
-    min-height: 40px;          /* 説明文の最小高さ */
+    min-height: 160px;
     display: flex;
-    align-items: center;       /* 縦方向中央揃え */
-    justify-content: center;   /* 横方向中央揃え */
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .feature-card::before {
@@ -266,6 +258,7 @@ body {
 
 .feature-icon {
     margin-bottom: 14px;
+    flex-shrink: 0;
 }
 
 .feature-icon img {
@@ -286,10 +279,12 @@ body {
     align-items: center;
     gap: 6px;
     flex-wrap: wrap;
+    margin-bottom: 14px;
+    flex-shrink: 0;
 }
 
 .feature-icon-multiple img {
-    width: 32px !important;  /* 複数表示のため小さく */
+    width: 32px !important;
     height: 32px !important;
     opacity: 0.8;
     transition: all 0.3s ease;
@@ -302,33 +297,17 @@ body {
 
 /* 符号ON/OFF用（3つのアイコン）の特別スタイル */
 .feature-card:nth-child(1) .feature-icon-multiple img {
-    width: 28px !important;  /* 3つ表示のためさらに小さく */
+    width: 28px !important;
     height: 28px !important;
-}
-
-/* レスポンシブ対応 */
-@media (max-width: 480px) {
-    .feature-icon-multiple {
-        gap: 4px;
-    }
-    
-    .feature-icon-multiple img {
-        width: 28px !important;
-        height: 28px !important;
-    }
-    
-    .feature-card:nth-child(1) .feature-icon-multiple img {
-        width: 24px !important;
-        height: 24px !important;
-    }
 }
 
 .feature-title {
     font-size: 1rem;
     font-weight: 600;
     color: var(--concrete-gray);
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     font-family: 'Noto Sans JP', sans-serif;
+    flex-shrink: 0;
 }
 
 .feature-description {
@@ -337,6 +316,12 @@ body {
     opacity: 0.8;
     line-height: 1.4;
     font-family: 'Noto Sans JP', sans-serif;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 50px;
 }
 
 /* バージョンセレクター */
@@ -692,6 +677,10 @@ body {
         gap: 10px;
     }
     
+    .feature-card {
+        min-height: 140px;
+    }
+    
     .version-selector {
         padding: 24px;
         margin-bottom: 40px;
@@ -738,6 +727,10 @@ body {
         grid-template-columns: 1fr;
     }
     
+    .feature-card {
+        min-height: 120px;
+    }
+    
     .version-tabs {
         grid-template-columns: 1fr;
     }
@@ -766,5 +759,20 @@ body {
     .modal-content {
         width: 98%;
         margin: 15% auto;
+    }
+    
+    /* 複数アイコン表示用のレスポンシブ対応 */
+    .feature-icon-multiple {
+        gap: 4px;
+    }
+    
+    .feature-icon-multiple img {
+        width: 28px !important;
+        height: 28px !important;
+    }
+    
+    .feature-card:nth-child(1) .feature-icon-multiple img {
+        width: 24px !important;
+        height: 24px !important;
     }
 }
