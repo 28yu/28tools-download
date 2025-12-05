@@ -41,13 +41,16 @@ body {
 /* ヘッダースタイル（メインサイトと同じ） */
 .header {
     background: linear-gradient(135deg, 
-        hsl(210, 29%, 29%) 0%,      /* より明るいブルーグレー */
-        hsl(210, 29%, 24%) 100%     /* 少し暗いブルーグレー */
+        #4a6741 0%,     /* 明るいグリーングレー */
+        #2c3e50 20%,    /* ダークブルー */
+        #34495e 80%,    /* ミディアムブルーグレー */
+        #3498db 100%    /* ライトブルー */
     );
-    color: var(--glass-white);
+    color: #ffffff;
     padding: 2rem 0;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
 .header::before {
