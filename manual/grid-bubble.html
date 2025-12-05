@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/manual.css">
     <style>
-        /* シンプルなヘッダー修正 */
+        /* ヘッダー */
         .header {
             background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
             color: white;
@@ -40,7 +40,7 @@
             opacity: 0.9;
         }
         
-        /* 超シンプルな言語切り替え */
+        /* 言語切り替え（最終版） */
         .language-selector {
             position: relative;
         }
@@ -53,62 +53,84 @@
             color: white;
             cursor: pointer;
             font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
         }
         
         .language-btn:hover {
             background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
         }
         
-        /* 絶対確実に表示されるドロップダウン */
+        .dropdown-arrow {
+            transition: transform 0.3s ease;
+        }
+        
+        .language-btn.active .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+        
+        /* 適切な位置のドロップダウン */
         .language-dropdown {
-            position: fixed !important;
-            top: 120px !important;
-            right: 50px !important;
+            position: absolute !important;
+            top: calc(100% + 0.5rem) !important;
+            right: 0 !important;
             background: white !important;
-            border: 2px solid #333 !important;
+            border: 2px solid #ecf0f1 !important;
             border-radius: 8px !important;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5) !important;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3) !important;
             min-width: 150px !important;
             z-index: 999999 !important;
             display: none !important;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
         }
         
         .language-dropdown.show {
             display: block !important;
+            opacity: 1;
+            transform: translateY(0);
         }
         
         .language-option {
             padding: 0.75rem 1rem !important;
             cursor: pointer !important;
-            color: #333 !important;
-            border-bottom: 1px solid #eee !important;
+            color: #2c3e50 !important;
+            border-bottom: 1px solid #ecf0f1 !important;
+            transition: background-color 0.2s ease;
         }
         
         .language-option:hover {
-            background: #f0f0f0 !important;
+            background: #f8f9fa !important;
         }
         
         .language-option:last-child {
             border-bottom: none !important;
         }
         
-        /* デバッグ表示 */
+        /* デバッグ情報（削除可能） */
         .debug-info {
             position: fixed;
             top: 10px;
             left: 10px;
-            background: red;
+            background: #27ae60;
             color: white;
-            padding: 10px;
+            padding: 8px 12px;
+            border-radius: 4px;
             z-index: 999999;
             font-size: 12px;
+            font-family: monospace;
         }
     </style>
 </head>
 <body>
-    <!-- デバッグ情報 -->
+    <!-- デバッグ情報（後で削除可能） -->
     <div class="debug-info" id="debugInfo">
-        デバッグ: 読み込み中...
+        システム正常
     </div>
 
     <!-- ヘッダー -->
@@ -122,9 +144,8 @@
                 <div class="language-selector">
                     <button class="language-btn" id="languageBtn">
                         <span id="currentLanguage">🇯🇵 日本語</span>
-                        <span class="dropdown-arrow"> ▼</span>
+                        <span class="dropdown-arrow">▼</span>
                     </button>
-                    <!-- 固定位置のドロップダウン -->
                     <div class="language-dropdown" id="languageDropdown">
                         <div class="language-option" data-lang="ja">🇯🇵 日本語</div>
                         <div class="language-option" data-lang="en">🇺🇸 English</div>
@@ -263,25 +284,21 @@
             const languageDropdown = document.getElementById('languageDropdown');
             const currentLanguage = document.getElementById('currentLanguage');
             
-            debugInfo.textContent = 'JavaScript読み込み完了';
-            
             if (languageBtn && languageDropdown && currentLanguage) {
-                debugInfo.textContent = '要素発見: OK';
-                
                 // ボタンクリック
                 languageBtn.addEventListener('click', function(e) {
                     e.preventDefault();
                     e.stopPropagation();
                     
-                    const isVisible = languageDropdown.style.display === 'block';
+                    const isVisible = languageDropdown.classList.contains('show');
                     
                     if (isVisible) {
-                        languageDropdown.style.display = 'none';
                         languageDropdown.classList.remove('show');
+                        languageBtn.classList.remove('active');
                         debugInfo.textContent = 'ドロップダウン: 非表示';
                     } else {
-                        languageDropdown.style.display = 'block';
                         languageDropdown.classList.add('show');
+                        languageBtn.classList.add('active');
                         debugInfo.textContent = 'ドロップダウン: 表示中';
                     }
                 });
@@ -289,15 +306,14 @@
                 // 外部クリックで閉じる
                 document.addEventListener('click', function(e) {
                     if (!languageBtn.contains(e.target) && !languageDropdown.contains(e.target)) {
-                        languageDropdown.style.display = 'none';
                         languageDropdown.classList.remove('show');
-                        debugInfo.textContent = '外部クリックで閉じた';
+                        languageBtn.classList.remove('active');
                     }
                 });
                 
                 // 言語選択
                 const languageOptions = document.querySelectorAll('.language-option');
-                languageOptions.forEach((option, index) => {
+                languageOptions.forEach((option) => {
                     option.addEventListener('click', function(e) {
                         e.stopPropagation();
                         
@@ -310,15 +326,16 @@
                         
                         currentLanguage.textContent = langMap[lang];
                         
+                        // 翻訳適用
                         if (window.updateLanguage) {
                             window.updateLanguage(lang);
                         }
                         
                         localStorage.setItem('selectedLanguage', lang);
-                        languageDropdown.style.display = 'none';
                         languageDropdown.classList.remove('show');
+                        languageBtn.classList.remove('active');
                         
-                        debugInfo.textContent = `言語変更: ${lang}`;
+                        debugInfo.textContent = `言語変更: ${langMap[lang]}`;
                     });
                 });
                 
@@ -331,15 +348,14 @@
                 };
                 currentLanguage.textContent = langMap[savedLang];
                 
+                // 翻訳適用
                 setTimeout(() => {
                     if (window.updateLanguage) {
                         window.updateLanguage(savedLang);
                     }
-                    debugInfo.textContent = `初期言語: ${savedLang}`;
                 }, 100);
                 
-            } else {
-                debugInfo.textContent = 'エラー: 要素が見つかりません';
+                debugInfo.textContent = `初期言語: ${langMap[savedLang]}`;
             }
         });
     </script>
