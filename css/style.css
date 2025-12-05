@@ -227,6 +227,18 @@ body {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    min-height: 140px;          /* 追加: 最小高さを指定 */
+    display: flex;              /* 追加: フレックスレイアウト */
+    flex-direction: column;     /* 追加: 縦方向配置 */
+    justify-content: space-between; /* 追加: 要素を均等配置 */
+}
+
+/* 説明文の高さ統一 */
+.feature-description {
+    min-height: 40px;          /* 説明文の最小高さ */
+    display: flex;
+    align-items: center;       /* 縦方向中央揃え */
+    justify-content: center;   /* 横方向中央揃え */
 }
 
 .feature-card::before {
