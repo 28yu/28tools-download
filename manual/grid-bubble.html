@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>符号ON/OFF - 28 Tools Manual</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/manual.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1 class="site-title" data-lang="site-title">28 Tools</h1>
+                    <p class="site-subtitle" data-lang="site-subtitle">Revit アドイン配布センター</p>
+                </div>
+                <div class="language-selector">
+                    <button class="language-btn" id="languageBtn">
+                        <span id="currentLanguage">🇯🇵 日本語</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <div class="language-option" data-lang="ja">🇯🇵 日本語</div>
+                        <div class="language-option" data-lang="en">🇺🇸 English</div>
+                        <div class="language-option" data-lang="zh">🇨🇳 中文</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <div class="container">
+            <!-- パンくずナビ -->
+            <nav class="breadcrumb">
+                <a href="../index.html" class="breadcrumb-link" data-lang="breadcrumb-home">ホーム</a>
+                <span class="breadcrumb-separator">›</span>
+                <span class="breadcrumb-current" data-lang="breadcrumb-current">符号ON/OFF</span>
+            </nav>
+
+            <!-- 機能ヘッダー -->
+            <div class="function-header">
+                <div class="function-icon">
+                    <img src="../images/icons/both_64.png" alt="符号ON/OFF" class="icon-image">
+                </div>
+                <div class="function-info">
+                    <h1 class="function-title" data-lang="function-title">符号ON/OFF</h1>
+                    <p class="function-description" data-lang="function-description">通り芯・レベルの符号表示をワンクリックで一括ON/OFF切り替え</p>
+                </div>
+            </div>
+
+            <!-- 機能概要 -->
+            <section class="manual-section">
+                <h2 class="section-title" data-lang="overview-title">機能概要</h2>
+                <div class="content-card">
+                    <p data-lang="overview-text">この機能は、現在アクティブなビュー内のすべての通り芯（グリッド）とレベルの符号表示を一括で切り替えることができます。大量の通り芯やレベルがあるプロジェクトで、図面の見やすさを調整する際に非常に便利です。</p>
+                    
+                    <div class="feature-points">
+                        <h3 data-lang="features-title">主な特徴</h3>
+                        <ul>
+                            <li data-lang="feature-1">ワンクリックで全ての通り芯・レベル符号を一括切り替え</li>
+                            <li data-lang="feature-2">現在のアクティブビューのみに適用</li>
+                            <li data-lang="feature-3">平面図、断面図、立面図すべてに対応</li>
+                            <li data-lang="feature-4">元に戻す（Undo）機能で安全に操作可能</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 使用方法 -->
+            <section class="manual-section">
+                <h2 class="section-title" data-lang="usage-title">使用方法</h2>
+                <div class="content-card">
+                    <div class="step-container">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3 data-lang="step1-title">ビューを開く</h3>
+                                <p data-lang="step1-text">符号表示を変更したいビュー（平面図、断面図、立面図など）を開きます。</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3 data-lang="step2-title">28 Toolsを起動</h3>
+                                <p data-lang="step2-text">Revitのアドインタブから「28 Tools」パネルを開きます。</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3 data-lang="step3-title">符号ON/OFFをクリック</h3>
+                                <p data-lang="step3-text">「符号ON/OFF」ボタンをクリックすると、現在のビュー内のすべての通り芯・レベル符号の表示が切り替わります。</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3 data-lang="step4-title">結果を確認</h3>
+                                <p data-lang="step4-text">符号が表示されていた場合は非表示に、非表示だった場合は表示に切り替わります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 注意事項 -->
+            <section class="manual-section">
+                <h2 class="section-title" data-lang="notes-title">注意事項</h2>
+                <div class="content-card">
+                    <div class="warning-box">
+                        <h3 data-lang="warning-title">⚠️ 重要な注意点</h3>
+                        <ul>
+                            <li data-lang="warning-1">この機能は現在アクティブなビューのみに適用されます</li>
+                            <li data-lang="warning-2">他のビューの符号表示には影響しません</li>
+                            <li data-lang="warning-3">3Dビューでは通り芯・レベルの符号表示設定が異なる場合があります</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-box">
+                        <h3 data-lang="tips-title">💡 使用のコツ</h3>
+                        <ul>
+                            <li data-lang="tip-1">印刷用の図面では符号を非表示にして見やすくする</li>
+                            <li data-lang="tip-2">作業中は符号を表示して位置関係を把握しやすくする</li>
+                            <li data-lang="tip-3">間違えて切り替えた場合は Ctrl+Z で元に戻せます</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 戻るボタン -->
+            <div class="back-to-home">
+                <a href="../index.html" class="back-btn" data-lang="back-home">
+                    ← ホームに戻る
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p data-lang="footer-text">&copy; 2024 28 Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/manual.js"></script>
+</body>
+</html>
