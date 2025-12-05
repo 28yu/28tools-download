@@ -7,12 +7,13 @@ const languageInfo = {
     zh: { name: '🇨🇳 中文', flag: '🇨🇳' }
 };
 
-// 翻訳データ
+// 翻訳データ（メインページ + マニュアルページ共通）
 const translations = {
     ja: {
         // 共通要素
         'site-title': '28 Tools',
         'site-subtitle': 'Revit アドイン配布センター',
+        'footer-text': '© 2024 28 Tools. All rights reserved.',
         
         // メインページ専用
         'features-title': '機能一覧',
@@ -68,14 +69,14 @@ const translations = {
         'tip-1': '印刷用の図面では符号を非表示にして見やすくする',
         'tip-2': '作業中は符号を表示して位置関係を把握しやすくする',
         'tip-3': '間違えて切り替えた場合は Ctrl+Z で元に戻せます',
-        'back-home': '← ホームに戻る',
-        'footer-text': '© 2024 28 Tools. All rights reserved.'
+        'back-home': '← ホームに戻る'
     },
     
     en: {
         // 共通要素
         'site-title': '28 Tools',
         'site-subtitle': 'Revit Add-in Distribution Center',
+        'footer-text': '© 2024 28 Tools. All rights reserved.',
         
         // メインページ専用
         'features-title': 'Features',
@@ -131,14 +132,14 @@ const translations = {
         'tip-1': 'Hide bubbles in print drawings for better visibility',
         'tip-2': 'Show bubbles during work to understand spatial relationships',
         'tip-3': 'Use Ctrl+Z to undo if toggled by mistake',
-        'back-home': '← Back to Home',
-        'footer-text': '© 2024 28 Tools. All rights reserved.'
+        'back-home': '← Back to Home'
     },
     
     zh: {
         // 共通要素
         'site-title': '28 Tools',
         'site-subtitle': 'Revit 插件分发中心',
+        'footer-text': '© 2024 28 Tools. 版权所有。',
         
         // メインページ専用
         'features-title': '功能列表',
@@ -194,12 +195,11 @@ const translations = {
         'tip-1': '在打印图纸中隐藏符号以提高可见性',
         'tip-2': '工作时显示符号以了解空间关系',
         'tip-3': '如果误操作可使用Ctrl+Z撤销',
-        'back-home': '← 返回首页',
-        'footer-text': '© 2024 28 Tools. 版权所有。'
+        'back-home': '← 返回首页'
     }
 };
 
-// 言語更新機能
+// 言語更新機能（要素存在確認付き）
 function updateLanguage(lang) {
     console.log('Updating language to:', lang);
     
@@ -232,7 +232,7 @@ const passwords = {
     '2026': 'tools2026'
 };
 
-// モーダルコンテンツ
+// モーダルコンテンツ（既存のまま）
 const modalContents = {
     install: {
         ja: {
@@ -440,7 +440,7 @@ const modalContents = {
     }
 };
 
-// モーダル表示機能
+// モーダル表示機能（既存のまま）
 function showModal(type) {
     const currentLang = localStorage.getItem('selectedLanguage') || 'ja';
     const content = modalContents[type][currentLang];
@@ -498,31 +498,46 @@ document.addEventListener('DOMContentLoaded', function() {
     const languageDropdown = document.getElementById('languageDropdown');
 
     if (languageBtn && languageDropdown) {
+        console.log('Language elements found');
+        
         // 言語切り替えボタンクリック
         languageBtn.addEventListener('click', function(e) {
+            e.preventDefault();
             e.stopPropagation();
+            console.log('Language button clicked');
+            
             languageDropdown.classList.toggle('show');
         });
 
         // ドロップダウン外クリックで閉じる
-        document.addEventListener('click', function() {
-            languageDropdown.classList.remove('show');
+        document.addEventListener('click', function(e) {
+            if (!languageBtn.contains(e.target) && !languageDropdown.contains(e.target)) {
+                languageDropdown.classList.remove('show');
+            }
         });
 
         // 言語選択
         const languageOptions = document.querySelectorAll('.language-option');
+        console.log('Language options found:', languageOptions.length);
+        
         languageOptions.forEach(option => {
-            option.addEventListener('click', function() {
+            option.addEventListener('click', function(e) {
+                e.stopPropagation();
                 const lang = this.getAttribute('data-lang');
+                console.log('Language selected:', lang);
                 updateLanguage(lang);
                 languageDropdown.classList.remove('show');
             });
         });
+    } else {
+        console.warn('Language elements not found');
     }
 
     // バージョンタブの設定（メインページのみ）
     const versionTabs = document.querySelectorAll('.version-tab');
     if (versionTabs.length > 0) {
+        console.log('Version tabs found:', versionTabs.length);
+        
         versionTabs.forEach(tab => {
             tab.addEventListener('click', function() {
                 const version = this.getAttribute('data-version');
@@ -548,6 +563,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // フッターリンクの設定（メインページのみ）
     const footerLinks = document.querySelectorAll('.footer-link');
     if (footerLinks.length > 0) {
+        console.log('Footer links found:', footerLinks.length);
+        
         footerLinks.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -559,6 +576,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 初期言語設定
     const savedLanguage = localStorage.getItem('selectedLanguage') || 'ja';
+    console.log('Initial language:', savedLanguage);
     updateLanguage(savedLanguage);
 });
 
