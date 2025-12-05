@@ -267,6 +267,50 @@ body {
     opacity: 1;
 }
 
+/* 複数アイコン表示用のスタイル */
+.feature-icon-multiple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.feature-icon-multiple img {
+    width: 32px !important;  /* 複数表示のため小さく */
+    height: 32px !important;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon-multiple img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* 符号ON/OFF用（3つのアイコン）の特別スタイル */
+.feature-card:nth-child(1) .feature-icon-multiple img {
+    width: 28px !important;  /* 3つ表示のためさらに小さく */
+    height: 28px !important;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 480px) {
+    .feature-icon-multiple {
+        gap: 4px;
+    }
+    
+    .feature-icon-multiple img {
+        width: 28px !important;
+        height: 28px !important;
+    }
+    
+    .feature-card:nth-child(1) .feature-icon-multiple img {
+        width: 24px !important;
+        height: 24px !important;
+    }
+}
+
 .feature-title {
     font-size: 1rem;
     font-weight: 600;
