@@ -1,10 +1,8 @@
-/* マニュアルページ専用スタイルシート */
-
-/* CSS変数の定義（style.cssから独立） */
+/* CSS変数の定義 */
 :root {
-    --concrete-gray: #34495e;
+    --concrete-gray: #2c3e50;
     --light-concrete: #ecf0f1;
-    --steel-blue: #2c3e50;  
+    --steel-blue: #34495e;
     --glass-white: #ffffff;
     --architect-green: #27ae60;
     --construction-orange: #e67e22;
@@ -38,34 +36,17 @@ body {
     padding: 0 2rem;
 }
 
-/* ヘッダースタイル（メインサイトと同じ） */
+/* ヘッダースタイル（メインページと同じ - 背景なし） */
 .header {
-    background: linear-gradient(135deg, 
-        #4a6741 0%,     /* 明るいグリーングレー */
-        #2c3e50 20%,    /* ダークブルー */
-        #34495e 80%,    /* ミディアムブルーグレー */
-        #3498db 100%    /* ライトブルー */
-    );
-    color: #ffffff;
+    background: transparent;  /* 背景を透明に */
+    color: var(--concrete-gray);  /* テキスト色をダークに */
     padding: 2rem 0;
     position: relative;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
+/* オーバーレイ効果を削除 */
 .header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, 
-        transparent 30%, 
-        rgba(255,255,255,0.08) 50%,  /* より明るいオーバーレイ */
-        transparent 70%
-    );
-    pointer-events: none;
+    display: none;  /* オーバーレイを非表示 */
 }
 
 .header-content {
@@ -84,19 +65,16 @@ body {
     font-size: 2.8rem;
     font-weight: 700;
     margin: 0;
-    background: linear-gradient(45deg, #ffffff, #ecf0f1, #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: var(--concrete-gray);  /* ダークカラーに変更 */
     font-family: 'Inter', 'Noto Sans JP', sans-serif;
     letter-spacing: -0.02em;
+    /* グラデーションテキストを削除してシンプルに */
 }
 
 .site-subtitle {
     font-size: 1.2rem;
     margin: 0.8rem 0 0 0;
-    opacity: 0.9;
+    color: var(--steel-blue);  /* ダークカラーに変更 */
     font-weight: 400;
     position: relative;
 }
@@ -112,18 +90,18 @@ body {
     border-radius: 1px;
 }
 
-/* 言語切り替えボタン */
+/* 言語切り替えボタン（メインページと同じスタイル） */
 .language-selector {
     position: relative;
     z-index: 1000;
 }
 
 .language-btn {
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: var(--glass-white);  /* 白背景に変更 */
+    border: 2px solid var(--light-concrete);  /* ライトグレーボーダー */
     border-radius: 12px;
     padding: 0.8rem 1.2rem;
-    color: var(--glass-white);
+    color: var(--concrete-gray);  /* ダークテキスト */
     cursor: pointer;
     font-size: 0.95rem;
     font-weight: 500;
@@ -131,14 +109,13 @@ body {
     align-items: center;
     gap: 0.6rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    backdrop-filter: blur(10px);
     font-family: 'Inter', 'Noto Sans JP', sans-serif;
     box-shadow: var(--shadow-light);
 }
 
 .language-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.4);
+    background: var(--light-concrete);  /* ホバー時はライトグレー */
+    border-color: var(--blueprint-blue);
     transform: translateY(-2px);
     box-shadow: var(--shadow-medium);
 }
@@ -146,6 +123,7 @@ body {
 .dropdown-arrow {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 0.8rem;
+    color: var(--steel-blue);
 }
 
 .language-btn.active .dropdown-arrow {
@@ -166,7 +144,6 @@ body {
     visibility: hidden;
     transform: translateY(-10px) scale(0.95);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    backdrop-filter: blur(20px);
     overflow: hidden;
 }
 
@@ -470,15 +447,6 @@ body {
         font-size: 2.2rem;
     }
     
-    .language-dropdown {
-        right: 50%;
-        transform: translateX(50%) translateY(-10px) scale(0.95);
-    }
-    
-    .language-dropdown.show {
-        transform: translateX(50%) translateY(0) scale(1);
-    }
-    
     .function-header {
         flex-direction: column;
         text-align: center;
@@ -496,57 +464,5 @@ body {
     
     .step-number {
         align-self: center;
-    }
-}
-
-/* アクセシビリティ向上 */
-.language-btn:focus,
-.language-option:focus,
-.back-btn:focus {
-    outline: 2px solid var(--blueprint-blue);
-    outline-offset: 2px;
-}
-
-/* アニメーション */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.manual-section {
-    animation: fadeIn 0.6s ease-out;
-}
-
-.manual-section:nth-child(2) { animation-delay: 0.1s; }
-.manual-section:nth-child(3) { animation-delay: 0.2s; }
-.manual-section:nth-child(4) { animation-delay: 0.3s; }
-.manual-section:nth-child(5) { animation-delay: 0.4s; }
-
-/* 印刷用スタイル */
-@media print {
-    .header,
-    .breadcrumb,
-    .back-to-home,
-    .footer {
-        display: none;
-    }
-    
-    .main-content {
-        padding: 0;
-    }
-    
-    .content-card {
-        box-shadow: none;
-        border: 1px solid #ccc;
-    }
-    
-    .step-item {
-        break-inside: avoid;
     }
 }
