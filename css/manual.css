@@ -38,15 +38,10 @@ body {
 
 /* ヘッダースタイル（メインページと同じ - 背景なし） */
 .header {
-    background: transparent;  /* 背景を透明に */
-    color: var(--concrete-gray);  /* テキスト色をダークに */
+    background: transparent;
+    color: var(--concrete-gray);
     padding: 2rem 0;
     position: relative;
-}
-
-/* オーバーレイ効果を削除 */
-.header::before {
-    display: none;  /* オーバーレイを非表示 */
 }
 
 .header-content {
@@ -65,10 +60,15 @@ body {
     font-size: 2.8rem;
     font-weight: 700;
     margin: 0;
-    color: var(--concrete-gray);  /* ダークカラーに変更 */
+    color: var(--concrete-gray);
     font-family: 'Inter', 'Noto Sans JP', sans-serif;
     letter-spacing: -0.02em;
-    /* グラデーションテキストを削除してシンプルに */
+    /* メインページと同じスタイルを適用 */
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    text-shadow: none;
 }
 
 .site-subtitle {
