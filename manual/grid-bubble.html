@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>符号ON/OFF - 28 Tools Manual</title>
-    <!-- メインサイトのCSSを先に読み込み -->
     <link rel="stylesheet" href="../css/style.css">
-    <!-- マニュアル専用CSSを後に読み込み -->
     <link rel="stylesheet" href="../css/manual.css">
 </head>
 <body>
@@ -18,7 +16,6 @@
                     <h1 class="site-title" data-lang="site-title">28 Tools</h1>
                     <p class="site-subtitle" data-lang="site-subtitle">Revit アドイン配布センター</p>
                 </div>
-                <!-- 言語切り替えボタン（メインサイトと同じ構造） -->
                 <div class="language-selector">
                     <button class="language-btn" id="languageBtn">
                         <span id="currentLanguage">🇯🇵 日本語</span>
@@ -62,7 +59,7 @@
                     <p data-lang="overview-text">この機能は、現在アクティブなビュー内のすべての通り芯（グリッド）とレベルの符号表示を一括で切り替えることができます。大量の通り芯やレベルがあるプロジェクトで、図面の見やすさを調整する際に非常に便利です。</p>
                     
                     <div class="feature-points">
-                        <h3 data-lang="features-title">主な特徴</h3>
+                        <h3 data-lang="features-title-manual">主な特徴</h3>
                         <ul>
                             <li data-lang="feature-1">ワンクリックで全ての通り芯・レベル符号を一括切り替え</li>
                             <li data-lang="feature-2">現在のアクティブビューのみに適用</li>
@@ -153,8 +150,7 @@
         </div>
     </footer>
 
-    <!-- JavaScriptの読み込み順序を修正 -->
+    <!-- JavaScript（修正されたmain.jsのみ読み込み） -->
     <script src="../js/main.js"></script>
-    <script src="../js/manual.js"></script>
 </body>
 </html>
