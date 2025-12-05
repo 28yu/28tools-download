@@ -1,4 +1,4 @@
-/* 28 Tools 配布サイト - メインスタイルシート（修正版） */
+/* 28 Tools 配布サイト - メインスタイルシート */
 
 /* CSS変数の定義 */
 :root {
@@ -43,7 +43,7 @@ body {
     padding: 0 2rem;
 }
 
-/* ヘッダー（元のデザインに戻す） */
+/* ヘッダー */
 .header {
     background: linear-gradient(135deg, var(--concrete-gray) 0%, var(--steel-blue) 100%);
     color: var(--glass-white);
@@ -75,7 +75,6 @@ body {
     flex: 1;
 }
 
-/* 元のタイトルスタイルに戻す */
 .site-title {
     font-size: 2.8rem;
     font-weight: 700;
@@ -108,7 +107,7 @@ body {
     border-radius: 1px;
 }
 
-/* 言語切り替え（ヘッダー用） */
+/* 言語切り替え */
 .language-selector {
     position: relative;
     z-index: 1000;
@@ -227,7 +226,7 @@ body {
 /* 機能一覧セクション */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     padding: 2rem;
     background: var(--glass-white);
@@ -246,15 +245,12 @@ body {
     cursor: pointer;
     text-decoration: none;
     color: inherit;
-    display: block;
 }
 
 .feature-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-heavy);
     border-color: var(--architect-green);
-    text-decoration: none;
-    color: inherit;
 }
 
 .feature-icon {
@@ -273,7 +269,6 @@ body {
     width: 40px;
     height: 40px;
     object-fit: contain;
-    filter: brightness(0) invert(1);
 }
 
 .feature-title {
@@ -301,7 +296,7 @@ body {
 
 .version-tabs {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
     margin-bottom: 2rem;
 }
@@ -416,8 +411,6 @@ body {
     border-color: var(--blueprint-blue);
     transform: translateY(-2px);
     box-shadow: var(--shadow-medium);
-    text-decoration: none;
-    color: var(--concrete-gray);
 }
 
 /* フッター */
@@ -559,16 +552,6 @@ body {
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 1024px) {
-    .features-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .version-tabs {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 @media (max-width: 768px) {
     .container {
         padding: 0 1rem;
@@ -640,8 +623,7 @@ body {
 .language-btn:focus,
 .language-option:focus,
 .footer-link:focus,
-.version-tab:focus,
-.feature-card:focus {
+.version-tab:focus {
     outline: 2px solid var(--blueprint-blue);
     outline-offset: 2px;
 }
