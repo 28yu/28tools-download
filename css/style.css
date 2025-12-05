@@ -227,7 +227,7 @@ body {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
-    min-height: 160px;
+    height: 180px;                    /* min-height → height に変更 */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
