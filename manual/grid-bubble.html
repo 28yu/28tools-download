@@ -6,7 +6,7 @@
     <title>符号ON/OFF - 28 Tools Manual</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/manual.css">
-    <!-- 緊急修正用インラインCSS -->
+    <!-- 修正版インラインCSS -->
     <style>
         /* ヘッダー修正 */
         .header {
@@ -14,7 +14,8 @@
             color: var(--glass-white, #ffffff);
             padding: 2rem 0;
             position: relative;
-            overflow: hidden;
+            overflow: visible; /* 変更: overflowをvisibleに */
+            z-index: 100;
         }
         
         .header-content {
@@ -24,6 +25,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
+            position: relative; /* 追加 */
         }
         
         .site-title {
@@ -45,7 +47,7 @@
         /* 言語切り替えボタン修正 */
         .language-selector {
             position: relative;
-            z-index: 1000;
+            z-index: 9999; /* 大幅に増加 */
         }
         
         .language-btn {
@@ -61,6 +63,8 @@
             font-size: 0.9rem;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
+            position: relative; /* 追加 */
+            z-index: 10000; /* 追加 */
         }
         
         .language-btn:hover {
@@ -71,25 +75,28 @@
         
         .language-dropdown {
             position: absolute;
-            top: 100%;
+            top: calc(100% + 0.5rem); /* 変更: より明確な位置指定 */
             right: 0;
             background: white;
             border: 2px solid #ecf0f1;
             border-radius: 8px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3); /* 影を強化 */
             min-width: 150px;
-            z-index: 1001;
+            z-index: 10001; /* さらに高く */
             opacity: 0;
             visibility: hidden;
             transform: translateY(-10px);
             transition: all 0.3s ease;
-            margin-top: 0.5rem;
+            /* デバッグ用の背景色を一時的に追加 */
+            background-color: white !important;
+            border: 3px solid red !important; /* デバッグ用 */
         }
         
         .language-dropdown.show {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: translateY(0) !important;
+            display: block !important; /* 強制表示 */
         }
         
         .language-option {
@@ -97,6 +104,11 @@
             cursor: pointer;
             transition: background-color 0.2s ease;
             color: #2c3e50;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .language-option:last-child {
+            border-bottom: none;
         }
         
         .language-option:hover {
@@ -110,9 +122,32 @@
         .language-btn.active .dropdown-arrow {
             transform: rotate(180deg);
         }
+        
+        /* メインコンテンツのz-indexを下げる */
+        .main-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* デバッグ用：ドロップダウンが見えるかテスト */
+        .debug-dropdown {
+            position: fixed;
+            top: 100px;
+            right: 50px;
+            background: red;
+            color: white;
+            padding: 1rem;
+            z-index: 99999;
+            display: none;
+        }
     </style>
 </head>
 <body>
+    <!-- デバッグ用要素 -->
+    <div class="debug-dropdown" id="debugDropdown">
+        デバッグ: ドロップダウンテスト
+    </div>
+
     <!-- ヘッダー -->
     <header class="header">
         <div class="container">
@@ -258,33 +293,66 @@
     <!-- JavaScript -->
     <script src="../js/main.js"></script>
     <script>
-        // 緊急修正用JavaScript
+        // 修正版JavaScript
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('Emergency fix loaded');
+            console.log('Fixed version loaded');
             
-            // 言語切り替えボタンの動作を強制的に設定
+            // 要素の取得
             const languageBtn = document.getElementById('languageBtn');
             const languageDropdown = document.getElementById('languageDropdown');
             const currentLanguage = document.getElementById('currentLanguage');
+            const debugDropdown = document.getElementById('debugDropdown');
+            
+            console.log('Elements found:', {
+                languageBtn: !!languageBtn,
+                languageDropdown: !!languageDropdown,
+                currentLanguage: !!currentLanguage
+            });
             
             if (languageBtn && languageDropdown && currentLanguage) {
-                // ボタンクリック
+                // ボタンクリックイベント
                 languageBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
                     e.stopPropagation();
-                    languageDropdown.classList.toggle('show');
-                    languageBtn.classList.toggle('active');
+                    
+                    console.log('Language button clicked');
+                    
+                    // ドロップダウンの表示切り替え
+                    const isShown = languageDropdown.classList.contains('show');
+                    
+                    if (isShown) {
+                        languageDropdown.classList.remove('show');
+                        languageBtn.classList.remove('active');
+                        debugDropdown.style.display = 'none';
+                        console.log('Dropdown hidden');
+                    } else {
+                        languageDropdown.classList.add('show');
+                        languageBtn.classList.add('active');
+                        debugDropdown.style.display = 'block';
+                        debugDropdown.textContent = 'ドロップダウンが表示されているはずです';
+                        console.log('Dropdown shown');
+                    }
                 });
                 
                 // 外部クリックで閉じる
-                document.addEventListener('click', function() {
-                    languageDropdown.classList.remove('show');
-                    languageBtn.classList.remove('active');
+                document.addEventListener('click', function(e) {
+                    if (!languageBtn.contains(e.target) && !languageDropdown.contains(e.target)) {
+                        languageDropdown.classList.remove('show');
+                        languageBtn.classList.remove('active');
+                        debugDropdown.style.display = 'none';
+                        console.log('Dropdown closed by outside click');
+                    }
                 });
                 
                 // 言語選択
                 const languageOptions = document.querySelectorAll('.language-option');
-                languageOptions.forEach(option => {
-                    option.addEventListener('click', function() {
+                console.log('Language options found:', languageOptions.length);
+                
+                languageOptions.forEach((option, index) => {
+                    option.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        console.log('Language option clicked:', index);
+                        
                         const lang = this.getAttribute('data-lang');
                         const langMap = {
                             'ja': '🇯🇵 日本語',
@@ -302,6 +370,9 @@
                         localStorage.setItem('selectedLanguage', lang);
                         languageDropdown.classList.remove('show');
                         languageBtn.classList.remove('active');
+                        debugDropdown.style.display = 'none';
+                        
+                        console.log('Language changed to:', lang);
                     });
                 });
                 
@@ -320,6 +391,10 @@
                         window.updateLanguage(savedLang);
                     }
                 }, 100);
+                
+                console.log('Initial language set to:', savedLang);
+            } else {
+                console.error('Required elements not found');
             }
         });
     </script>
