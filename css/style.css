@@ -712,3 +712,29 @@ body {
         margin: 15% auto;
     }
 }
+
+/* Revitリボンスクリーンショット */
+.ribbon-preview {
+    margin-bottom: 48px;
+}
+
+.ribbon-image-container {
+    text-align: center;
+    padding: 0;
+}
+
+.ribbon-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--light-border);
+    background: #fff;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .ribbon-image {
+        border-radius: 6px;
+    }
+}
