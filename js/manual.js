@@ -1,6 +1,10 @@
 // マニュアルページ専用の多言語対応
 const manualTranslations = {
     ja: {
+        // 共通（メインサイトと同じ）
+        'site-title': '28 Tools',
+        'site-subtitle': 'Revit アドイン配布センター',
+        
         // パンくず
         'breadcrumb-home': 'ホーム',
         'breadcrumb-current': '符号ON/OFF',
@@ -48,6 +52,10 @@ const manualTranslations = {
     },
     
     en: {
+        // 共通
+        'site-title': '28 Tools',
+        'site-subtitle': 'Revit Add-in Distribution Center',
+        
         // Breadcrumb
         'breadcrumb-home': 'Home',
         'breadcrumb-current': 'Grid Bubble ON/OFF',
@@ -95,6 +103,10 @@ const manualTranslations = {
     },
     
     zh: {
+        // 共通
+        'site-title': '28 Tools',
+        'site-subtitle': 'Revit 插件分发中心',
+        
         // 面包屑导航
         'breadcrumb-home': '首页',
         'breadcrumb-current': '符号开关',
@@ -144,26 +156,29 @@ const manualTranslations = {
 
 // マニュアルページの言語切り替え機能
 document.addEventListener('DOMContentLoaded', function() {
-    // 既存のmain.jsの言語切り替え機能を拡張
-    const originalUpdateLanguage = window.updateLanguage;
-    
-    window.updateLanguage = function(lang) {
-        // 元の関数を実行（ヘッダー部分）
-        if (originalUpdateLanguage) {
-            originalUpdateLanguage(lang);
-        }
+    // メインサイトの言語切り替え機能を待つ
+    setTimeout(function() {
+        // 既存のupdateLanguage関数を拡張
+        const originalUpdateLanguage = window.updateLanguage;
         
-        // マニュアル専用の翻訳を適用
-        const elements = document.querySelectorAll('[data-lang]');
-        elements.forEach(element => {
-            const key = element.getAttribute('data-lang');
-            if (manualTranslations[lang] && manualTranslations[lang][key]) {
-                element.textContent = manualTranslations[lang][key];
+        window.updateLanguage = function(lang) {
+            // 元の関数を実行（ヘッダー・言語切り替え部分）
+            if (originalUpdateLanguage) {
+                originalUpdateLanguage(lang);
             }
-        });
-    };
-    
-    // 初期化時に現在の言語を適用
-    const currentLang = localStorage.getItem('selectedLanguage') || 'ja';
-    window.updateLanguage(currentLang);
+            
+            // マニュアル専用の翻訳を適用
+            const elements = document.querySelectorAll('[data-lang]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-lang');
+                if (manualTranslations[lang] && manualTranslations[lang][key]) {
+                    element.textContent = manualTranslations[lang][key];
+                }
+            });
+        };
+        
+        // 初期化時に現在の言語を適用
+        const currentLang = localStorage.getItem('selectedLanguage') || 'ja';
+        window.updateLanguage(currentLang);
+    }, 100);
 });
