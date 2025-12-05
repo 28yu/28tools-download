@@ -8,11 +8,482 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/manual.css">
+    
+    <style>
+        /* 完全独立型CSS - メインサイトと同じデザイン */
+        :root {
+            --concrete-gray: #2c3e50;
+            --light-concrete: #ecf0f1;
+            --steel-blue: #34495e;
+            --glass-white: #ffffff;
+            --architect-green: #27ae60;
+            --construction-orange: #e67e22;
+            --blueprint-blue: #3498db;
+            --disabled-gray: #95a5a6;
+            --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
+            --shadow-medium: 0 8px 30px rgba(0,0,0,0.12);
+            --shadow-heavy: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background: var(--light-concrete);
+            color: var(--concrete-gray);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ヘッダー（メインサイトと同じ） */
+        .header {
+            background: linear-gradient(135deg, var(--concrete-gray) 0%, var(--steel-blue) 100%);
+            color: var(--glass-white);
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.05) 50%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .header-left {
+            flex: 1;
+        }
+
+        .site-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin: 0;
+            background: linear-gradient(45deg, #ffffff, #ecf0f1, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            letter-spacing: -0.02em;
+        }
+
+        .site-subtitle {
+            font-size: 1.2rem;
+            margin: 0.8rem 0 0 0;
+            opacity: 0.9;
+            font-weight: 400;
+            position: relative;
+        }
+
+        .site-subtitle::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue));
+            border-radius: 1px;
+        }
+
+        /* 言語切り替え */
+        .language-selector {
+            position: relative;
+        }
+
+        .language-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 0.8rem 1.2rem;
+            color: var(--glass-white);
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            box-shadow: var(--shadow-light);
+        }
+
+        .language-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .dropdown-arrow {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.8rem;
+        }
+
+        .language-btn.active .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .language-dropdown {
+            position: absolute;
+            top: calc(100% + 0.8rem);
+            right: 0;
+            background: var(--glass-white);
+            border: 2px solid var(--light-concrete);
+            border-radius: 12px;
+            box-shadow: var(--shadow-heavy);
+            min-width: 160px;
+            z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px) scale(0.95);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(20px);
+            overflow: hidden;
+        }
+
+        .language-dropdown.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+        }
+
+        .language-option {
+            padding: 0.9rem 1.2rem;
+            cursor: pointer;
+            color: var(--concrete-gray);
+            border-bottom: 1px solid var(--light-concrete);
+            transition: all 0.2s ease;
+            font-weight: 500;
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .language-option:hover {
+            background: linear-gradient(135deg, var(--light-concrete) 0%, #f8f9fa 100%);
+            color: var(--steel-blue);
+            transform: translateX(4px);
+        }
+
+        .language-option:last-child {
+            border-bottom: none;
+        }
+
+        /* メインコンテンツ */
+        .main-content {
+            padding: 2rem 0;
+        }
+
+        /* パンくずナビ */
+        .breadcrumb {
+            margin: 2rem 0;
+            font-size: 0.9rem;
+            color: var(--steel-blue);
+        }
+
+        .breadcrumb-link {
+            color: var(--blueprint-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-link:hover {
+            color: var(--architect-green);
+        }
+
+        .breadcrumb-separator {
+            margin: 0 0.5rem;
+            color: var(--disabled-gray);
+        }
+
+        .breadcrumb-current {
+            color: var(--concrete-gray);
+            font-weight: 500;
+        }
+
+        /* 機能ヘッダー */
+        .function-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: var(--glass-white);
+            border-radius: 12px;
+            box-shadow: var(--shadow-medium);
+            border-left: 4px solid var(--architect-green);
+        }
+
+        .function-icon {
+            flex-shrink: 0;
+        }
+
+        .icon-image {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+        }
+
+        .function-info {
+            flex: 1;
+        }
+
+        .function-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--concrete-gray);
+            margin: 0 0 0.5rem 0;
+        }
+
+        .function-description {
+            font-size: 1.1rem;
+            color: var(--steel-blue);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* セクション */
+        .manual-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--concrete-gray);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--light-concrete);
+        }
+
+        .content-card {
+            background: var(--glass-white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-light);
+            border: 1px solid var(--light-concrete);
+        }
+
+        .content-card p {
+            line-height: 1.8;
+            color: var(--steel-blue);
+            margin-bottom: 1.5rem;
+        }
+
+        /* 特徴ポイント */
+        .feature-points h3 {
+            color: var(--concrete-gray);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .feature-points ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-points li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--steel-blue);
+            line-height: 1.6;
+        }
+
+        .feature-points li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--architect-green);
+            font-weight: bold;
+        }
+
+        /* ステップ */
+        .step-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 8px;
+            border-left: 4px solid var(--blueprint-blue);
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: var(--blueprint-blue);
+            color: var(--glass-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .step-content h3 {
+            color: var(--concrete-gray);
+            font-size: 1.2rem;
+            margin: 0 0 0.5rem 0;
+            font-weight: 600;
+        }
+
+        .step-content p {
+            color: var(--steel-blue);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* 警告・ヒント */
+        .warning-box, .tips-box {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left-color: #ffc107;
+        }
+
+        .warning-box h3 {
+            color: #856404;
+            margin: 0 0 1rem 0;
+            font-size: 1.1rem;
+        }
+
+        .warning-box ul, .warning-box li {
+            color: #856404;
+        }
+
+        .tips-box {
+            background: #d1ecf1;
+            border-left-color: #17a2b8;
+        }
+
+        .tips-box h3 {
+            color: #0c5460;
+            margin: 0 0 1rem 0;
+            font-size: 1.1rem;
+        }
+
+        .tips-box ul, .tips-box li {
+            color: #0c5460;
+        }
+
+        .warning-box ul, .tips-box ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+
+        .warning-box li, .tips-box li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        /* 戻るボタン */
+        .back-to-home {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: var(--blueprint-blue);
+            color: var(--glass-white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-light);
+        }
+
+        .back-btn:hover {
+            background: var(--architect-green);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        /* フッター */
+        .footer {
+            background: var(--concrete-gray);
+            color: var(--glass-white);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        /* レスポンシブ */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+            
+            .site-title {
+                font-size: 2.2rem;
+            }
+            
+            .function-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .function-title {
+                font-size: 2rem;
+            }
+            
+            .step-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .step-number {
+                align-self: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- ヘッダー（メインページと同じ構造） -->
+    <!-- ヘッダー -->
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -154,15 +625,14 @@
         </div>
     </footer>
 
-    <!-- 修正されたmain.jsを読み込み -->
-    <script src="../js/main.js"></script>
-    
-    <!-- マニュアルページ専用の追加JavaScript -->
+    <!-- 完全独立JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // マニュアルページ専用の翻訳データを追加
-            const manualTranslations = {
+            // 翻訳データ
+            const translations = {
                 ja: {
+                    'site-title': '28 Tools',
+                    'site-subtitle': 'Revit アドイン配布センター',
                     'breadcrumb-home': 'ホーム',
                     'breadcrumb-current': '符号ON/OFF',
                     'function-title': '符号ON/OFF',
@@ -192,9 +662,12 @@
                     'tip-1': '印刷用の図面では符号を非表示にして見やすくする',
                     'tip-2': '作業中は符号を表示して位置関係を把握しやすくする',
                     'tip-3': '間違えて切り替えた場合は Ctrl+Z で元に戻せます',
-                    'back-home': '← ホームに戻る'
+                    'back-home': '← ホームに戻る',
+                    'footer-text': '© 2024 28 Tools. All rights reserved.'
                 },
                 en: {
+                    'site-title': '28 Tools',
+                    'site-subtitle': 'Revit Add-in Distribution Center',
                     'breadcrumb-home': 'Home',
                     'breadcrumb-current': 'Grid Bubble ON/OFF',
                     'function-title': 'Grid Bubble ON/OFF',
@@ -224,9 +697,12 @@
                     'tip-1': 'Hide bubbles in print drawings for better visibility',
                     'tip-2': 'Show bubbles during work to understand spatial relationships',
                     'tip-3': 'Use Ctrl+Z to undo if toggled by mistake',
-                    'back-home': '← Back to Home'
+                    'back-home': '← Back to Home',
+                    'footer-text': '© 2024 28 Tools. All rights reserved.'
                 },
                 zh: {
+                    'site-title': '28 Tools',
+                    'site-subtitle': 'Revit 插件分发中心',
                     'breadcrumb-home': '首页',
                     'breadcrumb-current': '符号开关',
                     'function-title': '符号开关',
@@ -256,35 +732,117 @@
                     'tip-1': '在打印图纸中隐藏符号以提高可见性',
                     'tip-2': '工作时显示符号以了解空间关系',
                     'tip-3': '如果误操作可使用Ctrl+Z撤销',
-                    'back-home': '← 返回首页'
+                    'back-home': '← 返回首页',
+                    'footer-text': '© 2024 28 Tools. 版权所有。'
                 }
             };
 
-            // main.jsのupdateLanguage関数を拡張
-            const originalUpdateLanguage = window.updateLanguage;
-            
-            window.updateLanguage = function(lang) {
-                // 元の関数を実行（メインサイト共通部分）
-                if (originalUpdateLanguage) {
-                    originalUpdateLanguage(lang);
-                }
-                
-                // マニュアル専用の翻訳を適用
+            // 要素取得
+            const languageBtn = document.getElementById('languageBtn');
+            const languageDropdown = document.getElementById('languageDropdown');
+            const currentLanguage = document.getElementById('currentLanguage');
+
+            // 翻訳適用関数
+            function updateLanguage(lang) {
                 const elements = document.querySelectorAll('[data-lang]');
                 elements.forEach(element => {
                     const key = element.getAttribute('data-lang');
-                    if (manualTranslations[lang] && manualTranslations[lang][key]) {
-                        element.textContent = manualTranslations[lang][key];
+                    if (translations[lang] && translations[lang][key]) {
+                        element.textContent = translations[lang][key];
                     }
                 });
-            };
+                
+                // 現在の言語表示を更新
+                const langMap = {
+                    'ja': '🇯🇵 日本語',
+                    'en': '🇺🇸 English',
+                    'zh': '🇨🇳 中文'
+                };
+                
+                if (currentLanguage && langMap[lang]) {
+                    currentLanguage.textContent = langMap[lang];
+                }
+                
+                // ローカルストレージに保存
+                localStorage.setItem('selectedLanguage', lang);
+            }
 
-            // 初期化時に現在の言語を適用
-            setTimeout(() => {
-                const currentLang = localStorage.getItem('selectedLanguage') || 'ja';
-                window.updateLanguage(currentLang);
-            }, 100);
+            if (languageBtn && languageDropdown && currentLanguage) {
+                // 言語切り替えボタンクリック
+                languageBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    languageDropdown.classList.toggle('show');
+                    languageBtn.classList.toggle('active');
+                });
+
+                // ドロップダウン外クリックで閉じる
+                document.addEventListener('click', function(e) {
+                    if (!languageBtn.contains(e.target) && !languageDropdown.contains(e.target)) {
+                        languageDropdown.classList.remove('show');
+                        languageBtn.classList.remove('active');
+                    }
+                });
+
+                // ESCキーで閉じる
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape') {
+                        languageDropdown.classList.remove('show');
+                        languageBtn.classList.remove('active');
+                    }
+                });
+
+                // 言語選択
+                const languageOptions = document.querySelectorAll('.language-option');
+                languageOptions.forEach(option => {
+                    option.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        
+                        const lang = this.getAttribute('data-lang');
+                        updateLanguage(lang);
+                        
+                        languageDropdown.classList.remove('show');
+                        languageBtn.classList.remove('active');
+                    });
+                });
+
+                // 初期言語設定
+                const savedLang = localStorage.getItem('selectedLanguage') || 'ja';
+                updateLanguage(savedLang);
+            }
+
+            // スムーズスクロール（戻るボタン用）
+            const backBtn = document.querySelector('.back-btn');
+            if (backBtn) {
+                backBtn.addEventListener('click', function(e) {
+                    // 通常のリンク動作を維持
+                    // 必要に応じてスムーズスクロールを追加可能
+                });
+            }
+
+            // 画像読み込みエラー処理
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.addEventListener('error', function() {
+                    this.style.display = 'none';
+                    console.warn('Image failed to load:', this.src);
+                });
+            });
+
+            // アクセシビリティ向上
+            const interactiveElements = document.querySelectorAll('button, a, .language-option');
+            interactiveElements.forEach(element => {
+                element.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        if (e.key === ' ') e.preventDefault();
+                        this.click();
+                    }
+                });
+            });
+
+            console.log('28 Tools Manual Page - Grid Bubble ON/OFF loaded successfully');
         });
     </script>
 </body>
-</html>
+</html>                    
