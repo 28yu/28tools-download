@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>符号ON/OFF - 28 Tools Manual</title>
+    <!-- メインサイトのCSSを先に読み込み -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- マニュアル専用CSSを後に読み込み -->
     <link rel="stylesheet" href="../css/manual.css">
 </head>
 <body>
@@ -16,6 +18,7 @@
                     <h1 class="site-title" data-lang="site-title">28 Tools</h1>
                     <p class="site-subtitle" data-lang="site-subtitle">Revit アドイン配布センター</p>
                 </div>
+                <!-- 言語切り替えボタン（メインサイトと同じ構造） -->
                 <div class="language-selector">
                     <button class="language-btn" id="languageBtn">
                         <span id="currentLanguage">🇯🇵 日本語</span>
@@ -150,6 +153,7 @@
         </div>
     </footer>
 
+    <!-- JavaScriptの読み込み順序を修正 -->
     <script src="../js/main.js"></script>
     <script src="../js/manual.js"></script>
 </body>
