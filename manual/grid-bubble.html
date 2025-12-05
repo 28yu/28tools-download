@@ -6,6 +6,111 @@
     <title>符号ON/OFF - 28 Tools Manual</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/manual.css">
+    <!-- 緊急修正用インラインCSS -->
+    <style>
+        /* ヘッダー修正 */
+        .header {
+            background: linear-gradient(135deg, var(--concrete-gray, #2c3e50) 0%, var(--steel-blue, #34495e) 100%);
+            color: var(--glass-white, #ffffff);
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .site-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+            background: linear-gradient(45deg, #ffffff, #ecf0f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .site-subtitle {
+            font-size: 1.1rem;
+            margin: 0.5rem 0 0 0;
+            opacity: 0.9;
+        }
+        
+        /* 言語切り替えボタン修正 */
+        .language-selector {
+            position: relative;
+            z-index: 1000;
+        }
+        
+        .language-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .language-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        .language-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border: 2px solid #ecf0f1;
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            min-width: 150px;
+            z-index: 1001;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            margin-top: 0.5rem;
+        }
+        
+        .language-dropdown.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .language-option {
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            color: #2c3e50;
+        }
+        
+        .language-option:hover {
+            background: #ecf0f1;
+        }
+        
+        .dropdown-arrow {
+            transition: transform 0.3s ease;
+        }
+        
+        .language-btn.active .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+    </style>
 </head>
 <body>
     <!-- ヘッダー -->
@@ -150,7 +255,73 @@
         </div>
     </footer>
 
-    <!-- JavaScript（修正されたmain.jsのみ読み込み） -->
+    <!-- JavaScript -->
     <script src="../js/main.js"></script>
+    <script>
+        // 緊急修正用JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Emergency fix loaded');
+            
+            // 言語切り替えボタンの動作を強制的に設定
+            const languageBtn = document.getElementById('languageBtn');
+            const languageDropdown = document.getElementById('languageDropdown');
+            const currentLanguage = document.getElementById('currentLanguage');
+            
+            if (languageBtn && languageDropdown && currentLanguage) {
+                // ボタンクリック
+                languageBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    languageDropdown.classList.toggle('show');
+                    languageBtn.classList.toggle('active');
+                });
+                
+                // 外部クリックで閉じる
+                document.addEventListener('click', function() {
+                    languageDropdown.classList.remove('show');
+                    languageBtn.classList.remove('active');
+                });
+                
+                // 言語選択
+                const languageOptions = document.querySelectorAll('.language-option');
+                languageOptions.forEach(option => {
+                    option.addEventListener('click', function() {
+                        const lang = this.getAttribute('data-lang');
+                        const langMap = {
+                            'ja': '🇯🇵 日本語',
+                            'en': '🇺🇸 English',
+                            'zh': '🇨🇳 中文'
+                        };
+                        
+                        currentLanguage.textContent = langMap[lang];
+                        
+                        // main.jsの翻訳機能を呼び出し
+                        if (window.updateLanguage) {
+                            window.updateLanguage(lang);
+                        }
+                        
+                        localStorage.setItem('selectedLanguage', lang);
+                        languageDropdown.classList.remove('show');
+                        languageBtn.classList.remove('active');
+                    });
+                });
+                
+                // 初期言語設定
+                const savedLang = localStorage.getItem('selectedLanguage') || 'ja';
+                const langMap = {
+                    'ja': '🇯🇵 日本語',
+                    'en': '🇺🇸 English',
+                    'zh': '🇨🇳 中文'
+                };
+                currentLanguage.textContent = langMap[savedLang];
+                
+                // 少し遅延させてmain.jsの翻訳を適用
+                setTimeout(() => {
+                    if (window.updateLanguage) {
+                        window.updateLanguage(savedLang);
+                    }
+                }, 100);
+            }
+        });
+    </script>
 </body>
 </html>
