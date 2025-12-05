@@ -2,9 +2,9 @@
 
 /* CSS変数の定義（style.cssから独立） */
 :root {
-    --concrete-gray: #2c3e50;
+    --concrete-gray: #34495e;
     --light-concrete: #ecf0f1;
-    --steel-blue: #34495e;
+    --steel-blue: #2c3e50;  
     --glass-white: #ffffff;
     --architect-green: #27ae60;
     --construction-orange: #e67e22;
@@ -40,7 +40,10 @@ body {
 
 /* ヘッダースタイル（メインサイトと同じ） */
 .header {
-    background: linear-gradient(135deg, var(--concrete-gray) 0%, var(--steel-blue) 100%);
+    background: linear-gradient(135deg, 
+        rgba(52, 73, 94, 1) 0%,     /* #34495e */
+        rgba(44, 62, 80, 1) 100%    /* #2c3e50 */
+    );
     color: var(--glass-white);
     padding: 2rem 0;
     position: relative;
