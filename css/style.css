@@ -1,4 +1,4 @@
-/* 28 Tools 配布サイト - メインスタイルシート */
+/* 28 Tools 配布サイト - メインスタイルシート（修正版） */
 
 /* CSS変数の定義 */
 :root {
@@ -43,12 +43,24 @@ body {
     padding: 0 2rem;
 }
 
-/* ヘッダー */
+/* ヘッダー（元のデザインに戻す） */
 .header {
-    background: transparent;
-    color: var(--concrete-gray);
+    background: linear-gradient(135deg, var(--concrete-gray) 0%, var(--steel-blue) 100%);
+    color: var(--glass-white);
     padding: 2rem 0;
     position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.05) 50%, transparent 70%);
+    pointer-events: none;
 }
 
 .header-content {
@@ -63,11 +75,16 @@ body {
     flex: 1;
 }
 
+/* 元のタイトルスタイルに戻す */
 .site-title {
     font-size: 2.8rem;
     font-weight: 700;
     margin: 0;
-    color: var(--concrete-gray);
+    background: linear-gradient(45deg, #ffffff, #ecf0f1, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
     font-family: 'Inter', 'Noto Sans JP', sans-serif;
     letter-spacing: -0.02em;
 }
@@ -75,7 +92,7 @@ body {
 .site-subtitle {
     font-size: 1.2rem;
     margin: 0.8rem 0 0 0;
-    color: var(--steel-blue);
+    opacity: 0.9;
     font-weight: 400;
     position: relative;
 }
@@ -91,18 +108,18 @@ body {
     border-radius: 1px;
 }
 
-/* 言語切り替え */
+/* 言語切り替え（ヘッダー用） */
 .language-selector {
     position: relative;
     z-index: 1000;
 }
 
 .language-btn {
-    background: var(--glass-white);
-    border: 2px solid var(--light-concrete);
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
     padding: 0.8rem 1.2rem;
-    color: var(--concrete-gray);
+    color: var(--glass-white);
     cursor: pointer;
     font-size: 0.95rem;
     font-weight: 500;
@@ -110,13 +127,14 @@ body {
     align-items: center;
     gap: 0.6rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
     font-family: 'Inter', 'Noto Sans JP', sans-serif;
     box-shadow: var(--shadow-light);
 }
 
 .language-btn:hover {
-    background: var(--light-concrete);
-    border-color: var(--blueprint-blue);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
     transform: translateY(-2px);
     box-shadow: var(--shadow-medium);
 }
@@ -124,7 +142,6 @@ body {
 .dropdown-arrow {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 0.8rem;
-    color: var(--steel-blue);
 }
 
 .language-btn.active .dropdown-arrow {
@@ -145,6 +162,7 @@ body {
     visibility: hidden;
     transform: translateY(-10px) scale(0.95);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(20px);
     overflow: hidden;
 }
 
@@ -209,7 +227,7 @@ body {
 /* 機能一覧セクション */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 2rem;
     background: var(--glass-white);
@@ -228,12 +246,15 @@ body {
     cursor: pointer;
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 
 .feature-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-heavy);
     border-color: var(--architect-green);
+    text-decoration: none;
+    color: inherit;
 }
 
 .feature-icon {
@@ -252,6 +273,7 @@ body {
     width: 40px;
     height: 40px;
     object-fit: contain;
+    filter: brightness(0) invert(1);
 }
 
 .feature-title {
@@ -279,7 +301,7 @@ body {
 
 .version-tabs {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(6, 1fr);
     gap: 1rem;
     margin-bottom: 2rem;
 }
@@ -394,6 +416,8 @@ body {
     border-color: var(--blueprint-blue);
     transform: translateY(-2px);
     box-shadow: var(--shadow-medium);
+    text-decoration: none;
+    color: var(--concrete-gray);
 }
 
 /* フッター */
@@ -535,6 +559,16 @@ body {
 }
 
 /* レスポンシブ対応 */
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .version-tabs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 0 1rem;
@@ -606,7 +640,8 @@ body {
 .language-btn:focus,
 .language-option:focus,
 .footer-link:focus,
-.version-tab:focus {
+.version-tab:focus,
+.feature-card:focus {
     outline: 2px solid var(--blueprint-blue);
     outline-offset: 2px;
 }
@@ -652,9 +687,4 @@ body {
     .feature-card {
         break-inside: avoid;
     }
-}
-
-/* ダークモード対応（将来の拡張用） */
-@media (prefers-color-scheme: dark) {
-    /* ダークモードのスタイルは将来実装予定 */
 }
