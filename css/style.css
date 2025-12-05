@@ -220,14 +220,14 @@ body {
     background: var(--light-concrete);
     border: 1px solid rgba(52, 73, 94, 0.1);
     border-radius: 12px;
-    padding: 18px 14px;
+    padding: 12px 10px;
     text-align: center;
     text-decoration: none;
     color: inherit;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
-    height: 180px;                    /* min-height → height に変更 */
+    height: 130px;                    /* min-height → height に変更 */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -257,7 +257,7 @@ body {
 }
 
 .feature-icon {
-    margin-bottom: 14px;
+    margin-bottom: 8px;
     flex-shrink: 0;
 }
 
@@ -279,7 +279,7 @@ body {
     align-items: center;
     gap: 6px;
     flex-wrap: wrap;
-    margin-bottom: 14px;
+    margin-bottom: 18px;
     flex-shrink: 0;
 }
 
@@ -305,7 +305,7 @@ body {
     font-size: 1rem;
     font-weight: 600;
     color: var(--concrete-gray);
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     font-family: 'Noto Sans JP', sans-serif;
     flex-shrink: 0;
 }
@@ -321,7 +321,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 50px;
+    min-height: 30px;
 }
 
 /* バージョンセレクター */
@@ -677,9 +677,10 @@ body {
         gap: 10px;
     }
     
-    .feature-card {
-        min-height: 140px;
-    }
+.feature-card {
+    height: 120px;
+    padding: 10px 8px;
+}
     
     .version-selector {
         padding: 24px;
@@ -727,9 +728,10 @@ body {
         grid-template-columns: 1fr;
     }
     
-    .feature-card {
-        min-height: 120px;
-    }
+.feature-card {
+    height: 110px;
+    padding: 8px 6px;
+}
     
     .version-tabs {
         grid-template-columns: 1fr;
