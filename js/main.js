@@ -603,3 +603,59 @@ document.addEventListener('DOMContentLoaded', function() {
 // グローバルに公開
 window.updateLanguage = updateLanguage;
 window.showModal = showModal;
+
+// ヘッダー読み込み関数
+async function loadHeader() {
+    try {
+        // GitHub Pagesのパス調整
+        const basePath = window.location.pathname.includes('/manual/') ? '../' : './';
+        const response = await fetch(basePath + 'includes/header.html');
+        
+        if (!response.ok) {
+            throw new Error('Header file not found');
+        }
+        const headerHTML = await response.text();
+        
+        // ヘッダーを挿入
+        const headerContainer = document.getElementById('header-container');
+        if (headerContainer) {
+            headerContainer.innerHTML = headerHTML;
+            
+            // マニュアルページの場合、タイトルにホームリンク機能を追加
+            if (document.body.classList.contains('manual-page')) {
+                const mainTitle = document.querySelector('.main-title');
+                if (mainTitle) {
+                    mainTitle.style.cursor = 'pointer';
+                    mainTitle.addEventListener('click', () => {
+                        window.location.href = '../index.html';
+                    });
+                }
+            }
+            
+            // 言語切り替えの初期化（ヘッダー読み込み後）
+            initializeLanguageSwitcher();
+            
+            // 現在の言語でヘッダーを更新
+            const currentLang = localStorage.getItem('selectedLanguage') || 'ja';
+            updateLanguage(currentLang);
+        }
+    } catch (error) {
+        console.error('Failed to load header:', error);
+        // エラー時は既存のヘッダーをそのまま使用
+    }
+}
+
+// 既存のDOMContentLoadedイベントを修正
+document.addEventListener('DOMContentLoaded', function() {
+    // ヘッダーを読み込み
+    loadHeader();
+    
+    // 既存の初期化処理（ヘッダー読み込み後に実行されるよう調整）
+    setTimeout(() => {
+        // モーダル初期化
+        initializeModals();
+        
+        // バージョンタブ初期化
+        initializeVersionTabs();
+    }, 200);
+});
