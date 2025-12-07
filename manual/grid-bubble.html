@@ -8,29 +8,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/manual.css">
 </head>
-<body>
-    <!-- ヘッダー（メインページと同じ構造） -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="header-left">
-                    <h1 class="site-title" data-lang="site-title">28 Tools</h1>
-                    <p class="site-subtitle" data-lang="site-subtitle">Revit アドイン配布センター</p>
-                </div>
-                <div class="language-selector">
-                    <button class="language-btn" id="languageBtn">
-                        <span id="currentLanguage">🇯🇵 日本語</span>
-                        <span class="dropdown-arrow">▼</span>
-                    </button>
-                    <div class="language-dropdown" id="languageDropdown">
-                        <div class="language-option" data-lang="ja">🇯🇵 日本語</div>
-                        <div class="language-option" data-lang="en">🇺🇸 English</div>
-                        <div class="language-option" data-lang="zh">🇨🇳 中文</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+<body class="manual-page">
+    <!-- 共通ヘッダー読み込み -->
+    <div id="header-container"></div>
 
     <!-- メインコンテンツ -->
     <main class="main-content">
