@@ -5,11 +5,25 @@
     </div>
 </header>
 
-<!-- 言語切り替えボタン -->
+<!-- 言語切り替えボタン（国旗絵文字版） -->
 <div class="language-switcher">
-    <select id="languageSelect" class="language-select">
-        <option value="ja">🇯🇵 日本語</option>
-        <option value="en">🇺🇸 English</option>
-        <option value="zh">🇨🇳 中文</option>
-    </select>
+    <button class="lang-btn" onclick="toggleLanguageMenu()">
+        <span class="lang-flag">🇯🇵</span>
+        <span class="lang-text">日本語</span>
+        <span class="lang-arrow">▼</span>
+    </button>
+    <div class="lang-menu" id="langMenu">
+        <a href="#" onclick="switchLanguage('ja')" class="lang-option active">
+            <span class="flag">🇯🇵</span>
+            <span>日本語</span>
+        </a>
+        <a href="#" onclick="switchLanguage('en')" class="lang-option">
+            <span class="flag">🇺🇸</span>
+            <span>English</span>
+        </a>
+        <a href="#" onclick="switchLanguage('zh')" class="lang-option">
+            <span class="flag">🇨🇳</span>
+            <span>中文</span>
+        </a>
+    </div>
 </div>
