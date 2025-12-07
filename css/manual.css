@@ -466,3 +466,18 @@ body {
         align-self: center;
     }
 }
+
+/* マニュアルページのヘッダー調整 */
+.manual-page .header {
+    background: transparent;
+    border-bottom: 1px solid var(--light-border);
+}
+
+.manual-page .main-title {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.manual-page .main-title:hover {
+    color: var(--architect-green);
+}
