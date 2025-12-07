@@ -1,4 +1,4 @@
-// 28 Tools 配布サイト - メインJavaScript（完全修正版）
+// 28 Tools 配布サイト - メインJavaScript（v5.0完全修正版）
 
 // 言語情報
 const languageInfo = {
@@ -11,6 +11,8 @@ const languageInfo = {
 const translations = {
     ja: {
         // 共通要素
+        'mainTitle': '28 Tools',
+        'subtitle': 'Revit アドイン配布センター',
         'site-title': '28 Tools',
         'site-subtitle': 'Revit アドイン配布センター',
         'footer-text': '© 2024 28 Tools. All rights reserved.',
@@ -74,6 +76,8 @@ const translations = {
     
     en: {
         // 共通要素
+        'mainTitle': '28 Tools',
+        'subtitle': 'Revit Add-in Distribution Center',
         'site-title': '28 Tools',
         'site-subtitle': 'Revit Add-in Distribution Center',
         'footer-text': '© 2024 28 Tools. All rights reserved.',
@@ -137,6 +141,8 @@ const translations = {
     
     zh: {
         // 共通要素
+        'mainTitle': '28 Tools',
+        'subtitle': 'Revit 插件分发中心',
         'site-title': '28 Tools',
         'site-subtitle': 'Revit 插件分发中心',
         'footer-text': '© 2024 28 Tools. 版权所有。',
@@ -198,29 +204,6 @@ const translations = {
         'back-home': '← 返回首页'
     }
 };
-
-// 言語更新機能（要素存在確認付き）
-function updateLanguage(lang) {
-    console.log('Updating language to:', lang);
-    
-    // 現在の言語表示を更新（要素の存在確認）
-    const currentLanguage = document.getElementById('currentLanguage');
-    if (currentLanguage && languageInfo[lang]) {
-        currentLanguage.textContent = languageInfo[lang].name;
-    }
-
-    // 翻訳を適用（要素の存在確認を追加）
-    const elements = document.querySelectorAll('[data-lang]');
-    elements.forEach(element => {
-        const key = element.getAttribute('data-lang');
-        if (translations[lang] && translations[lang][key]) {
-            element.textContent = translations[lang][key];
-        }
-    });
-
-    // ローカルストレージに保存
-    localStorage.setItem('selectedLanguage', lang);
-}
 
 // バージョン別パスワード
 const passwords = {
@@ -440,170 +423,6 @@ const modalContents = {
     }
 };
 
-// モーダル表示機能
-function showModal(type) {
-    const currentLang = localStorage.getItem('selectedLanguage') || 'ja';
-    const content = modalContents[type][currentLang];
-    
-    if (!content) return;
-    
-    // モーダル要素を作成
-    const modal = document.createElement('div');
-    modal.className = 'modal-overlay';
-    modal.innerHTML = `
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>${content.title}</h2>
-                <button class="modal-close">&times;</button>
-            </div>
-            <div class="modal-body">
-                ${content.content}
-            </div>
-        </div>
-    `;
-    
-    document.body.appendChild(modal);
-    
-    // アニメーション用のクラス追加
-    setTimeout(() => modal.classList.add('show'), 10);
-    
-    // 閉じるボタンのイベント
-    const closeBtn = modal.querySelector('.modal-close');
-    const closeModal = () => {
-        modal.classList.remove('show');
-        setTimeout(() => document.body.removeChild(modal), 300);
-    };
-    
-    closeBtn.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) closeModal();
-    });
-    
-    // ESCキーで閉じる
-    const handleEsc = (e) => {
-        if (e.key === 'Escape') {
-            closeModal();
-            document.removeEventListener('keydown', handleEsc);
-        }
-    };
-    document.addEventListener('keydown', handleEsc);
-}
-
-// DOMContentLoaded イベントリスナー（完全修正版）
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Main.js loaded');
-
-    // 言語切り替えボタンの設定（要素の存在確認強化）
-    const languageBtn = document.getElementById('languageBtn');
-    const languageDropdown = document.getElementById('languageDropdown');
-
-    if (languageBtn && languageDropdown) {
-        console.log('Language elements found');
-        
-        // 言語切り替えボタンクリック（修正版）
-        languageBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            console.log('Language button clicked');
-            
-            // showクラスの切り替え（より確実な方法）
-            const isShown = languageDropdown.classList.contains('show');
-            if (isShown) {
-                languageDropdown.classList.remove('show');
-                console.log('Dropdown hidden');
-            } else {
-                languageDropdown.classList.add('show');
-                console.log('Dropdown shown');
-            }
-        });
-
-        // ドロップダウン外クリックで閉じる
-        document.addEventListener('click', function(e) {
-            if (!languageBtn.contains(e.target) && !languageDropdown.contains(e.target)) {
-                languageDropdown.classList.remove('show');
-                console.log('Dropdown closed by outside click');
-            }
-        });
-
-        // ESCキーで閉じる
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                languageDropdown.classList.remove('show');
-                console.log('Dropdown closed by ESC key');
-            }
-        });
-
-        // 言語選択（修正版）
-        const languageOptions = document.querySelectorAll('.language-option');
-        console.log('Language options found:', languageOptions.length);
-        
-        languageOptions.forEach((option, index) => {
-            option.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                const lang = this.getAttribute('data-lang');
-                console.log('Language selected:', lang, 'by option', index);
-                updateLanguage(lang);
-                languageDropdown.classList.remove('show');
-            });
-        });
-    } else {
-        console.warn('Language elements not found:', {
-            languageBtn: !!languageBtn,
-            languageDropdown: !!languageDropdown
-        });
-    }
-
-    // バージョンタブの設定（メインページのみ）
-    const versionTabs = document.querySelectorAll('.version-tab');
-    if (versionTabs.length > 0) {
-        console.log('Version tabs found:', versionTabs.length);
-        
-        versionTabs.forEach(tab => {
-            tab.addEventListener('click', function() {
-                const version = this.getAttribute('data-version');
-                const status = this.getAttribute('data-status');
-                
-                if (status === 'disabled') {
-                    alert(`Revit ${version}版は開発予定です。`);
-                    return;
-                }
-                
-                const inputPassword = prompt(`Revit ${version}版のパスワードを入力してください:`);
-                
-                if (inputPassword === passwords[version]) {
-                    alert(`Revit ${version}版のダウンロードを開始します。`);
-                    // 実際のダウンロード処理をここに実装
-                } else if (inputPassword !== null) {
-                    alert('パスワードが正しくありません。');
-                }
-            });
-        });
-    }
-
-    // フッターリンクの設定（メインページのみ）
-    const footerLinks = document.querySelectorAll('.footer-link');
-    if (footerLinks.length > 0) {
-        console.log('Footer links found:', footerLinks.length);
-                footerLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const type = this.getAttribute('data-type');
-                showModal(type);
-            });
-        });
-    }
-
-    // 初期言語設定
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'ja';
-    console.log('Initial language:', savedLanguage);
-    updateLanguage(savedLanguage);
-});
-
-// グローバルに公開
-window.updateLanguage = updateLanguage;
-window.showModal = showModal;
-
 // ヘッダー読み込み関数
 async function loadHeader() {
     try {
@@ -638,6 +457,9 @@ async function loadHeader() {
             // 現在の言語でヘッダーを更新
             const currentLang = localStorage.getItem('selectedLanguage') || 'ja';
             updateLanguage(currentLang);
+            
+            // 言語切り替えボタンの表示を更新
+            updateLanguageButton(currentLang);
         }
     } catch (error) {
         console.error('Failed to load header:', error);
@@ -645,8 +467,245 @@ async function loadHeader() {
     }
 }
 
-// 既存のDOMContentLoadedイベントを修正
+// 言語更新機能（要素存在確認付き）
+function updateLanguage(lang) {
+    console.log('Updating language to:', lang);
+    
+    // 翻訳を適用（data-lang-key属性を使用）
+    const elements = document.querySelectorAll('[data-lang-key]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-lang-key');
+        if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+
+    // 旧形式のdata-lang属性もサポート
+    const oldElements = document.querySelectorAll('[data-lang]');
+    oldElements.forEach(element => {
+        const key = element.getAttribute('data-lang');
+        if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+
+    // ローカルストレージに保存
+    localStorage.setItem('selectedLanguage', lang);
+}
+
+// 言語切り替えボタンの表示更新関数
+function updateLanguageButton(lang) {
+    const langFlag = document.querySelector('.lang-flag');
+    const langText = document.querySelector('.lang-text');
+    
+    if (langFlag && langText) {
+        const langConfig = {
+            'ja': { flag: '🇯🇵', text: '日本語' },
+            'en': { flag: '🇺🇸', text: 'English' },
+            'zh': { flag: '🇨🇳', text: '中文' }
+        };
+        
+        const config = langConfig[lang] || langConfig['ja'];
+        langFlag.textContent = config.flag;
+        langText.textContent = config.text;
+        
+        // アクティブ状態の更新
+        const langOptions = document.querySelectorAll('.lang-option');
+        langOptions.forEach(option => {
+            option.classList.remove('active');
+            if (option.onclick && option.onclick.toString().includes(`'${lang}'`)) {
+                option.classList.add('active');
+            }
+        });
+    }
+}
+
+// 言語切り替え関数
+function switchLanguage(lang) {
+    localStorage.setItem('selectedLanguage', lang);
+    updateLanguage(lang);
+    updateLanguageButton(lang);
+    
+    // メニューを閉じる
+    const langMenu = document.getElementById('langMenu');
+    if (langMenu) {
+        langMenu.style.display = 'none';
+    }
+}
+
+// 言語メニューの表示切り替え
+function toggleLanguageMenu() {
+    const langMenu = document.getElementById('langMenu');
+    if (langMenu) {
+        langMenu.style.display = langMenu.style.display === 'block' ? 'none' : 'block';
+    }
+}
+
+// 言語切り替えの初期化
+function initializeLanguageSwitcher() {
+    // メニュー外クリックで閉じる
+    document.addEventListener('click', function(event) {
+        const langSwitcher = document.querySelector('.language-switcher');
+        const langMenu = document.getElementById('langMenu');
+        
+        if (langSwitcher && langMenu && !langSwitcher.contains(event.target)) {
+            langMenu.style.display = 'none';
+        }
+    });
+}
+
+// モーダル表示機能
+function showModal(type) {
+    const currentLang = localStorage.getItem('selectedLanguage') || 'ja';
+    const content = modalContents[type][currentLang];
+    
+    if (!content) return;
+    
+    // モーダル要素を作成
+    const modal = document.createElement('div');
+    modal.className = 'modal-overlay';
+    modal.innerHTML = `
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>${content.title}</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                ${content.content}
+            </div>
+        </div>
+    `;
+    
+        document.body.appendChild(modal);
+    
+    // アニメーション用のクラス追加
+    setTimeout(() => modal.classList.add('show'), 10);
+    
+    // 閉じるボタンのイベント
+    const closeBtn = modal.querySelector('.modal-close');
+    const closeModal = () => {
+        modal.classList.remove('show');
+        setTimeout(() => document.body.removeChild(modal), 300);
+    };
+    
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+    
+    // ESCキーで閉じる
+    const handleEsc = (e) => {
+        if (e.key === 'Escape') {
+            closeModal();
+            document.removeEventListener('keydown', handleEsc);
+        }
+    };
+    document.addEventListener('keydown', handleEsc);
+}
+
+// モーダル初期化関数
+function initializeModals() {
+    // フッターリンクの設定（メインページのみ）
+    const footerCards = document.querySelectorAll('.footer-card');
+    if (footerCards.length > 0) {
+        console.log('Footer cards found:', footerCards.length);
+        footerCards.forEach(card => {
+            card.addEventListener('click', function(e) {
+                e.preventDefault();
+                const onclick = this.getAttribute('onclick');
+                if (onclick) {
+                    // onclick属性からモーダルタイプを抽出
+                    const match = onclick.match(/showModal\('(\w+)'\)/);
+                    if (match) {
+                        showModal(match[1]);
+                    }
+                }
+            });
+        });
+    }
+}
+
+// バージョンタブ初期化関数
+function initializeVersionTabs() {
+    // バージョンタブの設定（メインページのみ）
+    const versionTabs = document.querySelectorAll('.tab');
+    if (versionTabs.length > 0) {
+        console.log('Version tabs found:', versionTabs.length);
+        
+        versionTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const onclick = this.getAttribute('onclick');
+                if (onclick) {
+                    // onclick属性からバージョンと状態を抽出
+                    const match = onclick.match(/selectVersion\('(\d+)', '(\w+)'\)/);
+                    if (match) {
+                        const version = match[1];
+                        const status = match[2];
+                        selectVersion(version, status);
+                    }
+                }
+            });
+        });
+    }
+}
+
+// バージョン選択関数
+function selectVersion(version, status) {
+    const currentLang = localStorage.getItem('selectedLanguage') || 'ja';
+    
+    if (status === 'planned') {
+        const messages = {
+            ja: `Revit ${version}版は開発予定です。`,
+            en: `Revit ${version} version is planned for development.`,
+            zh: `Revit ${version}版本计划开发中。`
+        };
+        alert(messages[currentLang] || messages.ja);
+        return;
+    }
+    
+    if (status === 'development') {
+        const messages = {
+            ja: `Revit ${version}版は開発中です。`,
+            en: `Revit ${version} version is under development.`,
+            zh: `Revit ${version}版本正在开发中。`
+        };
+        alert(messages[currentLang] || messages.ja);
+        return;
+    }
+    
+    const promptMessages = {
+        ja: `Revit ${version}版のパスワードを入力してください:`,
+        en: `Enter password for Revit ${version}:`,
+        zh: `请输入Revit ${version}版本的密码:`
+    };
+    
+    const inputPassword = prompt(promptMessages[currentLang] || promptMessages.ja);
+    
+    if (inputPassword === passwords[version]) {
+        const successMessages = {
+            ja: `Revit ${version}版のダウンロードを開始します。`,
+            en: `Starting download for Revit ${version}.`,
+            zh: `开始下载Revit ${version}版本。`
+        };
+        alert(successMessages[currentLang] || successMessages.ja);
+        
+        // 実際のダウンロード処理をここに実装
+        // window.location.href = `downloads/28Tools_Revit${version}_v1.0.zip`;
+        
+    } else if (inputPassword !== null) {
+        const errorMessages = {
+            ja: 'パスワードが正しくありません。',
+            en: 'Incorrect password.',
+            zh: '密码不正确。'
+        };
+        alert(errorMessages[currentLang] || errorMessages.ja);
+    }
+}
+
+// DOMContentLoaded イベントリスナー（完全修正版）
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Main.js v5.0 loaded');
+    
     // ヘッダーを読み込み
     loadHeader();
     
@@ -657,5 +716,18 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // バージョンタブ初期化
         initializeVersionTabs();
-    }, 200);
+        
+        // 初期言語設定
+        const savedLanguage = localStorage.getItem('selectedLanguage') || 'ja';
+        console.log('Initial language:', savedLanguage);
+        updateLanguage(savedLanguage);
+        
+    }, 300); // ヘッダー読み込み完了を待つ
 });
+
+// グローバルに公開（HTMLのonclick属性から呼び出すため）
+window.updateLanguage = updateLanguage;
+window.showModal = showModal;
+window.switchLanguage = switchLanguage;
+window.toggleLanguageMenu = toggleLanguageMenu;
+window.selectVersion = selectVersion;
