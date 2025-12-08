@@ -520,8 +520,9 @@ function updateLanguageButton(lang) {
     }
 }
 
-// 言語切り替え関数
+// 言語切り替え関数（修正版）
 function switchLanguage(lang) {
+    console.log('switchLanguage called with:', lang);
     localStorage.setItem('selectedLanguage', lang);
     updateLanguage(lang);
     updateLanguageButton(lang);
@@ -529,27 +530,61 @@ function switchLanguage(lang) {
     // メニューを閉じる
     const langMenu = document.getElementById('langMenu');
     if (langMenu) {
+        langMenu.classList.remove('show');
         langMenu.style.display = 'none';
+        console.log('Language menu closed after selection');
     }
 }
 
-// 言語メニューの表示切り替え
+// 言語メニューの表示切り替え（修正版）
 function toggleLanguageMenu() {
+    console.log('toggleLanguageMenu called');
     const langMenu = document.getElementById('langMenu');
     if (langMenu) {
-        langMenu.style.display = langMenu.style.display === 'block' ? 'none' : 'block';
+        const isVisible = langMenu.style.display === 'block' || langMenu.classList.contains('show');
+        
+        if (isVisible) {
+            langMenu.classList.remove('show');
+            langMenu.style.display = 'none';
+            console.log('Language menu hidden');
+        } else {
+            langMenu.style.display = 'block';
+            // 少し遅延してからshowクラスを追加（アニメーション用）
+            setTimeout(() => {
+                langMenu.classList.add('show');
+            }, 10);
+            console.log('Language menu shown');
+        }
+    } else {
+        console.error('Language menu element not found');
     }
 }
 
-// 言語切り替えの初期化
+// 言語切り替えの初期化（修正版）
 function initializeLanguageSwitcher() {
+    console.log('initializeLanguageSwitcher called');
+    
     // メニュー外クリックで閉じる
     document.addEventListener('click', function(event) {
         const langSwitcher = document.querySelector('.language-switcher');
         const langMenu = document.getElementById('langMenu');
         
         if (langSwitcher && langMenu && !langSwitcher.contains(event.target)) {
+            langMenu.classList.remove('show');
             langMenu.style.display = 'none';
+            console.log('Language menu closed by outside click');
+        }
+    });
+    
+    // ESCキーで閉じる
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            const langMenu = document.getElementById('langMenu');
+            if (langMenu) {
+                langMenu.classList.remove('show');
+                langMenu.style.display = 'none';
+                console.log('Language menu closed by ESC key');
+            }
         }
     });
 }
