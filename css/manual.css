@@ -8,193 +8,55 @@
     --construction-orange: #e67e22;
     --blueprint-blue: #3498db;
     --disabled-gray: #95a5a6;
+    --light-border: #e9ecef;
+    --text-primary: #2c3e50;
+    --text-secondary: #6c757d;
+    --hover-bg: #f8f9fa;
     --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
     --shadow-medium: 0 8px 30px rgba(0,0,0,0.12);
     --shadow-heavy: 0 15px 35px rgba(0,0,0,0.1);
 }
 
-/* フォント読み込み */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap');
-
 /* ベーススタイル */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.manual-page {
+    background-color: var(--light-concrete);
 }
 
-body {
-    font-family: 'Inter', 'Noto Sans JP', sans-serif;
-    background: var(--light-concrete);
-    color: var(--concrete-gray);
-    line-height: 1.6;
+/* マニュアルページのヘッダー調整（共通ヘッダー用） */
+.manual-page .header {
+    background: transparent;
+    border-bottom: 1px solid var(--light-border);
+}
+
+.manual-page .main-title {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    /* フォント指定を削除してstyle.cssの設定を継承 */
+}
+
+.manual-page .main-title:hover {
+    color: var(--architect-green);
+}
+
+/* メインコンテンツ */
+.main-content {
+    padding: 40px 0;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
-}
-
-/* ヘッダースタイル（メインページと同じ - 背景なし） */
-.header {
-    background: transparent;
-    color: var(--concrete-gray);
-    padding: 2rem 0;
-    position: relative;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 2;
-}
-
-.header-left {
-    flex: 1;
-}
-
-.site-title {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin: 0;
-    color: var(--concrete-gray);
-    font-family: 'Inter', 'Noto Sans JP', sans-serif;
-    letter-spacing: -0.02em;
-    /* メインページと同じスタイルを適用 */
-    background: none;
-    -webkit-background-clip: unset;
-    -webkit-text-fill-color: unset;
-    background-clip: unset;
-    text-shadow: none;
-}
-
-.site-subtitle {
-    font-size: 1.2rem;
-    margin: 0.8rem 0 0 0;
-    color: var(--steel-blue);  /* ダークカラーに変更 */
-    font-weight: 400;
-    position: relative;
-}
-
-.site-subtitle::after {
-    content: '';
-    position: absolute;
-    bottom: -0.5rem;
-    left: 0;
-    width: 60px;
-    height: 2px;
-    background: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue));
-    border-radius: 1px;
-}
-
-/* 言語切り替えボタン（メインページと同じスタイル） */
-.language-selector {
-    position: relative;
-    z-index: 1000;
-}
-
-.language-btn {
-    background: var(--glass-white);  /* 白背景に変更 */
-    border: 2px solid var(--light-concrete);  /* ライトグレーボーダー */
-    border-radius: 12px;
-    padding: 0.8rem 1.2rem;
-    color: var(--concrete-gray);  /* ダークテキスト */
-    cursor: pointer;
-    font-size: 0.95rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    font-family: 'Inter', 'Noto Sans JP', sans-serif;
-    box-shadow: var(--shadow-light);
-}
-
-.language-btn:hover {
-    background: var(--light-concrete);  /* ホバー時はライトグレー */
-    border-color: var(--blueprint-blue);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-medium);
-}
-
-.dropdown-arrow {
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    font-size: 0.8rem;
-    color: var(--steel-blue);
-}
-
-.language-btn.active .dropdown-arrow {
-    transform: rotate(180deg);
-}
-
-.language-dropdown {
-    position: absolute;
-    top: calc(100% + 0.8rem);
-    right: 0;
-    background: var(--glass-white);
-    border: 2px solid var(--light-concrete);
-    border-radius: 12px;
-    box-shadow: var(--shadow-heavy);
-    min-width: 160px;
-    z-index: 10000;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px) scale(0.95);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: hidden;
-}
-
-.language-dropdown.show {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0) scale(1);
-}
-
-.language-option {
-    padding: 0.9rem 1.2rem;
-    cursor: pointer;
-    color: var(--concrete-gray);
-    border-bottom: 1px solid var(--light-concrete);
-    transition: all 0.2s ease;
-    font-weight: 500;
-    font-family: 'Inter', 'Noto Sans JP', sans-serif;
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-}
-
-.language-option:hover {
-    background: linear-gradient(135deg, var(--light-concrete) 0%, #f8f9fa 100%);
-    color: var(--steel-blue);
-    transform: translateX(4px);
-}
-
-.language-option:last-child {
-    border-bottom: none;
-}
-
-/* メインコンテンツ */
-.main-content {
-    padding: 2rem 0;
-}
-
-/* フッター */
-.footer {
-    background: var(--concrete-gray);
-    color: var(--glass-white);
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 4rem;
+    padding: 0 20px;
 }
 
 /* パンくずナビ */
 .breadcrumb {
-    margin: 2rem 0;
-    font-size: 0.9rem;
-    color: var(--steel-blue);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 32px;
+    font-size: 14px;
+    color: var(--text-secondary);
 }
 
 .breadcrumb-link {
@@ -205,15 +67,15 @@ body {
 
 .breadcrumb-link:hover {
     color: var(--architect-green);
+    text-decoration: underline;
 }
 
 .breadcrumb-separator {
-    margin: 0 0.5rem;
-    color: var(--disabled-gray);
+    color: var(--text-secondary);
 }
 
 .breadcrumb-current {
-    color: var(--concrete-gray);
+    color: var(--text-primary);
     font-weight: 500;
 }
 
@@ -221,9 +83,9 @@ body {
 .function-header {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    margin-bottom: 3rem;
-    padding: 2rem;
+    gap: 24px;
+    margin-bottom: 48px;
+    padding: 32px;
     background: var(--glass-white);
     border-radius: 12px;
     box-shadow: var(--shadow-medium);
@@ -246,54 +108,80 @@ body {
 
 .function-title {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--concrete-gray);
-    margin: 0 0 0.5rem 0;
-    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+    font-family: 'Inter', sans-serif;
 }
 
 .function-description {
     font-size: 1.1rem;
-    color: var(--steel-blue);
+    color: var(--text-secondary);
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
-/* マニュアルセクション */
+/* セクション */
 .manual-section {
-    margin-bottom: 3rem;
+    margin-bottom: 48px;
 }
 
 .section-title {
     font-size: 1.8rem;
     font-weight: 600;
     color: var(--concrete-gray);
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--light-concrete);
-    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--architect-green);
+    font-family: 'Inter', sans-serif;
 }
 
+/* コンテンツカード */
 .content-card {
     background: var(--glass-white);
-    padding: 2rem;
     border-radius: 12px;
+    padding: 32px;
     box-shadow: var(--shadow-light);
-    border: 1px solid var(--light-concrete);
+    line-height: 1.7;
+    border: 1px solid var(--light-border);
 }
 
 .content-card p {
-    line-height: 1.8;
-    color: var(--steel-blue);
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
+    color: var(--text-primary);
+}
+
+.content-card h3 {
+    color: var(--concrete-gray);
+    margin-bottom: 16px;
+    font-size: 1.3rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.content-card ul {
+    margin: 16px 0;
+    padding-left: 24px;
+}
+
+.content-card li {
+    margin-bottom: 8px;
+    color: var(--text-primary);
 }
 
 /* 特徴ポイント */
+.feature-points {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--light-border);
+}
+
 .feature-points h3 {
     color: var(--concrete-gray);
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     font-weight: 600;
+    font-family: 'Inter', sans-serif;
 }
 
 .feature-points ul {
@@ -303,9 +191,9 @@ body {
 
 .feature-points li {
     position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.8rem;
-    color: var(--steel-blue);
+    padding-left: 24px;
+    margin-bottom: 12px;
+    color: var(--text-primary);
     line-height: 1.6;
 }
 
@@ -321,63 +209,67 @@ body {
 .step-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 24px;
 }
 
 .step-item {
     display: flex;
+    gap: 20px;
     align-items: flex-start;
-    gap: 1.5rem;
-    padding: 1.5rem;
+    padding: 24px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 8px;
+    border-radius: 12px;
     border-left: 4px solid var(--blueprint-blue);
 }
 
 .step-number {
     flex-shrink: 0;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 40px;
+    height: 40px;
     background: var(--blueprint-blue);
     color: var(--glass-white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.1rem;
 }
 
+.step-content {
+    flex: 1;
+}
+
 .step-content h3 {
+    margin: 0 0 8px 0;
     color: var(--concrete-gray);
     font-size: 1.2rem;
-    margin: 0 0 0.5rem 0;
-    font-weight: 600;
+    font-family: 'Inter', sans-serif;
 }
 
 .step-content p {
-    color: var(--steel-blue);
     margin: 0;
+    color: var(--text-primary);
     line-height: 1.6;
 }
 
 /* 警告・ヒントボックス */
 .warning-box, .tips-box {
-    margin-top: 2rem;
-    padding: 1.5rem;
+    margin: 24px 0;
+    padding: 20px;
     border-radius: 8px;
     border-left: 4px solid;
 }
 
 .warning-box {
-    background: #fff3cd;
+    background-color: #fff3cd;
     border-left-color: #ffc107;
 }
 
 .warning-box h3 {
     color: #856404;
-    margin: 0 0 1rem 0;
-    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-family: 'Inter', sans-serif;
 }
 
 .warning-box ul, .warning-box li {
@@ -385,14 +277,14 @@ body {
 }
 
 .tips-box {
-    background: #d1ecf1;
+    background-color: #d1ecf1;
     border-left-color: #17a2b8;
 }
 
 .tips-box h3 {
     color: #0c5460;
-    margin: 0 0 1rem 0;
-    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-family: 'Inter', sans-serif;
 }
 
 .tips-box ul, .tips-box li {
@@ -401,25 +293,25 @@ body {
 
 .warning-box ul, .tips-box ul {
     margin: 0;
-    padding-left: 1.5rem;
+    padding-left: 20px;
 }
 
 .warning-box li, .tips-box li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
     line-height: 1.6;
 }
 
 /* 戻るボタン */
 .back-to-home {
+    margin-top: 48px;
     text-align: center;
-    margin: 3rem 0;
 }
 
 .back-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 1rem 2rem;
+    gap: 8px;
+    padding: 12px 24px;
     background: var(--blueprint-blue);
     color: var(--glass-white);
     text-decoration: none;
@@ -435,49 +327,62 @@ body {
     box-shadow: var(--shadow-medium);
 }
 
+/* フッター */
+.footer {
+    margin-top: 64px;
+    padding: 32px 0;
+    background: var(--concrete-gray);
+    color: var(--glass-white);
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    color: var(--glass-white);
+    font-size: 14px;
+}
+
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        gap: 1.5rem;
-        text-align: center;
-    }
-    
-    .site-title {
-        font-size: 2.2rem;
-    }
-    
     .function-header {
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
+        gap: 16px;
+        padding: 24px;
     }
     
     .function-title {
         font-size: 2rem;
     }
     
+    .function-description {
+        font-size: 1rem;
+    }
+    
+    .content-card {
+        padding: 24px;
+    }
+    
     .step-item {
         flex-direction: column;
-        text-align: center;
+        gap: 12px;
     }
     
     .step-number {
-        align-self: center;
+        align-self: flex-start;
     }
 }
 
-/* マニュアルページのヘッダー調整 */
-.manual-page .header {
-    background: transparent;
-    border-bottom: 1px solid var(--light-border);
-}
-
-.manual-page .main-title {
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.manual-page .main-title:hover {
-    color: var(--architect-green);
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .function-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
 }
