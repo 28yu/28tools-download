@@ -22,20 +22,45 @@
     background-color: var(--light-concrete);
 }
 
-/* マニュアルページのヘッダー調整（共通ヘッダー用） */
-.manual-page .header {
-    background: transparent;
-    border-bottom: 1px solid var(--light-border);
-}
-
+/* フォント完全統一 - 最優先 */
 .manual-page .main-title {
-    cursor: pointer;
-    transition: color 0.3s ease;
-    /* フォント指定を削除してstyle.cssの設定を継承 */
+    font-family: 'Inter' !important;
+    font-size: 3.5rem !important;
+    font-weight: 300 !important;
+    color: var(--concrete-gray) !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 16px !important;
+    position: relative !important;
+    cursor: pointer !important;
+    transition: color 0.3s ease !important;
 }
 
 .manual-page .main-title:hover {
-    color: var(--architect-green);
+    color: var(--architect-green) !important;
+}
+
+.manual-page .main-title::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -8px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 80px !important;
+    height: 2px !important;
+    background: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue)) !important;
+}
+
+.manual-page .subtitle {
+    font-size: 1.1rem !important;
+    font-family: 'Noto Sans JP' !important;
+    color: var(--text-secondary) !important;
+    margin: 0 !important;
+}
+
+/* ヘッダー調整 */
+.manual-page .header {
+    background: transparent !important;
+    border-bottom: 1px solid var(--light-border) !important;
 }
 
 /* メインコンテンツ */
@@ -112,7 +137,7 @@
     color: var(--concrete-gray);
     margin: 0 0 12px 0;
     line-height: 1.2;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter' !important;
 }
 
 .function-description {
@@ -134,7 +159,7 @@
     margin-bottom: 24px;
     padding-bottom: 12px;
     border-bottom: 2px solid var(--architect-green);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter' !important;
 }
 
 /* コンテンツカード */
@@ -156,7 +181,7 @@
     color: var(--concrete-gray);
     margin-bottom: 16px;
     font-size: 1.3rem;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter' !important;
 }
 
 .content-card ul {
@@ -181,7 +206,7 @@
     font-size: 1.2rem;
     margin-bottom: 16px;
     font-weight: 600;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter' !important;
 }
 
 .feature-points ul {
@@ -244,7 +269,7 @@
     margin: 0 0 8px 0;
     color: var(--concrete-gray);
     font-size: 1.2rem;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter' !important;
 }
 
 .step-content p {
@@ -269,7 +294,7 @@
 .warning-box h3 {
     color: #856404;
     margin-bottom: 12px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter' !important;
 }
 
 .warning-box ul, .warning-box li {
@@ -284,7 +309,7 @@
 .tips-box h3 {
     color: #0c5460;
     margin-bottom: 12px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter' !important;
 }
 
 .tips-box ul, .tips-box li {
@@ -385,34 +410,4 @@
     .section-title {
         font-size: 1.5rem;
     }
-}
-
-/* 緊急修正：フォント強制統一 */
-.manual-page .main-title {
-    font-family: 'Inter', sans-serif !important;
-    font-size: 3.5rem !important;
-    font-weight: 300 !important;
-    color: #2c3e50 !important;
-    letter-spacing: -0.02em !important;
-    margin-bottom: 16px !important;
-    cursor: pointer !important;
-    transition: color 0.3s ease !important;
-}
-
-.manual-page .main-title::after {
-    content: '' !important;
-    position: absolute !important;
-    bottom: -8px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 80px !important;
-    height: 2px !important;
-    background: linear-gradient(90deg, #27ae60, #3498db) !important;
-}
-
-.manual-page .subtitle {
-    font-size: 1.1rem !important;
-    font-family: 'Noto Sans JP', sans-serif !important;
-    color: #6c757d !important;
-    margin: 0 !important;
 }
