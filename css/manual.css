@@ -23,23 +23,34 @@
 }
 
 /* フォント完全統一 - 最優先 */
-.manual-page .main-title {
+.manual-page .main-title,
+.manual-page h1.main-title,
+.manual-page .header .main-title,
+.manual-page .container .main-title {
     font-family: 'Inter', sans-serif !important;
     font-size: 3.5rem !important;
     font-weight: 300 !important;
-    color: var(--concrete-gray) !important;
+    color: #2c3e50 !important;
     letter-spacing: -0.02em !important;
     margin-bottom: 16px !important;
     position: relative !important;
     cursor: pointer !important;
     transition: color 0.3s ease !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
 }
 
-.manual-page .main-title:hover {
-    color: var(--architect-green) !important;
+.manual-page .main-title:hover,
+.manual-page h1.main-title:hover,
+.manual-page .header .main-title:hover,
+.manual-page .container .main-title:hover {
+    color: #27ae60 !important;
 }
 
-.manual-page .main-title::after {
+.manual-page .main-title::after,
+.manual-page h1.main-title::after,
+.manual-page .header .main-title::after,
+.manual-page .container .main-title::after {
     content: '' !important;
     position: absolute !important;
     bottom: -8px !important;
@@ -47,12 +58,12 @@
     transform: translateX(-50%) !important;
     width: 80px !important;
     height: 2px !important;
-    background: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue)) !important;
+    background: linear-gradient(90deg, #27ae60, #3498db) !important;
 }
 
 .manual-page .subtitle {
     font-size: 1.1rem !important;
-    font-family: 'Noto Sans JP' !important;
+    font-family: 'Noto Sans JP', sans-serif !important;
     color: var(--text-secondary) !important;
     margin: 0 !important;
 }
@@ -137,7 +148,7 @@
     color: var(--concrete-gray);
     margin: 0 0 12px 0;
     line-height: 1.2;
-    font-family: 'Inter', sans-serif !important;  /* 修正後 */
+    font-family: 'Inter', sans-serif !important;
 }
 
 .function-description {
@@ -159,7 +170,7 @@
     margin-bottom: 24px;
     padding-bottom: 12px;
     border-bottom: 2px solid var(--architect-green);
-    font-family: 'Inter', sans-serif !important;  /* 修正後 */
+    font-family: 'Inter', sans-serif !important;
 }
 
 /* コンテンツカード */
@@ -181,7 +192,7 @@
     color: var(--concrete-gray);
     margin-bottom: 16px;
     font-size: 1.3rem;
-    font-family: 'Inter', sans-serif !important;  /* 修正後 */
+    font-family: 'Inter', sans-serif !important;
 }
 
 .content-card ul {
@@ -206,7 +217,7 @@
     font-size: 1.2rem;
     margin-bottom: 16px;
     font-weight: 600;
-    font-family: 'Inter', sans-serif !important;  /* 修正後 */
+    font-family: 'Inter', sans-serif !important;
 }
 
 .feature-points ul {
@@ -269,7 +280,7 @@
     margin: 0 0 8px 0;
     color: var(--concrete-gray);
     font-size: 1.2rem;
-    font-family: 'Inter', sans-serif !important;  /* 修正後 */
+    font-family: 'Inter', sans-serif !important;
 }
 
 .step-content p {
@@ -294,7 +305,7 @@
 .warning-box h3 {
     color: #856404;
     margin-bottom: 12px;
-    font-family: 'Inter', sans-serif !important;  /* 修正後 */
+    font-family: 'Inter', sans-serif !important;
 }
 
 .warning-box ul, .warning-box li {
@@ -309,7 +320,7 @@
 .tips-box h3 {
     color: #0c5460;
     margin-bottom: 12px;
-    font-family: 'Inter', sans-serif !important;  /* 修正後 */
+    font-family: 'Inter', sans-serif !important;
 }
 
 .tips-box ul, .tips-box li {
