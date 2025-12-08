@@ -386,3 +386,33 @@
         font-size: 1.5rem;
     }
 }
+
+/* 緊急修正：フォント強制統一 */
+.manual-page .main-title {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 3.5rem !important;
+    font-weight: 300 !important;
+    color: #2c3e50 !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 16px !important;
+    cursor: pointer !important;
+    transition: color 0.3s ease !important;
+}
+
+.manual-page .main-title::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -8px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 80px !important;
+    height: 2px !important;
+    background: linear-gradient(90deg, #27ae60, #3498db) !important;
+}
+
+.manual-page .subtitle {
+    font-size: 1.1rem !important;
+    font-family: 'Noto Sans JP', sans-serif !important;
+    color: #6c757d !important;
+    margin: 0 !important;
+}
