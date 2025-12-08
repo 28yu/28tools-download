@@ -152,7 +152,7 @@ body {
     letter-spacing: -0.02em;
     margin-bottom: 16px;
     position: relative;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important; /* !important を追加 */
 }
 
 .main-title::after {
