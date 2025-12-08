@@ -738,3 +738,119 @@ body {
         border-radius: 6px;
     }
 }
+
+/* 言語切り替えボタン（絵文字版）のスタイル */
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid var(--light-border);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+.lang-flag {
+    font-size: 16px;
+}
+
+.lang-text {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.lang-arrow {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.lang-btn:hover .lang-arrow {
+    transform: rotate(180deg);
+}
+
+/* ドロップダウンメニュー */
+.lang-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 8px;
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid var(--light-border);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    min-width: 140px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    display: none; /* 初期状態で非表示 */
+}
+
+.lang-menu.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.lang-option:hover {
+    background-color: var(--hover-bg);
+}
+
+.lang-option.active {
+    background-color: var(--architect-green);
+    color: white;
+}
+
+.lang-option .flag {
+    font-size: 16px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .language-switcher {
+        top: 15px;
+        right: 15px;
+    }
+    
+    .lang-btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    
+    .lang-text {
+        display: none; /* モバイルでは文字を非表示 */
+    }
+}
