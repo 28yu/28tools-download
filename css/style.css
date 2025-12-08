@@ -146,13 +146,22 @@ body {
 }
 
 .main-title {
-    font-size: 3.5rem;
-    font-weight: 300 !important;  /* !important を追加 */
-    color: var(--concrete-gray);
-    letter-spacing: -0.02em;
-    margin-bottom: 16px;
-    position: relative;
-    font-family: 'Inter', sans-serif !important; /* !important を追加 */
+    font-size: 3.5rem !important;
+    font-weight: 300 !important;
+    color: var(--concrete-gray) !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 16px !important;
+    position: relative !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* 詳細度を上げるための追加セレクタ */
+h1.main-title,
+.header .main-title,
+.container .main-title {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 3.5rem !important;
 }
 
 .main-title::after {
@@ -164,6 +173,7 @@ body {
     width: 80px;
     height: 2px;
     background: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue));
+}
 }
 
 .subtitle {
