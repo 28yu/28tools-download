@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トリミング領域コピペ - 28 Tools Manual</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/manual.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="manual-page">
+    <!-- 共通ヘッダー -->
+    <div id="header-container"></div>
+
+    <!-- マニュアルコンテンツ -->
+    <div class="manual-container">
+        <div class="manual-content">
+            <!-- パンくずリスト -->
+            <nav class="breadcrumb">
+                <a href="../index.html" data-lang-key="breadcrumb-home">ホーム</a>
+                <span class="separator">›</span>
+                <span data-lang-key="manual-cropbox-copy-title">トリミング領域コピペ</span>
+            </nav>
+
+            <!-- 機能タイトル -->
+            <div class="manual-header">
+                <div class="icon-wrapper">
+                    <img src="../images/icons/cropbox_copy_64.png" alt="Crop Box Copy Icon" class="feature-icon">
+                </div>
+                <h1 class="manual-title" data-lang-key="manual-cropbox-copy-title">トリミング領域コピペ</h1>
+                <p class="manual-subtitle" data-lang-key="manual-cropbox-copy-subtitle">ビューのトリミング領域をコピー＆ペースト</p>
+            </div>
+
+            <!-- 機能概要 -->
+            <section class="manual-section">
+                <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
+                <div class="content-box">
+                    <p data-lang-key="manual-cropbox-copy-overview">
+                        この機能は、平面図や立面図などのビューのトリミング領域（表示範囲）を別のビューにコピーできます。
+                        複数のビューで同じ表示範囲を使いたい場合に、トリミング領域を手動で調整する手間を省けます。
+                    </p>
+                </div>
+            </section>
+
+            <!-- 使い方 -->
+            <section class="manual-section">
+                <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
+                
+                <div class="step-box">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 data-lang-key="manual-cropbox-copy-step1-title">コピー元のビューを開く</h3>
+                        <p data-lang-key="manual-cropbox-copy-step1-desc">
+                            トリミング領域をコピーしたいビューを開きます。
+                            トリミング領域が有効になっていることを確認してください（プロパティで「切り取り領域」がチェックされている状態）。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-box">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 data-lang-key="manual-cropbox-copy-step2-title">トリミング領域をコピー</h3>
+                        <p data-lang-key="manual-cropbox-copy-step2-desc">
+                            Revitリボンの「28 Tools」タブから「トリミング領域コピー」ボタンをクリックします。
+                            現在のビューのトリミング領域情報がメモリにコピーされます。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-box">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 data-lang-key="manual-cropbox-copy-step3-title">ペースト先のビューを開く</h3>
+                        <p data-lang-key="manual-cropbox-copy-step3-desc">
+                            トリミング領域を適用したい別のビューを開きます。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-box">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 data-lang-key="manual-cropbox-copy-step4-title">トリミング領域をペースト</h3>
+                        <p data-lang-key="manual-cropbox-copy-step4-desc">
+                            「28 Tools」タブから「トリミング領域ペースト」ボタンをクリックします。
+                            コピーしたトリミング領域が現在のビューに適用され、トリミング領域が自動的に有効化されます。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- スクリーンショット用プレースホルダー -->
+                <div class="image-placeholder">
+                    <p data-lang-key="image-placeholder-text">📷 スクリーンショット画像をここに追加予定</p>
+                </div>
+            </section>
+
+            <!-- 活用シーン -->
+            <section class="manual-section">
+                <h2 class="section-title" data-lang-key="section-usecases">活用シーン</h2>
+                <div class="usecase-grid">
+                    <div class="usecase-card">
+                        <div class="usecase-icon">🏢</div>
+                        <h3 data-lang-key="manual-cropbox-copy-usecase1-title">各階平面図の統一</h3>
+                        <p data-lang-key="manual-cropbox-copy-usecase1-desc">
+                            各階の平面図で同じ表示範囲を効率的に設定できます。
+                        </p>
+                    </div>
+                    <div class="usecase-card">
+                        <div class="usecase-icon">📐</div>
+                        <h3 data-lang-key="manual-cropbox-copy-usecase2-title">詳細ビューの作成</h3>
+                        <p data-lang-key="manual-cropbox-copy-usecase2-desc">
+                            同じ範囲で異なる表示設定のビューを素早く作成できます。
+                        </p>
+                    </div>
+                    <div class="usecase-card">
+                        <div class="usecase-icon">🎯</div>
+                        <h3 data-lang-key="manual-cropbox-copy-usecase3-title">一貫性の確保</h3>
+                        <p data-lang-key="manual-cropbox-copy-usecase3-desc">
+                            複数のビューで統一された表示範囲を維持できます。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tips -->
+            <section class="manual-section">
+                <h2 class="section-title" data-lang-key="section-tips">Tips</h2>
+                <div class="tips-box">
+                    <div class="tip-item">
+                        <span class="tip-icon">💡</span>
+                        <p data-lang-key="manual-cropbox-copy-tip1">
+                            <strong>トリミング領域の確認：</strong>コピー元のビューでトリミング領域が有効になっているか確認してください。
+                        </p>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-icon">💡</span>
+                        <p data-lang-key="manual-cropbox-copy-tip2">
+                            <strong>自動有効化：</strong>ペースト先のビューでトリミング領域が無効でも、ペースト時に自動的に有効化されます。
+                        </p>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-icon">💡</span>
+                        <p data-lang-key="manual-cropbox-copy-tip3">
+                            <strong>ビュータイプ：</strong>平面図、立面図、断面図など、様々なビュータイプで使用できます。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 注意事項 -->
+            <section class="manual-section">
+                <h2 class="section-title" data-lang-key="section-notes">注意事項</h2>
+                <div class="notes-box warning">
+                    <div class="note-item">
+                        <span class="note-icon">⚠️</span>
+                        <p data-lang-key="manual-cropbox-copy-note1">
+                            トリミング領域のみがコピーされます。ビューの表示設定やビューテンプレートはコピーされません。
+                        </p>
+                    </div>
+                    <div class="note-item">
+                        <span class="note-icon">⚠️</span>
+                        <p data-lang-key="manual-cropbox-copy-note2">
+                            トリミング領域コピー後にRevitを閉じると、コピーした領域情報は失われます。
+                        </p>
+                    </div>
+                    <div class="note-item">
+                        <span class="note-icon">⚠️</span>
+                        <p data-lang-key="manual-cropbox-copy-note3">
+                            異なるビュータイプ間（例：平面図から立面図）でもコピー可能ですが、意図した結果にならない場合があります。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ナビゲーション -->
+            <div class="manual-navigation">
+                <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
+                    ← ホームに戻る
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
