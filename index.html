@@ -148,36 +148,23 @@
             <!-- フッターリンク -->
             <footer class="footer">
                 <div class="footer-links">
-                    <button class="footer-card" onclick="showModal('install')">
+                    <button class="footer-card" data-modal="install">
                         <div class="footer-icon">📖</div>
                         <div class="footer-text" data-lang-key="install-guide">インストールガイド</div>
                     </button>
                     
-                    <button class="footer-card" onclick="showModal('uninstall')">
+                    <button class="footer-card" data-modal="uninstall">
                         <div class="footer-icon">🗑️</div>
                         <div class="footer-text" data-lang-key="uninstall-guide">アンインストール</div>
                     </button>
                     
-                    <button class="footer-card" onclick="showModal('support')">
+                    <button class="footer-card" data-modal="support">
                         <div class="footer-icon">❓</div>
                         <div class="footer-text" data-lang-key="support-info">サポート情報</div>
                     </button>
                 </div>
             </footer>
         </section>
-    </div>
-    
-    <!-- モーダル -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 id="modal-title"></h2>
-                <button class="modal-close" onclick="closeModal()">&times;</button>
-            </div>
-            <div class="modal-body" id="modal-body">
-                <!-- コンテンツがJavaScriptで挿入される -->
-            </div>
-        </div>
     </div>
     
     <script src="js/main.js"></script>
