@@ -29,20 +29,6 @@
     padding: 40px 20px 80px;
 }
 
-/* ========================================
-   共通ヘッダーの調整（マニュアルページ用）
-   ======================================== */
-
-/* 共通ヘッダーの title-divider は表示 */
-.manual-page .title-divider {
-    display: block !important;
-    width: 80px !important;
-    height: 3px !important;
-    background: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue)) !important;
-    border-radius: 2px !important;
-    margin: 16px auto !important;
-}
-
 /* ホームページとの見た目を統一 */
 .manual-page .site-header {
     margin-bottom: 30px;
