@@ -1,4 +1,4 @@
-// main.js v6.2 - 言語切り替え完全修正版
+// main.js v6.3 - 言語切り替え完全修正版（翻訳データ完全版）
 
 // ==========================================
 // 1. 共通ヘッダー読み込み機能
@@ -44,12 +44,16 @@ async function loadHeader() {
 // 2. 言語切り替えシステム
 // ==========================================
 
-// 翻訳データベース（完全版）
+// 翻訳データベース（完全版 v6.3）
 const translations = {
     ja: {
         // ヘッダー
         'site-title': '28 Tools',
         'site-subtitle': 'Revit アドイン配布センター',
+        
+        // セクションタイトル
+        'section-features': '機能一覧',
+        'version-title': 'Revitバージョンを選択',
         
         // メインページ - 機能カード
         'feature-grid-title': '符号ON/OFF',
@@ -65,8 +69,7 @@ const translations = {
         'feature-crop-title': 'トリミング領域コピペ',
         'feature-crop-desc': 'ビューのトリミング領域をコピー&ペースト',
         
-        // バージョンセクション
-        'version-title': 'Revitバージョンを選択',
+        // バージョンタブ
         'version-2021': 'Revit 2021',
         'version-2022': 'Revit 2022',
         'version-2023': 'Revit 2023',
@@ -108,6 +111,10 @@ const translations = {
         'site-title': '28 Tools',
         'site-subtitle': 'Revit Add-in Distribution Center',
         
+        // Section titles
+        'section-features': 'Features',
+        'version-title': 'Select Revit Version',
+        
         // Main page - Feature cards
         'feature-grid-title': 'Grid Bubble ON/OFF',
         'feature-grid-desc': 'Toggle grid/level bubble display',
@@ -122,8 +129,7 @@ const translations = {
         'feature-crop-title': 'Crop Region Copy/Paste',
         'feature-crop-desc': 'Copy & paste view crop region',
         
-        // Version section
-        'version-title': 'Select Revit Version',
+        // Version tabs
         'version-2021': 'Revit 2021',
         'version-2022': 'Revit 2022',
         'version-2023': 'Revit 2023',
@@ -165,6 +171,10 @@ const translations = {
         'site-title': '28 Tools',
         'site-subtitle': 'Revit 插件分发中心',
         
+        // 部分标题
+        'section-features': '功能列表',
+        'version-title': '选择Revit版本',
+        
         // 主页 - 功能卡片
         'feature-grid-title': '符号开/关',
         'feature-grid-desc': '批量切换轴网/标高符号显示',
@@ -179,8 +189,7 @@ const translations = {
         'feature-crop-title': '裁剪区域复制粘贴',
         'feature-crop-desc': '复制并粘贴视图的裁剪区域',
         
-        // 版本选择
-        'version-title': '选择Revit版本',
+        // 版本选项卡
         'version-2021': 'Revit 2021',
         'version-2022': 'Revit 2022',
         'version-2023': 'Revit 2023',
@@ -294,6 +303,9 @@ function changeLanguage(lang) {
     const elements = document.querySelectorAll('[data-lang]');
     console.log('翻訳対象要素数:', elements.length);
     
+    let translatedCount = 0;
+    let missingKeys = [];
+    
     elements.forEach(element => {
         const key = element.dataset.lang;
         
@@ -306,13 +318,23 @@ function changeLanguage(lang) {
                 const textNode = Array.from(element.childNodes).find(node => node.nodeType === 3);
                 if (textNode) {
                     textNode.textContent = translations[lang][key];
+                } else {
+                    // テキストノードがない場合は全体を置き換え
+                    element.textContent = translations[lang][key];
                 }
             }
-            console.log(`翻訳適用: ${key} -> ${translations[lang][key]}`);
+            translatedCount++;
+            console.log(`✓ 翻訳適用: ${key} -> ${translations[lang][key]}`);
         } else {
-            console.warn(`翻訳キー未定義: ${lang}.${key}`);
+            missingKeys.push(`${lang}.${key}`);
+            console.warn(`✗ 翻訳キー未定義: ${lang}.${key}`);
         }
     });
+    
+    console.log(`翻訳完了: ${translatedCount}/${elements.length}個の要素`);
+    if (missingKeys.length > 0) {
+        console.warn('未定義の翻訳キー:', missingKeys);
+    }
     
     // localStorage に保存
     localStorage.setItem('selectedLanguage', lang);
@@ -359,7 +381,7 @@ function createModal() {
             <div class="modal-header">
                 <h2 id="modal-title" data-lang="modal-install-title">タイトル</h2>
                 <button class="modal-close" id="modal-close-btn">
-                    <span data-lang="modal-close">閉じる</span>
+                    <span data-lang="modal-close">×</span>
                 </button>
             </div>
             <div class="modal-body" id="modal-body">
