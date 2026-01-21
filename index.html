@@ -88,7 +88,7 @@
             <h2 class="section-title" data-lang="version-title">Revitバージョンを選択</h2>
             <div class="version-tabs">
                 <!-- Revit 2021 -->
-                <div class="version-tab completed" onclick="selectVersion('2021')">
+                <div class="version-tab completed" data-version="2021">
                     <div class="tab-header">
                         <span class="status-icon">✓</span>
                         <span class="version-name" data-lang="version-2021">Revit 2021</span>
@@ -97,7 +97,7 @@
                 </div>
 
                 <!-- Revit 2022 -->
-                <div class="version-tab completed" onclick="selectVersion('2022')">
+                <div class="version-tab completed" data-version="2022">
                     <div class="tab-header">
                         <span class="status-icon">✓</span>
                         <span class="version-name" data-lang="version-2022">Revit 2022</span>
@@ -106,7 +106,7 @@
                 </div>
 
                 <!-- Revit 2023 -->
-                <div class="version-tab completed" onclick="selectVersion('2023')">
+                <div class="version-tab completed" data-version="2023">
                     <div class="tab-header">
                         <span class="status-icon">✓</span>
                         <span class="version-name" data-lang="version-2023">Revit 2023</span>
@@ -115,7 +115,7 @@
                 </div>
 
                 <!-- Revit 2024 -->
-                <div class="version-tab development" onclick="selectVersion('2024')">
+                <div class="version-tab development" data-version="2024">
                     <div class="tab-header">
                         <span class="status-icon">🚧</span>
                         <span class="version-name" data-lang="version-2024">Revit 2024</span>
@@ -124,7 +124,7 @@
                 </div>
 
                 <!-- Revit 2025 -->
-                <div class="version-tab planned" onclick="selectVersion('2025')">
+                <div class="version-tab planned" data-version="2025">
                     <div class="tab-header">
                         <span class="status-icon">⏳</span>
                         <span class="version-name" data-lang="version-2025">Revit 2025</span>
@@ -133,7 +133,7 @@
                 </div>
 
                 <!-- Revit 2026 -->
-                <div class="version-tab planned" onclick="selectVersion('2026')">
+                <div class="version-tab planned" data-version="2026">
                     <div class="tab-header">
                         <span class="status-icon">⏳</span>
                         <span class="version-name" data-lang="version-2026">Revit 2026</span>
@@ -141,10 +141,6 @@
                     <div class="tab-status" data-lang="version-status-planned">計画中</div>
                 </div>
             </div>
-
-            <button class="download-button" onclick="downloadAddin()">
-                <span data-lang="download-button">ダウンロード</span>
-            </button>
         </section>
 
         <!-- フッターリンク -->
