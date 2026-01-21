@@ -69,7 +69,7 @@
 }
 
 /* ========================================
-   機能ヘッダー（タイトル部分）【修正版】
+   機能ヘッダー（タイトル部分）【修正版 v2】
    ======================================== */
 
 .manual-page .manual-header {
@@ -81,14 +81,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0;
+    gap: 12px;
     margin-bottom: 40px;
     text-align: center;
 }
 
 .manual-page .icon-wrapper {
     flex-shrink: 0;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .manual-page .feature-icon {
@@ -103,27 +103,26 @@
     opacity: 1;
 }
 
-/* タイトルスタイル（ホームページと統一、線はタイトルの下） */
+/* タイトルスタイル（ホームページと統一） */
 .manual-page .manual-title {
     font-size: 2.5rem !important;
     font-weight: 500 !important;
     color: var(--concrete-gray) !important;
     margin: 0 !important;
-    margin-bottom: 0 !important;
     line-height: 1.2 !important;
     font-family: 'Inter', sans-serif !important;
     letter-spacing: -0.01em !important;
     padding-bottom: 16px !important;
     border-bottom: 3px solid;
     border-image: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue)) 1;
+    width: 100%;
 }
 
-/* サブタイトルスタイル（タイトルの下に表示） */
+/* サブタイトルスタイル（タイトルの直下） */
 .manual-page .manual-subtitle {
     font-size: 1rem !important;
     color: var(--text-secondary) !important;
     margin: 0 !important;
-    margin-top: 16px !important;
     line-height: 1.5 !important;
     font-family: 'Noto Sans JP', sans-serif !important;
     font-weight: 400 !important;
