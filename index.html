@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -24,15 +24,15 @@
         <!-- 機能一覧 -->
         <section class="features-section">
             <div class="features-container">
-                <h2 class="section-title" data-lang="section-features">機能一覧</h2>
+                <h2 class="section-title" data-lang-key="section-features">機能一覧</h2>
                 <div class="features-grid">
                     <!-- 符号ON/OFF -->
                     <a href="manual/grid-bubble.html" class="feature-card">
                         <div class="feature-icon">
                             <img src="images/icons/both_64.png" alt="Grid Bubble Icon">
                         </div>
-                        <h3 class="feature-title" data-lang="feature-grid-title">符号ON/OFF</h3>
-                        <p class="feature-description" data-lang="feature-grid-desc">通り芯・レベルの符号表示を一括切替</p>
+                        <h3 class="feature-title" data-lang-key="feature-grid-title">符号ON/OFF</h3>
+                        <p class="feature-description" data-lang-key="feature-grid-desc">通り芯・レベルの符号表示を一括切替</p>
                     </a>
 
                     <!-- シート一括作成 -->
@@ -40,8 +40,8 @@
                         <div class="feature-icon">
                             <img src="images/icons/sheet_creation_64.png" alt="Sheet Creation Icon">
                         </div>
-                        <h3 class="feature-title" data-lang="feature-sheet-title">シート一括作成</h3>
-                        <p class="feature-description" data-lang="feature-sheet-desc">図枠を指定して複数シートをまとめて作成</p>
+                        <h3 class="feature-title" data-lang-key="feature-sheet-title">シート一括作成</h3>
+                        <p class="feature-description" data-lang-key="feature-sheet-desc">図枠を指定して複数シートをまとめて作成</p>
                     </a>
 
                     <!-- 3D視点コピペ -->
@@ -49,8 +49,8 @@
                         <div class="feature-icon">
                             <img src="images/icons/view_copy_64.png" alt="3D View Copy Icon">
                         </div>
-                        <h3 class="feature-title" data-lang="feature-view-title">3D視点コピペ</h3>
-                        <p class="feature-description" data-lang="feature-view-desc">3Dビューの視点を他のビューにコピー&ペースト</p>
+                        <h3 class="feature-title" data-lang-key="feature-view-title">3D視点コピペ</h3>
+                        <p class="feature-description" data-lang-key="feature-view-desc">3Dビューの視点を他のビューにコピー&ペースト</p>
                     </a>
 
                     <!-- 切断ボックスコピペ -->
@@ -58,8 +58,8 @@
                         <div class="feature-icon">
                             <img src="images/icons/sectionbox_copy_64.png" alt="Section Box Icon">
                         </div>
-                        <h3 class="feature-title" data-lang="feature-section-title">切断ボックスコピペ</h3>
-                        <p class="feature-description" data-lang="feature-section-desc">3Dビューの切断ボックス範囲をコピー&ペースト</p>
+                        <h3 class="feature-title" data-lang-key="feature-section-title">切断ボックスコピペ</h3>
+                        <p class="feature-description" data-lang-key="feature-section-desc">3Dビューの切断ボックス範囲をコピー&ペースト</p>
                     </a>
 
                     <!-- ビューポート位置コピペ -->
@@ -67,8 +67,8 @@
                         <div class="feature-icon">
                             <img src="images/icons/viewport_copy_64.png" alt="Viewport Position Icon">
                         </div>
-                        <h3 class="feature-title" data-lang="feature-viewport-title">ビューポート位置コピペ</h3>
-                        <p class="feature-description" data-lang="feature-viewport-desc">シート上のビューポート位置をコピー&ペースト</p>
+                        <h3 class="feature-title" data-lang-key="feature-viewport-title">ビューポート位置コピペ</h3>
+                        <p class="feature-description" data-lang-key="feature-viewport-desc">シート上のビューポート位置をコピー&ペースト</p>
                     </a>
 
                     <!-- トリミング領域コピペ -->
@@ -76,8 +76,8 @@
                         <div class="feature-icon">
                             <img src="images/icons/cropbox_copy_64.png" alt="Crop Box Icon">
                         </div>
-                        <h3 class="feature-title" data-lang="feature-crop-title">トリミング領域コピペ</h3>
-                        <p class="feature-description" data-lang="feature-crop-desc">ビューのトリミング領域をコピー&ペースト</p>
+                        <h3 class="feature-title" data-lang-key="feature-crop-title">トリミング領域コピペ</h3>
+                        <p class="feature-description" data-lang-key="feature-crop-desc">ビューのトリミング領域をコピー&ペースト</p>
                     </a>
                 </div>
             </div>
@@ -85,60 +85,60 @@
 
         <!-- バージョン選択 -->
         <section class="version-selector">
-            <h2 class="section-title" data-lang="version-title">Revitバージョンを選択</h2>
+            <h2 class="section-title" data-lang-key="version-title">Revitバージョンを選択</h2>
             <div class="version-tabs">
                 <!-- Revit 2021 -->
                 <div class="version-tab completed" data-version="2021">
                     <div class="tab-header">
                         <span class="status-icon">✓</span>
-                        <span class="version-name" data-lang="version-2021">Revit 2021</span>
+                        <span class="version-name" data-lang-key="version-2021">Revit 2021</span>
                     </div>
-                    <div class="tab-status" data-lang="version-status-available">利用可能</div>
+                    <div class="tab-status" data-lang-key="version-status-available">利用可能</div>
                 </div>
 
                 <!-- Revit 2022 -->
                 <div class="version-tab completed" data-version="2022">
                     <div class="tab-header">
                         <span class="status-icon">✓</span>
-                        <span class="version-name" data-lang="version-2022">Revit 2022</span>
+                        <span class="version-name" data-lang-key="version-2022">Revit 2022</span>
                     </div>
-                    <div class="tab-status" data-lang="version-status-available">利用可能</div>
+                    <div class="tab-status" data-lang-key="version-status-available">利用可能</div>
                 </div>
 
                 <!-- Revit 2023 -->
                 <div class="version-tab completed" data-version="2023">
                     <div class="tab-header">
                         <span class="status-icon">✓</span>
-                        <span class="version-name" data-lang="version-2023">Revit 2023</span>
+                        <span class="version-name" data-lang-key="version-2023">Revit 2023</span>
                     </div>
-                    <div class="tab-status" data-lang="version-status-available">利用可能</div>
+                    <div class="tab-status" data-lang-key="version-status-available">利用可能</div>
                 </div>
 
                 <!-- Revit 2024 -->
                 <div class="version-tab development" data-version="2024">
                     <div class="tab-header">
                         <span class="status-icon">🚧</span>
-                        <span class="version-name" data-lang="version-2024">Revit 2024</span>
+                        <span class="version-name" data-lang-key="version-2024">Revit 2024</span>
                     </div>
-                    <div class="tab-status" data-lang="version-status-development">開発中</div>
+                    <div class="tab-status" data-lang-key="version-status-development">開発中</div>
                 </div>
 
                 <!-- Revit 2025 -->
                 <div class="version-tab planned" data-version="2025">
                     <div class="tab-header">
                         <span class="status-icon">⏳</span>
-                        <span class="version-name" data-lang="version-2025">Revit 2025</span>
+                        <span class="version-name" data-lang-key="version-2025">Revit 2025</span>
                     </div>
-                    <div class="tab-status" data-lang="version-status-planned">計画中</div>
+                    <div class="tab-status" data-lang-key="version-status-planned">計画中</div>
                 </div>
 
                 <!-- Revit 2026 -->
                 <div class="version-tab planned" data-version="2026">
                     <div class="tab-header">
                         <span class="status-icon">⏳</span>
-                        <span class="version-name" data-lang="version-2026">Revit 2026</span>
+                        <span class="version-name" data-lang-key="version-2026">Revit 2026</span>
                     </div>
-                    <div class="tab-status" data-lang="version-status-planned">計画中</div>
+                    <div class="tab-status" data-lang-key="version-status-planned">計画中</div>
                 </div>
             </div>
         </section>
@@ -148,15 +148,15 @@
             <div class="footer-links">
                 <div class="footer-link" data-modal="install">
                     <div class="footer-icon">📖</div>
-                    <div class="footer-text" data-lang="footer-install">インストール手順</div>
+                    <div class="footer-text" data-lang-key="footer-install">インストール手順</div>
                 </div>
                 <div class="footer-link" data-modal="uninstall">
                     <div class="footer-icon">🗑️</div>
-                    <div class="footer-text" data-lang="footer-uninstall">アンインストール</div>
+                    <div class="footer-text" data-lang-key="footer-uninstall">アンインストール</div>
                 </div>
                 <div class="footer-link" data-modal="support">
                     <div class="footer-icon">❓</div>
-                    <div class="footer-text" data-lang="footer-support">サポート情報</div>
+                    <div class="footer-text" data-lang-key="footer-support">サポート情報</div>
                 </div>
             </div>
         </footer>
