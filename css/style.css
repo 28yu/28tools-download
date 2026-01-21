@@ -154,6 +154,20 @@ body {
     margin-bottom: 16px !important;
     position: relative !important;
     font-family: 'Inter', sans-serif !important;
+    padding-bottom: 12px;
+}
+
+/* タイトル下の短いライン */
+.main-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue));
+    border-radius: 2px;
 }
 
 /* 詳細度を上げるための追加セレクタ */
@@ -167,22 +181,13 @@ h1.main-title,
 
 .subtitle {
     font-size: 1.1rem;
-    color: var(--steel-blue);
+    color: var--steel-blue);
     font-weight: 400;
     opacity: 0.8;
     font-family: 'Noto Sans JP', sans-serif;
     letter-spacing: 0.02em;
-    margin-bottom: 24px;
+    margin: 0;
 }
-
-.header-divider {
-    height: 3px;
-    background: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue));
-    border-radius: 2px;
-    box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
-    margin: 0 auto;
-}
-
 /* ==========================================
    Revitリボンプレビュー
    ========================================== */
