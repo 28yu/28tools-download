@@ -3,182 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>シート一括作成 - 28 Tools Manual</title>
+    <title>シート一括作成 - 28 Tools</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/manual.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body class="manual-page">
     <!-- 共通ヘッダー -->
     <div id="header-container"></div>
 
-    <!-- マニュアルコンテンツ -->
     <div class="manual-container">
         <!-- パンくずリスト -->
         <nav class="breadcrumb">
-            <a href="../index.html" data-lang-key="breadcrumb-home">ホーム</a>
+            <a href="../index.html" data-lang="breadcrumb-home">ホーム</a>
             <span class="separator">›</span>
-            <span data-lang-key="manual-sheet-creation-title">シート一括作成</span>
+            <span data-lang="manual-sheet-title">シート一括作成</span>
         </nav>
 
-        <!-- 機能タイトル -->
+        <!-- マニュアルヘッダー -->
         <div class="manual-header">
-            <div class="icon-wrapper">
-                <img src="../images/icons/sheet_creation_64.png" alt="Sheet Creation Icon" class="feature-icon">
+            <div class="manual-icon">
+                <img src="../images/icons/sheet_creation_64.png" alt="Sheet Creation Icon">
             </div>
-            <div>
-                <h1 class="manual-title" data-lang-key="manual-sheet-creation-title">シート一括作成</h1>
-                <p class="manual-subtitle" data-lang-key="manual-sheet-creation-subtitle">複数のシートを指定した図枠で一括作成</p>
-            </div>
+            <h1 class="manual-title" data-lang="manual-sheet-title">シート一括作成</h1>
+            <p class="manual-subtitle" data-lang="manual-sheet-subtitle">複数のシートを指定した図枠で一括作成</p>
         </div>
 
         <!-- 機能概要 -->
         <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
+            <h2 class="section-title" data-lang="section-overview">機能概要</h2>
             <div class="content-box">
-                <p data-lang-key="manual-sheet-creation-overview">
-                    この機能は、指定した図枠（タイトルブロック）を使用して、複数のシートを一度に作成できます。
-                    シート番号とシート名を入力するだけで、効率的にプロジェクトのシート構成を整えることができます。
-                </p>
+                <p data-lang="manual-sheet-overview">この機能は、指定した図枠（タイトルブロック）を使用して、複数のシートを一度に作成できます。シート番号とシート名を入力するだけで、効率的にプロジェクトのシート構成を整えることができます。</p>
             </div>
         </section>
 
         <!-- 使い方 -->
         <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
-            
-            <div class="step-box">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-sheet-creation-step1-title">機能を起動</h3>
-                    <p data-lang-key="manual-sheet-creation-step1-desc">
-                        Revitリボンの「28 Tools」タブから「シート一括作成」ボタンをクリックします。
-                    </p>
+            <h2 class="section-title" data-lang="section-howto">使い方</h2>
+            <div class="content-box">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 data-lang="manual-sheet-step1-title">機能を起動</h3>
+                        <p data-lang="manual-sheet-step1-desc">Revitリボンの「28 Tools」タブから「シート一括作成」ボタンをクリックします。</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-sheet-creation-step2-title">図枠を選択</h3>
-                    <p data-lang-key="manual-sheet-creation-step2-desc">
-                        ダイアログが表示されたら、使用する図枠（タイトルブロック）をドロップダウンリストから選択します。
-                    </p>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 data-lang="manual-sheet-step2-title">図枠を選択</h3>
+                        <p data-lang="manual-sheet-step2-desc">ダイアログが表示されたら、使用する図枠（タイトルブロック）をドロップダウンリストから選択します。</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-sheet-creation-step3-title">シート情報を入力</h3>
-                    <p data-lang-key="manual-sheet-creation-step3-desc">
-                        作成したいシートの番号とシート名を入力します。複数のシートを一度に指定できます。
-                    </p>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 data-lang="manual-sheet-step3-title">シート情報を入力</h3>
+                        <p data-lang="manual-sheet-step3-desc">作成したいシートの番号とシート名を入力します。複数のシートを一度に指定できます。</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-sheet-creation-step4-title">実行</h3>
-                    <p data-lang-key="manual-sheet-creation-step4-desc">
-                        「作成」ボタンをクリックすると、指定した図枠で複数のシートが一括作成されます。
-                    </p>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 data-lang="manual-sheet-step4-title">実行</h3>
+                        <p data-lang="manual-sheet-step4-desc">「作成」ボタンをクリックすると、指定した図枠で複数のシートが一括作成されます。</p>
+                    </div>
                 </div>
-            </div>
-
-            <!-- スクリーンショット用プレースホルダー -->
-            <div class="image-placeholder">
-                <p data-lang-key="image-placeholder-text">📷 スクリーンショット画像をここに追加予定</p>
             </div>
         </section>
 
         <!-- 活用シーン -->
         <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-usecases">活用シーン</h2>
-            <div class="usecase-grid">
-                <div class="usecase-card">
-                    <div class="usecase-icon">📋</div>
-                    <h3 data-lang-key="manual-sheet-creation-usecase1-title">プロジェクト初期設定</h3>
-                    <p data-lang-key="manual-sheet-creation-usecase1-desc">
-                        プロジェクト開始時に、必要なシート構成を一度に作成できます。
-                    </p>
-                </div>
-                <div class="usecase-card">
-                    <div class="usecase-icon">🏗️</div>
-                    <h3 data-lang-key="manual-sheet-creation-usecase2-title">標準シート構成の展開</h3>
-                    <p data-lang-key="manual-sheet-creation-usecase2-desc">
-                        会社の標準シート構成を素早くプロジェクトに展開できます。
-                    </p>
-                </div>
-                <div class="usecase-card">
-                    <div class="usecase-icon">⚡</div>
-                    <h3 data-lang-key="manual-sheet-creation-usecase3-title">作業効率化</h3>
-                    <p data-lang-key="manual-sheet-creation-usecase3-desc">
-                        シートを1枚ずつ作成する手間を大幅に削減できます。
-                    </p>
+            <h2 class="section-title" data-lang="section-usecases">活用シーン</h2>
+            <div class="content-box">
+                <div class="usecase-grid">
+                    <div class="usecase-card">
+                        <div class="usecase-icon">📋</div>
+                        <h3 data-lang="manual-sheet-usecase1-title">プロジェクト初期設定</h3>
+                        <p data-lang="manual-sheet-usecase1-desc">プロジェクト開始時に、必要なシート構成を一度に作成できます。</p>
+                    </div>
+                    <div class="usecase-card">
+                        <div class="usecase-icon">🏗️</div>
+                        <h3 data-lang="manual-sheet-usecase2-title">標準シート構成の展開</h3>
+                        <p data-lang="manual-sheet-usecase2-desc">会社の標準シート構成を素早くプロジェクトに展開できます。</p>
+                    </div>
+                    <div class="usecase-card">
+                        <div class="usecase-icon">⚡</div>
+                        <h3 data-lang="manual-sheet-usecase3-title">作業効率化</h3>
+                        <p data-lang="manual-sheet-usecase3-desc">シートを1枚ずつ作成する手間を大幅に削減できます。</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Tips -->
         <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-tips">Tips</h2>
-            <div class="tips-box">
+            <h2 class="section-title" data-lang="section-tips">Tips</h2>
+            <div class="content-box tips-box">
                 <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-sheet-creation-tip1">
-                        <strong>図枠の準備：</strong>事前に使用する図枠をプロジェクトにロードしておいてください。
-                    </p>
+                    <div class="tip-icon">💡</div>
+                    <p data-lang="manual-sheet-tip1">図枠の準備：事前に使用する図枠をプロジェクトにロードしておいてください。</p>
                 </div>
                 <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-sheet-creation-tip2">
-                        <strong>シート番号の命名規則：</strong>会社の標準に従ったシート番号体系を使用することをお勧めします。
-                    </p>
+                    <div class="tip-icon">💡</div>
+                    <p data-lang="manual-sheet-tip2">シート番号の命名規則：会社の標準に従ったシート番号体系を使用することをお勧めします。</p>
                 </div>
                 <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-sheet-creation-tip3">
-                        <strong>既存シート確認：</strong>同じシート番号が既に存在する場合はエラーになります。
-                    </p>
+                    <div class="tip-icon">💡</div>
+                    <p data-lang="manual-sheet-tip3">既存シート確認：同じシート番号が既に存在する場合はエラーになります。</p>
                 </div>
             </div>
         </section>
 
         <!-- 注意事項 -->
         <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-notes">注意事項</h2>
-            <div class="notes-box warning">
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-sheet-creation-note1">
-                        図枠（タイトルブロック）が事前にプロジェクトにロードされている必要があります。
-                    </p>
+            <h2 class="section-title" data-lang="section-notes">注意事項</h2>
+            <div class="content-box warning-box">
+                <div class="warning-item">
+                    <div class="warning-icon">⚠️</div>
+                    <p data-lang="manual-sheet-note1">図枠（タイトルブロック）が事前にプロジェクトにロードされている必要があります。</p>
                 </div>
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-sheet-creation-note2">
-                        重複するシート番号は作成できません。既存のシート番号と重複しないように注意してください。
-                    </p>
+                <div class="warning-item">
+                    <div class="warning-icon">⚠️</div>
+                    <p data-lang="manual-sheet-note2">重複するシート番号は作成できません。既存のシート番号と重複しないように注意してください。</p>
                 </div>
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-sheet-creation-note3">
-                        シート作成後は、必要に応じてシートの詳細情報（承認者、作図者など）を個別に設定してください。
-                    </p>
+                <div class="warning-item">
+                    <div class="warning-icon">⚠️</div>
+                    <p data-lang="manual-sheet-note3">シート作成後は、必要に応じてシートの詳細情報（承認者、作図者など）を個別に設定してください。</p>
                 </div>
             </div>
         </section>
 
-        <!-- ナビゲーション -->
-        <div class="manual-navigation">
-            <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
-                ← ホームに戻る
-            </a>
-        </div>
+        <!-- ホームに戻るボタン -->
+        <a href="../index.html" class="back-button">
+            <span data-lang="back-to-home">← ホームに戻る</span>
+        </a>
     </div>
 
     <script src="../js/main.js"></script>
