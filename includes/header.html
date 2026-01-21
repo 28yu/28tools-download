@@ -1,29 +1,29 @@
 <!-- includes/header.html -->
 <header class="site-header">
-    <h1 class="main-title" data-lang="site-title">28 Tools</h1>
+    <h1 class="main-title" data-lang-key="site-title">28 Tools</h1>
     <div class="title-divider"></div>
-    <p class="subtitle" data-lang="site-subtitle">Revit アドイン配布センター</p>
+    <p class="subtitle" data-lang-key="site-subtitle">Revit アドイン配布センター</p>
 </header>
 
 <!-- 言語切り替えボタン（画面右上固定） -->
 <div class="lang-selector">
-    <button class="lang-selector-button">
+    <button id="lang-btn" class="lang-selector-button">
         <span class="flag">🇯🇵</span>
         <span class="lang-name">日本語</span>
         <span class="arrow">▼</span>
     </button>
-    <div class="lang-dropdown">
-        <div class="lang-option" data-lang="ja">
+    <div id="lang-dropdown" class="lang-dropdown">
+        <a href="#" class="lang-option" data-lang="ja">
             <span class="flag">🇯🇵</span>
             <span>日本語</span>
-        </div>
-        <div class="lang-option" data-lang="en">
+        </a>
+        <a href="#" class="lang-option" data-lang="en">
             <span class="flag">🇺🇸</span>
             <span>English</span>
-        </div>
-        <div class="lang-option" data-lang="zh">
+        </a>
+        <a href="#" class="lang-option" data-lang="zh">
             <span class="flag">🇨🇳</span>
             <span>中文</span>
-        </div>
+        </a>
     </div>
 </div>
