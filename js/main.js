@@ -1,4 +1,4 @@
-// main.js v6.3 - 言語切り替え完全修正版（翻訳データ完全版）
+// main.js v6.4 - バージョンタブクリックで直接ダウンロード
 
 // ==========================================
 // 1. 共通ヘッダー読み込み機能
@@ -80,9 +80,6 @@ const translations = {
         'version-status-development': '開発中',
         'version-status-planned': '計画中',
         
-        // ダウンロードボタン
-        'download-button': 'ダウンロード',
-        
         // フッターリンク
         'footer-install': 'インストール手順',
         'footer-uninstall': 'アンインストール',
@@ -140,9 +137,6 @@ const translations = {
         'version-status-development': 'In Development',
         'version-status-planned': 'Planned',
         
-        // Download button
-        'download-button': 'Download',
-        
         // Footer links
         'footer-install': 'Installation Guide',
         'footer-uninstall': 'Uninstallation',
@@ -199,9 +193,6 @@ const translations = {
         'version-status-available': '可用',
         'version-status-development': '开发中',
         'version-status-planned': '计划中',
-        
-        // 下载按钮
-        'download-button': '下载',
         
         // 页脚链接
         'footer-install': '安装指南',
@@ -304,7 +295,6 @@ function changeLanguage(lang) {
     console.log('翻訳対象要素数:', elements.length);
     
     let translatedCount = 0;
-    let missingKeys = [];
     
     elements.forEach(element => {
         const key = element.dataset.lang;
@@ -324,28 +314,20 @@ function changeLanguage(lang) {
                 }
             }
             translatedCount++;
-            console.log(`✓ 翻訳適用: ${key} -> ${translations[lang][key]}`);
-        } else {
-            missingKeys.push(`${lang}.${key}`);
-            console.warn(`✗ 翻訳キー未定義: ${lang}.${key}`);
         }
     });
     
     console.log(`翻訳完了: ${translatedCount}/${elements.length}個の要素`);
-    if (missingKeys.length > 0) {
-        console.warn('未定義の翻訳キー:', missingKeys);
-    }
     
     // localStorage に保存
     localStorage.setItem('selectedLanguage', lang);
-    console.log('言語設定保存:', lang);
     
     // 言語ボタンの表示更新
     updateLanguageButton(lang);
 }
 
 // ==========================================
-// 3. モーダル機能（v6.1改善版）
+// 3. モーダル機能
 // ==========================================
 
 let currentModal = null;
@@ -654,75 +636,72 @@ function closeModal() {
     if (currentModal) {
         currentModal.style.display = 'none';
         document.body.style.overflow = '';
-        console.log('モーダル閉じる');
     }
 }
 
 // ==========================================
-// 4. バージョン選択機能
+// 4. バージョンタブクリックでダウンロード
 // ==========================================
 
-function selectVersion(version) {
-    console.log('バージョン選択:', version);
+function initVersionTabs() {
+    const versionTabs = document.querySelectorAll('.version-tab');
     
-    // すべてのバージョンタブから selected クラスを削除
-    document.querySelectorAll('.version-tab').forEach(tab => {
-        tab.classList.remove('selected');
+    versionTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const version = this.dataset.version;
+            const status = this.classList.contains('completed') ? 'completed' : 
+                          this.classList.contains('development') ? 'development' : 'planned';
+            
+            console.log(`バージョンタブクリック: ${version} (${status})`);
+            
+            // 利用可能なバージョンのみダウンロード処理
+            if (status === 'completed') {
+                downloadAddin(version);
+            } else if (status === 'development') {
+                alert('このバージョンは現在開発中です。\nThis version is currently in development.\n此版本正在开发中。');
+            } else {
+                alert('このバージョンは開発予定です。\nThis version is planned for future development.\n此版本计划未来开发。');
+            }
+        });
     });
-    
-    // 選択されたバージョンタブに selected クラスを追加
-    const selectedTab = document.querySelector(`[onclick="selectVersion('${version}')"]`);
-    if (selectedTab) {
-        selectedTab.classList.add('selected');
-    }
-    
-    // ダウンロードボタンの状態を更新
-    updateDownloadButton(version);
 }
 
-function updateDownloadButton(version) {
-    const downloadBtn = document.querySelector('.download-button');
-    if (!downloadBtn) return;
+function downloadAddin(version) {
+    const currentLang = localStorage.getItem('selectedLanguage') || 'ja';
     
-    const availableVersions = ['2021', '2022', '2023'];
+    const messages = {
+        ja: {
+            prompt: 'ダウンロードパスワードを入力してください:',
+            starting: `Revit ${version}版のダウンロードを開始します\n（ファイル準備中）`,
+            error: 'パスワードが正しくありません'
+        },
+        en: {
+            prompt: 'Enter download password:',
+            starting: `Starting download for Revit ${version}\n(File preparation in progress)`,
+            error: 'Incorrect password'
+        },
+        zh: {
+            prompt: '请输入下载密码:',
+            starting: `开始下载Revit ${version}版本\n(文件准备中)`,
+            error: '密码不正确'
+        }
+    };
     
-    if (availableVersions.includes(version)) {
-        downloadBtn.disabled = false;
-        downloadBtn.style.opacity = '1';
-        downloadBtn.style.cursor = 'pointer';
-    } else {
-        downloadBtn.disabled = true;
-        downloadBtn.style.opacity = '0.5';
-        downloadBtn.style.cursor = 'not-allowed';
-    }
-}
-
-// ==========================================
-// 5. ダウンロード機能（パスワード認証）
-// ==========================================
-
-function downloadAddin() {
-    const selectedVersion = document.querySelector('.version-tab.selected');
-    if (!selectedVersion) {
-        alert('Revitバージョンを選択してください');
-        return;
-    }
-    
-    const version = selectedVersion.textContent.match(/\d{4}/)[0];
-    const password = prompt('ダウンロードパスワードを入力してください:');
+    const msg = messages[currentLang];
+    const password = prompt(msg.prompt);
     
     // 仮のパスワード認証（実際の運用では変更してください）
     if (password === '28tools2024') {
         // ダウンロード処理（実際のファイルがdownloadsフォルダに配置されたら有効化）
         // window.location.href = `downloads/28Tools_Revit${version}_v1.0.zip`;
-        alert(`Revit ${version}版のダウンロードを開始します\n（ファイル準備中）`);
-    } else {
-        alert('パスワードが正しくありません');
+        alert(msg.starting);
+    } else if (password !== null) {
+        alert(msg.error);
     }
 }
 
 // ==========================================
-// 6. マニュアルページ用機能
+// 5. マニュアルページ用機能
 // ==========================================
 
 function addHomeLink() {
@@ -750,7 +729,7 @@ function addTitleHomeLink() {
 }
 
 // ==========================================
-// 7. 初期化処理
+// 6. 初期化処理
 // ==========================================
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -763,6 +742,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (document.body.classList.contains('manual-page')) {
         addHomeLink();
         addTitleHomeLink();
+    } else {
+        // メインページの場合：バージョンタブの初期化
+        initVersionTabs();
     }
     
     // フッターリンクにイベントリスナーを追加
