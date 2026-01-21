@@ -1,6 +1,6 @@
 // ========================================
 // 28 Tools Download Center - Main JavaScript
-// Version: 6.3 (全マニュアルページ翻訳対応完全版)
+// Version: 6.4 (index.html翻訳対応完全版)
 // ========================================
 
 // グローバル変数
@@ -134,12 +134,17 @@ function updateLanguageButton() {
     if (!langBtn) return;
 
     const langMap = {
-        'ja': '🇯🇵 日本語',
-        'en': '🇺🇸 English',
-        'zh': '🇨🇳 中文'
+        'ja': { flag: '🇯🇵', name: '日本語' },
+        'en': { flag: '🇺🇸', name: 'English' },
+        'zh': { flag: '🇨🇳', name: '中文' }
     };
 
-    langBtn.innerHTML = `${langMap[currentLanguage]} <span class="dropdown-arrow">▼</span>`;
+    const lang = langMap[currentLanguage];
+    langBtn.innerHTML = `
+        <span class="flag">${lang.flag}</span>
+        <span class="lang-name">${lang.name}</span>
+        <span class="arrow">▼</span>
+    `;
 }
 
 function changeLanguage(lang) {
@@ -212,6 +217,142 @@ function initTranslations() {
             ja: '📷 スクリーンショット画像をここに追加予定',
             en: '📷 Screenshot image will be added here',
             zh: '📷 此处将添加截图'
+        }
+    };
+
+    // ========================================
+    // index.html専用翻訳
+    // ========================================
+    translations.indexPage = {
+        'section-features': {
+            ja: '機能一覧',
+            en: 'Features',
+            zh: '功能列表'
+        },
+        'feature-grid-title': {
+            ja: '符号ON/OFF',
+            en: 'Grid Bubble ON/OFF',
+            zh: '轴号开关'
+        },
+        'feature-grid-desc': {
+            ja: '通り芯・レベルの符号表示を一括切替',
+            en: 'Batch toggle grid and level bubble visibility',
+            zh: '批量切换轴网和标高符号显示'
+        },
+        'feature-sheet-title': {
+            ja: 'シート一括作成',
+            en: 'Batch Sheet Creation',
+            zh: '批量创建图纸'
+        },
+        'feature-sheet-desc': {
+            ja: '図枠を指定して複数シートをまとめて作成',
+            en: 'Create multiple sheets with specified title blocks',
+            zh: '使用指定的标题栏一次创建多个图纸'
+        },
+        'feature-view-title': {
+            ja: '3D視点コピペ',
+            en: '3D View Copy & Paste',
+            zh: '3D视点复制粘贴'
+        },
+        'feature-view-desc': {
+            ja: '3Dビューの視点を他のビューにコピー&ペースト',
+            en: 'Copy and paste 3D view orientation',
+            zh: '将3D视图的视点复制并粘贴'
+        },
+        'feature-section-title': {
+            ja: '切断ボックスコピペ',
+            en: 'Section Box Copy & Paste',
+            zh: '剖切框复制粘贴'
+        },
+        'feature-section-desc': {
+            ja: '3Dビューの切断ボックス範囲をコピー&ペースト',
+            en: 'Copy and paste section box range',
+            zh: '复制并粘贴剖切框范围'
+        },
+        'feature-viewport-title': {
+            ja: 'ビューポート位置コピペ',
+            en: 'Viewport Position Copy & Paste',
+            zh: '视口位置复制粘贴'
+        },
+        'feature-viewport-desc': {
+            ja: 'シート上のビューポート位置をコピー&ペースト',
+            en: 'Copy and paste viewport positions',
+            zh: '复制并粘贴视口位置'
+        },
+        'feature-crop-title': {
+            ja: 'トリミング領域コピペ',
+            en: 'Crop Region Copy & Paste',
+            zh: '裁剪区域复制粘贴'
+        },
+        'feature-crop-desc': {
+            ja: 'ビューのトリミング領域をコピー&ペースト',
+            en: 'Copy and paste crop regions',
+            zh: '复制并粘贴裁剪区域'
+        },
+        'version-title': {
+            ja: 'Revitバージョンを選択',
+            en: 'Select Revit Version',
+            zh: '选择Revit版本'
+        },
+        'version-2021': {
+            ja: 'Revit 2021',
+            en: 'Revit 2021',
+            zh: 'Revit 2021'
+        },
+        'version-2022': {
+            ja: 'Revit 2022',
+            en: 'Revit 2022',
+            zh: 'Revit 2022'
+        },
+        'version-2023': {
+            ja: 'Revit 2023',
+            en: 'Revit 2023',
+            zh: 'Revit 2023'
+        },
+        'version-2024': {
+            ja: 'Revit 2024',
+            en: 'Revit 2024',
+            zh: 'Revit 2024'
+        },
+        'version-2025': {
+            ja: 'Revit 2025',
+            en: 'Revit 2025',
+            zh: 'Revit 2025'
+        },
+        'version-2026': {
+            ja: 'Revit 2026',
+            en: 'Revit 2026',
+            zh: 'Revit 2026'
+        },
+        'version-status-available': {
+            ja: '利用可能',
+            en: 'Available',
+            zh: '可用'
+        },
+        'version-status-development': {
+            ja: '開発中',
+            en: 'In Development',
+            zh: '开发中'
+        },
+        'version-status-planned': {
+            ja: '計画中',
+            en: 'Planned',
+            zh: '计划中'
+        },
+        'footer-install': {
+            ja: 'インストール手順',
+            en: 'Installation Guide',
+            zh: '安装指南'
+        },
+        'footer-uninstall': {
+            ja: 'アンインストール',
+            en: 'Uninstall',
+            zh: '卸载'
+        },
+        'footer-support': {
+            ja: 'サポート情報',
+            en: 'Support',
+            zh: '支持信息'
         }
     };
 
@@ -750,7 +891,7 @@ function initTranslations() {
         'manual-sectionbox-copy-tip3': {
             ja: 'コピー元で切断ボックスがOFFの場合、範囲情報のみがコピーされます。',
             en: 'If the section box is OFF in the source, only the range information is copied.',
-            zh: '如果源中的剖切框关闭，则仅复制范囲信息。'
+            zh: '如果源中的剖切框关闭，则仅复制范围信息。'
         },
         'manual-sectionbox-copy-tip3-strong': {
             ja: 'OFF状態での動作：',
@@ -1049,7 +1190,8 @@ function initTranslations() {
     // 全翻訳をマージ
     Object.assign(translations, 
         translations.common, 
-        translations.sections, 
+        translations.sections,
+        translations.indexPage,
         translations.gridBubble,
         translations.sheetCreation,
         translations.viewCopy,
@@ -1058,7 +1200,7 @@ function initTranslations() {
         translations.cropboxCopy
     );
     
-    console.log('📚 Translations initialized (全6ページ完全対応)');
+    console.log('📚 Translations initialized (全6ページ+index.html完全対応)');
 }
 
 // ========================================
@@ -1386,4 +1528,4 @@ window.debug28Tools = {
     testModal: (type) => openModal(type)
 };
 
-console.log('✅ 28 Tools Download Center - JavaScript loaded successfully (v6.3 - 全6ページ完全対応)');
+console.log('✅ 28 Tools Download Center - JavaScript loaded successfully (v6.4 - index.html翻訳完全対応)');
