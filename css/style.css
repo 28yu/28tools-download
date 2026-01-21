@@ -88,6 +88,7 @@ body {
 
 /* ドロップダウンメニュー */
 .lang-dropdown {
+    display: none; /* 初期状態は非表示 */
     position: absolute;
     top: 100%;
     right: 0;
@@ -96,19 +97,13 @@ body {
     border: 1px solid rgba(52, 73, 94, 0.2);
     border-radius: 8px;
     box-shadow: var(--shadow-medium);
-    min-width: 140px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
+    min-width: 160px;
     overflow: hidden;
     z-index: 1001;
 }
 
 .lang-dropdown.show {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+    display: block; /* showクラスで表示 */
 }
 
 .lang-option {
@@ -122,6 +117,7 @@ body {
     transition: background-color 0.2s ease;
     border-bottom: 1px solid rgba(52, 73, 94, 0.1);
     cursor: pointer;
+    text-decoration: none; /* リンク下線を消す */
 }
 
 .lang-option:last-child {
