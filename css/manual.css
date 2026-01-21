@@ -33,9 +33,14 @@
    共通ヘッダーの調整（マニュアルページ用）
    ======================================== */
 
-/* 共通ヘッダーの線を非表示 */
+/* 共通ヘッダーの title-divider は表示 */
 .manual-page .title-divider {
-    display: none !important;
+    display: block !important;
+    width: 80px !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue)) !important;
+    border-radius: 2px !important;
+    margin: 16px auto !important;
 }
 
 /* ホームページとの見た目を統一 */
@@ -69,7 +74,7 @@
 }
 
 /* ========================================
-   機能ヘッダー（タイトル部分）【修正版 v2】
+   機能ヘッダー（タイトル部分）
    ======================================== */
 
 .manual-page .manual-header {
@@ -81,14 +86,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 0;
     margin-bottom: 40px;
     text-align: center;
 }
 
 .manual-page .icon-wrapper {
     flex-shrink: 0;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .manual-page .feature-icon {
@@ -109,23 +114,30 @@
     font-weight: 500 !important;
     color: var(--concrete-gray) !important;
     margin: 0 !important;
+    margin-bottom: 0 !important;
     line-height: 1.2 !important;
     font-family: 'Inter', sans-serif !important;
     letter-spacing: -0.01em !important;
-    padding-bottom: 16px !important;
-    border-bottom: 3px solid;
-    border-image: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue)) 1;
-    width: 100%;
+    border: none !important;
+    padding: 0 !important;
 }
 
-/* サブタイトルスタイル（タイトルの直下） */
+/* サブタイトルスタイル（下の線を削除） */
 .manual-page .manual-subtitle {
     font-size: 1rem !important;
     color: var(--text-secondary) !important;
     margin: 0 !important;
+    margin-top: 16px !important;
     line-height: 1.5 !important;
     font-family: 'Noto Sans JP', sans-serif !important;
     font-weight: 400 !important;
+    border: none !important;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
+.manual-page .manual-subtitle::after {
+    display: none !important;
 }
 
 /* ========================================
@@ -157,7 +169,7 @@
     color: #27ae60 !important;
 }
 
-/* ホームページと同じ線を非表示（マニュアルページで独自の線を表示するため） */
+/* ホームページと同じ線を非表示（manual-title には付けない） */
 .manual-page .main-title::after,
 .manual-page h1.main-title::after,
 .manual-page .header .main-title::after,
@@ -480,7 +492,6 @@
     
     .manual-page .manual-title {
         font-size: 2rem !important;
-        padding-bottom: 12px !important;
     }
     
     .manual-page .manual-subtitle {
@@ -518,7 +529,6 @@
     
     .manual-page .manual-title {
         font-size: 1.8rem !important;
-        padding-bottom: 12px !important;
     }
     
     .manual-page .manual-subtitle {
