@@ -3,136 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>符号ON/OFF - 28 Tools</title>
+    <title>符号ON/OFF - 28 Tools Manual</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/manual.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="manual-page">
     <!-- 共通ヘッダー -->
     <div id="header-container"></div>
 
+    <!-- マニュアルコンテンツ -->
     <div class="manual-container">
         <!-- パンくずリスト -->
         <nav class="breadcrumb">
-            <a href="../index.html" data-lang="breadcrumb-home">ホーム</a>
+            <a href="../index.html" data-lang-key="breadcrumb-home">ホーム</a>
             <span class="separator">›</span>
-            <span data-lang="manual-grid-title">符号ON/OFF</span>
+            <span data-lang-key="manual-grid-bubble-title">符号ON/OFF</span>
         </nav>
 
-        <!-- マニュアルヘッダー -->
+        <!-- 機能タイトル -->
         <div class="manual-header">
-            <div class="manual-icon">
-                <img src="../images/icons/both_64.png" alt="Grid Bubble Icon">
+            <div class="icon-wrapper">
+                <img src="../images/icons/both_64.png" alt="Grid Bubble Icon" class="feature-icon">
             </div>
-            <h1 class="manual-title" data-lang="manual-grid-title">符号ON/OFF</h1>
-            <p class="manual-subtitle" data-lang="manual-grid-subtitle">通り芯・レベルの符号表示をワンクリックで一括ON/OFF切り替え</p>
+            <h1 class="manual-title" data-lang-key="manual-grid-bubble-title">符号ON/OFF</h1>
+            <p class="manual-subtitle" data-lang-key="manual-grid-bubble-subtitle">通り芯・レベルの符号表示を一括切り替え</p>
         </div>
 
         <!-- 機能概要 -->
         <section class="manual-section">
-            <h2 class="section-title" data-lang="section-overview">機能概要</h2>
+            <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
             <div class="content-box">
-                <p data-lang="manual-grid-overview">この機能は、現在アクティブなビュー（平面図、断面図、立面図）の通り芯（グリッド）とレベルの符号を、ワンクリックで一括ON/OFF切り替えできます。大量の通り芯やレベルがあるプロジェクトで、図面の見やすさを瞬時に調整できる便利なツールです。</p>
+                <p data-lang-key="manual-grid-bubble-overview">
+                    この機能は、ビュー内のすべての通り芯（グリッド）とレベルの符号（バブル）表示を一括でON/OFFできます。左端のみ、両端、右端のみの3パターンから選択可能で、図面の見栄えを素早く調整できます。
+                </p>
             </div>
         </section>
 
         <!-- 使い方 -->
         <section class="manual-section">
-            <h2 class="section-title" data-lang="section-howto">使い方</h2>
-            <div class="content-box">
-                <div class="step-item">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3 data-lang="manual-grid-step1-title">ビューを開く</h3>
-                        <p data-lang="manual-grid-step1-desc">符号表示を切り替えたいビュー（平面図、断面図、立面図）を開きます。</p>
-                    </div>
+            <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
+            
+            <div class="step-box">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 data-lang-key="manual-grid-bubble-step1-title">対象ビューを開く</h3>
+                    <p data-lang-key="manual-grid-bubble-step1-desc">
+                        符号表示を変更したいビュー（平面図、立面図、断面図など）を開きます。
+                    </p>
                 </div>
-                <div class="step-item">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3 data-lang="manual-grid-step2-title">28 Tools を起動</h3>
-                        <p data-lang="manual-grid-step2-desc">Revitリボンの「28 Tools」タブから、符号ON/OFFの機能ボタンをクリックします。3つのボタンから選択できます：左端のみON、両端ON、右端のみON。</p>
-                    </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 data-lang-key="manual-grid-bubble-step2-title">表示パターンを選択</h3>
+                    <p data-lang-key="manual-grid-bubble-step2-desc">
+                        Revitリボンの「28 Tools」タブから、希望する表示パターンのボタンをクリックします：
+                    </p>
+                    <ul>
+                        <li data-lang-key="manual-grid-bubble-step2-pattern1">左端符号のみ表示</li>
+                        <li data-lang-key="manual-grid-bubble-step2-pattern2">両端符号を表示</li>
+                        <li data-lang-key="manual-grid-bubble-step2-pattern3">右端符号のみ表示</li>
+                    </ul>
                 </div>
-                <div class="step-item">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3 data-lang="manual-grid-step3-title">結果を確認</h3>
-                        <p data-lang="manual-grid-step3-desc">符号表示が切り替わったことを確認します。元に戻したい場合は、Revitの「元に戻す」（Undo）機能を使用してください。</p>
-                    </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3 data-lang-key="manual-grid-bubble-step3-title">自動適用</h3>
+                    <p data-lang-key="manual-grid-bubble-step3-desc">
+                        ビュー内のすべての通り芯とレベルに、選択したパターンが自動的に適用されます。
+                    </p>
                 </div>
+            </div>
+
+            <!-- スクリーンショット用プレースホルダー -->
+            <div class="image-placeholder">
+                <p data-lang-key="image-placeholder-text">📷 スクリーンショット画像をここに追加予定</p>
             </div>
         </section>
 
         <!-- 活用シーン -->
         <section class="manual-section">
-            <h2 class="section-title" data-lang="section-usecases">活用シーン</h2>
-            <div class="content-box">
-                <div class="usecase-grid">
-                    <div class="usecase-card">
-                        <div class="usecase-icon">📐</div>
-                        <h3 data-lang="manual-grid-usecase1-title">プレゼンテーション用図面</h3>
-                        <p data-lang="manual-grid-usecase1-desc">クライアントへの説明時に、必要な符号だけを表示してわかりやすく提示できます。</p>
-                    </div>
-                    <div class="usecase-card">
-                        <div class="usecase-icon">🖨️</div>
-                        <h3 data-lang="manual-grid-usecase2-title">印刷用図面の調整</h3>
-                        <p data-lang="manual-grid-usecase2-desc">印刷時に符号が密集して見づらい場合、片側だけ表示することで見やすくできます。</p>
-                    </div>
-                    <div class="usecase-card">
-                        <div class="usecase-icon">⚡</div>
-                        <h3 data-lang="manual-grid-usecase3-title">作業効率化</h3>
-                        <p data-lang="manual-grid-usecase3-desc">大量の通り芯・レベルを1つずつ手動で切り替える手間を大幅に削減できます。</p>
-                    </div>
+            <h2 class="section-title" data-lang-key="section-usecases">活用シーン</h2>
+            <div class="usecase-grid">
+                <div class="usecase-card">
+                    <div class="usecase-icon">📐</div>
+                    <h3 data-lang-key="manual-grid-bubble-usecase1-title">図面の整理</h3>
+                    <p data-lang-key="manual-grid-bubble-usecase1-desc">
+                        必要な情報だけを表示することで、図面を見やすく整理できます。
+                    </p>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-icon">📊</div>
+                    <h3 data-lang-key="manual-grid-bubble-usecase2-title">プレゼン資料作成</h3>
+                    <p data-lang-key="manual-grid-bubble-usecase2-desc">
+                        クライアント向け資料では符号を最小限にして、すっきりした図面を作成できます。
+                    </p>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-icon">✅</div>
+                    <h3 data-lang-key="manual-grid-bubble-usecase3-title">作図基準への対応</h3>
+                    <p data-lang-key="manual-grid-bubble-usecase3-desc">
+                        プロジェクトごとの作図基準に合わせて、符号表示を統一できます。
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- Tips -->
         <section class="manual-section">
-            <h2 class="section-title" data-lang="section-tips">Tips</h2>
-            <div class="content-box tips-box">
+            <h2 class="section-title" data-lang-key="section-tips">Tips</h2>
+            <div class="tips-box">
                 <div class="tip-item">
-                    <div class="tip-icon">💡</div>
-                    <p data-lang="manual-grid-tip1">ビュー単位で適用：この機能は現在アクティブなビューにのみ適用されます。他のビューには影響しません。</p>
+                    <span class="tip-icon">💡</span>
+                    <p data-lang-key="manual-grid-bubble-tip1">
+                        <strong data-lang-key="manual-grid-bubble-tip1-strong">ビュー単位の設定：</strong>変更は現在のビューにのみ適用されます。他のビューには影響しません。
+                    </p>
                 </div>
                 <div class="tip-item">
-                    <div class="tip-icon">💡</div>
-                    <p data-lang="manual-grid-tip2">元に戻す：設定を間違えた場合は、Revitの「元に戻す」（Ctrl+Z）で簡単に元に戻せます。</p>
+                    <span class="tip-icon">💡</span>
+                    <p data-lang-key="manual-grid-bubble-tip2">
+                        <strong data-lang-key="manual-grid-bubble-tip2-strong">ビューテンプレート活用：</strong>ビューテンプレートと組み合わせることで、複数ビューに同じ設定を効率的に適用できます。
+                    </p>
                 </div>
                 <div class="tip-item">
-                    <div class="tip-icon">💡</div>
-                    <p data-lang="manual-grid-tip3">ビューテンプレート：よく使う設定をビューテンプレートとして保存しておくと、さらに効率的です。</p>
+                    <span class="tip-icon">💡</span>
+                    <p data-lang-key="manual-grid-bubble-tip3">
+                        <strong data-lang-key="manual-grid-bubble-tip3-strong">やり直しが可能：</strong>元に戻す（Ctrl+Z）で変更を取り消すことができます。
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- 注意事項 -->
         <section class="manual-section">
-            <h2 class="section-title" data-lang="section-notes">注意事項</h2>
-            <div class="content-box warning-box">
-                <div class="warning-item">
-                    <div class="warning-icon">⚠️</div>
-                    <p data-lang="manual-grid-note1">この機能は現在アクティブなビューにのみ適用されます。他のビューの符号表示は変更されません。</p>
+            <h2 class="section-title" data-lang-key="section-notes">注意事項</h2>
+            <div class="notes-box warning">
+                <div class="note-item">
+                    <span class="note-icon">⚠️</span>
+                    <p data-lang-key="manual-grid-bubble-note1">
+                        3Dビューでは通り芯の符号は表示されないため、この機能は効果がありません。
+                    </p>
                 </div>
-                <div class="warning-item">
-                    <div class="warning-icon">⚠️</div>
-                    <p data-lang="manual-grid-note2">3Dビューでは通り芯・レベルの符号表示設定が異なるため、この機能は使用できません。</p>
+                <div class="note-item">
+                    <span class="note-icon">⚠️</span>
+                    <p data-lang-key="manual-grid-bubble-note2">
+                        ビューの「切断領域」内にある通り芯とレベルのみが対象となります。
+                    </p>
                 </div>
-                <div class="warning-item">
-                    <div class="warning-icon">⚠️</div>
-                    <p data-lang="manual-grid-note3">ワークシェアリング環境では、他のユーザーのビューには影響しません（各ビューの設定は個別）。</p>
+                <div class="note-item">
+                    <span class="note-icon">⚠️</span>
+                    <p data-lang-key="manual-grid-bubble-note3">
+                        個別に非表示設定した通り芯やレベルには影響しません。
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- ホームに戻るボタン -->
-        <a href="../index.html" class="back-button">
-            <span data-lang="back-to-home">← ホームに戻る</span>
-        </a>
+        <!-- ナビゲーション -->
+        <div class="manual-navigation">
+            <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
+                ← ホームに戻る
+            </a>
+        </div>
     </div>
 
     <script src="../js/main.js"></script>
