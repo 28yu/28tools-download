@@ -1,6 +1,6 @@
 // ========================================
 // 28 Tools Download Center - Main JavaScript
-// Version: 6.4 (index.html翻訳対応完全版)
+// Version: 6.5 (モーダル機能修正+インストール手順詳細化)
 // ========================================
 
 // グローバル変数
@@ -28,6 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // ページ固有の初期化
     initPageSpecific();
+    
+    // モーダルボタンの初期化
+    setupModalButtons();
     
     console.log('✅ Initialization complete');
 });
@@ -339,6 +342,11 @@ function initTranslations() {
             en: 'Planned',
             zh: '计划中'
         },
+        'footer-title': {
+            ja: 'サポート',
+            en: 'Support',
+            zh: '支持'
+        },
         'footer-install': {
             ja: 'インストール手順',
             en: 'Installation Guide',
@@ -353,6 +361,284 @@ function initTranslations() {
             ja: 'サポート情報',
             en: 'Support',
             zh: '支持信息'
+        },
+        'modal-close': {
+            ja: '閉じる',
+            en: 'Close',
+            zh: '关闭'
+        }
+    };
+
+    // ========================================
+    // モーダル翻訳（インストール手順）
+    // ========================================
+    translations.installGuide = {
+        'modal-install-title': {
+            ja: 'インストール手順',
+            en: 'Installation Guide',
+            zh: '安装指南'
+        },
+        'install-step1-title': {
+            ja: 'ダウンロード',
+            en: 'Download',
+            zh: '下载'
+        },
+        'install-step1-site': {
+            ja: 'サイト:',
+            en: 'Site:',
+            zh: '网站:'
+        },
+        'install-step1-button': {
+            ja: 'ボタン:',
+            en: 'Button:',
+            zh: '按钮:'
+        },
+        'install-step1-download': {
+            ja: 'Revit 2021 版 をダウンロード',
+            en: 'Download Revit 2021 Version',
+            zh: '下载 Revit 2021 版本'
+        },
+        'install-step1-save': {
+            ja: '保存先:',
+            en: 'Save Location:',
+            zh: '保存位置:'
+        },
+        'install-step1-auto': {
+            ja: 'フォルダ（自動）',
+            en: 'Folder (Automatic)',
+            zh: '文件夹（自动）'
+        },
+        'install-step1-file': {
+            ja: 'ファイル:',
+            en: 'File:',
+            zh: '文件:'
+        },
+        'install-step1-size': {
+            ja: 'ファイルサイズ:',
+            en: 'File Size:',
+            zh: '文件大小:'
+        },
+        'install-step2-title': {
+            ja: '解凍',
+            en: 'Extract',
+            zh: '解压'
+        },
+        'install-step2-action': {
+            ja: 'ZIP ファイルをダブルクリック',
+            en: 'Double-click the ZIP file',
+            zh: '双击 ZIP 文件'
+        },
+        'install-step2-action2': {
+            ja: '右クリック → 「すべて展開」',
+            en: 'Right-click → "Extract All"',
+            zh: '右键点击 → "全部提取"'
+        },
+        'install-step2-folder': {
+            ja: '自動的にフォルダが生成:',
+            en: 'Folder is automatically generated:',
+            zh: '自动生成文件夹:'
+        },
+        'install-step3-title': {
+            ja: 'インストール',
+            en: 'Install',
+            zh: '安装'
+        },
+        'install-step3-action': {
+            ja: 'install.bat を右クリック',
+            en: 'Right-click install.bat',
+            zh: '右键点击 install.bat'
+        },
+        'install-step3-admin': {
+            ja: '「管理者として実行」を選択',
+            en: 'Select "Run as administrator"',
+            zh: '选择"以管理员身份运行"'
+        },
+        'install-step3-follow': {
+            ja: '画面に従ってインストール完了',
+            en: 'Follow on-screen instructions to complete',
+            zh: '按照屏幕上的说明完成安装'
+        },
+        'install-step3-location': {
+            ja: 'ファイルが以下に配置される:',
+            en: 'Files are placed in:',
+            zh: '文件放置在:'
+        },
+        'install-step3-required': {
+            ja: '必須',
+            en: 'Required',
+            zh: '必需'
+        },
+        'install-step4-title': {
+            ja: '動作確認',
+            en: 'Verification',
+            zh: '验证'
+        },
+        'install-step4-launch': {
+            ja: 'Revit を起動',
+            en: 'Launch Revit',
+            zh: '启动 Revit'
+        },
+        'install-step4-ribbon': {
+            ja: 'リボンに「28 Tools」タブが表示',
+            en: '"28 Tools" tab appears in ribbon',
+            zh: '功能区中显示"28 Tools"选项卡'
+        },
+        'install-step4-available': {
+            ja: '全6機能が利用可能',
+            en: 'All 6 features available',
+            zh: '所有 6 个功能都可用'
+        },
+        'install-step5-title': {
+            ja: 'ダウンロードファイルの削除 ✅',
+            en: 'Delete Download Files ✅',
+            zh: '删除下载文件 ✅'
+        },
+        'install-step5-zip': {
+            ja: '❌ ZIP ファイルを削除:',
+            en: '❌ Delete ZIP file:',
+            zh: '❌ 删除 ZIP 文件:'
+        },
+        'install-step5-folder': {
+            ja: '❌ 解凍フォルダを削除:',
+            en: '❌ Delete extracted folder:',
+            zh: '❌ 删除解压文件夹:'
+        },
+        'install-step5-reason': {
+            ja: '理由:',
+            en: 'Reason:',
+            zh: '原因:'
+        },
+        'install-step5-reason1': {
+            ja: '実際に動作するファイルは Addins フォルダに配置済み',
+            en: 'Working files are already placed in Addins folder',
+            zh: '实际文件已放置在 Addins 文件夹中'
+        },
+        'install-step5-reason2': {
+            ja: 'これらはインストール用の一時的なファイル',
+            en: 'These are temporary installation files',
+            zh: '这些是临时安装文件'
+        },
+        'install-step5-reason3': {
+            ja: 'ディスク容量の節約',
+            en: 'Save disk space',
+            zh: '节省磁盘空间'
+        }
+    };
+
+    // ========================================
+    // モーダル翻訳（アンインストール）
+    // ========================================
+    translations.uninstallGuide = {
+        'modal-uninstall-title': {
+            ja: 'アンインストール',
+            en: 'Uninstall',
+            zh: '卸载'
+        },
+        'uninstall-step1': {
+            ja: '方法 1: 自動アンインストール（推奨）',
+            en: 'Method 1: Automatic Uninstall (Recommended)',
+            zh: '方法 1: 自动卸载（推荐）'
+        },
+        'uninstall-step1-desc': {
+            ja: 'ダウンロード時に含まれていた uninstall.bat を実行します。',
+            en: 'Run the uninstall.bat included in the download.',
+            zh: '运行下载中包含的 uninstall.bat。'
+        },
+        'uninstall-step1-1': {
+            ja: 'uninstall.bat を右クリック',
+            en: 'Right-click uninstall.bat',
+            zh: '右键点击 uninstall.bat'
+        },
+        'uninstall-step1-2': {
+            ja: '「管理者として実行」を選択',
+            en: 'Select "Run as administrator"',
+            zh: '选择"以管理员身份运行"'
+        },
+        'uninstall-step1-3': {
+            ja: '画面に従ってアンインストール完了',
+            en: 'Follow on-screen instructions to complete',
+            zh: '按照屏幕上的说明完成卸载'
+        },
+        'uninstall-step2': {
+            ja: '方法 2: 手動削除',
+            en: 'Method 2: Manual Deletion',
+            zh: '方法 2: 手动删除'
+        },
+        'uninstall-step2-desc': {
+            ja: '以下のフォルダから手動で削除します。',
+            en: 'Manually delete from the following folder.',
+            zh: '从以下文件夹中手动删除。'
+        },
+        'uninstall-step2-delete': {
+            ja: '以下のファイルを削除:',
+            en: 'Delete the following files:',
+            zh: '删除以下文件:'
+        },
+        'uninstall-note': {
+            ja: '※ Revit を再起動すると変更が反映されます',
+            en: '※ Restart Revit to apply changes',
+            zh: '※ 重新启动 Revit 以应用更改'
+        }
+    };
+
+    // ========================================
+    // モーダル翻訳（サポート情報）
+    // ========================================
+    translations.supportInfo = {
+        'modal-support-title': {
+            ja: 'サポート情報',
+            en: 'Support Information',
+            zh: '支持信息'
+        },
+        'support-faq': {
+            ja: 'よくある質問',
+            en: 'Frequently Asked Questions',
+            zh: '常见问题'
+        },
+        'support-q1': {
+            ja: 'Q: インストールがうまくいきません',
+            en: 'Q: Installation is not working',
+            zh: 'Q: 安装不成功'
+        },
+        'support-a1': {
+            ja: 'A: 以下をご確認ください:\n• install.bat を「管理者として実行」していますか？\n• Revit が起動していないか確認してください\n• ウイルス対策ソフトがブロックしていないか確認してください',
+            en: 'A: Please check the following:\n• Are you running install.bat "as administrator"?\n• Make sure Revit is not running\n• Check if antivirus software is blocking it',
+            zh: 'A: 请检查以下内容:\n• 您是否以"管理员身份运行"install.bat？\n• 确保 Revit 未在运行\n• 检查防病毒软件是否正在阻止'
+        },
+        'support-q2': {
+            ja: 'Q: リボンに「28 Tools」が表示されません',
+            en: 'Q: "28 Tools" tab does not appear in ribbon',
+            zh: 'Q: 功能区中没有显示"28 Tools"选项卡'
+        },
+        'support-a2': {
+            ja: 'A: Revit を再起動してください。それでも表示されない場合は:\n• verify.bat を実行して診断してください\n• インストール手順を再度実施してください',
+            en: 'A: Restart Revit. If it still does not appear:\n• Run verify.bat to diagnose\n• Re-run the installation steps',
+            zh: 'A: 重新启动 Revit。如果仍未显示:\n• 运行 verify.bat 进行诊断\n• 重新执行安装步骤'
+        },
+        'support-q3': {
+            ja: 'Q: 複数のRevitバージョンを使用しています',
+            en: 'Q: I use multiple Revit versions',
+            zh: 'Q: 我使用多个 Revit 版本'
+        },
+        'support-a3': {
+            ja: 'A: 各バージョンに対応したパッケージをそれぞれインストールしてください。\n例: Revit 2021 版と Revit 2022 版を同時にインストール可能です',
+            en: 'A: Install the package for each version separately.\nExample: You can install both Revit 2021 and 2022 versions',
+            zh: 'A: 为每个版本分别安装软件包。\n例如: 可以同时安装 Revit 2021 和 2022 版本'
+        },
+        'support-contact': {
+            ja: 'ご不明な点',
+            en: 'Questions',
+            zh: '问题'
+        },
+        'support-contact-desc': {
+            ja: 'ご質問やご不明な点がございましたら、以下にお問い合わせください:',
+            en: 'If you have questions, please contact us at:',
+            zh: '如有任何疑问，请通过以下方式与我们联系:'
+        },
+        'support-email': {
+            ja: 'メール:',
+            en: 'Email:',
+            zh: '电子邮件:'
         }
     };
 
@@ -1192,6 +1478,9 @@ function initTranslations() {
         translations.common, 
         translations.sections,
         translations.indexPage,
+        translations.installGuide,
+        translations.uninstallGuide,
+        translations.supportInfo,
         translations.gridBubble,
         translations.sheetCreation,
         translations.viewCopy,
@@ -1200,7 +1489,7 @@ function initTranslations() {
         translations.cropboxCopy
     );
     
-    console.log('📚 Translations initialized (全6ページ+index.html完全対応)');
+    console.log('📚 Translations initialized (v6.5 - モーダル翻訳追加)');
 }
 
 // ========================================
@@ -1267,9 +1556,6 @@ function initPageSpecific() {
 function initMainPage() {
     // バージョンタブの初期化
     initVersionTabs();
-    
-    // モーダルボタンのイベント設定（data属性使用）
-    initModalButtons();
 }
 
 function initManualPage() {
@@ -1288,9 +1574,9 @@ function initVersionTabs() {
     versionTabs.forEach(tab => {
         tab.addEventListener('click', function() {
             const version = this.dataset.version;
-            const status = this.dataset.status;
+            const isCompleted = this.classList.contains('completed');
             
-            if (status === 'available') {
+            if (isCompleted) {
                 selectVersion(version, this);
             }
         });
@@ -1312,194 +1598,72 @@ function selectVersion(version, tabElement) {
 }
 
 // ========================================
-// 10. モーダル機能
+// 10. モーダル機能（修正版）
 // ========================================
 
-function initModalButtons() {
-    const modalButtons = document.querySelectorAll('[data-modal]');
-    
-    modalButtons.forEach(button => {
-        // 既存のイベントリスナーを削除するため、クローンして置換
-        const newButton = button.cloneNode(true);
-        button.parentNode.replaceChild(newButton, button);
-        
-        newButton.addEventListener('click', function(e) {
+function setupModalButtons() {
+    // インストール手順ボタン
+    const installBtn = document.getElementById('install-btn');
+    if (installBtn) {
+        installBtn.addEventListener('click', function(e) {
             e.preventDefault();
-            const modalType = this.dataset.modal;
-            openModal(modalType);
+            openModal('install-modal');
+        });
+    }
+
+    // アンインストールボタン
+    const uninstallBtn = document.getElementById('uninstall-btn');
+    if (uninstallBtn) {
+        uninstallBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            openModal('uninstall-modal');
+        });
+    }
+
+    // サポート情報ボタン
+    const supportBtn = document.getElementById('support-btn');
+    if (supportBtn) {
+        supportBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            openModal('support-modal');
+        });
+    }
+
+    // モーダルの外をクリックすると閉じる
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal(this.id);
+            }
         });
     });
     
-    console.log(`✅ Modal buttons initialized: ${modalButtons.length} buttons`);
+    console.log('✅ Modal buttons initialized');
 }
 
-function openModal(type) {
-    console.log(`🔔 Opening modal: ${type}`);
-    
-    // 既存のモーダルを探す
-    let modal = document.getElementById('info-modal');
-    
-    // モーダルが存在しない場合は作成
-    if (!modal) {
-        modal = createModal();
-        document.body.appendChild(modal);
-    }
-    
-    // モーダルコンテンツを更新
-    updateModalContent(modal, type);
-    
-    // モーダルを表示
-    setTimeout(() => {
+function openModal(modalId) {
+    console.log(`🔔 Opening modal: ${modalId}`);
+    const modal = document.getElementById(modalId);
+    if (modal) {
         modal.classList.add('show');
-    }, 10);
+        document.body.style.overflow = 'hidden';
+        // モーダル内のコンテンツも翻訳更新
+        updateAllContent();
+    }
 }
 
-function createModal() {
-    const modal = document.createElement('div');
-    modal.id = 'info-modal';
-    modal.className = 'modal';
-    modal.innerHTML = `
-        <div class="modal-content">
-            <button class="modal-close" aria-label="閉じる">&times;</button>
-            <div class="modal-body"></div>
-        </div>
-    `;
-    
-    // 閉じるボタンのイベント
-    const closeBtn = modal.querySelector('.modal-close');
-    closeBtn.addEventListener('click', () => closeModal(modal));
-    
-    // 背景クリックで閉じる
-    modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-            closeModal(modal);
-        }
-    });
-    
-    return modal;
+function closeModal(modalId) {
+    console.log(`🔔 Closing modal: ${modalId}`);
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('show');
+        document.body.style.overflow = 'auto';
+    }
 }
 
-function updateModalContent(modal, type) {
-    const modalBody = modal.querySelector('.modal-body');
-    
-    // フェード効果
-    modalBody.style.opacity = '0';
-    
-    setTimeout(() => {
-        // コンテンツを設定
-        switch(type) {
-            case 'install':
-                modalBody.innerHTML = getInstallContent();
-                break;
-            case 'uninstall':
-                modalBody.innerHTML = getUninstallContent();
-                break;
-            case 'support':
-                modalBody.innerHTML = getSupportContent();
-                break;
-            default:
-                modalBody.innerHTML = '<p>情報がありません</p>';
-        }
-        
-        // フェードイン
-        setTimeout(() => {
-            modalBody.style.opacity = '1';
-        }, 50);
-    }, 200);
-}
-
-function closeModal(modal) {
-    modal.classList.remove('show');
-    setTimeout(() => {
-        // モーダルは削除せず、次回再利用
-    }, 300);
-}
-
-// モーダルコンテンツ生成関数
-function getInstallContent() {
-    return `
-        <h2>📖 インストール手順</h2>
-        <div class="modal-section">
-            <h3>自動インストール（推奨）</h3>
-            <ol>
-                <li>ダウンロードしたZIPファイルを解凍</li>
-                <li>「自動インストール.bat」を<strong>右クリック</strong></li>
-                <li>「管理者として実行」を選択</li>
-                <li>Revitを再起動</li>
-            </ol>
-        </div>
-        <div class="modal-section">
-            <h3>手動インストール</h3>
-            <ol>
-                <li>解凍したフォルダ内の「28Tools」フォルダをコピー</li>
-                <li>以下のパスに貼り付け：<br>
-                    <code>C:\\ProgramData\\Autodesk\\Revit\\Addins\\20XX\\</code></li>
-                <li>Revitを再起動</li>
-            </ol>
-        </div>
-        <div class="modal-note">
-            <p>⚠️ インストール後、Revitリボンに「28 Tools」タブが表示されます</p>
-        </div>
-    `;
-}
-
-function getUninstallContent() {
-    return `
-        <h2>🗑️ アンインストール手順</h2>
-        <div class="modal-section">
-            <h3>自動アンインストール（推奨）</h3>
-            <ol>
-                <li>「アンインストール.bat」を<strong>右クリック</strong></li>
-                <li>「管理者として実行」を選択</li>
-                <li>Revitを再起動</li>
-            </ol>
-        </div>
-        <div class="modal-section">
-            <h3>手動アンインストール</h3>
-            <ol>
-                <li>以下のフォルダを削除：<br>
-                    <code>C:\\ProgramData\\Autodesk\\Revit\\Addins\\20XX\\28Tools\\</code></li>
-                <li>Revitを再起動</li>
-            </ol>
-        </div>
-        <div class="modal-note">
-            <p>ℹ️ アンインストール後、Revitリボンから「28 Tools」タブが消えます</p>
-        </div>
-    `;
-}
-
-function getSupportContent() {
-    return `
-        <h2>❓ サポート情報</h2>
-        <div class="modal-section">
-            <h3>動作環境</h3>
-            <ul>
-                <li><strong>対応Revitバージョン：</strong>2021～2026</li>
-                <li><strong>OS：</strong>Windows 10/11（64bit）</li>
-                <li><strong>.NET Framework：</strong>4.8以上</li>
-            </ul>
-        </div>
-        <div class="modal-section">
-            <h3>トラブルシューティング</h3>
-            <p><strong>28 Toolsタブが表示されない場合：</strong></p>
-            <ol>
-                <li>「診断ツール.bat」を実行してインストール状態を確認</li>
-                <li>Revitのバージョンと28 Toolsのバージョンが一致しているか確認</li>
-                <li>管理者権限でインストールされているか確認</li>
-            </ol>
-        </div>
-        <div class="modal-section">
-            <h3>お問い合わせ</h3>
-            <p>問題が解決しない場合は、以下の情報を添えてお問い合わせください：</p>
-            <ul>
-                <li>Revitのバージョン</li>
-                <li>28 Toolsのバージョン</li>
-                <li>エラーメッセージ（あれば）</li>
-                <li>診断ツールの結果</li>
-            </ul>
-        </div>
-    `;
-}
+// グローバルに公開（onclick属性用）
+window.closeModal = closeModal;
 
 // ========================================
 // 11. ダウンロード機能（未実装）
@@ -1525,7 +1689,8 @@ window.debug28Tools = {
     currentLanguage: () => currentLanguage,
     translations: () => translations,
     changeLanguage: (lang) => changeLanguage(lang),
-    testModal: (type) => openModal(type)
+    openModal: (id) => openModal(id),
+    closeModal: (id) => closeModal(id)
 };
 
-console.log('✅ 28 Tools Download Center - JavaScript loaded successfully (v6.4 - index.html翻訳完全対応)');
+console.log('✅ 28 Tools Download Center - JavaScript loaded successfully (v6.5 - モーダル機能修正)');
