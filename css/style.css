@@ -66,6 +66,12 @@ body {
     line-height: 1;
 }
 
+.lang-selector-button .flag-center {
+    font-size: 1.8rem;
+    line-height: 1;
+    margin: 0 4px;
+}
+
 .lang-selector-button .arrow {
     font-size: 0.8rem;
     opacity: 0.7;
