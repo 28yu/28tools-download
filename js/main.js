@@ -142,6 +142,7 @@ function updateLanguageButton() {
     const flag = langMap[currentLanguage];
     langBtn.innerHTML = `
         <span class="flag">${flag}</span>
+        <span class="flag-center">${flag}</span>
         <span class="arrow">▼</span>
     `;
 }
