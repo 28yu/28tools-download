@@ -44,36 +44,26 @@ body {
 }
 
 .lang-selector-button {
-    background: var(--glass-white);
-    border: 1px solid rgba(52, 73, 94, 0.2);
+    background: transparent;
+    border: none;
     border-radius: 8px;
-    padding: 10px 16px;
+    padding: 8px 12px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 0.9rem;
-    font-family: 'Noto Sans JP', sans-serif;
-    color: var(--concrete-gray);
+    gap: 6px;
+    font-size: 1.2rem;
     transition: all 0.3s ease;
-    box-shadow: var(--shadow-light);
-    min-width: 120px;
 }
 
 .lang-selector-button:hover {
     background: var(--light-concrete);
-    border-color: var(--blueprint-blue);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 }
 
 .lang-selector-button .flag {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1;
-}
-
-.lang-selector-button .lang-name {
-    flex: 1;
-    text-align: left;
 }
 
 .lang-selector-button .arrow {
@@ -88,7 +78,7 @@ body {
 
 /* ドロップダウンメニュー */
 .lang-dropdown {
-    display: none; /* 初期状態は非表示 */
+    display: none;
     position: absolute;
     top: 100%;
     right: 0;
@@ -97,27 +87,26 @@ body {
     border: 1px solid rgba(52, 73, 94, 0.2);
     border-radius: 8px;
     box-shadow: var(--shadow-medium);
-    min-width: 160px;
+    min-width: 80px;
     overflow: hidden;
     z-index: 1001;
 }
 
 .lang-dropdown.show {
-    display: block; /* showクラスで表示 */
+    display: block;
 }
 
 .lang-option {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
     padding: 12px 16px;
     color: var(--concrete-gray);
-    font-size: 0.9rem;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.5rem;
     transition: background-color 0.2s ease;
     border-bottom: 1px solid rgba(52, 73, 94, 0.1);
     cursor: pointer;
-    text-decoration: none; /* リンク下線を消す */
+    text-decoration: none;
 }
 
 .lang-option:last-child {
@@ -129,7 +118,7 @@ body {
 }
 
 .lang-option .flag {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 1;
 }
 
