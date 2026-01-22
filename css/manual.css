@@ -539,3 +539,19 @@
         padding: 40px 15px;
     }
 }
+
+/* ============================================
+   v6.6: ヘッダー位置統一
+   ============================================ */
+
+body.manual-page {
+    margin: 0;
+    padding: 0;
+}
+
+#header-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+}
