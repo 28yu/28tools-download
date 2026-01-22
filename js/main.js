@@ -134,19 +134,15 @@ function updateLanguageButton() {
     if (!langBtn) return;
 
     const langMap = {
-        'ja': { text: 'JP', flag: '🇯🇵' },  // そのまま
+        'ja': { text: 'JP', flag: '🇯🇵' },
         'en': { text: 'US', flag: '🇺🇸' },
         'zh': { text: 'CN', flag: '🇨🇳' }
     };
 
     const lang = langMap[currentLanguage];
-    
-    // 代替案：絵文字の代わりに「●」を使用
-    const flagDisplay = '●'; // または '◆'、'■' などに変更可
-    
     langBtn.innerHTML = `
         <span class="lang-text">${lang.text}</span>
-        <span class="flag-emoji">${flagDisplay}</span>
+        <span class="flag-emoji">${lang.flag}</span>
         <span class="arrow">▼</span>
     `;
 }
