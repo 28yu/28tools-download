@@ -143,23 +143,247 @@
             </div>
         </section>
 
-        <!-- フッターリンク -->
-        <footer class="footer">
+        <!-- フッターセクション -->
+        <section class="footer-section">
+            <h2 class="footer-title" data-lang-key="footer-title">サポート</h2>
+            
             <div class="footer-links">
-                <div class="footer-link" data-modal="install">
-                    <div class="footer-icon">📖</div>
-                    <div class="footer-text" data-lang-key="footer-install">インストール手順</div>
+                <!-- インストール手順ボタン -->
+                <button class="footer-link-btn" id="install-btn" data-modal="install-modal">
+                    <span class="footer-icon">📖</span>
+                    <span class="footer-text" data-lang-key="footer-install">インストール手順</span>
+                </button>
+                
+                <!-- アンインストールボタン -->
+                <button class="footer-link-btn" id="uninstall-btn" data-modal="uninstall-modal">
+                    <span class="footer-icon">🗑️</span>
+                    <span class="footer-text" data-lang-key="footer-uninstall">アンインストール</span>
+                </button>
+                
+                <!-- サポート情報ボタン -->
+                <button class="footer-link-btn" id="support-btn" data-modal="support-modal">
+                    <span class="footer-icon">❓</span>
+                    <span class="footer-text" data-lang-key="footer-support">サポート情報</span>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- モーダルコンテナ -->
+    <div id="modal-container">
+        <!-- インストール手順モーダル -->
+        <div id="install-modal" class="modal" data-modal-type="install">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 data-lang-key="modal-install-title">インストール手順</h2>
+                    <button class="modal-close" onclick="closeModal('install-modal')">&times;</button>
                 </div>
-                <div class="footer-link" data-modal="uninstall">
-                    <div class="footer-icon">🗑️</div>
-                    <div class="footer-text" data-lang-key="footer-uninstall">アンインストール</div>
+                <div class="modal-body">
+                    <!-- Step 1 -->
+                    <div class="install-step">
+                        <div class="step-header">
+                            <span class="step-number">Step 1</span>
+                            <h3 data-lang-key="install-step1-title">ダウンロード</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-box">
+                                <p><strong data-lang-key="install-step1-site">サイト:</strong></p>
+                                <p style="margin-left: 20px; font-family: 'Courier New', monospace;">
+                                    https://28yu.github.io/<br>28tools-download/
+                                </p>
+                                <p style="margin-top: 10px;"><strong data-lang-key="install-step1-button">ボタン:</strong></p>
+                                <p style="margin-left: 20px;">📥 <span data-lang-key="install-step1-download">Revit 2021 版 をダウンロード</span></p>
+                                <p style="margin-top: 10px;"><strong data-lang-key="install-step1-save">保存先:</strong></p>
+                                <p style="margin-left: 20px;">Downloads <span data-lang-key="install-step1-auto">フォルダ（自動）</span></p>
+                                <p style="margin-top: 10px;"><strong data-lang-key="install-step1-file">ファイル:</strong></p>
+                                <p style="margin-left: 20px; font-family: 'Courier New', monospace;">
+                                    28Tools_Revit2021_v1.0.zip<br>
+                                    <span style="font-size: 0.9em;">(<span data-lang-key="install-step1-size">ファイルサイズ:</span> 200～500 KB)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="install-step">
+                        <div class="step-header">
+                            <span class="step-number">Step 2</span>
+                            <h3 data-lang-key="install-step2-title">解凍</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-box">
+                                <p data-lang-key="install-step2-action">ZIP ファイルをダブルクリック</p>
+                                <p style="margin-top: 10px; text-align: center;">または</p>
+                                <p style="margin-top: 10px;" data-lang-key="install-step2-action2">右クリック → 「すべて展開」</p>
+                                <p style="margin-top: 15px;"><strong data-lang-key="install-step2-folder">自動的にフォルダが生成:</strong></p>
+                                <div class="folder-structure">
+                                    <code>28Tools_Revit2021_v1.0\
+├── 28Tools\
+│   ├── Tools28.dll
+│   └── Tools28.addin
+├── install.bat
+├── uninstall.bat
+├── verify.bat
+└── README.txt</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="install-step">
+                        <div class="step-header">
+                            <span class="step-number">Step 3</span>
+                            <h3 data-lang-key="install-step3-title">インストール</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-box">
+                                <p data-lang-key="install-step3-action">install.bat を右クリック</p>
+                                <p style="margin-top: 10px;" data-lang-key="install-step3-admin">「管理者として実行」を選択</p>
+                                <p style="margin-top: 15px;" data-lang-key="install-step3-follow">画面に従ってインストール完了</p>
+                                <p style="margin-top: 15px;"><strong data-lang-key="install-step3-location">ファイルが以下に配置される:</strong></p>
+                                <div class="file-location">
+                                    <code>C:\ProgramData\Autodesk\
+  Revit\Addins\2021\
+  ├── Tools28.dll       (✅ <span data-lang-key="install-step3-required">必須</span>)
+  └── Tools28.addin    (✅ <span data-lang-key="install-step3-required">必須</span>)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="install-step">
+                        <div class="step-header">
+                            <span class="step-number">Step 4</span>
+                            <h3 data-lang-key="install-step4-title">動作確認</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-box">
+                                <p data-lang-key="install-step4-launch">Revit を起動</p>
+                                <p style="margin-top: 10px;" data-lang-key="install-step4-ribbon">リボンに「28 Tools」タブが表示</p>
+                                <p style="margin-top: 10px;" data-lang-key="install-step4-available">全6機能が利用可能</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="install-step">
+                        <div class="step-header">
+                            <span class="step-number">Step 5</span>
+                            <h3 data-lang-key="install-step5-title">ダウンロードファイルの削除 ✅</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-box warning-box">
+                                <p><strong data-lang-key="install-step5-zip">❌ ZIP ファイルを削除:</strong></p>
+                                <p style="margin-left: 20px; font-family: 'Courier New', monospace;">28Tools_Revit2021_v1.0.zip</p>
+                                
+                                <p style="margin-top: 15px;"><strong data-lang-key="install-step5-folder">❌ 解凍フォルダを削除:</strong></p>
+                                <p style="margin-left: 20px; font-family: 'Courier New', monospace;">28Tools_Revit2021_v1.0\</p>
+                                
+                                <p style="margin-top: 15px;"><strong data-lang-key="install-step5-reason">理由:</strong></p>
+                                <ul style="margin-left: 20px; margin-top: 5px;">
+                                    <li data-lang-key="install-step5-reason1">実際に動作するファイルは Addins フォルダに配置済み</li>
+                                    <li data-lang-key="install-step5-reason2">これらはインストール用の一時的なファイル</li>
+                                    <li data-lang-key="install-step5-reason3">ディスク容量の節約</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-link" data-modal="support">
-                    <div class="footer-icon">❓</div>
-                    <div class="footer-text" data-lang-key="footer-support">サポート情報</div>
+                <div class="modal-footer">
+                    <button class="modal-btn-close" onclick="closeModal('install-modal')" data-lang-key="modal-close">閉じる</button>
                 </div>
             </div>
-        </footer>
+        </div>
+
+        <!-- アンインストールモーダル -->
+        <div id="uninstall-modal" class="modal" data-modal-type="uninstall">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 data-lang-key="modal-uninstall-title">アンインストール</h2>
+                    <button class="modal-close" onclick="closeModal('uninstall-modal')">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="step-box">
+                        <h3 data-lang-key="uninstall-step1">方法 1: 自動アンインストール（推奨）</h3>
+                        <p style="margin-top: 10px;" data-lang-key="uninstall-step1-desc">ダウンロード時に含まれていた uninstall.bat を実行します。</p>
+                        <ol style="margin-left: 20px; margin-top: 10px;">
+                            <li data-lang-key="uninstall-step1-1">uninstall.bat を右クリック</li>
+                            <li data-lang-key="uninstall-step1-2">「管理者として実行」を選択</li>
+                            <li data-lang-key="uninstall-step1-3">画面に従ってアンインストール完了</li>
+                        </ol>
+                    </div>
+
+                    <div class="step-box" style="margin-top: 20px;">
+                        <h3 data-lang-key="uninstall-step2">方法 2: 手動削除</h3>
+                        <p style="margin-top: 10px;" data-lang-key="uninstall-step2-desc">以下のフォルダから手動で削除します。</p>
+                        <p style="margin-top: 10px; margin-left: 20px; font-family: 'Courier New', monospace;">
+                            C:\ProgramData\Autodesk\Revit\Addins\2021\
+                        </p>
+                        <p style="margin-top: 10px;" data-lang-key="uninstall-step2-delete">以下のファイルを削除:</p>
+                        <ul style="margin-left: 20px; margin-top: 5px; font-family: 'Courier New', monospace;">
+                            <li>Tools28.dll</li>
+                            <li>Tools28.addin</li>
+                        </ul>
+                    </div>
+
+                    <div class="step-box warning-box" style="margin-top: 20px;">
+                        <p data-lang-key="uninstall-note">※ Revit を再起動すると変更が反映されます</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="modal-btn-close" onclick="closeModal('uninstall-modal')" data-lang-key="modal-close">閉じる</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- サポート情報モーダル -->
+        <div id="support-modal" class="modal" data-modal-type="support">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 data-lang-key="modal-support-title">サポート情報</h2>
+                    <button class="modal-close" onclick="closeModal('support-modal')">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="step-box">
+                        <h3 data-lang-key="support-faq">よくある質問</h3>
+                        <div style="margin-top: 15px;">
+                            <p><strong data-lang-key="support-q1">Q: インストールがうまくいきません</strong></p>
+                            <p style="margin-left: 20px; margin-top: 5px;" data-lang-key="support-a1">A: 以下をご確認ください:<br>
+                            • install.bat を「管理者として実行」していますか？<br>
+                            • Revit が起動していないか確認してください<br>
+                            • ウイルス対策ソフトがブロックしていないか確認してください
+                            </p>
+                        </div>
+                        <div style="margin-top: 15px;">
+                            <p><strong data-lang-key="support-q2">Q: リボンに「28 Tools」が表示されません</strong></p>
+                            <p style="margin-left: 20px; margin-top: 5px;" data-lang-key="support-a2">A: Revit を再起動してください。それでも表示されない場合は:<br>
+                            • verify.bat を実行して診断してください<br>
+                            • インストール手順を再度実施してください
+                            </p>
+                        </div>
+                        <div style="margin-top: 15px;">
+                            <p><strong data-lang-key="support-q3">Q: 複数のRevitバージョンを使用しています</strong></p>
+                            <p style="margin-left: 20px; margin-top: 5px;" data-lang-key="support-a3">A: 各バージョンに対応したパッケージをそれぞれインストールしてください。<br>
+                            例: Revit 2021 版と Revit 2022 版を同時にインストール可能です
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="step-box" style="margin-top: 20px;">
+                        <h3 data-lang-key="support-contact">ご不明な点</h3>
+                        <p style="margin-top: 10px;" data-lang-key="support-contact-desc">ご質問やご不明な点がございましたら、以下にお問い合わせください:</p>
+                        <p style="margin-top: 10px; margin-left: 20px;">
+                            <strong data-lang-key="support-email">メール:</strong> support@28tools.com
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="modal-btn-close" onclick="closeModal('support-modal')" data-lang-key="modal-close">閉じる</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/main.js"></script>
