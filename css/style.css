@@ -27,7 +27,8 @@ body.manual-page {
     line-height: 1.6;
 }
 
-.container {
+.container,
+.manual-container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 60px 40px;
