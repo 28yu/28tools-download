@@ -18,7 +18,8 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+body.manual-page {
     font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
     background: linear-gradient(135deg, var(--light-concrete) 0%, #f8f9fa 100%);
     min-height: 100vh;
