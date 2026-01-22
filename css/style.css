@@ -72,9 +72,9 @@ body {
     font-size: 1.2rem;
     line-height: 1;
     display: inline-block;
-    font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
-    font-variant: normal;
-    text-rendering: auto;
+    font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    white-space: nowrap;
+    margin: 0 2px;
 }
 
 .lang-selector-button .arrow {
