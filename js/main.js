@@ -1,11 +1,52 @@
 // ========================================
 // 28 Tools Download Center - Main JavaScript
-// Version: 6.5 (モーダル機能修正+インストール手順詳細化)
+// Version: 6.6 (パスワード保護ダウンロード機能追加)
 // ========================================
 
 // グローバル変数
 let currentLanguage = 'ja';
 const translations = {};
+
+// ========================================
+// パスワード保護ダウンロード設定
+// ========================================
+
+const downloadConfig = {
+    // パスワード設定
+    password: '28tools',
+    
+    // ダウンロードURL
+    urls: {
+        'revit2021': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2021/28Tools_Revit2021_v1.0.zip',
+        'revit2022': '', // 将来追加
+        'revit2023': '', // 将来追加
+        'revit2024': '', // 将来追加
+        'revit2025': '', // 将来追加
+        'revit2026': ''  // 将来追加
+    },
+    
+    // 多言語メッセージ
+    messages: {
+        ja: {
+            promptMessage: 'ダウンロードにはパスワードが必要です。\nパスワードを入力してください：',
+            invalidPassword: 'パスワードが正しくありません。',
+            notAvailable: 'このバージョンはまだ利用できません。',
+            downloadStarted: 'ダウンロードを開始します...'
+        },
+        en: {
+            promptMessage: 'Password is required to download.\nPlease enter the password:',
+            invalidPassword: 'Invalid password.',
+            notAvailable: 'This version is not available yet.',
+            downloadStarted: 'Starting download...'
+        },
+        zh: {
+            promptMessage: '下载需要密码。\n请输入密码：',
+            invalidPassword: '密码错误。',
+            notAvailable: '此版本尚未提供。',
+            downloadStarted: '开始下载...'
+        }
+    }
+};
 
 // ========================================
 // 1. 初期化処理
@@ -31,6 +72,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // モーダルボタンの初期化
     setupModalButtons();
+    
+    // ダウンロードボタンの初期化
+    setupDownloadButtons();
     
     console.log('✅ Initialization complete');
 });
@@ -1489,7 +1533,7 @@ function initTranslations() {
         translations.cropboxCopy
     );
     
-    console.log('📚 Translations initialized (v6.5 - モーダル翻訳追加)');
+    console.log('📚 Translations initialized (v6.6 - パスワード保護ダウンロード機能追加)');
 }
 
 // ========================================
@@ -1598,7 +1642,7 @@ function selectVersion(version, tabElement) {
 }
 
 // ========================================
-// 10. モーダル機能（修正版）
+// 10. モーダル機能
 // ========================================
 
 function setupModalButtons() {
@@ -1666,14 +1710,71 @@ function closeModal(modalId) {
 window.closeModal = closeModal;
 
 // ========================================
-// 11. ダウンロード機能（未実装）
+// 11. パスワード保護ダウンロード機能
 // ========================================
 
-function downloadFile(version) {
-    // TODO: 実際のダウンロード処理を実装
-    console.log(`📥 Download requested: Revit ${version}`);
-    alert(`Revit ${version}版のダウンロードは準備中です`);
+// ダウンロードメッセージを取得
+function getDownloadMessage(key) {
+    return downloadConfig.messages[currentLanguage]?.[key] || downloadConfig.messages['ja'][key];
 }
+
+// パスワード保護ダウンロード関数
+function downloadWithPassword(version) {
+    console.log(`📥 Download requested: ${version}`);
+    
+    const url = downloadConfig.urls[version];
+    
+    // URLが設定されていない場合
+    if (!url) {
+        alert(getDownloadMessage('notAvailable'));
+        return;
+    }
+    
+    // パスワード入力ダイアログ
+    const userPassword = prompt(getDownloadMessage('promptMessage'));
+    
+    // キャンセルされた場合
+    if (userPassword === null) {
+        console.log('📥 Download cancelled by user');
+        return;
+    }
+    
+    // パスワード検証
+    if (userPassword === downloadConfig.password) {
+        // 正しいパスワード → ダウンロード開始
+        console.log(`✅ Password correct, starting download: ${version}`);
+        window.location.href = url;
+    } else {
+        // 間違ったパスワード
+        console.log('❌ Invalid password');
+        alert(getDownloadMessage('invalidPassword'));
+    }
+}
+
+// ダウンロードボタンの初期化
+function setupDownloadButtons() {
+    // data-version属性を持つ完成済みバージョンタブにクリックイベントを追加
+    const completedTabs = document.querySelectorAll('.version-tab.completed[data-version]');
+    
+    completedTabs.forEach(tab => {
+        // 既存のクリックイベントを上書き
+        tab.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const version = this.getAttribute('data-version');
+            
+            if (version) {
+                downloadWithPassword(version);
+            }
+        });
+    });
+    
+    console.log(`✅ Download buttons initialized: ${completedTabs.length} buttons`);
+}
+
+// グローバルに公開（onclick属性用）
+window.downloadWithPassword = downloadWithPassword;
 
 // ========================================
 // 12. ユーティリティ関数
@@ -1690,7 +1791,9 @@ window.debug28Tools = {
     translations: () => translations,
     changeLanguage: (lang) => changeLanguage(lang),
     openModal: (id) => openModal(id),
-    closeModal: (id) => closeModal(id)
+    closeModal: (id) => closeModal(id),
+    downloadConfig: () => downloadConfig,
+    downloadWithPassword: (version) => downloadWithPassword(version)
 };
 
-console.log('✅ 28 Tools Download Center - JavaScript loaded successfully (v6.5 - モーダル機能修正)');
+console.log('✅ 28 Tools Download Center - JavaScript loaded successfully (v6.6 - パスワード保護ダウンロード機能追加)');
