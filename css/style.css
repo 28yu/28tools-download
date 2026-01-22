@@ -51,9 +51,10 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 6px;
-    font-size: 1.2rem;
+    gap: 4px;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 .lang-selector-button:hover {
@@ -61,21 +62,23 @@ body {
     transform: translateY(-2px);
 }
 
-.lang-selector-button .flag {
-    font-size: 1.5rem;
-    line-height: 1;
+.lang-selector-button .lang-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--concrete-gray);
 }
 
-.lang-selector-button .flag-center {
-    font-size: 1.8rem;
+.lang-selector-button .flag-emoji {
+    font-size: 1.2rem;
     line-height: 1;
-    margin: 0 4px;
+    display: inline-block;
 }
 
 .lang-selector-button .arrow {
     font-size: 0.8rem;
     opacity: 0.7;
     transition: transform 0.3s ease;
+    margin-left: 4px;
 }
 
 .lang-selector-button:hover .arrow {
@@ -93,7 +96,7 @@ body {
     border: 1px solid rgba(52, 73, 94, 0.2);
     border-radius: 8px;
     box-shadow: var(--shadow-medium);
-    min-width: 80px;
+    min-width: 100px;
     overflow: hidden;
     z-index: 1001;
 }
@@ -106,9 +109,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 6px;
     padding: 12px 16px;
     color: var(--concrete-gray);
-    font-size: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
     transition: background-color 0.2s ease;
     border-bottom: 1px solid rgba(52, 73, 94, 0.1);
     cursor: pointer;
@@ -123,9 +128,16 @@ body {
     background: var(--light-concrete);
 }
 
-.lang-option .flag {
-    font-size: 1.5rem;
+.lang-option .lang-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--concrete-gray);
+}
+
+.lang-option .flag-emoji {
+    font-size: 1.2rem;
     line-height: 1;
+    display: inline-block;
 }
 
 /* ==========================================
