@@ -134,15 +134,15 @@ function updateLanguageButton() {
     if (!langBtn) return;
 
     const langMap = {
-        'ja': '🇯🇵',
-        'en': '🇺🇸',
-        'zh': '🇨🇳'
+        'ja': { text: 'JP', flag: '🇯🇵' },
+        'en': { text: 'US', flag: '🇺🇸' },
+        'zh': { text: 'CN', flag: '🇨🇳' }
     };
 
-    const flag = langMap[currentLanguage];
+    const lang = langMap[currentLanguage];
     langBtn.innerHTML = `
-        <span class="flag">${flag}</span>
-        <span class="flag-center">${flag}</span>
+        <span class="lang-text">${lang.text}</span>
+        <span class="flag-emoji">${lang.flag}</span>
         <span class="arrow">▼</span>
     `;
 }
