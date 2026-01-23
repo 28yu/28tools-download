@@ -20,7 +20,7 @@ const downloadConfig = {
         'revit2021': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2021/28Tools_Revit2021_v1.0.zip',
         'revit2022': '', // 将来追加
         'revit2023': '', // 将来追加
-        'revit2024': '', // 将来追加
+        'revit2024': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2024/28Tools_Revit2024_v1.0.zip',  // ✅ 追加
         'revit2025': '', // 将来追加
         'revit2026': ''  // 将来追加
     },
