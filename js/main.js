@@ -1,6 +1,6 @@
 // ========================================
 // 28 Tools Download Center - Main JavaScript
-// Version: 6.6 (パスワード保護ダウンロード機能追加)
+// Version: 7.3 (サポート情報・インストール手順の汎用化)
 // ========================================
 
 // グローバル変数
@@ -20,7 +20,7 @@ const downloadConfig = {
         'revit2021': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2021/28Tools_Revit2021_v1.0.zip',
         'revit2022': '', // 将来追加
         'revit2023': '', // 将来追加
-        'revit2024': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2024/28Tools_Revit2024_v1.0.zip',  // ✅ 追加
+        'revit2024': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2024/28Tools_Revit2024_v1.0.zip',
         'revit2025': '', // 将来追加
         'revit2026': ''  // 将来追加
     },
@@ -414,7 +414,7 @@ function initTranslations() {
     };
 
     // ========================================
-    // モーダル翻訳（インストール手順）
+    // モーダル翻訳（インストール手順）- v7.3で修正
     // ========================================
     translations.installGuide = {
         'modal-install-title': {
@@ -427,20 +427,15 @@ function initTranslations() {
             en: 'Download',
             zh: '下载'
         },
-        'install-step1-site': {
-            ja: 'サイト:',
-            en: 'Site:',
-            zh: '网站:'
-        },
         'install-step1-button': {
             ja: 'ボタン:',
             en: 'Button:',
             zh: '按钮:'
         },
         'install-step1-download': {
-            ja: 'Revit 2021 版 をダウンロード',
-            en: 'Download Revit 2021 Version',
-            zh: '下载 Revit 2021 版本'
+            ja: '対応するバージョンをダウンロード',
+            en: 'Download the corresponding version',
+            zh: '下载对应的版本'
         },
         'install-step1-save': {
             ja: '保存先:',
@@ -456,11 +451,6 @@ function initTranslations() {
             ja: 'ファイル:',
             en: 'File:',
             zh: '文件:'
-        },
-        'install-step1-size': {
-            ja: 'ファイルサイズ:',
-            en: 'File Size:',
-            zh: '文件大小:'
         },
         'install-step2-title': {
             ja: '解凍',
@@ -626,7 +616,7 @@ function initTranslations() {
     };
 
     // ========================================
-    // モーダル翻訳（サポート情報）
+    // モーダル翻訳（サポート情報）- v7.3で修正
     // ========================================
     translations.supportInfo = {
         'modal-support-title': {
@@ -665,24 +655,19 @@ function initTranslations() {
             zh: 'Q: 我使用多个 Revit 版本'
         },
         'support-a3': {
-            ja: 'A: 各バージョンに対応したパッケージをそれぞれインストールしてください。\n例: Revit 2021 版と Revit 2022 版を同時にインストール可能です',
-            en: 'A: Install the package for each version separately.\nExample: You can install both Revit 2021 and 2022 versions',
-            zh: 'A: 为每个版本分别安装软件包。\n例如: 可以同时安装 Revit 2021 和 2022 版本'
+            ja: 'A: 各バージョンに対応したパッケージをそれぞれインストールしてください。\n例: Revit 2021 版と Revit 2024 版を同時にインストール可能です',
+            en: 'A: Install the package for each version separately.\nExample: You can install both Revit 2021 and 2024 versions',
+            zh: 'A: 为每个版本分别安装软件包。\n例如: 可以同时安装 Revit 2021 和 2024 版本'
         },
         'support-contact': {
             ja: 'ご不明な点',
             en: 'Questions',
             zh: '问题'
         },
-        'support-contact-desc': {
-            ja: 'ご質問やご不明な点がございましたら、以下にお問い合わせください:',
-            en: 'If you have questions, please contact us at:',
-            zh: '如有任何疑问，请通过以下方式与我们联系:'
-        },
-        'support-email': {
-            ja: 'メール:',
-            en: 'Email:',
-            zh: '电子邮件:'
+        'support-contact-form': {
+            ja: '今後、問い合わせフォームで対応予定です。',
+            en: 'A contact form will be provided in the future.',
+            zh: '我们计划在未来提供联系表单。'
         }
     };
 
@@ -954,7 +939,7 @@ function initTranslations() {
         'manual-sheet-creation-tip3-strong': {
             ja: '後から編集可能：',
             en: 'Editable Later:',
-            zh: '稍后可编辑：'
+            zh: '稀后可编辑：'
         },
         'manual-sheet-creation-note1': {
             ja: 'シート番号が既に存在する場合、そのシートはスキップされます。',
@@ -1498,7 +1483,7 @@ function initTranslations() {
         'manual-cropbox-copy-tip3-strong': {
             ja: '後から調整可能：',
             en: 'Adjustable Later:',
-            zh: '稍后可调整：'
+            zh: '稀后可调整：'
         },
         'manual-cropbox-copy-note1': {
             ja: 'コピー元でトリミング領域がOFFの場合でも、範囲情報はコピーされます。',
@@ -1533,7 +1518,7 @@ function initTranslations() {
         translations.cropboxCopy
     );
     
-    console.log('📚 Translations initialized (v6.6 - パスワード保護ダウンロード機能追加)');
+    console.log('📚 Translations initialized (v7.3 - サポート情報・インストール手順の汎用化)');
 }
 
 // ========================================
@@ -1809,4 +1794,4 @@ window.debug28Tools = {
     downloadWithPassword: (version) => downloadWithPassword(version)
 };
 
-console.log('✅ 28 Tools Download Center - JavaScript loaded successfully (v6.6 - パスワード保護ダウンロード機能追加)');
+console.log('✅ 28 Tools Download Center - JavaScript loaded successfully (v7.3 - サポート情報・インストール手順の汎用化)');
