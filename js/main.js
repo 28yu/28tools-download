@@ -1751,30 +1751,43 @@ function downloadWithPassword(version) {
     }
 }
 
+// 準備中メッセージを表示する関数
+function showNotAvailableMessage() {
+    console.log('⏳ Version not available');
+    alert(getDownloadMessage('notAvailable'));
+}
+
 // ダウンロードボタンの初期化
 function setupDownloadButtons() {
-    // data-version属性を持つ完成済みバージョンタブにクリックイベントを追加
-    const completedTabs = document.querySelectorAll('.version-tab.completed[data-version]');
+    // すべてのバージョンタブにクリックイベントを追加
+    const allVersionTabs = document.querySelectorAll('.version-tab[data-version]');
     
-    completedTabs.forEach(tab => {
-        // 既存のクリックイベントを上書き
+    allVersionTabs.forEach(tab => {
         tab.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
             
             const version = this.getAttribute('data-version');
+            const isCompleted = this.classList.contains('completed');
             
-            if (version) {
+            console.log(`🖱️ Version tab clicked: ${version}, completed: ${isCompleted}`);
+            
+            if (isCompleted && version) {
+                // 完成済み → パスワードダウンロード
                 downloadWithPassword(version);
+            } else {
+                // 準備中 → メッセージ表示
+                showNotAvailableMessage();
             }
         });
     });
     
-    console.log(`✅ Download buttons initialized: ${completedTabs.length} buttons`);
+    console.log(`✅ Download buttons initialized: ${allVersionTabs.length} tabs (all versions)`);
 }
 
 // グローバルに公開（onclick属性用）
 window.downloadWithPassword = downloadWithPassword;
+window.showNotAvailableMessage = showNotAvailableMessage;
 
 // ========================================
 // 12. ユーティリティ関数
