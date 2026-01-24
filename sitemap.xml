@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- メインページ -->
+  <url>
+    <loc>https://28tools.com/</loc>
+    <lastmod>2026-01-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- マニュアルページ - 符号ON/OFF -->
+  <url>
+    <loc>https://28tools.com/manual/grid-bubble.html</loc>
+    <lastmod>2026-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアルページ - シート一括作成 -->
+  <url>
+    <loc>https://28tools.com/manual/sheet-creation.html</loc>
+    <lastmod>2026-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアルページ - 3D視点コピペ -->
+  <url>
+    <loc>https://28tools.com/manual/view-copy.html</loc>
+    <lastmod>2026-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアルページ - 切断ボックスコピペ -->
+  <url>
+    <loc>https://28tools.com/manual/sectionbox-copy.html</loc>
+    <lastmod>2026-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアルページ - ビューポート位置コピペ -->
+  <url>
+    <loc>https://28tools.com/manual/viewport-position.html</loc>
+    <lastmod>2026-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアルページ - トリミング領域コピペ -->
+  <url>
+    <loc>https://28tools.com/manual/cropbox-copy.html</loc>
+    <lastmod>2026-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
