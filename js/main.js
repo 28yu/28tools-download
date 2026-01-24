@@ -302,7 +302,7 @@ function initTranslations() {
             zh: '3D视点复制粘贴'
         },
         'feature-view-desc': {
-            ja: '3Dビューの視点を他のビューにコピー&ペースト',
+            ja: '3Dビューの視点を他のビューに反映',
             en: 'Copy and paste 3D view orientation',
             zh: '将3D视图的视点复制并粘贴'
         },
@@ -312,7 +312,7 @@ function initTranslations() {
             zh: '剖切框复制粘贴'
         },
         'feature-section-desc': {
-            ja: '3Dビューの切断ボックス範囲をコピー&ペースト',
+            ja: '3Dビューの切断ボックス範囲を反映',
             en: 'Copy and paste section box range',
             zh: '复制并粘贴剖切框范围'
         },
@@ -322,7 +322,7 @@ function initTranslations() {
             zh: '视口位置复制粘贴'
         },
         'feature-viewport-desc': {
-            ja: 'シート上のビューポート位置をコピー&ペースト',
+            ja: 'シート上のビューポート位置を反映',
             en: 'Copy and paste viewport positions',
             zh: '复制并粘贴视口位置'
         },
@@ -332,7 +332,7 @@ function initTranslations() {
             zh: '裁剪区域复制粘贴'
         },
         'feature-crop-desc': {
-            ja: 'ビューのトリミング領域をコピー&ペースト',
+            ja: 'ビューのトリミング領域を反映',
             en: 'Copy and paste crop regions',
             zh: '复制并粘贴裁剪区域'
         },
