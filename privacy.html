@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー - 28 Tools</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .legal-container {
+            background: var(--glass-white);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: var(--shadow-medium);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .legal-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--architect-green), var(--construction-orange), var(--blueprint-blue));
+        }
+
+        .legal-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--concrete-gray);
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .legal-section {
+            margin-bottom: 30px;
+        }
+
+        .legal-section h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--concrete-gray);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--blueprint-blue);
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .legal-section p,
+        .legal-section li {
+            color: var(--steel-blue);
+            line-height: 1.8;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        .legal-section ul {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .legal-section li {
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            text-align: right;
+            color: var(--disabled-gray);
+            font-size: 0.85rem;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(52, 73, 94, 0.1);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--blueprint-blue);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--architect-green);
+            transform: translateX(-4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 共通ヘッダー -->
+        <div id="header-container"></div>
+
+        <!-- 戻るリンク -->
+        <a href="index.html" class="back-link" data-lang-key="back-to-home">← ホームに戻る</a>
+
+        <!-- プライバシーポリシー本文 -->
+        <div class="legal-container">
+            <h1 class="legal-title" data-lang-key="privacy-title">プライバシーポリシー</h1>
+
+            <div class="legal-section">
+                <h2 data-lang-key="privacy-intro-title">はじめに</h2>
+                <p data-lang-key="privacy-intro-text">28 Tools（以下「当サイト」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本プライバシーポリシーは、当サイトがどのような情報を収集し、どのように利用するかについて説明します。</p>
+            </div>
+
+            <div class="legal-section">
+                <h2 data-lang-key="privacy-cookies-title">Cookieの使用について</h2>
+                <p data-lang-key="privacy-cookies-text">当サイトでは、ユーザー体験の向上のためにCookieを使用しています。Cookieは以下の目的で使用されます：</p>
+                <ul>
+                    <li data-lang-key="privacy-cookies-item1">言語設定の保存</li>
+                    <li data-lang-key="privacy-cookies-item2">アクセス解析（Google Analytics）</li>
+                    <li data-lang-key="privacy-cookies-item3">広告配信（Google AdSense）</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2 data-lang-key="privacy-analytics-title">アクセス解析について</h2>
+                <p data-lang-key="privacy-analytics-text">当サイトでは、Googleによるアクセス解析ツール「Google Analytics」を使用しています。Google Analyticsはトラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。詳細については、<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Googleのポリシーと規約</a>をご確認ください。</p>
+            </div>
+
+            <div class="legal-section">
+                <h2 data-lang-key="privacy-ads-title">広告配信について</h2>
+                <p data-lang-key="privacy-ads-text">当サイトでは、第三者配信の広告サービス「Google AdSense」を利用しています。広告配信事業者は、ユーザーの興味に応じた広告を表示するためにCookieを使用することがあります。</p>
+                <p data-lang-key="privacy-ads-text2">Google AdSenseの詳細については、<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">広告に関するGoogleのポリシー</a>をご確認ください。</p>
+                <p data-lang-key="privacy-ads-text3">ユーザーは、Googleの<a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">広告設定ページ</a>で、パーソナライズ広告を無効にすることができます。</p>
+            </div>
+
+            <div class="legal-section">
+                <h2 data-lang-key="privacy-thirdparty-title">第三者への情報提供</h2>
+                <p data-lang-key="privacy-thirdparty-text">当サイトは、法律に基づく場合を除き、ユーザーの個人情報を第三者に提供することはありません。</p>
+            </div>
+
+            <div class="legal-section">
+                <h2 data-lang-key="privacy-security-title">セキュリティ</h2>
+                <p data-lang-key="privacy-security-text">当サイトは、ユーザーの情報を保護するために適切なセキュリティ対策を講じています。ただし、インターネット上での情報転送は完全に安全であることを保証するものではありません。</p>
+            </div>
+
+            <div class="legal-section">
+                <h2 data-lang-key="privacy-changes-title">プライバシーポリシーの変更</h2>
+                <p data-lang-key="privacy-changes-text">当サイトは、必要に応じて本プライバシーポリシーを変更することがあります。変更があった場合は、当ページにて通知します。</p>
+            </div>
+
+            <div class="legal-section">
+                <h2 data-lang-key="privacy-contact-title">お問い合わせ</h2>
+                <p data-lang-key="privacy-contact-text">本プライバシーポリシーに関するお問い合わせは、<a href="contact.html">お問い合わせページ</a>よりご連絡ください。</p>
+            </div>
+
+            <div class="last-updated">
+                <span data-lang-key="privacy-updated">最終更新日：</span>2026年1月24日
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

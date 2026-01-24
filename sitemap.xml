@@ -55,4 +55,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- プライバシーポリシー -->
+  <url>
+    <loc>https://28tools.com/privacy.html</loc>
+    <lastmod>2026-01-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- お問い合わせ -->
+  <url>
+    <loc>https://28tools.com/contact.html</loc>
+    <lastmod>2026-01-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

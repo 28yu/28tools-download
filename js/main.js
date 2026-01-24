@@ -665,9 +665,241 @@ function initTranslations() {
             zh: '问题'
         },
         'support-contact-form': {
-            ja: '今後、問い合わせフォームで対応予定です。',
-            en: 'A contact form will be provided in the future.',
-            zh: '我们计划在未来提供联系表单。'
+            ja: '<a href="contact.html">お問い合わせフォーム</a>よりご連絡ください。',
+            en: 'Please contact us via the <a href="contact.html">contact form</a>.',
+            zh: '请通过<a href="contact.html">联系表单</a>与我们联系。'
+        }
+    };
+
+    // ========================================
+    // プライバシーポリシーページ
+    // ========================================
+    translations.privacyPage = {
+        'privacy-title': {
+            ja: 'プライバシーポリシー',
+            en: 'Privacy Policy',
+            zh: '隐私政策'
+        },
+        'privacy-intro-title': {
+            ja: 'はじめに',
+            en: 'Introduction',
+            zh: '简介'
+        },
+        'privacy-intro-text': {
+            ja: '28 Tools（以下「当サイト」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本プライバシーポリシーは、当サイトがどのような情報を収集し、どのように利用するかについて説明します。',
+            en: '28 Tools (hereinafter "this site") respects user privacy and strives to protect personal information. This Privacy Policy explains what information we collect and how we use it.',
+            zh: '28 Tools（以下简称"本网站"）尊重用户隐私，并致力于保护个人信息。本隐私政策说明我们收集哪些信息以及如何使用这些信息。'
+        },
+        'privacy-cookies-title': {
+            ja: 'Cookieの使用について',
+            en: 'About Cookie Usage',
+            zh: '关于Cookie的使用'
+        },
+        'privacy-cookies-text': {
+            ja: '当サイトでは、ユーザー体験の向上のためにCookieを使用しています。Cookieは以下の目的で使用されます：',
+            en: 'This site uses cookies to improve user experience. Cookies are used for the following purposes:',
+            zh: '本网站使用Cookie来改善用户体验。Cookie用于以下目的：'
+        },
+        'privacy-cookies-item1': {
+            ja: '言語設定の保存',
+            en: 'Saving language preferences',
+            zh: '保存语言设置'
+        },
+        'privacy-cookies-item2': {
+            ja: 'アクセス解析（Google Analytics）',
+            en: 'Access analysis (Google Analytics)',
+            zh: '访问分析（Google Analytics）'
+        },
+        'privacy-cookies-item3': {
+            ja: '広告配信（Google AdSense）',
+            en: 'Advertising (Google AdSense)',
+            zh: '广告投放（Google AdSense）'
+        },
+        'privacy-analytics-title': {
+            ja: 'アクセス解析について',
+            en: 'About Access Analysis',
+            zh: '关于访问分析'
+        },
+        'privacy-analytics-text': {
+            ja: '当サイトでは、Googleによるアクセス解析ツール「Google Analytics」を使用しています。',
+            en: 'This site uses Google Analytics, an access analysis tool provided by Google.',
+            zh: '本网站使用Google提供的访问分析工具"Google Analytics"。'
+        },
+        'privacy-ads-title': {
+            ja: '広告配信について',
+            en: 'About Advertising',
+            zh: '关于广告投放'
+        },
+        'privacy-ads-text': {
+            ja: '当サイトでは、第三者配信の広告サービス「Google AdSense」を利用しています。',
+            en: 'This site uses the third-party advertising service "Google AdSense".',
+            zh: '本网站使用第三方广告服务"Google AdSense"。'
+        },
+        'privacy-ads-text2': {
+            ja: 'Google AdSenseの詳細については、広告に関するGoogleのポリシーをご確認ください。',
+            en: 'For details about Google AdSense, please refer to Google\'s advertising policies.',
+            zh: '有关Google AdSense的详情，请参阅Google的广告政策。'
+        },
+        'privacy-ads-text3': {
+            ja: 'ユーザーは、Googleの広告設定ページで、パーソナライズ広告を無効にすることができます。',
+            en: 'Users can disable personalized ads on Google\'s ad settings page.',
+            zh: '用户可以在Google的广告设置页面上禁用个性化广告。'
+        },
+        'privacy-thirdparty-title': {
+            ja: '第三者への情報提供',
+            en: 'Information Disclosure to Third Parties',
+            zh: '向第三方提供信息'
+        },
+        'privacy-thirdparty-text': {
+            ja: '当サイトは、法律に基づく場合を除き、ユーザーの個人情報を第三者に提供することはありません。',
+            en: 'This site does not provide user personal information to third parties except as required by law.',
+            zh: '除非法律要求，本网站不会向第三方提供用户的个人信息。'
+        },
+        'privacy-security-title': {
+            ja: 'セキュリティ',
+            en: 'Security',
+            zh: '安全性'
+        },
+        'privacy-security-text': {
+            ja: '当サイトは、ユーザーの情報を保護するために適切なセキュリティ対策を講じています。',
+            en: 'This site takes appropriate security measures to protect user information.',
+            zh: '本网站采取适当的安全措施来保护用户信息。'
+        },
+        'privacy-changes-title': {
+            ja: 'プライバシーポリシーの変更',
+            en: 'Changes to Privacy Policy',
+            zh: '隐私政策的变更'
+        },
+        'privacy-changes-text': {
+            ja: '当サイトは、必要に応じて本プライバシーポリシーを変更することがあります。',
+            en: 'This site may change this Privacy Policy as necessary.',
+            zh: '本网站可能会根据需要更改本隐私政策。'
+        },
+        'privacy-contact-title': {
+            ja: 'お問い合わせ',
+            en: 'Contact',
+            zh: '联系我们'
+        },
+        'privacy-contact-text': {
+            ja: '本プライバシーポリシーに関するお問い合わせは、お問い合わせページよりご連絡ください。',
+            en: 'For inquiries about this Privacy Policy, please contact us through the contact page.',
+            zh: '如有关于本隐私政策的疑问，请通过联系页面与我们联系。'
+        },
+        'privacy-updated': {
+            ja: '最終更新日：',
+            en: 'Last Updated:',
+            zh: '最后更新日期：'
+        }
+    };
+
+    // ========================================
+    // お問い合わせページ
+    // ========================================
+    translations.contactPage = {
+        'contact-title': {
+            ja: 'お問い合わせ',
+            en: 'Contact Us',
+            zh: '联系我们'
+        },
+        'contact-intro': {
+            ja: '28 Toolsに関するご質問、ご要望、バグ報告などございましたら、<br>以下のフォームよりお気軽にお問い合わせください。',
+            en: 'If you have any questions, requests, or bug reports about 28 Tools,<br>please feel free to contact us using the form below.',
+            zh: '如果您对28 Tools有任何问题、需求或错误报告，<br>请随时使用下方表单与我们联系。'
+        },
+        'contact-name': {
+            ja: 'お名前',
+            en: 'Name',
+            zh: '姓名'
+        },
+        'contact-name-placeholder': {
+            ja: '山田 太郎',
+            en: 'John Doe',
+            zh: '张三'
+        },
+        'contact-email': {
+            ja: 'メールアドレス',
+            en: 'Email Address',
+            zh: '电子邮件地址'
+        },
+        'contact-category': {
+            ja: 'お問い合わせ種別',
+            en: 'Inquiry Type',
+            zh: '咨询类型'
+        },
+        'contact-category-select': {
+            ja: '選択してください',
+            en: 'Please select',
+            zh: '请选择'
+        },
+        'contact-category-question': {
+            ja: 'ご質問',
+            en: 'Question',
+            zh: '咨询'
+        },
+        'contact-category-request': {
+            ja: '機能リクエスト',
+            en: 'Feature Request',
+            zh: '功能请求'
+        },
+        'contact-category-bug': {
+            ja: 'バグ報告',
+            en: 'Bug Report',
+            zh: '错误报告'
+        },
+        'contact-category-other': {
+            ja: 'その他',
+            en: 'Other',
+            zh: '其他'
+        },
+        'contact-revit-version': {
+            ja: 'ご使用のRevitバージョン',
+            en: 'Your Revit Version',
+            zh: '您使用的Revit版本'
+        },
+        'contact-revit-select': {
+            ja: '選択してください（任意）',
+            en: 'Please select (optional)',
+            zh: '请选择（可选）'
+        },
+        'contact-message': {
+            ja: 'お問い合わせ内容',
+            en: 'Message',
+            zh: '咨询内容'
+        },
+        'contact-message-placeholder': {
+            ja: 'お問い合わせ内容をご記入ください',
+            en: 'Please enter your message',
+            zh: '请输入您的咨询内容'
+        },
+        'contact-submit': {
+            ja: '送信する',
+            en: 'Submit',
+            zh: '提交'
+        },
+        'contact-success-title': {
+            ja: '送信が完了しました',
+            en: 'Message Sent',
+            zh: '发送成功'
+        },
+        'contact-success-text': {
+            ja: 'お問い合わせいただきありがとうございます。<br>内容を確認の上、必要に応じてご連絡いたします。',
+            en: 'Thank you for your inquiry.<br>We will review your message and respond if necessary.',
+            zh: '感谢您的咨询。<br>我们将审核您的留言，并在必要时与您联系。'
+        },
+        'contact-note': {
+            ja: '※ お問い合わせへの返信にはお時間をいただく場合がございます。<br>※ 個人情報は、お問い合わせへの回答以外の目的では使用いたしません。',
+            en: '※ Response to inquiries may take some time.<br>※ Personal information will not be used for any purpose other than responding to inquiries.',
+            zh: '※ 回复咨询可能需要一些时间。<br>※ 个人信息不会用于回复咨询以外的目的。'
+        },
+        'footer-privacy': {
+            ja: 'プライバシーポリシー',
+            en: 'Privacy Policy',
+            zh: '隐私政策'
+        },
+        'footer-contact': {
+            ja: 'お問い合わせ',
+            en: 'Contact',
+            zh: '联系我们'
         }
     };
 

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - 28 Tools</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .contact-container {
+            background: var(--glass-white);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: var(--shadow-medium);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--architect-green), var(--construction-orange), var(--blueprint-blue));
+        }
+
+        .contact-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--concrete-gray);
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .contact-intro {
+            text-align: center;
+            color: var(--steel-blue);
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: var(--concrete-gray);
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .form-group label .required {
+            color: #e74c3c;
+            margin-left: 4px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid rgba(52, 73, 94, 0.2);
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: 'Noto Sans JP', sans-serif;
+            color: var(--concrete-gray);
+            background: var(--glass-white);
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--blueprint-blue);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .form-group select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2334495e' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            padding-right: 40px;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 16px 32px;
+            background: var(--architect-green);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            font-family: 'Noto Sans JP', sans-serif;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #219a52;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .contact-note {
+            background: rgba(52, 152, 219, 0.1);
+            border-left: 4px solid var(--blueprint-blue);
+            padding: 16px 20px;
+            margin-top: 30px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .contact-note p {
+            color: var(--steel-blue);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--blueprint-blue);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--architect-green);
+            transform: translateX(-4px);
+        }
+
+        /* フォーム送信完了メッセージ */
+        .form-success {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .form-success.show {
+            display: block;
+        }
+
+        .form-success .success-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .form-success h2 {
+            color: var(--architect-green);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .form-success p {
+            color: var(--steel-blue);
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 24px;
+            }
+
+            .contact-title {
+                font-size: 1.5rem;
+            }
+
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                padding: 12px 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 共通ヘッダー -->
+        <div id="header-container"></div>
+
+        <!-- 戻るリンク -->
+        <a href="index.html" class="back-link" data-lang-key="back-to-home">← ホームに戻る</a>
+
+        <!-- お問い合わせ本文 -->
+        <div class="contact-container">
+            <h1 class="contact-title" data-lang-key="contact-title">お問い合わせ</h1>
+
+            <p class="contact-intro" data-lang-key="contact-intro">28 Toolsに関するご質問、ご要望、バグ報告などございましたら、<br>以下のフォームよりお気軽にお問い合わせください。</p>
+
+            <!-- お問い合わせフォーム -->
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label data-lang-key="contact-name">
+                        お名前<span class="required">*</span>
+                    </label>
+                    <input type="text" name="name" required placeholder="山田 太郎" data-lang-placeholder="contact-name-placeholder">
+                </div>
+
+                <div class="form-group">
+                    <label data-lang-key="contact-email">
+                        メールアドレス<span class="required">*</span>
+                    </label>
+                    <input type="email" name="email" required placeholder="example@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label data-lang-key="contact-category">
+                        お問い合わせ種別<span class="required">*</span>
+                    </label>
+                    <select name="category" required>
+                        <option value="" data-lang-key="contact-category-select">選択してください</option>
+                        <option value="question" data-lang-key="contact-category-question">ご質問</option>
+                        <option value="request" data-lang-key="contact-category-request">機能リクエスト</option>
+                        <option value="bug" data-lang-key="contact-category-bug">バグ報告</option>
+                        <option value="other" data-lang-key="contact-category-other">その他</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label data-lang-key="contact-revit-version">
+                        ご使用のRevitバージョン
+                    </label>
+                    <select name="revit_version">
+                        <option value="" data-lang-key="contact-revit-select">選択してください（任意）</option>
+                        <option value="2021">Revit 2021</option>
+                        <option value="2022">Revit 2022</option>
+                        <option value="2023">Revit 2023</option>
+                        <option value="2024">Revit 2024</option>
+                        <option value="2025">Revit 2025</option>
+                        <option value="2026">Revit 2026</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label data-lang-key="contact-message">
+                        お問い合わせ内容<span class="required">*</span>
+                    </label>
+                    <textarea name="message" required placeholder="お問い合わせ内容をご記入ください" data-lang-placeholder="contact-message-placeholder"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn" data-lang-key="contact-submit">送信する</button>
+            </form>
+
+            <!-- 送信完了メッセージ -->
+            <div class="form-success" id="form-success">
+                <div class="success-icon">✅</div>
+                <h2 data-lang-key="contact-success-title">送信が完了しました</h2>
+                <p data-lang-key="contact-success-text">お問い合わせいただきありがとうございます。<br>内容を確認の上、必要に応じてご連絡いたします。</p>
+            </div>
+
+            <div class="contact-note">
+                <p data-lang-key="contact-note">※ お問い合わせへの返信にはお時間をいただく場合がございます。<br>※ 個人情報は、お問い合わせへの回答以外の目的では使用いたしません。</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // フォーム送信処理
+        const form = document.getElementById('contact-form');
+        const formSuccess = document.getElementById('form-success');
+
+        if (form) {
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+
+                const formData = new FormData(form);
+
+                try {
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        form.style.display = 'none';
+                        formSuccess.classList.add('show');
+                    } else {
+                        alert('送信に失敗しました。もう一度お試しください。');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('送信に失敗しました。もう一度お試しください。');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
