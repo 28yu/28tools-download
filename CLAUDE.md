@@ -18,6 +18,65 @@ testブランチ → ローカルで開発・確認（非公開）
 mainブランチ → 本番サイト（28tools.com）として公開
 ```
 
+### 開発環境の選択肢
+
+#### Option A: GitHub Codespaces（推奨・ブラウザ完結）
+
+**メリット**:
+- ✅ ブラウザだけで完結（インストール不要）
+- ✅ どのPCからでもアクセス可能
+- ✅ ターミナル、プレビュー、編集すべて可能
+- ✅ testブランチのプレビューも簡単
+
+**使い方**:
+
+1. **Codespacesを作成**
+   - https://github.com/28yu/28tools-download にアクセス
+   - 緑色の「Code」ボタン → 「Codespaces」タブ
+   - 「Create codespace on main」をクリック
+
+2. **testブランチで開発**
+   ```bash
+   git checkout test
+   ```
+
+3. **ファイル編集**
+   - 左側のエクスプローラーからファイルを選択
+   - 編集して保存（Cmd + S）
+
+4. **プレビュー確認**
+   - 拡張機能「Live Server」をインストール
+   - `index.html` を右クリック → 「Open with Live Server」
+   - ブラウザでプレビュー表示
+
+5. **変更をコミット**
+   ```bash
+   git add .
+   git commit -m "Update: ○○を修正"
+   git push origin test
+   ```
+
+6. **作業終了**
+   - 左上メニュー → 「Codespaces: Stop Current Codespace」
+   - またはブラウザタブを閉じる（自動停止）
+
+**無料枠**: 月60時間（個人アカウント）
+
+#### Option B: ローカル環境
+
+**メリット**:
+- ✅ オフラインでも作業可能
+- ✅ 自分の好きなエディタを使える
+
+**セットアップ**:
+```bash
+cd ~/Documents  # または任意の場所
+git clone https://github.com/28yu/28tools-download.git
+cd 28tools-download
+git checkout test
+open -a Safari index.html  # ローカルで確認
+```
+
 ### 推奨開発フロー
 
 1. **testブランチで開発**
@@ -74,6 +133,18 @@ mainブランチ → 本番サイト（28tools.com）として公開
 - **sitemap.xml**: プロジェクトルートに配置済み
   - Google Search Consoleに登録済み（2026/01/25）
   - クロール完了まで数日かかる場合あり
+
+### アクセス解析
+
+- **Google Analytics 4**: 全ページに設定済み
+  - 測定ID: `G-TXCT2B2NJ6`
+  - 訪問者数、地域、デバイス、流入元などを追跡
+  - ダッシュボード: https://analytics.google.com/
+
+**開発者のアクセスを除外**:
+- Google Analytics オプトアウト アドオンをインストール
+- 内部トラフィックフィルタでIPアドレスを除外
+- 詳細: https://tools.google.com/dlpage/gaoptout
 
 ## ファイル構成
 
