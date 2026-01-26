@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - 28 Tools</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/manual.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="manual-page">
+    <!-- 共通ヘッダー -->
+    <div id="header-container"></div>
+
+    <!-- コンテンツ -->
+    <div class="manual-container">
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <a href="index.html" data-lang-key="breadcrumb-home">ホーム</a>
+            <span class="separator">›</span>
+            <span data-lang-key="contact-title">お問い合わせ</span>
+        </nav>
+
+        <!-- ページタイトル -->
+        <div class="manual-header">
+            <h1 class="manual-title" data-lang-key="contact-title">お問い合わせ</h1>
+            <p class="manual-subtitle" data-lang-key="contact-subtitle">ご質問・ご要望をお寄せください</p>
+        </div>
+
+        <!-- お問い合わせ前の確認 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="contact-section-before">お問い合わせの前に</h2>
+            <div class="content-box">
+                <p data-lang-key="contact-before-text">
+                    お問い合わせの前に、以下のページをご確認ください。よくあるご質問への回答が見つかる場合があります。
+                </p>
+                <div class="link-cards">
+                    <a href="index.html#support-btn" class="link-card">
+                        <span class="link-icon">❓</span>
+                        <span data-lang-key="contact-link-faq">よくある質問（FAQ）</span>
+                    </a>
+                    <a href="index.html#install-btn" class="link-card">
+                        <span class="link-icon">📖</span>
+                        <span data-lang-key="contact-link-install">インストール手順</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせ種別 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="contact-section-types">お問い合わせ種別</h2>
+            <div class="usecase-grid">
+                <div class="usecase-card">
+                    <div class="usecase-icon">🐛</div>
+                    <h3 data-lang-key="contact-type-bug">バグ報告</h3>
+                    <p data-lang-key="contact-type-bug-desc">
+                        ツールの不具合やエラーについてのご報告
+                    </p>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-icon">💡</div>
+                    <h3 data-lang-key="contact-type-feature">機能要望</h3>
+                    <p data-lang-key="contact-type-feature-desc">
+                        新機能や改善のご提案
+                    </p>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-icon">❓</div>
+                    <h3 data-lang-key="contact-type-question">ご質問</h3>
+                    <p data-lang-key="contact-type-question-desc">
+                        使い方やインストールに関するご質問
+                    </p>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-icon">💬</div>
+                    <h3 data-lang-key="contact-type-other">その他</h3>
+                    <p data-lang-key="contact-type-other-desc">
+                        上記以外のお問い合わせ
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせフォーム -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="contact-section-form">お問い合わせフォーム</h2>
+            <div class="content-box contact-form-container">
+                <form id="contact-form" class="contact-form">
+                    <!-- お名前 -->
+                    <div class="form-group">
+                        <label for="name" data-lang-key="contact-form-name">お名前 <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="山田 太郎">
+                    </div>
+
+                    <!-- メールアドレス -->
+                    <div class="form-group">
+                        <label for="email" data-lang-key="contact-form-email">メールアドレス <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    </div>
+
+                    <!-- 種別 -->
+                    <div class="form-group">
+                        <label for="category" data-lang-key="contact-form-category">お問い合わせ種別 <span class="required">*</span></label>
+                        <select id="category" name="category" required>
+                            <option value="" data-lang-key="contact-form-select">選択してください</option>
+                            <option value="bug" data-lang-key="contact-form-option-bug">バグ報告</option>
+                            <option value="feature" data-lang-key="contact-form-option-feature">機能要望</option>
+                            <option value="question" data-lang-key="contact-form-option-question">ご質問</option>
+                            <option value="other" data-lang-key="contact-form-option-other">その他</option>
+                        </select>
+                    </div>
+
+                    <!-- Revitバージョン -->
+                    <div class="form-group">
+                        <label for="revit-version" data-lang-key="contact-form-revit">使用中のRevitバージョン</label>
+                        <select id="revit-version" name="revit-version">
+                            <option value="" data-lang-key="contact-form-select-optional">選択してください（任意）</option>
+                            <option value="2021">Revit 2021</option>
+                            <option value="2022">Revit 2022</option>
+                            <option value="2023">Revit 2023</option>
+                            <option value="2024">Revit 2024</option>
+                            <option value="2025">Revit 2025</option>
+                            <option value="2026">Revit 2026</option>
+                        </select>
+                    </div>
+
+                    <!-- 件名 -->
+                    <div class="form-group">
+                        <label for="subject" data-lang-key="contact-form-subject">件名 <span class="required">*</span></label>
+                        <input type="text" id="subject" name="subject" required placeholder="お問い合わせの件名を入力">
+                    </div>
+
+                    <!-- 内容 -->
+                    <div class="form-group">
+                        <label for="message" data-lang-key="contact-form-message">お問い合わせ内容 <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="6" required placeholder="詳細をご記入ください"></textarea>
+                    </div>
+
+                    <!-- プライバシーポリシー同意 -->
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="privacy-agree" name="privacy-agree" required>
+                            <span data-lang-key="contact-form-privacy">
+                                <a href="privacy.html" target="_blank">プライバシーポリシー</a>に同意します <span class="required">*</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- 送信ボタン -->
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn" data-lang-key="contact-form-submit">
+                            送信する
+                        </button>
+                    </div>
+                </form>
+
+                <!-- 送信完了メッセージ -->
+                <div id="form-success" class="form-message success" style="display: none;">
+                    <div class="message-icon">✅</div>
+                    <h3 data-lang-key="contact-success-title">送信完了</h3>
+                    <p data-lang-key="contact-success-text">
+                        お問い合わせありがとうございます。内容を確認の上、ご返信いたします。
+                    </p>
+                </div>
+
+                <!-- エラーメッセージ -->
+                <div id="form-error" class="form-message error" style="display: none;">
+                    <div class="message-icon">❌</div>
+                    <h3 data-lang-key="contact-error-title">送信エラー</h3>
+                    <p data-lang-key="contact-error-text">
+                        送信中にエラーが発生しました。しばらく時間をおいて再度お試しください。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 回答について -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="contact-section-response">回答について</h2>
+            <div class="tips-box">
+                <div class="tip-item">
+                    <span class="tip-icon">📧</span>
+                    <p data-lang-key="contact-response-text1">
+                        <strong data-lang-key="contact-response-time">回答時間：</strong>通常、3〜5営業日以内にご返信いたします。
+                    </p>
+                </div>
+                <div class="tip-item">
+                    <span class="tip-icon">💡</span>
+                    <p data-lang-key="contact-response-text2">
+                        <strong data-lang-key="contact-response-details">詳細情報：</strong>バグ報告の場合は、エラーメッセージやスクリーンショットを添えていただくと、より迅速に対応できます。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ナビゲーション -->
+        <div class="manual-navigation">
+            <a href="index.html" class="nav-button" data-lang-key="back-to-home">
+                ← ホームに戻る
+            </a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // お問い合わせフォームの処理
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const form = this;
+            const formData = new FormData(form);
+            const submitBtn = form.querySelector('.submit-btn');
+
+            // 送信中の表示
+            submitBtn.disabled = true;
+            submitBtn.textContent = '送信中...';
+
+            // フォームデータをメールで送信（実際の実装ではサーバーサイドが必要）
+            // ここでは簡易的にmailtoリンクを生成
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const category = formData.get('category');
+            const revitVersion = formData.get('revit-version') || '未選択';
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+
+            const mailBody = `
+【お問い合わせ種別】${category}
+【お名前】${name}
+【メールアドレス】${email}
+【Revitバージョン】${revitVersion}
+【件名】${subject}
+
+【内容】
+${message}
+            `.trim();
+
+            // 成功メッセージを表示
+            setTimeout(() => {
+                form.style.display = 'none';
+                document.getElementById('form-success').style.display = 'block';
+
+                // メール送信（バックアップとして）
+                const mailtoLink = `mailto:28tools.support@example.com?subject=${encodeURIComponent('[28 Tools] ' + subject)}&body=${encodeURIComponent(mailBody)}`;
+
+                // 実際のサイトではここでサーバーサイドにデータを送信
+                console.log('Form submitted:', Object.fromEntries(formData));
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
