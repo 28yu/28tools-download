@@ -1968,6 +1968,11 @@ function initTranslations() {
             en: 'Details:',
             zh: '详细信息：'
         },
+        'contact-placeholder-name': {
+            ja: '山田 太郎',
+            en: 'John Smith',
+            zh: '张三'
+        },
         'contact-placeholder-subject': {
             ja: 'お問い合わせの件名を入力',
             en: 'Enter the subject of your inquiry',
