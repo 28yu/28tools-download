@@ -1502,9 +1502,304 @@ function initTranslations() {
         }
     };
 
+    // ========================================
+    // フッターリンク翻訳
+    // ========================================
+    translations.footerLinks = {
+        'footer-about': {
+            ja: '運営者情報',
+            en: 'About',
+            zh: '关于我们'
+        },
+        'footer-contact': {
+            ja: 'お問い合わせ',
+            en: 'Contact',
+            zh: '联系我们'
+        },
+        'footer-privacy': {
+            ja: 'プライバシーポリシー',
+            en: 'Privacy Policy',
+            zh: '隐私政策'
+        },
+        'footer-terms': {
+            ja: '利用規約',
+            en: 'Terms of Service',
+            zh: '使用条款'
+        },
+        'footer-copyright': {
+            ja: '© 2026 28 Tools. All rights reserved.',
+            en: '© 2026 28 Tools. All rights reserved.',
+            zh: '© 2026 28 Tools. 版权所有。'
+        }
+    };
+
+    // ========================================
+    // プライバシーポリシーページ翻訳
+    // ========================================
+    translations.privacyPage = {
+        'privacy-title': {
+            ja: 'プライバシーポリシー',
+            en: 'Privacy Policy',
+            zh: '隐私政策'
+        },
+        'privacy-subtitle': {
+            ja: '個人情報の取り扱いについて',
+            en: 'About Handling of Personal Information',
+            zh: '关于个人信息的处理'
+        },
+        'privacy-section-policy': {
+            ja: '基本方針',
+            en: 'Basic Policy',
+            zh: '基本方针'
+        },
+        'privacy-section-collection': {
+            ja: '収集する情報',
+            en: 'Information We Collect',
+            zh: '我们收集的信息'
+        },
+        'privacy-section-cookies': {
+            ja: 'Cookieについて',
+            en: 'About Cookies',
+            zh: '关于Cookie'
+        },
+        'privacy-section-ads': {
+            ja: '広告について',
+            en: 'About Advertising',
+            zh: '关于广告'
+        },
+        'privacy-section-analytics': {
+            ja: 'アクセス解析ツール',
+            en: 'Analytics Tools',
+            zh: '分析工具'
+        },
+        'privacy-section-purpose': {
+            ja: '情報の利用目的',
+            en: 'Purpose of Use',
+            zh: '信息使用目的'
+        },
+        'privacy-section-thirdparty': {
+            ja: '第三者への情報提供',
+            en: 'Third-Party Disclosure',
+            zh: '向第三方提供信息'
+        },
+        'privacy-section-changes': {
+            ja: 'プライバシーポリシーの変更',
+            en: 'Changes to Privacy Policy',
+            zh: '隐私政策的变更'
+        },
+        'privacy-section-contact': {
+            ja: 'お問い合わせ',
+            en: 'Contact',
+            zh: '联系我们'
+        },
+        'privacy-lastupdate': {
+            ja: '最終更新日：2026年1月26日',
+            en: 'Last updated: January 26, 2026',
+            zh: '最后更新：2026年1月26日'
+        }
+    };
+
+    // ========================================
+    // お問い合わせページ翻訳
+    // ========================================
+    translations.contactPage = {
+        'contact-title': {
+            ja: 'お問い合わせ',
+            en: 'Contact Us',
+            zh: '联系我们'
+        },
+        'contact-subtitle': {
+            ja: 'ご質問・ご要望をお寄せください',
+            en: 'Send us your questions and requests',
+            zh: '请发送您的问题和请求'
+        },
+        'contact-section-before': {
+            ja: 'お問い合わせの前に',
+            en: 'Before Contacting',
+            zh: '联系前请注意'
+        },
+        'contact-section-types': {
+            ja: 'お問い合わせ種別',
+            en: 'Contact Types',
+            zh: '联系类型'
+        },
+        'contact-section-form': {
+            ja: 'お問い合わせフォーム',
+            en: 'Contact Form',
+            zh: '联系表单'
+        },
+        'contact-section-response': {
+            ja: '回答について',
+            en: 'About Response',
+            zh: '关于回复'
+        },
+        'contact-type-bug': {
+            ja: 'バグ報告',
+            en: 'Bug Report',
+            zh: '错误报告'
+        },
+        'contact-type-feature': {
+            ja: '機能要望',
+            en: 'Feature Request',
+            zh: '功能请求'
+        },
+        'contact-type-question': {
+            ja: 'ご質問',
+            en: 'Question',
+            zh: '问题咨询'
+        },
+        'contact-type-other': {
+            ja: 'その他',
+            en: 'Other',
+            zh: '其他'
+        },
+        'contact-form-submit': {
+            ja: '送信する',
+            en: 'Submit',
+            zh: '提交'
+        },
+        'contact-success-title': {
+            ja: '送信完了',
+            en: 'Sent Successfully',
+            zh: '发送成功'
+        },
+        'contact-error-title': {
+            ja: '送信エラー',
+            en: 'Send Error',
+            zh: '发送错误'
+        }
+    };
+
+    // ========================================
+    // 運営者情報ページ翻訳
+    // ========================================
+    translations.aboutPage = {
+        'about-title': {
+            ja: '運営者情報',
+            en: 'About Us',
+            zh: '关于我们'
+        },
+        'about-subtitle': {
+            ja: '28 Tools について',
+            en: 'About 28 Tools',
+            zh: '关于28 Tools'
+        },
+        'about-section-site': {
+            ja: '当サイトについて',
+            en: 'About This Site',
+            zh: '关于本站'
+        },
+        'about-section-features': {
+            ja: '28 Tools の特徴',
+            en: 'Features of 28 Tools',
+            zh: '28 Tools的特点'
+        },
+        'about-section-tools': {
+            ja: '提供ツール一覧',
+            en: 'Available Tools',
+            zh: '可用工具列表'
+        },
+        'about-section-versions': {
+            ja: '対応バージョン',
+            en: 'Supported Versions',
+            zh: '支持的版本'
+        },
+        'about-section-operator': {
+            ja: '運営者',
+            en: 'Operator',
+            zh: '运营者'
+        },
+        'about-section-tech': {
+            ja: '開発環境',
+            en: 'Development Environment',
+            zh: '开发环境'
+        },
+        'about-section-disclaimer': {
+            ja: '免責事項',
+            en: 'Disclaimer',
+            zh: '免责声明'
+        }
+    };
+
+    // ========================================
+    // 利用規約ページ翻訳
+    // ========================================
+    translations.termsPage = {
+        'terms-title': {
+            ja: '利用規約',
+            en: 'Terms of Service',
+            zh: '使用条款'
+        },
+        'terms-subtitle': {
+            ja: 'ご利用の際は必ずお読みください',
+            en: 'Please read before use',
+            zh: '使用前请务必阅读'
+        },
+        'terms-section-intro': {
+            ja: 'はじめに',
+            en: 'Introduction',
+            zh: '简介'
+        },
+        'terms-section-definition': {
+            ja: '第1条（定義）',
+            en: 'Article 1 (Definitions)',
+            zh: '第1条（定义）'
+        },
+        'terms-section-license': {
+            ja: '第2条（利用許諾）',
+            en: 'Article 2 (License)',
+            zh: '第2条（使用许可）'
+        },
+        'terms-section-prohibited': {
+            ja: '第3条（禁止事項）',
+            en: 'Article 3 (Prohibited Acts)',
+            zh: '第3条（禁止事项）'
+        },
+        'terms-section-disclaimer': {
+            ja: '第4条（免責事項）',
+            en: 'Article 4 (Disclaimer)',
+            zh: '第4条（免责声明）'
+        },
+        'terms-section-support': {
+            ja: '第5条（サポート）',
+            en: 'Article 5 (Support)',
+            zh: '第5条（支持）'
+        },
+        'terms-section-updates': {
+            ja: '第6条（アップデート）',
+            en: 'Article 6 (Updates)',
+            zh: '第6条（更新）'
+        },
+        'terms-section-ip': {
+            ja: '第7条（知的財産権）',
+            en: 'Article 7 (Intellectual Property)',
+            zh: '第7条（知识产权）'
+        },
+        'terms-section-changes': {
+            ja: '第8条（規約の変更）',
+            en: 'Article 8 (Changes to Terms)',
+            zh: '第8条（条款变更）'
+        },
+        'terms-section-law': {
+            ja: '第9条（準拠法・管轄）',
+            en: 'Article 9 (Governing Law)',
+            zh: '第9条（适用法律）'
+        },
+        'terms-section-contact': {
+            ja: '第10条（お問い合わせ）',
+            en: 'Article 10 (Contact)',
+            zh: '第10条（联系方式）'
+        },
+        'terms-lastupdate': {
+            ja: '最終更新日：2026年1月26日',
+            en: 'Last updated: January 26, 2026',
+            zh: '最后更新：2026年1月26日'
+        }
+    };
+
     // 全翻訳をマージ
-    Object.assign(translations, 
-        translations.common, 
+    Object.assign(translations,
+        translations.common,
         translations.sections,
         translations.indexPage,
         translations.installGuide,
@@ -1515,7 +1810,12 @@ function initTranslations() {
         translations.viewCopy,
         translations.sectionboxCopy,
         translations.viewportPosition,
-        translations.cropboxCopy
+        translations.cropboxCopy,
+        translations.footerLinks,
+        translations.privacyPage,
+        translations.contactPage,
+        translations.aboutPage,
+        translations.termsPage
     );
     
     console.log('📚 Translations initialized (v7.3 - サポート情報・インストール手順の汎用化)');

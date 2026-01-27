@@ -1057,20 +1057,88 @@ h1.main-title,
     .features-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .version-tabs {
         grid-template-columns: 1fr;
     }
-    
+
     .modal-content {
         border-radius: 12px;
     }
-    
+
     .modal-header h2 {
         font-size: 1.1rem;
     }
-    
+
     .step-header h3 {
         font-size: 1rem;
+    }
+}
+
+/* ==========================================
+   サイトフッター
+   ========================================== */
+
+.site-footer {
+    background: var(--concrete-gray);
+    color: var(--light-concrete);
+    padding: 32px 20px;
+    margin-top: 40px;
+}
+
+.site-footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.site-footer-links a {
+    color: var(--light-concrete);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    transition: color 0.3s ease;
+}
+
+.site-footer-links a:hover {
+    color: var(--architect-green);
+}
+
+.site-footer .footer-divider {
+    color: var(--disabled-gray);
+    font-size: 0.8rem;
+}
+
+.site-footer-copyright {
+    font-size: 0.85rem;
+    color: var(--disabled-gray);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 24px 16px;
+    }
+
+    .site-footer-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .site-footer .footer-divider {
+        display: none;
+    }
+
+    .site-footer-links a {
+        font-size: 0.95rem;
     }
 }
