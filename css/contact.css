@@ -189,6 +189,81 @@
     border-radius: 12px;
 }
 
+/* ファイルアップロード */
+.manual-page .file-upload-wrapper {
+    position: relative;
+}
+
+.manual-page .form-group input[type="file"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px dashed var(--light-border);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--text-primary);
+    background: var(--light-concrete);
+    cursor: pointer;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.manual-page .form-group input[type="file"]:hover {
+    border-color: var(--blueprint-blue);
+    background: var(--glass-white);
+}
+
+.manual-page .form-group input[type="file"]:focus {
+    outline: none;
+    border-color: var(--blueprint-blue);
+    background: var(--glass-white);
+}
+
+.manual-page .file-upload-info {
+    margin-top: 8px;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+/* ファイルプレビュー */
+.manual-page .file-preview {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.manual-page .preview-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: var(--glass-white);
+    border: 1px solid var(--light-border);
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.manual-page .preview-item img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.manual-page .preview-name {
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.manual-page .preview-size {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
 /* レスポンシブ */
 @media (max-width: 768px) {
     .manual-page .link-cards {

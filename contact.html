@@ -100,7 +100,7 @@
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="contact-section-form">お問い合わせフォーム</h2>
             <div class="content-box contact-form-container">
-                <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true">
+                <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true" enctype="multipart/form-data">
                     <!-- お名前 -->
                     <div class="form-group">
                         <label for="name" data-lang-key="contact-form-name">お名前 <span class="required">*</span></label>
@@ -149,6 +149,18 @@
                     <div class="form-group">
                         <label for="message" data-lang-key="contact-form-message">お問い合わせ内容 <span class="required">*</span></label>
                         <textarea id="message" name="message" rows="6" required placeholder="詳細をご記入ください" data-lang-placeholder="contact-placeholder-message"></textarea>
+                    </div>
+
+                    <!-- スクリーンショット添付 -->
+                    <div class="form-group">
+                        <label for="screenshot" data-lang-key="contact-form-screenshot">スクリーンショット（任意）</label>
+                        <div class="file-upload-wrapper">
+                            <input type="file" id="screenshot" name="screenshot" accept="image/*" multiple>
+                            <div class="file-upload-info" data-lang-key="contact-form-screenshot-info">
+                                画像ファイル（PNG, JPG, GIF）を添付できます。最大10MBまで。
+                            </div>
+                            <div id="file-preview" class="file-preview"></div>
+                        </div>
                     </div>
 
                     <!-- プライバシーポリシー同意 -->
@@ -218,7 +230,33 @@
 
     <script src="js/main.js"></script>
     <script>
-        // お問い合わせフォームの処理（Netlify Forms対応）
+        // ファイルプレビュー機能
+        document.getElementById('screenshot').addEventListener('change', function(e) {
+            const preview = document.getElementById('file-preview');
+            preview.innerHTML = '';
+
+            const files = e.target.files;
+            if (files.length > 0) {
+                Array.from(files).forEach((file, index) => {
+                    if (file.type.startsWith('image/')) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            const previewItem = document.createElement('div');
+                            previewItem.className = 'preview-item';
+                            previewItem.innerHTML = `
+                                <img src="${e.target.result}" alt="Preview ${index + 1}">
+                                <span class="preview-name">${file.name}</span>
+                                <span class="preview-size">(${(file.size / 1024).toFixed(1)} KB)</span>
+                            `;
+                            preview.appendChild(previewItem);
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                });
+            }
+        });
+
+        // お問い合わせフォームの処理（Netlify Forms対応・ファイルアップロード対応）
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
 
@@ -230,11 +268,10 @@
             submitBtn.disabled = true;
             submitBtn.textContent = '送信中...';
 
-            // Netlify Forms に送信
+            // Netlify Forms に送信（multipart/form-dataでファイルも含めて送信）
             fetch('/', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams(formData).toString()
+                body: formData
             })
             .then(response => {
                 if (response.ok) {

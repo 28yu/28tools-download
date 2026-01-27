@@ -1913,6 +1913,16 @@ function initTranslations() {
             en: 'Message',
             zh: '咨询内容'
         },
+        'contact-form-screenshot': {
+            ja: 'スクリーンショット（任意）',
+            en: 'Screenshot (optional)',
+            zh: '截图（可选）'
+        },
+        'contact-form-screenshot-info': {
+            ja: '画像ファイル（PNG, JPG, GIF）を添付できます。最大10MBまで。',
+            en: 'You can attach image files (PNG, JPG, GIF). Up to 10MB.',
+            zh: '可以附加图片文件（PNG、JPG、GIF）。最大10MB。'
+        },
         'contact-form-privacy': {
             ja: 'プライバシーポリシーに同意します',
             en: 'I agree to the Privacy Policy',
