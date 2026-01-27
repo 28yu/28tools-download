@@ -100,8 +100,7 @@
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="contact-section-form">お問い合わせフォーム</h2>
             <div class="content-box contact-form-container">
-                <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true" enctype="multipart/form-data">
-                    <input type="hidden" name="form-name" value="contact">
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/mojdpezb" method="POST" enctype="multipart/form-data">
                     <!-- お名前 -->
                     <div class="form-group">
                         <label for="name" data-lang-key="contact-form-name">お名前 <span class="required">*</span></label>
@@ -257,7 +256,7 @@
             }
         });
 
-        // お問い合わせフォームの処理（Netlify Forms対応・ファイルアップロード対応）
+        // お問い合わせフォームの処理（Formspree対応・ファイルアップロード対応）
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
 
@@ -269,10 +268,13 @@
             submitBtn.disabled = true;
             submitBtn.textContent = '送信中...';
 
-            // Netlify Forms に送信（multipart/form-dataでファイルも含めて送信）
-            fetch('/', {
+            // Formspree に送信
+            fetch('https://formspree.io/f/mojdpezb', {
                 method: 'POST',
-                body: formData
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
             })
             .then(response => {
                 if (response.ok) {
