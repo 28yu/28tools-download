@@ -100,7 +100,7 @@
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="contact-section-form">お問い合わせフォーム</h2>
             <div class="content-box contact-form-container">
-                <form id="contact-form" class="contact-form">
+                <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true">
                     <!-- お名前 -->
                     <div class="form-group">
                         <label for="name" data-lang-key="contact-form-name">お名前 <span class="required">*</span></label>
@@ -218,7 +218,7 @@
 
     <script src="js/main.js"></script>
     <script>
-        // お問い合わせフォームの処理
+        // お問い合わせフォームの処理（Netlify Forms対応）
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
 
@@ -230,37 +230,28 @@
             submitBtn.disabled = true;
             submitBtn.textContent = '送信中...';
 
-            // フォームデータをメールで送信（実際の実装ではサーバーサイドが必要）
-            // ここでは簡易的にmailtoリンクを生成
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const category = formData.get('category');
-            const revitVersion = formData.get('revit-version') || '未選択';
-            const subject = formData.get('subject');
-            const message = formData.get('message');
-
-            const mailBody = `
-【お問い合わせ種別】${category}
-【お名前】${name}
-【メールアドレス】${email}
-【Revitバージョン】${revitVersion}
-【件名】${subject}
-
-【内容】
-${message}
-            `.trim();
-
-            // 成功メッセージを表示
-            setTimeout(() => {
+            // Netlify Forms に送信
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(response => {
+                if (response.ok) {
+                    // 成功メッセージを表示
+                    form.style.display = 'none';
+                    document.getElementById('form-success').style.display = 'block';
+                    console.log('Form submitted successfully');
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .catch(error => {
+                // エラーメッセージを表示
+                console.error('Form submission error:', error);
                 form.style.display = 'none';
-                document.getElementById('form-success').style.display = 'block';
-
-                // メール送信（バックアップとして）
-                const mailtoLink = `mailto:28tools.support@example.com?subject=${encodeURIComponent('[28 Tools] ' + subject)}&body=${encodeURIComponent(mailBody)}`;
-
-                // 実際のサイトではここでサーバーサイドにデータを送信
-                console.log('Form submitted:', Object.fromEntries(formData));
-            }, 1000);
+                document.getElementById('form-error').style.display = 'block';
+            });
         });
     </script>
 </body>
