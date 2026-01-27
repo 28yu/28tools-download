@@ -1913,16 +1913,6 @@ function initTranslations() {
             en: 'Message',
             zh: '咨询内容'
         },
-        'contact-form-screenshot': {
-            ja: 'スクリーンショット（任意）',
-            en: 'Screenshot (optional)',
-            zh: '截图（可选）'
-        },
-        'contact-form-screenshot-info': {
-            ja: '画像ファイル（PNG, JPG, GIF）を添付できます。最大10MBまで。',
-            en: 'You can attach image files (PNG, JPG, GIF). Up to 10MB.',
-            zh: '可以附加图片文件（PNG、JPG、GIF）。最大10MB。'
-        },
         'contact-form-privacy': {
             ja: 'プライバシーポリシーに同意します',
             en: 'I agree to the Privacy Policy',
@@ -1969,9 +1959,9 @@ function initTranslations() {
             zh: '回复时间：'
         },
         'contact-response-text2': {
-            ja: 'バグ報告の場合は、エラーメッセージやスクリーンショットを添えていただくと、より迅速に対応できます。',
-            en: 'For bug reports, including error messages or screenshots helps us respond more quickly.',
-            zh: '对于错误报告，附上错误消息或截图可以帮助我们更快地回复。'
+            ja: 'バグ報告の場合は、エラーメッセージや再現手順を詳しく記載いただくと、より迅速に対応できます。',
+            en: 'For bug reports, including error messages and detailed reproduction steps helps us respond more quickly.',
+            zh: '对于错误报告，附上错误消息和详细的重现步骤可以帮助我们更快地回复。'
         },
         'contact-response-details': {
             ja: '詳細情報：',

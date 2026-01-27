@@ -100,7 +100,7 @@
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="contact-section-form">お問い合わせフォーム</h2>
             <div class="content-box contact-form-container">
-                <form id="contact-form" class="contact-form" action="https://formspree.io/f/mojdpezb" method="POST" enctype="multipart/form-data">
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/mojdpezb" method="POST">
                     <!-- お名前 -->
                     <div class="form-group">
                         <label for="name" data-lang-key="contact-form-name">お名前 <span class="required">*</span></label>
@@ -149,18 +149,6 @@
                     <div class="form-group">
                         <label for="message" data-lang-key="contact-form-message">お問い合わせ内容 <span class="required">*</span></label>
                         <textarea id="message" name="message" rows="6" required placeholder="詳細をご記入ください" data-lang-placeholder="contact-placeholder-message"></textarea>
-                    </div>
-
-                    <!-- スクリーンショット添付 -->
-                    <div class="form-group">
-                        <label for="screenshot" data-lang-key="contact-form-screenshot">スクリーンショット（任意）</label>
-                        <div class="file-upload-wrapper">
-                            <input type="file" id="screenshot" name="screenshot" accept="image/*" multiple>
-                            <div class="file-upload-info" data-lang-key="contact-form-screenshot-info">
-                                画像ファイル（PNG, JPG, GIF）を添付できます。最大10MBまで。
-                            </div>
-                            <div id="file-preview" class="file-preview"></div>
-                        </div>
                     </div>
 
                     <!-- プライバシーポリシー同意 -->
@@ -214,7 +202,7 @@
                 <div class="tip-item">
                     <span class="tip-icon">💡</span>
                     <p data-lang-key="contact-response-text2">
-                        <strong data-lang-key="contact-response-details">詳細情報：</strong>バグ報告の場合は、エラーメッセージやスクリーンショットを添えていただくと、より迅速に対応できます。
+                        <strong data-lang-key="contact-response-details">詳細情報：</strong>バグ報告の場合は、エラーメッセージや再現手順を詳しく記載いただくと、より迅速に対応できます。
                     </p>
                 </div>
             </div>
@@ -230,33 +218,7 @@
 
     <script src="js/main.js"></script>
     <script>
-        // ファイルプレビュー機能
-        document.getElementById('screenshot').addEventListener('change', function(e) {
-            const preview = document.getElementById('file-preview');
-            preview.innerHTML = '';
-
-            const files = e.target.files;
-            if (files.length > 0) {
-                Array.from(files).forEach((file, index) => {
-                    if (file.type.startsWith('image/')) {
-                        const reader = new FileReader();
-                        reader.onload = function(e) {
-                            const previewItem = document.createElement('div');
-                            previewItem.className = 'preview-item';
-                            previewItem.innerHTML = `
-                                <img src="${e.target.result}" alt="Preview ${index + 1}">
-                                <span class="preview-name">${file.name}</span>
-                                <span class="preview-size">(${(file.size / 1024).toFixed(1)} KB)</span>
-                            `;
-                            preview.appendChild(previewItem);
-                        };
-                        reader.readAsDataURL(file);
-                    }
-                });
-            }
-        });
-
-        // お問い合わせフォームの処理（Formspree対応・ファイルアップロード対応）
+        // お問い合わせフォームの処理（Formspree対応）
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
 
