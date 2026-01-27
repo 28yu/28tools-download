@@ -1,0 +1,24 @@
+name: Auto Merge Claude PRs
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  auto-merge:
+    # claude/ で始まるブランチからのPRのみ自動マージ
+    if: startsWith(github.head_ref, 'claude/')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Merge PR
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} --merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
