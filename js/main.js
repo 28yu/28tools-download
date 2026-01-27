@@ -1552,50 +1552,220 @@ function initTranslations() {
             en: 'Basic Policy',
             zh: '基本方针'
         },
+        'privacy-policy-text': {
+            ja: '28 Tools（以下「当サイト」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本プライバシーポリシーでは、当サイトにおける情報の収集、利用、保護について説明します。',
+            en: '28 Tools ("this site") respects user privacy and strives to protect personal information. This Privacy Policy explains the collection, use, and protection of information on this site.',
+            zh: '28 Tools（以下简称"本站"）尊重用户隐私，致力于保护个人信息。本隐私政策说明本站对信息的收集、使用和保护。'
+        },
         'privacy-section-collection': {
             ja: '収集する情報',
             en: 'Information We Collect',
             zh: '我们收集的信息'
+        },
+        'privacy-collection-auto': {
+            ja: '自動的に収集される情報',
+            en: 'Automatically Collected Information',
+            zh: '自动收集的信息'
+        },
+        'privacy-collection-auto-text': {
+            ja: '当サイトでは、Google Analytics を使用してアクセス情報を収集しています。収集される情報には以下が含まれます：',
+            en: 'This site uses Google Analytics to collect access information. The information collected includes:',
+            zh: '本站使用Google Analytics收集访问信息。收集的信息包括：'
+        },
+        'privacy-collection-item1': {
+            ja: 'IPアドレス（匿名化処理済み）',
+            en: 'IP address (anonymized)',
+            zh: 'IP地址（已匿名化）'
+        },
+        'privacy-collection-item2': {
+            ja: 'ブラウザの種類とバージョン',
+            en: 'Browser type and version',
+            zh: '浏览器类型和版本'
+        },
+        'privacy-collection-item3': {
+            ja: 'オペレーティングシステム',
+            en: 'Operating system',
+            zh: '操作系统'
+        },
+        'privacy-collection-item4': {
+            ja: '参照元URL',
+            en: 'Referring URL',
+            zh: '引荐来源网址'
+        },
+        'privacy-collection-item5': {
+            ja: '閲覧したページと滞在時間',
+            en: 'Pages viewed and time spent',
+            zh: '浏览的页面和停留时间'
+        },
+        'privacy-collection-item6': {
+            ja: 'アクセス日時',
+            en: 'Access date and time',
+            zh: '访问日期和时间'
+        },
+        'privacy-collection-note': {
+            ja: 'これらの情報は統計的な分析のみに使用され、個人を特定することはありません。',
+            en: 'This information is used only for statistical analysis and does not identify individuals.',
+            zh: '这些信息仅用于统计分析，不会识别个人身份。'
         },
         'privacy-section-cookies': {
             ja: 'Cookieについて',
             en: 'About Cookies',
             zh: '关于Cookie'
         },
+        'privacy-cookies-text1': {
+            ja: '当サイトでは、ユーザー体験の向上とアクセス解析のためにCookie（クッキー）を使用しています。',
+            en: 'This site uses cookies to improve user experience and for access analysis.',
+            zh: '本站使用Cookie来改善用户体验和进行访问分析。'
+        },
+        'privacy-cookies-types': {
+            ja: '使用するCookieの種類',
+            en: 'Types of Cookies Used',
+            zh: '使用的Cookie类型'
+        },
+        'privacy-cookies-type1': {
+            ja: '機能性Cookie：言語設定などのユーザー設定を保存します',
+            en: 'Functional Cookies: Store user preferences such as language settings',
+            zh: '功能性Cookie：保存语言设置等用户偏好'
+        },
+        'privacy-cookies-type2': {
+            ja: '分析Cookie：Google Analytics によるアクセス解析に使用します',
+            en: 'Analytics Cookies: Used for access analysis by Google Analytics',
+            zh: '分析Cookie：用于Google Analytics的访问分析'
+        },
+        'privacy-cookies-type3': {
+            ja: '広告Cookie：第三者の広告配信サービスによる広告表示に使用する場合があります',
+            en: 'Advertising Cookies: May be used for ad display by third-party advertising services',
+            zh: '广告Cookie：可能用于第三方广告服务的广告展示'
+        },
+        'privacy-cookies-optout': {
+            ja: 'Cookieの無効化',
+            en: 'Disabling Cookies',
+            zh: '禁用Cookie'
+        },
+        'privacy-cookies-optout-text': {
+            ja: 'ブラウザの設定によりCookieを無効にすることができます。ただし、Cookieを無効にすると、当サイトの一部機能が正常に動作しない場合があります。',
+            en: 'You can disable cookies through your browser settings. However, disabling cookies may prevent some features of this site from working properly.',
+            zh: '您可以通过浏览器设置禁用Cookie。但是，禁用Cookie可能会导致本站的某些功能无法正常工作。'
+        },
         'privacy-section-ads': {
             ja: '広告について',
             en: 'About Advertising',
             zh: '关于广告'
+        },
+        'privacy-ads-text1': {
+            ja: '当サイトでは、第三者配信の広告サービス（Google AdSense など）を利用する場合があります。',
+            en: 'This site may use third-party advertising services (such as Google AdSense).',
+            zh: '本站可能使用第三方广告服务（如Google AdSense）。'
+        },
+        'privacy-ads-text2': {
+            ja: '広告配信事業者は、ユーザーの興味に応じた広告を表示するためにCookieを使用することがあります。これにより、ユーザーが当サイトや他のサイトにアクセスした際の情報に基づいて、適切な広告が配信されます。',
+            en: 'Advertising providers may use cookies to display ads based on user interests. This allows appropriate ads to be delivered based on information from when users access this site or other sites.',
+            zh: '广告提供商可能使用Cookie来展示基于用户兴趣的广告。这使得可以根据用户访问本站或其他网站时的信息来投放适当的广告。'
+        },
+        'privacy-ads-text3': {
+            ja: 'パーソナライズ広告を無効にする場合は、Googleの広告設定から設定を変更できます。',
+            en: 'To disable personalized ads, you can change the settings in Google Ad Settings.',
+            zh: '如需禁用个性化广告，您可以在Google广告设置中更改设置。'
         },
         'privacy-section-analytics': {
             ja: 'アクセス解析ツール',
             en: 'Analytics Tools',
             zh: '分析工具'
         },
+        'privacy-analytics-text1': {
+            ja: '当サイトでは、Googleによるアクセス解析ツール「Google Analytics」を使用しています。Google Analytics はCookieを使用してデータを収集しますが、このデータは匿名で収集されており、個人を特定するものではありません。',
+            en: 'This site uses Google Analytics, an access analysis tool by Google. Google Analytics uses cookies to collect data, but this data is collected anonymously and does not identify individuals.',
+            zh: '本站使用Google提供的访问分析工具"Google Analytics"。Google Analytics使用Cookie收集数据，但这些数据是匿名收集的，不会识别个人身份。'
+        },
+        'privacy-analytics-text2': {
+            ja: 'Google Analytics によるデータ収集を無効にする場合は、Google Analytics オプトアウト アドオンをご利用ください。',
+            en: 'To disable data collection by Google Analytics, please use the Google Analytics Opt-out Add-on.',
+            zh: '如需禁用Google Analytics的数据收集，请使用Google Analytics选择退出插件。'
+        },
+        'privacy-analytics-text3': {
+            ja: 'Google Analytics の利用規約については、Google Analytics 利用規約をご確認ください。',
+            en: 'For Google Analytics Terms of Service, please refer to the Google Analytics Terms of Service.',
+            zh: '有关Google Analytics服务条款，请参阅Google Analytics服务条款。'
+        },
         'privacy-section-purpose': {
             ja: '情報の利用目的',
             en: 'Purpose of Use',
             zh: '信息使用目的'
+        },
+        'privacy-purpose-text': {
+            ja: '収集した情報は、以下の目的で利用します：',
+            en: 'The collected information is used for the following purposes:',
+            zh: '收集的信息用于以下目的：'
+        },
+        'privacy-purpose-item1': {
+            ja: 'サイトの利用状況の把握と改善',
+            en: 'Understanding and improving site usage',
+            zh: '了解和改善网站使用情况'
+        },
+        'privacy-purpose-item2': {
+            ja: 'ユーザー体験の向上',
+            en: 'Improving user experience',
+            zh: '改善用户体验'
+        },
+        'privacy-purpose-item3': {
+            ja: 'サービスの品質向上',
+            en: 'Improving service quality',
+            zh: '提高服务质量'
+        },
+        'privacy-purpose-item4': {
+            ja: 'お問い合わせへの対応',
+            en: 'Responding to inquiries',
+            zh: '回复咨询'
         },
         'privacy-section-thirdparty': {
             ja: '第三者への情報提供',
             en: 'Third-Party Disclosure',
             zh: '向第三方提供信息'
         },
+        'privacy-thirdparty-text': {
+            ja: '当サイトは、法令に基づく場合を除き、ユーザーの同意なく個人情報を第三者に提供することはありません。ただし、以下の場合は例外とします：',
+            en: 'This site will not provide personal information to third parties without user consent, except as required by law. However, the following cases are exceptions:',
+            zh: '除法律要求外，本站不会在未经用户同意的情况下向第三方提供个人信息。但以下情况除外：'
+        },
+        'privacy-thirdparty-item1': {
+            ja: '法令に基づく開示請求があった場合',
+            en: 'When there is a disclosure request based on law',
+            zh: '根据法律要求披露时'
+        },
+        'privacy-thirdparty-item2': {
+            ja: '人の生命、身体または財産の保護のために必要な場合',
+            en: 'When necessary to protect life, body, or property',
+            zh: '为保护生命、身体或财产所必需时'
+        },
+        'privacy-thirdparty-item3': {
+            ja: '公衆衛生の向上または児童の健全育成に特に必要な場合',
+            en: 'When particularly necessary for public health improvement or child development',
+            zh: '为改善公共卫生或促进儿童健康成长特别需要时'
+        },
         'privacy-section-changes': {
             ja: 'プライバシーポリシーの変更',
             en: 'Changes to Privacy Policy',
             zh: '隐私政策的变更'
+        },
+        'privacy-changes-text': {
+            ja: '当サイトは、必要に応じて本プライバシーポリシーを変更することがあります。変更した場合は、当ページにて公開します。重要な変更がある場合は、サイト上でお知らせします。',
+            en: 'This site may change this Privacy Policy as necessary. Changes will be published on this page. Important changes will be announced on the site.',
+            zh: '本站可能会根据需要更改本隐私政策。更改将在本页面上公布。重要更改将在网站上公告。'
         },
         'privacy-section-contact': {
             ja: 'お問い合わせ',
             en: 'Contact',
             zh: '联系我们'
         },
+        'privacy-contact-text': {
+            ja: '本プライバシーポリシーに関するお問い合わせは、お問い合わせページよりご連絡ください。',
+            en: 'For inquiries regarding this Privacy Policy, please contact us through the Contact page.',
+            zh: '有关本隐私政策的咨询，请通过联系页面与我们联系。'
+        },
         'privacy-lastupdate': {
-            ja: '最終更新日：2026年1月26日',
-            en: 'Last updated: January 26, 2026',
-            zh: '最后更新：2026年1月26日'
+            ja: '最終更新日：2026年1月27日',
+            en: 'Last updated: January 27, 2026',
+            zh: '最后更新：2026年1月27日'
         }
     };
 
@@ -1618,40 +1788,135 @@ function initTranslations() {
             en: 'Before Contacting',
             zh: '联系前请注意'
         },
+        'contact-before-text': {
+            ja: 'お問い合わせの前に、以下のページをご確認ください。よくあるご質問への回答が見つかる場合があります。',
+            en: 'Before contacting us, please check the following pages. You may find answers to frequently asked questions.',
+            zh: '在联系我们之前，请查看以下页面。您可能会找到常见问题的答案。'
+        },
+        'contact-link-faq': {
+            ja: 'よくある質問（FAQ）',
+            en: 'FAQ',
+            zh: '常见问题'
+        },
+        'contact-link-install': {
+            ja: 'インストール手順',
+            en: 'Installation Guide',
+            zh: '安装指南'
+        },
         'contact-section-types': {
             ja: 'お問い合わせ種別',
             en: 'Contact Types',
             zh: '联系类型'
-        },
-        'contact-section-form': {
-            ja: 'お問い合わせフォーム',
-            en: 'Contact Form',
-            zh: '联系表单'
-        },
-        'contact-section-response': {
-            ja: '回答について',
-            en: 'About Response',
-            zh: '关于回复'
         },
         'contact-type-bug': {
             ja: 'バグ報告',
             en: 'Bug Report',
             zh: '错误报告'
         },
+        'contact-type-bug-desc': {
+            ja: 'ツールの不具合やエラーについてのご報告',
+            en: 'Report tool issues or errors',
+            zh: '报告工具故障或错误'
+        },
         'contact-type-feature': {
             ja: '機能要望',
             en: 'Feature Request',
             zh: '功能请求'
+        },
+        'contact-type-feature-desc': {
+            ja: '新機能や改善のご提案',
+            en: 'Suggestions for new features or improvements',
+            zh: '新功能或改进建议'
         },
         'contact-type-question': {
             ja: 'ご質問',
             en: 'Question',
             zh: '问题咨询'
         },
+        'contact-type-question-desc': {
+            ja: '使い方やインストールに関するご質問',
+            en: 'Questions about usage or installation',
+            zh: '关于使用或安装的问题'
+        },
         'contact-type-other': {
             ja: 'その他',
             en: 'Other',
             zh: '其他'
+        },
+        'contact-type-other-desc': {
+            ja: '上記以外のお問い合わせ',
+            en: 'Other inquiries',
+            zh: '其他咨询'
+        },
+        'contact-section-form': {
+            ja: 'お問い合わせフォーム',
+            en: 'Contact Form',
+            zh: '联系表单'
+        },
+        'contact-form-name': {
+            ja: 'お名前',
+            en: 'Name',
+            zh: '姓名'
+        },
+        'contact-form-email': {
+            ja: 'メールアドレス',
+            en: 'Email Address',
+            zh: '电子邮件'
+        },
+        'contact-form-category': {
+            ja: 'お問い合わせ種別',
+            en: 'Inquiry Type',
+            zh: '咨询类型'
+        },
+        'contact-form-select': {
+            ja: '選択してください',
+            en: 'Please select',
+            zh: '请选择'
+        },
+        'contact-form-option-bug': {
+            ja: 'バグ報告',
+            en: 'Bug Report',
+            zh: '错误报告'
+        },
+        'contact-form-option-feature': {
+            ja: '機能要望',
+            en: 'Feature Request',
+            zh: '功能请求'
+        },
+        'contact-form-option-question': {
+            ja: 'ご質問',
+            en: 'Question',
+            zh: '问题咨询'
+        },
+        'contact-form-option-other': {
+            ja: 'その他',
+            en: 'Other',
+            zh: '其他'
+        },
+        'contact-form-revit': {
+            ja: '使用中のRevitバージョン',
+            en: 'Revit Version in Use',
+            zh: '使用的Revit版本'
+        },
+        'contact-form-select-optional': {
+            ja: '選択してください（任意）',
+            en: 'Please select (optional)',
+            zh: '请选择（可选）'
+        },
+        'contact-form-subject': {
+            ja: '件名',
+            en: 'Subject',
+            zh: '主题'
+        },
+        'contact-form-message': {
+            ja: 'お問い合わせ内容',
+            en: 'Message',
+            zh: '咨询内容'
+        },
+        'contact-form-privacy': {
+            ja: 'プライバシーポリシーに同意します',
+            en: 'I agree to the Privacy Policy',
+            zh: '我同意隐私政策'
         },
         'contact-form-submit': {
             ja: '送信する',
@@ -1663,10 +1928,45 @@ function initTranslations() {
             en: 'Sent Successfully',
             zh: '发送成功'
         },
+        'contact-success-text': {
+            ja: 'お問い合わせありがとうございます。内容を確認の上、ご返信いたします。',
+            en: 'Thank you for your inquiry. We will review and respond to you.',
+            zh: '感谢您的咨询。我们将审核并回复您。'
+        },
         'contact-error-title': {
             ja: '送信エラー',
             en: 'Send Error',
             zh: '发送错误'
+        },
+        'contact-error-text': {
+            ja: '送信中にエラーが発生しました。しばらく時間をおいて再度お試しください。',
+            en: 'An error occurred while sending. Please try again later.',
+            zh: '发送时发生错误。请稍后再试。'
+        },
+        'contact-section-response': {
+            ja: '回答について',
+            en: 'About Response',
+            zh: '关于回复'
+        },
+        'contact-response-text1': {
+            ja: '通常、3〜5営業日以内にご返信いたします。',
+            en: 'We usually respond within 3-5 business days.',
+            zh: '我们通常在3-5个工作日内回复。'
+        },
+        'contact-response-time': {
+            ja: '回答時間：',
+            en: 'Response Time:',
+            zh: '回复时间：'
+        },
+        'contact-response-text2': {
+            ja: 'バグ報告の場合は、エラーメッセージやスクリーンショットを添えていただくと、より迅速に対応できます。',
+            en: 'For bug reports, including error messages or screenshots helps us respond more quickly.',
+            zh: '对于错误报告，附上错误消息或截图可以帮助我们更快地回复。'
+        },
+        'contact-response-details': {
+            ja: '詳細情報：',
+            en: 'Details:',
+            zh: '详细信息：'
         }
     };
 
@@ -1689,35 +1989,190 @@ function initTranslations() {
             en: 'About This Site',
             zh: '关于本站'
         },
+        'about-site-text1': {
+            ja: '28 Tools は、Autodesk Revit 用のアドインを開発・配布するサイトです。建築・建設業界で働くRevitユーザーの日々の作業効率化を目指し、実用的なツールを提供しています。',
+            en: '28 Tools is a site that develops and distributes add-ins for Autodesk Revit. We provide practical tools aimed at improving daily work efficiency for Revit users in the architecture and construction industry.',
+            zh: '28 Tools是一个开发和分发Autodesk Revit插件的网站。我们为建筑和建设行业的Revit用户提供实用工具，旨在提高日常工作效率。'
+        },
+        'about-site-text2': {
+            ja: '当サイトで配布するツールは、実際のプロジェクトワークで生まれた課題を解決するために開発されました。シンプルで直感的な操作性を重視し、誰でもすぐに使い始められるツールを目指しています。',
+            en: 'The tools distributed on this site were developed to solve challenges that arose in actual project work. We focus on simple and intuitive operation, aiming for tools that anyone can start using immediately.',
+            zh: '本站分发的工具是为了解决实际项目工作中出现的问题而开发的。我们注重简单直观的操作，致力于让任何人都能立即开始使用。'
+        },
         'about-section-features': {
             ja: '28 Tools の特徴',
             en: 'Features of 28 Tools',
             zh: '28 Tools的特点'
+        },
+        'about-feature1-title': {
+            ja: '実務に即した機能',
+            en: 'Practical Features',
+            zh: '实用功能'
+        },
+        'about-feature1-desc': {
+            ja: '実際の設計業務で必要とされる機能を厳選して実装しています。',
+            en: 'We carefully select and implement features needed in actual design work.',
+            zh: '我们精心挑选并实现实际设计工作中所需的功能。'
+        },
+        'about-feature2-title': {
+            ja: 'シンプルな操作',
+            en: 'Simple Operation',
+            zh: '简单操作'
+        },
+        'about-feature2-desc': {
+            ja: '複雑な設定は不要。ワンクリックで作業を効率化できます。',
+            en: 'No complex settings required. Streamline your work with one click.',
+            zh: '无需复杂设置。一键即可提高工作效率。'
+        },
+        'about-feature3-title': {
+            ja: '継続的な改善',
+            en: 'Continuous Improvement',
+            zh: '持续改进'
+        },
+        'about-feature3-desc': {
+            ja: 'ユーザーの声を反映し、定期的にアップデートを行っています。',
+            en: 'We regularly update based on user feedback.',
+            zh: '我们根据用户反馈定期更新。'
+        },
+        'about-feature4-title': {
+            ja: '多言語対応',
+            en: 'Multi-language Support',
+            zh: '多语言支持'
+        },
+        'about-feature4-desc': {
+            ja: '日本語・英語・中国語に対応。グローバルに利用できます。',
+            en: 'Available in Japanese, English, and Chinese for global use.',
+            zh: '支持日语、英语和中文，可在全球使用。'
         },
         'about-section-tools': {
             ja: '提供ツール一覧',
             en: 'Available Tools',
             zh: '可用工具列表'
         },
+        'about-tools-intro': {
+            ja: '現在、以下の6つのツールを提供しています：',
+            en: 'Currently, we provide the following 6 tools:',
+            zh: '目前，我们提供以下6个工具：'
+        },
+        'about-tool1': {
+            ja: '符号ON/OFF - 通り芯・レベルの符号表示を一括切替',
+            en: 'Grid Bubble ON/OFF - Batch toggle grid and level bubble visibility',
+            zh: '轴号开关 - 批量切换轴网和标高符号显示'
+        },
+        'about-tool2': {
+            ja: 'シート一括作成 - 図枠を指定して複数シートをまとめて作成',
+            en: 'Batch Sheet Creation - Create multiple sheets with specified title blocks',
+            zh: '批量创建图纸 - 使用指定的标题栏一次创建多个图纸'
+        },
+        'about-tool3': {
+            ja: '3D視点コピペ - 3Dビューの視点を他のビューにコピー＆ペースト',
+            en: '3D View Copy - Copy and paste 3D view perspectives to other views',
+            zh: '3D视点复制 - 将3D视图视角复制并粘贴到其他视图'
+        },
+        'about-tool4': {
+            ja: '切断ボックスコピペ - 3Dビューの切断ボックス範囲をコピー＆ペースト',
+            en: 'Section Box Copy - Copy and paste 3D view section box range',
+            zh: '剖切框复制 - 复制并粘贴3D视图的剖切框范围'
+        },
+        'about-tool5': {
+            ja: 'ビューポート位置コピペ - シート上のビューポート位置をコピー＆ペースト',
+            en: 'Viewport Position Copy - Copy and paste viewport positions on sheets',
+            zh: '视口位置复制 - 复制并粘贴图纸上的视口位置'
+        },
+        'about-tool6': {
+            ja: 'トリミング領域コピペ - ビューのトリミング領域をコピー＆ペースト',
+            en: 'Crop Region Copy - Copy and paste view crop regions',
+            zh: '裁剪区域复制 - 复制并粘贴视图的裁剪区域'
+        },
+        'about-tools-more': {
+            ja: '各ツールの詳細は、ホームページのマニュアルをご参照ください。',
+            en: 'For details on each tool, please refer to the manuals on the homepage.',
+            zh: '有关每个工具的详细信息，请参阅主页上的手册。'
+        },
         'about-section-versions': {
             ja: '対応バージョン',
             en: 'Supported Versions',
             zh: '支持的版本'
+        },
+        'about-versions-text': {
+            ja: '28 Tools は以下の Revit バージョンに対応しています：',
+            en: '28 Tools supports the following Revit versions:',
+            zh: '28 Tools支持以下Revit版本：'
+        },
+        'about-versions-legend': {
+            ja: '✓ 利用可能 / 🚧 開発中 / ⏳ 計画中',
+            en: '✓ Available / 🚧 In Development / ⏳ Planned',
+            zh: '✓ 可用 / 🚧 开发中 / ⏳ 计划中'
         },
         'about-section-operator': {
             ja: '運営者',
             en: 'Operator',
             zh: '运营者'
         },
+        'about-operator-name': {
+            ja: 'サイト名',
+            en: 'Site Name',
+            zh: '网站名称'
+        },
+        'about-operator-url': {
+            ja: 'URL',
+            en: 'URL',
+            zh: '网址'
+        },
+        'about-operator-contact': {
+            ja: 'お問い合わせ',
+            en: 'Contact',
+            zh: '联系方式'
+        },
+        'about-operator-since': {
+            ja: '運営開始',
+            en: 'Since',
+            zh: '运营开始'
+        },
         'about-section-tech': {
             ja: '開発環境',
             en: 'Development Environment',
             zh: '开发环境'
         },
+        'about-tech-text1': {
+            ja: 'C# (.NET Framework)',
+            en: 'C# (.NET Framework)',
+            zh: 'C# (.NET Framework)'
+        },
+        'about-tech-lang': {
+            ja: '開発言語：',
+            en: 'Language:',
+            zh: '开发语言：'
+        },
+        'about-tech-text2': {
+            ja: 'Revit API',
+            en: 'Revit API',
+            zh: 'Revit API'
+        },
+        'about-tech-api': {
+            ja: '使用API：',
+            en: 'API:',
+            zh: '使用API：'
+        },
+        'about-tech-text3': {
+            ja: 'GitHub Pages',
+            en: 'GitHub Pages',
+            zh: 'GitHub Pages'
+        },
+        'about-tech-hosting': {
+            ja: 'ホスティング：',
+            en: 'Hosting:',
+            zh: '托管：'
+        },
         'about-section-disclaimer': {
             ja: '免責事項',
             en: 'Disclaimer',
             zh: '免责声明'
+        },
+        'about-disclaimer-text': {
+            ja: '当サイトで配布するツールは、可能な限り正確な動作を目指していますが、すべての環境での動作を保証するものではありません。ツールの使用により生じた損害について、運営者は一切の責任を負いません。詳しくは利用規約をご確認ください。',
+            en: 'The tools distributed on this site aim to operate as accurately as possible, but we do not guarantee operation in all environments. The operator assumes no responsibility for any damages arising from the use of these tools. Please refer to the Terms of Service for details.',
+            zh: '本站分发的工具旨在尽可能准确地运行，但我们不保证在所有环境中都能正常工作。运营者对因使用这些工具而产生的任何损害不承担任何责任。详情请参阅使用条款。'
         }
     };
 
@@ -1740,60 +2195,230 @@ function initTranslations() {
             en: 'Introduction',
             zh: '简介'
         },
+        'terms-intro-text': {
+            ja: '本利用規約（以下「本規約」）は、28 Tools（以下「当サイト」）が提供するソフトウェア（以下「本ソフトウェア」）の利用条件を定めるものです。ユーザーの皆様（以下「ユーザー」）には、本規約に同意いただいた上で、本ソフトウェアをご利用いただきます。',
+            en: 'These Terms of Service ("Terms") set forth the conditions for using the software ("Software") provided by 28 Tools ("this site"). Users ("Users") are required to agree to these Terms before using the Software.',
+            zh: '本使用条款（以下简称"本条款"）规定了使用28 Tools（以下简称"本站"）提供的软件（以下简称"本软件"）的条件。用户（以下简称"用户"）在使用本软件前需同意本条款。'
+        },
         'terms-section-definition': {
             ja: '第1条（定義）',
             en: 'Article 1 (Definitions)',
             zh: '第1条（定义）'
+        },
+        'terms-definition-text': {
+            ja: '本規約において使用する用語の定義は以下の通りです：',
+            en: 'The definitions of terms used in these Terms are as follows:',
+            zh: '本条款中使用的术语定义如下：'
+        },
+        'terms-definition-item1': {
+            ja: '「本ソフトウェア」とは、当サイトが配布する Revit アドインプログラムを指します。',
+            en: '"Software" refers to the Revit add-in programs distributed by this site.',
+            zh: '"本软件"指本站分发的Revit插件程序。'
+        },
+        'terms-definition-item2': {
+            ja: '「ユーザー」とは、本ソフトウェアをダウンロードまたは使用する個人または法人を指します。',
+            en: '"User" refers to any individual or entity that downloads or uses the Software.',
+            zh: '"用户"指下载或使用本软件的任何个人或实体。'
+        },
+        'terms-definition-item3': {
+            ja: '「当サイト」とは、28 Tools（https://28tools.com）を指します。',
+            en: '"This site" refers to 28 Tools (https://28tools.com).',
+            zh: '"本站"指28 Tools（https://28tools.com）。'
         },
         'terms-section-license': {
             ja: '第2条（利用許諾）',
             en: 'Article 2 (License)',
             zh: '第2条（使用许可）'
         },
+        'terms-license-item1': {
+            ja: '当サイトは、ユーザーに対し、本規約に従って本ソフトウェアを使用する非独占的かつ譲渡不能な権利を許諾します。',
+            en: 'This site grants Users a non-exclusive, non-transferable right to use the Software in accordance with these Terms.',
+            zh: '本站授予用户按照本条款使用本软件的非独占性、不可转让的权利。'
+        },
+        'terms-license-item2': {
+            ja: '本ソフトウェアは、個人使用および商用使用の両方で利用することができます。',
+            en: 'The Software may be used for both personal and commercial purposes.',
+            zh: '本软件可用于个人和商业用途。'
+        },
+        'terms-license-item3': {
+            ja: '本ソフトウェアの著作権は、当サイトに帰属します。',
+            en: 'The copyright of the Software belongs to this site.',
+            zh: '本软件的版权归本站所有。'
+        },
         'terms-section-prohibited': {
             ja: '第3条（禁止事項）',
             en: 'Article 3 (Prohibited Acts)',
             zh: '第3条（禁止事项）'
+        },
+        'terms-prohibited-intro': {
+            ja: 'ユーザーは、以下の行為を行ってはなりません：',
+            en: 'Users shall not engage in the following acts:',
+            zh: '用户不得从事以下行为：'
+        },
+        'terms-prohibited-item1': {
+            ja: '本ソフトウェアの逆コンパイル、逆アセンブル、リバースエンジニアリング',
+            en: 'Decompiling, disassembling, or reverse engineering the Software',
+            zh: '反编译、反汇编或逆向工程本软件'
+        },
+        'terms-prohibited-item2': {
+            ja: '本ソフトウェアの改変、二次的著作物の作成',
+            en: 'Modifying the Software or creating derivative works',
+            zh: '修改本软件或创建衍生作品'
+        },
+        'terms-prohibited-item3': {
+            ja: '本ソフトウェアの再配布、転売、レンタル',
+            en: 'Redistributing, reselling, or renting the Software',
+            zh: '再分发、转售或出租本软件'
+        },
+        'terms-prohibited-item4': {
+            ja: '本ソフトウェアを使用した違法行為',
+            en: 'Using the Software for illegal activities',
+            zh: '使用本软件进行非法活动'
+        },
+        'terms-prohibited-item5': {
+            ja: '当サイトまたは第三者の知的財産権を侵害する行為',
+            en: 'Infringing on the intellectual property rights of this site or third parties',
+            zh: '侵犯本站或第三方的知识产权'
+        },
+        'terms-prohibited-item6': {
+            ja: '本ソフトウェアのセキュリティ機能の回避または無効化',
+            en: 'Circumventing or disabling security features of the Software',
+            zh: '规避或禁用本软件的安全功能'
         },
         'terms-section-disclaimer': {
             ja: '第4条（免責事項）',
             en: 'Article 4 (Disclaimer)',
             zh: '第4条（免责声明）'
         },
+        'terms-disclaimer-item1': {
+            ja: '本ソフトウェアは「現状のまま」で提供されます。当サイトは、本ソフトウェアの品質、性能、特定目的への適合性について、明示または黙示を問わず、いかなる保証も行いません。',
+            en: 'The Software is provided "as is." This site makes no warranties, express or implied, regarding the quality, performance, or fitness for a particular purpose of the Software.',
+            zh: '本软件按"原样"提供。本站对本软件的质量、性能或特定用途的适用性不作任何明示或暗示的保证。'
+        },
+        'terms-disclaimer-item2': {
+            ja: '本ソフトウェアの使用により生じた直接的、間接的、偶発的、特別、結果的な損害（データの損失、業務の中断、利益の損失を含むがこれに限定されない）について、当サイトは一切の責任を負いません。',
+            en: 'This site shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from the use of the Software (including but not limited to data loss, business interruption, or loss of profits).',
+            zh: '本站对因使用本软件而产生的任何直接、间接、偶然、特殊或后果性损害（包括但不限于数据丢失、业务中断或利润损失）不承担任何责任。'
+        },
+        'terms-disclaimer-item3': {
+            ja: 'ユーザーは、本ソフトウェアを使用する前に、必ず重要なデータのバックアップを取ることを推奨します。',
+            en: 'Users are strongly recommended to back up important data before using the Software.',
+            zh: '强烈建议用户在使用本软件前备份重要数据。'
+        },
+        'terms-disclaimer-item4': {
+            ja: '本ソフトウェアは Autodesk, Inc. とは関係がなく、Autodesk による承認を受けていません。',
+            en: 'The Software is not affiliated with Autodesk, Inc. and is not endorsed by Autodesk.',
+            zh: '本软件与Autodesk, Inc.无关，未获得Autodesk的认可。'
+        },
         'terms-section-support': {
             ja: '第5条（サポート）',
             en: 'Article 5 (Support)',
             zh: '第5条（支持）'
+        },
+        'terms-support-item1': {
+            ja: '当サイトは、本ソフトウェアに関するテクニカルサポートを提供する義務を負いません。',
+            en: 'This site is not obligated to provide technical support for the Software.',
+            zh: '本站没有义务为本软件提供技术支持。'
+        },
+        'terms-support-item2': {
+            ja: 'ただし、可能な範囲でお問い合わせフォームを通じてサポートを提供する場合があります。',
+            en: 'However, support may be provided through the contact form where possible.',
+            zh: '但是，在可能的情况下，可能会通过联系表单提供支持。'
+        },
+        'terms-support-item3': {
+            ja: 'サポートの内容、応答時間、品質について、当サイトは保証しません。',
+            en: 'This site does not guarantee the content, response time, or quality of support.',
+            zh: '本站不保证支持的内容、响应时间或质量。'
         },
         'terms-section-updates': {
             ja: '第6条（アップデート）',
             en: 'Article 6 (Updates)',
             zh: '第6条（更新）'
         },
+        'terms-updates-item1': {
+            ja: '当サイトは、本ソフトウェアのアップデートを提供することがありますが、その義務を負いません。',
+            en: 'This site may provide updates to the Software but is not obligated to do so.',
+            zh: '本站可能会提供本软件的更新，但没有义务这样做。'
+        },
+        'terms-updates-item2': {
+            ja: 'アップデートにより、機能の追加、変更、削除が行われる場合があります。',
+            en: 'Updates may add, modify, or remove features.',
+            zh: '更新可能会添加、修改或删除功能。'
+        },
+        'terms-updates-item3': {
+            ja: 'アップデート版にも本規約が適用されます。',
+            en: 'These Terms also apply to updated versions.',
+            zh: '本条款也适用于更新版本。'
+        },
         'terms-section-ip': {
             ja: '第7条（知的財産権）',
             en: 'Article 7 (Intellectual Property)',
             zh: '第7条（知识产权）'
+        },
+        'terms-ip-item1': {
+            ja: '本ソフトウェアに関するすべての知的財産権（著作権、商標権、特許権等）は、当サイトまたは正当な権利者に帰属します。',
+            en: 'All intellectual property rights (copyrights, trademarks, patents, etc.) related to the Software belong to this site or the rightful owners.',
+            zh: '与本软件相关的所有知识产权（版权、商标、专利等）归本站或合法权利人所有。'
+        },
+        'terms-ip-item2': {
+            ja: '本規約は、ユーザーに本ソフトウェアの知的財産権を譲渡するものではありません。',
+            en: 'These Terms do not transfer any intellectual property rights of the Software to Users.',
+            zh: '本条款不向用户转让本软件的任何知识产权。'
+        },
+        'terms-ip-item3': {
+            ja: '「Revit」および「Autodesk」は、Autodesk, Inc. の登録商標です。',
+            en: '"Revit" and "Autodesk" are registered trademarks of Autodesk, Inc.',
+            zh: '"Revit"和"Autodesk"是Autodesk, Inc.的注册商标。'
         },
         'terms-section-changes': {
             ja: '第8条（規約の変更）',
             en: 'Article 8 (Changes to Terms)',
             zh: '第8条（条款变更）'
         },
+        'terms-changes-item1': {
+            ja: '当サイトは、必要に応じて本規約を変更することがあります。',
+            en: 'This site may change these Terms as necessary.',
+            zh: '本站可能会根据需要更改本条款。'
+        },
+        'terms-changes-item2': {
+            ja: '変更後の規約は、当サイトに掲載した時点で効力を生じます。',
+            en: 'The revised Terms will take effect when posted on this site.',
+            zh: '修订后的条款在本站发布时生效。'
+        },
+        'terms-changes-item3': {
+            ja: '変更後も本ソフトウェアを継続して使用する場合、ユーザーは変更後の規約に同意したものとみなされます。',
+            en: 'If Users continue to use the Software after changes, they will be deemed to have agreed to the revised Terms.',
+            zh: '如果用户在更改后继续使用本软件，将被视为已同意修订后的条款。'
+        },
         'terms-section-law': {
             ja: '第9条（準拠法・管轄）',
             en: 'Article 9 (Governing Law)',
             zh: '第9条（适用法律）'
+        },
+        'terms-law-item1': {
+            ja: '本規約は、日本法に準拠し解釈されます。',
+            en: 'These Terms shall be governed by and construed in accordance with the laws of Japan.',
+            zh: '本条款受日本法律管辖并按其解释。'
+        },
+        'terms-law-item2': {
+            ja: '本規約に関する紛争については、日本国の裁判所を第一審の専属的合意管轄裁判所とします。',
+            en: 'Any disputes relating to these Terms shall be subject to the exclusive jurisdiction of the courts of Japan as the court of first instance.',
+            zh: '与本条款相关的任何争议均应以日本法院作为一审专属管辖法院。'
         },
         'terms-section-contact': {
             ja: '第10条（お問い合わせ）',
             en: 'Article 10 (Contact)',
             zh: '第10条（联系方式）'
         },
+        'terms-contact-text': {
+            ja: '本規約に関するお問い合わせは、お問い合わせフォームよりご連絡ください。',
+            en: 'For inquiries regarding these Terms, please contact us through the contact form.',
+            zh: '有关本条款的咨询，请通过联系表单与我们联系。'
+        },
         'terms-lastupdate': {
-            ja: '最終更新日：2026年1月26日',
-            en: 'Last updated: January 26, 2026',
-            zh: '最后更新：2026年1月26日'
+            ja: '最終更新日：2026年1月27日',
+            en: 'Last updated: January 27, 2026',
+            zh: '最后更新：2026年1月27日'
         }
     };
 
