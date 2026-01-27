@@ -277,14 +277,18 @@
                 }
             })
             .then(response => {
-                if (response.ok) {
-                    // 成功メッセージを表示
-                    form.style.display = 'none';
-                    document.getElementById('form-success').style.display = 'block';
-                    console.log('Form submitted successfully');
-                } else {
-                    throw new Error('Network response was not ok');
-                }
+                return response.json().then(data => {
+                    if (response.ok) {
+                        // 成功メッセージを表示
+                        form.style.display = 'none';
+                        document.getElementById('form-success').style.display = 'block';
+                        console.log('Form submitted successfully', data);
+                    } else {
+                        // Formspreeからのエラー詳細を表示
+                        console.error('Formspree error:', data);
+                        throw new Error(data.error || 'Form submission failed');
+                    }
+                });
             })
             .catch(error => {
                 // エラーメッセージを表示
