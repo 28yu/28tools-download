@@ -1,13 +1,12 @@
-name: Auto Merge Claude PRs
+name: Auto Create and Merge Claude PRs
 
 on:
-  pull_request:
-    types: [opened, reopened]
+  push:
+    branches:
+      - 'claude/**'
 
 jobs:
-  auto-merge:
-    # claude/ で始まるブランチからのPRのみ自動マージ
-    if: startsWith(github.head_ref, 'claude/')
+  create-and-merge-pr:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -16,9 +15,36 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check if PR exists
+        id: check-pr
+        run: |
+          PR_EXISTS=$(gh pr list --head ${{ github.ref_name }} --json number --jq 'length')
+          echo "pr_exists=$PR_EXISTS" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create PR
+        if: steps.check-pr.outputs.pr_exists == '0'
+        run: |
+          gh pr create \
+            --title "Auto: ${{ github.event.head_commit.message }}" \
+            --body "Automatically created PR from branch \`${{ github.ref_name }}\`" \
+            --base main \
+            --head ${{ github.ref_name }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Wait for PR to be ready
+        run: sleep 5
 
       - name: Merge PR
         run: |
-          gh pr merge ${{ github.event.pull_request.number }} --merge
+          PR_NUMBER=$(gh pr list --head ${{ github.ref_name }} --json number --jq '.[0].number')
+          if [ -n "$PR_NUMBER" ]; then
+            gh pr merge $PR_NUMBER --merge --delete-branch=false
+          fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
