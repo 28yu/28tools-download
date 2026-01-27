@@ -1967,6 +1967,16 @@ function initTranslations() {
             ja: '詳細情報：',
             en: 'Details:',
             zh: '详细信息：'
+        },
+        'contact-placeholder-subject': {
+            ja: 'お問い合わせの件名を入力',
+            en: 'Enter the subject of your inquiry',
+            zh: '输入咨询主题'
+        },
+        'contact-placeholder-message': {
+            ja: '詳細をご記入ください',
+            en: 'Please provide details',
+            zh: '请填写详细内容'
         }
     };
 
@@ -2173,6 +2183,16 @@ function initTranslations() {
             ja: '当サイトで配布するツールは、可能な限り正確な動作を目指していますが、すべての環境での動作を保証するものではありません。ツールの使用により生じた損害について、運営者は一切の責任を負いません。詳しくは利用規約をご確認ください。',
             en: 'The tools distributed on this site aim to operate as accurately as possible, but we do not guarantee operation in all environments. The operator assumes no responsibility for any damages arising from the use of these tools. Please refer to the Terms of Service for details.',
             zh: '本站分发的工具旨在尽可能准确地运行，但我们不保证在所有环境中都能正常工作。运营者对因使用这些工具而产生的任何损害不承担任何责任。详情请参阅使用条款。'
+        },
+        'about-operator-contact-link': {
+            ja: 'お問い合わせフォーム',
+            en: 'Contact Form',
+            zh: '联系表单'
+        },
+        'about-operator-since-value': {
+            ja: '2026年1月',
+            en: 'January 2026',
+            zh: '2026年1月'
         }
     };
 
@@ -2452,7 +2472,7 @@ function initTranslations() {
 
 function updateAllContent() {
     console.log(`🔄 Updating content for language: ${currentLanguage}`);
-    
+
     // data-lang-key属性を持つすべての要素を更新
     const elements = document.querySelectorAll('[data-lang-key]');
     elements.forEach(element => {
@@ -2476,8 +2496,17 @@ function updateAllContent() {
             }
         }
     });
-    
-    console.log(`✅ Content updated: ${elements.length} elements`);
+
+    // data-lang-placeholder属性を持つ要素のplaceholderを更新
+    const placeholderElements = document.querySelectorAll('[data-lang-placeholder]');
+    placeholderElements.forEach(element => {
+        const key = element.dataset.langPlaceholder;
+        if (translations[key] && translations[key][currentLanguage]) {
+            element.placeholder = translations[key][currentLanguage];
+        }
+    });
+
+    console.log(`✅ Content updated: ${elements.length} elements, ${placeholderElements.length} placeholders`);
 }
 
 // ========================================
