@@ -1,4 +1,4 @@
-name: Auto Create and Merge Claude PRs
+name: Auto Create PR for Claude Branches
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - 'claude/**'
 
 jobs:
-  create-and-merge-pr:
+  create-pr:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -30,21 +30,24 @@ jobs:
         if: steps.check-pr.outputs.pr_exists == '0'
         run: |
           gh pr create \
-            --title "Auto: ${{ github.event.head_commit.message }}" \
-            --body "Automatically created PR from branch \`${{ github.ref_name }}\`" \
+            --title "${{ github.event.head_commit.message }}" \
+            --body "## 自動作成されたPR
+
+このPRは \`${{ github.ref_name }}\` ブランチへのプッシュにより自動作成されました。
+
+### 確認手順
+1. Netlifyプレビューで動作確認
+2. 問題なければ「Merge pull request」をクリック
+
+---
+Commit: ${{ github.sha }}" \
             --base main \
             --head ${{ github.ref_name }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Wait for PR to be ready
-        run: sleep 5
-
-      - name: Merge PR
+      - name: Output PR URL
+        if: steps.check-pr.outputs.pr_exists == '0'
         run: |
-          PR_NUMBER=$(gh pr list --head ${{ github.ref_name }} --json number --jq '.[0].number')
-          if [ -n "$PR_NUMBER" ]; then
-            gh pr merge $PR_NUMBER --merge --delete-branch=false
-          fi
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          echo "✅ PR created successfully!"
+          echo "🔗 View PR: https://github.com/${{ github.repository }}/pulls"
