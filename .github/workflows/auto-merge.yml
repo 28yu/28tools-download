@@ -1,3 +1,5 @@
+# Auto Create PR for Claude Branches
+# Triggers on push to claude/* branches and creates a PR automatically
 name: Auto Create PR for Claude Branches
 
 on:
