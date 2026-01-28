@@ -13,10 +13,28 @@
 ### ブランチ戦略
 
 ```
-testブランチ → ローカルで開発・確認（非公開）
+claude/*ブランチ → Claude Codeで開発
+     ↓ プッシュでPR自動作成
+     ↓ Netlifyプレビューで確認
      ↓ 問題なければマージ
 mainブランチ → 本番サイト（28tools.com）として公開
 ```
+
+### Claude Code開発フロー（推奨）
+
+1. **claude/で始まるブランチで開発**
+   - Claude Codeがコードを変更・コミット・プッシュ
+
+2. **PR自動作成**
+   - GitHub Actionsが自動でPRを作成
+
+3. **Netlifyプレビューで確認**
+   - PRページにNetlifyプレビューURLが表示される
+   - テスト確認を実施
+
+4. **マージ**
+   - 問題なければ「Merge pull request」をクリック
+   - 本番サイトに自動デプロイ
 
 ### 開発環境の選択肢
 
@@ -113,6 +131,26 @@ open -a Safari index.html  # ローカルで確認
   - 1つのセッションは1つのリポジトリに紐付けられる
   - このリポジトリ（28tools-download）専用のセッションで作業すること
 
+## プレビュー環境
+
+### Netlify Preview
+
+PRが作成されると、Netlifyが自動でプレビュー環境を構築します。
+
+- **プレビューURL**: PRページのコメントに表示
+- **用途**: 本番反映前の動作確認
+- **自動更新**: PRにプッシュするたびに更新
+
+## お問い合わせフォーム
+
+### Formspree
+
+お問い合わせフォームはFormspreeを使用しています。
+
+- **エンドポイント**: `https://formspree.io/f/mojdpezb`
+- **ダッシュボード**: https://formspree.io/forms
+- **制限**: 無料プランは月50件まで（ファイル添付は有料プランのみ）
+
 ## セキュリティ設定
 
 ### HTTPS強制
@@ -151,11 +189,21 @@ open -a Safari index.html  # ローカルで確認
 ```
 /
 ├── index.html          # メインページ
-├── main.js            # JavaScriptロジック
-├── sitemap.xml        # SEO用サイトマップ
-├── CNAME              # カスタムドメイン設定（28tools.com）
-├── CLAUDE.md          # このファイル（開発ガイド）
-└── manual/            # マニュアルページディレクトリ
+├── js/main.js          # JavaScriptロジック（多言語対応含む）
+├── css/                # スタイルシート
+│   ├── style.css
+│   ├── manual.css
+│   └── contact.css
+├── sitemap.xml         # SEO用サイトマップ
+├── CNAME               # カスタムドメイン設定（28tools.com）
+├── CLAUDE.md           # このファイル（開発ガイド）
+├── privacy.html        # プライバシーポリシー
+├── contact.html        # お問い合わせページ
+├── about.html          # 運営者情報
+├── terms.html          # 利用規約
+├── .github/workflows/  # GitHub Actions
+│   └── auto-merge.yml  # PR自動作成ワークフロー
+└── manual/             # マニュアルページディレクトリ
     ├── manual1.html
     ├── manual2.html
     ├── manual3.html

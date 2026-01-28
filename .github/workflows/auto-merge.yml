@@ -1,13 +1,13 @@
-name: Auto Merge Claude PRs
+# Auto Create PR for Claude Branches
+name: Auto Create PR for Claude Branches
 
 on:
-  pull_request:
-    types: [opened, reopened]
+  push:
+    branches:
+      - 'claude/**'
 
 jobs:
-  auto-merge:
-    # claude/ で始まるブランチからのPRのみ自動マージ
-    if: startsWith(github.head_ref, 'claude/')
+  create-pr:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -16,9 +16,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Merge PR
+      - name: Check if PR exists
+        id: check-pr
         run: |
-          gh pr merge ${{ github.event.pull_request.number }} --merge
+          PR_EXISTS=$(gh pr list --head ${{ github.ref_name }} --json number --jq 'length')
+          echo "pr_exists=$PR_EXISTS" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create PR
+        if: steps.check-pr.outputs.pr_exists == '0'
+        run: |
+          gh pr create \
+            --title "${{ github.event.head_commit.message }}" \
+            --body "Auto-created PR from branch ${{ github.ref_name }}" \
+            --base main \
+            --head ${{ github.ref_name }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
