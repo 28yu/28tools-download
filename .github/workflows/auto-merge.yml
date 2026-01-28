@@ -1,5 +1,4 @@
 # Auto Create PR for Claude Branches
-# Triggers on push to claude/* branches and creates a PR automatically
 name: Auto Create PR for Claude Branches
 
 on:
@@ -33,23 +32,8 @@ jobs:
         run: |
           gh pr create \
             --title "${{ github.event.head_commit.message }}" \
-            --body "## 自動作成されたPR
-
-このPRは \`${{ github.ref_name }}\` ブランチへのプッシュにより自動作成されました。
-
-### 確認手順
-1. Netlifyプレビューで動作確認
-2. 問題なければ「Merge pull request」をクリック
-
----
-Commit: ${{ github.sha }}" \
+            --body "Auto-created PR from branch ${{ github.ref_name }}" \
             --base main \
             --head ${{ github.ref_name }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Output PR URL
-        if: steps.check-pr.outputs.pr_exists == '0'
-        run: |
-          echo "✅ PR created successfully!"
-          echo "🔗 View PR: https://github.com/${{ github.repository }}/pulls"
