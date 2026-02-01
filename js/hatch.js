@@ -1,0 +1,678 @@
+/**
+ * ハッチングパターン作成ツール
+ * Revit / AutoCAD用の.patファイルを生成
+ */
+
+document.addEventListener('DOMContentLoaded', function() {
+    // DOM要素
+    const patternTypeInput = document.getElementById('pattern-type');
+    const patternTypeGrid = document.getElementById('pattern-type-grid');
+    const outputFormatSelect = document.getElementById('output-format');
+    const revitSettings = document.getElementById('revit-settings');
+    const downloadBtn = document.getElementById('download-btn');
+    const canvas = document.getElementById('preview-canvas');
+    const ctx = canvas.getContext('2d');
+    const previewInfoText = document.getElementById('preview-info-text');
+
+    // 破線設定の表示切り替え
+    const diagonalDashType = document.getElementById('diagonal-dash-type');
+    const crosshatchDashType = document.getElementById('crosshatch-dash-type');
+
+    // 初期化
+    init();
+
+    function init() {
+        // パターン種類グリッドのクリックイベント
+        patternTypeGrid.addEventListener('click', function(e) {
+            const item = e.target.closest('.pattern-type-item');
+            if (item) {
+                selectPatternType(item.dataset.type);
+            }
+        });
+
+        // イベントリスナー設定
+        outputFormatSelect.addEventListener('change', onOutputFormatChange);
+        downloadBtn.addEventListener('click', downloadPatternFile);
+
+        // 破線設定の変更
+        diagonalDashType.addEventListener('change', function() {
+            toggleDashSettings('diagonal', this.value);
+        });
+        crosshatchDashType.addEventListener('change', function() {
+            toggleDashSettings('crosshatch', this.value);
+        });
+
+        // 全入力フィールドの変更でプレビュー更新
+        document.querySelectorAll('.setting-input, .setting-select').forEach(el => {
+            el.addEventListener('change', updatePreview);
+            el.addEventListener('input', updatePreview);
+        });
+
+        // サムネイル描画
+        drawAllThumbnails();
+
+        // 初期表示
+        onPatternTypeChange();
+        onOutputFormatChange();
+        updatePreview();
+    }
+
+    // サムネイル描画
+    function drawAllThumbnails() {
+        document.querySelectorAll('.pattern-thumbnail').forEach(thumbCanvas => {
+            const pattern = thumbCanvas.dataset.pattern;
+            const thumbCtx = thumbCanvas.getContext('2d');
+            drawThumbnail(thumbCtx, pattern, 60, 60);
+        });
+    }
+
+    // 個別サムネイル描画
+    function drawThumbnail(ctx, pattern, width, height) {
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, width, height);
+        ctx.strokeStyle = '#333333';
+        ctx.lineWidth = 1;
+
+        switch (pattern) {
+            case 'diagonal':
+                drawDiagonalThumbnail(ctx, width, height);
+                break;
+            case 'crosshatch':
+                drawCrosshatchThumbnail(ctx, width, height);
+                break;
+            case 'dot':
+                drawDotThumbnail(ctx, width, height);
+                break;
+            case 'tile-grid':
+                drawTileGridThumbnail(ctx, width, height);
+                break;
+            case 'tile-brick':
+                drawTileBrickThumbnail(ctx, width, height);
+                break;
+            case 'rc-concrete':
+                drawRCConcreteThumbnail(ctx, width, height);
+                break;
+        }
+    }
+
+    function drawDiagonalThumbnail(ctx, w, h) {
+        const spacing = 8;
+        ctx.beginPath();
+        for (let i = -h; i < w + h; i += spacing) {
+            ctx.moveTo(i, 0);
+            ctx.lineTo(i + h, h);
+        }
+        ctx.stroke();
+    }
+
+    function drawCrosshatchThumbnail(ctx, w, h) {
+        const spacing = 10;
+        ctx.beginPath();
+        for (let i = -h; i < w + h; i += spacing) {
+            ctx.moveTo(i, 0);
+            ctx.lineTo(i + h, h);
+            ctx.moveTo(i + h, 0);
+            ctx.lineTo(i, h);
+        }
+        ctx.stroke();
+    }
+
+    function drawDotThumbnail(ctx, w, h) {
+        const spacing = 10;
+        ctx.fillStyle = '#333333';
+        for (let x = spacing / 2; x < w; x += spacing) {
+            for (let y = spacing / 2; y < h; y += spacing) {
+                ctx.beginPath();
+                ctx.arc(x, y, 2, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+    }
+
+    function drawTileGridThumbnail(ctx, w, h) {
+        const tileW = 25;
+        const tileH = 25;
+        const grout = 3;
+        ctx.fillStyle = '#888888';
+        ctx.fillRect(0, 0, w, h);
+        ctx.fillStyle = '#ffffff';
+        for (let x = 0; x < w; x += tileW + grout) {
+            for (let y = 0; y < h; y += tileH + grout) {
+                ctx.fillRect(x, y, tileW, tileH);
+            }
+        }
+    }
+
+    function drawTileBrickThumbnail(ctx, w, h) {
+        const tileW = 28;
+        const tileH = 12;
+        const grout = 2;
+        ctx.fillStyle = '#888888';
+        ctx.fillRect(0, 0, w, h);
+        ctx.fillStyle = '#ffffff';
+        let row = 0;
+        for (let y = 0; y < h; y += tileH + grout) {
+            const offset = (row % 2) * ((tileW + grout) / 2);
+            for (let x = -tileW; x < w + tileW; x += tileW + grout) {
+                ctx.fillRect(x + offset, y, tileW, tileH);
+            }
+            row++;
+        }
+    }
+
+    function drawRCConcreteThumbnail(ctx, w, h) {
+        const innerSpacing = 2;
+        const groupSpacing = 12;
+        ctx.beginPath();
+        let pos = 0;
+        while (pos < w + h) {
+            for (let i = 0; i < 3; i++) {
+                const offset = pos + i * innerSpacing;
+                ctx.moveTo(offset, 0);
+                ctx.lineTo(offset - h * 0.7, h);
+            }
+            pos += innerSpacing * 2 + groupSpacing;
+        }
+        ctx.stroke();
+    }
+
+    // パターン種類選択
+    function selectPatternType(type) {
+        // 選択状態の更新
+        document.querySelectorAll('.pattern-type-item').forEach(item => {
+            item.classList.toggle('selected', item.dataset.type === type);
+        });
+
+        // hidden inputの値を更新
+        patternTypeInput.value = type;
+
+        // 設定パネルを切り替え
+        onPatternTypeChange();
+    }
+
+    // パターン種類変更
+    function onPatternTypeChange() {
+        const type = patternTypeInput.value;
+
+        // 全設定を非表示
+        document.querySelectorAll('.pattern-specific-settings').forEach(el => {
+            el.style.display = 'none';
+        });
+
+        // 選択されたパターンの設定を表示
+        const settingsEl = document.getElementById('settings-' + type);
+        if (settingsEl) {
+            settingsEl.style.display = 'block';
+        }
+
+        updatePreview();
+    }
+
+    // 出力形式変更
+    function onOutputFormatChange() {
+        const format = outputFormatSelect.value;
+        revitSettings.style.display = format === 'revit' ? 'block' : 'none';
+    }
+
+    // 破線設定の表示切り替え
+    function toggleDashSettings(prefix, value) {
+        const dashSettings = document.querySelectorAll('.' + prefix + '-dash-settings, #settings-' + prefix + ' .dash-settings');
+        dashSettings.forEach(el => {
+            el.style.display = value === 'none' ? 'none' : 'block';
+        });
+        updatePreview();
+    }
+
+    // プレビュー更新
+    function updatePreview() {
+        const type = patternTypeInput.value;
+        const scale = 4; // プレビュースケール（1mm = 4px）
+
+        // キャンバスクリア
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.strokeStyle = '#333333';
+        ctx.lineWidth = 1;
+
+        switch (type) {
+            case 'diagonal':
+                drawDiagonalPreview(scale);
+                break;
+            case 'crosshatch':
+                drawCrosshatchPreview(scale);
+                break;
+            case 'dot':
+                drawDotPreview(scale);
+                break;
+            case 'tile-grid':
+                drawTileGridPreview(scale);
+                break;
+            case 'tile-brick':
+                drawTileBrickPreview(scale);
+                break;
+            case 'rc-concrete':
+                drawRCConcretePreview(scale);
+                break;
+        }
+
+        updatePreviewInfo();
+    }
+
+    // 斜線プレビュー
+    function drawDiagonalPreview(scale) {
+        const angle = parseFloat(document.getElementById('diagonal-angle').value) || 45;
+        const spacing = parseFloat(document.getElementById('diagonal-spacing').value) || 10;
+        const dashType = document.getElementById('diagonal-dash-type').value;
+        const dashLength = parseFloat(document.getElementById('diagonal-dash-length').value) || 5;
+        const dashGap = parseFloat(document.getElementById('diagonal-dash-gap').value) || 3;
+
+        const spacingPx = spacing * scale;
+        const rad = angle * Math.PI / 180;
+        const cos = Math.cos(rad);
+        const sin = Math.sin(rad);
+
+        // 対角線の長さ
+        const diagonal = Math.sqrt(canvas.width * canvas.width + canvas.height * canvas.height);
+        const numLines = Math.ceil(diagonal / spacingPx) * 2;
+
+        ctx.save();
+        ctx.translate(canvas.width / 2, canvas.height / 2);
+        ctx.rotate(rad);
+
+        for (let i = -numLines; i <= numLines; i++) {
+            const y = i * spacingPx;
+            const isDashed = dashType === 'all' || (dashType === 'alternate' && i % 2 === 0);
+
+            if (isDashed && dashType !== 'none') {
+                ctx.setLineDash([dashLength * scale, dashGap * scale]);
+            } else {
+                ctx.setLineDash([]);
+            }
+
+            ctx.beginPath();
+            ctx.moveTo(-diagonal, y);
+            ctx.lineTo(diagonal, y);
+            ctx.stroke();
+        }
+
+        ctx.restore();
+        ctx.setLineDash([]);
+    }
+
+    // クロスハッチプレビュー
+    function drawCrosshatchPreview(scale) {
+        const angle = parseFloat(document.getElementById('crosshatch-angle').value) || 45;
+        const spacing = parseFloat(document.getElementById('crosshatch-spacing').value) || 10;
+        const dashType = document.getElementById('crosshatch-dash-type').value;
+        const dashLength = parseFloat(document.getElementById('crosshatch-dash-length').value) || 5;
+        const dashGap = parseFloat(document.getElementById('crosshatch-dash-gap').value) || 3;
+
+        const spacingPx = spacing * scale;
+        const diagonal = Math.sqrt(canvas.width * canvas.width + canvas.height * canvas.height);
+        const numLines = Math.ceil(diagonal / spacingPx) * 2;
+
+        // 2方向の線を描画
+        [angle, angle + 90].forEach((ang, dirIndex) => {
+            const rad = ang * Math.PI / 180;
+
+            ctx.save();
+            ctx.translate(canvas.width / 2, canvas.height / 2);
+            ctx.rotate(rad);
+
+            for (let i = -numLines; i <= numLines; i++) {
+                const y = i * spacingPx;
+                const isDashed = dashType === 'all' || (dashType === 'alternate' && i % 2 === 0);
+
+                if (isDashed && dashType !== 'none') {
+                    ctx.setLineDash([dashLength * scale, dashGap * scale]);
+                } else {
+                    ctx.setLineDash([]);
+                }
+
+                ctx.beginPath();
+                ctx.moveTo(-diagonal, y);
+                ctx.lineTo(diagonal, y);
+                ctx.stroke();
+            }
+
+            ctx.restore();
+        });
+
+        ctx.setLineDash([]);
+    }
+
+    // ドットプレビュー
+    function drawDotPreview(scale) {
+        const spacingX = parseFloat(document.getElementById('dot-spacing-x').value) || 10;
+        const spacingY = parseFloat(document.getElementById('dot-spacing-y').value) || 10;
+        const dotSize = parseFloat(document.getElementById('dot-size').value) || 1;
+
+        const spacingXPx = spacingX * scale;
+        const spacingYPx = spacingY * scale;
+        const dotSizePx = Math.max(dotSize * scale, 1);
+
+        ctx.fillStyle = '#333333';
+
+        for (let x = 0; x < canvas.width; x += spacingXPx) {
+            for (let y = 0; y < canvas.height; y += spacingYPx) {
+                ctx.beginPath();
+                ctx.arc(x, y, dotSizePx, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+    }
+
+    // タイル（芋目地）プレビュー
+    function drawTileGridPreview(scale) {
+        const width = parseFloat(document.getElementById('tile-grid-width').value) || 100;
+        const height = parseFloat(document.getElementById('tile-grid-height').value) || 100;
+        const grout = parseFloat(document.getElementById('tile-grid-grout').value) || 5;
+
+        const widthPx = width * scale;
+        const heightPx = height * scale;
+        const groutPx = grout * scale;
+
+        const totalWidth = widthPx + groutPx;
+        const totalHeight = heightPx + groutPx;
+
+        // 目地（背景）
+        ctx.fillStyle = '#888888';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // タイル
+        ctx.fillStyle = '#ffffff';
+        for (let x = 0; x < canvas.width; x += totalWidth) {
+            for (let y = 0; y < canvas.height; y += totalHeight) {
+                ctx.fillRect(x, y, widthPx, heightPx);
+            }
+        }
+
+        // タイル枠線
+        ctx.strokeStyle = '#333333';
+        ctx.lineWidth = 1;
+        for (let x = 0; x < canvas.width; x += totalWidth) {
+            for (let y = 0; y < canvas.height; y += totalHeight) {
+                ctx.strokeRect(x, y, widthPx, heightPx);
+            }
+        }
+    }
+
+    // タイル（馬目地）プレビュー
+    function drawTileBrickPreview(scale) {
+        const width = parseFloat(document.getElementById('tile-brick-width').value) || 200;
+        const height = parseFloat(document.getElementById('tile-brick-height').value) || 100;
+        const grout = parseFloat(document.getElementById('tile-brick-grout').value) || 5;
+
+        const widthPx = width * scale;
+        const heightPx = height * scale;
+        const groutPx = grout * scale;
+
+        const totalWidth = widthPx + groutPx;
+        const totalHeight = heightPx + groutPx;
+        const offset = totalWidth / 2; // 1/2ずらし
+
+        // 目地（背景）
+        ctx.fillStyle = '#888888';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // タイル
+        ctx.fillStyle = '#ffffff';
+        ctx.strokeStyle = '#333333';
+        ctx.lineWidth = 1;
+
+        let row = 0;
+        for (let y = 0; y < canvas.height; y += totalHeight) {
+            const xOffset = (row % 2) * offset;
+            for (let x = -offset; x < canvas.width + offset; x += totalWidth) {
+                ctx.fillRect(x + xOffset, y, widthPx, heightPx);
+                ctx.strokeRect(x + xOffset, y, widthPx, heightPx);
+            }
+            row++;
+        }
+    }
+
+    // RCコンクリートプレビュー
+    function drawRCConcretePreview(scale) {
+        const innerSpacing = parseFloat(document.getElementById('rc-inner-spacing').value) || 2;
+        const outerSpacing = parseFloat(document.getElementById('rc-outer-spacing').value) || 15;
+
+        const innerPx = innerSpacing * scale;
+        const outerPx = outerSpacing * scale;
+        const groupWidth = innerPx * 2; // 3本線のグループ幅
+        const totalSpacing = groupWidth + outerPx;
+
+        const angle = 45;
+        const rad = angle * Math.PI / 180;
+        const diagonal = Math.sqrt(canvas.width * canvas.width + canvas.height * canvas.height);
+
+        ctx.save();
+        ctx.translate(canvas.width / 2, canvas.height / 2);
+        ctx.rotate(rad);
+
+        const numGroups = Math.ceil(diagonal / totalSpacing) * 2;
+
+        for (let g = -numGroups; g <= numGroups; g++) {
+            const baseY = g * totalSpacing;
+
+            // 3本線を描画
+            for (let i = 0; i < 3; i++) {
+                const y = baseY + i * innerPx;
+                ctx.beginPath();
+                ctx.moveTo(-diagonal, y);
+                ctx.lineTo(diagonal, y);
+                ctx.stroke();
+            }
+        }
+
+        ctx.restore();
+    }
+
+    // プレビュー情報更新
+    function updatePreviewInfo() {
+        const type = patternTypeInput.value;
+        const format = outputFormatSelect.value;
+        const patternName = document.getElementById('pattern-name').value || 'CUSTOM_PATTERN';
+
+        let info = `パターン: ${patternName}`;
+        info += ` | 出力: ${format === 'revit' ? 'Revit' : 'AutoCAD'}`;
+
+        if (format === 'revit') {
+            const revitType = document.getElementById('revit-pattern-type').value;
+            info += ` (${revitType === 'model' ? 'モデル' : '製図'})`;
+        }
+
+        previewInfoText.textContent = info;
+    }
+
+    // パターンファイル生成
+    function generatePatternFile() {
+        const type = patternTypeInput.value;
+        const format = outputFormatSelect.value;
+        const patternName = document.getElementById('pattern-name').value || 'CUSTOM_PATTERN';
+        const isModel = format === 'revit' && document.getElementById('revit-pattern-type').value === 'model';
+
+        let patContent = '';
+
+        // Revitヘッダー
+        if (format === 'revit') {
+            patContent += `;; Revit Pattern File\n`;
+            patContent += `;; Generated by 28 Tools\n`;
+            patContent += `*${patternName}, ${isModel ? 'MODEL' : 'DRAFTING'}\n`;
+            patContent += `;%TYPE=${isModel ? 'MODEL' : 'DRAFTING'}\n`;
+        } else {
+            patContent += `;; AutoCAD Pattern File\n`;
+            patContent += `;; Generated by 28 Tools\n`;
+            patContent += `*${patternName}\n`;
+        }
+
+        // パターン定義
+        switch (type) {
+            case 'diagonal':
+                patContent += generateDiagonalPattern(format, isModel);
+                break;
+            case 'crosshatch':
+                patContent += generateCrosshatchPattern(format, isModel);
+                break;
+            case 'dot':
+                patContent += generateDotPattern(format, isModel);
+                break;
+            case 'tile-grid':
+                patContent += generateTileGridPattern(format, isModel);
+                break;
+            case 'tile-brick':
+                patContent += generateTileBrickPattern(format, isModel);
+                break;
+            case 'rc-concrete':
+                patContent += generateRCConcretePattern(format, isModel);
+                break;
+        }
+
+        return patContent;
+    }
+
+    // 斜線パターン生成
+    function generateDiagonalPattern(format, isModel) {
+        const angle = parseFloat(document.getElementById('diagonal-angle').value) || 45;
+        const spacing = parseFloat(document.getElementById('diagonal-spacing').value) || 10;
+        const dashType = document.getElementById('diagonal-dash-type').value;
+        const dashLength = parseFloat(document.getElementById('diagonal-dash-length').value) || 5;
+        const dashGap = parseFloat(document.getElementById('diagonal-dash-gap').value) || 3;
+
+        let lines = '';
+        const scale = isModel ? 1 : 25.4; // mm to inches for drafting
+
+        if (dashType === 'none') {
+            // 実線
+            lines += `${angle}, 0, 0, 0, ${spacing / scale}\n`;
+        } else if (dashType === 'all') {
+            // 全て破線
+            lines += `${angle}, 0, 0, 0, ${spacing / scale}, ${dashLength / scale}, -${dashGap / scale}\n`;
+        } else if (dashType === 'alternate') {
+            // 一本おき
+            lines += `${angle}, 0, 0, 0, ${(spacing * 2) / scale}\n`;
+            lines += `${angle}, 0, ${spacing / scale}, 0, ${(spacing * 2) / scale}, ${dashLength / scale}, -${dashGap / scale}\n`;
+        }
+
+        return lines;
+    }
+
+    // クロスハッチパターン生成
+    function generateCrosshatchPattern(format, isModel) {
+        const angle = parseFloat(document.getElementById('crosshatch-angle').value) || 45;
+        const spacing = parseFloat(document.getElementById('crosshatch-spacing').value) || 10;
+        const dashType = document.getElementById('crosshatch-dash-type').value;
+        const dashLength = parseFloat(document.getElementById('crosshatch-dash-length').value) || 5;
+        const dashGap = parseFloat(document.getElementById('crosshatch-dash-gap').value) || 3;
+
+        let lines = '';
+        const scale = isModel ? 1 : 25.4;
+
+        [angle, angle + 90].forEach(ang => {
+            if (dashType === 'none') {
+                lines += `${ang}, 0, 0, 0, ${spacing / scale}\n`;
+            } else if (dashType === 'all') {
+                lines += `${ang}, 0, 0, 0, ${spacing / scale}, ${dashLength / scale}, -${dashGap / scale}\n`;
+            } else if (dashType === 'alternate') {
+                lines += `${ang}, 0, 0, 0, ${(spacing * 2) / scale}\n`;
+                lines += `${ang}, 0, ${spacing / scale}, 0, ${(spacing * 2) / scale}, ${dashLength / scale}, -${dashGap / scale}\n`;
+            }
+        });
+
+        return lines;
+    }
+
+    // ドットパターン生成
+    function generateDotPattern(format, isModel) {
+        const spacingX = parseFloat(document.getElementById('dot-spacing-x').value) || 10;
+        const spacingY = parseFloat(document.getElementById('dot-spacing-y').value) || 10;
+        const dotSize = parseFloat(document.getElementById('dot-size').value) || 1;
+
+        const scale = isModel ? 1 : 25.4;
+
+        // ドットは短い線で表現
+        let lines = '';
+        lines += `0, 0, 0, ${spacingX / scale}, ${spacingY / scale}, ${dotSize / scale}, -${(spacingX - dotSize) / scale}\n`;
+
+        return lines;
+    }
+
+    // タイル（芋目地）パターン生成
+    function generateTileGridPattern(format, isModel) {
+        const width = parseFloat(document.getElementById('tile-grid-width').value) || 100;
+        const height = parseFloat(document.getElementById('tile-grid-height').value) || 100;
+        const grout = parseFloat(document.getElementById('tile-grid-grout').value) || 5;
+
+        const scale = isModel ? 1 : 25.4;
+        const totalW = (width + grout) / scale;
+        const totalH = (height + grout) / scale;
+        const w = width / scale;
+        const h = height / scale;
+
+        let lines = '';
+        // 水平線
+        lines += `0, 0, 0, 0, ${totalH}, ${w}, -${grout / scale}\n`;
+        // 垂直線
+        lines += `90, 0, 0, 0, ${totalW}, ${h}, -${grout / scale}\n`;
+
+        return lines;
+    }
+
+    // タイル（馬目地）パターン生成
+    function generateTileBrickPattern(format, isModel) {
+        const width = parseFloat(document.getElementById('tile-brick-width').value) || 200;
+        const height = parseFloat(document.getElementById('tile-brick-height').value) || 100;
+        const grout = parseFloat(document.getElementById('tile-brick-grout').value) || 5;
+
+        const scale = isModel ? 1 : 25.4;
+        const totalW = (width + grout) / scale;
+        const totalH = (height + grout) / scale;
+        const w = width / scale;
+        const h = height / scale;
+        const halfW = totalW / 2;
+
+        let lines = '';
+        // 水平線
+        lines += `0, 0, 0, 0, ${totalH}, ${w}, -${grout / scale}\n`;
+        // 垂直線（1行目）
+        lines += `90, 0, 0, ${halfW}, ${totalH * 2}, ${h}, -${grout / scale}\n`;
+        // 垂直線（2行目、半分ずれ）
+        lines += `90, ${halfW}, ${totalH}, ${halfW}, ${totalH * 2}, ${h}, -${grout / scale}\n`;
+
+        return lines;
+    }
+
+    // RCコンクリートパターン生成
+    function generateRCConcretePattern(format, isModel) {
+        const innerSpacing = parseFloat(document.getElementById('rc-inner-spacing').value) || 2;
+        const outerSpacing = parseFloat(document.getElementById('rc-outer-spacing').value) || 15;
+
+        const scale = isModel ? 1 : 25.4;
+        const inner = innerSpacing / scale;
+        const totalSpacing = (innerSpacing * 2 + outerSpacing) / scale;
+
+        let lines = '';
+        // 3本の斜線
+        lines += `45, 0, 0, 0, ${totalSpacing}\n`;
+        lines += `45, 0, ${inner}, 0, ${totalSpacing}\n`;
+        lines += `45, 0, ${inner * 2}, 0, ${totalSpacing}\n`;
+
+        return lines;
+    }
+
+    // ファイルダウンロード
+    function downloadPatternFile() {
+        const patternName = document.getElementById('pattern-name').value || 'CUSTOM_PATTERN';
+        const content = generatePatternFile();
+
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = patternName + '.pat';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+});

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塗潰しパターン作成 - 28 Tools</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hatch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- ヘッダー -->
+        <header class="site-header">
+            <h1 class="main-title">28 Tools</h1>
+            <div class="title-divider"></div>
+            <p class="subtitle">Revit 作図サポートツール</p>
+        </header>
+
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <a href="index.html">ホーム</a>
+            <span class="separator">›</span>
+            <span>塗潰しパターン作成</span>
+        </nav>
+
+        <!-- メインコンテンツ -->
+        <main class="hatch-main">
+            <h2 class="page-title">塗潰しパターン作成</h2>
+            <p class="page-description">Revit / AutoCAD用のハッチングパターンファイル（.pat）を作成できます。</p>
+
+            <div class="hatch-container">
+                <!-- 左側: 設定パネル -->
+                <div class="hatch-settings">
+                    <!-- パターン名 -->
+                    <div class="setting-group">
+                        <label class="setting-label">パターン名</label>
+                        <input type="text" id="pattern-name" class="setting-input" value="CUSTOM_PATTERN" placeholder="パターン名を入力">
+                    </div>
+
+                    <!-- パターン種類 -->
+                    <div class="setting-group">
+                        <label class="setting-label">パターン種類</label>
+                        <div class="pattern-type-grid" id="pattern-type-grid">
+                            <div class="pattern-type-item selected" data-type="diagonal">
+                                <canvas class="pattern-thumbnail" data-pattern="diagonal" width="60" height="60"></canvas>
+                                <span class="pattern-type-name">斜線</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="crosshatch">
+                                <canvas class="pattern-thumbnail" data-pattern="crosshatch" width="60" height="60"></canvas>
+                                <span class="pattern-type-name">クロス</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="dot">
+                                <canvas class="pattern-thumbnail" data-pattern="dot" width="60" height="60"></canvas>
+                                <span class="pattern-type-name">ドット</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="tile-grid">
+                                <canvas class="pattern-thumbnail" data-pattern="tile-grid" width="60" height="60"></canvas>
+                                <span class="pattern-type-name">芋目地</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="tile-brick">
+                                <canvas class="pattern-thumbnail" data-pattern="tile-brick" width="60" height="60"></canvas>
+                                <span class="pattern-type-name">馬目地</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="rc-concrete">
+                                <canvas class="pattern-thumbnail" data-pattern="rc-concrete" width="60" height="60"></canvas>
+                                <span class="pattern-type-name">RC</span>
+                            </div>
+                        </div>
+                        <input type="hidden" id="pattern-type" value="diagonal">
+                    </div>
+
+                    <!-- パターン別設定 -->
+                    <div id="pattern-settings">
+                        <!-- 斜線設定 -->
+                        <div id="settings-diagonal" class="pattern-specific-settings">
+                            <div class="setting-group">
+                                <label class="setting-label">角度 (°)</label>
+                                <input type="number" id="diagonal-angle" class="setting-input" value="45" min="0" max="360">
+                            </div>
+                            <div class="setting-group">
+                                <label class="setting-label">間隔 (mm)</label>
+                                <input type="number" id="diagonal-spacing" class="setting-input" value="10" min="1">
+                            </div>
+                            <div class="setting-group">
+                                <label class="setting-label">破線設定</label>
+                                <select id="diagonal-dash-type" class="setting-select">
+                                    <option value="none">実線</option>
+                                    <option value="alternate">一本おき</option>
+                                    <option value="all">全て破線</option>
+                                </select>
+                            </div>
+                            <div class="setting-group dash-settings" style="display: none;">
+                                <label class="setting-label">破線の長さ (mm)</label>
+                                <input type="number" id="diagonal-dash-length" class="setting-input" value="5" min="1">
+                            </div>
+                            <div class="setting-group dash-settings" style="display: none;">
+                                <label class="setting-label">破線の間隔 (mm)</label>
+                                <input type="number" id="diagonal-dash-gap" class="setting-input" value="3" min="1">
+                            </div>
+                        </div>
+
+                        <!-- クロスハッチ設定 -->
+                        <div id="settings-crosshatch" class="pattern-specific-settings" style="display: none;">
+                            <div class="setting-group">
+                                <label class="setting-label">角度 (°)</label>
+                                <input type="number" id="crosshatch-angle" class="setting-input" value="45" min="0" max="360">
+                            </div>
+                            <div class="setting-group">
+                                <label class="setting-label">間隔 (mm)</label>
+                                <input type="number" id="crosshatch-spacing" class="setting-input" value="10" min="1">
+                            </div>
+                            <div class="setting-group">
+                                <label class="setting-label">破線設定</label>
+                                <select id="crosshatch-dash-type" class="setting-select">
+                                    <option value="none">実線</option>
+                                    <option value="alternate">一本おき</option>
+                                    <option value="all">全て破線</option>
+                                </select>
+                            </div>
+                            <div class="setting-group crosshatch-dash-settings" style="display: none;">
+                                <label class="setting-label">破線の長さ (mm)</label>
+                                <input type="number" id="crosshatch-dash-length" class="setting-input" value="5" min="1">
+                            </div>
+                            <div class="setting-group crosshatch-dash-settings" style="display: none;">
+                                <label class="setting-label">破線の間隔 (mm)</label>
+                                <input type="number" id="crosshatch-dash-gap" class="setting-input" value="3" min="1">
+                            </div>
+                        </div>
+
+                        <!-- ドット設定 -->
+                        <div id="settings-dot" class="pattern-specific-settings" style="display: none;">
+                            <div class="setting-group">
+                                <label class="setting-label">X方向間隔 (mm)</label>
+                                <input type="number" id="dot-spacing-x" class="setting-input" value="10" min="1">
+                            </div>
+                            <div class="setting-group">
+                                <label class="setting-label">Y方向間隔 (mm)</label>
+                                <input type="number" id="dot-spacing-y" class="setting-input" value="10" min="1">
+                            </div>
+                            <div class="setting-group">
+                                <label class="setting-label">ドットサイズ (mm)</label>
+                                <input type="number" id="dot-size" class="setting-input" value="1" min="0.1" step="0.1">
+                            </div>
+                        </div>
+
+                        <!-- タイル（芋目地）設定 -->
+                        <div id="settings-tile-grid" class="pattern-specific-settings" style="display: none;">
+                            <div class="setting-group">
+                                <label class="setting-label">タイル幅 (mm)</label>
+                                <input type="number" id="tile-grid-width" class="setting-input" value="100" min="1">
+                            </div>
+                            <div class="setting-group">
+                                <label class="setting-label">タイル高さ (mm)</label>
+                                <input type="number" id="tile-grid-height" class="setting-input" value="100" min="1">
+                            </div>
+                            <div class="setting-group">
+                                <label class="setting-label">目地サイズ (mm)</label>
+                                <input type="number" id="tile-grid-grout" class="setting-input" value="5" min="0">
+                            </div>
+                        </div>
+
+                        <!-- タイル（馬目地）設定 -->
+                        <div id="settings-tile-brick" class="pattern-specific-settings" style="display: none;">
+                            <div class="setting-group">
+                                <label class="setting-label">タイル幅 (mm)</label>
+                                <input type="number" id="tile-brick-width" class="setting-input" value="200" min="1">
+                            </div>
+                            <div class="setting-group">
+                                <label class="setting-label">タイル高さ (mm)</label>
+                                <input type="number" id="tile-brick-height" class="setting-input" value="100" min="1">
+                            </div>
+                            <div class="setting-group">
+                                <label class="setting-label">目地サイズ (mm)</label>
+                                <input type="number" id="tile-brick-grout" class="setting-input" value="5" min="0">
+                            </div>
+                            <p class="setting-note">※ ずらし量は1/2固定</p>
+                        </div>
+
+                        <!-- RCコンクリート設定 -->
+                        <div id="settings-rc-concrete" class="pattern-specific-settings" style="display: none;">
+                            <div class="setting-group">
+                                <label class="setting-label">3本線内の間隔 (mm)</label>
+                                <input type="number" id="rc-inner-spacing" class="setting-input" value="2" min="0.5" step="0.5">
+                            </div>
+                            <div class="setting-group">
+                                <label class="setting-label">3本線グループ間の間隔 (mm)</label>
+                                <input type="number" id="rc-outer-spacing" class="setting-input" value="15" min="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 出力設定 -->
+                    <div class="setting-group output-settings">
+                        <label class="setting-label">出力形式</label>
+                        <select id="output-format" class="setting-select">
+                            <option value="revit">Revit</option>
+                            <option value="autocad">AutoCAD</option>
+                        </select>
+                    </div>
+
+                    <!-- Revit専用設定 -->
+                    <div id="revit-settings" class="setting-group">
+                        <label class="setting-label">パターンタイプ</label>
+                        <select id="revit-pattern-type" class="setting-select">
+                            <option value="model">モデル</option>
+                            <option value="drafting">製図</option>
+                        </select>
+                        <p class="setting-note">モデル: 実寸で表示 / 製図: 図面スケールに依存</p>
+                    </div>
+
+                    <!-- ダウンロードボタン -->
+                    <button id="download-btn" class="download-button">
+                        パターンファイルをダウンロード
+                    </button>
+                </div>
+
+                <!-- 右側: プレビューパネル -->
+                <div class="hatch-preview">
+                    <h3 class="preview-title">プレビュー</h3>
+                    <div class="preview-container">
+                        <canvas id="preview-canvas" width="200" height="200"></canvas>
+                    </div>
+                    <div class="preview-info">
+                        <span id="preview-info-text">パターンをプレビュー中...</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <div class="site-footer-links">
+                <a href="about.html">運営者情報</a>
+                <span class="footer-divider">|</span>
+                <a href="contact.html">お問い合わせ</a>
+                <span class="footer-divider">|</span>
+                <a href="privacy.html">プライバシーポリシー</a>
+                <span class="footer-divider">|</span>
+                <a href="terms.html">利用規約</a>
+            </div>
+            <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/hatch.js"></script>
+</body>
+</html>
