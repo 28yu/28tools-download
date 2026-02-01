@@ -188,12 +188,22 @@ PRが作成されると、Netlifyが自動でプレビュー環境を構築し�
 
 ```
 /
-├── index.html          # メインページ
+├── index.html          # トップページ（ポータル）
+├── addins.html         # アドインダウンロードページ
 ├── js/main.js          # JavaScriptロジック（多言語対応含む）
 ├── css/                # スタイルシート
 │   ├── style.css
 │   ├── manual.css
 │   └── contact.css
+├── images/
+│   ├── portal/         # ポータルページ用アイコン
+│   │   ├── icon-addon.svg
+│   │   ├── icon-family.svg
+│   │   ├── icon-hatch.svg
+│   │   └── icon-knowledge.svg
+│   └── revit-ribbon-preview.png
+├── includes/
+│   └── header.html     # 共通ヘッダー
 ├── sitemap.xml         # SEO用サイトマップ
 ├── CNAME               # カスタムドメイン設定（28tools.com）
 ├── CLAUDE.md           # このファイル（開発ガイド）
@@ -204,13 +214,33 @@ PRが作成されると、Netlifyが自動でプレビュー環境を構築し�
 ├── .github/workflows/  # GitHub Actions
 │   └── auto-merge.yml  # PR自動作成ワークフロー
 └── manual/             # マニュアルページディレクトリ
-    ├── manual1.html
-    ├── manual2.html
-    ├── manual3.html
-    ├── manual4.html
-    ├── manual5.html
-    └── manual6.html
+    ├── grid-bubble.html
+    ├── sheet-creation.html
+    ├── view-copy.html
+    ├── sectionbox-copy.html
+    ├── viewport-position.html
+    └── cropbox-copy.html
 ```
+
+## 現在のサイト構成（2026/02更新）
+
+### ページ構成
+- **トップページ（index.html）**: ポータル型レイアウト（サイドバー + メインコンテンツ）
+- **アドインページ（addins.html）**: Revitアドインのダウンロード・マニュアル
+- **サブタイトル**: 全ページ「Revit 作図サポートツール」で統一
+
+### カテゴリ（トップページ）
+| カテゴリ | 状態 | 説明 |
+|---------|------|------|
+| アドイン | 利用可能 | 6機能のRevitアドイン |
+| ファミリ | 準備中 | Revitファミリライブラリ |
+| 塗潰し | 準備中 | ハッチング自動作成機能 |
+| ナレッジ | 準備中 | Tips・チュートリアル |
+
+### デザイン仕様
+- サイドバー幅: 100px
+- サブタイトル: font-size 1.1rem, opacity 0.8
+- カテゴリアイコン: SVG形式（images/portal/）
 
 ## 過去のセッション情報
 
