@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>28 Tools - Revit アドイン配布センター</title>
+    <title>28 Tools - Revit作図サポートセンター</title>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
@@ -22,389 +22,255 @@
 </head>
 <body>
     <div class="container">
-        <!-- 共通ヘッダー -->
-        <div id="header-container"></div>
-
-        <!-- Revitリボンプレビュー -->
-        <section class="ribbon-preview">
-            <div class="ribbon-image-container">
-                <img src="images/revit-ribbon-preview.png" alt="28 Tools Revit Ribbon" class="ribbon-image">
-            </div>
-        </section>
-
-        <!-- 機能一覧 -->
-        <section class="features-section">
-            <div class="features-container">
-                <h2 class="section-title" data-lang-key="section-features">機能一覧</h2>
-                <div class="features-grid">
-                    <!-- 符号ON/OFF -->
-                    <a href="manual/grid-bubble.html" class="feature-card">
-                        <div class="feature-icon">
-                            <img src="images/icons/both_64.png" alt="Grid Bubble Icon">
-                        </div>
-                        <h3 class="feature-title" data-lang-key="feature-grid-title">符号ON/OFF</h3>
-                        <p class="feature-description" data-lang-key="feature-grid-desc">通り芯・レベルの符号表示を一括切替</p>
-                    </a>
-
-                    <!-- シート一括作成 -->
-                    <a href="manual/sheet-creation.html" class="feature-card">
-                        <div class="feature-icon">
-                            <img src="images/icons/sheet_creation_64.png" alt="Sheet Creation Icon">
-                        </div>
-                        <h3 class="feature-title" data-lang-key="feature-sheet-title">シート一括作成</h3>
-                        <p class="feature-description" data-lang-key="feature-sheet-desc">図枠を指定して複数シートをまとめて作成</p>
-                    </a>
-
-                    <!-- 3D視点コピペ -->
-                    <a href="manual/view-copy.html" class="feature-card">
-                        <div class="feature-icon">
-                            <img src="images/icons/view_copy_64.png" alt="3D View Copy Icon">
-                        </div>
-                        <h3 class="feature-title" data-lang-key="feature-view-title">3D視点コピペ</h3>
-                        <p class="feature-description" data-lang-key="feature-view-desc">3Dビューの視点を他のビューにコピー&ペースト</p>
-                    </a>
-
-                    <!-- 切断ボックスコピペ -->
-                    <a href="manual/sectionbox-copy.html" class="feature-card">
-                        <div class="feature-icon">
-                            <img src="images/icons/sectionbox_copy_64.png" alt="Section Box Icon">
-                        </div>
-                        <h3 class="feature-title" data-lang-key="feature-section-title">切断ボックスコピペ</h3>
-                        <p class="feature-description" data-lang-key="feature-section-desc">3Dビューの切断ボックス範囲をコピー&ペースト</p>
-                    </a>
-
-                    <!-- ビューポート位置コピペ -->
-                    <a href="manual/viewport-position.html" class="feature-card">
-                        <div class="feature-icon">
-                            <img src="images/icons/viewport_copy_64.png" alt="Viewport Position Icon">
-                        </div>
-                        <h3 class="feature-title" data-lang-key="feature-viewport-title">ビューポート位置コピペ</h3>
-                        <p class="feature-description" data-lang-key="feature-viewport-desc">シート上のビューポート位置をコピー&ペースト</p>
-                    </a>
-
-                    <!-- トリミング領域コピペ -->
-                    <a href="manual/cropbox-copy.html" class="feature-card">
-                        <div class="feature-icon">
-                            <img src="images/icons/cropbox_copy_64.png" alt="Crop Box Icon">
-                        </div>
-                        <h3 class="feature-title" data-lang-key="feature-crop-title">トリミング領域コピペ</h3>
-                        <p class="feature-description" data-lang-key="feature-crop-desc">ビューのトリミング領域をコピー&ペースト</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- バージョン選択 -->
-        <section class="version-selector">
-            <h2 class="section-title" data-lang-key="version-title">Revitバージョンを選択</h2>
-            <div class="version-tabs">
-                <!-- Revit 2021（完成済み・ダウンロード可能） -->
-                <div class="version-tab completed" data-version="revit2021">
-                    <div class="tab-header">
-                        <span class="status-icon">✓</span>
-                        <span class="version-name" data-lang-key="version-2021">Revit 2021</span>
-                    </div>
-                    <div class="tab-status" data-lang-key="version-status-available">利用可能</div>
-                </div>
-
-                <!-- Revit 2022（開発中） -->
-                <div class="version-tab development" data-version="revit2022">
-                    <div class="tab-header">
-                        <span class="status-icon">🚧</span>
-                        <span class="version-name" data-lang-key="version-2022">Revit 2022</span>
-                    </div>
-                    <div class="tab-status" data-lang-key="version-status-development">開発中</div>
-                </div>
-
-                <!-- Revit 2023（開発中） -->
-                <div class="version-tab development" data-version="revit2023">
-                    <div class="tab-header">
-                        <span class="status-icon">🚧</span>
-                        <span class="version-name" data-lang-key="version-2023">Revit 2023</span>
-                    </div>
-                    <div class="tab-status" data-lang-key="version-status-development">開発中</div>
-                </div>
-
-                <!-- Revit 2024（完成済み・ダウンロード可能） -->
-                <div class="version-tab completed" data-version="revit2024">
-                    <div class="tab-header">
-                        <span class="status-icon">✓</span>
-                        <span class="version-name" data-lang-key="version-2024">Revit 2024</span>
-                    </div>
-                    <div class="tab-status" data-lang-key="version-status-available">利用可能</div>
-                </div>
-
-                <!-- Revit 2025（開発中） -->
-                <div class="version-tab development" data-version="revit2025">
-                    <div class="tab-header">
-                        <span class="status-icon">🚧</span>
-                        <span class="version-name" data-lang-key="version-2025">Revit 2025</span>
-                    </div>
-                    <div class="tab-status" data-lang-key="version-status-development">開発中</div>
-                </div>
-
-                <!-- Revit 2026（計画中） -->
-                <div class="version-tab planned" data-version="revit2026">
-                    <div class="tab-header">
-                        <span class="status-icon">⏳</span>
-                        <span class="version-name" data-lang-key="version-2026">Revit 2026</span>
-                    </div>
-                    <div class="tab-status" data-lang-key="version-status-planned">計画中</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- フッターセクション -->
-        <section class="footer-section">
-            <h2 class="footer-title" data-lang-key="footer-title">サポート</h2>
-            
-            <div class="footer-links">
-                <!-- インストール手順ボタン -->
-                <button class="footer-link-btn" id="install-btn" data-modal="install-modal">
-                    <span class="footer-icon">📖</span>
-                    <span class="footer-text" data-lang-key="footer-install">インストール手順</span>
-                </button>
-                
-                <!-- アンインストールボタン -->
-                <button class="footer-link-btn" id="uninstall-btn" data-modal="uninstall-modal">
-                    <span class="footer-icon">🗑️</span>
-                    <span class="footer-text" data-lang-key="footer-uninstall">アンインストール</span>
-                </button>
-                
-                <!-- サポート情報ボタン -->
-                <button class="footer-link-btn" id="support-btn" data-modal="support-modal">
-                    <span class="footer-icon">❓</span>
-                    <span class="footer-text" data-lang-key="footer-support">サポート情報</span>
-                </button>
-            </div>
-        </section>
-    </div>
-
-    <!-- モーダルコンテナ -->
-    <div id="modal-container">
-        <!-- インストール手順モーダル -->
-        <div id="install-modal" class="modal" data-modal-type="install">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 data-lang-key="modal-install-title">インストール手順</h2>
-                    <button class="modal-close" onclick="closeModal('install-modal')">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <!-- Step 1 -->
-                    <div class="install-step">
-                        <div class="step-header">
-                            <span class="step-number">Step 1</span>
-                            <h3 data-lang-key="install-step1-title">ダウンロード</h3>
-                        </div>
-                        <div class="step-content">
-                            <div class="step-box">
-                                <p><strong data-lang-key="install-step1-button">ボタン:</strong></p>
-                                <p style="margin-left: 20px;">📥 <span data-lang-key="install-step1-download">対応するバージョンをダウンロード</span></p>
-                                <p style="margin-top: 10px;"><strong data-lang-key="install-step1-save">保存先:</strong></p>
-                                <p style="margin-left: 20px;">Downloads <span data-lang-key="install-step1-auto">フォルダ（自動）</span></p>
-                                <p style="margin-top: 10px;"><strong data-lang-key="install-step1-file">ファイル:</strong></p>
-                                <p style="margin-left: 20px; font-family: 'Courier New', monospace;">
-                                    28Tools_Revit20**_v1.0.zip
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="install-step">
-                        <div class="step-header">
-                            <span class="step-number">Step 2</span>
-                            <h3 data-lang-key="install-step2-title">解凍</h3>
-                        </div>
-                        <div class="step-content">
-                            <div class="step-box">
-                                <p data-lang-key="install-step2-action">ZIP ファイルをダブルクリック</p>
-                                <p style="margin-top: 10px; text-align: center;">または</p>
-                                <p style="margin-top: 10px;" data-lang-key="install-step2-action2">右クリック → 「すべて展開」</p>
-                                <p style="margin-top: 15px;"><strong data-lang-key="install-step2-folder">自動的にフォルダが生成:</strong></p>
-                                <div class="folder-structure">
-                                    <code>28Tools_Revit20**_v1.0\
-├── 28Tools\
-│   ├── Tools28.dll
-│   └── Tools28.addin
-├── install.bat
-├── uninstall.bat
-├── verify.bat
-└── README.txt</code>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="install-step">
-                        <div class="step-header">
-                            <span class="step-number">Step 3</span>
-                            <h3 data-lang-key="install-step3-title">インストール</h3>
-                        </div>
-                        <div class="step-content">
-                            <div class="step-box">
-                                <p data-lang-key="install-step3-action">install.bat を右クリック</p>
-                                <p style="margin-top: 10px;" data-lang-key="install-step3-admin">「管理者として実行」を選択</p>
-                                <p style="margin-top: 15px;" data-lang-key="install-step3-follow">画面に従ってインストール完了</p>
-                                <p style="margin-top: 15px;"><strong data-lang-key="install-step3-location">ファイルが以下に配置される:</strong></p>
-                                <div class="file-location">
-                                    <code>C:\ProgramData\Autodesk\
-  Revit\Addins\20**\
-  ├── Tools28.dll       (✅ <span data-lang-key="install-step3-required">必須</span>)
-  └── Tools28.addin    (✅ <span data-lang-key="install-step3-required">必須</span>)</code>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Step 4 -->
-                    <div class="install-step">
-                        <div class="step-header">
-                            <span class="step-number">Step 4</span>
-                            <h3 data-lang-key="install-step4-title">動作確認</h3>
-                        </div>
-                        <div class="step-content">
-                            <div class="step-box">
-                                <p data-lang-key="install-step4-launch">Revit を起動</p>
-                                <p style="margin-top: 10px;" data-lang-key="install-step4-ribbon">リボンに「28 Tools」タブが表示</p>
-                                <p style="margin-top: 10px;" data-lang-key="install-step4-available">全6機能が利用可能</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Step 5 -->
-                    <div class="install-step">
-                        <div class="step-header">
-                            <span class="step-number">Step 5</span>
-                            <h3 data-lang-key="install-step5-title">ダウンロードファイルの削除 ✅</h3>
-                        </div>
-                        <div class="step-content">
-                            <div class="step-box warning-box">
-                                <p><strong data-lang-key="install-step5-zip">❌ ZIP ファイルを削除:</strong></p>
-                                <p style="margin-left: 20px; font-family: 'Courier New', monospace;">28Tools_Revit20**_v1.0.zip</p>
-                                
-                                <p style="margin-top: 15px;"><strong data-lang-key="install-step5-folder">❌ 解凍フォルダを削除:</strong></p>
-                                <p style="margin-left: 20px; font-family: 'Courier New', monospace;">28Tools_Revit20**_v1.0\</p>
-                                
-                                <p style="margin-top: 15px;"><strong data-lang-key="install-step5-reason">理由:</strong></p>
-                                <ul style="margin-left: 20px; margin-top: 5px;">
-                                    <li data-lang-key="install-step5-reason1">実際に動作するファイルは Addins フォルダに配置済み</li>
-                                    <li data-lang-key="install-step5-reason2">これらはインストール用の一時的なファイル</li>
-                                    <li data-lang-key="install-step5-reason3">ディスク容量の節約</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="modal-btn-close" onclick="closeModal('install-modal')" data-lang-key="modal-close">閉じる</button>
-                </div>
+        <!-- 言語切り替えボタン -->
+        <div class="lang-selector">
+            <button id="lang-btn" class="lang-selector-button">
+                <span class="lang-text">JP</span>
+                <span class="flag-emoji">🇯🇵</span>
+                <span class="arrow">▼</span>
+            </button>
+            <div id="lang-dropdown" class="lang-dropdown">
+                <a href="#" class="lang-option" data-lang="ja">
+                    <span class="lang-text">JP</span>
+                    <span class="flag-emoji">🇯🇵</span>
+                </a>
+                <a href="#" class="lang-option" data-lang="en">
+                    <span class="lang-text">US</span>
+                    <span class="flag-emoji">🇺🇸</span>
+                </a>
+                <a href="#" class="lang-option" data-lang="zh">
+                    <span class="lang-text">CN</span>
+                    <span class="flag-emoji">🇨🇳</span>
+                </a>
             </div>
         </div>
 
-        <!-- アンインストールモーダル -->
-        <div id="uninstall-modal" class="modal" data-modal-type="uninstall">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 data-lang-key="modal-uninstall-title">アンインストール</h2>
-                    <button class="modal-close" onclick="closeModal('uninstall-modal')">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="step-box">
-                        <h3 data-lang-key="uninstall-step1">方法 1: 自動アンインストール（推奨）</h3>
-                        <p style="margin-top: 10px;" data-lang-key="uninstall-step1-desc">ダウンロード時に含まれていた uninstall.bat を実行します。</p>
-                        <ol style="margin-left: 20px; margin-top: 10px;">
-                            <li data-lang-key="uninstall-step1-1">uninstall.bat を右クリック</li>
-                            <li data-lang-key="uninstall-step1-2">「管理者として実行」を選択</li>
-                            <li data-lang-key="uninstall-step1-3">画面に従ってアンインストール完了</li>
-                        </ol>
-                    </div>
+        <!-- ヒーローセクション -->
+        <section class="portal-hero">
+            <h1 class="main-title">28 Tools</h1>
+            <div class="title-divider"></div>
+            <p class="subtitle">Revit 作図サポートツール</p>
+        </section>
 
-                    <div class="step-box" style="margin-top: 20px;">
-                        <h3 data-lang-key="uninstall-step2">方法 2: 手動削除</h3>
-                        <p style="margin-top: 10px;" data-lang-key="uninstall-step2-desc">以下のフォルダから手動で削除します。</p>
-                        <p style="margin-top: 10px; margin-left: 20px; font-family: 'Courier New', monospace;">
-                            C:\ProgramData\Autodesk\Revit\Addins\20**\
-                        </p>
-                        <p style="margin-top: 10px;" data-lang-key="uninstall-step2-delete">以下のファイルを削除:</p>
-                        <ul style="margin-left: 20px; margin-top: 5px; font-family: 'Courier New', monospace;">
-                            <li>Tools28.dll</li>
-                            <li>Tools28.addin</li>
-                        </ul>
+        <!-- サイドバー + メインコンテンツ (D案) -->
+        <section class="sidebar-layout">
+            <!-- サイドバーナビゲーション -->
+            <nav class="sidebar-nav">
+                <div class="sidebar-item addins active" data-target="content-addins">
+                    <div class="sidebar-icon">
+                        <img src="images/portal/icon-addon.svg" alt="アドイン">
                     </div>
-
-                    <div class="step-box warning-box" style="margin-top: 20px;">
-                        <p data-lang-key="uninstall-note">※ Revit を再起動すると変更が反映されます</p>
-                    </div>
+                    <span class="sidebar-label">アドイン</span>
                 </div>
-                <div class="modal-footer">
-                    <button class="modal-btn-close" onclick="closeModal('uninstall-modal')" data-lang-key="modal-close">閉じる</button>
+                <div class="sidebar-item family" data-target="content-family">
+                    <div class="sidebar-icon">
+                        <img src="images/portal/icon-family.svg" alt="ファミリ">
+                    </div>
+                    <span class="sidebar-label">ファミリ</span>
+                </div>
+                <div class="sidebar-item hatch" data-target="content-hatch">
+                    <div class="sidebar-icon">
+                        <img src="images/portal/icon-hatch.svg" alt="塗潰し領域">
+                    </div>
+                    <span class="sidebar-label">塗潰し</span>
+                </div>
+                <div class="sidebar-item knowledge" data-target="content-knowledge">
+                    <div class="sidebar-icon">
+                        <img src="images/portal/icon-knowledge.svg" alt="ナレッジ">
+                    </div>
+                    <span class="sidebar-label">ナレッジ</span>
+                </div>
+            </nav>
+
+            <!-- メインコンテンツエリア -->
+            <div class="main-content-wrapper">
+                <!-- アドイン -->
+                <div id="content-addins" class="main-content-area active">
+                    <div class="content-header">
+                        <div class="content-icon">
+                            <img src="images/portal/icon-addon.svg" alt="アドイン">
+                        </div>
+                        <h2 class="content-title">アドイン</h2>
+                    </div>
+                    <span class="content-badge available">6機能 利用可能</span>
+                    <p class="content-description">
+                        Revit作業を効率化する無料アドインツール。<br>
+                        符号の一括切替、シートの一括作成、ビュー設定のコピー&ペーストなど、日常業務の手間を大幅に削減します。
+                    </p>
+                    <ul class="content-features">
+                        <li>符号ON/OFF - 通り芯・レベルの符号表示を一括切替</li>
+                        <li>シート一括作成 - 図枠を指定して複数シートをまとめて作成</li>
+                        <li>3D視点コピペ - 3Dビューの視点を他のビューにコピー</li>
+                        <li>切断ボックスコピペ - 3Dビューの切断ボックス範囲をコピー</li>
+                        <li>ビューポート位置コピペ - シート上のビューポート位置をコピー</li>
+                        <li>トリミング領域コピペ - ビューのトリミング領域をコピー</li>
+                    </ul>
+                    <a href="addins.html" class="content-action">詳細・ダウンロード →</a>
+                </div>
+
+                <!-- ファミリ -->
+                <div id="content-family" class="main-content-area">
+                    <div class="content-header">
+                        <div class="content-icon">
+                            <img src="images/portal/icon-family.svg" alt="ファミリ">
+                        </div>
+                        <h2 class="content-title">ファミリ</h2>
+                    </div>
+                    <span class="content-badge coming-soon">準備中</span>
+                    <p class="content-description">
+                        施工図・設計図向けのRevitファミリライブラリ。<br>
+                        建具、設備機器、家具など、実務で使えるファミリを無料で配布予定です。
+                    </p>
+                    <ul class="content-features">
+                        <li>建具ファミリ（ドア、窓、シャッター等）</li>
+                        <li>設備機器ファミリ（衛生器具、空調機器等）</li>
+                        <li>家具・什器ファミリ</li>
+                        <li>2D詳細コンポーネント</li>
+                    </ul>
+                    <span class="content-action disabled">近日公開</span>
+                </div>
+
+                <!-- 塗潰し領域自動作成 -->
+                <div id="content-hatch" class="main-content-area">
+                    <div class="content-header">
+                        <div class="content-icon">
+                            <img src="images/portal/icon-hatch.svg" alt="塗潰し領域">
+                        </div>
+                        <h2 class="content-title">塗潰し領域（ハッチング）自動作成</h2>
+                    </div>
+                    <span class="content-badge new">新機能 開発中</span>
+                    <p class="content-description">
+                        部屋や壁の塗潰し領域（ハッチング）を自動作成するアドイン。<br>
+                        施工図作成時の仕上げ表示を効率化し、手作業での塗潰し作成を不要にします。
+                    </p>
+                    <ul class="content-features">
+                        <li>部屋境界に基づく自動ハッチング生成</li>
+                        <li>壁・床・天井の仕上げパターン自動適用</li>
+                        <li>カスタムハッチングパターンの設定</li>
+                        <li>一括更新・変更機能</li>
+                    </ul>
+                    <span class="content-action disabled">開発中</span>
+                </div>
+
+                <!-- ナレッジ -->
+                <div id="content-knowledge" class="main-content-area">
+                    <div class="content-header">
+                        <div class="content-icon">
+                            <img src="images/portal/icon-knowledge.svg" alt="ナレッジ">
+                        </div>
+                        <h2 class="content-title">ナレッジ</h2>
+                    </div>
+                    <span class="content-badge coming-soon">準備中</span>
+                    <p class="content-description">
+                        Revit作図のTips、チュートリアル、Dynamoスクリプトなど。<br>
+                        実務経験に基づくノウハウを共有し、Revit活用のスキルアップをサポートします。
+                    </p>
+                    <ul class="content-features">
+                        <li>施工図作成Tips集</li>
+                        <li>操作チュートリアル動画</li>
+                        <li>Dynamoスクリプト配布</li>
+                        <li>トラブルシューティング</li>
+                    </ul>
+                    <span class="content-action disabled">近日公開</span>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- サポート情報モーダル -->
-        <div id="support-modal" class="modal" data-modal-type="support">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 data-lang-key="modal-support-title">サポート情報</h2>
-                    <button class="modal-close" onclick="closeModal('support-modal')">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="step-box">
-                        <h3 data-lang-key="support-faq">よくある質問</h3>
-                        <div style="margin-top: 15px;">
-                            <p><strong data-lang-key="support-q1">Q: インストールがうまくいきません</strong></p>
-                            <p style="margin-left: 20px; margin-top: 5px;" data-lang-key="support-a1">A: 以下をご確認ください:<br>
-                            • install.bat を「管理者として実行」していますか？<br>
-                            • Revit が起動していないか確認してください<br>
-                            • ウイルス対策ソフトがブロックしていないか確認してください
-                            </p>
-                        </div>
-                        <div style="margin-top: 15px;">
-                            <p><strong data-lang-key="support-q2">Q: リボンに「28 Tools」が表示されません</strong></p>
-                            <p style="margin-left: 20px; margin-top: 5px;" data-lang-key="support-a2">A: Revit を再起動してください。それでも表示されない場合は:<br>
-                            • verify.bat を実行して診断してください<br>
-                            • インストール手順を再度実施してください
-                            </p>
-                        </div>
-                        <div style="margin-top: 15px;">
-                            <p><strong data-lang-key="support-q3">Q: 複数のRevitバージョンを使用しています</strong></p>
-                            <p style="margin-left: 20px; margin-top: 5px;" data-lang-key="support-a3">A: 各バージョンに対応したパッケージをそれぞれインストールしてください。<br>
-                            例: Revit 2021 版と Revit 2024 版を同時にインストール可能です
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="step-box" style="margin-top: 20px;">
-                        <h3 data-lang-key="support-contact">ご不明な点</h3>
-                        <p style="margin-top: 10px;" data-lang-key="support-contact-form"><a href="contact.html">お問い合わせフォーム</a>よりご連絡ください。</p>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="modal-btn-close" onclick="closeModal('support-modal')" data-lang-key="modal-close">閉じる</button>
-                </div>
+        <!-- 新着・おすすめセクション -->
+        <section class="news-section">
+            <div class="news-header">
+                <span class="news-icon">🔥</span>
+                <h2 class="news-title">新着・おすすめ</h2>
             </div>
-        </div>
+            <ul class="news-list">
+                <li class="news-item">
+                    <span class="news-date">2026/02</span>
+                    <span class="news-tag addon">Addon</span>
+                    <div class="news-content">
+                        <a href="addins.html">28 Tools v1.0 - Revit 2021/2024 対応版リリース</a>
+                    </div>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">近日公開</span>
+                    <span class="news-tag family">Family</span>
+                    <div class="news-content">
+                        <a href="#">建具ファミリ 50種 追加予定</a>
+                    </div>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">近日公開</span>
+                    <span class="news-tag tips">Tips</span>
+                    <div class="news-content">
+                        <a href="#">施工図作成Tips「断面図を効率的に作る方法」</a>
+                    </div>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">近日公開</span>
+                    <span class="news-tag template">Template</span>
+                    <div class="news-content">
+                        <a href="#">施工図用プロジェクトテンプレート v1.0</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- コミュニティセクション -->
+        <section class="community-section">
+            <div class="community-header">
+                <span class="community-icon">💬</span>
+                <h2 class="community-title">コミュニティ</h2>
+            </div>
+            <div class="community-links">
+                <a href="contact.html" class="community-link">
+                    <span class="community-link-icon">❓</span>
+                    <span class="community-link-text">質問する</span>
+                </a>
+                <a href="#" class="community-link">
+                    <span class="community-link-icon">💡</span>
+                    <span class="community-link-text">機能をリクエスト</span>
+                </a>
+                <a href="#" class="community-link">
+                    <span class="community-link-icon">📢</span>
+                    <span class="community-link-text">お知らせを見る</span>
+                </a>
+            </div>
+        </section>
+
     </div>
 
     <!-- サイトフッター -->
     <footer class="site-footer">
         <div class="site-footer-content">
             <div class="site-footer-links">
-                <a href="about.html" data-lang-key="footer-about">運営者情報</a>
+                <a href="about.html">運営者情報</a>
                 <span class="footer-divider">|</span>
-                <a href="contact.html" data-lang-key="footer-contact">お問い合わせ</a>
+                <a href="contact.html">お問い合わせ</a>
                 <span class="footer-divider">|</span>
-                <a href="privacy.html" data-lang-key="footer-privacy">プライバシーポリシー</a>
+                <a href="privacy.html">プライバシーポリシー</a>
                 <span class="footer-divider">|</span>
-                <a href="terms.html" data-lang-key="footer-terms">利用規約</a>
+                <a href="terms.html">利用規約</a>
             </div>
-            <p class="site-footer-copyright" data-lang-key="footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+            <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // サイドバーナビゲーション
+        document.querySelectorAll('.sidebar-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // 全てのサイドバーアイテムからactiveを削除
+                document.querySelectorAll('.sidebar-item').forEach(i => i.classList.remove('active'));
+                // クリックしたアイテムにactiveを追加
+                this.classList.add('active');
+
+                // 全てのコンテンツエリアを非表示
+                document.querySelectorAll('.main-content-area').forEach(content => content.classList.remove('active'));
+                // 対応するコンテンツを表示
+                const targetId = this.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
