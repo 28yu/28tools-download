@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28 Tools - Revit作図サポートセンター</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 言語切り替えボタン -->
+        <div class="lang-selector">
+            <button id="lang-btn" class="lang-selector-button">
+                <span class="lang-text">JP</span>
+                <span class="flag-emoji">🇯🇵</span>
+                <span class="arrow">▼</span>
+            </button>
+            <div id="lang-dropdown" class="lang-dropdown">
+                <a href="#" class="lang-option" data-lang="ja">
+                    <span class="lang-text">JP</span>
+                    <span class="flag-emoji">🇯🇵</span>
+                </a>
+                <a href="#" class="lang-option" data-lang="en">
+                    <span class="lang-text">US</span>
+                    <span class="flag-emoji">🇺🇸</span>
+                </a>
+                <a href="#" class="lang-option" data-lang="zh">
+                    <span class="lang-text">CN</span>
+                    <span class="flag-emoji">🇨🇳</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- ヒーローセクション -->
+        <section class="portal-hero">
+            <h1 class="main-title">28 Tools</h1>
+            <div class="title-divider"></div>
+            <p class="subtitle">Revit 作図サポートセンター</p>
+            <p class="subtitle-tagline">施工図・設計図のRevit作成を効率化</p>
+        </section>
+
+        <!-- カテゴリセクション -->
+        <section class="category-section">
+            <div class="category-grid">
+                <!-- アドイン -->
+                <a href="index.html" class="category-card addins">
+                    <span class="category-icon">📦</span>
+                    <h3 class="category-title">アドイン</h3>
+                    <p class="category-description">Revit作業を効率化する<br>無料アドインツール</p>
+                    <span class="category-badge">6機能 利用可能</span>
+                </a>
+
+                <!-- ファミリ -->
+                <a href="#" class="category-card family">
+                    <span class="category-icon">🏠</span>
+                    <h3 class="category-title">ファミリ</h3>
+                    <p class="category-description">施工図・設計図向け<br>Revitファミリライブラリ</p>
+                    <span class="category-badge coming-soon">準備中</span>
+                </a>
+
+                <!-- テンプレート -->
+                <a href="#" class="category-card templates">
+                    <span class="category-icon">📄</span>
+                    <h3 class="category-title">テンプレート</h3>
+                    <p class="category-description">プロジェクト・ビュー<br>図枠テンプレート</p>
+                    <span class="category-badge coming-soon">準備中</span>
+                </a>
+
+                <!-- ナレッジ -->
+                <a href="#" class="category-card knowledge">
+                    <span class="category-icon">📚</span>
+                    <h3 class="category-title">ナレッジ</h3>
+                    <p class="category-description">Tips・チュートリアル<br>Dynamoスクリプト</p>
+                    <span class="category-badge coming-soon">準備中</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 新着・おすすめセクション -->
+        <section class="news-section">
+            <div class="news-header">
+                <span class="news-icon">🔥</span>
+                <h2 class="news-title">新着・おすすめ</h2>
+            </div>
+            <ul class="news-list">
+                <li class="news-item">
+                    <span class="news-date">2026/02</span>
+                    <span class="news-tag addon">Addon</span>
+                    <div class="news-content">
+                        <a href="index.html">28 Tools v1.0 - Revit 2021/2024 対応版リリース</a>
+                    </div>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">近日公開</span>
+                    <span class="news-tag family">Family</span>
+                    <div class="news-content">
+                        <a href="#">建具ファミリ 50種 追加予定</a>
+                    </div>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">近日公開</span>
+                    <span class="news-tag tips">Tips</span>
+                    <div class="news-content">
+                        <a href="#">施工図作成Tips「断面図を効率的に作る方法」</a>
+                    </div>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">近日公開</span>
+                    <span class="news-tag template">Template</span>
+                    <div class="news-content">
+                        <a href="#">施工図用プロジェクトテンプレート v1.0</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- コミュニティセクション -->
+        <section class="community-section">
+            <div class="community-header">
+                <span class="community-icon">💬</span>
+                <h2 class="community-title">コミュニティ</h2>
+            </div>
+            <div class="community-links">
+                <a href="contact.html" class="community-link">
+                    <span class="community-link-icon">❓</span>
+                    <span class="community-link-text">質問する</span>
+                </a>
+                <a href="#" class="community-link">
+                    <span class="community-link-icon">💡</span>
+                    <span class="community-link-text">機能をリクエスト</span>
+                </a>
+                <a href="#" class="community-link">
+                    <span class="community-link-icon">📢</span>
+                    <span class="community-link-text">お知らせを見る</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- クイックアクセス（現行アドイン機能へ） -->
+        <section class="features-section">
+            <div class="features-container">
+                <h2 class="section-title">アドイン機能 クイックアクセス</h2>
+                <div class="features-grid">
+                    <!-- 符号ON/OFF -->
+                    <a href="manual/grid-bubble.html" class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/icons/both_64.png" alt="Grid Bubble Icon">
+                        </div>
+                        <h3 class="feature-title">符号ON/OFF</h3>
+                        <p class="feature-description">通り芯・レベルの符号表示を一括切替</p>
+                    </a>
+
+                    <!-- シート一括作成 -->
+                    <a href="manual/sheet-creation.html" class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/icons/sheet_creation_64.png" alt="Sheet Creation Icon">
+                        </div>
+                        <h3 class="feature-title">シート一括作成</h3>
+                        <p class="feature-description">図枠を指定して複数シートをまとめて作成</p>
+                    </a>
+
+                    <!-- 3D視点コピペ -->
+                    <a href="manual/view-copy.html" class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/icons/view_copy_64.png" alt="3D View Copy Icon">
+                        </div>
+                        <h3 class="feature-title">3D視点コピペ</h3>
+                        <p class="feature-description">3Dビューの視点を他のビューにコピー</p>
+                    </a>
+
+                    <!-- 切断ボックスコピペ -->
+                    <a href="manual/sectionbox-copy.html" class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/icons/sectionbox_copy_64.png" alt="Section Box Icon">
+                        </div>
+                        <h3 class="feature-title">切断ボックスコピペ</h3>
+                        <p class="feature-description">3Dビューの切断ボックス範囲をコピー</p>
+                    </a>
+
+                    <!-- ビューポート位置コピペ -->
+                    <a href="manual/viewport-position.html" class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/icons/viewport_copy_64.png" alt="Viewport Position Icon">
+                        </div>
+                        <h3 class="feature-title">ビューポート位置コピペ</h3>
+                        <p class="feature-description">シート上のビューポート位置をコピー</p>
+                    </a>
+
+                    <!-- トリミング領域コピペ -->
+                    <a href="manual/cropbox-copy.html" class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/icons/cropbox_copy_64.png" alt="Crop Box Icon">
+                        </div>
+                        <h3 class="feature-title">トリミング領域コピペ</h3>
+                        <p class="feature-description">ビューのトリミング領域をコピー</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- サイトフッター -->
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <div class="site-footer-links">
+                <a href="about.html">運営者情報</a>
+                <span class="footer-divider">|</span>
+                <a href="contact.html">お問い合わせ</a>
+                <span class="footer-divider">|</span>
+                <a href="privacy.html">プライバシーポリシー</a>
+                <span class="footer-divider">|</span>
+                <a href="terms.html">利用規約</a>
+            </div>
+            <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
