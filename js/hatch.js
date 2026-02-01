@@ -5,7 +5,8 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // DOM要素
-    const patternTypeSelect = document.getElementById('pattern-type');
+    const patternTypeInput = document.getElementById('pattern-type');
+    const patternTypeGrid = document.getElementById('pattern-type-grid');
     const outputFormatSelect = document.getElementById('output-format');
     const revitSettings = document.getElementById('revit-settings');
     const downloadBtn = document.getElementById('download-btn');
@@ -21,8 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
     init();
 
     function init() {
+        // パターン種類グリッドのクリックイベント
+        patternTypeGrid.addEventListener('click', function(e) {
+            const item = e.target.closest('.pattern-type-item');
+            if (item) {
+                selectPatternType(item.dataset.type);
+            }
+        });
+
         // イベントリスナー設定
-        patternTypeSelect.addEventListener('change', onPatternTypeChange);
         outputFormatSelect.addEventListener('change', onOutputFormatChange);
         downloadBtn.addEventListener('click', downloadPatternFile);
 
@@ -40,15 +48,151 @@ document.addEventListener('DOMContentLoaded', function() {
             el.addEventListener('input', updatePreview);
         });
 
+        // サムネイル描画
+        drawAllThumbnails();
+
         // 初期表示
         onPatternTypeChange();
         onOutputFormatChange();
         updatePreview();
     }
 
+    // サムネイル描画
+    function drawAllThumbnails() {
+        document.querySelectorAll('.pattern-thumbnail').forEach(thumbCanvas => {
+            const pattern = thumbCanvas.dataset.pattern;
+            const thumbCtx = thumbCanvas.getContext('2d');
+            drawThumbnail(thumbCtx, pattern, 60, 60);
+        });
+    }
+
+    // 個別サムネイル描画
+    function drawThumbnail(ctx, pattern, width, height) {
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, width, height);
+        ctx.strokeStyle = '#333333';
+        ctx.lineWidth = 1;
+
+        switch (pattern) {
+            case 'diagonal':
+                drawDiagonalThumbnail(ctx, width, height);
+                break;
+            case 'crosshatch':
+                drawCrosshatchThumbnail(ctx, width, height);
+                break;
+            case 'dot':
+                drawDotThumbnail(ctx, width, height);
+                break;
+            case 'tile-grid':
+                drawTileGridThumbnail(ctx, width, height);
+                break;
+            case 'tile-brick':
+                drawTileBrickThumbnail(ctx, width, height);
+                break;
+            case 'rc-concrete':
+                drawRCConcreteThumbnail(ctx, width, height);
+                break;
+        }
+    }
+
+    function drawDiagonalThumbnail(ctx, w, h) {
+        const spacing = 8;
+        ctx.beginPath();
+        for (let i = -h; i < w + h; i += spacing) {
+            ctx.moveTo(i, 0);
+            ctx.lineTo(i + h, h);
+        }
+        ctx.stroke();
+    }
+
+    function drawCrosshatchThumbnail(ctx, w, h) {
+        const spacing = 10;
+        ctx.beginPath();
+        for (let i = -h; i < w + h; i += spacing) {
+            ctx.moveTo(i, 0);
+            ctx.lineTo(i + h, h);
+            ctx.moveTo(i + h, 0);
+            ctx.lineTo(i, h);
+        }
+        ctx.stroke();
+    }
+
+    function drawDotThumbnail(ctx, w, h) {
+        const spacing = 10;
+        ctx.fillStyle = '#333333';
+        for (let x = spacing / 2; x < w; x += spacing) {
+            for (let y = spacing / 2; y < h; y += spacing) {
+                ctx.beginPath();
+                ctx.arc(x, y, 2, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+    }
+
+    function drawTileGridThumbnail(ctx, w, h) {
+        const tileW = 25;
+        const tileH = 25;
+        const grout = 3;
+        ctx.fillStyle = '#888888';
+        ctx.fillRect(0, 0, w, h);
+        ctx.fillStyle = '#ffffff';
+        for (let x = 0; x < w; x += tileW + grout) {
+            for (let y = 0; y < h; y += tileH + grout) {
+                ctx.fillRect(x, y, tileW, tileH);
+            }
+        }
+    }
+
+    function drawTileBrickThumbnail(ctx, w, h) {
+        const tileW = 28;
+        const tileH = 12;
+        const grout = 2;
+        ctx.fillStyle = '#888888';
+        ctx.fillRect(0, 0, w, h);
+        ctx.fillStyle = '#ffffff';
+        let row = 0;
+        for (let y = 0; y < h; y += tileH + grout) {
+            const offset = (row % 2) * ((tileW + grout) / 2);
+            for (let x = -tileW; x < w + tileW; x += tileW + grout) {
+                ctx.fillRect(x + offset, y, tileW, tileH);
+            }
+            row++;
+        }
+    }
+
+    function drawRCConcreteThumbnail(ctx, w, h) {
+        const innerSpacing = 2;
+        const groupSpacing = 12;
+        ctx.beginPath();
+        let pos = 0;
+        while (pos < w + h) {
+            for (let i = 0; i < 3; i++) {
+                const offset = pos + i * innerSpacing;
+                ctx.moveTo(offset, 0);
+                ctx.lineTo(offset - h * 0.7, h);
+            }
+            pos += innerSpacing * 2 + groupSpacing;
+        }
+        ctx.stroke();
+    }
+
+    // パターン種類選択
+    function selectPatternType(type) {
+        // 選択状態の更新
+        document.querySelectorAll('.pattern-type-item').forEach(item => {
+            item.classList.toggle('selected', item.dataset.type === type);
+        });
+
+        // hidden inputの値を更新
+        patternTypeInput.value = type;
+
+        // 設定パネルを切り替え
+        onPatternTypeChange();
+    }
+
     // パターン種類変更
     function onPatternTypeChange() {
-        const type = patternTypeSelect.value;
+        const type = patternTypeInput.value;
 
         // 全設定を非表示
         document.querySelectorAll('.pattern-specific-settings').forEach(el => {
@@ -81,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // プレビュー更新
     function updatePreview() {
-        const type = patternTypeSelect.value;
+        const type = patternTypeInput.value;
         const scale = 4; // プレビュースケール（1mm = 4px）
 
         // キャンバスクリア
@@ -325,7 +469,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // プレビュー情報更新
     function updatePreviewInfo() {
-        const type = patternTypeSelect.value;
+        const type = patternTypeInput.value;
         const format = outputFormatSelect.value;
         const patternName = document.getElementById('pattern-name').value || 'CUSTOM_PATTERN';
 
@@ -342,7 +486,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // パターンファイル生成
     function generatePatternFile() {
-        const type = patternTypeSelect.value;
+        const type = patternTypeInput.value;
         const format = outputFormatSelect.value;
         const patternName = document.getElementById('pattern-name').value || 'CUSTOM_PATTERN';
         const isModel = format === 'revit' && document.getElementById('revit-pattern-type').value === 'model';

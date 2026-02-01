@@ -53,14 +53,33 @@
                     <!-- パターン種類 -->
                     <div class="setting-group">
                         <label class="setting-label">パターン種類</label>
-                        <select id="pattern-type" class="setting-select">
-                            <option value="diagonal">斜線（単方向）</option>
-                            <option value="crosshatch">クロスハッチ（格子）</option>
-                            <option value="dot">ドット</option>
-                            <option value="tile-grid">タイル（芋目地）</option>
-                            <option value="tile-brick">タイル（馬目地）</option>
-                            <option value="rc-concrete">RCコンクリート</option>
-                        </select>
+                        <div class="pattern-type-grid" id="pattern-type-grid">
+                            <div class="pattern-type-item selected" data-type="diagonal">
+                                <canvas class="pattern-thumbnail" data-pattern="diagonal" width="60" height="60"></canvas>
+                                <span class="pattern-type-name">斜線</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="crosshatch">
+                                <canvas class="pattern-thumbnail" data-pattern="crosshatch" width="60" height="60"></canvas>
+                                <span class="pattern-type-name">クロス</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="dot">
+                                <canvas class="pattern-thumbnail" data-pattern="dot" width="60" height="60"></canvas>
+                                <span class="pattern-type-name">ドット</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="tile-grid">
+                                <canvas class="pattern-thumbnail" data-pattern="tile-grid" width="60" height="60"></canvas>
+                                <span class="pattern-type-name">芋目地</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="tile-brick">
+                                <canvas class="pattern-thumbnail" data-pattern="tile-brick" width="60" height="60"></canvas>
+                                <span class="pattern-type-name">馬目地</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="rc-concrete">
+                                <canvas class="pattern-thumbnail" data-pattern="rc-concrete" width="60" height="60"></canvas>
+                                <span class="pattern-type-name">RC</span>
+                            </div>
+                        </div>
+                        <input type="hidden" id="pattern-type" value="diagonal">
                     </div>
 
                     <!-- パターン別設定 -->
@@ -212,7 +231,7 @@
                 <div class="hatch-preview">
                     <h3 class="preview-title">プレビュー</h3>
                     <div class="preview-container">
-                        <canvas id="preview-canvas" width="400" height="400"></canvas>
+                        <canvas id="preview-canvas" width="200" height="200"></canvas>
                     </div>
                     <div class="preview-info">
                         <span id="preview-info-text">パターンをプレビュー中...</span>

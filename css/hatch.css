@@ -80,6 +80,58 @@
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+/* パターン種類グリッド */
+.pattern-type-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.pattern-type-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    border: 2px solid rgba(52, 73, 94, 0.15);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: white;
+}
+
+.pattern-type-item:hover {
+    border-color: var(--blueprint-blue);
+    background: rgba(52, 152, 219, 0.05);
+}
+
+.pattern-type-item.selected {
+    border-color: var(--blueprint-blue);
+    background: rgba(52, 152, 219, 0.1);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+.pattern-thumbnail {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    background: white;
+    border: 1px solid rgba(52, 73, 94, 0.1);
+}
+
+.pattern-type-name {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--steel-blue);
+    margin-top: 6px;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+}
+
+.pattern-type-item.selected .pattern-type-name {
+    color: var(--blueprint-blue);
+    font-weight: 600;
+}
+
 /* パターン別設定 */
 .pattern-specific-settings {
     padding: 16px;
@@ -135,16 +187,17 @@
 .hatch-preview {
     background: var(--glass-white);
     border-radius: 16px;
-    padding: 24px;
+    padding: 20px;
     box-shadow: var(--shadow-medium);
     border: 1px solid rgba(52, 73, 94, 0.1);
+    height: fit-content;
 }
 
 .preview-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--concrete-gray);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -156,12 +209,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
 }
 
 #preview-canvas {
     display: block;
-    max-width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
 }
 
 .preview-info {
@@ -213,9 +269,14 @@
         order: -1;
     }
 
+    .preview-container {
+        width: 180px;
+        height: 180px;
+    }
+
     #preview-canvas {
-        width: 100%;
-        height: 300px;
+        width: 180px;
+        height: 180px;
     }
 }
 
@@ -234,7 +295,31 @@
         padding: 8px 12px;
     }
 
+    .pattern-type-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .pattern-type-item {
+        padding: 6px;
+    }
+
+    .pattern-thumbnail {
+        width: 50px;
+        height: 50px;
+    }
+
+    .pattern-type-name {
+        font-size: 0.7rem;
+    }
+
+    .preview-container {
+        width: 160px;
+        height: 160px;
+    }
+
     #preview-canvas {
-        height: 250px;
+        width: 160px;
+        height: 160px;
     }
 }
