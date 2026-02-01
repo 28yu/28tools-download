@@ -1534,6 +1534,197 @@ function initTranslations() {
     };
 
     // ========================================
+    // ハッチングパターン作成ページ翻訳
+    // ========================================
+    translations.hatchPage = {
+        'hatch-breadcrumb': {
+            ja: '塗潰し（ハッチング）パターン自動作成',
+            en: 'Hatch Pattern Generator',
+            zh: '填充图案自动生成'
+        },
+        'hatch-page-title': {
+            ja: '塗潰し（ハッチング）パターン自動作成',
+            en: 'Hatch Pattern Generator',
+            zh: '填充图案自动生成'
+        },
+        'hatch-page-description': {
+            ja: 'Revit / AutoCAD用のハッチングパターンファイル（.pat）を作成できます。',
+            en: 'Create hatch pattern files (.pat) for Revit / AutoCAD.',
+            zh: '创建用于Revit / AutoCAD的填充图案文件（.pat）。'
+        },
+        'hatch-pattern-name': {
+            ja: 'パターン名',
+            en: 'Pattern Name',
+            zh: '图案名称'
+        },
+        'hatch-pattern-type': {
+            ja: 'パターン種類',
+            en: 'Pattern Type',
+            zh: '图案类型'
+        },
+        'hatch-type-diagonal': {
+            ja: '斜線',
+            en: 'Diagonal',
+            zh: '斜线'
+        },
+        'hatch-type-crosshatch': {
+            ja: 'クロス',
+            en: 'Cross',
+            zh: '交叉'
+        },
+        'hatch-type-dot': {
+            ja: 'ドット',
+            en: 'Dot',
+            zh: '点'
+        },
+        'hatch-type-tile-grid': {
+            ja: '芋目地',
+            en: 'Grid',
+            zh: '网格'
+        },
+        'hatch-type-tile-brick': {
+            ja: '馬目地',
+            en: 'Brick',
+            zh: '砖砌'
+        },
+        'hatch-type-rc': {
+            ja: 'RC',
+            en: 'RC',
+            zh: 'RC'
+        },
+        'hatch-angle': {
+            ja: '角度 (°)',
+            en: 'Angle (°)',
+            zh: '角度 (°)'
+        },
+        'hatch-spacing': {
+            ja: '間隔 (mm)',
+            en: 'Spacing (mm)',
+            zh: '间距 (mm)'
+        },
+        'hatch-dash-type': {
+            ja: '破線設定',
+            en: 'Line Style',
+            zh: '线型设置'
+        },
+        'hatch-dash-solid': {
+            ja: '実線',
+            en: 'Solid',
+            zh: '实线'
+        },
+        'hatch-dash-alternate': {
+            ja: '一本おき',
+            en: 'Alternate',
+            zh: '交替'
+        },
+        'hatch-dash-all': {
+            ja: '全て破線',
+            en: 'All Dashed',
+            zh: '全部虚线'
+        },
+        'hatch-dash-length': {
+            ja: '破線長さ (mm)',
+            en: 'Dash Length (mm)',
+            zh: '虚线长度 (mm)'
+        },
+        'hatch-dash-gap': {
+            ja: '破線間隔 (mm)',
+            en: 'Dash Gap (mm)',
+            zh: '虚线间隔 (mm)'
+        },
+        'hatch-x-spacing': {
+            ja: 'X間隔 (mm)',
+            en: 'X Spacing (mm)',
+            zh: 'X间距 (mm)'
+        },
+        'hatch-y-spacing': {
+            ja: 'Y間隔 (mm)',
+            en: 'Y Spacing (mm)',
+            zh: 'Y间距 (mm)'
+        },
+        'hatch-size': {
+            ja: 'サイズ (mm)',
+            en: 'Size (mm)',
+            zh: '尺寸 (mm)'
+        },
+        'hatch-width': {
+            ja: '幅 (mm)',
+            en: 'Width (mm)',
+            zh: '宽度 (mm)'
+        },
+        'hatch-height': {
+            ja: '高さ (mm)',
+            en: 'Height (mm)',
+            zh: '高度 (mm)'
+        },
+        'hatch-grout-enabled': {
+            ja: '目地あり',
+            en: 'With Grout',
+            zh: '有接缝'
+        },
+        'hatch-grout-size': {
+            ja: '目地サイズ (mm)',
+            en: 'Grout Size (mm)',
+            zh: '接缝尺寸 (mm)'
+        },
+        'hatch-offset-note': {
+            ja: '※ ずらし量は1/2固定',
+            en: '* Offset is fixed at 1/2',
+            zh: '※ 偏移量固定为1/2'
+        },
+        'hatch-inner-spacing': {
+            ja: '線内間隔 (mm)',
+            en: 'Inner Spacing (mm)',
+            zh: '线内间距 (mm)'
+        },
+        'hatch-group-spacing': {
+            ja: 'グループ間隔 (mm)',
+            en: 'Group Spacing (mm)',
+            zh: '组间距 (mm)'
+        },
+        'hatch-output-format': {
+            ja: '出力形式',
+            en: 'Output Format',
+            zh: '输出格式'
+        },
+        'hatch-revit-pattern-type': {
+            ja: 'パターンタイプ',
+            en: 'Pattern Type',
+            zh: '图案类型'
+        },
+        'hatch-revit-model': {
+            ja: 'モデル',
+            en: 'Model',
+            zh: '模型'
+        },
+        'hatch-revit-drafting': {
+            ja: '製図',
+            en: 'Drafting',
+            zh: '制图'
+        },
+        'hatch-revit-note': {
+            ja: 'モデル: 実寸で表示 / 製図: 図面スケールに依存',
+            en: 'Model: Actual size / Drafting: Scale dependent',
+            zh: '模型: 实际尺寸 / 制图: 取决于比例'
+        },
+        'hatch-download-btn': {
+            ja: 'パターンファイルをダウンロード',
+            en: 'Download Pattern File',
+            zh: '下载图案文件'
+        },
+        'hatch-preview-title': {
+            ja: 'プレビュー',
+            en: 'Preview',
+            zh: '预览'
+        },
+        'hatch-preview-info': {
+            ja: 'パターンをプレビュー中...',
+            en: 'Previewing pattern...',
+            zh: '预览图案中...'
+        }
+    };
+
+    // ========================================
     // プライバシーポリシーページ翻訳
     // ========================================
     translations.privacyPage = {
@@ -2462,6 +2653,7 @@ function initTranslations() {
         translations.viewportPosition,
         translations.cropboxCopy,
         translations.footerLinks,
+        translations.hatchPage,
         translations.privacyPage,
         translations.contactPage,
         translations.aboutPage,

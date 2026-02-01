@@ -1402,6 +1402,11 @@ h1.main-title,
     color: var(--blueprint-blue);
 }
 
+.news-tag.hatch {
+    background: rgba(241, 196, 15, 0.15);
+    color: #d4a500;
+}
+
 .news-content {
     flex: 1;
 }
