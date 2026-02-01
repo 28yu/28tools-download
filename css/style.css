@@ -1196,7 +1196,7 @@ h1.main-title,
     background: var(--glass-white);
     border: 1px solid rgba(52, 73, 94, 0.1);
     border-radius: 16px;
-    padding: 32px 24px;
+    padding: 20px 16px;
     text-align: center;
     text-decoration: none;
     color: inherit;
@@ -1258,8 +1258,8 @@ h1.main-title,
 }
 
 .category-icon {
-    font-size: 3rem;
-    margin-bottom: 16px;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
     display: block;
 }
 
@@ -1281,7 +1281,7 @@ h1.main-title,
 
 .category-badge {
     display: inline-block;
-    margin-top: 12px;
+    margin-top: 8px;
     padding: 4px 12px;
     font-size: 0.75rem;
     font-weight: 600;
