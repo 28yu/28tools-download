@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const diagonalDashType = document.getElementById('diagonal-dash-type');
     const crosshatchDashType = document.getElementById('crosshatch-dash-type');
 
+    // 目地チェックボックス
+    const tileGridGroutEnabled = document.getElementById('tile-grid-grout-enabled');
+    const tileBrickGroutEnabled = document.getElementById('tile-brick-grout-enabled');
+
     // 初期化
     init();
 
@@ -64,10 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
         onOutputFormatChange();
         updatePreview();
     }
-
-    // 目地チェックボックス
-    const tileGridGroutEnabled = document.getElementById('tile-grid-grout-enabled');
-    const tileBrickGroutEnabled = document.getElementById('tile-brick-grout-enabled');
 
     // サムネイル描画
     function drawAllThumbnails() {

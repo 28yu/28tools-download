@@ -22,61 +22,57 @@
 </head>
 <body>
     <div class="container">
-        <!-- ヘッダー -->
-        <header class="site-header">
-            <h1 class="main-title">28 Tools</h1>
-            <div class="title-divider"></div>
-            <p class="subtitle">Revit 作図サポートツール</p>
-        </header>
+        <!-- 共有ヘッダー -->
+        <div id="header-container"></div>
 
         <!-- パンくずリスト -->
         <nav class="breadcrumb">
-            <a href="index.html">ホーム</a>
+            <a href="index.html" data-lang-key="breadcrumb-home">ホーム</a>
             <span class="separator">›</span>
-            <span>塗潰し（ハッチング）パターン自動作成</span>
+            <span data-lang-key="hatch-breadcrumb">塗潰し（ハッチング）パターン自動作成</span>
         </nav>
 
         <!-- メインコンテンツ -->
         <main class="hatch-main">
-            <h2 class="page-title">塗潰し（ハッチング）パターン自動作成</h2>
-            <p class="page-description">Revit / AutoCAD用のハッチングパターンファイル（.pat）を作成できます。</p>
+            <h2 class="page-title" data-lang-key="hatch-page-title">塗潰し（ハッチング）パターン自動作成</h2>
+            <p class="page-description" data-lang-key="hatch-page-description">Revit / AutoCAD用のハッチングパターンファイル（.pat）を作成できます。</p>
 
             <div class="hatch-container">
                 <!-- 左側: 設定パネル -->
                 <div class="hatch-settings">
                     <!-- パターン名 -->
                     <div class="setting-group">
-                        <label class="setting-label">パターン名</label>
-                        <input type="text" id="pattern-name" class="setting-input" value="CUSTOM_PATTERN" placeholder="パターン名を入力">
+                        <label class="setting-label" data-lang-key="hatch-pattern-name">パターン名</label>
+                        <input type="text" id="pattern-name" class="setting-input" value="CUSTOM_PATTERN" data-lang-placeholder="hatch-pattern-name-placeholder" placeholder="パターン名を入力">
                     </div>
 
                     <!-- パターン種類 -->
                     <div class="setting-group">
-                        <label class="setting-label">パターン種類</label>
+                        <label class="setting-label" data-lang-key="hatch-pattern-type">パターン種類</label>
                         <div class="pattern-type-grid" id="pattern-type-grid">
                             <div class="pattern-type-item selected" data-type="diagonal">
                                 <canvas class="pattern-thumbnail" data-pattern="diagonal" width="40" height="40"></canvas>
-                                <span class="pattern-type-name">斜線</span>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-diagonal">斜線</span>
                             </div>
                             <div class="pattern-type-item" data-type="crosshatch">
                                 <canvas class="pattern-thumbnail" data-pattern="crosshatch" width="40" height="40"></canvas>
-                                <span class="pattern-type-name">クロス</span>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-crosshatch">クロス</span>
                             </div>
                             <div class="pattern-type-item" data-type="dot">
                                 <canvas class="pattern-thumbnail" data-pattern="dot" width="40" height="40"></canvas>
-                                <span class="pattern-type-name">ドット</span>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-dot">ドット</span>
                             </div>
                             <div class="pattern-type-item" data-type="tile-grid">
                                 <canvas class="pattern-thumbnail" data-pattern="tile-grid" width="40" height="40"></canvas>
-                                <span class="pattern-type-name">芋目地</span>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-tile-grid">芋目地</span>
                             </div>
                             <div class="pattern-type-item" data-type="tile-brick">
                                 <canvas class="pattern-thumbnail" data-pattern="tile-brick" width="40" height="40"></canvas>
-                                <span class="pattern-type-name">馬目地</span>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-tile-brick">馬目地</span>
                             </div>
                             <div class="pattern-type-item" data-type="rc-concrete">
                                 <canvas class="pattern-thumbnail" data-pattern="rc-concrete" width="40" height="40"></canvas>
-                                <span class="pattern-type-name">RC</span>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-rc">RC</span>
                             </div>
                         </div>
                         <input type="hidden" id="pattern-type" value="diagonal">
@@ -88,29 +84,29 @@
                         <div id="settings-diagonal" class="pattern-specific-settings">
                             <div class="setting-row">
                                 <div class="setting-group compact">
-                                    <label class="setting-label">角度 (°)</label>
+                                    <label class="setting-label" data-lang-key="hatch-angle">角度 (°)</label>
                                     <input type="number" id="diagonal-angle" class="setting-input" value="45" min="0" max="360">
                                 </div>
                                 <div class="setting-group compact">
-                                    <label class="setting-label">間隔 (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-spacing">間隔 (mm)</label>
                                     <input type="number" id="diagonal-spacing" class="setting-input" value="10" min="1">
                                 </div>
                                 <div class="setting-group compact">
-                                    <label class="setting-label">破線設定</label>
+                                    <label class="setting-label" data-lang-key="hatch-dash-type">破線設定</label>
                                     <select id="diagonal-dash-type" class="setting-select">
-                                        <option value="none">実線</option>
-                                        <option value="alternate">一本おき</option>
-                                        <option value="all">全て破線</option>
+                                        <option value="none" data-lang-key="hatch-dash-solid">実線</option>
+                                        <option value="alternate" data-lang-key="hatch-dash-alternate">一本おき</option>
+                                        <option value="all" data-lang-key="hatch-dash-all">全て破線</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="setting-row dash-settings" style="display: none;">
                                 <div class="setting-group compact">
-                                    <label class="setting-label">破線長さ (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-dash-length">破線長さ (mm)</label>
                                     <input type="number" id="diagonal-dash-length" class="setting-input" value="5" min="1">
                                 </div>
                                 <div class="setting-group compact">
-                                    <label class="setting-label">破線間隔 (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-dash-gap">破線間隔 (mm)</label>
                                     <input type="number" id="diagonal-dash-gap" class="setting-input" value="3" min="1">
                                 </div>
                             </div>
@@ -120,29 +116,29 @@
                         <div id="settings-crosshatch" class="pattern-specific-settings" style="display: none;">
                             <div class="setting-row">
                                 <div class="setting-group compact">
-                                    <label class="setting-label">角度 (°)</label>
+                                    <label class="setting-label" data-lang-key="hatch-angle">角度 (°)</label>
                                     <input type="number" id="crosshatch-angle" class="setting-input" value="45" min="0" max="360">
                                 </div>
                                 <div class="setting-group compact">
-                                    <label class="setting-label">間隔 (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-spacing">間隔 (mm)</label>
                                     <input type="number" id="crosshatch-spacing" class="setting-input" value="10" min="1">
                                 </div>
                                 <div class="setting-group compact">
-                                    <label class="setting-label">破線設定</label>
+                                    <label class="setting-label" data-lang-key="hatch-dash-type">破線設定</label>
                                     <select id="crosshatch-dash-type" class="setting-select">
-                                        <option value="none">実線</option>
-                                        <option value="alternate">一本おき</option>
-                                        <option value="all">全て破線</option>
+                                        <option value="none" data-lang-key="hatch-dash-solid">実線</option>
+                                        <option value="alternate" data-lang-key="hatch-dash-alternate">一本おき</option>
+                                        <option value="all" data-lang-key="hatch-dash-all">全て破線</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="setting-row crosshatch-dash-settings" style="display: none;">
                                 <div class="setting-group compact">
-                                    <label class="setting-label">破線長さ (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-dash-length">破線長さ (mm)</label>
                                     <input type="number" id="crosshatch-dash-length" class="setting-input" value="5" min="1">
                                 </div>
                                 <div class="setting-group compact">
-                                    <label class="setting-label">破線間隔 (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-dash-gap">破線間隔 (mm)</label>
                                     <input type="number" id="crosshatch-dash-gap" class="setting-input" value="3" min="1">
                                 </div>
                             </div>
@@ -152,15 +148,15 @@
                         <div id="settings-dot" class="pattern-specific-settings" style="display: none;">
                             <div class="setting-row">
                                 <div class="setting-group compact">
-                                    <label class="setting-label">X間隔 (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-x-spacing">X間隔 (mm)</label>
                                     <input type="number" id="dot-spacing-x" class="setting-input" value="10" min="1">
                                 </div>
                                 <div class="setting-group compact">
-                                    <label class="setting-label">Y間隔 (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-y-spacing">Y間隔 (mm)</label>
                                     <input type="number" id="dot-spacing-y" class="setting-input" value="10" min="1">
                                 </div>
                                 <div class="setting-group compact">
-                                    <label class="setting-label">サイズ (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-size">サイズ (mm)</label>
                                     <input type="number" id="dot-size" class="setting-input" value="1" min="0.1" step="0.1">
                                 </div>
                             </div>
@@ -170,11 +166,11 @@
                         <div id="settings-tile-grid" class="pattern-specific-settings" style="display: none;">
                             <div class="setting-row">
                                 <div class="setting-group compact">
-                                    <label class="setting-label">幅 (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-width">幅 (mm)</label>
                                     <input type="number" id="tile-grid-width" class="setting-input" value="100" min="1">
                                 </div>
                                 <div class="setting-group compact">
-                                    <label class="setting-label">高さ (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-height">高さ (mm)</label>
                                     <input type="number" id="tile-grid-height" class="setting-input" value="100" min="1">
                                 </div>
                             </div>
@@ -182,11 +178,11 @@
                                 <div class="setting-group compact checkbox-group">
                                     <label class="checkbox-label">
                                         <input type="checkbox" id="tile-grid-grout-enabled" class="setting-checkbox">
-                                        <span>目地あり</span>
+                                        <span data-lang-key="hatch-grout-enabled">目地あり</span>
                                     </label>
                                 </div>
                                 <div class="setting-group compact tile-grid-grout-settings" style="display: none;">
-                                    <label class="setting-label">目地サイズ (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-grout-size">目地サイズ (mm)</label>
                                     <input type="number" id="tile-grid-grout" class="setting-input" value="5" min="1">
                                 </div>
                             </div>
@@ -196,11 +192,11 @@
                         <div id="settings-tile-brick" class="pattern-specific-settings" style="display: none;">
                             <div class="setting-row">
                                 <div class="setting-group compact">
-                                    <label class="setting-label">幅 (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-width">幅 (mm)</label>
                                     <input type="number" id="tile-brick-width" class="setting-input" value="200" min="1">
                                 </div>
                                 <div class="setting-group compact">
-                                    <label class="setting-label">高さ (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-height">高さ (mm)</label>
                                     <input type="number" id="tile-brick-height" class="setting-input" value="100" min="1">
                                 </div>
                             </div>
@@ -208,26 +204,26 @@
                                 <div class="setting-group compact checkbox-group">
                                     <label class="checkbox-label">
                                         <input type="checkbox" id="tile-brick-grout-enabled" class="setting-checkbox">
-                                        <span>目地あり</span>
+                                        <span data-lang-key="hatch-grout-enabled">目地あり</span>
                                     </label>
                                 </div>
                                 <div class="setting-group compact tile-brick-grout-settings" style="display: none;">
-                                    <label class="setting-label">目地サイズ (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-grout-size">目地サイズ (mm)</label>
                                     <input type="number" id="tile-brick-grout" class="setting-input" value="5" min="1">
                                 </div>
                             </div>
-                            <p class="setting-note">※ ずらし量は1/2固定</p>
+                            <p class="setting-note" data-lang-key="hatch-offset-note">※ ずらし量は1/2固定</p>
                         </div>
 
                         <!-- RCコンクリート設定 -->
                         <div id="settings-rc-concrete" class="pattern-specific-settings" style="display: none;">
                             <div class="setting-row">
                                 <div class="setting-group compact">
-                                    <label class="setting-label">線内間隔 (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-inner-spacing">線内間隔 (mm)</label>
                                     <input type="number" id="rc-inner-spacing" class="setting-input" value="2" min="0.5" step="0.5">
                                 </div>
                                 <div class="setting-group compact">
-                                    <label class="setting-label">グループ間隔 (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-group-spacing">グループ間隔 (mm)</label>
                                     <input type="number" id="rc-outer-spacing" class="setting-input" value="15" min="1">
                                 </div>
                             </div>
@@ -236,7 +232,7 @@
 
                     <!-- 出力設定 -->
                     <div class="setting-group output-settings">
-                        <label class="setting-label">出力形式</label>
+                        <label class="setting-label" data-lang-key="hatch-output-format">出力形式</label>
                         <select id="output-format" class="setting-select">
                             <option value="revit">Revit</option>
                             <option value="autocad">AutoCAD</option>
@@ -245,28 +241,28 @@
 
                     <!-- Revit専用設定 -->
                     <div id="revit-settings" class="setting-group">
-                        <label class="setting-label">パターンタイプ</label>
+                        <label class="setting-label" data-lang-key="hatch-revit-pattern-type">パターンタイプ</label>
                         <select id="revit-pattern-type" class="setting-select">
-                            <option value="model">モデル</option>
-                            <option value="drafting">製図</option>
+                            <option value="model" data-lang-key="hatch-revit-model">モデル</option>
+                            <option value="drafting" data-lang-key="hatch-revit-drafting">製図</option>
                         </select>
-                        <p class="setting-note">モデル: 実寸で表示 / 製図: 図面スケールに依存</p>
+                        <p class="setting-note" data-lang-key="hatch-revit-note">モデル: 実寸で表示 / 製図: 図面スケールに依存</p>
                     </div>
 
                     <!-- ダウンロードボタン -->
-                    <button id="download-btn" class="download-button">
+                    <button id="download-btn" class="download-button" data-lang-key="hatch-download-btn">
                         パターンファイルをダウンロード
                     </button>
                 </div>
 
                 <!-- 右側: プレビューパネル -->
                 <div class="hatch-preview">
-                    <h3 class="preview-title">プレビュー</h3>
+                    <h3 class="preview-title" data-lang-key="hatch-preview-title">プレビュー</h3>
                     <div class="preview-container">
                         <canvas id="preview-canvas" width="200" height="200"></canvas>
                     </div>
                     <div class="preview-info">
-                        <span id="preview-info-text">パターンをプレビュー中...</span>
+                        <span id="preview-info-text" data-lang-key="hatch-preview-info">パターンをプレビュー中...</span>
                     </div>
                 </div>
             </div>
@@ -277,18 +273,19 @@
     <footer class="site-footer">
         <div class="site-footer-content">
             <div class="site-footer-links">
-                <a href="about.html">運営者情報</a>
+                <a href="about.html" data-lang-key="footer-about">運営者情報</a>
                 <span class="footer-divider">|</span>
-                <a href="contact.html">お問い合わせ</a>
+                <a href="contact.html" data-lang-key="footer-contact">お問い合わせ</a>
                 <span class="footer-divider">|</span>
-                <a href="privacy.html">プライバシーポリシー</a>
+                <a href="privacy.html" data-lang-key="footer-privacy">プライバシーポリシー</a>
                 <span class="footer-divider">|</span>
-                <a href="terms.html">利用規約</a>
+                <a href="terms.html" data-lang-key="footer-terms">利用規約</a>
             </div>
             <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
     <script src="js/hatch.js"></script>
 </body>
 </html>
