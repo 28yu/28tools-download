@@ -217,9 +217,9 @@ function initTranslations() {
             zh: '28 Tools'
         },
         'site-subtitle': {
-            ja: 'Revit アドイン配布センター',
-            en: 'Revit Add-in Distribution Center',
-            zh: 'Revit 插件分发中心'
+            ja: 'Revit 作図サポートツール',
+            en: 'Revit Drafting Support Tools',
+            zh: 'Revit 制图支持工具'
         },
         'breadcrumb-home': {
             ja: 'ホーム',
