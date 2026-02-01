@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#4a4a4a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Left house -->
+  <path d="M4 28L18 16L32 28"/>
+  <rect x="8" y="28" width="20" height="20"/>
+  <rect x="12" y="34" width="12" height="8"/>
+  <line x1="12" y1="38" x2="24" y2="38"/>
+  <line x1="18" y1="34" x2="18" y2="42"/>
+  <!-- Right house -->
+  <path d="M32 28L46 16L60 28"/>
+  <rect x="36" y="28" width="20" height="20"/>
+  <rect x="40" y="34" width="12" height="8"/>
+  <line x1="40" y1="38" x2="52" y2="38"/>
+  <line x1="46" y1="34" x2="46" y2="42"/>
+  <!-- Ground -->
+  <line x1="2" y1="48" x2="62" y2="48"/>
+</svg>

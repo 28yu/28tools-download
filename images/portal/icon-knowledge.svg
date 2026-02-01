@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#4a4a4a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Top person -->
+  <circle cx="32" cy="10" r="6"/>
+  <path d="M24 18c0 0 2 4 8 4s8-4 8-4"/>
+  <path d="M26 22v8"/>
+  <path d="M38 22v8"/>
+  <path d="M22 30l4-8"/>
+  <path d="M42 30l-4-8"/>
+  <!-- Bottom left person -->
+  <circle cx="12" cy="46" r="6"/>
+  <path d="M4 54c0 0 2 4 8 4s8-4 8-4"/>
+  <path d="M8 52l-4 6"/>
+  <path d="M16 52l4 6"/>
+  <!-- Bottom right person -->
+  <circle cx="52" cy="46" r="6"/>
+  <path d="M44 54c0 0 2 4 8 4s8-4 8-4"/>
+  <path d="M48 52l-4 6"/>
+  <path d="M56 52l4 6"/>
+  <!-- Connection lines -->
+  <path d="M26 28L16 40" stroke-dasharray="2 2"/>
+  <path d="M38 28L48 40" stroke-dasharray="2 2"/>
+  <path d="M20 50L44 50" stroke-dasharray="2 2"/>
+</svg>

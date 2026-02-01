@@ -52,40 +52,127 @@
             <p class="subtitle">Revit 作図サポートツール</p>
         </section>
 
-        <!-- カテゴリセクション -->
-        <section class="category-section">
-            <div class="category-grid">
+        <!-- サイドバー + メインコンテンツ (D案) -->
+        <section class="sidebar-layout">
+            <!-- サイドバーナビゲーション -->
+            <nav class="sidebar-nav">
+                <div class="sidebar-item addins active" data-target="content-addins">
+                    <div class="sidebar-icon">
+                        <img src="images/portal/icon-addon.svg" alt="アドイン">
+                    </div>
+                    <span class="sidebar-label">アドイン</span>
+                </div>
+                <div class="sidebar-item family" data-target="content-family">
+                    <div class="sidebar-icon">
+                        <img src="images/portal/icon-family.svg" alt="ファミリ">
+                    </div>
+                    <span class="sidebar-label">ファミリ</span>
+                </div>
+                <div class="sidebar-item hatch" data-target="content-hatch">
+                    <div class="sidebar-icon">
+                        <img src="images/portal/icon-hatch.svg" alt="塗潰し領域">
+                    </div>
+                    <span class="sidebar-label">塗潰し<br>領域</span>
+                </div>
+                <div class="sidebar-item knowledge" data-target="content-knowledge">
+                    <div class="sidebar-icon">
+                        <img src="images/portal/icon-knowledge.svg" alt="ナレッジ">
+                    </div>
+                    <span class="sidebar-label">ナレッジ</span>
+                </div>
+            </nav>
+
+            <!-- メインコンテンツエリア -->
+            <div class="main-content-wrapper">
                 <!-- アドイン -->
-                <a href="index.html" class="category-card addins">
-                    <span class="category-icon">📦</span>
-                    <h3 class="category-title">アドイン</h3>
-                    <p class="category-description">Revit作業を効率化する<br>無料アドインツール</p>
-                    <span class="category-badge">6機能 利用可能</span>
-                </a>
+                <div id="content-addins" class="main-content-area active">
+                    <div class="content-header">
+                        <div class="content-icon">
+                            <img src="images/portal/icon-addon.svg" alt="アドイン">
+                        </div>
+                        <h2 class="content-title">アドイン</h2>
+                    </div>
+                    <span class="content-badge available">6機能 利用可能</span>
+                    <p class="content-description">
+                        Revit作業を効率化する無料アドインツール。<br>
+                        符号の一括切替、シートの一括作成、ビュー設定のコピー&ペーストなど、日常業務の手間を大幅に削減します。
+                    </p>
+                    <ul class="content-features">
+                        <li>符号ON/OFF - 通り芯・レベルの符号表示を一括切替</li>
+                        <li>シート一括作成 - 図枠を指定して複数シートをまとめて作成</li>
+                        <li>3D視点コピペ - 3Dビューの視点を他のビューにコピー</li>
+                        <li>切断ボックスコピペ - 3Dビューの切断ボックス範囲をコピー</li>
+                        <li>ビューポート位置コピペ - シート上のビューポート位置をコピー</li>
+                        <li>トリミング領域コピペ - ビューのトリミング領域をコピー</li>
+                    </ul>
+                    <a href="index.html" class="content-action">詳細・ダウンロード →</a>
+                </div>
 
                 <!-- ファミリ -->
-                <a href="#" class="category-card family">
-                    <span class="category-icon">🏠</span>
-                    <h3 class="category-title">ファミリ</h3>
-                    <p class="category-description">施工図・設計図向け<br>Revitファミリライブラリ</p>
-                    <span class="category-badge coming-soon">準備中</span>
-                </a>
+                <div id="content-family" class="main-content-area">
+                    <div class="content-header">
+                        <div class="content-icon">
+                            <img src="images/portal/icon-family.svg" alt="ファミリ">
+                        </div>
+                        <h2 class="content-title">ファミリ</h2>
+                    </div>
+                    <span class="content-badge coming-soon">準備中</span>
+                    <p class="content-description">
+                        施工図・設計図向けのRevitファミリライブラリ。<br>
+                        建具、設備機器、家具など、実務で使えるファミリを無料で配布予定です。
+                    </p>
+                    <ul class="content-features">
+                        <li>建具ファミリ（ドア、窓、シャッター等）</li>
+                        <li>設備機器ファミリ（衛生器具、空調機器等）</li>
+                        <li>家具・什器ファミリ</li>
+                        <li>2D詳細コンポーネント</li>
+                    </ul>
+                    <span class="content-action disabled">近日公開</span>
+                </div>
 
-                <!-- テンプレート -->
-                <a href="#" class="category-card templates">
-                    <span class="category-icon">📄</span>
-                    <h3 class="category-title">テンプレート</h3>
-                    <p class="category-description">プロジェクト・ビュー<br>図枠テンプレート</p>
-                    <span class="category-badge coming-soon">準備中</span>
-                </a>
+                <!-- 塗潰し領域自動作成 -->
+                <div id="content-hatch" class="main-content-area">
+                    <div class="content-header">
+                        <div class="content-icon">
+                            <img src="images/portal/icon-hatch.svg" alt="塗潰し領域">
+                        </div>
+                        <h2 class="content-title">塗潰し領域（ハッチング）自動作成</h2>
+                    </div>
+                    <span class="content-badge new">新機能 開発中</span>
+                    <p class="content-description">
+                        部屋や壁の塗潰し領域（ハッチング）を自動作成するアドイン。<br>
+                        施工図作成時の仕上げ表示を効率化し、手作業での塗潰し作成を不要にします。
+                    </p>
+                    <ul class="content-features">
+                        <li>部屋境界に基づく自動ハッチング生成</li>
+                        <li>壁・床・天井の仕上げパターン自動適用</li>
+                        <li>カスタムハッチングパターンの設定</li>
+                        <li>一括更新・変更機能</li>
+                    </ul>
+                    <span class="content-action disabled">開発中</span>
+                </div>
 
                 <!-- ナレッジ -->
-                <a href="#" class="category-card knowledge">
-                    <span class="category-icon">📚</span>
-                    <h3 class="category-title">ナレッジ</h3>
-                    <p class="category-description">Tips・チュートリアル<br>Dynamoスクリプト</p>
-                    <span class="category-badge coming-soon">準備中</span>
-                </a>
+                <div id="content-knowledge" class="main-content-area">
+                    <div class="content-header">
+                        <div class="content-icon">
+                            <img src="images/portal/icon-knowledge.svg" alt="ナレッジ">
+                        </div>
+                        <h2 class="content-title">ナレッジ</h2>
+                    </div>
+                    <span class="content-badge coming-soon">準備中</span>
+                    <p class="content-description">
+                        Revit作図のTips、チュートリアル、Dynamoスクリプトなど。<br>
+                        実務経験に基づくノウハウを共有し、Revit活用のスキルアップをサポートします。
+                    </p>
+                    <ul class="content-features">
+                        <li>施工図作成Tips集</li>
+                        <li>操作チュートリアル動画</li>
+                        <li>Dynamoスクリプト配布</li>
+                        <li>トラブルシューティング</li>
+                    </ul>
+                    <span class="content-action disabled">近日公開</span>
+                </div>
             </div>
         </section>
 
@@ -168,5 +255,22 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // サイドバーナビゲーション
+        document.querySelectorAll('.sidebar-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // 全てのサイドバーアイテムからactiveを削除
+                document.querySelectorAll('.sidebar-item').forEach(i => i.classList.remove('active'));
+                // クリックしたアイテムにactiveを追加
+                this.classList.add('active');
+
+                // 全てのコンテンツエリアを非表示
+                document.querySelectorAll('.main-content-area').forEach(content => content.classList.remove('active'));
+                // 対応するコンテンツを表示
+                const targetId = this.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
