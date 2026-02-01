@@ -1718,6 +1718,28 @@ h1.main-title,
     box-shadow: var(--shadow-medium);
 }
 
+.content-image {
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+}
+
+.content-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-coming-soon {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--disabled-gray);
+    text-align: center;
+    padding: 60px 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 .content-action.disabled {
     background: var(--disabled-gray);
     cursor: not-allowed;
