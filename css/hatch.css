@@ -1,0 +1,240 @@
+/* ==========================================
+   ハッチングパターン作成ページ
+   ========================================== */
+
+.hatch-main {
+    padding: 20px 0 60px;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--concrete-gray);
+    margin-bottom: 12px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.page-description {
+    font-size: 1rem;
+    color: var(--steel-blue);
+    margin-bottom: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* コンテナレイアウト */
+.hatch-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* 設定パネル */
+.hatch-settings {
+    background: var(--glass-white);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow-medium);
+    border: 1px solid rgba(52, 73, 94, 0.1);
+}
+
+.setting-group {
+    margin-bottom: 20px;
+}
+
+.setting-label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--concrete-gray);
+    margin-bottom: 8px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.setting-input,
+.setting-select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid rgba(52, 73, 94, 0.2);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: white;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.setting-input:focus,
+.setting-select:focus {
+    outline: none;
+    border-color: var(--blueprint-blue);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.setting-input[type="number"] {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.setting-note {
+    font-size: 0.8rem;
+    color: var(--disabled-gray);
+    margin-top: 6px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* パターン別設定 */
+.pattern-specific-settings {
+    padding: 16px;
+    background: rgba(52, 152, 219, 0.05);
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.pattern-specific-settings .setting-group:last-child {
+    margin-bottom: 0;
+}
+
+/* 出力設定 */
+.output-settings {
+    padding-top: 20px;
+    border-top: 1px solid rgba(52, 73, 94, 0.1);
+    margin-top: 10px;
+}
+
+#revit-settings {
+    padding: 16px;
+    background: rgba(39, 174, 96, 0.05);
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* ダウンロードボタン */
+.download-button {
+    width: 100%;
+    padding: 14px 24px;
+    background: var(--architect-green);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.download-button:hover {
+    background: #219a52;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+.download-button:active {
+    transform: translateY(0);
+}
+
+/* プレビューパネル */
+.hatch-preview {
+    background: var(--glass-white);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow-medium);
+    border: 1px solid rgba(52, 73, 94, 0.1);
+}
+
+.preview-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--concrete-gray);
+    margin-bottom: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.preview-container {
+    background: white;
+    border: 1px solid rgba(52, 73, 94, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#preview-canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.preview-info {
+    margin-top: 12px;
+    padding: 10px;
+    background: rgba(52, 73, 94, 0.05);
+    border-radius: 6px;
+    text-align: center;
+}
+
+#preview-info-text {
+    font-size: 0.85rem;
+    color: var(--steel-blue);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* パンくずリスト */
+.breadcrumb {
+    padding: 16px 0;
+    font-size: 0.9rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.breadcrumb a {
+    color: var(--blueprint-blue);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb .separator {
+    margin: 0 8px;
+    color: var(--disabled-gray);
+}
+
+.breadcrumb span:last-child {
+    color: var(--steel-blue);
+}
+
+/* レスポンシブ */
+@media (max-width: 900px) {
+    .hatch-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hatch-preview {
+        order: -1;
+    }
+
+    #preview-canvas {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .hatch-settings,
+    .hatch-preview {
+        padding: 16px;
+    }
+
+    .setting-input,
+    .setting-select {
+        padding: 8px 12px;
+    }
+
+    #preview-canvas {
+        height: 250px;
+    }
+}
