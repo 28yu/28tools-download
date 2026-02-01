@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>塗潰しパターン作成 - 28 Tools</title>
+    <title>塗潰し（ハッチング）パターン自動作成 - 28 Tools</title>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
@@ -33,12 +33,12 @@
         <nav class="breadcrumb">
             <a href="index.html">ホーム</a>
             <span class="separator">›</span>
-            <span>塗潰しパターン作成</span>
+            <span>塗潰し（ハッチング）パターン自動作成</span>
         </nav>
 
         <!-- メインコンテンツ -->
         <main class="hatch-main">
-            <h2 class="page-title">塗潰しパターン作成</h2>
+            <h2 class="page-title">塗潰し（ハッチング）パターン自動作成</h2>
             <p class="page-description">Revit / AutoCAD用のハッチングパターンファイル（.pat）を作成できます。</p>
 
             <div class="hatch-container">
@@ -55,27 +55,27 @@
                         <label class="setting-label">パターン種類</label>
                         <div class="pattern-type-grid" id="pattern-type-grid">
                             <div class="pattern-type-item selected" data-type="diagonal">
-                                <canvas class="pattern-thumbnail" data-pattern="diagonal" width="60" height="60"></canvas>
+                                <canvas class="pattern-thumbnail" data-pattern="diagonal" width="40" height="40"></canvas>
                                 <span class="pattern-type-name">斜線</span>
                             </div>
                             <div class="pattern-type-item" data-type="crosshatch">
-                                <canvas class="pattern-thumbnail" data-pattern="crosshatch" width="60" height="60"></canvas>
+                                <canvas class="pattern-thumbnail" data-pattern="crosshatch" width="40" height="40"></canvas>
                                 <span class="pattern-type-name">クロス</span>
                             </div>
                             <div class="pattern-type-item" data-type="dot">
-                                <canvas class="pattern-thumbnail" data-pattern="dot" width="60" height="60"></canvas>
+                                <canvas class="pattern-thumbnail" data-pattern="dot" width="40" height="40"></canvas>
                                 <span class="pattern-type-name">ドット</span>
                             </div>
                             <div class="pattern-type-item" data-type="tile-grid">
-                                <canvas class="pattern-thumbnail" data-pattern="tile-grid" width="60" height="60"></canvas>
+                                <canvas class="pattern-thumbnail" data-pattern="tile-grid" width="40" height="40"></canvas>
                                 <span class="pattern-type-name">芋目地</span>
                             </div>
                             <div class="pattern-type-item" data-type="tile-brick">
-                                <canvas class="pattern-thumbnail" data-pattern="tile-brick" width="60" height="60"></canvas>
+                                <canvas class="pattern-thumbnail" data-pattern="tile-brick" width="40" height="40"></canvas>
                                 <span class="pattern-type-name">馬目地</span>
                             </div>
                             <div class="pattern-type-item" data-type="rc-concrete">
-                                <canvas class="pattern-thumbnail" data-pattern="rc-concrete" width="60" height="60"></canvas>
+                                <canvas class="pattern-thumbnail" data-pattern="rc-concrete" width="40" height="40"></canvas>
                                 <span class="pattern-type-name">RC</span>
                             </div>
                         </div>
@@ -86,118 +86,150 @@
                     <div id="pattern-settings">
                         <!-- 斜線設定 -->
                         <div id="settings-diagonal" class="pattern-specific-settings">
-                            <div class="setting-group">
-                                <label class="setting-label">角度 (°)</label>
-                                <input type="number" id="diagonal-angle" class="setting-input" value="45" min="0" max="360">
+                            <div class="setting-row">
+                                <div class="setting-group compact">
+                                    <label class="setting-label">角度 (°)</label>
+                                    <input type="number" id="diagonal-angle" class="setting-input" value="45" min="0" max="360">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label">間隔 (mm)</label>
+                                    <input type="number" id="diagonal-spacing" class="setting-input" value="10" min="1">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label">破線設定</label>
+                                    <select id="diagonal-dash-type" class="setting-select">
+                                        <option value="none">実線</option>
+                                        <option value="alternate">一本おき</option>
+                                        <option value="all">全て破線</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="setting-group">
-                                <label class="setting-label">間隔 (mm)</label>
-                                <input type="number" id="diagonal-spacing" class="setting-input" value="10" min="1">
-                            </div>
-                            <div class="setting-group">
-                                <label class="setting-label">破線設定</label>
-                                <select id="diagonal-dash-type" class="setting-select">
-                                    <option value="none">実線</option>
-                                    <option value="alternate">一本おき</option>
-                                    <option value="all">全て破線</option>
-                                </select>
-                            </div>
-                            <div class="setting-group dash-settings" style="display: none;">
-                                <label class="setting-label">破線の長さ (mm)</label>
-                                <input type="number" id="diagonal-dash-length" class="setting-input" value="5" min="1">
-                            </div>
-                            <div class="setting-group dash-settings" style="display: none;">
-                                <label class="setting-label">破線の間隔 (mm)</label>
-                                <input type="number" id="diagonal-dash-gap" class="setting-input" value="3" min="1">
+                            <div class="setting-row dash-settings" style="display: none;">
+                                <div class="setting-group compact">
+                                    <label class="setting-label">破線長さ (mm)</label>
+                                    <input type="number" id="diagonal-dash-length" class="setting-input" value="5" min="1">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label">破線間隔 (mm)</label>
+                                    <input type="number" id="diagonal-dash-gap" class="setting-input" value="3" min="1">
+                                </div>
                             </div>
                         </div>
 
                         <!-- クロスハッチ設定 -->
                         <div id="settings-crosshatch" class="pattern-specific-settings" style="display: none;">
-                            <div class="setting-group">
-                                <label class="setting-label">角度 (°)</label>
-                                <input type="number" id="crosshatch-angle" class="setting-input" value="45" min="0" max="360">
+                            <div class="setting-row">
+                                <div class="setting-group compact">
+                                    <label class="setting-label">角度 (°)</label>
+                                    <input type="number" id="crosshatch-angle" class="setting-input" value="45" min="0" max="360">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label">間隔 (mm)</label>
+                                    <input type="number" id="crosshatch-spacing" class="setting-input" value="10" min="1">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label">破線設定</label>
+                                    <select id="crosshatch-dash-type" class="setting-select">
+                                        <option value="none">実線</option>
+                                        <option value="alternate">一本おき</option>
+                                        <option value="all">全て破線</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="setting-group">
-                                <label class="setting-label">間隔 (mm)</label>
-                                <input type="number" id="crosshatch-spacing" class="setting-input" value="10" min="1">
-                            </div>
-                            <div class="setting-group">
-                                <label class="setting-label">破線設定</label>
-                                <select id="crosshatch-dash-type" class="setting-select">
-                                    <option value="none">実線</option>
-                                    <option value="alternate">一本おき</option>
-                                    <option value="all">全て破線</option>
-                                </select>
-                            </div>
-                            <div class="setting-group crosshatch-dash-settings" style="display: none;">
-                                <label class="setting-label">破線の長さ (mm)</label>
-                                <input type="number" id="crosshatch-dash-length" class="setting-input" value="5" min="1">
-                            </div>
-                            <div class="setting-group crosshatch-dash-settings" style="display: none;">
-                                <label class="setting-label">破線の間隔 (mm)</label>
-                                <input type="number" id="crosshatch-dash-gap" class="setting-input" value="3" min="1">
+                            <div class="setting-row crosshatch-dash-settings" style="display: none;">
+                                <div class="setting-group compact">
+                                    <label class="setting-label">破線長さ (mm)</label>
+                                    <input type="number" id="crosshatch-dash-length" class="setting-input" value="5" min="1">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label">破線間隔 (mm)</label>
+                                    <input type="number" id="crosshatch-dash-gap" class="setting-input" value="3" min="1">
+                                </div>
                             </div>
                         </div>
 
                         <!-- ドット設定 -->
                         <div id="settings-dot" class="pattern-specific-settings" style="display: none;">
-                            <div class="setting-group">
-                                <label class="setting-label">X方向間隔 (mm)</label>
-                                <input type="number" id="dot-spacing-x" class="setting-input" value="10" min="1">
-                            </div>
-                            <div class="setting-group">
-                                <label class="setting-label">Y方向間隔 (mm)</label>
-                                <input type="number" id="dot-spacing-y" class="setting-input" value="10" min="1">
-                            </div>
-                            <div class="setting-group">
-                                <label class="setting-label">ドットサイズ (mm)</label>
-                                <input type="number" id="dot-size" class="setting-input" value="1" min="0.1" step="0.1">
+                            <div class="setting-row">
+                                <div class="setting-group compact">
+                                    <label class="setting-label">X間隔 (mm)</label>
+                                    <input type="number" id="dot-spacing-x" class="setting-input" value="10" min="1">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label">Y間隔 (mm)</label>
+                                    <input type="number" id="dot-spacing-y" class="setting-input" value="10" min="1">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label">サイズ (mm)</label>
+                                    <input type="number" id="dot-size" class="setting-input" value="1" min="0.1" step="0.1">
+                                </div>
                             </div>
                         </div>
 
                         <!-- タイル（芋目地）設定 -->
                         <div id="settings-tile-grid" class="pattern-specific-settings" style="display: none;">
-                            <div class="setting-group">
-                                <label class="setting-label">タイル幅 (mm)</label>
-                                <input type="number" id="tile-grid-width" class="setting-input" value="100" min="1">
+                            <div class="setting-row">
+                                <div class="setting-group compact">
+                                    <label class="setting-label">幅 (mm)</label>
+                                    <input type="number" id="tile-grid-width" class="setting-input" value="100" min="1">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label">高さ (mm)</label>
+                                    <input type="number" id="tile-grid-height" class="setting-input" value="100" min="1">
+                                </div>
                             </div>
-                            <div class="setting-group">
-                                <label class="setting-label">タイル高さ (mm)</label>
-                                <input type="number" id="tile-grid-height" class="setting-input" value="100" min="1">
-                            </div>
-                            <div class="setting-group">
-                                <label class="setting-label">目地サイズ (mm)</label>
-                                <input type="number" id="tile-grid-grout" class="setting-input" value="5" min="0">
+                            <div class="setting-row">
+                                <div class="setting-group compact checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="tile-grid-grout-enabled" class="setting-checkbox">
+                                        <span>目地あり</span>
+                                    </label>
+                                </div>
+                                <div class="setting-group compact tile-grid-grout-settings" style="display: none;">
+                                    <label class="setting-label">目地サイズ (mm)</label>
+                                    <input type="number" id="tile-grid-grout" class="setting-input" value="5" min="1">
+                                </div>
                             </div>
                         </div>
 
                         <!-- タイル（馬目地）設定 -->
                         <div id="settings-tile-brick" class="pattern-specific-settings" style="display: none;">
-                            <div class="setting-group">
-                                <label class="setting-label">タイル幅 (mm)</label>
-                                <input type="number" id="tile-brick-width" class="setting-input" value="200" min="1">
+                            <div class="setting-row">
+                                <div class="setting-group compact">
+                                    <label class="setting-label">幅 (mm)</label>
+                                    <input type="number" id="tile-brick-width" class="setting-input" value="200" min="1">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label">高さ (mm)</label>
+                                    <input type="number" id="tile-brick-height" class="setting-input" value="100" min="1">
+                                </div>
                             </div>
-                            <div class="setting-group">
-                                <label class="setting-label">タイル高さ (mm)</label>
-                                <input type="number" id="tile-brick-height" class="setting-input" value="100" min="1">
-                            </div>
-                            <div class="setting-group">
-                                <label class="setting-label">目地サイズ (mm)</label>
-                                <input type="number" id="tile-brick-grout" class="setting-input" value="5" min="0">
+                            <div class="setting-row">
+                                <div class="setting-group compact checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="tile-brick-grout-enabled" class="setting-checkbox">
+                                        <span>目地あり</span>
+                                    </label>
+                                </div>
+                                <div class="setting-group compact tile-brick-grout-settings" style="display: none;">
+                                    <label class="setting-label">目地サイズ (mm)</label>
+                                    <input type="number" id="tile-brick-grout" class="setting-input" value="5" min="1">
+                                </div>
                             </div>
                             <p class="setting-note">※ ずらし量は1/2固定</p>
                         </div>
 
                         <!-- RCコンクリート設定 -->
                         <div id="settings-rc-concrete" class="pattern-specific-settings" style="display: none;">
-                            <div class="setting-group">
-                                <label class="setting-label">3本線内の間隔 (mm)</label>
-                                <input type="number" id="rc-inner-spacing" class="setting-input" value="2" min="0.5" step="0.5">
-                            </div>
-                            <div class="setting-group">
-                                <label class="setting-label">3本線グループ間の間隔 (mm)</label>
-                                <input type="number" id="rc-outer-spacing" class="setting-input" value="15" min="1">
+                            <div class="setting-row">
+                                <div class="setting-group compact">
+                                    <label class="setting-label">線内間隔 (mm)</label>
+                                    <input type="number" id="rc-inner-spacing" class="setting-input" value="2" min="0.5" step="0.5">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label">グループ間隔 (mm)</label>
+                                    <input type="number" id="rc-outer-spacing" class="setting-input" value="15" min="1">
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -42,6 +42,14 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleDashSettings('crosshatch', this.value);
         });
 
+        // 目地チェックボックスの変更
+        tileGridGroutEnabled.addEventListener('change', function() {
+            toggleGroutSettings('tile-grid', this.checked);
+        });
+        tileBrickGroutEnabled.addEventListener('change', function() {
+            toggleGroutSettings('tile-brick', this.checked);
+        });
+
         // 全入力フィールドの変更でプレビュー更新
         document.querySelectorAll('.setting-input, .setting-select').forEach(el => {
             el.addEventListener('change', updatePreview);
@@ -57,12 +65,16 @@ document.addEventListener('DOMContentLoaded', function() {
         updatePreview();
     }
 
+    // 目地チェックボックス
+    const tileGridGroutEnabled = document.getElementById('tile-grid-grout-enabled');
+    const tileBrickGroutEnabled = document.getElementById('tile-brick-grout-enabled');
+
     // サムネイル描画
     function drawAllThumbnails() {
         document.querySelectorAll('.pattern-thumbnail').forEach(thumbCanvas => {
             const pattern = thumbCanvas.dataset.pattern;
             const thumbCtx = thumbCanvas.getContext('2d');
-            drawThumbnail(thumbCtx, pattern, 60, 60);
+            drawThumbnail(thumbCtx, pattern, 40, 40);
         });
     }
 
@@ -96,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function drawDiagonalThumbnail(ctx, w, h) {
-        const spacing = 8;
+        const spacing = 6;
         ctx.beginPath();
         for (let i = -h; i < w + h; i += spacing) {
             ctx.moveTo(i, 0);
@@ -106,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function drawCrosshatchThumbnail(ctx, w, h) {
-        const spacing = 10;
+        const spacing = 8;
         ctx.beginPath();
         for (let i = -h; i < w + h; i += spacing) {
             ctx.moveTo(i, 0);
@@ -118,21 +130,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function drawDotThumbnail(ctx, w, h) {
-        const spacing = 10;
+        const spacing = 8;
         ctx.fillStyle = '#333333';
         for (let x = spacing / 2; x < w; x += spacing) {
             for (let y = spacing / 2; y < h; y += spacing) {
                 ctx.beginPath();
-                ctx.arc(x, y, 2, 0, Math.PI * 2);
+                ctx.arc(x, y, 1.5, 0, Math.PI * 2);
                 ctx.fill();
             }
         }
     }
 
     function drawTileGridThumbnail(ctx, w, h) {
-        const tileW = 25;
-        const tileH = 25;
-        const grout = 3;
+        // 馬目地と同じ尺度感（横長タイル）
+        const tileW = 18;
+        const tileH = 8;
+        const grout = 2;
         ctx.fillStyle = '#888888';
         ctx.fillRect(0, 0, w, h);
         ctx.fillStyle = '#ffffff';
@@ -144,8 +157,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function drawTileBrickThumbnail(ctx, w, h) {
-        const tileW = 28;
-        const tileH = 12;
+        const tileW = 18;
+        const tileH = 8;
         const grout = 2;
         ctx.fillStyle = '#888888';
         ctx.fillRect(0, 0, w, h);
@@ -162,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function drawRCConcreteThumbnail(ctx, w, h) {
         const innerSpacing = 2;
-        const groupSpacing = 12;
+        const groupSpacing = 10;
         ctx.beginPath();
         let pos = 0;
         while (pos < w + h) {
@@ -218,7 +231,16 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleDashSettings(prefix, value) {
         const dashSettings = document.querySelectorAll('.' + prefix + '-dash-settings, #settings-' + prefix + ' .dash-settings');
         dashSettings.forEach(el => {
-            el.style.display = value === 'none' ? 'none' : 'block';
+            el.style.display = value === 'none' ? 'none' : 'flex';
+        });
+        updatePreview();
+    }
+
+    // 目地設定の表示切り替え
+    function toggleGroutSettings(prefix, enabled) {
+        const groutSettings = document.querySelectorAll('.' + prefix + '-grout-settings');
+        groutSettings.forEach(el => {
+            el.style.display = enabled ? 'block' : 'none';
         });
         updatePreview();
     }
@@ -366,32 +388,33 @@ document.addEventListener('DOMContentLoaded', function() {
     function drawTileGridPreview(scale) {
         const width = parseFloat(document.getElementById('tile-grid-width').value) || 100;
         const height = parseFloat(document.getElementById('tile-grid-height').value) || 100;
-        const grout = parseFloat(document.getElementById('tile-grid-grout').value) || 5;
+        const groutEnabled = tileGridGroutEnabled.checked;
+        const grout = groutEnabled ? (parseFloat(document.getElementById('tile-grid-grout').value) || 5) : 0;
 
-        const widthPx = width * scale;
-        const heightPx = height * scale;
-        const groutPx = grout * scale;
+        // プレビュー用のスケールを自動調整（画面に収まるように）
+        const maxDim = Math.max(width, height);
+        const tileScale = Math.min(scale, canvas.width / (maxDim * 2.5));
+
+        const widthPx = width * tileScale;
+        const heightPx = height * tileScale;
+        const groutPx = grout * tileScale;
 
         const totalWidth = widthPx + groutPx;
         const totalHeight = heightPx + groutPx;
 
-        // 目地（背景）
-        ctx.fillStyle = '#888888';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        // 目地あり：目地色で背景を塗る
+        if (groutEnabled && grout > 0) {
+            ctx.fillStyle = '#888888';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
 
         // タイル
         ctx.fillStyle = '#ffffff';
-        for (let x = 0; x < canvas.width; x += totalWidth) {
-            for (let y = 0; y < canvas.height; y += totalHeight) {
-                ctx.fillRect(x, y, widthPx, heightPx);
-            }
-        }
-
-        // タイル枠線
         ctx.strokeStyle = '#333333';
         ctx.lineWidth = 1;
-        for (let x = 0; x < canvas.width; x += totalWidth) {
-            for (let y = 0; y < canvas.height; y += totalHeight) {
+        for (let x = 0; x < canvas.width + totalWidth; x += totalWidth) {
+            for (let y = 0; y < canvas.height + totalHeight; y += totalHeight) {
+                ctx.fillRect(x, y, widthPx, heightPx);
                 ctx.strokeRect(x, y, widthPx, heightPx);
             }
         }
@@ -401,19 +424,26 @@ document.addEventListener('DOMContentLoaded', function() {
     function drawTileBrickPreview(scale) {
         const width = parseFloat(document.getElementById('tile-brick-width').value) || 200;
         const height = parseFloat(document.getElementById('tile-brick-height').value) || 100;
-        const grout = parseFloat(document.getElementById('tile-brick-grout').value) || 5;
+        const groutEnabled = tileBrickGroutEnabled.checked;
+        const grout = groutEnabled ? (parseFloat(document.getElementById('tile-brick-grout').value) || 5) : 0;
 
-        const widthPx = width * scale;
-        const heightPx = height * scale;
-        const groutPx = grout * scale;
+        // プレビュー用のスケールを自動調整（画面に収まるように）
+        const maxDim = Math.max(width, height);
+        const tileScale = Math.min(scale, canvas.width / (maxDim * 2.5));
+
+        const widthPx = width * tileScale;
+        const heightPx = height * tileScale;
+        const groutPx = grout * tileScale;
 
         const totalWidth = widthPx + groutPx;
         const totalHeight = heightPx + groutPx;
         const offset = totalWidth / 2; // 1/2ずらし
 
-        // 目地（背景）
-        ctx.fillStyle = '#888888';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        // 目地あり：目地色で背景を塗る
+        if (groutEnabled && grout > 0) {
+            ctx.fillStyle = '#888888';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
 
         // タイル
         ctx.fillStyle = '#ffffff';
@@ -421,9 +451,9 @@ document.addEventListener('DOMContentLoaded', function() {
         ctx.lineWidth = 1;
 
         let row = 0;
-        for (let y = 0; y < canvas.height; y += totalHeight) {
+        for (let y = -totalHeight; y < canvas.height + totalHeight; y += totalHeight) {
             const xOffset = (row % 2) * offset;
-            for (let x = -offset; x < canvas.width + offset; x += totalWidth) {
+            for (let x = -offset - totalWidth; x < canvas.width + offset + totalWidth; x += totalWidth) {
                 ctx.fillRect(x + xOffset, y, widthPx, heightPx);
                 ctx.strokeRect(x + xOffset, y, widthPx, heightPx);
             }
@@ -600,7 +630,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function generateTileGridPattern(format, isModel) {
         const width = parseFloat(document.getElementById('tile-grid-width').value) || 100;
         const height = parseFloat(document.getElementById('tile-grid-height').value) || 100;
-        const grout = parseFloat(document.getElementById('tile-grid-grout').value) || 5;
+        const groutEnabled = tileGridGroutEnabled.checked;
+        const grout = groutEnabled ? (parseFloat(document.getElementById('tile-grid-grout').value) || 5) : 0;
 
         const scale = isModel ? 1 : 25.4;
         const totalW = (width + grout) / scale;
@@ -609,10 +640,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const h = height / scale;
 
         let lines = '';
-        // 水平線
-        lines += `0, 0, 0, 0, ${totalH}, ${w}, -${grout / scale}\n`;
-        // 垂直線
-        lines += `90, 0, 0, 0, ${totalW}, ${h}, -${grout / scale}\n`;
+        if (grout > 0) {
+            // 目地あり：破線で描画
+            lines += `0, 0, 0, 0, ${totalH}, ${w}, -${grout / scale}\n`;
+            lines += `90, 0, 0, 0, ${totalW}, ${h}, -${grout / scale}\n`;
+        } else {
+            // 目地なし：グリッド線のみ
+            lines += `0, 0, 0, 0, ${totalH}\n`;
+            lines += `90, 0, 0, 0, ${totalW}\n`;
+        }
 
         return lines;
     }
@@ -621,7 +657,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function generateTileBrickPattern(format, isModel) {
         const width = parseFloat(document.getElementById('tile-brick-width').value) || 200;
         const height = parseFloat(document.getElementById('tile-brick-height').value) || 100;
-        const grout = parseFloat(document.getElementById('tile-brick-grout').value) || 5;
+        const groutEnabled = tileBrickGroutEnabled.checked;
+        const grout = groutEnabled ? (parseFloat(document.getElementById('tile-brick-grout').value) || 5) : 0;
 
         const scale = isModel ? 1 : 25.4;
         const totalW = (width + grout) / scale;
@@ -631,12 +668,17 @@ document.addEventListener('DOMContentLoaded', function() {
         const halfW = totalW / 2;
 
         let lines = '';
-        // 水平線
-        lines += `0, 0, 0, 0, ${totalH}, ${w}, -${grout / scale}\n`;
-        // 垂直線（1行目）
-        lines += `90, 0, 0, ${halfW}, ${totalH * 2}, ${h}, -${grout / scale}\n`;
-        // 垂直線（2行目、半分ずれ）
-        lines += `90, ${halfW}, ${totalH}, ${halfW}, ${totalH * 2}, ${h}, -${grout / scale}\n`;
+        if (grout > 0) {
+            // 目地あり：破線で描画
+            lines += `0, 0, 0, 0, ${totalH}, ${w}, -${grout / scale}\n`;
+            lines += `90, 0, 0, ${halfW}, ${totalH * 2}, ${h}, -${grout / scale}\n`;
+            lines += `90, ${halfW}, ${totalH}, ${halfW}, ${totalH * 2}, ${h}, -${grout / scale}\n`;
+        } else {
+            // 目地なし
+            lines += `0, 0, 0, 0, ${totalH}\n`;
+            lines += `90, 0, 0, ${halfW}, ${totalH * 2}, ${h}, -${totalH}\n`;
+            lines += `90, ${halfW}, ${totalH}, ${halfW}, ${totalH * 2}, ${h}, -${totalH}\n`;
+        }
 
         return lines;
     }
