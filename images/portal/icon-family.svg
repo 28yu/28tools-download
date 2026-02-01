@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#4a5568">
+  <!-- Warehouse/Building roof -->
+  <path d="M32 4L4 24V28H60V24L32 4Z" fill="#4a5568"/>
+  <!-- Building body -->
+  <rect x="8" y="28" width="48" height="32" fill="none" stroke="#4a5568" stroke-width="4"/>
+  <!-- Windows/doors -->
+  <rect x="16" y="36" width="12" height="12" fill="#4a5568"/>
+  <rect x="36" y="36" width="12" height="12" fill="#4a5568"/>
+  <rect x="16" y="52" width="12" height="8" fill="#4a5568"/>
+  <rect x="36" y="52" width="12" height="8" fill="#4a5568"/>
+</svg>
