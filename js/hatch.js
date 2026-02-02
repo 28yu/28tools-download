@@ -635,8 +635,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function generatePatternFile() {
         const type = patternTypeInput.value;
         const format = outputFormatSelect.value;
-        // ファイル内容にはASCII名を使用（文字化け防止）
-        const name = generateAsciiPatternName();
+        // 日本語のパターン名を使用
+        const name = generateAutoPatternName();
         const patternUnit = document.getElementById('pattern-unit').value;
         const isModel = format === 'revit' && document.getElementById('revit-pattern-type').value === 'model';
 
@@ -794,25 +794,23 @@ document.addEventListener('DOMContentLoaded', function() {
         const h = height / scale;
         const g = grout / scale;
         const halfG = g / 2;
-        const halfW = totalW / 2;
+        const halfTotalW = totalW / 2;
 
         let lines = '';
         if (grout > 0) {
-            // 目地あり：水平線4本＋垂直線4本
-            // 水平線（目地幅の半分だけオフセット）
-            lines += `0, ${halfG}, ${halfG}, 0, ${totalH}, ${w}, -${g}\n`;
-            lines += `0, ${halfG}, -${halfG}, 0, ${totalH}, ${w}, -${g}\n`;
-            // 垂直線（1段目: 偶数行）
-            lines += `90, ${halfG}, ${halfG}, 0, ${totalW}, ${h}, -${g}\n`;
-            lines += `90, -${halfG}, ${halfG}, 0, ${totalW}, ${h}, -${g}\n`;
-            // 垂直線（2段目: 奇数行、半タイル分ずらし）
-            lines += `90, ${halfW + halfG}, ${totalH + halfG}, 0, ${totalW}, ${h}, -${g}\n`;
-            lines += `90, ${halfW - halfG}, ${totalH + halfG}, 0, ${totalW}, ${h}, -${g}\n`;
+            // 目地あり：水平線2本＋垂直線2本（馬目地用）
+            // 水平線（千鳥配置用にdelta-xを設定）
+            lines += `0,${halfG},${halfG},${halfTotalW},${totalH},${w},-${g}\n`;
+            lines += `0,${halfG},${halfTotalW},${halfTotalW},${totalH},${w},-${g}\n`;
+            // 垂直線（1段おきに描画、gap = 高さ + 2*目地幅）
+            const verticalGap = h + 2 * g;
+            lines += `90,${halfG},${halfG},${totalH},${halfTotalW},${h},-${verticalGap}\n`;
+            lines += `90,-${halfG},${halfG},${totalH},${halfTotalW},${h},-${verticalGap}\n`;
         } else {
             // 目地なし
             lines += `0, 0, 0, 0, ${totalH}\n`;
-            lines += `90, 0, 0, ${halfW}, ${totalH * 2}, ${h}, -${totalH}\n`;
-            lines += `90, ${halfW}, ${totalH}, ${halfW}, ${totalH * 2}, ${h}, -${totalH}\n`;
+            lines += `90, 0, 0, ${halfTotalW}, ${totalH * 2}, ${h}, -${totalH}\n`;
+            lines += `90, ${halfTotalW}, ${totalH}, ${halfTotalW}, ${totalH * 2}, ${h}, -${totalH}\n`;
         }
 
         return lines;
@@ -908,12 +906,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ファイルダウンロード
     function downloadPatternFile() {
-        // ファイル名は日本語
         const fileName = generateAutoPatternName();
-        // ファイル内容はASCII（generatePatternFile内で自動設定）
         const content = generatePatternFile();
 
-        const blob = new Blob([content], { type: 'text/plain' });
+        // UTF-8 BOMを追加（日本語の文字化け防止）
+        const BOM = '\uFEFF';
+        const blob = new Blob([BOM + content], { type: 'text/plain;charset=utf-8' });
         const url = URL.createObjectURL(blob);
 
         const a = document.createElement('a');
