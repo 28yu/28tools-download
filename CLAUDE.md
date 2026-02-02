@@ -190,11 +190,15 @@ PRが作成されると、Netlifyが自動でプレビュー環境を構築し�
 /
 ├── index.html          # トップページ（ポータル）
 ├── addins.html         # アドインダウンロードページ
-├── js/main.js          # JavaScriptロジック（多言語対応含む）
-├── css/                # スタイルシート
-│   ├── style.css
-│   ├── manual.css
-│   └── contact.css
+├── hatch.html          # ハッチングパターン作成ツール
+├── js/
+│   ├── main.js         # メインJS（多言語対応・共通機能）
+│   └── hatch.js        # ハッチングパターン作成ツール専用JS
+├── css/
+│   ├── style.css       # メインスタイル
+│   ├── hatch.css       # ハッチングページ専用スタイル
+│   ├── manual.css      # マニュアルページ用
+│   └── contact.css     # お問い合わせページ用
 ├── images/
 │   ├── portal/         # ポータルページ用アイコン
 │   │   ├── icon-addon.svg
@@ -203,7 +207,7 @@ PRが作成されると、Netlifyが自動でプレビュー環境を構築し�
 │   │   └── icon-knowledge.svg
 │   └── revit-ribbon-preview.png
 ├── includes/
-│   └── header.html     # 共通ヘッダー
+│   └── header.html     # 共通ヘッダー（言語切り替えボタン含む）
 ├── sitemap.xml         # SEO用サイトマップ
 ├── CNAME               # カスタムドメイン設定（28tools.com）
 ├── CLAUDE.md           # このファイル（開発ガイド）
@@ -227,6 +231,7 @@ PRが作成されると、Netlifyが自動でプレビュー環境を構築し�
 ### ページ構成
 - **トップページ（index.html）**: ポータル型レイアウト（サイドバー + メインコンテンツ）
 - **アドインページ（addins.html）**: Revitアドインのダウンロード・マニュアル
+- **ハッチングページ（hatch.html）**: ハッチングパターン作成ツール
 - **サブタイトル**: 全ページ「Revit 作図サポートツール」で統一
 
 ### カテゴリ（トップページ）
@@ -234,13 +239,77 @@ PRが作成されると、Netlifyが自動でプレビュー環境を構築し�
 |---------|------|------|
 | アドイン | 利用可能 | 6機能のRevitアドイン |
 | ファミリ | 準備中 | Revitファミリライブラリ |
-| 塗潰し | 準備中 | ハッチング自動作成機能 |
+| 塗潰し | 利用可能 | ハッチングパターン作成ツール |
 | ナレッジ | 準備中 | Tips・チュートリアル |
 
 ### デザイン仕様
 - サイドバー幅: 100px
 - サブタイトル: font-size 1.1rem, opacity 0.8
 - カテゴリアイコン: SVG形式（images/portal/）
+
+## ハッチングパターン作成ツール（hatch.html）
+
+### 概要
+Revit / AutoCAD用のハッチングパターンファイル（.pat）を作成するWebツール
+
+### 対応パターン
+| パターン | 設定項目 |
+|---------|---------|
+| 斜線（diagonal） | 角度、間隔、破線設定 |
+| クロス（crosshatch） | 角度、間隔、破線設定 |
+| ドット（dot） | X/Y間隔、ドットサイズ |
+| 芋目地（tile-grid） | 幅、高さ、目地あり/なし、目地サイズ |
+| 馬目地（tile-brick） | 幅、高さ、目地あり/なし、目地サイズ（1/2固定） |
+| RC（rc-concrete） | 線内間隔、グループ間隔 |
+
+### 出力形式
+- **Revit**: モデル（実寸）/ 製図（スケール依存）
+- **AutoCAD**: 標準.pat形式
+
+### ファイル構成
+- `hatch.html`: UIとレイアウト
+- `css/hatch.css`: スタイル（パターンカード、設定パネル、プレビュー）
+- `js/hatch.js`: パターン生成ロジック、Canvas描画、ファイルダウンロード
+
+## 開発ルール
+
+### 多言語対応
+- **対応言語**: 日本語（ja）、英語（en）、中国語（zh）
+- **翻訳ファイル**: `js/main.js` 内の `translations` オブジェクト
+- **HTMLでの使用**: `data-lang-key="キー名"` 属性を追加
+
+### 翻訳キー命名規則
+```
+[ページ名]-[要素名]
+
+例：
+- hatch-page-title       # ハッチページのタイトル
+- hatch-type-diagonal    # パターン種類「斜線」
+- hatch-grout-enabled    # 「目地あり」チェックボックス
+- footer-about           # フッター「運営者情報」
+```
+
+### 新規ページ追加時のチェックリスト
+1. 共有ヘッダーを使用: `<div id="header-container"></div>`
+2. `main.js` を読み込む（言語切り替え機能のため）
+3. 翻訳対象要素に `data-lang-key` を追加
+4. `js/main.js` に翻訳を追加（`translations.[pageName]`）
+5. `Object.assign` に新しい翻訳オブジェクトを追加
+
+### CSSルール
+- メインスタイル: `css/style.css`
+- ページ固有スタイル: `css/[pagename].css`
+- CSS変数を使用（`var(--blueprint-blue)` など）
+
+### コミットメッセージ
+```
+[タイプ] 簡潔な説明
+
+例：
+- Add hatch pattern creation tool
+- Fix grout checkbox not working
+- Update translations for hatch page
+```
 
 ## 過去のセッション情報
 
