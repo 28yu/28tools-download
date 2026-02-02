@@ -384,6 +384,79 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // 寸法線を描画するヘルパー関数
+    function drawDimensionLine(x1, y1, x2, y2, label, position) {
+        const arrowSize = 4;
+        const labelOffset = 12;
+
+        ctx.save();
+        ctx.strokeStyle = '#e74c3c';
+        ctx.fillStyle = '#e74c3c';
+        ctx.lineWidth = 1;
+        ctx.font = '10px "Noto Sans JP", sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        // 寸法線を描画
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+
+        // 矢印の方向を計算
+        const isHorizontal = Math.abs(y2 - y1) < Math.abs(x2 - x1);
+
+        if (isHorizontal) {
+            // 水平線の矢印（両端）
+            // 左矢印
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x1 + arrowSize, y1 - arrowSize);
+            ctx.lineTo(x1 + arrowSize, y1 + arrowSize);
+            ctx.closePath();
+            ctx.fill();
+            // 右矢印
+            ctx.beginPath();
+            ctx.moveTo(x2, y2);
+            ctx.lineTo(x2 - arrowSize, y2 - arrowSize);
+            ctx.lineTo(x2 - arrowSize, y2 + arrowSize);
+            ctx.closePath();
+            ctx.fill();
+
+            // ラベル位置
+            const labelX = (x1 + x2) / 2;
+            const labelY = position === 'above' ? y1 - labelOffset : y1 + labelOffset;
+            ctx.fillText(label, labelX, labelY);
+        } else {
+            // 垂直線の矢印（両端）
+            // 上矢印
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x1 - arrowSize, y1 + arrowSize);
+            ctx.lineTo(x1 + arrowSize, y1 + arrowSize);
+            ctx.closePath();
+            ctx.fill();
+            // 下矢印
+            ctx.beginPath();
+            ctx.moveTo(x2, y2);
+            ctx.lineTo(x2 - arrowSize, y2 - arrowSize);
+            ctx.lineTo(x2 + arrowSize, y2 - arrowSize);
+            ctx.closePath();
+            ctx.fill();
+
+            // ラベル位置
+            const labelX = position === 'left' ? x1 - labelOffset : x1 + labelOffset;
+            const labelY = (y1 + y2) / 2;
+            ctx.save();
+            ctx.translate(labelX, labelY);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText(label, 0, 0);
+            ctx.restore();
+        }
+
+        ctx.restore();
+    }
+
     // タイル（芋目地）プレビュー
     function drawTileGridPreview(scale) {
         const width = parseFloat(document.getElementById('tile-grid-width').value) || 100;
@@ -393,7 +466,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // プレビュー用のスケールを自動調整（画面に収まるように）
         const maxDim = Math.max(width, height);
-        const tileScale = Math.min(scale, canvas.width / (maxDim * 2.5));
+        const tileScale = Math.min(scale, canvas.width / (maxDim * 3.5));
 
         const widthPx = width * tileScale;
         const heightPx = height * tileScale;
@@ -402,21 +475,40 @@ document.addEventListener('DOMContentLoaded', function() {
         const totalWidth = widthPx + groutPx;
         const totalHeight = heightPx + groutPx;
 
+        // 描画開始位置を計算（中央寄せ）
+        const startX = 25;
+        const startY = 25;
+
         // 目地あり：目地色で背景を塗る
         if (groutEnabled && grout > 0) {
             ctx.fillStyle = '#888888';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillRect(startX, startY, canvas.width - startX * 2, canvas.height - startY * 2);
         }
 
         // タイル
         ctx.fillStyle = '#ffffff';
         ctx.strokeStyle = '#333333';
         ctx.lineWidth = 1;
-        for (let x = 0; x < canvas.width + totalWidth; x += totalWidth) {
-            for (let y = 0; y < canvas.height + totalHeight; y += totalHeight) {
+        for (let x = startX; x < canvas.width - startX + totalWidth; x += totalWidth) {
+            for (let y = startY; y < canvas.height - startY + totalHeight; y += totalHeight) {
                 ctx.fillRect(x, y, widthPx, heightPx);
                 ctx.strokeRect(x, y, widthPx, heightPx);
             }
+        }
+
+        // 寸法線を描画
+        const tileX = startX;
+        const tileY = startY;
+
+        // 幅の寸法線（上部）
+        drawDimensionLine(tileX, tileY - 8, tileX + widthPx, tileY - 8, '幅', 'above');
+
+        // 高さの寸法線（左側）
+        drawDimensionLine(tileX - 8, tileY, tileX - 8, tileY + heightPx, '高さ', 'left');
+
+        // 目地幅の寸法線（目地ありの場合のみ）
+        if (groutEnabled && grout > 0 && groutPx > 2) {
+            drawDimensionLine(tileX + widthPx, tileY + heightPx + 8, tileX + widthPx + groutPx, tileY + heightPx + 8, '目地', 'below');
         }
     }
 
@@ -429,7 +521,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // プレビュー用のスケールを自動調整（画面に収まるように）
         const maxDim = Math.max(width, height);
-        const tileScale = Math.min(scale, canvas.width / (maxDim * 2.5));
+        const tileScale = Math.min(scale, canvas.width / (maxDim * 3.5));
 
         const widthPx = width * tileScale;
         const heightPx = height * tileScale;
@@ -439,10 +531,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const totalHeight = heightPx + groutPx;
         const offset = totalWidth / 2; // 1/2ずらし
 
+        // 描画開始位置を計算
+        const startX = 25;
+        const startY = 25;
+
         // 目地あり：目地色で背景を塗る
         if (groutEnabled && grout > 0) {
             ctx.fillStyle = '#888888';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillRect(startX, startY, canvas.width - startX * 2, canvas.height - startY * 2);
         }
 
         // タイル
@@ -450,14 +546,45 @@ document.addEventListener('DOMContentLoaded', function() {
         ctx.strokeStyle = '#333333';
         ctx.lineWidth = 1;
 
+        // クリッピング領域を設定
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(startX, startY, canvas.width - startX * 2, canvas.height - startY * 2);
+        ctx.clip();
+
         let row = 0;
-        for (let y = -totalHeight; y < canvas.height + totalHeight; y += totalHeight) {
+        let firstTileX = startX;
+        let firstTileY = startY;
+        for (let y = startY - totalHeight; y < canvas.height; y += totalHeight) {
             const xOffset = (row % 2) * offset;
-            for (let x = -offset - totalWidth; x < canvas.width + offset + totalWidth; x += totalWidth) {
+            for (let x = startX - offset - totalWidth; x < canvas.width; x += totalWidth) {
                 ctx.fillRect(x + xOffset, y, widthPx, heightPx);
                 ctx.strokeRect(x + xOffset, y, widthPx, heightPx);
+
+                // 最初の完全に見えるタイルの位置を記録
+                if (row === 0 && x + xOffset >= startX && firstTileX === startX) {
+                    firstTileX = x + xOffset;
+                    firstTileY = y;
+                }
             }
             row++;
+        }
+
+        ctx.restore();
+
+        // 寸法線を描画
+        const tileX = firstTileX > startX ? firstTileX : startX;
+        const tileY = startY;
+
+        // 幅の寸法線（上部）
+        drawDimensionLine(tileX, tileY - 8, tileX + widthPx, tileY - 8, '幅', 'above');
+
+        // 高さの寸法線（左側）
+        drawDimensionLine(startX - 8, tileY, startX - 8, tileY + heightPx, '高さ', 'left');
+
+        // 目地幅の寸法線（目地ありの場合のみ）
+        if (groutEnabled && grout > 0 && groutPx > 2) {
+            drawDimensionLine(tileX + widthPx, tileY + heightPx + 8, tileX + widthPx + groutPx, tileY + heightPx + 8, '目地', 'below');
         }
     }
 
