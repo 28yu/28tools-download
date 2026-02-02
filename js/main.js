@@ -1568,9 +1568,9 @@ function initTranslations() {
             zh: '斜线'
         },
         'hatch-type-crosshatch': {
-            ja: 'クロス',
-            en: 'Cross',
-            zh: '交叉'
+            ja: '網掛け',
+            en: 'Crosshatch',
+            zh: '网格线'
         },
         'hatch-type-dot': {
             ja: 'ドット',
