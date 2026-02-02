@@ -25,8 +25,11 @@ mainブランチ → 本番サイト（28tools.com）として公開
 1. **claude/で始まるブランチで開発**
    - Claude Codeがコードを変更・コミット・プッシュ
 
-2. **PR自動作成**
-   - GitHub Actionsが自動でPRを作成
+2. **PR作成**
+   - **Claude Codeが `gh pr create` コマンドでPRを作成する**
+   - GitHub Actionsによる自動作成はバックアップとして機能
+   - PRタイトル: 変更内容を簡潔に記載
+   - PR本文: Summary（変更内容）とTest plan（テスト手順）を含める
 
 3. **Netlifyプレビューで確認**
    - PRページにNetlifyプレビューURLが表示される

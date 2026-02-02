@@ -3,6 +3,51 @@
  * Revit / AutoCAD用の.patファイルを生成
  */
 
+// Shift-JIS エンコーディング（日本語パターン名用）
+// Revit/AutoCADはWindows環境でShift-JISを期待する
+const ShiftJIS = (function() {
+    // Unicode → Shift-JIS マッピング（パターン名で使用する文字）
+    const unicodeToSJIS = {
+        // ひらがな
+        'け': 0x82AF, 'め': 0x82DF, 'じ': 0x82B6,
+        // カタカナ
+        'ド': 0x8368, 'ッ': 0x8362, 'ト': 0x8367,
+        // 漢字（パターン名で使用）
+        '斜': 0x8ED2, '線': 0x90FC, '網': 0x96D4, '掛': 0x8A7C,
+        '芋': 0x88F0, '目': 0x96DA, '地': 0x926E, '馬': 0x946E
+    };
+
+    function encode(str) {
+        const bytes = [];
+        for (let i = 0; i < str.length; i++) {
+            const char = str[i];
+            const code = char.charCodeAt(0);
+
+            // ASCII (0x00-0x7F)
+            if (code <= 0x7F) {
+                bytes.push(code);
+            }
+            // 半角カナ (0xFF61-0xFF9F → 0xA1-0xDF)
+            else if (code >= 0xFF61 && code <= 0xFF9F) {
+                bytes.push(code - 0xFF61 + 0xA1);
+            }
+            // マッピングテーブルから検索
+            else if (unicodeToSJIS[char]) {
+                const sjis = unicodeToSJIS[char];
+                bytes.push((sjis >> 8) & 0xFF);
+                bytes.push(sjis & 0xFF);
+            }
+            // 未対応文字は「?」に置換
+            else {
+                bytes.push(0x3F);
+            }
+        }
+        return new Uint8Array(bytes);
+    }
+
+    return { encode };
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
     // DOM要素
     const patternTypeInput = document.getElementById('pattern-type');
@@ -365,18 +410,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ドットプレビュー
     function drawDotPreview(scale) {
-        const spacingX = parseFloat(document.getElementById('dot-spacing-x').value) || 10;
-        const spacingY = parseFloat(document.getElementById('dot-spacing-y').value) || 10;
+        const spacing = parseFloat(document.getElementById('dot-spacing').value) || 10;
         const dotSize = parseFloat(document.getElementById('dot-size').value) || 1;
 
-        const spacingXPx = spacingX * scale;
-        const spacingYPx = spacingY * scale;
+        const spacingPx = spacing * scale;
         const dotSizePx = Math.max(dotSize * scale, 1);
 
         ctx.fillStyle = '#333333';
 
-        for (let x = 0; x < canvas.width; x += spacingXPx) {
-            for (let y = 0; y < canvas.height; y += spacingYPx) {
+        for (let x = 0; x < canvas.width; x += spacingPx) {
+            for (let y = 0; y < canvas.height; y += spacingPx) {
                 ctx.beginPath();
                 ctx.arc(x, y, dotSizePx, 0, Math.PI * 2);
                 ctx.fill();
@@ -512,9 +555,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Yの寸法線（左側）
         drawDimensionLine(tileX - 10, tileY, tileX - 10, tileY + heightPx, 'Y', 'left');
 
-        // 目地Xの寸法線（目地ありの場合のみ）
+        // 目地Xの寸法線（目地ありの場合のみ、下部に水平表示）
         if (groutEnabled && groutX > 0 && groutXPx > 2) {
             drawDimensionLine(tileX + widthPx + 2, tileY + heightPx + 12, tileX + widthPx + groutXPx - 2, tileY + heightPx + 12, '目地X', 'below');
+        }
+
+        // 目地Yの寸法線（目地ありの場合のみ、右側に垂直表示）
+        if (groutEnabled && groutY > 0 && groutYPx > 2) {
+            drawDimensionLine(tileX + widthPx + 12, tileY + heightPx + 2, tileX + widthPx + 12, tileY + heightPx + groutYPx - 2, '目地Y', 'right');
         }
     }
 
@@ -577,9 +625,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Yの寸法線（左側）
         drawDimensionLine(startX - 10, tileY, startX - 10, tileY + heightPx, 'Y', 'left');
 
-        // 目地Xの寸法線（目地ありの場合のみ）
+        // 目地Xの寸法線（目地ありの場合のみ、下部に水平表示）
         if (groutEnabled && groutX > 0 && groutXPx > 2) {
             drawDimensionLine(tileX + widthPx + 2, tileY + heightPx + 12, tileX + widthPx + groutXPx - 2, tileY + heightPx + 12, '目地X', 'below');
+        }
+
+        // 目地Yの寸法線（目地ありの場合のみ、右側に垂直表示）
+        if (groutEnabled && groutY > 0 && groutYPx > 2) {
+            drawDimensionLine(tileX + widthPx + 12, tileY + heightPx + 2, tileX + widthPx + 12, tileY + heightPx + groutYPx - 2, '目地Y', 'right');
         }
     }
 
@@ -639,8 +692,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function generatePatternFile() {
         const type = patternTypeInput.value;
         const format = outputFormatSelect.value;
-        // ASCIIパターン名を使用（Revit互換）
-        const name = generateAsciiPatternName();
+        // 日本語パターン名を使用（Shift-JISエンコードで互換性確保）
+        const name = generateAutoPatternName();
         const patternUnit = document.getElementById('pattern-unit').value;
         const isModel = format === 'revit' && document.getElementById('revit-pattern-type').value === 'model';
 
@@ -738,15 +791,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ドットパターン生成
     function generateDotPattern(format, isModel) {
-        const spacingX = parseFloat(document.getElementById('dot-spacing-x').value) || 10;
-        const spacingY = parseFloat(document.getElementById('dot-spacing-y').value) || 10;
+        const spacing = parseFloat(document.getElementById('dot-spacing').value) || 10;
         const dotSize = parseFloat(document.getElementById('dot-size').value) || 1;
 
         const scale = isModel ? 1 : 25.4;
 
         // ドットは短い線で表現
         let lines = '';
-        lines += `0, 0, 0, ${spacingX / scale}, ${spacingY / scale}, ${dotSize / scale}, -${(spacingX - dotSize) / scale}\n`;
+        lines += `0,0,0,${spacing / scale},${spacing / scale},${dotSize / scale},-${(spacing - dotSize) / scale}\n`;
 
         return lines;
     }
@@ -888,8 +940,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 params.push(document.getElementById('crosshatch-spacing').value || '10');
                 break;
             case 'dot':
-                params.push(document.getElementById('dot-spacing-x').value || '10');
-                params.push(document.getElementById('dot-spacing-y').value || '10');
+                params.push(document.getElementById('dot-spacing').value || '10');
                 params.push(document.getElementById('dot-size').value || '1');
                 break;
             case 'tile-grid':
@@ -918,12 +969,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ファイルダウンロード
     function downloadPatternFile() {
-        // ファイル名は日本語、内容はASCII
+        // ファイル名と内容の両方に日本語パターン名を使用
         const fileName = generateAutoPatternName();
         const content = generatePatternFile();
 
-        // BOMなし、ASCIIエンコーディングでRevit互換
-        const blob = new Blob([content], { type: 'text/plain;charset=ascii' });
+        // Shift-JISエンコーディングでRevit/AutoCAD互換性を確保
+        const sjisBytes = ShiftJIS.encode(content);
+        const blob = new Blob([sjisBytes], { type: 'application/octet-stream' });
         const url = URL.createObjectURL(blob);
 
         const a = document.createElement('a');
