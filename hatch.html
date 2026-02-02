@@ -232,11 +232,23 @@
 
                     <!-- 出力設定 -->
                     <div class="setting-group output-settings">
-                        <label class="setting-label" data-lang-key="hatch-output-format">出力形式</label>
-                        <select id="output-format" class="setting-select">
-                            <option value="revit">Revit</option>
-                            <option value="autocad">AutoCAD</option>
-                        </select>
+                        <div class="setting-row">
+                            <div class="setting-group compact">
+                                <label class="setting-label" data-lang-key="hatch-output-format">出力形式</label>
+                                <select id="output-format" class="setting-select">
+                                    <option value="revit">Revit</option>
+                                    <option value="autocad">AutoCAD</option>
+                                </select>
+                            </div>
+                            <div class="setting-group compact">
+                                <label class="setting-label" data-lang-key="hatch-unit">単位</label>
+                                <select id="pattern-unit" class="setting-select">
+                                    <option value="MM">mm</option>
+                                    <option value="INCH">inch</option>
+                                    <option value="FOOT">foot</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Revit専用設定 -->

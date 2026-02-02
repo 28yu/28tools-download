@@ -1687,6 +1687,11 @@ function initTranslations() {
             en: 'Output Format',
             zh: '输出格式'
         },
+        'hatch-unit': {
+            ja: '単位',
+            en: 'Unit',
+            zh: '单位'
+        },
         'hatch-revit-pattern-type': {
             ja: 'パターンタイプ',
             en: 'Pattern Type',
