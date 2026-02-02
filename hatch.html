@@ -160,11 +160,11 @@
                         <div id="settings-tile-grid" class="pattern-specific-settings" style="display: none;">
                             <div class="setting-row">
                                 <div class="setting-group compact">
-                                    <label class="setting-label" data-lang-key="hatch-width">幅 (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-x">X (mm)</label>
                                     <input type="number" id="tile-grid-width" class="setting-input" value="100" min="1">
                                 </div>
                                 <div class="setting-group compact">
-                                    <label class="setting-label" data-lang-key="hatch-height">高さ (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-y">Y (mm)</label>
                                     <input type="number" id="tile-grid-height" class="setting-input" value="100" min="1">
                                 </div>
                             </div>
@@ -175,9 +175,15 @@
                                         <span data-lang-key="hatch-grout-enabled">目地あり</span>
                                     </label>
                                 </div>
-                                <div class="setting-group compact tile-grid-grout-settings" style="display: none;">
-                                    <label class="setting-label" data-lang-key="hatch-grout-size">目地サイズ (mm)</label>
-                                    <input type="number" id="tile-grid-grout" class="setting-input" value="5" min="1">
+                            </div>
+                            <div class="setting-row tile-grid-grout-settings" style="display: none;">
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-grout-x">目地X (mm)</label>
+                                    <input type="number" id="tile-grid-grout-x" class="setting-input" value="5" min="1">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-grout-y">目地Y (mm)</label>
+                                    <input type="number" id="tile-grid-grout-y" class="setting-input" value="5" min="1">
                                 </div>
                             </div>
                         </div>
@@ -186,11 +192,11 @@
                         <div id="settings-tile-brick" class="pattern-specific-settings" style="display: none;">
                             <div class="setting-row">
                                 <div class="setting-group compact">
-                                    <label class="setting-label" data-lang-key="hatch-width">幅 (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-x">X (mm)</label>
                                     <input type="number" id="tile-brick-width" class="setting-input" value="200" min="1">
                                 </div>
                                 <div class="setting-group compact">
-                                    <label class="setting-label" data-lang-key="hatch-height">高さ (mm)</label>
+                                    <label class="setting-label" data-lang-key="hatch-y">Y (mm)</label>
                                     <input type="number" id="tile-brick-height" class="setting-input" value="100" min="1">
                                 </div>
                             </div>
@@ -201,9 +207,15 @@
                                         <span data-lang-key="hatch-grout-enabled">目地あり</span>
                                     </label>
                                 </div>
-                                <div class="setting-group compact tile-brick-grout-settings" style="display: none;">
-                                    <label class="setting-label" data-lang-key="hatch-grout-size">目地サイズ (mm)</label>
-                                    <input type="number" id="tile-brick-grout" class="setting-input" value="5" min="1">
+                            </div>
+                            <div class="setting-row tile-brick-grout-settings" style="display: none;">
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-grout-x">目地X (mm)</label>
+                                    <input type="number" id="tile-brick-grout-x" class="setting-input" value="5" min="1">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-grout-y">目地Y (mm)</label>
+                                    <input type="number" id="tile-brick-grout-y" class="setting-input" value="5" min="1">
                                 </div>
                             </div>
                             <p class="setting-note" data-lang-key="hatch-offset-note">※ ずらし量は1/2固定</p>
