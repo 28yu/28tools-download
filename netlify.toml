@@ -1,0 +1,20 @@
+# Netlify configuration
+# Deploy preview settings
+
+[build]
+  publish = "."
+  command = "echo 'Static site - no build needed'"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Enable deploy previews for pull requests
+[context.deploy-preview]
+  command = "echo 'Deploy preview'"
+
+# Redirect settings (optional)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
