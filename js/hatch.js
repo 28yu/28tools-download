@@ -464,9 +464,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const groutEnabled = tileGridGroutEnabled.checked;
         const grout = groutEnabled ? (parseFloat(document.getElementById('tile-grid-grout').value) || 5) : 0;
 
-        // プレビュー用のスケールを自動調整（画面に収まるように）
-        const maxDim = Math.max(width, height);
-        const tileScale = Math.min(scale, canvas.width / (maxDim * 3.5));
+        // プレビュー用のスケールを自動調整（寸法線用マージンを考慮）
+        const margin = 35;
+        const availableSize = canvas.width - margin * 2;
+        const maxDim = Math.max(width + grout, height + grout);
+        const tileScale = Math.min(scale, availableSize / (maxDim * 1.8));
 
         const widthPx = width * tileScale;
         const heightPx = height * tileScale;
@@ -475,40 +477,42 @@ document.addEventListener('DOMContentLoaded', function() {
         const totalWidth = widthPx + groutPx;
         const totalHeight = heightPx + groutPx;
 
-        // 描画開始位置を計算（中央寄せ）
-        const startX = 25;
-        const startY = 25;
+        // 描画開始位置（寸法線用マージンを確保）
+        const startX = margin;
+        const startY = margin;
 
-        // 目地あり：目地色で背景を塗る
-        if (groutEnabled && grout > 0) {
-            ctx.fillStyle = '#888888';
-            ctx.fillRect(startX, startY, canvas.width - startX * 2, canvas.height - startY * 2);
-        }
-
-        // タイル
+        // タイル描画（目地は線で表現）
         ctx.fillStyle = '#ffffff';
         ctx.strokeStyle = '#333333';
         ctx.lineWidth = 1;
-        for (let x = startX; x < canvas.width - startX + totalWidth; x += totalWidth) {
-            for (let y = startY; y < canvas.height - startY + totalHeight; y += totalHeight) {
+
+        // クリッピング領域
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(startX, startY, canvas.width - margin * 2, canvas.height - margin * 2);
+        ctx.clip();
+
+        for (let x = startX; x < canvas.width; x += totalWidth) {
+            for (let y = startY; y < canvas.height; y += totalHeight) {
                 ctx.fillRect(x, y, widthPx, heightPx);
                 ctx.strokeRect(x, y, widthPx, heightPx);
             }
         }
+        ctx.restore();
 
         // 寸法線を描画
         const tileX = startX;
         const tileY = startY;
 
         // 幅の寸法線（上部）
-        drawDimensionLine(tileX, tileY - 8, tileX + widthPx, tileY - 8, '幅', 'above');
+        drawDimensionLine(tileX, tileY - 10, tileX + widthPx, tileY - 10, '幅', 'above');
 
         // 高さの寸法線（左側）
-        drawDimensionLine(tileX - 8, tileY, tileX - 8, tileY + heightPx, '高さ', 'left');
+        drawDimensionLine(tileX - 10, tileY, tileX - 10, tileY + heightPx, '高さ', 'left');
 
         // 目地幅の寸法線（目地ありの場合のみ）
         if (groutEnabled && grout > 0 && groutPx > 2) {
-            drawDimensionLine(tileX + widthPx, tileY + heightPx + 8, tileX + widthPx + groutPx, tileY + heightPx + 8, '目地', 'below');
+            drawDimensionLine(tileX + widthPx + 2, tileY + heightPx + 12, tileX + widthPx + groutPx - 2, tileY + heightPx + 12, '目地', 'below');
         }
     }
 
@@ -519,9 +523,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const groutEnabled = tileBrickGroutEnabled.checked;
         const grout = groutEnabled ? (parseFloat(document.getElementById('tile-brick-grout').value) || 5) : 0;
 
-        // プレビュー用のスケールを自動調整（画面に収まるように）
-        const maxDim = Math.max(width, height);
-        const tileScale = Math.min(scale, canvas.width / (maxDim * 3.5));
+        // プレビュー用のスケールを自動調整（寸法線用マージンを考慮）
+        const margin = 35;
+        const availableSize = canvas.width - margin * 2;
+        const maxDim = Math.max(width + grout, height + grout);
+        const tileScale = Math.min(scale, availableSize / (maxDim * 1.8));
 
         const widthPx = width * tileScale;
         const heightPx = height * tileScale;
@@ -531,17 +537,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const totalHeight = heightPx + groutPx;
         const offset = totalWidth / 2; // 1/2ずらし
 
-        // 描画開始位置を計算
-        const startX = 25;
-        const startY = 25;
+        // 描画開始位置（寸法線用マージンを確保）
+        const startX = margin;
+        const startY = margin;
 
-        // 目地あり：目地色で背景を塗る
-        if (groutEnabled && grout > 0) {
-            ctx.fillStyle = '#888888';
-            ctx.fillRect(startX, startY, canvas.width - startX * 2, canvas.height - startY * 2);
-        }
-
-        // タイル
+        // タイル描画（目地は線で表現）
         ctx.fillStyle = '#ffffff';
         ctx.strokeStyle = '#333333';
         ctx.lineWidth = 1;
@@ -549,42 +549,33 @@ document.addEventListener('DOMContentLoaded', function() {
         // クリッピング領域を設定
         ctx.save();
         ctx.beginPath();
-        ctx.rect(startX, startY, canvas.width - startX * 2, canvas.height - startY * 2);
+        ctx.rect(startX, startY, canvas.width - margin * 2, canvas.height - margin * 2);
         ctx.clip();
 
         let row = 0;
-        let firstTileX = startX;
-        let firstTileY = startY;
-        for (let y = startY - totalHeight; y < canvas.height; y += totalHeight) {
+        for (let y = startY; y < canvas.height; y += totalHeight) {
             const xOffset = (row % 2) * offset;
-            for (let x = startX - offset - totalWidth; x < canvas.width; x += totalWidth) {
+            for (let x = startX - offset; x < canvas.width; x += totalWidth) {
                 ctx.fillRect(x + xOffset, y, widthPx, heightPx);
                 ctx.strokeRect(x + xOffset, y, widthPx, heightPx);
-
-                // 最初の完全に見えるタイルの位置を記録
-                if (row === 0 && x + xOffset >= startX && firstTileX === startX) {
-                    firstTileX = x + xOffset;
-                    firstTileY = y;
-                }
             }
             row++;
         }
-
         ctx.restore();
 
         // 寸法線を描画
-        const tileX = firstTileX > startX ? firstTileX : startX;
+        const tileX = startX;
         const tileY = startY;
 
         // 幅の寸法線（上部）
-        drawDimensionLine(tileX, tileY - 8, tileX + widthPx, tileY - 8, '幅', 'above');
+        drawDimensionLine(tileX, tileY - 10, tileX + widthPx, tileY - 10, '幅', 'above');
 
         // 高さの寸法線（左側）
-        drawDimensionLine(startX - 8, tileY, startX - 8, tileY + heightPx, '高さ', 'left');
+        drawDimensionLine(startX - 10, tileY, startX - 10, tileY + heightPx, '高さ', 'left');
 
         // 目地幅の寸法線（目地ありの場合のみ）
         if (groutEnabled && grout > 0 && groutPx > 2) {
-            drawDimensionLine(tileX + widthPx, tileY + heightPx + 8, tileX + widthPx + groutPx, tileY + heightPx + 8, '目地', 'below');
+            drawDimensionLine(tileX + widthPx + 2, tileY + heightPx + 12, tileX + widthPx + groutPx - 2, tileY + heightPx + 12, '目地', 'below');
         }
     }
 
@@ -646,6 +637,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const type = patternTypeInput.value;
         const format = outputFormatSelect.value;
         const patternName = document.getElementById('pattern-name').value || 'CUSTOM_PATTERN';
+        const patternUnit = document.getElementById('pattern-unit').value;
         const isModel = format === 'revit' && document.getElementById('revit-pattern-type').value === 'model';
 
         let patContent = '';
@@ -654,11 +646,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (format === 'revit') {
             patContent += `;; Revit Pattern File\n`;
             patContent += `;; Generated by 28 Tools\n`;
-            patContent += `*${patternName}, ${isModel ? 'MODEL' : 'DRAFTING'}\n`;
+            patContent += `;%UNITS=${patternUnit}\n`;
+            patContent += `*${patternName}\n`;
             patContent += `;%TYPE=${isModel ? 'MODEL' : 'DRAFTING'}\n`;
         } else {
             patContent += `;; AutoCAD Pattern File\n`;
             patContent += `;; Generated by 28 Tools\n`;
+            patContent += `;%UNITS=${patternUnit}\n`;
             patContent += `*${patternName}\n`;
         }
 
