@@ -462,20 +462,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const width = parseFloat(document.getElementById('tile-grid-width').value) || 100;
         const height = parseFloat(document.getElementById('tile-grid-height').value) || 100;
         const groutEnabled = tileGridGroutEnabled.checked;
-        const grout = groutEnabled ? (parseFloat(document.getElementById('tile-grid-grout').value) || 5) : 0;
+        const groutX = groutEnabled ? (parseFloat(document.getElementById('tile-grid-grout-x').value) || 5) : 0;
+        const groutY = groutEnabled ? (parseFloat(document.getElementById('tile-grid-grout-y').value) || 5) : 0;
 
         // プレビュー用のスケールを自動調整（寸法線用マージンを考慮）
         const margin = 35;
         const availableSize = canvas.width - margin * 2;
-        const maxDim = Math.max(width + grout, height + grout);
+        const maxDim = Math.max(width + groutX, height + groutY);
         const tileScale = Math.min(scale, availableSize / (maxDim * 1.8));
 
         const widthPx = width * tileScale;
         const heightPx = height * tileScale;
-        const groutPx = grout * tileScale;
+        const groutXPx = groutX * tileScale;
+        const groutYPx = groutY * tileScale;
 
-        const totalWidth = widthPx + groutPx;
-        const totalHeight = heightPx + groutPx;
+        const totalWidth = widthPx + groutXPx;
+        const totalHeight = heightPx + groutYPx;
 
         // 描画開始位置（寸法線用マージンを確保）
         const startX = margin;
@@ -504,15 +506,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const tileX = startX;
         const tileY = startY;
 
-        // 幅の寸法線（上部）
-        drawDimensionLine(tileX, tileY - 10, tileX + widthPx, tileY - 10, '幅', 'above');
+        // Xの寸法線（上部）
+        drawDimensionLine(tileX, tileY - 10, tileX + widthPx, tileY - 10, 'X', 'above');
 
-        // 高さの寸法線（左側）
-        drawDimensionLine(tileX - 10, tileY, tileX - 10, tileY + heightPx, '高さ', 'left');
+        // Yの寸法線（左側）
+        drawDimensionLine(tileX - 10, tileY, tileX - 10, tileY + heightPx, 'Y', 'left');
 
-        // 目地幅の寸法線（目地ありの場合のみ）
-        if (groutEnabled && grout > 0 && groutPx > 2) {
-            drawDimensionLine(tileX + widthPx + 2, tileY + heightPx + 12, tileX + widthPx + groutPx - 2, tileY + heightPx + 12, '目地', 'below');
+        // 目地Xの寸法線（目地ありの場合のみ）
+        if (groutEnabled && groutX > 0 && groutXPx > 2) {
+            drawDimensionLine(tileX + widthPx + 2, tileY + heightPx + 12, tileX + widthPx + groutXPx - 2, tileY + heightPx + 12, '目地X', 'below');
         }
     }
 
@@ -521,20 +523,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const width = parseFloat(document.getElementById('tile-brick-width').value) || 200;
         const height = parseFloat(document.getElementById('tile-brick-height').value) || 100;
         const groutEnabled = tileBrickGroutEnabled.checked;
-        const grout = groutEnabled ? (parseFloat(document.getElementById('tile-brick-grout').value) || 5) : 0;
+        const groutX = groutEnabled ? (parseFloat(document.getElementById('tile-brick-grout-x').value) || 5) : 0;
+        const groutY = groutEnabled ? (parseFloat(document.getElementById('tile-brick-grout-y').value) || 5) : 0;
 
         // プレビュー用のスケールを自動調整（寸法線用マージンを考慮）
         const margin = 35;
         const availableSize = canvas.width - margin * 2;
-        const maxDim = Math.max(width + grout, height + grout);
+        const maxDim = Math.max(width + groutX, height + groutY);
         const tileScale = Math.min(scale, availableSize / (maxDim * 1.8));
 
         const widthPx = width * tileScale;
         const heightPx = height * tileScale;
-        const groutPx = grout * tileScale;
+        const groutXPx = groutX * tileScale;
+        const groutYPx = groutY * tileScale;
 
-        const totalWidth = widthPx + groutPx;
-        const totalHeight = heightPx + groutPx;
+        const totalWidth = widthPx + groutXPx;
+        const totalHeight = heightPx + groutYPx;
         const offset = totalWidth / 2; // 1/2ずらし
 
         // 描画開始位置（寸法線用マージンを確保）
@@ -567,15 +571,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const tileX = startX;
         const tileY = startY;
 
-        // 幅の寸法線（上部）
-        drawDimensionLine(tileX, tileY - 10, tileX + widthPx, tileY - 10, '幅', 'above');
+        // Xの寸法線（上部）
+        drawDimensionLine(tileX, tileY - 10, tileX + widthPx, tileY - 10, 'X', 'above');
 
-        // 高さの寸法線（左側）
-        drawDimensionLine(startX - 10, tileY, startX - 10, tileY + heightPx, '高さ', 'left');
+        // Yの寸法線（左側）
+        drawDimensionLine(startX - 10, tileY, startX - 10, tileY + heightPx, 'Y', 'left');
 
-        // 目地幅の寸法線（目地ありの場合のみ）
-        if (groutEnabled && grout > 0 && groutPx > 2) {
-            drawDimensionLine(tileX + widthPx + 2, tileY + heightPx + 12, tileX + widthPx + groutPx - 2, tileY + heightPx + 12, '目地', 'below');
+        // 目地Xの寸法線（目地ありの場合のみ）
+        if (groutEnabled && groutX > 0 && groutXPx > 2) {
+            drawDimensionLine(tileX + widthPx + 2, tileY + heightPx + 12, tileX + widthPx + groutXPx - 2, tileY + heightPx + 12, '目地X', 'below');
         }
     }
 
@@ -635,8 +639,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function generatePatternFile() {
         const type = patternTypeInput.value;
         const format = outputFormatSelect.value;
-        // 日本語のパターン名を使用
-        const name = generateAutoPatternName();
+        // ASCIIパターン名を使用（Revit互換）
+        const name = generateAsciiPatternName();
         const patternUnit = document.getElementById('pattern-unit').value;
         const isModel = format === 'revit' && document.getElementById('revit-pattern-type').value === 'model';
 
@@ -752,29 +756,32 @@ document.addEventListener('DOMContentLoaded', function() {
         const width = parseFloat(document.getElementById('tile-grid-width').value) || 100;
         const height = parseFloat(document.getElementById('tile-grid-height').value) || 100;
         const groutEnabled = tileGridGroutEnabled.checked;
-        const grout = groutEnabled ? (parseFloat(document.getElementById('tile-grid-grout').value) || 5) : 0;
+        const groutX = groutEnabled ? (parseFloat(document.getElementById('tile-grid-grout-x').value) || 5) : 0;
+        const groutY = groutEnabled ? (parseFloat(document.getElementById('tile-grid-grout-y').value) || 5) : 0;
 
         const scale = isModel ? 1 : 25.4;
-        const totalW = (width + grout) / scale;
-        const totalH = (height + grout) / scale;
+        const totalW = (width + groutX) / scale;
+        const totalH = (height + groutY) / scale;
         const w = width / scale;
         const h = height / scale;
-        const g = grout / scale;
-        const halfG = g / 2;
+        const gx = groutX / scale;
+        const gy = groutY / scale;
+        const halfGx = gx / 2;
+        const halfGy = gy / 2;
 
         let lines = '';
-        if (grout > 0) {
+        if (groutX > 0 || groutY > 0) {
             // 目地あり：4本の線で目地を表現
-            // 水平線2本（目地幅の半分だけオフセット）
-            lines += `0, ${halfG}, ${halfG}, 0, ${totalH}, ${w}, -${g}\n`;
-            lines += `0, ${halfG}, -${halfG}, 0, ${totalH}, ${w}, -${g}\n`;
-            // 垂直線2本（目地幅の半分だけオフセット）
-            lines += `90, ${halfG}, ${halfG}, 0, ${totalW}, ${h}, -${g}\n`;
-            lines += `90, -${halfG}, ${halfG}, 0, ${totalW}, ${h}, -${g}\n`;
+            // 水平線2本（目地Yの半分だけオフセット）
+            lines += `0,${halfGy},${halfGy},0,${totalH},${w},-${gx}\n`;
+            lines += `0,${halfGy},-${halfGy},0,${totalH},${w},-${gx}\n`;
+            // 垂直線2本（目地Xの半分だけオフセット）
+            lines += `90,${halfGx},${halfGx},0,${totalW},${h},-${gy}\n`;
+            lines += `90,-${halfGx},${halfGx},0,${totalW},${h},-${gy}\n`;
         } else {
             // 目地なし：グリッド線のみ
-            lines += `0, 0, 0, 0, ${totalH}\n`;
-            lines += `90, 0, 0, 0, ${totalW}\n`;
+            lines += `0,0,0,0,${totalH}\n`;
+            lines += `90,0,0,0,${totalW}\n`;
         }
 
         return lines;
@@ -785,32 +792,35 @@ document.addEventListener('DOMContentLoaded', function() {
         const width = parseFloat(document.getElementById('tile-brick-width').value) || 200;
         const height = parseFloat(document.getElementById('tile-brick-height').value) || 100;
         const groutEnabled = tileBrickGroutEnabled.checked;
-        const grout = groutEnabled ? (parseFloat(document.getElementById('tile-brick-grout').value) || 5) : 0;
+        const groutX = groutEnabled ? (parseFloat(document.getElementById('tile-brick-grout-x').value) || 5) : 0;
+        const groutY = groutEnabled ? (parseFloat(document.getElementById('tile-brick-grout-y').value) || 5) : 0;
 
         const scale = isModel ? 1 : 25.4;
-        const totalW = (width + grout) / scale;
-        const totalH = (height + grout) / scale;
+        const totalW = (width + groutX) / scale;
+        const totalH = (height + groutY) / scale;
         const w = width / scale;
         const h = height / scale;
-        const g = grout / scale;
-        const halfG = g / 2;
+        const gx = groutX / scale;
+        const gy = groutY / scale;
+        const halfGx = gx / 2;
+        const halfGy = gy / 2;
         const halfTotalW = totalW / 2;
 
         let lines = '';
-        if (grout > 0) {
+        if (groutX > 0 || groutY > 0) {
             // 目地あり：水平線2本＋垂直線2本（馬目地用）
             // 水平線（千鳥配置用にdelta-xを設定）
-            lines += `0,${halfG},${halfG},${halfTotalW},${totalH},${w},-${g}\n`;
-            lines += `0,${halfG},${halfTotalW},${halfTotalW},${totalH},${w},-${g}\n`;
-            // 垂直線（1段おきに描画、gap = 高さ + 2*目地幅）
-            const verticalGap = h + 2 * g;
-            lines += `90,${halfG},${halfG},${totalH},${halfTotalW},${h},-${verticalGap}\n`;
-            lines += `90,-${halfG},${halfG},${totalH},${halfTotalW},${h},-${verticalGap}\n`;
+            lines += `0,${halfGy},${halfGy},${halfTotalW},${totalH},${w},-${gx}\n`;
+            lines += `0,${halfGy},${halfTotalW},${halfTotalW},${totalH},${w},-${gx}\n`;
+            // 垂直線（1段おきに描画、gap = 高さ + 2*目地Y）
+            const verticalGap = h + 2 * gy;
+            lines += `90,${halfGx},${halfGx},${totalH},${halfTotalW},${h},-${verticalGap}\n`;
+            lines += `90,-${halfGx},${halfGx},${totalH},${halfTotalW},${h},-${verticalGap}\n`;
         } else {
             // 目地なし
-            lines += `0, 0, 0, 0, ${totalH}\n`;
-            lines += `90, 0, 0, ${halfTotalW}, ${totalH * 2}, ${h}, -${totalH}\n`;
-            lines += `90, ${halfTotalW}, ${totalH}, ${halfTotalW}, ${totalH * 2}, ${h}, -${totalH}\n`;
+            lines += `0,0,0,0,${totalH}\n`;
+            lines += `90,0,0,${halfTotalW},${totalH * 2},${h},-${totalH}\n`;
+            lines += `90,${halfTotalW},${totalH},${halfTotalW},${totalH * 2},${h},-${totalH}\n`;
         }
 
         return lines;
@@ -886,14 +896,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 params.push(document.getElementById('tile-grid-width').value || '100');
                 params.push(document.getElementById('tile-grid-height').value || '100');
                 if (tileGridGroutEnabled.checked) {
-                    params.push(document.getElementById('tile-grid-grout').value || '5');
+                    params.push(document.getElementById('tile-grid-grout-x').value || '5');
+                    params.push(document.getElementById('tile-grid-grout-y').value || '5');
                 }
                 break;
             case 'tile-brick':
                 params.push(document.getElementById('tile-brick-width').value || '200');
                 params.push(document.getElementById('tile-brick-height').value || '100');
                 if (tileBrickGroutEnabled.checked) {
-                    params.push(document.getElementById('tile-brick-grout').value || '5');
+                    params.push(document.getElementById('tile-brick-grout-x').value || '5');
+                    params.push(document.getElementById('tile-brick-grout-y').value || '5');
                 }
                 break;
             case 'rc-concrete':
@@ -906,12 +918,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ファイルダウンロード
     function downloadPatternFile() {
+        // ファイル名は日本語、内容はASCII
         const fileName = generateAutoPatternName();
         const content = generatePatternFile();
 
-        // UTF-8 BOMを追加（日本語の文字化け防止）
-        const BOM = '\uFEFF';
-        const blob = new Blob([BOM + content], { type: 'text/plain;charset=utf-8' });
+        // BOMなし、ASCIIエンコーディングでRevit互換
+        const blob = new Blob([content], { type: 'text/plain;charset=ascii' });
         const url = URL.createObjectURL(blob);
 
         const a = document.createElement('a');
