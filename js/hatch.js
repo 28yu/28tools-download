@@ -632,10 +632,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // パターンファイル生成
-    function generatePatternFile(patternName) {
+    function generatePatternFile() {
         const type = patternTypeInput.value;
         const format = outputFormatSelect.value;
-        const name = patternName || generateAutoPatternName();
+        // ファイル内容にはASCII名を使用（文字化け防止）
+        const name = generateAsciiPatternName();
         const patternUnit = document.getElementById('pattern-unit').value;
         const isModel = format === 'revit' && document.getElementById('revit-pattern-type').value === 'model';
 
@@ -758,12 +759,18 @@ document.addEventListener('DOMContentLoaded', function() {
         const totalH = (height + grout) / scale;
         const w = width / scale;
         const h = height / scale;
+        const g = grout / scale;
+        const halfG = g / 2;
 
         let lines = '';
         if (grout > 0) {
-            // 目地あり：破線で描画
-            lines += `0, 0, 0, 0, ${totalH}, ${w}, -${grout / scale}\n`;
-            lines += `90, 0, 0, 0, ${totalW}, ${h}, -${grout / scale}\n`;
+            // 目地あり：4本の線で目地を表現
+            // 水平線2本（目地幅の半分だけオフセット）
+            lines += `0, ${halfG}, ${halfG}, 0, ${totalH}, ${w}, -${g}\n`;
+            lines += `0, ${halfG}, -${halfG}, 0, ${totalH}, ${w}, -${g}\n`;
+            // 垂直線2本（目地幅の半分だけオフセット）
+            lines += `90, ${halfG}, ${halfG}, 0, ${totalW}, ${h}, -${g}\n`;
+            lines += `90, -${halfG}, ${halfG}, 0, ${totalW}, ${h}, -${g}\n`;
         } else {
             // 目地なし：グリッド線のみ
             lines += `0, 0, 0, 0, ${totalH}\n`;
@@ -785,14 +792,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const totalH = (height + grout) / scale;
         const w = width / scale;
         const h = height / scale;
+        const g = grout / scale;
+        const halfG = g / 2;
         const halfW = totalW / 2;
 
         let lines = '';
         if (grout > 0) {
-            // 目地あり：破線で描画
-            lines += `0, 0, 0, 0, ${totalH}, ${w}, -${grout / scale}\n`;
-            lines += `90, 0, 0, ${halfW}, ${totalH * 2}, ${h}, -${grout / scale}\n`;
-            lines += `90, ${halfW}, ${totalH}, ${halfW}, ${totalH * 2}, ${h}, -${grout / scale}\n`;
+            // 目地あり：水平線4本＋垂直線4本
+            // 水平線（目地幅の半分だけオフセット）
+            lines += `0, ${halfG}, ${halfG}, 0, ${totalH}, ${w}, -${g}\n`;
+            lines += `0, ${halfG}, -${halfG}, 0, ${totalH}, ${w}, -${g}\n`;
+            // 垂直線（1段目: 偶数行）
+            lines += `90, ${halfG}, ${halfG}, 0, ${totalW}, ${h}, -${g}\n`;
+            lines += `90, -${halfG}, ${halfG}, 0, ${totalW}, ${h}, -${g}\n`;
+            // 垂直線（2段目: 奇数行、半タイル分ずらし）
+            lines += `90, ${halfW + halfG}, ${totalH + halfG}, 0, ${totalW}, ${h}, -${g}\n`;
+            lines += `90, ${halfW - halfG}, ${totalH + halfG}, 0, ${totalW}, ${h}, -${g}\n`;
         } else {
             // 目地なし
             lines += `0, 0, 0, 0, ${totalH}\n`;
@@ -821,7 +836,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return lines;
     }
 
-    // パターン名自動生成
+    // パターン名自動生成（日本語：ファイル名用）
     function generateAutoPatternName() {
         const type = patternTypeInput.value;
         const typeNames = {
@@ -833,7 +848,27 @@ document.addEventListener('DOMContentLoaded', function() {
             'rc-concrete': 'RC'
         };
         const typeName = typeNames[type] || type;
+        return `${typeName}_${getPatternParams().join('x')}`;
+    }
 
+    // パターン名自動生成（ASCII：.patファイル内容用）
+    function generateAsciiPatternName() {
+        const type = patternTypeInput.value;
+        const typeNames = {
+            'diagonal': 'DIAGONAL',
+            'crosshatch': 'CROSSHATCH',
+            'dot': 'DOT',
+            'tile-grid': 'TILE_GRID',
+            'tile-brick': 'TILE_BRICK',
+            'rc-concrete': 'RC'
+        };
+        const typeName = typeNames[type] || type.toUpperCase();
+        return `${typeName}_${getPatternParams().join('x')}`;
+    }
+
+    // パラメータ取得（共通）
+    function getPatternParams() {
+        const type = patternTypeInput.value;
         let params = [];
         switch (type) {
             case 'diagonal':
@@ -868,21 +903,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 params.push(document.getElementById('rc-outer-spacing').value || '15');
                 break;
         }
-
-        return `${typeName}_${params.join('x')}`;
+        return params;
     }
 
     // ファイルダウンロード
     function downloadPatternFile() {
-        const patternName = generateAutoPatternName();
-        const content = generatePatternFile(patternName);
+        // ファイル名は日本語
+        const fileName = generateAutoPatternName();
+        // ファイル内容はASCII（generatePatternFile内で自動設定）
+        const content = generatePatternFile();
 
         const blob = new Blob([content], { type: 'text/plain' });
         const url = URL.createObjectURL(blob);
 
         const a = document.createElement('a');
         a.href = url;
-        a.download = patternName + '.pat';
+        a.download = fileName + '.pat';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
