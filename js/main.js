@@ -225,6 +225,11 @@ function initTranslations() {
             ja: 'ホーム',
             en: 'Home',
             zh: '主页'
+        },
+        'addins-breadcrumb': {
+            ja: 'Revit アドイン',
+            en: 'Revit Add-ins',
+            zh: 'Revit 插件'
         }
     };
 
@@ -2718,6 +2723,15 @@ function updateAllContent() {
 function initEventListeners() {
     // モーダル関連のイベントリスナーは動的に設定
     console.log('🎯 Event listeners initialized');
+
+    // ページ内に直接言語ボタンがある場合も初期化
+    // （index.htmlなど共通ヘッダーを使わないページ用）
+    const langBtn = document.getElementById('lang-btn');
+    if (langBtn) {
+        initLanguageSwitcher();
+        updateLanguageButton();
+        updateAllContent();
+    }
 }
 
 // ========================================
