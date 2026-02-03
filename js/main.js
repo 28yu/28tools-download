@@ -144,14 +144,14 @@ function saveLanguagePreference(lang) {
 let languageSwitcherInitialized = false;
 
 function initLanguageSwitcher() {
-    // 既に初期化済みの場合はスキップ
-    if (languageSwitcherInitialized) {
+    const langBtn = document.getElementById('lang-btn');
+    const langDropdown = document.getElementById('lang-dropdown');
+
+    // 既に初期化済みの場合はスキップ（両方のフラグをチェック）
+    if (languageSwitcherInitialized || (langBtn && langBtn._langInitialized)) {
         console.log('🔄 Language switcher already initialized, skipping');
         return;
     }
-
-    const langBtn = document.getElementById('lang-btn');
-    const langDropdown = document.getElementById('lang-dropdown');
 
     if (!langBtn || !langDropdown) {
         console.warn('⚠️ Language switcher elements not found');
@@ -160,25 +160,25 @@ function initLanguageSwitcher() {
 
     console.log('🌐 Initializing language switcher');
 
-    // ドロップダウン表示/非表示
-    langBtn.addEventListener('click', function(e) {
+    // onclickを使用して既存のイベントリスナーを上書き
+    langBtn.onclick = function(e) {
         e.stopPropagation();
         e.preventDefault();
         console.log('🔘 Language button clicked');
         langDropdown.classList.toggle('show');
-    });
+    };
 
     // 言語選択
     const langOptions = langDropdown.querySelectorAll('.lang-option');
     langOptions.forEach(option => {
-        option.addEventListener('click', function(e) {
+        option.onclick = function(e) {
             e.preventDefault();
             e.stopPropagation();
             const selectedLang = this.dataset.lang;
             console.log('🌐 Language selected:', selectedLang);
             changeLanguage(selectedLang);
             langDropdown.classList.remove('show');
-        });
+        };
     });
 
     // 外部クリックでドロップダウンを閉じる
@@ -191,7 +191,9 @@ function initLanguageSwitcher() {
     // 現在の言語を表示
     updateLanguageButton();
 
+    // 両方のフラグを設定
     languageSwitcherInitialized = true;
+    langBtn._langInitialized = true;
     console.log('✅ Language switcher initialized successfully');
 }
 
