@@ -30,9 +30,29 @@ jobs:
       - name: Create PR
         if: steps.check-pr.outputs.pr_exists == '0'
         run: |
+          # コミットメッセージから最初の行を取得（タイトル用）
+          TITLE=$(echo "${{ github.event.head_commit.message }}" | head -n 1)
+
+          # PR本文を生成
+          BODY=$(cat <<'EOF'
+          ## Summary
+          Auto-created PR from branch `${{ github.ref_name }}`
+
+          ### Commits
+          ${{ github.event.head_commit.message }}
+
+          ## Test plan
+          - [ ] Netlifyプレビューで動作確認
+          - [ ] 問題なければマージ
+
+          ---
+          *This PR was automatically created by GitHub Actions*
+          EOF
+          )
+
           gh pr create \
-            --title "${{ github.event.head_commit.message }}" \
-            --body "Auto-created PR from branch ${{ github.ref_name }}" \
+            --title "$TITLE" \
+            --body "$BODY" \
             --base main \
             --head ${{ github.ref_name }}
         env:
