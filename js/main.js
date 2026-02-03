@@ -434,6 +434,162 @@ function initTranslations() {
             ja: '閉じる',
             en: 'Close',
             zh: '关闭'
+        },
+        // index.html ポータルページ用
+        'index-subtitle': {
+            ja: 'Revit 作図サポートツール',
+            en: 'Revit Drafting Support Tools',
+            zh: 'Revit 制图支持工具'
+        },
+        'index-tab-addins': {
+            ja: 'アドイン',
+            en: 'Add-ins',
+            zh: '插件'
+        },
+        'index-tab-family': {
+            ja: 'ファミリ',
+            en: 'Family',
+            zh: '族'
+        },
+        'index-tab-hatch': {
+            ja: '塗潰し',
+            en: 'Hatch',
+            zh: '填充'
+        },
+        'index-tab-knowledge': {
+            ja: 'ナレッジ',
+            en: 'Knowledge',
+            zh: '知识库'
+        },
+        'index-addins-title': {
+            ja: 'アドイン',
+            en: 'Add-ins',
+            zh: '插件'
+        },
+        'index-addins-badge': {
+            ja: '6機能 利用可能',
+            en: '6 Features Available',
+            zh: '6个功能可用'
+        },
+        'index-addins-desc': {
+            ja: 'Revit作業を効率化する無料アドインツール。',
+            en: 'Free add-in tools to streamline your Revit workflow.',
+            zh: '免费插件工具，提高Revit工作效率。'
+        },
+        'index-addins-action': {
+            ja: '詳細・ダウンロード →',
+            en: 'Details & Download →',
+            zh: '详情与下载 →'
+        },
+        'index-family-title': {
+            ja: 'ファミリ',
+            en: 'Family',
+            zh: '族'
+        },
+        'index-coming-soon': {
+            ja: '準備中',
+            en: 'Coming Soon',
+            zh: '即将推出'
+        },
+        'index-hatch-title': {
+            ja: '塗潰しパターン作成',
+            en: 'Hatch Pattern Creator',
+            zh: '填充图案创建'
+        },
+        'index-hatch-badge': {
+            ja: '6パターン 利用可能',
+            en: '6 Patterns Available',
+            zh: '6种图案可用'
+        },
+        'index-hatch-desc': {
+            ja: 'Revit / AutoCAD用のハッチングパターンファイル（.pat）を作成できます。',
+            en: 'Create hatch pattern files (.pat) for Revit / AutoCAD.',
+            zh: '为Revit/AutoCAD创建填充图案文件（.pat）。'
+        },
+        'index-hatch-f1': {
+            ja: '斜線（角度・間隔・破線設定）',
+            en: 'Diagonal (angle, spacing, dash settings)',
+            zh: '斜线（角度、间距、虚线设置）'
+        },
+        'index-hatch-f2': {
+            ja: '網掛け（クロスハッチ）',
+            en: 'Crosshatch',
+            zh: '交叉线'
+        },
+        'index-hatch-f3': {
+            ja: 'ドット（間隔・サイズ）',
+            en: 'Dot (spacing, size)',
+            zh: '点（间距、大小）'
+        },
+        'index-hatch-f4': {
+            ja: '芋目地（X/Y サイズ・目地幅）',
+            en: 'Stack Bond (X/Y size, grout width)',
+            zh: '堆叠砌（X/Y尺寸、灰缝宽度）'
+        },
+        'index-hatch-f5': {
+            ja: '馬目地（1/2オフセット）',
+            en: 'Running Bond (1/2 offset)',
+            zh: '错缝砌（1/2偏移）'
+        },
+        'index-hatch-f6': {
+            ja: 'RC（鉄筋コンクリート）',
+            en: 'RC (Reinforced Concrete)',
+            zh: 'RC（钢筋混凝土）'
+        },
+        'index-hatch-output': {
+            ja: '<strong>出力形式:</strong> Revit（モデル/製図）・AutoCAD',
+            en: '<strong>Output:</strong> Revit (Model/Drafting) / AutoCAD',
+            zh: '<strong>输出格式:</strong> Revit（模型/制图）/ AutoCAD'
+        },
+        'index-hatch-action': {
+            ja: 'パターン作成ツールへ →',
+            en: 'Go to Pattern Creator →',
+            zh: '前往图案创建工具 →'
+        },
+        'index-knowledge-title': {
+            ja: 'ナレッジ',
+            en: 'Knowledge',
+            zh: '知识库'
+        },
+        'index-news-title': {
+            ja: '新着・おすすめ',
+            en: 'News & Featured',
+            zh: '最新动态'
+        },
+        'index-news-1': {
+            ja: '塗潰し（ハッチング）パターン自動作成ツール 公開',
+            en: 'Hatch Pattern Creator Tool Released',
+            zh: '填充图案自动创建工具发布'
+        },
+        'index-news-2': {
+            ja: '28 Tools v1.0 - Revit 2021/2024 対応版リリース',
+            en: '28 Tools v1.0 - Revit 2021/2024 Released',
+            zh: '28 Tools v1.0 - Revit 2021/2024版本发布'
+        },
+        'index-news-3': {
+            ja: '28 Tools サイトオープン',
+            en: '28 Tools Site Launched',
+            zh: '28 Tools 网站上线'
+        },
+        'index-community-title': {
+            ja: 'コミュニティ',
+            en: 'Community',
+            zh: '社区'
+        },
+        'index-community-ask': {
+            ja: '質問する',
+            en: 'Ask a Question',
+            zh: '提问'
+        },
+        'index-community-request': {
+            ja: '機能をリクエスト',
+            en: 'Request Feature',
+            zh: '功能请求'
+        },
+        'index-community-news': {
+            ja: 'お知らせを見る',
+            en: 'View Announcements',
+            zh: '查看公告'
         }
     };
 
