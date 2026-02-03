@@ -259,11 +259,24 @@ Revit / AutoCAD用のハッチングパターンファイル（.pat）を作成�
 | パターン | 設定項目 |
 |---------|---------|
 | 斜線（diagonal） | 角度、間隔、破線設定 |
-| クロス（crosshatch） | 角度、間隔、破線設定 |
-| ドット（dot） | X/Y間隔、ドットサイズ |
-| 芋目地（tile-grid） | 幅、高さ、目地あり/なし、目地サイズ |
-| 馬目地（tile-brick） | 幅、高さ、目地あり/なし、目地サイズ（1/2固定） |
+| 網掛け（crosshatch） | 角度、間隔、破線設定 |
+| ドット（dot） | 間隔、ドットサイズ |
+| 芋目地（tile-grid） | X、Y、目地あり/なし、目地X、目地Y |
+| 馬目地（tile-brick） | X、Y、目地あり/なし、目地X、目地Y（1/2オフセット固定） |
 | RC（rc-concrete） | 線内間隔、グループ間隔 |
+
+### 技術的な注意点
+
+#### Shift-JISエンコーディング
+- **パターン名は日本語対応**（例：`芋目地_100x100x5x5`）
+- Revit/AutoCADはWindows環境でShift-JISを期待するため、`js/hatch.js`内の`ShiftJIS.encode()`関数でエンコード
+- 対応文字: パターン名で使用する漢字・ひらがな・カタカナのみマッピング済み
+- 新しい日本語文字を追加する場合は`unicodeToSJIS`オブジェクトにマッピングを追加
+
+#### タイルパターン(.pat)の値
+- 芋目地・馬目地は**4本の線**で構成（目地の中心から±半分オフセット）
+- 馬目地のdelta-x = halfTotalW（半分ずらし）
+- 詳細は`generateTileGridPattern()`と`generateTileBrickPattern()`を参照
 
 ### 出力形式
 - **Revit**: モデル（実寸）/ 製図（スケール依存）
@@ -330,6 +343,18 @@ Revit / AutoCAD用のハッチングパターンファイル（.pat）を作成�
 - testブランチで開発・ローカル確認
 - mainブランチで本番公開
 
+## Claude Code環境の制限事項
+
+### gh CLIが利用不可
+- この環境ではネットワーク制限により`gh`コマンドがインストールできない
+- PR作成は**GitHub Actionsによる自動作成**に依存
+- 自動作成が失敗した場合はGitHub UIから手動作成
+
+### Netlify無料枠
+- **2026/02時点で無料枠を超過**、プレビュー機能が一時停止中
+- 来月にリセットされるまでプレビューは利用不可
+- 代替策: PRをマージして本番サイト（GitHub Pages）で直接確認
+
 ## トラブルシューティング
 
 ### Google Search Consoleで「取得できませんでした」
@@ -349,3 +374,17 @@ sitemap.xml を登録後、Googleのクロールには **数時間〜数日** �
 mainブランチにプッシュ後、数分待ってから確認：
 - ブラウザのキャッシュをクリア（Cmd+Shift+R）
 - GitHub Actions タブでデプロイ状況を確認
+
+### GitHub Actionsが失敗する
+
+「Internal server error」や「Runner not acquired」エラーの場合：
+- **GitHub側の一時的な問題**（コードの問題ではない）
+- 解決策: ワークフローの「Re-run all jobs」ボタンをクリック
+- 数分待っても解決しない場合は時間をおいて再試行
+
+### PR自動作成が動作しない
+
+claude/*ブランチにプッシュしてもPRが作成されない場合：
+1. GitHub Actions タブで「Auto Create PR for Claude Branches」の状態を確認
+2. 失敗している場合は「Re-run」で再実行
+3. それでも失敗する場合はPull requestsタブの「Compare & pull request」から手動作成
