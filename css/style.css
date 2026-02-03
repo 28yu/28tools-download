@@ -1526,11 +1526,11 @@ h1.main-title,
     flex-direction: row;
     justify-content: center;
     gap: 12px;
-    background: var(--glass-white);
+    background: transparent;
     border-radius: 16px;
     padding: 16px 24px;
-    box-shadow: var(--shadow-light);
-    border: 1px solid rgba(52, 73, 94, 0.1);
+    box-shadow: none;
+    border: none;
 }
 
 .sidebar-item {
