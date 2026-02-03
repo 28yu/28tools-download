@@ -1514,34 +1514,32 @@ h1.main-title,
    ========================================== */
 
 .sidebar-layout {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 24px;
-    margin-bottom: 50px;
-    min-height: 400px;
-}
-
-/* サイドバー */
-.sidebar-nav {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+/* サイドバー → 横並びタブナビ */
+.sidebar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
     background: var(--glass-white);
     border-radius: 16px;
-    padding: 12px;
+    padding: 16px 24px;
     box-shadow: var(--shadow-light);
     border: 1px solid rgba(52, 73, 94, 0.1);
-    height: fit-content;
-    position: sticky;
-    top: 20px;
 }
 
 .sidebar-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 12px 8px;
+    gap: 8px;
+    padding: 12px 20px;
     border-radius: 12px;
     text-decoration: none;
     color: var(--steel-blue);
@@ -1586,9 +1584,9 @@ h1.main-title,
 }
 
 .sidebar-icon {
-    width: 32px;
-    height: 32px;
-    margin-bottom: 4px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
 }
 
 .sidebar-icon img {
@@ -1598,7 +1596,7 @@ h1.main-title,
 }
 
 .sidebar-label {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: 500;
     text-align: center;
     font-family: 'Noto Sans JP', sans-serif;
@@ -1759,28 +1757,28 @@ h1.main-title,
 /* サイドバーレスポンシブ */
 @media (max-width: 768px) {
     .sidebar-layout {
-        grid-template-columns: 1fr;
         gap: 16px;
     }
 
     .sidebar-nav {
-        flex-direction: row;
-        justify-content: space-around;
-        position: static;
-        padding: 8px;
+        flex-wrap: wrap;
+        padding: 12px;
+        gap: 8px;
     }
 
     .sidebar-item {
         padding: 8px 12px;
+        flex: 1 1 auto;
+        min-width: 80px;
     }
 
     .sidebar-icon {
-        width: 28px;
-        height: 28px;
+        width: 20px;
+        height: 20px;
     }
 
     .sidebar-label {
-        font-size: 0.6rem;
+        font-size: 0.75rem;
     }
 
     .main-content-area {
