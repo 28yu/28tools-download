@@ -1407,6 +1407,11 @@ h1.main-title,
     color: #d4a500;
 }
 
+.news-tag.site {
+    background: rgba(52, 73, 94, 0.1);
+    color: var(--steel-blue);
+}
+
 .news-content {
     flex: 1;
 }
@@ -1847,4 +1852,32 @@ h1.main-title,
     .category-card {
         padding: 20px;
     }
+}
+
+/* ==========================================
+   パンくずリスト（共通）
+   ========================================== */
+
+.breadcrumb {
+    padding: 16px 0;
+    font-size: 0.9rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.breadcrumb a {
+    color: var(--blueprint-blue);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb .separator {
+    margin: 0 8px;
+    color: var(--disabled-gray);
+}
+
+.breadcrumb span:last-child {
+    color: var(--steel-blue);
 }
