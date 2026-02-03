@@ -141,18 +141,30 @@ function saveLanguagePreference(lang) {
 // 4. 言語切り替え機能
 // ========================================
 
+let languageSwitcherInitialized = false;
+
 function initLanguageSwitcher() {
+    // 既に初期化済みの場合はスキップ
+    if (languageSwitcherInitialized) {
+        console.log('🔄 Language switcher already initialized, skipping');
+        return;
+    }
+
     const langBtn = document.getElementById('lang-btn');
     const langDropdown = document.getElementById('lang-dropdown');
-    
+
     if (!langBtn || !langDropdown) {
         console.warn('⚠️ Language switcher elements not found');
         return;
     }
 
+    console.log('🌐 Initializing language switcher');
+
     // ドロップダウン表示/非表示
     langBtn.addEventListener('click', function(e) {
         e.stopPropagation();
+        e.preventDefault();
+        console.log('🔘 Language button clicked');
         langDropdown.classList.toggle('show');
     });
 
@@ -161,19 +173,26 @@ function initLanguageSwitcher() {
     langOptions.forEach(option => {
         option.addEventListener('click', function(e) {
             e.preventDefault();
+            e.stopPropagation();
             const selectedLang = this.dataset.lang;
+            console.log('🌐 Language selected:', selectedLang);
             changeLanguage(selectedLang);
             langDropdown.classList.remove('show');
         });
     });
 
     // 外部クリックでドロップダウンを閉じる
-    document.addEventListener('click', function() {
-        langDropdown.classList.remove('show');
+    document.addEventListener('click', function(e) {
+        if (!langBtn.contains(e.target) && !langDropdown.contains(e.target)) {
+            langDropdown.classList.remove('show');
+        }
     });
 
     // 現在の言語を表示
     updateLanguageButton();
+
+    languageSwitcherInitialized = true;
+    console.log('✅ Language switcher initialized successfully');
 }
 
 function updateLanguageButton() {
