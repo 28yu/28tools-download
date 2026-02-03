@@ -240,6 +240,41 @@
                 document.getElementById(targetId).classList.add('active');
             });
         });
+
+        // 言語切り替え（index.html専用）
+        (function() {
+            const langBtn = document.getElementById('lang-btn');
+            const langDropdown = document.getElementById('lang-dropdown');
+
+            if (langBtn && langDropdown) {
+                // ドロップダウン表示/非表示
+                langBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    langDropdown.classList.toggle('show');
+                });
+
+                // 言語選択
+                langDropdown.querySelectorAll('.lang-option').forEach(option => {
+                    option.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const selectedLang = this.dataset.lang;
+                        if (typeof changeLanguage === 'function') {
+                            changeLanguage(selectedLang);
+                        }
+                        langDropdown.classList.remove('show');
+                    });
+                });
+
+                // 外部クリックでドロップダウンを閉じる
+                document.addEventListener('click', function(e) {
+                    if (!langBtn.contains(e.target) && !langDropdown.contains(e.target)) {
+                        langDropdown.classList.remove('show');
+                    }
+                });
+            }
+        })();
     </script>
 </body>
 </html>
