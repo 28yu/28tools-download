@@ -20,6 +20,8 @@
 /* ベーススタイル */
 .manual-page {
     background-color: var(--light-concrete);
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* マニュアルページ専用コンテナ */
@@ -27,6 +29,9 @@
     max-width: 900px;
     margin: 0 auto;
     padding: 40px 20px 80px;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* ホームページとの見た目を統一 */
@@ -182,6 +187,9 @@
 
 .manual-page .manual-section {
     margin-bottom: 32px;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .manual-page .manual-section:last-child {
@@ -215,6 +223,9 @@
     color: var(--text-primary);
     box-shadow: var(--shadow-light);
     border: 1px solid var(--light-border);
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .manual-page .content-box p {
