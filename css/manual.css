@@ -486,21 +486,21 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 12px 32px;
-    background: var(--blueprint-blue);
+    padding: 12px 28px;
+    background: var(--architect-green);
     color: var(--glass-white);
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 6px;
     font-weight: 500;
     transition: all 0.3s ease;
-    box-shadow: var(--shadow-light);
     font-family: 'Noto Sans JP', sans-serif;
+    border: none;
 }
 
 .manual-page .nav-button:hover {
-    background: var(--architect-green);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-medium);
+    background: #27ae60;
+    transform: translateX(-4px);
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.3);
 }
 
 /* ========================================
