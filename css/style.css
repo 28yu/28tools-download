@@ -946,7 +946,7 @@ h1.main-title,
         margin-bottom: 40px;
     }
 
-    /* すべてのページのタイトルを統一 */
+    /* すべてのページのタイトルを統一（フッターページと同じ3.5rem） */
     .main-title,
     h1.main-title,
     .site-header .main-title,
@@ -954,7 +954,7 @@ h1.main-title,
     .manual-container .main-title,
     .portal-hero .main-title,
     .container .portal-hero .main-title {
-        font-size: 3rem !important;
+        font-size: 3.5rem !important;
     }
 
     .subtitle {
