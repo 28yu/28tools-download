@@ -946,7 +946,12 @@ h1.main-title,
         margin-bottom: 40px;
     }
 
-    .main-title {
+    .main-title,
+    h1.main-title,
+    .site-header .main-title,
+    .container .main-title,
+    .manual-container .main-title,
+    .portal-hero .main-title {
         font-size: 2.5rem !important;
     }
 
@@ -1808,14 +1813,6 @@ h1.main-title,
     .portal-hero {
         margin-top: 100px;
         margin-bottom: 40px;
-    }
-
-    .portal-hero .main-title {
-        font-size: 2.5rem !important;
-    }
-
-    .portal-hero .subtitle {
-        font-size: 1rem;
     }
 
     .category-grid {
