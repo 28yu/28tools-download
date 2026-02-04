@@ -1589,8 +1589,8 @@ h1.main-title,
 }
 
 .sidebar-icon {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     flex-shrink: 0;
 }
 
@@ -1633,8 +1633,8 @@ h1.main-title,
 }
 
 .content-icon {
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
 }
 
 .content-icon img {
@@ -1803,6 +1803,11 @@ h1.main-title,
 }
 
 @media (max-width: 768px) {
+    .portal-hero {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
     .portal-hero .main-title {
         font-size: 2.5rem !important;
     }
