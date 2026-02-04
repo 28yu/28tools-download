@@ -198,6 +198,9 @@
     font-family: 'Inter', sans-serif !important;
     word-break: break-word;
     overflow-wrap: break-word;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* ========================================
