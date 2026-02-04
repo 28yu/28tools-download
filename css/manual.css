@@ -196,6 +196,8 @@
     padding-bottom: 12px;
     border-bottom: 2px solid var(--architect-green);
     font-family: 'Inter', sans-serif !important;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 /* ========================================
