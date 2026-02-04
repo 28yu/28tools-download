@@ -1156,7 +1156,7 @@ h1.main-title,
 .portal-hero {
     text-align: center;
     margin-bottom: 50px;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .portal-hero .main-title {
@@ -1806,7 +1806,7 @@ h1.main-title,
 
 @media (max-width: 768px) {
     .portal-hero {
-        margin-top: 80px;
+        margin-top: 100px;
         margin-bottom: 40px;
     }
 
