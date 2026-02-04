@@ -1803,6 +1803,11 @@ h1.main-title,
 }
 
 @media (max-width: 768px) {
+    .portal-hero {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
     .portal-hero .main-title {
         font-size: 2.5rem !important;
     }
