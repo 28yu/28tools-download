@@ -462,3 +462,147 @@ claude/*ブランチにプッシュしてもPRが作成されない場合：
 1. GitHub Actions タブで「Auto Create PR for Claude Branches」の状態を確認
 2. 失敗している場合は「Re-run」で再実行
 3. それでも失敗する場合はPull requestsタブの「Compare & pull request」から手動作成
+
+## CSS・レスポンシブデザインの注意事項
+
+### サブタイトル（"Revit 作図サポートツール"）のサイズ統一
+
+**問題**: 各ページでサブタイトルのサイズが異なっていた
+
+**解決策**:
+- **デスクトップ**: 全ページ `1.1rem`
+- **モバイル**: 全ページ `1rem`
+
+**関連CSSファイル**:
+1. `css/style.css`
+   - `.subtitle` (line 188): デスクトップ基本スタイル `font-size: 1.1rem`
+   - `.subtitle` (line 960, @media 768px): モバイル `font-size: 1rem`
+   - `.portal-hero .subtitle` (line 964, @media 768px): トップページモバイル `font-size: 1rem`
+   - `.portal-hero .subtitle` (line 1182): **font-sizeは削除済み**（以前は1.1remでモバイル設定を上書きしていた）
+
+2. `css/manual.css`
+   - `.manual-page .subtitle` (line 166): デスクトップ `font-size: 1.1rem !important`
+   - `.manual-page .subtitle` (line 488, @media 768px): モバイル `font-size: 1rem !important`
+   - `.manual-page .subtitle` (line 529, @media 480px): モバイル小 `font-size: 1rem !important`
+   - `.manual-page .manual-subtitle` (line 112-123): ページ固有サブタイトル用
+
+**重要な教訓**:
+- ⚠️ **CSSカスケードの順序に注意**: メディアクエリの**後**に書かれたCSSルールは、メディアクエリ内の設定を上書きしてしまう
+- ⚠️ **specificityの確認**: `.portal-hero .subtitle` は `.subtitle` より優先度が高いため、モバイルクエリで明示的に指定する必要がある
+- ⚠️ **!important の使用**: `manual.css` では `!important` を使用して `style.css` の設定を確実に上書き
+
+**検証方法**:
+```bash
+# サブタイトルのfont-size設定を全て確認
+grep -n "\.subtitle" css/style.css css/manual.css
+sed -n '188,196p;960,966p;1182,1189p' css/style.css
+sed -n '166,171p;488,490p;529,531p' css/manual.css
+```
+
+### タイトルサイズの統一
+
+**サイズ仕様**:
+- **デスクトップ**: 全ページ `3.5rem`
+- **モバイル**: 全ページ `3.5rem`
+
+**関連CSS**:
+- `css/style.css` (line 944-958, @media 768px): すべてのタイトルセレクタを列挙して統一
+  ```css
+  .main-title,
+  h1.main-title,
+  .site-header .main-title,
+  .container .main-title,
+  .manual-container .main-title,
+  .portal-hero .main-title,
+  .container .portal-hero .main-title {
+      font-size: 3.5rem !important;
+  }
+  ```
+
+**教訓**:
+- 複数のセレクタで同じ要素を指定している場合、**全てのバリエーション**を列挙する必要がある
+- `.container .main-title` のような親子セレクタは `.main-title` より specificity が高いため、モバイルクエリで明示的に指定する
+
+### フッターの統一
+
+**構造**:
+```html
+<footer class="site-footer">
+    <div class="site-footer-content">
+        <div class="site-footer-links">
+            <a href="about.html">運営者情報</a>
+            <span class="footer-divider">|</span>
+            <a href="contact.html">お問い合わせ</a>
+            <span class="footer-divider">|</span>
+            <a href="privacy.html">プライバシーポリシー</a>
+            <span class="footer-divider">|</span>
+            <a href="terms.html">利用規約</a>
+        </div>
+        <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+    </div>
+</footer>
+```
+
+**対応ページ**:
+- index.html, addins.html, hatch.html（初期から存在）
+- contact.html, about.html, privacy.html, terms.html（2026/02追加）
+
+**注意点**:
+- フッターは `</div>` と `<script>` タグの間に配置
+- すべてのページで同じHTML構造を使用（一貫性のため）
+
+### アイコン管理
+
+**現在の仕様**:
+- **形式**: PNG（以前はSVG）
+- **サイズ**: 40x40px（デスクトップ）、36x36px（モバイル）
+- **保存場所**: `images/portal/`
+
+**アイコン一覧**:
+- `icon-addon.png` - アドインメニュー
+- `icon-family.png` - ファミリメニュー
+- `icon-hatch.png` - 塗潰しメニュー
+- `icon-knowledge.png` - ナレッジメニュー
+- `icon-new.png` - 新着アイコン
+
+**変更理由**:
+- SVGからPNGへ変更: ユーザー提供の画像がPNG形式だったため
+- サイズ拡大: 視認性向上のため32px → 40pxへ変更
+
+### モバイル対応の確認方法
+
+**確認必須項目**:
+1. タイトルサイズ（"28 Tools"）
+2. サブタイトルサイズ（"Revit 作図サポートツール"）
+3. フッターの表示
+4. アイコンサイズ
+
+**確認ページ**:
+- トップ（index.html）
+- アドイン（addins.html）
+- 塗潰し（hatch.html）
+- お問い合わせ（contact.html）
+- 運営者情報（about.html）
+- プライバシーポリシー（privacy.html）
+- 利用規約（terms.html）
+
+**ブラウザキャッシュクリア**:
+- モバイルブラウザでCSSが更新されない場合は強制リロードを実施
+- Safari: アドレスバー → リロードボタン長押し
+- Chrome: デスクトップ版サイトをリクエスト ON/OFF
+
+### ページ構成の違い
+
+| ページ | body class | ヘッダー | CSS |
+|--------|-----------|---------|-----|
+| index.html | なし | インライン | style.css |
+| addins.html | なし | header-container | style.css |
+| hatch.html | なし | header-container | style.css, hatch.css |
+| contact.html | manual-page | header-container | style.css, manual.css, contact.css |
+| about.html | manual-page | header-container | style.css, manual.css |
+| privacy.html | manual-page | header-container | style.css, manual.css |
+| terms.html | manual-page | header-container | style.css, manual.css |
+
+**重要**:
+- `body.manual-page` を持つページは `manual.css` のスタイルが適用される
+- `manual.css` のスタイルは `!important` を多用しており、`style.css` を上書きする
