@@ -1589,8 +1589,8 @@ h1.main-title,
 }
 
 .sidebar-icon {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     flex-shrink: 0;
 }
 
@@ -1633,8 +1633,8 @@ h1.main-title,
 }
 
 .content-icon {
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
 }
 
 .content-icon img {
