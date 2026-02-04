@@ -927,7 +927,7 @@ h1.main-title,
 
 @media (max-width: 768px) {
     .container {
-        padding: 40px 20px;
+        padding: 0 20px 40px 20px;
     }
 
     .lang-selector {
@@ -1589,8 +1589,8 @@ h1.main-title,
 }
 
 .sidebar-icon {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     flex-shrink: 0;
 }
 
@@ -1633,8 +1633,8 @@ h1.main-title,
 }
 
 .content-icon {
-    width: 56px;
-    height: 56px;
+    width: 64px;
+    height: 64px;
 }
 
 .content-icon img {
@@ -1778,8 +1778,8 @@ h1.main-title,
     }
 
     .sidebar-icon {
-        width: 28px;
-        height: 28px;
+        width: 36px;
+        height: 36px;
     }
 
     .sidebar-label {
