@@ -960,6 +960,10 @@ h1.main-title,
     .subtitle {
         font-size: 1rem;
     }
+
+    .portal-hero .subtitle {
+        font-size: 1rem;
+    }
     
     .ribbon-image {
         border-radius: 6px;
