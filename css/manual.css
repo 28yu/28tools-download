@@ -479,12 +479,16 @@
     .manual-page .manual-title {
         font-size: 2rem !important;
     }
-    
+
     .manual-page .manual-subtitle {
         font-size: 1rem !important;
         margin-top: 12px !important;
     }
-    
+
+    .manual-page .subtitle {
+        font-size: 1rem !important;
+    }
+
     .manual-page .content-box {
         padding: 24px;
     }
@@ -521,7 +525,11 @@
         font-size: 1rem !important;
         margin-top: 12px !important;
     }
-    
+
+    .manual-page .subtitle {
+        font-size: 1rem !important;
+    }
+
     .manual-page .content-box {
         padding: 20px 16px;
         border-radius: 8px;
