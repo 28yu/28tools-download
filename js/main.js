@@ -18,11 +18,11 @@ const downloadConfig = {
     // ダウンロードURL
     urls: {
         'revit2021': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2021/28Tools_Revit2021_v1.0.zip',
-        'revit2022': '', // 将来追加
-        'revit2023': '', // 将来追加
+        'revit2022': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2022/28Tools_Revit2022_v1.0.zip',
+        'revit2023': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2023/28Tools_Revit2023_v1.0.zip',
         'revit2024': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2024/28Tools_Revit2024_v1.0.zip',
-        'revit2025': '', // 将来追加
-        'revit2026': ''  // 将来追加
+        'revit2025': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2025/28Tools_Revit2025_v1.0.zip',
+        'revit2026': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2026/28Tools_Revit2026_v1.0.zip'
     },
     
     // 多言語メッセージ
@@ -564,9 +564,9 @@ function initTranslations() {
             zh: '填充图案自动创建工具发布'
         },
         'index-news-2': {
-            ja: '28 Tools v1.0 - Revit 2021/2024 対応版リリース',
-            en: '28 Tools v1.0 - Revit 2021/2024 Released',
-            zh: '28 Tools v1.0 - Revit 2021/2024版本发布'
+            ja: '28 Tools v1.0 - Revit 2021~2026 全バージョン対応リリース',
+            en: '28 Tools v1.0 - All Versions (Revit 2021~2026) Released',
+            zh: '28 Tools v1.0 - Revit 2021~2026 全版本发布'
         },
         'index-news-3': {
             ja: '28 Tools サイトオープン',
