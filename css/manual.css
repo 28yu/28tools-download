@@ -232,6 +232,21 @@
     margin: 0;
 }
 
+.manual-page .content-box ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.manual-page .content-box li {
+    margin-bottom: 12px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
 /* ========================================
    ステップボックス
    ======================================== */
