@@ -946,19 +946,15 @@ h1.main-title,
         margin-bottom: 40px;
     }
 
-    /* 他のページのタイトル（.site-header） */
+    /* すべてのページのタイトルを統一 */
     .main-title,
     h1.main-title,
     .site-header .main-title,
     .container .main-title,
-    .manual-container .main-title {
-        font-size: 3rem !important;
-    }
-
-    /* トップページのタイトル（.portal-hero）のみ小さく */
+    .manual-container .main-title,
     .portal-hero .main-title,
     .container .portal-hero .main-title {
-        font-size: 2.5rem !important;
+        font-size: 3rem !important;
     }
 
     .subtitle {
@@ -1167,7 +1163,7 @@ h1.main-title,
 .portal-hero {
     text-align: center;
     margin-bottom: 50px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .portal-hero .main-title {
@@ -1817,7 +1813,7 @@ h1.main-title,
 
 @media (max-width: 768px) {
     .portal-hero {
-        margin-top: 100px;
+        margin-top: 60px;
         margin-bottom: 40px;
     }
 
