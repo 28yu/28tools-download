@@ -929,22 +929,27 @@ h1.main-title,
     .container {
         padding: 40px 20px;
     }
-    
+
     .lang-selector {
         top: 15px;
         right: 15px;
     }
-    
+
     .lang-selector-button {
         padding: 8px 12px;
         font-size: 0.8rem;
         min-width: 100px;
     }
-    
+
+    .site-header {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
     .main-title {
         font-size: 2.5rem !important;
     }
-    
+
     .subtitle {
         font-size: 1rem;
     }
