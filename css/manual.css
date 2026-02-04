@@ -350,7 +350,7 @@
     background: var(--glass-white);
     border: 1px solid var(--light-border);
     border-radius: 8px;
-    padding: 24px;
+    padding: 16px;
     text-align: center;
     transition: all 0.3s ease;
 }
@@ -364,6 +364,13 @@
 .manual-page .usecase-icon {
     font-size: 2.5rem;
     margin-bottom: 12px;
+}
+
+.manual-page .usecase-icon img {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
 }
 
 .manual-page .usecase-card h3 {
@@ -406,6 +413,12 @@
 .manual-page .tip-icon {
     flex-shrink: 0;
     font-size: 1.5rem;
+}
+
+.manual-page .tip-icon img {
+    width: 32px;
+    height: 32px;
+    display: block;
 }
 
 .manual-page .tip-item p {
