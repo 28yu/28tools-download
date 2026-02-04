@@ -17,12 +17,12 @@ const downloadConfig = {
     
     // ダウンロードURL
     urls: {
-        'revit2021': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2021/28Tools_Revit2021_v1.0.zip',
-        'revit2022': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2022/28Tools_Revit2022_v1.0.zip',
-        'revit2023': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2023/28Tools_Revit2023_v1.0.zip',
-        'revit2024': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2024/28Tools_Revit2024_v1.0.zip',
-        'revit2025': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2025/28Tools_Revit2025_v1.0.zip',
-        'revit2026': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2026/28Tools_Revit2026_v1.0.zip'
+        'revit2021': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2021/28Tools_Revit2021.zip',
+        'revit2022': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2022/28Tools_Revit2022.zip',
+        'revit2023': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2023/28Tools_Revit2023.zip',
+        'revit2024': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2024/28Tools_Revit2024.zip',
+        'revit2025': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2025/28Tools_Revit2025.zip',
+        'revit2026': 'https://github.com/28yu/28tools-download/releases/download/v1.0.0-Revit2026/28Tools_Revit2026.zip'
     },
     
     // 多言語メッセージ
