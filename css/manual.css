@@ -110,7 +110,7 @@
 
 /* サブタイトルスタイル（下の線を削除） */
 .manual-page .manual-subtitle {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     color: var(--text-secondary) !important;
     margin: 0 !important;
     margin-top: 16px !important;
@@ -481,7 +481,7 @@
     }
     
     .manual-page .manual-subtitle {
-        font-size: 0.95rem !important;
+        font-size: 1rem !important;
         margin-top: 12px !important;
     }
     
@@ -516,9 +516,9 @@
     .manual-page .manual-title {
         font-size: 1.8rem !important;
     }
-    
+
     .manual-page .manual-subtitle {
-        font-size: 0.9rem !important;
+        font-size: 1rem !important;
         margin-top: 12px !important;
     }
     
