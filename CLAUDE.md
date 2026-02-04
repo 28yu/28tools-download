@@ -232,12 +232,12 @@ PRが作成されると、Netlifyが自動でプレビュー環境を構築し�
 ## 現在のサイト構成（2026/02更新）
 
 ### ページ構成
-- **トップページ（index.html）**: ポータル型レイアウト（サイドバー + メインコンテンツ）
-- **アドインページ（addins.html）**: Revitアドインのダウンロード・マニュアル
+- **トップページ（index.html）**: ポータル型レイアウト（横並びタブ + メインコンテンツ）
+- **アドインページ（addins.html）**: Revitアドインのダウンロード・マニュアル（パンくずリスト付き）
 - **ハッチングページ（hatch.html）**: ハッチングパターン作成ツール
 - **サブタイトル**: 全ページ「Revit 作図サポートツール」で統一
 
-### カテゴリ（トップページ）
+### カテゴリ（トップページ・横並びタブ）
 | カテゴリ | 状態 | 説明 |
 |---------|------|------|
 | アドイン | 利用可能 | 6機能のRevitアドイン |
@@ -246,9 +246,43 @@ PRが作成されると、Netlifyが自動でプレビュー環境を構築し�
 | ナレッジ | 準備中 | Tips・チュートリアル |
 
 ### デザイン仕様
-- サイドバー幅: 100px
+- カテゴリナビ: サブタイトル下に横並びタブ（背景透明）
 - サブタイトル: font-size 1.1rem, opacity 0.8
-- カテゴリアイコン: SVG形式（images/portal/）
+- カテゴリアイコン: SVG形式（images/portal/）、24x24px
+
+### Revitアドイン配布（GitHub Releases）
+
+**対応バージョン**: Revit 2021, 2022, 2023, 2024, 2025, 2026（全バージョン利用可能）
+
+**GitHub Releases構成**:
+| タグ名 | アセットファイル名 |
+|--------|-------------------|
+| `v1.0.0-Revit2021` | `28Tools_Revit2021.zip` |
+| `v1.0.0-Revit2022` | `28Tools_Revit2022.zip` |
+| `v1.0.0-Revit2023` | `28Tools_Revit2023.zip` |
+| `v1.0.0-Revit2024` | `28Tools_Revit2024.zip` |
+| `v1.0.0-Revit2025` | `28Tools_Revit2025.zip` |
+| `v1.0.0-Revit2026` | `28Tools_Revit2026.zip` |
+
+**ダウンロードURL形式**:
+```
+https://github.com/28yu/28tools-download/releases/download/{タグ名}/{ファイル名}
+```
+
+**ダウンロード数の確認方法**:
+```bash
+# 全リリースの一覧（GitHub API）
+curl -s https://api.github.com/repos/28yu/28tools-download/releases | jq '.[].assets[] | {name, download_count}'
+
+# GitHub CLIが使える場合
+gh release list
+gh release view v1.0.0-Revit2024
+```
+
+**バージョンアップ時の対応**:
+1. 新しいタグでGitHub Releaseを作成
+2. `main.js`の`downloadConfig.urls`を新URLに更新
+3. `addins.html`のバージョンタブの表示を更新
 
 ## ハッチングパターン作成ツール（hatch.html）
 
@@ -293,6 +327,21 @@ Revit / AutoCAD用のハッチングパターンファイル（.pat）を作成�
 - **対応言語**: 日本語（ja）、英語（en）、中国語（zh）
 - **翻訳ファイル**: `js/main.js` 内の `translations` オブジェクト
 - **HTMLでの使用**: `data-lang-key="キー名"` 属性を追加
+
+#### index.html の言語切り替えに関する注意事項
+
+index.htmlは他のページと異なり、`header-container`による共通ヘッダー読み込みを**使用していない**。言語切り替えUIはindex.html内にインラインで記述されている。
+
+**言語切り替えの初期化（二重登録防止パターン）**:
+- `main.js`の`initLanguageSwitcher()`が初期化を試みる
+- index.html末尾に`window.addEventListener('load', ...)`でフォールバック初期化を配置
+- `langBtn._langInitialized`フラグをDOM要素に設定し、どちらか一方のみが初期化するよう制御
+- イベントリスナーは`addEventListener`ではなく`onclick`プロパティを使用（重複登録防止のため）
+
+**修正時の注意**: 言語切り替えが動作しない場合、まず以下を確認：
+1. 翻訳対象の要素に`data-lang-key`属性があるか
+2. `main.js`の`translations`に該当キーの翻訳データがあるか
+3. イベントリスナーが重複登録されていないか（`toggle()`が2回呼ばれると打ち消し合う）
 
 ### 翻訳キー命名規則
 ```
