@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const patternTypeInput = document.getElementById('pattern-type');
     const patternTypeGrid = document.getElementById('pattern-type-grid');
     const outputFormatSelect = document.getElementById('output-format');
+    const patternUnitSelect = document.getElementById('pattern-unit');
     const revitSettings = document.getElementById('revit-settings');
     const downloadBtn = document.getElementById('download-btn');
     const canvas = document.getElementById('preview-canvas');
@@ -81,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // イベントリスナー設定
         outputFormatSelect.addEventListener('change', onOutputFormatChange);
+        patternUnitSelect.addEventListener('change', updateUnitLabels);
         downloadBtn.addEventListener('click', downloadPatternFile);
 
         // 破線設定の変更
@@ -111,6 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // 初期表示
         onPatternTypeChange();
         onOutputFormatChange();
+        updateUnitLabels();
         updatePreview();
     }
 
@@ -270,6 +273,37 @@ document.addEventListener('DOMContentLoaded', function() {
     function onOutputFormatChange() {
         const format = outputFormatSelect.value;
         revitSettings.style.display = format === 'revit' ? 'block' : 'none';
+    }
+
+    // 単位表示の更新
+    function updateUnitLabels() {
+        const unit = patternUnitSelect.value;
+        let unitText;
+
+        switch(unit) {
+            case 'MM':
+                unitText = 'mm';
+                break;
+            case 'INCH':
+                unitText = 'inch';
+                break;
+            case 'FOOT':
+                unitText = 'ft';
+                break;
+            default:
+                unitText = 'mm';
+        }
+
+        // 全ての設定ラベルを取得して単位表示を更新
+        document.querySelectorAll('.setting-label').forEach(label => {
+            const text = label.textContent;
+            // (mm), (inch), (ft) のいずれかを含む場合に置換
+            if (text.includes('(mm)') || text.includes('(inch)') || text.includes('(ft)')) {
+                // 既存の単位を新しい単位に置換
+                const newText = text.replace(/\((mm|inch|ft)\)/, `(${unitText})`);
+                label.textContent = newText;
+            }
+        });
     }
 
     // 破線設定の表示切り替え
