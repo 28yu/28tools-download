@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGP Image Template - 28 Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 1200px;
+            height: 630px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            overflow: hidden;
+        }
+
+        .ogp-container {
+            text-align: center;
+            width: 100%;
+            padding: 80px;
+            position: relative;
+        }
+
+        /* トップグラデーションライン */
+        .gradient-line-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #27ae60, #e67e22, #3498db);
+        }
+
+        /* ボトムグラデーションライン */
+        .gradient-line-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #27ae60, #e67e22, #3498db);
+        }
+
+        .main-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 120px;
+            font-weight: 300;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            letter-spacing: -2px;
+        }
+
+        .subtitle {
+            font-size: 42px;
+            color: #34495e;
+            font-weight: 400;
+            opacity: 0.8;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        /* サイトアイコン風の装飾（オプション） */
+        .icon-decoration {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #27ae60, #3498db);
+            border-radius: 16px;
+            margin: 0 auto 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="ogp-container">
+        <div class="gradient-line-top"></div>
+
+        <!-- オプション: アイコン装飾 -->
+        <div class="icon-decoration">28</div>
+
+        <h1 class="main-title">28 Tools</h1>
+        <p class="subtitle">Revit 作図サポートツール</p>
+
+        <div class="gradient-line-bottom"></div>
+    </div>
+</body>
+</html>
