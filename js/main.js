@@ -75,7 +75,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // ダウンロードボタンの初期化
     setupDownloadButtons();
-    
+
+    // SNSシェアボタンの初期化
+    initSocialShare();
+
     console.log('✅ Initialization complete');
 });
 
@@ -1712,6 +1715,11 @@ function initTranslations() {
             ja: '© 2026 28 Tools. All rights reserved.',
             en: '© 2026 28 Tools. All rights reserved.',
             zh: '© 2026 28 Tools. 版权所有。'
+        },
+        'footer-share': {
+            ja: 'このページをシェア：',
+            en: 'Share this page:',
+            zh: '分享此页：'
         }
     };
 
@@ -3120,6 +3128,52 @@ function setupDownloadButtons() {
 // グローバルに公開（onclick属性用）
 window.downloadWithPassword = downloadWithPassword;
 window.showNotAvailableMessage = showNotAvailableMessage;
+
+// ========================================
+// 11. SNSシェア機能
+// ========================================
+
+function initSocialShare() {
+    const shareButtons = document.querySelectorAll('.share-btn');
+    if (shareButtons.length === 0) {
+        console.log('⚠️ No share buttons found');
+        return;
+    }
+
+    shareButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const sns = this.dataset.sns;
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+
+            let shareUrl = '';
+
+            switch(sns) {
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+                    break;
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                    break;
+                case 'line':
+                    shareUrl = `https://social-plugins.line.me/lineit/share?url=${url}`;
+                    break;
+                case 'hatena':
+                    shareUrl = `https://b.hatena.ne.jp/entry/${url}`;
+                    break;
+                default:
+                    console.warn(`Unknown SNS: ${sns}`);
+                    return;
+            }
+
+            window.open(shareUrl, '_blank', 'width=600,height=400');
+            console.log(`🔗 Shared on ${sns}: ${url}`);
+        });
+    });
+
+    console.log(`✅ Social share buttons initialized: ${shareButtons.length} buttons`);
+}
 
 // ========================================
 // 12. ユーティリティ関数

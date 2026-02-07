@@ -1140,6 +1140,88 @@ h1.main-title,
     margin: 0;
 }
 
+/* SNSシェアボタン */
+.share-buttons {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.share-text {
+    font-size: 0.9rem;
+    color: var(--light-concrete);
+    margin: 0;
+    font-weight: 500;
+}
+
+.share-icons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.share-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.share-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.share-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--light-concrete);
+}
+
+.share-btn.twitter {
+    background-color: #1DA1F2;
+}
+
+.share-btn.twitter:hover {
+    background-color: #0d8bd9;
+}
+
+.share-btn.facebook {
+    background-color: #1877F2;
+}
+
+.share-btn.facebook:hover {
+    background-color: #0e63d1;
+}
+
+.share-btn.line {
+    background-color: #06C755;
+}
+
+.share-btn.line:hover {
+    background-color: #05a844;
+}
+
+.share-btn.hatena {
+    background-color: #00A4DE;
+}
+
+.share-btn.hatena:hover {
+    background-color: #0088b8;
+}
+
+.share-btn svg {
+    fill: white;
+}
+
 @media (max-width: 768px) {
     .site-footer {
         padding: 24px 16px;
@@ -1156,6 +1238,20 @@ h1.main-title,
 
     .site-footer-links a {
         font-size: 0.95rem;
+    }
+
+    .share-text {
+        font-size: 0.85rem;
+    }
+
+    .share-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .share-btn svg {
+        width: 18px;
+        height: 18px;
     }
 }
 
