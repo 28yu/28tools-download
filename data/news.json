@@ -1,12 +1,93 @@
 {
-  "lastUpdated": "2026-02-07T00:00:00",
+  "lastUpdated": "2026-02-07T13:23:35.861985",
   "articles": [
     {
-      "title": "BIM業界ニュースを自動収集中...",
-      "link": "#",
-      "description": "GitHub Actionsで毎日最新のBIM・Revit・建築業界ニュースを自動収集します。初回実行後に最新記事が表示されます。",
-      "publishedDate": "2026-02-07",
-      "source": "28 Tools",
+      "title": "buildingSMART International announces that Céline Bent has left the organisation",
+      "link": "https://www.buildingsmart.org/buildingsmart-international-announces-that-celine-bent-has-left-the-organisation/",
+      "description": "<p>London, U.K. – January 28th, 2026 — buildingSMART International (bSI) announces that Céline Bent has left the organisation. bSI commented that “it is with our regrets to announce that Céline has&#8...",
+      "publishedDate": "Wed, 28 Jan 2026 10:40:44 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null
+    },
+    {
+      "title": "buildingSMART México has been formally approved as a “Chapter-in-formation”",
+      "link": "https://www.buildingsmart.org/buildingsmart-mexico-has-been-formally-approved-as-a-chapter-in-formation/",
+      "description": "<p>London, U.K. – August 27, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART México has been formally approved as a \"Chapter-in-formation\". The latest Chapter to joi...",
+      "publishedDate": "Wed, 27 Aug 2025 13:42:52 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null
+    },
+    {
+      "title": "Occupant Movement Analysis Technical Report",
+      "link": "https://www.buildingsmart.org/occupant-movement-analysis-technical-report/",
+      "description": "<p>Report: Link Outcome report: Link &#160; The Standards Committee return on the votes was 33 Yes 3 No which achieves the 65% pass rate threshold.</p>\n<p>The post <a href=\"https://www.buildingsmart.o...",
+      "publishedDate": "Wed, 24 Sep 2025 07:50:02 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null
+    },
+    {
+      "title": "IFC 5 Core Consultation",
+      "link": "https://www.buildingsmart.org/ifc-5-core-consultation/",
+      "description": "<p>Report: Link Outcome report: Link The Standards Committee Executive (SCE) has reviewed the results of the IFC 5 Core Draft Project Plan consultation. A total of 60 responses were received from the ...",
+      "publishedDate": "Wed, 24 Sep 2025 07:24:59 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null
+    },
+    {
+      "title": "ISO Publishes New Compatibility Policy for ISO 16739-1 (IFC): A Major Step for Stable Evolution of the Standard",
+      "link": "https://www.buildingsmart.org/iso-publishes-new-compatibility-policy-for-iso-16739-1/",
+      "description": "<p>buildingSMART International is pleased to share important news with the openBIM community: ISO/TC 59/SC 13 has published the new Compatibility Policy for ISO 16739-1, the international standard for...",
+      "publishedDate": "Thu, 13 Nov 2025 11:27:34 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null
+    },
+    {
+      "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
+      "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
+      "description": "<p>London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to j...",
+      "publishedDate": "Mon, 08 Dec 2025 19:22:27 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null
+    },
+    {
+      "title": "The buildingSMART openBIM Awards 2025 – Winners Announced",
+      "link": "https://www.buildingsmart.org/the-buildingsmart-openbim-awards-2025-winners-announced/",
+      "description": "<p>Berlin, Germany – September 25, 2025 The openBIM Awards 2025 concluded with a celebratory ceremony on Wednesday, 24 September, during the closing plenary of the buildingSMART International Summit –...",
+      "publishedDate": "Fri, 26 Sep 2025 13:18:09 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null
+    },
+    {
+      "title": "Voting for the Standards Committee Executive is now open",
+      "link": "https://www.buildingsmart.org/voting-for-the-standards-committee-executive-is-now-open/",
+      "description": "<p>Vote closing date: 12 Nov 2025Report: Link The buildingSMART International Community is invited to elect five additional members to the Standards Committee Executive (SCE).This is an important gove...",
+      "publishedDate": "Fri, 17 Oct 2025 15:10:46 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null
+    },
+    {
+      "title": "openBIM Practitioner Certification enters full-scale implementation across Chapters",
+      "link": "https://www.buildingsmart.org/openbim-practitioner-certification-enters-full-scale-implementation-across-chapters/",
+      "description": "<p>The openBIM Practitioner Certification is now rolling out across the buildingSMART community, as part of the ongoing expansion of the Professional Certification Program, marking a major milestone i...",
+      "publishedDate": "Fri, 05 Dec 2025 22:18:08 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null
+    },
+    {
+      "title": "Board of Directors Changes",
+      "link": "https://www.buildingsmart.org/board-of-directors-changes/",
+      "description": "<p>London, U.K. – December 5th, 2025 — buildingSMART International (bSI) is today announcing some Board of Director changes. Board Changes Due to ill health, Alfred Waschl has stepped down from&#8230;...",
+      "publishedDate": "Fri, 05 Dec 2025 19:25:08 +0000",
+      "source": "buildingSMART International",
       "category": "bim",
       "thumbnail": null
     }
