@@ -2,6 +2,21 @@
    BIM業界ニュースページ専用スタイル
    ============================== */
 
+/* ページヘッダー */
+.page-header {
+    margin-bottom: 30px;
+}
+
+.page-header .section-title {
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
 /* 更新情報 */
 .news-update-info {
     display: flex;
