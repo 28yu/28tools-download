@@ -1,0 +1,14 @@
+{
+  "lastUpdated": "2026-02-07T00:00:00",
+  "articles": [
+    {
+      "title": "BIM業界ニュースを自動収集中...",
+      "link": "#",
+      "description": "GitHub Actionsで毎日最新のBIM・Revit・建築業界ニュースを自動収集します。初回実行後に最新記事が表示されます。",
+      "publishedDate": "2026-02-07",
+      "source": "28 Tools",
+      "category": "bim",
+      "thumbnail": null
+    }
+  ]
+}
