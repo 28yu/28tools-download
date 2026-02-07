@@ -32,15 +32,42 @@ RSS_FEEDS = [
         'language': 'en'
     },
     # 日本語ソース
+    # 以下のURLは無効のためコメントアウト（2026/02/07）
+    # {
+    #     'url': 'https://www.autodesk.co.jp/feeds/blogs',
+    #     'source': 'Autodesk Japan',
+    #     'category': 'software',
+    #     'language': 'ja'
+    # },
+    # {
+    #     'url': 'https://www.graphisoft.co.jp/feed/',
+    #     'source': 'GRAPHISOFT Japan',
+    #     'category': 'software',
+    #     'language': 'ja'
+    # },
+
+    # 新しい日本語ソース（2026/02/07追加）
     {
-        'url': 'https://www.autodesk.co.jp/feeds/blogs',
-        'source': 'Autodesk Japan',
+        'url': 'https://news.build-app.jp/feed/',
+        'source': 'BuildApp News',
+        'category': 'architecture',
+        'language': 'ja'
+    },
+    {
+        'url': 'https://axconstdx.com/feed/',
+        'source': '生成AIと建設DX',
+        'category': 'bim',
+        'language': 'ja'
+    },
+    {
+        'url': 'https://adndevblog.typepad.com/technology_perspective/atom.xml',
+        'source': 'Autodesk Developer Network Japan',
         'category': 'software',
         'language': 'ja'
     },
     {
-        'url': 'https://www.graphisoft.co.jp/feed/',
-        'source': 'GRAPHISOFT Japan',
+        'url': 'https://bim-design.com/feed/',
+        'source': 'BIM Design (Autodesk公式)',
         'category': 'software',
         'language': 'ja'
     },
