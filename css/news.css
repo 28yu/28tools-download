@@ -7,14 +7,19 @@
     margin-bottom: 30px;
 }
 
-.page-header .section-title {
-    margin-bottom: 10px;
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--concrete-gray);
+    margin-bottom: 12px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
-.page-subtitle {
+.page-description {
     font-size: 1rem;
-    color: rgba(0, 0, 0, 0.6);
-    margin: 0;
+    color: var(--steel-blue);
+    margin-bottom: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 /* 更新情報 */
