@@ -2,6 +2,17 @@
    BIM業界ニュースページ専用スタイル
    ============================== */
 
+/* ページ全体のスタイル（ダークテーマ） */
+body {
+    background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.container {
+    background: transparent;
+}
+
 /* 更新情報 */
 .news-update-info {
     display: flex;
