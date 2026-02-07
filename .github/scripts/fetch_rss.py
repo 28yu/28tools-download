@@ -8,26 +8,61 @@ import feedparser
 import json
 from datetime import datetime
 import sys
+import re
 
 # RSSフィードソース
 RSS_FEEDS = [
+    # 英語ソース
     {
         'url': 'https://aps.autodesk.com/blog/rss.xml',
         'source': 'Autodesk Platform Services',
-        'category': 'software'
+        'category': 'software',
+        'language': 'en'
     },
     {
         'url': 'https://www.buildingsmart.org/feed/',
         'source': 'buildingSMART International',
-        'category': 'bim'
+        'category': 'bim',
+        'language': 'en'
     },
     {
         'url': 'https://graphisoft.com/feeds/blog',
         'source': 'GRAPHISOFT Blog',
-        'category': 'software'
+        'category': 'software',
+        'language': 'en'
+    },
+    # 日本語ソース
+    {
+        'url': 'https://www.autodesk.co.jp/feeds/blogs',
+        'source': 'Autodesk Japan',
+        'category': 'software',
+        'language': 'ja'
+    },
+    {
+        'url': 'https://www.graphisoft.co.jp/feed/',
+        'source': 'GRAPHISOFT Japan',
+        'category': 'software',
+        'language': 'ja'
     },
     # 追加のフィードはここに記載
 ]
+
+def detect_language(text):
+    """テキストから言語を検出（簡易版）"""
+    if not text:
+        return 'en'
+
+    # 日本語文字（ひらがな、カタカナ、漢字）が含まれているか
+    japanese_pattern = re.compile(r'[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF]')
+    if japanese_pattern.search(text):
+        return 'ja'
+
+    # 中国語文字が含まれているか（簡体字・繁体字）
+    chinese_pattern = re.compile(r'[\u4E00-\u9FFF]')
+    if chinese_pattern.search(text) and not japanese_pattern.search(text):
+        return 'zh'
+
+    return 'en'
 
 def fetch_feed(feed_config):
     """RSSフィードを取得してパース"""
@@ -36,14 +71,21 @@ def fetch_feed(feed_config):
         articles = []
 
         for entry in feed.entries[:10]:  # 最新10件
+            title = entry.get('title', 'No Title')
+            description = entry.get('summary', entry.get('description', ''))[:200] + '...'
+
+            # 言語を検出（フィード設定に基づくか、タイトルから自動検出）
+            language = feed_config.get('language', detect_language(title))
+
             article = {
-                'title': entry.get('title', 'No Title'),
+                'title': title,
                 'link': entry.get('link', ''),
-                'description': entry.get('summary', entry.get('description', ''))[:200] + '...',
+                'description': description,
                 'publishedDate': entry.get('published', entry.get('updated', '')),
                 'source': feed_config['source'],
                 'category': feed_config['category'],
-                'thumbnail': extract_thumbnail(entry)
+                'thumbnail': extract_thumbnail(entry),
+                'language': language
             }
             articles.append(article)
 

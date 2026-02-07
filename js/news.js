@@ -51,10 +51,26 @@ function renderNewsCards(articles) {
     const newsContainer = document.getElementById('news-container');
     const emptyMessage = document.getElementById('empty-message');
 
-    // フィルタリング
-    const filteredArticles = currentCategory === 'all'
+    // 現在の言語を取得（main.jsのcurrentLanguageを参照）
+    const userLanguage = window.currentLanguage || 'ja';
+
+    // フィルタリング（カテゴリ）
+    let filteredArticles = currentCategory === 'all'
         ? articles
         : articles.filter(article => article.category === currentCategory);
+
+    // 言語でソート（ユーザーの言語を優先）
+    filteredArticles.sort((a, b) => {
+        const aLangMatch = a.language === userLanguage ? 1 : 0;
+        const bLangMatch = b.language === userLanguage ? 1 : 0;
+
+        if (aLangMatch !== bLangMatch) {
+            return bLangMatch - aLangMatch; // ユーザー言語を優先
+        }
+
+        // 日付でソート（新しい順）
+        return new Date(b.publishedDate) - new Date(a.publishedDate);
+    });
 
     // 空の場合
     if (filteredArticles.length === 0) {
@@ -117,15 +133,32 @@ function setupCategoryFilter() {
     });
 }
 
-// カテゴリラベルの取得
+// カテゴリラベルの取得（多言語対応）
 function getCategoryLabel(category) {
+    const userLanguage = window.currentLanguage || 'ja';
+
     const labels = {
-        'bim': 'BIM全般',
-        'revit': 'Revit',
-        'software': 'ソフトウェア',
-        'architecture': '建築・設計'
+        'ja': {
+            'bim': 'BIM全般',
+            'revit': 'Revit',
+            'software': 'ソフトウェア',
+            'architecture': '建築・設計'
+        },
+        'en': {
+            'bim': 'BIM General',
+            'revit': 'Revit',
+            'software': 'Software',
+            'architecture': 'Architecture'
+        },
+        'zh': {
+            'bim': 'BIM综合',
+            'revit': 'Revit',
+            'software': '软件',
+            'architecture': '建筑设计'
+        }
     };
-    return labels[category] || 'その他';
+
+    return labels[userLanguage]?.[category] || labels['ja'][category] || 'その他';
 }
 
 // 日付フォーマット
