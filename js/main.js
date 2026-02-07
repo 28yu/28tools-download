@@ -556,6 +556,21 @@ function initTranslations() {
             en: 'Knowledge',
             zh: '知识库'
         },
+        'index-knowledge-badge': {
+            ja: 'BIM業界ニュース 利用可能',
+            en: 'BIM Industry News Available',
+            zh: 'BIM行业新闻可用'
+        },
+        'index-knowledge-desc': {
+            ja: 'BIM・Revit・建築業界の最新ニュースを自動収集。毎日更新されます。',
+            en: 'Auto-collected latest news from BIM, Revit & Architecture industry. Updated daily.',
+            zh: '自动收集BIM、Revit和建筑行业的最新新闻。每天更新。'
+        },
+        'index-knowledge-action': {
+            ja: 'ニュース一覧へ →',
+            en: 'View News →',
+            zh: '查看新闻 →'
+        },
         'index-news-title': {
             ja: '新着・おすすめ',
             en: 'News & Featured',
@@ -2833,6 +2848,75 @@ function initTranslations() {
         }
     };
 
+    // BIM業界ニュースページ
+    translations.newsPage = {
+        'news-breadcrumb': {
+            ja: 'BIM業界ニュース',
+            en: 'BIM Industry News',
+            zh: 'BIM行业新闻'
+        },
+        'news-title': {
+            ja: 'BIM業界ニュース',
+            en: 'BIM Industry News',
+            zh: 'BIM行业新闻'
+        },
+        'news-subtitle': {
+            ja: '最新のBIM・Revit・建築業界情報',
+            en: 'Latest BIM, Revit & Architecture News',
+            zh: '最新的BIM、Revit和建筑行业信息'
+        },
+        'news-update-label': {
+            ja: '最終更新:',
+            en: 'Last Updated:',
+            zh: '最后更新:'
+        },
+        'news-update-note': {
+            ja: '（毎日自動更新）',
+            en: '(Auto-updated daily)',
+            zh: '（每天自动更新）'
+        },
+        'news-filter-all': {
+            ja: 'すべて',
+            en: 'All',
+            zh: '全部'
+        },
+        'news-filter-bim': {
+            ja: 'BIM全般',
+            en: 'BIM General',
+            zh: 'BIM综合'
+        },
+        'news-filter-revit': {
+            ja: 'Revit',
+            en: 'Revit',
+            zh: 'Revit'
+        },
+        'news-filter-software': {
+            ja: 'ソフトウェア',
+            en: 'Software',
+            zh: '软件'
+        },
+        'news-filter-architecture': {
+            ja: '建築・設計',
+            en: 'Architecture',
+            zh: '建筑设计'
+        },
+        'news-loading': {
+            ja: 'ニュースを読み込み中...',
+            en: 'Loading news...',
+            zh: '正在加载新闻...'
+        },
+        'news-error': {
+            ja: 'ニュースの読み込みに失敗しました。しばらくしてから再度お試しください。',
+            en: 'Failed to load news. Please try again later.',
+            zh: '新闻加载失败。请稍后再试。'
+        },
+        'news-empty': {
+            ja: '該当するニュースがありません。',
+            en: 'No news found.',
+            zh: '未找到相关新闻。'
+        }
+    };
+
     // 全翻訳をマージ
     Object.assign(translations,
         translations.common,
@@ -2852,7 +2936,8 @@ function initTranslations() {
         translations.privacyPage,
         translations.contactPage,
         translations.aboutPage,
-        translations.termsPage
+        translations.termsPage,
+        translations.newsPage
     );
     
     console.log('📚 Translations initialized (v7.3 - サポート情報・インストール手順の汎用化)');

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIM業界ニュース - 28 Tools</title>
+    <meta name="description" content="BIM・Revit・建築業界の最新ニュースを自動収集。Autodesk、buildingSMART、GRAPHISOFTなどの公式ブログから最新情報をお届けします。">
+
+    <!-- OGP (Open Graph Protocol) -->
+    <meta property="og:title" content="BIM業界ニュース - 28 Tools">
+    <meta property="og:description" content="BIM・Revit・建築業界の最新ニュースを自動収集。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://28tools.com/news.html">
+    <meta property="og:image" content="https://28tools.com/images/ogp-image.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="manual-page">
+    <div class="container">
+        <!-- 共通ヘッダー -->
+        <div id="header-container"></div>
+
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <a href="index.html" data-lang-key="breadcrumb-home">ホーム</a>
+            <span class="breadcrumb-separator">›</span>
+            <span data-lang-key="news-breadcrumb">BIM業界ニュース</span>
+        </nav>
+
+        <!-- ページヘッダー -->
+        <section class="manual-header">
+            <h1 class="main-title" data-lang-key="news-title">BIM業界ニュース</h1>
+            <div class="title-divider"></div>
+            <p class="subtitle manual-subtitle" data-lang-key="news-subtitle">最新のBIM・Revit・建築業界情報</p>
+        </section>
+
+        <!-- 更新情報 -->
+        <div class="news-update-info">
+            <span class="update-icon">🔄</span>
+            <span data-lang-key="news-update-label">最終更新:</span>
+            <span id="last-update-time">読み込み中...</span>
+            <span class="update-note" data-lang-key="news-update-note">（毎日自動更新）</span>
+        </div>
+
+        <!-- カテゴリフィルター -->
+        <div class="category-filter">
+            <button class="filter-btn active" data-category="all" data-lang-key="news-filter-all">すべて</button>
+            <button class="filter-btn" data-category="bim" data-lang-key="news-filter-bim">BIM全般</button>
+            <button class="filter-btn" data-category="revit" data-lang-key="news-filter-revit">Revit</button>
+            <button class="filter-btn" data-category="software" data-lang-key="news-filter-software">ソフトウェア</button>
+            <button class="filter-btn" data-category="architecture" data-lang-key="news-filter-architecture">建築・設計</button>
+        </div>
+
+        <!-- ニュースカードコンテナ -->
+        <div id="news-container" class="news-grid">
+            <!-- JavaScriptで動的に生成 -->
+            <div class="loading-message">
+                <span class="loading-spinner">⏳</span>
+                <p data-lang-key="news-loading">ニュースを読み込み中...</p>
+            </div>
+        </div>
+
+        <!-- エラーメッセージ -->
+        <div id="error-message" class="error-message" style="display: none;">
+            <span class="error-icon">⚠️</span>
+            <p data-lang-key="news-error">ニュースの読み込みに失敗しました。しばらくしてから再度お試しください。</p>
+        </div>
+
+        <!-- 空メッセージ -->
+        <div id="empty-message" class="empty-message" style="display: none;">
+            <span class="empty-icon">📭</span>
+            <p data-lang-key="news-empty">該当するニュースがありません。</p>
+        </div>
+
+    </div>
+
+    <!-- サイトフッター -->
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <div class="site-footer-links">
+                <a href="about.html">運営者情報</a>
+                <span class="footer-divider">|</span>
+                <a href="contact.html">お問い合わせ</a>
+                <span class="footer-divider">|</span>
+                <a href="privacy.html">プライバシーポリシー</a>
+                <span class="footer-divider">|</span>
+                <a href="terms.html">利用規約</a>
+            </div>
+            <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html>
