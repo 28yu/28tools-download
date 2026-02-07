@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-07T13:23:35.861985",
+  "lastUpdated": "2026-02-07T13:45:38.563603",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -8,7 +8,8 @@
       "publishedDate": "Wed, 28 Jan 2026 10:40:44 +0000",
       "source": "buildingSMART International",
       "category": "bim",
-      "thumbnail": null
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "buildingSMART México has been formally approved as a “Chapter-in-formation”",
@@ -17,7 +18,8 @@
       "publishedDate": "Wed, 27 Aug 2025 13:42:52 +0000",
       "source": "buildingSMART International",
       "category": "bim",
-      "thumbnail": null
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "Occupant Movement Analysis Technical Report",
@@ -26,7 +28,8 @@
       "publishedDate": "Wed, 24 Sep 2025 07:50:02 +0000",
       "source": "buildingSMART International",
       "category": "bim",
-      "thumbnail": null
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "IFC 5 Core Consultation",
@@ -35,7 +38,8 @@
       "publishedDate": "Wed, 24 Sep 2025 07:24:59 +0000",
       "source": "buildingSMART International",
       "category": "bim",
-      "thumbnail": null
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "ISO Publishes New Compatibility Policy for ISO 16739-1 (IFC): A Major Step for Stable Evolution of the Standard",
@@ -44,7 +48,8 @@
       "publishedDate": "Thu, 13 Nov 2025 11:27:34 +0000",
       "source": "buildingSMART International",
       "category": "bim",
-      "thumbnail": null
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
@@ -53,7 +58,8 @@
       "publishedDate": "Mon, 08 Dec 2025 19:22:27 +0000",
       "source": "buildingSMART International",
       "category": "bim",
-      "thumbnail": null
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "The buildingSMART openBIM Awards 2025 – Winners Announced",
@@ -62,7 +68,8 @@
       "publishedDate": "Fri, 26 Sep 2025 13:18:09 +0000",
       "source": "buildingSMART International",
       "category": "bim",
-      "thumbnail": null
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "Voting for the Standards Committee Executive is now open",
@@ -71,7 +78,8 @@
       "publishedDate": "Fri, 17 Oct 2025 15:10:46 +0000",
       "source": "buildingSMART International",
       "category": "bim",
-      "thumbnail": null
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "openBIM Practitioner Certification enters full-scale implementation across Chapters",
@@ -80,7 +88,8 @@
       "publishedDate": "Fri, 05 Dec 2025 22:18:08 +0000",
       "source": "buildingSMART International",
       "category": "bim",
-      "thumbnail": null
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "Board of Directors Changes",
@@ -89,7 +98,8 @@
       "publishedDate": "Fri, 05 Dec 2025 19:25:08 +0000",
       "source": "buildingSMART International",
       "category": "bim",
-      "thumbnail": null
+      "thumbnail": null,
+      "language": "en"
     }
   ]
 }
