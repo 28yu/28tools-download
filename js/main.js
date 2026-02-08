@@ -309,6 +309,11 @@ function initTranslations() {
             ja: 'Revit アドイン',
             en: 'Revit Add-ins',
             zh: 'Revit 插件'
+        },
+        'family-breadcrumb': {
+            ja: 'Revitファミリライブラリ',
+            en: 'Revit Family Library',
+            zh: 'Revit族库'
         }
     };
 
