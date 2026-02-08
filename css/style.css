@@ -511,7 +511,9 @@ h1.main-title,
 }
 
 .download-icon {
-    font-size: 1rem;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
 .download-text {
