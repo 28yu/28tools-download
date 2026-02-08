@@ -2141,3 +2141,171 @@ h1.main-title,
 .breadcrumb span:last-child {
     color: var(--steel-blue);
 }
+
+/* ==========================================
+   ファミリページ
+   ========================================== */
+
+/* ファミリカテゴリグリッド */
+.family-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+
+/* ファミリカテゴリカード */
+.family-category-card {
+    background: white;
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.family-category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* カテゴリアイコン */
+.category-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.category-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+/* カテゴリ別のアイコン色 */
+.category-icon.architecture {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.category-icon.structure {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.category-icon.mep {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.category-icon.furniture {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.category-icon.plumbing {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.category-icon.lighting {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+.category-icon.site {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.category-icon.specialty {
+    background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+}
+
+/* カテゴリタイトル */
+.category-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--steel-blue);
+    margin: 0 0 12px 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* カテゴリ説明 */
+.category-description {
+    font-size: 0.9rem;
+    color: var(--disabled-gray);
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* カテゴリバッジ */
+.category-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.category-badge.coming-soon {
+    background-color: #f0f0f0;
+    color: var(--disabled-gray);
+}
+
+.category-badge.available {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+/* お知らせボックス */
+.info-box {
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    border-left: 4px solid var(--blueprint-blue);
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 48px;
+}
+
+.info-box h3 {
+    font-size: 1.1rem;
+    color: var(--steel-blue);
+    margin: 0 0 12px 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.info-box p {
+    font-size: 0.95rem;
+    color: var(--steel-blue);
+    line-height: 1.8;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* レスポンシブ（モバイル） */
+@media (max-width: 768px) {
+    .family-categories-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .family-category-card {
+        padding: 24px 20px;
+    }
+
+    .category-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .category-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .info-box {
+        padding: 20px;
+    }
+}
