@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revitファミリライブラリ | 28 Tools</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Revit用ファミリライブラリ。建築、構造、設備、家具など、カテゴリ別に整理されたファミリを無料でダウンロードできます。">
+    <meta name="keywords" content="Revit, ファミリ, BIM, 建築, 構造, 設備, 家具, ダウンロード">
+
+    <!-- OGP Tags -->
+    <meta property="og:title" content="Revitファミリライブラリ | 28 Tools">
+    <meta property="og:description" content="Revit用ファミリライブラリ。カテゴリ別に整理されたファミリを無料でダウンロード。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://28tools.com/family.html">
+    <meta property="og:image" content="https://28tools.com/images/ogp-image.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- 共通ヘッダー -->
+        <div id="header-container"></div>
+
+        <!-- サイドバー -->
+        <div id="sidebar-container"></div>
+
+        <!-- ファミリライブラリ説明セクション -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2 data-lang-key="family-page-title">Revitファミリライブラリ</h2>
+                <p class="section-description" data-lang-key="family-page-description">
+                    建築、構造、設備、家具など、実務で使えるRevitファミリをカテゴリ別に整理。すべて無料でダウンロードできます。
+                </p>
+            </div>
+
+            <!-- ファミリカテゴリグリッド -->
+            <div class="family-categories-grid">
+                <!-- 建築カテゴリ -->
+                <div class="family-category-card">
+                    <div class="category-icon architecture">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="9 22 9 12 15 12 15 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title" data-lang-key="family-cat-architecture">建築</h3>
+                    <p class="category-description" data-lang-key="family-cat-architecture-desc">ドア、窓、壁、床、天井など</p>
+                    <div class="category-badge coming-soon" data-lang-key="family-badge-coming-soon">準備中</div>
+                </div>
+
+                <!-- 構造カテゴリ -->
+                <div class="family-category-card">
+                    <div class="category-icon structure">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                            <rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                            <rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                            <rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title" data-lang-key="family-cat-structure">構造</h3>
+                    <p class="category-description" data-lang-key="family-cat-structure-desc">柱、梁、基礎、鉄骨部材など</p>
+                    <div class="category-badge coming-soon" data-lang-key="family-badge-coming-soon">準備中</div>
+                </div>
+
+                <!-- 設備（MEP）カテゴリ -->
+                <div class="family-category-card">
+                    <div class="category-icon mep">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2v20M17 7l-5 5-5-5M7 17l5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title" data-lang-key="family-cat-mep">設備（MEP）</h3>
+                    <p class="category-description" data-lang-key="family-cat-mep-desc">配管、ダクト、電気設備など</p>
+                    <div class="category-badge coming-soon" data-lang-key="family-badge-coming-soon">準備中</div>
+                </div>
+
+                <!-- 家具カテゴリ -->
+                <div class="family-category-card">
+                    <div class="category-icon furniture">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="4" cy="6" r="1" fill="currentColor"/>
+                            <circle cx="4" cy="12" r="1" fill="currentColor"/>
+                            <circle cx="4" cy="18" r="1" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title" data-lang-key="family-cat-furniture">家具</h3>
+                    <p class="category-description" data-lang-key="family-cat-furniture-desc">机、椅子、キャビネット、棚など</p>
+                    <div class="category-badge coming-soon" data-lang-key="family-badge-coming-soon">準備中</div>
+                </div>
+
+                <!-- 衛生器具カテゴリ -->
+                <div class="family-category-card">
+                    <div class="category-icon plumbing">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 2h8M12 2v4M7 6h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title" data-lang-key="family-cat-plumbing">衛生器具</h3>
+                    <p class="category-description" data-lang-key="family-cat-plumbing-desc">トイレ、洗面台、浴槽など</p>
+                    <div class="category-badge coming-soon" data-lang-key="family-badge-coming-soon">準備中</div>
+                </div>
+
+                <!-- 照明器具カテゴリ -->
+                <div class="family-category-card">
+                    <div class="category-icon lighting">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                            <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title" data-lang-key="family-cat-lighting">照明器具</h3>
+                    <p class="category-description" data-lang-key="family-cat-lighting-desc">ダウンライト、ペンダント、間接照明など</p>
+                    <div class="category-badge coming-soon" data-lang-key="family-badge-coming-soon">準備中</div>
+                </div>
+
+                <!-- 外構カテゴリ -->
+                <div class="family-category-card">
+                    <div class="category-icon site">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title" data-lang-key="family-cat-site">外構</h3>
+                    <p class="category-description" data-lang-key="family-cat-site-desc">植栽、フェンス、舗装、サインなど</p>
+                    <div class="category-badge coming-soon" data-lang-key="family-badge-coming-soon">準備中</div>
+                </div>
+
+                <!-- 特殊カテゴリ -->
+                <div class="family-category-card">
+                    <div class="category-icon specialty">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="2 17 12 22 22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="2 12 12 17 22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title" data-lang-key="family-cat-specialty">特殊</h3>
+                    <p class="category-description" data-lang-key="family-cat-specialty-desc">注釈、タグ、詳細アイテムなど</p>
+                    <div class="category-badge coming-soon" data-lang-key="family-badge-coming-soon">準備中</div>
+                </div>
+            </div>
+
+            <!-- お知らせセクション -->
+            <div class="info-box">
+                <h3 data-lang-key="family-info-title">📢 ファミリライブラリについて</h3>
+                <p data-lang-key="family-info-content">
+                    現在、各カテゴリのファミリを準備中です。順次公開していく予定ですので、しばらくお待ちください。<br>
+                    リクエストやご要望がありましたら、お問い合わせフォームからお気軽にご連絡ください。
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <div class="site-footer-links">
+                <a href="about.html" data-lang-key="footer-about">運営者情報</a>
+                <span class="footer-divider">|</span>
+                <a href="contact.html" data-lang-key="footer-contact">お問い合わせ</a>
+                <span class="footer-divider">|</span>
+                <a href="privacy.html" data-lang-key="footer-privacy">プライバシーポリシー</a>
+                <span class="footer-divider">|</span>
+                <a href="terms.html" data-lang-key="footer-terms">利用規約</a>
+            </div>
+            <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
