@@ -72,91 +72,94 @@
         <section class="sidebar-layout">
             <!-- サイドバーナビゲーション -->
             <nav class="sidebar-nav">
-                <div class="sidebar-item addins active" data-target="content-addins">
+                <a href="addins.html" class="sidebar-item addins">
                     <div class="sidebar-icon">
                         <img src="images/portal/icon-addon.png" alt="アドイン">
                     </div>
                     <span class="sidebar-label" data-lang-key="index-tab-addins">アドイン</span>
-                </div>
-                <div class="sidebar-item family" data-target="content-family">
+                </a>
+                <a href="#" class="sidebar-item family">
                     <div class="sidebar-icon">
                         <img src="images/portal/icon-family.png" alt="ファミリ">
                     </div>
                     <span class="sidebar-label" data-lang-key="index-tab-family">ファミリ</span>
-                </div>
-                <div class="sidebar-item hatch" data-target="content-hatch">
+                </a>
+                <a href="hatch.html" class="sidebar-item hatch">
                     <div class="sidebar-icon">
                         <img src="images/portal/icon-hatch.png" alt="塗潰し領域">
                     </div>
                     <span class="sidebar-label" data-lang-key="index-tab-hatch">塗潰し</span>
-                </div>
-                <div class="sidebar-item knowledge" data-target="content-knowledge">
+                </a>
+                <a href="news.html" class="sidebar-item knowledge">
                     <div class="sidebar-icon">
-                        <img src="images/portal/icon-knowledge.png" alt="ナレッジ">
+                        <img src="images/portal/icon-knowledge.png" alt="BIMニュース">
                     </div>
-                    <span class="sidebar-label" data-lang-key="index-tab-knowledge">ナレッジ</span>
-                </div>
+                    <span class="sidebar-label" data-lang-key="index-tab-knowledge">BIMニュース</span>
+                </a>
             </nav>
 
             <!-- メインコンテンツエリア -->
             <div class="main-content-wrapper">
-                <!-- アドイン -->
-                <div id="content-addins" class="main-content-area active">
+                <!-- サイト全体の紹介 -->
+                <div class="main-content-area active">
+                    <!-- アドイン情報（最上部） -->
                     <div class="content-header">
                         <div class="content-icon">
                             <img src="images/portal/icon-addon.png" alt="アドイン">
                         </div>
-                        <h2 class="content-title" data-lang-key="index-addins-title">アドイン</h2>
+                        <h2 class="content-title" data-lang-key="index-overview-addon-title">28 Tools - Revit アドイン</h2>
                     </div>
                     <span class="content-badge available" data-lang-key="index-addins-badge">6機能 利用可能</span>
-                    <p class="content-description" data-lang-key="index-addins-desc">
-                        Revit作業を効率化する無料アドインツール。
+                    <p class="content-description" data-lang-key="index-overview-addon-desc">
+                        Revit作業を効率化する無料アドインツール。通り芯符号切替、シート一括作成、3D視点コピペなど、6つの便利機能をワンクリックで利用できます。
                     </p>
                     <div class="content-image">
                         <img src="images/revit-ribbon-preview.png" alt="Revitリボンプレビュー">
                     </div>
                     <a href="addins.html" class="content-action" data-lang-key="index-addins-action">詳細・ダウンロード →</a>
-                </div>
 
-                <!-- ファミリ -->
-                <div id="content-family" class="main-content-area">
-                    <div class="content-header">
-                        <div class="content-icon">
-                            <img src="images/portal/icon-family.png" alt="ファミリ">
-                        </div>
-                        <h2 class="content-title" data-lang-key="index-family-title">ファミリ</h2>
-                    </div>
-                    <p class="content-coming-soon" data-lang-key="index-coming-soon">準備中</p>
-                </div>
+                    <!-- サイト全体の紹介 -->
+                    <div class="site-overview-section">
+                        <h3 class="overview-title" data-lang-key="index-overview-title">28 Tools について</h3>
+                        <p class="overview-description" data-lang-key="index-overview-desc-1">
+                            28 Tools は、BIM・Revit・建築業界の作業効率化を支援する総合プラットフォームです。
+                        </p>
+                        <p class="overview-description" data-lang-key="index-overview-desc-2">
+                            無料で使えるアドインツール、ハッチングパターン作成ツール、そして最新の業界ニュースまで、設計者・施工者のニーズに応える多彩なコンテンツを提供しています。
+                        </p>
 
-                <!-- 塗潰し領域自動作成 -->
-                <div id="content-hatch" class="main-content-area">
-                    <div class="content-header">
-                        <div class="content-icon">
-                            <img src="images/portal/icon-hatch.png" alt="塗潰し領域">
+                        <!-- 各カテゴリの概要 -->
+                        <div class="categories-grid">
+                            <div class="category-item">
+                                <div class="category-icon">
+                                    <img src="images/portal/icon-addon.png" alt="アドイン">
+                                </div>
+                                <h4 class="category-name" data-lang-key="index-tab-addins">アドイン</h4>
+                                <p class="category-desc" data-lang-key="index-category-addon-desc">Revit 2021-2026 対応の無料アドイン。6つの便利機能をインストール不要ですぐに利用できます。</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="category-icon">
+                                    <img src="images/portal/icon-family.png" alt="ファミリ">
+                                </div>
+                                <h4 class="category-name" data-lang-key="index-tab-family">ファミリ</h4>
+                                <p class="category-desc" data-lang-key="index-category-family-desc">高品質なRevitファミリライブラリ。実務で使える豊富なファミリを無料でダウンロード。（準備中）</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="category-icon">
+                                    <img src="images/portal/icon-hatch.png" alt="塗潰し">
+                                </div>
+                                <h4 class="category-name" data-lang-key="index-tab-hatch">塗潰し</h4>
+                                <p class="category-desc" data-lang-key="index-category-hatch-desc">Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。6種類のパターンに対応。</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="category-icon">
+                                    <img src="images/portal/icon-knowledge.png" alt="BIMニュース">
+                                </div>
+                                <h4 class="category-name" data-lang-key="index-tab-knowledge">BIMニュース</h4>
+                                <p class="category-desc" data-lang-key="index-category-news-desc">BIM・Revit・建築業界の最新ニュースを自動収集。業界トレンドを毎日チェック。（準備中）</p>
+                            </div>
                         </div>
-                        <h2 class="content-title" data-lang-key="index-hatch-title">塗潰しパターン作成</h2>
                     </div>
-                    <span class="content-badge available" data-lang-key="index-hatch-badge">6パターン 利用可能</span>
-                    <p class="content-description" data-lang-key="index-hatch-desc">
-                        Revit / AutoCAD用のハッチングパターンファイル（.pat）を作成できます。
-                    </p>
-                    <a href="hatch.html" class="content-action" data-lang-key="index-hatch-action">パターン作成ツールへ →</a>
-                </div>
-
-                <!-- ナレッジ -->
-                <div id="content-knowledge" class="main-content-area">
-                    <div class="content-header">
-                        <div class="content-icon">
-                            <img src="images/portal/icon-knowledge.png" alt="ナレッジ">
-                        </div>
-                        <h2 class="content-title" data-lang-key="index-knowledge-title">ナレッジ</h2>
-                    </div>
-                    <span class="content-badge available" data-lang-key="index-knowledge-badge">BIM業界ニュース 利用可能</span>
-                    <p class="content-description" data-lang-key="index-knowledge-desc">
-                        BIM・Revit・建築業界の最新ニュースを自動収集。毎日更新されます。
-                    </p>
-                    <a href="news.html" class="content-action" data-lang-key="index-knowledge-action">ニュース一覧へ →</a>
                 </div>
             </div>
         </section>
@@ -260,22 +263,6 @@
 
     <script src="js/main.js"></script>
     <script>
-        // サイドバーナビゲーション
-        document.querySelectorAll('.sidebar-item').forEach(item => {
-            item.addEventListener('click', function() {
-                // 全てのサイドバーアイテムからactiveを削除
-                document.querySelectorAll('.sidebar-item').forEach(i => i.classList.remove('active'));
-                // クリックしたアイテムにactiveを追加
-                this.classList.add('active');
-
-                // 全てのコンテンツエリアを非表示
-                document.querySelectorAll('.main-content-area').forEach(content => content.classList.remove('active'));
-                // 対応するコンテンツを表示
-                const targetId = this.getAttribute('data-target');
-                document.getElementById(targetId).classList.add('active');
-            });
-        });
-
         // 言語切り替え初期化（main.jsで初期化されなかった場合のフォールバック）
         window.addEventListener('load', function() {
             const langBtn = document.getElementById('lang-btn');

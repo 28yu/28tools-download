@@ -54,10 +54,13 @@ const downloadConfig = {
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('🚀 28 Tools Download Center - Initializing...');
-    
+
     // 共通ヘッダーの読み込み
     loadHeader();
-    
+
+    // 共通サイドバーの読み込み
+    loadSidebar();
+
     // 言語設定の読み込み
     loadLanguagePreference();
     
@@ -118,6 +121,58 @@ async function loadHeader() {
         console.error('❌ Error loading header:', error);
         headerContainer.innerHTML = '<p style="color: red;">ヘッダーの読み込みに失敗しました</p>';
     }
+}
+
+// ========================================
+// 2.5 共通サイドバー読み込み
+// ========================================
+
+async function loadSidebar() {
+    const sidebarContainer = document.getElementById('sidebar-container');
+    if (!sidebarContainer) {
+        console.warn('⚠️ Sidebar container not found');
+        return;
+    }
+
+    try {
+        // パス解決（マニュアルページ対応）
+        const isManualPage = document.body.classList.contains('manual-page');
+        const sidebarPath = isManualPage ? '../includes/sidebar.html' : 'includes/sidebar.html';
+
+        console.log(`📄 Loading sidebar from: ${sidebarPath}`);
+
+        const response = await fetch(sidebarPath);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const sidebarHTML = await response.text();
+        sidebarContainer.innerHTML = sidebarHTML;
+
+        console.log('✅ Sidebar loaded successfully');
+
+        // 現在のページに対応するサイドバーアイテムにactiveクラスを追加
+        setActiveSidebarItem();
+
+        // サイドバー読み込み後の翻訳更新
+        updateAllContent();
+
+    } catch (error) {
+        console.error('❌ Error loading sidebar:', error);
+        sidebarContainer.innerHTML = '<p style="color: red;">サイドバーの読み込みに失敗しました</p>';
+    }
+}
+
+function setActiveSidebarItem() {
+    const currentPath = window.location.pathname;
+    const sidebarItems = document.querySelectorAll('.sidebar-item');
+
+    sidebarItems.forEach(item => {
+        const href = item.getAttribute('href');
+        if (href && currentPath.includes(href.replace('.html', ''))) {
+            item.classList.add('active');
+        }
+    });
 }
 
 // ========================================
@@ -462,9 +517,9 @@ function initTranslations() {
             zh: '填充'
         },
         'index-tab-knowledge': {
-            ja: 'ナレッジ',
-            en: 'Knowledge',
-            zh: '知识库'
+            ja: 'BIMニュース',
+            en: 'BIM News',
+            zh: 'BIM新闻'
         },
         'index-addins-title': {
             ja: 'アドイン',
@@ -552,9 +607,9 @@ function initTranslations() {
             zh: '前往图案创建工具 →'
         },
         'index-knowledge-title': {
-            ja: 'ナレッジ',
-            en: 'Knowledge',
-            zh: '知识库'
+            ja: 'BIMニュース',
+            en: 'BIM News',
+            zh: 'BIM新闻'
         },
         'index-knowledge-badge': {
             ja: 'BIM業界ニュース 利用可能',
@@ -570,6 +625,51 @@ function initTranslations() {
             ja: 'ニュース一覧へ →',
             en: 'View News →',
             zh: '查看新闻 →'
+        },
+        'index-overview-addon-title': {
+            ja: '28 Tools - Revit アドイン',
+            en: '28 Tools - Revit Add-ins',
+            zh: '28 Tools - Revit 插件'
+        },
+        'index-overview-addon-desc': {
+            ja: 'Revit作業を効率化する無料アドインツール。通り芯符号切替、シート一括作成、3D視点コピペなど、6つの便利機能をワンクリックで利用できます。',
+            en: 'Free add-in tools to streamline your Revit workflow. 6 convenient features including grid bubble toggle, batch sheet creation, and 3D view copy-paste, all available with a single click.',
+            zh: '免费插件工具，提高Revit工作效率。6个便捷功能，包括网格符号切换、批量图纸创建、3D视图复制粘贴等，一键即可使用。'
+        },
+        'index-overview-title': {
+            ja: '28 Tools について',
+            en: 'About 28 Tools',
+            zh: '关于 28 Tools'
+        },
+        'index-overview-desc-1': {
+            ja: '28 Tools は、BIM・Revit・建築業界の作業効率化を支援する総合プラットフォームです。',
+            en: '28 Tools is a comprehensive platform supporting work efficiency in the BIM, Revit, and architecture industries.',
+            zh: '28 Tools 是支持BIM、Revit和建筑行业工作效率的综合平台。'
+        },
+        'index-overview-desc-2': {
+            ja: '無料で使えるアドインツール、ハッチングパターン作成ツール、そして最新の業界ニュースまで、設計者・施工者のニーズに応える多彩なコンテンツを提供しています。',
+            en: 'We provide diverse content that meets the needs of designers and contractors, from free add-in tools and hatching pattern creators to the latest industry news.',
+            zh: '我们提供满足设计师和承包商需求的多样化内容，从免费插件工具、填充图案创建工具到最新的行业新闻。'
+        },
+        'index-category-addon-desc': {
+            ja: 'Revit 2021-2026 対応の無料アドイン。6つの便利機能をインストール不要ですぐに利用できます。',
+            en: 'Free add-ins compatible with Revit 2021-2026. 6 convenient features ready to use without installation.',
+            zh: '兼容Revit 2021-2026的免费插件。6个便捷功能无需安装即可使用。'
+        },
+        'index-category-family-desc': {
+            ja: '高品質なRevitファミリライブラリ。実務で使える豊富なファミリを無料でダウンロード。（準備中）',
+            en: 'High-quality Revit family library. Download a rich collection of practical families for free. (Coming Soon)',
+            zh: '高质量的Revit族库。免费下载丰富的实用族。（即将推出）'
+        },
+        'index-category-hatch-desc': {
+            ja: 'Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。6種類のパターンに対応。',
+            en: 'Easily create hatching pattern files (.pat) for Revit/AutoCAD. Supports 6 pattern types.',
+            zh: '轻松创建Revit/AutoCAD的填充图案文件（.pat）。支持6种图案类型。'
+        },
+        'index-category-news-desc': {
+            ja: 'BIM・Revit・建築業界の最新ニュースを自動収集。業界トレンドを毎日チェック。（準備中）',
+            en: 'Auto-collect the latest news from BIM, Revit, and architecture industries. Check industry trends daily. (Coming Soon)',
+            zh: '自动收集BIM、Revit和建筑行业的最新新闻。每天查看行业趋势。（即将推出）'
         },
         'index-news-title': {
             ja: '新着・おすすめ',
