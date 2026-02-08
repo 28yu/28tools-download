@@ -1869,9 +1869,7 @@ h1.main-title,
 
 /* サイト概要セクション */
 .site-overview-section {
-    margin-top: 48px;
-    padding-top: 32px;
-    border-top: 2px solid rgba(52, 73, 94, 0.1);
+    /* トップページのメインコンテンツとして配置されるため、上部のマージンや枠線は不要 */
 }
 
 .overview-title {
@@ -1890,12 +1888,17 @@ h1.main-title,
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+/* サイト概要セクション内のRevitリボン画像 */
+.site-overview-section .content-image {
+    margin: 32px 0;
+}
+
 /* カテゴリグリッド */
 .categories-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    margin-top: 32px;
+    margin-top: 24px;
 }
 
 .category-item {

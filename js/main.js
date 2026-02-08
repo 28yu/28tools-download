@@ -626,16 +626,6 @@ function initTranslations() {
             en: 'View News →',
             zh: '查看新闻 →'
         },
-        'index-overview-addon-title': {
-            ja: '28 Tools - Revit アドイン',
-            en: '28 Tools - Revit Add-ins',
-            zh: '28 Tools - Revit 插件'
-        },
-        'index-overview-addon-desc': {
-            ja: 'Revit作業を効率化する無料アドインツール。通り芯符号切替、シート一括作成、3D視点コピペなど、6つの便利機能をワンクリックで利用できます。',
-            en: 'Free add-in tools to streamline your Revit workflow. 6 convenient features including grid bubble toggle, batch sheet creation, and 3D view copy-paste, all available with a single click.',
-            zh: '免费插件工具，提高Revit工作效率。6个便捷功能，包括网格符号切换、批量图纸创建、3D视图复制粘贴等，一键即可使用。'
-        },
         'index-overview-title': {
             ja: '28 Tools について',
             en: 'About 28 Tools',
