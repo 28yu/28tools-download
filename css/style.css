@@ -477,6 +477,45 @@ h1.main-title,
     opacity: 0.7;
     font-weight: 400;
     font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 12px;
+}
+
+/* ダウンロードボタン */
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 20px;
+    background: var(--architect-green);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-family: 'Noto Sans JP', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.download-btn:hover {
+    background: #219a52;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+.download-btn:active {
+    transform: translateY(0);
+}
+
+.download-icon {
+    font-size: 1rem;
+}
+
+.download-text {
+    font-weight: 500;
 }
 
 /* ==========================================

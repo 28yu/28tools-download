@@ -460,6 +460,11 @@ function initTranslations() {
             en: 'Available',
             zh: '可用'
         },
+        'download-btn': {
+            ja: 'ダウンロード',
+            en: 'Download',
+            zh: '下载'
+        },
         'version-status-development': {
             ja: '開発中',
             en: 'In Development',
@@ -3274,30 +3279,26 @@ function showNotAvailableMessage() {
 
 // ダウンロードボタンの初期化
 function setupDownloadButtons() {
-    // すべてのバージョンタブにクリックイベントを追加
-    const allVersionTabs = document.querySelectorAll('.version-tab[data-version]');
-    
-    allVersionTabs.forEach(tab => {
-        tab.addEventListener('click', function(e) {
+    // すべてのダウンロードボタンにクリックイベントを追加
+    const allDownloadButtons = document.querySelectorAll('.download-btn[data-version]');
+
+    allDownloadButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            
+
             const version = this.getAttribute('data-version');
-            const isCompleted = this.classList.contains('completed');
-            
-            console.log(`🖱️ Version tab clicked: ${version}, completed: ${isCompleted}`);
-            
-            if (isCompleted && version) {
-                // 完成済み → パスワードダウンロード
+
+            console.log(`🖱️ Download button clicked: ${version}`);
+
+            if (version) {
+                // ダウンロード開始
                 downloadWithPassword(version);
-            } else {
-                // 準備中 → メッセージ表示
-                showNotAvailableMessage();
             }
         });
     });
-    
-    console.log(`✅ Download buttons initialized: ${allVersionTabs.length} tabs (all versions)`);
+
+    console.log(`✅ Download buttons initialized: ${allDownloadButtons.length} buttons`);
 }
 
 // グローバルに公開（onclick属性用）
