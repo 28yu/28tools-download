@@ -139,6 +139,18 @@ def extract_thumbnail(entry):
             if 'image' in enc.get('type', ''):
                 return enc.get('href')
 
+    # descriptionやsummaryから<img>タグを抽出（最後の手段）
+    description = entry.get('summary', entry.get('description', ''))
+    if description:
+        # <img src="..." /> パターンを抽出
+        img_pattern = re.compile(r'<img[^>]+src=["\']([^"\']+)["\']', re.IGNORECASE)
+        match = img_pattern.search(description)
+        if match:
+            img_url = match.group(1)
+            # 相対URLを除外（http/httpsで始まるもののみ）
+            if img_url.startswith('http://') or img_url.startswith('https://'):
+                return img_url
+
     return None
 
 def main():
