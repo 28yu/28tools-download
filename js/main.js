@@ -260,15 +260,20 @@ function updateLanguageButton() {
     if (!langBtn) return;
 
     const langMap = {
-        'ja': { text: 'JP', flag: '🇯🇵' },
-        'en': { text: 'US', flag: '🇺🇸' },
-        'zh': { text: 'CN', flag: '🇨🇳' }
+        'ja': { text: 'JP', flag: '🇯🇵', icon: '/images/flags/jp.svg', alt: '日本' },
+        'en': { text: 'US', flag: '🇺🇸', icon: '/images/flags/us.svg', alt: 'United States' },
+        'zh': { text: 'CN', flag: '🇨🇳', icon: '/images/flags/cn.svg', alt: '中国' }
     };
 
     const lang = langMap[currentLanguage];
+
+    // パス解決（マニュアルページ対応）
+    const basePath = window.location.pathname.includes('/manual/') ? '..' : '.';
+    const iconPath = window.location.pathname.includes('/manual/') ? lang.icon.replace('/', '../') : lang.icon;
+
     langBtn.innerHTML = `
         <span class="lang-text">${lang.text}</span>
-        <span class="flag-emoji">${lang.flag}</span>
+        <img src="${iconPath}" alt="${lang.alt}" class="flag-icon">
         <span class="arrow">▼</span>
     `;
 }
