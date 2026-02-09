@@ -74,6 +74,27 @@ RSS_FEEDS = [
     # 追加のフィードはここに記載
 ]
 
+def strip_html_tags(html):
+    """HTMLタグを削除してプレーンテキストを返す"""
+    if not html:
+        return ''
+
+    # HTMLタグを削除
+    text = re.sub(r'<[^>]*>', '', html)
+
+    # HTMLエンティティをデコード
+    text = text.replace('&nbsp;', ' ')
+    text = text.replace('&amp;', '&')
+    text = text.replace('&lt;', '<')
+    text = text.replace('&gt;', '>')
+    text = text.replace('&quot;', '"')
+    text = text.replace('&#8230;', '...')
+
+    # 余分な空白を削除
+    text = re.sub(r'\s+', ' ', text).strip()
+
+    return text
+
 def detect_language(text):
     """テキストから言語を検出（簡易版）"""
     if not text:
@@ -99,7 +120,10 @@ def fetch_feed(feed_config):
 
         for entry in feed.entries[:10]:  # 最新10件
             title = entry.get('title', 'No Title')
-            description = entry.get('summary', entry.get('description', ''))[:200] + '...'
+            raw_description = entry.get('summary', entry.get('description', ''))
+
+            # HTMLタグを削除してプレーンテキストのみ抽出
+            description = strip_html_tags(raw_description)[:200] + '...'
 
             # 言語を検出（フィード設定に基づくか、タイトルから自動検出）
             language = feed_config.get('language', detect_language(title))
