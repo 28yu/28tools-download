@@ -5,6 +5,7 @@
 
 // グローバル変数
 let currentLanguage = 'ja';
+window.currentLanguage = currentLanguage; // news.jsから参照できるようにグローバル公開
 const translations = {};
 
 // ========================================
@@ -183,9 +184,11 @@ function loadLanguagePreference() {
     const savedLang = localStorage.getItem('28tools-language');
     if (savedLang && ['ja', 'en', 'zh'].includes(savedLang)) {
         currentLanguage = savedLang;
+        window.currentLanguage = savedLang; // グローバル変数も更新
         console.log(`🌐 Language preference loaded: ${currentLanguage}`);
     } else {
         currentLanguage = 'ja';
+        window.currentLanguage = 'ja'; // グローバル変数も更新
         console.log('🌐 Using default language: ja');
     }
 }
@@ -280,9 +283,10 @@ function updateLanguageButton() {
 
 function changeLanguage(lang) {
     if (currentLanguage === lang) return;
-    
+
     console.log(`🌐 Changing language: ${currentLanguage} → ${lang}`);
     currentLanguage = lang;
+    window.currentLanguage = lang; // グローバル変数も更新
     saveLanguagePreference(lang);
     updateLanguageButton();
     updateAllContent();
