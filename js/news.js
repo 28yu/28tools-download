@@ -92,6 +92,9 @@ function createNewsCard(article) {
         ? `<img src="${article.thumbnail}" alt="${article.title}">`
         : '<div class="no-image"></div>';
 
+    // descriptionからHTMLタグを削除してクリーンなテキストのみ表示
+    const cleanDescription = stripHtml(article.description || '');
+
     return `
         <article class="news-card" data-category="${article.category}">
             <div class="news-card-thumbnail ${article.thumbnail ? '' : 'no-image'}">
@@ -104,7 +107,7 @@ function createNewsCard(article) {
                         ${escapeHtml(article.title)}
                     </a>
                 </h3>
-                <p class="news-card-description">${escapeHtml(article.description || '')}</p>
+                <p class="news-card-description">${escapeHtml(cleanDescription)}</p>
                 <div class="news-card-meta">
                     <span class="news-card-date">${formatDate(article.publishedDate)}</span>
                     <span class="news-card-source">${escapeHtml(article.source)}</span>
@@ -187,4 +190,22 @@ function escapeHtml(text) {
         "'": '&#039;'
     };
     return text.replace(/[&<>"']/g, m => map[m]);
+}
+
+// HTMLタグを削除してプレーンテキストを返す
+function stripHtml(html) {
+    if (!html) return '';
+
+    // HTMLタグを削除
+    let text = html.replace(/<[^>]*>/g, '');
+
+    // HTMLエンティティをデコード
+    const textarea = document.createElement('textarea');
+    textarea.innerHTML = text;
+    text = textarea.value;
+
+    // 余分な空白を削除
+    text = text.replace(/\s+/g, ' ').trim();
+
+    return text;
 }
