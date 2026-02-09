@@ -69,13 +69,23 @@ body.manual-page {
     color: var(--concrete-gray);
 }
 
-.lang-selector-button .flag-emoji {
+.lang-selector-button .flag-emoji,
+.lang-selector-button .flag-icon {
     font-size: 1.2rem;
     line-height: 1;
     display: inline-block;
     font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
     white-space: nowrap;
     margin: 0 2px;
+}
+
+/* 国旗アイコン（画像） */
+.flag-icon {
+    width: 1.2em;
+    height: 0.9em;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4px;
 }
 
 .lang-selector-button .arrow {
@@ -138,7 +148,8 @@ body.manual-page {
     color: var(--concrete-gray);
 }
 
-.lang-option .flag-emoji {
+.lang-option .flag-emoji,
+.lang-option .flag-icon {
     font-size: 1.2rem;
     line-height: 1;
     display: inline-block;
