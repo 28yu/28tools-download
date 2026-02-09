@@ -163,6 +163,18 @@ def extract_thumbnail(entry):
             if 'image' in enc.get('type', ''):
                 return enc.get('href')
 
+    # content:encoded（WordPress等のフルコンテンツ）から画像を抽出
+    if hasattr(entry, 'content'):
+        for content in entry.content:
+            if content.get('type') in ['text/html', 'application/xhtml+xml']:
+                content_html = content.get('value', '')
+                img_pattern = re.compile(r'<img[^>]+src=["\']([^"\']+)["\']', re.IGNORECASE)
+                match = img_pattern.search(content_html)
+                if match:
+                    img_url = match.group(1)
+                    if img_url.startswith('http://') or img_url.startswith('https://'):
+                        return img_url
+
     # descriptionやsummaryから<img>タグを抽出（最後の手段）
     description = entry.get('summary', entry.get('description', ''))
     if description:
