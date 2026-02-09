@@ -1,5 +1,6 @@
 /* ==============================
    BIM業界ニュースページ - JavaScript
+   Version: 1.1 - HTMLタグ除去機能追加
    ============================== */
 
 // グローバル変数
@@ -196,16 +197,30 @@ function escapeHtml(text) {
 function stripHtml(html) {
     if (!html) return '';
 
-    // HTMLタグを削除
+    // HTMLタグを削除（より確実に）
     let text = html.replace(/<[^>]*>/g, '');
 
+    // 残ったHTMLエンティティやタグの断片を削除
+    text = text.replace(/&[a-z]+;/gi, ' '); // &nbsp; などを削除
+    text = text.replace(/&#\d+;/g, ' '); // &#8230; などを削除
+
     // HTMLエンティティをデコード
-    const textarea = document.createElement('textarea');
-    textarea.innerHTML = text;
-    text = textarea.value;
+    try {
+        const textarea = document.createElement('textarea');
+        textarea.innerHTML = text;
+        text = textarea.value;
+    } catch (e) {
+        console.warn('Failed to decode HTML entities:', e);
+    }
 
     // 余分な空白を削除
     text = text.replace(/\s+/g, ' ').trim();
+
+    // 文字数制限（長すぎる場合は切り詰め）
+    const maxLength = 150;
+    if (text.length > maxLength) {
+        text = text.substring(0, maxLength) + '...';
+    }
 
     return text;
 }
