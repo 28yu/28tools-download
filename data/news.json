@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11T01:27:12.837416",
+  "lastUpdated": "2026-02-12T01:20:45.502422",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -42,23 +42,43 @@
       "language": "en"
     },
     {
-      "title": "【2026年最新】1立米（1m³）のコンクリートの重さは？単価・材料・手練り量まで解説",
-      "link": "https://news.build-app.jp/article/39072/",
-      "description": "建設工事でよく使われる1立米（1㎥）という単位ですが、コンクリートの場合、重さや単価、材料の配合量などがどれくらいになるのかイメージできず、......",
-      "publishedDate": "Wed, 04 Feb 2026 23:30:00 +0000",
+      "title": "臨海地下鉄はいつ開業？路線図ルートを解説",
+      "link": "https://news.build-app.jp/article/39179/",
+      "description": "トレンドワード：臨海地下鉄 「臨海地下鉄」についてピックアップします。東京駅や銀座、築地から有明・東京ビッグサイト方面を直結する計画で、交通......",
+      "publishedDate": "Wed, 11 Feb 2026 23:50:30 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/48ffefa061ec93df3ba5e966b65e2eec-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/AdobeStock_259827090-130x87.jpeg",
       "language": "ja"
     },
     {
-      "title": "【建設業界初】足場の安全衛生情報をBIM上で可視化する「仮設8D BIM」特設サイトを公開",
-      "link": "https://news.build-app.jp/article/39026/",
-      "description": "株式会社ダイサン（代表取締役社長：藤田武敏）は、一般社団法人仮設工業会（会長：豊澤康男）とDX時代のレジリエンス能力向上対策検討委員会（委員......",
-      "publishedDate": "Wed, 04 Feb 2026 22:00:00 +0000",
+      "title": "建築模型の材料はこれで揃う｜初心者〜設計課題まで失敗しない選び方",
+      "link": "https://news.build-app.jp/article/39137/",
+      "description": "建築模型を作りたいけれど「どの材料を選べばいいのかわからない」「見た目は良いのに評価が伸びない」とお悩みではないでしょうか。 実は、建築模型......",
+      "publishedDate": "Wed, 11 Feb 2026 23:30:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/05/xDWuQMDaxO4XKiv1652275145-130x87.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/9ff5ecdda36f729f99d9a05e69efff77-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "GRIFFY・東洋熱工業　スリーブ検査をiPad Pro1台で アプリ「SLEEVY」開発",
+      "link": "https://news.build-app.jp/article/39116/",
+      "description": "株式会社GRIFFY（本社：東京都千代田区、代表取締役：入澤 拓也、以下「GRIFFY」）および東洋熱工業株式会社（本社：東京都中央区、代表......",
+      "publishedDate": "Wed, 11 Feb 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/NvWCI988PC82Vn51657720065_1657720078-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年版】建設工事とは？許可・契約・変更管理まで「実務順」でわかる完全ガイド",
+      "link": "https://news.build-app.jp/article/39174/",
+      "description": "建設工事は「建物を建てる工事」だけではなく、土木・改修・維持補修まで含む広い概念です。さらに近年は、2024年4月から建設業にも時間外労働の......",
+      "publishedDate": "Wed, 11 Feb 2026 15:41:35 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/23475621_m-130x98.jpg",
       "language": "ja"
     },
     {
@@ -69,16 +89,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/processed_image_final-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "保護中: 実務者による書き下ろしで初刊行となる「GLOOBE ArchitectではじめるBIM活用入門」｜深堀り取材【毎月15日・月末更新】",
-      "link": "https://news.build-app.jp/article/39030/",
-      "description": "この投稿はパスワードで保護されているため抜粋文はありません。...",
-      "publishedDate": "Wed, 04 Feb 2026 08:10:56 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/036e9411fd476f0d6df6a253ef1f2491-130x82.png",
       "language": "ja"
     },
     {
@@ -109,16 +119,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/f72f9417304443942b30cbc4d058b553-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "山岳トンネル工事における装薬時の肌落ち災害を防止",
-      "link": "https://news.build-app.jp/article/39067/",
-      "description": "株式会社奥村組（本社：大阪市阿倍野区、代表取締役社長：奥村 太加典）は、山岳トンネル工事の爆薬装填作業において、装薬孔（爆薬を装填する穴）内......",
-      "publishedDate": "Thu, 05 Feb 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/01/4282719_m-130x61.jpg",
       "language": "ja"
     },
     {
