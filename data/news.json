@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-12T01:20:45.502422",
+  "lastUpdated": "2026-02-13T01:23:26.175697",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -48,7 +48,7 @@
       "publishedDate": "Wed, 11 Feb 2026 23:50:30 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/AdobeStock_259827090-130x87.jpeg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/6c006f3fe264789b5ddd21060819c6ea-1-130x82.png",
       "language": "ja"
     },
     {
@@ -112,13 +112,23 @@
       "language": "en"
     },
     {
-      "title": "【2026年最新版】建設業経理士3級は独学で合格できる？試験日・過去問・勉強時間を完全ガイド",
-      "link": "https://news.build-app.jp/article/39079/",
-      "description": "建設会社で経理や事務を担当することになり、「建設業経理士3級」という資格を勧められたものの、本当に取る意味があるのか、独学で合格できるのかと......",
-      "publishedDate": "Thu, 05 Feb 2026 23:30:00 +0000",
+      "title": "巻き立てコンクリートとは？打設方法・規格・RC巻き立て補強・ひび割れ対策まで徹底解説",
+      "link": "https://news.build-app.jp/article/39199/",
+      "description": "既設の橋脚や水路、ボックスカルバートなどの老朽化が進むなかで、構造物を撤去せずに性能を回復・向上させる工法として注目されているのが「巻き立て......",
+      "publishedDate": "Thu, 12 Feb 2026 23:30:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/f72f9417304443942b30cbc4d058b553-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/8908cce287a2c64ad0a541461f18d0fb-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "KOLC＋、デジタルツイン現場の「ミラーリング共有」に対応",
+      "link": "https://news.build-app.jp/article/39191/",
+      "description": "株式会社コルク（東京都豊島区、代表取締役：堤正雄）は、BIM/CIMクラウド「KOLC＋（コルクプラス）」にて、デジタルツイン空間を外部プロ......",
+      "publishedDate": "Thu, 12 Feb 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/07/27263083_m-130x106.jpg",
       "language": "ja"
     },
     {
@@ -169,16 +179,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/engineer_ai_strategy_1280x670_compressed-1024x536.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "東京ワールドゲート赤坂・赤坂グリーンクロス｜入居企業とアクセスから見る再開発の共通点とは",
-      "link": "https://news.build-app.jp/article/39057/",
-      "description": "トレンドワード：東京ワールドゲート赤坂・赤坂グリーンクロス 「東京ワールドゲート赤坂」と「赤坂グリーンクロス」は、どちらも赤坂エリアで202......",
-      "publishedDate": "Sat, 07 Feb 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/4529a3e718de6ead1b224690481b78db-130x82.png",
       "language": "ja"
     },
     {
