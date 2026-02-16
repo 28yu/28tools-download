@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-15T01:23:12.767524",
+  "lastUpdated": "2026-02-16T01:19:40.533854",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -82,16 +82,6 @@
       "language": "ja"
     },
     {
-      "title": "153兆円の衝撃!SpaceX×xAI合併で宇宙にAI革命",
-      "link": "https://axconstdx.com/2026/02/04/153%e5%85%86%e5%86%86%e3%81%ae%e8%a1%9d%e6%92%83spacexxxai%e5%90%88%e4%bd%b5%e3%81%a7%e5%ae%87%e5%ae%99%e3%81%abai%e9%9d%a9%e5%91%bd/?utm_source=rss&utm_medium=rss&utm_campaign=153%25e5%2585%2586%25e5%2586%2586%25e3%2581%25ae%25e8%25a1%259d%25e6%2592%2583spacexxxai%25e5%2590%2588%25e4%25bd%25b5%25e3%2581%25a7%25e5%25ae%2587%25e5%25ae%2599%25e3%2581%25abai%25e9%259d%25a9%25e5%2591%25bd",
-      "description": "イーロン・マスク氏が率いる宇宙開発企業のSpaceXは、2026年2月2日に人工知能開発のxAIを買収しました。米国時間での発表です。この統合により、ロケット技術とStarlinkの衛星通信が一つになります。さらにXとG [...] <p>The post 153兆円の衝撃!SpaceX×xAI合併で宇宙にAI革命 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Wed, 04 Feb 2026 12:12:04 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/processed_image_final-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "なぜあの会社は提案が速い？間取り図作成アプリの秘密",
       "link": "https://axconstdx.com/2026/02/11/%e3%81%aa%e3%81%9c%e3%81%82%e3%81%ae%e4%bc%9a%e7%a4%be%e3%81%af%e6%8f%90%e6%a1%88%e3%81%8c%e9%80%9f%e3%81%84%ef%bc%9f%e9%96%93%e5%8f%96%e3%82%8a%e5%9b%b3%e4%bd%9c%e6%88%90%e3%82%a2%e3%83%97%e3%83%aa/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2581%25aa%25e3%2581%259c%25e3%2581%2582%25e3%2581%25ae%25e4%25bc%259a%25e7%25a4%25be%25e3%2581%25af%25e6%258f%2590%25e6%25a1%2588%25e3%2581%258c%25e9%2580%259f%25e3%2581%2584%25ef%25bc%259f%25e9%2596%2593%25e5%258f%2596%25e3%2582%258a%25e5%259b%25b3%25e4%25bd%259c%25e6%2588%2590%25e3%2582%25a2%25e3%2583%2597%25e3%2583%25aa",
       "description": "営業が「図面待ち」で停止していないでしょうか。相見積もりが一般的な時代、初回提案の遅れは受注確度を大きく左右します。顧客の熱意は数日で冷め、競合に案件を奪われる。何度も繰り返す悔しさを感じていませんか。間取り図作成アプリ [...] <p>The post なぜあの会社は提案が速い？間取り図作成アプリの秘密 first appeared on 生成AIと建設DX.</p>...",
@@ -142,13 +132,33 @@
       "language": "ja"
     },
     {
-      "title": "大林組、リバスタの建設現場施工管理サービス「Buildee」の全現場導入を決定",
-      "link": "https://news.build-app.jp/article/39069/",
-      "description": "株式会社リバスタ（本社：東京都江東区、代表取締役：高橋巧、以下 当社）は、株式会社大林組（本社：東京都港区、代表取締役社長兼CEO：佐藤俊美......",
-      "publishedDate": "Sun, 08 Feb 2026 22:00:00 +0000",
+      "title": "実務者による書き下ろしで初刊行となる「GLOOBE ArchitectではじめるBIM活用入門」｜深堀り取材【毎月15日・月末更新】",
+      "link": "https://news.build-app.jp/article/39030/",
+      "description": "福井コンピュータアーキテクトのBIM建築設計支援システム「GLOOBE Architect」の関連書籍「GLOOBE Architectでは......",
+      "publishedDate": "Sun, 15 Feb 2026 23:30:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/03/kJx1zxcQ90nelNv1646147268-130x87.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/036e9411fd476f0d6df6a253ef1f2491-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【生成AI×LiteBIM】建設DXを支援するACIMUS、間取りのAI自動プランニング",
+      "link": "https://news.build-app.jp/article/39193/",
+      "description": "ポイント 【LiteBIM】当社では、既存のBIMを「高機能BIM」と位置付け、前工程（企画〜基本設計）に特化した「軽量BIM」への当社独自......",
+      "publishedDate": "Sun, 15 Feb 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/JWDgaGkHMwBiMyT1642682026-130x92.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "生コンクリートを扱うポイントまとめ：定義から配合・強度・価格・品質管理まで「現場で事故らない」方法を解説",
+      "link": "https://news.build-app.jp/article/39209/",
+      "description": "生コンクリート（レディーミクストコンクリート／いわゆるレミコン）は、工場から出荷されたものを現場で完成させる半製品です。そのため、 「配合」......",
+      "publishedDate": "Sun, 15 Feb 2026 08:36:05 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/4fdf61e07592597dcd3831b29f76adac-1-130x73.jpg",
       "language": "ja"
     },
     {
@@ -202,6 +212,16 @@
       "language": "ja"
     },
     {
+      "title": "大成×東洋、清水×あおみ…マリコン買収が示す10年後",
+      "link": "https://axconstdx.com/2026/02/16/%e5%a4%a7%e6%88%90x%e6%9d%b1%e6%b4%8b%e3%80%81%e6%b8%85%e6%b0%b4x%e3%81%82%e3%81%8a%e3%81%bf%e3%83%9e%e3%83%aa%e3%82%b3%e3%83%b3%e8%b2%b7%e5%8f%8e%e3%81%8c%e7%a4%ba%e3%81%9910/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%25a4%25a7%25e6%2588%2590x%25e6%259d%25b1%25e6%25b4%258b%25e3%2580%2581%25e6%25b8%2585%25e6%25b0%25b4x%25e3%2581%2582%25e3%2581%258a%25e3%2581%25bf%25e3%2583%259e%25e3%2583%25aa%25e3%2582%25b3%25e3%2583%25b3%25e8%25b2%25b7%25e5%258f%258e%25e3%2581%258c%25e7%25a4%25ba%25e3%2581%259910",
+      "description": "大成建設と清水建設が相次いで海洋土木企業の買収に踏み切ったのはなぜか。この動きは建設業界の競争ルールが大きく変わる合図です。スーパーゼネコンの攻めの戦略に対して、あなたの会社はどう対応すべきか。業界の未来を左右するこの転 [...] <p>The post 大成×東洋、清水×あおみ…マリコン買収が示す10年後 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Mon, 16 Feb 2026 01:11:22 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/wp_eyecatch_1200x630-1024x538.jpg",
+      "language": "ja"
+    },
+    {
       "title": "【2026年最新】建築設備士の難易度は国家資格で何位？合格率・勉強時間まで徹底解説",
       "link": "https://news.build-app.jp/article/39133/",
       "description": "建築設備士は「設備系資格のなかでも特に難しい」と言われる国家資格です。実際に調べてみると、合格率は毎年15〜20％前後と低水準で推移しており......",
@@ -209,26 +229,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/dadb603f3a3e9b3258330d27f0dd4099-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "迎賓館赤坂離宮の建築物としての今日的価値｜時空を超えて伝播する技術的野心",
-      "link": "https://news.build-app.jp/article/38347/",
-      "description": "「日米同盟の新たな黄金時代を共に創り上げたい」──この言葉が発せられた空間は、かつて明治天皇から「贅沢すぎる」と叱責され、「西洋の猿真似」と......",
-      "publishedDate": "Mon, 09 Feb 2026 23:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/260210_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "省エネ基準適合とBIM図面審査を先取りする 「BIM-省エネ計算プログラム」を開発",
-      "link": "https://news.build-app.jp/article/39114/",
-      "description": "株式会社安井建築設計事務所（本社：大阪市中央区／代表取締役社長 CEO：佐野吉彦）の設計領域、デジタル×デザイン ワークス（DDW）は、20......",
-      "publishedDate": "Mon, 09 Feb 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/11/AdobeStock_606135704-130x73.jpeg",
       "language": "ja"
     },
     {
