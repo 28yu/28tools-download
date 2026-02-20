@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T01:20:32.925367",
+  "lastUpdated": "2026-02-20T01:16:16.251343",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -40,6 +40,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "建築用語「涙目（なみだめ）」とは？正式名称・納まり・仕様選定まで建築関係者向けに解説",
+      "link": "https://news.build-app.jp/article/39287/",
+      "description": "建築現場で用いられるケースも多い「涙目」について、具体的に何を指すのか知りたい、設計での取り扱いがわからないとお悩みの方も多いでしょう。また......",
+      "publishedDate": "Wed, 18 Feb 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/13da6ddf72117e450917d5e6aed3e4b7-130x82.png",
+      "language": "ja"
     },
     {
       "title": "最高益でも3万人解雇｜アマゾンCEOが語るAI時代の本音",
@@ -112,6 +122,56 @@
       "language": "ja"
     },
     {
+      "title": "【独自調査③】人手不足の正体は「人数」ではなかった DX効果実感前回3割、今回は6割に拡大",
+      "link": "https://news.build-app.jp/article/39283/",
+      "description": "野原グループのBuildApp総合研究所(所在：東京都新宿区、代表：山梶真司)は、建設業界の2024・2025年問題の受け止めと、施工BIM......",
+      "publishedDate": "Thu, 19 Feb 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/XLm1qqr0TZRICT41677691748_1677691764-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "虎ノ門ヒルズ T-デッキとは｜写真でわかる接続構造と防災設計",
+      "link": "https://news.build-app.jp/article/39254/",
+      "description": "トレンドワード：虎ノ門ヒルズ T-デッキ 「T-デッキ」とは、虎ノ門ヒルズの超高層タワー「ステーションタワー」と、低層棟「グラスロック」をつ......",
+      "publishedDate": "Thu, 19 Feb 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/64c15f09c98f5ef8f470b44060d05701-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "事務職求人が47%消えた。生成AIが人材派遣を再定義する現実",
+      "link": "https://axconstdx.com/2026/02/19/%e4%ba%8b%e5%8b%99%e8%81%b7%e6%b1%82%e4%ba%ba%e3%81%8c47%e6%b6%88%e3%81%88%e3%81%9f%e3%80%82%e7%94%9f%e6%88%90ai%e3%81%8c%e4%ba%ba%e6%9d%90%e6%b4%be%e9%81%a3%e3%82%92%e5%86%8d%e5%ae%9a%e7%be%a9/?utm_source=rss&utm_medium=rss&utm_campaign=%25e4%25ba%258b%25e5%258b%2599%25e8%2581%25b7%25e6%25b1%2582%25e4%25ba%25ba%25e3%2581%258c47%25e6%25b6%2588%25e3%2581%2588%25e3%2581%259f%25e3%2580%2582%25e7%2594%259f%25e6%2588%2590ai%25e3%2581%258c%25e4%25ba%25ba%25e6%259d%2590%25e6%25b4%25be%25e9%2581%25a3%25e3%2582%2592%25e5%2586%258d%25e5%25ae%259a%25e7%25be%25a9",
+      "description": "「自分の仕事が、AIに替わってしまうかもしれない」——そんな不安を感じたことはありませんか。事務職求人がわずか1年で約半減（前年同月比47.8%減）するという事実が、今まさに日本の派遣業界全体を激しく揺さぶっています。こ [...] <p>The post 事務職求人が47%消えた。生成AIが人材派遣を再定義する現実 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Thu, 19 Feb 2026 14:00:52 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/eyecatch_1200x630-4-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "施工管理DXで現場の8割が遠隔化？2030年の働き方と生き残り戦略",
+      "link": "https://axconstdx.com/2026/02/19/%e6%96%bd%e5%b7%a5%e7%ae%a1%e7%90%86dx%e3%81%a7%e7%8f%be%e5%a0%b4%e3%81%ae8%e5%89%b2%e3%81%8c%e9%81%a0%e9%9a%94%e5%8c%96%ef%bc%9f2030%e5%b9%b4%e3%81%ae%e5%83%8d%e3%81%8d%e6%96%b9%e3%81%a8%e7%94%9f/?utm_source=rss&utm_medium=rss&utm_campaign=%25e6%2596%25bd%25e5%25b7%25a5%25e7%25ae%25a1%25e7%2590%2586dx%25e3%2581%25a7%25e7%258f%25be%25e5%25a0%25b4%25e3%2581%25ae8%25e5%2589%25b2%25e3%2581%258c%25e9%2581%25a0%25e9%259a%2594%25e5%258c%2596%25ef%25bc%259f2030%25e5%25b9%25b4%25e3%2581%25ae%25e5%2583%258d%25e3%2581%258d%25e6%2596%25b9%25e3%2581%25a8%25e7%2594%259f",
+      "description": "毎朝現場へ向かいながら、「このままでいいのか」と感じたことはありませんか。2024年問題・人手不足・アナログ業務の重圧を抱える施工管理の仕事は今、確実に変わり始めています。この記事を読み終えるころには、2030年への具体 [...] <p>The post 施工管理DXで現場の8割が遠隔化？2030年の働き方と生き残り戦略 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Thu, 19 Feb 2026 11:00:12 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/eyecatch-2-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "2026年、建設業でDX・AIが「使われ始めた」と言える3つの兆候",
+      "link": "https://axconstdx.com/2026/02/19/2026%e5%b9%b4%e3%80%81%e5%bb%ba%e8%a8%ad%e6%a5%ad%e3%81%a7dx%e3%83%bbai%e3%81%8c%e3%80%8c%e4%bd%bf%e3%82%8f%e3%82%8c%e5%a7%8b%e3%82%81%e3%81%9f%e3%80%8d%e3%81%a8%e8%a8%80%e3%81%88%e3%82%8b3%e3%81%a4/?utm_source=rss&utm_medium=rss&utm_campaign=2026%25e5%25b9%25b4%25e3%2580%2581%25e5%25bb%25ba%25e8%25a8%25ad%25e6%25a5%25ad%25e3%2581%25a7dx%25e3%2583%25bbai%25e3%2581%258c%25e3%2580%258c%25e4%25bd%25bf%25e3%2582%258f%25e3%2582%258c%25e5%25a7%258b%25e3%2582%2581%25e3%2581%259f%25e3%2580%258d%25e3%2581%25a8%25e8%25a8%2580%25e3%2581%2588%25e3%2582%258b3%25e3%2581%25a4",
+      "description": "「うちの会社、DXって言ってるけど、本当に変わってるのだろうか」——そんな焦りを感じているなら、この記事はあなたのためにあります。2026年、建設現場で起きている変化のリアルと、今すぐ動き出すための具体的な条件をまとめま [...] <p>The post 2026年、建設業でDX・AIが「使われ始めた」と言える3つの兆候 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Thu, 19 Feb 2026 02:24:41 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/eyecatch_1200x630-3-1024x538.jpg",
+      "language": "ja"
+    },
+    {
       "title": "ISO Publishes New Compatibility Policy for ISO 16739-1 (IFC): A Major Step for Stable Evolution of the Standard",
       "link": "https://www.buildingsmart.org/iso-publishes-new-compatibility-policy-for-iso-16739-1/",
       "description": "buildingSMART International is pleased to share important news with the openBIM community: ISO/TC 59/SC 13 has published the new Compatibility Policy for ISO 16739-1, the international standard for IF...",
@@ -122,16 +182,6 @@
       "language": "en"
     },
     {
-      "title": "巻き立てコンクリートとは？打設方法・規格・RC巻き立て補強・ひび割れ対策まで徹底解説",
-      "link": "https://news.build-app.jp/article/39199/",
-      "description": "既設の橋脚や水路、ボックスカルバートなどの老朽化が進むなかで、構造物を撤去せずに性能を回復・向上させる工法として注目されているのが「巻き立て......",
-      "publishedDate": "Thu, 12 Feb 2026 23:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/8908cce287a2c64ad0a541461f18d0fb-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "実務者による書き下ろしで初刊行となる「GLOOBE ArchitectではじめるBIM活用入門」｜深堀り取材【毎月15日・月末更新】",
       "link": "https://news.build-app.jp/article/39030/",
       "description": "福井コンピュータアーキテクトのBIM建築設計支援システム「GLOOBE Architect」の関連書籍「GLOOBE Architectでは......",
@@ -139,26 +189,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/036e9411fd476f0d6df6a253ef1f2491-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "【生成AI×LiteBIM】建設DXを支援するACIMUS、間取りのAI自動プランニング",
-      "link": "https://news.build-app.jp/article/39193/",
-      "description": "ポイント 【LiteBIM】当社では、既存のBIMを「高機能BIM」と位置付け、前工程（企画〜基本設計）に特化した「軽量BIM」への当社独自......",
-      "publishedDate": "Sun, 15 Feb 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/JWDgaGkHMwBiMyT1642682026-130x92.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "生コンクリートを扱うポイントまとめ：定義から配合・強度・価格・品質管理まで「現場で事故らない」方法を解説",
-      "link": "https://news.build-app.jp/article/39209/",
-      "description": "生コンクリート（レディーミクストコンクリート／いわゆるレミコン）は、工場から出荷されたものを現場で完成させる半製品です。そのため、 「配合」......",
-      "publishedDate": "Sun, 15 Feb 2026 08:36:05 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/4fdf61e07592597dcd3831b29f76adac-1-130x73.jpg",
       "language": "ja"
     },
     {
@@ -179,36 +209,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/processed_image-41-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "AI時代にテック業界で12万人超が職を失った──エンジニアが今すぐ備える生存戦略",
-      "link": "https://axconstdx.com/2026/02/08/ai%e6%99%82%e4%bb%a3%e3%81%ab%e3%83%86%e3%83%83%e3%82%af%e6%a5%ad%e7%95%8c%e3%81%a712%e4%b8%87%e4%ba%ba%e8%b6%85%e3%81%8c%e8%81%b7%e3%82%92%e5%a4%b1%e3%81%a3%e3%81%9f%e2%94%80%e2%94%80%e3%82%a8/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e6%2599%2582%25e4%25bb%25a3%25e3%2581%25ab%25e3%2583%2586%25e3%2583%2583%25e3%2582%25af%25e6%25a5%25ad%25e7%2595%258c%25e3%2581%25a712%25e4%25b8%2587%25e4%25ba%25ba%25e8%25b6%2585%25e3%2581%258c%25e8%2581%25b7%25e3%2582%2592%25e5%25a4%25b1%25e3%2581%25a3%25e3%2581%259f%25e2%2594%2580%25e2%2594%2580%25e3%2582%25a8",
-      "description": "「自分はまだ大丈夫」──その感覚が、いちばん危険かもしれません。AIの進化によって、好業績の企業でさえエンジニアを手放す時代が始まっています。本記事を読み終えたとき、あなたの手元には「会社が変わっても、景気が変わっても選 [...] <p>The post AI時代にテック業界で12万人超が職を失った──エンジニアが今すぐ備える生存戦略 first appeared on 生成AIと建設DX.</...",
-      "publishedDate": "Sun, 08 Feb 2026 05:29:04 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/engineer_ai_strategy_1280x670_compressed-1024x536.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "もうPoCで終わらない。NVIDIA×ダッソーが示した「産業AI」の本気度",
-      "link": "https://axconstdx.com/2026/02/07/%e3%82%82%e3%81%86poc%e3%81%a7%e7%b5%82%e3%82%8f%e3%82%89%e3%81%aa%e3%81%84%e3%80%82nvidiax%e3%83%80%e3%83%83%e3%82%bd%e3%83%bc%e3%81%8c%e7%a4%ba%e3%81%97%e3%81%9f%e3%80%8c%e7%94%a3%e6%a5%adai/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2582%2582%25e3%2581%2586poc%25e3%2581%25a7%25e7%25b5%2582%25e3%2582%258f%25e3%2582%2589%25e3%2581%25aa%25e3%2581%2584%25e3%2580%2582nvidiax%25e3%2583%2580%25e3%2583%2583%25e3%2582%25bd%25e3%2583%25bc%25e3%2581%258c%25e7%25a4%25ba%25e3%2581%2597%25e3%2581%259f%25e3%2580%258c%25e7%2594%25a3%25e6%25a5%25adai",
-      "description": "また実証どまりで終わるのか――その不安を抱えたまま、次の一歩を踏み出せずにいませんか。NVIDIAとダッソーが打ち出した産業AIの新構想は、その足踏みを終わらせる具体的な道筋を示しています。DXを「実験」から「現場の武器 [...] <p>The post もうPoCで終わらない。NVIDIA×ダッソーが示した「産業AI」の本気度 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sat, 07 Feb 2026 07:35:11 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/processed_image-36-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "AIエージェントが「ソフトウェア不要」の時代を生む──SIer業界が直面する構造転換",
-      "link": "https://axconstdx.com/2026/02/07/ai%e3%82%a8%e3%83%bc%e3%82%b8%e3%82%a7%e3%83%b3%e3%83%88%e3%81%8c%e3%80%8c%e3%82%bd%e3%83%95%e3%83%88%e3%82%a6%e3%82%a7%e3%82%a2%e4%b8%8d%e8%a6%81%e3%80%8d%e3%81%ae%e6%99%82%e4%bb%a3%e3%82%92%e7%94%9f/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e3%2582%25a8%25e3%2583%25bc%25e3%2582%25b8%25e3%2582%25a7%25e3%2583%25b3%25e3%2583%2588%25e3%2581%258c%25e3%2580%258c%25e3%2582%25bd%25e3%2583%2595%25e3%2583%2588%25e3%2582%25a6%25e3%2582%25a7%25e3%2582%25a2%25e4%25b8%258d%25e8%25a6%2581%25e3%2580%258d%25e3%2581%25ae%25e6%2599%2582%25e4%25bb%25a3%25e3%2582%2592%25e7%2594%259f",
-      "description": "「AIに仕事を奪われる」──そんな漠然とした不安が、2026年2月、現実の数字になって現れました。たった一つのAI製品の発表が、世界の株式市場から約2850億ドルを一日で消し去ったのです。SIer業界やソフトウェア企業が [...] <p>The post AIエージェントが「ソフトウェア不要」の時代を生む──SIer業界が直面する構造転換 first appeared on 生成AIと建設DX....",
-      "publishedDate": "Sat, 07 Feb 2026 04:35:14 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/processed_image-34-1024x538.jpg",
       "language": "ja"
     },
     {
