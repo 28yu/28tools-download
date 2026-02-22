@@ -1,6 +1,46 @@
 {
-  "lastUpdated": "2026-02-21T01:14:01.504605",
+  "lastUpdated": "2026-02-22T01:19:42.651695",
   "articles": [
+    {
+      "title": "buildingSMART International announces that Céline Bent has left the organisation",
+      "link": "https://www.buildingsmart.org/buildingsmart-international-announces-that-celine-bent-has-left-the-organisation/",
+      "description": "London, U.K. – January 28th, 2026 — buildingSMART International (bSI) announces that Céline Bent has left the organisation. bSI commented that “it is with our regrets to announce that Céline has... Th...",
+      "publishedDate": "Wed, 28 Jan 2026 10:40:44 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "buildingSMART México has been formally approved as a “Chapter-in-formation”",
+      "link": "https://www.buildingsmart.org/buildingsmart-mexico-has-been-formally-approved-as-a-chapter-in-formation/",
+      "description": "London, U.K. – August 27, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART México has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join t...",
+      "publishedDate": "Wed, 27 Aug 2025 13:42:52 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Occupant Movement Analysis Technical Report",
+      "link": "https://www.buildingsmart.org/occupant-movement-analysis-technical-report/",
+      "description": "Report: Link Outcome report: Link &#160; The Standards Committee return on the votes was 33 Yes 3 No which achieves the 65% pass rate threshold. The post Occupant Movement Analysis Technical Report ap...",
+      "publishedDate": "Wed, 24 Sep 2025 07:50:02 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "IFC 5 Core Consultation",
+      "link": "https://www.buildingsmart.org/ifc-5-core-consultation/",
+      "description": "Report: Link Outcome report: Link The Standards Committee Executive (SCE) has reviewed the results of the IFC 5 Core Draft Project Plan consultation. A total of 60 responses were received from the Sta...",
+      "publishedDate": "Wed, 24 Sep 2025 07:24:59 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
     {
       "title": "建築用語「涙目（なみだめ）」とは？正式名称・納まり・仕様選定まで建築関係者向けに解説",
       "link": "https://news.build-app.jp/article/39287/",
@@ -72,16 +112,6 @@
       "language": "ja"
     },
     {
-      "title": "なぜあの会社は提案が速い？間取り図作成アプリの秘密",
-      "link": "https://axconstdx.com/2026/02/11/%e3%81%aa%e3%81%9c%e3%81%82%e3%81%ae%e4%bc%9a%e7%a4%be%e3%81%af%e6%8f%90%e6%a1%88%e3%81%8c%e9%80%9f%e3%81%84%ef%bc%9f%e9%96%93%e5%8f%96%e3%82%8a%e5%9b%b3%e4%bd%9c%e6%88%90%e3%82%a2%e3%83%97%e3%83%aa/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2581%25aa%25e3%2581%259c%25e3%2581%2582%25e3%2581%25ae%25e4%25bc%259a%25e7%25a4%25be%25e3%2581%25af%25e6%258f%2590%25e6%25a1%2588%25e3%2581%258c%25e9%2580%259f%25e3%2581%2584%25ef%25bc%259f%25e9%2596%2593%25e5%258f%2596%25e3%2582%258a%25e5%259b%25b3%25e4%25bd%259c%25e6%2588%2590%25e3%2582%25a2%25e3%2583%2597%25e3%2583%25aa",
-      "description": "営業が「図面待ち」で停止していないでしょうか。相見積もりが一般的な時代、初回提案の遅れは受注確度を大きく左右します。顧客の熱意は数日で冷め、競合に案件を奪われる。何度も繰り返す悔しさを感じていませんか。間取り図作成アプリ [...] <p>The post なぜあの会社は提案が速い？間取り図作成アプリの秘密 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Tue, 10 Feb 2026 22:29:37 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/eyecatch_1200x630-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "【独自調査③】人手不足の正体は「人数」ではなかった DX効果実感前回3割、今回は6割に拡大",
       "link": "https://news.build-app.jp/article/39283/",
       "description": "野原グループのBuildApp総合研究所(所在：東京都新宿区、代表：山梶真司)は、建設業界の2024・2025年問題の受け止めと、施工BIM......",
@@ -132,13 +162,33 @@
       "language": "ja"
     },
     {
-      "title": "建築の断面図とは？描き方・考え方・立面図との違いまで実務目線で徹底解説",
-      "link": "https://news.build-app.jp/article/39278/",
-      "description": "建築の断面図は、建物を垂直に切断し、高さや構造、空間構成を可視化する重要な図面です。しかし「どこを切ればよいのか」「階高はどう決めるのか」「......",
-      "publishedDate": "Mon, 16 Feb 2026 23:30:00 +0000",
+      "title": "ISO Publishes New Compatibility Policy for ISO 16739-1 (IFC): A Major Step for Stable Evolution of the Standard",
+      "link": "https://www.buildingsmart.org/iso-publishes-new-compatibility-policy-for-iso-16739-1/",
+      "description": "buildingSMART International is pleased to share important news with the openBIM community: ISO/TC 59/SC 13 has published the new Compatibility Policy for ISO 16739-1, the international standard for IF...",
+      "publishedDate": "Thu, 13 Nov 2025 11:27:34 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "大成建設、環境配慮コンクリート2種で材料性能証明取得、プレキャスト適用拡大へと発表",
+      "link": "https://news.build-app.jp/article/39297/",
+      "description": "大成建設株式会社（社長:相川善郎氏）は2026年1月22日、環境に配慮した独自のコンクリート製品が、日本建築総合試験所による建設材料技術性能......",
+      "publishedDate": "Sat, 21 Feb 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/2402f2df6d940aea0a4fd4b29f348a79-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/09/26130026_m-130x98.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "事務職求人48%減からわかる、AI導入で二分化する企業の未来",
+      "link": "https://axconstdx.com/2026/02/21/%e4%ba%8b%e5%8b%99%e8%81%b7%e6%b1%82%e4%ba%ba48%e6%b8%9b%e3%81%8b%e3%82%89%e3%82%8f%e3%81%8b%e3%82%8b%e3%80%81ai%e5%b0%8e%e5%85%a5%e3%81%a7%e4%ba%8c%e5%88%86%e5%8c%96%e3%81%99%e3%82%8b%e4%bc%81/?utm_source=rss&utm_medium=rss&utm_campaign=%25e4%25ba%258b%25e5%258b%2599%25e8%2581%25b7%25e6%25b1%2582%25e4%25ba%25ba48%25e6%25b8%259b%25e3%2581%258b%25e3%2582%2589%25e3%2582%258f%25e3%2581%258b%25e3%2582%258b%25e3%2580%2581ai%25e5%25b0%258e%25e5%2585%25a5%25e3%2581%25a7%25e4%25ba%258c%25e5%2588%2586%25e5%258c%2596%25e3%2581%2599%25e3%2582%258b%25e4%25bc%2581",
+      "description": "あなたの職場では、事務職の採用が止まっていませんか。それは単なる景気悪化ではなく、生成AIの本格導入による企業の構造転換の始まりです。今、企業とキャリアの明暗が分かれています。この記事で、5年後を左右する選択肢を見つけて [...] <p>The post 事務職求人48%減からわかる、AI導入で二分化する企業の未来 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sat, 21 Feb 2026 14:50:29 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/eyecatch_1200x630-1-1-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -150,6 +200,26 @@
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/wp_eyecatch_1200x630-1024x538.jpg",
       "language": "ja"
+    },
+    {
+      "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
+      "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
+      "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
+      "publishedDate": "Mon, 08 Dec 2025 19:22:27 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The buildingSMART openBIM Awards 2025 – Winners Announced",
+      "link": "https://www.buildingsmart.org/the-buildingsmart-openbim-awards-2025-winners-announced/",
+      "description": "Berlin, Germany – September 25, 2025 The openBIM Awards 2025 concluded with a celebratory ceremony on Wednesday, 24 September, during the closing plenary of the buildingSMART International Summit – Be...",
+      "publishedDate": "Fri, 26 Sep 2025 13:18:09 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "竹中工務店、AI・IoT活用の生物自動モニタリング「いきものアイ」産業展で展示予定",
@@ -200,6 +270,36 @@
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/wp_eyecatch_1200x630-2-1024x538.jpg",
       "language": "ja"
+    },
+    {
+      "title": "Voting for the Standards Committee Executive is now open",
+      "link": "https://www.buildingsmart.org/voting-for-the-standards-committee-executive-is-now-open/",
+      "description": "Vote closing date: 12 Nov 2025Report: Link The buildingSMART International Community is invited to elect five additional members to the Standards Committee Executive (SCE).This is an important governa...",
+      "publishedDate": "Fri, 17 Oct 2025 15:10:46 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "openBIM Practitioner Certification enters full-scale implementation across Chapters",
+      "link": "https://www.buildingsmart.org/openbim-practitioner-certification-enters-full-scale-implementation-across-chapters/",
+      "description": "The openBIM Practitioner Certification is now rolling out across the buildingSMART community, as part of the ongoing expansion of the Professional Certification Program, marking a major milestone in p...",
+      "publishedDate": "Fri, 05 Dec 2025 22:18:08 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Board of Directors Changes",
+      "link": "https://www.buildingsmart.org/board-of-directors-changes/",
+      "description": "London, U.K. – December 5th, 2025 — buildingSMART International (bSI) is today announcing some Board of Director changes. Board Changes Due to ill health, Alfred Waschl has stepped down from... The po...",
+      "publishedDate": "Fri, 05 Dec 2025 19:25:08 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     }
   ]
 }
