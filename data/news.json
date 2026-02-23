@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-22T01:19:42.651695",
+  "lastUpdated": "2026-02-23T01:18:57.133655",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -92,26 +92,6 @@
       "language": "ja"
     },
     {
-      "title": "AI時代に、建築家の魂は守られるのか？",
-      "link": "https://news.build-app.jp/article/38827/",
-      "description": "世界一流の建築家たちが、人工知能という前例のない道具を手にしたとき、彼らは恐れたのか、それとも可能性に賭けたのか。デジタル革命の最前線で、建......",
-      "publishedDate": "Tue, 17 Feb 2026 23:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/01/260217_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "建設現場の工期を左右するのは「前工程」、最優先投資は省人化・自動化",
-      "link": "https://news.build-app.jp/article/39226/",
-      "description": "足場をはじめとする建設業界のプラットフォーマーとして、業界課題に革新的なソリューションを創造しつづける株式会社タカミヤ（以下タカミヤ、大阪本......",
-      "publishedDate": "Tue, 17 Feb 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/09/guLR1kj8vgrbTRw1662972189_1662972219-130x82.jpg",
-      "language": "ja"
-    },
-    {
       "title": "【独自調査③】人手不足の正体は「人数」ではなかった DX効果実感前回3割、今回は6割に拡大",
       "link": "https://news.build-app.jp/article/39283/",
       "description": "野原グループのBuildApp総合研究所(所在：東京都新宿区、代表：山梶真司)は、建設業界の2024・2025年問題の受け止めと、施工BIM......",
@@ -170,6 +150,26 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "国土交通省発表、令和7年の大手50社国内建設工事受注額20兆3660億円で5年連続増",
+      "link": "https://news.build-app.jp/article/39308/",
+      "description": "国土交通省が令和8年1月30日に発表した統計によると、令和7年における大手建設会社50社の工事受注総額は21兆1,493億円に達し、前年と比......",
+      "publishedDate": "Sun, 22 Feb 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33864491_s-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大成建設、タマサート大学技術と融合した低炭素コンクリートをタイ工事で初適用開始へ",
+      "link": "https://news.build-app.jp/article/39299/",
+      "description": "大成建設株式会社（社長：相川善郎氏）は、タイにおいて環境負荷を抑えたコンクリート技術の導入を開始しました。同社の現地法人である大成タイランド......",
+      "publishedDate": "Sun, 22 Feb 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33965467_s-130x73.jpg",
+      "language": "ja"
     },
     {
       "title": "大成建設、環境配慮コンクリート2種で材料性能証明取得、プレキャスト適用拡大へと発表",
