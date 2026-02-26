@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-25T01:22:16.673824",
+  "lastUpdated": "2026-02-26T01:16:29.723410",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -20,6 +20,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "オールインワンで 3DGS までこなすハンディSLAMスキャナ「Metacam Air2」",
+      "link": "https://news.build-app.jp/article/39323/",
+      "description": "株式会社小泉測機製作所（本社：新潟県長岡市、代表取締役：矢野英洋）は、SkyLandX社のハンディSLAMスキャナ「MetaCam Air2......",
+      "publishedDate": "Wed, 25 Feb 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/01/image-2-130x73.jpeg",
+      "language": "ja"
     },
     {
       "title": "Occupant Movement Analysis Technical Report",
@@ -72,13 +82,13 @@
       "language": "ja"
     },
     {
-      "title": "大成建設、ドローンと3Dスキャン活用の点検手法が第9回インフラメンテナンス大賞優秀賞",
-      "link": "https://news.build-app.jp/article/39303/",
-      "description": "大成建設株式会社は、複数の協力企業とともに開発・運用している『ドローンと3Dスキャンカメラを活用したデジタル点検手法』と、それを補助する『点......",
+      "title": "国土交通省、令和7年12月の大手50社受注動態を公表、民間6.1％増・公共66.2％増",
+      "link": "https://news.build-app.jp/article/39311/",
+      "description": "2026年1月30日、国土交通省より大手建設会社50社を対象とした受注動態調査の結果が発表されました。昨年12月の受注総額は2兆2,956億......",
       "publishedDate": "Tue, 24 Feb 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/08/AdobeStock_486635416-130x87.jpeg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33585571_s-130x98.jpg",
       "language": "ja"
     },
     {
@@ -92,13 +102,13 @@
       "language": "ja"
     },
     {
-      "title": "国土交通省、令和7年12月の大手50社受注動態を公表、民間6.1％増・公共66.2％増",
-      "link": "https://news.build-app.jp/article/39311/",
-      "description": "2026年1月30日、国土交通省より大手建設会社50社を対象とした受注動態調査の結果が発表されました。昨年12月の受注総額は2兆2,956億......",
+      "title": "大成建設、ドローンと3Dスキャン活用の点検手法が第9回インフラメンテナンス大賞優秀賞",
+      "link": "https://news.build-app.jp/article/39303/",
+      "description": "大成建設株式会社は、複数の協力企業とともに開発・運用している『ドローンと3Dスキャンカメラを活用したデジタル点検手法』と、それを補助する『点......",
       "publishedDate": "Tue, 24 Feb 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33585571_s-130x98.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/08/AdobeStock_486635416-130x87.jpeg",
       "language": "ja"
     },
     {
@@ -159,16 +169,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33864491_s-130x87.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大成建設、環境配慮コンクリート2種で材料性能証明取得、プレキャスト適用拡大へと発表",
-      "link": "https://news.build-app.jp/article/39297/",
-      "description": "大成建設株式会社（社長:相川善郎氏）は2026年1月22日、環境に配慮した独自のコンクリート製品が、日本建築総合試験所による建設材料技術性能......",
-      "publishedDate": "Sat, 21 Feb 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/09/26130026_m-130x98.jpg",
       "language": "ja"
     },
     {
