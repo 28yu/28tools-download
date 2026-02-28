@@ -1,25 +1,15 @@
 {
-  "lastUpdated": "2026-02-27T01:15:21.178678",
+  "lastUpdated": "2026-02-28T01:09:30.942090",
   "articles": [
     {
-      "title": "buildingSMART International announces that Céline Bent has left the organisation",
-      "link": "https://www.buildingsmart.org/buildingsmart-international-announces-that-celine-bent-has-left-the-organisation/",
-      "description": "London, U.K. – January 28th, 2026 — buildingSMART International (bSI) announces that Céline Bent has left the organisation. bSI commented that “it is with our regrets to announce that Céline has... Th...",
-      "publishedDate": "Wed, 28 Jan 2026 10:40:44 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "buildingSMART México has been formally approved as a “Chapter-in-formation”",
-      "link": "https://www.buildingsmart.org/buildingsmart-mexico-has-been-formally-approved-as-a-chapter-in-formation/",
-      "description": "London, U.K. – August 27, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART México has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join t...",
-      "publishedDate": "Wed, 27 Aug 2025 13:42:52 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
+      "title": "建築スケッチの書き方完全ガイド｜初心者でも描ける練習法・パースとの違い・おすすめ道具まで徹底解説",
+      "link": "https://news.build-app.jp/article/39411/",
+      "description": "建築スケッチの書き方がわからず、「センスがないのでは」と悩んでいませんか。実は、建築スケッチは才能よりも「思考の整理法」と「練習の順序」で上......",
+      "publishedDate": "Wed, 25 Feb 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/cab36555cda23ac6a94b4bdac41ea657-130x82.png",
+      "language": "ja"
     },
     {
       "title": "オールインワンで 3DGS までこなすハンディSLAMスキャナ「Metacam Air2」",
@@ -32,26 +22,6 @@
       "language": "ja"
     },
     {
-      "title": "Occupant Movement Analysis Technical Report",
-      "link": "https://www.buildingsmart.org/occupant-movement-analysis-technical-report/",
-      "description": "Report: Link Outcome report: Link &#160; The Standards Committee return on the votes was 33 Yes 3 No which achieves the 65% pass rate threshold. The post Occupant Movement Analysis Technical Report ap...",
-      "publishedDate": "Wed, 24 Sep 2025 07:50:02 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "IFC 5 Core Consultation",
-      "link": "https://www.buildingsmart.org/ifc-5-core-consultation/",
-      "description": "Report: Link Outcome report: Link The Standards Committee Executive (SCE) has reviewed the results of the IFC 5 Core Draft Project Plan consultation. A total of 60 responses were received from the Sta...",
-      "publishedDate": "Wed, 24 Sep 2025 07:24:59 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "世界遺産における近代建築群｜20世紀建築はいかにして人類の文化的遺産となり得たのか？",
       "link": "https://news.build-app.jp/article/38835/",
       "description": "コンクリート、ガラス、鉄骨。これらの素材が20世紀に引き起こした建築革命は、いま世界遺産という文化的聖域に到達している。 パラダイムシフト─......",
@@ -59,16 +29,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/01/260224-2_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、令和7年12月の大手50社受注動態を公表、民間6.1％増・公共66.2％増",
-      "link": "https://news.build-app.jp/article/39311/",
-      "description": "2026年1月30日、国土交通省より大手建設会社50社を対象とした受注動態調査の結果が発表されました。昨年12月の受注総額は2兆2,956億......",
-      "publishedDate": "Tue, 24 Feb 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33585571_s-130x98.jpg",
       "language": "ja"
     },
     {
@@ -92,6 +52,16 @@
       "language": "ja"
     },
     {
+      "title": "国土交通省、令和7年12月の大手50社受注動態を公表、民間6.1％増・公共66.2％増",
+      "link": "https://news.build-app.jp/article/39311/",
+      "description": "2026年1月30日、国土交通省より大手建設会社50社を対象とした受注動態調査の結果が発表されました。昨年12月の受注総額は2兆2,956億......",
+      "publishedDate": "Tue, 24 Feb 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33585571_s-130x98.jpg",
+      "language": "ja"
+    },
+    {
       "title": "産学連携による次世代の建築人材育成を目的にデジタルツールの設計実務への影響を検証｜深堀り取材【毎月15日・月末更新】",
       "link": "https://news.build-app.jp/article/39232/",
       "description": "※安心計画(福岡市: 代表取締役社長:高田政和)では、九州産業大学建築都市工学部 住居・インテリア学科における「3D-CADと生成AIを導入......",
@@ -99,6 +69,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/2c331a9ac2251f1d4193b1aedc6e8681-2-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新】土木工事数量算出要領の読み方｜改訂内容・実務での使い方まで完全解説",
+      "link": "https://news.build-app.jp/article/39433/",
+      "description": "土木設計・施工業務の中で、「土木工事数量算出要領」の内容を正確に理解できていないまま数量計算や積算を進めていないでしょうか。数量の算出方法を......",
+      "publishedDate": "Thu, 26 Feb 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/bf66e6254551a7c15452e8526ba0da1b-130x82.png",
       "language": "ja"
     },
     {
@@ -148,7 +128,7 @@
       "publishedDate": "Thu, 26 Feb 2026 02:38:52 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/AdobeStock_501873856-130x73.jpeg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/1f42fd4b0051213313f1d7e500d47028-1-130x82.png",
       "language": "ja"
     },
     {
@@ -162,36 +142,6 @@
       "language": "ja"
     },
     {
-      "title": "施工管理DXで現場の8割が遠隔化？2030年の働き方と生き残り戦略",
-      "link": "https://axconstdx.com/2026/02/19/%e6%96%bd%e5%b7%a5%e7%ae%a1%e7%90%86dx%e3%81%a7%e7%8f%be%e5%a0%b4%e3%81%ae8%e5%89%b2%e3%81%8c%e9%81%a0%e9%9a%94%e5%8c%96%ef%bc%9f2030%e5%b9%b4%e3%81%ae%e5%83%8d%e3%81%8d%e6%96%b9%e3%81%a8%e7%94%9f/?utm_source=rss&utm_medium=rss&utm_campaign=%25e6%2596%25bd%25e5%25b7%25a5%25e7%25ae%25a1%25e7%2590%2586dx%25e3%2581%25a7%25e7%258f%25be%25e5%25a0%25b4%25e3%2581%25ae8%25e5%2589%25b2%25e3%2581%258c%25e9%2581%25a0%25e9%259a%2594%25e5%258c%2596%25ef%25bc%259f2030%25e5%25b9%25b4%25e3%2581%25ae%25e5%2583%258d%25e3%2581%258d%25e6%2596%25b9%25e3%2581%25a8%25e7%2594%259f",
-      "description": "毎朝現場へ向かいながら、「このままでいいのか」と感じたことはありませんか。2024年問題・人手不足・アナログ業務の重圧を抱える施工管理の仕事は今、確実に変わり始めています。この記事を読み終えるころには、2030年への具体 [...] <p>The post 施工管理DXで現場の8割が遠隔化？2030年の働き方と生き残り戦略 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Thu, 19 Feb 2026 11:00:12 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/eyecatch-2-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "2026年、建設業でDX・AIが「使われ始めた」と言える3つの兆候",
-      "link": "https://axconstdx.com/2026/02/19/2026%e5%b9%b4%e3%80%81%e5%bb%ba%e8%a8%ad%e6%a5%ad%e3%81%a7dx%e3%83%bbai%e3%81%8c%e3%80%8c%e4%bd%bf%e3%82%8f%e3%82%8c%e5%a7%8b%e3%82%81%e3%81%9f%e3%80%8d%e3%81%a8%e8%a8%80%e3%81%88%e3%82%8b3%e3%81%a4/?utm_source=rss&utm_medium=rss&utm_campaign=2026%25e5%25b9%25b4%25e3%2580%2581%25e5%25bb%25ba%25e8%25a8%25ad%25e6%25a5%25ad%25e3%2581%25a7dx%25e3%2583%25bbai%25e3%2581%258c%25e3%2580%258c%25e4%25bd%25bf%25e3%2582%258f%25e3%2582%258c%25e5%25a7%258b%25e3%2582%2581%25e3%2581%259f%25e3%2580%258d%25e3%2581%25a8%25e8%25a8%2580%25e3%2581%2588%25e3%2582%258b3%25e3%2581%25a4",
-      "description": "「うちの会社、DXって言ってるけど、本当に変わってるのだろうか」——そんな焦りを感じているなら、この記事はあなたのためにあります。2026年、建設現場で起きている変化のリアルと、今すぐ動き出すための具体的な条件をまとめま [...] <p>The post 2026年、建設業でDX・AIが「使われ始めた」と言える3つの兆候 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Thu, 19 Feb 2026 02:24:41 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/eyecatch_1200x630-3-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ISO Publishes New Compatibility Policy for ISO 16739-1 (IFC): A Major Step for Stable Evolution of the Standard",
-      "link": "https://www.buildingsmart.org/iso-publishes-new-compatibility-policy-for-iso-16739-1/",
-      "description": "buildingSMART International is pleased to share important news with the openBIM community: ISO/TC 59/SC 13 has published the new Compatibility Policy for ISO 16739-1, the international standard for IF...",
-      "publishedDate": "Thu, 13 Nov 2025 11:27:34 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "事務職求人48%減からわかる、AI導入で二分化する企業の未来",
       "link": "https://axconstdx.com/2026/02/21/%e4%ba%8b%e5%8b%99%e8%81%b7%e6%b1%82%e4%ba%ba48%e6%b8%9b%e3%81%8b%e3%82%89%e3%82%8f%e3%81%8b%e3%82%8b%e3%80%81ai%e5%b0%8e%e5%85%a5%e3%81%a7%e4%ba%8c%e5%88%86%e5%8c%96%e3%81%99%e3%82%8b%e4%bc%81/?utm_source=rss&utm_medium=rss&utm_campaign=%25e4%25ba%258b%25e5%258b%2599%25e8%2581%25b7%25e6%25b1%2582%25e4%25ba%25ba48%25e6%25b8%259b%25e3%2581%258b%25e3%2582%2589%25e3%2582%258f%25e3%2581%258b%25e3%2582%258b%25e3%2580%2581ai%25e5%25b0%258e%25e5%2585%25a5%25e3%2581%25a7%25e4%25ba%258c%25e5%2588%2586%25e5%258c%2596%25e3%2581%2599%25e3%2582%258b%25e4%25bc%2581",
       "description": "あなたの職場では、事務職の採用が止まっていませんか。それは単なる景気悪化ではなく、生成AIの本格導入による企業の構造転換の始まりです。今、企業とキャリアの明暗が分かれています。この記事で、5年後を左右する選択肢を見つけて [...] <p>The post 事務職求人48%減からわかる、AI導入で二分化する企業の未来 first appeared on 生成AIと建設DX.</p>...",
@@ -202,44 +152,24 @@
       "language": "ja"
     },
     {
-      "title": "【第3回Arent調査③ BIM編】建設業界のBIM活用「活用できている」企業が4割に迫る",
-      "link": "https://news.build-app.jp/article/39285/",
-      "description": "建設DXを推進する株式会社Arent（本社：東京都港区）は、2025年1月から12月にかけて建設業界従事者を対象に実施したBIM推進に関する......",
-      "publishedDate": "Mon, 23 Feb 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/04/rF1zZ6TSxbh4E141650892123-130x87.jpg",
+      "title": "Googleの本気が怖い。Nano Banana 2が画像生成AIの常識を壊した",
+      "link": "https://axconstdx.com/2026/02/27/google%e3%81%ae%e6%9c%ac%e6%b0%97%e3%81%8c%e6%80%96%e3%81%84%e3%80%82nano-banana-2%e3%81%8c%e7%94%bb%e5%83%8f%e7%94%9f%e6%88%90ai%e3%81%ae%e5%b8%b8%e8%ad%98%e3%82%92%e5%a3%8a%e3%81%97%e3%81%9f/?utm_source=rss&utm_medium=rss&utm_campaign=google%25e3%2581%25ae%25e6%259c%25ac%25e6%25b0%2597%25e3%2581%258c%25e6%2580%2596%25e3%2581%2584%25e3%2580%2582nano-banana-2%25e3%2581%258c%25e7%2594%25bb%25e5%2583%258f%25e7%2594%259f%25e6%2588%2590ai%25e3%2581%25ae%25e5%25b8%25b8%25e8%25ad%2598%25e3%2582%2592%25e5%25a3%258a%25e3%2581%2597%25e3%2581%259f",
+      "description": "「画像生成AIって、結局どこまで業務で使えるの？」そんな疑問を長く抱えてきた方こそ、今すぐ読んでほしい内容です。Googleの最新モデルは、速さも品質も信頼性も、制作現場のリアルな要件をまとめて解決します。この記事を読み [...] <p>The post Googleの本気が怖い。Nano Banana 2が画像生成AIの常識を壊した first appeared on 生成AIと建設DX.</...",
+      "publishedDate": "Fri, 27 Feb 2026 11:39:07 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/eyecatch_1200x630-5-1024x538.jpg",
       "language": "ja"
     },
     {
-      "title": "大成建設、T－EAGLE杭工法を赤坂トラストタワー基礎に初適用、CO2削減へ活用",
-      "link": "https://news.build-app.jp/article/39301/",
-      "description": "大成建設株式会社(社長:相川善郎)は、システム計測株式会社(代表取締役会長:久保豊)との共同で開発を進めてきた大口径多段拡大場所打ち杭工法「......",
-      "publishedDate": "Mon, 23 Feb 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33961843_s-130x98.jpg",
+      "title": "従業員ゼロで月1500万円。ソロプレーナー7人に学ぶ稼ぎ方",
+      "link": "https://axconstdx.com/2026/02/27/%e5%be%93%e6%a5%ad%e5%93%a1%e3%82%bc%e3%83%ad%e3%81%a7%e6%9c%881500%e4%b8%87%e5%86%86%e3%80%82%e3%82%bd%e3%83%ad%e3%83%97%e3%83%ac%e3%83%bc%e3%83%8a%e3%83%bc7%e4%ba%ba%e3%81%ab%e5%ad%a6%e3%81%b6/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%25be%2593%25e6%25a5%25ad%25e5%2593%25a1%25e3%2582%25bc%25e3%2583%25ad%25e3%2581%25a7%25e6%259c%25881500%25e4%25b8%2587%25e5%2586%2586%25e3%2580%2582%25e3%2582%25bd%25e3%2583%25ad%25e3%2583%2597%25e3%2583%25ac%25e3%2583%25bc%25e3%2583%258a%25e3%2583%25bc7%25e4%25ba%25ba%25e3%2581%25ab%25e5%25ad%25a6%25e3%2581%25b6",
+      "description": "「一人で稼げる時代」は、もうすでに始まっています。才能も資金も関係なく、従業員ゼロで月収1500万円を超えた人たちがいます。この記事を読めば、彼らが何をどう考えて動いたのかが、あなたにも具体的な言葉で届くはずです。 はじ [...] <p>The post 従業員ゼロで月1500万円。ソロプレーナー7人に学ぶ稼ぎ方 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Fri, 27 Feb 2026 05:41:30 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/eyecatch-3-1024x538.jpg",
       "language": "ja"
-    },
-    {
-      "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
-      "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
-      "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
-      "publishedDate": "Mon, 08 Dec 2025 19:22:27 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The buildingSMART openBIM Awards 2025 – Winners Announced",
-      "link": "https://www.buildingsmart.org/the-buildingsmart-openbim-awards-2025-winners-announced/",
-      "description": "Berlin, Germany – September 25, 2025 The openBIM Awards 2025 concluded with a celebratory ceremony on Wednesday, 24 September, during the closing plenary of the buildingSMART International Summit – Be...",
-      "publishedDate": "Fri, 26 Sep 2025 13:18:09 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "建設現場が変わる日——東大発「燈」50億円調達が示す身体性AIの衝撃",
@@ -270,36 +200,6 @@
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/wp_eyecatch_1200x630-2-1024x538.jpg",
       "language": "ja"
-    },
-    {
-      "title": "Voting for the Standards Committee Executive is now open",
-      "link": "https://www.buildingsmart.org/voting-for-the-standards-committee-executive-is-now-open/",
-      "description": "Vote closing date: 12 Nov 2025Report: Link The buildingSMART International Community is invited to elect five additional members to the Standards Committee Executive (SCE).This is an important governa...",
-      "publishedDate": "Fri, 17 Oct 2025 15:10:46 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "openBIM Practitioner Certification enters full-scale implementation across Chapters",
-      "link": "https://www.buildingsmart.org/openbim-practitioner-certification-enters-full-scale-implementation-across-chapters/",
-      "description": "The openBIM Practitioner Certification is now rolling out across the buildingSMART community, as part of the ongoing expansion of the Professional Certification Program, marking a major milestone in p...",
-      "publishedDate": "Fri, 05 Dec 2025 22:18:08 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Board of Directors Changes",
-      "link": "https://www.buildingsmart.org/board-of-directors-changes/",
-      "description": "London, U.K. – December 5th, 2025 — buildingSMART International (bSI) is today announcing some Board of Director changes. Board Changes Due to ill health, Alfred Waschl has stepped down from... The po...",
-      "publishedDate": "Fri, 05 Dec 2025 19:25:08 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
     }
   ]
 }
