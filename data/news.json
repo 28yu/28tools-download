@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-01T01:25:17.219118",
+  "lastUpdated": "2026-03-02T01:17:29.148352",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -59,36 +59,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/01/260224-2_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "トンネルの設計を⾰新する新機能を三次元道路設計ソフト「STRAXcube」に実装しました",
-      "link": "https://news.build-app.jp/article/39321/",
-      "description": "パシフィックコンサルタンツ株式会社（住所：東京都千代⽥区、代表取締役社⻑執⾏役員：⼤本修）と株式会社三英技研（住所：広島県広島市中区、代表取......",
-      "publishedDate": "Tue, 24 Feb 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/10/dpXFA3kMEG2WDF91666326649_1666326685-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大成建設、ドローンと3Dスキャン活用の点検手法が第9回インフラメンテナンス大賞優秀賞",
-      "link": "https://news.build-app.jp/article/39303/",
-      "description": "大成建設株式会社は、複数の協力企業とともに開発・運用している『ドローンと3Dスキャンカメラを活用したデジタル点検手法』と、それを補助する『点......",
-      "publishedDate": "Tue, 24 Feb 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/08/AdobeStock_486635416-130x87.jpeg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、令和7年12月の大手50社受注動態を公表、民間6.1％増・公共66.2％増",
-      "link": "https://news.build-app.jp/article/39311/",
-      "description": "2026年1月30日、国土交通省より大手建設会社50社を対象とした受注動態調査の結果が発表されました。昨年12月の受注総額は2兆2,956億......",
-      "publishedDate": "Tue, 24 Feb 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33585571_s-130x98.jpg",
       "language": "ja"
     },
     {
@@ -172,6 +142,36 @@
       "language": "en"
     },
     {
+      "title": "【2026年最新】生コン価格の相場と推移｜値上げの背景と原価への影響を徹底解説",
+      "link": "https://news.build-app.jp/article/39439/",
+      "description": "生コン（レディーミクストコンクリート）の単価は、ここ数年で静かに上がり続けています。注目すべきは値上げした事実よりも、「単価の前提が古いまま......",
+      "publishedDate": "Sun, 01 Mar 2026 23:15:57 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/3502715_m-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "2〜3日かかった施工計画書が、30分で初稿。建設業全29業種対応「施工計画書AI」β版公開",
+      "link": "https://news.build-app.jp/article/39395/",
+      "description": "株式会社NITACO（本社：東京都渋谷区、代表取締役：新田 顕大）は、建設業29業種に対応した施工計画書自動生成AI「施工計画書AI」のβ版......",
+      "publishedDate": "Sun, 01 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/u3cgamP7hobqizh1679349778_1679349824-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "AIがあなたの代わりに動き出す——Gemini「ゴール・スケジュールド・アクション」の衝撃",
+      "link": "https://axconstdx.com/2026/03/01/ai%e3%81%8c%e3%81%82%e3%81%aa%e3%81%9f%e3%81%ae%e4%bb%a3%e3%82%8f%e3%82%8a%e3%81%ab%e5%8b%95%e3%81%8d%e5%87%ba%e3%81%99-gemini%e3%80%8c%e3%82%b4%e3%83%bc%e3%83%ab%e3%83%bb%e3%82%b9/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e3%2581%258c%25e3%2581%2582%25e3%2581%25aa%25e3%2581%259f%25e3%2581%25ae%25e4%25bb%25a3%25e3%2582%258f%25e3%2582%258a%25e3%2581%25ab%25e5%258b%2595%25e3%2581%258d%25e5%2587%25ba%25e3%2581%2599-gemini%25e3%2580%258c%25e3%2582%25b4%25e3%2583%25bc%25e3%2583%25ab%25e3%2583%25bb%25e3%2582%25b9",
+      "description": "「指示したのに、また確認しなければならない」——AIへの期待と現実のギャップに、疲れを感じていませんか。Googleが開発する新機能は、ゴールを告げるだけでAIが最後まで動き続ける未来を現実にします。読み終えるころには、 [...] <p>The post AIがあなたの代わりに動き出す——Gemini「ゴール・スケジュールド・アクション」の衝撃 first appeared on 生成AIと建設...",
+      "publishedDate": "Sun, 01 Mar 2026 07:04:17 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/eyecatch-5-1024x538.jpg",
+      "language": "ja"
+    },
+    {
       "title": "OpenAI×4大コンサルのFrontier Alliances──企業AI実装の標準形が変わる",
       "link": "https://axconstdx.com/2026/02/28/openaix4%e5%a4%a7%e3%82%b3%e3%83%b3%e3%82%b5%e3%83%ab%e3%81%aefrontier-alliances%e2%94%80%e2%94%80%e4%bc%81%e6%a5%adai%e5%ae%9f%e8%a3%85%e3%81%ae%e6%a8%99%e6%ba%96%e5%bd%a2%e3%81%8c%e5%a4%89/?utm_source=rss&utm_medium=rss&utm_campaign=openaix4%25e5%25a4%25a7%25e3%2582%25b3%25e3%2583%25b3%25e3%2582%25b5%25e3%2583%25ab%25e3%2581%25aefrontier-alliances%25e2%2594%2580%25e2%2594%2580%25e4%25bc%2581%25e6%25a5%25adai%25e5%25ae%259f%25e8%25a3%2585%25e3%2581%25ae%25e6%25a8%2599%25e6%25ba%2596%25e5%25bd%25a2%25e3%2581%258c%25e5%25a4%2589",
       "description": "「生成AIを導入したのに、なぜか現場で使われない」――そんな悩みを抱えていませんか。その答えは、ツールではなく体制にあります。本記事では、OpenAIと世界最大級のコンサル4社が組んだ理由と、AIを本番業務に根付かせるた [...] <p>The post OpenAI×4大コンサルのFrontier Alliances──企業AI実装の標準形が変わる first appeared on 生成AI...",
@@ -200,6 +200,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "施工管理アプリを比較｜おすすめ9選ランキング",
+      "link": "https://news.build-app.jp/article/13933/",
+      "description": "トレンドワード：施工管理アプリ 現場管理が楽になる「施工管理アプリ」についてピックアップします。図面管理やコミュニケーションをオンライン化す......",
+      "publishedDate": "Mon, 02 Mar 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/11/MicrosoftTeams-image-137-130x82.jpg",
+      "language": "ja"
     },
     {
       "title": "Googleの本気が怖い。Nano Banana 2が画像生成AIの常識を壊した",
@@ -259,16 +269,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/optimized_image-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "米国3千万人が証明、AIで「ソロプレーナー」は最強ビジネスになった",
-      "link": "https://axconstdx.com/2026/02/20/%e7%b1%b3%e5%9b%bd3%e5%8d%83%e4%b8%87%e4%ba%ba%e3%81%8c%e8%a8%bc%e6%98%8e%e3%80%81ai%e3%81%a7%e3%80%8c%e3%82%bd%e3%83%ad%e3%83%97%e3%83%ac%e3%83%bc%e3%83%8a%e3%83%bc%e3%80%8d%e3%81%af%e6%9c%80/?utm_source=rss&utm_medium=rss&utm_campaign=%25e7%25b1%25b3%25e5%259b%25bd3%25e5%258d%2583%25e4%25b8%2587%25e4%25ba%25ba%25e3%2581%258c%25e8%25a8%25bc%25e6%2598%258e%25e3%2580%2581ai%25e3%2581%25a7%25e3%2580%258c%25e3%2582%25bd%25e3%2583%25ad%25e3%2583%2597%25e3%2583%25ac%25e3%2583%25bc%25e3%2583%258a%25e3%2583%25bc%25e3%2580%258d%25e3%2581%25af%25e6%259c%2580",
-      "description": "あなたの会社の仕事が、たった1人に奪われる時代が来るとしたら？米国では今、AIを武器にした「ひとり起業家」が経済を動かし始めています。この記事を読めば、その全貌と日本企業が今すぐ取るべき戦略が、手に取るようにわかります。 [...] <p>The post 米国3千万人が証明、AIで「ソロプレーナー」は最強ビジネスになった first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Fri, 20 Feb 2026 04:52:05 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/wp_eyecatch_1200x630-2-1024x538.jpg",
       "language": "ja"
     },
     {
