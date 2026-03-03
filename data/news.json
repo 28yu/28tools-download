@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-02T01:17:29.148352",
+  "lastUpdated": "2026-03-03T01:19:55.520846",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -50,16 +50,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "世界遺産における近代建築群｜20世紀建築はいかにして人類の文化的遺産となり得たのか？",
-      "link": "https://news.build-app.jp/article/38835/",
-      "description": "コンクリート、ガラス、鉄骨。これらの素材が20世紀に引き起こした建築革命は、いま世界遺産という文化的聖域に到達している。 パラダイムシフト─......",
-      "publishedDate": "Tue, 24 Feb 2026 23:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/01/260224-2_hirayama-130x82.jpg",
-      "language": "ja"
     },
     {
       "title": "産学連携による次世代の建築人材育成を目的にデジタルツールの設計実務への影響を検証｜深堀り取材【毎月15日・月末更新】",
@@ -200,6 +190,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "【大林組】自社開発の物流施設屋根上を活用したフィジカルPPAに着手",
+      "link": "https://news.build-app.jp/article/39398/",
+      "description": "株式会社大林組（本社：東京都港区、社長：佐藤俊美）は、オンサイトに加えオフサイトの需要家にも再生可能エネルギーを供給するフィジカルPPA（※......",
+      "publishedDate": "Mon, 02 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/4sAi0GiPB9jj1KO1658206702_1658206726-130x82.jpg",
+      "language": "ja"
     },
     {
       "title": "施工管理アプリを比較｜おすすめ9選ランキング",
