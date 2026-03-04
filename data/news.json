@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-03T01:19:55.520846",
+  "lastUpdated": "2026-03-04T01:15:33.293866",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -10,26 +10,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "建築スケッチの書き方完全ガイド｜初心者でも描ける練習法・パースとの違い・おすすめ道具まで徹底解説",
-      "link": "https://news.build-app.jp/article/39411/",
-      "description": "建築スケッチの書き方がわからず、「センスがないのでは」と悩んでいませんか。実は、建築スケッチは才能よりも「思考の整理法」と「練習の順序」で上......",
-      "publishedDate": "Wed, 25 Feb 2026 23:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/cab36555cda23ac6a94b4bdac41ea657-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "オールインワンで 3DGS までこなすハンディSLAMスキャナ「Metacam Air2」",
-      "link": "https://news.build-app.jp/article/39323/",
-      "description": "株式会社小泉測機製作所（本社：新潟県長岡市、代表取締役：矢野英洋）は、SkyLandX社のハンディSLAMスキャナ「MetaCam Air2......",
-      "publishedDate": "Wed, 25 Feb 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/01/image-2-130x73.jpeg",
-      "language": "ja"
     },
     {
       "title": "Occupant Movement Analysis Technical Report",
@@ -52,13 +32,23 @@
       "language": "en"
     },
     {
-      "title": "産学連携による次世代の建築人材育成を目的にデジタルツールの設計実務への影響を検証｜深堀り取材【毎月15日・月末更新】",
-      "link": "https://news.build-app.jp/article/39232/",
-      "description": "※安心計画(福岡市: 代表取締役社長:高田政和)では、九州産業大学建築都市工学部 住居・インテリア学科における「3D-CADと生成AIを導入......",
-      "publishedDate": "Thu, 26 Feb 2026 23:30:00 +0000",
+      "title": "MLBスタジアム建築が示す、集合のアーキテクチャ｜ボールパークという都市OS",
+      "link": "https://news.build-app.jp/article/38880/",
+      "description": "1992年、ボルティモアに誕生した一つの野球場が、アメリカ都市文化のアーキテクチャを書き換えた。カムデン・ヤーズ——それは単なるスポーツ施設......",
+      "publishedDate": "Tue, 03 Mar 2026 23:30:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/2c331a9ac2251f1d4193b1aedc6e8681-2-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/01/260304_hirayama-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【第3回Arent調査④ アジャイル開発編】業務での採用は3割超、「全面的導入」は2.4倍",
+      "link": "https://news.build-app.jp/article/39454/",
+      "description": "建設DXを推進する株式会社Arent（本社：東京都港区）は、2025年1月から12月にかけて建設業界従事者を対象に実施したアジャイル開発に関......",
+      "publishedDate": "Tue, 03 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/HUJTitVRWBSDZQ91641950024-130x73.jpg",
       "language": "ja"
     },
     {
@@ -69,6 +59,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/bf66e6254551a7c15452e8526ba0da1b-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "産学連携による次世代の建築人材育成を目的にデジタルツールの設計実務への影響を検証｜深堀り取材【毎月15日・月末更新】",
+      "link": "https://news.build-app.jp/article/39232/",
+      "description": "※安心計画(福岡市: 代表取締役社長:高田政和)では、九州産業大学建築都市工学部 住居・インテリア学科における「3D-CADと生成AIを導入......",
+      "publishedDate": "Thu, 26 Feb 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/2c331a9ac2251f1d4193b1aedc6e8681-2-130x82.png",
       "language": "ja"
     },
     {
@@ -109,16 +109,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/eye_catch_1200x630-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "都立明治公園とは｜レストランやアクセス、再開発のポイントを解説",
-      "link": "https://news.build-app.jp/article/39379/",
-      "description": "トレンドワード：都立明治公園 「都立明治公園」についてピックアップします。国立競技場周辺エリアに位置する新しい都市型公園として2023年にリ......",
-      "publishedDate": "Thu, 26 Feb 2026 02:38:52 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/1f42fd4b0051213313f1d7e500d47028-1-130x82.png",
       "language": "ja"
     },
     {
@@ -190,6 +180,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "建築のチリとは？意味・寸法・サッシ納まりまで完全解説",
+      "link": "https://news.build-app.jp/article/39460/",
+      "description": "建築現場で「チリが合っていない」「サッシのチリ寸法を確認して」といった会話を耳にしたことはないでしょうか。チリとは段差やクリアランスのことを......",
+      "publishedDate": "Mon, 02 Mar 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/ec9a0d66d3ce0106b1d59adeccba1cf3-130x82.png",
+      "language": "ja"
     },
     {
       "title": "【大林組】自社開発の物流施設屋根上を活用したフィジカルPPAに着手",
