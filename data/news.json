@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-04T01:15:33.293866",
+  "lastUpdated": "2026-03-05T01:17:51.776352",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -32,6 +32,26 @@
       "language": "en"
     },
     {
+      "title": "『サステナブル建設／グリーンビル／ネットゼロビル（NZEB）／スマートホーム　産業・業界フォーサイト2026-2030：総覧白書2026年版』 発刊のお知らせ",
+      "link": "https://news.build-app.jp/article/39456/",
+      "description": "一般社団法人 次世代社会システム研究開発機構（INGS）は2026年2月25日、『サステナブル建設／グリーンビル／ネットゼロビル（NZEB）......",
+      "publishedDate": "Wed, 04 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/01/AdobeStock_212410237-130x87.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "保護中: 4月から始まる建築確認申請の「BIM図面審査」を前にデジタル状況を取り巻く現在地を俯瞰(第一回)｜深堀り取材【毎月15日・月末更新】",
+      "link": "https://news.build-app.jp/article/39464/",
+      "description": "この投稿はパスワードで保護されているため抜粋文はありません。...",
+      "publishedDate": "Wed, 04 Mar 2026 06:16:16 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/1845d2996bde373b999c1bd6ae191216-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "MLBスタジアム建築が示す、集合のアーキテクチャ｜ボールパークという都市OS",
       "link": "https://news.build-app.jp/article/38880/",
       "description": "1992年、ボルティモアに誕生した一つの野球場が、アメリカ都市文化のアーキテクチャを書き換えた。カムデン・ヤーズ——それは単なるスポーツ施設......",
@@ -62,16 +82,6 @@
       "language": "ja"
     },
     {
-      "title": "産学連携による次世代の建築人材育成を目的にデジタルツールの設計実務への影響を検証｜深堀り取材【毎月15日・月末更新】",
-      "link": "https://news.build-app.jp/article/39232/",
-      "description": "※安心計画(福岡市: 代表取締役社長:高田政和)では、九州産業大学建築都市工学部 住居・インテリア学科における「3D-CADと生成AIを導入......",
-      "publishedDate": "Thu, 26 Feb 2026 23:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/2c331a9ac2251f1d4193b1aedc6e8681-2-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "アメリカでソロプレーナーが急増する理由",
       "link": "https://axconstdx.com/2026/02/27/%e3%82%a2%e3%83%a1%e3%83%aa%e3%82%ab%e3%81%a7%e3%82%bd%e3%83%ad%e3%83%97%e3%83%ac%e3%83%bc%e3%83%8a%e3%83%bc%e3%81%8c%e6%80%a5%e5%a2%97%e3%81%99%e3%82%8b%e7%90%86%e7%94%b1/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2582%25a2%25e3%2583%25a1%25e3%2583%25aa%25e3%2582%25ab%25e3%2581%25a7%25e3%2582%25bd%25e3%2583%25ad%25e3%2583%2597%25e3%2583%25ac%25e3%2583%25bc%25e3%2583%258a%25e3%2583%25bc%25e3%2581%258c%25e6%2580%25a5%25e5%25a2%2597%25e3%2581%2599%25e3%2582%258b%25e7%2590%2586%25e7%2594%25b1",
       "description": "――AI時代に「雇わずに成長する」起業モデルとは 一人で事業を続けるのは不安、でも雇うほどの余裕はない。そんな迷いを抱える人が、今アメリカで増えるソロプレーナーに注目しています。本記事では、その理由と仕組みを解き明かし、 [...] <p>The post アメリカでソロプレーナーが急増する理由 first appeared on 生成AIと建設DX.</p>...",
@@ -79,16 +89,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/wp_eyecatch_1200x630-3-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "NEC、大日本土木に建設業向けSaaS型ERP「建設クラウド」導入、全社の業務標準化を実現",
-      "link": "https://news.build-app.jp/article/39393/",
-      "description": "NECは、建設業向けSaaS型ERP「建設クラウド」を大日本土木株式会社(以下、大日本土木)に導入しました。大日本土木はSaaS型ERPへの......",
-      "publishedDate": "Thu, 26 Feb 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/03/eUjbEOhPCF8AanQ1647439302-130x87.jpg",
       "language": "ja"
     },
     {
