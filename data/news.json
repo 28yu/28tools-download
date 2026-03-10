@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-09T01:18:26.770817",
+  "lastUpdated": "2026-03-10T01:12:50.882735",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -32,6 +32,16 @@
       "language": "en"
     },
     {
+      "title": "【2026年版】建築基準法改正の履歴まとめ｜1950〜最新まで年表・耐震改正・既存不適格まで完全解説",
+      "link": "https://news.build-app.jp/article/39536/",
+      "description": "建築基準法は1950年の制定以降、社会環境や災害、都市計画の変化に合わせて何度も改正されてきた法律です。そのため、過去の改正履歴を理解してい......",
+      "publishedDate": "Wed, 04 Mar 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/cdfefa9948c95dfc845b17a02469cca3-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "『サステナブル建設／グリーンビル／ネットゼロビル（NZEB）／スマートホーム　産業・業界フォーサイト2026-2030：総覧白書2026年版』 発刊のお知らせ",
       "link": "https://news.build-app.jp/article/39456/",
       "description": "一般社団法人 次世代社会システム研究開発機構（INGS）は2026年2月25日、『サステナブル建設／グリーンビル／ネットゼロビル（NZEB）......",
@@ -42,33 +52,23 @@
       "language": "ja"
     },
     {
-      "title": "保護中: 4月から始まる建築確認申請の「BIM図面審査」を前にデジタル状況を取り巻く現在地を俯瞰(第一回)｜深堀り取材【毎月15日・月末更新】",
-      "link": "https://news.build-app.jp/article/39464/",
-      "description": "この投稿はパスワードで保護されているため抜粋文はありません。...",
-      "publishedDate": "Wed, 04 Mar 2026 06:16:16 +0000",
+      "title": "国土交通省、令和7年12月と年間の建設工事受注額を公表、12月は3か月ぶり増加",
+      "link": "https://news.build-app.jp/article/39524/",
+      "description": "国土交通省は令和8年2月10日、「建設工事受注動態統計調査報告（令和7年12月分及び令和7年計分）」を公表しました。12月の建設工事受注高（......",
+      "publishedDate": "Wed, 04 Mar 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/1845d2996bde373b999c1bd6ae191216-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33863440_m-130x95.jpg",
       "language": "ja"
     },
     {
-      "title": "MLBスタジアム建築が示す、集合のアーキテクチャ｜ボールパークという都市OS",
-      "link": "https://news.build-app.jp/article/38880/",
-      "description": "1992年、ボルティモアに誕生した一つの野球場が、アメリカ都市文化のアーキテクチャを書き換えた。カムデン・ヤーズ——それは単なるスポーツ施設......",
-      "publishedDate": "Tue, 03 Mar 2026 23:30:00 +0000",
+      "title": "大成建設、山岳トンネル発破作業を機械化する装薬ユニット開発、削孔装薬連続施工",
+      "link": "https://news.build-app.jp/article/39514/",
+      "description": "2026年2月19日、大成建設株式会社は山岳トンネル工事における発破作業を完全に機械化する「装薬ユニット」を開発したと発表しました。既存の削......",
+      "publishedDate": "Wed, 04 Mar 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/01/260304_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "【第3回Arent調査④ アジャイル開発編】業務での採用は3割超、「全面的導入」は2.4倍",
-      "link": "https://news.build-app.jp/article/39454/",
-      "description": "建設DXを推進する株式会社Arent（本社：東京都港区）は、2025年1月から12月にかけて建設業界従事者を対象に実施したアジャイル開発に関......",
-      "publishedDate": "Tue, 03 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/HUJTitVRWBSDZQ91641950024-130x73.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33965467_s-130x73.jpg",
       "language": "ja"
     },
     {
@@ -110,6 +110,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "建設業法第26条第3項をわかりやすく解説｜4500万円ルール・専任配置・特例監理技術者まで整理",
+      "link": "https://news.build-app.jp/article/39542/",
+      "description": "建設工事では、どの現場にどの技術者を配置するかが法律で定められています。その中心となる規定が「建設業法第26条第3項」です。 請負金額が45......",
+      "publishedDate": "Thu, 05 Mar 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/33b70e3c2fdf8d24fb6069cdc514b69d-1-130x82.png",
+      "language": "ja"
     },
     {
       "title": "BuildApp建具、鋼製建具工事向け新サービス「製作図・バラ図連動サービス」商用提供開始",
@@ -182,6 +192,26 @@
       "language": "ja"
     },
     {
+      "title": "寒中コンクリートとは？施工基準・温度・養生方法を解説｜配合・ひび割れ対策まで",
+      "link": "https://news.build-app.jp/article/39553/",
+      "description": "冬季のコンクリート施工では、気温の低下によってコンクリート内部の水分が凍結し、強度発現が遅れる「初期凍害」が問題になります。こうした冬季施工......",
+      "publishedDate": "Mon, 09 Mar 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/0d313958647f5e2c1cd8cbd8bc614f7c-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "村本建設と共同開発「顔認証システムFACEmaⓇ」　「入退場管理モデル」レンタル提供開始",
+      "link": "https://news.build-app.jp/article/39489/",
+      "description": "株式会社キッズウェイ（本社：愛知県瀬戸市、経営執行役社長：高橋 孝司、以下 キッズウェイ）は、村本建設株式会社（本社：大阪府大阪市、代表取締......",
+      "publishedDate": "Mon, 09 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/09/unDR9w2945ETEqC1662045710_1662045733-130x82.jpg",
+      "language": "ja"
+    },
+    {
       "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
       "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
       "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
@@ -190,36 +220,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "建築のチリとは？意味・寸法・サッシ納まりまで完全解説",
-      "link": "https://news.build-app.jp/article/39460/",
-      "description": "建築現場で「チリが合っていない」「サッシのチリ寸法を確認して」といった会話を耳にしたことはないでしょうか。チリとは段差やクリアランスのことを......",
-      "publishedDate": "Mon, 02 Mar 2026 23:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/ec9a0d66d3ce0106b1d59adeccba1cf3-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "【大林組】自社開発の物流施設屋根上を活用したフィジカルPPAに着手",
-      "link": "https://news.build-app.jp/article/39398/",
-      "description": "株式会社大林組（本社：東京都港区、社長：佐藤俊美）は、オンサイトに加えオフサイトの需要家にも再生可能エネルギーを供給するフィジカルPPA（※......",
-      "publishedDate": "Mon, 02 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/4sAi0GiPB9jj1KO1658206702_1658206726-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "施工管理アプリを比較｜おすすめ9選ランキング",
-      "link": "https://news.build-app.jp/article/13933/",
-      "description": "トレンドワード：施工管理アプリ 現場管理が楽になる「施工管理アプリ」についてピックアップします。図面管理やコミュニケーションをオンライン化す......",
-      "publishedDate": "Mon, 02 Mar 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/11/MicrosoftTeams-image-137-130x82.jpg",
-      "language": "ja"
     },
     {
       "title": "Googleの本気が怖い。Nano Banana 2が画像生成AIの常識を壊した",
