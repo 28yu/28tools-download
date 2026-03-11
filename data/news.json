@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-10T01:12:50.882735",
+  "lastUpdated": "2026-03-11T01:13:13.416102",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -52,23 +52,43 @@
       "language": "ja"
     },
     {
-      "title": "国土交通省、令和7年12月と年間の建設工事受注額を公表、12月は3か月ぶり増加",
-      "link": "https://news.build-app.jp/article/39524/",
-      "description": "国土交通省は令和8年2月10日、「建設工事受注動態統計調査報告（令和7年12月分及び令和7年計分）」を公表しました。12月の建設工事受注高（......",
-      "publishedDate": "Wed, 04 Mar 2026 22:00:00 +0000",
+      "title": "「Civil Engineering（公共善のための工学、土木工学）」はなぜ、「Military Engineering（軍事工学）」と袂を分かったのか？",
+      "link": "https://news.build-app.jp/article/38883/",
+      "description": "「エンジニア」という言葉の起源 1325年、「engine&#8217;er」という言葉が歴史に初めて登場したらしい。その意味は、「軍事機械......",
+      "publishedDate": "Tue, 10 Mar 2026 23:30:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33863440_m-130x95.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/01/260311_hirayama-130x82.jpg",
       "language": "ja"
     },
     {
-      "title": "大成建設、山岳トンネル発破作業を機械化する装薬ユニット開発、削孔装薬連続施工",
-      "link": "https://news.build-app.jp/article/39514/",
-      "description": "2026年2月19日、大成建設株式会社は山岳トンネル工事における発破作業を完全に機械化する「装薬ユニット」を開発したと発表しました。既存の削......",
-      "publishedDate": "Wed, 04 Mar 2026 22:00:00 +0000",
+      "title": "アーキットと植村建設、遠隔操縦下で複数重機に対応する「FOLLOW EYE」を共同開発",
+      "link": "https://news.build-app.jp/article/39559/",
+      "description": "アーキット合同会社(本社:北海道札幌市、代表:三浦友直、以下「アーキット」)と、植村建設株式会社(本社:北海道赤平市、代表取締役社長:植村正......",
+      "publishedDate": "Tue, 10 Mar 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33965467_s-130x73.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/tYB9834GiW7iVID1677691802_1677691815-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ソフトバンクG株が最安値圏へ——Stargate頓挫が暴いた「ビジョン経営の限界」",
+      "link": "https://axconstdx.com/2026/03/11/%e3%82%bd%e3%83%95%e3%83%88%e3%83%90%e3%83%b3%e3%82%afg%e6%a0%aa%e3%81%8c%e6%9c%80%e5%ae%89%e5%80%a4%e5%9c%8f%e3%81%b8-stargate%e9%a0%93%e6%8c%ab%e3%81%8c%e6%9a%b4%e3%81%84%e3%81%9f/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2582%25bd%25e3%2583%2595%25e3%2583%2588%25e3%2583%2590%25e3%2583%25b3%25e3%2582%25afg%25e6%25a0%25aa%25e3%2581%258c%25e6%259c%2580%25e5%25ae%2589%25e5%2580%25a4%25e5%259c%258f%25e3%2581%25b8-stargate%25e9%25a0%2593%25e6%258c%25ab%25e3%2581%258c%25e6%259a%25b4%25e3%2581%2584%25e3%2581%259f",
+      "description": "「AIに賭けた企業」が、なぜ市場から見放されつつあるのか。Stargate計画の混乱を入口に、ビジョンと財務リスクのはざまで揺れる経営の本質を読み解きます。AI時代に生き残る企業の条件が、ここから見えてきます。 はじめに [...] <p>The post ソフトバンクG株が最安値圏へ——Stargate頓挫が暴いた「ビジョン経営の限界」 first appeared on 生成AIと建設DX.<...",
+      "publishedDate": "Tue, 10 Mar 2026 20:39:45 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/wp_eyecatch_1200x630-3-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "原油90ドル超・航空株急落——イラン戦争が日本企業に突きつけた「5つの生存条件」",
+      "link": "https://axconstdx.com/2026/03/10/%e5%8e%9f%e6%b2%b990%e3%83%89%e3%83%ab%e8%b6%85%e3%83%bb%e8%88%aa%e7%a9%ba%e6%a0%aa%e6%80%a5%e8%90%bd-%e3%82%a4%e3%83%a9%e3%83%b3%e6%88%a6%e4%ba%89%e3%81%8c%e6%97%a5%e6%9c%ac%e4%bc%81/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%258e%259f%25e6%25b2%25b990%25e3%2583%2589%25e3%2583%25ab%25e8%25b6%2585%25e3%2583%25bb%25e8%2588%25aa%25e7%25a9%25ba%25e6%25a0%25aa%25e6%2580%25a5%25e8%2590%25bd-%25e3%2582%25a4%25e3%2583%25a9%25e3%2583%25b3%25e6%2588%25a6%25e4%25ba%2589%25e3%2581%258c%25e6%2597%25a5%25e6%259c%25ac%25e4%25bc%2581",
+      "description": "「うちには関係ない」と思っていたら、気づいたときには手遅れかもしれません。イラン戦争が引き起こした原油急騰と航空株の急落は、日本企業の経営の足元を静かに、しかし確実に揺るがしています。この記事を読めば、いま何が起きている [...] <p>The post 原油90ドル超・航空株急落——イラン戦争が日本企業に突きつけた「5つの生存条件」 first appeared on 生成AIと建設DX.</...",
+      "publishedDate": "Tue, 10 Mar 2026 01:37:15 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/wp_eyecatch_1200x630-2-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -182,16 +202,6 @@
       "language": "ja"
     },
     {
-      "title": "事務職求人48%減からわかる、AI導入で二分化する企業の未来",
-      "link": "https://axconstdx.com/2026/02/21/%e4%ba%8b%e5%8b%99%e8%81%b7%e6%b1%82%e4%ba%ba48%e6%b8%9b%e3%81%8b%e3%82%89%e3%82%8f%e3%81%8b%e3%82%8b%e3%80%81ai%e5%b0%8e%e5%85%a5%e3%81%a7%e4%ba%8c%e5%88%86%e5%8c%96%e3%81%99%e3%82%8b%e4%bc%81/?utm_source=rss&utm_medium=rss&utm_campaign=%25e4%25ba%258b%25e5%258b%2599%25e8%2581%25b7%25e6%25b1%2582%25e4%25ba%25ba48%25e6%25b8%259b%25e3%2581%258b%25e3%2582%2589%25e3%2582%258f%25e3%2581%258b%25e3%2582%258b%25e3%2580%2581ai%25e5%25b0%258e%25e5%2585%25a5%25e3%2581%25a7%25e4%25ba%258c%25e5%2588%2586%25e5%258c%2596%25e3%2581%2599%25e3%2582%258b%25e4%25bc%2581",
-      "description": "あなたの職場では、事務職の採用が止まっていませんか。それは単なる景気悪化ではなく、生成AIの本格導入による企業の構造転換の始まりです。今、企業とキャリアの明暗が分かれています。この記事で、5年後を左右する選択肢を見つけて [...] <p>The post 事務職求人48%減からわかる、AI導入で二分化する企業の未来 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sat, 21 Feb 2026 14:50:29 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/eyecatch_1200x630-1-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "寒中コンクリートとは？施工基準・温度・養生方法を解説｜配合・ひび割れ対策まで",
       "link": "https://news.build-app.jp/article/39553/",
       "description": "冬季のコンクリート施工では、気温の低下によってコンクリート内部の水分が凍結し、強度発現が遅れる「初期凍害」が問題になります。こうした冬季施工......",
@@ -260,16 +270,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "建設現場が変わる日——東大発「燈」50億円調達が示す身体性AIの衝撃",
-      "link": "https://axconstdx.com/2026/02/20/%e5%bb%ba%e8%a8%ad%e7%8f%be%e5%a0%b4%e3%81%8c%e5%a4%89%e3%82%8f%e3%82%8b%e6%97%a5-%e6%9d%b1%e5%a4%a7%e7%99%ba%e3%80%8c%e7%87%88%e3%80%8d50%e5%84%84%e5%86%86%e8%aa%bf%e9%81%94%e3%81%8c/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%25bb%25ba%25e8%25a8%25ad%25e7%258f%25be%25e5%25a0%25b4%25e3%2581%258c%25e5%25a4%2589%25e3%2582%258f%25e3%2582%258b%25e6%2597%25a5-%25e6%259d%25b1%25e5%25a4%25a7%25e7%2599%25ba%25e3%2580%258c%25e7%2587%2588%25e3%2580%258d50%25e5%2584%2584%25e5%2586%2586%25e8%25aa%25bf%25e9%2581%2594%25e3%2581%258c",
-      "description": "※本記事は2025年2月時点の情報に基づいています。 高所作業で命を落とす労働者、深刻な人手不足で成立しない工事案件……建設業界の苦境は日本経済そのものの課題です。そこへ東大発スタートアップ「燈」が50億円を調達し、身体 [...] <p>The post 建設現場が変わる日——東大発「燈」50億円調達が示す身体性AIの衝撃 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Fri, 20 Feb 2026 12:26:44 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/eyecatch_1200x630-2-1024x538.jpg",
-      "language": "ja"
     },
     {
       "title": "Voting for the Standards Committee Executive is now open",
