@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-12T01:10:55.426867",
+  "lastUpdated": "2026-03-13T01:16:48.304624",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -39,16 +39,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/10/V9GPL7HcB8tVmAQ1664954266_1664954299-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年版】建築基準法改正の履歴まとめ｜1950〜最新まで年表・耐震改正・既存不適格まで完全解説",
-      "link": "https://news.build-app.jp/article/39536/",
-      "description": "建築基準法は1950年の制定以降、社会環境や災害、都市計画の変化に合わせて何度も改正されてきた法律です。そのため、過去の改正履歴を理解してい......",
-      "publishedDate": "Wed, 04 Mar 2026 23:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/cdfefa9948c95dfc845b17a02469cca3-130x82.png",
       "language": "ja"
     },
     {
@@ -132,23 +122,33 @@
       "language": "en"
     },
     {
-      "title": "建設業法第26条第3項をわかりやすく解説｜4500万円ルール・専任配置・特例監理技術者まで整理",
-      "link": "https://news.build-app.jp/article/39542/",
-      "description": "建設工事では、どの現場にどの技術者を配置するかが法律で定められています。その中心となる規定が「建設業法第26条第3項」です。 請負金額が45......",
-      "publishedDate": "Thu, 05 Mar 2026 23:30:00 +0000",
+      "title": "セリタ建設、クラウドPBX導入で初期コスト約200万円を削減。",
+      "link": "https://news.build-app.jp/article/39598/",
+      "description": "建設DXで社会課題の解決を目指す株式会社セリタ建設（本社：佐賀県武雄市、代表：芹田 章博）は、社内インフラのDX（デジタルトランスフォーメー......",
+      "publishedDate": "Thu, 12 Mar 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/33b70e3c2fdf8d24fb6069cdc514b69d-1-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/3422461_m-130x87.jpg",
       "language": "ja"
     },
     {
-      "title": "BuildApp建具、鋼製建具工事向け新サービス「製作図・バラ図連動サービス」商用提供開始",
-      "link": "https://news.build-app.jp/article/39481/",
-      "description": "BuildApp（ビルドアップ）で建設DXに取り組む野原グループ株式会社(本社：東京都新宿区、代表取締役社長：野原弘輔）は、鋼製建具工事にお......",
-      "publishedDate": "Thu, 05 Mar 2026 22:00:00 +0000",
+      "title": "保護中: 「LLM×世界モデル」という二つの異なるAIパラダイムの併存と現場実装の臨界点",
+      "link": "https://news.build-app.jp/article/39594/",
+      "description": "この投稿はパスワードで保護されているため抜粋文はありません。...",
+      "publishedDate": "Thu, 12 Mar 2026 07:12:17 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/03/AdobeStock_484106480-130x87.jpeg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260408_hirayama-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "東京メトロ銀座線渋谷駅｜リニューアル後はどこ？乗り換えポイント解説",
+      "link": "https://news.build-app.jp/article/39574/",
+      "description": "トレンドワード：東京メトロ銀座線渋谷駅 「東京メトロ銀座線渋谷駅」についてピックアップします。東京メトロ銀座線渋谷駅は、2020年のリニュー......",
+      "publishedDate": "Thu, 12 Mar 2026 05:27:55 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/2218294843247acc864a2e4cb43837ec-130x82.png",
       "language": "ja"
     },
     {
