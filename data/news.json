@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-14T01:15:13.278863",
+  "lastUpdated": "2026-03-15T01:27:21.710607",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -82,16 +82,6 @@
       "language": "ja"
     },
     {
-      "title": "アメリカでソロプレーナーが急増する理由",
-      "link": "https://axconstdx.com/2026/02/27/%e3%82%a2%e3%83%a1%e3%83%aa%e3%82%ab%e3%81%a7%e3%82%bd%e3%83%ad%e3%83%97%e3%83%ac%e3%83%bc%e3%83%8a%e3%83%bc%e3%81%8c%e6%80%a5%e5%a2%97%e3%81%99%e3%82%8b%e7%90%86%e7%94%b1/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2582%25a2%25e3%2583%25a1%25e3%2583%25aa%25e3%2582%25ab%25e3%2581%25a7%25e3%2582%25bd%25e3%2583%25ad%25e3%2583%2597%25e3%2583%25ac%25e3%2583%25bc%25e3%2583%258a%25e3%2583%25bc%25e3%2581%258c%25e6%2580%25a5%25e5%25a2%2597%25e3%2581%2599%25e3%2582%258b%25e7%2590%2586%25e7%2594%25b1",
-      "description": "――AI時代に「雇わずに成長する」起業モデルとは 一人で事業を続けるのは不安、でも雇うほどの余裕はない。そんな迷いを抱える人が、今アメリカで増えるソロプレーナーに注目しています。本記事では、その理由と仕組みを解き明かし、 [...] <p>The post アメリカでソロプレーナーが急増する理由 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Thu, 26 Feb 2026 22:48:24 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/wp_eyecatch_1200x630-3-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "ISO Publishes New Compatibility Policy for ISO 16739-1 (IFC): A Major Step for Stable Evolution of the Standard",
       "link": "https://www.buildingsmart.org/iso-publishes-new-compatibility-policy-for-iso-16739-1/",
       "description": "buildingSMART International is pleased to share important news with the openBIM community: ISO/TC 59/SC 13 has published the new Compatibility Policy for ISO 16739-1, the international standard for IF...",
@@ -162,6 +152,26 @@
       "language": "ja"
     },
     {
+      "title": "現調にまだ2日かけてる？LiDARが建設業を変える理由",
+      "link": "https://axconstdx.com/2026/03/15/%e7%8f%be%e8%aa%bf%e3%81%ab%e3%81%be%e3%81%a02%e6%97%a5%e3%81%8b%e3%81%91%e3%81%a6%e3%82%8b%ef%bc%9flidar%e3%81%8c%e5%bb%ba%e8%a8%ad%e6%a5%ad%e3%82%92%e5%a4%89%e3%81%88%e3%82%8b%e7%90%86%e7%94%b1/?utm_source=rss&utm_medium=rss&utm_campaign=%25e7%258f%25be%25e8%25aa%25bf%25e3%2581%25ab%25e3%2581%25be%25e3%2581%25a02%25e6%2597%25a5%25e3%2581%258b%25e3%2581%2591%25e3%2581%25a6%25e3%2582%258b%25ef%25bc%259flidar%25e3%2581%258c%25e5%25bb%25ba%25e8%25a8%25ad%25e6%25a5%25ad%25e3%2582%2592%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b%25e7%2590%2586%25e7%2594%25b1",
+      "description": "現場の採寸ミスや手戻りに、もう振り回されなくていい時代が来ています。iPhoneを向けてスキャンするだけで、mm単位の計測と3Dモデル化が完結する——この記事を読めば、その具体的な方法と現場への導入イメージが、明日から動 [...] <p>The post 現調にまだ2日かけてる？LiDARが建設業を変える理由 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sat, 14 Mar 2026 21:07:22 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/eyecatch_1200x630-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Meta、2万人削減の衝撃——AI転換で「人」はどこへ行く？",
+      "link": "https://axconstdx.com/2026/03/14/meta%e3%80%812%e4%b8%87%e4%ba%ba%e5%89%8a%e6%b8%9b%e3%81%ae%e8%a1%9d%e6%92%83-ai%e8%bb%a2%e6%8f%9b%e3%81%a7%e3%80%8c%e4%ba%ba%e3%80%8d%e3%81%af%e3%81%a9%e3%81%93%e3%81%b8%e8%a1%8c/?utm_source=rss&utm_medium=rss&utm_campaign=meta%25e3%2580%25812%25e4%25b8%2587%25e4%25ba%25ba%25e5%2589%258a%25e6%25b8%259b%25e3%2581%25ae%25e8%25a1%259d%25e6%2592%2583-ai%25e8%25bb%25a2%25e6%258f%259b%25e3%2581%25a7%25e3%2580%258c%25e4%25ba%25ba%25e3%2580%258d%25e3%2581%25af%25e3%2581%25a9%25e3%2581%2593%25e3%2581%25b8%25e8%25a1%258c",
+      "description": "「AIに仕事が奪われる」と感じているなら、Metaの2万人削減はけっしてひとごとではありません。なぜ世界最大級のテック企業が、今この瞬間に大転換を迫られているのか。その背景を知ることで、AI時代を生き抜くヒントと、自分が [...] <p>The post Meta、2万人削減の衝撃——AI転換で「人」はどこへ行く？ first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sat, 14 Mar 2026 10:55:15 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/wp_eyecatch_1200x630-2-1-1024x538.jpg",
+      "language": "ja"
+    },
+    {
       "title": "寒中コンクリートとは？施工基準・温度・養生方法を解説｜配合・ひび割れ対策まで",
       "link": "https://news.build-app.jp/article/39553/",
       "description": "冬季のコンクリート施工では、気温の低下によってコンクリート内部の水分が凍結し、強度発現が遅れる「初期凍害」が問題になります。こうした冬季施工......",
@@ -200,16 +210,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "従業員ゼロで月1500万円。ソロプレーナー7人に学ぶ稼ぎ方",
-      "link": "https://axconstdx.com/2026/02/27/%e5%be%93%e6%a5%ad%e5%93%a1%e3%82%bc%e3%83%ad%e3%81%a7%e6%9c%881500%e4%b8%87%e5%86%86%e3%80%82%e3%82%bd%e3%83%ad%e3%83%97%e3%83%ac%e3%83%bc%e3%83%8a%e3%83%bc7%e4%ba%ba%e3%81%ab%e5%ad%a6%e3%81%b6/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%25be%2593%25e6%25a5%25ad%25e5%2593%25a1%25e3%2582%25bc%25e3%2583%25ad%25e3%2581%25a7%25e6%259c%25881500%25e4%25b8%2587%25e5%2586%2586%25e3%2580%2582%25e3%2582%25bd%25e3%2583%25ad%25e3%2583%2597%25e3%2583%25ac%25e3%2583%25bc%25e3%2583%258a%25e3%2583%25bc7%25e4%25ba%25ba%25e3%2581%25ab%25e5%25ad%25a6%25e3%2581%25b6",
-      "description": "「一人で稼げる時代」は、もうすでに始まっています。才能も資金も関係なく、従業員ゼロで月収1500万円を超えた人たちがいます。この記事を読めば、彼らが何をどう考えて動いたのかが、あなたにも具体的な言葉で届くはずです。 はじ [...] <p>The post 従業員ゼロで月1500万円。ソロプレーナー7人に学ぶ稼ぎ方 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Fri, 27 Feb 2026 05:41:30 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/eyecatch-3-1024x538.jpg",
-      "language": "ja"
     },
     {
       "title": "The buildingSMART openBIM Awards 2025 – Winners Announced",
