@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-16T01:26:58.017715",
+  "lastUpdated": "2026-03-17T01:18:34.784232",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -30,36 +30,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "【大林組】「日本ニュージーランド水素コリドー」を設立",
-      "link": "https://news.build-app.jp/article/39562/",
-      "description": "概要 株式会社大林組（本社：東京都港区、代表取締役社長 兼 CEO：佐藤俊美）、川崎重工業株式会社（本社：東京都港区、代表取締役社長執行役員......",
-      "publishedDate": "Wed, 11 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/10/V9GPL7HcB8tVmAQ1664954266_1664954299-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "「Civil Engineering（公共善のための工学、土木工学）」はなぜ、「Military Engineering（軍事工学）」と袂を分かったのか？",
-      "link": "https://news.build-app.jp/article/38883/",
-      "description": "「エンジニア」という言葉の起源 1325年、「engine&#8217;er」という言葉が歴史に初めて登場したらしい。その意味は、「軍事機械......",
-      "publishedDate": "Tue, 10 Mar 2026 23:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/01/260311_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "アーキットと植村建設、遠隔操縦下で複数重機に対応する「FOLLOW EYE」を共同開発",
-      "link": "https://news.build-app.jp/article/39559/",
-      "description": "アーキット合同会社(本社:北海道札幌市、代表:三浦友直、以下「アーキット」)と、植村建設株式会社(本社:北海道赤平市、代表取締役社長:植村正......",
-      "publishedDate": "Tue, 10 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/tYB9834GiW7iVID1677691802_1677691815-130x82.jpg",
-      "language": "ja"
     },
     {
       "title": "ソフトバンクG株が最安値圏へ——Stargate頓挫が暴いた「ビジョン経営の限界」",
@@ -132,6 +102,16 @@
       "language": "ja"
     },
     {
+      "title": "4月から始まる建築確認申請の「BIM図面審査」を前にデジタル状況を取り巻く現在地を俯瞰(第一回)｜深堀り取材【毎月15日・月末更新】",
+      "link": "https://news.build-app.jp/article/39464/",
+      "description": "国土交通省は、BIMの普及促進と建設業の革新を目指して建築BIM推進会議を設置した。ネット上でも、時々の建築BIM推進会議の動向に関する情報......",
+      "publishedDate": "Sun, 15 Mar 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/1845d2996bde373b999c1bd6ae191216-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "「建築BIM標準パッケージ for Vectorworks」2026年版テンプレートを発表",
       "link": "https://news.build-app.jp/article/39600/",
       "description": "「BIMを誰もが簡単に」をビジョンに掲げ、BIMの普及と活用支援を行う株式会社フローワークス（愛知県名古屋市、代表取締役：横関 浩）は、20......",
@@ -189,6 +169,26 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/wp_eyecatch_1200x630-2-1-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "無料で使える非住宅向け『省エネ検討WEBサービス』がWEBPRO全入力項目のWeb化に対応",
+      "link": "https://news.build-app.jp/article/39602/",
+      "description": "株式会社one building (本社：東京都目黒区)は、無料で利用できる非住宅向け『省エネ検討WEBサービス』において、国立研究開発法人......",
+      "publishedDate": "Mon, 16 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/03/eUjbEOhPCF8AanQ1647439302-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年決定版】あと施工アンカーの種類と使い分け｜建築の現場で失敗しない選び方",
+      "link": "https://news.build-app.jp/article/39647/",
+      "description": "あと施工アンカーは、設備機器や鉄骨ベースなどをコンクリートに固定する際に使用される重要な部材です。建設現場では設備工事や耐震補強、外壁改修な......",
+      "publishedDate": "Mon, 16 Mar 2026 12:18:22 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/23466231_m-130x87.jpg",
       "language": "ja"
     },
     {
