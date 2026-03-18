@@ -22,10 +22,10 @@ jobs:
       - name: Check if PR exists
         id: check-pr
         run: |
-          PR_EXISTS=$(gh pr list --head ${{ github.ref_name }} --json number --jq 'length')
+          PR_EXISTS=$(gh pr list --head "${{ github.ref_name }}" --json number --jq 'length')
           echo "pr_exists=$PR_EXISTS" >> $GITHUB_OUTPUT
           if [ "$PR_EXISTS" != "0" ]; then
-            PR_NUMBER=$(gh pr list --head ${{ github.ref_name }} --json number --jq '.[0].number')
+            PR_NUMBER=$(gh pr list --head "${{ github.ref_name }}" --json number --jq '.[0].number')
             echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
           fi
         env:
@@ -35,52 +35,39 @@ jobs:
         id: create-pr
         if: steps.check-pr.outputs.pr_exists == '0'
         run: |
-          # コミットメッセージから最初の行を取得（タイトル用）
-          TITLE=$(echo "${{ github.event.head_commit.message }}" | head -n 1)
-
-          # PR本文を生成
-          BODY="## Summary
-          Auto-created PR from branch \`${{ github.ref_name }}\`
-
-          ### Commits
-          ${{ github.event.head_commit.message }}
-
-          ---
-          *This PR was automatically created and will be auto-merged by GitHub Actions*"
+          BRANCH_NAME="${{ github.ref_name }}"
+          TITLE="Auto-merge: ${BRANCH_NAME}"
 
           PR_URL=$(gh pr create \
-            --title "$TITLE" \
-            --body "$BODY" \
+            --title "${TITLE}" \
+            --body "Auto-created PR from branch \`${BRANCH_NAME}\`. This PR will be automatically merged." \
             --base main \
-            --head ${{ github.ref_name }})
+            --head "${BRANCH_NAME}")
 
-          PR_NUMBER=$(echo "$PR_URL" | grep -o '[0-9]*$')
+          PR_NUMBER=$(echo "$PR_URL" | grep -oE '[0-9]+$')
           echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+          echo "Created PR #$PR_NUMBER"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Get PR number
-        id: get-pr
+      - name: Auto-merge PR
         run: |
+          # PR番号を取得
           if [ -n "${{ steps.create-pr.outputs.pr_number }}" ]; then
-            echo "pr_number=${{ steps.create-pr.outputs.pr_number }}" >> $GITHUB_OUTPUT
+            PR_NUMBER="${{ steps.create-pr.outputs.pr_number }}"
           else
-            echo "pr_number=${{ steps.check-pr.outputs.pr_number }}" >> $GITHUB_OUTPUT
+            PR_NUMBER="${{ steps.check-pr.outputs.pr_number }}"
           fi
 
-      - name: Auto-merge PR
-        if: steps.get-pr.outputs.pr_number != ''
-        run: |
-          PR_NUMBER=${{ steps.get-pr.outputs.pr_number }}
+          if [ -z "$PR_NUMBER" ]; then
+            echo "No PR number found, skipping merge"
+            exit 0
+          fi
+
           echo "Merging PR #$PR_NUMBER..."
 
-          # PRをマージ
-          gh pr merge $PR_NUMBER \
-            --merge \
-            --auto \
-            --delete-branch || \
-          gh pr merge $PR_NUMBER \
-            --merge \
-            --delete-branch
+          # 直接マージ（--autoはブランチ保護ルールが必要なため使用しない）
+          gh pr merge "$PR_NUMBER" --merge --delete-branch
+          echo "PR #$PR_NUMBER merged successfully"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
