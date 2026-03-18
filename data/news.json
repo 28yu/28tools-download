@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-17T01:18:34.784232",
+  "lastUpdated": "2026-03-18T01:22:27.303502",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -30,6 +30,36 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "幽霊都市か、未来都市か｜中国資本が生んだマレーシアの巨大プロジェクト「フォレストシティ」の真実",
+      "link": "https://news.build-app.jp/article/38886/",
+      "description": "4つの人工島に100万人が暮らす未来都市として計画されたフォレストシティ。しかし、完成から数年が経った今、そこには異様な静けさが漂っている。......",
+      "publishedDate": "Tue, 17 Mar 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/01/260318_hirayama-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "清水建設のイノベーション拠点「温故創新の森 NOVARE」の脱炭素をDXで支援",
+      "link": "https://news.build-app.jp/article/39657/",
+      "description": "DX支援を手がける株式会社コアコンセプト・テクノロジー(本社：東京都豊島区、代表取締役社長CEO：金子 武史、以下「当社」）は、清水建設株式......",
+      "publishedDate": "Tue, 17 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/03/vWGMxMMqWBd4Z5p1648368575-130x70.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "東大卒4割のAIスタートアップが建設業を変える──燈、創業5年で評価額1000億円の衝撃",
+      "link": "https://axconstdx.com/2026/03/17/%e6%9d%b1%e5%a4%a7%e5%8d%924%e5%89%b2%e3%81%aeai%e3%82%b9%e3%82%bf%e3%83%bc%e3%83%88%e3%82%a2%e3%83%83%e3%83%97%e3%81%8c%e5%bb%ba%e8%a8%ad%e6%a5%ad%e3%82%92%e5%a4%89%e3%81%88%e3%82%8b%e2%94%80/?utm_source=rss&utm_medium=rss&utm_campaign=%25e6%259d%25b1%25e5%25a4%25a7%25e5%258d%25924%25e5%2589%25b2%25e3%2581%25aeai%25e3%2582%25b9%25e3%2582%25bf%25e3%2583%25bc%25e3%2583%2588%25e3%2582%25a2%25e3%2583%2583%25e3%2583%2597%25e3%2581%258c%25e5%25bb%25ba%25e8%25a8%25ad%25e6%25a5%25ad%25e3%2582%2592%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b%25e2%2594%2580",
+      "description": "「建設業界のDXは難しい」と、あきらめかけていませんか。そんな常識を、創業5年・評価額1,000億円超のAIスタートアップが静かに塗り替えています。この記事を読めば、現場課題を解決するAIの使い方と、日本の建設業が変わり [...] <p>The post 東大卒4割のAIスタートアップが建設業を変える──燈、創業5年で評価額1000億円の衝撃 first appeared on 生成AIと建設D...",
+      "publishedDate": "Tue, 17 Mar 2026 06:51:31 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/featured_image_1200x630-1024x538.jpg",
+      "language": "ja"
     },
     {
       "title": "ソフトバンクG株が最安値圏へ——Stargate頓挫が暴いた「ビジョン経営の限界」",
@@ -69,26 +99,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/3422461_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "保護中: 「LLM×世界モデル」という二つの異なるAIパラダイムの併存と現場実装の臨界点",
-      "link": "https://news.build-app.jp/article/39594/",
-      "description": "この投稿はパスワードで保護されているため抜粋文はありません。...",
-      "publishedDate": "Thu, 12 Mar 2026 07:12:17 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260408_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "東京メトロ銀座線渋谷駅｜リニューアル後はどこ？乗り換えポイント解説",
-      "link": "https://news.build-app.jp/article/39574/",
-      "description": "トレンドワード：東京メトロ銀座線渋谷駅 「東京メトロ銀座線渋谷駅」についてピックアップします。東京メトロ銀座線渋谷駅は、2020年のリニュー......",
-      "publishedDate": "Thu, 12 Mar 2026 05:27:55 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/2218294843247acc864a2e4cb43837ec-130x82.png",
       "language": "ja"
     },
     {
@@ -139,16 +149,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/eyecatch-5-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "OpenAI×4大コンサルのFrontier Alliances──企業AI実装の標準形が変わる",
-      "link": "https://axconstdx.com/2026/02/28/openaix4%e5%a4%a7%e3%82%b3%e3%83%b3%e3%82%b5%e3%83%ab%e3%81%aefrontier-alliances%e2%94%80%e2%94%80%e4%bc%81%e6%a5%adai%e5%ae%9f%e8%a3%85%e3%81%ae%e6%a8%99%e6%ba%96%e5%bd%a2%e3%81%8c%e5%a4%89/?utm_source=rss&utm_medium=rss&utm_campaign=openaix4%25e5%25a4%25a7%25e3%2582%25b3%25e3%2583%25b3%25e3%2582%25b5%25e3%2583%25ab%25e3%2581%25aefrontier-alliances%25e2%2594%2580%25e2%2594%2580%25e4%25bc%2581%25e6%25a5%25adai%25e5%25ae%259f%25e8%25a3%2585%25e3%2581%25ae%25e6%25a8%2599%25e6%25ba%2596%25e5%25bd%25a2%25e3%2581%258c%25e5%25a4%2589",
-      "description": "「生成AIを導入したのに、なぜか現場で使われない」――そんな悩みを抱えていませんか。その答えは、ツールではなく体制にあります。本記事では、OpenAIと世界最大級のコンサル4社が組んだ理由と、AIを本番業務に根付かせるた [...] <p>The post OpenAI×4大コンサルのFrontier Alliances──企業AI実装の標準形が変わる first appeared on 生成AI...",
-      "publishedDate": "Sat, 28 Feb 2026 09:05:50 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/02/optimized_image_1200x630-1024x538.jpg",
       "language": "ja"
     },
     {
