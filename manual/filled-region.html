@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塗潰し領域 分割・統合 - 28 Tools Manual</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/manual.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="manual-page">
+    <!-- 共通ヘッダー -->
+    <div id="header-container"></div>
+
+    <!-- サイドバーナビゲーション -->
+    <div id="sidebar-container"></div>
+
+    <!-- マニュアルコンテンツ -->
+    <div class="manual-container">
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <a href="../index.html" data-lang-key="breadcrumb-home">ホーム</a>
+            <span class="separator">›</span>
+            <span data-lang-key="manual-filled-region-title">塗潰し領域 分割・統合</span>
+        </nav>
+
+        <!-- 機能タイトル -->
+        <div class="manual-header">
+            <div class="icon-wrapper">
+                <img src="../images/icons/filled_region_64.png" alt="Filled Region Icon" class="feature-icon">
+            </div>
+            <h1 class="manual-title" data-lang-key="manual-filled-region-title">塗潰し領域 分割・統合</h1>
+            <p class="manual-subtitle" data-lang-key="manual-filled-region-subtitle">塗り潰し領域を個別に分割または1つに統合</p>
+        </div>
+
+        <!-- 機能概要 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
+            <div class="content-box">
+                <p data-lang-key="manual-filled-region-overview">
+                    配置済みの塗り潰し領域を分割または統合する機能です。分割では、1つの塗り潰し領域が複数の独立したエリア（境界）を含んでいる場合、それぞれを個別の独立した塗り潰し領域に分離します。統合では、複数の別々の塗り潰し領域を1つの領域にまとめます。
+                </p>
+            </div>
+        </section>
+
+        <!-- 主な特徴 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-key-features">主な特徴</h2>
+            <div class="content-box">
+                <ul class="feature-list">
+                    <li data-lang-key="manual-filled-region-feature1">選択した領域の状態に応じて分割/統合の可否を自動判定</li>
+                    <li data-lang-key="manual-filled-region-feature2">分割時は元のパターンを維持</li>
+                    <li data-lang-key="manual-filled-region-feature3">統合時はパターンを自由に選択可能（プロジェクト内の全パターンから選択）</li>
+                    <li data-lang-key="manual-filled-region-feature4">選択情報（領域数、エリア数）をリアルタイム表示</li>
+                    <li data-lang-key="manual-filled-region-feature5">エラー時はトランザクション自動ロールバック</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 使い方 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
+
+            <div class="step-box">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 data-lang-key="manual-filled-region-step1-title">塗り潰し領域を選択</h3>
+                    <p data-lang-key="manual-filled-region-step1-desc">
+                        ビュー上で、分割したい領域（1つ以上）または統合したい領域（2つ以上）を選択します。
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 data-lang-key="manual-filled-region-step2-title">ボタンをクリック</h3>
+                    <p data-lang-key="manual-filled-region-step2-desc">
+                        リボンの「注釈・詳細」パネルから「塗潰し領域 分割･統合」をクリックします。
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3 data-lang-key="manual-filled-region-step3-title">操作を選択</h3>
+                    <p data-lang-key="manual-filled-region-step3-desc">
+                        ダイアログで操作を選択します。分割は複数エリアを持つ領域がある場合、統合は2つ以上の領域を選択している場合に選択可能です。
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3 data-lang-key="manual-filled-region-step4-title">（統合の場合）パターン選択</h3>
+                    <p data-lang-key="manual-filled-region-step4-desc">
+                        統合後の塗り潰しパターンをドロップダウンから選択します。選択した領域が同じパターンの場合は自動選択済みです。
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3 data-lang-key="manual-filled-region-step5-title">OKをクリック</h3>
+                    <p data-lang-key="manual-filled-region-step5-desc">
+                        処理を実行します。完了すると結果メッセージが表示されます。
+                    </p>
+                </div>
+            </div>
+
+            <!-- スクリーンショット用プレースホルダー -->
+            <div class="image-placeholder">
+                <p data-lang-key="image-placeholder-text">📷 スクリーンショット画像をここに追加予定</p>
+            </div>
+        </section>
+
+        <!-- 活用シーン -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-usecases">活用シーン</h2>
+            <div class="usecase-grid">
+                <div class="usecase-card">
+                    <div class="usecase-icon">🚀</div>
+                    <h3 data-lang-key="manual-filled-region-usecase1-title">仕上げ図面の整理</h3>
+                    <p data-lang-key="manual-filled-region-usecase1-desc">
+                        複数エリアに分かれた塗り潰し領域を個別管理したい場合に、分割して整理できます。
+                    </p>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-icon">📋</div>
+                    <h3 data-lang-key="manual-filled-region-usecase2-title">パターン統一</h3>
+                    <p data-lang-key="manual-filled-region-usecase2-desc">
+                        バラバラに作成された塗り潰し領域を1つに統合し、パターンを統一できます。
+                    </p>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-icon">⏱️</div>
+                    <h3 data-lang-key="manual-filled-region-usecase3-title">編集の効率化</h3>
+                    <p data-lang-key="manual-filled-region-usecase3-desc">
+                        統合することで1つの要素として管理でき、移動や削除などの編集が効率的になります。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-tips">Tips</h2>
+            <div class="tips-box">
+                <div class="tip-item">
+                    <span class="tip-icon">💡</span>
+                    <p data-lang-key="manual-filled-region-tip1">
+                        <strong data-lang-key="manual-filled-region-tip1-strong">自動判定：</strong>選択した領域の状態に応じて、分割・統合の可否がダイアログに自動表示されます。
+                    </p>
+                </div>
+                <div class="tip-item">
+                    <span class="tip-icon">💡</span>
+                    <p data-lang-key="manual-filled-region-tip2">
+                        <strong data-lang-key="manual-filled-region-tip2-strong">パターン維持：</strong>分割時は元の塗り潰しパターンがそのまま維持されるため、見た目は変わりません。
+                    </p>
+                </div>
+                <div class="tip-item">
+                    <span class="tip-icon">💡</span>
+                    <p data-lang-key="manual-filled-region-tip3">
+                        <strong data-lang-key="manual-filled-region-tip3-strong">パターン変更：</strong>統合時にパターンを変更できるため、複数領域のパターン一括変更にも活用できます。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 注意事項 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-notes">注意事項</h2>
+            <div class="notes-box warning">
+                <div class="note-item">
+                    <span class="note-icon">⚠️</span>
+                    <p data-lang-key="manual-filled-region-note1">
+                        分割するには、塗り潰し領域が複数の独立したエリア（境界）を含んでいる必要があります。
+                    </p>
+                </div>
+                <div class="note-item">
+                    <span class="note-icon">⚠️</span>
+                    <p data-lang-key="manual-filled-region-note2">
+                        統合するには、2つ以上の塗り潰し領域を選択する必要があります。
+                    </p>
+                </div>
+                <div class="note-item">
+                    <span class="note-icon">⚠️</span>
+                    <p data-lang-key="manual-filled-region-note3">
+                        エラーが発生した場合、トランザクションが自動ロールバックされ、元の状態に戻ります。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ナビゲーション -->
+        <div class="manual-navigation">
+            <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
+                ← ホームに戻る
+            </a>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <!-- SNSシェアボタン -->
+            <div class="share-buttons">
+                <p class="share-text" data-lang-key="footer-share">このページをシェア：</p>
+                <div class="share-icons">
+                    <a href="#" class="share-btn twitter" data-sns="twitter" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn facebook" data-sns="facebook" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn line" data-sns="line" aria-label="LINE">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn hatena" data-sns="hatena" aria-label="はてなブックマーク">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.47 0C22.42 0 24 1.58 24 3.53v16.94c0 1.95-1.58 3.53-3.53 3.53H3.53C1.58 24 0 22.42 0 20.47V3.53C0 1.58 1.58 0 3.53 0h16.94zM7.708 5.522H5.522v7.827c0 1.283.818 2.006 2.118 2.006s2.117-.723 2.117-2.006V5.522H7.708zm10.7 6.2c0-1.345-.696-2.285-2.02-2.585.897-.38 1.527-1.104 1.527-2.198 0-1.72-1.33-2.417-3.292-2.417H11.97v10.016h2.754c1.864 0 3.685-.65 3.685-2.815zm-4.175-1.35h1.29c.696 0 1.13.354 1.13.952 0 .597-.434.95-1.13.95h-1.29V10.37zm0-3.23h1.113c.57 0 1.017.315 1.017.87 0 .552-.447.866-1.017.866h-1.114V7.142zm-8.17 10.29c.91 0 1.616.71 1.616 1.62 0 .907-.707 1.616-1.616 1.616-.91 0-1.616-.71-1.616-1.617s.707-1.62 1.616-1.62z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="site-footer-links">
+                <a href="../about.html" data-lang-key="footer-about">運営者情報</a>
+                <span class="footer-divider">|</span>
+                <a href="../contact.html" data-lang-key="footer-contact">お問い合わせ</a>
+                <span class="footer-divider">|</span>
+                <a href="../privacy.html" data-lang-key="footer-privacy">プライバシーポリシー</a>
+                <span class="footer-divider">|</span>
+                <a href="../terms.html" data-lang-key="footer-terms">利用規約</a>
+            </div>
+            <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
