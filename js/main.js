@@ -489,6 +489,16 @@ function initTranslations() {
             en: 'Import Excel edits back into Revit model',
             zh: '将Excel编辑内容写回Revit模型'
         },
+        'feature-filled-region-title': {
+            ja: '塗潰し領域 分割・統合',
+            en: 'Filled Region Split & Merge',
+            zh: '填充区域 分割与合并'
+        },
+        'feature-filled-region-desc': {
+            ja: '塗り潰し領域を個別に分割または1つに統合',
+            en: 'Split or merge filled regions',
+            zh: '将填充区域分割或合并'
+        },
         'version-title': {
             ja: 'Revitバージョンを選択',
             en: 'Select Revit Version',
@@ -882,9 +892,9 @@ function initTranslations() {
             zh: '功能区中显示"28 Tools"选项卡'
         },
         'install-step4-available': {
-            ja: '全11機能が利用可能',
-            en: 'All 11 features available',
-            zh: '所有 11 个功能都可用'
+            ja: '全12機能が利用可能',
+            en: 'All 12 features available',
+            zh: '所有 12 个功能都可用'
         },
         'install-step5-title': {
             ja: 'ダウンロードファイルの削除 ✅',
@@ -2802,6 +2812,177 @@ function initTranslations() {
     };
 
     // ========================================
+    // filled-region.html (塗潰し領域 分割・統合)
+    // ========================================
+    translations.filledRegion = {
+        'manual-filled-region-title': {
+            ja: '塗潰し領域 分割・統合',
+            en: 'Filled Region Split & Merge',
+            zh: '填充区域 分割与合并'
+        },
+        'manual-filled-region-subtitle': {
+            ja: '塗り潰し領域を個別に分割または1つに統合',
+            en: 'Split or merge filled regions',
+            zh: '将填充区域分割或合并'
+        },
+        'manual-filled-region-overview': {
+            ja: '配置済みの塗り潰し領域を分割または統合する機能です。分割では、1つの塗り潰し領域が複数の独立したエリア（境界）を含んでいる場合、それぞれを個別の独立した塗り潰し領域に分離します。統合では、複数の別々の塗り潰し領域を1つの領域にまとめます。',
+            en: 'This feature splits or merges placed filled regions. Split separates a single filled region containing multiple independent areas (boundaries) into individual filled regions. Merge combines multiple separate filled regions into one.',
+            zh: '此功能用于分割或合并已放置的填充区域。分割将包含多个独立区域（边界）的单个填充区域分离为独立的填充区域。合并将多个单独的填充区域合并为一个区域。'
+        },
+        'manual-filled-region-feature1': {
+            ja: '選択した領域の状態に応じて分割/統合の可否を自動判定',
+            en: 'Automatically determine split/merge availability based on selection state',
+            zh: '根据选择状态自动判定可否分割/合并'
+        },
+        'manual-filled-region-feature2': {
+            ja: '分割時は元のパターンを維持',
+            en: 'Original pattern preserved when splitting',
+            zh: '分割时保持原始图案'
+        },
+        'manual-filled-region-feature3': {
+            ja: '統合時はパターンを自由に選択可能（プロジェクト内の全パターンから選択）',
+            en: 'Freely select pattern when merging (choose from all project patterns)',
+            zh: '合并时可自由选择图案（从项目内所有图案中选择）'
+        },
+        'manual-filled-region-feature4': {
+            ja: '選択情報（領域数、エリア数）をリアルタイム表示',
+            en: 'Real-time display of selection info (region count, area count)',
+            zh: '实时显示选择信息（区域数、面积数）'
+        },
+        'manual-filled-region-feature5': {
+            ja: 'エラー時はトランザクション自動ロールバック',
+            en: 'Automatic transaction rollback on error',
+            zh: '错误时自动回滚事务'
+        },
+        'manual-filled-region-step1-title': {
+            ja: '塗り潰し領域を選択',
+            en: 'Select Filled Regions',
+            zh: '选择填充区域'
+        },
+        'manual-filled-region-step1-desc': {
+            ja: 'ビュー上で、分割したい領域（1つ以上）または統合したい領域（2つ以上）を選択します。',
+            en: 'Select regions to split (1 or more) or merge (2 or more) on the view.',
+            zh: '在视图上选择要分割的区域（1个以上）或要合并的区域（2个以上）。'
+        },
+        'manual-filled-region-step2-title': {
+            ja: 'ボタンをクリック',
+            en: 'Click Button',
+            zh: '点击按钮'
+        },
+        'manual-filled-region-step2-desc': {
+            ja: 'リボンの「注釈・詳細」パネルから「塗潰し領域 分割･統合」をクリックします。',
+            en: 'Click "Filled Region Split & Merge" from the "Annotation & Detail" panel on the ribbon.',
+            zh: '从功能区的"注释·详细"面板中点击"填充区域 分割与合并"。'
+        },
+        'manual-filled-region-step3-title': {
+            ja: '操作を選択',
+            en: 'Select Operation',
+            zh: '选择操作'
+        },
+        'manual-filled-region-step3-desc': {
+            ja: 'ダイアログで操作を選択します。分割は複数エリアを持つ領域がある場合、統合は2つ以上の領域を選択している場合に選択可能です。',
+            en: 'Select the operation in the dialog. Split is available when regions contain multiple areas; Merge is available when 2 or more regions are selected.',
+            zh: '在对话框中选择操作。当区域包含多个面积时可选择分割；选择2个以上区域时可选择合并。'
+        },
+        'manual-filled-region-step4-title': {
+            ja: '（統合の場合）パターン選択',
+            en: '(For Merge) Select Pattern',
+            zh: '（合并时）选择图案'
+        },
+        'manual-filled-region-step4-desc': {
+            ja: '統合後の塗り潰しパターンをドロップダウンから選択します。選択した領域が同じパターンの場合は自動選択済みです。',
+            en: 'Select the fill pattern from the dropdown for the merged region. If selected regions share the same pattern, it is auto-selected.',
+            zh: '从下拉菜单中选择合并后的填充图案。如果所选区域具有相同图案，则自动选择。'
+        },
+        'manual-filled-region-step5-title': {
+            ja: 'OKをクリック',
+            en: 'Click OK',
+            zh: '点击确定'
+        },
+        'manual-filled-region-step5-desc': {
+            ja: '処理を実行します。完了すると結果メッセージが表示されます。',
+            en: 'Execute the operation. A result message is displayed upon completion.',
+            zh: '执行处理。完成后显示结果消息。'
+        },
+        'manual-filled-region-usecase1-title': {
+            ja: '仕上げ図面の整理',
+            en: 'Finish Drawing Organization',
+            zh: '装修图纸整理'
+        },
+        'manual-filled-region-usecase1-desc': {
+            ja: '複数エリアに分かれた塗り潰し領域を個別管理したい場合に、分割して整理できます。',
+            en: 'Split and organize filled regions with multiple areas for individual management.',
+            zh: '将包含多个区域的填充区域分割整理，以便单独管理。'
+        },
+        'manual-filled-region-usecase2-title': {
+            ja: 'パターン統一',
+            en: 'Pattern Unification',
+            zh: '图案统一'
+        },
+        'manual-filled-region-usecase2-desc': {
+            ja: 'バラバラに作成された塗り潰し領域を1つに統合し、パターンを統一できます。',
+            en: 'Merge separately created filled regions into one and unify the pattern.',
+            zh: '将分别创建的填充区域合并为一个并统一图案。'
+        },
+        'manual-filled-region-usecase3-title': {
+            ja: '編集の効率化',
+            en: 'Efficient Editing',
+            zh: '编辑效率化'
+        },
+        'manual-filled-region-usecase3-desc': {
+            ja: '統合することで1つの要素として管理でき、移動や削除などの編集が効率的になります。',
+            en: 'Manage as a single element after merging for more efficient editing, moving, and deleting.',
+            zh: '合并后作为单个元素管理，使移动和删除等编辑更加高效。'
+        },
+        'manual-filled-region-tip1': {
+            ja: '選択した領域の状態に応じて、分割・統合の可否がダイアログに自動表示されます。',
+            en: 'Split/merge availability is automatically shown in the dialog based on the selected regions.',
+            zh: '根据所选区域的状态，对话框中自动显示可否分割/合并。'
+        },
+        'manual-filled-region-tip1-strong': {
+            ja: '自動判定：',
+            en: 'Auto Detection:',
+            zh: '自动判定：'
+        },
+        'manual-filled-region-tip2': {
+            ja: '分割時は元の塗り潰しパターンがそのまま維持されるため、見た目は変わりません。',
+            en: 'The original fill pattern is preserved when splitting, so the appearance remains unchanged.',
+            zh: '分割时保持原始填充图案，因此外观不会改变。'
+        },
+        'manual-filled-region-tip2-strong': {
+            ja: 'パターン維持：',
+            en: 'Pattern Preserved:',
+            zh: '图案保持：'
+        },
+        'manual-filled-region-tip3': {
+            ja: '統合時にパターンを変更できるため、複数領域のパターン一括変更にも活用できます。',
+            en: 'You can change the pattern when merging, useful for batch pattern changes across multiple regions.',
+            zh: '合并时可更改图案，因此也可用于批量更改多个区域的图案。'
+        },
+        'manual-filled-region-tip3-strong': {
+            ja: 'パターン変更：',
+            en: 'Pattern Change:',
+            zh: '图案更改：'
+        },
+        'manual-filled-region-note1': {
+            ja: '分割するには、塗り潰し領域が複数の独立したエリア（境界）を含んでいる必要があります。',
+            en: 'To split, the filled region must contain multiple independent areas (boundaries).',
+            zh: '要分割，填充区域必须包含多个独立的区域（边界）。'
+        },
+        'manual-filled-region-note2': {
+            ja: '統合するには、2つ以上の塗り潰し領域を選択する必要があります。',
+            en: 'To merge, 2 or more filled regions must be selected.',
+            zh: '要合并，必须选择2个以上的填充区域。'
+        },
+        'manual-filled-region-note3': {
+            ja: 'エラーが発生した場合、トランザクションが自動ロールバックされ、元の状態に戻ります。',
+            en: 'If an error occurs, the transaction is automatically rolled back to the original state.',
+            zh: '如果发生错误，事务将自动回滚到原始状态。'
+        }
+    };
+
+    // ========================================
     // フッターリンク翻訳
     // ========================================
     translations.footerLinks = {
@@ -4151,6 +4332,7 @@ function initTranslations() {
         translations.beamTopColor,
         translations.excelExport,
         translations.excelImport,
+        translations.filledRegion,
         translations.footerLinks,
         translations.hatchPage,
         translations.privacyPage,
