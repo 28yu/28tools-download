@@ -353,6 +353,11 @@ function initTranslations() {
             en: 'Notes',
             zh: '注意事项'
         },
+        'section-key-features': {
+            ja: '主な特徴',
+            en: 'Key Features',
+            zh: '主要特点'
+        },
         'back-to-home': {
             ja: '← ホームに戻る',
             en: '← Back to Home',
@@ -433,6 +438,56 @@ function initTranslations() {
             ja: 'ビューのトリミング領域を反映',
             en: 'Copy and paste crop regions',
             zh: '复制并粘贴裁剪区域'
+        },
+        'feature-room-tag-title': {
+            ja: '部屋タグ自動配置',
+            en: 'Room Tag Auto Placement',
+            zh: '房间标签自动放置'
+        },
+        'feature-room-tag-desc': {
+            ja: 'ビューポートの部屋情報からタグを一括自動配置',
+            en: 'Auto-place room tags from viewport room data',
+            zh: '从视口房间信息自动批量放置标签'
+        },
+        'feature-beam-bottom-title': {
+            ja: '梁下端色分け',
+            en: 'Beam Bottom Level Coloring',
+            zh: '梁底标高着色'
+        },
+        'feature-beam-bottom-desc': {
+            ja: '梁の下端レベルを自動計算しパステルカラーで色分け',
+            en: 'Auto-calculate beam bottom levels and color-code with pastels',
+            zh: '自动计算梁底标高并用柔和颜色着色'
+        },
+        'feature-beam-top-title': {
+            ja: '梁天端色分け',
+            en: 'Beam Top Level Coloring',
+            zh: '梁顶标高着色'
+        },
+        'feature-beam-top-desc': {
+            ja: '梁の天端レベルをパステルカラーで色分け表示',
+            en: 'Color-code beam top levels with pastel colors',
+            zh: '用柔和颜色显示梁顶标高着色'
+        },
+        'feature-excel-export-title': {
+            ja: 'Excelエクスポート',
+            en: 'Excel Export',
+            zh: 'Excel导出'
+        },
+        'feature-excel-export-desc': {
+            ja: '要素パラメータをカテゴリ別にExcelへ書き出し',
+            en: 'Export element parameters to Excel by category',
+            zh: '按类别将元素参数导出到Excel'
+        },
+        'feature-excel-import-title': {
+            ja: 'Excelインポート',
+            en: 'Excel Import',
+            zh: 'Excel导入'
+        },
+        'feature-excel-import-desc': {
+            ja: 'Excelの編集内容をRevitモデルに書き戻し',
+            en: 'Import Excel edits back into Revit model',
+            zh: '将Excel编辑内容写回Revit模型'
         },
         'version-title': {
             ja: 'Revitバージョンを選択',
@@ -827,9 +882,9 @@ function initTranslations() {
             zh: '功能区中显示"28 Tools"选项卡'
         },
         'install-step4-available': {
-            ja: '全6機能が利用可能',
-            en: 'All 6 features available',
-            zh: '所有 6 个功能都可用'
+            ja: '全11機能が利用可能',
+            en: 'All 11 features available',
+            zh: '所有 11 个功能都可用'
         },
         'install-step5-title': {
             ja: 'ダウンロードファイルの削除 ✅',
@@ -1808,6 +1863,941 @@ function initTranslations() {
             ja: 'ビューテンプレートの設定や表示設定はコピーされません。トリミング領域の範囲情報のみがコピーされます。',
             en: 'View template settings or display settings are not copied. Only the crop region range information is copied.',
             zh: '不会复制视图模板设置或显示设置。仅复制裁剪区域范围信息。'
+        }
+    };
+
+    // ========================================
+    // room-tag.html (部屋タグ自動配置)
+    // ========================================
+    translations.roomTag = {
+        'manual-room-tag-title': {
+            ja: '部屋タグ自動配置',
+            en: 'Room Tag Auto Placement',
+            zh: '房间标签自动放置'
+        },
+        'manual-room-tag-subtitle': {
+            ja: 'ビューポートの部屋情報からタグを一括自動配置',
+            en: 'Auto-place room tags from viewport room data',
+            zh: '从视口房间信息自动批量放置标签'
+        },
+        'manual-room-tag-overview': {
+            ja: '図面シート上のビューポートから部屋情報を読み取り、指定したタグタイプ・間隔・配列数で新しいビューにルームタグを一括自動配置する機能です。仕上表の作成作業を大幅に効率化できます。',
+            en: 'This feature reads room information from viewports on drawing sheets and automatically places room tags in a new view with specified tag types, spacing, and grid arrangement. It greatly streamlines the creation of finish schedules.',
+            zh: '此功能从图纸视口读取房间信息，并按指定的标签类型、间距和排列数在新视图中自动批量放置房间标签。大大提高了装修表的创建效率。'
+        },
+        'manual-room-tag-feature1': {
+            ja: 'ビューポート内の部屋を自動検出・一覧表示',
+            en: 'Auto-detect and list rooms in viewport',
+            zh: '自动检测并列出视口中的房间'
+        },
+        'manual-room-tag-feature2': {
+            ja: 'タグの種類（ファミリ）を選択可能',
+            en: 'Selectable tag type (family)',
+            zh: '可选择标签类型（族）'
+        },
+        'manual-room-tag-feature3': {
+            ja: 'グリッド配列（行数・間隔）を自由に設定',
+            en: 'Freely configure grid layout (rows and spacing)',
+            zh: '自由设置网格排列（行数和间距）'
+        },
+        'manual-room-tag-feature4': {
+            ja: '配置プレビューをリアルタイムで確認',
+            en: 'Real-time placement preview',
+            zh: '实时预览放置效果'
+        },
+        'manual-room-tag-feature5': {
+            ja: '平面図 / 天井伏図 のビューファミリタイプを選択可能',
+            en: 'Selectable view family type (Floor Plan / Ceiling Plan)',
+            zh: '可选择视图族类型（平面图/天花板平面图）'
+        },
+        'manual-room-tag-feature6': {
+            ja: '部屋の順番変更・除外が可能',
+            en: 'Reorder or exclude rooms',
+            zh: '可更改房间顺序或排除房间'
+        },
+        'manual-room-tag-step1-title': {
+            ja: '図面シートを開く',
+            en: 'Open Drawing Sheet',
+            zh: '打开图纸'
+        },
+        'manual-room-tag-step1-desc': {
+            ja: '部屋が配置されたビューポートがあるシートを表示します。',
+            en: 'Display the sheet containing viewports with rooms placed.',
+            zh: '显示包含已放置房间的视口的图纸。'
+        },
+        'manual-room-tag-step2-title': {
+            ja: 'ボタンをクリック',
+            en: 'Click Button',
+            zh: '点击按钮'
+        },
+        'manual-room-tag-step2-desc': {
+            ja: 'リボンの「注釈・詳細」パネルから「部屋タグ 自動配置」をクリックします。',
+            en: 'Click "Room Tag Auto Placement" from the "Annotation & Detail" panel on the ribbon.',
+            zh: '从功能区的"注释·详细"面板中点击"房间标签 自动放置"。'
+        },
+        'manual-room-tag-step3-title': {
+            ja: 'ビューポートを選択',
+            en: 'Select Viewport',
+            zh: '选择视口'
+        },
+        'manual-room-tag-step3-desc': {
+            ja: 'シート上のビューポートをクリックして選択します。',
+            en: 'Click to select a viewport on the sheet.',
+            zh: '点击选择图纸上的视口。'
+        },
+        'manual-room-tag-step4-title': {
+            ja: '設定ダイアログ',
+            en: 'Settings Dialog',
+            zh: '设置对话框'
+        },
+        'manual-room-tag-step4-desc': {
+            ja: 'ビュー名（自動生成、編集可能）、ビューファミリタイプ（平面図/天井伏図）、タグファミリタイプ、タグの間隔（mm）、行数、部屋リスト（順番変更・除外）を設定します。',
+            en: 'Configure view name (auto-generated, editable), view family type (Floor Plan/Ceiling Plan), tag family type, tag spacing (mm), number of rows, and room list (reorder/exclude).',
+            zh: '设置视图名称（自动生成，可编辑）、视图族类型（平面图/天花板平面图）、标签族类型、标签间距（mm）、行数、房间列表（排序/排除）。'
+        },
+        'manual-room-tag-step5-title': {
+            ja: 'OKをクリック',
+            en: 'Click OK',
+            zh: '点击确定'
+        },
+        'manual-room-tag-step5-desc': {
+            ja: '新しいビューが作成され、タグが自動配置されます。',
+            en: 'A new view is created and tags are automatically placed.',
+            zh: '创建新视图并自动放置标签。'
+        },
+        'manual-room-tag-step6-title': {
+            ja: '完了',
+            en: 'Complete',
+            zh: '完成'
+        },
+        'manual-room-tag-step6-desc': {
+            ja: '作成されたビュー名とタグ数が表示され、自動的にそのビューに切り替わります。',
+            en: 'The created view name and tag count are displayed, and the view is automatically switched.',
+            zh: '显示创建的视图名称和标签数量，并自动切换到该视图。'
+        },
+        'manual-room-tag-usecase1-title': {
+            ja: '仕上表の作成',
+            en: 'Finish Schedule Creation',
+            zh: '装修表制作'
+        },
+        'manual-room-tag-usecase1-desc': {
+            ja: '部屋タグを整列配置して、仕上表ビューを効率的に作成できます。',
+            en: 'Create finish schedule views efficiently by aligning room tags.',
+            zh: '通过排列房间标签高效创建装修表视图。'
+        },
+        'manual-room-tag-usecase2-title': {
+            ja: '部屋一覧の整理',
+            en: 'Room List Organization',
+            zh: '房间列表整理'
+        },
+        'manual-room-tag-usecase2-desc': {
+            ja: '複数の部屋タグをグリッド状に整列し、見やすい一覧表を作成できます。',
+            en: 'Align multiple room tags in a grid to create a clear overview list.',
+            zh: '将多个房间标签网格排列，创建清晰的一览表。'
+        },
+        'manual-room-tag-usecase3-title': {
+            ja: '作業時間の短縮',
+            en: 'Time Saving',
+            zh: '节省时间'
+        },
+        'manual-room-tag-usecase3-desc': {
+            ja: '手動でタグを1つずつ配置する手間を省き、大幅に時間を短縮できます。',
+            en: 'Save significant time by eliminating the need to place tags one by one manually.',
+            zh: '省去手动逐个放置标签的麻烦，大幅节省时间。'
+        },
+        'manual-room-tag-tip1': {
+            ja: '行数や間隔を変更すると、リアルタイムでプレビューが更新されます。最適な配置を確認してから実行できます。',
+            en: 'Preview updates in real-time when you change rows or spacing. Confirm the optimal layout before executing.',
+            zh: '更改行数或间距时，预览会实时更新。可以在执行前确认最佳布局。'
+        },
+        'manual-room-tag-tip1-strong': {
+            ja: 'プレビュー活用：',
+            en: 'Use Preview:',
+            zh: '使用预览：'
+        },
+        'manual-room-tag-tip2': {
+            ja: '部屋リストで順番を変更することで、タグの配置順序をカスタマイズできます。',
+            en: 'Customize the tag placement order by reordering rooms in the list.',
+            zh: '通过在列表中更改房间顺序来自定义标签放置顺序。'
+        },
+        'manual-room-tag-tip2-strong': {
+            ja: '部屋の順番変更：',
+            en: 'Reorder Rooms:',
+            zh: '更改房间顺序：'
+        },
+        'manual-room-tag-tip3': {
+            ja: '部屋リストからチェックを外すことで、特定の部屋をタグ配置対象から除外できます。',
+            en: 'Exclude specific rooms from tag placement by unchecking them in the room list.',
+            zh: '通过取消选中列表中的房间，将特定房间排除在标签放置范围之外。'
+        },
+        'manual-room-tag-tip3-strong': {
+            ja: '不要な部屋の除外：',
+            en: 'Exclude Rooms:',
+            zh: '排除房间：'
+        },
+        'manual-room-tag-note1': {
+            ja: 'ビューポート内に部屋が配置されていない場合は使用できません。',
+            en: 'Cannot be used if no rooms are placed in the viewport.',
+            zh: '如果视口中没有放置房间，则无法使用。'
+        },
+        'manual-room-tag-note2': {
+            ja: '新しいビューが自動作成されるため、不要な場合はビューを削除してください。',
+            en: 'A new view is automatically created. Delete it if not needed.',
+            zh: '会自动创建新视图。如果不需要，请删除该视图。'
+        },
+        'manual-room-tag-note3': {
+            ja: '図面シートがアクティブな状態で実行する必要があります。',
+            en: 'Must be executed with a drawing sheet as the active view.',
+            zh: '必须在图纸为活动视图的状态下执行。'
+        }
+    };
+
+    // ========================================
+    // beam-bottom-color.html (梁下端色分け)
+    // ========================================
+    translations.beamBottomColor = {
+        'manual-beam-bottom-title': {
+            ja: '梁下端色分け',
+            en: 'Beam Bottom Level Coloring',
+            zh: '梁底标高着色'
+        },
+        'manual-beam-bottom-subtitle': {
+            ja: '梁の下端レベルを自動計算しパステルカラーで色分け',
+            en: 'Auto-calculate beam bottom levels and color-code with pastel colors',
+            zh: '自动计算梁底标高并用柔和颜色着色'
+        },
+        'manual-beam-bottom-overview': {
+            ja: '天井伏図上の梁について、梁の下端レベル（＝階高＋天端オフセット−梁高さ）を自動計算し、レベル値ごとにパステルカラーで色分け表示する機能です。フィルタの自動作成、梁上へのラベル表示、凡例ビューの生成までを一括で行います。',
+            en: 'This feature automatically calculates the beam bottom level (= story height + top offset - beam height) for beams in ceiling plans, and color-codes them by level value using pastel colors. It handles filter creation, label placement on beams, and legend view generation all at once.',
+            zh: '此功能自动计算天花板平面图中梁的底部标高（=层高+顶部偏移-梁高），并按标高值用柔和颜色着色。一次性完成过滤器创建、梁上标签放置和图例视图生成。'
+        },
+        'manual-beam-bottom-feature1': {
+            ja: '天井伏図専用の梁下端レベル自動計算',
+            en: 'Automatic beam bottom level calculation for ceiling plans',
+            zh: '天花板平面图专用梁底标高自动计算'
+        },
+        'manual-beam-bottom-feature2': {
+            ja: 'ファミリ毎に異なるパラメータを選択可能（梁高さ・天端レベル）',
+            en: 'Selectable parameters per family (beam height, top level)',
+            zh: '每个族可选择不同的参数（梁高·顶部标高）'
+        },
+        'manual-beam-bottom-feature3': {
+            ja: 'パラメータ候補を自動検出（検出数表示）',
+            en: 'Auto-detect parameter candidates (with count display)',
+            zh: '自动检测参数候选项（显示检测数量）'
+        },
+        'manual-beam-bottom-feature4': {
+            ja: '10色パステルカラーによる色分けフィルタ自動生成',
+            en: 'Auto-generate color-coding filters with 10 pastel colors',
+            zh: '使用10种柔和颜色自动生成着色过滤器'
+        },
+        'manual-beam-bottom-feature5': {
+            ja: '梁上に下端レベル値のラベル（TextNote）を自動配置',
+            en: 'Auto-place bottom level labels (TextNote) on beams',
+            zh: '在梁上自动放置底部标高标签（TextNote）'
+        },
+        'manual-beam-bottom-feature6': {
+            ja: '凡例（製図ビュー）を自動生成',
+            en: 'Auto-generate legend (drafting view)',
+            zh: '自动生成图例（制图视图）'
+        },
+        'manual-beam-bottom-feature7': {
+            ja: 'エラー梁は赤色で表示',
+            en: 'Error beams displayed in red',
+            zh: '错误梁显示为红色'
+        },
+        'manual-beam-bottom-step1-title': {
+            ja: '天井伏図を開く',
+            en: 'Open Ceiling Plan',
+            zh: '打开天花板平面图'
+        },
+        'manual-beam-bottom-step1-desc': {
+            ja: '梁が表示されている天井伏図をアクティブにします。',
+            en: 'Activate the ceiling plan where beams are displayed.',
+            zh: '激活显示梁的天花板平面图。'
+        },
+        'manual-beam-bottom-step2-title': {
+            ja: 'ボタンをクリック',
+            en: 'Click Button',
+            zh: '点击按钮'
+        },
+        'manual-beam-bottom-step2-desc': {
+            ja: 'リボンの「構造」パネルから「梁下端 色分け」をクリックします。',
+            en: 'Click "Beam Bottom Coloring" from the "Structure" panel on the ribbon.',
+            zh: '从功能区的"结构"面板中点击"梁底 着色"。'
+        },
+        'manual-beam-bottom-step3-title': {
+            ja: 'ステップ1：レベル設定',
+            en: 'Step 1: Level Settings',
+            zh: '步骤1：标高设置'
+        },
+        'manual-beam-bottom-step3-desc': {
+            ja: '参照レベル（自動取得）を確認し、上位レベルを選択、文字タイプを選択します。',
+            en: 'Confirm the reference level (auto-detected), select the upper level, and choose text type.',
+            zh: '确认参照标高（自动获取），选择上层标高，选择文字类型。'
+        },
+        'manual-beam-bottom-step4-title': {
+            ja: 'ステップ2：梁高さパラメータ選択',
+            en: 'Step 2: Beam Height Parameter Selection',
+            zh: '步骤2：梁高参数选择'
+        },
+        'manual-beam-bottom-step4-desc': {
+            ja: 'ファミリ毎に梁の高さパラメータを選択します。候補はラジオボタン、その他はComboBoxから選択できます。',
+            en: 'Select beam height parameter for each family. Candidates are shown as radio buttons, others via ComboBox.',
+            zh: '为每个族选择梁高参数。候选项显示为单选按钮，其他通过ComboBox选择。'
+        },
+        'manual-beam-bottom-step5-title': {
+            ja: 'ステップ3：天端レベルパラメータ選択',
+            en: 'Step 3: Top Level Parameter Selection',
+            zh: '步骤3：顶部标高参数选择'
+        },
+        'manual-beam-bottom-step5-desc': {
+            ja: 'ファミリ毎に天端レベルパラメータを選択します。',
+            en: 'Select top level parameter for each family.',
+            zh: '为每个族选择顶部标高参数。'
+        },
+        'manual-beam-bottom-step6-title': {
+            ja: 'ステップ4：処理確認・実行',
+            en: 'Step 4: Confirm and Execute',
+            zh: '步骤4：确认处理并执行'
+        },
+        'manual-beam-bottom-step6-desc': {
+            ja: '処理内容を確認し、「実行」をクリックします。梁が色分けされ、ラベルと凡例ビューが生成されます。',
+            en: 'Confirm the processing details and click "Execute". Beams will be color-coded, and labels and legend view will be generated.',
+            zh: '确认处理内容并点击"执行"。梁将被着色，并生成标签和图例视图。'
+        },
+        'manual-beam-bottom-usecase1-title': {
+            ja: '天井高さの確認',
+            en: 'Ceiling Height Verification',
+            zh: '天花板高度确认'
+        },
+        'manual-beam-bottom-usecase1-desc': {
+            ja: '梁下端のレベルを視覚的に確認し、天井高さの干渉チェックに活用できます。',
+            en: 'Visually check beam bottom levels to verify ceiling height clearances.',
+            zh: '通过可视化确认梁底标高，用于天花板高度干涉检查。'
+        },
+        'manual-beam-bottom-usecase2-title': {
+            ja: '設備調整',
+            en: 'MEP Coordination',
+            zh: '设备协调'
+        },
+        'manual-beam-bottom-usecase2-desc': {
+            ja: '空調・電気・衛生設備のルーティング計画時に、梁下端の位置を把握できます。',
+            en: 'Understand beam bottom positions when planning HVAC, electrical, and plumbing routes.',
+            zh: '在规划暖通、电气、卫生设备路由时，可以了解梁底位置。'
+        },
+        'manual-beam-bottom-usecase3-title': {
+            ja: '図面レビュー',
+            en: 'Drawing Review',
+            zh: '图纸审查'
+        },
+        'manual-beam-bottom-usecase3-desc': {
+            ja: '色分けにより、梁レベルの異常値を素早く発見できます。',
+            en: 'Quickly identify abnormal beam level values through color-coding.',
+            zh: '通过颜色区分，快速发现梁标高异常值。'
+        },
+        'manual-beam-bottom-tip1': {
+            ja: '梁ファミリのパラメータを自動で検出し、候補を表示します。検出数も確認できます。',
+            en: 'Beam family parameters are auto-detected and displayed as candidates. Detection counts are also shown.',
+            zh: '自动检测梁族参数并显示候选项。还可以确认检测数量。'
+        },
+        'manual-beam-bottom-tip1-strong': {
+            ja: 'パラメータ自動検出：',
+            en: 'Auto Parameter Detection:',
+            zh: '参数自动检测：'
+        },
+        'manual-beam-bottom-tip2': {
+            ja: '自動生成された凡例ビューをシートに配置することで、色分けの意味を明確にできます。',
+            en: 'Place the auto-generated legend view on sheets to clarify the meaning of color-coding.',
+            zh: '将自动生成的图例视图放置在图纸上，明确着色的含义。'
+        },
+        'manual-beam-bottom-tip2-strong': {
+            ja: '凡例の活用：',
+            en: 'Use Legend:',
+            zh: '使用图例：'
+        },
+        'manual-beam-bottom-tip3': {
+            ja: '赤色で表示される梁はパラメータの取得に失敗した梁です。パラメータ設定を確認してください。',
+            en: 'Beams displayed in red failed to retrieve parameters. Please check the parameter settings.',
+            zh: '显示为红色的梁是参数获取失败的梁。请检查参数设置。'
+        },
+        'manual-beam-bottom-tip3-strong': {
+            ja: 'エラー梁の確認：',
+            en: 'Check Error Beams:',
+            zh: '检查错误梁：'
+        },
+        'manual-beam-bottom-note1': {
+            ja: '天井伏図でのみ使用できます。平面図では「梁天端色分け」をご利用ください。',
+            en: 'Can only be used in ceiling plans. For floor plans, use "Beam Top Level Coloring".',
+            zh: '仅可在天花板平面图中使用。平面图请使用"梁顶标高着色"。'
+        },
+        'manual-beam-bottom-note2': {
+            ja: 'ビューフィルタが自動作成されます。既存のフィルタと名前が重複する場合は上書きされます。',
+            en: 'View filters are automatically created. If names conflict with existing filters, they will be overwritten.',
+            zh: '会自动创建视图过滤器。如果与现有过滤器名称重复，将被覆盖。'
+        },
+        'manual-beam-bottom-note3': {
+            ja: '梁ファミリに適切なパラメータ（梁高さ・天端レベル）が設定されている必要があります。',
+            en: 'Beam families must have appropriate parameters (beam height, top level) configured.',
+            zh: '梁族必须设置适当的参数（梁高·顶部标高）。'
+        }
+    };
+
+    // ========================================
+    // beam-top-color.html (梁天端色分け)
+    // ========================================
+    translations.beamTopColor = {
+        'manual-beam-top-title': {
+            ja: '梁天端色分け',
+            en: 'Beam Top Level Coloring',
+            zh: '梁顶标高着色'
+        },
+        'manual-beam-top-subtitle': {
+            ja: '梁の天端レベルをパステルカラーで色分け表示',
+            en: 'Color-code beam top levels with pastel colors',
+            zh: '用柔和颜色显示梁顶标高着色'
+        },
+        'manual-beam-top-overview': {
+            ja: '平面ビューまたは構造伏図上の梁について、天端レベルパラメータの値をそのまま取得し、レベル値ごとにパステルカラーで色分け表示する機能です。梁下端色分けの簡略版で、計算式不要でパラメータ値を直接使用します。',
+            en: 'This feature retrieves the top level parameter value directly for beams in plan views or structural framing plans, and color-codes them by level value using pastel colors. It is a simplified version of Beam Bottom Coloring that uses parameter values directly without calculations.',
+            zh: '此功能直接获取平面视图或结构伏图中梁的顶部标高参数值，并按标高值用柔和颜色着色。这是梁底着色的简化版，无需计算直接使用参数值。'
+        },
+        'manual-beam-top-feature1': {
+            ja: '平面ビュー・構造伏図対応',
+            en: 'Supports plan views and structural framing plans',
+            zh: '支持平面视图和结构伏图'
+        },
+        'manual-beam-top-feature2': {
+            ja: 'パラメータ値を直接取得（複雑な計算不要）',
+            en: 'Direct parameter value retrieval (no complex calculations needed)',
+            zh: '直接获取参数值（无需复杂计算）'
+        },
+        'manual-beam-top-feature3': {
+            ja: 'ファミリ毎に天端レベルパラメータを選択可能',
+            en: 'Selectable top level parameter per family',
+            zh: '每个族可选择顶部标高参数'
+        },
+        'manual-beam-top-feature4': {
+            ja: 'パラメータ候補を自動検出（検出数表示）',
+            en: 'Auto-detect parameter candidates (with count display)',
+            zh: '自动检测参数候选项（显示检测数量）'
+        },
+        'manual-beam-top-feature5': {
+            ja: '10色パステルカラーによる色分けフィルタ自動生成',
+            en: 'Auto-generate color-coding filters with 10 pastel colors',
+            zh: '使用10种柔和颜色自动生成着色过滤器'
+        },
+        'manual-beam-top-feature6': {
+            ja: '梁上に天端レベル値のラベル（TextNote）を自動配置',
+            en: 'Auto-place top level labels (TextNote) on beams',
+            zh: '在梁上自动放置顶部标高标签（TextNote）'
+        },
+        'manual-beam-top-feature7': {
+            ja: '凡例（製図ビュー）を自動生成',
+            en: 'Auto-generate legend (drafting view)',
+            zh: '自动生成图例（制图视图）'
+        },
+        'manual-beam-top-feature8': {
+            ja: 'エラー梁は赤色で表示',
+            en: 'Error beams displayed in red',
+            zh: '错误梁显示为红色'
+        },
+        'manual-beam-top-step1-title': {
+            ja: '平面ビューまたは構造伏図を開く',
+            en: 'Open Plan View or Structural Plan',
+            zh: '打开平面视图或结构伏图'
+        },
+        'manual-beam-top-step1-desc': {
+            ja: '梁が表示されているビューをアクティブにします。',
+            en: 'Activate the view where beams are displayed.',
+            zh: '激活显示梁的视图。'
+        },
+        'manual-beam-top-step2-title': {
+            ja: 'ボタンをクリック',
+            en: 'Click Button',
+            zh: '点击按钮'
+        },
+        'manual-beam-top-step2-desc': {
+            ja: 'リボンの「構造」パネルから「梁天端 色分け」をクリックします。',
+            en: 'Click "Beam Top Coloring" from the "Structure" panel on the ribbon.',
+            zh: '从功能区的"结构"面板中点击"梁顶 着色"。'
+        },
+        'manual-beam-top-step3-title': {
+            ja: 'ステップ1：基本設定',
+            en: 'Step 1: Basic Settings',
+            zh: '步骤1：基本设置'
+        },
+        'manual-beam-top-step3-desc': {
+            ja: 'ビュー情報・参照レベル（自動取得）を確認し、文字タイプを選択します。',
+            en: 'Confirm view information and reference level (auto-detected), and select text type.',
+            zh: '确认视图信息和参照标高（自动获取），选择文字类型。'
+        },
+        'manual-beam-top-step4-title': {
+            ja: 'ステップ2：天端レベルパラメータ選択',
+            en: 'Step 2: Top Level Parameter Selection',
+            zh: '步骤2：顶部标高参数选择'
+        },
+        'manual-beam-top-step4-desc': {
+            ja: 'ファミリ毎に天端レベルパラメータを選択します。候補はラジオボタン、その他はComboBoxから選択できます。',
+            en: 'Select top level parameter for each family. Candidates are shown as radio buttons, others via ComboBox.',
+            zh: '为每个族选择顶部标高参数。候选项显示为单选按钮，其他通过ComboBox选择。'
+        },
+        'manual-beam-top-step5-title': {
+            ja: 'ステップ3：処理確認・実行',
+            en: 'Step 3: Confirm and Execute',
+            zh: '步骤3：确认处理并执行'
+        },
+        'manual-beam-top-step5-desc': {
+            ja: '処理内容を確認し、「実行」をクリックします。梁が色分けされ、ラベルと凡例ビューが生成されます。',
+            en: 'Confirm the processing details and click "Execute". Beams will be color-coded, and labels and legend view will be generated.',
+            zh: '确认处理内容并点击"执行"。梁将被着色，并生成标签和图例视图。'
+        },
+        'manual-beam-top-usecase1-title': {
+            ja: '構造レベルの確認',
+            en: 'Structural Level Verification',
+            zh: '结构标高确认'
+        },
+        'manual-beam-top-usecase1-desc': {
+            ja: '梁天端のレベルを色分けで視覚的に確認し、構造計画の整合性をチェックできます。',
+            en: 'Visually check beam top levels through color-coding to verify structural plan consistency.',
+            zh: '通过颜色区分可视化确认梁顶标高，检查结构计划的一致性。'
+        },
+        'manual-beam-top-usecase2-title': {
+            ja: '設計レビュー',
+            en: 'Design Review',
+            zh: '设计审查'
+        },
+        'manual-beam-top-usecase2-desc': {
+            ja: '梁天端の高さを一目で把握でき、設計レビュー時の確認作業を効率化します。',
+            en: 'Quickly grasp beam top heights at a glance, streamlining verification during design reviews.',
+            zh: '一目了然地把握梁顶高度，提高设计审查时的确认工作效率。'
+        },
+        'manual-beam-top-usecase3-title': {
+            ja: '異常値の発見',
+            en: 'Anomaly Detection',
+            zh: '异常值发现'
+        },
+        'manual-beam-top-usecase3-desc': {
+            ja: '色分けにより、意図しないレベル値の梁を素早く発見できます。',
+            en: 'Quickly find beams with unintended level values through color-coding.',
+            zh: '通过颜色区分，快速发现具有非预期标高值的梁。'
+        },
+        'manual-beam-top-tip1': {
+            ja: '天井伏図の場合は「梁下端色分け」、平面図・構造伏図の場合は「梁天端色分け」をご利用ください。',
+            en: 'Use "Beam Bottom Coloring" for ceiling plans, and "Beam Top Coloring" for floor plans and structural plans.',
+            zh: '天花板平面图请使用"梁底着色"，平面图·结构伏图请使用"梁顶着色"。'
+        },
+        'manual-beam-top-tip1-strong': {
+            ja: '梁下端との使い分け：',
+            en: 'Choose the Right Tool:',
+            zh: '与梁底的区分使用：'
+        },
+        'manual-beam-top-tip2': {
+            ja: '梁下端色分けと比べてステップが少なく、パラメータ値を直接使用するため操作がシンプルです。',
+            en: 'Fewer steps compared to Beam Bottom Coloring, with simpler operation using direct parameter values.',
+            zh: '与梁底着色相比步骤更少，直接使用参数值操作更简单。'
+        },
+        'manual-beam-top-tip2-strong': {
+            ja: 'シンプルな操作：',
+            en: 'Simple Operation:',
+            zh: '简单操作：'
+        },
+        'manual-beam-top-tip3': {
+            ja: '自動生成された凡例ビューをシートに配置して、色分けの意味を明示できます。',
+            en: 'Place the auto-generated legend view on sheets to clarify the meaning of color-coding.',
+            zh: '将自动生成的图例视图放置在图纸上，明确着色的含义。'
+        },
+        'manual-beam-top-tip3-strong': {
+            ja: '凡例の活用：',
+            en: 'Use Legend:',
+            zh: '使用图例：'
+        },
+        'manual-beam-top-note1': {
+            ja: '平面ビューまたは構造伏図でのみ使用できます。天井伏図では「梁下端色分け」をご利用ください。',
+            en: 'Can only be used in plan views or structural plans. For ceiling plans, use "Beam Bottom Level Coloring".',
+            zh: '仅可在平面视图或结构伏图中使用。天花板平面图请使用"梁底标高着色"。'
+        },
+        'manual-beam-top-note2': {
+            ja: 'ビューフィルタが自動作成されます。既存のフィルタと名前が重複する場合は上書きされます。',
+            en: 'View filters are automatically created. If names conflict with existing filters, they will be overwritten.',
+            zh: '会自动创建视图过滤器。如果与现有过滤器名称重复，将被覆盖。'
+        },
+        'manual-beam-top-note3': {
+            ja: '梁ファミリに天端レベルのパラメータが設定されている必要があります。',
+            en: 'Beam families must have a top level parameter configured.',
+            zh: '梁族必须设置顶部标高参数。'
+        }
+    };
+
+    // ========================================
+    // excel-export.html (Excelエクスポート)
+    // ========================================
+    translations.excelExport = {
+        'manual-excel-export-title': {
+            ja: 'Excelエクスポート',
+            en: 'Excel Export',
+            zh: 'Excel导出'
+        },
+        'manual-excel-export-subtitle': {
+            ja: '要素パラメータをカテゴリ別にExcelへ書き出し',
+            en: 'Export element parameters to Excel by category',
+            zh: '按类别将元素参数导出到Excel'
+        },
+        'manual-excel-export-overview': {
+            ja: 'Revitモデルの要素パラメータをカテゴリ別にExcelファイル（.xlsx）へ書き出す機能です。カテゴリ・パラメータの選択、出力列の並び替え、設定の保存/読込が可能です。',
+            en: 'This feature exports Revit model element parameters to Excel files (.xlsx) by category. It supports category/parameter selection, column reordering, and saving/loading settings.',
+            zh: '此功能按类别将Revit模型元素参数导出到Excel文件（.xlsx）。支持类别/参数选择、列排序和设置保存/加载。'
+        },
+        'manual-excel-export-feature1': {
+            ja: 'カテゴリ別にシート分割して出力',
+            en: 'Output split into sheets by category',
+            zh: '按类别分工作表输出'
+        },
+        'manual-excel-export-feature2': {
+            ja: 'インスタンスパラメータ（I-）/ タイプパラメータ（T-）を区別',
+            en: 'Distinguish instance (I-) and type (T-) parameters',
+            zh: '区分实例参数（I-）和类型参数（T-）'
+        },
+        'manual-excel-export-feature3': {
+            ja: '出力パラメータと列順をドラッグ＆ドロップ感覚で選択・並替え',
+            en: 'Select and reorder output parameters with drag-and-drop style interface',
+            zh: '以拖放方式选择和排列输出参数及列顺序'
+        },
+        'manual-excel-export-feature4': {
+            ja: 'カテゴリ・パラメータの検索フィルタ',
+            en: 'Search filter for categories and parameters',
+            zh: '类别和参数搜索过滤器'
+        },
+        'manual-excel-export-feature5': {
+            ja: '設定の保存・読込・リセット（JSON形式）',
+            en: 'Save, load, and reset settings (JSON format)',
+            zh: '设置保存·加载·重置（JSON格式）'
+        },
+        'manual-excel-export-feature6': {
+            ja: '数値は数値型で書き込み（Excel警告なし）',
+            en: 'Numbers written as numeric type (no Excel warnings)',
+            zh: '数值以数字类型写入（无Excel警告）'
+        },
+        'manual-excel-export-feature7': {
+            ja: 'ヘッダー行に緑背景＋白文字＋オートフィルタ自動設定',
+            en: 'Header row with green background, white text, and auto-filter',
+            zh: '表头行绿色背景+白色文字+自动筛选自动设置'
+        },
+        'manual-excel-export-feature8': {
+            ja: 'エクスポート後に自動でExcelファイルを開く',
+            en: 'Automatically open Excel file after export',
+            zh: '导出后自动打开Excel文件'
+        },
+        'manual-excel-export-step1-title': {
+            ja: 'Revitモデルを開く',
+            en: 'Open Revit Model',
+            zh: '打开Revit模型'
+        },
+        'manual-excel-export-step1-desc': {
+            ja: 'エクスポートしたい要素が含まれるモデルをアクティブにします。',
+            en: 'Activate the model containing the elements you want to export.',
+            zh: '激活包含要导出元素的模型。'
+        },
+        'manual-excel-export-step2-title': {
+            ja: 'ボタンをクリック',
+            en: 'Click Button',
+            zh: '点击按钮'
+        },
+        'manual-excel-export-step2-desc': {
+            ja: 'リボンの「Excel連携」パネルから「Excel エクスポート」をクリックします。',
+            en: 'Click "Excel Export" from the "Excel Integration" panel on the ribbon.',
+            zh: '从功能区的"Excel联动"面板中点击"Excel 导出"。'
+        },
+        'manual-excel-export-step3-title': {
+            ja: 'カテゴリ選択',
+            en: 'Select Categories',
+            zh: '选择类别'
+        },
+        'manual-excel-export-step3-desc': {
+            ja: '左側のカテゴリリストからエクスポート対象を選択します。チェックボックスで選択でき、検索フィルタも使用できます。',
+            en: 'Select export targets from the category list on the left. Use checkboxes to select and search filter for filtering.',
+            zh: '从左侧类别列表中选择导出目标。使用复选框选择，也可使用搜索过滤器。'
+        },
+        'manual-excel-export-step4-title': {
+            ja: 'パラメータ選択',
+            en: 'Select Parameters',
+            zh: '选择参数'
+        },
+        'manual-excel-export-step4-desc': {
+            ja: '中央のパラメータリストから出力したいパラメータを選び、「＞」ボタンで出力リストに追加します。',
+            en: 'Select parameters to output from the center list and add them to the output list with the ">" button.',
+            zh: '从中央参数列表中选择要输出的参数，使用">"按钮添加到输出列表。'
+        },
+        'manual-excel-export-step5-title': {
+            ja: '列順の調整',
+            en: 'Adjust Column Order',
+            zh: '调整列顺序'
+        },
+        'manual-excel-export-step5-desc': {
+            ja: '右側の出力リストで「▲」「▼」ボタンで列順を調整します。',
+            en: 'Adjust column order using the up/down buttons in the output list on the right.',
+            zh: '在右侧输出列表中使用"▲""▼"按钮调整列顺序。'
+        },
+        'manual-excel-export-step6-title': {
+            ja: 'エクスポート実行',
+            en: 'Execute Export',
+            zh: '执行导出'
+        },
+        'manual-excel-export-step6-desc': {
+            ja: 'OKをクリックし、保存先を選択してエクスポートを実行します。完了するとExcelファイルが自動的に開かれます。',
+            en: 'Click OK, select the save location, and execute the export. The Excel file opens automatically when complete.',
+            zh: '点击确定，选择保存位置并执行导出。完成后Excel文件将自动打开。'
+        },
+        'manual-excel-export-usecase1-title': {
+            ja: '数量集計',
+            en: 'Quantity Takeoff',
+            zh: '数量统计'
+        },
+        'manual-excel-export-usecase1-desc': {
+            ja: '要素のパラメータをExcelに書き出して、数量集計や見積作業に活用できます。',
+            en: 'Export element parameters to Excel for quantity takeoff and estimation work.',
+            zh: '将元素参数导出到Excel，用于数量统计和估算工作。'
+        },
+        'manual-excel-export-usecase2-title': {
+            ja: 'データ分析',
+            en: 'Data Analysis',
+            zh: '数据分析'
+        },
+        'manual-excel-export-usecase2-desc': {
+            ja: 'Excelのピボットテーブルやグラフ機能を使って、モデルデータを分析できます。',
+            en: 'Analyze model data using Excel pivot tables and chart features.',
+            zh: '使用Excel数据透视表和图表功能分析模型数据。'
+        },
+        'manual-excel-export-usecase3-title': {
+            ja: 'レポート作成',
+            en: 'Report Creation',
+            zh: '报告制作'
+        },
+        'manual-excel-export-usecase3-desc': {
+            ja: 'モデル情報をExcel形式で共有し、関係者へのレポート作成に利用できます。',
+            en: 'Share model information in Excel format and use it for creating reports for stakeholders.',
+            zh: '以Excel格式共享模型信息，用于向相关方制作报告。'
+        },
+        'manual-excel-export-tip1': {
+            ja: 'よく使うカテゴリ・パラメータの組み合わせを設定ファイル（JSON）として保存し、次回から読み込めます。',
+            en: 'Save frequently used category/parameter combinations as settings files (JSON) for future use.',
+            zh: '将常用的类别·参数组合保存为设置文件（JSON），下次可直接加载。'
+        },
+        'manual-excel-export-tip1-strong': {
+            ja: '設定の保存：',
+            en: 'Save Settings:',
+            zh: '保存设置：'
+        },
+        'manual-excel-export-tip2': {
+            ja: 'I-（インスタンス）とT-（タイプ）の接頭辞でパラメータの種類を区別できます。',
+            en: 'Distinguish parameter types with I- (instance) and T- (type) prefixes.',
+            zh: '通过I-（实例）和T-（类型）前缀区分参数类型。'
+        },
+        'manual-excel-export-tip2-strong': {
+            ja: 'パラメータの区別：',
+            en: 'Parameter Types:',
+            zh: '参数区分：'
+        },
+        'manual-excel-export-tip3': {
+            ja: 'エクスポートしたファイルを編集し、「Excelインポート」で書き戻すことができます。',
+            en: 'Edit the exported file and write it back using "Excel Import".',
+            zh: '编辑导出的文件，使用"Excel导入"写回。'
+        },
+        'manual-excel-export-tip3-strong': {
+            ja: 'Excelインポートとの連携：',
+            en: 'Excel Import Integration:',
+            zh: 'Excel导入联动：'
+        },
+        'manual-excel-export-note1': {
+            ja: '大量の要素をエクスポートする場合、処理に時間がかかることがあります。',
+            en: 'Processing may take time when exporting a large number of elements.',
+            zh: '导出大量元素时，处理可能需要一些时间。'
+        },
+        'manual-excel-export-note2': {
+            ja: '出力先のExcelファイルが開いている場合はエクスポートできません。先にファイルを閉じてください。',
+            en: 'Cannot export if the output Excel file is open. Please close the file first.',
+            zh: '如果输出Excel文件已打开，则无法导出。请先关闭文件。'
+        },
+        'manual-excel-export-note3': {
+            ja: 'エクスポート対象はモデル内の要素のみです。リンクモデルの要素は含まれません。',
+            en: 'Only elements in the model are exported. Linked model elements are not included.',
+            zh: '仅导出模型中的元素。不包含链接模型的元素。'
+        }
+    };
+
+    // ========================================
+    // excel-import.html (Excelインポート)
+    // ========================================
+    translations.excelImport = {
+        'manual-excel-import-title': {
+            ja: 'Excelインポート',
+            en: 'Excel Import',
+            zh: 'Excel导入'
+        },
+        'manual-excel-import-subtitle': {
+            ja: 'Excelの編集内容をRevitモデルに書き戻し',
+            en: 'Import Excel edits back into Revit model',
+            zh: '将Excel编辑内容写回Revit模型'
+        },
+        'manual-excel-import-overview': {
+            ja: 'エクスポートしたExcelファイルの編集内容をRevitモデルに書き戻す機能です。変更箇所のプレビュー確認、読み取り専用パラメータの自動スキップ、インポート後のExcel色付け（変更セルを黄色にハイライト）に対応します。',
+            en: 'This feature writes back edited Excel file contents to the Revit model. It supports change preview, auto-skip of read-only parameters, and post-import Excel coloring (highlighting changed cells in yellow).',
+            zh: '此功能将编辑后的Excel文件内容写回Revit模型。支持变更预览确认、只读参数自动跳过、导入后Excel着色（将变更单元格高亮为黄色）。'
+        },
+        'manual-excel-import-feature1': {
+            ja: '開いているExcelファイルの自動検出',
+            en: 'Auto-detect open Excel files',
+            zh: '自动检测已打开的Excel文件'
+        },
+        'manual-excel-import-feature2': {
+            ja: '変更プレビュー（DataGrid表示、現在値 vs 新しい値）',
+            en: 'Change preview (DataGrid display, current vs new values)',
+            zh: '变更预览（DataGrid显示，当前值 vs 新值）'
+        },
+        'manual-excel-import-feature3': {
+            ja: '読み取り専用パラメータは自動スキップ（サマリーに件数表示）',
+            en: 'Auto-skip read-only parameters (count shown in summary)',
+            zh: '只读参数自动跳过（摘要中显示数量）'
+        },
+        'manual-excel-import-feature4': {
+            ja: 'インポート後、変更セルをExcel上で黄色ハイライト',
+            en: 'Highlight changed cells in yellow on Excel after import',
+            zh: '导入后在Excel上将变更单元格高亮为黄色'
+        },
+        'manual-excel-import-feature5': {
+            ja: 'トランザクションによる安全な更新（失敗時はロールバック）',
+            en: 'Safe updates via transactions (rollback on failure)',
+            zh: '通过事务进行安全更新（失败时回滚）'
+        },
+        'manual-excel-import-feature6': {
+            ja: 'エラー・警告の詳細表示',
+            en: 'Detailed error and warning display',
+            zh: '详细显示错误和警告'
+        },
+        'manual-excel-import-step1-title': {
+            ja: 'Revitモデルを開く',
+            en: 'Open Revit Model',
+            zh: '打开Revit模型'
+        },
+        'manual-excel-import-step1-desc': {
+            ja: 'インポート先のモデルをアクティブにします。',
+            en: 'Activate the target model for import.',
+            zh: '激活导入目标模型。'
+        },
+        'manual-excel-import-step2-title': {
+            ja: 'ボタンをクリック',
+            en: 'Click Button',
+            zh: '点击按钮'
+        },
+        'manual-excel-import-step2-desc': {
+            ja: 'リボンの「Excel連携」パネルから「Excel インポート」をクリックします。',
+            en: 'Click "Excel Import" from the "Excel Integration" panel on the ribbon.',
+            zh: '从功能区的"Excel联动"面板中点击"Excel 导入"。'
+        },
+        'manual-excel-import-step3-title': {
+            ja: 'Excelファイル選択',
+            en: 'Select Excel File',
+            zh: '选择Excel文件'
+        },
+        'manual-excel-import-step3-desc': {
+            ja: '開いているExcelファイルを自動検出して選択するか、「参照...」ボタンでファイルを選択します。',
+            en: 'Auto-detect and select an open Excel file, or select a file using the "Browse..." button.',
+            zh: '自动检测并选择已打开的Excel文件，或使用"浏览..."按钮选择文件。'
+        },
+        'manual-excel-import-step4-title': {
+            ja: '変更プレビュー確認',
+            en: 'Review Change Preview',
+            zh: '确认变更预览'
+        },
+        'manual-excel-import-step4-desc': {
+            ja: '変更内容（要素ID、カテゴリ、パラメータ、現在値→新しい値）を確認します。',
+            en: 'Review changes (element ID, category, parameter, current value → new value).',
+            zh: '确认变更内容（元素ID、类别、参数、当前值→新值）。'
+        },
+        'manual-excel-import-step5-title': {
+            ja: 'インポート実行',
+            en: 'Execute Import',
+            zh: '执行导入'
+        },
+        'manual-excel-import-step5-desc': {
+            ja: '「インポート実行」をクリックし、確認ダイアログで「はい」を選択します。結果サマリーが表示され、Excelの変更セルが黄色にハイライトされます。',
+            en: 'Click "Execute Import" and select "Yes" in the confirmation dialog. A result summary is displayed and changed cells in Excel are highlighted in yellow.',
+            zh: '点击"执行导入"，在确认对话框中选择"是"。显示结果摘要，Excel中的变更单元格将高亮为黄色。'
+        },
+        'manual-excel-import-usecase1-title': {
+            ja: '一括パラメータ更新',
+            en: 'Batch Parameter Update',
+            zh: '批量参数更新'
+        },
+        'manual-excel-import-usecase1-desc': {
+            ja: 'Excelで大量のパラメータを編集し、一括でRevitモデルに反映できます。',
+            en: 'Edit a large number of parameters in Excel and apply them to the Revit model at once.',
+            zh: '在Excel中编辑大量参数，一次性反映到Revit模型中。'
+        },
+        'manual-excel-import-usecase2-title': {
+            ja: '外部データの取り込み',
+            en: 'External Data Integration',
+            zh: '外部数据导入'
+        },
+        'manual-excel-import-usecase2-desc': {
+            ja: '他のシステムから出力されたExcelデータをRevitモデルに反映できます。',
+            en: 'Integrate Excel data from other systems into the Revit model.',
+            zh: '将其他系统输出的Excel数据反映到Revit模型中。'
+        },
+        'manual-excel-import-usecase3-title': {
+            ja: '修正作業の効率化',
+            en: 'Efficient Corrections',
+            zh: '修改工作效率化'
+        },
+        'manual-excel-import-usecase3-desc': {
+            ja: 'Revit上で1つずつ修正するよりExcelで一括編集した方が効率的な場合に活用できます。',
+            en: 'Useful when batch editing in Excel is more efficient than correcting one by one in Revit.',
+            zh: '当在Excel中批量编辑比在Revit中逐个修改更高效时使用。'
+        },
+        'manual-excel-import-tip1': {
+            ja: 'インポート前に変更内容を確認できるので、意図しない変更を防げます。',
+            en: 'Review changes before import to prevent unintended modifications.',
+            zh: '导入前可确认变更内容，防止意外修改。'
+        },
+        'manual-excel-import-tip1-strong': {
+            ja: '変更プレビュー：',
+            en: 'Change Preview:',
+            zh: '变更预览：'
+        },
+        'manual-excel-import-tip2': {
+            ja: 'インポート後にExcel上で変更されたセルが黄色になるので、どの値が更新されたか確認できます。',
+            en: 'Changed cells turn yellow in Excel after import, so you can verify which values were updated.',
+            zh: '导入后Excel中变更的单元格变为黄色，可确认哪些值被更新。'
+        },
+        'manual-excel-import-tip2-strong': {
+            ja: '黄色ハイライト：',
+            en: 'Yellow Highlight:',
+            zh: '黄色高亮：'
+        },
+        'manual-excel-import-tip3': {
+            ja: 'トランザクション機能により、エラーが発生した場合は変更が自動的に取り消されます。',
+            en: 'Transaction feature automatically rolls back changes if errors occur.',
+            zh: '事务功能确保发生错误时自动撤销更改。'
+        },
+        'manual-excel-import-tip3-strong': {
+            ja: '安全なロールバック：',
+            en: 'Safe Rollback:',
+            zh: '安全回滚：'
+        },
+        'manual-excel-import-note1': {
+            ja: '「Excelエクスポート」で出力したファイル形式に準拠している必要があります。',
+            en: 'The file must conform to the format output by "Excel Export".',
+            zh: '文件必须符合"Excel导出"输出的文件格式。'
+        },
+        'manual-excel-import-note2': {
+            ja: '読み取り専用パラメータ（要素IDなど）は自動的にスキップされます。',
+            en: 'Read-only parameters (such as element ID) are automatically skipped.',
+            zh: '只读参数（如元素ID等）将自动跳过。'
+        },
+        'manual-excel-import-note3': {
+            ja: 'インポート前にRevitモデルのバックアップを取ることを推奨します。',
+            en: 'It is recommended to back up your Revit model before importing.',
+            zh: '建议在导入前备份Revit模型。'
         }
     };
 
@@ -3156,6 +4146,11 @@ function initTranslations() {
         translations.sectionboxCopy,
         translations.viewportPosition,
         translations.cropboxCopy,
+        translations.roomTag,
+        translations.beamBottomColor,
+        translations.beamTopColor,
+        translations.excelExport,
+        translations.excelImport,
         translations.footerLinks,
         translations.hatchPage,
         translations.privacyPage,
