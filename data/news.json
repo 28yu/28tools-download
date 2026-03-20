@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-19T01:22:35.428983",
+  "lastUpdated": "2026-03-20T01:17:43.821888",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -112,6 +112,16 @@
       "language": "ja"
     },
     {
+      "title": "キャタピラーとNVIDIAが変える重機のAI戦略とは？フィジカルAIの全貌",
+      "link": "https://axconstdx.com/2026/03/19/%e3%82%ad%e3%83%a3%e3%82%bf%e3%83%94%e3%83%a9%e3%83%bc%e3%81%a8nvidia%e3%81%8c%e5%a4%89%e3%81%88%e3%82%8b%e9%87%8d%e6%a9%9f%e3%81%aeai%e6%88%a6%e7%95%a5%e3%81%a8%e3%81%af%ef%bc%9f%e3%83%95%e3%82%a3/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2582%25ad%25e3%2583%25a3%25e3%2582%25bf%25e3%2583%2594%25e3%2583%25a9%25e3%2583%25bc%25e3%2581%25a8nvidia%25e3%2581%258c%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b%25e9%2587%258d%25e6%25a9%259f%25e3%2581%25aeai%25e6%2588%25a6%25e7%2595%25a5%25e3%2581%25a8%25e3%2581%25af%25ef%25bc%259f%25e3%2583%2595%25e3%2582%25a3",
+      "description": "「重機とAIは関係ない」と思っていませんか。実は今、建設現場の未来を決める静かな革命が、すでに始まっています。この記事を読めば、キャタピラーとNVIDIAが描く戦略の全貌と、自社のデジタル変革に応用できる具体的な視点が手 [...] <p>The post キャタピラーとNVIDIAが変える重機のAI戦略とは？フィジカルAIの全貌 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Thu, 19 Mar 2026 07:20:13 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/eyecatch-1024x538.jpg",
+      "language": "ja"
+    },
+    {
       "title": "ISO Publishes New Compatibility Policy for ISO 16739-1 (IFC): A Major Step for Stable Evolution of the Standard",
       "link": "https://www.buildingsmart.org/iso-publishes-new-compatibility-policy-for-iso-16739-1/",
       "description": "buildingSMART International is pleased to share important news with the openBIM community: ISO/TC 59/SC 13 has published the new Compatibility Policy for ISO 16739-1, the international standard for IF...",
@@ -159,16 +169,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/featured_image_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "AIがあなたの代わりに動き出す——Gemini「ゴール・スケジュールド・アクション」の衝撃",
-      "link": "https://axconstdx.com/2026/03/01/ai%e3%81%8c%e3%81%82%e3%81%aa%e3%81%9f%e3%81%ae%e4%bb%a3%e3%82%8f%e3%82%8a%e3%81%ab%e5%8b%95%e3%81%8d%e5%87%ba%e3%81%99-gemini%e3%80%8c%e3%82%b4%e3%83%bc%e3%83%ab%e3%83%bb%e3%82%b9/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e3%2581%258c%25e3%2581%2582%25e3%2581%25aa%25e3%2581%259f%25e3%2581%25ae%25e4%25bb%25a3%25e3%2582%258f%25e3%2582%258a%25e3%2581%25ab%25e5%258b%2595%25e3%2581%258d%25e5%2587%25ba%25e3%2581%2599-gemini%25e3%2580%258c%25e3%2582%25b4%25e3%2583%25bc%25e3%2583%25ab%25e3%2583%25bb%25e3%2582%25b9",
-      "description": "「指示したのに、また確認しなければならない」——AIへの期待と現実のギャップに、疲れを感じていませんか。Googleが開発する新機能は、ゴールを告げるだけでAIが最後まで動き続ける未来を現実にします。読み終えるころには、 [...] <p>The post AIがあなたの代わりに動き出す——Gemini「ゴール・スケジュールド・アクション」の衝撃 first appeared on 生成AIと建設...",
-      "publishedDate": "Sun, 01 Mar 2026 07:04:17 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/eyecatch-5-1024x538.jpg",
       "language": "ja"
     },
     {
