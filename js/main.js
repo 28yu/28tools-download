@@ -314,6 +314,11 @@ function initTranslations() {
             en: 'Home',
             zh: '主页'
         },
+        'breadcrumb-addins': {
+            ja: 'アドイン',
+            en: 'Add-ins',
+            zh: '插件'
+        },
         'addins-breadcrumb': {
             ja: 'Revit アドイン',
             en: 'Revit Add-ins',
