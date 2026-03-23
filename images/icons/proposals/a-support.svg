@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#1a5c9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- i マーク（インフォメーション） -->
+  <circle cx="20" cy="8" r="2" fill="#1a5c9e" stroke="none"/>
+  <path d="M20 15 L20 33"/>
+  <path d="M15 15 L25 15"/>
+  <path d="M15 33 L25 33"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#1a5c9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- フォルダ + バツ（ファイル削除） -->
+  <path d="M4 10 L4 34 L36 34 L36 14 L20 14 L17 10 Z"/>
+  <path d="M16 21 L24 29"/>
+  <path d="M24 21 L16 29"/>
+</svg>
