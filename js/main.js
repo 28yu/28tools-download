@@ -750,6 +750,11 @@ function initTranslations() {
             en: 'News & Featured',
             zh: '最新动态'
         },
+        'index-news-v2': {
+            ja: '28 Tools v2.0 リリース - 新機能追加・Revit 2021~2026 対応',
+            en: '28 Tools v2.0 Released - New Features, Revit 2021~2026 Supported',
+            zh: '28 Tools v2.0 发布 - 新功能・Revit 2021~2026 全版本支持'
+        },
         'index-news-1': {
             ja: '塗潰し（ハッチング）パターン自動作成ツール 公開',
             en: 'Hatch Pattern Creator Tool Released',
