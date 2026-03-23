@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#1a5c9e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <!-- 下矢印 + 箱（ダウンロード/インストール） -->
-  <path d="M20 4 L20 24"/>
-  <path d="M13 17 L20 24 L27 17"/>
-  <path d="M8 28 L8 34 L32 34 L32 28"/>
-</svg>
