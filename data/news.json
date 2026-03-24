@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-23T01:22:38.057666",
+  "lastUpdated": "2026-03-24T01:15:53.721394",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -20,26 +20,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "【2026年最新】建設事故の事例・原因・対策を完全解説｜死亡事故の実態と防止策まで網羅",
-      "link": "https://news.build-app.jp/article/39690/",
-      "description": "建設現場では日々さまざまな作業が進められていますが、その裏側では事故や労働災害のリスクが常に存在しています。特に近年は人手不足や高齢化の影響......",
-      "publishedDate": "Wed, 18 Mar 2026 23:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/1ea134efb9980cef5ab8b8a0bc510b65-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "外壁点検の「写真整理」不要に。実務を劇的に変える『DroneRoofer外壁診断』提供開始",
-      "link": "https://news.build-app.jp/article/39659/",
-      "description": "株式会社CLUE（本社：東京都港区、代表取締役：阿部亮介）は、マンションや公共施設における建築基準法に基づく定期点検（いわゆる12条点検）を......",
-      "publishedDate": "Wed, 18 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2021/12/ドローンAdobeStock_341776101-130x63.jpg",
-      "language": "ja"
     },
     {
       "title": "東大卒4割のAIスタートアップが建設業を変える──燈、創業5年で評価額1000億円の衝撃",
@@ -112,16 +92,6 @@
       "language": "ja"
     },
     {
-      "title": "3Dスキャンアプリ「Scanat」、位置連動型写真自動検索機能をリリース",
-      "link": "https://news.build-app.jp/article/39702/",
-      "description": "nat株式会社（本社：東京都渋谷区、代表取締役：劉 栄駿、以下 nat）は、提供する3Dスキャンアプリ「Scanat」において、3Dモデル上......",
-      "publishedDate": "Sun, 22 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/07/27263083_m-130x106.jpg",
-      "language": "ja"
-    },
-    {
       "title": "国土交通省、令和8年1月の建設工事受注動態統計を公表、民間工事増で受注総額が5.7％増",
       "link": "https://news.build-app.jp/article/39724/",
       "description": "国土交通省は令和8年2月27日、大手建設会社50社を対象とした「建設工事受注動態統計調査（令和8年1月分）」の結果を公表しました。 今回の結......",
@@ -129,6 +99,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/3502715_m-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "3Dスキャンアプリ「Scanat」、位置連動型写真自動検索機能をリリース",
+      "link": "https://news.build-app.jp/article/39702/",
+      "description": "nat株式会社（本社：東京都渋谷区、代表取締役：劉 栄駿、以下 nat）は、提供する3Dスキャンアプリ「Scanat」において、3Dモデル上......",
+      "publishedDate": "Sun, 22 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/07/27263083_m-130x106.jpg",
       "language": "ja"
     },
     {
@@ -192,6 +172,26 @@
       "language": "ja"
     },
     {
+      "title": "【調査レポート】2026年春開始の「BIM図面審査」を前に、設計現場で“準備の兆し”",
+      "link": "https://news.build-app.jp/article/39704/",
+      "description": "「BIMを誰もが簡単に」をビジョンに掲げ、BIMの普及と活用支援を行う株式会社フローワークス（愛知県名古屋市、代表取締役：横関 浩）は、20......",
+      "publishedDate": "Mon, 23 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/10/MicrosoftTeams-image-152-130x73.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大成建設、仮設現場事務所をウエルネス作業所として整備、快適な現場環境づくり推進",
+      "link": "https://news.build-app.jp/article/39715/",
+      "description": "大成建設株式会社（社長：相川善郎）は、全国の仮設現場事務所を「ウエルネス作業所」として順次整備していく方針を正式に決定しました。現場で働く社......",
+      "publishedDate": "Mon, 23 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/26359641_m-130x98.jpg",
+      "language": "ja"
+    },
+    {
       "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
       "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
       "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
@@ -222,16 +222,6 @@
       "language": "en"
     },
     {
-      "title": "竹中工務店、データセンター設計支援ツール開発、設備仕様や建物ボリューム検討を自動作成",
-      "link": "https://news.build-app.jp/article/39709/",
-      "description": "竹中工務店（社長：佐々木正人）は、急速に需要が高まるデータセンター市場への対応として、建設業界で初めてとなるデータセンターに特化した設計支援......",
-      "publishedDate": "Fri, 20 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/08/3422461_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "国土交通省、1月の建築着工床面積700万㎡、前年同月比0.3％増で10か月ぶり増加",
       "link": "https://news.build-app.jp/article/39719/",
       "description": "国土交通省が発表した令和8年1月分の建築着工統計調査によると、全建築物の着工床面積は700万平方メートルとなり、前年同月比で0.3%の増加と......",
@@ -239,6 +229,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/12/AdobeStock_130181687-130x87.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "竹中工務店、データセンター設計支援ツール開発、設備仕様や建物ボリューム検討を自動作成",
+      "link": "https://news.build-app.jp/article/39709/",
+      "description": "竹中工務店（社長：佐々木正人）は、急速に需要が高まるデータセンター市場への対応として、建設業界で初めてとなるデータセンターに特化した設計支援......",
+      "publishedDate": "Fri, 20 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/08/3422461_m-130x87.jpg",
       "language": "ja"
     },
     {
