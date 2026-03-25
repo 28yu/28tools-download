@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-24T01:15:53.721394",
+  "lastUpdated": "2026-03-25T01:21:07.639975",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -20,6 +20,46 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "香港はなぜ、世界一過密かつ、世界一家賃が高いのか？｜「住宅の金融化」という世界的搾取プログラム",
+      "link": "https://news.build-app.jp/article/38893/",
+      "description": "極限都市のパラドックス 香港、その面積1,106km²──。札幌市に匹敵する広さを持ちながら、 その約75%は山岳地帯、40%は開発禁止の郊......",
+      "publishedDate": "Tue, 24 Mar 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/01/260325_hirayama-1-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大成建設、「Rimo Voice」でAI議事録が建築本部全122部署定着、作成時間66%減",
+      "link": "https://news.build-app.jp/article/39706/",
+      "description": "Rimo合同会社（本社：東京都渋谷区、代表：相川直視、以下Rimo）は、大成建設株式会社（本社：東京都新宿区、代表取締役社長：相川善郎、以下......",
+      "publishedDate": "Tue, 24 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/09/MicrosoftTeams-image-146-130x73.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大成建設、CO2排出量最大80％削減の耐火被覆材T-eCon/ロックウールを開発",
+      "link": "https://news.build-app.jp/article/39717/",
+      "description": "大成建設株式会社は2026年3月6日、鉄骨造建物の柱・梁に使用できる環境配慮型の耐火被覆材「T-eCon®/ロックウール」を新たに開発したと......",
+      "publishedDate": "Tue, 24 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/26359585_m-130x98.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、建設労働需給調査を公表、令和8年1月は8職種過不足率0.0％で均衡",
+      "link": "https://news.build-app.jp/article/39727/",
+      "description": "国土交通省は令和8年2月25日、建設技能労働者の需給状況を示す「建設労働需給調査結果（令和8年1月分）」を公表しました。 全国の8職種合計の......",
+      "publishedDate": "Tue, 24 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33864494_l-1-130x87.jpg",
+      "language": "ja"
     },
     {
       "title": "東大卒4割のAIスタートアップが建設業を変える──燈、創業5年で評価額1000億円の衝撃",
@@ -92,16 +132,6 @@
       "language": "ja"
     },
     {
-      "title": "国土交通省、令和8年1月の建設工事受注動態統計を公表、民間工事増で受注総額が5.7％増",
-      "link": "https://news.build-app.jp/article/39724/",
-      "description": "国土交通省は令和8年2月27日、大手建設会社50社を対象とした「建設工事受注動態統計調査（令和8年1月分）」の結果を公表しました。 今回の結......",
-      "publishedDate": "Sun, 22 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/3502715_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "3Dスキャンアプリ「Scanat」、位置連動型写真自動検索機能をリリース",
       "link": "https://news.build-app.jp/article/39702/",
       "description": "nat株式会社（本社：東京都渋谷区、代表取締役：劉 栄駿、以下 nat）は、提供する3Dスキャンアプリ「Scanat」において、3Dモデル上......",
@@ -109,6 +139,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/07/27263083_m-130x106.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、令和8年1月の建設工事受注動態統計を公表、民間工事増で受注総額が5.7％増",
+      "link": "https://news.build-app.jp/article/39724/",
+      "description": "国土交通省は令和8年2月27日、大手建設会社50社を対象とした「建設工事受注動態統計調査（令和8年1月分）」の結果を公表しました。 今回の結......",
+      "publishedDate": "Sun, 22 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/3502715_m-130x87.jpg",
       "language": "ja"
     },
     {
@@ -129,26 +169,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/featured_image_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大成建設が改修・施工の4作品で第35回BELCA賞受賞、既存建築の長寿命化評価",
-      "link": "https://news.build-app.jp/article/39713/",
-      "description": "2026年2月27日、大成建設株式会社（社長：相川善郎）が設計施工または施工を担当した4つの建築作品が、第35回BELCA賞を受賞したことが......",
-      "publishedDate": "Sat, 21 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/3258474_m-130x80.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大成建設、北海道平取町のGM熱供給実証が資源作物事例集に選定、バイオマス活用事例",
-      "link": "https://news.build-app.jp/article/39711/",
-      "description": "大成建設株式会社（社長：相川善郎）が北海道平取町で取り組んできた、燃料用作物「ジャイアントミスカンサス（以下、GM）」を使ったバイオマス熱供......",
-      "publishedDate": "Sat, 21 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/07/AdobeStock_376462735-130x98.jpeg",
       "language": "ja"
     },
     {
@@ -220,26 +240,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "国土交通省、1月の建築着工床面積700万㎡、前年同月比0.3％増で10か月ぶり増加",
-      "link": "https://news.build-app.jp/article/39719/",
-      "description": "国土交通省が発表した令和8年1月分の建築着工統計調査によると、全建築物の着工床面積は700万平方メートルとなり、前年同月比で0.3%の増加と......",
-      "publishedDate": "Fri, 20 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/12/AdobeStock_130181687-130x87.jpeg",
-      "language": "ja"
-    },
-    {
-      "title": "竹中工務店、データセンター設計支援ツール開発、設備仕様や建物ボリューム検討を自動作成",
-      "link": "https://news.build-app.jp/article/39709/",
-      "description": "竹中工務店（社長：佐々木正人）は、急速に需要が高まるデータセンター市場への対応として、建設業界で初めてとなるデータセンターに特化した設計支援......",
-      "publishedDate": "Fri, 20 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/08/3422461_m-130x87.jpg",
-      "language": "ja"
     },
     {
       "title": "Key Outcomes from the Domain Leadership Conference in Zurich",
