@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T01:21:07.639975",
+  "lastUpdated": "2026-03-26T01:26:27.867295",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -10,6 +10,26 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "建築様式とは？特徴・日本と西洋の違い・代表例を一覧で紹介",
+      "link": "https://news.build-app.jp/article/39799/",
+      "description": "建物の見た目や構造には、時代や地域ごとの考え方が色濃く表れていることをご存じでしょうか。たとえば、柱の形や屋根のつくり、空間の取り方などに共......",
+      "publishedDate": "Wed, 25 Mar 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/f450b1e822ae10bcaa608298aaee64c4-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "第3回「建設DXの現在地」調査レポートを発表。BIM活用最大の壁「二重作業」など課題を分析",
+      "link": "https://news.build-app.jp/article/39790/",
+      "description": "建設業界のDXを推進する株式会社Arent（本社：東京都港区、代表取締役社長：鴨林広軌、以下Arent）は、日本国内の建設関連事業者を対象に......",
+      "publishedDate": "Wed, 25 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/XLm1qqr0TZRICT41677691748_1677691764-130x82.jpg",
+      "language": "ja"
     },
     {
       "title": "Occupant Movement Analysis Technical Report",
@@ -132,36 +152,6 @@
       "language": "ja"
     },
     {
-      "title": "3Dスキャンアプリ「Scanat」、位置連動型写真自動検索機能をリリース",
-      "link": "https://news.build-app.jp/article/39702/",
-      "description": "nat株式会社（本社：東京都渋谷区、代表取締役：劉 栄駿、以下 nat）は、提供する3Dスキャンアプリ「Scanat」において、3Dモデル上......",
-      "publishedDate": "Sun, 22 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/07/27263083_m-130x106.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、令和8年1月の建設工事受注動態統計を公表、民間工事増で受注総額が5.7％増",
-      "link": "https://news.build-app.jp/article/39724/",
-      "description": "国土交通省は令和8年2月27日、大手建設会社50社を対象とした「建設工事受注動態統計調査（令和8年1月分）」の結果を公表しました。 今回の結......",
-      "publishedDate": "Sun, 22 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/3502715_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新版】建ぺい率の計算方法｜建築面積の出し方・緩和条件・容積率との違い",
-      "link": "https://news.build-app.jp/article/39733/",
-      "description": "建ぺい率の計算は、土地にどの程度の建物を計画できるかを判断するための基本です。土地の仕入れや事業収支の検討、基本計画の作成、顧客への提案では......",
-      "publishedDate": "Sun, 22 Mar 2026 10:43:34 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/33537771_m-130x98.jpg",
-      "language": "ja"
-    },
-    {
       "title": "Revit MCPで変わる7つの現場—自然言語がBIMを動かす時代へ",
       "link": "https://axconstdx.com/2026/03/15/revit-mcp%e3%81%a7%e5%a4%89%e3%82%8f%e3%82%8b7%e3%81%a4%e3%81%ae%e7%8f%be%e5%a0%b4-%e8%87%aa%e7%84%b6%e8%a8%80%e8%aa%9e%e3%81%8cbim%e3%82%92%e5%8b%95%e3%81%8b%e3%81%99%e6%99%82%e4%bb%a3/?utm_source=rss&utm_medium=rss&utm_campaign=revit-mcp%25e3%2581%25a7%25e5%25a4%2589%25e3%2582%258f%25e3%2582%258b7%25e3%2581%25a4%25e3%2581%25ae%25e7%258f%25be%25e5%25a0%25b4-%25e8%2587%25aa%25e7%2584%25b6%25e8%25a8%2580%25e8%25aa%259e%25e3%2581%258cbim%25e3%2582%2592%25e5%258b%2595%25e3%2581%258b%25e3%2581%2599%25e6%2599%2582%25e4%25bb%25a3",
       "description": "「もっとBIMを活かしたい、でも操作が難しくて追いつかない」——そう感じたことはありませんか。Revit MCPを使えば、普通の言葉でBIMを動かせる時代が、もうすぐそこまで来ています。この記事を読み終えたとき、あなたの [...] <p>The post Revit MCPで変わる7つの現場—自然言語がBIMを動かす時代へ first appeared on 生成AIと建設DX.</p>...",
@@ -189,6 +179,16 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/wp_eyecatch_1200x630-2-1-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ポストモダン建築とは？特徴・代表作・モダニズムとの違いを3分で理解",
+      "link": "https://news.build-app.jp/article/39794/",
+      "description": "建築を学び始めると必ず出てくるのが「ポストモダン」という言葉です。しかし、見た目が派手な建築様式の、どの部分が評価されているのかわからないと......",
+      "publishedDate": "Mon, 23 Mar 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/27660355a5c28a0b5336f57b89004000-130x82.png",
       "language": "ja"
     },
     {
