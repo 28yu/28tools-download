@@ -16,15 +16,8 @@ const downloadConfig = {
     // パスワード設定
     password: '28tools',
     
-    // ダウンロードURL
-    urls: {
-        'revit2021': 'https://github.com/28yu/28tools-download/releases/download/v2.0.0-Revit2021/28Tools_Revit2021_v2.0.zip',
-        'revit2022': 'https://github.com/28yu/28tools-download/releases/download/v2.0.0-Revit2022/28Tools_Revit2022_v2.0.zip',
-        'revit2023': 'https://github.com/28yu/28tools-download/releases/download/v2.0.0-Revit2023/28Tools_Revit2023_v2.0.zip',
-        'revit2024': 'https://github.com/28yu/28tools-download/releases/download/v2.0.0-Revit2024/28Tools_Revit2024_v2.0.zip',
-        'revit2025': 'https://github.com/28yu/28tools-download/releases/download/v2.0.0-Revit2025/28Tools_Revit2025_v2.0.zip',
-        'revit2026': 'https://github.com/28yu/28tools-download/releases/download/v2.0.0-Revit2026/28Tools_Revit2026_v2.0.zip'
-    },
+    // ダウンロードURL（GitHub APIから自動取得）
+    urls: {},
     
     // 多言語メッセージ
     messages: {
@@ -48,6 +41,19 @@ const downloadConfig = {
         }
     }
 };
+
+// 最新リリースのダウンロードURLを自動取得
+fetch('https://api.github.com/repos/28yu/28tools-download/releases/latest')
+    .then(res => res.json())
+    .then(release => {
+        release.assets.forEach(asset => {
+            const match = asset.name.match(/28Tools_Revit(\d{4})/);
+            if (match) {
+                downloadConfig.urls['revit' + match[1]] = asset.browser_download_url;
+            }
+        });
+    })
+    .catch(err => console.error('Failed to fetch download URLs:', err));
 
 // ========================================
 // 1. 初期化処理
