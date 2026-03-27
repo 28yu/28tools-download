@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26T01:26:27.867295",
+  "lastUpdated": "2026-03-27T01:26:06.556250",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -18,7 +18,7 @@
       "publishedDate": "Wed, 25 Mar 2026 23:30:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/f450b1e822ae10bcaa608298aaee64c4-130x82.png",
+      "thumbnail": null,
       "language": "ja"
     },
     {
@@ -112,6 +112,26 @@
       "language": "ja"
     },
     {
+      "title": "【建設DX】竹中工務店と共同で関西大学キャンパス改修工事における実証実験(PoC)を実施",
+      "link": "https://news.build-app.jp/article/39792/",
+      "description": "株式会社STUDIO55（メタリアルグループ）は、株式会社竹中工務店（本社：大阪府大阪市）と共同で、関西大学キャンパスの改修工事現場において......",
+      "publishedDate": "Thu, 26 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/06/5qmlPcqPAIUXdkJ1654690946_1654690976-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "渋谷アクシュを解説｜アクセスやレストランの魅力をチェック",
+      "link": "https://news.build-app.jp/article/39845/",
+      "description": "トレンドワード：渋谷アクシュ 「渋谷アクシュ」についてピックアップします。オフィスや飲食店、広場などを備えた施設で、渋谷と青山エリアをつなぐ......",
+      "publishedDate": "Thu, 26 Mar 2026 04:37:30 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/00e281e75c6be0baad9eae08dbb43b19-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "キャタピラーとNVIDIAが変える重機のAI戦略とは？フィジカルAIの全貌",
       "link": "https://axconstdx.com/2026/03/19/%e3%82%ad%e3%83%a3%e3%82%bf%e3%83%94%e3%83%a9%e3%83%bc%e3%81%a8nvidia%e3%81%8c%e5%a4%89%e3%81%88%e3%82%8b%e9%87%8d%e6%a9%9f%e3%81%aeai%e6%88%a6%e7%95%a5%e3%81%a8%e3%81%af%ef%bc%9f%e3%83%95%e3%82%a3/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2582%25ad%25e3%2583%25a3%25e3%2582%25bf%25e3%2583%2594%25e3%2583%25a9%25e3%2583%25bc%25e3%2581%25a8nvidia%25e3%2581%258c%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b%25e9%2587%258d%25e6%25a9%259f%25e3%2581%25aeai%25e6%2588%25a6%25e7%2595%25a5%25e3%2581%25a8%25e3%2581%25af%25ef%25bc%259f%25e3%2583%2595%25e3%2582%25a3",
       "description": "「重機とAIは関係ない」と思っていませんか。実は今、建設現場の未来を決める静かな革命が、すでに始まっています。この記事を読めば、キャタピラーとNVIDIAが描く戦略の全貌と、自社のデジタル変革に応用できる具体的な視点が手 [...] <p>The post キャタピラーとNVIDIAが変える重機のAI戦略とは？フィジカルAIの全貌 first appeared on 生成AIと建設DX.</p>...",
@@ -139,16 +159,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/eyecatch_1200x630_under100kb-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "保護中: ガウディが描いた「サグラダ・ファミリア」｜アナログとデジタル技術の融合による「時間圧縮」革命",
-      "link": "https://news.build-app.jp/article/39569/",
-      "description": "この投稿はパスワードで保護されているため抜粋文はありません。...",
-      "publishedDate": "Sun, 22 Mar 2026 22:24:10 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260401_hirayama-130x82.jpg",
       "language": "ja"
     },
     {
@@ -188,7 +198,7 @@
       "publishedDate": "Mon, 23 Mar 2026 23:30:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/27660355a5c28a0b5336f57b89004000-130x82.png",
+      "thumbnail": null,
       "language": "ja"
     },
     {
@@ -199,16 +209,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/10/MicrosoftTeams-image-152-130x73.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大成建設、仮設現場事務所をウエルネス作業所として整備、快適な現場環境づくり推進",
-      "link": "https://news.build-app.jp/article/39715/",
-      "description": "大成建設株式会社（社長：相川善郎）は、全国の仮設現場事務所を「ウエルネス作業所」として順次整備していく方針を正式に決定しました。現場で働く社......",
-      "publishedDate": "Mon, 23 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/26359641_m-130x98.jpg",
       "language": "ja"
     },
     {
