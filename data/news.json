@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-27T01:26:06.556250",
+  "lastUpdated": "2026-03-28T01:20:02.215106",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -18,7 +18,7 @@
       "publishedDate": "Wed, 25 Mar 2026 23:30:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": null,
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/f450b1e822ae10bcaa608298aaee64c4-130x82.png",
       "language": "ja"
     },
     {
@@ -30,16 +30,6 @@
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/XLm1qqr0TZRICT41677691748_1677691764-130x82.jpg",
       "language": "ja"
-    },
-    {
-      "title": "Occupant Movement Analysis Technical Report",
-      "link": "https://www.buildingsmart.org/occupant-movement-analysis-technical-report/",
-      "description": "Report: Link Outcome report: Link &#160; The Standards Committee return on the votes was 33 Yes 3 No which achieves the 65% pass rate threshold. The post Occupant Movement Analysis Technical Report ap...",
-      "publishedDate": "Wed, 24 Sep 2025 07:50:02 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "香港はなぜ、世界一過密かつ、世界一家賃が高いのか？｜「住宅の金融化」という世界的搾取プログラム",
@@ -109,6 +99,16 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/wp_eyecatch_1200x630-2-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年版】建設業法の見積期間とは？数え方・短縮条件・罰則をわかりやすく解説",
+      "link": "https://news.build-app.jp/article/39885/",
+      "description": "建設業で見積を依頼するとき、期間の設定を感覚で決めてしまうと、後から下請とのトラブルや指摘を受けることがあります。特に近年は、国が下請取引の......",
+      "publishedDate": "Thu, 26 Mar 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/cc75edd3d48228f1646f527673d1f570-130x82.png",
       "language": "ja"
     },
     {
@@ -198,17 +198,7 @@
       "publishedDate": "Mon, 23 Mar 2026 23:30:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": null,
-      "language": "ja"
-    },
-    {
-      "title": "【調査レポート】2026年春開始の「BIM図面審査」を前に、設計現場で“準備の兆し”",
-      "link": "https://news.build-app.jp/article/39704/",
-      "description": "「BIMを誰もが簡単に」をビジョンに掲げ、BIMの普及と活用支援を行う株式会社フローワークス（愛知県名古屋市、代表取締役：横関 浩）は、20......",
-      "publishedDate": "Mon, 23 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/10/MicrosoftTeams-image-152-130x73.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/27660355a5c28a0b5336f57b89004000-130x82.png",
       "language": "ja"
     },
     {
@@ -216,6 +206,16 @@
       "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
       "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
       "publishedDate": "Mon, 08 Dec 2025 19:22:27 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
+      "link": "https://www.buildingsmart.org/buildingsmart-brazil-has-been-formally-approved-as-a-full-chapter/",
+      "description": "London, U.K. – March 27th, 2026 — buildingSMART International (bSI) is pleased to announce that buildingSMART Brazil has been formally approved by the Board to become a Full Chapter, effective March.....",
+      "publishedDate": "Fri, 27 Mar 2026 10:19:53 +0000",
       "source": "buildingSMART International",
       "category": "bim",
       "thumbnail": null,
