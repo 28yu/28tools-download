@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-28T01:20:02.215106",
+  "lastUpdated": "2026-03-29T01:29:38.290154",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -152,16 +152,6 @@
       "language": "en"
     },
     {
-      "title": "SBI北尾社長発言が映す現実｜AI採用削減で「育つ場所」が消える",
-      "link": "https://axconstdx.com/2026/03/05/sbi%e5%8c%97%e5%b0%be%e7%a4%be%e9%95%b7%e7%99%ba%e8%a8%80%e3%81%8c%e6%98%a0%e3%81%99%e7%8f%be%e5%ae%9f%ef%bd%9cai%e6%8e%a1%e7%94%a8%e5%89%8a%e6%b8%9b%e3%81%a7%e3%80%8c%e8%82%b2%e3%81%a4%e5%a0%b4/?utm_source=rss&utm_medium=rss&utm_campaign=sbi%25e5%258c%2597%25e5%25b0%25be%25e7%25a4%25be%25e9%2595%25b7%25e7%2599%25ba%25e8%25a8%2580%25e3%2581%258c%25e6%2598%25a0%25e3%2581%2599%25e7%258f%25be%25e5%25ae%259f%25ef%25bd%259cai%25e6%258e%25a1%25e7%2594%25a8%25e5%2589%258a%25e6%25b8%259b%25e3%2581%25a7%25e3%2580%258c%25e8%2582%25b2%25e3%2581%25a4%25e5%25a0%25b4",
-      "description": "「優秀でないと採らない」という言葉が、静かに若者の未来を書き換えつつあります。AIが仕事を奪うより前に、会社そのものが「育てる場」を手放し始めた今、若い世代はどこで成長すればいいのか。この記事では、AI採用削減の構造的な [...] <p>The post SBI北尾社長発言が映す現実｜AI採用削減で「育つ場所」が消える first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Thu, 05 Mar 2026 05:29:26 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/eyecatch_1200x630_under100kb-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "Revit MCPで変わる7つの現場—自然言語がBIMを動かす時代へ",
       "link": "https://axconstdx.com/2026/03/15/revit-mcp%e3%81%a7%e5%a4%89%e3%82%8f%e3%82%8b7%e3%81%a4%e3%81%ae%e7%8f%be%e5%a0%b4-%e8%87%aa%e7%84%b6%e8%a8%80%e8%aa%9e%e3%81%8cbim%e3%82%92%e5%8b%95%e3%81%8b%e3%81%99%e6%99%82%e4%bb%a3/?utm_source=rss&utm_medium=rss&utm_campaign=revit-mcp%25e3%2581%25a7%25e5%25a4%2589%25e3%2582%258f%25e3%2582%258b7%25e3%2581%25a4%25e3%2581%25ae%25e7%258f%25be%25e5%25a0%25b4-%25e8%2587%25aa%25e7%2584%25b6%25e8%25a8%2580%25e8%25aa%259e%25e3%2581%258cbim%25e3%2582%2592%25e5%258b%2595%25e3%2581%258b%25e3%2581%2599%25e6%2599%2582%25e4%25bb%25a3",
       "description": "「もっとBIMを活かしたい、でも操作が難しくて追いつかない」——そう感じたことはありませんか。Revit MCPを使えば、普通の言葉でBIMを動かせる時代が、もうすぐそこまで来ています。この記事を読み終えたとき、あなたの [...] <p>The post Revit MCPで変わる7つの現場—自然言語がBIMを動かす時代へ first appeared on 生成AIと建設DX.</p>...",
@@ -169,6 +159,16 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/featured_image_1200x630_under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "埋設管を掘る前に確認すべきこと｜AI・3D探査が変えるインフラDXの全貌",
+      "link": "https://axconstdx.com/2026/03/28/%e5%9f%8b%e8%a8%ad%e7%ae%a1%e3%82%92%e6%8e%98%e3%82%8b%e5%89%8d%e3%81%ab%e7%a2%ba%e8%aa%8d%e3%81%99%e3%81%b9%e3%81%8d%e3%81%93%e3%81%a8%ef%bd%9cai%e3%83%bb3d%e6%8e%a2%e6%9f%bb%e3%81%8c%e5%a4%89/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%259f%258b%25e8%25a8%25ad%25e7%25ae%25a1%25e3%2582%2592%25e6%258e%2598%25e3%2582%258b%25e5%2589%258d%25e3%2581%25ab%25e7%25a2%25ba%25e8%25aa%258d%25e3%2581%2599%25e3%2581%25b9%25e3%2581%258d%25e3%2581%2593%25e3%2581%25a8%25ef%25bd%259cai%25e3%2583%25bb3d%25e6%258e%25a2%25e6%259f%25bb%25e3%2581%258c%25e5%25a4%2589",
+      "description": "「地下に何が埋まっているか分からない」——その不安は、今も全国の工事現場で現実になっています。埋設管の位置不明は、ガス漏れや道路陥没といった取り返しのつかない事故に直結する問題です。この記事を読めば、非破壊探査からAIに [...] <p>The post 埋設管を掘る前に確認すべきこと｜AI・3D探査が変えるインフラDXの全貌 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sat, 28 Mar 2026 01:36:19 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/wp_eyecatch_1200x630_under100kb-1024x538.jpg",
       "language": "ja"
     },
     {
