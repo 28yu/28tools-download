@@ -1,8 +1,9 @@
 {
-  "lastUpdated": "2026-03-30T08:01:08.100459",
+  "lastUpdated": "2026-03-30T08:14:28.546041",
   "articles": [
     {
       "title": "議事録AIでZoom会議の効率を向上！3つの自動化術を解説",
+      "titleJa": null,
       "link": "https://ainow.ai/2025/08/28/277802/?utm_source=rss&utm_medium=rss&utm_campaign=%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2ai%25e3%2581%25a7zoom%25e4%25bc%259a%25e8%25ad%25b0%25e3%2581%25ae%25e5%258a%25b9%25e7%258e%2587%25e3%2582%2592%25e5%2590%2591%25e4%25b8%258a%25ef%25bc%25813%25e3%2581%25a4%25e3%2581%25ae%25e8%2587%25aa%25e5%258b%2595%25e5%258c%2596%25e8%25a1%2593%25e3%2582%2592%25e8%25a7%25a3",
       "description": "&#12300;Zoom&#12398;&#20250;&#35696;&#37682;&#12434;&#12418;&#12387;&#12392;&#12473;&#12512;&#12540;&#12474;&#12395;&#33258;&#21205;&#21270;&#12375;&#12390;&#12289;&#26989;&#21209;&#12398;&#21177;&#29...",
       "publishedDate": "Wed, 27 Aug 2025 20:15:31 +0000",
@@ -13,6 +14,7 @@
     },
     {
       "title": "Web会議の議事録作成を効率化するAIツールの選び方とおすすめ5選",
+      "titleJa": null,
       "link": "https://ainow.ai/2025/08/28/277799/?utm_source=rss&utm_medium=rss&utm_campaign=web%25e4%25bc%259a%25e8%25ad%25b0%25e3%2581%25ae%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2%25e4%25bd%259c%25e6%2588%2590%25e3%2582%2592%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25e3%2581%2599%25e3%2582%258bai%25e3%2583%2584%25e3%2583%25bc%25e3%2583%25ab%25e3%2581%25ae%25e9%2581%25b8%25e3%2581%25b3%25e6%2596%25b9",
       "description": "&#12300;&#20250;&#35696;&#24460;&#12398;&#35696;&#20107;&#37682;&#20316;&#25104;&#12395;&#26178;&#38291;&#12364;&#12363;&#12363;&#12426;&#12377;&#12366;&#12390;&#12289;&#29983;&#29987;&#24615;&#12364;...",
       "publishedDate": "Wed, 27 Aug 2025 20:01:29 +0000",
@@ -23,6 +25,7 @@
     },
     {
       "title": "議事録AIツール「tl;dv」で効率化を実現する3つの方法",
+      "titleJa": null,
       "link": "https://ainow.ai/2025/08/28/277796/?utm_source=rss&utm_medium=rss&utm_campaign=%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2ai%25e3%2583%2584%25e3%2583%25bc%25e3%2583%25ab%25e3%2580%258ctldv%25e3%2580%258d%25e3%2581%25a7%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25e3%2582%2592%25e5%25ae%259f%25e7%258f%25be%25e3%2581%2599%25e3%2582%258b3%25e3%2581%25a4%25e3%2581%25ae%25e6%2596%25b9%25e6%25b3%2595",
       "description": "&#12300;&#26032;&#12375;&#12356;AI&#12484;&#12540;&#12523;&#12434;&#20351;&#12387;&#12390;&#26989;&#21209;&#12434;&#12418;&#12387;&#12392;&#21177;&#29575;&#21270;&#12375;&#12383;&#12356;&#12364;&#1228...",
       "publishedDate": "Wed, 27 Aug 2025 19:32:55 +0000",
@@ -33,6 +36,7 @@
     },
     {
       "title": "Roundtables: The Next Era of Space Exploration",
+      "titleJa": "ラウンドテーブル: 宇宙探査の次の時代",
       "link": "https://www.technologyreview.com/2026/03/25/1134664/roundtables-the-next-era-of-space-exploration/",
       "description": "Listen to the session or watch below Whether it&#8217;s the race to find life on Mars, the campaign to outsmart killer asteroids, or the quest to make the moon a permanent home to astronauts, scientis...",
       "publishedDate": "Wed, 25 Mar 2026 17:26:26 +0000",
@@ -43,6 +47,7 @@
     },
     {
       "title": "Build with Lyria 3, our newest music generation model",
+      "titleJa": "最新の音楽生成モデルである Lyria 3 で構築",
       "link": "https://blog.google/innovation-and-ai/technology/developers-tools/lyria-3-developers/",
       "description": "Google Lyria teaser...",
       "publishedDate": "Wed, 25 Mar 2026 16:00:00 +0000",
@@ -53,6 +58,7 @@
     },
     {
       "title": "Lyria 3 Pro: Create longer tracks in more Google products",
+      "titleJa": "Lyria 3 Pro: より多くの Google サービスで長いトラックを作成",
       "link": "https://blog.google/innovation-and-ai/technology/ai/lyria-3-pro/",
       "description": "Sizzle video showing new capabilities from Lyria 3 Pro...",
       "publishedDate": "Wed, 25 Mar 2026 16:00:00 +0000",
@@ -63,6 +69,7 @@
     },
     {
       "title": "Why this battery company is pivoting to AI",
+      "titleJa": "この電池会社が AI に軸足を移す理由",
       "link": "https://www.technologyreview.com/2026/03/25/1134657/battery-company-ai-pivot-ses/",
       "description": "Qichao Hu doesn’t mince words about how he sees the state of the battery industry. “Almost every Western battery company has either died or is going to die. It’s kind of the reality,” he says. Hu is t...",
       "publishedDate": "Wed, 25 Mar 2026 15:02:50 +0000",
@@ -73,6 +80,7 @@
     },
     {
       "title": "This startup wants to change how mathematicians do math",
+      "titleJa": "このスタートアップは数学者の数学のやり方を変えたいと考えています",
       "link": "https://www.technologyreview.com/2026/03/25/1134642/this-startup-wants-to-change-how-mathematicians-do-math/",
       "description": "Axiom Math, a startup based in Palo Alto, California, has released a free new AI tool for mathematicians, designed to discover mathematical patterns that could unlock solutions to long-standing proble...",
       "publishedDate": "Wed, 25 Mar 2026 13:59:17 +0000",
@@ -83,6 +91,7 @@
     },
     {
       "title": "The Download: reawakening frozen brains, and the AI Hype Index returns",
+      "titleJa": "ダウンロード: 凍った脳が目覚め、AI ハイプ インデックスが復活",
       "link": "https://www.technologyreview.com/2026/03/25/1134636/the-download-reawakening-frozen-brains-and-the-ai-hype-index-returns/",
       "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. This scientist rewarmed and studied pieces of his ...",
       "publishedDate": "Wed, 25 Mar 2026 12:47:44 +0000",
@@ -93,6 +102,7 @@
     },
     {
       "title": "Inside our approach to the Model Spec",
+      "titleJa": "モデルスペックへのアプローチの内部",
       "link": "https://openai.com/index/our-approach-to-the-model-spec",
       "description": "Learn how OpenAI’s Model Spec serves as a public framework for model behavior, balancing safety, user freedom, and accountability as AI systems advance....",
       "publishedDate": "Wed, 25 Mar 2026 10:00:00 GMT",
@@ -103,6 +113,7 @@
     },
     {
       "title": "Introducing the OpenAI Safety Bug Bounty program",
+      "titleJa": "OpenAI 安全バグ報奨金プログラムの紹介",
       "link": "https://openai.com/index/safety-bug-bounty",
       "description": "OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration....",
       "publishedDate": "Wed, 25 Mar 2026 00:00:00 GMT",
@@ -113,6 +124,7 @@
     },
     {
       "title": "Rakuten fixes issues twice as fast with Codex",
+      "titleJa": "楽天、Codex を使用して問題を 2 倍の速さで解決",
       "link": "https://openai.com/index/rakuten",
       "description": "Rakuten uses Codex, the coding agent from OpenAI, to ship software faster and safer, reducing MTTR 50%, automating CI/CD reviews, and delivering full-stack builds in weeks....",
       "publishedDate": "Wed, 11 Mar 2026 13:00:00 GMT",
@@ -123,6 +135,7 @@
     },
     {
       "title": "Use Canvas in AI Mode to get things done and bring your ideas to life, right in Search.",
+      "titleJa": "AI モードで Canvas を使用すると、検索内で作業を完了し、アイデアを実現できます。",
       "link": "https://blog.google/products-and-platforms/products/search/ai-mode-canvas-writing-coding/",
       "description": "Canvas in AI Mode is now available for everyone in the U.S. Plus, it can now help you draft documents or build interactive tools....",
       "publishedDate": "Wed, 04 Mar 2026 17:00:00 +0000",
@@ -133,6 +146,7 @@
     },
     {
       "title": "Helping developers build safer AI experiences for teens",
+      "titleJa": "開発者による十代の若者向けのより安全な AI エクスペリエンスの構築を支援",
       "link": "https://openai.com/index/teen-safety-policies-gpt-oss-safeguard",
       "description": "OpenAI releases prompt-based teen safety policies for developers using gpt-oss-safeguard, helping moderate age-specific risks in AI systems....",
       "publishedDate": "Tue, 24 Mar 2026 11:00:00 GMT",
@@ -143,6 +157,7 @@
     },
     {
       "title": "Powering product discovery in ChatGPT",
+      "titleJa": "ChatGPT での製品発見を強化する",
       "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
       "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration....",
       "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
@@ -153,6 +168,7 @@
     },
     {
       "title": "Update on the OpenAI Foundation",
+      "titleJa": "OpenAI Foundation に関する最新情報",
       "link": "https://openai.com/index/update-on-the-openai-foundation",
       "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs....",
       "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
@@ -163,6 +179,7 @@
     },
     {
       "title": "A New Framework for Evaluating Voice Agents (EVA)",
+      "titleJa": "音声エージェント (EVA) を評価するための新しいフレームワーク",
       "link": "https://huggingface.co/blog/ServiceNow-AI/eva",
       "description": "...",
       "publishedDate": "Tue, 24 Mar 2026 02:01:52 GMT",
@@ -173,6 +190,7 @@
     },
     {
       "title": "State of Open Source on Hugging Face: Spring 2026",
+      "titleJa": "ハグフェイスに関するオープンソースの状況: 2026 年春",
       "link": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026",
       "description": "...",
       "publishedDate": "Tue, 17 Mar 2026 16:37:55 GMT",
@@ -183,6 +201,7 @@
     },
     {
       "title": "Bringing the power of Personal Intelligence to more people",
+      "titleJa": "パーソナルインテリジェンスのパワーをより多くの人に届ける",
       "link": "https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion/",
       "description": "Bubble that says \"Personal Intelligence\" with Google G, Google Photos logo, and Gmail logo around it...",
       "publishedDate": "Tue, 17 Mar 2026 16:00:00 +0000",
@@ -193,6 +212,7 @@
     },
     {
       "title": "Our latest investment in open source security for the AI era",
+      "titleJa": "AI 時代に向けたオープンソース セキュリティへの最新の投資",
       "link": "https://blog.google/innovation-and-ai/technology/safety-security/ai-powered-open-source-security/",
       "description": "A collage including security icons and photos of hands clasped, a man looking at a computer, and two people pointing at something off camera...",
       "publishedDate": "Tue, 17 Mar 2026 16:00:00 +0000",
@@ -203,6 +223,7 @@
     },
     {
       "title": "Holotron-12B - High Throughput Computer Use Agent",
+      "titleJa": "Holotron-12B - 高スループットのコンピューター使用エージェント",
       "link": "https://huggingface.co/blog/Hcompany/holotron-12b",
       "description": "...",
       "publishedDate": "Tue, 17 Mar 2026 12:33:39 GMT",
@@ -213,6 +234,7 @@
     },
     {
       "title": "Introducing GPT-5.4 mini and nano",
+      "titleJa": "GPT-5.4ミニとナノの紹介",
       "link": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano",
       "description": "GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads....",
       "publishedDate": "Tue, 17 Mar 2026 10:00:00 GMT",
@@ -223,6 +245,7 @@
     },
     {
       "title": "OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first",
+      "titleJa": "OpenAI Japan、ティーンエイジャーの安全を最優先にするジャパン・ティーン・セーフティ・ブループリントを発表",
       "link": "https://openai.com/index/japan-teen-safety-blueprint",
       "description": "OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using generative AI....",
       "publishedDate": "Tue, 17 Mar 2026 10:00:00 GMT",
@@ -233,6 +256,7 @@
     },
     {
       "title": "Equipping workers with insights about compensation",
+      "titleJa": "従業員に報酬に関する洞察を提供する",
       "link": "https://openai.com/index/equipping-workers-with-insights-about-compensation",
       "description": "New research shows Americans send nearly 3 million daily messages to ChatGPT asking about compensation and earnings, helping close the wage information gap....",
       "publishedDate": "Tue, 17 Mar 2026 00:00:00 GMT",
@@ -243,6 +267,7 @@
     },
     {
       "title": "Gemini in Google Sheets just achieved state-of-the-art performance.",
+      "titleJa": "Google スプレッドシートの Gemini は最先端のパフォーマンスを達成しました。",
       "link": "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art/",
       "description": "Today we announced new beta features for Gemini in Sheets to help you create, organize and edit entire sheets, from basic tasks to complex data analysis — just describe …...",
       "publishedDate": "Tue, 10 Mar 2026 13:00:00 +0000",
@@ -253,6 +278,7 @@
     },
     {
       "title": "Introducing Storage Buckets on the Hugging Face Hub",
+      "titleJa": "ハグフェイスハブに収納バケツが登場",
       "link": "https://huggingface.co/blog/storage-buckets",
       "description": "...",
       "publishedDate": "Tue, 10 Mar 2026 00:00:00 GMT",
@@ -263,6 +289,7 @@
     },
     {
       "title": "Keep the Tokens Flowing: Lessons from 16 Open-Source RL Libraries",
+      "titleJa": "トークンの流れを維持する: 16 のオープンソース RL ライブラリからの教訓",
       "link": "https://huggingface.co/blog/async-rl-training-landscape",
       "description": "...",
       "publishedDate": "Tue, 10 Mar 2026 00:00:00 GMT",
@@ -273,6 +300,7 @@
     },
     {
       "title": "Create new worlds in Project Genie with these 4 tips",
+      "titleJa": "これらの 4 つのヒントを参考にして、Project Genie で新しい世界を作成してください",
       "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/tips-prompt-writing-project-genie/",
       "description": "A screen capture of Project Genie, an experimental interface showing a grid of circular images, many of which appear to be 360-degree views, with a large, central black globe labeled Create your own...",
       "publishedDate": "Tue, 03 Mar 2026 17:00:00 +0000",
@@ -283,6 +311,7 @@
     },
     {
       "title": "PRX Part 3 — Training a Text-to-Image Model in 24h!",
+      "titleJa": "PRX パート 3 — Text-to-Image モデルを 24 時間でトレーニング!",
       "link": "https://huggingface.co/blog/Photoroom/prx-part3",
       "description": "...",
       "publishedDate": "Tue, 03 Mar 2026 16:50:49 GMT",
@@ -293,6 +322,7 @@
     },
     {
       "title": "Watch James Manyika talk AI and creativity with LL COOL J.",
+      "titleJa": "James Manyika が LL COOL J と AI と創造性について語る様子をご覧ください。",
       "link": "https://blog.google/innovation-and-ai/technology/ai/ll-cool-j-dialogues/",
       "description": "In the latest episode of our Dialogues on Technology and Society series, LL COOL J sits down with James Manyika....",
       "publishedDate": "Thu, 26 Mar 2026 17:00:00 +0000",
@@ -303,6 +333,7 @@
     },
     {
       "title": "Transform your headphones into a live personal translator on iOS.",
+      "titleJa": "ヘッドフォンを iOS 上のライブ個人翻訳者に変身させます。",
       "link": "https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones/",
       "description": "Google Translate’s Live translate with headphones is officially arriving on iOS! And we're expanding the capability for both iOS and Android users to even more countries…...",
       "publishedDate": "Thu, 26 Mar 2026 16:00:00 +0000",
@@ -313,6 +344,7 @@
     },
     {
       "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+      "titleJa": "Gemini 3.1 Flash Live: オーディオ AI をより自然で信頼性の高いものに",
       "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
       "description": "The Gemini emblem sits next to text reading 'Gemini 3.1 Flash Live'. The background has blue, multicolored dots making up a microphone icon...",
       "publishedDate": "Thu, 26 Mar 2026 15:21:00 +0000",
@@ -323,6 +355,7 @@
     },
     {
       "title": "Search Live is expanding globally",
+      "titleJa": "Search Live は世界的に拡大しています",
       "link": "https://blog.google/products-and-platforms/products/search/search-live-global-expansion/",
       "description": "A graphic with the words Search Live shown underneath a waveform icon. To the right, a phone shows the Google app with Search Live open. The camera is pointing at trees in a forest....",
       "publishedDate": "Thu, 26 Mar 2026 15:00:00 +0000",
@@ -333,6 +366,7 @@
     },
     {
       "title": "The Download: a battery pivot to AI, and rewriting math",
+      "titleJa": "ダウンロード: AI へのバッテリーのピボットと数学の書き換え",
       "link": "https://www.technologyreview.com/2026/03/26/1134697/the-download-battery-ai-pivot-new-ai-tool-math/",
       "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Why this battery company is pivoting to AI&#160; Q...",
       "publishedDate": "Thu, 26 Mar 2026 12:42:53 +0000",
@@ -343,6 +377,7 @@
     },
     {
       "title": "The snow gods: How a couple of ski bums built the internet’s best weather app",
+      "titleJa": "雪の神様: 数人のスキー愛好家がインターネット最高の天気アプリをどのように構築したか",
       "link": "https://www.technologyreview.com/2026/03/26/1134470/the-snow-gods-how-a-couple-of-ski-bums-built-the-internets-best-weather-app/",
       "description": "The best snow-forecasting app for skiers and snowboarders isn’t from any of the federally funded weather services. Nor from any of the big-name brands. It’s an independent app startup that leverages g...",
       "publishedDate": "Thu, 26 Mar 2026 10:00:00 +0000",
@@ -353,6 +388,7 @@
     },
     {
       "title": "Are high gas prices good news for EVs? It’s complicated.",
+      "titleJa": "ガソリン価格の高騰はEVにとって朗報か?それは複雑です。",
       "link": "https://www.technologyreview.com/2026/03/26/1134677/gas-prices-electric-vehicles/",
       "description": "I live in a dense city with plentiful public transportation options and limited parking, so I don’t own a car. I’m often utterly clueless about the current price of gasoline. But as the conflict in Ir...",
       "publishedDate": "Thu, 26 Mar 2026 10:00:00 +0000",
@@ -363,6 +399,7 @@
     },
     {
       "title": "Mixture of Experts (MoEs) in Transformers",
+      "titleJa": "トランスフォーマーにおける専門家 (MoE) の混合",
       "link": "https://huggingface.co/blog/moe-transformers",
       "description": "...",
       "publishedDate": "Thu, 26 Feb 2026 00:00:00 GMT",
@@ -373,6 +410,7 @@
     },
     {
       "title": "AIエージェントツールで始める業務革命、重要な5つのステップ",
+      "titleJa": null,
       "link": "https://ainow.ai/2025/08/21/277751/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e3%2582%25a8%25e3%2583%25bc%25e3%2582%25b8%25e3%2582%25a7%25e3%2583%25b3%25e3%2583%2588%25e3%2583%2584%25e3%2583%25bc%25e3%2583%25ab%25e3%2581%25a7%25e5%25a7%258b%25e3%2582%2581%25e3%2582%258b%25e6%25a5%25ad%25e5%258b%2599%25e9%259d%25a9%25e5%2591%25bd%25e3%2580%2581%25e9%2587%258d%25e8%25a6%2581%25e3%2581%25aa5-2",
       "description": "&#12300;AI&#12456;&#12540;&#12472;&#12455;&#12531;&#12488;&#12484;&#12540;&#12523;&#12398;&#23566;&#20837;&#12391;&#26989;&#21209;&#21177;&#29575;&#12434;&#19978;&#12370;&#12383;&#12356;&#12364;&#1228...",
       "publishedDate": "Thu, 21 Aug 2025 10:33:00 +0000",
@@ -383,6 +421,7 @@
     },
     {
       "title": "【ChatGPTで時短】議事録AIプロンプトの効率化テクニック5選｜コピペで使える例文付き",
+      "titleJa": null,
       "link": "https://ainow.ai/2025/08/21/277789/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2580%2590chatgpt%25e3%2581%25a7%25e6%2599%2582%25e7%259f%25ad%25e3%2580%2591%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2ai%25e3%2583%2597%25e3%2583%25ad%25e3%2583%25b3%25e3%2583%2597%25e3%2583%2588%25e3%2581%25ae%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25e3%2583%2586%25e3%2582%25af%25e3%2583%258b%25e3%2583%2583",
       "description": "&#12300;&#35696;&#20107;&#37682;&#20316;&#25104;&#12395;&#26178;&#38291;&#12364;&#12363;&#12363;&#12426;&#12377;&#12366;&#12390;&#12289;&#20182;&#12398;&#37325;&#35201;&#12394;&#26989;&#21209;&#12395;...",
       "publishedDate": "Thu, 21 Aug 2025 06:02:00 +0000",
@@ -393,6 +432,7 @@
     },
     {
       "title": "議事録AI活用で会議効率化！Teamsで始める4つの手法",
+      "titleJa": null,
       "link": "https://ainow.ai/2025/08/21/277787/?utm_source=rss&utm_medium=rss&utm_campaign=%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2ai%25e6%25b4%25bb%25e7%2594%25a8%25e3%2581%25a7%25e4%25bc%259a%25e8%25ad%25b0%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25ef%25bc%2581teams%25e3%2581%25a7%25e5%25a7%258b%25e3%2582%2581%25e3%2582%258b4%25e3%2581%25a4%25e3%2581%25ae%25e6%2589%258b%25e6%25b3%2595",
       "description": "&#12300;Microsoft Teams&#12391;&#12398;&#20250;&#35696;&#12364;&#22679;&#12360;&#12289;&#35696;&#20107;&#37682;&#20316;&#25104;&#12398;&#25163;&#38291;&#12434;&#28187;&#12425;&#12375;&#12390;&#20182;&...",
       "publishedDate": "Thu, 21 Aug 2025 04:47:00 +0000",
@@ -403,6 +443,7 @@
     },
     {
       "title": "AI議事録の情報漏洩を防ぐ5つの具体策と事例紹介",
+      "titleJa": null,
       "link": "https://ainow.ai/2025/08/21/277784/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2%25e3%2581%25ae%25e6%2583%2585%25e5%25a0%25b1%25e6%25bc%258f%25e6%25b4%25a9%25e3%2582%2592%25e9%2598%25b2%25e3%2581%25905%25e3%2581%25a4%25e3%2581%25ae%25e5%2585%25b7%25e4%25bd%2593%25e7%25ad%2596%25e3%2581%25a8%25e4%25ba%258b%25e4%25be%258b%25e7%25b4%25b9%25e4%25bb%258b",
       "description": "&#12300;AI&#12434;&#20351;&#12387;&#12383;&#35696;&#20107;&#37682;&#20316;&#25104;&#12434;&#23566;&#20837;&#12375;&#12383;&#12356;&#12369;&#12428;&#12393;&#12289;&#24773;&#22577;&#28431;&#27945;&#1239...",
       "publishedDate": "Thu, 21 Aug 2025 04:40:00 +0000",
@@ -413,6 +454,7 @@
     },
     {
       "title": "Google Meetの議事録を自動化！無料で使えるAIツール5選",
+      "titleJa": null,
       "link": "https://ainow.ai/2025/08/21/277771/?utm_source=rss&utm_medium=rss&utm_campaign=teams%25e4%25bc%259a%25e8%25ad%25b0%25e3%2581%25ae%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2%25e3%2582%2592ai%25e3%2581%25a7%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25e3%2581%2599%25e3%2582%258b%25e3%2581%25b9%25e3%2581%258d%25e7%2590%2586%25e7%2594%25b1",
       "description": "&#12300;&#12458;&#12531;&#12521;&#12452;&#12531;&#20250;&#35696;&#12398;&#12383;&#12403;&#12395;&#25163;&#21205;&#12391;&#26178;&#38291;&#12434;&#12363;&#12369;&#12390;&#35696;&#20107;&#37682;&#12434;...",
       "publishedDate": "Thu, 21 Aug 2025 03:32:00 +0000",
@@ -423,6 +465,7 @@
     },
     {
       "title": "# Google AI Studioで議事録を劇的に効率化する3つの秘訣",
+      "titleJa": null,
       "link": "https://ainow.ai/2025/08/21/277766/?utm_source=rss&utm_medium=rss&utm_campaign=google-ai-studio%25e3%2581%25a7%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2%25e3%2582%2592%25e5%258a%2587%25e7%259a%2584%25e3%2581%25ab%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25e3%2581%2599%25e3%2582%258b3%25e3%2581%25a4%25e3%2581%25ae%25e7%25a7%2598%25e8%25a8%25a3",
       "description": "&#12458;&#12531;&#12521;&#12452;&#12531;&#20250;&#35696;&#12391;&#12398;&#35696;&#20107;&#37682;&#20316;&#25104;&#12395;&#26178;&#38291;&#12364;&#12363;&#12363;&#12426;&#12377;&#12366;&#12390;&#12289;...",
       "publishedDate": "Thu, 21 Aug 2025 02:46:00 +0000",
@@ -433,6 +476,7 @@
     },
     {
       "title": "ミーティング議事録AI活用法：効率化の鍵になる5つの選び方",
+      "titleJa": null,
       "link": "https://ainow.ai/2025/08/21/277773/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2583%259f%25e3%2583%25bc%25e3%2583%2586%25e3%2582%25a3%25e3%2583%25b3%25e3%2582%25b0%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2ai%25e6%25b4%25bb%25e7%2594%25a8%25e6%25b3%2595%25ef%25bc%259a%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25e3%2581%25ae%25e9%258d%25b5%25e3%2581%25ab%25e3%2581%25aa%25e3%2582%258b5",
       "description": "&#12300;&#12511;&#12540;&#12486;&#12451;&#12531;&#12464;&#12398;&#35696;&#20107;&#37682;&#20316;&#25104;&#12434;&#12418;&#12387;&#12392;&#21177;&#29575;&#30340;&#12395;&#33258;&#21205;&#21270;&#12375;...",
       "publishedDate": "Thu, 21 Aug 2025 01:44:00 +0000",
@@ -443,6 +487,7 @@
     },
     {
       "title": "How we monitor internal coding agents for misalignment",
+      "titleJa": "内部コーディングエージェントの位置ずれを監視する方法",
       "link": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment",
       "description": "How OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents—analyzing real-world deployments to detect risks and strengthen AI safety safeguards....",
       "publishedDate": "Thu, 19 Mar 2026 10:00:00 GMT",
@@ -453,6 +498,7 @@
     },
     {
       "title": "OpenAI to acquire Astral",
+      "titleJa": "OpenAIがAstralを買収へ",
       "link": "https://openai.com/index/openai-to-acquire-astral",
       "description": "Accelerates Codex growth to power the next generation of Python developer tools...",
       "publishedDate": "Thu, 19 Mar 2026 00:00:00 GMT",
@@ -463,6 +509,7 @@
     },
     {
       "title": "How AI is helping improve heart health in rural Australia",
+      "titleJa": "AI がオーストラリアの田舎の心臓の健康改善にどのように貢献しているか",
       "link": "https://blog.google/innovation-and-ai/technology/health/google-ai-heart-health-australia/",
       "description": "A doctor is sitting across a desk from a patient. The doctor is holding a tablet and a pen. Medical charts renderings are in the background....",
       "publishedDate": "Thu, 12 Mar 2026 15:00:00 +0000",
@@ -473,6 +520,7 @@
     },
     {
       "title": "Ask a Techspert: How does AI understand my visual searches?",
+      "titleJa": "Techspert に聞く: AI は私の視覚的な検索をどのように理解しますか?",
       "link": "https://blog.google/company-news/inside-google/googlers/how-google-ai-visual-search-works/",
       "description": "Mobile phone with a search bar that says \"Ask anything\"...",
       "publishedDate": "Thu, 05 Mar 2026 18:00:00 +0000",
@@ -483,6 +531,7 @@
     },
     {
       "title": "The latest AI news we announced in February",
+      "titleJa": "2月に発表したAIの最新ニュース",
       "link": "https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026/",
       "description": "an MP4 of a carousel with images reading \"Gemini 3.1 Pro\" and \"Nano Banana 2\"...",
       "publishedDate": "Thu, 05 Mar 2026 16:30:00 +0000",
@@ -493,6 +542,7 @@
     },
     {
       "title": "Bringing Robotics AI to Embedded Platforms: Dataset Recording, VLA Fine‑Tuning, and On‑Device Optimizations",
+      "titleJa": "ロボット AI を組み込みプラットフォームに導入: データセットの記録、VLA 微調整、オンデバイスの最適化",
       "link": "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms",
       "description": "...",
       "publishedDate": "Thu, 05 Mar 2026 14:16:49 GMT",
@@ -503,6 +553,7 @@
     },
     {
       "title": "Introducing Modular Diffusers - Composable Building Blocks for Diffusion Pipelines",
+      "titleJa": "モジュラーディフ​​ューザーのご紹介 - 拡散パイプライン用の構成可能なビルディングブロック",
       "link": "https://huggingface.co/blog/modular-diffusers",
       "description": "...",
       "publishedDate": "Thu, 05 Mar 2026 00:00:00 GMT",
@@ -513,6 +564,7 @@
     },
     {
       "title": "Helping disaster response teams turn AI into action across Asia",
+      "titleJa": "災害対応チームがアジア全域で AI を活用できるよう支援",
       "link": "https://openai.com/index/helping-disaster-response-teams-asia",
       "description": "AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation...",
       "publishedDate": "Sun, 29 Mar 2026 22:15:00 GMT",
@@ -523,6 +575,7 @@
     },
     {
       "title": "A woman’s uterus has been kept alive outside the body for the first time",
+      "titleJa": "女性の子宮が初めて体外で生き続けた",
       "link": "https://www.technologyreview.com/2026/03/28/1134766/womans-uterus-kept-alive-outside-the-body-first/",
       "description": "“Think of this as a human body,” says Javier González. In front of me is essentially a metal box on wheels. Standing at around a meter in height, it reminds me of a stainless-steel counter in a restau...",
       "publishedDate": "Sat, 28 Mar 2026 09:00:00 +0000",
@@ -533,6 +586,7 @@
     },
     {
       "title": "Creating with Sora Safely",
+      "titleJa": "Sora で安全に作成する",
       "link": "https://openai.com/index/creating-with-sora-safely",
       "description": "To address the novel safety challenges posed by a state-of-the-art video model as well as a new social creation platform, we’ve built Sora 2 and the Sora app with safety at the foundation. Our approac...",
       "publishedDate": "Mon, 23 Mar 2026 00:00:00 GMT",
@@ -543,6 +597,7 @@
     },
     {
       "title": "Why Codex Security Doesn’t Include a SAST Report",
+      "titleJa": "Codex Security に SAST レポートが含まれない理由",
       "link": "https://openai.com/index/why-codex-security-doesnt-include-sast",
       "description": "A deep dive into why Codex Security doesn’t rely on traditional SAST, instead using AI-driven constraint reasoning and validation to find real vulnerabilities with fewer false positives....",
       "publishedDate": "Mon, 16 Mar 2026 00:00:00 GMT",
@@ -553,6 +608,7 @@
     },
     {
       "title": "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
+      "titleJa": "Ulysses シーケンス並列処理: 100 万トークンのコンテキストを使用したトレーニング",
       "link": "https://huggingface.co/blog/ulysses-sp",
       "description": "...",
       "publishedDate": "Mon, 09 Mar 2026 00:00:00 GMT",
@@ -563,6 +619,7 @@
     },
     {
       "title": "LeRobot v0.5.0: Scaling Every Dimension",
+      "titleJa": "LeRobot v0.5.0: あらゆる次元のスケーリング",
       "link": "https://huggingface.co/blog/lerobot-release-v050",
       "description": "...",
       "publishedDate": "Mon, 09 Mar 2026 00:00:00 GMT",
@@ -573,6 +630,7 @@
     },
     {
       "title": "STADLER reshapes knowledge work at a 230-year-old company",
+      "titleJa": "STADLER が 230 年の歴史を持つ企業のナレッジワークを再構築",
       "link": "https://openai.com/index/stadler",
       "description": "Learn how STADLER uses ChatGPT to transform knowledge work, saving time and accelerating productivity across 650 employees....",
       "publishedDate": "Fri, 27 Mar 2026 22:00:00 GMT",
@@ -583,6 +641,7 @@
     },
     {
       "title": "The Download: the internet’s best weather app, and why people freeze their brains",
+      "titleJa": "ダウンロード: インターネット最高の天気アプリ、そしてなぜ人々は脳をフリーズさせるのか",
       "link": "https://www.technologyreview.com/2026/03/27/1134755/the-download-best-weather-forecasting-app-why-people-freeze-brains/",
       "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How a couple of ski bums built the internet’s best...",
       "publishedDate": "Fri, 27 Mar 2026 12:32:54 +0000",
@@ -593,6 +652,7 @@
     },
     {
       "title": "Here’s why some people choose cryonics to store their bodies and brains after death",
+      "titleJa": "死後に自分の体や脳を保存するために冷凍保存を選択する人がいる理由は次のとおりです",
       "link": "https://www.technologyreview.com/2026/03/27/1134705/cryonics-store-bodies-brains-after-death/",
       "description": "This week I reported on some rather unusual research that focuses on the brain of L. Stephen Coles. Coles was a gerontologist who died from pancreatic cancer in 2014. He had spent the latter part of h...",
       "publishedDate": "Fri, 27 Mar 2026 09:00:00 +0000",
@@ -603,6 +663,7 @@
     },
     {
       "title": "Liberate your OpenClaw",
+      "titleJa": "OpenClaw を解放する",
       "link": "https://huggingface.co/blog/liberate-your-openclaw",
       "description": "...",
       "publishedDate": "Fri, 27 Mar 2026 00:00:00 GMT",
@@ -613,6 +674,7 @@
     },
     {
       "title": "Build a Domain-Specific Embedding Model in Under a Day",
+      "titleJa": "ドメイン固有の埋め込みモデルを 1 日で構築",
       "link": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune",
       "description": "...",
       "publishedDate": "Fri, 20 Mar 2026 19:38:16 GMT",
@@ -623,6 +685,7 @@
     },
     {
       "title": "What's New in Mellea 0.4.0 + Granite Libraries Release",
+      "titleJa": "Mellea 0.4.0 + Granite ライブラリ リリースの新機能",
       "link": "https://huggingface.co/blog/ibm-granite/granite-libraries",
       "description": "...",
       "publishedDate": "Fri, 20 Mar 2026 14:14:46 GMT",
@@ -633,6 +696,7 @@
     },
     {
       "title": "GGML and llama.cpp join HF to ensure the long-term progress of Local AI",
+      "titleJa": "GGML と llama.cpp が HF に参加し、ローカル AI の長期的な進歩を保証します",
       "link": "https://huggingface.co/blog/ggml-joins-hf",
       "description": "...",
       "publishedDate": "Fri, 20 Feb 2026 00:00:00 GMT",
@@ -643,6 +707,7 @@
     },
     {
       "title": "How our open-source AI model SpeciesNet is helping to promote wildlife conservation",
+      "titleJa": "当社のオープンソース AI モデル SpeciesNet が野生動物の保護促進にどのように貢献しているか",
       "link": "https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife/",
       "description": "Photos of animals being identified by the SpeciesNet AI model...",
       "publishedDate": "Fri, 06 Mar 2026 18:00:00 +0000",
@@ -653,6 +718,7 @@
     },
     {
       "title": "All the latest in AI &#8216;music&#8217;",
+      "titleJa": "AI「音楽」の最新情報のすべて",
       "link": "https://www.theverge.com/ai-artificial-intelligence/903196/ai-music-suno-udio-art-lawsuit",
       "description": "AI has touched every part of the music industry, from sample sourcing and demo recording, to serving up digital liner notes and building playlists. There are technical and legal challenges, fierce eth...",
       "publishedDate": "2026-03-29T21:32:14-04:00",
@@ -663,6 +729,7 @@
     },
     {
       "title": "Bluesky’s new app is an AI for customizing your feed",
+      "titleJa": "Bluesky の新しいアプリはフィードをカスタマイズする AI です",
       "link": "https://www.theverge.com/ai-artificial-intelligence/903190/bluesky-attie-ai-custom-feeds",
       "description": "The latest app from the team behind Bluesky is Attie, an AI assistant that lets you build your own algorithm. At the Atmosphere conference, Bluesky's former CEO, Jay Graber, and CTO Paul Frazee, unvei...",
       "publishedDate": "2026-03-29T17:44:41-04:00",
@@ -673,6 +740,7 @@
     },
     {
       "title": "Suno leans into customization with v5.5",
+      "titleJa": "Suno は v5.5 でカスタマイズに力を入れる",
       "link": "https://www.theverge.com/entertainment/903056/suno-ai-music-v5-5-model",
       "description": "Suno just released one of its biggest updates yet with v5.5 of its AI music model. Where previous updates focused mostly on improving fidelity and creating more natural vocals, v5.5 is about giving us...",
       "publishedDate": "2026-03-28T14:33:10-04:00",
@@ -683,6 +751,7 @@
     },
     {
       "title": "Why can’t TikTok identify AI generated ads when I can?",
+      "titleJa": "AI が生成した広告は識別できるのに、TikTok はなぜ識別できないのでしょうか?",
       "link": "https://www.theverge.com/ai-artificial-intelligence/900400/tiktok-ai-ads-labels-samsung-disclosure",
       "description": "I've been struggling to tell whether the ads appearing in my TikTok feeds have been made with generative AI tools. As someone who spends a great deal of time scrutinizing images and videos for the usu...",
       "publishedDate": "2026-03-28T10:00:00-04:00",
@@ -693,6 +762,7 @@
     },
     {
       "title": "Why OpenAI killed Sora",
+      "titleJa": "OpenAIがSoraを殺した理由",
       "link": "https://www.theverge.com/ai-artificial-intelligence/902368/openai-sora-dead-ai-video-generation-competition",
       "description": "On Tuesday morning, everything was business as usual at OpenAI. By the end of the day, the company had announced that it would scrap its video-generation app, Sora, and reverse plans for video generat...",
       "publishedDate": "2026-03-28T08:00:00-04:00",
@@ -703,6 +773,7 @@
     },
     {
       "title": "The latest in data centers, AI, and energy",
+      "titleJa": "データセンター、AI、エネルギーの最新情報",
       "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
       "description": "Massive new data centers are the physical foundation for tech companies’ hopes and dreams for AI. But the rush to expand warehouses full of energy-hungry servers has also kicked up fights across the w...",
       "publishedDate": "2026-03-27T14:35:53-04:00",
@@ -713,6 +784,7 @@
     },
     {
       "title": "Judge sides with Anthropic to temporarily block the Pentagon&#8217;s ban",
+      "titleJa": "判事は国防総省の禁止令を一時的に阻止するためにアントロピック側を支持",
       "link": "https://www.theverge.com/ai-artificial-intelligence/902149/anthropic-dod-pentagon-lawsuit-supply-chain-risk-injunction",
       "description": "After Anthropic's weeks-long standoff with the Pentagon, the company won one milestone: A judge granted Anthropic a preliminary injunction in its lawsuit, which sought to reverse its government blackl...",
       "publishedDate": "2026-03-26T20:33:44-04:00",
@@ -723,6 +795,7 @@
     },
     {
       "title": "David Sacks is no longer the White House AI and Crypto Czar",
+      "titleJa": "デビッド・サックスはもはやホワイトハウスのAIでも暗号皇帝でもない",
       "link": "https://www.theverge.com/policy/902140/david-sacks-out-ai-crypto-czar",
       "description": "David Sacks, the venture capitalist and tech billionaire who'd become Silicon Valley's primary advocate inside the White House and a key architect of its aggressive AI policy initiatives, revealed on ...",
       "publishedDate": "2026-03-26T19:40:22-04:00",
@@ -733,6 +806,7 @@
     },
     {
       "title": "Google is making it easier to import another AI’s memory into Gemini",
+      "titleJa": "Googleは、別のAIのメモリをGeminiに簡単にインポートできるようにしています",
       "link": "https://www.theverge.com/ai-artificial-intelligence/902085/google-gemini-import-memory-chat-history",
       "description": "After Anthropic updated its tool for copying another AI's memory into Claude earlier this month, Google Gemini is rolling out new \"Import Memory\" and \"Import Chat History\" features on desktop that can...",
       "publishedDate": "2026-03-26T17:44:37-04:00",
@@ -743,6 +817,7 @@
     },
     {
       "title": "Apple will reportedly allow other AI chatbots to plug into Siri",
+      "titleJa": "Appleは他のAIチャットボットをSiriに接続できるようにすると報じられている",
       "link": "https://www.theverge.com/tech/902048/apple-siri-ai-chatbot-update-ios-27",
       "description": "Apple's iOS 27 update will allow users to choose the AI chatbot they want to link with Siri. That's according to a report from Bloomberg's Mark Gurman, who says third-party chatbots downloaded from th...",
       "publishedDate": "2026-03-26T17:31:27-04:00",
