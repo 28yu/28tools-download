@@ -1,4 +1,505 @@
 {
-  "lastUpdated": "2026-03-30T00:00:00",
-  "articles": []
+  "lastUpdated": "2026-03-30T07:52:16.374798",
+  "articles": [
+    {
+      "title": "議事録AIでZoom会議の効率を向上！3つの自動化術を解説",
+      "link": "https://ainow.ai/2025/08/28/277802/?utm_source=rss&utm_medium=rss&utm_campaign=%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2ai%25e3%2581%25a7zoom%25e4%25bc%259a%25e8%25ad%25b0%25e3%2581%25ae%25e5%258a%25b9%25e7%258e%2587%25e3%2582%2592%25e5%2590%2591%25e4%25b8%258a%25ef%25bc%25813%25e3%2581%25a4%25e3%2581%25ae%25e8%2587%25aa%25e5%258b%2595%25e5%258c%2596%25e8%25a1%2593%25e3%2582%2592%25e8%25a7%25a3",
+      "description": "&#12300;Zoom&#12398;&#20250;&#35696;&#37682;&#12434;&#12418;&#12387;&#12392;&#12473;&#12512;&#12540;&#12474;&#12395;&#33258;&#21205;&#21270;&#12375;&#12390;&#12289;&#26989;&#21209;&#12398;&#21177;&#29...",
+      "publishedDate": "Wed, 27 Aug 2025 20:15:31 +0000",
+      "source": "AINOW",
+      "category": "general",
+      "thumbnail": null,
+      "language": "ja"
+    },
+    {
+      "title": "Web会議の議事録作成を効率化するAIツールの選び方とおすすめ5選",
+      "link": "https://ainow.ai/2025/08/28/277799/?utm_source=rss&utm_medium=rss&utm_campaign=web%25e4%25bc%259a%25e8%25ad%25b0%25e3%2581%25ae%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2%25e4%25bd%259c%25e6%2588%2590%25e3%2582%2592%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25e3%2581%2599%25e3%2582%258bai%25e3%2583%2584%25e3%2583%25bc%25e3%2583%25ab%25e3%2581%25ae%25e9%2581%25b8%25e3%2581%25b3%25e6%2596%25b9",
+      "description": "&#12300;&#20250;&#35696;&#24460;&#12398;&#35696;&#20107;&#37682;&#20316;&#25104;&#12395;&#26178;&#38291;&#12364;&#12363;&#12363;&#12426;&#12377;&#12366;&#12390;&#12289;&#29983;&#29987;&#24615;&#12364;...",
+      "publishedDate": "Wed, 27 Aug 2025 20:01:29 +0000",
+      "source": "AINOW",
+      "category": "general",
+      "thumbnail": null,
+      "language": "ja"
+    },
+    {
+      "title": "議事録AIツール「tl;dv」で効率化を実現する3つの方法",
+      "link": "https://ainow.ai/2025/08/28/277796/?utm_source=rss&utm_medium=rss&utm_campaign=%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2ai%25e3%2583%2584%25e3%2583%25bc%25e3%2583%25ab%25e3%2580%258ctldv%25e3%2580%258d%25e3%2581%25a7%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25e3%2582%2592%25e5%25ae%259f%25e7%258f%25be%25e3%2581%2599%25e3%2582%258b3%25e3%2581%25a4%25e3%2581%25ae%25e6%2596%25b9%25e6%25b3%2595",
+      "description": "&#12300;&#26032;&#12375;&#12356;AI&#12484;&#12540;&#12523;&#12434;&#20351;&#12387;&#12390;&#26989;&#21209;&#12434;&#12418;&#12387;&#12392;&#21177;&#29575;&#21270;&#12375;&#12383;&#12356;&#12364;&#1228...",
+      "publishedDate": "Wed, 27 Aug 2025 19:32:55 +0000",
+      "source": "AINOW",
+      "category": "general",
+      "thumbnail": null,
+      "language": "ja"
+    },
+    {
+      "title": "Roundtables: The Next Era of Space Exploration",
+      "link": "https://www.technologyreview.com/2026/03/25/1134664/roundtables-the-next-era-of-space-exploration/",
+      "description": "Listen to the session or watch below Whether it&#8217;s the race to find life on Mars, the campaign to outsmart killer asteroids, or the quest to make the moon a permanent home to astronauts, scientis...",
+      "publishedDate": "Wed, 25 Mar 2026 17:26:26 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Build with Lyria 3, our newest music generation model",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/lyria-3-developers/",
+      "description": "Google Lyria teaser...",
+      "publishedDate": "Wed, 25 Mar 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BuildWithLyria3_social.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Lyria 3 Pro: Create longer tracks in more Google products",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/lyria-3-pro/",
+      "description": "Sizzle video showing new capabilities from Lyria 3 Pro...",
+      "publishedDate": "Wed, 25 Mar 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Lyria-3-Pro_thumbnail.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Why this battery company is pivoting to AI",
+      "link": "https://www.technologyreview.com/2026/03/25/1134657/battery-company-ai-pivot-ses/",
+      "description": "Qichao Hu doesn’t mince words about how he sees the state of the battery industry. “Almost every Western battery company has either died or is going to die. It’s kind of the reality,” he says. Hu is t...",
+      "publishedDate": "Wed, 25 Mar 2026 15:02:50 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/MU-new-discoveryelectrolytes-in-SES-HQ-synthesis-foundry.jpg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "This startup wants to change how mathematicians do math",
+      "link": "https://www.technologyreview.com/2026/03/25/1134642/this-startup-wants-to-change-how-mathematicians-do-math/",
+      "description": "Axiom Math, a startup based in Palo Alto, California, has released a free new AI tool for mathematicians, designed to discover mathematical patterns that could unlock solutions to long-standing proble...",
+      "publishedDate": "Wed, 25 Mar 2026 13:59:17 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The Download: reawakening frozen brains, and the AI Hype Index returns",
+      "link": "https://www.technologyreview.com/2026/03/25/1134636/the-download-reawakening-frozen-brains-and-the-ai-hype-index-returns/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. This scientist rewarmed and studied pieces of his ...",
+      "publishedDate": "Wed, 25 Mar 2026 12:47:44 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/07/Asteroid_Redamonti_7.2.25.jpg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "Inside our approach to the Model Spec",
+      "link": "https://openai.com/index/our-approach-to-the-model-spec",
+      "description": "Learn how OpenAI’s Model Spec serves as a public framework for model behavior, balancing safety, user freedom, and accountability as AI systems advance....",
+      "publishedDate": "Wed, 25 Mar 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Introducing the OpenAI Safety Bug Bounty program",
+      "link": "https://openai.com/index/safety-bug-bounty",
+      "description": "OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration....",
+      "publishedDate": "Wed, 25 Mar 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Helping developers build safer AI experiences for teens",
+      "link": "https://openai.com/index/teen-safety-policies-gpt-oss-safeguard",
+      "description": "OpenAI releases prompt-based teen safety policies for developers using gpt-oss-safeguard, helping moderate age-specific risks in AI systems....",
+      "publishedDate": "Tue, 24 Mar 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Powering product discovery in ChatGPT",
+      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
+      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration....",
+      "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Update on the OpenAI Foundation",
+      "link": "https://openai.com/index/update-on-the-openai-foundation",
+      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs....",
+      "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "A New Framework for Evaluating Voice Agents (EVA)",
+      "link": "https://huggingface.co/blog/ServiceNow-AI/eva",
+      "description": "...",
+      "publishedDate": "Tue, 24 Mar 2026 02:01:52 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "State of Open Source on Hugging Face: Spring 2026",
+      "link": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026",
+      "description": "...",
+      "publishedDate": "Tue, 17 Mar 2026 16:37:55 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Bringing the power of Personal Intelligence to more people",
+      "link": "https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion/",
+      "description": "Bubble that says \"Personal Intelligence\" with Google G, Google Photos logo, and Gmail logo around it...",
+      "publishedDate": "Tue, 17 Mar 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Header_gl7r1il.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Our latest investment in open source security for the AI era",
+      "link": "https://blog.google/innovation-and-ai/technology/safety-security/ai-powered-open-source-security/",
+      "description": "A collage including security icons and photos of hands clasped, a man looking at a computer, and two people pointing at something off camera...",
+      "publishedDate": "Tue, 17 Mar 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/25367___BRS___Aspen_Security_Fo.max-600x600.format-webp_J9uPoFt.webp",
+      "language": "en"
+    },
+    {
+      "title": "Holotron-12B - High Throughput Computer Use Agent",
+      "link": "https://huggingface.co/blog/Hcompany/holotron-12b",
+      "description": "...",
+      "publishedDate": "Tue, 17 Mar 2026 12:33:39 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Gemini in Google Sheets just achieved state-of-the-art performance.",
+      "link": "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art/",
+      "description": "Today we announced new beta features for Gemini in Sheets to help you create, organize and edit entire sheets, from basic tasks to complex data analysis — just describe …...",
+      "publishedDate": "Tue, 10 Mar 2026 13:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Workspace_Jan_Moment_Sheets_Blo.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Introducing Storage Buckets on the Hugging Face Hub",
+      "link": "https://huggingface.co/blog/storage-buckets",
+      "description": "...",
+      "publishedDate": "Tue, 10 Mar 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Keep the Tokens Flowing: Lessons from 16 Open-Source RL Libraries",
+      "link": "https://huggingface.co/blog/async-rl-training-landscape",
+      "description": "...",
+      "publishedDate": "Tue, 10 Mar 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Watch James Manyika talk AI and creativity with LL COOL J.",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/ll-cool-j-dialogues/",
+      "description": "In the latest episode of our Dialogues on Technology and Society series, LL COOL J sits down with James Manyika....",
+      "publishedDate": "Thu, 26 Mar 2026 17:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Approved_thumbnail_with_logo.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Transform your headphones into a live personal translator on iOS.",
+      "link": "https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones/",
+      "description": "Google Translate’s Live translate with headphones is officially arriving on iOS! And we're expanding the capability for both iOS and Android users to even more countries…...",
+      "publishedDate": "Thu, 26 Mar 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Static-InterstitialscreenJapane.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
+      "description": "The Gemini emblem sits next to text reading 'Gemini 3.1 Flash Live'. The background has blue, multicolored dots making up a microphone icon...",
+      "publishedDate": "Thu, 26 Mar 2026 15:21:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3.1-flash-live_blog_head.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Search Live is expanding globally",
+      "link": "https://blog.google/products-and-platforms/products/search/search-live-global-expansion/",
+      "description": "A graphic with the words Search Live shown underneath a waveform icon. To the right, a phone shows the Google app with Search Live open. The camera is pointing at trees in a forest....",
+      "publishedDate": "Thu, 26 Mar 2026 15:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Live_blog_header.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "The Download: a battery pivot to AI, and rewriting math",
+      "link": "https://www.technologyreview.com/2026/03/26/1134697/the-download-battery-ai-pivot-new-ai-tool-math/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Why this battery company is pivoting to AI&#160; Q...",
+      "publishedDate": "Thu, 26 Mar 2026 12:42:53 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/05/GettyImages-1433324047.jpeg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "The snow gods: How a couple of ski bums built the internet’s best weather app",
+      "link": "https://www.technologyreview.com/2026/03/26/1134470/the-snow-gods-how-a-couple-of-ski-bums-built-the-internets-best-weather-app/",
+      "description": "The best snow-forecasting app for skiers and snowboarders isn’t from any of the federally funded weather services. Nor from any of the big-name brands. It’s an independent app startup that leverages g...",
+      "publishedDate": "Thu, 26 Mar 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/IMG_4251.jpg?w=2667",
+      "language": "en"
+    },
+    {
+      "title": "Are high gas prices good news for EVs? It’s complicated.",
+      "link": "https://www.technologyreview.com/2026/03/26/1134677/gas-prices-electric-vehicles/",
+      "description": "I live in a dense city with plentiful public transportation options and limited parking, so I don’t own a car. I’m often utterly clueless about the current price of gasoline. But as the conflict in Ir...",
+      "publishedDate": "Thu, 26 Mar 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "AIエージェントツールで始める業務革命、重要な5つのステップ",
+      "link": "https://ainow.ai/2025/08/21/277751/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e3%2582%25a8%25e3%2583%25bc%25e3%2582%25b8%25e3%2582%25a7%25e3%2583%25b3%25e3%2583%2588%25e3%2583%2584%25e3%2583%25bc%25e3%2583%25ab%25e3%2581%25a7%25e5%25a7%258b%25e3%2582%2581%25e3%2582%258b%25e6%25a5%25ad%25e5%258b%2599%25e9%259d%25a9%25e5%2591%25bd%25e3%2580%2581%25e9%2587%258d%25e8%25a6%2581%25e3%2581%25aa5-2",
+      "description": "&#12300;AI&#12456;&#12540;&#12472;&#12455;&#12531;&#12488;&#12484;&#12540;&#12523;&#12398;&#23566;&#20837;&#12391;&#26989;&#21209;&#21177;&#29575;&#12434;&#19978;&#12370;&#12383;&#12356;&#12364;&#1228...",
+      "publishedDate": "Thu, 21 Aug 2025 10:33:00 +0000",
+      "source": "AINOW",
+      "category": "general",
+      "thumbnail": null,
+      "language": "ja"
+    },
+    {
+      "title": "【ChatGPTで時短】議事録AIプロンプトの効率化テクニック5選｜コピペで使える例文付き",
+      "link": "https://ainow.ai/2025/08/21/277789/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2580%2590chatgpt%25e3%2581%25a7%25e6%2599%2582%25e7%259f%25ad%25e3%2580%2591%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2ai%25e3%2583%2597%25e3%2583%25ad%25e3%2583%25b3%25e3%2583%2597%25e3%2583%2588%25e3%2581%25ae%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25e3%2583%2586%25e3%2582%25af%25e3%2583%258b%25e3%2583%2583",
+      "description": "&#12300;&#35696;&#20107;&#37682;&#20316;&#25104;&#12395;&#26178;&#38291;&#12364;&#12363;&#12363;&#12426;&#12377;&#12366;&#12390;&#12289;&#20182;&#12398;&#37325;&#35201;&#12394;&#26989;&#21209;&#12395;...",
+      "publishedDate": "Thu, 21 Aug 2025 06:02:00 +0000",
+      "source": "AINOW",
+      "category": "general",
+      "thumbnail": null,
+      "language": "ja"
+    },
+    {
+      "title": "議事録AI活用で会議効率化！Teamsで始める4つの手法",
+      "link": "https://ainow.ai/2025/08/21/277787/?utm_source=rss&utm_medium=rss&utm_campaign=%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2ai%25e6%25b4%25bb%25e7%2594%25a8%25e3%2581%25a7%25e4%25bc%259a%25e8%25ad%25b0%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25ef%25bc%2581teams%25e3%2581%25a7%25e5%25a7%258b%25e3%2582%2581%25e3%2582%258b4%25e3%2581%25a4%25e3%2581%25ae%25e6%2589%258b%25e6%25b3%2595",
+      "description": "&#12300;Microsoft Teams&#12391;&#12398;&#20250;&#35696;&#12364;&#22679;&#12360;&#12289;&#35696;&#20107;&#37682;&#20316;&#25104;&#12398;&#25163;&#38291;&#12434;&#28187;&#12425;&#12375;&#12390;&#20182;&...",
+      "publishedDate": "Thu, 21 Aug 2025 04:47:00 +0000",
+      "source": "AINOW",
+      "category": "general",
+      "thumbnail": null,
+      "language": "ja"
+    },
+    {
+      "title": "AI議事録の情報漏洩を防ぐ5つの具体策と事例紹介",
+      "link": "https://ainow.ai/2025/08/21/277784/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2%25e3%2581%25ae%25e6%2583%2585%25e5%25a0%25b1%25e6%25bc%258f%25e6%25b4%25a9%25e3%2582%2592%25e9%2598%25b2%25e3%2581%25905%25e3%2581%25a4%25e3%2581%25ae%25e5%2585%25b7%25e4%25bd%2593%25e7%25ad%2596%25e3%2581%25a8%25e4%25ba%258b%25e4%25be%258b%25e7%25b4%25b9%25e4%25bb%258b",
+      "description": "&#12300;AI&#12434;&#20351;&#12387;&#12383;&#35696;&#20107;&#37682;&#20316;&#25104;&#12434;&#23566;&#20837;&#12375;&#12383;&#12356;&#12369;&#12428;&#12393;&#12289;&#24773;&#22577;&#28431;&#27945;&#1239...",
+      "publishedDate": "Thu, 21 Aug 2025 04:40:00 +0000",
+      "source": "AINOW",
+      "category": "general",
+      "thumbnail": null,
+      "language": "ja"
+    },
+    {
+      "title": "Google Meetの議事録を自動化！無料で使えるAIツール5選",
+      "link": "https://ainow.ai/2025/08/21/277771/?utm_source=rss&utm_medium=rss&utm_campaign=teams%25e4%25bc%259a%25e8%25ad%25b0%25e3%2581%25ae%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2%25e3%2582%2592ai%25e3%2581%25a7%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25e3%2581%2599%25e3%2582%258b%25e3%2581%25b9%25e3%2581%258d%25e7%2590%2586%25e7%2594%25b1",
+      "description": "&#12300;&#12458;&#12531;&#12521;&#12452;&#12531;&#20250;&#35696;&#12398;&#12383;&#12403;&#12395;&#25163;&#21205;&#12391;&#26178;&#38291;&#12434;&#12363;&#12369;&#12390;&#35696;&#20107;&#37682;&#12434;...",
+      "publishedDate": "Thu, 21 Aug 2025 03:32:00 +0000",
+      "source": "AINOW",
+      "category": "general",
+      "thumbnail": null,
+      "language": "ja"
+    },
+    {
+      "title": "# Google AI Studioで議事録を劇的に効率化する3つの秘訣",
+      "link": "https://ainow.ai/2025/08/21/277766/?utm_source=rss&utm_medium=rss&utm_campaign=google-ai-studio%25e3%2581%25a7%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2%25e3%2582%2592%25e5%258a%2587%25e7%259a%2584%25e3%2581%25ab%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25e3%2581%2599%25e3%2582%258b3%25e3%2581%25a4%25e3%2581%25ae%25e7%25a7%2598%25e8%25a8%25a3",
+      "description": "&#12458;&#12531;&#12521;&#12452;&#12531;&#20250;&#35696;&#12391;&#12398;&#35696;&#20107;&#37682;&#20316;&#25104;&#12395;&#26178;&#38291;&#12364;&#12363;&#12363;&#12426;&#12377;&#12366;&#12390;&#12289;...",
+      "publishedDate": "Thu, 21 Aug 2025 02:46:00 +0000",
+      "source": "AINOW",
+      "category": "general",
+      "thumbnail": null,
+      "language": "ja"
+    },
+    {
+      "title": "ミーティング議事録AI活用法：効率化の鍵になる5つの選び方",
+      "link": "https://ainow.ai/2025/08/21/277773/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2583%259f%25e3%2583%25bc%25e3%2583%2586%25e3%2582%25a3%25e3%2583%25b3%25e3%2582%25b0%25e8%25ad%25b0%25e4%25ba%258b%25e9%258c%25b2ai%25e6%25b4%25bb%25e7%2594%25a8%25e6%25b3%2595%25ef%25bc%259a%25e5%258a%25b9%25e7%258e%2587%25e5%258c%2596%25e3%2581%25ae%25e9%258d%25b5%25e3%2581%25ab%25e3%2581%25aa%25e3%2582%258b5",
+      "description": "&#12300;&#12511;&#12540;&#12486;&#12451;&#12531;&#12464;&#12398;&#35696;&#20107;&#37682;&#20316;&#25104;&#12434;&#12418;&#12387;&#12392;&#21177;&#29575;&#30340;&#12395;&#33258;&#21205;&#21270;&#12375;...",
+      "publishedDate": "Thu, 21 Aug 2025 01:44:00 +0000",
+      "source": "AINOW",
+      "category": "general",
+      "thumbnail": null,
+      "language": "ja"
+    },
+    {
+      "title": "How we monitor internal coding agents for misalignment",
+      "link": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment",
+      "description": "How OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents—analyzing real-world deployments to detect risks and strengthen AI safety safeguards....",
+      "publishedDate": "Thu, 19 Mar 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "OpenAI to acquire Astral",
+      "link": "https://openai.com/index/openai-to-acquire-astral",
+      "description": "Accelerates Codex growth to power the next generation of Python developer tools...",
+      "publishedDate": "Thu, 19 Mar 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "How AI is helping improve heart health in rural Australia",
+      "link": "https://blog.google/innovation-and-ai/technology/health/google-ai-heart-health-australia/",
+      "description": "A doctor is sitting across a desk from a patient. The doctor is holding a tablet and a pen. Medical charts renderings are in the background....",
+      "publishedDate": "Thu, 12 Mar 2026 15:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIHealth_v2_2096x1182_02.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Helping disaster response teams turn AI into action across Asia",
+      "link": "https://openai.com/index/helping-disaster-response-teams-asia",
+      "description": "AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation...",
+      "publishedDate": "Sun, 29 Mar 2026 22:15:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "A woman’s uterus has been kept alive outside the body for the first time",
+      "link": "https://www.technologyreview.com/2026/03/28/1134766/womans-uterus-kept-alive-outside-the-body-first/",
+      "description": "“Think of this as a human body,” says Javier González. In front of me is essentially a metal box on wheels. Standing at around a meter in height, it reminds me of a stainless-steel counter in a restau...",
+      "publishedDate": "Sat, 28 Mar 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/20260311_115435-v.jpg?w=1500",
+      "language": "en"
+    },
+    {
+      "title": "Creating with Sora Safely",
+      "link": "https://openai.com/index/creating-with-sora-safely",
+      "description": "To address the novel safety challenges posed by a state-of-the-art video model as well as a new social creation platform, we’ve built Sora 2 and the Sora app with safety at the foundation. Our approac...",
+      "publishedDate": "Mon, 23 Mar 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
+      "link": "https://huggingface.co/blog/ulysses-sp",
+      "description": "...",
+      "publishedDate": "Mon, 09 Mar 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "LeRobot v0.5.0: Scaling Every Dimension",
+      "link": "https://huggingface.co/blog/lerobot-release-v050",
+      "description": "...",
+      "publishedDate": "Mon, 09 Mar 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "STADLER reshapes knowledge work at a 230-year-old company",
+      "link": "https://openai.com/index/stadler",
+      "description": "Learn how STADLER uses ChatGPT to transform knowledge work, saving time and accelerating productivity across 650 employees....",
+      "publishedDate": "Fri, 27 Mar 2026 22:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The Download: the internet’s best weather app, and why people freeze their brains",
+      "link": "https://www.technologyreview.com/2026/03/27/1134755/the-download-best-weather-forecasting-app-why-people-freeze-brains/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How a couple of ski bums built the internet’s best...",
+      "publishedDate": "Fri, 27 Mar 2026 12:32:54 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/08/Copy-of-Library-15-of-15.jpeg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "Here’s why some people choose cryonics to store their bodies and brains after death",
+      "link": "https://www.technologyreview.com/2026/03/27/1134705/cryonics-store-bodies-brains-after-death/",
+      "description": "This week I reported on some rather unusual research that focuses on the brain of L. Stephen Coles. Coles was a gerontologist who died from pancreatic cancer in 2014. He had spent the latter part of h...",
+      "publishedDate": "Fri, 27 Mar 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Liberate your OpenClaw",
+      "link": "https://huggingface.co/blog/liberate-your-openclaw",
+      "description": "...",
+      "publishedDate": "Fri, 27 Mar 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Build a Domain-Specific Embedding Model in Under a Day",
+      "link": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune",
+      "description": "...",
+      "publishedDate": "Fri, 20 Mar 2026 19:38:16 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "What's New in Mellea 0.4.0 + Granite Libraries Release",
+      "link": "https://huggingface.co/blog/ibm-granite/granite-libraries",
+      "description": "...",
+      "publishedDate": "Fri, 20 Mar 2026 14:14:46 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": null,
+      "language": "en"
+    }
+  ]
 }
