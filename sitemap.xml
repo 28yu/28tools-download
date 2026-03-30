@@ -64,6 +64,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- AIニュース -->
+  <url>
+    <loc>https://28tools.com/ai-news.html</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- 運営者情報 -->
   <url>
     <loc>https://28tools.com/about.html</loc>
