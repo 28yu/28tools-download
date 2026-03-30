@@ -2,6 +2,7 @@
 """
 AIニュースRSS取得スクリプト
 複数のRSSフィードから記事を取得してJSONに変換
+サムネイルが取得できない場合はソースページのOGP画像を取得
 """
 
 import feedparser
@@ -9,6 +10,9 @@ import json
 from datetime import datetime
 import sys
 import re
+import urllib.request
+import urllib.error
+import time
 
 # RSSフィードソース
 RSS_FEEDS = [
@@ -62,17 +66,24 @@ RSS_FEEDS = [
         'category': 'general',
         'language': 'ja'
     },
+    {
+        'url': 'https://ledge.ai/feed',
+        'source': 'Ledge.ai',
+        'category': 'general',
+        'language': 'ja'
+    },
 ]
+
+# OGP画像取得時のUser-Agent
+USER_AGENT = 'Mozilla/5.0 (compatible; 28ToolsBot/1.0)'
 
 def strip_html_tags(html):
     """HTMLタグを削除してプレーンテキストを返す"""
     if not html:
         return ''
 
-    # HTMLタグを削除
     text = re.sub(r'<[^>]*>', '', html)
 
-    # HTMLエンティティをデコード
     text = text.replace('&nbsp;', ' ')
     text = text.replace('&amp;', '&')
     text = text.replace('&lt;', '<')
@@ -80,7 +91,6 @@ def strip_html_tags(html):
     text = text.replace('&quot;', '"')
     text = text.replace('&#8230;', '...')
 
-    # 余分な空白を削除
     text = re.sub(r'\s+', ' ', text).strip()
 
     return text
@@ -100,38 +110,38 @@ def detect_language(text):
 
     return 'en'
 
-def fetch_feed(feed_config):
-    """RSSフィードを取得してパース"""
+def fetch_ogp_image(url):
+    """ページのOGP画像（og:image）を取得する"""
     try:
-        feed = feedparser.parse(feed_config['url'])
-        articles = []
+        req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+        with urllib.request.urlopen(req, timeout=10) as response:
+            # 最初の50KBだけ読む（<head>内のOGPタグは十分取得できる）
+            html = response.read(50000).decode('utf-8', errors='ignore')
 
-        for entry in feed.entries[:10]:  # 最新10件
-            title = entry.get('title', 'No Title')
-            raw_description = entry.get('summary', entry.get('description', ''))
+        # og:image を抽出
+        og_pattern = re.compile(
+            r'<meta\s+(?:[^>]*?)property=["\']og:image["\']'
+            r'\s+(?:[^>]*?)content=["\']([^"\']+)["\']',
+            re.IGNORECASE
+        )
+        match = og_pattern.search(html)
+        if match:
+            return match.group(1)
 
-            # HTMLタグを削除してプレーンテキストのみ抽出
-            description = strip_html_tags(raw_description)[:200] + '...'
+        # content が先に来るパターン
+        og_pattern2 = re.compile(
+            r'<meta\s+(?:[^>]*?)content=["\']([^"\']+)["\']'
+            r'\s+(?:[^>]*?)property=["\']og:image["\']',
+            re.IGNORECASE
+        )
+        match2 = og_pattern2.search(html)
+        if match2:
+            return match2.group(1)
 
-            # 言語を検出
-            language = feed_config.get('language', detect_language(title))
-
-            article = {
-                'title': title,
-                'link': entry.get('link', ''),
-                'description': description,
-                'publishedDate': entry.get('published', entry.get('updated', '')),
-                'source': feed_config['source'],
-                'category': feed_config['category'],
-                'thumbnail': extract_thumbnail(entry),
-                'language': language
-            }
-            articles.append(article)
-
-        return articles
     except Exception as e:
-        print(f"Error fetching {feed_config['source']}: {e}", file=sys.stderr)
-        return []
+        print(f"  ⚠ OGP fetch failed for {url}: {e}", file=sys.stderr)
+
+    return None
 
 def extract_thumbnail(entry):
     """エントリーからサムネイル画像を抽出"""
@@ -175,6 +185,46 @@ def extract_thumbnail(entry):
 
     return None
 
+def fetch_feed(feed_config):
+    """RSSフィードを取得してパース"""
+    try:
+        feed = feedparser.parse(feed_config['url'])
+        articles = []
+
+        for entry in feed.entries[:15]:  # 最新15件（100件対応のため増加）
+            title = entry.get('title', 'No Title')
+            raw_description = entry.get('summary', entry.get('description', ''))
+
+            description = strip_html_tags(raw_description)[:200] + '...'
+
+            language = feed_config.get('language', detect_language(title))
+
+            # サムネイル取得（RSS内 → OGPフォールバック）
+            thumbnail = extract_thumbnail(entry)
+            link = entry.get('link', '')
+
+            if not thumbnail and link:
+                print(f"  🔍 Fetching OGP image for: {title[:50]}...")
+                thumbnail = fetch_ogp_image(link)
+                time.sleep(0.5)  # サーバー負荷軽減
+
+            article = {
+                'title': title,
+                'link': link,
+                'description': description,
+                'publishedDate': entry.get('published', entry.get('updated', '')),
+                'source': feed_config['source'],
+                'category': feed_config['category'],
+                'thumbnail': thumbnail,
+                'language': language
+            }
+            articles.append(article)
+
+        return articles
+    except Exception as e:
+        print(f"Error fetching {feed_config['source']}: {e}", file=sys.stderr)
+        return []
+
 def main():
     """メイン処理"""
     all_articles = []
@@ -188,8 +238,8 @@ def main():
     # 日付でソート（新しい順）
     all_articles.sort(key=lambda x: x['publishedDate'], reverse=True)
 
-    # 最新50件に制限
-    all_articles = all_articles[:50]
+    # 最新100件に制限
+    all_articles = all_articles[:100]
 
     # JSONとして出力
     output = {
