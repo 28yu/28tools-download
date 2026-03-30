@@ -3,6 +3,7 @@
 AIニュースRSS取得スクリプト
 複数のRSSフィードから記事を取得してJSONに変換
 サムネイルが取得できない場合はソースページのOGP画像を取得
+海外記事のタイトルを日本語に自動翻訳
 """
 
 import feedparser
@@ -12,6 +13,7 @@ import sys
 import re
 import urllib.request
 import urllib.error
+import urllib.parse
 import time
 
 # RSSフィードソース
@@ -143,6 +145,36 @@ def fetch_ogp_image(url):
 
     return None
 
+def translate_to_japanese(text):
+    """Google Translate（無料）でテキストを日本語に翻訳する"""
+    if not text:
+        return text
+
+    try:
+        # Google Translate の非公式API（無料）
+        encoded_text = urllib.parse.quote(text)
+        url = (
+            f'https://translate.googleapis.com/translate_a/single'
+            f'?client=gtx&sl=auto&tl=ja&dt=t&q={encoded_text}'
+        )
+        req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+        with urllib.request.urlopen(req, timeout=10) as response:
+            result = json.loads(response.read().decode('utf-8'))
+
+        # レスポンスから翻訳テキストを抽出
+        translated = ''
+        if result and result[0]:
+            for segment in result[0]:
+                if segment[0]:
+                    translated += segment[0]
+
+        return translated if translated else text
+
+    except Exception as e:
+        print(f"  ⚠ Translation failed: {e}", file=sys.stderr)
+        return text
+
+
 def extract_thumbnail(entry):
     """エントリーからサムネイル画像を抽出"""
     # media:thumbnail を優先
@@ -208,8 +240,16 @@ def fetch_feed(feed_config):
                 thumbnail = fetch_ogp_image(link)
                 time.sleep(0.5)  # サーバー負荷軽減
 
+            # 海外記事のタイトルを日本語に翻訳
+            title_ja = None
+            if language != 'ja':
+                print(f"  🌐 Translating: {title[:60]}...")
+                title_ja = translate_to_japanese(title)
+                time.sleep(0.3)  # API負荷軽減
+
             article = {
                 'title': title,
+                'titleJa': title_ja,
                 'link': link,
                 'description': description,
                 'publishedDate': entry.get('published', entry.get('updated', '')),

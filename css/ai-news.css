@@ -28,6 +28,29 @@
     color: #1abc9c;
 }
 
+/* バッジコンテナ（カテゴリ + 海外サイト） */
+.news-card-badges {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* 海外サイトバッジ */
+.news-card-foreign-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.55);
+    white-space: nowrap;
+}
+
 /* サムネイルなし時のアイコン（AI用） */
 .news-card-thumbnail.no-image::before {
     content: '🤖';

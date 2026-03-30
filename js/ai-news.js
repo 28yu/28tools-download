@@ -88,16 +88,26 @@ function createAiNewsCard(article) {
 
     const cleanDescription = stripAiHtml(article.description || '');
 
+    // 海外記事の場合: 翻訳タイトルを表示 + 「海外サイト」バッジ
+    const isForeign = article.language && article.language !== 'ja';
+    const displayTitle = (isForeign && article.titleJa) ? article.titleJa : article.title;
+    const foreignBadge = isForeign
+        ? '<span class="news-card-foreign-badge">🌐 海外サイト</span>'
+        : '';
+
     return `
         <article class="news-card" data-category="${article.category}">
             <div class="news-card-thumbnail ${article.thumbnail ? '' : 'no-image'}">
                 ${thumbnailHTML}
             </div>
             <div class="news-card-body">
-                <span class="news-card-category ${article.category}">${categoryLabel}</span>
+                <div class="news-card-badges">
+                    <span class="news-card-category ${article.category}">${categoryLabel}</span>
+                    ${foreignBadge}
+                </div>
                 <h3 class="news-card-title">
                     <a href="${article.link}" target="_blank" rel="noopener noreferrer">
-                        ${escapeAiHtml(article.title)}
+                        ${escapeAiHtml(displayTitle)}
                     </a>
                 </h3>
                 <p class="news-card-description">${escapeAiHtml(cleanDescription)}</p>
