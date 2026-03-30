@@ -275,22 +275,39 @@ def main():
         articles = fetch_feed(feed_config)
         all_articles.extend(articles)
 
-    # 日付でソート（新しい順）
-    all_articles.sort(key=lambda x: x['publishedDate'], reverse=True)
+    # 日本語と海外記事を分離
+    ja_articles = [a for a in all_articles if a['language'] == 'ja']
+    foreign_articles = [a for a in all_articles if a['language'] != 'ja']
 
-    # 最新100件に制限
-    all_articles = all_articles[:100]
+    # それぞれ日付でソート（新しい順）
+    ja_articles.sort(key=lambda x: x['publishedDate'], reverse=True)
+    foreign_articles.sort(key=lambda x: x['publishedDate'], reverse=True)
+
+    # 海外記事は全体の3割に制限（100件なら最大30件）
+    max_total = 100
+    max_foreign = int(max_total * 0.3)  # 30件
+    max_ja = max_total - min(len(foreign_articles), max_foreign)
+
+    ja_articles = ja_articles[:max_ja]
+    foreign_articles = foreign_articles[:max_foreign]
+
+    # 合算して日付でソート
+    combined = ja_articles + foreign_articles
+    combined.sort(key=lambda x: x['publishedDate'], reverse=True)
+    combined = combined[:max_total]
+
+    print(f"  📊 日本語: {len(ja_articles)}件 / 海外: {len(foreign_articles)}件")
 
     # JSONとして出力
     output = {
         'lastUpdated': datetime.utcnow().isoformat(),
-        'articles': all_articles
+        'articles': combined
     }
 
     with open('data/ai-news.json', 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"✓ Saved {len(all_articles)} articles to data/ai-news.json")
+    print(f"✓ Saved {len(combined)} articles to data/ai-news.json")
 
 if __name__ == '__main__':
     main()
