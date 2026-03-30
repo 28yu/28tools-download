@@ -69,9 +69,15 @@ RSS_FEEDS = [
         'language': 'ja'
     },
     {
-        'url': 'https://ledge.ai/feed',
-        'source': 'Ledge.ai',
-        'category': 'general',
+        'url': 'https://weel.co.jp/feed/',
+        'source': 'WEEL',
+        'category': 'tools',
+        'language': 'ja'
+    },
+    {
+        'url': 'https://atmarkit.itmedia.co.jp/ait/subtop/ai/rss.xml',
+        'source': '@IT AI',
+        'category': 'research',
         'language': 'ja'
     },
 ]
