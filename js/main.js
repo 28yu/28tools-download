@@ -756,6 +756,16 @@ function initTranslations() {
             en: 'Auto-collect the latest news from BIM, Revit, and architecture industries. Check industry trends daily. (Coming Soon)',
             zh: '自动收集BIM、Revit和建筑行业的最新新闻。每天查看行业趋势。（即将推出）'
         },
+        'index-tab-ai-news': {
+            ja: 'AIニュース',
+            en: 'AI News',
+            zh: 'AI新闻'
+        },
+        'index-category-ai-news-desc': {
+            ja: 'AI・機械学習・LLMの最新ニュースを自動収集。AIトレンドを毎日チェック。',
+            en: 'Auto-collect the latest AI, ML & LLM news. Check AI trends daily.',
+            zh: '自动收集AI、机器学习和LLM的最新新闻。每天查看AI趋势。'
+        },
         'index-news-title': {
             ja: '新着・おすすめ',
             en: 'News & Featured',
@@ -4213,6 +4223,75 @@ function initTranslations() {
         }
     };
 
+    // AIニュースページ
+    translations.aiNewsPage = {
+        'ai-news-breadcrumb': {
+            ja: 'AIニュース',
+            en: 'AI News',
+            zh: 'AI新闻'
+        },
+        'ai-news-title': {
+            ja: 'AIニュース',
+            en: 'AI News',
+            zh: 'AI新闻'
+        },
+        'ai-news-subtitle': {
+            ja: '最新のAI・機械学習・LLM情報',
+            en: 'Latest AI, Machine Learning & LLM News',
+            zh: '最新的AI、机器学习和LLM信息'
+        },
+        'ai-news-update-label': {
+            ja: '最終更新:',
+            en: 'Last Updated:',
+            zh: '最后更新:'
+        },
+        'ai-news-update-note': {
+            ja: '（毎日自動更新）',
+            en: '(Auto-updated daily)',
+            zh: '（每天自动更新）'
+        },
+        'ai-news-filter-all': {
+            ja: 'すべて',
+            en: 'All',
+            zh: '全部'
+        },
+        'ai-news-filter-general': {
+            ja: 'AI全般',
+            en: 'AI General',
+            zh: 'AI综合'
+        },
+        'ai-news-filter-llm': {
+            ja: 'LLM',
+            en: 'LLM',
+            zh: 'LLM'
+        },
+        'ai-news-filter-tools': {
+            ja: 'AIツール',
+            en: 'AI Tools',
+            zh: 'AI工具'
+        },
+        'ai-news-filter-research': {
+            ja: '研究・開発',
+            en: 'Research',
+            zh: '研究开发'
+        },
+        'ai-news-loading': {
+            ja: 'ニュースを読み込み中...',
+            en: 'Loading news...',
+            zh: '正在加载新闻...'
+        },
+        'ai-news-error': {
+            ja: 'ニュースの読み込みに失敗しました。しばらくしてから再度お試しください。',
+            en: 'Failed to load news. Please try again later.',
+            zh: '新闻加载失败。请稍后再试。'
+        },
+        'ai-news-empty': {
+            ja: '該当するニュースがありません。',
+            en: 'No news found.',
+            zh: '未找到相关新闻。'
+        }
+    };
+
     // ========================================
     // ファミリページ
     // ========================================
@@ -4356,6 +4435,7 @@ function initTranslations() {
         translations.aboutPage,
         translations.termsPage,
         translations.newsPage,
+        translations.aiNewsPage,
         translations.familyPage
     );
     
