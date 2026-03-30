@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-30T07:52:16.374798",
+  "lastUpdated": "2026-03-30T08:01:08.100459",
   "articles": [
     {
       "title": "議事録AIでZoom会議の効率を向上！3つの自動化術を解説",
@@ -8,7 +8,7 @@
       "publishedDate": "Wed, 27 Aug 2025 20:15:31 +0000",
       "source": "AINOW",
       "category": "general",
-      "thumbnail": null,
+      "thumbnail": "https://ainow.ai/wp-content/uploads/2025/08/サムネイル_SEO-11.jpg",
       "language": "ja"
     },
     {
@@ -18,7 +18,7 @@
       "publishedDate": "Wed, 27 Aug 2025 20:01:29 +0000",
       "source": "AINOW",
       "category": "general",
-      "thumbnail": null,
+      "thumbnail": "https://ainow.ai/wp-content/uploads/2025/08/サムネイル_SEO-10.jpg",
       "language": "ja"
     },
     {
@@ -28,7 +28,7 @@
       "publishedDate": "Wed, 27 Aug 2025 19:32:55 +0000",
       "source": "AINOW",
       "category": "general",
-      "thumbnail": null,
+      "thumbnail": "https://ainow.ai/wp-content/uploads/2025/08/サムネイル_SEO-9.jpg",
       "language": "ja"
     },
     {
@@ -38,7 +38,7 @@
       "publishedDate": "Wed, 25 Mar 2026 17:26:26 +0000",
       "source": "MIT Technology Review",
       "category": "research",
-      "thumbnail": null,
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/MITTR-Roundtables-Zoom-Opening-Overlay_3aaab2.png?resize=1200,600",
       "language": "en"
     },
     {
@@ -78,7 +78,7 @@
       "publishedDate": "Wed, 25 Mar 2026 13:59:17 +0000",
       "source": "MIT Technology Review",
       "category": "research",
-      "thumbnail": null,
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/260320_MathAI.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -109,6 +109,26 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Rakuten fixes issues twice as fast with Codex",
+      "link": "https://openai.com/index/rakuten",
+      "description": "Rakuten uses Codex, the coding agent from OpenAI, to ship software faster and safer, reducing MTTR 50%, automating CI/CD reviews, and delivering full-stack builds in weeks....",
+      "publishedDate": "Wed, 11 Mar 2026 13:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Use Canvas in AI Mode to get things done and bring your ideas to life, right in Search.",
+      "link": "https://blog.google/products-and-platforms/products/search/ai-mode-canvas-writing-coding/",
+      "description": "Canvas in AI Mode is now available for everyone in the U.S. Plus, it can now help you draft documents or build interactive tools....",
+      "publishedDate": "Wed, 04 Mar 2026 17:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIMMode_Social.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -148,7 +168,7 @@
       "publishedDate": "Tue, 24 Mar 2026 02:01:52 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": null,
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/eva.png",
       "language": "en"
     },
     {
@@ -158,7 +178,7 @@
       "publishedDate": "Tue, 17 Mar 2026 16:37:55 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": null,
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/62543749b777cd32720675c2/6SncRLSzbOb4IubAj2qyN.png",
       "language": "en"
     },
     {
@@ -188,6 +208,36 @@
       "publishedDate": "Tue, 17 Mar 2026 12:33:39 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/682c3e22650f6bbe33bb9d94/ZrDLn6Wer5-TM_okKVmZ2.png",
+      "language": "en"
+    },
+    {
+      "title": "Introducing GPT-5.4 mini and nano",
+      "link": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano",
+      "description": "GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads....",
+      "publishedDate": "Tue, 17 Mar 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first",
+      "link": "https://openai.com/index/japan-teen-safety-blueprint",
+      "description": "OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using generative AI....",
+      "publishedDate": "Tue, 17 Mar 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Equipping workers with insights about compensation",
+      "link": "https://openai.com/index/equipping-workers-with-insights-about-compensation",
+      "description": "New research shows Americans send nearly 3 million daily messages to ChatGPT asking about compensation and earnings, helping close the wage information gap....",
+      "publishedDate": "Tue, 17 Mar 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
       "thumbnail": null,
       "language": "en"
     },
@@ -208,7 +258,7 @@
       "publishedDate": "Tue, 10 Mar 2026 00:00:00 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": null,
+      "thumbnail": "https://huggingface.co/blog/assets/storage-buckets/buckets-annoucement.png",
       "language": "en"
     },
     {
@@ -218,7 +268,27 @@
       "publishedDate": "Tue, 10 Mar 2026 00:00:00 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": null,
+      "thumbnail": "https://huggingface.co/blog/assets/async-rl-landscape/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Create new worlds in Project Genie with these 4 tips",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/tips-prompt-writing-project-genie/",
+      "description": "A screen capture of Project Genie, an experimental interface showing a grid of circular images, many of which appear to be 360-degree views, with a large, central black globe labeled Create your own...",
+      "publishedDate": "Tue, 03 Mar 2026 17:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Genie_2.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "PRX Part 3 — Training a Text-to-Image Model in 24h!",
+      "link": "https://huggingface.co/blog/Photoroom/prx-part3",
+      "description": "...",
+      "publishedDate": "Tue, 03 Mar 2026 16:50:49 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/68e529af513e724edd8702f6/zMyALdakGbN6SDG3ucmLd.jpeg",
       "language": "en"
     },
     {
@@ -288,7 +358,17 @@
       "publishedDate": "Thu, 26 Mar 2026 10:00:00 +0000",
       "source": "MIT Technology Review",
       "category": "research",
-      "thumbnail": null,
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/GettyImages-2266020633.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Mixture of Experts (MoEs) in Transformers",
+      "link": "https://huggingface.co/blog/moe-transformers",
+      "description": "...",
+      "publishedDate": "Thu, 26 Feb 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/moe-transformers/thumbnail.png",
       "language": "en"
     },
     {
@@ -298,7 +378,7 @@
       "publishedDate": "Thu, 21 Aug 2025 10:33:00 +0000",
       "source": "AINOW",
       "category": "general",
-      "thumbnail": null,
+      "thumbnail": "https://ainow.ai/wp-content/uploads/2025/08/サムネイル_SEO-1.jpg",
       "language": "ja"
     },
     {
@@ -308,7 +388,7 @@
       "publishedDate": "Thu, 21 Aug 2025 06:02:00 +0000",
       "source": "AINOW",
       "category": "general",
-      "thumbnail": null,
+      "thumbnail": "https://ainow.ai/wp-content/uploads/2025/08/サムネイル_SEO-8.jpg",
       "language": "ja"
     },
     {
@@ -318,7 +398,7 @@
       "publishedDate": "Thu, 21 Aug 2025 04:47:00 +0000",
       "source": "AINOW",
       "category": "general",
-      "thumbnail": null,
+      "thumbnail": "https://ainow.ai/wp-content/uploads/2025/08/サムネイル_SEO-4.jpg",
       "language": "ja"
     },
     {
@@ -328,7 +408,7 @@
       "publishedDate": "Thu, 21 Aug 2025 04:40:00 +0000",
       "source": "AINOW",
       "category": "general",
-      "thumbnail": null,
+      "thumbnail": "https://ainow.ai/wp-content/uploads/2025/08/サムネイル_SEO-7.jpg",
       "language": "ja"
     },
     {
@@ -338,7 +418,7 @@
       "publishedDate": "Thu, 21 Aug 2025 03:32:00 +0000",
       "source": "AINOW",
       "category": "general",
-      "thumbnail": null,
+      "thumbnail": "https://ainow.ai/wp-content/uploads/2025/08/サムネイル_SEO-6.jpg",
       "language": "ja"
     },
     {
@@ -348,7 +428,7 @@
       "publishedDate": "Thu, 21 Aug 2025 02:46:00 +0000",
       "source": "AINOW",
       "category": "general",
-      "thumbnail": null,
+      "thumbnail": "https://ainow.ai/wp-content/uploads/2025/08/サムネイル_SEO-3.jpg",
       "language": "ja"
     },
     {
@@ -358,7 +438,7 @@
       "publishedDate": "Thu, 21 Aug 2025 01:44:00 +0000",
       "source": "AINOW",
       "category": "general",
-      "thumbnail": null,
+      "thumbnail": "https://ainow.ai/wp-content/uploads/2025/08/サムネイル_SEO-5.jpg",
       "language": "ja"
     },
     {
@@ -392,6 +472,46 @@
       "language": "en"
     },
     {
+      "title": "Ask a Techspert: How does AI understand my visual searches?",
+      "link": "https://blog.google/company-news/inside-google/googlers/how-google-ai-visual-search-works/",
+      "description": "Mobile phone with a search bar that says \"Ask anything\"...",
+      "publishedDate": "Thu, 05 Mar 2026 18:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Fan_out_query_hero.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "The latest AI news we announced in February",
+      "link": "https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026/",
+      "description": "an MP4 of a carousel with images reading \"Gemini 3.1 Pro\" and \"Nano Banana 2\"...",
+      "publishedDate": "Thu, 05 Mar 2026 16:30:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Thumbnail_mPCqgRv.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Bringing Robotics AI to Embedded Platforms: Dataset Recording, VLA Fine‑Tuning, and On‑Device Optimizations",
+      "link": "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms",
+      "description": "...",
+      "publishedDate": "Thu, 05 Mar 2026 14:16:49 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nxp/bringing-robotics-ai-to-embedded-platforms.png",
+      "language": "en"
+    },
+    {
+      "title": "Introducing Modular Diffusers - Composable Building Blocks for Diffusion Pipelines",
+      "link": "https://huggingface.co/blog/modular-diffusers",
+      "description": "...",
+      "publishedDate": "Thu, 05 Mar 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/modular-diffusers/thumbnail.png",
+      "language": "en"
+    },
+    {
       "title": "Helping disaster response teams turn AI into action across Asia",
       "link": "https://openai.com/index/helping-disaster-response-teams-asia",
       "description": "AI for Disaster Response in Asia: OpenAI Workshop with Gates Foundation...",
@@ -422,13 +542,23 @@
       "language": "en"
     },
     {
+      "title": "Why Codex Security Doesn’t Include a SAST Report",
+      "link": "https://openai.com/index/why-codex-security-doesnt-include-sast",
+      "description": "A deep dive into why Codex Security doesn’t rely on traditional SAST, instead using AI-driven constraint reasoning and validation to find real vulnerabilities with fewer false positives....",
+      "publishedDate": "Mon, 16 Mar 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
       "link": "https://huggingface.co/blog/ulysses-sp",
       "description": "...",
       "publishedDate": "Mon, 09 Mar 2026 00:00:00 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": null,
+      "thumbnail": "https://huggingface.co/blog/assets/ulysses/thumbnail.png",
       "language": "en"
     },
     {
@@ -438,7 +568,7 @@
       "publishedDate": "Mon, 09 Mar 2026 00:00:00 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": null,
+      "thumbnail": "https://huggingface.co/blog/assets/lerobot-release-v050/thumbnail.png",
       "language": "en"
     },
     {
@@ -468,7 +598,7 @@
       "publishedDate": "Fri, 27 Mar 2026 09:00:00 +0000",
       "source": "MIT Technology Review",
       "category": "research",
-      "thumbnail": null,
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/GettyImages-98892282.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -478,7 +608,7 @@
       "publishedDate": "Fri, 27 Mar 2026 00:00:00 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": null,
+      "thumbnail": "https://huggingface.co/blog/assets/liberate-your-openclaw/thumbnail.png",
       "language": "en"
     },
     {
@@ -488,7 +618,7 @@
       "publishedDate": "Fri, 20 Mar 2026 19:38:16 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": null,
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/domain-specific-embedding-finetune.png",
       "language": "en"
     },
     {
@@ -498,7 +628,127 @@
       "publishedDate": "Fri, 20 Mar 2026 14:14:46 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": null,
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ibm-granite/granite-libraries.png",
+      "language": "en"
+    },
+    {
+      "title": "GGML and llama.cpp join HF to ensure the long-term progress of Local AI",
+      "link": "https://huggingface.co/blog/ggml-joins-hf",
+      "description": "...",
+      "publishedDate": "Fri, 20 Feb 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/ggml-joins-hf/ggml-joins-hf.png",
+      "language": "en"
+    },
+    {
+      "title": "How our open-source AI model SpeciesNet is helping to promote wildlife conservation",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife/",
+      "description": "Photos of animals being identified by the SpeciesNet AI model...",
+      "publishedDate": "Fri, 06 Mar 2026 18:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/specieshero_v2.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "All the latest in AI &#8216;music&#8217;",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/903196/ai-music-suno-udio-art-lawsuit",
+      "description": "AI has touched every part of the music industry, from sample sourcing and demo recording, to serving up digital liner notes and building playlists. There are technical and legal challenges, fierce eth...",
+      "publishedDate": "2026-03-29T21:32:14-04:00",
+      "source": "The Verge AI",
+      "category": "general",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/11/STK467_AI_MUSIC_CVirginia_D.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "language": "en"
+    },
+    {
+      "title": "Bluesky’s new app is an AI for customizing your feed",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/903190/bluesky-attie-ai-custom-feeds",
+      "description": "The latest app from the team behind Bluesky is Attie, an AI assistant that lets you build your own algorithm. At the Atmosphere conference, Bluesky's former CEO, Jay Graber, and CTO Paul Frazee, unvei...",
+      "publishedDate": "2026-03-29T17:44:41-04:00",
+      "source": "The Verge AI",
+      "category": "general",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/attie-ai.jpeg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "language": "en"
+    },
+    {
+      "title": "Suno leans into customization with v5.5",
+      "link": "https://www.theverge.com/entertainment/903056/suno-ai-music-v5-5-model",
+      "description": "Suno just released one of its biggest updates yet with v5.5 of its AI music model. Where previous updates focused mostly on improving fidelity and creating more natural vocals, v5.5 is about giving us...",
+      "publishedDate": "2026-03-28T14:33:10-04:00",
+      "source": "The Verge AI",
+      "category": "general",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/1774532259-suno_v5-5_blogouterbanner.webp?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "language": "en"
+    },
+    {
+      "title": "Why can’t TikTok identify AI generated ads when I can?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/900400/tiktok-ai-ads-labels-samsung-disclosure",
+      "description": "I've been struggling to tell whether the ads appearing in my TikTok feeds have been made with generative AI tools. As someone who spends a great deal of time scrutinizing images and videos for the usu...",
+      "publishedDate": "2026-03-28T10:00:00-04:00",
+      "source": "The Verge AI",
+      "category": "general",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/Samsung-AI-video-promotion.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "language": "en"
+    },
+    {
+      "title": "Why OpenAI killed Sora",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/902368/openai-sora-dead-ai-video-generation-competition",
+      "description": "On Tuesday morning, everything was business as usual at OpenAI. By the end of the day, the company had announced that it would scrap its video-generation app, Sora, and reverse plans for video generat...",
+      "publishedDate": "2026-03-28T08:00:00-04:00",
+      "source": "The Verge AI",
+      "category": "general",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK201_SAM_ALTMAN_CVIRGINIA_B.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "language": "en"
+    },
+    {
+      "title": "The latest in data centers, AI, and energy",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+      "description": "Massive new data centers are the physical foundation for tech companies’ hopes and dreams for AI. But the rush to expand warehouses full of energy-hungry servers has also kicked up fights across the w...",
+      "publishedDate": "2026-03-27T14:35:53-04:00",
+      "source": "The Verge AI",
+      "category": "general",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/12/258090_EOY_2025_CVirginia_DATA_CENTER.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "language": "en"
+    },
+    {
+      "title": "Judge sides with Anthropic to temporarily block the Pentagon&#8217;s ban",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/902149/anthropic-dod-pentagon-lawsuit-supply-chain-risk-injunction",
+      "description": "After Anthropic's weeks-long standoff with the Pentagon, the company won one milestone: A judge granted Anthropic a preliminary injunction in its lawsuit, which sought to reverse its government blackl...",
+      "publishedDate": "2026-03-26T20:33:44-04:00",
+      "source": "The Verge AI",
+      "category": "general",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/268367_dod_and_anthropics_public_fight_over_lethal_autonomous_weapons_a_mass_surveillance_CVirginia.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "language": "en"
+    },
+    {
+      "title": "David Sacks is no longer the White House AI and Crypto Czar",
+      "link": "https://www.theverge.com/policy/902140/david-sacks-out-ai-crypto-czar",
+      "description": "David Sacks, the venture capitalist and tech billionaire who'd become Silicon Valley's primary advocate inside the White House and a key architect of its aggressive AI policy initiatives, revealed on ...",
+      "publishedDate": "2026-03-26T19:40:22-04:00",
+      "source": "The Verge AI",
+      "category": "general",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STKP213_DAVID_SACKS_A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "language": "en"
+    },
+    {
+      "title": "Google is making it easier to import another AI’s memory into Gemini",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/902085/google-gemini-import-memory-chat-history",
+      "description": "After Anthropic updated its tool for copying another AI's memory into Claude earlier this month, Google Gemini is rolling out new \"Import Memory\" and \"Import Chat History\" features on desktop that can...",
+      "publishedDate": "2026-03-26T17:44:37-04:00",
+      "source": "The Verge AI",
+      "category": "general",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/stk414-chatbot-ai.jpeg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+      "language": "en"
+    },
+    {
+      "title": "Apple will reportedly allow other AI chatbots to plug into Siri",
+      "link": "https://www.theverge.com/tech/902048/apple-siri-ai-chatbot-update-ios-27",
+      "description": "Apple's iOS 27 update will allow users to choose the AI chatbot they want to link with Siri. That's according to a report from Bloomberg's Mark Gurman, who says third-party chatbots downloaded from th...",
+      "publishedDate": "2026-03-26T17:31:27-04:00",
+      "source": "The Verge AI",
+      "category": "general",
+      "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25698444/DSC08567_processed_2.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
       "language": "en"
     }
   ]
