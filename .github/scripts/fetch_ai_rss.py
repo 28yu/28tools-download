@@ -57,9 +57,9 @@ RSS_FEEDS = [
         'language': 'ja'
     },
     {
-        'url': 'https://ainow.ai/feed/',
-        'source': 'AINOW',
-        'category': 'general',
+        'url': 'https://www.publickey1.jp/atom.xml',
+        'source': 'Publickey',
+        'category': 'tools',
         'language': 'ja'
     },
     {
