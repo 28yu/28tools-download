@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-30T08:21:37.251666",
+  "lastUpdated": "2026-03-30T08:31:57.496572",
   "articles": [
     {
       "title": "議事録AIでZoom会議の効率を向上！3つの自動化術を解説",
@@ -267,7 +267,7 @@
     },
     {
       "title": "Gemini in Google Sheets just achieved state-of-the-art performance.",
-      "titleJa": "Google Sheets の Gemini は最先端のパフォーマンスを達成しました。",
+      "titleJa": "Google スプレッドシートの Gemini は最先端のパフォーマンスを達成しました。",
       "link": "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art/",
       "description": "Today we announced new beta features for Gemini in Sheets to help you create, organize and edit entire sheets, from basic tasks to complex data analysis — just describe …...",
       "publishedDate": "Tue, 10 Mar 2026 13:00:00 +0000",
@@ -439,6 +439,116 @@
       "source": "AINOW",
       "category": "general",
       "thumbnail": "https://ainow.ai/wp-content/uploads/2025/08/サムネイル_SEO-5.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【生成AIのプロが選ぶ】生成AIコンサルティング企業のおすすめ10選！費用相場や選び方も徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/generation-ai-consulting/",
+      "description": "IT専門調査会社 IDC Japan 株式会社の発表によると、国内AIシステム市場は2024年に前年比56.5％増の1兆3,412億円まで拡大しており、2029年には4兆1,873億円規模に達すると予測されています。こう [...]...",
+      "publishedDate": "Sun, 29 Mar 2026 14:59:52 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/generation-ai-consulting_2603-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Kirigamiとは？AIスライドを編集可能なPowerPointに変換する方法と使い方を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/kirigami/",
+      "description": "2026年1月、国産スライドAIエージェントがリリースされました！ 今回リリースされた「Kirigami」はNano Banana ProやNotebookLMで作成した画像をPowerPointスライドとして編集できる [...]...",
+      "publishedDate": "Sun, 29 Mar 2026 13:43:14 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/01/AIモン_Kirigami-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Kling AI 3.0】参照システムで一貫性を保てる動画生成を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/kling-ai-3-0/",
+      "description": "2026年2月、Kling AIから新たなモデルが登場しました！ 今回リリースされた「Kling AI 3.0」はテキストや画像から動画を生成するだけでなく、人物やオブジェクト、スタイル、声といった要素を「参照」として固 [...]...",
+      "publishedDate": "Sat, 28 Mar 2026 15:10:14 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/02/AIモン_Kling-AI-3.0-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Remotion】コード不要で動画生成へ！Agent Skills × Claude Codeでプロンプトから動画が実現",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/remotion/",
+      "description": "2026年1月20日、Remotion公式XでAgent Skillsという新機能が発表されました。 注目すべきは、Claude Codeを使ってプロンプトだけで動画を作成できるようになった点です。「npx skills [...]...",
+      "publishedDate": "Sat, 28 Mar 2026 14:09:51 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/01/AIモン_-Remotion-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Grok 4.2とは？4人のAIが議論して答えを出す！曖昧な回答に疲れた人必見のマルチエージェントAIを解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/grok-4-2/",
+      "description": "2026年2月18日、xAIが提供しているGrokの最新モデルとしてGrok 4.2のベータ版がリリースされました。Grok 4.2は、4人の専門エージェントが協力して回答を生成する仕組みで、明確かつ一貫性のある回答を生 [...]...",
+      "publishedDate": "Sat, 28 Mar 2026 12:07:34 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/grok-4-2_2603-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Dify導入で失敗しない！頼れる支援会社5社を徹底比較",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/dify-introduction-support/",
+      "description": "Difyは、社内向けの生成AIアプリをノーコードで作れる一方で、専門知識がないと設計や運用でつまずきやすいツールです。だからこそ、自社だけで抱え込まず、Difyに詳しいパートナーに導入・構築を支援してもらうのがおすすめで [...]...",
+      "publishedDate": "Mon, 30 Mar 2026 04:33:59 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/dify-introduction-support_2603-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AI副業のおすすめ13選！初心者が月5万稼ぐためのロードマップを全部教えます！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/ai-earn-list/",
+      "description": "生成AIが急速に普及している中、生成AIを使った副業の注目度も上がっています。 しかし、「AI副業って本当に稼げる？」「なんか怪しい」と不安に思っている方も多いのではないでしょうか。 この記事ではAIツールを活用したおす [...]...",
+      "publishedDate": "Mon, 30 Mar 2026 03:16:18 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/ai-earn-list_2603-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Open AIの動画生成AI「Sora」とは？使い方や機能を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/openai-sora/",
+      "description": "米国時間の2024年12月9日にOpenAIが動画生成AI「Sora」を正式リリースしました。同年2月15日の発表から約10ヶ月経っての登場です。 正式リリース版のSora（Sora Turbo）は、プレビュー版よりも生 [...]...",
+      "publishedDate": "Fri, 27 Mar 2026 11:43:35 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/03/AIモン_Sora-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Sora2は何がすごい？OpenAIの動画生成AIの機能・制限・活用事例を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/sora2/",
+      "description": "2025年9月30日、OpenAIから新たな動画・音声生成モデルが登場！今回リリースされた「Sora2」は、2024年2月にリリースされたSoraの後継モデルです。今回リリースされたSora2は従来の動画生成モデルに比べ [...]...",
+      "publishedDate": "Fri, 27 Mar 2026 11:43:02 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/10/AIモン_-Sora2-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Suno AIで楽曲制作を始める方法！使い方・商用利用・V5アップデートを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/suno/",
+      "description": "皆さんは「Suno」という音楽生成AIをご存じですか？ Suno AIは、これまで出来なかったユーザーが入力した歌詞でヴォーカルまで生成してくれる革新的な音楽生成AIです。日本語化も可能で、日本語の歌詞を使った楽曲制作が [...]...",
+      "publishedDate": "Fri, 27 Mar 2026 11:16:15 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2023/12/AIモン_Suno-AI-1024x576.jpg",
       "language": "ja"
     }
   ]
