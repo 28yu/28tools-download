@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-29T01:29:38.290154",
+  "lastUpdated": "2026-03-30T01:30:14.377631",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -42,26 +42,6 @@
       "language": "ja"
     },
     {
-      "title": "大成建設、「Rimo Voice」でAI議事録が建築本部全122部署定着、作成時間66%減",
-      "link": "https://news.build-app.jp/article/39706/",
-      "description": "Rimo合同会社（本社：東京都渋谷区、代表：相川直視、以下Rimo）は、大成建設株式会社（本社：東京都新宿区、代表取締役社長：相川善郎、以下......",
-      "publishedDate": "Tue, 24 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/09/MicrosoftTeams-image-146-130x73.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大成建設、CO2排出量最大80％削減の耐火被覆材T-eCon/ロックウールを開発",
-      "link": "https://news.build-app.jp/article/39717/",
-      "description": "大成建設株式会社は2026年3月6日、鉄骨造建物の柱・梁に使用できる環境配慮型の耐火被覆材「T-eCon®/ロックウール」を新たに開発したと......",
-      "publishedDate": "Tue, 24 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/26359585_m-130x98.jpg",
-      "language": "ja"
-    },
-    {
       "title": "国土交通省、建設労働需給調査を公表、令和8年1月は8職種過不足率0.0％で均衡",
       "link": "https://news.build-app.jp/article/39727/",
       "description": "国土交通省は令和8年2月25日、建設技能労働者の需給状況を示す「建設労働需給調査結果（令和8年1月分）」を公表しました。 全国の8職種合計の......",
@@ -69,6 +49,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33864494_l-1-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大成建設、「Rimo Voice」でAI議事録が建築本部全122部署定着、作成時間66%減",
+      "link": "https://news.build-app.jp/article/39706/",
+      "description": "Rimo合同会社（本社：東京都渋谷区、代表：相川直視、以下Rimo）は、大成建設株式会社（本社：東京都新宿区、代表取締役社長：相川善郎、以下......",
+      "publishedDate": "Tue, 24 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/09/MicrosoftTeams-image-146-130x73.jpg",
       "language": "ja"
     },
     {
@@ -89,16 +79,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/wp_eyecatch_1200x630-3-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "原油90ドル超・航空株急落——イラン戦争が日本企業に突きつけた「5つの生存条件」",
-      "link": "https://axconstdx.com/2026/03/10/%e5%8e%9f%e6%b2%b990%e3%83%89%e3%83%ab%e8%b6%85%e3%83%bb%e8%88%aa%e7%a9%ba%e6%a0%aa%e6%80%a5%e8%90%bd-%e3%82%a4%e3%83%a9%e3%83%b3%e6%88%a6%e4%ba%89%e3%81%8c%e6%97%a5%e6%9c%ac%e4%bc%81/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%258e%259f%25e6%25b2%25b990%25e3%2583%2589%25e3%2583%25ab%25e8%25b6%2585%25e3%2583%25bb%25e8%2588%25aa%25e7%25a9%25ba%25e6%25a0%25aa%25e6%2580%25a5%25e8%2590%25bd-%25e3%2582%25a4%25e3%2583%25a9%25e3%2583%25b3%25e6%2588%25a6%25e4%25ba%2589%25e3%2581%258c%25e6%2597%25a5%25e6%259c%25ac%25e4%25bc%2581",
-      "description": "「うちには関係ない」と思っていたら、気づいたときには手遅れかもしれません。イラン戦争が引き起こした原油急騰と航空株の急落は、日本企業の経営の足元を静かに、しかし確実に揺るがしています。この記事を読めば、いま何が起きている [...] <p>The post 原油90ドル超・航空株急落——イラン戦争が日本企業に突きつけた「5つの生存条件」 first appeared on 生成AIと建設DX.</...",
-      "publishedDate": "Tue, 10 Mar 2026 01:37:15 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/wp_eyecatch_1200x630-2-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -152,6 +132,36 @@
       "language": "en"
     },
     {
+      "title": "大林組、建設現場における軽油代替燃料利用を全国へ拡大",
+      "link": "https://news.build-app.jp/article/39832/",
+      "description": "株式会社大林組（本社：東京都港区、代表取締役社長 兼 CEO：佐藤俊美）と伊藤忠エネクス株式会社（本社：東京都千代田区、代表取締役社長：田畑......",
+      "publishedDate": "Sun, 29 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/10/AdobeStock_718522719-130x98.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "人手削減・燃費30%減──清水建設「Smart Dozer」が変える建設現場",
+      "link": "https://axconstdx.com/2026/03/29/%e4%ba%ba%e6%89%8b%e5%89%8a%e6%b8%9b%e3%83%bb%e7%87%83%e8%b2%bb30%e6%b8%9b%e2%94%80%e2%94%80%e6%b8%85%e6%b0%b4%e5%bb%ba%e8%a8%ad%e3%80%8csmart-dozer%e3%80%8d%e3%81%8c%e5%a4%89%e3%81%88%e3%82%8b/?utm_source=rss&utm_medium=rss&utm_campaign=%25e4%25ba%25ba%25e6%2589%258b%25e5%2589%258a%25e6%25b8%259b%25e3%2583%25bb%25e7%2587%2583%25e8%25b2%25bb30%25e6%25b8%259b%25e2%2594%2580%25e2%2594%2580%25e6%25b8%2585%25e6%25b0%25b4%25e5%25bb%25ba%25e8%25a8%25ad%25e3%2580%258csmart-dozer%25e3%2580%258d%25e3%2581%258c%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b",
+      "description": "人手不足と高齢化が加速する建設現場で、「このままでは現場が回らなくなる」と感じている方は多いはずです。その課題に、AIと自律施工技術が真正面から答えを出し始めました。本記事を読めば、省人化・コスト削減・安全確保を同時に実 [...] <p>The post 人手削減・燃費30%減──清水建設「Smart Dozer」が変える建設現場 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sun, 29 Mar 2026 14:38:22 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/bulldozer_1200x630-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新版】アスファルトコンクリートとは？種類・用途・品質管理・再生材活用まで解説",
+      "link": "https://news.build-app.jp/article/39893/",
+      "description": "アスファルトコンクリートは、道路や駐車場、工場構内、物流施設などで用いられる代表的な舗装材料です。現場では「アスコン」「アスファルト混合物」......",
+      "publishedDate": "Sun, 29 Mar 2026 09:31:07 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/27388410_m-130x87.jpg",
+      "language": "ja"
+    },
+    {
       "title": "Revit MCPで変わる7つの現場—自然言語がBIMを動かす時代へ",
       "link": "https://axconstdx.com/2026/03/15/revit-mcp%e3%81%a7%e5%a4%89%e3%82%8f%e3%82%8b7%e3%81%a4%e3%81%ae%e7%8f%be%e5%a0%b4-%e8%87%aa%e7%84%b6%e8%a8%80%e8%aa%9e%e3%81%8cbim%e3%82%92%e5%8b%95%e3%81%8b%e3%81%99%e6%99%82%e4%bb%a3/?utm_source=rss&utm_medium=rss&utm_campaign=revit-mcp%25e3%2581%25a7%25e5%25a4%2589%25e3%2582%258f%25e3%2582%258b7%25e3%2581%25a4%25e3%2581%25ae%25e7%258f%25be%25e5%25a0%25b4-%25e8%2587%25aa%25e7%2584%25b6%25e8%25a8%2580%25e8%25aa%259e%25e3%2581%258cbim%25e3%2582%2592%25e5%258b%2595%25e3%2581%258b%25e3%2581%2599%25e6%2599%2582%25e4%25bb%25a3",
       "description": "「もっとBIMを活かしたい、でも操作が難しくて追いつかない」——そう感じたことはありませんか。Revit MCPを使えば、普通の言葉でBIMを動かせる時代が、もうすぐそこまで来ています。この記事を読み終えたとき、あなたの [...] <p>The post Revit MCPで変わる7つの現場—自然言語がBIMを動かす時代へ first appeared on 生成AIと建設DX.</p>...",
@@ -189,16 +199,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/wp_eyecatch_1200x630-2-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ポストモダン建築とは？特徴・代表作・モダニズムとの違いを3分で理解",
-      "link": "https://news.build-app.jp/article/39794/",
-      "description": "建築を学び始めると必ず出てくるのが「ポストモダン」という言葉です。しかし、見た目が派手な建築様式の、どの部分が評価されているのかわからないと......",
-      "publishedDate": "Mon, 23 Mar 2026 23:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/27660355a5c28a0b5336f57b89004000-130x82.png",
       "language": "ja"
     },
     {
