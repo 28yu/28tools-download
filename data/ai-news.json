@@ -1,17 +1,6 @@
 {
-  "lastUpdated": "2026-03-30T08:38:18.691177",
+  "lastUpdated": "2026-03-31T03:51:31.152563",
   "articles": [
-    {
-      "title": "Roundtables: The Next Era of Space Exploration",
-      "titleJa": "ラウンドテーブル: 宇宙探査の次の時代",
-      "link": "https://www.technologyreview.com/2026/03/25/1134664/roundtables-the-next-era-of-space-exploration/",
-      "description": "Listen to the session or watch below Whether it&#8217;s the race to find life on Mars, the campaign to outsmart killer asteroids, or the quest to make the moon a permanent home to astronauts, scientis...",
-      "publishedDate": "Wed, 25 Mar 2026 17:26:26 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/MITTR-Roundtables-Zoom-Opening-Overlay_3aaab2.png?resize=1200,600",
-      "language": "en"
-    },
     {
       "title": "Build with Lyria 3, our newest music generation model",
       "titleJa": "最新の音楽生成モデルである Lyria 3 で構築",
@@ -32,39 +21,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Lyria-3-Pro_thumbnail.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Why this battery company is pivoting to AI",
-      "titleJa": "この電池会社が AI に軸足を移す理由",
-      "link": "https://www.technologyreview.com/2026/03/25/1134657/battery-company-ai-pivot-ses/",
-      "description": "Qichao Hu doesn’t mince words about how he sees the state of the battery industry. “Almost every Western battery company has either died or is going to die. It’s kind of the reality,” he says. Hu is t...",
-      "publishedDate": "Wed, 25 Mar 2026 15:02:50 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/MU-new-discoveryelectrolytes-in-SES-HQ-synthesis-foundry.jpg?w=3000",
-      "language": "en"
-    },
-    {
-      "title": "This startup wants to change how mathematicians do math",
-      "titleJa": "このスタートアップは数学者の数学のやり方を変えたいと考えています",
-      "link": "https://www.technologyreview.com/2026/03/25/1134642/this-startup-wants-to-change-how-mathematicians-do-math/",
-      "description": "Axiom Math, a startup based in Palo Alto, California, has released a free new AI tool for mathematicians, designed to discover mathematical patterns that could unlock solutions to long-standing proble...",
-      "publishedDate": "Wed, 25 Mar 2026 13:59:17 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/260320_MathAI.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "The Download: reawakening frozen brains, and the AI Hype Index returns",
-      "titleJa": "ダウンロード: 凍った脳が目覚め、AI ハイプ インデックスが復活",
-      "link": "https://www.technologyreview.com/2026/03/25/1134636/the-download-reawakening-frozen-brains-and-the-ai-hype-index-returns/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. This scientist rewarmed and studied pieces of his ...",
-      "publishedDate": "Wed, 25 Mar 2026 12:47:44 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/07/Asteroid_Redamonti_7.2.25.jpg?w=3000",
       "language": "en"
     },
     {
@@ -112,6 +68,39 @@
       "language": "en"
     },
     {
+      "title": "【Suno AIのおすすめ活用事例】AIを使いこなす猛者達のチート級の使い方20選",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/suno-ai-case/",
+      "description": "突然ですが、みなさんは、ユーザーが入力した歌詞を音楽に変えてくれる「Suno AI」という音楽生成AIをご存知でしょうか？ なんと、ユーザーが歌詞をテキストデータで入力するだけで、メロディやボーカルをAIが生成して1つの [...]...",
+      "publishedDate": "Tue, 31 Mar 2026 03:36:23 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/suno-ai-case_2603-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AI導入におけるPoC開発の課題とは？PoC疲れの原因と成功させるポイントをわかりやすく解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/poc-development-challenges/",
+      "description": "最近話題の生成AIを自社商品やシステムに取り入れようと考えるも、PoC開発がうまくいかないといった課題を抱えている会社が増加傾向にあります。PoC開発は、事前に事業の実用可能性や効果を検証できるメリットがある反面、期待し [...]...",
+      "publishedDate": "Tue, 31 Mar 2026 02:51:41 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/poc-development-challenges_2603-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Obsidianとは？無料で始める高性能メモアプリの使い方・活用事例を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/obsidian/",
+      "description": "「メモを取っているのに、あとから見つからない。」「ノートアプリを使っているのに、情報がつながらない。」 仕事のメモ、読書記録、アイデア、日報。情報は増え続ける一方で、整理の仕方が追いつかないという声は少なくありません。そ [...]...",
+      "publishedDate": "Tue, 31 Mar 2026 02:04:57 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/obsidian_2603-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "Helping developers build safer AI experiences for teens",
       "titleJa": "開発者による十代の若者向けのより安全な AI エクスペリエンスの構築を支援",
       "link": "https://openai.com/index/teen-safety-policies-gpt-oss-safeguard",
@@ -123,10 +112,10 @@
       "language": "en"
     },
     {
-      "title": "Powering product discovery in ChatGPT",
-      "titleJa": "ChatGPT での製品発見を強化する",
-      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
-      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration....",
+      "title": "Update on the OpenAI Foundation",
+      "titleJa": "OpenAI Foundation に関する最新情報",
+      "link": "https://openai.com/index/update-on-the-openai-foundation",
+      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs....",
       "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -134,10 +123,10 @@
       "language": "en"
     },
     {
-      "title": "Update on the OpenAI Foundation",
-      "titleJa": "OpenAI Foundation に関する最新情報",
-      "link": "https://openai.com/index/update-on-the-openai-foundation",
-      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs....",
+      "title": "Powering product discovery in ChatGPT",
+      "titleJa": "ChatGPT での製品発見を強化する",
+      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
+      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration....",
       "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -234,7 +223,7 @@
     },
     {
       "title": "Gemini in Google Sheets just achieved state-of-the-art performance.",
-      "titleJa": "Google スプレッドシートの Gemini は最先端のパフォーマンスを達成しました。",
+      "titleJa": "Google Sheets の Gemini は最先端のパフォーマンスを達成しました。",
       "link": "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art/",
       "description": "Today we announced new beta features for Gemini in Sheets to help you create, organize and edit entire sheets, from basic tasks to complex data analysis — just describe …...",
       "publishedDate": "Tue, 10 Mar 2026 13:00:00 +0000",
@@ -332,6 +321,50 @@
       "language": "en"
     },
     {
+      "title": "The Download: a battery pivot to AI, and rewriting math",
+      "titleJa": "ダウンロード: AI へのバッテリーのピボットと数学の書き換え",
+      "link": "https://www.technologyreview.com/2026/03/26/1134697/the-download-battery-ai-pivot-new-ai-tool-math/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Why this battery company is pivoting to AI&#160; Q...",
+      "publishedDate": "Thu, 26 Mar 2026 12:42:53 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/05/GettyImages-1433324047.jpeg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "The snow gods: How a couple of ski bums built the internet’s best weather app",
+      "titleJa": "雪の神様: 数人のスキー愛好家がインターネット最高の天気アプリをどのように構築したか",
+      "link": "https://www.technologyreview.com/2026/03/26/1134470/the-snow-gods-how-a-couple-of-ski-bums-built-the-internets-best-weather-app/",
+      "description": "The best snow-forecasting app for skiers and snowboarders isn’t from any of the federally funded weather services. Nor from any of the big-name brands. It’s an independent app startup that leverages g...",
+      "publishedDate": "Thu, 26 Mar 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/IMG_4251.jpg?w=2667",
+      "language": "en"
+    },
+    {
+      "title": "Are high gas prices good news for EVs? It’s complicated.",
+      "titleJa": "ガソリン価格の高騰はEVにとって朗報か?それは複雑です。",
+      "link": "https://www.technologyreview.com/2026/03/26/1134677/gas-prices-electric-vehicles/",
+      "description": "I live in a dense city with plentiful public transportation options and limited parking, so I don’t own a car. I’m often utterly clueless about the current price of gasoline. But as the conflict in Ir...",
+      "publishedDate": "Thu, 26 Mar 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/GettyImages-2266020633.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Mixture of Experts (MoEs) in Transformers",
+      "titleJa": "トランスフォーマーにおける専門家 (MoE) の混合",
+      "link": "https://huggingface.co/blog/moe-transformers",
+      "description": "...",
+      "publishedDate": "Thu, 26 Feb 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/moe-transformers/thumbnail.png",
+      "language": "en"
+    },
+    {
       "title": "【生成AIのプロが選ぶ】生成AIコンサルティング企業のおすすめ10選！費用相場や選び方も徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/generation-ai-consulting/",
@@ -343,47 +376,47 @@
       "language": "ja"
     },
     {
-      "title": "Kirigamiとは？AIスライドを編集可能なPowerPointに変換する方法と使い方を解説",
+      "title": "【研究が捗る！】ChatGPTを論文に活用する方法！執筆と読ませる手順を徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/kirigami/",
-      "description": "2026年1月、国産スライドAIエージェントがリリースされました！ 今回リリースされた「Kirigami」はNano Banana ProやNotebookLMで作成した画像をPowerPointスライドとして編集できる [...]...",
-      "publishedDate": "Sun, 29 Mar 2026 13:43:14 +0000",
+      "link": "https://weel.co.jp/media/innovator/chatgpt-paper/",
+      "description": "生成AIはさまざまな業務や学習に活用されていますが、論文の読解や執筆補助にも役立つことを知っているでしょうか。学術的な論文は専門的な単語が多く、読み書きのハードルが高いですが、生成AIを活用すればとても扱いやすくなります [...]...",
+      "publishedDate": "Mon, 30 Mar 2026 12:11:31 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/01/AIモン_Kirigami-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-paper_2603-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "【Kling AI 3.0】参照システムで一貫性を保てる動画生成を徹底解説",
+      "title": "【無料あり】生成AI企画書作成ツールのおすすめ10選！実務レベルの資料を作る方法も徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/kling-ai-3-0/",
-      "description": "2026年2月、Kling AIから新たなモデルが登場しました！ 今回リリースされた「Kling AI 3.0」はテキストや画像から動画を生成するだけでなく、人物やオブジェクト、スタイル、声といった要素を「参照」として固 [...]...",
-      "publishedDate": "Sat, 28 Mar 2026 15:10:14 +0000",
+      "link": "https://weel.co.jp/media/generative-ai-proposal/",
+      "description": "昨今、生成AIを業務利用する企業が増えていますが、企画書を作成する時にも生成AIが活躍することをご存知でしょうか。企画書作成時に生成AIを活用することで、内容のブラッシュアップや作成スピードを格段に上げられるなど、さまざ [...]...",
+      "publishedDate": "Mon, 30 Mar 2026 11:07:43 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/02/AIモン_Kling-AI-3.0-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/generative-ai-proposal_2603-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "【Remotion】コード不要で動画生成へ！Agent Skills × Claude Codeでプロンプトから動画が実現",
+      "title": "CapCut Video Studioとは？AI動画生成の仕組みと使い方を徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/remotion/",
-      "description": "2026年1月20日、Remotion公式XでAgent Skillsという新機能が発表されました。 注目すべきは、Claude Codeを使ってプロンプトだけで動画を作成できるようになった点です。「npx skills [...]...",
-      "publishedDate": "Sat, 28 Mar 2026 14:09:51 +0000",
+      "link": "https://weel.co.jp/media/tech/capcut-video-studio/",
+      "description": "2026年3月、動画生成AIの領域で新たな制作体験を提示する機能が登場しました。 今回発表された「CapCut Video Studio」は、従来のようなタイムライン編集を前提としない、対話型の動画生成機能です。テキスト [...]...",
+      "publishedDate": "Mon, 30 Mar 2026 09:44:10 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/01/AIモン_-Remotion-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_CapCut-Video-Studio-1-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "Grok 4.2とは？4人のAIが議論して答えを出す！曖昧な回答に疲れた人必見のマルチエージェントAIを解説",
+      "title": "生成AIで購買業務・調達の未来はどう変わる？導入メリットや事例を徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/grok-4-2/",
-      "description": "2026年2月18日、xAIが提供しているGrokの最新モデルとしてGrok 4.2のベータ版がリリースされました。Grok 4.2は、4人の専門エージェントが協力して回答を生成する仕組みで、明確かつ一貫性のある回答を生 [...]...",
-      "publishedDate": "Sat, 28 Mar 2026 12:07:34 +0000",
+      "link": "https://weel.co.jp/media/generation-ai-purchasing-operations/",
+      "description": "企業の購買業務は、購買申請の入力・RFQ作成・見積比較・契約確認・サプライヤー対応などで手間がかかりやすく、担当者の負担になりやすい業務です。生成AIは、こうした実務の中でも、文書の要約・回答案の作成・データ整理などを支 [...]...",
+      "publishedDate": "Mon, 30 Mar 2026 08:39:06 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/grok-4-2_2603-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/generation-ai-purchasing-operations_2603-1024x576.webp",
       "language": "ja"
     },
     {
@@ -409,36 +442,14 @@
       "language": "ja"
     },
     {
-      "title": "Open AIの動画生成AI「Sora」とは？使い方や機能を解説",
+      "title": "AWS、数秒でデータベース作成可能な新機能をAmazon Aurora PostgreSQLサーバーレスに搭載",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/openai-sora/",
-      "description": "米国時間の2024年12月9日にOpenAIが動画生成AI「Sora」を正式リリースしました。同年2月15日の発表から約10ヶ月経っての登場です。 正式リリース版のSora（Sora Turbo）は、プレビュー版よりも生 [...]...",
-      "publishedDate": "Fri, 27 Mar 2026 11:43:35 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/awsamazon_aurora_postgresql.html",
+      "description": "Amazon Web Services（AWS）は、Amazon Aurora PostgreSQLサーバーレスの新機能として、わずか2クリック、時間にして数秒でデータベースが作成できるエクスプレス設定（express configurat......",
+      "publishedDate": "2026-03-30T15:50:34Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/03/AIモン_Sora-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Sora2は何がすごい？OpenAIの動画生成AIの機能・制限・活用事例を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/sora2/",
-      "description": "2025年9月30日、OpenAIから新たな動画・音声生成モデルが登場！今回リリースされた「Sora2」は、2024年2月にリリースされたSoraの後継モデルです。今回リリースされたSora2は従来の動画生成モデルに比べ [...]...",
-      "publishedDate": "Fri, 27 Mar 2026 11:43:02 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/10/AIモン_-Sora2-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Suno AIで楽曲制作を始める方法！使い方・商用利用・V5アップデートを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/suno/",
-      "description": "皆さんは「Suno」という音楽生成AIをご存じですか？ Suno AIは、これまで出来なかったユーザーが入力した歌詞でヴォーカルまで生成してくれる革新的な音楽生成AIです。日本語化も可能で、日本語の歌詞を使った楽曲制作が [...]...",
-      "publishedDate": "Fri, 27 Mar 2026 11:16:15 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2023/12/AIモン_Suno-AI-1024x576.jpg",
+      "thumbnail": "https://www.publickey1.jp/2026/aurora-postgresql-serverless-expressconfigration-ann.png",
       "language": "ja"
     },
     {
@@ -593,17 +604,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2025/viteplus-ann02.png",
-      "language": "ja"
-    },
-    {
-      "title": "ビルドツール「Vite 8.0」正式リリース。Rustベースの新バンドラ「Rolldown」採用でより一貫した動作や最適化を実現",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/vite_80rustrolldown.html",
-      "description": "JavaScriptのESモジュールに対応した高速なビルドツール「Vite」の最新版「Vite 8.0」正式版がリリースされました。 Vite 8.0 is here!The most significant architectural ......",
-      "publishedDate": "2026-03-15T15:44:30Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HDOa2xfXUAEDzWT.jpg",
       "language": "ja"
     }
   ]
