@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-30T01:30:14.377631",
+  "lastUpdated": "2026-03-31T01:27:23.653132",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -29,36 +29,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/XLm1qqr0TZRICT41677691748_1677691764-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "香港はなぜ、世界一過密かつ、世界一家賃が高いのか？｜「住宅の金融化」という世界的搾取プログラム",
-      "link": "https://news.build-app.jp/article/38893/",
-      "description": "極限都市のパラドックス 香港、その面積1,106km²──。札幌市に匹敵する広さを持ちながら、 その約75%は山岳地帯、40%は開発禁止の郊......",
-      "publishedDate": "Tue, 24 Mar 2026 23:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/01/260325_hirayama-1-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、建設労働需給調査を公表、令和8年1月は8職種過不足率0.0％で均衡",
-      "link": "https://news.build-app.jp/article/39727/",
-      "description": "国土交通省は令和8年2月25日、建設技能労働者の需給状況を示す「建設労働需給調査結果（令和8年1月分）」を公表しました。 全国の8職種合計の......",
-      "publishedDate": "Tue, 24 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33864494_l-1-130x87.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大成建設、「Rimo Voice」でAI議事録が建築本部全122部署定着、作成時間66%減",
-      "link": "https://news.build-app.jp/article/39706/",
-      "description": "Rimo合同会社（本社：東京都渋谷区、代表：相川直視、以下Rimo）は、大成建設株式会社（本社：東京都新宿区、代表取締役社長：相川善郎、以下......",
-      "publishedDate": "Tue, 24 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/09/MicrosoftTeams-image-146-130x73.jpg",
       "language": "ja"
     },
     {
@@ -199,6 +169,36 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/wp_eyecatch_1200x630-2-1-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "4月から始まる建築確認申請の「BIM図面審査」を前にBIM状況を取り巻く現在地を俯瞰(第二回)｜深堀り取材【毎月15日・月末更新】",
+      "link": "https://news.build-app.jp/article/39804/",
+      "description": "前稿では、建築確認申請の「BIM図面審査」に用いられる確認申請用CDEの概要と共に、建設業界でDX推進に関わる担当者を対象に行われた「建設現......",
+      "publishedDate": "Mon, 30 Mar 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/53943ec08a229ae2ecc24b642ed4bb82-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "TOKYO NODEの見どころはどこ？最寄り駅からのアクセスとイベントも解説",
+      "link": "https://news.build-app.jp/article/39807/",
+      "description": "トレンドワード：「TOKYO NODE」 「TOKYO NODE」（トウキョウ ノード）は、世界へ向けた情報発信拠点として整備された複合施設......",
+      "publishedDate": "Mon, 30 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/c892e51c4bda22eaebf11b8f4016e0f2-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "NEC、大成建設へ「建設現場顔認証 for グリーンサイト」を導入",
+      "link": "https://news.build-app.jp/article/39839/",
+      "description": "NECは、建設現場の入退場管理を顔認証で行う「建設現場顔認証 for グリーンサイト」(注1)を、大成建設株式会社（以下、大成建設）に導入し......",
+      "publishedDate": "Mon, 30 Mar 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/rbm8S3J6wOtaY151643282433-130x87.jpg",
       "language": "ja"
     },
     {
