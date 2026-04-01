@@ -199,35 +199,35 @@
   <div class="pdf-tool">
   <div class="upload-row">
     <div class="drop-zone" id="drop1" onclick="document.getElementById('file1').click()">
-      <div class="drop-label-sub">比較元 PDF（青色で表示）</div>
-      <div class="drop-label-main" id="label1">クリックまたはドロップ</div>
-      <div class="drop-hint">旧バージョン</div>
+      <div class="drop-label-sub" data-lang-key="pdf-compare-source-label">比較元 PDF（青色で表示）</div>
+      <div class="drop-label-main" id="label1" data-lang-key="pdf-compare-click-or-drop">クリックまたはドロップ</div>
+      <div class="drop-hint" data-lang-key="pdf-compare-old-version">旧バージョン</div>
       <input type="file" id="file1" accept=".pdf" style="display:none">
     </div>
     <div class="drop-zone" id="drop2" onclick="document.getElementById('file2').click()">
-      <div class="drop-label-sub">比較先 PDF（赤色で表示）</div>
-      <div class="drop-label-main" id="label2">クリックまたはドロップ</div>
-      <div class="drop-hint">新バージョン</div>
+      <div class="drop-label-sub" data-lang-key="pdf-compare-target-label">比較先 PDF（赤色で表示）</div>
+      <div class="drop-label-main" id="label2" data-lang-key="pdf-compare-click-or-drop">クリックまたはドロップ</div>
+      <div class="drop-hint" data-lang-key="pdf-compare-new-version">新バージョン</div>
       <input type="file" id="file2" accept=".pdf" style="display:none">
     </div>
   </div>
 
   <div class="controls">
     <div class="ctrl-group">
-      <span class="ctrl-label">差分の不透明度</span>
+      <span class="ctrl-label" data-lang-key="pdf-compare-opacity">差分の不透明度</span>
       <input type="range" id="opacity" min="20" max="100" value="65" step="1">
       <span class="val-display" id="opacityVal">65%</span>
     </div>
     <div class="ctrl-group">
-      <span class="ctrl-label">白背景の閾値</span>
+      <span class="ctrl-label" data-lang-key="pdf-compare-bg-threshold">白背景の閾値</span>
       <input type="range" id="bgThresh" min="180" max="254" value="230" step="1">
       <span class="val-display" id="bgThreshVal">230</span>
     </div>
-    <button id="compareBtn" onclick="runCompareAll()" disabled>比較実行</button>
-    <button id="downloadBtn" class="secondary" onclick="downloadAllPages()" style="display:none">📥 全ページPDF保存</button>
+    <button id="compareBtn" onclick="runCompareAll()" disabled data-lang-key="pdf-compare-run">比較実行</button>
+    <button id="downloadBtn" class="secondary" onclick="downloadAllPages()" style="display:none" data-lang-key="pdf-compare-download">📥 全ページPDF保存</button>
   </div>
 
-  <div id="status">PDFを2つ選択してください</div>
+  <div id="status" data-lang-key="pdf-compare-status-select">PDFを2つ選択してください</div>
 
   <div id="progressWrap">
     <div id="progressBar"><div id="progressFill"></div></div>
@@ -236,51 +236,51 @@
 
   <!-- ⑨ ページナビゲーション -->
   <div id="pageNav">
-    <span class="nav-label">ページ</span>
+    <span class="nav-label" data-lang-key="pdf-compare-page-nav">ページ</span>
     <button class="nav-arrow" id="prevBtn" onclick="navigatePage(-1)" disabled>&#8249;</button>
     <div id="pageBtns"></div>
     <button class="nav-arrow" id="nextBtn" onclick="navigatePage(1)" disabled>&#8250;</button>
     <div class="nav-legend" style="border-top: 1px solid #f0f0f0; padding-top: 8px; margin-top: 2px;">
       <div class="nav-legend-item">
         <div class="nav-legend-dot" style="background:#fff0f0; border-color:#c0392b;"></div>
-        差分あり
+        <span data-lang-key="pdf-compare-has-diff">差分あり</span>
       </div>
       <div class="nav-legend-item">
         <div class="nav-legend-dot" style="background:#f8f8f8; border-color:#ddd;"></div>
-        差分なし
+        <span data-lang-key="pdf-compare-no-diff">差分なし</span>
       </div>
     </div>
   </div>
 
   <div class="result-area">
     <div class="canvas-wrap">
-      <div class="canvas-wrap-label" id="previewLabel">差分プレビュー</div>
+      <div class="canvas-wrap-label" id="previewLabel" data-lang-key="pdf-compare-preview">差分プレビュー</div>
       <canvas id="resultCanvas"></canvas>
     </div>
     <div class="sidebar">
       <div class="legend">
-        <div class="legend-title">凡例</div>
+        <div class="legend-title" data-lang-key="pdf-compare-legend">凡例</div>
         <div class="legend-item">
           <div class="legend-swatch" style="background:rgba(25,85,210,0.65);"></div>
-          <div class="legend-text">比較元のみ<br>（旧・削除）</div>
+          <div class="legend-text" data-lang-key="pdf-compare-legend-source">比較元のみ<br>（旧・削除）</div>
         </div>
         <div class="legend-item">
           <div class="legend-swatch" style="background:rgba(210,35,35,0.65);"></div>
-          <div class="legend-text">比較先のみ<br>（新・追加）</div>
+          <div class="legend-text" data-lang-key="pdf-compare-legend-target">比較先のみ<br>（新・追加）</div>
         </div>
         <div class="legend-item">
           <div class="legend-swatch" style="background:#aaaaaa;"></div>
-          <div class="legend-text">共通部分<br>（変更なし）</div>
+          <div class="legend-text" data-lang-key="pdf-compare-legend-common">共通部分<br>（変更なし）</div>
         </div>
         <div class="legend-item">
           <div class="legend-swatch" style="background:#ffffff; border:1px solid #ddd;"></div>
-          <div class="legend-text">背景（白）</div>
+          <div class="legend-text" data-lang-key="pdf-compare-legend-bg">背景（白）</div>
         </div>
       </div>
       <div class="stats-box" id="statsBox">
-        <div class="stats-title">差分統計</div>
+        <div class="stats-title" data-lang-key="pdf-compare-stats">差分統計</div>
         <div class="stats-value" id="diffPercent">—</div>
-        <div class="stats-unit">% 変更率</div>
+        <div class="stats-unit" data-lang-key="pdf-compare-change-rate">% 変更率</div>
         <div class="stats-sub" id="diffPixels"></div>
       </div>
     </div>
@@ -333,8 +333,87 @@ pdfjsLib.GlobalWorkerOptions.workerSrc =
 
 let pdf1 = null, pdf2 = null, totalPages = 0;
 let currentPage = 1;
-// 全ページのキャッシュ: { canvas, diffCount, total }
 let pageCache = {};
+
+// 多言語対応: JS内ステータスメッセージ用
+const pdfI18n = {
+  ja: {
+    selectPdf: 'PDFファイルを選択してください',
+    loading: 'PDF {0} を読み込み中...',
+    loadDone: 'PDF {0} 読み込み完了。',
+    readyToCompare: '比較実行できます。',
+    selectOther: 'もう一方のPDFを選択してください。',
+    selectTwo: 'PDFを2つ選択してください',
+    showingPage: '{0} ページ目を表示中...',
+    processing: '{0} / {1} ページ目を処理中...',
+    processingProgress: '{0} / {1} ページ処理中',
+    previewPage: '差分プレビュー — {0} / {1} ページ',
+    hasDiff: '差分あり',
+    noDiff: '差分なし',
+    pageStatus: '{2} — {0} / {1} ページ目（変更率 {3}%）',
+    allDone: '全 {0} ページの比較完了 — ページボタンで切り替えできます',
+    pdfExporting: '{0} / {1} ページをPDF化中...',
+    pdfExportProgress: '{0} / {1} ページPDF化中',
+    pdfExportDone: '全 {0} ページのダウンロード完了',
+    done: '完了',
+    pxDiff: '{0} px 差分',
+    error: 'エラー: {0}'
+  },
+  en: {
+    selectPdf: 'Please select a PDF file',
+    loading: 'Loading PDF {0}...',
+    loadDone: 'PDF {0} loaded.',
+    readyToCompare: 'Ready to compare.',
+    selectOther: 'Please select the other PDF.',
+    selectTwo: 'Please select two PDFs',
+    showingPage: 'Showing page {0}...',
+    processing: 'Processing page {0} / {1}...',
+    processingProgress: 'Processing {0} / {1}',
+    previewPage: 'Diff Preview — Page {0} / {1}',
+    hasDiff: 'Differences found',
+    noDiff: 'No differences',
+    pageStatus: '{2} — Page {0} / {1} (Change rate {3}%)',
+    allDone: 'All {0} pages compared — use page buttons to navigate',
+    pdfExporting: 'Exporting page {0} / {1} to PDF...',
+    pdfExportProgress: 'Exporting {0} / {1}',
+    pdfExportDone: 'All {0} pages downloaded',
+    done: 'Done',
+    pxDiff: '{0} px diff',
+    error: 'Error: {0}'
+  },
+  zh: {
+    selectPdf: '请选择PDF文件',
+    loading: '正在加载PDF {0}...',
+    loadDone: 'PDF {0} 加载完成。',
+    readyToCompare: '可以执行比较。',
+    selectOther: '请选择另一个PDF。',
+    selectTwo: '请选择两个PDF',
+    showingPage: '正在显示第 {0} 页...',
+    processing: '正在处理第 {0} / {1} 页...',
+    processingProgress: '处理中 {0} / {1}',
+    previewPage: '差异预览 — 第 {0} / {1} 页',
+    hasDiff: '有差异',
+    noDiff: '无差异',
+    pageStatus: '{2} — 第 {0} / {1} 页（变更率 {3}%）',
+    allDone: '全部 {0} 页比较完成 — 使用页面按钮切换',
+    pdfExporting: '正在导出第 {0} / {1} 页为PDF...',
+    pdfExportProgress: '导出中 {0} / {1}',
+    pdfExportDone: '全部 {0} 页下载完成',
+    done: '完成',
+    pxDiff: '{0} px 差异',
+    error: '错误: {0}'
+  }
+};
+
+function getLang() {
+  return localStorage.getItem('selectedLanguage') || 'ja';
+}
+
+function t(key, ...args) {
+  const lang = getLang();
+  const msg = (pdfI18n[lang] && pdfI18n[lang][key]) || pdfI18n['ja'][key] || key;
+  return msg.replace(/\{(\d+)\}/g, (_, i) => args[i] !== undefined ? args[i] : '');
+}
 
 function setStatus(msg) { document.getElementById('status').textContent = msg; }
 function updateCompareBtn() { document.getElementById('compareBtn').disabled = !(pdf1 && pdf2); }
@@ -430,8 +509,8 @@ async function buildDiffCanvas(pageNum, scale, opacity, bgThresh) {
 }
 
 async function handleFile(file, slot) {
-  if (!file || file.type !== 'application/pdf') { setStatus('PDFファイルを選択してください'); return; }
-  setStatus('PDF ' + slot + ' を読み込み中...');
+  if (!file || file.type !== 'application/pdf') { setStatus(t('selectPdf')); return; }
+  setStatus(t('loading', slot));
   try {
     const pdf = await loadPDF(file);
     if (slot === 1) {
@@ -450,8 +529,8 @@ async function handleFile(file, slot) {
     pageCache = {};
     document.getElementById('pageNav').style.display = 'none';
     document.getElementById('downloadBtn').style.display = 'none';
-    setStatus('PDF ' + slot + ' 読み込み完了。' + (pdf1 && pdf2 ? '比較実行できます。' : 'もう一方のPDFを選択してください。'));
-  } catch (err) { setStatus('エラー: ' + err.message); }
+    setStatus(t('loadDone', slot) + (pdf1 && pdf2 ? t('readyToCompare') : t('selectOther')));
+  } catch (err) { setStatus(t('error', err.message)); }
 }
 
 document.getElementById('file1').addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0], 1); });
@@ -532,7 +611,7 @@ async function jumpToPage(pageNum) {
 
 // 指定ページをプレビューに表示（キャッシュ優先）
 async function showPage(pageNum) {
-  setStatus(pageNum + ' ページ目を表示中...');
+  setStatus(t('showingPage', pageNum));
   const opacity  = parseInt(document.getElementById('opacity').value) / 100;
   const bgThresh = parseInt(document.getElementById('bgThresh').value);
   const deviceScale = window.devicePixelRatio || 1;
@@ -554,16 +633,16 @@ async function showPage(pageNum) {
 
     const pct = ((entry.diffCount / entry.total) * 100).toFixed(2);
     document.getElementById('diffPercent').textContent = pct;
-    document.getElementById('diffPixels').textContent  = entry.diffCount.toLocaleString() + ' px 差分';
+    document.getElementById('diffPixels').textContent  = t('pxDiff', entry.diffCount.toLocaleString());
     document.getElementById('statsBox').style.display  = 'block';
-    document.getElementById('previewLabel').textContent = '差分プレビュー — ' + pageNum + ' / ' + totalPages + ' ページ';
-    setStatus((entry.diffCount > 0 ? '差分あり' : '差分なし') + ' — ' + pageNum + ' / ' + totalPages + ' ページ目（変更率 ' + pct + '%）');
-  } catch (err) { setStatus('エラー: ' + err.message); }
+    document.getElementById('previewLabel').textContent = t('previewPage', pageNum, totalPages);
+    setStatus(t('pageStatus', pageNum, totalPages, entry.diffCount > 0 ? t('hasDiff') : t('noDiff'), pct));
+  } catch (err) { setStatus(t('error', err.message)); }
 }
 
 // ---- 比較実行：全ページをバックグラウンドで処理してナビを構築 ----
 async function runCompareAll() {
-  if (!pdf1 || !pdf2) { setStatus('PDFを2つ選択してください'); return; }
+  if (!pdf1 || !pdf2) { setStatus(t('selectTwo')); return; }
 
   pageCache = {};
   currentPage = 1;
@@ -575,9 +654,8 @@ async function runCompareAll() {
   document.getElementById('compareBtn').disabled = true;
   document.getElementById('downloadBtn').style.display = 'none';
 
-  // まず1ページ目をすぐ表示
-  setStatus('1 / ' + totalPages + ' ページ目を処理中...');
-  setProgress(0, totalPages, '1 / ' + totalPages + ' ページ処理中');
+  setStatus(t('processing', 1, totalPages));
+  setProgress(0, totalPages, t('processingProgress', 1, totalPages));
 
   try {
     const first = await buildDiffCanvas(1, scale, opacity, bgThresh);
@@ -593,15 +671,14 @@ async function runCompareAll() {
 
     const pct0 = ((first.diffCount / first.total) * 100).toFixed(2);
     document.getElementById('diffPercent').textContent = pct0;
-    document.getElementById('diffPixels').textContent  = first.diffCount.toLocaleString() + ' px 差分';
+    document.getElementById('diffPixels').textContent  = t('pxDiff', first.diffCount.toLocaleString());
     document.getElementById('statsBox').style.display  = 'block';
-    document.getElementById('previewLabel').textContent = '差分プレビュー — 1 / ' + totalPages + ' ページ';
+    document.getElementById('previewLabel').textContent = t('previewPage', 1, totalPages);
     updateNavButtons();
 
-    // 残りページをバックグラウンドで順次処理
     for (let p = 2; p <= totalPages; p++) {
-      setStatus(p + ' / ' + totalPages + ' ページ目を処理中...');
-      setProgress(p - 1, totalPages, p + ' / ' + totalPages + ' ページ処理中');
+      setStatus(t('processing', p, totalPages));
+      setProgress(p - 1, totalPages, t('processingProgress', p, totalPages));
       const entry = await buildDiffCanvas(p, scale, opacity, bgThresh);
       pageCache[p] = entry;
       updatePageBtnStyle(p, entry.diffCount);
@@ -610,9 +687,9 @@ async function runCompareAll() {
 
     setProgress(null);
     document.getElementById('downloadBtn').style.display = 'inline-block';
-    setStatus('全 ' + totalPages + ' ページの比較完了 — ページボタンで切り替えできます');
+    setStatus(t('allDone', totalPages));
   } catch (err) {
-    setStatus('エラー: ' + err.message);
+    setStatus(t('error', err.message));
     setProgress(null);
   } finally {
     document.getElementById('compareBtn').disabled = false;
@@ -637,10 +714,9 @@ async function downloadAllPages() {
     let doc = null;
 
     for (let p = 1; p <= totalPages; p++) {
-      setStatus(p + ' / ' + totalPages + ' ページをPDF化中...');
-      setProgress(p - 1, totalPages, p + ' / ' + totalPages + ' ページPDF化中');
+      setStatus(t('pdfExporting', p, totalPages));
+      setProgress(p - 1, totalPages, t('pdfExportProgress', p, totalPages));
 
-      // キャッシュがあれば再利用（ただし出力用scaleは固定3.0で再生成）
       const entry = await buildDiffCanvas(p, scale, opacity, bgThresh);
       const wMm   = entry.canvas.width  * PX_TO_MM;
       const hMm   = entry.canvas.height * PX_TO_MM;
@@ -660,12 +736,12 @@ async function downloadAllPages() {
       await new Promise(r => setTimeout(r, 0));
     }
 
-    setProgress(totalPages, totalPages, '完了');
+    setProgress(totalPages, totalPages, t('done'));
     doc.save('pdf_diff_all_' + new Date().toISOString().slice(0, 10) + '.pdf');
-    setStatus('全 ' + totalPages + ' ページのダウンロード完了');
+    setStatus(t('pdfExportDone', totalPages));
     setTimeout(() => setProgress(null), 1500);
   } catch (err) {
-    setStatus('エラー: ' + err.message);
+    setStatus(t('error', err.message));
     setProgress(null);
   } finally {
     document.getElementById('downloadBtn').disabled = false;

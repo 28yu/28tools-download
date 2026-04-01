@@ -3088,6 +3088,111 @@ function initTranslations() {
             en: 'Overlay two PDFs and highlight differences in color — all processing done in browser (no server upload)',
             zh: '叠加两个PDF并以彩色显示差异 — 所有处理均在浏览器中完成（无需上传服务器）'
         },
+        'pdf-compare-source-label': {
+            ja: '比較元 PDF（青色で表示）',
+            en: 'Source PDF (shown in blue)',
+            zh: '比较源PDF（蓝色显示）'
+        },
+        'pdf-compare-target-label': {
+            ja: '比較先 PDF（赤色で表示）',
+            en: 'Target PDF (shown in red)',
+            zh: '比较目标PDF（红色显示）'
+        },
+        'pdf-compare-click-or-drop': {
+            ja: 'クリックまたはドロップ',
+            en: 'Click or drop',
+            zh: '点击或拖放'
+        },
+        'pdf-compare-old-version': {
+            ja: '旧バージョン',
+            en: 'Old version',
+            zh: '旧版本'
+        },
+        'pdf-compare-new-version': {
+            ja: '新バージョン',
+            en: 'New version',
+            zh: '新版本'
+        },
+        'pdf-compare-opacity': {
+            ja: '差分の不透明度',
+            en: 'Diff opacity',
+            zh: '差异不透明度'
+        },
+        'pdf-compare-bg-threshold': {
+            ja: '白背景の閾値',
+            en: 'White BG threshold',
+            zh: '白色背景阈值'
+        },
+        'pdf-compare-run': {
+            ja: '比較実行',
+            en: 'Compare',
+            zh: '执行比较'
+        },
+        'pdf-compare-download': {
+            ja: '📥 全ページPDF保存',
+            en: '📥 Save all pages as PDF',
+            zh: '📥 保存全部页面为PDF'
+        },
+        'pdf-compare-status-select': {
+            ja: 'PDFを2つ選択してください',
+            en: 'Please select two PDFs',
+            zh: '请选择两个PDF'
+        },
+        'pdf-compare-page-nav': {
+            ja: 'ページ',
+            en: 'Page',
+            zh: '页面'
+        },
+        'pdf-compare-has-diff': {
+            ja: '差分あり',
+            en: 'Has differences',
+            zh: '有差异'
+        },
+        'pdf-compare-no-diff': {
+            ja: '差分なし',
+            en: 'No differences',
+            zh: '无差异'
+        },
+        'pdf-compare-preview': {
+            ja: '差分プレビュー',
+            en: 'Diff Preview',
+            zh: '差异预览'
+        },
+        'pdf-compare-legend': {
+            ja: '凡例',
+            en: 'Legend',
+            zh: '图例'
+        },
+        'pdf-compare-legend-source': {
+            ja: '比較元のみ<br>（旧・削除）',
+            en: 'Source only<br>(Old / Removed)',
+            zh: '仅比较源<br>（旧/删除）'
+        },
+        'pdf-compare-legend-target': {
+            ja: '比較先のみ<br>（新・追加）',
+            en: 'Target only<br>(New / Added)',
+            zh: '仅比较目标<br>（新/添加）'
+        },
+        'pdf-compare-legend-common': {
+            ja: '共通部分<br>（変更なし）',
+            en: 'Common<br>(No change)',
+            zh: '共同部分<br>（无变更）'
+        },
+        'pdf-compare-legend-bg': {
+            ja: '背景（白）',
+            en: 'Background (white)',
+            zh: '背景（白色）'
+        },
+        'pdf-compare-stats': {
+            ja: '差分統計',
+            en: 'Diff Statistics',
+            zh: '差异统计'
+        },
+        'pdf-compare-change-rate': {
+            ja: '% 変更率',
+            en: '% change rate',
+            zh: '% 变更率'
+        },
         'hatch-page-title': {
             ja: '塗潰し（ハッチング）パターン自動作成',
             en: 'Hatch Pattern Generator',
