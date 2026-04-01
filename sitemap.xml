@@ -64,6 +64,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- PDF比較ツール -->
+  <url>
+    <loc>https://28tools.com/pdf_compare.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- AIニュース -->
   <url>
     <loc>https://28tools.com/ai-news.html</loc>
