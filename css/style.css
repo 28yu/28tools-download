@@ -2168,6 +2168,25 @@ h1.main-title,
 }
 
 /* ==========================================
+   ページタイトル・説明（共通）
+   ========================================== */
+
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--concrete-gray);
+    margin-bottom: 12px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.page-description {
+    font-size: 1rem;
+    color: var(--steel-blue);
+    margin-bottom: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ==========================================
    ファミリページ
    ========================================== */
 
