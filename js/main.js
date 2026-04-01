@@ -781,6 +781,16 @@ function initTranslations() {
             en: 'News & Featured',
             zh: '最新动态'
         },
+        'index-news-pdf-compare': {
+            ja: 'PDF 比較ツール 公開 — ブラウザ上で2つのPDFの差分をカラー表示',
+            en: 'PDF Compare Tool Released — Highlight differences between two PDFs in browser',
+            zh: 'PDF比较工具发布 — 在浏览器中以彩色显示两个PDF的差异'
+        },
+        'index-news-ai-news': {
+            ja: 'AIニュースページ 公開 — AI・LLMの最新トレンドを毎日配信',
+            en: 'AI News Page Launched — Daily AI & LLM trend updates',
+            zh: 'AI新闻页面上线 — 每日AI与LLM最新趋势'
+        },
         'index-news-v2': {
             ja: '28 Tools v2.0 リリース - 新機能追加・Revit 2021~2026 対応',
             en: '28 Tools v2.0 Released - New Features, Revit 2021~2026 Supported',
