@@ -73,17 +73,30 @@
   .val-display { font-size: 13px; font-weight: 600; min-width: 36px; }
 
   /* メインボタン */
-  .pdf-tool button {
-    padding: 7px 18px; font-size: 13px; font-weight: 600;
-    border-radius: 7px; border: 1.5px solid #1a1a1a;
-    background: #1a1a1a; color: #fff; cursor: pointer;
-    transition: opacity 0.15s, transform 0.1s; letter-spacing: 0.02em;
+  .pdf-tool .btn-compare {
+    padding: 10px 28px; font-size: 14px; font-weight: 600;
+    border-radius: 8px; border: none;
+    background: var(--blueprint-blue, #3498db); color: #fff; cursor: pointer;
+    transition: background 0.2s, transform 0.1s; letter-spacing: 0.03em;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
   }
-  .pdf-tool button:hover { opacity: 0.85; }
-  .pdf-tool button:active { transform: scale(0.97); }
-  .pdf-tool button.secondary { background: #fff; color: #1a1a1a; border-color: #ccc; }
-  .pdf-tool button.secondary:hover { background: #f5f4f0; }
-  .pdf-tool button:disabled { opacity: 0.35; cursor: not-allowed; transform: none; }
+  .pdf-tool .btn-compare:hover { background: #2980b9; }
+  .pdf-tool .btn-compare:active { transform: scale(0.97); }
+  .pdf-tool .btn-compare:disabled { opacity: 0.4; cursor: not-allowed; transform: none; box-shadow: none; }
+
+  .pdf-tool .btn-download {
+    padding: 10px 28px; font-size: 14px; font-weight: 600;
+    border-radius: 8px; border: 2px solid var(--architect-green, #27ae60);
+    background: #fff; color: var(--architect-green, #27ae60); cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.1s; letter-spacing: 0.03em;
+  }
+  .pdf-tool .btn-download:hover { background: var(--architect-green, #27ae60); color: #fff; }
+  .pdf-tool .btn-download:active { transform: scale(0.97); }
+  .pdf-tool .btn-download:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+  .pdf-tool .nav-arrow {
+    border: 1.5px solid #ccc; background: #fff; color: #1a1a1a;
+  }
 
   #status { font-size: 12px; color: #888; min-height: 16px; margin-bottom: 10px; padding-left: 2px; }
 
@@ -223,8 +236,8 @@
       <input type="range" id="bgThresh" min="180" max="254" value="230" step="1">
       <span class="val-display" id="bgThreshVal">230</span>
     </div>
-    <button id="compareBtn" onclick="runCompareAll()" disabled data-lang-key="pdf-compare-run">比較実行</button>
-    <button id="downloadBtn" class="secondary" onclick="downloadAllPages()" style="display:none" data-lang-key="pdf-compare-download">📥 全ページPDF保存</button>
+    <button id="compareBtn" class="btn-compare" onclick="runCompareAll()" disabled data-lang-key="pdf-compare-run">比較実行</button>
+    <button id="downloadBtn" class="btn-download" onclick="downloadAllPages()" style="display:none" data-lang-key="pdf-compare-download">📥 全ページPDF保存</button>
   </div>
 
   <div id="status" data-lang-key="pdf-compare-status-select">PDFを2つ選択してください</div>
