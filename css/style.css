@@ -1590,6 +1590,16 @@ h1.main-title,
     color: var(--steel-blue);
 }
 
+.news-tag.pdf {
+    background: rgba(192, 57, 43, 0.1);
+    color: #c0392b;
+}
+
+.news-tag.ai {
+    background: rgba(142, 68, 173, 0.1);
+    color: #8e44ad;
+}
+
 .news-content {
     flex: 1;
 }
