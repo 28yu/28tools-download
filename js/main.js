@@ -611,6 +611,11 @@ function initTranslations() {
             en: 'Hatch',
             zh: '填充'
         },
+        'index-tab-pdf-compare': {
+            ja: 'PDF比較',
+            en: 'PDF Compare',
+            zh: 'PDF比较'
+        },
         'index-tab-knowledge': {
             ja: 'BIMニュース',
             en: 'BIM News',
@@ -750,6 +755,11 @@ function initTranslations() {
             ja: 'Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。6種類のパターンに対応。',
             en: 'Easily create hatching pattern files (.pat) for Revit/AutoCAD. Supports 6 pattern types.',
             zh: '轻松创建Revit/AutoCAD的填充图案文件（.pat）。支持6种图案类型。'
+        },
+        'index-category-pdf-compare-desc': {
+            ja: '2つのPDFをブラウザ上で重ねて差分をカラー表示。サーバー送信なしで安全に比較。',
+            en: 'Overlay two PDFs in the browser and highlight differences in color. Safe comparison without server upload.',
+            zh: '在浏览器中叠加两个PDF并以彩色显示差异。无需上传服务器，安全比较。'
         },
         'index-category-news-desc': {
             ja: 'BIM・Revit・建築業界の最新ニュースを自動収集。業界トレンドを毎日チェック。（準備中）',
@@ -3052,6 +3062,21 @@ function initTranslations() {
             ja: '塗潰し（ハッチング）パターン自動作成',
             en: 'Hatch Pattern Generator',
             zh: '填充图案自动生成'
+        },
+        'pdf-compare-breadcrumb': {
+            ja: 'PDF 比較ツール',
+            en: 'PDF Compare Tool',
+            zh: 'PDF比较工具'
+        },
+        'pdf-compare-page-title': {
+            ja: 'PDF 比較ツール',
+            en: 'PDF Compare Tool',
+            zh: 'PDF比较工具'
+        },
+        'pdf-compare-page-desc': {
+            ja: '2つのPDFを重ねて差分をカラー表示 — すべてブラウザ内で処理（サーバー送信なし）',
+            en: 'Overlay two PDFs and highlight differences in color — all processing done in browser (no server upload)',
+            zh: '叠加两个PDF并以彩色显示差异 — 所有处理均在浏览器中完成（无需上传服务器）'
         },
         'hatch-page-title': {
             ja: '塗潰し（ハッチング）パターン自動作成',
