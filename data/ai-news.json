@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-31T03:51:31.152563",
+  "lastUpdated": "2026-04-01T04:13:16.411020",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -42,18 +42,7 @@
       "publishedDate": "Wed, 25 Mar 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Rakuten fixes issues twice as fast with Codex",
-      "titleJa": "楽天、Codex を使用して問題を 2 倍の速さで解決",
-      "link": "https://openai.com/index/rakuten",
-      "description": "Rakuten uses Codex, the coding agent from OpenAI, to ship software faster and safer, reducing MTTR 50%, automating CI/CD reviews, and delivering full-stack builds in weeks....",
-      "publishedDate": "Wed, 11 Mar 2026 13:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/6tvi0m9Z8P15gx4gd3ClmR/cfb5e925a1d3b2f9ac2ccbcd311c50cc/Frame__2_.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -66,6 +55,105 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIMMode_Social.max-600x600.format-webp.webp",
       "language": "en"
+    },
+    {
+      "title": "Build with Veo 3.1 Lite, our most cost-effective video generation model",
+      "titleJa": "当社の最もコスト効率の高いビデオ生成モデルである Veo 3.1 Lite で構築",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-lite/",
+      "description": "Build with Veo 3.1 Lite...",
+      "publishedDate": "Tue, 31 Mar 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/veo31lite.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "ChatGPTは学校教育に活用できる？メリットや活用事例を紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/chatgpt-education/",
+      "description": "「ChatGPTは教育現場にも活用できる？」といった疑問は多くの方が抱えており、さまざまな議論が展開されています。実際、ChatGPTは教育現場でも授業準備や学習サポートなどで活用できますが、取り扱いには注意が必要です。 [...]...",
+      "publishedDate": "Tue, 31 Mar 2026 15:23:28 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-education_2603-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents",
+      "titleJa": "Granite 4.0 3B Vision: エンタープライズ ドキュメント向けのコンパクトなマルチモーダル インテリジェンス",
+      "link": "https://huggingface.co/blog/ibm-granite/granite-4-vision",
+      "description": "...",
+      "publishedDate": "Tue, 31 Mar 2026 15:10:41 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ibm-granite/granite-4-vision.png",
+      "language": "en"
+    },
+    {
+      "title": "Shifting to AI model customization is an architectural imperative",
+      "titleJa": "AI モデルのカスタマイズへの移行はアーキテクチャ上の必須事項です",
+      "link": "https://www.technologyreview.com/2026/03/31/1134762/shifting-to-ai-model-customization-is-an-architectural-imperative/",
+      "description": "In the early days of large language models (LLMs), we grew accustomed to massive 10x jumps in reasoning and coding capability with every new model iteration. Today, those jumps have flattened into inc...",
+      "publishedDate": "Tue, 31 Mar 2026 14:12:50 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/Mistral-image.png?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "Accelerating the next phase of AI",
+      "titleJa": "AIの次のフェーズを加速する",
+      "link": "https://openai.com/index/accelerating-the-next-phase-ai",
+      "description": "OpenAI raises $122 billion in new funding to expand frontier AI globally, invest in next-generation compute, and meet growing demand for ChatGPT, Codex, and enterprise AI....",
+      "publishedDate": "Tue, 31 Mar 2026 13:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The Download: AI health tools and the Pentagon’s Anthropic culture war",
+      "titleJa": "ダウンロード: AI 健康ツールと国防総省の人類文化戦争",
+      "link": "https://www.technologyreview.com/2026/03/31/1134934/the-download-testing-ai-health-tools-pentagon-anthropic-culture-war-backfires/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. There are more AI health tools than ever—but how w...",
+      "publishedDate": "Tue, 31 Mar 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/06/MIT_Welfare_Lead_1.jpg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "AI benchmarks are broken. Here’s what we need instead.",
+      "titleJa": "AI ベンチマークが壊れています。代わりに必要なものは次のとおりです。",
+      "link": "https://www.technologyreview.com/2026/03/31/1134833/ai-benchmarks-are-broken-heres-what-we-need-instead/",
+      "description": "For decades, artificial intelligence has been evaluated through the question of whether machines outperform humans. From chess to advanced math, from coding to essay writing, the performance of AI mod...",
+      "publishedDate": "Tue, 31 Mar 2026 12:01:08 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/260326_AIlearningOpEd2.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "【Gemini 3.1 Flash Live】リアルタイム音声・映像対話に特化した音声生成モデルを徹底解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/gemini-3-1-flash-live/",
+      "description": "2026年3月27日、Googleは音声AIモデルの最新版「Gemini 3.1 Flash Live」を発表しました！ Google CEOのSundar Pichai氏が自ら「最高品質のオーディオ・音声モデル」と紹介 [...]...",
+      "publishedDate": "Tue, 31 Mar 2026 06:54:59 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-3.1-Flash-Live-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "GPTsで画像生成するならこれ！ロゴやイラスト作成に役立つおすすめ9選",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/image-generation-gpts/",
+      "description": "オリジナルGPTを作成したり、共有したりできるChatGPTのGPTsですが、なかには画像生成に特化したGPTも多く公開されています。特に注目度の高いGPTだと、X（旧Twitter）でも話題になり、多くのユーザーに注目 [...]...",
+      "publishedDate": "Tue, 31 Mar 2026 06:30:40 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/image-generation-gpts_2603-1-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "【Suno AIのおすすめ活用事例】AIを使いこなす猛者達のチート級の使い方20選",
@@ -99,6 +187,17 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/obsidian_2603-1024x576.webp",
       "language": "ja"
+    },
+    {
+      "title": "TRL v1.0: Post-Training Library Built to Move with the Field",
+      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたトレーニング後のライブラリ",
+      "link": "https://huggingface.co/blog/trl-v1",
+      "description": "...",
+      "publishedDate": "Tue, 31 Mar 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/trl-v1/thumbnail.png",
+      "language": "en"
     },
     {
       "title": "Helping developers build safer AI experiences for teens",
@@ -189,10 +288,10 @@
       "language": "en"
     },
     {
-      "title": "Introducing GPT-5.4 mini and nano",
-      "titleJa": "GPT-5.4ミニとナノの紹介",
-      "link": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano",
-      "description": "GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads....",
+      "title": "OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first",
+      "titleJa": "OpenAI Japan、ティーンエイジャーの安全を最優先にするジャパン・ティーン・セーフティ・ブループリントを発表",
+      "link": "https://openai.com/index/japan-teen-safety-blueprint",
+      "description": "OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using generative AI....",
       "publishedDate": "Tue, 17 Mar 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -200,10 +299,10 @@
       "language": "en"
     },
     {
-      "title": "OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first",
-      "titleJa": "OpenAI Japan、ティーンエイジャーの安全を最優先にするジャパン・ティーン・セーフティ・ブループリントを発表",
-      "link": "https://openai.com/index/japan-teen-safety-blueprint",
-      "description": "OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using generative AI....",
+      "title": "Introducing GPT-5.4 mini and nano",
+      "titleJa": "GPT-5.4ミニとナノの紹介",
+      "link": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano",
+      "description": "GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads....",
       "publishedDate": "Tue, 17 Mar 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -223,7 +322,7 @@
     },
     {
       "title": "Gemini in Google Sheets just achieved state-of-the-art performance.",
-      "titleJa": "Google Sheets の Gemini は最先端のパフォーマンスを達成しました。",
+      "titleJa": "Google スプレッドシートの Gemini は最先端のパフォーマンスを達成しました。",
       "link": "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art/",
       "description": "Today we announced new beta features for Gemini in Sheets to help you create, organize and edit entire sheets, from basic tasks to complex data analysis — just describe …...",
       "publishedDate": "Tue, 10 Mar 2026 13:00:00 +0000",
@@ -252,17 +351,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/async-rl-landscape/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Create new worlds in Project Genie with these 4 tips",
-      "titleJa": "これらの 4 つのヒントを参考にして、Project Genie で新しい世界を作成してください",
-      "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/tips-prompt-writing-project-genie/",
-      "description": "A screen capture of Project Genie, an experimental interface showing a grid of circular images, many of which appear to be 360-degree views, with a large, central black globe labeled Create your own...",
-      "publishedDate": "Tue, 03 Mar 2026 17:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Genie_2.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -310,72 +398,6 @@
       "language": "en"
     },
     {
-      "title": "Search Live is expanding globally",
-      "titleJa": "Search Live は世界的に拡大しています",
-      "link": "https://blog.google/products-and-platforms/products/search/search-live-global-expansion/",
-      "description": "A graphic with the words Search Live shown underneath a waveform icon. To the right, a phone shows the Google app with Search Live open. The camera is pointing at trees in a forest....",
-      "publishedDate": "Thu, 26 Mar 2026 15:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Live_blog_header.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "The Download: a battery pivot to AI, and rewriting math",
-      "titleJa": "ダウンロード: AI へのバッテリーのピボットと数学の書き換え",
-      "link": "https://www.technologyreview.com/2026/03/26/1134697/the-download-battery-ai-pivot-new-ai-tool-math/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Why this battery company is pivoting to AI&#160; Q...",
-      "publishedDate": "Thu, 26 Mar 2026 12:42:53 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/05/GettyImages-1433324047.jpeg?w=3000",
-      "language": "en"
-    },
-    {
-      "title": "The snow gods: How a couple of ski bums built the internet’s best weather app",
-      "titleJa": "雪の神様: 数人のスキー愛好家がインターネット最高の天気アプリをどのように構築したか",
-      "link": "https://www.technologyreview.com/2026/03/26/1134470/the-snow-gods-how-a-couple-of-ski-bums-built-the-internets-best-weather-app/",
-      "description": "The best snow-forecasting app for skiers and snowboarders isn’t from any of the federally funded weather services. Nor from any of the big-name brands. It’s an independent app startup that leverages g...",
-      "publishedDate": "Thu, 26 Mar 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/IMG_4251.jpg?w=2667",
-      "language": "en"
-    },
-    {
-      "title": "Are high gas prices good news for EVs? It’s complicated.",
-      "titleJa": "ガソリン価格の高騰はEVにとって朗報か?それは複雑です。",
-      "link": "https://www.technologyreview.com/2026/03/26/1134677/gas-prices-electric-vehicles/",
-      "description": "I live in a dense city with plentiful public transportation options and limited parking, so I don’t own a car. I’m often utterly clueless about the current price of gasoline. But as the conflict in Ir...",
-      "publishedDate": "Thu, 26 Mar 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/GettyImages-2266020633.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Mixture of Experts (MoEs) in Transformers",
-      "titleJa": "トランスフォーマーにおける専門家 (MoE) の混合",
-      "link": "https://huggingface.co/blog/moe-transformers",
-      "description": "...",
-      "publishedDate": "Thu, 26 Feb 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/moe-transformers/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "【生成AIのプロが選ぶ】生成AIコンサルティング企業のおすすめ10選！費用相場や選び方も徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/generation-ai-consulting/",
-      "description": "IT専門調査会社 IDC Japan 株式会社の発表によると、国内AIシステム市場は2024年に前年比56.5％増の1兆3,412億円まで拡大しており、2029年には4兆1,873億円規模に達すると予測されています。こう [...]...",
-      "publishedDate": "Sun, 29 Mar 2026 14:59:52 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/generation-ai-consulting_2603-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "【研究が捗る！】ChatGPTを論文に活用する方法！執筆と読ませる手順を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/chatgpt-paper/",
@@ -420,25 +442,14 @@
       "language": "ja"
     },
     {
-      "title": "Dify導入で失敗しない！頼れる支援会社5社を徹底比較",
+      "title": "RISC-VプロセッサによるGitHub Actionsランナーを無料提供、オープンソースプロジェクトに。RISC-V普及促進団体「RISE」が発表",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/dify-introduction-support/",
-      "description": "Difyは、社内向けの生成AIアプリをノーコードで作れる一方で、専門知識がないと設計や運用でつまずきやすいツールです。だからこそ、自社だけで抱え込まず、Difyに詳しいパートナーに導入・構築を支援してもらうのがおすすめで [...]...",
-      "publishedDate": "Mon, 30 Mar 2026 04:33:59 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/risc-vgithub_actionsrisc-vrise.html",
+      "description": "オープンかつ無料で使えるプロセッサの命令セットである「RISC-V」（リスクファイブ）のソフトウェアエコシステム発展を推進する団体「RISE」（RISC-V Software Ecosystem）が、オープンソースプロジェクト向けにRISC......",
+      "publishedDate": "2026-03-31T15:15:40Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/dify-introduction-support_2603-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "AI副業のおすすめ13選！初心者が月5万稼ぐためのロードマップを全部教えます！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/ai-earn-list/",
-      "description": "生成AIが急速に普及している中、生成AIを使った副業の注目度も上がっています。 しかし、「AI副業って本当に稼げる？」「なんか怪しい」と不安に思っている方も多いのではないでしょうか。 この記事ではAIツールを活用したおす [...]...",
-      "publishedDate": "Mon, 30 Mar 2026 03:16:18 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/ai-earn-list_2603-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/rise-githubactionsrunner-free202603.png",
       "language": "ja"
     },
     {
@@ -593,17 +604,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/void-ann01.png",
-      "language": "ja"
-    },
-    {
-      "title": "JavaScriptの統合ツールチェーン「Vite+」がオープンソースで公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/javascriptvite.html",
-      "description": "JavaScriptのESモジュールに対応した高速なビルドツール「Vite」などを開発しているVoidZeroは、Viteを含むJavaScriptの統合開発ツールチェーン「Vite+」アルファ版をオープンソースで公開しました（GitHub......",
-      "publishedDate": "2026-03-15T15:47:38Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2025/viteplus-ann02.png",
       "language": "ja"
     }
   ]
