@@ -3118,11 +3118,6 @@ function initTranslations() {
             en: 'Diff opacity',
             zh: '差异不透明度'
         },
-        'pdf-compare-bg-threshold': {
-            ja: '白背景の閾値',
-            en: 'White BG threshold',
-            zh: '白色背景阈值'
-        },
         'pdf-compare-run': {
             ja: '比較実行',
             en: 'Compare',

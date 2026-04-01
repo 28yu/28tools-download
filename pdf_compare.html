@@ -62,6 +62,7 @@
     border-radius: 10px; padding: 14px 18px; border: 1px solid #e8e8e8;
   }
   .ctrl-group { display: flex; align-items: center; gap: 8px; }
+  .ctrl-buttons { display: flex; align-items: center; gap: 10px; margin-left: auto; }
   .ctrl-label { font-size: 12px; color: #777; }
 
   input[type=range] { width: 110px; accent-color: #1a1a1a; }
@@ -231,13 +232,10 @@
       <input type="range" id="opacity" min="20" max="100" value="65" step="1">
       <span class="val-display" id="opacityVal">65%</span>
     </div>
-    <div class="ctrl-group">
-      <span class="ctrl-label" data-lang-key="pdf-compare-bg-threshold">白背景の閾値</span>
-      <input type="range" id="bgThresh" min="180" max="254" value="230" step="1">
-      <span class="val-display" id="bgThreshVal">230</span>
+    <div class="ctrl-buttons">
+      <button id="compareBtn" class="btn-compare" onclick="runCompareAll()" disabled data-lang-key="pdf-compare-run">比較実行</button>
+      <button id="downloadBtn" class="btn-download" onclick="downloadAllPages()" style="display:none" data-lang-key="pdf-compare-download">📥 全ページPDF保存</button>
     </div>
-    <button id="compareBtn" class="btn-compare" onclick="runCompareAll()" disabled data-lang-key="pdf-compare-run">比較実行</button>
-    <button id="downloadBtn" class="btn-download" onclick="downloadAllPages()" style="display:none" data-lang-key="pdf-compare-download">📥 全ページPDF保存</button>
   </div>
 
   <div id="status" data-lang-key="pdf-compare-status-select">PDFを2つ選択してください</div>
@@ -569,7 +567,6 @@ function updatePageInfo() {
 }
 
 document.getElementById('opacity').addEventListener('input',  (e) => { document.getElementById('opacityVal').textContent  = e.target.value + '%'; });
-document.getElementById('bgThresh').addEventListener('input', (e) => { document.getElementById('bgThreshVal').textContent = e.target.value; });
 
 // ---- ⑨ ページナビゲーションを構築 ----
 function buildPageNav() {
@@ -626,7 +623,7 @@ async function jumpToPage(pageNum) {
 async function showPage(pageNum) {
   setStatus(t('showingPage', pageNum));
   const opacity  = parseInt(document.getElementById('opacity').value) / 100;
-  const bgThresh = parseInt(document.getElementById('bgThresh').value);
+  const bgThresh = 230;
   const deviceScale = window.devicePixelRatio || 1;
   const scale = 3.0 * deviceScale;
 
@@ -660,7 +657,7 @@ async function runCompareAll() {
   pageCache = {};
   currentPage = 1;
   const opacity  = parseInt(document.getElementById('opacity').value) / 100;
-  const bgThresh = parseInt(document.getElementById('bgThresh').value);
+  const bgThresh = 230;
   const deviceScale = window.devicePixelRatio || 1;
   const scale = 3.0 * deviceScale;
 
@@ -714,7 +711,7 @@ async function downloadAllPages() {
   if (!pdf1 || !pdf2) return;
 
   const opacity  = parseInt(document.getElementById('opacity').value) / 100;
-  const bgThresh = parseInt(document.getElementById('bgThresh').value);
+  const bgThresh = 230;
   const scale    = 3.0;
   const DPI      = 72;
   const PX_TO_MM = 25.4 / DPI;
