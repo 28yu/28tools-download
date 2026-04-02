@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-01T04:13:16.411020",
+  "lastUpdated": "2026-04-02T03:44:44.104158",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -42,18 +42,117 @@
       "publishedDate": "Wed, 25 Mar 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/6tvi0m9Z8P15gx4gd3ClmR/cfb5e925a1d3b2f9ac2ccbcd311c50cc/Frame__2_.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
-      "title": "Use Canvas in AI Mode to get things done and bring your ideas to life, right in Search.",
-      "titleJa": "AI モードで Canvas を使用すると、検索内で作業を完了し、アイデアを実現できます。",
-      "link": "https://blog.google/products-and-platforms/products/search/ai-mode-canvas-writing-coding/",
-      "description": "Canvas in AI Mode is now available for everyone in the U.S. Plus, it can now help you draft documents or build interactive tools....",
-      "publishedDate": "Wed, 04 Mar 2026 17:00:00 +0000",
+      "title": "Holo3: Breaking the Computer Use Frontier",
+      "titleJa": "Holo3: コンピューター使用のフロンティアを突破する",
+      "link": "https://huggingface.co/blog/Hcompany/holo3",
+      "description": "...",
+      "publishedDate": "Wed, 01 Apr 2026 16:36:15 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/698224a939bac08a1b6e0488/V66nfQj4EqV6imWD-Cgf0.png",
+      "language": "en"
+    },
+    {
+      "title": "Grokをわかりやすく解説！使い方や商用利用、他社の生成AIとの違いも紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/grok/",
+      "description": "X（旧Twitter）で使える生成AI「Grok」という言葉を一度は聞いたことがあるのではないでしょうか？ただ、普段の生活や仕事などで本当に使えるのか、ChatGPTやGeminiなどの生成AIと何が違うのか、疑問を持っ [...]...",
+      "publishedDate": "Wed, 01 Apr 2026 15:41:40 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/grok_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【天秤AI】もうAI選びで迷わない！モデル比較から業務活用まで徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/balance-ai/",
+      "description": "近年、AI技術は驚くべき進化を遂げており、様々な生成AIが次々に登場しています。しかし、それぞれのAIの特徴や性能を比較するのは簡単ではありません。そんな中、GMOインターネットグループが開発した「天秤AI」が注目を集め [...]...",
+      "publishedDate": "Wed, 01 Apr 2026 14:35:38 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/balance-ai_2603-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "We’re creating a new satellite imagery map to help protect Brazil’s forests.",
+      "titleJa": "私たちはブラジルの森林の保護に役立つ新しい衛星画像マップを作成しています。",
+      "link": "https://blog.google/products-and-platforms/products/earth/satellite-imagery-brazilian-deforestation/",
+      "description": "Google partnered with the Brazilian government on a satellite imagery map to help protect the country’s forests....",
+      "publishedDate": "Wed, 01 Apr 2026 13:30:00 +0000",
       "source": "Google AI Blog",
       "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIMMode_Social.max-600x600.format-webp.webp",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/bfc_keyword_before_after_white_.max-600x600.format-webp_QNQ8psB.webp",
+      "language": "en"
+    },
+    {
+      "title": "The latest AI news we announced in March 2026",
+      "titleJa": "2026年3月に発表したAI最新ニュース",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-march-2026/",
+      "description": "March 2026 AI Recap showing new updates...",
+      "publishedDate": "Wed, 01 Apr 2026 13:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/March_2026_AI_Recap_social_hvvl.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "The Download: gig workers training humanoids, and better AI benchmarks",
+      "titleJa": "ダウンロード: ギグワーカーがヒューマノイドを訓練し、より優れた AI ベンチマーク",
+      "link": "https://www.technologyreview.com/2026/04/01/1134993/the-download-gig-workers-training-humanoids-better-ai-benchmarks/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The gig workers who are training humanoid robots a...",
+      "publishedDate": "Wed, 01 Apr 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/01/230628_Talon_0455-social.jpg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "The gig workers who are training humanoid robots at home",
+      "titleJa": "自宅で人型ロボットを訓練するギグワーカー",
+      "link": "https://www.technologyreview.com/2026/04/01/1134863/humanoid-data-training-gig-economy-2026-breakthrough-technology/",
+      "description": "When Zeus, a medical student living in a hilltop city in central Nigeria, returns to his studio apartment from a long day at the hospital, he turns on his ring light, straps his iPhone to his forehead...",
+      "publishedDate": "Wed, 01 Apr 2026 11:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/TR11-HumanoidRobot.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Falcon Perception",
+      "titleJa": "ファルコンの認識",
+      "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
+      "description": "...",
+      "publishedDate": "Wed, 01 Apr 2026 07:13:20 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/tiiuae/falcon-perception.png",
+      "language": "en"
+    },
+    {
+      "title": "Claude CodeにComputer Useが搭載！CLIでビルドからUI操作まで自動化できる新機能を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-code-computer-use/",
+      "description": "2026年3月、AnthropicはCLIベースのコーディングツール「Claude Code」にComputer Use機能をリサーチプレビューとして搭載しました！ ターミナルからコードを書き、そのままGUIアプリを起動 [...]...",
+      "publishedDate": "Wed, 01 Apr 2026 05:55:20 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-code-computer-use_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Gradient Labs gives every bank customer an AI account manager",
+      "titleJa": "Gradient Labs はすべての銀行顧客に AI アカウント マネージャーを提供します",
+      "link": "https://openai.com/index/gradient-labs",
+      "description": "Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability....",
+      "publishedDate": "Wed, 01 Apr 2026 02:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -211,10 +310,10 @@
       "language": "en"
     },
     {
-      "title": "Update on the OpenAI Foundation",
-      "titleJa": "OpenAI Foundation に関する最新情報",
-      "link": "https://openai.com/index/update-on-the-openai-foundation",
-      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs....",
+      "title": "Powering product discovery in ChatGPT",
+      "titleJa": "ChatGPT での製品発見を強化する",
+      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
+      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration....",
       "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -222,10 +321,10 @@
       "language": "en"
     },
     {
-      "title": "Powering product discovery in ChatGPT",
-      "titleJa": "ChatGPT での製品発見を強化する",
-      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
-      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration....",
+      "title": "Update on the OpenAI Foundation",
+      "titleJa": "OpenAI Foundation に関する最新情報",
+      "link": "https://openai.com/index/update-on-the-openai-foundation",
+      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs....",
       "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -256,7 +355,7 @@
     },
     {
       "title": "Bringing the power of Personal Intelligence to more people",
-      "titleJa": "パーソナル インテリジェンスのパワーをより多くの人に届ける",
+      "titleJa": "パーソナルインテリジェンスのパワーをより多くの人に届ける",
       "link": "https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion/",
       "description": "Bubble that says \"Personal Intelligence\" with Google G, Google Photos logo, and Gmail logo around it...",
       "publishedDate": "Tue, 17 Mar 2026 16:00:00 +0000",
@@ -322,79 +421,13 @@
     },
     {
       "title": "Gemini in Google Sheets just achieved state-of-the-art performance.",
-      "titleJa": "Google スプレッドシートの Gemini は最先端のパフォーマンスを達成しました。",
+      "titleJa": "Google Sheets の Gemini は最先端のパフォーマンスを達成しました。",
       "link": "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art/",
       "description": "Today we announced new beta features for Gemini in Sheets to help you create, organize and edit entire sheets, from basic tasks to complex data analysis — just describe …...",
       "publishedDate": "Tue, 10 Mar 2026 13:00:00 +0000",
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Workspace_Jan_Moment_Sheets_Blo.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Introducing Storage Buckets on the Hugging Face Hub",
-      "titleJa": "ハグフェイスハブに収納バケツが登場",
-      "link": "https://huggingface.co/blog/storage-buckets",
-      "description": "...",
-      "publishedDate": "Tue, 10 Mar 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/storage-buckets/buckets-annoucement.png",
-      "language": "en"
-    },
-    {
-      "title": "Keep the Tokens Flowing: Lessons from 16 Open-Source RL Libraries",
-      "titleJa": "トークンの流れを維持する: 16 のオープンソース RL ライブラリからの教訓",
-      "link": "https://huggingface.co/blog/async-rl-training-landscape",
-      "description": "...",
-      "publishedDate": "Tue, 10 Mar 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/async-rl-landscape/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "PRX Part 3 — Training a Text-to-Image Model in 24h!",
-      "titleJa": "PRX パート 3 — Text-to-Image モデルを 24 時間でトレーニング!",
-      "link": "https://huggingface.co/blog/Photoroom/prx-part3",
-      "description": "...",
-      "publishedDate": "Tue, 03 Mar 2026 16:50:49 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/68e529af513e724edd8702f6/zMyALdakGbN6SDG3ucmLd.jpeg",
-      "language": "en"
-    },
-    {
-      "title": "Watch James Manyika talk AI and creativity with LL COOL J.",
-      "titleJa": "James Manyika が LL COOL J と AI と創造性について語る様子をご覧ください。",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/ll-cool-j-dialogues/",
-      "description": "In the latest episode of our Dialogues on Technology and Society series, LL COOL J sits down with James Manyika....",
-      "publishedDate": "Thu, 26 Mar 2026 17:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Approved_thumbnail_with_logo.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Transform your headphones into a live personal translator on iOS.",
-      "titleJa": "ヘッドフォンを iOS 上のライブ個人翻訳者に変身させます。",
-      "link": "https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones/",
-      "description": "Google Translate’s Live translate with headphones is officially arriving on iOS! And we're expanding the capability for both iOS and Android users to even more countries…...",
-      "publishedDate": "Thu, 26 Mar 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Static-InterstitialscreenJapane.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
-      "titleJa": "Gemini 3.1 Flash Live: オーディオ AI をより自然で信頼性の高いものに",
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
-      "description": "The Gemini emblem sits next to text reading 'Gemini 3.1 Flash Live'. The background has blue, multicolored dots making up a microphone icon...",
-      "publishedDate": "Thu, 26 Mar 2026 15:21:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3.1-flash-live_blog_head.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -409,36 +442,14 @@
       "language": "ja"
     },
     {
-      "title": "【無料あり】生成AI企画書作成ツールのおすすめ10選！実務レベルの資料を作る方法も徹底解説",
+      "title": "2030年までに、1兆個のパラメータを持つLLMの推論コストが90％以上削減される、ガートナーが予想",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/generative-ai-proposal/",
-      "description": "昨今、生成AIを業務利用する企業が増えていますが、企画書を作成する時にも生成AIが活躍することをご存知でしょうか。企画書作成時に生成AIを活用することで、内容のブラッシュアップや作成スピードを格段に上げられるなど、さまざ [...]...",
-      "publishedDate": "Mon, 30 Mar 2026 11:07:43 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/20301llm90.html",
+      "description": "米調査会社のガートナーは、2025年と比較した場合の大規模言語モデルにおける推論実行のコストが、1兆個のパラーメータを持つ大規模言語モデルでは2030年までに90％以上削減されるとの予想を発表しました。 この大きなコスト削減効果は、半導体お......",
+      "publishedDate": "2026-04-01T15:46:39Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/generative-ai-proposal_2603-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "CapCut Video Studioとは？AI動画生成の仕組みと使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/capcut-video-studio/",
-      "description": "2026年3月、動画生成AIの領域で新たな制作体験を提示する機能が登場しました。 今回発表された「CapCut Video Studio」は、従来のようなタイムライン編集を前提としない、対話型の動画生成機能です。テキスト [...]...",
-      "publishedDate": "Mon, 30 Mar 2026 09:44:10 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_CapCut-Video-Studio-1-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "生成AIで購買業務・調達の未来はどう変わる？導入メリットや事例を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/generation-ai-purchasing-operations/",
-      "description": "企業の購買業務は、購買申請の入力・RFQ作成・見積比較・契約確認・サプライヤー対応などで手間がかかりやすく、担当者の負担になりやすい業務です。生成AIは、こうした実務の中でも、文書の要約・回答案の作成・データ整理などを支 [...]...",
-      "publishedDate": "Mon, 30 Mar 2026 08:39:06 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/generation-ai-purchasing-operations_2603-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/llmcost-gartner20260301.png",
       "language": "ja"
     },
     {
@@ -593,17 +604,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/aws-middleeaset-region-conflict20260303.png",
-      "language": "ja"
-    },
-    {
-      "title": "ViteネイティブなWebプラットフォーム「Void」発表。Cloudflareの上に構築されたフルスタックの実行環境",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/vitewebvoidcloudflare.html",
-      "description": "JavaScriptのバンドルツール「Vite」などを開発しているVoidZeroは、ViteからシームレスにデプロイできるViteネイティブなWebアプリケーションプラットフォーム「Void」を発表しました。 VoidはCloudflar......",
-      "publishedDate": "2026-03-15T15:51:14Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/void-ann01.png",
       "language": "ja"
     }
   ]
