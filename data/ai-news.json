@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-02T03:44:44.104158",
+  "lastUpdated": "2026-04-03T03:46:29.259440",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -244,50 +244,6 @@
       "language": "ja"
     },
     {
-      "title": "GPTsで画像生成するならこれ！ロゴやイラスト作成に役立つおすすめ9選",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/image-generation-gpts/",
-      "description": "オリジナルGPTを作成したり、共有したりできるChatGPTのGPTsですが、なかには画像生成に特化したGPTも多く公開されています。特に注目度の高いGPTだと、X（旧Twitter）でも話題になり、多くのユーザーに注目 [...]...",
-      "publishedDate": "Tue, 31 Mar 2026 06:30:40 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/image-generation-gpts_2603-1-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Suno AIのおすすめ活用事例】AIを使いこなす猛者達のチート級の使い方20選",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/suno-ai-case/",
-      "description": "突然ですが、みなさんは、ユーザーが入力した歌詞を音楽に変えてくれる「Suno AI」という音楽生成AIをご存知でしょうか？ なんと、ユーザーが歌詞をテキストデータで入力するだけで、メロディやボーカルをAIが生成して1つの [...]...",
-      "publishedDate": "Tue, 31 Mar 2026 03:36:23 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/suno-ai-case_2603-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "生成AI導入におけるPoC開発の課題とは？PoC疲れの原因と成功させるポイントをわかりやすく解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/poc-development-challenges/",
-      "description": "最近話題の生成AIを自社商品やシステムに取り入れようと考えるも、PoC開発がうまくいかないといった課題を抱えている会社が増加傾向にあります。PoC開発は、事前に事業の実用可能性や効果を検証できるメリットがある反面、期待し [...]...",
-      "publishedDate": "Tue, 31 Mar 2026 02:51:41 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/poc-development-challenges_2603-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Obsidianとは？無料で始める高性能メモアプリの使い方・活用事例を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/obsidian/",
-      "description": "「メモを取っているのに、あとから見つからない。」「ノートアプリを使っているのに、情報がつながらない。」 仕事のメモ、読書記録、アイデア、日報。情報は増え続ける一方で、整理の仕方が追いつかないという声は少なくありません。そ [...]...",
-      "publishedDate": "Tue, 31 Mar 2026 02:04:57 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/obsidian_2603-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "TRL v1.0: Post-Training Library Built to Move with the Field",
       "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたトレーニング後のライブラリ",
       "link": "https://huggingface.co/blog/trl-v1",
@@ -387,33 +343,11 @@
       "language": "en"
     },
     {
-      "title": "OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first",
-      "titleJa": "OpenAI Japan、ティーンエイジャーの安全を最優先にするジャパン・ティーン・セーフティ・ブループリントを発表",
-      "link": "https://openai.com/index/japan-teen-safety-blueprint",
-      "description": "OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using generative AI....",
-      "publishedDate": "Tue, 17 Mar 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "Introducing GPT-5.4 mini and nano",
       "titleJa": "GPT-5.4ミニとナノの紹介",
       "link": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano",
       "description": "GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads....",
       "publishedDate": "Tue, 17 Mar 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Equipping workers with insights about compensation",
-      "titleJa": "従業員に報酬に関する洞察を提供する",
-      "link": "https://openai.com/index/equipping-workers-with-insights-about-compensation",
-      "description": "New research shows Americans send nearly 3 million daily messages to ChatGPT asking about compensation and earnings, helping close the wage information gap....",
-      "publishedDate": "Tue, 17 Mar 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -431,14 +365,91 @@
       "language": "en"
     },
     {
-      "title": "【研究が捗る！】ChatGPTを論文に活用する方法！執筆と読ませる手順を徹底解説",
+      "title": "Introducing Storage Buckets on the Hugging Face Hub",
+      "titleJa": "ハグフェイスハブに収納バケツが登場",
+      "link": "https://huggingface.co/blog/storage-buckets",
+      "description": "...",
+      "publishedDate": "Tue, 10 Mar 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/storage-buckets/buckets-annoucement.png",
+      "language": "en"
+    },
+    {
+      "title": "Keep the Tokens Flowing: Lessons from 16 Open-Source RL Libraries",
+      "titleJa": "トークンの流れを維持する: 16 のオープンソース RL ライブラリからの教訓",
+      "link": "https://huggingface.co/blog/async-rl-training-landscape",
+      "description": "...",
+      "publishedDate": "Tue, 10 Mar 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/async-rl-landscape/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "【Orcha】国産AIエージェントの使い方、スライド作成から動画化まで徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chatgpt-paper/",
-      "description": "生成AIはさまざまな業務や学習に活用されていますが、論文の読解や執筆補助にも役立つことを知っているでしょうか。学術的な論文は専門的な単語が多く、読み書きのハードルが高いですが、生成AIを活用すればとても扱いやすくなります [...]...",
-      "publishedDate": "Mon, 30 Mar 2026 12:11:31 +0000",
+      "link": "https://weel.co.jp/media/innovator/orcha/",
+      "description": "みなさん！日本からAIエージェントサービス「Orcha（オルカ）」が登場しました！ Orcha（オルカ）は幅広い業務向けのAIエージェント機能が実装されているWebサービスで、「AIスライド」を始めとする様々な機能が利用 [...]...",
+      "publishedDate": "Thu, 02 Apr 2026 14:51:05 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-paper_2603-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/orcha_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "まだメモを取ってるの？PLAUD NotePinでできること・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/plaud-notepin/",
+      "description": "みなさん！生成AI機能搭載のウェアラブルボイスレコーダー「PLAUD NotePin」をご存じでしょうか？ PLAUD NotePinはスーツの襟元に留めておけるカプセル型のボイスレコーダーで、なんと生成AIによる「録音 [...]...",
+      "publishedDate": "Thu, 02 Apr 2026 14:04:57 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/plaud-notepin_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Claude Code】Opus 4.6の登場でさらに強化されたAIエージェントで開発効率爆あがり！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-code/",
+      "description": "2025年5月23日にClaude opus 4やClaude sonnet 4がリリースされましたが、それと同時に「Claude Code」もリリースされました！ みなさん、Claude Code使ってますか？一度使う [...]...",
+      "publishedDate": "Thu, 02 Apr 2026 13:38:17 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/02/AIモン_Claude-Code-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Seedance 2.0とは？2K対応の動画生成AIの仕組み・特徴・使い方まで徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/seedance-2-0/",
+      "description": "2026年2月、TikTok運営会社であるByteDanceは、新世代のAI動画生成モデル「Seedance 2.0」を発表しました！ このモデルは画像・動画・音声・テキストのマルチモーダル入力に対応しており、短いシーン [...]...",
+      "publishedDate": "Thu, 02 Apr 2026 13:23:15 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/02/AIモン_Seedance-2.0-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Clineがあなたのコードを書く時代へ！自律型AIエージェントが開発の常識を塗り替える理由を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/about-cline/",
+      "description": "「AIエージェントって結局何ができるの？」「導入してみたいけど難しそう…」そんな疑問をお持ちの方も多いのではないでしょうか。AIを活用した開発ツールが次々と登場する中、今エンジニアの間で注目を集めているのが自律型AIエー [...]...",
+      "publishedDate": "Thu, 02 Apr 2026 13:12:01 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/01/AIモン_-Cline-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "マイクロソフト、Azure Skills Plugin公開／AWS、Agent Plugins for AWS公開／AIがブラウザを自動操作「Browser Use CLI 2.0」、ほか。2026年3月の人気記事",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/azure_skills_pluginawsagent_plugins_for_awsaibrowser_use_cli_2020263.html",
+      "description": "新しいベッドを買うために、家具屋さんやベッドメーカーのショールームなどあちこちを回っているところです。 展示されているベッドのいくつかに寝転んで感触を確かめていると、だいたい店員さんが説明に寄ってくるのですが、店員さんに見られていると落ち着......",
+      "publishedDate": "2026-04-02T15:32:29Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/fbico_pblky.png",
       "language": "ja"
     },
     {
@@ -593,17 +604,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/javaone-java26.png",
-      "language": "ja"
-    },
-    {
-      "title": "データセンターが武力紛争時の攻撃目標になる時代。中東の武力紛争で両陣営ともにデータセンターを狙った攻撃を実行",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/post_308.html",
-      "description": "日本時間3月1日に行われた米国とイスラエルによるイランへの攻撃開始から約2週間が経過した中東における武力紛争は、データセンターが明確な攻撃目標としてクローズアップされた歴史上初めての武力紛争になりました。 この紛争における両陣営のデータセン......",
-      "publishedDate": "2026-03-16T15:33:45Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/aws-middleeaset-region-conflict20260303.png",
       "language": "ja"
     }
   ]
