@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-03T03:46:29.259440",
+  "lastUpdated": "2026-04-04T03:34:51.888885",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -31,7 +31,7 @@
       "publishedDate": "Wed, 25 Mar 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/35bHEbm0rP6Pp4Vz11SaVW/1033fdf6bbcac970107c7503b38ddeba/oai_model_spec_16x9.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -65,17 +65,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/grok_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【天秤AI】もうAI選びで迷わない！モデル比較から業務活用まで徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/balance-ai/",
-      "description": "近年、AI技術は驚くべき進化を遂げており、様々な生成AIが次々に登場しています。しかし、それぞれのAIの特徴や性能を比較するのは簡単ではありません。そんな中、GMOインターネットグループが開発した「天秤AI」が注目を集め [...]...",
-      "publishedDate": "Wed, 01 Apr 2026 14:35:38 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/balance-ai_2603-1024x576.webp",
       "language": "ja"
     },
     {
@@ -134,17 +123,6 @@
       "language": "en"
     },
     {
-      "title": "Claude CodeにComputer Useが搭載！CLIでビルドからUI操作まで自動化できる新機能を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code-computer-use/",
-      "description": "2026年3月、AnthropicはCLIベースのコーディングツール「Claude Code」にComputer Use機能をリサーチプレビューとして搭載しました！ ターミナルからコードを書き、そのままGUIアプリを起動 [...]...",
-      "publishedDate": "Wed, 01 Apr 2026 05:55:20 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-code-computer-use_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Gradient Labs gives every bank customer an AI account manager",
       "titleJa": "Gradient Labs はすべての銀行顧客に AI アカウント マネージャーを提供します",
       "link": "https://openai.com/index/gradient-labs",
@@ -165,17 +143,6 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/veo31lite.max-600x600.format-webp.webp",
       "language": "en"
-    },
-    {
-      "title": "ChatGPTは学校教育に活用できる？メリットや活用事例を紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/chatgpt-education/",
-      "description": "「ChatGPTは教育現場にも活用できる？」といった疑問は多くの方が抱えており、さまざまな議論が展開されています。実際、ChatGPTは教育現場でも授業準備や学習サポートなどで活用できますが、取り扱いには注意が必要です。 [...]...",
-      "publishedDate": "Tue, 31 Mar 2026 15:23:28 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-education_2603-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents",
@@ -233,17 +200,6 @@
       "language": "en"
     },
     {
-      "title": "【Gemini 3.1 Flash Live】リアルタイム音声・映像対話に特化した音声生成モデルを徹底解説！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gemini-3-1-flash-live/",
-      "description": "2026年3月27日、Googleは音声AIモデルの最新版「Gemini 3.1 Flash Live」を発表しました！ Google CEOのSundar Pichai氏が自ら「最高品質のオーディオ・音声モデル」と紹介 [...]...",
-      "publishedDate": "Tue, 31 Mar 2026 06:54:59 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-3.1-Flash-Live-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "TRL v1.0: Post-Training Library Built to Move with the Field",
       "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたトレーニング後のライブラリ",
       "link": "https://huggingface.co/blog/trl-v1",
@@ -266,10 +222,10 @@
       "language": "en"
     },
     {
-      "title": "Powering product discovery in ChatGPT",
-      "titleJa": "ChatGPT での製品発見を強化する",
-      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
-      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration....",
+      "title": "Update on the OpenAI Foundation",
+      "titleJa": "OpenAI Foundation に関する最新情報",
+      "link": "https://openai.com/index/update-on-the-openai-foundation",
+      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs....",
       "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -277,10 +233,10 @@
       "language": "en"
     },
     {
-      "title": "Update on the OpenAI Foundation",
-      "titleJa": "OpenAI Foundation に関する最新情報",
-      "link": "https://openai.com/index/update-on-the-openai-foundation",
-      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs....",
+      "title": "Powering product discovery in ChatGPT",
+      "titleJa": "ChatGPT での製品発見を強化する",
+      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
+      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration....",
       "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -311,7 +267,7 @@
     },
     {
       "title": "Bringing the power of Personal Intelligence to more people",
-      "titleJa": "パーソナルインテリジェンスのパワーをより多くの人に届ける",
+      "titleJa": "パーソナル インテリジェンスのパワーをより多くの人に届ける",
       "link": "https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion/",
       "description": "Bubble that says \"Personal Intelligence\" with Google G, Google Photos logo, and Gmail logo around it...",
       "publishedDate": "Tue, 17 Mar 2026 16:00:00 +0000",
@@ -355,7 +311,7 @@
     },
     {
       "title": "Gemini in Google Sheets just achieved state-of-the-art performance.",
-      "titleJa": "Google Sheets の Gemini は最先端のパフォーマンスを達成しました。",
+      "titleJa": "Google スプレッドシートの Gemini は最先端のパフォーマンスを達成しました。",
       "link": "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art/",
       "description": "Today we announced new beta features for Gemini in Sheets to help you create, organize and edit entire sheets, from basic tasks to complex data analysis — just describe …...",
       "publishedDate": "Tue, 10 Mar 2026 13:00:00 +0000",
@@ -439,6 +395,50 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/01/AIモン_-Cline-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Otter】日本語対応した会議支援ツール！使い方・活用事例まで解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/otter/",
+      "description": "会議のたびに議事録作成へ時間を取られ、本来集中したい議論や意思決定に十分な時間を使えないと感じていないでしょうか。さらに、あとから「あの発言は誰が言ったのか」「決定事項は何だったのか」を探し直す場面が多い企業も少なくあり [...]...",
+      "publishedDate": "Fri, 03 Apr 2026 15:10:26 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/otter_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "フィジカルAIとは？生成AIの次に来る革新について解説！活用事例・導入メリットも紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/physical-ai/",
+      "description": "「AI」と聞くと、文章を書いたり画像を生成したりするチャットやアプリを思い浮かべる人が多いかもしれません。最近は、そうしたデジタル上のやり取りにとどまらず、実際に「動くAI」が注目されるようになってきました。 こうした流 [...]...",
+      "publishedDate": "Fri, 03 Apr 2026 14:30:01 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/physical-ai_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Felo（フェロー）とは？情報検索を変えるAI検索エンジンの使い方・料金などを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/felo/",
+      "description": "Feloは日本発のAI検索サービスです。自然言語で質問すると、意図をくみ取りながら複数の情報源を横断して情報を整理し、回答と出典をあわせて表示してくれます。 「調べても情報がまとまらない」「結局どれが正しいのか分からない [...]...",
+      "publishedDate": "Fri, 03 Apr 2026 13:39:10 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/felo_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【GLM-5V-Turbo】入力画像を直接解釈？ビジョン×コーディング特化型マルチモーダルモデルを徹底解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/glm-5v-turbo/",
+      "description": "2026年4月2日、中国の大手AI企業であるZ.aiが、ビジョン×コーディングに特化したマルチモーダル基盤モデル「GLM-5V-Turbo」を公開しました！ このモデルは、画像やデザインカンプを読み取り、そのままフロント [...]...",
+      "publishedDate": "Fri, 03 Apr 2026 12:48:09 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GLM-5V-Turbo-1024x576.webp",
       "language": "ja"
     },
     {
