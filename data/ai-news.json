@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-04T03:34:51.888885",
+  "lastUpdated": "2026-04-05T03:55:23.078579",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -31,7 +31,7 @@
       "publishedDate": "Wed, 25 Mar 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/35bHEbm0rP6Pp4Vz11SaVW/1033fdf6bbcac970107c7503b38ddeba/oai_model_spec_16x9.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -55,17 +55,6 @@
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/698224a939bac08a1b6e0488/V66nfQj4EqV6imWD-Cgf0.png",
       "language": "en"
-    },
-    {
-      "title": "Grokをわかりやすく解説！使い方や商用利用、他社の生成AIとの違いも紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/grok/",
-      "description": "X（旧Twitter）で使える生成AI「Grok」という言葉を一度は聞いたことがあるのではないでしょうか？ただ、普段の生活や仕事などで本当に使えるのか、ChatGPTやGeminiなどの生成AIと何が違うのか、疑問を持っ [...]...",
-      "publishedDate": "Wed, 01 Apr 2026 15:41:40 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/grok_2604-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "We’re creating a new satellite imagery map to help protect Brazil’s forests.",
@@ -354,47 +343,58 @@
       "language": "ja"
     },
     {
-      "title": "まだメモを取ってるの？PLAUD NotePinでできること・料金・使い方を徹底解説",
+      "title": "NotebookLMの裏技10選！リサーチ・資料作成・音声生成まで効率化する活用術",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/plaud-notepin/",
-      "description": "みなさん！生成AI機能搭載のウェアラブルボイスレコーダー「PLAUD NotePin」をご存じでしょうか？ PLAUD NotePinはスーツの襟元に留めておけるカプセル型のボイスレコーダーで、なんと生成AIによる「録音 [...]...",
-      "publishedDate": "Thu, 02 Apr 2026 14:04:57 +0000",
+      "link": "https://weel.co.jp/media/innovator/notebooklm-tips/",
+      "description": "「資料が多すぎて整理できない」「リサーチや記事作成に時間がかかる」と感じていませんか。NotebookLMは便利なAIツールですが、基本機能だけではその真価を引き出しきれないケースもあります。実は、使い方を少し工夫するだ [...]...",
+      "publishedDate": "Sat, 04 Apr 2026 16:30:12 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/plaud-notepin_2604-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/NotebookLM-Tricks_2604-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "【Claude Code】Opus 4.6の登場でさらに強化されたAIエージェントで開発効率爆あがり！",
+      "title": "【無料の画像生成AI】Bing Image Creatorの使い方ガイド！商用利用の可否も解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code/",
-      "description": "2025年5月23日にClaude opus 4やClaude sonnet 4がリリースされましたが、それと同時に「Claude Code」もリリースされました！ みなさん、Claude Code使ってますか？一度使う [...]...",
-      "publishedDate": "Thu, 02 Apr 2026 13:38:17 +0000",
+      "link": "https://weel.co.jp/media/innovator/bing-image-creator/",
+      "description": "皆さんは「Bing Image Creator」という画像生成AIツールを使ったことはありますか？Bing Image Creatorは画像生成モデル「DALL-E 3」を搭載しており、アニメ風から写真リアリティまで幅広 [...]...",
+      "publishedDate": "Sat, 04 Apr 2026 15:39:14 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/02/AIモン_Claude-Code-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/bing-image-creator_2604-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "Seedance 2.0とは？2K対応の動画生成AIの仕組み・特徴・使い方まで徹底解説",
+      "title": "【Skywork】資料作成を自動化する次世代AI！使い方や料金を徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/seedance-2-0/",
-      "description": "2026年2月、TikTok運営会社であるByteDanceは、新世代のAI動画生成モデル「Seedance 2.0」を発表しました！ このモデルは画像・動画・音声・テキストのマルチモーダル入力に対応しており、短いシーン [...]...",
-      "publishedDate": "Thu, 02 Apr 2026 13:23:15 +0000",
+      "link": "https://weel.co.jp/media/innovator/about-skywork/",
+      "description": "「リサーチから資料作成まで時間がかかりすぎる」「AIを使っても結局手作業が多い」、そんな悩みを感じていないでしょうか。2025年5月22日にSkywork AI社から最新プロダクト「Skywork Super Agent [...]...",
+      "publishedDate": "Sat, 04 Apr 2026 14:40:45 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/02/AIモン_Seedance-2.0-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/about-skywork_2604-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "Clineがあなたのコードを書く時代へ！自律型AIエージェントが開発の常識を塗り替える理由を解説",
+      "title": "Qwen3.6-Plusとは？1Mトークン対応のエージェント型LLMを徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/about-cline/",
-      "description": "「AIエージェントって結局何ができるの？」「導入してみたいけど難しそう…」そんな疑問をお持ちの方も多いのではないでしょうか。AIを活用した開発ツールが次々と登場する中、今エンジニアの間で注目を集めているのが自律型AIエー [...]...",
-      "publishedDate": "Thu, 02 Apr 2026 13:12:01 +0000",
+      "link": "https://weel.co.jp/media/tech/qwen3-6-plus/",
+      "description": "2026年4月、AlibabaのQwenシリーズから新たなフラッグシップモデルが登場しました。 今回発表された「Qwen3.6-Plus」は、単なる大規模言語モデルの進化にとどまらず、実世界での活用を前提としたエージェン [...]...",
+      "publishedDate": "Sat, 04 Apr 2026 13:18:29 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/01/AIモン_-Cline-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.6-Plus-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Gemma 4】スマートフォンでも動作するGoogleの最強オープンモデルの性能・使い方・活用シーンまでを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/gemma-4/",
+      "description": "2026年4月3日、Googleはオープンモデルシリーズの最新版となる「Gemma 4」を公開しました！ Gemini 3の研究成果をベースに開発されたモデルで、パラメータあたりの知能（intelligence-per- [...]...",
+      "publishedDate": "Sat, 04 Apr 2026 12:43:49 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemma-4-1024x576.webp",
       "language": "ja"
     },
     {
