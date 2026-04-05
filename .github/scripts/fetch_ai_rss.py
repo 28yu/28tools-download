@@ -80,6 +80,12 @@ RSS_FEEDS = [
         'category': 'research',
         'language': 'ja'
     },
+    {
+        'url': 'https://aismiley.co.jp/feed/',
+        'source': 'AIsmiley',
+        'category': 'general',
+        'language': 'ja'
+    },
 ]
 
 # OGP画像取得時のUser-Agent
