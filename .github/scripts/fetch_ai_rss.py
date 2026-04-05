@@ -81,7 +81,7 @@ RSS_FEEDS = [
         'language': 'ja'
     },
     {
-        'url': 'https://aismiley.co.jp/feed/',
+        'url': 'https://aismiley.co.jp/ai_news/feed/',
         'source': 'AIsmiley',
         'category': 'general',
         'language': 'ja'
