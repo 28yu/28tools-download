@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-05T03:55:23.078579",
+  "lastUpdated": "2026-04-06T03:59:16.360118",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -101,8 +101,30 @@
       "language": "en"
     },
     {
+      "title": "ストックマーク、「AI時代の働き方調査2026」結果を発表。約9割のビジネスパーソンが業務で生成AI活用",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/stockmark-workstyle-ai-2026/",
+      "description": "ストックマークは、「AI時代の働き方調査2026」を実施しました。業務において約9割のビジネスパーソンが生成AIツールを活用しており、生成AIの標準インフラ化が進んでいる実態が明らかになりました。 このニュースのポイント [...] The post ストックマーク、「AI時代の働き方調査2026」結果を発表。約9割のビジネスパーソンが業務で生成AI活用 first appeared on AIポ...",
+      "publishedDate": "Wed, 01 Apr 2026 07:51:59 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/0331ainewsmain.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Google、リアルタイム音声対話モデルの最新版「Gemini 3.1 Flash Live」提供開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/google-gemini-3-1-flash-live-release/",
+      "description": "Googleは、リアルタイム音声対話モデルの最新版「Gemini 3.1 Flash Live」の提供を開始しました。音響的なニュアンスの認識精度が向上し、より自然な対話や複雑なタスク処理の対応が可能です。 このニュース [...] The post Google、リアルタイム音声対話モデルの最新版「Gemini 3.1 Flash Live」提供開始 first appeared on AIポー...",
+      "publishedDate": "Wed, 01 Apr 2026 07:42:42 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/0327ainews.png",
+      "language": "ja"
+    },
+    {
       "title": "Falcon Perception",
-      "titleJa": "ファルコンの認識",
+      "titleJa": "ファルコンの知覚",
       "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
       "description": "...",
       "publishedDate": "Wed, 01 Apr 2026 07:13:20 GMT",
@@ -110,6 +132,17 @@
       "category": "tools",
       "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/tiiuae/falcon-perception.png",
       "language": "en"
+    },
+    {
+      "title": "【4/21開催】製造業AIの最前線 紙の帳票から図面データ活用まで、失敗しないAI-Readyデータ基盤戦略ウェビナー",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/20260421webinar/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年4月21日（火）12時から製造業向けAIウェビナーを開催します。 製造業のAI導入を阻む最大の要因は、活用可能なデータの不 [...] The post 【4/21開催】製造業AIの最前線 紙の帳票から図面データ活用まで、失敗しないAI-Readyデータ基盤戦略ウェビナー first appeared...",
+      "publishedDate": "Wed, 01 Apr 2026 06:31:50 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/1002_1200x628_2.jpg",
+      "language": "ja"
     },
     {
       "title": "Gradient Labs gives every bank customer an AI account manager",
@@ -211,10 +244,10 @@
       "language": "en"
     },
     {
-      "title": "Update on the OpenAI Foundation",
-      "titleJa": "OpenAI Foundation に関する最新情報",
-      "link": "https://openai.com/index/update-on-the-openai-foundation",
-      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs....",
+      "title": "Powering product discovery in ChatGPT",
+      "titleJa": "ChatGPT での製品発見を強化する",
+      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
+      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration....",
       "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -222,10 +255,10 @@
       "language": "en"
     },
     {
-      "title": "Powering product discovery in ChatGPT",
-      "titleJa": "ChatGPT での製品発見を強化する",
-      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
-      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration....",
+      "title": "Update on the OpenAI Foundation",
+      "titleJa": "OpenAI Foundation に関する最新情報",
+      "link": "https://openai.com/index/update-on-the-openai-foundation",
+      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs....",
       "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -288,10 +321,10 @@
       "language": "en"
     },
     {
-      "title": "Introducing GPT-5.4 mini and nano",
-      "titleJa": "GPT-5.4ミニとナノの紹介",
-      "link": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano",
-      "description": "GPT-5.4 mini and nano are smaller, faster versions of GPT-5.4 optimized for coding, tool use, multimodal reasoning, and high-volume API and sub-agent workloads....",
+      "title": "OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first",
+      "titleJa": "OpenAI Japan、ティーンエイジャーの安全を最優先にするジャパン・ティーン・セーフティ・ブループリントを発表",
+      "link": "https://openai.com/index/japan-teen-safety-blueprint",
+      "description": "OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using generative AI....",
       "publishedDate": "Tue, 17 Mar 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -332,14 +365,69 @@
       "language": "en"
     },
     {
-      "title": "【Orcha】国産AIエージェントの使い方、スライド作成から動画化まで徹底解説",
+      "title": "JINS、「JINS AI」機能を拡張。ライフスタイルに最適なレンズを提案する新機能「レンズ診断」を搭載",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/orcha/",
-      "description": "みなさん！日本からAIエージェントサービス「Orcha（オルカ）」が登場しました！ Orcha（オルカ）は幅広い業務向けのAIエージェント機能が実装されているWebサービスで、「AIスライド」を始めとする様々な機能が利用 [...]...",
-      "publishedDate": "Thu, 02 Apr 2026 14:51:05 +0000",
+      "link": "https://aismiley.co.jp/ai_news/jins-jins-ai-lens-recommend/",
+      "description": "JINSは、自社開発生成AI「JINS AI」の機能を拡張しました。ライフスタイルに最適なレンズを提案する新機能「レンズ診断」を搭載し、JINS銀座店で本格導入します。 このニュースのポイント JINS、「JINS AI [...] The post JINS、「JINS AI」機能を拡張。ライフスタイルに最適なレンズを提案する新機能「レンズ診断」を搭載 first appeared on AIポ...",
+      "publishedDate": "Thu, 02 Apr 2026 08:44:00 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/0331ainewsjins.png",
+      "language": "ja"
+    },
+    {
+      "title": "ジールス、Quickと共同で国内初の筑波大学附属病院におけるヒューマノイドロボットを用いた実証実験を実施",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/zeals-quick-unitreeg1-tukuba/",
+      "description": "ジールスは、筑波大学発ベンチャーのQuickと共同で、筑波大学附属病院においてヒューマノイドロボット「Unitree G1」を用いた実証実験を実施しました。 このニュースのポイント ジールス、Quickと共同し、筑波大学 [...] The post ジールス、Quickと共同で国内初の筑波大学附属病院におけるヒューマノイドロボットを用いた実証実験を実施 first appeared on AIポ...",
+      "publishedDate": "Thu, 02 Apr 2026 08:43:40 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0401ainews.png",
+      "language": "ja"
+    },
+    {
+      "title": "Figma Makeとは？料金・使い方・AIセキュリティ設定まで網羅【企業担当者向け】",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/figma-make-prompt-to-app/",
+      "description": "デザインのアイデアをテキストで入力するだけで、動くプロトタイプやWebアプリが自動生成されるツール。それが「Figma Make」です。デザイナーだけでなく、エンジニアや技術的な知識に乏しい業務担当者でも活用できる間口の [...] The post Figma Makeとは？料金・使い方・AIセキュリティ設定まで網羅【企業担当者向け】 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Thu, 02 Apr 2026 08:36:40 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/FigmaMake.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "いよいよ開幕！AI導入の壁を突破する2日間 「AI博覧会 Spring 2026」体験と対話で掴むAI活用最前線",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai_expo_summer202608/",
+      "description": "～労働力不足を解決するフィジカルAIやハラスメント対策のAIツールまで100社が出展、 東京国際フォーラムにて4月7日・8日開催～ 国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、 [...] The post いよいよ開幕！AI導入の壁を突破する2日間 「AI博覧会 Spring 2026」体験と対話で掴むAI活用最前線 first appeared on...",
+      "publishedDate": "Thu, 02 Apr 2026 01:12:17 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/main.png",
+      "language": "ja"
+    },
+    {
+      "title": "Amazon Bedrockとは？100以上の生成AIモデルを利用できる！使い方や何ができるか徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/amazon-bedrock",
+      "description": "Amazon BedrockはAWSのサービスの一つで、様々な企業のAIモデルを手軽に利用できます。具体的には、高性能なClaudeシリーズやAmazon Novaシリーズ、OpenAI互換のオープンウェイトモデル（gp [...]...",
+      "publishedDate": "Sun, 05 Apr 2026 15:30:31 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/orcha_2604-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/amazon-bedrock_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTの画像生成、もう試した？生成方法やクオリティ、無料でどこまでできるか解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/chatgpt-image-generation/",
+      "description": "「ChatGPTで画像を作ってみたいけれど、難しそう」「無料プランでも本当に使えるの？」と疑問や不安を感じていませんか。ChatGPTの画像生成機能は無料プランからでも利用可能で、日常的な言葉（日本語）を入力するだけで誰 [...]...",
+      "publishedDate": "Sun, 05 Apr 2026 13:52:03 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-image-generation_2604-1024x576.webp",
       "language": "ja"
     },
     {
@@ -398,6 +486,17 @@
       "language": "ja"
     },
     {
+      "title": "アイスマイリー、4/14（火）から3日間「AI World 2026 春 名古屋」に出展　ブース予約でAmazonギフト1,500円分プレゼント！",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-world-2026-spring-nagoya/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年4月14日（火）～16日（木）にポートメッセなごやにて開催される「AI World 2026 春 名古屋」にブース出展をし [...] The post アイスマイリー、4/14（火）から3日間「AI World 2026 春 名古屋」に出展 ブース予約でAmazonギフト1,500円分プレゼント！ ...",
+      "publishedDate": "Mon, 06 Apr 2026 01:00:57 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/OGP_EXPO24_AI.jpg",
+      "language": "ja"
+    },
+    {
       "title": "【Otter】日本語対応した会議支援ツール！使い方・活用事例まで解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/otter/",
@@ -431,14 +530,47 @@
       "language": "ja"
     },
     {
-      "title": "【GLM-5V-Turbo】入力画像を直接解釈？ビジョン×コーディング特化型マルチモーダルモデルを徹底解説！",
+      "title": "小中学生の生成AI使用に関する調査を実施。中学生の約半数が日常生活で使用、ツールは「ChatGPT」が最多",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/glm-5v-turbo/",
-      "description": "2026年4月2日、中国の大手AI企業であるZ.aiが、ビジョン×コーディングに特化したマルチモーダル基盤モデル「GLM-5V-Turbo」を公開しました！ このモデルは、画像やデザインカンプを読み取り、そのままフロント [...]...",
-      "publishedDate": "Fri, 03 Apr 2026 12:48:09 +0000",
-      "source": "WEEL",
+      "link": "https://aismiley.co.jp/ai_news/mitsumura-tosho-child-report5/",
+      "description": "光村図書出版は、小・中学生を対象に、第5回子どもの「好き」に関するアンケート調査を実施しました。「生成AIの使用」がテーマで、使用状況や目的、考え方に関する傾向が示されました。 このニュースのポイント 小・中学生を対象に [...] The post 小中学生の生成AI使用に関する調査を実施。中学生の約半数が日常生活で使用、ツールは「ChatGPT」が最多 first appeared on AI...",
+      "publishedDate": "Fri, 03 Apr 2026 09:20:41 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0403ainewseye2.png",
+      "language": "ja"
+    },
+    {
+      "title": "TensorRTとは？使い方や高速化の仕組み、NVIDIA GPUでの活用を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/tensorrt-nvidia-gpu-sdk/",
+      "description": "AIモデルの推論速度に課題を感じている開発者の方に、NVIDIA TensorRTは強力な解決策を提供します。 この記事では、TensorRTの基本的な仕組みから実践的な使い方まで、体系的に解説していきます。 具体的には [...] The post TensorRTとは？使い方や高速化の仕組み、NVIDIA GPUでの活用を解説 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Fri, 03 Apr 2026 07:40:42 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/TensorRT.png",
+      "language": "ja"
+    },
+    {
+      "title": "マイクロソフト、Webブラウザ上でリアルタイムに3Dレンダリングを実現する「Babylon.js 9.0」正式リリース。照明計算の高速化、パーティクルエディタ搭載など新機能",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/web3dbabylonjs_90.html",
+      "description": "マイクロソフトは、Webブラウザ上で2Dや3Dモデルの高速なレンダリングなどを可能にするオープンソースのJavaScriptライブラリ「Babylon.js」の最新版「Babylon.js 9.0」正式版をリリースしました。 We are ......",
+      "publishedDate": "2026-04-05T16:51:30Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GLM-5V-Turbo-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/babylonjs9005.png",
+      "language": "ja"
+    },
+    {
+      "title": "Googleドライブ、AIによるランサムウェア検出と復元機能が正式版に。ランサムウェア検知能力が14倍向上と",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/googleai14.html",
+      "description": "Googleは、ベータ版として提供していたGoogleドライブのランサムウェア検知と復元機能が正式機能になったことを発表しました。 Googleドライブのランサムウェア検出機能はWindowsとmacOSに対応したデスクトップ版Google......",
+      "publishedDate": "2026-04-05T15:58:07Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2025/googledrive-anti-malware-beta03.png",
       "language": "ja"
     },
     {
@@ -582,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/wasmer-edgejs-ann01.png",
-      "language": "ja"
-    },
-    {
-      "title": "JavaにJavaScriptエンジン「V8」とPythonランタイム「CPython」を組み込む「Project Detroit」、オラクルが発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/javajavascriptv8pythoncpythonproject_detroit.html",
-      "description": "オラクルは、カリフォルニア州レッドウッドシティで開幕したイベント「JavaOne 2026」で、「Project Detroit」（以下、Detroit）をOpenJDKのプロジェクトプロポーザル（プロジェクト提案）として発表しました。 D......",
-      "publishedDate": "2026-03-17T16:11:19Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/javaone-detroit02.png",
-      "language": "ja"
-    },
-    {
-      "title": "「Java 26」正式リリース。HotSpotの起動高速化、HTTP/3クライアント対応など新機能",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/java_26hotspothttp3.html",
-      "description": "オラクルはJavaの最新バージョン「Java 26」正式版のリリースを発表しました。日本時間で今日（2026年3月18日）未明にカリフォルニア州レッドウッドシティで開幕したJavaOne 2026でも、Java 26のリリースが紹介されまし......",
-      "publishedDate": "2026-03-17T15:01:48Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/javaone-java26.png",
       "language": "ja"
     }
   ]
