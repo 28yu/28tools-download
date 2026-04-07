@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-06T01:44:42.578565",
+  "lastUpdated": "2026-04-07T01:28:10.964777",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -12,16 +12,6 @@
       "language": "en"
     },
     {
-      "title": "AIで建設業の書類確認業務を85%※1削減する新機能「グリーンサイトAIチェック（仮称）」",
-      "link": "https://news.build-app.jp/article/39919/",
-      "description": "エムシーディースリー株式会社（東京都渋谷区、代表取締役社長：飯田正生、以下「当社」）は、建設業向け労務安全書類作成・管理サービス「グリーンサ......",
-      "publishedDate": "Wed, 01 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/GUDJrwMJ96Jl1jX1678544070_1678544090-130x82.jpg",
-      "language": "ja"
-    },
-    {
       "title": "【2026年版】建築コンセプトとは？作り方・書き方・例文まで完全解説｜思いつかない人でもできる発想法",
       "link": "https://news.build-app.jp/article/39974/",
       "description": "建築コンセプトを考えようとしても、「何から考えればいいのかわからない」「言葉にできない」と悩んでいませんか。コンセプトが曖昧なまま設計を進め......",
@@ -29,6 +19,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/5c87f9d76e636c9023fcc406b3b24c49-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "AIで建設業の書類確認業務を85%※1削減する新機能「グリーンサイトAIチェック（仮称）」",
+      "link": "https://news.build-app.jp/article/39919/",
+      "description": "エムシーディースリー株式会社（東京都渋谷区、代表取締役社長：飯田正生、以下「当社」）は、建設業向け労務安全書類作成・管理サービス「グリーンサ......",
+      "publishedDate": "Wed, 01 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/GUDJrwMJ96Jl1jX1678544070_1678544090-130x82.jpg",
       "language": "ja"
     },
     {
@@ -192,26 +192,6 @@
       "language": "ja"
     },
     {
-      "title": "4月から始まる建築確認申請の「BIM図面審査」を前にBIM状況を取り巻く現在地を俯瞰(第二回)｜深堀り取材【毎月15日・月末更新】",
-      "link": "https://news.build-app.jp/article/39804/",
-      "description": "前稿では、建築確認申請の「BIM図面審査」に用いられる確認申請用CDEの概要と共に、建設業界でDX推進に関わる担当者を対象に行われた「建設現......",
-      "publishedDate": "Mon, 30 Mar 2026 23:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/53943ec08a229ae2ecc24b642ed4bb82-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "NEC、大成建設へ「建設現場顔認証 for グリーンサイト」を導入",
-      "link": "https://news.build-app.jp/article/39839/",
-      "description": "NECは、建設現場の入退場管理を顔認証で行う「建設現場顔認証 for グリーンサイト」(注1)を、大成建設株式会社（以下、大成建設）に導入し......",
-      "publishedDate": "Mon, 30 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/rbm8S3J6wOtaY151643282433-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
       "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
       "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
@@ -220,6 +200,26 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "建築大工が開発した「漆建材」不燃材料認定を取得。“ここにしかない”特別な演出を施設の内装へ",
+      "link": "https://news.build-app.jp/article/39943/",
+      "description": "様々な建築を手掛ける株式会社平成建設（本社：静岡県沼津市大岡）が、2025年に漆建材の不燃材認定を取得した。 認定番号 NM-5963 不燃......",
+      "publishedDate": "Mon, 06 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/02/29063438_m-130x86.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年版】建築RCとは？構造・設計ポイント・S造/SRCとの違いを実務目線でわかりやすく解説",
+      "link": "https://news.build-app.jp/article/40005/",
+      "description": "建築計画において、構造の選定はコストや性能だけでなく、建物の価値そのものを左右します。中でも「RC造」はマンションや公共施設で広く採用されて......",
+      "publishedDate": "Mon, 06 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/9109aa2460b947d305caa024def91c8b-130x82.png",
+      "language": "ja"
     },
     {
       "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
