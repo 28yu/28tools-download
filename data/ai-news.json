@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-06T03:59:16.360118",
+  "lastUpdated": "2026-04-07T03:50:14.893063",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -124,7 +124,7 @@
     },
     {
       "title": "Falcon Perception",
-      "titleJa": "ファルコンの知覚",
+      "titleJa": "ファルコンの認識",
       "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
       "description": "...",
       "publishedDate": "Wed, 01 Apr 2026 07:13:20 GMT",
@@ -153,6 +153,17 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Any Custom Frontend with Gradio's Backend",
+      "titleJa": "Gradio のバックエンドを備えた任意のカスタム フロントエンド",
+      "link": "https://huggingface.co/blog/introducing-gradio-server",
+      "description": "...",
+      "publishedDate": "Wed, 01 Apr 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/introducing-gradio-server/thumbnail.png",
       "language": "en"
     },
     {
@@ -223,7 +234,7 @@
     },
     {
       "title": "TRL v1.0: Post-Training Library Built to Move with the Field",
-      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたトレーニング後のライブラリ",
+      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたポストトレーニング ライブラリ",
       "link": "https://huggingface.co/blog/trl-v1",
       "description": "...",
       "publishedDate": "Tue, 31 Mar 2026 00:00:00 GMT",
@@ -289,7 +300,7 @@
     },
     {
       "title": "Bringing the power of Personal Intelligence to more people",
-      "titleJa": "パーソナル インテリジェンスのパワーをより多くの人に届ける",
+      "titleJa": "パーソナルインテリジェンスのパワーをより多くの人に届ける",
       "link": "https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion/",
       "description": "Bubble that says \"Personal Intelligence\" with Google G, Google Photos logo, and Gmail logo around it...",
       "publishedDate": "Tue, 17 Mar 2026 16:00:00 +0000",
@@ -318,17 +329,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/682c3e22650f6bbe33bb9d94/ZrDLn6Wer5-TM_okKVmZ2.png",
-      "language": "en"
-    },
-    {
-      "title": "OpenAI Japan announces Japan Teen Safety Blueprint to put teen safety first",
-      "titleJa": "OpenAI Japan、ティーンエイジャーの安全を最優先にするジャパン・ティーン・セーフティ・ブループリントを発表",
-      "link": "https://openai.com/index/japan-teen-safety-blueprint",
-      "description": "OpenAI Japan announces the Japan Teen Safety Blueprint, introducing stronger age protections, parental controls, and well-being safeguards for teens using generative AI....",
-      "publishedDate": "Tue, 17 Mar 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -486,6 +486,39 @@
       "language": "ja"
     },
     {
+      "title": "AKOOLとは？AIで動画生成・顔交換ができるツールの使い方や料金を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/akool/",
+      "description": "自社製品を訴求するために目を引くようなコンテンツを作りたいと考えている企業は多いでしょう。 しかし、画像や動画編集スキルが必要だったり、外部に依頼すると高額な外注費がかかってしまうため、コンテンツ作成に着手できない企業は [...]...",
+      "publishedDate": "Mon, 06 Apr 2026 15:49:08 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/akool_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI API（ChatGPT API）とは！モデル・料金・Responses API対応の使い方を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/openai-api/",
+      "description": "外部のシステムにOpenAIの機能を連携させる際に使用する「OpenAI API」ですが、多くの種類が存在するため、その全容を理解しきれていない方も多いのではないでしょうか。 そこで今回は、現在提供されている「OpenA [...]...",
+      "publishedDate": "Mon, 06 Apr 2026 14:52:49 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/openai-api_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Dreamina Seedance 2.0とは？マルチモーダル動画生成AIの特徴と活用方法を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/dreamina-seedance-2-0/",
+      "description": "2026年2月、ByteDance傘下の研究組織「ByteDance Seed」から新たな動画生成モデル「Seedance 2.0」が公開されました。 その後、2026年3月にはCapCut上のクリエイタープラットフォー [...]...",
+      "publishedDate": "Mon, 06 Apr 2026 11:16:48 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Dreamina-Seedance-2.0-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "アイスマイリー、4/14（火）から3日間「AI World 2026 春 名古屋」に出展　ブース予約でAmazonギフト1,500円分プレゼント！",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/ai-world-2026-spring-nagoya/",
@@ -494,39 +527,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/OGP_EXPO24_AI.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "【Otter】日本語対応した会議支援ツール！使い方・活用事例まで解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/otter/",
-      "description": "会議のたびに議事録作成へ時間を取られ、本来集中したい議論や意思決定に十分な時間を使えないと感じていないでしょうか。さらに、あとから「あの発言は誰が言ったのか」「決定事項は何だったのか」を探し直す場面が多い企業も少なくあり [...]...",
-      "publishedDate": "Fri, 03 Apr 2026 15:10:26 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/otter_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "フィジカルAIとは？生成AIの次に来る革新について解説！活用事例・導入メリットも紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/physical-ai/",
-      "description": "「AI」と聞くと、文章を書いたり画像を生成したりするチャットやアプリを思い浮かべる人が多いかもしれません。最近は、そうしたデジタル上のやり取りにとどまらず、実際に「動くAI」が注目されるようになってきました。 こうした流 [...]...",
-      "publishedDate": "Fri, 03 Apr 2026 14:30:01 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/physical-ai_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Felo（フェロー）とは？情報検索を変えるAI検索エンジンの使い方・料金などを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/felo/",
-      "description": "Feloは日本発のAI検索サービスです。自然言語で質問すると、意図をくみ取りながら複数の情報源を横断して情報を整理し、回答と出典をあわせて表示してくれます。 「調べても情報がまとまらない」「結局どれが正しいのか分からない [...]...",
-      "publishedDate": "Fri, 03 Apr 2026 13:39:10 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/felo_2604-1024x576.webp",
       "language": "ja"
     },
     {
@@ -549,6 +549,17 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/TensorRT.png",
+      "language": "ja"
+    },
+    {
+      "title": "AIコーディングエディタ「Cursor 3」リリース。AIエージェントを中心に新たに構築",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/aicursor_3ai.html",
+      "description": "AIコーディングエディタ「Cursor」の開発元であるAnysphereは、Cursorの最新版となる「Cursor 3」リリースを発表しました。 Cursor 3を説明するAnysphere共同創業者のSualets Asif氏とMich......",
+      "publishedDate": "2026-04-06T18:22:17Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/cursor3ann.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/browserusecli2001.png",
-      "language": "ja"
-    },
-    {
-      "title": "Node.js互換でコンテナよりも高密度と高速起動を実現する「Edge.js」、Wasmerが発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/nodejsedgejswasmer.html",
-      "description": "WebAssemblyランタイム「Wasmer」を開発提供するWasmer社は、Node.js互換かつコンテナよりも高密度な集約と高速起動を実現する「[Edge.js](https://edgejs.org/)」を発表しました。 What ......",
-      "publishedDate": "2026-03-18T15:24:43Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/wasmer-edgejs-ann01.png",
       "language": "ja"
     }
   ]
