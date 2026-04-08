@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-07T01:28:10.964777",
+  "lastUpdated": "2026-04-08T01:28:41.509155",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -32,26 +32,6 @@
       "language": "ja"
     },
     {
-      "title": "ガウディが描いた「サグラダ・ファミリア」｜アナログとデジタル技術の融合による「時間圧縮」革命",
-      "link": "https://news.build-app.jp/article/39569/",
-      "description": "バルセロナの空に向かって伸びる石造りの塔群。142年の歳月を経てなお建設が続くサグラダ・ファミリアは、単なる未完の建築物ではない。それはアナ......",
-      "publishedDate": "Tue, 31 Mar 2026 23:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260401_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "清水建設が「Okta Customer Identity」でID管理とセキュリティ強化を実現",
-      "link": "https://news.build-app.jp/article/39917/",
-      "description": "概要 株式会社日立ソリューションズ（本社：東京都品川区、取締役社長：森田 英嗣／以下、日立ソリューションズ）は、清水建設株式会社（本社：東京......",
-      "publishedDate": "Tue, 31 Mar 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/02/xCR5fVM5k2PC9TM1645706302-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "東大卒4割のAIスタートアップが建設業を変える──燈、創業5年で評価額1000億円の衝撃",
       "link": "https://axconstdx.com/2026/03/17/%e6%9d%b1%e5%a4%a7%e5%8d%924%e5%89%b2%e3%81%aeai%e3%82%b9%e3%82%bf%e3%83%bc%e3%83%88%e3%82%a2%e3%83%83%e3%83%97%e3%81%8c%e5%bb%ba%e8%a8%ad%e6%a5%ad%e3%82%92%e5%a4%89%e3%81%88%e3%82%8b%e2%94%80/?utm_source=rss&utm_medium=rss&utm_campaign=%25e6%259d%25b1%25e5%25a4%25a7%25e5%258d%25924%25e5%2589%25b2%25e3%2581%25aeai%25e3%2582%25b9%25e3%2582%25bf%25e3%2583%25bc%25e3%2583%2588%25e3%2582%25a2%25e3%2583%2583%25e3%2583%2597%25e3%2581%258c%25e5%25bb%25ba%25e8%25a8%25ad%25e6%25a5%25ad%25e3%2582%2592%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b%25e2%2594%2580",
       "description": "「建設業界のDXは難しい」と、あきらめかけていませんか。そんな常識を、創業5年・評価額1,000億円超のAIスタートアップが静かに塗り替えています。この記事を読めば、現場課題を解決するAIの使い方と、日本の建設業が変わり [...] <p>The post 東大卒4割のAIスタートアップが建設業を変える──燈、創業5年で評価額1000億円の衝撃 first appeared on 生成AIと建設D...",
@@ -59,6 +39,26 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/featured_image_1200x630-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "株式会社竹中土木が「Kencopa工程AIエージェント」のPoCを開始",
+      "link": "https://news.build-app.jp/article/40009/",
+      "description": "建設現場の省人化・自動化に挑む株式会社KENCOPA（本社：東京都渋谷区、代表取締役CEO：安村 荘佑、以下 KENCOPA）は、株式会社竹......",
+      "publishedDate": "Tue, 07 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/08/ht1lVpcka7yWzDz1661358045_1661358063-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "「LLM×世界モデル」という二つの異なるAIパラダイムの併存と現場実装の臨界点",
+      "link": "https://news.build-app.jp/article/39594/",
+      "description": "LLMモデルのAIは契約書を要約できるが、コンクリートの硬化速度は、LLM単体では予測しにくい。LLMモデルのAIは設計思想を読み解けるが、......",
+      "publishedDate": "Tue, 07 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260408_hirayama-130x82.jpg",
       "language": "ja"
     },
     {
@@ -82,16 +82,6 @@
       "language": "en"
     },
     {
-      "title": "【モバイルBIM】建設DXを支援するChatBIM「ACIMUS」がモバイル対応",
-      "link": "https://news.build-app.jp/article/39939/",
-      "description": "3つのポイント 【モバイルBIM】&#160;スマートフォンやタブレットからも、BIMモデルの3D閲覧・編集・AI対話・パース生成が可能に。......",
-      "publishedDate": "Thu, 02 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/JWDgaGkHMwBiMyT1642682026-130x92.jpg",
-      "language": "ja"
-    },
-    {
       "title": "建築ジャッキとは？種類一覧・使い方・安全対策を徹底解説【現場向け】",
       "link": "https://news.build-app.jp/article/39978/",
       "description": "建築現場で使われる「ジャッキ」は、重量物を支える重要な機材でありながら、正しい使い方や種類の違いを理解せずに扱うと、重大な事故につながるリス......",
@@ -99,6 +89,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/5420c693192863a6d70ff27a1cf6292c-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【モバイルBIM】建設DXを支援するChatBIM「ACIMUS」がモバイル対応",
+      "link": "https://news.build-app.jp/article/39939/",
+      "description": "3つのポイント 【モバイルBIM】&#160;スマートフォンやタブレットからも、BIMモデルの3D閲覧・編集・AI対話・パース生成が可能に。......",
+      "publishedDate": "Thu, 02 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/JWDgaGkHMwBiMyT1642682026-130x92.jpg",
       "language": "ja"
     },
     {
@@ -202,16 +202,6 @@
       "language": "en"
     },
     {
-      "title": "建築大工が開発した「漆建材」不燃材料認定を取得。“ここにしかない”特別な演出を施設の内装へ",
-      "link": "https://news.build-app.jp/article/39943/",
-      "description": "様々な建築を手掛ける株式会社平成建設（本社：静岡県沼津市大岡）が、2025年に漆建材の不燃材認定を取得した。 認定番号 NM-5963 不燃......",
-      "publishedDate": "Mon, 06 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/02/29063438_m-130x86.jpg",
-      "language": "ja"
-    },
-    {
       "title": "【2026年版】建築RCとは？構造・設計ポイント・S造/SRCとの違いを実務目線でわかりやすく解説",
       "link": "https://news.build-app.jp/article/40005/",
       "description": "建築計画において、構造の選定はコストや性能だけでなく、建物の価値そのものを左右します。中でも「RC造」はマンションや公共施設で広く採用されて......",
@@ -219,6 +209,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/9109aa2460b947d305caa024def91c8b-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "建築大工が開発した「漆建材」不燃材料認定を取得。“ここにしかない”特別な演出を施設の内装へ",
+      "link": "https://news.build-app.jp/article/39943/",
+      "description": "様々な建築を手掛ける株式会社平成建設（本社：静岡県沼津市大岡）が、2025年に漆建材の不燃材認定を取得した。 認定番号 NM-5963 不燃......",
+      "publishedDate": "Mon, 06 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/02/29063438_m-130x86.jpg",
       "language": "ja"
     },
     {
