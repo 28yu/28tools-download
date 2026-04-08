@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-07T03:50:14.893063",
+  "lastUpdated": "2026-04-08T03:52:43.232093",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -101,30 +101,8 @@
       "language": "en"
     },
     {
-      "title": "ストックマーク、「AI時代の働き方調査2026」結果を発表。約9割のビジネスパーソンが業務で生成AI活用",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/stockmark-workstyle-ai-2026/",
-      "description": "ストックマークは、「AI時代の働き方調査2026」を実施しました。業務において約9割のビジネスパーソンが生成AIツールを活用しており、生成AIの標準インフラ化が進んでいる実態が明らかになりました。 このニュースのポイント [...] The post ストックマーク、「AI時代の働き方調査2026」結果を発表。約9割のビジネスパーソンが業務で生成AI活用 first appeared on AIポ...",
-      "publishedDate": "Wed, 01 Apr 2026 07:51:59 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/0331ainewsmain.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Google、リアルタイム音声対話モデルの最新版「Gemini 3.1 Flash Live」提供開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/google-gemini-3-1-flash-live-release/",
-      "description": "Googleは、リアルタイム音声対話モデルの最新版「Gemini 3.1 Flash Live」の提供を開始しました。音響的なニュアンスの認識精度が向上し、より自然な対話や複雑なタスク処理の対応が可能です。 このニュース [...] The post Google、リアルタイム音声対話モデルの最新版「Gemini 3.1 Flash Live」提供開始 first appeared on AIポー...",
-      "publishedDate": "Wed, 01 Apr 2026 07:42:42 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/0327ainews.png",
-      "language": "ja"
-    },
-    {
       "title": "Falcon Perception",
-      "titleJa": "ファルコンの認識",
+      "titleJa": "ファルコンの知覚",
       "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
       "description": "...",
       "publishedDate": "Wed, 01 Apr 2026 07:13:20 GMT",
@@ -132,17 +110,6 @@
       "category": "tools",
       "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/tiiuae/falcon-perception.png",
       "language": "en"
-    },
-    {
-      "title": "【4/21開催】製造業AIの最前線 紙の帳票から図面データ活用まで、失敗しないAI-Readyデータ基盤戦略ウェビナー",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/20260421webinar/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年4月21日（火）12時から製造業向けAIウェビナーを開催します。 製造業のAI導入を阻む最大の要因は、活用可能なデータの不 [...] The post 【4/21開催】製造業AIの最前線 紙の帳票から図面データ活用まで、失敗しないAI-Readyデータ基盤戦略ウェビナー first appeared...",
-      "publishedDate": "Wed, 01 Apr 2026 06:31:50 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/1002_1200x628_2.jpg",
-      "language": "ja"
     },
     {
       "title": "Gradient Labs gives every bank customer an AI account manager",
@@ -189,17 +156,6 @@
       "language": "en"
     },
     {
-      "title": "Shifting to AI model customization is an architectural imperative",
-      "titleJa": "AI モデルのカスタマイズへの移行はアーキテクチャ上の必須事項です",
-      "link": "https://www.technologyreview.com/2026/03/31/1134762/shifting-to-ai-model-customization-is-an-architectural-imperative/",
-      "description": "In the early days of large language models (LLMs), we grew accustomed to massive 10x jumps in reasoning and coding capability with every new model iteration. Today, those jumps have flattened into inc...",
-      "publishedDate": "Tue, 31 Mar 2026 14:12:50 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/Mistral-image.png?w=3000",
-      "language": "en"
-    },
-    {
       "title": "Accelerating the next phase of AI",
       "titleJa": "AIの次のフェーズを加速する",
       "link": "https://openai.com/index/accelerating-the-next-phase-ai",
@@ -211,30 +167,8 @@
       "language": "en"
     },
     {
-      "title": "The Download: AI health tools and the Pentagon’s Anthropic culture war",
-      "titleJa": "ダウンロード: AI 健康ツールと国防総省の人類文化戦争",
-      "link": "https://www.technologyreview.com/2026/03/31/1134934/the-download-testing-ai-health-tools-pentagon-anthropic-culture-war-backfires/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. There are more AI health tools than ever—but how w...",
-      "publishedDate": "Tue, 31 Mar 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/06/MIT_Welfare_Lead_1.jpg?w=3000",
-      "language": "en"
-    },
-    {
-      "title": "AI benchmarks are broken. Here’s what we need instead.",
-      "titleJa": "AI ベンチマークが壊れています。代わりに必要なものは次のとおりです。",
-      "link": "https://www.technologyreview.com/2026/03/31/1134833/ai-benchmarks-are-broken-heres-what-we-need-instead/",
-      "description": "For decades, artificial intelligence has been evaluated through the question of whether machines outperform humans. From chess to advanced math, from coding to essay writing, the performance of AI mod...",
-      "publishedDate": "Tue, 31 Mar 2026 12:01:08 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/260326_AIlearningOpEd2.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "TRL v1.0: Post-Training Library Built to Move with the Field",
-      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたポストトレーニング ライブラリ",
+      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたトレーニング後のライブラリ",
       "link": "https://huggingface.co/blog/trl-v1",
       "description": "...",
       "publishedDate": "Tue, 31 Mar 2026 00:00:00 GMT",
@@ -333,7 +267,7 @@
     },
     {
       "title": "Gemini in Google Sheets just achieved state-of-the-art performance.",
-      "titleJa": "Google スプレッドシートの Gemini は最先端のパフォーマンスを達成しました。",
+      "titleJa": "Google Sheets の Gemini は最先端のパフォーマンスを達成しました。",
       "link": "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art/",
       "description": "Today we announced new beta features for Gemini in Sheets to help you create, organize and edit entire sheets, from basic tasks to complex data analysis — just describe …...",
       "publishedDate": "Tue, 10 Mar 2026 13:00:00 +0000",
@@ -363,6 +297,127 @@
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/async-rl-landscape/thumbnail.png",
       "language": "en"
+    },
+    {
+      "title": "Grok Imagine APIとは？xAI発の高品質・低レイテンシな動画生成APIを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/grok-imagine-api/",
+      "description": "2026年1月、xAIから新たな動画生成API「Grok Imagine API」が公開されました。 Grok Imagine APIは、テキストや静止画を入力として、高品質な動画生成や動画編集を行えるAPIです。広告ク [...]...",
+      "publishedDate": "Tue, 07 Apr 2026 15:37:29 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/02/AIモン_-Grok-Imagine-API-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Desalination plants in the Middle East are increasingly vulnerable",
+      "titleJa": "中東の淡水化プラントはますます脆弱になっている",
+      "link": "https://www.technologyreview.com/2026/04/07/1135235/desalination-technology-water/",
+      "description": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. As the conflict in Ir...",
+      "publishedDate": "Tue, 07 Apr 2026 14:54:06 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/GettyImages-541061312.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "生成AIで属人化を解消する方法5選！この人しかできない仕事をなくす！導入事例とロードマップも徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/personalization/",
+      "description": "属人化とは、社内の特定の業務が一部の担当者に依存してしまっている状態のことです。属人化が続くと、担当者の退職や異動時に業務が停滞し、組織のナレッジ管理も進みません。 こうした属人化対策として注目されているのが、生成AIの [...]...",
+      "publishedDate": "Tue, 07 Apr 2026 14:51:25 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/personalization_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Google Antigravityとは？エージェント型IDEの使い方や機能、料金プランを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/google-antigravity/",
+      "description": "Google Antigravityは、Googleが2025年11月にリリースしたエージェント型のIDEです。今までのIDEが人間中心でコードを書く環境だったのに対し、Google Antigravityではエージェン [...]...",
+      "publishedDate": "Tue, 07 Apr 2026 14:13:24 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/google-antigravity_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Enabling agent-first process redesign",
+      "titleJa": "エージェントファーストのプロセス再設計を可能にする",
+      "link": "https://www.technologyreview.com/2026/04/07/1134966/enabling-agent-first-process-redesign/",
+      "description": "Unlike static, rules-based systems, AI agents can learn, adapt, and optimize processes dynamically. As they interact with data, systems, people, and other agents in real time, AI agents can execute en...",
+      "publishedDate": "Tue, 07 Apr 2026 14:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/Deloitte-Landing-Page-Card.png?w=1200",
+      "language": "en"
+    },
+    {
+      "title": "Claude Codeのコマンド一覧！便利でおすすめな使い方をまとめてみた！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/claude-code-command-rist/",
+      "description": "Claude Codeを使いこなしたいものの、コマンドの種類が多くて覚えられないと感じている方は多いのではないでしょうか？スラッシュコマンド・CLIコマンド・CLIフラグ・ショートカットなど似た言葉も多く、使い分けが曖昧 [...]...",
+      "publishedDate": "Tue, 07 Apr 2026 12:57:49 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-code-command-rist_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Codeの活用事例10選！何ができるのか、何がすごいのかを徹底深掘り！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/claude-code-use-example/",
+      "description": "Claude Codeがなんとなくすごいのは理解できているものの、実際にどう活用したらよいかわからない方は多いのではないでしょうか。 実際、SNSでも「資料や記事作成を自動化している」「非エンジニアでも短時間でアプリを開 [...]...",
+      "publishedDate": "Tue, 07 Apr 2026 12:31:29 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-code-use-example2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "The Download: AI’s impact on jobs, and data centres in space",
+      "titleJa": "ダウンロード: AI が雇用に与える影響と宇宙のデータセンター",
+      "link": "https://www.technologyreview.com/2026/04/07/1135208/the-download-ai-impact-jobs-data-centres-space/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The one piece of data that could&#160;actually she...",
+      "publishedDate": "Tue, 07 Apr 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/04/20240926__DSC7922_PA.jpg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "東京都、中小企業の経営課題に応じて最適な支援策を提示するAI診断ツール「Mir-AIサーチ」リリース",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/tokyoto-mir-ai-search-recommend/",
+      "description": "東京都は、中小企業が抱える経営課題に応じた支援策をWeb上で診断できるAI診断ツール「Mir-AI（ミライ）サーチ」をリリースしました。AIが経営課題を整理し、最適な支援策を提示します。 このニュースのポイント 東京都、 [...] The post 東京都、中小企業の経営課題に応じて最適な支援策を提示するAI診断ツール「Mir-AIサーチ」リリース first appeared on AIポータ...",
+      "publishedDate": "Tue, 07 Apr 2026 05:55:03 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0406tokyoto.png",
+      "language": "ja"
+    },
+    {
+      "title": "パーソルキャリア運営「doda」、AI活用実態と人材戦略に関する調査結果の第1弾「求める人材の変化編」発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/persol-doda-ai-202602report01/",
+      "description": "パーソルキャリアが運営する「doda」は、AI活用実態と人材戦略に関する調査結果の第1弾「求める人材の変化編」を発表しました。採用したい職種や人材の方向性に関する変化が明らかになりました。 このニュースのポイント パーソ [...] The post パーソルキャリア運営「doda」、AI活用実態と人材戦略に関する調査結果の第1弾「求める人材の変化編」発表 first appeared on AI...",
+      "publishedDate": "Tue, 07 Apr 2026 05:37:42 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0403ainews02.png",
+      "language": "ja"
+    },
+    {
+      "title": "【開催速報】「AI博覧会 Spring 2026」本日開幕！フィジカルAI・ロボットゾーン新設、最先端AIが集結",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/aiexpo_spring_2026_report01/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年4月7日（火）・8日（水）の2日間、東京国際フォーラムにて「AI博覧会 Spring 2026」を開催しております。 開幕 [...] The post 【開催速報】「AI博覧会 Spring 2026」本日開幕！フィジカルAI・ロボットゾーン新設、最先端AIが集結 first appeared on...",
+      "publishedDate": "Tue, 07 Apr 2026 04:58:12 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/image_2026_4_71.png",
+      "language": "ja"
     },
     {
       "title": "JINS、「JINS AI」機能を拡張。ライフスタイルに最適なレンズを提案する新機能「レンズ診断」を搭載",
@@ -431,61 +486,6 @@
       "language": "ja"
     },
     {
-      "title": "NotebookLMの裏技10選！リサーチ・資料作成・音声生成まで効率化する活用術",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/notebooklm-tips/",
-      "description": "「資料が多すぎて整理できない」「リサーチや記事作成に時間がかかる」と感じていませんか。NotebookLMは便利なAIツールですが、基本機能だけではその真価を引き出しきれないケースもあります。実は、使い方を少し工夫するだ [...]...",
-      "publishedDate": "Sat, 04 Apr 2026 16:30:12 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/NotebookLM-Tricks_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【無料の画像生成AI】Bing Image Creatorの使い方ガイド！商用利用の可否も解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/bing-image-creator/",
-      "description": "皆さんは「Bing Image Creator」という画像生成AIツールを使ったことはありますか？Bing Image Creatorは画像生成モデル「DALL-E 3」を搭載しており、アニメ風から写真リアリティまで幅広 [...]...",
-      "publishedDate": "Sat, 04 Apr 2026 15:39:14 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/bing-image-creator_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Skywork】資料作成を自動化する次世代AI！使い方や料金を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/about-skywork/",
-      "description": "「リサーチから資料作成まで時間がかかりすぎる」「AIを使っても結局手作業が多い」、そんな悩みを感じていないでしょうか。2025年5月22日にSkywork AI社から最新プロダクト「Skywork Super Agent [...]...",
-      "publishedDate": "Sat, 04 Apr 2026 14:40:45 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/about-skywork_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Qwen3.6-Plusとは？1Mトークン対応のエージェント型LLMを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwen3-6-plus/",
-      "description": "2026年4月、AlibabaのQwenシリーズから新たなフラッグシップモデルが登場しました。 今回発表された「Qwen3.6-Plus」は、単なる大規模言語モデルの進化にとどまらず、実世界での活用を前提としたエージェン [...]...",
-      "publishedDate": "Sat, 04 Apr 2026 13:18:29 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.6-Plus-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Gemma 4】スマートフォンでも動作するGoogleの最強オープンモデルの性能・使い方・活用シーンまでを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gemma-4/",
-      "description": "2026年4月3日、Googleはオープンモデルシリーズの最新版となる「Gemma 4」を公開しました！ Gemini 3の研究成果をベースに開発されたモデルで、パラメータあたりの知能（intelligence-per- [...]...",
-      "publishedDate": "Sat, 04 Apr 2026 12:43:49 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemma-4-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "AKOOLとは？AIで動画生成・顔交換ができるツールの使い方や料金を解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/akool/",
@@ -549,6 +549,17 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/TensorRT.png",
+      "language": "ja"
+    },
+    {
+      "title": "GitHub Copilot CLI、メインのAIモデルとは異なるAIモデルをセカンドオピニオンに使う「Rubber Duck」モード",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/github_copilot_cliaiairubber_duck.html",
+      "description": "GitHubは、AIエージェントによるコーディングツール「GitHub Copilot CLI」の実験的新機能として、メインで利用するAIモデルとは異なるAIモデルをセカンドオピニオン役として使える「Rubber Duck」モードを発表しま......",
+      "publishedDate": "2026-04-07T15:15:54Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/githubsli-rubberduck-expann.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/googleaistudionew260303.png",
-      "language": "ja"
-    },
-    {
-      "title": "AIエージェントがコマンドラインでブラウザを自動操作できる「Browser Use CLI 2.0」リリース。Chrome DevToolsへの接続などで操作速度が2倍に",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/aibrowser_use_cli_20chrome_devtools2.html",
-      "description": "人間やAIエージェントがコマンドラインから指示することでWebブラウザを操作できるオープンソースのPythonライブラリ「Browser Use CLI 2.0」がリリースされました。 Browser Use CLI 2.0では、Chrom......",
-      "publishedDate": "2026-03-22T15:58:36Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/browserusecli2001.png",
       "language": "ja"
     }
   ]
