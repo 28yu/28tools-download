@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-08T03:52:43.232093",
+  "lastUpdated": "2026-04-09T03:49:37.288223",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -46,6 +46,116 @@
       "language": "en"
     },
     {
+      "title": "LangChainとは？料金・実装例までいま知るべきポイント総まとめ！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/langchain-is/",
+      "description": "皆さんは、LangChainというライブラリをご存知でしょうか？ LangChainを使うことで、ChatGPTやClaude3といった生成AIの機能を高め、より実用的に使えるようになるのです。現代において生成AIは、プ [...]...",
+      "publishedDate": "Wed, 08 Apr 2026 15:43:14 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/01/AIモン_LangChain-1-1024x576.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "DALL-E 3とは？使い方・日本語対応・プロンプトのコツまでやさしく解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/dall-e3/",
+      "description": "皆さんはDALL-E 3をご存じですか？ 2023年9月21日にOpenAI社から発表された最新の画像生成AIで、ChatGPTを使って画像を生成することができるんです！従来のものから大幅に性能が向上しており、プロンプト [...]...",
+      "publishedDate": "Wed, 08 Apr 2026 15:03:25 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/01/AIモン_DALL・E3-1024x576.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ALTK‑Evolve: On‑the‑Job Learning for AI Agents",
+      "titleJa": "ALTK‑Evolve: AI エージェントのための現場学習",
+      "link": "https://huggingface.co/blog/ibm-research/altk-evolve",
+      "description": "...",
+      "publishedDate": "Wed, 08 Apr 2026 14:27:42 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6435a1131860001f144239ea/uxQyadM-_5UjGrNiwUGI0.png",
+      "language": "en"
+    },
+    {
+      "title": "ローカルAIとは？知らないと情シス失格！？クラウドAIとの違いと導入判断のポイントを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/local-ai/",
+      "description": "クラウドAIは便利な一方で、「社内データを外に出して大丈夫か」「使うほど料金が増えないか」と不安を感じる人も増えています。利用量や用途によっては、継続的なコストが想定以上に膨らむケースがあります。 そこで注目されているの [...]...",
+      "publishedDate": "Wed, 08 Apr 2026 14:02:05 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Local-AI_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "The next phase of enterprise AI",
+      "titleJa": "エンタープライズ AI の次の段階",
+      "link": "https://openai.com/index/next-phase-of-enterprise-ai",
+      "description": "OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents....",
+      "publishedDate": "Wed, 08 Apr 2026 14:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Mustafa Suleyman: AI development won’t hit a wall anytime soon—here’s why",
+      "titleJa": "ムスタファ・スレイマン: AI 開発はすぐに壁にぶつかることはありません。その理由は次のとおりです。",
+      "link": "https://www.technologyreview.com/2026/04/08/1135398/mustafa-suleyman-ai-future/",
+      "description": "We evolved for a linear world. If you walk for an hour, you cover a certain distance. Walk for two hours and you cover double that distance. This intuition served us well on the savannah. But it catas...",
+      "publishedDate": "Wed, 08 Apr 2026 14:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/Final-Header_Suleyman.png?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Claude Mythos Previewとは？Anthropic最強AIの能力・安全性・Project Glasswingを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-mythos-preview/",
+      "description": "Anthropicが2026年4月に新たなLLMについて発表をしました！ 今回発表された「Claude Mythos Preview」は、従来の大規模言語モデルの枠を超え、特にサイバーセキュリティ領域において飛躍的な能力 [...]...",
+      "publishedDate": "Wed, 08 Apr 2026 13:05:39 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Mythos-Preview-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "The Download: water threats in Iran and AI’s impact on what entrepreneurs make",
+      "titleJa": "ダウンロード: イランの水の脅威と起業家が生み出すものに対する AI の影響",
+      "link": "https://www.technologyreview.com/2026/04/08/1135405/the-download-water-threats-iran-ais-impact-on-entrepreneurs-make/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Desalination plants in the Middle East are increas...",
+      "publishedDate": "Wed, 08 Apr 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/06/USWDS_SPREAD.jpg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "Introducing the Child Safety Blueprint",
+      "titleJa": "児童安全ブループリントの紹介",
+      "link": "https://openai.com/index/introducing-child-safety-blueprint",
+      "description": "Discover OpenAI’s Child Safety Blueprint—a roadmap for building AI responsibly with safeguards, age-appropriate design, and collaboration to protect and empower young people online....",
+      "publishedDate": "Wed, 08 Apr 2026 05:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Safetensors is Joining the PyTorch Foundation",
+      "titleJa": "Safetensors が PyTorch Foundation に参加します",
+      "link": "https://huggingface.co/blog/safetensors-joins-pytorch-foundation",
+      "description": "...",
+      "publishedDate": "Wed, 08 Apr 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/safetensors-joins-pytorch-foundation/thumbnail.png",
+      "language": "en"
+    },
+    {
       "title": "Holo3: Breaking the Computer Use Frontier",
       "titleJa": "Holo3: コンピューター使用のフロンティアを突破する",
       "link": "https://huggingface.co/blog/Hcompany/holo3",
@@ -76,28 +186,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/March_2026_AI_Recap_social_hvvl.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "The Download: gig workers training humanoids, and better AI benchmarks",
-      "titleJa": "ダウンロード: ギグワーカーがヒューマノイドを訓練し、より優れた AI ベンチマーク",
-      "link": "https://www.technologyreview.com/2026/04/01/1134993/the-download-gig-workers-training-humanoids-better-ai-benchmarks/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The gig workers who are training humanoid robots a...",
-      "publishedDate": "Wed, 01 Apr 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/01/230628_Talon_0455-social.jpg?w=3000",
-      "language": "en"
-    },
-    {
-      "title": "The gig workers who are training humanoid robots at home",
-      "titleJa": "自宅で人型ロボットを訓練するギグワーカー",
-      "link": "https://www.technologyreview.com/2026/04/01/1134863/humanoid-data-training-gig-economy-2026-breakthrough-technology/",
-      "description": "When Zeus, a medical student living in a hilltop city in central Nigeria, returns to his studio apartment from a long day at the hospital, he turns on his ring light, straps his iPhone to his forehead...",
-      "publishedDate": "Wed, 01 Apr 2026 11:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/TR11-HumanoidRobot.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -167,6 +255,17 @@
       "language": "en"
     },
     {
+      "title": "Training mRNA Language Models Across 25 Species for $165",
+      "titleJa": "25 種にわたる mRNA 言語モデルを 165 ドルでトレーニング",
+      "link": "https://huggingface.co/blog/OpenMed/training-mrna-models-25-species",
+      "description": "...",
+      "publishedDate": "Tue, 31 Mar 2026 08:23:44 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/5fd5e18a90b6dc4633f6d292/5dSAoMdQZBsLBS2mTPyWA.png",
+      "language": "en"
+    },
+    {
       "title": "TRL v1.0: Post-Training Library Built to Move with the Field",
       "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたトレーニング後のライブラリ",
       "link": "https://huggingface.co/blog/trl-v1",
@@ -189,10 +288,10 @@
       "language": "en"
     },
     {
-      "title": "Powering product discovery in ChatGPT",
-      "titleJa": "ChatGPT での製品発見を強化する",
-      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
-      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration....",
+      "title": "Update on the OpenAI Foundation",
+      "titleJa": "OpenAI Foundation に関する最新情報",
+      "link": "https://openai.com/index/update-on-the-openai-foundation",
+      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs....",
       "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -200,10 +299,10 @@
       "language": "en"
     },
     {
-      "title": "Update on the OpenAI Foundation",
-      "titleJa": "OpenAI Foundation に関する最新情報",
-      "link": "https://openai.com/index/update-on-the-openai-foundation",
-      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs....",
+      "title": "Powering product discovery in ChatGPT",
+      "titleJa": "ChatGPT での製品発見を強化する",
+      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
+      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration....",
       "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -277,28 +376,6 @@
       "language": "en"
     },
     {
-      "title": "Introducing Storage Buckets on the Hugging Face Hub",
-      "titleJa": "ハグフェイスハブに収納バケツが登場",
-      "link": "https://huggingface.co/blog/storage-buckets",
-      "description": "...",
-      "publishedDate": "Tue, 10 Mar 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/storage-buckets/buckets-annoucement.png",
-      "language": "en"
-    },
-    {
-      "title": "Keep the Tokens Flowing: Lessons from 16 Open-Source RL Libraries",
-      "titleJa": "トークンの流れを維持する: 16 のオープンソース RL ライブラリからの教訓",
-      "link": "https://huggingface.co/blog/async-rl-training-landscape",
-      "description": "...",
-      "publishedDate": "Tue, 10 Mar 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/async-rl-landscape/thumbnail.png",
-      "language": "en"
-    },
-    {
       "title": "Grok Imagine APIとは？xAI発の高品質・低レイテンシな動画生成APIを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/grok-imagine-api/",
@@ -308,17 +385,6 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/02/AIモン_-Grok-Imagine-API-1024x576.webp",
       "language": "ja"
-    },
-    {
-      "title": "Desalination plants in the Middle East are increasingly vulnerable",
-      "titleJa": "中東の淡水化プラントはますます脆弱になっている",
-      "link": "https://www.technologyreview.com/2026/04/07/1135235/desalination-technology-water/",
-      "description": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. As the conflict in Ir...",
-      "publishedDate": "Tue, 07 Apr 2026 14:54:06 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/GettyImages-541061312.jpg?resize=1200,600",
-      "language": "en"
     },
     {
       "title": "生成AIで属人化を解消する方法5選！この人しかできない仕事をなくす！導入事例とロードマップも徹底解説",
@@ -343,17 +409,6 @@
       "language": "ja"
     },
     {
-      "title": "Enabling agent-first process redesign",
-      "titleJa": "エージェントファーストのプロセス再設計を可能にする",
-      "link": "https://www.technologyreview.com/2026/04/07/1134966/enabling-agent-first-process-redesign/",
-      "description": "Unlike static, rules-based systems, AI agents can learn, adapt, and optimize processes dynamically. As they interact with data, systems, people, and other agents in real time, AI agents can execute en...",
-      "publishedDate": "Tue, 07 Apr 2026 14:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/Deloitte-Landing-Page-Card.png?w=1200",
-      "language": "en"
-    },
-    {
       "title": "Claude Codeのコマンド一覧！便利でおすすめな使い方をまとめてみた！",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/claude-code-command-rist/",
@@ -374,17 +429,6 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-code-use-example2604-1024x576.webp",
       "language": "ja"
-    },
-    {
-      "title": "The Download: AI’s impact on jobs, and data centres in space",
-      "titleJa": "ダウンロード: AI が雇用に与える影響と宇宙のデータセンター",
-      "link": "https://www.technologyreview.com/2026/04/07/1135208/the-download-ai-impact-jobs-data-centres-space/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The one piece of data that could&#160;actually she...",
-      "publishedDate": "Tue, 07 Apr 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/04/20240926__DSC7922_PA.jpg?w=3000",
-      "language": "en"
     },
     {
       "title": "東京都、中小企業の経営課題に応じて最適な支援策を提示するAI診断ツール「Mir-AIサーチ」リリース",
@@ -464,28 +508,6 @@
       "language": "ja"
     },
     {
-      "title": "Amazon Bedrockとは？100以上の生成AIモデルを利用できる！使い方や何ができるか徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/amazon-bedrock",
-      "description": "Amazon BedrockはAWSのサービスの一つで、様々な企業のAIモデルを手軽に利用できます。具体的には、高性能なClaudeシリーズやAmazon Novaシリーズ、OpenAI互換のオープンウェイトモデル（gp [...]...",
-      "publishedDate": "Sun, 05 Apr 2026 15:30:31 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/amazon-bedrock_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTの画像生成、もう試した？生成方法やクオリティ、無料でどこまでできるか解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chatgpt-image-generation/",
-      "description": "「ChatGPTで画像を作ってみたいけれど、難しそう」「無料プランでも本当に使えるの？」と疑問や不安を感じていませんか。ChatGPTの画像生成機能は無料プランからでも利用可能で、日常的な言葉（日本語）を入力するだけで誰 [...]...",
-      "publishedDate": "Sun, 05 Apr 2026 13:52:03 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-image-generation_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "AKOOLとは？AIで動画生成・顔交換ができるツールの使い方や料金を解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/akool/",
@@ -494,28 +516,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/akool_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "OpenAI API（ChatGPT API）とは！モデル・料金・Responses API対応の使い方を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/openai-api/",
-      "description": "外部のシステムにOpenAIの機能を連携させる際に使用する「OpenAI API」ですが、多くの種類が存在するため、その全容を理解しきれていない方も多いのではないでしょうか。 そこで今回は、現在提供されている「OpenA [...]...",
-      "publishedDate": "Mon, 06 Apr 2026 14:52:49 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/openai-api_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Dreamina Seedance 2.0とは？マルチモーダル動画生成AIの特徴と活用方法を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/dreamina-seedance-2-0/",
-      "description": "2026年2月、ByteDance傘下の研究組織「ByteDance Seed」から新たな動画生成モデル「Seedance 2.0」が公開されました。 その後、2026年3月にはCapCut上のクリエイタープラットフォー [...]...",
-      "publishedDate": "Mon, 06 Apr 2026 11:16:48 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Dreamina-Seedance-2.0-1024x576.webp",
       "language": "ja"
     },
     {
@@ -549,6 +549,39 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/TensorRT.png",
+      "language": "ja"
+    },
+    {
+      "title": "「AWS DevOps Agent」がAzureやオンプレミスのインシデント対応もサポート、正式提供開始",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/aws_devops_agentazure.html",
+      "description": "Amazon Web Services（AWS）は、AIエージェントがインシデントの防止や調査、解決を自律的に行う「AWS DevOps Agent」の正式提供開始を発表しました。 AWS DevOps Agentは、昨年（2025年）12......",
+      "publishedDate": "2026-04-08T15:42:31Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2025/aws-devops-agent-ann01.png",
+      "language": "ja"
+    },
+    {
+      "title": "Amazon S3がファイルシステムとしてアクセス可能になる「Amazon S3 Files」、AWSが提供開始",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/amazon_s3amazon_s3_filesaws.html",
+      "description": "Amazon Web Services（AWS）は、Amazon S3バケットをファイルシステムとしてアクセス可能にするAmazon S3の新機能「Amazon S3 Files」の提供開始を発表しました。 Amazon S3は事実上無制限......",
+      "publishedDate": "2026-04-08T15:38:36Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/amazons3files-ann.png",
+      "language": "ja"
+    },
+    {
+      "title": "Anthropic、世界的に重要なソフトウェアのセキュリティを守る「Project Glasswing」発表。AWS、Apple、Google、Linux財団など参画",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/anthropicproject_glasswingawsapplegooglelinux.html",
+      "description": "Anthropicは、同社が開発した最新のAIモデル「Claude Mythos Preview」によるソフトウェアの脆弱性発見能力を用いて世界的に重要なソフトウェアのセキュリティを守る取り組み「Project Glasswing」を発表し......",
+      "publishedDate": "2026-04-08T03:53:11Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/projectglasswing-launch.png",
       "language": "ja"
     },
     {
@@ -681,39 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/azureskillsplugin-la01.png",
-      "language": "ja"
-    },
-    {
-      "title": "AWS、Claude Codeにアーキテクチャ設計、コスト見積もり、構成コード生成、デプロイ実行などの能力を組み込む「Agent Plugins for AWS」公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/awsclaude_codeagent_plugins_for_aws.html",
-      "description": "Amazon Web Services（AWS）は、Claude CodeとCursorに対してAWSのデプロイに関するアーキテクチャの設計、コストの見積もり、Infrastructure as Codeのコード生成、そしてデプロイの実行と......",
-      "publishedDate": "2026-03-23T15:18:54Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/agentplugins4aws202602.png",
-      "language": "ja"
-    },
-    {
-      "title": "今年度（2026年）の国内IaaS/PaaSクラウド市場は約2兆4400億円、3年後の2029年には1.5倍の3兆7000億円前後に急成長。ITRが予測",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/2026iaaspaas24400320291537000itr.html",
-      "description": "調査会社のITRは、日本国内のIaaS/PaaSクラウド市場の予測を発表しました。 発表によると、2024年度のIaaS/PaaSクラウド市場の売り上げは前年度から18.6％増の1兆8551億8000万円。 同社は2024年度から2029年......",
-      "publishedDate": "2026-03-23T15:17:12Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/itr202603.png",
-      "language": "ja"
-    },
-    {
-      "title": "「Google AI Studio」がFirebaseのバックエンドとAntigravityのコーディングエージェントを搭載、プロンプトだけで高度なフルスタックアプリケーションを生成可能に",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/google_ai_studiofirebaseantigravity.html",
-      "description": "Googleは、Google AI Studioのバイブコーディング機能を強化し、 プロンプトで指示するだけで高度なフルスタックアプリケーションの開発が可能になったことを発表しました。 フル機能のマルチプレイヤーゲームのような高度なアプリケ......",
-      "publishedDate": "2026-03-22T16:04:27Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/googleaistudionew260303.png",
       "language": "ja"
     }
   ]
