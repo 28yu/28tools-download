@@ -3,7 +3,7 @@
   <!-- メインページ（ポータル） -->
   <url>
     <loc>https://28tools.com/</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,57 +11,17 @@
   <!-- アドインページ -->
   <url>
     <loc>https://28tools.com/addins.html</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- マニュアルページ - 符号ON/OFF -->
+  <!-- ハッチングパターン作成ツール -->
   <url>
-    <loc>https://28tools.com/manual/grid-bubble.html</loc>
-    <lastmod>2026-01-24</lastmod>
+    <loc>https://28tools.com/hatch.html</loc>
+    <lastmod>2026-04-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- マニュアルページ - シート一括作成 -->
-  <url>
-    <loc>https://28tools.com/manual/sheet-creation.html</loc>
-    <lastmod>2026-01-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- マニュアルページ - 3D視点コピペ -->
-  <url>
-    <loc>https://28tools.com/manual/view-copy.html</loc>
-    <lastmod>2026-01-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- マニュアルページ - 切断ボックスコピペ -->
-  <url>
-    <loc>https://28tools.com/manual/sectionbox-copy.html</loc>
-    <lastmod>2026-01-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- マニュアルページ - ビューポート位置コピペ -->
-  <url>
-    <loc>https://28tools.com/manual/viewport-position.html</loc>
-    <lastmod>2026-01-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- マニュアルページ - トリミング領域コピペ -->
-  <url>
-    <loc>https://28tools.com/manual/cropbox-copy.html</loc>
-    <lastmod>2026-01-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
   <!-- PDF比較ツール -->
@@ -72,11 +32,123 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- ファミリ -->
+  <url>
+    <loc>https://28tools.com/family.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- BIMニュース -->
+  <url>
+    <loc>https://28tools.com/news.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- AIニュース -->
   <url>
     <loc>https://28tools.com/ai-news.html</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-10</lastmod>
     <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - 符号ON/OFF -->
+  <url>
+    <loc>https://28tools.com/manual/grid-bubble.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - シート一括作成 -->
+  <url>
+    <loc>https://28tools.com/manual/sheet-creation.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - 3D視点コピペ -->
+  <url>
+    <loc>https://28tools.com/manual/view-copy.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - 切断ボックスコピペ -->
+  <url>
+    <loc>https://28tools.com/manual/sectionbox-copy.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - ビューポート位置コピペ -->
+  <url>
+    <loc>https://28tools.com/manual/viewport-position.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - トリミング領域コピペ -->
+  <url>
+    <loc>https://28tools.com/manual/cropbox-copy.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - Excelインポート -->
+  <url>
+    <loc>https://28tools.com/manual/excel-import.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - Excelエクスポート -->
+  <url>
+    <loc>https://28tools.com/manual/excel-export.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - 部屋タグ自動配置 -->
+  <url>
+    <loc>https://28tools.com/manual/room-tag.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - 梁天端色分け -->
+  <url>
+    <loc>https://28tools.com/manual/beam-top-color.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - 梁下端色分け -->
+  <url>
+    <loc>https://28tools.com/manual/beam-bottom-color.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - 塗潰し領域 分割・統合 -->
+  <url>
+    <loc>https://28tools.com/manual/filled-region.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
