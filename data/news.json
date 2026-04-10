@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-09T01:21:13.119228",
+  "lastUpdated": "2026-04-10T01:45:30.488916",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -42,16 +42,6 @@
       "language": "ja"
     },
     {
-      "title": "株式会社竹中土木が「Kencopa工程AIエージェント」のPoCを開始",
-      "link": "https://news.build-app.jp/article/40009/",
-      "description": "建設現場の省人化・自動化に挑む株式会社KENCOPA（本社：東京都渋谷区、代表取締役CEO：安村 荘佑、以下 KENCOPA）は、株式会社竹......",
-      "publishedDate": "Tue, 07 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/08/ht1lVpcka7yWzDz1661358045_1661358063-130x82.jpg",
-      "language": "ja"
-    },
-    {
       "title": "「LLM×世界モデル」という二つの異なるAIパラダイムの併存と現場実装の臨界点",
       "link": "https://news.build-app.jp/article/39594/",
       "description": "LLMモデルのAIは契約書を要約できるが、コンクリートの硬化速度は、LLM単体では予測しにくい。LLMモデルのAIは設計思想を読み解けるが、......",
@@ -59,6 +49,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260408_hirayama-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "株式会社竹中土木が「Kencopa工程AIエージェント」のPoCを開始",
+      "link": "https://news.build-app.jp/article/40009/",
+      "description": "建設現場の省人化・自動化に挑む株式会社KENCOPA（本社：東京都渋谷区、代表取締役CEO：安村 荘佑、以下 KENCOPA）は、株式会社竹......",
+      "publishedDate": "Tue, 07 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/08/ht1lVpcka7yWzDz1661358045_1661358063-130x82.jpg",
       "language": "ja"
     },
     {
@@ -82,33 +82,43 @@
       "language": "en"
     },
     {
-      "title": "建築ジャッキとは？種類一覧・使い方・安全対策を徹底解説【現場向け】",
-      "link": "https://news.build-app.jp/article/39978/",
-      "description": "建築現場で使われる「ジャッキ」は、重量物を支える重要な機材でありながら、正しい使い方や種類の違いを理解せずに扱うと、重大な事故につながるリス......",
-      "publishedDate": "Thu, 02 Apr 2026 22:00:00 +0000",
+      "title": "リバスタの建設技能者向けポイントサービス「ビルダーズポイント」が鹿島建設の全支店に導入",
+      "link": "https://news.build-app.jp/article/40070/",
+      "description": "株式会社リバスタ（本社：東京都江東区、代表取締役：高橋巧、以下 当社）は、当社が提供する建設技能者向けポイントサービス「ビルダーズポイント」......",
+      "publishedDate": "Thu, 09 Apr 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/5420c693192863a6d70ff27a1cf6292c-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/09/unDR9w2945ETEqC1662045710_1662045733-130x82.jpg",
       "language": "ja"
     },
     {
-      "title": "【モバイルBIM】建設DXを支援するChatBIM「ACIMUS」がモバイル対応",
-      "link": "https://news.build-app.jp/article/39939/",
-      "description": "3つのポイント 【モバイルBIM】&#160;スマートフォンやタブレットからも、BIMモデルの3D閲覧・編集・AI対話・パース生成が可能に。......",
-      "publishedDate": "Thu, 02 Apr 2026 22:00:00 +0000",
+      "title": "日建設計とソフトバンクが自律的に進化し続けるスマートビル構築を支援する会社を設立｜深堀り取材【毎月3回更新】",
+      "link": "https://news.build-app.jp/article/39924/",
+      "description": "日建設計とソフトバンクは、データを活用して自律的に進化し続けるスマートビル「Autonomous Building(オートノマスビルディング......",
+      "publishedDate": "Thu, 09 Apr 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/JWDgaGkHMwBiMyT1642682026-130x92.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/b38d30fabd60f694877f3a65e289ea4b-130x82.png",
       "language": "ja"
     },
     {
-      "title": "【イベント告知】「DfMAシンポジウムvol.2 －リア・ローディングからの脱却－」開催のご案内",
-      "link": "https://news.build-app.jp/article/39921/",
-      "description": "一般聴講可能・参加費無料(メディア取材も可能) ～2026年4月18日（土）13時開始、芝浦工業大学 豊洲キャンパス 交流棟 大講義室にて～......",
-      "publishedDate": "Thu, 02 Apr 2026 08:49:14 +0000",
+      "title": "The buildingSMART Implementers Assembly, February 2026 Event Report",
+      "link": "https://www.buildingsmart.org/the-buildingsmart-implementers-assembly-february-2026-event-report/",
+      "description": "The latest buildingSMART Implementers Assembly, hosted by Bentley in their Exton (PA) office, brought together the buildingSMART implementers community for two days of focused discussion and practical...",
+      "publishedDate": "Thu, 09 Apr 2026 11:11:07 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "2030年市場規模6.5兆円へ。衛星データが「建設DX」に貢献！ —CONSEOレポートが示す“衛星データ駆動型スマートシティ”",
+      "link": "https://news.build-app.jp/article/40034/",
+      "description": "※本記事の要約・構成にはAIを活用しており、最終的な監修・解説は編集部が担当しています。 日本の建設業界は今、物理的な「地上」の枠組みを超え......",
+      "publishedDate": "Thu, 09 Apr 2026 03:00:29 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/DfMA_Symposium_Vol2_20260418-130x64.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/06/aboutus-1024x576-1-130x73.jpg",
       "language": "ja"
     },
     {
@@ -236,16 +246,6 @@
       "link": "https://www.buildingsmart.org/alfred-waschl-resigned-from-the-board/",
       "description": "London, U.K. – February 27th, 2026 — buildingSMART International (bSI) announces that Alfred Waschl resigned from the Board of Directors on 29 January 2026. Due to ill health, Alfred previously steppe...",
       "publishedDate": "Fri, 27 Feb 2026 09:21:11 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The buildingSMART openBIM Awards 2025 – Winners Announced",
-      "link": "https://www.buildingsmart.org/the-buildingsmart-openbim-awards-2025-winners-announced/",
-      "description": "Berlin, Germany – September 25, 2025 The openBIM Awards 2025 concluded with a celebratory ceremony on Wednesday, 24 September, during the closing plenary of the buildingSMART International Summit – Be...",
-      "publishedDate": "Fri, 26 Sep 2025 13:18:09 +0000",
       "source": "buildingSMART International",
       "category": "bim",
       "thumbnail": null,
