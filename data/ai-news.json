@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-09T03:49:37.288223",
+  "lastUpdated": "2026-04-10T04:10:15.634210",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -190,7 +190,7 @@
     },
     {
       "title": "Falcon Perception",
-      "titleJa": "ファルコンの知覚",
+      "titleJa": "ファルコンの認識",
       "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
       "description": "...",
       "publishedDate": "Wed, 01 Apr 2026 07:13:20 GMT",
@@ -267,7 +267,7 @@
     },
     {
       "title": "TRL v1.0: Post-Training Library Built to Move with the Field",
-      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたトレーニング後のライブラリ",
+      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたポストトレーニング ライブラリ",
       "link": "https://huggingface.co/blog/trl-v1",
       "description": "...",
       "publishedDate": "Tue, 31 Mar 2026 00:00:00 GMT",
@@ -282,28 +282,6 @@
       "link": "https://openai.com/index/teen-safety-policies-gpt-oss-safeguard",
       "description": "OpenAI releases prompt-based teen safety policies for developers using gpt-oss-safeguard, helping moderate age-specific risks in AI systems....",
       "publishedDate": "Tue, 24 Mar 2026 11:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Update on the OpenAI Foundation",
-      "titleJa": "OpenAI Foundation に関する最新情報",
-      "link": "https://openai.com/index/update-on-the-openai-foundation",
-      "description": "The OpenAI Foundation announces plans to invest at least $1 billion in curing diseases, economic opportunity, AI resilience, and community programs....",
-      "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Powering product discovery in ChatGPT",
-      "titleJa": "ChatGPT での製品発見を強化する",
-      "link": "https://openai.com/index/powering-product-discovery-in-chatgpt",
-      "description": "ChatGPT introduces richer, visually immersive shopping powered by the Agentic Commerce Protocol, enabling product discovery, side-by-side comparisons, and merchant integration....",
-      "publishedDate": "Tue, 24 Mar 2026 09:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -333,7 +311,7 @@
     },
     {
       "title": "Bringing the power of Personal Intelligence to more people",
-      "titleJa": "パーソナルインテリジェンスのパワーをより多くの人に届ける",
+      "titleJa": "パーソナル インテリジェンスのパワーをより多くの人に届ける",
       "link": "https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion/",
       "description": "Bubble that says \"Personal Intelligence\" with Google G, Google Photos logo, and Gmail logo around it...",
       "publishedDate": "Tue, 17 Mar 2026 16:00:00 +0000",
@@ -351,17 +329,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/25367___BRS___Aspen_Security_Fo.max-600x600.format-webp_J9uPoFt.webp",
-      "language": "en"
-    },
-    {
-      "title": "Holotron-12B - High Throughput Computer Use Agent",
-      "titleJa": "Holotron-12B - 高スループットのコンピューター使用エージェント",
-      "link": "https://huggingface.co/blog/Hcompany/holotron-12b",
-      "description": "...",
-      "publishedDate": "Tue, 17 Mar 2026 12:33:39 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/682c3e22650f6bbe33bb9d94/ZrDLn6Wer5-TM_okKVmZ2.png",
       "language": "en"
     },
     {
@@ -387,6 +354,17 @@
       "language": "ja"
     },
     {
+      "title": "Desalination plants in the Middle East are increasingly vulnerable",
+      "titleJa": "中東の淡水化プラントはますます脆弱になっている",
+      "link": "https://www.technologyreview.com/2026/04/07/1135235/desalination-technology-water/",
+      "description": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. As the conflict in Ir...",
+      "publishedDate": "Tue, 07 Apr 2026 14:54:06 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/GettyImages-541061312.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
       "title": "生成AIで属人化を解消する方法5選！この人しかできない仕事をなくす！導入事例とロードマップも徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/personalization/",
@@ -409,6 +387,17 @@
       "language": "ja"
     },
     {
+      "title": "Enabling agent-first process redesign",
+      "titleJa": "エージェントファーストのプロセス再設計を可能にする",
+      "link": "https://www.technologyreview.com/2026/04/07/1134966/enabling-agent-first-process-redesign/",
+      "description": "Unlike static, rules-based systems, AI agents can learn, adapt, and optimize processes dynamically. As they interact with data, systems, people, and other agents in real time, AI agents can execute en...",
+      "publishedDate": "Tue, 07 Apr 2026 14:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/Deloitte-Landing-Page-Card.png?w=1200",
+      "language": "en"
+    },
+    {
       "title": "Claude Codeのコマンド一覧！便利でおすすめな使い方をまとめてみた！",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/claude-code-command-rist/",
@@ -420,15 +409,15 @@
       "language": "ja"
     },
     {
-      "title": "Claude Codeの活用事例10選！何ができるのか、何がすごいのかを徹底深掘り！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/claude-code-use-example/",
-      "description": "Claude Codeがなんとなくすごいのは理解できているものの、実際にどう活用したらよいかわからない方は多いのではないでしょうか。 実際、SNSでも「資料や記事作成を自動化している」「非エンジニアでも短時間でアプリを開 [...]...",
-      "publishedDate": "Tue, 07 Apr 2026 12:31:29 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-code-use-example2604-1024x576.webp",
-      "language": "ja"
+      "title": "The Download: AI’s impact on jobs, and data centres in space",
+      "titleJa": "ダウンロード: AI が雇用に与える影響と宇宙のデータセンター",
+      "link": "https://www.technologyreview.com/2026/04/07/1135208/the-download-ai-impact-jobs-data-centres-space/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The one piece of data that could&#160;actually she...",
+      "publishedDate": "Tue, 07 Apr 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/04/20240926__DSC7922_PA.jpg?w=3000",
+      "language": "en"
     },
     {
       "title": "東京都、中小企業の経営課題に応じて最適な支援策を提示するAI診断ツール「Mir-AIサーチ」リリース",
@@ -464,58 +453,47 @@
       "language": "ja"
     },
     {
-      "title": "JINS、「JINS AI」機能を拡張。ライフスタイルに最適なレンズを提案する新機能「レンズ診断」を搭載",
+      "title": "Muse Sparkとは？Metaが発表したパーソナル超知性AIの機能・性能・料金を徹底解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/jins-jins-ai-lens-recommend/",
-      "description": "JINSは、自社開発生成AI「JINS AI」の機能を拡張しました。ライフスタイルに最適なレンズを提案する新機能「レンズ診断」を搭載し、JINS銀座店で本格導入します。 このニュースのポイント JINS、「JINS AI [...] The post JINS、「JINS AI」機能を拡張。ライフスタイルに最適なレンズを提案する新機能「レンズ診断」を搭載 first appeared on AIポ...",
-      "publishedDate": "Thu, 02 Apr 2026 08:44:00 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/0331ainewsjins.png",
-      "language": "ja"
-    },
-    {
-      "title": "ジールス、Quickと共同で国内初の筑波大学附属病院におけるヒューマノイドロボットを用いた実証実験を実施",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/zeals-quick-unitreeg1-tukuba/",
-      "description": "ジールスは、筑波大学発ベンチャーのQuickと共同で、筑波大学附属病院においてヒューマノイドロボット「Unitree G1」を用いた実証実験を実施しました。 このニュースのポイント ジールス、Quickと共同し、筑波大学 [...] The post ジールス、Quickと共同で国内初の筑波大学附属病院におけるヒューマノイドロボットを用いた実証実験を実施 first appeared on AIポ...",
-      "publishedDate": "Thu, 02 Apr 2026 08:43:40 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0401ainews.png",
-      "language": "ja"
-    },
-    {
-      "title": "Figma Makeとは？料金・使い方・AIセキュリティ設定まで網羅【企業担当者向け】",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/figma-make-prompt-to-app/",
-      "description": "デザインのアイデアをテキストで入力するだけで、動くプロトタイプやWebアプリが自動生成されるツール。それが「Figma Make」です。デザイナーだけでなく、エンジニアや技術的な知識に乏しい業務担当者でも活用できる間口の [...] The post Figma Makeとは？料金・使い方・AIセキュリティ設定まで網羅【企業担当者向け】 first appeared on AIポータルメディアAI...",
-      "publishedDate": "Thu, 02 Apr 2026 08:36:40 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/FigmaMake.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "いよいよ開幕！AI導入の壁を突破する2日間 「AI博覧会 Spring 2026」体験と対話で掴むAI活用最前線",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai_expo_summer202608/",
-      "description": "～労働力不足を解決するフィジカルAIやハラスメント対策のAIツールまで100社が出展、 東京国際フォーラムにて4月7日・8日開催～ 国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、 [...] The post いよいよ開幕！AI導入の壁を突破する2日間 「AI博覧会 Spring 2026」体験と対話で掴むAI活用最前線 first appeared on...",
-      "publishedDate": "Thu, 02 Apr 2026 01:12:17 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/main.png",
-      "language": "ja"
-    },
-    {
-      "title": "AKOOLとは？AIで動画生成・顔交換ができるツールの使い方や料金を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/akool/",
-      "description": "自社製品を訴求するために目を引くようなコンテンツを作りたいと考えている企業は多いでしょう。 しかし、画像や動画編集スキルが必要だったり、外部に依頼すると高額な外注費がかかってしまうため、コンテンツ作成に着手できない企業は [...]...",
-      "publishedDate": "Mon, 06 Apr 2026 15:49:08 +0000",
+      "link": "https://weel.co.jp/media/tech/muse-spark/",
+      "description": "2026年4月、Metaから新たな次世代AIモデルが発表されました。 今回公開された「Muse Spark」は、テキスト・画像・音声を横断して扱うマルチモーダル推論モデルであり、個人単位での高度な知的支援、いわゆるパーソ [...]...",
+      "publishedDate": "Thu, 09 Apr 2026 12:55:05 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/akool_2604-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Muse-Spark-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "SB C&S、AI搭載の次世代型イヤホン「GLIDiC AI +u Buds」発表。会話の整理を自動化しAIがアドバイス",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/sbcs-glidic-ai-u-buds/",
+      "description": "SB C&#38;Sは、GLIDiC独自のAIを搭載した次世代型イヤホン「GLIDiC AI +u Buds」の発売にあたり、新製品発表会を開催しました。録音・文字起こし・要約に加え、AIによるアドバイス機能を搭載してい [...] The post SB C&S、AI搭載の次世代型イヤホン「GLIDiC AI +u Buds」発表。会話の整理を自動化しAIがアドバイス first appeare...",
+      "publishedDate": "Thu, 09 Apr 2026 09:21:46 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0407ainewssbeye.png",
+      "language": "ja"
+    },
+    {
+      "title": "野田市、「ノーコード宣言シティー」を発表。ノーコードと生成AIを組み合わせた、同プログラム史上初の宣言",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/nodacity-nocode-declarationcity/",
+      "description": "野田市は、市民サービスの向上実現や業務向上の推進に取り組むため「ノーコード宣言シティー」を発表しました。ノーコードと生成AIを組み合わせた、同プログラム史上初の宣言です。 このニュースのポイント 野田市、ノーコードと生成 [...] The post 野田市、「ノーコード宣言シティー」を発表。ノーコードと生成AIを組み合わせた、同プログラム史上初の宣言 first appeared on AIポー...",
+      "publishedDate": "Thu, 09 Apr 2026 05:24:27 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/nodashi-nocode.png",
+      "language": "ja"
+    },
+    {
+      "title": "【開催報告】「AI博覧会 Spring 2026」来場者数12,154名で過去最高を記録！フィジカルAIやAIエージェントへの関心が高まり、実導入に向けた熱気あふれる2日間に",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/aiexpo_spring_2026_report02/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年4月7日（火）・8日（水）の2日間、東京国際フォーラムにて「AI博覧会 Spring 2026」を開催しました。 2日間で [...] The post 【開催報告】「AI博覧会 Spring 2026」来場者数12,154名で過去最高を記録！フィジカルAIやAIエージェントへの関心が高まり、実導入に...",
+      "publishedDate": "Thu, 09 Apr 2026 03:34:27 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/aiexpo_spring_2026_report02_000.png",
       "language": "ja"
     },
     {
@@ -530,6 +508,39 @@
       "language": "ja"
     },
     {
+      "title": "Ask Geminiとは？Google Meetでの使い方と日本語対応を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ask-gemini-google-meet/",
+      "description": "Google Meetの会議中に「今何が話し合われているのか」「決まったことは何か」をリアルタイムで把握したいと思ったことはありませんか。 Ask Geminiは、Google Meetに搭載されたAI機能で、会議内容の [...] The post Ask Geminiとは？Google Meetでの使い方と日本語対応を解説 first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Fri, 10 Apr 2026 03:49:46 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/AskGemini.png",
+      "language": "ja"
+    },
+    {
+      "title": "【PixVerse R1】初のリアルタイムワールドモデル！革命的な動画生成が可能に！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/pixverse-r1/",
+      "description": "2026年1月14日に動画生成AIプラットフォームであるPixVerseから新モデルPixVerse R1が登場しました。 公式Xでは、「Video just became a world（動画が世界になった）」というキ [...]...",
+      "publishedDate": "Fri, 10 Apr 2026 02:33:15 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/01/AIモン_-PixVerse-R1-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "大阪市と株式会社日立製作所、AIエージェントによる自治体業務効率化を共同検証",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/osaka-hitachi-aiagent-verification/",
+      "description": "大阪市と日立製作所は、AIエージェントを活用した自治体業務の効率化に向けた実証を実施し、業務時間削減の可能性を確認しました。 このニュースのポイント 大阪市と日立製作所が、AIエージェントを活用した自治体業務効率化の共同 [...] The post 大阪市と株式会社日立製作所、AIエージェントによる自治体業務効率化を共同検証 first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Fri, 10 Apr 2026 01:27:26 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/osakahitachi.png",
+      "language": "ja"
+    },
+    {
       "title": "小中学生の生成AI使用に関する調査を実施。中学生の約半数が日常生活で使用、ツールは「ChatGPT」が最多",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/mitsumura-tosho-child-report5/",
@@ -538,17 +549,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0403ainewseye2.png",
-      "language": "ja"
-    },
-    {
-      "title": "TensorRTとは？使い方や高速化の仕組み、NVIDIA GPUでの活用を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/tensorrt-nvidia-gpu-sdk/",
-      "description": "AIモデルの推論速度に課題を感じている開発者の方に、NVIDIA TensorRTは強力な解決策を提供します。 この記事では、TensorRTの基本的な仕組みから実践的な使い方まで、体系的に解説していきます。 具体的には [...] The post TensorRTとは？使い方や高速化の仕組み、NVIDIA GPUでの活用を解説 first appeared on AIポータルメディアAIsmi...",
-      "publishedDate": "Fri, 03 Apr 2026 07:40:42 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/TensorRT.png",
       "language": "ja"
     },
     {
