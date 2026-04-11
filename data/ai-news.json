@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-10T04:10:15.634210",
+  "lastUpdated": "2026-04-11T03:38:03.069323",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -21,28 +21,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Lyria-3-Pro_thumbnail.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Inside our approach to the Model Spec",
-      "titleJa": "モデルスペックへのアプローチの内部",
-      "link": "https://openai.com/index/our-approach-to-the-model-spec",
-      "description": "Learn how OpenAI’s Model Spec serves as a public framework for model behavior, balancing safety, user freedom, and accountability as AI systems advance....",
-      "publishedDate": "Wed, 25 Mar 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Introducing the OpenAI Safety Bug Bounty program",
-      "titleJa": "OpenAI 安全バグ報奨金プログラムの紹介",
-      "link": "https://openai.com/index/safety-bug-bounty",
-      "description": "OpenAI launches a Safety Bug Bounty program to identify AI abuse and safety risks, including agentic vulnerabilities, prompt injection, and data exfiltration....",
-      "publishedDate": "Wed, 25 Mar 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -90,17 +68,6 @@
       "language": "ja"
     },
     {
-      "title": "The next phase of enterprise AI",
-      "titleJa": "エンタープライズ AI の次の段階",
-      "link": "https://openai.com/index/next-phase-of-enterprise-ai",
-      "description": "OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents....",
-      "publishedDate": "Wed, 08 Apr 2026 14:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "Mustafa Suleyman: AI development won’t hit a wall anytime soon—here’s why",
       "titleJa": "ムスタファ・スレイマン: AI 開発はすぐに壁にぶつかることはありません。その理由は次のとおりです。",
       "link": "https://www.technologyreview.com/2026/04/08/1135398/mustafa-suleyman-ai-future/",
@@ -131,17 +98,6 @@
       "source": "MIT Technology Review",
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/06/USWDS_SPREAD.jpg?w=3000",
-      "language": "en"
-    },
-    {
-      "title": "Introducing the Child Safety Blueprint",
-      "titleJa": "児童安全ブループリントの紹介",
-      "link": "https://openai.com/index/introducing-child-safety-blueprint",
-      "description": "Discover OpenAI’s Child Safety Blueprint—a roadmap for building AI responsibly with safeguards, age-appropriate design, and collaboration to protect and empower young people online....",
-      "publishedDate": "Wed, 08 Apr 2026 05:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -200,17 +156,6 @@
       "language": "en"
     },
     {
-      "title": "Gradient Labs gives every bank customer an AI account manager",
-      "titleJa": "Gradient Labs はすべての銀行顧客に AI アカウント マネージャーを提供します",
-      "link": "https://openai.com/index/gradient-labs",
-      "description": "Gradient Labs uses GPT-4.1 and GPT-5.4 mini and nano to power AI agents that automate banking support workflows with low latency and high reliability....",
-      "publishedDate": "Wed, 01 Apr 2026 02:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "Any Custom Frontend with Gradio's Backend",
       "titleJa": "Gradio のバックエンドを備えた任意のカスタム フロントエンド",
       "link": "https://huggingface.co/blog/introducing-gradio-server",
@@ -244,17 +189,6 @@
       "language": "en"
     },
     {
-      "title": "Accelerating the next phase of AI",
-      "titleJa": "AIの次のフェーズを加速する",
-      "link": "https://openai.com/index/accelerating-the-next-phase-ai",
-      "description": "OpenAI raises $122 billion in new funding to expand frontier AI globally, invest in next-generation compute, and meet growing demand for ChatGPT, Codex, and enterprise AI....",
-      "publishedDate": "Tue, 31 Mar 2026 13:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "Training mRNA Language Models Across 25 Species for $165",
       "titleJa": "25 種にわたる mRNA 言語モデルを 165 ドルでトレーニング",
       "link": "https://huggingface.co/blog/OpenMed/training-mrna-models-25-species",
@@ -274,17 +208,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/trl-v1/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Helping developers build safer AI experiences for teens",
-      "titleJa": "開発者による十代の若者向けのより安全な AI エクスペリエンスの構築を支援",
-      "link": "https://openai.com/index/teen-safety-policies-gpt-oss-safeguard",
-      "description": "OpenAI releases prompt-based teen safety policies for developers using gpt-oss-safeguard, helping moderate age-specific risks in AI systems....",
-      "publishedDate": "Tue, 24 Mar 2026 11:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -365,28 +288,6 @@
       "language": "en"
     },
     {
-      "title": "生成AIで属人化を解消する方法5選！この人しかできない仕事をなくす！導入事例とロードマップも徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/personalization/",
-      "description": "属人化とは、社内の特定の業務が一部の担当者に依存してしまっている状態のことです。属人化が続くと、担当者の退職や異動時に業務が停滞し、組織のナレッジ管理も進みません。 こうした属人化対策として注目されているのが、生成AIの [...]...",
-      "publishedDate": "Tue, 07 Apr 2026 14:51:25 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/personalization_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Google Antigravityとは？エージェント型IDEの使い方や機能、料金プランを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/google-antigravity/",
-      "description": "Google Antigravityは、Googleが2025年11月にリリースしたエージェント型のIDEです。今までのIDEが人間中心でコードを書く環境だったのに対し、Google Antigravityではエージェン [...]...",
-      "publishedDate": "Tue, 07 Apr 2026 14:13:24 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/google-antigravity_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Enabling agent-first process redesign",
       "titleJa": "エージェントファーストのプロセス再設計を可能にする",
       "link": "https://www.technologyreview.com/2026/04/07/1134966/enabling-agent-first-process-redesign/",
@@ -395,28 +296,6 @@
       "source": "MIT Technology Review",
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/Deloitte-Landing-Page-Card.png?w=1200",
-      "language": "en"
-    },
-    {
-      "title": "Claude Codeのコマンド一覧！便利でおすすめな使い方をまとめてみた！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/claude-code-command-rist/",
-      "description": "Claude Codeを使いこなしたいものの、コマンドの種類が多くて覚えられないと感じている方は多いのではないでしょうか？スラッシュコマンド・CLIコマンド・CLIフラグ・ショートカットなど似た言葉も多く、使い分けが曖昧 [...]...",
-      "publishedDate": "Tue, 07 Apr 2026 12:57:49 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-code-command-rist_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "The Download: AI’s impact on jobs, and data centres in space",
-      "titleJa": "ダウンロード: AI が雇用に与える影響と宇宙のデータセンター",
-      "link": "https://www.technologyreview.com/2026/04/07/1135208/the-download-ai-impact-jobs-data-centres-space/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The one piece of data that could&#160;actually she...",
-      "publishedDate": "Tue, 07 Apr 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/04/20240926__DSC7922_PA.jpg?w=3000",
       "language": "en"
     },
     {
@@ -442,15 +321,59 @@
       "language": "ja"
     },
     {
-      "title": "【開催速報】「AI博覧会 Spring 2026」本日開幕！フィジカルAI・ロボットゾーン新設、最先端AIが集結",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aiexpo_spring_2026_report01/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年4月7日（火）・8日（水）の2日間、東京国際フォーラムにて「AI博覧会 Spring 2026」を開催しております。 開幕 [...] The post 【開催速報】「AI博覧会 Spring 2026」本日開幕！フィジカルAI・ロボットゾーン新設、最先端AIが集結 first appeared on...",
-      "publishedDate": "Tue, 07 Apr 2026 04:58:12 +0000",
-      "source": "AIsmiley",
+      "title": "Watch James Manyika talk AI and creativity with LL COOL J.",
+      "titleJa": "James Manyika が LL COOL J と AI と創造性について語る様子をご覧ください。",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/ll-cool-j-dialogues/",
+      "description": "In the latest episode of our Dialogues on Technology and Society series, LL COOL J sits down with James Manyika....",
+      "publishedDate": "Thu, 26 Mar 2026 17:00:00 +0000",
+      "source": "Google AI Blog",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/image_2026_4_71.png",
-      "language": "ja"
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Approved_thumbnail_with_logo.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Transform your headphones into a live personal translator on iOS.",
+      "titleJa": "ヘッドフォンを iOS 上のライブ個人翻訳者に変身させます。",
+      "link": "https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones/",
+      "description": "Google Translate’s Live translate with headphones is officially arriving on iOS! And we're expanding the capability for both iOS and Android users to even more countries…...",
+      "publishedDate": "Thu, 26 Mar 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Static-InterstitialscreenJapane.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+      "titleJa": "Gemini 3.1 Flash Live: オーディオ AI をより自然で信頼性の高いものに",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
+      "description": "The Gemini emblem sits next to text reading 'Gemini 3.1 Flash Live'. The background has blue, multicolored dots making up a microphone icon...",
+      "publishedDate": "Thu, 26 Mar 2026 15:21:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3.1-flash-live_blog_head.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Search Live is expanding globally",
+      "titleJa": "Search Live は世界的に拡大しています",
+      "link": "https://blog.google/products-and-platforms/products/search/search-live-global-expansion/",
+      "description": "A graphic with the words Search Live shown underneath a waveform icon. To the right, a phone shows the Google app with Search Live open. The camera is pointing at trees in a forest....",
+      "publishedDate": "Thu, 26 Mar 2026 15:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Live_blog_header.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "How AI is helping improve heart health in rural Australia",
+      "titleJa": "AI がオーストラリアの田舎の心臓の健康改善にどのように貢献しているか",
+      "link": "https://blog.google/innovation-and-ai/technology/health/google-ai-heart-health-australia/",
+      "description": "A doctor is sitting across a desk from a patient. The doctor is holding a tablet and a pen. Medical charts renderings are in the background....",
+      "publishedDate": "Thu, 12 Mar 2026 15:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIHealth_v2_2096x1182_02.max-600x600.format-webp.webp",
+      "language": "en"
     },
     {
       "title": "Muse Sparkとは？Metaが発表したパーソナル超知性AIの機能・性能・料金を徹底解説",
@@ -462,6 +385,39 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Muse-Spark-1024x576.webp",
       "language": "ja"
+    },
+    {
+      "title": "The Download: AstroTurf wars and exponential AI growth",
+      "titleJa": "ダウンロード: AstroTurf 戦争と AI の急激な成長",
+      "link": "https://www.technologyreview.com/2026/04/09/1135514/the-download-astroturf-wars-exponential-ai-growth-desalination-numbers/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Is&#160;fake&#160;grass&#160;a&#160;bad&#160;idea?...",
+      "publishedDate": "Thu, 09 Apr 2026 12:25:10 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/02/0511013_01.jpg?w=2947",
+      "language": "en"
+    },
+    {
+      "title": "Is fake grass a bad idea? The AstroTurf wars are far from over.",
+      "titleJa": "人工芝は悪いアイデアですか？アストロターフ戦争はまだ終わっていない。",
+      "link": "https://www.technologyreview.com/2026/04/09/1135092/astroturf-fake-grass-artificial-heated-debates/",
+      "description": "A rare warm spell in January melted enough snow to uncover Cornell University’s newest athletic field, built for field hockey. Months before, it was a meadow teeming with birds and bugs; now it’s more...",
+      "publishedDate": "Thu, 09 Apr 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/AP23278453062506.jpg?w=2902",
+      "language": "en"
+    },
+    {
+      "title": "Desalination technology, by the numbers",
+      "titleJa": "数字で見る淡水化技術",
+      "link": "https://www.technologyreview.com/2026/04/09/1135495/desalination-technology-numbers/",
+      "description": "When I started digging into desalination technology for a new story, I couldn’t help but obsess over the numbers. I’d known on some level that desalination—pulling salt out of seawater to produce fres...",
+      "publishedDate": "Thu, 09 Apr 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/GettyImages-1847254814.jpg?resize=1200,600",
+      "language": "en"
     },
     {
       "title": "SB C&S、AI搭載の次世代型イヤホン「GLIDiC AI +u Buds」発表。会話の整理を自動化しAIがアドバイス",
@@ -497,14 +453,69 @@
       "language": "ja"
     },
     {
-      "title": "アイスマイリー、4/14（火）から3日間「AI World 2026 春 名古屋」に出展　ブース予約でAmazonギフト1,500円分プレゼント！",
+      "title": "Claude Managed Agentsとは？AIエージェント開発を10倍速にする新サービスを徹底解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-world-2026-spring-nagoya/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年4月14日（火）～16日（木）にポートメッセなごやにて開催される「AI World 2026 春 名古屋」にブース出展をし [...] The post アイスマイリー、4/14（火）から3日間「AI World 2026 春 名古屋」に出展 ブース予約でAmazonギフト1,500円分プレゼント！ ...",
-      "publishedDate": "Mon, 06 Apr 2026 01:00:57 +0000",
+      "link": "https://weel.co.jp/media/tech/claude-managed-agents/",
+      "description": "2026年4月9日、Anthropicが新サービス「Claude Managed Agents」をパブリックベータとして公開しました！ これは、AIエージェントの構築から本番デプロイまでを一気通貫で支援するクラウドホステ [...]...",
+      "publishedDate": "Sat, 11 Apr 2026 01:28:54 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Managed-Agents-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Firebase Studio】GoogleのAIプラットフォーム！使い方や料金、サポート終了についても解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/firebase-studio/",
+      "description": "Firebase Studioは、Googleが提供するクラウドベースのエージェント開発環境で、自然言語の指示だけでWebアプリを自動生成できるツールです。 「Firebase Studioって何ができるの？」「無料でど [...]...",
+      "publishedDate": "Fri, 10 Apr 2026 15:06:06 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/04/firebase-studio-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Kiro】AWS発のAI IDEの料金・使い方・競合比較まで徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/kiro/",
+      "description": "2025年7月14日、AWSからAIエージェント搭載のIDEが公開されました！ 新たに公開された「Kiro」はコード補完に留まらず、要件定義から設計・実装・テスト・デプロイまでをAIエージェントと共に進めることが可能。 [...]...",
+      "publishedDate": "Fri, 10 Apr 2026 14:19:49 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/07/kiro_2507-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Ask Mapsとは？使い方・日本上陸時期・AIの活用法を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ask-maps-google-map/",
+      "description": "Googleマップに会話型AI機能「Ask Maps」が登場し、場所探しが大きく変わろうとしています。 この記事では、Ask Mapsの仕組みや使い方、日本での提供時期を解説します。 従来のキーワード検索では見つけにくか [...] The post Ask Mapsとは？使い方・日本上陸時期・AIの活用法を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 10 Apr 2026 05:57:53 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/OGP_EXPO24_AI.jpg",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/AskMaps.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI、1,220億ドルの資金調達を完了。複数機能を統合したAIスーパーアプリの構築を目指す",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-122-billion-raise/",
+      "description": "OpenAIは、1,220億ドルの資金調達を完了しました。AIシステムへの需要の急成長と多様化に対応し、複数機能を統合したAIスーパーアプリの構築を目指します。 このニュースのポイント OpenAI、1,220億ドルの資 [...] The post OpenAI、1,220億ドルの資金調達を完了。複数機能を統合したAIスーパーアプリの構築を目指す first appeared on AIポータル...",
+      "publishedDate": "Fri, 10 Apr 2026 05:42:49 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0407ainewsopenai.png",
+      "language": "ja"
+    },
+    {
+      "title": "日本初となる非接触型の牛の起立困難予防声かけAIサービス「BUJIDAS」、近江牛を飼育する岡喜牧場が導入",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ntt-bellsystem-omibeef/",
+      "description": "近江牛を厳選飼育する岡喜牧場は、牛の起立困難予防声かけサービス「BUJIDAS」を導入しました。同サービスは、NTTテクノクロスとベルシステム24が共同で提供するものです。 このニュースのポイント 近江牛を厳選飼育する岡 [...] The post 日本初となる非接触型の牛の起立困難予防声かけAIサービス「BUJIDAS」、近江牛を飼育する岡喜牧場が導入 first appeared on AI...",
+      "publishedDate": "Fri, 10 Apr 2026 04:50:56 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0407ainewseyebeef.png",
       "language": "ja"
     },
     {
@@ -538,17 +549,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/osakahitachi.png",
-      "language": "ja"
-    },
-    {
-      "title": "小中学生の生成AI使用に関する調査を実施。中学生の約半数が日常生活で使用、ツールは「ChatGPT」が最多",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/mitsumura-tosho-child-report5/",
-      "description": "光村図書出版は、小・中学生を対象に、第5回子どもの「好き」に関するアンケート調査を実施しました。「生成AIの使用」がテーマで、使用状況や目的、考え方に関する傾向が示されました。 このニュースのポイント 小・中学生を対象に [...] The post 小中学生の生成AI使用に関する調査を実施。中学生の約半数が日常生活で使用、ツールは「ChatGPT」が最多 first appeared on AI...",
-      "publishedDate": "Fri, 03 Apr 2026 09:20:41 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0403ainewseye2.png",
       "language": "ja"
     },
     {
