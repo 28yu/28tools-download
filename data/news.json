@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-11T01:24:25.455637",
+  "lastUpdated": "2026-04-12T01:48:10.806486",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -192,6 +192,16 @@
       "language": "ja"
     },
     {
+      "title": "排気ゼロ・充電2時間——ボルボCEの「A40 Electric」が建設機械の常識を塗り替える",
+      "link": "https://axconstdx.com/2026/04/11/%e6%8e%92%e6%b0%97%e3%82%bc%e3%83%ad%e3%83%bb%e5%85%85%e9%9b%bb2%e6%99%82%e9%96%93-%e3%83%9c%e3%83%ab%e3%83%9cce%e3%81%ae%e3%80%8ca40-electric%e3%80%8d%e3%81%8c%e5%bb%ba%e8%a8%ad/?utm_source=rss&utm_medium=rss&utm_campaign=%25e6%258e%2592%25e6%25b0%2597%25e3%2582%25bc%25e3%2583%25ad%25e3%2583%25bb%25e5%2585%2585%25e9%259b%25bb2%25e6%2599%2582%25e9%2596%2593-%25e3%2583%259c%25e3%2583%25ab%25e3%2583%259cce%25e3%2581%25ae%25e3%2580%258ca40-electric%25e3%2580%258d%25e3%2581%258c%25e5%25bb%25ba%25e8%25a8%25ad",
+      "description": "ディーゼルエンジンの轟音が響く建設現場——その風景が、今まさに大きく塗り替えられようとしています。「電動化はまだ先の話」と思っていた方ほど、この記事を読んでほしいと思います。世界初の電動ダンプ量産がもたらす変革の全貌と、 [...] <p>The post 排気ゼロ・充電2時間——ボルボCEの「A40 Electric」が建設機械の常識を塗り替える first appeared on 生成AIと建...",
+      "publishedDate": "Sat, 11 Apr 2026 04:24:49 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/04/wp_eyecatch_truck_1200x630_under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
       "title": "Claude Codeの制限、もう怖くない！公式推奨4つの節約術",
       "link": "https://axconstdx.com/2026/04/04/claude-code%e3%81%ae%e5%88%b6%e9%99%90%e3%80%81%e3%82%82%e3%81%86%e6%80%96%e3%81%8f%e3%81%aa%e3%81%84%ef%bc%81%e5%85%ac%e5%bc%8f%e6%8e%a8%e5%a5%a84%e3%81%a4%e3%81%ae%e7%af%80%e7%b4%84%e8%a1%93/?utm_source=rss&utm_medium=rss&utm_campaign=claude-code%25e3%2581%25ae%25e5%2588%25b6%25e9%2599%2590%25e3%2580%2581%25e3%2582%2582%25e3%2581%2586%25e6%2580%2596%25e3%2581%258f%25e3%2581%25aa%25e3%2581%2584%25ef%25bc%2581%25e5%2585%25ac%25e5%25bc%258f%25e6%258e%25a8%25e5%25a5%25a84%25e3%2581%25a4%25e3%2581%25ae%25e7%25af%2580%25e7%25b4%2584%25e8%25a1%2593",
       "description": "作業の途中で突然止まる、あの焦りと不満を感じたことはないでしょうか。「昨日は大丈夫だったのに」と首をかしげた経験がある方も多いはずです。実はこの現象、バグではなく仕様変更が原因です。正しく理解して設定を見直すだけで、制限 [...] <p>The post Claude Codeの制限、もう怖くない！公式推奨4つの節約術 first appeared on 生成AIと建設DX.</p>...",
@@ -270,16 +280,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "AIに仕事を奪われる前に知るべきCursor×バイブコーディングの破壊力",
-      "link": "https://axconstdx.com/2026/03/13/ai%e3%81%ab%e4%bb%95%e4%ba%8b%e3%82%92%e5%a5%aa%e3%82%8f%e3%82%8c%e3%82%8b%e5%89%8d%e3%81%ab%e7%9f%a5%e3%82%8b%e3%81%b9%e3%81%8dcursorx%e3%83%90%e3%82%a4%e3%83%96%e3%82%b3%e3%83%bc%e3%83%87/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e3%2581%25ab%25e4%25bb%2595%25e4%25ba%258b%25e3%2582%2592%25e5%25a5%25aa%25e3%2582%258f%25e3%2582%258c%25e3%2582%258b%25e5%2589%258d%25e3%2581%25ab%25e7%259f%25a5%25e3%2582%258b%25e3%2581%25b9%25e3%2581%258dcursorx%25e3%2583%2590%25e3%2582%25a4%25e3%2583%2596%25e3%2582%25b3%25e3%2583%25bc%25e3%2583%2587",
-      "description": "AIの波は、もう「来る」ではなく「来ている」。気づけばチームの空気が変わり、使いこなせる人とそうでない人の差が静かに広がっています。この記事を読めば、Cursorとバイブコーディングの本質と、あなたが今日から動き出すため [...] <p>The post AIに仕事を奪われる前に知るべきCursor×バイブコーディングの破壊力 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Fri, 13 Mar 2026 13:17:19 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/wp_eyecatch_1200x630-1-1024x538.jpg",
-      "language": "ja"
     },
     {
       "title": "openBIM Practitioner Certification enters full-scale implementation across Chapters",
