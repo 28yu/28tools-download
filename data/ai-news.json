@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-11T03:38:03.069323",
+  "lastUpdated": "2026-04-12T04:12:18.426490",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -146,7 +146,7 @@
     },
     {
       "title": "Falcon Perception",
-      "titleJa": "ファルコンの認識",
+      "titleJa": "ファルコンの知覚",
       "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
       "description": "...",
       "publishedDate": "Wed, 01 Apr 2026 07:13:20 GMT",
@@ -201,7 +201,7 @@
     },
     {
       "title": "TRL v1.0: Post-Training Library Built to Move with the Field",
-      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたポストトレーニング ライブラリ",
+      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたトレーニング後のライブラリ",
       "link": "https://huggingface.co/blog/trl-v1",
       "description": "...",
       "publishedDate": "Tue, 31 Mar 2026 00:00:00 GMT",
@@ -234,7 +234,7 @@
     },
     {
       "title": "Bringing the power of Personal Intelligence to more people",
-      "titleJa": "パーソナル インテリジェンスのパワーをより多くの人に届ける",
+      "titleJa": "パーソナルインテリジェンスのパワーをより多くの人に届ける",
       "link": "https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion/",
       "description": "Bubble that says \"Personal Intelligence\" with Google G, Google Photos logo, and Gmail logo around it...",
       "publishedDate": "Tue, 17 Mar 2026 16:00:00 +0000",
@@ -256,7 +256,7 @@
     },
     {
       "title": "Gemini in Google Sheets just achieved state-of-the-art performance.",
-      "titleJa": "Google Sheets の Gemini は最先端のパフォーマンスを達成しました。",
+      "titleJa": "Google スプレッドシートの Gemini は最先端のパフォーマンスを達成しました。",
       "link": "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art/",
       "description": "Today we announced new beta features for Gemini in Sheets to help you create, organize and edit entire sheets, from basic tasks to complex data analysis — just describe …...",
       "publishedDate": "Tue, 10 Mar 2026 13:00:00 +0000",
