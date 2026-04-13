@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-12T04:12:18.426490",
+  "lastUpdated": "2026-04-13T04:22:48.999406",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -24,28 +24,6 @@
       "language": "en"
     },
     {
-      "title": "LangChainとは？料金・実装例までいま知るべきポイント総まとめ！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/langchain-is/",
-      "description": "皆さんは、LangChainというライブラリをご存知でしょうか？ LangChainを使うことで、ChatGPTやClaude3といった生成AIの機能を高め、より実用的に使えるようになるのです。現代において生成AIは、プ [...]...",
-      "publishedDate": "Wed, 08 Apr 2026 15:43:14 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/01/AIモン_LangChain-1-1024x576.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "DALL-E 3とは？使い方・日本語対応・プロンプトのコツまでやさしく解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/dall-e3/",
-      "description": "皆さんはDALL-E 3をご存じですか？ 2023年9月21日にOpenAI社から発表された最新の画像生成AIで、ChatGPTを使って画像を生成することができるんです！従来のものから大幅に性能が向上しており、プロンプト [...]...",
-      "publishedDate": "Wed, 08 Apr 2026 15:03:25 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/01/AIモン_DALL・E3-1024x576.jpg",
-      "language": "ja"
-    },
-    {
       "title": "ALTK‑Evolve: On‑the‑Job Learning for AI Agents",
       "titleJa": "ALTK‑Evolve: AI エージェントのための現場学習",
       "link": "https://huggingface.co/blog/ibm-research/altk-evolve",
@@ -57,17 +35,6 @@
       "language": "en"
     },
     {
-      "title": "ローカルAIとは？知らないと情シス失格！？クラウドAIとの違いと導入判断のポイントを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/local-ai/",
-      "description": "クラウドAIは便利な一方で、「社内データを外に出して大丈夫か」「使うほど料金が増えないか」と不安を感じる人も増えています。利用量や用途によっては、継続的なコストが想定以上に膨らむケースがあります。 そこで注目されているの [...]...",
-      "publishedDate": "Wed, 08 Apr 2026 14:02:05 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Local-AI_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Mustafa Suleyman: AI development won’t hit a wall anytime soon—here’s why",
       "titleJa": "ムスタファ・スレイマン: AI 開発はすぐに壁にぶつかることはありません。その理由は次のとおりです。",
       "link": "https://www.technologyreview.com/2026/04/08/1135398/mustafa-suleyman-ai-future/",
@@ -77,17 +44,6 @@
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/Final-Header_Suleyman.png?resize=1200,600",
       "language": "en"
-    },
-    {
-      "title": "Claude Mythos Previewとは？Anthropic最強AIの能力・安全性・Project Glasswingを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-mythos-preview/",
-      "description": "Anthropicが2026年4月に新たなLLMについて発表をしました！ 今回発表された「Claude Mythos Preview」は、従来の大規模言語モデルの枠を超え、特にサイバーセキュリティ領域において飛躍的な能力 [...]...",
-      "publishedDate": "Wed, 08 Apr 2026 13:05:39 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Mythos-Preview-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "The Download: water threats in Iran and AI’s impact on what entrepreneurs make",
@@ -201,7 +157,7 @@
     },
     {
       "title": "TRL v1.0: Post-Training Library Built to Move with the Field",
-      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたトレーニング後のライブラリ",
+      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたポストトレーニング ライブラリ",
       "link": "https://huggingface.co/blog/trl-v1",
       "description": "...",
       "publishedDate": "Tue, 31 Mar 2026 00:00:00 GMT",
@@ -266,17 +222,6 @@
       "language": "en"
     },
     {
-      "title": "Grok Imagine APIとは？xAI発の高品質・低レイテンシな動画生成APIを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/grok-imagine-api/",
-      "description": "2026年1月、xAIから新たな動画生成API「Grok Imagine API」が公開されました。 Grok Imagine APIは、テキストや静止画を入力として、高品質な動画生成や動画編集を行えるAPIです。広告ク [...]...",
-      "publishedDate": "Tue, 07 Apr 2026 15:37:29 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/02/AIモン_-Grok-Imagine-API-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Desalination plants in the Middle East are increasingly vulnerable",
       "titleJa": "中東の淡水化プラントはますます脆弱になっている",
       "link": "https://www.technologyreview.com/2026/04/07/1135235/desalination-technology-water/",
@@ -297,28 +242,6 @@
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/Deloitte-Landing-Page-Card.png?w=1200",
       "language": "en"
-    },
-    {
-      "title": "東京都、中小企業の経営課題に応じて最適な支援策を提示するAI診断ツール「Mir-AIサーチ」リリース",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/tokyoto-mir-ai-search-recommend/",
-      "description": "東京都は、中小企業が抱える経営課題に応じた支援策をWeb上で診断できるAI診断ツール「Mir-AI（ミライ）サーチ」をリリースしました。AIが経営課題を整理し、最適な支援策を提示します。 このニュースのポイント 東京都、 [...] The post 東京都、中小企業の経営課題に応じて最適な支援策を提示するAI診断ツール「Mir-AIサーチ」リリース first appeared on AIポータ...",
-      "publishedDate": "Tue, 07 Apr 2026 05:55:03 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0406tokyoto.png",
-      "language": "ja"
-    },
-    {
-      "title": "パーソルキャリア運営「doda」、AI活用実態と人材戦略に関する調査結果の第1弾「求める人材の変化編」発表",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/persol-doda-ai-202602report01/",
-      "description": "パーソルキャリアが運営する「doda」は、AI活用実態と人材戦略に関する調査結果の第1弾「求める人材の変化編」を発表しました。採用したい職種や人材の方向性に関する変化が明らかになりました。 このニュースのポイント パーソ [...] The post パーソルキャリア運営「doda」、AI活用実態と人材戦略に関する調査結果の第1弾「求める人材の変化編」発表 first appeared on AI...",
-      "publishedDate": "Tue, 07 Apr 2026 05:37:42 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0403ainews02.png",
-      "language": "ja"
     },
     {
       "title": "Watch James Manyika talk AI and creativity with LL COOL J.",
@@ -374,17 +297,6 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIHealth_v2_2096x1182_02.max-600x600.format-webp.webp",
       "language": "en"
-    },
-    {
-      "title": "Muse Sparkとは？Metaが発表したパーソナル超知性AIの機能・性能・料金を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/muse-spark/",
-      "description": "2026年4月、Metaから新たな次世代AIモデルが発表されました。 今回公開された「Muse Spark」は、テキスト・画像・音声を横断して扱うマルチモーダル推論モデルであり、個人単位での高度な知的支援、いわゆるパーソ [...]...",
-      "publishedDate": "Thu, 09 Apr 2026 12:55:05 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Muse-Spark-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "The Download: AstroTurf wars and exponential AI growth",
@@ -453,36 +365,25 @@
       "language": "ja"
     },
     {
-      "title": "Claude Managed Agentsとは？AIエージェント開発を10倍速にする新サービスを徹底解説",
+      "title": "Microsoft Copilotの使い方とは？無料版・有料版の違いから部門別活用術まで紹介",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-managed-agents/",
-      "description": "2026年4月9日、Anthropicが新サービス「Claude Managed Agents」をパブリックベータとして公開しました！ これは、AIエージェントの構築から本番デプロイまでを一気通貫で支援するクラウドホステ [...]...",
-      "publishedDate": "Sat, 11 Apr 2026 01:28:54 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Managed-Agents-1024x576.webp",
+      "link": "https://aismiley.co.jp/ai_news/microsoft-copilot-edition-paid/",
+      "description": "「自分で使ってみたら便利だった。でも、会社全体に広げるには何が必要なのか分からない」 Microsoft Copilotに関心を持ち始めた企業担当者の方から、こうした声を聞くことが増えています。 本記事では、Copilo [...] The post Microsoft Copilotの使い方とは？無料版・有料版の違いから部門別活用術まで紹介 first appeared on AIポータルメディ...",
+      "publishedDate": "Mon, 13 Apr 2026 02:15:18 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/MicrosoftCopilot.jpg",
       "language": "ja"
     },
     {
-      "title": "【Firebase Studio】GoogleのAIプラットフォーム！使い方や料金、サポート終了についても解説",
+      "title": "ChatGPTプロンプトの教科書｜精度の高い書き方とコツを解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/firebase-studio/",
-      "description": "Firebase Studioは、Googleが提供するクラウドベースのエージェント開発環境で、自然言語の指示だけでWebアプリを自動生成できるツールです。 「Firebase Studioって何ができるの？」「無料でど [...]...",
-      "publishedDate": "Fri, 10 Apr 2026 15:06:06 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/04/firebase-studio-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Kiro】AWS発のAI IDEの料金・使い方・競合比較まで徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/kiro/",
-      "description": "2025年7月14日、AWSからAIエージェント搭載のIDEが公開されました！ 新たに公開された「Kiro」はコード補完に留まらず、要件定義から設計・実装・テスト・デプロイまでをAIエージェントと共に進めることが可能。 [...]...",
-      "publishedDate": "Fri, 10 Apr 2026 14:19:49 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/07/kiro_2507-1024x576.webp",
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-prompt/",
+      "description": "「何度指示を出し直しても、結局自分で書いた方が早い…」「AIを使いこなしている同僚と、自分は何が違うのか？」──ChatGPTを業務に取り入れたものの、期待外れの回答ばかりでストレスを抱えていませんか？ 実は、AIから質 [...] The post ChatGPTプロンプトの教科書｜精度の高い書き方とコツを解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 13 Apr 2026 01:18:51 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/02/prompt.png",
       "language": "ja"
     },
     {
@@ -530,17 +431,6 @@
       "language": "ja"
     },
     {
-      "title": "【PixVerse R1】初のリアルタイムワールドモデル！革命的な動画生成が可能に！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/pixverse-r1/",
-      "description": "2026年1月14日に動画生成AIプラットフォームであるPixVerseから新モデルPixVerse R1が登場しました。 公式Xでは、「Video just became a world（動画が世界になった）」というキ [...]...",
-      "publishedDate": "Fri, 10 Apr 2026 02:33:15 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/01/AIモン_-PixVerse-R1-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "大阪市と株式会社日立製作所、AIエージェントによる自治体業務効率化を共同検証",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/osaka-hitachi-aiagent-verification/",
@@ -549,6 +439,28 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/osakahitachi.png",
+      "language": "ja"
+    },
+    {
+      "title": "Bun、コマンドラインからヘッドレスブラウザの操作を行える新機能「Headless Browser Automation」搭載",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/bunheadless_brwoser_automation.html",
+      "description": "オープンソースで開発されているJavaScriptランタイムの「Bun」の最新版となる「Bun v1.3.12」で、コマンドラインからヘッドレスブラウザの操作を行える新機能が実装されました。BunのAPIを呼び出して利用することも可能です。......",
+      "publishedDate": "2026-04-12T15:32:58Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/bun-headlessbrowserautomation01.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "マイクロソフト、ローカルAI環境をインストーラで配布できる「Foundry Local」正式リリース。MacやLinuxにも対応",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/aifoundry_localmaclinux.html",
+      "description": "マイクロソフトは、アプリケーションにバンドルしてインストーラで配布できるコンパクトなローカルAI環境「Foundry Local」の正式リリースを発表しました。 開発者はアプリケーションにFoundry LocalのAI環境をバンドルしてイ......",
+      "publishedDate": "2026-04-12T15:28:44Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/foundrylocal-ga01.png",
       "language": "ja"
     },
     {
@@ -692,28 +604,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/WZ5NBFmd.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "1Passwordが人間とAIエージェントのアイデンティティを統一管理する「Unified Access 」発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/1passwordaiunified_access.html",
-      "description": "パスワードマネージャ「1Password」を提供している1Password社は、IDとパスワードやパスキーを用いた人間のアイデンティティだけでなく、AIエージェントが用いるシークレットなどの管理も1Passwordに統合することで、人間とA......",
-      "publishedDate": "2026-03-25T17:58:21Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/1password-unifiedaccess-ann01.png",
-      "language": "ja"
-    },
-    {
-      "title": "マイクロソフト、Claude CodeやGitHub Copilotに「このアプリをデプロイせよ」と指示すればAIが最適なインフラ構成やサービスでデプロイしてくれる「Azure Skills Plugin」公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/claude_codegithub_copilotaiazure_skills_plugin.html",
-      "description": "AWSがClaude Codeに、アプリケーションの内容に応じて自動的に適切なインフラを構成してデプロイできる能力を与える「Agent Plugins for AWS」をリリースしたのと同様に、マイクロソフトもClaude CodeやGit......",
-      "publishedDate": "2026-03-24T15:34:04Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/azureskillsplugin-la01.png",
       "language": "ja"
     }
   ]
