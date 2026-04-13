@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-12T01:48:10.806486",
+  "lastUpdated": "2026-04-13T01:52:47.134506",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -162,6 +162,16 @@
       "language": "ja"
     },
     {
+      "title": "【ヴィガラクス】「無補給・通信完備」の前線基地が稼働。「電力BASE（PHB）」を提供開始",
+      "link": "https://news.build-app.jp/article/40072/",
+      "description": "2026年4月7日 ヴィガラクス株式会社 ヴィガラクス株式会社（以下、ヴィガラクス）は、商用電源や化石燃料に一切依存せず、過酷な環境下でも精......",
+      "publishedDate": "Sun, 12 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/04/31865665_m-130x73.jpg",
+      "language": "ja"
+    },
+    {
       "title": "埋設管を掘る前に確認すべきこと｜AI・3D探査が変えるインフラDXの全貌",
       "link": "https://axconstdx.com/2026/03/28/%e5%9f%8b%e8%a8%ad%e7%ae%a1%e3%82%92%e6%8e%98%e3%82%8b%e5%89%8d%e3%81%ab%e7%a2%ba%e8%aa%8d%e3%81%99%e3%81%b9%e3%81%8d%e3%81%93%e3%81%a8%ef%bd%9cai%e3%83%bb3d%e6%8e%a2%e6%9f%bb%e3%81%8c%e5%a4%89/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%259f%258b%25e8%25a8%25ad%25e7%25ae%25a1%25e3%2582%2592%25e6%258e%2598%25e3%2582%258b%25e5%2589%258d%25e3%2581%25ab%25e7%25a2%25ba%25e8%25aa%258d%25e3%2581%2599%25e3%2581%25b9%25e3%2581%258d%25e3%2581%2593%25e3%2581%25a8%25ef%25bd%259cai%25e3%2583%25bb3d%25e6%258e%25a2%25e6%259f%25bb%25e3%2581%258c%25e5%25a4%2589",
       "description": "「地下に何が埋まっているか分からない」——その不安は、今も全国の工事現場で現実になっています。埋設管の位置不明は、ガス漏れや道路陥没といった取り返しのつかない事故に直結する問題です。この記事を読めば、非破壊探査からAIに [...] <p>The post 埋設管を掘る前に確認すべきこと｜AI・3D探査が変えるインフラDXの全貌 first appeared on 生成AIと建設DX.</p>...",
@@ -230,16 +240,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "【2026年版】建築RCとは？構造・設計ポイント・S造/SRCとの違いを実務目線でわかりやすく解説",
-      "link": "https://news.build-app.jp/article/40005/",
-      "description": "建築計画において、構造の選定はコストや性能だけでなく、建物の価値そのものを左右します。中でも「RC造」はマンションや公共施設で広く採用されて......",
-      "publishedDate": "Mon, 06 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/9109aa2460b947d305caa024def91c8b-130x82.png",
-      "language": "ja"
     },
     {
       "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
