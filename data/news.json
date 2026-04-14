@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-04-13T01:52:47.134506",
+  "lastUpdated": "2026-04-14T01:48:08.982928",
   "articles": [
     {
-      "title": "buildingSMART International announces that Céline Bent has left the organisation",
-      "link": "https://www.buildingsmart.org/buildingsmart-international-announces-that-celine-bent-has-left-the-organisation/",
-      "description": "London, U.K. – January 28th, 2026 — buildingSMART International (bSI) announces that Céline Bent has left the organisation. bSI commented that “it is with our regrets to announce that Céline has... Th...",
-      "publishedDate": "Wed, 28 Jan 2026 10:40:44 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
+      "title": "【2026年最新】建築確認申請の期間は何日？最短・遅い理由・短縮方法まで完全解説",
+      "link": "https://news.build-app.jp/article/40098/",
+      "description": "建建築確認申請の期間は、設計や着工スケジュールに直結する重要な項目です。申請期間が遅れてしまうと、着工がずれ込むケースも少なくありません。特......",
+      "publishedDate": "Wed, 08 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/a50faaf579e62bd4493f6c91475c4699-130x82.png",
+      "language": "ja"
     },
     {
       "title": "大林組、全現場で現場チャット「direct」の活用を拡大",
@@ -19,16 +19,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/08/3422461_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新】建築確認申請の期間は何日？最短・遅い理由・短縮方法まで完全解説",
-      "link": "https://news.build-app.jp/article/40098/",
-      "description": "建建築確認申請の期間は、設計や着工スケジュールに直結する重要な項目です。申請期間が遅れてしまうと、着工がずれ込むケースも少なくありません。特......",
-      "publishedDate": "Wed, 08 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/a50faaf579e62bd4493f6c91475c4699-130x82.png",
       "language": "ja"
     },
     {
@@ -52,26 +42,6 @@
       "language": "ja"
     },
     {
-      "title": "「LLM×世界モデル」という二つの異なるAIパラダイムの併存と現場実装の臨界点",
-      "link": "https://news.build-app.jp/article/39594/",
-      "description": "LLMモデルのAIは契約書を要約できるが、コンクリートの硬化速度は、LLM単体では予測しにくい。LLMモデルのAIは設計思想を読み解けるが、......",
-      "publishedDate": "Tue, 07 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260408_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "株式会社竹中土木が「Kencopa工程AIエージェント」のPoCを開始",
-      "link": "https://news.build-app.jp/article/40009/",
-      "description": "建設現場の省人化・自動化に挑む株式会社KENCOPA（本社：東京都渋谷区、代表取締役CEO：安村 荘佑、以下 KENCOPA）は、株式会社竹......",
-      "publishedDate": "Tue, 07 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/08/ht1lVpcka7yWzDz1661358045_1661358063-130x82.jpg",
-      "language": "ja"
-    },
-    {
       "title": "キャタピラーとNVIDIAが変える重機のAI戦略とは？フィジカルAIの全貌",
       "link": "https://axconstdx.com/2026/03/19/%e3%82%ad%e3%83%a3%e3%82%bf%e3%83%94%e3%83%a9%e3%83%bc%e3%81%a8nvidia%e3%81%8c%e5%a4%89%e3%81%88%e3%82%8b%e9%87%8d%e6%a9%9f%e3%81%aeai%e6%88%a6%e7%95%a5%e3%81%a8%e3%81%af%ef%bc%9f%e3%83%95%e3%82%a3/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2582%25ad%25e3%2583%25a3%25e3%2582%25bf%25e3%2583%2594%25e3%2583%25a9%25e3%2583%25bc%25e3%2581%25a8nvidia%25e3%2581%258c%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b%25e9%2587%258d%25e6%25a9%259f%25e3%2581%25aeai%25e6%2588%25a6%25e7%2595%25a5%25e3%2581%25a8%25e3%2581%25af%25ef%25bc%259f%25e3%2583%2595%25e3%2582%25a3",
       "description": "「重機とAIは関係ない」と思っていませんか。実は今、建設現場の未来を決める静かな革命が、すでに始まっています。この記事を読めば、キャタピラーとNVIDIAが描く戦略の全貌と、自社のデジタル変革に応用できる具体的な視点が手 [...] <p>The post キャタピラーとNVIDIAが変える重機のAI戦略とは？フィジカルAIの全貌 first appeared on 生成AIと建設DX.</p>...",
@@ -82,14 +52,14 @@
       "language": "ja"
     },
     {
-      "title": "ISO Publishes New Compatibility Policy for ISO 16739-1 (IFC): A Major Step for Stable Evolution of the Standard",
-      "link": "https://www.buildingsmart.org/iso-publishes-new-compatibility-policy-for-iso-16739-1/",
-      "description": "buildingSMART International is pleased to share important news with the openBIM community: ISO/TC 59/SC 13 has published the new Compatibility Policy for ISO 16739-1, the international standard for IF...",
-      "publishedDate": "Thu, 13 Nov 2025 11:27:34 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
+      "title": "エラスタイトとは？土木工事でコンクリートの継ぎ目（目地）に使用される理由や間隔などを解説",
+      "link": "https://news.build-app.jp/article/40102/",
+      "description": "コンクリートは、気温や乾燥によってわずかに伸び縮みし、その動きを逃がせないとひび割れにつながります。現場でよく使われるエラスやエラスタイトは......",
+      "publishedDate": "Thu, 09 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/a40e2622a932ca2ca12dbff4eb3b23ac-130x82.png",
+      "language": "ja"
     },
     {
       "title": "日建設計とソフトバンクが自律的に進化し続けるスマートビル構築を支援する会社を設立｜深堀り取材【毎月3回更新】",
@@ -110,26 +80,6 @@
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/09/unDR9w2945ETEqC1662045710_1662045733-130x82.jpg",
       "language": "ja"
-    },
-    {
-      "title": "エラスタイトとは？土木工事でコンクリートの継ぎ目（目地）に使用される理由や間隔などを解説",
-      "link": "https://news.build-app.jp/article/40102/",
-      "description": "コンクリートは、気温や乾燥によってわずかに伸び縮みし、その動きを逃がせないとひび割れにつながります。現場でよく使われるエラスやエラスタイトは......",
-      "publishedDate": "Thu, 09 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/a40e2622a932ca2ca12dbff4eb3b23ac-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "The buildingSMART Implementers Assembly, February 2026 Event Report",
-      "link": "https://www.buildingsmart.org/the-buildingsmart-implementers-assembly-february-2026-event-report/",
-      "description": "The latest buildingSMART Implementers Assembly, hosted by Bentley in their Exton (PA) office, brought together the buildingSMART implementers community for two days of focused discussion and practical...",
-      "publishedDate": "Thu, 09 Apr 2026 11:11:07 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "2030年市場規模6.5兆円へ。衛星データが「建設DX」に貢献！ —CONSEOレポートが示す“衛星データ駆動型スマートシティ”",
@@ -232,74 +182,24 @@
       "language": "ja"
     },
     {
-      "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
-      "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
-      "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
-      "publishedDate": "Mon, 08 Dec 2025 19:22:27 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
+      "title": "GRIFFY、体調管理ソリューション「GenVital LTE」に「うずくまり検知」追加",
+      "link": "https://news.build-app.jp/article/40074/",
+      "description": "エコモット株式会社（本社：北海道札幌市、代表取締役 入澤 拓也、以下「エコモット」）は、連結子会社である株式会社GRIFFY（本社：東京都千......",
+      "publishedDate": "Mon, 13 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/rbm8S3J6wOtaY151643282433-130x87.jpg",
+      "language": "ja"
     },
     {
-      "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
-      "link": "https://www.buildingsmart.org/buildingsmart-brazil-has-been-formally-approved-as-a-full-chapter/",
-      "description": "London, U.K. – March 27th, 2026 — buildingSMART International (bSI) is pleased to announce that buildingSMART Brazil has been formally approved by the Board to become a Full Chapter, effective March.....",
-      "publishedDate": "Fri, 27 Mar 2026 10:19:53 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Alfred Waschl Steps Down from buildingSMART International Board of Directors",
-      "link": "https://www.buildingsmart.org/alfred-waschl-resigned-from-the-board/",
-      "description": "London, U.K. – February 27th, 2026 — buildingSMART International (bSI) announces that Alfred Waschl resigned from the Board of Directors on 29 January 2026. Due to ill health, Alfred previously steppe...",
-      "publishedDate": "Fri, 27 Feb 2026 09:21:11 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Key Outcomes from the Domain Leadership Conference in Zurich",
-      "link": "https://www.buildingsmart.org/key-outcomes-from-the-domain-leadership-conference-in-zurich/",
-      "description": "The recent Domain Leadership Conference held in Zurich on 4 &#38; 5 February marked an important moment for buildingSMART International. bSI Domains are membership-led, pro bono programmes representin...",
-      "publishedDate": "Fri, 20 Mar 2026 10:06:51 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Voting for the Standards Committee Executive is now open",
-      "link": "https://www.buildingsmart.org/voting-for-the-standards-committee-executive-is-now-open/",
-      "description": "Vote closing date: 12 Nov 2025Report: Link The buildingSMART International Community is invited to elect five additional members to the Standards Committee Executive (SCE).This is an important governa...",
-      "publishedDate": "Fri, 17 Oct 2025 15:10:46 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "openBIM Practitioner Certification enters full-scale implementation across Chapters",
-      "link": "https://www.buildingsmart.org/openbim-practitioner-certification-enters-full-scale-implementation-across-chapters/",
-      "description": "The openBIM Practitioner Certification is now rolling out across the buildingSMART community, as part of the ongoing expansion of the Professional Certification Program, marking a major milestone in p...",
-      "publishedDate": "Fri, 05 Dec 2025 22:18:08 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Board of Directors Changes",
-      "link": "https://www.buildingsmart.org/board-of-directors-changes/",
-      "description": "London, U.K. – December 5th, 2025 — buildingSMART International (bSI) is today announcing some Board of Director changes. Board Changes Due to ill health, Alfred Waschl has stepped down from... The po...",
-      "publishedDate": "Fri, 05 Dec 2025 19:25:08 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
+      "title": "【2026年最新版】用途別の代表建築物と計画ポイントを解説",
+      "link": "https://news.build-app.jp/article/40139/",
+      "description": "建築物という言葉は日常的に使われます。しかし、実務では単なる建物の総称として片づけることはできません。建築物は、住宅やオフィス、教育施設など......",
+      "publishedDate": "Mon, 13 Apr 2026 14:42:23 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/23982404_m-130x87.jpg",
+      "language": "ja"
     }
   ]
 }
