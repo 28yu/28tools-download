@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-14T04:11:10.488117",
+  "lastUpdated": "2026-04-15T04:09:46.660293",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -22,6 +22,28 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Lyria-3-Pro_thumbnail.max-600x600.format-webp.webp",
       "language": "en"
+    },
+    {
+      "title": "【2026年最新】生成AIおすすめ比較10選！ChatGPT、Gemini、Claudeの性能を徹底検証",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/generative-ai-compare/",
+      "description": "生成AIの進化は目覚ましく、「種類が多すぎて選べない」「結局どれに課金すべきか分からない」と悩んでいる方も多いのではないでしょうか。特に企業でのAI導入やDX推進においては、ツール選定がそのまま生産性に直結するため、慎重 [...] The post 【2026年最新】生成AIおすすめ比較10選！ChatGPT、Gemini、Claudeの性能を徹底検証 first appeared on AIポ...",
+      "publishedDate": "Wed, 15 Apr 2026 01:10:32 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/125.png",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIチェッカー8選と検知対策完全ガイド",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/generative-ai-check/",
+      "description": "「せっかく書いた記事が生成AIと判定されてしまった…」「納品された原稿、生成AIのコピペじゃないかな？」 生成AIの急速な普及により、文章の“人間性”や“オリジナリティ”が厳しく問われる時代になりました。特にSEOやコン [...] The post 生成AIチェッカー8選と検知対策完全ガイド first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 15 Apr 2026 01:08:14 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/generativeaichecker.png",
+      "language": "ja"
     },
     {
       "title": "LangChainとは？料金・実装例までいま知るべきポイント総まとめ！",
@@ -113,7 +135,7 @@
     },
     {
       "title": "Falcon Perception",
-      "titleJa": "ファルコンの認識",
+      "titleJa": "ファルコンの知覚",
       "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
       "description": "...",
       "publishedDate": "Wed, 01 Apr 2026 07:13:20 GMT",
@@ -168,7 +190,7 @@
     },
     {
       "title": "TRL v1.0: Post-Training Library Built to Move with the Field",
-      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたトレーニング後のライブラリ",
+      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたポストトレーニング ライブラリ",
       "link": "https://huggingface.co/blog/trl-v1",
       "description": "...",
       "publishedDate": "Tue, 31 Mar 2026 00:00:00 GMT",
@@ -200,17 +222,6 @@
       "language": "en"
     },
     {
-      "title": "Bringing the power of Personal Intelligence to more people",
-      "titleJa": "パーソナルインテリジェンスのパワーをより多くの人に届ける",
-      "link": "https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion/",
-      "description": "Bubble that says \"Personal Intelligence\" with Google G, Google Photos logo, and Gmail logo around it...",
-      "publishedDate": "Tue, 17 Mar 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Header_gl7r1il.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
       "title": "Our latest investment in open source security for the AI era",
       "titleJa": "AI 時代に向けたオープンソース セキュリティへの最新の投資",
       "link": "https://blog.google/innovation-and-ai/technology/safety-security/ai-powered-open-source-security/",
@@ -222,14 +233,157 @@
       "language": "en"
     },
     {
-      "title": "Gemini in Google Sheets just achieved state-of-the-art performance.",
-      "titleJa": "Google スプレッドシートの Gemini は最先端のパフォーマンスを達成しました。",
-      "link": "https://blog.google/products-and-platforms/products/workspace/gemini-google-sheets-state-of-the-art/",
-      "description": "Today we announced new beta features for Gemini in Sheets to help you create, organize and edit entire sheets, from basic tasks to complex data analysis — just describe …...",
-      "publishedDate": "Tue, 10 Mar 2026 13:00:00 +0000",
+      "title": "Bringing the power of Personal Intelligence to more people",
+      "titleJa": "パーソナルインテリジェンスのパワーをより多くの人に届ける",
+      "link": "https://blog.google/products-and-platforms/products/search/personal-intelligence-expansion/",
+      "description": "Bubble that says \"Personal Intelligence\" with Google G, Google Photos logo, and Gmail logo around it...",
+      "publishedDate": "Tue, 17 Mar 2026 16:00:00 +0000",
       "source": "Google AI Blog",
       "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Workspace_Jan_Moment_Sheets_Blo.max-600x600.format-webp.webp",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Header_gl7r1il.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Redefining the future of software engineering",
+      "titleJa": "ソフトウェアエンジニアリングの未来を再定義する",
+      "link": "https://www.technologyreview.com/2026/04/14/1134397/redefining-the-future-of-software-engineering/",
+      "description": "Software engineering has experienced two seismic shifts this century. First was the rise of the open source movement, which gradually made code accessible to developers and engineers everywhere. Secon...",
+      "publishedDate": "Tue, 14 Apr 2026 18:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/MITTR-Softserve-report.cover_.png?w=1555",
+      "language": "en"
+    },
+    {
+      "title": "Turn your best AI prompts into one-click tools in Chrome",
+      "titleJa": "最高の AI プロンプトを Chrome のワンクリック ツールに変える",
+      "link": "https://blog.google/products-and-platforms/products/chrome/skills-in-chrome/",
+      "description": "Video showing Skills in Chrome...",
+      "publishedDate": "Tue, 14 Apr 2026 17:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GoogleChrome_RR_Skills_KeywordH.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "The Download: the state of AI, and protecting bears with drones",
+      "titleJa": "ダウンロード: AI の現状とドローンによるクマの保護",
+      "link": "https://www.technologyreview.com/2026/04/14/1135847/the-download-state-of-ai-drones-protecting-bears/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Want to understand the current state of AI? Check ...",
+      "publishedDate": "Tue, 14 Apr 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/12/HungerDemon_MIT_mag_thumb.jpg",
+      "language": "en"
+    },
+    {
+      "title": "NASA is building the first nuclear reactor-powered interplanetary spacecraft. How will it work?",
+      "titleJa": "NASA は、原子炉を動力とする初の惑星間宇宙船を建造中です。どうやって機能するのでしょうか？",
+      "link": "https://www.technologyreview.com/2026/04/14/1135848/nasa-nuclear-powered-spacecraft/",
+      "description": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. Just before Artemis I...",
+      "publishedDate": "Tue, 14 Apr 2026 12:04:47 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/5-america-underway-in-space-on-nuclear-power-11.png?w=2500",
+      "language": "en"
+    },
+    {
+      "title": "Coming soon: 10 Things That Matter in AI Right Now",
+      "titleJa": "近日公開予定: AI において今重要な 10 のこと",
+      "link": "https://www.technologyreview.com/2026/04/14/1135298/coming-soon-10-things-that-matter-in-ai-right-now/",
+      "description": "Each year we compile our 10 Breakthrough Technologies list, featuring our educated predictions for which technologies will have the biggest impact on how we live and work. This year, however, we had a...",
+      "publishedDate": "Tue, 14 Apr 2026 11:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/Maxomatic-MIT-AI-Right-Now-Teaser-FINAL.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "The problem with thinking you’re part Neanderthal",
+      "titleJa": "自分がネアンデルタール人の一部であると考えることの問題点",
+      "link": "https://www.technologyreview.com/2026/04/14/1135169/problem-thinking-part-neanderthal-human-evolution/",
+      "description": "You’ve probably heard some version of this idea before: that many of us have an “inner Neanderthal.” That is to say, around 45,000 years ago, when Homo sapiens first arrived in Europe, they met member...",
+      "publishedDate": "Tue, 14 Apr 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/neanderthals.jpg?w=1749",
+      "language": "en"
+    },
+    {
+      "title": "Bringing people together at AI for the Economy Forum",
+      "titleJa": "AI for Economy フォーラムに人々を集める",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/creating-opportunity/ai-economy-forum/",
+      "description": "Woman working with a large tool. On the left are the Google and MIT FutureTech logos, \"AI for the Economy Forum\", and \"Innovation and Adaption in the New Era\"...",
+      "publishedDate": "Tue, 14 Apr 2026 09:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_for_the_Economy_Forum_2026.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Meta、新AIモデル「Muse Spark」発表。複数タスクの同時並行処理や画像・グラフの視覚理解に対応",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/meta-newai-muse-spark-20260408/",
+      "description": "Metaは、新しいAIモデル「Muse Spark」を発表しました。複数タスクの同時並行処理や画像・グラフの深い視覚理解が可能で、日常的なショッピングから健康相談まで幅広くサポートします。 このニュースのポイント Met [...] The post Meta、新AIモデル「Muse Spark」発表。複数タスクの同時並行処理や画像・グラフの視覚理解に対応 first appeared on AI...",
+      "publishedDate": "Tue, 14 Apr 2026 08:10:28 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0410ainewsmeta.png",
+      "language": "ja"
+    },
+    {
+      "title": "JEITA、AI活用状況の調査結果を発表。一般ユーザーの4割超がAI利用を経験、20代では6割超",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/jeita-ai-utilization-investigation/",
+      "description": "JEITAは、一般ユーザーのAI活用状況に関する調査結果を発表しました。AIの利用実態や活用意向、信頼・不安の要因、ならびにパソコントラブルへの活用状況について分析しました。 このニュースのポイント JEITA、一般ユー [...] The post JEITA、AI活用状況の調査結果を発表。一般ユーザーの4割超がAI利用を経験、20代では6割超 first appeared on AIポータルメ...",
+      "publishedDate": "Tue, 14 Apr 2026 07:45:31 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/171.png",
+      "language": "ja"
+    },
+    {
+      "title": "名古屋市、生成AIや自動架電を活用した国民健康保険料催告業務の効率化に関する実証を実施",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/nagoya-ai-advanced-technology/",
+      "description": "名古屋市は、提示型支援事業において、国民健康保険料の収納率向上を目的に、生成AIや自動架電を活用した催告業務の効率化に関する実証実験を実施し、電話催告や多言語対応の課題解決を目指します。 このニュースのポイント 名古屋市 [...] The post 名古屋市、生成AIや自動架電を活用した国民健康保険料催告業務の効率化に関する実証を実施 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Tue, 14 Apr 2026 07:23:56 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/186.png",
+      "language": "ja"
+    },
+    {
+      "title": "リコー、リーズニングLMM基本モデルを開発。複雑なドキュメントの理解に対応し、思考プロセスを日本語化",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ricoh-geniac3-reasoning-llm/",
+      "description": "リコーは、経済産業省とNEDOが実施する「GENIAC」第3期において、リーズニングLMMの基本モデル「Qwen3-VL-Ricoh-32B-20260227」を開発しました。複雑なドキュメントを理解し、高精度な回答を生 [...] The post リコー、リーズニングLMM基本モデルを開発。複雑なドキュメントの理解に対応し、思考プロセスを日本語化 first appeared on AIポータ...",
+      "publishedDate": "Tue, 14 Apr 2026 06:45:50 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0406ricoh.png",
+      "language": "ja"
+    },
+    {
+      "title": "Qwen 3.5で何ができる？進化した「Deep Research」の使い方と実務での活用術",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/qwen-3-5-deep-research/",
+      "description": "文章生成や画像生成、音声入力を1つで行える生成AI「Qwen」を愛用している人の中には、最新モデルであるQwen 3.5について、 「Qwen2.5と何が違うの？」「自分のPCで動くモデルはどれ？」そんな疑問を抱えていま [...] The post Qwen 3.5で何ができる？進化した「Deep Research」の使い方と実務での活用術 first appeared on AIポータルメディ...",
+      "publishedDate": "Tue, 14 Apr 2026 05:57:15 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/Qwen.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Trusted access for the next era of cyber defense",
+      "titleJa": "次の時代のサイバー防御のための信頼できるアクセス",
+      "link": "https://openai.com/index/scaling-trusted-access-for-cyber-defense",
+      "description": "OpenAI expands its Trusted Access for Cyber program, introducing GPT-5.4-Cyber to vetted defenders and strengthening safeguards as AI cybersecurity capabilities advance....",
+      "publishedDate": "Tue, 14 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -277,17 +431,6 @@
       "language": "en"
     },
     {
-      "title": "How AI is helping improve heart health in rural Australia",
-      "titleJa": "AI がオーストラリアの田舎の心臓の健康改善にどのように貢献しているか",
-      "link": "https://blog.google/innovation-and-ai/technology/health/google-ai-heart-health-australia/",
-      "description": "A doctor is sitting across a desk from a patient. The doctor is holding a tablet and a pen. Medical charts renderings are in the background....",
-      "publishedDate": "Thu, 12 Mar 2026 15:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIHealth_v2_2096x1182_02.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
       "title": "Muse Sparkとは？Metaが発表したパーソナル超知性AIの機能・性能・料金を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/muse-spark/",
@@ -299,39 +442,6 @@
       "language": "ja"
     },
     {
-      "title": "The Download: AstroTurf wars and exponential AI growth",
-      "titleJa": "ダウンロード: AstroTurf 戦争と AI の急激な成長",
-      "link": "https://www.technologyreview.com/2026/04/09/1135514/the-download-astroturf-wars-exponential-ai-growth-desalination-numbers/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Is&#160;fake&#160;grass&#160;a&#160;bad&#160;idea?...",
-      "publishedDate": "Thu, 09 Apr 2026 12:25:10 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/02/0511013_01.jpg?w=2947",
-      "language": "en"
-    },
-    {
-      "title": "Is fake grass a bad idea? The AstroTurf wars are far from over.",
-      "titleJa": "人工芝は悪いアイデアですか？アストロターフ戦争はまだ終わっていない。",
-      "link": "https://www.technologyreview.com/2026/04/09/1135092/astroturf-fake-grass-artificial-heated-debates/",
-      "description": "A rare warm spell in January melted enough snow to uncover Cornell University’s newest athletic field, built for field hockey. Months before, it was a meadow teeming with birds and bugs; now it’s more...",
-      "publishedDate": "Thu, 09 Apr 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/AP23278453062506.jpg?w=2902",
-      "language": "en"
-    },
-    {
-      "title": "SB C&S、AI搭載の次世代型イヤホン「GLIDiC AI +u Buds」発表。会話の整理を自動化しAIがアドバイス",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sbcs-glidic-ai-u-buds/",
-      "description": "SB C&#38;Sは、GLIDiC独自のAIを搭載した次世代型イヤホン「GLIDiC AI +u Buds」の発売にあたり、新製品発表会を開催しました。録音・文字起こし・要約に加え、AIによるアドバイス機能を搭載してい [...] The post SB C&S、AI搭載の次世代型イヤホン「GLIDiC AI +u Buds」発表。会話の整理を自動化しAIがアドバイス first appeare...",
-      "publishedDate": "Thu, 09 Apr 2026 09:21:46 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0407ainewssbeye.png",
-      "language": "ja"
-    },
-    {
       "title": "Waypoint-1.5: Higher-Fidelity Interactive Worlds for Everyday GPUs",
       "titleJa": "Waypoint-1.5: 日常の GPU 向けのより忠実度の高いインタラクティブな世界",
       "link": "https://huggingface.co/blog/waypoint-1-5",
@@ -340,50 +450,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/overworld/waypoint-v1-5.png",
-      "language": "en"
-    },
-    {
-      "title": "Multimodal Embedding & Reranker Models with Sentence Transformers",
-      "titleJa": "文トランスフォーマーを使用したマルチモーダル埋め込みおよびリランカー モデル",
-      "link": "https://huggingface.co/blog/multimodal-sentence-transformers",
-      "description": "...",
-      "publishedDate": "Thu, 09 Apr 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "New ways to balance cost and reliability in the Gemini API",
-      "titleJa": "Gemini API でコストと信頼性のバランスをとる新しい方法",
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-flex-and-priority-inference/",
-      "description": "Gemini API Dials...",
-      "publishedDate": "Thu, 02 Apr 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/cost_reliability_Gemini_API-soc.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Create, edit and share videos at no cost in Google Vids",
-      "titleJa": "Google Vids では無料で動画を作成、編集、共有できます",
-      "link": "https://blog.google/products-and-platforms/products/workspace/google-vids-updates-lyria-veo/",
-      "description": "Google Vids logo surrounded by various video editing UI...",
-      "publishedDate": "Thu, 02 Apr 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Createeditandshare_Google_Vids_.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Welcome Gemma 4: Frontier multimodal intelligence on device",
-      "titleJa": "Gemma 4 へようこそ: デバイス上のフロンティア マルチモーダル インテリジェンス",
-      "link": "https://huggingface.co/blog/gemma4",
-      "description": "...",
-      "publishedDate": "Thu, 02 Apr 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/gemma4/thumbnail.png",
       "language": "en"
     },
     {
@@ -427,7 +493,7 @@
       "publishedDate": "Mon, 13 Apr 2026 09:07:04 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/fujitsu-ai.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/fijitsu0414.png",
       "language": "ja"
     },
     {
@@ -453,17 +519,6 @@
       "language": "ja"
     },
     {
-      "title": "ChatGPTプロンプトの教科書｜精度の高い書き方とコツを解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-prompt/",
-      "description": "「何度指示を出し直しても、結局自分で書いた方が早い…」「AIを使いこなしている同僚と、自分は何が違うのか？」──ChatGPTを業務に取り入れたものの、期待外れの回答ばかりでストレスを抱えていませんか？ 実は、AIから質 [...] The post ChatGPTプロンプトの教科書｜精度の高い書き方とコツを解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 13 Apr 2026 01:18:51 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/02/prompt.png",
-      "language": "ja"
-    },
-    {
       "title": "【Firebase Studio】GoogleのAIプラットフォーム！使い方や料金、サポート終了についても解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/firebase-studio/",
@@ -486,50 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "Ask Mapsとは？使い方・日本上陸時期・AIの活用法を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ask-maps-google-map/",
-      "description": "Googleマップに会話型AI機能「Ask Maps」が登場し、場所探しが大きく変わろうとしています。 この記事では、Ask Mapsの仕組みや使い方、日本での提供時期を解説します。 従来のキーワード検索では見つけにくか [...] The post Ask Mapsとは？使い方・日本上陸時期・AIの活用法を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 10 Apr 2026 05:57:53 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/AskMaps.png",
-      "language": "ja"
-    },
-    {
-      "title": "OpenAI、1,220億ドルの資金調達を完了。複数機能を統合したAIスーパーアプリの構築を目指す",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-122-billion-raise/",
-      "description": "OpenAIは、1,220億ドルの資金調達を完了しました。AIシステムへの需要の急成長と多様化に対応し、複数機能を統合したAIスーパーアプリの構築を目指します。 このニュースのポイント OpenAI、1,220億ドルの資 [...] The post OpenAI、1,220億ドルの資金調達を完了。複数機能を統合したAIスーパーアプリの構築を目指す first appeared on AIポータル...",
-      "publishedDate": "Fri, 10 Apr 2026 05:42:49 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0407ainewsopenai.png",
-      "language": "ja"
-    },
-    {
-      "title": "日本初となる非接触型の牛の起立困難予防声かけAIサービス「BUJIDAS」、近江牛を飼育する岡喜牧場が導入",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ntt-bellsystem-omibeef/",
-      "description": "近江牛を厳選飼育する岡喜牧場は、牛の起立困難予防声かけサービス「BUJIDAS」を導入しました。同サービスは、NTTテクノクロスとベルシステム24が共同で提供するものです。 このニュースのポイント 近江牛を厳選飼育する岡 [...] The post 日本初となる非接触型の牛の起立困難予防声かけAIサービス「BUJIDAS」、近江牛を飼育する岡喜牧場が導入 first appeared on AI...",
-      "publishedDate": "Fri, 10 Apr 2026 04:50:56 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0407ainewseyebeef.png",
-      "language": "ja"
-    },
-    {
-      "title": "Ask Geminiとは？Google Meetでの使い方と日本語対応を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ask-gemini-google-meet/",
-      "description": "Google Meetの会議中に「今何が話し合われているのか」「決まったことは何か」をリアルタイムで把握したいと思ったことはありませんか。 Ask Geminiは、Google Meetに搭載されたAI機能で、会議内容の [...] The post Ask Geminiとは？Google Meetでの使い方と日本語対応を解説 first appeared on AIポータルメディアAIsmile...",
-      "publishedDate": "Fri, 10 Apr 2026 03:49:46 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/AskGemini.png",
-      "language": "ja"
-    },
-    {
       "title": "【PixVerse R1】初のリアルタイムワールドモデル！革命的な動画生成が可能に！",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/pixverse-r1/",
@@ -541,14 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "大阪市と株式会社日立製作所、AIエージェントによる自治体業務効率化を共同検証",
+      "title": "CloudflareがAIエージェントへの最適化を目指し、全サービスに対応するCLIの開発を表明",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/osaka-hitachi-aiagent-verification/",
-      "description": "大阪市と日立製作所は、AIエージェントを活用した自治体業務の効率化に向けた実証を実施し、業務時間削減の可能性を確認しました。 このニュースのポイント 大阪市と日立製作所が、AIエージェントを活用した自治体業務効率化の共同 [...] The post 大阪市と株式会社日立製作所、AIエージェントによる自治体業務効率化を共同検証 first appeared on AIポータルメディアAIsmile...",
-      "publishedDate": "Fri, 10 Apr 2026 01:27:26 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/osakahitachi.png",
+      "link": "https://www.publickey1.jp/blog/26/cloudflareaicli.html",
+      "description": "Cloudflareは、AIエージェントによる利用を最適化するため、同社が提供するすべてのサービスに対応したコマンドラインインターフェイス（CLI）を開発することを明らかにしました。 Stop flying blind with your ......",
+      "publishedDate": "2026-04-15T13:57:48Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/lQulPnch.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/aurora-postgresql-serverless-expressconfigration-ann.png",
-      "language": "ja"
-    },
-    {
-      "title": "SwiftでAndroidアプリを作れる「Swift SDK for Android」正式版が登場。Swift 6.3がリリース",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/swiftandroidswift_sdk_for_androidswift_63.html",
-      "description": "Appleは、初めて正式版となった「Swift SDK for Android」を含むSwift言語の最新版となる「Swift 6.3」をリリースしました。 これによりSwiftでAndroid対応のネイティブアプリケーション開発が可能とな......",
-      "publishedDate": "2026-03-29T15:35:58Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HENaweNaIAI1Qwr.jpg",
       "language": "ja"
     }
   ]
