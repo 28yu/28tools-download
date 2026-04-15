@@ -1,35 +1,15 @@
 {
-  "lastUpdated": "2026-04-14T01:48:08.982928",
+  "lastUpdated": "2026-04-15T01:29:43.334786",
   "articles": [
     {
-      "title": "【2026年最新】建築確認申請の期間は何日？最短・遅い理由・短縮方法まで完全解説",
-      "link": "https://news.build-app.jp/article/40098/",
-      "description": "建建築確認申請の期間は、設計や着工スケジュールに直結する重要な項目です。申請期間が遅れてしまうと、着工がずれ込むケースも少なくありません。特......",
-      "publishedDate": "Wed, 08 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/a50faaf579e62bd4493f6c91475c4699-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "大林組、全現場で現場チャット「direct」の活用を拡大",
-      "link": "https://news.build-app.jp/article/40011/",
-      "description": "株式会社L is B（エルイズビー、本社：東京都千代田区、代表取締役社長CEO：横井 太輔、以下「L is B」）が開発・提供する現場向けビ......",
-      "publishedDate": "Wed, 08 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/08/3422461_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "有明アーバンスポーツパークとは｜アクセスや料金、キッズエリアを解説",
-      "link": "https://news.build-app.jp/article/40053/",
-      "description": "トレンドワード：有明アーバンスポーツパーク 「有明アーバンスポーツパーク」についてピックアップします。有明アーバンスポーツパークは、子どもか......",
-      "publishedDate": "Wed, 08 Apr 2026 21:44:10 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/c2732d1c305f3aeee5f0ee38f5f50913-130x82.png",
-      "language": "ja"
+      "title": "buildingSMART International announces that Céline Bent has left the organisation",
+      "link": "https://www.buildingsmart.org/buildingsmart-international-announces-that-celine-bent-has-left-the-organisation/",
+      "description": "London, U.K. – January 28th, 2026 — buildingSMART International (bSI) announces that Céline Bent has left the organisation. bSI commented that “it is with our regrets to announce that Céline has... Th...",
+      "publishedDate": "Wed, 28 Jan 2026 10:40:44 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "東大卒4割のAIスタートアップが建設業を変える──燈、創業5年で評価額1000億円の衝撃",
@@ -42,6 +22,46 @@
       "language": "ja"
     },
     {
+      "title": "インフラのデジタル遺産はいつまで読めるのか？｜建設DXが直面する「解釈系の死」",
+      "link": "https://news.build-app.jp/article/39606/",
+      "description": "未来のあなたは未来のデバイスで昔のフォルダを開く。30年前のBIMファイルは残っている。サーバーの中に、確かに存在する。だが、読めない。ファ......",
+      "publishedDate": "Tue, 14 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260415-2_hirayama-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "遠隔操作システムの機能を向上し、日本～台湾間でのシールドマシンの遠隔操作を実施",
+      "link": "https://news.build-app.jp/article/40145/",
+      "description": "株式会社奥村組（本社：大阪市阿倍野区、代表取締役社長：奥村 太加典）と奥村機械製作株式会社（本社：大阪市西淀川区、代表取締役社長：村中 浩昭......",
+      "publishedDate": "Tue, 14 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/10/dpXFA3kMEG2WDF91666326649_1666326685-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "TODA BUILDING｜戸田建設新本社ビル建て替え「100年建築」のための設計・構造とは",
+      "link": "https://news.build-app.jp/article/40109/",
+      "description": "トレンドワード：TODA BUILDING TODA BUILDINGは、京橋一丁目にて建て替えとなった、戸田建設株式会社の新本社ビルです。......",
+      "publishedDate": "Tue, 14 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/d7ad75985e62436bb6df459204fba2f6-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "The first buildingSMART openBIM Hackathon in Porto is complete",
+      "link": "https://www.buildingsmart.org/the-first-buildingsmart-openbim-hackathon-in-porto-is-complete/",
+      "description": "The first buildingSMART openBIM Hackathon in Porto is complete - and it delivered more than expected. For 50 hours, 47 participants across 9 teams worked under real pressure to build something that ac...",
+      "publishedDate": "Tue, 14 Apr 2026 15:05:06 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "キャタピラーとNVIDIAが変える重機のAI戦略とは？フィジカルAIの全貌",
       "link": "https://axconstdx.com/2026/03/19/%e3%82%ad%e3%83%a3%e3%82%bf%e3%83%94%e3%83%a9%e3%83%bc%e3%81%a8nvidia%e3%81%8c%e5%a4%89%e3%81%88%e3%82%8b%e9%87%8d%e6%a9%9f%e3%81%aeai%e6%88%a6%e7%95%a5%e3%81%a8%e3%81%af%ef%bc%9f%e3%83%95%e3%82%a3/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2582%25ad%25e3%2583%25a3%25e3%2582%25bf%25e3%2583%2594%25e3%2583%25a9%25e3%2583%25bc%25e3%2581%25a8nvidia%25e3%2581%258c%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b%25e9%2587%258d%25e6%25a9%259f%25e3%2581%25aeai%25e6%2588%25a6%25e7%2595%25a5%25e3%2581%25a8%25e3%2581%25af%25ef%25bc%259f%25e3%2583%2595%25e3%2582%25a3",
       "description": "「重機とAIは関係ない」と思っていませんか。実は今、建設現場の未来を決める静かな革命が、すでに始まっています。この記事を読めば、キャタピラーとNVIDIAが描く戦略の全貌と、自社のデジタル変革に応用できる具体的な視点が手 [...] <p>The post キャタピラーとNVIDIAが変える重機のAI戦略とは？フィジカルAIの全貌 first appeared on 生成AIと建設DX.</p>...",
@@ -49,6 +69,26 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/eyecatch-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ISO Publishes New Compatibility Policy for ISO 16739-1 (IFC): A Major Step for Stable Evolution of the Standard",
+      "link": "https://www.buildingsmart.org/iso-publishes-new-compatibility-policy-for-iso-16739-1/",
+      "description": "buildingSMART International is pleased to share important news with the openBIM community: ISO/TC 59/SC 13 has published the new Compatibility Policy for ISO 16739-1, the international standard for IF...",
+      "publishedDate": "Thu, 13 Nov 2025 11:27:34 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "日建設計とソフトバンクが自律的に進化し続けるスマートビル構築を支援する会社を設立｜深堀り取材【毎月3回更新】",
+      "link": "https://news.build-app.jp/article/39924/",
+      "description": "日建設計とソフトバンクは、データを活用して自律的に進化し続けるスマートビル「Autonomous Building(オートノマスビルディング......",
+      "publishedDate": "Thu, 09 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/b38d30fabd60f694877f3a65e289ea4b-130x82.png",
       "language": "ja"
     },
     {
@@ -62,16 +102,6 @@
       "language": "ja"
     },
     {
-      "title": "日建設計とソフトバンクが自律的に進化し続けるスマートビル構築を支援する会社を設立｜深堀り取材【毎月3回更新】",
-      "link": "https://news.build-app.jp/article/39924/",
-      "description": "日建設計とソフトバンクは、データを活用して自律的に進化し続けるスマートビル「Autonomous Building(オートノマスビルディング......",
-      "publishedDate": "Thu, 09 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/b38d30fabd60f694877f3a65e289ea4b-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "リバスタの建設技能者向けポイントサービス「ビルダーズポイント」が鹿島建設の全支店に導入",
       "link": "https://news.build-app.jp/article/40070/",
       "description": "株式会社リバスタ（本社：東京都江東区、代表取締役：高橋巧、以下 当社）は、当社が提供する建設技能者向けポイントサービス「ビルダーズポイント」......",
@@ -82,14 +112,14 @@
       "language": "ja"
     },
     {
-      "title": "2030年市場規模6.5兆円へ。衛星データが「建設DX」に貢献！ —CONSEOレポートが示す“衛星データ駆動型スマートシティ”",
-      "link": "https://news.build-app.jp/article/40034/",
-      "description": "※本記事の要約・構成にはAIを活用しており、最終的な監修・解説は編集部が担当しています。 日本の建設業界は今、物理的な「地上」の枠組みを超え......",
-      "publishedDate": "Thu, 09 Apr 2026 03:00:29 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/06/aboutus-1024x576-1-130x73.jpg",
-      "language": "ja"
+      "title": "The buildingSMART Implementers Assembly, February 2026 Event Report",
+      "link": "https://www.buildingsmart.org/the-buildingsmart-implementers-assembly-february-2026-event-report/",
+      "description": "The latest buildingSMART Implementers Assembly, hosted by Bentley in their Exton (PA) office, brought together the buildingSMART implementers community for two days of focused discussion and practical...",
+      "publishedDate": "Thu, 09 Apr 2026 11:11:07 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "人手削減・燃費30%減──清水建設「Smart Dozer」が変える建設現場",
@@ -182,6 +212,16 @@
       "language": "ja"
     },
     {
+      "title": "【2026年版】建設機械とは？種類・メーカー・資格・レンタルまで完全ガイド",
+      "link": "https://news.build-app.jp/article/40158/",
+      "description": "建設機械は、土木や建築の現場で作業効率と安全性を大きく左右する存在です。 しかし、種類や用途を知らないまま扱うと、コスト増や事故リスクにもつ......",
+      "publishedDate": "Mon, 13 Apr 2026 22:03:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/e7545446e4efa28a3f8406aea35a345a-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "GRIFFY、体調管理ソリューション「GenVital LTE」に「うずくまり検知」追加",
       "link": "https://news.build-app.jp/article/40074/",
       "description": "エコモット株式会社（本社：北海道札幌市、代表取締役 入澤 拓也、以下「エコモット」）は、連結子会社である株式会社GRIFFY（本社：東京都千......",
@@ -200,6 +240,66 @@
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/23982404_m-130x87.jpg",
       "language": "ja"
+    },
+    {
+      "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
+      "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
+      "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
+      "publishedDate": "Mon, 08 Dec 2025 19:22:27 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
+      "link": "https://www.buildingsmart.org/buildingsmart-brazil-has-been-formally-approved-as-a-full-chapter/",
+      "description": "London, U.K. – March 27th, 2026 — buildingSMART International (bSI) is pleased to announce that buildingSMART Brazil has been formally approved by the Board to become a Full Chapter, effective March.....",
+      "publishedDate": "Fri, 27 Mar 2026 10:19:53 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Alfred Waschl Steps Down from buildingSMART International Board of Directors",
+      "link": "https://www.buildingsmart.org/alfred-waschl-resigned-from-the-board/",
+      "description": "London, U.K. – February 27th, 2026 — buildingSMART International (bSI) announces that Alfred Waschl resigned from the Board of Directors on 29 January 2026. Due to ill health, Alfred previously steppe...",
+      "publishedDate": "Fri, 27 Feb 2026 09:21:11 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Key Outcomes from the Domain Leadership Conference in Zurich",
+      "link": "https://www.buildingsmart.org/key-outcomes-from-the-domain-leadership-conference-in-zurich/",
+      "description": "The recent Domain Leadership Conference held in Zurich on 4 &#38; 5 February marked an important moment for buildingSMART International. bSI Domains are membership-led, pro bono programmes representin...",
+      "publishedDate": "Fri, 20 Mar 2026 10:06:51 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "openBIM Practitioner Certification enters full-scale implementation across Chapters",
+      "link": "https://www.buildingsmart.org/openbim-practitioner-certification-enters-full-scale-implementation-across-chapters/",
+      "description": "The openBIM Practitioner Certification is now rolling out across the buildingSMART community, as part of the ongoing expansion of the Professional Certification Program, marking a major milestone in p...",
+      "publishedDate": "Fri, 05 Dec 2025 22:18:08 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Board of Directors Changes",
+      "link": "https://www.buildingsmart.org/board-of-directors-changes/",
+      "description": "London, U.K. – December 5th, 2025 — buildingSMART International (bSI) is today announcing some Board of Director changes. Board Changes Due to ill health, Alfred Waschl has stepped down from... The po...",
+      "publishedDate": "Fri, 05 Dec 2025 19:25:08 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     }
   ]
 }
