@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-15T04:09:46.660293",
+  "lastUpdated": "2026-04-16T04:15:54.197135",
   "articles": [
     {
       "title": "Build with Lyria 3, our newest music generation model",
@@ -21,6 +21,149 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Lyria-3-Pro_thumbnail.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "おすすめ生成AIツール30種類と10カテゴリーを比較一覧で紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/gen-ai-kind-list",
+      "description": "「生成AIにはどんな種類があるの？」「自社に合ったおすすめの生成AIツールを比較したい」と考えている方も多いのではないでしょうか。文章や画像、動画など、生成AIには10以上のカテゴリーがあり、それぞれに特化したおすすめツ [...]...",
+      "publishedDate": "Wed, 15 Apr 2026 15:48:49 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/08/gen-ai-kind-list_2508-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
+      "titleJa": "Gemini 3.1 Flash TTS: 次世代の表現力豊かな AI スピーチ",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/",
+      "description": "Gemini logo next to the text \"3.1 Flash TTS\", all over colored dots...",
+      "publishedDate": "Wed, 15 Apr 2026 15:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3.1-flash-tts_blog_keywo.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "【Google Vids】動画制作を外注しない時代が来た！？Google動画生成AIの特徴・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/google-vids/",
+      "description": "動画コンテンツの重要性が高まる一方で、「制作に時間がかかる」「専門的な編集スキルがない」と悩んでいませんか？そんな皆さんの悩みを解決するのが、Googleが提供する生成AI動画ツール「Google Vids（グーグルヴィ [...]...",
+      "publishedDate": "Wed, 15 Apr 2026 14:38:43 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/01/google-vids_2601-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Code Ultraplanとは？従来のプランモードとの違い・使い方・料金を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-code-ultraplan/",
+      "description": "2026年4月11日、Anthropicは自社のAIコーディングツール「Claude Code」に新機能「Ultraplan」をリリースしました！ この機能は、われわれ開発者がターミナルで行っていた設計・計画フェーズをク [...]...",
+      "publishedDate": "Wed, 15 Apr 2026 13:15:43 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Code-Ultraplan-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "The Download: NASA’s nuclear spacecraft and unveiling our AI 10",
+      "titleJa": "ダウンロード: NASA の原子力宇宙船と AI 10 の発表",
+      "link": "https://www.technologyreview.com/2026/04/15/1135904/the-download-nasa-nuclear-powered-spacecraft-10-things-that-matter-in-ai-right-now/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. NASA is building the first nuclear reactor-powered...",
+      "publishedDate": "Wed, 15 Apr 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/10/GettyImages-82110531-social.jpg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "Inside VAKRA: Reasoning, Tool Use, and Failure Modes of Agents",
+      "titleJa": "VAKRA の内部: エージェントの推論、ツールの使用、障害モード",
+      "link": "https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis",
+      "description": "...",
+      "publishedDate": "Wed, 15 Apr 2026 12:07:25 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/677629b4931b3b2eb8d5820a/aheSsLHG7bQqr_2b8A6cS.png",
+      "language": "en"
+    },
+    {
+      "title": "【Claude Code Routines】Claude Codeに追加された新たな自動化フレームワークを徹底解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-code-routines/",
+      "description": "2026年4月、Anthropicは開発者向けAIコーディングツール「Claude Code」に、新たな自動化フレームワーク「Claude Code Routines」をリサーチプレビューとして追加しました！ これまでC [...]...",
+      "publishedDate": "Wed, 15 Apr 2026 11:52:48 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Code-Routines-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram",
+      "titleJa": "サイバー詐欺師はテレグラムで販売されている違法ツールを使用して銀行のセキュリティを回避しています",
+      "link": "https://www.technologyreview.com/2026/04/15/1135898/cyberscammers-bypassing-bank-telegram/",
+      "description": "From inside a money-laundering center in Cambodia, an employee opens a popular Vietnamese banking app on his phone. The app asks him to upload a photo associated with the account, so he clicks on a pi...",
+      "publishedDate": "Wed, 15 Apr 2026 11:26:12 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/water-houses2a.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "The next evolution of the Agents SDK",
+      "titleJa": "エージェント SDK の次の進化",
+      "link": "https://openai.com/index/the-next-evolution-of-the-agents-sdk",
+      "description": "OpenAI updates the Agents SDK with native sandbox execution and a model-native harness, helping developers build secure, long-running agents across files and tools....",
+      "publishedDate": "Wed, 15 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Meet HoloTab by HCompany. Your AI browser companion.",
+      "titleJa": "HCompany の HoloTab をご紹介します。 AI ブラウザーの相棒。",
+      "link": "https://huggingface.co/blog/Hcompany/holotab",
+      "description": "...",
+      "publishedDate": "Wed, 15 Apr 2026 09:25:20 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Hcompany/holotab.png",
+      "language": "en"
+    },
+    {
+      "title": "No one’s sure if synthetic mirror life will kill us all",
+      "titleJa": "合成鏡の生命体が私たち全員を殺すかどうかは誰にも分かりません",
+      "link": "https://www.technologyreview.com/2026/04/15/1135197/synthetic-mirror-life-microbes-kill-us-all/",
+      "description": "For four days in February 2019, some 30 synthetic biologists and ethicists hunkered down at a conference center in Northern Virginia to brainstorm high-risk, cutting-­edge, irresistibly exciting ideas...",
+      "publishedDate": "Wed, 15 Apr 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/mirror-dishes.jpg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "ロート製薬、フィジカルAI活用の「ヒューマノイド開発プロジェクト」始動",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/rohto-physicalai-humanoid-project/",
+      "description": "ロート製薬は、フィジカルAIを活用した「ヒューマノイド開発プロジェクト」を始動しました。CPSを実装した上野テクノセンターを実証拠点とし、製造現場で人と協働するモデルの確立を目指します。 このニュースのポイント ロート製 [...] The post ロート製薬、フィジカルAI活用の「ヒューマノイド開発プロジェクト」始動 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 15 Apr 2026 08:54:49 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/162.png",
+      "language": "ja"
+    },
+    {
+      "title": "Building trust in the AI era with privacy-led UX",
+      "titleJa": "プライバシー主導の UX で AI 時代の信頼を構築",
+      "link": "https://www.technologyreview.com/2026/04/15/1135530/building-trust-in-the-ai-era-with-privacy-led-ux/",
+      "description": "The practice of privacy-led user experience (UX) is a design philosophy that treats transparency around data collection and usage as an integral part of the customer relationship. An undertapped oppor...",
+      "publishedDate": "Wed, 15 Apr 2026 06:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/MITTR-Usercentrics-report-cover.png?w=1555",
       "language": "en"
     },
     {
@@ -46,50 +189,6 @@
       "language": "ja"
     },
     {
-      "title": "LangChainとは？料金・実装例までいま知るべきポイント総まとめ！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/langchain-is/",
-      "description": "皆さんは、LangChainというライブラリをご存知でしょうか？ LangChainを使うことで、ChatGPTやClaude3といった生成AIの機能を高め、より実用的に使えるようになるのです。現代において生成AIは、プ [...]...",
-      "publishedDate": "Wed, 08 Apr 2026 15:43:14 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/01/AIモン_LangChain-1-1024x576.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "DALL-E 3とは？使い方・日本語対応・プロンプトのコツまでやさしく解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/dall-e3/",
-      "description": "皆さんはDALL-E 3をご存じですか？ 2023年9月21日にOpenAI社から発表された最新の画像生成AIで、ChatGPTを使って画像を生成することができるんです！従来のものから大幅に性能が向上しており、プロンプト [...]...",
-      "publishedDate": "Wed, 08 Apr 2026 15:03:25 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/01/AIモン_DALL・E3-1024x576.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ALTK‑Evolve: On‑the‑Job Learning for AI Agents",
-      "titleJa": "ALTK‑Evolve: AI エージェントのための現場学習",
-      "link": "https://huggingface.co/blog/ibm-research/altk-evolve",
-      "description": "...",
-      "publishedDate": "Wed, 08 Apr 2026 14:27:42 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6435a1131860001f144239ea/uxQyadM-_5UjGrNiwUGI0.png",
-      "language": "en"
-    },
-    {
-      "title": "ローカルAIとは？知らないと情シス失格！？クラウドAIとの違いと導入判断のポイントを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/local-ai/",
-      "description": "クラウドAIは便利な一方で、「社内データを外に出して大丈夫か」「使うほど料金が増えないか」と不安を感じる人も増えています。利用量や用途によっては、継続的なコストが想定以上に膨らむケースがあります。 そこで注目されているの [...]...",
-      "publishedDate": "Wed, 08 Apr 2026 14:02:05 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Local-AI_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Safetensors is Joining the PyTorch Foundation",
       "titleJa": "Safetensors が PyTorch Foundation に参加します",
       "link": "https://huggingface.co/blog/safetensors-joins-pytorch-foundation",
@@ -98,17 +197,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/safetensors-joins-pytorch-foundation/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Holo3: Breaking the Computer Use Frontier",
-      "titleJa": "Holo3: コンピューター使用のフロンティアを突破する",
-      "link": "https://huggingface.co/blog/Hcompany/holo3",
-      "description": "...",
-      "publishedDate": "Wed, 01 Apr 2026 16:36:15 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/698224a939bac08a1b6e0488/V66nfQj4EqV6imWD-Cgf0.png",
       "language": "en"
     },
     {
@@ -219,17 +307,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/62543749b777cd32720675c2/6SncRLSzbOb4IubAj2qyN.png",
-      "language": "en"
-    },
-    {
-      "title": "Our latest investment in open source security for the AI era",
-      "titleJa": "AI 時代に向けたオープンソース セキュリティへの最新の投資",
-      "link": "https://blog.google/innovation-and-ai/technology/safety-security/ai-powered-open-source-security/",
-      "description": "A collage including security icons and photos of hands clasped, a man looking at a computer, and two people pointing at something off camera...",
-      "publishedDate": "Tue, 17 Mar 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/25367___BRS___Aspen_Security_Fo.max-600x600.format-webp_J9uPoFt.webp",
       "language": "en"
     },
     {
@@ -387,70 +464,15 @@
       "language": "en"
     },
     {
-      "title": "Watch James Manyika talk AI and creativity with LL COOL J.",
-      "titleJa": "James Manyika が LL COOL J と AI と創造性について語る様子をご覧ください。",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/ll-cool-j-dialogues/",
-      "description": "In the latest episode of our Dialogues on Technology and Society series, LL COOL J sits down with James Manyika....",
-      "publishedDate": "Thu, 26 Mar 2026 17:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Approved_thumbnail_with_logo.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Transform your headphones into a live personal translator on iOS.",
-      "titleJa": "ヘッドフォンを iOS 上のライブ個人翻訳者に変身させます。",
-      "link": "https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones/",
-      "description": "Google Translate’s Live translate with headphones is officially arriving on iOS! And we're expanding the capability for both iOS and Android users to even more countries…...",
-      "publishedDate": "Thu, 26 Mar 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Static-InterstitialscreenJapane.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
-      "titleJa": "Gemini 3.1 Flash Live: オーディオ AI をより自然で信頼性の高いものに",
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
-      "description": "The Gemini emblem sits next to text reading 'Gemini 3.1 Flash Live'. The background has blue, multicolored dots making up a microphone icon...",
-      "publishedDate": "Thu, 26 Mar 2026 15:21:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3.1-flash-live_blog_head.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Search Live is expanding globally",
-      "titleJa": "Search Live は世界的に拡大しています",
-      "link": "https://blog.google/products-and-platforms/products/search/search-live-global-expansion/",
-      "description": "A graphic with the words Search Live shown underneath a waveform icon. To the right, a phone shows the Google app with Search Live open. The camera is pointing at trees in a forest....",
-      "publishedDate": "Thu, 26 Mar 2026 15:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Live_blog_header.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Muse Sparkとは？Metaが発表したパーソナル超知性AIの機能・性能・料金を徹底解説",
+      "title": "「AIエージェント実践ユースケース集」を公開！業務の「計画・実行・確認」を自動化する自律型AIの最新動向と主要サービス比較",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/muse-spark/",
-      "description": "2026年4月、Metaから新たな次世代AIモデルが発表されました。 今回公開された「Muse Spark」は、テキスト・画像・音声を横断して扱うマルチモーダル推論モデルであり、個人単位での高度な知的支援、いわゆるパーソ [...]...",
-      "publishedDate": "Thu, 09 Apr 2026 12:55:05 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Muse-Spark-1024x576.webp",
+      "link": "https://aismiley.co.jp/ai_news/ai-agent-usecase-guide/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、自律的に業務を遂行する次世代AIの活用ノウハウをまとめた「AIエージェント実践ユースケース集」を、2026年4月16日（木）に公開し [...] The post 「AIエージェント実践ユースケース集」を公開！業務の「計画・実行・確認」を自動化する自律型AIの最新動向と主要サービス比較 first appear...",
+      "publishedDate": "Thu, 16 Apr 2026 02:00:23 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/ai-agent-usecase-guide000.png",
       "language": "ja"
-    },
-    {
-      "title": "Waypoint-1.5: Higher-Fidelity Interactive Worlds for Everyday GPUs",
-      "titleJa": "Waypoint-1.5: 日常の GPU 向けのより忠実度の高いインタラクティブな世界",
-      "link": "https://huggingface.co/blog/waypoint-1-5",
-      "description": "...",
-      "publishedDate": "Thu, 09 Apr 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/overworld/waypoint-v1-5.png",
-      "language": "en"
     },
     {
       "title": "Claude Managed Agents in Notionとは？NotionでAIエージェントを動かす新機能を徹底解説",
@@ -497,28 +519,6 @@
       "language": "ja"
     },
     {
-      "title": "埼玉県、県内公共団体等に生成AI共同利用開始を発表。自治体DXを推進",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/saitama-ai-joint-dx/",
-      "description": "埼玉県は令和8年4月から、県内地方公共団体等における生成AIの共同利用を開始しました。県と全市町村で構成するネットワーク内に専門部会を設置し、新技術の共同活用を推進します。 このニュースのポイント 埼玉県、令和8年4月か [...] The post 埼玉県、県内公共団体等に生成AI共同利用開始を発表。自治体DXを推進 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 13 Apr 2026 08:50:16 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/saitama-ai-joint.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Microsoft Copilotの使い方とは？無料版・有料版の違いから部門別活用術まで紹介",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/microsoft-copilot-edition-paid/",
-      "description": "「自分で使ってみたら便利だった。でも、会社全体に広げるには何が必要なのか分からない」 Microsoft Copilotに関心を持ち始めた企業担当者の方から、こうした声を聞くことが増えています。 本記事では、Copilo [...] The post Microsoft Copilotの使い方とは？無料版・有料版の違いから部門別活用術まで紹介 first appeared on AIポータルメディ...",
-      "publishedDate": "Mon, 13 Apr 2026 02:15:18 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/MicrosoftCopilot.jpg",
-      "language": "ja"
-    },
-    {
       "title": "【Firebase Studio】GoogleのAIプラットフォーム！使い方や料金、サポート終了についても解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/firebase-studio/",
@@ -549,6 +549,17 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/01/AIモン_-PixVerse-R1-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "マイクロソフト、PostgreSQL/MySQL/SQL Serverなどへの同時接続に対応した「SQL MCP Server」オープンソースで公開",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/postgresqlmysqlsql_serversql_mcp_server.html",
+      "description": "マイクロソフトは、PostgreSQL、MySQL、SQL Serverを含む複数のデータベースに対応したMCPサーバ「SQL MCP Server」をオープンソースで公開しました。 SQL MCP Serverを利用することで、AIエージ......",
+      "publishedDate": "2026-04-15T15:40:20Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/sqlmcpserver-la01.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/rise-githubactionsrunner-free202603.png",
-      "language": "ja"
-    },
-    {
-      "title": "AWS、数秒でデータベース作成可能な新機能をAmazon Aurora PostgreSQLサーバーレスに搭載",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/awsamazon_aurora_postgresql.html",
-      "description": "Amazon Web Services（AWS）は、Amazon Aurora PostgreSQLサーバーレスの新機能として、わずか2クリック、時間にして数秒でデータベースが作成できるエクスプレス設定（express configurat......",
-      "publishedDate": "2026-03-30T15:50:34Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/aurora-postgresql-serverless-expressconfigration-ann.png",
       "language": "ja"
     }
   ]
