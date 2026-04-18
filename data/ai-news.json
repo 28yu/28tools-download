@@ -1,17 +1,6 @@
 {
-  "lastUpdated": "2026-04-17T04:13:38.066716",
+  "lastUpdated": "2026-04-18T03:49:13.223943",
   "articles": [
-    {
-      "title": "Build with Lyria 3, our newest music generation model",
-      "titleJa": "最新の音楽生成モデルである Lyria 3 で構築",
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/lyria-3-developers/",
-      "description": "Google Lyria teaser...",
-      "publishedDate": "Wed, 25 Mar 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BuildWithLyria3_social.max-600x600.format-webp.webp",
-      "language": "en"
-    },
     {
       "title": "おすすめ生成AIツール30種類と10カテゴリーを比較一覧で紹介",
       "titleJa": null,
@@ -57,17 +46,6 @@
       "language": "ja"
     },
     {
-      "title": "The Download: NASA’s nuclear spacecraft and unveiling our AI 10",
-      "titleJa": "ダウンロード: NASA の原子力宇宙船と AI 10 の発表",
-      "link": "https://www.technologyreview.com/2026/04/15/1135904/the-download-nasa-nuclear-powered-spacecraft-10-things-that-matter-in-ai-right-now/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. NASA is building the first nuclear reactor-powered...",
-      "publishedDate": "Wed, 15 Apr 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/10/GettyImages-82110531-social.jpg?w=3000",
-      "language": "en"
-    },
-    {
       "title": "Inside VAKRA: Reasoning, Tool Use, and Failure Modes of Agents",
       "titleJa": "VAKRA の内部: エージェントの推論、ツールの使用、障害モード",
       "link": "https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis",
@@ -90,17 +68,6 @@
       "language": "ja"
     },
     {
-      "title": "Cyberscammers are bypassing banks’ security with illicit tools sold on Telegram",
-      "titleJa": "サイバー詐欺師はテレグラムで販売されている違法ツールを使用して銀行のセキュリティを回避しています",
-      "link": "https://www.technologyreview.com/2026/04/15/1135898/cyberscammers-bypassing-bank-telegram/",
-      "description": "From inside a money-laundering center in Cambodia, an employee opens a popular Vietnamese banking app on his phone. The app asks him to upload a photo associated with the account, so he clicks on a pi...",
-      "publishedDate": "Wed, 15 Apr 2026 11:26:12 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/water-houses2a.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "The next evolution of the Agents SDK",
       "titleJa": "エージェント SDK の次の進化",
       "link": "https://openai.com/index/the-next-evolution-of-the-agents-sdk",
@@ -121,50 +88,6 @@
       "category": "tools",
       "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Hcompany/holotab.png",
       "language": "en"
-    },
-    {
-      "title": "No one’s sure if synthetic mirror life will kill us all",
-      "titleJa": "合成鏡の生命体が私たち全員を殺すかどうかは誰にも分かりません",
-      "link": "https://www.technologyreview.com/2026/04/15/1135197/synthetic-mirror-life-microbes-kill-us-all/",
-      "description": "For four days in February 2019, some 30 synthetic biologists and ethicists hunkered down at a conference center in Northern Virginia to brainstorm high-risk, cutting-­edge, irresistibly exciting ideas...",
-      "publishedDate": "Wed, 15 Apr 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/mirror-dishes.jpg?w=3000",
-      "language": "en"
-    },
-    {
-      "title": "ロート製薬、フィジカルAI活用の「ヒューマノイド開発プロジェクト」始動",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/rohto-physicalai-humanoid-project/",
-      "description": "ロート製薬は、フィジカルAIを活用した「ヒューマノイド開発プロジェクト」を始動しました。CPSを実装した上野テクノセンターを実証拠点とし、製造現場で人と協働するモデルの確立を目指します。 このニュースのポイント ロート製 [...] The post ロート製薬、フィジカルAI活用の「ヒューマノイド開発プロジェクト」始動 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 15 Apr 2026 08:54:49 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/162.png",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新】生成AIおすすめ比較10選！ChatGPT、Gemini、Claudeの性能を徹底検証",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/generative-ai-compare/",
-      "description": "生成AIの進化は目覚ましく、「種類が多すぎて選べない」「結局どれに課金すべきか分からない」と悩んでいる方も多いのではないでしょうか。特に企業でのAI導入やDX推進においては、ツール選定がそのまま生産性に直結するため、慎重 [...] The post 【2026年最新】生成AIおすすめ比較10選！ChatGPT、Gemini、Claudeの性能を徹底検証 first appeared on AIポ...",
-      "publishedDate": "Wed, 15 Apr 2026 01:10:32 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/125.png",
-      "language": "ja"
-    },
-    {
-      "title": "生成AIチェッカー8選と検知対策完全ガイド",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/generative-ai-check/",
-      "description": "「せっかく書いた記事が生成AIと判定されてしまった…」「納品された原稿、生成AIのコピペじゃないかな？」 生成AIの急速な普及により、文章の“人間性”や“オリジナリティ”が厳しく問われる時代になりました。特にSEOやコン [...] The post 生成AIチェッカー8選と検知対策完全ガイド first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 15 Apr 2026 01:08:14 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/generativeaichecker.png",
-      "language": "ja"
     },
     {
       "title": "Safetensors is Joining the PyTorch Foundation",
@@ -201,7 +124,7 @@
     },
     {
       "title": "Falcon Perception",
-      "titleJa": "ファルコンの知覚",
+      "titleJa": "ファルコンの認識",
       "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
       "description": "...",
       "publishedDate": "Wed, 01 Apr 2026 07:13:20 GMT",
@@ -266,17 +189,6 @@
       "language": "en"
     },
     {
-      "title": "A New Framework for Evaluating Voice Agents (EVA)",
-      "titleJa": "音声エージェント (EVA) を評価するための新しいフレームワーク",
-      "link": "https://huggingface.co/blog/ServiceNow-AI/eva",
-      "description": "...",
-      "publishedDate": "Tue, 24 Mar 2026 02:01:52 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/eva.png",
-      "language": "en"
-    },
-    {
       "title": "Turn your best AI prompts into one-click tools in Chrome",
       "titleJa": "最高の AI プロンプトを Chrome のワンクリック ツールに変える",
       "link": "https://blog.google/products-and-platforms/products/chrome/skills-in-chrome/",
@@ -297,17 +209,6 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_for_the_Economy_Forum_2026.max-600x600.format-webp.webp",
       "language": "en"
-    },
-    {
-      "title": "Meta、新AIモデル「Muse Spark」発表。複数タスクの同時並行処理や画像・グラフの視覚理解に対応",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/meta-newai-muse-spark-20260408/",
-      "description": "Metaは、新しいAIモデル「Muse Spark」を発表しました。複数タスクの同時並行処理や画像・グラフの深い視覚理解が可能で、日常的なショッピングから健康相談まで幅広くサポートします。 このニュースのポイント Met [...] The post Meta、新AIモデル「Muse Spark」発表。複数タスクの同時並行処理や画像・グラフの視覚理解に対応 first appeared on AI...",
-      "publishedDate": "Tue, 14 Apr 2026 08:10:28 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0410ainewsmeta.png",
-      "language": "ja"
     },
     {
       "title": "Trusted access for the next era of cyber defense",
@@ -453,6 +354,50 @@
       "language": "en"
     },
     {
+      "title": "Why having “humans in the loop” in an AI war is an illusion",
+      "titleJa": "なぜAI戦争に「人間が巻き込まれる」というのは幻想なのか",
+      "link": "https://www.technologyreview.com/2026/04/16/1136029/humans-in-the-loop-ai-war-illusion/",
+      "description": "The availability of artificial intelligence for use in warfare is at the center of a legal battle between Anthropic and the Pentagon. This debate has become urgent, with AI playing a bigger role than ...",
+      "publishedDate": "Thu, 16 Apr 2026 12:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/human-war-loop2.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Codex for (almost) everything",
+      "titleJa": "(ほぼ) すべてのコーデックス",
+      "link": "https://openai.com/index/codex-for-almost-everything",
+      "description": "The updated Codex app for macOS and Windows adds computer use, in-app browsing, image generation, memory, and plugins to accelerate developer workflows....",
+      "publishedDate": "Thu, 16 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The noise we make is hurting animals. Can we learn to shut up?",
+      "titleJa": "私たちが出す騒音は動物たちを傷つけます。黙ることを学ぶことはできるでしょうか？",
+      "link": "https://www.technologyreview.com/2026/04/16/1135179/anthropogenic-noise-hurting-animals/",
+      "description": "When the covid-19 pandemic started, Jennifer Phillips thought about the songs of the sparrows. They were easier to hear, because the world had suddenly become quieter. Car traffic plummeted as people ...",
+      "publishedDate": "Thu, 16 Apr 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/GettyImages-546444524.jpg?w=2667",
+      "language": "en"
+    },
+    {
+      "title": "The quest to measure our relationship with nature",
+      "titleJa": "私たちと自然との関係を測る探求",
+      "link": "https://www.technologyreview.com/2026/04/16/1135245/measure-relationship-with-nature-index/",
+      "description": "As a movement, environmentalism has been pretty misanthropic. Understandably so—we humans have done some destructive things to the ecosystems around us. In the 21st century, though, mainstream conserv...",
+      "publishedDate": "Thu, 16 Apr 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/tree-copy.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
       "title": "GPT-5.4-Cyberとは？OpenAIが防御専門家向けに開発したサイバーセキュリティ特化AIを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/gpt-5-4-cyber/",
@@ -530,14 +475,69 @@
       "language": "ja"
     },
     {
-      "title": "Claude Managed Agents in Notionとは？NotionでAIエージェントを動かす新機能を徹底解説",
+      "title": "Introducing GPT-Rosalind for life sciences research",
+      "titleJa": "ライフサイエンス研究向けの GPT-Rosalind の紹介",
+      "link": "https://openai.com/index/introducing-gpt-rosalind",
+      "description": "OpenAI introduces GPT-Rosalind, a frontier reasoning model built to accelerate drug discovery, genomics analysis, protein reasoning, and scientific research workflows....",
+      "publishedDate": "Thu, 16 Apr 2026 01:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "OpenAI、ITメディア企業TBPNを買収。AIを巡る対話基盤の強化を図る",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-managed-agents-in-notion/",
-      "description": "近年、AIエージェントの活用はチャット中心の使い方から一歩進み、業務そのものを実行する「作業主体」としての役割へと広がりつつあります。特にチームでの利用においては、単なる対話だけでなく、タスク管理やドキュメント、意思決定 [...]...",
-      "publishedDate": "Sun, 12 Apr 2026 15:09:26 +0000",
+      "link": "https://aismiley.co.jp/ai_news/openai-acquire-tbpn/",
+      "description": "OpenAIは、メディア企業のTBPNを買収したと発表しました。AIを巡る対話の場を強化する狙いで、TBPNの既存コミュニティを活用しながら対話の質向上を図ります。 このニュースのポイント OpenAIがメディア企業TB [...] The post OpenAI、ITメディア企業TBPNを買収。AIを巡る対話基盤の強化を図る first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Fri, 17 Apr 2026 07:33:29 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/openai-acquire-tbpn.png",
+      "language": "ja"
+    },
+    {
+      "title": "マネーフォワード、AIがバックオフィス業務を自律遂行する新サービスを発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/moneyforward-ai-office-service/",
+      "description": "マネーフォワードは、新サービス「マネーフォワード AI Cowork」を2026年7月より提供開始すると発表しました。自然言語による対話を通じて、AIが自律的にバックオフィス業務を遂行します。 このニュースのポイント マ [...] The post マネーフォワード、AIがバックオフィス業務を自律遂行する新サービスを発表 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 17 Apr 2026 07:24:53 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/moneyforward-ai-office-service.png",
+      "language": "ja"
+    },
+    {
+      "title": "【Claude Opus 4.7】世界最高性能のフラッグシップモデルの特徴・料金・Opus 4.6との違いを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-opus-4-7",
+      "description": "2026年4月16日、Anthropicはフラッグシップモデル「Claude Opus 4.7」を一般公開しました！ 半年前にリリースされたClaude Opus 4.6に続く後継モデルとして登場した本モデルは、ソフトウ [...]...",
+      "publishedDate": "Fri, 17 Apr 2026 07:22:18 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Managed-Agents-in-Notion-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Opus-4.7-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Anysphere、AIコードエディタ「Cursor 3」をリリース。エージェント中心のUIに刷新",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/cursor-ai-coding-edit/",
+      "description": "Anysphereは、Cursorの新バージョンとなる「Cursor 3」をリリースしました。AIエージェントを中心に据えたインターフェースへ刷新しています。 このニュースのポイント Anysphere、AIコードエディ [...] The post Anysphere、AIコードエディタ「Cursor 3」をリリース。エージェント中心のUIに刷新 first appeared on AIポータル...",
+      "publishedDate": "Fri, 17 Apr 2026 07:18:00 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/Anysphere-Cursor-3.png",
+      "language": "ja"
+    },
+    {
+      "title": "AI inside、全二重型音声対話モデル開発。対話と業務実行を同時に処理しリアルタイムな会話応答を実現",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-inside-full-duplex-model/",
+      "description": "AI insideは、人との対話と業務の実行を同時に処理する全二重型音声対話モデルを開発しました。発話中から処理を進めることで、リアルタイムな会話応答を実現します。 このニュースのポイント AI inside、人との対話 [...] The post AI inside、全二重型音声対話モデル開発。対話と業務実行を同時に処理しリアルタイムな会話応答を実現 first appeared on AIポ...",
+      "publishedDate": "Fri, 17 Apr 2026 07:15:34 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0416aiinsideeye.png",
       "language": "ja"
     },
     {
