@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-19T04:15:34.205818",
+  "lastUpdated": "2026-04-20T04:21:04.042422",
   "articles": [
     {
       "title": "おすすめ生成AIツール30種類と10カテゴリーを比較一覧で紹介",
@@ -24,28 +24,6 @@
       "language": "en"
     },
     {
-      "title": "【Google Vids】動画制作を外注しない時代が来た！？Google動画生成AIの特徴・料金・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/google-vids/",
-      "description": "動画コンテンツの重要性が高まる一方で、「制作に時間がかかる」「専門的な編集スキルがない」と悩んでいませんか？そんな皆さんの悩みを解決するのが、Googleが提供する生成AI動画ツール「Google Vids（グーグルヴィ [...]...",
-      "publishedDate": "Wed, 15 Apr 2026 14:38:43 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/01/google-vids_2601-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Code Ultraplanとは？従来のプランモードとの違い・使い方・料金を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code-ultraplan/",
-      "description": "2026年4月11日、Anthropicは自社のAIコーディングツール「Claude Code」に新機能「Ultraplan」をリリースしました！ この機能は、われわれ開発者がターミナルで行っていた設計・計画フェーズをク [...]...",
-      "publishedDate": "Wed, 15 Apr 2026 13:15:43 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Code-Ultraplan-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Inside VAKRA: Reasoning, Tool Use, and Failure Modes of Agents",
       "titleJa": "VAKRA の内部: エージェントの推論、ツールの使用、障害モード",
       "link": "https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis",
@@ -57,17 +35,6 @@
       "language": "en"
     },
     {
-      "title": "【Claude Code Routines】Claude Codeに追加された新たな自動化フレームワークを徹底解説！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code-routines/",
-      "description": "2026年4月、Anthropicは開発者向けAIコーディングツール「Claude Code」に、新たな自動化フレームワーク「Claude Code Routines」をリサーチプレビューとして追加しました！ これまでC [...]...",
-      "publishedDate": "Wed, 15 Apr 2026 11:52:48 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Code-Routines-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "The next evolution of the Agents SDK",
       "titleJa": "エージェント SDK の次の進化",
       "link": "https://openai.com/index/the-next-evolution-of-the-agents-sdk",
@@ -75,7 +42,7 @@
       "publishedDate": "Wed, 15 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/41RxFM3sjs7BInenm8rsOt/f65ac2f0bce5b701dc61051ca7e58453/Agents_SDK__SEO_Card.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -124,7 +91,7 @@
     },
     {
       "title": "Falcon Perception",
-      "titleJa": "ファルコンの認識",
+      "titleJa": "ファルコンの知覚",
       "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
       "description": "...",
       "publishedDate": "Wed, 01 Apr 2026 07:13:20 GMT",
@@ -179,7 +146,7 @@
     },
     {
       "title": "TRL v1.0: Post-Training Library Built to Move with the Field",
-      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたポストトレーニング ライブラリ",
+      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたトレーニング後のライブラリ",
       "link": "https://huggingface.co/blog/trl-v1",
       "description": "...",
       "publishedDate": "Tue, 31 Mar 2026 00:00:00 GMT",
@@ -218,7 +185,7 @@
       "publishedDate": "Tue, 14 Apr 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/5pnlauz5i8984cutCw5JPP/f3e05730af1446fa0ae61361c995ee87/Scaling_our_trusted_access_program_for_cyber_defense_16x9.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -372,7 +339,7 @@
       "publishedDate": "Thu, 16 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/3kzRaZHk3LsNCB1rF3btFd/f210774dba646ae91ead20a46d89d364/Codex_Blog_SEO.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -486,6 +453,39 @@
       "language": "en"
     },
     {
+      "title": "Qwen3.6-35B-A3Bとは？Claude Sonnet 4.5を超えた空間知能と圧倒的コーディング性能を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/qwen3-6-35b-a3b/",
+      "description": "2026年4月、Alibabaが開発するQwenシリーズから、新たなオープンウェイトLLMが公開されました。 今回登場した「Qwen3.6-35B-A3B」は、Mixture-of-Experts（MoE）構造を採用した [...]...",
+      "publishedDate": "Sun, 19 Apr 2026 13:07:01 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.6-35B-A3B-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Claude Design】Anthropic初の会話型ビジュアル制作プロダクトを徹底解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-design/",
+      "description": "2026年4月18日、Anthropicが新プロダクト「Claude Design」を公開しました！ 同社の実験部門「Anthropic Labs」発の新サービスで、Claudeに自然言語で依頼するだけで、プロトタイプや [...]...",
+      "publishedDate": "Sun, 19 Apr 2026 12:06:30 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Design-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "GoogleのAIモードとは？使い方・SEOへの影響・Geminiとの違いを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/ai-mode/",
+      "description": "AIモードは検索とAI回答が一体化した新しい検索機能です。従来のSEOや検索行動に大きな変化を与えています。Googleが導入を進めている「AIモード」は、検索の常識を大きく変えつつあります。これまでのようにキーワードを [...]...",
+      "publishedDate": "Mon, 20 Apr 2026 03:55:51 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/ai-mode_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "OpenAI、ITメディア企業TBPNを買収。AIを巡る対話基盤の強化を図る",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/openai-acquire-tbpn/",
@@ -549,6 +549,39 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/main-pic.png",
+      "language": "ja"
+    },
+    {
+      "title": "Cloudflare、AIエージェント用のファイルシステム「Cloudflare Artifacts」発表。Git対応バージョン管理とRESTful API対応のファイルシステム",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/cloudflareaicloudflare_artifactsgitrestful_api.html",
+      "description": "Cloudflareは、AIエージェントのためのファイルシステム「Cloudflare Arttfacts」をプライベートベータとして発表しました。 We’ve just launched Artifacts: Git-compatible......",
+      "publishedDate": "2026-04-19T15:41:28Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/aM1upsBS.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Cloudflare、AIエージェントがメールの送受信を行える「Cloudflare Email Service」パブリックベータで公開",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/cloudflareaicloudflare_email_service.html",
+      "description": "Cloudflareは、アプリケーションやAIエージェントが電子メールの送受信を行える「Cloudflare Email Service」をパブリックベータとして公開しました。 Today, Cloudflare Email Service......",
+      "publishedDate": "2026-04-19T15:40:07Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/wIGxaOuQ.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ヘッドレスなSalesforce登場、あらゆる機能がAPI/CLI/MCPでアクセスできる「Salesforce Headless 360」発表",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/salesforceapiclimcpsalesforce_headless_360.html",
+      "description": "Salesforceはサンフランシスコで4月15日と16日の2日間にわたり開催した開発者向けイベント「Salesforce TDX 2026」で、Salesforceのあらゆる機能をAPI、CLI（コマンドライン）、そしてMCP（Model......",
+      "publishedDate": "2026-04-19T15:35:59Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/headless360-ann01.png",
       "language": "ja"
     },
     {
@@ -681,39 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/cursor3ann.png",
-      "language": "ja"
-    },
-    {
-      "title": "マイクロソフト、Webブラウザ上でリアルタイムに3Dレンダリングを実現する「Babylon.js 9.0」正式リリース。照明計算の高速化、パーティクルエディタ搭載など新機能",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/web3dbabylonjs_90.html",
-      "description": "マイクロソフトは、Webブラウザ上で2Dや3Dモデルの高速なレンダリングなどを可能にするオープンソースのJavaScriptライブラリ「Babylon.js」の最新版「Babylon.js 9.0」正式版をリリースしました。 We are ......",
-      "publishedDate": "2026-04-05T16:51:30Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/babylonjs9005.png",
-      "language": "ja"
-    },
-    {
-      "title": "Googleドライブ、AIによるランサムウェア検出と復元機能が正式版に。ランサムウェア検知能力が14倍向上と",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/googleai14.html",
-      "description": "Googleは、ベータ版として提供していたGoogleドライブのランサムウェア検知と復元機能が正式機能になったことを発表しました。 Googleドライブのランサムウェア検出機能はWindowsとmacOSに対応したデスクトップ版Google......",
-      "publishedDate": "2026-04-05T15:58:07Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2025/googledrive-anti-malware-beta03.png",
-      "language": "ja"
-    },
-    {
-      "title": "マイクロソフト、Azure Skills Plugin公開／AWS、Agent Plugins for AWS公開／AIがブラウザを自動操作「Browser Use CLI 2.0」、ほか。2026年3月の人気記事",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/azure_skills_pluginawsagent_plugins_for_awsaibrowser_use_cli_2020263.html",
-      "description": "新しいベッドを買うために、家具屋さんやベッドメーカーのショールームなどあちこちを回っているところです。 展示されているベッドのいくつかに寝転んで感触を確かめていると、だいたい店員さんが説明に寄ってくるのですが、店員さんに見られていると落ち着......",
-      "publishedDate": "2026-04-02T15:32:29Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/fbico_pblky.png",
       "language": "ja"
     }
   ]
