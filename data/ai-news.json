@@ -1,17 +1,6 @@
 {
-  "lastUpdated": "2026-04-20T04:21:04.042422",
+  "lastUpdated": "2026-04-21T04:13:27.294218",
   "articles": [
-    {
-      "title": "おすすめ生成AIツール30種類と10カテゴリーを比較一覧で紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/gen-ai-kind-list",
-      "description": "「生成AIにはどんな種類があるの？」「自社に合ったおすすめの生成AIツールを比較したい」と考えている方も多いのではないでしょうか。文章や画像、動画など、生成AIには10以上のカテゴリーがあり、それぞれに特化したおすすめツ [...]...",
-      "publishedDate": "Wed, 15 Apr 2026 15:48:49 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/08/gen-ai-kind-list_2508-1024x576.webp",
-      "language": "ja"
-    },
     {
       "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
       "titleJa": "Gemini 3.1 Flash TTS: 次世代の表現力豊かな AI スピーチ",
@@ -42,7 +31,7 @@
       "publishedDate": "Wed, 15 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/41RxFM3sjs7BInenm8rsOt/f65ac2f0bce5b701dc61051ca7e58453/Agents_SDK__SEO_Card.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -156,6 +145,39 @@
       "language": "en"
     },
     {
+      "title": "三菱電機ビルソリューションズ、AIを活用した危険予知アプリ「KY-Support」を開発",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/mitsubishi-building-kysupport/",
+      "description": "三菱電機ビルソリューションズは、AI危険予知アプリ「KY-Support」を開発しました。AIで潜在リスクを洗い出し、KY活動を高度化することで労働災害防止を目指します。 このニュースのポイント 三菱電機ビルソリューショ [...] The post 三菱電機ビルソリューションズ、AIを活用した危険予知アプリ「KY-Support」を開発 first appeared on AIポータルメディアA...",
+      "publishedDate": "Tue, 21 Apr 2026 02:48:41 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0416mitsubisieye.png",
+      "language": "ja"
+    },
+    {
+      "title": "【名古屋初開催】「AI博覧会 Nagoya 2026」6月16日・17日に開催決定！～最新AI製品100点以上が名古屋に集結、現場課題を解決する2日間～",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-hakurankai-nagoya-2026/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年6月16日（火）・17日（水）の2日間、名古屋コンベンションホールにて「AI博覧会 Nagoya 2026」を開催します。 [...] The post 【名古屋初開催】「AI博覧会 Nagoya 2026」6月16日・17日に開催決定！～最新AI製品100点以上が名古屋に集結、現場課題を解決する2日...",
+      "publishedDate": "Tue, 21 Apr 2026 01:00:15 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/ai-hakurankai-nagoya-2026_000.png",
+      "language": "ja"
+    },
+    {
+      "title": "How to Ground a Korean AI Agent in Real Demographics with Synthetic Personas",
+      "titleJa": "合成ペルソナを使用して韓国の AI エージェントを実際の人口統計に定着させる方法",
+      "link": "https://huggingface.co/blog/nvidia/build-korean-agents-with-nemotron-personas",
+      "description": "...",
+      "publishedDate": "Tue, 21 Apr 2026 00:40:10 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/build-korean-agents-with-nemotron-personas.png",
+      "language": "en"
+    },
+    {
       "title": "Turn your best AI prompts into one-click tools in Chrome",
       "titleJa": "最高の AI プロンプトを Chrome のワンクリック ツールに変える",
       "link": "https://blog.google/products-and-platforms/products/chrome/skills-in-chrome/",
@@ -185,7 +207,7 @@
       "publishedDate": "Tue, 14 Apr 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/5pnlauz5i8984cutCw5JPP/f3e05730af1446fa0ae61361c995ee87/Scaling_our_trusted_access_program_for_cyber_defense_16x9.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -277,17 +299,6 @@
       "language": "en"
     },
     {
-      "title": "MCP対応プラットフォーム一覧｜Slack・GitHub・Notionなど主要サービスの対応状況まとめ",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/mcp-platform/",
-      "description": "2024年11月にAnthropicが公開したModel Context Protocol（MCP）は、AIエージェントと外部ツールをつなぐオープン標準として急速に普及が進んでいます。 Slack、GitHub、Xといっ [...]...",
-      "publishedDate": "Thu, 16 Apr 2026 13:28:19 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/mcp-platform_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Making AI operational in constrained public sector environments",
       "titleJa": "制約のある公共部門の環境でも AI を運用できるようにする",
       "link": "https://www.technologyreview.com/2026/04/16/1135216/making-ai-operational-in-constrained-public-sector-environments/",
@@ -321,17 +332,6 @@
       "language": "en"
     },
     {
-      "title": "Why having “humans in the loop” in an AI war is an illusion",
-      "titleJa": "AI戦争に「人間が巻き込まれる」というのはなぜ幻想なのか",
-      "link": "https://www.technologyreview.com/2026/04/16/1136029/humans-in-the-loop-ai-war-illusion/",
-      "description": "The availability of artificial intelligence for use in warfare is at the center of a legal battle between Anthropic and the Pentagon. This debate has become urgent, with AI playing a bigger role than ...",
-      "publishedDate": "Thu, 16 Apr 2026 12:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/human-war-loop2.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "Codex for (almost) everything",
       "titleJa": "(ほぼ) すべてのコーデックス",
       "link": "https://openai.com/index/codex-for-almost-everything",
@@ -339,52 +339,8 @@
       "publishedDate": "Thu, 16 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/3kzRaZHk3LsNCB1rF3btFd/f210774dba646ae91ead20a46d89d364/Codex_Blog_SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "The noise we make is hurting animals. Can we learn to shut up?",
-      "titleJa": "私たちが出す騒音は動物たちを傷つけます。黙ることを学ぶことはできるでしょうか？",
-      "link": "https://www.technologyreview.com/2026/04/16/1135179/anthropogenic-noise-hurting-animals/",
-      "description": "When the covid-19 pandemic started, Jennifer Phillips thought about the songs of the sparrows. They were easier to hear, because the world had suddenly become quieter. Car traffic plummeted as people ...",
-      "publishedDate": "Thu, 16 Apr 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/GettyImages-546444524.jpg?w=2667",
-      "language": "en"
-    },
-    {
-      "title": "The quest to measure our relationship with nature",
-      "titleJa": "私たちと自然との関係を測る探求",
-      "link": "https://www.technologyreview.com/2026/04/16/1135245/measure-relationship-with-nature-index/",
-      "description": "As a movement, environmentalism has been pretty misanthropic. Understandably so—we humans have done some destructive things to the ecosystems around us. In the 21st century, though, mainstream conserv...",
-      "publishedDate": "Thu, 16 Apr 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/tree-copy.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "GPT-5.4-Cyberとは？OpenAIが防御専門家向けに開発したサイバーセキュリティ特化AIを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gpt-5-4-cyber/",
-      "description": "2026年4月、サイバーセキュリティの分野において、OpenAIから新たなモデルが登場しました。 今回発表された「GPT-5.4-Cyber」は、高度化するサイバー攻撃に対抗するために設計された、セキュリティ領域特化の大 [...]...",
-      "publishedDate": "Thu, 16 Apr 2026 08:52:03 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-5.4-Cyber-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Gemini 3.1 Flash TTS】世界2位のAI音声合成モデルの特徴・使い方・料金を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gemini-3-1-flash-tts/",
-      "description": "2026年4月16日、Googleは最新のテキスト音声変換モデル「Gemini 3.1 Flash TTS」を公開しました！ 従来のTTSモデルとはひと味違って200以上のaudio tagsによる表現力の制御や、ネイテ [...]...",
-      "publishedDate": "Thu, 16 Apr 2026 08:23:18 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-3.1-Flash-TTS-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "経産省、「AI利活用における民事責任の解釈適用に関する手引き」公表。損害発生時の現行法適用を整理",
@@ -420,28 +376,6 @@
       "language": "ja"
     },
     {
-      "title": "Sapeetの「SAPI ロープレ」、明治の高栄養食品営業部門に正式導入",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sapeet-ai-meiji-introduction/",
-      "description": "Sapeetの生成AIロールプレイングサービス「SAPI ロープレ」が、明治の高栄養食品営業部門で正式導入されました。営業担当者の説明力やヒアリング力の強化を目的としています。 このニュースのポイント Sapeetの生成 [...] The post Sapeetの「SAPI ロープレ」、明治の高栄養食品営業部門に正式導入 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 16 Apr 2026 06:31:07 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/meiji-sapi.png",
-      "language": "ja"
-    },
-    {
-      "title": "「AIエージェント実践ユースケース集」を公開！業務の「計画・実行・確認」を自動化する自律型AIの最新動向と主要サービス比較",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-agent-usecase-guide/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、自律的に業務を遂行する次世代AIの活用ノウハウをまとめた「AIエージェント実践ユースケース集」を、2026年4月16日（木）に公開し [...] The post 「AIエージェント実践ユースケース集」を公開！業務の「計画・実行・確認」を自動化する自律型AIの最新動向と主要サービス比較 first appear...",
-      "publishedDate": "Thu, 16 Apr 2026 02:00:23 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/ai-agent-usecase-guide000.png",
-      "language": "ja"
-    },
-    {
       "title": "Introducing GPT-Rosalind for life sciences research",
       "titleJa": "ライフサイエンス研究向けの GPT-Rosalind の紹介",
       "link": "https://openai.com/index/introducing-gpt-rosalind",
@@ -450,6 +384,28 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Accelerating the cyber defense ecosystem that protects us all",
+      "titleJa": "私たち全員を守るサイバー防御エコシステムを加速する",
+      "link": "https://openai.com/index/accelerating-cyber-defense-ecosystem",
+      "description": "Leading security firms and enterprises join OpenAI’s Trusted Access for Cyber, using GPT-5.4-Cyber and $10M in API grants to strengthen global cyber defense....",
+      "publishedDate": "Thu, 16 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents",
+      "titleJa": "Ecom-RLVE: 電子商取引会話エージェント向けの適応型検証可能環境",
+      "link": "https://huggingface.co/blog/ecom-rlve",
+      "description": "...",
+      "publishedDate": "Thu, 16 Apr 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/ecom-rlve/thumbnail.png",
       "language": "en"
     },
     {
@@ -472,6 +428,50 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Design-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Hugging Faceとは？人気AIプラットフォームの機能・料金・使い方などを解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/hugging-face/",
+      "description": "皆さんは、Hugging Faceというプラットフォームをご存知でしょうか？ 生成AIを利用している方であれば、一度は名前ぐらい聞いたことがある方も多いと思います。しかし、「海外のサイトだし怪しそう」や「Hugging [...]...",
+      "publishedDate": "Mon, 20 Apr 2026 14:54:38 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/hugging-face_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Google AI Pro（旧Gemini Advanced）とは？料金、機能、活用シーンを解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/bard-advanced/",
+      "description": "2025年5月20日に、GoogleはこれまでのGemini AdvancedをGoogle AI Proへ名称変更し、同時にGoogle AI Ultraの提供も開始しました。その後、Google AI Plusプラン [...]...",
+      "publishedDate": "Mon, 20 Apr 2026 12:50:33 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/google-ai-pro_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Notion AIとは？機能・料金・活用事例・他AIツールとの違いを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/notion-ai/",
+      "description": "会議のたびに議事録の作成に追われたり、あちこちに散らばった資料を探し回ったり、進捗状況を手作業でまとめたりしていませんか？ こうした仕事のための仕事に日々追われてしまうと、本当に大切な判断や企画の時間がどうしても削られて [...]...",
+      "publishedDate": "Mon, 20 Apr 2026 09:04:31 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/notion-ai_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Replitとは？アプリ開発を加速！料金・使い方・活用事例を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/replit/",
+      "description": "皆様、Replitをご利用になったことはありますか？ 社内システムの内製化や、AIを活用した業務アプリ開発をどう進めるか、多くの企業の情報システム部門が直面しているテーマです。Replit（リプリット）は、ブラウザだけで [...]...",
+      "publishedDate": "Mon, 20 Apr 2026 04:35:36 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/replit_2604-1024x576.webp",
       "language": "ja"
     },
     {
@@ -549,6 +549,17 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/main-pic.png",
+      "language": "ja"
+    },
+    {
+      "title": "Rust製ブラウザエンジンのServo、Rust公式レジストリ「Crates.io」でリリース開始。長期サポート版も提供へ",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/rustservorustcratesio.html",
+      "description": "Linux Foundation傘下で独自のRust製ブラウザエンジンとして開発が進められているServoは、Rust公式のパッケージレジストリである「Crates.io」でバージョン0.1.0のリリースを開始したと明らかにしました。 Se......",
+      "publishedDate": "2026-04-20T15:15:50Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/servo010-cratesio-release.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/githubsli-rubberduck-expann.png",
-      "language": "ja"
-    },
-    {
-      "title": "AIコーディングエディタ「Cursor 3」リリース。AIエージェントを中心に新たに構築",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/aicursor_3ai.html",
-      "description": "AIコーディングエディタ「Cursor」の開発元であるAnysphereは、Cursorの最新版となる「Cursor 3」リリースを発表しました。 Cursor 3を説明するAnysphere共同創業者のSualets Asif氏とMich......",
-      "publishedDate": "2026-04-06T18:22:17Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/cursor3ann.png",
       "language": "ja"
     }
   ]
