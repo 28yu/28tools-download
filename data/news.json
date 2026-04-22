@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21T01:48:53.563812",
+  "lastUpdated": "2026-04-22T01:47:52.303453",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -12,23 +12,33 @@
       "language": "en"
     },
     {
-      "title": "建築材料の種類一覧｜名称・選び方・最新トレンドまで完全ガイド",
-      "link": "https://news.build-app.jp/article/40163/",
-      "description": "建築材料は、建物の性能や耐久性だけでなく、施工のしやすさやコストにも直結する要素です。現場では同じ用途でも材料の選び方ひとつで品質や工期に差......",
-      "publishedDate": "Wed, 15 Apr 2026 22:00:00 +0000",
+      "title": "建設業に若者が来ない——。｜それは、労働条件ではなく、資本の問題だ。",
+      "link": "https://news.build-app.jp/article/39610/",
+      "description": "労働条件が悪いから人が来ない——日本の建設業界では長らく、そう語られ続けてきた。だが、その診断は根本から間違っている。建築・土木分野から若者......",
+      "publishedDate": "Tue, 21 Apr 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/2c270df2009b55d03d7ee168b00cd592-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260422_hirayama-130x82.jpg",
       "language": "ja"
     },
     {
-      "title": "業界初、グリーンサイトがCCUSの技能レベル連携を開始",
-      "link": "https://news.build-app.jp/article/40148/",
-      "description": "エムシーディースリー株式会社（東京都渋谷区、代表取締役社長：飯田正生、以下「当社」）は、建設業向け労務安全書類作成・管理サービス「グリーンサ......",
-      "publishedDate": "Wed, 15 Apr 2026 22:00:00 +0000",
+      "title": "大林組、BIM図面審査に対応した確認申請などを複数案件で提出",
+      "link": "https://news.build-app.jp/article/40231/",
+      "description": "株式会社大林組（本社：東京都港区、社長：佐藤俊美）は、国土交通省が進める建築確認におけるBIM図面審査に対応するため、指定確認検査機関および......",
+      "publishedDate": "Tue, 21 Apr 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/4sAi0GiPB9jj1KO1658206702_1658206726-130x82.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/01/AdobeStock_464955361-130x87.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "竹中工務店、居室向けCLT制振壁KiPLUS WALL DAMPERを開発、シリーズ第3弾",
+      "link": "https://news.build-app.jp/article/40219/",
+      "description": "株式会社竹中工務店（社長：丁野成人）は、CLT（直交集成板）を活用した新たな制振壁技術「KiPLUS® WALL DAMPER」を開発したと......",
+      "publishedDate": "Tue, 21 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33965467_s-130x73.jpg",
       "language": "ja"
     },
     {
@@ -39,16 +49,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/featured_image_1200x630-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "TODA BUILDING｜戸田建設新本社ビル建て替え「100年建築」のための設計・構造とは",
-      "link": "https://news.build-app.jp/article/40109/",
-      "description": "トレンドワード：TODA BUILDING TODA BUILDINGは、京橋一丁目にて建て替えとなった、戸田建設株式会社の新本社ビルです。......",
-      "publishedDate": "Tue, 14 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/d7ad75985e62436bb6df459204fba2f6-130x82.png",
       "language": "ja"
     },
     {
@@ -212,16 +212,6 @@
       "language": "ja"
     },
     {
-      "title": "清水建設×ダイヤ工業、現場の声に応えてフルモデルチェンジ！約10秒で着られるアシストスーツ",
-      "link": "https://news.build-app.jp/article/40178/",
-      "description": "医療用品メーカーのダイヤ工業株式会社（本社：岡山県岡山市 代表取締役：松尾浩紀）は、清水建設株式会社（本社：東京都中央区 代表取締役社長：新......",
-      "publishedDate": "Mon, 20 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/02/8QtfBdR2mvk3TI81644325750-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "竹中工務店、山の上ホテル東京の保存改修に着手、2027年夏の再開業へ向け準備進む",
       "link": "https://news.build-app.jp/article/40212/",
       "description": "東京都千代田区・神田駿河台で長く親しまれてきた「山の上ホテル」が、2027年夏に「山の上ホテル 東京（英名：HILLTOP HOTEL TO......",
@@ -239,6 +229,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/3258474_m-130x80.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "清水建設×ダイヤ工業、現場の声に応えてフルモデルチェンジ！約10秒で着られるアシストスーツ",
+      "link": "https://news.build-app.jp/article/40178/",
+      "description": "医療用品メーカーのダイヤ工業株式会社（本社：岡山県岡山市 代表取締役：松尾浩紀）は、清水建設株式会社（本社：東京都中央区 代表取締役社長：新......",
+      "publishedDate": "Mon, 20 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/02/8QtfBdR2mvk3TI81644325750-130x87.jpg",
       "language": "ja"
     },
     {
