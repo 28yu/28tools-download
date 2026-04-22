@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21T04:13:27.294218",
+  "lastUpdated": "2026-04-22T04:09:30.453158",
   "articles": [
     {
       "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
@@ -80,7 +80,7 @@
     },
     {
       "title": "Falcon Perception",
-      "titleJa": "ファルコンの知覚",
+      "titleJa": "ファルコンの認識",
       "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
       "description": "...",
       "publishedDate": "Wed, 01 Apr 2026 07:13:20 GMT",
@@ -123,26 +123,191 @@
       "language": "en"
     },
     {
-      "title": "Training mRNA Language Models Across 25 Species for $165",
-      "titleJa": "25 種にわたる mRNA 言語モデルを 165 ドルでトレーニング",
-      "link": "https://huggingface.co/blog/OpenMed/training-mrna-models-25-species",
-      "description": "...",
-      "publishedDate": "Tue, 31 Mar 2026 08:23:44 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/5fd5e18a90b6dc4633f6d292/5dSAoMdQZBsLBS2mTPyWA.png",
+      "title": "Roundtables: Unveiling The 10 Things That Matter in AI Right Now",
+      "titleJa": "ラウンドテーブル: AI において今重要な 10 の事柄を明らかにする",
+      "link": "https://www.technologyreview.com/2026/04/21/1135486/roundtables-unveiling-the-10-things-that-matter-in-ai-right-now/",
+      "description": "Listen to the session or watch below Watch a special edition of Roundtables simulcast live from EmTech AI, MIT Technology Review’s signature conference for AI leadership. Subscribers got an exclusive ...",
+      "publishedDate": "Tue, 21 Apr 2026 22:09:25 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/MITTR-Roundtables-Zoom-Opening-Overlay.png?resize=1200,600",
       "language": "en"
     },
     {
-      "title": "TRL v1.0: Post-Training Library Built to Move with the Field",
-      "titleJa": "TRL v1.0: フィールドに合わせて移動できるように構築されたトレーニング後のライブラリ",
-      "link": "https://huggingface.co/blog/trl-v1",
+      "title": "The new word in home construction could be “plastics”",
+      "titleJa": "住宅建設における新しい言葉は「プラスチック」になるかもしれない",
+      "link": "https://www.technologyreview.com/2026/04/21/1134856/the-new-word-in-home-construction-could-be-plastics/",
+      "description": "Single-use plastics are a persistent source of environmental pollution, and the need to house a growing global population puts increasing pressure on resources such as timber. MIT engineers have an id...",
+      "publishedDate": "Tue, 21 Apr 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/MIT-RecycledFlooring-01a-press.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "A natural protein may protect the GI tract from infection",
+      "titleJa": "天然タンパク質が消化管を感染から保護する可能性がある",
+      "link": "https://www.technologyreview.com/2026/04/21/1134858/a-natural-protein-may-protect-the-gi-tract-from-infection/",
+      "description": "Embedded in the body’s mucosal surfaces, proteins called lectins bind to sugars found on cell surfaces. A team led by MIT chemistry professor Laura Kiessling has found that one such protein, intelecti...",
+      "publishedDate": "Tue, 21 Apr 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/MIT-Antimicro-Lectin-01-press_1.png?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "This tool could show how consciousness works",
+      "titleJa": "このツールは意識がどのように機能するかを示すことができる",
+      "link": "https://www.technologyreview.com/2026/04/21/1134862/this-tool-could-show-how-consciousness-works/",
+      "description": "How does the physical matter in our brains translate into thoughts, sensations, and emotions? It’s hard to explore that question without neurosurgery. But in a recent paper, MIT philosopher Matthias M...",
+      "publishedDate": "Tue, 21 Apr 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/MIT-Transcranial-Ultra-01-press.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Early life may have breathed oxygen earlier than believed",
+      "titleJa": "初期の生命は信じられているよりも早く酸素を呼吸していた可能性がある",
+      "link": "https://www.technologyreview.com/2026/04/21/1134867/early-life-may-have-breathed-oxygen-earlier-than-believed/",
+      "description": "Around 2.3 billion years ago, a pivotal period known as the Great Oxidation Event set the evolutionary course for oxygen-breathing life on Earth. But MIT geobiologists and colleagues have found eviden...",
+      "publishedDate": "Tue, 21 Apr 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/MIT-Aerobic-Firsts-01-press.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Analog computing from waste heat",
+      "titleJa": "廃熱からのアナログコンピューティング",
+      "link": "https://www.technologyreview.com/2026/04/21/1134870/analog-computing-from-waste-heat/",
+      "description": "Heat generated by electronic devices is usually a problem, but a team led by Giuseppe Romano, a research scientist at MIT’s Institute for Soldier Nanotechnologies, has found a way to use it for data p...",
+      "publishedDate": "Tue, 21 Apr 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/MIT-thermalComp-01-press.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Get ready for hotter, muggier, stormier summers",
+      "titleJa": "より暑く、蒸し暑く、嵐の多い夏に備えましょう",
+      "link": "https://www.technologyreview.com/2026/04/21/1134873/get-ready-for-hotter-muggier-stormier-summers/",
+      "description": "A long stretch of humid heat followed by a powerful thunderstorm is a familiar weather pattern in the tropics, but it’s also becoming more common in midlatitude regions such as the US Midwest. A recen...",
+      "publishedDate": "Tue, 21 Apr 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/GettyImages-2219149611.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Recent books from the MIT community",
+      "titleJa": "MIT コミュニティの最近の書籍",
+      "link": "https://www.technologyreview.com/2026/04/21/1134879/recent-books-from-the-mit-community-28/",
+      "description": "Priority Technologies: Ensuring US Security and Shared ProsperityEdited by Elisabeth B. Reynolds, professor of the practice of urban studies and planning and former executive director of the MIT Task ...",
+      "publishedDate": "Tue, 21 Apr 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/08/MIT-books-thumb.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "AI at MIT",
+      "titleJa": "MIT の AI",
+      "link": "https://www.technologyreview.com/2026/04/21/1134938/ai-at-mit/",
+      "description": "At&#160;MIT, AI has become so pervasive that you can almost find your way into it without meaning to. Take Sili Deng, an associate professor of mechanical engineering. Deng says she still doesn’t know...",
+      "publishedDate": "Tue, 21 Apr 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/MJ26-feature_ai2a.png?w=1428",
+      "language": "en"
+    },
+    {
+      "title": "Inventor recalls eye imaging breakthrough",
+      "titleJa": "発明者は目の画像処理の画期的な進歩を思い出す",
+      "link": "https://www.technologyreview.com/2026/04/21/1134945/inventor-recalls-eye-imaging-breakthrough/",
+      "description": "If you’ve been to an eye doctor and had an image taken of the inside of your eye, chances are good it was done with optical coherence tomography (OCT)—a technology invented by clinician-scientist Davi...",
+      "publishedDate": "Tue, 21 Apr 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/Huang_creditJohn-Valls_2023.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "3 new ways Ads Advisor is making Google Ads safer and faster",
+      "titleJa": "Ads Advisor が Google 広告をより安全かつ高速にする 3 つの新しい方法",
+      "link": "https://blog.google/products/ads-commerce/ads-advisor-google-ads/",
+      "description": "The Road to Google Marketing Live graphic. May 20, 2026, 9am PT. White background with colorful bottom gradient....",
+      "publishedDate": "Tue, 21 Apr 2026 14:30:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Road_to_GML_Master-Header.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "QIMMA قِمّة ⛰: A Quality-First Arabic LLM Leaderboard",
+      "titleJa": "QIMMA قِمّة ⛰: 品質第一のアラビア語 LLM リーダーボード",
+      "link": "https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard",
       "description": "...",
-      "publishedDate": "Tue, 31 Mar 2026 00:00:00 GMT",
+      "publishedDate": "Tue, 21 Apr 2026 10:09:58 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/trl-v1/thumbnail.png",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/659bc8a7b0f43ed69f0b2300/KdH3z5dRfyIAyxgGPN5Ey.png",
       "language": "en"
+    },
+    {
+      "title": "Claude Dispatchとは？スマホからPCを遠隔操作する使い方を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-dispatch-smartphone-pc/",
+      "description": "スマートフォンから指示を送るだけで、自宅や会社のPCが自動でファイル整理やデータ集計を進めてくれる、そんな働き方が現実になるツールが「Claude Dispatch」です。 本記事では、Dispatchの基本的な仕組みか [...] The post Claude Dispatchとは？スマホからPCを遠隔操作する使い方を解説 first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Tue, 21 Apr 2026 09:07:29 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/claudedispatchmain.png",
+      "language": "ja"
+    },
+    {
+      "title": "Stable LMとは？規制は緩い？エロ表現は可能か実際に検証してみた",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/about-stablelm/",
+      "description": "画像生成AI「Stable Diffusion」で知られるStability AIが手がける言語モデル「Stable LM」。チャットボットや文章生成、翻訳、コード生成など、幅広いテキスト処理に対応したLLMです。さらに [...]...",
+      "publishedDate": "Tue, 21 Apr 2026 08:08:23 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/02/AIモン_Stable-LM-1024x576.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Stable Diffusionプロンプト（呪文）大全！コピペOK＆高品質画像を作るコツの完全保存版",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/stable-diffusion-spell/",
+      "description": "AI美少女を生成しようとしても、なかなか思ったとおりのクオリティにならない...という問題に直面していませんか？Stable Diffusionで生成する画像のクオリティを上げるには、使用するプロンプト（呪文）や [...]...",
+      "publishedDate": "Tue, 21 Apr 2026 06:55:22 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/stable-diffusion-spell_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Proとは？料金・支払い方法からChatGPT Plusとの違い、活用メリットまで徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-pro/",
+      "description": "「Claude 3.5 Sonnetの評判がいいけど、無料版だとすぐに制限がかかってしまう……」 「ChatGPT Plusに課金しているけれど、Claude Proに乗り換える価値はあるのだろうか？」 生成AIツールの [...] The post Claude Proとは？料金・支払い方法からChatGPT Plusとの違い、活用メリットまで徹底解説 first appeared on AIポ...",
+      "publishedDate": "Tue, 21 Apr 2026 06:51:00 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/claudepro.png",
+      "language": "ja"
+    },
+    {
+      "title": "モスフードサービス、音声対話AIを活用した「AIドライブスルー」の実証実験を開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/mosfood-ai-drivethru-start/",
+      "description": "モスフードサービスは、音声対話AIを活用した「AIドライブスルー」の実証実験を開始しました。AIと店舗スタッフによるサービスを組み合わせ、ホスピタリティの進化と店舗運営の高度化を目指します。 このニュースのポイント モス [...] The post モスフードサービス、音声対話AIを活用した「AIドライブスルー」の実証実験を開始 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Tue, 21 Apr 2026 05:09:29 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0417moseye.png",
+      "language": "ja"
     },
     {
       "title": "三菱電機ビルソリューションズ、AIを活用した危険予知アプリ「KY-Support」を開発",
@@ -175,6 +340,28 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/build-korean-agents-with-nemotron-personas.png",
+      "language": "en"
+    },
+    {
+      "title": "Scaling Codex to enterprises worldwide",
+      "titleJa": "Codex を世界中の企業に拡張",
+      "link": "https://openai.com/index/scaling-codex-to-enterprises-worldwide",
+      "description": "OpenAI launches Codex Labs, partners with with Accenture, PwC, Infosys, and others to help enterprises deploy and scale Codex across the software development lifecycle, and hits 4M Codex WAU....",
+      "publishedDate": "Tue, 21 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "AI and the Future of Cybersecurity: Why Openness Matters",
+      "titleJa": "AI とサイバーセキュリティの未来: オープン性が重要な理由",
+      "link": "https://huggingface.co/blog/cybersecurity-openness",
+      "description": "...",
+      "publishedDate": "Tue, 21 Apr 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/cybersecurity-openness/detective_huggy_thumbnail.png",
       "language": "en"
     },
     {
@@ -219,193 +406,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Approved_thumbnail_with_logo.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Transform your headphones into a live personal translator on iOS.",
-      "titleJa": "ヘッドフォンを iOS 上のライブ個人翻訳者に変身させます。",
-      "link": "https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones/",
-      "description": "Google Translate’s Live translate with headphones is officially arriving on iOS! And we're expanding the capability for both iOS and Android users to even more countries…...",
-      "publishedDate": "Thu, 26 Mar 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Static-InterstitialscreenJapane.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
-      "titleJa": "Gemini 3.1 Flash Live: オーディオ AI をより自然で信頼性の高いものに",
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
-      "description": "The Gemini emblem sits next to text reading 'Gemini 3.1 Flash Live'. The background has blue, multicolored dots making up a microphone icon...",
-      "publishedDate": "Thu, 26 Mar 2026 15:21:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3.1-flash-live_blog_head.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Search Live is expanding globally",
-      "titleJa": "Search Live は世界的に拡大しています",
-      "link": "https://blog.google/products-and-platforms/products/search/search-live-global-expansion/",
-      "description": "A graphic with the words Search Live shown underneath a waveform icon. To the right, a phone shows the Google app with Search Live open. The camera is pointing at trees in a forest....",
-      "publishedDate": "Thu, 26 Mar 2026 15:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Live_blog_header.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "A new way to explore the web with AI Mode in Chrome",
-      "titleJa": "Chrome の AI モードを使用してウェブを探索する新しい方法",
-      "link": "https://blog.google/products-and-platforms/products/search/ai-mode-chrome/",
-      "description": "AI Mode in Chrome...",
-      "publishedDate": "Thu, 16 Apr 2026 17:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_Mode_in_Chrome_-_Blog_header.png",
-      "language": "en"
-    },
-    {
-      "title": "Moflin（モフリン）とは？感情を持つAIペットのできること・価格・特徴を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/moflin/",
-      "description": "突然ですが、みなさんは「お世話をするのが大変」「マンションがペットNGなので動物が飼えない」などの理由で、ペットの飼育を諦めた経験はありませんか？ 実は、そんなお悩みを解決してくれるかもしれない、AIを搭載した新しいAI [...]...",
-      "publishedDate": "Thu, 16 Apr 2026 16:49:32 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/moflin_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Gemini CLIとは？インストール・料金（無料枠）・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gemini-cli/",
-      "description": "2025年6月25日、Googleは大規模言語モデルGemini 2.5 Proを直接呼び出せるオープンソースツール「Gemini CLI」を公開しました。現在では、Gemini 3 ProやGemini 3 Flash [...]...",
-      "publishedDate": "Thu, 16 Apr 2026 16:35:48 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/11/gemini-cli_2508-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "New ways to create personalized images in the Gemini app",
-      "titleJa": "Gemini アプリでパーソナライズされた画像を作成する新しい方法",
-      "link": "https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana/",
-      "description": "Example images made with Personal Intelligence...",
-      "publishedDate": "Thu, 16 Apr 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_post_header.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Making AI operational in constrained public sector environments",
-      "titleJa": "制約のある公共部門の環境でも AI を運用できるようにする",
-      "link": "https://www.technologyreview.com/2026/04/16/1135216/making-ai-operational-in-constrained-public-sector-environments/",
-      "description": "The AI boom has hit across industries, and public sector organizations are facing pressure to accelerate adoption. At the same time, government institutions face distinct constraints around security, ...",
-      "publishedDate": "Thu, 16 Apr 2026 13:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/Elastic-article-iStock-2148123501.jpg?w=1200",
-      "language": "en"
-    },
-    {
-      "title": "Treating enterprise AI as an operating layer",
-      "titleJa": "エンタープライズ AI をオペレーティング層として扱う",
-      "link": "https://www.technologyreview.com/2026/04/16/1135554/treating-enterprise-ai-as-an-operating-layer/",
-      "description": "There’s a fault line running through enterprise AI, and it’s not the one getting the most attention. The public conversation still tracks foundation models and benchmarks—GPT versus Gemini, reasoning ...",
-      "publishedDate": "Thu, 16 Apr 2026 13:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/Ensemble-article-iStock-2213998103.jpg",
-      "language": "en"
-    },
-    {
-      "title": "The Download: cyberscammers’ banking bypasses, and carbon removal troubles",
-      "titleJa": "ダウンロード: サイバー詐欺師による銀行取引のバイパスと二酸化炭素除去の問題",
-      "link": "https://www.technologyreview.com/2026/04/16/1136034/the-download-cyberscammers-banking-bypasses-microsoft-carbon-removal-troubles/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Cyberscammers are bypassing banks’ security with i...",
-      "publishedDate": "Thu, 16 Apr 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/08/MIT-2-finals_D_1.jpg?w=3000",
-      "language": "en"
-    },
-    {
-      "title": "Codex for (almost) everything",
-      "titleJa": "(ほぼ) すべてのコーデックス",
-      "link": "https://openai.com/index/codex-for-almost-everything",
-      "description": "The updated Codex app for macOS and Windows adds computer use, in-app browsing, image generation, memory, and plugins to accelerate developer workflows....",
-      "publishedDate": "Thu, 16 Apr 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "経産省、「AI利活用における民事責任の解釈適用に関する手引き」公表。損害発生時の現行法適用を整理",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-civil-liability-guide-meti/",
-      "description": "経産省は、「AI利活用における民事責任の解釈適用に関する手引き」を公表しました。損害発生時の民事責任の考え方を整理し、AI利活用の推進と紛争の円滑な解決を図ることを目的としています。 このニュースのポイント 経産省、「A [...] The post 経産省、「AI利活用における民事責任の解釈適用に関する手引き」公表。損害発生時の現行法適用を整理 first appeared on AIポータルメ...",
-      "publishedDate": "Thu, 16 Apr 2026 07:59:34 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0415keisansyoeya.png",
-      "language": "ja"
-    },
-    {
-      "title": "マネーフォワードコンサルティング、業績分析AIを提供開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/moneyforward-ai-agent-performance-analysis/",
-      "description": "マネーフォワードコンサルティングは、経営管理プラットフォーム「Manageboard」において、AIエージェント「業績分析エージェント」の提供を開始しました。 このニュースのポイント マネーフォワードコンサルティング提供 [...] The post マネーフォワードコンサルティング、業績分析AIを提供開始 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 16 Apr 2026 06:40:58 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/122.png",
-      "language": "ja"
-    },
-    {
-      "title": "さくらインターネットが令和8年度ガバメントクラウドサービス提供事業者に採択。令和5年度と合わせ国産事業者初の複数年度採択",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sakurainternet-government-r8/",
-      "description": "「さくらのクラウド」は、デジタル庁が実施する令和5年度および令和8年度の「ガバメントクラウド整備のためのクラウドサービスの提供」において、対象クラウドサービスに採択されました。複数年度での採択は、国産クラウド事業者として [...] The post さくらインターネットが令和8年度ガバメントクラウドサービス提供事業者に採択。令和5年度と合わせ国産事業者初の複数年度採択 first appeare...",
-      "publishedDate": "Thu, 16 Apr 2026 06:31:25 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/sakurainnternetgov1.png",
-      "language": "ja"
-    },
-    {
-      "title": "Introducing GPT-Rosalind for life sciences research",
-      "titleJa": "ライフサイエンス研究向けの GPT-Rosalind の紹介",
-      "link": "https://openai.com/index/introducing-gpt-rosalind",
-      "description": "OpenAI introduces GPT-Rosalind, a frontier reasoning model built to accelerate drug discovery, genomics analysis, protein reasoning, and scientific research workflows....",
-      "publishedDate": "Thu, 16 Apr 2026 01:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Accelerating the cyber defense ecosystem that protects us all",
-      "titleJa": "私たち全員を守るサイバー防御エコシステムを加速する",
-      "link": "https://openai.com/index/accelerating-cyber-defense-ecosystem",
-      "description": "Leading security firms and enterprises join OpenAI’s Trusted Access for Cyber, using GPT-5.4-Cyber and $10M in API grants to strengthen global cyber defense....",
-      "publishedDate": "Thu, 16 Apr 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents",
-      "titleJa": "Ecom-RLVE: 電子商取引会話エージェント向けの適応型検証可能環境",
-      "link": "https://huggingface.co/blog/ecom-rlve",
-      "description": "...",
-      "publishedDate": "Thu, 16 Apr 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/ecom-rlve/thumbnail.png",
       "language": "en"
     },
     {
@@ -549,6 +549,17 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/main-pic.png",
+      "language": "ja"
+    },
+    {
+      "title": "Vercel、Webブラウザ上のターミナルエミュレータ「wterm」をオープンソースで公開。WebAssembly製でWebページに埋め込み可能",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/vercelwebwtermwebassemblyweb.html",
+      "description": "Vercelは、Webブラウザ上でターミナルエミュレータを実現する「wterm」（発音は“dub-term”：ダブターム）をオープンソースで公開しました。 wtermはコア部分がZig言語で開発されWebAssemblyにコンパイルされて提......",
+      "publishedDate": "2026-04-21T15:46:05Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/vercel-wterm-ossrelease.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/projectglasswing-launch.png",
-      "language": "ja"
-    },
-    {
-      "title": "GitHub Copilot CLI、メインのAIモデルとは異なるAIモデルをセカンドオピニオンに使う「Rubber Duck」モード",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/github_copilot_cliaiairubber_duck.html",
-      "description": "GitHubは、AIエージェントによるコーディングツール「GitHub Copilot CLI」の実験的新機能として、メインで利用するAIモデルとは異なるAIモデルをセカンドオピニオン役として使える「Rubber Duck」モードを発表しま......",
-      "publishedDate": "2026-04-07T15:15:54Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/githubsli-rubberduck-expann.png",
       "language": "ja"
     }
   ]
