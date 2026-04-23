@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-22T01:47:52.303453",
+  "lastUpdated": "2026-04-23T01:51:39.818934",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -12,13 +12,43 @@
       "language": "en"
     },
     {
-      "title": "建設業に若者が来ない——。｜それは、労働条件ではなく、資本の問題だ。",
-      "link": "https://news.build-app.jp/article/39610/",
-      "description": "労働条件が悪いから人が来ない——日本の建設業界では長らく、そう語られ続けてきた。だが、その診断は根本から間違っている。建築・土木分野から若者......",
+      "title": "清水建設、1.5万名のDX基盤に「テックタッチ」採用 主要6システムに展開し工数削減目指す",
+      "link": "https://news.build-app.jp/article/40233/",
+      "description": "概要 AI型デジタルアダプションプラットフォーム（DAP）国内シェアNo.1（※1）の「テックタッチ」を開発・提供するテックタッチ株式会社、......",
+      "publishedDate": "Wed, 22 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/02/fqEpYdcxFANizVA1645603757-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "竹中工務店ら5社、使用済みプラ原料の再生樹脂を建設資材に適用、技術課題を解決し実用化",
+      "link": "https://news.build-app.jp/article/40216/",
+      "description": "出光興産・竹中工務店・ケミカルリサイクル・ジャパン（CRJ）・フクビ化学工業・プライムポリマー（PRM）の5社は2026年4月10日、廃棄・......",
+      "publishedDate": "Wed, 22 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33863440_m-130x95.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、令和8年2月の建設工事受注総額42.7％増　4カ月連続で前年同月上",
+      "link": "https://news.build-app.jp/article/40228/",
+      "description": "国土交通省は令和8年3月31日、「建設工事受注動態統計調査（大手50社調査）」の令和8年2月分の結果を公表しました。 今回の結果では、民間・......",
+      "publishedDate": "Wed, 22 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33961843_s-130x98.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "竹中工務店、居室向けCLT制振壁KiPLUS WALL DAMPERを開発、シリーズ第3弾",
+      "link": "https://news.build-app.jp/article/40219/",
+      "description": "株式会社竹中工務店（社長：丁野成人）は、CLT（直交集成板）を活用した新たな制振壁技術「KiPLUS® WALL DAMPER」を開発したと......",
       "publishedDate": "Tue, 21 Apr 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260422_hirayama-130x82.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33965467_s-130x73.jpg",
       "language": "ja"
     },
     {
@@ -32,13 +62,13 @@
       "language": "ja"
     },
     {
-      "title": "竹中工務店、居室向けCLT制振壁KiPLUS WALL DAMPERを開発、シリーズ第3弾",
-      "link": "https://news.build-app.jp/article/40219/",
-      "description": "株式会社竹中工務店（社長：丁野成人）は、CLT（直交集成板）を活用した新たな制振壁技術「KiPLUS® WALL DAMPER」を開発したと......",
+      "title": "建設業に若者が来ない——。｜それは、労働条件ではなく、資本の問題だ。",
+      "link": "https://news.build-app.jp/article/39610/",
+      "description": "労働条件が悪いから人が来ない——日本の建設業界では長らく、そう語られ続けてきた。だが、その診断は根本から間違っている。建築・土木分野から若者......",
       "publishedDate": "Tue, 21 Apr 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33965467_s-130x73.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260422_hirayama-130x82.jpg",
       "language": "ja"
     },
     {
@@ -72,26 +102,6 @@
       "language": "ja"
     },
     {
-      "title": "清水建設がiPaaS「Workato」を導入し、生成AI活用も可能なデータ利活用基盤を構築",
-      "link": "https://news.build-app.jp/article/40173/",
-      "description": "概要 株式会社日立ソリューションズ（本社：東京都品川区、取締役社長：森田 英嗣／以下、日立ソリューションズ）は、大手総合建設の清水建設株式会......",
-      "publishedDate": "Thu, 16 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/NvWCI988PC82Vn51657720065_1657720078-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "建設リサイクル法におけるコンクリート処理とは？対象工事・500万円基準・少量対応まで現場目線で解説",
-      "link": "https://news.build-app.jp/article/40184/",
-      "description": "コンクリートの解体や撤去が発生したとき、どこまでが法律の対象になるのか迷う場面もあるでしょう。建設リサイクル法では、一定規模以上の工事に対し......",
-      "publishedDate": "Thu, 16 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/0fe5d604e29903ef44279a6723ab2824-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
       "link": "https://www.buildingsmart.org/industry-insights-embracing-challenges-and-opportunities-of-using-openbim-for-increasing-efficiency-in-the-construction-process/",
       "description": "Read about Construction Industry leaders perspective on embracing challenges and opportunities of using openBIM for increasing efficiency: Link The post Industry Insights “Embracing Challenges and Opp...",
@@ -119,26 +129,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/bulldozer_1200x630-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "点群処理ソフトを使った配筋全体のモデル化機能を活用した配筋検査手法を導入_鉄建建設｜深堀り取材【毎月3回更新】",
-      "link": "https://news.build-app.jp/article/39990/",
-      "description": "鉄建建設では、鉄筋コンクリート構造物の配筋検査の効率化を目的に、アイセイ(荒川区: 岩佐宏一社長)の点群処理ソフト「NuBas」を使った配筋......",
-      "publishedDate": "Sun, 19 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/4fbdaa9bc7a25d3df2830f343eda9d4d-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "ispaceと清水建設、シスルナ空間におけるインフラアーキテクチャ構築に向けた基本合意を締結",
-      "link": "https://news.build-app.jp/article/40175/",
-      "description": "概要 株式会社ispace（東京都中央区、代表取締役：袴田武史、以下ispace）（証券コード9348）と清水建設株式会社（東京都中央区、代......",
-      "publishedDate": "Sun, 19 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/09/dws1Jz76vhZF0Td1662569935_1662569975-130x82.jpg",
       "language": "ja"
     },
     {
@@ -239,6 +229,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/02/8QtfBdR2mvk3TI81644325750-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "建築の「貫」とは？役割・寸法・胴縁との違いを現場目線で完全解説",
+      "link": "https://news.build-app.jp/article/40250/",
+      "description": "現場で「貫」と聞いても、図面と結びつかないまま作業していることは少なくありません。言葉だけ覚えていても、どこに入って何に効くのかが見えていな......",
+      "publishedDate": "Mon, 20 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/7f48dfa4774c6e4bac7dec0c80fc54bd-130x82.png",
       "language": "ja"
     },
     {
