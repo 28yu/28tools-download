@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T04:14:22.467055",
+  "lastUpdated": "2026-04-24T04:19:26.907878",
   "articles": [
     {
       "title": "Gemma 4 VLA Demo on Jetson Orin Nano Super",
@@ -20,7 +20,7 @@
       "publishedDate": "Wed, 22 Apr 2026 15:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/3K1xu2uaPseQ2Zk6CbuLgc/268ce2e65a514126104c1b6550db955b/SEO.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -101,14 +101,14 @@
       "language": "en"
     },
     {
-      "title": "Introducing workspace agents in ChatGPT",
-      "titleJa": "ChatGPT でのワークスペース エージェントの紹介",
-      "link": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
-      "description": "Workspace agents in ChatGPT are Codex-powered agents that automate complex workflows, run in the cloud, and help teams scale work across tools securely....",
+      "title": "Workspace agents",
+      "titleJa": "ワークスペースエージェント",
+      "link": "https://openai.com/academy/workspace-agents",
+      "description": "Learn how to build, use, and scale workspace agents in ChatGPT to automate repeatable workflows, connect tools, and streamline team operations....",
       "publishedDate": "Wed, 22 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/3pOt7hjYa1nUIIMMXdoEhD/b6493d0ba6756155a3ef880758e0a0b0/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -123,14 +123,14 @@
       "language": "en"
     },
     {
-      "title": "Workspace agents",
-      "titleJa": "ワークスペースエージェント",
-      "link": "https://openai.com/academy/workspace-agents",
-      "description": "Learn how to build, use, and scale workspace agents in ChatGPT to automate repeatable workflows, connect tools, and streamline team operations....",
+      "title": "Introducing workspace agents in ChatGPT",
+      "titleJa": "ChatGPT でのワークスペース エージェントの紹介",
+      "link": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+      "description": "Workspace agents in ChatGPT are Codex-powered agents that automate complex workflows, run in the cloud, and help teams scale work across tools securely....",
       "publishedDate": "Wed, 22 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/5VOBXAok5WCGbcXubvIGSn/c6ec67af102f0537ff2a526fca45ff47/OAI_Blog_SEO_16x9.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -288,17 +288,6 @@
       "language": "en"
     },
     {
-      "title": "The next evolution of the Agents SDK",
-      "titleJa": "エージェント SDK の次の進化",
-      "link": "https://openai.com/index/the-next-evolution-of-the-agents-sdk",
-      "description": "OpenAI updates the Agents SDK with native sandbox execution and a model-native harness, helping developers build secure, long-running agents across files and tools....",
-      "publishedDate": "Wed, 15 Apr 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "Meet HoloTab by HCompany. Your AI browser companion.",
       "titleJa": "HCompany の HoloTab をご紹介します。 AI ブラウザーの相棒。",
       "link": "https://huggingface.co/blog/Hcompany/holotab",
@@ -409,28 +398,6 @@
       "language": "en"
     },
     {
-      "title": "A natural protein may protect the GI tract from infection",
-      "titleJa": "天然タンパク質が消化管を感染から保護する可能性がある",
-      "link": "https://www.technologyreview.com/2026/04/21/1134858/a-natural-protein-may-protect-the-gi-tract-from-infection/",
-      "description": "Embedded in the body’s mucosal surfaces, proteins called lectins bind to sugars found on cell surfaces. A team led by MIT chemistry professor Laura Kiessling has found that one such protein, intelecti...",
-      "publishedDate": "Tue, 21 Apr 2026 21:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/MIT-Antimicro-Lectin-01-press_1.png?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "This tool could show how consciousness works",
-      "titleJa": "このツールは意識がどのように機能するかを示すことができる",
-      "link": "https://www.technologyreview.com/2026/04/21/1134862/this-tool-could-show-how-consciousness-works/",
-      "description": "How does the physical matter in our brains translate into thoughts, sensations, and emotions? It’s hard to explore that question without neurosurgery. But in a recent paper, MIT philosopher Matthias M...",
-      "publishedDate": "Tue, 21 Apr 2026 21:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/MIT-Transcranial-Ultra-01-press.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "3 new ways Ads Advisor is making Google Ads safer and faster",
       "titleJa": "Ads Advisor が Google 広告をより安全かつ高速にする 3 つの新しい方法",
       "link": "https://blog.google/products/ads-commerce/ads-advisor-google-ads/",
@@ -442,26 +409,15 @@
       "language": "en"
     },
     {
-      "title": "Introducing ChatGPT Images 2.0",
-      "titleJa": "ChatGPT 画像 2.0 の紹介",
-      "link": "https://openai.com/index/introducing-chatgpt-images-2-0",
-      "description": "ChatGPT Images 2.0 introduces a state-of-the-art image generation model with improved text rendering, multilingual support, and advanced visual reasoning....",
-      "publishedDate": "Tue, 21 Apr 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
+      "title": "QIMMA قِمّة ⛰: A Quality-First Arabic LLM Leaderboard",
+      "titleJa": "QIMMA قِمّة ⛰: 品質第一のアラビア語 LLM リーダーボード",
+      "link": "https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard",
+      "description": "...",
+      "publishedDate": "Tue, 21 Apr 2026 10:09:58 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/659bc8a7b0f43ed69f0b2300/KdH3z5dRfyIAyxgGPN5Ey.png",
       "language": "en"
-    },
-    {
-      "title": "Claude Dispatchとは？スマホからPCを遠隔操作する使い方を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-dispatch-smartphone-pc/",
-      "description": "スマートフォンから指示を送るだけで、自宅や会社のPCが自動でファイル整理やデータ集計を進めてくれる、そんな働き方が現実になるツールが「Claude Dispatch」です。 本記事では、Dispatchの基本的な仕組みか [...] The post Claude Dispatchとは？スマホからPCを遠隔操作する使い方を解説 first appeared on AIポータルメディアAIsmile...",
-      "publishedDate": "Tue, 21 Apr 2026 09:07:29 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/claudedispatchmain.png",
-      "language": "ja"
     },
     {
       "title": "Stable LMとは？規制は緩い？エロ表現は可能か実際に検証してみた",
@@ -486,47 +442,102 @@
       "language": "ja"
     },
     {
-      "title": "Claude Proとは？料金・支払い方法からChatGPT Plusとの違い、活用メリットまで徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-pro/",
-      "description": "「Claude 3.5 Sonnetの評判がいいけど、無料版だとすぐに制限がかかってしまう……」 「ChatGPT Plusに課金しているけれど、Claude Proに乗り換える価値はあるのだろうか？」 生成AIツールの [...] The post Claude Proとは？料金・支払い方法からChatGPT Plusとの違い、活用メリットまで徹底解説 first appeared on AIポ...",
-      "publishedDate": "Tue, 21 Apr 2026 06:51:00 +0000",
-      "source": "AIsmiley",
+      "title": "AI and the Future of Cybersecurity: Why Openness Matters",
+      "titleJa": "AI とサイバーセキュリティの未来: オープン性が重要な理由",
+      "link": "https://huggingface.co/blog/cybersecurity-openness",
+      "description": "...",
+      "publishedDate": "Tue, 21 Apr 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/cybersecurity-openness/detective_huggy_thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Turn your best AI prompts into one-click tools in Chrome",
+      "titleJa": "最高の AI プロンプトを Chrome のワンクリック ツールに変える",
+      "link": "https://blog.google/products-and-platforms/products/chrome/skills-in-chrome/",
+      "description": "Video showing Skills in Chrome...",
+      "publishedDate": "Tue, 14 Apr 2026 17:00:00 +0000",
+      "source": "Google AI Blog",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/claudepro.png",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GoogleChrome_RR_Skills_KeywordH.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Bringing people together at AI for the Economy Forum",
+      "titleJa": "AI for Economy フォーラムに人々を集める",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/creating-opportunity/ai-economy-forum/",
+      "description": "Woman working with a large tool. On the left are the Google and MIT FutureTech logos, \"AI for the Economy Forum\", and \"Innovation and Adaption in the New Era\"...",
+      "publishedDate": "Tue, 14 Apr 2026 09:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_for_the_Economy_Forum_2026.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "【Workspace Agents】ChatGPTがチームのデジタル同僚に進化！OpenAIの新エージェント機能を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/workspace-agents/",
+      "description": "2026年4月23日、OpenAIはChatGPTに「Workspace Agents」を導入しました！ これまでのカスタムGPTsは、あくまで個人向けのツールとしての側面が強く、チーム全体のワークフローを任せるには力不 [...]...",
+      "publishedDate": "Thu, 23 Apr 2026 06:41:55 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Workspace-Agents-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "モスフードサービス、音声対話AIを活用した「AIドライブスルー」の実証実験を開始",
+      "title": "OpenAI、生命科学研究に特化したAIモデル「GPT-Rosalind」を発表",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/mosfood-ai-drivethru-start/",
-      "description": "モスフードサービスは、音声対話AIを活用した「AIドライブスルー」の実証実験を開始しました。AIと店舗スタッフによるサービスを組み合わせ、ホスピタリティの進化と店舗運営の高度化を目指します。 このニュースのポイント モス [...] The post モスフードサービス、音声対話AIを活用した「AIドライブスルー」の実証実験を開始 first appeared on AIポータルメディアAIsmi...",
-      "publishedDate": "Tue, 21 Apr 2026 05:09:29 +0000",
+      "link": "https://aismiley.co.jp/ai_news/openai-gpt-rosalind/",
+      "description": "米OpenAIは、生命科学分野向けモデル「GPT-Rosalind」を発表しました。創薬や分子生物学などの研究支援を目的とし、文献解析や実験計画など複雑なワークフローの効率化を図ります。 このニュースのポイント Open [...] The post OpenAI、生命科学研究に特化したAIモデル「GPT-Rosalind」を発表 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Thu, 23 Apr 2026 06:01:12 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0417moseye.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/GPT-Rosalind.png",
       "language": "ja"
     },
     {
-      "title": "三菱電機ビルソリューションズ、AIを活用した危険予知アプリ「KY-Support」を開発",
+      "title": "Anthropic、最新モデル「Claude Opus 4.7」を提供開始。難易度が高いタスク処理も可能",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/mitsubishi-building-kysupport/",
-      "description": "三菱電機ビルソリューションズは、AI危険予知アプリ「KY-Support」を開発しました。AIで潜在リスクを洗い出し、KY活動を高度化することで労働災害防止を目指します。 このニュースのポイント 三菱電機ビルソリューショ [...] The post 三菱電機ビルソリューションズ、AIを活用した危険予知アプリ「KY-Support」を開発 first appeared on AIポータルメディアA...",
-      "publishedDate": "Tue, 21 Apr 2026 02:48:41 +0000",
+      "link": "https://aismiley.co.jp/ai_news/anthropic-claude-opus-4-7/",
+      "description": "米Anthropicは、最新のAIモデル「Claude Opus 4.7」を発表しました。複雑な推論や高度なコーディング能力が強化され、長時間にわたる複雑なタスクにおいて、高い信頼性を発揮します。 このニュースのポイント [...] The post Anthropic、最新モデル「Claude Opus 4.7」を提供開始。難易度が高いタスク処理も可能 first appeared on AIポ...",
+      "publishedDate": "Thu, 23 Apr 2026 05:45:37 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0416mitsubisieye.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/anthropic-claude-opus4.7.png",
       "language": "ja"
     },
     {
-      "title": "【名古屋初開催】「AI博覧会 Nagoya 2026」6月16日・17日に開催決定！～最新AI製品100点以上が名古屋に集結、現場課題を解決する2日間～",
+      "title": "Gemini 3.1 Flash Liveとは？前モデルとの違いと主な特徴を解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-hakurankai-nagoya-2026/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年6月16日（火）・17日（水）の2日間、名古屋コンベンションホールにて「AI博覧会 Nagoya 2026」を開催します。 [...] The post 【名古屋初開催】「AI博覧会 Nagoya 2026」6月16日・17日に開催決定！～最新AI製品100点以上が名古屋に集結、現場課題を解決する2日...",
-      "publishedDate": "Tue, 21 Apr 2026 01:00:15 +0000",
+      "link": "https://aismiley.co.jp/ai_news/gemini-3-1-flash-live-new/",
+      "description": "AIとの音声会話は、テンポが遅くてイライラする…」そんな悩みを過去のものにするのが、2026年3月にGoogleが発表した最新モデル「Gemini 3.1 Flash Live」です。 応答の遅延が極限まで解消されて相手 [...] The post Gemini 3.1 Flash Liveとは？前モデルとの違いと主な特徴を解説 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Thu, 23 Apr 2026 03:57:52 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/ai-hakurankai-nagoya-2026_000.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/gemini.png",
+      "language": "ja"
+    },
+    {
+      "title": "イラレ生成AIの使い方ガイド！ベクター生成のコツも解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/illustrator-generation-ai/",
+      "description": "Illustrator（以下、イラレ）に搭載された生成AI機能を使えば、文章を入力するだけでベクターイラストやパターン、配色案を自動で作れます。 本記事では、生成ベクター・生成塗りつぶし・生成パターン・生成再配色の4つの [...] The post イラレ生成AIの使い方ガイド！ベクター生成のコツも解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Thu, 23 Apr 2026 02:16:41 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/Illustrator.png",
+      "language": "ja"
+    },
+    {
+      "title": "Photoshop生成AIの使い方ガイド！機能・プロンプトのコツも解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/photoshop-adobe-firefly-ai/",
+      "description": "Photoshopに搭載された生成AI機能を使うと、文字を入力するだけで画像の背景を差し替えたり、写り込んだ不要な物を消したりと、以前なら数時間かかっていた作業が数分で完了します。 本記事では、生成AIの主要4機能の手順 [...] The post Photoshop生成AIの使い方ガイド！機能・プロンプトのコツも解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Thu, 23 Apr 2026 02:14:20 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/Photoshop.png",
       "language": "ja"
     },
     {
@@ -538,17 +549,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/square-enix-manga-ai.png",
-      "language": "ja"
-    },
-    {
-      "title": "Hugging Faceとは？人気AIプラットフォームの機能・料金・使い方などを解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/hugging-face/",
-      "description": "皆さんは、Hugging Faceというプラットフォームをご存知でしょうか？ 生成AIを利用している方であれば、一度は名前ぐらい聞いたことがある方も多いと思います。しかし、「海外のサイトだし怪しそう」や「Hugging [...]...",
-      "publishedDate": "Mon, 20 Apr 2026 14:54:38 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/hugging-face_2604-1024x576.webp",
       "language": "ja"
     },
     {
