@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-24T04:19:26.907878",
+  "lastUpdated": "2026-04-25T03:53:25.462297",
   "articles": [
     {
       "title": "Gemma 4 VLA Demo on Jetson Orin Nano Super",
@@ -20,30 +20,8 @@
       "publishedDate": "Wed, 22 Apr 2026 15:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/3K1xu2uaPseQ2Zk6CbuLgc/268ce2e65a514126104c1b6550db955b/SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "Google Workspace with Geminiで資料もメールも議事録も丸ごと効率化！使い方・料金プランなどを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/gemini-for-google-workspace/",
-      "description": "「Google Workspace with Gemini（旧Gemini for Google Workspace）」は、Google Workspaceの各アプリ上から直接生成AIが使えるビジネス向け機能です。こちら [...]...",
-      "publishedDate": "Wed, 22 Apr 2026 13:38:44 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/gemini-for-google-workspace_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "vibe-localとは？落合陽一が開発したローカルAIの使い方やインストール方法を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/vibe-local/",
-      "description": "「AIコーディングツールを導入したいが、クラウドへのソースコード送信が怖い」「高価なAIツールを導入する予算がない」など、こうした悩みを抱える開発現場は少なくありません。 そんな課題を解決するのが、落合陽一氏が開発した完 [...]...",
-      "publishedDate": "Wed, 22 Apr 2026 12:34:00 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/03/AIモン_vibe-local-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "The Download: introducing the 10 Things That Matter in AI Right Now",
@@ -68,28 +46,6 @@
       "language": "en"
     },
     {
-      "title": "【Kimi K2.6】300体のエージェント群で12時間自律稼働する次世代オープンウェイトLLMを徹底解説！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/kimi-k2-6/",
-      "description": "2026年4月21日、中国のMoonshot AIがフラッグシップ最新モデル「Kimi K2.6」を公開しました！ 目玉はなんと言っても、最大300体のサブエージェントで、4,000以上のツール呼び出しを12時間ぶっ通し [...]...",
-      "publishedDate": "Wed, 22 Apr 2026 11:37:14 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Kimi-K2.6-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTでクイズは作れる？思わず試したくなる機能の使い方からクイズアプリ作成方法まで解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chatgpt-quiz/",
-      "description": "ChatGPTでクイズを作りたいけれど、どの方法が自分に合うのかわからないと感じている方は多いのではないでしょうか。実は、通常のチャットでのプロンプト入力に加え、GPTsやメニューの「クイズ」機能など、用途に応じた複数の [...]...",
-      "publishedDate": "Wed, 22 Apr 2026 11:21:22 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2023/06/トリビアクイズ-1-1024x576.jpg",
-      "language": "ja"
-    },
-    {
       "title": "AI needs a strong data fabric to deliver business value",
       "titleJa": "AI がビジネス価値を提供するには強力なデータ ファブリックが必要です",
       "link": "https://www.technologyreview.com/2026/04/22/1135295/ai-needs-a-strong-data-fabric-to-deliver-business-value/",
@@ -108,7 +64,7 @@
       "publishedDate": "Wed, 22 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/3pOt7hjYa1nUIIMMXdoEhD/b6493d0ba6756155a3ef880758e0a0b0/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -130,7 +86,7 @@
       "publishedDate": "Wed, 22 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/5VOBXAok5WCGbcXubvIGSn/c6ec67af102f0537ff2a526fca45ff47/OAI_Blog_SEO_16x9.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -165,94 +121,6 @@
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/06/mat_debrief.png?w=1012",
       "language": "en"
-    },
-    {
-      "title": "Los Angeles is finally going underground",
-      "titleJa": "ロサンゼルスはついに地下化へ",
-      "link": "https://www.technologyreview.com/2026/04/22/1135449/los-angeles-subway-going-underground/",
-      "description": "Los Angeles deserves its reputation as the quintessential car city—the rhythms of its 2,200 square miles are dictated by wide boulevards and concrete arcs of freeways. But it once had a world-class ra...",
-      "publishedDate": "Wed, 22 Apr 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/D-Line-Section-1__40-1.jpg?w=2999",
-      "language": "en"
-    },
-    {
-      "title": "Google、GeminiにNotebooks機能追加。NotebookLMと連携し、情報の一元管理が可能に",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/google-gemini-notebooks/",
-      "description": "Googleは、Geminiアプリに新機能「Notebooks」の追加を発表しました。NotebookLMとの連携により、チャットやプロジェクトをトピックごとに整理し、一元管理できるようになります。 このニュースのポイン [...] The post Google、GeminiにNotebooks機能追加。NotebookLMと連携し、情報の一元管理が可能に first appeared on A...",
-      "publishedDate": "Wed, 22 Apr 2026 08:48:21 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/gemini-notebooklm.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTの面白い使い方50選！仕事・日常・画像生成の天才的なアイデアを紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chatgpt-interesting-list/",
-      "description": "ChatGPT Media編集部が思わず爆笑したChatGPTの面白い使い方を7選ご紹介します！巷を騒がせたChatGPTを応用したアイデアの中でも、特に面白いものをまとめましたので、ぜひ最後までご覧ください！ 続きを読む...",
-      "publishedDate": "Wed, 22 Apr 2026 08:20:01 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-interesting-list_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "安川電機、AI関連需要を背景に次期営業利益600億円見通し。フィジカルAIの社会実装を推進",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/yaskawadenki-ai-202602-settlement/",
-      "description": "安川電機は、2026年2月期の決算短信を発表しました。半導体を中心としたAI関連投資を背景に、次期は大幅な増収増益を計画しています。AIロボティクス技術の活用により、将来の成長を見据えた新たな市場機会の創出を進める方針で [...] The post 安川電機、AI関連需要を背景に次期営業利益600億円見通し。フィジカルAIの社会実装を推進 first appeared on AIポータルメディア...",
-      "publishedDate": "Wed, 22 Apr 2026 08:17:24 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0417yaskawa.png",
-      "language": "ja"
-    },
-    {
-      "title": "INSOL-HIGH、ヒューマノイドロボットの社会実装を加速する新団体「J-HRTI」発足。山善、ツムラ、レオン自動機が参画",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/j-hrti-insol-high-establish/",
-      "description": "INSOL-HIGHは、山善、ツムラ、レオン自動機とともに、新団体「J-HRTI」を発足しました。参画企業各社が実際の業務に基づいたヒューマノイドロボット用の自律動作プログラムを共同で開発・実装することを目指します。 こ [...] The post INSOL-HIGH、ヒューマノイドロボットの社会実装を加速する新団体「J-HRTI」発足。山善、ツムラ、レオン自動機が参画 first appea...",
-      "publishedDate": "Wed, 22 Apr 2026 08:08:06 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0417jhrtieye.png",
-      "language": "ja"
-    },
-    {
-      "title": "【Qwen3.6-Max-Preview】Claude Opus 4.5超え？エージェント指向の自立型コーディングAIを徹底解説！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwen3-6-max-preview/",
-      "description": "2026年4月20日、中国のアリババが次世代フラッグシップモデル「Qwen3.6-Max-Preview」をプレビュー版として公開しました！ 本モデルは、1兆パラメータ超の巨大スパースMoE構造を採用し、SWE-benc [...]...",
-      "publishedDate": "Wed, 22 Apr 2026 06:04:24 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.6-Max-Preview-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPT Images 2.0とは？OpenAIの画像生成AIの特徴・使い方・活用事例を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/chatgpt-images-2.0/",
-      "description": "2026年4月、OpenAIから新たな画像生成モデルが登場しました。 今回発表された「ChatGPT Images 2.0」は、従来の画像生成AIの延長ではなく、「アイデアをそのまま視覚化する」ことにフォーカスした次世代 [...]...",
-      "publishedDate": "Wed, 22 Apr 2026 05:48:56 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_ChatGPT-Images-2.0-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "WEB雑誌「営業・マーケティング向けAI特集号」顧客分析から営業DXまで組織を強化するソリューションの最新事例を一挙紹介！",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sales_marketing_aimagazine/",
-      "description": "AIポータルメディア「AIsmiley」は、WEB雑誌「営業・マーケティング向けAI特集号」を公開しました。「営業・マーケティング向けAI特集号」ではAI時代に必要なスキルを提供する4社をご紹介します。 ＼WEB雑誌「営 [...] The post WEB雑誌「営業・マーケティング向けAI特集号」顧客分析から営業DXまで組織を強化するソリューションの最新事例を一挙紹介！ first appear...",
-      "publishedDate": "Wed, 22 Apr 2026 05:18:31 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/1030_1200x628.jpg",
-      "language": "ja"
     },
     {
       "title": "Introducing OpenAI Privacy Filter",
@@ -333,68 +201,13 @@
     },
     {
       "title": "Falcon Perception",
-      "titleJa": "ファルコンの知覚",
+      "titleJa": "ファルコンの認識",
       "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
       "description": "...",
       "publishedDate": "Wed, 01 Apr 2026 07:13:20 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/tiiuae/falcon-perception.png",
-      "language": "en"
-    },
-    {
-      "title": "Any Custom Frontend with Gradio's Backend",
-      "titleJa": "Gradio のバックエンドを備えた任意のカスタム フロントエンド",
-      "link": "https://huggingface.co/blog/introducing-gradio-server",
-      "description": "...",
-      "publishedDate": "Wed, 01 Apr 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/introducing-gradio-server/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Build with Veo 3.1 Lite, our most cost-effective video generation model",
-      "titleJa": "当社の最もコスト効率の高いビデオ生成モデルである Veo 3.1 Lite で構築",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-lite/",
-      "description": "Build with Veo 3.1 Lite...",
-      "publishedDate": "Tue, 31 Mar 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/veo31lite.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents",
-      "titleJa": "Granite 4.0 3B Vision: エンタープライズ ドキュメント向けのコンパクトなマルチモーダル インテリジェンス",
-      "link": "https://huggingface.co/blog/ibm-granite/granite-4-vision",
-      "description": "...",
-      "publishedDate": "Tue, 31 Mar 2026 15:10:41 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ibm-granite/granite-4-vision.png",
-      "language": "en"
-    },
-    {
-      "title": "Roundtables: Unveiling The 10 Things That Matter in AI Right Now",
-      "titleJa": "ラウンドテーブル: AI において今重要な 10 の事柄を明らかにする",
-      "link": "https://www.technologyreview.com/2026/04/21/1135486/roundtables-unveiling-the-10-things-that-matter-in-ai-right-now/",
-      "description": "Listen to the session or watch below Subscribers saw a special edition of Roundtables simulcast live from EmTech AI, MIT Technology Review’s signature conference for AI leadership. Subscribers got an ...",
-      "publishedDate": "Tue, 21 Apr 2026 22:09:25 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/MITTR-Roundtables-Zoom-Opening-Overlay.png?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "The new word in home construction could be “plastics”",
-      "titleJa": "住宅建設における新しい言葉は「プラスチック」になるかもしれない",
-      "link": "https://www.technologyreview.com/2026/04/21/1134856/the-new-word-in-home-construction-could-be-plastics/",
-      "description": "Single-use plastics are a persistent source of environmental pollution, and the need to house a growing global population puts increasing pressure on resources such as timber. MIT engineers have an id...",
-      "publishedDate": "Tue, 21 Apr 2026 21:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/MIT-RecycledFlooring-01a-press.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -418,28 +231,6 @@
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/659bc8a7b0f43ed69f0b2300/KdH3z5dRfyIAyxgGPN5Ey.png",
       "language": "en"
-    },
-    {
-      "title": "Stable LMとは？規制は緩い？エロ表現は可能か実際に検証してみた",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/about-stablelm/",
-      "description": "画像生成AI「Stable Diffusion」で知られるStability AIが手がける言語モデル「Stable LM」。チャットボットや文章生成、翻訳、コード生成など、幅広いテキスト処理に対応したLLMです。さらに [...]...",
-      "publishedDate": "Tue, 21 Apr 2026 08:08:23 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/02/AIモン_Stable-LM-1024x576.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Stable Diffusionプロンプト（呪文）大全！コピペOK＆高品質画像を作るコツの完全保存版",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/stable-diffusion-spell/",
-      "description": "AI美少女を生成しようとしても、なかなか思ったとおりのクオリティにならない...という問題に直面していませんか？Stable Diffusionで生成する画像のクオリティを上げるには、使用するプロンプト（呪文）や [...]...",
-      "publishedDate": "Tue, 21 Apr 2026 06:55:22 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/stable-diffusion-spell_2604-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "AI and the Future of Cybersecurity: Why Openness Matters",
@@ -475,15 +266,70 @@
       "language": "en"
     },
     {
-      "title": "【Workspace Agents】ChatGPTがチームのデジタル同僚に進化！OpenAIの新エージェント機能を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/workspace-agents/",
-      "description": "2026年4月23日、OpenAIはChatGPTに「Workspace Agents」を導入しました！ これまでのカスタムGPTsは、あくまで個人向けのツールとしての側面が強く、チーム全体のワークフローを任せるには力不 [...]...",
-      "publishedDate": "Thu, 23 Apr 2026 06:41:55 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Workspace-Agents-1024x576.webp",
-      "language": "ja"
+      "title": "The Download: introducing the Nature issue",
+      "titleJa": "ダウンロード: Nature 問題の紹介",
+      "link": "https://www.technologyreview.com/2026/04/23/1136346/the-download-introducing-nature-issue/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Introducing: the Nature issue When we talk about “...",
+      "publishedDate": "Thu, 23 Apr 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/05/AP24106836358581-social.jpg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "Here’s how our TPUs power increasingly demanding AI workloads.",
+      "titleJa": "当社の TPU がどのようにして、ますます要求の厳しい AI ワークロードを強化するのかを説明します。",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/",
+      "description": "Learn how Google’s TPUs power increasingly demanding AI workloads with this new video....",
+      "publishedDate": "Thu, 23 Apr 2026 12:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/What_is_a_TPU_social.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Introducing GPT-5.5",
+      "titleJa": "GPT-5.5の紹介",
+      "link": "https://openai.com/index/introducing-gpt-5-5",
+      "description": "Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools....",
+      "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "GPT-5.5 System Card",
+      "titleJa": "GPT-5.5 システムカード",
+      "link": "https://openai.com/index/gpt-5-5-system-card",
+      "description": "...",
+      "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Automations",
+      "titleJa": "自動化",
+      "link": "https://openai.com/academy/codex-automations",
+      "description": "Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort....",
+      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Top 10 uses for Codex at work",
+      "titleJa": "仕事での Codex の使用法トップ 10",
+      "link": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "description": "Explore 10 practical Codex use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows....",
+      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "OpenAI、生命科学研究に特化したAIモデル「GPT-Rosalind」を発表",
@@ -508,47 +354,91 @@
       "language": "ja"
     },
     {
-      "title": "Gemini 3.1 Flash Liveとは？前モデルとの違いと主な特徴を解説",
+      "title": "GPT-5.4 mini / nano完全比較｜実務で差がつく機能とコストの決定的な違い",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gemini-3-1-flash-live-new/",
-      "description": "AIとの音声会話は、テンポが遅くてイライラする…」そんな悩みを過去のものにするのが、2026年3月にGoogleが発表した最新モデル「Gemini 3.1 Flash Live」です。 応答の遅延が極限まで解消されて相手 [...] The post Gemini 3.1 Flash Liveとは？前モデルとの違いと主な特徴を解説 first appeared on AIポータルメディアAIsmi...",
-      "publishedDate": "Thu, 23 Apr 2026 03:57:52 +0000",
+      "link": "https://aismiley.co.jp/ai_news/gpt-5-4-mini-nano/",
+      "description": "業務でChatGPTを使用しているけれど、新しいモデルや使い分けの方法がわからないというお悩みはありませんか？ AIモデルは高速に進化しており、それぞれの特徴を理解していないと業務効率に大きな差が生まれます。 この記事で [...] The post GPT-5.4 mini / nano完全比較｜実務で差がつく機能とコストの決定的な違い first appeared on AIポータルメディアA...",
+      "publishedDate": "Fri, 24 Apr 2026 06:21:20 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/gemini.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/gpt5mininano.jpg",
       "language": "ja"
     },
     {
-      "title": "イラレ生成AIの使い方ガイド！ベクター生成のコツも解説",
+      "title": "日本ディープラーニング協会、2026年3月開催「2026年 第2回 G検定」結果を発表。合格率77.04％",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/illustrator-generation-ai/",
-      "description": "Illustrator（以下、イラレ）に搭載された生成AI機能を使えば、文章を入力するだけでベクターイラストやパターン、配色案を自動で作れます。 本記事では、生成ベクター・生成塗りつぶし・生成パターン・生成再配色の4つの [...] The post イラレ生成AIの使い方ガイド！ベクター生成のコツも解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 23 Apr 2026 02:16:41 +0000",
+      "link": "https://aismiley.co.jp/ai_news/jdla-2026-2nd-gtest-results/",
+      "description": "日本ディープラーニング協会は、2026年3月に開催された「2026年 第2回 G検定（ジェネラリスト検定）」の結果を発表しました。受験者数は12,027名、合格者数は9,265名で、合格率は77.04％でした。 このニュ [...] The post 日本ディープラーニング協会、2026年3月開催「2026年 第2回 G検定」結果を発表。合格率77.04％ first appeared on AI...",
+      "publishedDate": "Fri, 24 Apr 2026 05:48:23 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/Illustrator.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/2026-gkentei2.png",
       "language": "ja"
     },
     {
-      "title": "Photoshop生成AIの使い方ガイド！機能・プロンプトのコツも解説",
+      "title": "一般社団法人xIPFコンソーシアム設立。AI×分散基盤で社会課題解決を図る",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/photoshop-adobe-firefly-ai/",
-      "description": "Photoshopに搭載された生成AI機能を使うと、文字を入力するだけで画像の背景を差し替えたり、写り込んだ不要な物を消したりと、以前なら数時間かかっていた作業が数分で完了します。 本記事では、生成AIの主要4機能の手順 [...] The post Photoshop生成AIの使い方ガイド！機能・プロンプトのコツも解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 23 Apr 2026 02:14:20 +0000",
+      "link": "https://aismiley.co.jp/ai_news/xipf-consortium-ai-data/",
+      "description": "ソフトバンクや富士通など8団体は、「一般社団法人xIPFコンソーシアム」を設立しました。AIとデータの高度な連携により、分散環境で安全にデータを活用できる次世代の社会基盤構築を推進します。 このニュースのポイント 8団体 [...] The post 一般社団法人xIPFコンソーシアム設立。AI×分散基盤で社会課題解決を図る first appeared on AIポータルメディアAIsmiley...",
+      "publishedDate": "Fri, 24 Apr 2026 05:43:49 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/Photoshop.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/AI-DATA-xIPF.png",
       "language": "ja"
     },
     {
-      "title": "スクウェア・エニックス、マンガ「写植指定」にAIツールを導入し業務効率化を図る",
+      "title": "日立製作所、フィジカルAIで現場の課題解決を加速する戦略拠点「フィジカルAI体験スタジオ」開設",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/square-enix-manga-ai/",
-      "description": "スクウェア・エニックスは、マンガ編集における写植指定業務の効率化を目的に「写植指定AI」を導入すると発表しました。AIが吹き出し形状や文字データを解析し、最適なフォントや配置を提案します。 このニュースのポイント スクウ [...] The post スクウェア・エニックス、マンガ「写植指定」にAIツールを導入し業務効率化を図る first appeared on AIポータルメディアAIsmil...",
-      "publishedDate": "Thu, 23 Apr 2026 01:52:38 +0000",
+      "link": "https://aismiley.co.jp/ai_news/hitachi-physical-ai-studio/",
+      "description": "日立製作所は、「フィジカルAI体験スタジオ」を開設しました。現場作業員を支援するロボティクスAIやウェアラブルセンサーなど最先端技術を体験でき、生産性・品質・安全に関する課題解決を目指します。 このニュースのポイント 日 [...] The post 日立製作所、フィジカルAIで現場の課題解決を加速する戦略拠点「フィジカルAI体験スタジオ」開設 first appeared on AIポータルメデ...",
+      "publishedDate": "Fri, 24 Apr 2026 05:43:47 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/square-enix-manga-ai.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/ainewshitachi.png",
+      "language": "ja"
+    },
+    {
+      "title": "大和証券グループと京都フィナンシャルグループ、AI活用を軸にDX分野での協業を開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/daiwasyokeng-kyotofg-dx-pertner/",
+      "description": "大和証券グループと京都フィナンシャルグループは、AI活用を軸にしたDX分野での協業に関する合意書を締結しました。両グループのDX戦略推進を加速・高度化し、金融業界における新たな価値創出を目指します。 このニュースのポイン [...] The post 大和証券グループと京都フィナンシャルグループ、AI活用を軸にDX分野での協業を開始 first appeared on AIポータルメディアAIsm...",
+      "publishedDate": "Fri, 24 Apr 2026 05:38:59 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0417yamatokyotoeye.png",
+      "language": "ja"
+    },
+    {
+      "title": "Google「Veo 3.1 Lite」とは？Fastとの違いや機能・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/veo-3-1-lite/",
+      "description": "マーケティング担当者として動画作成にかかるコストを削減する必要があるものの、うまくいかない━━そんなお悩みはありませんか？ 近年AIによる動画生成の技術は大きく進化し、高品質の動画を安価かつ高速で生成できるようになりまし [...] The post Google「Veo 3.1 Lite」とは？Fastとの違いや機能・使い方を徹底解説 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Fri, 24 Apr 2026 05:38:48 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/veolite.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "FRONTEOと慶應義塾大学医学部、会話型AIによるうつ病診断支援で特許2件取得",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/fronteo-keio-ai-program/",
+      "description": "FRONTEOと慶應義塾大学医学部のグループは、うつ病の診断支援を目的とした会話型AIプログラムに関する特許を2件取得しました。患者と医療従事者の自由会話をAIが解析し、双方の負担軽減を図る方針です。 このニュースのポイ [...] The post FRONTEOと慶應義塾大学医学部、会話型AIによるうつ病診断支援で特許2件取得 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Fri, 24 Apr 2026 05:33:18 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/FRONTEO-logo.png",
+      "language": "ja"
+    },
+    {
+      "title": "Gemma 4とは？性能・アーキテクチャ・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/gemma-4-google-deepmind-2026/",
+      "description": "2026年4月、GoogleはオープンモデルシリーズGemmaの最新モデル「Gemma 4」を公開しました。 Apache 2.0ライセンスへの変更により、商用利用における制約が低減されています。また、スマートフォンから [...] The post Gemma 4とは？性能・アーキテクチャ・使い方を徹底解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 24 Apr 2026 05:28:28 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/Gemma4.png",
       "language": "ja"
     },
     {
