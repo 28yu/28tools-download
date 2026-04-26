@@ -1,6 +1,16 @@
 {
-  "lastUpdated": "2026-04-25T01:30:10.584484",
+  "lastUpdated": "2026-04-26T01:54:20.278520",
   "articles": [
+    {
+      "title": "buildingSMART International announces that Céline Bent has left the organisation",
+      "link": "https://www.buildingsmart.org/buildingsmart-international-announces-that-celine-bent-has-left-the-organisation/",
+      "description": "London, U.K. – January 28th, 2026 — buildingSMART International (bSI) announces that Céline Bent has left the organisation. bSI commented that “it is with our regrets to announce that Céline has... Th...",
+      "publishedDate": "Wed, 28 Jan 2026 10:40:44 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
     {
       "title": "国土交通省、令和8年2月の建設工事受注総額42.7％増　4カ月連続で前年同月上",
       "link": "https://news.build-app.jp/article/40228/",
@@ -82,6 +92,16 @@
       "language": "ja"
     },
     {
+      "title": "The first buildingSMART openBIM Hackathon in Porto is complete",
+      "link": "https://www.buildingsmart.org/the-first-buildingsmart-openbim-hackathon-in-porto-is-complete/",
+      "description": "The first buildingSMART openBIM Hackathon is complete - and it delivered more than expected. Over 50 hours, 47 participants across 9 teams worked under real pressure to build solutions that work in pr...",
+      "publishedDate": "Tue, 14 Apr 2026 15:05:06 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "株式会社竹中工務店 大阪本店での「BONX WORK」活用事例動画を公開",
       "link": "https://news.build-app.jp/article/40254/",
       "description": "株式会社BONX（本社：東京都千代田区、代表取締役：宮坂貴大、以下BONX）は、現場コミュニケーションのワンストップソリューション「BONX......",
@@ -110,6 +130,26 @@
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/eyecatch-1024x538.jpg",
       "language": "ja"
+    },
+    {
+      "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
+      "link": "https://www.buildingsmart.org/industry-insights-embracing-challenges-and-opportunities-of-using-openbim-for-increasing-efficiency-in-the-construction-process/",
+      "description": "Read about Construction Industry leaders perspective on embracing challenges and opportunities of using openBIM for increasing efficiency: Link The post Industry Insights “Embracing Challenges and Opp...",
+      "publishedDate": "Thu, 16 Apr 2026 12:30:14 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The buildingSMART Implementers Assembly, February 2026 Event Report",
+      "link": "https://www.buildingsmart.org/the-buildingsmart-implementers-assembly-february-2026-event-report/",
+      "description": "The latest buildingSMART Implementers Assembly, hosted by Bentley in their Exton (PA) office, brought together the buildingSMART implementers community for two days of focused discussion and practical...",
+      "publishedDate": "Thu, 09 Apr 2026 11:11:07 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "人手削減・燃費30%減──清水建設「Smart Dozer」が変える建設現場",
@@ -192,6 +232,36 @@
       "language": "ja"
     },
     {
+      "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
+      "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
+      "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
+      "publishedDate": "Mon, 08 Dec 2025 19:22:27 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
+      "link": "https://www.buildingsmart.org/buildingsmart-brazil-has-been-formally-approved-as-a-full-chapter/",
+      "description": "London, U.K. – March 27th, 2026 — buildingSMART International (bSI) is pleased to announce that buildingSMART Brazil has been formally approved by the Board to become a Full Chapter, effective March.....",
+      "publishedDate": "Fri, 27 Mar 2026 10:19:53 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Alfred Waschl Steps Down from buildingSMART International Board of Directors",
+      "link": "https://www.buildingsmart.org/alfred-waschl-resigned-from-the-board/",
+      "description": "London, U.K. – February 27th, 2026 — buildingSMART International (bSI) announces that Alfred Waschl resigned from the Board of Directors on 29 January 2026. Due to ill health, Alfred previously steppe...",
+      "publishedDate": "Fri, 27 Feb 2026 09:21:11 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "大成建設、ZEFの構築と取り組みで脱炭素チャレンジカップ2026環境大臣賞を受賞",
       "link": "https://news.build-app.jp/article/40223/",
       "description": "大成建設株式会社（社長：相川善郎）が取り組む「ZEF（Net Zero Energy Factory）」の構築およびその取り組みが、「脱炭素......",
@@ -200,6 +270,36 @@
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/33864491_s-130x87.jpg",
       "language": "ja"
+    },
+    {
+      "title": "Key Outcomes from the Domain Leadership Conference in Zurich",
+      "link": "https://www.buildingsmart.org/key-outcomes-from-the-domain-leadership-conference-in-zurich/",
+      "description": "The recent Domain Leadership Conference held in Zurich on 4 &#38; 5 February marked an important moment for buildingSMART International. bSI Domains are membership-led, pro bono programmes representin...",
+      "publishedDate": "Fri, 20 Mar 2026 10:06:51 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "openBIM Practitioner Certification enters full-scale implementation across Chapters",
+      "link": "https://www.buildingsmart.org/openbim-practitioner-certification-enters-full-scale-implementation-across-chapters/",
+      "description": "The openBIM Practitioner Certification is now rolling out across the buildingSMART community, as part of the ongoing expansion of the Professional Certification Program, marking a major milestone in p...",
+      "publishedDate": "Fri, 05 Dec 2025 22:18:08 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Board of Directors Changes",
+      "link": "https://www.buildingsmart.org/board-of-directors-changes/",
+      "description": "London, U.K. – December 5th, 2025 — buildingSMART International (bSI) is today announcing some Board of Director changes. Board Changes Due to ill health, Alfred Waschl has stepped down from... The po...",
+      "publishedDate": "Fri, 05 Dec 2025 19:25:08 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     }
   ]
 }
