@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25T03:53:25.462297",
+  "lastUpdated": "2026-04-26T04:24:31.097983",
   "articles": [
     {
       "title": "Gemma 4 VLA Demo on Jetson Orin Nano Super",
@@ -24,6 +24,28 @@
       "language": "en"
     },
     {
+      "title": "Google Workspace with Geminiで資料もメールも議事録も丸ごと効率化！使い方・料金プランなどを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/gemini-for-google-workspace/",
+      "description": "「Google Workspace with Gemini（旧Gemini for Google Workspace）」は、Google Workspaceの各アプリ上から直接生成AIが使えるビジネス向け機能です。こちら [...]...",
+      "publishedDate": "Wed, 22 Apr 2026 13:38:44 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/gemini-for-google-workspace_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "vibe-localとは？落合陽一が開発したローカルAIの使い方やインストール方法を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/vibe-local/",
+      "description": "「AIコーディングツールを導入したいが、クラウドへのソースコード送信が怖い」「高価なAIツールを導入する予算がない」など、こうした悩みを抱える開発現場は少なくありません。 そんな課題を解決するのが、落合陽一氏が開発した完 [...]...",
+      "publishedDate": "Wed, 22 Apr 2026 12:34:00 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/03/AIモン_vibe-local-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "The Download: introducing the 10 Things That Matter in AI Right Now",
       "titleJa": "ダウンロード: AI において今重要な 10 の事柄の紹介",
       "link": "https://www.technologyreview.com/2026/04/22/1136310/the-download-10-things-that-matter-in-ai-right-now/",
@@ -46,6 +68,28 @@
       "language": "en"
     },
     {
+      "title": "【Kimi K2.6】300体のエージェント群で12時間自律稼働する次世代オープンウェイトLLMを徹底解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/kimi-k2-6/",
+      "description": "2026年4月21日、中国のMoonshot AIがフラッグシップ最新モデル「Kimi K2.6」を公開しました！ 目玉はなんと言っても、最大300体のサブエージェントで、4,000以上のツール呼び出しを12時間ぶっ通し [...]...",
+      "publishedDate": "Wed, 22 Apr 2026 11:37:14 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Kimi-K2.6-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTでクイズは作れる？思わず試したくなる機能の使い方からクイズアプリ作成方法まで解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/chatgpt-quiz/",
+      "description": "ChatGPTでクイズを作りたいけれど、どの方法が自分に合うのかわからないと感じている方は多いのではないでしょうか。実は、通常のチャットでのプロンプト入力に加え、GPTsやメニューの「クイズ」機能など、用途に応じた複数の [...]...",
+      "publishedDate": "Wed, 22 Apr 2026 11:21:22 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2023/06/トリビアクイズ-1-1024x576.jpg",
+      "language": "ja"
+    },
+    {
       "title": "AI needs a strong data fabric to deliver business value",
       "titleJa": "AI がビジネス価値を提供するには強力なデータ ファブリックが必要です",
       "link": "https://www.technologyreview.com/2026/04/22/1135295/ai-needs-a-strong-data-fabric-to-deliver-business-value/",
@@ -64,7 +108,7 @@
       "publishedDate": "Wed, 22 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/3pOt7hjYa1nUIIMMXdoEhD/b6493d0ba6756155a3ef880758e0a0b0/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -75,7 +119,7 @@
       "publishedDate": "Wed, 22 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4OePmYEOLzZNcxVLLd9pMH/cc16f505aa589ef72ef3c1c265705727/SEO.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -86,7 +130,7 @@
       "publishedDate": "Wed, 22 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/5VOBXAok5WCGbcXubvIGSn/c6ec67af102f0537ff2a526fca45ff47/OAI_Blog_SEO_16x9.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -123,6 +167,39 @@
       "language": "en"
     },
     {
+      "title": "ChatGPTの面白い使い方50選！仕事・日常・画像生成の天才的なアイデアを紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/chatgpt-interesting-list/",
+      "description": "ChatGPT Media編集部が思わず爆笑したChatGPTの面白い使い方を7選ご紹介します！巷を騒がせたChatGPTを応用したアイデアの中でも、特に面白いものをまとめましたので、ぜひ最後までご覧ください！ 続きを読む...",
+      "publishedDate": "Wed, 22 Apr 2026 08:20:01 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-interesting-list_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Qwen3.6-Max-Preview】Claude Opus 4.5超え？エージェント指向の自立型コーディングAIを徹底解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/qwen3-6-max-preview/",
+      "description": "2026年4月20日、中国のアリババが次世代フラッグシップモデル「Qwen3.6-Max-Preview」をプレビュー版として公開しました！ 本モデルは、1兆パラメータ超の巨大スパースMoE構造を採用し、SWE-benc [...]...",
+      "publishedDate": "Wed, 22 Apr 2026 06:04:24 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.6-Max-Preview-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPT Images 2.0とは？OpenAIの画像生成AIの特徴・使い方・活用事例を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/chatgpt-images-2.0/",
+      "description": "2026年4月、OpenAIから新たな画像生成モデルが登場しました。 今回発表された「ChatGPT Images 2.0」は、従来の画像生成AIの延長ではなく、「アイデアをそのまま視覚化する」ことにフォーカスした次世代 [...]...",
+      "publishedDate": "Wed, 22 Apr 2026 05:48:56 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_ChatGPT-Images-2.0-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "Introducing OpenAI Privacy Filter",
       "titleJa": "OpenAI プライバシー フィルターの紹介",
       "link": "https://openai.com/index/introducing-openai-privacy-filter",
@@ -130,7 +207,7 @@
       "publishedDate": "Wed, 22 Apr 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/9wR7uKQ9cCyJSZcN9PJCb/c42551ed6a31a9be9ada24fed80a862a/SEO-Introducing-OpenAi-Filter.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -233,6 +310,28 @@
       "language": "en"
     },
     {
+      "title": "Stable LMとは？規制は緩い？エロ表現は可能か実際に検証してみた",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/about-stablelm/",
+      "description": "画像生成AI「Stable Diffusion」で知られるStability AIが手がける言語モデル「Stable LM」。チャットボットや文章生成、翻訳、コード生成など、幅広いテキスト処理に対応したLLMです。さらに [...]...",
+      "publishedDate": "Tue, 21 Apr 2026 08:08:23 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/02/AIモン_Stable-LM-1024x576.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Stable Diffusionプロンプト（呪文）大全！コピペOK＆高品質画像を作るコツの完全保存版",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/stable-diffusion-spell/",
+      "description": "AI美少女を生成しようとしても、なかなか思ったとおりのクオリティにならない...という問題に直面していませんか？Stable Diffusionで生成する画像のクオリティを上げるには、使用するプロンプト（呪文）や [...]...",
+      "publishedDate": "Tue, 21 Apr 2026 06:55:22 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/stable-diffusion-spell_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "AI and the Future of Cybersecurity: Why Openness Matters",
       "titleJa": "AI とサイバーセキュリティの未来: オープン性が重要な理由",
       "link": "https://huggingface.co/blog/cybersecurity-openness",
@@ -256,7 +355,7 @@
     },
     {
       "title": "Bringing people together at AI for the Economy Forum",
-      "titleJa": "AI for Economy フォーラムに人々を集める",
+      "titleJa": "AI for Economy フォーラムに人々が集まる",
       "link": "https://blog.google/company-news/outreach-and-initiatives/creating-opportunity/ai-economy-forum/",
       "description": "Woman working with a large tool. On the left are the Google and MIT FutureTech logos, \"AI for the Economy Forum\", and \"Innovation and Adaption in the New Era\"...",
       "publishedDate": "Tue, 14 Apr 2026 09:00:00 +0000",
@@ -295,7 +394,7 @@
       "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/2Bh47W4cA48dvG5FbDtNQH/5897109fb0de6fc3125c0c35c4f60001/Hero_Art_Card_16x9.jpg?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -306,7 +405,7 @@
       "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4qBEDs71GX4NIuRrjXfZpA/8e5c587702a354616d4d99b1489a49b1/System_Card_Card_SEO_16x9.jpg?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -317,7 +416,7 @@
       "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -330,6 +429,17 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "【Workspace Agents】ChatGPTがチームのデジタル同僚に進化！OpenAIの新エージェント機能を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/workspace-agents/",
+      "description": "2026年4月23日、OpenAIはChatGPTに「Workspace Agents」を導入しました！ これまでのカスタムGPTsは、あくまで個人向けのツールとしての側面が強く、チーム全体のワークフローを任せるには力不 [...]...",
+      "publishedDate": "Thu, 23 Apr 2026 06:41:55 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Workspace-Agents-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "OpenAI、生命科学研究に特化したAIモデル「GPT-Rosalind」を発表",
