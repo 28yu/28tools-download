@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-26T04:24:31.097983",
+  "lastUpdated": "2026-04-27T04:32:32.033034",
   "articles": [
     {
       "title": "Gemma 4 VLA Demo on Jetson Orin Nano Super",
@@ -101,17 +101,6 @@
       "language": "en"
     },
     {
-      "title": "Workspace agents",
-      "titleJa": "ワークスペースエージェント",
-      "link": "https://openai.com/academy/workspace-agents",
-      "description": "Learn how to build, use, and scale workspace agents in ChatGPT to automate repeatable workflows, connect tools, and streamline team operations....",
-      "publishedDate": "Wed, 22 Apr 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/3pOt7hjYa1nUIIMMXdoEhD/b6493d0ba6756155a3ef880758e0a0b0/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
-      "language": "en"
-    },
-    {
       "title": "Speeding up agentic workflows with WebSockets in the Responses API",
       "titleJa": "Responses API の WebSocket を使用してエージェント ワークフローを高速化する",
       "link": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
@@ -119,7 +108,18 @@
       "publishedDate": "Wed, 22 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4OePmYEOLzZNcxVLLd9pMH/cc16f505aa589ef72ef3c1c265705727/SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Workspace agents",
+      "titleJa": "ワークスペースエージェント",
+      "link": "https://openai.com/academy/workspace-agents",
+      "description": "Learn how to build, use, and scale workspace agents in ChatGPT to automate repeatable workflows, connect tools, and streamline team operations....",
+      "publishedDate": "Wed, 22 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -130,7 +130,7 @@
       "publishedDate": "Wed, 22 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/5VOBXAok5WCGbcXubvIGSn/c6ec67af102f0537ff2a526fca45ff47/OAI_Blog_SEO_16x9.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -200,17 +200,6 @@
       "language": "ja"
     },
     {
-      "title": "Introducing OpenAI Privacy Filter",
-      "titleJa": "OpenAI プライバシー フィルターの紹介",
-      "link": "https://openai.com/index/introducing-openai-privacy-filter",
-      "description": "OpenAI Privacy Filter is an open-weight model for detecting and redacting personally identifiable information (PII) in text with state-of-the-art accuracy...",
-      "publishedDate": "Wed, 22 Apr 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/9wR7uKQ9cCyJSZcN9PJCb/c42551ed6a31a9be9ada24fed80a862a/SEO-Introducing-OpenAi-Filter.png?w=1600&amp;h=900&amp;fit=fill",
-      "language": "en"
-    },
-    {
       "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
       "titleJa": "Gemini 3.1 Flash TTS: 次世代の表現力豊かな AI スピーチ",
       "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/",
@@ -278,7 +267,7 @@
     },
     {
       "title": "Falcon Perception",
-      "titleJa": "ファルコンの認識",
+      "titleJa": "ファルコンの知覚",
       "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
       "description": "...",
       "publishedDate": "Wed, 01 Apr 2026 07:13:20 GMT",
@@ -321,17 +310,6 @@
       "language": "ja"
     },
     {
-      "title": "Stable Diffusionプロンプト（呪文）大全！コピペOK＆高品質画像を作るコツの完全保存版",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/stable-diffusion-spell/",
-      "description": "AI美少女を生成しようとしても、なかなか思ったとおりのクオリティにならない...という問題に直面していませんか？Stable Diffusionで生成する画像のクオリティを上げるには、使用するプロンプト（呪文）や [...]...",
-      "publishedDate": "Tue, 21 Apr 2026 06:55:22 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/stable-diffusion-spell_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "AI and the Future of Cybersecurity: Why Openness Matters",
       "titleJa": "AI とサイバーセキュリティの未来: オープン性が重要な理由",
       "link": "https://huggingface.co/blog/cybersecurity-openness",
@@ -355,7 +333,7 @@
     },
     {
       "title": "Bringing people together at AI for the Economy Forum",
-      "titleJa": "AI for Economy フォーラムに人々が集まる",
+      "titleJa": "AI for Economy フォーラムに人々を集める",
       "link": "https://blog.google/company-news/outreach-and-initiatives/creating-opportunity/ai-economy-forum/",
       "description": "Woman working with a large tool. On the left are the Google and MIT FutureTech logos, \"AI for the Economy Forum\", and \"Innovation and Adaption in the New Era\"...",
       "publishedDate": "Tue, 14 Apr 2026 09:00:00 +0000",
@@ -387,17 +365,6 @@
       "language": "en"
     },
     {
-      "title": "Introducing GPT-5.5",
-      "titleJa": "GPT-5.5の紹介",
-      "link": "https://openai.com/index/introducing-gpt-5-5",
-      "description": "Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools....",
-      "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/2Bh47W4cA48dvG5FbDtNQH/5897109fb0de6fc3125c0c35c4f60001/Hero_Art_Card_16x9.jpg?w=1600&amp;h=900&amp;fit=fill",
-      "language": "en"
-    },
-    {
       "title": "GPT-5.5 System Card",
       "titleJa": "GPT-5.5 システムカード",
       "link": "https://openai.com/index/gpt-5-5-system-card",
@@ -405,18 +372,18 @@
       "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4qBEDs71GX4NIuRrjXfZpA/8e5c587702a354616d4d99b1489a49b1/System_Card_Card_SEO_16x9.jpg?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
-      "title": "Automations",
-      "titleJa": "自動化",
-      "link": "https://openai.com/academy/codex-automations",
-      "description": "Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort....",
-      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "title": "Introducing GPT-5.5",
+      "titleJa": "GPT-5.5の紹介",
+      "link": "https://openai.com/index/introducing-gpt-5-5",
+      "description": "Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools....",
+      "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -424,6 +391,28 @@
       "titleJa": "仕事での Codex の使用法トップ 10",
       "link": "https://openai.com/academy/top-10-use-cases-codex-for-work",
       "description": "Explore 10 practical Codex use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows....",
+      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "language": "en"
+    },
+    {
+      "title": "How to get started with Codex",
+      "titleJa": "Codex の使用を開始する方法",
+      "link": "https://openai.com/academy/codex-how-to-start",
+      "description": "Learn how to get started with Codex by setting up projects, creating threads, and completing your first tasks with step-by-step guidance....",
+      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "What is Codex?",
+      "titleJa": "コーデックスとは何ですか?",
+      "link": "https://openai.com/academy/what-is-codex",
+      "description": "Learn how Codex helps you go beyond chat by automating tasks, connecting tools, and producing real outputs like docs and dashboards....",
       "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -453,14 +442,25 @@
       "language": "ja"
     },
     {
-      "title": "Anthropic、最新モデル「Claude Opus 4.7」を提供開始。難易度が高いタスク処理も可能",
+      "title": "GPT-5.5とは？OpenAIの最新AIモデルの特徴・料金・使い方を徹底解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/anthropic-claude-opus-4-7/",
-      "description": "米Anthropicは、最新のAIモデル「Claude Opus 4.7」を発表しました。複雑な推論や高度なコーディング能力が強化され、長時間にわたる複雑なタスクにおいて、高い信頼性を発揮します。 このニュースのポイント [...] The post Anthropic、最新モデル「Claude Opus 4.7」を提供開始。難易度が高いタスク処理も可能 first appeared on AIポ...",
-      "publishedDate": "Thu, 23 Apr 2026 05:45:37 +0000",
+      "link": "https://weel.co.jp/media/tech/gpt5-5/",
+      "description": "2026年4月、OpenAIから新たな大規模言語モデルが発表されました。 今回登場した「GPT-5.5」は、従来モデルの延長線にとどまらず、実際の仕事をこなすためのAIという新しい設計思想のもと開発されたモデルです。文章 [...]...",
+      "publishedDate": "Mon, 27 Apr 2026 01:50:19 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-5.5-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【アーカイブ配信スタート】AI博覧会 Osaka 2026 ー関西のDXを加速させるカンファレンスを公開ー",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-hakurankai_2026_osaka_archive/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年1月21日（水）・22日（木）の2日間にわたり開催した「AI博覧会 Osaka 2026」のカンファレンスのアーカイブ配信 [...] The post 【アーカイブ配信スタート】AI博覧会 Osaka 2026 ー関西のDXを加速させるカンファレンスを公開ー first appeared on AI...",
+      "publishedDate": "Mon, 27 Apr 2026 01:00:07 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/anthropic-claude-opus4.7.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/aihakurankaiosaka2026.png",
       "language": "ja"
     },
     {
@@ -549,6 +549,17 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/Gemma4.png",
+      "language": "ja"
+    },
+    {
+      "title": "「TypeScript 7.0」ベータ版が公開。TypeScriptコンパイラなどをGo言語に移植、コンパイルを10倍速に",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/typescript_70typescriptgo10.html",
+      "description": "マイクロソフトは、TypeScriptをGo言語に移植した最初のバージョンとなる「TypeScript 7.0」のベータ版を公開したと発表しました。 TypeScript 7.0 Beta is here!Built on a new na......",
+      "publishedDate": "2026-04-26T15:08:13Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/v2BDmszu.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/bun-headlessbrowserautomation01.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "マイクロソフト、ローカルAI環境をインストーラで配布できる「Foundry Local」正式リリース。MacやLinuxにも対応",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/aifoundry_localmaclinux.html",
-      "description": "マイクロソフトは、アプリケーションにバンドルしてインストーラで配布できるコンパクトなローカルAI環境「Foundry Local」の正式リリースを発表しました。 開発者はアプリケーションにFoundry LocalのAI環境をバンドルしてイ......",
-      "publishedDate": "2026-04-12T15:28:44Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/foundrylocal-ga01.png",
       "language": "ja"
     }
   ]
