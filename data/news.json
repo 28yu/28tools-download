@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-26T01:54:20.278520",
+  "lastUpdated": "2026-04-27T01:57:55.062841",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -12,13 +12,13 @@
       "language": "en"
     },
     {
-      "title": "国土交通省、令和8年2月の建設工事受注総額42.7％増　4カ月連続で前年同月上",
-      "link": "https://news.build-app.jp/article/40228/",
-      "description": "国土交通省は令和8年3月31日、「建設工事受注動態統計調査（大手50社調査）」の令和8年2月分の結果を公表しました。 今回の結果では、民間・......",
+      "title": "竹中工務店ら5社、使用済みプラ原料の再生樹脂を建設資材に適用、技術課題を解決し実用化",
+      "link": "https://news.build-app.jp/article/40216/",
+      "description": "出光興産・竹中工務店・ケミカルリサイクル・ジャパン（CRJ）・フクビ化学工業・プライムポリマー（PRM）の5社は2026年4月10日、廃棄・......",
       "publishedDate": "Wed, 22 Apr 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33961843_s-130x98.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33863440_m-130x95.jpg",
       "language": "ja"
     },
     {
@@ -32,6 +32,16 @@
       "language": "ja"
     },
     {
+      "title": "国土交通省、令和8年2月の建設工事受注総額42.7％増　4カ月連続で前年同月上",
+      "link": "https://news.build-app.jp/article/40228/",
+      "description": "国土交通省は令和8年3月31日、「建設工事受注動態統計調査（大手50社調査）」の令和8年2月分の結果を公表しました。 今回の結果では、民間・......",
+      "publishedDate": "Wed, 22 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33961843_s-130x98.jpg",
+      "language": "ja"
+    },
+    {
       "title": "清水建設、1.5万名のDX基盤に「テックタッチ」採用 主要6システムに展開し工数削減目指す",
       "link": "https://news.build-app.jp/article/40233/",
       "description": "概要 AI型デジタルアダプションプラットフォーム（DAP）国内シェアNo.1（※1）の「テックタッチ」を開発・提供するテックタッチ株式会社、......",
@@ -39,46 +49,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/02/fqEpYdcxFANizVA1645603757-130x87.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "竹中工務店ら5社、使用済みプラ原料の再生樹脂を建設資材に適用、技術課題を解決し実用化",
-      "link": "https://news.build-app.jp/article/40216/",
-      "description": "出光興産・竹中工務店・ケミカルリサイクル・ジャパン（CRJ）・フクビ化学工業・プライムポリマー（PRM）の5社は2026年4月10日、廃棄・......",
-      "publishedDate": "Wed, 22 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33863440_m-130x95.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "建設業に若者が来ない——。｜それは、労働条件ではなく、資本の問題だ。",
-      "link": "https://news.build-app.jp/article/39610/",
-      "description": "労働条件が悪いから人が来ない——日本の建設業界では長らく、そう語られ続けてきた。だが、その診断は根本から間違っている。建築・土木分野から若者......",
-      "publishedDate": "Tue, 21 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260422_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大林組、BIM図面審査に対応した確認申請などを複数案件で提出",
-      "link": "https://news.build-app.jp/article/40231/",
-      "description": "株式会社大林組（本社：東京都港区、社長：佐藤俊美）は、国土交通省が進める建築確認におけるBIM図面審査に対応するため、指定確認検査機関および......",
-      "publishedDate": "Tue, 21 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/01/AdobeStock_464955361-130x87.jpeg",
-      "language": "ja"
-    },
-    {
-      "title": "竹中工務店、居室向けCLT制振壁KiPLUS WALL DAMPERを開発、シリーズ第3弾",
-      "link": "https://news.build-app.jp/article/40219/",
-      "description": "株式会社竹中工務店（社長：丁野成人）は、CLT（直交集成板）を活用した新たな制振壁技術「KiPLUS® WALL DAMPER」を開発したと......",
-      "publishedDate": "Tue, 21 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33965467_s-130x73.jpg",
       "language": "ja"
     },
     {
@@ -102,16 +72,6 @@
       "language": "en"
     },
     {
-      "title": "株式会社竹中工務店 大阪本店での「BONX WORK」活用事例動画を公開",
-      "link": "https://news.build-app.jp/article/40254/",
-      "description": "株式会社BONX（本社：東京都千代田区、代表取締役：宮坂貴大、以下BONX）は、現場コミュニケーションのワンストップソリューション「BONX......",
-      "publishedDate": "Thu, 23 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/rbm8S3J6wOtaY151643282433-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "竹中工務店、エネサーブとフィジカルPPA締結、東京本店管内の建設現場23件へ再エネ供給開始",
       "link": "https://news.build-app.jp/article/40221/",
       "description": "株式会社竹中工務店（社長：丁野成人）は、建設現場で使用する電力のCO2排出量を減らすため、大和ハウスグループのエネサーブ株式会社（社長：井上......",
@@ -119,6 +79,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/3422461_m-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "株式会社竹中工務店 大阪本店での「BONX WORK」活用事例動画を公開",
+      "link": "https://news.build-app.jp/article/40254/",
+      "description": "株式会社BONX（本社：東京都千代田区、代表取締役：宮坂貴大、以下BONX）は、現場コミュニケーションのワンストップソリューション「BONX......",
+      "publishedDate": "Thu, 23 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/rbm8S3J6wOtaY151643282433-130x87.jpg",
       "language": "ja"
     },
     {
@@ -159,6 +129,36 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/bulldozer_1200x630-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大林組、カーボン・オフセット第三者認証基準に基づく認証を取得",
+      "link": "https://news.build-app.jp/article/40260/",
+      "description": "概要 株式会社大林組（本社：東京都港区、社長：佐藤俊美）は、出光興産株式会社（本社：東京都千代田区、社長：酒井則明）と連携し、環境省が指針を......",
+      "publishedDate": "Sun, 26 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/ziqgTJjcgINb51c1679638384_1679638410-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "現場条件に合うアンカーをどう選ぶ？種類・施工方法・コスト目安を実務目線で解説",
+      "link": "https://news.build-app.jp/article/40309/",
+      "description": "建築工事で使われるアンカーは、部材や設備を建物に固定するための部材です。基礎やコンクリート、壁、足場、内装など幅広い場所で使われます。 しか......",
+      "publishedDate": "Sun, 26 Apr 2026 13:46:29 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/26527682_m-130x98.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新版】建築におけるスタッドとは？LGS下地・頭付きスタッドの違い、BIM活用まで解説",
+      "link": "https://news.build-app.jp/article/40304/",
+      "description": "建築現場で使われる「スタッド」は、主に壁や天井の下地を構成する縦方向の部材を指します。オフィスや商業施設、集合住宅、公共施設などの内装工事で......",
+      "publishedDate": "Sun, 26 Apr 2026 13:27:41 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/34182405_m-130x87.jpg",
       "language": "ja"
     },
     {
