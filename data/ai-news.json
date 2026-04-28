@@ -1,28 +1,6 @@
 {
-  "lastUpdated": "2026-04-27T04:32:32.033034",
+  "lastUpdated": "2026-04-28T04:35:35.299233",
   "articles": [
-    {
-      "title": "Gemma 4 VLA Demo on Jetson Orin Nano Super",
-      "titleJa": "Jetson Music Nano Super の Gemma 4 VLA デモ",
-      "link": "https://huggingface.co/blog/nvidia/gemma4",
-      "description": "...",
-      "publishedDate": "Wed, 22 Apr 2026 15:40:50 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/gemma4.png",
-      "language": "en"
-    },
-    {
-      "title": "Making ChatGPT better for clinicians",
-      "titleJa": "ChatGPT を臨床医にとってより良いものにする",
-      "link": "https://openai.com/index/making-chatgpt-better-for-clinicians",
-      "description": "OpenAI makes ChatGPT for Clinicians free for verified U.S. physicians, nurse practitioners, and pharmacists, supporting clinical care, documentation, and research....",
-      "publishedDate": "Wed, 22 Apr 2026 15:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
     {
       "title": "Google Workspace with Geminiで資料もメールも議事録も丸ごと効率化！使い方・料金プランなどを徹底解説",
       "titleJa": null,
@@ -79,94 +57,6 @@
       "language": "ja"
     },
     {
-      "title": "ChatGPTでクイズは作れる？思わず試したくなる機能の使い方からクイズアプリ作成方法まで解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chatgpt-quiz/",
-      "description": "ChatGPTでクイズを作りたいけれど、どの方法が自分に合うのかわからないと感じている方は多いのではないでしょうか。実は、通常のチャットでのプロンプト入力に加え、GPTsやメニューの「クイズ」機能など、用途に応じた複数の [...]...",
-      "publishedDate": "Wed, 22 Apr 2026 11:21:22 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2023/06/トリビアクイズ-1-1024x576.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "AI needs a strong data fabric to deliver business value",
-      "titleJa": "AI がビジネス価値を提供するには強力なデータ ファブリックが必要です",
-      "link": "https://www.technologyreview.com/2026/04/22/1135295/ai-needs-a-strong-data-fabric-to-deliver-business-value/",
-      "description": "Artificial intelligence is moving quickly in the enterprise, from experimentation to everyday use. Organizations are deploying copilots, agents, and predictive systems across finance, supply chains, h...",
-      "publishedDate": "Wed, 22 Apr 2026 10:05:06 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/SAP-article-iStock-480794780.jpg",
-      "language": "en"
-    },
-    {
-      "title": "Speeding up agentic workflows with WebSockets in the Responses API",
-      "titleJa": "Responses API の WebSocket を使用してエージェント ワークフローを高速化する",
-      "link": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
-      "description": "A deep dive into the Codex agent loop, showing how WebSockets and connection-scoped caching reduced API overhead and improved model latency....",
-      "publishedDate": "Wed, 22 Apr 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Workspace agents",
-      "titleJa": "ワークスペースエージェント",
-      "link": "https://openai.com/academy/workspace-agents",
-      "description": "Learn how to build, use, and scale workspace agents in ChatGPT to automate repeatable workflows, connect tools, and streamline team operations....",
-      "publishedDate": "Wed, 22 Apr 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Introducing workspace agents in ChatGPT",
-      "titleJa": "ChatGPT でのワークスペース エージェントの紹介",
-      "link": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
-      "description": "Workspace agents in ChatGPT are Codex-powered agents that automate complex workflows, run in the cloud, and help teams scale work across tools securely....",
-      "publishedDate": "Wed, 22 Apr 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "3 things Michelle Kim is into right now",
-      "titleJa": "ミシェル・キムが今ハマっている3つのこと",
-      "link": "https://www.technologyreview.com/2026/04/22/1135423/3-things-michelle-kim/",
-      "description": "Isegye Idol If you thought K-pop was weird, virtual idols—humans who perform as anime-style digital characters via motion capture—will blow your mind. My favorite is a girl group called Isegye Idol, c...",
-      "publishedDate": "Wed, 22 Apr 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/Michelle_8818.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "One town’s scheme to get rid of its geese",
-      "titleJa": "ある町のガチョウ駆除計画",
-      "link": "https://www.technologyreview.com/2026/04/22/1135430/california-town-scheme-get-rid-geese/",
-      "description": "“Pull over!” I order my brother one sunny February afternoon. Our target is in sight: a gaggle of Canada geese, pecking at grass near the dog park. As I approach, tiptoeing over their grayish-white po...",
-      "publishedDate": "Wed, 22 Apr 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/MJ26-front-dl_dispatch.png?w=636",
-      "language": "en"
-    },
-    {
-      "title": "There is no nature anymore",
-      "titleJa": "もう自然はない",
-      "link": "https://www.technologyreview.com/2026/04/22/1135440/editors-letter-may-2026/",
-      "description": "When people talk about “nature,” they’re generally talking about things that aren’t made by human beings. Rocks. Reefs. Red wolves. But while there is plenty of God’s creation to go around, it is hard...",
-      "publishedDate": "Wed, 22 Apr 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/06/mat_debrief.png?w=1012",
-      "language": "en"
-    },
-    {
       "title": "ChatGPTの面白い使い方50選！仕事・日常・画像生成の天才的なアイデアを紹介",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/chatgpt-interesting-list/",
@@ -175,28 +65,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-interesting-list_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Qwen3.6-Max-Preview】Claude Opus 4.5超え？エージェント指向の自立型コーディングAIを徹底解説！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwen3-6-max-preview/",
-      "description": "2026年4月20日、中国のアリババが次世代フラッグシップモデル「Qwen3.6-Max-Preview」をプレビュー版として公開しました！ 本モデルは、1兆パラメータ超の巨大スパースMoE構造を採用し、SWE-benc [...]...",
-      "publishedDate": "Wed, 22 Apr 2026 06:04:24 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.6-Max-Preview-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPT Images 2.0とは？OpenAIの画像生成AIの特徴・使い方・活用事例を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/chatgpt-images-2.0/",
-      "description": "2026年4月、OpenAIから新たな画像生成モデルが登場しました。 今回発表された「ChatGPT Images 2.0」は、従来の画像生成AIの延長ではなく、「アイデアをそのまま視覚化する」ことにフォーカスした次世代 [...]...",
-      "publishedDate": "Wed, 22 Apr 2026 05:48:56 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_ChatGPT-Images-2.0-1024x576.webp",
       "language": "ja"
     },
     {
@@ -255,25 +123,91 @@
       "language": "en"
     },
     {
-      "title": "The latest AI news we announced in March 2026",
-      "titleJa": "2026年3月に発表したAI最新ニュース",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-march-2026/",
-      "description": "March 2026 AI Recap showing new updates...",
-      "publishedDate": "Wed, 01 Apr 2026 13:00:00 +0000",
-      "source": "Google AI Blog",
+      "title": "アイスマイリー、5/13（水）から3日間「第6回 デジタル化・DX推進展【東京】/ AI活用支援EXPO」にブース出展",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/odex-no6-2026-tokyo/",
+      "description": "AIsmileyは、2026年5月13日（水）～5月15日（金）に東京ビッグサイトにて開催の「第6回 デジタル化・DX推進展【東京】/ AI活用支援EXPO」にブースを出展します。 会場では、最新のAIソリューションやニ [...] The post アイスマイリー、5/13（水）から3日間「第6回 デジタル化・DX推進展【東京】/ AI活用支援EXPO」にブース出展 first appeared...",
+      "publishedDate": "Tue, 28 Apr 2026 04:00:54 +0000",
+      "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/March_2026_AI_Recap_social_hvvl.max-600x600.format-webp.webp",
-      "language": "en"
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/odex01.png",
+      "language": "ja"
     },
     {
-      "title": "Falcon Perception",
-      "titleJa": "ファルコンの知覚",
-      "link": "https://huggingface.co/blog/tiiuae/falcon-perception",
+      "title": "ChatGPTでクイズは作れる？思わず試したくなる機能の使い方からクイズアプリ作成方法まで解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/chatgpt-quiz/",
+      "description": "ChatGPTでクイズを作りたいけれど、どの方法が自分に合うのかわからないと感じている方は多いのではないでしょうか。実は、通常のチャットでのプロンプト入力に加え、GPTsやメニューの「クイズ」機能など、用途に応じた複数の [...]...",
+      "publishedDate": "Tue, 28 Apr 2026 01:54:30 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-quiz_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Qwen3.6-27Bとは？27Bパラメータで前世代397Bを超えたオープンソースモデルの特徴・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/qwen3-6-27b/",
+      "description": "2026年4月、Alibaba GroupのQwenチームから新たなオープンソースAIモデルが公開されました。 今回登場した「Qwen3.6-27B」は、わずか27BパラメータのDenseアーキテクチャながら、397Bパ [...]...",
+      "publishedDate": "Tue, 28 Apr 2026 01:49:48 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.6-27B-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "DeepSeek-V4とは？100万トークン対応の次世代オープンソースAIを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/deepseek-v4/",
+      "description": "2026年、新たなオープンソースLLMが登場しました。 今回登場した「DeepSeek-V4」は、100万トークンという超長文コンテキストに対応しながら、高い推論性能と計算効率を両立することを目指して設計された次世代の大 [...]...",
+      "publishedDate": "Tue, 28 Apr 2026 01:31:06 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_DeepSeek-V4-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AI生成でJSコードを作る方法！スクリプト生成AIおすすめツール比較",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/js-code-javascript-ai/",
+      "description": "JavaScriptのコード作成にAIを活用すれば、開発効率が向上します。 この記事では、AI生成ツールを使ったJSコードの作成方法をわかりやすく解説します。 ChatGPTやGitHub Copilotなど主要ツールの [...] The post AI生成でJSコードを作る方法！スクリプト生成AIおすすめツール比較 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Tue, 28 Apr 2026 01:15:29 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/JScode.png",
+      "language": "ja"
+    },
+    {
+      "title": "ヒューマノイドロボットとは?特徴・主要メーカー・価格・活用事例をわかりやすく解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/humanoid-robot-ai-dx/",
+      "description": "人間のような姿で歩き、物を運び、作業をこなすヒューマノイドロボット。かつてはSF映画の中だけの存在でしたが、AI技術の進歩により製造業や物流などの作業条件を定めやすい現場を中心に実証や限定導入が進んでいます。 本記事では [...] The post ヒューマノイドロボットとは?特徴・主要メーカー・価格・活用事例をわかりやすく解説 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Tue, 28 Apr 2026 01:13:33 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/humanoidrobot.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "「AIに選ばれる企業のマーケティング戦略書」を公開！AIO・LLMO・GEOの違いから実践まで―AI検索時代の新基準を徹底解説！",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-marketing-strategy-guide/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、AI検索時代に選ばれる企業になるための戦略とツール選定をまとめた「AIに選ばれる企業のマーケティング戦略書」を、2026年4月28日 [...] The post 「AIに選ばれる企業のマーケティング戦略書」を公開！AIO・LLMO・GEOの違いから実践まで―AI検索時代の新基準を徹底解説！ first app...",
+      "publishedDate": "Tue, 28 Apr 2026 01:00:02 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/ai-marketing-strategy-guide1.png",
+      "language": "ja"
+    },
+    {
+      "title": "Adaptive Ultrasound Imaging with Physics-Informed NV-Raw2Insights-US AI",
+      "titleJa": "物理学に基づいた NV-Raw2Insights-US AI を使用した適応型超音波イメージング",
+      "link": "https://huggingface.co/blog/nvidia/raw2insights-adaptive-ultrasound-imaging",
       "description": "...",
-      "publishedDate": "Wed, 01 Apr 2026 07:13:20 GMT",
+      "publishedDate": "Tue, 28 Apr 2026 00:28:13 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/tiiuae/falcon-perception.png",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/raw2insights-adaptive-ultrasound-imaging.png",
       "language": "en"
     },
     {
@@ -297,17 +231,6 @@
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/659bc8a7b0f43ed69f0b2300/KdH3z5dRfyIAyxgGPN5Ey.png",
       "language": "en"
-    },
-    {
-      "title": "Stable LMとは？規制は緩い？エロ表現は可能か実際に検証してみた",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/about-stablelm/",
-      "description": "画像生成AI「Stable Diffusion」で知られるStability AIが手がける言語モデル「Stable LM」。チャットボットや文章生成、翻訳、コード生成など、幅広いテキスト処理に対応したLLMです。さらに [...]...",
-      "publishedDate": "Tue, 21 Apr 2026 08:08:23 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/02/AIモン_Stable-LM-1024x576.jpg",
-      "language": "ja"
     },
     {
       "title": "AI and the Future of Cybersecurity: Why Openness Matters",
@@ -372,7 +295,7 @@
       "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4qBEDs71GX4NIuRrjXfZpA/8e5c587702a354616d4d99b1489a49b1/System_Card_Card_SEO_16x9.jpg?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -387,10 +310,21 @@
       "language": "en"
     },
     {
-      "title": "Top 10 uses for Codex at work",
-      "titleJa": "仕事での Codex の使用法トップ 10",
-      "link": "https://openai.com/academy/top-10-use-cases-codex-for-work",
-      "description": "Explore 10 practical Codex use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows....",
+      "title": "Working with Codex",
+      "titleJa": "コーデックスの使用",
+      "link": "https://openai.com/academy/working-with-codex",
+      "description": "Learn how to set up your Codex workspace, create threads and projects, manage files, and start completing tasks with step-by-step guidance....",
+      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "language": "en"
+    },
+    {
+      "title": "Automations",
+      "titleJa": "自動化",
+      "link": "https://openai.com/academy/codex-automations",
+      "description": "Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort....",
       "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -405,7 +339,40 @@
       "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "language": "en"
+    },
+    {
+      "title": "Plugins and skills",
+      "titleJa": "プラグインとスキル",
+      "link": "https://openai.com/academy/codex-plugins-and-skills",
+      "description": "Learn how to use Codex plugins and skills to connect tools, access data, and follow repeatable workflows to automate tasks and improve results....",
+      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "language": "en"
+    },
+    {
+      "title": "Codex settings",
+      "titleJa": "コーデックス設定",
+      "link": "https://openai.com/academy/codex-settings",
+      "description": "Learn how to configure Codex settings, including personalization, detail level, and permissions, to run tasks smoothly and customize your workflow....",
+      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "language": "en"
+    },
+    {
+      "title": "Top 10 uses for Codex at work",
+      "titleJa": "仕事での Codex の使用法トップ 10",
+      "link": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "description": "Explore 10 practical Codex use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows....",
+      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -416,7 +383,29 @@
       "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "language": "en"
+    },
+    {
+      "title": "Will fusion power get cheap? Don’t count on it.",
+      "titleJa": "核融合発電は安くなるのか？当てにしないでください。",
+      "link": "https://www.technologyreview.com/2026/04/23/1136329/fusion-power-cost/",
+      "description": "Fusion power could provide a steady, zero-emissions source of electricity in the future—if companies can get plants built and running. But a new study suggests that even if that future arrives, it mig...",
+      "publishedDate": "Thu, 23 Apr 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/fusion-cost.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Elevating Austria: Google invests in its first data center in the Alps.",
+      "titleJa": "オーストリアの高揚: Google はアルプスにある同社初のデータセンターに投資します。",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-data-center-austria/",
+      "description": "Aerial image of the data center...",
+      "publishedDate": "Thu, 23 Apr 2026 09:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Kronstorf_Data_Center_1.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -431,14 +420,124 @@
       "language": "ja"
     },
     {
-      "title": "OpenAI、生命科学研究に特化したAIモデル「GPT-Rosalind」を発表",
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "titleJa": "GPT-5.5 バイオバグ報奨金",
+      "link": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
+      "description": "Explore the GPT-5.5 Bio Bug Bounty: a red-teaming challenge to find universal jailbreaks for bio safety risks, with rewards up to $25,000....",
+      "publishedDate": "Thu, 23 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "How to Use Transformers.js in a Chrome Extension",
+      "titleJa": "Chrome 拡張機能で Transformers.js を使用する方法",
+      "link": "https://huggingface.co/blog/transformersjs-chrome-extension",
+      "description": "...",
+      "publishedDate": "Thu, 23 Apr 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/transformersjs-chrome-extension/thumbnail.jpg",
+      "language": "en"
+    },
+    {
+      "title": "A new way to explore the web with AI Mode in Chrome",
+      "titleJa": "Chrome の AI モードを使用してウェブを探索する新しい方法",
+      "link": "https://blog.google/products-and-platforms/products/search/ai-mode-chrome/",
+      "description": "AI Mode in Chrome...",
+      "publishedDate": "Thu, 16 Apr 2026 17:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_Mode_in_Chrome_-_Blog_header.png",
+      "language": "en"
+    },
+    {
+      "title": "New ways to create personalized images in the Gemini app",
+      "titleJa": "Gemini アプリでパーソナライズされた画像を作成する新しい方法",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana/",
+      "description": "Example images made with Personal Intelligence...",
+      "publishedDate": "Thu, 16 Apr 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_post_header.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "【Claude Code /ultrareview】マルチエージェントによるクラウド型深層コードレビュー機能を徹底解説！",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-gpt-rosalind/",
-      "description": "米OpenAIは、生命科学分野向けモデル「GPT-Rosalind」を発表しました。創薬や分子生物学などの研究支援を目的とし、文献解析や実験計画など複雑なワークフローの効率化を図ります。 このニュースのポイント Open [...] The post OpenAI、生命科学研究に特化したAIモデル「GPT-Rosalind」を発表 first appeared on AIポータルメディアAIsmi...",
-      "publishedDate": "Thu, 23 Apr 2026 06:01:12 +0000",
+      "link": "https://weel.co.jp/media/tech/claude-code-ultrareview/",
+      "description": "2026年4月17日、AnthropicはClaude Codeのアップデートにおいて、新コマンド「/ultrareview」をリリースしました！ Anthropicの公式ブログでは、同社のエンジニアひとりあたりのコード [...]...",
+      "publishedDate": "Mon, 27 Apr 2026 09:08:51 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/ultrareview-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Sakana AI、既存モデルを日本仕様に調整した「Namazu」（α版）とチャットサービス「Sakana Chat」発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/sakana-chat-dev/",
+      "description": "Sakana AIは、既存のフロンティアモデルを日本仕様に適応した試作モデルシリーズ「Namazu」（α版）を開発し、本モデルを搭載したチャットサービス「Sakana Chat」を公開しました。 このニュースのポイント [...] The post Sakana AI、既存モデルを日本仕様に調整した「Namazu」（α版）とチャットサービス「Sakana Chat」発表 first appeare...",
+      "publishedDate": "Mon, 27 Apr 2026 09:01:05 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/GPT-Rosalind.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/sakanachat-logo.png",
+      "language": "ja"
+    },
+    {
+      "title": "野村総合研究所、業界・タスク特化型LLMの構築手法を高精度化・効率化。専門領域のAI活用を推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/nri-specialized-llm/",
+      "description": "野村総合研究所は、特定の業界や業務に特化したLLMの構築手法を高精度化・効率化しました。本LLMを組み込んだAIエージェントの導入・展開を進め、多様な業界の専門業務支援を推進します。 このニュースのポイント 野村総合研究 [...] The post 野村総合研究所、業界・タスク特化型LLMの構築手法を高精度化・効率化。専門領域のAI活用を推進 first appeared on AIポータルメデ...",
+      "publishedDate": "Mon, 27 Apr 2026 08:55:05 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/nri0422rye.png",
+      "language": "ja"
+    },
+    {
+      "title": "ベリサーブ、新卒社員研修で生成AIテーマの教育プログラムを導入。即戦力となるAI人材を育成",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/veriserve-ai-hr-education/",
+      "description": "ソフトウェアの品質向上支援サービスを提供するベリサーブは、即戦力となるAI人材を育成するため、新卒社員研修において生成AIの活用・開発・品質保証を一体的に学ぶ教育プログラムを本格導入しました。 このニュースのポイント ベ [...] The post ベリサーブ、新卒社員研修で生成AIテーマの教育プログラムを導入。即戦力となるAI人材を育成 first appeared on AIポータルメディア...",
+      "publishedDate": "Mon, 27 Apr 2026 08:52:00 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/veriserveye.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI、最新モデル「GPT-5.5」を発表。推論能力と自立性が向上",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-gpt-5-5-offer/",
+      "description": "OpenAIは、AIモデルの最新版「GPT-5.5」の提供開始を発表しました。推論能力や自律性が向上し、複雑なタスクへの対応力を高めています。 このニュースのポイント OpenAIが「GPT-5.5」の提供開始を発表 推 [...] The post OpenAI、最新モデル「GPT-5.5」を発表。推論能力と自立性が向上 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 27 Apr 2026 08:45:59 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/GPT-5.5-offer.png",
+      "language": "ja"
+    },
+    {
+      "title": "東京科学大学、AI基盤研究と科学応用を一体的に推進する拠点「AI-Science Nexusセンター 」設立",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/science-tokyo-aisnec-20260401/",
+      "description": "東京科学大学は、大規模言語モデルの開発をはじめとするAI基盤研究と、AIを活用した学際的な科学応用を一体的に推進する拠点「AI-Science Nexusセンター 」を設立しました。 このニュースのポイント 東京科学大学 [...] The post 東京科学大学、AI基盤研究と科学応用を一体的に推進する拠点「AI-Science Nexusセンター 」設立 first appeared on A...",
+      "publishedDate": "Mon, 27 Apr 2026 08:32:03 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/sciencetokyoaisnec.png",
+      "language": "ja"
+    },
+    {
+      "title": "KPMGコンサルティング、ロボット×フィジカルAIを活用したO&M業務支援サービス開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/kpmg-robot-physical-ai/",
+      "description": "KPMGコンサルティングは、ロボットとフィジカルAIを活用し、オペレーション&#38;メンテナンス（O&#38;M）業務の高度化を支援するサービスの開始を発表しました。現場業務の省人化と持続可能な運営体制の構築を支援しま [...] The post KPMGコンサルティング、ロボット×フィジカルAIを活用したO&M業務支援サービス開始 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Mon, 27 Apr 2026 08:29:57 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/kpmg-robot-physical-AI.png",
       "language": "ja"
     },
     {
@@ -450,105 +549,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-5.5-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【アーカイブ配信スタート】AI博覧会 Osaka 2026 ー関西のDXを加速させるカンファレンスを公開ー",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-hakurankai_2026_osaka_archive/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年1月21日（水）・22日（木）の2日間にわたり開催した「AI博覧会 Osaka 2026」のカンファレンスのアーカイブ配信 [...] The post 【アーカイブ配信スタート】AI博覧会 Osaka 2026 ー関西のDXを加速させるカンファレンスを公開ー first appeared on AI...",
-      "publishedDate": "Mon, 27 Apr 2026 01:00:07 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/aihakurankaiosaka2026.png",
-      "language": "ja"
-    },
-    {
-      "title": "GPT-5.4 mini / nano完全比較｜実務で差がつく機能とコストの決定的な違い",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gpt-5-4-mini-nano/",
-      "description": "業務でChatGPTを使用しているけれど、新しいモデルや使い分けの方法がわからないというお悩みはありませんか？ AIモデルは高速に進化しており、それぞれの特徴を理解していないと業務効率に大きな差が生まれます。 この記事で [...] The post GPT-5.4 mini / nano完全比較｜実務で差がつく機能とコストの決定的な違い first appeared on AIポータルメディアA...",
-      "publishedDate": "Fri, 24 Apr 2026 06:21:20 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/gpt5mininano.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "日本ディープラーニング協会、2026年3月開催「2026年 第2回 G検定」結果を発表。合格率77.04％",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/jdla-2026-2nd-gtest-results/",
-      "description": "日本ディープラーニング協会は、2026年3月に開催された「2026年 第2回 G検定（ジェネラリスト検定）」の結果を発表しました。受験者数は12,027名、合格者数は9,265名で、合格率は77.04％でした。 このニュ [...] The post 日本ディープラーニング協会、2026年3月開催「2026年 第2回 G検定」結果を発表。合格率77.04％ first appeared on AI...",
-      "publishedDate": "Fri, 24 Apr 2026 05:48:23 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/2026-gkentei2.png",
-      "language": "ja"
-    },
-    {
-      "title": "一般社団法人xIPFコンソーシアム設立。AI×分散基盤で社会課題解決を図る",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/xipf-consortium-ai-data/",
-      "description": "ソフトバンクや富士通など8団体は、「一般社団法人xIPFコンソーシアム」を設立しました。AIとデータの高度な連携により、分散環境で安全にデータを活用できる次世代の社会基盤構築を推進します。 このニュースのポイント 8団体 [...] The post 一般社団法人xIPFコンソーシアム設立。AI×分散基盤で社会課題解決を図る first appeared on AIポータルメディアAIsmiley...",
-      "publishedDate": "Fri, 24 Apr 2026 05:43:49 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/AI-DATA-xIPF.png",
-      "language": "ja"
-    },
-    {
-      "title": "日立製作所、フィジカルAIで現場の課題解決を加速する戦略拠点「フィジカルAI体験スタジオ」開設",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/hitachi-physical-ai-studio/",
-      "description": "日立製作所は、「フィジカルAI体験スタジオ」を開設しました。現場作業員を支援するロボティクスAIやウェアラブルセンサーなど最先端技術を体験でき、生産性・品質・安全に関する課題解決を目指します。 このニュースのポイント 日 [...] The post 日立製作所、フィジカルAIで現場の課題解決を加速する戦略拠点「フィジカルAI体験スタジオ」開設 first appeared on AIポータルメデ...",
-      "publishedDate": "Fri, 24 Apr 2026 05:43:47 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/ainewshitachi.png",
-      "language": "ja"
-    },
-    {
-      "title": "大和証券グループと京都フィナンシャルグループ、AI活用を軸にDX分野での協業を開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/daiwasyokeng-kyotofg-dx-pertner/",
-      "description": "大和証券グループと京都フィナンシャルグループは、AI活用を軸にしたDX分野での協業に関する合意書を締結しました。両グループのDX戦略推進を加速・高度化し、金融業界における新たな価値創出を目指します。 このニュースのポイン [...] The post 大和証券グループと京都フィナンシャルグループ、AI活用を軸にDX分野での協業を開始 first appeared on AIポータルメディアAIsm...",
-      "publishedDate": "Fri, 24 Apr 2026 05:38:59 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0417yamatokyotoeye.png",
-      "language": "ja"
-    },
-    {
-      "title": "Google「Veo 3.1 Lite」とは？Fastとの違いや機能・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/veo-3-1-lite/",
-      "description": "マーケティング担当者として動画作成にかかるコストを削減する必要があるものの、うまくいかない━━そんなお悩みはありませんか？ 近年AIによる動画生成の技術は大きく進化し、高品質の動画を安価かつ高速で生成できるようになりまし [...] The post Google「Veo 3.1 Lite」とは？Fastとの違いや機能・使い方を徹底解説 first appeared on AIポータルメディアAI...",
-      "publishedDate": "Fri, 24 Apr 2026 05:38:48 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/veolite.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "FRONTEOと慶應義塾大学医学部、会話型AIによるうつ病診断支援で特許2件取得",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/fronteo-keio-ai-program/",
-      "description": "FRONTEOと慶應義塾大学医学部のグループは、うつ病の診断支援を目的とした会話型AIプログラムに関する特許を2件取得しました。患者と医療従事者の自由会話をAIが解析し、双方の負担軽減を図る方針です。 このニュースのポイ [...] The post FRONTEOと慶應義塾大学医学部、会話型AIによるうつ病診断支援で特許2件取得 first appeared on AIポータルメディアAIsmi...",
-      "publishedDate": "Fri, 24 Apr 2026 05:33:18 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/FRONTEO-logo.png",
-      "language": "ja"
-    },
-    {
-      "title": "Gemma 4とは？性能・アーキテクチャ・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gemma-4-google-deepmind-2026/",
-      "description": "2026年4月、GoogleはオープンモデルシリーズGemmaの最新モデル「Gemma 4」を公開しました。 Apache 2.0ライセンスへの変更により、商用利用における制約が低減されています。また、スマートフォンから [...] The post Gemma 4とは？性能・アーキテクチャ・使い方を徹底解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 24 Apr 2026 05:28:28 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/Gemma4.png",
       "language": "ja"
     },
     {
