@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-28T04:35:35.299233",
+  "lastUpdated": "2026-04-29T04:31:23.036295",
   "articles": [
     {
       "title": "Google Workspace with Geminiで資料もメールも議事録も丸ごと効率化！使い方・料金プランなどを徹底解説",
@@ -24,17 +24,6 @@
       "language": "ja"
     },
     {
-      "title": "The Download: introducing the 10 Things That Matter in AI Right Now",
-      "titleJa": "ダウンロード: AI において今重要な 10 の事柄の紹介",
-      "link": "https://www.technologyreview.com/2026/04/22/1136310/the-download-10-things-that-matter-in-ai-right-now/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Introducing: 10 Things That Matter in AI Right Now...",
-      "publishedDate": "Wed, 22 Apr 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/09_20_JFM_MIT_TheDownload.webp?w=2127",
-      "language": "en"
-    },
-    {
       "title": "We're launching two specialized TPUs for the agentic era.",
       "titleJa": "私たちはエージェント時代に特化した 2 つの TPU を発売します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -54,17 +43,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Kimi-K2.6-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTの面白い使い方50選！仕事・日常・画像生成の天才的なアイデアを紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chatgpt-interesting-list/",
-      "description": "ChatGPT Media編集部が思わず爆笑したChatGPTの面白い使い方を7選ご紹介します！巷を騒がせたChatGPTを応用したアイデアの中でも、特に面白いものをまとめましたので、ぜひ最後までご覧ください！ 続きを読む...",
-      "publishedDate": "Wed, 22 Apr 2026 08:20:01 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-interesting-list_2604-1024x576.webp",
       "language": "ja"
     },
     {
@@ -112,15 +90,81 @@
       "language": "en"
     },
     {
-      "title": "We’re creating a new satellite imagery map to help protect Brazil’s forests.",
-      "titleJa": "私たちはブラジルの森林の保護に役立つ新しい衛星画像マップを作成しています。",
-      "link": "https://blog.google/products-and-platforms/products/earth/satellite-imagery-brazilian-deforestation/",
-      "description": "Google partnered with the Brazilian government on a satellite imagery map to help protect the country’s forests....",
-      "publishedDate": "Wed, 01 Apr 2026 13:30:00 +0000",
+      "title": "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try",
+      "titleJa": "Google 翻訳 20 周年を記念して: 試してみたい楽しい事実、ヒント、新機能",
+      "link": "https://blog.google/products-and-platforms/products/translate/fun-facts-google-translate-20-years/",
+      "description": "The Google Translate logo sits in the middle of colorful illustrated scenes, including people translating live conversations and a birthday cake topped by candles with the numeral 20...",
+      "publishedDate": "Tue, 28 Apr 2026 16:00:00 +0000",
       "source": "Google AI Blog",
       "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/bfc_keyword_before_after_white_.max-600x600.format-webp_QNQ8psB.webp",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Translate_20th_hero_NC8a.max-600x600.format-webp.webp",
       "language": "en"
+    },
+    {
+      "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
+      "titleJa": "NVIDIA Nemotron 3 Nano Omni の紹介: ドキュメント、オーディオ、ビデオ エージェント向けのロングコンテキスト マルチモーダル インテリジェンス",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+      "description": "...",
+      "publishedDate": "Tue, 28 Apr 2026 15:58:57 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence.png",
+      "language": "en"
+    },
+    {
+      "title": "The Download: Musk and Altman’s legal showdown, and AI’s profit problem",
+      "titleJa": "ダウンロード: マスク氏とアルトマン氏の法的対決とAIの利益問題",
+      "link": "https://www.technologyreview.com/2026/04/28/1136479/the-download-musk-altman-openai-trial-ai-profit-problem/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Elon Musk and Sam Altman are going to court over O...",
+      "publishedDate": "Tue, 28 Apr 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/Mitvirus_color.webp?w=2127",
+      "language": "en"
+    },
+    {
+      "title": "Salesforce、AIエージェント基盤「Agent Fabric」の機能を拡張。一元管理でAI利活用をサポート",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/salesforce-expands-agent-fabric/",
+      "description": "セールスフォース・ジャパンは、マルチベンダー環境のAIエージェントを一元管理する「Agent Fabric」の機能拡張を発表しました。AI導入の過程を短縮化し、一元的な統制を強化しています。 このニュースのポイント セー [...] The post Salesforce、AIエージェント基盤「Agent Fabric」の機能を拡張。一元管理でAI利活用をサポート first appeared o...",
+      "publishedDate": "Tue, 28 Apr 2026 09:03:00 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/salesforce-expands-agent-fabric-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "東京都、職員向け生成AIプラットフォーム「A1（えいいち）」利活用開始。業務生産性向上を推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/tokyo-a1-20260406/",
+      "description": "東京都は、業務の生産性向上を目的に、職員が自ら業務に活用するAIアプリを開発・利用できる生成AIプラットフォーム「A1」の利活用を開始しました。 このニュースのポイント 東京都、都職員約6万人を対象に生成AIプラットフォ [...] The post 東京都、職員向け生成AIプラットフォーム「A1（えいいち）」利活用開始。業務生産性向上を推進 first appeared on AIポータルメディ...",
+      "publishedDate": "Tue, 28 Apr 2026 09:02:09 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/tokyoa1-2.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI、最新画像生成モード「ChatGPT Images 2.0」発表。多言語表現やビジュアル精度が向上",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-chatgpt-images-2-0/",
+      "description": "OpenAIは、画像生成モデルの最新版「ChatGPT Images 2.0」を発表しました。日本語をはじめとする多言語の描写精度が向上したほか、Thinkingモードではオブジェクトの一貫性を保ちながら最大8枚の画像を [...] The post OpenAI、最新画像生成モード「ChatGPT Images 2.0」発表。多言語表現やビジュアル精度が向上 first appeared on ...",
+      "publishedDate": "Tue, 28 Apr 2026 08:59:46 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/ChatGPT-Images-2.0.png",
+      "language": "ja"
+    },
+    {
+      "title": "【Qwen-Image-2.0-Pro】テキスト入り画像を高精度に生成できるアリババの最新AIモデルを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/qwen-image-2-0-pro/",
+      "description": "2026年4月25日、アリババのQwenチームが画像生成モデルの最新版「Qwen-Image-2.0-Pro」を公開しました！ Qwen-Image-2.0-Proは、2026年2月にリリースされたQwen-Image- [...]...",
+      "publishedDate": "Tue, 28 Apr 2026 05:49:08 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen-Image-2.0-Pro-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "アイスマイリー、5/13（水）から3日間「第6回 デジタル化・DX推進展【東京】/ AI活用支援EXPO」にブース出展",
@@ -200,14 +244,25 @@
       "language": "ja"
     },
     {
-      "title": "Adaptive Ultrasound Imaging with Physics-Informed NV-Raw2Insights-US AI",
-      "titleJa": "物理学に基づいた NV-Raw2Insights-US AI を使用した適応型超音波イメージング",
-      "link": "https://huggingface.co/blog/nvidia/raw2insights-adaptive-ultrasound-imaging",
-      "description": "...",
-      "publishedDate": "Tue, 28 Apr 2026 00:28:13 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/raw2insights-adaptive-ultrasound-imaging.png",
+      "title": "Our commitment to community safety",
+      "titleJa": "地域の安全に対する私たちの取り組み",
+      "link": "https://openai.com/index/our-commitment-to-community-safety",
+      "description": "Learn how OpenAI protects community safety in ChatGPT through model safeguards, misuse detection, policy enforcement, and collaboration with safety experts....",
+      "publishedDate": "Tue, 28 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "OpenAI models, Codex, and Managed Agents come to AWS",
+      "titleJa": "OpenAI モデル、Codex、およびマネージド エージェントが AWS に登場",
+      "link": "https://openai.com/index/openai-on-aws",
+      "description": "OpenAI GPT models, Codex, and Managed Agents are now available on AWS, enabling enterprises to build secure AI in their AWS environments....",
+      "publishedDate": "Tue, 28 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/6Qdod1sP2lAXzlwaRnglBQ/95090ca1ad0eeca76034c16cb451106d/oai-aws-16x9.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -295,7 +350,7 @@
       "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4qBEDs71GX4NIuRrjXfZpA/8e5c587702a354616d4d99b1489a49b1/System_Card_Card_SEO_16x9.jpg?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -310,32 +365,32 @@
       "language": "en"
     },
     {
-      "title": "Working with Codex",
-      "titleJa": "コーデックスの使用",
-      "link": "https://openai.com/academy/working-with-codex",
-      "description": "Learn how to set up your Codex workspace, create threads and projects, manage files, and start completing tasks with step-by-step guidance....",
-      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
-      "language": "en"
-    },
-    {
-      "title": "Automations",
-      "titleJa": "自動化",
-      "link": "https://openai.com/academy/codex-automations",
-      "description": "Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort....",
-      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
-      "language": "en"
-    },
-    {
       "title": "How to get started with Codex",
       "titleJa": "Codex の使用を開始する方法",
       "link": "https://openai.com/academy/codex-how-to-start",
       "description": "Learn how to get started with Codex by setting up projects, creating threads, and completing your first tasks with step-by-step guidance....",
+      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Codex settings",
+      "titleJa": "コーデックス設定",
+      "link": "https://openai.com/academy/codex-settings",
+      "description": "Learn how to configure Codex settings, including personalization, detail level, and permissions, to run tasks smoothly and customize your workflow....",
+      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Working with Codex",
+      "titleJa": "コーデックスの使用",
+      "link": "https://openai.com/academy/working-with-codex",
+      "description": "Learn how to set up your Codex workspace, create threads and projects, manage files, and start completing tasks with step-by-step guidance....",
       "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -354,17 +409,6 @@
       "language": "en"
     },
     {
-      "title": "Codex settings",
-      "titleJa": "コーデックス設定",
-      "link": "https://openai.com/academy/codex-settings",
-      "description": "Learn how to configure Codex settings, including personalization, detail level, and permissions, to run tasks smoothly and customize your workflow....",
-      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
-      "language": "en"
-    },
-    {
       "title": "Top 10 uses for Codex at work",
       "titleJa": "仕事での Codex の使用法トップ 10",
       "link": "https://openai.com/academy/top-10-use-cases-codex-for-work",
@@ -372,18 +416,18 @@
       "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
-      "title": "What is Codex?",
-      "titleJa": "コーデックスとは何ですか?",
-      "link": "https://openai.com/academy/what-is-codex",
-      "description": "Learn how Codex helps you go beyond chat by automating tasks, connecting tools, and producing real outputs like docs and dashboards....",
+      "title": "Automations",
+      "titleJa": "自動化",
+      "link": "https://openai.com/academy/codex-automations",
+      "description": "Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort....",
       "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -418,17 +462,6 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Workspace-Agents-1024x576.webp",
       "language": "ja"
-    },
-    {
-      "title": "GPT-5.5 Bio Bug Bounty",
-      "titleJa": "GPT-5.5 バイオバグ報奨金",
-      "link": "https://openai.com/index/gpt-5-5-bio-bug-bounty",
-      "description": "Explore the GPT-5.5 Bio Bug Bounty: a red-teaming challenge to find universal jailbreaks for bio safety risks, with rewards up to $25,000....",
-      "publishedDate": "Thu, 23 Apr 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "How to Use Transformers.js in a Chrome Extension",
@@ -505,39 +538,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/veriserveye.png",
-      "language": "ja"
-    },
-    {
-      "title": "OpenAI、最新モデル「GPT-5.5」を発表。推論能力と自立性が向上",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-gpt-5-5-offer/",
-      "description": "OpenAIは、AIモデルの最新版「GPT-5.5」の提供開始を発表しました。推論能力や自律性が向上し、複雑なタスクへの対応力を高めています。 このニュースのポイント OpenAIが「GPT-5.5」の提供開始を発表 推 [...] The post OpenAI、最新モデル「GPT-5.5」を発表。推論能力と自立性が向上 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 27 Apr 2026 08:45:59 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/GPT-5.5-offer.png",
-      "language": "ja"
-    },
-    {
-      "title": "東京科学大学、AI基盤研究と科学応用を一体的に推進する拠点「AI-Science Nexusセンター 」設立",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/science-tokyo-aisnec-20260401/",
-      "description": "東京科学大学は、大規模言語モデルの開発をはじめとするAI基盤研究と、AIを活用した学際的な科学応用を一体的に推進する拠点「AI-Science Nexusセンター 」を設立しました。 このニュースのポイント 東京科学大学 [...] The post 東京科学大学、AI基盤研究と科学応用を一体的に推進する拠点「AI-Science Nexusセンター 」設立 first appeared on A...",
-      "publishedDate": "Mon, 27 Apr 2026 08:32:03 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/sciencetokyoaisnec.png",
-      "language": "ja"
-    },
-    {
-      "title": "KPMGコンサルティング、ロボット×フィジカルAIを活用したO&M業務支援サービス開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kpmg-robot-physical-ai/",
-      "description": "KPMGコンサルティングは、ロボットとフィジカルAIを活用し、オペレーション&#38;メンテナンス（O&#38;M）業務の高度化を支援するサービスの開始を発表しました。現場業務の省人化と持続可能な運営体制の構築を支援しま [...] The post KPMGコンサルティング、ロボット×フィジカルAIを活用したO&M業務支援サービス開始 first appeared on AIポータルメディアAI...",
-      "publishedDate": "Mon, 27 Apr 2026 08:29:57 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/kpmg-robot-physical-AI.png",
       "language": "ja"
     },
     {
