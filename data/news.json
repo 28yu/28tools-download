@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-04-29T02:06:06.324183",
+  "lastUpdated": "2026-04-30T02:06:09.448213",
   "articles": [
+    {
+      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第一回)｜深堀り取材【毎月3回更新】",
+      "link": "https://news.build-app.jp/article/40235/",
+      "description": "自由に情報交換できる建設系のSNSのみならず、公式見解が発表される建設系の既存メディア上でも、AIの積極的な援用に関する情報が数多く見られる......",
+      "publishedDate": "Wed, 29 Apr 2026 22:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/19e0e4e880f6d4bfc6b251dd89de0766-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "熱中症ゼロ社会に貢献「クール・シェルター®魁」予約販売開始 現場の “移動可能避暑室”",
+      "link": "https://news.build-app.jp/article/40348/",
+      "description": "【概要】 株式会社リード技建（兵庫県尼崎市、代表取締役社長古川 恵久｟ふるかわ やすひさ｠）は2026年4月22日（水） “移動可能避暑室”......",
+      "publishedDate": "Wed, 29 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/09/unDR9w2945ETEqC1662045710_1662045733-130x82.jpg",
+      "language": "ja"
+    },
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
       "link": "https://www.buildingsmart.org/buildingsmart-international-announces-that-celine-bent-has-left-the-organisation/",
@@ -40,26 +60,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "竹中工務店、エネサーブとフィジカルPPA締結、東京本店管内の建設現場23件へ再エネ供給開始",
-      "link": "https://news.build-app.jp/article/40221/",
-      "description": "株式会社竹中工務店（社長：丁野成人）は、建設現場で使用する電力のCO2排出量を減らすため、大和ハウスグループのエネサーブ株式会社（社長：井上......",
-      "publishedDate": "Thu, 23 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/3422461_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "株式会社竹中工務店 大阪本店での「BONX WORK」活用事例動画を公開",
-      "link": "https://news.build-app.jp/article/40254/",
-      "description": "株式会社BONX（本社：東京都千代田区、代表取締役：宮坂貴大、以下BONX）は、現場コミュニケーションのワンストップソリューション「BONX......",
-      "publishedDate": "Thu, 23 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/rbm8S3J6wOtaY151643282433-130x87.jpg",
-      "language": "ja"
     },
     {
       "title": "キャタピラーとNVIDIAが変える重機のAI戦略とは？フィジカルAIの全貌",
@@ -212,16 +212,6 @@
       "language": "ja"
     },
     {
-      "title": "「コンサルが消え、職人が勝つ」｜AIが書き換える、建設業のヒエラルキー",
-      "link": "https://news.build-app.jp/article/39628/",
-      "description": "建設業界にも、AIがやってくる。 ここで言うAIとは、「文章を作る機械」ではない。LLM（言語知能）と世界モデル――物理・工程・コスト・リス......",
-      "publishedDate": "Mon, 27 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260428_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
       "title": "【奥村組】環境省事業におけるPFOS等対策技術に関する実証試験が完了しました",
       "link": "https://news.build-app.jp/article/40262/",
       "description": "概要 環境省の『PFOS等の濃度低減のための対策技術の実証事業』において、株式会社奥村組（本社：大阪市阿倍野区、社長：奥村太加典）の提案した......",
@@ -229,6 +219,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/4sAi0GiPB9jj1KO1658206702_1658206726-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "「コンサルが消え、職人が勝つ」｜AIが書き換える、建設業のヒエラルキー",
+      "link": "https://news.build-app.jp/article/39628/",
+      "description": "建設業界にも、AIがやってくる。 ここで言うAIとは、「文章を作る機械」ではない。LLM（言語知能）と世界モデル――物理・工程・コスト・リス......",
+      "publishedDate": "Mon, 27 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260428_hirayama-130x82.jpg",
       "language": "ja"
     },
     {
