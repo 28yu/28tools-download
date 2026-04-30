@@ -1,6 +1,116 @@
 {
-  "lastUpdated": "2026-04-29T04:31:23.036295",
+  "lastUpdated": "2026-04-30T04:33:42.724121",
   "articles": [
+    {
+      "title": "Where the goblins came from",
+      "titleJa": "ゴブリンはどこから来たのか",
+      "link": "https://openai.com/index/where-the-goblins-came-from",
+      "description": "How goblin outputs spread in AI models: timeline, root cause, and fixes behind personality-driven quirks in GPT-5 behavior....",
+      "publishedDate": "Wed, 29 Apr 2026 20:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "AI evals are becoming the new compute bottleneck",
+      "titleJa": "AI の評価が新たなコンピューティングのボトルネックになりつつある",
+      "link": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
+      "description": "...",
+      "publishedDate": "Wed, 29 Apr 2026 16:45:09 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6413251362e6057cbb6259bd/ukJJW86oJu36zOJwqZJBG.png",
+      "language": "en"
+    },
+    {
+      "title": "Granite 4.1 LLMs: How They’re Built",
+      "titleJa": "Granite 4.1 LLM: 構築方法",
+      "link": "https://huggingface.co/blog/ibm-granite/granite-4-1",
+      "description": "...",
+      "publishedDate": "Wed, 29 Apr 2026 15:01:48 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ibm-granite/granite-4-1.png",
+      "language": "en"
+    },
+    {
+      "title": "Building the compute infrastructure for the Intelligence Age",
+      "titleJa": "インテリジェンス時代のコンピューティング インフラストラクチャの構築",
+      "link": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+      "description": "OpenAI scales Stargate to build the compute infrastructure powering AGI, adding new data center capacity to meet growing AI demand....",
+      "publishedDate": "Wed, 29 Apr 2026 15:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7uKjDcPGzOUdai1xJ3ADrz/e546afb6069a32f56d346a53c1093c74/Frame__5_.png?w=1600&amp;h=900&amp;fit=fill",
+      "language": "en"
+    },
+    {
+      "title": "The Download: storing nuclear waste and orchestrating agents",
+      "titleJa": "ダウンロード: 核廃棄物の保管とエージェントの調整",
+      "link": "https://www.technologyreview.com/2026/04/29/1136666/the-download-nuclear-waste-orchestrated-ai-agents/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. It’s time to make a plan for nuclear waste Today, ...",
+      "publishedDate": "Wed, 29 Apr 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/11/biometric-face-copy.jpg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "【Claude for Creative Work】Blender・Adobe・Abletonと直接連携！クリエイター向けコネクタを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-for-creative-work/",
+      "description": "Claude for Creative Workは、Anthropicが2026年4月28日に発表したクリエイティブ業界向けのAI連携プラットフォームです！ Blender・Adobe・Autodesk・Abletonな [...]...",
+      "publishedDate": "Wed, 29 Apr 2026 11:13:24 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-for-Creative-Work-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Seedanceのシリーズまとめ！音声も同時生成できる動画生成AIの全容を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/seedance-summary/",
+      "description": "ByteDanceが開発した動画生成AI「Seedance」をご存じでしょうか。2025年6月にSeedance 1.0が登場し、2026年2月には大幅に進化したSeedance 2.0が公開されました。映像と音声の同時 [...]...",
+      "publishedDate": "Wed, 29 Apr 2026 11:07:12 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Seedance-Summary_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "It’s time to make a plan for nuclear waste",
+      "titleJa": "核廃棄物に関する計画を立てる時が来た",
+      "link": "https://www.technologyreview.com/2026/04/29/1136659/plan-nuclear-waste/",
+      "description": "Today, nuclear energy enjoys a rare moment of support across the political spectrum in the US. Interest from tech companies that are scrambling to meet demand for massive data centers has sparked a re...",
+      "publishedDate": "Wed, 29 Apr 2026 08:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/260424_thespark.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Cybersecurity in the Intelligence Age",
+      "titleJa": "インテリジェンス時代のサイバーセキュリティ",
+      "link": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+      "description": "OpenAI outlines a five-part action plan for strengthening cybersecurity in the Intelligence Age, focused on democratizing AI-powered cyber defense and protecting critical systems....",
+      "publishedDate": "Wed, 29 Apr 2026 04:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/64zhbS4FYJIaJ2TXQb6ztp/a538eb06a6e62b8964de2bf6d5a2e8a3/Cybersecurity_in_the_Intelligence_Age.png?w=1600&amp;h=900&amp;fit=fill",
+      "language": "en"
+    },
+    {
+      "title": "DeepInfra on Hugging Face Inference Providers 🔥",
+      "titleJa": "ハグ顔推論プロバイダーに関する DeepInfra 🔥",
+      "link": "https://huggingface.co/blog/inference-providers-deepinfra",
+      "description": "...",
+      "publishedDate": "Wed, 29 Apr 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/inference-providers/welcome-deepinfra.jpg",
+      "language": "en"
+    },
     {
       "title": "Google Workspace with Geminiで資料もメールも議事録も丸ごと効率化！使い方・料金プランなどを徹底解説",
       "titleJa": null,
@@ -13,17 +123,6 @@
       "language": "ja"
     },
     {
-      "title": "vibe-localとは？落合陽一が開発したローカルAIの使い方やインストール方法を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/vibe-local/",
-      "description": "「AIコーディングツールを導入したいが、クラウドへのソースコード送信が怖い」「高価なAIツールを導入する予算がない」など、こうした悩みを抱える開発現場は少なくありません。 そんな課題を解決するのが、落合陽一氏が開発した完 [...]...",
-      "publishedDate": "Wed, 22 Apr 2026 12:34:00 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/03/AIモン_vibe-local-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "We're launching two specialized TPUs for the agentic era.",
       "titleJa": "私たちはエージェント時代に特化した 2 つの TPU を発売します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -33,17 +132,6 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Were_launching_two_TPUs_social.max-600x600.format-webp.webp",
       "language": "en"
-    },
-    {
-      "title": "【Kimi K2.6】300体のエージェント群で12時間自律稼働する次世代オープンウェイトLLMを徹底解説！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/kimi-k2-6/",
-      "description": "2026年4月21日、中国のMoonshot AIがフラッグシップ最新モデル「Kimi K2.6」を公開しました！ 目玉はなんと言っても、最大300体のサブエージェントで、4,000以上のツール呼び出しを12時間ぶっ通し [...]...",
-      "publishedDate": "Wed, 22 Apr 2026 11:37:14 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Kimi-K2.6-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
@@ -79,17 +167,6 @@
       "language": "en"
     },
     {
-      "title": "Safetensors is Joining the PyTorch Foundation",
-      "titleJa": "Safetensors が PyTorch Foundation に参加します",
-      "link": "https://huggingface.co/blog/safetensors-joins-pytorch-foundation",
-      "description": "...",
-      "publishedDate": "Wed, 08 Apr 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/safetensors-joins-pytorch-foundation/thumbnail.png",
-      "language": "en"
-    },
-    {
       "title": "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try",
       "titleJa": "Google 翻訳 20 周年を記念して: 試してみたい楽しい事実、ヒント、新機能",
       "link": "https://blog.google/products-and-platforms/products/translate/fun-facts-google-translate-20-years/",
@@ -119,7 +196,7 @@
       "publishedDate": "Tue, 28 Apr 2026 12:10:00 +0000",
       "source": "MIT Technology Review",
       "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/Mitvirus_color.webp?w=2127",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/05/Mitvirus_color.jpg?w=3000",
       "language": "en"
     },
     {
@@ -244,17 +321,6 @@
       "language": "ja"
     },
     {
-      "title": "Our commitment to community safety",
-      "titleJa": "地域の安全に対する私たちの取り組み",
-      "link": "https://openai.com/index/our-commitment-to-community-safety",
-      "description": "Learn how OpenAI protects community safety in ChatGPT through model safeguards, misuse detection, policy enforcement, and collaboration with safety experts....",
-      "publishedDate": "Tue, 28 Apr 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "OpenAI models, Codex, and Managed Agents come to AWS",
       "titleJa": "OpenAI モデル、Codex、およびマネージド エージェントが AWS に登場",
       "link": "https://openai.com/index/openai-on-aws",
@@ -262,7 +328,18 @@
       "publishedDate": "Tue, 28 Apr 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/6Qdod1sP2lAXzlwaRnglBQ/95090ca1ad0eeca76034c16cb451106d/oai-aws-16x9.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Our commitment to community safety",
+      "titleJa": "地域の安全に対する私たちの取り組み",
+      "link": "https://openai.com/index/our-commitment-to-community-safety",
+      "description": "Learn how OpenAI protects community safety in ChatGPT through model safeguards, misuse detection, policy enforcement, and collaboration with safety experts....",
+      "publishedDate": "Tue, 28 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4LxnvjduXTJ8PvsFyOinqE/cd764864719bfa914c88e34d6e9f1002/Frame-1.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -321,15 +398,15 @@
       "language": "en"
     },
     {
-      "title": "The Download: introducing the Nature issue",
-      "titleJa": "ダウンロード: Nature 問題の紹介",
-      "link": "https://www.technologyreview.com/2026/04/23/1136346/the-download-introducing-nature-issue/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Introducing: the Nature issue When we talk about “...",
-      "publishedDate": "Thu, 23 Apr 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/05/AP24106836358581-social.jpg?w=3000",
-      "language": "en"
+      "title": "業務を止めるかAIに任せるか──GoogleのAIによる業務整理術",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/google-gemini-task-organization/",
+      "description": "本記事は、2026年4月7日～8日に開催されたイベント「AI博覧会 Spring 2026」内のセッション『業務を止めるかAIに任せるか。GoogleのAIによる業務整理術』を基に解説したものです。 「個人ではAIを使っ [...] The post 業務を止めるかAIに任せるか──GoogleのAIによる業務整理術 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Thu, 30 Apr 2026 01:00:05 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/AI-Spring2026-harada-session.jpg",
+      "language": "ja"
     },
     {
       "title": "Here’s how our TPUs power increasingly demanding AI workloads.",
@@ -340,17 +417,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/What_is_a_TPU_social.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "GPT-5.5 System Card",
-      "titleJa": "GPT-5.5 システムカード",
-      "link": "https://openai.com/index/gpt-5-5-system-card",
-      "description": "...",
-      "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -365,6 +431,17 @@
       "language": "en"
     },
     {
+      "title": "GPT-5.5 System Card",
+      "titleJa": "GPT-5.5 システムカード",
+      "link": "https://openai.com/index/gpt-5-5-system-card",
+      "description": "...",
+      "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4qBEDs71GX4NIuRrjXfZpA/8e5c587702a354616d4d99b1489a49b1/System_Card_Card_SEO_16x9.jpg?w=1600&amp;h=900&amp;fit=fill",
+      "language": "en"
+    },
+    {
       "title": "How to get started with Codex",
       "titleJa": "Codex の使用を開始する方法",
       "link": "https://openai.com/academy/codex-how-to-start",
@@ -372,51 +449,18 @@
       "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Codex settings",
-      "titleJa": "コーデックス設定",
-      "link": "https://openai.com/academy/codex-settings",
-      "description": "Learn how to configure Codex settings, including personalization, detail level, and permissions, to run tasks smoothly and customize your workflow....",
-      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Working with Codex",
-      "titleJa": "コーデックスの使用",
-      "link": "https://openai.com/academy/working-with-codex",
-      "description": "Learn how to set up your Codex workspace, create threads and projects, manage files, and start completing tasks with step-by-step guidance....",
-      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
       "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
-      "title": "Plugins and skills",
-      "titleJa": "プラグインとスキル",
-      "link": "https://openai.com/academy/codex-plugins-and-skills",
-      "description": "Learn how to use Codex plugins and skills to connect tools, access data, and follow repeatable workflows to automate tasks and improve results....",
+      "title": "What is Codex?",
+      "titleJa": "コーデックスとは何ですか?",
+      "link": "https://openai.com/academy/what-is-codex",
+      "description": "Learn how Codex helps you go beyond chat by automating tasks, connecting tools, and producing real outputs like docs and dashboards....",
       "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
-      "language": "en"
-    },
-    {
-      "title": "Top 10 uses for Codex at work",
-      "titleJa": "仕事での Codex の使用法トップ 10",
-      "link": "https://openai.com/academy/top-10-use-cases-codex-for-work",
-      "description": "Explore 10 practical Codex use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows....",
-      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -427,18 +471,7 @@
       "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Will fusion power get cheap? Don’t count on it.",
-      "titleJa": "核融合発電は安くなるのか？当てにしないでください。",
-      "link": "https://www.technologyreview.com/2026/04/23/1136329/fusion-power-cost/",
-      "description": "Fusion power could provide a steady, zero-emissions source of electricity in the future—if companies can get plants built and running. But a new study suggests that even if that future arrives, it mig...",
-      "publishedDate": "Thu, 23 Apr 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/fusion-cost.jpg?resize=1200,600",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -475,28 +508,6 @@
       "language": "en"
     },
     {
-      "title": "A new way to explore the web with AI Mode in Chrome",
-      "titleJa": "Chrome の AI モードを使用してウェブを探索する新しい方法",
-      "link": "https://blog.google/products-and-platforms/products/search/ai-mode-chrome/",
-      "description": "AI Mode in Chrome...",
-      "publishedDate": "Thu, 16 Apr 2026 17:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/AI_Mode_in_Chrome_-_Blog_header.png",
-      "language": "en"
-    },
-    {
-      "title": "New ways to create personalized images in the Gemini app",
-      "titleJa": "Gemini アプリでパーソナライズされた画像を作成する新しい方法",
-      "link": "https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana/",
-      "description": "Example images made with Personal Intelligence...",
-      "publishedDate": "Thu, 16 Apr 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_post_header.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
       "title": "【Claude Code /ultrareview】マルチエージェントによるクラウド型深層コードレビュー機能を徹底解説！",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/claude-code-ultrareview/",
@@ -527,17 +538,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/nri0422rye.png",
-      "language": "ja"
-    },
-    {
-      "title": "ベリサーブ、新卒社員研修で生成AIテーマの教育プログラムを導入。即戦力となるAI人材を育成",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/veriserve-ai-hr-education/",
-      "description": "ソフトウェアの品質向上支援サービスを提供するベリサーブは、即戦力となるAI人材を育成するため、新卒社員研修において生成AIの活用・開発・品質保証を一体的に学ぶ教育プログラムを本格導入しました。 このニュースのポイント ベ [...] The post ベリサーブ、新卒社員研修で生成AIテーマの教育プログラムを導入。即戦力となるAI人材を育成 first appeared on AIポータルメディア...",
-      "publishedDate": "Mon, 27 Apr 2026 08:52:00 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/veriserveye.png",
       "language": "ja"
     },
     {
