@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-30T04:33:42.724121",
+  "lastUpdated": "2026-05-01T04:51:45.274393",
   "articles": [
     {
       "title": "Where the goblins came from",
@@ -9,7 +9,7 @@
       "publishedDate": "Wed, 29 Apr 2026 20:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4VaLYtAwgfUg82VF32O2gz/29e25c539c638b135a2d5d080f92c76f/Goblins-SEO__1_.jpg?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "title": "It’s time to make a plan for nuclear waste",
-      "titleJa": "核廃棄物に関する計画を立てる時が来た",
+      "titleJa": "核廃棄物に関する計画を立てる時期が来た",
       "link": "https://www.technologyreview.com/2026/04/29/1136659/plan-nuclear-waste/",
       "description": "Today, nuclear energy enjoys a rare moment of support across the political spectrum in the US. Interest from tech companies that are scrambling to meet demand for massive data centers has sparked a re...",
       "publishedDate": "Wed, 29 Apr 2026 08:00:00 +0000",
@@ -97,7 +97,7 @@
       "publishedDate": "Wed, 29 Apr 2026 04:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/64zhbS4FYJIaJ2TXQb6ztp/a538eb06a6e62b8964de2bf6d5a2e8a3/Cybersecurity_in_the_Intelligence_Age.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -110,17 +110,6 @@
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/inference-providers/welcome-deepinfra.jpg",
       "language": "en"
-    },
-    {
-      "title": "Google Workspace with Geminiで資料もメールも議事録も丸ごと効率化！使い方・料金プランなどを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/gemini-for-google-workspace/",
-      "description": "「Google Workspace with Gemini（旧Gemini for Google Workspace）」は、Google Workspaceの各アプリ上から直接生成AIが使えるビジネス向け機能です。こちら [...]...",
-      "publishedDate": "Wed, 22 Apr 2026 13:38:44 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/gemini-for-google-workspace_2604-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "We're launching two specialized TPUs for the agentic era.",
@@ -266,28 +255,6 @@
       "language": "ja"
     },
     {
-      "title": "Qwen3.6-27Bとは？27Bパラメータで前世代397Bを超えたオープンソースモデルの特徴・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwen3-6-27b/",
-      "description": "2026年4月、Alibaba GroupのQwenチームから新たなオープンソースAIモデルが公開されました。 今回登場した「Qwen3.6-27B」は、わずか27BパラメータのDenseアーキテクチャながら、397Bパ [...]...",
-      "publishedDate": "Tue, 28 Apr 2026 01:49:48 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.6-27B-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "DeepSeek-V4とは？100万トークン対応の次世代オープンソースAIを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/deepseek-v4/",
-      "description": "2026年、新たなオープンソースLLMが登場しました。 今回登場した「DeepSeek-V4」は、100万トークンという超長文コンテキストに対応しながら、高い推論性能と計算効率を両立することを目指して設計された次世代の大 [...]...",
-      "publishedDate": "Tue, 28 Apr 2026 01:31:06 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_DeepSeek-V4-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "AI生成でJSコードを作る方法！スクリプト生成AIおすすめツール比較",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/js-code-javascript-ai/",
@@ -328,7 +295,7 @@
       "publishedDate": "Tue, 28 Apr 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/6Qdod1sP2lAXzlwaRnglBQ/95090ca1ad0eeca76034c16cb451106d/oai-aws-16x9.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -398,6 +365,105 @@
       "language": "en"
     },
     {
+      "title": "Exclusive eBook: Inside the stealthy startup that pitched brainless human clones",
+      "titleJa": "独占電子書籍: 脳のない人間のクローンを売り込んだステルス スタートアップの内部",
+      "link": "https://www.technologyreview.com/2026/04/30/1136684/exclusive-ebook-inside-the-stealthy-startup-that-pitched-brainless-human-clones/",
+      "description": "The ultimate plan to live forever is a brand new body. This subscriber-only eBook explores R3 Bio, a small startup that has pitched a startling and ethically charged vision for &#8220;brainless clones...",
+      "publishedDate": "Thu, 30 Apr 2026 18:42:50 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/brainless-clones.png?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "This startup’s new mechanistic interpretability tool lets you debug LLMs",
+      "titleJa": "このスタートアップの新しい機構解釈ツールを使用すると、LLM をデバッグできます",
+      "link": "https://www.technologyreview.com/2026/04/30/1136721/this-startups-new-mechanistic-interpretability-tool-lets-you-debug-llms/",
+      "description": "The San Francisco–based startup Goodfire just released a new tool, called Silico, that lets researchers and engineers peer inside an AI model and adjust its parameters—the settings that determine a mo...",
+      "publishedDate": "Thu, 30 Apr 2026 15:59:41 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/maintenance-ai.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Nano Banana用プロンプト完全ガイド！コピペで使える10選と失敗しない直し方・Proと2の使い分けを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/nano-banana-prompts/",
+      "description": "みなさん！Googleの次世代型画像生成AI「Nano Banana（Gemini 2.5 Flash Image）」は試されましたか？ 2025年8月公開のNano Banana（Gemini 2.5 Flash Im [...]...",
+      "publishedDate": "Thu, 30 Apr 2026 13:57:34 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/nano-banana-prompts_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Qwen 3.5 Small Model Series】0.8B〜9Bで高性能！軽量マルチモーダルAIの実力を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/qwen-3-5-small-model-series/",
+      "description": "2026年3月2日、Alibaba CloudのQwenチームが小型マルチモーダルAIシリーズ「Qwen 3.5 Small Model Series」を公開しました！ 0.8B・2B・4B・9Bという4つのコンパクトな [...]...",
+      "publishedDate": "Thu, 30 Apr 2026 13:15:48 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/03/AIモン_Qwen-3.5-Small-Model-Series-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【入門ガイド】Claude Code Skillsの使い方まとめ！作り方・活用例をわかりやすく解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/claude-code-skills/",
+      "description": "Claude CodeのSkillsは、よく使う手順や指示をまとめて再利用しやすくすることで、Claude Codeでの作業を効率化できる機能です。名前は聞いたことがあっても、「何ができるのか」「どう作るのか」がわからな [...]...",
+      "publishedDate": "Thu, 30 Apr 2026 12:29:44 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-code-skills_2604-1-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "The Download: the North Pole’s future and humanoid data",
+      "titleJa": "ダウンロード: 北極の未来と人型データ",
+      "link": "https://www.technologyreview.com/2026/04/30/1136713/the-download-north-pole-future-humanoid-data/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Digging for clues about the North Pole’s past In t...",
+      "publishedDate": "Thu, 30 Apr 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/12/TechReview_PassiveHouse_2.jpg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "【保存版】Claude Codeの機能まとめ｜おすすめの使い分けをわかりやすく解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/claude-code-function-summary/",
+      "description": "Claude Codeは多機能で便利な一方、「結局どれをどう使い分ければいいのか分からない」と感じやすいツールです。特に、これから使い始める方や実務で活用したい方ほど、機能ごとの役割や違いを整理できず、十分に使いこなせて [...]...",
+      "publishedDate": "Thu, 30 Apr 2026 08:20:12 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-code-function-summary_2604-1-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Gemma 4 Browser Assistantとは？オンデバイスAIブラウザ拡張の仕組みと使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/gemma-4-browser-assistant/",
+      "description": "2026年4月、エンジニアNico Martinから新たなChrome拡張機能が公開されました。 今回登場した「Gemma 4 Browser Assistant」は、GoogleのモデルGemma 4とブラウザ向けAI [...]...",
+      "publishedDate": "Thu, 30 Apr 2026 06:18:37 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemma-4-Browser-Assistant-1-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "コード生成AIおすすめ比較！無料・有料ツールの選び方を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/code-generation-ai-tool/",
+      "description": "コード生成AIは、今やエンジニアに欠かせないツールです。本記事では、2026年最新のおすすめコード生成AIツールを比較し、目的別の選び方や活用事例を解説します。 この記事でわかることは次の通りです。 自分に最適なコード生 [...] The post コード生成AIおすすめ比較！無料・有料ツールの選び方を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Thu, 30 Apr 2026 05:38:09 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/code.png",
+      "language": "ja"
+    },
+    {
       "title": "業務を止めるかAIに任せるか──GoogleのAIによる業務整理術",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/google-gemini-task-organization/",
@@ -409,6 +475,17 @@
       "language": "ja"
     },
     {
+      "title": "Introducing Advanced Account Security",
+      "titleJa": "高度なアカウント セキュリティの導入",
+      "link": "https://openai.com/index/advanced-account-security",
+      "description": "Introducing Advanced Account Security: phishing-resistant login, stronger recovery, and enhanced protections to safeguard sensitive data and prevent account takeover....",
+      "publishedDate": "Thu, 30 Apr 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/33E6MiPrFaTJmxUV9YlSZ3/853564fb6503980552068250c1e1de24/OG-Advanced-Account-Security.png?w=1600&amp;h=900&amp;fit=fill",
+      "language": "en"
+    },
+    {
       "title": "Here’s how our TPUs power increasingly demanding AI workloads.",
       "titleJa": "当社の TPU がどのようにして、ますます要求の厳しい AI ワークロードを強化するのかを説明します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/",
@@ -417,17 +494,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/What_is_a_TPU_social.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Introducing GPT-5.5",
-      "titleJa": "GPT-5.5の紹介",
-      "link": "https://openai.com/index/introducing-gpt-5-5",
-      "description": "Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools....",
-      "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -442,14 +508,14 @@
       "language": "en"
     },
     {
-      "title": "How to get started with Codex",
-      "titleJa": "Codex の使用を開始する方法",
-      "link": "https://openai.com/academy/codex-how-to-start",
-      "description": "Learn how to get started with Codex by setting up projects, creating threads, and completing your first tasks with step-by-step guidance....",
-      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "title": "Introducing GPT-5.5",
+      "titleJa": "GPT-5.5の紹介",
+      "link": "https://openai.com/index/introducing-gpt-5-5",
+      "description": "Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools....",
+      "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -460,95 +526,29 @@
       "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
-      "title": "Automations",
-      "titleJa": "自動化",
-      "link": "https://openai.com/academy/codex-automations",
-      "description": "Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort....",
-      "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
-      "language": "en"
-    },
-    {
-      "title": "Elevating Austria: Google invests in its first data center in the Alps.",
-      "titleJa": "オーストリアの高揚: Google はアルプスにある同社初のデータセンターに投資します。",
-      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-data-center-austria/",
-      "description": "Aerial image of the data center...",
-      "publishedDate": "Thu, 23 Apr 2026 09:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Kronstorf_Data_Center_1.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "【Workspace Agents】ChatGPTがチームのデジタル同僚に進化！OpenAIの新エージェント機能を徹底解説",
+      "title": "生成AIで見積作成の効率化＆脱属人化！実現までの4ステップやChatGPT活用例などを紹介",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/workspace-agents/",
-      "description": "2026年4月23日、OpenAIはChatGPTに「Workspace Agents」を導入しました！ これまでのカスタムGPTsは、あくまで個人向けのツールとしての側面が強く、チーム全体のワークフローを任せるには力不 [...]...",
-      "publishedDate": "Thu, 23 Apr 2026 06:41:55 +0000",
+      "link": "https://weel.co.jp/media/genai-estimate/",
+      "description": "みなさん、「見積もり業務」ってなにげに面倒くさくないですか？ベテランの相場感・知識が必要なうえ、コア業務の時間が削られるというのは、昨今のDX・自動化の流れに逆行していますよね。 ですが、もう心配ありません。生成AIなら [...]...",
+      "publishedDate": "Fri, 01 May 2026 02:58:46 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Workspace-Agents-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/genai-estimate_2605-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "How to Use Transformers.js in a Chrome Extension",
-      "titleJa": "Chrome 拡張機能で Transformers.js を使用する方法",
-      "link": "https://huggingface.co/blog/transformersjs-chrome-extension",
-      "description": "...",
-      "publishedDate": "Thu, 23 Apr 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/transformersjs-chrome-extension/thumbnail.jpg",
-      "language": "en"
-    },
-    {
-      "title": "【Claude Code /ultrareview】マルチエージェントによるクラウド型深層コードレビュー機能を徹底解説！",
+      "title": "【5月21日開催ウェビナー】 生成AI・AIエージェント活用で業務を劇的に変える「人材育成」の極意！導入から定着までを完全公開 〜ソフトバンクグループの成功事例に学ぶ自走する組織作りと、賢い助成金活用術〜",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code-ultrareview/",
-      "description": "2026年4月17日、AnthropicはClaude Codeのアップデートにおいて、新コマンド「/ultrareview」をリリースしました！ Anthropicの公式ブログでは、同社のエンジニアひとりあたりのコード [...]...",
-      "publishedDate": "Mon, 27 Apr 2026 09:08:51 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/ultrareview-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Sakana AI、既存モデルを日本仕様に調整した「Namazu」（α版）とチャットサービス「Sakana Chat」発表",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sakana-chat-dev/",
-      "description": "Sakana AIは、既存のフロンティアモデルを日本仕様に適応した試作モデルシリーズ「Namazu」（α版）を開発し、本モデルを搭載したチャットサービス「Sakana Chat」を公開しました。 このニュースのポイント [...] The post Sakana AI、既存モデルを日本仕様に調整した「Namazu」（α版）とチャットサービス「Sakana Chat」発表 first appeare...",
-      "publishedDate": "Mon, 27 Apr 2026 09:01:05 +0000",
+      "link": "https://aismiley.co.jp/ai_news/20260521webinar/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年5月21日（木）12時から生成AI活用を加速させる特別ウェビナーを開催します。 「生成AIを導入したが、現場に定着しない」 [...] The post 【5月21日開催ウェビナー】 生成AI・AIエージェント活用で業務を劇的に変える「人材育成」の極意！導入から定着までを完全公開 〜ソフトバンクグルー...",
+      "publishedDate": "Fri, 01 May 2026 01:15:24 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/sakanachat-logo.png",
-      "language": "ja"
-    },
-    {
-      "title": "野村総合研究所、業界・タスク特化型LLMの構築手法を高精度化・効率化。専門領域のAI活用を推進",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/nri-specialized-llm/",
-      "description": "野村総合研究所は、特定の業界や業務に特化したLLMの構築手法を高精度化・効率化しました。本LLMを組み込んだAIエージェントの導入・展開を進め、多様な業界の専門業務支援を推進します。 このニュースのポイント 野村総合研究 [...] The post 野村総合研究所、業界・タスク特化型LLMの構築手法を高精度化・効率化。専門領域のAI活用を推進 first appeared on AIポータルメデ...",
-      "publishedDate": "Mon, 27 Apr 2026 08:55:05 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/nri0422rye.png",
-      "language": "ja"
-    },
-    {
-      "title": "GPT-5.5とは？OpenAIの最新AIモデルの特徴・料金・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gpt5-5/",
-      "description": "2026年4月、OpenAIから新たな大規模言語モデルが発表されました。 今回登場した「GPT-5.5」は、従来モデルの延長線にとどまらず、実際の仕事をこなすためのAIという新しい設計思想のもと開発されたモデルです。文章 [...]...",
-      "publishedDate": "Mon, 27 Apr 2026 01:50:19 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-5.5-1024x576.webp",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/2_1031_1200x628.jpg",
       "language": "ja"
     },
     {
