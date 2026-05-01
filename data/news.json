@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-30T02:06:09.448213",
+  "lastUpdated": "2026-05-01T02:09:44.166183",
   "articles": [
     {
       "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第一回)｜深堀り取材【毎月3回更新】",
@@ -62,6 +62,36 @@
       "language": "en"
     },
     {
+      "title": "ScanX、地表面点群データ抽出の手戻りを削減「エリア指定地表面抽出機能」を公開",
+      "link": "https://news.build-app.jp/article/40350/",
+      "description": "ローカスブルー株式会社（本社：東京都千代田区西神田、代表取締役：宮谷 聡）は、オンラインAI点群処理ソフトウェア「ScanX」において、地表......",
+      "publishedDate": "Thu, 30 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/09/MicrosoftTeams-image-149-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "buildingSMART International Appoints Aidan Mercer as Managing Director",
+      "link": "https://www.buildingsmart.org/buildingsmart-international-appoints-aidan-mercer-as-managing-director/",
+      "description": "London, U.K. – April 30th, 2026 — The Board of buildingSMART International (bSI) is pleased to announce the appointment of Aidan Mercer as Managing Director (MD), effective 1 May 2026.... The post bui...",
+      "publishedDate": "Thu, 30 Apr 2026 09:56:12 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "渋谷サクラステージは失敗？アクセスや構成を解説",
+      "link": "https://news.build-app.jp/article/40366/",
+      "description": "トレンドワード：渋谷サクラステージ 「渋谷サクラステージ」についてピックアップします。渋谷再開発の“ラストピース”ともいわれる渋谷サクラステ......",
+      "publishedDate": "Thu, 30 Apr 2026 07:01:17 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/image-11-130x73.jpg",
+      "language": "ja"
+    },
+    {
       "title": "キャタピラーとNVIDIAが変える重機のAI戦略とは？フィジカルAIの全貌",
       "link": "https://axconstdx.com/2026/03/19/%e3%82%ad%e3%83%a3%e3%82%bf%e3%83%94%e3%83%a9%e3%83%bc%e3%81%a8nvidia%e3%81%8c%e5%a4%89%e3%81%88%e3%82%8b%e9%87%8d%e6%a9%9f%e3%81%aeai%e6%88%a6%e7%95%a5%e3%81%a8%e3%81%af%ef%bc%9f%e3%83%95%e3%82%a3/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2582%25ad%25e3%2583%25a3%25e3%2582%25bf%25e3%2583%2594%25e3%2583%25a9%25e3%2583%25bc%25e3%2581%25a8nvidia%25e3%2581%258c%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b%25e9%2587%258d%25e6%25a9%259f%25e3%2581%25aeai%25e6%2588%25a6%25e7%2595%25a5%25e3%2581%25a8%25e3%2581%25af%25ef%25bc%259f%25e3%2583%2595%25e3%2582%25a3",
       "description": "「重機とAIは関係ない」と思っていませんか。実は今、建設現場の未来を決める静かな革命が、すでに始まっています。この記事を読めば、キャタピラーとNVIDIAが描く戦略の全貌と、自社のデジタル変革に応用できる具体的な視点が手 [...] <p>The post キャタピラーとNVIDIAが変える重機のAI戦略とは？フィジカルAIの全貌 first appeared on 生成AIと建設DX.</p>...",
@@ -119,26 +149,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/ziqgTJjcgINb51c1679638384_1679638410-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "現場条件に合うアンカーをどう選ぶ？種類・施工方法・コスト目安を実務目線で解説",
-      "link": "https://news.build-app.jp/article/40309/",
-      "description": "建築工事で使われるアンカーは、部材や設備を建物に固定するための部材です。基礎やコンクリート、壁、足場、内装など幅広い場所で使われます。 しか......",
-      "publishedDate": "Sun, 26 Apr 2026 13:46:29 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/26527682_m-130x98.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新版】建築におけるスタッドとは？LGS下地・頭付きスタッドの違い、BIM活用まで解説",
-      "link": "https://news.build-app.jp/article/40304/",
-      "description": "建築現場で使われる「スタッド」は、主に壁や天井の下地を構成する縦方向の部材を指します。オフィスや商業施設、集合住宅、公共施設などの内装工事で......",
-      "publishedDate": "Sun, 26 Apr 2026 13:27:41 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/34182405_m-130x87.jpg",
       "language": "ja"
     },
     {
@@ -212,6 +222,16 @@
       "language": "ja"
     },
     {
+      "title": "Open BIMとは？| IFCの仕組み・企業導入の進め方・失敗例まで完全解説",
+      "link": "https://news.build-app.jp/article/40356/",
+      "description": "設計・施工の現場で「BIMを導入したのに、結局データがつながらない」と感じたことはないでしょうか。ソフトごとに形式が違い、再入力や変換ミスが......",
+      "publishedDate": "Mon, 27 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/f10f71462b6d4552896fc7a6f0d8aa33-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "【奥村組】環境省事業におけるPFOS等対策技術に関する実証試験が完了しました",
       "link": "https://news.build-app.jp/article/40262/",
       "description": "概要 環境省の『PFOS等の濃度低減のための対策技術の実証事業』において、株式会社奥村組（本社：大阪市阿倍野区、社長：奥村太加典）の提案した......",
@@ -262,16 +282,6 @@
       "language": "en"
     },
     {
-      "title": "大成建設、ZEFの構築と取り組みで脱炭素チャレンジカップ2026環境大臣賞を受賞",
-      "link": "https://news.build-app.jp/article/40223/",
-      "description": "大成建設株式会社（社長：相川善郎）が取り組む「ZEF（Net Zero Energy Factory）」の構築およびその取り組みが、「脱炭素......",
-      "publishedDate": "Fri, 24 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/33864491_s-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "Key Outcomes from the Domain Leadership Conference in Zurich",
       "link": "https://www.buildingsmart.org/key-outcomes-from-the-domain-leadership-conference-in-zurich/",
       "description": "The recent Domain Leadership Conference held in Zurich on 4 &#38; 5 February marked an important moment for buildingSMART International. bSI Domains are membership-led, pro bono programmes representin...",
@@ -286,16 +296,6 @@
       "link": "https://www.buildingsmart.org/openbim-practitioner-certification-enters-full-scale-implementation-across-chapters/",
       "description": "The openBIM Practitioner Certification is now rolling out across the buildingSMART community, as part of the ongoing expansion of the Professional Certification Program, marking a major milestone in p...",
       "publishedDate": "Fri, 05 Dec 2025 22:18:08 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Board of Directors Changes",
-      "link": "https://www.buildingsmart.org/board-of-directors-changes/",
-      "description": "London, U.K. – December 5th, 2025 — buildingSMART International (bSI) is today announcing some Board of Director changes. Board Changes Due to ill health, Alfred Waschl has stepped down from... The po...",
-      "publishedDate": "Fri, 05 Dec 2025 19:25:08 +0000",
       "source": "buildingSMART International",
       "category": "bim",
       "thumbnail": null,
