@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T02:09:44.166183",
+  "lastUpdated": "2026-05-02T01:57:14.482647",
   "articles": [
     {
       "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第一回)｜深堀り取材【毎月3回更新】",
@@ -12,13 +12,23 @@
       "language": "ja"
     },
     {
-      "title": "熱中症ゼロ社会に貢献「クール・シェルター®魁」予約販売開始 現場の “移動可能避暑室”",
-      "link": "https://news.build-app.jp/article/40348/",
-      "description": "【概要】 株式会社リード技建（兵庫県尼崎市、代表取締役社長古川 恵久｟ふるかわ やすひさ｠）は2026年4月22日（水） “移動可能避暑室”......",
+      "title": "国土交通省、令和8年度住宅局予算配分を公表、総額1.24兆円で4分野に重点配分",
+      "link": "https://news.build-app.jp/article/40412/",
+      "description": "国土交通省は、令和８年度の予算配分方針を公表しました。総事業費は約１兆2,449億円にのぼり、住宅対策と市街地整備の２分野に大きく分けて配分......",
       "publishedDate": "Wed, 29 Apr 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/09/unDR9w2945ETEqC1662045710_1662045733-130x82.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/3258474_m-130x80.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "竹中工務店、大阪・関西万博の建築を川西市へ移設し、自然分解の観察段階に移行",
+      "link": "https://news.build-app.jp/article/40382/",
+      "description": "竹中工務店（社長：丁野成人）は、2025年日本国際博覧会（大阪・関西万博）の会期中に提供していた「森になる建築」を、兵庫県川西市にある竹中研......",
+      "publishedDate": "Wed, 29 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/10/23475621_m-130x98.jpg",
       "language": "ja"
     },
     {
@@ -30,16 +40,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "アマンレジデンス 東京・ジャヌ東京｜清水建設のDXが支えた虎ノ門・麻布台ヒルズプロジェクト",
-      "link": "https://news.build-app.jp/article/40278/",
-      "description": "トレンドワード：アマンレジデンス 東京・ジャヌ東京 「アマンレジデンス 東京」と「ジャヌ東京」は、虎ノ門・麻布台プロジェクト（虎ノ門・麻布台......",
-      "publishedDate": "Tue, 28 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/94270f87209bc0f79f2746a35c6b8593-1-130x82.png",
-      "language": "ja"
     },
     {
       "title": "東大卒4割のAIスタートアップが建設業を変える──燈、創業5年で評価額1000億円の衝撃",
@@ -62,6 +62,16 @@
       "language": "en"
     },
     {
+      "title": "大和ハウス工業と宮城県利府町、災害時支援協定を締結し物流施設を避難場所・物資拠点に活用",
+      "link": "https://news.build-app.jp/article/40408/",
+      "description": "2026年4月15日、宮城県宮城郡利府町と大和ハウス工業株式会社は、「災害発生時における支援協力に関する協定書」を締結しました。大和ハウス工......",
+      "publishedDate": "Thu, 30 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/3422461_m-130x87.jpg",
+      "language": "ja"
+    },
+    {
       "title": "ScanX、地表面点群データ抽出の手戻りを削減「エリア指定地表面抽出機能」を公開",
       "link": "https://news.build-app.jp/article/40350/",
       "description": "ローカスブルー株式会社（本社：東京都千代田区西神田、代表取締役：宮谷 聡）は、オンラインAI点群処理ソフトウェア「ScanX」において、地表......",
@@ -69,6 +79,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/09/MicrosoftTeams-image-149-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "竹中工務店、鉄骨梁の耐火被覆技術で3時間耐火の大臣認定取得を発表、木あらわし空間の実現へ",
+      "link": "https://news.build-app.jp/article/40385/",
+      "description": "2026年4月14日、株式会社竹中工務店は、木材を使って鉄骨梁の耐火性能を高める技術「KiPLUS® TAIKA for BEAM」において......",
+      "publishedDate": "Thu, 30 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33965467_s-130x73.jpg",
       "language": "ja"
     },
     {
@@ -129,26 +149,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/bulldozer_1200x630-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "MoN Takanawaとは｜フロア構成と楽しみ方を解説",
-      "link": "https://news.build-app.jp/article/40077/",
-      "description": "※本記事の要約・構成にはAIを活用しており、最終的な監修・解説は編集部が担当しています。 JR東日本が進める「TAKANAWA GATEWA......",
-      "publishedDate": "Sun, 26 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/6dadea54dcc83c3488874205ad831a04-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "大林組、カーボン・オフセット第三者認証基準に基づく認証を取得",
-      "link": "https://news.build-app.jp/article/40260/",
-      "description": "概要 株式会社大林組（本社：東京都港区、社長：佐藤俊美）は、出光興産株式会社（本社：東京都千代田区、社長：酒井則明）と連携し、環境省が指針を......",
-      "publishedDate": "Sun, 26 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/ziqgTJjcgINb51c1679638384_1679638410-130x82.jpg",
       "language": "ja"
     },
     {
@@ -222,36 +222,6 @@
       "language": "ja"
     },
     {
-      "title": "Open BIMとは？| IFCの仕組み・企業導入の進め方・失敗例まで完全解説",
-      "link": "https://news.build-app.jp/article/40356/",
-      "description": "設計・施工の現場で「BIMを導入したのに、結局データがつながらない」と感じたことはないでしょうか。ソフトごとに形式が違い、再入力や変換ミスが......",
-      "publishedDate": "Mon, 27 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/f10f71462b6d4552896fc7a6f0d8aa33-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "【奥村組】環境省事業におけるPFOS等対策技術に関する実証試験が完了しました",
-      "link": "https://news.build-app.jp/article/40262/",
-      "description": "概要 環境省の『PFOS等の濃度低減のための対策技術の実証事業』において、株式会社奥村組（本社：大阪市阿倍野区、社長：奥村太加典）の提案した......",
-      "publishedDate": "Mon, 27 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/4sAi0GiPB9jj1KO1658206702_1658206726-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "「コンサルが消え、職人が勝つ」｜AIが書き換える、建設業のヒエラルキー",
-      "link": "https://news.build-app.jp/article/39628/",
-      "description": "建設業界にも、AIがやってくる。 ここで言うAIとは、「文章を作る機械」ではない。LLM（言語知能）と世界モデル――物理・工程・コスト・リス......",
-      "publishedDate": "Mon, 27 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/20260428_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
       "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
       "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
       "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
@@ -300,6 +270,36 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "国土交通省、令和6年度の建設工事施工統計を公表、完成工事高は約155兆円に増加",
+      "link": "https://news.build-app.jp/article/40397/",
+      "description": "国土交通省は令和8年4月14日、「建設工事施工統計調査報告（令和６年度実績）」を公表しました。令和６年度に建設工事の実績があった業者数は38......",
+      "publishedDate": "Fri, 01 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/33648442_m-130x98.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "竹中工務店、耐火集成木材燃エンウッド柱でSuMPO EPD認証取得、1・2時間耐火仕様対象",
+      "link": "https://news.build-app.jp/article/40387/",
+      "description": "竹中工務店（社長：丁野成人）は、同社が開発・製造する耐火集成木材「燃エンウッド」シリーズについて、柱の1時間耐火仕様および2時間耐火仕様にお......",
+      "publishedDate": "Fri, 01 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/23398670_m-130x98.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大和ハウス工業、東京・東雲に都市型物流施設竣工、ヤマト運輸が入居し統合拠点に",
+      "link": "https://news.build-app.jp/article/40410/",
+      "description": "大和ハウス工業株式会社（本社：大阪市、代表取締役社長：大友浩嗣）は2026年4月6日、東京都江東区において大型マルチテナント型物流施設「DP......",
+      "publishedDate": "Fri, 01 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/34152738_l-130x98.jpg",
+      "language": "ja"
     }
   ]
 }
