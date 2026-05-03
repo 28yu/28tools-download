@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02T01:57:14.482647",
+  "lastUpdated": "2026-05-03T02:01:09.099083",
   "articles": [
     {
       "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第一回)｜深堀り取材【毎月3回更新】",
@@ -9,16 +9,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/19e0e4e880f6d4bfc6b251dd89de0766-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、令和8年度住宅局予算配分を公表、総額1.24兆円で4分野に重点配分",
-      "link": "https://news.build-app.jp/article/40412/",
-      "description": "国土交通省は、令和８年度の予算配分方針を公表しました。総事業費は約１兆2,449億円にのぼり、住宅対策と市街地整備の２分野に大きく分けて配分......",
-      "publishedDate": "Wed, 29 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/3258474_m-130x80.jpg",
       "language": "ja"
     },
     {
@@ -222,6 +212,16 @@
       "language": "ja"
     },
     {
+      "title": "竹中工務店、物流施設の新築工事でCO2固定地盤改良を適用し排出量15％削減",
+      "link": "https://news.build-app.jp/article/40388/",
+      "description": "竹中工務店は2026年4月、鹿島建設・デンカとともに取り組む「CUCO®（クーコ）」コンソーシアムの成果として、福岡県古賀市に建設中の物流施......",
+      "publishedDate": "Sat, 02 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/23466231_m-130x87.jpg",
+      "language": "ja"
+    },
+    {
       "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
       "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
       "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
@@ -282,16 +282,6 @@
       "language": "ja"
     },
     {
-      "title": "竹中工務店、耐火集成木材燃エンウッド柱でSuMPO EPD認証取得、1・2時間耐火仕様対象",
-      "link": "https://news.build-app.jp/article/40387/",
-      "description": "竹中工務店（社長：丁野成人）は、同社が開発・製造する耐火集成木材「燃エンウッド」シリーズについて、柱の1時間耐火仕様および2時間耐火仕様にお......",
-      "publishedDate": "Fri, 01 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/23398670_m-130x98.jpg",
-      "language": "ja"
-    },
-    {
       "title": "大和ハウス工業、東京・東雲に都市型物流施設竣工、ヤマト運輸が入居し統合拠点に",
       "link": "https://news.build-app.jp/article/40410/",
       "description": "大和ハウス工業株式会社（本社：大阪市、代表取締役社長：大友浩嗣）は2026年4月6日、東京都江東区において大型マルチテナント型物流施設「DP......",
@@ -299,6 +289,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/34152738_l-130x98.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "竹中工務店、耐火集成木材燃エンウッド柱でSuMPO EPD認証取得、1・2時間耐火仕様対象",
+      "link": "https://news.build-app.jp/article/40387/",
+      "description": "竹中工務店（社長：丁野成人）は、同社が開発・製造する耐火集成木材「燃エンウッド」シリーズについて、柱の1時間耐火仕様および2時間耐火仕様にお......",
+      "publishedDate": "Fri, 01 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/23398670_m-130x98.jpg",
       "language": "ja"
     }
   ]
