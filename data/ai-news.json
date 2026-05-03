@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02T04:19:48.969938",
+  "lastUpdated": "2026-05-03T04:42:06.399874",
   "articles": [
     {
       "title": "Where the goblins came from",
@@ -42,30 +42,8 @@
       "publishedDate": "Wed, 29 Apr 2026 15:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7uKjDcPGzOUdai1xJ3ADrz/e546afb6069a32f56d346a53c1093c74/Frame__5_.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "【Claude for Creative Work】Blender・Adobe・Abletonと直接連携！クリエイター向けコネクタを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-for-creative-work/",
-      "description": "Claude for Creative Workは、Anthropicが2026年4月28日に発表したクリエイティブ業界向けのAI連携プラットフォームです！ Blender・Adobe・Autodesk・Abletonな [...]...",
-      "publishedDate": "Wed, 29 Apr 2026 11:13:24 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-for-Creative-Work-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Seedanceのシリーズまとめ！音声も同時生成できる動画生成AIの全容を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/seedance-summary/",
-      "description": "ByteDanceが開発した動画生成AI「Seedance」をご存じでしょうか。2025年6月にSeedance 1.0が登場し、2026年2月には大幅に進化したSeedance 2.0が公開されました。映像と音声の同時 [...]...",
-      "publishedDate": "Wed, 29 Apr 2026 11:07:12 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Seedance-Summary_2604-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "Cybersecurity in the Intelligence Age",
@@ -189,17 +167,6 @@
       "language": "ja"
     },
     {
-      "title": "【Qwen-Image-2.0-Pro】テキスト入り画像を高精度に生成できるアリババの最新AIモデルを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwen-image-2-0-pro/",
-      "description": "2026年4月25日、アリババのQwenチームが画像生成モデルの最新版「Qwen-Image-2.0-Pro」を公開しました！ Qwen-Image-2.0-Proは、2026年2月にリリースされたQwen-Image- [...]...",
-      "publishedDate": "Tue, 28 Apr 2026 05:49:08 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen-Image-2.0-Pro-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "アイスマイリー、5/13（水）から3日間「第6回 デジタル化・DX推進展【東京】/ AI活用支援EXPO」にブース出展",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/odex-no6-2026-tokyo/",
@@ -211,17 +178,6 @@
       "language": "ja"
     },
     {
-      "title": "ChatGPTでクイズは作れる？思わず試したくなる機能の使い方からクイズアプリ作成方法まで解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chatgpt-quiz/",
-      "description": "ChatGPTでクイズを作りたいけれど、どの方法が自分に合うのかわからないと感じている方は多いのではないでしょうか。実は、通常のチャットでのプロンプト入力に加え、GPTsやメニューの「クイズ」機能など、用途に応じた複数の [...]...",
-      "publishedDate": "Tue, 28 Apr 2026 01:54:30 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-quiz_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Our commitment to community safety",
       "titleJa": "地域の安全に対する私たちの取り組み",
       "link": "https://openai.com/index/our-commitment-to-community-safety",
@@ -229,7 +185,7 @@
       "publishedDate": "Tue, 28 Apr 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4LxnvjduXTJ8PvsFyOinqE/cd764864719bfa914c88e34d6e9f1002/Frame-1.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -240,7 +196,7 @@
       "publishedDate": "Tue, 28 Apr 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/6Qdod1sP2lAXzlwaRnglBQ/95090ca1ad0eeca76034c16cb451106d/oai-aws-16x9.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -438,7 +394,7 @@
       "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/2Bh47W4cA48dvG5FbDtNQH/5897109fb0de6fc3125c0c35c4f60001/Hero_Art_Card_16x9.jpg?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -449,7 +405,7 @@
       "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4qBEDs71GX4NIuRrjXfZpA/8e5c587702a354616d4d99b1489a49b1/System_Card_Card_SEO_16x9.jpg?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -460,7 +416,7 @@
       "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -495,6 +451,50 @@
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/transformersjs-chrome-extension/thumbnail.jpg",
       "language": "en"
+    },
+    {
+      "title": "生成AIを学ぶならセミナーがおすすめ！時代の波に乗り遅れるないセミナーの選び方と注意点を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/generative-ai-seminar",
+      "description": "「話題の生成AIを仕事に取り入れたいけど、どこから手をつけていいかわからない……」 「せっかく生成AIを社内導入したのに、誰も使ってくれない……」 といったことでお悩みの方におすすめしたいのが、生成AIについて学べるセミ [...]...",
+      "publishedDate": "Sat, 02 May 2026 13:22:47 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/generative-ai-seminar_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claude CodeのAgent Skillsとは？自動化の仕組みと作り方・活用例を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/claude-code-agent-skills/",
+      "description": "2025年10月、AnthropicのAIコーディングツール「Claude Code」に、新機能「Agent Skills」が追加されました。 今回追加された「Claude Code Agent Skills」は、Cla [...]...",
+      "publishedDate": "Sat, 02 May 2026 12:48:54 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-Agent-Skills_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Claude Code vs Codexで比較】どちらのAIコーディングエージェントを選ぶべきか解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/claude-code-vs-codex/",
+      "description": "Claude CodeとCodexはどちらもAIコーディングエージェントですが、「どっちを使えばいいの？」とお悩みの方は多いのではないでしょうか？ 結論、設計から実装までを一貫してAIエージェントに任せたい方はClaud [...]...",
+      "publishedDate": "Sat, 02 May 2026 12:34:44 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-code-vs-codex_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Claude Security】AIがコードの脆弱性を自動で検出・修正！Anthropicのセキュリティツールを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-security/",
+      "description": "2026年5月1日、Anthropicはコードベースの脆弱性を検出し、修正パッチまで提案するセキュリティツール「Claude Security」のパブリックベータ版を公開しました！ 2026年はAIサイバーセキュリティの [...]...",
+      "publishedDate": "Sat, 02 May 2026 12:01:53 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Security-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "PFU「PaperStream AI」販売開始。生成AIとOCR技術により文字認識精度99.99%を実現",
