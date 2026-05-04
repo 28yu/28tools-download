@@ -1,26 +1,6 @@
 {
-  "lastUpdated": "2026-05-03T02:01:09.099083",
+  "lastUpdated": "2026-05-04T02:04:01.227146",
   "articles": [
-    {
-      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第一回)｜深堀り取材【毎月3回更新】",
-      "link": "https://news.build-app.jp/article/40235/",
-      "description": "自由に情報交換できる建設系のSNSのみならず、公式見解が発表される建設系の既存メディア上でも、AIの積極的な援用に関する情報が数多く見られる......",
-      "publishedDate": "Wed, 29 Apr 2026 22:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/19e0e4e880f6d4bfc6b251dd89de0766-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "竹中工務店、大阪・関西万博の建築を川西市へ移設し、自然分解の観察段階に移行",
-      "link": "https://news.build-app.jp/article/40382/",
-      "description": "竹中工務店（社長：丁野成人）は、2025年日本国際博覧会（大阪・関西万博）の会期中に提供していた「森になる建築」を、兵庫県川西市にある竹中研......",
-      "publishedDate": "Wed, 29 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/10/23475621_m-130x98.jpg",
-      "language": "ja"
-    },
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
       "link": "https://www.buildingsmart.org/buildingsmart-international-announces-that-celine-bent-has-left-the-organisation/",
@@ -30,16 +10,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "東大卒4割のAIスタートアップが建設業を変える──燈、創業5年で評価額1000億円の衝撃",
-      "link": "https://axconstdx.com/2026/03/17/%e6%9d%b1%e5%a4%a7%e5%8d%924%e5%89%b2%e3%81%aeai%e3%82%b9%e3%82%bf%e3%83%bc%e3%83%88%e3%82%a2%e3%83%83%e3%83%97%e3%81%8c%e5%bb%ba%e8%a8%ad%e6%a5%ad%e3%82%92%e5%a4%89%e3%81%88%e3%82%8b%e2%94%80/?utm_source=rss&utm_medium=rss&utm_campaign=%25e6%259d%25b1%25e5%25a4%25a7%25e5%258d%25924%25e5%2589%25b2%25e3%2581%25aeai%25e3%2582%25b9%25e3%2582%25bf%25e3%2583%25bc%25e3%2583%2588%25e3%2582%25a2%25e3%2583%2583%25e3%2583%2597%25e3%2581%258c%25e5%25bb%25ba%25e8%25a8%25ad%25e6%25a5%25ad%25e3%2582%2592%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b%25e2%2594%2580",
-      "description": "「建設業界のDXは難しい」と、あきらめかけていませんか。そんな常識を、創業5年・評価額1,000億円超のAIスタートアップが静かに塗り替えています。この記事を読めば、現場課題を解決するAIの使い方と、日本の建設業が変わり [...] <p>The post 東大卒4割のAIスタートアップが建設業を変える──燈、創業5年で評価額1000億円の衝撃 first appeared on 生成AIと建設D...",
-      "publishedDate": "Tue, 17 Mar 2026 06:51:31 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/featured_image_1200x630-1024x538.jpg",
-      "language": "ja"
     },
     {
       "title": "The first buildingSMART openBIM Hackathon in Porto is complete",
@@ -62,16 +32,6 @@
       "language": "ja"
     },
     {
-      "title": "ScanX、地表面点群データ抽出の手戻りを削減「エリア指定地表面抽出機能」を公開",
-      "link": "https://news.build-app.jp/article/40350/",
-      "description": "ローカスブルー株式会社（本社：東京都千代田区西神田、代表取締役：宮谷 聡）は、オンラインAI点群処理ソフトウェア「ScanX」において、地表......",
-      "publishedDate": "Thu, 30 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/09/MicrosoftTeams-image-149-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "竹中工務店、鉄骨梁の耐火被覆技術で3時間耐火の大臣認定取得を発表、木あらわし空間の実現へ",
       "link": "https://news.build-app.jp/article/40385/",
       "description": "2026年4月14日、株式会社竹中工務店は、木材を使って鉄骨梁の耐火性能を高める技術「KiPLUS® TAIKA for BEAM」において......",
@@ -79,6 +39,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33965467_s-130x73.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ScanX、地表面点群データ抽出の手戻りを削減「エリア指定地表面抽出機能」を公開",
+      "link": "https://news.build-app.jp/article/40350/",
+      "description": "ローカスブルー株式会社（本社：東京都千代田区西神田、代表取締役：宮谷 聡）は、オンラインAI点群処理ソフトウェア「ScanX」において、地表......",
+      "publishedDate": "Thu, 30 Apr 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/09/MicrosoftTeams-image-149-130x87.jpg",
       "language": "ja"
     },
     {
@@ -102,16 +72,6 @@
       "language": "ja"
     },
     {
-      "title": "キャタピラーとNVIDIAが変える重機のAI戦略とは？フィジカルAIの全貌",
-      "link": "https://axconstdx.com/2026/03/19/%e3%82%ad%e3%83%a3%e3%82%bf%e3%83%94%e3%83%a9%e3%83%bc%e3%81%a8nvidia%e3%81%8c%e5%a4%89%e3%81%88%e3%82%8b%e9%87%8d%e6%a9%9f%e3%81%aeai%e6%88%a6%e7%95%a5%e3%81%a8%e3%81%af%ef%bc%9f%e3%83%95%e3%82%a3/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2582%25ad%25e3%2583%25a3%25e3%2582%25bf%25e3%2583%2594%25e3%2583%25a9%25e3%2583%25bc%25e3%2581%25a8nvidia%25e3%2581%258c%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b%25e9%2587%258d%25e6%25a9%259f%25e3%2581%25aeai%25e6%2588%25a6%25e7%2595%25a5%25e3%2581%25a8%25e3%2581%25af%25ef%25bc%259f%25e3%2583%2595%25e3%2582%25a3",
-      "description": "「重機とAIは関係ない」と思っていませんか。実は今、建設現場の未来を決める静かな革命が、すでに始まっています。この記事を読めば、キャタピラーとNVIDIAが描く戦略の全貌と、自社のデジタル変革に応用できる具体的な視点が手 [...] <p>The post キャタピラーとNVIDIAが変える重機のAI戦略とは？フィジカルAIの全貌 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Thu, 19 Mar 2026 07:20:13 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/eyecatch-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
       "link": "https://www.buildingsmart.org/industry-insights-embracing-challenges-and-opportunities-of-using-openbim-for-increasing-efficiency-in-the-construction-process/",
       "description": "Read about Construction Industry leaders perspective on embracing challenges and opportunities of using openBIM for increasing efficiency: Link The post Industry Insights “Embracing Challenges and Opp...",
@@ -132,83 +92,23 @@
       "language": "en"
     },
     {
-      "title": "人手削減・燃費30%減──清水建設「Smart Dozer」が変える建設現場",
-      "link": "https://axconstdx.com/2026/03/29/%e4%ba%ba%e6%89%8b%e5%89%8a%e6%b8%9b%e3%83%bb%e7%87%83%e8%b2%bb30%e6%b8%9b%e2%94%80%e2%94%80%e6%b8%85%e6%b0%b4%e5%bb%ba%e8%a8%ad%e3%80%8csmart-dozer%e3%80%8d%e3%81%8c%e5%a4%89%e3%81%88%e3%82%8b/?utm_source=rss&utm_medium=rss&utm_campaign=%25e4%25ba%25ba%25e6%2589%258b%25e5%2589%258a%25e6%25b8%259b%25e3%2583%25bb%25e7%2587%2583%25e8%25b2%25bb30%25e6%25b8%259b%25e2%2594%2580%25e2%2594%2580%25e6%25b8%2585%25e6%25b0%25b4%25e5%25bb%25ba%25e8%25a8%25ad%25e3%2580%258csmart-dozer%25e3%2580%258d%25e3%2581%258c%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b",
-      "description": "人手不足と高齢化が加速する建設現場で、「このままでは現場が回らなくなる」と感じている方は多いはずです。その課題に、AIと自律施工技術が真正面から答えを出し始めました。本記事を読めば、省人化・コスト削減・安全確保を同時に実 [...] <p>The post 人手削減・燃費30%減──清水建設「Smart Dozer」が変える建設現場 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sun, 29 Mar 2026 14:38:22 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/bulldozer_1200x630-1024x538.jpg",
+      "title": "国土交通省、令和8年度の地籍整備事業費補助を配分、総額37億円規模で配分決定",
+      "link": "https://news.build-app.jp/article/40400/",
+      "description": "国土交通省は令和8年4月、令和8年度における予算配分の概要を公表しました。今回の配分の中心となるのは「社会資本整備円滑化地籍整備事業費補助」......",
+      "publishedDate": "Sun, 03 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/27388410_m-130x87.jpg",
       "language": "ja"
     },
     {
-      "title": "Revit MCPで変わる7つの現場—自然言語がBIMを動かす時代へ",
-      "link": "https://axconstdx.com/2026/03/15/revit-mcp%e3%81%a7%e5%a4%89%e3%82%8f%e3%82%8b7%e3%81%a4%e3%81%ae%e7%8f%be%e5%a0%b4-%e8%87%aa%e7%84%b6%e8%a8%80%e8%aa%9e%e3%81%8cbim%e3%82%92%e5%8b%95%e3%81%8b%e3%81%99%e6%99%82%e4%bb%a3/?utm_source=rss&utm_medium=rss&utm_campaign=revit-mcp%25e3%2581%25a7%25e5%25a4%2589%25e3%2582%258f%25e3%2582%258b7%25e3%2581%25a4%25e3%2581%25ae%25e7%258f%25be%25e5%25a0%25b4-%25e8%2587%25aa%25e7%2584%25b6%25e8%25a8%2580%25e8%25aa%259e%25e3%2581%258cbim%25e3%2582%2592%25e5%258b%2595%25e3%2581%258b%25e3%2581%2599%25e6%2599%2582%25e4%25bb%25a3",
-      "description": "「もっとBIMを活かしたい、でも操作が難しくて追いつかない」——そう感じたことはありませんか。Revit MCPを使えば、普通の言葉でBIMを動かせる時代が、もうすぐそこまで来ています。この記事を読み終えたとき、あなたの [...] <p>The post Revit MCPで変わる7つの現場—自然言語がBIMを動かす時代へ first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sun, 15 Mar 2026 04:44:45 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/featured_image_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "埋設管を掘る前に確認すべきこと｜AI・3D探査が変えるインフラDXの全貌",
-      "link": "https://axconstdx.com/2026/03/28/%e5%9f%8b%e8%a8%ad%e7%ae%a1%e3%82%92%e6%8e%98%e3%82%8b%e5%89%8d%e3%81%ab%e7%a2%ba%e8%aa%8d%e3%81%99%e3%81%b9%e3%81%8d%e3%81%93%e3%81%a8%ef%bd%9cai%e3%83%bb3d%e6%8e%a2%e6%9f%bb%e3%81%8c%e5%a4%89/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%259f%258b%25e8%25a8%25ad%25e7%25ae%25a1%25e3%2582%2592%25e6%258e%2598%25e3%2582%258b%25e5%2589%258d%25e3%2581%25ab%25e7%25a2%25ba%25e8%25aa%258d%25e3%2581%2599%25e3%2581%25b9%25e3%2581%258d%25e3%2581%2593%25e3%2581%25a8%25ef%25bd%259cai%25e3%2583%25bb3d%25e6%258e%25a2%25e6%259f%25bb%25e3%2581%258c%25e5%25a4%2589",
-      "description": "「地下に何が埋まっているか分からない」——その不安は、今も全国の工事現場で現実になっています。埋設管の位置不明は、ガス漏れや道路陥没といった取り返しのつかない事故に直結する問題です。この記事を読めば、非破壊探査からAIに [...] <p>The post 埋設管を掘る前に確認すべきこと｜AI・3D探査が変えるインフラDXの全貌 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sat, 28 Mar 2026 01:36:19 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/wp_eyecatch_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "「いい感じに作って」はもう卒業。AI活用の質を変えるDESIGN.md入門",
-      "link": "https://axconstdx.com/2026/04/18/%e3%80%8c%e3%81%84%e3%81%84%e6%84%9f%e3%81%98%e3%81%ab%e4%bd%9c%e3%81%a3%e3%81%a6%e3%80%8d%e3%81%af%e3%82%82%e3%81%86%e5%8d%92%e6%a5%ad%e3%80%82ai%e6%b4%bb%e7%94%a8%e3%81%ae%e8%b3%aa%e3%82%92%e5%a4%89/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2580%258c%25e3%2581%2584%25e3%2581%2584%25e6%2584%259f%25e3%2581%2598%25e3%2581%25ab%25e4%25bd%259c%25e3%2581%25a3%25e3%2581%25a6%25e3%2580%258d%25e3%2581%25af%25e3%2582%2582%25e3%2581%2586%25e5%258d%2592%25e6%25a5%25ad%25e3%2580%2582ai%25e6%25b4%25bb%25e7%2594%25a8%25e3%2581%25ae%25e8%25b3%25aa%25e3%2582%2592%25e5%25a4%2589",
-      "description": "何度プロンプトを書き直しても、AIの出力が毎回ブレる。そんな徒労感に心当たりはありませんか。じつは問題は指示の腕ではなく、渡す前提のあいまいさにあります。この記事を読み終えるころには、AIを「気まぐれな相棒」から「頼れる [...] <p>The post 「いい感じに作って」はもう卒業。AI活用の質を変えるDESIGN.md入門 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sat, 18 Apr 2026 10:39:03 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/04/wp_eyecatch_1200x630_under100kb-2-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "もうゼロから作らない。Claude Designが変える初稿の常識",
-      "link": "https://axconstdx.com/2026/04/18/%e3%82%82%e3%81%86%e3%82%bc%e3%83%ad%e3%81%8b%e3%82%89%e4%bd%9c%e3%82%89%e3%81%aa%e3%81%84%e3%80%82claude-design%e3%81%8c%e5%a4%89%e3%81%88%e3%82%8b%e5%88%9d%e7%a8%bf%e3%81%ae%e5%b8%b8%e8%ad%98/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2582%2582%25e3%2581%2586%25e3%2582%25bc%25e3%2583%25ad%25e3%2581%258b%25e3%2582%2589%25e4%25bd%259c%25e3%2582%2589%25e3%2581%25aa%25e3%2581%2584%25e3%2580%2582claude-design%25e3%2581%258c%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b%25e5%2588%259d%25e7%25a8%25bf%25e3%2581%25ae%25e5%25b8%25b8%25e8%25ad%2598",
-      "description": "提案資料の締切が迫るたび、ゼロから組み立てる重さに心が折れそうになる。そんな経験はありませんか。考える時間より、作る時間に追われる毎日を変えたい方へ。Claude Designは、対話するだけで初稿が形になる新しい相棒で [...] <p>The post もうゼロから作らない。Claude Designが変える初稿の常識 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sat, 18 Apr 2026 09:07:45 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/04/wp_eyecatch_1200x630-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "排気ゼロ・充電2時間——ボルボCEの「A40 Electric」が建設機械の常識を塗り替える",
-      "link": "https://axconstdx.com/2026/04/11/%e6%8e%92%e6%b0%97%e3%82%bc%e3%83%ad%e3%83%bb%e5%85%85%e9%9b%bb2%e6%99%82%e9%96%93-%e3%83%9c%e3%83%ab%e3%83%9cce%e3%81%ae%e3%80%8ca40-electric%e3%80%8d%e3%81%8c%e5%bb%ba%e8%a8%ad/?utm_source=rss&utm_medium=rss&utm_campaign=%25e6%258e%2592%25e6%25b0%2597%25e3%2582%25bc%25e3%2583%25ad%25e3%2583%25bb%25e5%2585%2585%25e9%259b%25bb2%25e6%2599%2582%25e9%2596%2593-%25e3%2583%259c%25e3%2583%25ab%25e3%2583%259cce%25e3%2581%25ae%25e3%2580%258ca40-electric%25e3%2580%258d%25e3%2581%258c%25e5%25bb%25ba%25e8%25a8%25ad",
-      "description": "ディーゼルエンジンの轟音が響く建設現場——その風景が、今まさに大きく塗り替えられようとしています。「電動化はまだ先の話」と思っていた方ほど、この記事を読んでほしいと思います。世界初の電動ダンプ量産がもたらす変革の全貌と、 [...] <p>The post 排気ゼロ・充電2時間——ボルボCEの「A40 Electric」が建設機械の常識を塗り替える first appeared on 生成AIと建...",
-      "publishedDate": "Sat, 11 Apr 2026 04:24:49 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/04/wp_eyecatch_truck_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Codeの制限、もう怖くない！公式推奨4つの節約術",
-      "link": "https://axconstdx.com/2026/04/04/claude-code%e3%81%ae%e5%88%b6%e9%99%90%e3%80%81%e3%82%82%e3%81%86%e6%80%96%e3%81%8f%e3%81%aa%e3%81%84%ef%bc%81%e5%85%ac%e5%bc%8f%e6%8e%a8%e5%a5%a84%e3%81%a4%e3%81%ae%e7%af%80%e7%b4%84%e8%a1%93/?utm_source=rss&utm_medium=rss&utm_campaign=claude-code%25e3%2581%25ae%25e5%2588%25b6%25e9%2599%2590%25e3%2580%2581%25e3%2582%2582%25e3%2581%2586%25e6%2580%2596%25e3%2581%258f%25e3%2581%25aa%25e3%2581%2584%25ef%25bc%2581%25e5%2585%25ac%25e5%25bc%258f%25e6%258e%25a8%25e5%25a5%25a84%25e3%2581%25a4%25e3%2581%25ae%25e7%25af%2580%25e7%25b4%2584%25e8%25a1%2593",
-      "description": "作業の途中で突然止まる、あの焦りと不満を感じたことはないでしょうか。「昨日は大丈夫だったのに」と首をかしげた経験がある方も多いはずです。実はこの現象、バグではなく仕様変更が原因です。正しく理解して設定を見直すだけで、制限 [...] <p>The post Claude Codeの制限、もう怖くない！公式推奨4つの節約術 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sat, 04 Apr 2026 13:19:45 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/04/ClaudeCode_eyecatch_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "オープンなのに最強？Gemma 4が企業AI戦略を塗り替える理由",
-      "link": "https://axconstdx.com/2026/04/04/%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%81%aa%e3%81%ae%e3%81%ab%e6%9c%80%e5%bc%b7%ef%bc%9fgemma-4%e3%81%8c%e4%bc%81%e6%a5%adai%e6%88%a6%e7%95%a5%e3%82%92%e5%a1%97%e3%82%8a%e6%9b%bf%e3%81%88%e3%82%8b/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2582%25aa%25e3%2583%25bc%25e3%2583%2597%25e3%2583%25b3%25e3%2581%25aa%25e3%2581%25ae%25e3%2581%25ab%25e6%259c%2580%25e5%25bc%25b7%25ef%25bc%259fgemma-4%25e3%2581%258c%25e4%25bc%2581%25e6%25a5%25adai%25e6%2588%25a6%25e7%2595%25a5%25e3%2582%2592%25e5%25a1%2597%25e3%2582%258a%25e6%259b%25bf%25e3%2581%2588%25e3%2582%258b",
-      "description": "コストが重い、セキュリティが心配、自社データを外に出したくない——AI導入を前に、こんな不安を抱えていませんか。そのすべての課題を一気に解消するかもしれないのが、Googleが公開したGemma 4です。この記事を読み終 [...] <p>The post オープンなのに最強？Gemma 4が企業AI戦略を塗り替える理由 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sat, 04 Apr 2026 07:38:21 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/04/gemma4_eyecatch_1200x630_under100kb-1024x538.jpg",
+      "title": "大成建設、太陽光発電のみで建物運用を実証、蓄電池と水素活用でエネルギー自立確認",
+      "link": "https://news.build-app.jp/article/40392/",
+      "description": "2026年4月16日、大成建設株式会社（社長：相川善郎）は、同社の技術センター「人と空間のラボ（ZEB実証棟）」（横浜市戸塚区）において、太......",
+      "publishedDate": "Sun, 03 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/AdobeStock_501873856-130x73.jpeg",
       "language": "ja"
     },
     {
@@ -272,6 +172,16 @@
       "language": "en"
     },
     {
+      "title": "竹中工務店、耐火集成木材燃エンウッド柱でSuMPO EPD認証取得、1・2時間耐火仕様対象",
+      "link": "https://news.build-app.jp/article/40387/",
+      "description": "竹中工務店（社長：丁野成人）は、同社が開発・製造する耐火集成木材「燃エンウッド」シリーズについて、柱の1時間耐火仕様および2時間耐火仕様にお......",
+      "publishedDate": "Fri, 01 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/23398670_m-130x98.jpg",
+      "language": "ja"
+    },
+    {
       "title": "国土交通省、令和6年度の建設工事施工統計を公表、完成工事高は約155兆円に増加",
       "link": "https://news.build-app.jp/article/40397/",
       "description": "国土交通省は令和8年4月14日、「建設工事施工統計調査報告（令和６年度実績）」を公表しました。令和６年度に建設工事の実績があった業者数は38......",
@@ -289,16 +199,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/34152738_l-130x98.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "竹中工務店、耐火集成木材燃エンウッド柱でSuMPO EPD認証取得、1・2時間耐火仕様対象",
-      "link": "https://news.build-app.jp/article/40387/",
-      "description": "竹中工務店（社長：丁野成人）は、同社が開発・製造する耐火集成木材「燃エンウッド」シリーズについて、柱の1時間耐火仕様および2時間耐火仕様にお......",
-      "publishedDate": "Fri, 01 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/23398670_m-130x98.jpg",
       "language": "ja"
     }
   ]
