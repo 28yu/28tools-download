@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-03T04:42:06.399874",
+  "lastUpdated": "2026-05-04T04:42:02.651694",
   "articles": [
     {
       "title": "Where the goblins came from",
@@ -9,7 +9,7 @@
       "publishedDate": "Wed, 29 Apr 2026 20:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4VaLYtAwgfUg82VF32O2gz/29e25c539c638b135a2d5d080f92c76f/Goblins-SEO__1_.jpg?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -53,7 +53,7 @@
       "publishedDate": "Wed, 29 Apr 2026 04:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/64zhbS4FYJIaJ2TXQb6ztp/a538eb06a6e62b8964de2bf6d5a2e8a3/Cybersecurity_in_the_Intelligence_Age.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -185,7 +185,7 @@
       "publishedDate": "Tue, 28 Apr 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4LxnvjduXTJ8PvsFyOinqE/cd764864719bfa914c88e34d6e9f1002/Frame-1.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -427,7 +427,7 @@
       "publishedDate": "Thu, 23 Apr 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7v5h6Z00V6Tt9XQW2AVW62/4ec32f6ad895b9fb038c46ab27b10067/Academy-SEO.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
