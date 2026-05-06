@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-05T04:18:03.911759",
+  "lastUpdated": "2026-05-06T04:35:13.486836",
   "articles": [
     {
       "title": "Where the goblins came from",
@@ -10,17 +10,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "AI evals are becoming the new compute bottleneck",
-      "titleJa": "AI の評価が新たなコンピューティングのボトルネックになりつつある",
-      "link": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
-      "description": "...",
-      "publishedDate": "Wed, 29 Apr 2026 16:45:09 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6413251362e6057cbb6259bd/ukJJW86oJu36zOJwqZJBG.png",
       "language": "en"
     },
     {
@@ -53,7 +42,7 @@
       "publishedDate": "Wed, 29 Apr 2026 04:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/64zhbS4FYJIaJ2TXQb6ztp/a538eb06a6e62b8964de2bf6d5a2e8a3/Cybersecurity_in_the_Intelligence_Age.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -110,6 +99,17 @@
       "category": "tools",
       "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Hcompany/holotab.png",
       "language": "en"
+    },
+    {
+      "title": "生成AIのAPIとは？業務効率を高める使い方からできること、活用事例を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/api-ai/",
+      "description": "日々の業務でもっと効率を上げたい、新しいサービスを形にしたいと感じることはありませんか？その鍵を握るのが、今注目を集める生成AIです。その中でも、AIの力を自由自在に引き出すための窓口となるAI APIへの関心が、ビジネ [...]...",
+      "publishedDate": "Wed, 06 May 2026 03:29:41 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/API-AI_2605-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try",
@@ -196,7 +196,7 @@
       "publishedDate": "Tue, 28 Apr 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4LxnvjduXTJ8PvsFyOinqE/cd764864719bfa914c88e34d6e9f1002/Frame-1.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -244,14 +244,80 @@
       "language": "en"
     },
     {
-      "title": "Bringing people together at AI for the Economy Forum",
-      "titleJa": "AI for Economy フォーラムに人々を集める",
-      "link": "https://blog.google/company-news/outreach-and-initiatives/creating-opportunity/ai-economy-forum/",
-      "description": "Woman working with a large tool. On the left are the Google and MIT FutureTech logos, \"AI for the Economy Forum\", and \"Innovation and Adaption in the New Era\"...",
-      "publishedDate": "Tue, 14 Apr 2026 09:00:00 +0000",
+      "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
+      "titleJa": "Google は、350 万ドルの Future Vision 映画コンペティションで XPRIZE および Range Media Partners と提携しています。",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/",
+      "description": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition....",
+      "publishedDate": "Tue, 05 May 2026 16:00:00 +0000",
       "source": "Google AI Blog",
       "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_for_the_Economy_Forum_2026.max-600x600.format-webp.webp",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/futurevisionxprize_social.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "音声認識で業務はどう変わる？ビジネスでの活用事例・注意点をわかりやすく解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/speech-recognition/",
+      "description": "音声認識AIは、人の声を解析してテキスト化や要約・翻訳・対話までこなす技術として、実務へ広がっています。実際に、議事録作成時間を75%削減した企業の事例もあります。 とはいえ「精度はどこまで信頼できる？」「機密情報の扱い [...]...",
+      "publishedDate": "Tue, 05 May 2026 12:13:19 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Speech-recognition_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "The Download: inside the Musk v. Altman trial, and AI for democracy",
+      "titleJa": "ダウンロード: マスク対アルトマン裁判の内部と民主主義のための AI",
+      "link": "https://www.technologyreview.com/2026/05/05/1136848/the-download-musk-openai-altman-trial-ai-democracy/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Week one of the Musk v. Altman trial: what it was ...",
+      "publishedDate": "Tue, 05 May 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/Craig-at-pool-surface-1_R1-mobile-edited-1.jpg",
+      "language": "en"
+    },
+    {
+      "title": "GPT-5.5 Instant System Card",
+      "titleJa": "GPT-5.5 インスタント システム カード",
+      "link": "https://openai.com/index/gpt-5-5-instant-system-card",
+      "description": "...",
+      "publishedDate": "Tue, 05 May 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/Aj1UBJC1Kpt5IYhqrwOn4/0b039f2804579e9bbe42a67f8316a5c0/System_Card_16x9.jpg?w=1600&amp;h=900&amp;fit=fill",
+      "language": "en"
+    },
+    {
+      "title": "GPT-5.5 Instant: smarter, clearer, and more personalized",
+      "titleJa": "GPT-5.5 Instant: よりスマート、よりクリア、よりパーソナライズされた",
+      "link": "https://openai.com/index/gpt-5-5-instant",
+      "description": "GPT-5.5 Instant updates ChatGPT’s default model with smarter, more accurate answers, reduced hallucinations, and improved personalization controls....",
+      "publishedDate": "Tue, 05 May 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "生成AIでレポート作成を助ける！具体的な手順、バレない対策、おすすめツールを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/generative-ai-report-creation/",
+      "description": "学校でレポートの提出を求められて苦労した経験はありませんか？ レポート作成は集めた情報を整理し、論理的かつわかりやすく展開する必要があるため、時間と労力がかかる大変な作業です。そこで、今回は情報収集や文章の作成に役立つA [...]...",
+      "publishedDate": "Tue, 05 May 2026 09:05:19 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/generative-ai-report-creation_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "A blueprint for using AI to strengthen democracy",
+      "titleJa": "AI を活用して民主主義を強化するための青写真",
+      "link": "https://www.technologyreview.com/2026/05/05/1136843/ai-democracy-blueprint/",
+      "description": "Every few centuries, changes in how information moves reshape how societies govern themselves. The printing press spread vernacular literacy, helping give rise to the Reformation and, eventually, repr...",
+      "publishedDate": "Tue, 05 May 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/260430_AIdemocracy3.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -266,37 +332,15 @@
       "language": "ja"
     },
     {
-      "title": "Exclusive eBook: Inside the stealthy startup that pitched brainless human clones",
-      "titleJa": "独占電子書籍: 脳のない人間のクローンを売り込んだステルス スタートアップの内部",
-      "link": "https://www.technologyreview.com/2026/04/30/1136684/exclusive-ebook-inside-the-stealthy-startup-that-pitched-brainless-human-clones/",
-      "description": "The ultimate plan to live forever is a brand new body. This subscriber-only eBook explores R3 Bio, a small startup that has pitched a startling and ethically charged vision for &#8220;brainless clones...",
-      "publishedDate": "Thu, 30 Apr 2026 18:42:50 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/brainless-clones.png?resize=1200,600",
+      "title": "New ways to buy ChatGPT ads",
+      "titleJa": "ChatGPT 広告を購入する新しい方法",
+      "link": "https://openai.com/index/new-ways-to-buy-chatgpt-ads",
+      "description": "OpenAI expands ChatGPT ads with a beta self-serve Ads Manager, CPC bidding, and enhanced measurement tools—built to protect privacy and keep conversations separate from ads....",
+      "publishedDate": "Tue, 05 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7BFuH170Tk8pxf9XMjXE48/253f0f50015a47b3a94a42c57c5bd3b9/SEO-ChatGPT-Ads.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
-    },
-    {
-      "title": "Nano Banana用プロンプト完全ガイド！コピペで使える10選と失敗しない直し方・Proと2の使い分けを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/nano-banana-prompts/",
-      "description": "みなさん！Googleの次世代型画像生成AI「Nano Banana（Gemini 2.5 Flash Image）」は試されましたか？ 2025年8月公開のNano Banana（Gemini 2.5 Flash Im [...]...",
-      "publishedDate": "Thu, 30 Apr 2026 13:57:34 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/nano-banana-prompts_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Qwen 3.5 Small Model Series】0.8B〜9Bで高性能！軽量マルチモーダルAIの実力を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwen-3-5-small-model-series/",
-      "description": "2026年3月2日、Alibaba CloudのQwenチームが小型マルチモーダルAIシリーズ「Qwen 3.5 Small Model Series」を公開しました！ 0.8B・2B・4B・9Bという4つのコンパクトな [...]...",
-      "publishedDate": "Thu, 30 Apr 2026 13:15:48 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/03/AIモン_Qwen-3.5-Small-Model-Series-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "コード生成AIおすすめ比較！無料・有料ツールの選び方を解説",
@@ -328,7 +372,7 @@
       "publishedDate": "Thu, 30 Apr 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/33E6MiPrFaTJmxUV9YlSZ3/853564fb6503980552068250c1e1de24/OG-Advanced-Account-Security.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -340,28 +384,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/What_is_a_TPU_social.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Introducing GPT-5.5",
-      "titleJa": "GPT-5.5の紹介",
-      "link": "https://openai.com/index/introducing-gpt-5-5",
-      "description": "Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools....",
-      "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "GPT-5.5 System Card",
-      "titleJa": "GPT-5.5 システムカード",
-      "link": "https://openai.com/index/gpt-5-5-system-card",
-      "description": "...",
-      "publishedDate": "Thu, 23 Apr 2026 11:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -417,17 +439,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/ecom-rlve/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "The PR you would have opened yourself",
-      "titleJa": "自分で開設したはずの PR",
-      "link": "https://huggingface.co/blog/transformers-to-mlx",
-      "description": "...",
-      "publishedDate": "Thu, 16 Apr 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/transformers-to-mlx/thumbnail.jpg",
       "language": "en"
     },
     {
@@ -527,17 +538,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/deepseekeye.png",
-      "language": "ja"
-    },
-    {
-      "title": "生成AIで見積作成の効率化＆脱属人化！実現までの4ステップやChatGPT活用例などを紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/genai-estimate/",
-      "description": "みなさん、「見積もり業務」ってなにげに面倒くさくないですか？ベテランの相場感・知識が必要なうえ、コア業務の時間が削られるというのは、昨今のDX・自動化の流れに逆行していますよね。 ですが、もう心配ありません。生成AIなら [...]...",
-      "publishedDate": "Fri, 01 May 2026 02:58:46 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/genai-estimate_2605-1024x576.webp",
       "language": "ja"
     },
     {
