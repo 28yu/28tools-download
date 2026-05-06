@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-05T02:01:36.037985",
+  "lastUpdated": "2026-05-06T02:00:55.550775",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -30,6 +30,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "国土交通省、建設工事紛争審査会の第4四半期状況公表、申請3件・次期繰越23件の結果に",
+      "link": "https://news.build-app.jp/article/40403/",
+      "description": "国土交通省に設置されている「中央建設工事紛争審査会」は、令和7年（2025年）度第4四半期（2025年度末）における紛争処理の状況をまとめ、......",
+      "publishedDate": "Tue, 05 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/33585571_s-130x98.jpg",
+      "language": "ja"
     },
     {
       "title": "大和ハウス工業と宮城県利府町、災害時支援協定を締結し物流施設を避難場所・物資拠点に活用",
@@ -70,16 +80,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "渋谷サクラステージは失敗？アクセスや構成を解説",
-      "link": "https://news.build-app.jp/article/40366/",
-      "description": "トレンドワード：渋谷サクラステージ 「渋谷サクラステージ」についてピックアップします。渋谷再開発の“ラストピース”ともいわれる渋谷サクラステ......",
-      "publishedDate": "Thu, 30 Apr 2026 07:01:17 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/image-11-130x73.jpg",
-      "language": "ja"
     },
     {
       "title": "キャタピラーとNVIDIAが変える重機のAI戦略とは？フィジカルAIの全貌",
