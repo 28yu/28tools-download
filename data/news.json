@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-06T02:00:55.550775",
+  "lastUpdated": "2026-05-07T02:03:17.979995",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -10,6 +10,26 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "鋼橋CIMシステム「CIM-GIRDER」がNETIS推奨技術に選定、橋梁分野で初",
+      "link": "https://news.build-app.jp/article/40352/",
+      "description": "オフィスケイワン株式会社（本社：大阪市西区、代表取締役：保田敬一）は、当社が提供する鋼橋CIMシステム「CIM-GIRDER」が、国土交通省......",
+      "publishedDate": "Wed, 06 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2021/12/CAdobeStock_276451224-130x63.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "イスタンブール新空港が示すデジタル建設の臨界点｜3万人が仮想空間で協働した空港",
+      "link": "https://news.build-app.jp/article/40021/",
+      "description": "わずか42ヶ月で世界最大級の空港を建設するという無謀とも思える計画。それを可能にしたのは、建設業界の常識を覆すデジタル戦略だった。 2018......",
+      "publishedDate": "Wed, 06 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/20260507_hirayama-130x82.jpg",
+      "language": "ja"
     },
     {
       "title": "東大卒4割のAIスタートアップが建設業を変える──燈、創業5年で評価額1000億円の衝撃",
@@ -42,16 +62,6 @@
       "language": "ja"
     },
     {
-      "title": "大和ハウス工業と宮城県利府町、災害時支援協定を締結し物流施設を避難場所・物資拠点に活用",
-      "link": "https://news.build-app.jp/article/40408/",
-      "description": "2026年4月15日、宮城県宮城郡利府町と大和ハウス工業株式会社は、「災害発生時における支援協力に関する協定書」を締結しました。大和ハウス工......",
-      "publishedDate": "Thu, 30 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/3422461_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "竹中工務店、鉄骨梁の耐火被覆技術で3時間耐火の大臣認定取得を発表、木あらわし空間の実現へ",
       "link": "https://news.build-app.jp/article/40385/",
       "description": "2026年4月14日、株式会社竹中工務店は、木材を使って鉄骨梁の耐火性能を高める技術「KiPLUS® TAIKA for BEAM」において......",
@@ -59,16 +69,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33965467_s-130x73.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ScanX、地表面点群データ抽出の手戻りを削減「エリア指定地表面抽出機能」を公開",
-      "link": "https://news.build-app.jp/article/40350/",
-      "description": "ローカスブルー株式会社（本社：東京都千代田区西神田、代表取締役：宮谷 聡）は、オンラインAI点群処理ソフトウェア「ScanX」において、地表......",
-      "publishedDate": "Thu, 30 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/09/MicrosoftTeams-image-149-130x87.jpg",
       "language": "ja"
     },
     {
@@ -132,16 +132,6 @@
       "language": "ja"
     },
     {
-      "title": "国土交通省、令和8年度の地籍整備事業費補助を配分、総額37億円規模で配分決定",
-      "link": "https://news.build-app.jp/article/40400/",
-      "description": "国土交通省は令和8年4月、令和8年度における予算配分の概要を公表しました。今回の配分の中心となるのは「社会資本整備円滑化地籍整備事業費補助」......",
-      "publishedDate": "Sun, 03 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/27388410_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "大成建設、太陽光発電のみで建物運用を実証、蓄電池と水素活用でエネルギー自立確認",
       "link": "https://news.build-app.jp/article/40392/",
       "description": "2026年4月16日、大成建設株式会社（社長：相川善郎）は、同社の技術センター「人と空間のラボ（ZEB実証棟）」（横浜市戸塚区）において、太......",
@@ -149,6 +139,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/AdobeStock_501873856-130x73.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、令和8年度の地籍整備事業費補助を配分、総額37億円規模で配分決定",
+      "link": "https://news.build-app.jp/article/40400/",
+      "description": "国土交通省は令和8年4月、令和8年度における予算配分の概要を公表しました。今回の配分の中心となるのは「社会資本整備円滑化地籍整備事業費補助」......",
+      "publishedDate": "Sun, 03 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/27388410_m-130x87.jpg",
       "language": "ja"
     },
     {
@@ -282,16 +282,6 @@
       "language": "ja"
     },
     {
-      "title": "国土交通省、令和6年度の建設工事施工統計を公表、完成工事高は約155兆円に増加",
-      "link": "https://news.build-app.jp/article/40397/",
-      "description": "国土交通省は令和8年4月14日、「建設工事施工統計調査報告（令和６年度実績）」を公表しました。令和６年度に建設工事の実績があった業者数は38......",
-      "publishedDate": "Fri, 01 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/33648442_m-130x98.jpg",
-      "language": "ja"
-    },
-    {
       "title": "大和ハウス工業、東京・東雲に都市型物流施設竣工、ヤマト運輸が入居し統合拠点に",
       "link": "https://news.build-app.jp/article/40410/",
       "description": "大和ハウス工業株式会社（本社：大阪市、代表取締役社長：大友浩嗣）は2026年4月6日、東京都江東区において大型マルチテナント型物流施設「DP......",
@@ -299,6 +289,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/34152738_l-130x98.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、令和6年度の建設工事施工統計を公表、完成工事高は約155兆円に増加",
+      "link": "https://news.build-app.jp/article/40397/",
+      "description": "国土交通省は令和8年4月14日、「建設工事施工統計調査報告（令和６年度実績）」を公表しました。令和６年度に建設工事の実績があった業者数は38......",
+      "publishedDate": "Fri, 01 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/33648442_m-130x98.jpg",
       "language": "ja"
     }
   ]
