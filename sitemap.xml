@@ -32,22 +32,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- BIMニュース -->
-  <url>
-    <loc>https://28tools.com/news.html</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- AIニュース -->
-  <url>
-    <loc>https://28tools.com/ai-news.html</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- マニュアル - 符号ON/OFF -->
   <url>
     <loc>https://28tools.com/manual/grid-bubble.html</loc>
