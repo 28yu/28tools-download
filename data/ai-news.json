@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-06T04:35:13.486836",
+  "lastUpdated": "2026-05-07T04:35:46.535625",
   "articles": [
     {
       "title": "Where the goblins came from",
@@ -42,7 +42,7 @@
       "publishedDate": "Wed, 29 Apr 2026 04:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/64zhbS4FYJIaJ2TXQb6ztp/a538eb06a6e62b8964de2bf6d5a2e8a3/Cybersecurity_in_the_Intelligence_Age.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -101,6 +101,61 @@
       "language": "en"
     },
     {
+      "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+      "titleJa": "vLLM V0 ～ V1: RL での修正前の正確性",
+      "link": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+      "description": "...",
+      "publishedDate": "Wed, 06 May 2026 19:06:55 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/correctness-before-corrections.png",
+      "language": "en"
+    },
+    {
+      "title": "5 gardening tips you can try right in Search",
+      "titleJa": "検索からすぐに試せる 5 つのガーデニングのヒント",
+      "link": "https://blog.google/products-and-platforms/products/search/gardening-tips/",
+      "description": "An abstract background featuring soft, stippled illustrations of flowers and a butterfly in a bright palette of blue, green, and red. In the center of the image is a white circle containing a magnifyi...",
+      "publishedDate": "Wed, 06 May 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/01-Google_Gardening_Header.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "ChatGPTで議事録作成を効率化！連携の文字起こしツールや便利なプロンプトを完全解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/chatgpt-tool-transcription/",
+      "description": "会議後の議事録作成に時間を奪われてしまい、早く終わらせたいと感じているのではないでしょうか？ChatGPTを活用すれば、文字起こしデータから要点やタスクをすばやく整理し、議事録作成を効率化できます。 この記事では、Cha [...]...",
+      "publishedDate": "Wed, 06 May 2026 12:42:05 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-tool-transcription_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "The Download: seafloor science and military chatbots",
+      "titleJa": "ダウンロード: 海底科学および軍事チャットボット",
+      "link": "https://www.technologyreview.com/2026/05/06/1136917/the-download-seafloor-science-military-ai-chatbots/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Inexpensive seafloor-hopping submersibles could st...",
+      "publishedDate": "Wed, 06 May 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/Tiger-Shark-with-biolog-package-M_Y-Sharkwater-2019-edited-1.jpg",
+      "language": "en"
+    },
+    {
+      "title": "Agent iとは？LINEヤフーのAIエージェントの特徴・使い方・できることを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/agent-i/",
+      "description": "Agent iは、LINEヤフーが提供を開始したAIエージェント型Webサービスです。LINEやYahoo! JAPANから利用でき、買い物やおでかけの相談、情報整理などをサポートします。 将来的には、予約や日程調整まで [...]...",
+      "publishedDate": "Wed, 06 May 2026 07:42:57 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Agent-i_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "生成AIのAPIとは？業務効率を高める使い方からできること、活用事例を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/api-ai/",
@@ -110,6 +165,61 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/API-AI_2605-1024x576.webp",
       "language": "ja"
+    },
+    {
+      "title": "Introducing ChatGPT Futures: Class of 2026",
+      "titleJa": "ChatGPT フューチャーのご紹介: 2026 年卒業生",
+      "link": "https://openai.com/index/introducing-chatgpt-futures-class-of-2026",
+      "description": "Meet the ChatGPT Futures Class of 2026—26 student innovators using AI to build, research, and drive real-world impact. Discover how this generation is redefining learning, creativity, and opportunity ...",
+      "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Singular Bank helps bankers move fast with ChatGPT and Codex",
+      "titleJa": "Singular Bank は、ChatGPT と Codex を使用して銀行員の迅速な行動を支援します",
+      "link": "https://openai.com/index/singular-bank",
+      "description": "Singular Bank built Singularity, an internal assistant using ChatGPT and Codex to help bankers save 60–90 minutes daily on meeting prep, portfolio analysis, and follow-up....",
+      "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Uber uses OpenAI to help people earn smarter and book faster",
+      "titleJa": "Uber は OpenAI を使用して人々がより賢く稼ぎ、より早く予約できるように支援します",
+      "link": "https://openai.com/index/uber",
+      "description": "Uber uses OpenAI to power AI assistants and voice features that help drivers earn smarter and riders book faster across a global real-time marketplace....",
+      "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "How frontier enterprises are building an AI advantage",
+      "titleJa": "フロンティア企業が AI の優位性をどのように構築しているか",
+      "link": "https://openai.com/index/introducing-b2b-signals",
+      "description": "OpenAI’s B2B Signals research shows how frontier enterprises deepen AI adoption, scale Codex-powered agentic workflows, and build durable competitive advantage....",
+      "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Adding Benchmaxxer Repellant to the Open ASR Leaderboard",
+      "titleJa": "Benchmaxxer 忌避剤をオープン ASR リーダーボードに追加",
+      "link": "https://huggingface.co/blog/open-asr-leaderboard-private-data",
+      "description": "...",
+      "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/open-asr-leaderboard-private-data/thumbnail.png",
+      "language": "en"
     },
     {
       "title": "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try",
@@ -178,17 +288,6 @@
       "language": "ja"
     },
     {
-      "title": "OpenAI models, Codex, and Managed Agents come to AWS",
-      "titleJa": "OpenAI モデル、Codex、およびマネージド エージェントが AWS に登場",
-      "link": "https://openai.com/index/openai-on-aws",
-      "description": "OpenAI GPT models, Codex, and Managed Agents are now available on AWS, enabling enterprises to build secure AI in their AWS environments....",
-      "publishedDate": "Tue, 28 Apr 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "Our commitment to community safety",
       "titleJa": "地域の安全に対する私たちの取り組み",
       "link": "https://openai.com/index/our-commitment-to-community-safety",
@@ -196,7 +295,7 @@
       "publishedDate": "Tue, 28 Apr 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/4LxnvjduXTJ8PvsFyOinqE/cd764864719bfa914c88e34d6e9f1002/Frame-1.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -233,17 +332,6 @@
       "language": "en"
     },
     {
-      "title": "Turn your best AI prompts into one-click tools in Chrome",
-      "titleJa": "最高の AI プロンプトを Chrome のワンクリック ツールに変える",
-      "link": "https://blog.google/products-and-platforms/products/chrome/skills-in-chrome/",
-      "description": "Video showing Skills in Chrome...",
-      "publishedDate": "Tue, 14 Apr 2026 17:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GoogleChrome_RR_Skills_KeywordH.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
       "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
       "titleJa": "Google は、350 万ドルの Future Vision 映画コンペティションで XPRIZE および Range Media Partners と提携しています。",
       "link": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/",
@@ -277,21 +365,32 @@
       "language": "en"
     },
     {
-      "title": "GPT-5.5 Instant System Card",
-      "titleJa": "GPT-5.5 インスタント システム カード",
-      "link": "https://openai.com/index/gpt-5-5-instant-system-card",
-      "description": "...",
-      "publishedDate": "Tue, 05 May 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/Aj1UBJC1Kpt5IYhqrwOn4/0b039f2804579e9bbe42a67f8316a5c0/System_Card_16x9.jpg?w=1600&amp;h=900&amp;fit=fill",
-      "language": "en"
-    },
-    {
       "title": "GPT-5.5 Instant: smarter, clearer, and more personalized",
       "titleJa": "GPT-5.5 Instant: よりスマート、よりクリア、よりパーソナライズされた",
       "link": "https://openai.com/index/gpt-5-5-instant",
       "description": "GPT-5.5 Instant updates ChatGPT’s default model with smarter, more accurate answers, reduced hallucinations, and improved personalization controls....",
+      "publishedDate": "Tue, 05 May 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Unlocking large scale AI training networks with MRC (Multipath Reliable Connection)",
+      "titleJa": "MRC (Multipath Reliable Connection) による大規模 AI トレーニング ネットワークのロックを解除",
+      "link": "https://openai.com/index/mrc-supercomputer-networking",
+      "description": "OpenAI introduces MRC (Multipath Reliable Connection), a new supercomputer networking protocol released via OCP to improve resilience and performance in large-scale AI training clusters....",
+      "publishedDate": "Tue, 05 May 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "GPT-5.5 Instant System Card",
+      "titleJa": "GPT-5.5 インスタント システム カード",
+      "link": "https://openai.com/index/gpt-5-5-instant-system-card",
+      "description": "...",
       "publishedDate": "Tue, 05 May 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -339,7 +438,7 @@
       "publishedDate": "Tue, 05 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/7BFuH170Tk8pxf9XMjXE48/253f0f50015a47b3a94a42c57c5bd3b9/SEO-ChatGPT-Ads.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -365,83 +464,6 @@
       "language": "ja"
     },
     {
-      "title": "Introducing Advanced Account Security",
-      "titleJa": "高度なアカウント セキュリティの導入",
-      "link": "https://openai.com/index/advanced-account-security",
-      "description": "Introducing Advanced Account Security: phishing-resistant login, stronger recovery, and enhanced protections to safeguard sensitive data and prevent account takeover....",
-      "publishedDate": "Thu, 30 Apr 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/33E6MiPrFaTJmxUV9YlSZ3/853564fb6503980552068250c1e1de24/OG-Advanced-Account-Security.png?w=1600&amp;h=900&amp;fit=fill",
-      "language": "en"
-    },
-    {
-      "title": "Here’s how our TPUs power increasingly demanding AI workloads.",
-      "titleJa": "当社の TPU がどのようにして、ますます要求の厳しい AI ワークロードを強化するのかを説明します。",
-      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/",
-      "description": "Learn how Google’s TPUs power increasingly demanding AI workloads with this new video....",
-      "publishedDate": "Thu, 23 Apr 2026 12:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/What_is_a_TPU_social.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Elevating Austria: Google invests in its first data center in the Alps.",
-      "titleJa": "オーストリアの高揚: Google はアルプスにある同社初のデータセンターに投資します。",
-      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-data-center-austria/",
-      "description": "Aerial image of the data center...",
-      "publishedDate": "Thu, 23 Apr 2026 09:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Kronstorf_Data_Center_1.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "How to Use Transformers.js in a Chrome Extension",
-      "titleJa": "Chrome 拡張機能で Transformers.js を使用する方法",
-      "link": "https://huggingface.co/blog/transformersjs-chrome-extension",
-      "description": "...",
-      "publishedDate": "Thu, 23 Apr 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/transformersjs-chrome-extension/thumbnail.jpg",
-      "language": "en"
-    },
-    {
-      "title": "A new way to explore the web with AI Mode in Chrome",
-      "titleJa": "Chrome の AI モードを使用してウェブを探索する新しい方法",
-      "link": "https://blog.google/products-and-platforms/products/search/ai-mode-chrome/",
-      "description": "AI Mode in Chrome...",
-      "publishedDate": "Thu, 16 Apr 2026 17:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_Mode_in_Chrome_-_Blog_header.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "New ways to create personalized images in the Gemini app",
-      "titleJa": "Gemini アプリでパーソナライズされた画像を作成する新しい方法",
-      "link": "https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana/",
-      "description": "Example images made with Personal Intelligence...",
-      "publishedDate": "Thu, 16 Apr 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_post_header.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents",
-      "titleJa": "Ecom-RLVE: 電子商取引会話エージェント向けの適応型検証可能環境",
-      "link": "https://huggingface.co/blog/ecom-rlve",
-      "description": "...",
-      "publishedDate": "Thu, 16 Apr 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/ecom-rlve/thumbnail.png",
-      "language": "en"
-    },
-    {
       "title": "生成AIを学ぶならセミナーがおすすめ！時代の波に乗り遅れるないセミナーの選び方と注意点を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/generative-ai-seminar",
@@ -461,28 +483,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-Agent-Skills_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Claude Code vs Codexで比較】どちらのAIコーディングエージェントを選ぶべきか解説！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/claude-code-vs-codex/",
-      "description": "Claude CodeとCodexはどちらもAIコーディングエージェントですが、「どっちを使えばいいの？」とお悩みの方は多いのではないでしょうか？ 結論、設計から実装までを一貫してAIエージェントに任せたい方はClaud [...]...",
-      "publishedDate": "Sat, 02 May 2026 12:34:44 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-code-vs-codex_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Claude Security】AIがコードの脆弱性を自動で検出・修正！Anthropicのセキュリティツールを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-security/",
-      "description": "2026年5月1日、Anthropicはコードベースの脆弱性を検出し、修正パッチまで提案するセキュリティツール「Claude Security」のパブリックベータ版を公開しました！ 2026年はAIサイバーセキュリティの [...]...",
-      "publishedDate": "Sat, 02 May 2026 12:01:53 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Security-1024x576.webp",
       "language": "ja"
     },
     {
@@ -549,6 +549,17 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/2_1031_1200x628.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "AWS、攻撃を受けた中東（UAE）リージョンの復旧には数カ月かかると。状況を約2カ月ぶりに報告",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/awsuae2.html",
+      "description": "Amazon Web Services（AWS）は、米国とイスラエルによるイランへの攻撃に端を発した紛争により深刻な被害を受けた中東（アラブ首長国連邦 UAE）リージョン（ME-CENTRAL-1）の状況を、約2カ月振りに報告しました。 そ......",
+      "publishedDate": "2026-05-06T15:19:06Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/aws-middleeaset-region-conflict20260506.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/awsserviceupdate020604.png",
-      "language": "ja"
-    },
-    {
-      "title": "Bun、コマンドラインからヘッドレスブラウザの操作を行える新機能「Headless Browser Automation」搭載",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/bunheadless_brwoser_automation.html",
-      "description": "オープンソースで開発されているJavaScriptランタイムの「Bun」の最新版となる「Bun v1.3.12」で、コマンドラインからヘッドレスブラウザの操作を行える新機能が実装されました。BunのAPIを呼び出して利用することも可能です。......",
-      "publishedDate": "2026-04-12T15:32:58Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/bun-headlessbrowserautomation01.jpg",
       "language": "ja"
     }
   ]
