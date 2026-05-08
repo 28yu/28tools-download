@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-07T02:03:17.979995",
+  "lastUpdated": "2026-05-08T02:10:15.083717",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -62,16 +62,6 @@
       "language": "ja"
     },
     {
-      "title": "竹中工務店、鉄骨梁の耐火被覆技術で3時間耐火の大臣認定取得を発表、木あらわし空間の実現へ",
-      "link": "https://news.build-app.jp/article/40385/",
-      "description": "2026年4月14日、株式会社竹中工務店は、木材を使って鉄骨梁の耐火性能を高める技術「KiPLUS® TAIKA for BEAM」において......",
-      "publishedDate": "Thu, 30 Apr 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33965467_s-130x73.jpg",
-      "language": "ja"
-    },
-    {
       "title": "buildingSMART International Appoints Aidan Mercer as Managing Director",
       "link": "https://www.buildingsmart.org/buildingsmart-international-appoints-aidan-mercer-as-managing-director/",
       "description": "London, U.K. – April 30th, 2026 — The Board of buildingSMART International (bSI) is pleased to announce the appointment of Aidan Mercer as Managing Director (MD), effective 1 May 2026.... The post bui...",
@@ -110,6 +100,26 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "システム建築とは？工事関係者向けに在来工法との違いと施工上の注意点を解説",
+      "link": "https://news.build-app.jp/article/40450/",
+      "description": "工場や倉庫の建設で、システム建築はよく選ばれる工法です。短工期やコスト削減の文脈で使われることが多い一方で、実際の現場では「どこまでが標準仕......",
+      "publishedDate": "Thu, 07 May 2026 23:18:09 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/27375202_m-130x73.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Autodesk、BIM ソフトウェア最新版「Revit 2027」を発表",
+      "link": "https://news.build-app.jp/article/40422/",
+      "description": "米国 Autodesk 社（本社：カリフォルニア州／プレジデント兼 CEO：アンドリュー・アナグノスト、以下 Autodesk）は、建築・エ......",
+      "publishedDate": "Thu, 07 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/06/1OuYEyS3UA1hSiU1654610254_1654610274-130x82.jpg",
+      "language": "ja"
     },
     {
       "title": "人手削減・燃費30%減──清水建設「Smart Dozer」が変える建設現場",
@@ -272,13 +282,13 @@
       "language": "en"
     },
     {
-      "title": "竹中工務店、耐火集成木材燃エンウッド柱でSuMPO EPD認証取得、1・2時間耐火仕様対象",
-      "link": "https://news.build-app.jp/article/40387/",
-      "description": "竹中工務店（社長：丁野成人）は、同社が開発・製造する耐火集成木材「燃エンウッド」シリーズについて、柱の1時間耐火仕様および2時間耐火仕様にお......",
+      "title": "国土交通省、令和6年度の建設工事施工統計を公表、完成工事高は約155兆円に増加",
+      "link": "https://news.build-app.jp/article/40397/",
+      "description": "国土交通省は令和8年4月14日、「建設工事施工統計調査報告（令和６年度実績）」を公表しました。令和６年度に建設工事の実績があった業者数は38......",
       "publishedDate": "Fri, 01 May 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/23398670_m-130x98.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/33648442_m-130x98.jpg",
       "language": "ja"
     },
     {
@@ -289,16 +299,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/34152738_l-130x98.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、令和6年度の建設工事施工統計を公表、完成工事高は約155兆円に増加",
-      "link": "https://news.build-app.jp/article/40397/",
-      "description": "国土交通省は令和8年4月14日、「建設工事施工統計調査報告（令和６年度実績）」を公表しました。令和６年度に建設工事の実績があった業者数は38......",
-      "publishedDate": "Fri, 01 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/33648442_m-130x98.jpg",
       "language": "ja"
     }
   ]
