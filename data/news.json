@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-08T02:10:15.083717",
+  "lastUpdated": "2026-05-09T02:03:54.035330",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -12,16 +12,6 @@
       "language": "en"
     },
     {
-      "title": "鋼橋CIMシステム「CIM-GIRDER」がNETIS推奨技術に選定、橋梁分野で初",
-      "link": "https://news.build-app.jp/article/40352/",
-      "description": "オフィスケイワン株式会社（本社：大阪市西区、代表取締役：保田敬一）は、当社が提供する鋼橋CIMシステム「CIM-GIRDER」が、国土交通省......",
-      "publishedDate": "Wed, 06 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2021/12/CAdobeStock_276451224-130x63.jpeg",
-      "language": "ja"
-    },
-    {
       "title": "イスタンブール新空港が示すデジタル建設の臨界点｜3万人が仮想空間で協働した空港",
       "link": "https://news.build-app.jp/article/40021/",
       "description": "わずか42ヶ月で世界最大級の空港を建設するという無謀とも思える計画。それを可能にしたのは、建設業界の常識を覆すデジタル戦略だった。 2018......",
@@ -29,6 +19,26 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/20260507_hirayama-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "市街化調整区域で建築はできる？｜許可条件・建てられる家・失敗例まで解説",
+      "link": "https://news.build-app.jp/article/40488/",
+      "description": "市街化調整区域の土地を見つけたものの、「本当に家を建てられるのかわからない」と不安を感じていないでしょうか。 価格が安いため魅力的に見える一......",
+      "publishedDate": "Wed, 06 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/cf63bb9d463b82c4c5eab55a977ff401-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "鋼橋CIMシステム「CIM-GIRDER」がNETIS推奨技術に選定、橋梁分野で初",
+      "link": "https://news.build-app.jp/article/40352/",
+      "description": "オフィスケイワン株式会社（本社：大阪市西区、代表取締役：保田敬一）は、当社が提供する鋼橋CIMシステム「CIM-GIRDER」が、国土交通省......",
+      "publishedDate": "Wed, 06 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2021/12/CAdobeStock_276451224-130x63.jpeg",
       "language": "ja"
     },
     {
@@ -242,6 +252,16 @@
       "language": "en"
     },
     {
+      "title": "建築営業とは？｜仕事内容・年収・きつい理由と成約率を上げる実務戦略を解説",
+      "link": "https://news.build-app.jp/article/40485/",
+      "description": "建築営業に興味はあるものの、「本当に稼げるのか」「きついと聞くけど実際どうなのか」と迷っていないでしょうか。実際、この仕事は契約単価が高いぶ......",
+      "publishedDate": "Mon, 04 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/015eb0bf32228da205e49a80dc07b3b0-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
       "link": "https://www.buildingsmart.org/buildingsmart-brazil-has-been-formally-approved-as-a-full-chapter/",
       "description": "London, U.K. – March 27th, 2026 — buildingSMART International (bSI) is pleased to announce that buildingSMART Brazil has been formally approved by the Board to become a Full Chapter, effective March.....",
@@ -280,26 +300,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "国土交通省、令和6年度の建設工事施工統計を公表、完成工事高は約155兆円に増加",
-      "link": "https://news.build-app.jp/article/40397/",
-      "description": "国土交通省は令和8年4月14日、「建設工事施工統計調査報告（令和６年度実績）」を公表しました。令和６年度に建設工事の実績があった業者数は38......",
-      "publishedDate": "Fri, 01 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/33648442_m-130x98.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大和ハウス工業、東京・東雲に都市型物流施設竣工、ヤマト運輸が入居し統合拠点に",
-      "link": "https://news.build-app.jp/article/40410/",
-      "description": "大和ハウス工業株式会社（本社：大阪市、代表取締役社長：大友浩嗣）は2026年4月6日、東京都江東区において大型マルチテナント型物流施設「DP......",
-      "publishedDate": "Fri, 01 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/34152738_l-130x98.jpg",
-      "language": "ja"
     }
   ]
 }
