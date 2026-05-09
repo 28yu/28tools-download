@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-08T04:17:33.360520",
+  "lastUpdated": "2026-05-09T04:24:15.529434",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -32,39 +32,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Were_launching_two_TPUs_social.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
-      "titleJa": "Gemini 3.1 Flash TTS: 次世代の表現力豊かな AI スピーチ",
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/",
-      "description": "Gemini logo next to the text \"3.1 Flash TTS\", all over colored dots...",
-      "publishedDate": "Wed, 15 Apr 2026 15:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3.1-flash-tts_blog_keywo.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Inside VAKRA: Reasoning, Tool Use, and Failure Modes of Agents",
-      "titleJa": "VAKRA の内部: エージェントの推論、ツールの使用、障害モード",
-      "link": "https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis",
-      "description": "...",
-      "publishedDate": "Wed, 15 Apr 2026 12:07:25 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/677629b4931b3b2eb8d5820a/aheSsLHG7bQqr_2b8A6cS.png",
-      "language": "en"
-    },
-    {
-      "title": "Meet HoloTab by HCompany. Your AI browser companion.",
-      "titleJa": "HCompany の HoloTab をご紹介します。 AI ブラウザーの相棒。",
-      "link": "https://huggingface.co/blog/Hcompany/holotab",
-      "description": "...",
-      "publishedDate": "Wed, 15 Apr 2026 09:25:20 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Hcompany/holotab.png",
       "language": "en"
     },
     {
@@ -112,6 +79,17 @@
       "language": "en"
     },
     {
+      "title": "How ChatGPT learns about the world while protecting privacy",
+      "titleJa": "ChatGPT がプライバシーを保護しながら世界について学ぶ方法",
+      "link": "https://openai.com/index/how-chatgpt-protects-privacy",
+      "description": "Learn how ChatGPT safeguards your privacy, reduces personal data in training, and gives you control over whether your conversations improve AI models....",
+      "publishedDate": "Wed, 06 May 2026 08:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "Agent iとは？LINEヤフーのAIエージェントの特徴・使い方・できることを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/agent-i/",
@@ -134,10 +112,10 @@
       "language": "ja"
     },
     {
-      "title": "Introducing ChatGPT Futures: Class of 2026",
-      "titleJa": "ChatGPT フューチャーのご紹介: 2026 年卒業生",
-      "link": "https://openai.com/index/introducing-chatgpt-futures-class-of-2026",
-      "description": "Meet the ChatGPT Futures Class of 2026—26 student innovators using AI to build, research, and drive real-world impact. Discover how this generation is redefining learning, creativity, and opportunity ...",
+      "title": "Uber uses OpenAI to help people earn smarter and book faster",
+      "titleJa": "Uber は OpenAI を使用して人々がより賢く稼ぎ、より早く予約できるように支援します",
+      "link": "https://openai.com/index/uber",
+      "description": "Uber uses OpenAI to power AI assistants and voice features that help drivers earn smarter and riders book faster across a global real-time marketplace....",
       "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -156,10 +134,10 @@
       "language": "en"
     },
     {
-      "title": "Singular Bank helps bankers move fast with ChatGPT and Codex",
-      "titleJa": "Singular Bank は、ChatGPT と Codex を使用して銀行員の迅速な行動を支援します",
-      "link": "https://openai.com/index/singular-bank",
-      "description": "Singular Bank built Singularity, an internal assistant using ChatGPT and Codex to help bankers save 60–90 minutes daily on meeting prep, portfolio analysis, and follow-up....",
+      "title": "Introducing ChatGPT Futures: Class of 2026",
+      "titleJa": "ChatGPT フューチャーの紹介: 2026 年卒業生",
+      "link": "https://openai.com/index/introducing-chatgpt-futures-class-of-2026",
+      "description": "Meet the ChatGPT Futures Class of 2026—26 student innovators using AI to build, research, and drive real-world impact. Discover how this generation is redefining learning, creativity, and opportunity ...",
       "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -167,10 +145,10 @@
       "language": "en"
     },
     {
-      "title": "Uber uses OpenAI to help people earn smarter and book faster",
-      "titleJa": "Uber は OpenAI を使用して人々がより賢く稼ぎ、より早く予約できるように支援します",
-      "link": "https://openai.com/index/uber",
-      "description": "Uber uses OpenAI to power AI assistants and voice features that help drivers earn smarter and riders book faster across a global real-time marketplace....",
+      "title": "Singular Bank helps bankers move fast with ChatGPT and Codex",
+      "titleJa": "Singular Bank は、ChatGPT と Codex を使用して銀行員の迅速な行動を支援します",
+      "link": "https://openai.com/index/singular-bank",
+      "description": "Singular Bank built Singularity, an internal assistant using ChatGPT and Codex to help bankers save 60–90 minutes daily on meeting prep, portfolio analysis, and follow-up....",
       "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -255,17 +233,6 @@
       "language": "en"
     },
     {
-      "title": "音声認識で業務はどう変わる？ビジネスでの活用事例・注意点をわかりやすく解説！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/speech-recognition/",
-      "description": "音声認識AIは、人の声を解析してテキスト化や要約・翻訳・対話までこなす技術として、実務へ広がっています。実際に、議事録作成時間を75%削減した企業の事例もあります。 とはいえ「精度はどこまで信頼できる？」「機密情報の扱い [...]...",
-      "publishedDate": "Tue, 05 May 2026 12:13:19 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Speech-recognition_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "The Download: inside the Musk v. Altman trial, and AI for democracy",
       "titleJa": "ダウンロード: マスク対アルトマン裁判の内部と民主主義のための AI",
       "link": "https://www.technologyreview.com/2026/05/05/1136848/the-download-musk-openai-altman-trial-ai-democracy/",
@@ -278,13 +245,13 @@
     },
     {
       "title": "Unlocking large scale AI training networks with MRC (Multipath Reliable Connection)",
-      "titleJa": "MRC (Multipath Reliable Connection) による大規模 AI トレーニング ネットワークのロックを解除",
+      "titleJa": "MRC (Multipath Reliable Connection) による大規模 AI トレーニング ネットワークのロックを解除する",
       "link": "https://openai.com/index/mrc-supercomputer-networking",
       "description": "OpenAI introduces MRC (Multipath Reliable Connection), a new supercomputer networking protocol released via OCP to improve resilience and performance in large-scale AI training clusters....",
       "publishedDate": "Tue, 05 May 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/NSCNpuBUrt6RGqH5vxTT5/424808cad42085d2f79adcb86566ae04/SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -310,17 +277,6 @@
       "language": "en"
     },
     {
-      "title": "生成AIでレポート作成を助ける！具体的な手順、バレない対策、おすすめツールを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/generative-ai-report-creation/",
-      "description": "学校でレポートの提出を求められて苦労した経験はありませんか？ レポート作成は集めた情報を整理し、論理的かつわかりやすく展開する必要があるため、時間と労力がかかる大変な作業です。そこで、今回は情報収集や文章の作成に役立つA [...]...",
-      "publishedDate": "Tue, 05 May 2026 09:05:19 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/generative-ai-report-creation_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "A blueprint for using AI to strengthen democracy",
       "titleJa": "AI を活用して民主主義を強化するための青写真",
       "link": "https://www.technologyreview.com/2026/05/05/1136843/ai-democracy-blueprint/",
@@ -329,28 +285,6 @@
       "source": "MIT Technology Review",
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/260430_AIdemocracy3.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Runway Gen-4とは？実務で役立つプロンプトや活用方法を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/runway-gen-4/",
-      "description": "AI動画生成で、被写体の特徴がシーンごとに変わる問題に悩む方はいるのではないでしょうか？Runway Gen-4は、見た目を統一する一貫性の性能に優れています。1枚の参照画像があれば、照明や角度が変わっても破綻しない高品 [...]...",
-      "publishedDate": "Tue, 05 May 2026 03:12:08 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/runway-gen-4_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "New ways to buy ChatGPT ads",
-      "titleJa": "ChatGPT 広告を購入する新しい方法",
-      "link": "https://openai.com/index/new-ways-to-buy-chatgpt-ads",
-      "description": "OpenAI expands ChatGPT ads with a beta self-serve Ads Manager, CPC bidding, and enhanced measurement tools—built to protect privacy and keep conversations separate from ads....",
-      "publishedDate": "Tue, 05 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -395,6 +329,39 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_Mode_in_Chrome_-_Blog_header.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "New ways to create personalized images in the Gemini app",
+      "titleJa": "Gemini アプリでパーソナライズされた画像を作成する新しい方法",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana/",
+      "description": "Example images made with Personal Intelligence...",
+      "publishedDate": "Thu, 16 Apr 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_post_header.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents",
+      "titleJa": "Ecom-RLVE: 電子商取引会話エージェント向けの適応型検証可能環境",
+      "link": "https://huggingface.co/blog/ecom-rlve",
+      "description": "...",
+      "publishedDate": "Thu, 16 Apr 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/ecom-rlve/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "The PR you would have opened yourself",
+      "titleJa": "自分で開設したはずの PR",
+      "link": "https://huggingface.co/blog/transformers-to-mlx",
+      "description": "...",
+      "publishedDate": "Thu, 16 Apr 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/transformers-to-mlx/thumbnail.jpg",
       "language": "en"
     },
     {
@@ -472,6 +439,39 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/requirementanalysis.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Azure Portalとは？クラウドリソースを一元管理できるツール！できること・使い方・料金の仕組みを解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/azure-portal/",
+      "description": "クラウドサービスの導入が進む中、管理作業の効率化が大きな課題となっています。そんな悩みを解決してくれるのがMicrosoftのAzure Portalです。 例えば、これまで別々の画面で確認していた複数のサービスを、Az [...]...",
+      "publishedDate": "Fri, 08 May 2026 11:22:07 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/azure-portal_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTを用いた犯罪・不正利用の実態とは？具体的な手口と被害を防ぐ対策を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/chatgpt-abuse-crime",
+      "description": "ChatGPTの普及とともに、犯罪に悪用されるリスクも増えています。日本語を話せないはずの人が日本人女性になりすまして、流暢な日本語のメッセージを送ったり、企業や団体を装って、偽サイトへのアクセスを誘導する文章を送ったり [...]...",
+      "publishedDate": "Fri, 08 May 2026 10:50:03 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-abuse-crime_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Grok Connectorsとは？GrokのAI連携機能の特徴・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/grok-connectors/",
+      "description": "2026年5月、xAIからGrokの新機能「Connectors」が発表されました。 今回登場した「Grok Connectors」は、メール・カレンダー・クラウドストレージ・プロジェクト管理ツールなど、日常的に使うアプ [...]...",
+      "publishedDate": "Fri, 08 May 2026 05:41:31 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/grok-connectors_2605-1024x576.webp",
       "language": "ja"
     },
     {
