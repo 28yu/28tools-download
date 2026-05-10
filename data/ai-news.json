@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-09T04:24:15.529434",
+  "lastUpdated": "2026-05-10T04:45:07.030975",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -80,7 +80,7 @@
     },
     {
       "title": "How ChatGPT learns about the world while protecting privacy",
-      "titleJa": "ChatGPT がプライバシーを保護しながら世界について学ぶ方法",
+      "titleJa": "ChatGPT がプライバシーを保護しながら世界について学習する方法",
       "link": "https://openai.com/index/how-chatgpt-protects-privacy",
       "description": "Learn how ChatGPT safeguards your privacy, reduces personal data in training, and gives you control over whether your conversations improve AI models....",
       "publishedDate": "Wed, 06 May 2026 08:00:00 GMT",
@@ -113,7 +113,7 @@
     },
     {
       "title": "Uber uses OpenAI to help people earn smarter and book faster",
-      "titleJa": "Uber は OpenAI を使用して人々がより賢く稼ぎ、より早く予約できるように支援します",
+      "titleJa": "Uber は OpenAI を使用して、人々がより賢く稼ぎ、より早く予約できるように支援します",
       "link": "https://openai.com/index/uber",
       "description": "Uber uses OpenAI to power AI assistants and voice features that help drivers earn smarter and riders book faster across a global real-time marketplace....",
       "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
@@ -135,7 +135,7 @@
     },
     {
       "title": "Introducing ChatGPT Futures: Class of 2026",
-      "titleJa": "ChatGPT フューチャーの紹介: 2026 年卒業生",
+      "titleJa": "ChatGPT フューチャーのご紹介: 2026 年卒業生",
       "link": "https://openai.com/index/introducing-chatgpt-futures-class-of-2026",
       "description": "Meet the ChatGPT Futures Class of 2026—26 student innovators using AI to build, research, and drive real-world impact. Discover how this generation is redefining learning, creativity, and opportunity ...",
       "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
@@ -442,6 +442,39 @@
       "language": "ja"
     },
     {
+      "title": "UAT（受け入れテスト）とは？目的・進め方・失敗しないポイントをわかりやすく解説【AI活用も】",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/uat-user-acceptance-testing/",
+      "description": "システム開発の最終局面で、「仕様通りだが現場では使いにくい」という致命的なズレを防ぐ工程がUAT（ユーザー受け入れテスト）です。 本記事では、UATの定義や進め方、システムテストとの違いといった基本に加え、近年重要性が増 [...] The post UAT（受け入れテスト）とは？目的・進め方・失敗しないポイントをわかりやすく解説【AI活用も】 first appeared on AIポータルメデ...",
+      "publishedDate": "Thu, 07 May 2026 01:05:34 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/uat.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "アイスマイリー、5/20（水）から3日間「AI World 2026 春 大阪」に出展　ブース予約でAmazonギフト1,500円分プレゼント！",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-world-2026-spring-osaka/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年5月20日（水）～22日（金）にインテックス大阪にて開催される「AI World 2026 春 大阪」にブース出展をします [...] The post アイスマイリー、5/20（水）から3日間「AI World 2026 春 大阪」に出展 ブース予約でAmazonギフト1,500円分プレゼント！ f...",
+      "publishedDate": "Thu, 07 May 2026 01:00:38 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/OGP_EXPO25_AI.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "RFP（提案依頼書）とは？メリットからRFI /RFQとの違い・作成の流れを詳しく解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/rfp-request-for-proposal/",
+      "description": "「ベンダーからの提案が、自社の意図とまったく違った」「開発途中で追加費用が膨らんでしまった」——システム開発やWeb制作の外部委託で、このような手痛い失敗を経験したことはありませんか？ これらのトラブルを未然に防ぎ、自社 [...] The post RFP（提案依頼書）とは？メリットからRFI /RFQとの違い・作成の流れを詳しく解説 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Thu, 07 May 2026 00:59:04 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/rfp.jpg",
+      "language": "ja"
+    },
+    {
       "title": "Azure Portalとは？クラウドリソースを一元管理できるツール！できること・使い方・料金の仕組みを解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/azure-portal/",
@@ -475,28 +508,6 @@
       "language": "ja"
     },
     {
-      "title": "Claudeの料金プランを徹底比較！無料・Pro・Team・Enterpriseの違いと選び方",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-plan/",
-      "description": "AIツールの中でも「自然な日本語」と「高い知能」で圧倒的な支持を得ているClaude。「無料版で十分？」「有料のPro版に上げるメリットは？」「チーム利用の料金は？」といった疑問を抱えていませんか？ 本記事では、Clau [...] The post Claudeの料金プランを徹底比較！無料・Pro・Team・Enterpriseの違いと選び方 first appeared on AIポータルメデ...",
-      "publishedDate": "Fri, 08 May 2026 03:49:55 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/139.png",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Designとは？使い方やFigmaとの違い、活用術を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-design/",
-      "description": "「センスがないから…」「Figmaって難しすぎて…」と、デザイン制作を諦めてきた方に朗報です。 2026年4月17日、Anthropicの実験的プロダクト開発部門「Anthropic Labs」が、テキストで話しかけるだ [...] The post Claude Designとは？使い方やFigmaとの違い、活用術を徹底解説 first appeared on AIポータルメディアAIsmile...",
-      "publishedDate": "Fri, 08 May 2026 03:13:14 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/140.png",
-      "language": "ja"
-    },
-    {
       "title": "【GPT-Realtime-2】GPT-5級の推論で音声AIが進化！リアルタイム音声モデルの性能・料金・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/gpt-realtime-2/",
@@ -505,17 +516,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-Realtime-2-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "ソフトバンクとMODE、資本・業務提携契約を締結。建設や製造現場のデータ活用を高度化",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/softbank-mode-ai-iot/",
-      "description": "ソフトバンクとMODEは、資本・業務提携契約を締結しました。生成AIとIoTを組み合わせ、建設や製造現場のデータ活用の導入と定着を推進します。 このニュースのポイント ソフトバンクとMODEが資本・業務提携契約を締結 ソ [...] The post ソフトバンクとMODE、資本・業務提携契約を締結。建設や製造現場のデータ活用を高度化 first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Fri, 08 May 2026 02:00:16 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/softbank-mode-a.png",
       "language": "ja"
     },
     {
