@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-10T04:45:07.030975",
+  "lastUpdated": "2026-05-11T04:59:34.674818",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -101,19 +101,8 @@
       "language": "ja"
     },
     {
-      "title": "生成AIのAPIとは？業務効率を高める使い方からできること、活用事例を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/api-ai/",
-      "description": "日々の業務でもっと効率を上げたい、新しいサービスを形にしたいと感じることはありませんか？その鍵を握るのが、今注目を集める生成AIです。その中でも、AIの力を自由自在に引き出すための窓口となるAI APIへの関心が、ビジネ [...]...",
-      "publishedDate": "Wed, 06 May 2026 03:29:41 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/API-AI_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Uber uses OpenAI to help people earn smarter and book faster",
-      "titleJa": "Uber は OpenAI を使用して、人々がより賢く稼ぎ、より早く予約できるように支援します",
+      "titleJa": "Uber は OpenAI を使用して人々がより賢く稼ぎ、より早く予約できるように支援します",
       "link": "https://openai.com/index/uber",
       "description": "Uber uses OpenAI to power AI assistants and voice features that help drivers earn smarter and riders book faster across a global real-time marketplace....",
       "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
@@ -398,80 +387,58 @@
       "language": "ja"
     },
     {
-      "title": "国内初となる空港でのヒューマノイドロボット実証実験開始。JALグランドサービスとGMO AI＆ロボティクスが提携",
+      "title": "GitHub Copilotとは？導入前に知っておきたい使い方・料金を徹底解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/jalgs-gmoair-airport-demonstration/",
-      "description": "JALグランドサービスとGMO AI＆ロボティクスは、2026年5月より、国内で初めて空港でのヒューマノイドロボット活用に向けた実証実験を開始します。 このニュースのポイント JALグランドサービスとGMO AI＆ロボテ [...] The post 国内初となる空港でのヒューマノイドロボット実証実験開始。JALグランドサービスとGMO AI＆ロボティクスが提携 first appeared on...",
-      "publishedDate": "Thu, 07 May 2026 03:05:53 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/jalgmoaireye.png",
+      "link": "https://weel.co.jp/media/innovator/github-copilot/",
+      "description": "GitHub Copilotは、コード補完や生成をサポートするAI開発支援ツールです。近年はチャットやAgent機能なども追加され、開発全体を支援するツールへと進化しています。 ただ、「どこまで無料で使えるのか」「どのプ [...]...",
+      "publishedDate": "Mon, 11 May 2026 03:32:31 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/github-copilot_2605-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "Anthropic、Claude Opus 4.7を搭載した新デザインツール「Claude Design」リリース",
+      "title": "Difyの活用事例13選｜業界・目的別の用途と業務効率化の方法を解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/anthropic-claude-design-release/",
-      "description": "Anthropicは、新たなデザインツール「Claude Design」をリリースしました。Claudeと連携して、デザインやプロトタイプなどの多様なビジュアル作品を制作できます。 このニュースのポイント Anthrop [...] The post Anthropic、Claude Opus 4.7を搭載した新デザインツール「Claude Design」リリース first appeared o...",
-      "publishedDate": "Thu, 07 May 2026 03:02:47 +0000",
+      "link": "https://aismiley.co.jp/ai_news/dify-usage-example-13/",
+      "description": "Difyを導入したいものの、具体的な活用場面がイメージできない方も多いでしょう。 本記事では、情報検索から資料作成、営業支援、業務オペレーションまで、Difyを導入して成果を上げた企業の活用事例を紹介します。 本記事を読 [...] The post Difyの活用事例13選｜業界・目的別の用途と業務効率化の方法を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 11 May 2026 01:01:30 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/0428ainewseye.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/Dify-1.png",
       "language": "ja"
     },
     {
-      "title": "LINEヤフー、AIエージェントの新ブランド「Agent i」提供開始。相談に対して最適な選択肢を提案",
+      "title": "職種・部署別AIサービスカオスマップを公開！–導入用途別に整理された164製品を一挙紹介–",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/lineyahoo-agenti-20260420/",
-      "description": "LINEヤフーは、「Yahoo! JAPAN」の「AIアシスタント」と「LINE」の「LINE AI」を統合した、AIエージェントの新ブランド「Agent i」の提供を開始しました。 このニュースのポイント LINEヤフ [...] The post LINEヤフー、AIエージェントの新ブランド「Agent i」提供開始。相談に対して最適な選択肢を提案 first appeared on AIポー...",
-      "publishedDate": "Thu, 07 May 2026 02:53:37 +0000",
+      "link": "https://aismiley.co.jp/ai_news/busyobetu-department-based-ai-chaosmap/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、企業の各部門における業務効率化と生産性向上を支援する決定版「職種・部署別AIサービスカオスマップ」を2026年5月11日（月）に公開 [...] The post 職種・部署別AIサービスカオスマップを公開！–導入用途別に整理された164製品を一挙紹介– first appeared on AIポータルメディア...",
+      "publishedDate": "Mon, 11 May 2026 01:00:20 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/lineyahooagenti.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/syokusyu-bisyobetu2.png",
       "language": "ja"
     },
     {
-      "title": "要件定義とは？進め方・作成項目・失敗しないポイントを解説",
+      "title": "Difyで何ができる？特徴・使い方・活用事例をわかりやすく解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/requirement-analysis-2026/",
-      "description": "システム開発の現場で「要件定義をお願いします」と言われ、何から手を付ければよいか迷った経験はありませんか？ 要件定義は、プロジェクトの成否を分ける最重要工程です。ここが曖昧なまま「ベンダーに丸投げ」してしまうと、開発終盤 [...] The post 要件定義とは？進め方・作成項目・失敗しないポイントを解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 07 May 2026 01:14:06 +0000",
+      "link": "https://aismiley.co.jp/ai_news/dify-feature-usage-example/",
+      "description": "「AIを使って業務を効率化したいけれど、プログラミングの知識がない」「ChatGPTだけでは自社データを活用しきれない」そんな悩みを抱えていませんか。 Difyは、ノーコードでAIアプリケーションを構築できる次世代プラッ [...] The post Difyで何ができる？特徴・使い方・活用事例をわかりやすく解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 11 May 2026 01:00:10 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/requirementanalysis.jpg",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/DifyMain.png",
       "language": "ja"
     },
     {
-      "title": "UAT（受け入れテスト）とは？目的・進め方・失敗しないポイントをわかりやすく解説【AI活用も】",
+      "title": "Dify APIの使い方完全ガイド｜APIキー取得から連携方法まで解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/uat-user-acceptance-testing/",
-      "description": "システム開発の最終局面で、「仕様通りだが現場では使いにくい」という致命的なズレを防ぐ工程がUAT（ユーザー受け入れテスト）です。 本記事では、UATの定義や進め方、システムテストとの違いといった基本に加え、近年重要性が増 [...] The post UAT（受け入れテスト）とは？目的・進め方・失敗しないポイントをわかりやすく解説【AI活用も】 first appeared on AIポータルメデ...",
-      "publishedDate": "Thu, 07 May 2026 01:05:34 +0000",
+      "link": "https://aismiley.co.jp/ai_news/dify-api-gui-slack-ai/",
+      "description": "Difyで便利なAIアプリを作ったものの、「自社サイトやSlackとどう繋げばいいかわからない」「API連携のコードが書けず止まっている」と悩んでいませんか？ Dify APIを使いこなせば、画面上のGUIで作った機能を [...] The post Dify APIの使い方完全ガイド｜APIキー取得から連携方法まで解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 11 May 2026 00:58:35 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/uat.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "アイスマイリー、5/20（水）から3日間「AI World 2026 春 大阪」に出展　ブース予約でAmazonギフト1,500円分プレゼント！",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-world-2026-spring-osaka/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年5月20日（水）～22日（金）にインテックス大阪にて開催される「AI World 2026 春 大阪」にブース出展をします [...] The post アイスマイリー、5/20（水）から3日間「AI World 2026 春 大阪」に出展 ブース予約でAmazonギフト1,500円分プレゼント！ f...",
-      "publishedDate": "Thu, 07 May 2026 01:00:38 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/OGP_EXPO25_AI.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "RFP（提案依頼書）とは？メリットからRFI /RFQとの違い・作成の流れを詳しく解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/rfp-request-for-proposal/",
-      "description": "「ベンダーからの提案が、自社の意図とまったく違った」「開発途中で追加費用が膨らんでしまった」——システム開発やWeb制作の外部委託で、このような手痛い失敗を経験したことはありませんか？ これらのトラブルを未然に防ぎ、自社 [...] The post RFP（提案依頼書）とは？メリットからRFI /RFQとの違い・作成の流れを詳しく解説 first appeared on AIポータルメディアAI...",
-      "publishedDate": "Thu, 07 May 2026 00:59:04 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/rfp.jpg",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/DifyAPI.png",
       "language": "ja"
     },
     {
@@ -508,6 +475,28 @@
       "language": "ja"
     },
     {
+      "title": "Claudeの料金プランを徹底比較！無料・Pro・Team・Enterpriseの違いと選び方",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-plan/",
+      "description": "AIツールの中でも「自然な日本語」と「高い知能」で圧倒的な支持を得ているClaude。「無料版で十分？」「有料のPro版に上げるメリットは？」「チーム利用の料金は？」といった疑問を抱えていませんか？ 本記事では、Clau [...] The post Claudeの料金プランを徹底比較！無料・Pro・Team・Enterpriseの違いと選び方 first appeared on AIポータルメデ...",
+      "publishedDate": "Fri, 08 May 2026 03:49:55 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/139.png",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Designとは？使い方やFigmaとの違い、活用術を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-design/",
+      "description": "「センスがないから…」「Figmaって難しすぎて…」と、デザイン制作を諦めてきた方に朗報です。 2026年4月17日、Anthropicの実験的プロダクト開発部門「Anthropic Labs」が、テキストで話しかけるだ [...] The post Claude Designとは？使い方やFigmaとの違い、活用術を徹底解説 first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Fri, 08 May 2026 03:13:14 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/140.png",
+      "language": "ja"
+    },
+    {
       "title": "【GPT-Realtime-2】GPT-5級の推論で音声AIが進化！リアルタイム音声モデルの性能・料金・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/gpt-realtime-2/",
@@ -516,6 +505,17 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-Realtime-2-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ソフトバンクとMODE、資本・業務提携契約を締結。建設や製造現場のデータ活用を高度化",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/softbank-mode-ai-iot/",
+      "description": "ソフトバンクとMODEは、資本・業務提携契約を締結しました。生成AIとIoTを組み合わせ、建設や製造現場のデータ活用の導入と定着を推進します。 このニュースのポイント ソフトバンクとMODEが資本・業務提携契約を締結 ソ [...] The post ソフトバンクとMODE、資本・業務提携契約を締結。建設や製造現場のデータ活用を高度化 first appeared on AIポータルメディアAIs...",
+      "publishedDate": "Fri, 08 May 2026 02:00:16 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/softbank-mode-a.png",
       "language": "ja"
     },
     {
@@ -549,6 +549,28 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/nttkmeye.png",
+      "language": "ja"
+    },
+    {
+      "title": "NutanixとAWSが語る。既存システムを圧倒的なスピードと低コストでAWSに移行する方法［PR］",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/nutanixawsawspr.html",
+      "description": "ここ最近、オンプレミスにおけるシステム調達の不確実性が高くなっていることは多くのIT関係者が感じていることでしょう。 理由の1つには昨年末からのメモリやSSDの価格高騰および品不足があります。予算面でも納期面でも計画的な調達が明らかに難しく......",
+      "publishedDate": "2026-05-10T15:44:18Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/nutanix-aws-tu202603-02d.png",
+      "language": "ja"
+    },
+    {
+      "title": "企業向けストレージベンダのCEO、半導体部品の調達コストが4倍から10倍に急騰していると説明。製品価格を70％値上げ、今後さらなる値上げも",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/ceo41070.html",
+      "description": "エンタープライズ向けストレージベンダとして知られるEverpure（旧Pure Storage）の会長兼CEOであるチャールズ・ジャンカルロ（Charles Giancarlo)氏は、4月23日付けで公開した同社のブログ「サプライチェーンの......",
+      "publishedDate": "2026-05-10T15:07:24Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/everpure-ceo-crisis.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/flattsec01.png",
-      "language": "ja"
-    },
-    {
-      "title": "マイクロソフト、PostgreSQL/MySQL/SQL Serverなどへの同時接続に対応した「SQL MCP Server」オープンソースで公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/postgresqlmysqlsql_serversql_mcp_server.html",
-      "description": "マイクロソフトは、PostgreSQL、MySQL、SQL Serverを含む複数のデータベースに対応したMCPサーバ「SQL MCP Server」をオープンソースで公開しました。 SQL MCP Serverを利用することで、AIエージ......",
-      "publishedDate": "2026-04-15T15:40:20Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/sqlmcpserver-la01.png",
-      "language": "ja"
-    },
-    {
-      "title": "CloudflareがAIエージェントへの最適化を目指し、全サービスに対応するCLIの開発を表明",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/cloudflareaicli.html",
-      "description": "Cloudflareは、AIエージェントによる利用を最適化するため、同社が提供するすべてのサービスに対応したコマンドラインインターフェイス（CLI）を開発することを明らかにしました。 Stop flying blind with your ......",
-      "publishedDate": "2026-04-15T13:57:48Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/lQulPnch.jpg",
       "language": "ja"
     }
   ]
