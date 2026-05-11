@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-10T02:04:26.991880",
+  "lastUpdated": "2026-05-11T02:13:31.172744",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -10,6 +10,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "鋼橋CIMシステム「CIM-GIRDER」がNETIS推奨技術に選定、橋梁分野で初",
+      "link": "https://news.build-app.jp/article/40352/",
+      "description": "オフィスケイワン株式会社（本社：大阪市西区、代表取締役：保田敬一）は、当社が提供する鋼橋CIMシステム「CIM-GIRDER」が、国土交通省......",
+      "publishedDate": "Wed, 06 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2021/12/CAdobeStock_276451224-130x63.jpeg",
+      "language": "ja"
     },
     {
       "title": "イスタンブール新空港が示すデジタル建設の臨界点｜3万人が仮想空間で協働した空港",
@@ -29,16 +39,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/cf63bb9d463b82c4c5eab55a977ff401-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "鋼橋CIMシステム「CIM-GIRDER」がNETIS推奨技術に選定、橋梁分野で初",
-      "link": "https://news.build-app.jp/article/40352/",
-      "description": "オフィスケイワン株式会社（本社：大阪市西区、代表取締役：保田敬一）は、当社が提供する鋼橋CIMシステム「CIM-GIRDER」が、国土交通省......",
-      "publishedDate": "Wed, 06 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2021/12/CAdobeStock_276451224-130x63.jpeg",
       "language": "ja"
     },
     {
@@ -152,23 +152,43 @@
       "language": "ja"
     },
     {
-      "title": "大成建設、太陽光発電のみで建物運用を実証、蓄電池と水素活用でエネルギー自立確認",
-      "link": "https://news.build-app.jp/article/40392/",
-      "description": "2026年4月16日、大成建設株式会社（社長：相川善郎）は、同社の技術センター「人と空間のラボ（ZEB実証棟）」（横浜市戸塚区）において、太......",
-      "publishedDate": "Sun, 03 May 2026 22:00:00 +0000",
+      "title": "建設業の変革に伴走する｜現場Hubの挑戦（前編）",
+      "link": "https://news.build-app.jp/article/40338/",
+      "description": "工事・メンテナンスの現場では、案件管理や見積り、発注、報告書作成、写真共有、顧客対応を同時に行う必要があります。ところが実務の現場では、情報......",
+      "publishedDate": "Sun, 10 May 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/AdobeStock_501873856-130x73.jpeg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/902_thumbnail_part1-130x82.png",
       "language": "ja"
     },
     {
-      "title": "国土交通省、令和8年度の地籍整備事業費補助を配分、総額37億円規模で配分決定",
-      "link": "https://news.build-app.jp/article/40400/",
-      "description": "国土交通省は令和8年4月、令和8年度における予算配分の概要を公表しました。今回の配分の中心となるのは「社会資本整備円滑化地籍整備事業費補助」......",
-      "publishedDate": "Sun, 03 May 2026 22:00:00 +0000",
+      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第二回)",
+      "link": "https://news.build-app.jp/article/40323/",
+      "description": "建設分野でのAI援用の現在地を追跡している。今回は、建設業の最も重要な生産拠点である建設現場を支援するAIの援用事例を紹介する。 AIが現場......",
+      "publishedDate": "Sun, 10 May 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/27388410_m-130x87.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/ec23754ed105f7f03f0a938099a01b58-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "機器データや施設維持管理情報などの企業のデータ資産をBIMで活用可能に！",
+      "link": "https://news.build-app.jp/article/40424/",
+      "description": "エンタープライズシステム開発、AIデータソリューションを提供し、施設管理クラウド「BIMSTOK」を開発・提供する株式会社アーリーリフレクシ......",
+      "publishedDate": "Sun, 10 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/03/YlGfsNl7G2Lavvy1647909233-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新版】現代建築とは？代表的な建物・設計者・施工会社・建築技術まで解説",
+      "link": "https://news.build-app.jp/article/40493/",
+      "description": "現代建築は、今の社会や暮らしに合わせて設計された建築です。見た目が新しいだけではありません。使いやすさや環境への配慮、耐震性、都市とのつなが......",
+      "publishedDate": "Sun, 10 May 2026 12:16:29 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/4337314_m-130x98.jpg",
       "language": "ja"
     },
     {
@@ -232,16 +252,6 @@
       "language": "ja"
     },
     {
-      "title": "竹中工務店、物流施設の新築工事でCO2固定地盤改良を適用し排出量15％削減",
-      "link": "https://news.build-app.jp/article/40388/",
-      "description": "竹中工務店は2026年4月、鹿島建設・デンカとともに取り組む「CUCO®（クーコ）」コンソーシアムの成果として、福岡県古賀市に建設中の物流施......",
-      "publishedDate": "Sat, 02 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/03/23466231_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
       "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
       "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
@@ -250,16 +260,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "建築営業とは？｜仕事内容・年収・きつい理由と成約率を上げる実務戦略を解説",
-      "link": "https://news.build-app.jp/article/40485/",
-      "description": "建築営業に興味はあるものの、「本当に稼げるのか」「きついと聞くけど実際どうなのか」と迷っていないでしょうか。実際、この仕事は契約単価が高いぶ......",
-      "publishedDate": "Mon, 04 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/015eb0bf32228da205e49a80dc07b3b0-130x82.png",
-      "language": "ja"
     },
     {
       "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
