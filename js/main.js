@@ -732,14 +732,14 @@ function initTranslations() {
             zh: '关于 28 Tools'
         },
         'index-overview-desc-1': {
-            ja: '28 Tools は、BIM・Revit・建築業界の作業効率化を支援する総合プラットフォームです。',
-            en: '28 Tools is a comprehensive platform supporting work efficiency in the BIM, Revit, and architecture industries.',
-            zh: '28 Tools 是支持BIM、Revit和建筑行业工作效率的综合平台。'
+            ja: '28 Tools は、BIM・Revit を活用する建築実務者のための作業支援プラットフォームです。',
+            en: '28 Tools is a work-support platform for architecture professionals who use BIM and Revit.',
+            zh: '28 Tools 是面向使用 BIM 和 Revit 的建筑专业人员的工作支持平台。'
         },
         'index-overview-desc-2': {
-            ja: '無料で使えるアドインツール、ハッチングパターン作成ツール、そして最新の業界ニュースまで、設計者・施工者のニーズに応える多彩なコンテンツを提供しています。',
-            en: 'We provide diverse content that meets the needs of designers and contractors, from free add-in tools and hatching pattern creators to the latest industry news.',
-            zh: '我们提供满足设计师和承包商需求的多样化内容，从免费插件工具、填充图案创建工具到最新的行业新闻。'
+            ja: 'Revit 2021〜2026 全バージョン対応の無料アドインを中心に、ハッチングパターン作成ツール、PDF 比較ツール、BIM・AI 業界ニュースなどを公開。現場で本当に必要な機能だけを、シンプルに使える形で提供します。',
+            en: 'Centered on free add-ins compatible with all Revit versions (2021–2026), we also offer a hatching pattern creator, a PDF comparison tool, and BIM & AI industry news — delivering only what you truly need on site, in a simple, easy-to-use form.',
+            zh: '以兼容 Revit 2021–2026 全版本的免费插件为核心，同时提供填充图案创建工具、PDF 比较工具以及 BIM 与 AI 行业新闻，以简洁易用的方式，只提供现场真正需要的功能。'
         },
         'index-category-addon-desc': {
             ja: 'Revit 2021-2026 対応の無料アドイン。6つの便利機能をインストール不要ですぐに利用できます。',
