@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12T04:36:57.468711",
+  "lastUpdated": "2026-05-13T04:44:56.818632",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -54,50 +54,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/01-Google_Gardening_Header.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "How ChatGPT learns about the world while protecting privacy",
-      "titleJa": "ChatGPT がプライバシーを保護しながら世界について学習する方法",
-      "link": "https://openai.com/index/how-chatgpt-protects-privacy",
-      "description": "Learn how ChatGPT safeguards your privacy, reduces personal data in training, and gives you control over whether your conversations improve AI models....",
-      "publishedDate": "Wed, 06 May 2026 08:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How frontier firms are pulling ahead",
-      "titleJa": "フロンティア企業はどのように前進しているのか",
-      "link": "https://openai.com/index/introducing-b2b-signals",
-      "description": "OpenAI’s B2B Signals research shows how frontier enterprises deepen AI adoption, scale Codex-powered agentic workflows, and build durable competitive advantage....",
-      "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Singular Bank helps bankers move fast with ChatGPT and Codex",
-      "titleJa": "Singular Bank は、ChatGPT と Codex を使用して銀行員の迅速な行動を支援します",
-      "link": "https://openai.com/index/singular-bank",
-      "description": "Singular Bank built Singularity, an internal assistant using ChatGPT and Codex to help bankers save 60–90 minutes daily on meeting prep, portfolio analysis, and follow-up....",
-      "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Uber uses OpenAI to help people earn smarter and book faster",
-      "titleJa": "Uber は OpenAI を使用して、人々がより賢く稼ぎ、より早く予約できるように支援します",
-      "link": "https://openai.com/index/uber",
-      "description": "Uber uses OpenAI to power AI assistants and voice features that help drivers earn smarter and riders book faster across a global real-time marketplace....",
-      "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -167,6 +123,72 @@
       "language": "en"
     },
     {
+      "title": "World Models: 10 Things That Matter in AI Right Now",
+      "titleJa": "世界モデル: AI において今重要な 10 のこと",
+      "link": "https://www.technologyreview.com/2026/05/12/1137134/world-models-10-things-that-matter-in-ai-right-now/",
+      "description": "World models recently made our list of 10 Things That Matter in AI Right Now. Watch executive editor Niall Firth explain why this emerging area of AI is gaining so much attention. Join MIT Technology ...",
+      "publishedDate": "Tue, 12 May 2026 16:22:15 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/01/Mat-Honan-1.png",
+      "language": "en"
+    },
+    {
+      "title": "How finance teams use Codex",
+      "titleJa": "財務チームが Codex を使用する方法",
+      "link": "https://openai.com/academy/how-finance-teams-use-codex",
+      "description": "See how finance teams can use Codex to build MBRs, reporting packs, variance bridges, model checks, and planning scenarios from real work inputs....",
+      "publishedDate": "Tue, 12 May 2026 15:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The Download: a Nobel winner on AI, and the case for fixing everything",
+      "titleJa": "ダウンロード: AI 分野のノーベル賞受賞者とすべてを解決する根拠",
+      "link": "https://www.technologyreview.com/2026/05/12/1137103/the-download-nobel-winner-ai-maintenance-of-everything/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Three things in AI to watch, according to a Nobel-...",
+      "publishedDate": "Tue, 12 May 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/SoundofDataFinal1f-V-edited.jpeg",
+      "language": "en"
+    },
+    {
+      "title": "DCON2026優勝チームは「豊田工業高専」評価額は5億6000万円！",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/dcon2026-deep-learning/",
+      "description": "高専生が日頃培った「ものづくりの技術」と、「ディープラーニング」を活用した事業アイデアで、企業評価額を競うコンテスト「第7回全国高等専門学校ディープラーニングコンテスト2026（DCON2026）」の本選が2026年5月 [...] The post DCON2026優勝チームは「豊田工業高専」評価額は5億6000万円！ first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Tue, 12 May 2026 09:47:30 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/ainewseyedcon100.png",
+      "language": "ja"
+    },
+    {
+      "title": "Azure OpenAI Serviceとは？ChatGPTとの違い・料金・使い方を企業向けに解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/azure-openai-service",
+      "description": "Azure OpenAI Serviceは、企業向けに安全に使えるAIクラウドサービスです。とはいえ「ChatGPTと何が違うのか」「本当に安全なのか」と悩む方も多いのではないでしょうか。 実際、企業の生成AI導入ではセ [...]...",
+      "publishedDate": "Tue, 12 May 2026 08:21:37 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/azure-openai-service_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Devinとは？エンジニア業務を完遂するAIエージェントの使い方をわかりやすく解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/devin/",
+      "description": "「ソフトウェア開発のすべてをAIに任せられる時代」が、ついにやってきたと言われたら驚きませんか？ そんな夢のような話を実現したのが、米スタートアップ企業のCognitionが開発した世界初の自律型AIエンジニア「Devi [...]...",
+      "publishedDate": "Tue, 12 May 2026 05:28:01 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/devin_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "Google AI Studioとは？初心者でも分かる使い方と活用方法を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/google-ai-studio/",
@@ -186,6 +208,39 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Omni-Video-Pro-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "「AI博覧会 Nagoya 2026」カンファレンス第1弾スピーカーを発表！名古屋銀行、ダイハツ工業、岡谷鋼機など、東海エリアでのAI活用を推進する最新事例を発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-hakurankai-nagoya2026-1stspeakers/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年6月16日（火）・17日（水）の2日間、名古屋コンベンションホールにて「AI博覧会 Nagoya 2026」を開催します。 [...] The post 「AI博覧会 Nagoya 2026」カンファレンス第1弾スピーカーを発表！名古屋銀行、ダイハツ工業、岡谷鋼機など、東海エリアでのAI活用を推進する...",
+      "publishedDate": "Tue, 12 May 2026 02:30:05 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/nagoya2026-1stspeakers.png",
+      "language": "ja"
+    },
+    {
+      "title": "KDDIアイレット、キャリア採用の選考プロセスに「AI面接」導入。候補者体験と採用品質の向上を両立",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/kddi-iret-shain-introduce/",
+      "description": "KDDIアイレットは、キャリア採用の選考プロセスに、対話型AI面接サービス「SHaiN」を活用したAI面接を本格導入することを発表しました。 このニュースのポイント KDDIアイレット、キャリア採用の選考プロセスにAI面 [...] The post KDDIアイレット、キャリア採用の選考プロセスに「AI面接」導入。候補者体験と採用品質の向上を両立 first appeared on AIポータル...",
+      "publishedDate": "Tue, 12 May 2026 02:22:04 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/kddishain2.png",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Code Remote Controlとは？セットアップと使い方の手順・料金・セキュリティを詳しく解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-code-remote-control/",
+      "description": "生成AIにコーディングしてもらうAIエージェントが注目を集めています。数ある生成AIの中でもコーディング技術の評価が高い「Claude」は、開発者やビジネスパーソンなど多くのユーザーに利用されています。 しかし、生成AI [...] The post Claude Code Remote Controlとは？セットアップと使い方の手順・料金・セキュリティを詳しく解説 first appeared ...",
+      "publishedDate": "Tue, 12 May 2026 01:51:36 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/ClaudeCodeRemoteControl.png",
       "language": "ja"
     },
     {
@@ -231,6 +286,39 @@
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/metieye.png",
       "language": "ja"
+    },
+    {
+      "title": "How NVIDIA engineers and researchers build with Codex",
+      "titleJa": "NVIDIA のエンジニアと研究者が Codex を使用して構築する方法",
+      "link": "https://openai.com/index/nvidia",
+      "description": "Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments....",
+      "publishedDate": "Tue, 12 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "What Parameter Golf taught us about AI-assisted research",
+      "titleJa": "Parameter Golf が AI 支援研究について教えてくれたこと",
+      "link": "https://openai.com/index/what-parameter-golf-taught-us",
+      "description": "Parameter Golf brought together 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research, coding agents, quantization, and novel model design under strict constraint...",
+      "publishedDate": "Tue, 12 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "AutoScout24 scales engineering with AI-powered workflows",
+      "titleJa": "AutoScout24 は AI を活用したワークフローでエンジニアリングを拡張します",
+      "link": "https://openai.com/index/autoscout24",
+      "description": "Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption....",
+      "publishedDate": "Tue, 12 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/71SMEQAS8V26jHdprPQzoo/b3f8e1bb52044650161982fd76b70ab0/oai_AutoScout24_SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "language": "en"
     },
     {
       "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
@@ -328,29 +416,7 @@
       "publishedDate": "Thu, 07 May 2026 13:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "QwenPaw（CoPaw）とは？Alibaba発の個人向けAIアシスタント！仕組み・特徴・企業活用を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwenpaw/",
-      "description": "「社内の定型業務をAIで自動化したいけれど、どこから手をつければいいのかわからない」「新しいツールを導入しても、現場のメンバーが使いこなせるか不安だ」…情報システム部門の担当者として、こうした悩みを抱えている方も多いので [...]...",
-      "publishedDate": "Thu, 07 May 2026 12:42:24 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_QwenPaw-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "The Download: the tech reshaping IVF and the rise of balcony solar",
-      "titleJa": "ダウンロード: 体外受精を再構築する技術とバルコニー太陽光発電の台頭",
-      "link": "https://www.technologyreview.com/2026/05/07/1136956/the-download-ivf-tech-balcony-solar/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. What’s next for IVF IVF has brought millions of ba...",
-      "publishedDate": "Thu, 07 May 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/RYCJ4H-edited.webp",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/5JZQQtfzupvQaPZWeiyQJZ/77ed8a3e6c75c12b4a5a50b33b5ae8fd/seo-card-trusted-access.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -372,7 +438,7 @@
       "publishedDate": "Thu, 07 May 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/CtzMayHtxIkcMPAo8BpqJ/966285cf3802995841337122190ec2fd/OAI_GPT-Realtime-2_Art_Card_16x9.png.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -395,17 +461,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/21TdmlEzFwgoo7ZER7SNCV/001b3d542fd4d025a2dcd1a5ab9417fe/OAI_AdsTest_Blog_OpenGraph_1200x630.png?w=1600&amp;h=900&amp;fit=fill",
-      "language": "en"
-    },
-    {
-      "title": "Simplex rethinks software development with Codex",
-      "titleJa": "Simplex は Codex を使用したソフトウェア開発を再考します",
-      "link": "https://openai.com/index/simplex",
-      "description": "Simplex boosts software development with ChatGPT Enterprise and Codex, reducing design, build, and testing time while scaling AI-driven workflows....",
-      "publishedDate": "Thu, 07 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/5fjNSHH89mLPBtQIWMnYeE/2324d64841e789e5b94269aa31170817/oai_simplex_SEO.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -464,50 +519,6 @@
       "language": "ja"
     },
     {
-      "title": "Difyの活用事例13選｜業界・目的別の用途と業務効率化の方法を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/dify-usage-example-13/",
-      "description": "Difyを導入したいものの、具体的な活用場面がイメージできない方も多いでしょう。 本記事では、情報検索から資料作成、営業支援、業務オペレーションまで、Difyを導入して成果を上げた企業の活用事例を紹介します。 本記事を読 [...] The post Difyの活用事例13選｜業界・目的別の用途と業務効率化の方法を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 11 May 2026 01:01:30 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/Dify-1.png",
-      "language": "ja"
-    },
-    {
-      "title": "職種・部署別AIサービスカオスマップを公開！–導入用途別に整理された164製品を一挙紹介–",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/busyobetu-department-based-ai-chaosmap/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、企業の各部門における業務効率化と生産性向上を支援する決定版「職種・部署別AIサービスカオスマップ」を2026年5月11日（月）に公開 [...] The post 職種・部署別AIサービスカオスマップを公開！–導入用途別に整理された164製品を一挙紹介– first appeared on AIポータルメディア...",
-      "publishedDate": "Mon, 11 May 2026 01:00:20 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/syokusyu-bisyobetu2.png",
-      "language": "ja"
-    },
-    {
-      "title": "Difyで何ができる？特徴・使い方・活用事例をわかりやすく解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/dify-feature-usage-example/",
-      "description": "「AIを使って業務を効率化したいけれど、プログラミングの知識がない」「ChatGPTだけでは自社データを活用しきれない」そんな悩みを抱えていませんか。 Difyは、ノーコードでAIアプリケーションを構築できる次世代プラッ [...] The post Difyで何ができる？特徴・使い方・活用事例をわかりやすく解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 11 May 2026 01:00:10 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/DifyMain.png",
-      "language": "ja"
-    },
-    {
-      "title": "Dify APIの使い方完全ガイド｜APIキー取得から連携方法まで解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/dify-api-gui-slack-ai/",
-      "description": "Difyで便利なAIアプリを作ったものの、「自社サイトやSlackとどう繋げばいいかわからない」「API連携のコードが書けず止まっている」と悩んでいませんか？ Dify APIを使いこなせば、画面上のGUIで作った機能を [...] The post Dify APIの使い方完全ガイド｜APIキー取得から連携方法まで解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 11 May 2026 00:58:35 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/DifyAPI.png",
-      "language": "ja"
-    },
-    {
       "title": "Azure Portalとは？クラウドリソースを一元管理できるツール！できること・使い方・料金の仕組みを解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/azure-portal/",
@@ -541,14 +552,25 @@
       "language": "ja"
     },
     {
-      "title": "【GPT-Realtime-2】GPT-5級の推論で音声AIが進化！リアルタイム音声モデルの性能・料金・使い方を徹底解説",
+      "title": "AnthropicがAWS上で提供する「Claude Platform on AWS」正式リリース。Claudeの新機能を含むフルセットをAWSで提供",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gpt-realtime-2/",
-      "description": "2026年5月8日、OpenAIはGPT-5クラスの推論能力を持つ最新のリアルタイム音声モデル「GPT-Realtime-2」を発表しました！ 従来の音声AIは「話しかけたら返事が返ってくる」止まりでしたが、GPT-Re [...]...",
-      "publishedDate": "Fri, 08 May 2026 03:09:00 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/anthropicawsclaude_platform_on_awsclaudeaws.html",
+      "description": "Amazon Web Services（AWS）とAnthropicは、AWS上でAnthropicが運営しClaudeのフル機能を提供する「Claude Platform on AWS」の正式リリースを発表しました（AWSの発表、Anth......",
+      "publishedDate": "2026-05-12T15:38:50Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-Realtime-2-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/yGm4EX7w.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "クラウドインフラのシェア、AWSが28％、Azureは21％で変わらずも、市場全体が年35％の急成長に。2026年第1四半期、Synergy Research",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/aws28azure213520261synergy_research.html",
+      "description": "調査会社のSynergy Research Groupは、グローバルにおける2026年第1四半期のクラウドインフラの市場状況について調査結果を発表しました。 クラウドインフラとは、IaaS、PaaS、ホステッドプライベートクラウドを合わせた......",
+      "publishedDate": "2026-05-12T15:36:30Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/synergy2026q102.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/aM1upsBS.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Cloudflare、AIエージェントがメールの送受信を行える「Cloudflare Email Service」パブリックベータで公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/cloudflareaicloudflare_email_service.html",
-      "description": "Cloudflareは、アプリケーションやAIエージェントが電子メールの送受信を行える「Cloudflare Email Service」をパブリックベータとして公開しました。 Today, Cloudflare Email Service......",
-      "publishedDate": "2026-04-19T15:40:07Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/wIGxaOuQ.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ヘッドレスなSalesforce登場、あらゆる機能がAPI/CLI/MCPでアクセスできる「Salesforce Headless 360」発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/salesforceapiclimcpsalesforce_headless_360.html",
-      "description": "Salesforceはサンフランシスコで4月15日と16日の2日間にわたり開催した開発者向けイベント「Salesforce TDX 2026」で、Salesforceのあらゆる機能をAPI、CLI（コマンドライン）、そしてMCP（Model......",
-      "publishedDate": "2026-04-19T15:35:59Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/headless360-ann01.png",
       "language": "ja"
     }
   ]
