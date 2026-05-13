@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>型枠数量算出 - 28 Tools マニュアル</title>
+    <link rel="icon" type="image/png" href="../images/site-icons/favicon-28.png">
+    <link rel="canonical" href="https://28tools.com/manual/formwork-calculator.html">
+    <meta name="description" content="RC躯体モデルから型枠面積を自動算出しExcel・Revit集計表・色分け3Dビューに出力する無料アドインの使い方マニュアル。">
+    <meta property="og:title" content="型枠数量算出 - 28 Tools マニュアル">
+    <meta property="og:description" content="RC躯体モデルから型枠面積を自動算出しExcel・Revit集計表・色分け3Dビューに出力する無料アドインの使い方マニュアル。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://28tools.com/manual/formwork-calculator.html">
+    <meta property="og:image" content="https://28tools.com/images/ogp-image.png">
+    <meta property="og:site_name" content="28 Tools">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197151217236924"
+         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/manual.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="manual-page">
+    <!-- 共通ヘッダー -->
+    <div id="header-container"></div>
+
+    <!-- サイドバーナビゲーション -->
+    <div id="sidebar-container"></div>
+
+    <!-- マニュアルコンテンツ -->
+    <div class="manual-container">
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <a href="../index.html" data-lang-key="breadcrumb-home">ホーム</a>
+            <span class="separator">›</span>
+            <a href="../addins.html" data-lang-key="breadcrumb-addins">アドイン</a>
+            <span class="separator">›</span>
+            <span data-lang-key="manual-formwork-title">型枠数量算出</span>
+        </nav>
+
+        <!-- 機能タイトル -->
+        <div class="manual-header">
+            <div class="icon-wrapper">
+                <img src="../images/revit-icons/formwork.png" alt="Formwork Calculator Icon" class="feature-icon">
+            </div>
+            <h1 class="manual-title" data-lang-key="manual-formwork-title">型枠数量算出</h1>
+            <p class="manual-subtitle" data-lang-key="manual-formwork-subtitle">RC躯体から型枠面積を自動算出しExcel・集計表・3Dビューに出力</p>
+        </div>
+
+        <!-- 機能概要 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
+            <div class="content-box">
+                <p data-lang-key="manual-formwork-overview">
+                    RC躯体モデルから「型枠が必要な面」と「不要な面（接触面・天端・地中部）」を自動分類し、要素ごとの型枠面積をレベル・部位・タイプ別に集計します。結果はExcelファイル・Revit集計表・色分け3Dビュー・シートに同時出力できます。鉄骨部材・デッキスラブ・LGS壁などは自動判別して除外されます。
+                </p>
+            </div>
+        </section>
+
+        <!-- 主な特徴 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-key-features">主な特徴</h2>
+            <div class="content-box">
+                <ul class="feature-list">
+                    <li data-lang-key="manual-formwork-feature1">柱・梁・壁・床・基礎・階段・屋根を対象に自動算出</li>
+                    <li data-lang-key="manual-formwork-feature2">要素同士の接触面・天端・地中部を幾何検査で自動控除</li>
+                    <li data-lang-key="manual-formwork-feature3">Join Geometry の事前接合は不要</li>
+                    <li data-lang-key="manual-formwork-feature4">鉄骨・デッキスラブ・LGS壁・鉄骨階段を自動除外</li>
+                    <li data-lang-key="manual-formwork-feature5">レベル → 部位 → タイプ名の階層で集計表を生成</li>
+                    <li data-lang-key="manual-formwork-feature6">部位別・工区別・型枠種別で色分け3Dビューを作成</li>
+                    <li data-lang-key="manual-formwork-feature7">Excel出力（部位別シート＋総括シート、オートフィルタ自動設定）</li>
+                    <li data-lang-key="manual-formwork-feature8">集計シート（3Dビュー＋集計表）を自動レイアウト</li>
+                    <li data-lang-key="manual-formwork-feature9">GL高さで地中部分を控除するオプション</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 使い方 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
+
+            <div class="step-box">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 data-lang-key="manual-formwork-step1-title">事前準備：モデルの確認</h3>
+                    <p data-lang-key="manual-formwork-step1-desc">
+                        柱・梁・壁・床・基礎・階段・屋根が正しいRevitカテゴリでモデリングされているか、各要素のベースレベル・上部レベルが正しく設定されているかを確認します。
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 data-lang-key="manual-formwork-step2-title">3Dビューを開く</h3>
+                    <p data-lang-key="manual-formwork-step2-desc">
+                        対象範囲のみが表示された3Dビュー（必要に応じてセクションボックスで切り取り）を開きます。「現在のビューに表示されている要素」モードを使う場合は3Dビューが必須です。
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3 data-lang-key="manual-formwork-step3-title">ボタンをクリック</h3>
+                    <p data-lang-key="manual-formwork-step3-desc">
+                        リボン「28 Tools」タブ →「構造」パネル →「型枠数量算出」をクリックします。
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3 data-lang-key="manual-formwork-step4-title">計算範囲と集計区分を指定</h3>
+                    <p data-lang-key="manual-formwork-step4-desc">
+                        「プロジェクト全体」または「現在のビューに表示されている要素」を選択し、部位別・工区別・型枠種別の集計区分を選択します。工区・型枠種別はパラメータ名を指定します。
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3 data-lang-key="manual-formwork-step5-title">出力先とオプションを設定</h3>
+                    <p data-lang-key="manual-formwork-step5-desc">
+                        Excel／Revit集計ビュー／色分け3Dビュー／集計シートのうち必要な出力にチェックを入れます。3Dビューの色分け区分や、GL高さで地中部分を控除するオプションも指定できます。
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <h3 data-lang-key="manual-formwork-step6-title">実行と結果確認</h3>
+                    <p data-lang-key="manual-formwork-step6-desc">
+                        「実行」をクリックすると要素数100〜500個で30秒〜2分程度で処理が完了します。完了ダイアログで対象要素数・合計型枠面積・自動除外件数・出力先などを確認できます。
+                    </p>
+                </div>
+            </div>
+
+            <!-- スクリーンショット用プレースホルダー -->
+            <div class="image-placeholder">
+                <p data-lang-key="image-placeholder-text">📷 スクリーンショット画像をここに追加予定</p>
+            </div>
+        </section>
+
+        <!-- 活用シーン -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-usecases">活用シーン</h2>
+            <div class="usecase-grid">
+                <div class="usecase-card">
+                    <div class="usecase-icon">📐</div>
+                    <h3 data-lang-key="manual-formwork-usecase1-title">概算見積もりの自動化</h3>
+                    <p data-lang-key="manual-formwork-usecase1-desc">
+                        RC躯体モデルから型枠面積を瞬時に算出し、概算見積もりの作成時間を大幅に短縮します。
+                    </p>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-icon">📊</div>
+                    <h3 data-lang-key="manual-formwork-usecase2-title">工区別の数量管理</h3>
+                    <p data-lang-key="manual-formwork-usecase2-desc">
+                        工区パラメータで分類した集計を出力し、施工計画・進捗管理に活用できます。
+                    </p>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-icon">📑</div>
+                    <h3 data-lang-key="manual-formwork-usecase3-title">図書提出資料の作成</h3>
+                    <p data-lang-key="manual-formwork-usecase3-desc">
+                        色分け3Dビュー＋集計表のシートを自動作成し、提出図書をそのまま出力できます。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-tips">Tips</h2>
+            <div class="tips-box">
+                <div class="tip-item">
+                    <span class="tip-icon">💡</span>
+                    <p data-lang-key="manual-formwork-tip1">
+                        <strong data-lang-key="manual-formwork-tip1-strong">対象を絞り込むなら3Dビュー：</strong>セクションボックスで対象範囲のみを表示した3Dビューを開き、「現在のビューに表示されている要素」を選択すると処理が高速化されます。
+                    </p>
+                </div>
+                <div class="tip-item">
+                    <span class="tip-icon">💡</span>
+                    <p data-lang-key="manual-formwork-tip2">
+                        <strong data-lang-key="manual-formwork-tip2-strong">サマリ集計表は動的：</strong>「型枠数量集計_合計」表はDirectShapeの追加・削除に動的追従し、要素を削除すると合計が自動再計算されます。
+                    </p>
+                </div>
+                <div class="tip-item">
+                    <span class="tip-icon">💡</span>
+                    <p data-lang-key="manual-formwork-tip3">
+                        <strong data-lang-key="manual-formwork-tip3-strong">控除面の可視化：</strong>オプション「控除面も表示する」をONにすると、接触面・天端面がグレー半透明で表示され、算出ロジックの確認に便利です。
+                    </p>
+                </div>
+                <div class="tip-item">
+                    <span class="tip-icon">💡</span>
+                    <p data-lang-key="manual-formwork-tip4">
+                        <strong data-lang-key="manual-formwork-tip4-strong">再計算は再実行で：</strong>ボタンを再実行すると既存の「型枠分析」ビュー・集計表が上書きされます。視点はその時点でアクティブな3Dビューが引き継がれます。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 注意事項 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-notes">注意事項</h2>
+            <div class="notes-box warning">
+                <div class="note-item">
+                    <span class="note-icon">⚠️</span>
+                    <p data-lang-key="manual-formwork-note1">
+                        シートビューでは実行できません。3Dビュー（推奨）または平面・断面ビューに切り替えてから実行してください。
+                    </p>
+                </div>
+                <div class="note-item">
+                    <span class="note-icon">⚠️</span>
+                    <p data-lang-key="manual-formwork-note2">
+                        鉄骨柱が除外されない場合は、ファミリの構造材料が「鋼」または「金属」になっているか、ファミリ名・タイプ名に「H-」「BH-」「鉄骨」等のキーワードが含まれているかを確認してください。
+                    </p>
+                </div>
+                <div class="note-item">
+                    <span class="note-icon">⚠️</span>
+                    <p data-lang-key="manual-formwork-note3">
+                        RC壁が誤ってLGS壁として除外される場合は、壁構造の各層のマテリアルに「Concrete」または「コンクリート」が含まれているかを確認してください。
+                    </p>
+                </div>
+                <div class="note-item">
+                    <span class="note-icon">⚠️</span>
+                    <p data-lang-key="manual-formwork-note4">
+                        処理が遅い場合は計算範囲を「現在のビュー」に絞るか、セクションボックスで対象範囲を限定してください。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ナビゲーション -->
+        <div class="manual-navigation">
+            <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
+                ← ホームに戻る
+            </a>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <!-- SNSシェアボタン -->
+            <div class="share-buttons">
+                <p class="share-text" data-lang-key="footer-share">このページをシェア：</p>
+                <div class="share-icons">
+                    <a href="#" class="share-btn twitter" data-sns="twitter" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn facebook" data-sns="facebook" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn line" data-sns="line" aria-label="LINE">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn hatena" data-sns="hatena" aria-label="はてなブックマーク">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.47 0C22.42 0 24 1.58 24 3.53v16.94c0 1.95-1.58 3.53-3.53 3.53H3.53C1.58 24 0 22.42 0 20.47V3.53C0 1.58 1.58 0 3.53 0h16.94zM7.708 5.522H5.522v7.827c0 1.283.818 2.006 2.118 2.006s2.117-.723 2.117-2.006V5.522H7.708zm10.7 6.2c0-1.345-.696-2.285-2.02-2.585.897-.38 1.527-1.104 1.527-2.198 0-1.72-1.33-2.417-3.292-2.417H11.97v10.016h2.754c1.864 0 3.685-.65 3.685-2.815zm-4.175-1.35h1.29c.696 0 1.13.354 1.13.952 0 .597-.434.95-1.13.95h-1.29V10.37zm0-3.23h1.113c.57 0 1.017.315 1.017.87 0 .552-.447.866-1.017.866h-1.114V7.142zm-8.17 10.29c.91 0 1.616.71 1.616 1.62 0 .907-.707 1.616-1.616 1.616-.91 0-1.616-.71-1.616-1.617s.707-1.62 1.616-1.62z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="site-footer-links">
+                <a href="../about.html" data-lang-key="footer-about">運営者情報</a>
+                <span class="footer-divider">|</span>
+                <a href="../contact.html" data-lang-key="footer-contact">お問い合わせ</a>
+                <span class="footer-divider">|</span>
+                <a href="../privacy.html" data-lang-key="footer-privacy">プライバシーポリシー</a>
+                <span class="footer-divider">|</span>
+                <a href="../terms.html" data-lang-key="footer-terms">利用規約</a>
+            </div>
+            <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

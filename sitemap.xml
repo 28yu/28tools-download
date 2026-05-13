@@ -128,6 +128,22 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- マニュアル - 耐火被覆色分け -->
+  <url>
+    <loc>https://28tools.com/manual/fire-protection.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - 型枠数量算出 -->
+  <url>
+    <loc>https://28tools.com/manual/formwork-calculator.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- 運営者情報 -->
   <url>
     <loc>https://28tools.com/about.html</loc>
