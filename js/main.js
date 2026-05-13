@@ -5803,21 +5803,24 @@ function updateAllContent() {
     elements.forEach(element => {
         const key = element.dataset.langKey;
         if (translations[key] && translations[key][currentLanguage]) {
+            const translatedText = translations[key][currentLanguage];
             // strongタグの中身は翻訳しない場合の処理
             if (element.tagName === 'STRONG') {
-                element.textContent = translations[key][currentLanguage];
-            } else if (element.querySelector('strong')) {
-                // strongタグを含むpタグの処理
-                const strongKey = element.querySelector('strong').dataset.langKey;
+                element.textContent = translatedText;
+            } else if (element.querySelector('strong[data-lang-key]')) {
+                // strongタグを含むpタグの処理（既存パターン: tip-strong）
+                const strongKey = element.querySelector('strong[data-lang-key]').dataset.langKey;
                 if (strongKey && translations[strongKey]) {
                     const strongText = translations[strongKey][currentLanguage];
-                    const mainText = translations[key][currentLanguage];
-                    element.innerHTML = `<strong>${strongText}</strong>${mainText.replace(translations[strongKey]['ja'], '')}`;
+                    element.innerHTML = `<strong>${strongText}</strong>${translatedText.replace(translations[strongKey]['ja'], '')}`;
                 } else {
-                    element.textContent = translations[key][currentLanguage];
+                    element.textContent = translatedText;
                 }
+            } else if (/<[a-z\/]/i.test(translatedText)) {
+                // 翻訳文字列にHTMLタグ（<strong>, <code> など）が含まれる場合は innerHTML で挿入
+                element.innerHTML = translatedText;
             } else {
-                element.textContent = translations[key][currentLanguage];
+                element.textContent = translatedText;
             }
         }
     });
