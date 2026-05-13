@@ -161,9 +161,9 @@
                         </p>
                     </li>
                     <li>
-                        <h4 data-lang-key="manual-formwork-prep3-title">Join Geometry は不要</h4>
+                        <h4 data-lang-key="manual-formwork-prep3-title">要素同士の結合は不要</h4>
                         <p data-lang-key="manual-formwork-prep3-desc">
-                            要素同士の接合は <strong>Join Geometry でつなぐ必要はありません</strong>。本機能が幾何検査で接触面を自動検出します。
+                            柱と梁、梁と床などが接している部分は <strong>Revit の「結合」機能で結合させていなくても自動で接触面を判別</strong>します。モデリング時に結合し忘れがあっても、接触している箇所は型枠不要として正しく控除されます。
                         </p>
                     </li>
                     <li>
@@ -188,14 +188,14 @@
 
         <!-- 使い方 -->
         <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
+            <h2 class="section-title" data-lang-key="section-usage">実行手順</h2>
 
             <div class="step-box">
                 <div class="step-number">1</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-formwork-step1-title">3Dビューを開く</h3>
+                    <h3 data-lang-key="manual-formwork-step1-title">リボンからボタンを実行</h3>
                     <p data-lang-key="manual-formwork-step1-desc">
-                        対象範囲のみが表示された3Dビュー（必要に応じてセクションボックスで切り取り）を開きます。「現在のビューに表示されている要素」モードを使う場合は3Dビューが必須です。
+                        <code>Tools28</code> リボン → 構造パネル → <strong>「型枠数量算出」</strong> をクリックします。
                     </p>
                 </div>
             </div>
@@ -203,19 +203,48 @@
             <div class="step-box">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-formwork-step2-title">ボタンをクリック</h3>
-                    <p data-lang-key="manual-formwork-step2-desc">
-                        リボン「28 Tools」タブ →「構造」パネル →「型枠数量算出」をクリックします。
+                    <h3 data-lang-key="manual-formwork-step2-title">設定ダイアログで条件を指定</h3>
+
+                    <h4 style="margin-top: 14px; font-size: 1rem;" data-lang-key="manual-formwork-step2-range-title">計算範囲</h4>
+                    <ul>
+                        <li data-lang-key="manual-formwork-step2-range-item1"><strong>プロジェクト全体</strong> — モデル内の全要素を対象</li>
+                        <li data-lang-key="manual-formwork-step2-range-item2"><strong>現在のビューに表示されている要素</strong> — アクティブ3Dビューで可視の要素のみ</li>
+                    </ul>
+
+                    <h4 style="margin-top: 14px; font-size: 1rem;" data-lang-key="manual-formwork-step2-agg-title">集計区分（複数選択可）</h4>
+                    <ul>
+                        <li data-lang-key="manual-formwork-step2-agg-item1"><strong>部位別</strong>（柱・梁・壁・スラブ・基礎・階段・屋根）— 既定でON</li>
+                        <li data-lang-key="manual-formwork-step2-agg-item2"><strong>工区別</strong> — 「工区」パラメータで分類（パラメータ名を指定）</li>
+                        <li data-lang-key="manual-formwork-step2-agg-item3"><strong>型枠種別</strong> — 「型枠種別」パラメータで分類（パラメータ名を指定）</li>
+                    </ul>
+
+                    <h4 style="margin-top: 14px; font-size: 1rem;" data-lang-key="manual-formwork-step2-output-title">出力設定</h4>
+                    <ul>
+                        <li data-lang-key="manual-formwork-step2-output-item1">☑ <strong>Excel ファイルに出力</strong> — 部位別シート＋総括シートを含む .xlsx</li>
+                        <li data-lang-key="manual-formwork-step2-output-item2">☑ <strong>Revit 集計ビューを作成</strong> — 階層グループ化された集計表</li>
+                        <li data-lang-key="manual-formwork-step2-output-item3">☑ <strong>色分け 3D ビューを作成</strong> — 解析専用の3Dビュー「型枠分析」</li>
+                        <li data-lang-key="manual-formwork-step2-output-item4">☑ <strong>集計シートを自動作成</strong> — 3Dビュー＋集計表が配置されたシート</li>
+                    </ul>
+
+                    <h4 style="margin-top: 14px; font-size: 1rem;" data-lang-key="manual-formwork-step2-color-title">色分け区分</h4>
+                    <p data-lang-key="manual-formwork-step2-color-desc">
+                        3Dビューの色分けを「部位別」「工区別」「型枠種別」から選択します。
                     </p>
+
+                    <h4 style="margin-top: 14px; font-size: 1rem;" data-lang-key="manual-formwork-step2-option-title">オプション</h4>
+                    <ul>
+                        <li data-lang-key="manual-formwork-step2-option-item1">☐ <strong>控除面も表示する</strong> — 接触面・天端面をグレー半透明で表示</li>
+                        <li data-lang-key="manual-formwork-step2-option-item2">☐ <strong>GL 高さで地中部分を控除</strong> — GLより下の鉛直面・下向き面を控除（基礎の地中面など）</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="step-box">
                 <div class="step-number">3</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-formwork-step3-title">計算範囲と集計区分を指定</h3>
+                    <h3 data-lang-key="manual-formwork-step3-title">「実行」をクリック</h3>
                     <p data-lang-key="manual-formwork-step3-desc">
-                        「プロジェクト全体」または「現在のビューに表示されている要素」を選択し、部位別・工区別・型枠種別の集計区分を選択します。工区・型枠種別はパラメータ名を指定します。
+                        処理時間：要素数100〜500個で30秒〜2分程度。
                     </p>
                 </div>
             </div>
@@ -223,26 +252,85 @@
             <div class="step-box">
                 <div class="step-number">4</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-formwork-step4-title">出力先とオプションを設定</h3>
+                    <h3 data-lang-key="manual-formwork-step4-title">結果を確認</h3>
                     <p data-lang-key="manual-formwork-step4-desc">
-                        Excel／Revit集計ビュー／色分け3Dビュー／集計シートのうち必要な出力にチェックを入れます。3Dビューの色分け区分や、GL高さで地中部分を控除するオプションも指定できます。
+                        完了ダイアログに以下が表示されます。
                     </p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">5</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-formwork-step5-title">実行と結果確認</h3>
-                    <p data-lang-key="manual-formwork-step5-desc">
-                        「実行」をクリックすると要素数100〜500個で30秒〜2分程度で処理が完了します。完了ダイアログで対象要素数・合計型枠面積・自動除外件数・出力先などを確認できます。
-                    </p>
+                    <ul>
+                        <li data-lang-key="manual-formwork-step4-item1">対象要素数 ／ 合計型枠面積 ／ 控除面積 ／ 傾斜面面積</li>
+                        <li data-lang-key="manual-formwork-step4-item2">自動除外件数（鉄骨・デッキスラブ・LGS壁等）</li>
+                        <li data-lang-key="manual-formwork-step4-item3">出力されたシート名・Excel保存先</li>
+                    </ul>
                 </div>
             </div>
 
             <!-- スクリーンショット用プレースホルダー -->
             <div class="image-placeholder">
                 <p data-lang-key="image-placeholder-text">📷 スクリーンショット画像をここに追加予定</p>
+            </div>
+        </section>
+
+        <!-- 出力される成果物 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-deliverables">出力される成果物</h2>
+            <div class="content-box">
+                <h3 style="margin-top: 0; font-size: 1.05rem;" data-lang-key="manual-formwork-deliv1-title">解析3Dビュー「型枠分析」</h3>
+                <ul>
+                    <li data-lang-key="manual-formwork-deliv1-item1">型枠が必要な面が<strong>色付きの薄板オブジェクト</strong>として配置される</li>
+                    <li data-lang-key="manual-formwork-deliv1-item2">部位別の配色：柱＝青／梁＝緑／壁＝橙／スラブ＝黄／基礎＝紫／階段＝水／屋根＝ピンク赤</li>
+                    <li data-lang-key="manual-formwork-deliv1-item3">視点はボタン実行時のアクティブ3Dビューを継承</li>
+                </ul>
+
+                <h3 style="margin-top: 20px; font-size: 1.05rem;" data-lang-key="manual-formwork-deliv2-title">集計表「型枠数量集計」</h3>
+                <ul>
+                    <li data-lang-key="manual-formwork-deliv2-item1"><strong>レベル → 部位 → タイプ名</strong>の階層でグループ化</li>
+                    <li data-lang-key="manual-formwork-deliv2-item2">列：件数 ／ レベル ／ 部位 ／ 区分 ／ 型枠面積</li>
+                    <li data-lang-key="manual-formwork-deliv2-item3">列幅は内容に応じて自動調整</li>
+                </ul>
+
+                <h3 style="margin-top: 20px; font-size: 1.05rem;" data-lang-key="manual-formwork-deliv3-title">サマリ集計表「型枠数量集計_合計」</h3>
+                <ul>
+                    <li data-lang-key="manual-formwork-deliv3-item1">全件の合計値のみを表示する1行集計表</li>
+                    <li data-lang-key="manual-formwork-deliv3-item2">列ヘッダーを赤字・太字・薄黄背景でスタイリング</li>
+                    <li data-lang-key="manual-formwork-deliv3-item3">DirectShape の追加・削除に動的追従（要素を削除すると合計が自動再計算）</li>
+                </ul>
+
+                <h3 style="margin-top: 20px; font-size: 1.05rem;" data-lang-key="manual-formwork-deliv4-title">シート（オプション）</h3>
+                <ul>
+                    <li data-lang-key="manual-formwork-deliv4-item1">解析3Dビューとメイン集計表・サマリ集計表が自動レイアウトされたA1シート</li>
+                </ul>
+
+                <h3 style="margin-top: 20px; font-size: 1.05rem;" data-lang-key="manual-formwork-deliv5-title">Excel ファイル（オプション）</h3>
+                <ul>
+                    <li data-lang-key="manual-formwork-deliv5-item1">部位別シート＋全件総括シート</li>
+                    <li data-lang-key="manual-formwork-deliv5-item2">ヘッダー色付け、オートフィルタ自動設定</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 計算ロジック -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-logic">計算ロジック（参考）</h2>
+            <div class="content-box">
+                <h3 style="margin-top: 0; font-size: 1.05rem;" data-lang-key="manual-formwork-logic1-title">型枠が必要と判定される面</h3>
+                <ul>
+                    <li data-lang-key="manual-formwork-logic1-item1">鉛直面・斜面</li>
+                    <li data-lang-key="manual-formwork-logic1-item2">梁・柱・階段の底面</li>
+                    <li data-lang-key="manual-formwork-logic1-item3">開口部の内側面（縁面の加算）</li>
+                </ul>
+
+                <h3 style="margin-top: 20px; font-size: 1.05rem;" data-lang-key="manual-formwork-logic2-title">型枠不要として控除される面</h3>
+                <ul>
+                    <li data-lang-key="manual-formwork-logic2-item1"><strong>床・壁・基礎・屋根の天端</strong> — コンクリート打設時に開放される面
+                        <ul>
+                            <li data-lang-key="manual-formwork-logic2-item1a">屋根は勾配付き上向き面（傾斜＞約5°）も自動的に天端扱い</li>
+                            <li data-lang-key="manual-formwork-logic2-item1b">壁の斜めの天端は<strong>水平射影の幅が30mm以上</strong>なら天端扱い（小さな面取りは型枠必要）</li>
+                        </ul>
+                    </li>
+                    <li data-lang-key="manual-formwork-logic2-item2"><strong>他要素との接触面</strong> — 接触部分のみ控除（完全接触・部分接触の両方に対応）</li>
+                    <li data-lang-key="manual-formwork-logic2-item3"><strong>GL高さ以下の地中部分</strong>（オプションON時）</li>
+                    <li data-lang-key="manual-formwork-logic2-item4"><strong>開口部の控除</strong>（窓・ドア・床開口等の面積を自動控除）</li>
+                </ul>
             </div>
         </section>
 
@@ -333,6 +421,82 @@
                         処理が遅い場合は計算範囲を「現在のビュー」に絞るか、セクションボックスで対象範囲を限定してください。
                     </p>
                 </div>
+            </div>
+        </section>
+
+        <!-- よくある質問 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-faq">よくある質問</h2>
+            <div class="content-box">
+                <h3 style="margin-top: 0; font-size: 1.05rem;" data-lang-key="manual-formwork-faq1-q">Q. 鉄骨柱が型枠必要として残ってしまう</h3>
+                <p data-lang-key="manual-formwork-faq1-a">
+                    A. ファミリの構造材料が「鋼」または「金属」になっているか確認してください。それでも検出されない場合、ファミリ名・タイプ名に「H-」「BH-」「鉄骨」等のキーワードを含めると4層目の名前判定で除外されます。
+                </p>
+
+                <h3 style="margin-top: 18px; font-size: 1.05rem;" data-lang-key="manual-formwork-faq2-q">Q. RC壁が誤ってLGS壁として除外される</h3>
+                <p data-lang-key="manual-formwork-faq2-a">
+                    A. 壁構造の各層のマテリアルに「Concrete」または「コンクリート」が含まれているか確認してください。コンクリート層が認識されれば、石膏ボード仕上げが付いていてもRC壁として算出対象になります。
+                </p>
+
+                <h3 style="margin-top: 18px; font-size: 1.05rem;" data-lang-key="manual-formwork-faq3-q">Q. 集計表の列幅が大きすぎる／値が改行される</h3>
+                <p data-lang-key="manual-formwork-faq3-a">
+                    A. 列幅は実セル内容の最大文字数から自動計算されます。それでも問題がある場合は集計表プロパティで手動調整してください。
+                </p>
+
+                <h3 style="margin-top: 18px; font-size: 1.05rem;" data-lang-key="manual-formwork-faq4-q">Q. 結果を再計算したい</h3>
+                <p data-lang-key="manual-formwork-faq4-a">
+                    A. ボタンを再実行してください。既存の「型枠分析」ビュー・集計表は上書きされます。視点はその時点でアクティブな3Dビューが引き継がれます。
+                </p>
+            </div>
+        </section>
+
+        <!-- トラブルシューティング -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-troubleshooting">トラブルシューティング</h2>
+            <div class="content-box">
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th data-lang-key="table-col-symptom">症状</th>
+                            <th data-lang-key="table-col-action">対処</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-lang-key="manual-formwork-trouble1-sym">「対象要素が見つかりませんでした」</td>
+                            <td data-lang-key="manual-formwork-trouble1-act">計算範囲を「プロジェクト全体」に切り替える、または3Dビューに対象要素を表示させる</td>
+                        </tr>
+                        <tr>
+                            <td data-lang-key="manual-formwork-trouble2-sym">鉄骨が除外されない／RCが除外される</td>
+                            <td data-lang-key="manual-formwork-trouble2-act">デバッグログ <code>C:\temp\Formwork_debug.txt</code> で <code>[SteelDetect]</code> <code>[LgsExclude]</code> 行を確認し、誤判定の根拠を特定</td>
+                        </tr>
+                        <tr>
+                            <td data-lang-key="manual-formwork-trouble3-sym">処理が遅い</td>
+                            <td data-lang-key="manual-formwork-trouble3-act">計算範囲を「現在のビュー」に絞る／セクションボックスで対象範囲を限定する</td>
+                        </tr>
+                        <tr>
+                            <td data-lang-key="manual-formwork-trouble4-sym">エラーで止まる</td>
+                            <td data-lang-key="manual-formwork-trouble4-act">完了ダイアログの「エラー・注記」件数を確認し、デバッグログでエラー要素IDを特定</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 関連リンク -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-related-links">関連リンク</h2>
+            <div class="content-box">
+                <ul>
+                    <li>
+                        <span data-lang-key="manual-formwork-link1-label">マニュアル一覧：</span>
+                        <a href="../addins.html">https://28tools.com/addins.html</a>
+                    </li>
+                    <li>
+                        <span data-lang-key="manual-formwork-link2-label">リリース・最新版：</span>
+                        <a href="https://github.com/28yu/28tools-download/releases" target="_blank" rel="noopener">https://github.com/28yu/28tools-download/releases</a>
+                    </li>
+                </ul>
             </div>
         </section>
 
