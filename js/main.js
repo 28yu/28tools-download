@@ -434,6 +434,36 @@ function initTranslations() {
             en: 'Related Features',
             zh: '相关功能'
         },
+        'section-deliverables': {
+            ja: '出力される成果物',
+            en: 'Deliverables',
+            zh: '输出成果物'
+        },
+        'section-logic': {
+            ja: '計算ロジック（参考）',
+            en: 'Calculation Logic (Reference)',
+            zh: '计算逻辑（参考）'
+        },
+        'section-faq': {
+            ja: 'よくある質問',
+            en: 'FAQ',
+            zh: '常见问题'
+        },
+        'section-related-links': {
+            ja: '関連リンク',
+            en: 'Related Links',
+            zh: '相关链接'
+        },
+        'table-col-symptom': {
+            ja: '症状',
+            en: 'Symptom',
+            zh: '症状'
+        },
+        'table-col-action': {
+            ja: '対処',
+            en: 'Action',
+            zh: '处理方法'
+        },
         'back-to-home': {
             ja: '← ホームに戻る',
             en: '← Back to Home',
@@ -3729,14 +3759,14 @@ function initTranslations() {
             zh: '请确认各元素的基准层级和顶层级设置正确。明细表按层级顺序分组。'
         },
         'manual-formwork-prep3-title': {
-            ja: 'Join Geometry は不要',
-            en: 'Join Geometry not required',
-            zh: '无需Join Geometry'
+            ja: '要素同士の結合は不要',
+            en: 'Element joining not required',
+            zh: '元素之间无需结合'
         },
         'manual-formwork-prep3-desc': {
-            ja: '要素同士の接合は <strong>Join Geometry でつなぐ必要はありません</strong>。本機能が幾何検査で接触面を自動検出します。',
-            en: 'You <strong>do not need to join elements with Join Geometry</strong>. This feature auto-detects contact surfaces through geometric inspection.',
-            zh: '元素之间<strong>无需使用Join Geometry连接</strong>。本功能通过几何检查自动检测接触面。'
+            ja: '柱と梁、梁と床などが接している部分は <strong>Revit の「結合」機能で結合させていなくても自動で接触面を判別</strong>します。モデリング時に結合し忘れがあっても、接触している箇所は型枠不要として正しく控除されます。',
+            en: 'Where columns and beams or beams and floors are touching, the contact surfaces are <strong>automatically detected even without using Revit\'s "Join" feature</strong>. Even if joining is forgotten during modeling, touching areas are correctly deducted as formwork-unnecessary.',
+            zh: '柱与梁、梁与楼板等相接的部分，<strong>即使未使用Revit的"结合"功能进行结合也会自动判别接触面</strong>。即使在建模时忘记结合，相接的部分也会作为不需要模板正确扣除。'
         },
         'manual-formwork-prep4-title': {
             ja: '自動除外される要素（モデル変更不要）',
@@ -3754,54 +3784,139 @@ function initTranslations() {
             zh: '💡 <strong>要点：</strong>要缩小计算范围时，请打开仅显示目标范围的3D视图，并选择"当前视图中可见的元素"。也可仅计算剖面框裁剪的范围。'
         },
         'manual-formwork-step1-title': {
-            ja: '3Dビューを開く',
-            en: 'Open a 3D view',
-            zh: '打开3D视图'
+            ja: 'リボンからボタンを実行',
+            en: 'Click the button on the ribbon',
+            zh: '从功能区执行按钮'
         },
         'manual-formwork-step1-desc': {
-            ja: '対象範囲のみが表示された3Dビュー（必要に応じてセクションボックスで切り取り）を開きます。「現在のビューに表示されている要素」モードを使う場合は3Dビューが必須です。',
-            en: 'Open a 3D view showing only the target range (use a section box if needed). A 3D view is required when using the "Elements visible in the current view" mode.',
-            zh: '打开仅显示目标范围的3D视图（必要时使用剖面框裁剪）。使用"当前视图中可见的元素"模式时必须为3D视图。'
+            ja: '<code>Tools28</code> リボン → 構造パネル → <strong>「型枠数量算出」</strong> をクリックします。',
+            en: 'Click <code>Tools28</code> ribbon → Structure panel → <strong>"Formwork Quantity Calculation"</strong>.',
+            zh: '点击 <code>Tools28</code> 功能区 → 结构面板 → <strong>"模板数量计算"</strong>。'
         },
         'manual-formwork-step2-title': {
-            ja: 'ボタンをクリック',
-            en: 'Click the button',
-            zh: '点击按钮'
+            ja: '設定ダイアログで条件を指定',
+            en: 'Specify conditions in the settings dialog',
+            zh: '在设置对话框中指定条件'
         },
-        'manual-formwork-step2-desc': {
-            ja: 'リボン「28 Tools」タブ →「構造」パネル →「型枠数量算出」をクリックします。',
-            en: 'Click Ribbon "28 Tools" tab → "Structure" panel → "Formwork Quantity Calculation".',
-            zh: '点击功能区"28 Tools"选项卡 → "结构"面板 → "模板数量计算"。'
+        'manual-formwork-step2-range-title': {
+            ja: '計算範囲',
+            en: 'Calculation Scope',
+            zh: '计算范围'
+        },
+        'manual-formwork-step2-range-item1': {
+            ja: '<strong>プロジェクト全体</strong> — モデル内の全要素を対象',
+            en: '<strong>Entire project</strong> — All elements in the model',
+            zh: '<strong>整个项目</strong> — 模型内的所有元素'
+        },
+        'manual-formwork-step2-range-item2': {
+            ja: '<strong>現在のビューに表示されている要素</strong> — アクティブ3Dビューで可視の要素のみ',
+            en: '<strong>Elements visible in the current view</strong> — Only elements visible in the active 3D view',
+            zh: '<strong>当前视图中可见的元素</strong> — 仅活动3D视图中可见的元素'
+        },
+        'manual-formwork-step2-agg-title': {
+            ja: '集計区分（複数選択可）',
+            en: 'Aggregation Categories (multi-select)',
+            zh: '汇总分类（可多选）'
+        },
+        'manual-formwork-step2-agg-item1': {
+            ja: '<strong>部位別</strong>（柱・梁・壁・スラブ・基礎・階段・屋根）— 既定でON',
+            en: '<strong>By member</strong> (columns, beams, walls, slabs, foundations, stairs, roofs) — On by default',
+            zh: '<strong>按部位</strong>（柱、梁、墙、楼板、基础、楼梯、屋顶）— 默认开启'
+        },
+        'manual-formwork-step2-agg-item2': {
+            ja: '<strong>工区別</strong> — 「工区」パラメータで分類（パラメータ名を指定）',
+            en: '<strong>By work zone</strong> — Classified by a "work zone" parameter (specify parameter name)',
+            zh: '<strong>按工区</strong> — 按"工区"参数分类（指定参数名）'
+        },
+        'manual-formwork-step2-agg-item3': {
+            ja: '<strong>型枠種別</strong> — 「型枠種別」パラメータで分類（パラメータ名を指定）',
+            en: '<strong>By formwork type</strong> — Classified by a "formwork type" parameter (specify parameter name)',
+            zh: '<strong>按模板类型</strong> — 按"模板类型"参数分类（指定参数名）'
+        },
+        'manual-formwork-step2-output-title': {
+            ja: '出力設定',
+            en: 'Output Settings',
+            zh: '输出设置'
+        },
+        'manual-formwork-step2-output-item1': {
+            ja: '☑ <strong>Excel ファイルに出力</strong> — 部位別シート＋総括シートを含む .xlsx',
+            en: '☑ <strong>Export to Excel</strong> — .xlsx with per-member sheets and a summary sheet',
+            zh: '☑ <strong>导出到Excel</strong> — 包含按部位的工作表和汇总表的.xlsx'
+        },
+        'manual-formwork-step2-output-item2': {
+            ja: '☑ <strong>Revit 集計ビューを作成</strong> — 階層グループ化された集計表',
+            en: '☑ <strong>Create Revit schedule view</strong> — Hierarchically grouped schedule',
+            zh: '☑ <strong>创建Revit明细表视图</strong> — 层级分组的明细表'
+        },
+        'manual-formwork-step2-output-item3': {
+            ja: '☑ <strong>色分け 3D ビューを作成</strong> — 解析専用の3Dビュー「型枠分析」',
+            en: '☑ <strong>Create color-coded 3D view</strong> — Analysis-dedicated 3D view "Formwork Analysis"',
+            zh: '☑ <strong>创建彩色3D视图</strong> — 分析专用的3D视图"型枠分析"'
+        },
+        'manual-formwork-step2-output-item4': {
+            ja: '☑ <strong>集計シートを自動作成</strong> — 3Dビュー＋集計表が配置されたシート',
+            en: '☑ <strong>Auto-create summary sheet</strong> — A sheet with the 3D view and schedules laid out',
+            zh: '☑ <strong>自动创建汇总图纸</strong> — 布置了3D视图和明细表的图纸'
+        },
+        'manual-formwork-step2-color-title': {
+            ja: '色分け区分',
+            en: 'Color Category',
+            zh: '着色分类'
+        },
+        'manual-formwork-step2-color-desc': {
+            ja: '3Dビューの色分けを「部位別」「工区別」「型枠種別」から選択します。',
+            en: 'Choose the 3D view color coding from "by member", "by work zone", or "by formwork type".',
+            zh: '从"按部位""按工区""按模板类型"中选择3D视图的着色方式。'
+        },
+        'manual-formwork-step2-option-title': {
+            ja: 'オプション',
+            en: 'Options',
+            zh: '选项'
+        },
+        'manual-formwork-step2-option-item1': {
+            ja: '☐ <strong>控除面も表示する</strong> — 接触面・天端面をグレー半透明で表示',
+            en: '☐ <strong>Show deducted surfaces</strong> — Display contact and top surfaces in semi-transparent gray',
+            zh: '☐ <strong>也显示扣除面</strong> — 接触面和顶面以灰色半透明显示'
+        },
+        'manual-formwork-step2-option-item2': {
+            ja: '☐ <strong>GL 高さで地中部分を控除</strong> — GLより下の鉛直面・下向き面を控除（基礎の地中面など）',
+            en: '☐ <strong>Deduct underground portions by GL height</strong> — Deduct vertical and downward-facing surfaces below GL (e.g., foundation underground surfaces)',
+            zh: '☐ <strong>按GL高度扣除地下部分</strong> — 扣除GL以下的垂直面和向下面（如基础的地下面等）'
         },
         'manual-formwork-step3-title': {
-            ja: '計算範囲と集計区分を指定',
-            en: 'Specify calculation scope and aggregation categories',
-            zh: '指定计算范围和汇总分类'
+            ja: '「実行」をクリック',
+            en: 'Click "Execute"',
+            zh: '点击"执行"'
         },
         'manual-formwork-step3-desc': {
-            ja: '「プロジェクト全体」または「現在のビューに表示されている要素」を選択し、部位別・工区別・型枠種別の集計区分を選択します。工区・型枠種別はパラメータ名を指定します。',
-            en: 'Choose "Entire project" or "Elements visible in current view", then choose aggregation categories: by member, work zone, or formwork type. Specify parameter names for work zone and formwork type.',
-            zh: '选择"整个项目"或"当前视图中可见的元素"，并选择按部位/工区/模板类型的汇总分类。工区和模板类型需指定参数名。'
+            ja: '処理時間：要素数100〜500個で30秒〜2分程度。',
+            en: 'Processing time: about 30 seconds to 2 minutes for 100–500 elements.',
+            zh: '处理时间：100〜500个元素约30秒〜2分钟。'
         },
         'manual-formwork-step4-title': {
-            ja: '出力先とオプションを設定',
-            en: 'Configure output destinations and options',
-            zh: '设置输出目标和选项'
+            ja: '結果を確認',
+            en: 'Review results',
+            zh: '查看结果'
         },
         'manual-formwork-step4-desc': {
-            ja: 'Excel／Revit集計ビュー／色分け3Dビュー／集計シートのうち必要な出力にチェックを入れます。3Dビューの色分け区分や、GL高さで地中部分を控除するオプションも指定できます。',
-            en: 'Check the desired outputs: Excel, Revit schedule view, color-coded 3D view, and summary sheet. You can also specify the 3D view color category and the option to deduct underground parts by GL height.',
-            zh: '勾选所需输出：Excel、Revit明细表视图、彩色3D视图、汇总图纸。还可指定3D视图的着色分类，以及按GL高度扣除地下部分的选项。'
+            ja: '完了ダイアログに以下が表示されます。',
+            en: 'The completion dialog displays the following:',
+            zh: '完成对话框显示以下内容：'
         },
-        'manual-formwork-step5-title': {
-            ja: '実行と結果確認',
-            en: 'Execute and review results',
-            zh: '执行并查看结果'
+        'manual-formwork-step4-item1': {
+            ja: '対象要素数 ／ 合計型枠面積 ／ 控除面積 ／ 傾斜面面積',
+            en: 'Target element count / Total formwork area / Deducted area / Inclined surface area',
+            zh: '目标元素数 / 总模板面积 / 扣除面积 / 倾斜面面积'
         },
-        'manual-formwork-step5-desc': {
-            ja: '「実行」をクリックすると要素数100〜500個で30秒〜2分程度で処理が完了します。完了ダイアログで対象要素数・合計型枠面積・自動除外件数・出力先などを確認できます。',
-            en: 'Click "Execute" and processing completes in 30 seconds to 2 minutes for 100–500 elements. The completion dialog shows target element count, total formwork area, auto-excluded count, and output destinations.',
-            zh: '点击"执行"，100〜500个元素约30秒〜2分钟完成处理。完成对话框显示目标元素数、总模板面积、自动排除数、输出目标等。'
+        'manual-formwork-step4-item2': {
+            ja: '自動除外件数（鉄骨・デッキスラブ・LGS壁等）',
+            en: 'Auto-excluded count (steel, deck slabs, LGS walls, etc.)',
+            zh: '自动排除数（钢构件、压型钢板楼板、LGS墙等）'
+        },
+        'manual-formwork-step4-item3': {
+            ja: '出力されたシート名・Excel保存先',
+            en: 'Output sheet names and Excel save location',
+            zh: '输出的图纸名称和Excel保存位置'
         },
         'manual-formwork-usecase1-title': {
             ja: '概算見積もりの自動化',
@@ -3892,6 +4007,236 @@ function initTranslations() {
             ja: '処理が遅い場合は計算範囲を「現在のビュー」に絞るか、セクションボックスで対象範囲を限定してください。',
             en: 'If processing is slow, narrow the calculation scope to "Current view" or limit the target range using a section box.',
             zh: '处理较慢时，请将计算范围缩小为"当前视图"，或使用剖面框限定目标范围。'
+        },
+        'manual-formwork-deliv1-title': {
+            ja: '解析3Dビュー「型枠分析」',
+            en: 'Analysis 3D View "Formwork Analysis"',
+            zh: '分析3D视图"型枠分析"'
+        },
+        'manual-formwork-deliv1-item1': {
+            ja: '型枠が必要な面が<strong>色付きの薄板オブジェクト</strong>として配置される',
+            en: 'Formwork-required surfaces are placed as <strong>colored thin-plate objects</strong>',
+            zh: '需要模板的面作为<strong>彩色薄板对象</strong>放置'
+        },
+        'manual-formwork-deliv1-item2': {
+            ja: '部位別の配色：柱＝青／梁＝緑／壁＝橙／スラブ＝黄／基礎＝紫／階段＝水／屋根＝ピンク赤',
+            en: 'Color scheme by member: columns=blue / beams=green / walls=orange / slabs=yellow / foundations=purple / stairs=cyan / roofs=pinkish-red',
+            zh: '按部位配色：柱=蓝/梁=绿/墙=橙/楼板=黄/基础=紫/楼梯=水蓝/屋顶=粉红'
+        },
+        'manual-formwork-deliv1-item3': {
+            ja: '視点はボタン実行時のアクティブ3Dビューを継承',
+            en: 'The viewpoint inherits the active 3D view at the time of button execution',
+            zh: '视点继承按钮执行时激活的3D视图'
+        },
+        'manual-formwork-deliv2-title': {
+            ja: '集計表「型枠数量集計」',
+            en: 'Schedule "Formwork Quantity Summary"',
+            zh: '明细表"型枠数量集計"'
+        },
+        'manual-formwork-deliv2-item1': {
+            ja: '<strong>レベル → 部位 → タイプ名</strong>の階層でグループ化',
+            en: 'Grouped hierarchically by <strong>Level → Member → Type name</strong>',
+            zh: '按<strong>层级 → 部位 → 类型名</strong>的层级分组'
+        },
+        'manual-formwork-deliv2-item2': {
+            ja: '列：件数 ／ レベル ／ 部位 ／ 区分 ／ 型枠面積',
+            en: 'Columns: Count / Level / Member / Category / Formwork area',
+            zh: '列：件数 / 层级 / 部位 / 区分 / 模板面积'
+        },
+        'manual-formwork-deliv2-item3': {
+            ja: '列幅は内容に応じて自動調整',
+            en: 'Column widths auto-adjusted based on content',
+            zh: '列宽根据内容自动调整'
+        },
+        'manual-formwork-deliv3-title': {
+            ja: 'サマリ集計表「型枠数量集計_合計」',
+            en: 'Summary Schedule "Formwork Quantity Summary_Total"',
+            zh: '汇总明细表"型枠数量集計_合計"'
+        },
+        'manual-formwork-deliv3-item1': {
+            ja: '全件の合計値のみを表示する1行集計表',
+            en: 'A single-row schedule showing only the total values',
+            zh: '仅显示全部合计值的单行明细表'
+        },
+        'manual-formwork-deliv3-item2': {
+            ja: '列ヘッダーを赤字・太字・薄黄背景でスタイリング',
+            en: 'Column headers styled in red bold text with pale yellow background',
+            zh: '列标题以红色粗体、浅黄背景设计'
+        },
+        'manual-formwork-deliv3-item3': {
+            ja: 'DirectShape の追加・削除に動的追従（要素を削除すると合計が自動再計算）',
+            en: 'Dynamically tracks DirectShape additions/deletions (totals auto-recalculated when elements are removed)',
+            zh: '动态跟随DirectShape的添加和删除（删除元素时合计自动重新计算）'
+        },
+        'manual-formwork-deliv4-title': {
+            ja: 'シート（オプション）',
+            en: 'Sheet (optional)',
+            zh: '图纸（可选）'
+        },
+        'manual-formwork-deliv4-item1': {
+            ja: '解析3Dビューとメイン集計表・サマリ集計表が自動レイアウトされたA1シート',
+            en: 'An A1 sheet with the analysis 3D view and the main/summary schedules auto-laid out',
+            zh: '自动布置了分析3D视图、主明细表、汇总明细表的A1图纸'
+        },
+        'manual-formwork-deliv5-title': {
+            ja: 'Excel ファイル（オプション）',
+            en: 'Excel File (optional)',
+            zh: 'Excel文件（可选）'
+        },
+        'manual-formwork-deliv5-item1': {
+            ja: '部位別シート＋全件総括シート',
+            en: 'Per-member sheets + a full summary sheet',
+            zh: '按部位的工作表+全部汇总表'
+        },
+        'manual-formwork-deliv5-item2': {
+            ja: 'ヘッダー色付け、オートフィルタ自動設定',
+            en: 'Colored headers, auto-filter automatically configured',
+            zh: '标题着色，自动设置筛选'
+        },
+        'manual-formwork-logic1-title': {
+            ja: '型枠が必要と判定される面',
+            en: 'Surfaces determined to require formwork',
+            zh: '被判定为需要模板的面'
+        },
+        'manual-formwork-logic1-item1': {
+            ja: '鉛直面・斜面',
+            en: 'Vertical and inclined surfaces',
+            zh: '垂直面、斜面'
+        },
+        'manual-formwork-logic1-item2': {
+            ja: '梁・柱・階段の底面',
+            en: 'Bottom surfaces of beams, columns, and stairs',
+            zh: '梁、柱、楼梯的底面'
+        },
+        'manual-formwork-logic1-item3': {
+            ja: '開口部の内側面（縁面の加算）',
+            en: 'Inner surfaces of openings (edge surfaces added)',
+            zh: '开口的内侧面（边缘面加算）'
+        },
+        'manual-formwork-logic2-title': {
+            ja: '型枠不要として控除される面',
+            en: 'Surfaces deducted as not requiring formwork',
+            zh: '作为不需要模板而扣除的面'
+        },
+        'manual-formwork-logic2-item1': {
+            ja: '<strong>床・壁・基礎・屋根の天端</strong> — コンクリート打設時に開放される面',
+            en: '<strong>Top surfaces of floors, walls, foundations, and roofs</strong> — Surfaces open during concrete placement',
+            zh: '<strong>楼板、墙、基础、屋顶的顶面</strong> — 浇筑混凝土时开放的面'
+        },
+        'manual-formwork-logic2-item1a': {
+            ja: '屋根は勾配付き上向き面（傾斜＞約5°）も自動的に天端扱い',
+            en: 'For roofs, sloped upward-facing surfaces (slope > ~5°) are also automatically treated as tops',
+            zh: '屋顶的带坡度向上面（坡度>约5°）也自动作为顶面处理'
+        },
+        'manual-formwork-logic2-item1b': {
+            ja: '壁の斜めの天端は<strong>水平射影の幅が30mm以上</strong>なら天端扱い（小さな面取りは型枠必要）',
+            en: 'Slanted wall tops are treated as tops when <strong>their horizontal projection width is 30mm or more</strong> (small chamfers require formwork)',
+            zh: '墙的斜顶面在<strong>水平投影宽度30mm以上</strong>时作为顶面处理（小倒角需要模板）'
+        },
+        'manual-formwork-logic2-item2': {
+            ja: '<strong>他要素との接触面</strong> — 接触部分のみ控除（完全接触・部分接触の両方に対応）',
+            en: '<strong>Contact surfaces with other elements</strong> — Only contact portions are deducted (supports both full and partial contact)',
+            zh: '<strong>与其他元素的接触面</strong> — 仅扣除接触部分（支持完全接触和部分接触）'
+        },
+        'manual-formwork-logic2-item3': {
+            ja: '<strong>GL高さ以下の地中部分</strong>（オプションON時）',
+            en: '<strong>Underground portions below GL height</strong> (when option is ON)',
+            zh: '<strong>GL高度以下的地下部分</strong>（选项开启时）'
+        },
+        'manual-formwork-logic2-item4': {
+            ja: '<strong>開口部の控除</strong>（窓・ドア・床開口等の面積を自動控除）',
+            en: '<strong>Opening deductions</strong> (window, door, floor opening areas auto-deducted)',
+            zh: '<strong>开口的扣除</strong>（窗、门、楼板开口等面积自动扣除）'
+        },
+        'manual-formwork-faq1-q': {
+            ja: 'Q. 鉄骨柱が型枠必要として残ってしまう',
+            en: 'Q. Steel columns remain as formwork-required',
+            zh: 'Q. 钢柱仍作为需要模板保留'
+        },
+        'manual-formwork-faq1-a': {
+            ja: 'A. ファミリの構造材料が「鋼」または「金属」になっているか確認してください。それでも検出されない場合、ファミリ名・タイプ名に「H-」「BH-」「鉄骨」等のキーワードを含めると4層目の名前判定で除外されます。',
+            en: 'A. Verify that the family\'s structural material is "Steel" or "Metal". If still not detected, including keywords like "H-", "BH-", or "鉄骨" in the family/type name will exclude it via the 4th-layer name detection.',
+            zh: 'A. 请确认族的结构材料是否为"鋼"或"金属"。如果仍未检测到，在族名/类型名中包含"H-"、"BH-"、"鉄骨"等关键字会在第4层名称判定中排除。'
+        },
+        'manual-formwork-faq2-q': {
+            ja: 'Q. RC壁が誤ってLGS壁として除外される',
+            en: 'Q. An RC wall is incorrectly excluded as an LGS wall',
+            zh: 'Q. RC墙被错误排除为LGS墙'
+        },
+        'manual-formwork-faq2-a': {
+            ja: 'A. 壁構造の各層のマテリアルに「Concrete」または「コンクリート」が含まれているか確認してください。コンクリート層が認識されれば、石膏ボード仕上げが付いていてもRC壁として算出対象になります。',
+            en: 'A. Verify that the wall structure layer materials include "Concrete" or "コンクリート". Once a concrete layer is recognized, the wall will be subject to calculation as an RC wall even with gypsum board finishes.',
+            zh: 'A. 请确认墙结构各层的材质是否包含"Concrete"或"コンクリート"。一旦识别到混凝土层，即使有石膏板饰面也会作为RC墙参与计算。'
+        },
+        'manual-formwork-faq3-q': {
+            ja: 'Q. 集計表の列幅が大きすぎる／値が改行される',
+            en: 'Q. Schedule column widths are too large / values wrap',
+            zh: 'Q. 明细表列宽过大/值换行'
+        },
+        'manual-formwork-faq3-a': {
+            ja: 'A. 列幅は実セル内容の最大文字数から自動計算されます。それでも問題がある場合は集計表プロパティで手動調整してください。',
+            en: 'A. Column widths are auto-calculated from the maximum character count of actual cell contents. If issues remain, adjust manually in the schedule properties.',
+            zh: 'A. 列宽根据实际单元格内容的最大字符数自动计算。如仍有问题，请在明细表属性中手动调整。'
+        },
+        'manual-formwork-faq4-q': {
+            ja: 'Q. 結果を再計算したい',
+            en: 'Q. I want to recalculate results',
+            zh: 'Q. 想要重新计算结果'
+        },
+        'manual-formwork-faq4-a': {
+            ja: 'A. ボタンを再実行してください。既存の「型枠分析」ビュー・集計表は上書きされます。視点はその時点でアクティブな3Dビューが引き継がれます。',
+            en: 'A. Re-run the button. The existing "Formwork Analysis" view and schedules will be overwritten. The viewpoint inherits the active 3D view at that time.',
+            zh: 'A. 请重新执行按钮。现有的"型枠分析"视图和明细表将被覆盖。视点继承此时激活的3D视图。'
+        },
+        'manual-formwork-trouble1-sym': {
+            ja: '「対象要素が見つかりませんでした」',
+            en: '"No target elements were found"',
+            zh: '"未找到目标元素"'
+        },
+        'manual-formwork-trouble1-act': {
+            ja: '計算範囲を「プロジェクト全体」に切り替える、または3Dビューに対象要素を表示させる',
+            en: 'Switch the calculation scope to "Entire project", or make the target elements visible in the 3D view',
+            zh: '将计算范围切换为"整个项目"，或在3D视图中显示目标元素'
+        },
+        'manual-formwork-trouble2-sym': {
+            ja: '鉄骨が除外されない／RCが除外される',
+            en: 'Steel is not excluded / RC is excluded',
+            zh: '钢未被排除/RC被排除'
+        },
+        'manual-formwork-trouble2-act': {
+            ja: 'デバッグログ <code>C:\\temp\\Formwork_debug.txt</code> で <code>[SteelDetect]</code> <code>[LgsExclude]</code> 行を確認し、誤判定の根拠を特定',
+            en: 'Check <code>[SteelDetect]</code> and <code>[LgsExclude]</code> lines in the debug log <code>C:\\temp\\Formwork_debug.txt</code> to identify the cause of misjudgment',
+            zh: '在调试日志 <code>C:\\temp\\Formwork_debug.txt</code> 中查看 <code>[SteelDetect]</code>、<code>[LgsExclude]</code> 行，找出误判依据'
+        },
+        'manual-formwork-trouble3-sym': {
+            ja: '処理が遅い',
+            en: 'Processing is slow',
+            zh: '处理较慢'
+        },
+        'manual-formwork-trouble3-act': {
+            ja: '計算範囲を「現在のビュー」に絞る／セクションボックスで対象範囲を限定する',
+            en: 'Narrow the calculation scope to "Current view" / limit the target range using a section box',
+            zh: '将计算范围缩小为"当前视图"/使用剖面框限定目标范围'
+        },
+        'manual-formwork-trouble4-sym': {
+            ja: 'エラーで止まる',
+            en: 'Stops with an error',
+            zh: '因错误停止'
+        },
+        'manual-formwork-trouble4-act': {
+            ja: '完了ダイアログの「エラー・注記」件数を確認し、デバッグログでエラー要素IDを特定',
+            en: 'Check the "Errors & Notes" count in the completion dialog and identify the error element ID in the debug log',
+            zh: '检查完成对话框中的"错误·注记"数量，并在调试日志中找出错误元素ID'
+        },
+        'manual-formwork-link1-label': {
+            ja: 'マニュアル一覧：',
+            en: 'Manual list: ',
+            zh: '手册列表：'
+        },
+        'manual-formwork-link2-label': {
+            ja: 'リリース・最新版：',
+            en: 'Releases / latest version: ',
+            zh: '发布/最新版本：'
         }
     };
 
