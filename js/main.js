@@ -404,6 +404,36 @@ function initTranslations() {
             en: 'Note',
             zh: '备注'
         },
+        'table-col-item': {
+            ja: '項目',
+            en: 'Item',
+            zh: '项目'
+        },
+        'table-col-content': {
+            ja: '内容',
+            en: 'Content',
+            zh: '内容'
+        },
+        'section-output': {
+            ja: '出力結果',
+            en: 'Output Results',
+            zh: '输出结果'
+        },
+        'section-rerun': {
+            ja: '再実行・上書きについて',
+            en: 'Re-run and Overwrite',
+            zh: '关于重新执行与覆盖'
+        },
+        'section-troubleshooting': {
+            ja: 'トラブルシューティング',
+            en: 'Troubleshooting',
+            zh: '故障排除'
+        },
+        'section-related': {
+            ja: '関連機能',
+            en: 'Related Features',
+            zh: '相关功能'
+        },
         'back-to-home': {
             ja: '← ホームに戻る',
             en: '← Back to Home',
@@ -3301,6 +3331,316 @@ function initTranslations() {
             ja: '3Dビュー・立面ビューでは実行できません。平面・天伏・構造伏・断面、またはシート上でご利用ください。',
             en: 'Cannot run on 3D views or elevation views. Use plan, ceiling plan, structural framing, section, or sheet views.',
             zh: '无法在3D视图或立面视图中执行。请在平面、天花板平面、结构伏图、剖面或图纸视图中使用。'
+        },
+        'manual-fire-protection-step3-row1-name': {
+            ja: '耐火被覆パラメータ',
+            en: 'Fire protection parameter',
+            zh: '防火覆盖参数'
+        },
+        'manual-fire-protection-step3-row1-desc': {
+            ja: '自動検出されたパラメータを選択（複数候補がある場合）',
+            en: 'Select an auto-detected parameter (when multiple candidates exist)',
+            zh: '选择自动检测到的参数（有多个候选时）'
+        },
+        'manual-fire-protection-step3-row2-name': {
+            ja: '検出された耐火被覆の種類',
+            en: 'Detected fire protection types',
+            zh: '检测到的防火覆盖类型'
+        },
+        'manual-fire-protection-step3-row2-desc': {
+            ja: 'ビュー内で見つかった種類の一覧。色を自動割り当て（クリックで変更可能）',
+            en: 'List of types found in the view. Colors are auto-assigned (click to change)',
+            zh: '视图中找到的类型列表。自动分配颜色（点击可更改）'
+        },
+        'manual-fire-protection-step3-row3-name': {
+            ja: '塗潰し領域のオフセット設定',
+            en: 'Filled region offset setting',
+            zh: '填充区域偏移设置'
+        },
+        'manual-fire-protection-step3-row3-desc': {
+            ja: '梁・柱の周囲に何mmはみ出して塗潰すかを指定',
+            en: 'Specify how many mm to extend the fill around beams/columns',
+            zh: '指定围绕梁柱外扩多少mm进行填充'
+        },
+        'manual-fire-protection-step3-row4-name': {
+            ja: '共通オフセット',
+            en: 'Common offset',
+            zh: '通用偏移'
+        },
+        'manual-fire-protection-step3-row4-desc': {
+            ja: '全種類で同じ値',
+            en: 'Same value for all types',
+            zh: '所有类型使用相同值'
+        },
+        'manual-fire-protection-step3-row5-name': {
+            ja: '種類ごとに個別オフセット',
+            en: 'Per-type offset',
+            zh: '按类型单独偏移'
+        },
+        'manual-fire-protection-step3-row5-desc': {
+            ja: '種類別に個別の値を指定',
+            en: 'Specify individual values per type',
+            zh: '按类型指定不同的值'
+        },
+        'manual-fire-protection-step4-row1-name': {
+            ja: '柱A（外寸）',
+            en: 'Column A (outer dimension)',
+            zh: '柱A（外尺寸）'
+        },
+        'manual-fire-protection-step4-row1-desc': {
+            ja: '柱の外周から被覆外面までの距離 mm',
+            en: 'Distance from column outer perimeter to coating outer surface (mm)',
+            zh: '从柱外周到覆盖外表面的距离 mm'
+        },
+        'manual-fire-protection-step4-row2-name': {
+            ja: '柱B（被覆厚）',
+            en: 'Column B (coating thickness)',
+            zh: '柱B（覆盖厚度）'
+        },
+        'manual-fire-protection-step4-row2-desc': {
+            ja: '被覆の厚み mm',
+            en: 'Coating thickness (mm)',
+            zh: '覆盖厚度 mm'
+        },
+        'manual-fire-protection-step5-row1-name': {
+            ja: '線種',
+            en: 'Line style',
+            zh: '线型'
+        },
+        'manual-fire-protection-step5-row1-desc': {
+            ja: '塗潰し領域の境界線の種類',
+            en: 'Boundary line type of the filled region',
+            zh: '填充区域边界线的类型'
+        },
+        'manual-fire-protection-step5-row2-name': {
+            ja: '塗りパターン',
+            en: 'Fill pattern',
+            zh: '填充图案'
+        },
+        'manual-fire-protection-step5-row2-desc': {
+            ja: '塗潰しパターン（通常は「Solid fill」または「中実」）',
+            en: 'Fill pattern (usually "Solid fill" or "中実")',
+            zh: '填充图案（通常为"Solid fill"或"中实"）'
+        },
+        'manual-fire-protection-step5-row3-name': {
+            ja: '文字タイプ',
+            en: 'Text type',
+            zh: '文字类型'
+        },
+        'manual-fire-protection-step5-row3-desc': {
+            ja: '凡例に使用するテキストノートのタイプ',
+            en: 'Text note type used in the legend',
+            zh: '图例使用的文字注释类型'
+        },
+        'manual-fire-protection-step5-row4-name': {
+            ja: '既存の「耐火被覆_」塗潰領域・凡例を上書きする',
+            en: 'Overwrite existing "耐火被覆_" filled regions and legend',
+            zh: '覆盖现有的"耐火被覆_"填充区域和图例'
+        },
+        'manual-fire-protection-step5-row4-desc': {
+            ja: '再実行時にチェック推奨（既存を削除して再生成）',
+            en: 'Recommended when re-running (deletes existing and regenerates)',
+            zh: '重新执行时建议勾选（删除现有并重新生成）'
+        },
+        'manual-fire-protection-output-intro': {
+            ja: '実行後、以下が自動作成されます。',
+            en: 'After execution, the following are automatically created.',
+            zh: '执行后将自动创建以下内容。'
+        },
+        'manual-fire-protection-output1-title': {
+            ja: '1. 塗潰し領域（FilledRegion）',
+            en: '1. Filled Region',
+            zh: '1. 填充区域（FilledRegion）'
+        },
+        'manual-fire-protection-output1-desc': {
+            ja: '各ビューの梁・柱の周囲に、種類別の色で塗潰し領域が配置されます。',
+            en: 'Filled regions colored by type are placed around beams/columns in each view.',
+            zh: '在各视图的梁柱周围放置按类型着色的填充区域。'
+        },
+        'manual-fire-protection-output1-item1': {
+            ja: '塗潰しタイプ名：<code>耐火被覆_{種類名}</code>（梁）／ <code>耐火被覆_柱_{種類名}</code>（柱）',
+            en: 'Filled region type name: <code>耐火被覆_{type}</code> (beam) / <code>耐火被覆_柱_{type}</code> (column)',
+            zh: '填充类型名：<code>耐火被覆_{类型名}</code>（梁）／ <code>耐火被覆_柱_{类型名}</code>（柱）'
+        },
+        'manual-fire-protection-output1-item2': {
+            ja: '種類が同じ要素は同じ色',
+            en: 'Elements of the same type share the same color',
+            zh: '相同类型的元素使用相同颜色'
+        },
+        'manual-fire-protection-output2-title': {
+            ja: '2. 凡例（製図ビュー）',
+            en: '2. Legend (Drafting View)',
+            zh: '2. 图例（绘图视图）'
+        },
+        'manual-fire-protection-output2-desc': {
+            ja: '<code>耐火被覆色分け凡例</code> という名前の製図ビューが自動作成されます。',
+            en: 'A drafting view named <code>耐火被覆色分け凡例</code> is automatically created.',
+            zh: '自动创建名为<code>耐火被覆色分け凡例</code>的绘图视图。'
+        },
+        'manual-fire-protection-output2-item1': {
+            ja: 'タイトル「◎耐火被覆仕様凡例」',
+            en: 'Title "◎耐火被覆仕様凡例" (Fire Protection Specification Legend)',
+            zh: '标题"◎耐火被覆仕様凡例"（防火覆盖规格图例）'
+        },
+        'manual-fire-protection-output2-item2': {
+            ja: '各種類の色四角＋名称',
+            en: 'Color squares and names for each type',
+            zh: '各类型的色块和名称'
+        },
+        'manual-fire-protection-output2-item3': {
+            ja: '柱の枠型サンプル',
+            en: 'Column frame-shape sample',
+            zh: '柱的框形示例'
+        },
+        'manual-fire-protection-output2-item4': {
+            ja: '注記（耐火被覆不要範囲・半湿式吹付ロックウール工法の例外範囲など）',
+            en: 'Notes (areas not requiring fire protection, exceptions for semi-wet spray rockwool method, etc.)',
+            zh: '注记（不需要防火覆盖的范围、半湿式喷涂岩棉工法的例外范围等）'
+        },
+        'manual-fire-protection-output3-title': {
+            ja: '3. シート上での凡例自動配置',
+            en: '3. Auto-placement of Legend on Sheet',
+            zh: '3. 图纸上图例的自动放置'
+        },
+        'manual-fire-protection-output3-desc': {
+            ja: '<strong>シートで実行した場合のみ</strong>、上記凡例がシートの<strong>右上角</strong>にビューポートとして自動配置されます。',
+            en: '<strong>Only when run on a sheet</strong>, the legend above is automatically placed as a viewport at the <strong>top-right corner</strong> of the sheet.',
+            zh: '<strong>仅在图纸上执行时</strong>，上述图例会作为视口自动放置在图纸的<strong>右上角</strong>。'
+        },
+        'manual-fire-protection-output3-hint': {
+            ja: '💡 配置位置が気に入らない場合は、Revit上でビューポートを掴んで移動できます。',
+            en: '💡 If you don\'t like the placement, you can drag the viewport in Revit to move it.',
+            zh: '💡 如果不喜欢放置位置，可在Revit中拖动视口移动。'
+        },
+        'manual-fire-protection-rerun-intro': {
+            ja: '設定を変更して再実行したい場合：',
+            en: 'To re-run with changed settings:',
+            zh: '更改设置后想重新执行时：'
+        },
+        'manual-fire-protection-rerun-step1': {
+            ja: 'ダイアログのSTEP 3で<strong>「既存の『耐火被覆_』塗潰領域・凡例を上書きする」</strong>にチェック',
+            en: 'In STEP 3 of the dialog, check <strong>"Overwrite existing 耐火被覆_ filled regions and legend"</strong>',
+            zh: '在对话框的STEP 3勾选<strong>"覆盖现有的『耐火被覆_』填充区域和图例"</strong>'
+        },
+        'manual-fire-protection-rerun-step2': {
+            ja: '「実行」をクリック',
+            en: 'Click "Execute"',
+            zh: '点击"执行"'
+        },
+        'manual-fire-protection-rerun-result': {
+            ja: '→ 既存の塗潰し領域・凡例ビューが削除され、新しい設定で再作成されます。',
+            en: '→ Existing filled regions and the legend view are deleted, and recreated with the new settings.',
+            zh: '→ 现有的填充区域和图例视图将被删除，并以新设置重新创建。'
+        },
+        'manual-fire-protection-trouble1-title': {
+            ja: '「ビュー内に梁または柱が見つかりません」と表示される',
+            en: '"No beams or columns found in the view" is displayed',
+            zh: '显示"视图中未找到梁或柱"'
+        },
+        'manual-fire-protection-trouble1-item1': {
+            ja: 'ビュー上で梁・柱が<strong>表示されている</strong>か確認してください（フィルタや非表示で隠れていませんか？）',
+            en: 'Check that beams/columns are <strong>visible</strong> in the view (not hidden by filters or hide commands)',
+            zh: '请确认梁柱在视图上<strong>已显示</strong>（是否被过滤器或隐藏命令隐藏？）'
+        },
+        'manual-fire-protection-trouble1-item2': {
+            ja: '構造フレーム（梁）／構造柱のカテゴリで配置されているか確認',
+            en: 'Verify they are placed under the Structural Framing (beams) / Structural Columns categories',
+            zh: '确认是否放置于结构框架（梁）／结构柱类别下'
+        },
+        'manual-fire-protection-trouble2-title': {
+            ja: '「『耐火被覆』を含むパラメータが見つかりません」と表示される',
+            en: '"No parameter containing 耐火被覆 found" is displayed',
+            zh: '显示"未找到包含『耐火被覆』的参数"'
+        },
+        'manual-fire-protection-trouble2-item1': {
+            ja: '梁・柱の<strong>インスタンスまたはタイプパラメータ</strong>に「耐火被覆」を含む名前のパラメータを追加してください',
+            en: 'Add a parameter whose name includes "耐火被覆" to the <strong>instance or type parameters</strong> of beams/columns',
+            zh: '请在梁柱的<strong>实例或类型参数</strong>中添加名称包含"耐火被覆"的参数'
+        },
+        'manual-fire-protection-trouble2-item2': {
+            ja: '共有パラメータ・プロジェクトパラメータどちらでも可',
+            en: 'Either shared parameters or project parameters can be used',
+            zh: '共享参数或项目参数均可'
+        },
+        'manual-fire-protection-trouble3-title': {
+            ja: '検出された種類が想定と違う',
+            en: 'Detected types differ from expected',
+            zh: '检测到的类型与预期不同'
+        },
+        'manual-fire-protection-trouble3-item1': {
+            ja: 'パラメータの値に<strong>タイプミス・全角半角混在・空白の差</strong>がないか確認',
+            en: 'Check parameter values for <strong>typos, mixed full/half-width characters, or space differences</strong>',
+            zh: '检查参数值是否存在<strong>错字、全角半角混用、空格差异</strong>'
+        },
+        'manual-fire-protection-trouble3-item2': {
+            ja: 'パラメータ値が空の要素は色分け対象外',
+            en: 'Elements with empty parameter values are excluded from coloring',
+            zh: '参数值为空的元素不参与着色'
+        },
+        'manual-fire-protection-trouble4-title': {
+            ja: '凡例がシートからはみ出す',
+            en: 'Legend extends beyond the sheet',
+            zh: '图例超出图纸范围'
+        },
+        'manual-fire-protection-trouble4-item1': {
+            ja: '種類数が多い場合や注記文字サイズが大きい場合、凡例サイズが推定より大きくなることがあります',
+            en: 'When there are many types or the annotation text size is large, the legend may be larger than estimated',
+            zh: '类型数量多或注记文字尺寸大时，图例尺寸可能比预估更大'
+        },
+        'manual-fire-protection-trouble4-item2': {
+            ja: 'Revit上で凡例ビューポートを手動で移動してください',
+            en: 'Manually move the legend viewport in Revit',
+            zh: '请在Revit中手动移动图例视口'
+        },
+        'manual-fire-protection-trouble5-title': {
+            ja: '同じ色が複数の種類に使われている',
+            en: 'The same color is used for multiple types',
+            zh: '同一颜色被用于多个类型'
+        },
+        'manual-fire-protection-trouble5-item1': {
+            ja: '種類が13以上ある場合、色のバリエーションを増やすため明度違いの色になります',
+            en: 'When there are 13 or more types, colors of different brightness are used to add variation',
+            zh: '类型数达到13个以上时，会使用不同明度的颜色以增加变化'
+        },
+        'manual-fire-protection-trouble5-item2': {
+            ja: 'ダイアログ「検出された耐火被覆の種類」セクションで色四角をクリックして手動変更できます',
+            en: 'In the "Detected fire protection types" section of the dialog, click a color square to change it manually',
+            zh: '在对话框的"检测到的防火覆盖类型"部分点击色块可手动更改'
+        },
+        'manual-fire-protection-trouble6-title': {
+            ja: 'ビューテンプレートがある',
+            en: 'A view template is applied',
+            zh: '应用了视图样板'
+        },
+        'manual-fire-protection-trouble6-item1': {
+            ja: '実行時に解除確認ダイアログが出ます。「はい」で一時的に解除します',
+            en: 'A detach confirmation dialog appears at runtime. Click "Yes" to detach temporarily',
+            zh: '执行时会显示解除确认对话框。点击"是"暂时解除'
+        },
+        'manual-fire-protection-trouble6-item2': {
+            ja: '元に戻したい場合は、実行後に手動でテンプレートを再設定してください',
+            en: 'To revert, manually reapply the template after execution',
+            zh: '如想恢复，请在执行后手动重新设置样板'
+        },
+        'manual-fire-protection-related-beam-bottom': {
+            ja: '梁下端色分け',
+            en: 'Beam Bottom Level Coloring',
+            zh: '梁底标高着色'
+        },
+        'manual-fire-protection-related-beam-bottom-desc': {
+            ja: ' — 天井伏図で梁下端レベルを色分け',
+            en: ' — Color-code beam bottom levels in ceiling plans',
+            zh: ' — 在天花板平面图中按梁底标高着色'
+        },
+        'manual-fire-protection-related-beam-top': {
+            ja: '梁天端色分け',
+            en: 'Beam Top Level Coloring',
+            zh: '梁顶标高着色'
+        },
+        'manual-fire-protection-related-beam-top-desc': {
+            ja: ' — 平面・構造伏図で梁天端レベルを色分け',
+            en: ' — Color-code beam top levels in plan and structural framing views',
+            zh: ' — 在平面图、结构伏图中按梁顶标高着色'
         }
     };
 
