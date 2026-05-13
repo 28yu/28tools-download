@@ -241,6 +241,105 @@
     word-break: break-word;
 }
 
+.manual-page .info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.manual-page .info-table th,
+.manual-page .info-table td {
+    border: 1px solid var(--light-border);
+    padding: 10px 14px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.manual-page .info-table thead th {
+    background: rgba(74, 144, 226, 0.08);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.manual-page .info-table td.status {
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.manual-page .info-table tbody tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.manual-page .prep-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    counter-reset: prep-counter;
+}
+
+.manual-page .prep-list > li {
+    counter-increment: prep-counter;
+    position: relative;
+    padding-left: 44px;
+    margin-bottom: 18px;
+}
+
+.manual-page .prep-list > li:last-child {
+    margin-bottom: 0;
+}
+
+.manual-page .prep-list > li::before {
+    content: counter(prep-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--blueprint-blue, #4a90e2);
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.manual-page .prep-list h4 {
+    margin: 0 0 6px;
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.manual-page .prep-list p {
+    margin: 0 0 8px;
+    color: var(--text-primary);
+}
+
+.manual-page .prep-list ul {
+    margin: 6px 0 0;
+    padding-left: 22px;
+    list-style: disc;
+}
+
+.manual-page .prep-list ul li {
+    margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+    .manual-page .info-table {
+        font-size: 0.88rem;
+    }
+    .manual-page .info-table th,
+    .manual-page .info-table td {
+        padding: 8px 10px;
+    }
+}
+
 .manual-page .content-box li {
     margin-bottom: 12px;
     overflow-wrap: break-word;
