@@ -369,6 +369,41 @@ function initTranslations() {
             en: 'Key Features',
             zh: '主要特点'
         },
+        'section-supported-views': {
+            ja: '実行できるビュー',
+            en: 'Supported Views',
+            zh: '可执行的视图'
+        },
+        'section-preparation': {
+            ja: '実行前の準備',
+            en: 'Preparation',
+            zh: '执行前的准备'
+        },
+        'table-col-view-type': {
+            ja: 'ビュー種別',
+            en: 'View Type',
+            zh: '视图类型'
+        },
+        'table-col-supported': {
+            ja: '対応',
+            en: 'Support',
+            zh: '支持'
+        },
+        'table-col-behavior': {
+            ja: '動作',
+            en: 'Behavior',
+            zh: '行为'
+        },
+        'table-col-execution': {
+            ja: '実行',
+            en: 'Execution',
+            zh: '执行'
+        },
+        'table-col-note': {
+            ja: '備考',
+            en: 'Note',
+            zh: '备注'
+        },
         'back-to-home': {
             ja: '← ホームに戻る',
             en: '← Back to Home',
@@ -509,6 +544,26 @@ function initTranslations() {
             ja: '塗り潰し領域を個別に分割または1つに統合',
             en: 'Split or merge filled regions',
             zh: '将填充区域分割或合并'
+        },
+        'feature-fire-protection-title': {
+            ja: '耐火被覆色分け',
+            en: 'Fire Protection Coloring',
+            zh: '防火覆盖着色'
+        },
+        'feature-fire-protection-desc': {
+            ja: '梁・柱の耐火被覆を種類別に色分けし凡例も自動作成',
+            en: 'Color-code beam/column fire protection by type with auto-generated legend',
+            zh: '按类型为梁柱防火覆盖着色并自动生成图例'
+        },
+        'feature-formwork-title': {
+            ja: '型枠数量算出',
+            en: 'Formwork Quantity Calculation',
+            zh: '模板数量计算'
+        },
+        'feature-formwork-desc': {
+            ja: 'RC躯体から型枠面積を自動算出しExcel・集計表・3Dビューに出力',
+            en: 'Auto-calculate formwork area from RC structures, output to Excel/schedules/3D views',
+            zh: '从RC结构自动计算模板面积并输出到Excel、明细表和3D视图'
         },
         'version-title': {
             ja: 'Revitバージョンを選択',
@@ -3029,6 +3084,478 @@ function initTranslations() {
     };
 
     // ========================================
+    // fire-protection.html (耐火被覆色分け)
+    // ========================================
+    translations.fireProtection = {
+        'manual-fire-protection-title': {
+            ja: '耐火被覆色分け',
+            en: 'Fire Protection Coloring',
+            zh: '防火覆盖着色'
+        },
+        'manual-fire-protection-subtitle': {
+            ja: '梁・柱の耐火被覆を種類別に色分けし凡例も自動作成',
+            en: 'Color-code beam/column fire protection by type with auto-generated legend',
+            zh: '按类型为梁柱防火覆盖着色并自动生成图例'
+        },
+        'manual-fire-protection-overview': {
+            ja: '平面・天伏・構造伏・断面ビューに配置されている梁・柱の耐火被覆範囲を、種類別に色分けされた塗潰し領域として自動作成する機能です。凡例（製図ビュー）も自動作成され、シート上で実行した場合はシート右上に自動配置されます。1枚のシート内の複数ビューも一括処理できます。',
+            en: 'This feature automatically creates color-coded filled regions for fire protection ranges of beams and columns placed in plan, ceiling plan, structural framing, and section views. A legend (drafting view) is also automatically generated, and when executed on a sheet, it is automatically placed in the top-right corner. Multiple views on a single sheet can be processed in batch.',
+            zh: '此功能可自动为平面、天花板平面、结构伏图、剖面视图中的梁柱防火覆盖范围按类型创建彩色填充区域。图例（绘图视图）也会自动生成，在图纸上执行时会自动放置在图纸右上角。可批量处理同一图纸中的多个视图。'
+        },
+        'manual-fire-protection-feature1': {
+            ja: '平面・天伏・構造伏ビューで梁＋柱を色分け',
+            en: 'Color-code beams and columns in plan, ceiling plan, and structural framing views',
+            zh: '在平面、天花板平面、结构伏图视图中为梁和柱着色'
+        },
+        'manual-fire-protection-feature2': {
+            ja: '断面図では梁のみ色分け対応',
+            en: 'In section views, only beams are color-coded',
+            zh: '剖面视图中仅对梁着色'
+        },
+        'manual-fire-protection-feature3': {
+            ja: 'シート上で実行すれば複数ビューを一括処理',
+            en: 'Execute on a sheet to batch-process multiple views',
+            zh: '在图纸上执行可批量处理多个视图'
+        },
+        'manual-fire-protection-feature4': {
+            ja: 'パラメータ名に「耐火被覆」を含むものを自動検出',
+            en: 'Auto-detect parameters whose names include "耐火被覆" (fire protection)',
+            zh: '自动检测名称中包含"耐火被覆"（防火覆盖）的参数'
+        },
+        'manual-fire-protection-feature5': {
+            ja: '塗潰し領域のオフセットを共通／種類別に指定可能',
+            en: 'Specify filled region offsets as common or per-type',
+            zh: '可指定填充区域的偏移量为通用或按类型'
+        },
+        'manual-fire-protection-feature6': {
+            ja: '柱は外寸・被覆厚を指定して枠型形状で生成',
+            en: 'Columns are generated as frame shapes with specified outer dimension and coating thickness',
+            zh: '柱可指定外尺寸和覆盖厚度，生成框形形状'
+        },
+        'manual-fire-protection-feature7': {
+            ja: '凡例（製図ビュー）を自動生成しシート右上に自動配置',
+            en: 'Auto-generate a legend (drafting view) and place it at top-right of the sheet',
+            zh: '自动生成图例（绘图视图）并自动放置在图纸右上角'
+        },
+        'manual-fire-protection-feature8': {
+            ja: '既存の塗潰し領域・凡例を上書き再生成するモードあり',
+            en: 'Overwrite mode regenerates existing filled regions and legend',
+            zh: '具有覆盖模式可重新生成现有填充区域和图例'
+        },
+        'manual-fire-protection-prep1-title': {
+            ja: '耐火被覆のパラメータを設定する',
+            en: 'Configure fire protection parameters',
+            zh: '设置防火覆盖参数'
+        },
+        'manual-fire-protection-prep1-desc': {
+            ja: '梁・柱のインスタンスまたはタイプに、耐火被覆の種類を識別するパラメータを設定しておきます。',
+            en: 'Set a parameter on beam/column instances or types that identifies the fire protection type.',
+            zh: '在梁柱的实例或类型上设置可识别防火覆盖类型的参数。'
+        },
+        'manual-fire-protection-prep2-title': {
+            ja: '梁・柱ファミリを確認する',
+            en: 'Verify beam/column families',
+            zh: '确认梁柱族'
+        },
+        'manual-fire-protection-prep3-title': {
+            ja: 'ビューテンプレートの確認',
+            en: 'Check view templates',
+            zh: '确认视图样板'
+        },
+        'manual-fire-protection-prep3-desc': {
+            ja: 'ビューテンプレートが設定されているビューでは塗潰し領域を配置できないため、コマンド実行時に「テンプレートを解除しますか？」という確認が表示されます。「はい」で解除して進めるか、事前に解除しておいてください。',
+            en: 'Filled regions cannot be placed in views with a view template applied, so a confirmation dialog appears asking "Detach template?" when the command runs. Click Yes to proceed, or detach the template beforehand.',
+            zh: '在应用了视图样板的视图中无法放置填充区域，因此执行命令时会显示"解除样板？"的确认对话框。点击"是"继续，或事先解除样板。'
+        },
+        'manual-fire-protection-views-hint': {
+            ja: '💡 <strong>おすすめは「シート上で実行」</strong> — 複数ビューを一度に処理し、凡例も自動でレイアウトされます。',
+            en: '💡 <strong>Recommended: Run on a sheet</strong> — Processes multiple views at once and lays out the legend automatically.',
+            zh: '💡 <strong>推荐"在图纸上执行"</strong> — 一次处理多个视图，并自动布局图例。'
+        },
+        'manual-fire-protection-step1-title': {
+            ja: '対象のビューまたはシートを開く',
+            en: 'Open the target view or sheet',
+            zh: '打开目标视图或图纸'
+        },
+        'manual-fire-protection-step1-desc': {
+            ja: '平面・天伏・構造伏・断面、または対象ビューが配置されたシートをアクティブにします。シート上で実行すると複数ビューを一括処理できます。',
+            en: 'Activate a plan, ceiling plan, structural framing, section view, or a sheet containing target views. Executing on a sheet processes multiple views at once.',
+            zh: '激活平面、天花板平面、结构伏图、剖面视图或包含目标视图的图纸。在图纸上执行可一次处理多个视图。'
+        },
+        'manual-fire-protection-step2-title': {
+            ja: 'ボタンをクリック',
+            en: 'Click the button',
+            zh: '点击按钮'
+        },
+        'manual-fire-protection-step2-desc': {
+            ja: 'リボン「28 Tools」タブ →「色分け」パネル →「耐火被覆色分け」をクリックします。',
+            en: 'Click Ribbon "28 Tools" tab → "Coloring" panel → "Fire Protection Coloring".',
+            zh: '点击功能区"28 Tools"选项卡 → "着色"面板 → "防火覆盖着色"。'
+        },
+        'manual-fire-protection-step3-title': {
+            ja: 'STEP 1/3：基本設定',
+            en: 'STEP 1/3: Basic settings',
+            zh: 'STEP 1/3：基本设置'
+        },
+        'manual-fire-protection-step3-desc': {
+            ja: '耐火被覆パラメータを選択し、検出された種類ごとに自動割り当てされた色を確認・変更します。塗潰し領域のオフセット（共通／種類別）も指定できます。',
+            en: 'Select the fire protection parameter and review/change the auto-assigned color for each detected type. Filled region offset (common or per-type) can also be specified.',
+            zh: '选择防火覆盖参数，确认/更改为每种检测到的类型自动分配的颜色。还可指定填充区域偏移量（通用或按类型）。'
+        },
+        'manual-fire-protection-step4-title': {
+            ja: 'STEP 2/3：柱設定',
+            en: 'STEP 2/3: Column settings',
+            zh: 'STEP 2/3：柱设置'
+        },
+        'manual-fire-protection-step4-desc': {
+            ja: '平面・天伏・構造伏では柱A（外寸）と柱B（被覆厚）を指定します。柱は内側に空洞のある枠型として塗潰し領域が作成されます（断面のみ実行時はスキップ）。',
+            en: 'For plan, ceiling plan, and structural framing views, specify Column A (outer dimension) and Column B (coating thickness). Columns are created as frame-shaped filled regions with hollow inside (skipped if only running on sections).',
+            zh: '对于平面、天花板平面、结构伏图，指定柱A（外尺寸）和柱B（覆盖厚度）。柱被创建为内部空心的框形填充区域（仅在剖面运行时跳过）。'
+        },
+        'manual-fire-protection-step5-title': {
+            ja: 'STEP 3/3：表示・確認と実行',
+            en: 'STEP 3/3: Display, review, and execute',
+            zh: 'STEP 3/3：显示、确认并执行'
+        },
+        'manual-fire-protection-step5-desc': {
+            ja: '線種・塗りパターン・凡例の文字タイプを設定し、処理概要を確認して「実行」をクリックします。塗潰し領域と凡例ビューが自動生成されます。',
+            en: 'Set the line style, fill pattern, and legend text type. Review the processing summary and click "Execute". Filled regions and the legend view are generated automatically.',
+            zh: '设置线型、填充图案、图例文字类型，确认处理概要后点击"执行"。将自动生成填充区域和图例视图。'
+        },
+        'manual-fire-protection-usecase1-title': {
+            ja: '耐火仕様の図面化',
+            en: 'Visualizing fire protection specs',
+            zh: '将防火规格图纸化'
+        },
+        'manual-fire-protection-usecase1-desc': {
+            ja: '梁・柱の耐火被覆仕様を種類別に色分けした図面を、設計図書・施工図として瞬時に作成できます。',
+            en: 'Instantly generate drawings color-coded by fire protection type for use in design documents and shop drawings.',
+            zh: '可瞬间生成按类型对梁柱防火覆盖规格着色的图纸，用于设计文档和施工图。'
+        },
+        'manual-fire-protection-usecase2-title': {
+            ja: '仕様確認・設計レビュー',
+            en: 'Spec check and design review',
+            zh: '规格确认和设计审查'
+        },
+        'manual-fire-protection-usecase2-desc': {
+            ja: '耐火被覆の指定漏れや種類の誤りを視覚的に確認でき、設計レビュー時のチェック作業を効率化します。',
+            en: 'Visually identify missing or incorrect fire protection specifications, streamlining design review.',
+            zh: '可视化确认防火覆盖的遗漏指定或类型错误，提高设计审查效率。'
+        },
+        'manual-fire-protection-usecase3-title': {
+            ja: 'シート出力の自動化',
+            en: 'Automated sheet output',
+            zh: '图纸输出自动化'
+        },
+        'manual-fire-protection-usecase3-desc': {
+            ja: 'シート上で実行するだけで複数ビューと凡例が一括レイアウトされ、提出図書の作成時間を大幅に短縮します。',
+            en: 'Simply run on a sheet to lay out multiple views and the legend at once, drastically reducing time for deliverable preparation.',
+            zh: '只需在图纸上执行即可一次性布局多个视图和图例，大幅缩短提交文件的制作时间。'
+        },
+        'manual-fire-protection-tip1': {
+            ja: '<strong data-lang-key="manual-fire-protection-tip1-strong">シート上での実行が最も効率的：</strong>平面・断面など複数ビューを一括処理でき、凡例も自動でシート右上に配置されます。',
+            en: '<strong data-lang-key="manual-fire-protection-tip1-strong">Running on a sheet is the most efficient:</strong> Multiple views like plans and sections can be batch-processed, and the legend is automatically placed at the top-right of the sheet.',
+            zh: '<strong data-lang-key="manual-fire-protection-tip1-strong">在图纸上运行最高效：</strong>可批量处理平面、剖面等多个视图，图例也会自动放置在图纸右上角。'
+        },
+        'manual-fire-protection-tip1-strong': {
+            ja: 'シート上での実行が最も効率的：',
+            en: 'Running on a sheet is the most efficient:',
+            zh: '在图纸上运行最高效：'
+        },
+        'manual-fire-protection-tip2': {
+            ja: '<strong data-lang-key="manual-fire-protection-tip2-strong">再実行時は上書きON：</strong>STEP 3の「既存の『耐火被覆_』塗潰領域・凡例を上書きする」にチェックを入れると、設定変更してきれいに再生成できます。',
+            en: '<strong data-lang-key="manual-fire-protection-tip2-strong">Turn on overwrite when re-running:</strong> Check "Overwrite existing 耐火被覆_ filled regions and legend" in STEP 3 to cleanly regenerate after setting changes.',
+            zh: '<strong data-lang-key="manual-fire-protection-tip2-strong">重新执行时打开覆盖：</strong>在STEP 3勾选"覆盖现有的『耐火被覆_』填充区域和图例"，可在更改设置后干净地重新生成。'
+        },
+        'manual-fire-protection-tip2-strong': {
+            ja: '再実行時は上書きON：',
+            en: 'Turn on overwrite when re-running:',
+            zh: '重新执行时打开覆盖：'
+        },
+        'manual-fire-protection-tip3': {
+            ja: '<strong data-lang-key="manual-fire-protection-tip3-strong">色は手動変更可能：</strong>自動割り当ては梁＝パステル系／柱＝ビビッド系で最大12種類保証。気に入らない色はダイアログで個別にクリックして変更できます。',
+            en: '<strong data-lang-key="manual-fire-protection-tip3-strong">Colors can be changed manually:</strong> Auto-assignment uses pastel tones for beams and vivid tones for columns, guaranteeing up to 12 distinct colors. Click each color in the dialog to change.',
+            zh: '<strong data-lang-key="manual-fire-protection-tip3-strong">颜色可手动更改：</strong>自动分配为梁=柔和色系/柱=鲜艳色系，最多保证12种不同颜色。不满意的颜色可在对话框中单独点击更改。'
+        },
+        'manual-fire-protection-tip3-strong': {
+            ja: '色は手動変更可能：',
+            en: 'Colors can be changed manually:',
+            zh: '颜色可手动更改：'
+        },
+        'manual-fire-protection-note1': {
+            ja: '梁・柱に「耐火被覆」を含む名前のパラメータ（インスタンスまたはタイプ）が必要です。値が空の要素は色分け対象外となります。',
+            en: 'A parameter (instance or type) whose name includes "耐火被覆" is required on beams/columns. Elements with empty values are excluded from coloring.',
+            zh: '梁柱需要名称中包含"耐火被覆"的参数（实例或类型）。值为空的元素不参与着色。'
+        },
+        'manual-fire-protection-note2': {
+            ja: 'パラメータ値の表記ゆれ（全角／半角・空白の差・タイプミス）は別の種類として検出されるため、値の統一にご注意ください。',
+            en: 'Inconsistencies in parameter values (full-width/half-width, spaces, typos) are detected as different types, so keep values uniform.',
+            zh: '参数值的表记差异（全角/半角、空格差异、错字）会被检测为不同类型，请注意值的统一。'
+        },
+        'manual-fire-protection-note3': {
+            ja: 'ビューテンプレートが設定されているビューでは、実行時にテンプレート解除の確認ダイアログが表示されます。',
+            en: 'For views with a view template applied, a confirmation dialog to detach the template appears at runtime.',
+            zh: '对于应用了视图样板的视图，执行时会显示解除样板的确认对话框。'
+        },
+        'manual-fire-protection-note4': {
+            ja: '3Dビュー・立面ビューでは実行できません。平面・天伏・構造伏・断面、またはシート上でご利用ください。',
+            en: 'Cannot run on 3D views or elevation views. Use plan, ceiling plan, structural framing, section, or sheet views.',
+            zh: '无法在3D视图或立面视图中执行。请在平面、天花板平面、结构伏图、剖面或图纸视图中使用。'
+        }
+    };
+
+    // ========================================
+    // formwork-calculator.html (型枠数量算出)
+    // ========================================
+    translations.formwork = {
+        'manual-formwork-title': {
+            ja: '型枠数量算出',
+            en: 'Formwork Quantity Calculation',
+            zh: '模板数量计算'
+        },
+        'manual-formwork-subtitle': {
+            ja: 'RC躯体から型枠面積を自動算出しExcel・集計表・3Dビューに出力',
+            en: 'Auto-calculate formwork area from RC structures, output to Excel/schedules/3D views',
+            zh: '从RC结构自动计算模板面积并输出到Excel、明细表和3D视图'
+        },
+        'manual-formwork-overview': {
+            ja: 'RC躯体モデルから「型枠が必要な面」と「不要な面（接触面・天端・地中部）」を自動分類し、要素ごとの型枠面積をレベル・部位・タイプ別に集計します。結果はExcelファイル・Revit集計表・色分け3Dビュー・シートに同時出力できます。鉄骨部材・デッキスラブ・LGS壁などは自動判別して除外されます。',
+            en: 'Automatically classifies surfaces as "formwork-required" or "not required (contact/top/underground)" from RC structural models, and aggregates formwork area per element by level, member, and type. Results can be simultaneously output to Excel files, Revit schedules, color-coded 3D views, and sheets. Steel members, deck slabs, and LGS walls are automatically detected and excluded.',
+            zh: '从RC结构模型自动分类"需要模板的面"和"不需要的面（接触面、顶面、地下部分）"，按层级、部位、类型汇总各元素的模板面积。结果可同时输出到Excel文件、Revit明细表、彩色3D视图和图纸。钢构件、压型钢板楼板、LGS墙等会自动识别并排除。'
+        },
+        'manual-formwork-feature1': {
+            ja: '柱・梁・壁・床・基礎・階段・屋根を対象に自動算出',
+            en: 'Auto-calculate for columns, beams, walls, floors, foundations, stairs, and roofs',
+            zh: '自动计算柱、梁、墙、楼板、基础、楼梯、屋顶'
+        },
+        'manual-formwork-feature2': {
+            ja: '要素同士の接触面・天端・地中部を幾何検査で自動控除',
+            en: 'Auto-deduct contact surfaces, top surfaces, and underground parts through geometric inspection',
+            zh: '通过几何检查自动扣除元素间接触面、顶面和地下部分'
+        },
+        'manual-formwork-feature3': {
+            ja: 'Join Geometry の事前接合は不要',
+            en: 'No pre-joining with Join Geometry required',
+            zh: '无需事先使用Join Geometry连接'
+        },
+        'manual-formwork-feature4': {
+            ja: '鉄骨・デッキスラブ・LGS壁・鉄骨階段を自動除外',
+            en: 'Auto-exclude steel members, deck slabs, LGS walls, and steel stairs',
+            zh: '自动排除钢构件、压型钢板楼板、LGS墙、钢楼梯'
+        },
+        'manual-formwork-feature5': {
+            ja: 'レベル → 部位 → タイプ名の階層で集計表を生成',
+            en: 'Generate schedules grouped hierarchically by Level → Member → Type',
+            zh: '按层级 → 部位 → 类型名的层级生成明细表'
+        },
+        'manual-formwork-feature6': {
+            ja: '部位別・工区別・型枠種別で色分け3Dビューを作成',
+            en: 'Create color-coded 3D views by member, work zone, or formwork type',
+            zh: '按部位、工区、模板类型创建彩色3D视图'
+        },
+        'manual-formwork-feature7': {
+            ja: 'Excel出力（部位別シート＋総括シート、オートフィルタ自動設定）',
+            en: 'Excel output (per-member sheets + summary sheet with auto-filter)',
+            zh: 'Excel输出（按部位的工作表+汇总表，自动设置筛选）'
+        },
+        'manual-formwork-feature8': {
+            ja: '集計シート（3Dビュー＋集計表）を自動レイアウト',
+            en: 'Auto-layout summary sheet (3D view + schedules)',
+            zh: '自动布局汇总图纸（3D视图+明细表）'
+        },
+        'manual-formwork-feature9': {
+            ja: 'GL高さで地中部分を控除するオプション',
+            en: 'Option to deduct underground portions by GL height',
+            zh: '通过GL高度扣除地下部分的选项'
+        },
+        'manual-formwork-prep1-title': {
+            ja: 'モデルの確認',
+            en: 'Verify the model',
+            zh: '确认模型'
+        },
+        'manual-formwork-prep1-desc': {
+            ja: '下記カテゴリに該当するものが算出対象になります。正しいカテゴリでモデリングされているかを確認してください。',
+            en: 'Elements in the following categories are subject to calculation. Verify they are modeled in the correct categories.',
+            zh: '以下类别的元素为计算对象。请确认是否以正确的类别建模。'
+        },
+        'manual-formwork-prep2-title': {
+            ja: 'レベル設定',
+            en: 'Level settings',
+            zh: '层级设置'
+        },
+        'manual-formwork-prep2-desc': {
+            ja: '各要素のベースレベル・上部レベルが正しく設定されていることを確認してください。集計表はレベル順にグループ化されます。',
+            en: 'Verify that the base level and top level of each element are set correctly. Schedules are grouped in level order.',
+            zh: '请确认各元素的基准层级和顶层级设置正确。明细表按层级顺序分组。'
+        },
+        'manual-formwork-prep3-title': {
+            ja: 'Join Geometry は不要',
+            en: 'Join Geometry not required',
+            zh: '无需Join Geometry'
+        },
+        'manual-formwork-prep3-desc': {
+            ja: '要素同士の接合は <strong>Join Geometry でつなぐ必要はありません</strong>。本機能が幾何検査で接触面を自動検出します。',
+            en: 'You <strong>do not need to join elements with Join Geometry</strong>. This feature auto-detects contact surfaces through geometric inspection.',
+            zh: '元素之间<strong>无需使用Join Geometry连接</strong>。本功能通过几何检查自动检测接触面。'
+        },
+        'manual-formwork-prep4-title': {
+            ja: '自動除外される要素（モデル変更不要）',
+            en: 'Auto-excluded elements (no model changes needed)',
+            zh: '自动排除的元素（无需修改模型）'
+        },
+        'manual-formwork-prep4-desc': {
+            ja: '以下は型枠不要と判定され、集計から自動的に除外されます：',
+            en: 'The following are determined to require no formwork and are automatically excluded from aggregation:',
+            zh: '以下被判定为不需要模板，将自动从汇总中排除：'
+        },
+        'manual-formwork-views-hint': {
+            ja: '💡 <strong>ポイント：</strong>計算対象を絞り込みたい場合は、対象範囲のみが表示された3Dビューを開いた状態で「現在のビューに表示されている要素」を選択してください。セクションボックスで切り取った範囲のみを算出することも可能です。',
+            en: '💡 <strong>Tip:</strong> To narrow the calculation scope, open a 3D view showing only the target range and choose "Elements visible in the current view". Section box-clipped ranges can also be used.',
+            zh: '💡 <strong>要点：</strong>要缩小计算范围时，请打开仅显示目标范围的3D视图，并选择"当前视图中可见的元素"。也可仅计算剖面框裁剪的范围。'
+        },
+        'manual-formwork-step1-title': {
+            ja: '3Dビューを開く',
+            en: 'Open a 3D view',
+            zh: '打开3D视图'
+        },
+        'manual-formwork-step1-desc': {
+            ja: '対象範囲のみが表示された3Dビュー（必要に応じてセクションボックスで切り取り）を開きます。「現在のビューに表示されている要素」モードを使う場合は3Dビューが必須です。',
+            en: 'Open a 3D view showing only the target range (use a section box if needed). A 3D view is required when using the "Elements visible in the current view" mode.',
+            zh: '打开仅显示目标范围的3D视图（必要时使用剖面框裁剪）。使用"当前视图中可见的元素"模式时必须为3D视图。'
+        },
+        'manual-formwork-step2-title': {
+            ja: 'ボタンをクリック',
+            en: 'Click the button',
+            zh: '点击按钮'
+        },
+        'manual-formwork-step2-desc': {
+            ja: 'リボン「28 Tools」タブ →「構造」パネル →「型枠数量算出」をクリックします。',
+            en: 'Click Ribbon "28 Tools" tab → "Structure" panel → "Formwork Quantity Calculation".',
+            zh: '点击功能区"28 Tools"选项卡 → "结构"面板 → "模板数量计算"。'
+        },
+        'manual-formwork-step3-title': {
+            ja: '計算範囲と集計区分を指定',
+            en: 'Specify calculation scope and aggregation categories',
+            zh: '指定计算范围和汇总分类'
+        },
+        'manual-formwork-step3-desc': {
+            ja: '「プロジェクト全体」または「現在のビューに表示されている要素」を選択し、部位別・工区別・型枠種別の集計区分を選択します。工区・型枠種別はパラメータ名を指定します。',
+            en: 'Choose "Entire project" or "Elements visible in current view", then choose aggregation categories: by member, work zone, or formwork type. Specify parameter names for work zone and formwork type.',
+            zh: '选择"整个项目"或"当前视图中可见的元素"，并选择按部位/工区/模板类型的汇总分类。工区和模板类型需指定参数名。'
+        },
+        'manual-formwork-step4-title': {
+            ja: '出力先とオプションを設定',
+            en: 'Configure output destinations and options',
+            zh: '设置输出目标和选项'
+        },
+        'manual-formwork-step4-desc': {
+            ja: 'Excel／Revit集計ビュー／色分け3Dビュー／集計シートのうち必要な出力にチェックを入れます。3Dビューの色分け区分や、GL高さで地中部分を控除するオプションも指定できます。',
+            en: 'Check the desired outputs: Excel, Revit schedule view, color-coded 3D view, and summary sheet. You can also specify the 3D view color category and the option to deduct underground parts by GL height.',
+            zh: '勾选所需输出：Excel、Revit明细表视图、彩色3D视图、汇总图纸。还可指定3D视图的着色分类，以及按GL高度扣除地下部分的选项。'
+        },
+        'manual-formwork-step5-title': {
+            ja: '実行と結果確認',
+            en: 'Execute and review results',
+            zh: '执行并查看结果'
+        },
+        'manual-formwork-step5-desc': {
+            ja: '「実行」をクリックすると要素数100〜500個で30秒〜2分程度で処理が完了します。完了ダイアログで対象要素数・合計型枠面積・自動除外件数・出力先などを確認できます。',
+            en: 'Click "Execute" and processing completes in 30 seconds to 2 minutes for 100–500 elements. The completion dialog shows target element count, total formwork area, auto-excluded count, and output destinations.',
+            zh: '点击"执行"，100〜500个元素约30秒〜2分钟完成处理。完成对话框显示目标元素数、总模板面积、自动排除数、输出目标等。'
+        },
+        'manual-formwork-usecase1-title': {
+            ja: '概算見積もりの自動化',
+            en: 'Automated rough estimation',
+            zh: '概算估算自动化'
+        },
+        'manual-formwork-usecase1-desc': {
+            ja: 'RC躯体モデルから型枠面積を瞬時に算出し、概算見積もりの作成時間を大幅に短縮します。',
+            en: 'Instantly calculate formwork area from RC structural models, drastically reducing the time to prepare rough estimates.',
+            zh: '从RC结构模型瞬间计算模板面积，大幅缩短概算估算的制作时间。'
+        },
+        'manual-formwork-usecase2-title': {
+            ja: '工区別の数量管理',
+            en: 'Quantity management by work zone',
+            zh: '按工区的数量管理'
+        },
+        'manual-formwork-usecase2-desc': {
+            ja: '工区パラメータで分類した集計を出力し、施工計画・進捗管理に活用できます。',
+            en: 'Output aggregations classified by work zone parameter for use in construction planning and progress management.',
+            zh: '输出按工区参数分类的汇总，可用于施工计划和进度管理。'
+        },
+        'manual-formwork-usecase3-title': {
+            ja: '図書提出資料の作成',
+            en: 'Preparing submittal documents',
+            zh: '制作提交文件'
+        },
+        'manual-formwork-usecase3-desc': {
+            ja: '色分け3Dビュー＋集計表のシートを自動作成し、提出図書をそのまま出力できます。',
+            en: 'Auto-create a sheet with color-coded 3D view and schedules, ready to deliver as submittal documents.',
+            zh: '自动创建彩色3D视图+明细表的图纸，可直接作为提交文件输出。'
+        },
+        'manual-formwork-tip1': {
+            ja: '<strong data-lang-key="manual-formwork-tip1-strong">対象を絞り込むなら3Dビュー：</strong>セクションボックスで対象範囲のみを表示した3Dビューを開き、「現在のビューに表示されている要素」を選択すると処理が高速化されます。',
+            en: '<strong data-lang-key="manual-formwork-tip1-strong">Use a 3D view to narrow the target:</strong> Open a 3D view with a section box showing only the target range, then choose "Elements visible in the current view" for faster processing.',
+            zh: '<strong data-lang-key="manual-formwork-tip1-strong">缩小目标范围用3D视图：</strong>打开使用剖面框仅显示目标范围的3D视图，选择"当前视图中可见的元素"可加速处理。'
+        },
+        'manual-formwork-tip1-strong': {
+            ja: '対象を絞り込むなら3Dビュー：',
+            en: 'Use a 3D view to narrow the target:',
+            zh: '缩小目标范围用3D视图：'
+        },
+        'manual-formwork-tip2': {
+            ja: '<strong data-lang-key="manual-formwork-tip2-strong">サマリ集計表は動的：</strong>「型枠数量集計_合計」表はDirectShapeの追加・削除に動的追従し、要素を削除すると合計が自動再計算されます。',
+            en: '<strong data-lang-key="manual-formwork-tip2-strong">Summary schedule is dynamic:</strong> The "Formwork Quantity Summary_Total" schedule dynamically tracks DirectShape additions/deletions; totals are automatically recalculated when elements are removed.',
+            zh: '<strong data-lang-key="manual-formwork-tip2-strong">汇总明细表是动态的：</strong>"型枠数量集計_合計"表会动态跟踪DirectShape的添加和删除，删除元素时合计自动重新计算。'
+        },
+        'manual-formwork-tip2-strong': {
+            ja: 'サマリ集計表は動的：',
+            en: 'Summary schedule is dynamic:',
+            zh: '汇总明细表是动态的：'
+        },
+        'manual-formwork-tip3': {
+            ja: '<strong data-lang-key="manual-formwork-tip3-strong">控除面の可視化：</strong>オプション「控除面も表示する」をONにすると、接触面・天端面がグレー半透明で表示され、算出ロジックの確認に便利です。',
+            en: '<strong data-lang-key="manual-formwork-tip3-strong">Visualize deducted surfaces:</strong> Turning on the "Show deducted surfaces" option displays contact surfaces and top surfaces as semi-transparent gray, useful for verifying the calculation logic.',
+            zh: '<strong data-lang-key="manual-formwork-tip3-strong">可视化扣除面：</strong>打开"也显示扣除面"选项，接触面和顶面会以灰色半透明显示，便于确认计算逻辑。'
+        },
+        'manual-formwork-tip3-strong': {
+            ja: '控除面の可視化：',
+            en: 'Visualize deducted surfaces:',
+            zh: '可视化扣除面：'
+        },
+        'manual-formwork-tip4': {
+            ja: '<strong data-lang-key="manual-formwork-tip4-strong">再計算は再実行で：</strong>ボタンを再実行すると既存の「型枠分析」ビュー・集計表が上書きされます。視点はその時点でアクティブな3Dビューが引き継がれます。',
+            en: '<strong data-lang-key="manual-formwork-tip4-strong">Re-run to recalculate:</strong> Re-running the button overwrites the existing "Formwork Analysis" view and schedules. The viewpoint inherits the active 3D view at that time.',
+            zh: '<strong data-lang-key="manual-formwork-tip4-strong">重新计算就重新执行：</strong>重新执行按钮会覆盖现有的"型枠分析"视图和明细表。视点继承此时激活的3D视图。'
+        },
+        'manual-formwork-tip4-strong': {
+            ja: '再計算は再実行で：',
+            en: 'Re-run to recalculate:',
+            zh: '重新计算就重新执行：'
+        },
+        'manual-formwork-note1': {
+            ja: 'シートビューでは実行できません。3Dビュー（推奨）または平面・断面ビューに切り替えてから実行してください。',
+            en: 'Cannot be executed on sheet views. Switch to a 3D view (recommended) or a plan/section view first.',
+            zh: '无法在图纸视图中执行。请先切换到3D视图（推荐）或平面/剖面视图。'
+        },
+        'manual-formwork-note2': {
+            ja: '鉄骨柱が除外されない場合は、ファミリの構造材料が「鋼」または「金属」になっているか、ファミリ名・タイプ名に「H-」「BH-」「鉄骨」等のキーワードが含まれているかを確認してください。',
+            en: 'If steel columns are not excluded, check that the family\'s structural material is "Steel" or "Metal", or that the family/type name contains keywords like "H-", "BH-", or "鉄骨".',
+            zh: '如果钢柱未被排除，请检查族的结构材料是否为"鋼"或"金属"，或族名/类型名是否包含"H-"、"BH-"、"鉄骨"等关键字。'
+        },
+        'manual-formwork-note3': {
+            ja: 'RC壁が誤ってLGS壁として除外される場合は、壁構造の各層のマテリアルに「Concrete」または「コンクリート」が含まれているかを確認してください。',
+            en: 'If an RC wall is incorrectly excluded as an LGS wall, check that each wall structure layer\'s material includes "Concrete" or "コンクリート".',
+            zh: '如果RC墙被错误排除为LGS墙，请检查墙结构各层的材质是否包含"Concrete"或"コンクリート"。'
+        },
+        'manual-formwork-note4': {
+            ja: '処理が遅い場合は計算範囲を「現在のビュー」に絞るか、セクションボックスで対象範囲を限定してください。',
+            en: 'If processing is slow, narrow the calculation scope to "Current view" or limit the target range using a section box.',
+            zh: '处理较慢时，请将计算范围缩小为"当前视图"，或使用剖面框限定目标范围。'
+        }
+    };
+
+    // ========================================
     // フッターリンク翻訳
     // ========================================
     translations.footerLinks = {
@@ -4563,6 +5090,8 @@ function initTranslations() {
         translations.excelExport,
         translations.excelImport,
         translations.filledRegion,
+        translations.fireProtection,
+        translations.formwork,
         translations.footerLinks,
         translations.hatchPage,
         translations.privacyPage,
