@@ -464,6 +464,16 @@ function initTranslations() {
             en: 'Action',
             zh: '处理方法'
         },
+        'table-col-member': {
+            ja: '部位',
+            en: 'Member',
+            zh: '部位'
+        },
+        'table-col-revit-category': {
+            ja: 'Revit カテゴリ',
+            en: 'Revit Category',
+            zh: 'Revit 类别'
+        },
         'back-to-home': {
             ja: '← ホームに戻る',
             en: '← Back to Home',
@@ -3671,6 +3681,66 @@ function initTranslations() {
             ja: ' — 平面・構造伏図で梁天端レベルを色分け',
             en: ' — Color-code beam top levels in plan and structural framing views',
             zh: ' — 在平面图、结构伏图中按梁顶标高着色'
+        },
+        'manual-fire-protection-view-row1-type': {
+            ja: '平面ビュー',
+            en: 'Plan View',
+            zh: '平面视图'
+        },
+        'manual-fire-protection-view-row1-behavior': {
+            ja: '梁＋柱を色分け',
+            en: 'Color-code beams and columns',
+            zh: '为梁和柱着色'
+        },
+        'manual-fire-protection-view-row2-type': {
+            ja: '天井伏図',
+            en: 'Ceiling Plan',
+            zh: '天花板平面'
+        },
+        'manual-fire-protection-view-row2-behavior': {
+            ja: '梁＋柱を色分け',
+            en: 'Color-code beams and columns',
+            zh: '为梁和柱着色'
+        },
+        'manual-fire-protection-view-row3-type': {
+            ja: '構造伏図',
+            en: 'Structural Framing Plan',
+            zh: '结构伏图'
+        },
+        'manual-fire-protection-view-row3-behavior': {
+            ja: '梁＋柱を色分け',
+            en: 'Color-code beams and columns',
+            zh: '为梁和柱着色'
+        },
+        'manual-fire-protection-view-row4-type': {
+            ja: '断面図',
+            en: 'Section View',
+            zh: '剖面视图'
+        },
+        'manual-fire-protection-view-row4-behavior': {
+            ja: '梁のみ色分け',
+            en: 'Color-code beams only',
+            zh: '仅为梁着色'
+        },
+        'manual-fire-protection-view-row5-type': {
+            ja: 'シート',
+            en: 'Sheet',
+            zh: '图纸'
+        },
+        'manual-fire-protection-view-row5-behavior': {
+            ja: '配置されている上記ビューを一括処理＋凡例自動配置',
+            en: 'Batch-process the views placed on the sheet + auto-place legend',
+            zh: '批量处理图纸上的上述视图＋自动放置图例'
+        },
+        'manual-fire-protection-view-row6-type': {
+            ja: 'その他（3D・立面など）',
+            en: 'Others (3D, elevation, etc.)',
+            zh: '其他（3D、立面等）'
+        },
+        'manual-fire-protection-view-row6-behavior': {
+            ja: '実行不可',
+            en: 'Cannot execute',
+            zh: '无法执行'
         }
     };
 
@@ -4237,6 +4307,121 @@ function initTranslations() {
             ja: 'リリース・最新版：',
             en: 'Releases / latest version: ',
             zh: '发布/最新版本：'
+        },
+        'manual-formwork-view-row1-type': {
+            ja: '3Dビュー',
+            en: '3D View',
+            zh: '3D视图'
+        },
+        'manual-formwork-view-row1-status': {
+            ja: '✅ 推奨',
+            en: '✅ Recommended',
+            zh: '✅ 推荐'
+        },
+        'manual-formwork-view-row1-note': {
+            ja: '「現在のビューに表示されている要素」モードで使用する場合は3Dビューが必須',
+            en: 'A 3D view is required when using the "Elements visible in the current view" mode',
+            zh: '使用"当前视图中可见的元素"模式时必须为3D视图'
+        },
+        'manual-formwork-view-row2-type': {
+            ja: '平面ビュー・断面ビュー',
+            en: 'Plan / Section View',
+            zh: '平面视图、剖面视图'
+        },
+        'manual-formwork-view-row2-status': {
+            ja: '⚠️ 可',
+            en: '⚠️ Allowed',
+            zh: '⚠️ 可'
+        },
+        'manual-formwork-view-row2-note': {
+            ja: '「プロジェクト全体」モードでのみ実行可能',
+            en: 'Can only be executed in "Entire project" mode',
+            zh: '仅能在"整个项目"模式下执行'
+        },
+        'manual-formwork-view-row3-type': {
+            ja: 'シートビュー',
+            en: 'Sheet View',
+            zh: '图纸视图'
+        },
+        'manual-formwork-view-row3-status': {
+            ja: '❌ 不可',
+            en: '❌ Not allowed',
+            zh: '❌ 不可'
+        },
+        'manual-formwork-view-row3-note': {
+            ja: 'アクティブビューを3Dビューに切り替えてから実行してください',
+            en: 'Switch the active view to a 3D view before executing',
+            zh: '请将活动视图切换为3D视图后再执行'
+        },
+        'manual-formwork-cat-col': {
+            ja: '柱',
+            en: 'Column',
+            zh: '柱'
+        },
+        'manual-formwork-cat-col-revit': {
+            ja: '構造柱',
+            en: 'Structural Columns',
+            zh: '结构柱'
+        },
+        'manual-formwork-cat-beam': {
+            ja: '梁',
+            en: 'Beam',
+            zh: '梁'
+        },
+        'manual-formwork-cat-beam-revit': {
+            ja: '構造フレーム',
+            en: 'Structural Framing',
+            zh: '结构框架'
+        },
+        'manual-formwork-cat-wall': {
+            ja: '壁',
+            en: 'Wall',
+            zh: '墙'
+        },
+        'manual-formwork-cat-wall-revit': {
+            ja: '壁',
+            en: 'Walls',
+            zh: '墙'
+        },
+        'manual-formwork-cat-floor': {
+            ja: '床',
+            en: 'Floor',
+            zh: '楼板'
+        },
+        'manual-formwork-cat-floor-revit': {
+            ja: '床',
+            en: 'Floors',
+            zh: '楼板'
+        },
+        'manual-formwork-cat-foundation': {
+            ja: '基礎',
+            en: 'Foundation',
+            zh: '基础'
+        },
+        'manual-formwork-cat-foundation-revit': {
+            ja: '構造基礎',
+            en: 'Structural Foundations',
+            zh: '结构基础'
+        },
+        'manual-formwork-cat-stair': {
+            ja: '階段',
+            en: 'Stair',
+            zh: '楼梯'
+        },
+        'manual-formwork-cat-stair-revit': {
+            ja: '階段',
+            en: 'Stairs',
+            zh: '楼梯'
+        },
+        'manual-formwork-cat-roof': {
+            ja: '屋根',
+            en: 'Roof',
+            zh: '屋顶'
+        },
+        'manual-formwork-cat-roof-revit': {
+            ja: '屋根',
+            en: 'Roofs',
+            zh: '屋顶'
         }
     };
 
