@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梁レベル色分け - 28 Tools マニュアル</title>
+    <link rel="icon" type="image/png" href="../images/site-icons/favicon-28.png">
+    <link rel="canonical" href="https://28tools.com/manual/beam-level-color.html">
+    <meta name="description" content="Revitの梁を天端レベル・下端レベルごとにパステルカラーで色分け表示。自動ラベル・凡例生成機能付き無料アドインの使い方マニュアル。">
+    <meta property="og:title" content="梁レベル色分け - 28 Tools マニュアル">
+    <meta property="og:description" content="Revitの梁を天端レベル・下端レベルごとにパステルカラーで色分け表示。自動ラベル・凡例生成機能付き無料アドインの使い方マニュアル。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://28tools.com/manual/beam-level-color.html">
+    <meta property="og:image" content="https://28tools.com/images/ogp-image.png">
+    <meta property="og:site_name" content="28 Tools">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197151217236924"
+         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/manual.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="manual-page">
+    <!-- 共通ヘッダー -->
+    <div id="header-container"></div>
+
+    <!-- サイドバーナビゲーション -->
+    <div id="sidebar-container"></div>
+
+    <!-- マニュアルコンテンツ -->
+    <div class="manual-container">
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <a href="../index.html" data-lang-key="breadcrumb-home">ホーム</a>
+            <span class="separator">›</span>
+            <a href="../addins.html" data-lang-key="breadcrumb-addins">アドイン</a>
+            <span class="separator">›</span>
+            <span>梁レベル色分け</span>
+        </nav>
+
+        <!-- 機能タイトル -->
+        <div class="manual-header">
+            <div class="icon-wrapper" style="display:flex; gap:12px; justify-content:center; align-items:center;">
+                <img src="../images/revit-icons/beam_top_level.png" alt="Beam Top Level Icon" class="feature-icon">
+                <img src="../images/revit-icons/beam_under_level.png" alt="Beam Bottom Level Icon" class="feature-icon">
+            </div>
+            <h1 class="manual-title">梁レベル色分け</h1>
+            <p class="manual-subtitle">梁の天端・下端レベルをパステルカラーで色分け表示</p>
+        </div>
+
+        <!-- 機能概要 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
+            <div class="content-box">
+                <p>
+                    梁を天端レベルまたは下端レベルの値ごとに色分け表示する機能です。ビュー上でレベルの異なる梁を視覚的にすばやく把握できます。どちらの機能も、色分けされた塗潰し領域・梁ラベル（TextNote）・凡例ビューを自動作成します。
+                </p>
+                <p style="margin-top: 12px;">
+                    リボン: 「<strong>28 Tools</strong>」タブ →「<strong>構造</strong>」パネル
+                </p>
+            </div>
+        </section>
+
+        <!-- 機能比較テーブル -->
+        <section class="manual-section">
+            <h2 class="section-title">機能の違い</h2>
+            <div class="content-box">
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>機能</th>
+                            <th>ボタン名</th>
+                            <th data-lang-key="table-col-view-type">対象ビュー</th>
+                            <th>色分けの基準</th>
+                            <th>ステップ数</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>梁天端色分け</strong></td>
+                            <td>梁天端色分け</td>
+                            <td>平面ビュー・構造伏図</td>
+                            <td>天端レベルオフセット値をそのまま使用</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><strong>梁下端色分け</strong></td>
+                            <td>梁下端色分け</td>
+                            <td>天井伏図</td>
+                            <td>階高 + 天端オフセット − 梁高さ で計算</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 実行できるビュー -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-supported-views">実行できるビュー</h2>
+            <div class="content-box">
+                <h3 style="font-size: 1.05rem; margin-top: 0; margin-bottom: 12px;">梁天端色分け</h3>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th data-lang-key="table-col-view-type">ビュー種別</th>
+                            <th data-lang-key="table-col-supported">対応</th>
+                            <th data-lang-key="table-col-behavior">動作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>平面ビュー（FloorPlan）</strong></td>
+                            <td class="status">◯</td>
+                            <td>天端レベルオフセット値で色分け。参照レベルはビューの GenLevel から自動取得</td>
+                        </tr>
+                        <tr>
+                            <td><strong>構造伏図（EngineeringPlan）</strong></td>
+                            <td class="status">◯</td>
+                            <td>天端レベルオフセット値で色分け。参照レベルはビューの GenLevel から自動取得</td>
+                        </tr>
+                        <tr>
+                            <td>その他</td>
+                            <td class="status">×</td>
+                            <td>実行不可</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="font-size: 1.05rem; margin-top: 24px; margin-bottom: 12px;">梁下端色分け</h3>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th data-lang-key="table-col-view-type">ビュー種別</th>
+                            <th data-lang-key="table-col-supported">対応</th>
+                            <th data-lang-key="table-col-behavior">動作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>天井伏図（CeilingPlan）</strong></td>
+                            <td class="status">◯</td>
+                            <td>計算した下端レベル値で色分け</td>
+                        </tr>
+                        <tr>
+                            <td>その他</td>
+                            <td class="status">×</td>
+                            <td>実行不可</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 使い方 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
+
+            <!-- 梁天端色分け -->
+            <h3 style="font-size: 1.1rem; margin: 24px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--blueprint-blue);">梁天端色分け</h3>
+
+            <div class="step-box">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>コマンド起動</h3>
+                    <p>
+                        平面ビューまたは構造伏図をアクティブにして「<strong>梁天端色分け</strong>」をクリックします。
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>STEP 1 — 基本設定</h3>
+                    <table class="info-table" style="margin-top: 12px;">
+                        <thead>
+                            <tr>
+                                <th data-lang-key="table-col-item">項目</th>
+                                <th data-lang-key="table-col-content">内容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>参照レベル</strong></td>
+                                <td>ビューの GenLevel（自動取得・変更不可）</td>
+                            </tr>
+                            <tr>
+                                <td><strong>文字タイプ</strong></td>
+                                <td>ラベルに使用するテキストタイプを選択</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>STEP 2 — 天端パラメータ選択</h3>
+                    <p>
+                        ファミリごとに天端レベルオフセットを格納したパラメータを選択します。自動検出された候補がラジオボタンで表示されます（カッコ内は検出件数）。候補にない場合は「<strong>その他</strong>」ドロップダウンから選択。
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>STEP 3 — 確認と実行</h3>
+                    <p>
+                        処理対象の梁数を確認し、「<strong>実行</strong>」をクリック。再実行する場合は <strong>「既存の『梁天端_』塗潰領域・凡例を上書き」</strong> にチェックしてください。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 梁下端色分け -->
+            <h3 style="font-size: 1.1rem; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--blueprint-blue);">梁下端色分け</h3>
+
+            <p style="margin-bottom: 16px;">
+                天井伏図の梁を、計算した下端レベル値ごとに色分けします。
+            </p>
+
+            <p style="margin-bottom: 16px;">下端レベルの計算式：</p>
+            <pre style="background:#f4f4f4; padding:12px; border-radius:6px; font-size:0.9rem; margin:12px 0;">梁下端レベル = 階高 + 天端オフセット − 梁高さ</pre>
+            <ul style="margin: 12px 0 20px; padding-left: 22px;">
+                <li><strong>階高</strong> = 上位レベル標高 − 参照レベル標高（例: 3000mm）</li>
+                <li><strong>天端オフセット</strong> = 梁の天端パラメータ値（上位レベルからの下がりは負値。例: −300mm）</li>
+                <li><strong>梁高さ</strong> = 梁高さパラメータ値（例: 600mm）</li>
+                <li>結果は参照レベル基準で表示（例: +2100 → 参照レベルから2100mm上）</li>
+            </ul>
+
+            <div class="step-box">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>コマンド起動</h3>
+                    <p>
+                        天井伏図をアクティブにして「<strong>梁下端色分け</strong>」をクリックします。
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>STEP 1 — レベル設定</h3>
+                    <table class="info-table" style="margin-top: 12px;">
+                        <thead>
+                            <tr>
+                                <th data-lang-key="table-col-item">項目</th>
+                                <th data-lang-key="table-col-content">内容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>参照レベル</strong></td>
+                                <td>ビューの GenLevel（自動取得・変更不可）</td>
+                            </tr>
+                            <tr>
+                                <td><strong>上位レベル</strong></td>
+                                <td>梁が配置されているレベルを選択（参照レベルより上のみ表示）</td>
+                            </tr>
+                            <tr>
+                                <td><strong>階高</strong></td>
+                                <td>選択後に自動表示</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>STEP 2 — 梁高さパラメータ選択</h3>
+                    <p>
+                        ファミリごとに梁高さ（断面高さ）を格納したパラメータを選択します。
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>STEP 3 — 天端パラメータ選択</h3>
+                    <p>
+                        ファミリごとに天端レベルオフセットを格納したパラメータを選択します。
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>STEP 4 — 確認と実行</h3>
+                    <p>
+                        処理対象の梁数を確認し、「<strong>実行</strong>」をクリック。再実行する場合は <strong>「既存の『梁下_』塗潰領域・凡例を上書き」</strong> にチェックしてください。
+                    </p>
+                </div>
+            </div>
+
+            <!-- スクリーンショット用プレースホルダー -->
+            <div class="image-placeholder">
+                <p data-lang-key="image-placeholder-text">📷 スクリーンショット画像をここに追加予定</p>
+            </div>
+        </section>
+
+        <!-- 出力結果 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-output">出力結果</h2>
+            <div class="content-box">
+                <p style="margin-bottom: 16px;">実行後、以下が自動作成されます（梁天端・梁下端共通）。</p>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>出力物</th>
+                            <th>内容</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>塗潰し領域</strong></td>
+                            <td>梁ごとにレベル値の色で塗潰し。フィルタ名: <code>梁天端_{レベル名}{±値}</code> / <code>梁下_{レベル名}{±値}</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>梁ラベル</strong></td>
+                            <td>梁の中央にレベル値を TextNote で配置。梁の方向に合わせて回転</td>
+                        </tr>
+                        <tr>
+                            <td><strong>凡例ビュー</strong></td>
+                            <td><code>梁天端色分け凡例</code> / <code>梁下端色分け凡例</code>（プロジェクトブラウザの製図ビューに表示）</td>
+                        </tr>
+                        <tr>
+                            <td><strong>共有パラメータ</strong></td>
+                            <td><code>梁天端_基準レベル</code>・<code>梁天端_レベル差</code> など（梁要素に自動付与）</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- トラブルシューティング -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-troubleshooting">トラブルシューティング</h2>
+            <div class="content-box">
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th data-lang-key="table-col-symptom">症状</th>
+                            <th data-lang-key="table-col-action">対処</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ビュー内に梁が見つからない</td>
+                            <td>梁（構造フレーム）がビュー上で表示されているか確認。フィルタや非表示設定を確認</td>
+                        </tr>
+                        <tr>
+                            <td>パラメータが候補に表示されない</td>
+                            <td>「その他」ドロップダウンを開いて手動選択。それでも見つからない場合はファミリのパラメータ定義を確認</td>
+                        </tr>
+                        <tr>
+                            <td>上位レベルが選択肢にない（梁下端）</td>
+                            <td>参照レベルより上のレベルがプロジェクトに定義されているか確認</td>
+                        </tr>
+                        <tr>
+                            <td>計算結果が予想と異なる（梁下端）</td>
+                            <td>上位レベルの選択が正しいか、天端オフセットの符号（正/負）を確認</td>
+                        </tr>
+                        <tr>
+                            <td>色が似ていて見分けにくい</td>
+                            <td>ビュー → フィルタから色を手動変更できます</td>
+                        </tr>
+                        <tr>
+                            <td>再実行しても古い色分けが残る</td>
+                            <td>STEP 3/4 の「上書き」チェックをONにして再実行</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 関連機能 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-related">関連機能</h2>
+            <div class="content-box">
+                <ul>
+                    <li>
+                        <a href="fire-protection.html">耐火被覆色分け</a>
+                        <span> — 梁・柱の耐火被覆範囲を色分け表示</span>
+                    </li>
+                    <li>
+                        <a href="formwork-calculator.html">型枠数量算出</a>
+                        <span> — 梁・柱を含むRC躯体の型枠面積を算出</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ナビゲーション -->
+        <div class="manual-navigation">
+            <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
+                ← ホームに戻る
+            </a>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <!-- SNSシェアボタン -->
+            <div class="share-buttons">
+                <p class="share-text" data-lang-key="footer-share">このページをシェア：</p>
+                <div class="share-icons">
+                    <a href="#" class="share-btn twitter" data-sns="twitter" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn facebook" data-sns="facebook" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn line" data-sns="line" aria-label="LINE">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.630 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn hatena" data-sns="hatena" aria-label="はてなブックマーク">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.47 0C22.42 0 24 1.58 24 3.53v16.94c0 1.95-1.58 3.53-3.53 3.53H3.53C1.58 24 0 22.42 0 20.47V3.53C0 1.58 1.58 0 3.53 0h16.94zM7.708 5.522H5.522v7.827c0 1.283.818 2.006 2.118 2.006s2.117-.723 2.117-2.006V5.522H7.708zm10.7 6.2c0-1.345-.696-2.285-2.02-2.585.897-.38 1.527-1.104 1.527-2.198 0-1.72-1.33-2.417-3.292-2.417H11.97v10.016h2.754c1.864 0 3.685-.65 3.685-2.815zm-4.175-1.35h1.29c.696 0 1.13.354 1.13.952 0 .597-.434.95-1.13.95h-1.29V10.37zm0-3.23h1.113c.57 0 1.017.315 1.017.87 0 .552-.447.866-1.017.866h-1.114V7.142zm-8.17 10.29c.91 0 1.616.71 1.616 1.62 0 .907-.707 1.616-1.616 1.616-.91 0-1.616-.71-1.616-1.617s.707-1.62 1.616-1.62z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="site-footer-links">
+                <a href="../about.html" data-lang-key="footer-about">運営者情報</a>
+                <span class="footer-divider">|</span>
+                <a href="../contact.html" data-lang-key="footer-contact">お問い合わせ</a>
+                <span class="footer-divider">|</span>
+                <a href="../privacy.html" data-lang-key="footer-privacy">プライバシーポリシー</a>
+                <span class="footer-divider">|</span>
+                <a href="../terms.html" data-lang-key="footer-terms">利用規約</a>
+            </div>
+            <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
