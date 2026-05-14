@@ -59,20 +59,20 @@
                 <img src="../images/revit-icons/sheet_creation.png" alt="Sheet Creation Icon" class="feature-icon">
             </div>
             <h1 class="manual-title" data-lang-key="manual-sheet-creation-title">シート一括作成</h1>
-            <p class="manual-subtitle">図枠を指定して複数シートをまとめて作成</p>
+            <p class="manual-subtitle" data-lang-key="manual-sheet-creation-subtitle">図枠を指定して複数シートをまとめて作成</p>
         </div>
 
         <!-- 機能概要 -->
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
             <div class="content-box">
-                <p>
+                <p data-lang-key="manual-sheet-creation-overview">
                     シート番号と名前のリストを入力するだけで、複数のシートをまとめて作成できる機能です。
                 </p>
                 <ul style="margin-top: 12px;">
-                    <li>シート番号と名前を複数行入力して、<strong>一度にまとめてシートを作成</strong>します</li>
-                    <li>タイトルブロックの種類を指定できます</li>
-                    <li>Excelから番号・名前をコピー＆ペーストして、そのまま利用できます</li>
+                    <li data-lang-key="manual-sheet-creation-feature1">シート番号と名前を複数行入力して、<strong>一度にまとめてシートを作成</strong>します</li>
+                    <li data-lang-key="manual-sheet-creation-feature2">タイトルブロックの種類を指定できます</li>
+                    <li data-lang-key="manual-sheet-creation-feature3">Excelから番号・名前をコピー＆ペーストして、そのまま利用できます</li>
                 </ul>
             </div>
         </section>
@@ -84,40 +84,40 @@
             <div class="step-box">
                 <div class="step-number">1</div>
                 <div class="step-content">
-                    <h3>コマンドの起動</h3>
-                    <p>リボン「<strong>28 Tools</strong>」タブ →「<strong>シート</strong>」パネル →「<strong>シート一括作成</strong>」ボタンをクリックします。</p>
+                    <h3 data-lang-key="manual-sheet-creation-step1-title">コマンドの起動</h3>
+                    <p data-lang-key="manual-sheet-creation-step1-desc">リボン「<strong>28 Tools</strong>」タブ →「<strong>シート</strong>」パネル →「<strong>シート一括作成</strong>」ボタンをクリックします。</p>
                 </div>
             </div>
 
             <div class="step-box">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3>タイトルブロックを選択</h3>
-                    <p>ダイアログが開いたら、<strong>タイトルブロック</strong>のドロップダウンから使用するタイトルブロックタイプを選択します。</p>
+                    <h3 data-lang-key="manual-sheet-creation-step2-title">タイトルブロックを選択</h3>
+                    <p data-lang-key="manual-sheet-creation-step2-desc">ダイアログが開いたら、<strong>タイトルブロック</strong>のドロップダウンから使用するタイトルブロックタイプを選択します。</p>
                 </div>
             </div>
 
             <div class="step-box">
                 <div class="step-number">3</div>
                 <div class="step-content">
-                    <h3>シートリストを入力</h3>
-                    <p>テキストエリアにシート番号と名前を入力します。</p>
-                    <p style="margin-top: 8px;"><strong>入力形式</strong>：<code>シート番号[Tab]シート名</code>（1行に1シート）</p>
-                    <p style="margin-top: 8px;">入力例：</p>
+                    <h3 data-lang-key="manual-sheet-creation-step3-title">シートリストを入力</h3>
+                    <p data-lang-key="manual-sheet-creation-step3-desc">テキストエリアにシート番号と名前を入力します。</p>
+                    <p style="margin-top: 8px;" data-lang-key="manual-sheet-creation-step3-format"><strong>入力形式</strong>：<code>シート番号[Tab]シート名</code>（1行に1シート）</p>
+                    <p style="margin-top: 8px;" data-lang-key="manual-sheet-creation-step3-example-label">入力例：</p>
                     <code style="display: block; padding: 8px; background: #f5f5f5; margin-top: 4px; white-space: pre;">A-001	建築平面図 1F
 A-002	建築平面図 2F
 A-003	建築平面図 3F
 S-001	構造平面図 1F
 S-002	構造平面図 2F</code>
-                    <p style="margin-top: 8px;">💡 <strong>Excelからの貼り付けが便利です。</strong> Excelで「番号」列と「名前」列を選択してコピーし、テキストエリアにそのまま貼り付けることができます。列はタブ区切りで認識されます。</p>
+                    <p style="margin-top: 8px;" data-lang-key="manual-sheet-creation-step3-tip">💡 <strong>Excelからの貼り付けが便利です。</strong> Excelで「番号」列と「名前」列を選択してコピーし、テキストエリアにそのまま貼り付けることができます。列はタブ区切りで認識されます。</p>
                 </div>
             </div>
 
             <div class="step-box">
                 <div class="step-number">4</div>
                 <div class="step-content">
-                    <h3>作成を実行</h3>
-                    <p>「<strong>作成</strong>」ボタンをクリックします。入力したリストのとおりにシートが作成され、プロジェクトブラウザに反映されます。</p>
+                    <h3 data-lang-key="manual-sheet-creation-step4-title">作成を実行</h3>
+                    <p data-lang-key="manual-sheet-creation-step4-desc">「<strong>作成</strong>」ボタンをクリックします。入力したリストのとおりにシートが作成され、プロジェクトブラウザに反映されます。</p>
                 </div>
             </div>
 
@@ -132,9 +132,9 @@ S-002	構造平面図 2F</code>
             <h2 class="section-title" data-lang-key="section-output">出力結果</h2>
             <div class="content-box">
                 <ul>
-                    <li>指定したタイトルブロックを使用したシートが一括作成されます</li>
-                    <li>作成されたシートはプロジェクトブラウザの「シート」ツリーに追加されます</li>
-                    <li>重複するシート番号が入力された場合は、そのシートをスキップして警告メッセージが表示されます</li>
+                    <li data-lang-key="manual-sheet-creation-output1">指定したタイトルブロックを使用したシートが一括作成されます</li>
+                    <li data-lang-key="manual-sheet-creation-output2">作成されたシートはプロジェクトブラウザの「シート」ツリーに追加されます</li>
+                    <li data-lang-key="manual-sheet-creation-output3">重複するシート番号が入力された場合は、そのシートをスキップして警告メッセージが表示されます</li>
                 </ul>
             </div>
         </section>
@@ -146,31 +146,31 @@ S-002	構造平面図 2F</code>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
                     <div>
-                        <strong>「シート番号が重複しています」と表示される</strong>
+                        <strong data-lang-key="manual-sheet-creation-trouble1-title">「シート番号が重複しています」と表示される</strong>
                         <ul style="margin-top: 4px;">
-                            <li>入力したシート番号がすでにプロジェクト内に存在しています</li>
-                            <li>プロジェクトブラウザでシート番号を確認し、重複しない番号を使用してください</li>
+                            <li data-lang-key="manual-sheet-creation-trouble1-item1">入力したシート番号がすでにプロジェクト内に存在しています</li>
+                            <li data-lang-key="manual-sheet-creation-trouble1-item2">プロジェクトブラウザでシート番号を確認し、重複しない番号を使用してください</li>
                         </ul>
                     </div>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
                     <div>
-                        <strong>タイトルブロックが選択肢に表示されない</strong>
+                        <strong data-lang-key="manual-sheet-creation-trouble2-title">タイトルブロックが選択肢に表示されない</strong>
                         <ul style="margin-top: 4px;">
-                            <li>プロジェクトにタイトルブロックファミリが読み込まれていることを確認してください</li>
-                            <li>タイトルブロックがない場合は、「なし」を選択してシートのみ作成することもできます</li>
+                            <li data-lang-key="manual-sheet-creation-trouble2-item1">プロジェクトにタイトルブロックファミリが読み込まれていることを確認してください</li>
+                            <li data-lang-key="manual-sheet-creation-trouble2-item2">タイトルブロックがない場合は、「なし」を選択してシートのみ作成することもできます</li>
                         </ul>
                     </div>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
                     <div>
-                        <strong>Excelから貼り付けたのに正しく認識されない</strong>
+                        <strong data-lang-key="manual-sheet-creation-trouble3-title">Excelから貼り付けたのに正しく認識されない</strong>
                         <ul style="margin-top: 4px;">
-                            <li>列の区切りが<strong>タブ</strong>になっているか確認してください</li>
-                            <li>番号列と名前列の2列のみを選択してコピーしてください</li>
-                            <li>余分な列（3列以上）が含まれている場合、3列目以降は無視されます</li>
+                            <li data-lang-key="manual-sheet-creation-trouble3-item1">列の区切りが<strong>タブ</strong>になっているか確認してください</li>
+                            <li data-lang-key="manual-sheet-creation-trouble3-item2">番号列と名前列の2列のみを選択してコピーしてください</li>
+                            <li data-lang-key="manual-sheet-creation-trouble3-item3">余分な列（3列以上）が含まれている場合、3列目以降は無視されます</li>
                         </ul>
                     </div>
                 </div>
@@ -182,7 +182,7 @@ S-002	構造平面図 2F</code>
             <h2 class="section-title" data-lang-key="section-related">関連機能</h2>
             <div class="content-box">
                 <ul>
-                    <li><a href="viewport-position.html">ビューポート位置 コピー＆ペースト</a> — 作成したシートのビューポート位置を他のシートに合わせる</li>
+                    <li><a href="viewport-position.html" data-lang-key="manual-sheet-creation-related-viewport">ビューポート位置 コピー＆ペースト — 作成したシートのビューポート位置を他のシートに合わせる</a></li>
                 </ul>
             </div>
         </section>
