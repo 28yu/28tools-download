@@ -59,60 +59,49 @@
                 <img src="../images/revit-icons/view_copy.png" alt="View Copy Icon" class="feature-icon">
             </div>
             <h1 class="manual-title" data-lang-key="manual-view-copy-title">3D視点コピペ</h1>
-            <p class="manual-subtitle" data-lang-key="manual-view-copy-subtitle">3Dビューの視点を他のビューにコピー＆ペースト</p>
+            <p class="manual-subtitle">3Dビューの視点を他のビューにコピー＆ペースト</p>
         </div>
 
         <!-- 機能概要 -->
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
             <div class="content-box">
-                <p data-lang-key="manual-view-copy-overview">
-                    この機能は、ある3Dビューのカメラ視点（カメラ位置・向き・ズーム）を別の3Dビューにコピーできます。複数の3Dビューで同じ視点を使いたい場合に、手動で調整する手間を省くことができます。
+                <p>
+                    3Dビューのカメラ位置・向きをコピーして、別の3Dビューに貼り付ける機能です。複数の3Dビューで視点を揃えたい場合に便利です。
                 </p>
+                <ul style="margin-top: 12px;">
+                    <li>ある3Dビューの<strong>視点（カメラ位置・注視点・上方向）</strong>を記録し、別の3Dビューにそのまま適用します</li>
+                    <li>パースビュー・アイソメビュー問わず使用できます</li>
+                </ul>
             </div>
         </section>
 
         <!-- 使い方 -->
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
-            
+
             <div class="step-box">
                 <div class="step-number">1</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-view-copy-step1-title">コピー元の3Dビューを開く</h3>
-                    <p data-lang-key="manual-view-copy-step1-desc">
-                        視点をコピーしたい3Dビューを開き、希望の視点に調整します。
-                    </p>
+                    <h3>視点をコピー</h3>
+                    <ol>
+                        <li>コピーしたい視点の<strong>3Dビューをアクティブ</strong>にする</li>
+                        <li>リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>3Dビュー コピー</strong>」をクリック</li>
+                    </ol>
+                    <p style="margin-top: 8px;">視点情報がメモリに保存されます。</p>
                 </div>
             </div>
 
             <div class="step-box">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-view-copy-step2-title">視点をコピー</h3>
-                    <p data-lang-key="manual-view-copy-step2-desc">
-                        Revitリボンの「28 Tools」タブから「視点コピー」ボタンをクリックします。現在の3Dビューの視点情報がメモリにコピーされます。
-                    </p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-view-copy-step3-title">ペースト先の3Dビューを開く</h3>
-                    <p data-lang-key="manual-view-copy-step3-desc">
-                        視点を適用したい別の3Dビューを開きます。
-                    </p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-view-copy-step4-title">視点をペースト</h3>
-                    <p data-lang-key="manual-view-copy-step4-desc">
-                        「28 Tools」タブから「視点ペースト」ボタンをクリックします。コピーした視点が現在の3Dビューに適用されます。
-                    </p>
+                    <h3>視点をペースト</h3>
+                    <ol>
+                        <li>視点を適用したい<strong>別の3Dビューをアクティブ</strong>にする</li>
+                        <li>リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>3Dビュー ペースト</strong>」をクリック</li>
+                    </ol>
+                    <p style="margin-top: 8px;">コピーした視点が適用され、カメラが同じ位置・向きになります。</p>
+                    <p style="margin-top: 8px;">💡 コピー後にシートや別のビューを経由してから、目的の3Dビューを開いてペーストしても問題ありません（Revitを閉じない限り有効）。</p>
                 </div>
             </div>
 
@@ -122,81 +111,51 @@
             </div>
         </section>
 
-        <!-- 活用シーン -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-usecases">活用シーン</h2>
-            <div class="usecase-grid">
-                <div class="usecase-card">
-                    <div class="usecase-icon">🎯</div>
-                    <h3 data-lang-key="manual-view-copy-usecase1-title">一貫した視点の設定</h3>
-                    <p data-lang-key="manual-view-copy-usecase1-desc">
-                        複数の3Dビューで同じ視点を使用することで、図面の一貫性を保てます。
-                    </p>
-                </div>
-                <div class="usecase-card">
-                    <div class="usecase-icon">📐</div>
-                    <h3 data-lang-key="manual-view-copy-usecase2-title">段階ビューの作成</h3>
-                    <p data-lang-key="manual-view-copy-usecase2-desc">
-                        同じ視点で要素表示を変えた複数のビューを効率的に作成できます。
-                    </p>
-                </div>
-                <div class="usecase-card">
-                    <div class="usecase-icon">⏱️</div>
-                    <h3 data-lang-key="manual-view-copy-usecase3-title">時間短縮</h3>
-                    <p data-lang-key="manual-view-copy-usecase3-desc">
-                        3Dビューの視点調整を何度も繰り返す必要がなくなります。
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tips -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-tips">Tips</h2>
-            <div class="tips-box">
-                <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-view-copy-tip1">
-                        <strong data-lang-key="manual-view-copy-tip1-strong">透視図とアイソメトリック：</strong>透視図とアイソメトリックビューでも視点のコピーが可能です。
-                    </p>
-                </div>
-                <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-view-copy-tip2">
-                        <strong data-lang-key="manual-view-copy-tip2-strong">テンプレートビュー作成：</strong>よく使う視点をテンプレートとして保存するビューを作成しておくと便利です。
-                    </p>
-                </div>
-                <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-view-copy-tip3">
-                        <strong data-lang-key="manual-view-copy-tip3-strong">ズームレベル：</strong>視点だけでなく、ズームレベルもコピーされます。
-                    </p>
-                </div>
-            </div>
-        </section>
-
         <!-- 注意事項 -->
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-notes">注意事項</h2>
             <div class="notes-box warning">
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-view-copy-note1">
-                        この機能は3Dビュー専用です。平面図や立面図などの2Dビューでは使用できません。
-                    </p>
+                    <p>3Dビュー同士でのみ使用できます（平面図・断面図は不可）</p>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-view-copy-note2">
-                        視点コピー後にRevitを閉じると、コピーした視点情報は失われます。
-                    </p>
+                    <p>コピーした情報は<strong>Revitを閉じると消えます</strong>（セッション内のみ有効）</p>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-view-copy-note3">
-                        ビューテンプレートの設定（表示/グラフィックス設定など）はコピーされません。視点情報のみがコピーされます。
-                    </p>
+                    <p>セクションボックスの範囲はコピーされません。範囲を合わせたい場合は「<strong>SBコピー / SBペースト</strong>」を使用してください</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- トラブルシューティング -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-troubleshooting">トラブルシューティング</h2>
+            <div class="notes-box warning">
+                <div class="note-item">
+                    <span class="note-icon">⚠️</span>
+                    <div>
+                        <strong>ペーストしても視点が変わらない</strong>
+                        <ul style="margin-top: 4px;">
+                            <li>「<strong>3Dビュー コピー</strong>」を先に実行しているか確認してください</li>
+                            <li>ペースト先がアクティブな<strong>3Dビュー</strong>になっているか確認してください</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 関連機能 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-related">関連機能</h2>
+            <div class="content-box">
+                <ul>
+                    <li><a href="sectionbox-copy.html">切断ボックス コピー＆ペースト</a> — 3Dビューのセクションボックス範囲をコピー</li>
+                    <li><a href="cropbox-copy.html">トリミング領域 コピー＆ペースト</a> — 平面図・断面図などのトリミング領域をコピー</li>
+                    <li><a href="viewport-position.html">ビューポート位置 コピー＆ペースト</a> — シート上のビューポート位置をコピー</li>
+                </ul>
             </div>
         </section>
 

@@ -59,71 +59,65 @@
                 <img src="../images/revit-icons/sheet_creation.png" alt="Sheet Creation Icon" class="feature-icon">
             </div>
             <h1 class="manual-title" data-lang-key="manual-sheet-creation-title">シート一括作成</h1>
-            <p class="manual-subtitle" data-lang-key="manual-sheet-creation-subtitle">図枠を指定して複数シートをまとめて作成</p>
+            <p class="manual-subtitle">図枠を指定して複数シートをまとめて作成</p>
         </div>
 
         <!-- 機能概要 -->
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
             <div class="content-box">
-                <p data-lang-key="manual-sheet-creation-overview">
-                    この機能は、同じ図枠を使用する複数のシートを一度に作成できます。シート番号とシート名をリスト形式で入力することで、従来の繰り返し作業を大幅に削減できます。
+                <p>
+                    シート番号と名前のリストを入力するだけで、複数のシートをまとめて作成できる機能です。
                 </p>
+                <ul style="margin-top: 12px;">
+                    <li>シート番号と名前を複数行入力して、<strong>一度にまとめてシートを作成</strong>します</li>
+                    <li>タイトルブロックの種類を指定できます</li>
+                    <li>Excelから番号・名前をコピー＆ペーストして、そのまま利用できます</li>
+                </ul>
             </div>
         </section>
 
         <!-- 使い方 -->
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
-            
+
             <div class="step-box">
                 <div class="step-number">1</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-sheet-creation-step1-title">シート一括作成を起動</h3>
-                    <p data-lang-key="manual-sheet-creation-step1-desc">
-                        Revitリボンの「28 Tools」タブから「シート一括作成」ボタンをクリックします。
-                    </p>
+                    <h3>コマンドの起動</h3>
+                    <p>リボン「<strong>28 Tools</strong>」タブ →「<strong>シート</strong>」パネル →「<strong>シート一括作成</strong>」ボタンをクリックします。</p>
                 </div>
             </div>
 
             <div class="step-box">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-sheet-creation-step2-title">図枠を選択</h3>
-                    <p data-lang-key="manual-sheet-creation-step2-desc">
-                        ダイアログが表示されたら、使用したい図枠をドロップダウンリストから選択します。
-                    </p>
+                    <h3>タイトルブロックを選択</h3>
+                    <p>ダイアログが開いたら、<strong>タイトルブロック</strong>のドロップダウンから使用するタイトルブロックタイプを選択します。</p>
                 </div>
             </div>
 
             <div class="step-box">
                 <div class="step-number">3</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-sheet-creation-step3-title">シート情報を入力</h3>
-                    <p data-lang-key="manual-sheet-creation-step3-desc">
-                        テキストボックスに、シート番号とシート名を1行ずつ入力します。
-                    </p>
-                    <p style="margin-top: 12px;">
-                        <strong data-lang-key="manual-sheet-creation-step3-format">入力形式：シート番号&lt;Tab&gt;シート名</strong>
-                    </p>
-                    <p style="margin-top: 8px;">
-                        <strong data-lang-key="manual-sheet-creation-step3-example">例：</strong>
-                    </p>
-                    <code style="display: block; padding: 8px; background: #f5f5f5; margin-top: 4px;">
-A-101	1階平面図<br>
-A-102	2階平面図<br>
-A-103	屋上平面図
-                    </code>
+                    <h3>シートリストを入力</h3>
+                    <p>テキストエリアにシート番号と名前を入力します。</p>
+                    <p style="margin-top: 8px;"><strong>入力形式</strong>：<code>シート番号[Tab]シート名</code>（1行に1シート）</p>
+                    <p style="margin-top: 8px;">入力例：</p>
+                    <code style="display: block; padding: 8px; background: #f5f5f5; margin-top: 4px; white-space: pre;">A-001	建築平面図 1F
+A-002	建築平面図 2F
+A-003	建築平面図 3F
+S-001	構造平面図 1F
+S-002	構造平面図 2F</code>
+                    <p style="margin-top: 8px;">💡 <strong>Excelからの貼り付けが便利です。</strong> Excelで「番号」列と「名前」列を選択してコピーし、テキストエリアにそのまま貼り付けることができます。列はタブ区切りで認識されます。</p>
                 </div>
             </div>
 
             <div class="step-box">
                 <div class="step-number">4</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-sheet-creation-step4-title">シートを作成</h3>
-                    <p data-lang-key="manual-sheet-creation-step4-desc">
-                        「作成」ボタンをクリックすると、入力したすべてのシートが一括で作成されます。
-                    </p>
+                    <h3>作成を実行</h3>
+                    <p>「<strong>作成</strong>」ボタンをクリックします。入力したリストのとおりにシートが作成され、プロジェクトブラウザに反映されます。</p>
                 </div>
             </div>
 
@@ -133,81 +127,63 @@ A-103	屋上平面図
             </div>
         </section>
 
-        <!-- 活用シーン -->
+        <!-- 出力結果 -->
         <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-usecases">活用シーン</h2>
-            <div class="usecase-grid">
-                <div class="usecase-card">
-                    <div class="usecase-icon">🚀</div>
-                    <h3 data-lang-key="manual-sheet-creation-usecase1-title">新規プロジェクト立ち上げ</h3>
-                    <p data-lang-key="manual-sheet-creation-usecase1-desc">
-                        プロジェクト開始時に必要なシートをまとめて作成できます。
-                    </p>
-                </div>
-                <div class="usecase-card">
-                    <div class="usecase-icon">📋</div>
-                    <h3 data-lang-key="manual-sheet-creation-usecase2-title">図面リスト更新</h3>
-                    <p data-lang-key="manual-sheet-creation-usecase2-desc">
-                        Excelなどで管理している図面リストから、シート情報をコピー＆ペーストして効率的に作成できます。
-                    </p>
-                </div>
-                <div class="usecase-card">
-                    <div class="usecase-icon">⏱️</div>
-                    <h3 data-lang-key="manual-sheet-creation-usecase3-title">時間短縮</h3>
-                    <p data-lang-key="manual-sheet-creation-usecase3-desc">
-                        1枚ずつシートを作成する手間を省き、作業時間を大幅に短縮できます。
-                    </p>
-                </div>
+            <h2 class="section-title" data-lang-key="section-output">出力結果</h2>
+            <div class="content-box">
+                <ul>
+                    <li>指定したタイトルブロックを使用したシートが一括作成されます</li>
+                    <li>作成されたシートはプロジェクトブラウザの「シート」ツリーに追加されます</li>
+                    <li>重複するシート番号が入力された場合は、そのシートをスキップして警告メッセージが表示されます</li>
+                </ul>
             </div>
         </section>
 
-        <!-- Tips -->
+        <!-- トラブルシューティング -->
         <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-tips">Tips</h2>
-            <div class="tips-box">
-                <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-sheet-creation-tip1">
-                        <strong data-lang-key="manual-sheet-creation-tip1-strong">Excel連携：</strong>Excelで図面リストを作成し、番号と名前をコピーして貼り付けると効率的です。
-                    </p>
-                </div>
-                <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-sheet-creation-tip2">
-                        <strong data-lang-key="manual-sheet-creation-tip2-strong">重複チェック：</strong>シート番号は必ずプロジェクト内で一意である必要があります。
-                    </p>
-                </div>
-                <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-sheet-creation-tip3">
-                        <strong data-lang-key="manual-sheet-creation-tip3-strong">後から編集可能：</strong>作成後のシートは、通常のシートと同様に編集・削除が可能です。
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 注意事項 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-notes">注意事項</h2>
+            <h2 class="section-title" data-lang-key="section-troubleshooting">トラブルシューティング</h2>
             <div class="notes-box warning">
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-sheet-creation-note1">
-                        シート番号が既に存在する場合、そのシートはスキップされます。
-                    </p>
+                    <div>
+                        <strong>「シート番号が重複しています」と表示される</strong>
+                        <ul style="margin-top: 4px;">
+                            <li>入力したシート番号がすでにプロジェクト内に存在しています</li>
+                            <li>プロジェクトブラウザでシート番号を確認し、重複しない番号を使用してください</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-sheet-creation-note2">
-                        シート番号とシート名の間は必ずタブ文字で区切ってください。スペースでは正しく認識されません。
-                    </p>
+                    <div>
+                        <strong>タイトルブロックが選択肢に表示されない</strong>
+                        <ul style="margin-top: 4px;">
+                            <li>プロジェクトにタイトルブロックファミリが読み込まれていることを確認してください</li>
+                            <li>タイトルブロックがない場合は、「なし」を選択してシートのみ作成することもできます</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-sheet-creation-note3">
-                        大量のシートを一度に作成すると、処理に時間がかかる場合があります。
-                    </p>
+                    <div>
+                        <strong>Excelから貼り付けたのに正しく認識されない</strong>
+                        <ul style="margin-top: 4px;">
+                            <li>列の区切りが<strong>タブ</strong>になっているか確認してください</li>
+                            <li>番号列と名前列の2列のみを選択してコピーしてください</li>
+                            <li>余分な列（3列以上）が含まれている場合、3列目以降は無視されます</li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- 関連機能 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-related">関連機能</h2>
+            <div class="content-box">
+                <ul>
+                    <li><a href="viewport-position.html">ビューポート位置 コピー＆ペースト</a> — 作成したシートのビューポート位置を他のシートに合わせる</li>
+                </ul>
             </div>
         </section>
 
