@@ -585,6 +585,16 @@ function initTranslations() {
             en: 'Color-code beam top levels with pastel colors',
             zh: '用柔和颜色显示梁顶标高着色'
         },
+        'feature-beam-level-title': {
+            ja: '梁レベル色分け',
+            en: 'Beam Level Coloring',
+            zh: '梁标高着色'
+        },
+        'feature-beam-level-desc': {
+            ja: '梁の天端・下端レベルをパステルカラーで色分け表示',
+            en: 'Color-code beam top/bottom levels with pastel colors',
+            zh: '用柔和颜色显示梁顶/底标高着色'
+        },
         'feature-excel-export-title': {
             ja: 'Excelエクスポート',
             en: 'Excel Export',
@@ -5208,6 +5218,36 @@ translations.filledRegion = {
             ja: '以下は型枠不要と判定され、集計から自動的に除外されます：',
             en: 'The following are determined to require no formwork and are automatically excluded from aggregation:',
             zh: '以下被判定为不需要模板，将自动从汇总中排除：'
+        },
+        'manual-formwork-exclude-steel': {
+            ja: '<strong>鉄骨部材</strong>（H形鋼・角形鋼管・CFT等）— 構造材料・断面形状・名前パターンの4層判定',
+            en: '<strong>Steel members</strong> (H-beams, square steel tubes, CFT, etc.) — 4-layer detection by material, section shape, and name pattern',
+            zh: '<strong>钢结构构件</strong>（H型钢、方管、CFT等）— 通过材料、截面形状和名称模式进行4层判定'
+        },
+        'manual-formwork-exclude-deck': {
+            ja: '<strong>デッキスラブ</strong> — 床のタイプ名に「DS」を含むもの',
+            en: '<strong>Deck slabs</strong> — floor types with "DS" in the type name',
+            zh: '<strong>压型钢板楼板</strong> — 楼板类型名包含"DS"的情况'
+        },
+        'manual-formwork-exclude-stair': {
+            ja: '<strong>鉄骨階段</strong> — タイプ名・マテリアルに「鉄骨」「STEEL」「STK」等を含むもの',
+            en: '<strong>Steel stairs</strong> — type name or material contains "鉄骨", "STEEL", "STK", etc.',
+            zh: '<strong>钢楼梯</strong> — 类型名或材料包含"鉄骨"、"STEEL"、"STK"等'
+        },
+        'manual-formwork-exclude-sweep': {
+            ja: '<strong>壁スイープ・リビール</strong> — 壁の見切り・幅木等',
+            en: '<strong>Wall sweeps &amp; reveals</strong> — wall trims, baseboards, etc.',
+            zh: '<strong>墙饰条和墙分隔缝</strong> — 墙收边、踢脚线等'
+        },
+        'manual-formwork-exclude-lgs': {
+            ja: '<strong>LGS壁・乾式壁</strong> — 壁構造に石膏ボード層（厚さ 9.5 / 12.5 / 15 / 21mm または材料名に「石膏」「Gypsum」等）があり、コンクリート層が無い壁',
+            en: '<strong>LGS/dry walls</strong> — walls with gypsum board layers (9.5 / 12.5 / 15 / 21mm thick, or material name containing "石膏" or "Gypsum") and no concrete layer',
+            zh: '<strong>轻钢龙骨/干式墙</strong> — 墙结构含石膏板层（厚9.5/12.5/15/21mm，或材料名含"石膏"、"Gypsum"等）且无混凝土层的墙'
+        },
+        'manual-formwork-exclude-note': {
+            ja: '除外要素は解析3Dビュー上でオレンジ色のオブジェクトとして可視化されます（既定では非表示。フィルタ「型枠_除外」をONで確認可能）。',
+            en: 'Excluded elements are visualized as orange objects in the analysis 3D view (hidden by default; enable the "型枠_除外" filter to check).',
+            zh: '被排除的元素在分析3D视图中以橙色对象显示（默认隐藏，可通过开启"型枠_除外"过滤器查看）。'
         },
         'manual-formwork-views-hint': {
             ja: '💡 <strong>ポイント：</strong>計算対象を絞り込みたい場合は、対象範囲のみが表示された3Dビューを開いた状態で「現在のビューに表示されている要素」を選択してください。セクションボックスで切り取った範囲のみを算出することも可能です。',
