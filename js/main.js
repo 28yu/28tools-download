@@ -5304,9 +5304,9 @@ function initTranslations() {
             zh: '可用工具列表'
         },
         'about-tools-intro': {
-            ja: '現在、以下の6つのツールを提供しています：',
-            en: 'Currently, we provide the following 6 tools:',
-            zh: '目前，我们提供以下6个工具：'
+            ja: '現在、以下の14のツールを提供しています：',
+            en: 'Currently, we provide the following 14 tools:',
+            zh: '目前，我们提供以下14个工具：'
         },
         'about-tool1': {
             ja: '符号ON/OFF - 通り芯・レベルの符号表示を一括切替',
@@ -5319,24 +5319,64 @@ function initTranslations() {
             zh: '批量创建图纸 - 使用指定的标题栏一次创建多个图纸'
         },
         'about-tool3': {
-            ja: '3D視点コピペ - 3Dビューの視点を他のビューにコピー＆ペースト',
-            en: '3D View Copy - Copy and paste 3D view perspectives to other views',
-            zh: '3D视点复制 - 将3D视图视角复制并粘贴到其他视图'
+            ja: '3D視点コピペ - 3Dビューの視点を他のビューに反映',
+            en: '3D View Copy & Paste - Copy and paste 3D view orientation to other views',
+            zh: '3D视点复制粘贴 - 将3D视图视角复制并粘贴到其他视图'
         },
         'about-tool4': {
-            ja: '切断ボックスコピペ - 3Dビューの切断ボックス範囲をコピー＆ペースト',
-            en: 'Section Box Copy - Copy and paste 3D view section box range',
-            zh: '剖切框复制 - 复制并粘贴3D视图的剖切框范围'
+            ja: '切断ボックスコピペ - 3Dビューの切断ボックス範囲を反映',
+            en: 'Section Box Copy & Paste - Copy and paste 3D view section box range',
+            zh: '剖切框复制粘贴 - 复制并粘贴剖切框范围'
         },
         'about-tool5': {
-            ja: 'ビューポート位置コピペ - シート上のビューポート位置をコピー＆ペースト',
-            en: 'Viewport Position Copy - Copy and paste viewport positions on sheets',
-            zh: '视口位置复制 - 复制并粘贴图纸上的视口位置'
+            ja: 'ビューポート位置コピペ - シート上のビューポート位置を反映',
+            en: 'Viewport Position Copy & Paste - Copy and paste viewport positions on sheets',
+            zh: '视口位置复制粘贴 - 复制并粘贴视口位置'
         },
         'about-tool6': {
-            ja: 'トリミング領域コピペ - ビューのトリミング領域をコピー＆ペースト',
-            en: 'Crop Region Copy - Copy and paste view crop regions',
-            zh: '裁剪区域复制 - 复制并粘贴视图的裁剪区域'
+            ja: 'トリミング領域コピペ - ビューのトリミング領域を反映',
+            en: 'Crop Region Copy & Paste - Copy and paste view crop regions',
+            zh: '裁剪区域复制粘贴 - 复制并粘贴裁剪区域'
+        },
+        'about-tool7': {
+            ja: '部屋タグ自動配置 - ビューポートの部屋情報からタグを一括自動配置',
+            en: 'Room Tag Auto Placement - Auto-place room tags from viewport room data',
+            zh: '房间标签自动放置 - 从视口房间信息自动批量放置标签'
+        },
+        'about-tool8': {
+            ja: '梁下端色分け - 梁の下端レベルを自動計算しパステルカラーで色分け',
+            en: 'Beam Bottom Level Coloring - Auto-calculate beam bottom levels and color-code with pastels',
+            zh: '梁底标高着色 - 自动计算梁底标高并用柔和颜色着色'
+        },
+        'about-tool9': {
+            ja: '梁天端色分け - 梁の天端レベルをパステルカラーで色分け表示',
+            en: 'Beam Top Level Coloring - Color-code beam top levels with pastel colors',
+            zh: '梁顶标高着色 - 用柔和颜色显示梁顶标高着色'
+        },
+        'about-tool10': {
+            ja: 'Excelエクスポート - 要素パラメータをカテゴリ別にExcelへ書き出し',
+            en: 'Excel Export - Export element parameters to Excel by category',
+            zh: 'Excel导出 - 按类别将元素参数导出到Excel'
+        },
+        'about-tool11': {
+            ja: 'Excelインポート - Excelの編集内容をRevitモデルに書き戻し',
+            en: 'Excel Import - Import Excel edits back into Revit model',
+            zh: 'Excel导入 - 将Excel编辑内容写回Revit模型'
+        },
+        'about-tool12': {
+            ja: '塗潰し領域 分割・統合 - 塗り潰し領域を個別に分割または1つに統合',
+            en: 'Filled Region Split & Merge - Split or merge filled regions',
+            zh: '填充区域 分割与合并 - 将填充区域分割或合并'
+        },
+        'about-tool13': {
+            ja: '耐火被覆色分け - 梁・柱の耐火被覆を種類別に色分けし凡例も自動作成',
+            en: 'Fire Protection Coloring - Color-code beam/column fire protection by type with auto-generated legend',
+            zh: '防火覆盖着色 - 按类型为梁柱防火覆盖着色并自动生成图例'
+        },
+        'about-tool14': {
+            ja: '型枠数量算出 - RC躯体から型枠面積を自動算出しExcel・集計表・3Dビューに出力',
+            en: 'Formwork Quantity Calculation - Auto-calculate formwork area from RC structures, output to Excel/schedules/3D views',
+            zh: '模板数量计算 - 从RC结构自动计算模板面积并输出到Excel、明细表和3D视图'
         },
         'about-tools-more': {
             ja: '各ツールの詳細は、ホームページのマニュアルをご参照ください。',
