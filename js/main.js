@@ -1219,1019 +1219,1494 @@ function initTranslations() {
     // ========================================
     // grid-bubble.html (符号ON/OFF)
     // ========================================
-    translations.gridBubble = {
-        'manual-grid-bubble-title': {
-            ja: '符号ON/OFF',
-            en: 'Grid Bubble ON/OFF',
-            zh: '轴号开关'
-        },
-        'manual-grid-bubble-subtitle': {
-            ja: '通り芯・レベルの符号表示を一括切り替え',
-            en: 'Batch toggle grid and level bubble visibility',
-            zh: '批量切换轴网和标高符号显示'
-        },
-        'manual-grid-bubble-overview': {
-            ja: 'この機能は、ビュー内のすべての通り芯（グリッド）とレベルの符号（バブル）表示を一括でON/OFFできます。左端のみ、両端、右端のみの3パターンから選択可能で、図面の見栄えを素早く調整できます。',
-            en: 'This feature allows you to batch toggle the visibility of all grid and level bubbles in a view. You can choose from three patterns: left end only, both ends, or right end only, enabling quick adjustment of drawing appearance.',
-            zh: '此功能可以批量切换视图中所有轴网和标高符号的显示。可以从三种模式中选择：仅左端、两端或仅右端，从而快速调整图纸外观。'
-        },
-        'manual-grid-bubble-step1-title': {
-            ja: '対象ビューを開く',
-            en: 'Open Target View',
-            zh: '打开目标视图'
-        },
-        'manual-grid-bubble-step1-desc': {
-            ja: '符号表示を変更したいビュー（平面図、立面図、断面図など）を開きます。',
-            en: 'Open the view (floor plan, elevation, section, etc.) where you want to change bubble visibility.',
-            zh: '打开要更改符号显示的视图（平面图、立面图、剖面图等）。'
-        },
-        'manual-grid-bubble-step2-title': {
-            ja: '表示パターンを選択',
-            en: 'Select Display Pattern',
-            zh: '选择显示模式'
-        },
-        'manual-grid-bubble-step2-desc': {
-            ja: 'Revitリボンの「28 Tools」タブから、希望する表示パターンのボタンをクリックします：',
-            en: 'Click the button for your desired display pattern from the "28 Tools" tab in the Revit ribbon:',
-            zh: '从Revit功能区的"28 Tools"选项卡中点击所需显示模式的按钮：'
-        },
-        'manual-grid-bubble-step2-pattern1': {
-            ja: '左端符号のみ表示',
-            en: 'Show left end bubbles only',
-            zh: '仅显示左端符号'
-        },
-        'manual-grid-bubble-step2-pattern2': {
-            ja: '両端符号を表示',
-            en: 'Show bubbles on both ends',
-            zh: '显示两端符号'
-        },
-        'manual-grid-bubble-step2-pattern3': {
-            ja: '右端符号のみ表示',
-            en: 'Show right end bubbles only',
-            zh: '仅显示右端符号'
-        },
-        'manual-grid-bubble-step3-title': {
-            ja: '自動適用',
-            en: 'Automatic Application',
-            zh: '自动应用'
-        },
-        'manual-grid-bubble-step3-desc': {
-            ja: 'ビュー内のすべての通り芯とレベルに、選択したパターンが自動的に適用されます。',
-            en: 'The selected pattern is automatically applied to all grids and levels in the view.',
-            zh: '所选模式将自动应用于视图中的所有轴网和标高。'
-        },
-        'manual-grid-bubble-usecase1-title': {
-            ja: '図面の整理',
-            en: 'Drawing Organization',
-            zh: '图纸整理'
-        },
-        'manual-grid-bubble-usecase1-desc': {
-            ja: '必要な情報だけを表示することで、図面を見やすく整理できます。',
-            en: 'Organize drawings for better readability by displaying only necessary information.',
-            zh: '通过仅显示必要信息来整理图纸，提高可读性。'
-        },
-        'manual-grid-bubble-usecase2-title': {
-            ja: 'プレゼン資料作成',
-            en: 'Presentation Material Creation',
-            zh: '演示材料制作'
-        },
-        'manual-grid-bubble-usecase2-desc': {
-            ja: 'クライアント向け資料では符号を最小限にして、すっきりした図面を作成できます。',
-            en: 'Create clean drawings with minimal bubbles for client-facing materials.',
-            zh: '为客户材料创建简洁的图纸，将符号最小化。'
-        },
-        'manual-grid-bubble-usecase3-title': {
-            ja: '作図基準への対応',
-            en: 'Compliance with Drawing Standards',
-            zh: '符合制图标准'
-        },
-        'manual-grid-bubble-usecase3-desc': {
-            ja: 'プロジェクトごとの作図基準に合わせて、符号表示を統一できます。',
-            en: 'Standardize bubble display according to project-specific drawing standards.',
-            zh: '根据项目特定的制图标准统一符号显示。'
-        },
-        'manual-grid-bubble-tip1': {
-            ja: '変更は現在のビューにのみ適用されます。他のビューには影響しません。',
-            en: 'Changes apply only to the current view and do not affect other views.',
-            zh: '更改仅应用于当前视图，不影响其他视图。'
-        },
-        'manual-grid-bubble-tip1-strong': {
-            ja: 'ビュー単位の設定：',
-            en: 'View-Specific Settings:',
-            zh: '视图特定设置：'
-        },
-        'manual-grid-bubble-tip2': {
-            ja: 'ビューテンプレートと組み合わせることで、複数ビューに同じ設定を効率的に適用できます。',
-            en: 'Combine with view templates to efficiently apply the same settings to multiple views.',
-            zh: '与视图模板结合使用，可以有效地将相同设置应用于多个视图。'
-        },
-        'manual-grid-bubble-tip2-strong': {
-            ja: 'ビューテンプレート活用：',
-            en: 'Use View Templates:',
-            zh: '使用视图模板：'
-        },
-        'manual-grid-bubble-tip3': {
-            ja: '元に戻す（Ctrl+Z）で変更を取り消すことができます。',
-            en: 'You can undo changes with Undo (Ctrl+Z).',
-            zh: '可以使用撤消（Ctrl+Z）来撤消更改。'
-        },
-        'manual-grid-bubble-tip3-strong': {
-            ja: 'やり直しが可能：',
-            en: 'Undo Available:',
-            zh: '可撤消：'
-        },
-        'manual-grid-bubble-note1': {
-            ja: '3Dビューでは通り芯の符号は表示されないため、この機能は効果がありません。',
-            en: 'Grid bubbles are not displayed in 3D views, so this feature has no effect.',
-            zh: '轴网符号不会在3D视图中显示，因此此功能无效。'
-        },
-        'manual-grid-bubble-note2': {
-            ja: 'ビューの「切断領域」内にある通り芯とレベルのみが対象となります。',
-            en: 'Only grids and levels within the view\'s "Crop Region" are affected.',
-            zh: '仅影响视图"裁剪区域"内的轴网和标高。'
-        },
-        'manual-grid-bubble-note3': {
-            ja: '個別に非表示設定した通り芯やレベルには影響しません。',
-            en: 'Grids or levels individually set to hidden are not affected.',
-            zh: '单独设置为隐藏的轴网或标高不受影响。'
-        }
-    };
+translations.gridBubble = {
+    'manual-grid-bubble-title': {
+        ja: '符号ON/OFF',
+        en: 'Grid/Level Bubble Toggle',
+        zh: '轴网/标高符号显示切换'
+    },
+    'manual-grid-bubble-subtitle': {
+        ja: '通り芯・レベルの符号表示を一括切り替え',
+        en: 'Toggle grid and level bubble visibility in one click',
+        zh: '一键切换轴网和标高符号的显示'
+    },
+    'manual-grid-bubble-overview': {
+        ja: '通り芯（グリッド）とレベルの符号（バブル）表示を、ワンクリックで切り替える機能です。<strong>事前に通り芯・レベルを選択していればその要素のみ</strong>、選択していなければ<strong>ビュー内の全要素</strong>が対象になります。',
+        en: 'Toggle the bubble (annotation) display of grids and levels with a single click. If grids/levels are <strong>pre-selected, only those elements</strong> are affected; otherwise <strong>all elements in the view</strong> are targeted.',
+        zh: '一键切换轴网（网格）和标高符号（气泡）的显示。如果<strong>预先选择了轴网/标高，则仅对选中元素</strong>生效；否则将针对<strong>视图内的所有元素</strong>。'
+    },
+    'manual-grid-bubble-mode-intro': {
+        ja: '3つのモードから選択できます：',
+        en: 'Choose from three modes:',
+        zh: '可从三种模式中选择：'
+    },
+    'manual-grid-bubble-btn-both-title': {
+        ja: '<strong>両端表示</strong>',
+        en: '<strong>Both Ends</strong>',
+        zh: '<strong>两端显示</strong>'
+    },
+    'manual-grid-bubble-btn-both-desc': {
+        ja: '通り芯・レベルの両端に符号を表示する',
+        en: 'Show bubbles at both ends of grids and levels',
+        zh: '在轴网和标高的两端显示符号'
+    },
+    'manual-grid-bubble-btn-left-title': {
+        ja: '<strong>左/上のみ</strong>',
+        en: '<strong>Left/Top Only</strong>',
+        zh: '<strong>仅左/上端</strong>'
+    },
+    'manual-grid-bubble-btn-left-desc': {
+        ja: '左端（縦通り芯）または上端（横通り芯・レベル）のみ符号を表示する',
+        en: 'Show bubble only at the left end (vertical grids) or top end (horizontal grids/levels)',
+        zh: '仅在左端（竖向轴网）或上端（横向轴网/标高）显示符号'
+    },
+    'manual-grid-bubble-btn-right-title': {
+        ja: '<strong>右/下のみ</strong>',
+        en: '<strong>Right/Bottom Only</strong>',
+        zh: '<strong>仅右/下端</strong>'
+    },
+    'manual-grid-bubble-btn-right-desc': {
+        ja: '右端（縦通り芯）または下端（横通り芯・レベル）のみ符号を表示する',
+        en: 'Show bubble only at the right end (vertical grids) or bottom end (horizontal grids/levels)',
+        zh: '仅在右端（竖向轴网）或下端（横向轴网/标高）显示符号'
+    },
+    'manual-grid-bubble-view-floor': {
+        ja: '平面ビュー',
+        en: 'Floor Plan',
+        zh: '平面视图'
+    },
+    'manual-grid-bubble-view-ceiling': {
+        ja: '天井伏図',
+        en: 'Reflected Ceiling Plan',
+        zh: '天花板平面图'
+    },
+    'manual-grid-bubble-view-structural': {
+        ja: '構造伏図',
+        en: 'Structural Plan',
+        zh: '结构平面图'
+    },
+    'manual-grid-bubble-view-section': {
+        ja: '断面図',
+        en: 'Section',
+        zh: '剖面图'
+    },
+    'manual-grid-bubble-view-elevation': {
+        ja: '立面図',
+        en: 'Elevation',
+        zh: '立面图'
+    },
+    'manual-grid-bubble-view-3d': {
+        ja: '3Dビュー',
+        en: '3D View',
+        zh: '三维视图'
+    },
+    'manual-grid-bubble-step1-title': {
+        ja: '対象ビューを開く',
+        en: 'Open the target view',
+        zh: '打开目标视图'
+    },
+    'manual-grid-bubble-step1-desc': {
+        ja: '符号表示を変更したいビューをアクティブにします。',
+        en: 'Activate the view in which you want to change the bubble display.',
+        zh: '激活要更改符号显示的视图。'
+    },
+    'manual-grid-bubble-step2-title': {
+        ja: '（任意）対象を選択する',
+        en: '(Optional) Select target elements',
+        zh: '（可选）选择目标元素'
+    },
+    'manual-grid-bubble-step2-desc': {
+        ja: '特定の通り芯・レベルのみ切り替えたい場合は、ビュー上で<strong>対象の通り芯・レベルを選択</strong>しておきます。',
+        en: 'If you want to toggle only specific grids/levels, <strong>select the target grids/levels</strong> in the view beforehand.',
+        zh: '如果只想切换特定轴网/标高，请在视图中<strong>预先选择目标轴网/标高</strong>。'
+    },
+    'manual-grid-bubble-step2-item1': {
+        ja: '何も選択しない場合 → <strong>ビュー内のすべての通り芯・レベル</strong>が対象',
+        en: 'Nothing selected → <strong>All grids and levels in the view</strong> are targeted',
+        zh: '未选择任何元素 → 以<strong>视图内所有轴网和标高</strong>为对象'
+    },
+    'manual-grid-bubble-step2-item2': {
+        ja: '通り芯・レベルを選択した場合 → <strong>選択したものだけ</strong>が対象',
+        en: 'Grids/levels selected → <strong>Only the selected elements</strong> are targeted',
+        zh: '已选择轴网/标高 → 仅以<strong>选中的元素</strong>为对象'
+    },
+    'manual-grid-bubble-step2-item3': {
+        ja: '選択範囲に通り芯・レベル以外の要素（壁・梁等）が混ざっていても問題ありません。通り芯・レベルだけが処理対象になります',
+        en: 'If the selection includes non-grid/level elements (walls, beams, etc.), they are ignored. Only grids and levels are processed.',
+        zh: '即使选择范围内包含非轴网/标高元素（墙、梁等）也没有问题，仅处理轴网和标高。'
+    },
+    'manual-grid-bubble-step3-title': {
+        ja: 'ボタンをクリック',
+        en: 'Click the button',
+        zh: '点击按钮'
+    },
+    'manual-grid-bubble-step3-desc': {
+        ja: 'リボン「<strong>28 Tools</strong>」タブ →「<strong>通り芯・レベル</strong>」パネルの3つのボタンから目的のものをクリックします。',
+        en: 'In the Ribbon, go to the "<strong>28 Tools</strong>" tab → "<strong>Grid/Level</strong>" panel and click the desired button.',
+        zh: '在功能区"<strong>28 Tools</strong>"选项卡 →"<strong>轴网/标高</strong>"面板中，点击所需按钮。'
+    },
+    'manual-grid-bubble-step3-item1': {
+        ja: '<strong>両端表示</strong> — 通り芯・レベルの両端すべてに符号を表示',
+        en: '<strong>Both Ends</strong> — Show bubbles at both ends of all grids and levels',
+        zh: '<strong>两端显示</strong> — 在轴网和标高的两端均显示符号'
+    },
+    'manual-grid-bubble-step3-item2': {
+        ja: '<strong>左/上のみ</strong> — 片側（左端・上端）のみ表示',
+        en: '<strong>Left/Top Only</strong> — Show bubble on one side only (left/top)',
+        zh: '<strong>仅左/上端</strong> — 仅在一侧（左端/上端）显示'
+    },
+    'manual-grid-bubble-step3-item3': {
+        ja: '<strong>右/下のみ</strong> — 片側（右端・下端）のみ表示',
+        en: '<strong>Right/Bottom Only</strong> — Show bubble on one side only (right/bottom)',
+        zh: '<strong>仅右/下端</strong> — 仅在一侧（右端/下端）显示'
+    },
+    'manual-grid-bubble-step3-note': {
+        ja: 'ダイアログは表示されません。クリックすると即座に反映されます。',
+        en: 'No dialog is displayed. Changes are applied immediately upon clicking.',
+        zh: '不会显示对话框，点击后立即生效。'
+    },
+    'manual-grid-bubble-trouble1-title': {
+        ja: 'クリックしても変化がない',
+        en: 'Nothing changes after clicking',
+        zh: '点击后没有变化'
+    },
+    'manual-grid-bubble-trouble1-item1': {
+        ja: 'ビュー内に通り芯・レベルが<strong>表示されているか</strong>確認してください（フィルタやビュー設定で非表示になっていませんか？）',
+        en: 'Check that grids/levels are <strong>visible</strong> in the view (are they hidden by filters or view settings?)',
+        zh: '请确认视图内的轴网/标高是否<strong>可见</strong>（是否被过滤器或视图设置隐藏？）'
+    },
+    'manual-grid-bubble-trouble1-item2': {
+        ja: 'すでに指定したモードになっている場合、見た目は変わりません',
+        en: 'If the elements are already in the specified mode, no visible change will occur',
+        zh: '如果元素已处于指定模式，则外观不会发生变化'
+    },
+    'manual-grid-bubble-trouble2-title': {
+        ja: 'リンクモデルの通り芯・レベルが変わらない',
+        en: 'Grids/levels in linked models are not affected',
+        zh: '链接模型中的轴网/标高未发生变化'
+    },
+    'manual-grid-bubble-trouble2-desc': {
+        ja: 'リンクファイル内の通り芯・レベルは編集対象外です。ホストモデルの通り芯・レベルのみ変更されます',
+        en: 'Grids and levels inside linked files cannot be edited. Only grids/levels in the host model are modified.',
+        zh: '链接文件中的轴网和标高不在编辑范围内，仅修改主模型中的轴网/标高。'
+    },
+    'manual-grid-bubble-trouble3-title': {
+        ja: '一部の通り芯・レベルだけ変更したい',
+        en: 'Want to change only specific grids/levels',
+        zh: '只想更改部分轴网/标高'
+    },
+    'manual-grid-bubble-trouble3-desc': {
+        ja: 'ボタンをクリックする<strong>前に対象の通り芯・レベルを選択</strong>してから実行してください。選択した要素のみが切り替わります',
+        en: '<strong>Select the target grids/levels before clicking</strong> the button. Only the selected elements will be toggled.',
+        zh: '请在点击按钮<strong>前先选中目标轴网/标高</strong>再执行。仅选中的元素会被切换。'
+    },
+    'manual-grid-bubble-related-viewport': {
+        ja: 'ビューポート位置 コピー＆ペースト — シート上のビューポート位置を他のシートに合わせる',
+        en: 'Viewport Position Copy & Paste — Match viewport positions across sheets',
+        zh: '视口位置 复制＆粘贴 — 将图纸上的视口位置与其他图纸对齐'
+    }
+};
 
     // ========================================
     // sheet-creation.html (シート一括作成)
     // ========================================
-    translations.sheetCreation = {
-        'manual-sheet-creation-title': {
-            ja: 'シート一括作成',
-            en: 'Batch Sheet Creation',
-            zh: '批量创建图纸'
-        },
-        'manual-sheet-creation-subtitle': {
-            ja: '図枠を指定して複数シートをまとめて作成',
-            en: 'Create multiple sheets at once with specified title blocks',
-            zh: '使用指定的标题栏一次创建多个图纸'
-        },
-        'manual-sheet-creation-overview': {
-            ja: 'この機能は、同じ図枠を使用する複数のシートを一度に作成できます。シート番号とシート名をリスト形式で入力することで、従来の繰り返し作業を大幅に削減できます。',
-            en: 'This feature allows you to create multiple sheets with the same title block at once. By entering sheet numbers and names in a list format, you can significantly reduce repetitive tasks.',
-            zh: '此功能允许您一次使用相同的标题栏创建多个图纸。通过以列表格式输入图纸编号和名称，可以显著减少重复性工作。'
-        },
-        'manual-sheet-creation-step1-title': {
-            ja: 'シート一括作成を起動',
-            en: 'Launch Batch Sheet Creation',
-            zh: '启动批量创建图纸'
-        },
-        'manual-sheet-creation-step1-desc': {
-            ja: 'Revitリボンの「28 Tools」タブから「シート一括作成」ボタンをクリックします。',
-            en: 'Click the "Batch Sheet Creation" button from the "28 Tools" tab in the Revit ribbon.',
-            zh: '从Revit功能区的"28 Tools"选项卡中点击"批量创建图纸"按钮。'
-        },
-        'manual-sheet-creation-step2-title': {
-            ja: '図枠を選択',
-            en: 'Select Title Block',
-            zh: '选择标题栏'
-        },
-        'manual-sheet-creation-step2-desc': {
-            ja: 'ダイアログが表示されたら、使用したい図枠をドロップダウンリストから選択します。',
-            en: 'When the dialog appears, select the title block you want to use from the dropdown list.',
-            zh: '当对话框出现时，从下拉列表中选择要使用的标题栏。'
-        },
-        'manual-sheet-creation-step3-title': {
-            ja: 'シート情報を入力',
-            en: 'Enter Sheet Information',
-            zh: '输入图纸信息'
-        },
-        'manual-sheet-creation-step3-desc': {
-            ja: 'テキストボックスに、シート番号とシート名を1行ずつ入力します。',
-            en: 'Enter sheet numbers and sheet names in the text box, one per line.',
-            zh: '在文本框中输入图纸编号和图纸名称，每行一个。'
-        },
-        'manual-sheet-creation-step3-format': {
-            ja: '入力形式：シート番号<Tab>シート名',
-            en: 'Format: SheetNumber<Tab>SheetName',
-            zh: '格式：图纸编号<Tab>图纸名称'
-        },
-        'manual-sheet-creation-step3-example': {
-            ja: '例：',
-            en: 'Example:',
-            zh: '示例：'
-        },
-        'manual-sheet-creation-step4-title': {
-            ja: 'シートを作成',
-            en: 'Create Sheets',
-            zh: '创建图纸'
-        },
-        'manual-sheet-creation-step4-desc': {
-            ja: '「作成」ボタンをクリックすると、入力したすべてのシートが一括で作成されます。',
-            en: 'Click the "Create" button to create all entered sheets at once.',
-            zh: '点击"创建"按钮一次创建所有输入的图纸。'
-        },
-        'manual-sheet-creation-usecase1-title': {
-            ja: '新規プロジェクト立ち上げ',
-            en: 'New Project Setup',
-            zh: '新项目启动'
-        },
-        'manual-sheet-creation-usecase1-desc': {
-            ja: 'プロジェクト開始時に必要なシートをまとめて作成できます。',
-            en: 'Create all necessary sheets at once when starting a project.',
-            zh: '在项目开始时一次创建所有必要的图纸。'
-        },
-        'manual-sheet-creation-usecase2-title': {
-            ja: '図面リスト更新',
-            en: 'Drawing List Updates',
-            zh: '图纸列表更新'
-        },
-        'manual-sheet-creation-usecase2-desc': {
-            ja: 'Excelなどで管理している図面リストから、シート情報をコピー＆ペーストして効率的に作成できます。',
-            en: 'Efficiently create sheets by copying and pasting sheet information from drawing lists managed in Excel.',
-            zh: '通过从Excel等管理的图纸列表中复制和粘贴图纸信息来高效创建图纸。'
-        },
-        'manual-sheet-creation-usecase3-title': {
-            ja: '時間短縮',
-            en: 'Time Saving',
-            zh: '节省时间'
-        },
-        'manual-sheet-creation-usecase3-desc': {
-            ja: '1枚ずつシートを作成する手間を省き、作業時間を大幅に短縮できます。',
-            en: 'Save significant time by eliminating the need to create sheets one by one.',
-            zh: '通过消除逐个创建图纸的需要来大幅节省时间。'
-        },
-        'manual-sheet-creation-tip1': {
-            ja: 'Excelで図面リストを作成し、番号と名前をコピーして貼り付けると効率的です。',
-            en: 'Create a drawing list in Excel and copy-paste numbers and names for efficiency.',
-            zh: '在Excel中创建图纸列表并复制粘贴编号和名称以提高效率。'
-        },
-        'manual-sheet-creation-tip1-strong': {
-            ja: 'Excel連携：',
-            en: 'Excel Integration:',
-            zh: 'Excel集成：'
-        },
-        'manual-sheet-creation-tip2': {
-            ja: 'シート番号は必ずプロジェクト内で一意である必要があります。',
-            en: 'Sheet numbers must be unique within the project.',
-            zh: '图纸编号必须在项目中唯一。'
-        },
-        'manual-sheet-creation-tip2-strong': {
-            ja: '重複チェック：',
-            en: 'Duplicate Check:',
-            zh: '重复检查：'
-        },
-        'manual-sheet-creation-tip3': {
-            ja: '作成後のシートは、通常のシートと同様に編集・削除が可能です。',
-            en: 'Created sheets can be edited and deleted like regular sheets.',
-            zh: '创建的图纸可以像常规图纸一样进行编辑和删除。'
-        },
-        'manual-sheet-creation-tip3-strong': {
-            ja: '後から編集可能：',
-            en: 'Editable Later:',
-            zh: '稀后可编辑：'
-        },
-        'manual-sheet-creation-note1': {
-            ja: 'シート番号が既に存在する場合、そのシートはスキップされます。',
-            en: 'If a sheet number already exists, that sheet will be skipped.',
-            zh: '如果图纸编号已存在，则该图纸将被跳过。'
-        },
-        'manual-sheet-creation-note2': {
-            ja: 'シート番号とシート名の間は必ずタブ文字で区切ってください。スペースでは正しく認識されません。',
-            en: 'Sheet numbers and names must be separated by a tab character. Spaces will not be recognized correctly.',
-            zh: '图纸编号和名称必须用制表符分隔。空格将无法正确识别。'
-        },
-        'manual-sheet-creation-note3': {
-            ja: '大量のシートを一度に作成すると、処理に時間がかかる場合があります。',
-            en: 'Creating a large number of sheets at once may take some time to process.',
-            zh: '一次创建大量图纸可能需要一些时间来处理。'
-        }
-    };
+translations.sheetCreation = {
+    'manual-sheet-creation-title': {
+        ja: 'シート一括作成',
+        en: 'Bulk Sheet Creation',
+        zh: '批量创建图纸'
+    },
+    'manual-sheet-creation-subtitle': {
+        ja: '図枠を指定して複数シートをまとめて作成',
+        en: 'Create multiple sheets at once with a specified title block',
+        zh: '指定图框并批量创建多个图纸'
+    },
+    'manual-sheet-creation-overview': {
+        ja: 'シート番号と名前のリストを入力するだけで、複数のシートをまとめて作成できる機能です。',
+        en: 'Create multiple sheets at once simply by entering a list of sheet numbers and names.',
+        zh: '只需输入图纸编号和名称列表，即可批量创建多张图纸。'
+    },
+    'manual-sheet-creation-feature1': {
+        ja: 'シート番号と名前を複数行入力して、<strong>一度にまとめてシートを作成</strong>します',
+        en: 'Enter multiple rows of sheet numbers and names to <strong>create all sheets at once</strong>',
+        zh: '输入多行图纸编号和名称，<strong>一次性批量创建图纸</strong>'
+    },
+    'manual-sheet-creation-feature2': {
+        ja: 'タイトルブロックの種類を指定できます',
+        en: 'You can specify the title block type',
+        zh: '可以指定图框类型'
+    },
+    'manual-sheet-creation-feature3': {
+        ja: 'Excelから番号・名前をコピー＆ペーストして、そのまま利用できます',
+        en: 'You can copy and paste numbers and names directly from Excel',
+        zh: '可以直接从Excel复制粘贴编号和名称使用'
+    },
+    'manual-sheet-creation-step1-title': {
+        ja: 'コマンドの起動',
+        en: 'Launch the command',
+        zh: '启动命令'
+    },
+    'manual-sheet-creation-step1-desc': {
+        ja: 'リボン「<strong>28 Tools</strong>」タブ →「<strong>シート</strong>」パネル →「<strong>シート一括作成</strong>」ボタンをクリックします。',
+        en: 'In the Ribbon, go to the "<strong>28 Tools</strong>" tab → "<strong>Sheet</strong>" panel → click the "<strong>Bulk Sheet Creation</strong>" button.',
+        zh: '在功能区"<strong>28 Tools</strong>"选项卡 →"<strong>图纸</strong>"面板 → 点击"<strong>批量创建图纸</strong>"按钮。'
+    },
+    'manual-sheet-creation-step2-title': {
+        ja: 'タイトルブロックを選択',
+        en: 'Select a title block',
+        zh: '选择图框'
+    },
+    'manual-sheet-creation-step2-desc': {
+        ja: 'ダイアログが開いたら、<strong>タイトルブロック</strong>のドロップダウンから使用するタイトルブロックタイプを選択します。',
+        en: 'When the dialog opens, select the title block type to use from the <strong>Title Block</strong> dropdown.',
+        zh: '对话框打开后，从<strong>图框</strong>下拉菜单中选择要使用的图框类型。'
+    },
+    'manual-sheet-creation-step3-title': {
+        ja: 'シートリストを入力',
+        en: 'Enter the sheet list',
+        zh: '输入图纸列表'
+    },
+    'manual-sheet-creation-step3-desc': {
+        ja: 'テキストエリアにシート番号と名前を入力します。',
+        en: 'Enter sheet numbers and names in the text area.',
+        zh: '在文本区域中输入图纸编号和名称。'
+    },
+    'manual-sheet-creation-step3-format': {
+        ja: '<strong>入力形式</strong>：<code>シート番号[Tab]シート名</code>（1行に1シート）',
+        en: '<strong>Input format</strong>: <code>Sheet Number[Tab]Sheet Name</code> (one sheet per line)',
+        zh: '<strong>输入格式</strong>：<code>图纸编号[Tab]图纸名称</code>（每行一张图纸）'
+    },
+    'manual-sheet-creation-step3-example-label': {
+        ja: '入力例：',
+        en: 'Example:',
+        zh: '输入示例：'
+    },
+    'manual-sheet-creation-step3-tip': {
+        ja: '💡 <strong>Excelからの貼り付けが便利です。</strong> Excelで「番号」列と「名前」列を選択してコピーし、テキストエリアにそのまま貼り付けることができます。列はタブ区切りで認識されます。',
+        en: '💡 <strong>Pasting from Excel is convenient.</strong> Select the "Number" and "Name" columns in Excel, copy them, and paste directly into the text area. Columns are recognized as tab-separated.',
+        zh: '💡 <strong>从Excel粘贴非常方便。</strong> 在Excel中选择"编号"列和"名称"列后复制，可以直接粘贴到文本区域。列之间以制表符分隔识别。'
+    },
+    'manual-sheet-creation-step4-title': {
+        ja: '作成を実行',
+        en: 'Execute creation',
+        zh: '执行创建'
+    },
+    'manual-sheet-creation-step4-desc': {
+        ja: '「<strong>作成</strong>」ボタンをクリックします。入力したリストのとおりにシートが作成され、プロジェクトブラウザに反映されます。',
+        en: 'Click the "<strong>Create</strong>" button. Sheets are created according to the entered list and appear in the Project Browser.',
+        zh: '点击"<strong>创建</strong>"按钮。图纸将按照输入的列表创建，并显示在项目浏览器中。'
+    },
+    'manual-sheet-creation-output1': {
+        ja: '指定したタイトルブロックを使用したシートが一括作成されます',
+        en: 'Sheets using the specified title block are created in bulk',
+        zh: '使用指定图框的图纸将被批量创建'
+    },
+    'manual-sheet-creation-output2': {
+        ja: '作成されたシートはプロジェクトブラウザの「シート」ツリーに追加されます',
+        en: 'Created sheets are added to the "Sheets" tree in the Project Browser',
+        zh: '创建的图纸将添加到项目浏览器的"图纸"树中'
+    },
+    'manual-sheet-creation-output3': {
+        ja: '重複するシート番号が入力された場合は、そのシートをスキップして警告メッセージが表示されます',
+        en: 'If a duplicate sheet number is entered, that sheet is skipped and a warning message is displayed',
+        zh: '如果输入了重复的图纸编号，该图纸将被跳过并显示警告信息'
+    },
+    'manual-sheet-creation-trouble1-title': {
+        ja: '「シート番号が重複しています」と表示される',
+        en: '"Sheet number already exists" message appears',
+        zh: '显示"图纸编号重复"提示'
+    },
+    'manual-sheet-creation-trouble1-item1': {
+        ja: '入力したシート番号がすでにプロジェクト内に存在しています',
+        en: 'The entered sheet number already exists in the project',
+        zh: '输入的图纸编号在项目中已存在'
+    },
+    'manual-sheet-creation-trouble1-item2': {
+        ja: 'プロジェクトブラウザでシート番号を確認し、重複しない番号を使用してください',
+        en: 'Check the sheet numbers in the Project Browser and use a number that does not duplicate',
+        zh: '请在项目浏览器中确认图纸编号，使用不重复的编号'
+    },
+    'manual-sheet-creation-trouble2-title': {
+        ja: 'タイトルブロックが選択肢に表示されない',
+        en: 'Title block does not appear in the dropdown',
+        zh: '图框未显示在选项中'
+    },
+    'manual-sheet-creation-trouble2-item1': {
+        ja: 'プロジェクトにタイトルブロックファミリが読み込まれていることを確認してください',
+        en: 'Verify that a title block family is loaded into the project',
+        zh: '请确认项目中已加载图框族'
+    },
+    'manual-sheet-creation-trouble2-item2': {
+        ja: 'タイトルブロックがない場合は、「なし」を選択してシートのみ作成することもできます',
+        en: 'If there is no title block, you can select "None" to create sheets without one',
+        zh: '如果没有图框，也可以选择"无"仅创建图纸'
+    },
+    'manual-sheet-creation-trouble3-title': {
+        ja: 'Excelから貼り付けたのに正しく認識されない',
+        en: 'Pasted from Excel but not recognized correctly',
+        zh: '从Excel粘贴后无法正确识别'
+    },
+    'manual-sheet-creation-trouble3-item1': {
+        ja: '列の区切りが<strong>タブ</strong>になっているか確認してください',
+        en: 'Check that the column separator is a <strong>tab</strong>',
+        zh: '请确认列的分隔符是否为<strong>制表符（Tab）</strong>'
+    },
+    'manual-sheet-creation-trouble3-item2': {
+        ja: '番号列と名前列の2列のみを選択してコピーしてください',
+        en: 'Select and copy only the two columns: the number column and the name column',
+        zh: '请仅选择编号列和名称列这两列进行复制'
+    },
+    'manual-sheet-creation-trouble3-item3': {
+        ja: '余分な列（3列以上）が含まれている場合、3列目以降は無視されます',
+        en: 'If extra columns (3 or more) are included, columns from the 3rd onward are ignored',
+        zh: '如果包含多余的列（3列以上），第3列及之后的列将被忽略'
+    },
+    'manual-sheet-creation-related-viewport': {
+        ja: 'ビューポート位置 コピー＆ペースト — 作成したシートのビューポート位置を他のシートに合わせる',
+        en: 'Viewport Position Copy & Paste — Match viewport positions of created sheets to other sheets',
+        zh: '视口位置 复制＆粘贴 — 将创建图纸的视口位置与其他图纸对齐'
+    }
+};
 
     // ========================================
     // view-copy.html (3D視点コピペ)
     // ========================================
-    translations.viewCopy = {
-        'manual-view-copy-title': {
-            ja: '3D視点コピペ',
-            en: '3D View Copy & Paste',
-            zh: '3D视点复制粘贴'
-        },
-        'manual-view-copy-subtitle': {
-            ja: '3Dビューの視点を他のビューにコピー＆ペースト',
-            en: 'Copy and paste 3D view orientation to other views',
-            zh: '将3D视图的视点复制并粘贴到其他视图'
-        },
-        'manual-view-copy-overview': {
-            ja: 'この機能は、ある3Dビューのカメラ視点（カメラ位置・向き・ズーム）を別の3Dビューにコピーできます。複数の3Dビューで同じ視点を使いたい場合に、手動で調整する手間を省くことができます。',
-            en: 'This feature allows you to copy the camera orientation (position, direction, and zoom) from one 3D view to another. It saves you the effort of manually adjusting when you want to use the same viewpoint across multiple 3D views.',
-            zh: '此功能可以将一个3D视图的摄像机视点（位置、方向和缩放）复制到另一个3D视图。当您想在多个3D视图中使用相同的视点时，可以省去手动调整的麻烦。'
-        },
-        'manual-view-copy-step1-title': {
-            ja: 'コピー元の3Dビューを開く',
-            en: 'Open the Source 3D View',
-            zh: '打开源3D视图'
-        },
-        'manual-view-copy-step1-desc': {
-            ja: '視点をコピーしたい3Dビューを開き、希望の視点に調整します。',
-            en: 'Open the 3D view from which you want to copy the viewpoint and adjust it to the desired orientation.',
-            zh: '打开要复制视点的3D视图，并调整到所需的视点。'
-        },
-        'manual-view-copy-step2-title': {
-            ja: '視点をコピー',
-            en: 'Copy the Viewpoint',
-            zh: '复制视点'
-        },
-        'manual-view-copy-step2-desc': {
-            ja: 'Revitリボンの「28 Tools」タブから「視点コピー」ボタンをクリックします。現在の3Dビューの視点情報がメモリにコピーされます。',
-            en: 'Click the "Copy View" button from the "28 Tools" tab in the Revit ribbon. The viewpoint information of the current 3D view will be copied to memory.',
-            zh: '从Revit功能区的"28 Tools"选项卡中点击"视点复制"按钮。当前3D视图的视点信息将被复制到内存中。'
-        },
-        'manual-view-copy-step3-title': {
-            ja: 'ペースト先の3Dビューを開く',
-            en: 'Open the Target 3D View',
-            zh: '打开目标3D视图'
-        },
-        'manual-view-copy-step3-desc': {
-            ja: '視点を適用したい別の3Dビューを開きます。',
-            en: 'Open another 3D view where you want to apply the viewpoint.',
-            zh: '打开要应用视点的另一个3D视图。'
-        },
-        'manual-view-copy-step4-title': {
-            ja: '視点をペースト',
-            en: 'Paste the Viewpoint',
-            zh: '粘贴视点'
-        },
-        'manual-view-copy-step4-desc': {
-            ja: '「28 Tools」タブから「視点ペースト」ボタンをクリックします。コピーした視点が現在の3Dビューに適用されます。',
-            en: 'Click the "Paste View" button from the "28 Tools" tab. The copied viewpoint will be applied to the current 3D view.',
-            zh: '从"28 Tools"选项卡中点击"视点粘贴"按钮。复制的视点将应用于当前3D视图。'
-        },
-        'manual-view-copy-usecase1-title': {
-            ja: '一貫した視点の設定',
-            en: 'Consistent View Settings',
-            zh: '设置一致的视点'
-        },
-        'manual-view-copy-usecase1-desc': {
-            ja: '複数の3Dビューで同じ視点を使用することで、図面の一貫性を保てます。',
-            en: 'Maintain drawing consistency by using the same viewpoint across multiple 3D views.',
-            zh: '通过在多个3D视图中使用相同的视点来保持图纸的一致性。'
-        },
-        'manual-view-copy-usecase2-title': {
-            ja: '段階ビューの作成',
-            en: 'Creating Phase Views',
-            zh: '创建阶段视图'
-        },
-        'manual-view-copy-usecase2-desc': {
-            ja: '同じ視点で要素表示を変えた複数のビューを効率的に作成できます。',
-            en: 'Efficiently create multiple views with different element visibility from the same viewpoint.',
-            zh: '从相同视点高效创建具有不同元素显示的多个视图。'
-        },
-        'manual-view-copy-usecase3-title': {
-            ja: '時間短縮',
-            en: 'Time Saving',
-            zh: '节省时间'
-        },
-        'manual-view-copy-usecase3-desc': {
-            ja: '3Dビューの視点調整を何度も繰り返す必要がなくなります。',
-            en: 'Eliminate the need to repeatedly adjust 3D view orientations.',
-            zh: '无需反复调整3D视图的视点。'
-        },
-        'manual-view-copy-tip1': {
-            ja: '透視図とアイソメトリックビューでも視点のコピーが可能です。',
-            en: 'Viewpoint copying is also possible with perspective and isometric views.',
-            zh: '透视图和等轴测视图也可以进行视点复制。'
-        },
-        'manual-view-copy-tip1-strong': {
-            ja: '透視図とアイソメトリック：',
-            en: 'Perspective and Isometric:',
-            zh: '透视图和等轴测：'
-        },
-        'manual-view-copy-tip2': {
-            ja: 'よく使う視点をテンプレートとして保存するビューを作成しておくと便利です。',
-            en: 'It is useful to create views that save frequently used viewpoints as templates.',
-            zh: '创建将常用视点保存为模板的视图很有用。'
-        },
-        'manual-view-copy-tip2-strong': {
-            ja: 'テンプレートビュー作成：',
-            en: 'Create Template Views:',
-            zh: '创建模板视图：'
-        },
-        'manual-view-copy-tip3': {
-            ja: '視点だけでなく、ズームレベルもコピーされます。',
-            en: 'Not only the viewpoint but also the zoom level is copied.',
-            zh: '不仅复制视点，还复制缩放级别。'
-        },
-        'manual-view-copy-tip3-strong': {
-            ja: 'ズームレベル：',
-            en: 'Zoom Level:',
-            zh: '缩放级别：'
-        },
-        'manual-view-copy-note1': {
-            ja: 'この機能は3Dビュー専用です。平面図や立面図などの2Dビューでは使用できません。',
-            en: 'This feature is for 3D views only. It cannot be used with 2D views such as floor plans or elevations.',
-            zh: '此功能仅适用于3D视图。不能用于平面图或立面图等2D视图。'
-        },
-        'manual-view-copy-note2': {
-            ja: '視点コピー後にRevitを閉じると、コピーした視点情報は失われます。',
-            en: 'If you close Revit after copying a viewpoint, the copied viewpoint information will be lost.',
-            zh: '如果在复制视点后关闭Revit，复制的视点信息将丢失。'
-        },
-        'manual-view-copy-note3': {
-            ja: 'ビューテンプレートの設定（表示/グラフィックス設定など）はコピーされません。視点情報のみがコピーされます。',
-            en: 'View template settings (such as Visibility/Graphics settings) are not copied. Only viewpoint information is copied.',
-            zh: '不会复制视图模板设置（如可见性/图形设置）。仅复制视点信息。'
-        }
-    };
+translations.viewCopy = {
+    'manual-view-copy-title': {
+        ja: '3D視点コピペ',
+        en: '3D View Point Copy & Paste',
+        zh: '三维视点复制粘贴'
+    },
+    'manual-view-copy-subtitle': {
+        ja: '3Dビューの視点を他のビューにコピー＆ペースト',
+        en: 'Copy and paste the camera viewpoint between 3D views',
+        zh: '将三维视图的视点复制粘贴到其他视图'
+    },
+    'manual-view-copy-overview': {
+        ja: '3Dビューのカメラ位置・向きをコピーして、別の3Dビューに貼り付ける機能です。複数の3Dビューで視点を揃えたい場合に便利です。',
+        en: 'Copy the camera position and orientation of a 3D view and paste it to another 3D view. Useful when you want to align viewpoints across multiple 3D views.',
+        zh: '复制三维视图的相机位置和方向，并粘贴到另一个三维视图。在需要对齐多个三维视图的视点时非常方便。'
+    },
+    'manual-view-copy-feature1': {
+        ja: 'ある3Dビューの<strong>視点（カメラ位置・注視点・上方向）</strong>を記録し、別の3Dビューにそのまま適用します',
+        en: 'Records the <strong>viewpoint (camera position, target point, up direction)</strong> of a 3D view and applies it to another 3D view',
+        zh: '记录某个三维视图的<strong>视点（相机位置、目标点、上方向）</strong>并直接应用到另一个三维视图'
+    },
+    'manual-view-copy-feature2': {
+        ja: 'パースビュー・アイソメビュー問わず使用できます',
+        en: 'Works with both perspective and isometric views',
+        zh: '透视视图和等轴测视图均可使用'
+    },
+    'manual-view-copy-step1-title': {
+        ja: '視点をコピー',
+        en: 'Copy the viewpoint',
+        zh: '复制视点'
+    },
+    'manual-view-copy-step1-item1': {
+        ja: 'コピーしたい視点の<strong>3Dビューをアクティブ</strong>にする',
+        en: '<strong>Activate the 3D view</strong> whose viewpoint you want to copy',
+        zh: '<strong>激活</strong>要复制视点的<strong>三维视图</strong>'
+    },
+    'manual-view-copy-step1-item2': {
+        ja: 'リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>3Dビュー コピー</strong>」をクリック',
+        en: 'In the Ribbon, go to "<strong>28 Tools</strong>" tab → "<strong>View</strong>" panel → click "<strong>3D View Copy</strong>"',
+        zh: '在功能区"<strong>28 Tools</strong>"选项卡 →"<strong>视图</strong>"面板 → 点击"<strong>三维视图 复制</strong>"'
+    },
+    'manual-view-copy-step1-note': {
+        ja: '視点情報がメモリに保存されます。',
+        en: 'The viewpoint information is saved to memory.',
+        zh: '视点信息将保存到内存中。'
+    },
+    'manual-view-copy-step2-title': {
+        ja: '視点をペースト',
+        en: 'Paste the viewpoint',
+        zh: '粘贴视点'
+    },
+    'manual-view-copy-step2-item1': {
+        ja: '視点を適用したい<strong>別の3Dビューをアクティブ</strong>にする',
+        en: '<strong>Activate the other 3D view</strong> to which you want to apply the viewpoint',
+        zh: '<strong>激活</strong>要应用视点的<strong>另一个三维视图</strong>'
+    },
+    'manual-view-copy-step2-item2': {
+        ja: 'リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>3Dビュー ペースト</strong>」をクリック',
+        en: 'In the Ribbon, go to "<strong>28 Tools</strong>" tab → "<strong>View</strong>" panel → click "<strong>3D View Paste</strong>"',
+        zh: '在功能区"<strong>28 Tools</strong>"选项卡 →"<strong>视图</strong>"面板 → 点击"<strong>三维视图 粘贴</strong>"'
+    },
+    'manual-view-copy-step2-note': {
+        ja: 'コピーした視点が適用され、カメラが同じ位置・向きになります。',
+        en: 'The copied viewpoint is applied, and the camera will be at the same position and orientation.',
+        zh: '复制的视点将被应用，相机将处于相同的位置和方向。'
+    },
+    'manual-view-copy-step2-tip': {
+        ja: '💡 コピー後にシートや別のビューを経由してから、目的の3Dビューを開いてペーストしても問題ありません（Revitを閉じない限り有効）。',
+        en: '💡 After copying, you can navigate through sheets or other views before opening the target 3D view and pasting — it remains valid as long as Revit is open.',
+        zh: '💡 复制后，即使经过图纸或其他视图，再打开目标三维视图进行粘贴也没有问题（只要不关闭Revit即有效）。'
+    },
+    'manual-view-copy-note1': {
+        ja: '3Dビュー同士でのみ使用できます（平面図・断面図は不可）',
+        en: 'Can only be used between 3D views (not applicable to floor plans or sections)',
+        zh: '仅可在三维视图之间使用（平面图、剖面图不适用）'
+    },
+    'manual-view-copy-note2': {
+        ja: 'コピーした情報は<strong>Revitを閉じると消えます</strong>（セッション内のみ有効）',
+        en: 'The copied information is <strong>lost when Revit is closed</strong> (valid within the current session only)',
+        zh: '复制的信息<strong>关闭Revit后将消失</strong>（仅在当前会话内有效）'
+    },
+    'manual-view-copy-note3': {
+        ja: 'セクションボックスの範囲はコピーされません。範囲を合わせたい場合は「<strong>SBコピー / SBペースト</strong>」を使用してください',
+        en: 'The section box range is not copied. To match the range, use "<strong>SB Copy / SB Paste</strong>"',
+        zh: '切断框范围不会被复制。如需对齐范围，请使用"<strong>SB复制 / SB粘贴</strong>"'
+    },
+    'manual-view-copy-trouble1-title': {
+        ja: 'ペーストしても視点が変わらない',
+        en: 'Viewpoint does not change after pasting',
+        zh: '粘贴后视点没有变化'
+    },
+    'manual-view-copy-trouble1-item1': {
+        ja: '「<strong>3Dビュー コピー</strong>」を先に実行しているか確認してください',
+        en: 'Make sure you have run "<strong>3D View Copy</strong>" first',
+        zh: '请确认是否已先执行"<strong>三维视图 复制</strong>"'
+    },
+    'manual-view-copy-trouble1-item2': {
+        ja: 'ペースト先がアクティブな<strong>3Dビュー</strong>になっているか確認してください',
+        en: 'Check that the paste destination is an active <strong>3D view</strong>',
+        zh: '请确认粘贴目标是否为活动的<strong>三维视图</strong>'
+    },
+    'manual-view-copy-related-sectionbox': {
+        ja: '切断ボックス コピー＆ペースト — 3Dビューのセクションボックス範囲をコピー',
+        en: 'Section Box Copy & Paste — Copy the section box range of a 3D view',
+        zh: '切断框 复制＆粘贴 — 复制三维视图的切断框范围'
+    },
+    'manual-view-copy-related-cropbox': {
+        ja: 'トリミング領域 コピー＆ペースト — 平面図・断面図などのトリミング領域をコピー',
+        en: 'Crop Region Copy & Paste — Copy the crop region of floor plans, sections, etc.',
+        zh: '裁剪区域 复制＆粘贴 — 复制平面图、剖面图等的裁剪区域'
+    },
+    'manual-view-copy-related-viewport': {
+        ja: 'ビューポート位置 コピー＆ペースト — シート上のビューポート位置をコピー',
+        en: 'Viewport Position Copy & Paste — Copy the viewport position on a sheet',
+        zh: '视口位置 复制＆粘贴 — 复制图纸上的视口位置'
+    }
+};
 
     // ========================================
     // sectionbox-copy.html (切断ボックスコピペ)
     // ========================================
-    translations.sectionboxCopy = {
-        'manual-sectionbox-copy-title': {
-            ja: '切断ボックスコピペ',
-            en: 'Section Box Copy & Paste',
-            zh: '剖切框复制粘贴'
-        },
-        'manual-sectionbox-copy-subtitle': {
-            ja: '3Dビューの切断ボックス範囲をコピー＆ペースト',
-            en: 'Copy and paste 3D view section box range',
-            zh: '复制并粘贴3D视图的剖切框范围'
-        },
-        'manual-sectionbox-copy-overview': {
-            ja: 'この機能は、3Dビューで設定した切断ボックス（Section Box）の範囲を別の3Dビューにコピーできます。複数の3Dビューで同じ範囲を切り出したい場合に、手動で調整する手間を省くことができます。',
-            en: 'This feature allows you to copy the section box range set in a 3D view to another 3D view. It saves you the effort of manual adjustment when you want to use the same cutout range across multiple 3D views.',
-            zh: '此功能可以将3D视图中设置的剖切框范围复制到另一个3D视图。当您想在多个3D视图中使用相同的切割范围时，可以省去手动调整的麻烦。'
-        },
-        'manual-sectionbox-copy-step1-title': {
-            ja: 'コピー元の3Dビューを開く',
-            en: 'Open the Source 3D View',
-            zh: '打开源3D视图'
-        },
-        'manual-sectionbox-copy-step1-desc': {
-            ja: '切断ボックスが設定されている3Dビューを開きます。切断ボックスの範囲を希望通りに調整してください。',
-            en: 'Open a 3D view with a section box set. Adjust the section box range as desired.',
-            zh: '打开已设置剖切框的3D视图。根据需要调整剖切框范围。'
-        },
-        'manual-sectionbox-copy-step2-title': {
-            ja: '切断ボックスをコピー',
-            en: 'Copy the Section Box',
-            zh: '复制剖切框'
-        },
-        'manual-sectionbox-copy-step2-desc': {
-            ja: 'Revitリボンの「28 Tools」タブから「切断ボックスコピー」ボタンをクリックします。現在の3Dビューの切断ボックス範囲がメモリにコピーされます。',
-            en: 'Click the "Copy Section Box" button from the "28 Tools" tab in the Revit ribbon. The section box range of the current 3D view will be copied to memory.',
-            zh: '从Revit功能区的"28 Tools"选项卡中点击"剖切框复制"按钮。当前3D视图的剖切框范围将被复制到内存中。'
-        },
-        'manual-sectionbox-copy-step3-title': {
-            ja: 'ペースト先の3Dビューを開く',
-            en: 'Open the Target 3D View',
-            zh: '打开目标3D视图'
-        },
-        'manual-sectionbox-copy-step3-desc': {
-            ja: '切断ボックスを適用したい別の3Dビューを開きます。',
-            en: 'Open another 3D view where you want to apply the section box.',
-            zh: '打开要应用剖切框的另一个3D视图。'
-        },
-        'manual-sectionbox-copy-step4-title': {
-            ja: '切断ボックスをペースト',
-            en: 'Paste the Section Box',
-            zh: '粘贴剖切框'
-        },
-        'manual-sectionbox-copy-step4-desc': {
-            ja: '「28 Tools」タブから「切断ボックスペースト」ボタンをクリックします。コピーした切断ボックス範囲が現在の3Dビューに適用され、切断ボックスが自動的にONになります。',
-            en: 'Click the "Paste Section Box" button from the "28 Tools" tab. The copied section box range will be applied to the current 3D view, and the section box will be automatically turned on.',
-            zh: '从"28 Tools"选项卡中点击"剖切框粘贴"按钮。复制的剖切框范围将应用于当前3D视图，剖切框将自动打开。'
-        },
-        'manual-sectionbox-copy-usecase1-title': {
-            ja: '部分詳細図の作成',
-            en: 'Creating Partial Detail Views',
-            zh: '创建局部详图'
-        },
-        'manual-sectionbox-copy-usecase1-desc': {
-            ja: '建物の特定部分を複数のビューで詳細に表示する際に便利です。',
-            en: 'Useful when displaying specific parts of a building in detail across multiple views.',
-            zh: '在多个视图中详细显示建筑物的特定部分时很有用。'
-        },
-        'manual-sectionbox-copy-usecase2-title': {
-            ja: 'フロアごとの表示',
-            en: 'Floor-by-Floor Display',
-            zh: '逐层显示'
-        },
-        'manual-sectionbox-copy-usecase2-desc': {
-            ja: '各階の3Dビューで同じ範囲を切り出すことで、一貫した表現ができます。',
-            en: 'Achieve consistent representation by cutting the same range in 3D views of each floor.',
-            zh: '通过在每层的3D视图中切割相同范围来实现一致的表现。'
-        },
-        'manual-sectionbox-copy-usecase3-title': {
-            ja: '時間短縮',
-            en: 'Time Saving',
-            zh: '节省时间'
-        },
-        'manual-sectionbox-copy-usecase3-desc': {
-            ja: '切断ボックスの手動調整を何度も繰り返す必要がなくなります。',
-            en: 'Eliminate the need to repeatedly manually adjust section boxes.',
-            zh: '无需反复手动调整剖切框。'
-        },
-        'manual-sectionbox-copy-tip1': {
-            ja: '切断ボックスの範囲だけでなく、ON/OFF状態もコピーされます。',
-            en: 'Not only the section box range but also the ON/OFF state is copied.',
-            zh: '不仅复制剖切框范围，还复制开关状态。'
-        },
-        'manual-sectionbox-copy-tip1-strong': {
-            ja: '状態も保持：',
-            en: 'State Preserved:',
-            zh: '保留状态：'
-        },
-        'manual-sectionbox-copy-tip2': {
-            ja: 'ペースト後も切断ボックスは手動で調整できます。微調整が必要な場合に便利です。',
-            en: 'The section box can still be manually adjusted after pasting. Useful for fine-tuning.',
-            zh: '粘贴后仍可手动调整剖切框。对于微调很有用。'
-        },
-        'manual-sectionbox-copy-tip2-strong': {
-            ja: '後から調整可能：',
-            en: 'Adjustable Later:',
-            zh: '稍后可调整：'
-        },
-        'manual-sectionbox-copy-tip3': {
-            ja: 'コピー元で切断ボックスがOFFの場合、範囲情報のみがコピーされます。',
-            en: 'If the section box is OFF in the source, only the range information is copied.',
-            zh: '如果源中的剖切框关闭，则仅复制范围信息。'
-        },
-        'manual-sectionbox-copy-tip3-strong': {
-            ja: 'OFF状態での動作：',
-            en: 'Behavior When OFF:',
-            zh: '关闭时的行为：'
-        },
-        'manual-sectionbox-copy-note1': {
-            ja: 'この機能は3Dビュー専用です。平面図や立面図などの2Dビューでは使用できません。',
-            en: 'This feature is for 3D views only. It cannot be used with 2D views such as floor plans or elevations.',
-            zh: '此功能仅适用于3D视图。不能用于平面图或立面图等2D视图。'
-        },
-        'manual-sectionbox-copy-note2': {
-            ja: '切断ボックスコピー後にRevitを閉じると、コピーした範囲情報は失われます。',
-            en: 'If you close Revit after copying a section box, the copied range information will be lost.',
-            zh: '如果在复制剖切框后关闭Revit，复制的范围信息将丢失。'
-        },
-        'manual-sectionbox-copy-note3': {
-            ja: 'ビューテンプレートの設定や表示設定はコピーされません。切断ボックスの範囲情報のみがコピーされます。',
-            en: 'View template settings or display settings are not copied. Only the section box range information is copied.',
-            zh: '不会复制视图模板设置或显示设置。仅复制剖切框范围信息。'
-        }
-    };
+translations.sectionboxCopy = {
+    'manual-sectionbox-copy-title': {
+        ja: '切断ボックスコピペ',
+        en: 'Section Box Copy & Paste',
+        zh: '切断框复制粘贴'
+    },
+    'manual-sectionbox-copy-subtitle': {
+        ja: '3Dビューの切断ボックス範囲をコピー＆ペースト',
+        en: 'Copy and paste the section box range between 3D views',
+        zh: '在三维视图之间复制粘贴切断框范围'
+    },
+    'manual-sectionbox-copy-overview': {
+        ja: '3Dビューのセクションボックス（切断ボックス）の範囲をコピーして、別の3Dビューに貼り付ける機能です。同じ切り取り範囲を複数の3Dビューで共有したい場合に便利です。',
+        en: 'Copy the section box range of a 3D view and paste it to another 3D view. Useful when you want to share the same clipping range across multiple 3D views.',
+        zh: '复制三维视图的剖面框（切断框）范围并粘贴到另一个三维视图。在需要多个三维视图共享相同裁剪范围时非常方便。'
+    },
+    'manual-sectionbox-copy-feature1': {
+        ja: 'ある3Dビューの<strong>セクションボックスの範囲</strong>を記録し、別の3Dビューに適用します',
+        en: 'Records the <strong>section box range</strong> of a 3D view and applies it to another 3D view',
+        zh: '记录某个三维视图的<strong>剖面框范围</strong>并应用到另一个三维视图'
+    },
+    'manual-sectionbox-copy-feature2': {
+        ja: 'ペースト先でセクションボックスが無効になっている場合は、<strong>自動的に有効化</strong>してから範囲を適用します',
+        en: 'If the section box is disabled in the destination view, it is <strong>automatically enabled</strong> before applying the range',
+        zh: '如果目标视图的剖面框未启用，将<strong>自动启用</strong>后再应用范围'
+    },
+    'manual-sectionbox-copy-step1-title': {
+        ja: '切断ボックスをコピー',
+        en: 'Copy the section box',
+        zh: '复制切断框'
+    },
+    'manual-sectionbox-copy-step1-item1': {
+        ja: 'コピーしたいセクションボックスが設定された<strong>3Dビューをアクティブ</strong>にする',
+        en: '<strong>Activate the 3D view</strong> that has the section box you want to copy',
+        zh: '<strong>激活</strong>已设置了要复制的剖面框的<strong>三维视图</strong>'
+    },
+    'manual-sectionbox-copy-step1-item2': {
+        ja: 'リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>SBコピー</strong>」をクリック',
+        en: 'In the Ribbon, go to "<strong>28 Tools</strong>" tab → "<strong>View</strong>" panel → click "<strong>SB Copy</strong>"',
+        zh: '在功能区"<strong>28 Tools</strong>"选项卡 →"<strong>视图</strong>"面板 → 点击"<strong>SB复制</strong>"'
+    },
+    'manual-sectionbox-copy-step1-note': {
+        ja: 'セクションボックスの範囲情報がメモリに保存されます。',
+        en: 'The section box range information is saved to memory.',
+        zh: '剖面框范围信息将保存到内存中。'
+    },
+    'manual-sectionbox-copy-step2-title': {
+        ja: '切断ボックスをペースト',
+        en: 'Paste the section box',
+        zh: '粘贴切断框'
+    },
+    'manual-sectionbox-copy-step2-item1': {
+        ja: '範囲を適用したい<strong>別の3Dビューをアクティブ</strong>にする',
+        en: '<strong>Activate the other 3D view</strong> to which you want to apply the range',
+        zh: '<strong>激活</strong>要应用范围的<strong>另一个三维视图</strong>'
+    },
+    'manual-sectionbox-copy-step2-item2': {
+        ja: 'リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>SBペースト</strong>」をクリック',
+        en: 'In the Ribbon, go to "<strong>28 Tools</strong>" tab → "<strong>View</strong>" panel → click "<strong>SB Paste</strong>"',
+        zh: '在功能区"<strong>28 Tools</strong>"选项卡 →"<strong>视图</strong>"面板 → 点击"<strong>SB粘贴</strong>"'
+    },
+    'manual-sectionbox-copy-step2-note': {
+        ja: 'コピーしたセクションボックスの範囲が適用されます。',
+        en: 'The copied section box range is applied.',
+        zh: '复制的剖面框范围将被应用。'
+    },
+    'manual-sectionbox-copy-step2-tip': {
+        ja: '💡 セクションボックスが無効な3Dビューにペーストしても、自動的に有効化されます。',
+        en: '💡 Even if the section box is disabled in the destination 3D view, it will be automatically enabled.',
+        zh: '💡 即使在剖面框未启用的三维视图中粘贴，也会自动启用。'
+    },
+    'manual-sectionbox-copy-note1': {
+        ja: '3Dビュー同士でのみ使用できます',
+        en: 'Can only be used between 3D views',
+        zh: '仅可在三维视图之间使用'
+    },
+    'manual-sectionbox-copy-note2': {
+        ja: 'コピー元のビューで<strong>セクションボックスが有効</strong>になっていないとコピーできません',
+        en: 'The <strong>section box must be enabled</strong> in the source view in order to copy',
+        zh: '复制源视图中必须<strong>启用了剖面框</strong>才能复制'
+    },
+    'manual-sectionbox-copy-note3': {
+        ja: 'コピーした情報は<strong>Revitを閉じると消えます</strong>（セッション内のみ有効）',
+        en: 'The copied information is <strong>lost when Revit is closed</strong> (valid within the current session only)',
+        zh: '复制的信息<strong>关闭Revit后将消失</strong>（仅在当前会话内有效）'
+    },
+    'manual-sectionbox-copy-trouble1-title': {
+        ja: 'コピーしたのに範囲が適用されない',
+        en: 'Range is not applied even after copying',
+        zh: '已复制但范围未被应用'
+    },
+    'manual-sectionbox-copy-trouble1-item1': {
+        ja: 'コピー元のビューでセクションボックスが<strong>有効</strong>になっているか確認してください',
+        en: 'Check that the section box is <strong>enabled</strong> in the source view',
+        zh: '请确认复制源视图中的剖面框是否<strong>已启用</strong>'
+    },
+    'manual-sectionbox-copy-trouble1-item2': {
+        ja: 'ペースト先が<strong>3Dビュー</strong>になっているか確認してください',
+        en: 'Check that the paste destination is a <strong>3D view</strong>',
+        zh: '请确认粘贴目标是否为<strong>三维视图</strong>'
+    },
+    'manual-sectionbox-copy-trouble2-title': {
+        ja: 'ペースト後にモデルが見えなくなった',
+        en: 'Model becomes invisible after pasting',
+        zh: '粘贴后模型不可见'
+    },
+    'manual-sectionbox-copy-trouble2-item1': {
+        ja: 'セクションボックスの範囲外にモデルがある場合、見えなくなります',
+        en: 'If the model is outside the section box range, it will become invisible',
+        zh: '如果模型位于剖面框范围外，将变得不可见'
+    },
+    'manual-sectionbox-copy-trouble2-item2': {
+        ja: '「セクションボックス」チェックをオフにして範囲を確認・調整してください',
+        en: 'Turn off the "Section Box" checkbox to check and adjust the range',
+        zh: '请关闭"剖面框"复选框以确认和调整范围'
+    },
+    'manual-sectionbox-copy-related-viewcopy': {
+        ja: '3Dビュー視点 コピー＆ペースト — 3Dビューのカメラ位置・向きをコピー',
+        en: '3D View Point Copy & Paste — Copy the camera position and orientation of a 3D view',
+        zh: '三维视点 复制＆粘贴 — 复制三维视图的相机位置和方向'
+    },
+    'manual-sectionbox-copy-related-cropbox': {
+        ja: 'トリミング領域 コピー＆ペースト — 平面図・断面図などのトリミング領域をコピー',
+        en: 'Crop Region Copy & Paste — Copy the crop region of floor plans, sections, etc.',
+        zh: '裁剪区域 复制＆粘贴 — 复制平面图、剖面图等的裁剪区域'
+    },
+    'manual-sectionbox-copy-related-viewport': {
+        ja: 'ビューポート位置 コピー＆ペースト — シート上のビューポート位置をコピー',
+        en: 'Viewport Position Copy & Paste — Copy the viewport position on a sheet',
+        zh: '视口位置 复制＆粘贴 — 复制图纸上的视口位置'
+    }
+};
 
     // ========================================
     // viewport-position.html (ビューポート位置コピペ)
     // ========================================
-    translations.viewportPosition = {
-        'manual-viewport-position-title': {
-            ja: 'ビューポート位置コピペ',
-            en: 'Viewport Position Copy & Paste',
-            zh: '视口位置复制粘贴'
-        },
-        'manual-viewport-position-subtitle': {
-            ja: 'シート上のビューポート位置をコピー＆ペースト',
-            en: 'Copy and paste viewport positions on sheets',
-            zh: '在图纸上复制并粘贴视口位置'
-        },
-        'manual-viewport-position-overview': {
-            ja: 'この機能は、シート上に配置されたビューポートの位置（X座標・Y座標）を別のシートのビューポートにコピーできます。複数のシートで同じレイアウトを使用したい場合に、手動で位置合わせする手間を省くことができます。',
-            en: 'This feature allows you to copy the position (X and Y coordinates) of a viewport placed on a sheet to viewports on other sheets. It saves you the effort of manual alignment when you want to use the same layout across multiple sheets.',
-            zh: '此功能可以将放置在图纸上的视口位置（X和Y坐标）复制到其他图纸上的视口。当您想在多个图纸上使用相同的布局时，可以省去手动对齐的麻烦。'
-        },
-        'manual-viewport-position-step1-title': {
-            ja: 'コピー元のシートを開く',
-            en: 'Open the Source Sheet',
-            zh: '打开源图纸'
-        },
-        'manual-viewport-position-step1-desc': {
-            ja: '位置をコピーしたいビューポートが配置されているシートを開きます。',
-            en: 'Open the sheet containing the viewport whose position you want to copy.',
-            zh: '打开包含要复制位置的视口的图纸。'
-        },
-        'manual-viewport-position-step2-title': {
-            ja: 'ビューポートを選択してコピー',
-            en: 'Select and Copy Viewport',
-            zh: '选择并复制视口'
-        },
-        'manual-viewport-position-step2-desc': {
-            ja: '対象のビューポートを選択し、Revitリボンの「28 Tools」タブから「ビューポート位置コピー」ボタンをクリックします。ビューポートの位置情報がメモリにコピーされます。',
-            en: 'Select the target viewport and click the "Copy Viewport Position" button from the "28 Tools" tab in the Revit ribbon. The viewport position information will be copied to memory.',
-            zh: '选择目标视口并从Revit功能区的"28 Tools"选项卡中点击"视口位置复制"按钮。视口位置信息将被复制到内存中。'
-        },
-        'manual-viewport-position-step3-title': {
-            ja: 'ペースト先のシートを開く',
-            en: 'Open the Target Sheet',
-            zh: '打开目标图纸'
-        },
-        'manual-viewport-position-step3-desc': {
-            ja: '位置を適用したいビューポートが配置されているシートを開きます。',
-            en: 'Open the sheet containing the viewport where you want to apply the position.',
-            zh: '打开包含要应用位置的视口的图纸。'
-        },
-        'manual-viewport-position-step4-title': {
-            ja: 'ビューポートを選択してペースト',
-            en: 'Select and Paste Viewport',
-            zh: '选择并粘贴视口'
-        },
-        'manual-viewport-position-step4-desc': {
-            ja: '対象のビューポートを選択し、「28 Tools」タブから「ビューポート位置ペースト」ボタンをクリックします。コピーした位置が選択したビューポートに適用されます。',
-            en: 'Select the target viewport and click the "Paste Viewport Position" button from the "28 Tools" tab. The copied position will be applied to the selected viewport.',
-            zh: '选择目标视口并从"28 Tools"选项卡中点击"视口位置粘贴"按钮。复制的位置将应用于所选视口。'
-        },
-        'manual-viewport-position-usecase1-title': {
-            ja: 'レイアウトの統一',
-            en: 'Layout Standardization',
-            zh: '布局标准化'
-        },
-        'manual-viewport-position-usecase1-desc': {
-            ja: '複数のシートで同じレイアウトを使用することで、図面セットの統一感を保てます。',
-            en: 'Maintain consistency across drawing sets by using the same layout on multiple sheets.',
-            zh: '通过在多个图纸上使用相同的布局来保持图纸集的一致性。'
-        },
-        'manual-viewport-position-usecase2-title': {
-            ja: 'シリーズ図面の作成',
-            en: 'Creating Series Drawings',
-            zh: '创建系列图纸'
-        },
-        'manual-viewport-position-usecase2-desc': {
-            ja: '各階平面図など、同じレイアウトで内容が異なる図面を効率的に作成できます。',
-            en: 'Efficiently create drawings with the same layout but different content, such as floor plans for each level.',
-            zh: '高效创建具有相同布局但内容不同的图纸，例如每层的平面图。'
-        },
-        'manual-viewport-position-usecase3-title': {
-            ja: '時間短縮',
-            en: 'Time Saving',
-            zh: '节省时间'
-        },
-        'manual-viewport-position-usecase3-desc': {
-            ja: 'ビューポートの位置調整を手動で繰り返す必要がなくなります。',
-            en: 'Eliminate the need to repeatedly manually adjust viewport positions.',
-            zh: '无需反复手动调整视口位置。'
-        },
-        'manual-viewport-position-tip1': {
-            ja: 'シート上の図枠の基準点からの相対位置がコピーされます。',
-            en: 'The relative position from the title block reference point on the sheet is copied.',
-            zh: '复制从图纸上标题栏参考点的相对位置。'
-        },
-        'manual-viewport-position-tip1-strong': {
-            ja: '相対位置：',
-            en: 'Relative Position:',
-            zh: '相对位置：'
-        },
-        'manual-viewport-position-tip2': {
-            ja: '異なるサイズの図枠間でもコピー可能ですが、位置がずれる場合があります。',
-            en: 'Copying is possible between different title block sizes, but positions may shift.',
-            zh: '可以在不同大小的标题栏之间进行复制，但位置可能会偏移。'
-        },
-        'manual-viewport-position-tip2-strong': {
-            ja: '図枠サイズの違い：',
-            en: 'Title Block Size Differences:',
-            zh: '标题栏大小差异：'
-        },
-        'manual-viewport-position-tip3': {
-            ja: 'ビューポートのサイズや回転角度はコピーされません。位置情報のみが対象です。',
-            en: 'Viewport size and rotation angle are not copied. Only position information is transferred.',
-            zh: '不会复制视口大小和旋转角度。仅传输位置信息。'
-        },
-        'manual-viewport-position-tip3-strong': {
-            ja: '位置のみ：',
-            en: 'Position Only:',
-            zh: '仅位置：'
-        },
-        'manual-viewport-position-note1': {
-            ja: 'この機能はシート上のビューポート専用です。ビュー内では使用できません。',
-            en: 'This feature is for viewports on sheets only. It cannot be used within views.',
-            zh: '此功能仅适用于图纸上的视口。不能在视图中使用。'
-        },
-        'manual-viewport-position-note2': {
-            ja: 'ビューポート位置コピー後にRevitを閉じると、コピーした位置情報は失われます。',
-            en: 'If you close Revit after copying viewport position, the copied position information will be lost.',
-            zh: '如果在复制视口位置后关闭Revit，复制的位置信息将丢失。'
-        },
-        'manual-viewport-position-note3': {
-            ja: 'ビューポートが選択されていない状態でペーストしようとすると、エラーメッセージが表示されます。',
-            en: 'If you try to paste without selecting a viewport, an error message will be displayed.',
-            zh: '如果在未选择视口的情况下尝试粘贴，将显示错误消息。'
-        }
-    };
+translations.viewportPosition = {
+    'manual-viewport-position-title': {
+        ja: 'ビューポート位置コピペ',
+        en: 'Viewport Position Copy & Paste',
+        zh: '视口位置复制粘贴'
+    },
+    'manual-viewport-pos-subtitle': {
+        ja: 'シート上のビューポート位置をコピー＆ペースト',
+        en: 'Copy & paste viewport positions on sheets',
+        zh: '复制并粘贴图纸上的视口位置'
+    },
+    'manual-viewport-pos-overview': {
+        ja: 'シート上のビューポート位置をコピーして、他のシートの同名ビューポートに自動的に貼り付ける機能です。複数のシートで同じビュー（例: 各階の平面図）を同じ位置に揃えたいときに便利です。',
+        en: 'This feature copies the position of a viewport on a sheet and automatically pastes it onto viewports with the same name on other sheets. It is useful when you want to align the same view (e.g., floor plans of each level) to the same position across multiple sheets.',
+        zh: '此功能可复制图纸上的视口位置，并自动粘贴到其他图纸上同名视口。当需要在多张图纸上将相同视图（如各楼层平面图）对齐到相同位置时非常方便。'
+    },
+    'manual-viewport-pos-feature1': {
+        ja: 'シート上のビューポートの位置を記録し、<strong>ビュー名が一致するビューポート</strong>を他のシートで同じ位置に配置します',
+        en: 'Records the position of a viewport on a sheet and places <strong>viewports with matching view names</strong> at the same position on other sheets',
+        zh: '记录图纸上视口的位置，并将<strong>视图名称匹配的视口</strong>放置在其他图纸的相同位置'
+    },
+    'manual-viewport-pos-feature2': {
+        ja: '複数のシートに続けてペーストするだけで、全シートのビューポート位置を一括で揃えられます',
+        en: 'Simply paste to multiple sheets in sequence to align viewport positions across all sheets at once',
+        zh: '只需依次粘贴到多张图纸，即可一次性对齐所有图纸的视口位置'
+    },
+    'section-usecases': {
+        ja: '使用シーン',
+        en: 'Use Cases',
+        zh: '使用场景'
+    },
+    'manual-viewport-pos-col-scene': {
+        ja: 'シーン',
+        en: 'Scene',
+        zh: '场景'
+    },
+    'manual-viewport-pos-col-operation': {
+        ja: '操作',
+        en: 'Operation',
+        zh: '操作'
+    },
+    'manual-viewport-pos-scene1': {
+        ja: '各階の平面図を同じ位置に揃えたい',
+        en: 'Align floor plans of each level to the same position',
+        zh: '将各楼层平面图对齐到相同位置'
+    },
+    'manual-viewport-pos-scene1-op': {
+        ja: '1F平面図のVP位置をコピーし、2F・3F…のシートに順番にペースト',
+        en: 'Copy the VP position of the 1F floor plan and paste sequentially to 2F, 3F… sheets',
+        zh: '复制1F平面图的VP位置，依次粘贴到2F、3F…的图纸上'
+    },
+    'manual-viewport-pos-scene2': {
+        ja: '改訂でシートを作り直した',
+        en: 'Recreated sheets during revision',
+        zh: '修订时重新创建了图纸'
+    },
+    'manual-viewport-pos-scene2-op': {
+        ja: '元シートからVP位置をコピーして新シートに貼り付け',
+        en: 'Copy VP position from the original sheet and paste to the new sheet',
+        zh: '从原图纸复制VP位置并粘贴到新图纸'
+    },
+    'section-usage': {
+        ja: '使い方',
+        en: 'How to Use',
+        zh: '使用方法'
+    },
+    'manual-viewport-pos-step1-title': {
+        ja: 'ビューポート位置をコピー',
+        en: 'Copy Viewport Position',
+        zh: '复制视口位置'
+    },
+    'manual-viewport-pos-step1-sub1': {
+        ja: '基準となるビューポートが配置された<strong>シートを開く</strong>',
+        en: '<strong>Open the sheet</strong> where the reference viewport is placed',
+        zh: '<strong>打开</strong>放置了基准视口的<strong>图纸</strong>'
+    },
+    'manual-viewport-pos-step1-sub2': {
+        ja: 'リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>VP位置コピー</strong>」をクリック',
+        en: 'Ribbon「<strong>28 Tools</strong>」tab → 「<strong>View</strong>」panel → click「<strong>VP Position Copy</strong>」',
+        zh: '功能区「<strong>28 Tools</strong>」选项卡 →「<strong>视图</strong>」面板 → 点击「<strong>VP位置复制</strong>」'
+    },
+    'manual-viewport-pos-step1-sub3': {
+        ja: 'シート上の<strong>基準ビューポートをクリック</strong>して選択',
+        en: '<strong>Click the reference viewport</strong> on the sheet to select it',
+        zh: '点击图纸上的<strong>基准视口</strong>以选择它'
+    },
+    'manual-viewport-pos-step1-desc': {
+        ja: 'ビューポートの位置情報（ビュー名と座標）がメモリに保存されます。',
+        en: 'The viewport position information (view name and coordinates) is saved in memory.',
+        zh: '视口位置信息（视图名称和坐标）将保存到内存中。'
+    },
+    'manual-viewport-pos-step2-title': {
+        ja: 'ビューポート位置をペースト',
+        en: 'Paste Viewport Position',
+        zh: '粘贴视口位置'
+    },
+    'manual-viewport-pos-step2-sub1': {
+        ja: '位置を合わせたい<strong>別のシートを開く</strong>',
+        en: '<strong>Open another sheet</strong> where you want to align the position',
+        zh: '<strong>打开另一张图纸</strong>（您希望对齐位置的图纸）'
+    },
+    'manual-viewport-pos-step2-sub2': {
+        ja: 'リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>VP位置ペースト</strong>」をクリック',
+        en: 'Ribbon「<strong>28 Tools</strong>」tab → 「<strong>View</strong>」panel → click「<strong>VP Position Paste</strong>」',
+        zh: '功能区「<strong>28 Tools</strong>」选项卡 →「<strong>视图</strong>」面板 → 点击「<strong>VP位置粘贴</strong>」'
+    },
+    'manual-viewport-pos-step2-desc': {
+        ja: 'コピーしたビューポートと<strong>ビュー名が一致するビューポート</strong>が自動的に同じ位置に移動します。',
+        en: '<strong>Viewports with matching view names</strong> are automatically moved to the same position as the copied viewport.',
+        zh: '与复制的视口<strong>视图名称匹配的视口</strong>将自动移动到相同位置。'
+    },
+    'manual-viewport-pos-step2-tip': {
+        ja: '💡 ペーストは何度でも繰り返せます。シートを切り替えながらペーストするだけで、全シートを揃えられます。',
+        en: '💡 You can paste as many times as needed. Just switch sheets and paste to align all sheets.',
+        zh: '💡 可以多次重复粘贴。只需切换图纸并粘贴，即可对齐所有图纸。'
+    },
+    'image-placeholder-text': {
+        ja: '📷 スクリーンショット画像をここに追加予定',
+        en: '📷 Screenshot image will be added here',
+        zh: '📷 截图将在此处添加'
+    },
+    'section-notes': {
+        ja: '注意事項',
+        en: 'Notes',
+        zh: '注意事项'
+    },
+    'manual-viewport-pos-note1': {
+        ja: 'ビューポートの<strong>サイズ・スケールは変更されません</strong>。位置のみコピーされます',
+        en: 'The viewport <strong>size and scale are not changed</strong>. Only the position is copied',
+        zh: '视口的<strong>大小和比例不会更改</strong>。仅复制位置'
+    },
+    'manual-viewport-pos-note2': {
+        ja: 'ビュー名が<strong>完全一致</strong>するビューポートのみが移動対象です',
+        en: 'Only viewports with <strong>exactly matching</strong> view names are moved',
+        zh: '仅移动视图名称<strong>完全匹配</strong>的视口'
+    },
+    'manual-viewport-pos-note3': {
+        ja: 'コピーした情報は<strong>Revitを閉じると消えます</strong>（セッション内のみ有効）',
+        en: 'The copied information <strong>is lost when Revit is closed</strong> (valid only within the session)',
+        zh: '<strong>关闭Revit后复制的信息将消失</strong>（仅在会话内有效）'
+    },
+    'section-troubleshooting': {
+        ja: 'トラブルシューティング',
+        en: 'Troubleshooting',
+        zh: '故障排除'
+    },
+    'manual-viewport-pos-trouble1-title': {
+        ja: 'ペーストしてもビューポートが動かない',
+        en: 'Viewport does not move after pasting',
+        zh: '粘贴后视口未移动'
+    },
+    'manual-viewport-pos-trouble1-item1': {
+        ja: 'コピー時に選択したビューポートの<strong>ビュー名</strong>と、ペースト先シートのビューポートのビュー名が一致しているか確認してください',
+        en: 'Check that the <strong>view name</strong> of the viewport selected during copy matches the view name of the viewport on the destination sheet',
+        zh: '请确认复制时选择的视口的<strong>视图名称</strong>与目标图纸上视口的视图名称是否一致'
+    },
+    'manual-viewport-pos-trouble1-item2': {
+        ja: '「<strong>VP位置コピー</strong>」を先に実行しているか確認してください',
+        en: 'Check that 「<strong>VP Position Copy</strong>」 has been executed first',
+        zh: '请确认是否已先执行「<strong>VP位置复制</strong>」'
+    },
+    'section-related': {
+        ja: '関連機能',
+        en: 'Related Features',
+        zh: '相关功能'
+    },
+    'manual-viewport-pos-related1': {
+        ja: '3Dビュー視点 コピー＆ペースト',
+        en: '3D View Camera Copy & Paste',
+        zh: '3D视图视角复制粘贴'
+    },
+    'manual-viewport-pos-related1-desc': {
+        ja: '3Dビューのカメラ位置・向きをコピー',
+        en: 'Copy camera position and direction of 3D views',
+        zh: '复制3D视图的摄像机位置和方向'
+    },
+    'manual-viewport-pos-related2': {
+        ja: '切断ボックス コピー＆ペースト',
+        en: 'Section Box Copy & Paste',
+        zh: '剖面框复制粘贴'
+    },
+    'manual-viewport-pos-related2-desc': {
+        ja: '3Dビューのセクションボックス範囲をコピー',
+        en: 'Copy section box range of 3D views',
+        zh: '复制3D视图的剖面框范围'
+    },
+    'manual-viewport-pos-related3': {
+        ja: 'トリミング領域 コピー＆ペースト',
+        en: 'Crop Region Copy & Paste',
+        zh: '裁剪区域复制粘贴'
+    },
+    'manual-viewport-pos-related3-desc': {
+        ja: 'ビューのトリミング領域をコピー',
+        en: 'Copy the crop region of views',
+        zh: '复制视图的裁剪区域'
+    },
+    'manual-viewport-pos-related4': {
+        ja: 'シート一括作成',
+        en: 'Batch Sheet Creation',
+        zh: '批量创建图纸'
+    },
+    'manual-viewport-pos-related4-desc': {
+        ja: '複数シートをまとめて作成',
+        en: 'Create multiple sheets at once',
+        zh: '批量创建多张图纸'
+    },
+    'breadcrumb-home': {
+        ja: 'ホーム',
+        en: 'Home',
+        zh: '首页'
+    },
+    'breadcrumb-addins': {
+        ja: 'アドイン',
+        en: 'Add-ins',
+        zh: '插件'
+    },
+    'back-to-home': {
+        ja: '← ホームに戻る',
+        en: '← Back to Home',
+        zh: '← 返回首页'
+    },
+    'section-overview': {
+        ja: '機能概要',
+        en: 'Overview',
+        zh: '功能概述'
+    },
+    'footer-share': {
+        ja: 'このページをシェア：',
+        en: 'Share this page:',
+        zh: '分享此页面：'
+    },
+    'footer-about': {
+        ja: '運営者情報',
+        en: 'About',
+        zh: '运营信息'
+    },
+    'footer-contact': {
+        ja: 'お問い合わせ',
+        en: 'Contact',
+        zh: '联系我们'
+    },
+    'footer-privacy': {
+        ja: 'プライバシーポリシー',
+        en: 'Privacy Policy',
+        zh: '隐私政策'
+    },
+    'footer-terms': {
+        ja: '利用規約',
+        en: 'Terms of Use',
+        zh: '使用条款'
+    }
+};
 
     // ========================================
     // cropbox-copy.html (トリミング領域コピペ)
     // ========================================
-    translations.cropboxCopy = {
-        'manual-cropbox-copy-title': {
-            ja: 'トリミング領域コピペ',
-            en: 'Crop Region Copy & Paste',
-            zh: '裁剪区域复制粘贴'
-        },
-        'manual-cropbox-copy-subtitle': {
-            ja: 'ビューのトリミング領域をコピー＆ペースト',
-            en: 'Copy and paste view crop regions',
-            zh: '复制并粘贴视图裁剪区域'
-        },
-        'manual-cropbox-copy-overview': {
-            ja: 'この機能は、あるビューで設定したトリミング領域（Crop Region）の範囲と形状を別のビューにコピーできます。複数のビューで同じ範囲を表示したい場合に、手動で調整する手間を省くことができます。',
-            en: 'This feature allows you to copy the range and shape of a crop region set in one view to another view. It saves you the effort of manual adjustment when you want to display the same range across multiple views.',
-            zh: '此功能可以将一个视图中设置的裁剪区域的范围和形状复制到另一个视图。当您想在多个视图中显示相同的范围时，可以省去手动调整的麻烦。'
-        },
-        'manual-cropbox-copy-step1-title': {
-            ja: 'コピー元のビューを開く',
-            en: 'Open the Source View',
-            zh: '打开源视图'
-        },
-        'manual-cropbox-copy-step1-desc': {
-            ja: 'トリミング領域をコピーしたいビューを開き、希望の範囲に調整します。トリミング領域が表示されていることを確認してください。',
-            en: 'Open the view from which you want to copy the crop region and adjust it to the desired range. Make sure the crop region is visible.',
-            zh: '打开要复制裁剪区域的视图，并调整到所需的范围。确保裁剪区域可见。'
-        },
-        'manual-cropbox-copy-step2-title': {
-            ja: 'トリミング領域をコピー',
-            en: 'Copy the Crop Region',
-            zh: '复制裁剪区域'
-        },
-        'manual-cropbox-copy-step2-desc': {
-            ja: 'Revitリボンの「28 Tools」タブから「トリミング領域コピー」ボタンをクリックします。現在のビューのトリミング領域情報がメモリにコピーされます。',
-            en: 'Click the "Copy Crop Region" button from the "28 Tools" tab in the Revit ribbon. The crop region information of the current view will be copied to memory.',
-            zh: '从Revit功能区的"28 Tools"选项卡中点击"裁剪区域复制"按钮。当前视图的裁剪区域信息将被复制到内存中。'
-        },
-        'manual-cropbox-copy-step3-title': {
-            ja: 'ペースト先のビューを開く',
-            en: 'Open the Target View',
-            zh: '打开目标视图'
-        },
-        'manual-cropbox-copy-step3-desc': {
-            ja: 'トリミング領域を適用したい別のビューを開きます。',
-            en: 'Open another view where you want to apply the crop region.',
-            zh: '打开要应用裁剪区域的另一个视图。'
-        },
-        'manual-cropbox-copy-step4-title': {
-            ja: 'トリミング領域をペースト',
-            en: 'Paste the Crop Region',
-            zh: '粘贴裁剪区域'
-        },
-        'manual-cropbox-copy-step4-desc': {
-            ja: '「28 Tools」タブから「トリミング領域ペースト」ボタンをクリックします。コピーしたトリミング領域が現在のビューに適用され、トリミング領域が自動的にONになります。',
-            en: 'Click the "Paste Crop Region" button from the "28 Tools" tab. The copied crop region will be applied to the current view, and the crop region will be automatically turned on.',
-            zh: '从"28 Tools"选项卡中点击"裁剪区域粘贴"按钮。复制的裁剪区域将应用于当前视图，裁剪区域将自动打开。'
-        },
-        'manual-cropbox-copy-usecase1-title': {
-            ja: '整合図面の作成',
-            en: 'Creating Coordinated Drawings',
-            zh: '创建协调图纸'
-        },
-        'manual-cropbox-copy-usecase1-desc': {
-            ja: '平面図・天井伏図・設備図など、同じ範囲を表示する複数の図面を効率的に作成できます。',
-            en: 'Efficiently create multiple drawings displaying the same range, such as floor plans, reflected ceiling plans, and MEP plans.',
-            zh: '高效创建显示相同范围的多个图纸，例如平面图、天花板反射图和MEP图。'
-        },
-        'manual-cropbox-copy-usecase2-title': {
-            ja: '詳細図のシリーズ化',
-            en: 'Creating Series of Detail Views',
-            zh: '创建详图系列'
-        },
-        'manual-cropbox-copy-usecase2-desc': {
-            ja: '同じ範囲で異なる情報を表示する詳細図を複数作成する際に便利です。',
-            en: 'Useful when creating multiple detail views displaying different information in the same range.',
-            zh: '在创建在相同范围内显示不同信息的多个详图时很有用。'
-        },
-        'manual-cropbox-copy-usecase3-title': {
-            ja: '時間短縮',
-            en: 'Time Saving',
-            zh: '节省时间'
-        },
-        'manual-cropbox-copy-usecase3-desc': {
-            ja: 'トリミング領域の手動調整を何度も繰り返す必要がなくなります。',
-            en: 'Eliminate the need to repeatedly manually adjust crop regions.',
-            zh: '无需反复手动调整裁剪区域。'
-        },
-        'manual-cropbox-copy-tip1': {
-            ja: '平面図、立面図、断面図、3Dビューなど、すべてのビュータイプで使用できます。',
-            en: 'Can be used with all view types including floor plans, elevations, sections, and 3D views.',
-            zh: '可用于所有视图类型，包括平面图、立面图、剖面图和3D视图。'
-        },
-        'manual-cropbox-copy-tip1-strong': {
-            ja: '全ビュータイプ対応：',
-            en: 'All View Types Supported:',
-            zh: '支持所有视图类型：'
-        },
-        'manual-cropbox-copy-tip2': {
-            ja: 'トリミング領域の形状（矩形・非矩形）もコピーされます。',
-            en: 'The crop region shape (rectangular or non-rectangular) is also copied.',
-            zh: '裁剪区域形状（矩形或非矩形）也会被复制。'
-        },
-        'manual-cropbox-copy-tip2-strong': {
-            ja: '形状も保持：',
-            en: 'Shape Preserved:',
-            zh: '保留形状：'
-        },
-        'manual-cropbox-copy-tip3': {
-            ja: 'ペースト後もトリミング領域は手動で調整できます。微調整が必要な場合に便利です。',
-            en: 'The crop region can still be manually adjusted after pasting. Useful for fine-tuning.',
-            zh: '粘贴后仍可手动调整裁剪区域。对于微调很有用。'
-        },
-        'manual-cropbox-copy-tip3-strong': {
-            ja: '後から調整可能：',
-            en: 'Adjustable Later:',
-            zh: '稀后可调整：'
-        },
-        'manual-cropbox-copy-note1': {
-            ja: 'コピー元でトリミング領域がOFFの場合でも、範囲情報はコピーされます。',
-            en: 'Even if the crop region is OFF in the source, the range information is still copied.',
-            zh: '即使源中的裁剪区域关闭，范围信息仍会被复制。'
-        },
-        'manual-cropbox-copy-note2': {
-            ja: 'トリミング領域コピー後にRevitを閉じると、コピーした範囲情報は失われます。',
-            en: 'If you close Revit after copying a crop region, the copied range information will be lost.',
-            zh: '如果在复制裁剪区域后关闭Revit，复制的范围信息将丢失。'
-        },
-        'manual-cropbox-copy-note3': {
-            ja: 'ビューテンプレートの設定や表示設定はコピーされません。トリミング領域の範囲情報のみがコピーされます。',
-            en: 'View template settings or display settings are not copied. Only the crop region range information is copied.',
-            zh: '不会复制视图模板设置或显示设置。仅复制裁剪区域范围信息。'
-        }
-    };
+translations.cropboxCopy = {
+    'manual-cropbox-copy-title': {
+        ja: 'トリミング領域コピペ',
+        en: 'Crop Region Copy & Paste',
+        zh: '裁剪区域复制粘贴'
+    },
+    'manual-cropbox-copy-subtitle': {
+        ja: 'ビューのトリミング領域をコピー＆ペースト',
+        en: 'Copy & paste view crop regions',
+        zh: '复制并粘贴视图的裁剪区域'
+    },
+    'section-overview': {
+        ja: '機能概要',
+        en: 'Overview',
+        zh: '功能概述'
+    },
+    'manual-cropbox-copy-overview': {
+        ja: 'ビューのトリミング領域（クロップボックス）をコピーして、別のビューに貼り付ける機能です。同じ表示範囲を複数のビューで揃えるのに便利です。',
+        en: 'This feature copies the crop region (crop box) of a view and pastes it onto another view. It is useful for aligning the same display range across multiple views.',
+        zh: '此功能可复制视图的裁剪区域（裁剪框）并粘贴到另一个视图。非常适合在多个视图中统一相同的显示范围。'
+    },
+    'manual-cropbox-copy-feature1': {
+        ja: 'ビューのトリミング領域（範囲・形状）を記録し、別のビューに適用します',
+        en: 'Records the crop region (range and shape) of a view and applies it to another view',
+        zh: '记录视图的裁剪区域（范围和形状）并将其应用于另一个视图'
+    },
+    'manual-cropbox-copy-feature2': {
+        ja: 'ペースト先でトリミングが無効になっている場合は、<strong>自動的に有効化</strong>してから適用します',
+        en: 'If cropping is disabled in the destination view, it is <strong>automatically enabled</strong> before applying',
+        zh: '如果目标视图中的裁剪功能已禁用，将<strong>自动启用</strong>后再应用'
+    },
+    'section-usage': {
+        ja: '使い方',
+        en: 'How to Use',
+        zh: '使用方法'
+    },
+    'manual-cropbox-copy-step1-title': {
+        ja: 'トリミング領域をコピー',
+        en: 'Copy Crop Region',
+        zh: '复制裁剪区域'
+    },
+    'manual-cropbox-copy-step1-sub1': {
+        ja: 'コピーしたいトリミング領域が設定された<strong>ビューをアクティブ</strong>にする',
+        en: '<strong>Activate the view</strong> that has the crop region you want to copy',
+        zh: '<strong>激活</strong>设置了要复制的裁剪区域的<strong>视图</strong>'
+    },
+    'manual-cropbox-copy-step1-sub2': {
+        ja: 'リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>トリミングコピー</strong>」をクリック',
+        en: 'Ribbon「<strong>28 Tools</strong>」tab → 「<strong>View</strong>」panel → click「<strong>Crop Copy</strong>」',
+        zh: '功能区「<strong>28 Tools</strong>」选项卡 →「<strong>视图</strong>」面板 → 点击「<strong>裁剪复制</strong>」'
+    },
+    'manual-cropbox-copy-step1-desc': {
+        ja: 'トリミング領域の情報がメモリに保存されます。',
+        en: 'The crop region information is saved in memory.',
+        zh: '裁剪区域信息将保存到内存中。'
+    },
+    'manual-cropbox-copy-step2-title': {
+        ja: 'トリミング領域をペースト',
+        en: 'Paste Crop Region',
+        zh: '粘贴裁剪区域'
+    },
+    'manual-cropbox-copy-step2-sub1': {
+        ja: '同じトリミング範囲を適用したい<strong>別のビューをアクティブ</strong>にする',
+        en: '<strong>Activate another view</strong> where you want to apply the same crop range',
+        zh: '<strong>激活另一个视图</strong>（您希望应用相同裁剪范围的视图）'
+    },
+    'manual-cropbox-copy-step2-sub2': {
+        ja: 'リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>トリミングペースト</strong>」をクリック',
+        en: 'Ribbon「<strong>28 Tools</strong>」tab → 「<strong>View</strong>」panel → click「<strong>Crop Paste</strong>」',
+        zh: '功能区「<strong>28 Tools</strong>」选项卡 →「<strong>视图</strong>」面板 → 点击「<strong>裁剪粘贴</strong>」'
+    },
+    'manual-cropbox-copy-step2-desc': {
+        ja: 'コピーしたトリミング領域が適用されます。',
+        en: 'The copied crop region is applied.',
+        zh: '复制的裁剪区域将被应用。'
+    },
+    'manual-cropbox-copy-step2-tip': {
+        ja: '💡 トリミングが無効なビューにペーストしても、自動的に有効化されます。',
+        en: '💡 Even if you paste to a view with cropping disabled, it will be automatically enabled.',
+        zh: '💡 即使粘贴到裁剪功能已禁用的视图，也会自动启用。'
+    },
+    'image-placeholder-text': {
+        ja: '📷 スクリーンショット画像をここに追加予定',
+        en: '📷 Screenshot image will be added here',
+        zh: '📷 截图将在此处添加'
+    },
+    'section-notes': {
+        ja: '注意事項',
+        en: 'Notes',
+        zh: '注意事项'
+    },
+    'manual-cropbox-copy-note1': {
+        ja: '<strong>同じスケール・同じ参照レベル</strong>のビュー間でコピーすると最も正確に一致します',
+        en: 'The most accurate match is achieved when copying between views with <strong>the same scale and the same reference level</strong>',
+        zh: '在<strong>相同比例和相同参照标高</strong>的视图之间复制时匹配最准确'
+    },
+    'manual-cropbox-copy-note2': {
+        ja: 'スケールや参照レベルが異なるビュー間では、表示範囲がずれる場合があります',
+        en: 'Between views with different scales or reference levels, the display range may be offset',
+        zh: '在比例或参照标高不同的视图之间，显示范围可能会偏移'
+    },
+    'manual-cropbox-copy-note3': {
+        ja: 'コピーした情報は<strong>Revitを閉じると消えます</strong>（セッション内のみ有効）',
+        en: 'The copied information <strong>is lost when Revit is closed</strong> (valid only within the session)',
+        zh: '<strong>关闭Revit后复制的信息将消失</strong>（仅在会话内有效）'
+    },
+    'manual-cropbox-copy-note4': {
+        ja: '3Dビューのセクションボックスのコピーは「<strong>SBコピー / SBペースト</strong>」を使用してください',
+        en: 'For copying section boxes in 3D views, use 「<strong>SB Copy / SB Paste</strong>」',
+        zh: '复制3D视图的剖面框请使用「<strong>SB复制 / SB粘贴</strong>」'
+    },
+    'section-troubleshooting': {
+        ja: 'トラブルシューティング',
+        en: 'Troubleshooting',
+        zh: '故障排除'
+    },
+    'manual-cropbox-copy-trouble1-title': {
+        ja: 'ペースト後に表示範囲がずれている',
+        en: 'Display range is offset after pasting',
+        zh: '粘贴后显示范围发生偏移'
+    },
+    'manual-cropbox-copy-trouble1-item1': {
+        ja: 'コピー元とペースト先のビューが<strong>同じスケールと参照レベル</strong>を持つか確認してください',
+        en: 'Check that the source and destination views have <strong>the same scale and reference level</strong>',
+        zh: '请确认源视图和目标视图是否具有<strong>相同的比例和参照标高</strong>'
+    },
+    'manual-cropbox-copy-trouble1-item2': {
+        ja: '断面図・立面図など向きが異なるビュー間では意図した通りにならない場合があります',
+        en: 'Between views with different orientations such as sections and elevations, results may not be as intended',
+        zh: '在剖面图、立面图等方向不同的视图之间，结果可能与预期不符'
+    },
+    'manual-cropbox-copy-trouble2-title': {
+        ja: 'ペーストしても変化がない',
+        en: 'No change after pasting',
+        zh: '粘贴后无变化'
+    },
+    'manual-cropbox-copy-trouble2-item1': {
+        ja: '「<strong>トリミングコピー</strong>」を先に実行しているか確認してください',
+        en: 'Check that 「<strong>Crop Copy</strong>」 has been executed first',
+        zh: '请确认是否已先执行「<strong>裁剪复制</strong>」'
+    },
+    'manual-cropbox-copy-trouble2-item2': {
+        ja: 'ビューテンプレートで制御されているビューでは変更できない場合があります',
+        en: 'Views controlled by view templates may not be modifiable',
+        zh: '由视图样板控制的视图可能无法修改'
+    },
+    'section-related': {
+        ja: '関連機能',
+        en: 'Related Features',
+        zh: '相关功能'
+    },
+    'manual-cropbox-copy-related1': {
+        ja: '3Dビュー視点 コピー＆ペースト',
+        en: '3D View Camera Copy & Paste',
+        zh: '3D视图视角复制粘贴'
+    },
+    'manual-cropbox-copy-related1-desc': {
+        ja: '3Dビューのカメラ位置・向きをコピー',
+        en: 'Copy camera position and direction of 3D views',
+        zh: '复制3D视图的摄像机位置和方向'
+    },
+    'manual-cropbox-copy-related2': {
+        ja: '切断ボックス コピー＆ペースト',
+        en: 'Section Box Copy & Paste',
+        zh: '剖面框复制粘贴'
+    },
+    'manual-cropbox-copy-related2-desc': {
+        ja: '3Dビューのセクションボックス範囲をコピー',
+        en: 'Copy section box range of 3D views',
+        zh: '复制3D视图的剖面框范围'
+    },
+    'manual-cropbox-copy-related3': {
+        ja: 'ビューポート位置 コピー＆ペースト',
+        en: 'Viewport Position Copy & Paste',
+        zh: '视口位置复制粘贴'
+    },
+    'manual-cropbox-copy-related3-desc': {
+        ja: 'シート上のビューポート位置をコピー',
+        en: 'Copy viewport positions on sheets',
+        zh: '复制图纸上的视口位置'
+    },
+    'breadcrumb-home': {
+        ja: 'ホーム',
+        en: 'Home',
+        zh: '首页'
+    },
+    'breadcrumb-addins': {
+        ja: 'アドイン',
+        en: 'Add-ins',
+        zh: '插件'
+    },
+    'back-to-home': {
+        ja: '← ホームに戻る',
+        en: '← Back to Home',
+        zh: '← 返回首页'
+    },
+    'footer-share': {
+        ja: 'このページをシェア：',
+        en: 'Share this page:',
+        zh: '分享此页面：'
+    },
+    'footer-about': {
+        ja: '運営者情報',
+        en: 'About',
+        zh: '运营信息'
+    },
+    'footer-contact': {
+        ja: 'お問い合わせ',
+        en: 'Contact',
+        zh: '联系我们'
+    },
+    'footer-privacy': {
+        ja: 'プライバシーポリシー',
+        en: 'Privacy Policy',
+        zh: '隐私政策'
+    },
+    'footer-terms': {
+        ja: '利用規約',
+        en: 'Terms of Use',
+        zh: '使用条款'
+    }
+};
 
     // ========================================
     // room-tag.html (部屋タグ自動配置)
     // ========================================
-    translations.roomTag = {
-        'manual-room-tag-title': {
-            ja: '部屋タグ自動配置',
-            en: 'Room Tag Auto Placement',
-            zh: '房间标签自动放置'
-        },
-        'manual-room-tag-subtitle': {
-            ja: 'ビューポートの部屋情報からタグを一括自動配置',
-            en: 'Auto-place room tags from viewport room data',
-            zh: '从视口房间信息自动批量放置标签'
-        },
-        'manual-room-tag-overview': {
-            ja: '図面シート上のビューポートから部屋情報を読み取り、指定したタグタイプ・間隔・配列数で新しいビューにルームタグを一括自動配置する機能です。仕上表の作成作業を大幅に効率化できます。',
-            en: 'This feature reads room information from viewports on drawing sheets and automatically places room tags in a new view with specified tag types, spacing, and grid arrangement. It greatly streamlines the creation of finish schedules.',
-            zh: '此功能从图纸视口读取房间信息，并按指定的标签类型、间距和排列数在新视图中自动批量放置房间标签。大大提高了装修表的创建效率。'
-        },
-        'manual-room-tag-feature1': {
-            ja: 'ビューポート内の部屋を自動検出・一覧表示',
-            en: 'Auto-detect and list rooms in viewport',
-            zh: '自动检测并列出视口中的房间'
-        },
-        'manual-room-tag-feature2': {
-            ja: 'タグの種類（ファミリ）を選択可能',
-            en: 'Selectable tag type (family)',
-            zh: '可选择标签类型（族）'
-        },
-        'manual-room-tag-feature3': {
-            ja: 'グリッド配列（行数・間隔）を自由に設定',
-            en: 'Freely configure grid layout (rows and spacing)',
-            zh: '自由设置网格排列（行数和间距）'
-        },
-        'manual-room-tag-feature4': {
-            ja: '配置プレビューをリアルタイムで確認',
-            en: 'Real-time placement preview',
-            zh: '实时预览放置效果'
-        },
-        'manual-room-tag-feature5': {
-            ja: '平面図 / 天井伏図 のビューファミリタイプを選択可能',
-            en: 'Selectable view family type (Floor Plan / Ceiling Plan)',
-            zh: '可选择视图族类型（平面图/天花板平面图）'
-        },
-        'manual-room-tag-feature6': {
-            ja: '部屋の順番変更・除外が可能',
-            en: 'Reorder or exclude rooms',
-            zh: '可更改房间顺序或排除房间'
-        },
-        'manual-room-tag-step1-title': {
-            ja: '図面シートを開く',
-            en: 'Open Drawing Sheet',
-            zh: '打开图纸'
-        },
-        'manual-room-tag-step1-desc': {
-            ja: '部屋が配置されたビューポートがあるシートを表示します。',
-            en: 'Display the sheet containing viewports with rooms placed.',
-            zh: '显示包含已放置房间的视口的图纸。'
-        },
-        'manual-room-tag-step2-title': {
-            ja: 'ボタンをクリック',
-            en: 'Click Button',
-            zh: '点击按钮'
-        },
-        'manual-room-tag-step2-desc': {
-            ja: 'リボンの「注釈・詳細」パネルから「部屋タグ 自動配置」をクリックします。',
-            en: 'Click "Room Tag Auto Placement" from the "Annotation & Detail" panel on the ribbon.',
-            zh: '从功能区的"注释·详细"面板中点击"房间标签 自动放置"。'
-        },
-        'manual-room-tag-step3-title': {
-            ja: 'ビューポートを選択',
-            en: 'Select Viewport',
-            zh: '选择视口'
-        },
-        'manual-room-tag-step3-desc': {
-            ja: 'シート上のビューポートをクリックして選択します。',
-            en: 'Click to select a viewport on the sheet.',
-            zh: '点击选择图纸上的视口。'
-        },
-        'manual-room-tag-step4-title': {
-            ja: '設定ダイアログ',
-            en: 'Settings Dialog',
-            zh: '设置对话框'
-        },
-        'manual-room-tag-step4-desc': {
-            ja: 'ビュー名（自動生成、編集可能）、ビューファミリタイプ（平面図/天井伏図）、タグファミリタイプ、タグの間隔（mm）、行数、部屋リスト（順番変更・除外）を設定します。',
-            en: 'Configure view name (auto-generated, editable), view family type (Floor Plan/Ceiling Plan), tag family type, tag spacing (mm), number of rows, and room list (reorder/exclude).',
-            zh: '设置视图名称（自动生成，可编辑）、视图族类型（平面图/天花板平面图）、标签族类型、标签间距（mm）、行数、房间列表（排序/排除）。'
-        },
-        'manual-room-tag-step5-title': {
-            ja: 'OKをクリック',
-            en: 'Click OK',
-            zh: '点击确定'
-        },
-        'manual-room-tag-step5-desc': {
-            ja: '新しいビューが作成され、タグが自動配置されます。',
-            en: 'A new view is created and tags are automatically placed.',
-            zh: '创建新视图并自动放置标签。'
-        },
-        'manual-room-tag-step6-title': {
-            ja: '完了',
-            en: 'Complete',
-            zh: '完成'
-        },
-        'manual-room-tag-step6-desc': {
-            ja: '作成されたビュー名とタグ数が表示され、自動的にそのビューに切り替わります。',
-            en: 'The created view name and tag count are displayed, and the view is automatically switched.',
-            zh: '显示创建的视图名称和标签数量，并自动切换到该视图。'
-        },
-        'manual-room-tag-usecase1-title': {
-            ja: '仕上表の作成',
-            en: 'Finish Schedule Creation',
-            zh: '装修表制作'
-        },
-        'manual-room-tag-usecase1-desc': {
-            ja: '部屋タグを整列配置して、仕上表ビューを効率的に作成できます。',
-            en: 'Create finish schedule views efficiently by aligning room tags.',
-            zh: '通过排列房间标签高效创建装修表视图。'
-        },
-        'manual-room-tag-usecase2-title': {
-            ja: '部屋一覧の整理',
-            en: 'Room List Organization',
-            zh: '房间列表整理'
-        },
-        'manual-room-tag-usecase2-desc': {
-            ja: '複数の部屋タグをグリッド状に整列し、見やすい一覧表を作成できます。',
-            en: 'Align multiple room tags in a grid to create a clear overview list.',
-            zh: '将多个房间标签网格排列，创建清晰的一览表。'
-        },
-        'manual-room-tag-usecase3-title': {
-            ja: '作業時間の短縮',
-            en: 'Time Saving',
-            zh: '节省时间'
-        },
-        'manual-room-tag-usecase3-desc': {
-            ja: '手動でタグを1つずつ配置する手間を省き、大幅に時間を短縮できます。',
-            en: 'Save significant time by eliminating the need to place tags one by one manually.',
-            zh: '省去手动逐个放置标签的麻烦，大幅节省时间。'
-        },
-        'manual-room-tag-tip1': {
-            ja: '行数や間隔を変更すると、リアルタイムでプレビューが更新されます。最適な配置を確認してから実行できます。',
-            en: 'Preview updates in real-time when you change rows or spacing. Confirm the optimal layout before executing.',
-            zh: '更改行数或间距时，预览会实时更新。可以在执行前确认最佳布局。'
-        },
-        'manual-room-tag-tip1-strong': {
-            ja: 'プレビュー活用：',
-            en: 'Use Preview:',
-            zh: '使用预览：'
-        },
-        'manual-room-tag-tip2': {
-            ja: '部屋リストで順番を変更することで、タグの配置順序をカスタマイズできます。',
-            en: 'Customize the tag placement order by reordering rooms in the list.',
-            zh: '通过在列表中更改房间顺序来自定义标签放置顺序。'
-        },
-        'manual-room-tag-tip2-strong': {
-            ja: '部屋の順番変更：',
-            en: 'Reorder Rooms:',
-            zh: '更改房间顺序：'
-        },
-        'manual-room-tag-tip3': {
-            ja: '部屋リストからチェックを外すことで、特定の部屋をタグ配置対象から除外できます。',
-            en: 'Exclude specific rooms from tag placement by unchecking them in the room list.',
-            zh: '通过取消选中列表中的房间，将特定房间排除在标签放置范围之外。'
-        },
-        'manual-room-tag-tip3-strong': {
-            ja: '不要な部屋の除外：',
-            en: 'Exclude Rooms:',
-            zh: '排除房间：'
-        },
-        'manual-room-tag-note1': {
-            ja: 'ビューポート内に部屋が配置されていない場合は使用できません。',
-            en: 'Cannot be used if no rooms are placed in the viewport.',
-            zh: '如果视口中没有放置房间，则无法使用。'
-        },
-        'manual-room-tag-note2': {
-            ja: '新しいビューが自動作成されるため、不要な場合はビューを削除してください。',
-            en: 'A new view is automatically created. Delete it if not needed.',
-            zh: '会自动创建新视图。如果不需要，请删除该视图。'
-        },
-        'manual-room-tag-note3': {
-            ja: '図面シートがアクティブな状態で実行する必要があります。',
-            en: 'Must be executed with a drawing sheet as the active view.',
-            zh: '必须在图纸为活动视图的状态下执行。'
-        }
-    };
+translations.roomTag = {
+    'manual-room-tag-title': {
+        ja: '部屋タグ自動配置',
+        en: 'Room Tag Auto Placement',
+        zh: '房间标记自动放置'
+    },
+    'manual-room-tag-subtitle': {
+        ja: '平面ビュー上のすべての部屋にルームタグを一括自動配置',
+        en: 'Automatically place room tags on all rooms in a floor plan view at once',
+        zh: '在平面视图中自动批量放置所有房间标记'
+    },
+    'section-overview': {
+        ja: '機能概要',
+        en: 'Overview',
+        zh: '功能概述'
+    },
+    'manual-room-tag-overview': {
+        ja: '平面ビュー上に配置されているすべての部屋（Room）に、ルームタグを一括で自動配置する機能です。部屋数が多いビューでも手作業なしにタグを揃えられます。使用するタグファミリ（タグタイプ）を選択でき、既にタグが配置されている部屋はスキップするか上書きするかを設定できます。',
+        en: 'This feature automatically places room tags on all rooms (Room elements) in a floor plan view at once. Even in views with many rooms, tags can be placed without manual work. You can select the tag family (tag type) to use, and configure whether to skip or overwrite rooms that already have tags.',
+        zh: '此功能可在平面视图中自动批量放置房间标记到所有房间（Room元素）。即使视图中有大量房间，也无需手动操作即可放置标记。可以选择要使用的标记族（标记类型），并设置是跳过还是覆盖已有标记的房间。'
+    },
+    'section-supported-views': {
+        ja: '実行できるビュー',
+        en: 'Supported Views',
+        zh: '支持的视图'
+    },
+    'table-col-view-type': {
+        ja: 'ビュー種別',
+        en: 'View Type',
+        zh: '视图类型'
+    },
+    'table-col-supported': {
+        ja: '対応',
+        en: 'Supported',
+        zh: '支持'
+    },
+    'manual-room-tag-view-row1': {
+        ja: '平面ビュー（FloorPlan）',
+        en: 'Floor Plan',
+        zh: '平面视图（FloorPlan）'
+    },
+    'manual-room-tag-view-row2': {
+        ja: '天井伏図',
+        en: 'Reflected Ceiling Plan',
+        zh: '天花板平面图'
+    },
+    'manual-room-tag-view-row2-status': {
+        ja: '△（部屋要素が表示されている場合）',
+        en: '△ (when room elements are visible)',
+        zh: '△（当房间元素显示时）'
+    },
+    'manual-room-tag-view-row3': {
+        ja: '断面図・立面図・3Dビュー',
+        en: 'Section / Elevation / 3D View',
+        zh: '剖面图・立面图・3D视图'
+    },
+    'section-preparation': {
+        ja: '実行前の準備',
+        en: 'Preparation',
+        zh: '执行前的准备'
+    },
+    'manual-room-tag-prep1-title': {
+        ja: '部屋が配置されていることを確認する',
+        en: 'Confirm that rooms are placed',
+        zh: '确认已放置房间'
+    },
+    'manual-room-tag-prep1-item1': {
+        ja: 'ビュー上に<strong>部屋（Room）が配置</strong>されていることを確認してください',
+        en: 'Confirm that <strong>Room elements are placed</strong> in the view',
+        zh: '请确认视图中已<strong>放置房间（Room）元素</strong>'
+    },
+    'manual-room-tag-prep1-item2': {
+        ja: '部屋区画線（Room Separation Line）のみで部屋が作成されていない場合、タグは配置されません',
+        en: 'If rooms are created only with Room Separation Lines without actual Room elements, tags will not be placed',
+        zh: '如果仅使用房间分隔线（Room Separation Line）而没有实际的房间元素，标记将不会被放置'
+    },
+    'manual-room-tag-prep1-item3': {
+        ja: 'ビューの「部屋」カテゴリが表示状態になっているか確認してください',
+        en: 'Check that the "Rooms" category is set to visible in the view',
+        zh: '请确认视图中的「房间」类别处于显示状态'
+    },
+    'manual-room-tag-prep2-title': {
+        ja: 'タグファミリが読み込まれていることを確認する',
+        en: 'Confirm that the tag family is loaded',
+        zh: '确认已加载标记族'
+    },
+    'manual-room-tag-prep2-item1': {
+        ja: 'プロジェクトにルームタグファミリが読み込まれている必要があります',
+        en: 'A room tag family must be loaded into the project',
+        zh: '项目中必须已加载房间标记族'
+    },
+    'manual-room-tag-prep2-item2': {
+        ja: '読み込まれていない場合は、事前に「ファミリを読み込む」でルームタグファミリを追加してください',
+        en: 'If not loaded, add a room tag family in advance using "Load Family"',
+        zh: '如果未加载，请提前通过「载入族」添加房间标记族'
+    },
+    'section-usage': {
+        ja: '使い方',
+        en: 'How to Use',
+        zh: '使用方法'
+    },
+    'manual-room-tag-step1-title': {
+        ja: 'コマンドの起動',
+        en: 'Launch the Command',
+        zh: '启动命令'
+    },
+    'manual-room-tag-step1-desc': {
+        ja: '部屋タグを配置したい平面ビューを<strong>アクティブ</strong>にしてから、リボン「<strong>28 Tools</strong>」タブ →「<strong>注釈・詳細</strong>」パネル →「<strong>部屋タグ自動配置</strong>」ボタンをクリックします。',
+        en: '<strong>Activate</strong> the floor plan view where you want to place room tags, then click the Ribbon「<strong>28 Tools</strong>」tab → 「<strong>Annotation & Detail</strong>」panel → 「<strong>Room Tag Auto Placement</strong>」button.',
+        zh: '先<strong>激活</strong>要放置房间标记的平面视图，然后点击功能区「<strong>28 Tools</strong>」选项卡 →「<strong>注释・详图</strong>」面板 →「<strong>房间标记自动放置</strong>」按钮。'
+    },
+    'manual-room-tag-step2-title': {
+        ja: 'ダイアログで設定',
+        en: 'Configure in the Dialog',
+        zh: '在对话框中设置'
+    },
+    'manual-room-tag-step2-intro': {
+        ja: 'ダイアログが開きます。以下の項目を設定してください。',
+        en: 'A dialog opens. Configure the following settings.',
+        zh: '对话框将打开。请配置以下设置。'
+    },
+    'table-col-item': {
+        ja: '項目',
+        en: 'Item',
+        zh: '项目'
+    },
+    'table-col-content': {
+        ja: '内容',
+        en: 'Content',
+        zh: '内容'
+    },
+    'manual-room-tag-dialog-row1-item': {
+        ja: 'タグタイプ',
+        en: 'Tag Type',
+        zh: '标记类型'
+    },
+    'manual-room-tag-dialog-row1-content': {
+        ja: '使用するルームタグファミリをドロップダウンから選択',
+        en: 'Select the room tag family to use from the dropdown',
+        zh: '从下拉菜单中选择要使用的房间标记族'
+    },
+    'manual-room-tag-dialog-row2-item': {
+        ja: '配置オフセット',
+        en: 'Placement Offset',
+        zh: '放置偏移'
+    },
+    'manual-room-tag-dialog-row2-content': {
+        ja: '部屋中心からのタグのオフセット量',
+        en: 'Offset amount of the tag from the room center',
+        zh: '标记相对于房间中心的偏移量'
+    },
+    'manual-room-tag-dialog-row3-item': {
+        ja: '回転オプション',
+        en: 'Rotation Option',
+        zh: '旋转选项'
+    },
+    'manual-room-tag-dialog-row3-content': {
+        ja: 'タグの向き（水平固定 / 部屋形状に合わせる）',
+        en: 'Tag orientation (fixed horizontal / match room shape)',
+        zh: '标记方向（水平固定 / 匹配房间形状）'
+    },
+    'manual-room-tag-step3-title': {
+        ja: '配置を実行',
+        en: 'Execute Placement',
+        zh: '执行放置'
+    },
+    'manual-room-tag-step3-desc': {
+        ja: '「<strong>配置</strong>」ボタンをクリックすると、ビュー上のすべての部屋にタグが配置されます。処理完了後、配置されたタグ数がメッセージで表示されます。',
+        en: 'Click the 「<strong>Place</strong>」 button to place tags on all rooms in the view. After processing is complete, the number of tags placed is displayed in a message.',
+        zh: '点击「<strong>放置</strong>」按钮，视图中所有房间将被放置标记。处理完成后，将通过消息显示已放置的标记数量。'
+    },
+    'image-placeholder-text': {
+        ja: '📷 スクリーンショット画像をここに追加予定',
+        en: '📷 Screenshot image will be added here',
+        zh: '📷 截图将在此处添加'
+    },
+    'section-output': {
+        ja: '出力結果',
+        en: 'Output',
+        zh: '输出结果'
+    },
+    'manual-room-tag-output1': {
+        ja: 'ビュー上の各部屋の<strong>中心付近</strong>にルームタグが配置されます',
+        en: 'Room tags are placed <strong>near the center</strong> of each room in the view',
+        zh: '房间标记将被放置在视图中每个房间的<strong>中心附近</strong>'
+    },
+    'manual-room-tag-output2': {
+        ja: '配置されたタグは通常のルームタグと同様に選択・移動・編集できます',
+        en: 'Placed tags can be selected, moved, and edited just like regular room tags',
+        zh: '放置的标记可以像普通房间标记一样进行选择、移动和编辑'
+    },
+    'section-usecases': {
+        ja: '活用シーン',
+        en: 'Use Cases',
+        zh: '使用场景'
+    },
+    'manual-room-tag-usecase1-title': {
+        ja: '部屋一覧の注釈作成',
+        en: 'Creating Room Annotations',
+        zh: '创建房间注释'
+    },
+    'manual-room-tag-usecase1-desc': {
+        ja: '多数の部屋が配置された平面ビューでも、ボタン一つで全部屋にタグを配置できます。',
+        en: 'Even in floor plan views with many rooms, you can place tags on all rooms with a single button.',
+        zh: '即使在有大量房间的平面视图中，也可以通过一个按钮为所有房间放置标记。'
+    },
+    'manual-room-tag-usecase2-title': {
+        ja: 'タグ種類の一括切り替え',
+        en: 'Batch Tag Type Switching',
+        zh: '批量切换标记类型'
+    },
+    'manual-room-tag-usecase2-desc': {
+        ja: '使用するタグファミリを選んで実行するだけで、すべての部屋タグを統一できます。',
+        en: 'Simply select the tag family and execute to unify all room tags.',
+        zh: '只需选择标记族并执行，即可统一所有房间标记。'
+    },
+    'manual-room-tag-usecase3-title': {
+        ja: '作業時間の短縮',
+        en: 'Time Saving',
+        zh: '节省工作时间'
+    },
+    'manual-room-tag-usecase3-desc': {
+        ja: '手動でタグを1つずつ配置する手間を省き、大幅に時間を短縮できます。',
+        en: 'Eliminate the need to place tags one by one manually, significantly reducing work time.',
+        zh: '省去逐个手动放置标记的麻烦，大幅节省时间。'
+    },
+    'section-tips': {
+        ja: 'Tips',
+        en: 'Tips',
+        zh: '提示'
+    },
+    'manual-room-tag-tip1': {
+        ja: '<strong>タグが部屋の外に出る場合：</strong>部屋の形状が複雑（L字形・細長い形状など）な場合、中心位置がずれることがあります。配置後にRevit上でタグを手動で移動してください。',
+        en: '<strong>If the tag ends up outside the room:</strong> When a room has a complex shape (L-shaped, elongated, etc.), the center position may be offset. Manually move the tag in Revit after placement.',
+        zh: '<strong>如果标记出现在房间外部：</strong>当房间形状复杂（L形、细长形等）时，中心位置可能会偏移。放置后请在Revit中手动移动标记。'
+    },
+    'manual-room-tag-tip2': {
+        ja: '<strong>タグが重なる場合：</strong>小さな部屋が隣接している場合、タグが重なることがあります。Revit上で手動でタグの位置を調整してください。',
+        en: '<strong>If tags overlap:</strong> When small rooms are adjacent, tags may overlap. Manually adjust tag positions in Revit.',
+        zh: '<strong>如果标记重叠：</strong>当小房间相邻时，标记可能会重叠。请在Revit中手动调整标记位置。'
+    },
+    'section-notes': {
+        ja: '注意事項',
+        en: 'Notes',
+        zh: '注意事项'
+    },
+    'manual-room-tag-note1': {
+        ja: '平面ビューに部屋要素が配置されていない場合は使用できません。',
+        en: 'Cannot be used if no room elements are placed in the floor plan view.',
+        zh: '如果平面视图中没有放置房间元素，则无法使用。'
+    },
+    'manual-room-tag-note2': {
+        ja: '部屋区画線（Room Separation Line）だけでは部屋になりません。「建築」タブ →「部屋」で部屋を配置してください。',
+        en: 'Room Separation Lines alone do not create rooms. Place rooms using the "Architecture" tab → "Room".',
+        zh: '仅使用房间分隔线（Room Separation Line）不能创建房间。请通过「建筑」选项卡 →「房间」放置房间。'
+    },
+    'manual-room-tag-note3': {
+        ja: 'プロジェクトにルームタグファミリが読み込まれていない場合、タグタイプの選択肢が表示されません。事前にファミリを読み込んでください。',
+        en: 'If no room tag family is loaded in the project, no tag type options will be displayed. Load the family in advance.',
+        zh: '如果项目中没有加载房间标记族，则不会显示标记类型选项。请提前加载族。'
+    },
+    'section-troubleshooting': {
+        ja: 'トラブルシューティング',
+        en: 'Troubleshooting',
+        zh: '故障排除'
+    },
+    'manual-room-tag-trouble1-title': {
+        ja: '「ビュー内に部屋が見つかりません」と表示される',
+        en: '"No rooms found in view" message is displayed',
+        zh: '显示「视图中未找到房间」'
+    },
+    'manual-room-tag-trouble1-item1': {
+        ja: '平面ビューに<strong>部屋要素</strong>が配置されているか確認してください',
+        en: 'Check that <strong>Room elements</strong> are placed in the floor plan view',
+        zh: '请确认平面视图中是否已放置<strong>房间元素</strong>'
+    },
+    'manual-room-tag-trouble1-item2': {
+        ja: '部屋区画線（Room Separation Line）だけでは部屋になりません。「建築」タブ →「部屋」で部屋を配置してください',
+        en: 'Room Separation Lines alone do not create rooms. Place rooms using "Architecture" tab → "Room"',
+        zh: '仅使用房间分隔线（Room Separation Line）不能创建房间。请通过「建筑」选项卡 →「房间」放置房间'
+    },
+    'manual-room-tag-trouble1-item3': {
+        ja: 'ビューフィルタや「部屋」カテゴリの表示設定を確認してください',
+        en: 'Check the view filter and visibility settings for the "Rooms" category',
+        zh: '请检查视图过滤器和「房间」类别的显示设置'
+    },
+    'manual-room-tag-trouble2-title': {
+        ja: 'タグが部屋の外に配置される',
+        en: 'Tags are placed outside the room',
+        zh: '标记被放置在房间外部'
+    },
+    'manual-room-tag-trouble2-item1': {
+        ja: '部屋の形状が複雑（L字形・細長い形状など）な場合、中心位置がずれることがあります',
+        en: 'When a room has a complex shape (L-shaped, elongated, etc.), the center position may be offset',
+        zh: '当房间形状复杂（L形、细长形等）时，中心位置可能会偏移'
+    },
+    'manual-room-tag-trouble2-item2': {
+        ja: '配置後にRevit上でタグを手動で移動してください',
+        en: 'Manually move the tag in Revit after placement',
+        zh: '放置后请在Revit中手动移动标记'
+    },
+    'manual-room-tag-trouble3-title': {
+        ja: 'タグが重なって表示される',
+        en: 'Tags are displayed overlapping',
+        zh: '标记重叠显示'
+    },
+    'manual-room-tag-trouble3-item1': {
+        ja: '小さな部屋が隣接している場合、タグが重なることがあります',
+        en: 'When small rooms are adjacent, tags may overlap',
+        zh: '当小房间相邻时，标记可能会重叠'
+    },
+    'manual-room-tag-trouble3-item2': {
+        ja: 'Revit上で手動でタグの位置を調整してください',
+        en: 'Manually adjust tag positions in Revit',
+        zh: '请在Revit中手动调整标记位置'
+    },
+    'manual-room-tag-trouble4-title': {
+        ja: '使いたいタグタイプが選択肢に表示されない',
+        en: 'The desired tag type is not shown in the options',
+        zh: '想使用的标记类型未显示在选项中'
+    },
+    'manual-room-tag-trouble4-item1': {
+        ja: 'プロジェクトに対象のルームタグファミリが読み込まれているか確認してください',
+        en: 'Check that the target room tag family is loaded in the project',
+        zh: '请确认项目中是否已加载目标房间标记族'
+    },
+    'manual-room-tag-trouble4-item2': {
+        ja: '「挿入」タブ →「ファミリを読み込む」でタグファミリを追加してください',
+        en: 'Add the tag family using "Insert" tab → "Load Family"',
+        zh: '请通过「插入」选项卡 →「载入族」添加标记族'
+    },
+    'section-related': {
+        ja: '関連機能',
+        en: 'Related Features',
+        zh: '相关功能'
+    },
+    'manual-room-tag-related1': {
+        ja: 'シート一括作成',
+        en: 'Batch Sheet Creation',
+        zh: '批量创建图纸'
+    },
+    'manual-room-tag-related1-desc': {
+        ja: ' — 複数シートをまとめて作成',
+        en: ' — Create multiple sheets at once',
+        zh: ' — 批量创建多张图纸'
+    },
+    'manual-room-tag-related2': {
+        ja: '塗潰し領域 分割/統合',
+        en: 'Filled Region Split/Merge',
+        zh: '填充区域 分割/合并'
+    },
+    'manual-room-tag-related2-desc': {
+        ja: ' — 塗潰し領域の分割・統合',
+        en: ' — Split and merge filled regions',
+        zh: ' — 填充区域的分割与合并'
+    },
+    'breadcrumb-home': {
+        ja: 'ホーム',
+        en: 'Home',
+        zh: '首页'
+    },
+    'breadcrumb-addins': {
+        ja: 'アドイン',
+        en: 'Add-ins',
+        zh: '插件'
+    },
+    'back-to-home': {
+        ja: '← ホームに戻る',
+        en: '← Back to Home',
+        zh: '← 返回首页'
+    },
+    'footer-share': {
+        ja: 'このページをシェア：',
+        en: 'Share this page:',
+        zh: '分享此页面：'
+    },
+    'footer-about': {
+        ja: '運営者情報',
+        en: 'About',
+        zh: '运营信息'
+    },
+    'footer-contact': {
+        ja: 'お問い合わせ',
+        en: 'Contact',
+        zh: '联系我们'
+    },
+    'footer-privacy': {
+        ja: 'プライバシーポリシー',
+        en: 'Privacy Policy',
+        zh: '隐私政策'
+    },
+    'footer-terms': {
+        ja: '利用規約',
+        en: 'Terms of Use',
+        zh: '使用条款'
+    }
+};
 
     // ========================================
     // beam-bottom-color.html (梁下端色分け)
@@ -2611,547 +3086,1433 @@ function initTranslations() {
     };
 
     // ========================================
+    // beam-level-color.html (梁レベル色分け)
+    // ========================================
+    translations.beamLevelColor = {
+    'manual-beam-level-title': {
+        ja: '梁レベル色分け',
+        en: 'Beam Level Coloring',
+        zh: '梁标高颜色标注'
+    },
+    'manual-beam-level-subtitle': {
+        ja: '梁の天端・下端レベルをパステルカラーで色分け表示',
+        en: 'Color-code beam top and bottom levels with pastel colors',
+        zh: '用柔和色彩标注梁的顶部和底部标高'
+    },
+    'manual-beam-level-overview': {
+        ja: '梁を天端レベルまたは下端レベルの値ごとに色分け表示する機能です。ビュー上でレベルの異なる梁を視覚的にすばやく把握できます。どちらの機能も、色分けされた塗潰し領域・梁ラベル（TextNote）・凡例ビューを自動作成します。',
+        en: 'A feature that color-codes beams by their top or bottom level values. Quickly visualize beams at different levels in the view. Both features automatically create color-coded filled regions, beam labels (TextNote), and a legend view.',
+        zh: '按梁的顶部或底部标高值进行颜色标注的功能。可在视图中快速直观地识别不同标高的梁。两种功能都会自动创建颜色标注的填充区域、梁标签（TextNote）和图例视图。'
+    },
+    'manual-beam-level-ribbon': {
+        ja: 'リボン: 「<strong>28 Tools</strong>」タブ →「<strong>構造</strong>」パネル',
+        en: 'Ribbon: "<strong>28 Tools</strong>" tab → "<strong>Structure</strong>" panel',
+        zh: '功能区：「<strong>28 Tools</strong>」选项卡 →「<strong>结构</strong>」面板'
+    },
+    'manual-beam-level-diff-title': {
+        ja: '機能の違い',
+        en: 'Feature Differences',
+        zh: '功能区别'
+    },
+    'manual-beam-level-diff-col-feature': {
+        ja: '機能',
+        en: 'Feature',
+        zh: '功能'
+    },
+    'manual-beam-level-diff-col-button': {
+        ja: 'ボタン名',
+        en: 'Button Name',
+        zh: '按钮名称'
+    },
+    'manual-beam-level-diff-col-basis': {
+        ja: '色分けの基準',
+        en: 'Color-coding Basis',
+        zh: '颜色标注依据'
+    },
+    'manual-beam-level-diff-col-steps': {
+        ja: 'ステップ数',
+        en: 'Steps',
+        zh: '步骤数'
+    },
+    'manual-beam-level-diff-row1-feature': {
+        ja: '<strong>梁天端色分け</strong>',
+        en: '<strong>Beam Top Coloring</strong>',
+        zh: '<strong>梁顶端颜色标注</strong>'
+    },
+    'manual-beam-level-diff-row1-button': {
+        ja: '梁天端色分け',
+        en: 'Beam Top Coloring',
+        zh: '梁顶端颜色标注'
+    },
+    'manual-beam-level-diff-row1-view': {
+        ja: '平面ビュー・構造伏図',
+        en: 'Floor Plan / Engineering Plan',
+        zh: '平面视图·结构平面图'
+    },
+    'manual-beam-level-diff-row1-basis': {
+        ja: '天端レベルオフセット値をそのまま使用',
+        en: 'Uses the top level offset value as-is',
+        zh: '直接使用顶端标高偏移值'
+    },
+    'manual-beam-level-diff-row2-feature': {
+        ja: '<strong>梁下端色分け</strong>',
+        en: '<strong>Beam Bottom Coloring</strong>',
+        zh: '<strong>梁底端颜色标注</strong>'
+    },
+    'manual-beam-level-diff-row2-button': {
+        ja: '梁下端色分け',
+        en: 'Beam Bottom Coloring',
+        zh: '梁底端颜色标注'
+    },
+    'manual-beam-level-diff-row2-view': {
+        ja: '天井伏図',
+        en: 'Ceiling Plan',
+        zh: '天花板平面图'
+    },
+    'manual-beam-level-diff-row2-basis': {
+        ja: '階高 + 天端オフセット − 梁高さ で計算',
+        en: 'Calculated as: Story Height + Top Offset − Beam Height',
+        zh: '计算公式：层高 + 顶端偏移 − 梁高'
+    },
+    'manual-beam-level-top-section-title': {
+        ja: '梁天端色分け',
+        en: 'Beam Top Level Coloring',
+        zh: '梁顶端颜色标注'
+    },
+    'manual-beam-level-top-view-row1-name': {
+        ja: '<strong>平面ビュー（FloorPlan）</strong>',
+        en: '<strong>Floor Plan (FloorPlan)</strong>',
+        zh: '<strong>平面视图（FloorPlan）</strong>'
+    },
+    'manual-beam-level-top-view-row1-behavior': {
+        ja: '天端レベルオフセット値で色分け。参照レベルはビューの GenLevel から自動取得',
+        en: 'Color-coded by top level offset value. Reference level is automatically obtained from the view\'s GenLevel.',
+        zh: '按顶端标高偏移值颜色标注。参考标高从视图的GenLevel自动获取。'
+    },
+    'manual-beam-level-top-view-row2-name': {
+        ja: '<strong>構造伏図（EngineeringPlan）</strong>',
+        en: '<strong>Engineering Plan (EngineeringPlan)</strong>',
+        zh: '<strong>结构平面图（EngineeringPlan）</strong>'
+    },
+    'manual-beam-level-top-view-row2-behavior': {
+        ja: '天端レベルオフセット値で色分け。参照レベルはビューの GenLevel から自動取得',
+        en: 'Color-coded by top level offset value. Reference level is automatically obtained from the view\'s GenLevel.',
+        zh: '按顶端标高偏移值颜色标注。参考标高从视图的GenLevel自动获取。'
+    },
+    'manual-beam-level-view-other': {
+        ja: 'その他',
+        en: 'Other',
+        zh: '其他'
+    },
+    'manual-beam-level-view-na': {
+        ja: '実行不可',
+        en: 'Not supported',
+        zh: '不支持'
+    },
+    'manual-beam-level-bottom-section-title': {
+        ja: '梁下端色分け',
+        en: 'Beam Bottom Level Coloring',
+        zh: '梁底端颜色标注'
+    },
+    'manual-beam-level-bottom-view-row1-name': {
+        ja: '<strong>天井伏図（CeilingPlan）</strong>',
+        en: '<strong>Ceiling Plan (CeilingPlan)</strong>',
+        zh: '<strong>天花板平面图（CeilingPlan）</strong>'
+    },
+    'manual-beam-level-bottom-view-row1-behavior': {
+        ja: '計算した下端レベル値で色分け',
+        en: 'Color-coded by calculated bottom level value',
+        zh: '按计算的底端标高值颜色标注'
+    },
+    'manual-beam-level-top-step1-title': {
+        ja: 'コマンド起動',
+        en: 'Launch Command',
+        zh: '启动命令'
+    },
+    'manual-beam-level-top-step1-desc': {
+        ja: '平面ビューまたは構造伏図をアクティブにして「<strong>梁天端色分け</strong>」をクリックします。',
+        en: 'Activate a floor plan or engineering plan view and click "<strong>Beam Top Coloring</strong>".',
+        zh: '激活平面视图或结构平面图，然后点击「<strong>梁顶端颜色标注</strong>」。'
+    },
+    'manual-beam-level-top-step2-title': {
+        ja: 'STEP 1 — 基本設定',
+        en: 'STEP 1 — Basic Settings',
+        zh: 'STEP 1 — 基本设置'
+    },
+    'manual-beam-level-top-setting-row1-name': {
+        ja: '<strong>参照レベル</strong>',
+        en: '<strong>Reference Level</strong>',
+        zh: '<strong>参考标高</strong>'
+    },
+    'manual-beam-level-top-setting-row1-desc': {
+        ja: 'ビューの GenLevel（自動取得・変更不可）',
+        en: 'View\'s GenLevel (auto-obtained, cannot be changed)',
+        zh: '视图的GenLevel（自动获取，不可更改）'
+    },
+    'manual-beam-level-top-setting-row2-name': {
+        ja: '<strong>文字タイプ</strong>',
+        en: '<strong>Text Type</strong>',
+        zh: '<strong>文字类型</strong>'
+    },
+    'manual-beam-level-top-setting-row2-desc': {
+        ja: 'ラベルに使用するテキストタイプを選択',
+        en: 'Select the text type to use for labels',
+        zh: '选择用于标签的文字类型'
+    },
+    'manual-beam-level-top-step3-title': {
+        ja: 'STEP 2 — 天端パラメータ選択',
+        en: 'STEP 2 — Select Top Parameter',
+        zh: 'STEP 2 — 选择顶端参数'
+    },
+    'manual-beam-level-top-step3-desc': {
+        ja: 'ファミリごとに天端レベルオフセットを格納したパラメータを選択します。自動検出された候補がラジオボタンで表示されます（カッコ内は検出件数）。候補にない場合は「<strong>その他</strong>」ドロップダウンから選択。',
+        en: 'Select the parameter storing the top level offset for each family. Automatically detected candidates are shown as radio buttons (count in parentheses). If not in the candidates, select from the "<strong>Other</strong>" dropdown.',
+        zh: '为每个族选择存储顶端标高偏移的参数。自动检测到的候选项以单选按钮显示（括号内为检测数量）。如果不在候选项中，从「<strong>其他</strong>」下拉菜单选择。'
+    },
+    'manual-beam-level-top-step4-title': {
+        ja: 'STEP 3 — 確認と実行',
+        en: 'STEP 3 — Confirm and Execute',
+        zh: 'STEP 3 — 确认并执行'
+    },
+    'manual-beam-level-top-step4-desc': {
+        ja: '処理対象の梁数を確認し、「<strong>実行</strong>」をクリック。再実行する場合は <strong>「既存の『梁天端_』塗潰領域・凡例を上書き」</strong> にチェックしてください。',
+        en: 'Confirm the number of beams to process and click "<strong>Execute</strong>". When re-running, check <strong>"Overwrite existing \'Beam Top_\' filled regions and legend"</strong>.',
+        zh: '确认要处理的梁数量，然后点击「<strong>执行</strong>」。重新执行时，请勾选<strong>「覆盖现有的"梁顶端_"填充区域和图例」</strong>。'
+    },
+    'manual-beam-level-bottom-intro': {
+        ja: '天井伏図の梁を、計算した下端レベル値ごとに色分けします。',
+        en: 'Color-codes beams in a ceiling plan by their calculated bottom level values.',
+        zh: '按计算的底端标高值对天花板平面图中的梁进行颜色标注。'
+    },
+    'manual-beam-level-formula-label': {
+        ja: '下端レベルの計算式：',
+        en: 'Bottom level calculation formula:',
+        zh: '底端标高计算公式：'
+    },
+    'manual-beam-level-formula-item1': {
+        ja: '<strong>階高</strong> = 上位レベル標高 − 参照レベル標高（例: 3000mm）',
+        en: '<strong>Story Height</strong> = Upper Level Elevation − Reference Level Elevation (e.g., 3000mm)',
+        zh: '<strong>层高</strong> = 上层标高 − 参考标高（例：3000mm）'
+    },
+    'manual-beam-level-formula-item2': {
+        ja: '<strong>天端オフセット</strong> = 梁の天端パラメータ値（上位レベルからの下がりは負値。例: −300mm）',
+        en: '<strong>Top Offset</strong> = Beam top parameter value (drops from upper level are negative. e.g., −300mm)',
+        zh: '<strong>顶端偏移</strong> = 梁的顶端参数值（从上层标高向下为负值，例：−300mm）'
+    },
+    'manual-beam-level-formula-item3': {
+        ja: '<strong>梁高さ</strong> = 梁高さパラメータ値（例: 600mm）',
+        en: '<strong>Beam Height</strong> = Beam height parameter value (e.g., 600mm)',
+        zh: '<strong>梁高</strong> = 梁高参数值（例：600mm）'
+    },
+    'manual-beam-level-formula-item4': {
+        ja: '結果は参照レベル基準で表示（例: +2100 → 参照レベルから2100mm上）',
+        en: 'Result displayed relative to reference level (e.g., +2100 → 2100mm above reference level)',
+        zh: '结果相对于参考标高显示（例：+2100 → 参考标高以上2100mm）'
+    },
+    'manual-beam-level-bottom-step1-title': {
+        ja: 'コマンド起動',
+        en: 'Launch Command',
+        zh: '启动命令'
+    },
+    'manual-beam-level-bottom-step1-desc': {
+        ja: '天井伏図をアクティブにして「<strong>梁下端色分け</strong>」をクリックします。',
+        en: 'Activate a ceiling plan view and click "<strong>Beam Bottom Coloring</strong>".',
+        zh: '激活天花板平面图视图，然后点击「<strong>梁底端颜色标注</strong>」。'
+    },
+    'manual-beam-level-bottom-step2-title': {
+        ja: 'STEP 1 — レベル設定',
+        en: 'STEP 1 — Level Settings',
+        zh: 'STEP 1 — 标高设置'
+    },
+    'manual-beam-level-bottom-setting-row1-name': {
+        ja: '<strong>参照レベル</strong>',
+        en: '<strong>Reference Level</strong>',
+        zh: '<strong>参考标高</strong>'
+    },
+    'manual-beam-level-bottom-setting-row1-desc': {
+        ja: 'ビューの GenLevel（自動取得・変更不可）',
+        en: 'View\'s GenLevel (auto-obtained, cannot be changed)',
+        zh: '视图的GenLevel（自动获取，不可更改）'
+    },
+    'manual-beam-level-bottom-setting-row2-name': {
+        ja: '<strong>上位レベル</strong>',
+        en: '<strong>Upper Level</strong>',
+        zh: '<strong>上层标高</strong>'
+    },
+    'manual-beam-level-bottom-setting-row2-desc': {
+        ja: '梁が配置されているレベルを選択（参照レベルより上のみ表示）',
+        en: 'Select the level where beams are placed (only levels above the reference level are shown)',
+        zh: '选择放置梁的标高（仅显示参考标高以上的标高）'
+    },
+    'manual-beam-level-bottom-setting-row3-name': {
+        ja: '<strong>階高</strong>',
+        en: '<strong>Story Height</strong>',
+        zh: '<strong>层高</strong>'
+    },
+    'manual-beam-level-bottom-setting-row3-desc': {
+        ja: '選択後に自動表示',
+        en: 'Automatically displayed after selection',
+        zh: '选择后自动显示'
+    },
+    'manual-beam-level-bottom-step3-title': {
+        ja: 'STEP 2 — 梁高さパラメータ選択',
+        en: 'STEP 2 — Select Beam Height Parameter',
+        zh: 'STEP 2 — 选择梁高参数'
+    },
+    'manual-beam-level-bottom-step3-desc': {
+        ja: 'ファミリごとに梁高さ（断面高さ）を格納したパラメータを選択します。',
+        en: 'Select the parameter storing the beam height (cross-section height) for each family.',
+        zh: '为每个族选择存储梁高（截面高度）的参数。'
+    },
+    'manual-beam-level-bottom-step4-title': {
+        ja: 'STEP 3 — 天端パラメータ選択',
+        en: 'STEP 3 — Select Top Parameter',
+        zh: 'STEP 3 — 选择顶端参数'
+    },
+    'manual-beam-level-bottom-step4-desc': {
+        ja: 'ファミリごとに天端レベルオフセットを格納したパラメータを選択します。',
+        en: 'Select the parameter storing the top level offset for each family.',
+        zh: '为每个族选择存储顶端标高偏移的参数。'
+    },
+    'manual-beam-level-bottom-step5-title': {
+        ja: 'STEP 4 — 確認と実行',
+        en: 'STEP 4 — Confirm and Execute',
+        zh: 'STEP 4 — 确认并执行'
+    },
+    'manual-beam-level-bottom-step5-desc': {
+        ja: '処理対象の梁数を確認し、「<strong>実行</strong>」をクリック。再実行する場合は <strong>「既存の『梁下_』塗潰領域・凡例を上書き」</strong> にチェックしてください。',
+        en: 'Confirm the number of beams to process and click "<strong>Execute</strong>". When re-running, check <strong>"Overwrite existing \'Beam Bottom_\' filled regions and legend"</strong>.',
+        zh: '确认要处理的梁数量，然后点击「<strong>执行</strong>」。重新执行时，请勾选<strong>「覆盖现有的"梁底端_"填充区域和图例」</strong>。'
+    },
+    'manual-beam-level-output-intro': {
+        ja: '実行後、以下が自動作成されます（梁天端・梁下端共通）。',
+        en: 'After execution, the following are automatically created (common to both beam top and bottom).',
+        zh: '执行后，以下内容将自动创建（梁顶端和梁底端通用）。'
+    },
+    'manual-beam-level-output-col-item': {
+        ja: '出力物',
+        en: 'Output',
+        zh: '输出物'
+    },
+    'manual-beam-level-output-col-content': {
+        ja: '内容',
+        en: 'Description',
+        zh: '内容'
+    },
+    'manual-beam-level-output-row1-name': {
+        ja: '<strong>塗潰し領域</strong>',
+        en: '<strong>Filled Regions</strong>',
+        zh: '<strong>填充区域</strong>'
+    },
+    'manual-beam-level-output-row1-desc': {
+        ja: '梁ごとにレベル値の色で塗潰し。フィルタ名: <code>梁天端_{レベル名}{±値}</code> / <code>梁下_{レベル名}{±値}</code>',
+        en: 'Each beam filled with the color of its level value. Filter name: <code>BeamTop_{LevelName}{±Value}</code> / <code>BeamBottom_{LevelName}{±Value}</code>',
+        zh: '每根梁用其标高值的颜色填充。过滤器名称：<code>梁天端_{标高名}{±值}</code> / <code>梁下_{标高名}{±值}</code>'
+    },
+    'manual-beam-level-output-row2-name': {
+        ja: '<strong>梁ラベル</strong>',
+        en: '<strong>Beam Labels</strong>',
+        zh: '<strong>梁标签</strong>'
+    },
+    'manual-beam-level-output-row2-desc': {
+        ja: '梁の中央にレベル値を TextNote で配置。梁の方向に合わせて回転',
+        en: 'Level value placed as TextNote at the center of each beam. Rotated to match beam direction.',
+        zh: '在每根梁的中心以TextNote放置标高值，按梁的方向旋转。'
+    },
+    'manual-beam-level-output-row3-name': {
+        ja: '<strong>凡例ビュー</strong>',
+        en: '<strong>Legend View</strong>',
+        zh: '<strong>图例视图</strong>'
+    },
+    'manual-beam-level-output-row3-desc': {
+        ja: '<code>梁天端色分け凡例</code> / <code>梁下端色分け凡例</code>（プロジェクトブラウザの製図ビューに表示）',
+        en: '<code>Beam Top Color Legend</code> / <code>Beam Bottom Color Legend</code> (shown in drafting views in Project Browser)',
+        zh: '<code>梁天端色分け凡例</code> / <code>梁下端色分け凡例</code>（在项目浏览器的绘图视图中显示）'
+    },
+    'manual-beam-level-output-row4-name': {
+        ja: '<strong>共有パラメータ</strong>',
+        en: '<strong>Shared Parameters</strong>',
+        zh: '<strong>共享参数</strong>'
+    },
+    'manual-beam-level-output-row4-desc': {
+        ja: '<code>梁天端_基準レベル</code>・<code>梁天端_レベル差</code> など（梁要素に自動付与）',
+        en: '<code>BeamTop_RefLevel</code>, <code>BeamTop_LevelDiff</code>, etc. (automatically assigned to beam elements)',
+        zh: '<code>梁天端_基准标高</code>、<code>梁天端_标高差</code>等（自动分配给梁图元）'
+    },
+    'manual-beam-level-trouble-row1-symptom': {
+        ja: 'ビュー内に梁が見つからない',
+        en: 'No beams found in the view',
+        zh: '视图中找不到梁'
+    },
+    'manual-beam-level-trouble-row1-action': {
+        ja: '梁（構造フレーム）がビュー上で表示されているか確認。フィルタや非表示設定を確認',
+        en: 'Check if beams (structural frames) are visible in the view. Check filters and hidden settings.',
+        zh: '确认梁（结构框架）在视图中是否可见。检查过滤器和隐藏设置。'
+    },
+    'manual-beam-level-trouble-row2-symptom': {
+        ja: 'パラメータが候補に表示されない',
+        en: 'Parameter does not appear in candidates',
+        zh: '参数未出现在候选项中'
+    },
+    'manual-beam-level-trouble-row2-action': {
+        ja: '「その他」ドロップダウンを開いて手動選択。それでも見つからない場合はファミリのパラメータ定義を確認',
+        en: 'Open the "Other" dropdown and select manually. If still not found, check the family\'s parameter definitions.',
+        zh: '打开"其他"下拉菜单手动选择。如果仍然找不到，请检查族的参数定义。'
+    },
+    'manual-beam-level-trouble-row3-symptom': {
+        ja: '上位レベルが選択肢にない（梁下端）',
+        en: 'Upper level not in the options (beam bottom)',
+        zh: '上层标高不在选项中（梁底端）'
+    },
+    'manual-beam-level-trouble-row3-action': {
+        ja: '参照レベルより上のレベルがプロジェクトに定義されているか確認',
+        en: 'Check if levels above the reference level are defined in the project',
+        zh: '确认项目中是否定义了参考标高以上的标高'
+    },
+    'manual-beam-level-trouble-row4-symptom': {
+        ja: '計算結果が予想と異なる（梁下端）',
+        en: 'Calculation result differs from expectation (beam bottom)',
+        zh: '计算结果与预期不同（梁底端）'
+    },
+    'manual-beam-level-trouble-row4-action': {
+        ja: '上位レベルの選択が正しいか、天端オフセットの符号（正/負）を確認',
+        en: 'Check if the upper level selection is correct and verify the sign (positive/negative) of the top offset',
+        zh: '检查上层标高选择是否正确，验证顶端偏移的符号（正/负）'
+    },
+    'manual-beam-level-trouble-row5-symptom': {
+        ja: '色が似ていて見分けにくい',
+        en: 'Colors are similar and hard to distinguish',
+        zh: '颜色相似难以区分'
+    },
+    'manual-beam-level-trouble-row5-action': {
+        ja: 'ビュー → フィルタから色を手動変更できます',
+        en: 'You can manually change colors from View → Filters',
+        zh: '可以从视图 → 过滤器手动更改颜色'
+    },
+    'manual-beam-level-trouble-row6-symptom': {
+        ja: '再実行しても古い色分けが残る',
+        en: 'Old color-coding remains even after re-running',
+        zh: '重新执行后旧的颜色标注仍然存在'
+    },
+    'manual-beam-level-trouble-row6-action': {
+        ja: 'STEP 3/4 の「上書き」チェックをONにして再実行',
+        en: 'Enable the "Overwrite" checkbox in STEP 3/4 and re-run',
+        zh: '在STEP 3/4中启用"覆盖"复选框后重新执行'
+    },
+    'manual-beam-level-related-fire': {
+        ja: '耐火被覆色分け',
+        en: 'Fire Protection Coloring',
+        zh: '耐火覆盖颜色标注'
+    },
+    'manual-beam-level-related-fire-desc': {
+        ja: ' — 梁・柱の耐火被覆範囲を色分け表示',
+        en: ' — Color-code fire protection range of beams and columns',
+        zh: ' — 颜色标注梁和柱的耐火覆盖范围'
+    },
+    'manual-beam-level-related-formwork': {
+        ja: '型枠数量算出',
+        en: 'Formwork Calculator',
+        zh: '模板数量计算'
+    },
+    'manual-beam-level-related-formwork-desc': {
+        ja: ' — 梁・柱を含むRC躯体の型枠面積を算出',
+        en: ' — Calculate formwork area of RC structure including beams and columns',
+        zh: ' — 计算包含梁和柱的RC结构的模板面积'
+    }
+};
+
+    // ========================================
     // excel-export.html (Excelエクスポート)
     // ========================================
-    translations.excelExport = {
-        'manual-excel-export-title': {
-            ja: 'Excelエクスポート',
-            en: 'Excel Export',
-            zh: 'Excel导出'
-        },
-        'manual-excel-export-subtitle': {
-            ja: '要素パラメータをカテゴリ別にExcelへ書き出し',
-            en: 'Export element parameters to Excel by category',
-            zh: '按类别将元素参数导出到Excel'
-        },
-        'manual-excel-export-overview': {
-            ja: 'Revitモデルの要素パラメータをカテゴリ別にExcelファイル（.xlsx）へ書き出す機能です。カテゴリ・パラメータの選択、出力列の並び替え、設定の保存/読込が可能です。',
-            en: 'This feature exports Revit model element parameters to Excel files (.xlsx) by category. It supports category/parameter selection, column reordering, and saving/loading settings.',
-            zh: '此功能按类别将Revit模型元素参数导出到Excel文件（.xlsx）。支持类别/参数选择、列排序和设置保存/加载。'
-        },
-        'manual-excel-export-feature1': {
-            ja: 'カテゴリ別にシート分割して出力',
-            en: 'Output split into sheets by category',
-            zh: '按类别分工作表输出'
-        },
-        'manual-excel-export-feature2': {
-            ja: 'インスタンスパラメータ（I-）/ タイプパラメータ（T-）を区別',
-            en: 'Distinguish instance (I-) and type (T-) parameters',
-            zh: '区分实例参数（I-）和类型参数（T-）'
-        },
-        'manual-excel-export-feature3': {
-            ja: '出力パラメータと列順をドラッグ＆ドロップ感覚で選択・並替え',
-            en: 'Select and reorder output parameters with drag-and-drop style interface',
-            zh: '以拖放方式选择和排列输出参数及列顺序'
-        },
-        'manual-excel-export-feature4': {
-            ja: 'カテゴリ・パラメータの検索フィルタ',
-            en: 'Search filter for categories and parameters',
-            zh: '类别和参数搜索过滤器'
-        },
-        'manual-excel-export-feature5': {
-            ja: '設定の保存・読込・リセット（JSON形式）',
-            en: 'Save, load, and reset settings (JSON format)',
-            zh: '设置保存·加载·重置（JSON格式）'
-        },
-        'manual-excel-export-feature6': {
-            ja: '数値は数値型で書き込み（Excel警告なし）',
-            en: 'Numbers written as numeric type (no Excel warnings)',
-            zh: '数值以数字类型写入（无Excel警告）'
-        },
-        'manual-excel-export-feature7': {
-            ja: 'ヘッダー行に緑背景＋白文字＋オートフィルタ自動設定',
-            en: 'Header row with green background, white text, and auto-filter',
-            zh: '表头行绿色背景+白色文字+自动筛选自动设置'
-        },
-        'manual-excel-export-feature8': {
-            ja: 'エクスポート後に自動でExcelファイルを開く',
-            en: 'Automatically open Excel file after export',
-            zh: '导出后自动打开Excel文件'
-        },
-        'manual-excel-export-step1-title': {
-            ja: 'Revitモデルを開く',
-            en: 'Open Revit Model',
-            zh: '打开Revit模型'
-        },
-        'manual-excel-export-step1-desc': {
-            ja: 'エクスポートしたい要素が含まれるモデルをアクティブにします。',
-            en: 'Activate the model containing the elements you want to export.',
-            zh: '激活包含要导出元素的模型。'
-        },
-        'manual-excel-export-step2-title': {
-            ja: 'ボタンをクリック',
-            en: 'Click Button',
-            zh: '点击按钮'
-        },
-        'manual-excel-export-step2-desc': {
-            ja: 'リボンの「Excel連携」パネルから「Excel エクスポート」をクリックします。',
-            en: 'Click "Excel Export" from the "Excel Integration" panel on the ribbon.',
-            zh: '从功能区的"Excel联动"面板中点击"Excel 导出"。'
-        },
-        'manual-excel-export-step3-title': {
-            ja: 'カテゴリ選択',
-            en: 'Select Categories',
-            zh: '选择类别'
-        },
-        'manual-excel-export-step3-desc': {
-            ja: '左側のカテゴリリストからエクスポート対象を選択します。チェックボックスで選択でき、検索フィルタも使用できます。',
-            en: 'Select export targets from the category list on the left. Use checkboxes to select and search filter for filtering.',
-            zh: '从左侧类别列表中选择导出目标。使用复选框选择，也可使用搜索过滤器。'
-        },
-        'manual-excel-export-step4-title': {
-            ja: 'パラメータ選択',
-            en: 'Select Parameters',
-            zh: '选择参数'
-        },
-        'manual-excel-export-step4-desc': {
-            ja: '中央のパラメータリストから出力したいパラメータを選び、「＞」ボタンで出力リストに追加します。',
-            en: 'Select parameters to output from the center list and add them to the output list with the ">" button.',
-            zh: '从中央参数列表中选择要输出的参数，使用">"按钮添加到输出列表。'
-        },
-        'manual-excel-export-step5-title': {
-            ja: '列順の調整',
-            en: 'Adjust Column Order',
-            zh: '调整列顺序'
-        },
-        'manual-excel-export-step5-desc': {
-            ja: '右側の出力リストで「▲」「▼」ボタンで列順を調整します。',
-            en: 'Adjust column order using the up/down buttons in the output list on the right.',
-            zh: '在右侧输出列表中使用"▲""▼"按钮调整列顺序。'
-        },
-        'manual-excel-export-step6-title': {
-            ja: 'エクスポート実行',
-            en: 'Execute Export',
-            zh: '执行导出'
-        },
-        'manual-excel-export-step6-desc': {
-            ja: 'OKをクリックし、保存先を選択してエクスポートを実行します。完了するとExcelファイルが自動的に開かれます。',
-            en: 'Click OK, select the save location, and execute the export. The Excel file opens automatically when complete.',
-            zh: '点击确定，选择保存位置并执行导出。完成后Excel文件将自动打开。'
-        },
-        'manual-excel-export-usecase1-title': {
-            ja: '数量集計',
-            en: 'Quantity Takeoff',
-            zh: '数量统计'
-        },
-        'manual-excel-export-usecase1-desc': {
-            ja: '要素のパラメータをExcelに書き出して、数量集計や見積作業に活用できます。',
-            en: 'Export element parameters to Excel for quantity takeoff and estimation work.',
-            zh: '将元素参数导出到Excel，用于数量统计和估算工作。'
-        },
-        'manual-excel-export-usecase2-title': {
-            ja: 'データ分析',
-            en: 'Data Analysis',
-            zh: '数据分析'
-        },
-        'manual-excel-export-usecase2-desc': {
-            ja: 'Excelのピボットテーブルやグラフ機能を使って、モデルデータを分析できます。',
-            en: 'Analyze model data using Excel pivot tables and chart features.',
-            zh: '使用Excel数据透视表和图表功能分析模型数据。'
-        },
-        'manual-excel-export-usecase3-title': {
-            ja: 'レポート作成',
-            en: 'Report Creation',
-            zh: '报告制作'
-        },
-        'manual-excel-export-usecase3-desc': {
-            ja: 'モデル情報をExcel形式で共有し、関係者へのレポート作成に利用できます。',
-            en: 'Share model information in Excel format and use it for creating reports for stakeholders.',
-            zh: '以Excel格式共享模型信息，用于向相关方制作报告。'
-        },
-        'manual-excel-export-tip1': {
-            ja: 'よく使うカテゴリ・パラメータの組み合わせを設定ファイル（JSON）として保存し、次回から読み込めます。',
-            en: 'Save frequently used category/parameter combinations as settings files (JSON) for future use.',
-            zh: '将常用的类别·参数组合保存为设置文件（JSON），下次可直接加载。'
-        },
-        'manual-excel-export-tip1-strong': {
-            ja: '設定の保存：',
-            en: 'Save Settings:',
-            zh: '保存设置：'
-        },
-        'manual-excel-export-tip2': {
-            ja: 'I-（インスタンス）とT-（タイプ）の接頭辞でパラメータの種類を区別できます。',
-            en: 'Distinguish parameter types with I- (instance) and T- (type) prefixes.',
-            zh: '通过I-（实例）和T-（类型）前缀区分参数类型。'
-        },
-        'manual-excel-export-tip2-strong': {
-            ja: 'パラメータの区別：',
-            en: 'Parameter Types:',
-            zh: '参数区分：'
-        },
-        'manual-excel-export-tip3': {
-            ja: 'エクスポートしたファイルを編集し、「Excelインポート」で書き戻すことができます。',
-            en: 'Edit the exported file and write it back using "Excel Import".',
-            zh: '编辑导出的文件，使用"Excel导入"写回。'
-        },
-        'manual-excel-export-tip3-strong': {
-            ja: 'Excelインポートとの連携：',
-            en: 'Excel Import Integration:',
-            zh: 'Excel导入联动：'
-        },
-        'manual-excel-export-note1': {
-            ja: '大量の要素をエクスポートする場合、処理に時間がかかることがあります。',
-            en: 'Processing may take time when exporting a large number of elements.',
-            zh: '导出大量元素时，处理可能需要一些时间。'
-        },
-        'manual-excel-export-note2': {
-            ja: '出力先のExcelファイルが開いている場合はエクスポートできません。先にファイルを閉じてください。',
-            en: 'Cannot export if the output Excel file is open. Please close the file first.',
-            zh: '如果输出Excel文件已打开，则无法导出。请先关闭文件。'
-        },
-        'manual-excel-export-note3': {
-            ja: 'エクスポート対象はモデル内の要素のみです。リンクモデルの要素は含まれません。',
-            en: 'Only elements in the model are exported. Linked model elements are not included.',
-            zh: '仅导出模型中的元素。不包含链接模型的元素。'
-        }
-    };
+translations.excelExport = {
+    'manual-excel-export-title': {
+        ja: 'Excelエクスポート',
+        en: 'Excel Export',
+        zh: 'Excel导出'
+    },
+    'manual-excel-export-subtitle': {
+        ja: '要素パラメータをカテゴリ別にExcelへ書き出し',
+        en: 'Export element parameters to Excel by category',
+        zh: '按类别将元素参数导出到Excel'
+    },
+    'manual-excel-export-overview': {
+        ja: 'Revit要素のパラメータ値をExcelファイル（.xlsx）に書き出す機能です。パラメータの一括確認・納品用の数量書き出しに活用できます。エクスポート範囲を<strong>プロジェクト全体 / アクティブビュー / 選択要素</strong>から選べ、インスタンスパラメータ・タイプパラメータの両方に対応しています。通り芯・レベル・シートなどの注釈カテゴリにも対応し、前回の設定（カテゴリ・パラメータ選択）を自動復元します。',
+        en: 'Exports Revit element parameter values to an Excel file (.xlsx). Useful for bulk parameter review or quantity takeoffs for deliverables. You can choose the export scope from <strong>Entire Project / Active View / Selected Elements</strong>, and it supports both instance and type parameters. Annotation categories such as grids, levels, and sheets are also supported. Previous settings (category and parameter selection) are automatically restored.',
+        zh: '将Revit元素的参数值导出到Excel文件（.xlsx）。可用于批量确认参数或导出交付用数量表。导出范围可从<strong>整个项目 / 活动视图 / 选定图元</strong>中选择，同时支持实例参数和类型参数。轴网、标高、图纸等注释类别也受支持，并自动恢复上次的设置（类别和参数选择）。'
+    },
+    'manual-excel-export-feature1': {
+        ja: 'カテゴリ別にシート分割して出力',
+        en: 'Output split into sheets by category',
+        zh: '按类别分工作表输出'
+    },
+    'manual-excel-export-feature2': {
+        ja: 'インスタンスパラメータ（I-）/ タイプパラメータ（T-）を区別',
+        en: 'Distinguishes instance parameters (I-) from type parameters (T-)',
+        zh: '区分实例参数（I-）和类型参数（T-）'
+    },
+    'manual-excel-export-feature3': {
+        ja: '出力パラメータと列順をドラッグ＆ドロップ感覚で選択・並替え',
+        en: 'Select and reorder output parameters and column order by drag and drop',
+        zh: '通过拖放选择和重新排列输出参数和列顺序'
+    },
+    'manual-excel-export-feature4': {
+        ja: 'カテゴリ・パラメータの検索フィルタ',
+        en: 'Search filter for categories and parameters',
+        zh: '类别和参数的搜索过滤器'
+    },
+    'manual-excel-export-feature5': {
+        ja: '設定の保存・読込・リセット（JSON形式）',
+        en: 'Save, load, and reset settings (JSON format)',
+        zh: '保存、加载和重置设置（JSON格式）'
+    },
+    'manual-excel-export-feature6': {
+        ja: '数値は数値型で書き込み（Excel警告なし）',
+        en: 'Numbers written as numeric type (no Excel warnings)',
+        zh: '数值以数值类型写入（无Excel警告）'
+    },
+    'manual-excel-export-feature7': {
+        ja: 'ヘッダー行に緑背景＋白文字＋オートフィルタ自動設定',
+        en: 'Header row with green background + white text + auto filter automatically applied',
+        zh: '标题行自动设置绿色背景＋白色文字＋自动筛选'
+    },
+    'manual-excel-export-feature8': {
+        ja: 'エクスポート後に自動でExcelファイルを開く',
+        en: 'Automatically opens the Excel file after export',
+        zh: '导出后自动打开Excel文件'
+    },
+    'manual-excel-export-step1-title': {
+        ja: 'コマンドの起動',
+        en: 'Launch the Command',
+        zh: '启动命令'
+    },
+    'manual-excel-export-step1-desc': {
+        ja: 'リボン「<strong>28 Tools</strong>」タブ →「<strong>データ</strong>」パネル →「<strong>EXCELエクスポート</strong>」ボタンをクリックします。',
+        en: 'Click the "<strong>EXCEL Export</strong>" button in the "<strong>Data</strong>" panel under the "<strong>28 Tools</strong>" ribbon tab.',
+        zh: '点击功能区「<strong>28 Tools</strong>」选项卡 →「<strong>数据</strong>」面板 →「<strong>EXCEL导出</strong>」按钮。'
+    },
+    'manual-excel-export-step2-title': {
+        ja: 'エクスポート範囲の選択',
+        en: 'Select Export Scope',
+        zh: '选择导出范围'
+    },
+    'manual-excel-export-step2-desc': {
+        ja: 'スコープ選択ダイアログが表示されます。',
+        en: 'The scope selection dialog will appear.',
+        zh: '将显示范围选择对话框。'
+    },
+    'manual-excel-export-scope-row1-name': {
+        ja: '<strong>プロジェクト全体</strong>',
+        en: '<strong>Entire Project</strong>',
+        zh: '<strong>整个项目</strong>'
+    },
+    'manual-excel-export-scope-row1-desc': {
+        ja: 'プロジェクト内のすべての要素',
+        en: 'All elements in the project',
+        zh: '项目中的所有图元'
+    },
+    'manual-excel-export-scope-row2-name': {
+        ja: '<strong>アクティブビュー</strong>',
+        en: '<strong>Active View</strong>',
+        zh: '<strong>活动视图</strong>'
+    },
+    'manual-excel-export-scope-row2-desc': {
+        ja: '現在表示中のビューに存在する要素のみ',
+        en: 'Only elements present in the currently active view',
+        zh: '仅活动视图中存在的图元'
+    },
+    'manual-excel-export-scope-row3-name': {
+        ja: '<strong>選択要素</strong>',
+        en: '<strong>Selected Elements</strong>',
+        zh: '<strong>选定图元</strong>'
+    },
+    'manual-excel-export-scope-row3-desc': {
+        ja: '事前に選択しておいた要素のみ',
+        en: 'Only elements selected in advance',
+        zh: '仅预先选定的图元'
+    },
+    'manual-excel-export-step3-title': {
+        ja: 'カテゴリとパラメータの選択',
+        en: 'Select Categories and Parameters',
+        zh: '选择类别和参数'
+    },
+    'manual-excel-export-step3-desc': {
+        ja: '設定ダイアログが開きます。',
+        en: 'The settings dialog will open.',
+        zh: '设置对话框将打开。'
+    },
+    'manual-excel-export-setting-row1-name': {
+        ja: '<strong>カテゴリ一覧</strong>',
+        en: '<strong>Category List</strong>',
+        zh: '<strong>类别列表</strong>'
+    },
+    'manual-excel-export-setting-row1-desc': {
+        ja: 'エクスポートしたいカテゴリにチェックを入れる（検索ボックスで絞り込み可）',
+        en: 'Check the categories to export (can be filtered using the search box)',
+        zh: '勾选要导出的类别（可通过搜索框筛选）'
+    },
+    'manual-excel-export-setting-row2-name': {
+        ja: '<strong>パラメータ一覧</strong>',
+        en: '<strong>Parameter List</strong>',
+        zh: '<strong>参数列表</strong>'
+    },
+    'manual-excel-export-setting-row2-desc': {
+        ja: '各カテゴリでエクスポートするパラメータを選択',
+        en: 'Select the parameters to export for each category',
+        zh: '为每个类别选择要导出的参数'
+    },
+    'manual-excel-export-setting-row3-name': {
+        ja: '<strong>カテゴリ別シート</strong>',
+        en: '<strong>Sheet per Category</strong>',
+        zh: '<strong>按类别分工作表</strong>'
+    },
+    'manual-excel-export-setting-row3-desc': {
+        ja: 'カテゴリごとに別シートへ出力（デフォルト）',
+        en: 'Output each category to a separate sheet (default)',
+        zh: '每个类别输出到独立工作表（默认）'
+    },
+    'manual-excel-export-setting-row4-name': {
+        ja: '<strong>シート統合</strong>',
+        en: '<strong>Merged Sheet</strong>',
+        zh: '<strong>合并工作表</strong>'
+    },
+    'manual-excel-export-setting-row4-desc': {
+        ja: '全カテゴリを1枚の「データ」シートにまとめて出力',
+        en: 'Output all categories into a single "Data" sheet',
+        zh: '将所有类别合并输出到一个"数据"工作表'
+    },
+    'manual-excel-export-step3-tip': {
+        ja: '💡 前回の設定は自動的に復元されます。毎回同じ設定で出力する場合は2回目以降の操作が省略できます。',
+        en: '💡 Previous settings are automatically restored. If you always use the same settings, you can skip the configuration from the second run onward.',
+        zh: '💡 上次的设置将自动恢复。如果每次使用相同设置，第二次起可省略配置步骤。'
+    },
+    'manual-excel-export-step4-title': {
+        ja: 'ファイルを保存',
+        en: 'Save the File',
+        zh: '保存文件'
+    },
+    'manual-excel-export-step4-desc': {
+        ja: '「<strong>エクスポート</strong>」ボタンをクリックし、保存先とファイル名を指定します。',
+        en: 'Click the "<strong>Export</strong>" button and specify the destination folder and file name.',
+        zh: '点击「<strong>导出</strong>」按钮，指定保存位置和文件名。'
+    },
+    'manual-excel-export-output-row1-name': {
+        ja: '<strong>シート構成</strong>',
+        en: '<strong>Sheet Structure</strong>',
+        zh: '<strong>工作表结构</strong>'
+    },
+    'manual-excel-export-output-row1-desc': {
+        ja: 'カテゴリ別シート（デフォルト）、またはシート統合モードで1シート',
+        en: 'Per-category sheets (default), or a single sheet in merged mode',
+        zh: '按类别分工作表（默认），或合并模式下的单一工作表'
+    },
+    'manual-excel-export-output-row2-name': {
+        ja: '<strong>ヘッダー行</strong>',
+        en: '<strong>Header Row</strong>',
+        zh: '<strong>标题行</strong>'
+    },
+    'manual-excel-export-output-row2-desc': {
+        ja: '要素ID | カテゴリ | パラメータ名...',
+        en: 'Element ID | Category | Parameter Name...',
+        zh: '图元ID | 类别 | 参数名...'
+    },
+    'manual-excel-export-output-row3-name': {
+        ja: '<strong>パラメータ接頭辞</strong>',
+        en: '<strong>Parameter Prefix</strong>',
+        zh: '<strong>参数前缀</strong>'
+    },
+    'manual-excel-export-output-row3-desc': {
+        ja: '<code>I-</code>（インスタンスパラメータ）/ <code>T-</code>（タイプパラメータ）',
+        en: '<code>I-</code> (Instance Parameter) / <code>T-</code> (Type Parameter)',
+        zh: '<code>I-</code>（实例参数）/ <code>T-</code>（类型参数）'
+    },
+    'manual-excel-export-output-row4-name': {
+        ja: '<strong>ヘッダー色</strong>',
+        en: '<strong>Header Color</strong>',
+        zh: '<strong>标题颜色</strong>'
+    },
+    'manual-excel-export-output-row4-desc': {
+        ja: '緑（RGB: 155, 187, 89）＋白文字',
+        en: 'Green (RGB: 155, 187, 89) + white text',
+        zh: '绿色（RGB: 155, 187, 89）＋白色文字'
+    },
+    'manual-excel-export-output-row5-name': {
+        ja: '<strong>フォント</strong>',
+        en: '<strong>Font</strong>',
+        zh: '<strong>字体</strong>'
+    },
+    'manual-excel-export-output-row5-desc': {
+        ja: 'ＭＳ 明朝',
+        en: 'MS Mincho',
+        zh: 'MS明朝'
+    },
+    'manual-excel-export-output-row6-name': {
+        ja: '<strong>数値</strong>',
+        en: '<strong>Numbers</strong>',
+        zh: '<strong>数值</strong>'
+    },
+    'manual-excel-export-output-row6-desc': {
+        ja: '数値型で保存（文字列ではない）',
+        en: 'Saved as numeric type (not string)',
+        zh: '以数值类型保存（非字符串）'
+    },
+    'manual-excel-export-output-row7-name': {
+        ja: '<strong>オートフィルタ</strong>',
+        en: '<strong>Auto Filter</strong>',
+        zh: '<strong>自动筛选</strong>'
+    },
+    'manual-excel-export-output-row7-desc': {
+        ja: '自動設定済み',
+        en: 'Automatically applied',
+        zh: '已自动设置'
+    },
+    'manual-excel-export-usecase1-title': {
+        ja: '数量集計・見積もり',
+        en: 'Quantity Takeoff & Estimation',
+        zh: '数量统计与估算'
+    },
+    'manual-excel-export-usecase1-desc': {
+        ja: '要素のパラメータをExcelに書き出して、数量集計や見積作業に活用できます。',
+        en: 'Export element parameters to Excel for quantity takeoffs and estimation work.',
+        zh: '将图元参数导出到Excel，用于数量统计和估算工作。'
+    },
+    'manual-excel-export-usecase2-title': {
+        ja: 'パラメータの一括確認',
+        en: 'Bulk Parameter Review',
+        zh: '批量参数审查'
+    },
+    'manual-excel-export-usecase2-desc': {
+        ja: 'モデル全体のパラメータ値をExcelで俯瞰でき、入力ミスや抜け漏れを発見しやすくなります。',
+        en: 'Get an overview of all parameter values in the model via Excel, making it easier to spot input errors or missing data.',
+        zh: '通过Excel全面查看模型中的参数值，便于发现输入错误或遗漏。'
+    },
+    'manual-excel-export-usecase3-title': {
+        ja: 'Excelインポートとの連携',
+        en: 'Round-trip with Excel Import',
+        zh: '与Excel导入联动'
+    },
+    'manual-excel-export-usecase3-desc': {
+        ja: 'エクスポートしたファイルをExcelで編集し、「Excelインポート」で書き戻す双方向ワークフローを実現できます。',
+        en: 'Edit the exported file in Excel and write it back using "Excel Import" to achieve a bidirectional workflow.',
+        zh: '在Excel中编辑导出的文件，然后通过"Excel导入"写回，实现双向工作流程。'
+    },
+    'manual-excel-export-tip1': {
+        ja: '<strong>設定の保存：</strong>よく使うカテゴリ・パラメータの組み合わせを設定ファイル（JSON）として保存し、次回から読み込めます。',
+        en: '<strong>Save Settings:</strong> Save frequently used category and parameter combinations as a settings file (JSON) and reload them next time.',
+        zh: '<strong>保存设置：</strong>将常用的类别和参数组合保存为设置文件（JSON），下次可直接加载。'
+    },
+    'manual-excel-export-tip2': {
+        ja: '<strong>パラメータの区別：</strong><code>I-</code>（インスタンス）と<code>T-</code>（タイプ）の接頭辞でパラメータの種類を区別できます。',
+        en: '<strong>Parameter Distinction:</strong> Use the <code>I-</code> (instance) and <code>T-</code> (type) prefixes to distinguish parameter types.',
+        zh: '<strong>参数区分：</strong>通过<code>I-</code>（实例）和<code>T-</code>（类型）前缀区分参数类型。'
+    },
+    'manual-excel-export-tip3': {
+        ja: '<strong>注釈カテゴリも対象：</strong>アクティブビューに通り芯・レベルが表示されている状態でエクスポートすると、注釈カテゴリも一覧に表示されます。プロジェクト全体スコープでも対応しています。',
+        en: '<strong>Annotation Categories Included:</strong> If grids and levels are visible in the active view when exporting, annotation categories will also appear in the list. The entire project scope also supports this.',
+        zh: '<strong>包含注释类别：</strong>在活动视图中显示轴网和标高时导出，注释类别也会出现在列表中。整个项目范围也支持此功能。'
+    },
+    'manual-excel-export-note1': {
+        ja: '大量の要素をエクスポートする場合、処理に時間がかかることがあります。',
+        en: 'Exporting a large number of elements may take some time to process.',
+        zh: '导出大量图元时，处理可能需要一些时间。'
+    },
+    'manual-excel-export-note2': {
+        ja: '出力先のExcelファイルが開いている場合はエクスポートできません。先にファイルを閉じてください。',
+        en: 'If the target Excel file is open, export will fail. Please close the file first.',
+        zh: '如果目标Excel文件已打开，则无法导出。请先关闭该文件。'
+    },
+    'manual-excel-export-note3': {
+        ja: 'エクスポート対象はモデル内の要素のみです。リンクモデルの要素は含まれません。',
+        en: 'Only elements within the current model are exported. Elements from linked models are not included.',
+        zh: '仅导出当前模型中的图元，不包括链接模型中的图元。'
+    },
+    'manual-excel-export-trouble1-title': {
+        ja: 'カテゴリが一覧に表示されない',
+        en: 'Category does not appear in the list',
+        zh: '类别未出现在列表中'
+    },
+    'manual-excel-export-trouble1-item1': {
+        ja: 'アクティブビューやスコープに要素が存在しない場合、そのカテゴリは表示されません',
+        en: 'If no elements exist in the active view or scope, that category will not appear',
+        zh: '如果活动视图或范围内不存在图元，则该类别不会显示'
+    },
+    'manual-excel-export-trouble1-item2': {
+        ja: '<strong>プロジェクト全体</strong>スコープで実行するとより多くのカテゴリが表示されます',
+        en: 'Running with the <strong>Entire Project</strong> scope will show more categories',
+        zh: '使用<strong>整个项目</strong>范围运行将显示更多类别'
+    },
+    'manual-excel-export-trouble2-title': {
+        ja: '通り芯・レベルなどの注釈要素が表示されない',
+        en: 'Annotation elements such as grids and levels do not appear',
+        zh: '轴网、标高等注释图元未显示'
+    },
+    'manual-excel-export-trouble2-item1': {
+        ja: 'アクティブビューに通り芯・レベルが表示されている状態でエクスポートすると一覧に表示されます',
+        en: 'Export when grids and levels are visible in the active view, and they will appear in the list',
+        zh: '在活动视图中显示轴网和标高时导出，它们将出现在列表中'
+    },
+    'manual-excel-export-trouble2-item2': {
+        ja: 'プロジェクト全体スコープでも対応しています',
+        en: 'The entire project scope also supports annotation categories',
+        zh: '整个项目范围也支持注释类别'
+    },
+    'manual-excel-export-related-import': {
+        ja: 'Excelインポート',
+        en: 'Excel Import',
+        zh: 'Excel导入'
+    },
+    'manual-excel-export-related-import-desc': {
+        ja: ' — エクスポートしたファイルをRevitに一括反映',
+        en: ' — Write exported file back to Revit in bulk',
+        zh: ' — 将导出的文件批量写回Revit'
+    },
+    'manual-excel-export-related-formwork': {
+        ja: '型枠数量算出',
+        en: 'Formwork Calculator',
+        zh: '模板数量计算'
+    },
+    'manual-excel-export-related-formwork-desc': {
+        ja: ' — 構造要素の型枠面積を自動算出してExcelに出力',
+        en: ' — Automatically calculates formwork area of structural elements and outputs to Excel',
+        zh: ' — 自动计算结构构件的模板面积并输出到Excel'
+    }
+};
 
     // ========================================
     // excel-import.html (Excelインポート)
     // ========================================
-    translations.excelImport = {
-        'manual-excel-import-title': {
-            ja: 'Excelインポート',
-            en: 'Excel Import',
-            zh: 'Excel导入'
-        },
-        'manual-excel-import-subtitle': {
-            ja: 'Excelの編集内容をRevitモデルに書き戻し',
-            en: 'Import Excel edits back into Revit model',
-            zh: '将Excel编辑内容写回Revit模型'
-        },
-        'manual-excel-import-overview': {
-            ja: 'エクスポートしたExcelファイルの編集内容をRevitモデルに書き戻す機能です。変更箇所のプレビュー確認、読み取り専用パラメータの自動スキップ、インポート後のExcel色付け（変更セルを黄色にハイライト）に対応します。',
-            en: 'This feature writes back edited Excel file contents to the Revit model. It supports change preview, auto-skip of read-only parameters, and post-import Excel coloring (highlighting changed cells in yellow).',
-            zh: '此功能将编辑后的Excel文件内容写回Revit模型。支持变更预览确认、只读参数自动跳过、导入后Excel着色（将变更单元格高亮为黄色）。'
-        },
-        'manual-excel-import-feature1': {
-            ja: '開いているExcelファイルの自動検出',
-            en: 'Auto-detect open Excel files',
-            zh: '自动检测已打开的Excel文件'
-        },
-        'manual-excel-import-feature2': {
-            ja: '変更プレビュー（DataGrid表示、現在値 vs 新しい値）',
-            en: 'Change preview (DataGrid display, current vs new values)',
-            zh: '变更预览（DataGrid显示，当前值 vs 新值）'
-        },
-        'manual-excel-import-feature3': {
-            ja: '読み取り専用パラメータは自動スキップ（サマリーに件数表示）',
-            en: 'Auto-skip read-only parameters (count shown in summary)',
-            zh: '只读参数自动跳过（摘要中显示数量）'
-        },
-        'manual-excel-import-feature4': {
-            ja: 'インポート後、変更セルをExcel上で黄色ハイライト',
-            en: 'Highlight changed cells in yellow on Excel after import',
-            zh: '导入后在Excel上将变更单元格高亮为黄色'
-        },
-        'manual-excel-import-feature5': {
-            ja: 'トランザクションによる安全な更新（失敗時はロールバック）',
-            en: 'Safe updates via transactions (rollback on failure)',
-            zh: '通过事务进行安全更新（失败时回滚）'
-        },
-        'manual-excel-import-feature6': {
-            ja: 'エラー・警告の詳細表示',
-            en: 'Detailed error and warning display',
-            zh: '详细显示错误和警告'
-        },
-        'manual-excel-import-step1-title': {
-            ja: 'Revitモデルを開く',
-            en: 'Open Revit Model',
-            zh: '打开Revit模型'
-        },
-        'manual-excel-import-step1-desc': {
-            ja: 'インポート先のモデルをアクティブにします。',
-            en: 'Activate the target model for import.',
-            zh: '激活导入目标模型。'
-        },
-        'manual-excel-import-step2-title': {
-            ja: 'ボタンをクリック',
-            en: 'Click Button',
-            zh: '点击按钮'
-        },
-        'manual-excel-import-step2-desc': {
-            ja: 'リボンの「Excel連携」パネルから「Excel インポート」をクリックします。',
-            en: 'Click "Excel Import" from the "Excel Integration" panel on the ribbon.',
-            zh: '从功能区的"Excel联动"面板中点击"Excel 导入"。'
-        },
-        'manual-excel-import-step3-title': {
-            ja: 'Excelファイル選択',
-            en: 'Select Excel File',
-            zh: '选择Excel文件'
-        },
-        'manual-excel-import-step3-desc': {
-            ja: '開いているExcelファイルを自動検出して選択するか、「参照...」ボタンでファイルを選択します。',
-            en: 'Auto-detect and select an open Excel file, or select a file using the "Browse..." button.',
-            zh: '自动检测并选择已打开的Excel文件，或使用"浏览..."按钮选择文件。'
-        },
-        'manual-excel-import-step4-title': {
-            ja: '変更プレビュー確認',
-            en: 'Review Change Preview',
-            zh: '确认变更预览'
-        },
-        'manual-excel-import-step4-desc': {
-            ja: '変更内容（要素ID、カテゴリ、パラメータ、現在値→新しい値）を確認します。',
-            en: 'Review changes (element ID, category, parameter, current value → new value).',
-            zh: '确认变更内容（元素ID、类别、参数、当前值→新值）。'
-        },
-        'manual-excel-import-step5-title': {
-            ja: 'インポート実行',
-            en: 'Execute Import',
-            zh: '执行导入'
-        },
-        'manual-excel-import-step5-desc': {
-            ja: '「インポート実行」をクリックし、確認ダイアログで「はい」を選択します。結果サマリーが表示され、Excelの変更セルが黄色にハイライトされます。',
-            en: 'Click "Execute Import" and select "Yes" in the confirmation dialog. A result summary is displayed and changed cells in Excel are highlighted in yellow.',
-            zh: '点击"执行导入"，在确认对话框中选择"是"。显示结果摘要，Excel中的变更单元格将高亮为黄色。'
-        },
-        'manual-excel-import-usecase1-title': {
-            ja: '一括パラメータ更新',
-            en: 'Batch Parameter Update',
-            zh: '批量参数更新'
-        },
-        'manual-excel-import-usecase1-desc': {
-            ja: 'Excelで大量のパラメータを編集し、一括でRevitモデルに反映できます。',
-            en: 'Edit a large number of parameters in Excel and apply them to the Revit model at once.',
-            zh: '在Excel中编辑大量参数，一次性反映到Revit模型中。'
-        },
-        'manual-excel-import-usecase2-title': {
-            ja: '外部データの取り込み',
-            en: 'External Data Integration',
-            zh: '外部数据导入'
-        },
-        'manual-excel-import-usecase2-desc': {
-            ja: '他のシステムから出力されたExcelデータをRevitモデルに反映できます。',
-            en: 'Integrate Excel data from other systems into the Revit model.',
-            zh: '将其他系统输出的Excel数据反映到Revit模型中。'
-        },
-        'manual-excel-import-usecase3-title': {
-            ja: '修正作業の効率化',
-            en: 'Efficient Corrections',
-            zh: '修改工作效率化'
-        },
-        'manual-excel-import-usecase3-desc': {
-            ja: 'Revit上で1つずつ修正するよりExcelで一括編集した方が効率的な場合に活用できます。',
-            en: 'Useful when batch editing in Excel is more efficient than correcting one by one in Revit.',
-            zh: '当在Excel中批量编辑比在Revit中逐个修改更高效时使用。'
-        },
-        'manual-excel-import-tip1': {
-            ja: 'インポート前に変更内容を確認できるので、意図しない変更を防げます。',
-            en: 'Review changes before import to prevent unintended modifications.',
-            zh: '导入前可确认变更内容，防止意外修改。'
-        },
-        'manual-excel-import-tip1-strong': {
-            ja: '変更プレビュー：',
-            en: 'Change Preview:',
-            zh: '变更预览：'
-        },
-        'manual-excel-import-tip2': {
-            ja: 'インポート後にExcel上で変更されたセルが黄色になるので、どの値が更新されたか確認できます。',
-            en: 'Changed cells turn yellow in Excel after import, so you can verify which values were updated.',
-            zh: '导入后Excel中变更的单元格变为黄色，可确认哪些值被更新。'
-        },
-        'manual-excel-import-tip2-strong': {
-            ja: '黄色ハイライト：',
-            en: 'Yellow Highlight:',
-            zh: '黄色高亮：'
-        },
-        'manual-excel-import-tip3': {
-            ja: 'トランザクション機能により、エラーが発生した場合は変更が自動的に取り消されます。',
-            en: 'Transaction feature automatically rolls back changes if errors occur.',
-            zh: '事务功能确保发生错误时自动撤销更改。'
-        },
-        'manual-excel-import-tip3-strong': {
-            ja: '安全なロールバック：',
-            en: 'Safe Rollback:',
-            zh: '安全回滚：'
-        },
-        'manual-excel-import-note1': {
-            ja: '「Excelエクスポート」で出力したファイル形式に準拠している必要があります。',
-            en: 'The file must conform to the format output by "Excel Export".',
-            zh: '文件必须符合"Excel导出"输出的文件格式。'
-        },
-        'manual-excel-import-note2': {
-            ja: '読み取り専用パラメータ（要素IDなど）は自動的にスキップされます。',
-            en: 'Read-only parameters (such as element ID) are automatically skipped.',
-            zh: '只读参数（如元素ID等）将自动跳过。'
-        },
-        'manual-excel-import-note3': {
-            ja: 'インポート前にRevitモデルのバックアップを取ることを推奨します。',
-            en: 'It is recommended to back up your Revit model before importing.',
-            zh: '建议在导入前备份Revit模型。'
-        }
-    };
+translations.excelImport = {
+    'manual-excel-import-title': {
+        ja: 'Excelインポート',
+        en: 'Excel Import',
+        zh: 'Excel导入'
+    },
+    'manual-excel-import-subtitle': {
+        ja: 'Excelの編集内容をRevitモデルに一括反映',
+        en: 'Batch write Excel edits back to Revit model',
+        zh: '将Excel编辑内容批量写回Revit模型'
+    },
+    'manual-excel-import-overview': {
+        ja: 'Excelで編集したパラメータ値をRevitに一括反映する機能です。EXCELエクスポートで書き出したファイルをそのまま使用できます。インポート前に<strong>変更内容をプレビュー</strong>で確認でき、インポート後に<strong>成功・失敗をExcelのセルに色付き</strong>でフィードバックします。開いているExcelファイルを<strong>自動検出</strong>してリスト表示します。',
+        en: 'Batch-applies parameter values edited in Excel back to Revit. You can use files exported by Excel Export as-is. You can <strong>preview changes</strong> before importing, and get <strong>color-coded success/failure feedback on Excel cells</strong> after importing. Automatically <strong>detects open Excel files</strong> and lists them.',
+        zh: '将在Excel中编辑的参数值批量写回Revit。可直接使用Excel导出的文件。导入前可<strong>预览变更内容</strong>，导入后在Excel单元格上以<strong>颜色标注成功/失败</strong>。自动<strong>检测已打开的Excel文件</strong>并列出。'
+    },
+    'manual-excel-import-feature1': {
+        ja: '開いているExcelファイルの自動検出',
+        en: 'Automatic detection of open Excel files',
+        zh: '自动检测已打开的Excel文件'
+    },
+    'manual-excel-import-feature2': {
+        ja: '変更プレビュー（変更前の値と変更後の値を並べて確認）',
+        en: 'Change preview (view old and new values side by side)',
+        zh: '变更预览（并排查看变更前后的值）'
+    },
+    'manual-excel-import-feature3': {
+        ja: '読み取り専用パラメータは自動スキップ（サマリーに件数表示）',
+        en: 'Read-only parameters automatically skipped (count shown in summary)',
+        zh: '只读参数自动跳过（在摘要中显示数量）'
+    },
+    'manual-excel-import-feature4': {
+        ja: 'インポート後、変更セルをExcel上で色付きフィードバック',
+        en: 'Color-coded feedback on changed cells in Excel after import',
+        zh: '导入后在Excel中对变更单元格进行颜色标注反馈'
+    },
+    'manual-excel-import-feature5': {
+        ja: 'トランザクションによる安全な更新（失敗時はロールバック）',
+        en: 'Safe updates via transactions (rollback on failure)',
+        zh: '通过事务安全更新（失败时回滚）'
+    },
+    'manual-excel-import-feature6': {
+        ja: 'エラー・警告の詳細表示',
+        en: 'Detailed display of errors and warnings',
+        zh: '详细显示错误和警告'
+    },
+    'manual-excel-import-step1-title': {
+        ja: 'コマンドの起動',
+        en: 'Launch the Command',
+        zh: '启动命令'
+    },
+    'manual-excel-import-step1-desc': {
+        ja: 'リボン「<strong>28 Tools</strong>」タブ →「<strong>データ</strong>」パネル →「<strong>EXCELインポート</strong>」ボタンをクリックします。',
+        en: 'Click the "<strong>EXCEL Import</strong>" button in the "<strong>Data</strong>" panel under the "<strong>28 Tools</strong>" ribbon tab.',
+        zh: '点击功能区「<strong>28 Tools</strong>」选项卡 →「<strong>数据</strong>」面板 →「<strong>EXCEL导入</strong>」按钮。'
+    },
+    'manual-excel-import-step2-title': {
+        ja: 'Excelファイルの選択',
+        en: 'Select an Excel File',
+        zh: '选择Excel文件'
+    },
+    'manual-excel-import-file-row1-name': {
+        ja: '<strong>開いているファイルから選ぶ</strong>',
+        en: '<strong>Choose from Open Files</strong>',
+        zh: '<strong>从已打开的文件中选择</strong>'
+    },
+    'manual-excel-import-file-row1-desc': {
+        ja: '現在開いているExcelファイルが自動検出されてリスト表示される',
+        en: 'Currently open Excel files are automatically detected and listed',
+        zh: '当前已打开的Excel文件会被自动检测并列出'
+    },
+    'manual-excel-import-file-row2-name': {
+        ja: '<strong>ファイルを参照</strong>',
+        en: '<strong>Browse for File</strong>',
+        zh: '<strong>浏览文件</strong>'
+    },
+    'manual-excel-import-file-row2-desc': {
+        ja: '「参照」ボタンからファイルダイアログでファイルを選ぶ',
+        en: 'Select a file from the file dialog via the "Browse" button',
+        zh: '通过"浏览"按钮在文件对话框中选择文件'
+    },
+    'manual-excel-import-file-row3-name': {
+        ja: '<strong>ドラッグ＆ドロップ</strong>',
+        en: '<strong>Drag & Drop</strong>',
+        zh: '<strong>拖放</strong>'
+    },
+    'manual-excel-import-file-row3-desc': {
+        ja: 'ダイアログ上にExcelファイルをドラッグする',
+        en: 'Drag an Excel file onto the dialog',
+        zh: '将Excel文件拖到对话框上'
+    },
+    'manual-excel-import-step3-title': {
+        ja: '変更内容のプレビュー確認',
+        en: 'Review Changes in Preview',
+        zh: '预览确认变更内容'
+    },
+    'manual-excel-import-step3-desc': {
+        ja: 'プレビューダイアログに<strong>変更が発生する行のみ</strong>が一覧表示されます。読み取り専用パラメータ（Revitが自動計算する値）は非表示。変更前の値と変更後の値を並べて確認できます。',
+        en: 'The preview dialog lists <strong>only rows with changes</strong>. Read-only parameters (values auto-calculated by Revit) are hidden. You can view old and new values side by side.',
+        zh: '预览对话框中仅列出<strong>发生变更的行</strong>。只读参数（Revit自动计算的值）被隐藏。可并排查看变更前后的值。'
+    },
+    'manual-excel-import-step3-tip': {
+        ja: '💡 <strong>空セルはスキップされます。</strong>ExcelのセルをDeleteキーで消しても、その値がRevitから削除されることはありません。',
+        en: '💡 <strong>Empty cells are skipped.</strong> Deleting a cell value in Excel with the Delete key will not remove that value from Revit.',
+        zh: '💡 <strong>空单元格会被跳过。</strong>在Excel中用Delete键清除单元格值不会从Revit中删除该值。'
+    },
+    'manual-excel-import-step4-title': {
+        ja: 'インポート実行',
+        en: 'Execute Import',
+        zh: '执行导入'
+    },
+    'manual-excel-import-step4-desc': {
+        ja: '「<strong>インポート実行</strong>」ボタンをクリックします。処理完了後、Revitに変更が反映されます。',
+        en: 'Click the "<strong>Execute Import</strong>" button. After processing, changes will be reflected in Revit.',
+        zh: '点击「<strong>执行导入</strong>」按钮。处理完成后，变更将反映到Revit中。'
+    },
+    'manual-excel-import-feedback-intro': {
+        ja: 'インポートが完了すると、Excelファイルの該当セルに色付きフィードバックが追加されます。',
+        en: 'After import is complete, color-coded feedback is added to the relevant cells in the Excel file.',
+        zh: '导入完成后，Excel文件中的相关单元格会添加颜色标注反馈。'
+    },
+    'manual-excel-import-feedback-row1-name': {
+        ja: '<strong>インポート成功</strong>',
+        en: '<strong>Import Success</strong>',
+        zh: '<strong>导入成功</strong>'
+    },
+    'manual-excel-import-feedback-row1-desc': {
+        ja: 'セルのテキストが<strong>青字・太字</strong>',
+        en: 'Cell text turns <strong>blue and bold</strong>',
+        zh: '单元格文字变为<strong>蓝色粗体</strong>'
+    },
+    'manual-excel-import-feedback-row2-name': {
+        ja: '<strong>インポート失敗</strong>',
+        en: '<strong>Import Failed</strong>',
+        zh: '<strong>导入失败</strong>'
+    },
+    'manual-excel-import-feedback-row2-desc': {
+        ja: 'セルのテキストが<strong>赤字・太字</strong>',
+        en: 'Cell text turns <strong>red and bold</strong>',
+        zh: '单元格文字变为<strong>红色粗体</strong>'
+    },
+    'manual-excel-import-feedback-legend': {
+        ja: '各シートの末尾列に凡例が自動追記されます（<code>*青字はインポート成功、赤字はインポート失敗</code>）。',
+        en: 'A legend is automatically added to the last column of each sheet (<code>*Blue = import success, Red = import failure</code>).',
+        zh: '每个工作表的最后一列会自动追加图例（<code>*蓝色=导入成功，红色=导入失败</code>）。'
+    },
+    'manual-excel-import-feedback-com': {
+        ja: '💡 ExcelがRevitと同時に開いている場合はExcel COM経由でセル書式が直接反映されます。Excelが閉じている場合はファイルに直接書き込まれます。',
+        en: '💡 If Excel is open alongside Revit, cell formatting is applied directly via Excel COM. If Excel is closed, it is written directly to the file.',
+        zh: '💡 如果Excel与Revit同时打开，单元格格式通过Excel COM直接应用。如果Excel已关闭，则直接写入文件。'
+    },
+    'manual-excel-import-usecase1-title': {
+        ja: '一括パラメータ更新',
+        en: 'Bulk Parameter Update',
+        zh: '批量参数更新'
+    },
+    'manual-excel-import-usecase1-desc': {
+        ja: 'Excelで大量のパラメータを編集し、一括でRevitモデルに反映できます。',
+        en: 'Edit a large number of parameters in Excel and apply them to the Revit model all at once.',
+        zh: '在Excel中编辑大量参数，一次性反映到Revit模型中。'
+    },
+    'manual-excel-import-usecase2-title': {
+        ja: '外部データの取り込み',
+        en: 'Import External Data',
+        zh: '导入外部数据'
+    },
+    'manual-excel-import-usecase2-desc': {
+        ja: '他のシステムから出力されたExcelデータをRevitモデルに反映できます。',
+        en: 'Apply Excel data exported from other systems into the Revit model.',
+        zh: '将从其他系统导出的Excel数据反映到Revit模型中。'
+    },
+    'manual-excel-import-usecase3-title': {
+        ja: '修正作業の効率化',
+        en: 'Efficient Correction Work',
+        zh: '提高修正工作效率'
+    },
+    'manual-excel-import-usecase3-desc': {
+        ja: 'Revit上で1つずつ修正するよりExcelで一括編集した方が効率的な場合に活用できます。',
+        en: 'Useful when bulk editing in Excel is more efficient than making corrections one by one in Revit.',
+        zh: '当在Excel中批量编辑比在Revit中逐一修正更高效时非常有用。'
+    },
+    'manual-excel-import-tip1': {
+        ja: '<strong>変更プレビューを活用：</strong>インポート前に変更内容を確認できるので、意図しない変更を防げます。変更行のみが表示されるためレビューが容易です。',
+        en: '<strong>Use the Change Preview:</strong> You can review changes before importing to prevent unintended modifications. Only changed rows are shown, making review easy.',
+        zh: '<strong>利用变更预览：</strong>导入前可确认变更内容，防止意外修改。仅显示变更行，便于审查。'
+    },
+    'manual-excel-import-tip2': {
+        ja: '<strong>色付きフィードバック：</strong>インポート後にExcel上で成功セルが青字・失敗セルが赤字になるので、どの値が更新されたか確認できます。',
+        en: '<strong>Color-coded Feedback:</strong> After import, successful cells turn blue and failed cells turn red in Excel, so you can confirm which values were updated.',
+        zh: '<strong>颜色标注反馈：</strong>导入后，Excel中成功的单元格变为蓝色，失败的变为红色，便于确认哪些值已更新。'
+    },
+    'manual-excel-import-tip3': {
+        ja: '<strong>安全なロールバック：</strong>トランザクション機能により、エラーが発生した場合は変更が自動的に取り消されます。',
+        en: '<strong>Safe Rollback:</strong> The transaction feature automatically reverts changes if an error occurs.',
+        zh: '<strong>安全回滚：</strong>事务功能在发生错误时自动撤销变更。'
+    },
+    'manual-excel-import-note1': {
+        ja: '<strong>空セル（空欄）はスキップ</strong>されます。値を消したい場合は空欄ではなく明示的な値を入力してください。',
+        en: '<strong>Empty cells are skipped.</strong> To clear a value, enter an explicit value rather than leaving the cell blank.',
+        zh: '<strong>空单元格（空白）会被跳过。</strong>要清除值，请输入明确的值，而不是留空。'
+    },
+    'manual-excel-import-note2': {
+        ja: '<strong>読み取り専用パラメータ</strong>（長さ・面積などRevitが自動計算するパラメータ）はインポートできません。',
+        en: '<strong>Read-only parameters</strong> (such as length and area, auto-calculated by Revit) cannot be imported.',
+        zh: '<strong>只读参数</strong>（如长度、面积等Revit自动计算的参数）无法导入。'
+    },
+    'manual-excel-import-note3': {
+        ja: '<strong>要素IDが一致しない</strong>場合は反映されません（異なるプロジェクトで書き出したファイルを使用しないでください）。',
+        en: 'If the <strong>element ID does not match</strong>, the change will not be applied (do not use files exported from a different project).',
+        zh: '如果<strong>图元ID不匹配</strong>，则不会应用变更（请勿使用从不同项目导出的文件）。'
+    },
+    'manual-excel-import-note4': {
+        ja: 'シート統合モードでエクスポートしたファイルでは、対象カテゴリに存在しないパラメータの列が空欄になりますが、インポート時は空欄セルをスキップするため問題ありません。',
+        en: 'In a file exported in merged sheet mode, columns for parameters not present in a category will be blank, but this is not a problem as empty cells are skipped during import.',
+        zh: '在合并工作表模式导出的文件中，目标类别中不存在的参数列将为空，但导入时会跳过空单元格，因此没有问题。'
+    },
+    'manual-excel-import-trouble1-title': {
+        ja: '「ファイルが開けません」と表示される',
+        en: '"File cannot be opened" message appears',
+        zh: '显示"文件无法打开"'
+    },
+    'manual-excel-import-trouble1-item1': {
+        ja: 'ExcelがそのファイルをExclusiveロックで開いている場合があります',
+        en: 'Excel may have the file open with an exclusive lock',
+        zh: 'Excel可能以独占锁的方式打开了该文件'
+    },
+    'manual-excel-import-trouble1-item2': {
+        ja: 'ExcelでファイルをTrustedとして開き直すか、Excelをいったん閉じてから試みてください',
+        en: 'Try reopening the file as Trusted in Excel, or close Excel and try again',
+        zh: '尝试在Excel中将文件重新以受信任方式打开，或关闭Excel后重试'
+    },
+    'manual-excel-import-trouble2-title': {
+        ja: '「インポートできないパラメータがあります」と表示される',
+        en: '"There are parameters that cannot be imported" message appears',
+        zh: '显示"存在无法导入的参数"'
+    },
+    'manual-excel-import-trouble2-item1': {
+        ja: '長さ・面積などRevitが自動計算するパラメータは読み取り専用のためインポートできません',
+        en: 'Parameters auto-calculated by Revit such as length and area are read-only and cannot be imported',
+        zh: 'Revit自动计算的参数（如长度、面积等）为只读，无法导入'
+    },
+    'manual-excel-import-trouble2-item2': {
+        ja: 'プレビュー画面では読み取り専用パラメータは非表示になっています',
+        en: 'Read-only parameters are hidden in the preview screen',
+        zh: '预览界面中只读参数被隐藏'
+    },
+    'manual-excel-import-trouble3-title': {
+        ja: 'プレビューに変更行が表示されない',
+        en: 'No changed rows appear in the preview',
+        zh: '预览中未显示变更行'
+    },
+    'manual-excel-import-trouble3-item1': {
+        ja: 'ExcelとRevit上の現在値が同じ場合、変更なしと判定されプレビューに表示されません',
+        en: 'If the current values in Excel and Revit are the same, it is judged as no change and will not appear in the preview',
+        zh: '如果Excel和Revit中的当前值相同，则被判定为无变更，不会在预览中显示'
+    },
+    'manual-excel-import-trouble3-item2': {
+        ja: '値を変更してから再度インポートを実行してください',
+        en: 'Make changes to the values and then run the import again',
+        zh: '修改值后再次执行导入'
+    },
+    'manual-excel-import-related-export': {
+        ja: 'Excelエクスポート',
+        en: 'Excel Export',
+        zh: 'Excel导出'
+    },
+    'manual-excel-import-related-export-desc': {
+        ja: ' — Revitのパラメータ値をExcelに書き出す',
+        en: ' — Export Revit parameter values to Excel',
+        zh: ' — 将Revit参数值导出到Excel'
+    },
+    'manual-excel-import-related-formwork': {
+        ja: '型枠数量算出',
+        en: 'Formwork Calculator',
+        zh: '模板数量计算'
+    },
+    'manual-excel-import-related-formwork-desc': {
+        ja: ' — 構造要素の型枠面積を自動算出してExcelに出力',
+        en: ' — Automatically calculates formwork area of structural elements and outputs to Excel',
+        zh: ' — 自动计算结构构件的模板面积并输出到Excel'
+    }
+};
 
     // ========================================
     // filled-region.html (塗潰し領域 分割・統合)
     // ========================================
-    translations.filledRegion = {
-        'manual-filled-region-title': {
-            ja: '塗潰し領域 分割・統合',
-            en: 'Filled Region Split & Merge',
-            zh: '填充区域 分割与合并'
-        },
-        'manual-filled-region-subtitle': {
-            ja: '塗り潰し領域を個別に分割または1つに統合',
-            en: 'Split or merge filled regions',
-            zh: '将填充区域分割或合并'
-        },
-        'manual-filled-region-overview': {
-            ja: '配置済みの塗り潰し領域を分割または統合する機能です。分割では、1つの塗り潰し領域が複数の独立したエリア（境界）を含んでいる場合、それぞれを個別の独立した塗り潰し領域に分離します。統合では、複数の別々の塗り潰し領域を1つの領域にまとめます。',
-            en: 'This feature splits or merges placed filled regions. Split separates a single filled region containing multiple independent areas (boundaries) into individual filled regions. Merge combines multiple separate filled regions into one.',
-            zh: '此功能用于分割或合并已放置的填充区域。分割将包含多个独立区域（边界）的单个填充区域分离为独立的填充区域。合并将多个单独的填充区域合并为一个区域。'
-        },
-        'manual-filled-region-feature1': {
-            ja: '選択した領域の状態に応じて分割/統合の可否を自動判定',
-            en: 'Automatically determine split/merge availability based on selection state',
-            zh: '根据选择状态自动判定可否分割/合并'
-        },
-        'manual-filled-region-feature2': {
-            ja: '分割時は元のパターンを維持',
-            en: 'Original pattern preserved when splitting',
-            zh: '分割时保持原始图案'
-        },
-        'manual-filled-region-feature3': {
-            ja: '統合時はパターンを自由に選択可能（プロジェクト内の全パターンから選択）',
-            en: 'Freely select pattern when merging (choose from all project patterns)',
-            zh: '合并时可自由选择图案（从项目内所有图案中选择）'
-        },
-        'manual-filled-region-feature4': {
-            ja: '選択情報（領域数、エリア数）をリアルタイム表示',
-            en: 'Real-time display of selection info (region count, area count)',
-            zh: '实时显示选择信息（区域数、面积数）'
-        },
-        'manual-filled-region-feature5': {
-            ja: 'エラー時はトランザクション自動ロールバック',
-            en: 'Automatic transaction rollback on error',
-            zh: '错误时自动回滚事务'
-        },
-        'manual-filled-region-step1-title': {
-            ja: '塗り潰し領域を選択',
-            en: 'Select Filled Regions',
-            zh: '选择填充区域'
-        },
-        'manual-filled-region-step1-desc': {
-            ja: 'ビュー上で、分割したい領域（1つ以上）または統合したい領域（2つ以上）を選択します。',
-            en: 'Select regions to split (1 or more) or merge (2 or more) on the view.',
-            zh: '在视图上选择要分割的区域（1个以上）或要合并的区域（2个以上）。'
-        },
-        'manual-filled-region-step2-title': {
-            ja: 'ボタンをクリック',
-            en: 'Click Button',
-            zh: '点击按钮'
-        },
-        'manual-filled-region-step2-desc': {
-            ja: 'リボンの「注釈・詳細」パネルから「塗潰し領域 分割･統合」をクリックします。',
-            en: 'Click "Filled Region Split & Merge" from the "Annotation & Detail" panel on the ribbon.',
-            zh: '从功能区的"注释·详细"面板中点击"填充区域 分割与合并"。'
-        },
-        'manual-filled-region-step3-title': {
-            ja: '操作を選択',
-            en: 'Select Operation',
-            zh: '选择操作'
-        },
-        'manual-filled-region-step3-desc': {
-            ja: 'ダイアログで操作を選択します。分割は複数エリアを持つ領域がある場合、統合は2つ以上の領域を選択している場合に選択可能です。',
-            en: 'Select the operation in the dialog. Split is available when regions contain multiple areas; Merge is available when 2 or more regions are selected.',
-            zh: '在对话框中选择操作。当区域包含多个面积时可选择分割；选择2个以上区域时可选择合并。'
-        },
-        'manual-filled-region-step4-title': {
-            ja: '（統合の場合）パターン選択',
-            en: '(For Merge) Select Pattern',
-            zh: '（合并时）选择图案'
-        },
-        'manual-filled-region-step4-desc': {
-            ja: '統合後の塗り潰しパターンをドロップダウンから選択します。選択した領域が同じパターンの場合は自動選択済みです。',
-            en: 'Select the fill pattern from the dropdown for the merged region. If selected regions share the same pattern, it is auto-selected.',
-            zh: '从下拉菜单中选择合并后的填充图案。如果所选区域具有相同图案，则自动选择。'
-        },
-        'manual-filled-region-step5-title': {
-            ja: 'OKをクリック',
-            en: 'Click OK',
-            zh: '点击确定'
-        },
-        'manual-filled-region-step5-desc': {
-            ja: '処理を実行します。完了すると結果メッセージが表示されます。',
-            en: 'Execute the operation. A result message is displayed upon completion.',
-            zh: '执行处理。完成后显示结果消息。'
-        },
-        'manual-filled-region-usecase1-title': {
-            ja: '仕上げ図面の整理',
-            en: 'Finish Drawing Organization',
-            zh: '装修图纸整理'
-        },
-        'manual-filled-region-usecase1-desc': {
-            ja: '複数エリアに分かれた塗り潰し領域を個別管理したい場合に、分割して整理できます。',
-            en: 'Split and organize filled regions with multiple areas for individual management.',
-            zh: '将包含多个区域的填充区域分割整理，以便单独管理。'
-        },
-        'manual-filled-region-usecase2-title': {
-            ja: 'パターン統一',
-            en: 'Pattern Unification',
-            zh: '图案统一'
-        },
-        'manual-filled-region-usecase2-desc': {
-            ja: 'バラバラに作成された塗り潰し領域を1つに統合し、パターンを統一できます。',
-            en: 'Merge separately created filled regions into one and unify the pattern.',
-            zh: '将分别创建的填充区域合并为一个并统一图案。'
-        },
-        'manual-filled-region-usecase3-title': {
-            ja: '編集の効率化',
-            en: 'Efficient Editing',
-            zh: '编辑效率化'
-        },
-        'manual-filled-region-usecase3-desc': {
-            ja: '統合することで1つの要素として管理でき、移動や削除などの編集が効率的になります。',
-            en: 'Manage as a single element after merging for more efficient editing, moving, and deleting.',
-            zh: '合并后作为单个元素管理，使移动和删除等编辑更加高效。'
-        },
-        'manual-filled-region-tip1': {
-            ja: '選択した領域の状態に応じて、分割・統合の可否がダイアログに自動表示されます。',
-            en: 'Split/merge availability is automatically shown in the dialog based on the selected regions.',
-            zh: '根据所选区域的状态，对话框中自动显示可否分割/合并。'
-        },
-        'manual-filled-region-tip1-strong': {
-            ja: '自動判定：',
-            en: 'Auto Detection:',
-            zh: '自动判定：'
-        },
-        'manual-filled-region-tip2': {
-            ja: '分割時は元の塗り潰しパターンがそのまま維持されるため、見た目は変わりません。',
-            en: 'The original fill pattern is preserved when splitting, so the appearance remains unchanged.',
-            zh: '分割时保持原始填充图案，因此外观不会改变。'
-        },
-        'manual-filled-region-tip2-strong': {
-            ja: 'パターン維持：',
-            en: 'Pattern Preserved:',
-            zh: '图案保持：'
-        },
-        'manual-filled-region-tip3': {
-            ja: '統合時にパターンを変更できるため、複数領域のパターン一括変更にも活用できます。',
-            en: 'You can change the pattern when merging, useful for batch pattern changes across multiple regions.',
-            zh: '合并时可更改图案，因此也可用于批量更改多个区域的图案。'
-        },
-        'manual-filled-region-tip3-strong': {
-            ja: 'パターン変更：',
-            en: 'Pattern Change:',
-            zh: '图案更改：'
-        },
-        'manual-filled-region-note1': {
-            ja: '分割するには、塗り潰し領域が複数の独立したエリア（境界）を含んでいる必要があります。',
-            en: 'To split, the filled region must contain multiple independent areas (boundaries).',
-            zh: '要分割，填充区域必须包含多个独立的区域（边界）。'
-        },
-        'manual-filled-region-note2': {
-            ja: '統合するには、2つ以上の塗り潰し領域を選択する必要があります。',
-            en: 'To merge, 2 or more filled regions must be selected.',
-            zh: '要合并，必须选择2个以上的填充区域。'
-        },
-        'manual-filled-region-note3': {
-            ja: 'エラーが発生した場合、トランザクションが自動ロールバックされ、元の状態に戻ります。',
-            en: 'If an error occurs, the transaction is automatically rolled back to the original state.',
-            zh: '如果发生错误，事务将自动回滚到原始状态。'
-        }
-    };
+translations.filledRegion = {
+    'manual-filled-region-title': {
+        ja: '塗潰し領域 分割・統合',
+        en: 'Filled Region Split / Merge',
+        zh: '填充区域 分割/合并'
+    },
+    'manual-filled-region-subtitle': {
+        ja: '塗潰し領域を個別に分割または1つに統合',
+        en: 'Split filled regions individually or merge them into one',
+        zh: '将填充区域单独分割或合并为一个'
+    },
+    'manual-filled-region-overview': {
+        ja: '複数エリアを持つ塗潰し領域を個別の領域に分割したり、複数の塗潰し領域を1つにまとめたりする機能です。',
+        en: 'A feature that splits filled regions with multiple areas into individual regions, or merges multiple filled regions into one.',
+        zh: '将包含多个区域的填充区域分割为独立区域，或将多个填充区域合并为一个的功能。'
+    },
+    'manual-filled-region-overview-split': {
+        ja: '<strong>分割：</strong>2つ以上のエリア（境界ループ）を持つ塗潰し領域を、エリアごとに独立した領域へ分割します',
+        en: '<strong>Split:</strong> Splits a filled region with two or more areas (boundary loops) into independent regions per area.',
+        zh: '<strong>分割：</strong>将具有两个或更多区域（边界环）的填充区域按区域分割为独立的区域。'
+    },
+    'manual-filled-region-overview-merge': {
+        ja: '<strong>統合：</strong>複数の塗潰し領域を1つの領域にまとめます。重なり合っている領域も、ブーリアン和算で正しく統合されます',
+        en: '<strong>Merge:</strong> Merges multiple filled regions into one. Overlapping regions are correctly merged using Boolean union.',
+        zh: '<strong>合并：</strong>将多个填充区域合并为一个。重叠区域也会通过布尔并集运算正确合并。'
+    },
+    'manual-filled-region-overview-views': {
+        ja: '平面図・断面図・立面図・製図ビューなど、塗潰し領域を作成できるすべてのビューで使用できます。',
+        en: 'Can be used in any view where filled regions can be created, including floor plans, sections, elevations, and drafting views.',
+        zh: '可在所有可创建填充区域的视图中使用，包括平面图、剖面图、立面图和绘图视图。'
+    },
+    'manual-filled-region-feature1': {
+        ja: '選択した領域の状態に応じて分割/統合の可否を自動判定',
+        en: 'Automatically determines whether split/merge is possible based on the selected region state',
+        zh: '根据选定区域的状态自动判断是否可以分割/合并'
+    },
+    'manual-filled-region-feature2': {
+        ja: '分割時は元のパターンを維持',
+        en: 'Original pattern is preserved when splitting',
+        zh: '分割时保留原始图案'
+    },
+    'manual-filled-region-feature3': {
+        ja: '統合時はパターンを自由に選択可能（プロジェクト内の全パターンから選択）',
+        en: 'Pattern can be freely selected when merging (choose from all patterns in the project)',
+        zh: '合并时可自由选择图案（从项目中所有图案中选择）'
+    },
+    'manual-filled-region-feature4': {
+        ja: '選択情報（領域数、エリア数）をリアルタイム表示',
+        en: 'Real-time display of selection info (number of regions, number of areas)',
+        zh: '实时显示选择信息（区域数量、面积数量）'
+    },
+    'manual-filled-region-feature5': {
+        ja: 'エラー時はトランザクション自動ロールバック',
+        en: 'Automatic transaction rollback on error',
+        zh: '出错时自动回滚事务'
+    },
+    'manual-filled-region-prep-intro': {
+        ja: 'コマンド実行前に、ビュー上で塗潰し領域を選択しておきます。',
+        en: 'Before running the command, select filled regions in the view.',
+        zh: '执行命令前，在视图中选择填充区域。'
+    },
+    'manual-filled-region-prep-row1-name': {
+        ja: '<strong>分割</strong>',
+        en: '<strong>Split</strong>',
+        zh: '<strong>分割</strong>'
+    },
+    'manual-filled-region-prep-row1-desc': {
+        ja: '2つ以上のエリアを含む塗潰し領域を1つ選択',
+        en: 'Select one filled region containing two or more areas',
+        zh: '选择包含两个或更多区域的一个填充区域'
+    },
+    'manual-filled-region-prep-row2-name': {
+        ja: '<strong>統合</strong>',
+        en: '<strong>Merge</strong>',
+        zh: '<strong>合并</strong>'
+    },
+    'manual-filled-region-prep-row2-desc': {
+        ja: '統合したい塗潰し領域を2つ以上選択',
+        en: 'Select two or more filled regions to merge',
+        zh: '选择两个或更多要合并的填充区域'
+    },
+    'manual-filled-region-prep-row3-name': {
+        ja: '<strong>両方</strong>',
+        en: '<strong>Both</strong>',
+        zh: '<strong>两者都有</strong>'
+    },
+    'manual-filled-region-prep-row3-desc': {
+        ja: '複数エリアを持つ領域 ＋ 他の領域を混在して選択',
+        en: 'Mix of regions with multiple areas + other regions selected together',
+        zh: '混合选择具有多个区域的填充区域 ＋ 其他区域'
+    },
+    'manual-filled-region-prep-tip': {
+        ja: '💡 事前選択なしでコマンドを実行すると、「塗潰し領域を選択してください」というメッセージが表示されます。',
+        en: '💡 If you run the command without selecting anything in advance, a message "Please select a filled region" will appear.',
+        zh: '💡 如果在未预先选择的情况下运行命令，将显示"请选择填充区域"的消息。'
+    },
+    'manual-filled-region-step1-title': {
+        ja: '対象の塗潰し領域を選択してコマンドを起動',
+        en: 'Select Target Filled Regions and Launch Command',
+        zh: '选择目标填充区域并启动命令'
+    },
+    'manual-filled-region-step1-desc': {
+        ja: 'ビュー上で対象の塗潰し領域を選択してから、リボン「<strong>28 Tools</strong>」タブ →「<strong>注釈・詳細</strong>」パネル →「<strong>領域 分割/統合</strong>」ボタンをクリックします。',
+        en: 'Select the target filled regions in the view, then click the "<strong>Region Split/Merge</strong>" button in the "<strong>Annotation & Detail</strong>" panel under the "<strong>28 Tools</strong>" ribbon tab.',
+        zh: '在视图中选择目标填充区域，然后点击「<strong>28 Tools</strong>」功能区选项卡 →「<strong>注释·详图</strong>」面板 →「<strong>区域 分割/合并</strong>」按钮。'
+    },
+    'manual-filled-region-step2-title': {
+        ja: '操作を選択',
+        en: 'Select Operation',
+        zh: '选择操作'
+    },
+    'manual-filled-region-step2-desc': {
+        ja: 'ダイアログ「<strong>塗潰し領域 分割/統合</strong>」が開きます。',
+        en: 'The "<strong>Filled Region Split/Merge</strong>" dialog will open.',
+        zh: '「<strong>填充区域 分割/合并</strong>」对话框将打开。'
+    },
+    'manual-filled-region-op-row1-name': {
+        ja: '<strong>分割</strong>',
+        en: '<strong>Split</strong>',
+        zh: '<strong>分割</strong>'
+    },
+    'manual-filled-region-op-row1-desc': {
+        ja: '選択した領域を各エリアごとに独立した領域へ分割します（選択した領域が2つ以上のエリアを持つ場合のみ有効）',
+        en: 'Splits the selected region into independent regions per area (only active when the selected region has two or more areas)',
+        zh: '将选定区域按每个面积分割为独立区域（仅当选定区域具有两个或更多面积时有效）'
+    },
+    'manual-filled-region-op-row2-name': {
+        ja: '<strong>統合</strong>',
+        en: '<strong>Merge</strong>',
+        zh: '<strong>合并</strong>'
+    },
+    'manual-filled-region-op-row2-desc': {
+        ja: '選択した複数の領域を1つにまとめます（2つ以上の領域を選択している場合のみ有効）',
+        en: 'Merges multiple selected regions into one (only active when two or more regions are selected)',
+        zh: '将多个选定区域合并为一个（仅当选择了两个或更多区域时有效）'
+    },
+    'manual-filled-region-step2-note': {
+        ja: '選択内容によって有効/無効が自動的に切り替わります。',
+        en: 'Enabled/disabled automatically based on the selection.',
+        zh: '根据选择内容自动切换启用/禁用状态。'
+    },
+    'manual-filled-region-step3-title': {
+        ja: '塗潰しパターンを選択（統合時のみ）',
+        en: 'Select Fill Pattern (Merge only)',
+        zh: '选择填充图案（仅合并时）'
+    },
+    'manual-filled-region-step3-desc': {
+        ja: '「<strong>統合</strong>」を選んだ場合、統合後に使用する<strong>塗潰しパターン</strong>をドロップダウンから選択します。選択した領域がすべて同じパターンを使用している場合、そのパターンがデフォルトで選択されます。',
+        en: 'If you selected "<strong>Merge</strong>", select the <strong>fill pattern</strong> to use after merging from the dropdown. If all selected regions use the same pattern, that pattern is selected by default.',
+        zh: '如果选择了「<strong>合并</strong>」，从下拉菜单中选择合并后使用的<strong>填充图案</strong>。如果所有选定区域使用相同的图案，则默认选择该图案。'
+    },
+    'manual-filled-region-step4-title': {
+        ja: 'OKをクリック',
+        en: 'Click OK',
+        zh: '点击OK'
+    },
+    'manual-filled-region-step4-desc': {
+        ja: '「<strong>OK</strong>」をクリックすると処理が実行されます。処理完了後、作成された領域数がメッセージで表示されます。',
+        en: 'Click "<strong>OK</strong>" to execute. After processing, the number of regions created will be shown in a message.',
+        zh: '点击「<strong>OK</strong>」执行处理。处理完成后，将以消息形式显示创建的区域数量。'
+    },
+    'manual-filled-region-output-split-title': {
+        ja: '分割の場合',
+        en: 'When Splitting',
+        zh: '分割时'
+    },
+    'manual-filled-region-output-split-item1': {
+        ja: '元の塗潰し領域は削除され、エリア数と同じ数の独立した塗潰し領域が作成されます',
+        en: 'The original filled region is deleted and the same number of independent filled regions as areas are created',
+        zh: '原始填充区域被删除，创建与面积数量相同的独立填充区域'
+    },
+    'manual-filled-region-output-split-item2': {
+        ja: '各領域は元と同じ塗潰しパターンを引き継ぎます',
+        en: 'Each region inherits the same fill pattern as the original',
+        zh: '每个区域继承与原始相同的填充图案'
+    },
+    'manual-filled-region-output-merge-title': {
+        ja: '統合の場合',
+        en: 'When Merging',
+        zh: '合并时'
+    },
+    'manual-filled-region-output-merge-item1': {
+        ja: '元のすべての塗潰し領域は削除され、1つの塗潰し領域が作成されます',
+        en: 'All original filled regions are deleted and one filled region is created',
+        zh: '所有原始填充区域被删除，创建一个填充区域'
+    },
+    'manual-filled-region-output-merge-item2': {
+        ja: '重なり合っている領域はブーリアン和算により正しく結合されます（重なり部分が「穴」になりません）',
+        en: 'Overlapping regions are correctly joined using Boolean union (overlapping parts do not become "holes")',
+        zh: '重叠区域通过布尔并集运算正确连接（重叠部分不会变成"孔"）'
+    },
+    'manual-filled-region-output-merge-item3': {
+        ja: '離れた位置にある領域は、1つの領域内の複数エリアとしてまとめられます',
+        en: 'Regions at separate locations are combined as multiple areas within one region',
+        zh: '位于不同位置的区域被合并为一个区域内的多个面积'
+    },
+    'manual-filled-region-usecase1-title': {
+        ja: '仕上げ図面の整理',
+        en: 'Organizing Finish Drawings',
+        zh: '整理装修图'
+    },
+    'manual-filled-region-usecase1-desc': {
+        ja: '複数エリアに分かれた塗潰し領域を個別管理したい場合に、分割して整理できます。',
+        en: 'When you want to manage a filled region with multiple areas individually, you can split and organize them.',
+        zh: '当需要单独管理分为多个区域的填充区域时，可以分割并整理。'
+    },
+    'manual-filled-region-usecase2-title': {
+        ja: 'パターン統一',
+        en: 'Unifying Patterns',
+        zh: '统一图案'
+    },
+    'manual-filled-region-usecase2-desc': {
+        ja: 'バラバラに作成された塗潰し領域を1つに統合し、パターンを統一できます。',
+        en: 'Merge separately created filled regions into one to unify the pattern.',
+        zh: '将分散创建的填充区域合并为一个，统一图案。'
+    },
+    'manual-filled-region-usecase3-title': {
+        ja: '編集の効率化',
+        en: 'Efficient Editing',
+        zh: '提高编辑效率'
+    },
+    'manual-filled-region-usecase3-desc': {
+        ja: '統合することで1つの要素として管理でき、移動や削除などの編集が効率的になります。',
+        en: 'By merging, you can manage as one element, making editing such as moving or deleting more efficient.',
+        zh: '通过合并，可作为一个图元进行管理，使移动、删除等编辑更加高效。'
+    },
+    'manual-filled-region-tip1': {
+        ja: '<strong>自動判定：</strong>選択した領域の状態に応じて、分割・統合の可否がダイアログに自動表示されます。',
+        en: '<strong>Auto Determination:</strong> Whether split/merge is possible is automatically shown in the dialog based on the state of the selected region.',
+        zh: '<strong>自动判断：</strong>根据选定区域的状态，对话框中会自动显示是否可以分割/合并。'
+    },
+    'manual-filled-region-tip2': {
+        ja: '<strong>パターン維持：</strong>分割時は元の塗潰しパターンがそのまま維持されるため、見た目は変わりません。',
+        en: '<strong>Pattern Preserved:</strong> When splitting, the original fill pattern is maintained as-is, so the appearance does not change.',
+        zh: '<strong>保留图案：</strong>分割时，原始填充图案保持不变，外观不会改变。'
+    },
+    'manual-filled-region-tip3': {
+        ja: '<strong>パターン変更：</strong>統合時にパターンを変更できるため、複数領域のパターン一括変更にも活用できます。',
+        en: '<strong>Pattern Change:</strong> You can change the pattern when merging, which can also be used to bulk-change patterns for multiple regions.',
+        zh: '<strong>更改图案：</strong>合并时可以更改图案，也可用于批量更改多个区域的图案。'
+    },
+    'manual-filled-region-note1': {
+        ja: '分割するには、塗潰し領域が複数の独立したエリア（境界）を含んでいる必要があります。',
+        en: 'To split, the filled region must contain multiple independent areas (boundaries).',
+        zh: '要分割，填充区域必须包含多个独立区域（边界）。'
+    },
+    'manual-filled-region-note2': {
+        ja: '統合するには、2つ以上の塗潰し領域を選択する必要があります。',
+        en: 'To merge, you must select two or more filled regions.',
+        zh: '要合并，必须选择两个或更多填充区域。'
+    },
+    'manual-filled-region-note3': {
+        ja: '塗潰し領域はビューに固有の要素のため、<strong>異なるビューの領域を統合することはできません</strong>。同じビュー内の領域のみ統合できます。',
+        en: 'Since filled regions are view-specific elements, <strong>regions from different views cannot be merged</strong>. Only regions within the same view can be merged.',
+        zh: '由于填充区域是视图特定的图元，<strong>无法合并不同视图中的区域</strong>。只能合并同一视图内的区域。'
+    },
+    'manual-filled-region-note4': {
+        ja: 'エラーが発生した場合、トランザクションが自動ロールバックされ、元の状態に戻ります。',
+        en: 'If an error occurs, the transaction is automatically rolled back and the state returns to its original.',
+        zh: '如果发生错误，事务会自动回滚，状态恢复到原始状态。'
+    },
+    'manual-filled-region-trouble1-title': {
+        ja: '「塗潰し領域を選択してください」と表示される',
+        en: '"Please select a filled region" message appears',
+        zh: '显示"请选择填充区域"'
+    },
+    'manual-filled-region-trouble1-item1': {
+        ja: 'ビュー上で塗潰し領域（FilledRegion）を選択してからコマンドを実行してください',
+        en: 'Select a filled region (FilledRegion) in the view before running the command',
+        zh: '在视图中选择填充区域（FilledRegion）后再运行命令'
+    },
+    'manual-filled-region-trouble1-item2': {
+        ja: '塗潰し領域以外の要素（壁・床など）のみを選択している場合も同じメッセージが表示されます',
+        en: 'The same message also appears when only non-filled-region elements (walls, floors, etc.) are selected',
+        zh: '当仅选择非填充区域图元（墙、楼板等）时，也会显示相同的消息'
+    },
+    'manual-filled-region-trouble2-title': {
+        ja: '「分割」がグレーアウトして選択できない',
+        en: '"Split" is grayed out and cannot be selected',
+        zh: '"分割"显示为灰色无法选择'
+    },
+    'manual-filled-region-trouble2-item1': {
+        ja: '選択した領域が<strong>エリアを1つしか持っていない</strong>場合、分割はできません',
+        en: 'If the selected region <strong>has only one area</strong>, it cannot be split',
+        zh: '如果选定的区域<strong>只有一个面积</strong>，则无法分割'
+    },
+    'manual-filled-region-trouble2-item2': {
+        ja: '複数のエリアを持つ塗潰し領域（2つ以上の境界ループを含む領域）を選択してください',
+        en: 'Select a filled region with multiple areas (a region containing two or more boundary loops)',
+        zh: '请选择具有多个面积的填充区域（包含两个或更多边界环的区域）'
+    },
+    'manual-filled-region-trouble3-title': {
+        ja: '「統合」がグレーアウトして選択できない',
+        en: '"Merge" is grayed out and cannot be selected',
+        zh: '"合并"显示为灰色无法选择'
+    },
+    'manual-filled-region-trouble3-item1': {
+        ja: '<strong>1つの領域しか選択していない</strong>場合、統合はできません',
+        en: 'If <strong>only one region is selected</strong>, merge is not possible',
+        zh: '如果<strong>只选择了一个区域</strong>，则无法合并'
+    },
+    'manual-filled-region-trouble3-item2': {
+        ja: '2つ以上の塗潰し領域を複数選択してください',
+        en: 'Please select two or more filled regions',
+        zh: '请选择两个或更多填充区域'
+    },
+    'manual-filled-region-trouble4-title': {
+        ja: '異なるビューの塗潰し領域を統合したい',
+        en: 'Want to merge filled regions from different views',
+        zh: '想合并不同视图中的填充区域'
+    },
+    'manual-filled-region-trouble4-item1': {
+        ja: '塗潰し領域はビューに固有の要素のため、<strong>異なるビューの領域を統合することはできません</strong>',
+        en: 'Since filled regions are view-specific elements, <strong>regions from different views cannot be merged</strong>',
+        zh: '由于填充区域是视图特定的图元，<strong>无法合并不同视图中的区域</strong>'
+    },
+    'manual-filled-region-trouble4-item2': {
+        ja: '同じビュー内の領域のみ統合できます',
+        en: 'Only regions within the same view can be merged',
+        zh: '只能合并同一视图内的区域'
+    },
+    'manual-filled-region-trouble5-title': {
+        ja: '統合後に意図しない形状になる',
+        en: 'Unexpected shape after merging',
+        zh: '合并后出现意外形状'
+    },
+    'manual-filled-region-trouble5-item1': {
+        ja: '重なり合っていない領域を統合した場合、複数エリアを持つ1つの領域になります。見た目には変化がない場合があります',
+        en: 'If non-overlapping regions are merged, they become one region with multiple areas. The appearance may not change.',
+        zh: '如果合并不重叠的区域，它们将成为具有多个面积的一个区域。外观可能不会改变。'
+    },
+    'manual-filled-region-trouble5-item2': {
+        ja: 'ブーリアン和算の処理に失敗した場合、通常の複数ループ統合にフォールバックします',
+        en: 'If Boolean union processing fails, it falls back to standard multi-loop merging',
+        zh: '如果布尔并集处理失败，则退回到标准的多环合并'
+    },
+    'manual-filled-region-related-fire': {
+        ja: '耐火被覆色分け',
+        en: 'Fire Protection Coloring',
+        zh: '耐火覆盖颜色标注'
+    },
+    'manual-filled-region-related-fire-desc': {
+        ja: ' — 梁・柱の耐火被覆範囲を塗潰し領域で色分け表示',
+        en: ' — Color-code beam and column fire protection range using filled regions',
+        zh: ' — 用填充区域颜色标注梁和柱的耐火覆盖范围'
+    }
+};
 
     // ========================================
     // fire-protection.html (耐火被覆色分け)
@@ -5997,6 +7358,7 @@ function initTranslations() {
         translations.roomTag,
         translations.beamBottomColor,
         translations.beamTopColor,
+        translations.beamLevelColor,
         translations.excelExport,
         translations.excelImport,
         translations.filledRegion,
