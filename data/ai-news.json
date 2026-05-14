@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T04:44:56.818632",
+  "lastUpdated": "2026-05-14T04:44:16.245929",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -32,6 +32,72 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Were_launching_two_TPUs_social.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "AI chatbots are giving out people’s real phone numbers",
+      "titleJa": "AI チャットボットが人々の実際の電話番号を公開している",
+      "link": "https://www.technologyreview.com/2026/05/13/1137203/ai-chatbots-are-giving-out-peoples-real-phone-numbers/",
+      "description": "People report that their personal contact info was surfaced by Google AI—and there’s apparently no easy way to prevent it.&#160; A Redditor recently wrote that he was “desperate for help”: for about a...",
+      "publishedDate": "Wed, 13 May 2026 18:09:03 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/Cropped_Paybox-Account-Reset-Without-Phone-Google-Gemini-2.jpg",
+      "language": "en"
+    },
+    {
+      "title": "The Download: making drugs in orbit and NASA’s nuclear-powered spacecraft",
+      "titleJa": "ダウンロード: 軌道上での薬物製造と NASA の原子力宇宙船",
+      "link": "https://www.technologyreview.com/2026/05/13/1137176/the-download-drugs-in-orbit-nasa-nuclear-spacecraft/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A plan to make drugs in orbit is going commercial ...",
+      "publishedDate": "Wed, 13 May 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/06/Comp-13YS.jpg?w=2400",
+      "language": "en"
+    },
+    {
+      "title": "Building a safe, effective sandbox to enable Codex on Windows",
+      "titleJa": "Windows で Codex を有効にするための安全で効果的なサンドボックスを構築する",
+      "link": "https://openai.com/index/building-codex-windows-sandbox",
+      "description": "Learn how OpenAI built a secure sandbox for Codex on Windows, enabling safe, efficient coding agents with controlled file access and network restrictions....",
+      "publishedDate": "Wed, 13 May 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "A plan to make drugs in orbit is going commercial",
+      "titleJa": "軌道上で医薬品を製造する計画が商業化される",
+      "link": "https://www.technologyreview.com/2026/05/13/1137153/varda-united-therapeutics-drug-manufacturing-in-space/",
+      "description": "Varda Space Industries, a startup that’s been pitching its ability to perform drug experiments in space, says it has signed up the pharmaceutical company United Therapeutics in what may be remembered ...",
+      "publishedDate": "Wed, 13 May 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/260511-drug-manufacturing-space-hero.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "【5月21日 渋谷開催】生成AIの「いま」を語る！トークセッション＆交流会",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/20260521-talksession-networkingevent/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年5月21日（木）19時から生成AIのトレンドや社内事例に関するトークセッションおよび交流会を開催します。 イベント概要 「 [...] The post 【5月21日 渋谷開催】生成AIの「いま」を語る！トークセッション＆交流会 first appeared on AIポータルメディアAIsmiley...",
+      "publishedDate": "Wed, 13 May 2026 05:00:32 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/cover-4pOFE1z5IXLLR9gK1LBEDHLYG2S9onSG.png",
+      "language": "ja"
+    },
+    {
+      "title": "Our response to the TanStack npm supply chain attack",
+      "titleJa": "TanStack npm サプライ チェーン攻撃に対する当社の対応",
+      "link": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
+      "description": "OpenAI details its response to the TanStack “Mini Shai-Hulud” supply chain attack, outlines protections taken to secure systems and signing certificates, and explains why macOS users must update OpenA...",
+      "publishedDate": "Wed, 13 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/5sVkleeWkpnumrq0G1UkIW/138a18ce1af4678fc72e12fe691f3ad8/Frame-1.png?w=1600&amp;h=900&amp;fit=fill",
       "language": "en"
     },
     {
@@ -288,17 +354,6 @@
       "language": "ja"
     },
     {
-      "title": "How NVIDIA engineers and researchers build with Codex",
-      "titleJa": "NVIDIA のエンジニアと研究者が Codex を使用して構築する方法",
-      "link": "https://openai.com/index/nvidia",
-      "description": "Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments....",
-      "publishedDate": "Tue, 12 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "What Parameter Golf taught us about AI-assisted research",
       "titleJa": "Parameter Golf が AI 支援研究について教えてくれたこと",
       "link": "https://openai.com/index/what-parameter-golf-taught-us",
@@ -317,7 +372,18 @@
       "publishedDate": "Tue, 12 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/71SMEQAS8V26jHdprPQzoo/b3f8e1bb52044650161982fd76b70ab0/oai_AutoScout24_SEO.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "How NVIDIA engineers and researchers build with Codex",
+      "titleJa": "NVIDIA のエンジニアと研究者が Codex を使用して構築する方法",
+      "link": "https://openai.com/index/nvidia",
+      "description": "Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments....",
+      "publishedDate": "Tue, 12 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -409,61 +475,6 @@
       "language": "en"
     },
     {
-      "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
-      "titleJa": "GPT-5.5 および GPT-5.5-Cyber​​ によるサイバー向けの信頼されたアクセスの拡張",
-      "link": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
-      "description": "OpenAI expands Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber, helping verified defenders accelerate vulnerability research and protect critical infrastructure....",
-      "publishedDate": "Thu, 07 May 2026 13:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/5JZQQtfzupvQaPZWeiyQJZ/77ed8a3e6c75c12b4a5a50b33b5ae8fd/seo-card-trusted-access.png?w=1600&amp;h=900&amp;fit=fill",
-      "language": "en"
-    },
-    {
-      "title": "Parloa builds service agents customers want to talk to",
-      "titleJa": "Parloa は顧客が相談したいサービスエージェントを構築します",
-      "link": "https://openai.com/index/parloa",
-      "description": "Parloa leverages OpenAI models to power scalable, voice-driven AI customer service agents, enabling enterprises to design, simulate, and deploy reliable, real-time interactions....",
-      "publishedDate": "Thu, 07 May 2026 11:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Advancing voice intelligence with new models in the API",
-      "titleJa": "API の新しいモデルによる音声インテリジェンスの進化",
-      "link": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
-      "description": "Explore new realtime voice models in the OpenAI API that can reason, translate, and transcribe speech, enabling more natural and intelligent voice experiences....",
-      "publishedDate": "Thu, 07 May 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Introducing Trusted Contact in ChatGPT",
-      "titleJa": "ChatGPT の信頼できる連絡先の導入",
-      "link": "https://openai.com/index/introducing-trusted-contact-in-chatgpt",
-      "description": "Introducing Trusted Contact in ChatGPT, an optional safety feature that notifies someone you trust if serious self-harm concerns are detected....",
-      "publishedDate": "Thu, 07 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Testing ads in ChatGPT",
-      "titleJa": "ChatGPT での広告のテスト",
-      "link": "https://openai.com/index/testing-ads-in-chatgpt",
-      "description": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control....",
-      "publishedDate": "Thu, 07 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/21TdmlEzFwgoo7ZER7SNCV/001b3d542fd4d025a2dcd1a5ab9417fe/OAI_AdsTest_Blog_OpenGraph_1200x630.png?w=1600&amp;h=900&amp;fit=fill",
-      "language": "en"
-    },
-    {
       "title": "Claude APIとは？使い方・料金・モデルの違いを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/claude-api/",
@@ -494,17 +505,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/smbc-sakana.png",
-      "language": "ja"
-    },
-    {
-      "title": "ウェルモとコマースフォース、介護領域のAI・DX推進を目的に資本業務提携を開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/welmo-commerceforce-partnership/",
-      "description": "ウェルモとコマースフォースは、介護における日用品や消費財、食品領域のAI・DX推進を目的とした資本業務提携を発表しました。本提携により「介護AI接客エージェント」を共同開発し、介護業界ECにおける購買体験の高度化を図りま [...] The post ウェルモとコマースフォース、介護領域のAI・DX推進を目的に資本業務提携を開始 first appeared on AIポータルメディアAIsmil...",
-      "publishedDate": "Mon, 11 May 2026 07:19:53 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/welmo-commerceforce-partnership.png",
       "language": "ja"
     },
     {
@@ -549,6 +549,28 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/grok-connectors_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Node.js、Dateに代わる日時処理「Temporal」がデフォルト有効化。TemporalはChrome/Edge/Firefox/Node.jsで利用可能に",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/nodejsdatetemporaltemporalchromeedgefirefoxnodejs.html",
+      "description": "JavaScriptランタイム「Node.js」の最新バージョンとなる「Node.js 26」正式版がリリースされました。 Node.js 26では、これまでJavaScriptにおいて日付処理に使われてきたDateに代わる新たなAPIとし......",
+      "publishedDate": "2026-05-13T15:49:36Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/nodejs26ga.png",
+      "language": "ja"
+    },
+    {
+      "title": "AIを高速にするPythonライクな新言語「Mojo」、ベータ版に到達",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/aipythonmojo.html",
+      "description": "Modular社は、AIを高速に実行することを目指したPythonライクな新言語「Mojo」のベータ版公開を発表しました。今後数カ月以内に正式版が登場する予定です。 Mojo 1.0 is in beta! Beta 1 marks th......",
+      "publishedDate": "2026-05-13T15:48:40Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/FKPNuXLe.jpg",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/vercel-wterm-ossrelease.png",
-      "language": "ja"
-    },
-    {
-      "title": "Rust製ブラウザエンジンのServo、Rust公式レジストリ「Crates.io」でリリース開始。長期サポート版も提供へ",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/rustservorustcratesio.html",
-      "description": "Linux Foundation傘下で独自のRust製ブラウザエンジンとして開発が進められているServoは、Rust公式のパッケージレジストリである「Crates.io」でバージョン0.1.0のリリースを開始したと明らかにしました。 Se......",
-      "publishedDate": "2026-04-20T15:15:50Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/servo010-cratesio-release.png",
-      "language": "ja"
-    },
-    {
-      "title": "Cloudflare、AIエージェント用のファイルシステム「Cloudflare Artifacts」発表。Git対応バージョン管理とRESTful API対応のファイルシステム",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/cloudflareaicloudflare_artifactsgitrestful_api.html",
-      "description": "Cloudflareは、AIエージェントのためのファイルシステム「Cloudflare Arttfacts」をプライベートベータとして発表しました。 We’ve just launched Artifacts: Git-compatible......",
-      "publishedDate": "2026-04-19T15:41:28Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/aM1upsBS.jpg",
       "language": "ja"
     }
   ]
