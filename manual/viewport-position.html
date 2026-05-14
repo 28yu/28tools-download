@@ -59,60 +59,73 @@
                 <img src="../images/revit-icons/viewport_copy.png" alt="Viewport Position Icon" class="feature-icon">
             </div>
             <h1 class="manual-title" data-lang-key="manual-viewport-position-title">ビューポート位置コピペ</h1>
-            <p class="manual-subtitle" data-lang-key="manual-viewport-position-subtitle">シート上のビューポート位置をコピー＆ペースト</p>
+            <p class="manual-subtitle">シート上のビューポート位置をコピー＆ペースト</p>
         </div>
 
         <!-- 機能概要 -->
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
             <div class="content-box">
-                <p data-lang-key="manual-viewport-position-overview">
-                    この機能は、シート上に配置されたビューポートの位置（X座標・Y座標）を別のシートのビューポートにコピーできます。複数のシートで同じレイアウトを使用したい場合に、手動で位置合わせする手間を省くことができます。
+                <p>
+                    シート上のビューポート位置をコピーして、他のシートの同名ビューポートに自動的に貼り付ける機能です。複数のシートで同じビュー（例: 各階の平面図）を同じ位置に揃えたいときに便利です。
                 </p>
+                <ul style="margin-top: 12px;">
+                    <li>シート上のビューポートの位置を記録し、<strong>ビュー名が一致するビューポート</strong>を他のシートで同じ位置に配置します</li>
+                    <li>複数のシートに続けてペーストするだけで、全シートのビューポート位置を一括で揃えられます</li>
+                </ul>
             </div>
+        </section>
+
+        <!-- 使用シーン -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-usecases">使用シーン</h2>
+            <table class="info-table">
+                <thead>
+                    <tr>
+                        <th>シーン</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>各階の平面図を同じ位置に揃えたい</td>
+                        <td>1F平面図のVP位置をコピーし、2F・3F…のシートに順番にペースト</td>
+                    </tr>
+                    <tr>
+                        <td>改訂でシートを作り直した</td>
+                        <td>元シートからVP位置をコピーして新シートに貼り付け</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <!-- 使い方 -->
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
-            
+
             <div class="step-box">
                 <div class="step-number">1</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-viewport-position-step1-title">コピー元のシートを開く</h3>
-                    <p data-lang-key="manual-viewport-position-step1-desc">
-                        位置をコピーしたいビューポートが配置されているシートを開きます。
-                    </p>
+                    <h3>ビューポート位置をコピー</h3>
+                    <ol>
+                        <li>基準となるビューポートが配置された<strong>シートを開く</strong></li>
+                        <li>リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>VP位置コピー</strong>」をクリック</li>
+                        <li>シート上の<strong>基準ビューポートをクリック</strong>して選択</li>
+                    </ol>
+                    <p style="margin-top: 8px;">ビューポートの位置情報（ビュー名と座標）がメモリに保存されます。</p>
                 </div>
             </div>
 
             <div class="step-box">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-viewport-position-step2-title">ビューポートを選択してコピー</h3>
-                    <p data-lang-key="manual-viewport-position-step2-desc">
-                        対象のビューポートを選択し、Revitリボンの「28 Tools」タブから「ビューポート位置コピー」ボタンをクリックします。ビューポートの位置情報がメモリにコピーされます。
-                    </p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-viewport-position-step3-title">ペースト先のシートを開く</h3>
-                    <p data-lang-key="manual-viewport-position-step3-desc">
-                        位置を適用したいビューポートが配置されているシートを開きます。
-                    </p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-viewport-position-step4-title">ビューポートを選択してペースト</h3>
-                    <p data-lang-key="manual-viewport-position-step4-desc">
-                        対象のビューポートを選択し、「28 Tools」タブから「ビューポート位置ペースト」ボタンをクリックします。コピーした位置が選択したビューポートに適用されます。
-                    </p>
+                    <h3>ビューポート位置をペースト</h3>
+                    <ol>
+                        <li>位置を合わせたい<strong>別のシートを開く</strong></li>
+                        <li>リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>VP位置ペースト</strong>」をクリック</li>
+                    </ol>
+                    <p style="margin-top: 8px;">コピーしたビューポートと<strong>ビュー名が一致するビューポート</strong>が自動的に同じ位置に移動します。</p>
+                    <p style="margin-top: 8px;">💡 ペーストは何度でも繰り返せます。シートを切り替えながらペーストするだけで、全シートを揃えられます。</p>
                 </div>
             </div>
 
@@ -122,81 +135,52 @@
             </div>
         </section>
 
-        <!-- 活用シーン -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-usecases">活用シーン</h2>
-            <div class="usecase-grid">
-                <div class="usecase-card">
-                    <div class="usecase-icon">📏</div>
-                    <h3 data-lang-key="manual-viewport-position-usecase1-title">レイアウトの統一</h3>
-                    <p data-lang-key="manual-viewport-position-usecase1-desc">
-                        複数のシートで同じレイアウトを使用することで、図面セットの統一感を保てます。
-                    </p>
-                </div>
-                <div class="usecase-card">
-                    <div class="usecase-icon">📚</div>
-                    <h3 data-lang-key="manual-viewport-position-usecase2-title">シリーズ図面の作成</h3>
-                    <p data-lang-key="manual-viewport-position-usecase2-desc">
-                        各階平面図など、同じレイアウトで内容が異なる図面を効率的に作成できます。
-                    </p>
-                </div>
-                <div class="usecase-card">
-                    <div class="usecase-icon">⏱️</div>
-                    <h3 data-lang-key="manual-viewport-position-usecase3-title">時間短縮</h3>
-                    <p data-lang-key="manual-viewport-position-usecase3-desc">
-                        ビューポートの位置調整を手動で繰り返す必要がなくなります。
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tips -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-tips">Tips</h2>
-            <div class="tips-box">
-                <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-viewport-position-tip1">
-                        <strong data-lang-key="manual-viewport-position-tip1-strong">相対位置：</strong>シート上の図枠の基準点からの相対位置がコピーされます。
-                    </p>
-                </div>
-                <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-viewport-position-tip2">
-                        <strong data-lang-key="manual-viewport-position-tip2-strong">標題栏大小差異：</strong>異なるサイズの図枠間でもコピー可能ですが、位置がずれる場合があります。
-                    </p>
-                </div>
-                <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-viewport-position-tip3">
-                        <strong data-lang-key="manual-viewport-position-tip3-strong">位置のみ：</strong>ビューポートのサイズや回転角度はコピーされません。位置情報のみが対象です。
-                    </p>
-                </div>
-            </div>
-        </section>
-
         <!-- 注意事項 -->
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-notes">注意事項</h2>
             <div class="notes-box warning">
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-viewport-position-note1">
-                        この機能はシート上のビューポート専用です。ビュー内では使用できません。
-                    </p>
+                    <p>ビューポートの<strong>サイズ・スケールは変更されません</strong>。位置のみコピーされます</p>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-viewport-position-note2">
-                        ビューポート位置コピー後にRevitを閉じると、コピーした位置情報は失われます。
-                    </p>
+                    <p>ビュー名が<strong>完全一致</strong>するビューポートのみが移動対象です</p>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-viewport-position-note3">
-                        ビューポートが選択されていない状態でペーストしようとすると、エラーメッセージが表示されます。
-                    </p>
+                    <p>コピーした情報は<strong>Revitを閉じると消えます</strong>（セッション内のみ有効）</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- トラブルシューティング -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-troubleshooting">トラブルシューティング</h2>
+            <div class="notes-box warning">
+                <div class="note-item">
+                    <span class="note-icon">⚠️</span>
+                    <div>
+                        <strong>ペーストしてもビューポートが動かない</strong>
+                        <ul style="margin-top: 4px;">
+                            <li>コピー時に選択したビューポートの<strong>ビュー名</strong>と、ペースト先シートのビューポートのビュー名が一致しているか確認してください</li>
+                            <li>「<strong>VP位置コピー</strong>」を先に実行しているか確認してください</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 関連機能 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-related">関連機能</h2>
+            <div class="content-box">
+                <ul>
+                    <li><a href="view-copy.html">3Dビュー視点 コピー＆ペースト</a> — 3Dビューのカメラ位置・向きをコピー</li>
+                    <li><a href="sectionbox-copy.html">切断ボックス コピー＆ペースト</a> — 3Dビューのセクションボックス範囲をコピー</li>
+                    <li><a href="cropbox-copy.html">トリミング領域 コピー＆ペースト</a> — ビューのトリミング領域をコピー</li>
+                    <li><a href="sheet-creation.html">シート一括作成</a> — 複数シートをまとめて作成</li>
+                </ul>
             </div>
         </section>
 
