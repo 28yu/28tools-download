@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T02:14:42.081332",
+  "lastUpdated": "2026-05-14T02:26:08.048341",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -10,6 +10,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "建設業の”紙・FAX・Excel”はなぜなくならないのか─ 資材リース業の構造的課題",
+      "link": "https://news.build-app.jp/article/40519/",
+      "description": "株式会社Leach（本社：東京都、代表取締役CEO：冨永拓也、以下「当社」）は、資材リース業向けAI業務システム「BuildOS（ビルドオー......",
+      "publishedDate": "Wed, 13 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/01/JLL400eENskfi9j1672979627_1672979670-130x82.jpg",
+      "language": "ja"
     },
     {
       "title": "東大卒4割のAIスタートアップが建設業を変える──燈、創業5年で評価額1000億円の衝撃",
@@ -32,16 +42,6 @@
       "language": "en"
     },
     {
-      "title": "帝国不動産、国交省「建築GX・DX推進事業」を活用し協力事業者を含めたBIM実務運用を強化",
-      "link": "https://news.build-app.jp/article/40516/",
-      "description": "帝国不動産株式会社（本社：東京都中央区銀座、代表取締役社長：木本 啓紀、以下「帝国不動産」）は、国土交通省が推進する「建築GX・DX推進事業......",
-      "publishedDate": "Tue, 12 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/11/AdobeStock_606135704-130x73.jpeg",
-      "language": "ja"
-    },
-    {
       "title": "東京の超高層で華やぐ投機の宴｜「億ション」ブームが照らし出す住宅金融化のカラクリ",
       "link": "https://news.build-app.jp/article/40024/",
       "description": "東京の不動産市場で進行する静かな革命は、住居という概念そのものを書き換えつつある。1億円超のマンション、通称「億ション」の急増は、単なる富裕......",
@@ -49,6 +49,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/20260513_hirayama-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "帝国不動産、国交省「建築GX・DX推進事業」を活用し協力事業者を含めたBIM実務運用を強化",
+      "link": "https://news.build-app.jp/article/40516/",
+      "description": "帝国不動産株式会社（本社：東京都中央区銀座、代表取締役社長：木本 啓紀、以下「帝国不動産」）は、国土交通省が推進する「建築GX・DX推進事業......",
+      "publishedDate": "Tue, 12 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/11/AdobeStock_606135704-130x73.jpeg",
       "language": "ja"
     },
     {
@@ -109,16 +119,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/06/1OuYEyS3UA1hSiU1654610254_1654610274-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "イ準耐火とは？｜ロ準耐との違い・木造3階で必要になる条件を実務ベースで解説",
-      "link": "https://news.build-app.jp/article/40512/",
-      "description": "木造3階や店舗併用住宅の計画では「イ準耐」が必要になることが多い一方で、ロ準耐との違いや必要条件で迷う方も少なくないでしょう。特に準防火地域......",
-      "publishedDate": "Thu, 07 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/bdb55b998ff4315b116a66a4fdca3f4a-130x82.png",
       "language": "ja"
     },
     {
