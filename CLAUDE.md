@@ -653,3 +653,167 @@ sed -n '166,171p;488,490p;529,531p' css/manual.css
 **重要**:
 - `body.manual-page` を持つページは `manual.css` のスタイルが適用される
 - `manual.css` のスタイルは `!important` を多用しており、`style.css` を上書きする
+
+---
+
+## 2026/05 セッションで得た知見
+
+### GitHub UI からの PNG アップロードによる破損問題（重要）
+
+**症状**: GitHub の Web UI から PNG ファイルをコミット（"Add files via upload"）すると、まれに**バイナリ構造が破損する**ことがある。
+- ブラウザで開くと「データが壊れています」とエラー
+- `file` コマンドや見た目のヘッダーチェックは通過する（先頭の `\x89PNG` 署名は正常）
+- HTTP ステータスは 200 で配信される
+
+**具体的な破損パターン**: `pHYs` チャンク直後（オフセット 54）に **4 バイトの `\x00\x00\x00\x00`** が挿入され、IDAT チャンクのヘッダー位置がずれる。
+
+**検出方法**:
+```bash
+python3 << 'EOF'
+import struct, glob
+for p in sorted(glob.glob('images/revit-icons/*.png')):
+    with open(p,'rb') as f: data = f.read()
+    # IDAT が標準位置（58）にあるはず → 62 にあれば破損
+    if data.find(b'IDAT') != 58:
+        print(f'CORRUPT: {p} (IDAT at offset {data.find(b"IDAT")})')
+EOF
+```
+
+**修復方法**: 4 バイトの余分なゼロを削除すれば全 CRC が一致し、PNG として有効になる（ロスレス）。ただし最も簡単なのは**ローカルで再生成して再アップロード**すること。
+
+**教訓**:
+- 新規 PNG をデプロイした後は本番で必ず表示確認
+- `file` コマンドはチャンク構造を検証しないため信頼しない
+- `PIL.Image.verify()` や `pngcheck` でデコード可能か確認するのが確実
+- GitHub UI 直接アップロードよりも、`git push` 経由が安全
+
+### 多言語化の実装ガイド
+
+#### 翻訳キーが反映される条件
+**`data-lang-key` 属性は翻訳されるすべての要素に個別に必要**。特に見落としやすい箇所：
+- 表のセル `<td>`（列ヘッダー `<th>` だけでは中身は翻訳されない）
+- 強調用 `<strong>` の親要素と `<strong>` 両方
+- `<code>` のように装飾要素を含むテキスト
+
+**新規ページの翻訳追加チェックリスト**:
+1. すべての可視テキスト要素に `data-lang-key` を追加
+2. 表は **`<th>` も `<td>` も全セル**に lang-key を付与
+3. `js/main.js` に `translations.{pageName}` ブロックを追加
+4. ブロックの末尾を含めて `Object.assign(translations, ...)` のリストに登録
+5. 検証コマンドで漏れを確認：
+   ```bash
+   python3 -c "
+   import re
+   src = open('js/main.js').read()
+   defined = set(m.group(1) for m in re.finditer(r\"^\s*'([a-z][a-z0-9-]*)':\s*\{\s*\n\s*ja:\", src, re.M))
+   for f in ['manual/your-page.html']:
+       keys = set(re.findall(r'data-lang-key=\"([^\"]+)\"', open(f).read()))
+       missing = keys - defined
+       print(f'{f}: missing {len(missing)}', sorted(missing))
+   "
+   ```
+
+#### 翻訳文字列内の HTML タグ
+**`js/main.js` の `updateAllContent()`** は、翻訳文字列に HTML タグ（`<strong>`, `<code>` など）が含まれる場合、自動的に `innerHTML` で挿入する仕様にしてある（2026/05〜）。
+
+そのため md の `**太字**` を再現したい場合：
+```js
+ja: '<strong>プロジェクト全体</strong> — モデル内の全要素を対象'
+```
+このように `<strong>` を埋め込めば、テキストとしてではなく**太字として描画される**。
+
+レガシーパターン（既存の tip スタイル）として、親 `<p>` と子 `<strong>` の両方に `data-lang-key` が付いている場合は、専用の合成ロジックが動作する。新規追加ではこちらは避け、上記の HTML 埋め込みパターンを使う方がシンプル。
+
+#### 共有翻訳キー一覧
+新ページ作成時はまず以下の既存共有キーを使う（重複定義しない）：
+
+**セクション見出し** (`translations.sections`):
+- `section-overview`（機能概要）
+- `section-key-features`（主な特徴）
+- `section-supported-views`（実行できるビュー）
+- `section-preparation`（実行前の準備）
+- `section-usage`（使い方／実行手順）
+- `section-output`（出力結果）
+- `section-deliverables`（出力される成果物）
+- `section-logic`（計算ロジック）
+- `section-rerun`（再実行・上書きについて）
+- `section-usecases`（活用シーン）
+- `section-tips`（Tips）
+- `section-notes`（注意事項）
+- `section-troubleshooting`（トラブルシューティング）
+- `section-faq`（よくある質問）
+- `section-related`（関連機能）
+- `section-related-links`（関連リンク）
+
+**テーブル列ヘッダー**:
+- `table-col-view-type`（ビュー種別）
+- `table-col-supported`（対応）
+- `table-col-behavior`（動作）
+- `table-col-execution`（実行）
+- `table-col-note`（備考）
+- `table-col-item`（項目）
+- `table-col-content`（内容）
+- `table-col-symptom`（症状）
+- `table-col-action`（対処）
+- `table-col-member`（部位）
+- `table-col-revit-category`（Revit カテゴリ）
+
+**共通操作**:
+- `back-to-home`（← ホームに戻る）
+- `image-placeholder-text`（📷 スクリーンショット画像をここに追加予定）
+- `breadcrumb-home` / `breadcrumb-addins`（パンくず）
+- `footer-*`（フッター各種）
+
+### マニュアルページ用 CSS（追加済み）
+
+`css/manual.css` に追加した汎用クラス：
+
+- **`.info-table`** — 情報テーブル（行 hover、列ヘッダー薄青、偶数行薄グレー）
+- **`.prep-list`** — 番号付き準備リスト（青丸の連番バッジ）
+
+新規マニュアルページで表や手順を書くときはこれらを使うとデザインが統一される。
+
+### 新規マニュアルページのテンプレート構成
+
+`beam-top-color.html` をベースとし、必要に応じて以下のセクションを追加：
+
+```
+1. パンくず (breadcrumb)
+2. 機能タイトル (manual-header)
+3. 機能概要 (section-overview)
+4. 主な特徴 (section-key-features)
+5. 実行できるビュー (section-supported-views) ← info-table
+6. 実行前の準備 (section-preparation) ← prep-list
+7. 使い方／実行手順 (section-usage) ← step-box × N
+8. 出力結果／成果物 (section-output / section-deliverables)
+9. 計算ロジック (section-logic)  ※必要に応じて
+10. 再実行・上書き (section-rerun)  ※必要に応じて
+11. 活用シーン (section-usecases) ← usecase-grid
+12. Tips (section-tips) ← tips-box
+13. 注意事項 (section-notes) ← notes-box warning
+14. よくある質問 (section-faq)  ※必要に応じて
+15. トラブルシューティング (section-troubleshooting)
+16. 関連機能／関連リンク (section-related / section-related-links)
+17. ナビゲーション (manual-navigation)
+18. フッター + SNSシェアボタン
+```
+
+### 2026/05 追加ページ
+
+| ファイル | 機能名 | 翻訳ブロック |
+|---------|-------|------------|
+| `manual/fire-protection.html` | 耐火被覆色分け | `translations.fireProtection` |
+| `manual/formwork-calculator.html` | 型枠数量算出 | `translations.formwork` |
+| `images/revit-icons/fire_protection.png` | 耐火被覆アイコン | — |
+| `images/revit-icons/formwork.png` | 型枠アイコン | — |
+
+`addins.html` の機能一覧グリッドに対応するカード（`feature-fire-protection-*` / `feature-formwork-*` キー）を追加済み。`sitemap.xml` にも登録済み（25ページ構成に増加）。
+
+### Revit アイコン名の規則
+
+`images/revit-icons/` のアイコンは **小文字 + アンダースコア**（`_32` サフィックスなし）。2026/05 にリネーム済み：
+- ❌ 旧: `sheet_creation_32.png`
+- ✅ 新: `sheet_creation.png`
+
+新しいアドイン機能を追加する際は、この命名規則に従う。
+
