@@ -172,13 +172,13 @@
             <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
 
             <!-- 梁天端色分け -->
-            <h3 style="font-size: 1.1rem; margin: 24px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--blueprint-blue);">梁天端色分け</h3>
+            <h3 style="font-size: 1.1rem; margin: 24px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--blueprint-blue);" data-lang-key="manual-beam-level-top-section-title">梁天端色分け</h3>
 
             <div class="step-box">
                 <div class="step-number">1</div>
                 <div class="step-content">
-                    <h3>コマンド起動</h3>
-                    <p>
+                    <h3 data-lang-key="manual-beam-level-top-step1-title">コマンド起動</h3>
+                    <p data-lang-key="manual-beam-level-top-step1-desc">
                         平面ビューまたは構造伏図をアクティブにして「<strong>梁天端色分け</strong>」をクリックします。
                     </p>
                 </div>
@@ -187,7 +187,7 @@
             <div class="step-box">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3>STEP 1 — 基本設定</h3>
+                    <h3 data-lang-key="manual-beam-level-top-step2-title">STEP 1 — 基本設定</h3>
                     <table class="info-table" style="margin-top: 12px;">
                         <thead>
                             <tr>
@@ -197,12 +197,12 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>参照レベル</strong></td>
-                                <td>ビューの GenLevel（自動取得・変更不可）</td>
+                                <td data-lang-key="manual-beam-level-top-setting-row1-name"><strong>参照レベル</strong></td>
+                                <td data-lang-key="manual-beam-level-top-setting-row1-desc">ビューの GenLevel（自動取得・変更不可）</td>
                             </tr>
                             <tr>
-                                <td><strong>文字タイプ</strong></td>
-                                <td>ラベルに使用するテキストタイプを選択</td>
+                                <td data-lang-key="manual-beam-level-top-setting-row2-name"><strong>文字タイプ</strong></td>
+                                <td data-lang-key="manual-beam-level-top-setting-row2-desc">ラベルに使用するテキストタイプを選択</td>
                             </tr>
                         </tbody>
                     </table>
@@ -212,8 +212,8 @@
             <div class="step-box">
                 <div class="step-number">3</div>
                 <div class="step-content">
-                    <h3>STEP 2 — 天端パラメータ選択</h3>
-                    <p>
+                    <h3 data-lang-key="manual-beam-level-top-step3-title">STEP 2 — 天端パラメータ選択</h3>
+                    <p data-lang-key="manual-beam-level-top-step3-desc">
                         ファミリごとに天端レベルオフセットを格納したパラメータを選択します。自動検出された候補がラジオボタンで表示されます（カッコ内は検出件数）。候補にない場合は「<strong>その他</strong>」ドロップダウンから選択。
                     </p>
                 </div>
@@ -222,21 +222,21 @@
             <div class="step-box">
                 <div class="step-number">4</div>
                 <div class="step-content">
-                    <h3>STEP 3 — 確認と実行</h3>
-                    <p>
+                    <h3 data-lang-key="manual-beam-level-top-step4-title">STEP 3 — 確認と実行</h3>
+                    <p data-lang-key="manual-beam-level-top-step4-desc">
                         処理対象の梁数を確認し、「<strong>実行</strong>」をクリック。再実行する場合は <strong>「既存の『梁天端_』塗潰領域・凡例を上書き」</strong> にチェックしてください。
                     </p>
                 </div>
             </div>
 
             <!-- 梁下端色分け -->
-            <h3 style="font-size: 1.1rem; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--blueprint-blue);">梁下端色分け</h3>
+            <h3 style="font-size: 1.1rem; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--blueprint-blue);" data-lang-key="manual-beam-level-bottom-section-title">梁下端色分け</h3>
 
-            <p style="margin-bottom: 16px;">
+            <p style="margin-bottom: 16px;" data-lang-key="manual-beam-level-bottom-intro">
                 天井伏図の梁を、計算した下端レベル値ごとに色分けします。
             </p>
 
-            <p style="margin-bottom: 16px;">下端レベルの計算式：</p>
+            <p style="margin-bottom: 16px;" data-lang-key="manual-beam-level-formula-label">下端レベルの計算式：</p>
             <pre style="background:#f4f4f4; padding:12px; border-radius:6px; font-size:0.9rem; margin:12px 0;">梁下端レベル = 階高 + 天端オフセット − 梁高さ</pre>
             <ul style="margin: 12px 0 20px; padding-left: 22px;">
                 <li><strong>階高</strong> = 上位レベル標高 − 参照レベル標高（例: 3000mm）</li>
