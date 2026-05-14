@@ -66,7 +66,7 @@
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
             <div class="content-box">
-                <p>
+                <p data-lang-key="manual-room-tag-overview">
                     平面ビュー上に配置されているすべての部屋（Room）に、ルームタグを一括で自動配置する機能です。部屋数が多いビューでも手作業なしにタグを揃えられます。使用するタグファミリ（タグタイプ）を選択でき、既にタグが配置されている部屋はスキップするか上書きするかを設定できます。
                 </p>
             </div>
@@ -85,15 +85,15 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>平面ビュー（FloorPlan）</strong></td>
+                            <td data-lang-key="manual-room-tag-view-row1"><strong>平面ビュー（FloorPlan）</strong></td>
                             <td class="status">◯</td>
                         </tr>
                         <tr>
-                            <td>天井伏図</td>
-                            <td class="status">△（部屋要素が表示されている場合）</td>
+                            <td data-lang-key="manual-room-tag-view-row2">天井伏図</td>
+                            <td class="status" data-lang-key="manual-room-tag-view-row2-status">△（部屋要素が表示されている場合）</td>
                         </tr>
                         <tr>
-                            <td>断面図・立面図・3Dビュー</td>
+                            <td data-lang-key="manual-room-tag-view-row3">断面図・立面図・3Dビュー</td>
                             <td class="status">×</td>
                         </tr>
                     </tbody>
@@ -107,18 +107,18 @@
             <div class="content-box">
                 <ol class="prep-list">
                     <li>
-                        <h4>部屋が配置されていることを確認する</h4>
+                        <h4 data-lang-key="manual-room-tag-prep1-title">部屋が配置されていることを確認する</h4>
                         <ul>
-                            <li>ビュー上に<strong>部屋（Room）が配置</strong>されていることを確認してください</li>
-                            <li>部屋区画線（Room Separation Line）のみで部屋が作成されていない場合、タグは配置されません</li>
-                            <li>ビューの「部屋」カテゴリが表示状態になっているか確認してください</li>
+                            <li data-lang-key="manual-room-tag-prep1-item1">ビュー上に<strong>部屋（Room）が配置</strong>されていることを確認してください</li>
+                            <li data-lang-key="manual-room-tag-prep1-item2">部屋区画線（Room Separation Line）のみで部屋が作成されていない場合、タグは配置されません</li>
+                            <li data-lang-key="manual-room-tag-prep1-item3">ビューの「部屋」カテゴリが表示状態になっているか確認してください</li>
                         </ul>
                     </li>
                     <li>
-                        <h4>タグファミリが読み込まれていることを確認する</h4>
+                        <h4 data-lang-key="manual-room-tag-prep2-title">タグファミリが読み込まれていることを確認する</h4>
                         <ul>
-                            <li>プロジェクトにルームタグファミリが読み込まれている必要があります</li>
-                            <li>読み込まれていない場合は、事前に「ファミリを読み込む」でルームタグファミリを追加してください</li>
+                            <li data-lang-key="manual-room-tag-prep2-item1">プロジェクトにルームタグファミリが読み込まれている必要があります</li>
+                            <li data-lang-key="manual-room-tag-prep2-item2">読み込まれていない場合は、事前に「ファミリを読み込む」でルームタグファミリを追加してください</li>
                         </ul>
                     </li>
                 </ol>
@@ -132,8 +132,8 @@
             <div class="step-box">
                 <div class="step-number">1</div>
                 <div class="step-content">
-                    <h3>コマンドの起動</h3>
-                    <p>
+                    <h3 data-lang-key="manual-room-tag-step1-title">コマンドの起動</h3>
+                    <p data-lang-key="manual-room-tag-step1-desc">
                         部屋タグを配置したい平面ビューを<strong>アクティブ</strong>にしてから、リボン「<strong>28 Tools</strong>」タブ →「<strong>注釈・詳細</strong>」パネル →「<strong>部屋タグ自動配置</strong>」ボタンをクリックします。
                     </p>
                 </div>
@@ -142,8 +142,8 @@
             <div class="step-box">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3>ダイアログで設定</h3>
-                    <p>ダイアログが開きます。以下の項目を設定してください。</p>
+                    <h3 data-lang-key="manual-room-tag-step2-title">ダイアログで設定</h3>
+                    <p data-lang-key="manual-room-tag-step2-intro">ダイアログが開きます。以下の項目を設定してください。</p>
                     <table class="info-table" style="margin-top: 14px;">
                         <thead>
                             <tr>
@@ -153,16 +153,16 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>タグタイプ</strong></td>
-                                <td>使用するルームタグファミリをドロップダウンから選択</td>
+                                <td data-lang-key="manual-room-tag-dialog-row1-item"><strong>タグタイプ</strong></td>
+                                <td data-lang-key="manual-room-tag-dialog-row1-content">使用するルームタグファミリをドロップダウンから選択</td>
                             </tr>
                             <tr>
-                                <td><strong>配置オフセット</strong></td>
-                                <td>部屋中心からのタグのオフセット量</td>
+                                <td data-lang-key="manual-room-tag-dialog-row2-item"><strong>配置オフセット</strong></td>
+                                <td data-lang-key="manual-room-tag-dialog-row2-content">部屋中心からのタグのオフセット量</td>
                             </tr>
                             <tr>
-                                <td><strong>回転オプション</strong></td>
-                                <td>タグの向き（水平固定 / 部屋形状に合わせる）</td>
+                                <td data-lang-key="manual-room-tag-dialog-row3-item"><strong>回転オプション</strong></td>
+                                <td data-lang-key="manual-room-tag-dialog-row3-content">タグの向き（水平固定 / 部屋形状に合わせる）</td>
                             </tr>
                         </tbody>
                     </table>
@@ -172,8 +172,8 @@
             <div class="step-box">
                 <div class="step-number">3</div>
                 <div class="step-content">
-                    <h3>配置を実行</h3>
-                    <p>
+                    <h3 data-lang-key="manual-room-tag-step3-title">配置を実行</h3>
+                    <p data-lang-key="manual-room-tag-step3-desc">
                         「<strong>配置</strong>」ボタンをクリックすると、ビュー上のすべての部屋にタグが配置されます。処理完了後、配置されたタグ数がメッセージで表示されます。
                     </p>
                 </div>
@@ -190,8 +190,8 @@
             <h2 class="section-title" data-lang-key="section-output">出力結果</h2>
             <div class="content-box">
                 <ul>
-                    <li>ビュー上の各部屋の<strong>中心付近</strong>にルームタグが配置されます</li>
-                    <li>配置されたタグは通常のルームタグと同様に選択・移動・編集できます</li>
+                    <li data-lang-key="manual-room-tag-output1">ビュー上の各部屋の<strong>中心付近</strong>にルームタグが配置されます</li>
+                    <li data-lang-key="manual-room-tag-output2">配置されたタグは通常のルームタグと同様に選択・移動・編集できます</li>
                 </ul>
             </div>
         </section>
@@ -202,22 +202,22 @@
             <div class="usecase-grid">
                 <div class="usecase-card">
                     <div class="usecase-icon">🏠</div>
-                    <h3>部屋一覧の注釈作成</h3>
-                    <p>
+                    <h3 data-lang-key="manual-room-tag-usecase1-title">部屋一覧の注釈作成</h3>
+                    <p data-lang-key="manual-room-tag-usecase1-desc">
                         多数の部屋が配置された平面ビューでも、ボタン一つで全部屋にタグを配置できます。
                     </p>
                 </div>
                 <div class="usecase-card">
                     <div class="usecase-icon">📋</div>
-                    <h3>タグ種類の一括切り替え</h3>
-                    <p>
+                    <h3 data-lang-key="manual-room-tag-usecase2-title">タグ種類の一括切り替え</h3>
+                    <p data-lang-key="manual-room-tag-usecase2-desc">
                         使用するタグファミリを選んで実行するだけで、すべての部屋タグを統一できます。
                     </p>
                 </div>
                 <div class="usecase-card">
                     <div class="usecase-icon">⏱️</div>
-                    <h3>作業時間の短縮</h3>
-                    <p>
+                    <h3 data-lang-key="manual-room-tag-usecase3-title">作業時間の短縮</h3>
+                    <p data-lang-key="manual-room-tag-usecase3-desc">
                         手動でタグを1つずつ配置する手間を省き、大幅に時間を短縮できます。
                     </p>
                 </div>
@@ -230,13 +230,13 @@
             <div class="tips-box">
                 <div class="tip-item">
                     <span class="tip-icon">💡</span>
-                    <p>
+                    <p data-lang-key="manual-room-tag-tip1">
                         <strong>タグが部屋の外に出る場合：</strong>部屋の形状が複雑（L字形・細長い形状など）な場合、中心位置がずれることがあります。配置後にRevit上でタグを手動で移動してください。
                     </p>
                 </div>
                 <div class="tip-item">
                     <span class="tip-icon">💡</span>
-                    <p>
+                    <p data-lang-key="manual-room-tag-tip2">
                         <strong>タグが重なる場合：</strong>小さな部屋が隣接している場合、タグが重なることがあります。Revit上で手動でタグの位置を調整してください。
                     </p>
                 </div>
@@ -249,19 +249,19 @@
             <div class="notes-box warning">
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p>
+                    <p data-lang-key="manual-room-tag-note1">
                         平面ビューに部屋要素が配置されていない場合は使用できません。
                     </p>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p>
+                    <p data-lang-key="manual-room-tag-note2">
                         部屋区画線（Room Separation Line）だけでは部屋になりません。「建築」タブ →「部屋」で部屋を配置してください。
                     </p>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p>
+                    <p data-lang-key="manual-room-tag-note3">
                         プロジェクトにルームタグファミリが読み込まれていない場合、タグタイプの選択肢が表示されません。事前にファミリを読み込んでください。
                     </p>
                 </div>
@@ -272,29 +272,29 @@
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-troubleshooting">トラブルシューティング</h2>
             <div class="content-box">
-                <h3 style="font-size: 1.05rem; margin-top: 0;">「ビュー内に部屋が見つかりません」と表示される</h3>
+                <h3 style="font-size: 1.05rem; margin-top: 0;" data-lang-key="manual-room-tag-trouble1-title">「ビュー内に部屋が見つかりません」と表示される</h3>
                 <ul>
-                    <li>平面ビューに<strong>部屋要素</strong>が配置されているか確認してください</li>
-                    <li>部屋区画線（Room Separation Line）だけでは部屋になりません。「建築」タブ →「部屋」で部屋を配置してください</li>
-                    <li>ビューフィルタや「部屋」カテゴリの表示設定を確認してください</li>
+                    <li data-lang-key="manual-room-tag-trouble1-item1">平面ビューに<strong>部屋要素</strong>が配置されているか確認してください</li>
+                    <li data-lang-key="manual-room-tag-trouble1-item2">部屋区画線（Room Separation Line）だけでは部屋になりません。「建築」タブ →「部屋」で部屋を配置してください</li>
+                    <li data-lang-key="manual-room-tag-trouble1-item3">ビューフィルタや「部屋」カテゴリの表示設定を確認してください</li>
                 </ul>
 
-                <h3 style="font-size: 1.05rem; margin-top: 20px;">タグが部屋の外に配置される</h3>
+                <h3 style="font-size: 1.05rem; margin-top: 20px;" data-lang-key="manual-room-tag-trouble2-title">タグが部屋の外に配置される</h3>
                 <ul>
-                    <li>部屋の形状が複雑（L字形・細長い形状など）な場合、中心位置がずれることがあります</li>
-                    <li>配置後にRevit上でタグを手動で移動してください</li>
+                    <li data-lang-key="manual-room-tag-trouble2-item1">部屋の形状が複雑（L字形・細長い形状など）な場合、中心位置がずれることがあります</li>
+                    <li data-lang-key="manual-room-tag-trouble2-item2">配置後にRevit上でタグを手動で移動してください</li>
                 </ul>
 
-                <h3 style="font-size: 1.05rem; margin-top: 20px;">タグが重なって表示される</h3>
+                <h3 style="font-size: 1.05rem; margin-top: 20px;" data-lang-key="manual-room-tag-trouble3-title">タグが重なって表示される</h3>
                 <ul>
-                    <li>小さな部屋が隣接している場合、タグが重なることがあります</li>
-                    <li>Revit上で手動でタグの位置を調整してください</li>
+                    <li data-lang-key="manual-room-tag-trouble3-item1">小さな部屋が隣接している場合、タグが重なることがあります</li>
+                    <li data-lang-key="manual-room-tag-trouble3-item2">Revit上で手動でタグの位置を調整してください</li>
                 </ul>
 
-                <h3 style="font-size: 1.05rem; margin-top: 20px;">使いたいタグタイプが選択肢に表示されない</h3>
+                <h3 style="font-size: 1.05rem; margin-top: 20px;" data-lang-key="manual-room-tag-trouble4-title">使いたいタグタイプが選択肢に表示されない</h3>
                 <ul>
-                    <li>プロジェクトに対象のルームタグファミリが読み込まれているか確認してください</li>
-                    <li>「挿入」タブ →「ファミリを読み込む」でタグファミリを追加してください</li>
+                    <li data-lang-key="manual-room-tag-trouble4-item1">プロジェクトに対象のルームタグファミリが読み込まれているか確認してください</li>
+                    <li data-lang-key="manual-room-tag-trouble4-item2">「挿入」タブ →「ファミリを読み込む」でタグファミリを追加してください</li>
                 </ul>
             </div>
         </section>
@@ -305,12 +305,12 @@
             <div class="content-box">
                 <ul>
                     <li>
-                        <a href="sheet-creation.html">シート一括作成</a>
-                        <span> — 複数シートをまとめて作成</span>
+                        <a href="sheet-creation.html" data-lang-key="manual-room-tag-related1">シート一括作成</a>
+                        <span data-lang-key="manual-room-tag-related1-desc"> — 複数シートをまとめて作成</span>
                     </li>
                     <li>
-                        <a href="filled-region.html">塗潰し領域 分割/統合</a>
-                        <span> — 塗潰し領域の分割・統合</span>
+                        <a href="filled-region.html" data-lang-key="manual-room-tag-related2">塗潰し領域 分割/統合</a>
+                        <span data-lang-key="manual-room-tag-related2-desc"> — 塗潰し領域の分割・統合</span>
                     </li>
                 </ul>
             </div>
