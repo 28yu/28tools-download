@@ -50,7 +50,7 @@
             <span class="separator">›</span>
             <a href="../addins.html" data-lang-key="breadcrumb-addins">アドイン</a>
             <span class="separator">›</span>
-            <span>梁レベル色分け</span>
+            <span data-lang-key="manual-beam-level-title">梁レベル色分け</span>
         </nav>
 
         <!-- 機能タイトル -->
@@ -59,18 +59,18 @@
                 <img src="../images/revit-icons/beam_top_level.png" alt="Beam Top Level Icon" class="feature-icon">
                 <img src="../images/revit-icons/beam_under_level.png" alt="Beam Bottom Level Icon" class="feature-icon">
             </div>
-            <h1 class="manual-title">梁レベル色分け</h1>
-            <p class="manual-subtitle">梁の天端・下端レベルをパステルカラーで色分け表示</p>
+            <h1 class="manual-title" data-lang-key="manual-beam-level-title">梁レベル色分け</h1>
+            <p class="manual-subtitle" data-lang-key="manual-beam-level-subtitle">梁の天端・下端レベルをパステルカラーで色分け表示</p>
         </div>
 
         <!-- 機能概要 -->
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
             <div class="content-box">
-                <p>
+                <p data-lang-key="manual-beam-level-overview">
                     梁を天端レベルまたは下端レベルの値ごとに色分け表示する機能です。ビュー上でレベルの異なる梁を視覚的にすばやく把握できます。どちらの機能も、色分けされた塗潰し領域・梁ラベル（TextNote）・凡例ビューを自動作成します。
                 </p>
-                <p style="margin-top: 12px;">
+                <p style="margin-top: 12px;" data-lang-key="manual-beam-level-ribbon">
                     リボン: 「<strong>28 Tools</strong>」タブ →「<strong>構造</strong>」パネル
                 </p>
             </div>
@@ -78,31 +78,31 @@
 
         <!-- 機能比較テーブル -->
         <section class="manual-section">
-            <h2 class="section-title">機能の違い</h2>
+            <h2 class="section-title" data-lang-key="manual-beam-level-diff-title">機能の違い</h2>
             <div class="content-box">
                 <table class="info-table">
                     <thead>
                         <tr>
-                            <th>機能</th>
-                            <th>ボタン名</th>
+                            <th data-lang-key="manual-beam-level-diff-col-feature">機能</th>
+                            <th data-lang-key="manual-beam-level-diff-col-button">ボタン名</th>
                             <th data-lang-key="table-col-view-type">対象ビュー</th>
-                            <th>色分けの基準</th>
-                            <th>ステップ数</th>
+                            <th data-lang-key="manual-beam-level-diff-col-basis">色分けの基準</th>
+                            <th data-lang-key="manual-beam-level-diff-col-steps">ステップ数</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>梁天端色分け</strong></td>
-                            <td>梁天端色分け</td>
-                            <td>平面ビュー・構造伏図</td>
-                            <td>天端レベルオフセット値をそのまま使用</td>
+                            <td data-lang-key="manual-beam-level-diff-row1-feature"><strong>梁天端色分け</strong></td>
+                            <td data-lang-key="manual-beam-level-diff-row1-button">梁天端色分け</td>
+                            <td data-lang-key="manual-beam-level-diff-row1-view">平面ビュー・構造伏図</td>
+                            <td data-lang-key="manual-beam-level-diff-row1-basis">天端レベルオフセット値をそのまま使用</td>
                             <td>3</td>
                         </tr>
                         <tr>
-                            <td><strong>梁下端色分け</strong></td>
-                            <td>梁下端色分け</td>
-                            <td>天井伏図</td>
-                            <td>階高 + 天端オフセット − 梁高さ で計算</td>
+                            <td data-lang-key="manual-beam-level-diff-row2-feature"><strong>梁下端色分け</strong></td>
+                            <td data-lang-key="manual-beam-level-diff-row2-button">梁下端色分け</td>
+                            <td data-lang-key="manual-beam-level-diff-row2-view">天井伏図</td>
+                            <td data-lang-key="manual-beam-level-diff-row2-basis">階高 + 天端オフセット − 梁高さ で計算</td>
                             <td>4</td>
                         </tr>
                     </tbody>
@@ -114,7 +114,7 @@
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-supported-views">実行できるビュー</h2>
             <div class="content-box">
-                <h3 style="font-size: 1.05rem; margin-top: 0; margin-bottom: 12px;">梁天端色分け</h3>
+                <h3 style="font-size: 1.05rem; margin-top: 0; margin-bottom: 12px;" data-lang-key="manual-beam-level-top-section-title">梁天端色分け</h3>
                 <table class="info-table">
                     <thead>
                         <tr>
@@ -125,24 +125,24 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>平面ビュー（FloorPlan）</strong></td>
+                            <td data-lang-key="manual-beam-level-top-view-row1-name"><strong>平面ビュー（FloorPlan）</strong></td>
                             <td class="status">◯</td>
-                            <td>天端レベルオフセット値で色分け。参照レベルはビューの GenLevel から自動取得</td>
+                            <td data-lang-key="manual-beam-level-top-view-row1-behavior">天端レベルオフセット値で色分け。参照レベルはビューの GenLevel から自動取得</td>
                         </tr>
                         <tr>
-                            <td><strong>構造伏図（EngineeringPlan）</strong></td>
+                            <td data-lang-key="manual-beam-level-top-view-row2-name"><strong>構造伏図（EngineeringPlan）</strong></td>
                             <td class="status">◯</td>
-                            <td>天端レベルオフセット値で色分け。参照レベルはビューの GenLevel から自動取得</td>
+                            <td data-lang-key="manual-beam-level-top-view-row2-behavior">天端レベルオフセット値で色分け。参照レベルはビューの GenLevel から自動取得</td>
                         </tr>
                         <tr>
-                            <td>その他</td>
+                            <td data-lang-key="manual-beam-level-view-other">その他</td>
                             <td class="status">×</td>
-                            <td>実行不可</td>
+                            <td data-lang-key="manual-beam-level-view-na">実行不可</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <h3 style="font-size: 1.05rem; margin-top: 24px; margin-bottom: 12px;">梁下端色分け</h3>
+                <h3 style="font-size: 1.05rem; margin-top: 24px; margin-bottom: 12px;" data-lang-key="manual-beam-level-bottom-section-title">梁下端色分け</h3>
                 <table class="info-table">
                     <thead>
                         <tr>
@@ -153,14 +153,14 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>天井伏図（CeilingPlan）</strong></td>
+                            <td data-lang-key="manual-beam-level-bottom-view-row1-name"><strong>天井伏図（CeilingPlan）</strong></td>
                             <td class="status">◯</td>
-                            <td>計算した下端レベル値で色分け</td>
+                            <td data-lang-key="manual-beam-level-bottom-view-row1-behavior">計算した下端レベル値で色分け</td>
                         </tr>
                         <tr>
-                            <td>その他</td>
+                            <td data-lang-key="manual-beam-level-view-other">その他</td>
                             <td class="status">×</td>
-                            <td>実行不可</td>
+                            <td data-lang-key="manual-beam-level-view-na">実行不可</td>
                         </tr>
                     </tbody>
                 </table>

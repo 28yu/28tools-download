@@ -66,7 +66,7 @@
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
             <div class="content-box">
-                <p>
+                <p data-lang-key="manual-excel-import-overview">
                     Excelで編集したパラメータ値をRevitに一括反映する機能です。EXCELエクスポートで書き出したファイルをそのまま使用できます。インポート前に<strong>変更内容をプレビュー</strong>で確認でき、インポート後に<strong>成功・失敗をExcelのセルに色付き</strong>でフィードバックします。開いているExcelファイルを<strong>自動検出</strong>してリスト表示します。
                 </p>
             </div>
@@ -94,8 +94,8 @@
             <div class="step-box">
                 <div class="step-number">1</div>
                 <div class="step-content">
-                    <h3>コマンドの起動</h3>
-                    <p>
+                    <h3 data-lang-key="manual-excel-import-step1-title">コマンドの起動</h3>
+                    <p data-lang-key="manual-excel-import-step1-desc">
                         リボン「<strong>28 Tools</strong>」タブ →「<strong>データ</strong>」パネル →「<strong>EXCELインポート</strong>」ボタンをクリックします。
                     </p>
                 </div>
@@ -104,7 +104,7 @@
             <div class="step-box">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3>Excelファイルの選択</h3>
+                    <h3 data-lang-key="manual-excel-import-step2-title">Excelファイルの選択</h3>
                     <table class="info-table" style="margin-top: 14px;">
                         <thead>
                             <tr>
@@ -114,16 +114,16 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>開いているファイルから選ぶ</strong></td>
-                                <td>現在開いているExcelファイルが自動検出されてリスト表示される</td>
+                                <td data-lang-key="manual-excel-import-file-row1-name"><strong>開いているファイルから選ぶ</strong></td>
+                                <td data-lang-key="manual-excel-import-file-row1-desc">現在開いているExcelファイルが自動検出されてリスト表示される</td>
                             </tr>
                             <tr>
-                                <td><strong>ファイルを参照</strong></td>
-                                <td>「参照」ボタンからファイルダイアログでファイルを選ぶ</td>
+                                <td data-lang-key="manual-excel-import-file-row2-name"><strong>ファイルを参照</strong></td>
+                                <td data-lang-key="manual-excel-import-file-row2-desc">「参照」ボタンからファイルダイアログでファイルを選ぶ</td>
                             </tr>
                             <tr>
-                                <td><strong>ドラッグ＆ドロップ</strong></td>
-                                <td>ダイアログ上にExcelファイルをドラッグする</td>
+                                <td data-lang-key="manual-excel-import-file-row3-name"><strong>ドラッグ＆ドロップ</strong></td>
+                                <td data-lang-key="manual-excel-import-file-row3-desc">ダイアログ上にExcelファイルをドラッグする</td>
                             </tr>
                         </tbody>
                     </table>
@@ -133,19 +133,19 @@
             <div class="step-box">
                 <div class="step-number">3</div>
                 <div class="step-content">
-                    <h3>変更内容のプレビュー確認</h3>
-                    <p>
+                    <h3 data-lang-key="manual-excel-import-step3-title">変更内容のプレビュー確認</h3>
+                    <p data-lang-key="manual-excel-import-step3-desc">
                         プレビューダイアログに<strong>変更が発生する行のみ</strong>が一覧表示されます。読み取り専用パラメータ（Revitが自動計算する値）は非表示。変更前の値と変更後の値を並べて確認できます。
                     </p>
-                    <p style="margin-top: 10px;">💡 <strong>空セルはスキップされます。</strong>ExcelのセルをDeleteキーで消しても、その値がRevitから削除されることはありません。</p>
+                    <p style="margin-top: 10px;" data-lang-key="manual-excel-import-step3-tip">💡 <strong>空セルはスキップされます。</strong>ExcelのセルをDeleteキーで消しても、その値がRevitから削除されることはありません。</p>
                 </div>
             </div>
 
             <div class="step-box">
                 <div class="step-number">4</div>
                 <div class="step-content">
-                    <h3>インポート実行</h3>
-                    <p>
+                    <h3 data-lang-key="manual-excel-import-step4-title">インポート実行</h3>
+                    <p data-lang-key="manual-excel-import-step4-desc">
                         「<strong>インポート実行</strong>」ボタンをクリックします。処理完了後、Revitに変更が反映されます。
                     </p>
                 </div>
@@ -161,7 +161,7 @@
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-output">インポート後のフィードバック</h2>
             <div class="content-box">
-                <p style="margin-bottom: 12px;">
+                <p style="margin-bottom: 12px;" data-lang-key="manual-excel-import-feedback-intro">
                     インポートが完了すると、Excelファイルの該当セルに色付きフィードバックが追加されます。
                 </p>
                 <table class="info-table">
@@ -173,19 +173,19 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>インポート成功</strong></td>
-                            <td>セルのテキストが<strong>青字・太字</strong></td>
+                            <td data-lang-key="manual-excel-import-feedback-row1-name"><strong>インポート成功</strong></td>
+                            <td data-lang-key="manual-excel-import-feedback-row1-desc">セルのテキストが<strong>青字・太字</strong></td>
                         </tr>
                         <tr>
-                            <td><strong>インポート失敗</strong></td>
-                            <td>セルのテキストが<strong>赤字・太字</strong></td>
+                            <td data-lang-key="manual-excel-import-feedback-row2-name"><strong>インポート失敗</strong></td>
+                            <td data-lang-key="manual-excel-import-feedback-row2-desc">セルのテキストが<strong>赤字・太字</strong></td>
                         </tr>
                     </tbody>
                 </table>
-                <p style="margin-top: 12px;">
+                <p style="margin-top: 12px;" data-lang-key="manual-excel-import-feedback-legend">
                     各シートの末尾列に凡例が自動追記されます（<code>*青字はインポート成功、赤字はインポート失敗</code>）。
                 </p>
-                <p style="margin-top: 8px;">
+                <p style="margin-top: 8px;" data-lang-key="manual-excel-import-feedback-com">
                     💡 ExcelがRevitと同時に開いている場合はExcel COM経由でセル書式が直接反映されます。Excelが閉じている場合はファイルに直接書き込まれます。
                 </p>
             </div>
@@ -197,22 +197,22 @@
             <div class="usecase-grid">
                 <div class="usecase-card">
                     <div class="usecase-icon">🔄</div>
-                    <h3>一括パラメータ更新</h3>
-                    <p>
+                    <h3 data-lang-key="manual-excel-import-usecase1-title">一括パラメータ更新</h3>
+                    <p data-lang-key="manual-excel-import-usecase1-desc">
                         Excelで大量のパラメータを編集し、一括でRevitモデルに反映できます。
                     </p>
                 </div>
                 <div class="usecase-card">
                     <div class="usecase-icon">📥</div>
-                    <h3>外部データの取り込み</h3>
-                    <p>
+                    <h3 data-lang-key="manual-excel-import-usecase2-title">外部データの取り込み</h3>
+                    <p data-lang-key="manual-excel-import-usecase2-desc">
                         他のシステムから出力されたExcelデータをRevitモデルに反映できます。
                     </p>
                 </div>
                 <div class="usecase-card">
                     <div class="usecase-icon">⏱️</div>
-                    <h3>修正作業の効率化</h3>
-                    <p>
+                    <h3 data-lang-key="manual-excel-import-usecase3-title">修正作業の効率化</h3>
+                    <p data-lang-key="manual-excel-import-usecase3-desc">
                         Revit上で1つずつ修正するよりExcelで一括編集した方が効率的な場合に活用できます。
                     </p>
                 </div>
@@ -225,19 +225,19 @@
             <div class="tips-box">
                 <div class="tip-item">
                     <span class="tip-icon">💡</span>
-                    <p>
+                    <p data-lang-key="manual-excel-import-tip1">
                         <strong>変更プレビューを活用：</strong>インポート前に変更内容を確認できるので、意図しない変更を防げます。変更行のみが表示されるためレビューが容易です。
                     </p>
                 </div>
                 <div class="tip-item">
                     <span class="tip-icon">💡</span>
-                    <p>
+                    <p data-lang-key="manual-excel-import-tip2">
                         <strong>色付きフィードバック：</strong>インポート後にExcel上で成功セルが青字・失敗セルが赤字になるので、どの値が更新されたか確認できます。
                     </p>
                 </div>
                 <div class="tip-item">
                     <span class="tip-icon">💡</span>
-                    <p>
+                    <p data-lang-key="manual-excel-import-tip3">
                         <strong>安全なロールバック：</strong>トランザクション機能により、エラーが発生した場合は変更が自動的に取り消されます。
                     </p>
                 </div>
@@ -250,25 +250,25 @@
             <div class="notes-box warning">
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p>
+                    <p data-lang-key="manual-excel-import-note1">
                         <strong>空セル（空欄）はスキップ</strong>されます。値を消したい場合は空欄ではなく明示的な値を入力してください。
                     </p>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p>
+                    <p data-lang-key="manual-excel-import-note2">
                         <strong>読み取り専用パラメータ</strong>（長さ・面積などRevitが自動計算するパラメータ）はインポートできません。
                     </p>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p>
+                    <p data-lang-key="manual-excel-import-note3">
                         <strong>要素IDが一致しない</strong>場合は反映されません（異なるプロジェクトで書き出したファイルを使用しないでください）。
                     </p>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p>
+                    <p data-lang-key="manual-excel-import-note4">
                         シート統合モードでエクスポートしたファイルでは、対象カテゴリに存在しないパラメータの列が空欄になりますが、インポート時は空欄セルをスキップするため問題ありません。
                     </p>
                 </div>
@@ -279,22 +279,22 @@
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-troubleshooting">トラブルシューティング</h2>
             <div class="content-box">
-                <h3 style="font-size: 1.05rem; margin-top: 0;">「ファイルが開けません」と表示される</h3>
+                <h3 style="font-size: 1.05rem; margin-top: 0;" data-lang-key="manual-excel-import-trouble1-title">「ファイルが開けません」と表示される</h3>
                 <ul>
-                    <li>ExcelがそのファイルをExclusiveロックで開いている場合があります</li>
-                    <li>ExcelでファイルをTrustedとして開き直すか、Excelをいったん閉じてから試みてください</li>
+                    <li data-lang-key="manual-excel-import-trouble1-item1">ExcelがそのファイルをExclusiveロックで開いている場合があります</li>
+                    <li data-lang-key="manual-excel-import-trouble1-item2">ExcelでファイルをTrustedとして開き直すか、Excelをいったん閉じてから試みてください</li>
                 </ul>
 
-                <h3 style="font-size: 1.05rem; margin-top: 20px;">「インポートできないパラメータがあります」と表示される</h3>
+                <h3 style="font-size: 1.05rem; margin-top: 20px;" data-lang-key="manual-excel-import-trouble2-title">「インポートできないパラメータがあります」と表示される</h3>
                 <ul>
-                    <li>長さ・面積などRevitが自動計算するパラメータは読み取り専用のためインポートできません</li>
-                    <li>プレビュー画面では読み取り専用パラメータは非表示になっています</li>
+                    <li data-lang-key="manual-excel-import-trouble2-item1">長さ・面積などRevitが自動計算するパラメータは読み取り専用のためインポートできません</li>
+                    <li data-lang-key="manual-excel-import-trouble2-item2">プレビュー画面では読み取り専用パラメータは非表示になっています</li>
                 </ul>
 
-                <h3 style="font-size: 1.05rem; margin-top: 20px;">プレビューに変更行が表示されない</h3>
+                <h3 style="font-size: 1.05rem; margin-top: 20px;" data-lang-key="manual-excel-import-trouble3-title">プレビューに変更行が表示されない</h3>
                 <ul>
-                    <li>ExcelとRevit上の現在値が同じ場合、変更なしと判定されプレビューに表示されません</li>
-                    <li>値を変更してから再度インポートを実行してください</li>
+                    <li data-lang-key="manual-excel-import-trouble3-item1">ExcelとRevit上の現在値が同じ場合、変更なしと判定されプレビューに表示されません</li>
+                    <li data-lang-key="manual-excel-import-trouble3-item2">値を変更してから再度インポートを実行してください</li>
                 </ul>
             </div>
         </section>
@@ -305,12 +305,12 @@
             <div class="content-box">
                 <ul>
                     <li>
-                        <a href="excel-export.html">Excelエクスポート</a>
-                        <span> — Revitのパラメータ値をExcelに書き出す</span>
+                        <a href="excel-export.html" data-lang-key="manual-excel-import-related-export">Excelエクスポート</a>
+                        <span data-lang-key="manual-excel-import-related-export-desc"> — Revitのパラメータ値をExcelに書き出す</span>
                     </li>
                     <li>
-                        <a href="formwork-calculator.html">型枠数量算出</a>
-                        <span> — 構造要素の型枠面積を自動算出してExcelに出力</span>
+                        <a href="formwork-calculator.html" data-lang-key="manual-excel-import-related-formwork">型枠数量算出</a>
+                        <span data-lang-key="manual-excel-import-related-formwork-desc"> — 構造要素の型枠面積を自動算出してExcelに出力</span>
                     </li>
                 </ul>
             </div>
