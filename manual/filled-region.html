@@ -59,16 +59,21 @@
                 <img src="../images/revit-icons/filled_region.png" alt="Filled Region Icon" class="feature-icon">
             </div>
             <h1 class="manual-title" data-lang-key="manual-filled-region-title">塗潰し領域 分割・統合</h1>
-            <p class="manual-subtitle" data-lang-key="manual-filled-region-subtitle">塗り潰し領域を個別に分割または1つに統合</p>
+            <p class="manual-subtitle" data-lang-key="manual-filled-region-subtitle">塗潰し領域を個別に分割または1つに統合</p>
         </div>
 
         <!-- 機能概要 -->
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
             <div class="content-box">
-                <p data-lang-key="manual-filled-region-overview">
-                    配置済みの塗り潰し領域を分割または統合する機能です。分割では、1つの塗り潰し領域が複数の独立したエリア（境界）を含んでいる場合、それぞれを個別の独立した塗り潰し領域に分離します。統合では、複数の別々の塗り潰し領域を1つの領域にまとめます。
+                <p>
+                    複数エリアを持つ塗潰し領域を個別の領域に分割したり、複数の塗潰し領域を1つにまとめたりする機能です。
                 </p>
+                <ul style="margin-top: 12px;">
+                    <li><strong>分割：</strong>2つ以上のエリア（境界ループ）を持つ塗潰し領域を、エリアごとに独立した領域へ分割します</li>
+                    <li><strong>統合：</strong>複数の塗潰し領域を1つの領域にまとめます。重なり合っている領域も、ブーリアン和算で正しく統合されます</li>
+                </ul>
+                <p style="margin-top: 12px;">平面図・断面図・立面図・製図ビューなど、塗潰し領域を作成できるすべてのビューで使用できます。</p>
             </div>
         </section>
 
@@ -86,6 +91,37 @@
             </div>
         </section>
 
+        <!-- 実行前の準備 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-preparation">実行前の準備</h2>
+            <div class="content-box">
+                <p style="margin-bottom: 12px;">コマンド実行前に、ビュー上で塗潰し領域を選択しておきます。</p>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th data-lang-key="table-col-item">操作</th>
+                            <th data-lang-key="table-col-content">選択内容</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>分割</strong></td>
+                            <td>2つ以上のエリアを含む塗潰し領域を1つ選択</td>
+                        </tr>
+                        <tr>
+                            <td><strong>統合</strong></td>
+                            <td>統合したい塗潰し領域を2つ以上選択</td>
+                        </tr>
+                        <tr>
+                            <td><strong>両方</strong></td>
+                            <td>複数エリアを持つ領域 ＋ 他の領域を混在して選択</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 12px;">💡 事前選択なしでコマンドを実行すると、「塗潰し領域を選択してください」というメッセージが表示されます。</p>
+            </div>
+        </section>
+
         <!-- 使い方 -->
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
@@ -93,9 +129,9 @@
             <div class="step-box">
                 <div class="step-number">1</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-filled-region-step1-title">塗り潰し領域を選択</h3>
-                    <p data-lang-key="manual-filled-region-step1-desc">
-                        ビュー上で、分割したい領域（1つ以上）または統合したい領域（2つ以上）を選択します。
+                    <h3>対象の塗潰し領域を選択してコマンドを起動</h3>
+                    <p>
+                        ビュー上で対象の塗潰し領域を選択してから、リボン「<strong>28 Tools</strong>」タブ →「<strong>注釈・詳細</strong>」パネル →「<strong>領域 分割/統合</strong>」ボタンをクリックします。
                     </p>
                 </div>
             </div>
@@ -103,19 +139,36 @@
             <div class="step-box">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-filled-region-step2-title">ボタンをクリック</h3>
-                    <p data-lang-key="manual-filled-region-step2-desc">
-                        リボンの「注釈・詳細」パネルから「塗潰し領域 分割･統合」をクリックします。
-                    </p>
+                    <h3>操作を選択</h3>
+                    <p>ダイアログ「<strong>塗潰し領域 分割/統合</strong>」が開きます。</p>
+                    <table class="info-table" style="margin-top: 14px;">
+                        <thead>
+                            <tr>
+                                <th data-lang-key="table-col-item">項目</th>
+                                <th data-lang-key="table-col-content">内容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>分割</strong></td>
+                                <td>選択した領域を各エリアごとに独立した領域へ分割します（選択した領域が2つ以上のエリアを持つ場合のみ有効）</td>
+                            </tr>
+                            <tr>
+                                <td><strong>統合</strong></td>
+                                <td>選択した複数の領域を1つにまとめます（2つ以上の領域を選択している場合のみ有効）</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="margin-top: 10px;">選択内容によって有効/無効が自動的に切り替わります。</p>
                 </div>
             </div>
 
             <div class="step-box">
                 <div class="step-number">3</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-filled-region-step3-title">操作を選択</h3>
-                    <p data-lang-key="manual-filled-region-step3-desc">
-                        ダイアログで操作を選択します。分割は複数エリアを持つ領域がある場合、統合は2つ以上の領域を選択している場合に選択可能です。
+                    <h3>塗潰しパターンを選択（統合時のみ）</h3>
+                    <p>
+                        「<strong>統合</strong>」を選んだ場合、統合後に使用する<strong>塗潰しパターン</strong>をドロップダウンから選択します。選択した領域がすべて同じパターンを使用している場合、そのパターンがデフォルトで選択されます。
                     </p>
                 </div>
             </div>
@@ -123,19 +176,9 @@
             <div class="step-box">
                 <div class="step-number">4</div>
                 <div class="step-content">
-                    <h3 data-lang-key="manual-filled-region-step4-title">（統合の場合）パターン選択</h3>
-                    <p data-lang-key="manual-filled-region-step4-desc">
-                        統合後の塗り潰しパターンをドロップダウンから選択します。選択した領域が同じパターンの場合は自動選択済みです。
-                    </p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">5</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-filled-region-step5-title">OKをクリック</h3>
-                    <p data-lang-key="manual-filled-region-step5-desc">
-                        処理を実行します。完了すると結果メッセージが表示されます。
+                    <h3>OKをクリック</h3>
+                    <p>
+                        「<strong>OK</strong>」をクリックすると処理が実行されます。処理完了後、作成された領域数がメッセージで表示されます。
                     </p>
                 </div>
             </div>
@@ -146,28 +189,47 @@
             </div>
         </section>
 
+        <!-- 出力結果 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-output">出力結果</h2>
+            <div class="content-box">
+                <h3 style="margin-top: 0; font-size: 1.05rem;">分割の場合</h3>
+                <ul>
+                    <li>元の塗潰し領域は削除され、エリア数と同じ数の独立した塗潰し領域が作成されます</li>
+                    <li>各領域は元と同じ塗潰しパターンを引き継ぎます</li>
+                </ul>
+
+                <h3 style="margin-top: 20px; font-size: 1.05rem;">統合の場合</h3>
+                <ul>
+                    <li>元のすべての塗潰し領域は削除され、1つの塗潰し領域が作成されます</li>
+                    <li>重なり合っている領域はブーリアン和算により正しく結合されます（重なり部分が「穴」になりません）</li>
+                    <li>離れた位置にある領域は、1つの領域内の複数エリアとしてまとめられます</li>
+                </ul>
+            </div>
+        </section>
+
         <!-- 活用シーン -->
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-usecases">活用シーン</h2>
             <div class="usecase-grid">
                 <div class="usecase-card">
-                    <div class="usecase-icon">🚀</div>
-                    <h3 data-lang-key="manual-filled-region-usecase1-title">仕上げ図面の整理</h3>
-                    <p data-lang-key="manual-filled-region-usecase1-desc">
-                        複数エリアに分かれた塗り潰し領域を個別管理したい場合に、分割して整理できます。
+                    <div class="usecase-icon">✂️</div>
+                    <h3>仕上げ図面の整理</h3>
+                    <p>
+                        複数エリアに分かれた塗潰し領域を個別管理したい場合に、分割して整理できます。
                     </p>
                 </div>
                 <div class="usecase-card">
-                    <div class="usecase-icon">📋</div>
-                    <h3 data-lang-key="manual-filled-region-usecase2-title">パターン統一</h3>
-                    <p data-lang-key="manual-filled-region-usecase2-desc">
-                        バラバラに作成された塗り潰し領域を1つに統合し、パターンを統一できます。
+                    <div class="usecase-icon">🔗</div>
+                    <h3>パターン統一</h3>
+                    <p>
+                        バラバラに作成された塗潰し領域を1つに統合し、パターンを統一できます。
                     </p>
                 </div>
                 <div class="usecase-card">
                     <div class="usecase-icon">⏱️</div>
-                    <h3 data-lang-key="manual-filled-region-usecase3-title">編集の効率化</h3>
-                    <p data-lang-key="manual-filled-region-usecase3-desc">
+                    <h3>編集の効率化</h3>
+                    <p>
                         統合することで1つの要素として管理でき、移動や削除などの編集が効率的になります。
                     </p>
                 </div>
@@ -180,20 +242,20 @@
             <div class="tips-box">
                 <div class="tip-item">
                     <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-filled-region-tip1">
-                        <strong data-lang-key="manual-filled-region-tip1-strong">自動判定：</strong>選択した領域の状態に応じて、分割・統合の可否がダイアログに自動表示されます。
+                    <p>
+                        <strong>自動判定：</strong>選択した領域の状態に応じて、分割・統合の可否がダイアログに自動表示されます。
                     </p>
                 </div>
                 <div class="tip-item">
                     <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-filled-region-tip2">
-                        <strong data-lang-key="manual-filled-region-tip2-strong">パターン維持：</strong>分割時は元の塗り潰しパターンがそのまま維持されるため、見た目は変わりません。
+                    <p>
+                        <strong>パターン維持：</strong>分割時は元の塗潰しパターンがそのまま維持されるため、見た目は変わりません。
                     </p>
                 </div>
                 <div class="tip-item">
                     <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-filled-region-tip3">
-                        <strong data-lang-key="manual-filled-region-tip3-strong">パターン変更：</strong>統合時にパターンを変更できるため、複数領域のパターン一括変更にも活用できます。
+                    <p>
+                        <strong>パターン変更：</strong>統合時にパターンを変更できるため、複数領域のパターン一括変更にも活用できます。
                     </p>
                 </div>
             </div>
@@ -205,22 +267,77 @@
             <div class="notes-box warning">
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-filled-region-note1">
-                        分割するには、塗り潰し領域が複数の独立したエリア（境界）を含んでいる必要があります。
+                    <p>
+                        分割するには、塗潰し領域が複数の独立したエリア（境界）を含んでいる必要があります。
                     </p>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-filled-region-note2">
-                        統合するには、2つ以上の塗り潰し領域を選択する必要があります。
+                    <p>
+                        統合するには、2つ以上の塗潰し領域を選択する必要があります。
                     </p>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-filled-region-note3">
+                    <p>
+                        塗潰し領域はビューに固有の要素のため、<strong>異なるビューの領域を統合することはできません</strong>。同じビュー内の領域のみ統合できます。
+                    </p>
+                </div>
+                <div class="note-item">
+                    <span class="note-icon">⚠️</span>
+                    <p>
                         エラーが発生した場合、トランザクションが自動ロールバックされ、元の状態に戻ります。
                     </p>
                 </div>
+            </div>
+        </section>
+
+        <!-- トラブルシューティング -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-troubleshooting">トラブルシューティング</h2>
+            <div class="content-box">
+                <h3 style="font-size: 1.05rem; margin-top: 0;">「塗潰し領域を選択してください」と表示される</h3>
+                <ul>
+                    <li>ビュー上で塗潰し領域（FilledRegion）を選択してからコマンドを実行してください</li>
+                    <li>塗潰し領域以外の要素（壁・床など）のみを選択している場合も同じメッセージが表示されます</li>
+                </ul>
+
+                <h3 style="font-size: 1.05rem; margin-top: 20px;">「分割」がグレーアウトして選択できない</h3>
+                <ul>
+                    <li>選択した領域が<strong>エリアを1つしか持っていない</strong>場合、分割はできません</li>
+                    <li>複数のエリアを持つ塗潰し領域（2つ以上の境界ループを含む領域）を選択してください</li>
+                </ul>
+
+                <h3 style="font-size: 1.05rem; margin-top: 20px;">「統合」がグレーアウトして選択できない</h3>
+                <ul>
+                    <li><strong>1つの領域しか選択していない</strong>場合、統合はできません</li>
+                    <li>2つ以上の塗潰し領域を複数選択してください</li>
+                </ul>
+
+                <h3 style="font-size: 1.05rem; margin-top: 20px;">異なるビューの塗潰し領域を統合したい</h3>
+                <ul>
+                    <li>塗潰し領域はビューに固有の要素のため、<strong>異なるビューの領域を統合することはできません</strong></li>
+                    <li>同じビュー内の領域のみ統合できます</li>
+                </ul>
+
+                <h3 style="font-size: 1.05rem; margin-top: 20px;">統合後に意図しない形状になる</h3>
+                <ul>
+                    <li>重なり合っていない領域を統合した場合、複数エリアを持つ1つの領域になります。見た目には変化がない場合があります</li>
+                    <li>ブーリアン和算の処理に失敗した場合、通常の複数ループ統合にフォールバックします</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 関連機能 -->
+        <section class="manual-section">
+            <h2 class="section-title" data-lang-key="section-related">関連機能</h2>
+            <div class="content-box">
+                <ul>
+                    <li>
+                        <a href="fire-protection.html">耐火被覆色分け</a>
+                        <span> — 梁・柱の耐火被覆範囲を塗潰し領域で色分け表示</span>
+                    </li>
+                </ul>
             </div>
         </section>
 
