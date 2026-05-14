@@ -66,7 +66,7 @@
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
             <div class="content-box">
-                <p>
+                <p data-lang-key="manual-excel-export-overview">
                     Revit要素のパラメータ値をExcelファイル（.xlsx）に書き出す機能です。パラメータの一括確認・納品用の数量書き出しに活用できます。エクスポート範囲を<strong>プロジェクト全体 / アクティブビュー / 選択要素</strong>から選べ、インスタンスパラメータ・タイプパラメータの両方に対応しています。通り芯・レベル・シートなどの注釈カテゴリにも対応し、前回の設定（カテゴリ・パラメータ選択）を自動復元します。
                 </p>
             </div>
@@ -96,8 +96,8 @@
             <div class="step-box">
                 <div class="step-number">1</div>
                 <div class="step-content">
-                    <h3>コマンドの起動</h3>
-                    <p>
+                    <h3 data-lang-key="manual-excel-export-step1-title">コマンドの起動</h3>
+                    <p data-lang-key="manual-excel-export-step1-desc">
                         リボン「<strong>28 Tools</strong>」タブ →「<strong>データ</strong>」パネル →「<strong>EXCELエクスポート</strong>」ボタンをクリックします。
                     </p>
                 </div>
@@ -106,8 +106,8 @@
             <div class="step-box">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3>エクスポート範囲の選択</h3>
-                    <p>スコープ選択ダイアログが表示されます。</p>
+                    <h3 data-lang-key="manual-excel-export-step2-title">エクスポート範囲の選択</h3>
+                    <p data-lang-key="manual-excel-export-step2-desc">スコープ選択ダイアログが表示されます。</p>
                     <table class="info-table" style="margin-top: 14px;">
                         <thead>
                             <tr>
@@ -117,16 +117,16 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>プロジェクト全体</strong></td>
-                                <td>プロジェクト内のすべての要素</td>
+                                <td data-lang-key="manual-excel-export-scope-row1-name"><strong>プロジェクト全体</strong></td>
+                                <td data-lang-key="manual-excel-export-scope-row1-desc">プロジェクト内のすべての要素</td>
                             </tr>
                             <tr>
-                                <td><strong>アクティブビュー</strong></td>
-                                <td>現在表示中のビューに存在する要素のみ</td>
+                                <td data-lang-key="manual-excel-export-scope-row2-name"><strong>アクティブビュー</strong></td>
+                                <td data-lang-key="manual-excel-export-scope-row2-desc">現在表示中のビューに存在する要素のみ</td>
                             </tr>
                             <tr>
-                                <td><strong>選択要素</strong></td>
-                                <td>事前に選択しておいた要素のみ</td>
+                                <td data-lang-key="manual-excel-export-scope-row3-name"><strong>選択要素</strong></td>
+                                <td data-lang-key="manual-excel-export-scope-row3-desc">事前に選択しておいた要素のみ</td>
                             </tr>
                         </tbody>
                     </table>
@@ -136,8 +136,8 @@
             <div class="step-box">
                 <div class="step-number">3</div>
                 <div class="step-content">
-                    <h3>カテゴリとパラメータの選択</h3>
-                    <p>設定ダイアログが開きます。</p>
+                    <h3 data-lang-key="manual-excel-export-step3-title">カテゴリとパラメータの選択</h3>
+                    <p data-lang-key="manual-excel-export-step3-desc">設定ダイアログが開きます。</p>
                     <table class="info-table" style="margin-top: 14px;">
                         <thead>
                             <tr>
@@ -147,32 +147,32 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>カテゴリ一覧</strong></td>
-                                <td>エクスポートしたいカテゴリにチェックを入れる（検索ボックスで絞り込み可）</td>
+                                <td data-lang-key="manual-excel-export-setting-row1-name"><strong>カテゴリ一覧</strong></td>
+                                <td data-lang-key="manual-excel-export-setting-row1-desc">エクスポートしたいカテゴリにチェックを入れる（検索ボックスで絞り込み可）</td>
                             </tr>
                             <tr>
-                                <td><strong>パラメータ一覧</strong></td>
-                                <td>各カテゴリでエクスポートするパラメータを選択</td>
+                                <td data-lang-key="manual-excel-export-setting-row2-name"><strong>パラメータ一覧</strong></td>
+                                <td data-lang-key="manual-excel-export-setting-row2-desc">各カテゴリでエクスポートするパラメータを選択</td>
                             </tr>
                             <tr>
-                                <td><strong>カテゴリ別シート</strong></td>
-                                <td>カテゴリごとに別シートへ出力（デフォルト）</td>
+                                <td data-lang-key="manual-excel-export-setting-row3-name"><strong>カテゴリ別シート</strong></td>
+                                <td data-lang-key="manual-excel-export-setting-row3-desc">カテゴリごとに別シートへ出力（デフォルト）</td>
                             </tr>
                             <tr>
-                                <td><strong>シート統合</strong></td>
-                                <td>全カテゴリを1枚の「データ」シートにまとめて出力</td>
+                                <td data-lang-key="manual-excel-export-setting-row4-name"><strong>シート統合</strong></td>
+                                <td data-lang-key="manual-excel-export-setting-row4-desc">全カテゴリを1枚の「データ」シートにまとめて出力</td>
                             </tr>
                         </tbody>
                     </table>
-                    <p style="margin-top: 12px;">💡 前回の設定は自動的に復元されます。毎回同じ設定で出力する場合は2回目以降の操作が省略できます。</p>
+                    <p style="margin-top: 12px;" data-lang-key="manual-excel-export-step3-tip">💡 前回の設定は自動的に復元されます。毎回同じ設定で出力する場合は2回目以降の操作が省略できます。</p>
                 </div>
             </div>
 
             <div class="step-box">
                 <div class="step-number">4</div>
                 <div class="step-content">
-                    <h3>ファイルを保存</h3>
-                    <p>
+                    <h3 data-lang-key="manual-excel-export-step4-title">ファイルを保存</h3>
+                    <p data-lang-key="manual-excel-export-step4-desc">
                         「<strong>エクスポート</strong>」ボタンをクリックし、保存先とファイル名を指定します。
                     </p>
                 </div>
@@ -197,32 +197,32 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>シート構成</strong></td>
-                            <td>カテゴリ別シート（デフォルト）、またはシート統合モードで1シート</td>
+                            <td data-lang-key="manual-excel-export-output-row1-name"><strong>シート構成</strong></td>
+                            <td data-lang-key="manual-excel-export-output-row1-desc">カテゴリ別シート（デフォルト）、またはシート統合モードで1シート</td>
                         </tr>
                         <tr>
-                            <td><strong>ヘッダー行</strong></td>
-                            <td>要素ID | カテゴリ | パラメータ名...</td>
+                            <td data-lang-key="manual-excel-export-output-row2-name"><strong>ヘッダー行</strong></td>
+                            <td data-lang-key="manual-excel-export-output-row2-desc">要素ID | カテゴリ | パラメータ名...</td>
                         </tr>
                         <tr>
-                            <td><strong>パラメータ接頭辞</strong></td>
-                            <td><code>I-</code>（インスタンスパラメータ）/ <code>T-</code>（タイプパラメータ）</td>
+                            <td data-lang-key="manual-excel-export-output-row3-name"><strong>パラメータ接頭辞</strong></td>
+                            <td data-lang-key="manual-excel-export-output-row3-desc"><code>I-</code>（インスタンスパラメータ）/ <code>T-</code>（タイプパラメータ）</td>
                         </tr>
                         <tr>
-                            <td><strong>ヘッダー色</strong></td>
-                            <td>緑（RGB: 155, 187, 89）＋白文字</td>
+                            <td data-lang-key="manual-excel-export-output-row4-name"><strong>ヘッダー色</strong></td>
+                            <td data-lang-key="manual-excel-export-output-row4-desc">緑（RGB: 155, 187, 89）＋白文字</td>
                         </tr>
                         <tr>
-                            <td><strong>フォント</strong></td>
-                            <td>ＭＳ 明朝</td>
+                            <td data-lang-key="manual-excel-export-output-row5-name"><strong>フォント</strong></td>
+                            <td data-lang-key="manual-excel-export-output-row5-desc">ＭＳ 明朝</td>
                         </tr>
                         <tr>
-                            <td><strong>数値</strong></td>
-                            <td>数値型で保存（文字列ではない）</td>
+                            <td data-lang-key="manual-excel-export-output-row6-name"><strong>数値</strong></td>
+                            <td data-lang-key="manual-excel-export-output-row6-desc">数値型で保存（文字列ではない）</td>
                         </tr>
                         <tr>
-                            <td><strong>オートフィルタ</strong></td>
-                            <td>自動設定済み</td>
+                            <td data-lang-key="manual-excel-export-output-row7-name"><strong>オートフィルタ</strong></td>
+                            <td data-lang-key="manual-excel-export-output-row7-desc">自動設定済み</td>
                         </tr>
                     </tbody>
                 </table>
@@ -235,22 +235,22 @@
             <div class="usecase-grid">
                 <div class="usecase-card">
                     <div class="usecase-icon">📊</div>
-                    <h3>数量集計・見積もり</h3>
-                    <p>
+                    <h3 data-lang-key="manual-excel-export-usecase1-title">数量集計・見積もり</h3>
+                    <p data-lang-key="manual-excel-export-usecase1-desc">
                         要素のパラメータをExcelに書き出して、数量集計や見積作業に活用できます。
                     </p>
                 </div>
                 <div class="usecase-card">
                     <div class="usecase-icon">🔍</div>
-                    <h3>パラメータの一括確認</h3>
-                    <p>
+                    <h3 data-lang-key="manual-excel-export-usecase2-title">パラメータの一括確認</h3>
+                    <p data-lang-key="manual-excel-export-usecase2-desc">
                         モデル全体のパラメータ値をExcelで俯瞰でき、入力ミスや抜け漏れを発見しやすくなります。
                     </p>
                 </div>
                 <div class="usecase-card">
                     <div class="usecase-icon">🔄</div>
-                    <h3>Excelインポートとの連携</h3>
-                    <p>
+                    <h3 data-lang-key="manual-excel-export-usecase3-title">Excelインポートとの連携</h3>
+                    <p data-lang-key="manual-excel-export-usecase3-desc">
                         エクスポートしたファイルをExcelで編集し、「Excelインポート」で書き戻す双方向ワークフローを実現できます。
                     </p>
                 </div>
@@ -263,19 +263,19 @@
             <div class="tips-box">
                 <div class="tip-item">
                     <span class="tip-icon">💡</span>
-                    <p>
+                    <p data-lang-key="manual-excel-export-tip1">
                         <strong>設定の保存：</strong>よく使うカテゴリ・パラメータの組み合わせを設定ファイル（JSON）として保存し、次回から読み込めます。
                     </p>
                 </div>
                 <div class="tip-item">
                     <span class="tip-icon">💡</span>
-                    <p>
+                    <p data-lang-key="manual-excel-export-tip2">
                         <strong>パラメータの区別：</strong><code>I-</code>（インスタンス）と<code>T-</code>（タイプ）の接頭辞でパラメータの種類を区別できます。
                     </p>
                 </div>
                 <div class="tip-item">
                     <span class="tip-icon">💡</span>
-                    <p>
+                    <p data-lang-key="manual-excel-export-tip3">
                         <strong>注釈カテゴリも対象：</strong>アクティブビューに通り芯・レベルが表示されている状態でエクスポートすると、注釈カテゴリも一覧に表示されます。プロジェクト全体スコープでも対応しています。
                     </p>
                 </div>
@@ -288,19 +288,19 @@
             <div class="notes-box warning">
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p>
+                    <p data-lang-key="manual-excel-export-note1">
                         大量の要素をエクスポートする場合、処理に時間がかかることがあります。
                     </p>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p>
+                    <p data-lang-key="manual-excel-export-note2">
                         出力先のExcelファイルが開いている場合はエクスポートできません。先にファイルを閉じてください。
                     </p>
                 </div>
                 <div class="note-item">
                     <span class="note-icon">⚠️</span>
-                    <p>
+                    <p data-lang-key="manual-excel-export-note3">
                         エクスポート対象はモデル内の要素のみです。リンクモデルの要素は含まれません。
                     </p>
                 </div>
@@ -311,16 +311,16 @@
         <section class="manual-section">
             <h2 class="section-title" data-lang-key="section-troubleshooting">トラブルシューティング</h2>
             <div class="content-box">
-                <h3 style="font-size: 1.05rem; margin-top: 0;">カテゴリが一覧に表示されない</h3>
+                <h3 style="font-size: 1.05rem; margin-top: 0;" data-lang-key="manual-excel-export-trouble1-title">カテゴリが一覧に表示されない</h3>
                 <ul>
-                    <li>アクティブビューやスコープに要素が存在しない場合、そのカテゴリは表示されません</li>
-                    <li><strong>プロジェクト全体</strong>スコープで実行するとより多くのカテゴリが表示されます</li>
+                    <li data-lang-key="manual-excel-export-trouble1-item1">アクティブビューやスコープに要素が存在しない場合、そのカテゴリは表示されません</li>
+                    <li data-lang-key="manual-excel-export-trouble1-item2"><strong>プロジェクト全体</strong>スコープで実行するとより多くのカテゴリが表示されます</li>
                 </ul>
 
-                <h3 style="font-size: 1.05rem; margin-top: 20px;">通り芯・レベルなどの注釈要素が表示されない</h3>
+                <h3 style="font-size: 1.05rem; margin-top: 20px;" data-lang-key="manual-excel-export-trouble2-title">通り芯・レベルなどの注釈要素が表示されない</h3>
                 <ul>
-                    <li>アクティブビューに通り芯・レベルが表示されている状態でエクスポートすると一覧に表示されます</li>
-                    <li>プロジェクト全体スコープでも対応しています</li>
+                    <li data-lang-key="manual-excel-export-trouble2-item1">アクティブビューに通り芯・レベルが表示されている状態でエクスポートすると一覧に表示されます</li>
+                    <li data-lang-key="manual-excel-export-trouble2-item2">プロジェクト全体スコープでも対応しています</li>
                 </ul>
             </div>
         </section>
@@ -331,12 +331,12 @@
             <div class="content-box">
                 <ul>
                     <li>
-                        <a href="excel-import.html">Excelインポート</a>
-                        <span> — エクスポートしたファイルをRevitに一括反映</span>
+                        <a href="excel-import.html" data-lang-key="manual-excel-export-related-import">Excelインポート</a>
+                        <span data-lang-key="manual-excel-export-related-import-desc"> — エクスポートしたファイルをRevitに一括反映</span>
                     </li>
                     <li>
-                        <a href="formwork-calculator.html">型枠数量算出</a>
-                        <span> — 構造要素の型枠面積を自動算出してExcelに出力</span>
+                        <a href="formwork-calculator.html" data-lang-key="manual-excel-export-related-formwork">型枠数量算出</a>
+                        <span data-lang-key="manual-excel-export-related-formwork-desc"> — 構造要素の型枠面積を自動算出してExcelに出力</span>
                     </li>
                 </ul>
             </div>
