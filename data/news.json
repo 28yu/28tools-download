@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-14T02:26:08.048341",
+  "lastUpdated": "2026-05-15T02:14:52.224657",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -10,6 +10,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "THE TOKYO TOILETとは｜渋谷トイレプロジェクトを解説",
+      "link": "https://news.build-app.jp/article/40539/",
+      "description": "トレンドワード：THE TOKYO TOILET 近年、公共トイレは単なるインフラではなく、街の景観や快適性を構成する重要な公共空間として注......",
+      "publishedDate": "Wed, 13 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/ebfa38355cbed65c1f8a39423f906ef0-130x82.png",
+      "language": "ja"
     },
     {
       "title": "建設業の”紙・FAX・Excel”はなぜなくならないのか─ 資材リース業の構造的課題",
@@ -92,6 +102,26 @@
       "language": "en"
     },
     {
+      "title": "「ワークサイト」建設現場で誰が、どの作業で、どの役割を担うかを可視化",
+      "link": "https://news.build-app.jp/article/40572/",
+      "description": "エムシーディースリー株式会社（東京都渋谷区、代表取締役社長：飯田正生）は、現場の施工管理サービス「ワークサイト」のVer.2.0をリリースし......",
+      "publishedDate": "Thu, 14 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/08/AdobeStock_856647044-130x87.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "We are looking for feedback on your experience with IDS",
+      "link": "https://www.buildingsmart.org/we-are-looking-for-feedback-on-your-experience-with-ids/",
+      "description": "Information Delivery Specification (IDS) marks its second anniversary this June, and we want to hear from the community - especially IDS users and implementers. Share your feedback on what works... Th...",
+      "publishedDate": "Thu, 14 May 2026 10:13:46 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "The buildingSMART Implementers Assembly, February 2026 Event Report",
       "link": "https://www.buildingsmart.org/the-buildingsmart-implementers-assembly-february-2026-event-report/",
       "description": "The latest buildingSMART Implementers Assembly, hosted by Bentley in their Exton (PA) office, brought together the buildingSMART implementers community for two days of focused discussion and practical...",
@@ -100,26 +130,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "システム建築とは？工事関係者向けに在来工法との違いと施工上の注意点を解説",
-      "link": "https://news.build-app.jp/article/40450/",
-      "description": "工場や倉庫の建設で、システム建築はよく選ばれる工法です。短工期やコスト削減の文脈で使われることが多い一方で、実際の現場では「どこまでが標準仕......",
-      "publishedDate": "Thu, 07 May 2026 23:18:09 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/27375202_m-130x73.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Autodesk、BIM ソフトウェア最新版「Revit 2027」を発表",
-      "link": "https://news.build-app.jp/article/40422/",
-      "description": "米国 Autodesk 社（本社：カリフォルニア州／プレジデント兼 CEO：アンドリュー・アナグノスト、以下 Autodesk）は、建築・エ......",
-      "publishedDate": "Thu, 07 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/06/1OuYEyS3UA1hSiU1654610254_1654610274-130x82.jpg",
-      "language": "ja"
     },
     {
       "title": "人手削減・燃費30%減──清水建設「Smart Dozer」が変える建設現場",
@@ -142,16 +152,6 @@
       "language": "ja"
     },
     {
-      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第二回)",
-      "link": "https://news.build-app.jp/article/40323/",
-      "description": "建設分野でのAI援用の現在地を追跡している。今回は、建設業の最も重要な生産拠点である建設現場を支援するAIの援用事例を紹介する。 AIが現場......",
-      "publishedDate": "Sun, 10 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/ec23754ed105f7f03f0a938099a01b58-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "建設業の変革に伴走する｜現場Hubの挑戦（前編）",
       "link": "https://news.build-app.jp/article/40338/",
       "description": "工事・メンテナンスの現場では、案件管理や見積り、発注、報告書作成、写真共有、顧客対応を同時に行う必要があります。ところが実務の現場では、情報......",
@@ -169,6 +169,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/03/YlGfsNl7G2Lavvy1647909233-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第二回)",
+      "link": "https://news.build-app.jp/article/40323/",
+      "description": "建設分野でのAI援用の現在地を追跡している。今回は、建設業の最も重要な生産拠点である建設現場を支援するAIの援用事例を紹介する。 AIが現場......",
+      "publishedDate": "Sun, 10 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/ec23754ed105f7f03f0a938099a01b58-130x82.png",
       "language": "ja"
     },
     {
@@ -286,16 +296,6 @@
       "link": "https://www.buildingsmart.org/key-outcomes-from-the-domain-leadership-conference-in-zurich/",
       "description": "The recent Domain Leadership Conference held in Zurich on 4 &#38; 5 February marked an important moment for buildingSMART International. bSI Domains are membership-led, pro bono programmes representin...",
       "publishedDate": "Fri, 20 Mar 2026 10:06:51 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "openBIM Practitioner Certification enters full-scale implementation across Chapters",
-      "link": "https://www.buildingsmart.org/openbim-practitioner-certification-enters-full-scale-implementation-across-chapters/",
-      "description": "The openBIM Practitioner Certification is now rolling out across the buildingSMART community, as part of the ongoing expansion of the Professional Certification Program, marking a major milestone in p...",
-      "publishedDate": "Fri, 05 Dec 2025 22:18:08 +0000",
       "source": "buildingSMART International",
       "category": "bim",
       "thumbnail": null,
