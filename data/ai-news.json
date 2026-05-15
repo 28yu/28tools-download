@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-14T04:44:16.245929",
+  "lastUpdated": "2026-05-15T04:52:07.757808",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -36,9 +36,9 @@
     },
     {
       "title": "AI chatbots are giving out people’s real phone numbers",
-      "titleJa": "AI チャットボットが人々の実際の電話番号を公開している",
+      "titleJa": "AI チャットボットが人々の実際の電話番号を提供している",
       "link": "https://www.technologyreview.com/2026/05/13/1137203/ai-chatbots-are-giving-out-peoples-real-phone-numbers/",
-      "description": "People report that their personal contact info was surfaced by Google AI—and there’s apparently no easy way to prevent it.&#160; A Redditor recently wrote that he was “desperate for help”: for about a...",
+      "description": "A Redditor recently wrote that he was “desperate for help”: for about a month, he said, his phone had been inundated by calls from “strangers” who were “looking for a lawyer, a product designer, a loc...",
       "publishedDate": "Wed, 13 May 2026 18:09:03 +0000",
       "source": "MIT Technology Review",
       "category": "research",
@@ -79,17 +79,6 @@
       "language": "en"
     },
     {
-      "title": "【5月21日 渋谷開催】生成AIの「いま」を語る！トークセッション＆交流会",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/20260521-talksession-networkingevent/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年5月21日（木）19時から生成AIのトレンドや社内事例に関するトークセッションおよび交流会を開催します。 イベント概要 「 [...] The post 【5月21日 渋谷開催】生成AIの「いま」を語る！トークセッション＆交流会 first appeared on AIポータルメディアAIsmiley...",
-      "publishedDate": "Wed, 13 May 2026 05:00:32 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/cover-4pOFE1z5IXLLR9gK1LBEDHLYG2S9onSG.png",
-      "language": "ja"
-    },
-    {
       "title": "Our response to the TanStack npm supply chain attack",
       "titleJa": "TanStack npm サプライ チェーン攻撃に対する当社の対応",
       "link": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
@@ -97,7 +86,7 @@
       "publishedDate": "Wed, 13 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
-      "thumbnail": "https://images.ctfassets.net/kftzwdyauwt9/5sVkleeWkpnumrq0G1UkIW/138a18ce1af4678fc72e12fe691f3ad8/Frame-1.png?w=1600&amp;h=900&amp;fit=fill",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -222,17 +211,6 @@
       "language": "en"
     },
     {
-      "title": "DCON2026優勝チームは「豊田工業高専」評価額は5億6000万円！",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/dcon2026-deep-learning/",
-      "description": "高専生が日頃培った「ものづくりの技術」と、「ディープラーニング」を活用した事業アイデアで、企業評価額を競うコンテスト「第7回全国高等専門学校ディープラーニングコンテスト2026（DCON2026）」の本選が2026年5月 [...] The post DCON2026優勝チームは「豊田工業高専」評価額は5億6000万円！ first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 12 May 2026 09:47:30 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/ainewseyedcon100.png",
-      "language": "ja"
-    },
-    {
       "title": "Azure OpenAI Serviceとは？ChatGPTとの違い・料金・使い方を企業向けに解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/azure-openai-service",
@@ -277,83 +255,6 @@
       "language": "ja"
     },
     {
-      "title": "「AI博覧会 Nagoya 2026」カンファレンス第1弾スピーカーを発表！名古屋銀行、ダイハツ工業、岡谷鋼機など、東海エリアでのAI活用を推進する最新事例を発表",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-hakurankai-nagoya2026-1stspeakers/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年6月16日（火）・17日（水）の2日間、名古屋コンベンションホールにて「AI博覧会 Nagoya 2026」を開催します。 [...] The post 「AI博覧会 Nagoya 2026」カンファレンス第1弾スピーカーを発表！名古屋銀行、ダイハツ工業、岡谷鋼機など、東海エリアでのAI活用を推進する...",
-      "publishedDate": "Tue, 12 May 2026 02:30:05 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/nagoya2026-1stspeakers.png",
-      "language": "ja"
-    },
-    {
-      "title": "KDDIアイレット、キャリア採用の選考プロセスに「AI面接」導入。候補者体験と採用品質の向上を両立",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kddi-iret-shain-introduce/",
-      "description": "KDDIアイレットは、キャリア採用の選考プロセスに、対話型AI面接サービス「SHaiN」を活用したAI面接を本格導入することを発表しました。 このニュースのポイント KDDIアイレット、キャリア採用の選考プロセスにAI面 [...] The post KDDIアイレット、キャリア採用の選考プロセスに「AI面接」導入。候補者体験と採用品質の向上を両立 first appeared on AIポータル...",
-      "publishedDate": "Tue, 12 May 2026 02:22:04 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/kddishain2.png",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Code Remote Controlとは？セットアップと使い方の手順・料金・セキュリティを詳しく解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-code-remote-control/",
-      "description": "生成AIにコーディングしてもらうAIエージェントが注目を集めています。数ある生成AIの中でもコーディング技術の評価が高い「Claude」は、開発者やビジネスパーソンなど多くのユーザーに利用されています。 しかし、生成AI [...] The post Claude Code Remote Controlとは？セットアップと使い方の手順・料金・セキュリティを詳しく解説 first appeared ...",
-      "publishedDate": "Tue, 12 May 2026 01:51:36 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/ClaudeCodeRemoteControl.png",
-      "language": "ja"
-    },
-    {
-      "title": "Copilot Coworkとは？最新機能・使い方・料金を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/copilot-cowork/",
-      "description": "Microsoft 365 Copilotの新機能や強化内容を、いち早く知りたい方も多いのではないでしょうか。 Microsoft 365は、OfficeやTeamsなど、業務で使うアプリやクラウドサービスをまとめて利用 [...] The post Copilot Coworkとは？最新機能・使い方・料金を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 12 May 2026 01:01:49 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/03/copilot-cowork.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "【5月27日開催ウェビナー】 AIエージェント 2.0 ー 体験で差がつく時代",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/20260527webinar/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年5月27日（水）15時から音声AIエージェント活用をテーマにウェビナーを開催します。 AIエージェントは、単なる自動化や回 [...] The post 【5月27日開催ウェビナー】 AIエージェント 2.0 ー 体験で差がつく時代 first appeared on AIポータルメディアAIsmil...",
-      "publishedDate": "Tue, 12 May 2026 01:00:59 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/1049_1200x628_3.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "内閣府、生成AI利用の調査結果を発表。2割超が毎日利用、10代女性の6割超が人間関係のアドバイスを信頼",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/cabinet-office-consumer-ai-report/",
-      "description": "内閣府の消費者委員会事務局は、生成AI利用者の利用実態に関するアンケート結果を発表しました。毎日利用する人は2割超で、利用頻度は過半数が増えていると回答したほか、若年層が人間関係の悩みに対するアドバイスに信頼を寄せている [...] The post 内閣府、生成AI利用の調査結果を発表。2割超が毎日利用、10代女性の6割超が人間関係のアドバイスを信頼 first appeared on AIポー...",
-      "publishedDate": "Tue, 12 May 2026 00:54:19 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/naikakuaireporteye.png",
-      "language": "ja"
-    },
-    {
-      "title": "経産省、電力・ガスなどの重要インフラ事業者と意見交換を実施。高性能AIへの対応を要請",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/meti-ai-electricity-cyber-security/",
-      "description": "経産省は、ソフトウェアの脆弱性発見能力が高いAIの開発が進んでいる状況を踏まえて、電力やガスなどの重要インフラ事業者と意見交換を実施しました。 このニュースのポイント ソフトウェアの脆弱性発見能力が高いAIの開発が進んで [...] The post 経産省、電力・ガスなどの重要インフラ事業者と意見交換を実施。高性能AIへの対応を要請 first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Tue, 12 May 2026 00:47:36 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/metieye.png",
-      "language": "ja"
-    },
-    {
       "title": "What Parameter Golf taught us about AI-assisted research",
       "titleJa": "Parameter Golf が AI 支援研究について教えてくれたこと",
       "link": "https://openai.com/index/what-parameter-golf-taught-us",
@@ -365,10 +266,10 @@
       "language": "en"
     },
     {
-      "title": "AutoScout24 scales engineering with AI-powered workflows",
-      "titleJa": "AutoScout24 は AI を活用したワークフローでエンジニアリングを拡張します",
-      "link": "https://openai.com/index/autoscout24",
-      "description": "Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption....",
+      "title": "How NVIDIA engineers and researchers build with Codex",
+      "titleJa": "NVIDIA のエンジニアと研究者が Codex を使用して構築する方法",
+      "link": "https://openai.com/index/nvidia",
+      "description": "Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments....",
       "publishedDate": "Tue, 12 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -376,10 +277,10 @@
       "language": "en"
     },
     {
-      "title": "How NVIDIA engineers and researchers build with Codex",
-      "titleJa": "NVIDIA のエンジニアと研究者が Codex を使用して構築する方法",
-      "link": "https://openai.com/index/nvidia",
-      "description": "Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments....",
+      "title": "AutoScout24 scales engineering with AI-powered workflows",
+      "titleJa": "AutoScout24 は AI を活用したワークフローでエンジニアリングを拡張します",
+      "link": "https://openai.com/index/autoscout24",
+      "description": "Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption....",
       "publishedDate": "Tue, 12 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -453,26 +354,114 @@
       "language": "en"
     },
     {
-      "title": "The PR you would have opened yourself",
-      "titleJa": "自分で開設したはずの PR",
-      "link": "https://huggingface.co/blog/transformers-to-mlx",
-      "description": "...",
-      "publishedDate": "Thu, 16 Apr 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/transformers-to-mlx/thumbnail.jpg",
+      "title": "Sea's View on the Future of Agentic Software Development with Codex",
+      "titleJa": "Codex を使用したエージェントティック ソフトウェア開発の将来に関する Sea の見解",
+      "link": "https://openai.com/index/sea-david-chen",
+      "description": "Sea Limited's CPO explains why the company is deploying Codex across engineering teams to accelerate AI-native software development in Asia....",
+      "publishedDate": "Thu, 14 May 2026 20:30:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
-      "title": "Training and Finetuning Multimodal Embedding & Reranker Models with Sentence Transformers",
-      "titleJa": "文トランスフォーマーを使用したマルチモーダル埋め込みおよびリランカー モデルのトレーニングと微調整",
-      "link": "https://huggingface.co/blog/train-multimodal-sentence-transformers",
+      "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+      "titleJa": "Granite エンベディング多言語 R2: 32K コンテキストを備えたオープン Apache 2.0 多言語エンベディング — 最高の 100M 未満の検索品質",
+      "link": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
       "description": "...",
-      "publishedDate": "Thu, 16 Apr 2026 00:00:00 GMT",
+      "publishedDate": "Thu, 14 May 2026 18:55:01 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ibm-granite/granite-embedding-multilingual-r2.png",
       "language": "en"
+    },
+    {
+      "title": "Gemini Intelligenceとは？Googleデバイスを進化させるAI機能の使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/gemini-intelligence/",
+      "description": "Gemini Intelligenceは、Googleが発表した次世代のAI機能です。従来のようにAIへ質問するだけではなく、複数のアプリをまたいで作業を自動化できる点が特徴です。 実際に、GoogleはAndroidを [...]...",
+      "publishedDate": "Thu, 14 May 2026 11:09:42 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Gemini-Intelligence_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPT Images 2.0とは？機能・使い方・料金プランを徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-images-2-0/",
+      "description": "ChatGPT Images 2.0は、2026年春に公開されたOpenAIの最新画像生成機能です。日本語を含む多言語テキストの描画、2K解像度やパノラマ出力、キャラクターの一貫性制御など、実務に直結する機能が大幅に強化 [...] The post ChatGPT Images 2.0とは？機能・使い方・料金プランを徹底解説 first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Thu, 14 May 2026 08:58:33 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/gpt20_main.png",
+      "language": "ja"
+    },
+    {
+      "title": "「ウェザーニュース」アプリが大幅バージョンアップ。独自AIによる天気予報と雨雲レーダーが全世界対応",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/weathernews-version-up-global/",
+      "description": "ウェザーニューズ運営の「ウェザーニュース」アプリが大幅にバージョンアップしました。独自AI技術による天気予報と雨雲レーダーが世界対応となり、現地に最適化された気象・防災情報を確認できます。 このニュースのポイント 「ウェ [...] The post 「ウェザーニュース」アプリが大幅バージョンアップ。独自AIによる天気予報と雨雲レーダーが全世界対応 first appeared on AIポータル...",
+      "publishedDate": "Thu, 14 May 2026 06:11:52 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/weathernewseye.png",
+      "language": "ja"
+    },
+    {
+      "title": "JALと東京国際空港、世界初となる航空便乗り継ぎでのデジタルアイデンティティ活用実験成功",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/jal-hnd-biometric-trial/",
+      "description": "JALと東京国際空港ターミナルは、国際航空運送協会のプログラムに共同参画し、世界初となるデジタルアイデンティティを活用した顔認証搭乗・乗り継ぎの実証実験を実施しました。 このニュースのポイント JALと東京国際空港が、デ [...] The post JALと東京国際空港、世界初となる航空便乗り継ぎでのデジタルアイデンティティ活用実験成功 first appeared on AIポータルメディアA...",
+      "publishedDate": "Thu, 14 May 2026 05:56:52 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/haneda-jaL-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "博報堂とビザスク、資本業務提携を締結。「エキスパートAI」の共同開発で新しい意思決定を支援",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/hakuhodo-visasq-expert-ai/",
+      "description": "博報堂とビザスクは資本業務提携を結び、「エキスパートAI」の共同開発を開始しました。専門家の思考を学習したAIで、企業の新規事業や戦略立案における意思決定を支援します。 このニュースのポイント 博報堂とビザスクが資本業務 [...] The post 博報堂とビザスク、資本業務提携を締結。「エキスパートAI」の共同開発で新しい意思決定を支援 first appeared on AIポータルメディア...",
+      "publishedDate": "Thu, 14 May 2026 05:48:18 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/hakuhodo-visasq-expert-ai.png",
+      "language": "ja"
+    },
+    {
+      "title": "イー・ガーディアン、AIと人の知見を融合した「AI BPOセンター」への変革を推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/e-guardian-ai-bpocenter/",
+      "description": "イー・ガーディアンは、AIと人の知見を融合した「AI BPOセンター」へのトランスフォーメーションを推進すると発表しました。受託案件ごとにAI活用の実現可能性を精緻に検証し、体制構築の本格化を目指す方針です。 このニュー [...] The post イー・ガーディアン、AIと人の知見を融合した「AI BPOセンター」への変革を推進 first appeared on AIポータルメディアAIsm...",
+      "publishedDate": "Thu, 14 May 2026 05:46:52 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/E-Guardian-AI-BPOcenter.png",
+      "language": "ja"
+    },
+    {
+      "title": "【Agent view in Claude Code】並列エージェントを一画面で管理！Claude Codeの新機能の使い方・仕組み・活用シーンを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/agent-view-in-claude-code/",
+      "description": "2026年5月11日、AnthropicがClaude Codeの新機能「Agent view（エージェントビュー）」を公開しました！ Claude Codeで複数のエージェントを並列に走らせると、ターミナルのタブを何枚 [...]...",
+      "publishedDate": "Thu, 14 May 2026 05:35:37 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Agent-view-in-Claude-Code_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claude for Small Businessとは？中小企業の経理・営業・マーケをAIが自動化するツールを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/claude-for-small-business/",
+      "description": "2026年5月、AnthropicからClaude for Small Businessが発表されました。 今回発表された「Claude for Small Business」は、中小企業が毎日使うSaaSツールの中にC [...]...",
+      "publishedDate": "Thu, 14 May 2026 05:18:07 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-for-Small-Business_2605-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "Claude APIとは？使い方・料金・モデルの違いを徹底解説",
@@ -497,17 +486,6 @@
       "language": "ja"
     },
     {
-      "title": "三井住友フィナンシャルグループとSakana AI、提案書自動生成アプリを開発",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/smbc-sakana-ai-application/",
-      "description": "SMBCグループとSakana AIは、生成AIを活用した「提案書自動生成アプリケーション」を開発し、三井住友銀行で導入を開始したと発表しました。財務・非財務情報の分析や提案書ドラフト作成をAIが支援し、銀行業務の高度化 [...] The post 三井住友フィナンシャルグループとSakana AI、提案書自動生成アプリを開発 first appeared on AIポータルメディアAIsmil...",
-      "publishedDate": "Mon, 11 May 2026 07:27:52 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/smbc-sakana.png",
-      "language": "ja"
-    },
-    {
       "title": "GitHub Copilotとは？導入前に知っておきたい使い方・料金を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/github-copilot/",
@@ -519,36 +497,69 @@
       "language": "ja"
     },
     {
-      "title": "Azure Portalとは？クラウドリソースを一元管理できるツール！できること・使い方・料金の仕組みを解説",
+      "title": "大塚商会「たよれーる AIまるごと伴走支援サービス」を提供開始",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/azure-portal/",
-      "description": "クラウドサービスの導入が進む中、管理作業の効率化が大きな課題となっています。そんな悩みを解決してくれるのがMicrosoftのAzure Portalです。 例えば、これまで別々の画面で確認していた複数のサービスを、Az [...]...",
-      "publishedDate": "Fri, 08 May 2026 11:22:07 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/azure-portal_2605-1024x576.webp",
+      "link": "https://aismiley.co.jp/ai_news/otsuka-shokai-ai-support-service/",
+      "description": "大塚商会は、中堅・中小企業向けにAI関連SaaSの活用と定着を継続支援する「たよれーる AIまるごと伴走支援サービス」を提供開始しました。 このニュースのポイント 大塚商会が「たよれーる AIまるごと伴走支援サービス」を [...] The post 大塚商会「たよれーる AIまるごと伴走支援サービス」を提供開始 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 15 May 2026 02:00:45 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/otsuka-shokai-logo.png",
       "language": "ja"
     },
     {
-      "title": "ChatGPTを用いた犯罪・不正利用の実態とは？具体的な手口と被害を防ぐ対策を解説",
+      "title": "天草市、AIチャットボット「あまくさ子育て応援AIコンシェルジュ」本格運用を開始",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/chatgpt-abuse-crime",
-      "description": "ChatGPTの普及とともに、犯罪に悪用されるリスクも増えています。日本語を話せないはずの人が日本人女性になりすまして、流暢な日本語のメッセージを送ったり、企業や団体を装って、偽サイトへのアクセスを誘導する文章を送ったり [...]...",
-      "publishedDate": "Fri, 08 May 2026 10:50:03 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-abuse-crime_2605-1024x576.webp",
+      "link": "https://aismiley.co.jp/ai_news/amakusa-ai-childcare/",
+      "description": "熊本県天草市は、子育てに関する質問に回答するAIチャットボット「あまくさ子育て応援 AI コンシェルジュ」の本格運用を開始しました。スマホやPCから自然な会話で質問可能で、夜間や休日でも24時間、必要な情報をスムーズに確 [...] The post 天草市、AIチャットボット「あまくさ子育て応援AIコンシェルジュ」本格運用を開始 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Fri, 15 May 2026 02:00:26 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/Amakusa-city-ai-chatbot.png",
       "language": "ja"
     },
     {
-      "title": "Grok Connectorsとは？GrokのAI連携機能の特徴・使い方を徹底解説",
+      "title": "OpenAI、企業向けAI導入支援会社「OpenAI Deployment Company」を設立",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/grok-connectors/",
-      "description": "2026年5月、xAIからGrokの新機能「Connectors」が発表されました。 今回登場した「Grok Connectors」は、メール・カレンダー・クラウドストレージ・プロジェクト管理ツールなど、日常的に使うアプ [...]...",
-      "publishedDate": "Fri, 08 May 2026 05:41:31 +0000",
-      "source": "WEEL",
+      "link": "https://aismiley.co.jp/ai_news/openai-openai-deployment-company-build/",
+      "description": "OpenAIは、企業向けAI導入支援会社「OpenAI Deployment Company」を設立したと発表しました。あわせて、AIコンサルティング企業の英Tomoroの買収も発表しています。 このニュースのポイント [...] The post OpenAI、企業向けAI導入支援会社「OpenAI Deployment Company」を設立 first appeared on AIポータルメ...",
+      "publishedDate": "Fri, 15 May 2026 02:00:05 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/OpenAI-Deployment-Company.png",
+      "language": "ja"
+    },
+    {
+      "title": "音声認識アプリおすすめ10選｜無料・Android対応を徹底比較",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/voice-recognition-app-10-selections/",
+      "description": "「会議の議事録作成に毎回何時間もかかっている」「メモに集中しすぎて、肝心の会話に参加できない」といった悩みを抱えていませんか？ 最新のAI音声認識アプリを使えば高精度かつリアルタイムに文字起こしをしてくれるため、面倒なタ [...] The post 音声認識アプリおすすめ10選｜無料・Android対応を徹底比較 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 15 May 2026 01:48:41 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/voiceapp.png",
+      "language": "ja"
+    },
+    {
+      "title": "AIエージェントおすすめ13選｜種類別の比較と選び方を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-agent-comparison/",
+      "description": "「自社の業務を自動化したいが、種類が多すぎてどのAIエージェントを選べば費用対効果が出るのか分からない」と悩んでいませんか？ 本記事では、AIエージェントの仕組みやAIチャットボットとの違いから、業務課題別のおすすめサー [...] The post AIエージェントおすすめ13選｜種類別の比較と選び方を徹底解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 15 May 2026 01:06:35 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/AIagentMain.png",
+      "language": "ja"
+    },
+    {
+      "title": "VS Code、複数AIエージェントでの開発を容易にする新機能「Agent window」プレビュー公開",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/vs_codeaiagent_window.html",
+      "description": "Visual Studio Code（以下、VS Code）の開発チームは、VS Codeで複数のAIエージェントを用いた開発を容易にする新機能「Agent window」を5月13日に公開されたVisual Studio Code 1.1......",
+      "publishedDate": "2026-05-14T15:13:08Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/grok-connectors_2605-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/agent-window-vscode1120.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/gemini-enterprise-angent-platform-gcn01.png",
-      "language": "ja"
-    },
-    {
-      "title": "Vercel、Webブラウザ上のターミナルエミュレータ「wterm」をオープンソースで公開。WebAssembly製でWebページに埋め込み可能",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/vercelwebwtermwebassemblyweb.html",
-      "description": "Vercelは、Webブラウザ上でターミナルエミュレータを実現する「wterm」（発音は“dub-term”：ダブターム）をオープンソースで公開しました。 wtermはコア部分がZig言語で開発されWebAssemblyにコンパイルされて提......",
-      "publishedDate": "2026-04-21T15:46:05Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/vercel-wterm-ossrelease.png",
       "language": "ja"
     }
   ]
