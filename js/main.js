@@ -7381,6 +7381,39 @@ translations.filledRegion = {
         }
     };
 
+    translations.featuresPage = {
+        'features-breadcrumb': {
+            ja: '機能一覧',
+            en: 'Feature List',
+            zh: '功能列表'
+        },
+        'features-page-title': {
+            ja: '機能カタログ',
+            en: 'Feature Catalog',
+            zh: '功能目录'
+        },
+        'features-page-desc': {
+            ja: 'Revitアドインの全機能をカテゴリ別に表示します。各カードをクリックするとマニュアルが表示されます。',
+            en: 'All Revit add-in features organized by category. Click a card to view the manual.',
+            zh: '按类别显示所有Revit插件功能。点击卡片查看使用手册。'
+        },
+        'features-loading': {
+            ja: '機能データを読み込んでいます...',
+            en: 'Loading feature data...',
+            zh: '正在加载功能数据...'
+        },
+        'features-error': {
+            ja: '機能データの取得に失敗しました。しばらくしてからページを再読み込みしてください。',
+            en: 'Failed to load feature data. Please reload the page after a moment.',
+            zh: '获取功能数据失败。请稍后刷新页面。'
+        },
+        'features-back-to-list': {
+            ja: '← 機能一覧に戻る',
+            en: '← Back to Feature List',
+            zh: '← 返回功能列表'
+        }
+    };
+
     // 全翻訳をマージ
     Object.assign(translations,
         translations.common,
@@ -7412,7 +7445,8 @@ translations.filledRegion = {
         translations.termsPage,
         translations.newsPage,
         translations.aiNewsPage,
-        translations.familyPage
+        translations.familyPage,
+        translations.featuresPage
     );
     
     console.log('📚 Translations initialized (v7.3 - サポート情報・インストール手順の汎用化)');

@@ -1,0 +1,199 @@
+/* features.html / manual.html 共通スタイル */
+
+/* ---- カタログ: 読み込み・エラー表示 ---- */
+.catalog-loading,
+.catalog-error {
+    text-align: center;
+    padding: 40px 16px;
+    color: var(--text-secondary, #6c757d);
+    font-size: 1rem;
+}
+.catalog-error {
+    color: #c0392b;
+}
+
+/* ---- カタログ: カテゴリセクション ---- */
+.feature-category {
+    margin-bottom: 48px;
+}
+.feature-category-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--concrete-gray, #2c3e50);
+    border-left: 4px solid var(--blueprint-blue, #3498db);
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+/* ---- カタログ: 機能グリッド ---- */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+}
+
+/* ---- カタログ: 機能カード ---- */
+.feature-catalog-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 12px 16px;
+    border: 1px solid var(--light-border, #e9ecef);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-primary, #2c3e50);
+    background: #fff;
+    transition: box-shadow 0.2s, transform 0.15s;
+}
+.feature-catalog-card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+    border-color: var(--blueprint-blue, #3498db);
+}
+.feature-catalog-card img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+.feature-catalog-name {
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.4;
+    color: var(--text-primary, #2c3e50);
+}
+
+/* ---- 新機能バッジ ---- */
+.feature-new-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: var(--construction-orange, #e67e22);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+/* ---- manual.html: Markdown コンテンツ ---- */
+.md-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 8px 0 32px;
+    line-height: 1.8;
+    color: var(--text-primary, #2c3e50);
+    font-size: 15px;
+}
+.md-content h1 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--concrete-gray, #2c3e50);
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+}
+.md-content h2 {
+    font-size: 1.3rem;
+    margin-top: 36px;
+    border-left: 4px solid var(--blueprint-blue, #3498db);
+    padding-left: 10px;
+    color: var(--concrete-gray, #2c3e50);
+}
+.md-content h3 {
+    font-size: 1.1rem;
+    margin-top: 24px;
+    color: var(--steel-blue, #34495e);
+}
+.md-content p {
+    margin: 12px 0;
+}
+.md-content ul,
+.md-content ol {
+    padding-left: 24px;
+    margin: 12px 0;
+}
+.md-content li {
+    margin: 6px 0;
+}
+.md-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 14px;
+}
+.md-content th,
+.md-content td {
+    border: 1px solid #ccc;
+    padding: 8px 14px;
+    text-align: left;
+}
+.md-content th {
+    background: #eaf3fb;
+    font-weight: 600;
+}
+.md-content tr:nth-child(even) td {
+    background: #f9f9f9;
+}
+.md-content code {
+    background: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.88em;
+}
+.md-content pre {
+    background: #f4f4f4;
+    padding: 16px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 16px 0;
+}
+.md-content pre code {
+    background: none;
+    padding: 0;
+}
+.md-content img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin: 12px 0;
+}
+.md-content blockquote {
+    border-left: 4px solid var(--blueprint-blue, #3498db);
+    margin: 16px 0;
+    padding: 8px 16px;
+    background: #f0f7ff;
+    border-radius: 0 6px 6px 0;
+    color: var(--steel-blue, #34495e);
+}
+.md-content a {
+    color: var(--blueprint-blue, #3498db);
+    text-decoration: none;
+}
+.md-content a:hover {
+    text-decoration: underline;
+}
+
+/* ---- レスポンシブ ---- */
+@media (max-width: 600px) {
+    .feature-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 12px;
+    }
+    .feature-catalog-card img {
+        width: 48px;
+        height: 48px;
+    }
+    .feature-catalog-name {
+        font-size: 12px;
+    }
+    .md-content {
+        font-size: 14px;
+    }
+    .md-content h1 {
+        font-size: 1.4rem;
+    }
+    .md-content h2 {
+        font-size: 1.1rem;
+    }
+}
