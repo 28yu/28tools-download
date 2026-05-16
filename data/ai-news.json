@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-15T04:52:07.757808",
+  "lastUpdated": "2026-05-16T04:29:50.246030",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -36,24 +36,13 @@
     },
     {
       "title": "AI chatbots are giving out people’s real phone numbers",
-      "titleJa": "AI チャットボットが人々の実際の電話番号を提供している",
+      "titleJa": "AI チャットボットが人々の実際の電話番号を公開している",
       "link": "https://www.technologyreview.com/2026/05/13/1137203/ai-chatbots-are-giving-out-peoples-real-phone-numbers/",
       "description": "A Redditor recently wrote that he was “desperate for help”: for about a month, he said, his phone had been inundated by calls from “strangers” who were “looking for a lawyer, a product designer, a loc...",
       "publishedDate": "Wed, 13 May 2026 18:09:03 +0000",
       "source": "MIT Technology Review",
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/Cropped_Paybox-Account-Reset-Without-Phone-Google-Gemini-2.jpg",
-      "language": "en"
-    },
-    {
-      "title": "The Download: making drugs in orbit and NASA’s nuclear-powered spacecraft",
-      "titleJa": "ダウンロード: 軌道上での薬物製造と NASA の原子力宇宙船",
-      "link": "https://www.technologyreview.com/2026/05/13/1137176/the-download-drugs-in-orbit-nasa-nuclear-spacecraft/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A plan to make drugs in orbit is going commercial ...",
-      "publishedDate": "Wed, 13 May 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/06/Comp-13YS.jpg?w=2400",
       "language": "en"
     },
     {
@@ -65,17 +54,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "A plan to make drugs in orbit is going commercial",
-      "titleJa": "軌道上で医薬品を製造する計画が商業化される",
-      "link": "https://www.technologyreview.com/2026/05/13/1137153/varda-united-therapeutics-drug-manufacturing-in-space/",
-      "description": "Varda Space Industries, a startup that’s been pitching its ability to perform drug experiments in space, says it has signed up the pharmaceutical company United Therapeutics in what may be remembered ...",
-      "publishedDate": "Wed, 13 May 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/260511-drug-manufacturing-space-hero.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -178,17 +156,6 @@
       "language": "en"
     },
     {
-      "title": "World Models: 10 Things That Matter in AI Right Now",
-      "titleJa": "世界モデル: AI において今重要な 10 のこと",
-      "link": "https://www.technologyreview.com/2026/05/12/1137134/world-models-10-things-that-matter-in-ai-right-now/",
-      "description": "World models recently made our list of 10 Things That Matter in AI Right Now. Watch executive editor Niall Firth explain why this emerging area of AI is gaining so much attention. Join MIT Technology ...",
-      "publishedDate": "Tue, 12 May 2026 16:22:15 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/01/Mat-Honan-1.png",
-      "language": "en"
-    },
-    {
       "title": "How finance teams use Codex",
       "titleJa": "財務チームが Codex を使用する方法",
       "link": "https://openai.com/academy/how-finance-teams-use-codex",
@@ -197,17 +164,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The Download: a Nobel winner on AI, and the case for fixing everything",
-      "titleJa": "ダウンロード: AI 分野のノーベル賞受賞者とすべてを解決する根拠",
-      "link": "https://www.technologyreview.com/2026/05/12/1137103/the-download-nobel-winner-ai-maintenance-of-everything/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Three things in AI to watch, according to a Nobel-...",
-      "publishedDate": "Tue, 12 May 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/SoundofDataFinal1f-V-edited.jpeg",
       "language": "en"
     },
     {
@@ -244,28 +200,6 @@
       "language": "ja"
     },
     {
-      "title": "【Vidu Omni Video Pro】Q3を超える新モデル！Seedance 2.0ベースと噂の高品質動画生成を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/vidu-omni-video-pro/",
-      "description": "2026年5月10日、AI動画生成プラットフォーム「Vidu」上に、「Omni Video Pro」という名前の新モデルが急遽追加されました！ 公式からの正式なアナウンスはほぼなく、ユーザーの発見から話題になったこの新モ [...]...",
-      "publishedDate": "Tue, 12 May 2026 02:44:52 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Omni-Video-Pro-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "What Parameter Golf taught us about AI-assisted research",
-      "titleJa": "Parameter Golf が AI 支援研究について教えてくれたこと",
-      "link": "https://openai.com/index/what-parameter-golf-taught-us",
-      "description": "Parameter Golf brought together 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research, coding agents, quantization, and novel model design under strict constraint...",
-      "publishedDate": "Tue, 12 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "How NVIDIA engineers and researchers build with Codex",
       "titleJa": "NVIDIA のエンジニアと研究者が Codex を使用して構築する方法",
       "link": "https://openai.com/index/nvidia",
@@ -281,6 +215,17 @@
       "titleJa": "AutoScout24 は AI を活用したワークフローでエンジニアリングを拡張します",
       "link": "https://openai.com/index/autoscout24",
       "description": "Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption....",
+      "publishedDate": "Tue, 12 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "What Parameter Golf taught us about AI-assisted research",
+      "titleJa": "Parameter Golf が AI 支援研究について教えてくれたこと",
+      "link": "https://openai.com/index/what-parameter-golf-taught-us",
+      "description": "Parameter Golf brought together 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research, coding agents, quantization, and novel model design under strict constraint...",
       "publishedDate": "Tue, 12 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -355,7 +300,7 @@
     },
     {
       "title": "Sea's View on the Future of Agentic Software Development with Codex",
-      "titleJa": "Codex を使用したエージェントティック ソフトウェア開発の将来に関する Sea の見解",
+      "titleJa": "Codex によるエージェント ソフトウェア開発の将来に関する Sea の見解",
       "link": "https://openai.com/index/sea-david-chen",
       "description": "Sea Limited's CPO explains why the company is deploying Codex across engineering teams to accelerate AI-native software development in Asia....",
       "publishedDate": "Thu, 14 May 2026 20:30:00 GMT",
@@ -366,13 +311,57 @@
     },
     {
       "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-      "titleJa": "Granite エンベディング多言語 R2: 32K コンテキストを備えたオープン Apache 2.0 多言語エンベディング — 最高の 100M 未満の検索品質",
+      "titleJa": "Granite エンベディング多言語 R2: 32K コンテキストを備えたオープン Apache 2.0 多言語エンベディング - 最高のサブ 100M 検索品質",
       "link": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
       "description": "...",
       "publishedDate": "Thu, 14 May 2026 18:55:01 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ibm-granite/granite-embedding-multilingual-r2.png",
+      "language": "en"
+    },
+    {
+      "title": "Work with Codex from anywhere",
+      "titleJa": "どこからでも Codex を使用して作業する",
+      "link": "https://openai.com/index/work-with-codex-from-anywhere",
+      "description": "Use Codex anywhere with the ChatGPT mobile app. Monitor, steer, and approve coding tasks in real time across devices and remote environments....",
+      "publishedDate": "Thu, 14 May 2026 13:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Data readiness for agentic AI in financial services",
+      "titleJa": "金融サービスにおけるエージェント AI のデータ準備状況",
+      "link": "https://www.technologyreview.com/2026/05/14/1137034/data-readiness-for-agentic-ai-in-financial-services/",
+      "description": "Financial services companies have unique needs when it comes to business AI. They operate in one of the most highly regulated sectors while responding to external events that are updated by the second...",
+      "publishedDate": "Thu, 14 May 2026 13:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/Elastic-iStock-2224485239.jpg?w=1289",
+      "language": "en"
+    },
+    {
+      "title": "Establishing AI and data sovereignty in the age of autonomous systems",
+      "titleJa": "自律システム時代における AI とデータ主権の確立",
+      "link": "https://www.technologyreview.com/2026/05/14/1137168/establishing-ai-and-data-sovereignty-in-the-age-of-autonomous-systems/",
+      "description": "When generative AI first moved from research labs into real-world business applications, enterprises made a tacit bargain: “Capability now, control later.” Feed your proprietary data into third-party ...",
+      "publishedDate": "Thu, 14 May 2026 13:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/EDB-Report-2026-cover-FINAL.png",
+      "language": "en"
+    },
+    {
+      "title": "The Download: deepfake porn’s stolen bodies and AI sharing private numbers",
+      "titleJa": "ダウンロード: ディープフェイクポルノの盗まれた遺体とAIが個人番号を共有",
+      "link": "https://www.technologyreview.com/2026/05/14/1137257/the-download-deepfake-porn-bodies-ai-exposing-phone-numbers/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The shock of seeing your body used in deepfake por...",
+      "publishedDate": "Thu, 14 May 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/08/SO23_war-thumb.jpeg?w=2288",
       "language": "en"
     },
     {
@@ -464,36 +453,47 @@
       "language": "ja"
     },
     {
-      "title": "Claude APIとは？使い方・料金・モデルの違いを徹底解説",
+      "title": "商用利用しやすい画像生成AI13選！無料プラン・注意点・選び方まで解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/claude-api/",
-      "description": "人工知能技術の進歩により、ビジネスや日常生活でAIを活用する機会が増えている今、特に注目を集めているのが、Anthropic社が開発したClaude APIです。Claude APIは、驚異的な推論能力を自由自在に操れる [...]...",
-      "publishedDate": "Mon, 11 May 2026 13:08:51 +0000",
+      "link": "https://weel.co.jp/media/commercial-use-images/",
+      "description": "画像生成AIで作った画像を、広告やSNS、販売用コンテンツに使いたいと考えている方は多いのではないでしょうか。ただし、画像生成AIはどれでも自由に商用利用できるわけではありません。 無料プランと有料プランで条件が異なる場 [...]...",
+      "publishedDate": "Fri, 15 May 2026 16:38:52 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-api_2605-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/commercial-use-images_2605-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "画像生成AIおすすめツール10選！初心者でも使いやすいサービスを徹底比較",
+      "title": "【Claude Code /goal】完了条件を設定するだけでAIが自走する革新コマンドの仕組み・使い方を徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/bard-bingai-imagegeneration/",
-      "description": "生成AIの一般への認知と普及が進み、ビジネスや教育など幅広い領域で導入が活発化してきました。技術開発も急速に進展しており、テキスト生成以外にも生成AIの活用が進んでいます。 なかでも、特に注目を集めているのが画像生成AI [...]...",
-      "publishedDate": "Mon, 11 May 2026 11:55:54 +0000",
+      "link": "https://weel.co.jp/media/tech/claude-code-goal/",
+      "description": "2026年5月13日、Anthropicの公式アカウント@ClaudeDevsから、Claude Code用の新たなコマンド「Claude Code /goal」が発表されました！ Claude Codeを使って開発をし [...]...",
+      "publishedDate": "Fri, 15 May 2026 12:09:43 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/bard-bingai-imagegeneration_2605-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-goal_2605-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "GitHub Copilotとは？導入前に知っておきたい使い方・料金を徹底解説",
+      "title": "シャドーAIとは？放置していると危険？生成AI時代のリスクと対策、典型事例を解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/github-copilot/",
-      "description": "GitHub Copilotは、コード補完や生成をサポートするAI開発支援ツールです。近年はチャットやAgent機能なども追加され、開発全体を支援するツールへと進化しています。 ただ、「どこまで無料で使えるのか」「どのプ [...]...",
-      "publishedDate": "Mon, 11 May 2026 03:32:31 +0000",
+      "link": "https://weel.co.jp/media/innovator/shadow-ai/",
+      "description": "「仕事が早く終わるから」と、会社に内緒で生成AIを使っていませんか？もしくは、従業員が勝手に生成AIを使っているのではないかと気になっている方も多いでしょう。 今、管理部門の許可なくAIを業務利用するシャドーAIが深刻な [...]...",
+      "publishedDate": "Fri, 15 May 2026 11:34:09 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/github-copilot_2605-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Shadow-AI_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIで料理レシピを提案！有名シェフも顔負け！？ChatGPTで時短献立を作る方法を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/ai-cooking/",
+      "description": "生成AIは、食材や条件に合わせてレシピを提案できる便利なツールです。最近では、ChatGPTやClaude、Geminiなどを活用し、献立作成や時短調理に役立てる人も増えています。 とはいえ、「本当においしいレシピが作れ [...]...",
+      "publishedDate": "Fri, 15 May 2026 07:33:48 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-cooking_2605-1024x576.webp",
       "language": "ja"
     },
     {
