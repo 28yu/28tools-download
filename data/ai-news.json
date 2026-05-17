@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-16T04:29:50.246030",
+  "lastUpdated": "2026-05-17T04:54:41.998568",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -167,43 +167,10 @@
       "language": "en"
     },
     {
-      "title": "Azure OpenAI Serviceとは？ChatGPTとの違い・料金・使い方を企業向けに解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/azure-openai-service",
-      "description": "Azure OpenAI Serviceは、企業向けに安全に使えるAIクラウドサービスです。とはいえ「ChatGPTと何が違うのか」「本当に安全なのか」と悩む方も多いのではないでしょうか。 実際、企業の生成AI導入ではセ [...]...",
-      "publishedDate": "Tue, 12 May 2026 08:21:37 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/azure-openai-service_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Devinとは？エンジニア業務を完遂するAIエージェントの使い方をわかりやすく解説！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/devin/",
-      "description": "「ソフトウェア開発のすべてをAIに任せられる時代」が、ついにやってきたと言われたら驚きませんか？ そんな夢のような話を実現したのが、米スタートアップ企業のCognitionが開発した世界初の自律型AIエンジニア「Devi [...]...",
-      "publishedDate": "Tue, 12 May 2026 05:28:01 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/devin_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Google AI Studioとは？初心者でも分かる使い方と活用方法を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/google-ai-studio/",
-      "description": "「AI活用＝大規模なシステム開発」というイメージが先行して、予算や技術力の壁に足が止まっていませんか？実は、高価な機材も専門知識も使わずに、手元のブラウザ一つで解決できることが増えています。 中でも注目されているのが、専 [...]...",
-      "publishedDate": "Tue, 12 May 2026 04:29:35 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/google-ai-studio_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "How NVIDIA engineers and researchers build with Codex",
-      "titleJa": "NVIDIA のエンジニアと研究者が Codex を使用して構築する方法",
-      "link": "https://openai.com/index/nvidia",
-      "description": "Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments....",
+      "title": "AutoScout24 scales engineering with AI-powered workflows",
+      "titleJa": "AutoScout24 は AI を活用したワークフローでエンジニアリングを拡張します",
+      "link": "https://openai.com/index/autoscout24",
+      "description": "Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption....",
       "publishedDate": "Tue, 12 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -211,10 +178,10 @@
       "language": "en"
     },
     {
-      "title": "AutoScout24 scales engineering with AI-powered workflows",
-      "titleJa": "AutoScout24 は AI を活用したワークフローでエンジニアリングを拡張します",
-      "link": "https://openai.com/index/autoscout24",
-      "description": "Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption....",
+      "title": "How NVIDIA engineers and researchers build with Codex",
+      "titleJa": "NVIDIA のエンジニアと研究者が Codex を使用して構築する方法",
+      "link": "https://openai.com/index/nvidia",
+      "description": "Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments....",
       "publishedDate": "Tue, 12 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -300,7 +267,7 @@
     },
     {
       "title": "Sea's View on the Future of Agentic Software Development with Codex",
-      "titleJa": "Codex によるエージェント ソフトウェア開発の将来に関する Sea の見解",
+      "titleJa": "Codex を使用したエージェントティック ソフトウェア開発の将来に関する Sea の見解",
       "link": "https://openai.com/index/sea-david-chen",
       "description": "Sea Limited's CPO explains why the company is deploying Codex across engineering teams to accelerate AI-native software development in Asia....",
       "publishedDate": "Thu, 14 May 2026 20:30:00 GMT",
@@ -311,7 +278,7 @@
     },
     {
       "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-      "titleJa": "Granite エンベディング多言語 R2: 32K コンテキストを備えたオープン Apache 2.0 多言語エンベディング - 最高のサブ 100M 検索品質",
+      "titleJa": "Granite エンベディング多言語 R2: 32K コンテキストを備えたオープン Apache 2.0 多言語エンベディング — 最高の 100M 未満の検索品質",
       "link": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
       "description": "...",
       "publishedDate": "Thu, 14 May 2026 18:55:01 GMT",
@@ -355,7 +322,7 @@
     },
     {
       "title": "The Download: deepfake porn’s stolen bodies and AI sharing private numbers",
-      "titleJa": "ダウンロード: ディープフェイクポルノの盗まれた遺体とAIが個人番号を共有",
+      "titleJa": "ダウンロード: ディープフェイクポルノの盗まれた遺体と個人番号を共有する AI",
       "link": "https://www.technologyreview.com/2026/05/14/1137257/the-download-deepfake-porn-bodies-ai-exposing-phone-numbers/",
       "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The shock of seeing your body used in deepfake por...",
       "publishedDate": "Thu, 14 May 2026 12:10:00 +0000",
@@ -450,6 +417,39 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-for-Small-Business_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Codex for mobile】CodexがChatGPTモバイルアプリに対応！特徴・料金・使い方を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/codex-for-mobile/",
+      "description": "OpenAIは2026年5月15日、AIコーディングエージェントのCodexがChatGPTモバイルアプリで利用できるCodex for mobileのプレビュー版の提供を開始したと発表しました。 モバイルアプリで操作し [...]...",
+      "publishedDate": "Sat, 16 May 2026 08:21:24 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Codex-for-mobile_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Grok Buildとは？xAIのコーディングエージェントの特徴・使い方・料金を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/grok-build/",
+      "description": "2026年5月、xAIから新しいCLI型コーディングエージェントが発表されました。 今回登場した「Grok Build」は、ターミナルから直接動くコーディングエージェントです。コードベースやリポジトリ設定を参照しながら複 [...]...",
+      "publishedDate": "Sat, 16 May 2026 07:55:58 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Grok-Build-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【ChatGPT Finances】銀行口座と連携できるOpenAIの個人資産管理ツールの使い方・料金・安全性を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/chatgpt-finances/",
+      "description": "ChatGPT Financesは、OpenAIが2026年5月16日に公開したChatGPTの新しいパーソナルファイナンス機能です！銀行口座やクレジットカード、投資口座をChatGPTに接続し、自分の資産状況をもとにし [...]...",
+      "publishedDate": "Sat, 16 May 2026 07:04:57 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/ChatGPT-Finances_2605-1024x576.webp",
       "language": "ja"
     },
     {
