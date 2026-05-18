@@ -58,6 +58,7 @@
          crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/features.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -194,6 +195,23 @@
             </div>
         </section>
 
+        <!-- アドイン機能カタログ（features.json から動的生成） -->
+        <section class="addin-catalog-section">
+            <div class="addin-catalog-inner">
+                <div class="addin-catalog-header">
+                    <h2 class="addin-catalog-title" data-lang-key="index-catalog-title">Revitアドイン 機能一覧</h2>
+                    <a href="features.html" class="addin-catalog-more" data-lang-key="index-catalog-more">全機能を見る →</a>
+                </div>
+                <div id="index-catalog-loading" class="catalog-loading">
+                    <p data-lang-key="features-loading">機能データを読み込んでいます...</p>
+                </div>
+                <div id="index-catalog-error" class="catalog-error" style="display:none;">
+                    <p data-lang-key="features-error">機能データの取得に失敗しました。しばらくしてから再読み込みしてください。</p>
+                </div>
+                <div id="index-feature-catalog"></div>
+            </div>
+        </section>
+
         <!-- 新着・おすすめセクション -->
         <section class="news-section">
             <div class="news-header">
@@ -284,6 +302,79 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+    // ── 動的機能カタログ ────────────────────────────────────────────
+    (function() {
+        const CATALOG_URL = 'https://28yu.github.io/Revit-Add-ins/features.json';
+        let catalogData = null;
+
+        function getCurrentLang() {
+            return window.currentLanguage || localStorage.getItem('lang') || 'ja';
+        }
+
+        function renderIndexCatalog() {
+            if (!catalogData) return;
+            const lang = getCurrentLang();
+            const { baseUrl, categories, features } = catalogData;
+            const container = document.getElementById('index-feature-catalog');
+            container.innerHTML = '';
+
+            for (const catId of Object.keys(categories)) {
+                const catFeatures = features.filter(f => f.category === catId);
+                if (catFeatures.length === 0) continue;
+
+                const section = document.createElement('section');
+                section.className = 'feature-category';
+
+                const heading = document.createElement('h3');
+                heading.className = 'feature-category-title';
+                heading.textContent = categories[catId][lang] || categories[catId]['ja'];
+                section.appendChild(heading);
+
+                const grid = document.createElement('div');
+                grid.className = 'feature-grid';
+
+                for (const f of catFeatures) {
+                    const card = document.createElement('a');
+                    card.className = 'feature-catalog-card';
+                    card.href = 'manual.html?id=' + f.id;
+                    const name = f.names[lang] || f.names['ja'];
+                    card.innerHTML =
+                        '<img src="' + baseUrl + '/' + f.icon + '" alt="' + name + '" loading="lazy" />' +
+                        '<div class="feature-catalog-name">' + name + '</div>' +
+                        (f.added_in ? '<span class="feature-new-badge">NEW</span>' : '');
+                    grid.appendChild(card);
+                }
+                section.appendChild(grid);
+                container.appendChild(section);
+            }
+        }
+
+        async function loadIndexCatalog() {
+            try {
+                const res = await fetch(CATALOG_URL);
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                catalogData = await res.json();
+                document.getElementById('index-catalog-loading').style.display = 'none';
+                renderIndexCatalog();
+            } catch (e) {
+                console.error('Failed to load features.json:', e);
+                document.getElementById('index-catalog-loading').style.display = 'none';
+                document.getElementById('index-catalog-error').style.display = 'block';
+            }
+        }
+
+        // 言語切り替え時に再描画
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.lang-option') && catalogData) {
+                setTimeout(renderIndexCatalog, 50);
+            }
+        });
+
+        loadIndexCatalog();
+    })();
+    // ─────────────────────────────────────────────────────────────────
+    </script>
     <script>
         // 言語切り替え初期化（main.jsで初期化されなかった場合のフォールバック）
         window.addEventListener('load', function() {

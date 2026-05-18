@@ -965,6 +965,16 @@ function initTranslations() {
             ja: 'お知らせを見る',
             en: 'View Announcements',
             zh: '查看公告'
+        },
+        'index-catalog-title': {
+            ja: 'Revitアドイン 機能一覧',
+            en: 'Revit Add-in Features',
+            zh: 'Revit 插件功能列表'
+        },
+        'index-catalog-more': {
+            ja: '全機能を見る →',
+            en: 'View All Features →',
+            zh: '查看全部功能 →'
         }
     };
 
