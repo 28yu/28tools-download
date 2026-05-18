@@ -1,4 +1,40 @@
-/* features.html / manual.html 共通スタイル */
+/* features.html / manual.html / index.html 共通スタイル */
+
+/* ---- index.html: アドインカタログセクション ---- */
+.addin-catalog-section {
+    margin: 32px 0 40px;
+    padding: 0 16px;
+}
+.addin-catalog-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.addin-catalog-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.addin-catalog-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--concrete-gray, #2c3e50);
+    border-left: 4px solid var(--blueprint-blue, #3498db);
+    padding-left: 12px;
+    margin: 0;
+}
+.addin-catalog-more {
+    font-size: 0.9rem;
+    color: var(--blueprint-blue, #3498db);
+    text-decoration: none;
+    white-space: nowrap;
+}
+.addin-catalog-more:hover {
+    text-decoration: underline;
+}
+
 
 /* ---- カタログ: 読み込み・エラー表示 ---- */
 .catalog-loading,
