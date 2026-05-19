@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-18T05:07:19.942356",
+  "lastUpdated": "2026-05-19T05:02:48.229760",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -32,17 +32,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Were_launching_two_TPUs_social.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "AI chatbots are giving out people’s real phone numbers",
-      "titleJa": "AI チャットボットが人々の実際の電話番号を公開している",
-      "link": "https://www.technologyreview.com/2026/05/13/1137203/ai-chatbots-are-giving-out-peoples-real-phone-numbers/",
-      "description": "A Redditor recently wrote that he was “desperate for help”: for about a month, he said, his phone had been inundated by calls from “strangers” who were “looking for a lawyer, a product designer, a loc...",
-      "publishedDate": "Wed, 13 May 2026 18:09:03 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/Cropped_Paybox-Account-Reset-Without-Phone-Google-Gemini-2.jpg",
       "language": "en"
     },
     {
@@ -134,25 +123,14 @@
       "language": "en"
     },
     {
-      "title": "QIMMA قِمّة ⛰: A Quality-First Arabic LLM Leaderboard",
-      "titleJa": "QIMMA قِمّة ⛰: 品質第一のアラビア語 LLM リーダーボード",
-      "link": "https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard",
-      "description": "...",
-      "publishedDate": "Tue, 21 Apr 2026 10:09:58 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/659bc8a7b0f43ed69f0b2300/KdH3z5dRfyIAyxgGPN5Ey.png",
-      "language": "en"
-    },
-    {
-      "title": "AI and the Future of Cybersecurity: Why Openness Matters",
-      "titleJa": "AI とサイバーセキュリティの未来: オープン性が重要な理由",
-      "link": "https://huggingface.co/blog/cybersecurity-openness",
-      "description": "...",
-      "publishedDate": "Tue, 21 Apr 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/cybersecurity-openness/detective_huggy_thumbnail.png",
+      "title": "Here’s why Elon Musk lost his suit against OpenAI",
+      "titleJa": "イーロン・マスクがOpenAIに対する訴訟で敗訴した理由は次のとおりです",
+      "link": "https://www.technologyreview.com/2026/05/18/1137488/elon-musk-suit-openai-verdict/",
+      "description": "On Monday, the jury in Musk v. Altman dealt Elon Musk a major blow—reaching a unanimous advisory verdict that he had sued OpenAI too late and, as a result, his claims are barred by the applicable stat...",
+      "publishedDate": "Tue, 19 May 2026 00:53:10 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/AP26138721148129.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -161,17 +139,6 @@
       "link": "https://openai.com/academy/how-finance-teams-use-codex",
       "description": "See how finance teams can use Codex to build MBRs, reporting packs, variance bridges, model checks, and planning scenarios from real work inputs....",
       "publishedDate": "Tue, 12 May 2026 15:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "AutoScout24 scales engineering with AI-powered workflows",
-      "titleJa": "AutoScout24 は AI を活用したワークフローでエンジニアリングを拡張します",
-      "link": "https://openai.com/index/autoscout24",
-      "description": "Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption....",
-      "publishedDate": "Tue, 12 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -255,17 +222,6 @@
       "language": "en"
     },
     {
-      "title": "Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents",
-      "titleJa": "Ecom-RLVE: 電子商取引会話エージェント向けの適応型検証可能環境",
-      "link": "https://huggingface.co/blog/ecom-rlve",
-      "description": "...",
-      "publishedDate": "Thu, 16 Apr 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/ecom-rlve/thumbnail.png",
-      "language": "en"
-    },
-    {
       "title": "Sea's View on the Future of Agentic Software Development with Codex",
       "titleJa": "Codex によるエージェント ソフトウェア開発の将来に関する Sea の見解",
       "link": "https://openai.com/index/sea-david-chen",
@@ -310,25 +266,25 @@
       "language": "en"
     },
     {
-      "title": "Establishing AI and data sovereignty in the age of autonomous systems",
-      "titleJa": "自律システム時代における AI とデータ主権の確立",
-      "link": "https://www.technologyreview.com/2026/05/14/1137168/establishing-ai-and-data-sovereignty-in-the-age-of-autonomous-systems/",
-      "description": "When generative AI first moved from research labs into real-world business applications, enterprises made a tacit bargain: “Capability now, control later.” Feed your proprietary data into third-party ...",
-      "publishedDate": "Thu, 14 May 2026 13:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/EDB-Report-2026-cover-FINAL.png",
+      "title": "Helping ChatGPT better recognize context in sensitive conversations",
+      "titleJa": "ChatGPT が機密性の高い会話のコンテキストをより適切に認識できるようにする",
+      "link": "https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations",
+      "description": "Learn how new ChatGPT safety updates improve context awareness in sensitive conversations, helping detect risk over time and respond more safely....",
+      "publishedDate": "Thu, 14 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
-      "title": "The Download: deepfake porn’s stolen bodies and AI sharing private numbers",
-      "titleJa": "ダウンロード: ディープフェイクポルノの盗まれた遺体と個人番号を共有する AI",
-      "link": "https://www.technologyreview.com/2026/05/14/1137257/the-download-deepfake-porn-bodies-ai-exposing-phone-numbers/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The shock of seeing your body used in deepfake por...",
-      "publishedDate": "Thu, 14 May 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/08/SO23_war-thumb.jpeg?w=2288",
+      "title": "Unlocking asynchronicity in continuous batching",
+      "titleJa": "連続バッチ処理での非同期性のロックを解除する",
+      "link": "https://huggingface.co/blog/continuous_async",
+      "description": "...",
+      "publishedDate": "Thu, 14 May 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/continuous_async/thumbnail.png",
       "language": "en"
     },
     {
@@ -384,6 +340,127 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/ChatGPT-Finances_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI and Malta partner to bring ChatGPT Plus to all citizens",
+      "titleJa": "OpenAI とマルタが提携して ChatGPT Plus を全国民に提供",
+      "link": "https://openai.com/index/malta-chatgpt-plus-partnership",
+      "description": "OpenAI and Malta partner to expand AI access, offering ChatGPT Plus and training to help citizens build practical AI skills and use AI responsibly....",
+      "publishedDate": "Sat, 16 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Join the new AI Agents Vibe Coding Course from Google and Kaggle",
+      "titleJa": "Google と Kaggle の新しい AI Agents Vibe コーディング コースに参加してください",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/",
+      "description": "A web next to a laptop...",
+      "publishedDate": "Mon, 27 Apr 2026 13:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Vibe_Coding_Course_herosocial.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "How to build scalable web apps with OpenAI's Privacy Filter",
+      "titleJa": "OpenAI のプライバシー フィルターを使用してスケーラブルな Web アプリを構築する方法",
+      "link": "https://huggingface.co/blog/openai-privacy-filter-web-apps",
+      "description": "...",
+      "publishedDate": "Mon, 27 Apr 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/openai-privacy-filter-web-apps/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "What to expect from Google this week",
+      "titleJa": "今週 Google に期待できること",
+      "link": "https://www.technologyreview.com/2026/05/18/1137439/what-to-expect-from-google-this-week/",
+      "description": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. When Google opens its doors tomorrow for its annual developer ...",
+      "publishedDate": "Mon, 18 May 2026 17:35:43 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/GettyImages-532150054.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Midjourneyは商用利用できる？料金・条件・他AIとの違いまでまとめて徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/midjourney-commercial-use/",
+      "description": "みなさんは、ハイクオリティな画像を生成できる画像生成AI「Midjourney」を使っていますか？ Midjourneyは高品質な画像を手軽に生成できることから、すでに広告やSNS、Web制作など幅広いシーンで活用が進ん [...]...",
+      "publishedDate": "Mon, 18 May 2026 12:36:08 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/midjourney-commercial-use_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "GraphCastとは？使い方・論文・ECMWFとの関係まで、技術者が知りたい疑問を一気に解決",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/graphcast/",
+      "description": "「AIが気象予測を変える」と聞いても、どこか遠い話に感じていた方も多いかもしれません。ところが2023年以降、その変化は一気に現実のものになりつつあります。Google DeepMindが開発した「GraphCast」は [...]...",
+      "publishedDate": "Mon, 18 May 2026 11:28:16 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/graphcast_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "SlackGPT連携で業務が変わる！ChatGPT app for Slackの導入手順と活用法を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/slack-chatgpt-alignment",
+      "description": "毎日使っているSlackに、最近話題のChatGPTを連携させると、仕事がぐっと楽になるのをご存知でしょうか。 「長いスレッドを追いかけるのがしんどい」「取引先へのメール作成で手が止まってしまう」「ちょっとしたエラーの原 [...]...",
+      "publishedDate": "Mon, 18 May 2026 08:39:53 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/slack-chatgpt-alignment_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AI inside、AI統合基盤「Leapnet」の正式提供を開始。社内データで業務用AIエージェントを構築可能",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-inside-leapnet-offer/",
+      "description": "AI insideは、AI統合基盤「Leapnet」の正式提供を開始しました。社内データを活用したAIエージェントをノーコードで構築できるほか、API経由で自社システムへの組み込みや外部提供にも対応します。 このニュース [...] The post AI inside、AI統合基盤「Leapnet」の正式提供を開始。社内データで業務用AIエージェントを構築可能 first appeared on...",
+      "publishedDate": "Mon, 18 May 2026 07:29:17 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/AI-inside-Leapnet-offer-01.png",
+      "language": "ja"
+    },
+    {
+      "title": "FDUA、金融庁企画の「生成AI活用による地域金融機関DX推進に向けた実証研究事業」実施を発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/fdua-generative-ai-dx/",
+      "description": "一般社団法人金融データ活用推進協会（FDUA）は、金融庁が企画する「生成AI活用による地域金融機関DX推進に向けた実証研究事業」の実施を発表しました。生成AIの実務活用に関する検証や知見を集約し、業界全体のDX推進を後押 [...] The post FDUA、金融庁企画の「生成AI活用による地域金融機関DX推進に向けた実証研究事業」実施を発表 first appeared on AIポータルメデ...",
+      "publishedDate": "Mon, 18 May 2026 07:22:08 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/FDUA-logo-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "AI inside、国内データセンターをAI Factoryに転換する「Sovereign Grid」を始動",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-inside-sovereign-grid-aifactory/",
+      "description": "AI insideは、国内のデータセンターをAI推論ネットワークとして接続する「Sovereign Grid」を始動しました。既存の施設をAI Factoryへと転換する取り組みで、国内で完結するAI推論能力を拡張します [...] The post AI inside、国内データセンターをAI Factoryに転換する「Sovereign Grid」を始動 first appeared on A...",
+      "publishedDate": "Mon, 18 May 2026 07:05:01 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/aiinsidesovereigngrid.png",
+      "language": "ja"
+    },
+    {
+      "title": "ゲームAIとは？ゲーム体験を形作る技術の種類・作り方・注目事例を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/game-ai/",
+      "description": "ゲームの世界において、AI技術の活用が驚異的なスピードで進化しています。1970年代後半から1980年代にかけて誕生した初期のゲームAIは、現在ではプロプレイヤーに勝利するだけでなく、自然な会話やリアルタイムの3D世界生 [...]...",
+      "publishedDate": "Mon, 18 May 2026 05:52:11 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/game-ai_2605-1024x576.webp",
       "language": "ja"
     },
     {
@@ -453,50 +530,6 @@
       "language": "ja"
     },
     {
-      "title": "商用利用しやすい画像生成AI13選！無料プラン・注意点・選び方まで解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/commercial-use-images/",
-      "description": "画像生成AIで作った画像を、広告やSNS、販売用コンテンツに使いたいと考えている方は多いのではないでしょうか。ただし、画像生成AIはどれでも自由に商用利用できるわけではありません。 無料プランと有料プランで条件が異なる場 [...]...",
-      "publishedDate": "Fri, 15 May 2026 16:38:52 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/commercial-use-images_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Claude Code /goal】完了条件を設定するだけでAIが自走する革新コマンドの仕組み・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code-goal/",
-      "description": "2026年5月13日、Anthropicの公式アカウント@ClaudeDevsから、Claude Code用の新たなコマンド「Claude Code /goal」が発表されました！ Claude Codeを使って開発をし [...]...",
-      "publishedDate": "Fri, 15 May 2026 12:09:43 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-goal_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "シャドーAIとは？放置していると危険？生成AI時代のリスクと対策、典型事例を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/shadow-ai/",
-      "description": "「仕事が早く終わるから」と、会社に内緒で生成AIを使っていませんか？もしくは、従業員が勝手に生成AIを使っているのではないかと気になっている方も多いでしょう。 今、管理部門の許可なくAIを業務利用するシャドーAIが深刻な [...]...",
-      "publishedDate": "Fri, 15 May 2026 11:34:09 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Shadow-AI_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "生成AIで料理レシピを提案！有名シェフも顔負け！？ChatGPTで時短献立を作る方法を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/ai-cooking/",
-      "description": "生成AIは、食材や条件に合わせてレシピを提案できる便利なツールです。最近では、ChatGPTやClaude、Geminiなどを活用し、献立作成や時短調理に役立てる人も増えています。 とはいえ、「本当においしいレシピが作れ [...]...",
-      "publishedDate": "Fri, 15 May 2026 07:33:48 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-cooking_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "大塚商会「たよれーる AIまるごと伴走支援サービス」を提供開始",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/otsuka-shokai-ai-support-service/",
@@ -519,36 +552,25 @@
       "language": "ja"
     },
     {
-      "title": "OpenAI、企業向けAI導入支援会社「OpenAI Deployment Company」を設立",
+      "title": "デル、ローカルでAIエージェントを動かすためのデスクトップPCなど「Dell Deskside Agentic AI」発表。NVIDIA GB10やGB300搭載",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-openai-deployment-company-build/",
-      "description": "OpenAIは、企業向けAI導入支援会社「OpenAI Deployment Company」を設立したと発表しました。あわせて、AIコンサルティング企業の英Tomoroの買収も発表しています。 このニュースのポイント [...] The post OpenAI、企業向けAI導入支援会社「OpenAI Deployment Company」を設立 first appeared on AIポータルメ...",
-      "publishedDate": "Fri, 15 May 2026 02:00:05 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/OpenAI-Deployment-Company.png",
+      "link": "https://www.publickey1.jp/blog/26/aipcdell_deskside_agentic_ainvidia_gb10gb300.html",
+      "description": "デル・テクノロジーズ（以下デル）は、日本時間5月18日未明に米ラスベガスで開幕した年次イベント「Dell Technologies World 2026」で、ローカルでAIエージェントを動かすためのデスクトップPCなどの製品群「Dell D......",
+      "publishedDate": "2026-05-18T23:50:18Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/delldesksideagenticai-ann01.png",
       "language": "ja"
     },
     {
-      "title": "音声認識アプリおすすめ10選｜無料・Android対応を徹底比較",
+      "title": "あるバージョンのRHELを永遠に動かし続けられる。Red Hatが期限のないサポート「Red Hat Enterprise Linux Long-Life アドオン」発表",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/voice-recognition-app-10-selections/",
-      "description": "「会議の議事録作成に毎回何時間もかかっている」「メモに集中しすぎて、肝心の会話に参加できない」といった悩みを抱えていませんか？ 最新のAI音声認識アプリを使えば高精度かつリアルタイムに文字起こしをしてくれるため、面倒なタ [...] The post 音声認識アプリおすすめ10選｜無料・Android対応を徹底比較 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 15 May 2026 01:48:41 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/voiceapp.png",
-      "language": "ja"
-    },
-    {
-      "title": "AIエージェントおすすめ13選｜種類別の比較と選び方を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-agent-comparison/",
-      "description": "「自社の業務を自動化したいが、種類が多すぎてどのAIエージェントを選べば費用対効果が出るのか分からない」と悩んでいませんか？ 本記事では、AIエージェントの仕組みやAIチャットボットとの違いから、業務課題別のおすすめサー [...] The post AIエージェントおすすめ13選｜種類別の比較と選び方を徹底解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 15 May 2026 01:06:35 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/AIagentMain.png",
+      "link": "https://www.publickey1.jp/blog/26/rhelred_hatred_hat_enterprise_linux_long-life.html",
+      "description": "IBM傘下のRed Hatは、5月11日から14日にかけて米アトランタで開催したイベント「Red Hat Summit 2026」で、期限の定めなく特定のバージョンのRed Hat Enterprise Linux（以下RHEL）のサポート......",
+      "publishedDate": "2026-05-18T15:49:20Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/rhellonglifeaddon02.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/aws-middleeaset-region-conflict20260506.png",
-      "language": "ja"
-    },
-    {
-      "title": "「TypeScript 7.0」ベータ版が公開。TypeScriptコンパイラなどをGo言語に移植、コンパイルを10倍速に",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/typescript_70typescriptgo10.html",
-      "description": "マイクロソフトは、TypeScriptをGo言語に移植した最初のバージョンとなる「TypeScript 7.0」のベータ版を公開したと発表しました。 TypeScript 7.0 Beta is here!Built on a new na......",
-      "publishedDate": "2026-04-26T15:08:13Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/v2BDmszu.png",
-      "language": "ja"
-    },
-    {
-      "title": "［速報］Google Cloud、ローカルマシンにインストールできる大規模分散RDB「Spanner Omni」プレビュー公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/google_cloudrdbspanner_omni.html",
-      "description": "Googleは、日本時間で4月23日未明にラスベガスで開幕したイベント「Google Cloud Next 2026」で、ローカルマシンにインストールできる大規模分散リレーショナルデータベース「Spanner Omni」のプレビュー版を公開......",
-      "publishedDate": "2026-04-22T16:58:15Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/spanner-omni-ann01.png",
       "language": "ja"
     }
   ]
