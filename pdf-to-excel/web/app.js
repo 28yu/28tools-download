@@ -26,6 +26,7 @@ const logEl = document.getElementById('log');
 const progressBar = document.getElementById('progress-bar');
 const tabsEl = document.getElementById('tabs');
 const previewEl = document.getElementById('preview');
+const previewSection = document.getElementById('preview-section');
 const actionsEl = document.getElementById('actions');
 const downloadBtn = document.getElementById('download-btn');
 const summaryEl = document.getElementById('result-summary');
@@ -41,7 +42,7 @@ const SHEET_KEYS = {
 
 function showStatus(msg) {
   statusEl.classList.add('show');
-  statusEl.querySelector('.msg').textContent = msg;
+  statusEl.querySelector('.status-msg').textContent = msg;
 }
 function setProgress(pct) { progressBar.style.width = pct + '%'; }
 function log(msg) {
@@ -71,6 +72,7 @@ async function processPdf(file) {
   try {
     logEl.innerHTML = '';
     actionsEl.style.display = 'none';
+    previewSection.style.display = 'none';
     tabsEl.innerHTML = '';
     previewEl.innerHTML = '';
     showStatus('PDF 読み込み中...');
@@ -174,6 +176,7 @@ function renderTabs(result) {
     if (!first) first = label;
   }
   activeTab = first;
+  previewSection.style.display = first ? 'block' : 'none';
   renderTable();
 }
 
