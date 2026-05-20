@@ -88,6 +88,47 @@ export function parseSection(s) {
   };
 }
 
+// Detect the structural category from a set of beam/column symbol prefixes.
+// Returns { kind, sheetName, construction, element }.
+//
+// Symbol prefix conventions (Japanese structural drawings):
+//   FG  → foundation girder (基礎大梁, RC)
+//   G   → girder (大梁, RC)
+//   B   → beam (小梁, RC)
+//   CG  → cantilever girder (片持ち大梁, RC)
+//   CB  → cantilever beam (片持ち小梁, RC)
+//   SG  → steel girder (大梁, S)
+//   SB  → steel beam (小梁, S)
+//   CSG → cantilever steel girder (片持ち大梁, S)
+//   C   → column (柱)
+//
+// "dominant prefix wins" rule: count by occurrence and pick the most common.
+// Mixed prefixes (FG + CG combined into one list) → use the most common.
+export function detectCategory(symbols) {
+  if (!Array.isArray(symbols) || symbols.length === 0) {
+    return { kind: '不明', sheetName: '未分類', construction: '?', element: '?' };
+  }
+  const counts = {};
+  for (const s of symbols) {
+    const m = String(s).match(/^([A-Z]+)/);
+    if (!m) continue;
+    counts[m[1]] = (counts[m[1]] || 0) + 1;
+  }
+  const dominant = Object.entries(counts).sort((a,b) => b[1] - a[1])[0]?.[0];
+  const map = {
+    FG:  { kind: 'RC基礎大梁',  sheetName: '基礎大梁',  construction: 'RC', element: '基礎大梁' },
+    G:   { kind: 'RC大梁',       sheetName: '大梁',      construction: 'RC', element: '大梁'    },
+    B:   { kind: 'RC小梁',       sheetName: '小梁',      construction: 'RC', element: '小梁'    },
+    CG:  { kind: 'RC片持ち大梁', sheetName: '大梁',      construction: 'RC', element: '大梁'    },
+    CB:  { kind: 'RC片持ち小梁', sheetName: '小梁',      construction: 'RC', element: '小梁'    },
+    SG:  { kind: 'S大梁',         sheetName: 'S大梁',    construction: 'S',  element: '大梁'    },
+    SB:  { kind: 'S小梁',         sheetName: 'S小梁',    construction: 'S',  element: '小梁'    },
+    CSG: { kind: 'S片持ち大梁',  sheetName: 'S大梁',    construction: 'S',  element: '大梁'    },
+    C:   { kind: 'RC柱',          sheetName: '柱',       construction: 'RC', element: '柱'     },
+  };
+  return map[dominant] || { kind: `不明(${dominant})`, sheetName: '未分類', construction: '?', element: '?' };
+}
+
 // Normalize 通り (gridline) list. Deduplicate consecutive shared gridlines.
 //   ["Xd1", "Xd2", "Xd3"] → ["Xd1", "Xd2", "Xd3"]
 //   start ["Xd1","Xd2","Xd3"] + end ["Xd2","Xd3","Xd4"] → 起点 = "Xd1", 終点 = "Xd4"
