@@ -21,11 +21,14 @@ const outPath = process.argv[2] || './sample-output.xlsx';
 const rcPath  = process.argv[3] || './sample-output-beams.json';
 const sPath   = process.argv[4] || './sample-output-sbeams.json';
 const colPath = process.argv[5] || './sample-output-columns.json';
+const sbPath  = process.argv[6] || './sample-output-sbeams-small.json';
 
 const rcBeamsRaw = JSON.parse(await readFile(rcPath, 'utf8'));
 const sBeamsRaw  = JSON.parse(await readFile(sPath, 'utf8'));
 let columnsRaw = [];
+let smallBeamsRaw = [];
 try { columnsRaw = JSON.parse(await readFile(colPath, 'utf8')); } catch {}
+try { smallBeamsRaw = JSON.parse(await readFile(sbPath, 'utf8')); } catch {}
 
 // ---------- styling helpers ----------
 
@@ -87,26 +90,27 @@ function autoFitColumns(ws, minWidth = 6, maxWidth = 36) {
 // ---------- 基礎大梁 (RC FG) ----------
 
 const POSITIONS = ['a', 'b', 'c', 'd', 'e'];
+// _mm suffix stripped from labels — all linear dims are mm by convention.
+// スパン column removed from 基礎大梁 per design.
 const RC_BASIC_COLS = [
-  { key: 'TypeName',  label: 'TypeName'   },
-  { key: '符号',       label: '符号'        },
-  { key: 'スパン_mm', label: 'スパン_mm'  },
-  { key: '幅B_mm',    label: '幅B_mm'    },
-  { key: '成D_mm',    label: '成D_mm'    },
-  { key: 'Fc_Nmm2',  label: 'Fc_N/mm²' },
-  { key: '備考',       label: '備考'        },
+  { key: 'TypeName', label: 'TypeName' },
+  { key: '符号',      label: '符号'      },
+  { key: '幅B_mm',   label: '幅B'      },
+  { key: '成D_mm',   label: '成D'      },
+  { key: 'Fc_Nmm2', label: 'Fc'       },
+  { key: '備考',      label: '備考'      },
 ];
 const RC_POS_FIELDS = [
-  { key: '主筋径',         label: '主筋径'      },
-  { key: '上_1段',         label: '上_1段'      },
-  { key: '上_2段',         label: '上_2段'      },
-  { key: '下_1段',         label: '下_1段'      },
-  { key: '下_2段',         label: '下_2段'      },
-  { key: 'あばら径',       label: 'あばら径'     },
-  { key: 'あばら脚数',     label: 'あばら脚数'   },
-  { key: 'あばらピッチ_mm', label: 'あばらピッチ_mm' },
-  { key: '端あき_mm',      label: '端あき_mm'   },
-  { key: '原文',           label: '原文'        },
+  { key: '主筋径',          label: '主筋径'      },
+  { key: '上_1段',          label: '上_1段'      },
+  { key: '上_2段',          label: '上_2段'      },
+  { key: '下_1段',          label: '下_1段'      },
+  { key: '下_2段',          label: '下_2段'      },
+  { key: 'あばら径',        label: 'あばら径'    },
+  { key: 'あばら脚数',      label: 'あばら脚数'  },
+  { key: 'あばらピッチ_mm', label: 'あばらピッチ' },
+  { key: '端あき_mm',       label: '端あき'      },
+  { key: '原文',            label: '原文'        },
 ];
 
 function buildRcBeamData(beam, symbol) {
@@ -138,7 +142,6 @@ function buildRcBeamData(beam, symbol) {
   return {
     TypeName: symbol,
     符号: symbol,
-    スパン_mm: parseDim(r.スパン),
     幅B_mm: widthMm,
     成D_mm: parseDim(r.成D),
     Fc_Nmm2: null,
@@ -206,11 +209,11 @@ const S_GROUPS = [
     { key: '符号',          label: '符号'     },
   ]},
   { label: '断面', vmerge: false, cols: [
-    { key: '断面形式',     label: '形式'        },
-    { key: '成H_mm',      label: '成H_mm'    },
-    { key: '幅B_mm',      label: '幅B_mm'    },
-    { key: 'ウェブtw_mm', label: 'ウェブtw_mm'   },
-    { key: 'フランジtf_mm', label: 'フランジtf_mm' },
+    { key: '断面形式',       label: '形式'      },
+    { key: '成H_mm',         label: '成H'      },
+    { key: '幅B_mm',         label: '幅B'      },
+    { key: 'ウェブtw_mm',    label: 'ウェブtw'  },
+    { key: 'フランジtf_mm',  label: 'フランジtf' },
   ]},
   { label: '通り', vmerge: false, cols: [
     { key: '通り起点',     label: '起点' },
@@ -289,22 +292,44 @@ function addGroupedSheet(wb, sheetName, groups, dataRows, opts = {}) {
 
 // ---------- 小梁 placeholder ----------
 
+// 小梁 (鉄骨小梁): H/SH-section + material. Built from extract-small-beam-ocr.mjs.
 const SMALL_BEAM_GROUPS = [
   { label: null, vmerge: true, cols: [
-    { key: 'TypeName', label: 'TypeName' },
-    { key: '符号',      label: '符号'      },
-    { key: '構造',      label: '構造'      },
+    { key: 'TypeName',  label: 'TypeName' },
+    { key: '符号',       label: '符号'      },
+    { key: '構造',       label: '構造'      },
   ]},
   { label: '断面', vmerge: false, cols: [
-    { key: '幅B_mm', label: '幅B_mm' },
-    { key: '成D_mm', label: '成D_mm' },
+    { key: '断面形式',  label: '形式' },
+    { key: '成H_mm',    label: '成H'  },
+    { key: '幅B_mm',    label: '幅B'  },
+    { key: 'ウェブtw_mm',   label: 'ウェブtw'  },
+    { key: 'フランジtf_mm', label: 'フランジtf' },
   ]},
   { label: null, vmerge: true, cols: [
-    { key: 'スパン_mm',  label: 'スパン_mm' },
     { key: '鋼材グレード', label: '鋼材グレード' },
-    { key: '備考',          label: '備考'          },
+    { key: '原文',         label: '原文'         },
+    { key: '備考',         label: '備考'         },
   ]},
 ];
+
+function buildSmallBeamData(beam) {
+  const r = beam.原文 || {};
+  const sec = parseSection(r.断面型);
+  return {
+    TypeName: beam.符号,
+    符号: beam.符号,
+    構造: 'S',
+    断面形式: sec?.kind ?? null,
+    成H_mm: sec?.H ?? null,
+    幅B_mm: sec?.B ?? null,
+    ウェブtw_mm: sec?.tw ?? null,
+    フランジtf_mm: sec?.tf ?? null,
+    鋼材グレード: r.鋼材グレード ?? '',
+    原文: r.断面型 ?? '',
+    備考: 'OCR抽出',
+  };
+}
 
 // ---------- 柱 (per-floor sections split into A/B/t cells) ----------
 
@@ -314,11 +339,11 @@ const COL_BASIC = [
 ];
 function sectionGroupCols(n) {
   return [
-    { key: `形式${n}`,    label: '形式'      },
-    { key: `成H_A${n}_mm`, label: 'A/H_mm'   },
-    { key: `幅B${n}_mm`,   label: '幅B_mm'   },
-    { key: `t1${n}_mm`,    label: 't1_mm'    },
-    { key: `t2${n}_mm`,    label: 't2_mm'    },
+    { key: `形式${n}`,     label: '形式'  },
+    { key: `成H_A${n}_mm`, label: 'A/H' },
+    { key: `幅B${n}_mm`,   label: '幅B'  },
+    { key: `t1${n}_mm`,    label: 't1'  },
+    { key: `t2${n}_mm`,    label: 't2'  },
   ];
 }
 function buildColumnGroups(maxSections) {
@@ -393,8 +418,13 @@ for (const beam of realRcBeams) {
   }
 }
 const sDataRows = sBeamsRaw.map(buildSBeamData);
+const smallBeamRows = smallBeamsRaw.map(buildSmallBeamData);
 const maxColSections = Math.max(1, ...columnsRaw.map(c => (c.原文?.断面型_列 || []).length));
 const colDataRows = columnsRaw.map(c => buildColumnData(c, maxColSections));
+
+const smallSymbols = smallBeamsRaw.map(b => b.符号);
+const smallCategory = smallSymbols.length ? detectCategory(smallSymbols) : null;
+if (smallCategory) console.log(`小梁: ${smallCategory.kind} (${smallSymbols.length}件)`);
 
 // ---------- workbook ----------
 
@@ -430,8 +460,8 @@ addRcSheet(wb, '基礎大梁', rcDataRows);
 // 大梁 (S SG) — sheet name is just "大梁" per user request, no スパン column
 addGroupedSheet(wb, '大梁', S_GROUPS, sDataRows);
 
-// 小梁 placeholder
-addGroupedSheet(wb, '小梁', SMALL_BEAM_GROUPS, []);
+// 小梁 — built from PDF2 page 3 (S小梁) via OCR
+addGroupedSheet(wb, '小梁', SMALL_BEAM_GROUPS, smallBeamRows);
 
 // 柱
 if (colCategory) {
@@ -443,5 +473,5 @@ console.log(`\nwrote ${outPath}`);
 console.log(`  Meta`);
 console.log(`  基礎大梁: ${rcDataRows.length} 行`);
 console.log(`  大梁:     ${sDataRows.length} 行`);
-console.log(`  小梁:     0 行 (プレースホルダ)`);
+console.log(`  小梁:     ${smallBeamRows.length} 行 (OCR)`);
 if (colCategory) console.log(`  柱:       ${colDataRows.length} 行 (OCR、最大 ${maxColSections} 断面/柱)`);
