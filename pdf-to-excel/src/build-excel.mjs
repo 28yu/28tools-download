@@ -1,41 +1,39 @@
 // Build schema v1 Excel from extracted beams JSON.
 //
 // Pipeline:
-//   1. Read extracted beams (raw text per position)
+//   1. Read extracted RC and S beam JSON
 //   2. Parse with parsers.mjs
 //   3. Expand compound symbols (FG17,FG18,(FG19) -> 3 rows)
-//   4. Emit .xlsx with Meta + RC_Beam + placeholder sheets
+//   4. Emit .xlsx with Meta + RC_Beam + S_Beam + placeholder sheets
 //
-// Run: node build-excel.mjs <beams.json> [out.xlsx]
+// Run: node build-excel.mjs [out.xlsx] [rc-beams.json] [s-beams.json]
 
 import { readFile } from 'node:fs/promises';
-import { writeFileSync } from 'node:fs';
 import * as XLSX from 'xlsx';
 import {
   parseRebarDia, parseRebarCount, parseStirrup, parseDim,
-  mergeEndgap, expandCompound,
+  mergeEndgap, expandCompound, parseSection, normalizeGrid,
 } from './parsers.mjs';
 
-const beamsPath = process.argv[2] || './sample-output-beams.json';
-const outPath = process.argv[3] || './sample-output.xlsx';
-const beams = JSON.parse(await readFile(beamsPath, 'utf8'));
+const outPath  = process.argv[2] || './sample-output.xlsx';
+const rcPath   = process.argv[3] || './sample-output-beams.json';
+const sPath    = process.argv[4] || './sample-output-sbeams.json';
 
-// Schema v1 RC_Beam columns: basic 7 + 10×5 positions = 57
+const rcBeamsRaw = JSON.parse(await readFile(rcPath, 'utf8'));
+const sBeamsRaw  = JSON.parse(await readFile(sPath, 'utf8'));
+
+// ----- RC_Beam -----
 const POSITIONS = ['a', 'b', 'c', 'd', 'e'];
-const basicCols = ['TypeName', '符号', 'スパン_mm', '幅B_mm', '成D_mm', 'Fc_Nmm2', '備考'];
-const positionCols = POSITIONS.flatMap(x => [
+const rcBasicCols = ['TypeName', '符号', 'スパン_mm', '幅B_mm', '成D_mm', 'Fc_Nmm2', '備考'];
+const rcPosCols = POSITIONS.flatMap(x => [
   `${x}_主筋径`, `${x}_上_1段`, `${x}_上_2段`,
   `${x}_下_1段`, `${x}_下_2段`,
   `${x}_あばら径`, `${x}_あばら脚数`, `${x}_あばらピッチ_mm`,
   `${x}_端あき_mm`, `${x}_原文`,
 ]);
-const headers = [...basicCols, ...positionCols];
+const rcHeaders = [...rcBasicCols, ...rcPosCols];
 
-// Build one schema row from one extracted beam.
-// `posMapping`: maps extractor's a/c/b to schema's a/b/c/d/e
-//   - For 3-position beams (a=left, c=center, b=right), we use schema's a/c/b (= positions a, c, b)
-//   - Schema's d and e remain null for simple beams
-function buildRow(beam, symbol) {
+function buildRcRow(beam, symbol) {
   const r = beam.原文 || {};
   const top = r.主筋上 || {}, bot = r.主筋下 || {};
   const endgap = mergeEndgap(r.端あき1, r.端あき2);
@@ -43,14 +41,7 @@ function buildRow(beam, symbol) {
   const dia = parseRebarDia(r.主筋径);
   const widthMap = r.幅B || {};
 
-  // Per-position data; schema's a/c/b correspond to extractor's a/c/b (other letters left empty)
-  const perPos = {
-    a: {},
-    b: {},
-    c: {},
-    d: {},
-    e: {},
-  };
+  const perPos = { a:{}, b:{}, c:{}, d:{}, e:{} };
   for (const p of ['a', 'c', 'b']) {
     const topCount = parseRebarCount(top[p]);
     const botCount = parseRebarCount(bot[p]);
@@ -68,75 +59,94 @@ function buildRow(beam, symbol) {
     };
   }
 
-  // Width: typically single value (uniform) or 3 values (varied)
-  // For schema's 幅B_mm we use center; if center is null fall back to a or b
   const widthMm = parseDim(widthMap.c) ?? parseDim(widthMap.a) ?? parseDim(widthMap.b);
-
   const row = {
     TypeName: symbol,
     符号: symbol,
     スパン_mm: parseDim(r.スパン),
     幅B_mm: widthMm,
     成D_mm: parseDim(r.成D),
-    Fc_Nmm2: null, // not on this PDF
+    Fc_Nmm2: null,
     備考: '',
   };
   for (const x of POSITIONS) {
-    row[`${x}_主筋径`] = perPos[x].主筋径 ?? null;
-    row[`${x}_上_1段`] = perPos[x].上_1段 ?? null;
-    row[`${x}_上_2段`] = perPos[x].上_2段 ?? null;
-    row[`${x}_下_1段`] = perPos[x].下_1段 ?? null;
-    row[`${x}_下_2段`] = perPos[x].下_2段 ?? null;
-    row[`${x}_あばら径`] = perPos[x].あばら径 ?? null;
-    row[`${x}_あばら脚数`] = perPos[x].あばら脚数 ?? null;
+    row[`${x}_主筋径`]        = perPos[x].主筋径 ?? null;
+    row[`${x}_上_1段`]        = perPos[x].上_1段 ?? null;
+    row[`${x}_上_2段`]        = perPos[x].上_2段 ?? null;
+    row[`${x}_下_1段`]        = perPos[x].下_1段 ?? null;
+    row[`${x}_下_2段`]        = perPos[x].下_2段 ?? null;
+    row[`${x}_あばら径`]      = perPos[x].あばら径 ?? null;
+    row[`${x}_あばら脚数`]    = perPos[x].あばら脚数 ?? null;
     row[`${x}_あばらピッチ_mm`] = perPos[x].あばらピッチ_mm ?? null;
-    row[`${x}_端あき_mm`] = perPos[x].端あき_mm ?? null;
-    row[`${x}_原文`] = perPos[x].原文 ?? '';
+    row[`${x}_端あき_mm`]     = perPos[x].端あき_mm ?? null;
+    row[`${x}_原文`]          = perPos[x].原文 ?? '';
   }
   return row;
 }
 
-// Process beams: skip the "FG19のみ" annotation band (where bands have no real values)
-const realBeams = beams.filter(b => {
-  // Filter out band 4 (FG19 annotations at y≈577) which have null span/dia
-  return b.原文?.スパン !== undefined && b.原文?.スパン !== null;
-});
-
-// Expand compound symbols and build rows
-const rows = [];
-for (const beam of realBeams) {
+const realRcBeams = rcBeamsRaw.filter(b => b.原文?.スパン);
+const rcRows = [];
+for (const beam of realRcBeams) {
   const symbols = expandCompound(beam.符号);
-  if (symbols.length === 0) continue;
-  for (const sym of symbols) {
-    rows.push(buildRow(beam, sym));
-  }
+  for (const sym of symbols) rcRows.push(buildRcRow(beam, sym));
 }
 
-// Build sheets
+// ----- S_Beam -----
+const sHeaders = [
+  'TypeName', '符号', '断面形式', '成H_mm', '幅B_mm', 'ウェブtw_mm', 'フランジtf_mm',
+  'スパン_mm', '通り起点', '通り終点', '鋼材グレード', '区分', '原文', '備考',
+];
+
+function buildSRow(beam) {
+  const r = beam.原文 || {};
+  const sec = parseSection(r.断面型);
+  const grid = normalizeGrid(r.通り起点_列 || [], r.通り終点_列 || []);
+  // Spans CSV: ';'-joined integer mm values
+  const spanMms = (r.スパン_列 || []).map(parseDim).filter(v => v !== null);
+  return {
+    TypeName: beam.符号,
+    符号: beam.符号,
+    断面形式: sec?.kind ?? null,
+    成H_mm: sec?.H ?? null,
+    幅B_mm: sec?.B ?? null,
+    ウェブtw_mm: sec?.tw ?? null,
+    フランジtf_mm: sec?.tf ?? null,
+    スパン_mm: spanMms.join(';'),
+    通り起点: grid.start ?? '',
+    通り終点: grid.end ?? '',
+    鋼材グレード: '',
+    区分: '',
+    原文: r.断面型 ?? '',
+    備考: '',
+  };
+}
+const sRows = sBeamsRaw.map(buildSRow);
+
+// ----- Build workbook -----
 const wb = XLSX.utils.book_new();
 
-// Meta
 const metaAoa = [
   ['key', 'value'],
   ['schema_version', 'v1'],
-  ['source_pdf_filename', 'PDF2-p1-RC基礎大梁.pdf'],
+  ['source_pdf_filename', 'PDF2.pdf'],
   ['drawing_number', ''],
-  ['drawing_name', 'RC基礎大梁リスト'],
+  ['drawing_name', 'RC基礎大梁リスト + S大梁リスト'],
   ['extracted_at', new Date().toISOString()],
   ['extracted_by', 'pdf-to-excel-proto@0.1.0'],
 ];
 XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(metaAoa), 'Meta');
 
-// RC_Beam
-const rcBeamAoa = [headers, ...rows.map(r => headers.map(h => r[h] ?? ''))];
-const rcBeamSheet = XLSX.utils.aoa_to_sheet(rcBeamAoa);
-XLSX.utils.book_append_sheet(wb, rcBeamSheet, 'RC_Beam');
+const rcAoa = [rcHeaders, ...rcRows.map(r => rcHeaders.map(h => r[h] ?? ''))];
+XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(rcAoa), 'RC_Beam');
 
-// Empty placeholder sheets
-for (const name of ['RC_Column', 'CFT_Column', 'S_Beam']) {
+const sAoa = [sHeaders, ...sRows.map(r => sHeaders.map(h => r[h] ?? ''))];
+XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(sAoa), 'S_Beam');
+
+for (const name of ['RC_Column', 'CFT_Column']) {
   XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet([['placeholder']]), name);
 }
 
 XLSX.writeFile(wb, outPath);
-console.log(`wrote ${outPath} (${rows.length} RC_Beam rows from ${realBeams.length} extracted beams)`);
-console.log(`symbols: ${rows.map(r => r.符号).join(', ')}`);
+console.log(`wrote ${outPath}`);
+console.log(`  RC_Beam: ${rcRows.length} rows`);
+console.log(`  S_Beam:  ${sRows.length} rows`);
