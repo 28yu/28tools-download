@@ -53,6 +53,10 @@ export function detectPageCategory(tcItems, viewport) {
 // from each family (concrete / steel / rebar) so the caller can attach
 // it as a page-level default for every beam/column on that page.
 // Accepts either {str} items (from pdf.js) or OCR words (same {str} shape).
+//
+// Patterns search ANYWHERE inside each item's text so we still catch grades
+// embedded in note sentences like "鋼材は、SN490Bとする。" or
+// "梁中央断面の鋼材は、SM490Aとしてもよい。"
 //   Fc24, Fc30        — concrete strength
 //   SD295, SD345, SD390 — rebar grade
 //   SS400, SN400B, SN490B, SM490A — general/welded steel
@@ -60,9 +64,9 @@ export function detectPageCategory(tcItems, viewport) {
 //   BCR295            — cold-rolled square steel (柱)
 //   TMCP, STKR        — other steel grades
 const MATERIAL_PATTERNS = {
-  concrete: /^Fc\d+$/i,
-  rebar:    /^SD\d+[A-Z]?$/,
-  steel:    /^(SS|SN|SM|BCP|BCR|STKR)\d+[A-Z]?$/,
+  concrete: /Fc\d+/gi,
+  rebar:    /SD\d+[A-Z]?/g,
+  steel:    /(?:SS|SN|SM|BCP|BCR|STKR)\d+[A-Z]?/g,
 };
 function dominant(strs) {
   if (!strs.length) return null;
@@ -72,12 +76,14 @@ function dominant(strs) {
 }
 export function detectMaterials(items) {
   const out = { 構造マテリアル: null, 主筋材質: null, _all: [] };
-  const concrete = items.filter(it => MATERIAL_PATTERNS.concrete.test(it.str)).map(it => it.str);
-  const rebar    = items.filter(it => MATERIAL_PATTERNS.rebar   .test(it.str)).map(it => it.str);
-  const steel    = items.filter(it => MATERIAL_PATTERNS.steel   .test(it.str)).map(it => it.str);
+  const concrete = [], rebar = [], steel = [];
+  for (const it of items) {
+    const s = it.str || '';
+    for (const m of s.matchAll(MATERIAL_PATTERNS.concrete)) concrete.push(m[0]);
+    for (const m of s.matchAll(MATERIAL_PATTERNS.rebar))    rebar   .push(m[0]);
+    for (const m of s.matchAll(MATERIAL_PATTERNS.steel))    steel   .push(m[0]);
+  }
   out._all = [...new Set([...concrete, ...rebar, ...steel])];
-  // Decide the dominant 構造マテリアル: prefer steel over concrete since most
-  // PDFs we see are steel-heavy; if no steel, fall back to concrete.
   out.構造マテリアル = dominant(steel) || dominant(concrete);
   out.主筋材質 = dominant(rebar);
   return out;
