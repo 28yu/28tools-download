@@ -110,17 +110,33 @@
     font-weight: 700;
   }
 
-  /* ---------- privacy notice ---------- */
+  /* ---------- notices ---------- */
   .privacy-notice {
     background: rgba(39, 174, 96, 0.08);
     border-left: 3px solid var(--architect-green);
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    color: var(--steel-blue);
+  }
+  .privacy-notice strong { color: var(--architect-green); }
+  .accuracy-notice {
+    background: rgba(230, 126, 34, 0.08);
+    border-left: 3px solid var(--construction-orange);
     border-radius: 6px;
     padding: 12px 16px;
     margin-bottom: 24px;
     font-size: 0.9rem;
     color: var(--steel-blue);
   }
-  .privacy-notice strong { color: var(--architect-green); }
+  .accuracy-notice strong { color: var(--construction-orange); }
+  .accuracy-notice ul {
+    margin: 6px 0 0 1.2em;
+    padding: 0;
+    line-height: 1.7;
+  }
+  .accuracy-notice li { margin-bottom: 2px; }
 
   /* ---------- dropzone ---------- */
   .dropzone {
@@ -379,6 +395,17 @@
   <div class="privacy-notice">
     🔒 <strong>プライバシー保護</strong> — PDF はあなたのブラウザ内のみで処理されます。サーバへ送信されません。
     難読化PDFのみ初回 Tesseract.js (≈16MB) を遅延ロードします。
+  </div>
+
+  <div class="accuracy-notice">
+    ⚠️ <strong>自動読み取りの精度について</strong> — この機能は完璧ではありません。
+    抽出結果は必ず元 PDF と照合し、誤りはプレビュー画面 (黄色セル) で修正してください。
+    <ul>
+      <li>PDF にテキスト情報が無いもの (スキャン画像 / フォント難読化) は画像認識(OCR)で読み取るため、誤認識が発生します。</li>
+      <li>図面ごとにレイアウトが微妙に異なるため、想定外の位置にある情報は拾えない場合があります。</li>
+      <li>注記文 (「特記なき限り…」など) は、文脈によって認識精度が変わります。</li>
+      <li>文字が小さい / かすれている / 線と重なっている場合は OCR の精度が落ちます。</li>
+    </ul>
   </div>
 
   <section class="panel">

@@ -76,12 +76,32 @@ function dominant(strs) {
 }
 export function detectMaterials(items) {
   const out = { 構造マテリアル: null, 主筋材質: null, _all: [] };
+  if (!items.length) return out;
+
+  // pdf.js often splits a single visual word into multiple text items
+  // (e.g. "SN490B" → ["SN", "490B"]) which breaks naive regex matching.
+  // Concatenate items that share a row (same y) before scanning so the
+  // grade pattern survives the split.
+  const sorted = [...items].sort((a, b) => a.y - b.y || a.x - b.x);
+  // Heuristic Y tolerance: small in PDF-point space (~4pt), larger in
+  // OCR-pixel space (~15px) — pick by inspecting the max y observed.
+  const maxY = Math.max(0, ...sorted.map(it => it.y));
+  const tolY = maxY > 1000 ? 15 : 4;
+  const lines = [];
+  for (const it of sorted) {
+    const last = lines[lines.length - 1];
+    if (last && Math.abs(it.y - last.y) <= tolY) {
+      last.text += it.str;
+    } else {
+      lines.push({ y: it.y, text: it.str });
+    }
+  }
+
   const concrete = [], rebar = [], steel = [];
-  for (const it of items) {
-    const s = it.str || '';
-    for (const m of s.matchAll(MATERIAL_PATTERNS.concrete)) concrete.push(m[0]);
-    for (const m of s.matchAll(MATERIAL_PATTERNS.rebar))    rebar   .push(m[0]);
-    for (const m of s.matchAll(MATERIAL_PATTERNS.steel))    steel   .push(m[0]);
+  for (const line of lines) {
+    for (const m of line.text.matchAll(MATERIAL_PATTERNS.concrete)) concrete.push(m[0]);
+    for (const m of line.text.matchAll(MATERIAL_PATTERNS.rebar))    rebar.push(m[0]);
+    for (const m of line.text.matchAll(MATERIAL_PATTERNS.steel))    steel.push(m[0]);
   }
   out._all = [...new Set([...concrete, ...rebar, ...steel])];
   out.構造マテリアル = dominant(steel) || dominant(concrete);

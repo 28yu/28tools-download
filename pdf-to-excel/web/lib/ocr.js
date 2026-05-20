@@ -100,8 +100,9 @@ function tessWordsToEntries(words) {
 }
 
 /**
- * Render the page and OCR it with two PSM modes (sparse + block).
- * Returns merged unique words.
+ * Render the page and OCR it with three PSM modes (sparse + block + auto).
+ * Returns merged unique words. Three passes take ~3x the time of one but
+ * recover text that any single segmentation mode would miss.
  */
 export async function ocrPage(page, onStatus, dpi = 400) {
   onStatus && onStatus('PDFページ描画', 0);
@@ -109,15 +110,20 @@ export async function ocrPage(page, onStatus, dpi = 400) {
 
   const worker = await getWorker(onStatus);
 
-  onStatus && onStatus('OCR pass 1 (sparse)', 0.1);
+  onStatus && onStatus('OCR pass 1/3 (sparse)', 0.05);
   await worker.setParameters({ tessedit_pageseg_mode: '11' });
   const r1 = await worker.recognize(canvas);
   const w1 = tessWordsToEntries(r1.data.words);
 
-  onStatus && onStatus('OCR pass 2 (block)', 0.55);
+  onStatus && onStatus('OCR pass 2/3 (block)', 0.35);
   await worker.setParameters({ tessedit_pageseg_mode: '6' });
   const r2 = await worker.recognize(canvas);
   const w2 = tessWordsToEntries(r2.data.words);
 
-  return mergeWords(w1, w2);
+  onStatus && onStatus('OCR pass 3/3 (auto)', 0.7);
+  await worker.setParameters({ tessedit_pageseg_mode: '3' });
+  const r3 = await worker.recognize(canvas);
+  const w3 = tessWordsToEntries(r3.data.words);
+
+  return mergeWords(mergeWords(w1, w2), w3);
 }
