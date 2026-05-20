@@ -1,0 +1,15 @@
+{
+  "name": "pdf-to-excel-proto",
+  "version": "0.1.0",
+  "description": "PDF->Excel extraction prototype (anchor-text driven)",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "extract": "node extract-rc-beam.mjs",
+    "build": "node build-excel.mjs"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^4.10.38",
+    "xlsx": "^0.18.5"
+  }
+}
