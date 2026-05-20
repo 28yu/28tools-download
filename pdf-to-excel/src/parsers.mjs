@@ -76,15 +76,16 @@ export function expandCompound(symbol) {
 // "H-" prefix is normalized to "SH".
 export function parseSection(s) {
   if (!s) return null;
-  const m = String(s).match(/^(SH|BH|H)[-]?(\d+)[×x](\d+)[×x](\d+)[×x](\d+)$/);
+  // Allow decimal thicknesses (H-198×99×4.5×7) and X/x/× separators.
+  const m = String(s).match(/^(SH|BH|H)[-]?(\d+)[×xX](\d+)[×xX](\d+(?:\.\d+)?)[×xX](\d+(?:\.\d+)?)$/);
   if (!m) return null;
   const kind = m[1] === 'H' ? 'SH' : m[1];
   return {
     kind,
     H:  parseInt(m[2]),
     B:  parseInt(m[3]),
-    tw: parseInt(m[4]),
-    tf: parseInt(m[5]),
+    tw: parseFloat(m[4]),
+    tf: parseFloat(m[5]),
   };
 }
 
