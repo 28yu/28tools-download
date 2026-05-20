@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-19T02:30:30.393689",
+  "lastUpdated": "2026-05-20T02:30:50.813598",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -22,23 +22,43 @@
       "language": "ja"
     },
     {
-      "title": "THE TOKYO TOILETとは｜渋谷トイレプロジェクトを解説",
-      "link": "https://news.build-app.jp/article/40539/",
-      "description": "トレンドワード：THE TOKYO TOILET 近年、公共トイレは単なるインフラではなく、街の景観や快適性を構成する重要な公共空間として注......",
-      "publishedDate": "Wed, 13 May 2026 22:00:00 +0000",
+      "title": "DigitalArchi、旭ビルウォールのGRC製3次元形状オブジェ製造に3Dプリント型枠提供",
+      "link": "https://news.build-app.jp/article/40630/",
+      "description": "株式会社DigitalArchi（本社：神奈川県鎌倉市、代表取締役：松岡康友）は、旭ビルウォール株式会社（以下、AGB）のGRC（ガラス繊維......",
+      "publishedDate": "Tue, 19 May 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/ebfa38355cbed65c1f8a39423f906ef0-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/11/AdobeStock_123082275-130x98.jpeg",
       "language": "ja"
     },
     {
-      "title": "建設業の”紙・FAX・Excel”はなぜなくならないのか─ 資材リース業の構造的課題",
-      "link": "https://news.build-app.jp/article/40519/",
-      "description": "株式会社Leach（本社：東京都、代表取締役CEO：冨永拓也、以下「当社」）は、資材リース業向けAI業務システム「BuildOS（ビルドオー......",
-      "publishedDate": "Wed, 13 May 2026 22:00:00 +0000",
+      "title": "建設会社のテレビCMは本当に若者に刺さっているのか？",
+      "link": "https://news.build-app.jp/article/40027/",
+      "description": "ここ数年、建設会社のテレビCMが増殖している。「地図に残る仕事」「未来をつくる人たち」「街を守る技術者たち」——感動を狙ったコピーが茶の間に......",
+      "publishedDate": "Tue, 19 May 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/01/JLL400eENskfi9j1672979627_1672979670-130x82.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/20260520_hirayama-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第三回)",
+      "link": "https://news.build-app.jp/article/40502/",
+      "description": "建設現場の安全活動に音声AIを活用して現場の安全管理水準の向上と業務効率化目指す NTTソノリティと東急建設では、音声AIを活用した建設現場......",
+      "publishedDate": "Tue, 19 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/57d50ec3150822ea2f9fee04fe4f679c-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "野村不動産溜池山王ビル｜清水建設が設計・施工、竣工前一棟貸しの国内最大級木造オフィスビル",
+      "link": "https://news.build-app.jp/article/40591/",
+      "description": "トレンドワード：野村不動産溜池山王ビル 野村不動産溜池山王ビルは、2023年に竣工した木造と鉄骨のハイブリッド構造オフィスビルです。旧野村不......",
+      "publishedDate": "Tue, 19 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/3ff523e1d77f8916a7d7c1f4211686b1-130x82.png",
       "language": "ja"
     },
     {
@@ -60,26 +80,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "東京の超高層で華やぐ投機の宴｜「億ション」ブームが照らし出す住宅金融化のカラクリ",
-      "link": "https://news.build-app.jp/article/40024/",
-      "description": "東京の不動産市場で進行する静かな革命は、住居という概念そのものを書き換えつつある。1億円超のマンション、通称「億ション」の急増は、単なる富裕......",
-      "publishedDate": "Tue, 12 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/20260513_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "帝国不動産、国交省「建築GX・DX推進事業」を活用し協力事業者を含めたBIM実務運用を強化",
-      "link": "https://news.build-app.jp/article/40516/",
-      "description": "帝国不動産株式会社（本社：東京都中央区銀座、代表取締役社長：木本 啓紀、以下「帝国不動産」）は、国土交通省が推進する「建築GX・DX推進事業......",
-      "publishedDate": "Tue, 12 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/11/AdobeStock_606135704-130x73.jpeg",
-      "language": "ja"
     },
     {
       "title": "buildingSMART International Appoints Aidan Mercer as Managing Director",
