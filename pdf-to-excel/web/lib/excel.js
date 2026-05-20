@@ -79,12 +79,13 @@ const POSITIONS = [
   { key: 'e', label: '中間 (e)' },
 ];
 const RC_BASIC = [
-  { key: 'TypeName', label: 'TypeName' },
-  { key: '符号',      label: '符号'      },
-  { key: '幅B',       label: '幅B'      },
-  { key: '成D',       label: '成D'      },
-  { key: 'Fc',        label: 'Fc'       },
-  { key: '備考',      label: '備考'      },
+  { key: 'TypeName',       label: 'TypeName' },
+  { key: '符号',            label: '符号'      },
+  { key: '幅B',             label: '幅B'      },
+  { key: '成D',             label: '成D'      },
+  { key: '構造マテリアル',  label: '構造マテリアル' },
+  { key: '主筋材質',        label: '主筋材質'   },
+  { key: '備考',            label: '備考'      },
 ];
 const RC_SUBGROUPS = [
   { label: '主筋', vmerge: false, cols: [
@@ -130,7 +131,10 @@ function buildRcRow(beam, symbol) {
   const widthMm = parseDim(widthMap.c) ?? parseDim(widthMap.a) ?? parseDim(widthMap.b);
   return {
     TypeName: symbol, 符号: symbol,
-    幅B: widthMm, 成D: parseDim(r.成D), Fc: null, 備考: '',
+    幅B: widthMm, 成D: parseDim(r.成D),
+    構造マテリアル: r.構造マテリアル ?? '',
+    主筋材質: r.主筋材質 ?? '',
+    備考: '',
     pos: perPos,
   };
 }
@@ -243,9 +247,9 @@ const S_GROUPS = [
     { key: '通り終点', label: '終点' },
   ]},
   { label: null, vmerge: true, cols: [
-    { key: '鋼材グレード', label: '鋼材グレード' },
-    { key: '原文',         label: '原文'         },
-    { key: '備考',         label: '備考'         },
+    { key: '構造マテリアル', label: '構造マテリアル' },
+    { key: '原文',           label: '原文'         },
+    { key: '備考',           label: '備考'         },
   ]},
 ];
 
@@ -259,7 +263,8 @@ function buildSRow(beam) {
     成H: sec?.H ?? null, 幅B: sec?.B ?? null,
     ウェブtw: sec?.tw ?? null, フランジtf: sec?.tf ?? null,
     通り起点: grid.start ?? '', 通り終点: grid.end ?? '',
-    鋼材グレード: '', 原文: r.断面型 ?? '', 備考: '',
+    構造マテリアル: r.構造マテリアル ?? '',
+    原文: r.断面型 ?? '', 備考: '',
   };
 }
 
@@ -278,9 +283,9 @@ const SB_GROUPS = [
     { key: 'フランジtf', label: 'フランジtf' },
   ]},
   { label: null, vmerge: true, cols: [
-    { key: '鋼材グレード', label: '鋼材グレード' },
-    { key: '原文',         label: '原文'         },
-    { key: '備考',         label: '備考'         },
+    { key: '構造マテリアル', label: '構造マテリアル' },
+    { key: '原文',           label: '原文'         },
+    { key: '備考',           label: '備考'         },
   ]},
 ];
 
@@ -293,7 +298,7 @@ function buildSmallBeamRow(beam) {
     断面形式: sec?.kind ?? null,
     成H: sec?.H ?? null, 幅B: sec?.B ?? null,
     ウェブtw: sec?.tw ?? null, フランジtf: sec?.tf ?? null,
-    鋼材グレード: r.鋼材グレード ?? '',
+    構造マテリアル: r.構造マテリアル ?? r.鋼材グレード ?? '',
     原文: r.断面型 ?? '', 備考: 'OCR抽出',
   };
 }
@@ -316,16 +321,17 @@ function buildColumnGroups(maxSec) {
     ]});
   }
   groups.push({ label: null, vmerge: true, cols: [
-    { key: '鋼材グレード', label: '鋼材グレード' },
-    { key: '備考',         label: '備考'         },
+    { key: '構造マテリアル', label: '構造マテリアル' },
+    { key: '備考',           label: '備考'         },
   ]});
   return groups;
 }
 
 function buildColumnRow(col, maxSec) {
+  const grades = col.原文?.鋼材グレード_列 || [];
   const out = {
     TypeName: col.符号, 符号: col.符号,
-    鋼材グレード: (col.原文?.鋼材グレード_列 || []).join(','),
+    構造マテリアル: col.原文?.構造マテリアル ?? grades.join(',') ?? '',
     備考: 'OCR抽出',
   };
   const sections = (col.原文?.断面型_列 || []).map(parseColumnSection).filter(Boolean);

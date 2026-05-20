@@ -49,9 +49,41 @@ export function detectPageCategory(tcItems, viewport) {
   return 'unknown';
 }
 
-// ============================================================
-// RC beam extractor (port of extract-rc-beam.mjs)
-// ============================================================
+// Detect material grade strings on a page. Returns the dominant material
+// from each family (concrete / steel / rebar) so the caller can attach
+// it as a page-level default for every beam/column on that page.
+// Accepts either {str} items (from pdf.js) or OCR words (same {str} shape).
+//   Fc24, Fc30        — concrete strength
+//   SD295, SD345, SD390 — rebar grade
+//   SS400, SN400B, SN490B, SM490A — general/welded steel
+//   BCP235, BCP325    — square hollow steel (柱)
+//   BCR295            — cold-rolled square steel (柱)
+//   TMCP, STKR        — other steel grades
+const MATERIAL_PATTERNS = {
+  concrete: /^Fc\d+$/i,
+  rebar:    /^SD\d+[A-Z]?$/,
+  steel:    /^(SS|SN|SM|BCP|BCR|STKR)\d+[A-Z]?$/,
+};
+function dominant(strs) {
+  if (!strs.length) return null;
+  const counts = {};
+  for (const s of strs) counts[s] = (counts[s] || 0) + 1;
+  return Object.entries(counts).sort((a,b) => b[1] - a[1])[0][0];
+}
+export function detectMaterials(items) {
+  const out = { 構造マテリアル: null, 主筋材質: null, _all: [] };
+  const concrete = items.filter(it => MATERIAL_PATTERNS.concrete.test(it.str)).map(it => it.str);
+  const rebar    = items.filter(it => MATERIAL_PATTERNS.rebar   .test(it.str)).map(it => it.str);
+  const steel    = items.filter(it => MATERIAL_PATTERNS.steel   .test(it.str)).map(it => it.str);
+  out._all = [...new Set([...concrete, ...rebar, ...steel])];
+  // Decide the dominant 構造マテリアル: prefer steel over concrete since most
+  // PDFs we see are steel-heavy; if no steel, fall back to concrete.
+  out.構造マテリアル = dominant(steel) || dominant(concrete);
+  out.主筋材質 = dominant(rebar);
+  return out;
+}
+
+
 
 const RC_OFFSETS = {
   span:     { dy: 12  },
@@ -82,6 +114,7 @@ function findAt(items, x, y, tolX = RC_TOL_X, tolY = RC_TOL_Y, filter = null) {
 
 export function extractRcBeams(tcItems, viewport) {
   const items = toItems(tcItems, viewport);
+  const mats = detectMaterials(items);
   const fgRe = /^FG\d+[A-Z]?$/;
   const fgCompoundRe = /^FG\d+(,FG\d+)+(,\(FG\d+\))?$/;
   const fgItems = items.filter(it => fgRe.test(it.str) || fgCompoundRe.test(it.str));
@@ -138,6 +171,8 @@ export function extractRcBeams(tcItems, viewport) {
         b: findAt(items, cx + RC_SUB_DX, fg.y + RC_OFFSETS.endgap2.dy),
       };
       beam.原文.あばら筋 = findAt(items, cx, fg.y + RC_OFFSETS.stirrup.dy, 40, RC_TOL_Y);
+      beam.原文.構造マテリアル = mats.構造マテリアル;
+      beam.原文.主筋材質 = mats.主筋材質;
       beams.push(beam);
     }
   }
@@ -165,6 +200,7 @@ function gather(items, x, y, tolX, tolY = S_TOL_Y) {
 
 export function extractSBeams(tcItems, viewport) {
   const items = toItems(tcItems, viewport);
+  const mats = detectMaterials(items);
   const sgRe = /^C?SG\d+[A-Z]?$/;
   const sgItems = items.filter(it => sgRe.test(it.str));
 
@@ -213,6 +249,7 @@ export function extractSBeams(tcItems, viewport) {
           通り起点_列: gStart.map(it => it.str),
           通り終点_列: gEnd.map(it => it.str),
           断面型: section,
+          構造マテリアル: mats.構造マテリアル,
         },
       });
     }
@@ -226,6 +263,7 @@ export function extractSBeams(tcItems, viewport) {
 // ============================================================
 
 export function extractColumnsFromOcr(words) {
+  const pageMats = detectMaterials(words);
   const colRe = /^(SC|CC|CFT|C)\d+[A-Z]?$/;
   const anchors = words.filter(w => colRe.test(w.str));
   if (anchors.length === 0) return [];
@@ -273,12 +311,14 @@ export function extractColumnsFromOcr(words) {
         seen.add(k); return true;
       });
     };
+    const colGrades = uniq(grades, s => s.str).map(s => s.str);
     cols.push({
       符号: anchor.str,
       anchor: { x: cx, y: anchor.y },
       原文: {
         断面型_列: uniq(sections, s => `${s.str}@${(s.y/10)|0}`).map(s => s.str),
-        鋼材グレード_列: uniq(grades, s => s.str).map(s => s.str),
+        鋼材グレード_列: colGrades,
+        構造マテリアル: colGrades[0] || pageMats.構造マテリアル,
       },
     });
   }
@@ -291,7 +331,10 @@ export function extractColumnsFromOcr(words) {
 // ============================================================
 
 export function extractSmallBeamsFromOcr(words) {
-  const anchorRe = /^[csCS]?[sS][bB]\d+[A-Z]{0,3}(?:[.,][csCS][sS][bB]\d+[A-Z]{0,3})?$/;
+  const pageMats = detectMaterials(words);
+  // Case-insensitive: OCR may return "sb14m" (all lower), "SB14M", "Sb14M" etc.
+  // Suffix can also be lowercase (m/w/h) — we uppercase before storing.
+  const anchorRe = /^[csCS]?[sS][bB]\d+[A-Za-z]{0,3}(?:[.,][csCS][sS][bB]\d+[A-Za-z]{0,3})?$/;
   const anchors = words.filter(w => anchorRe.test(w.str)).map(w => ({
     symbols: w.str.toUpperCase().split(/[.,]/).map(s => s.trim()).filter(Boolean),
     y: w.y,
@@ -324,6 +367,7 @@ export function extractSmallBeamsFromOcr(words) {
         原文: {
           断面型: sec?.str ?? null,
           鋼材グレード: mat?.str ?? null,
+          構造マテリアル: mat?.str ?? pageMats.構造マテリアル,
           raw符号: a.raw,
         },
       });
@@ -333,10 +377,15 @@ export function extractSmallBeamsFromOcr(words) {
 }
 
 // Try to classify an OCR'd page from its anchor patterns.
+// Returns the category plus the raw counts so the app can log them
+// when classification fails.
 export function detectOcrCategory(words) {
-  const sc = words.filter(w => /^(SC|CC|CFT|C)\d+[A-Z]?$/.test(w.str)).length;
+  const sc = words.filter(w => /^(SC|CC|CFT|C)\d+[A-Z]?$/i.test(w.str)).length;
   const sb = words.filter(w => /^[csCS]?[sS][bB]\d+/i.test(w.str)).length;
-  if (sb > sc && sb > 6) return 'small-beam';
-  if (sc > 4) return 'column';
-  return 'unknown';
+  // Lower thresholds — column lists are typically 3-12 anchors,
+  // small-beam lists are typically 10-50 anchors.
+  let category = 'unknown';
+  if (sb >= 3 && sb >= sc) category = 'small-beam';
+  else if (sc >= 3) category = 'column';
+  return { category, counts: { sc, sb, total: words.length } };
 }
