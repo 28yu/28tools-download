@@ -78,7 +78,8 @@ async function sha256(buffer) {
 
 // Cache: same PDF re-uploaded? Return cached result so the user gets
 // an instant load on iteration. Uses the Cache API (lighter than IDB).
-const CACHE_NAME = 'pdf-extract-v1';
+// Bump suffix when extraction logic changes so old caches invalidate.
+const CACHE_NAME = 'pdf-extract-v3';
 async function loadCache(key) {
   try {
     const c = await caches.open(CACHE_NAME);
@@ -148,37 +149,21 @@ async function processPdf(file) {
       sourceFile: file.name,
     };
 
-    // Phase 1: pre-scan ALL pages for material grade strings. Notes like
-    // "鋼材は、SN490Bとする。" often sit on a different page from the beam
-    // list itself; collecting globally gives every beam a fallback grade.
-    showStatus('全ページマテリアル走査中...');
-    const allItems = [];
-    for (let p = 1; p <= pdf.numPages; p++) {
-      const { items } = await pageTextItems(await pdf.getPage(p));
-      // Offset y by a large per-page constant so the line-join logic in
-      // detectMaterials doesn't merge across pages.
-      for (const it of items) allItems.push({ str: it.str, x: it.x, y: it.y + p * 100000 });
-    }
-    const globalMats = detectMaterials(allItems);
-    if (globalMats.構造マテリアル) log(`🔍 全ページから検出: 構造マテリアル=${globalMats.構造マテリアル}${globalMats.主筋材質 ? `, 主筋材質=${globalMats.主筋材質}` : ''} (${globalMats._all.join(', ')})`);
-    else log(`🔍 全ページから検出: マテリアル無し`);
-    result._globalMaterials = globalMats;
-
-    // Patch page-local material onto each beam, with global fallback.
-    const fillMaterial = (beam) => {
-      const o = beam.原文;
-      if (!o.構造マテリアル) o.構造マテリアル = globalMats.構造マテリアル ?? '';
-      if (o.主筋材質 === undefined || o.主筋材質 === null) {
-        if (globalMats.主筋材質) o.主筋材質 = globalMats.主筋材質;
-      }
-    };
-
     for (let p = 1; p <= pdf.numPages; p++) {
       setProgress(10 + (p - 1) / pdf.numPages * 80);
       showStatus(`ページ ${p}/${pdf.numPages} 処理中...`);
       const page = await pdf.getPage(p);
       const tc = await page.getTextContent({ includeMarkedContent: false });
       const viewport = page.getViewport({ scale: 1 });
+
+      // Per-page material diagnostic — extractors already run
+      // detectMaterials() internally; this just logs what each page
+      // contributed so the user can verify by eye.
+      const pageItems = toItems(tc.items, viewport);
+      const pageMats = detectMaterials(pageItems);
+      if (pageMats._all.length) {
+        log(`🔍 P${p} マテリアル検出: ${pageMats._all.join(', ')}`);
+      }
 
       // Try text extraction first (fast).
       let extracted = false;
@@ -188,7 +173,6 @@ async function processPdf(file) {
         if (cat === 'rc-beam') {
           const beams = extractRcBeams(tc.items, viewport);
           if (beams.length > 0) {
-            beams.forEach(fillMaterial);
             result.rcBeams.push(...beams);
             log(`P${p}: rc-beam ${beams.length}件 (テキスト)`);
             extracted = true;
@@ -196,7 +180,6 @@ async function processPdf(file) {
         } else if (cat === 's-beam') {
           const beams = extractSBeams(tc.items, viewport);
           if (beams.length > 0) {
-            beams.forEach(fillMaterial);
             result.sBeams.push(...beams);
             log(`P${p}: s-beam ${beams.length}件 (テキスト)`);
             extracted = true;
@@ -218,23 +201,19 @@ async function processPdf(file) {
         log(`  OCR: ${words.length}語 (SC=${counts.sc}, SB=${counts.sb}) → ${category}`);
         if (category === 'column') {
           const cols = extractColumnsFromOcr(words);
-          cols.forEach(fillMaterial);
           result.columns.push(...cols);
           log(`  柱 ${cols.length} 件抽出`);
         } else if (category === 'small-beam') {
           const sbs = extractSmallBeamsFromOcr(words);
-          sbs.forEach(fillMaterial);
           result.smallBeams.push(...sbs);
           log(`  小梁 ${sbs.length} 件抽出`);
         } else {
           const cols = extractColumnsFromOcr(words);
           const sbs = extractSmallBeamsFromOcr(words);
           if (sbs.length > cols.length) {
-            sbs.forEach(fillMaterial);
             result.smallBeams.push(...sbs);
             log(`  → 小梁として ${sbs.length} 件採用 (両側試行)`);
           } else if (cols.length > 0) {
-            cols.forEach(fillMaterial);
             result.columns.push(...cols);
             log(`  → 柱として ${cols.length} 件採用 (両側試行)`);
           } else {
@@ -244,11 +223,6 @@ async function processPdf(file) {
       } else if (!extracted) {
         log(`P${p}: 内容なし — スキップ`);
       }
-
-      // Progressive preview: re-render after each page so the user sees
-      // results streaming in rather than waiting for the whole PDF.
-      extractedData = result;
-      renderTabs(result);
     }
 
     // Persist to cache so re-uploads of this PDF skip processing entirely.
