@@ -89,9 +89,16 @@ function autoFitColumns(ws, minWidth = 6, maxWidth = 36) {
 
 // ---------- 基礎大梁 (RC FG) ----------
 
-const POSITIONS = ['a', 'b', 'c', 'd', 'e'];
+// Position order in display: 左端 → 中央 → 右端 → 中間部 (for connected spans).
+const POSITIONS = [
+  { key: 'a', label: '左端'      },
+  { key: 'c', label: '中央'      },
+  { key: 'b', label: '右端'      },
+  { key: 'd', label: '中間 (d)' },
+  { key: 'e', label: '中間 (e)' },
+];
 // _mm suffix stripped from labels — all linear dims are mm by convention.
-// スパン column removed from 基礎大梁 per design.
+// スパン column removed from 基礎大梁; 端あき removed per design.
 const RC_BASIC_COLS = [
   { key: 'TypeName', label: 'TypeName' },
   { key: '符号',      label: '符号'      },
@@ -100,18 +107,26 @@ const RC_BASIC_COLS = [
   { key: 'Fc_Nmm2', label: 'Fc'       },
   { key: '備考',      label: '備考'      },
 ];
-const RC_POS_FIELDS = [
-  { key: '主筋径',          label: '主筋径'      },
-  { key: '上_1段',          label: '上_1段'      },
-  { key: '上_2段',          label: '上_2段'      },
-  { key: '下_1段',          label: '下_1段'      },
-  { key: '下_2段',          label: '下_2段'      },
-  { key: 'あばら径',        label: 'あばら径'    },
-  { key: 'あばら脚数',      label: 'あばら脚数'  },
-  { key: 'あばらピッチ_mm', label: 'あばらピッチ' },
-  { key: '端あき_mm',       label: '端あき'      },
-  { key: '原文',            label: '原文'        },
+// Within each position, fields are grouped into 主筋 (5) / あばら筋 (3) / 原文 (1).
+// Row 2 of the header shows these sub-group labels, row 3 shows leaf fields.
+const RC_SUBGROUPS = [
+  { label: '主筋', vmerge: false, cols: [
+    { key: '主筋径', label: '径'      },
+    { key: '上_1段', label: '上_1段' },
+    { key: '上_2段', label: '上_2段' },
+    { key: '下_1段', label: '下_1段' },
+    { key: '下_2段', label: '下_2段' },
+  ]},
+  { label: 'あばら筋', vmerge: false, cols: [
+    { key: 'あばら径',        label: '径'    },
+    { key: 'あばら脚数',      label: '脚数'  },
+    { key: 'あばらピッチ_mm', label: 'ピッチ' },
+  ]},
+  { label: null, vmerge: true, cols: [
+    { key: '原文', label: '原文' },
+  ]},
 ];
+const RC_POS_FIELDS = RC_SUBGROUPS.flatMap(g => g.cols);
 
 function buildRcBeamData(beam, symbol) {
   const r = beam.原文 || {};
@@ -122,7 +137,7 @@ function buildRcBeamData(beam, symbol) {
   const widthMap = r.幅B || {};
 
   const perPos = {};
-  for (const p of POSITIONS) {
+  for (const { key: p } of POSITIONS) {
     const topCount = parseRebarCount(top[p]);
     const botCount = parseRebarCount(bot[p]);
     perPos[p] = {
@@ -134,7 +149,6 @@ function buildRcBeamData(beam, symbol) {
       あばら径: stirrup.dia,
       あばら脚数: stirrup.legs,
       あばらピッチ_mm: stirrup.pitch,
-      端あき_mm: endgap[p] ?? null,
       原文: [top[p] && `上=${top[p]}`, bot[p] && `下=${bot[p]}`].filter(Boolean).join(' '),
     };
   }
@@ -150,48 +164,87 @@ function buildRcBeamData(beam, symbol) {
   };
 }
 
+// 3-row header for RC sheets:
+//   Row 1: basic cols (vmerge 3 rows) | position labels (左端/中央/右端/...) hmerge 9 cols each
+//   Row 2: (vmerged)                  | sub-group labels (主筋 hmerge 5 / あばら筋 hmerge 3 / 原文 vmerge with row 3)
+//   Row 3: (vmerged)                  | leaf field labels (径, 上_1段, ..., 原文 vmerged)
 function addRcSheet(wb, sheetName, beams) {
-  const ws = wb.addWorksheet(sheetName, { views: [{ state: 'frozen', xSplit: 2, ySplit: 2 }] });
+  const ws = wb.addWorksheet(sheetName, { views: [{ state: 'frozen', xSplit: 2, ySplit: 3 }] });
 
-  // Build header rows
-  const totalCols = RC_BASIC_COLS.length + POSITIONS.length * RC_POS_FIELDS.length;
+  const fieldsPerPos = RC_POS_FIELDS.length;
+  const totalCols = RC_BASIC_COLS.length + POSITIONS.length * fieldsPerPos;
   const r1 = new Array(totalCols).fill('');
   const r2 = new Array(totalCols).fill('');
+  const r3 = new Array(totalCols).fill('');
+
+  // Basic columns: row 1 label only (will be vmerged 3 rows)
   RC_BASIC_COLS.forEach((c, i) => r1[i] = c.label);
-  POSITIONS.forEach((p, pi) => {
-    const start = RC_BASIC_COLS.length + pi * RC_POS_FIELDS.length;
-    r1[start] = `位置 ${p}`;
-    RC_POS_FIELDS.forEach((f, fi) => r2[start + fi] = f.label);
+
+  // Position blocks: position label in row 1, sub-group labels in row 2, leaf labels in row 3.
+  POSITIONS.forEach((pos, pi) => {
+    const blockStart = RC_BASIC_COLS.length + pi * fieldsPerPos;
+    r1[blockStart] = pos.label;
+    let offset = 0;
+    for (const g of RC_SUBGROUPS) {
+      const subStart = blockStart + offset;
+      if (g.vmerge) {
+        // single-col group: label is in row 2, vmerged with row 3
+        g.cols.forEach((f, fi) => {
+          r2[subStart + fi] = f.label;
+        });
+      } else {
+        r2[subStart] = g.label;
+        g.cols.forEach((f, fi) => r3[subStart + fi] = f.label);
+      }
+      offset += g.cols.length;
+    }
   });
 
   const row1 = ws.addRow(r1);
   const row2 = ws.addRow(r2);
+  const row3 = ws.addRow(r3);
 
-  // Merge basic columns vertically across rows 1-2
+  // Merges
+  // 1) Basic cols: vmerge across rows 1-3
   for (let i = 0; i < RC_BASIC_COLS.length; i++) {
     const col = i + 1;
-    ws.mergeCells(1, col, 2, col);
+    ws.mergeCells(1, col, 3, col);
   }
-  // Merge each position group horizontally on row 1
-  POSITIONS.forEach((p, pi) => {
-    const startCol = RC_BASIC_COLS.length + pi * RC_POS_FIELDS.length + 1;
-    const endCol   = startCol + RC_POS_FIELDS.length - 1;
-    ws.mergeCells(1, startCol, 1, endCol);
+  // 2) Position block on row 1: hmerge across fieldsPerPos cols
+  POSITIONS.forEach((pos, pi) => {
+    const startCol = RC_BASIC_COLS.length + pi * fieldsPerPos + 1;
+    ws.mergeCells(1, startCol, 1, startCol + fieldsPerPos - 1);
+    // 3) Within block, sub-groups on row 2
+    let offset = 0;
+    for (const g of RC_SUBGROUPS) {
+      const subStart = startCol + offset;
+      if (g.vmerge) {
+        // 1-col group: vmerge with row 3
+        for (let i = 0; i < g.cols.length; i++) {
+          ws.mergeCells(2, subStart + i, 3, subStart + i);
+        }
+      } else if (g.cols.length > 1) {
+        ws.mergeCells(2, subStart, 2, subStart + g.cols.length - 1);
+      }
+      offset += g.cols.length;
+    }
   });
 
   styleHeaderRow(row1);
   styleHeaderRow(row2);
+  styleHeaderRow(row3);
   row1.height = 22;
   row2.height = 22;
+  row3.height = 22;
 
   // Data rows
   for (const beam of beams) {
     const row = new Array(totalCols).fill(null);
     RC_BASIC_COLS.forEach((c, i) => row[i] = beam[c.key]);
-    POSITIONS.forEach((p, pi) => {
-      const start = RC_BASIC_COLS.length + pi * RC_POS_FIELDS.length;
-      const pos = beam.pos[p];
-      RC_POS_FIELDS.forEach((f, fi) => row[start + fi] = pos[f.key] ?? null);
+    POSITIONS.forEach((pos, pi) => {
+      const start = RC_BASIC_COLS.length + pi * fieldsPerPos;
+      const pdata = beam.pos[pos.key];
+      RC_POS_FIELDS.forEach((f, fi) => row[start + fi] = pdata?.[f.key] ?? null);
     });
     const r = ws.addRow(row);
     styleDataRow(r);
@@ -316,9 +369,11 @@ const SMALL_BEAM_GROUPS = [
 function buildSmallBeamData(beam) {
   const r = beam.原文 || {};
   const sec = parseSection(r.断面型);
+  // Small beams are conventionally written lowercase (sb19, csb24, ...).
+  const sym = String(beam.符号).toLowerCase();
   return {
-    TypeName: beam.符号,
-    符号: beam.符号,
+    TypeName: sym,
+    符号: sym,
     構造: 'S',
     断面形式: sec?.kind ?? null,
     成H_mm: sec?.H ?? null,
@@ -454,24 +509,21 @@ wb.created = new Date();
   autoFitColumns(ws);
 }
 
-// 基礎大梁
-addRcSheet(wb, '基礎大梁', rcDataRows);
+// Sheet names include the detected construction type, e.g. "基礎大梁 (RC)".
+const rcSheetName = rcCategory.sheetName;
+const sSheetName  = sCategory.sheetName;
+const smallSheetName = smallCategory?.sheetName ?? '小梁';
+const colSheetName = colCategory?.sheetName ?? '柱';
 
-// 大梁 (S SG) — sheet name is just "大梁" per user request, no スパン column
-addGroupedSheet(wb, '大梁', S_GROUPS, sDataRows);
-
-// 小梁 — built from PDF2 page 3 (S小梁) via OCR
-addGroupedSheet(wb, '小梁', SMALL_BEAM_GROUPS, smallBeamRows);
-
-// 柱
-if (colCategory) {
-  addGroupedSheet(wb, '柱', buildColumnGroups(maxColSections), colDataRows);
-}
+addRcSheet(wb, rcSheetName, rcDataRows);
+addGroupedSheet(wb, sSheetName, S_GROUPS, sDataRows);
+addGroupedSheet(wb, smallSheetName, SMALL_BEAM_GROUPS, smallBeamRows);
+if (colCategory) addGroupedSheet(wb, colSheetName, buildColumnGroups(maxColSections), colDataRows);
 
 await wb.xlsx.writeFile(outPath);
 console.log(`\nwrote ${outPath}`);
 console.log(`  Meta`);
-console.log(`  基礎大梁: ${rcDataRows.length} 行`);
-console.log(`  大梁:     ${sDataRows.length} 行`);
-console.log(`  小梁:     ${smallBeamRows.length} 行 (OCR)`);
-if (colCategory) console.log(`  柱:       ${colDataRows.length} 行 (OCR、最大 ${maxColSections} 断面/柱)`);
+console.log(`  ${rcSheetName}: ${rcDataRows.length} 行`);
+console.log(`  ${sSheetName}: ${sDataRows.length} 行`);
+console.log(`  ${smallSheetName}: ${smallBeamRows.length} 行 (OCR)`);
+if (colCategory) console.log(`  ${colSheetName}: ${colDataRows.length} 行 (OCR、最大 ${maxColSections} 断面/柱)`);

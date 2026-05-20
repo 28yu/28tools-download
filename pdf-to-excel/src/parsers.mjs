@@ -117,18 +117,18 @@ export function detectCategory(symbols) {
   }
   const dominant = Object.entries(counts).sort((a,b) => b[1] - a[1])[0]?.[0];
   const map = {
-    FG:  { kind: 'RC基礎大梁',  sheetName: '基礎大梁',  construction: 'RC', element: '基礎大梁' },
-    G:   { kind: 'RC大梁',       sheetName: '大梁',      construction: 'RC', element: '大梁'    },
-    B:   { kind: 'RC小梁',       sheetName: '小梁',      construction: 'RC', element: '小梁'    },
-    CG:  { kind: 'RC片持ち大梁', sheetName: '大梁',      construction: 'RC', element: '大梁'    },
-    CB:  { kind: 'RC片持ち小梁', sheetName: '小梁',      construction: 'RC', element: '小梁'    },
-    SG:  { kind: 'S大梁',         sheetName: 'S大梁',    construction: 'S',  element: '大梁'    },
-    SB:  { kind: 'S小梁',         sheetName: 'S小梁',    construction: 'S',  element: '小梁'    },
-    CSG: { kind: 'S片持ち大梁',  sheetName: 'S大梁',    construction: 'S',  element: '大梁'    },
-    C:   { kind: 'RC柱',          sheetName: '柱',       construction: 'RC', element: '柱'     },
-    SC:  { kind: 'S柱',           sheetName: '柱',       construction: 'S',  element: '柱'     },
-    CC:  { kind: '合成柱',        sheetName: '柱',       construction: '合成', element: '柱'    },
-    CFT: { kind: 'CFT柱',         sheetName: '柱',       construction: 'CFT', element: '柱'    },
+    FG:  { kind: 'RC基礎大梁',  sheetName: '基礎大梁 (RC)', construction: 'RC', element: '基礎大梁' },
+    G:   { kind: 'RC大梁',       sheetName: '大梁 (RC)',     construction: 'RC', element: '大梁'    },
+    B:   { kind: 'RC小梁',       sheetName: '小梁 (RC)',     construction: 'RC', element: '小梁'    },
+    CG:  { kind: 'RC片持ち大梁', sheetName: '大梁 (RC)',     construction: 'RC', element: '大梁'    },
+    CB:  { kind: 'RC片持ち小梁', sheetName: '小梁 (RC)',     construction: 'RC', element: '小梁'    },
+    SG:  { kind: 'S大梁',         sheetName: '大梁 (S)',     construction: 'S',  element: '大梁'    },
+    SB:  { kind: 'S小梁',         sheetName: '小梁 (S)',     construction: 'S',  element: '小梁'    },
+    CSG: { kind: 'S片持ち大梁',  sheetName: '大梁 (S)',     construction: 'S',  element: '大梁'    },
+    C:   { kind: 'RC柱',          sheetName: '柱 (RC)',      construction: 'RC', element: '柱'     },
+    SC:  { kind: 'S柱',           sheetName: '柱 (S)',       construction: 'S',  element: '柱'     },
+    CC:  { kind: '合成柱',        sheetName: '柱 (SRC)',     construction: '合成', element: '柱'   },
+    CFT: { kind: 'CFT柱',         sheetName: '柱 (CFT)',     construction: 'CFT', element: '柱'   },
   };
   return map[dominant] || { kind: `不明(${dominant})`, sheetName: '未分類', construction: '?', element: '?' };
 }
