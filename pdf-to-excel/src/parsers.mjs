@@ -70,3 +70,30 @@ export function expandCompound(symbol) {
     return m ? m[1] : p;
   });
 }
+
+// "SH-600×200×12×16" or "SH600×200×12×16" or "BH800×400×16×32"
+//   → { kind: "SH", H: 600, B: 200, tw: 12, tf: 16 }
+// "H-" prefix is normalized to "SH".
+export function parseSection(s) {
+  if (!s) return null;
+  const m = String(s).match(/^(SH|BH|H)[-]?(\d+)[×x](\d+)[×x](\d+)[×x](\d+)$/);
+  if (!m) return null;
+  const kind = m[1] === 'H' ? 'SH' : m[1];
+  return {
+    kind,
+    H:  parseInt(m[2]),
+    B:  parseInt(m[3]),
+    tw: parseInt(m[4]),
+    tf: parseInt(m[5]),
+  };
+}
+
+// Normalize 通り (gridline) list. Deduplicate consecutive shared gridlines.
+//   ["Xd1", "Xd2", "Xd3"] → ["Xd1", "Xd2", "Xd3"]
+//   start ["Xd1","Xd2","Xd3"] + end ["Xd2","Xd3","Xd4"] → 起点 = "Xd1", 終点 = "Xd4"
+// (for connected spans we only keep the outermost grids)
+export function normalizeGrid(startList, endList) {
+  const start = startList[0] || null;
+  const end = endList[endList.length - 1] || startList[startList.length - 1] || null;
+  return { start, end };
+}
