@@ -100,9 +100,35 @@ async function processPdf(file) {
       showStatus(`ページ ${p}/${pdf.numPages} 処理中...`);
       const page = await pdf.getPage(p);
       const tc = await page.getTextContent({ includeMarkedContent: false });
+      const viewport = page.getViewport({ scale: 1 });
 
-      if (isObfuscated(tc.items)) {
-        log(`P${p}: 難読化検出 → OCR フォールバック`);
+      // Try text extraction first (fast).
+      let extracted = false;
+      const obfuscated = isObfuscated(tc.items);
+      if (!obfuscated) {
+        const cat = detectPageCategory(tc.items, viewport);
+        if (cat === 'rc-beam') {
+          const beams = extractRcBeams(tc.items, viewport);
+          if (beams.length > 0) {
+            result.rcBeams.push(...beams);
+            log(`P${p}: rc-beam ${beams.length}件 (テキスト)`);
+            extracted = true;
+          }
+        } else if (cat === 's-beam') {
+          const beams = extractSBeams(tc.items, viewport);
+          if (beams.length > 0) {
+            result.sBeams.push(...beams);
+            log(`P${p}: s-beam ${beams.length}件 (テキスト)`);
+            extracted = true;
+          }
+        }
+      }
+
+      // OCR fallback: any page where text extraction yielded nothing AND
+      // the page has visible content. Catches glyph-obfuscated AND
+      // image-only AND ambiguous-layout pages all in one path.
+      if (!extracted && tc.items.length >= 20) {
+        log(`P${p}: テキスト抽出 0件 (${obfuscated ? '難読化' : '未認識'}) → OCR フォールバック`);
         const { ocrPage } = await import('./lib/ocr.js');
         const words = await ocrPage(page, (st, frac) => {
           showStatus(`P${p}/${pdf.numPages} OCR (${st})`);
@@ -119,33 +145,20 @@ async function processPdf(file) {
           result.smallBeams.push(...sbs);
           log(`  小梁 ${sbs.length} 件抽出`);
         } else {
-          log(`  ⚠ カテゴリ不明 (SC/SB アンカー両方 3 件未満)`);
-          // Try both extractors anyway; whichever yields more is kept.
           const cols = extractColumnsFromOcr(words);
           const sbs = extractSmallBeamsFromOcr(words);
           if (sbs.length > cols.length) {
             result.smallBeams.push(...sbs);
-            log(`  → 小梁として ${sbs.length} 件採用`);
+            log(`  → 小梁として ${sbs.length} 件採用 (両側試行)`);
           } else if (cols.length > 0) {
             result.columns.push(...cols);
-            log(`  → 柱として ${cols.length} 件採用`);
+            log(`  → 柱として ${cols.length} 件採用 (両側試行)`);
+          } else {
+            log(`  ⚠ OCR でも抽出できず`);
           }
         }
-      } else {
-        const viewport = page.getViewport({ scale: 1 });
-        const cat = detectPageCategory(tc.items, viewport);
-        log(`P${p}: ${cat} (テキスト抽出)`);
-        if (cat === 'rc-beam') {
-          const beams = extractRcBeams(tc.items, viewport);
-          result.rcBeams.push(...beams);
-          log(`  基礎大梁 ${beams.length} 件抽出`);
-        } else if (cat === 's-beam') {
-          const beams = extractSBeams(tc.items, viewport);
-          result.sBeams.push(...beams);
-          log(`  大梁 ${beams.length} 件抽出`);
-        } else {
-          log(`  カテゴリ不明 — スキップ`);
-        }
+      } else if (!extracted) {
+        log(`P${p}: 内容なし — スキップ`);
       }
     }
 
@@ -205,48 +218,108 @@ function renderTable() {
   }
 
   let rows;
+  // Preview columns mirror what Excel writes (lib/excel.js). This keeps
+  // the user's mental model consistent: "what I see is what I get".
+
+  // Inline section parser for preview-only display.
+  const parseS = s => {
+    if (!s) return {};
+    const m = String(s).match(/^(SH|BH|H)[-]?(\d+)[×xX](\d+)[×xX](\d+(?:\.\d+)?)[×xX](\d+(?:\.\d+)?)$/);
+    return m ? { 形式: m[1]==='H'?'SH':m[1], 成H: +m[2], 幅B: +m[3], tw: +m[4], tf: +m[5] } : {};
+  };
+  const parseCol = s => {
+    if (!s) return {};
+    const h = String(s).match(/^(SH|BH|H)[-]?(\d+)[×xX](\d+)[×xX](\d+)[×xX](\d+)/);
+    if (h) return { 形式: h[1]==='H'?'SH':h[1], AH: +h[2], B: +h[3], t1: +h[4], t2: +h[5] };
+    const q = String(s).match(/^(?:[□ロ口])?[-]?(\d+)[×xX](\d+)[×xX](\d+)/);
+    return q ? { 形式: '□', AH: +q[1], B: +q[2], t1: +q[3], t2: '' } : {};
+  };
+  const rebarTop1 = s => {
+    if (!s || s === '-') return '';
+    return String(s).split('(')[0].split('+')[0] || '';
+  };
+  const rebarTop2 = s => {
+    if (!s || s === '-') return '';
+    const m = String(s).split('(')[0].split('+');
+    return m[1] || '';
+  };
+  const parseStir = s => {
+    if (!s) return { 径: '', 脚数: '', ピッチ: '' };
+    const m = String(s).match(/^(D\d+)\[(\d+)\]@(\d+)$/);
+    return m ? { 径: m[1], 脚数: m[2], ピッチ: m[3] } : { 径: '', 脚数: '', ピッチ: '' };
+  };
+
   if (activeTab === '基礎大梁 (RC)') {
-    rows = data.map(d => ({
-      符号: d.符号,
-      幅B: d.原文?.幅B?.c ?? '',
-      成D: d.原文?.成D ?? '',
-      構造マテリアル: d.原文?.構造マテリアル ?? '',
-      主筋材質: d.原文?.主筋材質 ?? '',
-      主筋径: d.原文?.主筋径 ?? '',
-      'a上(左端)': d.原文?.主筋上?.a ?? '',
-      'a下(左端)': d.原文?.主筋下?.a ?? '',
-      'c上(中央)': d.原文?.主筋上?.c ?? '',
-      'c下(中央)': d.原文?.主筋下?.c ?? '',
-      'b上(右端)': d.原文?.主筋上?.b ?? '',
-      'b下(右端)': d.原文?.主筋下?.b ?? '',
-      あばら筋: d.原文?.あばら筋 ?? '',
-    }));
-  } else if (activeTab === '大梁 (S)') {
-    rows = data.map(d => ({
-      符号: d.符号,
-      断面型: d.原文?.断面型 ?? '',
-      構造マテリアル: d.原文?.構造マテリアル ?? '',
-      スパン: (d.原文?.スパン_列 || []).join(', '),
-      通り起点: (d.原文?.通り起点_列 || [])[0] ?? '',
-      通り終点: (d.原文?.通り終点_列 || []).slice(-1)[0] ?? '',
-    }));
-  } else if (activeTab === '小梁 (S)') {
-    rows = data.map(d => ({
-      符号: d.符号.toLowerCase(),
-      断面型: d.原文?.断面型 ?? '',
-      構造マテリアル: d.原文?.構造マテリアル ?? d.原文?.鋼材グレード ?? '',
-    }));
-  } else if (activeTab === '柱 (S)') {
+    const POSLAB = [['a','左端'], ['c','中央'], ['b','右端']];
     rows = data.map(d => {
-      const sections = d.原文?.断面型_列 || [];
-      return {
+      const r = d.原文 || {};
+      const stir = parseStir(r.あばら筋);
+      const row = {
+        TypeName: d.符号,
         符号: d.符号,
-        構造マテリアル: d.原文?.構造マテリアル ?? '',
-        断面1: sections[0] ?? '',
-        断面2: sections[1] ?? '',
-        断面3: sections[2] ?? '',
-        断面4: sections[3] ?? '',
+        幅B: r.幅B?.c ?? r.幅B?.a ?? r.幅B?.b ?? '',
+        成D: r.成D ?? '',
+        構造マテリアル: r.構造マテリアル ?? '',
+        主筋材質: r.主筋材質 ?? '',
+        備考: '',
       };
+      for (const [k, label] of POSLAB) {
+        row[`${label}_主筋径`]    = r.主筋径 ?? '';
+        row[`${label}_上_1段`]    = rebarTop1(r.主筋上?.[k]);
+        row[`${label}_上_2段`]    = rebarTop2(r.主筋上?.[k]);
+        row[`${label}_下_1段`]    = rebarTop1(r.主筋下?.[k]);
+        row[`${label}_下_2段`]    = rebarTop2(r.主筋下?.[k]);
+        row[`${label}_あばら径`]  = stir.径;
+        row[`${label}_脚数`]      = stir.脚数;
+        row[`${label}_ピッチ`]    = stir.ピッチ;
+      }
+      return row;
+    });
+  } else if (activeTab === '大梁 (S)') {
+    rows = data.map(d => {
+      const r = d.原文 || {};
+      const sec = parseS(r.断面型);
+      return {
+        TypeName: d.符号, 符号: d.符号,
+        形式: sec.形式 ?? '', 成H: sec.成H ?? '', 幅B: sec.幅B ?? '',
+        ウェブtw: sec.tw ?? '', フランジtf: sec.tf ?? '',
+        通り起点: (r.通り起点_列 || [])[0] ?? '',
+        通り終点: (r.通り終点_列 || []).slice(-1)[0] ?? '',
+        構造マテリアル: r.構造マテリアル ?? '',
+        原文: r.断面型 ?? '',
+      };
+    });
+  } else if (activeTab === '小梁 (S)') {
+    rows = data.map(d => {
+      const r = d.原文 || {};
+      const sec = parseS(r.断面型);
+      const sym = String(d.符号).toLowerCase();
+      return {
+        TypeName: sym, 符号: sym, 構造: 'S',
+        形式: sec.形式 ?? '', 成H: sec.成H ?? '', 幅B: sec.幅B ?? '',
+        ウェブtw: sec.tw ?? '', フランジtf: sec.tf ?? '',
+        構造マテリアル: r.構造マテリアル ?? r.鋼材グレード ?? '',
+        原文: r.断面型 ?? '',
+      };
+    });
+  } else if (activeTab === '柱 (S)') {
+    const maxSec = Math.max(1, ...data.map(d => (d.原文?.断面型_列 || []).length));
+    rows = data.map(d => {
+      const sections = (d.原文?.断面型_列 || []).map(parseCol);
+      const row = {
+        TypeName: d.符号, 符号: d.符号,
+      };
+      for (let i = 1; i <= maxSec; i++) {
+        const s = sections[i-1] || {};
+        row[`断面${i}_形式`] = s.形式 ?? '';
+        row[`断面${i}_A/H`]  = s.AH ?? '';
+        row[`断面${i}_幅B`]  = s.B ?? '';
+        row[`断面${i}_t1`]   = s.t1 ?? '';
+        row[`断面${i}_t2`]   = s.t2 ?? '';
+      }
+      row.構造マテリアル = d.原文?.構造マテリアル ?? '';
+      row.備考 = 'OCR抽出';
+      return row;
     });
   }
 
