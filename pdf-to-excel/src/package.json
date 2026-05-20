@@ -9,6 +9,7 @@
     "build": "node build-excel.mjs"
   },
   "dependencies": {
+    "exceljs": "^4.4.0",
     "pdfjs-dist": "^4.10.38",
     "xlsx": "^0.18.5"
   }

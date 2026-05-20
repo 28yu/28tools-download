@@ -132,6 +132,27 @@ export function detectCategory(symbols) {
   return map[dominant] || { kind: `不明(${dominant})`, sheetName: '未分類', construction: '?', element: '?' };
 }
 
+// Column section parser: accepts H sections and hollow square sections.
+//   "SH-700×350×16×25"           → { kind: 'SH', H: 700, B: 350, tw: 16, tf: 25 }
+//   "□-700×700×25" / "-700x700x25" → { kind: '□', A: 700, B: 700, t: 25 }
+//   "BH800×400×16×32"            → { kind: 'BH', H: 800, B: 400, tw: 16, tf: 32 }
+export function parseColumnSection(s) {
+  if (!s) return null;
+  const str = String(s);
+  // Try H-section first (4 dims)
+  const h = str.match(/^(SH|BH|H)[-]?(\d+)[×xX](\d+)[×xX](\d+)[×xX](\d+)/);
+  if (h) {
+    const kind = h[1] === 'H' ? 'SH' : h[1];
+    return { kind, H: parseInt(h[2]), B: parseInt(h[3]), tw: parseInt(h[4]), tf: parseInt(h[5]) };
+  }
+  // Square hollow section (3 dims)
+  const sq = str.match(/^(?:[□ロ口])?[-]?(\d+)[×xX](\d+)[×xX](\d+)(?:\(([A-Z]+\d+)\))?/);
+  if (sq) {
+    return { kind: '□', A: parseInt(sq[1]), B: parseInt(sq[2]), t: parseInt(sq[3]), grade: sq[4] || null };
+  }
+  return null;
+}
+
 // Normalize 通り (gridline) list. Deduplicate consecutive shared gridlines.
 //   ["Xd1", "Xd2", "Xd3"] → ["Xd1", "Xd2", "Xd3"]
 //   start ["Xd1","Xd2","Xd3"] + end ["Xd2","Xd3","Xd4"] → 起点 = "Xd1", 終点 = "Xd4"
