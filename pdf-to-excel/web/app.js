@@ -108,18 +108,28 @@ async function processPdf(file) {
           showStatus(`P${p}/${pdf.numPages} OCR (${st})`);
           setProgress(10 + ((p - 1) + (frac || 0)) / pdf.numPages * 80);
         });
-        const cat = detectOcrCategory(words);
-        log(`  OCR: ${words.length} 語 / カテゴリ=${cat}`);
-        if (cat === 'column') {
+        const { category, counts } = detectOcrCategory(words);
+        log(`  OCR: ${words.length}語 (SC=${counts.sc}, SB=${counts.sb}) → ${category}`);
+        if (category === 'column') {
           const cols = extractColumnsFromOcr(words);
           result.columns.push(...cols);
           log(`  柱 ${cols.length} 件抽出`);
-        } else if (cat === 'small-beam') {
+        } else if (category === 'small-beam') {
           const sbs = extractSmallBeamsFromOcr(words);
           result.smallBeams.push(...sbs);
           log(`  小梁 ${sbs.length} 件抽出`);
         } else {
-          log(`  カテゴリ不明 — スキップ`);
+          log(`  ⚠ カテゴリ不明 (SC/SB アンカー両方 3 件未満)`);
+          // Try both extractors anyway; whichever yields more is kept.
+          const cols = extractColumnsFromOcr(words);
+          const sbs = extractSmallBeamsFromOcr(words);
+          if (sbs.length > cols.length) {
+            result.smallBeams.push(...sbs);
+            log(`  → 小梁として ${sbs.length} 件採用`);
+          } else if (cols.length > 0) {
+            result.columns.push(...cols);
+            log(`  → 柱として ${cols.length} 件採用`);
+          }
         }
       } else {
         const viewport = page.getViewport({ scale: 1 });
@@ -198,9 +208,10 @@ function renderTable() {
   if (activeTab === '基礎大梁 (RC)') {
     rows = data.map(d => ({
       符号: d.符号,
-      スパン: d.原文?.スパン ?? '',
       幅B: d.原文?.幅B?.c ?? '',
       成D: d.原文?.成D ?? '',
+      構造マテリアル: d.原文?.構造マテリアル ?? '',
+      主筋材質: d.原文?.主筋材質 ?? '',
       主筋径: d.原文?.主筋径 ?? '',
       'a上(左端)': d.原文?.主筋上?.a ?? '',
       'a下(左端)': d.原文?.主筋下?.a ?? '',
@@ -214,6 +225,7 @@ function renderTable() {
     rows = data.map(d => ({
       符号: d.符号,
       断面型: d.原文?.断面型 ?? '',
+      構造マテリアル: d.原文?.構造マテリアル ?? '',
       スパン: (d.原文?.スパン_列 || []).join(', '),
       通り起点: (d.原文?.通り起点_列 || [])[0] ?? '',
       通り終点: (d.原文?.通り終点_列 || []).slice(-1)[0] ?? '',
@@ -222,13 +234,14 @@ function renderTable() {
     rows = data.map(d => ({
       符号: d.符号.toLowerCase(),
       断面型: d.原文?.断面型 ?? '',
-      鋼材グレード: d.原文?.鋼材グレード ?? '',
+      構造マテリアル: d.原文?.構造マテリアル ?? d.原文?.鋼材グレード ?? '',
     }));
   } else if (activeTab === '柱 (S)') {
     rows = data.map(d => {
       const sections = d.原文?.断面型_列 || [];
       return {
         符号: d.符号,
+        構造マテリアル: d.原文?.構造マテリアル ?? '',
         断面1: sections[0] ?? '',
         断面2: sections[1] ?? '',
         断面3: sections[2] ?? '',
