@@ -125,6 +125,9 @@ export function detectCategory(symbols) {
     SB:  { kind: 'S小梁',         sheetName: 'S小梁',    construction: 'S',  element: '小梁'    },
     CSG: { kind: 'S片持ち大梁',  sheetName: 'S大梁',    construction: 'S',  element: '大梁'    },
     C:   { kind: 'RC柱',          sheetName: '柱',       construction: 'RC', element: '柱'     },
+    SC:  { kind: 'S柱',           sheetName: '柱',       construction: 'S',  element: '柱'     },
+    CC:  { kind: '合成柱',        sheetName: '柱',       construction: '合成', element: '柱'    },
+    CFT: { kind: 'CFT柱',         sheetName: '柱',       construction: 'CFT', element: '柱'    },
   };
   return map[dominant] || { kind: `不明(${dominant})`, sheetName: '未分類', construction: '?', element: '?' };
 }

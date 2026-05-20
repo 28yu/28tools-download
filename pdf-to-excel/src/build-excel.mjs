@@ -18,9 +18,12 @@ import {
 const outPath  = process.argv[2] || './sample-output.xlsx';
 const rcPath   = process.argv[3] || './sample-output-beams.json';
 const sPath    = process.argv[4] || './sample-output-sbeams.json';
+const colPath  = process.argv[5] || './sample-output-columns.json';
 
-const rcBeamsRaw = JSON.parse(await readFile(rcPath, 'utf8'));
-const sBeamsRaw  = JSON.parse(await readFile(sPath, 'utf8'));
+const rcBeamsRaw  = JSON.parse(await readFile(rcPath, 'utf8'));
+const sBeamsRaw   = JSON.parse(await readFile(sPath, 'utf8'));
+let columnsRaw = [];
+try { columnsRaw = JSON.parse(await readFile(colPath, 'utf8')); } catch { /* optional */ }
 
 // ---------- RC sheet ----------
 
@@ -239,6 +242,77 @@ function buildSSheet(rows) {
   return ws;
 }
 
+// ---------- Column sheet (柱) — OCR-based, lower accuracy ----------
+
+const COL_HEAD = [
+  { key: 'TypeName',     label: 'TypeName',    group: null   },
+  { key: '符号',          label: '符号',          group: null   },
+  { key: '断面型_列',     label: '断面リスト',     group: '断面' },
+  { key: '断面数',        label: '区分数',         group: '断面' },
+  { key: '鋼材グレード',  label: '鋼材グレード',   group: null   },
+  { key: '原文',          label: '原文',          group: null   },
+  { key: '備考',          label: '備考',          group: null   },
+];
+
+function buildColRow(col) {
+  const sections = col.原文?.断面型_列 || [];
+  return {
+    TypeName: col.符号,
+    符号: col.符号,
+    断面型_列: sections.join(';'),
+    断面数: sections.length,
+    鋼材グレード: (col.原文?.鋼材グレード_列 || []).join(','),
+    原文: sections.join(' / '),
+    備考: 'OCR抽出 (低精度) — 元PDFがグリフ難読化のためOCRフォールバック',
+  };
+}
+
+function buildColSheet(rows) {
+  // Simple 2-row header with "断面" group spanning 断面型_列 + 断面数.
+  const groups = [];
+  let i = 0;
+  while (i < COL_HEAD.length) {
+    const h = COL_HEAD[i];
+    if (h.group === null) {
+      groups.push({ label: null, cols: [h], vmerge: true });
+      i++;
+    } else {
+      const cols = [];
+      const groupName = h.group;
+      while (i < COL_HEAD.length && COL_HEAD[i].group === groupName) {
+        cols.push(COL_HEAD[i]); i++;
+      }
+      groups.push({ label: groupName, cols, vmerge: false });
+    }
+  }
+
+  const totalCols = COL_HEAD.length;
+  const headerRow1 = new Array(totalCols).fill('');
+  const headerRow2 = new Array(totalCols).fill('');
+  const merges = [];
+  let col = 0;
+  for (const g of groups) {
+    if (g.vmerge) {
+      for (const c of g.cols) {
+        headerRow1[col] = c.label;
+        merges.push({ s: { r: 0, c: col }, e: { r: 1, c: col } });
+        col++;
+      }
+    } else {
+      headerRow1[col] = g.label;
+      merges.push({ s: { r: 0, c: col }, e: { r: 0, c: col + g.cols.length - 1 } });
+      g.cols.forEach((c, i) => headerRow2[col + i] = c.label);
+      col += g.cols.length;
+    }
+  }
+  const dataRows = rows.map(r => COL_HEAD.map(c => r[c.key] ?? ''));
+  const ws = XLSX.utils.aoa_to_sheet([headerRow1, headerRow2, ...dataRows]);
+  ws['!merges'] = merges;
+  ws['!cols'] = COL_HEAD.map(c => ({ wch: c.key === '断面型_列' || c.key === '原文' || c.key === '備考' ? 30 : 12 }));
+  ws['!rows'] = [{ hpt: 22 }, { hpt: 22 }];
+  return ws;
+}
+
 // ---------- Detect categories ----------
 
 const realRcBeams = rcBeamsRaw.filter(b => b.原文?.スパン);
@@ -250,6 +324,10 @@ const sSymbolsAll = sBeamsRaw.map(b => b.符号);
 const sCategory = detectCategory(sSymbolsAll);
 console.log(`S 群: ${sSymbolsAll.length} 個の符号、検出カテゴリ = ${sCategory.kind} (シート名: ${sCategory.sheetName})`);
 
+const colSymbolsAll = columnsRaw.map(c => c.符号);
+const colCategory = columnsRaw.length > 0 ? detectCategory(colSymbolsAll) : null;
+if (colCategory) console.log(`柱 群: ${colSymbolsAll.length} 個の符号、検出カテゴリ = ${colCategory.kind} (シート名: ${colCategory.sheetName})`);
+
 // ---------- Build RC rows (expanded) ----------
 
 const rcRows = [];
@@ -258,6 +336,7 @@ for (const beam of realRcBeams) {
   for (const sym of symbols) rcRows.push(buildRcRow(beam, sym));
 }
 const sRows = sBeamsRaw.map(buildSRow);
+const colRows = columnsRaw.map(buildColRow);
 
 // ---------- Workbook ----------
 
@@ -269,15 +348,21 @@ const metaAoa = [
   ['source_pdf_filename', 'PDF2.pdf'],
   ['extracted_at', new Date().toISOString()],
   ['extracted_by', 'pdf-to-excel-proto@0.1.0'],
-  ['detected_categories', `${rcCategory.kind} (${rcRows.length}行), ${sCategory.kind} (${sRows.length}行)`],
+  ['detected_categories', [
+    `${rcCategory.kind} (${rcRows.length}行)`,
+    `${sCategory.kind} (${sRows.length}行)`,
+    colCategory ? `${colCategory.kind} (${colRows.length}行) ※OCR` : null,
+  ].filter(Boolean).join(', ')],
 ];
 XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(metaAoa), 'Meta');
 
 XLSX.utils.book_append_sheet(wb, buildRcSheet(rcRows), rcCategory.sheetName);
 XLSX.utils.book_append_sheet(wb, buildSSheet(sRows),   sCategory.sheetName);
+if (colCategory) XLSX.utils.book_append_sheet(wb, buildColSheet(colRows), colCategory.sheetName);
 
 XLSX.writeFile(wb, outPath);
 console.log(`\nwrote ${outPath}`);
 console.log(`  Meta sheet`);
 console.log(`  ${rcCategory.sheetName}: ${rcRows.length} 行`);
 console.log(`  ${sCategory.sheetName}: ${sRows.length} 行`);
+if (colCategory) console.log(`  ${colCategory.sheetName}: ${colRows.length} 行 (OCR)`);
