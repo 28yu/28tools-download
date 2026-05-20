@@ -1,143 +1,428 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>PDF → Excel 構造図抽出 (プロトタイプ)</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PDF → Excel 構造図抽出 - 28 Tools</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="../../images/site-icons/favicon-28.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 <style>
   :root {
-    --blue: #2b6cb0;
-    --blue-light: #ebf4f9;
-    --bg: #f7fafc;
-    --border: #cbd5e0;
-    --text: #1a202c;
-    --muted: #718096;
-    --warn-bg: #fefcbf;
-    --warn-border: #d69e2e;
+    --concrete-gray: #2c3e50;
+    --light-concrete: #ecf0f1;
+    --steel-blue: #34495e;
+    --glass-white: #ffffff;
+    --architect-green: #27ae60;
+    --construction-orange: #e67e22;
+    --blueprint-blue: #3498db;
+    --disabled-gray: #95a5a6;
+    --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
+    --shadow-medium: 0 8px 30px rgba(0,0,0,0.12);
+    --shadow-heavy: 0 15px 35px rgba(0,0,0,0.1);
   }
-  * { box-sizing: border-box; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    font-family: system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-    margin: 0; padding: 1.5rem; background: var(--bg); color: var(--text);
-    max-width: 1400px; margin-left: auto; margin-right: auto;
+    font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(135deg, var(--light-concrete) 0%, #f8f9fa 100%);
+    min-height: 100vh;
+    color: var(--concrete-gray);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
   }
-  header { margin-bottom: 1.5rem; }
-  h1 { font-size: 1.5rem; margin: 0 0 0.3rem; color: var(--blue); }
-  .subtitle { color: var(--muted); margin: 0; font-size: 0.95rem; }
-  .notice {
-    font-size: 0.85rem; padding: 0.6rem 0.8rem;
-    background: var(--warn-bg); border-left: 3px solid var(--warn-border);
-    border-radius: 4px; margin-top: 0.75rem;
+  main {
+    flex: 1;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px 60px 40px;
   }
+
+  /* ---------- header ---------- */
+  .site-header {
+    text-align: center;
+    margin: 60px 0 50px;
+  }
+  .main-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--concrete-gray);
+    letter-spacing: -0.02em;
+    font-family: 'Inter', sans-serif;
+  }
+  .title-link { text-decoration: none; color: inherit; transition: opacity 0.2s ease; }
+  .title-link:hover { opacity: 0.7; }
+  .title-divider {
+    width: 80px; height: 2px;
+    background: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue));
+    border-radius: 2px;
+    margin: 16px auto;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+    color: var(--steel-blue);
+    font-weight: 400;
+    opacity: 0.8;
+    letter-spacing: 0.02em;
+  }
+  .breadcrumb {
+    font-size: 0.85rem;
+    color: var(--disabled-gray);
+    margin-bottom: 20px;
+  }
+  .breadcrumb a {
+    color: var(--steel-blue);
+    text-decoration: none;
+  }
+  .breadcrumb a:hover { color: var(--blueprint-blue); }
+
+  /* ---------- card / panel ---------- */
+  .panel {
+    background: var(--glass-white);
+    border-radius: 16px;
+    box-shadow: var(--shadow-light);
+    padding: 32px;
+    margin-bottom: 24px;
+  }
+  .panel-title {
+    font-size: 1.1rem;
+    color: var(--concrete-gray);
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .panel-title .step {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, var(--architect-green), var(--blueprint-blue));
+    color: white;
+    border-radius: 50%;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  /* ---------- privacy notice ---------- */
+  .privacy-notice {
+    background: rgba(39, 174, 96, 0.08);
+    border-left: 3px solid var(--architect-green);
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    font-size: 0.9rem;
+    color: var(--steel-blue);
+  }
+  .privacy-notice strong { color: var(--architect-green); }
+
+  /* ---------- dropzone ---------- */
   .dropzone {
-    border: 2px dashed var(--border); border-radius: 8px;
-    padding: 2.5rem; text-align: center; background: white;
-    cursor: pointer; transition: all 0.2s;
+    display: block;
+    border: 2px dashed var(--disabled-gray);
+    border-radius: 12px;
+    padding: 48px 24px;
+    text-align: center;
+    background: linear-gradient(135deg, #fafbfc 0%, #f4f6f8 100%);
+    cursor: pointer;
+    transition: all 0.2s ease;
   }
   .dropzone:hover, .dropzone.dragover {
-    border-color: var(--blue); background: var(--blue-light);
+    border-color: var(--blueprint-blue);
+    background: rgba(52, 152, 219, 0.05);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-light);
   }
-  .dropzone input { display: none; }
-  .dropzone strong { display: block; font-size: 1.1rem; margin-bottom: 0.4rem; }
-  .dropzone small { color: var(--muted); }
+  .dropzone input[type="file"] {
+    position: absolute;
+    width: 1px; height: 1px; opacity: 0;
+    pointer-events: none;
+  }
+  .dropzone-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    color: var(--blueprint-blue);
+    display: block;
+  }
+  .dropzone-title {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--concrete-gray);
+    margin-bottom: 6px;
+    display: block;
+  }
+  .dropzone-sub {
+    font-size: 0.88rem;
+    color: var(--disabled-gray);
+    display: block;
+  }
+
+  /* ---------- status ---------- */
   .status {
-    margin-top: 1rem; padding: 0.75rem 1rem; border-radius: 6px;
-    background: white; border: 1px solid var(--border); display: none;
+    margin-top: 16px;
+    padding: 16px 20px;
+    border-radius: 10px;
+    background: var(--glass-white);
+    box-shadow: var(--shadow-light);
+    display: none;
   }
   .status.show { display: block; }
-  .status .msg { font-weight: 500; }
+  .status-msg { font-weight: 500; color: var(--concrete-gray); margin-bottom: 8px; }
   .progress {
-    height: 6px; background: #e2e8f0; border-radius: 3px;
-    overflow: hidden; margin: 0.5rem 0;
+    height: 6px;
+    background: var(--light-concrete);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 12px;
   }
-  .progress > div { height: 100%; background: var(--blue); transition: width 0.3s; }
+  .progress > div {
+    height: 100%;
+    background: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue));
+    transition: width 0.3s ease;
+  }
   .log {
-    font-family: ui-monospace, SFMono-Regular, monospace;
-    font-size: 11px; color: var(--muted);
-    max-height: 120px; overflow: auto; line-height: 1.5;
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    font-size: 0.78rem;
+    color: var(--steel-blue);
+    max-height: 130px;
+    overflow: auto;
+    line-height: 1.6;
+    background: var(--light-concrete);
+    padding: 8px 12px;
+    border-radius: 6px;
   }
+  .log:empty { display: none; }
+
+  /* ---------- tabs ---------- */
   .tabs {
-    display: flex; gap: 4px; margin-top: 1.5rem;
-    border-bottom: 2px solid var(--border); flex-wrap: wrap;
-  }
-  .tabs button {
-    padding: 0.5rem 1rem; border: 1px solid var(--border);
-    border-bottom: none; background: white; cursor: pointer;
-    border-radius: 6px 6px 0 0; font-size: 0.9rem; color: var(--text);
-  }
-  .tabs button.active {
-    background: var(--blue-light); border-color: var(--blue);
-    border-bottom: 2px solid var(--blue-light);
-    margin-bottom: -2px; font-weight: bold; color: var(--blue);
-  }
-  .tabs button .count {
-    color: var(--muted); margin-left: 0.4rem; font-size: 0.8rem;
-  }
-  .preview {
-    background: white; border: 1px solid var(--border); padding: 0;
-    max-height: 65vh; overflow: auto; border-top: none;
-  }
-  .preview table { border-collapse: collapse; font-size: 12px; width: 100%; }
-  .preview th, .preview td {
-    border: 1px solid #ddd; padding: 4px 8px;
-    text-align: center; white-space: nowrap;
-  }
-  .preview th {
-    background: var(--blue-light); color: var(--blue); font-weight: bold;
-    position: sticky; top: 0;
-  }
-  .preview td.editable { background: #fefcbf; cursor: text; }
-  .preview td.editable:focus { outline: 2px solid var(--blue); }
-  .preview .empty { padding: 1rem; color: var(--muted); }
-  .actions {
-    margin-top: 1rem; display: flex; gap: 0.5rem; align-items: center;
+    display: flex;
+    gap: 4px;
+    margin: 24px 0 0;
+    border-bottom: 2px solid var(--light-concrete);
     flex-wrap: wrap;
   }
-  button.primary {
-    background: var(--blue); color: white; border: none;
-    padding: 0.6rem 1.5rem; border-radius: 6px; cursor: pointer;
-    font-size: 0.95rem; font-weight: 500;
+  .tabs button {
+    padding: 10px 18px;
+    border: 1px solid var(--light-concrete);
+    border-bottom: none;
+    background: var(--glass-white);
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    font-size: 0.9rem;
+    color: var(--steel-blue);
+    font-family: inherit;
+    transition: all 0.2s ease;
   }
-  button.primary:hover { background: #2c5282; }
-  button.primary:disabled { background: var(--border); cursor: not-allowed; }
-  .meta { font-size: 0.85rem; color: var(--muted); }
-  footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); text-align: center; }
-  footer code { background: #edf2f7; padding: 1px 4px; border-radius: 3px; }
+  .tabs button:hover { background: rgba(52, 152, 219, 0.06); }
+  .tabs button.active {
+    background: var(--glass-white);
+    border-color: var(--blueprint-blue);
+    border-bottom: 2px solid var(--glass-white);
+    margin-bottom: -2px;
+    font-weight: 600;
+    color: var(--blueprint-blue);
+  }
+  .tabs button .count {
+    color: var(--disabled-gray);
+    margin-left: 6px;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  /* ---------- preview ---------- */
+  .preview {
+    background: var(--glass-white);
+    border: 1px solid var(--light-concrete);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    padding: 0;
+    max-height: 60vh;
+    overflow: auto;
+    box-shadow: var(--shadow-light);
+  }
+  .preview table {
+    border-collapse: collapse;
+    font-size: 0.78rem;
+    width: 100%;
+    font-family: inherit;
+  }
+  .preview th, .preview td {
+    border: 1px solid var(--light-concrete);
+    padding: 6px 10px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .preview th {
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(39, 174, 96, 0.06));
+    color: var(--concrete-gray);
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .preview td.editable {
+    background: rgba(241, 196, 15, 0.08);
+    cursor: text;
+  }
+  .preview td.editable:focus {
+    outline: 2px solid var(--blueprint-blue);
+    outline-offset: -2px;
+    background: rgba(52, 152, 219, 0.06);
+  }
+  .preview .empty {
+    padding: 24px;
+    color: var(--disabled-gray);
+    text-align: center;
+  }
+
+  /* ---------- actions ---------- */
+  .actions {
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--architect-green), var(--blueprint-blue));
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: inherit;
+    box-shadow: var(--shadow-light);
+    transition: all 0.2s ease;
+  }
+  .btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+  }
+  .btn-primary:disabled {
+    background: var(--disabled-gray);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+  .meta-summary {
+    font-size: 0.88rem;
+    color: var(--steel-blue);
+  }
+
+  /* ---------- footer ---------- */
+  .site-footer {
+    background: var(--concrete-gray);
+    color: var(--light-concrete);
+    padding: 32px 20px;
+    margin-top: auto;
+  }
+  .site-footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .site-footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .site-footer-links a {
+    color: var(--light-concrete);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    transition: color 0.3s ease;
+  }
+  .site-footer-links a:hover { color: var(--architect-green); }
+  .footer-divider { color: var(--disabled-gray); font-size: 0.8rem; }
+  .site-footer-copyright {
+    font-size: 0.85rem;
+    color: var(--disabled-gray);
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 768px) {
+    main { padding: 0 20px 40px; }
+    .site-header { margin: 40px 0 30px; }
+    .main-title { font-size: 2.5rem; }
+    .subtitle { font-size: 1rem; }
+    .panel { padding: 20px; }
+    .dropzone { padding: 32px 16px; }
+    .dropzone-icon { font-size: 2rem; }
+  }
 </style>
 </head>
 <body>
-<header>
-  <h1>📐 PDF → Excel 構造図抽出</h1>
-  <p class="subtitle">プロトタイプ版 — ブラウザ内処理のみ (サーバへは送信されません)</p>
-  <p class="notice">
-    ⚠️ <strong>プロトタイプ</strong>です。PDF はメモリ内でのみ処理されます。
-    難読化PDFを開いた場合のみ Tesseract.js + 日本語データ (≈16MB) を遅延ロードします。
-  </p>
-</header>
+<main>
+  <div class="breadcrumb">
+    <a href="../../index.html">← 28 Tools ホーム</a>
+  </div>
 
-<label class="dropzone" id="dropzone">
-  <input type="file" id="file-input" accept="application/pdf">
-  <strong>📄 PDF をドラッグ&ドロップ</strong>
-  <small>またはクリックして選択 (.pdf)</small>
-</label>
+  <header class="site-header">
+    <h1 class="main-title"><a href="../../index.html" class="title-link">28 Tools</a></h1>
+    <div class="title-divider"></div>
+    <p class="subtitle">PDF → Excel 構造図抽出</p>
+  </header>
 
-<div class="status" id="status">
-  <div class="msg">処理中...</div>
-  <div class="progress"><div id="progress-bar" style="width: 0%"></div></div>
-  <div class="log" id="log"></div>
-</div>
+  <div class="privacy-notice">
+    🔒 <strong>プライバシー保護</strong> — PDF はあなたのブラウザ内のみで処理されます。サーバへ送信されません。
+    難読化PDFのみ初回 Tesseract.js (≈16MB) を遅延ロードします。
+  </div>
 
-<div class="tabs" id="tabs"></div>
-<div class="preview" id="preview"></div>
+  <section class="panel">
+    <div class="panel-title"><span class="step">1</span>PDF を選択</div>
+    <label class="dropzone" id="dropzone">
+      <input type="file" id="file-input" accept="application/pdf">
+      <span class="dropzone-icon">📄</span>
+      <span class="dropzone-title">PDF をドラッグ&ドロップ</span>
+      <span class="dropzone-sub">またはクリックして選択 (.pdf)</span>
+    </label>
 
-<div class="actions" id="actions" style="display: none">
-  <button class="primary" id="download-btn">📥 Excel ダウンロード (.xlsx)</button>
-  <span class="meta" id="result-summary"></span>
-</div>
+    <div class="status" id="status">
+      <div class="status-msg">処理中...</div>
+      <div class="progress"><div id="progress-bar" style="width: 0%"></div></div>
+      <div class="log" id="log"></div>
+    </div>
+  </section>
 
-<footer>
-  ローカル実行: <code>python3 -m http.server 8000</code> &nbsp;→&nbsp;
-  <code>http://localhost:8000/pdf-to-excel/web/</code>
+  <section id="preview-section" style="display: none">
+    <div class="panel" style="padding-bottom: 0;">
+      <div class="panel-title"><span class="step">2</span>抽出結果プレビュー (黄色セルは編集可能)</div>
+      <div class="tabs" id="tabs"></div>
+    </div>
+    <div class="preview" id="preview"></div>
+  </section>
+
+  <div class="actions" id="actions" style="display: none">
+    <button class="btn-primary" id="download-btn">📥 Excel ダウンロード (.xlsx)</button>
+    <span class="meta-summary" id="result-summary"></span>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-content">
+    <div class="site-footer-links">
+      <a href="../../about.html">運営者情報</a>
+      <span class="footer-divider">|</span>
+      <a href="../../contact.html">お問い合わせ</a>
+      <span class="footer-divider">|</span>
+      <a href="../../privacy.html">プライバシーポリシー</a>
+      <span class="footer-divider">|</span>
+      <a href="../../terms.html">利用規約</a>
+    </div>
+    <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+  </div>
 </footer>
 
 <script type="module" src="./app.js"></script>
