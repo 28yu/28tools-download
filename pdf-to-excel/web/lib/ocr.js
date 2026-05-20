@@ -42,24 +42,10 @@ async function getWorker(onStatus) {
   return workerPromise;
 }
 
-// In-canvas pre-processing: grayscale + soft threshold around the midpoint.
-// This sharpens text edges where pdf.js anti-aliasing softens them.
-function preprocess(canvas) {
-  const ctx = canvas.getContext('2d');
-  const img = ctx.getImageData(0, 0, canvas.width, canvas.height);
-  const d = img.data;
-  for (let i = 0; i < d.length; i += 4) {
-    const g = 0.299 * d[i] + 0.587 * d[i+1] + 0.114 * d[i+2];
-    // Push pixels toward black/white but keep mid-range for ink antialiasing.
-    let v;
-    if (g > 200) v = 255;
-    else if (g < 90) v = 0;
-    else v = g; // keep gradient for grayscale-aware tesseract
-    d[i] = d[i+1] = d[i+2] = v;
-  }
-  ctx.putImageData(img, 0, 0);
-}
-
+// Render to a white-backed canvas. We deliberately do NOT pre-process
+// the pixels here — Tesseract.js has its own Leptonica preprocessing
+// that handles binarization, grayscale, and contrast adaptively. Our
+// own threshold pass was actually hurting accuracy on faint glyphs.
 async function renderPage(page, dpi) {
   const scale = dpi / 72;
   const viewport = page.getViewport({ scale });
@@ -70,7 +56,6 @@ async function renderPage(page, dpi) {
   ctx.fillStyle = 'white';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   await page.render({ canvasContext: ctx, viewport }).promise;
-  preprocess(canvas);
   return canvas;
 }
 

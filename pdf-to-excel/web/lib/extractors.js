@@ -2,13 +2,13 @@
 // text content + viewport (text path) or Tesseract.js word arrays (OCR path).
 
 // ============================================================
-// Shared utilities
+// Shared utilities (exported for app-level use)
 // ============================================================
 
 const applyT = (m, x, y) => [m[0]*x + m[2]*y + m[4], m[1]*x + m[3]*y + m[5]];
-const cleanStr = s => (s || '').replace(/[\x00-\x1F\x7F]/g, '').trim();
+export const cleanStr = s => (s || '').replace(/[\x00-\x1F\x7F]/g, '').trim();
 
-function toItems(tcItems, viewport) {
+export function toItems(tcItems, viewport) {
   const VPX = viewport.transform;
   return tcItems
     .filter(it => it.str && cleanStr(it.str))

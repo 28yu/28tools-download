@@ -10,6 +10,8 @@ import {
   isObfuscated,
   detectPageCategory,
   detectOcrCategory,
+  detectMaterials,
+  toItems,
   extractRcBeams,
   extractSBeams,
   extractColumnsFromOcr,
@@ -68,6 +70,40 @@ fileInput.addEventListener('change', () => {
   if (fileInput.files[0]) processPdf(fileInput.files[0]);
 });
 
+// SHA-256 of buffer (hex) for cache key
+async function sha256(buffer) {
+  const h = await crypto.subtle.digest('SHA-256', buffer);
+  return [...new Uint8Array(h)].map(b => b.toString(16).padStart(2,'0')).join('');
+}
+
+// Cache: same PDF re-uploaded? Return cached result so the user gets
+// an instant load on iteration. Uses the Cache API (lighter than IDB).
+const CACHE_NAME = 'pdf-extract-v1';
+async function loadCache(key) {
+  try {
+    const c = await caches.open(CACHE_NAME);
+    const r = await c.match('/cache/' + key);
+    return r ? await r.json() : null;
+  } catch { return null; }
+}
+async function saveCache(key, data) {
+  try {
+    const c = await caches.open(CACHE_NAME);
+    await c.put('/cache/' + key, new Response(JSON.stringify(data), {
+      headers: { 'Content-Type': 'application/json' },
+    }));
+  } catch {}
+}
+
+// Concatenate text items from a PDF page into a single material-scan-ready
+// list. We strip control chars and project to PDF-point coordinates so
+// detectMaterials() can group items by Y line.
+async function pageTextItems(page) {
+  const tc = await page.getTextContent({ includeMarkedContent: false });
+  const viewport = page.getViewport({ scale: 1 });
+  return { items: toItems(tc.items, viewport), tcItems: tc.items, viewport };
+}
+
 async function processPdf(file) {
   try {
     logEl.innerHTML = '';
@@ -79,6 +115,23 @@ async function processPdf(file) {
     setProgress(5);
 
     const buf = await file.arrayBuffer();
+    const cacheKey = await sha256(buf);
+    const cached = await loadCache(cacheKey);
+    if (cached) {
+      log(`📄 ${file.name} — キャッシュから即座にロード`);
+      extractedData = cached;
+      renderTabs(cached);
+      setProgress(100);
+      showStatus('✅ キャッシュロード完了');
+      actionsEl.style.display = 'flex';
+      summaryEl.textContent =
+        `基礎大梁 ${cached.rcBeams.length} / ` +
+        `大梁 ${cached.sBeams.length} / ` +
+        `小梁 ${cached.smallBeams.length} / ` +
+        `柱 ${cached.columns.length}`;
+      return;
+    }
+
     const pdf = await pdfjsLib.getDocument({
       data: new Uint8Array(buf),
       cMapUrl: CMAP_URL,
@@ -93,6 +146,31 @@ async function processPdf(file) {
       smallBeams: [],
       columns: [],
       sourceFile: file.name,
+    };
+
+    // Phase 1: pre-scan ALL pages for material grade strings. Notes like
+    // "鋼材は、SN490Bとする。" often sit on a different page from the beam
+    // list itself; collecting globally gives every beam a fallback grade.
+    showStatus('全ページマテリアル走査中...');
+    const allItems = [];
+    for (let p = 1; p <= pdf.numPages; p++) {
+      const { items } = await pageTextItems(await pdf.getPage(p));
+      // Offset y by a large per-page constant so the line-join logic in
+      // detectMaterials doesn't merge across pages.
+      for (const it of items) allItems.push({ str: it.str, x: it.x, y: it.y + p * 100000 });
+    }
+    const globalMats = detectMaterials(allItems);
+    if (globalMats.構造マテリアル) log(`🔍 全ページから検出: 構造マテリアル=${globalMats.構造マテリアル}${globalMats.主筋材質 ? `, 主筋材質=${globalMats.主筋材質}` : ''} (${globalMats._all.join(', ')})`);
+    else log(`🔍 全ページから検出: マテリアル無し`);
+    result._globalMaterials = globalMats;
+
+    // Patch page-local material onto each beam, with global fallback.
+    const fillMaterial = (beam) => {
+      const o = beam.原文;
+      if (!o.構造マテリアル) o.構造マテリアル = globalMats.構造マテリアル ?? '';
+      if (o.主筋材質 === undefined || o.主筋材質 === null) {
+        if (globalMats.主筋材質) o.主筋材質 = globalMats.主筋材質;
+      }
     };
 
     for (let p = 1; p <= pdf.numPages; p++) {
@@ -110,6 +188,7 @@ async function processPdf(file) {
         if (cat === 'rc-beam') {
           const beams = extractRcBeams(tc.items, viewport);
           if (beams.length > 0) {
+            beams.forEach(fillMaterial);
             result.rcBeams.push(...beams);
             log(`P${p}: rc-beam ${beams.length}件 (テキスト)`);
             extracted = true;
@@ -117,6 +196,7 @@ async function processPdf(file) {
         } else if (cat === 's-beam') {
           const beams = extractSBeams(tc.items, viewport);
           if (beams.length > 0) {
+            beams.forEach(fillMaterial);
             result.sBeams.push(...beams);
             log(`P${p}: s-beam ${beams.length}件 (テキスト)`);
             extracted = true;
@@ -138,19 +218,23 @@ async function processPdf(file) {
         log(`  OCR: ${words.length}語 (SC=${counts.sc}, SB=${counts.sb}) → ${category}`);
         if (category === 'column') {
           const cols = extractColumnsFromOcr(words);
+          cols.forEach(fillMaterial);
           result.columns.push(...cols);
           log(`  柱 ${cols.length} 件抽出`);
         } else if (category === 'small-beam') {
           const sbs = extractSmallBeamsFromOcr(words);
+          sbs.forEach(fillMaterial);
           result.smallBeams.push(...sbs);
           log(`  小梁 ${sbs.length} 件抽出`);
         } else {
           const cols = extractColumnsFromOcr(words);
           const sbs = extractSmallBeamsFromOcr(words);
           if (sbs.length > cols.length) {
+            sbs.forEach(fillMaterial);
             result.smallBeams.push(...sbs);
             log(`  → 小梁として ${sbs.length} 件採用 (両側試行)`);
           } else if (cols.length > 0) {
+            cols.forEach(fillMaterial);
             result.columns.push(...cols);
             log(`  → 柱として ${cols.length} 件採用 (両側試行)`);
           } else {
@@ -160,7 +244,15 @@ async function processPdf(file) {
       } else if (!extracted) {
         log(`P${p}: 内容なし — スキップ`);
       }
+
+      // Progressive preview: re-render after each page so the user sees
+      // results streaming in rather than waiting for the whole PDF.
+      extractedData = result;
+      renderTabs(result);
     }
+
+    // Persist to cache so re-uploads of this PDF skip processing entirely.
+    saveCache(cacheKey, result);
 
     extractedData = result;
     setProgress(95);
