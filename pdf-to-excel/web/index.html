@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>PDF → Excel 構造図抽出 (プロトタイプ)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root {
+    --blue: #2b6cb0;
+    --blue-light: #ebf4f9;
+    --bg: #f7fafc;
+    --border: #cbd5e0;
+    --text: #1a202c;
+    --muted: #718096;
+    --warn-bg: #fefcbf;
+    --warn-border: #d69e2e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    margin: 0; padding: 1.5rem; background: var(--bg); color: var(--text);
+    max-width: 1400px; margin-left: auto; margin-right: auto;
+  }
+  header { margin-bottom: 1.5rem; }
+  h1 { font-size: 1.5rem; margin: 0 0 0.3rem; color: var(--blue); }
+  .subtitle { color: var(--muted); margin: 0; font-size: 0.95rem; }
+  .notice {
+    font-size: 0.85rem; padding: 0.6rem 0.8rem;
+    background: var(--warn-bg); border-left: 3px solid var(--warn-border);
+    border-radius: 4px; margin-top: 0.75rem;
+  }
+  .dropzone {
+    border: 2px dashed var(--border); border-radius: 8px;
+    padding: 2.5rem; text-align: center; background: white;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .dropzone:hover, .dropzone.dragover {
+    border-color: var(--blue); background: var(--blue-light);
+  }
+  .dropzone input { display: none; }
+  .dropzone strong { display: block; font-size: 1.1rem; margin-bottom: 0.4rem; }
+  .dropzone small { color: var(--muted); }
+  .status {
+    margin-top: 1rem; padding: 0.75rem 1rem; border-radius: 6px;
+    background: white; border: 1px solid var(--border); display: none;
+  }
+  .status.show { display: block; }
+  .status .msg { font-weight: 500; }
+  .progress {
+    height: 6px; background: #e2e8f0; border-radius: 3px;
+    overflow: hidden; margin: 0.5rem 0;
+  }
+  .progress > div { height: 100%; background: var(--blue); transition: width 0.3s; }
+  .log {
+    font-family: ui-monospace, SFMono-Regular, monospace;
+    font-size: 11px; color: var(--muted);
+    max-height: 120px; overflow: auto; line-height: 1.5;
+  }
+  .tabs {
+    display: flex; gap: 4px; margin-top: 1.5rem;
+    border-bottom: 2px solid var(--border); flex-wrap: wrap;
+  }
+  .tabs button {
+    padding: 0.5rem 1rem; border: 1px solid var(--border);
+    border-bottom: none; background: white; cursor: pointer;
+    border-radius: 6px 6px 0 0; font-size: 0.9rem; color: var(--text);
+  }
+  .tabs button.active {
+    background: var(--blue-light); border-color: var(--blue);
+    border-bottom: 2px solid var(--blue-light);
+    margin-bottom: -2px; font-weight: bold; color: var(--blue);
+  }
+  .tabs button .count {
+    color: var(--muted); margin-left: 0.4rem; font-size: 0.8rem;
+  }
+  .preview {
+    background: white; border: 1px solid var(--border); padding: 0;
+    max-height: 65vh; overflow: auto; border-top: none;
+  }
+  .preview table { border-collapse: collapse; font-size: 12px; width: 100%; }
+  .preview th, .preview td {
+    border: 1px solid #ddd; padding: 4px 8px;
+    text-align: center; white-space: nowrap;
+  }
+  .preview th {
+    background: var(--blue-light); color: var(--blue); font-weight: bold;
+    position: sticky; top: 0;
+  }
+  .preview td.editable { background: #fefcbf; cursor: text; }
+  .preview td.editable:focus { outline: 2px solid var(--blue); }
+  .preview .empty { padding: 1rem; color: var(--muted); }
+  .actions {
+    margin-top: 1rem; display: flex; gap: 0.5rem; align-items: center;
+    flex-wrap: wrap;
+  }
+  button.primary {
+    background: var(--blue); color: white; border: none;
+    padding: 0.6rem 1.5rem; border-radius: 6px; cursor: pointer;
+    font-size: 0.95rem; font-weight: 500;
+  }
+  button.primary:hover { background: #2c5282; }
+  button.primary:disabled { background: var(--border); cursor: not-allowed; }
+  .meta { font-size: 0.85rem; color: var(--muted); }
+  footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); text-align: center; }
+  footer code { background: #edf2f7; padding: 1px 4px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📐 PDF → Excel 構造図抽出</h1>
+  <p class="subtitle">プロトタイプ版 — ブラウザ内処理のみ (サーバへは送信されません)</p>
+  <p class="notice">
+    ⚠️ <strong>プロトタイプ</strong>です。PDF はメモリ内でのみ処理されます。
+    難読化PDFを開いた場合のみ Tesseract.js + 日本語データ (≈16MB) を遅延ロードします。
+  </p>
+</header>
+
+<label class="dropzone" id="dropzone">
+  <input type="file" id="file-input" accept="application/pdf">
+  <strong>📄 PDF をドラッグ&ドロップ</strong>
+  <small>またはクリックして選択 (.pdf)</small>
+</label>
+
+<div class="status" id="status">
+  <div class="msg">処理中...</div>
+  <div class="progress"><div id="progress-bar" style="width: 0%"></div></div>
+  <div class="log" id="log"></div>
+</div>
+
+<div class="tabs" id="tabs"></div>
+<div class="preview" id="preview"></div>
+
+<div class="actions" id="actions" style="display: none">
+  <button class="primary" id="download-btn">📥 Excel ダウンロード (.xlsx)</button>
+  <span class="meta" id="result-summary"></span>
+</div>
+
+<footer>
+  ローカル実行: <code>python3 -m http.server 8000</code> &nbsp;→&nbsp;
+  <code>http://localhost:8000/pdf-to-excel/web/</code>
+</footer>
+
+<script type="module" src="./app.js"></script>
+</body>
+</html>
