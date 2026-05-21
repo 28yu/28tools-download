@@ -322,81 +322,104 @@ export function extractColumnsFromOcr(words) {
   // punctuation ("・SC1", "(SC5)", "SC5,"). We extract the anchor as a
   // substring rather than requiring whole-word match.
   const colRe = /(SC|CC|CFT)(\d+)([A-Z]?)/i;
-  const anchors = [];
+  const rawAnchors = [];
   for (const w of words) {
     const m = w.str.match(colRe);
     if (!m) continue;
-    // Skip if matched portion is part of a longer numeric run that's
-    // probably noise (e.g. "ASC123" shouldn't yield "SC123").
     const idx = m.index;
     const before = idx > 0 ? w.str[idx - 1] : '';
     if (/[A-Za-z0-9]/.test(before)) continue;
-    anchors.push({
+    rawAnchors.push({
       str: m[0].toUpperCase(),
       x: w.x,
       y: w.y,
       w: w.w,
     });
   }
-  if (anchors.length === 0) return [];
+  if (rawAnchors.length === 0) return [];
 
-  anchors.sort((a,b) => a.y - b.y);
-  const rows = [];
-  for (const a of anchors) {
-    const last = rows[rows.length - 1];
-    if (last && Math.abs(a.y - last.y) <= 8) {
-      last.anchors.push(a);
-      last.y = (last.y * (last.anchors.length - 1) + a.y) / last.anchors.length;
-    } else rows.push({ y: a.y, anchors: [a] });
+  // OCR may give us each SC symbol multiple times (heading, page label,
+  // canonical row, footer). Group by symbol name and pick the single
+  // position with the most "section-like" content below it — that's the
+  // canonical row position even when OCR scatters anchors vertically.
+  const bySymbol = new Map();
+  for (const a of rawAnchors) {
+    if (!bySymbol.has(a.str)) bySymbol.set(a.str, []);
+    bySymbol.get(a.str).push(a);
   }
-  rows.forEach(r => r.anchors.sort((a,b) => a.x - b.x));
 
-  const headerRow = rows.sort((a,b) => b.anchors.length - a.anchors.length)[0];
-  if (!headerRow) return [];
-
-  const xs = headerRow.anchors.map(a => a.x).sort((a,b) => a - b);
-  const gaps = xs.slice(1).map((x, i) => x - xs[i]);
-  const meanGap = gaps.length > 0 ? gaps.reduce((s,v) => s+v, 0) / gaps.length : 140;
-  const cardHalfW = meanGap / 2;
-
-  // Section patterns:
-  //   - "-NNN×NNN×NN(BCR295)"  square hollow with grade marker
-  //   - "-NNN×NNN×NN"           square hollow plain
-  //   - "□NNN×NNN×NN" / "ロNNN×NNN"  square hollow with kana box mark
-  //   - "SH-NNN×NNN×NN×NN"      H-section (full or truncated)
-  //   - "BH-NNN×NNN×NN×NN"      built-up H
-  // Non-anchored: the "□" / "ロ" / "口" box mark is often misread by OCR
-  // ("L1-400x400x22", "口-450x450x28" etc.). We search for the
-  // number×number(×number) core anywhere in the joined string.
-  // OCR also confuses "-" with "=" or "|".
+  // Helper to count how much section-like content sits below a position
+  // within a generous x band (we don't know the real card width yet).
   const sectionStartRe = /[-=]?\d{2,4}[xX×]+\d{2,4}(?:[xX×]+\d{1,3})?/i;
   const sectionShRe    = /(?:SH|BH|H)[-=]?\d{2,4}(?:[xX×]+\d+(?:\.\d+)?){0,3}/i;
-  const gradeRe        = /^(BCP|BCR|SN|SS|SM|TMC|STKR)\d{3,4}[A-Z]?$/;
+  const scoreBelow = (pos, xHalf) =>
+    words.filter(w =>
+      w.y > pos.y + 5 &&
+      Math.abs(w.x - pos.x) <= xHalf &&
+      (sectionStartRe.test(w.str) || sectionShRe.test(w.str))
+    ).length;
 
-  // Bound the per-anchor card by the next anchor in y direction and the
-  // page bottom. Previous hard-coded +600px (~86pt) cap was way too tight
-  // — column-list cards typically extend 1000-3000px below the header
-  // row.
-  const sortedYs = [...new Set(headerRow.anchors.map(a => a.y))].sort((a,b) => a - b);
+  const columnAnchors = [];
+  for (const [sym, positions] of bySymbol) {
+    // Pick the position with the highest below-content score.
+    // Tie-break with the smallest y (highest on page = real header row).
+    positions.sort((a, b) => {
+      const sb = scoreBelow(b, 250) - scoreBelow(a, 250);
+      if (sb !== 0) return sb;
+      return a.y - b.y;
+    });
+    columnAnchors.push({ str: sym, x: positions[0].x, y: positions[0].y });
+  }
+  // Sort columns left-to-right.
+  columnAnchors.sort((a, b) => a.x - b.x);
+
+  // Card boundaries: midpoint between adjacent column anchors.
+  // Edges of page extend to half a typical column width past first/last.
+  const xs = columnAnchors.map(a => a.x);
+  const meanGap = xs.length > 1
+    ? (xs[xs.length - 1] - xs[0]) / (xs.length - 1)
+    : 600; // safe default ~120pt per card when only one column known
+  const cardHalfW = meanGap / 2;
+  for (let i = 0; i < columnAnchors.length; i++) {
+    columnAnchors[i].leftBound  = i === 0 ? xs[i] - cardHalfW : (xs[i-1] + xs[i]) / 2;
+    columnAnchors[i].rightBound = i === xs.length - 1 ? xs[i] + cardHalfW : (xs[i] + xs[i+1]) / 2;
+  }
+
+  const gradeRe    = /^(BCP|BCR|SN|SS|SM|TMC|STKR)\d{3,4}[A-Z]?$/;
   const pageBottom = Math.max(0, ...words.map(w => w.y)) + 100;
+  // Top of card area = a little below the highest anchor (so we don't
+  // include the page heading itself).
+  const topY = Math.min(...columnAnchors.map(a => a.y)) + 5;
+
+  // Sanity-filter implausible dimensions (OCR garbage).
+  function plausible(p) {
+    if (!p) return false;
+    const A = p.A ?? p.H;
+    if (!A || A < 100 || A > 1500) return false;
+    if (p.B != null && (p.B < 50 || p.B > 1500)) return false;
+    if (p.kind === '□') {
+      if (p.t != null && (p.t < 5 || p.t > 60)) return false;
+    } else {
+      if (p.tw != null && (p.tw < 4 || p.tw > 50)) return false;
+      if (p.tf != null && (p.tf < 4 || p.tf > 50)) return false;
+    }
+    return true;
+  }
 
   const cols = [];
-  for (const anchor of headerRow.anchors) {
-    const cx = anchor.x;
+  for (const anchor of columnAnchors) {
     const below = words.filter(w =>
-      w.y > headerRow.y + 5 &&
+      w.y > topY &&
       w.y < pageBottom &&
-      Math.abs(w.x - cx) <= cardHalfW
+      w.x >= anchor.leftBound &&
+      w.x <= anchor.rightBound
     );
 
-    // First pass: any single word that already matches the section regex.
     const rawSections = below
       .filter(w => sectionStartRe.test(w.str) || sectionShRe.test(w.str))
       .map(w => ({ str: w.str, y: w.y }));
 
-    // Second pass: row-level concat only if NO direct match was found for
-    // the same y bucket. Joins adjacent tokens to recover fragmented OCR
-    // like "口" "-" "450" "x" "450" "x" "28" → "口-450x450x28".
+    // Row-level concat fallback for fragmented OCR.
     const TOL_Y_ROW = 30;
     const byRow = new Map();
     for (const w of below) {
@@ -413,29 +436,7 @@ export function extractColumnsFromOcr(words) {
       if (m) rawSections.push({ str: m[0], y: row[0].y });
     }
 
-    // Sanity-filter implausible dimensions (OCR garbage). Real structural
-    // columns sit within these bounds:
-    //   Outer dim (A, B, H): 100-1500 mm
-    //   Flange width on H-section: 50-1000 mm
-    //   Wall thickness t: 5-60 mm
-    //   tw / tf on H: 4-50 mm
-    function plausible(p) {
-      if (!p) return false;
-      const A = p.A ?? p.H;
-      if (!A || A < 100 || A > 1500) return false;
-      if (p.B != null && (p.B < 50 || p.B > 1500)) return false;
-      if (p.kind === '□') {
-        if (p.t != null && (p.t < 5 || p.t > 60)) return false;
-      } else {
-        if (p.tw != null && (p.tw < 4 || p.tw > 50)) return false;
-        if (p.tf != null && (p.tf < 4 || p.tf > 50)) return false;
-      }
-      return true;
-    }
-
-    // Dedup by (kind, A/H, B) using the parser to interpret each section.
-    // When the same (A, B) appears with and without t, prefer the one
-    // that carries the thickness.
+    // Dedup by (kind, A/H, B).
     const dedup = new Map();
     for (const s of rawSections) {
       const p = parseColumnSection(s.str);
@@ -461,7 +462,7 @@ export function extractColumnsFromOcr(words) {
     const colGrades = uniq(grades, s => s.str).map(s => s.str);
     cols.push({
       符号: anchor.str,
-      anchor: { x: cx, y: anchor.y },
+      anchor: { x: anchor.x, y: anchor.y },
       原文: {
         断面型_列: uniq(sections, s => `${s.str}@${(s.y/10)|0}`).map(s => s.str),
         鋼材グレード_列: colGrades,
