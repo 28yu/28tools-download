@@ -14,7 +14,13 @@ export function toItems(tcItems, viewport) {
     .filter(it => it.str && cleanStr(it.str))
     .map(it => {
       const [dx, dy] = applyT(VPX, it.transform[4], it.transform[5]);
-      return { str: cleanStr(it.str), x: dx, y: dy };
+      return {
+        str: cleanStr(it.str),
+        x: dx,
+        y: dy,
+        w: it.width || 0,
+        h: it.height || 0,
+      };
     });
 }
 
@@ -50,23 +56,21 @@ export function detectPageCategory(tcItems, viewport) {
 }
 
 // Detect material grade strings on a page. Returns the dominant material
-// from each family (concrete / steel / rebar) so the caller can attach
-// it as a page-level default for every beam/column on that page.
-// Accepts either {str} items (from pdf.js) or OCR words (same {str} shape).
+// from each family (concrete / steel / rebar).
 //
-// Patterns search ANYWHERE inside each item's text so we still catch grades
-// embedded in note sentences like "鋼材は、SN490Bとする。" or
-// "梁中央断面の鋼材は、SM490Aとしてもよい。"
-//   Fc24, Fc30        — concrete strength
-//   SD295, SD345, SD390 — rebar grade
-//   SS400, SN400B, SN490B, SM490A — general/welded steel
-//   BCP235, BCP325    — square hollow steel (柱)
-//   BCR295            — cold-rolled square steel (柱)
-//   TMCP, STKR        — other steel grades
+// Steel / concrete / rebar grade tokens have STRICT digit-count rules:
+//   - Steel: prefix + 3-4 digits + optional A-Z (SS400, SN490B, BCP325)
+//   - Concrete: Fc + 2-3 digits (Fc24, Fc100)
+//   - Rebar: SD + 3 digits + optional A-Z (SD345, SD390)
+//
+// Negative lookahead (?!\d) refuses matches when more digits follow, so
+// concatenated junk like "SS400400166060" doesn't match. Negative lookbehind
+// (?<![A-Za-z0-9]) refuses matches mid-identifier (e.g. "XSS400" shouldn't
+// pull "SS400" out of it).
 const MATERIAL_PATTERNS = {
-  concrete: /Fc\d+/gi,
-  rebar:    /SD\d+[A-Z]?/g,
-  steel:    /(?:SS|SN|SM|BCP|BCR|STKR)\d+[A-Z]?/g,
+  concrete: /(?<![A-Za-z0-9])Fc\d{2,3}(?!\d)/g,
+  rebar:    /(?<![A-Za-z0-9])SD\d{3}[A-Z]?(?!\d)/g,
+  steel:    /(?<![A-Za-z0-9])(?:SS|SN|SM|BCP|BCR|STKR)\d{3,4}[A-Z]?(?!\d)/g,
 };
 function dominant(strs) {
   if (!strs.length) return null;
@@ -78,30 +82,38 @@ export function detectMaterials(items) {
   const out = { 構造マテリアル: null, 主筋材質: null, _all: [] };
   if (!items.length) return out;
 
-  // pdf.js often splits a single visual word into multiple text items
-  // (e.g. "SN490B" → ["SN", "490B"]) which breaks naive regex matching.
-  // Concatenate items that share a row (same y) before scanning so the
-  // grade pattern survives the split.
+  // Build tokens (visual words). Two items belong to the same token only
+  // if they are on the same y AND the x gap between them is smaller than
+  // a "same-word" threshold. This prevents merging adjacent cell values
+  // (the previous bug where "SS400" + "400" became "SS400400").
   const sorted = [...items].sort((a, b) => a.y - b.y || a.x - b.x);
-  // Heuristic Y tolerance: small in PDF-point space (~4pt), larger in
-  // OCR-pixel space (~15px) — pick by inspecting the max y observed.
   const maxY = Math.max(0, ...sorted.map(it => it.y));
-  const tolY = maxY > 1000 ? 15 : 4;
-  const lines = [];
+  const ocrScale = maxY > 1000; // pixel coords vs PDF-point coords
+  const tolY = ocrScale ? 15 : 4;
+  const tolXSameWord = ocrScale ? 10 : 2;
+
+  const tokens = [];
   for (const it of sorted) {
-    const last = lines[lines.length - 1];
-    if (last && Math.abs(it.y - last.y) <= tolY) {
+    const last = tokens[tokens.length - 1];
+    const sameLine = last && Math.abs(it.y - last.y) <= tolY;
+    const closeX = last && (it.x - last.endX) <= tolXSameWord;
+    if (sameLine && closeX) {
       last.text += it.str;
+      last.endX = it.x + (it.w || (ocrScale ? 20 : 4));
     } else {
-      lines.push({ y: it.y, text: it.str });
+      tokens.push({
+        text: it.str,
+        y: it.y,
+        endX: it.x + (it.w || (ocrScale ? 20 : 4)),
+      });
     }
   }
 
   const concrete = [], rebar = [], steel = [];
-  for (const line of lines) {
-    for (const m of line.text.matchAll(MATERIAL_PATTERNS.concrete)) concrete.push(m[0]);
-    for (const m of line.text.matchAll(MATERIAL_PATTERNS.rebar))    rebar.push(m[0]);
-    for (const m of line.text.matchAll(MATERIAL_PATTERNS.steel))    steel.push(m[0]);
+  for (const tok of tokens) {
+    for (const m of tok.text.matchAll(MATERIAL_PATTERNS.concrete)) concrete.push(m[0]);
+    for (const m of tok.text.matchAll(MATERIAL_PATTERNS.rebar))    rebar.push(m[0]);
+    for (const m of tok.text.matchAll(MATERIAL_PATTERNS.steel))    steel.push(m[0]);
   }
   out._all = [...new Set([...concrete, ...rebar, ...steel])];
   out.構造マテリアル = dominant(steel) || dominant(concrete);
