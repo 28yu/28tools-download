@@ -57,11 +57,17 @@ export function expandCompound(symbol) {
   });
 }
 
+// Normalize OCR noise where the × separator is doubled or mixed-case,
+// e.g. "H-300x150xX6.5x9" / "H-346xX174xX6x9" / "H-248X124x5x8".
+const normalizeSepX = s => String(s).replace(/[xX×]+/g, 'x');
+
 export function parseSection(s) {
   if (!s) return null;
-  const m = String(s).match(/^(SH|BH|H)[-]?(\d+)[×xX](\d+)[×xX](\d+(?:\.\d+)?)[×xX](\d+(?:\.\d+)?)$/);
+  const cleaned = normalizeSepX(s);
+  const m = cleaned.match(/^(SH|BH|H|I|L|C)-?(\d+)x(\d+)x(\d+(?:\.\d+)?)x(\d+(?:\.\d+)?)$/i);
   if (!m) return null;
-  const kind = m[1] === 'H' ? 'SH' : m[1];
+  const prefix = m[1].toUpperCase();
+  const kind = prefix === 'H' ? 'SH' : prefix;
   return {
     kind,
     H:  parseInt(m[2]),
@@ -73,13 +79,14 @@ export function parseSection(s) {
 
 export function parseColumnSection(s) {
   if (!s) return null;
-  const str = String(s);
-  const h = str.match(/^(SH|BH|H)[-]?(\d+)[×xX](\d+)[×xX](\d+)[×xX](\d+)/);
+  const cleaned = normalizeSepX(s);
+  const h = cleaned.match(/^(SH|BH|H|I|L|C)-?(\d+)x(\d+)x(\d+)x(\d+)/i);
   if (h) {
-    const kind = h[1] === 'H' ? 'SH' : h[1];
+    const prefix = h[1].toUpperCase();
+    const kind = prefix === 'H' ? 'SH' : prefix;
     return { kind, H: parseInt(h[2]), B: parseInt(h[3]), tw: parseInt(h[4]), tf: parseInt(h[5]) };
   }
-  const sq = str.match(/^(?:[□ロ口])?[-]?(\d+)[×xX](\d+)[×xX](\d+)(?:\(([A-Z]+\d+)\))?/);
+  const sq = cleaned.match(/^(?:[□ロ口])?-?(\d+)x(\d+)x(\d+)(?:\(([A-Z]+\d+)\))?/i);
   if (sq) {
     return { kind: '□', A: parseInt(sq[1]), B: parseInt(sq[2]), t: parseInt(sq[3]), grade: sq[4] || null };
   }
