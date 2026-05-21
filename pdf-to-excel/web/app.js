@@ -79,7 +79,7 @@ async function sha256(buffer) {
 // Cache: same PDF re-uploaded? Return cached result so the user gets
 // an instant load on iteration. Uses the Cache API (lighter than IDB).
 // Bump suffix when extraction logic changes so old caches invalidate.
-const CACHE_NAME = 'pdf-extract-v3';
+const CACHE_NAME = 'pdf-extract-v4';
 async function loadCache(key) {
   try {
     const c = await caches.open(CACHE_NAME);
@@ -188,10 +188,11 @@ async function processPdf(file) {
       }
 
       // OCR fallback: any page where text extraction yielded nothing AND
-      // the page has visible content. Catches glyph-obfuscated AND
-      // image-only AND ambiguous-layout pages all in one path.
-      if (!extracted && tc.items.length >= 20) {
-        log(`P${p}: テキスト抽出 0件 (${obfuscated ? '難読化' : '未認識'}) → OCR フォールバック`);
+      // the page has visible content. Catches glyph-obfuscated, image-only
+      // (zero text items), AND ambiguous-layout pages all in one path.
+      const shouldOcr = !extracted && (tc.items.length === 0 || tc.items.length >= 20);
+      if (shouldOcr) {
+        log(`P${p}: テキスト抽出 0件 (${obfuscated ? '難読化' : tc.items.length === 0 ? '画像のみ' : '未認識'}) → OCR フォールバック`);
         const { ocrPage } = await import('./lib/ocr.js');
         const words = await ocrPage(page, (st, frac) => {
           showStatus(`P${p}/${pdf.numPages} OCR (${st})`);
@@ -199,6 +200,17 @@ async function processPdf(file) {
         });
         const { category, counts } = detectOcrCategory(words);
         log(`  OCR: ${words.length}語 (SC=${counts.sc}, SB=${counts.sb}) → ${category}`);
+
+        // Per-page material detection from OCR output too. Image-only
+        // specification pages (e.g. "鋼材は、SN490Bとする。") yield no
+        // beam anchors but still contribute material info — surface it.
+        const ocrMats = detectMaterials(words);
+        if (ocrMats._all.length) {
+          log(`🔍 P${p} OCR マテリアル検出: ${ocrMats._all.join(', ')}`);
+          // Stash for the summary so it's visible even if no beams found.
+          result.pageMaterials = result.pageMaterials || [];
+          result.pageMaterials.push({ page: p, materials: ocrMats._all });
+        }
         if (category === 'column') {
           const cols = extractColumnsFromOcr(words);
           result.columns.push(...cols);
@@ -235,15 +247,21 @@ async function processPdf(file) {
     setProgress(100);
     const total = result.rcBeams.length + result.sBeams.length +
                   result.smallBeams.length + result.columns.length;
+    const detectedMats = (result.pageMaterials || [])
+      .flatMap(p => p.materials)
+      .filter((v, i, a) => a.indexOf(v) === i);
     showStatus(total === 0
-      ? '⚠ データを認識できませんでした'
+      ? (detectedMats.length
+        ? `⚠ 梁/柱は認識できませんでしたが、マテリアル候補を検出: ${detectedMats.join(', ')}`
+        : '⚠ データを認識できませんでした')
       : `✅ 抽出完了 — 計 ${total} 件`);
     actionsEl.style.display = 'flex';
     summaryEl.textContent =
       `基礎大梁 ${result.rcBeams.length} / ` +
       `大梁 ${result.sBeams.length} / ` +
       `小梁 ${result.smallBeams.length} / ` +
-      `柱 ${result.columns.length}`;
+      `柱 ${result.columns.length}` +
+      (detectedMats.length ? ` / マテリアル候補: ${detectedMats.join(', ')}` : '');
   } catch (err) {
     log(`❌ エラー: ${err.message}`);
     showStatus(`❌ ${err.message}`);
