@@ -1,6 +1,8 @@
 // Browser-side extraction logic. Inputs are already-loaded pdf.js
 // text content + viewport (text path) or Tesseract.js word arrays (OCR path).
 
+import { parseColumnSection } from './parsers.js';
+
 // ============================================================
 // Shared utilities (exported for app-level use)
 // ============================================================
@@ -316,8 +318,26 @@ export function extractSBeams(tcItems, viewport) {
 
 export function extractColumnsFromOcr(words) {
   const pageMats = detectMaterials(words);
-  const colRe = /^(SC|CC|CFT|C)\d+[A-Z]?$/;
-  const anchors = words.filter(w => colRe.test(w.str));
+  // Tesseract.js best model often returns column labels with surrounding
+  // punctuation ("・SC1", "(SC5)", "SC5,"). We extract the anchor as a
+  // substring rather than requiring whole-word match.
+  const colRe = /(SC|CC|CFT)(\d+)([A-Z]?)/i;
+  const anchors = [];
+  for (const w of words) {
+    const m = w.str.match(colRe);
+    if (!m) continue;
+    // Skip if matched portion is part of a longer numeric run that's
+    // probably noise (e.g. "ASC123" shouldn't yield "SC123").
+    const idx = m.index;
+    const before = idx > 0 ? w.str[idx - 1] : '';
+    if (/[A-Za-z0-9]/.test(before)) continue;
+    anchors.push({
+      str: m[0].toUpperCase(),
+      x: w.x,
+      y: w.y,
+      w: w.w,
+    });
+  }
   if (anchors.length === 0) return [];
 
   anchors.sort((a,b) => a.y - b.y);
@@ -339,21 +359,96 @@ export function extractColumnsFromOcr(words) {
   const meanGap = gaps.length > 0 ? gaps.reduce((s,v) => s+v, 0) / gaps.length : 140;
   const cardHalfW = meanGap / 2;
 
-  const sectionStartRe = /^[□ロ口]?[-]?\d{2,4}[xX×]\d{2,4}/;
-  const sectionShRe = /^SH[-]?\d+[×xX]\d+[×xX]\d+[×xX]\d+$/;
-  const gradeRe = /^(BCP|BCR|SN|SS|SM|TMC|STKR)\d+[A-Z]?$/;
+  // Section patterns:
+  //   - "-NNN×NNN×NN(BCR295)"  square hollow with grade marker
+  //   - "-NNN×NNN×NN"           square hollow plain
+  //   - "□NNN×NNN×NN" / "ロNNN×NNN"  square hollow with kana box mark
+  //   - "SH-NNN×NNN×NN×NN"      H-section (full or truncated)
+  //   - "BH-NNN×NNN×NN×NN"      built-up H
+  // Non-anchored: the "□" / "ロ" / "口" box mark is often misread by OCR
+  // ("L1-400x400x22", "口-450x450x28" etc.). We search for the
+  // number×number(×number) core anywhere in the joined string.
+  // OCR also confuses "-" with "=" or "|".
+  const sectionStartRe = /[-=]?\d{2,4}[xX×]+\d{2,4}(?:[xX×]+\d{1,3})?/i;
+  const sectionShRe    = /(?:SH|BH|H)[-=]?\d{2,4}(?:[xX×]+\d+(?:\.\d+)?){0,3}/i;
+  const gradeRe        = /^(BCP|BCR|SN|SS|SM|TMC|STKR)\d{3,4}[A-Z]?$/;
+
+  // Bound the per-anchor card by the next anchor in y direction and the
+  // page bottom. Previous hard-coded +600px (~86pt) cap was way too tight
+  // — column-list cards typically extend 1000-3000px below the header
+  // row.
+  const sortedYs = [...new Set(headerRow.anchors.map(a => a.y))].sort((a,b) => a - b);
+  const pageBottom = Math.max(0, ...words.map(w => w.y)) + 100;
 
   const cols = [];
   for (const anchor of headerRow.anchors) {
     const cx = anchor.x;
     const below = words.filter(w =>
       w.y > headerRow.y + 5 &&
-      w.y < headerRow.y + 600 &&
+      w.y < pageBottom &&
       Math.abs(w.x - cx) <= cardHalfW
     );
-    const sections = below
+
+    // First pass: any single word that already matches the section regex.
+    const rawSections = below
       .filter(w => sectionStartRe.test(w.str) || sectionShRe.test(w.str))
       .map(w => ({ str: w.str, y: w.y }));
+
+    // Second pass: row-level concat only if NO direct match was found for
+    // the same y bucket. Joins adjacent tokens to recover fragmented OCR
+    // like "口" "-" "450" "x" "450" "x" "28" → "口-450x450x28".
+    const TOL_Y_ROW = 30;
+    const byRow = new Map();
+    for (const w of below) {
+      const rowKey = Math.round(w.y / TOL_Y_ROW);
+      if (!byRow.has(rowKey)) byRow.set(rowKey, []);
+      byRow.get(rowKey).push(w);
+    }
+    const directMatchedRows = new Set(rawSections.map(s => Math.round(s.y / TOL_Y_ROW)));
+    for (const [rowKey, row] of byRow) {
+      if (directMatchedRows.has(rowKey)) continue;
+      row.sort((a, b) => a.x - b.x);
+      const joined = row.map(t => t.str).join('');
+      const m = joined.match(sectionStartRe) || joined.match(sectionShRe);
+      if (m) rawSections.push({ str: m[0], y: row[0].y });
+    }
+
+    // Sanity-filter implausible dimensions (OCR garbage). Real structural
+    // columns sit within these bounds:
+    //   Outer dim (A, B, H): 100-1500 mm
+    //   Flange width on H-section: 50-1000 mm
+    //   Wall thickness t: 5-60 mm
+    //   tw / tf on H: 4-50 mm
+    function plausible(p) {
+      if (!p) return false;
+      const A = p.A ?? p.H;
+      if (!A || A < 100 || A > 1500) return false;
+      if (p.B != null && (p.B < 50 || p.B > 1500)) return false;
+      if (p.kind === '□') {
+        if (p.t != null && (p.t < 5 || p.t > 60)) return false;
+      } else {
+        if (p.tw != null && (p.tw < 4 || p.tw > 50)) return false;
+        if (p.tf != null && (p.tf < 4 || p.tf > 50)) return false;
+      }
+      return true;
+    }
+
+    // Dedup by (kind, A/H, B) using the parser to interpret each section.
+    // When the same (A, B) appears with and without t, prefer the one
+    // that carries the thickness.
+    const dedup = new Map();
+    for (const s of rawSections) {
+      const p = parseColumnSection(s.str);
+      if (!plausible(p)) continue;
+      const A = p.A ?? p.H;
+      const key = `${p.kind}/${A}/${p.B}`;
+      const tNow = p.t ?? p.tw ?? null;
+      const existing = dedup.get(key);
+      if (!existing) { dedup.set(key, { s, t: tNow, y: s.y }); continue; }
+      if (tNow != null && existing.t == null) dedup.set(key, { s, t: tNow, y: s.y });
+    }
+    const sections = [...dedup.values()].sort((a, b) => a.y - b.y).map(d => d.s);
+
     const grades = below.filter(w => gradeRe.test(w.str)).map(w => ({ str: w.str }));
     const uniq = (arr, key) => {
       const seen = new Set();
@@ -465,11 +560,14 @@ export function extractSmallBeamsFromOcr(words) {
 // Try to classify an OCR'd page from its anchor patterns.
 // Returns the category plus the raw counts so the app can log them
 // when classification fails.
+//
+// Tesseract.js best-model output occasionally splits a label like "SC1"
+// into "SC" + "1" or attaches punctuation ("(SC1)", "・SC1"), so we count
+// any word containing the anchor pattern as a substring — not just whole
+// matches — to avoid undercounting.
 export function detectOcrCategory(words) {
-  const sc = words.filter(w => /^(SC|CC|CFT|C)\d+[A-Z]?$/i.test(w.str)).length;
-  const sb = words.filter(w => /^[csCS]?[sS][bB]\d+/i.test(w.str)).length;
-  // Lower thresholds — column lists are typically 3-12 anchors,
-  // small-beam lists are typically 10-50 anchors.
+  const sc = words.filter(w => /(?:^|[^A-Za-z])(SC|CC|CFT)\d+[A-Z]?(?:$|[^A-Za-z0-9])/i.test(w.str + ' ')).length;
+  const sb = words.filter(w => /(?:^|[^A-Za-z])(CSB|SB)\d+[A-Za-z]?(?:$|[^A-Za-z0-9])/i.test(w.str + ' ')).length;
   let category = 'unknown';
   if (sb >= 3 && sb >= sc) category = 'small-beam';
   else if (sc >= 3) category = 'column';
