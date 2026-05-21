@@ -39,9 +39,14 @@ async function getWorker(onStatus) {
         if (onStatus && m.status) onStatus(m.status, m.progress ?? 0);
       },
     });
-    // Helpful tuning: keep word spacing in the recognized output so
-    // detectMaterials' token logic sees real word boundaries.
+    // Critical tuning:
+    //   - user_defined_dpi forces Tesseract to trust the actual DPI we
+    //     rendered at (600). Without this it auto-estimates ~400 DPI
+    //     and rejects text rows as "too small to scale".
+    //   - preserve_interword_spaces keeps word boundaries intact, helps
+    //     the downstream token logic in detectMaterials().
     await worker.setParameters({
+      user_defined_dpi: '600',
       preserve_interword_spaces: '1',
     });
     return worker;
@@ -96,7 +101,7 @@ function tessWordsToEntries(words) {
  * Returns merged unique words. Three passes take ~3x the time of one but
  * recover text that any single segmentation mode would miss.
  */
-export async function ocrPage(page, onStatus, dpi = 500) {
+export async function ocrPage(page, onStatus, dpi = 600) {
   onStatus && onStatus('PDFページ描画', 0);
   const canvas = await renderPage(page, dpi);
 
