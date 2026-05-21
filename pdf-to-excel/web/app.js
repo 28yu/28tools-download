@@ -80,7 +80,7 @@ async function sha256(buffer) {
 // Cache: same PDF re-uploaded? Return cached result so the user gets
 // an instant load on iteration. Uses the Cache API (lighter than IDB).
 // Bump suffix when extraction logic changes so old caches invalidate.
-const CACHE_NAME = 'pdf-extract-v13';
+const CACHE_NAME = 'pdf-extract-v14';
 async function loadCache(key) {
   try {
     const c = await caches.open(CACHE_NAME);
@@ -286,7 +286,15 @@ async function processPdf(file) {
     applyFallback(result.columns, '構造マテリアル', steelFallback,   '柱');
 
     // Persist to cache so re-uploads of this PDF skip processing entirely.
-    saveCache(cacheKey, result);
+    // But don't cache empty results — an earlier failed run shouldn't
+    // mask later improvements when the user retries.
+    const totalForCache = result.rcBeams.length + result.sBeams.length +
+                          result.smallBeams.length + result.columns.length;
+    if (totalForCache > 0) {
+      saveCache(cacheKey, result);
+    } else {
+      log('⚠ 抽出 0件のためキャッシュは保存しません');
+    }
 
     extractedData = result;
     setProgress(95);
