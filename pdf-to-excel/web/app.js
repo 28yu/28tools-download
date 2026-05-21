@@ -79,7 +79,7 @@ async function sha256(buffer) {
 // Cache: same PDF re-uploaded? Return cached result so the user gets
 // an instant load on iteration. Uses the Cache API (lighter than IDB).
 // Bump suffix when extraction logic changes so old caches invalidate.
-const CACHE_NAME = 'pdf-extract-v5';
+const CACHE_NAME = 'pdf-extract-v6';
 async function loadCache(key) {
   try {
     const c = await caches.open(CACHE_NAME);
@@ -236,6 +236,53 @@ async function processPdf(file) {
         log(`P${p}: 内容なし — スキップ`);
       }
     }
+
+    // Cross-page material fallback. Per-page detection runs first (each
+    // beam carries the material it found on ITS own page). After the loop
+    // we collect every material seen anywhere — including OCR-only spec
+    // pages — and use them to fill beams whose own page had nothing.
+    // Steel-prefix materials go to S beams, concrete to RC beams.
+    const STEEL_PRIORITY = ['SN', 'SM', 'BCP', 'BCR', 'STKR', 'STK', 'SS'];
+    const sortByPriority = (a, b) => {
+      const ia = STEEL_PRIORITY.findIndex(p => a.startsWith(p));
+      const ib = STEEL_PRIORITY.findIndex(p => b.startsWith(p));
+      return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+    };
+
+    const allSteel = new Set();
+    const allConcrete = new Set();
+    const allRebar = new Set();
+    const classify = m => {
+      if (!m) return;
+      if (/^Fc/.test(m)) allConcrete.add(m);
+      else if (/^SD/.test(m)) allRebar.add(m);
+      else allSteel.add(m);
+    };
+    for (const arr of [result.rcBeams, result.sBeams, result.smallBeams, result.columns]) {
+      for (const b of arr) {
+        classify(b.原文?.構造マテリアル);
+        classify(b.原文?.主筋材質);
+      }
+    }
+    for (const pm of result.pageMaterials || []) for (const m of pm.materials) classify(m);
+
+    const steelFallback = [...allSteel].sort(sortByPriority)[0] ?? null;
+    const concreteFallback = [...allConcrete][0] ?? null;
+    const rebarFallback = [...allRebar][0] ?? null;
+
+    const applyFallback = (beams, materialField, fallback, label) => {
+      if (!fallback) return;
+      let n = 0;
+      for (const b of beams) {
+        if (!b.原文[materialField]) { b.原文[materialField] = fallback; n++; }
+      }
+      if (n) log(`💡 ${label}: ${fallback} を ${n} 件に補完 (他ページから)`);
+    };
+    applyFallback(result.rcBeams, '構造マテリアル', concreteFallback, '基礎大梁(RC)');
+    applyFallback(result.rcBeams, '主筋材質',        rebarFallback,    '基礎大梁(RC) 主筋');
+    applyFallback(result.sBeams, '構造マテリアル', steelFallback,    '大梁(S)');
+    applyFallback(result.smallBeams, '構造マテリアル', steelFallback, '小梁(S)');
+    applyFallback(result.columns, '構造マテリアル', steelFallback,   '柱');
 
     // Persist to cache so re-uploads of this PDF skip processing entirely.
     saveCache(cacheKey, result);

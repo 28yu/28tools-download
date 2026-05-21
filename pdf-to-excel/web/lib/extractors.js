@@ -59,24 +59,38 @@ export function detectPageCategory(tcItems, viewport) {
 // from each family (concrete / steel / rebar).
 //
 // Steel / concrete / rebar grade tokens have STRICT digit-count rules:
-//   - Steel: prefix + 3-4 digits + optional A-Z (SS400, SN490B, BCP325)
+//   - Steel: prefix + 3-4 digits + optional A/B/C only (SS400, SN490B, BCP325)
 //   - Concrete: Fc + 2-3 digits (Fc24, Fc100)
-//   - Rebar: SD + 3 digits + optional A-Z (SD345, SD390)
+//   - Rebar: SD + 3 digits + optional A-D (SD345, SD390)
 //
-// Negative lookahead (?!\d) refuses matches when more digits follow, so
-// concatenated junk like "SS400400166060" doesn't match. Negative lookbehind
-// (?<![A-Za-z0-9]) refuses matches mid-identifier (e.g. "XSS400" shouldn't
-// pull "SS400" out of it).
+// Allowing only A/B/C as suffix rejects OCR noise like "SS400H", "STKR400S".
+// Negative lookahead (?!\d) refuses extra trailing digits so concatenated
+// junk like "SS400400166060" doesn't match. Negative lookbehind
+// (?<![A-Za-z0-9]) refuses matches mid-identifier.
 const MATERIAL_PATTERNS = {
   concrete: /(?<![A-Za-z0-9])Fc\d{2,3}(?!\d)/g,
-  rebar:    /(?<![A-Za-z0-9])SD\d{3}[A-Z]?(?!\d)/g,
-  steel:    /(?<![A-Za-z0-9])(?:SS|SN|SM|BCP|BCR|STKR)\d{3,4}[A-Z]?(?!\d)/g,
+  rebar:    /(?<![A-Za-z0-9])SD\d{3}[A-D]?(?!\d)/g,
+  steel:    /(?<![A-Za-z0-9])(?:SS|SN|SM|BCP|BCR|STKR|STK)\d{3,4}[ABC]?(?!\d)/g,
 };
+
+// JIS preference order — structural-grade comes before general-grade.
+// When multiple steel grades co-exist on a page, pick the structural one
+// (which is what specifications actually use as primary material).
+const STEEL_PRIORITY = ['SN', 'SM', 'BCP', 'BCR', 'STKR', 'STK', 'SS'];
 function dominant(strs) {
   if (!strs.length) return null;
   const counts = {};
   for (const s of strs) counts[s] = (counts[s] || 0) + 1;
-  return Object.entries(counts).sort((a,b) => b[1] - a[1])[0][0];
+  // Sort by priority bucket first, then by frequency within bucket.
+  const sorted = Object.keys(counts).sort((a, b) => {
+    const ia = STEEL_PRIORITY.findIndex(p => a.startsWith(p));
+    const ib = STEEL_PRIORITY.findIndex(p => b.startsWith(p));
+    const pa = ia === -1 ? 999 : ia;
+    const pb = ib === -1 ? 999 : ib;
+    if (pa !== pb) return pa - pb;
+    return counts[b] - counts[a];
+  });
+  return sorted[0];
 }
 export function detectMaterials(items) {
   const out = { 構造マテリアル: null, 主筋材質: null, _all: [] };
