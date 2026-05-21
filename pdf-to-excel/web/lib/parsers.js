@@ -156,10 +156,39 @@ export function parseSection(s) {
   if (!m) return null;
   const prefix = m[1].toUpperCase();
   const kind = prefix === 'H' ? 'SH' : prefix;
-  const H = parseInt(m[2]);
+  let H = parseInt(m[2]);
   let B  = m[3] != null ? parseFloat(m[3]) : null;
   let tw = m[4] != null ? parseFloat(m[4]) : null;
   let tf = m[5] != null ? parseFloat(m[5]) : null;
+
+  // Plausibility for OCR noise: real rolled H sections are 100-1000 mm.
+  // If H is impossibly large (>1500) it's almost always an OCR run-on
+  // like "175" + "6" → "1756". Try dropping the last digit.
+  if (H > 1500) {
+    const truncated = parseInt(String(H).slice(0, -1));
+    if (truncated >= 100 && truncated <= 1000) H = truncated;
+    else return null;
+  }
+  // Same problem for B: "250" + "14" can be concatenated by OCR into
+  // "25014" when the visual separator wasn't recognized. Split the
+  // suspect B into (B, tw) at the most plausible boundary.
+  if (B != null && B > 1500) {
+    const sB = String(parseInt(B));
+    for (const at of [sB.length - 2, sB.length - 1]) {
+      const lead = parseInt(sB.slice(0, at));
+      const tail = parseInt(sB.slice(at));
+      if (lead >= 50 && lead <= 1000 && tail >= 4 && tail <= 50) {
+        B = lead;
+        // The old tw was actually tf; the tail digits become the real tw.
+        tf = tw ?? tf;
+        tw = tail;
+        break;
+      }
+    }
+  }
+  // tw / tf > 50 means a missing decimal (e.g. "55" → "5.5", "75" → "7.5").
+  if (tw && tw > 50) tw = tw / 10;
+  if (tf && tf > 50) tf = tf / 10;
 
   // BH (built-up) sections aren't from the standard catalog; trust the
   // OCR digits as-is rather than substituting JIS values.

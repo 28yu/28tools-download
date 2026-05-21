@@ -26,6 +26,38 @@ export function toItems(tcItems, viewport) {
     });
 }
 
+// Cluster a set of {x} anchors by x position (tolerance 50px) and assign
+// each anchor a leftBound / rightBound based on midpoints between
+// adjacent cluster centers. Works for multi-band tables where the same
+// x position can carry multiple anchors at different y values.
+function assignXCardBounds(anchors) {
+  if (anchors.length === 0) return;
+  const sorted = [...anchors].sort((a, b) => a.x - b.x);
+  const clusters = [];
+  for (const a of sorted) {
+    const last = clusters[clusters.length - 1];
+    if (last && Math.abs(a.x - last.cx) < 50) {
+      last.members.push(a);
+      last.cx = last.members.reduce((s, m) => s + m.x, 0) / last.members.length;
+    } else {
+      clusters.push({ cx: a.x, members: [a] });
+    }
+  }
+  const meanGap = clusters.length > 1
+    ? (clusters[clusters.length-1].cx - clusters[0].cx) / (clusters.length - 1)
+    : 800;
+  const cardHalfW = meanGap / 2;
+  for (let i = 0; i < clusters.length; i++) {
+    const c = clusters[i];
+    const left  = i === 0 ? c.cx - cardHalfW : (clusters[i-1].cx + c.cx) / 2;
+    const right = i === clusters.length-1 ? c.cx + cardHalfW : (c.cx + clusters[i+1].cx) / 2;
+    for (const m of c.members) {
+      m.leftBound = left;
+      m.rightBound = right;
+    }
+  }
+}
+
 // Detect glyph-obfuscated PDFs by ratio of code points in
 // suspicious ranges (General Punctuation, PUA, etc.). >30% = obfuscated.
 export function isObfuscated(tcItems) {
@@ -390,23 +422,13 @@ export function extractColumnsFromOcr(words) {
   // Sort columns left-to-right.
   columnAnchors.sort((a, b) => a.x - b.x);
 
-  // Card boundaries: midpoint between adjacent column anchors.
-  // Edges of page extend to half a typical column width past first/last.
-  const xs = columnAnchors.map(a => a.x);
-  const meanGap = xs.length > 1
-    ? (xs[xs.length - 1] - xs[0]) / (xs.length - 1)
-    : 600; // safe default ~120pt per card when only one column known
-  const cardHalfW = meanGap / 2;
-  for (let i = 0; i < columnAnchors.length; i++) {
-    columnAnchors[i].leftBound  = i === 0 ? xs[i] - cardHalfW : (xs[i-1] + xs[i]) / 2;
-    columnAnchors[i].rightBound = i === xs.length - 1 ? xs[i] + cardHalfW : (xs[i] + xs[i+1]) / 2;
-  }
+  // Card boundaries via x-clustered midpoints (same anchors at the same x
+  // — e.g. multi-band tables — must share one boundary, not produce
+  // zero-width cards).
+  assignXCardBounds(columnAnchors);
 
   const gradeRe    = /^(BCP|BCR|SN|SS|SM|TMC|STKR)\d{3,4}[A-Z]?$/;
   const pageBottom = Math.max(0, ...words.map(w => w.y)) + 100;
-  // Top of card area = a little below the highest anchor (so we don't
-  // include the page heading itself).
-  const topY = Math.min(...columnAnchors.map(a => a.y)) + 5;
 
   // Sanity-filter implausible dimensions (OCR garbage).
   function plausible(p) {
@@ -426,7 +448,7 @@ export function extractColumnsFromOcr(words) {
   const cols = [];
   for (const anchor of columnAnchors) {
     const below = words.filter(w =>
-      w.y > topY &&
+      w.y > anchor.y + 5 &&
       w.y < pageBottom &&
       w.x >= anchor.leftBound &&
       w.x <= anchor.rightBound
@@ -580,6 +602,126 @@ export function extractSmallBeamsFromOcr(words) {
   return beams;
 }
 
+// ============================================================
+// Large beam (大梁 / S大梁) extractor from OCR words
+// ============================================================
+//
+// Image-only drawings (test_梁リスト系) use G101 / G101A / G102 / SG1
+// style anchors. This extractor mirrors the small-beam logic but tunes
+// the anchor regex for the G-prefix conventions and uses the JIS catalog
+// inferred by parseSection for backfill.
+
+export function extractLargeBeamsFromOcr(words) {
+  const pageMats = detectMaterials(words);
+  console.log('[extractLargeBeamsFromOcr] OCR sample (first 30):',
+    words.slice(0, 30).map(w => `"${w.str}"`).join(' '));
+
+  // Anchor patterns: SG / CSG / FG / BG / G with digit suffix.
+  // Bare G is allowed but guarded by word boundaries (don't grab "G" out
+  // of grade names like "BCR295G" etc.).
+  const anchorRe = /(CSG|SG|FG|BG|G)(\d+)([A-Za-z]?)/i;
+  const rawAnchors = [];
+  for (const w of words) {
+    const m = w.str.match(anchorRe);
+    if (!m) continue;
+    const idx = m.index;
+    const before = idx > 0 ? w.str[idx - 1] : '';
+    const after = w.str[idx + m[0].length] ?? '';
+    if (/[A-Za-z0-9]/.test(before)) continue;
+    if (/[A-Za-z0-9]/.test(after)) continue;
+    rawAnchors.push({
+      str: m[0].toUpperCase(),
+      x: w.x,
+      y: w.y,
+      w: w.w,
+    });
+  }
+  if (rawAnchors.length === 0) return [];
+
+  console.log('[extractLargeBeamsFromOcr] rawAnchors =', rawAnchors.map(a =>
+    `${a.str}@(${a.x.toFixed(0)},${a.y.toFixed(0)})`).slice(0, 20).join(' | '));
+
+  // Group by symbol name (heading / canonical-row dups all collapse).
+  const bySymbol = new Map();
+  for (const a of rawAnchors) {
+    if (!bySymbol.has(a.str)) bySymbol.set(a.str, []);
+    bySymbol.get(a.str).push(a);
+  }
+
+  // Section pattern — same as small-beam (BH / SH / H- prefix with 1-3
+  // × dimensions, including duplicates/decimal).
+  const secRe = /(?:BH|SH|H)[-=]?\d{2,4}(?:[xX×]+\d+(?:\.\d+)?){1,3}/i;
+  const scoreBelow = (pos, xHalf) =>
+    words.filter(w =>
+      w.y > pos.y + 5 &&
+      Math.abs(w.x - pos.x) <= xHalf &&
+      secRe.test(w.str)
+    ).length;
+
+  const beamAnchors = [];
+  for (const [sym, positions] of bySymbol) {
+    positions.sort((a, b) => {
+      const sb = scoreBelow(b, 300) - scoreBelow(a, 300);
+      if (sb !== 0) return sb;
+      return a.y - b.y;
+    });
+    beamAnchors.push({ str: sym, x: positions[0].x, y: positions[0].y });
+  }
+  beamAnchors.sort((a, b) => a.x - b.x);
+
+  // Card boundaries via midpoints. Multi-band tables share the same x for
+  // multiple anchors (G101 + G104 both at x=1469), so cluster anchors by
+  // x before computing the bounds — otherwise the right-bound for the
+  // first becomes equal to the left-bound for the second and we get
+  // zero-width cards.
+  assignXCardBounds(beamAnchors);
+
+  const TOL_Y_ROW = 30;
+  const pageBottom = Math.max(0, ...words.map(w => w.y)) + 100;
+
+  const beams = [];
+  for (const anchor of beamAnchors) {
+    // Search only BELOW this specific anchor — important for multi-band
+    // tables (e.g. G101-G103 at y=805 + G104-G107A at y=3543).
+    const below = words.filter(w =>
+      w.y > anchor.y + 5 &&
+      w.y < pageBottom &&
+      w.x >= anchor.leftBound &&
+      w.x <= anchor.rightBound
+    );
+
+    // Direct + row-concat section search.
+    let section = null;
+    for (const w of below) {
+      if (secRe.test(w.str)) { section = w.str.match(secRe)[0]; break; }
+    }
+    if (!section) {
+      const byRow = new Map();
+      for (const w of below) {
+        const rowKey = Math.round(w.y / TOL_Y_ROW);
+        if (!byRow.has(rowKey)) byRow.set(rowKey, []);
+        byRow.get(rowKey).push(w);
+      }
+      for (const [, row] of byRow) {
+        row.sort((a, b) => a.x - b.x);
+        const joined = row.map(t => t.str).join('');
+        const m = joined.match(secRe);
+        if (m) { section = m[0]; break; }
+      }
+    }
+
+    beams.push({
+      符号: anchor.str,
+      anchor: { x: anchor.x, y: anchor.y },
+      原文: {
+        断面型: section,
+        構造マテリアル: pageMats.構造マテリアル,
+      },
+    });
+  }
+  return beams;
+}
+
 // Try to classify an OCR'd page from its anchor patterns.
 // Returns the category plus the raw counts so the app can log them
 // when classification fails.
@@ -589,12 +731,18 @@ export function extractSmallBeamsFromOcr(words) {
 // any word containing the anchor pattern as a substring — not just whole
 // matches — to avoid undercounting.
 export function detectOcrCategory(words) {
-  // Accept plain "C\d+" alongside SC/CC/CFT so column lists that use
-  // grid-style naming (C101, C102, ...) get classified correctly.
+  // Anchor counts for each beam/column family.
+  //   SC|CC|CFT|C  : columns (柱)
+  //   SB|CSB       : small beams (小梁)
+  //   SG|CSG|FG|BG|G : large beams (大梁)
   const sc = words.filter(w => /(?:^|[^A-Za-z])(SC|CC|CFT|C)\d+[A-Z]?(?:$|[^A-Za-z0-9])/i.test(w.str + ' ')).length;
   const sb = words.filter(w => /(?:^|[^A-Za-z])(CSB|SB)\d+[A-Za-z]?(?:$|[^A-Za-z0-9])/i.test(w.str + ' ')).length;
+  const lg = words.filter(w => /(?:^|[^A-Za-z])(CSG|SG|FG|BG|G)\d+[A-Za-z]?(?:$|[^A-Za-z0-9])/i.test(w.str + ' ')).length;
   let category = 'unknown';
-  if (sb >= 3 && sb >= sc) category = 'small-beam';
-  else if (sc >= 3) category = 'column';
-  return { category, counts: { sc, sb, total: words.length } };
+  const max = Math.max(sb, lg, sc);
+  if (max < 3) return { category, counts: { sc, sb, lg, total: words.length } };
+  if (sb === max) category = 'small-beam';
+  else if (lg === max) category = 'large-beam';
+  else if (sc === max) category = 'column';
+  return { category, counts: { sc, sb, lg, total: words.length } };
 }
