@@ -331,12 +331,12 @@ function buildColumnGroups(maxSec) {
 
 function buildColumnRow(col, maxSec) {
   const grades = col.原文?.鋼材グレード_列 || [];
+  const sections = (col.原文?.断面型_列 || []).map(parseColumnSection).filter(Boolean);
+  const inferredNotes = [];
   const out = {
     TypeName: col.符号, 符号: col.符号,
     構造マテリアル: col.原文?.構造マテリアル ?? grades.join(',') ?? '',
-    備考: 'OCR抽出',
   };
-  const sections = (col.原文?.断面型_列 || []).map(parseColumnSection).filter(Boolean);
   for (let i = 0; i < maxSec; i++) {
     const s = sections[i];
     const n = i + 1;
@@ -346,11 +346,14 @@ function buildColumnRow(col, maxSec) {
     } else if (s.kind === '□') {
       out[`形式${n}`] = '□'; out[`成H_A${n}`] = s.A; out[`幅B${n}`] = s.B;
       out[`t1${n}`] = s.t; out[`t2${n}`] = null;
+      if (s._推定 === 't不明') inferredNotes.push(`断面${n}: t不明`);
     } else {
       out[`形式${n}`] = s.kind; out[`成H_A${n}`] = s.H; out[`幅B${n}`] = s.B;
       out[`t1${n}`] = s.tw; out[`t2${n}`] = s.tf;
+      if (s._推定 === true) inferredNotes.push(`断面${n}: JIS推定`);
     }
   }
+  out.備考 = 'OCR抽出' + (inferredNotes.length ? ' / ' + inferredNotes.join(', ') : '');
   return out;
 }
 

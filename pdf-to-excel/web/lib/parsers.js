@@ -119,19 +119,27 @@ const JIS_H_SECTIONS = [
 
 // Find the standard JIS H-section that matches a given height (and
 // optionally a flange width). Returns [H, B, tw, tf] or null.
+//
+// Important: when B is provided but does NOT match any catalog entry,
+// return null rather than guessing — the section is probably a custom /
+// built-up shape that happens to share an H height with a JIS rolled
+// section. Substituting JIS dimensions would silently corrupt the row.
 function lookupJisH(H, B) {
   const sameH = JIS_H_SECTIONS.filter(s => s[0] === H);
   if (sameH.length === 0) return null;
-  if (sameH.length === 1) return sameH[0];
-  // Ambiguous: same H but multiple B options.
-  if (B != null) {
-    const exact = sameH.find(s => s[1] === B);
-    if (exact) return exact;
-    // Pick the closest B
-    return sameH.sort((a, b) => Math.abs(a[1] - B) - Math.abs(b[1] - B))[0];
+  if (B == null) {
+    // Height-only hint (e.g. OCR truncated to "H-200"). Best guess is
+    // the narrow-flange variant since that's what 小梁 uses.
+    return sameH.sort((a, b) => a[1] - b[1])[0];
   }
-  // No B hint — prefer narrow-flange (smaller B) which is the typical 小梁.
-  return sameH.sort((a, b) => a[1] - b[1])[0];
+  // Look for exact B match
+  const exact = sameH.find(s => s[1] === B);
+  if (exact) return exact;
+  // Allow small OCR drift (e.g. 100 vs 99 from optical noise)
+  const close = sameH.find(s => Math.abs(s[1] - B) <= 5);
+  if (close) return close;
+  // No JIS variant fits — caller should keep the OCR values as-is.
+  return null;
 }
 
 export function parseSection(s) {
@@ -155,13 +163,18 @@ export function parseSection(s) {
     return { kind, H, B, tw, tf };
   }
 
-  // For rolled H-sections, validate / backfill from JIS.
+  // Detect "B is just the first digit of a truncated width" (e.g. "H-200x1"
+  // where "1" is the start of "100"). Drop the suspect B and let the JIS
+  // lookup pick by height alone.
+  if (B != null && B < 30) {
+    B = null;
+  }
+
   const jis = lookupJisH(H, B);
   let inferred = false;
 
   if (jis) {
-    // Suspiciously small B (1, 2, 9, ...) means OCR truncated to first digit.
-    if (B == null || B < 30) { B = jis[1]; inferred = true; }
+    if (B == null) { B = jis[1]; inferred = true; }
     if (tw == null) { tw = jis[2]; inferred = true; }
     if (tf == null) { tf = jis[3]; inferred = true; }
     // Decimal-loss correction: tw=65 when JIS says 6.5
@@ -175,15 +188,53 @@ export function parseSection(s) {
 export function parseColumnSection(s) {
   if (!s) return null;
   const cleaned = normalizeSepX(s);
-  const h = cleaned.match(/^(SH|BH|H|I|L|C)-?(\d+)x(\d+)x(\d+)x(\d+)/i);
-  if (h) {
+
+  // ----- H-section column (SH, BH, H prefix) -----
+  // Same permissive matching + JIS backfill as parseSection.
+  const hPrefix = cleaned.match(/^(SH|BH|H|I|L|C)-?(\d+)/i);
+  if (hPrefix) {
+    const h = cleaned.match(/^(SH|BH|H|I|L|C)-?(\d+)(?:x(\d+(?:\.\d+)?))?(?:x(\d+(?:\.\d+)?))?(?:x(\d+(?:\.\d+)?))?/i);
     const prefix = h[1].toUpperCase();
     const kind = prefix === 'H' ? 'SH' : prefix;
-    return { kind, H: parseInt(h[2]), B: parseInt(h[3]), tw: parseInt(h[4]), tf: parseInt(h[5]) };
+    const H = parseInt(h[2]);
+    let B  = h[3] != null ? parseFloat(h[3]) : null;
+    let tw = h[4] != null ? parseFloat(h[4]) : null;
+    let tf = h[5] != null ? parseFloat(h[5]) : null;
+
+    if (kind === 'BH') {
+      // Built-up H: not in the standard catalog, return as-is.
+      return { kind, H, B, tw, tf };
+    }
+    if (B != null && B < 30) B = null; // OCR-truncated first-digit
+    const jis = lookupJisH(H, B);
+    let inferred = false;
+    if (jis) {
+      if (B == null) { B = jis[1]; inferred = true; }
+      if (tw == null) { tw = jis[2]; inferred = true; }
+      if (tf == null) { tf = jis[3]; inferred = true; }
+      if (tw && jis[2] && Math.abs(tw - jis[2] * 10) < 0.1) { tw = jis[2]; inferred = true; }
+      if (tf && jis[3] && Math.abs(tf - jis[3] * 10) < 0.1) { tf = jis[3]; inferred = true; }
+    }
+    return { kind, H, B, tw, tf, _推定: inferred };
   }
-  const sq = cleaned.match(/^(?:[□ロ口])?-?(\d+)x(\d+)x(\d+)(?:\(([A-Z]+\d+)\))?/i);
+
+  // ----- Square hollow section (□ / no prefix or □ロ口) -----
+  // Different from H-section: the same (A, B) admits multiple wall thicknesses
+  // (e.g. 700×700 ships with t = 19 / 22 / 25 / 28 / 32). We can't safely
+  // pick one, so we ONLY accept t as the OCR gave it. If t is missing we
+  // leave it null and surface a "_推定: 't不明'" flag so the user knows.
+  const sq = cleaned.match(/^(?:[□ロ口])?-?(\d+)x(\d+)(?:x(\d+))?(?:\(([A-Z]+\d+)\))?/i);
   if (sq) {
-    return { kind: '□', A: parseInt(sq[1]), B: parseInt(sq[2]), t: parseInt(sq[3]), grade: sq[4] || null };
+    const A = parseInt(sq[1]);
+    const B = parseInt(sq[2]);
+    const tRaw = sq[3] != null ? parseInt(sq[3]) : null;
+    return {
+      kind: '□',
+      A, B,
+      t: tRaw,
+      grade: sq[4] || null,
+      _推定: tRaw == null ? 't不明' : false,
+    };
   }
   return null;
 }

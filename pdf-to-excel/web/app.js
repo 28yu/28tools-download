@@ -80,7 +80,7 @@ async function sha256(buffer) {
 // Cache: same PDF re-uploaded? Return cached result so the user gets
 // an instant load on iteration. Uses the Cache API (lighter than IDB).
 // Bump suffix when extraction logic changes so old caches invalidate.
-const CACHE_NAME = 'pdf-extract-v9';
+const CACHE_NAME = 'pdf-extract-v10';
 async function loadCache(key) {
   try {
     const c = await caches.open(CACHE_NAME);
@@ -363,8 +363,10 @@ function renderTable() {
   const parseCol = s => {
     const r = parseColumnSection(s);
     if (!r) return {};
-    if (r.kind === '□') return { 形式: '□', AH: r.A, B: r.B, t1: r.t, t2: '' };
-    return { 形式: r.kind, AH: r.H, B: r.B, t1: r.tw, t2: r.tf };
+    if (r.kind === '□') {
+      return { 形式: '□', AH: r.A, B: r.B, t1: r.t, t2: '', _推定: r._推定 };
+    }
+    return { 形式: r.kind, AH: r.H, B: r.B, t1: r.tw, t2: r.tf, _推定: r._推定 };
   };
   const rebarTop1 = s => {
     if (!s || s === '-') return '';
@@ -441,6 +443,7 @@ function renderTable() {
       const row = {
         TypeName: d.符号, 符号: d.符号,
       };
+      const notes = [];
       for (let i = 1; i <= maxSec; i++) {
         const s = sections[i-1] || {};
         row[`断面${i}_形式`] = s.形式 ?? '';
@@ -448,9 +451,11 @@ function renderTable() {
         row[`断面${i}_幅B`]  = s.B ?? '';
         row[`断面${i}_t1`]   = s.t1 ?? '';
         row[`断面${i}_t2`]   = s.t2 ?? '';
+        if (s._推定 === 't不明') notes.push(`断面${i}: t不明`);
+        else if (s._推定 === true) notes.push(`断面${i}: JIS推定`);
       }
       row.構造マテリアル = d.原文?.構造マテリアル ?? '';
-      row.備考 = 'OCR抽出';
+      row.備考 = notes.length ? notes.join(' / ') : '';
       return row;
     });
   }
