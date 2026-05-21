@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-20T02:30:50.813598",
+  "lastUpdated": "2026-05-21T02:31:50.224171",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -12,13 +12,13 @@
       "language": "en"
     },
     {
-      "title": "建設業経理士1級はすごい？｜難易度・合格率・おすすめ勉強順まで完全解説",
-      "link": "https://news.build-app.jp/article/40606/",
-      "description": "建設業経理士1級について調べているものの、「かなり難しいらしい」「どの科目から受けるべきかわからない」と悩んでいないでしょうか。 実際、建設......",
-      "publishedDate": "Wed, 13 May 2026 22:00:00 +0000",
+      "title": "日建設計コンストラクション・マネジメント「やさしいBIM®ハンドブック」を無料公開",
+      "link": "https://news.build-app.jp/article/40634/",
+      "description": "概要 日建設計コンストラクション・マネジメント株式会社（本社：東京都文京区、社長：清藤幹雄、以下 日建設計コンストラクション・マネジメント）......",
+      "publishedDate": "Wed, 20 May 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/d2f684442200362cbf11b9aa339b298b-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/NvWCI988PC82Vn51657720065_1657720078-130x82.jpg",
       "language": "ja"
     },
     {
@@ -112,16 +112,6 @@
       "language": "en"
     },
     {
-      "title": "建築の墨出しとは？｜種類・やり方・基準線の出し方まで現場目線で解説",
-      "link": "https://news.build-app.jp/article/40609/",
-      "description": "建築現場で「墨出し」という言葉を聞いたものの、「結局どんな作業なのかわからない」と感じていないでしょうか。 墨出しは、単なる線引きではありま......",
-      "publishedDate": "Thu, 14 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/d181bc38fce649570969cad1029f3e77-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "「ワークサイト」建設現場で誰が、どの作業で、どの役割を担うかを可視化",
       "link": "https://news.build-app.jp/article/40572/",
       "description": "エムシーディースリー株式会社（東京都渋谷区、代表取締役社長：飯田正生）は、現場の施工管理サービス「ワークサイト」のVer.2.0をリリースし......",
@@ -129,6 +119,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/08/AdobeStock_856647044-130x87.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "建築の墨出しとは？｜種類・やり方・基準線の出し方まで現場目線で解説",
+      "link": "https://news.build-app.jp/article/40609/",
+      "description": "建築現場で「墨出し」という言葉を聞いたものの、「結局どんな作業なのかわからない」と感じていないでしょうか。 墨出しは、単なる線引きではありま......",
+      "publishedDate": "Thu, 14 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/d181bc38fce649570969cad1029f3e77-130x82.png",
       "language": "ja"
     },
     {
@@ -162,16 +162,6 @@
       "language": "ja"
     },
     {
-      "title": "大林組、インドネシア・ジャカルタにおいて高速道路コンセッション事業に参画",
-      "link": "https://news.build-app.jp/article/40574/",
-      "description": "株式会社大林組（本社：東京都港区、社長：佐藤俊美）は、インドネシア・ジャカルタ都市圏で高速道路コンセッション事業を行うPT JTD JAYA......",
-      "publishedDate": "Sun, 17 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/09/MicrosoftTeams-image-147-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "建設業の変革に伴走する｜現場Hubの挑戦（後編）",
       "link": "https://news.build-app.jp/article/40355/",
       "description": "前編では、岡田氏から現場Hubが生まれた理由について詳しくお聞きしました。後編では、現場Hubの岡田氏に、現場Hubが実現したことや未来への......",
@@ -179,6 +169,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/902_thumbnail_part2-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "大林組、インドネシア・ジャカルタにおいて高速道路コンセッション事業に参画",
+      "link": "https://news.build-app.jp/article/40574/",
+      "description": "株式会社大林組（本社：東京都港区、社長：佐藤俊美）は、インドネシア・ジャカルタ都市圏で高速道路コンセッション事業を行うPT JTD JAYA......",
+      "publishedDate": "Sun, 17 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/09/MicrosoftTeams-image-147-130x87.jpg",
       "language": "ja"
     },
     {
