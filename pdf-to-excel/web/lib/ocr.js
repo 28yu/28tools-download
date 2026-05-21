@@ -1,15 +1,15 @@
 // Tesseract.js wrapper, lazy-loaded only when text extraction fails.
-// Renders a pdf.js page to a canvas with light pre-processing (grayscale +
-// adaptive threshold), then passes it to Tesseract and returns per-word
-// entries normalized to {str, x, y, w, h, conf} in image pixels.
 //
-// Tuning compared to the first pass:
-//   - DPI raised 300 → 400 for sharper glyph boundaries on small CJK text
-//   - Grayscale + threshold preprocessing improves contrast on noisy scans
-//   - Languages 'jpn+eng' so ASCII strings (SS400, BCP325, H-198×99…)
-//     decode without leaking into the CJK model
-//   - Two-pass: PSM 11 (sparse) for finding scattered anchors, plus PSM 6
-//     (uniform block) merged in for clean tabular text
+// High-precision configuration:
+//   - DPI 500 (vs default 400) — sharper glyph edges on small CJK text
+//   - "best" LSTM models from tessdata_best (vs default "fast") — recovers
+//     significantly more characters on CAD drawings; larger download
+//     (~20MB jpn_best vs ~5MB jpn_fast) but cached after first use.
+//   - jpn + eng combined languages — handles mixed "鋼材は、SN490Bとする"
+//   - 3-PSM merge (11 sparse / 6 block / 3 auto) — different segmenters
+//     catch different things; bbox-bucket de-dup at merge time.
+//   - preserve_interword_spaces=1 — keeps word boundaries intact, helps
+//     the downstream token logic in detectMaterials().
 
 let workerPromise = null;
 let TesseractRef = null;
@@ -31,11 +31,18 @@ async function getWorker(onStatus) {
   if (workerPromise) return workerPromise;
   workerPromise = (async () => {
     const Tesseract = await loadTesseract();
-    // jpn + eng combined: handles "鋼材は、SN490B" mixed strings cleanly.
+    // Point langPath at tessdata_best (more accurate, larger).
+    // The standard projectnaptha CDN hosts both "fast" and "best" variants.
     const worker = await Tesseract.createWorker(['jpn', 'eng'], 1, {
+      langPath: 'https://tessdata.projectnaptha.com/4.0.0_best',
       logger: m => {
         if (onStatus && m.status) onStatus(m.status, m.progress ?? 0);
       },
+    });
+    // Helpful tuning: keep word spacing in the recognized output so
+    // detectMaterials' token logic sees real word boundaries.
+    await worker.setParameters({
+      preserve_interword_spaces: '1',
     });
     return worker;
   })();
@@ -89,23 +96,23 @@ function tessWordsToEntries(words) {
  * Returns merged unique words. Three passes take ~3x the time of one but
  * recover text that any single segmentation mode would miss.
  */
-export async function ocrPage(page, onStatus, dpi = 400) {
+export async function ocrPage(page, onStatus, dpi = 500) {
   onStatus && onStatus('PDFページ描画', 0);
   const canvas = await renderPage(page, dpi);
 
   const worker = await getWorker(onStatus);
 
-  onStatus && onStatus('OCR pass 1/3 (sparse)', 0.05);
+  onStatus && onStatus('OCR pass 1/3 (sparse, 高精度)', 0.05);
   await worker.setParameters({ tessedit_pageseg_mode: '11' });
   const r1 = await worker.recognize(canvas);
   const w1 = tessWordsToEntries(r1.data.words);
 
-  onStatus && onStatus('OCR pass 2/3 (block)', 0.35);
+  onStatus && onStatus('OCR pass 2/3 (block, 高精度)', 0.35);
   await worker.setParameters({ tessedit_pageseg_mode: '6' });
   const r2 = await worker.recognize(canvas);
   const w2 = tessWordsToEntries(r2.data.words);
 
-  onStatus && onStatus('OCR pass 3/3 (auto)', 0.7);
+  onStatus && onStatus('OCR pass 3/3 (auto, 高精度)', 0.7);
   await worker.setParameters({ tessedit_pageseg_mode: '3' });
   const r3 = await worker.recognize(canvas);
   const w3 = tessWordsToEntries(r3.data.words);
