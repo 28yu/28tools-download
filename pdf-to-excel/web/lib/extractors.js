@@ -395,12 +395,46 @@ export function extractSmallBeamsFromOcr(words) {
   }));
   if (anchors.length === 0) return [];
 
-  const secRe = /^[HISL]-?\d+[xX×]\d+(?:\.\d+)?[xX×]\d+(?:\.\d+)?[xX×]\d+(?:\.\d+)?/;
-  const secs = words.filter(w => secRe.test(w.str));
-  const matRe = /^(SS|SN|SM)\d+[A-Z]?$/;
+  // Flexible section pattern:
+  //   - Prefix BH / SH / H / I / L / C (case-insensitive)
+  //   - Hyphen optional
+  //   - First dim (3-4 digits)
+  //   - 1-3 more dims, each separated by ONE OR MORE × markers
+  //     (handles OCR duplicates like "300x150xX6.5x9" or "346xX174xX6x9")
+  //   - Each dim can be integer or decimal (4.5, 6.5, 11.0)
+  //   - No ^ anchor — match can appear inside a longer word
+  const secRe = /(?:BH|SH|H|I|L|C)-?\d{2,4}(?:[xX×]+\d+(?:\.\d+)?){1,3}/i;
+  const matRe = /^(SS|SN|SM)\d{3,4}[ABC]?$/;
   const mats = words.filter(w => matRe.test(w.str));
 
-  const TOL_Y = 12;
+  const TOL_Y = 20;
+
+  // For each anchor, find its section by scanning all words on the same y
+  // row to its right. Try matching each word individually first (catches
+  // the common case where Tesseract gives us "H-198x99x4.5x7" as one
+  // word), then try joining consecutive words (catches the case where
+  // best-model output splits a section across multiple words).
+  function sectionForAnchor(anchor) {
+    const sameRow = words.filter(w =>
+      Math.abs(w.y - anchor.y) <= TOL_Y && w.x > anchor.x
+    ).sort((a, b) => a.x - b.x);
+
+    for (const w of sameRow) {
+      const m = w.str.match(secRe);
+      if (m) return m[0];
+    }
+    // Concatenation fallback for split sections
+    for (let i = 0; i < sameRow.length; i++) {
+      let joined = sameRow[i].str;
+      for (let j = i + 1; j < Math.min(i + 5, sameRow.length); j++) {
+        joined += sameRow[j].str;
+        const m = joined.match(secRe);
+        if (m) return m[0];
+      }
+    }
+    return null;
+  }
+
   function findOnRow(list, anchor) {
     const cands = list.filter(w => Math.abs(w.y - anchor.y) <= TOL_Y);
     cands.sort((a,b) => Math.abs(a.x - anchor.x) - Math.abs(b.x - anchor.x));
@@ -410,14 +444,14 @@ export function extractSmallBeamsFromOcr(words) {
 
   const beams = [];
   for (const a of anchors) {
-    const sec = findOnRow(secs, a);
+    const sec = sectionForAnchor(a);   // robust row-scan + concat fallback
     const mat = findOnRow(mats, a);
     for (const sym of a.symbols) {
       beams.push({
         符号: sym,
         anchor: { x: a.x, y: a.y },
         原文: {
-          断面型: sec?.str ?? null,
+          断面型: sec,
           鋼材グレード: mat?.str ?? null,
           構造マテリアル: mat?.str ?? pageMats.構造マテリアル,
           raw符号: a.raw,

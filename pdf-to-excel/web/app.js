@@ -79,7 +79,7 @@ async function sha256(buffer) {
 // Cache: same PDF re-uploaded? Return cached result so the user gets
 // an instant load on iteration. Uses the Cache API (lighter than IDB).
 // Bump suffix when extraction logic changes so old caches invalidate.
-const CACHE_NAME = 'pdf-extract-v7';
+const CACHE_NAME = 'pdf-extract-v8';
 async function loadCache(key) {
   try {
     const c = await caches.open(CACHE_NAME);
