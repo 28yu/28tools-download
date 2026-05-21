@@ -61,20 +61,115 @@ export function expandCompound(symbol) {
 // e.g. "H-300x150xX6.5x9" / "H-346xX174xX6x9" / "H-248X124x5x8".
 const normalizeSepX = s => String(s).replace(/[xX×]+/g, 'x');
 
+// JIS G 3192 standard rolled H-section catalog. The OCR commonly
+// truncates section strings to "H-200×1" or drops decimal points
+// ("65" instead of "6.5"). Since rolled H-sections are off-the-shelf
+// products with fixed dimensions, looking up by height H (and optionally
+// flange width B) restores the standard values reliably.
+//   [H, B, tw, tf]
+const JIS_H_SECTIONS = [
+  // Narrow-flange (常用 小梁・大梁)
+  [100,  50, 5,   7   ],
+  [125,  60, 6,   8   ],
+  [150,  75, 5,   7   ],
+  [175,  90, 5,   8   ],
+  [198,  99, 4.5, 7   ],
+  [200, 100, 5.5, 8   ],
+  [248, 124, 5,   8   ],
+  [250, 125, 6,   9   ],
+  [298, 149, 5.5, 8   ],
+  [300, 150, 6.5, 9   ],
+  [346, 174, 6,   9   ],
+  [350, 175, 7,   11  ],
+  [396, 199, 7,   11  ],
+  [400, 200, 8,   13  ],
+  [446, 199, 8,   12  ],
+  [450, 200, 9,   14  ],
+  [496, 199, 9,   14  ],
+  [500, 200, 10,  16  ],
+  [596, 199, 10,  15  ],
+  [600, 200, 11,  17  ],
+  [700, 300, 13,  24  ],
+  [800, 300, 14,  26  ],
+  [900, 300, 16,  28  ],
+  // Wide-flange (主に大梁) + extra wide-deep variants
+  [148, 100, 6,   9   ],
+  [194, 150, 6,   9   ],
+  [200, 200, 8,   12  ],
+  [244, 175, 7,   11  ],
+  [250, 250, 9,   14  ],
+  [294, 200, 8,   12  ],
+  [300, 300, 10,  15  ],
+  [340, 250, 9,   14  ],
+  [350, 350, 12,  19  ],
+  [390, 300, 10,  16  ],
+  [394, 398, 11,  18  ],
+  [400, 400, 13,  21  ],
+  [440, 300, 11,  18  ],
+  [482, 300, 11,  15  ],
+  [488, 300, 11,  18  ],
+  [582, 300, 12,  17  ],
+  [588, 300, 12,  20  ],
+  [606, 201, 12,  20  ],
+  [612, 202, 13,  23  ],
+  [692, 300, 13,  20  ],
+  [792, 300, 14,  22  ],
+  [890, 299, 15,  23  ],
+];
+
+// Find the standard JIS H-section that matches a given height (and
+// optionally a flange width). Returns [H, B, tw, tf] or null.
+function lookupJisH(H, B) {
+  const sameH = JIS_H_SECTIONS.filter(s => s[0] === H);
+  if (sameH.length === 0) return null;
+  if (sameH.length === 1) return sameH[0];
+  // Ambiguous: same H but multiple B options.
+  if (B != null) {
+    const exact = sameH.find(s => s[1] === B);
+    if (exact) return exact;
+    // Pick the closest B
+    return sameH.sort((a, b) => Math.abs(a[1] - B) - Math.abs(b[1] - B))[0];
+  }
+  // No B hint — prefer narrow-flange (smaller B) which is the typical 小梁.
+  return sameH.sort((a, b) => a[1] - b[1])[0];
+}
+
 export function parseSection(s) {
   if (!s) return null;
   const cleaned = normalizeSepX(s);
-  const m = cleaned.match(/^(SH|BH|H|I|L|C)-?(\d+)x(\d+)x(\d+(?:\.\d+)?)x(\d+(?:\.\d+)?)$/i);
+  // Permissive match: 1-4 dimensions accepted. Truncated OCR like
+  // "H-200x1" gives us H=200 + B=1, but the JIS lookup will rebuild
+  // the full set from the standard catalog.
+  const m = cleaned.match(/^(SH|BH|H|I|L|C)-?(\d+)(?:x(\d+(?:\.\d+)?))?(?:x(\d+(?:\.\d+)?))?(?:x(\d+(?:\.\d+)?))?/i);
   if (!m) return null;
   const prefix = m[1].toUpperCase();
   const kind = prefix === 'H' ? 'SH' : prefix;
-  return {
-    kind,
-    H:  parseInt(m[2]),
-    B:  parseInt(m[3]),
-    tw: parseFloat(m[4]),
-    tf: parseFloat(m[5]),
-  };
+  const H = parseInt(m[2]);
+  let B  = m[3] != null ? parseFloat(m[3]) : null;
+  let tw = m[4] != null ? parseFloat(m[4]) : null;
+  let tf = m[5] != null ? parseFloat(m[5]) : null;
+
+  // BH (built-up) sections aren't from the standard catalog; trust the
+  // OCR digits as-is rather than substituting JIS values.
+  if (kind === 'BH') {
+    return { kind, H, B, tw, tf };
+  }
+
+  // For rolled H-sections, validate / backfill from JIS.
+  const jis = lookupJisH(H, B);
+  let inferred = false;
+
+  if (jis) {
+    // Suspiciously small B (1, 2, 9, ...) means OCR truncated to first digit.
+    if (B == null || B < 30) { B = jis[1]; inferred = true; }
+    if (tw == null) { tw = jis[2]; inferred = true; }
+    if (tf == null) { tf = jis[3]; inferred = true; }
+    // Decimal-loss correction: tw=65 when JIS says 6.5
+    if (tw && jis[2] && Math.abs(tw - jis[2] * 10) < 0.1) { tw = jis[2]; inferred = true; }
+    if (tf && jis[3] && Math.abs(tf - jis[3] * 10) < 0.1) { tf = jis[3]; inferred = true; }
+  }
+
+  return { kind, H, B, tw, tf, _推定: inferred };
 }
 
 export function parseColumnSection(s) {

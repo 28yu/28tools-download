@@ -17,6 +17,7 @@ import {
   extractColumnsFromOcr,
   extractSmallBeamsFromOcr,
 } from './lib/extractors.js';
+import { parseSection, parseColumnSection } from './lib/parsers.js';
 
 import { buildExcelBlob } from './lib/excel.js';
 
@@ -79,7 +80,7 @@ async function sha256(buffer) {
 // Cache: same PDF re-uploaded? Return cached result so the user gets
 // an instant load on iteration. Uses the Cache API (lighter than IDB).
 // Bump suffix when extraction logic changes so old caches invalidate.
-const CACHE_NAME = 'pdf-extract-v8';
+const CACHE_NAME = 'pdf-extract-v9';
 async function loadCache(key) {
   try {
     const c = await caches.open(CACHE_NAME);
@@ -352,18 +353,18 @@ function renderTable() {
   // Preview columns mirror what Excel writes (lib/excel.js). This keeps
   // the user's mental model consistent: "what I see is what I get".
 
-  // Inline section parser for preview-only display.
+  // Use the shared parsers so the preview values match what Excel writes,
+  // including the JIS-standard inference for truncated OCR output.
   const parseS = s => {
-    if (!s) return {};
-    const m = String(s).match(/^(SH|BH|H)[-]?(\d+)[×xX](\d+)[×xX](\d+(?:\.\d+)?)[×xX](\d+(?:\.\d+)?)$/);
-    return m ? { 形式: m[1]==='H'?'SH':m[1], 成H: +m[2], 幅B: +m[3], tw: +m[4], tf: +m[5] } : {};
+    const r = parseSection(s);
+    if (!r) return {};
+    return { 形式: r.kind, 成H: r.H, 幅B: r.B, tw: r.tw, tf: r.tf, _推定: r._推定 };
   };
   const parseCol = s => {
-    if (!s) return {};
-    const h = String(s).match(/^(SH|BH|H)[-]?(\d+)[×xX](\d+)[×xX](\d+)[×xX](\d+)/);
-    if (h) return { 形式: h[1]==='H'?'SH':h[1], AH: +h[2], B: +h[3], t1: +h[4], t2: +h[5] };
-    const q = String(s).match(/^(?:[□ロ口])?[-]?(\d+)[×xX](\d+)[×xX](\d+)/);
-    return q ? { 形式: '□', AH: +q[1], B: +q[2], t1: +q[3], t2: '' } : {};
+    const r = parseColumnSection(s);
+    if (!r) return {};
+    if (r.kind === '□') return { 形式: '□', AH: r.A, B: r.B, t1: r.t, t2: '' };
+    return { 形式: r.kind, AH: r.H, B: r.B, t1: r.tw, t2: r.tf };
   };
   const rebarTop1 = s => {
     if (!s || s === '-') return '';
@@ -430,7 +431,7 @@ function renderTable() {
         形式: sec.形式 ?? '', 成H: sec.成H ?? '', 幅B: sec.幅B ?? '',
         ウェブtw: sec.tw ?? '', フランジtf: sec.tf ?? '',
         構造マテリアル: r.構造マテリアル ?? r.鋼材グレード ?? '',
-        原文: r.断面型 ?? '',
+        原文: (r.断面型 ?? '') + (sec._推定 ? ' (JIS推定)' : ''),
       };
     });
   } else if (activeTab === '柱 (S)') {
