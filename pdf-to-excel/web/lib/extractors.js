@@ -338,6 +338,12 @@ export function extractColumnsFromOcr(words) {
   }
   if (rawAnchors.length === 0) return [];
 
+  // Diagnostic: dump every anchor position so we can see exactly what
+  // Tesseract.js returned for this page. Visible via F12 → Console.
+  console.log('[extractColumnsFromOcr] rawAnchors =', rawAnchors.map(a =>
+    `${a.str}@(${a.x.toFixed(0)},${a.y.toFixed(0)})`
+  ).join(' | '));
+
   // OCR may give us each SC symbol multiple times (heading, page label,
   // canonical row, footer). Group by symbol name and pick the single
   // position with the most "section-like" content below it — that's the
@@ -347,6 +353,8 @@ export function extractColumnsFromOcr(words) {
     if (!bySymbol.has(a.str)) bySymbol.set(a.str, []);
     bySymbol.get(a.str).push(a);
   }
+  console.log('[extractColumnsFromOcr] unique symbols =',
+    [...bySymbol.entries()].map(([k, v]) => `${k}×${v.length}`).join(', '));
 
   // Helper to count how much section-like content sits below a position
   // within a generous x band (we don't know the real card width yet).
@@ -480,6 +488,11 @@ export function extractColumnsFromOcr(words) {
 
 export function extractSmallBeamsFromOcr(words) {
   const pageMats = detectMaterials(words);
+  // Diagnostic: dump first ~30 OCR words so we can see what Tesseract
+  // returned. Useful when "X% of beams missing section" — visible in
+  // F12 console.
+  console.log('[extractSmallBeamsFromOcr] OCR sample (first 30):',
+    words.slice(0, 30).map(w => `"${w.str}"`).join(' '));
   // Case-insensitive: OCR may return "sb14m" (all lower), "SB14M", "Sb14M" etc.
   // Suffix can also be lowercase (m/w/h) — we uppercase before storing.
   const anchorRe = /^[csCS]?[sS][bB]\d+[A-Za-z]{0,3}(?:[.,][csCS][sS][bB]\d+[A-Za-z]{0,3})?$/;
