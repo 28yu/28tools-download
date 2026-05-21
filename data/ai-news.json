@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-20T05:06:45.801845",
+  "lastUpdated": "2026-05-21T05:10:44.089846",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -22,6 +22,193 @@
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/inference-providers/welcome-deepinfra.jpg",
       "language": "en"
+    },
+    {
+      "title": "We’re announcing new community investments in Missouri.",
+      "titleJa": "私たちはミズーリ州における新たなコミュニティへの投資を発表します。",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
+      "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
+      "publishedDate": "Wed, 20 May 2026 20:40:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "100 things we announced at I/O 2026",
+      "titleJa": "I/O 2026 で発表した 100 のこと",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+      "description": "Image with the words \"Ready, Set, I/O\" and a colorful Gemini logo...",
+      "publishedDate": "Wed, 20 May 2026 19:30:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/100_things_Social.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "A new experiment brings better group meetings to Google Beam",
+      "titleJa": "新しい実験により、Google Beam でのグループ会議が改善されました",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-beam-group-meetings/",
+      "description": "A small group meeting featuring two in-room participants and three participants on-screen....",
+      "publishedDate": "Wed, 20 May 2026 16:45:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screenshot_2026-05-15_at_4.21.2.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "ChatGPTの画像認識とは？OCR・図表解析・スクショ読解の使い方と活用例を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/chatgpt-image-recognition/",
+      "description": "ChatGPTの画像認識は画像内の文字を読み取ったり、スクリーンショットの内容を整理したりできる機能です。手書きメモのデータ化や資料整理などに活用されており、業務効率化の手段として注目されています。 とはいえ、「無料でど [...]...",
+      "publishedDate": "Wed, 20 May 2026 13:36:05 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-image-recognition_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Green steel startup Boston Metal is doubling down on critical metals",
+      "titleJa": "環境に優しい鉄鋼のスタートアップ、ボストン・メタルは重要な金属の生産を倍増している",
+      "link": "https://www.technologyreview.com/2026/05/20/1137523/boston-metal-funding-critical-metals/",
+      "description": "The startup Boston Metal has raised a $75 million funding round to produce critical metals, MIT Technology Review can exclusively report.&#160;&#160; The company has been known largely for its efforts...",
+      "publishedDate": "Wed, 20 May 2026 13:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/Image-of-Boston-Metals-subsidiary-in-Brazil.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "【Gemini Spark】Google発の24時間稼働AIエージェントの概要・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/gemini-spark/",
+      "description": "2026年5月20日、GoogleはGoogle I/O 2026でパーソナルAIエージェント「Gemini Spark」を発表しました！ Gemini Sparkは、GmailやGoogleドキュメント、スプレッドシー [...]...",
+      "publishedDate": "Wed, 20 May 2026 12:44:47 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-Spark-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Antigravity 2.0とは？エージェントファーストで開発が激変！Googleの最新ツールの使い方・料金・特徴を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/antigravity-2-0/",
+      "description": "2026年5月、GoogleからAIエージェントファーストの開発プラットフォーム「Antigravity 2.0」が発表されました。 今回発表された「Antigravity 2.0」は、従来の開発ツールとは一線を画す、複 [...]...",
+      "publishedDate": "Wed, 20 May 2026 12:32:44 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Antigravity-2.0-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "The Download: fully artificial chicken eggs and why Musk lost",
+      "titleJa": "ダウンロード: 完全人工鶏卵とマスク氏が負けた理由",
+      "link": "https://www.technologyreview.com/2026/05/20/1137579/the-download-colossal-biosciences-egg-musk-altman-trial/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Colossal Biosciences is growing chickens in a 3D-p...",
+      "publishedDate": "Wed, 20 May 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/SO23-therapies-01.webp?w=1454",
+      "language": "en"
+    },
+    {
+      "title": "GPT-4の無料版はまだ使える？有料版との違い・無料で使える代替サービス・注意点を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/chatgpt4-free-usage/",
+      "description": "GPT-4は、OpenAIが2023年3月に公開した大規模言語モデルです。ChatGPT公式では2026年2月にGPT-4系モデルの提供が終了しましたが、実は今でも無料で使えるサービスが残っているのをご存じでしょうか？※ [...]...",
+      "publishedDate": "Wed, 20 May 2026 12:08:19 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt4-free-usage_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claudeアプリ版とブラウザ版の違いは？使い方をスマホ・PC別に紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/claude-app/",
+      "description": "2022年11月、アメリカのOpenAI社が対話型生成AI「ChatGPT」を公開して以降、企業における生成AI活用は急速に広がっています。その中でも近年特に注目されているのが、Anthropic社が提供する「Claud [...]...",
+      "publishedDate": "Wed, 20 May 2026 11:16:12 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-app_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Gemini Sparkとは？24時間動く自律型AIエージェントの機能・日本提供時期を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/gemini-spark/",
+      "description": "2026年5月19日（米国時間）、Googleの開発者会議「Google I/O 2026」にて、世界中を驚かせる発表がありました。それが、次世代の自律型AIエージェント「Gemini Spark（ジェミニ・スパーク）」 [...] The post Gemini Sparkとは？24時間動く自律型AIエージェントの機能・日本提供時期を解説 first appeared on AIポータルメディア...",
+      "publishedDate": "Wed, 20 May 2026 08:34:12 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/geimni-spark_ic.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTの改行方法をPC・スマホ別に解説｜できない原因と設定のコツも",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-line-break/",
+      "description": "ChatGPTを使っていて、文章を改行しようとEnterキーを押したら、意図せず送信されてしまった経験はありませんか。長い指示や複雑なプロンプトを入力したいのに、途中で送信されてしまうとストレスを感じますよね。 この記事 [...] The post ChatGPTの改行方法をPC・スマホ別に解説｜できない原因と設定のコツも first appeared on AIポータルメディアAIsmiley...",
+      "publishedDate": "Wed, 20 May 2026 08:00:41 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/linebreakmain.png",
+      "language": "ja"
+    },
+    {
+      "title": "Microsoft、世界のAI普及レポート2026年最新版を公開。日本のAI普及率は世界平均の3倍超ペースで増加",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/microsoft-2026-global-ai-diffusion/",
+      "description": "Microsoftは、世界AI普及レポート2026年最新版を公開しました。世界のAI普及率は引き続き増加傾向で、日本におけるAI導入率は世界平均の3倍以上の速さで増加しています。 このニュースのポイント 世界のAI普及率 [...] The post Microsoft、世界のAI普及レポート2026年最新版を公開。日本のAI普及率は世界平均の3倍超ペースで増加 first appeared on...",
+      "publishedDate": "Wed, 20 May 2026 06:23:53 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/microsofteye-1.png",
+      "language": "ja"
+    },
+    {
+      "title": "「小中学生の生成AI利用と調べ方に関する実態調査2026」結果発表。小中学生の6割超が生成AI利用経験",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/piftee-seiseiai-children/",
+      "description": "SEO・AIO対策のコンサルを行うPifteeは、小学3年生から中学3年生の子供を持つ保護者300名を対象に「生成AI利用と調べ方に関する実態調査」を行いました。 このニュースのポイント 小学3年生から中学3年生の子供を [...] The post 「小中学生の生成AI利用と調べ方に関する実態調査2026」結果発表。小中学生の6割超が生成AI利用経験 first appeared on AIポー...",
+      "publishedDate": "Wed, 20 May 2026 06:13:31 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/aisyoutyuugakusei.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI、AI活用のサイバー防御構想「OpenAI Daybreak」を発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-daybreak/",
+      "description": "OpenAIは、AIを活用したサイバー防御構想「OpenAI Daybreak」を発表しました。AIによる脆弱性分析や修復支援を開発工程へ組み込むことで、防御対応の迅速化と継続的な保護の実現を目指します。 このニュースの [...] The post OpenAI、AI活用のサイバー防御構想「OpenAI Daybreak」を発表 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Wed, 20 May 2026 05:52:40 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/openai-daybreak-2.png",
+      "language": "ja"
+    },
+    {
+      "title": "Gemini Omniとは？Google DeepMindの新マルチモーダル動画生成AIの特徴・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/gemini-omni/",
+      "description": "2026年5月、Google DeepMindから新しいマルチモーダル生成モデルが発表されました。 今回登場した「Gemini Omni」は、テキスト・画像・音声・動画を横断して扱えるマルチモーダル動画生成AIです。複数 [...]...",
+      "publishedDate": "Wed, 20 May 2026 05:27:06 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-Omni-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【6/5開催ウェビナー】AIエージェントで進化する「顧客対応」の新基準 〜現場でAIをフル活用する為のAI Readyなデータの型×自動化・効率化の最前線〜",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/20260605webinar/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年6月5日（金）12時からAIを活用した顧客対応の効率化をテーマにウェビナーを開催します。 現在、多くの企業がAIエージェン [...] The post 【6/5開催ウェビナー】AIエージェントで進化する「顧客対応」の新基準 〜現場でAIをフル活用する為のAI Readyなデータの型×自動化・効率化の...",
+      "publishedDate": "Wed, 20 May 2026 05:10:26 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/1066_1200x628_2.jpg",
+      "language": "ja"
     },
     {
       "title": "【Gemini 3.5 Flash】FlashなのにProを超えた！Google最強のエージェント特化モデルを徹底解説",
@@ -90,22 +277,33 @@
       "language": "ja"
     },
     {
-      "title": "Building a safe, effective sandbox to enable Codex on Windows",
-      "titleJa": "Windows で Codex を有効にするための安全で効果的なサンドボックスを構築する",
-      "link": "https://openai.com/index/building-codex-windows-sandbox",
-      "description": "Learn how OpenAI built a secure sandbox for Codex on Windows, enabling safe, efficient coding agents with controlled file access and network restrictions....",
-      "publishedDate": "Wed, 13 May 2026 11:00:00 GMT",
+      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+      "titleJa": "OpenAI モデルは離散幾何学における中心予想を反証しました",
+      "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
+      "description": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics....",
+      "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
       "language": "en"
     },
     {
-      "title": "Our response to the TanStack npm supply chain attack",
-      "titleJa": "TanStack npm サプライ チェーン攻撃に対する当社の対応",
-      "link": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
-      "description": "OpenAI details its response to the TanStack “Mini Shai-Hulud” supply chain attack, outlines protections taken to secure systems and signing certificates, and explains why macOS users must update OpenA...",
-      "publishedDate": "Wed, 13 May 2026 00:00:00 GMT",
+      "title": "The next phase of OpenAI’s Education for Countries",
+      "titleJa": "OpenAI の国向け教育の次の段階",
+      "link": "https://openai.com/index/the-next-phase-of-education-for-countries",
+      "description": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes....",
+      "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "How Ramp engineers accelerate code review with Codex",
+      "titleJa": "Ramp エンジニアが Codex を使用してコード レビューを加速する方法",
+      "link": "https://openai.com/index/ramp",
+      "description": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours....",
+      "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -145,17 +343,6 @@
       "language": "en"
     },
     {
-      "title": "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try",
-      "titleJa": "Google 翻訳 20 周年を記念して: 試してみたい楽しい事実、ヒント、新機能",
-      "link": "https://blog.google/products-and-platforms/products/translate/fun-facts-google-translate-20-years/",
-      "description": "The Google Translate logo sits in the middle of colorful illustrated scenes, including people translating live conversations and a birthday cake topped by candles with the numeral 20...",
-      "publishedDate": "Tue, 28 Apr 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Translate_20th_hero_NC8a.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
       "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
       "titleJa": "NVIDIA Nemotron 3 Nano Omni の紹介: ドキュメント、オーディオ、ビデオ エージェント向けのロングコンテキスト マルチモーダル インテリジェンス",
       "link": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
@@ -189,8 +376,8 @@
       "language": "en"
     },
     {
-      "title": "OlmoEarth v1.1: A more efficient family of models",
-      "titleJa": "OlmoEarth v1.1: より効率的なモデル ファミリ",
+      "title": "OlmoEarth v1.1: A more efficient family of Earth observation models",
+      "titleJa": "OlmoEarth v1.1: より効率的な地球観測モデルのファミリー",
       "link": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
       "description": "...",
       "publishedDate": "Tue, 19 May 2026 18:38:09 GMT",
@@ -277,28 +464,6 @@
       "language": "en"
     },
     {
-      "title": "生成AIによる教育業界の業務効率化！教務効率化と授業品質UPが狙える活用法や実際の導入事例を紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/education-industry-issues/",
-      "description": "「教員の数は減っているのに、多様化する子どもたちへのきめ細やかな対応が求められる……」「既存の指導要領に上乗せして、デジタル社会を踏まえたカリキュラムを組まなくてはいけない……」など、目まぐるしい令和の教育現場にお悩みの [...]...",
-      "publishedDate": "Tue, 19 May 2026 14:16:26 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/education-industry-issues_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "動画生成AIのビジネス活用事例10選！企業の導入事例やおすすめツール、使うときの注意点を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/video-generationai-service/",
-      "description": "「動画制作にコストと時間がかかりすぎる」「競合他社はすでにAIを使っているのに、うちはまだ外注頼みだ」 そんな悩みを抱えるマーケターや広報、DX担当者が急増しています。 実際すでに、PARCO・KDDI・伊藤園・富士通と [...]...",
-      "publishedDate": "Tue, 19 May 2026 13:19:17 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/video-generationai-service_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Understanding the modern cybercrime landscape",
       "titleJa": "現代のサイバー犯罪情勢を理解する",
       "link": "https://www.technologyreview.com/2026/05/19/1136925/understanding-the-modern-cybercrime-landscape/",
@@ -332,17 +497,6 @@
       "language": "en"
     },
     {
-      "title": "【Composer 2.5】Opus 4.7に匹敵するコーディング性能を10分の1のコストで実現したCursorの自社モデルを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/composer-2-5/",
-      "description": "2026年5月19日、AIコーディングエディタ「Cursor」を開発するAnysphere社が、自社AIモデルの最新バージョン「Composer 2.5」を公開しました！ Composer 2.5は、前バージョンのCom [...]...",
-      "publishedDate": "Tue, 19 May 2026 11:14:16 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Composer-2.5-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
       "titleJa": "より安全で透明性の高い AI エコシステムを実現するためのコンテンツ来歴の進歩",
       "link": "https://openai.com/index/advancing-content-provenance",
@@ -352,72 +506,6 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "ルネサス、Irida Labs社を買収。ビジョンAIソフト強化でソリューション提供を加速",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/renesas-acquire-irida-labs/",
-      "description": "ルネサスは、AIを活用した視覚認識システム向け組み込みソフトウェアを専門とする企業であるIrida Labsを買収したと発表しました。これにより、同社が成長領域として位置付ける「Secular Growth」分野への取り [...] The post ルネサス、Irida Labs社を買収。ビジョンAIソフト強化でソリューション提供を加速 first appeared on AIポータルメディアA...",
-      "publishedDate": "Tue, 19 May 2026 08:25:23 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/renesas-irida-labs.png",
-      "language": "ja"
-    },
-    {
-      "title": "ExaMD、自由会話から認知症の前段階を可視化する「CogniTalk」を提供開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/exawizards-examd-cognitalk/",
-      "description": "エクサウィザーズのグループ会社であるExaMDは、30秒の自由会話音声から認知機能の健康状態を10段階で可視化する独自音声AI「CogniTalk」の提供を開始しました。 このニュースのポイント エクサウィザーズグループ [...] The post ExaMD、自由会話から認知症の前段階を可視化する「CogniTalk」を提供開始 first appeared on AIポータルメディアAIsm...",
-      "publishedDate": "Tue, 19 May 2026 08:07:31 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/exawizards-ExaMD-CogniTalk.png",
-      "language": "ja"
-    },
-    {
-      "title": "CTCとマクニカ、フィジカルAI基盤構築に必要な知識とスキルを学べる「フィジカルAIトレーニング」提供開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ctc-macnica-nvidia-physical-ai/",
-      "description": "伊藤忠テクノソリューションズ（CTC）とマクニカは、NVIDIAのプラットフォームを活用した「フィジカルAIトレーニング」の提供を開始しました。フィジカルAIの基盤構築に必要な知識とスキルを習得できる実践プログラムです。 [...] The post CTCとマクニカ、フィジカルAI基盤構築に必要な知識とスキルを学べる「フィジカルAIトレーニング」提供開始 first appeared on AI...",
-      "publishedDate": "Tue, 19 May 2026 07:48:36 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/ccmacnicaeye.png",
-      "language": "ja"
-    },
-    {
-      "title": "OpenAI、APIに3つの新音声モデル導入。リアルタイムで推論・翻訳・文字起こしに対応",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-api-honyaku/",
-      "description": "OpenAIは、リアルタイム推論・翻訳・文字起こしに対応する3つの新音声モデルをAPIに導入しました。 このニュースのポイント OpenAI、リアルタイムで推論・翻訳・文字起こしを行う3つの新音声モデルをAPIに導入 「 [...] The post OpenAI、APIに3つの新音声モデル導入。リアルタイムで推論・翻訳・文字起こしに対応 first appeared on AIポータルメディアA...",
-      "publishedDate": "Tue, 19 May 2026 07:46:56 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/openai-honyaku.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTの履歴を見る方法は？検索・保存・復元を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-log-check/",
-      "description": "「あのやり取り、どこに行った？」ChatGPTを日々使っていると、こんな場面に出くわします。「大事な回答を見返したい」「履歴が急に表示されなくなった」「どこかに保存しておけばよかった」と困ることはありませんか。 本記事で [...] The post ChatGPTの履歴を見る方法は？検索・保存・復元を徹底解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 19 May 2026 07:36:18 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/rirekimain.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTのアカウント削除方法｜再登録の条件やできない場合の対処法を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-account-deletion/",
-      "description": "ChatGPTを使わなくなった、またはプライバシーが気になるという理由でアカウント削除を検討している方も多いのではないでしょうか。 この記事では、ChatGPTのアカウントを完全に削除する手順を、PC・スマホそれぞれの環 [...] The post ChatGPTのアカウント削除方法｜再登録の条件やできない場合の対処法を解説 first appeared on AIポータルメディアAIsmile...",
-      "publishedDate": "Tue, 19 May 2026 07:08:43 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/accountdeletion.png",
-      "language": "ja"
     },
     {
       "title": "Here’s why Elon Musk lost his suit against OpenAI",
@@ -442,113 +530,36 @@
       "language": "en"
     },
     {
-      "title": "How finance teams use Codex",
-      "titleJa": "財務チームが Codex を使用する方法",
-      "link": "https://openai.com/academy/how-finance-teams-use-codex",
-      "description": "See how finance teams can use Codex to build MBRs, reporting packs, variance bridges, model checks, and planning scenarios from real work inputs....",
-      "publishedDate": "Tue, 12 May 2026 15:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
-      "titleJa": "Google は、350 万ドルの Future Vision 映画コンペティションで XPRIZE および Range Media Partners と提携しています。",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/",
-      "description": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition....",
-      "publishedDate": "Tue, 05 May 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/futurevisionxprize_social.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Sea's View on the Future of Agentic Software Development with Codex",
-      "titleJa": "Codex を使用したエージェントティック ソフトウェア開発の将来に関する Sea の見解",
-      "link": "https://openai.com/index/sea-david-chen",
-      "description": "Sea Limited's CPO explains why the company is deploying Codex across engineering teams to accelerate AI-native software development in Asia....",
-      "publishedDate": "Thu, 14 May 2026 20:30:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-      "titleJa": "Granite エンベディング多言語 R2: 32K コンテキストを備えたオープン Apache 2.0 多言語エンベディング - 最高のサブ 100M 検索品質",
-      "link": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
-      "description": "...",
-      "publishedDate": "Thu, 14 May 2026 18:55:01 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ibm-granite/granite-embedding-multilingual-r2.png",
-      "language": "en"
-    },
-    {
-      "title": "Work with Codex from anywhere",
-      "titleJa": "どこからでも Codex を使用して作業する",
-      "link": "https://openai.com/index/work-with-codex-from-anywhere",
-      "description": "Use Codex anywhere with the ChatGPT mobile app. Monitor, steer, and approve coding tasks in real time across devices and remote environments....",
-      "publishedDate": "Thu, 14 May 2026 13:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Midjourneyは商用利用できる？料金・条件・他AIとの違いまでまとめて徹底解説",
+      "title": "Google I/O 2026まとめ！Gemini 3.5 FlashやGemini Sparkなど注目AI機能を徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/midjourney-commercial-use/",
-      "description": "みなさんは、ハイクオリティな画像を生成できる画像生成AI「Midjourney」を使っていますか？ Midjourneyは高品質な画像を手軽に生成できることから、すでに広告やSNS、Web制作など幅広いシーンで活用が進ん [...]...",
-      "publishedDate": "Mon, 18 May 2026 12:36:08 +0000",
+      "link": "https://weel.co.jp/media/innovator/google-i-o/",
+      "description": "Google I/Oは、毎年「未来のGoogle」をまとめて見せるイベントです。 ただ、2026年のGoogle I/Oは少し空気が違いました。これまでのGoogle I/Oでは、「こんなAI研究をしています」「こんなモ [...]...",
+      "publishedDate": "Thu, 21 May 2026 02:34:49 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/midjourney-commercial-use_2605-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/google-i-o_2605-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "GraphCastとは？使い方・論文・ECMWFとの関係まで、技術者が知りたい疑問を一気に解決",
+      "title": "【Google Pics】Canvaキラー？Google Workspaceに搭載されたAI画像生成・編集ツールの全貌を徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/graphcast/",
-      "description": "「AIが気象予測を変える」と聞いても、どこか遠い話に感じていた方も多いかもしれません。ところが2023年以降、その変化は一気に現実のものになりつつあります。Google DeepMindが開発した「GraphCast」は [...]...",
-      "publishedDate": "Mon, 18 May 2026 11:28:16 +0000",
+      "link": "https://weel.co.jp/media/tech/google-pics/",
+      "description": "Googleは、2026年5月20日のGoogle I/O 2026で、AI画像生成・編集ツール「Google Pics」を発表しました！ Google Picsは、Google Workspaceに組み込まれる新しいア [...]...",
+      "publishedDate": "Thu, 21 May 2026 01:49:36 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/graphcast_2605-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Google-Pics-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "SlackGPT連携で業務が変わる！ChatGPT app for Slackの導入手順と活用法を解説",
+      "title": "APIコール一発でGoogleがホストするLinux環境付きのAIエージェントを起動、Markdownでカスタム指示もできる「Managed Agent API」発表",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/slack-chatgpt-alignment",
-      "description": "毎日使っているSlackに、最近話題のChatGPTを連携させると、仕事がぐっと楽になるのをご存知でしょうか。 「長いスレッドを追いかけるのがしんどい」「取引先へのメール作成で手が止まってしまう」「ちょっとしたエラーの原 [...]...",
-      "publishedDate": "Mon, 18 May 2026 08:39:53 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/apigooglelinuxaimarkdownmanaged_agent_api.html",
+      "description": "Googleは日本時間5月20日未明に開幕したイベント「Google I/O 2026」で、簡単に実行環境付きのカスタムAIエージェントを起動できるGemini API「Managed Agent API」の提供を発表しました。 intro......",
+      "publishedDate": "2026-05-20T15:21:12Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/slack-chatgpt-alignment_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "ゲームAIとは？ゲーム体験を形作る技術の種類・作り方・注目事例を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/game-ai/",
-      "description": "ゲームの世界において、AI技術の活用が驚異的なスピードで進化しています。1970年代後半から1980年代にかけて誕生した初期のゲームAIは、現在ではプロプレイヤーに勝利するだけでなく、自然な会話やリアルタイムの3D世界生 [...]...",
-      "publishedDate": "Mon, 18 May 2026 05:52:11 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/game-ai_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Llamaindexを使った開発とは？RAG構築の流れや事例、費用相場を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/llamaindex-dev",
-      "description": "みなさん、膨大な社内文書について「ChatGPTに質問できたらいいのに……」と思ったことはありませんか？ そこで朗報です。月間1,000万ダウンロードを超えるオープンソースフレームワーク・Llamaindexを使えば、C [...]...",
-      "publishedDate": "Mon, 18 May 2026 04:17:16 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/llamaindex-dev_2605-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/geminiapi-managedagent-ann.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/HHFIWotWQAA6Y_L.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "NutanixとAWSが語る。既存システムを圧倒的なスピードと低コストでAWSに移行する方法［PR］",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/nutanixawsawspr.html",
-      "description": "ここ最近、オンプレミスにおけるシステム調達の不確実性が高くなっていることは多くのIT関係者が感じていることでしょう。 理由の1つには昨年末からのメモリやSSDの価格高騰および品不足があります。予算面でも納期面でも計画的な調達が明らかに難しく......",
-      "publishedDate": "2026-05-10T15:44:18Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/nutanix-aws-tu202603-02d.png",
       "language": "ja"
     }
   ]
