@@ -318,17 +318,26 @@ export function extractSBeams(tcItems, viewport) {
 
 export function extractColumnsFromOcr(words) {
   const pageMats = detectMaterials(words);
-  // Tesseract.js best model often returns column labels with surrounding
-  // punctuation ("・SC1", "(SC5)", "SC5,"). We extract the anchor as a
-  // substring rather than requiring whole-word match.
-  const colRe = /(SC|CC|CFT)(\d+)([A-Z]?)/i;
+  // Anchor patterns we accept:
+  //   SC1, SC101    (Steel Column)
+  //   CC1           (Composite Column)
+  //   CFT1          (CFT column)
+  //   C101, C1      (plain Column — common in grid-based naming)
+  // The plain "C" branch is the one used by many drawings, so we must
+  // accept it — but only when followed by digits and bounded by a non-
+  // alphanumeric character on both sides so we don't match things like
+  // "BCR295" or "STC123".
+  const colRe = /(SC|CC|CFT|C)(\d+)([A-Z]?)/i;
   const rawAnchors = [];
   for (const w of words) {
     const m = w.str.match(colRe);
     if (!m) continue;
     const idx = m.index;
     const before = idx > 0 ? w.str[idx - 1] : '';
+    const afterIdx = idx + m[0].length;
+    const after = afterIdx < w.str.length ? w.str[afterIdx] : '';
     if (/[A-Za-z0-9]/.test(before)) continue;
+    if (/[A-Za-z0-9]/.test(after)) continue;
     rawAnchors.push({
       str: m[0].toUpperCase(),
       x: w.x,
@@ -580,7 +589,9 @@ export function extractSmallBeamsFromOcr(words) {
 // any word containing the anchor pattern as a substring — not just whole
 // matches — to avoid undercounting.
 export function detectOcrCategory(words) {
-  const sc = words.filter(w => /(?:^|[^A-Za-z])(SC|CC|CFT)\d+[A-Z]?(?:$|[^A-Za-z0-9])/i.test(w.str + ' ')).length;
+  // Accept plain "C\d+" alongside SC/CC/CFT so column lists that use
+  // grid-style naming (C101, C102, ...) get classified correctly.
+  const sc = words.filter(w => /(?:^|[^A-Za-z])(SC|CC|CFT|C)\d+[A-Z]?(?:$|[^A-Za-z0-9])/i.test(w.str + ' ')).length;
   const sb = words.filter(w => /(?:^|[^A-Za-z])(CSB|SB)\d+[A-Za-z]?(?:$|[^A-Za-z0-9])/i.test(w.str + ' ')).length;
   let category = 'unknown';
   if (sb >= 3 && sb >= sc) category = 'small-beam';
