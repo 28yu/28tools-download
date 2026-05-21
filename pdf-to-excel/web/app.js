@@ -16,6 +16,7 @@ import {
   extractSBeams,
   extractColumnsFromOcr,
   extractSmallBeamsFromOcr,
+  extractLargeBeamsFromOcr,
 } from './lib/extractors.js';
 import { parseSection, parseColumnSection } from './lib/parsers.js';
 
@@ -80,7 +81,7 @@ async function sha256(buffer) {
 // Cache: same PDF re-uploaded? Return cached result so the user gets
 // an instant load on iteration. Uses the Cache API (lighter than IDB).
 // Bump suffix when extraction logic changes so old caches invalidate.
-const CACHE_NAME = 'pdf-extract-v14';
+const CACHE_NAME = 'pdf-extract-v15';
 async function loadCache(key) {
   try {
     const c = await caches.open(CACHE_NAME);
@@ -200,7 +201,7 @@ async function processPdf(file) {
           setProgress(10 + ((p - 1) + (frac || 0)) / pdf.numPages * 80);
         });
         const { category, counts } = detectOcrCategory(words);
-        log(`  OCR: ${words.length}語 (SC=${counts.sc}, SB=${counts.sb}) → ${category}`);
+        log(`  OCR: ${words.length}語 (SC=${counts.sc}, SB=${counts.sb}, G=${counts.lg ?? 0}) → ${category}`);
 
         // Per-page material detection from OCR output too. Image-only
         // specification pages (e.g. "鋼材は、SN490Bとする。") yield no
@@ -220,17 +221,26 @@ async function processPdf(file) {
           const sbs = extractSmallBeamsFromOcr(words);
           result.smallBeams.push(...sbs);
           log(`  小梁 ${sbs.length} 件抽出`);
+        } else if (category === 'large-beam') {
+          const lgs = extractLargeBeamsFromOcr(words);
+          result.sBeams.push(...lgs);
+          log(`  大梁 ${lgs.length} 件抽出`);
         } else {
+          // Unknown — try all three and adopt the largest set.
           const cols = extractColumnsFromOcr(words);
-          const sbs = extractSmallBeamsFromOcr(words);
-          if (sbs.length > cols.length) {
+          const sbs  = extractSmallBeamsFromOcr(words);
+          const lgs  = extractLargeBeamsFromOcr(words);
+          const max = Math.max(cols.length, sbs.length, lgs.length);
+          if (max === 0) { log(`  ⚠ OCR でも抽出できず`); }
+          else if (sbs.length === max) {
             result.smallBeams.push(...sbs);
             log(`  → 小梁として ${sbs.length} 件採用 (両側試行)`);
-          } else if (cols.length > 0) {
+          } else if (lgs.length === max) {
+            result.sBeams.push(...lgs);
+            log(`  → 大梁として ${lgs.length} 件採用 (両側試行)`);
+          } else {
             result.columns.push(...cols);
             log(`  → 柱として ${cols.length} 件採用 (両側試行)`);
-          } else {
-            log(`  ⚠ OCR でも抽出できず`);
           }
         }
       } else if (!extracted) {
