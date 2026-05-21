@@ -293,13 +293,15 @@ function buildSmallBeamRow(beam) {
   const r = beam.原文 || {};
   const sec = parseSection(r.断面型);
   const sym = String(beam.符号).toLowerCase();
+  const origText = r.断面型 ?? '';
   return {
     TypeName: sym, 符号: sym, 構造: 'S',
     断面形式: sec?.kind ?? null,
     成H: sec?.H ?? null, 幅B: sec?.B ?? null,
     ウェブtw: sec?.tw ?? null, フランジtf: sec?.tf ?? null,
     構造マテリアル: r.構造マテリアル ?? r.鋼材グレード ?? '',
-    原文: r.断面型 ?? '', 備考: 'OCR抽出',
+    原文: origText + (sec?._推定 ? ' (JIS推定で補完)' : ''),
+    備考: 'OCR抽出' + (sec?._推定 ? ' / JIS推定' : ''),
   };
 }
 
