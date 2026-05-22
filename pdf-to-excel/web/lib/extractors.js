@@ -355,11 +355,10 @@ export function extractColumnsFromOcr(words) {
   //   CC1           (Composite Column)
   //   CFT1          (CFT column)
   //   C101, C1      (plain Column — common in grid-based naming)
-  // The plain "C" branch is the one used by many drawings, so we must
-  // accept it — but only when followed by digits and bounded by a non-
-  // alphanumeric character on both sides so we don't match things like
-  // "BCR295" or "STC123".
-  const colRe = /(SC|CC|CFT|C)(\d+)([A-Z]?)/i;
+  //   KC1, KC1B     (building-prefixed: K = 管理棟, R = research wing, etc.)
+  // Only K and R are accepted as prefix letters because other initials
+  // (B/S/T/...) collide with grade names (BCR295, STKR400, SS400).
+  const colRe = /([KR]?)(SC|CC|CFT|C)(\d+)([A-Z]?)/i;
   const rawAnchors = [];
   for (const w of words) {
     const m = w.str.match(colRe);
@@ -399,8 +398,8 @@ export function extractColumnsFromOcr(words) {
 
   // Helper to count how much section-like content sits below a position
   // within a generous x band (we don't know the real card width yet).
-  const sectionStartRe = /[-=]?\d{2,4}[xX×]+\d{2,4}(?:[xX×]+\d{1,3})?/i;
-  const sectionShRe    = /(?:SH|BH|H)[-=]?\d{2,4}(?:[xX×]+\d+(?:\.\d+)?){0,3}/i;
+  const sectionStartRe = /[-=]?\d{2,4}[xX×*·・]+\d{2,4}(?:[xX×*·・]+\d{1,3})?/i;
+  const sectionShRe    = /(?:SH|BH|H)[-=]?\d{2,4}(?:[xX×*·・]+\d+(?:\.\d+)?){0,3}/i;
   const scoreBelow = (pos, xHalf) =>
     words.filter(w =>
       w.y > pos.y + 5 &&
@@ -539,21 +538,69 @@ export function extractSmallBeamsFromOcr(words) {
   //   - Prefix BH / SH / H / I / L / C (case-insensitive)
   //   - Hyphen optional
   //   - First dim (3-4 digits)
-  //   - 1-3 more dims, each separated by ONE OR MORE × markers
-  //     (handles OCR duplicates like "300x150xX6.5x9" or "346xX174xX6x9")
+  //   - 1-3 more dims, separated by × / x / * / · / ・ markers
+  //     (handles OCR duplicates like "300x150xX6.5x9" or "346xX174xX6x9"
+  //     and middle-dot or asterisk that Tesseract sometimes substitutes
+  //     for ×)
   //   - Each dim can be integer or decimal (4.5, 6.5, 11.0)
   //   - No ^ anchor — match can appear inside a longer word
-  const secRe = /(?:BH|SH|H|I|L|C)-?\d{2,4}(?:[xX×]+\d+(?:\.\d+)?){1,3}/i;
+  const secRe = /(?:BH|SH|H|I|L|C)-?\d{2,4}(?:[xX×*·・]+\d+(?:\.\d+)?){1,3}/i;
   const matRe = /^(SS|SN|SM)\d{3,4}[ABC]?$/;
   const mats = words.filter(w => matRe.test(w.str));
 
   const TOL_Y = 20;
 
+  // Row-token reconstruct: when OCR drops the × markers entirely and
+  // returns the section as space-separated tokens like
+  // ["H", "446", "199", "8", "12"] or ["H-446", "199", "8", "12"],
+  // assemble a canonical section string from the H-prefix word plus the
+  // numeric tokens that immediately follow it. Stops at the first
+  // non-numeric, non-separator token (e.g. the material grade "SS400")
+  // so we don't slurp in the bolt-count columns that come after.
+  function reconstructFromRow(rowTokens) {
+    let prefix = null;
+    let firstDim = null;
+    let startIdx = -1;
+    for (let i = 0; i < rowTokens.length; i++) {
+      const t = rowTokens[i].str;
+      let m = t.match(/^(BH|SH|H)[-=]?(\d{2,4})$/i);
+      if (m) {
+        prefix = m[1].toUpperCase();
+        firstDim = parseInt(m[2]);
+        startIdx = i + 1;
+        break;
+      }
+      m = t.match(/^(BH|SH|H)[-=]?$/i);
+      if (m) {
+        prefix = m[1].toUpperCase();
+        startIdx = i + 1;
+        break;
+      }
+    }
+    if (!prefix) return null;
+
+    const dims = firstDim != null ? [firstDim] : [];
+    for (let i = startIdx; i < rowTokens.length && dims.length < 4; i++) {
+      const t = rowTokens[i].str;
+      const numM = t.match(/^[xX×*·・]*(\d+(?:\.\d+)?)$/);
+      if (numM) {
+        dims.push(parseFloat(numM[1]));
+        continue;
+      }
+      if (/^[xX×*·・]+$/.test(t)) continue;
+      break; // non-numeric token (e.g. "SS400", "M16") — section ends
+    }
+    if (dims.length === 0) return null;
+    return `${prefix}-${dims.join('×')}`;
+  }
+
   // For each anchor, find its section by scanning all words on the same y
   // row to its right. Try matching each word individually first (catches
   // the common case where Tesseract gives us "H-198x99x4.5x7" as one
   // word), then try joining consecutive words (catches the case where
-  // best-model output splits a section across multiple words).
+  // best-model output splits a section across multiple words), and
+  // finally try the row-token reconstruct (covers the case where OCR
+  // dropped the × markers entirely).
   function sectionForAnchor(anchor) {
     const sameRow = words.filter(w =>
       Math.abs(w.y - anchor.y) <= TOL_Y && w.x > anchor.x
@@ -572,7 +619,8 @@ export function extractSmallBeamsFromOcr(words) {
         if (m) return m[0];
       }
     }
-    return null;
+    // Row-token reconstruct (× markers lost)
+    return reconstructFromRow(sameRow);
   }
 
   function findOnRow(list, anchor) {
@@ -616,10 +664,14 @@ export function extractLargeBeamsFromOcr(words) {
   console.log('[extractLargeBeamsFromOcr] OCR sample (first 30):',
     words.slice(0, 30).map(w => `"${w.str}"`).join(' '));
 
-  // Anchor patterns: SG / CSG / FG / BG / G with digit suffix.
+  // Anchor patterns: SG / CSG / CG / FG / BG / G with digit suffix.
   // Bare G is allowed but guarded by word boundaries (don't grab "G" out
   // of grade names like "BCR295G" etc.).
-  const anchorRe = /(CSG|SG|FG|BG|G)(\d+)([A-Za-z]?)/i;
+  // Optional K/R prefix accepts building-prefixed anchors like
+  // KG1 (管理棟・大梁), KCG1 (管理棟・片持ち大梁), KSG11, etc.
+  // CG must precede G in the alternation so "KCG1" matches as "KCG" + "1",
+  // not "K" + "C" + "G" + "1" (the latter fails because C isn't a valid type).
+  const anchorRe = /([KR]?)(CSG|SG|FG|BG|CG|G)(\d+)([A-Za-z]?)/i;
   const rawAnchors = [];
   for (const w of words) {
     const m = w.str.match(anchorRe);
@@ -649,8 +701,9 @@ export function extractLargeBeamsFromOcr(words) {
   }
 
   // Section pattern — same as small-beam (BH / SH / H- prefix with 1-3
-  // × dimensions, including duplicates/decimal).
-  const secRe = /(?:BH|SH|H)[-=]?\d{2,4}(?:[xX×]+\d+(?:\.\d+)?){1,3}/i;
+  // × dimensions, including duplicates/decimal and OCR-substituted
+  // separators like * · ・).
+  const secRe = /(?:BH|SH|H)[-=]?\d{2,4}(?:[xX×*·・]+\d+(?:\.\d+)?){1,3}/i;
   const scoreBelow = (pos, xHalf) =>
     words.filter(w =>
       w.y > pos.y + 5 &&
@@ -735,9 +788,10 @@ export function detectOcrCategory(words) {
   //   SC|CC|CFT|C  : columns (柱)
   //   SB|CSB       : small beams (小梁)
   //   SG|CSG|FG|BG|G : large beams (大梁)
-  const sc = words.filter(w => /(?:^|[^A-Za-z])(SC|CC|CFT|C)\d+[A-Z]?(?:$|[^A-Za-z0-9])/i.test(w.str + ' ')).length;
-  const sb = words.filter(w => /(?:^|[^A-Za-z])(CSB|SB)\d+[A-Za-z]?(?:$|[^A-Za-z0-9])/i.test(w.str + ' ')).length;
-  const lg = words.filter(w => /(?:^|[^A-Za-z])(CSG|SG|FG|BG|G)\d+[A-Za-z]?(?:$|[^A-Za-z0-9])/i.test(w.str + ' ')).length;
+  // [KR]? matches optional building prefix (KC1, KG1, KSG1 …).
+  const sc = words.filter(w => /(?:^|[^A-Za-z])[KR]?(SC|CC|CFT|C)\d+[A-Z]?(?:$|[^A-Za-z0-9])/i.test(w.str + ' ')).length;
+  const sb = words.filter(w => /(?:^|[^A-Za-z])[KR]?(CSB|SB)\d+[A-Za-z]?(?:$|[^A-Za-z0-9])/i.test(w.str + ' ')).length;
+  const lg = words.filter(w => /(?:^|[^A-Za-z])[KR]?(CSG|SG|FG|BG|CG|G)\d+[A-Za-z]?(?:$|[^A-Za-z0-9])/i.test(w.str + ' ')).length;
   let category = 'unknown';
   const max = Math.max(sb, lg, sc);
   if (max < 3) return { category, counts: { sc, sb, lg, total: words.length } };
