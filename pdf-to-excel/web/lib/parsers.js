@@ -57,13 +57,16 @@ export function expandCompound(symbol) {
   });
 }
 
-// Normalize OCR noise where the × separator is doubled or mixed-case,
-// e.g. "H-300x150xX6.5x9" / "H-346xX174xX6x9" / "H-248X124x5x8".
+// Normalize OCR noise where the × separator is doubled, mixed-case, or
+// substituted by a similar glyph. Tesseract often returns "×" as "*",
+// middle-dot "·", or Japanese middle-dot "・" when font hinting is poor.
+// Examples: "H-300x150xX6.5x9", "H-346xX174xX6x9", "H-248X124x5x8",
+//           "H-446*199*8*12", "H-446・199・8・12".
 // Also accept "=" or "|" in place of "-" (common OCR confusion).
 const normalizeSepX = s =>
   String(s)
     .replace(/^([A-Za-z])\s*[=|]\s*/, '$1-')  // "SH=" / "SH |" → "SH-"
-    .replace(/[xX×]+/g, 'x');
+    .replace(/[xX×*·・]+/g, 'x');
 
 // JIS G 3192 standard rolled H-section catalog. The OCR commonly
 // truncates section strings to "H-200×1" or drops decimal points
