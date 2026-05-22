@@ -31,9 +31,11 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/manual.css">
+    <link rel="stylesheet" href="../css/features.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body class="manual-page">
     <!-- 共通ヘッダー -->
@@ -63,128 +65,10 @@
         </div>
 
         <!-- 機能概要 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
-            <div class="content-box">
-                <p data-lang-key="manual-viewport-pos-overview">
-                    シート上のビューポート位置をコピーして、他のシートの同名ビューポートに自動的に貼り付ける機能です。複数のシートで同じビュー（例: 各階の平面図）を同じ位置に揃えたいときに便利です。
-                </p>
-                <ul style="margin-top: 12px;">
-                    <li data-lang-key="manual-viewport-pos-feature1">シート上のビューポートの位置を記録し、<strong>ビュー名が一致するビューポート</strong>を他のシートで同じ位置に配置します</li>
-                    <li data-lang-key="manual-viewport-pos-feature2">複数のシートに続けてペーストするだけで、全シートのビューポート位置を一括で揃えられます</li>
-                </ul>
-            </div>
-        </section>
 
-        <!-- 使用シーン -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-usecases">使用シーン</h2>
-            <table class="info-table">
-                <thead>
-                    <tr>
-                        <th data-lang-key="manual-viewport-pos-col-scene">シーン</th>
-                        <th data-lang-key="manual-viewport-pos-col-operation">操作</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-lang-key="manual-viewport-pos-scene1">各階の平面図を同じ位置に揃えたい</td>
-                        <td data-lang-key="manual-viewport-pos-scene1-op">1F平面図のVP位置をコピーし、2F・3F…のシートに順番にペースト</td>
-                    </tr>
-                    <tr>
-                        <td data-lang-key="manual-viewport-pos-scene2">改訂でシートを作り直した</td>
-                        <td data-lang-key="manual-viewport-pos-scene2-op">元シートからVP位置をコピーして新シートに貼り付け</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <!-- マニュアル本文（Markdown 動的読み込み） -->
+        <article id="md-content" class="md-content">読み込み中...</article>
 
-        <!-- 使い方 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
-
-            <div class="step-box">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-viewport-pos-step1-title">ビューポート位置をコピー</h3>
-                    <ol>
-                        <li data-lang-key="manual-viewport-pos-step1-sub1">基準となるビューポートが配置された<strong>シートを開く</strong></li>
-                        <li data-lang-key="manual-viewport-pos-step1-sub2">リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>VP位置コピー</strong>」をクリック</li>
-                        <li data-lang-key="manual-viewport-pos-step1-sub3">シート上の<strong>基準ビューポートをクリック</strong>して選択</li>
-                    </ol>
-                    <p style="margin-top: 8px;" data-lang-key="manual-viewport-pos-step1-desc">ビューポートの位置情報（ビュー名と座標）がメモリに保存されます。</p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-viewport-pos-step2-title">ビューポート位置をペースト</h3>
-                    <ol>
-                        <li data-lang-key="manual-viewport-pos-step2-sub1">位置を合わせたい<strong>別のシートを開く</strong></li>
-                        <li data-lang-key="manual-viewport-pos-step2-sub2">リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>VP位置ペースト</strong>」をクリック</li>
-                    </ol>
-                    <p style="margin-top: 8px;" data-lang-key="manual-viewport-pos-step2-desc">コピーしたビューポートと<strong>ビュー名が一致するビューポート</strong>が自動的に同じ位置に移動します。</p>
-                    <p style="margin-top: 8px;" data-lang-key="manual-viewport-pos-step2-tip">💡 ペーストは何度でも繰り返せます。シートを切り替えながらペーストするだけで、全シートを揃えられます。</p>
-                </div>
-            </div>
-
-            <!-- スクリーンショット用プレースホルダー -->
-            <div class="image-placeholder">
-                <p data-lang-key="image-placeholder-text">📷 スクリーンショット画像をここに追加予定</p>
-            </div>
-        </section>
-
-        <!-- 注意事項 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-notes">注意事項</h2>
-            <div class="notes-box warning">
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-viewport-pos-note1">ビューポートの<strong>サイズ・スケールは変更されません</strong>。位置のみコピーされます</p>
-                </div>
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-viewport-pos-note2">ビュー名が<strong>完全一致</strong>するビューポートのみが移動対象です</p>
-                </div>
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-viewport-pos-note3">コピーした情報は<strong>Revitを閉じると消えます</strong>（セッション内のみ有効）</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- トラブルシューティング -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-troubleshooting">トラブルシューティング</h2>
-            <div class="notes-box warning">
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <div>
-                        <strong data-lang-key="manual-viewport-pos-trouble1-title">ペーストしてもビューポートが動かない</strong>
-                        <ul style="margin-top: 4px;">
-                            <li data-lang-key="manual-viewport-pos-trouble1-item1">コピー時に選択したビューポートの<strong>ビュー名</strong>と、ペースト先シートのビューポートのビュー名が一致しているか確認してください</li>
-                            <li data-lang-key="manual-viewport-pos-trouble1-item2">「<strong>VP位置コピー</strong>」を先に実行しているか確認してください</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 関連機能 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-related">関連機能</h2>
-            <div class="content-box">
-                <ul>
-                    <li><a href="view-copy.html" data-lang-key="manual-viewport-pos-related1">3Dビュー視点 コピー＆ペースト</a> — <span data-lang-key="manual-viewport-pos-related1-desc">3Dビューのカメラ位置・向きをコピー</span></li>
-                    <li><a href="sectionbox-copy.html" data-lang-key="manual-viewport-pos-related2">切断ボックス コピー＆ペースト</a> — <span data-lang-key="manual-viewport-pos-related2-desc">3Dビューのセクションボックス範囲をコピー</span></li>
-                    <li><a href="cropbox-copy.html" data-lang-key="manual-viewport-pos-related3">トリミング領域 コピー＆ペースト</a> — <span data-lang-key="manual-viewport-pos-related3-desc">ビューのトリミング領域をコピー</span></li>
-                    <li><a href="sheet-creation.html" data-lang-key="manual-viewport-pos-related4">シート一括作成</a> — <span data-lang-key="manual-viewport-pos-related4-desc">複数シートをまとめて作成</span></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- ナビゲーション -->
         <div class="manual-navigation">
             <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
                 ← ホームに戻る
@@ -235,5 +119,25 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script>
+    (function() {
+        var FEATURE_ID = 'ViewportPosition';
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
+        var el = document.getElementById('md-content');
+
+        fetch(MD_URL)
+            .then(function(r) {
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.text();
+            })
+            .then(function(md) {
+                el.innerHTML = marked.parse(md);
+            })
+            .catch(function(e) {
+                el.innerHTML = '<p style="color:#c0392b">マニュアルの読み込みに失敗しました。<br>URL: ' + MD_URL + '</p>';
+                console.error(e);
+            });
+    })();
+    </script>
 </body>
 </html>

@@ -31,9 +31,11 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/manual.css">
+    <link rel="stylesheet" href="../css/features.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body class="manual-page">
     <!-- 共通ヘッダー -->
@@ -63,449 +65,10 @@
         </div>
 
         <!-- 機能概要 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
-            <div class="content-box">
-                <p data-lang-key="manual-fire-protection-overview">
-                    平面・天伏・構造伏・断面ビューに配置されている梁・柱の耐火被覆範囲を、種類別に色分けされた塗潰し領域として自動作成する機能です。凡例（製図ビュー）も自動作成され、シート上で実行した場合はシート右上に自動配置されます。1枚のシート内の複数ビューも一括処理できます。
-                </p>
-            </div>
-        </section>
 
-        <!-- 主な特徴 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-key-features">主な特徴</h2>
-            <div class="content-box">
-                <ul class="feature-list">
-                    <li data-lang-key="manual-fire-protection-feature1">平面・天伏・構造伏ビューで梁＋柱を色分け</li>
-                    <li data-lang-key="manual-fire-protection-feature2">断面図では梁のみ色分け対応</li>
-                    <li data-lang-key="manual-fire-protection-feature3">シート上で実行すれば複数ビューを一括処理</li>
-                    <li data-lang-key="manual-fire-protection-feature4">パラメータ名に「耐火被覆」を含むものを自動検出</li>
-                    <li data-lang-key="manual-fire-protection-feature5">塗潰し領域のオフセットを共通／種類別に指定可能</li>
-                    <li data-lang-key="manual-fire-protection-feature6">柱は外寸・被覆厚を指定して枠型形状で生成</li>
-                    <li data-lang-key="manual-fire-protection-feature7">凡例（製図ビュー）を自動生成しシート右上に自動配置</li>
-                    <li data-lang-key="manual-fire-protection-feature8">既存の塗潰し領域・凡例を上書き再生成するモードあり</li>
-                </ul>
-            </div>
-        </section>
+        <!-- マニュアル本文（Markdown 動的読み込み） -->
+        <article id="md-content" class="md-content">読み込み中...</article>
 
-        <!-- 実行できるビュー -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-supported-views">実行できるビュー</h2>
-            <div class="content-box">
-                <table class="info-table">
-                    <thead>
-                        <tr>
-                            <th data-lang-key="table-col-view-type">ビュー種別</th>
-                            <th data-lang-key="table-col-supported">対応</th>
-                            <th data-lang-key="table-col-behavior">動作</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong data-lang-key="manual-fire-protection-view-row1-type">平面ビュー</strong></td>
-                            <td class="status">◯</td>
-                            <td data-lang-key="manual-fire-protection-view-row1-behavior">梁＋柱を色分け</td>
-                        </tr>
-                        <tr>
-                            <td><strong data-lang-key="manual-fire-protection-view-row2-type">天井伏図</strong></td>
-                            <td class="status">◯</td>
-                            <td data-lang-key="manual-fire-protection-view-row2-behavior">梁＋柱を色分け</td>
-                        </tr>
-                        <tr>
-                            <td><strong data-lang-key="manual-fire-protection-view-row3-type">構造伏図</strong></td>
-                            <td class="status">◯</td>
-                            <td data-lang-key="manual-fire-protection-view-row3-behavior">梁＋柱を色分け</td>
-                        </tr>
-                        <tr>
-                            <td><strong data-lang-key="manual-fire-protection-view-row4-type">断面図</strong></td>
-                            <td class="status">◯</td>
-                            <td data-lang-key="manual-fire-protection-view-row4-behavior">梁のみ色分け</td>
-                        </tr>
-                        <tr>
-                            <td><strong data-lang-key="manual-fire-protection-view-row5-type">シート</strong></td>
-                            <td class="status">◯</td>
-                            <td data-lang-key="manual-fire-protection-view-row5-behavior">配置されている上記ビューを一括処理＋凡例自動配置</td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-fire-protection-view-row6-type">その他（3D・立面など）</td>
-                            <td class="status">×</td>
-                            <td data-lang-key="manual-fire-protection-view-row6-behavior">実行不可</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p style="margin-top: 16px;" data-lang-key="manual-fire-protection-views-hint">
-                    💡 <strong>おすすめは「シート上で実行」</strong> — 複数ビューを一度に処理し、凡例も自動でレイアウトされます。
-                </p>
-            </div>
-        </section>
-
-        <!-- 実行前の準備 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-preparation">実行前の準備</h2>
-            <div class="content-box">
-                <ol class="prep-list">
-                    <li>
-                        <h4 data-lang-key="manual-fire-protection-prep1-title">耐火被覆のパラメータを設定する</h4>
-                        <p data-lang-key="manual-fire-protection-prep1-desc">
-                            梁・柱のインスタンスまたはタイプに、耐火被覆の種類を識別するパラメータを設定しておきます。
-                        </p>
-                        <ul>
-                            <li>パラメータ名は <strong>「耐火被覆」を含む名前</strong>が自動検出されます（例：<code>耐火被覆</code>、<code>耐火被覆種類</code>、<code>耐火被覆仕様</code>、<code>耐火被覆_仕様</code> など）</li>
-                            <li>値は種類ごとに統一した文字列にしてください（例：<code>1時間耐火</code>、<code>2時間耐火</code>、<code>半湿式吹付</code>、<code>巻付け 厚45</code> など）</li>
-                            <li>同じ種類の梁・柱には <strong>同じ値</strong>を入力（値が同じものが同じ色になります）</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4 data-lang-key="manual-fire-protection-prep2-title">梁・柱ファミリを確認する</h4>
-                        <ul>
-                            <li>構造フレーム（梁）と構造柱のカテゴリの要素が対象です</li>
-                            <li>ビュー上で要素が表示されている必要があります（非表示・フィルタで隠れている要素は対象外）</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4 data-lang-key="manual-fire-protection-prep3-title">ビューテンプレートの確認</h4>
-                        <p data-lang-key="manual-fire-protection-prep3-desc">
-                            ビューテンプレートが設定されているビューでは塗潰し領域を配置できないため、コマンド実行時に「テンプレートを解除しますか？」という確認が表示されます。「はい」で解除して進めるか、事前に解除しておいてください。
-                        </p>
-                    </li>
-                </ol>
-            </div>
-        </section>
-
-        <!-- 使い方 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
-
-            <div class="step-box">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-fire-protection-step1-title">対象のビューまたはシートを開く</h3>
-                    <p data-lang-key="manual-fire-protection-step1-desc">
-                        平面・天伏・構造伏・断面、または対象ビューが配置されたシートをアクティブにします。シート上で実行すると複数ビューを一括処理できます。
-                    </p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-fire-protection-step2-title">ボタンをクリック</h3>
-                    <p data-lang-key="manual-fire-protection-step2-desc">
-                        リボン「28 Tools」タブ →「色分け」パネル →「耐火被覆色分け」をクリックします。
-                    </p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-fire-protection-step3-title">STEP 1/3：基本設定</h3>
-                    <p data-lang-key="manual-fire-protection-step3-desc">
-                        耐火被覆パラメータを選択し、検出された種類ごとに自動割り当てされた色を確認・変更します。塗潰し領域のオフセット（共通／種類別）も指定できます。
-                    </p>
-                    <table class="info-table" style="margin-top: 14px;">
-                        <thead>
-                            <tr>
-                                <th data-lang-key="table-col-item">項目</th>
-                                <th data-lang-key="table-col-content">内容</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong data-lang-key="manual-fire-protection-step3-row1-name">耐火被覆パラメータ</strong></td>
-                                <td data-lang-key="manual-fire-protection-step3-row1-desc">自動検出されたパラメータを選択（複数候補がある場合）</td>
-                            </tr>
-                            <tr>
-                                <td><strong data-lang-key="manual-fire-protection-step3-row2-name">検出された耐火被覆の種類</strong></td>
-                                <td data-lang-key="manual-fire-protection-step3-row2-desc">ビュー内で見つかった種類の一覧。色を自動割り当て（クリックで変更可能）</td>
-                            </tr>
-                            <tr>
-                                <td><strong data-lang-key="manual-fire-protection-step3-row3-name">塗潰し領域のオフセット設定</strong></td>
-                                <td data-lang-key="manual-fire-protection-step3-row3-desc">梁・柱の周囲に何mmはみ出して塗潰すかを指定</td>
-                            </tr>
-                            <tr>
-                                <td>　・<strong data-lang-key="manual-fire-protection-step3-row4-name">共通オフセット</strong></td>
-                                <td data-lang-key="manual-fire-protection-step3-row4-desc">全種類で同じ値</td>
-                            </tr>
-                            <tr>
-                                <td>　・<strong data-lang-key="manual-fire-protection-step3-row5-name">種類ごとに個別オフセット</strong></td>
-                                <td data-lang-key="manual-fire-protection-step3-row5-desc">種類別に個別の値を指定</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-fire-protection-step4-title">STEP 2/3：柱設定</h3>
-                    <p data-lang-key="manual-fire-protection-step4-desc">
-                        平面・天伏・構造伏では柱A（外寸）と柱B（被覆厚）を指定します。柱は内側に空洞のある枠型として塗潰し領域が作成されます（断面のみ実行時はスキップ）。
-                    </p>
-                    <table class="info-table" style="margin-top: 14px;">
-                        <thead>
-                            <tr>
-                                <th data-lang-key="table-col-item">項目</th>
-                                <th data-lang-key="table-col-content">内容</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong data-lang-key="manual-fire-protection-step4-row1-name">柱A（外寸）</strong></td>
-                                <td data-lang-key="manual-fire-protection-step4-row1-desc">柱の外周から被覆外面までの距離 mm</td>
-                            </tr>
-                            <tr>
-                                <td><strong data-lang-key="manual-fire-protection-step4-row2-name">柱B（被覆厚）</strong></td>
-                                <td data-lang-key="manual-fire-protection-step4-row2-desc">被覆の厚み mm</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">5</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-fire-protection-step5-title">STEP 3/3：表示・確認と実行</h3>
-                    <p data-lang-key="manual-fire-protection-step5-desc">
-                        線種・塗りパターン・凡例の文字タイプを設定し、処理概要を確認して「実行」をクリックします。塗潰し領域と凡例ビューが自動生成されます。
-                    </p>
-                    <table class="info-table" style="margin-top: 14px;">
-                        <thead>
-                            <tr>
-                                <th data-lang-key="table-col-item">項目</th>
-                                <th data-lang-key="table-col-content">内容</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong data-lang-key="manual-fire-protection-step5-row1-name">線種</strong></td>
-                                <td data-lang-key="manual-fire-protection-step5-row1-desc">塗潰し領域の境界線の種類</td>
-                            </tr>
-                            <tr>
-                                <td><strong data-lang-key="manual-fire-protection-step5-row2-name">塗りパターン</strong></td>
-                                <td data-lang-key="manual-fire-protection-step5-row2-desc">塗潰しパターン（通常は「Solid fill」または「中実」）</td>
-                            </tr>
-                            <tr>
-                                <td><strong data-lang-key="manual-fire-protection-step5-row3-name">文字タイプ</strong></td>
-                                <td data-lang-key="manual-fire-protection-step5-row3-desc">凡例に使用するテキストノートのタイプ</td>
-                            </tr>
-                            <tr>
-                                <td><strong data-lang-key="manual-fire-protection-step5-row4-name">既存の「耐火被覆_」塗潰領域・凡例を上書きする</strong></td>
-                                <td data-lang-key="manual-fire-protection-step5-row4-desc">再実行時にチェック推奨（既存を削除して再生成）</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- スクリーンショット用プレースホルダー -->
-            <div class="image-placeholder">
-                <p data-lang-key="image-placeholder-text">📷 スクリーンショット画像をここに追加予定</p>
-            </div>
-        </section>
-
-        <!-- 出力結果 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-output">出力結果</h2>
-            <div class="content-box">
-                <p data-lang-key="manual-fire-protection-output-intro" style="margin-bottom: 16px;">
-                    実行後、以下が自動作成されます。
-                </p>
-
-                <h3 style="margin-top: 8px; font-size: 1.05rem;" data-lang-key="manual-fire-protection-output1-title">1. 塗潰し領域（FilledRegion）</h3>
-                <p data-lang-key="manual-fire-protection-output1-desc">
-                    各ビューの梁・柱の周囲に、種類別の色で塗潰し領域が配置されます。
-                </p>
-                <ul>
-                    <li data-lang-key="manual-fire-protection-output1-item1">塗潰しタイプ名：<code>耐火被覆_{種類名}</code>（梁）／ <code>耐火被覆_柱_{種類名}</code>（柱）</li>
-                    <li data-lang-key="manual-fire-protection-output1-item2">種類が同じ要素は同じ色</li>
-                </ul>
-
-                <h3 style="margin-top: 20px; font-size: 1.05rem;" data-lang-key="manual-fire-protection-output2-title">2. 凡例（製図ビュー）</h3>
-                <p data-lang-key="manual-fire-protection-output2-desc">
-                    <code>耐火被覆色分け凡例</code> という名前の製図ビューが自動作成されます。
-                </p>
-                <ul>
-                    <li data-lang-key="manual-fire-protection-output2-item1">タイトル「◎耐火被覆仕様凡例」</li>
-                    <li data-lang-key="manual-fire-protection-output2-item2">各種類の色四角＋名称</li>
-                    <li data-lang-key="manual-fire-protection-output2-item3">柱の枠型サンプル</li>
-                    <li data-lang-key="manual-fire-protection-output2-item4">注記（耐火被覆不要範囲・半湿式吹付ロックウール工法の例外範囲など）</li>
-                </ul>
-
-                <h3 style="margin-top: 20px; font-size: 1.05rem;" data-lang-key="manual-fire-protection-output3-title">3. シート上での凡例自動配置</h3>
-                <p data-lang-key="manual-fire-protection-output3-desc">
-                    <strong>シートで実行した場合のみ</strong>、上記凡例がシートの<strong>右上角</strong>にビューポートとして自動配置されます。
-                </p>
-                <p style="margin-top: 8px;" data-lang-key="manual-fire-protection-output3-hint">
-                    💡 配置位置が気に入らない場合は、Revit上でビューポートを掴んで移動できます。
-                </p>
-            </div>
-        </section>
-
-        <!-- 再実行・上書きについて -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-rerun">再実行・上書きについて</h2>
-            <div class="content-box">
-                <p data-lang-key="manual-fire-protection-rerun-intro" style="margin-bottom: 12px;">
-                    設定を変更して再実行したい場合：
-                </p>
-                <ol style="padding-left: 22px; margin: 0;">
-                    <li data-lang-key="manual-fire-protection-rerun-step1">ダイアログのSTEP 3で<strong>「既存の『耐火被覆_』塗潰領域・凡例を上書きする」</strong>にチェック</li>
-                    <li data-lang-key="manual-fire-protection-rerun-step2">「実行」をクリック</li>
-                </ol>
-                <p style="margin-top: 12px;" data-lang-key="manual-fire-protection-rerun-result">
-                    → 既存の塗潰し領域・凡例ビューが削除され、新しい設定で再作成されます。
-                </p>
-            </div>
-        </section>
-
-        <!-- 活用シーン -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-usecases">活用シーン</h2>
-            <div class="usecase-grid">
-                <div class="usecase-card">
-                    <div class="usecase-icon">🔥</div>
-                    <h3 data-lang-key="manual-fire-protection-usecase1-title">耐火仕様の図面化</h3>
-                    <p data-lang-key="manual-fire-protection-usecase1-desc">
-                        梁・柱の耐火被覆仕様を種類別に色分けした図面を、設計図書・施工図として瞬時に作成できます。
-                    </p>
-                </div>
-                <div class="usecase-card">
-                    <div class="usecase-icon">📋</div>
-                    <h3 data-lang-key="manual-fire-protection-usecase2-title">仕様確認・設計レビュー</h3>
-                    <p data-lang-key="manual-fire-protection-usecase2-desc">
-                        耐火被覆の指定漏れや種類の誤りを視覚的に確認でき、設計レビュー時のチェック作業を効率化します。
-                    </p>
-                </div>
-                <div class="usecase-card">
-                    <div class="usecase-icon">📑</div>
-                    <h3 data-lang-key="manual-fire-protection-usecase3-title">シート出力の自動化</h3>
-                    <p data-lang-key="manual-fire-protection-usecase3-desc">
-                        シート上で実行するだけで複数ビューと凡例が一括レイアウトされ、提出図書の作成時間を大幅に短縮します。
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tips -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-tips">Tips</h2>
-            <div class="tips-box">
-                <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-fire-protection-tip1">
-                        <strong data-lang-key="manual-fire-protection-tip1-strong">シート上での実行が最も効率的：</strong>平面・断面など複数ビューを一括処理でき、凡例も自動でシート右上に配置されます。
-                    </p>
-                </div>
-                <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-fire-protection-tip2">
-                        <strong data-lang-key="manual-fire-protection-tip2-strong">再実行時は上書きON：</strong>STEP 3の「既存の『耐火被覆_』塗潰領域・凡例を上書きする」にチェックを入れると、設定変更してきれいに再生成できます。
-                    </p>
-                </div>
-                <div class="tip-item">
-                    <span class="tip-icon">💡</span>
-                    <p data-lang-key="manual-fire-protection-tip3">
-                        <strong data-lang-key="manual-fire-protection-tip3-strong">色は手動変更可能：</strong>自動割り当ては梁＝パステル系／柱＝ビビッド系で最大12種類保証。気に入らない色はダイアログで個別にクリックして変更できます。
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 注意事項 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-notes">注意事項</h2>
-            <div class="notes-box warning">
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-fire-protection-note1">
-                        梁・柱に「耐火被覆」を含む名前のパラメータ（インスタンスまたはタイプ）が必要です。値が空の要素は色分け対象外となります。
-                    </p>
-                </div>
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-fire-protection-note2">
-                        パラメータ値の表記ゆれ（全角／半角・空白の差・タイプミス）は別の種類として検出されるため、値の統一にご注意ください。
-                    </p>
-                </div>
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-fire-protection-note3">
-                        ビューテンプレートが設定されているビューでは、実行時にテンプレート解除の確認ダイアログが表示されます。
-                    </p>
-                </div>
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-fire-protection-note4">
-                        3Dビュー・立面ビューでは実行できません。平面・天伏・構造伏・断面、またはシート上でご利用ください。
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- トラブルシューティング -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-troubleshooting">トラブルシューティング</h2>
-            <div class="content-box">
-                <h3 style="font-size: 1.05rem; margin-top: 0;" data-lang-key="manual-fire-protection-trouble1-title">「ビュー内に梁または柱が見つかりません」と表示される</h3>
-                <ul>
-                    <li data-lang-key="manual-fire-protection-trouble1-item1">ビュー上で梁・柱が<strong>表示されている</strong>か確認してください（フィルタや非表示で隠れていませんか？）</li>
-                    <li data-lang-key="manual-fire-protection-trouble1-item2">構造フレーム（梁）／構造柱のカテゴリで配置されているか確認</li>
-                </ul>
-
-                <h3 style="font-size: 1.05rem; margin-top: 20px;" data-lang-key="manual-fire-protection-trouble2-title">「『耐火被覆』を含むパラメータが見つかりません」と表示される</h3>
-                <ul>
-                    <li data-lang-key="manual-fire-protection-trouble2-item1">梁・柱の<strong>インスタンスまたはタイプパラメータ</strong>に「耐火被覆」を含む名前のパラメータを追加してください</li>
-                    <li data-lang-key="manual-fire-protection-trouble2-item2">共有パラメータ・プロジェクトパラメータどちらでも可</li>
-                </ul>
-
-                <h3 style="font-size: 1.05rem; margin-top: 20px;" data-lang-key="manual-fire-protection-trouble3-title">検出された種類が想定と違う</h3>
-                <ul>
-                    <li data-lang-key="manual-fire-protection-trouble3-item1">パラメータの値に<strong>タイプミス・全角半角混在・空白の差</strong>がないか確認</li>
-                    <li data-lang-key="manual-fire-protection-trouble3-item2">パラメータ値が空の要素は色分け対象外</li>
-                </ul>
-
-                <h3 style="font-size: 1.05rem; margin-top: 20px;" data-lang-key="manual-fire-protection-trouble4-title">凡例がシートからはみ出す</h3>
-                <ul>
-                    <li data-lang-key="manual-fire-protection-trouble4-item1">種類数が多い場合や注記文字サイズが大きい場合、凡例サイズが推定より大きくなることがあります</li>
-                    <li data-lang-key="manual-fire-protection-trouble4-item2">Revit上で凡例ビューポートを手動で移動してください</li>
-                </ul>
-
-                <h3 style="font-size: 1.05rem; margin-top: 20px;" data-lang-key="manual-fire-protection-trouble5-title">同じ色が複数の種類に使われている</h3>
-                <ul>
-                    <li data-lang-key="manual-fire-protection-trouble5-item1">種類が13以上ある場合、色のバリエーションを増やすため明度違いの色になります</li>
-                    <li data-lang-key="manual-fire-protection-trouble5-item2">ダイアログ「検出された耐火被覆の種類」セクションで色四角をクリックして手動変更できます</li>
-                </ul>
-
-                <h3 style="font-size: 1.05rem; margin-top: 20px;" data-lang-key="manual-fire-protection-trouble6-title">ビューテンプレートがある</h3>
-                <ul>
-                    <li data-lang-key="manual-fire-protection-trouble6-item1">実行時に解除確認ダイアログが出ます。「はい」で一時的に解除します</li>
-                    <li data-lang-key="manual-fire-protection-trouble6-item2">元に戻したい場合は、実行後に手動でテンプレートを再設定してください</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- 関連機能 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-related">関連機能</h2>
-            <div class="content-box">
-                <ul>
-                    <li>
-                        <a href="beam-level-color.html" data-lang-key="manual-fire-protection-related-beam-level">梁レベル色分け</a>
-                        <span data-lang-key="manual-fire-protection-related-beam-level-desc"> — 梁天端（平面・構造伏図）または梁下端（天井伏図）をレベルで色分け</span>
-                    </li>
-                    <li>
-                        <a href="filled-region.html" data-lang-key="manual-fire-protection-related-filled-region">塗潰し領域 分割/統合</a>
-                        <span data-lang-key="manual-fire-protection-related-filled-region-desc"> — 塗潰し領域の分割・統合</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- ナビゲーション -->
         <div class="manual-navigation">
             <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
                 ← ホームに戻る
@@ -556,5 +119,25 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script>
+    (function() {
+        var FEATURE_ID = 'FireProtection';
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
+        var el = document.getElementById('md-content');
+
+        fetch(MD_URL)
+            .then(function(r) {
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.text();
+            })
+            .then(function(md) {
+                el.innerHTML = marked.parse(md);
+            })
+            .catch(function(e) {
+                el.innerHTML = '<p style="color:#c0392b">マニュアルの読み込みに失敗しました。<br>URL: ' + MD_URL + '</p>';
+                console.error(e);
+            });
+    })();
+    </script>
 </body>
 </html>

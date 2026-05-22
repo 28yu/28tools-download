@@ -31,9 +31,11 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/manual.css">
+    <link rel="stylesheet" href="../css/features.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body class="manual-page">
     <!-- 共通ヘッダー -->
@@ -63,164 +65,10 @@
         </div>
 
         <!-- 機能概要 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
-            <div class="content-box">
-                <p data-lang-key="manual-grid-bubble-overview">
-                    通り芯（グリッド）とレベルの符号（バブル）表示を、ワンクリックで切り替える機能です。<strong>事前に通り芯・レベルを選択していればその要素のみ</strong>、選択していなければ<strong>ビュー内の全要素</strong>が対象になります。
-                </p>
-                <p style="margin-top: 12px;" data-lang-key="manual-grid-bubble-mode-intro">3つのモードから選択できます：</p>
-                <table class="info-table" style="margin-top: 12px;">
-                    <thead>
-                        <tr>
-                            <th data-lang-key="table-col-item">ボタン</th>
-                            <th data-lang-key="table-col-behavior">動作</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-lang-key="manual-grid-bubble-btn-both-title"><strong>両端表示</strong></td>
-                            <td data-lang-key="manual-grid-bubble-btn-both-desc">通り芯・レベルの両端に符号を表示する</td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-grid-bubble-btn-left-title"><strong>左/上のみ</strong></td>
-                            <td data-lang-key="manual-grid-bubble-btn-left-desc">左端（縦通り芯）または上端（横通り芯・レベル）のみ符号を表示する</td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-grid-bubble-btn-right-title"><strong>右/下のみ</strong></td>
-                            <td data-lang-key="manual-grid-bubble-btn-right-desc">右端（縦通り芯）または下端（横通り芯・レベル）のみ符号を表示する</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
 
-        <!-- 実行できるビュー -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-supported-views">実行できるビュー</h2>
-            <table class="info-table">
-                <thead>
-                    <tr>
-                        <th data-lang-key="table-col-view-type">ビュー種別</th>
-                        <th data-lang-key="table-col-supported">対応</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-lang-key="manual-grid-bubble-view-floor">平面ビュー</td>
-                        <td>◯</td>
-                    </tr>
-                    <tr>
-                        <td data-lang-key="manual-grid-bubble-view-ceiling">天井伏図</td>
-                        <td>◯</td>
-                    </tr>
-                    <tr>
-                        <td data-lang-key="manual-grid-bubble-view-structural">構造伏図</td>
-                        <td>◯</td>
-                    </tr>
-                    <tr>
-                        <td data-lang-key="manual-grid-bubble-view-section">断面図</td>
-                        <td>◯</td>
-                    </tr>
-                    <tr>
-                        <td data-lang-key="manual-grid-bubble-view-elevation">立面図</td>
-                        <td>◯</td>
-                    </tr>
-                    <tr>
-                        <td data-lang-key="manual-grid-bubble-view-3d">3Dビュー</td>
-                        <td>×</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <!-- マニュアル本文（Markdown 動的読み込み） -->
+        <article id="md-content" class="md-content">読み込み中...</article>
 
-        <!-- 使い方 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
-
-            <div class="step-box">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-grid-bubble-step1-title">対象ビューを開く</h3>
-                    <p data-lang-key="manual-grid-bubble-step1-desc">符号表示を変更したいビューをアクティブにします。</p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-grid-bubble-step2-title">（任意）対象を選択する</h3>
-                    <p data-lang-key="manual-grid-bubble-step2-desc">特定の通り芯・レベルのみ切り替えたい場合は、ビュー上で<strong>対象の通り芯・レベルを選択</strong>しておきます。</p>
-                    <ul>
-                        <li data-lang-key="manual-grid-bubble-step2-item1">何も選択しない場合 → <strong>ビュー内のすべての通り芯・レベル</strong>が対象</li>
-                        <li data-lang-key="manual-grid-bubble-step2-item2">通り芯・レベルを選択した場合 → <strong>選択したものだけ</strong>が対象</li>
-                        <li data-lang-key="manual-grid-bubble-step2-item3">選択範囲に通り芯・レベル以外の要素（壁・梁等）が混ざっていても問題ありません。通り芯・レベルだけが処理対象になります</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-grid-bubble-step3-title">ボタンをクリック</h3>
-                    <p data-lang-key="manual-grid-bubble-step3-desc">リボン「<strong>28 Tools</strong>」タブ →「<strong>通り芯・レベル</strong>」パネルの3つのボタンから目的のものをクリックします。</p>
-                    <ul>
-                        <li data-lang-key="manual-grid-bubble-step3-item1"><strong>両端表示</strong> — 通り芯・レベルの両端すべてに符号を表示</li>
-                        <li data-lang-key="manual-grid-bubble-step3-item2"><strong>左/上のみ</strong> — 片側（左端・上端）のみ表示</li>
-                        <li data-lang-key="manual-grid-bubble-step3-item3"><strong>右/下のみ</strong> — 片側（右端・下端）のみ表示</li>
-                    </ul>
-                    <p style="margin-top: 8px;" data-lang-key="manual-grid-bubble-step3-note">ダイアログは表示されません。クリックすると即座に反映されます。</p>
-                </div>
-            </div>
-
-            <!-- スクリーンショット用プレースホルダー -->
-            <div class="image-placeholder">
-                <p data-lang-key="image-placeholder-text">📷 スクリーンショット画像をここに追加予定</p>
-            </div>
-        </section>
-
-        <!-- トラブルシューティング -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-troubleshooting">トラブルシューティング</h2>
-            <div class="notes-box warning">
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <div>
-                        <strong data-lang-key="manual-grid-bubble-trouble1-title">クリックしても変化がない</strong>
-                        <ul style="margin-top: 4px;">
-                            <li data-lang-key="manual-grid-bubble-trouble1-item1">ビュー内に通り芯・レベルが<strong>表示されているか</strong>確認してください（フィルタやビュー設定で非表示になっていませんか？）</li>
-                            <li data-lang-key="manual-grid-bubble-trouble1-item2">すでに指定したモードになっている場合、見た目は変わりません</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <div>
-                        <strong data-lang-key="manual-grid-bubble-trouble2-title">リンクモデルの通り芯・レベルが変わらない</strong>
-                        <p style="margin-top: 4px;" data-lang-key="manual-grid-bubble-trouble2-desc">リンクファイル内の通り芯・レベルは編集対象外です。ホストモデルの通り芯・レベルのみ変更されます</p>
-                    </div>
-                </div>
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <div>
-                        <strong data-lang-key="manual-grid-bubble-trouble3-title">一部の通り芯・レベルだけ変更したい</strong>
-                        <p style="margin-top: 4px;" data-lang-key="manual-grid-bubble-trouble3-desc">ボタンをクリックする<strong>前に対象の通り芯・レベルを選択</strong>してから実行してください。選択した要素のみが切り替わります</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 関連機能 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-related">関連機能</h2>
-            <div class="content-box">
-                <ul>
-                    <li><a href="viewport-position.html" data-lang-key="manual-grid-bubble-related-viewport">ビューポート位置 コピー＆ペースト — シート上のビューポート位置を他のシートに合わせる</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- ナビゲーション -->
         <div class="manual-navigation">
             <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
                 ← ホームに戻る
@@ -271,5 +119,25 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script>
+    (function() {
+        var FEATURE_ID = 'GridBubble';
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
+        var el = document.getElementById('md-content');
+
+        fetch(MD_URL)
+            .then(function(r) {
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.text();
+            })
+            .then(function(md) {
+                el.innerHTML = marked.parse(md);
+            })
+            .catch(function(e) {
+                el.innerHTML = '<p style="color:#c0392b">マニュアルの読み込みに失敗しました。<br>URL: ' + MD_URL + '</p>';
+                console.error(e);
+            });
+    })();
+    </script>
 </body>
 </html>

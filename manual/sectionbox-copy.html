@@ -31,9 +31,11 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/manual.css">
+    <link rel="stylesheet" href="../css/features.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body class="manual-page">
     <!-- 共通ヘッダー -->
@@ -63,113 +65,10 @@
         </div>
 
         <!-- 機能概要 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
-            <div class="content-box">
-                <p data-lang-key="manual-sectionbox-copy-overview">
-                    3Dビューのセクションボックス（切断ボックス）の範囲をコピーして、別の3Dビューに貼り付ける機能です。同じ切り取り範囲を複数の3Dビューで共有したい場合に便利です。
-                </p>
-                <ul style="margin-top: 12px;">
-                    <li data-lang-key="manual-sectionbox-copy-feature1">ある3Dビューの<strong>セクションボックスの範囲</strong>を記録し、別の3Dビューに適用します</li>
-                    <li data-lang-key="manual-sectionbox-copy-feature2">ペースト先でセクションボックスが無効になっている場合は、<strong>自動的に有効化</strong>してから範囲を適用します</li>
-                </ul>
-            </div>
-        </section>
 
-        <!-- 使い方 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
+        <!-- マニュアル本文（Markdown 動的読み込み） -->
+        <article id="md-content" class="md-content">読み込み中...</article>
 
-            <div class="step-box">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-sectionbox-copy-step1-title">切断ボックスをコピー</h3>
-                    <ol>
-                        <li data-lang-key="manual-sectionbox-copy-step1-item1">コピーしたいセクションボックスが設定された<strong>3Dビューをアクティブ</strong>にする</li>
-                        <li data-lang-key="manual-sectionbox-copy-step1-item2">リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>SBコピー</strong>」をクリック</li>
-                    </ol>
-                    <p style="margin-top: 8px;" data-lang-key="manual-sectionbox-copy-step1-note">セクションボックスの範囲情報がメモリに保存されます。</p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-sectionbox-copy-step2-title">切断ボックスをペースト</h3>
-                    <ol>
-                        <li data-lang-key="manual-sectionbox-copy-step2-item1">範囲を適用したい<strong>別の3Dビューをアクティブ</strong>にする</li>
-                        <li data-lang-key="manual-sectionbox-copy-step2-item2">リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>SBペースト</strong>」をクリック</li>
-                    </ol>
-                    <p style="margin-top: 8px;" data-lang-key="manual-sectionbox-copy-step2-note">コピーしたセクションボックスの範囲が適用されます。</p>
-                    <p style="margin-top: 8px;" data-lang-key="manual-sectionbox-copy-step2-tip">💡 セクションボックスが無効な3Dビューにペーストしても、自動的に有効化されます。</p>
-                </div>
-            </div>
-
-            <!-- スクリーンショット用プレースホルダー -->
-            <div class="image-placeholder">
-                <p data-lang-key="image-placeholder-text">📷 スクリーンショット画像をここに追加予定</p>
-            </div>
-        </section>
-
-        <!-- 注意事項 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-notes">注意事項</h2>
-            <div class="notes-box warning">
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-sectionbox-copy-note1">3Dビュー同士でのみ使用できます</p>
-                </div>
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-sectionbox-copy-note2">コピー元のビューで<strong>セクションボックスが有効</strong>になっていないとコピーできません</p>
-                </div>
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <p data-lang-key="manual-sectionbox-copy-note3">コピーした情報は<strong>Revitを閉じると消えます</strong>（セッション内のみ有効）</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- トラブルシューティング -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-troubleshooting">トラブルシューティング</h2>
-            <div class="notes-box warning">
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <div>
-                        <strong data-lang-key="manual-sectionbox-copy-trouble1-title">コピーしたのに範囲が適用されない</strong>
-                        <ul style="margin-top: 4px;">
-                            <li data-lang-key="manual-sectionbox-copy-trouble1-item1">コピー元のビューでセクションボックスが<strong>有効</strong>になっているか確認してください</li>
-                            <li data-lang-key="manual-sectionbox-copy-trouble1-item2">ペースト先が<strong>3Dビュー</strong>になっているか確認してください</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="note-item">
-                    <span class="note-icon">⚠️</span>
-                    <div>
-                        <strong data-lang-key="manual-sectionbox-copy-trouble2-title">ペースト後にモデルが見えなくなった</strong>
-                        <ul style="margin-top: 4px;">
-                            <li data-lang-key="manual-sectionbox-copy-trouble2-item1">セクションボックスの範囲外にモデルがある場合、見えなくなります</li>
-                            <li data-lang-key="manual-sectionbox-copy-trouble2-item2">「セクションボックス」チェックをオフにして範囲を確認・調整してください</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 関連機能 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-related">関連機能</h2>
-            <div class="content-box">
-                <ul>
-                    <li><a href="view-copy.html" data-lang-key="manual-sectionbox-copy-related-viewcopy">3Dビュー視点 コピー＆ペースト — 3Dビューのカメラ位置・向きをコピー</a></li>
-                    <li><a href="cropbox-copy.html" data-lang-key="manual-sectionbox-copy-related-cropbox">トリミング領域 コピー＆ペースト — 平面図・断面図などのトリミング領域をコピー</a></li>
-                    <li><a href="viewport-position.html" data-lang-key="manual-sectionbox-copy-related-viewport">ビューポート位置 コピー＆ペースト — シート上のビューポート位置をコピー</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- ナビゲーション -->
         <div class="manual-navigation">
             <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
                 ← ホームに戻る
@@ -220,5 +119,25 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script>
+    (function() {
+        var FEATURE_ID = 'SectionBoxCopy';
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
+        var el = document.getElementById('md-content');
+
+        fetch(MD_URL)
+            .then(function(r) {
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.text();
+            })
+            .then(function(md) {
+                el.innerHTML = marked.parse(md);
+            })
+            .catch(function(e) {
+                el.innerHTML = '<p style="color:#c0392b">マニュアルの読み込みに失敗しました。<br>URL: ' + MD_URL + '</p>';
+                console.error(e);
+            });
+    })();
+    </script>
 </body>
 </html>

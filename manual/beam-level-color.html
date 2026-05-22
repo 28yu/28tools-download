@@ -31,9 +31,11 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/manual.css">
+    <link rel="stylesheet" href="../css/features.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body class="manual-page">
     <!-- 共通ヘッダー -->
@@ -64,355 +66,10 @@
         </div>
 
         <!-- 機能概要 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-overview">機能概要</h2>
-            <div class="content-box">
-                <p data-lang-key="manual-beam-level-overview">
-                    梁を天端レベルまたは下端レベルの値ごとに色分け表示する機能です。ビュー上でレベルの異なる梁を視覚的にすばやく把握できます。どちらの機能も、色分けされた塗潰し領域・梁ラベル（TextNote）・凡例ビューを自動作成します。
-                </p>
-                <p style="margin-top: 12px;" data-lang-key="manual-beam-level-ribbon">
-                    リボン: 「<strong>28 Tools</strong>」タブ →「<strong>構造</strong>」パネル
-                </p>
-            </div>
-        </section>
 
-        <!-- 機能比較テーブル -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="manual-beam-level-diff-title">機能の違い</h2>
-            <div class="content-box">
-                <table class="info-table">
-                    <thead>
-                        <tr>
-                            <th data-lang-key="manual-beam-level-diff-col-feature">機能</th>
-                            <th data-lang-key="manual-beam-level-diff-col-button">ボタン名</th>
-                            <th data-lang-key="table-col-view-type">対象ビュー</th>
-                            <th data-lang-key="manual-beam-level-diff-col-basis">色分けの基準</th>
-                            <th data-lang-key="manual-beam-level-diff-col-steps">ステップ数</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-diff-row1-feature"><strong>梁天端色分け</strong></td>
-                            <td data-lang-key="manual-beam-level-diff-row1-button">梁天端色分け</td>
-                            <td data-lang-key="manual-beam-level-diff-row1-view">平面ビュー・構造伏図</td>
-                            <td data-lang-key="manual-beam-level-diff-row1-basis">天端レベルオフセット値をそのまま使用</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-diff-row2-feature"><strong>梁下端色分け</strong></td>
-                            <td data-lang-key="manual-beam-level-diff-row2-button">梁下端色分け</td>
-                            <td data-lang-key="manual-beam-level-diff-row2-view">天井伏図</td>
-                            <td data-lang-key="manual-beam-level-diff-row2-basis">階高 + 天端オフセット − 梁高さ で計算</td>
-                            <td>4</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <!-- マニュアル本文（Markdown 動的読み込み） -->
+        <article id="md-content" class="md-content">読み込み中...</article>
 
-        <!-- 実行できるビュー -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-supported-views">実行できるビュー</h2>
-            <div class="content-box">
-                <h3 style="font-size: 1.05rem; margin-top: 0; margin-bottom: 12px;" data-lang-key="manual-beam-level-top-section-title">梁天端色分け</h3>
-                <table class="info-table">
-                    <thead>
-                        <tr>
-                            <th data-lang-key="table-col-view-type">ビュー種別</th>
-                            <th data-lang-key="table-col-supported">対応</th>
-                            <th data-lang-key="table-col-behavior">動作</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-top-view-row1-name"><strong>平面ビュー（FloorPlan）</strong></td>
-                            <td class="status">◯</td>
-                            <td data-lang-key="manual-beam-level-top-view-row1-behavior">天端レベルオフセット値で色分け。参照レベルはビューの GenLevel から自動取得</td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-top-view-row2-name"><strong>構造伏図（EngineeringPlan）</strong></td>
-                            <td class="status">◯</td>
-                            <td data-lang-key="manual-beam-level-top-view-row2-behavior">天端レベルオフセット値で色分け。参照レベルはビューの GenLevel から自動取得</td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-view-other">その他</td>
-                            <td class="status">×</td>
-                            <td data-lang-key="manual-beam-level-view-na">実行不可</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h3 style="font-size: 1.05rem; margin-top: 24px; margin-bottom: 12px;" data-lang-key="manual-beam-level-bottom-section-title">梁下端色分け</h3>
-                <table class="info-table">
-                    <thead>
-                        <tr>
-                            <th data-lang-key="table-col-view-type">ビュー種別</th>
-                            <th data-lang-key="table-col-supported">対応</th>
-                            <th data-lang-key="table-col-behavior">動作</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-bottom-view-row1-name"><strong>天井伏図（CeilingPlan）</strong></td>
-                            <td class="status">◯</td>
-                            <td data-lang-key="manual-beam-level-bottom-view-row1-behavior">計算した下端レベル値で色分け</td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-view-other">その他</td>
-                            <td class="status">×</td>
-                            <td data-lang-key="manual-beam-level-view-na">実行不可</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- 使い方 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-usage">使い方</h2>
-
-            <!-- 梁天端色分け -->
-            <h3 style="font-size: 1.1rem; margin: 24px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--blueprint-blue);" data-lang-key="manual-beam-level-top-section-title">梁天端色分け</h3>
-
-            <div class="step-box">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-beam-level-top-step1-title">コマンド起動</h3>
-                    <p data-lang-key="manual-beam-level-top-step1-desc">
-                        平面ビューまたは構造伏図をアクティブにして「<strong>梁天端色分け</strong>」をクリックします。
-                    </p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-beam-level-top-step2-title">STEP 1 — 基本設定</h3>
-                    <table class="info-table" style="margin-top: 12px;">
-                        <thead>
-                            <tr>
-                                <th data-lang-key="table-col-item">項目</th>
-                                <th data-lang-key="table-col-content">内容</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-lang-key="manual-beam-level-top-setting-row1-name"><strong>参照レベル</strong></td>
-                                <td data-lang-key="manual-beam-level-top-setting-row1-desc">ビューの GenLevel（自動取得・変更不可）</td>
-                            </tr>
-                            <tr>
-                                <td data-lang-key="manual-beam-level-top-setting-row2-name"><strong>文字タイプ</strong></td>
-                                <td data-lang-key="manual-beam-level-top-setting-row2-desc">ラベルに使用するテキストタイプを選択</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-beam-level-top-step3-title">STEP 2 — 天端パラメータ選択</h3>
-                    <p data-lang-key="manual-beam-level-top-step3-desc">
-                        ファミリごとに天端レベルオフセットを格納したパラメータを選択します。自動検出された候補がラジオボタンで表示されます（カッコ内は検出件数）。候補にない場合は「<strong>その他</strong>」ドロップダウンから選択。
-                    </p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-beam-level-top-step4-title">STEP 3 — 確認と実行</h3>
-                    <p data-lang-key="manual-beam-level-top-step4-desc">
-                        処理対象の梁数を確認し、「<strong>実行</strong>」をクリック。再実行する場合は <strong>「既存の『梁天端_』塗潰領域・凡例を上書き」</strong> にチェックしてください。
-                    </p>
-                </div>
-            </div>
-
-            <!-- 梁下端色分け -->
-            <h3 style="font-size: 1.1rem; margin: 32px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--blueprint-blue);" data-lang-key="manual-beam-level-bottom-section-title">梁下端色分け</h3>
-
-            <p style="margin-bottom: 16px;" data-lang-key="manual-beam-level-bottom-intro">
-                天井伏図の梁を、計算した下端レベル値ごとに色分けします。
-            </p>
-
-            <p style="margin-bottom: 16px;" data-lang-key="manual-beam-level-formula-label">下端レベルの計算式：</p>
-            <pre style="background:#f4f4f4; padding:12px; border-radius:6px; font-size:0.9rem; margin:12px 0;">梁下端レベル = 階高 + 天端オフセット − 梁高さ</pre>
-            <ul style="margin: 12px 0 20px; padding-left: 22px;">
-                <li data-lang-key="manual-beam-level-formula-item1"><strong>階高</strong> = 上位レベル標高 − 参照レベル標高（例: 3000mm）</li>
-                <li data-lang-key="manual-beam-level-formula-item2"><strong>天端オフセット</strong> = 梁の天端パラメータ値（上位レベルからの下がりは負値。例: −300mm）</li>
-                <li data-lang-key="manual-beam-level-formula-item3"><strong>梁高さ</strong> = 梁高さパラメータ値（例: 600mm）</li>
-                <li data-lang-key="manual-beam-level-formula-item4">結果は参照レベル基準で表示（例: +2100 → 参照レベルから2100mm上）</li>
-            </ul>
-
-            <div class="step-box">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-beam-level-bottom-step1-title">コマンド起動</h3>
-                    <p data-lang-key="manual-beam-level-bottom-step1-desc">
-                        天井伏図をアクティブにして「<strong>梁下端色分け</strong>」をクリックします。
-                    </p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-beam-level-bottom-step2-title">STEP 1 — レベル設定</h3>
-                    <table class="info-table" style="margin-top: 12px;">
-                        <thead>
-                            <tr>
-                                <th data-lang-key="table-col-item">項目</th>
-                                <th data-lang-key="table-col-content">内容</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-lang-key="manual-beam-level-bottom-setting-row1-name"><strong>参照レベル</strong></td>
-                                <td data-lang-key="manual-beam-level-bottom-setting-row1-desc">ビューの GenLevel（自動取得・変更不可）</td>
-                            </tr>
-                            <tr>
-                                <td data-lang-key="manual-beam-level-bottom-setting-row2-name"><strong>上位レベル</strong></td>
-                                <td data-lang-key="manual-beam-level-bottom-setting-row2-desc">梁が配置されているレベルを選択（参照レベルより上のみ表示）</td>
-                            </tr>
-                            <tr>
-                                <td data-lang-key="manual-beam-level-bottom-setting-row3-name"><strong>階高</strong></td>
-                                <td data-lang-key="manual-beam-level-bottom-setting-row3-desc">選択後に自動表示</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-beam-level-bottom-step3-title">STEP 2 — 梁高さパラメータ選択</h3>
-                    <p data-lang-key="manual-beam-level-bottom-step3-desc">
-                        ファミリごとに梁高さ（断面高さ）を格納したパラメータを選択します。
-                    </p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-beam-level-bottom-step4-title">STEP 3 — 天端パラメータ選択</h3>
-                    <p data-lang-key="manual-beam-level-bottom-step4-desc">
-                        ファミリごとに天端レベルオフセットを格納したパラメータを選択します。
-                    </p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-number">5</div>
-                <div class="step-content">
-                    <h3 data-lang-key="manual-beam-level-bottom-step5-title">STEP 4 — 確認と実行</h3>
-                    <p data-lang-key="manual-beam-level-bottom-step5-desc">
-                        処理対象の梁数を確認し、「<strong>実行</strong>」をクリック。再実行する場合は <strong>「既存の『梁下_』塗潰領域・凡例を上書き」</strong> にチェックしてください。
-                    </p>
-                </div>
-            </div>
-
-            <!-- スクリーンショット用プレースホルダー -->
-            <div class="image-placeholder">
-                <p data-lang-key="image-placeholder-text">📷 スクリーンショット画像をここに追加予定</p>
-            </div>
-        </section>
-
-        <!-- 出力結果 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-output">出力結果</h2>
-            <div class="content-box">
-                <p style="margin-bottom: 16px;" data-lang-key="manual-beam-level-output-intro">実行後、以下が自動作成されます（梁天端・梁下端共通）。</p>
-                <table class="info-table">
-                    <thead>
-                        <tr>
-                            <th data-lang-key="manual-beam-level-output-col-item">出力物</th>
-                            <th data-lang-key="manual-beam-level-output-col-content">内容</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-output-row1-name"><strong>塗潰し領域</strong></td>
-                            <td data-lang-key="manual-beam-level-output-row1-desc">梁ごとにレベル値の色で塗潰し。フィルタ名: <code>梁天端_{レベル名}{±値}</code> / <code>梁下_{レベル名}{±値}</code></td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-output-row2-name"><strong>梁ラベル</strong></td>
-                            <td data-lang-key="manual-beam-level-output-row2-desc">梁の中央にレベル値を TextNote で配置。梁の方向に合わせて回転</td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-output-row3-name"><strong>凡例ビュー</strong></td>
-                            <td data-lang-key="manual-beam-level-output-row3-desc"><code>梁天端色分け凡例</code> / <code>梁下端色分け凡例</code>（プロジェクトブラウザの製図ビューに表示）</td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-output-row4-name"><strong>共有パラメータ</strong></td>
-                            <td data-lang-key="manual-beam-level-output-row4-desc"><code>梁天端_基準レベル</code>・<code>梁天端_レベル差</code> など（梁要素に自動付与）</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- トラブルシューティング -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-troubleshooting">トラブルシューティング</h2>
-            <div class="content-box">
-                <table class="info-table">
-                    <thead>
-                        <tr>
-                            <th data-lang-key="table-col-symptom">症状</th>
-                            <th data-lang-key="table-col-action">対処</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-trouble-row1-symptom">ビュー内に梁が見つからない</td>
-                            <td data-lang-key="manual-beam-level-trouble-row1-action">梁（構造フレーム）がビュー上で表示されているか確認。フィルタや非表示設定を確認</td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-trouble-row2-symptom">パラメータが候補に表示されない</td>
-                            <td data-lang-key="manual-beam-level-trouble-row2-action">「その他」ドロップダウンを開いて手動選択。それでも見つからない場合はファミリのパラメータ定義を確認</td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-trouble-row3-symptom">上位レベルが選択肢にない（梁下端）</td>
-                            <td data-lang-key="manual-beam-level-trouble-row3-action">参照レベルより上のレベルがプロジェクトに定義されているか確認</td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-trouble-row4-symptom">計算結果が予想と異なる（梁下端）</td>
-                            <td data-lang-key="manual-beam-level-trouble-row4-action">上位レベルの選択が正しいか、天端オフセットの符号（正/負）を確認</td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-trouble-row5-symptom">色が似ていて見分けにくい</td>
-                            <td data-lang-key="manual-beam-level-trouble-row5-action">ビュー → フィルタから色を手動変更できます</td>
-                        </tr>
-                        <tr>
-                            <td data-lang-key="manual-beam-level-trouble-row6-symptom">再実行しても古い色分けが残る</td>
-                            <td data-lang-key="manual-beam-level-trouble-row6-action">STEP 3/4 の「上書き」チェックをONにして再実行</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- 関連機能 -->
-        <section class="manual-section">
-            <h2 class="section-title" data-lang-key="section-related">関連機能</h2>
-            <div class="content-box">
-                <ul>
-                    <li>
-                        <a href="fire-protection.html" data-lang-key="manual-beam-level-related-fire">耐火被覆色分け</a>
-                        <span data-lang-key="manual-beam-level-related-fire-desc"> — 梁・柱の耐火被覆範囲を色分け表示</span>
-                    </li>
-                    <li>
-                        <a href="formwork-calculator.html" data-lang-key="manual-beam-level-related-formwork">型枠数量算出</a>
-                        <span data-lang-key="manual-beam-level-related-formwork-desc"> — 梁・柱を含むRC躯体の型枠面積を算出</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- ナビゲーション -->
         <div class="manual-navigation">
             <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
                 ← ホームに戻る
@@ -463,5 +120,25 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script>
+    (function() {
+        var FEATURE_ID = 'BeamLevelColor';
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
+        var el = document.getElementById('md-content');
+
+        fetch(MD_URL)
+            .then(function(r) {
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.text();
+            })
+            .then(function(md) {
+                el.innerHTML = marked.parse(md);
+            })
+            .catch(function(e) {
+                el.innerHTML = '<p style="color:#c0392b">マニュアルの読み込みに失敗しました。<br>URL: ' + MD_URL + '</p>';
+                console.error(e);
+            });
+    })();
+    </script>
 </body>
 </html>
