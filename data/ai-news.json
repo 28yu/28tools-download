@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-22T05:02:06.563879",
+  "lastUpdated": "2026-05-23T04:42:39.148663",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -25,7 +25,7 @@
     },
     {
       "title": "We’re announcing new community investments in Missouri.",
-      "titleJa": "私たちはミズーリ州における新たなコミュニティへの投資を発表します。",
+      "titleJa": "私たちはミズーリ州での新たなコミュニティ投資を発表します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
       "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
       "publishedDate": "Wed, 20 May 2026 20:40:00 +0000",
@@ -101,17 +101,6 @@
       "language": "ja"
     },
     {
-      "title": "The Download: fully artificial chicken eggs and why Musk lost",
-      "titleJa": "ダウンロード: 完全人工鶏卵とマスク氏が負けた理由",
-      "link": "https://www.technologyreview.com/2026/05/20/1137579/the-download-colossal-biosciences-egg-musk-altman-trial/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Colossal Biosciences is growing chickens in a 3D-p...",
-      "publishedDate": "Wed, 20 May 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/SO23-therapies-01.webp?w=1454",
-      "language": "en"
-    },
-    {
       "title": "GPT-4の無料版はまだ使える？有料版との違い・無料で使える代替サービス・注意点を解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/chatgpt4-free-usage/",
@@ -120,17 +109,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt4-free-usage_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Claudeアプリ版とブラウザ版の違いは？使い方をスマホ・PC別に紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/claude-app/",
-      "description": "2022年11月、アメリカのOpenAI社が対話型生成AI「ChatGPT」を公開して以降、企業における生成AI活用は急速に広がっています。その中でも近年特に注目されているのが、Anthropic社が提供する「Claud [...]...",
-      "publishedDate": "Wed, 20 May 2026 11:16:12 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-app_2605-1024x576.webp",
       "language": "ja"
     },
     {
@@ -145,32 +123,10 @@
       "language": "ja"
     },
     {
-      "title": "ChatGPTの改行方法をPC・スマホ別に解説｜できない原因と設定のコツも",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-line-break/",
-      "description": "ChatGPTを使っていて、文章を改行しようとEnterキーを押したら、意図せず送信されてしまった経験はありませんか。長い指示や複雑なプロンプトを入力したいのに、途中で送信されてしまうとストレスを感じますよね。 この記事 [...] The post ChatGPTの改行方法をPC・スマホ別に解説｜できない原因と設定のコツも first appeared on AIポータルメディアAIsmiley...",
-      "publishedDate": "Wed, 20 May 2026 08:00:41 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/linebreakmain.png",
-      "language": "ja"
-    },
-    {
-      "title": "Microsoft、世界のAI普及レポート2026年最新版を公開。日本のAI普及率は世界平均の3倍超ペースで増加",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/microsoft-2026-global-ai-diffusion/",
-      "description": "Microsoftは、世界AI普及レポート2026年最新版を公開しました。世界のAI普及率は引き続き増加傾向で、日本におけるAI導入率は世界平均の3倍以上の速さで増加しています。 このニュースのポイント 世界のAI普及率 [...] The post Microsoft、世界のAI普及レポート2026年最新版を公開。日本のAI普及率は世界平均の3倍超ペースで増加 first appeared on...",
-      "publishedDate": "Wed, 20 May 2026 06:23:53 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/microsofteye-1.png",
-      "language": "ja"
-    },
-    {
-      "title": "How Ramp engineers accelerate code review with Codex",
-      "titleJa": "Ramp エンジニアが Codex を使用してコード レビューを加速する方法",
-      "link": "https://openai.com/index/ramp",
-      "description": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours....",
+      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+      "titleJa": "OpenAI モデルは離散幾何学における中心予想を反証しました",
+      "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
+      "description": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics....",
       "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -179,7 +135,7 @@
     },
     {
       "title": "The next phase of OpenAI’s Education for Countries",
-      "titleJa": "OpenAI の国向け教育の次の段階",
+      "titleJa": "OpenAI の国々向け教育の次の段階",
       "link": "https://openai.com/index/the-next-phase-of-education-for-countries",
       "description": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes....",
       "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
@@ -189,10 +145,10 @@
       "language": "en"
     },
     {
-      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
-      "titleJa": "OpenAI モデルは離散幾何学における中心予想を反証しました",
-      "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
-      "description": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics....",
+      "title": "How Ramp engineers accelerate code review with Codex",
+      "titleJa": "Ramp エンジニアが Codex を使用してコード レビューを加速する方法",
+      "link": "https://openai.com/index/ramp",
+      "description": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours....",
       "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -252,17 +208,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Roundtables: Inside the Musk v. Altman Trial",
-      "titleJa": "ラウンドテーブル: マスク対アルトマン裁判の内部",
-      "link": "https://www.technologyreview.com/2026/05/19/1137454/roundtables-inside-the-musk-v-altman-trial/",
-      "description": "Listen to the session or watch below Elon Musk lost his suit against OpenAI, in which he alleged CEO Sam Altman and President Greg Brockman had deceived him over the company’s non-profit status. Watch...",
-      "publishedDate": "Tue, 19 May 2026 20:15:18 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/MITTR-Roundtables-Zoom-Opening-Overlay_a83ddf.png?resize=1200,600",
       "language": "en"
     },
     {
@@ -354,19 +299,8 @@
       "language": "en"
     },
     {
-      "title": "Understanding the modern cybercrime landscape",
-      "titleJa": "現代のサイバー犯罪情勢を理解する",
-      "link": "https://www.technologyreview.com/2026/05/19/1136925/understanding-the-modern-cybercrime-landscape/",
-      "description": "Throughout 2025, HPE observed significant changes in how cybercriminals operate. Analyzing real-world threats, our HPE Threat Labs highlighted an industrialization of the cyber criminals’ methods in i...",
-      "publishedDate": "Tue, 19 May 2026 13:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/HPE_VL_Backgrounds_HR_1920x1080_E.jpg?w=1920",
-      "language": "en"
-    },
-    {
       "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
-      "titleJa": "Advancing content provenance for a safer, more transparent AI ecosystem",
+      "titleJa": "より安全で透明性の高い AI エコシステムを実現するためのコンテンツ来歴の進歩",
       "link": "https://openai.com/index/advancing-content-provenance",
       "description": "OpenAI advances AI content provenance with Content Credentials, SynthID, and a verification tool to help people identify and trust AI-generated media....",
       "publishedDate": "Tue, 19 May 2026 10:45:00 GMT",
@@ -405,7 +339,7 @@
       "publishedDate": "Thu, 21 May 2026 20:41:05 +0000",
       "source": "MIT Technology Review",
       "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/MITTR-Roundtables-Zoom-Opening-Overlay.png?resize=1200,600",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/thumbnail-Test.png?resize=1200,600",
       "language": "en"
     },
     {
@@ -417,6 +351,39 @@
       "source": "MIT Technology Review",
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/Digital-paper-marble.jpeg",
+      "language": "en"
+    },
+    {
+      "title": "Anthropic’s Code with Claude showed off coding’s future—whether you like it or not",
+      "titleJa": "Anthropic の Code with Claude は、好むと好まざるにかかわらず、コーディングの未来を誇示しました",
+      "link": "https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/",
+      "description": "The vibes were strong at Code with Claude, Anthropic’s two-day event for software developers in London that kicked off on May 19, the same day as Google’s I/O in Palo Alto. (A coincidence, not a flex,...",
+      "publishedDate": "Thu, 21 May 2026 14:30:45 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/PXL_20260519_113915550.MP_.jpg?w=2987",
+      "language": "en"
+    },
+    {
+      "title": "The Download: online safety’s future and climate tech’s big pivot",
+      "titleJa": "ダウンロード: オンラインの安全性の未来と気候変動テクノロジーの大きな軸",
+      "link": "https://www.technologyreview.com/2026/05/21/1137733/the-download-online-safety-climate-tech-pivot/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Tech researchers are suing the Trump administratio...",
+      "publishedDate": "Thu, 21 May 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/06/AF-MIT-JUAREZ-MAR2023-029.jpeg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "AdventHealth advances whole-person care with OpenAI",
+      "titleJa": "AdventHealth が OpenAI で全人ケアを推進",
+      "link": "https://openai.com/index/adventhealth",
+      "description": "AdventHealth is using ChatGPT for Healthcare to streamline workflows, reduce administrative burden, and return more time to patient care....",
+      "publishedDate": "Thu, 21 May 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -494,6 +461,39 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Google-Pics-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "GPT-5.5とは？特徴・料金・商用利用・使い方を徹底解説【2026年5月】",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/gpt-5-5-about/",
+      "description": "2026年4月23日、OpenAIが最新フラッグシップモデル「GPT-5.5」を発表しました。前モデルのアップデートに留まらず、新しい設計思想に基づき「プロンプト指示への応答」から「タスクの自律完遂」へと役割が広がってい [...] The post GPT-5.5とは？特徴・料金・商用利用・使い方を徹底解説【2026年5月】 first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Fri, 22 May 2026 09:35:11 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/gpt-5-5-about_ic.png",
+      "language": "ja"
+    },
+    {
+      "title": "Speech Summarizer AI とは？クラウド不要で会議を丸ごと記録！Copilot+PC 向け文字起こし・要約アプリを解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/speech-summarizer-ai/",
+      "description": "「会議の内容を議事録にまとめるのに時間がかかる」「文字起こしツールに機密情報を入力するのが不安」そんな悩みを抱えるビジネスパーソンに向けて、 WEELはHPハイブリッドAI推進コミッティ活動の一環として、オンデバイス型の [...]...",
+      "publishedDate": "Fri, 22 May 2026 08:12:57 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/image-527.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTで夢小説を書く方法｜プロンプト・コツ・注意点まで解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-yumeshousetsu-how-to/",
+      "description": "「推しとの妄想を小説にしたいけど、文章を書くのは苦手」「プロンプトをどう書けばいいか分からない」そんな悩みを持つ人に向けて、本記事ではChatGPTを使った夢小説の書き方を、プロンプトの組み立て方からキャラ崩壊の防ぎ方、 [...] The post ChatGPTで夢小説を書く方法｜プロンプト・コツ・注意点まで解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 22 May 2026 07:00:09 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/yumesyousetu.png",
       "language": "ja"
     },
     {
