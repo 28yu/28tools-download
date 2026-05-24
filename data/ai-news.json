@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-23T04:42:39.148663",
+  "lastUpdated": "2026-05-24T05:02:40.763871",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -25,7 +25,7 @@
     },
     {
       "title": "We’re announcing new community investments in Missouri.",
-      "titleJa": "私たちはミズーリ州での新たなコミュニティ投資を発表します。",
+      "titleJa": "私たちはミズーリ州における新たなコミュニティへの投資を発表します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
       "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
       "publishedDate": "Wed, 20 May 2026 20:40:00 +0000",
@@ -101,17 +101,6 @@
       "language": "ja"
     },
     {
-      "title": "GPT-4の無料版はまだ使える？有料版との違い・無料で使える代替サービス・注意点を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chatgpt4-free-usage/",
-      "description": "GPT-4は、OpenAIが2023年3月に公開した大規模言語モデルです。ChatGPT公式では2026年2月にGPT-4系モデルの提供が終了しましたが、実は今でも無料で使えるサービスが残っているのをご存じでしょうか？※ [...]...",
-      "publishedDate": "Wed, 20 May 2026 12:08:19 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt4-free-usage_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Gemini Sparkとは？24時間動く自律型AIエージェントの機能・日本提供時期を解説",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/gemini-spark/",
@@ -135,7 +124,7 @@
     },
     {
       "title": "The next phase of OpenAI’s Education for Countries",
-      "titleJa": "OpenAI の国々向け教育の次の段階",
+      "titleJa": "OpenAI の国向け教育の次の段階",
       "link": "https://openai.com/index/the-next-phase-of-education-for-countries",
       "description": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes....",
       "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
@@ -461,6 +450,17 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Google-Pics-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTの法人での利用方法まとめ！法人向けプランの詳細からChatGPT搭載SaaS10種まで網羅的に紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/business-exercise",
+      "description": "DX・効率化が叫ばれる昨今、生成AIの導入をご検討中の法人・企業の方は多いはず。そんな法人利用のニーズにぴったりなサービスが、生成AIブームの火付け役であるChatGPTから登場しています。 それが法人向けの有料プラン「 [...]...",
+      "publishedDate": "Sat, 23 May 2026 12:41:28 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/business-exercise_2605-1024x576.webp",
       "language": "ja"
     },
     {
