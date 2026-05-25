@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-24T05:02:40.763871",
+  "lastUpdated": "2026-05-25T05:21:22.516527",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -25,7 +25,7 @@
     },
     {
       "title": "We’re announcing new community investments in Missouri.",
-      "titleJa": "私たちはミズーリ州における新たなコミュニティへの投資を発表します。",
+      "titleJa": "私たちはミズーリ州での新たなコミュニティ投資を発表します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
       "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
       "publishedDate": "Wed, 20 May 2026 20:40:00 +0000",
@@ -90,17 +90,6 @@
       "language": "ja"
     },
     {
-      "title": "Antigravity 2.0とは？エージェントファーストで開発が激変！Googleの最新ツールの使い方・料金・特徴を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/antigravity-2-0/",
-      "description": "2026年5月、GoogleからAIエージェントファーストの開発プラットフォーム「Antigravity 2.0」が発表されました。 今回発表された「Antigravity 2.0」は、従来の開発ツールとは一線を画す、複 [...]...",
-      "publishedDate": "Wed, 20 May 2026 12:32:44 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Antigravity-2.0-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Gemini Sparkとは？24時間動く自律型AIエージェントの機能・日本提供時期を解説",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/gemini-spark/",
@@ -124,7 +113,7 @@
     },
     {
       "title": "The next phase of OpenAI’s Education for Countries",
-      "titleJa": "OpenAI の国向け教育の次の段階",
+      "titleJa": "OpenAI の国々向け教育の次の段階",
       "link": "https://openai.com/index/the-next-phase-of-education-for-countries",
       "description": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes....",
       "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
@@ -464,6 +453,17 @@
       "language": "ja"
     },
     {
+      "title": "Google GeminiにPersonal Intelligence機能が登場！特徴や使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/google-gemini-personal-intelligence/",
+      "description": "2026年1月14日、Google Geminiの新機能「Personal Intelligence」が発表されました。この機能は、GeminiがGmailやGoogleフォトなどと安全に接続して個人データを参照し、ユー [...]...",
+      "publishedDate": "Mon, 25 May 2026 04:46:48 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/01/google-gemini-personal-intelligence_2601-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "GPT-5.5とは？特徴・料金・商用利用・使い方を徹底解説【2026年5月】",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/gpt-5-5-about/",
@@ -549,6 +549,28 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/dream-machine_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "DartがサーバレスのCloud Functions for Firebaseに対応、Dartはフルスタック言語へ。事前コンパイルでコールドスタートが10ミリ秒",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/dartcloud_functions_for_firebasedart10.html",
+      "description": "Googleは5月19日と20日の2日間にかけて行ったイベント「Google I/O 2026」で、Dart言語がFirebaseのサーバレス実行環境であるCloud Functions for Firebaseに実験的対応をしたと発表しま......",
+      "publishedDate": "2026-05-24T15:15:57Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/dart-cloud-functions-ann.png",
+      "language": "ja"
+    },
+    {
+      "title": "Google、「Dart＆Flutter Agent Skills」リリース。DartとFlutter開発の最新ベストプラクティスをAIエージェントに提供",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/googledartflutter_agent_skillsdartflutterai.html",
+      "description": "Googleは5月19日と20日の2日間にかけて行ったイベント「Google I/O 2026」で、AIエージェントに対してDart言語とFlutterフレームワークを用いたアプリケーション開発のベストプラクティスを提供する「Dart＆Fl......",
+      "publishedDate": "2026-05-24T15:11:51Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/dart-flutter-agentskills-ann.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/synergy2026q102.png",
-      "language": "ja"
-    },
-    {
-      "title": "JavaScriptランタイムのBun、Claudeを使って開発言語をZigからRustへ移行中",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/javascriptbunclaudezigrust.html",
-      "description": "Node.js互換のJavaScriptランタイムであるBunの作者Jarred Sumner氏は、これまでZig言語で開発してきたBunの開発言語を、Rust言語へ移行する作業を進めていることを明らかにしています。 移行にはClaudeを......",
-      "publishedDate": "2026-05-11T15:08:46Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/bun-zig-rust-portingguide20260512.png",
-      "language": "ja"
-    },
-    {
-      "title": "AIとの共同作業に最適化したコードエディタ「Zed 1.0」登場。Atomエディタの開発者らがRustで最初から作り直した理由とは",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/aized_10atomrust.html",
-      "description": "Rust製の高速コードエディタ「Zed」を開発しているZed Industries社は、Zedがバージョン1.0に到達したことを発表しました。Windows、Mac、Linuxで利用可能です。 We've shipped more ......",
-      "publishedDate": "2026-05-11T15:05:37Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HHFIWotWQAA6Y_L.jpg",
       "language": "ja"
     }
   ]
