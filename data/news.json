@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-24T02:28:45.543360",
+  "lastUpdated": "2026-05-25T02:37:06.802147",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -32,13 +32,13 @@
       "language": "ja"
     },
     {
-      "title": "野村不動産溜池山王ビル｜清水建設が設計・施工、竣工前一棟貸しの国内最大級木造オフィスビル",
-      "link": "https://news.build-app.jp/article/40591/",
-      "description": "トレンドワード：野村不動産溜池山王ビル 野村不動産溜池山王ビルは、2023年に竣工した木造と鉄骨のハイブリッド構造オフィスビルです。旧野村不......",
+      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第三回)",
+      "link": "https://news.build-app.jp/article/40502/",
+      "description": "建設現場の安全活動に音声AIを活用して現場の安全管理水準の向上と業務効率化目指す NTTソノリティと東急建設では、音声AIを活用した建設現場......",
       "publishedDate": "Tue, 19 May 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/3ff523e1d77f8916a7d7c1f4211686b1-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/57d50ec3150822ea2f9fee04fe4f679c-130x82.png",
       "language": "ja"
     },
     {
@@ -52,13 +52,13 @@
       "language": "ja"
     },
     {
-      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第三回)",
-      "link": "https://news.build-app.jp/article/40502/",
-      "description": "建設現場の安全活動に音声AIを活用して現場の安全管理水準の向上と業務効率化目指す NTTソノリティと東急建設では、音声AIを活用した建設現場......",
+      "title": "野村不動産溜池山王ビル｜清水建設が設計・施工、竣工前一棟貸しの国内最大級木造オフィスビル",
+      "link": "https://news.build-app.jp/article/40591/",
+      "description": "トレンドワード：野村不動産溜池山王ビル 野村不動産溜池山王ビルは、2023年に竣工した木造と鉄骨のハイブリッド構造オフィスビルです。旧野村不......",
       "publishedDate": "Tue, 19 May 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/57d50ec3150822ea2f9fee04fe4f679c-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/3ff523e1d77f8916a7d7c1f4211686b1-130x82.png",
       "language": "ja"
     },
     {
@@ -162,13 +162,33 @@
       "language": "ja"
     },
     {
-      "title": "建設業の変革に伴走する｜現場Hubの挑戦（後編）",
-      "link": "https://news.build-app.jp/article/40355/",
-      "description": "前編では、岡田氏から現場Hubが生まれた理由について詳しくお聞きしました。後編では、現場Hubの岡田氏に、現場Hubが実現したことや未来への......",
-      "publishedDate": "Sun, 17 May 2026 22:00:00 +0000",
+      "title": "アークノハラ　気象庁の警報・注意報情報を表示するLED表示機とシステムを開発",
+      "link": "https://news.build-app.jp/article/40657/",
+      "description": "概要 建設DXに取り組む野原グループの株式会社アークノハラ（本社：東京都新宿区、代表取締役社長：岡本力）は、運転中には気づきにくい地震や津波......",
+      "publishedDate": "Sun, 24 May 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/902_thumbnail_part2-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/08/aB9Tq2nPpM6XVSZ1661358008_1661358031-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "コンクリート基礎工事の見積で失敗しないために｜目安単価・内訳・施工不良を防ぐ確認ポイントを徹底解説",
+      "link": "https://news.build-app.jp/article/40685/",
+      "description": "コンクリート基礎工事は、見積金額だけで比較すると追加費用や施工不良につながる場合があります。工場や倉庫、店舗、設備基礎では、掘削から打設管理......",
+      "publishedDate": "Sun, 24 May 2026 15:46:51 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/23466231_m-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "建設業におけるカラーコンクリートの仕上がりは施工で差が出る｜色むら・白華・補修トラブルを防ぐポイントとは",
+      "link": "https://news.build-app.jp/article/40681/",
+      "description": "カラーコンクリートは、コンクリートに色を加えて仕上げる施工方法です。店舗や施設、駐車場、アプローチ、歩道などで使われます。通常の土間コンクリ......",
+      "publishedDate": "Sun, 24 May 2026 15:36:56 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/22558650_m-130x98.jpg",
       "language": "ja"
     },
     {
@@ -239,26 +259,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/04/gemma4_eyecatch_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "石川建設、AIクラウド工程管理『PROCOLLA（プロコラ）』を導入",
-      "link": "https://news.build-app.jp/article/40578/",
-      "description": "建設業界のDXを推進する株式会社Arent（本社：東京都港区、代表取締役社長：鴨林 広軌、以下「Arent」）は、群馬県を拠点に、創業80余......",
-      "publishedDate": "Mon, 18 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/08/AdobeStock_856647044-130x87.jpeg",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新】カーポートに建築確認申請は必要？｜10㎡ルール・法改正・費用まで完全解説",
-      "link": "https://news.build-app.jp/article/40666/",
-      "description": "カーポートを設置したいものの、「確認申請って必要なの？」「10㎡以下なら不要って本当？」と迷っていないでしょうか。 実際、カーポートはただの......",
-      "publishedDate": "Mon, 18 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/fedf1ef35f659cab85d0b49126ff05e4-130x82.png",
       "language": "ja"
     },
     {
