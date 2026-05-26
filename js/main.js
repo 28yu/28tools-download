@@ -916,6 +916,11 @@ function initTranslations() {
             en: 'News & Featured',
             zh: '最新动态'
         },
+        'index-news-v21': {
+            ja: '28 Tools v2.1 リリース — 耐火被覆色分け・型枠数量算出 新機能追加、Excelエクスポート・塗り潰し領域 改善',
+            en: '28 Tools v2.1 Released — Fire Protection & Formwork Calculator added; Excel Export & Filled Region improved',
+            zh: '28 Tools v2.1 发布 — 新增耐火覆盖色分・型钢模板数量计算，改进Excel导出・填充区域功能'
+        },
         'index-news-pdf-compare': {
             ja: 'PDF 比較ツール 公開 — ブラウザ上で2つのPDFの差分をカラー表示',
             en: 'PDF Compare Tool Released — Highlight differences between two PDFs in browser',
