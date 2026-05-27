@@ -247,6 +247,36 @@ Tesseract.js は font hinting の都合で `×` を `*` (アスタリスク) や
 | `H-450·200·9·14` (中黒) | sb45 = H-450×200×9×14 ✓ |
 | `H-600*200*11*17` (アスタリスク) | sb60 = H-600×200×11×17 ✓ |
 
+## v18: Tesseract WASM メモリ制約への対応
+
+### 報告
+v17 で「エラー: undefined」は解消したが、A1 サンプルで
+**「Error: Error attempting to read image.」** に変わって失敗。
+
+### 原因
+v17 の MAX_AREA = 200M は**ブラウザ canvas 上限**には収まるが、
+**Tesseract.js の WASM ヒープ**には大きすぎた。
+
+Tesseract.js の WASM は LSTM モデル + 画像 + 作業バッファを 1〜2GB の
+ヒープに同居させる。実用上の安全な画像サイズは **約 50〜70M ピクセル**まで。
+180M ピクセル渡すと `worker.recognize()` が
+"Error attempting to read image" で失敗。
+
+### 解決
+1. `MAX_AREA` を **200M → 64M** に絞る
+   - A1: 287 DPI, A3: 575 DPI, Letter: 600 DPI
+2. `recognizeWithRetry()` を追加
+   - "Error attempting to read image" / "out of memory" を検知したら
+     canvas を 0.7× にダウンスケールして 1 度リトライ
+   - 64M で失敗しても 31M で確実に通過
+3. canvas サイズと effective DPI をコンソールにログ出力
+
+### 教訓
+- Tesseract.js は **canvas 上限とは別の独自上限**を持つ
+- 「ブラウザが受け付けるサイズ」≠「Tesseract が処理できるサイズ」
+- WASM 系ライブラリは exception の `.message` が undefined の罠あり
+  (前バージョンで対処済み)
+
 ## v17: A1 ページの canvas オーバーフロー + 例外メッセージ整備
 
 ### 報告

@@ -72,16 +72,21 @@ async function getWorker(onStatus, dpi) {
 // that handles binarization, grayscale, and contrast adaptively. Our
 // own threshold pass was actually hurting accuracy on faint glyphs.
 //
-// Canvas size is capped so we stay under browser limits:
-//   - Chrome / Firefox: ~268M pixels area (16384²), 32767 max dim
-//   - Safari (iOS):     ~16M pixels area on some devices
-// An A1 sheet rendered at 600 DPI is ~14000×19800 = 278M pixels, which
-// silently fails on Chrome (canvas comes back 0×0 → pdfjs throws an
-// exception with no `.message` → user sees "エラー: undefined").
-// We auto-reduce DPI so width × height stays under MAX_AREA.
+// Canvas size is capped so we stay under both:
+//   - Browser canvas limit: ~268M pixels area (16384²) on Chrome
+//   - Tesseract.js WASM memory: practical limit ~50M pixels per image
+//     Beyond that, worker.recognize() throws "Error attempting to read
+//     image" because the WASM heap (default ~1-2GB) can't hold the raw
+//     pixels + LSTM model state + working buffers simultaneously.
+//
+// We optimise for the tighter constraint (Tesseract). An A1 sheet at
+// 600 DPI = 278M pixels, way over both limits. With MAX_AREA = 50M the
+// effective DPI on A1 is ~254, which is still readable for table
+// dimensions printed at 6-8pt on A1 paper. A3 / Letter pages stay at
+// the full 600 DPI.
 async function renderPage(page, dpi) {
-  const MAX_DIM = 16000;
-  const MAX_AREA = 200_000_000;
+  const MAX_DIM = 12000;
+  const MAX_AREA = 64_000_000;
   const baseVP = page.getViewport({ scale: 1 });
   let scale = dpi / 72;
   const projW = baseVP.width * scale;
@@ -142,25 +147,46 @@ function tessWordsToEntries(words) {
  * Returns merged unique words. Three passes take ~3x the time of one but
  * recover text that any single segmentation mode would miss.
  */
+async function recognizeWithRetry(worker, canvas, psm, label, onStatus, progress) {
+  onStatus && onStatus(label, progress);
+  try {
+    await worker.setParameters({ tessedit_pageseg_mode: psm });
+    return await worker.recognize(canvas);
+  } catch (err) {
+    // "Error attempting to read image" hits when the canvas exceeds the
+    // worker's WASM memory. As a last-ditch fallback, downscale the
+    // canvas in-place and retry once. This keeps OCR functional even on
+    // pages that slipped past our render-time cap.
+    const msg = err?.message || err?.toString?.() || '';
+    if (!/attempting to read image|out of memory/i.test(msg)) throw err;
+    const scaled = document.createElement('canvas');
+    const f = 0.7;
+    scaled.width = Math.floor(canvas.width * f);
+    scaled.height = Math.floor(canvas.height * f);
+    const sctx = scaled.getContext('2d');
+    sctx.fillStyle = 'white';
+    sctx.fillRect(0, 0, scaled.width, scaled.height);
+    sctx.drawImage(canvas, 0, 0, scaled.width, scaled.height);
+    console.warn(`[ocrPage] Tesseract failed at ${canvas.width}×${canvas.height}, retrying at ${scaled.width}×${scaled.height}`);
+    onStatus && onStatus(`${label} (リトライ縮小)`, progress);
+    return await worker.recognize(scaled);
+  }
+}
+
 export async function ocrPage(page, onStatus, dpi = 600) {
   onStatus && onStatus('PDFページ描画', 0);
   const { canvas, effectiveDpi } = await renderPage(page, dpi);
+  console.log(`[ocrPage] canvas=${canvas.width}×${canvas.height} (${(canvas.width*canvas.height/1e6).toFixed(1)}MP) effectiveDpi=${effectiveDpi}`);
 
   const worker = await getWorker(onStatus, effectiveDpi);
 
-  onStatus && onStatus('OCR pass 1/3 (sparse, 高精度)', 0.05);
-  await worker.setParameters({ tessedit_pageseg_mode: '11' });
-  const r1 = await worker.recognize(canvas);
+  const r1 = await recognizeWithRetry(worker, canvas, '11', 'OCR pass 1/3 (sparse, 高精度)', onStatus, 0.05);
   const w1 = tessWordsToEntries(r1.data.words);
 
-  onStatus && onStatus('OCR pass 2/3 (block, 高精度)', 0.35);
-  await worker.setParameters({ tessedit_pageseg_mode: '6' });
-  const r2 = await worker.recognize(canvas);
+  const r2 = await recognizeWithRetry(worker, canvas, '6', 'OCR pass 2/3 (block, 高精度)', onStatus, 0.35);
   const w2 = tessWordsToEntries(r2.data.words);
 
-  onStatus && onStatus('OCR pass 3/3 (auto, 高精度)', 0.7);
-  await worker.setParameters({ tessedit_pageseg_mode: '3' });
-  const r3 = await worker.recognize(canvas);
+  const r3 = await recognizeWithRetry(worker, canvas, '3', 'OCR pass 3/3 (auto, 高精度)', onStatus, 0.7);
   const w3 = tessWordsToEntries(r3.data.words);
 
   return mergeWords(mergeWords(w1, w2), w3);
