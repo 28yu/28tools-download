@@ -247,6 +247,61 @@ Tesseract.js は font hinting の都合で `×` を `*` (アスタリスク) や
 | `H-450·200·9·14` (中黒) | sb45 = H-450×200×9×14 ✓ |
 | `H-600*200*11*17` (アスタリスク) | sb60 = H-600×200×11×17 ✓ |
 
+## v17: A1 ページの canvas オーバーフロー + 例外メッセージ整備
+
+### 報告
+新サンプル (CAD から PDF 書き出し, A1 1684×2384pt) で
+「P1: テキスト抽出 0件 (画像のみ) → OCR フォールバック」 → 「**エラー: undefined**」。
+
+### 原因 1: テキストがアウトライン化
+PDF 内の content stream を解析すると `Tj`/`TJ` (テキスト表示) オペレータが
+**ゼロ**で、全文字が `m`/`l`/`c` (ベジエパス) で描画されていた。
+出力時に「テキストをアウトライン化」または「フォントを埋め込まない」設定で
+PDF 化したため、pdfjs は永久に 0 件しか返さない。
+→ OCR フォールバックは正しい挙動。
+
+### 原因 2: A1 ページの canvas サイズ超過
+A1 ページ (1684×2384pt) を 600 DPI で render すると
+14033×19866 ≈ **278M ピクセル** のキャンバスが必要。
+ブラウザの canvas 上限は ~268M (16384²) でこれを超過。
+- Chrome は canvas.width/height を 0 に黙ってクランプ
+- pdfjs の `page.render(...)` が **`message` プロパティを持たない例外**を投げる
+- catch 節の `err.message` が undefined → 「**エラー: undefined**」表示
+
+### 解決 1: 適応 DPI
+`renderPage()` を改修:
+- `MAX_DIM = 16000` (1辺), `MAX_AREA = 200M` (面積)
+- 上限超過時は scale を縮小し effectiveDpi を返す
+- A1 ページは自動で ~483 DPI にダウンスケール
+- A3 / Letter はそのまま 600 DPI 維持
+
+### 解決 2: Tesseract DPI 同期
+`getWorker()` が effective DPI を受け取り、ページごとに
+`user_defined_dpi` を再設定。グリフサイズ判定がレンダリング DPI と整合。
+
+### 解決 3: 例外メッセージのフォールバック
+catch 節を:
+```js
+err?.message || (typeof err === 'string' ? err : null)
+            || err?.name || err?.toString?.() || 'unknown error'
+```
+非 Error 系オブジェクト (DOM Event, 文字列, plain dict) からも
+意味のある文字列を取り出す。
+
+### 検証結果
+| 項目 | 修正前 | 修正後 |
+|---|---|---|
+| A1 サンプル PDF | エラー: undefined | OCR 完走 ~483 DPI |
+| A3 / Letter | 600 DPI 維持 | 600 DPI 維持 |
+| 例外メッセージ | "undefined" 出るケースあり | 必ず何らかの文字列 |
+
+### 教訓
+- ブラウザの **canvas サイズ上限**を常に意識: 268M area / 16384 dim
+- `err.message` 直アクセスは禁忌 — pdfjs / Tesseract / Canvas API の
+  どれもが非 Error を throw する可能性がある
+- 「テキストアウトライン化」PDF は技術的に救済不可 (vector→OCR で頑張る) なので、
+  上流 (CAD/Revit エクスポート設定) で予防するのが正解
+
 ## 設計判断の記録 (Why)
 
 ### なぜブラウザ完結なのか

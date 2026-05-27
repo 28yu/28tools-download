@@ -81,7 +81,7 @@ async function sha256(buffer) {
 // Cache: same PDF re-uploaded? Return cached result so the user gets
 // an instant load on iteration. Uses the Cache API (lighter than IDB).
 // Bump suffix when extraction logic changes so old caches invalidate.
-const CACHE_NAME = 'pdf-extract-v16';
+const CACHE_NAME = 'pdf-extract-v17';
 async function loadCache(key) {
   try {
     const c = await caches.open(CACHE_NAME);
@@ -329,9 +329,17 @@ async function processPdf(file) {
       `柱 ${result.columns.length}` +
       (detectedMats.length ? ` / マテリアル候補: ${detectedMats.join(', ')}` : '');
   } catch (err) {
-    log(`❌ エラー: ${err.message}`);
-    showStatus(`❌ ${err.message}`);
-    console.error(err);
+    // Some libraries throw non-Error objects (DOM events, strings, plain
+    // dicts) which leave `err.message` undefined. Build a readable label
+    // from whatever we have so the user never sees "エラー: undefined".
+    const msg = err?.message
+      || (typeof err === 'string' ? err : null)
+      || err?.name
+      || err?.toString?.()
+      || 'unknown error (詳細はブラウザコンソール参照)';
+    log(`❌ エラー: ${msg}`);
+    showStatus(`❌ ${msg}`);
+    console.error('processPdf failed:', err);
   }
 }
 
