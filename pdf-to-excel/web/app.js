@@ -81,7 +81,26 @@ async function sha256(buffer) {
 // Cache: same PDF re-uploaded? Return cached result so the user gets
 // an instant load on iteration. Uses the Cache API (lighter than IDB).
 // Bump suffix when extraction logic changes so old caches invalidate.
-const CACHE_NAME = 'pdf-extract-v19';
+const CACHE_NAME = 'pdf-extract-v20';
+const APP_VERSION = 'v20 (2026-05-27)';
+
+// Visible boot banner — lets you confirm you're running the latest JS
+// without having to inspect every file. If you don't see "v20" after a
+// reload, your browser is still serving cached JS — do Ctrl+Shift+R
+// (Windows/Linux) or Cmd+Shift+R (Mac) for a hard reload.
+console.log(`%c[pdf-to-excel] ${APP_VERSION} loaded`,
+  'background:#0a4d8c;color:white;padding:2px 6px;border-radius:3px;font-weight:bold');
+
+// Global safety net — Tesseract.js sometimes throws async errors from
+// the worker thread that bypass our try/catch (the promise rejection
+// arrives after the await chain has already returned). Surface them.
+window.addEventListener('unhandledrejection', e => {
+  const msg = e.reason?.message || e.reason?.toString?.() || 'unknown rejection';
+  console.error('[unhandledrejection]', e.reason);
+  if (/attempting to read image|pixdata_malloc|out of memory/i.test(msg)) {
+    showStatus(`❌ OCR メモリ不足: ${msg} — F12 コンソール参照`);
+  }
+});
 async function loadCache(key) {
   try {
     const c = await caches.open(CACHE_NAME);

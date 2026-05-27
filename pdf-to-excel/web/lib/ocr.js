@@ -83,8 +83,8 @@ async function getWorker(onStatus, dpi) {
 // while keeping A1 readable: A1 = 1684×2384 pt → ~174 DPI, A3 → ~400
 // DPI, Letter → 600 DPI (no cap needed).
 async function renderPage(page, dpi) {
-  const MAX_DIM = 10000;
-  const MAX_AREA = 24_000_000;
+  const MAX_DIM = 8000;
+  const MAX_AREA = 10_000_000;
   const baseVP = page.getViewport({ scale: 1 });
   let scale = dpi / 72;
   const projW = baseVP.width * scale;
@@ -193,11 +193,16 @@ const isImgErr = err => {
  */
 async function recognizeWithRetry(worker, canvas, psm, label, onStatus, progress, dpi) {
   await worker.setParameters({ tessedit_pageseg_mode: psm });
+  // Progressive degradation. Even at 10MP MAX_AREA, some environments
+  // still throw pixdata_malloc on the first try (the LSTM model + pix
+  // buffer + working memory all share the WASM heap). Each attempt
+  // both shrinks the input AND resets the worker, so a previous OOM
+  // doesn't corrupt subsequent attempts.
   const attempts = [
-    { scale: 1.0, via: 'canvas', reset: false },
-    { scale: 0.6, via: 'canvas', reset: true  },
-    { scale: 0.35, via: 'blob-png', reset: true },
-    { scale: 0.2, via: 'blob-jpeg', reset: true },
+    { scale: 1.0,  via: 'canvas',    reset: false },
+    { scale: 0.5,  via: 'canvas',    reset: true  },
+    { scale: 0.25, via: 'blob-png',  reset: true  },
+    { scale: 0.15, via: 'blob-jpeg', reset: true  },
   ];
 
   let lastErr = null;

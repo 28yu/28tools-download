@@ -247,6 +247,47 @@ Tesseract.js は font hinting の都合で `×` を `*` (アスタリスク) や
 | `H-450·200·9·14` (中黒) | sb45 = H-450×200×9×14 ✓ |
 | `H-600*200*11*17` (アスタリスク) | sb60 = H-600×200×11×17 ✓ |
 
+## v20: Leptonica pixdata_malloc 失敗 + キャッシュ起因の見落とし対策
+
+### 報告
+v19 公開後も DS-17 サンプルが失敗。F12 コンソールに:
+```
+Error in pixCreateNoInit: pixdata_malloc fail for data
+Error in pixCreate: pixd not made
+...
+Image file /input cannot be read!
+Uncaught Error: Error attempting to read image.  ← createWorker.js:247
+```
+
+### 原因
+1. **そもそも v19 が読み込まれていない疑い**
+   - v19 のログ (`[ocrPage] canvas=...` / `[ocr ... attempt N:`) が
+     コンソールに**一切表示されていない**
+   - ブラウザの HTTP cache が古い JS を返している (CACHE_NAME bump は
+     アプリ内キャッシュにしか効かない)
+2. **uncaught async error**
+   - エラーが Web Worker から postMessage 経由で非同期に届くため、
+     `await worker.recognize()` の try/catch を**バイパス**するケースがある
+3. **Leptonica の WASM ヒープ上限が想定より低い**
+   - 24M でも `pixdata_malloc fail` ⇒ ヒープが画像 + LSTM モデル +
+     作業バッファを同時に持てない
+
+### 解決
+1. **ブート時に目立つバナーを console に出力** (青背景)
+   - `[pdf-to-excel] v20 (2026-05-27) loaded`
+   - 表示されなければキャッシュされた古い JS が動いている証拠
+2. **`window.addEventListener('unhandledrejection')`** を追加
+   - Worker から逃げた非同期エラーも UI に表示
+3. **MAX_AREA 24M → 10M** (A1 ~114 DPI, A3 ~227 DPI, Letter ~327 DPI)
+4. **リトライ段数の縮尺をさらに小さく**
+   - 1.0× → 0.5× → 0.25× (PNG Blob) → 0.15× (JPEG Blob)
+   - A1 最終リトライは ~0.22MP まで縮小
+
+### ユーザ向け確認手順
+- **ハードリロード必須** (Ctrl+Shift+R / ⌘+Shift+R)
+- F12 → コンソールに「v20 (2026-05-27) loaded」が出ているか確認
+- 出ていない場合はサイトデータをクリアしてから再アクセス
+
 ## v19: Tesseract メモリ制約への多段リトライ
 
 ### 報告
