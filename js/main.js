@@ -761,6 +761,11 @@ function initTranslations() {
             en: 'PDF Compare',
             zh: 'PDF比较'
         },
+        'index-tab-pdf-excel': {
+            ja: 'Excel抽出',
+            en: 'PDF→Excel',
+            zh: 'Excel提取'
+        },
         'index-tab-knowledge': {
             ja: 'BIMニュース',
             en: 'BIM News',
