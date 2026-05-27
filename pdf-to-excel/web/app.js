@@ -82,7 +82,7 @@ async function sha256(buffer) {
 // an instant load on iteration. Uses the Cache API (lighter than IDB).
 // Bump suffix when extraction logic changes so old caches invalidate.
 const CACHE_NAME = 'pdf-extract-v20';
-const APP_VERSION = 'v20 (2026-05-27)';
+const APP_VERSION = 'v20.1 (2026-05-27, site-layout)';
 
 // Visible boot banner — lets you confirm you're running the latest JS
 // without having to inspect every file. If you don't see "v20" after a

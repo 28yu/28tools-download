@@ -6,6 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="../../images/site-icons/favicon-28.png">
 
+<!-- 共通サイト CSS (ヘッダー/サイドバー/フッター用) — インラインスタイルより先に読込 -->
+<link rel="stylesheet" href="../../css/style.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -24,61 +27,12 @@
     --shadow-medium: 0 8px 30px rgba(0,0,0,0.12);
     --shadow-heavy: 0 15px 35px rgba(0,0,0,0.1);
   }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(135deg, var(--light-concrete) 0%, #f8f9fa 100%);
-    min-height: 100vh;
-    color: var(--concrete-gray);
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
+  /* ↓ ヘッダー・サイドバーナビ・パンくず・フッターは css/style.css が提供。
+     ここでは tool 固有 (panel, dropzone, preview 等) のみ定義する。 */
+  /* ツール内コンテンツ用ラッパ ※.container は style.css 側で max-width:1400px */
+  .tool-main {
+    padding-bottom: 60px;
   }
-  main {
-    flex: 1;
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 40px 60px 40px;
-  }
-
-  /* ---------- header ---------- */
-  .site-header {
-    text-align: center;
-    margin: 60px 0 50px;
-  }
-  .main-title {
-    font-size: 3.5rem;
-    font-weight: 300;
-    color: var(--concrete-gray);
-    letter-spacing: -0.02em;
-    font-family: 'Inter', sans-serif;
-  }
-  .title-link { text-decoration: none; color: inherit; transition: opacity 0.2s ease; }
-  .title-link:hover { opacity: 0.7; }
-  .title-divider {
-    width: 80px; height: 2px;
-    background: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue));
-    border-radius: 2px;
-    margin: 16px auto;
-  }
-  .subtitle {
-    font-size: 1.1rem;
-    color: var(--steel-blue);
-    font-weight: 400;
-    opacity: 0.8;
-    letter-spacing: 0.02em;
-  }
-  .breadcrumb {
-    font-size: 0.85rem;
-    color: var(--disabled-gray);
-    margin-bottom: 20px;
-  }
-  .breadcrumb a {
-    color: var(--steel-blue);
-    text-decoration: none;
-  }
-  .breadcrumb a:hover { color: var(--blueprint-blue); }
 
   /* ---------- card / panel ---------- */
   .panel {
@@ -334,46 +288,10 @@
     color: var(--steel-blue);
   }
 
-  /* ---------- footer ---------- */
-  .site-footer {
-    background: var(--concrete-gray);
-    color: var(--light-concrete);
-    padding: 32px 20px;
-    margin-top: auto;
-  }
-  .site-footer-content {
-    max-width: 1400px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .site-footer-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 16px;
-  }
-  .site-footer-links a {
-    color: var(--light-concrete);
-    text-decoration: none;
-    font-size: 0.9rem;
-    padding: 4px 8px;
-    transition: color 0.3s ease;
-  }
-  .site-footer-links a:hover { color: var(--architect-green); }
-  .footer-divider { color: var(--disabled-gray); font-size: 0.8rem; }
-  .site-footer-copyright {
-    font-size: 0.85rem;
-    color: var(--disabled-gray);
-  }
-
-  /* ---------- responsive ---------- */
+  /* ↑ footer / レスポンシブのヘッダ系も css/style.css が提供 */
+  /* ---------- responsive (ツール固有のみ) ---------- */
   @media (max-width: 768px) {
-    main { padding: 0 20px 40px; }
-    .site-header { margin: 40px 0 30px; }
-    .main-title { font-size: 2.5rem; }
-    .subtitle { font-size: 1rem; }
+    .tool-main { padding-bottom: 40px; }
     .panel { padding: 20px; }
     .dropzone { padding: 32px 16px; }
     .dropzone-icon { font-size: 2rem; }
@@ -381,17 +299,22 @@
 </style>
 </head>
 <body>
-<main>
-  <div class="breadcrumb">
-    <a href="../../index.html">← 28 Tools ホーム</a>
-  </div>
+<div class="container">
 
-  <header class="site-header">
-    <h1 class="main-title"><a href="../../index.html" class="title-link">28 Tools</a></h1>
-    <div class="title-divider"></div>
-    <p class="subtitle">PDF → Excel 構造図抽出</p>
-  </header>
+  <!-- 共通ヘッダー (js/main.js が includes/header.html を読み込む) -->
+  <div id="header-container"></div>
 
+  <!-- サイドバーナビゲーション (js/main.js が includes/sidebar.html を読み込む) -->
+  <div id="sidebar-container"></div>
+
+  <!-- パンくず -->
+  <nav class="breadcrumb">
+    <a href="../../index.html" data-lang-key="breadcrumb-home">ホーム</a>
+    <span class="separator">›</span>
+    <span>PDF → Excel 構造図抽出</span>
+  </nav>
+
+  <main class="tool-main">
   <div class="privacy-notice">
     🔒 <strong>プライバシー保護</strong> — PDF はあなたのブラウザ内のみで処理されます。サーバへ送信されません。
     画像PDF/難読化PDFを開いた場合のみ、高精度 OCR エンジンと日本語データ (合計 ≈40MB) を初回に限り遅延ロードします (以降はキャッシュ)。
@@ -430,23 +353,27 @@
     <button class="btn-primary" id="download-btn">📥 Excel ダウンロード (.xlsx)</button>
     <span class="meta-summary" id="result-summary"></span>
   </div>
-</main>
+  </main>
+</div><!-- /.container -->
 
 <footer class="site-footer">
   <div class="site-footer-content">
     <div class="site-footer-links">
-      <a href="../../about.html">運営者情報</a>
+      <a href="../../about.html" data-lang-key="footer-about">運営者情報</a>
       <span class="footer-divider">|</span>
-      <a href="../../contact.html">お問い合わせ</a>
+      <a href="../../contact.html" data-lang-key="footer-contact">お問い合わせ</a>
       <span class="footer-divider">|</span>
-      <a href="../../privacy.html">プライバシーポリシー</a>
+      <a href="../../privacy.html" data-lang-key="footer-privacy">プライバシーポリシー</a>
       <span class="footer-divider">|</span>
-      <a href="../../terms.html">利用規約</a>
+      <a href="../../terms.html" data-lang-key="footer-terms">利用規約</a>
     </div>
     <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
   </div>
 </footer>
 
+<!-- 共通サイト JS (ヘッダー/サイドバーの includes 読み込みと言語切替) -->
+<script src="../../js/main.js"></script>
+<!-- ツール固有 JS (PDF 解析・OCR・Excel 出力) -->
 <script type="module" src="./app.js"></script>
 </body>
 </html>
