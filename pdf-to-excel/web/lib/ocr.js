@@ -74,19 +74,17 @@ async function getWorker(onStatus, dpi) {
 //
 // Canvas size is capped so we stay under both:
 //   - Browser canvas limit: ~268M pixels area (16384²) on Chrome
-//   - Tesseract.js WASM memory: practical limit ~50M pixels per image
-//     Beyond that, worker.recognize() throws "Error attempting to read
-//     image" because the WASM heap (default ~1-2GB) can't hold the raw
-//     pixels + LSTM model state + working buffers simultaneously.
+//   - Tesseract.js WASM memory: practical limit varies by environment;
+//     conservative cap ~24M pixels avoids "Error attempting to read
+//     image" failures we have observed on A1-sized pages.
 //
-// We optimise for the tighter constraint (Tesseract). An A1 sheet at
-// 600 DPI = 278M pixels, way over both limits. With MAX_AREA = 50M the
-// effective DPI on A1 is ~254, which is still readable for table
-// dimensions printed at 6-8pt on A1 paper. A3 / Letter pages stay at
-// the full 600 DPI.
+// Empirically, 60-70 MP canvases caused failures even with a 0.7×
+// retry (which still produces 31 MP). 24 MP gives plenty of headroom
+// while keeping A1 readable: A1 = 1684×2384 pt → ~174 DPI, A3 → ~400
+// DPI, Letter → 600 DPI (no cap needed).
 async function renderPage(page, dpi) {
-  const MAX_DIM = 12000;
-  const MAX_AREA = 64_000_000;
+  const MAX_DIM = 10000;
+  const MAX_AREA = 24_000_000;
   const baseVP = page.getViewport({ scale: 1 });
   let scale = dpi / 72;
   const projW = baseVP.width * scale;
@@ -142,35 +140,101 @@ function tessWordsToEntries(words) {
   })).filter(w => w.str && w.conf >= 35);
 }
 
-/**
- * Render the page and OCR it with three PSM modes (sparse + block + auto).
- * Returns merged unique words. Three passes take ~3x the time of one but
- * recover text that any single segmentation mode would miss.
- */
-async function recognizeWithRetry(worker, canvas, psm, label, onStatus, progress) {
-  onStatus && onStatus(label, progress);
-  try {
-    await worker.setParameters({ tessedit_pageseg_mode: psm });
-    return await worker.recognize(canvas);
-  } catch (err) {
-    // "Error attempting to read image" hits when the canvas exceeds the
-    // worker's WASM memory. As a last-ditch fallback, downscale the
-    // canvas in-place and retry once. This keeps OCR functional even on
-    // pages that slipped past our render-time cap.
-    const msg = err?.message || err?.toString?.() || '';
-    if (!/attempting to read image|out of memory/i.test(msg)) throw err;
-    const scaled = document.createElement('canvas');
-    const f = 0.7;
-    scaled.width = Math.floor(canvas.width * f);
-    scaled.height = Math.floor(canvas.height * f);
-    const sctx = scaled.getContext('2d');
-    sctx.fillStyle = 'white';
-    sctx.fillRect(0, 0, scaled.width, scaled.height);
-    sctx.drawImage(canvas, 0, 0, scaled.width, scaled.height);
-    console.warn(`[ocrPage] Tesseract failed at ${canvas.width}×${canvas.height}, retrying at ${scaled.width}×${scaled.height}`);
-    onStatus && onStatus(`${label} (リトライ縮小)`, progress);
-    return await worker.recognize(scaled);
+function downscale(canvas, factor) {
+  const c = document.createElement('canvas');
+  c.width = Math.max(1, Math.floor(canvas.width * factor));
+  c.height = Math.max(1, Math.floor(canvas.height * factor));
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = 'white';
+  ctx.fillRect(0, 0, c.width, c.height);
+  ctx.imageSmoothingEnabled = true;
+  ctx.imageSmoothingQuality = 'high';
+  ctx.drawImage(canvas, 0, 0, c.width, c.height);
+  return c;
+}
+
+function canvasToBlob(canvas, type = 'image/png') {
+  return new Promise((resolve, reject) => {
+    canvas.toBlob(b => {
+      if (b) resolve(b);
+      else reject(new Error(`canvas.toBlob(${type}) returned null (size ${canvas.width}×${canvas.height})`));
+    }, type);
+  });
+}
+
+async function resetWorker(dpi) {
+  if (workerPromise) {
+    try {
+      const w = await workerPromise;
+      await w.terminate?.();
+    } catch (e) {
+      console.warn('[resetWorker] terminate failed:', e?.message ?? e);
+    }
   }
+  workerPromise = null;
+  workerDpi = null;
+  return getWorker(null, dpi);
+}
+
+const isImgErr = err => {
+  const msg = err?.message || err?.toString?.() || '';
+  return /attempting to read image|out of memory|RuntimeError|memory access/i.test(msg);
+};
+
+/**
+ * Try to recognize a canvas with progressive fallbacks:
+ *   1. canvas at full size
+ *   2. canvas at 0.6× (worker reset)
+ *   3. canvas at 0.35× via PNG Blob (worker reset)
+ *   4. canvas at 0.2× via JPEG Blob (worker reset)
+ *
+ * Each fallback is tried only if the previous one failed with an
+ * "image read" / OOM-type error. Other errors propagate immediately.
+ */
+async function recognizeWithRetry(worker, canvas, psm, label, onStatus, progress, dpi) {
+  await worker.setParameters({ tessedit_pageseg_mode: psm });
+  const attempts = [
+    { scale: 1.0, via: 'canvas', reset: false },
+    { scale: 0.6, via: 'canvas', reset: true  },
+    { scale: 0.35, via: 'blob-png', reset: true },
+    { scale: 0.2, via: 'blob-jpeg', reset: true },
+  ];
+
+  let lastErr = null;
+  let activeWorker = worker;
+  for (let i = 0; i < attempts.length; i++) {
+    const a = attempts[i];
+    const stepLabel = i === 0 ? label : `${label} (リトライ ${i}: ${a.via} ${(a.scale*100)|0}%)`;
+    onStatus && onStatus(stepLabel, progress);
+    let input;
+    let inputDesc;
+    try {
+      const targetCanvas = a.scale === 1.0 ? canvas : downscale(canvas, a.scale);
+      inputDesc = `${targetCanvas.width}×${targetCanvas.height} (${(targetCanvas.width*targetCanvas.height/1e6).toFixed(1)}MP)`;
+      if (a.via === 'canvas') {
+        input = targetCanvas;
+      } else if (a.via === 'blob-png') {
+        input = await canvasToBlob(targetCanvas, 'image/png');
+        inputDesc += ` PNG blob ${(input.size/1e6).toFixed(1)}MB`;
+      } else {
+        input = await canvasToBlob(targetCanvas, 'image/jpeg');
+        inputDesc += ` JPEG blob ${(input.size/1e6).toFixed(1)}MB`;
+      }
+      if (a.reset) {
+        console.log(`[ocrPage] resetting worker before retry ${i}`);
+        activeWorker = await resetWorker(dpi);
+        await activeWorker.setParameters({ tessedit_pageseg_mode: psm });
+      }
+      console.log(`[ocr ${label}] attempt ${i+1}: ${inputDesc}`);
+      return await activeWorker.recognize(input);
+    } catch (err) {
+      lastErr = err;
+      const msg = err?.message || err?.toString?.() || String(err);
+      console.warn(`[ocr ${label}] attempt ${i+1} (${inputDesc ?? a.via}) failed: ${msg}`);
+      if (!isImgErr(err)) throw err; // non-recoverable error type
+    }
+  }
+  throw lastErr ?? new Error(`OCR ${label} failed after all retries`);
 }
 
 export async function ocrPage(page, onStatus, dpi = 600) {
@@ -178,15 +242,20 @@ export async function ocrPage(page, onStatus, dpi = 600) {
   const { canvas, effectiveDpi } = await renderPage(page, dpi);
   console.log(`[ocrPage] canvas=${canvas.width}×${canvas.height} (${(canvas.width*canvas.height/1e6).toFixed(1)}MP) effectiveDpi=${effectiveDpi}`);
 
-  const worker = await getWorker(onStatus, effectiveDpi);
+  let worker = await getWorker(onStatus, effectiveDpi);
 
-  const r1 = await recognizeWithRetry(worker, canvas, '11', 'OCR pass 1/3 (sparse, 高精度)', onStatus, 0.05);
+  const r1 = await recognizeWithRetry(worker, canvas, '11', 'OCR pass 1/3 (sparse, 高精度)', onStatus, 0.05, effectiveDpi);
   const w1 = tessWordsToEntries(r1.data.words);
 
-  const r2 = await recognizeWithRetry(worker, canvas, '6', 'OCR pass 2/3 (block, 高精度)', onStatus, 0.35);
+  // After a retry, the worker variable may have been replaced internally
+  // (workerPromise is reset). Re-fetch to be sure subsequent passes use
+  // the current worker.
+  worker = await getWorker(onStatus, effectiveDpi);
+  const r2 = await recognizeWithRetry(worker, canvas, '6', 'OCR pass 2/3 (block, 高精度)', onStatus, 0.35, effectiveDpi);
   const w2 = tessWordsToEntries(r2.data.words);
 
-  const r3 = await recognizeWithRetry(worker, canvas, '3', 'OCR pass 3/3 (auto, 高精度)', onStatus, 0.7);
+  worker = await getWorker(onStatus, effectiveDpi);
+  const r3 = await recognizeWithRetry(worker, canvas, '3', 'OCR pass 3/3 (auto, 高精度)', onStatus, 0.7, effectiveDpi);
   const w3 = tessWordsToEntries(r3.data.words);
 
   return mergeWords(mergeWords(w1, w2), w3);
