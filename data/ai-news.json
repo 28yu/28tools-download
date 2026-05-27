@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-26T05:05:29.311860",
+  "lastUpdated": "2026-05-27T05:17:07.046432",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -24,8 +24,63 @@
       "language": "en"
     },
     {
+      "title": "「画像認識AI 業界別・ユースケース集」を公開！製造・小売・建設などの現場課題を解決～自社に最適な「活用モデル」が見つかる実践ガイド～",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/image-recognition-manual/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、検品や監視などの目視作業を自動化するノウハウをまとめた「画像認識AI 業界別・ユースケース集」を、2026年5月27日（水）に公開し [...] The post 「画像認識AI 業界別・ユースケース集」を公開！製造・小売・建設などの現場課題を解決～自社に最適な「活用モデル」が見つかる実践ガイド～ first ...",
+      "publishedDate": "Wed, 27 May 2026 02:00:58 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/image-recognition-manual-000.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTで写真が送れない原因と対処法｜画像添付の制限や設定を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-unable-send-photo/",
+      "description": "「ChatGPTに写真を送ろうとしたのに、なぜかアップロードできない」「送信ボタンを押しても何も反応しない」という経験はありませんか？写真が送れない主な原因には、プランの制限、ファイル形式のミス、端末の設定不備など複数あ [...] The post ChatGPTで写真が送れない原因と対処法｜画像添付の制限や設定を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 27 May 2026 01:45:11 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/unablesendpicturemain.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTに写真を送る方法｜PC・スマホ別の送り方と画像添付を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-send-photo/",
+      "description": "「ChatGPTに写真を送れるって聞いたけど、どうやるの？」と思ったことはないでしょうか。ChatGPTは文字を入力して使うイメージが強いですが、写真や画像を送って内容を読み取らせる機能も、無料で利用可能です。 画像読み [...] The post ChatGPTに写真を送る方法｜PC・スマホ別の送り方と画像添付を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 27 May 2026 01:31:03 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/sendpicturemain.png",
+      "language": "ja"
+    },
+    {
+      "title": "アイスマイリー、6/10（水）から3日間「AI NATIVE EXPO 2026」に出展",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-native-expo-2026/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年6月10日（水）～12日（金）に幕張メッセにて開催される「AI NATIVE EXPO 2026」にブース出展をします。 [...] The post アイスマイリー、6/10（水）から3日間「AI NATIVE EXPO 2026」に出展 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Wed, 27 May 2026 01:00:37 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/1200×630.png",
+      "language": "ja"
+    },
+    {
+      "title": "WEB雑誌「カスタマーサポート向けAI特集号」顧客対応はAIが行う時代に！コンタクトセンターの業務効率化とCX向上を実現する最新事例を紹介",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/202605webmagazine/",
+      "description": "AIポータルメディア「AIsmiley」は、この度、AI導入推進の一環として、“カスタマーサポート向けAI活用”のユースケースやサービスの特長をまとめた「カスタマーサポート向けAI特集号」をリリースしました。 本資料では [...] The post WEB雑誌「カスタマーサポート向けAI特集号」顧客対応はAIが行う時代に！コンタクトセンターの業務効率化とCX向上を実現する最新事例を紹介 firs...",
+      "publishedDate": "Wed, 27 May 2026 01:00:17 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/1030_1200x628_2-1.jpg",
+      "language": "ja"
+    },
+    {
       "title": "We’re announcing new community investments in Missouri.",
-      "titleJa": "私たちはミズーリ州における新たなコミュニティへの投資を発表します。",
+      "titleJa": "私たちはミズーリ州での新たなコミュニティ投資を発表します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
       "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
       "publishedDate": "Wed, 20 May 2026 20:40:00 +0000",
@@ -57,21 +112,10 @@
       "language": "en"
     },
     {
-      "title": "Green steel startup Boston Metal is doubling down on critical metals",
-      "titleJa": "環境に優しい鉄鋼のスタートアップ、ボストン・メタルは重要な金属の生産を倍増している",
-      "link": "https://www.technologyreview.com/2026/05/20/1137523/boston-metal-funding-critical-metals/",
-      "description": "The startup Boston Metal has raised a $75 million funding round to produce critical metals, MIT Technology Review can exclusively report.&#160;&#160; The company has been known largely for its efforts...",
-      "publishedDate": "Wed, 20 May 2026 13:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/Image-of-Boston-Metals-subsidiary-in-Brazil.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
-      "titleJa": "OpenAI モデルは離散幾何学における中心予想を反証しました",
-      "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
-      "description": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics....",
+      "title": "The next phase of OpenAI’s Education for Countries",
+      "titleJa": "OpenAI の国向け教育の次の段階",
+      "link": "https://openai.com/index/the-next-phase-of-education-for-countries",
+      "description": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes....",
       "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -90,10 +134,10 @@
       "language": "en"
     },
     {
-      "title": "The next phase of OpenAI’s Education for Countries",
-      "titleJa": "OpenAI の国向け教育の次の段階",
-      "link": "https://openai.com/index/the-next-phase-of-education-for-countries",
-      "description": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes....",
+      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+      "titleJa": "OpenAI モデルは離散幾何学における中心予想を反証しました",
+      "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
+      "description": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics....",
       "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -145,6 +189,127 @@
       "language": "en"
     },
     {
+      "title": "Rethinking organizational design in the age of agentic AI",
+      "titleJa": "エージェント型 AI 時代の組織デザインを再考する",
+      "link": "https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/",
+      "description": "Amid rapidly growing adoption of enterprise-level AI agents, there’s a disconnect emerging between ambition and execution.&#160; Although 85% of organizations say they want to be agentic within the ne...",
+      "publishedDate": "Tue, 26 May 2026 14:54:10 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/MIT-Abstract-Thumbnail-1-_-V2-1.png",
+      "language": "en"
+    },
+    {
+      "title": "The Download: puncturing the AI jobs panic",
+      "titleJa": "ダウンロード: AI ジョブのパンクによるパニック",
+      "link": "https://www.technologyreview.com/2026/05/26/1138028/the-download-ai-jobs-data/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A reality check on the AI jobs hysteria Despite th...",
+      "publishedDate": "Tue, 26 May 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/06/20230509-MITSanders-0179-h.jpeg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "Google検索が大型アップデート。AIモードのモデルを「Gemini 3.5 Flash」へ刷新、エージェント機能を追加",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/google-gemini-3-5-flash-ai-search/",
+      "description": "Googleは、Google検索のAIモードにおけるデフォルトモデルを「Gemini 3.5 Flash」へアップグレードし、エージェント機能などの新機能を追加しました。過去25年間で最大規模のアップグレードにより、検索 [...] The post Google検索が大型アップデート。AIモードのモデルを「Gemini 3.5 Flash」へ刷新、エージェント機能を追加 first appear...",
+      "publishedDate": "Tue, 26 May 2026 09:19:42 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/google-2026-gemini-search-eye3.png",
+      "language": "ja"
+    },
+    {
+      "title": "パソナJOB HUBとEpicAI、「AI活用型BPO」共同事業化に向け協業開始。建設業界の業務整理とAI定着を推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/pasonajobhub-epicai-bpo/",
+      "description": "パソナJOB HUBとEpicAIは、建設業界の「AI活用型BPO」共同事業化に向け、協業を開始しました。 このニュースのポイント パソナJOB HUBとEpicAIは、建設業界の「AI活用型BPO」共同事業化に向け、協 [...] The post パソナJOB HUBとEpicAI、「AI活用型BPO」共同事業化に向け協業開始。建設業界の業務整理とAI定着を推進 first appeared ...",
+      "publishedDate": "Tue, 26 May 2026 09:14:54 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/pasona-jobhub.png",
+      "language": "ja"
+    },
+    {
+      "title": "A reality check on the AI jobs hysteria",
+      "titleJa": "AIの雇用ヒステリーに関する現実の確認",
+      "link": "https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/",
+      "description": "Haven’t you heard? White-collar jobs are going away, decimated by AI. Waves of layoffs in the tech sector (most recently at Coinbase and Meta and Cisco) are said to presage what will soon come for all...",
+      "publishedDate": "Tue, 26 May 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/ai-jobs1b.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "It’s time to address the looming crisis in entry-level work.",
+      "titleJa": "初心者レベルの仕事に差し迫った危機に対処する時期が来ています。",
+      "link": "https://www.technologyreview.com/2026/05/26/1137865/its-time-to-address-the-looming-crisis-in-entry-level-work/",
+      "description": "Artificial intelligence has not so far produced a clean story of mass unemployment. Aggregate employment in developed countries remains broadly stable, and recent assessments have found limited eviden...",
+      "publishedDate": "Tue, 26 May 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/ladder3b.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "JTP、「Third AI 生成AIソリューション」にAIアバター対話機能を追加。接客・教育業務を支援",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/jtp-ai-avatar-third-ai/",
+      "description": "JTPは、生成AIのビジネス活用を支援する「Third AI 生成AIソリューション」に、人物の顔・声の特徴をもとに生成したAIアバターによる対話サービスを追加しました。 このニュースのポイント JTP、生成AIのビジネ [...] The post JTP、「Third AI 生成AIソリューション」にAIアバター対話機能を追加。接客・教育業務を支援 first appeared on AIポー...",
+      "publishedDate": "Tue, 26 May 2026 08:44:37 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/jtp-thirdai.png",
+      "language": "ja"
+    },
+    {
+      "title": "AI開発の4つのプロセスとは？開発環境やプログラミング言語も解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/ai-development/",
+      "description": "「自社オリジナルのAIを開発して業務効率化や新サービスを実現したい」「DX・生成AIの時代に乗り遅れたくない」 以上のように、さまざまな理由でAI開発を検討している企業は多いはずです。 AIは幅広いビジネスで活躍するポテ [...]...",
+      "publishedDate": "Tue, 26 May 2026 08:30:24 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-development.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Stable Diffusion】ローカル環境を構築して自由に遊ぶ方法を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/stablediffusion-construction/",
+      "description": "Stable Diffusionは、テキストを入力するだけで高品質な画像を生成できる無料のAIです。ローカル環境を構築すれば、生成枚数やプロンプトの制限なく使い放題になります。 とはいえ「何から始めればいい？」「PCのス [...]...",
+      "publishedDate": "Tue, 26 May 2026 07:15:39 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/09/stablediffusion-construction_202511-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIの導入で医療現場にも変化が！？実際の導入事例や医療特化AIサービスを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/medical-care/",
+      "description": "近年、さまざまな業界で導入が進んでいる生成AIですが、医療現場でも導入が進んでいます とくに、慢性的な人手不足に陥っている現状を打破する手段として注目されており、導入実験をおこなっている病院では、医師の書類作成業務を従来 [...]...",
+      "publishedDate": "Tue, 26 May 2026 06:32:03 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/medical-care_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Fooocusの使い方を初心者向けに解説！インストールから画像生成の実践まで紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/fooocus/",
+      "description": "Fooocusは、難しい設定をしなくても画像を生成できるオープンソースの画像生成AIです。プロンプトを入力したり、作りたい画像のスタイルを選んだりするだけで、高品質な画像を手軽に作成できます。 Stable Diffus [...]...",
+      "publishedDate": "Tue, 26 May 2026 05:52:51 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/01/AIモン_Fooocus-1024x576.jpg",
+      "language": "ja"
+    },
+    {
       "title": "Dream Machine（Luma AI）とは？使い方・料金・商用利用・他ツール比較を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/dream-machine/",
@@ -153,6 +318,28 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/dream-machine_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【完全版】Claude Codeの使い方・料金ガイド｜VS Code・Web版の比較も",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-code-vscode-web/",
+      "description": "「毎日の面倒なファイル整理やデータ集計、AIに丸投げできたらいいのに……」 そんな願いを叶えるのが、Anthropic社が提供するAIエージェント「Claude Code」です。 本来はエンジニア向けのコーディング支援ツ [...] The post 【完全版】Claude Codeの使い方・料金ガイド｜VS Code・Web版の比較も first appeared on AIポータルメディアAI...",
+      "publishedDate": "Tue, 26 May 2026 04:15:27 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/ClaudeCode.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "IDaaSとは？基本機能から選び方、導入実態までわかりやすく解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/idaas-identity-as-a-service/",
+      "description": "クラウドサービスやSaaSの利用が業務に欠かせない今、社員のID・パスワード管理やセキュリティリスクに悩む情シス担当者が増えています。こうした課題を解決する仕組みとして注目を集めているのが「IDaaS（Identity [...] The post IDaaSとは？基本機能から選び方、導入実態までわかりやすく解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Tue, 26 May 2026 04:13:35 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/idaas.jpg",
       "language": "ja"
     },
     {
@@ -175,28 +362,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Aleph-2.0-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【開催報告】『AIsmiley Community』第1回目オフラインイベントを開催、生成AIの学びと交流の場に",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/report-on-the-first-aismiley-community-offline-event/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年5月21日（木）19時より、生成AIのトレンドや社内事例に関するトークセッションおよび交流会イベントを開催しました。 本イ [...] The post 【開催報告】『AIsmiley Community』第1回目オフラインイベントを開催、生成AIの学びと交流の場に first appeared on...",
-      "publishedDate": "Tue, 26 May 2026 01:30:07 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/アイスマイリーコミュニティアイキャッチ画像2.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTの名前変更方法と本名登録の注意点をわかりやすく解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-name-change/",
-      "description": "ChatGPTを使い始めてから、アカウントに登録した名前を変更したいと思ったことはありませんか。本名で登録してしまったけれど匿名にしたい、あるいは表示名を整えたいという方は少なくありません。 この記事では、ChatGPT [...] The post ChatGPTの名前変更方法と本名登録の注意点をわかりやすく解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 26 May 2026 01:03:05 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/chatgptnamechange.png",
       "language": "ja"
     },
     {
@@ -354,50 +519,6 @@
       "language": "en"
     },
     {
-      "title": "Anthropic’s Code with Claude showed off coding’s future—whether you like it or not",
-      "titleJa": "Anthropic の Code with Claude は、好むと好まざるにかかわらず、コーディングの未来を誇示しました",
-      "link": "https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/",
-      "description": "The vibes were strong at Code with Claude, Anthropic’s two-day event for software developers in London that kicked off on May 19, the same day as Google’s I/O in Palo Alto. (A coincidence, not a flex,...",
-      "publishedDate": "Thu, 21 May 2026 14:30:45 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/PXL_20260519_113915550.MP_.jpg?w=2987",
-      "language": "en"
-    },
-    {
-      "title": "The Download: online safety’s future and climate tech’s big pivot",
-      "titleJa": "ダウンロード: オンラインの安全性の未来と気候変動テクノロジーの大きな軸",
-      "link": "https://www.technologyreview.com/2026/05/21/1137733/the-download-online-safety-climate-tech-pivot/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Tech researchers are suing the Trump administratio...",
-      "publishedDate": "Thu, 21 May 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/06/AF-MIT-JUAREZ-MAR2023-029.jpeg?w=3000",
-      "language": "en"
-    },
-    {
-      "title": "AdventHealth advances whole-person care with OpenAI",
-      "titleJa": "AdventHealth が OpenAI で全人ケアを推進",
-      "link": "https://openai.com/index/adventhealth",
-      "description": "AdventHealth is using ChatGPT for Healthcare to streamline workflows, reduce administrative burden, and return more time to patient care....",
-      "publishedDate": "Thu, 21 May 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "ChatGPTで画像生成できない原因と対処法を症状別に解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-unable-generate-image/",
-      "description": "ChatGPTで画像を生成しようとしたのに、なぜかうまくいかずに困っていませんか？ 実は、画像生成ができない理由には、プランやモデルの設定ミス、利用回数の上限、プロンプトの書き方など、さまざまな要因があります。 この記事 [...] The post ChatGPTで画像生成できない原因と対処法を症状別に解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 21 May 2026 08:06:56 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/unablegeneratemain.png",
-      "language": "ja"
-    },
-    {
       "title": "ChatGPT×Excelで業務を自動化！プログラミング不要な連携方法・関数・料金まで徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/about-excellabs",
@@ -431,124 +552,25 @@
       "language": "ja"
     },
     {
-      "title": "Google、動画生成AI「Gemini Omni」を発表。テキスト・画像・動画を組み合わせて映像を生成",
+      "title": "ついにMonoランタイムを脱却する「.NET MAUI」。Xamarinから続いてきたMonoランタイムをCoreCLRに移行",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gemini-omni-video-creation/",
-      "description": "Googleは、複数の入力データをもとに動画を生成・編集できる新モデル「Gemini Omni」を発表しました。画像や音声、動画、テキストを組み合わせて映像を生成できるほか、自然言語による指示での動画編集にも対応していま [...] The post Google、動画生成AI「Gemini Omni」を発表。テキスト・画像・動画を組み合わせて映像を生成 first appeared on AIポ...",
-      "publishedDate": "Mon, 25 May 2026 08:48:51 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/Gemini-Omni.png",
-      "language": "ja"
-    },
-    {
-      "title": "アドバンスト・メディアのAI音声認識ソリューションが児童相談所業務を支援。電話応対の記録を作成",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/zidou-ai-amivoice-communication-suite/",
-      "description": "アドバンスト・メディアが提供するAI音声認識ソリューション「AmiVoice Communication Suite」が、東京23区内の自治体が運営する児童相談所に導入されました。電話相談の記録作成業務を支援します。 こ [...] The post アドバンスト・メディアのAI音声認識ソリューションが児童相談所業務を支援。電話応対の記録を作成 first appeared on AIポータルメデ...",
-      "publishedDate": "Mon, 25 May 2026 08:00:14 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/zidousoudanzyo.png",
-      "language": "ja"
-    },
-    {
-      "title": "【Project Genie】Googleの世界生成AIとは？仕組み・料金・使い方をわかりやすく解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/project-genie/",
-      "description": "AIが世界を作ると聞くと、それはまだ先の事！と思う方が多いでしょう。しかし2026年1月29日（米国時間）「GoogleはProject Genie（プロジェクト・ジーニー）」という、文章を入力するだけで3次元の仮想世界 [...]...",
-      "publishedDate": "Mon, 25 May 2026 07:51:27 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/mononet_mauixamarinmonocoreclr.html",
+      "description": "マイクロソフトは、シングルコードでiOS、Android、Windows、macOSに対応するUIフレームワーク「.NET MAUI」のiOSとAndroidにおけるランタイムが、今秋リリース予定の.NET 11でCoreCLRに移行するこ......",
+      "publishedDate": "2026-05-26T15:42:28Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/project-genie_2603-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/HI8FcbNXUAAOIFc.jpg",
       "language": "ja"
     },
     {
-      "title": "Google Flowとは？動画生成＆編集ができる生成AI！特徴や商用利用について徹底解説",
+      "title": "Docker専用のAIエージェント「Gordon」が正式リリース。Dockerについて何でも答えてくれてエラーも修正してくれる。無料アカウントでも利用可能",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/google-flow/",
-      "description": "みなさん！2025年5月21日の「Google I/O 2025」で発表された、動画生成AIツール「Flow」はご存知ですか？ このFlowは、動画生成AI「Veo2 / Veo3」とその他動画編集機能がセットになった便 [...]...",
-      "publishedDate": "Mon, 25 May 2026 07:13:31 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/dockeraigordondocker.html",
+      "description": "Docker社は、Docker DesktopとDocker CLIの新機能として、Dockerに関する質問への回答やベストプラクティスの提案、エラーの修正対応などを行ってくれるAIエージェント「Gordon」が正式版になったと発表しました......",
+      "publishedDate": "2026-05-26T15:40:27Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/05/google-flow-1-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Geminiアプリの使い方まとめ！iPhone・Androidのインストール方法から最新機能まで徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/gemini-app/",
-      "description": "2024年5月、GeminiアプリがAndroid向けアプリとしてリリース。2024年11月にはiPhone向けにもリリースされました。現在はブラウザ版とスマホ向けのモバイルアプリ版、開発者向けのGemini APIとい [...]...",
-      "publishedDate": "Mon, 25 May 2026 05:47:19 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/11/gemini-app_2601-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPT無料版の制限とは？回数上限・画像生成・解除方法を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-freeplan-limit/",
-      "description": "ChatGPT無料版を使っていると、突然「制限に達しました」と表示されて困った経験はないでしょうか。 本記事では、無料版の制限内容（回数・画像・文字数）、有料プランとの違い、制限に達したときの対処法を整理して解説します。 [...] The post ChatGPT無料版の制限とは？回数上限・画像生成・解除方法を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 25 May 2026 05:32:36 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/freeplanchatgpt.png",
-      "language": "ja"
-    },
-    {
-      "title": "Google GeminiにPersonal Intelligence機能が登場！特徴や使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/google-gemini-personal-intelligence/",
-      "description": "2026年1月14日、Google Geminiの新機能「Personal Intelligence」が発表されました。この機能は、GeminiがGmailやGoogleフォトなどと安全に接続して個人データを参照し、ユー [...]...",
-      "publishedDate": "Mon, 25 May 2026 04:46:48 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/01/google-gemini-personal-intelligence_2601-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "GPT-5.5とは？特徴・料金・商用利用・使い方を徹底解説【2026年5月】",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gpt-5-5-about/",
-      "description": "2026年4月23日、OpenAIが最新フラッグシップモデル「GPT-5.5」を発表しました。前モデルのアップデートに留まらず、新しい設計思想に基づき「プロンプト指示への応答」から「タスクの自律完遂」へと役割が広がってい [...] The post GPT-5.5とは？特徴・料金・商用利用・使い方を徹底解説【2026年5月】 first appeared on AIポータルメディアAIsmile...",
-      "publishedDate": "Fri, 22 May 2026 09:35:11 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/gpt-5-5-about_ic.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTで夢小説を書く方法｜プロンプト・コツ・注意点まで解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-yumeshousetsu-how-to/",
-      "description": "「推しとの妄想を小説にしたいけど、文章を書くのは苦手」「プロンプトをどう書けばいいか分からない」そんな悩みを持つ人に向けて、本記事ではChatGPTを使った夢小説の書き方を、プロンプトの組み立て方からキャラ崩壊の防ぎ方、 [...] The post ChatGPTで夢小説を書く方法｜プロンプト・コツ・注意点まで解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 22 May 2026 07:00:09 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/yumesyousetu.png",
-      "language": "ja"
-    },
-    {
-      "title": "Google、Geminiアプリのアップデートを発表。自律型AIエージェント「Gemini Spark」など新機能を追加",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/google-gemini-update-geminispark/",
-      "description": "Googleは、Geminiアプリのアップデートを発表しました。タスクを代行する自律型パーソナルAIエージェント「Gemini Spark」などの新機能を追加します。 このニュースのポイント Google、Geminiア [...] The post Google、Geminiアプリのアップデートを発表。自律型AIエージェント「Gemini Spark」など新機能を追加 first appeare...",
-      "publishedDate": "Fri, 22 May 2026 03:11:51 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/Geminisparkeye.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTで恋愛相談する方法｜プロンプトのコツや危険性・注意点を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-love-advice/",
-      "description": "「気になる人への告白、どうすればいい？」「最近彼氏が冷たい気がする……」このような恋愛の悩みをChatGPTに打ち明ける人が増えています。 本記事では、ChatGPTへの恋愛相談で的確なアドバイスを引き出すプロンプトの書 [...] The post ChatGPTで恋愛相談する方法｜プロンプトのコツや危険性・注意点を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 22 May 2026 02:28:14 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/renaisoudanmain.png",
+      "thumbnail": "https://www.publickey1.jp/2026/gordon-ga03.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/agent-window-vscode1120.png",
-      "language": "ja"
-    },
-    {
-      "title": "Node.js、Dateに代わる日時処理「Temporal」がデフォルト有効化。TemporalはChrome/Edge/Firefox/Node.jsで利用可能に",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/nodejsdatetemporaltemporalchromeedgefirefoxnodejs.html",
-      "description": "JavaScriptランタイム「Node.js」の最新バージョンとなる「Node.js 26」正式版がリリースされました。 Node.js 26では、これまでJavaScriptにおいて日付処理に使われてきたDateに代わる新たなAPIとし......",
-      "publishedDate": "2026-05-13T15:49:36Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/nodejs26ga.png",
-      "language": "ja"
-    },
-    {
-      "title": "AIを高速にするPythonライクな新言語「Mojo」、ベータ版に到達",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/aipythonmojo.html",
-      "description": "Modular社は、AIを高速に実行することを目指したPythonライクな新言語「Mojo」のベータ版公開を発表しました。今後数カ月以内に正式版が登場する予定です。 Mojo 1.0 is in beta! Beta 1 marks th......",
-      "publishedDate": "2026-05-13T15:48:40Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/FKPNuXLe.jpg",
       "language": "ja"
     }
   ]
