@@ -920,6 +920,11 @@ function initTranslations() {
             en: 'Overlay two PDFs in the browser and highlight differences in color. Safe comparison without server upload.',
             zh: '在浏览器中叠加两个PDF并以彩色显示差异。无需上传服务器，安全比较。'
         },
+        'index-category-pdf-excel-desc': {
+            ja: '構造図 PDF（梁・柱リスト）から符号・断面寸法・材質を自動抽出して Excel 化。Revit ファミリタイプ作成に直結。',
+            en: 'Auto-extract symbols, section dimensions, and materials from structural PDFs (beam/column lists) into Excel. Direct path to Revit family type creation.',
+            zh: '从结构图PDF（梁/柱列表）自动提取符号、截面尺寸和材质并生成Excel。直接对接Revit族类型创建。'
+        },
         'index-category-news-desc': {
             ja: 'BIM・Revit・建築業界の最新ニュースを自動収集。業界トレンドを毎日チェック。（準備中）',
             en: 'Auto-collect the latest news from BIM, Revit, and architecture industries. Check industry trends daily. (Coming Soon)',
