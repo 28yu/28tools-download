@@ -1,7 +1,12 @@
 // ========================================
 // 28 Tools Download Center - Main JavaScript
-// Version: 7.3 (サポート情報・インストール手順の汎用化)
+// Version: 7.4 (includes キャッシュバスト対応)
 // ========================================
+
+// includes/header.html と includes/sidebar.html を fetch() するときの
+// クエリ文字列。includes/* を編集したらここをインクリメントする。
+// (CDN edge cache が古いインクルードを返す問題への対処)
+const INCLUDES_VERSION = '20260527-2';
 
 // グローバル変数
 let currentLanguage = 'ja';
@@ -118,11 +123,15 @@ async function loadHeader() {
     }
 
     try {
-        const headerPath = getIncludesBasePath() + 'header.html';
+        // CDN edge cache (Fastly / Cloudflare) が古い sidebar.html を
+        // 返すことがあるので、cache: 'no-store' + クエリ文字列で確実に
+        // フレッシュな内容を取得する。include 1 ファイルは < 2KB なので
+        // キャッシュしないコストは無視できる。
+        const headerPath = getIncludesBasePath() + 'header.html?v=' + INCLUDES_VERSION;
 
         console.log(`📄 Loading header from: ${headerPath}`);
 
-        const response = await fetch(headerPath);
+        const response = await fetch(headerPath, { cache: 'no-store' });
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -154,11 +163,11 @@ async function loadSidebar() {
     }
 
     try {
-        const sidebarPath = getIncludesBasePath() + 'sidebar.html';
+        const sidebarPath = getIncludesBasePath() + 'sidebar.html?v=' + INCLUDES_VERSION;
 
         console.log(`📄 Loading sidebar from: ${sidebarPath}`);
 
-        const response = await fetch(sidebarPath);
+        const response = await fetch(sidebarPath, { cache: 'no-store' });
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
