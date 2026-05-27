@@ -96,6 +96,20 @@ document.addEventListener('DOMContentLoaded', function() {
 // 2. 共通ヘッダー読み込み
 // ========================================
 
+// includes/ への相対パスを URL の階層深さから自動算出する。
+// - /index.html         → 'includes/'
+// - /manual/foo.html    → '../includes/'
+// - /pdf-to-excel/web/  → '../../includes/'
+// body.manual-page クラスに依存しなくなるので、新しい階層のページ
+// (pdf-to-excel/web/ など) を追加するときに main.js を変更せずに済む。
+function getIncludesBasePath() {
+    const path = window.location.pathname;
+    const segs = path.split('/').filter(Boolean);
+    // ディレクトリ表記 (末尾 /) と ファイル表記 (foo.html) で深さ計算が違う
+    const depth = path.endsWith('/') ? segs.length : Math.max(0, segs.length - 1);
+    return depth === 0 ? 'includes/' : '../'.repeat(depth) + 'includes/';
+}
+
 async function loadHeader() {
     const headerContainer = document.getElementById('header-container');
     if (!headerContainer) {
@@ -104,26 +118,24 @@ async function loadHeader() {
     }
 
     try {
-        // パス解決（マニュアルページ対応）
-        const isManualPage = document.body.classList.contains('manual-page');
-        const headerPath = isManualPage ? '../includes/header.html' : 'includes/header.html';
-        
+        const headerPath = getIncludesBasePath() + 'header.html';
+
         console.log(`📄 Loading header from: ${headerPath}`);
-        
+
         const response = await fetch(headerPath);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        
+
         const headerHTML = await response.text();
         headerContainer.innerHTML = headerHTML;
-        
+
         console.log('✅ Header loaded successfully');
-        
+
         // ヘッダー読み込み後の初期化
         initLanguageSwitcher();
         updateAllContent();
-        
+
     } catch (error) {
         console.error('❌ Error loading header:', error);
         headerContainer.innerHTML = '<p style="color: red;">ヘッダーの読み込みに失敗しました</p>';
@@ -142,9 +154,7 @@ async function loadSidebar() {
     }
 
     try {
-        // パス解決（マニュアルページ対応）
-        const isManualPage = document.body.classList.contains('manual-page');
-        const sidebarPath = isManualPage ? '../includes/sidebar.html' : 'includes/sidebar.html';
+        const sidebarPath = getIncludesBasePath() + 'sidebar.html';
 
         console.log(`📄 Loading sidebar from: ${sidebarPath}`);
 
