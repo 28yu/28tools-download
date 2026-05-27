@@ -923,3 +923,119 @@ SN > SM > BCP > BCR > STKR > STK > SS
 - **BH (組立H)** は規格品でないため JIS 補完対象外、OCR 結果をそのまま使用
 - **RC 大梁** (テキスト抽出可能なはず) は実 PDF サンプル未取得のため未検証
 
+---
+
+## 2026/05 セッションで得た知見 — サイト統合・デプロイ・OCR メモリ
+
+PDF→Excel ツールを `pdf-to-excel/web/` に深い階層で配置し、本サイト
+レイアウトに統合した際に判明した重要事項。OCR 側の知見は
+`pdf-to-excel/web/CHANGELOG.md` v16〜v20 に詳細あり。
+
+### サイドバーは **3 箇所**にコピーがある (要注意)
+
+ナビゲーション項目を追加するときは **3 箇所**を全て更新する必要がある:
+
+| 場所 | 内容 | 何ページに影響 |
+|---|---|---|
+| `index.html` line ~100 (インライン `<nav class="sidebar-nav">`) | ホームページ用サイドバー | トップページのみ |
+| `index.html` line ~155 (`<div class="categories-grid">`) | ホームページ下部カード | トップページのみ |
+| `includes/sidebar.html` | 共通サイドバー | トップ以外の全ページ |
+
+**`index.html` は他のページと違って `<div id="header-container">` /
+`<div id="sidebar-container">` の include 機構を使っていない。**
+インラインで直接記述している (CLAUDE.md 内別箇所にも記載あり)。
+
+**症状**: `includes/sidebar.html` だけ更新したら「他のページではナビが
+出るのにトップだけ古いまま」になる。F12 コンソールに
+`Header container not found` / `Sidebar container not found` の警告が
+出ていればこれ。
+
+### includes/* キャッシュバストパターン
+
+`js/main.js` の冒頭に `INCLUDES_VERSION` 定数があり、これを使って
+`includes/header.html?v=<version>` のようにクエリを付けて fetch している。
+**`includes/*` を編集したら必ずこの定数を bump** (例: `20260527-2` →
+`20260601-1`)。さらに `fetch(..., { cache: 'no-store' })` でブラウザ
+HTTP cache もスキップ。
+
+これがないと GitHub Pages の Fastly CDN (TTL ~10 分) が古い include を
+配信し続け、ハードリロードや別ブラウザでも反映されない事故が起きる。
+Cloudflare 等の追加 CDN を入れている場合は数時間〜数日キャッシュされる。
+
+### 深い階層ページの includes パス自動検出
+
+`js/main.js` の `getIncludesBasePath()` が `window.location.pathname`
+から深さを算出して相対パスを組み立てる:
+
+| URL | 返り値 |
+|---|---|
+| `/` または `/index.html` | `includes/` |
+| `/manual/foo.html` | `../includes/` |
+| `/pdf-to-excel/web/` | `../../includes/` |
+
+新しい階層 (`/foo/bar/`) にツールを追加しても main.js 変更不要。
+ただし `body.manual-page` クラスのハードコード分岐は撤去されているので、
+過去の挙動を期待するコードを書く前に確認。
+
+### 新規ツールページ追加チェックリスト (深い階層配置)
+
+1. `/foo/bar/index.html` 作成 — `<link rel="stylesheet" href="../../css/style.css">` と `<script src="../../js/main.js">`
+2. ページ先頭に `<div id="header-container">` + `<div id="sidebar-container">`
+3. パンくず `<nav class="breadcrumb">` を配置 (path は `../../index.html`)
+4. `<h2 class="page-title">` と `<p class="page-description">` をパンくず直下に
+5. **`index.html` のインラインサイドバー** に新項目追加
+6. **`index.html` のカテゴリーグリッド** に新カード追加
+7. **`includes/sidebar.html`** に新項目追加
+8. **`js/main.js` の `INCLUDES_VERSION` を bump** (CDN cache バスト)
+9. `js/main.js` の translations に `index-tab-foo` と `index-category-foo-desc` 追加 (ja/en/zh)
+10. `sitemap.xml` に新 URL 登録
+11. ページの `<head>` に canonical / description / OGP / Twitter Card / GA / AdSense (他ページに揃える)
+
+### Adobe PDF Converter の OCR 不利設定 (避けるべき)
+
+CAD/Revit から PDF 書き出しの際、デフォルトのままだと OCR で読めない
+PDF になる。本サイト PDF→Excel ツールへの **入力品質**を上げるため、
+以下を必ず変更:
+
+| 設定 | デフォルト (悪) | 推奨 |
+|---|---|---|
+| 用紙サイズ | Screen | A1 または A3 (元の図面サイズ) |
+| TrueType フォント | デバイスフォントと代替 | ソフトフォントとしてダウンロード |
+| PDF 設定 | 標準 | 高品質印刷 または プレス品質 |
+| OpenType フォント埋め込み | OFF | ON |
+
+**特に「デバイスフォントと代替」が致命的**: 日本語フォントが Unicode
+マッピング情報を失い、pdfjs の `getTextContent()` が 0 件になる主因。
+
+**さらに「テキストをアウトライン化」する出力は救済不可能**: content stream
+の `Tj`/`TJ` (テキスト表示) オペレータが消え、全文字が `m`/`l`/`c`
+(ベジエパス) で描画される。OCR でしか拾えないが、それも CJK 細字では
+精度が出ない。CAD/Revit 側の設定変更が本当の解。
+
+### Tesseract.js WASM メモリの実効上限
+
+ブラウザの canvas 上限 (~268M pixels) と Tesseract.js の実効メモリ上限
+は**別物**。Tesseract.js は LSTM モデル + 画像 + 作業バッファを 1-2GB
+の WASM ヒープに同居させるため、画像は **実用上 ~24M pixels 以下**に
+抑えるのが安全。
+
+- 64M でも `pixdata_malloc fail` で失敗するケース有 (v18 で確認)
+- 31M (64M の 0.7× リトライ) でも失敗するケース有 (v19 で確認)
+- **24M に絞った v20 でようやく安定**
+- A1 ページは ~114 DPI まで落ちて精度的に厳しい
+  → 本質的には **PDF 側で text-as-text を保つ書き出し**が正解
+
+### 環境的制約 (Claude 開発時に注意)
+
+Claude Code on the web 環境では outbound network policy により
+**28tools.com への直接アクセスが `host_not_allowed` で 403**。
+ライブサイトの検証には:
+- `raw.githubusercontent.com/28yu/28tools-download/main/...` でリポジトリ
+  内容を読む (これは通る)
+- GitHub MCP tool (`mcp__github__get_file_contents` 等) を使う
+- ユーザに F12 コンソール / Network タブのスクショを依頼する
+
+ユーザの F12 スクショ 1 枚で原因が即座に判明することが多いので、
+ライブ検証の代替として積極的に依頼する。
+
+
