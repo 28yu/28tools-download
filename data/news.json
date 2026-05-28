@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27T02:36:28.459582",
+  "lastUpdated": "2026-05-28T02:13:16.382677",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -12,23 +12,33 @@
       "language": "en"
     },
     {
-      "title": "日建設計コンストラクション・マネジメント「やさしいBIM®ハンドブック」を無料公開",
-      "link": "https://news.build-app.jp/article/40634/",
-      "description": "概要 日建設計コンストラクション・マネジメント株式会社（本社：東京都文京区、社長：清藤幹雄、以下 日建設計コンストラクション・マネジメント）......",
-      "publishedDate": "Wed, 20 May 2026 22:00:00 +0000",
+      "title": "【大林組】猛暑期間における建設現場の作業時間帯を変更する取り組みを開始",
+      "link": "https://news.build-app.jp/article/40697/",
+      "description": "株式会社大林組（本社：東京都港区、社長：佐藤俊美）は、近年厳しさを増す猛暑への対応が社会的な課題となる中、建設現場における熱中症リスクのさら......",
+      "publishedDate": "Wed, 27 May 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/NvWCI988PC82Vn51657720065_1657720078-130x82.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/02/mQugM4qpGZ0RacT1644325720-130x87.jpg",
       "language": "ja"
     },
     {
-      "title": "釘を使わない建築とは？｜木組みの仕組み・法隆寺との関係・現代住宅との違いを解説",
-      "link": "https://news.build-app.jp/article/40662/",
-      "description": "「清水寺は釘を使っていない」「法隆寺は木だけで建っている」と聞き、本当にそんな建築が存在するのか気になっていないでしょうか。 実際、日本には......",
-      "publishedDate": "Wed, 20 May 2026 22:00:00 +0000",
+      "title": "建築物のライフサイクルコスト（LCC）とは？｜算出方法・耐用年数・削減ポイントを実務目線で解説",
+      "link": "https://news.build-app.jp/article/40734/",
+      "description": "建物を建てる際、「できるだけ建設費を抑えたい」と考える企業や施設管理者は少なくありません。ただ実際は、建築物の費用は建てた後のほうが長く続き......",
+      "publishedDate": "Wed, 27 May 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/bfb5bf6a3b3b664312bdeea0f39d2d52-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/4c49e4e6799102c0f499da80b5f1a66f-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "AIが商社の価値を再定義する～住友商事DAIS戦略の正体",
+      "link": "https://axconstdx.com/2026/05/28/ai%e3%81%8c%e5%95%86%e7%a4%be%e3%81%ae%e4%be%a1%e5%80%a4%e3%82%92%e5%86%8d%e5%ae%9a%e7%be%a9%e3%81%99%e3%82%8b%ef%bd%9e%e4%bd%8f%e5%8f%8b%e5%95%86%e4%ba%8bdais%e6%88%a6%e7%95%a5%e3%81%ae%e6%ad%a3/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e3%2581%258c%25e5%2595%2586%25e7%25a4%25be%25e3%2581%25ae%25e4%25be%25a1%25e5%2580%25a4%25e3%2582%2592%25e5%2586%258d%25e5%25ae%259a%25e7%25be%25a9%25e3%2581%2599%25e3%2582%258b%25ef%25bd%259e%25e4%25bd%258f%25e5%258f%258b%25e5%2595%2586%25e4%25ba%258bdais%25e6%2588%25a6%25e7%2595%25a5%25e3%2581%25ae%25e6%25ad%25a3",
+      "description": "AI時代に生き残る企業と衰退する企業の分岐点は、テクノロジー導入ではなく、事業そのものの変革ができるかどうかにあります。本記事では、約10万社の顧客基盤を持つ総合商社がAIで何を変え、どのように競争力を確保しようとしてい [...] <p>The post AIが商社の価値を再定義する～住友商事DAIS戦略の正体 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Wed, 27 May 2026 20:50:33 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/05/wp_eyecatch_1200x630_under100kb-3-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -80,16 +90,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "建築物とは？｜建築基準法上の定義・工作物との違い・カーポートや物置の扱いを解説",
-      "link": "https://news.build-app.jp/article/40714/",
-      "description": "カーポートや物置を設置しようとした際に、「これって建築物になるの？」と迷っていないでしょうか。 実際、建築基準法における「建築物」は、一般的......",
-      "publishedDate": "Thu, 21 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/9aa30abc86ab92d63e6d2091a219b663-130x82.png",
-      "language": "ja"
     },
     {
       "title": "建設DXは「人」が競争力に　野原グループ、「健康経営優良法人2026」に初認定",
@@ -182,16 +182,6 @@
       "language": "ja"
     },
     {
-      "title": "Revit MCPで変わる7つの現場—自然言語がBIMを動かす時代へ",
-      "link": "https://axconstdx.com/2026/03/15/revit-mcp%e3%81%a7%e5%a4%89%e3%82%8f%e3%82%8b7%e3%81%a4%e3%81%ae%e7%8f%be%e5%a0%b4-%e8%87%aa%e7%84%b6%e8%a8%80%e8%aa%9e%e3%81%8cbim%e3%82%92%e5%8b%95%e3%81%8b%e3%81%99%e6%99%82%e4%bb%a3/?utm_source=rss&utm_medium=rss&utm_campaign=revit-mcp%25e3%2581%25a7%25e5%25a4%2589%25e3%2582%258f%25e3%2582%258b7%25e3%2581%25a4%25e3%2581%25ae%25e7%258f%25be%25e5%25a0%25b4-%25e8%2587%25aa%25e7%2584%25b6%25e8%25a8%2580%25e8%25aa%259e%25e3%2581%258cbim%25e3%2582%2592%25e5%258b%2595%25e3%2581%258b%25e3%2581%2599%25e6%2599%2582%25e4%25bb%25a3",
-      "description": "「もっとBIMを活かしたい、でも操作が難しくて追いつかない」——そう感じたことはありませんか。Revit MCPを使えば、普通の言葉でBIMを動かせる時代が、もうすぐそこまで来ています。この記事を読み終えたとき、あなたの [...] <p>The post Revit MCPで変わる7つの現場—自然言語がBIMを動かす時代へ first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sun, 15 Mar 2026 04:44:45 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/featured_image_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "埋設管を掘る前に確認すべきこと｜AI・3D探査が変えるインフラDXの全貌",
       "link": "https://axconstdx.com/2026/03/28/%e5%9f%8b%e8%a8%ad%e7%ae%a1%e3%82%92%e6%8e%98%e3%82%8b%e5%89%8d%e3%81%ab%e7%a2%ba%e8%aa%8d%e3%81%99%e3%81%b9%e3%81%8d%e3%81%93%e3%81%a8%ef%bd%9cai%e3%83%bb3d%e6%8e%a2%e6%9f%bb%e3%81%8c%e5%a4%89/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%259f%258b%25e8%25a8%25ad%25e7%25ae%25a1%25e3%2582%2592%25e6%258e%2598%25e3%2582%258b%25e5%2589%258d%25e3%2581%25ab%25e7%25a2%25ba%25e8%25aa%258d%25e3%2581%2599%25e3%2581%25b9%25e3%2581%258d%25e3%2581%2593%25e3%2581%25a8%25ef%25bd%259cai%25e3%2583%25bb3d%25e6%258e%25a2%25e6%259f%25bb%25e3%2581%258c%25e5%25a4%2589",
       "description": "「地下に何が埋まっているか分からない」——その不安は、今も全国の工事現場で現実になっています。埋設管の位置不明は、ガス漏れや道路陥没といった取り返しのつかない事故に直結する問題です。この記事を読めば、非破壊探査からAIに [...] <p>The post 埋設管を掘る前に確認すべきこと｜AI・3D探査が変えるインフラDXの全貌 first appeared on 生成AIと建設DX.</p>...",
@@ -259,6 +249,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/09/unDR9w2945ETEqC1662045710_1662045733-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "一般土木とは？｜仕事内容・工事種類・建築との違いをわかりやすく解説",
+      "link": "https://news.build-app.jp/article/40731/",
+      "description": "道路工事や上下水道工事を見て、「これって一般土木なの？」「建築や造成と何が違うの？」と迷っていないでしょうか。 実際、一般土木という言葉は建......",
+      "publishedDate": "Mon, 25 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/063207d4fec53b78f7d20e04ca767c97-130x82.png",
       "language": "ja"
     },
     {
