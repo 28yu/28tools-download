@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28T02:13:16.382677",
+  "lastUpdated": "2026-05-29T02:28:13.648703",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -42,16 +42,6 @@
       "language": "ja"
     },
     {
-      "title": "日本の建設会社はDXで儲かるのか?",
-      "link": "https://news.build-app.jp/article/40030/",
-      "description": "東京・霞が関の国土交通省が推進する「i-Construction 2.0」のBIM/CIM原則適用の拡大に象徴されるように、建設業界全体に降......",
-      "publishedDate": "Tue, 26 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/20260527-2_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
       "title": "建設用3Dプリンタを活用した柱・梁・スラブ一体型大型PCa部材の製作・施工技術を実証",
       "link": "https://news.build-app.jp/article/40694/",
       "description": "概要 日揮ホールディングス株式会社（代表取締役会長兼社長CEO：佐藤雅之）の海外EPC事業会社である日揮グローバル株式会社（社長：山田昇司）......",
@@ -59,6 +49,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/10/kwnCm8GzuapMlqn1666764299_1666764322-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "日本の建設会社はDXで儲かるのか?",
+      "link": "https://news.build-app.jp/article/40030/",
+      "description": "東京・霞が関の国土交通省が推進する「i-Construction 2.0」のBIM/CIM原則適用の拡大に象徴されるように、建設業界全体に降......",
+      "publishedDate": "Tue, 26 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/20260527-2_hirayama-130x82.jpg",
       "language": "ja"
     },
     {
@@ -92,13 +92,33 @@
       "language": "en"
     },
     {
-      "title": "建設DXは「人」が競争力に　野原グループ、「健康経営優良法人2026」に初認定",
-      "link": "https://news.build-app.jp/article/40654/",
-      "description": "BuildApp（ビルドアップ）で建設 DX に取り組む野原グループ株式会社（本社：東京都新宿区、代表取締役社長：野原弘輔）は、経済産業省が......",
-      "publishedDate": "Thu, 21 May 2026 22:00:00 +0000",
+      "title": "BIMを援用した「BIM図面審査」の正式な開始も契機にして関連動向が続々と公表される｜深堀り取材【毎月3回更新】",
+      "link": "https://news.build-app.jp/article/40521/",
+      "description": "繰り返し本稿でも報告したように、新年度の4月1日からBIMを援用した建築確認申請の「BIM図面審査」が開始された状況下、実施を巡る情報が公表......",
+      "publishedDate": "Thu, 28 May 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/10/V9GPL7HcB8tVmAQ1664954266_1664954299-130x82.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/ec23754ed105f7f03f0a938099a01b58-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【奥村組】山岳トンネル工事における発破掘削を効率化する「装薬量計画システム」を開発",
+      "link": "https://news.build-app.jp/article/40723/",
+      "description": "株式会社奥村組（本社：大阪市阿倍野区、代表取締役社長：奥村太加典）は、株式会社ジェーエムエーシステムズ（本社：東京都港区、代表取締役社長：坂......",
+      "publishedDate": "Thu, 28 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/10/dpXFA3kMEG2WDF91666326649_1666326685-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ミュージックテラス（Kアリーナ横浜・ヒルトン横浜・Kタワー横浜）の魅力を解説｜レストランや駐車場",
+      "link": "https://news.build-app.jp/article/40742/",
+      "description": "トレンドワード：ミュージックテラス 横浜・みなとみらいエリアに誕生した「ミュージックテラス」は、世界最大級の音楽アリーナ「Kアリーナ横浜」を......",
+      "publishedDate": "Thu, 28 May 2026 21:56:04 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/1d8a7b825469c76dcec18e496c9453c0-130x82.png",
       "language": "ja"
     },
     {
@@ -159,26 +179,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/08/aB9Tq2nPpM6XVSZ1661358008_1661358031-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "コンクリート基礎工事の見積で失敗しないために｜目安単価・内訳・施工不良を防ぐ確認ポイントを徹底解説",
-      "link": "https://news.build-app.jp/article/40685/",
-      "description": "コンクリート基礎工事は、見積金額だけで比較すると追加費用や施工不良につながる場合があります。工場や倉庫、店舗、設備基礎では、掘削から打設管理......",
-      "publishedDate": "Sun, 24 May 2026 15:46:51 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/23466231_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "建設業におけるカラーコンクリートの仕上がりは施工で差が出る｜色むら・白華・補修トラブルを防ぐポイントとは",
-      "link": "https://news.build-app.jp/article/40681/",
-      "description": "カラーコンクリートは、コンクリートに色を加えて仕上げる施工方法です。店舗や施設、駐車場、アプローチ、歩道などで使われます。通常の土間コンクリ......",
-      "publishedDate": "Sun, 24 May 2026 15:36:56 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/22558650_m-130x98.jpg",
       "language": "ja"
     },
     {
