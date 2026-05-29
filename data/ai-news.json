@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28T05:10:15.752850",
+  "lastUpdated": "2026-05-29T05:14:59.370674",
   "articles": [
     {
       "title": "Granite 4.1 LLMs: How They’re Built",
@@ -14,7 +14,7 @@
     },
     {
       "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
-      "titleJa": "ITBench-AA: エージェント的エンタープライズ IT タスクの最初のベンチマークでフロンティア モデルのスコアが 50% 未満 — Artificial Analysis と IBM",
+      "titleJa": "ITBench-AA: エージェント的エンタープライズ IT タスクの最初のベンチマークで、フロンティア モデルのスコアが 50% を下回る — Artificial Analysis と IBM による",
       "link": "https://huggingface.co/blog/ibm-research/itbench-aa",
       "description": "...",
       "publishedDate": "Wed, 27 May 2026 17:20:29 GMT",
@@ -200,10 +200,10 @@
       "language": "ja"
     },
     {
-      "title": "Warp’s big bet on building open source with GPT-5.5",
-      "titleJa": "GPT-5.5 によるオープンソースの構築に対する Warp の大きな賭け",
-      "link": "https://openai.com/index/warp",
-      "description": "Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows....",
+      "title": "Election information and safeguards in 2026",
+      "titleJa": "2026 年の選挙情報と保障措置",
+      "link": "https://openai.com/index/election-safeguards-2026",
+      "description": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency...",
       "publishedDate": "Wed, 27 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -211,10 +211,10 @@
       "language": "en"
     },
     {
-      "title": "Election information and safeguards in 2026",
-      "titleJa": "2026 年の選挙情報と保障措置",
-      "link": "https://openai.com/index/election-safeguards-2026",
-      "description": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency...",
+      "title": "Warp’s big bet on building open source with GPT-5.5",
+      "titleJa": "GPT-5.5 によるオープンソースの構築に対する Warp の大きな賭け",
+      "link": "https://openai.com/index/warp",
+      "description": "Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows....",
       "publishedDate": "Wed, 27 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -277,10 +277,10 @@
       "language": "en"
     },
     {
-      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
-      "titleJa": "OpenAI モデルは離散幾何学における中心予想を反証しました",
-      "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
-      "description": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics....",
+      "title": "The next phase of OpenAI’s Education for Countries",
+      "titleJa": "OpenAI の国向け教育の次の段階",
+      "link": "https://openai.com/index/the-next-phase-of-education-for-countries",
+      "description": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes....",
       "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -288,10 +288,10 @@
       "language": "en"
     },
     {
-      "title": "The next phase of OpenAI’s Education for Countries",
-      "titleJa": "OpenAI の国向け教育の次の段階",
-      "link": "https://openai.com/index/the-next-phase-of-education-for-countries",
-      "description": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes....",
+      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+      "titleJa": "OpenAI モデルは離散幾何学における中心予想を反証しました",
+      "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
+      "description": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics....",
       "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -387,83 +387,6 @@
       "language": "en"
     },
     {
-      "title": "AI開発の4つのプロセスとは？開発環境やプログラミング言語も解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/ai-development/",
-      "description": "「自社オリジナルのAIを開発して業務効率化や新サービスを実現したい」「DX・生成AIの時代に乗り遅れたくない」 以上のように、さまざまな理由でAI開発を検討している企業は多いはずです。 AIは幅広いビジネスで活躍するポテ [...]...",
-      "publishedDate": "Tue, 26 May 2026 08:30:24 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-development.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Stable Diffusion】ローカル環境を構築して自由に遊ぶ方法を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/stablediffusion-construction/",
-      "description": "Stable Diffusionは、テキストを入力するだけで高品質な画像を生成できる無料のAIです。ローカル環境を構築すれば、生成枚数やプロンプトの制限なく使い放題になります。 とはいえ「何から始めればいい？」「PCのス [...]...",
-      "publishedDate": "Tue, 26 May 2026 07:15:39 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/09/stablediffusion-construction_202511-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "生成AIの導入で医療現場にも変化が！？実際の導入事例や医療特化AIサービスを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/medical-care/",
-      "description": "近年、さまざまな業界で導入が進んでいる生成AIですが、医療現場でも導入が進んでいます とくに、慢性的な人手不足に陥っている現状を打破する手段として注目されており、導入実験をおこなっている病院では、医師の書類作成業務を従来 [...]...",
-      "publishedDate": "Tue, 26 May 2026 06:32:03 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/medical-care_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Fooocusの使い方を初心者向けに解説！インストールから画像生成の実践まで紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/fooocus/",
-      "description": "Fooocusは、難しい設定をしなくても画像を生成できるオープンソースの画像生成AIです。プロンプトを入力したり、作りたい画像のスタイルを選んだりするだけで、高品質な画像を手軽に作成できます。 Stable Diffus [...]...",
-      "publishedDate": "Tue, 26 May 2026 05:52:51 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/01/AIモン_Fooocus-1024x576.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Dream Machine（Luma AI）とは？使い方・料金・商用利用・他ツール比較を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/dream-machine/",
-      "description": "Dream Machineは新しいアイデア出しや日々の作業効率向上に大きく役立つツールで、正しい始め方と使い方を押さえれば初心者でもすぐに活用できます。 この記事ではDream Machineの特徴から始め方、さらに一般 [...]...",
-      "publishedDate": "Tue, 26 May 2026 04:46:09 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/dream-machine_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Google AI Studioとは？初心者でも分かる使い方と活用方法を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/google-ai-studio/",
-      "description": "「AI活用＝大規模なシステム開発」というイメージが先行して、予算や技術力の壁に足が止まっていませんか？実は、高価な機材も専門知識も使わずに、手元のブラウザ一つで解決できることが増えています。 中でも注目されているのが、専 [...]...",
-      "publishedDate": "Tue, 26 May 2026 03:23:34 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/google-ai-studio_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Aleph 2.0】1フレーム編集で動画全体を変える！Runwayの最新映像編集AIモデルの使い方・料金・活用シーンを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/aleph-2-0/",
-      "description": "2026年5月22日、Runwayが映像編集AIモデルの最新版「Aleph 2.0」をEdit Studioとともに公開しました！ 従来の生成AI動画ツールは、テキストから動画をゼロから生成するアプローチが主流でしたが、 [...]...",
-      "publishedDate": "Tue, 26 May 2026 02:10:00 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Aleph-2.0-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Introducing OpenAI for Singapore",
       "titleJa": "シンガポール向け OpenAI のご紹介",
       "link": "https://openai.com/index/introducing-openai-for-singapore",
@@ -550,6 +473,83 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_AI_and_search_engine_v46.max-600x600.format-webp.webp",
       "language": "en"
+    },
+    {
+      "title": "生成AIガバナンスとは？用意していないと危険？企業に必要な体制構築とリスク対策を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/gen-ai-governance",
+      "description": "生成AIガバナンスとは、生成AIを安全かつ適切に活用するためのルールや運用体制を整えることです。近年は企業で生成AIやAIエージェントの活用が進む一方、情報漏洩や著作権侵害などのリスクも問題視されています。 とはいえ、「 [...]...",
+      "publishedDate": "Thu, 28 May 2026 15:52:07 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/gen-ai-governance_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AI×ノーコードとは？企業担当者向けに、ノーコード開発で業務効率を高める方法をAIエンジニアが解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/genai-nocode",
+      "description": "生成AIとノーコード開発の組み合わせは、プログラミングスキルが不要でアプリやウェブサイトを効率的に作成できます。この記事では、この組み合わせのメリットとおすすめツールを紹介しています。最後まで読むと、業務効率化のための具体的な手段がわかります。 続きを読む...",
+      "publishedDate": "Thu, 28 May 2026 15:19:54 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/genai-nocode_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "画像生成AIの企業活用事例10選！ビジネス導入のメリット・注意点・著作権を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/image-generationai-service/",
+      "description": "画像生成AIの企業活用が広がり、ロゴの外注コストを数千円に削減したり、撮影費を数百万円規模で圧縮したりするケースが国内大手企業で実際に出ています。 自社への導入を検討しているものの「どの業種に使えるのか」「具体的にどんな [...]...",
+      "publishedDate": "Thu, 28 May 2026 14:46:14 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/image-generationai-service_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "MCPとCLIの違いとは？業務効率化に役立つ使い分けをわかりやすく解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/mcp-cli-differences/",
+      "description": "「MCPとCLIのどちらを使うべきか分からない」と悩んでいませんか？ まず結論として、MCPはAIと外部サービスをつなぐためのプロトコルである一方、CLIは人間がコンピュータやサーバに命令を出す操作方法です。この違いを理 [...]...",
+      "publishedDate": "Thu, 28 May 2026 13:08:31 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/MCP-CLI-differences_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Claude Opus 4.8】価格据え置きで正直さと判断力が大幅強化されたAnthropicのフラグシップモデルを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-opus-4-8/",
+      "description": "Claude Opus 4.8は、Anthropicが2026年5月29日に公開した、Claudeファミリーの最上位モデルです！ 前バージョンのOpus 4.7からわずか約6週間という短サイクルでのリリースとなりましたが [...]...",
+      "publishedDate": "Fri, 29 May 2026 03:41:31 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Opus-4.8-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Runway MCP】ClaudeやChatGPTから画像・動画生成を直接実行！使い方・料金・活用シーンまで徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/runway-mcp/",
+      "description": "2026年5月27日、動画生成AIの最前線を走るRunwayが、新たなMCPサーバー「Runway MCP」を正式リリースしました！ これにより、ClaudeやChatGPT、Cursorといった普段使いのAIエージェン [...]...",
+      "publishedDate": "Fri, 29 May 2026 02:26:51 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Runway-MCP-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIをカスタマーサポートに導入するには？活用方法や企業事例、注意点を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/customer-support",
+      "description": "問い合わせ対応の効率化や顧客満足度の向上を目的に、カスタマーサポート領域で生成AIの活用が広がっています。これまでのカスタマーサポートでは、FAQ対応、メール返信、電話対応、対応履歴の入力、社内ナレッジの検索など、多くの [...]...",
+      "publishedDate": "Fri, 29 May 2026 01:17:03 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/customer-support_2605-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "AWS、インストール不要でWebブラウザから使えるコーディングAIエージェント「Kiro Web」発表",
