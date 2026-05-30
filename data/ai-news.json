@@ -1,20 +1,9 @@
 {
-  "lastUpdated": "2026-05-29T05:14:59.370674",
+  "lastUpdated": "2026-05-30T04:54:05.529177",
   "articles": [
     {
-      "title": "Granite 4.1 LLMs: How They’re Built",
-      "titleJa": "Granite 4.1 LLM: 構築方法",
-      "link": "https://huggingface.co/blog/ibm-granite/granite-4-1",
-      "description": "...",
-      "publishedDate": "Wed, 29 Apr 2026 15:01:48 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ibm-granite/granite-4-1.png",
-      "language": "en"
-    },
-    {
       "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
-      "titleJa": "ITBench-AA: エージェント的エンタープライズ IT タスクの最初のベンチマークで、フロンティア モデルのスコアが 50% を下回る — Artificial Analysis と IBM による",
+      "titleJa": "ITBench-AA: エージェント的エンタープライズ IT タスクの最初のベンチマークでフロンティア モデルのスコアが 50% 未満 — Artificial Analysis と IBM",
       "link": "https://huggingface.co/blog/ibm-research/itbench-aa",
       "description": "...",
       "publishedDate": "Wed, 27 May 2026 17:20:29 GMT",
@@ -55,28 +44,6 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "合成音声アプリ・サイトおすすめ5選！音声生成AI・音声読み上げツールとの違いや活用シーンも解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/synthetic-voice-free/",
-      "description": "動画制作や資料作りで、ナレーションの壁にぶつかっていませんか？プロに頼むのはハードルが高くても、最新のAIツールならテキスト入力だけで驚くほど自然な理想の声が手に入ります。 本記事では、合成音声アプリツール5選を読者の目 [...]...",
-      "publishedDate": "Wed, 27 May 2026 10:55:21 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/synthetic-voice-free_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Claude Code】security-guidanceプラグインとは？コマンドインジェクション・XSSを自動検出するセキュリティ機能の使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/security-guidance-plugin/",
-      "description": "2026年5月27日、AnthropicはClaude Codeでのコーディング中にセキュリティ脆弱性を自動検出してくれる公式プラグイン「security-guidance」を公開しました！ 生成AIによるコーディング支 [...]...",
-      "publishedDate": "Wed, 27 May 2026 08:55:49 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/security-guidance-plugin_2605-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "6/17（水）から3日間、第25回 総務・人事・経理Week【東京】内、「第17回 働き方改革EXPO【東京】」にブース出展",
@@ -277,39 +244,6 @@
       "language": "en"
     },
     {
-      "title": "The next phase of OpenAI’s Education for Countries",
-      "titleJa": "OpenAI の国向け教育の次の段階",
-      "link": "https://openai.com/index/the-next-phase-of-education-for-countries",
-      "description": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes....",
-      "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
-      "titleJa": "OpenAI モデルは離散幾何学における中心予想を反証しました",
-      "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
-      "description": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics....",
-      "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How Ramp engineers accelerate code review with Codex",
-      "titleJa": "Ramp エンジニアが Codex を使用してコード レビューを加速する方法",
-      "link": "https://openai.com/index/ramp",
-      "description": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours....",
-      "publishedDate": "Wed, 20 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
       "titleJa": "vLLM V0 ～ V1: RL での修正前の正確性",
       "link": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
@@ -318,17 +252,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/correctness-before-corrections.png",
-      "language": "en"
-    },
-    {
-      "title": "5 gardening tips you can try right in Search",
-      "titleJa": "検索からすぐに試せる 5 つのガーデニングのヒント",
-      "link": "https://blog.google/products-and-platforms/products/search/gardening-tips/",
-      "description": "An abstract background featuring soft, stippled illustrations of flowers and a butterfly in a bright palette of blue, green, and red. In the center of the image is a white circle containing a magnifyi...",
-      "publishedDate": "Wed, 06 May 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/01-Google_Gardening_Header.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -365,39 +288,6 @@
       "language": "en"
     },
     {
-      "title": "A reality check on the AI jobs hysteria",
-      "titleJa": "AIの雇用ヒステリーに関する現実の確認",
-      "link": "https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/",
-      "description": "Haven’t you heard? White-collar jobs are going away, decimated by AI. Waves of layoffs in the tech sector (most recently at Coinbase and Meta and Cisco) are said to presage what will soon come for all...",
-      "publishedDate": "Tue, 26 May 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/ai-jobs1b.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "It’s time to address the looming crisis in entry-level work.",
-      "titleJa": "初心者レベルの仕事に差し迫った危機に対処する時期が来ています。",
-      "link": "https://www.technologyreview.com/2026/05/26/1137865/its-time-to-address-the-looming-crisis-in-entry-level-work/",
-      "description": "Artificial intelligence has not so far produced a clean story of mass unemployment. Aggregate employment in developed countries remains broadly stable, and recent assessments have found limited eviden...",
-      "publishedDate": "Tue, 26 May 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/ladder3b.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Introducing OpenAI for Singapore",
-      "titleJa": "シンガポール向け OpenAI のご紹介",
-      "link": "https://openai.com/index/introducing-openai-for-singapore",
-      "description": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI....",
-      "publishedDate": "Tue, 19 May 2026 20:30:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "OlmoEarth v1.1: A more efficient family of Earth observation models",
       "titleJa": "OlmoEarth v1.1: より効率的な地球観測モデルのファミリー",
       "link": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
@@ -406,17 +296,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/19ZFgyFbi-kj2Yf0WUPGk.png",
-      "language": "en"
-    },
-    {
-      "title": "I/O 2026",
-      "titleJa": "I/O 2026",
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/",
-      "description": "At Google I/O 2026, we shared how we’re making AI more helpful for everyone. See everything we announced....",
-      "publishedDate": "Tue, 19 May 2026 17:45:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Collection-Hero.gif",
       "language": "en"
     },
     {
@@ -475,6 +354,50 @@
       "language": "en"
     },
     {
+      "title": "Everything new in our Google AI subscriptions, fresh from I/O 2026",
+      "titleJa": "I/O 2026 からの Google AI サブスクリプションのすべての新機能",
+      "link": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/",
+      "description": "The image shows colorful icons. The copy reads: More magic in one plan. More power, more perks, same price....",
+      "publishedDate": "Tue, 19 May 2026 17:45:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/I_O_26_Header_1_AYohnR4.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "I/O 2026",
+      "titleJa": "I/O 2026",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/",
+      "description": "At Google I/O 2026, we shared how we’re making AI more helpful for everyone. See everything we announced....",
+      "publishedDate": "Tue, 19 May 2026 17:45:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Collection-Hero.gif",
+      "language": "en"
+    },
+    {
+      "title": "Introducing the Ettin Reranker Family",
+      "titleJa": "エッティン・リランカー・ファミリーの紹介",
+      "link": "https://huggingface.co/blog/ettin-reranker",
+      "description": "...",
+      "publishedDate": "Tue, 19 May 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "How a new extraction process could unlock the world’s lithium",
+      "titleJa": "新しい抽出プロセスはどのようにして世界のリチウムを解放できるのか",
+      "link": "https://www.technologyreview.com/2026/05/28/1138096/lithium-extraction-rock-zero/",
+      "description": "Researchers say they’ve found a new way to extract lithium, a crucial metal used in the lithium-ion batteries that power electric vehicles and energy storage arrays. This new technique could be more e...",
+      "publishedDate": "Thu, 28 May 2026 18:01:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/vials.jpg?w=1646",
+      "language": "en"
+    },
+    {
       "title": "生成AIガバナンスとは？用意していないと危険？企業に必要な体制構築とリスク対策を解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/gen-ai-governance",
@@ -497,6 +420,17 @@
       "language": "ja"
     },
     {
+      "title": "Catch up on 12 major I/O 2026 moments",
+      "titleJa": "2026 年の 12 の主要な I/O の瞬間をキャッチアップ",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+      "description": "The colorful I/O logo against a black background, surrounded by stills from the I/O keynote...",
+      "publishedDate": "Thu, 28 May 2026 15:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
       "title": "画像生成AIの企業活用事例10選！ビジネス導入のメリット・注意点・著作権を解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/image-generationai-service/",
@@ -516,6 +450,72 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/MCP-CLI-differences_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "The Download: climate tech goes public and the AI Hype Index returns",
+      "titleJa": "ダウンロード: 気候変動テクノロジーが公開され、AI ハイプ インデックスが復活",
+      "link": "https://www.technologyreview.com/2026/05/28/1138085/the-download-climate-tech-ipos-ai-hype-index/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Climate tech companies are going public. What’s ne...",
+      "publishedDate": "Thu, 28 May 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/FF_01-2_web-edited.jpg",
+      "language": "en"
+    },
+    {
+      "title": "How Endava builds an agentic organization with Codex",
+      "titleJa": "Endava が Codex を使用してエージェント組織を構築する方法",
+      "link": "https://openai.com/index/endava",
+      "description": "Learn how Endava uses Codex to build an agentic organization, accelerating software delivery and reducing requirements analysis from weeks to hours....",
+      "publishedDate": "Thu, 28 May 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Climate tech companies are going public. What’s next?",
+      "titleJa": "気候変動テクノロジー企業が株式を公開している。次は何でしょうか？",
+      "link": "https://www.technologyreview.com/2026/05/28/1138067/climate-tech-ipos/",
+      "description": "This year, there’s been a wave of notable energy companies going public via IPO in the US. The solar and battery company Solv Energy went public in February, to the tune of $6 billion. X-energy, which...",
+      "publishedDate": "Thu, 28 May 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/AP24177191447994.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "The AI Hype Index: AI gets booed in graduation season",
+      "titleJa": "AI 誇大宣伝指数: 卒業シーズンには AI にブーイングが起こる",
+      "link": "https://www.technologyreview.com/2026/05/28/1138053/the-ai-hype-index-ai-gets-booed-in-graduation-season/",
+      "description": "It is one thing to say AI will change the world. It is another to expect the class of 2026 to applaud it. In fact, when former Google CEO Eric Schmidt told University of Arizona graduates that their t...",
+      "publishedDate": "Thu, 28 May 2026 09:51:11 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/MJ26-Thumb.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Claude Code dynamic workflowsとは？複数エージェントが並列実行するClaude Codeの新機能を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-code-dynamic-workflows/",
+      "description": "2026年5月、AnthropicからClaude Codeの大型アップデートが発表されました。 今回登場した「Claude Code dynamic workflows」は、単一エージェントによる逐次処理から一歩進み、 [...]...",
+      "publishedDate": "Sat, 30 May 2026 00:42:04 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-dynamic-workflows_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AIエージェントとは？仕組み・種類・生成AIやRAGとの違いを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/incorporate-ai-agent/",
+      "description": "「AIエージェントって結局、ChatGPTと何が違うの？」そんな疑問を持つ方が増えています。 AIエージェントとは、目標に向かって自ら計画・判断・実行できる自律型のAIです。ChatGPTのようなチャット形式の生成AIが [...]...",
+      "publishedDate": "Fri, 29 May 2026 12:44:04 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/incorporate-ai-agent_2605-1024x576.webp",
       "language": "ja"
     },
     {
