@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-29T02:28:13.648703",
+  "lastUpdated": "2026-05-30T02:11:51.147250",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -172,16 +172,6 @@
       "language": "ja"
     },
     {
-      "title": "アークノハラ　気象庁の警報・注意報情報を表示するLED表示機とシステムを開発",
-      "link": "https://news.build-app.jp/article/40657/",
-      "description": "概要 建設DXに取り組む野原グループの株式会社アークノハラ（本社：東京都新宿区、代表取締役社長：岡本力）は、運転中には気づきにくい地震や津波......",
-      "publishedDate": "Sun, 24 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/08/aB9Tq2nPpM6XVSZ1661358008_1661358031-130x82.jpg",
-      "language": "ja"
-    },
-    {
       "title": "埋設管を掘る前に確認すべきこと｜AI・3D探査が変えるインフラDXの全貌",
       "link": "https://axconstdx.com/2026/03/28/%e5%9f%8b%e8%a8%ad%e7%ae%a1%e3%82%92%e6%8e%98%e3%82%8b%e5%89%8d%e3%81%ab%e7%a2%ba%e8%aa%8d%e3%81%99%e3%81%b9%e3%81%8d%e3%81%93%e3%81%a8%ef%bd%9cai%e3%83%bb3d%e6%8e%a2%e6%9f%bb%e3%81%8c%e5%a4%89/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%259f%258b%25e8%25a8%25ad%25e7%25ae%25a1%25e3%2582%2592%25e6%258e%2598%25e3%2582%258b%25e5%2589%258d%25e3%2581%25ab%25e7%25a2%25ba%25e8%25aa%258d%25e3%2581%2599%25e3%2581%25b9%25e3%2581%258d%25e3%2581%2593%25e3%2581%25a8%25ef%25bd%259cai%25e3%2583%25bb3d%25e6%258e%25a2%25e6%259f%25bb%25e3%2581%258c%25e5%25a4%2589",
       "description": "「地下に何が埋まっているか分からない」——その不安は、今も全国の工事現場で現実になっています。埋設管の位置不明は、ガス漏れや道路陥没といった取り返しのつかない事故に直結する問題です。この記事を読めば、非破壊探査からAIに [...] <p>The post 埋設管を掘る前に確認すべきこと｜AI・3D探査が変えるインフラDXの全貌 first appeared on 生成AIと建設DX.</p>...",
@@ -270,6 +260,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "ドーチェスター・コレクション 東京（仮称）｜ 清水建設による日本一高いビルの耐震対策とは",
+      "link": "https://news.build-app.jp/article/40700/",
+      "description": "トレンドワード：ドーチェスター・コレクション 東京（仮称） 日本一の高さのタワーに開業する、日本トップレベルの宿泊料金のホテル。いったいどん......",
+      "publishedDate": "Fri, 29 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/a5a800079b264bc822d08b5c6d8f55a5-130x82.png",
+      "language": "ja"
     },
     {
       "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
