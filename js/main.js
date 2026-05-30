@@ -945,6 +945,11 @@ function initTranslations() {
             en: 'News & Featured',
             zh: '最新动态'
         },
+        'index-news-v212': {
+            ja: '28 Tools v2.1.2 リリース — 型枠数量算出の不具合を修正',
+            en: '28 Tools v2.1.2 Released — Fixed a bug in the Formwork Calculator',
+            zh: '28 Tools v2.1.2 发布 — 修复了型钢模板数量计算的问题'
+        },
         'index-news-v21': {
             ja: '28 Tools v2.1 リリース — 耐火被覆色分け・型枠数量算出 新機能追加、Excelエクスポート・塗り潰し領域 改善',
             en: '28 Tools v2.1 Released — Fire Protection & Formwork Calculator added; Excel Export & Filled Region improved',
