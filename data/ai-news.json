@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-30T04:54:05.529177",
+  "lastUpdated": "2026-05-31T05:19:40.896459",
   "articles": [
     {
       "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
@@ -11,17 +11,6 @@
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
       "language": "en"
-    },
-    {
-      "title": "生成AIのプロンプトとは？書き方・テンプレート例10選！業務効率を上げる実践テクニックを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/generate-ai-prompts/",
-      "description": "「生成AIを使ってみたいけど、プロンプトの作り方が分からない…」「どうすればもっと効率的に使えるの？」そう思う方もいるかもしれません。生成AIを活用するには、効果的なプロンプト作成が重要です。基本的なルールを押さえるだけ [...]...",
-      "publishedDate": "Wed, 27 May 2026 12:25:24 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/generate-ai-prompts_2605-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "The Download: keeping up with AI, and the future of IVF",
@@ -123,54 +112,10 @@
       "language": "ja"
     },
     {
-      "title": "病院向け基幹システムのヘンリー、30億円の資金調達を実施。AI医療プラットフォームへの進化を加速",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/henry-series-c-funding/",
-      "description": "クラウドネイティブ型電子カルテ「Henry」を提供するヘンリーは、シリーズCラウンドで総額30億円を調達しました。電子カルテ普及率100%の実現に向け、AI医療プラットフォームへの進化を加速します。 このニュースのポイン [...] The post 病院向け基幹システムのヘンリー、30億円の資金調達を実施。AI医療プラットフォームへの進化を加速 first appeared on AIポータルメ...",
-      "publishedDate": "Wed, 27 May 2026 05:57:21 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/henry-series-c-funding-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "【図解】Muse Sparkとは？ChatGPT・Llamaとの違いと実務での活用法",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/muse-spark-chatgpt-llama/",
-      "description": "「Metaの新しいAI『Muse Spark』って何がすごいの？」「ChatGPTや既存のLlamaよりも自社の業務に使えるの？」と気になっていませんか？ 2026年4月に発表された「Muse Spark」は、複雑な推論 [...] The post 【図解】Muse Sparkとは？ChatGPT・Llamaとの違いと実務での活用法 first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Wed, 27 May 2026 05:44:53 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/musespark.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "「画像認識AI 業界別・ユースケース集」を公開！製造・小売・建設などの現場課題を解決～自社に最適な「活用モデル」が見つかる実践ガイド～",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/image-recognition-manual/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、検品や監視などの目視作業を自動化するノウハウをまとめた「画像認識AI 業界別・ユースケース集」を、2026年5月27日（水）に公開し [...] The post 「画像認識AI 業界別・ユースケース集」を公開！製造・小売・建設などの現場課題を解決～自社に最適な「活用モデル」が見つかる実践ガイド～ first ...",
-      "publishedDate": "Wed, 27 May 2026 02:00:58 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/image-recognition-manual-000.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTで写真が送れない原因と対処法｜画像添付の制限や設定を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-unable-send-photo/",
-      "description": "「ChatGPTに写真を送ろうとしたのに、なぜかアップロードできない」「送信ボタンを押しても何も反応しない」という経験はありませんか？写真が送れない主な原因には、プランの制限、ファイル形式のミス、端末の設定不備など複数あ [...] The post ChatGPTで写真が送れない原因と対処法｜画像添付の制限や設定を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 27 May 2026 01:45:11 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/unablesendpicturemain.png",
-      "language": "ja"
-    },
-    {
-      "title": "Election information and safeguards in 2026",
-      "titleJa": "2026 年の選挙情報と保障措置",
-      "link": "https://openai.com/index/election-safeguards-2026",
-      "description": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency...",
+      "title": "Warp’s big bet on building open source with GPT-5.5",
+      "titleJa": "GPT-5.5 によるオープンソースの構築に対する Warp の大きな賭け",
+      "link": "https://openai.com/index/warp",
+      "description": "Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows....",
       "publishedDate": "Wed, 27 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -178,10 +123,10 @@
       "language": "en"
     },
     {
-      "title": "Warp’s big bet on building open source with GPT-5.5",
-      "titleJa": "GPT-5.5 によるオープンソースの構築に対する Warp の大きな賭け",
-      "link": "https://openai.com/index/warp",
-      "description": "Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows....",
+      "title": "Election information and safeguards in 2026",
+      "titleJa": "2026 年の選挙情報と保障措置",
+      "link": "https://openai.com/index/election-safeguards-2026",
+      "description": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency...",
       "publishedDate": "Wed, 27 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -212,7 +157,7 @@
     },
     {
       "title": "We’re announcing new community investments in Missouri.",
-      "titleJa": "私たちはミズーリ州での新たなコミュニティ投資を発表します。",
+      "titleJa": "私たちはミズーリ州における新たなコミュニティへの投資を発表します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
       "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
       "publishedDate": "Wed, 20 May 2026 20:40:00 +0000",
@@ -398,30 +343,8 @@
       "language": "en"
     },
     {
-      "title": "生成AIガバナンスとは？用意していないと危険？企業に必要な体制構築とリスク対策を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/gen-ai-governance",
-      "description": "生成AIガバナンスとは、生成AIを安全かつ適切に活用するためのルールや運用体制を整えることです。近年は企業で生成AIやAIエージェントの活用が進む一方、情報漏洩や著作権侵害などのリスクも問題視されています。 とはいえ、「 [...]...",
-      "publishedDate": "Thu, 28 May 2026 15:52:07 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/gen-ai-governance_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "生成AI×ノーコードとは？企業担当者向けに、ノーコード開発で業務効率を高める方法をAIエンジニアが解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/genai-nocode",
-      "description": "生成AIとノーコード開発の組み合わせは、プログラミングスキルが不要でアプリやウェブサイトを効率的に作成できます。この記事では、この組み合わせのメリットとおすすめツールを紹介しています。最後まで読むと、業務効率化のための具体的な手段がわかります。 続きを読む...",
-      "publishedDate": "Thu, 28 May 2026 15:19:54 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/genai-nocode_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Catch up on 12 major I/O 2026 moments",
-      "titleJa": "2026 年の 12 の主要な I/O の瞬間をキャッチアップ",
+      "titleJa": "2026 年の I/O の 12 の主要な瞬間をキャッチアップ",
       "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
       "description": "The colorful I/O logo against a black background, surrounded by stills from the I/O keynote...",
       "publishedDate": "Thu, 28 May 2026 15:00:00 +0000",
@@ -429,28 +352,6 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
       "language": "en"
-    },
-    {
-      "title": "画像生成AIの企業活用事例10選！ビジネス導入のメリット・注意点・著作権を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/image-generationai-service/",
-      "description": "画像生成AIの企業活用が広がり、ロゴの外注コストを数千円に削減したり、撮影費を数百万円規模で圧縮したりするケースが国内大手企業で実際に出ています。 自社への導入を検討しているものの「どの業種に使えるのか」「具体的にどんな [...]...",
-      "publishedDate": "Thu, 28 May 2026 14:46:14 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/image-generationai-service_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "MCPとCLIの違いとは？業務効率化に役立つ使い分けをわかりやすく解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/mcp-cli-differences/",
-      "description": "「MCPとCLIのどちらを使うべきか分からない」と悩んでいませんか？ まず結論として、MCPはAIと外部サービスをつなぐためのプロトコルである一方、CLIは人間がコンピュータやサーバに命令を出す操作方法です。この違いを理 [...]...",
-      "publishedDate": "Thu, 28 May 2026 13:08:31 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/MCP-CLI-differences_2605-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "The Download: climate tech goes public and the AI Hype Index returns",
@@ -497,6 +398,94 @@
       "language": "en"
     },
     {
+      "title": "ChatGPTでジブリ風画像を生成するやり方！初心者でもできる作り方＆注意点について詳しく解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/chatgpt-ghibli/",
+      "description": "ChatGPTを使って画像をジブリ風に加工できることをご存じですか？ 実は、上記画像の通り、ChatGPTを提供しているOpenAIのCEOが自身のXアイコンにChatGPT製ジブリ風画像を使ったことで、SNSを中心に大 [...]...",
+      "publishedDate": "Sat, 30 May 2026 15:13:18 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/06/chatgpt-ghibli_2506-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTでスクレイピングはできる？手順・リスク・代替案を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/plugin-scraper/",
+      "description": "ChatGPTは本格的なスクレイピングはできませんが、Pythonコードを生成する形でデータ収集の効率を上げられます。とはいえ「実際にどうやるの？」「違法にならない？」と疑問を抱えている方も多いはずです。 この記事では、 [...]...",
+      "publishedDate": "Sat, 30 May 2026 14:51:53 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/plugin-scraper_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AutoGPTとは？インストール方法から使い方まで徹底解説！【Windows・MacOS】",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/autogpt-windows/",
+      "description": "企業の情報システム部門では、生成AIをどの業務に取り入れるべきか、どの範囲まで自動化できるのかを見極める場面が増えています。なかでもAutoGPTは、目標をもとにタスクを分解し、情報収集やレポート作成などを進められるAI [...]...",
+      "publishedDate": "Sat, 30 May 2026 14:05:15 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2023/10/AIモン_AutoGPT-1024x576.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【NoLang】資料を数秒で解説動画にしてくれる！商用利用や安全性、使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/nolang/",
+      "description": "株式会社Mavericksは、どんな資料でもおよそ3秒で解説動画に変換してくれるAIツール「NoLang」を公開しました。公開直後から話題となり、公開日にはアクセス数の増加が原因で障害が起こるほど注目されています。 この [...]...",
+      "publishedDate": "Sat, 30 May 2026 12:59:11 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/nolang_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIの法人利用方法6選！企業の活用事例とおすすめツールを解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/gen-ai-company",
+      "description": "業務効率化や人手不足対策の手段として、生成AIを法人利用する企業が増えています。近年では、文章作成や問い合わせ対応だけではなく、マーケティング支援や社内業務の自動化など、幅広い分野で活用が進んでいます。 一方で、生成AI [...]...",
+      "publishedDate": "Sat, 30 May 2026 12:14:12 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/gen-ai-company_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIで業務を自動化する方法とは？活用ユースケース・おすすめツールを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/gen-ai-automation/",
+      "description": "この記事では、AIによる自動化の概要とメリット・デメリット、活用事例、おすすめのAI自動化ツールを解説しています。近年、注目されているAIによる自動化。AI自動化で業務効率化をしたいと検討している企業様には必見の記事になっています。 続きを読む...",
+      "publishedDate": "Sat, 30 May 2026 11:38:56 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/gen-ai-automation_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPT・生成AIの導入も補助金の対象！利用できる制度や導入の流れを一挙紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/chatgpt-it-introduction-subsidy/",
+      "description": "国や自治体の補助金のなかには、ChatGPT等生成AIを対象としたものも存在します。 多くは生成AIツールの導入や生成AI関連セミナーの受講にあたって支援が受けられるというものになっており、新規事業の立ち上げや業務効率化 [...]...",
+      "publishedDate": "Sat, 30 May 2026 08:16:20 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-it-introduction-subsidy_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Google DeepMindとは？AGI実現を目指すAI研究機関の開発AIツール8選をわかりやすく紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/google-deepmind/",
+      "description": "Google DeepMindは、GoogleとDeepMindが統合したAI研究機関です。GeminiやVeo、AlphaFoldなど、生活や産業を支えるAIツールを開発しています。 とはいえ「何を研究しているのか」「 [...]...",
+      "publishedDate": "Sat, 30 May 2026 07:56:49 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Google-DeepMind_2605-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "Claude Code dynamic workflowsとは？複数エージェントが並列実行するClaude Codeの新機能を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/claude-code-dynamic-workflows/",
@@ -519,36 +508,47 @@
       "language": "ja"
     },
     {
-      "title": "【Claude Opus 4.8】価格据え置きで正直さと判断力が大幅強化されたAnthropicのフラグシップモデルを徹底解説",
+      "title": "NAGARA、3,200万円の資金調達を実施。介護記録自動作成AIの開発体制を強化",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-opus-4-8/",
-      "description": "Claude Opus 4.8は、Anthropicが2026年5月29日に公開した、Claudeファミリーの最上位モデルです！ 前バージョンのOpus 4.7からわずか約6週間という短サイクルでのリリースとなりましたが [...]...",
-      "publishedDate": "Fri, 29 May 2026 03:41:31 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Opus-4.8-1024x576.webp",
+      "link": "https://aismiley.co.jp/ai_news/nagara-jfc-aichibank-aichishinkin/",
+      "description": "NAGARAは、日本政策金融公庫など3つの金融機関から総額3,200万円の資金調達を実施しました。本資金は、介護記録自動作成AI「ながらかいご」の開発および導入支援体制の強化に充てられます。 このニュースのポイント 介護 [...] The post NAGARA、3,200万円の資金調達を実施。介護記録自動作成AIの開発体制を強化 first appeared on AIポータルメディアAIsm...",
+      "publishedDate": "Fri, 29 May 2026 08:33:24 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/NAGARA-JFC-aichibank-aichishinkin.png",
       "language": "ja"
     },
     {
-      "title": "【Runway MCP】ClaudeやChatGPTから画像・動画生成を直接実行！使い方・料金・活用シーンまで徹底解説",
+      "title": "【2026年最新】コンテキストウィンドウとは？主要LLM比較と「記憶の罠」を防ぐ使いこなし術",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/runway-mcp/",
-      "description": "2026年5月27日、動画生成AIの最前線を走るRunwayが、新たなMCPサーバー「Runway MCP」を正式リリースしました！ これにより、ClaudeやChatGPT、Cursorといった普段使いのAIエージェン [...]...",
-      "publishedDate": "Fri, 29 May 2026 02:26:51 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Runway-MCP-1024x576.webp",
+      "link": "https://aismiley.co.jp/ai_news/contextwindow-llm-ai-2026/",
+      "description": "生成AIを使用している時に、 「長い資料をAIに読み込ませると、途中から指示を無視し始めてしまう」 「会話が長くなると最初の前提をAIが忘れてしまう」 といった経験はないでしょうか。こうした課題は、入力した情報量がAIの [...] The post 【2026年最新】コンテキストウィンドウとは？主要LLM比較と「記憶の罠」を防ぐ使いこなし術 first appeared on AIポータルメディ...",
+      "publishedDate": "Fri, 29 May 2026 04:20:57 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/contextwindow.jpg",
       "language": "ja"
     },
     {
-      "title": "生成AIをカスタマーサポートに導入するには？活用方法や企業事例、注意点を解説",
+      "title": "AIセキュリティとは？2026年版リスクと対策｜情シスが押さえるべきガイドラインと導入判断の基準",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/customer-support",
-      "description": "問い合わせ対応の効率化や顧客満足度の向上を目的に、カスタマーサポート領域で生成AIの活用が広がっています。これまでのカスタマーサポートでは、FAQ対応、メール返信、電話対応、対応履歴の入力、社内ナレッジの検索など、多くの [...]...",
-      "publishedDate": "Fri, 29 May 2026 01:17:03 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/customer-support_2605-1024x576.webp",
+      "link": "https://aismiley.co.jp/ai_news/aisecurity-risks-countermeasures-2026/",
+      "description": "生成AI（Generative AI）の業務利用が急速に進む一方で、AI特有の脆弱性を突いた攻撃や、AIを悪用した高度なサイバー攻撃の脅威が拡大しています。 本記事では、AIセキュリティの基本概念と2つの分類、企業が直面 [...] The post AIセキュリティとは？2026年版リスクと対策｜情シスが押さえるべきガイドラインと導入判断の基準 first appeared on AIポータルメ...",
+      "publishedDate": "Fri, 29 May 2026 04:20:04 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/aisecurity.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "HappyHorse 1.0とは？アリババの最新AI動画モデルの使い方を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/happyhorse-about/",
+      "description": "2026年4月に登場した最新動画生成AI「HappyHorse 1.0」は、またたく間に世界中を震撼させました。ベンチマークで突然1位になった謎のモデルの正体は、Alibabaが手掛ける新しい動画生成AIで、日本のクリエ [...] The post HappyHorse 1.0とは？アリババの最新AI動画モデルの使い方を解説 first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Fri, 29 May 2026 04:11:03 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/happyhorsemain.png",
       "language": "ja"
     },
     {
