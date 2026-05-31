@@ -181,7 +181,11 @@ async function loadData() {
     SUPABASE_URL + '/rest/v1/downloads?select=ts,version,revit,country,city,os&order=ts.desc&limit=10000',
     { headers: { apikey: SUPABASE_ANON, Authorization: 'Bearer ' + SUPABASE_ANON } }
   );
-  if (!res.ok) throw new Error('HTTP ' + res.status);
+  if (!res.ok) {
+    let detail = '';
+    try { const j = await res.json(); detail = j.message || j.hint || JSON.stringify(j); } catch(_) {}
+    throw new Error('HTTP ' + res.status + (detail ? ': ' + detail : ''));
+  }
   return res.json();
 }
 
@@ -349,12 +353,18 @@ function toggleRaw() {
 function showKeyModal(msg) {
   const overlay = document.createElement('div');
   overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;z-index:999';
+  const storedHint = localStorage.getItem('28tools_anon_key');
+  const hintHtml = storedHint
+    ? `<p style="color:#fbbf24;font-size:11px;margin-bottom:10px;word-break:break-all">現在保存中のキー: ${storedHint.slice(0,20)}…${storedHint.slice(-8)} (${storedHint.length}文字)</p>`
+    : '';
   overlay.innerHTML = `
-    <div style="background:#1a1d27;border:1px solid #2a2d3a;border-radius:12px;padding:32px;width:420px;max-width:90vw">
+    <div style="background:#1a1d27;border:1px solid #2a2d3a;border-radius:12px;padding:32px;width:460px;max-width:90vw">
       <h2 style="font-size:16px;margin-bottom:8px">🔑 Supabase Anon Key</h2>
-      <p style="color:#8892a4;font-size:13px;margin-bottom:16px">${msg}</p>
-      <input id="key-input" type="password" placeholder="sb_publishable_..." autocomplete="off"
-        style="width:100%;background:#0f1117;border:1px solid #2a2d3a;border-radius:6px;padding:10px 12px;color:#e2e8f0;font-size:13px;outline:none;margin-bottom:12px">
+      <p style="color:#8892a4;font-size:13px;margin-bottom:12px">${msg}</p>
+      ${hintHtml}
+      <input id="key-input" type="text" placeholder="sb_publishable_xxxx... または eyJhbG..." autocomplete="off"
+        style="width:100%;background:#0f1117;border:1px solid #2a2d3a;border-radius:6px;padding:10px 12px;color:#e2e8f0;font-size:12px;font-family:monospace;outline:none;margin-bottom:12px">
+      <p style="color:#8892a4;font-size:11px;margin-bottom:12px">Supabase → Project Settings → API → <strong style="color:#e2e8f0">Publishable key</strong></p>
       <div style="display:flex;gap:8px;justify-content:flex-end">
         <button id="key-cancel" style="background:none;border:1px solid #2a2d3a;color:#8892a4;padding:8px 16px;border-radius:6px;cursor:pointer">キャンセル</button>
         <button id="key-save" style="background:#4f8ef7;border:none;color:#fff;padding:8px 16px;border-radius:6px;cursor:pointer;font-weight:600">保存して読み込む</button>
@@ -405,8 +415,15 @@ async function init() {
     renderAll(allData);
   } catch (e) {
     document.getElementById('loading').style.display = 'none';
-    document.getElementById('error-msg').style.display = 'block';
     console.error(e);
+    if (e.message.includes('401')) {
+      localStorage.removeItem('28tools_anon_key');
+      SUPABASE_ANON = '';
+      showKeyModal('認証エラー (401) が発生しました。<br>正しい <strong>Publishable key</strong> を入力してください。<br><small style="color:#f87171">' + e.message + '</small>');
+    } else {
+      document.getElementById('error-msg').textContent = 'エラー: ' + e.message;
+      document.getElementById('error-msg').style.display = 'block';
+    }
   }
 }
 
