@@ -7671,6 +7671,42 @@ function getDownloadMessage(key) {
 }
 
 // パスワード保護ダウンロード関数
+// ダウンロード統計の記録（Cloudflare Worker → Supabase）
+// 国・OS・時刻はWorker側で自動付与。ここではバージョン情報のみ送信する。
+const DOWNLOAD_LOG_ENDPOINT = 'https://28tools-dl.tsuha.workers.dev';
+
+function logDownload(version, url) {
+    try {
+        // "revit2024" → "2024"
+        const revitMatch = String(version).match(/(\d{4})/);
+        const revit = revitMatch ? revitMatch[1] : null;
+
+        // ダウンロードURLからアドインのバージョンを抽出（例: .../download/v2.1/...）
+        let appVersion = null;
+        const verMatch = String(url || '').match(/\/download\/(v[0-9][0-9A-Za-z.\-]*)\//);
+        if (verMatch) appVersion = verMatch[1];
+
+        const payload = JSON.stringify({ version: appVersion, revit: revit });
+
+        // sendBeacon はノンブロッキングでページ遷移後も確実に送信される。
+        // text/plain で送ることでCORSプリフライトを回避（Worker側はJSONとして解釈）。
+        if (navigator.sendBeacon) {
+            const blob = new Blob([payload], { type: 'text/plain' });
+            navigator.sendBeacon(DOWNLOAD_LOG_ENDPOINT, blob);
+        } else {
+            fetch(DOWNLOAD_LOG_ENDPOINT, {
+                method: 'POST',
+                body: payload,
+                headers: { 'Content-Type': 'text/plain' },
+                keepalive: true,
+            }).catch(() => {});
+        }
+    } catch (e) {
+        // 記録失敗はダウンロードに影響させない
+        console.warn('Download logging skipped:', e);
+    }
+}
+
 function downloadWithPassword(version) {
     console.log(`📥 Download requested: ${version}`);
     
@@ -7695,6 +7731,8 @@ function downloadWithPassword(version) {
     if (userPassword === downloadConfig.password) {
         // 正しいパスワード → ダウンロード開始
         console.log(`✅ Password correct, starting download: ${version}`);
+        // ダウンロード統計を記録（失敗してもDLには影響しない）
+        logDownload(version, url);
         window.location.href = url;
     } else {
         // 間違ったパスワード
