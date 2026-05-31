@@ -150,12 +150,8 @@
 </div><!-- /dashboard -->
 
 <script>
-// ============================================================
-// 設定 — anon key をここに貼り付けてください
-// ============================================================
-const SUPABASE_URL  = 'https://clyfrkwuajbauqxvrfyf.supabase.co';
-const SUPABASE_ANON = 'YOUR_ANON_KEY_HERE';  // ← ここだけ変更
-// ============================================================
+const SUPABASE_URL = 'https://clyfrkwuajbauqxvrfyf.supabase.co';
+let SUPABASE_ANON  = localStorage.getItem('28tools_anon_key') || '';
 
 const COUNTRY_NAMES = {
   JP:'日本', US:'アメリカ', CN:'中国', TW:'台湾', KR:'韓国',
@@ -342,22 +338,77 @@ function toggleRaw() {
   btn.textContent = (visible ? '▶' : '▼') + ' 生データを表示';
 }
 
+// キー入力モーダル
+function showKeyModal(msg) {
+  const overlay = document.createElement('div');
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;z-index:999';
+  overlay.innerHTML = `
+    <div style="background:#1a1d27;border:1px solid #2a2d3a;border-radius:12px;padding:32px;width:420px;max-width:90vw">
+      <h2 style="font-size:16px;margin-bottom:8px">🔑 Supabase Anon Key</h2>
+      <p style="color:#8892a4;font-size:13px;margin-bottom:16px">${msg}</p>
+      <input id="key-input" type="password" placeholder="sb_publishable_..." autocomplete="off"
+        style="width:100%;background:#0f1117;border:1px solid #2a2d3a;border-radius:6px;padding:10px 12px;color:#e2e8f0;font-size:13px;outline:none;margin-bottom:12px">
+      <div style="display:flex;gap:8px;justify-content:flex-end">
+        <button id="key-cancel" style="background:none;border:1px solid #2a2d3a;color:#8892a4;padding:8px 16px;border-radius:6px;cursor:pointer">キャンセル</button>
+        <button id="key-save" style="background:#4f8ef7;border:none;color:#fff;padding:8px 16px;border-radius:6px;cursor:pointer;font-weight:600">保存して読み込む</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+  document.getElementById('key-input').focus();
+
+  document.getElementById('key-cancel').onclick = () => {
+    overlay.remove();
+    document.getElementById('loading').textContent = 'キャンセルしました。ページを再読み込みしてください。';
+  };
+  document.getElementById('key-save').onclick = async () => {
+    const val = document.getElementById('key-input').value.trim();
+    if (!val) return;
+    SUPABASE_ANON = val;
+    localStorage.setItem('28tools_anon_key', val);
+    overlay.remove();
+    await init();
+  };
+}
+
+// キーをリセットするボタンをヘッダーに追加
+function addResetButton() {
+  const btn = document.createElement('button');
+  btn.textContent = '🔑 キー変更';
+  btn.style.cssText = 'background:none;border:1px solid #2a2d3a;color:#8892a4;padding:4px 10px;border-radius:6px;cursor:pointer;font-size:11px;margin-left:12px';
+  btn.onclick = () => {
+    localStorage.removeItem('28tools_anon_key');
+    SUPABASE_ANON = '';
+    showKeyModal('新しい Anon Key を入力してください。');
+  };
+  document.getElementById('last-updated').appendChild(btn);
+}
+
 // Init
-(async () => {
+async function init() {
+  document.getElementById('loading').style.display = 'block';
+  document.getElementById('loading').textContent = 'データを読み込んでいます...';
+  document.getElementById('error-msg').style.display = 'none';
+  document.getElementById('dashboard').style.display = 'none';
   try {
-    if (SUPABASE_ANON === 'YOUR_ANON_KEY_HERE') {
-      document.getElementById('loading').textContent = '⚠️ anon key を設定してください（ファイル末尾の SUPABASE_ANON）';
-      return;
-    }
     allData = await loadData();
     document.getElementById('loading').style.display = 'none';
     document.getElementById('dashboard').style.display = 'block';
-    document.getElementById('last-updated').textContent = '最終更新: ' + new Date().toLocaleTimeString('ja-JP');
+    document.getElementById('last-updated').textContent = '最終更新: ' + new Date().toLocaleTimeString('ja-JP') + ' ';
+    addResetButton();
     renderAll(allData);
   } catch (e) {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('error-msg').style.display = 'block';
     console.error(e);
+  }
+}
+
+(async () => {
+  if (!SUPABASE_ANON) {
+    document.getElementById('loading').style.display = 'none';
+    showKeyModal('Supabase の <strong>Publishable key（anon key）</strong> を入力してください。<br>ブラウザに保存されるため、次回以降は不要です。');
+  } else {
+    await init();
   }
 })();
 </script>
