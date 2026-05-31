@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>28 Tools Analytics</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --border: #2a2d3a;
+    --accent: #4f8ef7;
+    --green: #34d399;
+    --yellow: #fbbf24;
+    --red: #f87171;
+    --text: #e2e8f0;
+    --muted: #8892a4;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; }
+
+  header { padding: 20px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 18px; font-weight: 600; color: var(--accent); }
+  #last-updated { font-size: 12px; color: var(--muted); }
+
+  #loading { text-align: center; padding: 80px; font-size: 16px; color: var(--muted); }
+  #error-msg { display: none; text-align: center; padding: 40px; color: var(--red); }
+
+  #dashboard { display: none; padding: 24px; max-width: 1400px; margin: 0 auto; }
+
+  /* KPI cards */
+  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; }
+  .kpi-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px; }
+  .kpi-value { font-size: 28px; font-weight: 700; line-height: 1; }
+  .kpi-sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .kpi.blue .kpi-value { color: var(--accent); }
+  .kpi.green .kpi-value { color: var(--green); }
+  .kpi.yellow .kpi-value { color: var(--yellow); }
+
+  /* Chart grid */
+  .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin-bottom: 24px; }
+  .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .chart-title { font-size: 13px; font-weight: 600; color: var(--muted); margin-bottom: 16px; text-transform: uppercase; letter-spacing: .5px; }
+  .chart-wrap { position: relative; }
+
+  /* Full-width */
+  .chart-full { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+
+  /* Table */
+  .data-table { width: 100%; border-collapse: collapse; }
+  .data-table th { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; padding: 6px 10px; text-align: left; border-bottom: 1px solid var(--border); }
+  .data-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  .data-table tr:last-child td { border-bottom: none; }
+  .bar-cell { display: flex; align-items: center; gap: 8px; }
+  .mini-bar { height: 6px; border-radius: 3px; background: var(--accent); min-width: 4px; }
+  .flag { font-size: 16px; }
+
+  /* Period selector */
+  .period-btns { display: flex; gap: 6px; margin-bottom: 16px; }
+  .period-btn { background: var(--border); border: none; color: var(--muted); padding: 4px 12px; border-radius: 6px; cursor: pointer; font-size: 12px; }
+  .period-btn.active { background: var(--accent); color: #fff; }
+
+  /* Raw data */
+  #raw-section { margin-top: 20px; }
+  .raw-table-wrap { max-height: 300px; overflow-y: auto; border-radius: 8px; border: 1px solid var(--border); }
+  #raw-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  #raw-table th { background: var(--bg); padding: 6px 10px; text-align: left; color: var(--muted); position: sticky; top: 0; }
+  #raw-table td { padding: 5px 10px; border-top: 1px solid var(--border); }
+  #raw-toggle { background: none; border: 1px solid var(--border); color: var(--muted); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 12px; margin-bottom: 10px; }
+  #raw-toggle:hover { border-color: var(--accent); color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📊 28 Tools Analytics</h1>
+  <span id="last-updated"></span>
+</header>
+
+<div id="loading">データを読み込んでいます...</div>
+<div id="error-msg">データの取得に失敗しました。<br>anon キーを確認してください。</div>
+
+<div id="dashboard">
+
+  <!-- KPI -->
+  <div class="kpi-row">
+    <div class="kpi blue"><div class="kpi-label">累計DL</div><div class="kpi-value" id="kpi-total">-</div><div class="kpi-sub">全バージョン合計</div></div>
+    <div class="kpi green"><div class="kpi-label">今月</div><div class="kpi-value" id="kpi-month">-</div><div class="kpi-sub" id="kpi-month-label">-</div></div>
+    <div class="kpi yellow"><div class="kpi-label">今週</div><div class="kpi-value" id="kpi-week">-</div><div class="kpi-sub">直近7日</div></div>
+    <div class="kpi blue"><div class="kpi-label">利用国数</div><div class="kpi-value" id="kpi-countries">-</div><div class="kpi-sub">ユニーク国</div></div>
+    <div class="kpi green"><div class="kpi-label">最人気Revit</div><div class="kpi-value" id="kpi-top-revit">-</div><div class="kpi-sub">最多DLバージョン</div></div>
+  </div>
+
+  <!-- 推移グラフ（フル幅） -->
+  <div class="chart-full">
+    <div class="chart-title">DL推移</div>
+    <div class="period-btns">
+      <button class="period-btn active" data-period="30">30日</button>
+      <button class="period-btn" data-period="90">90日</button>
+      <button class="period-btn" data-period="365">1年</button>
+      <button class="period-btn" data-period="0">全期間</button>
+    </div>
+    <div class="chart-wrap" style="height:220px"><canvas id="trend-chart"></canvas></div>
+  </div>
+
+  <!-- グラフ2列 -->
+  <div class="chart-grid">
+    <div class="chart-card">
+      <div class="chart-title">アドインバージョン別</div>
+      <div class="chart-wrap" style="height:220px"><canvas id="version-chart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Revitバージョン別</div>
+      <div class="chart-wrap" style="height:220px"><canvas id="revit-chart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">OS別</div>
+      <div class="chart-wrap" style="height:220px"><canvas id="os-chart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">時間帯別（JST）</div>
+      <div class="chart-wrap" style="height:220px"><canvas id="hour-chart"></canvas></div>
+    </div>
+  </div>
+
+  <!-- 国別ランキング -->
+  <div class="chart-full">
+    <div class="chart-title">国別ランキング TOP10</div>
+    <table class="data-table" id="country-table">
+      <thead><tr><th>#</th><th>国</th><th>DL数</th><th>割合</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- 生データ -->
+  <div id="raw-section">
+    <button id="raw-toggle" onclick="toggleRaw()">▶ 生データを表示</button>
+    <div id="raw-wrap" style="display:none">
+      <div class="raw-table-wrap">
+        <table id="raw-table">
+          <thead><tr><th>日時(JST)</th><th>Version</th><th>Revit</th><th>国</th><th>都市</th><th>OS</th></tr></thead>
+          <tbody id="raw-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /dashboard -->
+
+<script>
+// ============================================================
+// 設定 — anon key をここに貼り付けてください
+// ============================================================
+const SUPABASE_URL  = 'https://clyfrkwuajbauqxvrfyf.supabase.co';
+const SUPABASE_ANON = 'YOUR_ANON_KEY_HERE';  // ← ここだけ変更
+// ============================================================
+
+const COUNTRY_NAMES = {
+  JP:'日本', US:'アメリカ', CN:'中国', TW:'台湾', KR:'韓国',
+  SG:'シンガポール', HK:'香港', AU:'オーストラリア', DE:'ドイツ',
+  GB:'英国', FR:'フランス', CA:'カナダ', IN:'インド', BR:'ブラジル',
+  NL:'オランダ', SE:'スウェーデン', FI:'フィンランド', NO:'ノルウェー',
+};
+const FLAGS = {
+  JP:'🇯🇵',US:'🇺🇸',CN:'🇨🇳',TW:'🇹🇼',KR:'🇰🇷',SG:'🇸🇬',
+  HK:'🇭🇰',AU:'🇦🇺',DE:'🇩🇪',GB:'🇬🇧',FR:'🇫🇷',CA:'🇨🇦',
+  IN:'🇮🇳',BR:'🇧🇷',NL:'🇳🇱',SE:'🇸🇪',FI:'🇫🇮',NO:'🇳🇴',
+};
+
+let allData = [];
+let charts = {};
+let activePeriod = 30;
+
+async function loadData() {
+  const res = await fetch(
+    SUPABASE_URL + '/rest/v1/downloads?select=ts,version,revit,country,city,os&order=ts.desc&limit=10000',
+    { headers: { apikey: SUPABASE_ANON, Authorization: 'Bearer ' + SUPABASE_ANON } }
+  );
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  return res.json();
+}
+
+function filterByDays(data, days) {
+  if (!days) return data;
+  const cutoff = Date.now() - days * 86400000;
+  return data.filter(r => new Date(r.ts).getTime() >= cutoff);
+}
+
+function count(arr, key) {
+  return arr.reduce((m, r) => { const v = r[key] || 'Unknown'; m[v] = (m[v]||0)+1; return m; }, {});
+}
+
+function sortedEntries(obj, limit = 999) {
+  return Object.entries(obj).sort((a,b) => b[1]-a[1]).slice(0, limit);
+}
+
+const PALETTE = ['#4f8ef7','#34d399','#fbbf24','#f87171','#a78bfa','#f472b6','#38bdf8','#fb923c'];
+
+function makeChart(id, type, labels, datasets, opts = {}) {
+  const ctx = document.getElementById(id).getContext('2d');
+  if (charts[id]) charts[id].destroy();
+  charts[id] = new Chart(ctx, {
+    type,
+    data: { labels, datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { labels: { color: '#8892a4', font: { size: 11 } } } },
+      scales: type === 'bar' || type === 'line' ? {
+        x: { ticks: { color: '#8892a4', font: { size: 10 } }, grid: { color: '#2a2d3a' } },
+        y: { ticks: { color: '#8892a4', font: { size: 10 } }, grid: { color: '#2a2d3a' }, beginAtZero: true },
+      } : {},
+      ...opts,
+    },
+  });
+}
+
+function renderAll(data) {
+  const total = data.length;
+  const now = new Date();
+
+  // KPI
+  document.getElementById('kpi-total').textContent = total;
+  const weekData  = filterByDays(data, 7);
+  const monthData = filterByDays(data, 30);
+  document.getElementById('kpi-week').textContent  = weekData.length;
+  document.getElementById('kpi-month').textContent = monthData.length;
+  document.getElementById('kpi-month-label').textContent = now.getFullYear() + '年' + (now.getMonth()+1) + '月';
+
+  const countries = new Set(data.map(r => r.country).filter(Boolean));
+  document.getElementById('kpi-countries').textContent = countries.size;
+
+  const revitCnt = count(data, 'revit');
+  const topRevit = sortedEntries(revitCnt)[0];
+  document.getElementById('kpi-top-revit').textContent = topRevit ? topRevit[0] : '-';
+
+  renderTrend(data, activePeriod);
+
+  // Version chart
+  const verCnt = count(data, 'version');
+  const verE = sortedEntries(verCnt);
+  makeChart('version-chart', 'doughnut', verE.map(e=>e[0]), [{
+    data: verE.map(e=>e[1]), backgroundColor: PALETTE, borderWidth: 0,
+  }], { plugins: { legend: { position: 'right', labels: { color: '#8892a4', font: { size: 11 } } } } });
+
+  // Revit chart
+  const revitE = sortedEntries(count(data, 'revit'));
+  makeChart('revit-chart', 'bar', revitE.map(e=>'Revit '+e[0]), [{
+    data: revitE.map(e=>e[1]), backgroundColor: '#4f8ef7', borderRadius: 4,
+  }], { plugins: { legend: { display: false } } });
+
+  // OS chart
+  const osE = sortedEntries(count(data, 'os'));
+  makeChart('os-chart', 'doughnut', osE.map(e=>e[0]), [{
+    data: osE.map(e=>e[1]), backgroundColor: PALETTE, borderWidth: 0,
+  }], { plugins: { legend: { position: 'right', labels: { color: '#8892a4', font: { size: 11 } } } } });
+
+  // Hour chart (JST = UTC+9)
+  const hourBins = Array(24).fill(0);
+  data.forEach(r => {
+    const h = (new Date(r.ts).getUTCHours() + 9) % 24;
+    hourBins[h]++;
+  });
+  makeChart('hour-chart', 'bar', [...Array(24).keys()].map(h=>h+'時'), [{
+    data: hourBins, backgroundColor: '#34d399', borderRadius: 2,
+  }], { plugins: { legend: { display: false } } });
+
+  // Country table
+  const cntryE = sortedEntries(count(data, 'country'), 10);
+  const maxCnt = cntryE[0]?.[1] || 1;
+  const tbody = document.querySelector('#country-table tbody');
+  tbody.innerHTML = '';
+  cntryE.forEach(([code, cnt], i) => {
+    const pct = ((cnt / total) * 100).toFixed(1);
+    const flag = FLAGS[code] || '🌏';
+    const name = COUNTRY_NAMES[code] || code;
+    const barW = Math.max(4, Math.round((cnt / maxCnt) * 120));
+    tbody.insertAdjacentHTML('beforeend', `
+      <tr>
+        <td style="color:var(--muted)">${i+1}</td>
+        <td>${flag} ${name} <span style="color:var(--muted);font-size:11px">(${code})</span></td>
+        <td style="font-weight:600">${cnt}</td>
+        <td style="color:var(--muted)">${pct}%</td>
+        <td><div class="mini-bar" style="width:${barW}px"></div></td>
+      </tr>`);
+  });
+
+  // Raw data
+  const rawBody = document.getElementById('raw-body');
+  rawBody.innerHTML = '';
+  [...data].slice(0, 500).forEach(r => {
+    const jst = new Date(new Date(r.ts).getTime() + 9*3600000);
+    const fmt = jst.toISOString().replace('T',' ').slice(0,16);
+    rawBody.insertAdjacentHTML('beforeend', `
+      <tr>
+        <td>${fmt}</td>
+        <td>${r.version||'-'}</td>
+        <td>${r.revit||'-'}</td>
+        <td>${(FLAGS[r.country]||'🌏')+' '+(r.country||'-')}</td>
+        <td>${r.city||'-'}</td>
+        <td>${r.os||'-'}</td>
+      </tr>`);
+  });
+}
+
+function renderTrend(data, days) {
+  const filtered = filterByDays(data, days);
+  // 日別集計
+  const byDay = {};
+  filtered.forEach(r => {
+    const d = r.ts.slice(0, 10);
+    byDay[d] = (byDay[d]||0) + 1;
+  });
+  const sorted = Object.keys(byDay).sort();
+  makeChart('trend-chart', 'line', sorted, [{
+    label: 'DL数',
+    data: sorted.map(d => byDay[d]),
+    borderColor: '#4f8ef7',
+    backgroundColor: 'rgba(79,142,247,0.12)',
+    fill: true,
+    tension: 0.3,
+    pointRadius: sorted.length > 60 ? 0 : 3,
+  }], { plugins: { legend: { display: false } } });
+}
+
+// Period buttons
+document.querySelectorAll('.period-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.period-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activePeriod = parseInt(btn.dataset.period);
+    renderTrend(allData, activePeriod);
+  });
+});
+
+function toggleRaw() {
+  const wrap = document.getElementById('raw-wrap');
+  const btn = document.getElementById('raw-toggle');
+  const visible = wrap.style.display !== 'none';
+  wrap.style.display = visible ? 'none' : 'block';
+  btn.textContent = (visible ? '▶' : '▼') + ' 生データを表示';
+}
+
+// Init
+(async () => {
+  try {
+    if (SUPABASE_ANON === 'YOUR_ANON_KEY_HERE') {
+      document.getElementById('loading').textContent = '⚠️ anon key を設定してください（ファイル末尾の SUPABASE_ANON）';
+      return;
+    }
+    allData = await loadData();
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('dashboard').style.display = 'block';
+    document.getElementById('last-updated').textContent = '最終更新: ' + new Date().toLocaleTimeString('ja-JP');
+    renderAll(allData);
+  } catch (e) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error-msg').style.display = 'block';
+    console.error(e);
+  }
+})();
+</script>
+</body>
+</html>
