@@ -153,6 +153,13 @@
 const SUPABASE_URL = 'https://clyfrkwuajbauqxvrfyf.supabase.co';
 let SUPABASE_ANON  = localStorage.getItem('28tools_anon_key') || '';
 
+// ?reset でキーをクリア
+if (location.search.includes('reset')) {
+  localStorage.removeItem('28tools_anon_key');
+  SUPABASE_ANON = '';
+  history.replaceState(null, '', location.pathname);
+}
+
 const COUNTRY_NAMES = {
   JP:'日本', US:'アメリカ', CN:'中国', TW:'台湾', KR:'韓国',
   SG:'シンガポール', HK:'香港', AU:'オーストラリア', DE:'ドイツ',
