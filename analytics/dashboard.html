@@ -14,20 +14,28 @@
     --green: #34d399;
     --yellow: #fbbf24;
     --red: #f87171;
+    --purple: #a78bfa;
     --text: #e2e8f0;
     --muted: #8892a4;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; }
 
-  header { padding: 20px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+  header { padding: 16px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
   header h1 { font-size: 18px; font-weight: 600; color: var(--accent); }
-  #last-updated { font-size: 12px; color: var(--muted); }
+  #last-updated { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+
+  /* Tabs */
+  .tabs { display: flex; gap: 0; border-bottom: 1px solid var(--border); padding: 0 24px; background: var(--surface); }
+  .tab-btn { background: none; border: none; color: var(--muted); padding: 12px 20px; cursor: pointer; font-size: 14px; font-weight: 500; border-bottom: 2px solid transparent; margin-bottom: -1px; transition: all .15s; }
+  .tab-btn:hover { color: var(--text); }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .tab-pane { display: none; padding: 24px; max-width: 1400px; margin: 0 auto; }
+  .tab-pane.active { display: block; }
 
   #loading { text-align: center; padding: 80px; font-size: 16px; color: var(--muted); }
   #error-msg { display: none; text-align: center; padding: 40px; color: var(--red); }
-
-  #dashboard { display: none; padding: 24px; max-width: 1400px; margin: 0 auto; }
 
   /* KPI cards */
   .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 24px; }
@@ -38,9 +46,10 @@
   .kpi.blue .kpi-value { color: var(--accent); }
   .kpi.green .kpi-value { color: var(--green); }
   .kpi.yellow .kpi-value { color: var(--yellow); }
+  .kpi.purple .kpi-value { color: var(--purple); }
 
   /* Chart grid */
-  .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin-bottom: 24px; }
+  .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 20px; margin-bottom: 24px; }
   .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
   .chart-title { font-size: 13px; font-weight: 600; color: var(--muted); margin-bottom: 16px; text-transform: uppercase; letter-spacing: .5px; }
   .chart-wrap { position: relative; }
@@ -55,21 +64,26 @@
   .data-table tr:last-child td { border-bottom: none; }
   .bar-cell { display: flex; align-items: center; gap: 8px; }
   .mini-bar { height: 6px; border-radius: 3px; background: var(--accent); min-width: 4px; }
+  .mini-bar.green { background: var(--green); }
   .flag { font-size: 16px; }
 
   /* Period selector */
-  .period-btns { display: flex; gap: 6px; margin-bottom: 16px; }
+  .period-btns { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
   .period-btn { background: var(--border); border: none; color: var(--muted); padding: 4px 12px; border-radius: 6px; cursor: pointer; font-size: 12px; }
   .period-btn.active { background: var(--accent); color: #fff; }
 
   /* Raw data */
-  #raw-section { margin-top: 20px; }
+  .raw-section { margin-top: 20px; }
   .raw-table-wrap { max-height: 300px; overflow-y: auto; border-radius: 8px; border: 1px solid var(--border); }
-  #raw-table { width: 100%; border-collapse: collapse; font-size: 12px; }
-  #raw-table th { background: var(--bg); padding: 6px 10px; text-align: left; color: var(--muted); position: sticky; top: 0; }
-  #raw-table td { padding: 5px 10px; border-top: 1px solid var(--border); }
-  #raw-toggle { background: none; border: 1px solid var(--border); color: var(--muted); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 12px; margin-bottom: 10px; }
-  #raw-toggle:hover { border-color: var(--accent); color: var(--accent); }
+  .raw-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .raw-table th { background: var(--bg); padding: 6px 10px; text-align: left; color: var(--muted); position: sticky; top: 0; }
+  .raw-table td { padding: 5px 10px; border-top: 1px solid var(--border); }
+  .raw-toggle { background: none; border: 1px solid var(--border); color: var(--muted); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 12px; margin-bottom: 10px; }
+  .raw-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* Two-col tables side by side */
+  .table-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  @media (max-width: 768px) { .table-grid { grid-template-columns: 1fr; } .chart-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -79,12 +93,16 @@
   <span id="last-updated"></span>
 </header>
 
+<nav class="tabs">
+  <button class="tab-btn active" onclick="switchTab('dl')">📥 ダウンロード</button>
+  <button class="tab-btn" onclick="switchTab('pv')">👁 ページビュー</button>
+</nav>
+
 <div id="loading">データを読み込んでいます...</div>
-<div id="error-msg">データの取得に失敗しました。<br>anon キーを確認してください。</div>
+<div id="error-msg"></div>
 
-<div id="dashboard">
-
-  <!-- KPI -->
+<!-- ===== ダウンロード タブ ===== -->
+<div id="tab-dl" class="tab-pane active">
   <div class="kpi-row">
     <div class="kpi blue"><div class="kpi-label">累計DL</div><div class="kpi-value" id="kpi-total">-</div><div class="kpi-sub">全バージョン合計</div></div>
     <div class="kpi green"><div class="kpi-label">今月</div><div class="kpi-value" id="kpi-month">-</div><div class="kpi-sub" id="kpi-month-label">-</div></div>
@@ -93,10 +111,9 @@
     <div class="kpi green"><div class="kpi-label">最人気Revit</div><div class="kpi-value" id="kpi-top-revit">-</div><div class="kpi-sub">最多DLバージョン</div></div>
   </div>
 
-  <!-- 推移グラフ（フル幅） -->
   <div class="chart-full">
     <div class="chart-title">DL推移</div>
-    <div class="period-btns">
+    <div class="period-btns" id="dl-period-btns">
       <button class="period-btn active" data-period="30">30日</button>
       <button class="period-btn" data-period="90">90日</button>
       <button class="period-btn" data-period="365">1年</button>
@@ -105,55 +122,104 @@
     <div class="chart-wrap" style="height:220px"><canvas id="trend-chart"></canvas></div>
   </div>
 
-  <!-- グラフ2列 -->
   <div class="chart-grid">
-    <div class="chart-card">
-      <div class="chart-title">アドインバージョン別</div>
-      <div class="chart-wrap" style="height:220px"><canvas id="version-chart"></canvas></div>
-    </div>
-    <div class="chart-card">
-      <div class="chart-title">Revitバージョン別</div>
-      <div class="chart-wrap" style="height:220px"><canvas id="revit-chart"></canvas></div>
-    </div>
-    <div class="chart-card">
-      <div class="chart-title">OS別</div>
-      <div class="chart-wrap" style="height:220px"><canvas id="os-chart"></canvas></div>
-    </div>
-    <div class="chart-card">
-      <div class="chart-title">時間帯別（JST）</div>
-      <div class="chart-wrap" style="height:220px"><canvas id="hour-chart"></canvas></div>
-    </div>
+    <div class="chart-card"><div class="chart-title">アドインバージョン別</div><div class="chart-wrap" style="height:220px"><canvas id="version-chart"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">Revitバージョン別</div><div class="chart-wrap" style="height:220px"><canvas id="revit-chart"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">OS別</div><div class="chart-wrap" style="height:220px"><canvas id="dl-os-chart"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">時間帯別（JST）</div><div class="chart-wrap" style="height:220px"><canvas id="dl-hour-chart"></canvas></div></div>
   </div>
 
-  <!-- 国別ランキング -->
   <div class="chart-full">
     <div class="chart-title">国別ランキング TOP10</div>
-    <table class="data-table" id="country-table">
+    <table class="data-table" id="dl-country-table">
       <thead><tr><th>#</th><th>国</th><th>DL数</th><th>割合</th><th></th></tr></thead>
       <tbody></tbody>
     </table>
   </div>
 
-  <!-- 生データ -->
-  <div id="raw-section">
-    <button id="raw-toggle" onclick="toggleRaw()">▶ 生データを表示</button>
-    <div id="raw-wrap" style="display:none">
+  <div class="raw-section">
+    <button class="raw-toggle" onclick="toggleRaw('dl-raw-wrap',this)">▶ 生データを表示</button>
+    <div id="dl-raw-wrap" style="display:none">
       <div class="raw-table-wrap">
-        <table id="raw-table">
+        <table class="raw-table">
           <thead><tr><th>日時(JST)</th><th>Version</th><th>Revit</th><th>国</th><th>都市</th><th>OS</th></tr></thead>
-          <tbody id="raw-body"></tbody>
+          <tbody id="dl-raw-body"></tbody>
         </table>
       </div>
     </div>
   </div>
+</div>
 
-</div><!-- /dashboard -->
+<!-- ===== ページビュー タブ ===== -->
+<div id="tab-pv" class="tab-pane">
+  <div class="kpi-row">
+    <div class="kpi blue"><div class="kpi-label">累計PV</div><div class="kpi-value" id="kpi-pv-total">-</div><div class="kpi-sub">全ページ合計</div></div>
+    <div class="kpi green"><div class="kpi-label">今月PV</div><div class="kpi-value" id="kpi-pv-month">-</div><div class="kpi-sub" id="kpi-pv-month-label">-</div></div>
+    <div class="kpi yellow"><div class="kpi-label">今週PV</div><div class="kpi-value" id="kpi-pv-week">-</div><div class="kpi-sub">直近7日</div></div>
+    <div class="kpi purple"><div class="kpi-label">セッション数</div><div class="kpi-value" id="kpi-pv-sessions">-</div><div class="kpi-sub">ユニークセッション</div></div>
+    <div class="kpi blue"><div class="kpi-label">利用国数</div><div class="kpi-value" id="kpi-pv-countries">-</div><div class="kpi-sub">ユニーク国</div></div>
+  </div>
+
+  <div class="chart-full">
+    <div class="chart-title">PV推移</div>
+    <div class="period-btns" id="pv-period-btns">
+      <button class="period-btn active" data-period="30">30日</button>
+      <button class="period-btn" data-period="90">90日</button>
+      <button class="period-btn" data-period="365">1年</button>
+      <button class="period-btn" data-period="0">全期間</button>
+    </div>
+    <div class="chart-wrap" style="height:220px"><canvas id="pv-trend-chart"></canvas></div>
+  </div>
+
+  <div class="table-grid">
+    <div class="chart-full" style="margin-bottom:0">
+      <div class="chart-title">ページ別ランキング TOP10</div>
+      <table class="data-table" id="pv-page-table">
+        <thead><tr><th>#</th><th>ページ</th><th>PV</th><th>割合</th><th></th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="chart-full" style="margin-bottom:0">
+      <div class="chart-title">参照元 TOP10</div>
+      <table class="data-table" id="pv-ref-table">
+        <thead><tr><th>#</th><th>参照元</th><th>PV</th><th>割合</th><th></th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="chart-grid" style="margin-top:20px">
+    <div class="chart-card"><div class="chart-title">ブラウザ別</div><div class="chart-wrap" style="height:220px"><canvas id="pv-browser-chart"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">OS別</div><div class="chart-wrap" style="height:220px"><canvas id="pv-os-chart"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">言語別</div><div class="chart-wrap" style="height:220px"><canvas id="pv-lang-chart"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">時間帯別（JST）</div><div class="chart-wrap" style="height:220px"><canvas id="pv-hour-chart"></canvas></div></div>
+  </div>
+
+  <div class="chart-full">
+    <div class="chart-title">国別ランキング TOP10</div>
+    <table class="data-table" id="pv-country-table">
+      <thead><tr><th>#</th><th>国</th><th>PV</th><th>割合</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="raw-section">
+    <button class="raw-toggle" onclick="toggleRaw('pv-raw-wrap',this)">▶ 生データを表示</button>
+    <div id="pv-raw-wrap" style="display:none">
+      <div class="raw-table-wrap">
+        <table class="raw-table">
+          <thead><tr><th>日時(JST)</th><th>ページ</th><th>参照元</th><th>国</th><th>都市</th><th>ブラウザ</th><th>OS</th></tr></thead>
+          <tbody id="pv-raw-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script>
 const SUPABASE_URL = 'https://clyfrkwuajbauqxvrfyf.supabase.co';
 let SUPABASE_ANON  = localStorage.getItem('28tools_anon_key') || '';
 
-// ?reset でキーをクリア
 if (location.search.includes('reset')) {
   localStorage.removeItem('28tools_anon_key');
   SUPABASE_ANON = '';
@@ -161,24 +227,57 @@ if (location.search.includes('reset')) {
 }
 
 const COUNTRY_NAMES = {
-  JP:'日本', US:'アメリカ', CN:'中国', TW:'台湾', KR:'韓国',
-  SG:'シンガポール', HK:'香港', AU:'オーストラリア', DE:'ドイツ',
-  GB:'英国', FR:'フランス', CA:'カナダ', IN:'インド', BR:'ブラジル',
-  NL:'オランダ', SE:'スウェーデン', FI:'フィンランド', NO:'ノルウェー',
+  JP:'日本',US:'アメリカ',CN:'中国',TW:'台湾',KR:'韓国',
+  SG:'シンガポール',HK:'香港',AU:'オーストラリア',DE:'ドイツ',
+  GB:'英国',FR:'フランス',CA:'カナダ',IN:'インド',BR:'ブラジル',
+  NL:'オランダ',SE:'スウェーデン',FI:'フィンランド',NO:'ノルウェー',
+  IT:'イタリア',ES:'スペイン',RU:'ロシア',PL:'ポーランド',TR:'トルコ',
+  TH:'タイ',VN:'ベトナム',ID:'インドネシア',MY:'マレーシア',PH:'フィリピン',
 };
 const FLAGS = {
   JP:'🇯🇵',US:'🇺🇸',CN:'🇨🇳',TW:'🇹🇼',KR:'🇰🇷',SG:'🇸🇬',
   HK:'🇭🇰',AU:'🇦🇺',DE:'🇩🇪',GB:'🇬🇧',FR:'🇫🇷',CA:'🇨🇦',
   IN:'🇮🇳',BR:'🇧🇷',NL:'🇳🇱',SE:'🇸🇪',FI:'🇫🇮',NO:'🇳🇴',
+  IT:'🇮🇹',ES:'🇪🇸',RU:'🇷🇺',PL:'🇵🇱',TR:'🇹🇷',TH:'🇹🇭',
+  VN:'🇻🇳',ID:'🇮🇩',MY:'🇲🇾',PH:'🇵🇭',
 };
 
-let allData = [];
-let charts = {};
-let activePeriod = 30;
+const PAGE_LABELS = {
+  '/': 'トップ',
+  '/index.html': 'トップ',
+  '/addins.html': 'アドイン',
+  '/hatch.html': '塗り潰しツール',
+  '/news.html': 'BIMニュース',
+  '/ai-news.html': 'AIニュース',
+  '/about.html': '運営者情報',
+  '/contact.html': 'お問い合わせ',
+  '/privacy.html': 'プライバシー',
+  '/terms.html': '利用規約',
+  '/manual/grid-bubble.html': 'マニュアル: 通り芯',
+  '/manual/sheet-creation.html': 'マニュアル: 図面作成',
+  '/manual/view-copy.html': 'マニュアル: ビューコピー',
+  '/manual/sectionbox-copy.html': 'マニュアル: セクションボックス',
+  '/manual/viewport-position.html': 'マニュアル: ビューポート',
+  '/manual/cropbox-copy.html': 'マニュアル: クロップボックス',
+  '/manual/excel-export.html': 'マニュアル: Excelエクスポート',
+  '/manual/excel-import.html': 'マニュアル: Excelインポート',
+  '/manual/room-tag.html': 'マニュアル: 室タグ',
+  '/manual/beam-top-color.html': 'マニュアル: 梁天端',
+  '/manual/beam-bottom-color.html': 'マニュアル: 梁底',
+  '/manual/filled-region.html': 'マニュアル: 塗り潰し',
+  '/manual/fire-protection.html': 'マニュアル: 耐火被覆',
+  '/manual/formwork-calculator.html': 'マニュアル: 型枠',
+  '/analytics/dashboard.html': 'ダッシュボード',
+};
 
-async function loadData() {
+let allDL = [], allPV = [];
+let charts = {};
+let activeDLPeriod = 30, activePVPeriod = 30;
+
+// ---- Supabase fetch ----
+async function supaFetch(table, select) {
   const res = await fetch(
-    SUPABASE_URL + '/rest/v1/downloads?select=ts,version,revit,country,city,os&order=ts.desc&limit=10000',
+    `${SUPABASE_URL}/rest/v1/${table}?select=${select}&order=ts.desc&limit=10000`,
     { headers: { apikey: SUPABASE_ANON, Authorization: 'Bearer ' + SUPABASE_ANON } }
   );
   if (!res.ok) {
@@ -189,24 +288,24 @@ async function loadData() {
   return res.json();
 }
 
+// ---- Helpers ----
 function filterByDays(data, days) {
   if (!days) return data;
   const cutoff = Date.now() - days * 86400000;
   return data.filter(r => new Date(r.ts).getTime() >= cutoff);
 }
-
 function count(arr, key) {
   return arr.reduce((m, r) => { const v = r[key] || 'Unknown'; m[v] = (m[v]||0)+1; return m; }, {});
 }
-
 function sortedEntries(obj, limit = 999) {
   return Object.entries(obj).sort((a,b) => b[1]-a[1]).slice(0, limit);
 }
 
-const PALETTE = ['#4f8ef7','#34d399','#fbbf24','#f87171','#a78bfa','#f472b6','#38bdf8','#fb923c'];
+const PALETTE = ['#4f8ef7','#34d399','#fbbf24','#f87171','#a78bfa','#f472b6','#38bdf8','#fb923c','#6ee7b7','#fcd34d'];
 
 function makeChart(id, type, labels, datasets, opts = {}) {
-  const ctx = document.getElementById(id).getContext('2d');
+  const ctx = document.getElementById(id)?.getContext('2d');
+  if (!ctx) return;
   if (charts[id]) charts[id].destroy();
   charts[id] = new Chart(ctx, {
     type,
@@ -214,7 +313,7 @@ function makeChart(id, type, labels, datasets, opts = {}) {
     options: {
       responsive: true, maintainAspectRatio: false,
       plugins: { legend: { labels: { color: '#8892a4', font: { size: 11 } } } },
-      scales: type === 'bar' || type === 'line' ? {
+      scales: (type === 'bar' || type === 'line') ? {
         x: { ticks: { color: '#8892a4', font: { size: 10 } }, grid: { color: '#2a2d3a' } },
         y: { ticks: { color: '#8892a4', font: { size: 10 } }, grid: { color: '#2a2d3a' }, beginAtZero: true },
       } : {},
@@ -223,147 +322,238 @@ function makeChart(id, type, labels, datasets, opts = {}) {
   });
 }
 
-function renderAll(data) {
-  const total = data.length;
-  const now = new Date();
-
-  // KPI
-  document.getElementById('kpi-total').textContent = total;
-  const weekData  = filterByDays(data, 7);
-  const monthData = filterByDays(data, 30);
-  document.getElementById('kpi-week').textContent  = weekData.length;
-  document.getElementById('kpi-month').textContent = monthData.length;
-  document.getElementById('kpi-month-label').textContent = now.getFullYear() + '年' + (now.getMonth()+1) + '月';
-
-  const countries = new Set(data.map(r => r.country).filter(Boolean));
-  document.getElementById('kpi-countries').textContent = countries.size;
-
-  const revitCnt = count(data, 'revit');
-  const topRevit = sortedEntries(revitCnt)[0];
-  document.getElementById('kpi-top-revit').textContent = topRevit ? topRevit[0] : '-';
-
-  renderTrend(data, activePeriod);
-
-  // Version chart
-  const verCnt = count(data, 'version');
-  const verE = sortedEntries(verCnt);
-  makeChart('version-chart', 'doughnut', verE.map(e=>e[0]), [{
-    data: verE.map(e=>e[1]), backgroundColor: PALETTE, borderWidth: 0,
-  }], { plugins: { legend: { position: 'right', labels: { color: '#8892a4', font: { size: 11 } } } } });
-
-  // Revit chart
-  const revitE = sortedEntries(count(data, 'revit'));
-  makeChart('revit-chart', 'bar', revitE.map(e=>'Revit '+e[0]), [{
-    data: revitE.map(e=>e[1]), backgroundColor: '#4f8ef7', borderRadius: 4,
+function renderTrendChart(canvasId, data, days, label, color) {
+  const filtered = filterByDays(data, days);
+  const byDay = {};
+  filtered.forEach(r => { const d = r.ts.slice(0,10); byDay[d] = (byDay[d]||0)+1; });
+  const sorted = Object.keys(byDay).sort();
+  makeChart(canvasId, 'line', sorted, [{
+    label,
+    data: sorted.map(d => byDay[d]),
+    borderColor: color,
+    backgroundColor: color.replace(')', ',.12)').replace('rgb','rgba'),
+    fill: true, tension: 0.3,
+    pointRadius: sorted.length > 60 ? 0 : 3,
   }], { plugins: { legend: { display: false } } });
+}
 
-  // OS chart
-  const osE = sortedEntries(count(data, 'os'));
-  makeChart('os-chart', 'doughnut', osE.map(e=>e[0]), [{
-    data: osE.map(e=>e[1]), backgroundColor: PALETTE, borderWidth: 0,
-  }], { plugins: { legend: { position: 'right', labels: { color: '#8892a4', font: { size: 11 } } } } });
-
-  // Hour chart (JST = UTC+9)
-  const hourBins = Array(24).fill(0);
-  data.forEach(r => {
-    const h = (new Date(r.ts).getUTCHours() + 9) % 24;
-    hourBins[h]++;
-  });
-  makeChart('hour-chart', 'bar', [...Array(24).keys()].map(h=>h+'時'), [{
-    data: hourBins, backgroundColor: '#34d399', borderRadius: 2,
-  }], { plugins: { legend: { display: false } } });
-
-  // Country table
-  const cntryE = sortedEntries(count(data, 'country'), 10);
-  const maxCnt = cntryE[0]?.[1] || 1;
-  const tbody = document.querySelector('#country-table tbody');
+function renderCountryTable(tableId, data, countKey) {
+  const total = data.length || 1;
+  const entries = sortedEntries(count(data, 'country'), 10);
+  const maxCnt = entries[0]?.[1] || 1;
+  const tbody = document.querySelector(`#${tableId} tbody`);
   tbody.innerHTML = '';
-  cntryE.forEach(([code, cnt], i) => {
+  entries.forEach(([code, cnt], i) => {
     const pct = ((cnt / total) * 100).toFixed(1);
-    const flag = FLAGS[code] || '🌏';
-    const name = COUNTRY_NAMES[code] || code;
     const barW = Math.max(4, Math.round((cnt / maxCnt) * 120));
     tbody.insertAdjacentHTML('beforeend', `
       <tr>
         <td style="color:var(--muted)">${i+1}</td>
-        <td>${flag} ${name} <span style="color:var(--muted);font-size:11px">(${code})</span></td>
+        <td>${FLAGS[code]||'🌏'} ${COUNTRY_NAMES[code]||code} <span style="color:var(--muted);font-size:11px">(${code})</span></td>
         <td style="font-weight:600">${cnt}</td>
         <td style="color:var(--muted)">${pct}%</td>
         <td><div class="mini-bar" style="width:${barW}px"></div></td>
       </tr>`);
   });
+}
 
-  // Raw data
-  const rawBody = document.getElementById('raw-body');
-  rawBody.innerHTML = '';
-  [...data].slice(0, 500).forEach(r => {
-    const jst = new Date(new Date(r.ts).getTime() + 9*3600000);
-    const fmt = jst.toISOString().replace('T',' ').slice(0,16);
-    rawBody.insertAdjacentHTML('beforeend', `
+function renderRankTable(tableId, entries, total, barColor) {
+  const maxCnt = entries[0]?.[1] || 1;
+  const tbody = document.querySelector(`#${tableId} tbody`);
+  tbody.innerHTML = '';
+  entries.forEach(([label, cnt], i) => {
+    const pct = ((cnt / total) * 100).toFixed(1);
+    const barW = Math.max(4, Math.round((cnt / maxCnt) * 100));
+    tbody.insertAdjacentHTML('beforeend', `
       <tr>
-        <td>${fmt}</td>
-        <td>${r.version||'-'}</td>
-        <td>${r.revit||'-'}</td>
-        <td>${(FLAGS[r.country]||'🌏')+' '+(r.country||'-')}</td>
-        <td>${r.city||'-'}</td>
-        <td>${r.os||'-'}</td>
+        <td style="color:var(--muted)">${i+1}</td>
+        <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${label}">${label}</td>
+        <td style="font-weight:600">${cnt}</td>
+        <td style="color:var(--muted)">${pct}%</td>
+        <td><div class="mini-bar ${barColor}" style="width:${barW}px"></div></td>
       </tr>`);
   });
 }
 
-function renderTrend(data, days) {
-  const filtered = filterByDays(data, days);
-  // 日別集計
-  const byDay = {};
-  filtered.forEach(r => {
-    const d = r.ts.slice(0, 10);
-    byDay[d] = (byDay[d]||0) + 1;
-  });
-  const sorted = Object.keys(byDay).sort();
-  makeChart('trend-chart', 'line', sorted, [{
-    label: 'DL数',
-    data: sorted.map(d => byDay[d]),
-    borderColor: '#4f8ef7',
-    backgroundColor: 'rgba(79,142,247,0.12)',
-    fill: true,
-    tension: 0.3,
-    pointRadius: sorted.length > 60 ? 0 : 3,
+// ---- Download tab ----
+function renderDL(data) {
+  const total = data.length;
+  const now = new Date();
+  document.getElementById('kpi-total').textContent = total;
+  document.getElementById('kpi-week').textContent  = filterByDays(data, 7).length;
+  const mData = filterByDays(data, 30);
+  document.getElementById('kpi-month').textContent = mData.length;
+  document.getElementById('kpi-month-label').textContent = now.getFullYear() + '年' + (now.getMonth()+1) + '月';
+  document.getElementById('kpi-countries').textContent = new Set(data.map(r=>r.country).filter(Boolean)).size;
+  const topRevit = sortedEntries(count(data, 'revit'))[0];
+  document.getElementById('kpi-top-revit').textContent = topRevit ? topRevit[0] : '-';
+
+  renderTrendChart('trend-chart', data, activeDLPeriod, 'DL数', '#4f8ef7');
+
+  const verE = sortedEntries(count(data, 'version'));
+  makeChart('version-chart', 'doughnut', verE.map(e=>e[0]), [{
+    data: verE.map(e=>e[1]), backgroundColor: PALETTE, borderWidth: 0,
+  }], { plugins: { legend: { position: 'right', labels: { color: '#8892a4', font: { size: 11 } } } } });
+
+  const revitE = sortedEntries(count(data, 'revit'));
+  makeChart('revit-chart', 'bar', revitE.map(e=>'Revit '+e[0]), [{
+    data: revitE.map(e=>e[1]), backgroundColor: '#4f8ef7', borderRadius: 4,
   }], { plugins: { legend: { display: false } } });
+
+  const osE = sortedEntries(count(data, 'os'));
+  makeChart('dl-os-chart', 'doughnut', osE.map(e=>e[0]), [{
+    data: osE.map(e=>e[1]), backgroundColor: PALETTE, borderWidth: 0,
+  }], { plugins: { legend: { position: 'right', labels: { color: '#8892a4', font: { size: 11 } } } } });
+
+  const hourBins = Array(24).fill(0);
+  data.forEach(r => { const h = (new Date(r.ts).getUTCHours() + 9) % 24; hourBins[h]++; });
+  makeChart('dl-hour-chart', 'bar', [...Array(24).keys()].map(h=>h+'時'), [{
+    data: hourBins, backgroundColor: '#34d399', borderRadius: 2,
+  }], { plugins: { legend: { display: false } } });
+
+  renderCountryTable('dl-country-table', data, 'country');
+
+  const rawBody = document.getElementById('dl-raw-body');
+  rawBody.innerHTML = '';
+  data.slice(0, 500).forEach(r => {
+    const jst = new Date(new Date(r.ts).getTime() + 9*3600000);
+    const fmt = jst.toISOString().replace('T',' ').slice(0,16);
+    rawBody.insertAdjacentHTML('beforeend', `<tr>
+      <td>${fmt}</td><td>${r.version||'-'}</td><td>${r.revit||'-'}</td>
+      <td>${(FLAGS[r.country]||'🌏')+' '+(r.country||'-')}</td>
+      <td>${r.city||'-'}</td><td>${r.os||'-'}</td>
+    </tr>`);
+  });
 }
 
-// Period buttons
-document.querySelectorAll('.period-btn').forEach(btn => {
+// ---- Pageview tab ----
+function renderPV(data) {
+  const total = data.length;
+  const now = new Date();
+  document.getElementById('kpi-pv-total').textContent = total;
+  document.getElementById('kpi-pv-week').textContent  = filterByDays(data, 7).length;
+  document.getElementById('kpi-pv-month').textContent = filterByDays(data, 30).length;
+  document.getElementById('kpi-pv-month-label').textContent = now.getFullYear() + '年' + (now.getMonth()+1) + '月';
+  document.getElementById('kpi-pv-sessions').textContent = new Set(data.map(r=>r.session_id).filter(Boolean)).size;
+  document.getElementById('kpi-pv-countries').textContent = new Set(data.map(r=>r.country).filter(Boolean)).size;
+
+  renderTrendChart('pv-trend-chart', data, activePVPeriod, 'PV数', '#34d399');
+
+  // Page ranking
+  const pageRaw = count(data, 'page');
+  // ラベルを読みやすく変換
+  const pageLabeled = {};
+  for (const [k, v] of Object.entries(pageRaw)) {
+    pageLabeled[PAGE_LABELS[k] || k] = (pageLabeled[PAGE_LABELS[k] || k] || 0) + v;
+  }
+  renderRankTable('pv-page-table', sortedEntries(pageLabeled, 10), total, 'green');
+
+  // Referrer ranking
+  const refRaw = count(data.map(r => ({ ...r, ref: cleanRef(r.referrer) })), 'ref');
+  renderRankTable('pv-ref-table', sortedEntries(refRaw, 10), total, '');
+
+  // Browser chart
+  const brE = sortedEntries(count(data, 'browser'));
+  makeChart('pv-browser-chart', 'doughnut', brE.map(e=>e[0]), [{
+    data: brE.map(e=>e[1]), backgroundColor: PALETTE, borderWidth: 0,
+  }], { plugins: { legend: { position: 'right', labels: { color: '#8892a4', font: { size: 11 } } } } });
+
+  // OS chart
+  const osE = sortedEntries(count(data, 'os'));
+  makeChart('pv-os-chart', 'doughnut', osE.map(e=>e[0]), [{
+    data: osE.map(e=>e[1]), backgroundColor: PALETTE, borderWidth: 0,
+  }], { plugins: { legend: { position: 'right', labels: { color: '#8892a4', font: { size: 11 } } } } });
+
+  // Language chart
+  const langE = sortedEntries(count(data.map(r => ({ ...r, lang: (r.lang||'').split('-')[0].toUpperCase() })), 'lang'), 8);
+  makeChart('pv-lang-chart', 'bar', langE.map(e=>e[0]), [{
+    data: langE.map(e=>e[1]), backgroundColor: '#a78bfa', borderRadius: 4,
+  }], { plugins: { legend: { display: false } } });
+
+  // Hour chart
+  const hourBins = Array(24).fill(0);
+  data.forEach(r => { const h = (new Date(r.ts).getUTCHours() + 9) % 24; hourBins[h]++; });
+  makeChart('pv-hour-chart', 'bar', [...Array(24).keys()].map(h=>h+'時'), [{
+    data: hourBins, backgroundColor: '#fbbf24', borderRadius: 2,
+  }], { plugins: { legend: { display: false } } });
+
+  renderCountryTable('pv-country-table', data, 'country');
+
+  const rawBody = document.getElementById('pv-raw-body');
+  rawBody.innerHTML = '';
+  data.slice(0, 500).forEach(r => {
+    const jst = new Date(new Date(r.ts).getTime() + 9*3600000);
+    const fmt = jst.toISOString().replace('T',' ').slice(0,16);
+    rawBody.insertAdjacentHTML('beforeend', `<tr>
+      <td>${fmt}</td>
+      <td title="${r.page||''}">${PAGE_LABELS[r.page] || (r.page||'-')}</td>
+      <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">${cleanRef(r.referrer)}</td>
+      <td>${(FLAGS[r.country]||'🌏')+' '+(r.country||'-')}</td>
+      <td>${r.city||'-'}</td>
+      <td>${r.browser||'-'}</td>
+      <td>${r.os||'-'}</td>
+    </tr>`);
+  });
+}
+
+function cleanRef(ref) {
+  if (!ref) return '直接アクセス';
+  try {
+    const u = new URL(ref);
+    return u.hostname.replace(/^www\./, '');
+  } catch { return ref.slice(0, 40); }
+}
+
+// ---- Period buttons ----
+document.querySelectorAll('#dl-period-btns .period-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.period-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('#dl-period-btns .period-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    activePeriod = parseInt(btn.dataset.period);
-    renderTrend(allData, activePeriod);
+    activeDLPeriod = parseInt(btn.dataset.period);
+    renderTrendChart('trend-chart', allDL, activeDLPeriod, 'DL数', '#4f8ef7');
+  });
+});
+document.querySelectorAll('#pv-period-btns .period-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#pv-period-btns .period-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activePVPeriod = parseInt(btn.dataset.period);
+    renderTrendChart('pv-trend-chart', allPV, activePVPeriod, 'PV数', '#34d399');
   });
 });
 
-function toggleRaw() {
-  const wrap = document.getElementById('raw-wrap');
-  const btn = document.getElementById('raw-toggle');
+// ---- Tab switch ----
+function switchTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach((b,i) => b.classList.toggle('active', (i===0&&tab==='dl')||(i===1&&tab==='pv')));
+  document.getElementById('tab-dl').classList.toggle('active', tab==='dl');
+  document.getElementById('tab-pv').classList.toggle('active', tab==='pv');
+  // PVタブ初回表示時にチャートを再描画（非表示時はサイズが0になるため）
+  if (tab==='pv' && allPV.length) renderPV(allPV);
+}
+
+// ---- Raw data toggle ----
+function toggleRaw(wrapId, btn) {
+  const wrap = document.getElementById(wrapId);
   const visible = wrap.style.display !== 'none';
   wrap.style.display = visible ? 'none' : 'block';
   btn.textContent = (visible ? '▶' : '▼') + ' 生データを表示';
 }
 
-// キー入力モーダル
+// ---- Key modal ----
 function showKeyModal(msg) {
   const overlay = document.createElement('div');
   overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;z-index:999';
   const storedHint = localStorage.getItem('28tools_anon_key');
   const hintHtml = storedHint
-    ? `<p style="color:#fbbf24;font-size:11px;margin-bottom:10px;word-break:break-all">現在保存中のキー: ${storedHint.slice(0,20)}…${storedHint.slice(-8)} (${storedHint.length}文字)</p>`
+    ? `<p style="color:#fbbf24;font-size:11px;margin-bottom:10px;word-break:break-all">現在保存中: ${storedHint.slice(0,20)}…${storedHint.slice(-8)} (${storedHint.length}文字)</p>`
     : '';
   overlay.innerHTML = `
-    <div style="background:#1a1d27;border:1px solid #2a2d3a;border-radius:12px;padding:32px;width:460px;max-width:90vw">
+    <div style="background:#1a1d27;border:1px solid #2a2d3a;border-radius:12px;padding:32px;width:480px;max-width:90vw">
       <h2 style="font-size:16px;margin-bottom:8px">🔑 Supabase Anon Key</h2>
       <p style="color:#8892a4;font-size:13px;margin-bottom:12px">${msg}</p>
       ${hintHtml}
       <input id="key-input" type="text" placeholder="sb_publishable_xxxx... または eyJhbG..." autocomplete="off"
-        style="width:100%;background:#0f1117;border:1px solid #2a2d3a;border-radius:6px;padding:10px 12px;color:#e2e8f0;font-size:12px;font-family:monospace;outline:none;margin-bottom:12px">
+        style="width:100%;background:#0f1117;border:1px solid #2a2d3a;border-radius:6px;padding:10px 12px;color:#e2e8f0;font-size:12px;font-family:monospace;outline:none;margin-bottom:8px">
       <p style="color:#8892a4;font-size:11px;margin-bottom:12px">Supabase → Project Settings → API → <strong style="color:#e2e8f0">Publishable key</strong></p>
       <div style="display:flex;gap:8px;justify-content:flex-end">
         <button id="key-cancel" style="background:none;border:1px solid #2a2d3a;color:#8892a4;padding:8px 16px;border-radius:6px;cursor:pointer">キャンセル</button>
@@ -372,10 +562,9 @@ function showKeyModal(msg) {
     </div>`;
   document.body.appendChild(overlay);
   document.getElementById('key-input').focus();
-
   document.getElementById('key-cancel').onclick = () => {
     overlay.remove();
-    document.getElementById('loading').textContent = 'キャンセルしました。ページを再読み込みしてください。';
+    document.getElementById('loading').textContent = 'キャンセルしました。';
   };
   document.getElementById('key-save').onclick = async () => {
     const val = document.getElementById('key-input').value.trim();
@@ -387,42 +576,48 @@ function showKeyModal(msg) {
   };
 }
 
-// キーをリセットするボタンをヘッダーに追加
 function addResetButton() {
+  if (document.getElementById('key-reset-btn')) return;
   const btn = document.createElement('button');
+  btn.id = 'key-reset-btn';
   btn.textContent = '🔑 キー変更';
-  btn.style.cssText = 'background:none;border:1px solid #2a2d3a;color:#8892a4;padding:4px 10px;border-radius:6px;cursor:pointer;font-size:11px;margin-left:12px';
-  btn.onclick = () => {
-    localStorage.removeItem('28tools_anon_key');
-    SUPABASE_ANON = '';
-    showKeyModal('新しい Anon Key を入力してください。');
-  };
+  btn.style.cssText = 'background:none;border:1px solid #2a2d3a;color:#8892a4;padding:4px 10px;border-radius:6px;cursor:pointer;font-size:11px';
+  btn.onclick = () => { localStorage.removeItem('28tools_anon_key'); SUPABASE_ANON = ''; showKeyModal('新しい Anon Key を入力してください。'); };
   document.getElementById('last-updated').appendChild(btn);
 }
 
-// Init
+// ---- Init ----
 async function init() {
-  document.getElementById('loading').style.display = 'block';
-  document.getElementById('loading').textContent = 'データを読み込んでいます...';
-  document.getElementById('error-msg').style.display = 'none';
-  document.getElementById('dashboard').style.display = 'none';
+  const loading = document.getElementById('loading');
+  const errMsg  = document.getElementById('error-msg');
+  loading.style.display = 'block';
+  loading.textContent = 'データを読み込んでいます...';
+  errMsg.style.display = 'none';
+  document.getElementById('tab-dl').classList.remove('active');
+  document.getElementById('tab-pv').classList.remove('active');
   try {
-    allData = await loadData();
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('dashboard').style.display = 'block';
+    [allDL, allPV] = await Promise.all([
+      supaFetch('downloads', 'ts,version,revit,country,city,os'),
+      supaFetch('pageviews',  'ts,page,referrer,country,city,os,browser,lang,session_id').catch(() => []),
+    ]);
+    loading.style.display = 'none';
+    document.getElementById('tab-dl').classList.add('active');
     document.getElementById('last-updated').textContent = '最終更新: ' + new Date().toLocaleTimeString('ja-JP') + ' ';
     addResetButton();
-    renderAll(allData);
+    renderDL(allDL);
+    if (!allPV.length) {
+      document.querySelector('[onclick="switchTab(\'pv\')"]').title = 'データなし（ページビュー計測は設定後に反映）';
+    }
   } catch (e) {
-    document.getElementById('loading').style.display = 'none';
+    loading.style.display = 'none';
     console.error(e);
     if (e.message.includes('401')) {
       localStorage.removeItem('28tools_anon_key');
       SUPABASE_ANON = '';
-      showKeyModal('認証エラー (401) が発生しました。<br>正しい <strong>Publishable key</strong> を入力してください。<br><small style="color:#f87171">' + e.message + '</small>');
+      showKeyModal('認証エラー (401)。正しい <strong>Publishable key</strong> を入力してください。<br><small style="color:#f87171">' + e.message + '</small>');
     } else {
-      document.getElementById('error-msg').textContent = 'エラー: ' + e.message;
-      document.getElementById('error-msg').style.display = 'block';
+      errMsg.textContent = 'エラー: ' + e.message;
+      errMsg.style.display = 'block';
     }
   }
 }
