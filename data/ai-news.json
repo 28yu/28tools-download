@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-05-31T05:19:40.896459",
+  "lastUpdated": "2026-06-01T06:04:45.529149",
   "articles": [
     {
       "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
-      "titleJa": "ITBench-AA: エージェント的エンタープライズ IT タスクの最初のベンチマークでフロンティア モデルのスコアが 50% 未満 — Artificial Analysis と IBM",
+      "titleJa": "ITBench-AA: エージェント的エンタープライズ IT タスクの最初のベンチマークで、フロンティア モデルのスコアが 50% を下回る — Artificial Analysis と IBM による",
       "link": "https://huggingface.co/blog/ibm-research/itbench-aa",
       "description": "...",
       "publishedDate": "Wed, 27 May 2026 17:20:29 GMT",
@@ -90,28 +90,6 @@
       "language": "ja"
     },
     {
-      "title": "三菱総合研究所、AIエージェント活用の事業影響評価支援を開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/mri-ai-agent-business-impact/",
-      "description": "三菱総合研究所は、外部環境の急激な変化による事業影響を定量的に評価するため、AIエージェントを活用した支援機能の提供を開始しました。 このニュースのポイント 三菱総合研究所、AIエージェントを活用した定量的な事業影響評価 [...] The post 三菱総合研究所、AIエージェント活用の事業影響評価支援を開始 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 27 May 2026 06:03:49 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/mitubishi.png",
-      "language": "ja"
-    },
-    {
-      "title": "KyoHA、日本発の純国産ヒューマノイド検証機「SEIMEI」を発表",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kyoha-seimei-humanoid/",
-      "description": "KyoHAは、日本発・純国産ヒューマノイド開発の検証機「SEIMEI（セイメイ）」を公開しました。構成部品から完成品に至るまで国内で開発・製造しており、設計着手から組み立て完了までを約4か月で実施しています。 このニュー [...] The post KyoHA、日本発の純国産ヒューマノイド検証機「SEIMEI」を発表 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 27 May 2026 06:02:58 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/KyoHA-SEIMEI.png",
-      "language": "ja"
-    },
-    {
       "title": "Warp’s big bet on building open source with GPT-5.5",
       "titleJa": "GPT-5.5 によるオープンソースの構築に対する Warp の大きな賭け",
       "link": "https://openai.com/index/warp",
@@ -157,7 +135,7 @@
     },
     {
       "title": "We’re announcing new community investments in Missouri.",
-      "titleJa": "私たちはミズーリ州における新たなコミュニティへの投資を発表します。",
+      "titleJa": "私たちはミズーリ州での新たなコミュニティ投資を発表します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
       "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
       "publishedDate": "Wed, 20 May 2026 20:40:00 +0000",
@@ -344,7 +322,7 @@
     },
     {
       "title": "Catch up on 12 major I/O 2026 moments",
-      "titleJa": "2026 年の I/O の 12 の主要な瞬間をキャッチアップ",
+      "titleJa": "2026 年の 12 の主要な I/O の瞬間をキャッチアップ",
       "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
       "description": "The colorful I/O logo against a black background, surrounded by stills from the I/O keynote...",
       "publishedDate": "Thu, 28 May 2026 15:00:00 +0000",
@@ -497,6 +475,28 @@
       "language": "ja"
     },
     {
+      "title": "【DX担当者必見】生成AIの重大リスクと対策｜企業が導入すべき4つの柱とは？",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/generative-ai-riskc-2026/",
+      "description": "生成AI（Generative AI／文章や画像などを自動生成するAI）の業務利用が国内企業でも急速に広がるなか、機密情報の漏洩や著作権侵害、ディープフェイク詐欺など、生成AIに関わる重大なインシデントが現実に発生してい [...] The post 【DX担当者必見】生成AIの重大リスクと対策｜企業が導入すべき4つの柱とは？ first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Mon, 01 Jun 2026 01:34:53 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/generativeairisk.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIの仕組みとは？非エンジニアでもわかるやさしい解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/generative-ai-mechanism/",
+      "description": "「何度指示しても、AIが期待通りの回答を出してくれない」「嘘の情報を出力されて困った」——そんな経験はありませんか？ 実はこれらの悩みは、生成AIの「裏側の仕組み」を少し理解するだけで劇的に改善します。 仕組みを知れば、 [...] The post 生成AIの仕組みとは？非エンジニアでもわかるやさしい解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 01 Jun 2026 01:32:17 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/generativeAI.png",
+      "language": "ja"
+    },
+    {
       "title": "AIエージェントとは？仕組み・種類・生成AIやRAGとの違いを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/incorporate-ai-agent/",
@@ -549,6 +549,28 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/happyhorsemain.png",
+      "language": "ja"
+    },
+    {
+      "title": "Google Cloud、高速にフェイルオーバー可能なPostgreSQL互換AlloyDBの新たなホットスタンバイを提供",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/google_cloudpostgresqlalloydb.html",
+      "description": "Google Cloudは、エンタープライズ向けに提供されているPostgreSQL互換のデータベースサービス「AlloyDB for PostgreSQL」で、通常30秒以内の高速なフェイルオーバーを可能にする新たなホットスタンバイ機能の......",
+      "publishedDate": "2026-05-31T15:26:39Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/alloydb-new-failover-in30s.png",
+      "language": "ja"
+    },
+    {
+      "title": "AWS、他クラウドと500Mbpsまでの接続が無料に。AWS  Interconnect - multicloudに無料枠が登場",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/aws500mbpsaws_interconnect_-_multicloud.html",
+      "description": "Amazon Web Services（AWS）は、Google CloudやMicrosoft Azureなどのクラウドと閉域網による高速な接続を実現する新サービス「AWS Interconnect - multicloud」において、5......",
+      "publishedDate": "2026-05-31T15:24:56Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/aws-multicloud-freetier01.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/rhellonglifeaddon02.png",
-      "language": "ja"
-    },
-    {
-      "title": "DuckDBをクライアント／サーバ化する「Quack」プロトコルが登場。複数のDuckDBインスタンス間で接続が可能に",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/duckdbquackduckdb.html",
-      "description": "オープンソースとして開発されている高速なOLAP用データベース「DuckDB」をクライアント／サーバ化する新しいプロトコル「Quack」が発表されました。 ちなみにQuackはアヒル（Duckはアヒルおよびカモ類全体の総称ですが、ここではア......",
-      "publishedDate": "2026-05-17T15:58:58Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HIIu8vrWkAAVrk1.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "AWS、Oracle Cloudと閉域網で直結する「AWS Interconnect - multicloud」新機能をプレビュー。Google Cloudとの接続に続き",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/awsoracle_cloudaws_interconnect_-_multicloudgoogle_cloud.html",
-      "description": "AWSは、Oracle Cloudと閉域網で直接接続する「AWS Interconnect - multicloud」の新機能をプレビュー公開しました。 AWS Interconnect - multicloudは、Amazon VPCやA......",
-      "publishedDate": "2026-05-17T15:55:59Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/aws-interconnect-multicloud-oracle-prev.png",
       "language": "ja"
     }
   ]
