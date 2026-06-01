@@ -7741,6 +7741,44 @@ function logDownload(version, url) {
     }
 }
 
+// ページビュー統計の記録（Cloudflare Worker → Supabase）
+const PV_LOG_ENDPOINT = 'https://28tools-dl.tsuha.workers.dev/pv';
+
+function getOrCreateSessionId() {
+    try {
+        let sid = sessionStorage.getItem('_28t_sid');
+        if (!sid) {
+            sid = Math.random().toString(36).slice(2) + Date.now().toString(36);
+            sessionStorage.setItem('_28t_sid', sid);
+        }
+        return sid;
+    } catch (e) { return null; }
+}
+
+function logPageview() {
+    try {
+        const payload = JSON.stringify({
+            page: location.pathname,
+            referrer: document.referrer || null,
+            lang: navigator.language || null,
+            screen: screen.width + 'x' + screen.height,
+            session_id: getOrCreateSessionId(),
+        });
+        if (navigator.sendBeacon) {
+            navigator.sendBeacon(PV_LOG_ENDPOINT, new Blob([payload], { type: 'text/plain' }));
+        } else {
+            fetch(PV_LOG_ENDPOINT, { method: 'POST', body: payload, headers: { 'Content-Type': 'text/plain' }, keepalive: true }).catch(() => {});
+        }
+    } catch (e) {}
+}
+
+// DOMContentLoaded 後に送信（title が確定してから）
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', logPageview);
+} else {
+    logPageview();
+}
+
 function downloadWithPassword(version) {
     console.log(`📥 Download requested: ${version}`);
     
