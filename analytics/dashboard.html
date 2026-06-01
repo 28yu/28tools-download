@@ -153,8 +153,12 @@
 
 <!-- ===== ページビュー タブ ===== -->
 <div id="tab-pv" class="tab-pane">
+  <div id="ga4-notice" style="display:none;background:#1a1d27;border:1px solid #2a2d3a;border-radius:8px;padding:10px 16px;margin-bottom:16px;font-size:12px;color:#8892a4">
+    📜 GA4 歴史データを含む <span id="ga4-count" style="color:#4f8ef7;font-weight:600"></span> PV
+    — <a href="ga4-import.html" style="color:#4f8ef7">インポートツール</a>
+  </div>
   <div class="kpi-row">
-    <div class="kpi blue"><div class="kpi-label">累計PV</div><div class="kpi-value" id="kpi-pv-total">-</div><div class="kpi-sub">全ページ合計</div></div>
+    <div class="kpi blue"><div class="kpi-label">累計PV（全期間）</div><div class="kpi-value" id="kpi-pv-total">-</div><div class="kpi-sub" id="kpi-pv-total-sub">GA4+計測合算</div></div>
     <div class="kpi green"><div class="kpi-label">今月PV</div><div class="kpi-value" id="kpi-pv-month">-</div><div class="kpi-sub" id="kpi-pv-month-label">-</div></div>
     <div class="kpi yellow"><div class="kpi-label">今週PV</div><div class="kpi-value" id="kpi-pv-week">-</div><div class="kpi-sub">直近7日</div></div>
     <div class="kpi purple"><div class="kpi-label">セッション数</div><div class="kpi-value" id="kpi-pv-sessions">-</div><div class="kpi-sub">ユニークセッション</div></div>
@@ -271,10 +275,38 @@ const PAGE_LABELS = {
   '/analytics/dashboard.html': 'ダッシュボード',
 };
 
-let allDL = [], allPV = [];
+let allDL = [], allPV = [], allGA4 = [];
 let ghStats = null;
 let charts = {};
 let activeDLPeriod = 30, activePVPeriod = 30;
+
+// ---- GA4 history → synthetic PV events ----
+// ga4_history 行を pageviews 互換オブジェクトに展開する
+function ga4ToEvents(ga4Rows) {
+  const events = [];
+  ga4Rows.forEach(r => {
+    // views の数だけ合成イベントを生成（最大1000件/行）
+    const n = Math.min(r.views, 1000);
+    for (let i = 0; i < n; i++) {
+      const hourOffset = Math.floor((i / n) * 24);
+      const ts = r.date + 'T' + String(hourOffset).padStart(2,'0') + ':' + String(Math.floor(Math.random()*60)).padStart(2,'0') + ':00Z';
+      events.push({
+        ts,
+        page: r.page || null,
+        referrer: null,
+        country: r.country || null,
+        city: null,
+        os: r.os || null,
+        browser: r.browser || null,
+        lang: r.lang || null,
+        session_id: r.date + '_' + i,
+        _ga4: true,
+        _weight: r.views / n,
+      });
+    }
+  });
+  return events;
+}
 
 // ---- GitHub Releases download count ----
 async function fetchGitHubDL() {
@@ -463,56 +495,85 @@ function renderDL(data) {
 
 // ---- Pageview tab ----
 function renderPV(data) {
-  const total = data.length;
+  // GA4 歴史データを合成イベントに展開してマージ
+  const ga4Events = ga4ToEvents(allGA4);
+  const combined = [...ga4Events, ...data];
+
+  // GA4 データの実際の PV 合計（重み付き）
+  const ga4TotalPV = allGA4.reduce((s, r) => s + (r.views || 0), 0);
+  const ga4Notice = document.getElementById('ga4-notice');
+  if (ga4TotalPV > 0) {
+    ga4Notice.style.display = 'block';
+    document.getElementById('ga4-count').textContent = ga4TotalPV.toLocaleString();
+  }
+
+  const total = combined.length;
   const now = new Date();
-  document.getElementById('kpi-pv-total').textContent = total;
+  // 累計PV: GA4実PV数 + Supabase実件数
+  document.getElementById('kpi-pv-total').textContent = (ga4TotalPV + data.length).toLocaleString();
+  document.getElementById('kpi-pv-total-sub').textContent = ga4TotalPV > 0 ? `GA4(${ga4TotalPV.toLocaleString()}) + 計測(${data.length})` : '計測分のみ';
   document.getElementById('kpi-pv-week').textContent  = filterByDays(data, 7).length;
   document.getElementById('kpi-pv-month').textContent = filterByDays(data, 30).length;
   document.getElementById('kpi-pv-month-label').textContent = now.getFullYear() + '年' + (now.getMonth()+1) + '月';
-  document.getElementById('kpi-pv-sessions').textContent = new Set(data.map(r=>r.session_id).filter(Boolean)).size;
-  document.getElementById('kpi-pv-countries').textContent = new Set(data.map(r=>r.country).filter(Boolean)).size;
+  document.getElementById('kpi-pv-sessions').textContent = new Set(combined.map(r=>r.session_id).filter(Boolean)).size;
+  document.getElementById('kpi-pv-countries').textContent = new Set(combined.map(r=>r.country).filter(Boolean)).size;
 
-  renderTrendChart('pv-trend-chart', data, activePVPeriod, 'PV数', '#34d399');
+  // GA4 歴史データのトレンドも含めて表示
+  renderPVTrendChart(combined, activePVPeriod);
 
-  // Page ranking
-  const pageRaw = count(data, 'page');
-  // ラベルを読みやすく変換
+  // Page ranking（GA4実データの views を合算）
+  const pageRaw = {};
+  // Supabase の実データ
+  data.forEach(r => { const k = r.page || '(not set)'; pageRaw[k] = (pageRaw[k]||0)+1; });
+  // GA4 歴史データ（実PV数で合算）
+  allGA4.forEach(r => { const k = r.page || '(not set)'; pageRaw[k] = (pageRaw[k]||0)+(r.views||0); });
   const pageLabeled = {};
   for (const [k, v] of Object.entries(pageRaw)) {
     pageLabeled[PAGE_LABELS[k] || k] = (pageLabeled[PAGE_LABELS[k] || k] || 0) + v;
   }
-  renderRankTable('pv-page-table', sortedEntries(pageLabeled, 10), total, 'green');
+  const pvGrandTotal = Object.values(pageLabeled).reduce((s,v)=>s+v,0);
+  renderRankTable('pv-page-table', sortedEntries(pageLabeled, 10), pvGrandTotal, 'green');
 
-  // Referrer ranking
+  // Referrer ranking（Supabase のみ）
   const refRaw = count(data.map(r => ({ ...r, ref: cleanRef(r.referrer) })), 'ref');
-  renderRankTable('pv-ref-table', sortedEntries(refRaw, 10), total, '');
+  renderRankTable('pv-ref-table', sortedEntries(refRaw, 10), data.length || 1, '');
 
-  // Browser chart
-  const brE = sortedEntries(count(data, 'browser'));
+  // Browser chart（combined）
+  const brRaw = {};
+  combined.forEach(r => { const k = r.browser||'Unknown'; brRaw[k]=(brRaw[k]||0)+(r._weight||1); });
+  const brE = sortedEntries(brRaw);
   makeChart('pv-browser-chart', 'doughnut', brE.map(e=>e[0]), [{
-    data: brE.map(e=>e[1]), backgroundColor: PALETTE, borderWidth: 0,
+    data: brE.map(e=>Math.round(e[1])), backgroundColor: PALETTE, borderWidth: 0,
   }], { plugins: { legend: { position: 'right', labels: { color: '#8892a4', font: { size: 11 } } } } });
 
-  // OS chart
-  const osE = sortedEntries(count(data, 'os'));
+  // OS chart（combined）
+  const osRaw = {};
+  combined.forEach(r => { const k = r.os||'Unknown'; osRaw[k]=(osRaw[k]||0)+(r._weight||1); });
+  const osE = sortedEntries(osRaw);
   makeChart('pv-os-chart', 'doughnut', osE.map(e=>e[0]), [{
-    data: osE.map(e=>e[1]), backgroundColor: PALETTE, borderWidth: 0,
+    data: osE.map(e=>Math.round(e[1])), backgroundColor: PALETTE, borderWidth: 0,
   }], { plugins: { legend: { position: 'right', labels: { color: '#8892a4', font: { size: 11 } } } } });
 
-  // Language chart
-  const langE = sortedEntries(count(data.map(r => ({ ...r, lang: (r.lang||'').split('-')[0].toUpperCase() })), 'lang'), 8);
+  // Language chart（combined）
+  const langRaw = {};
+  combined.forEach(r => { const k = ((r.lang||'').split('-')[0]||'Unknown').toUpperCase(); langRaw[k]=(langRaw[k]||0)+(r._weight||1); });
+  const langE = sortedEntries(langRaw, 8);
   makeChart('pv-lang-chart', 'bar', langE.map(e=>e[0]), [{
-    data: langE.map(e=>e[1]), backgroundColor: '#a78bfa', borderRadius: 4,
+    data: langE.map(e=>Math.round(e[1])), backgroundColor: '#a78bfa', borderRadius: 4,
   }], { plugins: { legend: { display: false } } });
 
-  // Hour chart
+  // Hour chart（Supabase 計測のみ）
   const hourBins = Array(24).fill(0);
   data.forEach(r => { const h = (new Date(r.ts).getUTCHours() + 9) % 24; hourBins[h]++; });
   makeChart('pv-hour-chart', 'bar', [...Array(24).keys()].map(h=>h+'時'), [{
     data: hourBins, backgroundColor: '#fbbf24', borderRadius: 2,
   }], { plugins: { legend: { display: false } } });
 
-  renderCountryTable('pv-country-table', data, 'country');
+  // Country table（GA4実データ + Supabase）
+  const countryRaw = {};
+  data.forEach(r => { if (r.country) countryRaw[r.country]=(countryRaw[r.country]||0)+1; });
+  allGA4.forEach(r => { if (r.country) countryRaw[r.country]=(countryRaw[r.country]||0)+(r.views||0); });
+  renderCountryTableRaw('pv-country-table', countryRaw);
 
   const rawBody = document.getElementById('pv-raw-body');
   rawBody.innerHTML = '';
@@ -528,6 +589,51 @@ function renderPV(data) {
       <td>${r.browser||'-'}</td>
       <td>${r.os||'-'}</td>
     </tr>`);
+  });
+}
+
+function renderPVTrendChart(combined, days) {
+  // GA4 歴史（実PV重み）+ Supabase（1イベント=1PV）を日別に集計
+  const byDay = {};
+  // Supabase
+  allPV.forEach(r => {
+    if (days && Date.now() - new Date(r.ts).getTime() > days * 86400000) return;
+    const d = r.ts.slice(0,10);
+    byDay[d] = (byDay[d]||0) + 1;
+  });
+  // GA4（実views数を使う）
+  allGA4.forEach(r => {
+    if (days && Date.now() - new Date(r.date).getTime() > days * 86400000) return;
+    byDay[r.date] = (byDay[r.date]||0) + (r.views||0);
+  });
+  const sorted = Object.keys(byDay).sort();
+  makeChart('pv-trend-chart', 'line', sorted, [{
+    label: 'PV数',
+    data: sorted.map(d => byDay[d]),
+    borderColor: '#34d399',
+    backgroundColor: 'rgba(52,211,153,.12)',
+    fill: true, tension: 0.3,
+    pointRadius: sorted.length > 60 ? 0 : 3,
+  }], { plugins: { legend: { display: false } } });
+}
+
+function renderCountryTableRaw(tableId, countryRaw) {
+  const entries = sortedEntries(countryRaw, 10);
+  const grandTotal = entries.reduce((s,[,v])=>s+v, 0) || 1;
+  const maxCnt = entries[0]?.[1] || 1;
+  const tbody = document.querySelector(`#${tableId} tbody`);
+  tbody.innerHTML = '';
+  entries.forEach(([code, cnt], i) => {
+    const pct = ((cnt / grandTotal) * 100).toFixed(1);
+    const barW = Math.max(4, Math.round((cnt / maxCnt) * 120));
+    tbody.insertAdjacentHTML('beforeend', `
+      <tr>
+        <td style="color:var(--muted)">${i+1}</td>
+        <td>${FLAGS[code]||'🌏'} ${COUNTRY_NAMES[code]||code} <span style="color:var(--muted);font-size:11px">(${code})</span></td>
+        <td style="font-weight:600">${cnt.toLocaleString()}</td>
+        <td style="color:var(--muted)">${pct}%</td>
+        <td><div class="mini-bar green" style="width:${barW}px"></div></td>
+      </tr>`);
   });
 }
 
@@ -553,7 +659,7 @@ document.querySelectorAll('#pv-period-btns .period-btn').forEach(btn => {
     document.querySelectorAll('#pv-period-btns .period-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     activePVPeriod = parseInt(btn.dataset.period);
-    renderTrendChart('pv-trend-chart', allPV, activePVPeriod, 'PV数', '#34d399');
+    renderPVTrendChart([...ga4ToEvents(allGA4), ...allPV], activePVPeriod);
   });
 });
 
@@ -563,7 +669,7 @@ function switchTab(tab) {
   document.getElementById('tab-dl').classList.toggle('active', tab==='dl');
   document.getElementById('tab-pv').classList.toggle('active', tab==='pv');
   // PVタブ初回表示時にチャートを再描画（非表示時はサイズが0になるため）
-  if (tab==='pv' && allPV.length) renderPV(allPV);
+  if (tab==='pv' && (allPV.length || allGA4.length)) renderPV(allPV);
 }
 
 // ---- Raw data toggle ----
@@ -631,10 +737,11 @@ async function init() {
   document.getElementById('tab-dl').classList.remove('active');
   document.getElementById('tab-pv').classList.remove('active');
   try {
-    [[allDL, allPV], ghStats] = await Promise.all([
+    [[allDL, allPV, allGA4], ghStats] = await Promise.all([
       Promise.all([
         supaFetch('downloads', 'ts,version,revit,country,city,os'),
         supaFetch('pageviews',  'ts,page,referrer,country,city,os,browser,lang,session_id').catch(() => []),
+        supaFetch('ga4_history', 'date,page,country,browser,os,lang,views,sessions').catch(() => []),
       ]),
       fetchGitHubDL(),
     ]);
