@@ -3,401 +3,570 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GA4 歴史データ インポート</title>
+<title>GA4 連携設定 — 28 Tools Analytics</title>
 <style>
   :root {
     --bg: #0f1117; --surface: #1a1d27; --border: #2a2d3a;
     --accent: #4f8ef7; --green: #34d399; --yellow: #fbbf24;
-    --red: #f87171; --text: #e2e8f0; --muted: #8892a4;
+    --red: #f87171; --purple: #a78bfa; --text: #e2e8f0; --muted: #8892a4;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; padding: 24px; }
-  h1 { font-size: 20px; color: var(--accent); margin-bottom: 8px; }
-  .subtitle { color: var(--muted); font-size: 13px; margin-bottom: 32px; }
-  .section { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 24px; margin-bottom: 20px; max-width: 800px; }
-  .section h2 { font-size: 14px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 16px; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; }
+  header { padding: 16px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 18px; color: var(--accent); }
+  header a { color: var(--muted); font-size: 13px; text-decoration: none; }
+  header a:hover { color: var(--text); }
+
+  .tabs { display: flex; border-bottom: 1px solid var(--border); background: var(--surface); padding: 0 24px; }
+  .tab-btn { background: none; border: none; color: var(--muted); padding: 12px 20px; cursor: pointer; font-size: 14px; font-weight: 500; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .tab-pane { display: none; padding: 24px; max-width: 860px; }
+  .tab-pane.active { display: block; }
+
+  .section { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 24px; margin-bottom: 20px; }
+  .section-title { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 16px; }
+
+  .step { display: flex; gap: 16px; margin-bottom: 24px; }
+  .step-num { background: var(--accent); color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+  .step-title { font-weight: 600; margin-bottom: 6px; }
+  .step-desc { color: var(--muted); font-size: 13px; line-height: 1.7; }
+
+  pre { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 16px; font-size: 12px; font-family: 'Consolas', monospace; overflow-x: auto; color: var(--text); line-height: 1.7; margin: 10px 0; white-space: pre-wrap; word-break: break-word; }
+  code { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 2px 6px; font-size: 12px; font-family: monospace; color: var(--yellow); }
+
   label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 6px; }
   input[type="text"], input[type="file"] {
     width: 100%; background: var(--bg); border: 1px solid var(--border);
     border-radius: 6px; padding: 10px 12px; color: var(--text); font-size: 13px;
     font-family: monospace; outline: none; margin-bottom: 16px;
   }
-  input[type="file"] { font-family: sans-serif; cursor: pointer; }
   input:focus { border-color: var(--accent); }
-  .btn { background: var(--accent); border: none; color: #fff; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600; }
+
+  .btn { background: var(--accent); border: none; color: #fff; padding: 8px 18px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 600; }
   .btn:disabled { opacity: .4; cursor: not-allowed; }
-  .btn-danger { background: var(--red); }
   .btn-green { background: var(--green); color: #000; }
-  .step { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px; }
-  .step-num { background: var(--accent); color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }
-  .step-body { flex: 1; }
-  .step-title { font-weight: 600; margin-bottom: 6px; }
-  .step-desc { color: var(--muted); font-size: 13px; line-height: 1.6; }
-  code { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 2px 6px; font-size: 12px; font-family: monospace; color: var(--yellow); }
-  pre { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 16px; font-size: 12px; font-family: monospace; overflow-x: auto; color: var(--text); line-height: 1.6; margin: 10px 0; }
+  .btn-sm { padding: 5px 12px; font-size: 12px; }
+
   .status { padding: 10px 14px; border-radius: 6px; font-size: 13px; margin-top: 12px; display: none; }
   .status.ok { background: #0d2b1f; border: 1px solid var(--green); color: var(--green); display: block; }
   .status.err { background: #2b0d0d; border: 1px solid var(--red); color: var(--red); display: block; }
   .status.info { background: #0d1b2b; border: 1px solid var(--accent); color: var(--accent); display: block; }
-  #preview-table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 12px; }
-  #preview-table th { background: var(--bg); padding: 6px 10px; text-align: left; color: var(--muted); }
-  #preview-table td { padding: 5px 10px; border-top: 1px solid var(--border); }
+
+  .badge { background: var(--border); border-radius: 20px; padding: 2px 10px; font-size: 11px; color: var(--muted); display: inline-block; margin-left: 6px; }
+  .badge.ok { background: #0d2b1f; color: var(--green); }
+
   .progress-bar { background: var(--border); border-radius: 4px; height: 8px; margin: 12px 0; overflow: hidden; }
   .progress-fill { background: var(--accent); height: 100%; border-radius: 4px; transition: width .3s; }
-  .pill { background: var(--border); border-radius: 20px; padding: 2px 10px; font-size: 11px; color: var(--muted); display: inline-block; margin-left: 8px; }
-  .pill.ok { background: #0d2b1f; color: var(--green); }
+
+  table.preview { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 12px; }
+  table.preview th { background: var(--bg); padding: 6px 10px; text-align: left; color: var(--muted); }
+  table.preview td { padding: 5px 10px; border-top: 1px solid var(--border); }
+
   a { color: var(--accent); }
+  .note { background: #1a1d27; border-left: 3px solid var(--yellow); padding: 10px 14px; border-radius: 0 6px 6px 0; color: var(--muted); font-size: 13px; line-height: 1.6; margin: 12px 0; }
 </style>
 </head>
 <body>
 
-<h1>📊 GA4 歴史データ インポート</h1>
-<p class="subtitle">Google Analytics 4 の過去データを Supabase に取り込み、ダッシュボードに歴史データを表示します。</p>
+<header>
+  <h1>⚙️ GA4 連携設定</h1>
+  <a href="dashboard.html">← ダッシュボードに戻る</a>
+</header>
 
-<!-- STEP 1: Supabase key -->
-<div class="section">
-  <h2>Step 1 — Supabase 接続</h2>
-  <label>Supabase Anon Key（Publishable Key）</label>
-  <input type="text" id="anon-key" placeholder="sb_publishable_xxxx... または eyJhbG..." autocomplete="off">
-  <button class="btn" onclick="testConnection()">接続テスト</button>
-  <div id="conn-status" class="status"></div>
-</div>
+<nav class="tabs">
+  <button class="tab-btn active" onclick="switchTab('auto')">🔄 自動同期（推奨）</button>
+  <button class="tab-btn" onclick="switchTab('manual')">📁 手動インポート（CSV）</button>
+  <button class="tab-btn" onclick="switchTab('status')">📊 同期ステータス</button>
+</nav>
 
-<!-- STEP 2: GA4 Apps Script -->
-<div class="section">
-  <h2>Step 2 — Google Apps Script でデータをエクスポート</h2>
+<!-- ========== 自動同期タブ ========== -->
+<div id="tab-auto" class="tab-pane active">
 
-  <div class="step">
-    <div class="step-num">1</div>
-    <div class="step-body">
-      <div class="step-title">GA4 プロパティ ID を確認</div>
-      <div class="step-desc">
-        <a href="https://analytics.google.com/" target="_blank">Google Analytics</a> を開く →
-        左下の <strong>管理（歯車）</strong> → <strong>プロパティの設定</strong> →
-        「プロパティ ID」の数字（例: <code>123456789</code>）をメモ
-      </div>
+  <div class="section">
+    <div class="section-title">仕組み</div>
+    <p style="color:var(--muted);font-size:13px;line-height:1.7">
+      Google Apps Script が毎日 GA4 Data API からデータを取得し、Supabase の <code>ga4_history</code> テーブルに自動書き込みします。<br>
+      ダッシュボードは Supabase から読み取るだけなので、設定後は何もしなくても毎日更新されます。
+    </p>
+    <div style="display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;font-size:13px;color:var(--muted)">
+      <span>GA4</span>
+      <span style="color:var(--accent)">→ Apps Script（毎日自動）→</span>
+      <span>Supabase</span>
+      <span style="color:var(--accent)">→</span>
+      <span>ダッシュボード</span>
     </div>
   </div>
 
-  <div class="step">
-    <div class="step-num">2</div>
-    <div class="step-body">
-      <div class="step-title">Google スプレッドシートで Apps Script を実行</div>
-      <div class="step-desc">
-        <a href="https://sheets.new" target="_blank">新しいスプレッドシート</a>を開く →
-        メニュー「<strong>拡張機能</strong>」→「<strong>Apps Script</strong>」→
-        以下をコピーして貼り付け → <code>PROPERTY_ID</code> を自分のIDに変更 → 実行
-      </div>
-      <pre id="apps-script-code">// GA4 Data API を使って歴史データを CSV エクスポート
-// ※ 初回実行時に「Google Analytics Data API」サービス追加が必要:
-//    左メニュー「サービス」→「Google Analytics Data API」→追加
-
-function exportGA4() {
-  const PROPERTY_ID = '123456789'; // ← あなたのGA4プロパティIDに変更
-
-  const report = AnalyticsData.Properties.runReport({
-    dateRanges: [{ startDate: '2020-01-01', endDate: 'today' }],
-    dimensions: [
-      { name: 'date' },
-      { name: 'pagePath' },
-      { name: 'country' },
-      { name: 'browser' },
-      { name: 'operatingSystem' },
-      { name: 'language' },
-    ],
-    metrics: [
-      { name: 'screenPageViews' },
-      { name: 'sessions' },
-    ],
-    limit: 250000,
-  }, 'properties/' + PROPERTY_ID);
-
-  const rows = [['date','page','country','browser','os','lang','views','sessions']];
-  (report.rows || []).forEach(row => {
-    rows.push([
-      ...row.dimensionValues.map(d => d.value),
-      ...row.metricValues.map(m => m.value),
-    ]);
-  });
-
-  const csv = rows.map(r =>
-    r.map(c => '"' + String(c).replace(/"/g, '""') + '"').join(',')
-  ).join('\n');
-
-  const blob = Utilities.newBlob(csv, 'text/csv', 'ga4_export.csv');
-  const file = DriveApp.createFile(blob);
-  Logger.log('✅ CSV 作成完了: ' + file.getUrl());
-  // → Google ドライブに「ga4_export.csv」が作成される
-}</pre>
-      <button class="btn" style="margin-top:8px;font-size:12px;padding:6px 14px" onclick="copyScript()">スクリプトをコピー</button>
+  <!-- Step 1: Supabase テーブル -->
+  <div class="section">
+    <div class="section-title">Step 1 — Supabase にテーブルを作成</div>
+    <div class="step-desc" style="margin-bottom:12px">
+      Supabase の <a href="https://supabase.com/dashboard" target="_blank">SQL Editor</a> で以下を実行してください。
     </div>
-  </div>
-
-  <div class="step">
-    <div class="step-num">3</div>
-    <div class="step-body">
-      <div class="step-title">CSV をダウンロード</div>
-      <div class="step-desc">
-        実行ログに表示された Google ドライブの URL を開き、
-        <strong>ダウンロード</strong> して <code>ga4_export.csv</code> を保存
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- STEP 3: テーブル作成 -->
-<div class="section">
-  <h2>Step 3 — Supabase にテーブルを作成</h2>
-  <div class="step-desc" style="margin-bottom:12px">
-    Supabase の <strong>SQL Editor</strong> で以下を実行してください（初回のみ）
-  </div>
-  <pre>CREATE TABLE IF NOT EXISTS ga4_history (
+    <pre id="sql-code">-- ga4_history テーブル作成（全指標対応版）
+CREATE TABLE IF NOT EXISTS ga4_history (
   id bigserial PRIMARY KEY,
   date date NOT NULL,
   page text,
   country text,
-  browser text,
-  os text,
-  lang text,
+  device_category text,
+  source text,
+  medium text,
   views integer DEFAULT 0,
-  sessions integer DEFAULT 0
+  sessions integer DEFAULT 0,
+  users integer DEFAULT 0,
+  new_users integer DEFAULT 0,
+  engaged_sessions integer DEFAULT 0,
+  avg_engagement_sec float DEFAULT 0,
+  bounce_rate float DEFAULT 0,
+  synced_at timestamptz DEFAULT now(),
+  UNIQUE(date, page, country, device_category, source, medium)
 );
-CREATE INDEX IF NOT EXISTS ga4_history_date_idx ON ga4_history (date);
-CREATE INDEX IF NOT EXISTS ga4_history_page_idx ON ga4_history (page);
+CREATE INDEX IF NOT EXISTS ga4_hist_date ON ga4_history (date);
+CREATE INDEX IF NOT EXISTS ga4_hist_page ON ga4_history (page);
 ALTER TABLE ga4_history ENABLE ROW LEVEL SECURITY;
-CREATE POLICY IF NOT EXISTS "allow anon read" ON ga4_history FOR SELECT TO anon USING (true);
+CREATE POLICY IF NOT EXISTS "anon read" ON ga4_history FOR SELECT TO anon USING (true);
 GRANT SELECT ON public.ga4_history TO anon;
 GRANT SELECT ON public.ga4_history TO authenticated;
 GRANT ALL ON public.ga4_history TO service_role;
 GRANT ALL ON SEQUENCE public.ga4_history_id_seq TO service_role;</pre>
-  <button class="btn" style="margin-top:8px;font-size:12px;padding:6px 14px" onclick="copySQL()">SQL をコピー</button>
-  <div id="table-check-status" class="status"></div>
-  <button class="btn" style="margin-top:12px;font-size:12px;padding:6px 14px" onclick="checkTable()">テーブル確認</button>
+    <button class="btn btn-sm" onclick="copyText('sql-code')">SQLをコピー</button>
+  </div>
+
+  <!-- Step 2: GA4 プロパティID -->
+  <div class="section">
+    <div class="section-title">Step 2 — GA4 プロパティ ID を確認</div>
+    <div class="step-desc">
+      <a href="https://analytics.google.com/" target="_blank">Google Analytics</a> を開く →
+      左下 <strong>管理（歯車アイコン）</strong> → <strong>プロパティの設定</strong> →
+      「プロパティ ID」の数字（例: <code>123456789</code>）をメモしてください。
+    </div>
+  </div>
+
+  <!-- Step 3: Supabase service_role key -->
+  <div class="section">
+    <div class="section-title">Step 3 — Supabase の Service Role Key を取得</div>
+    <div class="step-desc">
+      Supabase ダッシュボード → <strong>Project Settings</strong> → <strong>API</strong> →
+      「<strong>service_role</strong>」のキーをコピー。
+    </div>
+    <div class="note">⚠️ service_role キーは強い権限を持つため、Apps Script の Script Properties に保存します（ブラウザに保存しません）。</div>
+  </div>
+
+  <!-- Step 4: Apps Script -->
+  <div class="section">
+    <div class="section-title">Step 4 — Google Apps Script を設定</div>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-title">新しいスプレッドシートを開く</div>
+        <div class="step-desc">
+          <a href="https://sheets.new" target="_blank">sheets.new</a> → メニュー「拡張機能」→「Apps Script」
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-title">Google Analytics Data API を追加</div>
+        <div class="step-desc">
+          左メニュー「<strong>サービス（＋）</strong>」→「<strong>Google Analytics Data API</strong>」→「追加」
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-title">以下のコードをコピーして貼り付ける</div>
+        <pre id="apps-script-code">// ============================================================
+// 28 Tools — GA4 → Supabase 自動同期スクリプト
+// ============================================================
+
+// ---- 初回のみ: 設定を保存 ----
+// 以下の関数を一度だけ実行して設定を保存してください。
+// その後は saveConfig() の実行は不要です。
+function saveConfig() {
+  PropertiesService.getScriptProperties().setProperties({
+    GA4_PROPERTY_ID: '123456789',              // ← GA4 プロパティID（数字のみ）
+    SUPABASE_URL:    'https://clyfrkwuajbauqxvrfyf.supabase.co',
+    SUPABASE_KEY:    'eyJhbGciOiJIUzI1NiIsInR5...',  // ← service_role key
+  });
+  Logger.log('✅ 設定を保存しました');
+}
+
+// ---- 毎日自動実行: 昨日のデータを同期 ----
+function syncYesterday() {
+  const p = PropertiesService.getScriptProperties().getProperties();
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  const dateStr = Utilities.formatDate(yesterday, 'Asia/Tokyo', 'yyyy-MM-dd');
+  _syncDateRange(p, dateStr, dateStr);
+  Logger.log('✅ 同期完了: ' + dateStr);
+}
+
+// ---- 初回のみ: 全期間の歴史データを一括取得 ----
+function syncHistorical() {
+  const p = PropertiesService.getScriptProperties().getProperties();
+  _syncDateRange(p, '2020-01-01', 'yesterday');
+  Logger.log('✅ 歴史データ同期完了');
+}
+
+// ---- 毎日のトリガーを設定（一度だけ実行） ----
+function setupDailyTrigger() {
+  // 既存トリガーを削除
+  ScriptApp.getProjectTriggers().forEach(t => ScriptApp.deleteTrigger(t));
+  // 毎日 午前2時（JST）= UTC 17時に実行
+  ScriptApp.newTrigger('syncYesterday')
+    .timeBased()
+    .atHour(17)
+    .nearMinute(0)
+    .everyDays(1)
+    .create();
+  Logger.log('✅ 毎日トリガーを設定しました（JST 午前2時）');
+}
+
+// ============================================================
+// 内部関数
+// ============================================================
+function _syncDateRange(p, startDate, endDate) {
+  const PROPERTY_ID = p.GA4_PROPERTY_ID;
+  const SUPABASE_URL = p.SUPABASE_URL;
+  const SUPABASE_KEY = p.SUPABASE_KEY;
+
+  let offset = 0;
+  const LIMIT = 10000;
+
+  while (true) {
+    const report = AnalyticsData.Properties.runReport({
+      dateRanges: [{ startDate, endDate }],
+      dimensions: [
+        { name: 'date' },
+        { name: 'pagePath' },
+        { name: 'country' },
+        { name: 'deviceCategory' },
+        { name: 'sessionSource' },
+        { name: 'sessionMedium' },
+      ],
+      metrics: [
+        { name: 'screenPageViews' },
+        { name: 'sessions' },
+        { name: 'totalUsers' },
+        { name: 'newUsers' },
+        { name: 'engagedSessions' },
+        { name: 'averageSessionDuration' },
+        { name: 'bounceRate' },
+      ],
+      limit: LIMIT,
+      offset: offset,
+    }, 'properties/' + PROPERTY_ID);
+
+    const rows = (report.rows || []).map(row => {
+      const d = row.dimensionValues[0].value;
+      return {
+        date: d.length === 8
+          ? d.slice(0,4)+'-'+d.slice(4,6)+'-'+d.slice(6,8)
+          : d,
+        page:              row.dimensionValues[1].value || null,
+        country:           row.dimensionValues[2].value || null,
+        device_category:   row.dimensionValues[3].value || null,
+        source:            row.dimensionValues[4].value || null,
+        medium:            row.dimensionValues[5].value || null,
+        views:             parseInt(row.metricValues[0].value) || 0,
+        sessions:          parseInt(row.metricValues[1].value) || 0,
+        users:             parseInt(row.metricValues[2].value) || 0,
+        new_users:         parseInt(row.metricValues[3].value) || 0,
+        engaged_sessions:  parseInt(row.metricValues[4].value) || 0,
+        avg_engagement_sec:parseFloat(row.metricValues[5].value) || 0,
+        bounce_rate:       parseFloat(row.metricValues[6].value) || 0,
+      };
+    });
+
+    if (rows.length === 0) break;
+
+    // Supabase に upsert（重複は上書き）
+    const BATCH = 500;
+    for (let i = 0; i < rows.length; i += BATCH) {
+      const batch = rows.slice(i, i + BATCH);
+      const res = UrlFetchApp.fetch(SUPABASE_URL + '/rest/v1/ga4_history', {
+        method: 'post',
+        contentType: 'application/json',
+        headers: {
+          'apikey': SUPABASE_KEY,
+          'Authorization': 'Bearer ' + SUPABASE_KEY,
+          'Prefer': 'resolution=merge-duplicates,return=minimal',
+        },
+        payload: JSON.stringify(batch),
+        muteHttpExceptions: true,
+      });
+      if (res.getResponseCode() >= 400) {
+        Logger.log('⚠️ Upsert エラー: ' + res.getContentText().slice(0, 200));
+      }
+    }
+
+    Logger.log('  ' + rows.length + ' 行を処理 (offset=' + offset + ')');
+    if (rows.length < LIMIT) break;
+    offset += LIMIT;
+    Utilities.sleep(500);
+  }
+}</pre>
+        <button class="btn btn-sm" onclick="copyText('apps-script-code')">コードをコピー</button>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-title">実行順序</div>
+        <div class="step-desc">
+          ① コード内の <code>GA4_PROPERTY_ID</code> と <code>SUPABASE_KEY</code> を入力<br>
+          ② <code>saveConfig</code> を選んで実行（設定を保存）<br>
+          ③ <code>syncHistorical</code> を選んで実行（過去データを一括取得）<br>
+          ④ <code>setupDailyTrigger</code> を選んで実行（毎日自動化を設定）<br>
+          → 以後は何もしなくても毎朝2時に自動更新 ✅
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
-<!-- STEP 4: インポート -->
-<div class="section">
-  <h2>Step 4 — CSV をインポート</h2>
-  <label>ga4_export.csv を選択</label>
-  <input type="file" id="csv-file" accept=".csv" onchange="loadCSV(this)">
+<!-- ========== 手動インポートタブ ========== -->
+<div id="tab-manual" class="tab-pane">
 
-  <div id="preview-section" style="display:none">
-    <div id="preview-info" style="color:var(--muted);font-size:13px;margin-bottom:8px"></div>
-    <div style="max-height:200px;overflow-y:auto;border:1px solid var(--border);border-radius:6px">
-      <table id="preview-table">
-        <thead><tr><th>date</th><th>page</th><th>country</th><th>browser</th><th>os</th><th>lang</th><th>views</th><th>sessions</th></tr></thead>
-        <tbody id="preview-body"></tbody>
-      </table>
-    </div>
-    <div style="margin-top:16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
-      <button class="btn btn-green" id="import-btn" onclick="startImport()">インポート開始</button>
-      <label style="display:flex;align-items:center;gap:6px;margin:0;cursor:pointer">
-        <input type="checkbox" id="overwrite-check"> 既存データを上書き
-      </label>
-    </div>
+  <div class="section">
+    <div class="section-title">Supabase 接続</div>
+    <label>Anon Key（Publishable Key）</label>
+    <input type="text" id="anon-key" placeholder="sb_publishable_xxxx...">
+    <button class="btn" onclick="testConn()">接続テスト</button>
+    <div id="conn-status" class="status"></div>
   </div>
 
-  <div id="import-progress" style="display:none">
-    <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
-    <div id="progress-text" style="font-size:12px;color:var(--muted)"></div>
+  <div class="section">
+    <div class="section-title">CSV をアップロード</div>
+    <p style="color:var(--muted);font-size:13px;margin-bottom:12px">
+      自動同期タブの Apps Script コード内 <code>syncHistorical</code> を実行すると Supabase に直接書き込まれます。<br>
+      この手動インポートは CSV ファイルがある場合の代替手段です。
+    </p>
+    <input type="file" id="csv-file" accept=".csv" onchange="loadCSV(this)">
+    <div id="preview-section" style="display:none">
+      <div id="preview-info" style="color:var(--muted);font-size:13px;margin-bottom:8px"></div>
+      <div style="max-height:180px;overflow-y:auto;border:1px solid var(--border);border-radius:6px">
+        <table class="preview">
+          <thead><tr><th>date</th><th>page</th><th>country</th><th>device</th><th>source</th><th>views</th><th>sessions</th></tr></thead>
+          <tbody id="preview-body"></tbody>
+        </table>
+      </div>
+      <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+        <button class="btn btn-green" id="import-btn" onclick="startImport()">インポート開始</button>
+        <label style="display:flex;align-items:center;gap:6px;margin:0;cursor:pointer;font-size:13px">
+          <input type="checkbox" id="overwrite-check"> 既存データを上書き
+        </label>
+      </div>
+    </div>
+    <div id="import-progress" style="display:none">
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+      <div id="progress-text" style="font-size:12px;color:var(--muted)"></div>
+    </div>
+    <div id="import-status" class="status"></div>
   </div>
+</div>
 
-  <div id="import-status" class="status"></div>
+<!-- ========== ステータスタブ ========== -->
+<div id="tab-status" class="tab-pane">
+  <div class="section">
+    <div class="section-title">Supabase 接続設定</div>
+    <label>Anon Key</label>
+    <input type="text" id="anon-key-status" placeholder="sb_publishable_xxxx...">
+    <button class="btn" onclick="loadStatus()">ステータスを確認</button>
+  </div>
+  <div id="status-result" style="display:none">
+    <div class="section">
+      <div class="section-title">同期状況</div>
+      <div id="status-body" style="font-size:13px;line-height:2;color:var(--muted)">読み込み中...</div>
+    </div>
+  </div>
 </div>
 
 <script>
 const SUPABASE_URL = 'https://clyfrkwuajbauqxvrfyf.supabase.co';
-let anonKey = localStorage.getItem('28tools_anon_key') || '';
 let parsedRows = [];
 
-// 初期化
 document.addEventListener('DOMContentLoaded', () => {
-  if (anonKey) document.getElementById('anon-key').value = anonKey;
+  const k = localStorage.getItem('28tools_anon_key') || '';
+  if (k) {
+    document.getElementById('anon-key').value = k;
+    document.getElementById('anon-key-status').value = k;
+  }
 });
 
-function getKey() {
-  const val = document.getElementById('anon-key').value.trim();
-  if (val) { anonKey = val; localStorage.setItem('28tools_anon_key', val); }
-  return anonKey;
+function switchTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach((b,i) => {
+    b.classList.toggle('active', ['auto','manual','status'][i] === tab);
+  });
+  ['tab-auto','tab-manual','tab-status'].forEach(id => {
+    document.getElementById(id).classList.toggle('active', id === 'tab-' + tab);
+  });
 }
 
-async function supabase(method, path, body) {
-  const key = getKey();
-  const res = await fetch(SUPABASE_URL + path, {
+function getKey(inputId) {
+  const val = document.getElementById(inputId || 'anon-key').value.trim();
+  if (val) localStorage.setItem('28tools_anon_key', val);
+  return val || localStorage.getItem('28tools_anon_key') || '';
+}
+
+async function supaReq(method, path, body, key) {
+  return fetch(SUPABASE_URL + path, {
     method,
     headers: {
-      apikey: key,
-      Authorization: 'Bearer ' + key,
-      'Content-Type': 'application/json',
-      Prefer: 'return=minimal',
+      apikey: key, Authorization: 'Bearer ' + key,
+      'Content-Type': 'application/json', Prefer: 'return=minimal',
     },
     body: body ? JSON.stringify(body) : undefined,
   });
-  return res;
 }
 
-async function testConnection() {
+async function testConn() {
   const el = document.getElementById('conn-status');
-  el.className = 'status info'; el.textContent = '接続テスト中...';
-  try {
-    const res = await supabase('GET', '/rest/v1/pageviews?limit=1&select=id');
-    if (res.ok) {
-      el.className = 'status ok'; el.textContent = '✅ 接続成功';
-    } else {
-      const j = await res.json().catch(() => ({}));
-      el.className = 'status err'; el.textContent = '❌ ' + (j.message || 'HTTP ' + res.status);
-    }
-  } catch (e) { el.className = 'status err'; el.textContent = '❌ ' + e.message; }
-}
-
-async function checkTable() {
-  const el = document.getElementById('table-check-status');
-  el.className = 'status info'; el.textContent = 'テーブル確認中...';
-  try {
-    const res = await supabase('GET', '/rest/v1/ga4_history?limit=1&select=id');
-    if (res.ok) {
-      el.className = 'status ok'; el.textContent = '✅ ga4_history テーブルが存在します。インポートできます。';
-    } else {
-      el.className = 'status err'; el.textContent = '❌ テーブルが見つかりません。上記のSQL を実行してください。';
-    }
-  } catch (e) { el.className = 'status err'; el.textContent = '❌ ' + e.message; }
+  const key = getKey('anon-key');
+  el.className = 'status info'; el.textContent = '接続中...';
+  const res = await supaReq('GET', '/rest/v1/ga4_history?limit=1&select=id', null, key);
+  if (res.ok) {
+    el.className = 'status ok'; el.textContent = '✅ 接続成功・ga4_history テーブルが存在します';
+  } else if (res.status === 404 || res.status === 400) {
+    el.className = 'status err'; el.textContent = '❌ ga4_history テーブルが見つかりません。Step 1 の SQL を実行してください。';
+  } else {
+    el.className = 'status err'; el.textContent = '❌ HTTP ' + res.status;
+  }
 }
 
 function loadCSV(input) {
   const file = input.files[0];
   if (!file) return;
   const reader = new FileReader();
-  reader.onload = e => {
-    const text = e.target.result;
-    parseCSV(text);
-  };
+  reader.onload = e => parseCSV(e.target.result);
   reader.readAsText(file, 'UTF-8');
 }
 
 function parseCSV(text) {
   const lines = text.trim().split('\n');
-  const headers = parseCSVLine(lines[0]).map(h => h.trim().toLowerCase().replace(/['"]/g,''));
-
+  const headers = parseLine(lines[0]).map(h => h.toLowerCase().replace(/[^a-z_]/g,'').trim());
   parsedRows = [];
   for (let i = 1; i < lines.length; i++) {
-    const vals = parseCSVLine(lines[i]);
-    if (vals.length < 6) continue;
-    const row = {};
-    headers.forEach((h, j) => row[h] = vals[j] || '');
-    // date を YYYY-MM-DD に変換（GA4は YYYYMMDD 形式）
-    let d = (row.date || '').replace(/['"]/g,'');
-    if (d.length === 8 && /^\d+$/.test(d)) {
-      d = d.slice(0,4) + '-' + d.slice(4,6) + '-' + d.slice(6,8);
-    }
-    const views = parseInt(row.views || row['screenPageViews'] || 0, 10);
-    const sessions = parseInt(row.sessions || 0, 10);
-    if (!d || isNaN(views) || views <= 0) continue;
+    const v = parseLine(lines[i]);
+    if (v.length < 4) continue;
+    const r = {};
+    headers.forEach((h,j) => r[h] = (v[j]||'').replace(/^"|"$/g,'').trim());
+    let d = r.date || '';
+    if (/^\d{8}$/.test(d)) d = d.slice(0,4)+'-'+d.slice(4,6)+'-'+d.slice(6,8);
+    const views = parseInt(r.views || r.screenPageViews || 0);
+    if (!d || !views) continue;
     parsedRows.push({
       date: d,
-      page: (row.page || row['pagepath'] || row['page path'] || '/').replace(/['"]/g,''),
-      country: (row.country || '').replace(/['"]/g,'') || null,
-      browser: (row.browser || '').replace(/['"]/g,'') || null,
-      os: (row.os || row['operatingsystem'] || '').replace(/['"]/g,'') || null,
-      lang: ((row.lang || row.language || '').replace(/['"]/g,'') || null),
+      page: r.page || r.pagepath || '/',
+      country: r.country || null,
+      device_category: r.device_category || r.devicecategory || null,
+      source: r.source || r.sessionsource || null,
+      medium: r.medium || r.sessionmedium || null,
       views,
-      sessions,
+      sessions: parseInt(r.sessions||0),
+      users: parseInt(r.users||r.totalusers||0),
+      new_users: parseInt(r.new_users||r.newusers||0),
+      engaged_sessions: parseInt(r.engaged_sessions||r.engagedsessions||0),
+      avg_engagement_sec: parseFloat(r.avg_engagement_sec||r.averagesessionduration||0),
+      bounce_rate: parseFloat(r.bounce_rate||r.bouncerate||0),
     });
   }
-
-  // プレビュー表示
-  const info = document.getElementById('preview-info');
-  info.textContent = `${parsedRows.length.toLocaleString()} 行のデータを読み込みました（合計 PV: ${parsedRows.reduce((s,r)=>s+r.views,0).toLocaleString()}）`;
-
+  const totalPV = parsedRows.reduce((s,r)=>s+r.views,0);
+  document.getElementById('preview-info').textContent = `${parsedRows.length.toLocaleString()} 行 / 合計 PV: ${totalPV.toLocaleString()}`;
   const tbody = document.getElementById('preview-body');
   tbody.innerHTML = '';
-  parsedRows.slice(0, 20).forEach(r => {
-    tbody.insertAdjacentHTML('beforeend', `<tr>
-      <td>${r.date}</td><td style="max-width:150px;overflow:hidden;text-overflow:ellipsis">${r.page}</td>
-      <td>${r.country||'-'}</td><td>${r.browser||'-'}</td><td>${r.os||'-'}</td>
-      <td>${r.lang||'-'}</td><td>${r.views}</td><td>${r.sessions}</td>
-    </tr>`);
+  parsedRows.slice(0,15).forEach(r => {
+    tbody.insertAdjacentHTML('beforeend',`<tr>
+      <td>${r.date}</td><td style="max-width:140px;overflow:hidden;text-overflow:ellipsis">${r.page}</td>
+      <td>${r.country||'-'}</td><td>${r.device_category||'-'}</td><td>${r.source||'-'}</td>
+      <td>${r.views}</td><td>${r.sessions}</td></tr>`);
   });
-  if (parsedRows.length > 20) {
-    tbody.insertAdjacentHTML('beforeend', `<tr><td colspan="8" style="color:var(--muted);text-align:center">... 他 ${(parsedRows.length-20).toLocaleString()} 行</td></tr>`);
-  }
-
-  document.getElementById('preview-section').style.display = 'block';
+  document.getElementById('preview-section').style.display='block';
 }
 
-function parseCSVLine(line) {
-  const result = [];
-  let cur = '', inQ = false;
-  for (let i = 0; i < line.length; i++) {
-    const c = line[i];
-    if (c === '"') { inQ = !inQ; }
-    else if (c === ',' && !inQ) { result.push(cur); cur = ''; }
-    else cur += c;
-  }
-  result.push(cur);
-  return result;
+function parseLine(line) {
+  const res=[]; let cur='',q=false;
+  for(const c of line){if(c==='"'){q=!q;}else if(c===','&&!q){res.push(cur);cur='';}else cur+=c;}
+  res.push(cur); return res;
 }
 
 async function startImport() {
   if (!parsedRows.length) return;
+  const key = getKey('anon-key');
+  const btn = document.getElementById('import-btn');
   const statusEl = document.getElementById('import-status');
   const progressDiv = document.getElementById('import-progress');
-  const progressFill = document.getElementById('progress-fill');
-  const progressText = document.getElementById('progress-text');
-  const btn = document.getElementById('import-btn');
-  const overwrite = document.getElementById('overwrite-check').checked;
-
   btn.disabled = true;
   progressDiv.style.display = 'block';
-  statusEl.className = 'status'; statusEl.style.display = 'none';
+  statusEl.style.display = 'none';
 
-  // 上書きオプション: 既存データ削除
-  if (overwrite) {
-    progressText.textContent = '既存データを削除中...';
-    const del = await supabase('DELETE', '/rest/v1/ga4_history?id=gte.0');
-    if (!del.ok) {
-      statusEl.className = 'status err'; statusEl.textContent = '❌ 削除失敗: ' + del.status;
-      btn.disabled = false; return;
-    }
+  if (document.getElementById('overwrite-check').checked) {
+    document.getElementById('progress-text').textContent = '既存データを削除中...';
+    await supaReq('DELETE', '/rest/v1/ga4_history?id=gte.0', null, key);
   }
 
-  // バッチ挿入（500行ずつ）
   const BATCH = 500;
   let done = 0, errors = 0;
   for (let i = 0; i < parsedRows.length; i += BATCH) {
-    const batch = parsedRows.slice(i, i + BATCH);
-    const res = await supabase('POST', '/rest/v1/ga4_history', batch);
-    if (!res.ok) {
-      const j = await res.json().catch(() => ({}));
-      // 重複エラーは許容
-      if (res.status !== 409) errors++;
-    }
+    const batch = parsedRows.slice(i, i+BATCH);
+    const res = await fetch(SUPABASE_URL + '/rest/v1/ga4_history', {
+      method: 'POST',
+      headers: { apikey: key, Authorization: 'Bearer ' + key, 'Content-Type': 'application/json', Prefer: 'resolution=merge-duplicates,return=minimal' },
+      body: JSON.stringify(batch),
+    });
+    if (!res.ok) errors++;
     done += batch.length;
-    const pct = Math.round((done / parsedRows.length) * 100);
-    progressFill.style.width = pct + '%';
-    progressText.textContent = `${done.toLocaleString()} / ${parsedRows.length.toLocaleString()} 行 (${pct}%) — エラー: ${errors}`;
-    await new Promise(r => setTimeout(r, 30)); // UI 更新
+    const pct = Math.round(done/parsedRows.length*100);
+    document.getElementById('progress-fill').style.width = pct+'%';
+    document.getElementById('progress-text').textContent = `${done.toLocaleString()} / ${parsedRows.length.toLocaleString()} 行 (${pct}%)`;
+    await new Promise(r=>setTimeout(r,30));
   }
-
   btn.disabled = false;
-  if (errors === 0) {
-    statusEl.className = 'status ok';
-    statusEl.textContent = `✅ インポート完了！ ${done.toLocaleString()} 行 → Supabase ga4_history`;
-  } else {
-    statusEl.className = 'status err';
-    statusEl.textContent = `⚠️ 完了（エラー ${errors} バッチ）。一部データが挿入されていない可能性があります。`;
-  }
+  statusEl.className = errors ? 'status err' : 'status ok';
+  statusEl.textContent = errors ? `⚠️ ${errors} バッチでエラー` : `✅ ${done.toLocaleString()} 行のインポート完了`;
 }
 
-function copyScript() {
-  navigator.clipboard.writeText(document.getElementById('apps-script-code').textContent.trim())
+async function loadStatus() {
+  const key = getKey('anon-key-status');
+  document.getElementById('status-result').style.display = 'block';
+  const body = document.getElementById('status-body');
+  body.textContent = '確認中...';
+
+  try {
+    const [r1, r2] = await Promise.all([
+      fetch(`${SUPABASE_URL}/rest/v1/ga4_history?select=date&order=date.asc&limit=1`, {headers:{apikey:key,Authorization:'Bearer '+key}}),
+      fetch(`${SUPABASE_URL}/rest/v1/ga4_history?select=date,views&order=date.desc&limit=1`, {headers:{apikey:key,Authorization:'Bearer '+key}}),
+    ]);
+    if (!r1.ok) { body.innerHTML = '<span style="color:var(--red)">❌ 接続失敗 (HTTP '+r1.status+')</span>'; return; }
+    const [first] = await r1.json();
+    const [last] = await r2.json();
+
+    const r3 = await fetch(`${SUPABASE_URL}/rest/v1/ga4_history?select=views`, {headers:{apikey:key,Authorization:'Bearer '+key}});
+    const all = await r3.json();
+    const totalPV = all.reduce((s,r)=>s+(r.views||0), 0);
+    const totalRows = all.length;
+
+    body.innerHTML = `
+      <div>📅 最古のデータ: <strong style="color:var(--text)">${first?.date || 'なし'}</strong></div>
+      <div>📅 最新のデータ: <strong style="color:var(--text)">${last?.date || 'なし'}</strong></div>
+      <div>📊 総レコード数: <strong style="color:var(--accent)">${totalRows.toLocaleString()} 行</strong></div>
+      <div>👁 総ページビュー: <strong style="color:var(--green)">${totalPV.toLocaleString()} PV</strong></div>
+    `;
+  } catch(e) { body.innerHTML = '<span style="color:var(--red)">❌ ' + e.message + '</span>'; }
+}
+
+function copyText(id) {
+  navigator.clipboard.writeText(document.getElementById(id).textContent.trim())
     .then(() => alert('コピーしました！'))
-    .catch(() => { document.getElementById('apps-script-code').select(); document.execCommand('copy'); });
-}
-
-function copySQL() {
-  const pre = document.querySelectorAll('pre')[1];
-  navigator.clipboard.writeText(pre.textContent.trim())
-    .then(() => alert('SQL をコピーしました！'))
     .catch(() => {});
 }
 </script>

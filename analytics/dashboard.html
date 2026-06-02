@@ -155,14 +155,15 @@
 <div id="tab-pv" class="tab-pane">
   <div id="ga4-notice" style="display:none;background:#1a1d27;border:1px solid #2a2d3a;border-radius:8px;padding:10px 16px;margin-bottom:16px;font-size:12px;color:#8892a4">
     📜 GA4 歴史データを含む <span id="ga4-count" style="color:#4f8ef7;font-weight:600"></span> PV
-    — <a href="ga4-import.html" style="color:#4f8ef7">インポートツール</a>
+    — <a href="ga4-import.html" style="color:#4f8ef7">連携設定</a>
   </div>
   <div class="kpi-row">
     <div class="kpi blue"><div class="kpi-label">累計PV（全期間）</div><div class="kpi-value" id="kpi-pv-total">-</div><div class="kpi-sub" id="kpi-pv-total-sub">GA4+計測合算</div></div>
     <div class="kpi green"><div class="kpi-label">今月PV</div><div class="kpi-value" id="kpi-pv-month">-</div><div class="kpi-sub" id="kpi-pv-month-label">-</div></div>
     <div class="kpi yellow"><div class="kpi-label">今週PV</div><div class="kpi-value" id="kpi-pv-week">-</div><div class="kpi-sub">直近7日</div></div>
-    <div class="kpi purple"><div class="kpi-label">セッション数</div><div class="kpi-value" id="kpi-pv-sessions">-</div><div class="kpi-sub">ユニークセッション</div></div>
-    <div class="kpi blue"><div class="kpi-label">利用国数</div><div class="kpi-value" id="kpi-pv-countries">-</div><div class="kpi-sub">ユニーク国</div></div>
+    <div class="kpi purple"><div class="kpi-label">直帰率</div><div class="kpi-value" id="kpi-pv-bounce">-</div><div class="kpi-sub">GA4データ</div></div>
+    <div class="kpi blue"><div class="kpi-label">平均滞在時間</div><div class="kpi-value" id="kpi-pv-engage">-</div><div class="kpi-sub">GA4データ</div></div>
+    <div class="kpi green"><div class="kpi-label">利用国数</div><div class="kpi-value" id="kpi-pv-countries">-</div><div class="kpi-sub">ユニーク国</div></div>
   </div>
 
   <div class="chart-full">
@@ -194,6 +195,8 @@
   </div>
 
   <div class="chart-grid" style="margin-top:20px">
+    <div class="chart-card"><div class="chart-title">デバイス別（GA4）</div><div class="chart-wrap" style="height:220px"><canvas id="pv-device-chart"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">流入元／メディア（GA4）</div><div class="chart-wrap" style="height:220px"><canvas id="pv-source-chart"></canvas></div></div>
     <div class="chart-card"><div class="chart-title">ブラウザ別</div><div class="chart-wrap" style="height:220px"><canvas id="pv-browser-chart"></canvas></div></div>
     <div class="chart-card"><div class="chart-title">OS別</div><div class="chart-wrap" style="height:220px"><canvas id="pv-os-chart"></canvas></div></div>
     <div class="chart-card"><div class="chart-title">言語別</div><div class="chart-wrap" style="height:220px"><canvas id="pv-lang-chart"></canvas></div></div>
@@ -515,8 +518,21 @@ function renderPV(data) {
   document.getElementById('kpi-pv-week').textContent  = filterByDays(data, 7).length;
   document.getElementById('kpi-pv-month').textContent = filterByDays(data, 30).length;
   document.getElementById('kpi-pv-month-label').textContent = now.getFullYear() + '年' + (now.getMonth()+1) + '月';
-  document.getElementById('kpi-pv-sessions').textContent = new Set(combined.map(r=>r.session_id).filter(Boolean)).size;
   document.getElementById('kpi-pv-countries').textContent = new Set(combined.map(r=>r.country).filter(Boolean)).size;
+
+  // GA4 集計指標：直帰率・平均滞在時間
+  let totalSess = 0, wBounce = 0, wEngage = 0;
+  allGA4.forEach(r => {
+    const s = r.sessions || 0;
+    totalSess += s;
+    wBounce  += s * (r.bounce_rate || 0);
+    wEngage  += s * (r.avg_engagement_sec || 0);
+  });
+  if (totalSess > 0) {
+    document.getElementById('kpi-pv-bounce').textContent  = (wBounce / totalSess * 100).toFixed(1) + '%';
+    const sec = Math.round(wEngage / totalSess);
+    document.getElementById('kpi-pv-engage').textContent  = Math.floor(sec/60) + '分' + (sec%60) + '秒';
+  }
 
   // GA4 歴史データのトレンドも含めて表示
   renderPVTrendChart(combined, activePVPeriod);
@@ -537,6 +553,29 @@ function renderPV(data) {
   // Referrer ranking（Supabase のみ）
   const refRaw = count(data.map(r => ({ ...r, ref: cleanRef(r.referrer) })), 'ref');
   renderRankTable('pv-ref-table', sortedEntries(refRaw, 10), data.length || 1, '');
+
+  // Device chart（GA4）
+  const deviceRaw = {};
+  allGA4.forEach(r => { const k = r.device_category || 'Unknown'; deviceRaw[k] = (deviceRaw[k]||0) + (r.views||0); });
+  const deviceE = sortedEntries(deviceRaw);
+  const deviceLabels = { mobile:'モバイル', desktop:'デスクトップ', tablet:'タブレット' };
+  makeChart('pv-device-chart', 'doughnut', deviceE.map(e=>deviceLabels[e[0]]||e[0]), [{
+    data: deviceE.map(e=>e[1]), backgroundColor: ['#4f8ef7','#34d399','#fbbf24'], borderWidth: 0,
+  }], { plugins: { legend: { position: 'right', labels: { color: '#8892a4', font: { size: 11 } } } } });
+
+  // Source/medium chart（GA4）
+  const sourceRaw = {};
+  allGA4.forEach(r => {
+    const src = r.source || '(direct)';
+    const med = r.medium || 'none';
+    const k = src === '(direct)' ? '直接アクセス' : `${src} / ${med}`;
+    sourceRaw[k] = (sourceRaw[k]||0) + (r.sessions||0);
+  });
+  const sourceE = sortedEntries(sourceRaw, 8);
+  makeChart('pv-source-chart', 'bar', sourceE.map(e=>e[0]), [{
+    data: sourceE.map(e=>e[1]), backgroundColor: '#a78bfa', borderRadius: 4,
+  }], { plugins: { legend: { display: false } },
+       scales: { x: { ticks: { maxRotation: 30, font: { size: 9 } } } } });
 
   // Browser chart（combined）
   const brRaw = {};
@@ -741,7 +780,7 @@ async function init() {
       Promise.all([
         supaFetch('downloads', 'ts,version,revit,country,city,os'),
         supaFetch('pageviews',  'ts,page,referrer,country,city,os,browser,lang,session_id').catch(() => []),
-        supaFetch('ga4_history', 'date,page,country,browser,os,lang,views,sessions').catch(() => []),
+        supaFetch('ga4_history', 'date,page,country,device_category,source,medium,views,sessions,users,new_users,engaged_sessions,avg_engagement_sec,bounce_rate').catch(() => []),
       ]),
       fetchGitHubDL(),
     ]);
