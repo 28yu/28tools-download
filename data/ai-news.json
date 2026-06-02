@@ -1,17 +1,6 @@
 {
-  "lastUpdated": "2026-06-01T06:04:45.529149",
+  "lastUpdated": "2026-06-02T05:49:27.579449",
   "articles": [
-    {
-      "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
-      "titleJa": "ITBench-AA: エージェント的エンタープライズ IT タスクの最初のベンチマークで、フロンティア モデルのスコアが 50% を下回る — Artificial Analysis と IBM による",
-      "link": "https://huggingface.co/blog/ibm-research/itbench-aa",
-      "description": "...",
-      "publishedDate": "Wed, 27 May 2026 17:20:29 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
-      "language": "en"
-    },
     {
       "title": "The Download: keeping up with AI, and the future of IVF",
       "titleJa": "ダウンロード: AI の最新情報と体外受精の未来",
@@ -35,17 +24,6 @@
       "language": "en"
     },
     {
-      "title": "6/17（水）から3日間、第25回 総務・人事・経理Week【東京】内、「第17回 働き方改革EXPO【東京】」にブース出展",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/office-expo-no25/",
-      "description": "AIsmileyは、2026年6月17日（水）～6月19日（金）に東京ビッグサイトにて開催の第25回 総務・人事・経理Week【東京】内、「第17回 働き方改革EXPO【東京】」にブースを出展します。 会場では、最新のA [...] The post 6/17（水）から3日間、第25回 総務・人事・経理Week【東京】内、「第17回 働き方改革EXPO【東京】」にブース出展 first appea...",
-      "publishedDate": "Wed, 27 May 2026 07:30:37 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/officeexpo20266.png",
-      "language": "ja"
-    },
-    {
       "title": "Building self-improving tax agents with Codex",
       "titleJa": "Codex を使用して自己改善型の税務担当者を構築する",
       "link": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
@@ -55,39 +33,6 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "Spotifyとユニバーサルミュージックグループ、生成AI活用のツール導入",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/spotify-universalmusic-ai/",
-      "description": "Spotifyとユニバーサルミュージックグループは、生成AIを活用したファン制作のカバー曲やリミックスに関する新契約を発表しました。参加アーティストやソングライターの同意を前提に、Spotify Premium向けの有料 [...] The post Spotifyとユニバーサルミュージックグループ、生成AI活用のツール導入 first appeared on AIポータルメディアAIsmiley...",
-      "publishedDate": "Wed, 27 May 2026 06:20:40 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/Spotify-Universalmusic.png",
-      "language": "ja"
-    },
-    {
-      "title": "日本通運、物流Webアプリ「DCX」の機能を強化。AIによる出荷予測を約5分に短縮",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/nippon-express-dcx-ai/",
-      "description": "日本通運は、物流Webアプリ「DCX」のデータ分析オプションサービス「Business Insight」において、AIを活用した出荷予測機能を強化しました。 このニュースのポイント 日本通運株式会社が物流Webアプリ「D [...] The post 日本通運、物流Webアプリ「DCX」の機能を強化。AIによる出荷予測を約5分に短縮 first appeared on AIポータルメディアAIsm...",
-      "publishedDate": "Wed, 27 May 2026 06:13:21 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/DCX-Business-Insight.png",
-      "language": "ja"
-    },
-    {
-      "title": "帝国データバンク、「生成AIに関する企業の動向調査」結果発表。活用企業の86.7％が「業務効果あり」",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/teikoku-databank-ai-202603report/",
-      "description": "帝国データバンクは、「生成AIに関する企業の動向調査」の結果を発表しました。企業の生成AI活用率は34.5％で、活用企業の86.7％が「業務効果あり」と答えた一方、運用面での課題も明らかになりました。 このニュースのポイ [...] The post 帝国データバンク、「生成AIに関する企業の動向調査」結果発表。活用企業の86.7％が「業務効果あり」 first appeared on AIポータ...",
-      "publishedDate": "Wed, 27 May 2026 06:09:02 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/teikokudataeye.png",
-      "language": "ja"
     },
     {
       "title": "Warp’s big bet on building open source with GPT-5.5",
@@ -135,7 +80,7 @@
     },
     {
       "title": "We’re announcing new community investments in Missouri.",
-      "titleJa": "私たちはミズーリ州での新たなコミュニティ投資を発表します。",
+      "titleJa": "私たちはミズーリ州における新たなコミュニティへの投資を発表します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
       "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
       "publishedDate": "Wed, 20 May 2026 20:40:00 +0000",
@@ -175,39 +120,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/correctness-before-corrections.png",
-      "language": "en"
-    },
-    {
-      "title": "Adding Benchmaxxer Repellant to the Open ASR Leaderboard",
-      "titleJa": "Benchmaxxer 忌避剤をオープン ASR リーダーボードに追加",
-      "link": "https://huggingface.co/blog/open-asr-leaderboard-private-data",
-      "description": "...",
-      "publishedDate": "Wed, 06 May 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/open-asr-leaderboard-private-data/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Rethinking organizational design in the age of agentic AI",
-      "titleJa": "エージェント型 AI 時代の組織デザインを再考する",
-      "link": "https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/",
-      "description": "Amid rapidly growing adoption of enterprise-level AI agents, there’s a disconnect emerging between ambition and execution.&#160; Although 85% of organizations say they want to be agentic within the ne...",
-      "publishedDate": "Tue, 26 May 2026 14:54:10 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/MIT-Abstract-Thumbnail-1-_-V2-1.png",
-      "language": "en"
-    },
-    {
-      "title": "The Download: puncturing the AI jobs panic",
-      "titleJa": "ダウンロード: AI ジョブのパンクによるパニック",
-      "link": "https://www.technologyreview.com/2026/05/26/1138028/the-download-ai-jobs-data/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A reality check on the AI jobs hysteria Despite th...",
-      "publishedDate": "Tue, 26 May 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/06/20230509-MITSanders-0179-h.jpeg?w=3000",
       "language": "en"
     },
     {
@@ -288,17 +200,6 @@
       "language": "en"
     },
     {
-      "title": "I/O 2026",
-      "titleJa": "I/O 2026",
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/",
-      "description": "At Google I/O 2026, we shared how we’re making AI more helpful for everyone. See everything we announced....",
-      "publishedDate": "Tue, 19 May 2026 17:45:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Collection-Hero.gif",
-      "language": "en"
-    },
-    {
       "title": "Introducing the Ettin Reranker Family",
       "titleJa": "エッティン・リランカー・ファミリーの紹介",
       "link": "https://huggingface.co/blog/ettin-reranker",
@@ -308,6 +209,39 @@
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png",
       "language": "en"
+    },
+    {
+      "title": "Dreamina AIとは？できること・料金・商用利用を解説【Seedance 2.0搭載】",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/dreamina-ai-seedance-2-0/",
+      "description": "Dreamina AI（ドリーミナAI）は、人気動画編集アプリ「CapCut」の運営元であるByteDanceが提供する、注目の画像・動画生成プラットフォームです。 2026年2月に公開された最新モデル「Seedance [...] The post Dreamina AIとは？できること・料金・商用利用を解説【Seedance 2.0搭載】 first appeared on AIポータルメディ...",
+      "publishedDate": "Tue, 02 Jun 2026 03:53:17 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/dreaminaai.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新】Seedance 2.0とは？Sora代替モデルの使い方・無料枠・比較を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/seedance-20-bytedance-2026/",
+      "description": "「高品質な動画を作りたいが、撮影機材も編集スキルもない」「Soraの提供終了で、代わりの動画生成AIを探している」——そんなクリエイターやマーケターの救世主としていま注目を集めているのが、ByteDance（TikTok [...] The post 【2026年最新】Seedance 2.0とは？Sora代替モデルの使い方・無料枠・比較を徹底解説 first appeared on AIポータル...",
+      "publishedDate": "Tue, 02 Jun 2026 03:49:27 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/seedance20.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "日本のものづくりと産業界の現場課題を解決する AIソリューションが名古屋に集結「AI博覧会 Nagoya 2026」注目出展社を発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-expo-nagoya-2026-announces-featured-exhibitors1/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026 年 6 月 16 日（火）・17 日（水）の 2 日間、名古屋コンベンションホールにて「AI博覧会 Nagoya 2026 [...] The post 日本のものづくりと産業界の現場課題を解決する AIソリューションが名古屋に集結「AI博覧会 Nagoya 2026」注目出展社を発表 first a...",
+      "publishedDate": "Tue, 02 Jun 2026 02:00:02 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/AI博覧会Nagoya2026注目の出展社.png",
+      "language": "ja"
     },
     {
       "title": "How a new extraction process could unlock the world’s lithium",
@@ -373,6 +307,50 @@
       "source": "MIT Technology Review",
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/MJ26-Thumb.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "MUFG aims to become AI-native with OpenAI",
+      "titleJa": "MUFG は OpenAI で AI ネイティブを目指す",
+      "link": "https://openai.com/index/mufg",
+      "description": "MUFG uses ChatGPT Enterprise to build an AI-native organization, improve workflows, and deliver new AI-powered financial services at scale....",
+      "publishedDate": "Thu, 28 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "OpenAI’s Frontier Governance Framework",
+      "titleJa": "OpenAI のフロンティア ガバナンス フレームワーク",
+      "link": "https://openai.com/index/openai-frontier-governance-framework",
+      "description": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations....",
+      "publishedDate": "Thu, 28 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+      "titleJa": "Granite エンベディング多言語 R2: 32K コンテキストを備えたオープン Apache 2.0 多言語エンベディング — 最高の 100M 未満の検索品質",
+      "link": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+      "description": "...",
+      "publishedDate": "Thu, 14 May 2026 18:55:01 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ibm-granite/granite-embedding-multilingual-r2.png",
+      "language": "en"
+    },
+    {
+      "title": "Unlocking asynchronicity in continuous batching",
+      "titleJa": "連続バッチ処理での非同期性のロックを解除する",
+      "link": "https://huggingface.co/blog/continuous_async",
+      "description": "...",
+      "publishedDate": "Thu, 14 May 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/continuous_async/thumbnail.png",
       "language": "en"
     },
     {
@@ -475,6 +453,28 @@
       "language": "ja"
     },
     {
+      "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+      "titleJa": "OpenAI、Grupo Folha、Grupo UOL が戦略的コンテンツ提携を発表",
+      "link": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+      "description": "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency....",
+      "publishedDate": "Mon, 25 May 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "OpenAIが「ChatGPT for PowerPoint」ベータ版を公開。PowerPoint上でChatGPTが利用可能",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-chatgpt-for-powerpoint/",
+      "description": "OpenAIは、Microsoft PowerPoint上でChatGPTを利用できるアドイン「ChatGPT for PowerPoint」のベータ版を公開しました。資料作成や編集を自然言語で指示できるほか、既存資料や [...] The post OpenAIが「ChatGPT for PowerPoint」ベータ版を公開。PowerPoint上でChatGPTが利用可能 first appe...",
+      "publishedDate": "Mon, 01 Jun 2026 08:54:51 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ChatGPT-for-PowerPoint.png",
+      "language": "ja"
+    },
+    {
       "title": "【DX担当者必見】生成AIの重大リスクと対策｜企業が導入すべき4つの柱とは？",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/generative-ai-riskc-2026/",
@@ -549,6 +549,28 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/happyhorsemain.png",
+      "language": "ja"
+    },
+    {
+      "title": "Rust製の高速なJavaScriptバンドラ「Rolldown」がバージョン1.0に到達。ビルドツールVite 8.0で採用",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/rustjavascriptrolldown10vite_80.html",
+      "description": "Rutで書かれたオープンソースの高速なJavaSriptバンドラ「Rolldown」がバージョン1.0に到達しました。 esbuildの高速性とRollupの拡張性を兼ね備える Rolldownは長年にわたり人気を維持してきたJavaScr......",
+      "publishedDate": "2026-06-01T15:04:50Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/rolldown10ga.png",
+      "language": "ja"
+    },
+    {
+      "title": "Oracle Database@AWSが大阪リージョンでも提供開始。これでAWS東京リージョンとAWS大阪リージョンの両方で利用可能に",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/oracle_databaseawsawsaws.html",
+      "description": "Amazon Web Services（AWS）は、AWSのクラウドデータセンターにOracle Cloudのインフラを持ち込み、そこでOracle Databaseを提供する「Oracle Database@AWS」がAWS大阪リージョン......",
+      "publishedDate": "2026-06-01T15:02:13Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/oracledbataws-tokyo-ga.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/agntconmcpconjapan2026-ann.png",
-      "language": "ja"
-    },
-    {
-      "title": "デル、ローカルでAIエージェントを動かすためのデスクトップPCなど「Dell Deskside Agentic AI」発表。NVIDIA GB10やGB300搭載",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/aipcdell_deskside_agentic_ainvidia_gb10gb300.html",
-      "description": "デル・テクノロジーズ（以下デル）は、日本時間5月18日未明に米ラスベガスで開幕した年次イベント「Dell Technologies World 2026」で、ローカルでAIエージェントを動かすためのデスクトップPCなどの製品群「Dell D......",
-      "publishedDate": "2026-05-18T23:50:18Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/delldesksideagenticai-ann01.png",
-      "language": "ja"
-    },
-    {
-      "title": "あるバージョンのRHELを永遠に動かし続けられる。Red Hatが期限のないサポート「Red Hat Enterprise Linux Long-Life アドオン」発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/rhelred_hatred_hat_enterprise_linux_long-life.html",
-      "description": "IBM傘下のRed Hatは、5月11日から14日にかけて米アトランタで開催したイベント「Red Hat Summit 2026」で、期限の定めなく特定のバージョンのRed Hat Enterprise Linux（以下RHEL）のサポート......",
-      "publishedDate": "2026-05-18T15:49:20Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/rhellonglifeaddon02.png",
       "language": "ja"
     }
   ]
