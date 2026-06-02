@@ -123,10 +123,15 @@ CREATE TABLE IF NOT EXISTS ga4_history (
   synced_at timestamptz DEFAULT now(),
   UNIQUE(date, page, country, device_category, source, medium)
 );
+
 CREATE INDEX IF NOT EXISTS ga4_hist_date ON ga4_history (date);
 CREATE INDEX IF NOT EXISTS ga4_hist_page ON ga4_history (page);
+
 ALTER TABLE ga4_history ENABLE ROW LEVEL SECURITY;
-CREATE POLICY IF NOT EXISTS "anon read" ON ga4_history FOR SELECT TO anon USING (true);
+
+DROP POLICY IF EXISTS "anon read" ON ga4_history;
+CREATE POLICY "anon read" ON ga4_history FOR SELECT TO anon USING (true);
+
 GRANT SELECT ON public.ga4_history TO anon;
 GRANT SELECT ON public.ga4_history TO authenticated;
 GRANT ALL ON public.ga4_history TO service_role;
