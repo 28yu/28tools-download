@@ -105,8 +105,8 @@
 <!-- ===== ダウンロード タブ ===== -->
 <div id="tab-dl" class="tab-pane active">
   <div class="kpi-row">
-    <div class="kpi blue"><div class="kpi-label">累計DL（全期間）</div><div class="kpi-value" id="kpi-total">-</div><div class="kpi-sub">GitHub リリース合計</div></div>
-    <div class="kpi purple"><div class="kpi-label">計測DL</div><div class="kpi-value" id="kpi-tracked">-</div><div class="kpi-sub" id="kpi-tracked-sub">Supabase 計測分</div></div>
+    <div class="kpi blue"><div class="kpi-label">累計DL（全期間）</div><div class="kpi-value" id="kpi-total">-</div><div class="kpi-sub">GitHub 全リリース合計 ※日別不明</div></div>
+    <div class="kpi purple"><div class="kpi-label">計測DL（推移あり）</div><div class="kpi-value" id="kpi-tracked">-</div><div class="kpi-sub" id="kpi-tracked-sub">計測開始後のみグラフ表示</div></div>
     <div class="kpi green"><div class="kpi-label">今月</div><div class="kpi-value" id="kpi-month">-</div><div class="kpi-sub" id="kpi-month-label">-</div></div>
     <div class="kpi yellow"><div class="kpi-label">今週</div><div class="kpi-value" id="kpi-week">-</div><div class="kpi-sub">直近7日</div></div>
     <div class="kpi blue"><div class="kpi-label">利用国数</div><div class="kpi-value" id="kpi-countries">-</div><div class="kpi-sub">ユニーク国</div></div>
@@ -114,7 +114,7 @@
   </div>
 
   <div class="chart-full">
-    <div class="chart-title">DL推移</div>
+    <div class="chart-title">DL推移 <span style="font-size:11px;font-weight:400;color:var(--muted);text-transform:none">— Supabase 計測分のみ（累計40件はGitHub集計のため日別データなし）</span></div>
     <div class="period-btns" id="dl-period-btns">
       <button class="period-btn" data-period="1">1日</button>
       <button class="period-btn" data-period="7">1週間</button>
