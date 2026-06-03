@@ -1019,5 +1019,6 @@ document.addEventListener('DOMContentLoaded', function() {
         a.click();
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
+        if (typeof logToolEvent === 'function') logToolEvent('hatch-download');
     }
 });
