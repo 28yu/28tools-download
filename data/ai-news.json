@@ -1,56 +1,12 @@
 {
-  "lastUpdated": "2026-06-02T05:49:27.579449",
+  "lastUpdated": "2026-06-03T06:05:20.572559",
   "articles": [
-    {
-      "title": "The Download: keeping up with AI, and the future of IVF",
-      "titleJa": "ダウンロード: AI の最新情報と体外受精の未来",
-      "link": "https://www.technologyreview.com/2026/05/27/1138048/the-download-ai-future-ivf-technology/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Stay on top of what’s going on in AI this summer H...",
-      "publishedDate": "Wed, 27 May 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2022/06/JA22_animal-infra-01b.jpeg?w=3000",
-      "language": "en"
-    },
     {
       "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
       "titleJa": "シスコと OpenAI が Codex でエンタープライズ エンジニアリングを再定義",
       "link": "https://openai.com/index/cisco",
       "description": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation....",
       "publishedDate": "Wed, 27 May 2026 11:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Building self-improving tax agents with Codex",
-      "titleJa": "Codex を使用して自己改善型の税務担当者を構築する",
-      "link": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
-      "description": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows....",
-      "publishedDate": "Wed, 27 May 2026 07:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Warp’s big bet on building open source with GPT-5.5",
-      "titleJa": "GPT-5.5 によるオープンソースの構築に対する Warp の大きな賭け",
-      "link": "https://openai.com/index/warp",
-      "description": "Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows....",
-      "publishedDate": "Wed, 27 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Election information and safeguards in 2026",
-      "titleJa": "2026 年の選挙情報と保障措置",
-      "link": "https://openai.com/index/election-safeguards-2026",
-      "description": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency...",
-      "publishedDate": "Wed, 27 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -112,15 +68,48 @@
       "language": "en"
     },
     {
-      "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
-      "titleJa": "vLLM V0 ～ V1: RL での修正前の正確性",
-      "link": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
-      "description": "...",
-      "publishedDate": "Wed, 06 May 2026 19:06:55 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/correctness-before-corrections.png",
-      "language": "en"
+      "title": "Claudeアプリの導入から使い方まで｜PC・スマホ版の機能と違いを解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-application-how-to-use/",
+      "description": "Claudeアプリは、AIチャット「Claude」をPCやスマホから使いやすくするためのアプリです。デスクトップ版・スマホ版・Web版があり、文章作成や調査、要約、翻訳、コーディング支援など、さまざまな作業に活用できます [...] The post Claudeアプリの導入から使い方まで｜PC・スマホ版の機能と違いを解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 03 Jun 2026 05:53:32 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claudeapplicationmain.png",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Code for VS Codeの導入・設定・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-code-for-vs-code/",
+      "description": "「Claude Code for VS Codeを使ってみたいけど、使い方が分からない」と悩んでいませんか。 この記事では、VS Code上でAIにコードの編集・デバッグ・説明を任せたい開発者に向けて、Claude Co [...] The post Claude Code for VS Codeの導入・設定・使い方を徹底解説 first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Wed, 03 Jun 2026 05:36:58 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claudecodevscode.png",
+      "language": "ja"
+    },
+    {
+      "title": "Unitree(ユニツリー)とは？ロボットの種類・価格・購入方法を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/unitree-robotics-xdog/",
+      "description": "「話題のロボットメーカー『Unitree』とは？」「自社に導入したいが種類が多くて選べない」とお悩みではありませんか？ 中国・杭州発のUnitreeは、犬型からヒューマノイドまで幅広く展開し、世界トップシェアを誇る企業で [...] The post Unitree(ユニツリー)とは？ロボットの種類・価格・購入方法を徹底解説 first appeared on AIポータルメディアAIsmiley...",
+      "publishedDate": "Wed, 03 Jun 2026 03:06:43 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/unitreetop2.png",
+      "language": "ja"
+    },
+    {
+      "title": "プロンプトインジェクションとは？仕組み・種類・最新の攻撃事例と対策を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/prompt-injection-owasp-llm/",
+      "description": "生成AIの業務導入が進むなか、「機密情報の漏えい」や「AIの不正操作」を懸念する企業が増えています。 その最大の脅威として警戒されているのが、AI特有のサイバー攻撃「プロンプトインジェクション」です。AIへの指示文に悪意 [...] The post プロンプトインジェクションとは？仕組み・種類・最新の攻撃事例と対策を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 03 Jun 2026 03:05:43 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/promptinjection.jpg",
+      "language": "ja"
     },
     {
       "title": "OlmoEarth v1.1: A more efficient family of Earth observation models",
@@ -211,6 +200,116 @@
       "language": "en"
     },
     {
+      "title": "Holo3.1: Fast & Local Computer Use Agents",
+      "titleJa": "Holo3.1: 高速かつローカルなコンピューター使用エージェント",
+      "link": "https://huggingface.co/blog/Hcompany/holo31",
+      "description": "...",
+      "publishedDate": "Tue, 02 Jun 2026 14:13:23 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Hcompany/holo31.png",
+      "language": "en"
+    },
+    {
+      "title": "The Download: AI can run your admin department now",
+      "titleJa": "ダウンロード: AI で管理部門を実行できるようになりました",
+      "link": "https://www.technologyreview.com/2026/06/02/1138277/the-download-ai-tips-small-businesses-admin/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How small businesses can leverage AI From accounti...",
+      "publishedDate": "Tue, 02 Jun 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2022/10/ND22_cryo-1071_AG_064.jpeg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
+      "titleJa": "トラベラーズは OpenAI を使用して AI を活用した請求を全国に展開しています",
+      "link": "https://openai.com/index/travelers",
+      "description": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand....",
+      "publishedDate": "Tue, 02 Jun 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Rehumanizing global health care with agentic AI",
+      "titleJa": "エージェント AI で世界の医療を人間らしく変える",
+      "link": "https://www.technologyreview.com/2026/06/02/1137827/rehumanizing-global-health-care-with-agentic-ai/",
+      "description": "The global health care sector is under increasing strain.&#160; Decades of chronic underinvestment and constraints in recruitment have coincided with a surge in demand for services for aging populatio...",
+      "publishedDate": "Tue, 02 Jun 2026 11:23:34 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/MIT-Abstract-Thumbnail-2_-V1.png",
+      "language": "en"
+    },
+    {
+      "title": "【MiniMax M3】GPT-5.5超えのオープンウェイトモデルの性能・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/minimax-m3/",
+      "description": "2026年6月1日、中国・上海のAI企業MiniMaxは公開した次世代フラッグシップAIモデル「MiniMax M3」をリリースしました！ コーディング性能を測るSWE-Bench Proでは59.0%のスコアを記録し、 [...]...",
+      "publishedDate": "Tue, 02 Jun 2026 11:12:11 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_MiniMax-M3-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "SMBCグループ、富士通、ソフトバンクの3社が健康・医療分野で業務提携。国産ヘルスケア基盤を構築",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/smbc-fujitsu-softbank/",
+      "description": "SMBCグループ、富士通、ソフトバンクの3社は持続可能な医療の実現に向けて、健康・医療分野での業務提携に合意しました。 このニュースのポイント SMBCグループ、富士通、ソフトバンクが健康・医療分野での業務提携に合意 本 [...] The post SMBCグループ、富士通、ソフトバンクの3社が健康・医療分野で業務提携。国産ヘルスケア基盤を構築 first appeared on AIポータルメ...",
+      "publishedDate": "Tue, 02 Jun 2026 09:18:36 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/smbc-soft-fujitsu.png",
+      "language": "ja"
+    },
+    {
+      "title": "Codex for every role, tool, and workflow",
+      "titleJa": "あらゆる役割、ツール、ワークフローに対応するコーデックス",
+      "link": "https://openai.com/index/codex-for-every-role-tool-workflow",
+      "description": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI....",
+      "publishedDate": "Tue, 02 Jun 2026 09:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "How small businesses can leverage AI",
+      "titleJa": "中小企業は AI をどのように活用できるか",
+      "link": "https://www.technologyreview.com/2026/06/02/1138227/how-small-businesses-can-leverage-ai/",
+      "description": "This article is from Making AI Work, MIT Technology Review’s limited-run newsletter examining how to apply LLMs across industries. To receive it in your inbox,sign up here. From accounting to design t...",
+      "publishedDate": "Tue, 02 Jun 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/4729b751-06a4-3828-9bb4-1983e460947d.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "富士通、OpenAIと連携開始。ChatGPT EnterpriseとCodex活用で企業のAI変革を加速",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/fujitsu-openai-ai-transformation/",
+      "description": "富士通は、OpenAIとの連携開始を発表しました。OpenAIの先進的なAI技術を自社のサービスラインアップに組み込み、日本企業におけるエンタープライズ領域のAIトランスフォーメーションを加速させます。 このニュースのポ [...] The post 富士通、OpenAIと連携開始。ChatGPT EnterpriseとCodex活用で企業のAI変革を加速 first appeared on AI...",
+      "publishedDate": "Tue, 02 Jun 2026 08:52:18 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/Fujitsu-OpenAI.png",
+      "language": "ja"
+    },
+    {
+      "title": "Advancing youth safety and opportunity through global leadership",
+      "titleJa": "世界的なリーダーシップを通じて青少年の安全と機会を促進する",
+      "link": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
+      "description": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people....",
+      "publishedDate": "Tue, 02 Jun 2026 07:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "Dreamina AIとは？できること・料金・商用利用を解説【Seedance 2.0搭載】",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/dreamina-ai-seedance-2-0/",
@@ -242,6 +341,17 @@
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/AI博覧会Nagoya2026注目の出展社.png",
       "language": "ja"
+    },
+    {
+      "title": "Codex is becoming a productivity tool for everyone",
+      "titleJa": "Codex は誰にとっても生産性ツールになりつつあります",
+      "link": "https://openai.com/index/codex-for-knowledge-work",
+      "description": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation....",
+      "publishedDate": "Tue, 02 Jun 2026 02:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "How a new extraction process could unlock the world’s lithium",
@@ -288,32 +398,10 @@
       "language": "en"
     },
     {
-      "title": "Climate tech companies are going public. What’s next?",
-      "titleJa": "気候変動テクノロジー企業が株式を公開している。次は何でしょうか？",
-      "link": "https://www.technologyreview.com/2026/05/28/1138067/climate-tech-ipos/",
-      "description": "This year, there’s been a wave of notable energy companies going public via IPO in the US. The solar and battery company Solv Energy went public in February, to the tune of $6 billion. X-energy, which...",
-      "publishedDate": "Thu, 28 May 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/AP24177191447994.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "The AI Hype Index: AI gets booed in graduation season",
-      "titleJa": "AI 誇大宣伝指数: 卒業シーズンには AI にブーイングが起こる",
-      "link": "https://www.technologyreview.com/2026/05/28/1138053/the-ai-hype-index-ai-gets-booed-in-graduation-season/",
-      "description": "It is one thing to say AI will change the world. It is another to expect the class of 2026 to applaud it. In fact, when former Google CEO Eric Schmidt told University of Arizona graduates that their t...",
-      "publishedDate": "Thu, 28 May 2026 09:51:11 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/MJ26-Thumb.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "MUFG aims to become AI-native with OpenAI",
-      "titleJa": "MUFG は OpenAI で AI ネイティブを目指す",
-      "link": "https://openai.com/index/mufg",
-      "description": "MUFG uses ChatGPT Enterprise to build an AI-native organization, improve workflows, and deliver new AI-powered financial services at scale....",
+      "title": "OpenAI’s Frontier Governance Framework",
+      "titleJa": "OpenAI のフロンティア ガバナンス フレームワーク",
+      "link": "https://openai.com/index/openai-frontier-governance-framework",
+      "description": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations....",
       "publishedDate": "Thu, 28 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -321,10 +409,10 @@
       "language": "en"
     },
     {
-      "title": "OpenAI’s Frontier Governance Framework",
-      "titleJa": "OpenAI のフロンティア ガバナンス フレームワーク",
-      "link": "https://openai.com/index/openai-frontier-governance-framework",
-      "description": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations....",
+      "title": "MUFG aims to become AI-native with OpenAI",
+      "titleJa": "MUFG は OpenAI で AI ネイティブを目指す",
+      "link": "https://openai.com/index/mufg",
+      "description": "MUFG uses ChatGPT Enterprise to build an AI-native organization, improve workflows, and deliver new AI-powered financial services at scale....",
       "publishedDate": "Thu, 28 May 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -453,17 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
-      "titleJa": "OpenAI、Grupo Folha、Grupo UOL が戦略的コンテンツ提携を発表",
-      "link": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
-      "description": "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency....",
-      "publishedDate": "Mon, 25 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "OpenAIが「ChatGPT for PowerPoint」ベータ版を公開。PowerPoint上でChatGPTが利用可能",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/openai-chatgpt-for-powerpoint/",
@@ -475,80 +552,47 @@
       "language": "ja"
     },
     {
-      "title": "【DX担当者必見】生成AIの重大リスクと対策｜企業が導入すべき4つの柱とは？",
+      "title": "［速報］マイクロソフト、自社開発した7つのAIモデル「Microsoft AI Models」を発表",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/generative-ai-riskc-2026/",
-      "description": "生成AI（Generative AI／文章や画像などを自動生成するAI）の業務利用が国内企業でも急速に広がるなか、機密情報の漏洩や著作権侵害、ディープフェイク詐欺など、生成AIに関わる重大なインシデントが現実に発生してい [...] The post 【DX担当者必見】生成AIの重大リスクと対策｜企業が導入すべき4つの柱とは？ first appeared on AIポータルメディアAIsmile...",
-      "publishedDate": "Mon, 01 Jun 2026 01:34:53 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/generativeairisk.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "生成AIの仕組みとは？非エンジニアでもわかるやさしい解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/generative-ai-mechanism/",
-      "description": "「何度指示しても、AIが期待通りの回答を出してくれない」「嘘の情報を出力されて困った」——そんな経験はありませんか？ 実はこれらの悩みは、生成AIの「裏側の仕組み」を少し理解するだけで劇的に改善します。 仕組みを知れば、 [...] The post 生成AIの仕組みとは？非エンジニアでもわかるやさしい解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 01 Jun 2026 01:32:17 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/generativeAI.png",
-      "language": "ja"
-    },
-    {
-      "title": "AIエージェントとは？仕組み・種類・生成AIやRAGとの違いを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/incorporate-ai-agent/",
-      "description": "「AIエージェントって結局、ChatGPTと何が違うの？」そんな疑問を持つ方が増えています。 AIエージェントとは、目標に向かって自ら計画・判断・実行できる自律型のAIです。ChatGPTのようなチャット形式の生成AIが [...]...",
-      "publishedDate": "Fri, 29 May 2026 12:44:04 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/7aimicrosoft_ai_models.html",
+      "description": "マイクロソフトは、日本時間6月3日未明に開幕した年次イベント「Microsoft Build 2026」で、自社開発した7つのAIモデル群「Microsoft AI Models」を発表しました。 MAI-Thinking-1 Micro......",
+      "publishedDate": "2026-06-02T18:40:20Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/incorporate-ai-agent_2605-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/7mai-models-build2026.png",
       "language": "ja"
     },
     {
-      "title": "NAGARA、3,200万円の資金調達を実施。介護記録自動作成AIの開発体制を強化",
+      "title": "［速報］マイクロソフト、AIエージェントのためのカスタマイズ可能な分離環境「Microsoft Execution Containers （MXC）」発表",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/nagara-jfc-aichibank-aichishinkin/",
-      "description": "NAGARAは、日本政策金融公庫など3つの金融機関から総額3,200万円の資金調達を実施しました。本資金は、介護記録自動作成AI「ながらかいご」の開発および導入支援体制の強化に充てられます。 このニュースのポイント 介護 [...] The post NAGARA、3,200万円の資金調達を実施。介護記録自動作成AIの開発体制を強化 first appeared on AIポータルメディアAIsm...",
-      "publishedDate": "Fri, 29 May 2026 08:33:24 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/NAGARA-JFC-aichibank-aichishinkin.png",
+      "link": "https://www.publickey1.jp/blog/26/aimicrosoft_execution_containers_mxc.html",
+      "description": "マイクロソフトは、日本時間6月3日未明に開幕した年次イベント「Microsoft Build 2026」で、AIエージェントのためのカスタマイズ可能な分離環境「Microsoft Execution Containers （MXC）」を発表......",
+      "publishedDate": "2026-06-02T18:20:20Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/mxc-build2026-01.png",
       "language": "ja"
     },
     {
-      "title": "【2026年最新】コンテキストウィンドウとは？主要LLM比較と「記憶の罠」を防ぐ使いこなし術",
+      "title": "［速報］Windows上でLinuxコンテナの作成や実行ができる「WSL containers」発表",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/contextwindow-llm-ai-2026/",
-      "description": "生成AIを使用している時に、 「長い資料をAIに読み込ませると、途中から指示を無視し始めてしまう」 「会話が長くなると最初の前提をAIが忘れてしまう」 といった経験はないでしょうか。こうした課題は、入力した情報量がAIの [...] The post 【2026年最新】コンテキストウィンドウとは？主要LLM比較と「記憶の罠」を防ぐ使いこなし術 first appeared on AIポータルメディ...",
-      "publishedDate": "Fri, 29 May 2026 04:20:57 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/04/contextwindow.jpg",
+      "link": "https://www.publickey1.jp/blog/26/windowslinuxwsl_containers.html",
+      "description": "マイクロソフトは、日本時間6月3日未明に開幕した年次イベント「Microsoft Build 2026」で、Windows上でLinuxコンテナの作成や実行、操作などを実現するWSL（Windows Subsystem for Linux）......",
+      "publishedDate": "2026-06-02T17:27:08Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/wslcontainers-build2026.png",
       "language": "ja"
     },
     {
-      "title": "AIセキュリティとは？2026年版リスクと対策｜情シスが押さえるべきガイドラインと導入判断の基準",
+      "title": "［速報］マイクロソフト、UNIX系コマンドをWindowsに移植「Coreutils for Window」一般公開",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aisecurity-risks-countermeasures-2026/",
-      "description": "生成AI（Generative AI）の業務利用が急速に進む一方で、AI特有の脆弱性を突いた攻撃や、AIを悪用した高度なサイバー攻撃の脅威が拡大しています。 本記事では、AIセキュリティの基本概念と2つの分類、企業が直面 [...] The post AIセキュリティとは？2026年版リスクと対策｜情シスが押さえるべきガイドラインと導入判断の基準 first appeared on AIポータルメ...",
-      "publishedDate": "Fri, 29 May 2026 04:20:04 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/aisecurity.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "HappyHorse 1.0とは？アリババの最新AI動画モデルの使い方を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/happyhorse-about/",
-      "description": "2026年4月に登場した最新動画生成AI「HappyHorse 1.0」は、またたく間に世界中を震撼させました。ベンチマークで突然1位になった謎のモデルの正体は、Alibabaが手掛ける新しい動画生成AIで、日本のクリエ [...] The post HappyHorse 1.0とは？アリババの最新AI動画モデルの使い方を解説 first appeared on AIポータルメディアAIsmile...",
-      "publishedDate": "Fri, 29 May 2026 04:11:03 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/happyhorsemain.png",
+      "link": "https://www.publickey1.jp/blog/26/unixwindowscoreutils_for_window.html",
+      "description": "マイクロソフトは、日本時間6月3日未明に開幕した年次イベント「Microsoft Build 2026」で、UNIX系の基本的なコマンド群をWindowsに移植した「Coreutils for Window」の一般公開を発表しました。 Co......",
+      "publishedDate": "2026-06-02T16:58:57Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/coreutils4windows-build2026.png",
       "language": "ja"
     },
     {
@@ -670,50 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/dart-flutter-agentskills-ann.png",
-      "language": "ja"
-    },
-    {
-      "title": "APIコール一発でGoogleがホストするLinux環境付きのAIエージェントを起動、Markdownでカスタム指示もできる「Managed Agent API」発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/apigooglelinuxaimarkdownmanaged_agent_api.html",
-      "description": "Googleは日本時間5月20日未明に開幕したイベント「Google I/O 2026」で、簡単に実行環境付きのカスタムAIエージェントを起動できるGemini API「Managed Agent API」の提供を発表しました。 intro......",
-      "publishedDate": "2026-05-20T15:21:12Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/geminiapi-managedagent-ann.png",
-      "language": "ja"
-    },
-    {
-      "title": "Google Antigravity、Androidアプリ開発に正式対応。AIエージェントのための「Android Knowledge Base」「Android Skills」も公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/google_antigravityandroidaiandroid_knowledge_baseandroid_skills.html",
-      "description": "Googleは日本時間5月20日未明に開幕したイベント「Google I/O 2026」で、AIによる開発ツール「Antigravity」で、Kotlinによる高品質なAndroidアプリケーションの開発を正式にサポートしたと発表しました。......",
-      "publishedDate": "2026-05-20T03:16:39Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/antigravity-android-officialsupport-io02.png",
-      "language": "ja"
-    },
-    {
-      "title": "Google、「Antigravity 2.0」発表。デモとしてゼロからOSを開発、Doomも実行可能に。効率性と高い開発能力をアピール",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/googleantigravity_20osdoom.html",
-      "description": "Googleは日本時間5月20日未明に開幕したイベント「Google I/O 2026」で、AIによる開発ツール「Antigravity」のバージョンアップとなる「Antigravity 2.0」を発表しました。 Antigravity 2......",
-      "publishedDate": "2026-05-20T02:30:01Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/antigravity20-googleio02.png",
-      "language": "ja"
-    },
-    {
-      "title": "Linux Foundation、AIエージェントをテーマにしたイベント「AGNTCon + MCPCon」を東京渋谷で開催。9月10日、11日の2日間",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/linux_foundationaiagntcon_mcpcon910112.html",
-      "description": "Linux Foundationは、AIエージェントとMCPをテーマとしたイベント「AGNTCon + MCPCon Japan」を東京で開催します。日程は9月10日、11日の2日間。会場はベルサール渋谷ガーデン。 Linux Founda......",
-      "publishedDate": "2026-05-19T16:32:11Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/agntconmcpconjapan2026-ann.png",
       "language": "ja"
     }
   ]
