@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-02T02:44:46.261547",
+  "lastUpdated": "2026-06-03T02:53:20.340629",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -22,16 +22,6 @@
       "language": "ja"
     },
     {
-      "title": "【大林組】猛暑期間における建設現場の作業時間帯を変更する取り組みを開始",
-      "link": "https://news.build-app.jp/article/40697/",
-      "description": "株式会社大林組（本社：東京都港区、社長：佐藤俊美）は、近年厳しさを増す猛暑への対応が社会的な課題となる中、建設現場における熱中症リスクのさら......",
-      "publishedDate": "Wed, 27 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/02/mQugM4qpGZ0RacT1644325720-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "AIが商社の価値を再定義する～住友商事DAIS戦略の正体",
       "link": "https://axconstdx.com/2026/05/28/ai%e3%81%8c%e5%95%86%e7%a4%be%e3%81%ae%e4%be%a1%e5%80%a4%e3%82%92%e5%86%8d%e5%ae%9a%e7%be%a9%e3%81%99%e3%82%8b%ef%bd%9e%e4%bd%8f%e5%8f%8b%e5%95%86%e4%ba%8bdais%e6%88%a6%e7%95%a5%e3%81%ae%e6%ad%a3/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e3%2581%258c%25e5%2595%2586%25e7%25a4%25be%25e3%2581%25ae%25e4%25be%25a1%25e5%2580%25a4%25e3%2582%2592%25e5%2586%258d%25e5%25ae%259a%25e7%25be%25a9%25e3%2581%2599%25e3%2582%258b%25ef%25bd%259e%25e4%25bd%258f%25e5%258f%258b%25e5%2595%2586%25e4%25ba%258bdais%25e6%2588%25a6%25e7%2595%25a5%25e3%2581%25ae%25e6%25ad%25a3",
       "description": "AI時代に生き残る企業と衰退する企業の分岐点は、テクノロジー導入ではなく、事業そのものの変革ができるかどうかにあります。本記事では、約10万社の顧客基盤を持つ総合商社がAIで何を変え、どのように競争力を確保しようとしてい [...] <p>The post AIが商社の価値を再定義する～住友商事DAIS戦略の正体 first appeared on 生成AIと建設DX.</p>...",
@@ -39,16 +29,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/05/wp_eyecatch_1200x630_under100kb-3-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "建設用3Dプリンタを活用した柱・梁・スラブ一体型大型PCa部材の製作・施工技術を実証",
-      "link": "https://news.build-app.jp/article/40694/",
-      "description": "概要 日揮ホールディングス株式会社（代表取締役会長兼社長CEO：佐藤雅之）の海外EPC事業会社である日揮グローバル株式会社（社長：山田昇司）......",
-      "publishedDate": "Tue, 26 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/10/kwnCm8GzuapMlqn1666764299_1666764322-130x82.jpg",
       "language": "ja"
     },
     {
@@ -60,6 +40,26 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "淺沼組、全現場のDX基盤として「建設サイト・シリーズ」に統一",
+      "link": "https://news.build-app.jp/article/40766/",
+      "description": "エムシーディースリー株式会社（東京都渋谷区、代表取締役社長：飯田正生）は、株式会社淺沼組（大阪市浪速区、代表取締役社長：浅沼誠）が、全現場の......",
+      "publishedDate": "Tue, 02 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/NvWCI988PC82Vn51657720065_1657720078-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "「DX推進室を設置する建設会社ほどDXが遅れている証拠」という逆説",
+      "link": "https://news.build-app.jp/article/40624/",
+      "description": "DX推進室を設置する建設会社ほど、デジタル変革が遅れている──。本稿の目的はこの逆説の検証にある。 DX推進という看板の裏側で進行しているの......",
+      "publishedDate": "Tue, 02 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/20260603_hirayama-130x82.jpg",
+      "language": "ja"
     },
     {
       "title": "buildingSMART International Appoints Aidan Mercer as Managing Director",
