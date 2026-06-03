@@ -710,6 +710,27 @@ function renderPV(data) {
 }
 
 function renderPVTrendChart(combined, days) {
+  if (days === 1) {
+    // 1日選択時: 時間別（JST, 0〜23時）で集計 — Supabaseデータのみ（GA4は日次のみ）
+    const byHour = Array(24).fill(0);
+    const cutoff = Date.now() - 86400000;
+    allPV.forEach(r => {
+      const t = new Date(r.ts);
+      if (t.getTime() < cutoff) return;
+      const hourJST = (t.getUTCHours() + 9) % 24;
+      byHour[hourJST]++;
+    });
+    const labels = Array.from({length:24}, (_,i) => i + ':00');
+    makeChart('pv-trend-chart', 'bar', labels, [{
+      label: 'PV数（時間別）',
+      data: byHour,
+      backgroundColor: 'rgba(52,211,153,.7)',
+      borderColor: '#34d399',
+      borderWidth: 1,
+    }], { plugins: { legend: { display: false } } });
+    return;
+  }
+
   // GA4 歴史（実PV重み）+ Supabase（1イベント=1PV）を日別に集計
   const byDay = {};
   // Supabase
