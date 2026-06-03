@@ -658,6 +658,7 @@ async function showPage(pageNum) {
 // ---- 比較実行：全ページをバックグラウンドで処理してナビを構築 ----
 async function runCompareAll() {
   if (!pdf1 || !pdf2) { setStatus(t('selectTwo')); return; }
+  if (typeof logToolEvent === 'function') logToolEvent('pdf-compare-run');
 
   pageCache = {};
   currentPage = 1;

@@ -96,6 +96,7 @@
 <nav class="tabs">
   <button class="tab-btn active" onclick="switchTab('dl')">📥 ダウンロード</button>
   <button class="tab-btn" onclick="switchTab('pv')">👁 ページビュー</button>
+  <button class="tab-btn" onclick="switchTab('tool')">🔧 ツール利用</button>
 </nav>
 
 <div id="loading">データを読み込んでいます...</div>
@@ -222,6 +223,40 @@
         <table class="raw-table">
           <thead><tr><th>日時(JST)</th><th>ページ</th><th>参照元</th><th>国</th><th>都市</th><th>ブラウザ</th><th>OS</th></tr></thead>
           <tbody id="pv-raw-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ツール利用 タブ ===== -->
+<div id="tab-tool" class="tab-pane">
+  <div class="kpi-row">
+    <div class="kpi green"><div class="kpi-label">塗潰しDL</div><div class="kpi-value" id="kpi-hatch">-</div><div class="kpi-sub">ハッチパターン</div></div>
+    <div class="kpi blue"><div class="kpi-label">PDF比較 実行</div><div class="kpi-value" id="kpi-pdf-compare">-</div><div class="kpi-sub">比較実行回数</div></div>
+    <div class="kpi yellow"><div class="kpi-label">PDF→Excel 読込</div><div class="kpi-value" id="kpi-pdf-load">-</div><div class="kpi-sub">PDF読み込み</div></div>
+    <div class="kpi purple"><div class="kpi-label">PDF→Excel 書出</div><div class="kpi-value" id="kpi-pdf-export">-</div><div class="kpi-sub">Excel書き出し</div></div>
+  </div>
+
+  <div class="chart-full">
+    <div class="chart-title">ツール利用推移（30日）</div>
+    <div class="chart-wrap" style="height:260px"><canvas id="tool-trend-chart"></canvas></div>
+  </div>
+
+  <div class="table-grid">
+    <div class="chart-card">
+      <div class="chart-title">ツール別ランキング</div>
+      <table class="data-table">
+        <thead><tr><th>#</th><th>ツール</th><th>回数</th><th>割合</th><th>バー</th></tr></thead>
+        <tbody id="tool-rank-table"></tbody>
+      </table>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">日別利用数（直近30日）</div>
+      <div class="raw-table-wrap" style="max-height:250px">
+        <table class="raw-table">
+          <thead><tr><th>日付</th><th>塗潰し</th><th>PDF比較</th><th>PDF読込</th><th>Excel書出</th></tr></thead>
+          <tbody id="tool-daily-table"></tbody>
         </table>
       </div>
     </div>
@@ -745,13 +780,115 @@ document.querySelectorAll('#pv-period-btns .period-btn').forEach(btn => {
   });
 });
 
+// ---- Tool event helpers ----
+const TOOL_EVENT_LABELS = {
+  'hatch-download':  '塗潰しパターンDL',
+  'pdf-compare-run': 'PDF比較 実行',
+  'pdf-excel-load':  'PDF→Excel 読込',
+  'pdf-excel-export':'PDF→Excel 書出',
+};
+const TOOL_EVENT_KEYS = Object.keys(TOOL_EVENT_LABELS);
+
+function renderTool(pvData) {
+  const toolEvents = pvData.filter(r => r.page && r.page.startsWith('/_event/'));
+  const counts = {};
+  TOOL_EVENT_KEYS.forEach(k => counts[k] = 0);
+  toolEvents.forEach(r => {
+    const key = r.page.replace('/_event/', '');
+    if (counts[key] !== undefined) counts[key]++;
+  });
+
+  document.getElementById('kpi-hatch').textContent      = counts['hatch-download'].toLocaleString();
+  document.getElementById('kpi-pdf-compare').textContent = counts['pdf-compare-run'].toLocaleString();
+  document.getElementById('kpi-pdf-load').textContent   = counts['pdf-excel-load'].toLocaleString();
+  document.getElementById('kpi-pdf-export').textContent = counts['pdf-excel-export'].toLocaleString();
+
+  // ランキング表
+  const total = Object.values(counts).reduce((a,b)=>a+b,0) || 1;
+  const rankBody = document.querySelector('#tool-rank-table');
+  rankBody.innerHTML = '';
+  const sorted = TOOL_EVENT_KEYS.map(k=>[k,counts[k]]).sort((a,b)=>b[1]-a[1]);
+  const maxV = sorted[0]?.[1] || 1;
+  sorted.forEach(([key, cnt], i) => {
+    const pct = ((cnt/total)*100).toFixed(1);
+    const barW = Math.max(4, Math.round((cnt/maxV)*120));
+    rankBody.insertAdjacentHTML('beforeend', `
+      <tr>
+        <td style="color:var(--muted)">${i+1}</td>
+        <td>${TOOL_EVENT_LABELS[key]}</td>
+        <td style="font-weight:600">${cnt.toLocaleString()}</td>
+        <td style="color:var(--muted)">${pct}%</td>
+        <td><div class="mini-bar" style="width:${barW}px"></div></td>
+      </tr>`);
+  });
+
+  // 日別テーブル（直近30日）
+  const cutoff = Date.now() - 30 * 86400000;
+  const byDay = {};
+  toolEvents.filter(r => new Date(r.ts).getTime() >= cutoff).forEach(r => {
+    const day = r.ts.slice(0,10);
+    const key = r.page.replace('/_event/', '');
+    if (!byDay[day]) byDay[day] = {};
+    byDay[day][key] = (byDay[day][key] || 0) + 1;
+  });
+  const days = Object.keys(byDay).sort().reverse();
+  const dailyBody = document.querySelector('#tool-daily-table');
+  dailyBody.innerHTML = '';
+  days.forEach(day => {
+    const d = byDay[day];
+    dailyBody.insertAdjacentHTML('beforeend', `
+      <tr>
+        <td>${day}</td>
+        <td>${d['hatch-download']||0}</td>
+        <td>${d['pdf-compare-run']||0}</td>
+        <td>${d['pdf-excel-load']||0}</td>
+        <td>${d['pdf-excel-export']||0}</td>
+      </tr>`);
+  });
+
+  // 推移チャート（30日）
+  const labels = [], hatchD=[], compareD=[], loadD=[], exportD=[];
+  for (let i=29; i>=0; i--) {
+    const d = new Date(Date.now() - i*86400000).toISOString().slice(0,10);
+    labels.push(d.slice(5));
+    const row = byDay[d] || {};
+    hatchD.push(row['hatch-download']||0);
+    compareD.push(row['pdf-compare-run']||0);
+    loadD.push(row['pdf-excel-load']||0);
+    exportD.push(row['pdf-excel-export']||0);
+  }
+  if (charts.toolTrend) charts.toolTrend.destroy();
+  charts.toolTrend = new Chart(document.getElementById('tool-trend-chart'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        { label:'塗潰しDL', data:hatchD, backgroundColor:'#34d399' },
+        { label:'PDF比較',  data:compareD, backgroundColor:'#4f8ef7' },
+        { label:'PDF読込',  data:loadD, backgroundColor:'#fbbf24' },
+        { label:'Excel書出',data:exportD, backgroundColor:'#a78bfa' },
+      ]
+    },
+    options: {
+      responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{ labels:{ color:'#8892a4', font:{size:11} } } },
+      scales:{
+        x:{ stacked:true, ticks:{color:'#8892a4',maxRotation:45,font:{size:10}}, grid:{color:'#2a2d3a'} },
+        y:{ stacked:true, ticks:{color:'#8892a4',font:{size:11}}, grid:{color:'#2a2d3a'}, beginAtZero:true }
+      }
+    }
+  });
+}
+
 // ---- Tab switch ----
+let toolRendered = false;
 function switchTab(tab) {
-  document.querySelectorAll('.tab-btn').forEach((b,i) => b.classList.toggle('active', (i===0&&tab==='dl')||(i===1&&tab==='pv')));
+  document.querySelectorAll('.tab-btn').forEach((b,i) => b.classList.toggle('active', (i===0&&tab==='dl')||(i===1&&tab==='pv')||(i===2&&tab==='tool')));
   document.getElementById('tab-dl').classList.toggle('active', tab==='dl');
   document.getElementById('tab-pv').classList.toggle('active', tab==='pv');
-  // PVタブ初回表示時にチャートを再描画（非表示時はサイズが0になるため）
+  document.getElementById('tab-tool').classList.toggle('active', tab==='tool');
   if (tab==='pv' && (allPV.length || allGA4.length)) renderPV(allPV);
+  if (tab==='tool' && allPV.length) { renderTool(allPV); toolRendered=true; }
 }
 
 // ---- Raw data toggle ----

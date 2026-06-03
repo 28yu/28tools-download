@@ -7779,6 +7779,23 @@ if (document.readyState === 'loading') {
     logPageview();
 }
 
+// ツール操作イベントを pageviews テーブルに記録（page = /_event/<type>）
+function logToolEvent(eventType) {
+    try {
+        const payload = JSON.stringify({
+            page: '/_event/' + eventType,
+            referrer: location.pathname,
+            lang: navigator.language || null,
+            session_id: getOrCreateSessionId(),
+        });
+        if (navigator.sendBeacon) {
+            navigator.sendBeacon(PV_LOG_ENDPOINT, new Blob([payload], { type: 'text/plain' }));
+        } else {
+            fetch(PV_LOG_ENDPOINT, { method: 'POST', body: payload, headers: { 'Content-Type': 'text/plain' }, keepalive: true }).catch(() => {});
+        }
+    } catch (e) {}
+}
+
 function downloadWithPassword(version) {
     console.log(`📥 Download requested: ${version}`);
     

@@ -127,6 +127,7 @@ async function pageTextItems(page) {
 }
 
 async function processPdf(file) {
+  if (typeof logToolEvent === 'function') logToolEvent('pdf-excel-load');
   try {
     logEl.innerHTML = '';
     actionsEl.style.display = 'none';
@@ -535,6 +536,7 @@ function escapeHtml(s) {
 
 downloadBtn.addEventListener('click', async () => {
   if (!extractedData) return;
+  if (typeof logToolEvent === 'function') logToolEvent('pdf-excel-export');
   downloadBtn.disabled = true;
   const orig = downloadBtn.textContent;
   downloadBtn.textContent = 'Excel 生成中...';
