@@ -331,9 +331,9 @@ async function fetchGitHubDL() {
 }
 
 // ---- Supabase fetch ----
-async function supaFetch(table, select) {
+async function supaFetch(table, select, orderBy = 'ts.desc') {
   const res = await fetch(
-    `${SUPABASE_URL}/rest/v1/${table}?select=${select}&order=ts.desc&limit=10000`,
+    `${SUPABASE_URL}/rest/v1/${table}?select=${select}&order=${orderBy}&limit=10000`,
     { headers: { apikey: SUPABASE_ANON, Authorization: 'Bearer ' + SUPABASE_ANON } }
   );
   if (!res.ok) {
@@ -780,7 +780,7 @@ async function init() {
       Promise.all([
         supaFetch('downloads', 'ts,version,revit,country,city,os'),
         supaFetch('pageviews',  'ts,page,referrer,country,city,os,browser,lang,session_id').catch(() => []),
-        supaFetch('ga4_history', 'date,page,country,device_category,source,medium,views,sessions,users,new_users,engaged_sessions,avg_engagement_sec,bounce_rate').catch(() => []),
+        supaFetch('ga4_history', 'date,page,country,device_category,source,medium,views,sessions,users,new_users,engaged_sessions,avg_engagement_sec,bounce_rate', 'date.desc').catch(() => []),
       ]),
       fetchGitHubDL(),
     ]);
