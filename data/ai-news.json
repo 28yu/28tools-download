@@ -1,17 +1,6 @@
 {
-  "lastUpdated": "2026-06-03T06:05:20.572559",
+  "lastUpdated": "2026-06-04T05:57:49.545636",
   "articles": [
-    {
-      "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
-      "titleJa": "シスコと OpenAI が Codex でエンタープライズ エンジニアリングを再定義",
-      "link": "https://openai.com/index/cisco",
-      "description": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation....",
-      "publishedDate": "Wed, 27 May 2026 11:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
     {
       "title": "Reachy Mini goes fully local",
       "titleJa": "Reachy Mini は完全にローカルになります",
@@ -68,6 +57,127 @@
       "language": "en"
     },
     {
+      "title": "How virtual power plants could provide energy for data centers",
+      "titleJa": "仮想発電所がデータセンターにエネルギーを供給する方法",
+      "link": "https://www.technologyreview.com/2026/06/03/1138350/virtual-power-plants-data-centers/",
+      "description": "Would you take a payment to ramp down your electricity use? Would it change anything if you were doing so to help power a local data center? Google just signed a new deal to help pay for a virtual pow...",
+      "publishedDate": "Wed, 03 Jun 2026 16:51:38 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/GettyImages-1330540704.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Introducing new capabilities to GPT-Rosalind",
+      "titleJa": "GPT-Rosalind への新機能の導入",
+      "link": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+      "description": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities....",
+      "publishedDate": "Wed, 03 Jun 2026 13:15:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "5 ways Google Search can level up your thrift and vintage shopping",
+      "titleJa": "Google 検索でリサイクル品やビンテージ ショッピングをレベルアップできる 5 つの方法",
+      "link": "https://blog.google/products-and-platforms/products/search/thrifting-tips/",
+      "description": "A colorful, grain-textured collage of various items scattered across a light blue background. The items include a green bucket hat, a wooden clothes hanger, a blue-and-red striped collar, blue sunglas...",
+      "publishedDate": "Wed, 03 Jun 2026 13:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Thrifting_Header.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Direct Preference Optimization Beyond Chatbots",
+      "titleJa": "チャットボットを超えた直接的な好みの最適化",
+      "link": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+      "description": "...",
+      "publishedDate": "Wed, 03 Jun 2026 12:55:11 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots.png",
+      "language": "en"
+    },
+    {
+      "title": "The Download: Trump’s new AI order, and smart glasses for warfare",
+      "titleJa": "ダウンロード: トランプ大統領の新たな AI 命令と戦争用スマートグラス",
+      "link": "https://www.technologyreview.com/2026/06/03/1138322/the-download-trump-ai-order-smart-glasses-warfare/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. 5 key points in Trump&#8217;s new AI order Less th...",
+      "publishedDate": "Wed, 03 Jun 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/JA22_marseilles_mobile-edited-1.jpg",
+      "language": "en"
+    },
+    {
+      "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
+      "titleJa": "Wasmer が Codex を使用してエッジ用の Node.js ランタイムを構築した方法",
+      "link": "https://openai.com/index/wasmer",
+      "description": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months....",
+      "publishedDate": "Wed, 03 Jun 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "A blueprint for democratic governance of frontier AI",
+      "titleJa": "フロンティア AI の民主的ガバナンスの青写真",
+      "link": "https://openai.com/index/frontier-safety-blueprint",
+      "description": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security....",
+      "publishedDate": "Wed, 03 Jun 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "OpenAI public policy agenda",
+      "titleJa": "OpenAI の公共政策の課題",
+      "link": "https://openai.com/index/public-policy-agenda",
+      "description": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society....",
+      "publishedDate": "Wed, 03 Jun 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "【Qwen3.7-Plus】アリババ発のマルチモーダルAIがVision Arena世界16位に！性能・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/qwen3-7-plus/",
+      "description": "Qwen3.7-Plusは、Alibaba CloudのQwenチームが開発したQwen3.7シリーズのマルチモーダルモデルです！ テキスト専用の推論特化モデルであるQwen3.7-Maxの兄弟モデルとして位置づけられて [...]...",
+      "publishedDate": "Wed, 03 Jun 2026 07:31:08 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.7-Plus-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【OpenAI Codex Sites】Webアプリを即デプロイ！使い方・料金・活用シーンを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/sites/",
+      "description": "2026年6月3日、OpenAIがCodexの新機能「Sites」を公開しました！ Sitesは、Codexアプリ上でプロンプトを入力するだけでインタラクティブなWebサイトやダッシュボードを生成し、ワークスペースのメン [...]...",
+      "publishedDate": "Wed, 03 Jun 2026 07:21:56 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Sites-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "富士通、Anthropicと戦略的提携を発表。AI変革の加速と重要インフラのサイバー防御を強化",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/fujitsu-anthropic-ai-transformation/",
+      "description": "富士通は、Anthropicとの戦略的提携を発表しました。Anthropicの「Claude」と富士通のAI技術や業種・業務ノウハウなどを融合し、日本企業におけるAI変革と重要インフラのサイバー防御の加速を図ります。 こ [...] The post 富士通、Anthropicと戦略的提携を発表。AI変革の加速と重要インフラのサイバー防御を強化 first appeared on AIポータルメデ...",
+      "publishedDate": "Wed, 03 Jun 2026 06:11:18 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/Fujitsu-Anthropic.png",
+      "language": "ja"
+    },
+    {
       "title": "Claudeアプリの導入から使い方まで｜PC・スマホ版の機能と違いを解説",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/claude-application-how-to-use/",
@@ -110,6 +220,17 @@
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/promptinjection.jpg",
       "language": "ja"
+    },
+    {
+      "title": "Adding MCP Tools to Reachy Mini",
+      "titleJa": "MCP ツールを Reachy Mini に追加する",
+      "link": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
+      "description": "...",
+      "publishedDate": "Wed, 03 Jun 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/adding-mcp-tools-to-reachy-mini/reachy_mini_remote_spaces_thumbnail.png",
+      "language": "en"
     },
     {
       "title": "OlmoEarth v1.1: A more efficient family of Earth observation models",
@@ -175,17 +296,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_AI_and_search_engine_v46.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Everything new in our Google AI subscriptions, fresh from I/O 2026",
-      "titleJa": "I/O 2026 からの Google AI サブスクリプションのすべての新機能",
-      "link": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/",
-      "description": "The image shows colorful icons. The copy reads: More magic in one plan. More power, more perks, same price....",
-      "publishedDate": "Tue, 19 May 2026 17:45:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/I_O_26_Header_1_AYohnR4.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -354,17 +464,6 @@
       "language": "en"
     },
     {
-      "title": "How a new extraction process could unlock the world’s lithium",
-      "titleJa": "新しい抽出プロセスはどのようにして世界のリチウムを解放できるのか",
-      "link": "https://www.technologyreview.com/2026/05/28/1138096/lithium-extraction-rock-zero/",
-      "description": "Researchers say they’ve found a new way to extract lithium, a crucial metal used in the lithium-ion batteries that power electric vehicles and energy storage arrays. This new technique could be more e...",
-      "publishedDate": "Thu, 28 May 2026 18:01:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/vials.jpg?w=1646",
-      "language": "en"
-    },
-    {
       "title": "Catch up on 12 major I/O 2026 moments",
       "titleJa": "2026 年の 12 の主要な I/O の瞬間をキャッチアップ",
       "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
@@ -373,72 +472,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "The Download: climate tech goes public and the AI Hype Index returns",
-      "titleJa": "ダウンロード: 気候変動テクノロジーが公開され、AI ハイプ インデックスが復活",
-      "link": "https://www.technologyreview.com/2026/05/28/1138085/the-download-climate-tech-ipos-ai-hype-index/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Climate tech companies are going public. What’s ne...",
-      "publishedDate": "Thu, 28 May 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/FF_01-2_web-edited.jpg",
-      "language": "en"
-    },
-    {
-      "title": "How Endava builds an agentic organization with Codex",
-      "titleJa": "Endava が Codex を使用してエージェント組織を構築する方法",
-      "link": "https://openai.com/index/endava",
-      "description": "Learn how Endava uses Codex to build an agentic organization, accelerating software delivery and reducing requirements analysis from weeks to hours....",
-      "publishedDate": "Thu, 28 May 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "OpenAI’s Frontier Governance Framework",
-      "titleJa": "OpenAI のフロンティア ガバナンス フレームワーク",
-      "link": "https://openai.com/index/openai-frontier-governance-framework",
-      "description": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations....",
-      "publishedDate": "Thu, 28 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "MUFG aims to become AI-native with OpenAI",
-      "titleJa": "MUFG は OpenAI で AI ネイティブを目指す",
-      "link": "https://openai.com/index/mufg",
-      "description": "MUFG uses ChatGPT Enterprise to build an AI-native organization, improve workflows, and deliver new AI-powered financial services at scale....",
-      "publishedDate": "Thu, 28 May 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-      "titleJa": "Granite エンベディング多言語 R2: 32K コンテキストを備えたオープン Apache 2.0 多言語エンベディング — 最高の 100M 未満の検索品質",
-      "link": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
-      "description": "...",
-      "publishedDate": "Thu, 14 May 2026 18:55:01 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ibm-granite/granite-embedding-multilingual-r2.png",
-      "language": "en"
-    },
-    {
-      "title": "Unlocking asynchronicity in continuous batching",
-      "titleJa": "連続バッチ処理での非同期性のロックを解除する",
-      "link": "https://huggingface.co/blog/continuous_async",
-      "description": "...",
-      "publishedDate": "Thu, 14 May 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/continuous_async/thumbnail.png",
       "language": "en"
     },
     {
@@ -519,36 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "Google DeepMindとは？AGI実現を目指すAI研究機関の開発AIツール8選をわかりやすく紹介",
+      "title": "マイクロソフト、AIエージェントにWindowsアプリ開発の知識を与える「Windows Development Skills」を一般提供開始",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/google-deepmind/",
-      "description": "Google DeepMindは、GoogleとDeepMindが統合したAI研究機関です。GeminiやVeo、AlphaFoldなど、生活や産業を支えるAIツールを開発しています。 とはいえ「何を研究しているのか」「 [...]...",
-      "publishedDate": "Sat, 30 May 2026 07:56:49 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/aiwindowswindows_development_skills.html",
+      "description": "マイクロソフトは日本時間6月3日未明に開幕した年次イベント「Microsoft Build 2026」で、AIエージェントにWindowsアプリ開発のライフサイクル全体に関する知識を与える「Windows Development Skill......",
+      "publishedDate": "2026-06-03T15:11:06Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Google-DeepMind_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Code dynamic workflowsとは？複数エージェントが並列実行するClaude Codeの新機能を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code-dynamic-workflows/",
-      "description": "2026年5月、AnthropicからClaude Codeの大型アップデートが発表されました。 今回登場した「Claude Code dynamic workflows」は、単一エージェントによる逐次処理から一歩進み、 [...]...",
-      "publishedDate": "Sat, 30 May 2026 00:42:04 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-dynamic-workflows_2605-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "OpenAIが「ChatGPT for PowerPoint」ベータ版を公開。PowerPoint上でChatGPTが利用可能",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-chatgpt-for-powerpoint/",
-      "description": "OpenAIは、Microsoft PowerPoint上でChatGPTを利用できるアドイン「ChatGPT for PowerPoint」のベータ版を公開しました。資料作成や編集を自然言語で指示できるほか、既存資料や [...] The post OpenAIが「ChatGPT for PowerPoint」ベータ版を公開。PowerPoint上でChatGPTが利用可能 first appe...",
-      "publishedDate": "Mon, 01 Jun 2026 08:54:51 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ChatGPT-for-PowerPoint.png",
+      "thumbnail": "https://www.publickey1.jp/2026/windevskills-build2026.png",
       "language": "ja"
     },
     {
@@ -585,10 +596,10 @@
       "language": "ja"
     },
     {
-      "title": "［速報］マイクロソフト、UNIX系コマンドをWindowsに移植「Coreutils for Window」一般公開",
+      "title": "［速報］マイクロソフト、UNIX系コマンドをWindowsに移植「Coreutils for Windows」一般公開",
       "titleJa": null,
       "link": "https://www.publickey1.jp/blog/26/unixwindowscoreutils_for_window.html",
-      "description": "マイクロソフトは、日本時間6月3日未明に開幕した年次イベント「Microsoft Build 2026」で、UNIX系の基本的なコマンド群をWindowsに移植した「Coreutils for Window」の一般公開を発表しました。 Co......",
+      "description": "マイクロソフトは、日本時間6月3日未明に開幕した年次イベント「Microsoft Build 2026」で、UNIX系の基本的なコマンド群をWindowsに移植した「Coreutils for Windows」の一般公開を発表しました。 C......",
       "publishedDate": "2026-06-02T16:58:57Z",
       "source": "Publickey",
       "category": "tools",
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/dart-cloud-functions-ann.png",
-      "language": "ja"
-    },
-    {
-      "title": "Google、「Dart＆Flutter Agent Skills」リリース。DartとFlutter開発の最新ベストプラクティスをAIエージェントに提供",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/googledartflutter_agent_skillsdartflutterai.html",
-      "description": "Googleは5月19日と20日の2日間にかけて行ったイベント「Google I/O 2026」で、AIエージェントに対してDart言語とFlutterフレームワークを用いたアプリケーション開発のベストプラクティスを提供する「Dart＆Fl......",
-      "publishedDate": "2026-05-24T15:11:51Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/dart-flutter-agentskills-ann.png",
       "language": "ja"
     }
   ]
