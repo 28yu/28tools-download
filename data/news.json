@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-03T02:53:20.340629",
+  "lastUpdated": "2026-06-04T02:48:41.469269",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -12,16 +12,6 @@
       "language": "en"
     },
     {
-      "title": "建築物のライフサイクルコスト（LCC）とは？｜算出方法・耐用年数・削減ポイントを実務目線で解説",
-      "link": "https://news.build-app.jp/article/40734/",
-      "description": "建物を建てる際、「できるだけ建設費を抑えたい」と考える企業や施設管理者は少なくありません。ただ実際は、建築物の費用は建てた後のほうが長く続き......",
-      "publishedDate": "Wed, 27 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/4c49e4e6799102c0f499da80b5f1a66f-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "AIが商社の価値を再定義する～住友商事DAIS戦略の正体",
       "link": "https://axconstdx.com/2026/05/28/ai%e3%81%8c%e5%95%86%e7%a4%be%e3%81%ae%e4%be%a1%e5%80%a4%e3%82%92%e5%86%8d%e5%ae%9a%e7%be%a9%e3%81%99%e3%82%8b%ef%bd%9e%e4%bd%8f%e5%8f%8b%e5%95%86%e4%ba%8bdais%e6%88%a6%e7%95%a5%e3%81%ae%e6%ad%a3/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e3%2581%258c%25e5%2595%2586%25e7%25a4%25be%25e3%2581%25ae%25e4%25be%25a1%25e5%2580%25a4%25e3%2582%2592%25e5%2586%258d%25e5%25ae%259a%25e7%25be%25a9%25e3%2581%2599%25e3%2582%258b%25ef%25bd%259e%25e4%25bd%258f%25e5%258f%258b%25e5%2595%2586%25e4%25ba%258bdais%25e6%2588%25a6%25e7%2595%25a5%25e3%2581%25ae%25e6%25ad%25a3",
       "description": "AI時代に生き残る企業と衰退する企業の分岐点は、テクノロジー導入ではなく、事業そのものの変革ができるかどうかにあります。本記事では、約10万社の顧客基盤を持つ総合商社がAIで何を変え、どのように競争力を確保しようとしてい [...] <p>The post AIが商社の価値を再定義する～住友商事DAIS戦略の正体 first appeared on 生成AIと建設DX.</p>...",
@@ -29,6 +19,16 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/05/wp_eyecatch_1200x630_under100kb-3-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "「BIMobject」 YKK AP株式会社のビル用商品BIMオブジェクト357点を公開",
+      "link": "https://news.build-app.jp/article/40787/",
+      "description": "概要 BuildAppで建設DXに取り組む野原グループのBIMobject Japan株式会社(本社：東京都新宿区、代表取締役社長：山梶真司......",
+      "publishedDate": "Wed, 03 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/04/AdobeStock_431481497-scaled-1-130x74.jpeg",
       "language": "ja"
     },
     {
@@ -42,13 +42,23 @@
       "language": "en"
     },
     {
-      "title": "淺沼組、全現場のDX基盤として「建設サイト・シリーズ」に統一",
-      "link": "https://news.build-app.jp/article/40766/",
-      "description": "エムシーディースリー株式会社（東京都渋谷区、代表取締役社長：飯田正生）は、株式会社淺沼組（大阪市浪速区、代表取締役社長：浅沼誠）が、全現場の......",
+      "title": "国土交通省が建設工事受注動態統計を公表、3月受注高16兆円で前年同月比減少",
+      "link": "https://news.build-app.jp/article/40821/",
+      "description": "国土交通省は令和8年5月13日、建設工事受注動態統計調査の令和8年3月分および令和7年度計分の結果を公表しました。 3月の受注高合計は16兆......",
       "publishedDate": "Tue, 02 Jun 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/NvWCI988PC82Vn51657720065_1657720078-130x82.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/23398670_m-130x98.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大成建設と日揮グローバル、建設用3Dプリンタで大型PCa部材の一体製作を実証",
+      "link": "https://news.build-app.jp/article/40813/",
+      "description": "大成建設と日揮グローバル株式会社は2026年5月20日、建設用3Dプリンタを使って柱・梁・スラブの型枠を一体で造形した大型プレキャスト（PC......",
+      "publishedDate": "Tue, 02 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/26527682_m-130x98.jpg",
       "language": "ja"
     },
     {
@@ -62,6 +72,16 @@
       "language": "ja"
     },
     {
+      "title": "淺沼組、全現場のDX基盤として「建設サイト・シリーズ」に統一",
+      "link": "https://news.build-app.jp/article/40766/",
+      "description": "エムシーディースリー株式会社（東京都渋谷区、代表取締役社長：飯田正生）は、株式会社淺沼組（大阪市浪速区、代表取締役社長：浅沼誠）が、全現場の......",
+      "publishedDate": "Tue, 02 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/NvWCI988PC82Vn51657720065_1657720078-130x82.jpg",
+      "language": "ja"
+    },
+    {
       "title": "buildingSMART International Appoints Aidan Mercer as Managing Director",
       "link": "https://www.buildingsmart.org/buildingsmart-international-appoints-aidan-mercer-as-managing-director/",
       "description": "London, U.K. – April 30th, 2026 — The Board of buildingSMART International (bSI) is pleased to announce the appointment of Aidan Mercer as Managing Director (MD), effective 1 May 2026.... The post bui...",
@@ -70,46 +90,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "【奥村組】山岳トンネル工事における発破掘削を効率化する「装薬量計画システム」を開発",
-      "link": "https://news.build-app.jp/article/40723/",
-      "description": "株式会社奥村組（本社：大阪市阿倍野区、代表取締役社長：奥村太加典）は、株式会社ジェーエムエーシステムズ（本社：東京都港区、代表取締役社長：坂......",
-      "publishedDate": "Thu, 28 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/10/dpXFA3kMEG2WDF91666326649_1666326685-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "BIMを援用した「BIM図面審査」の正式な開始も契機にして関連動向が続々と公表される｜深堀り取材【毎月3回更新】",
-      "link": "https://news.build-app.jp/article/40521/",
-      "description": "繰り返し本稿でも報告したように、新年度の4月1日からBIMを援用した建築確認申請の「BIM図面審査」が開始された状況下、実施を巡る情報が公表......",
-      "publishedDate": "Thu, 28 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/ec23754ed105f7f03f0a938099a01b58-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年版】市街化調整区域で建て替えはできる？｜許可が必要な条件・できないケース・失敗例を解説",
-      "link": "https://news.build-app.jp/article/40768/",
-      "description": "市街化調整区域にある実家や中古住宅の建て替えを検討しているものの、「本当に建て替えできるのか」「先に解体しても大丈夫なのか」と不安になってい......",
-      "publishedDate": "Thu, 28 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/87d1abde99ba576ba6c4de820ba66826-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "ミュージックテラス（Kアリーナ横浜・ヒルトン横浜・Kタワー横浜）の魅力を解説｜レストランや駐車場",
-      "link": "https://news.build-app.jp/article/40742/",
-      "description": "トレンドワード：ミュージックテラス 横浜・みなとみらいエリアに誕生した「ミュージックテラス」は、世界最大級の音楽アリーナ「Kアリーナ横浜」を......",
-      "publishedDate": "Thu, 28 May 2026 21:56:04 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/1d8a7b825469c76dcec18e496c9453c0-130x82.png",
-      "language": "ja"
     },
     {
       "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
@@ -140,6 +120,26 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "国土交通省、建設総合統計3月分を公表、出来高5兆6,147億円、民間・公共とも前年同月比増",
+      "link": "https://news.build-app.jp/article/40818/",
+      "description": "国土交通省は、令和8年5月20日に建設総合統計（令和8年3月分）を公表しました。3月の建設工事出来高は全体的に伸びており、民間・公共の両部門......",
+      "publishedDate": "Sun, 31 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/image-20-130x85.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大和ハウス工業、つくば市最大602戸の分譲マンション販売開始、研究学園駅徒歩9分都心へ直通",
+      "link": "https://news.build-app.jp/article/40828/",
+      "description": "大和ハウス工業と旭化成ホームズは、茨城県つくば市において大規模分譲マンション「プレミストつくば研究学園」の販売を2026年5月15日より開始......",
+      "publishedDate": "Sun, 31 May 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/33173146_m-130x87.jpg",
+      "language": "ja"
     },
     {
       "title": "大林組、世界初のTLP型ハイブリッド浮体式洋上風力発電施設の基本設計承認を日本海事協会から取得",
@@ -252,6 +252,16 @@
       "language": "ja"
     },
     {
+      "title": "大成建設、木床構造向け二重床を改良、重量床衝撃音低減と施工効率化に対応し展開へ",
+      "link": "https://news.build-app.jp/article/40810/",
+      "description": "大成建設は2026年5月27日、2015年に開発した遮音高性能乾式二重床「T-Silent Floor」を木床構造向けに改良したと発表しまし......",
+      "publishedDate": "Mon, 01 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33864494_l-130x87.jpg",
+      "language": "ja"
+    },
+    {
       "title": "SBGがトヨタを超えた日、AI資本主義が日本を変える理由",
       "link": "https://axconstdx.com/2026/06/01/sbg%e3%81%8c%e3%83%88%e3%83%a8%e3%82%bf%e3%82%92%e8%b6%85%e3%81%88%e3%81%9f%e6%97%a5%e3%80%81ai%e8%b3%87%e6%9c%ac%e4%b8%bb%e7%be%a9%e3%81%8c%e6%97%a5%e6%9c%ac%e3%82%92%e5%a4%89%e3%81%88%e3%82%8b/?utm_source=rss&utm_medium=rss&utm_campaign=sbg%25e3%2581%258c%25e3%2583%2588%25e3%2583%25a8%25e3%2582%25bf%25e3%2582%2592%25e8%25b6%2585%25e3%2581%2588%25e3%2581%259f%25e6%2597%25a5%25e3%2580%2581ai%25e8%25b3%2587%25e6%259c%25ac%25e4%25b8%25bb%25e7%25be%25a9%25e3%2581%258c%25e6%2597%25a5%25e6%259c%25ac%25e3%2582%2592%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b",
       "description": "あなたの会社の価値は、これからどこで決まるのでしょうか。SBGがトヨタを超えた出来事は、単なるニュースではなく、日本のビジネスの「ものさし」が静かに変わり始めた合図です。この記事を読めば、AI資本主義の本質と、自社の戦略 [...] <p>The post SBGがトヨタを超えた日、AI資本主義が日本を変える理由 first appeared on 生成AIと建設DX.</p>...",
@@ -259,16 +269,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630-2-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ドーチェスター・コレクション 東京（仮称）｜ 清水建設による日本一高いビルの耐震対策とは",
-      "link": "https://news.build-app.jp/article/40700/",
-      "description": "トレンドワード：ドーチェスター・コレクション 東京（仮称） 日本一の高さのタワーに開業する、日本トップレベルの宿泊料金のホテル。いったいどん......",
-      "publishedDate": "Fri, 29 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/a5a800079b264bc822d08b5c6d8f55a5-130x82.png",
       "language": "ja"
     },
     {
