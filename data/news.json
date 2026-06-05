@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04T02:48:41.469269",
+  "lastUpdated": "2026-06-05T02:35:41.693322",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -19,6 +19,16 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/05/wp_eyecatch_1200x630_under100kb-3-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "建築のスリーブとは？｜種類・役割・施工時の注意点を解説",
+      "link": "https://news.build-app.jp/article/40836/",
+      "description": "建築図面や施工現場では、よく「スリーブ」という言葉を見かけます。しかし、「ただの穴と何が違うのか」「なぜ事前に設置する必要があるのか」と疑問......",
+      "publishedDate": "Wed, 03 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/fb6ad922e00fc26fd51405a4477c3055-130x82.png",
       "language": "ja"
     },
     {
@@ -42,6 +52,26 @@
       "language": "en"
     },
     {
+      "title": "淺沼組、全現場のDX基盤として「建設サイト・シリーズ」に統一",
+      "link": "https://news.build-app.jp/article/40766/",
+      "description": "エムシーディースリー株式会社（東京都渋谷区、代表取締役社長：飯田正生）は、株式会社淺沼組（大阪市浪速区、代表取締役社長：浅沼誠）が、全現場の......",
+      "publishedDate": "Tue, 02 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/NvWCI988PC82Vn51657720065_1657720078-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "「DX推進室を設置する建設会社ほどDXが遅れている証拠」という逆説",
+      "link": "https://news.build-app.jp/article/40624/",
+      "description": "DX推進室を設置する建設会社ほど、デジタル変革が遅れている──。本稿の目的はこの逆説の検証にある。 DX推進という看板の裏側で進行しているの......",
+      "publishedDate": "Tue, 02 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/20260603_hirayama-130x82.jpg",
+      "language": "ja"
+    },
+    {
       "title": "国土交通省が建設工事受注動態統計を公表、3月受注高16兆円で前年同月比減少",
       "link": "https://news.build-app.jp/article/40821/",
       "description": "国土交通省は令和8年5月13日、建設工事受注動態統計調査の令和8年3月分および令和7年度計分の結果を公表しました。 3月の受注高合計は16兆......",
@@ -59,26 +89,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/26527682_m-130x98.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "「DX推進室を設置する建設会社ほどDXが遅れている証拠」という逆説",
-      "link": "https://news.build-app.jp/article/40624/",
-      "description": "DX推進室を設置する建設会社ほど、デジタル変革が遅れている──。本稿の目的はこの逆説の検証にある。 DX推進という看板の裏側で進行しているの......",
-      "publishedDate": "Tue, 02 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/20260603_hirayama-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "淺沼組、全現場のDX基盤として「建設サイト・シリーズ」に統一",
-      "link": "https://news.build-app.jp/article/40766/",
-      "description": "エムシーディースリー株式会社（東京都渋谷区、代表取締役社長：飯田正生）は、株式会社淺沼組（大阪市浪速区、代表取締役社長：浅沼誠）が、全現場の......",
-      "publishedDate": "Tue, 02 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/NvWCI988PC82Vn51657720065_1657720078-130x82.jpg",
       "language": "ja"
     },
     {
@@ -122,33 +132,13 @@
       "language": "en"
     },
     {
-      "title": "国土交通省、建設総合統計3月分を公表、出来高5兆6,147億円、民間・公共とも前年同月比増",
-      "link": "https://news.build-app.jp/article/40818/",
-      "description": "国土交通省は、令和8年5月20日に建設総合統計（令和8年3月分）を公表しました。3月の建設工事出来高は全体的に伸びており、民間・公共の両部門......",
-      "publishedDate": "Sun, 31 May 2026 22:00:00 +0000",
+      "title": "TOPPAN、石目や金属調など建築素材の感性的価値をAIが定量評価するシステムを提供開始",
+      "link": "https://news.build-app.jp/article/40792/",
+      "description": "TOPPANホールディングスのグループ会社であるTOPPAN株式会社（本社:東京都文京区、代表取締役社長:野口 晴彦、以下 TOPPAN）は......",
+      "publishedDate": "Thu, 04 Jun 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/image-20-130x85.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大和ハウス工業、つくば市最大602戸の分譲マンション販売開始、研究学園駅徒歩9分都心へ直通",
-      "link": "https://news.build-app.jp/article/40828/",
-      "description": "大和ハウス工業と旭化成ホームズは、茨城県つくば市において大規模分譲マンション「プレミストつくば研究学園」の販売を2026年5月15日より開始......",
-      "publishedDate": "Sun, 31 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/33173146_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大林組、世界初のTLP型ハイブリッド浮体式洋上風力発電施設の基本設計承認を日本海事協会から取得",
-      "link": "https://news.build-app.jp/article/40725/",
-      "description": "概要 株式会社大林組（本社：東京都港区、社長：佐藤俊美）は、開発研究を進めている鋼・コンクリートのハイブリッド構造を採用したTLP（テンショ......",
-      "publishedDate": "Sun, 31 May 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/3370698_s-130x98.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/10/MicrosoftTeams-image-152-130x73.jpg",
       "language": "ja"
     },
     {
@@ -240,6 +230,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "【2026年最新】建築基準法の耐震基準改正をわかりやすく解説｜旧耐震・新耐震・2000年基準の違いとは？",
+      "link": "https://news.build-app.jp/article/40833/",
+      "description": "地震大国である日本では、過去の大地震のたびに建築基準法の耐震基準が見直されてきました。しかし、「旧耐震と新耐震の違いがわからない」「2000......",
+      "publishedDate": "Mon, 01 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/3b75d195db710be571d4462861dc6a1f-130x82.png",
+      "language": "ja"
     },
     {
       "title": "onebuilding、環境性能と不動産価値を“数秒”で可視化するSaaS正式リリース",
