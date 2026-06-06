@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-05T05:19:23.311764",
+  "lastUpdated": "2026-06-06T04:54:38.689433",
   "articles": [
     {
       "title": "Reachy Mini goes fully local",
@@ -266,17 +266,6 @@
       "language": "en"
     },
     {
-      "title": "A new era for AI Search",
-      "titleJa": "AI検索の新時代",
-      "link": "https://blog.google/products-and-platforms/products/search/search-io-2026/",
-      "description": "Text that reads \"The best of a search engine with the best of AI\"...",
-      "publishedDate": "Tue, 19 May 2026 17:45:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_AI_and_search_engine_v46.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
       "title": "Introducing the Ettin Reranker Family",
       "titleJa": "エッティン・リランカー・ファミリーの紹介",
       "link": "https://huggingface.co/blog/ettin-reranker",
@@ -420,6 +409,17 @@
       "language": "ja"
     },
     {
+      "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+      "titleJa": "Nemotron 3.5 コンテンツ セーフティ: グローバル エンタープライズ AI 向けのカスタマイズ可能なマルチモーダル セーフティ",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+      "description": "...",
+      "publishedDate": "Thu, 04 Jun 2026 18:57:45 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-3-5-content-safety.png",
+      "language": "en"
+    },
+    {
       "title": "Copilotエージェントとは？GitHub・Microsoft 365で使える自律型AIの特徴や料金、使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/copilot-agent/",
@@ -508,25 +508,25 @@
       "language": "ja"
     },
     {
-      "title": "AutoGPTとは？インストール方法から使い方まで徹底解説！【Windows・MacOS】",
+      "title": "【Magenta RealTime 2】MacBookで演奏できるリアルタイムAI音楽モデルを徹底解説！",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/autogpt-windows/",
-      "description": "企業の情報システム部門では、生成AIをどの業務に取り入れるべきか、どの範囲まで自動化できるのかを見極める場面が増えています。なかでもAutoGPTは、目標をもとにタスクを分解し、情報収集やレポート作成などを進められるAI [...]...",
-      "publishedDate": "Sat, 30 May 2026 14:05:15 +0000",
+      "link": "https://weel.co.jp/media/tech/magenta-realtime-2/",
+      "description": "2026年6月5日、GoogleがAIライブ音楽生成モデル「Magenta RealTime 2（MRT2）」をオープンウェイトで公開しました！ 前モデルと比較してレイテンシを約15分の1に削減し、Apple Silic [...]...",
+      "publishedDate": "Fri, 05 Jun 2026 09:32:37 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2023/10/AIモン_AutoGPT-1024x576.jpg",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Magenta-RealTime-2-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "【NoLang】資料を数秒で解説動画にしてくれる！商用利用や安全性、使い方を徹底解説",
+      "title": "NVIDIA Nemotron 3 Ultra 550Bとは？550B級オープンウェイトLLMの性能・使い方・ライセンスを徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/nolang/",
-      "description": "株式会社Mavericksは、どんな資料でもおよそ3秒で解説動画に変換してくれるAIツール「NoLang」を公開しました。公開直後から話題となり、公開日にはアクセス数の増加が原因で障害が起こるほど注目されています。 この [...]...",
-      "publishedDate": "Sat, 30 May 2026 12:59:11 +0000",
+      "link": "https://weel.co.jp/media/tech/nvidia-nemotron-3-ultra-550b/",
+      "description": "2026年6月、NVIDIAからオープンウェイトのフラッグシップ大規模言語モデルが公開されました。 今回登場した「NVIDIA Nemotron 3 Ultra 550B」は、総パラメータ数550B・推論時アクティブパラ [...]...",
+      "publishedDate": "Fri, 05 Jun 2026 09:20:37 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/nolang_2605-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_NVIDIA-Nemotron-3-Ultra-550B-1024x576.webp",
       "language": "ja"
     },
     {
