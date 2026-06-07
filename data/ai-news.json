@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-06T04:54:38.689433",
+  "lastUpdated": "2026-06-07T05:23:16.099002",
   "articles": [
     {
       "title": "Reachy Mini goes fully local",
@@ -123,10 +123,10 @@
       "language": "en"
     },
     {
-      "title": "OpenAI public policy agenda",
-      "titleJa": "OpenAI の公共政策の課題",
-      "link": "https://openai.com/index/public-policy-agenda",
-      "description": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society....",
+      "title": "A blueprint for democratic governance of frontier AI",
+      "titleJa": "フロンティア AI の民主的ガバナンスの青写真",
+      "link": "https://openai.com/index/frontier-safety-blueprint",
+      "description": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security....",
       "publishedDate": "Wed, 03 Jun 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -134,10 +134,10 @@
       "language": "en"
     },
     {
-      "title": "A blueprint for democratic governance of frontier AI",
-      "titleJa": "フロンティア AI の民主的ガバナンスの青写真",
-      "link": "https://openai.com/index/frontier-safety-blueprint",
-      "description": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security....",
+      "title": "OpenAI public policy agenda",
+      "titleJa": "OpenAIの公共政策の課題",
+      "link": "https://openai.com/index/public-policy-agenda",
+      "description": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society....",
       "publishedDate": "Wed, 03 Jun 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -175,28 +175,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/Fujitsu-Anthropic.png",
-      "language": "ja"
-    },
-    {
-      "title": "Claudeアプリの導入から使い方まで｜PC・スマホ版の機能と違いを解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-application-how-to-use/",
-      "description": "Claudeアプリは、AIチャット「Claude」をPCやスマホから使いやすくするためのアプリです。デスクトップ版・スマホ版・Web版があり、文章作成や調査、要約、翻訳、コーディング支援など、さまざまな作業に活用できます [...] The post Claudeアプリの導入から使い方まで｜PC・スマホ版の機能と違いを解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 03 Jun 2026 05:53:32 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claudeapplicationmain.png",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Code for VS Codeの導入・設定・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-code-for-vs-code/",
-      "description": "「Claude Code for VS Codeを使ってみたいけど、使い方が分からない」と悩んでいませんか。 この記事では、VS Code上でAIにコードの編集・デバッグ・説明を任せたい開発者に向けて、Claude Co [...] The post Claude Code for VS Codeの導入・設定・使い方を徹底解説 first appeared on AIポータルメディアAIsmile...",
-      "publishedDate": "Wed, 03 Jun 2026 05:36:58 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claudecodevscode.png",
       "language": "ja"
     },
     {
@@ -497,14 +475,14 @@
       "language": "ja"
     },
     {
-      "title": "ChatGPTでスクレイピングはできる？手順・リスク・代替案を徹底解説",
+      "title": "Agentforceとは？Salesforceの自律型AIエージェント機能・料金・導入手順を徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/plugin-scraper/",
-      "description": "ChatGPTは本格的なスクレイピングはできませんが、Pythonコードを生成する形でデータ収集の効率を上げられます。とはいえ「実際にどうやるの？」「違法にならない？」と疑問を抱えている方も多いはずです。 この記事では、 [...]...",
-      "publishedDate": "Sat, 30 May 2026 14:51:53 +0000",
+      "link": "https://weel.co.jp/media/tech/agentforce/",
+      "description": "既存の顧客管理（CRM）が複雑だったり、カスタマーサポートのコスト削減に悩んだりと、自社の課題を抱える企業担当者は多いのではないでしょうか。Agentforceは、Salesforceが提供する自律型AIエージェントプラ [...]...",
+      "publishedDate": "Sat, 06 Jun 2026 12:26:45 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/plugin-scraper_2605-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Agentforce-1024x576.webp",
       "language": "ja"
     },
     {
@@ -527,6 +505,28 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_NVIDIA-Nemotron-3-Ultra-550B-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "トラスコ中山と富士通が人事異動案の提案アプリを構築。AIと数理最適化モデル活用で工数を約98％削減",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/trusco-fujitsu-ai-hr/",
+      "description": "トラスコ中山と富士通が、人事異動の意思決定プロセスを高速化するアプリを構築しました。AIと数理最適化モデルの活用で、人事異動案作成にかかる工数を約98％削減しています。 このニュースのポイント トラスコ中山と富士通が、人 [...] The post トラスコ中山と富士通が人事異動案の提案アプリを構築。AIと数理最適化モデル活用で工数を約98％削減 first appeared on AIポータル...",
+      "publishedDate": "Fri, 05 Jun 2026 08:08:37 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/trusco-fujitsu-ai-hr-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "USEN、飲食店向け生成AIサービス「USEN AI店長（ベータ版）」の提供開始。 売上分析から店舗運営まで支援",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/usen-ai-manager-restaurant/",
+      "description": "USENは、生成AIとPOSデータを活用した「USEN AI店長（ベータ版）」の提供を開始しました。飲食店の売上改善と店舗運営のDX推進をサポートします。 このニュースのポイント USENが自社開発AIエンジンと「USE [...] The post USEN、飲食店向け生成AIサービス「USEN AI店長（ベータ版）」の提供開始。 売上分析から店舗運営まで支援 first appeared on...",
+      "publishedDate": "Fri, 05 Jun 2026 07:06:48 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/usenmanager3i2.png",
       "language": "ja"
     },
     {
