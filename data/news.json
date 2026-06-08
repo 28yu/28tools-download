@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-07T02:41:21.069331",
+  "lastUpdated": "2026-06-08T02:45:07.465069",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -22,16 +22,6 @@
       "language": "ja"
     },
     {
-      "title": "建築のスリーブとは？｜種類・役割・施工時の注意点を解説",
-      "link": "https://news.build-app.jp/article/40836/",
-      "description": "建築図面や施工現場では、よく「スリーブ」という言葉を見かけます。しかし、「ただの穴と何が違うのか」「なぜ事前に設置する必要があるのか」と疑問......",
-      "publishedDate": "Wed, 03 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/fb6ad922e00fc26fd51405a4477c3055-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "「BIMobject」 YKK AP株式会社のビル用商品BIMオブジェクト357点を公開",
       "link": "https://news.build-app.jp/article/40787/",
       "description": "概要 BuildAppで建設DXに取り組む野原グループのBIMobject Japan株式会社(本社：東京都新宿区、代表取締役社長：山梶真司......",
@@ -39,6 +29,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/04/AdobeStock_431481497-scaled-1-130x74.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "建築のスリーブとは？｜種類・役割・施工時の注意点を解説",
+      "link": "https://news.build-app.jp/article/40836/",
+      "description": "建築図面や施工現場では、よく「スリーブ」という言葉を見かけます。しかし、「ただの穴と何が違うのか」「なぜ事前に設置する必要があるのか」と疑問......",
+      "publishedDate": "Wed, 03 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/fb6ad922e00fc26fd51405a4477c3055-130x82.png",
       "language": "ja"
     },
     {
@@ -52,16 +52,6 @@
       "language": "en"
     },
     {
-      "title": "淺沼組、全現場のDX基盤として「建設サイト・シリーズ」に統一",
-      "link": "https://news.build-app.jp/article/40766/",
-      "description": "エムシーディースリー株式会社（東京都渋谷区、代表取締役社長：飯田正生）は、株式会社淺沼組（大阪市浪速区、代表取締役社長：浅沼誠）が、全現場の......",
-      "publishedDate": "Tue, 02 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/NvWCI988PC82Vn51657720065_1657720078-130x82.jpg",
-      "language": "ja"
-    },
-    {
       "title": "「DX推進室を設置する建設会社ほどDXが遅れている証拠」という逆説",
       "link": "https://news.build-app.jp/article/40624/",
       "description": "DX推進室を設置する建設会社ほど、デジタル変革が遅れている──。本稿の目的はこの逆説の検証にある。 DX推進という看板の裏側で進行しているの......",
@@ -72,13 +62,13 @@
       "language": "ja"
     },
     {
-      "title": "国土交通省が建設工事受注動態統計を公表、3月受注高16兆円で前年同月比減少",
-      "link": "https://news.build-app.jp/article/40821/",
-      "description": "国土交通省は令和8年5月13日、建設工事受注動態統計調査の令和8年3月分および令和7年度計分の結果を公表しました。 3月の受注高合計は16兆......",
+      "title": "淺沼組、全現場のDX基盤として「建設サイト・シリーズ」に統一",
+      "link": "https://news.build-app.jp/article/40766/",
+      "description": "エムシーディースリー株式会社（東京都渋谷区、代表取締役社長：飯田正生）は、株式会社淺沼組（大阪市浪速区、代表取締役社長：浅沼誠）が、全現場の......",
       "publishedDate": "Tue, 02 Jun 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/23398670_m-130x98.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/NvWCI988PC82Vn51657720065_1657720078-130x82.jpg",
       "language": "ja"
     },
     {
@@ -89,6 +79,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/26527682_m-130x98.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省が建設工事受注動態統計を公表、3月受注高16兆円で前年同月比減少",
+      "link": "https://news.build-app.jp/article/40821/",
+      "description": "国土交通省は令和8年5月13日、建設工事受注動態統計調査の令和8年3月分および令和7年度計分の結果を公表しました。 3月の受注高合計は16兆......",
+      "publishedDate": "Tue, 02 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/23398670_m-130x98.jpg",
       "language": "ja"
     },
     {
@@ -162,6 +162,26 @@
       "language": "ja"
     },
     {
+      "title": "「空気からCO2を回収して使う」建物へ",
+      "link": "https://news.build-app.jp/article/40795/",
+      "description": "Carbon Xtract 株式会社（以下「Carbon Xtract」）は、このたび清水建設株式会社（以下「清水建設」）および双日株式会社......",
+      "publishedDate": "Sun, 07 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/4sAi0GiPB9jj1KO1658206702_1658206726-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新版】宮大工とは？採用前に知るべき仕事内容・給料・技能評価・育成管理のポイント",
+      "link": "https://news.build-app.jp/article/40854/",
+      "description": "宮大工は、神社仏閣や伝統建築の新築、修繕、保存に関わる大工です。木材を加工して建物をつくる点は一般的な大工と共通しますが、求められる技能や判......",
+      "publishedDate": "Sun, 07 Jun 2026 15:15:30 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/25341814_m-130x98.jpg",
+      "language": "ja"
+    },
+    {
       "title": "埋設管を掘る前に確認すべきこと｜AI・3D探査が変えるインフラDXの全貌",
       "link": "https://axconstdx.com/2026/03/28/%e5%9f%8b%e8%a8%ad%e7%ae%a1%e3%82%92%e6%8e%98%e3%82%8b%e5%89%8d%e3%81%ab%e7%a2%ba%e8%aa%8d%e3%81%99%e3%81%b9%e3%81%8d%e3%81%93%e3%81%a8%ef%bd%9cai%e3%83%bb3d%e6%8e%a2%e6%9f%bb%e3%81%8c%e5%a4%89/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%259f%258b%25e8%25a8%25ad%25e7%25ae%25a1%25e3%2582%2592%25e6%258e%2598%25e3%2582%258b%25e5%2589%258d%25e3%2581%25ab%25e7%25a2%25ba%25e8%25aa%258d%25e3%2581%2599%25e3%2581%25b9%25e3%2581%258d%25e3%2581%2593%25e3%2581%25a8%25ef%25bd%259cai%25e3%2583%25bb3d%25e6%258e%25a2%25e6%259f%25bb%25e3%2581%258c%25e5%25a4%2589",
       "description": "「地下に何が埋まっているか分からない」——その不安は、今も全国の工事現場で現実になっています。埋設管の位置不明は、ガス漏れや道路陥没といった取り返しのつかない事故に直結する問題です。この記事を読めば、非破壊探査からAIに [...] <p>The post 埋設管を掘る前に確認すべきこと｜AI・3D探査が変えるインフラDXの全貌 first appeared on 生成AIと建設DX.</p>...",
@@ -222,6 +242,16 @@
       "language": "ja"
     },
     {
+      "title": "熱中症で労災認定される場合も｜厚労省「クールワークキャンペーン」に注目",
+      "link": "https://news.build-app.jp/article/40843/",
+      "description": "トレンドワード：熱中症 近年、猛暑の影響により、職場での熱中症による労働災害が増加しています。とくに建設業や運送業、製造業など高温環境での作......",
+      "publishedDate": "Mon, 08 Jun 2026 00:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/image-4-130x87.jpeg",
+      "language": "ja"
+    },
+    {
       "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
       "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
       "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
@@ -230,36 +260,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "【2026年最新】建築基準法の耐震基準改正をわかりやすく解説｜旧耐震・新耐震・2000年基準の違いとは？",
-      "link": "https://news.build-app.jp/article/40833/",
-      "description": "地震大国である日本では、過去の大地震のたびに建築基準法の耐震基準が見直されてきました。しかし、「旧耐震と新耐震の違いがわからない」「2000......",
-      "publishedDate": "Mon, 01 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/3b75d195db710be571d4462861dc6a1f-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "onebuilding、環境性能と不動産価値を“数秒”で可視化するSaaS正式リリース",
-      "link": "https://news.build-app.jp/article/40764/",
-      "description": "建築・不動産業界のDXおよび省エネ化を推進する株式会社one building（東京都目黒区、以下「one building」）は、建物のラ......",
-      "publishedDate": "Mon, 01 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/sRHqxbpg0aWQYyt1657288067_1657288084-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大成建設、木床構造向け二重床を改良、重量床衝撃音低減と施工効率化に対応し展開へ",
-      "link": "https://news.build-app.jp/article/40810/",
-      "description": "大成建設は2026年5月27日、2015年に開発した遮音高性能乾式二重床「T-Silent Floor」を木床構造向けに改良したと発表しまし......",
-      "publishedDate": "Mon, 01 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33864494_l-130x87.jpg",
-      "language": "ja"
     },
     {
       "title": "SBGがトヨタを超えた日、AI資本主義が日本を変える理由",
