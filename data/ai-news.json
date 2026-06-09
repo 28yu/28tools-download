@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-08T05:52:44.275796",
+  "lastUpdated": "2026-06-09T05:07:54.541823",
   "articles": [
     {
       "title": "Reachy Mini goes fully local",
@@ -135,7 +135,7 @@
     },
     {
       "title": "OpenAI public policy agenda",
-      "titleJa": "OpenAI の公共政策の課題",
+      "titleJa": "OpenAIの公共政策の課題",
       "link": "https://openai.com/index/public-policy-agenda",
       "description": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society....",
       "publishedDate": "Wed, 03 Jun 2026 10:00:00 GMT",
@@ -244,6 +244,39 @@
       "language": "en"
     },
     {
+      "title": "生成AIでホワイトペーパー制作はここまで変わる！具体的な作成手順をわかりやすく解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/ai-generated-white-paper/",
+      "description": "ホワイトペーパーの作成には、構成から執筆・デザインまで最短でも1週間以上かかるのが一般的でした。しかし生成AIを活用すれば、その工程をなんと数時間〜数日に短縮できます。 この記事では、ChatGPTを使ったホワイトペーパ [...]...",
+      "publishedDate": "Tue, 09 Jun 2026 03:25:27 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-generated-white-paper_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Codeベストプラクティス完全ガイド｜公式推奨の設定とコツを解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-slide-best-practices/",
+      "description": "Claude Codeを使い始めたものの、思うような結果が得られず戸惑っていませんか。この記事では、公式ドキュメントに基づいたベストプラクティスを体系的に解説します。 本記事を読むことで得られるベネフィットは次の通りです [...] The post Claude Codeベストプラクティス完全ガイド｜公式推奨の設定とコツを解説 first appeared on AIポータルメディアAIsmil...",
+      "publishedDate": "Tue, 09 Jun 2026 01:16:50 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-code-best_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新】Claude（クロード）のアップデートまとめ！新機能や使い方を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-code-update-summary-2026/",
+      "description": "Claudeは、モデル性能の向上に加えて、Microsoft 365連携やArtifacts、Claude Cowork、Claude Codeなど、日常業務や開発作業を支援する機能も広がっています。 一方で、新機能はプ [...] The post 【2026年最新】Claude（クロード）のアップデートまとめ！新機能や使い方を解説 first appeared on AIポータルメディアAIs...",
+      "publishedDate": "Tue, 09 Jun 2026 01:03:50 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/Claude.png",
+      "language": "ja"
+    },
+    {
       "title": "Holo3.1: Fast & Local Computer Use Agents",
       "titleJa": "Holo3.1: 高速かつローカルなコンピューター使用エージェント",
       "link": "https://huggingface.co/blog/Hcompany/holo31",
@@ -277,28 +310,6 @@
       "language": "en"
     },
     {
-      "title": "Rehumanizing global health care with agentic AI",
-      "titleJa": "エージェント AI で世界の医療を人間らしく変える",
-      "link": "https://www.technologyreview.com/2026/06/02/1137827/rehumanizing-global-health-care-with-agentic-ai/",
-      "description": "The global health care sector is under increasing strain.&#160; Decades of chronic underinvestment and constraints in recruitment have coincided with a surge in demand for services for aging populatio...",
-      "publishedDate": "Tue, 02 Jun 2026 11:23:34 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/MIT-Abstract-Thumbnail-2_-V1.png",
-      "language": "en"
-    },
-    {
-      "title": "【MiniMax M3】GPT-5.5超えのオープンウェイトモデルの性能・料金・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/minimax-m3/",
-      "description": "2026年6月1日、中国・上海のAI企業MiniMaxは公開した次世代フラッグシップAIモデル「MiniMax M3」をリリースしました！ コーディング性能を測るSWE-Bench Proでは59.0%のスコアを記録し、 [...]...",
-      "publishedDate": "Tue, 02 Jun 2026 11:12:11 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_MiniMax-M3-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Codex for every role, tool, and workflow",
       "titleJa": "あらゆる役割、ツール、ワークフローに対応するコーデックス",
       "link": "https://openai.com/index/codex-for-every-role-tool-workflow",
@@ -307,17 +318,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How small businesses can leverage AI",
-      "titleJa": "中小企業は AI をどのように活用できるか",
-      "link": "https://www.technologyreview.com/2026/06/02/1138227/how-small-businesses-can-leverage-ai/",
-      "description": "This article is from Making AI Work, MIT Technology Review’s limited-run newsletter examining how to apply LLMs across industries. To receive it in your inbox,sign up here. From accounting to design t...",
-      "publishedDate": "Tue, 02 Jun 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/4729b751-06a4-3828-9bb4-1983e460947d.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -387,6 +387,28 @@
       "language": "en"
     },
     {
+      "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+      "titleJa": "EVA-Bench Data 2.0: 3 ドメイン、121 ツール、213 シナリオ",
+      "link": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+      "description": "...",
+      "publishedDate": "Thu, 04 Jun 2026 12:24:58 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/eva-bench-data.png",
+      "language": "en"
+    },
+    {
+      "title": "The Download: AI-generated lawsuits and virtual power plants for data centers",
+      "titleJa": "ダウンロード: AI が生成した訴訟とデータセンター向けの仮想発電所",
+      "link": "https://www.technologyreview.com/2026/06/04/1138408/the-download-ai-lawsuits-virtual-power-plants-data-centers/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How courts are coping with a flood of AI-generated...",
+      "publishedDate": "Thu, 04 Jun 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/SO21_TR_AI-531112094-edited-1.jpg",
+      "language": "en"
+    },
+    {
       "title": "Copilotエージェントとは？GitHub・Microsoft 365で使える自律型AIの特徴や料金、使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/copilot-agent/",
@@ -395,17 +417,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/CoPilot-Agent_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "リコーとLIFULLが連携。360度空間データとAIを活用して賃貸物件の動画コンテンツを自動生成",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/lifull-ricoh-360-ai/",
-      "description": "リコーとLIFULLが連携し、360度空間データとAIで賃貸物件の動画コンテンツを自動生成する取り組みを開始します。個別に制作を行わなくても、短時間かつ効率的に物件の魅力を伝える動画コンテンツの生成が可能です。 このニュ [...] The post リコーとLIFULLが連携。360度空間データとAIを活用して賃貸物件の動画コンテンツを自動生成 first appeared on AIポータルメ...",
-      "publishedDate": "Thu, 04 Jun 2026 08:25:56 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/lifull-ricoh-360-ai-eye.png",
       "language": "ja"
     },
     {
@@ -428,6 +439,28 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Agentforce-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ラグザス、「企業のAI活用格差調査」結果発表。大企業の導入率64.7%に対し中小は23.7%で約2.7倍の差",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-adoption-gap-survey/",
+      "description": "ラグザスは、「企業のAI活用格差調査」の結果を発表しました。大企業のAI導入率が64.7%に達した一方、中小企業は23.7%にとどまり、企業規模や地域による活用の格差が鮮明になりました。 このニュースのポイント ラグザス [...] The post ラグザス、「企業のAI活用格差調査」結果発表。大企業の導入率64.7%に対し中小は23.7%で約2.7倍の差 first appeared on A...",
+      "publishedDate": "Mon, 08 Jun 2026 08:04:02 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/raxuseye.png",
+      "language": "ja"
+    },
+    {
+      "title": "アイスマイリー、6/24（水）から3日間　マーケティングWeek -夏 2026-内、「マーケティング戦略立案 EXPO」にブース出展",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/marketing-week-summer-2026/",
+      "description": "AIsmileyは、2026年6月24日（水）～6月26日（金）に東京ビッグサイトにて開催のマーケティングWeek -夏 2026-内、「マーケティング戦略立案 EXPO」にブースを出展します。 会場では、最新のAIソリ [...] The post アイスマイリー、6/24（水）から3日間 マーケティングWeek -夏 2026-内、「マーケティング戦略立案 EXPO」にブース出展 first ...",
+      "publishedDate": "Mon, 08 Jun 2026 07:00:35 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/marketingweeksummer00.png",
       "language": "ja"
     },
     {
@@ -519,36 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "USEN、飲食店向け生成AIサービス「USEN AI店長（ベータ版）」の提供開始。 売上分析から店舗運営まで支援",
+      "title": "Ubuntu、サンドボックス化された開発環境をコマンド一発で構築。新機能「Workshop」リリース",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/usen-ai-manager-restaurant/",
-      "description": "USENは、生成AIとPOSデータを活用した「USEN AI店長（ベータ版）」の提供を開始しました。飲食店の売上改善と店舗運営のDX推進をサポートします。 このニュースのポイント USENが自社開発AIエンジンと「USE [...] The post USEN、飲食店向け生成AIサービス「USEN AI店長（ベータ版）」の提供開始。 売上分析から店舗運営まで支援 first appeared on...",
-      "publishedDate": "Fri, 05 Jun 2026 07:06:48 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/usenmanager3i2.png",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新】ClaudeCodeのコマンド一覧！見つからないときの解決策も",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-command-2026-new/",
-      "description": "Claude Codeのコマンドを体系的に把握できていますか。この記事では、スラッシュコマンド・CLIフラグ・キーボードショートカットの3種類を網羅的に解説します。 「コマンドが見つからない」トラブルへの対処法も紹介する [...] The post 【2026年最新】ClaudeCodeのコマンド一覧！見つからないときの解決策も first appeared on AIポータルメディアAIsmi...",
-      "publishedDate": "Fri, 05 Jun 2026 03:11:15 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-command_ic.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Code Skillsとは？使い方・作り方・活用例を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-code-skills-function/",
-      "description": "Claude Codeの「Skills」機能を使えば、毎回チャットに同じ手順を貼り付ける作業をなくし、コードレビューやデバッグといった定型タスクをワンコマンドで再現できます。 この記事では、SkillsがCLAUDE.m [...] The post Claude Code Skillsとは？使い方・作り方・活用例を徹底解説 first appeared on AIポータルメディアAIsmiley...",
-      "publishedDate": "Fri, 05 Jun 2026 02:41:42 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claudecodeskills.png",
+      "link": "https://www.publickey1.jp/blog/26/ubuntuworkshop.html",
+      "description": "Ubuntuの開発元であるCanonicalは、AIエージェントなどに適したサンドボックス化された開発環境をコマンド一発で構築できる新機能「Workshop」をリリースしました。 Today we announced Workshop – ......",
+      "publishedDate": "2026-06-08T15:43:33Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/ubuntu-workshop-la01.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/gordon-ga03.png",
-      "language": "ja"
-    },
-    {
-      "title": "企業向けAIエージェント基盤をオンプレミスやクラウドで構築可能に。ベアメタルへのKubernetes展開も。Nutanix .NEXT 2026［PR］",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/aikubernetesnutanix_next_2026pr.html",
-      "description": "Nutanixが4月に米シカゴで開催した年次イベント「Nutanix .NEXT 2026」で発表した「Nutanix Agentic AI」を始めとする新たな製品群は、現在のIT部門やシステムインテグレータ、サービスプロバイダなどが直面す......",
-      "publishedDate": "2026-05-25T15:12:48Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/nutanix-next2026-01.png",
       "language": "ja"
     }
   ]
