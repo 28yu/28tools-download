@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-08T02:45:07.465069",
+  "lastUpdated": "2026-06-09T02:12:07.368534",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -79,16 +79,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/26527682_m-130x98.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省が建設工事受注動態統計を公表、3月受注高16兆円で前年同月比減少",
-      "link": "https://news.build-app.jp/article/40821/",
-      "description": "国土交通省は令和8年5月13日、建設工事受注動態統計調査の令和8年3月分および令和7年度計分の結果を公表しました。 3月の受注高合計は16兆......",
-      "publishedDate": "Tue, 02 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/23398670_m-130x98.jpg",
       "language": "ja"
     },
     {
@@ -239,6 +229,16 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/04/gemma4_eyecatch_1200x630_under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大成建設が蔵衛門を全社導入、BIMで配筋検査の完全デジタル化",
+      "link": "https://news.build-app.jp/article/40859/",
+      "description": "株式会社ルクレ（以下、ルクレ）が提供する建設DXプラットフォーム「蔵衛門」は、大成建設株式会社の建築部門における写真管理ツールとして導入され......",
+      "publishedDate": "Mon, 08 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/pmIuxHcV0zys7HB1658321325_1658321346-130x82.jpg",
       "language": "ja"
     },
     {
