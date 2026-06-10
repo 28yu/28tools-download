@@ -1,31 +1,9 @@
 {
-  "lastUpdated": "2026-06-09T05:07:54.541823",
+  "lastUpdated": "2026-06-10T05:20:26.835723",
   "articles": [
     {
-      "title": "Reachy Mini goes fully local",
-      "titleJa": "Reachy Mini は完全にローカルになります",
-      "link": "https://huggingface.co/blog/local-reachy-mini-conversation",
-      "description": "...",
-      "publishedDate": "Wed, 27 May 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
-      "titleJa": "ハブ バケットを使用した 1 兆個のパラメータの送信: TRL でのデルタ ウェイト同期",
-      "link": "https://huggingface.co/blog/delta-weight-sync",
-      "description": "...",
-      "publishedDate": "Wed, 27 May 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
-      "language": "en"
-    },
-    {
       "title": "We’re announcing new community investments in Missouri.",
-      "titleJa": "私たちはミズーリ州での新たなコミュニティ投資を発表します。",
+      "titleJa": "私たちはミズーリ州における新たなコミュニティへの投資を発表します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
       "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
       "publishedDate": "Wed, 20 May 2026 20:40:00 +0000",
@@ -57,15 +35,37 @@
       "language": "en"
     },
     {
-      "title": "How virtual power plants could provide energy for data centers",
-      "titleJa": "仮想発電所がデータセンターにエネルギーを供給する方法",
-      "link": "https://www.technologyreview.com/2026/06/03/1138350/virtual-power-plants-data-centers/",
-      "description": "Would you take a payment to ramp down your electricity use? Would it change anything if you were doing so to help power a local data center? Google just signed a new deal to help pay for a virtual pow...",
-      "publishedDate": "Wed, 03 Jun 2026 16:51:38 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/GettyImages-1330540704.jpg?resize=1200,600",
-      "language": "en"
+      "title": "【Claude Fable 5】Mythos級の性能を一般公開！Anthropic史上最強モデルの特徴・使い方・料金を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-fable-5/",
+      "description": "2026年6月10日、Anthropicは、Mythosクラスの生成AIモデルを一般ユーザー向けに安全な形で提供する、同社史上最も高性能なモデル「Claude Fable 5」を公開しました！ 2026年4月に発表された [...]...",
+      "publishedDate": "Wed, 10 Jun 2026 03:27:43 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Fable-5-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "「Claudeがすぐ制限にかかる…」原因と無料でできる回避策・解除時間を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-limit-measures/",
+      "description": "Claudeを使っていると「またすぐ制限がかかった」「思ったより少ない回数で止まってしまう」と感じることがあるかもしれません。本記事では、制限がかかる仕組みと原因、無料でできる回避策、解除までの目安時間をまとめて解説しま [...] The post 「Claudeがすぐ制限にかかる…」原因と無料でできる回避策・解除時間を解説 first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Wed, 10 Jun 2026 01:12:39 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claudelimitmeasures.png",
+      "language": "ja"
+    },
+    {
+      "title": "Claude CodeとClaudeの違いを解説｜用途・機能・料金を徹底比較",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-code-difference/",
+      "description": "Anthropicが提供するClaudeには複数のサービスがあり、それぞれ異なる使い方や役割を担っています。 この記事では、チャット型のClaudeとコード生成AIのClaude Code、そしてタスク自動化のCowor [...] The post Claude CodeとClaudeの違いを解説｜用途・機能・料金を徹底比較 first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Wed, 10 Jun 2026 00:59:47 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claudecodedifference.png",
+      "language": "ja"
     },
     {
       "title": "Introducing new capabilities to GPT-Rosalind",
@@ -87,28 +87,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Thrifting_Header.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Direct Preference Optimization Beyond Chatbots",
-      "titleJa": "チャットボットを超えた直接的な好みの最適化",
-      "link": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
-      "description": "...",
-      "publishedDate": "Wed, 03 Jun 2026 12:55:11 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots.png",
-      "language": "en"
-    },
-    {
-      "title": "The Download: Trump’s new AI order, and smart glasses for warfare",
-      "titleJa": "ダウンロード: トランプ大統領の新たな AI 命令と戦争用スマートグラス",
-      "link": "https://www.technologyreview.com/2026/06/03/1138322/the-download-trump-ai-order-smart-glasses-warfare/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. 5 key points in Trump&#8217;s new AI order Less th...",
-      "publishedDate": "Wed, 03 Jun 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/JA22_marseilles_mobile-edited-1.jpg",
       "language": "en"
     },
     {
@@ -142,50 +120,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "【Qwen3.7-Plus】アリババ発のマルチモーダルAIがVision Arena世界16位に！性能・料金・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwen3-7-plus/",
-      "description": "Qwen3.7-Plusは、Alibaba CloudのQwenチームが開発したQwen3.7シリーズのマルチモーダルモデルです！ テキスト専用の推論特化モデルであるQwen3.7-Maxの兄弟モデルとして位置づけられて [...]...",
-      "publishedDate": "Wed, 03 Jun 2026 07:31:08 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.7-Plus-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【OpenAI Codex Sites】Webアプリを即デプロイ！使い方・料金・活用シーンを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/sites/",
-      "description": "2026年6月3日、OpenAIがCodexの新機能「Sites」を公開しました！ Sitesは、Codexアプリ上でプロンプトを入力するだけでインタラクティブなWebサイトやダッシュボードを生成し、ワークスペースのメン [...]...",
-      "publishedDate": "Wed, 03 Jun 2026 07:21:56 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Sites-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Adding MCP Tools to Reachy Mini",
-      "titleJa": "MCP ツールを Reachy Mini に追加する",
-      "link": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
-      "description": "...",
-      "publishedDate": "Wed, 03 Jun 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/adding-mcp-tools-to-reachy-mini/reachy_mini_remote_spaces_thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "OlmoEarth v1.1: A more efficient family of Earth observation models",
-      "titleJa": "OlmoEarth v1.1: より効率的な地球観測モデルのファミリー",
-      "link": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
-      "description": "...",
-      "publishedDate": "Tue, 19 May 2026 18:38:09 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/19ZFgyFbi-kj2Yf0WUPGk.png",
       "language": "en"
     },
     {
@@ -233,15 +167,114 @@
       "language": "en"
     },
     {
-      "title": "Introducing the Ettin Reranker Family",
-      "titleJa": "エッティン・リランカー・ファミリーの紹介",
-      "link": "https://huggingface.co/blog/ettin-reranker",
-      "description": "...",
-      "publishedDate": "Tue, 19 May 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png",
+      "title": "The Download: whole-body rejuvenation drugs and five things to know about AI",
+      "titleJa": "ダウンロード: 全身若返り薬と AI について知っておくべき 5 つのこと",
+      "link": "https://www.technologyreview.com/2026/06/09/1138604/the-download-anti-aging-drugs-ai-five-things-to-know/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. David Sinclair plans to test whole-body rejuvenati...",
+      "publishedDate": "Tue, 09 Jun 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2020/12/JF21_biomilq_Opener.jpeg?w=2921",
       "language": "en"
+    },
+    {
+      "title": "How engineers at Nextdoor use Codex to build without limits",
+      "titleJa": "Nextdoor のエンジニアが Codex を使用して制限なく構築する方法",
+      "link": "https://openai.com/index/nextdoor",
+      "description": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes....",
+      "publishedDate": "Tue, 09 Jun 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Learning to lead in a hybrid human-AI enterprise",
+      "titleJa": "人間と AI のハイブリッド企業でリーダーシップを発揮する方法を学ぶ",
+      "link": "https://www.technologyreview.com/2026/06/09/1137830/learning-to-lead-in-a-hybrid-human-ai-enterprise/",
+      "description": "As adoption of AI agents looks set to surge by as much as 300% in the next two years, leadership teams are carefully considering the implications of a hybrid human-AI workforce. Unlike existing enterp...",
+      "publishedDate": "Tue, 09 Jun 2026 10:20:06 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/MIT-Abstract-Thumbnail-3-_-V2.png",
+      "language": "en"
+    },
+    {
+      "title": "What Codex unlocks for Notion",
+      "titleJa": "Codex が Notion のロックを解除するもの",
+      "link": "https://openai.com/index/notion",
+      "description": "How Notion uses Codex to one-shot specs, build AI Voice Input for the web, and multiply engineering power across small teams....",
+      "publishedDate": "Tue, 09 Jun 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "David Sinclair plans to test whole-body rejuvenation drugs in the XPrize competition",
+      "titleJa": "デビッド・シンクレア氏はXPrizeコンテストで全身若返り薬のテストを計画している",
+      "link": "https://www.technologyreview.com/2026/06/09/1138545/david-sinclair-plans-to-test-whole-body-rejuvenation-drugs-in-the-xprize-competition/",
+      "description": "The outspoken longevity scientist David Sinclair has been predicting that one day, you’ll go to the doctor and get a prescription that will make you 10 years younger. Now MIT Technology Review has lea...",
+      "publishedDate": "Tue, 09 Jun 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/sinclar-pills-b.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Five things you need to know about AI",
+      "titleJa": "AI について知っておくべき 5 つのこと",
+      "link": "https://www.technologyreview.com/2026/06/09/1138582/five-things-you-need-to-know-about-ai/",
+      "description": "At SXSW London last week I gave a talk called “Five things you need to know about AI,” in which I shared what I think are the biggest themes in AI right now. I pulled a few things from our first AI10 ...",
+      "publishedDate": "Tue, 09 Jun 2026 09:16:45 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/5-things-a.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Anthropic、サイバーセキュリティプロジェクトの初期結果を公開。「Claude Mythos Preview」で1万件以上の重大な脆弱性を発見",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/anthropic-claude-mythos-preview/",
+      "description": "Anthropicは、サイバーセキュリティプロジェクト「Project Glasswing」の初期結果を発表しました。AIモデル「Claude Mythos Preview」を活用し、世界の重要なソフトウェアで1万件以上 [...] The post Anthropic、サイバーセキュリティプロジェクトの初期結果を公開。「Claude Mythos Preview」で1万件以上の重大な脆弱性を発見...",
+      "publishedDate": "Tue, 09 Jun 2026 08:20:49 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/project-glasswing.png",
+      "language": "ja"
+    },
+    {
+      "title": "AIエージェントの作り方・自作方法を徹底解説！初心者でもできるツール選びから運用まで紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/how-to-create-an-ai-agent/",
+      "description": "2025年以降、主要クラウド・SaaS各社がAIエージェント機能を拡充し注目が高まっています。 これまでのAI活用では、「毎回手動で指示を出さなければならない」「ツール間の連携が煩雑でヒューマンエラーが多い」「業務ごとに [...]...",
+      "publishedDate": "Tue, 09 Jun 2026 06:17:04 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/How-to-create-an-AI-agent_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Kimi Workの使い方・特徴まとめ｜WebBridge・Agent Swarm・Cronで知識業務を自動化するAIエージェント",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/kimi-work/",
+      "description": "2026年、中国発のAIスタートアップMoonshot AIから、デスクトップ向けAIエージェント「Kimi Work」が登場しました。 今回登場した「Kimi Work」は、単なるチャットAIにとどまらず、ローカルファ [...]...",
+      "publishedDate": "Tue, 09 Jun 2026 05:57:41 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Kimi-Work-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【NotebookLM エージェント】Gemini 3.5搭載で自律リサーチAIに進化した新機能・使い方・料金を徹底解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/notebooklm-agent/",
+      "description": "Googleが2026年6月9日、AI搭載リサーチツール「NotebookLM」に過去最大級のアップデートを実施しました！ 今回の目玉は、チャットに搭載されたエージェント機能です。従来の「資料を読んで答えるツール」から「 [...]...",
+      "publishedDate": "Tue, 09 Jun 2026 05:48:23 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_NotebookLM-エージェント-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "生成AIでホワイトペーパー制作はここまで変わる！具体的な作成手順をわかりやすく解説",
@@ -277,25 +310,14 @@
       "language": "ja"
     },
     {
-      "title": "Holo3.1: Fast & Local Computer Use Agents",
-      "titleJa": "Holo3.1: 高速かつローカルなコンピューター使用エージェント",
-      "link": "https://huggingface.co/blog/Hcompany/holo31",
-      "description": "...",
-      "publishedDate": "Tue, 02 Jun 2026 14:13:23 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Hcompany/holo31.png",
-      "language": "en"
-    },
-    {
-      "title": "The Download: AI can run your admin department now",
-      "titleJa": "ダウンロード: AI で管理部門を実行できるようになりました",
-      "link": "https://www.technologyreview.com/2026/06/02/1138277/the-download-ai-tips-small-businesses-admin/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How small businesses can leverage AI From accounti...",
-      "publishedDate": "Tue, 02 Jun 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2022/10/ND22_cryo-1071_AG_064.jpeg?w=3000",
+      "title": "Industrial policy for the Intelligence Age",
+      "titleJa": "インテリジェンス時代の産業政策",
+      "link": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+      "description": "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves....",
+      "publishedDate": "Tue, 09 Jun 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -315,28 +337,6 @@
       "link": "https://openai.com/index/codex-for-every-role-tool-workflow",
       "description": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI....",
       "publishedDate": "Tue, 02 Jun 2026 09:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Advancing youth safety and opportunity through global leadership",
-      "titleJa": "世界的なリーダーシップを通じて青少年の安全と機会を促進する",
-      "link": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
-      "description": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people....",
-      "publishedDate": "Tue, 02 Jun 2026 07:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Codex is becoming a productivity tool for everyone",
-      "titleJa": "Codex は誰にとっても生産性ツールになりつつあります",
-      "link": "https://openai.com/index/codex-for-knowledge-work",
-      "description": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation....",
-      "publishedDate": "Tue, 02 Jun 2026 02:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -365,41 +365,8 @@
       "language": "ja"
     },
     {
-      "title": "MAI-Thinking-1とは？Microsoft発の推論AIを徹底解説！性能・仕組み・ベンチマークまで紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/mai-thinking-1/",
-      "description": "2026年、Microsoft AIチームから新しい大規模推論モデルが発表されました。 今回登場した「MAI-Thinking-1」は、単なる性能向上にとどまらず、「ヒルクライミングマシン」と呼ぶ独自の開発フレームワーク [...]...",
-      "publishedDate": "Thu, 04 Jun 2026 20:22:11 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_MAI-Thinking-1-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
-      "titleJa": "Nemotron 3.5 コンテンツ セーフティ: グローバル エンタープライズ AI 向けのカスタマイズ可能なマルチモーダル セーフティ",
-      "link": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
-      "description": "...",
-      "publishedDate": "Thu, 04 Jun 2026 18:57:45 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-3-5-content-safety.png",
-      "language": "en"
-    },
-    {
-      "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
-      "titleJa": "EVA-Bench Data 2.0: 3 ドメイン、121 ツール、213 シナリオ",
-      "link": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
-      "description": "...",
-      "publishedDate": "Thu, 04 Jun 2026 12:24:58 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/eva-bench-data.png",
-      "language": "en"
-    },
-    {
       "title": "The Download: AI-generated lawsuits and virtual power plants for data centers",
-      "titleJa": "ダウンロード: AI が生成した訴訟とデータセンター向けの仮想発電所",
+      "titleJa": "ダウンロード: AI によって生成された訴訟とデータセンター向けの仮想発電所",
       "link": "https://www.technologyreview.com/2026/06/04/1138408/the-download-ai-lawsuits-virtual-power-plants-data-centers/",
       "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How courts are coping with a flood of AI-generated...",
       "publishedDate": "Thu, 04 Jun 2026 12:10:00 +0000",
@@ -409,15 +376,37 @@
       "language": "en"
     },
     {
-      "title": "Copilotエージェントとは？GitHub・Microsoft 365で使える自律型AIの特徴や料金、使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/copilot-agent/",
-      "description": "今注目を集めている「Copilotエージェント」は、これまでのAIとは少し異なります。 質問に答えるだけでなく、自ら計画を立て、ファイルを編集し、ターミナルを操作し、エラーを修正し続けるという自律的な動作が最大の特徴です [...]...",
-      "publishedDate": "Thu, 04 Jun 2026 11:08:00 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/CoPilot-Agent_2606-1024x576.webp",
-      "language": "ja"
+      "title": "How Endava is redesigning software delivery around AI agents",
+      "titleJa": "Endava は AI エージェントを中心にソフトウェア配信をどのように再設計しているか",
+      "link": "https://openai.com/index/endava-frontiers",
+      "description": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise....",
+      "publishedDate": "Thu, 04 Jun 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Dreaming: Better memory for a more helpful ChatGPT",
+      "titleJa": "夢: より役立つ ChatGPT のためのより良い記憶力",
+      "link": "https://openai.com/index/chatgpt-memory-dreaming",
+      "description": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations....",
+      "publishedDate": "Thu, 04 Jun 2026 09:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Biodefense in the Intelligence Age",
+      "titleJa": "インテリジェンス時代の生物防御",
+      "link": "https://openai.com/index/biodefense-in-the-intelligence-age",
+      "description": "An action plan for AI-powered biological resilience...",
+      "publishedDate": "Thu, 04 Jun 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "生成AIの使い方を初心者向けに解説！今日からできる業務効率化のテクニックも紹介",
@@ -440,6 +429,39 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Agentforce-1024x576.webp",
       "language": "ja"
+    },
+    {
+      "title": "Confidential submission of draft S-1 to the SEC",
+      "titleJa": "S-1 草案を秘密裏に SEC に提出",
+      "link": "https://openai.com/index/openai-submits-confidential-s-1",
+      "description": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action....",
+      "publishedDate": "Mon, 08 Jun 2026 14:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The Download: how the World Cup ball will fly and OpenAI’s “super app”",
+      "titleJa": "ダウンロード: ワールドカップのボールの飛び方とOpenAIの「スーパーアプリ」",
+      "link": "https://www.technologyreview.com/2026/06/08/1138485/the-download-world-cup-ball-openai-super-app/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Why this year’s World Cup ball may not fly as far ...",
+      "publishedDate": "Mon, 08 Jun 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/Hoeckel-1-final-edited.webp",
+      "language": "en"
+    },
+    {
+      "title": "Why this year’s World Cup ball may not fly as far",
+      "titleJa": "今年のワールドカップのボールがそれほど遠くに飛ばない可能性がある理由",
+      "link": "https://www.technologyreview.com/2026/06/08/1138470/why-this-years-world-cup-ball-may-not-fly-as-far/",
+      "description": "Much is new about this month’s upcoming FIFA World Cup tournament, which will be held in the US, Canada, and Mexico. It hosts more teams than ever before. It’s the first to occur in three different ho...",
+      "publishedDate": "Mon, 08 Jun 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/D2WC9Y-Jabulani.jpg?w=2031",
+      "language": "en"
     },
     {
       "title": "ラグザス、「企業のAI活用格差調査」結果発表。大企業の導入率64.7%に対し中小は23.7%で約2.7倍の差",
@@ -497,26 +519,15 @@
       "language": "ja"
     },
     {
-      "title": "Claude小説執筆の使い方とコツ｜添削・二次創作・長編まで解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-novel-trick/",
-      "description": "「AIで小説を書いてみたいけど、どう指示すればいいかわからない」「Claudeが小説に向いていると聞いたけど、具体的に何が違うの？」そんな疑問を持つ方に向けて、この記事ではClaudeで小説を書くためのコツ・プロンプト例 [...] The post Claude小説執筆の使い方とコツ｜添削・二次創作・長編まで解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 08 Jun 2026 02:15:04 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-novel_ic.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Claude無料版でできることと制限｜有料プランとの違いを徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-free-plan/",
-      "description": "Claude無料版は、Anthropic社が提供する高性能な生成AIアシスタントを無料で体験できるサービスです。この記事では、登録方法から具体的な活用法、制限の仕組み、有料版との違いまで徹底的に解説します。 この記事を読 [...] The post Claude無料版でできることと制限｜有料プランとの違いを徹底解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 08 Jun 2026 01:56:31 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claudefreemain.png",
-      "language": "ja"
+      "title": "Built to benefit everyone: our plan",
+      "titleJa": "すべての人に利益をもたらすように構築: 私たちの計画",
+      "link": "https://openai.com/index/built-to-benefit-everyone-our-plan",
+      "description": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone....",
+      "publishedDate": "Mon, 08 Jun 2026 01:30:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "【Magenta RealTime 2】MacBookで演奏できるリアルタイムAI音楽モデルを徹底解説！",
@@ -541,14 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "トラスコ中山と富士通が人事異動案の提案アプリを構築。AIと数理最適化モデル活用で工数を約98％削減",
+      "title": "Cloudflare、従業員やアプリごとにAIの利用上限額を設定できるCloudflare AI Gatewayの新機能を発表",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/trusco-fujitsu-ai-hr/",
-      "description": "トラスコ中山と富士通が、人事異動の意思決定プロセスを高速化するアプリを構築しました。AIと数理最適化モデルの活用で、人事異動案作成にかかる工数を約98％削減しています。 このニュースのポイント トラスコ中山と富士通が、人 [...] The post トラスコ中山と富士通が人事異動案の提案アプリを構築。AIと数理最適化モデル活用で工数を約98％削減 first appeared on AIポータル...",
-      "publishedDate": "Fri, 05 Jun 2026 08:08:37 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/trusco-fujitsu-ai-hr-eye.png",
+      "link": "https://www.publickey1.jp/blog/26/cloudflareaicloudflare_ai_gateway.html",
+      "description": "Cloudflareは、同社が提供するサービス「Cloudflare AI Gateway」の新機能として、全社でAIベンダのAPIキーを共有して使用していても、従業員やアプリごとに毎月のAIの利用料の上限額を設定できる[新機能を発表しまし......",
+      "publishedDate": "2026-06-09T15:55:18Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/zIK0rSP9.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/HI8FcbNXUAAOIFc.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Docker専用のAIエージェント「Gordon」が正式リリース。Dockerについて何でも答えてくれてエラーも修正してくれる。無料アカウントでも利用可能",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/dockeraigordondocker.html",
-      "description": "Docker社は、Docker DesktopとDocker CLIの新機能として、Dockerに関する質問への回答やベストプラクティスの提案、エラーの修正対応などを行ってくれるAIエージェント「Gordon」が正式版になったと発表しました......",
-      "publishedDate": "2026-05-26T15:40:27Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/gordon-ga03.png",
       "language": "ja"
     }
   ]
