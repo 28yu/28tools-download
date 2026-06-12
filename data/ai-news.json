@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T05:49:50.854113",
+  "lastUpdated": "2026-06-12T05:50:47.802135",
   "articles": [
     {
       "title": "Reachy Mini goes fully local",
@@ -156,17 +156,6 @@
       "language": "ja"
     },
     {
-      "title": "SBI、日本の金融グループ初となるAnthropicとの共同AIトランスフォーメーション推進に合意",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sbi-anthropic-ax-claude/",
-      "description": "SBIホールディングスは、日本の金融グループとして初めて、Anthropicと「Claude」を活用した全社的なAIトランスフォーメーション（AX）の推進に合意しました。 このニュースのポイント SBI、日本の金融グルー [...] The post SBI、日本の金融グループ初となるAnthropicとの共同AIトランスフォーメーション推進に合意 first appeared on AIポータル...",
-      "publishedDate": "Wed, 10 Jun 2026 08:56:19 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/sbianthropicax.png",
-      "language": "ja"
-    },
-    {
       "title": "【Claude Fable 5】Mythos級の性能を一般公開！Anthropic史上最強モデルの特徴・使い方・料金を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/claude-fable-5/",
@@ -178,44 +167,11 @@
       "language": "ja"
     },
     {
-      "title": "「Claudeがすぐ制限にかかる…」原因と無料でできる回避策・解除時間を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-limit-measures/",
-      "description": "Claudeを使っていると「またすぐ制限がかかった」「思ったより少ない回数で止まってしまう」と感じることがあるかもしれません。本記事では、制限がかかる仕組みと原因、無料でできる回避策、解除までの目安時間をまとめて解説しま [...] The post 「Claudeがすぐ制限にかかる…」原因と無料でできる回避策・解除時間を解説 first appeared on AIポータルメディアAIsmile...",
-      "publishedDate": "Wed, 10 Jun 2026 01:12:39 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claudelimitmeasures.png",
-      "language": "ja"
-    },
-    {
-      "title": "Claude CodeとClaudeの違いを解説｜用途・機能・料金を徹底比較",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-code-difference/",
-      "description": "Anthropicが提供するClaudeには複数のサービスがあり、それぞれ異なる使い方や役割を担っています。 この記事では、チャット型のClaudeとコード生成AIのClaude Code、そしてタスク自動化のCowor [...] The post Claude CodeとClaudeの違いを解説｜用途・機能・料金を徹底比較 first appeared on AIポータルメディアAIsmile...",
-      "publishedDate": "Wed, 10 Jun 2026 00:59:47 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claudecodedifference.png",
-      "language": "ja"
-    },
-    {
       "title": "From data to decisions: how LSEG is scaling trusted AI",
       "titleJa": "データから意思決定まで: LSEG が信頼できる AI をどのように拡張するか",
       "link": "https://openai.com/index/lseg",
       "description": "See how LSEG uses OpenAI to scale trusted AI across its global business, accelerating insights, shrinking release cycles, and empowering 4,000 employees....",
       "publishedDate": "Wed, 10 Jun 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Introducing new capabilities to GPT-Rosalind",
-      "titleJa": "GPT-Rosalind への新機能の導入",
-      "link": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
-      "description": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities....",
-      "publishedDate": "Wed, 03 Jun 2026 13:15:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -241,17 +197,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots.png",
-      "language": "en"
-    },
-    {
-      "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
-      "titleJa": "Wasmer が Codex を使用してエッジ用の Node.js ランタイムを構築した方法",
-      "link": "https://openai.com/index/wasmer",
-      "description": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months....",
-      "publishedDate": "Wed, 03 Jun 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -296,28 +241,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SundarKeynote-hero.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Gemini 3.5: frontier intelligence with action",
-      "titleJa": "Gemini 3.5: 行動を伴うフロンティアインテリジェンス",
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
-      "description": "Gemini 3.5 text and multi-colored star icon on an abstract blue background....",
-      "publishedDate": "Tue, 19 May 2026 17:45:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-5__keyword__blog-heade.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech",
-      "titleJa": "音声エージェントはバイリンガルの顧客に対応できますか?コード交換音声に関するフロンティア ASR のベンチマーク",
-      "link": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
-      "description": "...",
-      "publishedDate": "Tue, 09 Jun 2026 19:38:28 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/code-switching.png",
       "language": "en"
     },
     {
@@ -398,28 +321,6 @@
       "language": "en"
     },
     {
-      "title": "Five things you need to know about AI",
-      "titleJa": "AI について知っておくべき 5 つのこと",
-      "link": "https://www.technologyreview.com/2026/06/09/1138582/five-things-you-need-to-know-about-ai/",
-      "description": "At SXSW London last week I gave a talk called “Five things you need to know about AI,” in which I shared what I think are the biggest themes in AI right now. I pulled a few things from our first AI10 ...",
-      "publishedDate": "Tue, 09 Jun 2026 09:16:45 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/5-things-a.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Anthropic、サイバーセキュリティプロジェクトの初期結果を公開。「Claude Mythos Preview」で1万件以上の重大な脆弱性を発見",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/anthropic-claude-mythos-preview/",
-      "description": "Anthropicは、サイバーセキュリティプロジェクト「Project Glasswing」の初期結果を発表しました。AIモデル「Claude Mythos Preview」を活用し、世界の重要なソフトウェアで1万件以上 [...] The post Anthropic、サイバーセキュリティプロジェクトの初期結果を公開。「Claude Mythos Preview」で1万件以上の重大な脆弱性を発見...",
-      "publishedDate": "Tue, 09 Jun 2026 08:20:49 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/project-glasswing.png",
-      "language": "ja"
-    },
-    {
       "title": "AIエージェントの作り方・自作方法を徹底解説！初心者でもできるツール選びから運用まで紹介",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/how-to-create-an-ai-agent/",
@@ -453,17 +354,6 @@
       "language": "ja"
     },
     {
-      "title": "生成AIでホワイトペーパー制作はここまで変わる！具体的な作成手順をわかりやすく解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/ai-generated-white-paper/",
-      "description": "ホワイトペーパーの作成には、構成から執筆・デザインまで最短でも1週間以上かかるのが一般的でした。しかし生成AIを活用すれば、その工程をなんと数時間〜数日に短縮できます。 この記事では、ChatGPTを使ったホワイトペーパ [...]...",
-      "publishedDate": "Tue, 09 Jun 2026 03:25:27 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-generated-white-paper_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Industrial policy for the Intelligence Age",
       "titleJa": "インテリジェンス時代の産業政策",
       "link": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
@@ -484,6 +374,83 @@
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/github-ci-hf-jobs/thumbnail.gif",
       "language": "en"
+    },
+    {
+      "title": "Holo3.1: Fast & Local Computer Use Agents",
+      "titleJa": "Holo3.1: 高速かつローカルなコンピューター使用エージェント",
+      "link": "https://huggingface.co/blog/Hcompany/holo31",
+      "description": "...",
+      "publishedDate": "Tue, 02 Jun 2026 14:13:23 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Hcompany/holo31.png",
+      "language": "en"
+    },
+    {
+      "title": "Catch up on 12 major I/O 2026 moments",
+      "titleJa": "2026 年の 12 の主要な I/O の瞬間をキャッチアップ",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+      "description": "The colorful I/O logo against a black background, surrounded by stills from the I/O keynote...",
+      "publishedDate": "Thu, 28 May 2026 15:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
+      "titleJa": "バージニア州における当社の新たなコミュニティへの投資は、地元の雇用をサポートし、エネルギーの手頃な価格を拡大します。",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
+      "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
+      "publishedDate": "Thu, 11 Jun 2026 20:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "The Download: soccer’s data renaissance and China’s big nuclear plans",
+      "titleJa": "ダウンロード: サッカーのデータ ルネサンスと中国の大規模な核計画",
+      "link": "https://www.technologyreview.com/2026/06/11/1138809/the-download-soccer-football-data-analytics-china-nuclear-power/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Inside soccer’s data renaissance Imagine tuning in...",
+      "publishedDate": "Thu, 11 Jun 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2022/02/MA22_SpaceTourism_final.jpg?fit=2128,1196",
+      "language": "en"
+    },
+    {
+      "title": "Google DeepMind is worried about what happens when millions of agents start to interact",
+      "titleJa": "Google DeepMind は、何百万ものエージェントがやり取りを始めたときに何が起こるかを懸念しています",
+      "link": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
+      "description": "Google DeepMind is funding research into the potential dangers of situations where millions of different AI agents interact with each other online. According to Rohin Shah, who directs the company’s A...",
+      "publishedDate": "Thu, 11 Jun 2026 11:00:45 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/corralling-agents.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "総務AIエージェントとは？定型業務を自動化するメリットから導入手順・注意点まで徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/general-affairs-ai-agent/",
+      "description": "総務部門は、問い合わせ対応や書類作成に多くの時間を取られがちです。総務AIエージェントを活用すればこれらをAIが代行してくれるため、担当者の負担を減らせます。とはいえ、株式会社Leachの「中小企業AI導入実態調査202 [...]...",
+      "publishedDate": "Thu, 11 Jun 2026 08:33:06 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/General-Affairs-AI-Agent_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "LINEヤフー、「Agent i」開発加速に向けたタスクフォースを拡大。第2弾は報奨金の総額5,000万円規模",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/lineyahoo-agenti-taskforce-2phase/",
+      "description": "LINEヤフーは、AIエージェント「Agent i」の開発加速に向けた全社的なタスクフォースを拡大しています。第2弾では報奨金を総額5,000万円規模とし、新たなプロジェクトの創出を目指します。 このニュースのポイント [...] The post LINEヤフー、「Agent i」開発加速に向けたタスクフォースを拡大。第2弾は報奨金の総額5,000万円規模 first appeared on A...",
+      "publishedDate": "Thu, 11 Jun 2026 08:11:18 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/lineyahooeye2.png",
+      "language": "ja"
     },
     {
       "title": "ChatGPTのオプトアウトとは？学習させない設定方法と企業の注意点を徹底解説",
@@ -541,14 +508,47 @@
       "language": "ja"
     },
     {
-      "title": "生成AIの使い方を初心者向けに解説！今日からできる業務効率化のテクニックも紹介",
+      "title": "Claude Fable 5とは？性能・料金・使い方やMythos 5との違いを解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/how-to-use-generative-ai-for-beginners/",
-      "description": "「生成AIって便利そうだけど、何から始めればいいかわからない…」と感じていませんか？ 実は、生成AIは、専門知識がなくてもメール作成や要約、アイデア出しなどから気軽に使い始められるツールです。 この記事では、生成AIの基 [...]...",
-      "publishedDate": "Sun, 07 Jun 2026 12:30:40 +0000",
+      "link": "https://aismiley.co.jp/ai_news/claude-fable-5/",
+      "description": "Claude Fable 5は、Anthropicが2026年6月9日に発表した最上位AIモデルです。これまで一部組織に限定されていた「Mythosクラス」の能力を、初めて一般公開した点で大きな注目を集めています。 一方 [...] The post Claude Fable 5とは？性能・料金・使い方やMythos 5との違いを解説 first appeared on AIポータルメディアAIs...",
+      "publishedDate": "Fri, 12 Jun 2026 03:06:11 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-fable-5_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claudeでスライド作成はできる？作成方法やプロンプトを紹介",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-slide-prompt-powerpoint/",
+      "description": "プレゼン資料の作成に時間がかかりすぎて、本来の業務に集中できないと悩んでいませんか。Claudeを活用すれば、スライドの構成案作成からPowerPointファイルの出力まで、資料作成の工程を大幅に効率化できます。 この記 [...] The post Claudeでスライド作成はできる？作成方法やプロンプトを紹介 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 12 Jun 2026 01:53:53 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-slide_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Code入門ガイド｜インストールから基本操作・活用方法まで解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-code-introduction/",
+      "description": "AIとの対話でコードを書く時代が本格的に始まりました。Claude Codeは、自然な会話でプログラミングができる新しいタイプの開発支援ツールです。この記事を読むことで、次のようなベネフィットが得られます。 インストール [...] The post Claude Code入門ガイド｜インストールから基本操作・活用方法まで解説 first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Fri, 12 Jun 2026 01:27:19 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-code-Introduction_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【DiffusionGemma】テキスト生成が4倍速に！Googleの拡散型オープンモデルの仕組み・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/diffusiongemma/",
+      "description": "2026年6月11日、Google DeepMindはテキスト拡散ベースの実験的オープンモデル「DiffusionGemma」を公開しました！ トークンを1つずつ生成する従来のLLMとは根本的に異なり、256トークンのブ [...]...",
+      "publishedDate": "Fri, 12 Jun 2026 00:19:33 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/How-to-use-generative-AI-for-beginners_2606-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_DiffusionGemma-1024x576.webp",
       "language": "ja"
     },
     {
