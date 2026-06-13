@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T02:41:53.689028",
+  "lastUpdated": "2026-06-13T02:34:22.572674",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -122,6 +122,16 @@
       "language": "ja"
     },
     {
+      "title": "【2026年版】建設業許可の検索方法を解説｜国土交通省で業者を調べる手順と検索できない原因",
+      "link": "https://news.build-app.jp/article/40918/",
+      "description": "建設業者へ工事を依頼するときや、下請業者を選定するときに「この会社は本当に建設業許可を持っているのだろうか」と不安になることは少なくありませ......",
+      "publishedDate": "Thu, 11 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/54131863d7d341ebcd84561a5ce068b0-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "The buildingSMART Implementers Assembly, February 2026 Event Report",
       "link": "https://www.buildingsmart.org/the-buildingsmart-implementers-assembly-february-2026-event-report/",
       "description": "The latest buildingSMART Implementers Assembly, hosted by Bentley in their Exton (PA) office, brought together the buildingSMART implementers community for two days of focused discussion and practical...",
@@ -149,16 +159,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/03/bulldozer_1200x630-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "「空気からCO2を回収して使う」建物へ",
-      "link": "https://news.build-app.jp/article/40795/",
-      "description": "Carbon Xtract 株式会社（以下「Carbon Xtract」）は、このたび清水建設株式会社（以下「清水建設」）および双日株式会社......",
-      "publishedDate": "Sun, 07 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/4sAi0GiPB9jj1KO1658206702_1658206726-130x82.jpg",
       "language": "ja"
     },
     {
