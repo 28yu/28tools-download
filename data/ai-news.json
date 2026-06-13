@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T05:50:47.802135",
+  "lastUpdated": "2026-06-13T05:22:28.311453",
   "articles": [
     {
       "title": "Reachy Mini goes fully local",
@@ -10,17 +10,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
-      "titleJa": "ハブ バケットを使用した 1 兆個のパラメータの送信: TRL でのデルタ ウェイト同期",
-      "link": "https://huggingface.co/blog/delta-weight-sync",
-      "description": "...",
-      "publishedDate": "Wed, 27 May 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
       "language": "en"
     },
     {
@@ -123,39 +112,6 @@
       "language": "ja"
     },
     {
-      "title": "Anthropic、一般向けMythos級AIモデル「Claude Fable 5」、サイバー防衛向け「Claude Mythos 5」発表",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/anthropic-claude-fable-mythos-5/",
-      "description": "Anthropicは、一般向けに安全性を改良したMythosクラスのAIモデル「Claude Fable 5」を発表しました。あわせて、サイバー防衛などの特定用途向けモデル「Claude Mythos 5」も公開していま [...] The post Anthropic、一般向けMythos級AIモデル「Claude Fable 5」、サイバー防衛向け「Claude Mythos 5」発表 fir...",
-      "publishedDate": "Wed, 10 Jun 2026 09:14:22 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/anthropiceye.png",
-      "language": "ja"
-    },
-    {
-      "title": "The “steroid olympics” were a circus—and a window into our culture",
-      "titleJa": "「ステロイドオリンピック」はサーカスであり、私たちの文化への窓でした",
-      "link": "https://www.technologyreview.com/2026/06/10/1138670/enhanced-games-doping-steroids-hormones-supplements-longevity/",
-      "description": "Testosterone. Methenolone. Nandrolone. Human growth hormone and EPO. Meldonium, modafinil, and mixed amphetamine salts. Clomiphene, anastrozole, levothyroxine, and liothyronine. Patches and capsules, ...",
-      "publishedDate": "Wed, 10 Jun 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/260524_TechnologyReview_EnhancedGames_205.jpg?w=1333",
-      "language": "en"
-    },
-    {
-      "title": "GMOメディアと大修館書店、教育機関向け学習支援サービス「カクコトAI」を共同開発",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gmo-taishukan-kakukoto_ai/",
-      "description": "GMOメディアは大修館書店と共同で、高等学校や教育機関向け学習支援AIサービス「カクコトAI」を開発しました。記述式問題や小論文の出題から採点、添削までをAIが支援し、生徒の「書く力」の育成と教員の採点業務負担軽減を目指 [...] The post GMOメディアと大修館書店、教育機関向け学習支援サービス「カクコトAI」を共同開発 first appeared on AIポータルメディアAIsm...",
-      "publishedDate": "Wed, 10 Jun 2026 08:56:50 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/GMO-Taishukan-kakukoto_ai.png",
-      "language": "ja"
-    },
-    {
       "title": "【Claude Fable 5】Mythos級の性能を一般公開！Anthropic史上最強モデルの特徴・使い方・料金を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/claude-fable-5/",
@@ -255,17 +211,6 @@
       "language": "en"
     },
     {
-      "title": "The Download: whole-body rejuvenation drugs and five things to know about AI",
-      "titleJa": "ダウンロード: 全身若返り薬と AI について知っておくべき 5 つのこと",
-      "link": "https://www.technologyreview.com/2026/06/09/1138604/the-download-anti-aging-drugs-ai-five-things-to-know/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. David Sinclair plans to test whole-body rejuvenati...",
-      "publishedDate": "Tue, 09 Jun 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2020/12/JF21_biomilq_Opener.jpeg?w=2921",
-      "language": "en"
-    },
-    {
       "title": "How engineers at Nextdoor use Codex to build without limits",
       "titleJa": "Nextdoor のエンジニアが Codex を使用して制限なく構築する方法",
       "link": "https://openai.com/index/nextdoor",
@@ -288,17 +233,6 @@
       "language": "en"
     },
     {
-      "title": "Learning to lead in a hybrid human-AI enterprise",
-      "titleJa": "人間と AI のハイブリッド企業でリーダーシップを発揮する方法を学ぶ",
-      "link": "https://www.technologyreview.com/2026/06/09/1137830/learning-to-lead-in-a-hybrid-human-ai-enterprise/",
-      "description": "As adoption of AI agents looks set to surge by as much as 300% in the next two years, leadership teams are carefully considering the implications of a hybrid human-AI workforce. Unlike existing enterp...",
-      "publishedDate": "Tue, 09 Jun 2026 10:20:06 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/MIT-Abstract-Thumbnail-3-_-V2.png",
-      "language": "en"
-    },
-    {
       "title": "What Codex unlocks for Notion",
       "titleJa": "Codex が Notion のロックを解除するもの",
       "link": "https://openai.com/index/notion",
@@ -310,17 +244,6 @@
       "language": "en"
     },
     {
-      "title": "David Sinclair plans to test whole-body rejuvenation drugs in the XPrize competition",
-      "titleJa": "デビッド・シンクレア氏はXPrizeコンテストで全身若返り薬のテストを計画している",
-      "link": "https://www.technologyreview.com/2026/06/09/1138545/david-sinclair-plans-to-test-whole-body-rejuvenation-drugs-in-the-xprize-competition/",
-      "description": "The outspoken longevity scientist David Sinclair has been predicting that one day, you’ll go to the doctor and get a prescription that will make you 10 years younger. Now MIT Technology Review has lea...",
-      "publishedDate": "Tue, 09 Jun 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/sinclar-pills-b.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "AIエージェントの作り方・自作方法を徹底解説！初心者でもできるツール選びから運用まで紹介",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/how-to-create-an-ai-agent/",
@@ -329,28 +252,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/How-to-create-an-AI-agent_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Kimi Workの使い方・特徴まとめ｜WebBridge・Agent Swarm・Cronで知識業務を自動化するAIエージェント",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/kimi-work/",
-      "description": "2026年、中国発のAIスタートアップMoonshot AIから、デスクトップ向けAIエージェント「Kimi Work」が登場しました。 今回登場した「Kimi Work」は、単なるチャットAIにとどまらず、ローカルファ [...]...",
-      "publishedDate": "Tue, 09 Jun 2026 05:57:41 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Kimi-Work-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【NotebookLM エージェント】Gemini 3.5搭載で自律リサーチAIに進化した新機能・使い方・料金を徹底解説！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/notebooklm-agent/",
-      "description": "Googleが2026年6月9日、AI搭載リサーチツール「NotebookLM」に過去最大級のアップデートを実施しました！ 今回の目玉は、チャットに搭載されたエージェント機能です。従来の「資料を読んで答えるツール」から「 [...]...",
-      "publishedDate": "Tue, 09 Jun 2026 05:48:23 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_NotebookLM-エージェント-1024x576.webp",
       "language": "ja"
     },
     {
@@ -410,7 +311,7 @@
     },
     {
       "title": "The Download: soccer’s data renaissance and China’s big nuclear plans",
-      "titleJa": "ダウンロード: サッカーのデータ ルネサンスと中国の大規模な核計画",
+      "titleJa": "ダウンロード: サッカーのデータ ルネッサンスと中国の大規模な核計画",
       "link": "https://www.technologyreview.com/2026/06/11/1138809/the-download-soccer-football-data-analytics-china-nuclear-power/",
       "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Inside soccer’s data renaissance Imagine tuning in...",
       "publishedDate": "Thu, 11 Jun 2026 12:10:00 +0000",
@@ -428,6 +329,39 @@
       "source": "MIT Technology Review",
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/corralling-agents.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Job titles of the future: Nature’s drug designer",
+      "titleJa": "将来の役職: Nature のドラッグデザイナー",
+      "link": "https://www.technologyreview.com/2026/06/11/1138502/job-titles-natures-drug-designer-tim-cernak/",
+      "description": "In 2018, after nearly two decades working in Big Pharma, chemist Tim Cernak was ready to put his skills to a new use.&#160; For Merck, he’d developed precision therapies for cancer, HIV, and diabetes ...",
+      "publishedDate": "Thu, 11 Jun 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/jobs-nature-drugs-thumb.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Inside soccer’s data renaissance",
+      "titleJa": "サッカーのデータ ルネッサンスの内部",
+      "link": "https://www.technologyreview.com/2026/06/11/1138506/inside-soccer-data-renaissance-jesse-davis/",
+      "description": "Imagine tuning in to the opening kickoff of a World Cup match and seeing a player intentionally send the ball all the way down the pitch and right out of bounds on the opponent’s end. Casual fans migh...",
+      "publishedDate": "Thu, 11 Jun 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/Israel_Jesse_Davis_final.jpg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "Why China is betting on big nuclear reactors",
+      "titleJa": "なぜ中国は大型原子炉に賭けるのか",
+      "link": "https://www.technologyreview.com/2026/06/11/1138789/china-big-nuclear-reactors/",
+      "description": "It’s a tale of two nuclear industries. In China, large reactors are coming together at a stunning pace. The country has nearly doubled its nuclear fleet since 2016, reaching nearly 60 gigawatts of tot...",
+      "publishedDate": "Thu, 11 Jun 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/AP25249306493046.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -505,6 +439,72 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claudecodetroubleshooting.png",
+      "language": "ja"
+    },
+    {
+      "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
+      "titleJa": "信頼できる AI エコシステムを確保するための欧州の取り組みを支援",
+      "link": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+      "description": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content....",
+      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "BBVA puts AI at the core of banking with OpenAI",
+      "titleJa": "BBVA は OpenAI を使用して AI を銀行業務の中核に据えます",
+      "link": "https://openai.com/index/bbva",
+      "description": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide....",
+      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Geminiのオプトアウトのやり方は？アクティビティをオフにして情報漏えいを防ぐ方法を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/gemini-opt-out/",
+      "description": "Geminiでは、「Gemini App アクティビティ」をオフにすることで、入力内容がAIモデル改善に利用される範囲を制限できます。とはいえ、「オプトアウトすると何が変わるの？」「設定すれば機密情報を入力しても大丈夫？ [...]...",
+      "publishedDate": "Fri, 12 Jun 2026 12:19:13 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Gemini-Opt-out_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Geminiアプリのアンインストール方法！iPhone・Android別の手順と削除できないときの対処法",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/uninstalling-officemini/",
+      "description": "Geminiは、Googleが提供しているAIアシスタントアプリです。Androidでは、Googleアシスタントの代替AIアシスタントとしてGeminiが案内・設定されるケースがあります。「勝手に入っていた」「削除ボタ [...]...",
+      "publishedDate": "Fri, 12 Jun 2026 11:50:14 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Uninstalling-Officemini_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "日立とGoogle Cloud、FDEによるフィジカルAIとセキュリティで協業拡大",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/hitachi-google_cloud-fde-physical_ai/",
+      "description": "株式会社日立製作所は、フィジカルAIの社会実装加速とAI型サイバー攻撃への対応強化に向け、Google Cloudとの戦略的アライアンスを拡大すると発表しました。 このニュースのポイント 日立とGoogle Cloudが [...] The post 日立とGoogle Cloud、FDEによるフィジカルAIとセキュリティで協業拡大 first appeared on AIポータルメディアAIsm...",
+      "publishedDate": "Fri, 12 Jun 2026 07:40:09 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/HITACHI-Google_Cloud-FDE-Physical_AI.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Apple、「Siri AI」を発表。会話能力向上に加え、画面認識やアプリ横断操作などに対応",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/apple-siri_ai-apple_intelligence/",
+      "description": "Appleは「Apple Intelligence」を基盤としたSiriの新バージョン「Siri AI」を発表しました。会話能力向上に加え、パーソナルコンテキストの理解や「オンスクリーン認識」の搭載、アプリ間の操作などに [...] The post Apple、「Siri AI」を発表。会話能力向上に加え、画面認識やアプリ横断操作などに対応 first appeared on AIポータルメディ...",
+      "publishedDate": "Fri, 12 Jun 2026 07:39:20 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/Apple-Intelligence-Siri-AI.png",
       "language": "ja"
     },
     {
