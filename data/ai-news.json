@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T05:22:28.311453",
+  "lastUpdated": "2026-06-14T05:50:58.858591",
   "articles": [
     {
       "title": "Reachy Mini goes fully local",
@@ -109,17 +109,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/developer-knowledge-api-mcp-server_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Claude Fable 5】Mythos級の性能を一般公開！Anthropic史上最強モデルの特徴・使い方・料金を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-fable-5/",
-      "description": "2026年6月10日、Anthropicは、Mythosクラスの生成AIモデルを一般ユーザー向けに安全な形で提供する、同社史上最も高性能なモデル「Claude Fable 5」を公開しました！ 2026年4月に発表された [...]...",
-      "publishedDate": "Wed, 10 Jun 2026 03:27:43 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Fable-5-1024x576.webp",
       "language": "ja"
     },
     {
@@ -244,17 +233,6 @@
       "language": "en"
     },
     {
-      "title": "AIエージェントの作り方・自作方法を徹底解説！初心者でもできるツール選びから運用まで紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/how-to-create-an-ai-agent/",
-      "description": "2025年以降、主要クラウド・SaaS各社がAIエージェント機能を拡充し注目が高まっています。 これまでのAI活用では、「毎回手動で指示を出さなければならない」「ツール間の連携が煩雑でヒューマンエラーが多い」「業務ごとに [...]...",
-      "publishedDate": "Tue, 09 Jun 2026 06:17:04 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/How-to-create-an-AI-agent_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Industrial policy for the Intelligence Age",
       "titleJa": "インテリジェンス時代の産業政策",
       "link": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
@@ -311,7 +289,7 @@
     },
     {
       "title": "The Download: soccer’s data renaissance and China’s big nuclear plans",
-      "titleJa": "ダウンロード: サッカーのデータ ルネッサンスと中国の大規模な核計画",
+      "titleJa": "ダウンロード: サッカーのデータ ルネサンスと中国の大規模な核計画",
       "link": "https://www.technologyreview.com/2026/06/11/1138809/the-download-soccer-football-data-analytics-china-nuclear-power/",
       "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Inside soccer’s data renaissance Imagine tuning in...",
       "publishedDate": "Thu, 11 Jun 2026 12:10:00 +0000",
@@ -443,7 +421,7 @@
     },
     {
       "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
-      "titleJa": "信頼できる AI エコシステムを確保するための欧州の取り組みを支援",
+      "titleJa": "信頼できる AI エコシステムを確保するためのヨーロッパの取り組みを支援",
       "link": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
       "description": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content....",
       "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
@@ -462,6 +440,28 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "Claudeのオプトアウトとは？学習させない設定手順と注意点を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/clautil-optout/",
+      "description": "Claudeには、入力した会話データをAIモデルの学習に利用させないための「オプトアウト」設定があります。業務でClaudeを利用する企業担当者や、個人情報を扱う方は設定内容を確認しておくことが重要です。 ただし、Cla [...]...",
+      "publishedDate": "Sat, 13 Jun 2026 15:05:36 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Clautil-Optout_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIでインフォグラフィックは作成可能！無料での作り方やおすすめAIツールをまとめて解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/generating-ai-infographics/",
+      "description": "生成AIを活用したデザイン制作が広がるなか、インフォグラフィックの作成にもAIを活用する企業や担当者が増えています。ChatGPTやClaudeなどの生成AIは、文章整理やコード生成、ビジュアル作成支援などに活用できます [...]...",
+      "publishedDate": "Sat, 13 Jun 2026 13:38:55 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Generating-AI-infographics_2606-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "Geminiのオプトアウトのやり方は？アクティビティをオフにして情報漏えいを防ぐ方法を解説",
