@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14T05:50:58.858591",
+  "lastUpdated": "2026-06-15T06:26:03.201296",
   "articles": [
     {
       "title": "Reachy Mini goes fully local",
@@ -10,6 +10,17 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
+      "titleJa": "ハブ バケットを使用した 1 兆個のパラメータの送信: TRL でのデルタ ウェイト同期",
+      "link": "https://huggingface.co/blog/delta-weight-sync",
+      "description": "...",
+      "publishedDate": "Wed, 27 May 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
       "language": "en"
     },
     {
@@ -68,17 +79,6 @@
       "language": "ja"
     },
     {
-      "title": "Gemini 3.5 Live Translateとは？リアルタイム音声翻訳AI・仕組み・活用事例・使い方まとめ",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gemini-3-5-live-translate/",
-      "description": "2026年6月、GoogleからGeminiシリーズの最新音声モデルが登場しました。 今回登場した「Gemini 3.5 Live Translate」は、70以上の言語でほぼリアルタイムの音声→音声翻訳を実現する最新の [...]...",
-      "publishedDate": "Wed, 10 Jun 2026 13:11:47 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-3.5-Live-Translate-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "The Download: the “steroid olympics” and a safer Mythos",
       "titleJa": "ダウンロード: 「ステロイドオリンピック」とより安全な神話",
       "link": "https://www.technologyreview.com/2026/06/10/1138739/the-download-steroid-olympics-enhanced-games-anthropic-mythos/",
@@ -99,17 +99,6 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "Developer Knowledge API・MCP Serverとは？Google公式ドキュメントをAI開発に活用する方法を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/developer-knowledge-api-mcp-server/",
-      "description": "AIを使った開発支援を社内で検討していると、「その回答は本当に最新なのか」「公式ドキュメントに基づいているのか」という不安が残りがちです。Google CloudやFirebase、Androidのように仕様更新が続くサ [...]...",
-      "publishedDate": "Wed, 10 Jun 2026 11:40:40 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/developer-knowledge-api-mcp-server_2606-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "From data to decisions: how LSEG is scaling trusted AI",
@@ -186,17 +175,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SundarKeynote-hero.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Introducing North Mini Code: Cohere’s First Model For Developers",
-      "titleJa": "North Mini コードの紹介: Cohere の最初の開発者向けモデル",
-      "link": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
-      "description": "...",
-      "publishedDate": "Tue, 09 Jun 2026 15:56:23 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/CohereLabs/introducing-north-mini-code.png",
       "language": "en"
     },
     {
@@ -289,7 +267,7 @@
     },
     {
       "title": "The Download: soccer’s data renaissance and China’s big nuclear plans",
-      "titleJa": "ダウンロード: サッカーのデータ ルネサンスと中国の大規模な核計画",
+      "titleJa": "ダウンロード: サッカーのデータ ルネッサンスと中国の大規模な核計画",
       "link": "https://www.technologyreview.com/2026/06/11/1138809/the-download-soccer-football-data-analytics-china-nuclear-power/",
       "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Inside soccer’s data renaissance Imagine tuning in...",
       "publishedDate": "Thu, 11 Jun 2026 12:10:00 +0000",
@@ -354,17 +332,6 @@
       "language": "ja"
     },
     {
-      "title": "LINEヤフー、「Agent i」開発加速に向けたタスクフォースを拡大。第2弾は報奨金の総額5,000万円規模",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/lineyahoo-agenti-taskforce-2phase/",
-      "description": "LINEヤフーは、AIエージェント「Agent i」の開発加速に向けた全社的なタスクフォースを拡大しています。第2弾では報奨金を総額5,000万円規模とし、新たなプロジェクトの創出を目指します。 このニュースのポイント [...] The post LINEヤフー、「Agent i」開発加速に向けたタスクフォースを拡大。第2弾は報奨金の総額5,000万円規模 first appeared on A...",
-      "publishedDate": "Thu, 11 Jun 2026 08:11:18 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/lineyahooeye2.png",
-      "language": "ja"
-    },
-    {
       "title": "ChatGPTのオプトアウトとは？学習させない設定方法と企業の注意点を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/chatgpt-opt-out/",
@@ -373,50 +340,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/ChatGPT-Opt-out_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "産業界を支えるAIソリューションが集結する２日間 「AI博覧会 Nagoya 2026」いよいよ開幕！",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-expo-nagoya-2026-finallyhappening/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026 年6月16日（火）・17日（水）の2日間、名古屋コンベンションホールにて「AI博覧会 Nagoya 2026」を開催します [...] The post 産業界を支えるAIソリューションが集結する２日間 「AI博覧会 Nagoya 2026」いよいよ開幕！ first appeared on AIポー...",
-      "publishedDate": "Thu, 11 Jun 2026 02:00:55 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ogp-1-1.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Claudeに学習させない設定方法と安全な使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-no-learn/",
-      "description": "「Claudeに入力した内容がAIの学習に使われているかもしれない」と気になりながら使っている方は多いはずです。 この記事では、Claudeのデータ学習の仕組みから、プランごとの初期設定の違い、具体的なオプトアウト手順、 [...] The post Claudeに学習させない設定方法と安全な使い方を徹底解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 11 Jun 2026 01:24:47 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-no-learn_ic.webp",
-      "language": "ja"
-    },
-    {
-      "title": "NEXCO中日本、侵入車両検知システム「Highway Ai-MONITOR®」を開発。高速道路における事故の未然防止を図る",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/nexco-highway-aimonitor-infrastructure/",
-      "description": "NEXCO中日本は、AIを活用して高速道路における工事規制内への侵入車両を検知するシステムの販売を開始しました。最大で約250m上流側から検知可能であり、作業員へ早期の注意喚起を行います。 このニュースのポイント NEX [...] The post NEXCO中日本、侵入車両検知システム「Highway Ai-MONITOR®」を開発。高速道路における事故の未然防止を図る first appea...",
-      "publishedDate": "Thu, 11 Jun 2026 01:22:32 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/nexcoi.png",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Codeの改行方法を解説｜環境別の設定とトラブル対処法",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-code-trouble-shooting/",
-      "description": "Claude Codeで複数行の指示を送ろうとしてEnterキーを押したら、途中で送信されてしまった経験はありませんか。 本記事では、設定不要ですぐ使える方法から、ターミナル別の設定手順まで改行する方法を4つ解説します。 [...] The post Claude Codeの改行方法を解説｜環境別の設定とトラブル対処法 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 11 Jun 2026 01:08:12 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claudecodetroubleshooting.png",
       "language": "ja"
     },
     {
@@ -442,6 +365,28 @@
       "language": "en"
     },
     {
+      "title": "Fusion APIとは？複数AIモデルを組み合わせてフロンティア性能を超えるOpenRouterの新機能を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/fusion-api/",
+      "description": "2026年6月、OpenRouterから新たなAIモデルが発表されました。 今回登場した「Fusion API」は、複数のAIモデルをパネル形式で並列実行し、ジャッジモデルが各回答を統合分析することで単一モデルの限界を超 [...]...",
+      "publishedDate": "Sun, 14 Jun 2026 16:38:37 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Fusion-API-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Stable Diffusionプロンプト（呪文）大全！コピペOK＆高品質画像を作るコツの完全保存版",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/stable-diffusion-spell/",
+      "description": "AI美少女を生成しようとしても、なかなか思ったとおりのクオリティにならない...という問題に直面していませんか？Stable Diffusionで生成する画像のクオリティを上げるには、使用するプロンプト（呪文）や [...]...",
+      "publishedDate": "Sun, 14 Jun 2026 16:08:18 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/stable-diffusion-spell_2604-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "Claudeのオプトアウトとは？学習させない設定手順と注意点を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/clautil-optout/",
@@ -461,6 +406,61 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Generating-AI-infographics_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "アイスマイリー、7/1（水）から3日間、第38回 ものづくり ワールド [東京]内、「製造業DX展」にブース出展",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/monodukuri-world-tokyo-no38/",
+      "description": "AIsmileyとAIsmiley Communityは、2026年7月1日（水）～7月3日（金）に東京ビッグサイトにて開催の第38回 ものづくり ワールド [東京]内、「製造業DX展」にブースを出展します。 会場では、 [...] The post アイスマイリー、7/1（水）から3日間、第38回 ものづくり ワールド [東京]内、「製造業DX展」にブース出展 first appeared on...",
+      "publishedDate": "Mon, 15 Jun 2026 06:00:37 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/mdwtokyo.png",
+      "language": "ja"
+    },
+    {
+      "title": "「営業部門向けAI活用ガイド」を公開！営業×AIの活用法から業務別ユースケース、導入時のポイントまでを網羅",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/sales-ai-guide/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、営業活動の効率化と売上最大化を支援する「営業部門向けAI活用ガイド」を、2026年6月15日（月）に公開しました。 今すぐ無料で資料 [...] The post 「営業部門向けAI活用ガイド」を公開！営業×AIの活用法から業務別ユースケース、導入時のポイントまでを網羅 first appeared on AI...",
+      "publishedDate": "Mon, 15 Jun 2026 03:00:08 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/sales-ai-guide_01.png",
+      "language": "ja"
+    },
+    {
+      "title": "Claudeの出力を劇的に高めるプロンプトの作成方法！コピペで使える実践集も",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-prompt/",
+      "description": "Claudeへの指示（プロンプト）の書き方を工夫するだけで、得られる回答の質は大きく変わります。 この記事では、Claudeから高品質な出力を引き出すための基本ルールと、ビジネス現場ですぐに使えるプロンプトのテンプレート [...] The post Claudeの出力を劇的に高めるプロンプトの作成方法！コピペで使える実践集も first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Mon, 15 Jun 2026 01:39:43 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-prompt_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新】Claudeのエラー原因とすぐ試せる対処法完全ガイド",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-error/",
+      "description": "「さっきまで使えていたのに、突然Claudeがエラーを出して動かない」。そんな経験をした方に向けて、この記事ではエラーの種類ごとの原因と、今すぐ試せる具体的な対処法について解説します。 ブラウザの設定変更から時間帯の選び [...] The post 【2026年最新】Claudeのエラー原因とすぐ試せる対処法完全ガイド first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 15 Jun 2026 01:37:48 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-error_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AIを「動く武器」に変える。「寺子屋WinStory研究会」の集大成、Partner AI Demo選手権決勝戦レポート",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/oracle-terakoya-winstory-report-2026/",
+      "description": "日本オラクル株式会社が主催する「Partner AI Demo選手権」の決勝戦が2026年4月に開催されました。本企画は、「Oracle Cloud Infrastructure（OCI）、 Oracle AI Data [...] The post AIを「動く武器」に変える。「寺子屋WinStory研究会」の集大成、Partner AI Demo選手権決勝戦レポート first appeare...",
+      "publishedDate": "Mon, 15 Jun 2026 01:00:02 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/oracle-main-2.png",
       "language": "ja"
     },
     {
@@ -549,6 +549,28 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_DiffusionGemma-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "WASI 0.3が正式版に。WebAssembly Componentの非同期処理が共通基盤に",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/wasi_03webassembly_component.html",
+      "description": "WebAssembly関連仕様の標準化を行っているByteCode Allianceは、WebAssemblyを基盤としたコンポーネントモデルの最新仕様「WASI 0.3」（WebAssembly System Interface Prev......",
+      "publishedDate": "2026-06-14T15:24:47Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/wasi-p3-ga01.png",
+      "language": "ja"
+    },
+    {
+      "title": "2027年までにAIエージェントでコーディングを行うチームの65％が、IDEが必要不可欠だとは考えなくなる。ガートナーの予想",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/2027ai65ide.html",
+      "description": "調査会社のガートナーは、エンタープライズ市場におけるAIコーディングエージェント市場が、拡大と競争再編の新たな段階に突入したとし、それに関する予想を発表しました。 AIによる支援を用いたコーディング作業は、当初はVisual Studio ......",
+      "publishedDate": "2026-06-14T15:23:43Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/gartner-aiagent-65ide.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/alloydb-new-failover-in30s.png",
-      "language": "ja"
-    },
-    {
-      "title": "AWS、他クラウドと500Mbpsまでの接続が無料に。AWS  Interconnect - multicloudに無料枠が登場",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/aws500mbpsaws_interconnect_-_multicloud.html",
-      "description": "Amazon Web Services（AWS）は、Google CloudやMicrosoft Azureなどのクラウドと閉域網による高速な接続を実現する新サービス「AWS Interconnect - multicloud」において、5......",
-      "publishedDate": "2026-05-31T15:24:56Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/aws-multicloud-freetier01.png",
-      "language": "ja"
-    },
-    {
-      "title": "AWS、インストール不要でWebブラウザから使えるコーディングAIエージェント「Kiro Web」発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/awswebaikiro_web.html",
-      "description": "Amazon Web Services（AWS）は、Webブラウザから使えてインストール不要のコーディングAIエージェント「Kiro Web」をプレビュー公開しました。 Introducing Kiro Web, now in previe......",
-      "publishedDate": "2026-05-27T15:56:26Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/kiroweb-ann.jpg",
       "language": "ja"
     }
   ]
