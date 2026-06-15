@@ -1,6 +1,16 @@
 {
-  "lastUpdated": "2026-06-14T02:45:57.127729",
+  "lastUpdated": "2026-06-15T02:50:35.426149",
   "articles": [
+    {
+      "title": "buildingSMART International announces that Céline Bent has left the organisation",
+      "link": "https://www.buildingsmart.org/buildingsmart-international-announces-that-celine-bent-has-left-the-organisation/",
+      "description": "London, U.K. – January 28th, 2026 — buildingSMART International (bSI) announces that Céline Bent has left the organisation. bSI commented that “it is with our regrets to announce that Céline has... Th...",
+      "publishedDate": "Wed, 28 Jan 2026 10:40:44 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
     {
       "title": "AIが商社の価値を再定義する～住友商事DAIS戦略の正体",
       "link": "https://axconstdx.com/2026/05/28/ai%e3%81%8c%e5%95%86%e7%a4%be%e3%81%ae%e4%be%a1%e5%80%a4%e3%82%92%e5%86%8d%e5%ae%9a%e7%be%a9%e3%81%99%e3%82%8b%ef%bd%9e%e4%bd%8f%e5%8f%8b%e5%95%86%e4%ba%8bdais%e6%88%a6%e7%95%a5%e3%81%ae%e6%ad%a3/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e3%2581%258c%25e5%2595%2586%25e7%25a4%25be%25e3%2581%25ae%25e4%25be%25a1%25e5%2580%25a4%25e3%2582%2592%25e5%2586%258d%25e5%25ae%259a%25e7%25be%25a9%25e3%2581%2599%25e3%2582%258b%25ef%25bd%259e%25e4%25bd%258f%25e5%258f%258b%25e5%2595%2586%25e4%25ba%258bdais%25e6%2588%25a6%25e7%2595%25a5%25e3%2581%25ae%25e6%25ad%25a3",
@@ -32,14 +42,14 @@
       "language": "ja"
     },
     {
-      "title": "トラス、Revitアドイン機能の『トラスコネクト』をリリース",
-      "link": "https://news.build-app.jp/article/40861/",
-      "description": "概要 モデル内に点在している建材データを、Webで集約管理 詳細を見る 企業情報 社名 ：株式会社トラス 所在地 ：......",
-      "publishedDate": "Tue, 09 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/08/ht1lVpcka7yWzDz1661358045_1661358063-130x82.jpg",
-      "language": "ja"
+      "title": "The first buildingSMART openBIM Hackathon in Porto is complete",
+      "link": "https://www.buildingsmart.org/the-first-buildingsmart-openbim-hackathon-in-porto-is-complete/",
+      "description": "The first buildingSMART openBIM Hackathon is complete - and it delivered more than expected. Over 50 hours, 47 participants across 9 teams worked under real pressure to build solutions that work in pr...",
+      "publishedDate": "Tue, 14 Apr 2026 15:05:06 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第四回)｜深堀り取材【毎月3回更新】",
@@ -62,14 +72,44 @@
       "language": "ja"
     },
     {
-      "title": "建設現場のCO2算定サービス「TansoMiru」安藤ハザマの現場で集計作業を約90％削減",
-      "link": "https://news.build-app.jp/article/40876/",
-      "description": "株式会社リバスタ（本社：東京都江東区、代表取締役：高橋巧、以下 リバスタ）は、株式会社安藤・間（本社：東京都港区、代表取締役社長：国谷一彦、......",
-      "publishedDate": "Thu, 11 Jun 2026 22:00:00 +0000",
+      "title": "トラス、Revitアドイン機能の『トラスコネクト』をリリース",
+      "link": "https://news.build-app.jp/article/40861/",
+      "description": "概要 モデル内に点在している建材データを、Webで集約管理 詳細を見る 企業情報 社名 ：株式会社トラス 所在地 ：......",
+      "publishedDate": "Tue, 09 Jun 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/10/AdobeStock_697706193-130x63.jpeg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/08/ht1lVpcka7yWzDz1661358045_1661358063-130x82.jpg",
       "language": "ja"
+    },
+    {
+      "title": "buildingSMART International Appoints Aidan Mercer as Managing Director",
+      "link": "https://www.buildingsmart.org/buildingsmart-international-appoints-aidan-mercer-as-managing-director/",
+      "description": "London, U.K. – April 30th, 2026 — The Board of buildingSMART International (bSI) is pleased to announce the appointment of Aidan Mercer as Managing Director (MD), effective 1 May 2026.... The post bui...",
+      "publishedDate": "Thu, 30 Apr 2026 09:56:12 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
+      "link": "https://www.buildingsmart.org/industry-insights-embracing-challenges-and-opportunities-of-using-openbim-for-increasing-efficiency-in-the-construction-process/",
+      "description": "Read about Construction Industry leaders perspective on embracing challenges and opportunities of using openBIM for increasing efficiency: Link The post Industry Insights “Embracing Challenges and Opp...",
+      "publishedDate": "Thu, 16 Apr 2026 12:30:14 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "We are looking for feedback on your experience with IDS",
+      "link": "https://www.buildingsmart.org/we-are-looking-for-feedback-on-your-experience-with-ids/",
+      "description": "Information Delivery Specification (IDS) marks its second anniversary this June, and we want to hear from the community - especially IDS users and implementers. Share your feedback on what works... Th...",
+      "publishedDate": "Thu, 14 May 2026 10:13:46 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "【2026年版】建設業許可の検索方法を解説｜国土交通省で業者を調べる手順と検索できない原因",
@@ -82,6 +122,26 @@
       "language": "ja"
     },
     {
+      "title": "建設現場のCO2算定サービス「TansoMiru」安藤ハザマの現場で集計作業を約90％削減",
+      "link": "https://news.build-app.jp/article/40876/",
+      "description": "株式会社リバスタ（本社：東京都江東区、代表取締役：高橋巧、以下 リバスタ）は、株式会社安藤・間（本社：東京都港区、代表取締役社長：国谷一彦、......",
+      "publishedDate": "Thu, 11 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/10/AdobeStock_697706193-130x63.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "The buildingSMART Implementers Assembly, February 2026 Event Report",
+      "link": "https://www.buildingsmart.org/the-buildingsmart-implementers-assembly-february-2026-event-report/",
+      "description": "The latest buildingSMART Implementers Assembly, hosted by Bentley in their Exton (PA) office, brought together the buildingSMART implementers community for two days of focused discussion and practical...",
+      "publishedDate": "Thu, 09 Apr 2026 11:11:07 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "生成AIでソースコードはなくなるのか？ビジネスと雇用が変わる3つの衝撃",
       "link": "https://axconstdx.com/2026/05/31/%e7%94%9f%e6%88%90ai%e3%81%a7%e3%82%bd%e3%83%bc%e3%82%b9%e3%82%b3%e3%83%bc%e3%83%89%e3%81%af%e3%81%aa%e3%81%8f%e3%81%aa%e3%82%8b%e3%81%ae%e3%81%8b%ef%bc%9f%e3%83%93%e3%82%b8%e3%83%8d%e3%82%b9%e3%81%a8/?utm_source=rss&utm_medium=rss&utm_campaign=%25e7%2594%259f%25e6%2588%2590ai%25e3%2581%25a7%25e3%2582%25bd%25e3%2583%25bc%25e3%2582%25b9%25e3%2582%25b3%25e3%2583%25bc%25e3%2583%2589%25e3%2581%25af%25e3%2581%25aa%25e3%2581%258f%25e3%2581%25aa%25e3%2582%258b%25e3%2581%25ae%25e3%2581%258b%25ef%25bc%259f%25e3%2583%2593%25e3%2582%25b8%25e3%2583%258d%25e3%2582%25b9%25e3%2581%25a8",
       "description": "「生成AIでソースコードはなくなる」——その問いに、今すぐ答えを出せますか。不安を感じながらも動けない方へ、この記事ではコードが変わる3段階の全体像と、ビジネス・雇用・ガバナンスへの衝撃を一気に解説します。読み終えれば、 [...] <p>The post 生成AIでソースコードはなくなるのか？ビジネスと雇用が変わる3つの衝撃 first appeared on 生成AIと建設DX.</p>...",
@@ -89,6 +149,56 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/05/AI_code_infographic_under100kb-1024x485.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "建設現場の暑さ対策を解説｜熱中症対策の義務化と応急処置",
+      "link": "https://news.build-app.jp/article/40881/",
+      "description": "トレンドワード：建設現場の熱中症対策 建設現場の熱中症対策を解説します。 熱中症は、重篤化すると死亡災害にもつながる深刻な気象災害です。令和......",
+      "publishedDate": "Sun, 14 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/01/KWBCw4EP1bZdO2v1673589532_1673589551-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【建設業のDXとAI活用に関する実態調査】DX未着手は2～3割、生成AIの業務利用は3割",
+      "link": "https://news.build-app.jp/article/40878/",
+      "description": "デジタルの力であらゆる業務を効率化する株式会社インフォマート（本社：東京都港区 代表取締役社長：木村 慎、以下「当社」）は、建設業に従事して......",
+      "publishedDate": "Sun, 14 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/CApyQmKEC99psc21680153098_1680153118-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Fable 5の価格はOpus 4.8の2倍、それでも勝つ企業の条件",
+      "link": "https://axconstdx.com/2026/06/14/fable-5%e3%81%ae%e4%be%a1%e6%a0%bc%e3%81%afopus-4-8%e3%81%ae2%e5%80%8d%e3%80%81%e3%81%9d%e3%82%8c%e3%81%a7%e3%82%82%e5%8b%9d%e3%81%a4%e4%bc%81%e6%a5%ad%e3%81%ae%e6%9d%a1%e4%bb%b6/?utm_source=rss&utm_medium=rss&utm_campaign=fable-5%25e3%2581%25ae%25e4%25be%25a1%25e6%25a0%25bc%25e3%2581%25afopus-4-8%25e3%2581%25ae2%25e5%2580%258d%25e3%2580%2581%25e3%2581%259d%25e3%2582%258c%25e3%2581%25a7%25e3%2582%2582%25e5%258b%259d%25e3%2581%25a4%25e4%25bc%2581%25e6%25a5%25ad%25e3%2581%25ae%25e6%259d%25a1%25e4%25bb%25b6",
+      "description": "「価格が高いから、うちでは使えない」——そう判断した瞬間、あなたの組織は大きな機会を手放しているかもしれません。価格の見方を変えるだけで、最強モデルは手の届く存在になります。本記事を読めば、コストの正しい測り方と、予算に [...] <p>The post Fable 5の価格はOpus 4.8の2倍、それでも勝つ企業の条件 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sun, 14 Jun 2026 13:30:27 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp-eyecatch-1200x630-under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "建物に看板を設置する前に｜建築確認・屋外広告物・施工管理の確認ポイント",
+      "link": "https://news.build-app.jp/article/40938/",
+      "description": "看板は、店舗や施設の外観を印象づける設備です。ただし、建物に取り付ける場合は、デザインや価格だけで決めると申請漏れや施工不良につながるケース......",
+      "publishedDate": "Sun, 14 Jun 2026 09:59:04 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/34694609_m-130x86.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Claude「Fable 5」停止、復旧はいつ?日本が遅れる理由",
+      "link": "https://axconstdx.com/2026/06/14/claude%e3%80%8cfable-5%e3%80%8d%e5%81%9c%e6%ad%a2%e3%80%81%e5%be%a9%e6%97%a7%e3%81%af%e3%81%84%e3%81%a4%e6%97%a5%e6%9c%ac%e3%81%8c%e9%81%85%e3%82%8c%e3%82%8b%e7%90%86%e7%94%b1/?utm_source=rss&utm_medium=rss&utm_campaign=claude%25e3%2580%258cfable-5%25e3%2580%258d%25e5%2581%259c%25e6%25ad%25a2%25e3%2580%2581%25e5%25be%25a9%25e6%2597%25a7%25e3%2581%25af%25e3%2581%2584%25e3%2581%25a4%25e6%2597%25a5%25e6%259c%25ac%25e3%2581%258c%25e9%2581%2585%25e3%2582%258c%25e3%2582%258b%25e7%2590%2586%25e7%2594%25b1",
+      "description": "使えると思っていたAIが、突然使えなくなる——そんな時代が、静かに始まっています。Claude Fable 5の停止は、AIツールの「当たり前」が一夜で覆る現実を突きつけました。この記事を読めば、何が起きたのか、いつ戻る [...] <p>The post Claude「Fable 5」停止、復旧はいつ?日本が遅れる理由 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sun, 14 Jun 2026 06:23:41 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/fable5_eyecatch_1200x630_under100kb-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -142,54 +252,14 @@
       "language": "ja"
     },
     {
-      "title": "排気ゼロ・充電2時間——ボルボCEの「A40 Electric」が建設機械の常識を塗り替える",
-      "link": "https://axconstdx.com/2026/04/11/%e6%8e%92%e6%b0%97%e3%82%bc%e3%83%ad%e3%83%bb%e5%85%85%e9%9b%bb2%e6%99%82%e9%96%93-%e3%83%9c%e3%83%ab%e3%83%9cce%e3%81%ae%e3%80%8ca40-electric%e3%80%8d%e3%81%8c%e5%bb%ba%e8%a8%ad/?utm_source=rss&utm_medium=rss&utm_campaign=%25e6%258e%2592%25e6%25b0%2597%25e3%2582%25bc%25e3%2583%25ad%25e3%2583%25bb%25e5%2585%2585%25e9%259b%25bb2%25e6%2599%2582%25e9%2596%2593-%25e3%2583%259c%25e3%2583%25ab%25e3%2583%259cce%25e3%2581%25ae%25e3%2580%258ca40-electric%25e3%2580%258d%25e3%2581%258c%25e5%25bb%25ba%25e8%25a8%25ad",
-      "description": "ディーゼルエンジンの轟音が響く建設現場——その風景が、今まさに大きく塗り替えられようとしています。「電動化はまだ先の話」と思っていた方ほど、この記事を読んでほしいと思います。世界初の電動ダンプ量産がもたらす変革の全貌と、 [...] <p>The post 排気ゼロ・充電2時間——ボルボCEの「A40 Electric」が建設機械の常識を塗り替える first appeared on 生成AIと建...",
-      "publishedDate": "Sat, 11 Apr 2026 04:24:49 +0000",
-      "source": "生成AIと建設DX",
+      "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
+      "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
+      "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
+      "publishedDate": "Mon, 08 Dec 2025 19:22:27 +0000",
+      "source": "buildingSMART International",
       "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/04/wp_eyecatch_truck_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Codeの制限、もう怖くない！公式推奨4つの節約術",
-      "link": "https://axconstdx.com/2026/04/04/claude-code%e3%81%ae%e5%88%b6%e9%99%90%e3%80%81%e3%82%82%e3%81%86%e6%80%96%e3%81%8f%e3%81%aa%e3%81%84%ef%bc%81%e5%85%ac%e5%bc%8f%e6%8e%a8%e5%a5%a84%e3%81%a4%e3%81%ae%e7%af%80%e7%b4%84%e8%a1%93/?utm_source=rss&utm_medium=rss&utm_campaign=claude-code%25e3%2581%25ae%25e5%2588%25b6%25e9%2599%2590%25e3%2580%2581%25e3%2582%2582%25e3%2581%2586%25e6%2580%2596%25e3%2581%258f%25e3%2581%25aa%25e3%2581%2584%25ef%25bc%2581%25e5%2585%25ac%25e5%25bc%258f%25e6%258e%25a8%25e5%25a5%25a84%25e3%2581%25a4%25e3%2581%25ae%25e7%25af%2580%25e7%25b4%2584%25e8%25a1%2593",
-      "description": "作業の途中で突然止まる、あの焦りと不満を感じたことはないでしょうか。「昨日は大丈夫だったのに」と首をかしげた経験がある方も多いはずです。実はこの現象、バグではなく仕様変更が原因です。正しく理解して設定を見直すだけで、制限 [...] <p>The post Claude Codeの制限、もう怖くない！公式推奨4つの節約術 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sat, 04 Apr 2026 13:19:45 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/04/ClaudeCode_eyecatch_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大成建設が蔵衛門を全社導入、BIMで配筋検査の完全デジタル化",
-      "link": "https://news.build-app.jp/article/40859/",
-      "description": "株式会社ルクレ（以下、ルクレ）が提供する建設DXプラットフォーム「蔵衛門」は、大成建設株式会社の建築部門における写真管理ツールとして導入され......",
-      "publishedDate": "Mon, 08 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/07/pmIuxHcV0zys7HB1658321325_1658321346-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年版】準防火地域の外壁制限を解説｜防火構造・延焼ライン・外壁材の採用可否一覧",
-      "link": "https://news.build-app.jp/article/40839/",
-      "description": "建築計画や確認申請の段階で、「この外壁材は準防火地域でも使えるのか」「木材やガルバリウムは採用できるのか」と悩んでいないでしょうか。 準防火......",
-      "publishedDate": "Mon, 08 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/f26e4c27087ac243ea2c5a6c2b5c455a-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "熱中症で労災認定される場合も｜厚労省「クールワークキャンペーン」に注目",
-      "link": "https://news.build-app.jp/article/40843/",
-      "description": "トレンドワード：熱中症 近年、猛暑の影響により、職場での熱中症による労働災害が増加しています。とくに建設業や運送業、製造業など高温環境での作......",
-      "publishedDate": "Mon, 08 Jun 2026 00:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/image-4-130x87.jpeg",
-      "language": "ja"
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "SBGがトヨタを超えた日、AI資本主義が日本を変える理由",
@@ -200,6 +270,36 @@
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630-2-1024x538.jpg",
       "language": "ja"
+    },
+    {
+      "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
+      "link": "https://www.buildingsmart.org/buildingsmart-brazil-has-been-formally-approved-as-a-full-chapter/",
+      "description": "London, U.K. – March 27th, 2026 — buildingSMART International (bSI) is pleased to announce that buildingSMART Brazil has been formally approved by the Board to become a Full Chapter, effective March.....",
+      "publishedDate": "Fri, 27 Mar 2026 10:19:53 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Alfred Waschl Steps Down from buildingSMART International Board of Directors",
+      "link": "https://www.buildingsmart.org/alfred-waschl-resigned-from-the-board/",
+      "description": "London, U.K. – February 27th, 2026 — buildingSMART International (bSI) announces that Alfred Waschl resigned from the Board of Directors on 29 January 2026. Due to ill health, Alfred previously steppe...",
+      "publishedDate": "Fri, 27 Feb 2026 09:21:11 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Key Outcomes from the Domain Leadership Conference in Zurich",
+      "link": "https://www.buildingsmart.org/key-outcomes-from-the-domain-leadership-conference-in-zurich/",
+      "description": "The recent Domain Leadership Conference held in Zurich on 4 &#38; 5 February marked an important moment for buildingSMART International. bSI Domains are membership-led, pro bono programmes representin...",
+      "publishedDate": "Fri, 20 Mar 2026 10:06:51 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     }
   ]
 }
