@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T02:52:04.594036",
+  "lastUpdated": "2026-06-17T02:49:12.725482",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -12,33 +12,53 @@
       "language": "en"
     },
     {
-      "title": "AIが商社の価値を再定義する～住友商事DAIS戦略の正体",
-      "link": "https://axconstdx.com/2026/05/28/ai%e3%81%8c%e5%95%86%e7%a4%be%e3%81%ae%e4%be%a1%e5%80%a4%e3%82%92%e5%86%8d%e5%ae%9a%e7%be%a9%e3%81%99%e3%82%8b%ef%bd%9e%e4%bd%8f%e5%8f%8b%e5%95%86%e4%ba%8bdais%e6%88%a6%e7%95%a5%e3%81%ae%e6%ad%a3/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e3%2581%258c%25e5%2595%2586%25e7%25a4%25be%25e3%2581%25ae%25e4%25be%25a1%25e5%2580%25a4%25e3%2582%2592%25e5%2586%258d%25e5%25ae%259a%25e7%25be%25a9%25e3%2581%2599%25e3%2582%258b%25ef%25bd%259e%25e4%25bd%258f%25e5%258f%258b%25e5%2595%2586%25e4%25ba%258bdais%25e6%2588%25a6%25e7%2595%25a5%25e3%2581%25ae%25e6%25ad%25a3",
-      "description": "AI時代に生き残る企業と衰退する企業の分岐点は、テクノロジー導入ではなく、事業そのものの変革ができるかどうかにあります。本記事では、約10万社の顧客基盤を持つ総合商社がAIで何を変え、どのように競争力を確保しようとしてい [...] <p>The post AIが商社の価値を再定義する～住友商事DAIS戦略の正体 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Wed, 27 May 2026 20:50:33 +0000",
+      "title": "住民説明会はなぜ、炎上するのか？｜建築紛争の構造的必然を解剖する",
+      "link": "https://news.build-app.jp/article/40637/",
+      "description": "とあるビル建設の住民説明会──。始まる前から、結末はほぼ決まっている。 資料は分厚い。スクリーンには図面が映し出される。事業者の担当者は「法......",
+      "publishedDate": "Tue, 16 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/20260617-2_hiramaya-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "WBGT（暑さ指数）の見方を解説｜値・予報の確認方法を分かりやすく【現場の暑さ対策】",
+      "link": "https://news.build-app.jp/article/40968/",
+      "description": "WBGTとは「暑さ指数」をあらわす値で、現場の暑さ対策に必要不可欠なデータです。環境省のサイトやアプリから、誰でも簡単に確認できます。 この......",
+      "publishedDate": "Tue, 16 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/a518e9928c0fc92eceaf4de29b6366bc-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "大林組、「高車管理」「高車キーレスシステム」の全社標準利用を決定",
+      "link": "https://news.build-app.jp/article/40956/",
+      "description": "概要 朝日興産（社長：吉田智憲）は、主要顧客である大林組（代表取締役社長兼CEO：佐藤俊美）が、当社の建設現場施工管理サービス 位置プラス®......",
+      "publishedDate": "Tue, 16 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/08/MicrosoftTeams-image-203-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Christina Hvid Steps Down from buildingSMART International Board of Directors",
+      "link": "https://www.buildingsmart.org/christina-hvid-resigned-from-the-board/",
+      "description": "London, U.K. – June 9th, 2026 — buildingSMART International (bSI) announces that Christina Hvid resigned from the Board of Directors on 9 June 2026. We extend our sincere thanks to Christina... The po...",
+      "publishedDate": "Tue, 16 Jun 2026 09:56:56 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Opus 4.8とFable 5、性能差はどこで開くのか？",
+      "link": "https://axconstdx.com/2026/06/16/opus-4-8%e3%81%a8fable-5%e3%80%81%e6%80%a7%e8%83%bd%e5%b7%ae%e3%81%af%e3%81%a9%e3%81%93%e3%81%a7%e9%96%8b%e3%81%8f%e3%81%ae%e3%81%8b%ef%bc%9f/?utm_source=rss&utm_medium=rss&utm_campaign=opus-4-8%25e3%2581%25a8fable-5%25e3%2580%2581%25e6%2580%25a7%25e8%2583%25bd%25e5%25b7%25ae%25e3%2581%25af%25e3%2581%25a9%25e3%2581%2593%25e3%2581%25a7%25e9%2596%258b%25e3%2581%258f%25e3%2581%25ae%25e3%2581%258b%25ef%25bc%259f",
+      "description": "「点数が高いAIを選べば失敗しない」——そう信じてきた方ほど、選択の落とし穴にはまりやすい時代が来ています。上位AIが横並びになったいま、本当の実力は難しい課題でしか見えません。この記事を読めば、数字に惑わされず、現場で [...] <p>The post Opus 4.8とFable 5、性能差はどこで開くのか？ first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Tue, 16 Jun 2026 08:00:59 +0000",
       "source": "生成AIと建設DX",
       "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/05/wp_eyecatch_1200x630_under100kb-3-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年版】建設掲示板おすすめ5選｜一人親方・職人・協力会社探しに使えるサイトを比較",
-      "link": "https://news.build-app.jp/article/40909/",
-      "description": "「仕事が空いている期間を減らしたい」「協力会社を探したい」「職人を募集したい」と考えたときに候補となるのが建設掲示板です。しかし、建設掲示板......",
-      "publishedDate": "Wed, 10 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/c12492fab0ed8dcaae8ce72f005d3991-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "1件3日かかっていた積算を半日程度に縮めることを目指す「積算AI」を提供開始",
-      "link": "https://news.build-app.jp/article/40874/",
-      "description": "建設業界に特化したBPO事業と、ツクノビAIシリーズを展開する株式会社NITACO（本社：東京都渋谷区、代表取締役：新田顕大）は、本日、建設......",
-      "publishedDate": "Wed, 10 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/03/YYofbfmfAkHUysZ1647961911-130x87.jpg",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp-eyecatch_1200x630_under100kb-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -50,16 +70,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "ゼネコンは施工会社ではない｜日本の建設産業を動かす「内部銀行」という真の姿",
-      "link": "https://news.build-app.jp/article/40629/",
-      "description": "2024年問題が建設業界を揺るがした年、現場では何が起きていたか。時間外労働の上限規制が適用され、工期は延び、人は足りなかった。政府は処遇改......",
-      "publishedDate": "Tue, 09 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/20260610_hirayama-130x82.png",
-      "language": "ja"
     },
     {
       "title": "buildingSMART International Appoints Aidan Mercer as Managing Director",
@@ -92,16 +102,6 @@
       "language": "en"
     },
     {
-      "title": "【2026年版】建設業許可の検索方法を解説｜国土交通省で業者を調べる手順と検索できない原因",
-      "link": "https://news.build-app.jp/article/40918/",
-      "description": "建設業者へ工事を依頼するときや、下請業者を選定するときに「この会社は本当に建設業許可を持っているのだろうか」と不安になることは少なくありませ......",
-      "publishedDate": "Thu, 11 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/54131863d7d341ebcd84561a5ce068b0-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "建設現場のCO2算定サービス「TansoMiru」安藤ハザマの現場で集計作業を約90％削減",
       "link": "https://news.build-app.jp/article/40876/",
       "description": "株式会社リバスタ（本社：東京都江東区、代表取締役：高橋巧、以下 リバスタ）は、株式会社安藤・間（本社：東京都港区、代表取締役社長：国谷一彦、......",
@@ -132,16 +132,6 @@
       "language": "ja"
     },
     {
-      "title": "【建設業のDXとAI活用に関する実態調査】DX未着手は2～3割、生成AIの業務利用は3割",
-      "link": "https://news.build-app.jp/article/40878/",
-      "description": "デジタルの力であらゆる業務を効率化する株式会社インフォマート（本社：東京都港区 代表取締役社長：木村 慎、以下「当社」）は、建設業に従事して......",
-      "publishedDate": "Sun, 14 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/CApyQmKEC99psc21680153098_1680153118-130x82.jpg",
-      "language": "ja"
-    },
-    {
       "title": "建設現場の暑さ対策を解説｜熱中症対策の義務化と応急処置",
       "link": "https://news.build-app.jp/article/40881/",
       "description": "トレンドワード：建設現場の熱中症対策 建設現場の熱中症対策を解説します。 熱中症は、重篤化すると死亡災害にもつながる深刻な気象災害です。令和......",
@@ -149,6 +139,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/3dc1d1980499f8cc5ef1e693029a6eb4-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【建設業のDXとAI活用に関する実態調査】DX未着手は2～3割、生成AIの業務利用は3割",
+      "link": "https://news.build-app.jp/article/40878/",
+      "description": "デジタルの力であらゆる業務を効率化する株式会社インフォマート（本社：東京都港区 代表取締役社長：木村 慎、以下「当社」）は、建設業に従事して......",
+      "publishedDate": "Sun, 14 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/CApyQmKEC99psc21680153098_1680153118-130x82.jpg",
       "language": "ja"
     },
     {
@@ -212,6 +212,16 @@
       "language": "ja"
     },
     {
+      "title": "DfMAシンポジウムvol.2 －リア・ローディングからの脱却－_開催レポート【第1回】|GBTRCセンター長 / 芝浦工業大学教授　蟹澤 宏剛　登壇／東洋大学准教授　田澤 周平　登壇",
+      "link": "https://news.build-app.jp/article/40889/",
+      "description": "日本の建設産業では、施工直前まで変更を受け入れ、現場で細部を調整しながら品質を高めてきました。いわば、後工程に多くの負荷を寄せるリア・ローデ......",
+      "publishedDate": "Mon, 15 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/daad6175f16d8e986a28d1a78e925654-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "シールド坑内測量システム「わんワン測量™」を開発",
       "link": "https://news.build-app.jp/article/40954/",
       "description": "株式会社奥村組（大阪市阿倍野区、代表取締役社長 奥村 太加典、以下「奥村組」）と、西松建設株式会社（東京都港区、代表取締役社長 細川 雅一、......",
@@ -222,13 +232,13 @@
       "language": "ja"
     },
     {
-      "title": "DfMAシンポジウムvol.2 －リア・ローディングからの脱却－_開催レポート【第1回】|GBTRCセンター長 / 芝浦工業大学教授　蟹澤 宏剛　登壇／東洋大学准教授　田澤 周平　登壇",
-      "link": "https://news.build-app.jp/article/40889/",
-      "description": "日本の建設産業では、施工直前まで変更を受け入れ、現場で細部を調整しながら品質を高めてきました。いわば、後工程に多くの負荷を寄せるリア・ローデ......",
+      "title": "【2026年版】建築確認申請とは？流れ・費用・期間・不要なケースまでプロが解説｜BIMを使った確認申請もスタート",
+      "link": "https://news.build-app.jp/article/36774/",
+      "description": "建物を新築・増改築する際には、「建築確認申請」という手続きが必要になる場合があります。このとき、申請の有無や流れ、費用、必要書類、不要なケー......",
       "publishedDate": "Mon, 15 Jun 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/daad6175f16d8e986a28d1a78e925654-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/08/e77ba05b1d0886e0a1f607d7e6358ed3-130x82.png",
       "language": "ja"
     },
     {
@@ -250,16 +260,6 @@
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630_under100kb-6-1024x538.jpg",
       "language": "ja"
-    },
-    {
-      "title": "buildingSMART Chile has been formally approved as a “Chapter-in-formation”",
-      "link": "https://www.buildingsmart.org/buildingsmart-chile-has-been-formally-approved-as-a-chapter-in-formation/",
-      "description": "London, U.K. – December 8th, 2025 — buildingSMART International (bSI) is pleased to announce that buildingSMART Chile has been formally approved as a \"Chapter-in-formation\". The latest Chapter to join...",
-      "publishedDate": "Mon, 08 Dec 2025 19:22:27 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "SBGがトヨタを超えた日、AI資本主義が日本を変える理由",
