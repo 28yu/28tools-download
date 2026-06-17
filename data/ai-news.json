@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T06:34:30.222153",
+  "lastUpdated": "2026-06-17T06:13:33.179955",
   "articles": [
     {
       "title": "Reachy Mini goes fully local",
@@ -25,7 +25,7 @@
     },
     {
       "title": "We’re announcing new community investments in Missouri.",
-      "titleJa": "私たちはミズーリ州における新たなコミュニティへの投資を発表します。",
+      "titleJa": "私たちはミズーリ州での新たなコミュニティ投資を発表します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
       "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
       "publishedDate": "Wed, 20 May 2026 20:40:00 +0000",
@@ -55,6 +55,28 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screenshot_2026-05-15_at_4.21.2.max-600x600.format-webp.webp",
       "language": "en"
+    },
+    {
+      "title": "Claude Codeのサブエージェントとは？使い方やうまく動かないときの原因・対策も紹介",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-code-sub-agent/",
+      "description": "Claude Codeのサブエージェント機能を使いこなせば、複雑なタスクを役割ごとに分担させて効率的に処理できるようになります。 この記事では、サブエージェントの基本的な仕組みから実際の作成手順、そしてチーム開発での安全 [...] The post Claude Codeのサブエージェントとは？使い方やうまく動かないときの原因・対策も紹介 first appeared on AIポータルメディア...",
+      "publishedDate": "Wed, 17 Jun 2026 01:48:36 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ClaudeCode.png",
+      "language": "ja"
+    },
+    {
+      "title": "Claudeのオプトアウト設定手順｜PC・スマホ別のやり方や安全に使用する方法を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-optout/",
+      "description": "Claudeを業務で使う際は、入力した内容がAIの学習に使われるのか気になる方も多いでしょう。特に個人向けプランを業務で使う場合は、設定の状態によってチャットやコーディングセッションがモデル改善に使われる可能性があるため [...] The post Claudeのオプトアウト設定手順｜PC・スマホ別のやり方や安全に使用する方法を解説 first appeared on AIポータルメディアAIs...",
+      "publishedDate": "Wed, 17 Jun 2026 01:42:47 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/CaudeOptingOut.png",
+      "language": "ja"
     },
     {
       "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
@@ -145,6 +167,127 @@
       "language": "en"
     },
     {
+      "title": "Exclusive eBook: How AI is becoming the next military advisor",
+      "titleJa": "独占電子書籍: AI はどのようにして次の軍事顧問になるのか",
+      "link": "https://www.technologyreview.com/2026/06/16/1138905/exclusive-ebook-how-ai-is-becoming-the-next-military-advisor/",
+      "description": "A collection of stories about how militaries are using AI models to make decisions. This subscriber-only eBook is a package of six stories that were originally published in MIT Technology Review betwe...",
+      "publishedDate": "Tue, 16 Jun 2026 20:35:02 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/1.png?w=2000",
+      "language": "en"
+    },
+    {
+      "title": "LLMとRAGの違いとは？仕組みや導入のやり方・活用シーンを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/llm-rag/",
+      "description": "LLMとRAGはどちらも生成AIを活用する上で頻繁に耳にする言葉ですが、役割は同じではありません。LLMは文章生成や要約を担うモデルで、RAGは社内文書などを検索して回答に反映する仕組みです。 生成AIベースの会話アシス [...]...",
+      "publishedDate": "Tue, 16 Jun 2026 13:56:56 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/llm-rag_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "The Download: the first brain implant power user and South Korea’s AI obsession",
+      "titleJa": "ダウンロード: 初の脳インプラント能力者と韓国の AI への執着",
+      "link": "https://www.technologyreview.com/2026/06/16/1139010/the-download-brain-implant-power-user-bci-south-korea-ai-obsession/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. This man with ALS is the first “power user” of a b...",
+      "publishedDate": "Tue, 16 Jun 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2022/10/ND22_altruism_ELON_thumb.jpeg?w=1821",
+      "language": "en"
+    },
+    {
+      "title": "NEC・Anthropicと金融8社が連携。AI活用による金融分野の価値創出と社会実装へ取り組み開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/nec-anthropic-finance-cooperation/",
+      "description": "NECとAnthropic、MS&#38;ADなど金融8社は、AI活用による新たな価値創出に向けた共創を開始します。 このニュースのポイント NEC・Anthropicと金融8社が連携し、AI活用による共創を開始 MS&#038; [...] The post NEC・Anthropicと金融8社が連携。AI活用による金融分野の価値創出と社会実装へ取り組み開始 first appeared on ...",
+      "publishedDate": "Tue, 16 Jun 2026 09:02:36 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/neceye01.png",
+      "language": "ja"
+    },
+    {
+      "title": "Want to get a data center online quickly? Give it some flex.",
+      "titleJa": "データセンターをすぐにオンラインにしたいですか?ある程度の柔軟性を与えてください。",
+      "link": "https://www.technologyreview.com/2026/06/16/1138591/data-center-online-quickly-electric-grid-flex/",
+      "description": "At the end of a tense and scoreless first half of a soccer match between the English men’s team and rival Germany, millions of Brits let out a collective sigh and did what they so often do in moments ...",
+      "publishedDate": "Tue, 16 Jun 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/26-05-27-MIT-TECH-01-Interior-1-FIN-cmyk_1.jpg?w=1425",
+      "language": "en"
+    },
+    {
+      "title": "メルカリ、GENIACに採択。40億件以上の出品データで日本独自のAI基盤開発に着手",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/mercari-geniac-ai_model-development-project/",
+      "description": "メルカリは「GENIAC」において「Generative Retrieval技術を用いた二次流通市場向け高精度検索・推薦基盤モデルの開発」が採択されたと発表しました。メルカリの研究開発組織「R4D」が中心となり、日本独自 [...] The post メルカリ、GENIACに採択。40億件以上の出品データで日本独自のAI基盤開発に着手 first appeared on AIポータルメディアAIs...",
+      "publishedDate": "Tue, 16 Jun 2026 08:16:08 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/mercari-nedo-geniac.png",
+      "language": "ja"
+    },
+    {
+      "title": "VisaとOpenAIが戦略的提携。AIエージェントによる安全なVisa決済が可能に",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/visa-openai-partnership/",
+      "description": "VisaはOpenAIとの戦略的提携を発表しました。同社のグローバルネットワークや認証情報管理機能、セキュリティインフラをOpenAIへ提供し、次世代のデジタル環境における安全なVisa決済を可能にします。 このニュース [...] The post VisaとOpenAIが戦略的提携。AIエージェントによる安全なVisa決済が可能に first appeared on AIポータルメディアAIs...",
+      "publishedDate": "Tue, 16 Jun 2026 05:35:55 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/Visa-OpenAI-AI-Commerce.png",
+      "language": "ja"
+    },
+    {
+      "title": "レノボ、FIFAワールドカップ2026にAIインフラ提供。遅延5秒未満の配信や選手の3Dアバターで大会支援",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/lenovo-fifa-worldcup-2026-ai/",
+      "description": "レノボは、FIFAワールドカップ2026にAIインフラを提供しています。大会運営・ファン・出場チームへの多角的なAI支援が可能になりました。 このニュースのポイント レノボ、FIFAワールドカップ2026にAIインフラを [...] The post レノボ、FIFAワールドカップ2026にAIインフラ提供。遅延5秒未満の配信や選手の3Dアバターで大会支援 first appeared on AI...",
+      "publishedDate": "Tue, 16 Jun 2026 05:29:50 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/lenovoeye.png",
+      "language": "ja"
+    },
+    {
+      "title": "キヤノンMJとキヤノンITS、愛媛県でAIによる農作業判断支援サービスの実装検証を開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/canon-bind-vision/",
+      "description": "キヤノンMJとキヤノンITSは、農地の画像や気象・土壌などの環境データをAIで整理・可視化し、日々の作業判断や技術継承を支援するサービスの実装検証を愛媛県にて開始しました。 このニュースのポイント キヤノンMJとキヤノン [...] The post キヤノンMJとキヤノンITS、愛媛県でAIによる農作業判断支援サービスの実装検証を開始 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Tue, 16 Jun 2026 05:19:51 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/canonAI.png",
+      "language": "ja"
+    },
+    {
+      "title": "生成AI時代における検索エンジンの利用実態調査。全体の約6割以上が検索エンジンを利用",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/nyle-genai-seachengine-survey/",
+      "description": "マーケティング支援を行うナイルは、生成AIが普及する現在の情報収集行動を探るため、「検索エンジンの利用実態調査」を実施しました。 このニュースのポイント 生成AI時代でも約6割が調べものの際に検索エンジンを利用 信頼性の [...] The post 生成AI時代における検索エンジンの利用実態調査。全体の約6割以上が検索エンジンを利用 first appeared on AIポータルメディアAIs...",
+      "publishedDate": "Tue, 16 Jun 2026 05:06:35 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/kensakuengin.png",
+      "language": "ja"
+    },
+    {
+      "title": "【開催速報】「AI博覧会 Nagoya 2026」本日より開幕！名古屋・東海エリアの「現場DX」を加速する2日間がスタート",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-hakurankai-nagoya2026-event-report/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年6月16日（火）・17日（水）の2日間、名古屋コンベンションホールにて「AI博覧会 Nagoya 2026」を開催しており [...] The post 【開催速報】「AI博覧会 Nagoya 2026」本日より開幕！名古屋・東海エリアの「現場DX」を加速する2日間がスタート first appear...",
+      "publishedDate": "Tue, 16 Jun 2026 04:53:34 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ai-hakurankai-nagoya2026-event-report_000.png",
+      "language": "ja"
+    },
+    {
       "title": "【GLM-5.2】Fable 5停止の翌日に緊急公開！100万トークン対応コーディングモデルを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/glm-5-2/",
@@ -154,6 +297,28 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GLM-5.2-1024x576.webp",
       "language": "ja"
+    },
+    {
+      "title": "Grokの制限とは？画像（動画）生成・種類・解除方法・料金を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/grok-limit/",
+      "description": "「Grokを使っていたら急に止まってしまった」「無料だとどこまで使えるの？」「制限を解除する方法はある？」 Grokを使い始めると、こうした疑問にぶつかる方は少なくありません。Grokには会話や画像・動画の生成について、 [...] The post Grokの制限とは？画像（動画）生成・種類・解除方法・料金を徹底解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Tue, 16 Jun 2026 03:13:06 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/grok-limit_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Predicting model behavior before release by simulating deployment",
+      "titleJa": "デプロイメントをシミュレートすることでリリース前にモデルの動作を予測する",
+      "link": "https://openai.com/index/deployment-simulation",
+      "description": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy....",
+      "publishedDate": "Tue, 16 Jun 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "How engineers at Nextdoor use Codex to build without limits",
@@ -244,54 +409,10 @@
       "language": "en"
     },
     {
-      "title": "The Download: soccer’s data renaissance and China’s big nuclear plans",
-      "titleJa": "ダウンロード: サッカーのデータ ルネサンスと中国の大規模な核計画",
-      "link": "https://www.technologyreview.com/2026/06/11/1138809/the-download-soccer-football-data-analytics-china-nuclear-power/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Inside soccer’s data renaissance Imagine tuning in...",
-      "publishedDate": "Thu, 11 Jun 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2022/02/MA22_SpaceTourism_final.jpg?fit=2128,1196",
-      "language": "en"
-    },
-    {
-      "title": "Google DeepMind is worried about what happens when millions of agents start to interact",
-      "titleJa": "Google DeepMind は、何百万ものエージェントがやり取りを始めたときに何が起こるかを懸念しています",
-      "link": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
-      "description": "Google DeepMind is funding research into the potential dangers of situations where millions of different AI agents interact with each other online. According to Rohin Shah, who directs the company’s A...",
-      "publishedDate": "Thu, 11 Jun 2026 11:00:45 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/corralling-agents.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "総務AIエージェントとは？定型業務を自動化するメリットから導入手順・注意点まで徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/general-affairs-ai-agent/",
-      "description": "総務部門は、問い合わせ対応や書類作成に多くの時間を取られがちです。総務AIエージェントを活用すればこれらをAIが代行してくれるため、担当者の負担を減らせます。とはいえ、株式会社Leachの「中小企業AI導入実態調査202 [...]...",
-      "publishedDate": "Thu, 11 Jun 2026 08:33:06 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/General-Affairs-AI-Agent_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "How an astrophysicist uses Codex to help simulate black holes",
       "titleJa": "天体物理学者がコーデックスを使用してブラック ホールのシミュレーションを支援する方法",
       "link": "https://openai.com/index/using-codex-to-simulate-black-holes",
       "description": "Discover how astrophysicist Chi-kwan Chan uses Codex to build black hole simulations, helping scientists study extreme physics and test Einstein’s theory of general relativity....",
-      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "BBVA puts AI at the core of banking with OpenAI",
-      "titleJa": "BBVA は OpenAI を使用して AI を銀行業務の中核に据えます",
-      "link": "https://openai.com/index/bbva",
-      "description": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide....",
       "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -310,8 +431,19 @@
       "language": "en"
     },
     {
+      "title": "BBVA puts AI at the core of banking with OpenAI",
+      "titleJa": "BBVA は OpenAI を使用して AI を銀行業務の中核に据えます",
+      "link": "https://openai.com/index/bbva",
+      "description": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide....",
+      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
-      "titleJa": "信頼できる AI エコシステムを確保するためのヨーロッパの取り組みを支援",
+      "titleJa": "信頼できる AI エコシステムを確保するための欧州の取り組みを支援",
       "link": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
       "description": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content....",
       "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
@@ -329,28 +461,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/torch-mlp-fusion/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
-      "titleJa": "Nemotron 3.5 コンテンツ セーフティ: グローバル エンタープライズ AI 向けのカスタマイズ可能なマルチモーダル セーフティ",
-      "link": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
-      "description": "...",
-      "publishedDate": "Thu, 04 Jun 2026 18:57:45 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-3-5-content-safety.png",
-      "language": "en"
-    },
-    {
-      "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
-      "titleJa": "ハブを操作するためのエージェントに最適化された方法として hf CLI を設計する",
-      "link": "https://huggingface.co/blog/hf-cli-for-agents",
-      "description": "...",
-      "publishedDate": "Thu, 04 Jun 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/hf-cli-for-agents/thumbnail.png",
       "language": "en"
     },
     {
@@ -409,105 +519,6 @@
       "language": "ja"
     },
     {
-      "title": "川崎重工、米国シリコンバレーに新拠点開設。フィジカルAI推進へ日米連携加速",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kawasaki-physical-ai-center-newbase/",
-      "description": "川崎重工は、米国・シリコンバレーにフィジカルAI拠点「Kawasaki Physical AI Center San Jose」を開設しました。AI・半導体分野における日米連携を深め、フィジカルAIとロボティクスの社会実 [...] The post 川崎重工、米国シリコンバレーに新拠点開設。フィジカルAI推進へ日米連携加速 first appeared on AIポータルメディアAIsmiley...",
-      "publishedDate": "Mon, 15 Jun 2026 08:51:22 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/kawasaki.png",
-      "language": "ja"
-    },
-    {
-      "title": "Anthropic、米政府の輸出管理指令を受け「Fable 5」と「Mythos 5」のアクセスを停止",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/anthropic-fable-5-mythos-5-suspend-access/",
-      "description": "Anthropicは、米政府から国家安全保障上の権限に基づく輸出管理指令を受け「Fable 5」と「Mythos 5」へのアクセスを一時停止したと発表しました。対象は米国内外を問わず外国籍者で、同社の外国人従業員も含まれ [...] The post Anthropic、米政府の輸出管理指令を受け「Fable 5」と「Mythos 5」のアクセスを停止 first appeared on AIポー...",
-      "publishedDate": "Mon, 15 Jun 2026 08:09:52 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/Anthropic-suspend-access-to-Fable-5-and-Mythos-5.png",
-      "language": "ja"
-    },
-    {
-      "title": "日本大学、全専任教職員を含む1万人へ「Google AI Pro for Education 」を導入。教育の「自主創造」を加速",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/nihon-university-google-ai-pro-for-education/",
-      "description": "Google Cloud Japanは、日本大学が「Google AI Pro for Education」を全専任教職員を含む1万人へ導入したと発表しました。本ツールの導入により、さらなる業務効率化と高度な教育・研究の [...] The post 日本大学、全専任教職員を含む1万人へ「Google AI Pro for Education 」を導入。教育の「自主創造」を加速 first app...",
-      "publishedDate": "Mon, 15 Jun 2026 08:03:32 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/google-nihondaigaku.png",
-      "language": "ja"
-    },
-    {
-      "title": "リコー、生成AIの推論性能を評価する独自ベンチマークツール「JDocQA Reasoning Benchmark」を無償公開",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/jdocqa-reasoning-benchmark/",
-      "description": "リコーは図表を含む日本語業務文書のAI推論性能を評価するベンチマークツール「JDocQA Reasoning Benchmark」を開発しました。さらに本ベンチマークを無償公開し、AI開発基盤の高度化に貢献します。 この [...] The post リコー、生成AIの推論性能を評価する独自ベンチマークツール「JDocQA Reasoning Benchmark」を無償公開 first appea...",
-      "publishedDate": "Mon, 15 Jun 2026 07:50:17 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/IDocQA-Reasoning-Benchmark.png",
-      "language": "ja"
-    },
-    {
-      "title": "アイスマイリー、7/1（水）から3日間、第38回 ものづくり ワールド [東京]内、「製造業DX展」にブース出展",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/monodukuri-world-tokyo-no38/",
-      "description": "AIsmileyとAIsmiley Communityは、2026年7月1日（水）～7月3日（金）に東京ビッグサイトにて開催の第38回 ものづくり ワールド [東京]内、「製造業DX展」にブースを出展します。 会場では、 [...] The post アイスマイリー、7/1（水）から3日間、第38回 ものづくり ワールド [東京]内、「製造業DX展」にブース出展 first appeared on...",
-      "publishedDate": "Mon, 15 Jun 2026 06:00:37 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/mdwtokyo.png",
-      "language": "ja"
-    },
-    {
-      "title": "「営業部門向けAI活用ガイド」を公開！営業×AIの活用法から業務別ユースケース、導入時のポイントまでを網羅",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sales-ai-guide/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、営業活動の効率化と売上最大化を支援する「営業部門向けAI活用ガイド」を、2026年6月15日（月）に公開しました。 今すぐ無料で資料 [...] The post 「営業部門向けAI活用ガイド」を公開！営業×AIの活用法から業務別ユースケース、導入時のポイントまでを網羅 first appeared on AI...",
-      "publishedDate": "Mon, 15 Jun 2026 03:00:08 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/sales-ai-guide_01.png",
-      "language": "ja"
-    },
-    {
-      "title": "Claudeの出力を劇的に高めるプロンプトの作成方法！コピペで使える実践集も",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-prompt/",
-      "description": "Claudeへの指示（プロンプト）の書き方を工夫するだけで、得られる回答の質は大きく変わります。 この記事では、Claudeから高品質な出力を引き出すための基本ルールと、ビジネス現場ですぐに使えるプロンプトのテンプレート [...] The post Claudeの出力を劇的に高めるプロンプトの作成方法！コピペで使える実践集も first appeared on AIポータルメディアAIsmile...",
-      "publishedDate": "Mon, 15 Jun 2026 01:39:43 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-prompt_ic.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新】Claudeのエラー原因とすぐ試せる対処法完全ガイド",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-error/",
-      "description": "「さっきまで使えていたのに、突然Claudeがエラーを出して動かない」。そんな経験をした方に向けて、この記事ではエラーの種類ごとの原因と、今すぐ試せる具体的な対処法について解説します。 ブラウザの設定変更から時間帯の選び [...] The post 【2026年最新】Claudeのエラー原因とすぐ試せる対処法完全ガイド first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 15 Jun 2026 01:37:48 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-error_ic.webp",
-      "language": "ja"
-    },
-    {
-      "title": "AIを「動く武器」に変える。「寺子屋WinStory研究会」の集大成、Partner AI Demo選手権決勝戦レポート",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/oracle-terakoya-winstory-report-2026/",
-      "description": "日本オラクル株式会社が主催する「Partner AI Demo選手権」の決勝戦が2026年4月に開催されました。本企画は、「Oracle Cloud Infrastructure（OCI）、 Oracle AI Data [...] The post AIを「動く武器」に変える。「寺子屋WinStory研究会」の集大成、Partner AI Demo選手権決勝戦レポート first appeare...",
-      "publishedDate": "Mon, 15 Jun 2026 01:00:02 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/oracle-main-2.png",
-      "language": "ja"
-    },
-    {
       "title": "Geminiのオプトアウトのやり方は？アクティビティをオフにして情報漏えいを防ぐ方法を解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/gemini-opt-out/",
@@ -530,17 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "日立とGoogle Cloud、FDEによるフィジカルAIとセキュリティで協業拡大",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/hitachi-google_cloud-fde-physical_ai/",
-      "description": "株式会社日立製作所は、フィジカルAIの社会実装加速とAI型サイバー攻撃への対応強化に向け、Google Cloudとの戦略的アライアンスを拡大すると発表しました。 このニュースのポイント 日立とGoogle Cloudが [...] The post 日立とGoogle Cloud、FDEによるフィジカルAIとセキュリティで協業拡大 first appeared on AIポータルメディアAIsm...",
-      "publishedDate": "Fri, 12 Jun 2026 07:40:09 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/HITACHI-Google_Cloud-FDE-Physical_AI.jpg",
-      "language": "ja"
-    },
-    {
       "title": "【DiffusionGemma】テキスト生成が4倍速に！Googleの拡散型オープンモデルの仕組み・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/diffusiongemma/",
@@ -549,6 +549,17 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_DiffusionGemma-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "GitLab、AIエージェント向けの次世代Git互換ソースコード管理サービス「Project Switch」発表。最大で50倍高速かつ半分のトークンで利用可能に",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/gitlabaigitproject_switch50.html",
+      "description": "GitLabは6月10日にロンドンで開催したイベント「GitLab Transcend」で、AIエージェント向けの次世代Git互換ソースコード管理サービス「Project Switch」を発表しました。 GitLabやGitHubが提供する......",
+      "publishedDate": "2026-06-16T18:05:15Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/gitlab-nextgen-switch01.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/rolldown10ga.png",
-      "language": "ja"
-    },
-    {
-      "title": "Oracle Database@AWSが大阪リージョンでも提供開始。これでAWS東京リージョンとAWS大阪リージョンの両方で利用可能に",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/oracle_databaseawsawsaws.html",
-      "description": "Amazon Web Services（AWS）は、AWSのクラウドデータセンターにOracle Cloudのインフラを持ち込み、そこでOracle Databaseを提供する「Oracle Database@AWS」がAWS大阪リージョン......",
-      "publishedDate": "2026-06-01T15:02:13Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/oracledbataws-tokyo-ga.png",
       "language": "ja"
     }
   ]
