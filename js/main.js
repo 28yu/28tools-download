@@ -6,7 +6,7 @@
 // includes/header.html と includes/sidebar.html を fetch() するときの
 // クエリ文字列。includes/* を編集したらここをインクリメントする。
 // (CDN edge cache が古いインクルードを返す問題への対処)
-const INCLUDES_VERSION = '20260527-2';
+const INCLUDES_VERSION = '20260618-1';
 
 // グローバル変数
 let currentLanguage = 'ja';
@@ -775,6 +775,11 @@ function initTranslations() {
             en: 'PDF→Excel',
             zh: 'Excel提取'
         },
+        'index-tab-ai-minutes': {
+            ja: 'AI議事録',
+            en: 'AI Minutes',
+            zh: 'AI会议记录'
+        },
         'index-tab-knowledge': {
             ja: 'BIMニュース',
             en: 'BIM News',
@@ -924,6 +929,11 @@ function initTranslations() {
             ja: '構造図 PDF（梁・柱リスト）から符号・断面寸法・材質を自動抽出して Excel 化。Revit ファミリタイプ作成に直結。',
             en: 'Auto-extract symbols, section dimensions, and materials from structural PDFs (beam/column lists) into Excel. Direct path to Revit family type creation.',
             zh: '从结构图PDF（梁/柱列表）自动提取符号、截面尺寸和材质并生成Excel。直接对接Revit族类型创建。'
+        },
+        'index-category-ai-minutes-desc': {
+            ja: '打合せ音声と資料から、AI がイラスト付き議事録を自動作成。文字起こしはブラウザ完結、高精度版は無料 Gemini キー対応。',
+            en: 'AI auto-generates illustrated meeting minutes from audio and materials. Transcription runs in-browser; high-accuracy mode uses a free Gemini key.',
+            zh: '从会议音频和资料中，AI自动生成带插图的会议记录。转写在浏览器内完成，高精度版支持免费Gemini密钥。'
         },
         'index-category-news-desc': {
             ja: 'BIM・Revit・建築業界の最新ニュースを自動収集。業界トレンドを毎日チェック。（準備中）',

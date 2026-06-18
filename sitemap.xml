@@ -40,6 +40,14 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- AI イラスト議事録ツール -->
+  <url>
+    <loc>https://28tools.com/ai-minutes/web/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- マニュアル - 符号ON/OFF -->
   <url>
     <loc>https://28tools.com/manual/grid-bubble.html</loc>
