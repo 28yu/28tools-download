@@ -359,6 +359,8 @@ async function generate() {
     // (UI 言語と中身の言語は異なる。例: UI=英語 でも会議は日本語)
     state.translatedByLang = { [detectContentLang(data)]: data };
     showStatus(t('st-done'));
+    // アナリティクス: 議事録作成イベントを記録 (page = /_event/minutes-create)
+    if (typeof logToolEvent === 'function') logToolEvent('minutes-create');
     renderOutput(); // 現在の UI 言語に合わせて表示 (必要なら翻訳)
   } catch (err) {
     console.error(err);

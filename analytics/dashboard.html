@@ -66,6 +66,7 @@
   .kpi.green  .kpi-value { color: var(--green); }  .kpi.green::before  { background: var(--green); }
   .kpi.yellow .kpi-value { color: var(--yellow); } .kpi.yellow::before { background: var(--yellow); }
   .kpi.purple .kpi-value { color: var(--purple); } .kpi.purple::before { background: var(--purple); }
+  .kpi.pink   .kpi-value { color: #f472b6; }       .kpi.pink::before   { background: #f472b6; }
 
   /* Chart grid */
   .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 20px; margin-bottom: 24px; }
@@ -94,6 +95,9 @@
   .period-btn { background: var(--border); border: 1px solid transparent; color: var(--muted); padding: 5px 13px; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all .15s ease; }
   .period-btn:hover { color: var(--text); border-color: #3a3e4d; }
   .period-btn.active { background: var(--accent); color: #fff; box-shadow: 0 2px 8px rgba(79,142,247,.35); }
+  .date-input { background: var(--border); border: 1px solid transparent; color: var(--text); padding: 4px 11px; border-radius: 20px; cursor: pointer; font-size: 12px; font-family: inherit; color-scheme: dark; transition: border-color .15s ease; }
+  .date-input:hover { border-color: #3a3e4d; }
+  .date-input.hidden { display: none; }
 
   /* Raw data */
   .raw-section { margin-top: 20px; }
@@ -225,6 +229,7 @@
       <button class="period-btn" data-period="90">90日</button>
       <button class="period-btn" data-period="365">1年</button>
       <button class="period-btn" data-period="0">全期間</button>
+      <input type="date" id="pv-date" class="date-input hidden" title="表示する日を選択">
     </div>
     <div class="chart-wrap" style="height:220px"><canvas id="pv-trend-chart"></canvas></div>
   </div>
@@ -283,10 +288,20 @@
     <div class="kpi blue"><div class="kpi-label">PDF比較 実行</div><div class="kpi-value" id="kpi-pdf-compare">-</div><div class="kpi-sub">比較実行回数</div></div>
     <div class="kpi yellow"><div class="kpi-label">PDF→Excel 読込</div><div class="kpi-value" id="kpi-pdf-load">-</div><div class="kpi-sub">PDF読み込み</div></div>
     <div class="kpi purple"><div class="kpi-label">PDF→Excel 書出</div><div class="kpi-value" id="kpi-pdf-export">-</div><div class="kpi-sub">Excel書き出し</div></div>
+    <div class="kpi pink"><div class="kpi-label">議事録作成</div><div class="kpi-value" id="kpi-minutes">-</div><div class="kpi-sub">AI議事録</div></div>
   </div>
 
   <div class="chart-full">
-    <div class="chart-title">ツール利用推移（30日）</div>
+    <div class="chart-title">ツール利用推移</div>
+    <div class="period-btns" id="tool-period-btns">
+      <button class="period-btn" data-period="1">1日</button>
+      <button class="period-btn" data-period="7">1週間</button>
+      <button class="period-btn active" data-period="30">30日</button>
+      <button class="period-btn" data-period="90">90日</button>
+      <button class="period-btn" data-period="365">1年</button>
+      <button class="period-btn" data-period="0">全期間</button>
+      <input type="date" id="tool-date" class="date-input hidden" title="表示する日を選択">
+    </div>
     <div class="chart-wrap" style="height:260px"><canvas id="tool-trend-chart"></canvas></div>
   </div>
 
@@ -302,7 +317,7 @@
       <div class="chart-title">日別利用数（直近30日）</div>
       <div class="raw-table-wrap" style="max-height:250px">
         <table class="raw-table">
-          <thead><tr><th>日付</th><th>塗潰し</th><th>PDF比較</th><th>PDF読込</th><th>Excel書出</th></tr></thead>
+          <thead><tr><th>日付</th><th>塗潰し</th><th>PDF比較</th><th>PDF読込</th><th>Excel書出</th><th>議事録</th></tr></thead>
           <tbody id="tool-daily-table"></tbody>
         </table>
       </div>
@@ -406,7 +421,8 @@ const PAGE_LABELS = {
 let allDL = [], allPV = [], allGA4 = [];
 let ghStats = null;
 let charts = {};
-let activeDLPeriod = 30, activePVPeriod = 30;
+let activeDLPeriod = 30, activePVPeriod = 30, activeToolPeriod = 30;
+let pvSelectedDate = '', toolSelectedDate = '';
 
 // ---- GA4 history → synthetic PV events ----
 // ga4_history 行を pageviews 互換オブジェクトに展開する
@@ -475,6 +491,10 @@ function filterByDays(data, days) {
   const cutoff = Date.now() - days * 86400000;
   return data.filter(r => new Date(r.ts).getTime() >= cutoff);
 }
+// JST(UTC+9)基準の日付/時刻ヘルパー
+function todayJST()     { return new Date(Date.now() + 9*3600000).toISOString().slice(0,10); }
+function jstDateStr(ts) { return new Date(new Date(ts).getTime() + 9*3600000).toISOString().slice(0,10); }
+function jstHour(ts)    { return (new Date(ts).getUTCHours() + 9) % 24; }
 function count(arr, key) {
   return arr.reduce((m, r) => { const v = r[key] || 'Unknown'; m[v] = (m[v]||0)+1; return m; }, {});
 }
@@ -777,18 +797,16 @@ function renderPV(data) {
 
 function renderPVTrendChart(combined, days) {
   if (days === 1) {
-    // 1日選択時: 時間別（JST, 0〜23時）で集計 — Supabaseデータのみ（GA4は日次のみ）
+    // 1日選択時: 指定日（既定=当日）の 0〜23時(JST)で集計 — Supabaseデータのみ（GA4は日次のみ）
+    const sel = pvSelectedDate || todayJST();
     const byHour = Array(24).fill(0);
-    const cutoff = Date.now() - 86400000;
     allPV.forEach(r => {
-      const t = new Date(r.ts);
-      if (t.getTime() < cutoff) return;
-      const hourJST = (t.getUTCHours() + 9) % 24;
-      byHour[hourJST]++;
+      if (jstDateStr(r.ts) !== sel) return;
+      byHour[jstHour(r.ts)]++;
     });
     const labels = Array.from({length:24}, (_,i) => i + ':00');
     makeChart('pv-trend-chart', 'bar', labels, [{
-      label: 'PV数（時間別）',
+      label: 'PV数（' + sel + '）',
       data: byHour,
       backgroundColor: 'rgba(52,211,153,.7)',
       borderColor: '#34d399',
@@ -863,8 +881,36 @@ document.querySelectorAll('#pv-period-btns .period-btn').forEach(btn => {
     document.querySelectorAll('#pv-period-btns .period-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     activePVPeriod = parseInt(btn.dataset.period);
+    const di = document.getElementById('pv-date');
+    if (activePVPeriod === 1) { di.classList.remove('hidden'); pvSelectedDate = di.value || todayJST(); di.value = pvSelectedDate; }
+    else di.classList.add('hidden');
     renderPVTrendChart([...ga4ToEvents(allGA4), ...allPV], activePVPeriod);
   });
+});
+document.getElementById('pv-date').addEventListener('change', e => {
+  pvSelectedDate = e.target.value || todayJST();
+  activePVPeriod = 1;
+  document.querySelectorAll('#pv-period-btns .period-btn').forEach(b => b.classList.toggle('active', b.dataset.period === '1'));
+  renderPVTrendChart([...ga4ToEvents(allGA4), ...allPV], 1);
+});
+
+// ツール利用推移の期間切替（PV推移と同仕様）
+document.querySelectorAll('#tool-period-btns .period-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#tool-period-btns .period-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeToolPeriod = parseInt(btn.dataset.period);
+    const di = document.getElementById('tool-date');
+    if (activeToolPeriod === 1) { di.classList.remove('hidden'); toolSelectedDate = di.value || todayJST(); di.value = toolSelectedDate; }
+    else di.classList.add('hidden');
+    renderToolTrendChart(activeToolPeriod);
+  });
+});
+document.getElementById('tool-date').addEventListener('change', e => {
+  toolSelectedDate = e.target.value || todayJST();
+  activeToolPeriod = 1;
+  document.querySelectorAll('#tool-period-btns .period-btn').forEach(b => b.classList.toggle('active', b.dataset.period === '1'));
+  renderToolTrendChart(1);
 });
 
 // ---- Tool event helpers ----
@@ -873,6 +919,14 @@ const TOOL_EVENT_LABELS = {
   'pdf-compare-run': 'PDF比較 実行',
   'pdf-excel-load':  'PDF→Excel 読込',
   'pdf-excel-export':'PDF→Excel 書出',
+  'minutes-create':  'AI議事録 作成',
+};
+const TOOL_EVENT_COLORS = {
+  'hatch-download':  '#34d399',
+  'pdf-compare-run': '#4f8ef7',
+  'pdf-excel-load':  '#fbbf24',
+  'pdf-excel-export':'#a78bfa',
+  'minutes-create':  '#f472b6',
 };
 const TOOL_EVENT_KEYS = Object.keys(TOOL_EVENT_LABELS);
 
@@ -889,6 +943,7 @@ function renderTool(pvData) {
   document.getElementById('kpi-pdf-compare').textContent = counts['pdf-compare-run'].toLocaleString();
   document.getElementById('kpi-pdf-load').textContent   = counts['pdf-excel-load'].toLocaleString();
   document.getElementById('kpi-pdf-export').textContent = counts['pdf-excel-export'].toLocaleString();
+  document.getElementById('kpi-minutes').textContent    = counts['minutes-create'].toLocaleString();
 
   // ランキング表
   const total = Object.values(counts).reduce((a,b)=>a+b,0) || 1;
@@ -909,11 +964,11 @@ function renderTool(pvData) {
       </tr>`);
   });
 
-  // 日別テーブル（直近30日）
+  // 日別テーブル（直近30日, JST基準）
   const cutoff = Date.now() - 30 * 86400000;
   const byDay = {};
   toolEvents.filter(r => new Date(r.ts).getTime() >= cutoff).forEach(r => {
-    const day = r.ts.slice(0,10);
+    const day = jstDateStr(r.ts);
     const key = r.page.replace('/_event/', '');
     if (!byDay[day]) byDay[day] = {};
     byDay[day][key] = (byDay[day][key] || 0) + 1;
@@ -930,38 +985,57 @@ function renderTool(pvData) {
         <td>${d['pdf-compare-run']||0}</td>
         <td>${d['pdf-excel-load']||0}</td>
         <td>${d['pdf-excel-export']||0}</td>
+        <td>${d['minutes-create']||0}</td>
       </tr>`);
   });
 
-  // 推移チャート（30日）
-  const labels = [], hatchD=[], compareD=[], loadD=[], exportD=[];
-  for (let i=29; i>=0; i--) {
-    const d = new Date(Date.now() - i*86400000).toISOString().slice(0,10);
-    labels.push(d.slice(5));
-    const row = byDay[d] || {};
-    hatchD.push(row['hatch-download']||0);
-    compareD.push(row['pdf-compare-run']||0);
-    loadD.push(row['pdf-excel-load']||0);
-    exportD.push(row['pdf-excel-export']||0);
+  // 推移チャート（期間切替対応）
+  renderToolTrendChart(activeToolPeriod);
+}
+
+// ツール利用推移: PV推移と同じ期間設定（1日=指定日の時間別 / それ以外=日別）
+function renderToolTrendChart(days) {
+  const events = (allPV || []).filter(r => r.page && r.page.startsWith('/_event/'));
+  let labels, datasets;
+  if (days === 1) {
+    // 指定日（既定=当日）の 0〜23時(JST)で時間別スタック集計
+    const sel = toolSelectedDate || todayJST();
+    const byHour = {};
+    TOOL_EVENT_KEYS.forEach(k => byHour[k] = Array(24).fill(0));
+    events.forEach(r => {
+      if (jstDateStr(r.ts) !== sel) return;
+      const key = r.page.replace('/_event/', '');
+      if (byHour[key]) byHour[key][jstHour(r.ts)]++;
+    });
+    labels = [...Array(24).keys()].map(h => h + ':00');
+    datasets = TOOL_EVENT_KEYS.map(k => ({ label: TOOL_EVENT_LABELS[k], data: byHour[k], backgroundColor: TOOL_EVENT_COLORS[k] }));
+  } else {
+    // 期間内を日別(JST)でスタック集計。days=0 は全期間。
+    const cutoff = days ? Date.now() - days * 86400000 : 0;
+    const byDay = {};
+    events.forEach(r => {
+      if (cutoff && new Date(r.ts).getTime() < cutoff) return;
+      const day = jstDateStr(r.ts);
+      const key = r.page.replace('/_event/', '');
+      if (!byDay[day]) byDay[day] = {};
+      byDay[day][key] = (byDay[day][key] || 0) + 1;
+    });
+    let dayList;
+    if (days) { dayList = []; for (let i = days - 1; i >= 0; i--) dayList.push(jstDateStr(Date.now() - i * 86400000)); }
+    else { dayList = Object.keys(byDay).sort(); }
+    labels = dayList.map(d => d.slice(5));
+    datasets = TOOL_EVENT_KEYS.map(k => ({ label: TOOL_EVENT_LABELS[k], data: dayList.map(d => (byDay[d] || {})[k] || 0), backgroundColor: TOOL_EVENT_COLORS[k] }));
   }
   if (charts.toolTrend) charts.toolTrend.destroy();
   charts.toolTrend = new Chart(document.getElementById('tool-trend-chart'), {
     type: 'bar',
-    data: {
-      labels,
-      datasets: [
-        { label:'塗潰しDL', data:hatchD, backgroundColor:'#34d399' },
-        { label:'PDF比較',  data:compareD, backgroundColor:'#4f8ef7' },
-        { label:'PDF読込',  data:loadD, backgroundColor:'#fbbf24' },
-        { label:'Excel書出',data:exportD, backgroundColor:'#a78bfa' },
-      ]
-    },
+    data: { labels, datasets },
     options: {
-      responsive:true, maintainAspectRatio:false,
-      plugins:{ legend:{ labels:{ color:'#8892a4', font:{size:11} } } },
-      scales:{
-        x:{ stacked:true, ticks:{color:'#8892a4',maxRotation:45,font:{size:10}}, grid:{color:'#2a2d3a'} },
-        y:{ stacked:true, ticks:{color:'#8892a4',font:{size:11}}, grid:{color:'#2a2d3a'}, beginAtZero:true }
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { labels: { color: '#8892a4', font: { size: 11 } } } },
+      scales: {
+        x: { stacked: true, ticks: { color: '#8892a4', maxRotation: 45, font: { size: 10 } }, grid: { color: '#2a2d3a' } },
+        y: { stacked: true, ticks: { color: '#8892a4', font: { size: 11 }, precision: 0 }, grid: { color: '#2a2d3a' }, beginAtZero: true }
       }
     }
   });
@@ -1056,6 +1130,14 @@ async function init() {
     document.getElementById('tab-dl').classList.add('active');
     document.getElementById('last-updated').textContent = '最終更新: ' + new Date().toLocaleTimeString('ja-JP') + ' ';
     addResetButton();
+    // 日付ピッカーの初期値・上限（既定=当日JST）
+    const today = todayJST();
+    pvSelectedDate = pvSelectedDate || today;
+    toolSelectedDate = toolSelectedDate || today;
+    ['pv-date','tool-date'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) { el.max = today; if (!el.value) el.value = today; }
+    });
     renderDL(allDL);
     if (!allPV.length) {
       document.querySelector('[onclick="switchTab(\'pv\')"]').title = 'データなし（ページビュー計測は設定後に反映）';
