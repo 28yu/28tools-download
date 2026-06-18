@@ -57,7 +57,13 @@ async function decodeAudio(file) {
  */
 export async function transcribeAudio(file, onLog = () => {}, onProgress = () => {}) {
   onLog(t('tr-prepare'));
-  const asr = await getPipeline((msg, pct) => { onLog(msg); onProgress(pct); });
+  let asr;
+  try {
+    asr = await getPipeline((msg, pct) => { onLog(msg); onProgress(pct); });
+  } catch (e) {
+    _pipelinePromise = null; // 次回リトライできるようリセット
+    throw new Error(t('tr-err-network'));
+  }
 
   onLog(t('tr-decoding'));
   const audio = await decodeAudio(file);

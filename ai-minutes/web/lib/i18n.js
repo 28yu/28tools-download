@@ -99,6 +99,7 @@ const DICT = {
   'tr-transcribing':{ ja: '文字起こし中... (長い音声ほど時間がかかります)', en: 'Transcribing... (longer audio takes more time)', zh: '正在转写...（音频越长耗时越久）' },
   'tr-done':        { ja: '文字起こし完了 ({n} 文字)', en: 'Transcription complete ({n} chars)', zh: '转写完成（{n} 字）' },
   'tr-err-empty':   { ja: '文字起こし結果が空でした。', en: 'The transcription result was empty.', zh: '转写结果为空。' },
+  'tr-err-network': { ja: '文字起こしモデルの読み込みに失敗しました（ネットワークエラー）。通信環境を確認して再試行するか、高精度版(Gemini)をお試しください。', en: 'Failed to load the transcription model (network error). Check your connection and retry, or try the high-accuracy (Gemini) mode.', zh: '加载转写模型失败（网络错误）。请检查网络后重试，或尝试高精度版(Gemini)。' },
   'tr-topic':       { ja: '打合せ内容', en: 'Meeting content', zh: '会议内容' },
   'tr-no-summary':  { ja: '（自動要約なし）', en: '(no auto summary)', zh: '（无自动摘要）' },
 
