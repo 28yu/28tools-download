@@ -6,25 +6,37 @@
 <title>GA4 連携設定 — 28 Tools Analytics</title>
 <style>
   :root {
-    --bg: #0f1117; --surface: #1a1d27; --border: #2a2d3a;
+    --bg: #0f1117; --surface: #1a1d27; --surface-2: #20242f; --border: #2a2d3a;
     --accent: #4f8ef7; --green: #34d399; --yellow: #fbbf24;
     --red: #f87171; --purple: #a78bfa; --text: #e2e8f0; --muted: #8892a4;
+    --shadow: 0 1px 3px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.18);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; }
-  header { padding: 16px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
-  header h1 { font-size: 18px; color: var(--accent); }
-  header a { color: var(--muted); font-size: 13px; text-decoration: none; }
+  html { scroll-behavior: smooth; }
+  body { background: radial-gradient(1200px 600px at 80% -10%, rgba(79,142,247,.07), transparent 60%), var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; -webkit-font-smoothing: antialiased; min-height: 100vh; }
+
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 6px; border: 2px solid var(--bg); }
+  ::-webkit-scrollbar-thumb:hover { background: #3a3e4d; }
+
+  .topbar { position: sticky; top: 0; z-index: 50; background: rgba(15,17,23,.82); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+  header { padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 18px; font-weight: 700; color: var(--accent); letter-spacing: .3px; }
+  header a { color: var(--muted); font-size: 13px; text-decoration: none; transition: color .15s ease; }
   header a:hover { color: var(--text); }
 
-  .tabs { display: flex; border-bottom: 1px solid var(--border); background: var(--surface); padding: 0 24px; }
-  .tab-btn { background: none; border: none; color: var(--muted); padding: 12px 20px; cursor: pointer; font-size: 14px; font-weight: 500; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  .tabs { display: flex; padding: 0 24px; overflow-x: auto; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab-btn { background: none; border: none; color: var(--muted); padding: 12px 20px; cursor: pointer; font-size: 14px; font-weight: 500; border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; transition: color .15s, border-color .15s; }
+  .tab-btn:hover { color: var(--text); }
   .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
 
   .tab-pane { display: none; padding: 24px; max-width: 860px; }
-  .tab-pane.active { display: block; }
+  .tab-pane.active { display: block; animation: fadeIn .25s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 
-  .section { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 24px; margin-bottom: 20px; }
+  .section { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: var(--shadow); }
   .section-title { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 16px; }
 
   .step { display: flex; gap: 16px; margin-bottom: 24px; }
@@ -43,7 +55,8 @@
   }
   input:focus { border-color: var(--accent); }
 
-  .btn { background: var(--accent); border: none; color: #fff; padding: 8px 18px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 600; }
+  .btn { background: var(--accent); border: none; color: #fff; padding: 8px 18px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 600; transition: transform .12s ease, box-shadow .15s ease, opacity .15s ease; }
+  .btn:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(79,142,247,.3); }
   .btn:disabled { opacity: .4; cursor: not-allowed; }
   .btn-green { background: var(--green); color: #000; }
   .btn-sm { padding: 5px 12px; font-size: 12px; }
@@ -69,16 +82,18 @@
 </head>
 <body>
 
-<header>
-  <h1>⚙️ GA4 連携設定</h1>
-  <a href="dashboard.html">← ダッシュボードに戻る</a>
-</header>
+<div class="topbar">
+  <header>
+    <h1>⚙️ GA4 連携設定</h1>
+    <a href="dashboard.html">← ダッシュボードに戻る</a>
+  </header>
 
-<nav class="tabs">
-  <button class="tab-btn active" onclick="switchTab('auto')">🔄 自動同期（推奨）</button>
-  <button class="tab-btn" onclick="switchTab('manual')">📁 手動インポート（CSV）</button>
-  <button class="tab-btn" onclick="switchTab('status')">📊 同期ステータス</button>
-</nav>
+  <nav class="tabs">
+    <button class="tab-btn active" onclick="switchTab('auto')">🔄 自動同期（推奨）</button>
+    <button class="tab-btn" onclick="switchTab('manual')">📁 手動インポート（CSV）</button>
+    <button class="tab-btn" onclick="switchTab('status')">📊 同期ステータス</button>
+  </nav>
+</div>
 
 <!-- ========== 自動同期タブ ========== -->
 <div id="tab-auto" class="tab-pane active">
