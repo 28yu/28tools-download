@@ -151,6 +151,25 @@ const SCHEMA = {
   required: ['summary', 'decisions', 'todos', 'issues', 'discussions'],
 };
 
+// JSON.parse に失敗しても、コードフェンス除去・最初の { 〜 最後の } 抽出で救済する。
+function parseJsonLoose(text) {
+  const tryParse = (s) => { try { return JSON.parse(s); } catch (e) { return undefined; } };
+  let v = tryParse(text);
+  if (v !== undefined) return v;
+  let s = String(text).trim()
+    .replace(/^```(?:json)?\s*/i, '')
+    .replace(/\s*```$/, '')
+    .trim();
+  v = tryParse(s);
+  if (v !== undefined) return v;
+  const a = s.indexOf('{'), b = s.lastIndexOf('}');
+  if (a >= 0 && b > a) {
+    v = tryParse(s.slice(a, b + 1));
+    if (v !== undefined) return v;
+  }
+  return null;
+}
+
 function fileToBase64(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
@@ -215,6 +234,10 @@ export async function generateWithGemini(input, onLog = () => {}) {
       temperature: 0.3,
       responseMimeType: 'application/json',
       responseSchema: SCHEMA,
+      maxOutputTokens: 16384,
+      // gemini-2.5-flash は既定で思考にトークンを消費し、JSON 出力が途中で
+      // 切れて parse 失敗することがある。思考を無効化して出力を確実に完結させる。
+      thinkingConfig: { thinkingBudget: 0 },
     },
   };
 
@@ -244,17 +267,16 @@ export async function generateWithGemini(input, onLog = () => {}) {
 
   const json = await resp.json();
   const cand = json?.candidates?.[0];
+  const reason = cand?.finishReason || json?.promptFeedback?.blockReason || '?';
   const text = cand?.content?.parts?.map(p => p.text).filter(Boolean).join('') || '';
   if (!text) {
-    const reason = cand?.finishReason || json?.promptFeedback?.blockReason || '?';
     throw new Error(t('g-err-no-response', { reason }));
   }
 
-  let data;
-  try {
-    data = JSON.parse(text);
-  } catch (e) {
-    throw new Error(t('g-err-json'));
+  const data = parseJsonLoose(text);
+  if (data == null) {
+    // 切り捨て(MAX_TOKENS)等で壊れている場合は理由を添えて通知
+    throw new Error(t('g-err-json') + (reason && reason !== 'STOP' ? ` (${reason})` : ''));
   }
 
   // meta が無い場合の保険
