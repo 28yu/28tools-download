@@ -7,7 +7,25 @@
 import { t } from './i18n.js';
 
 // Transformers.js (ESM) を CDN から動的 import。初回のみモデルを DL。
-const TRANSFORMERS_CDN = 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.1.2';
+// 1つ目がネットワーク/CDN ブロックで失敗しても 2つ目を試す (経路を増やす)。
+const TRANSFORMERS_CDNS = [
+  'https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.1.2',
+  'https://esm.sh/@huggingface/transformers@3.1.2',
+  'https://unpkg.com/@huggingface/transformers@3.1.2',
+];
+
+async function importTransformers() {
+  let lastErr;
+  for (const url of TRANSFORMERS_CDNS) {
+    try {
+      return await import(/* @vite-ignore */ url);
+    } catch (e) {
+      lastErr = e;
+      console.warn('Transformers.js import failed from', url, e);
+    }
+  }
+  throw lastErr || new Error('Failed to import Transformers.js');
+}
 
 // 日本語は base でも重い。速度優先で base、精度が要るなら small に変更可。
 const ASR_MODEL = 'onnx-community/whisper-base';
@@ -17,7 +35,7 @@ let _pipelinePromise = null;
 async function getPipeline(onProgress) {
   if (_pipelinePromise) return _pipelinePromise;
   _pipelinePromise = (async () => {
-    const { pipeline, env } = await import(/* @vite-ignore */ TRANSFORMERS_CDN);
+    const { pipeline, env } = await importTransformers();
     // リモートモデルのみ使用 (ローカルパス探索を無効化)
     env.allowLocalModels = false;
     const asr = await pipeline('automatic-speech-recognition', ASR_MODEL, {
