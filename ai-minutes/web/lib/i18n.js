@@ -91,6 +91,7 @@ const DICT = {
   'g-err-api':      { ja: 'Gemini API エラー ({status}): {detail}', en: 'Gemini API error ({status}): {detail}', zh: 'Gemini API 错误（{status}）：{detail}' },
   'g-err-no-response':{ ja: 'Gemini から有効な応答が得られませんでした (理由: {reason})。', en: 'No valid response from Gemini (reason: {reason}).', zh: '未从 Gemini 获得有效响应（原因：{reason}）。' },
   'g-err-json':     { ja: 'Gemini の応答を JSON として解釈できませんでした。', en: 'Could not parse Gemini\'s response as JSON.', zh: '无法将 Gemini 的响应解析为 JSON。' },
+  'g-err-maxtokens':{ ja: '会議が長く、AI の出力が上限に達しました。音声を分割（10〜15分程度）して再度お試しください。', en: 'The meeting is long and the AI output hit its limit. Please split the audio (about 10-15 min) and try again.', zh: '会议较长，AI 输出已达上限。请将音频分割（约10-15分钟）后重试。' },
 
   // ---------- transcribe.js ----------
   'tr-prepare':     { ja: '文字起こしエンジンを準備中... (初回はモデル DL に時間がかかります)', en: 'Preparing the transcription engine... (first run downloads the model)', zh: '正在准备转写引擎...（首次运行需下载模型）' },
