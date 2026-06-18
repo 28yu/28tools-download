@@ -116,6 +116,12 @@
           <span class="dropzone-title" id="audio-dz-title">音声ファイルを選択</span>
           <span class="dropzone-sub" data-lang-key="aimin-audio-sub">mp3 / m4a / wav など</span>
         </label>
+        <div class="record-controls">
+          <button type="button" class="record-btn" id="record-btn">🎤 マイクで録音</button>
+          <span class="record-status" id="record-status"></span>
+        </div>
+        <audio id="record-preview" class="record-preview" controls style="display:none"></audio>
+        <p class="record-note" data-lang-key="aimin-record-note">※ 録音データは端末に保存されません（ブラウザのメモリ上で処理）。高精度版では生成時に Google へ送信されます。</p>
       </div>
 
       <!-- 資料 -->

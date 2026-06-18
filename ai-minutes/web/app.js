@@ -6,6 +6,7 @@ import { generateWithGemini } from './lib/gemini.js';
 import { transcribeAudio, structureHeuristically } from './lib/transcribe.js';
 import { mountMinutes, minutesToText } from './lib/render.js';
 import { t, setLang } from './lib/i18n.js';
+import { MicRecorder, formatDuration } from './lib/recorder.js';
 
 const $ = (id) => document.getElementById(id);
 const APIKEY_STORE = 'ai-minutes-gemini-key';
@@ -21,15 +22,21 @@ const state = {
   materialFiles: [],
   style: 'figure',
   lastData: null,
+  recordedDuration: null, // 録音由来なら秒数 (それ以外は null)
 };
 
-/* ---------- 入力: 音声 ---------- */
+const recorder = new MicRecorder();
+let _previewUrl = null;
+
+/* ---------- 入力: 音声 (ファイル) ---------- */
 function setupAudioInput() {
   const dz = $('audio-dropzone');
   const input = $('audio-input');
 
   input.addEventListener('change', () => {
     state.audioFile = input.files[0] || null;
+    if (state.audioFile) clearRecordingPreview(); // ファイル選択時は録音を破棄
+    state.recordedDuration = null;
     dz.classList.toggle('has-file', !!state.audioFile);
     applyAudioTitle();
     updateSummary();
@@ -38,9 +45,81 @@ function setupAudioInput() {
 }
 
 function applyAudioTitle() {
-  $('audio-dz-title').textContent = state.audioFile
-    ? t('dz-audio-selected', { name: state.audioFile.name })
-    : t('dz-audio-default');
+  const el = $('audio-dz-title');
+  if (state.audioFile && state.recordedDuration != null) {
+    el.textContent = t('dz-audio-recorded', { time: formatDuration(state.recordedDuration) });
+  } else if (state.audioFile) {
+    el.textContent = t('dz-audio-selected', { name: state.audioFile.name });
+  } else {
+    el.textContent = t('dz-audio-default');
+  }
+}
+
+/* ---------- 入力: マイク録音 (録音 → 停止 → メモリ内 WAV) ---------- */
+function setupRecorder() {
+  const btn = $('record-btn');
+  const status = $('record-status');
+
+  btn.addEventListener('click', async () => {
+    if (recorder.isRecording) {
+      // 停止 → 変換
+      btn.disabled = true;
+      status.textContent = t('rec-converting');
+      try {
+        const file = await recorder.stop();
+        applyRecordedFile(file, lastTickSec);
+        status.textContent = t('rec-done', { time: formatDuration(lastTickSec) });
+      } catch (err) {
+        console.error(err);
+        status.textContent = '❌ ' + err.message;
+      } finally {
+        btn.classList.remove('recording');
+        btn.textContent = t('rec-start');
+        btn.disabled = false;
+      }
+      return;
+    }
+
+    // 録音開始
+    try {
+      await recorder.start((sec) => {
+        lastTickSec = sec;
+        status.textContent = t('rec-recording', { time: formatDuration(sec) });
+      });
+      btn.classList.add('recording');
+      btn.textContent = t('rec-stop');
+    } catch (err) {
+      console.error(err);
+      status.textContent = '❌ ' + err.message;
+    }
+  });
+}
+
+let lastTickSec = 0;
+
+function applyRecordedFile(file, durationSec) {
+  // 既存のファイル選択をクリアし、録音を音声入力として採用
+  $('audio-input').value = '';
+  state.audioFile = file;
+  state.recordedDuration = durationSec;
+  $('audio-dropzone').classList.add('has-file');
+  applyAudioTitle();
+  updateSummary();
+
+  // メモリ内 blob URL でプレビュー (端末には保存しない)
+  clearRecordingPreview();
+  _previewUrl = URL.createObjectURL(file);
+  const preview = $('record-preview');
+  preview.src = _previewUrl;
+  preview.style.display = 'block';
+}
+
+function clearRecordingPreview() {
+  const preview = $('record-preview');
+  preview.pause && preview.pause();
+  preview.removeAttribute('src');
+  preview.style.display = 'none';
+  if (_previewUrl) { URL.revokeObjectURL(_previewUrl); _previewUrl = null; }
 }
 
 /* ---------- 入力: 資料画像 ---------- */
@@ -288,6 +367,7 @@ function applyDynamicLang() {
   applyAudioTitle();
   applyMaterialTitle();
   $('copy-btn').textContent = t('btn-copy');
+  if (!recorder.isRecording) $('record-btn').textContent = t('rec-start');
   updateSummary();
   if (state.lastData) {
     mountMinutes($('minutes-output'), state.lastData, state.style);
@@ -298,6 +378,7 @@ function applyDynamicLang() {
 function init() {
   setLang(detectLang());
   setupAudioInput();
+  setupRecorder();
   setupMaterialInput();
   setupModeSwitch();
   setupApiKey();

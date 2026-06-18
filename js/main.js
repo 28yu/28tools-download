@@ -7525,6 +7525,11 @@ translations.filledRegion = {
             en: 'mp3 / m4a / wav, etc.',
             zh: 'mp3 / m4a / wav 等'
         },
+        'aimin-record-note': {
+            ja: '※ 録音データは端末に保存されません（ブラウザのメモリ上で処理）。高精度版では生成時に Google へ送信されます。',
+            en: '* Recordings are not saved on your device (processed in browser memory). In high-accuracy mode they are sent to Google when generating.',
+            zh: '※ 录音数据不会保存在设备上（在浏览器内存中处理）。高精度版在生成时会发送到 Google。'
+        },
         'aimin-material-label': {
             ja: '📐 打合せ資料 <span class="opt">（任意・複数可）</span>',
             en: '📐 Meeting materials <span class="opt">(optional, multiple)</span>',
