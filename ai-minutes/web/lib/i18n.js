@@ -31,6 +31,18 @@ const DICT = {
   'dz-material-default': { ja: '図面・資料の画像を選択', en: 'Select drawing/material images', zh: '选择图纸/资料图像' },
   'dz-material-selected':{ ja: '📐 {n} 枚の資料', en: '📐 {n} material(s)', zh: '📐 {n} 张资料' },
 
+  // ---------- 録音 (recorder.js / app.js) ----------
+  'rec-start':      { ja: '🎤 マイクで録音', en: '🎤 Record with mic', zh: '🎤 用麦克风录音' },
+  'rec-stop':       { ja: '⏹ 停止', en: '⏹ Stop', zh: '⏹ 停止' },
+  'rec-recording':  { ja: '🔴 録音中… {time}', en: '🔴 Recording… {time}', zh: '🔴 录音中… {time}' },
+  'rec-converting': { ja: '録音を変換中...', en: 'Converting recording...', zh: '正在转换录音...' },
+  'rec-done':       { ja: '録音を取り込みました（{time}）', en: 'Recording captured ({time})', zh: '已获取录音（{time}）' },
+  'dz-audio-recorded':  { ja: '🎙️ 録音した音声（{time}）', en: '🎙️ Recorded audio ({time})', zh: '🎙️ 录制的音频（{time}）' },
+  'rec-err-unsupported':{ ja: 'お使いのブラウザは録音に対応していません。', en: 'Your browser does not support recording.', zh: '您的浏览器不支持录音。' },
+  'rec-err-denied': { ja: 'マイクの使用が許可されませんでした。ブラウザの設定で許可してください。', en: 'Microphone access was denied. Please allow it in your browser settings.', zh: '麦克风使用被拒绝。请在浏览器设置中允许。' },
+  'rec-err-nomic':  { ja: 'マイクが見つかりませんでした。', en: 'No microphone was found.', zh: '未找到麦克风。' },
+  'rec-err-generic':{ ja: '録音に失敗しました。', en: 'Recording failed.', zh: '录音失败。' },
+
   // ---------- input summary ----------
   'sum-audio':      { ja: '音声', en: 'Audio', zh: '音频' },
   'sum-material':   { ja: '資料{n}', en: 'Materials{n}', zh: '资料{n}' },

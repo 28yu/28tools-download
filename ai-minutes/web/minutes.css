@@ -131,6 +131,31 @@
 }
 .dropzone-sub { font-size: 0.82rem; color: var(--disabled-gray); display: block; }
 
+/* ---------- 録音 ---------- */
+.record-controls { display: flex; align-items: center; gap: 12px; margin-top: 10px; flex-wrap: wrap; }
+.record-btn {
+  border: 1px solid var(--light-concrete);
+  background: var(--glass-white);
+  color: var(--steel-blue);
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.88rem;
+  transition: all 0.2s ease;
+}
+.record-btn:hover { border-color: var(--blueprint-blue); color: var(--blueprint-blue); }
+.record-btn.recording {
+  border-color: #e74c3c;
+  color: #e74c3c;
+  background: rgba(231, 76, 60, 0.06);
+  animation: rec-pulse 1.4s ease-in-out infinite;
+}
+@keyframes rec-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.6; } }
+.record-status { font-size: 0.85rem; color: var(--steel-blue); }
+.record-preview { display: block; width: 100%; margin-top: 10px; }
+.record-note { font-size: 0.78rem; color: var(--disabled-gray); line-height: 1.6; margin: 8px 0 0; }
+
 .thumb-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
 .thumb-row img {
   width: 56px; height: 56px; object-fit: cover;
