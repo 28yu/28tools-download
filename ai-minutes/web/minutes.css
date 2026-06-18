@@ -1,0 +1,395 @@
+/* ============================================================
+   AI イラスト議事録 — ツール固有スタイル
+   ヘッダー/サイドバー/パンくず/フッターは css/style.css が提供。
+   ここでは tool 固有 (panel, dropzone, mode-card, minutes-output 等) のみ。
+   ============================================================ */
+:root {
+  --concrete-gray: #2c3e50;
+  --light-concrete: #ecf0f1;
+  --steel-blue: #34495e;
+  --glass-white: #ffffff;
+  --architect-green: #27ae60;
+  --construction-orange: #e67e22;
+  --blueprint-blue: #3498db;
+  --disabled-gray: #95a5a6;
+  --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
+  --shadow-medium: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.tool-main { padding-bottom: 60px; }
+
+/* ---------- card / panel ---------- */
+.panel {
+  background: var(--glass-white);
+  border-radius: 16px;
+  box-shadow: var(--shadow-light);
+  padding: 32px;
+  margin-bottom: 24px;
+}
+.panel-title {
+  font-size: 1.1rem;
+  color: var(--concrete-gray);
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.panel-title .step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, var(--architect-green), var(--blueprint-blue));
+  color: white;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* ---------- notices ---------- */
+.privacy-notice {
+  background: rgba(39, 174, 96, 0.08);
+  border-left: 3px solid var(--architect-green);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: var(--steel-blue);
+  line-height: 1.7;
+}
+.privacy-notice strong { color: var(--architect-green); }
+.accuracy-notice {
+  background: rgba(230, 126, 34, 0.08);
+  border-left: 3px solid var(--construction-orange);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+  color: var(--steel-blue);
+  line-height: 1.7;
+}
+.accuracy-notice strong { color: var(--construction-orange); }
+
+/* ---------- 入力レイアウト ---------- */
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.input-col { display: flex; flex-direction: column; }
+.input-label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--concrete-gray);
+  margin-bottom: 8px;
+  display: block;
+}
+.input-label .opt { font-weight: 400; color: var(--disabled-gray); font-size: 0.82rem; }
+
+.transcript-block { margin-top: 20px; }
+#transcript-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--light-concrete);
+  border-radius: 8px;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--concrete-gray);
+  resize: vertical;
+}
+#transcript-input:focus { outline: 2px solid var(--blueprint-blue); outline-offset: -1px; }
+
+/* ---------- dropzone ---------- */
+.dropzone {
+  display: block;
+  border: 2px dashed var(--disabled-gray);
+  border-radius: 12px;
+  padding: 32px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #fafbfc 0%, #f4f6f8 100%);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.dropzone.compact { padding: 24px 16px; }
+.dropzone:hover, .dropzone.dragover {
+  border-color: var(--blueprint-blue);
+  background: rgba(52, 152, 219, 0.05);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-light);
+}
+.dropzone.has-file { border-color: var(--architect-green); border-style: solid; background: rgba(39,174,96,0.05); }
+.dropzone input[type="file"] {
+  position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none;
+}
+.dropzone-icon { font-size: 2rem; margin-bottom: 8px; display: block; }
+.dropzone-title {
+  font-size: 1rem; font-weight: 500; color: var(--concrete-gray);
+  margin-bottom: 4px; display: block; word-break: break-all;
+}
+.dropzone-sub { font-size: 0.82rem; color: var(--disabled-gray); display: block; }
+
+.thumb-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.thumb-row img {
+  width: 56px; height: 56px; object-fit: cover;
+  border-radius: 6px; border: 1px solid var(--light-concrete);
+}
+
+/* ---------- mode cards ---------- */
+.mode-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.mode-card { cursor: pointer; }
+.mode-card input { position: absolute; opacity: 0; pointer-events: none; }
+.mode-card-inner {
+  border: 2px solid var(--light-concrete);
+  border-radius: 12px;
+  padding: 16px 18px;
+  height: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  background: var(--glass-white);
+}
+.mode-card:hover .mode-card-inner { border-color: var(--blueprint-blue); }
+.mode-card input:checked + .mode-card-inner {
+  border-color: var(--architect-green);
+  background: rgba(39,174,96,0.05);
+  box-shadow: var(--shadow-light);
+}
+.mode-card-head {
+  font-weight: 700; color: var(--concrete-gray); margin-bottom: 6px;
+  display: flex; align-items: center; gap: 8px;
+}
+.mode-card-desc { font-size: 0.85rem; color: var(--steel-blue); line-height: 1.6; }
+.badge {
+  background: linear-gradient(135deg, var(--architect-green), var(--blueprint-blue));
+  color: #fff; font-size: 0.7rem; padding: 2px 8px; border-radius: 999px; font-weight: 700;
+}
+
+/* ---------- API キー ---------- */
+.apikey-block {
+  border-top: 1px dashed var(--light-concrete);
+  padding-top: 18px;
+}
+.apikey-block.hidden { display: none; }
+.apikey-row { display: flex; gap: 8px; }
+#apikey-input {
+  flex: 1;
+  border: 1px solid var(--light-concrete);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+#apikey-input:focus { outline: 2px solid var(--blueprint-blue); outline-offset: -1px; }
+.apikey-remember {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 0.85rem; color: var(--steel-blue); margin: 10px 0 6px;
+}
+.apikey-help { font-size: 0.82rem; color: var(--disabled-gray); line-height: 1.6; margin: 0; }
+.apikey-help a { color: var(--blueprint-blue); }
+
+/* ---------- style toggle ---------- */
+.style-toggle {
+  display: inline-flex;
+  gap: 4px;
+  background: var(--light-concrete);
+  padding: 4px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.style-btn {
+  border: none;
+  background: transparent;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--steel-blue);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.style-btn.active {
+  background: var(--glass-white);
+  color: var(--blueprint-blue);
+  font-weight: 700;
+  box-shadow: var(--shadow-light);
+}
+
+/* ---------- actions / status ---------- */
+.actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.btn-primary {
+  background: linear-gradient(135deg, var(--architect-green), var(--blueprint-blue));
+  color: white; border: none; padding: 12px 28px; border-radius: 8px;
+  cursor: pointer; font-size: 0.95rem; font-weight: 600; font-family: inherit;
+  box-shadow: var(--shadow-light); transition: all 0.2s ease;
+}
+.btn-primary.slim { padding: 9px 18px; font-size: 0.88rem; }
+.btn-primary:hover:not(:disabled) { transform: translateY(-2px); box-shadow: var(--shadow-medium); }
+.btn-primary:disabled { background: var(--disabled-gray); cursor: not-allowed; transform: none; box-shadow: none; }
+.btn-ghost {
+  background: var(--glass-white); border: 1px solid var(--light-concrete);
+  padding: 9px 16px; border-radius: 8px; cursor: pointer;
+  font-family: inherit; font-size: 0.88rem; color: var(--steel-blue); transition: all 0.2s ease;
+}
+.btn-ghost:hover { border-color: var(--blueprint-blue); color: var(--blueprint-blue); }
+.meta-summary { font-size: 0.88rem; color: var(--steel-blue); }
+
+.status {
+  margin-top: 18px; padding: 16px 20px; border-radius: 10px;
+  background: var(--light-concrete); display: none;
+}
+.status.show { display: block; }
+.status-msg { font-weight: 500; color: var(--concrete-gray); margin-bottom: 8px; }
+.progress { height: 6px; background: #fff; border-radius: 3px; overflow: hidden; margin-bottom: 12px; }
+.progress > div {
+  height: 100%; width: 0;
+  background: linear-gradient(90deg, var(--architect-green), var(--blueprint-blue));
+  transition: width 0.3s ease;
+}
+.log {
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 0.76rem; color: var(--steel-blue);
+  max-height: 130px; overflow: auto; line-height: 1.6;
+  background: #fff; padding: 8px 12px; border-radius: 6px;
+}
+.log:empty { display: none; }
+
+/* ---------- 出力ツールバー ---------- */
+.output-toolbar {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 12px; margin-bottom: 16px;
+}
+.output-title { font-size: 1.2rem; font-weight: 700; color: var(--concrete-gray); }
+.output-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* ============================================================
+   議事録レンダリング — 共通
+   ============================================================ */
+.minutes-output {
+  background: var(--glass-white);
+  border-radius: 16px;
+  box-shadow: var(--shadow-light);
+  padding: 36px;
+}
+.mn-header { text-align: center; margin-bottom: 28px; border-bottom: 2px solid var(--light-concrete); padding-bottom: 20px; }
+.mn-title { font-size: 1.7rem; font-weight: 700; color: var(--concrete-gray); margin: 0 0 12px; }
+.mn-meta { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px; font-size: 0.9rem; color: var(--steel-blue); }
+.mn-meta span { display: inline-flex; align-items: center; gap: 5px; }
+
+.mn-summary {
+  background: rgba(52,152,219,0.06);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-bottom: 28px;
+  color: var(--steel-blue);
+  line-height: 1.8;
+}
+
+.mn-section { margin-bottom: 30px; }
+.mn-section-head {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.15rem; font-weight: 700; color: var(--concrete-gray);
+  margin-bottom: 14px;
+}
+.mn-section-head .mn-ico {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 10px; color: #fff; flex-shrink: 0;
+}
+.mn-section-head svg { width: 20px; height: 20px; }
+
+/* セクション別アクセント色 */
+.mn-sec-decisions .mn-ico { background: var(--architect-green); }
+.mn-sec-todos     .mn-ico { background: var(--blueprint-blue); }
+.mn-sec-issues    .mn-ico { background: var(--construction-orange); }
+.mn-sec-discussions .mn-ico { background: var(--steel-blue); }
+
+/* カード（図解スタイル） */
+.mn-cards { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.mn-card {
+  display: flex; gap: 14px; align-items: flex-start;
+  border: 1px solid var(--light-concrete);
+  border-radius: 12px;
+  padding: 14px 18px;
+  background: var(--glass-white);
+}
+.mn-card .mn-card-ico {
+  flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--light-concrete);
+}
+.mn-card .mn-card-ico svg { width: 22px; height: 22px; }
+.mn-card-body { flex: 1; }
+.mn-card-text { color: var(--concrete-gray); line-height: 1.7; margin: 0 0 6px; }
+.mn-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.mn-tag {
+  font-size: 0.78rem; padding: 2px 10px; border-radius: 999px;
+  background: var(--light-concrete); color: var(--steel-blue);
+}
+.mn-tag.speaker { background: rgba(52,152,219,0.12); color: var(--blueprint-blue); }
+.mn-tag.assignee { background: rgba(39,174,96,0.12); color: var(--architect-green); }
+.mn-tag.due { background: rgba(230,126,34,0.12); color: var(--construction-orange); }
+.mn-tag.ref { background: rgba(44,62,80,0.08); color: var(--steel-blue); }
+
+/* 議論の流れ */
+.mn-topic { margin-bottom: 14px; }
+.mn-topic-title { font-weight: 600; color: var(--concrete-gray); margin-bottom: 6px; }
+.mn-topic ul { margin: 0; padding-left: 1.3em; color: var(--steel-blue); line-height: 1.75; }
+
+.mn-empty { color: var(--disabled-gray); font-size: 0.9rem; }
+.mn-footnote {
+  margin-top: 28px; padding-top: 16px; border-top: 1px dashed var(--light-concrete);
+  font-size: 0.8rem; color: var(--disabled-gray); text-align: center;
+}
+
+/* ============================================================
+   手描き風スタイル
+   ============================================================ */
+.minutes-output.style-hand {
+  font-family: 'Yomogi', 'Noto Sans JP', sans-serif;
+  background: #fffef9;
+}
+.minutes-output.style-hand .mn-title,
+.minutes-output.style-hand .mn-section-head,
+.minutes-output.style-hand .mn-card-text,
+.minutes-output.style-hand .mn-topic-title { font-family: 'Yomogi', 'Noto Sans JP', sans-serif; }
+.minutes-output.style-hand .mn-card {
+  position: relative; border: none; background: transparent;
+}
+.minutes-output.style-hand .mn-card > .rough-bg {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+}
+.minutes-output.style-hand .mn-card > .mn-card-ico,
+.minutes-output.style-hand .mn-card > .mn-card-body { position: relative; z-index: 1; }
+.minutes-output.style-hand .mn-summary { background: transparent; position: relative; }
+.minutes-output.style-hand .mn-header { border-bottom: none; }
+
+/* ============================================================
+   レスポンシブ
+   ============================================================ */
+@media (max-width: 768px) {
+  .panel { padding: 20px; }
+  .input-grid, .mode-cards { grid-template-columns: 1fr; }
+  .minutes-output { padding: 22px; }
+  .mn-title { font-size: 1.4rem; }
+  .output-toolbar { flex-direction: column; align-items: flex-start; }
+}
+
+/* ============================================================
+   印刷
+   ============================================================ */
+@media print {
+  body * { visibility: hidden; }
+  #minutes-output, #minutes-output * { visibility: visible; }
+  #minutes-output {
+    position: absolute; left: 0; top: 0; width: 100%;
+    box-shadow: none; padding: 0; margin: 0;
+  }
+  .minutes-output { box-shadow: none !important; }
+}
