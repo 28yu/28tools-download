@@ -6,7 +6,7 @@
 // includes/header.html と includes/sidebar.html を fetch() するときの
 // クエリ文字列。includes/* を編集したらここをインクリメントする。
 // (CDN edge cache が古いインクルードを返す問題への対処)
-const INCLUDES_VERSION = '20260618-1';
+const INCLUDES_VERSION = '20260618-2';
 
 // グローバル変数
 let currentLanguage = 'ja';
@@ -90,6 +90,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // ダウンロードボタンの初期化
     setupDownloadButtons();
+
+    // 限定公開ツールのパスワードロック (data-locked リンク)
+    setupLockedLinks();
 
     // SNSシェアボタンの初期化
     initSocialShare();
@@ -7844,6 +7847,45 @@ function downloadWithPassword(version) {
 function showNotAvailableMessage() {
     console.log('⏳ Version not available');
     alert(getDownloadMessage('notAvailable'));
+}
+
+// ========================================
+// 限定公開ツールのパスワードロック
+// パスワードはダウンロードと共通 (downloadConfig.password = '28tools')
+// ========================================
+// data-locked="true" を付けたリンク (カード/サイドバー) のクリックを保護する。
+// 解錠状態は sessionStorage に保存し、ツールページ側のガードと共有する。
+const LOCKED_TOOL_KEY = 'tool-unlocked-ai-minutes';
+
+function isLockedToolUnlocked() {
+    try { return sessionStorage.getItem(LOCKED_TOOL_KEY) === 'yes'; }
+    catch (e) { return false; }
+}
+
+function requestLockedToolAccess() {
+    if (isLockedToolUnlocked()) return true;
+    const pw = prompt(getDownloadMessage('promptMessage'));
+    if (pw === null) return false; // キャンセル
+    if (pw === downloadConfig.password) {
+        try { sessionStorage.setItem(LOCKED_TOOL_KEY, 'yes'); } catch (e) {}
+        return true;
+    }
+    alert(getDownloadMessage('invalidPassword'));
+    return false;
+}
+
+// サイドバー等は後から fetch で挿入されるため、document への委譲で捕捉する。
+function setupLockedLinks() {
+    document.addEventListener('click', function(e) {
+        const link = e.target.closest('a[data-locked="true"]');
+        if (!link) return;
+        if (isLockedToolUnlocked()) return; // 解錠済みは素通り
+        e.preventDefault();
+        e.stopPropagation();
+        if (requestLockedToolAccess()) {
+            window.location.href = link.getAttribute('href');
+        }
+    }, true); // capture: 他のクリックハンドラより先に実行
 }
 
 // ダウンロードボタンの初期化
