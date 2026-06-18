@@ -40,13 +40,8 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- AI イラスト議事録ツール -->
-  <url>
-    <loc>https://28tools.com/ai-minutes/web/</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- AI イラスト議事録ツール: 限定公開中（パスワード保護）のため sitemap 未登録。
+       一般公開時にこの URL を追加する。 -->
 
   <!-- マニュアル - 符号ON/OFF -->
   <url>

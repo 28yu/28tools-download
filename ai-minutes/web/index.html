@@ -4,6 +4,22 @@
 <meta charset="UTF-8">
 <title>AI イラスト議事録 - 28 Tools</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 限定公開ガード: パスワード保護（ダウンロードと共通の '28tools'）。
+     カード経由で解錠済み(sessionStorage)ならスキップ。直接URLアクセスもここで保護する。
+     ※ ページ描画前にブロックするため自己完結のインラインスクリプトにしている。 -->
+<script>
+(function () {
+  try { if (sessionStorage.getItem('tool-unlocked-ai-minutes') === 'yes') return; } catch (e) {}
+  var pw = window.prompt('このツールは限定公開です。パスワードを入力してください：');
+  if (pw === '28tools') {
+    try { sessionStorage.setItem('tool-unlocked-ai-minutes', 'yes'); } catch (e) {}
+  } else {
+    window.location.replace('../../index.html');
+  }
+})();
+</script>
+
 <link rel="icon" type="image/png" href="../../images/site-icons/favicon-28.png">
 <link rel="canonical" href="https://28tools.com/ai-minutes/web/">
 <meta name="description" content="建築現場の打合せ音声と資料から、AI がイラスト付き議事録を自動作成。Whisper による文字起こしはブラウザ完結。高精度版は自分の無料 Gemini API キーを利用（開発者のアカウントは不使用）。">
