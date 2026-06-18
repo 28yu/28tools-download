@@ -5,6 +5,7 @@
    - すべてブラウザから fetch (Google エンドポイントは CORS 対応)
    - 開発者のキーは使わない / ユーザー自身の無料キーを利用
    ============================================================ */
+import { t } from './i18n.js';
 
 // 無料枠で使えるマルチモーダル対応モデル。
 const MODEL = 'gemini-2.5-flash';
@@ -113,16 +114,13 @@ function fileToBase64(file) {
  */
 export async function generateWithGemini(input, onLog = () => {}) {
   const { apiKey, audioFile, materialFiles = [], transcript } = input;
-  if (!apiKey) throw new Error('Gemini API キーが入力されていません。');
+  if (!apiKey) throw new Error(t('g-err-no-key'));
 
   // インライン総量チェック
   let totalBytes = (audioFile ? audioFile.size : 0)
     + materialFiles.reduce((s, f) => s + f.size, 0);
   if (totalBytes > INLINE_LIMIT_BYTES) {
-    throw new Error(
-      `音声・資料の合計が大きすぎます (${(totalBytes / 1048576).toFixed(1)}MB)。` +
-      `18MB 以下に圧縮するか、音声を分割してください。`
-    );
+    throw new Error(t('g-err-too-large', { mb: (totalBytes / 1048576).toFixed(1) }));
   }
 
   const parts = [{ text: PROMPT }];
@@ -132,7 +130,7 @@ export async function generateWithGemini(input, onLog = () => {}) {
   }
 
   if (audioFile) {
-    onLog('音声をエンコード中...');
+    onLog(t('g-encoding-audio'));
     const b64 = await fileToBase64(audioFile);
     parts.push({
       inlineData: { mimeType: audioFile.type || 'audio/mpeg', data: b64 },
@@ -140,7 +138,7 @@ export async function generateWithGemini(input, onLog = () => {}) {
   }
 
   for (let i = 0; i < materialFiles.length; i++) {
-    onLog(`資料 ${i + 1}/${materialFiles.length} をエンコード中...`);
+    onLog(t('g-encoding-material', { i: i + 1, n: materialFiles.length }));
     const f = materialFiles[i];
     const b64 = await fileToBase64(f);
     parts.push({ text: `\n【資料${i + 1}】` });
@@ -148,7 +146,7 @@ export async function generateWithGemini(input, onLog = () => {}) {
   }
 
   if (!transcript?.trim() && !audioFile && materialFiles.length === 0) {
-    throw new Error('音声・資料・文字起こしのいずれかを入力してください。');
+    throw new Error(t('g-err-need-input'));
   }
 
   const reqBody = {
@@ -160,7 +158,7 @@ export async function generateWithGemini(input, onLog = () => {}) {
     },
   };
 
-  onLog('Gemini に送信中... (音声が長いほど時間がかかります)');
+  onLog(t('g-sending'));
   let resp;
   try {
     resp = await fetch(ENDPOINT(MODEL, apiKey), {
@@ -169,34 +167,34 @@ export async function generateWithGemini(input, onLog = () => {}) {
       body: JSON.stringify(reqBody),
     });
   } catch (e) {
-    throw new Error('ネットワークエラー: Gemini に接続できませんでした。');
+    throw new Error(t('g-err-network'));
   }
 
   if (!resp.ok) {
     let detail = '';
     try { const j = await resp.json(); detail = j?.error?.message || ''; } catch (_) {}
     if (resp.status === 400 && /API key/i.test(detail)) {
-      throw new Error('API キーが無効です。Google AI Studio のキーを確認してください。');
+      throw new Error(t('g-err-invalid-key'));
     }
     if (resp.status === 429) {
-      throw new Error('無料枠のレート制限に達しました。しばらく待って再実行してください。');
+      throw new Error(t('g-err-rate'));
     }
-    throw new Error(`Gemini API エラー (${resp.status}): ${detail || resp.statusText}`);
+    throw new Error(t('g-err-api', { status: resp.status, detail: detail || resp.statusText }));
   }
 
   const json = await resp.json();
   const cand = json?.candidates?.[0];
   const text = cand?.content?.parts?.map(p => p.text).filter(Boolean).join('') || '';
   if (!text) {
-    const reason = cand?.finishReason || json?.promptFeedback?.blockReason || '不明';
-    throw new Error(`Gemini から有効な応答が得られませんでした (理由: ${reason})。`);
+    const reason = cand?.finishReason || json?.promptFeedback?.blockReason || '?';
+    throw new Error(t('g-err-no-response', { reason }));
   }
 
   let data;
   try {
     data = JSON.parse(text);
   } catch (e) {
-    throw new Error('Gemini の応答を JSON として解釈できませんでした。');
+    throw new Error(t('g-err-json'));
   }
 
   // meta が無い場合の保険

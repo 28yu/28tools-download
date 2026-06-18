@@ -12,6 +12,7 @@
      discussions: [{ topic, points:[..], speaker }]
    }
    ============================================================ */
+import { t } from './i18n.js';
 
 const esc = (s) => String(s == null ? '' : s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -60,13 +61,13 @@ function cardItem(iconName, text, tagsHtml) {
 
 function section(key, headIcon, title, innerHtml, count) {
   if (!innerHtml) {
-    innerHtml = `<p class="mn-empty">（該当なし）</p>`;
+    innerHtml = `<p class="mn-empty">${t('mn-empty')}</p>`;
   }
   return `
     <div class="mn-section mn-sec-${key}">
       <div class="mn-section-head">
         <span class="mn-ico">${iconSvg(headIcon)}</span>
-        ${esc(title)}${typeof count === 'number' ? `（${count}件）` : ''}
+        ${esc(title)}${typeof count === 'number' ? t('mn-count', { n: count }) : ''}
       </div>
       ${innerHtml}
     </div>`;
@@ -86,7 +87,7 @@ export function renderMinutes(data, style) {
   }
   const header = `
     <div class="mn-header">
-      <h1 class="mn-title">${esc(meta.title || '打合せ議事録')}</h1>
+      <h1 class="mn-title">${esc(meta.title || t('mn-default-title'))}</h1>
       ${metaParts.length ? `<div class="mn-meta">${metaParts.join('')}</div>` : ''}
     </div>`;
 
@@ -117,7 +118,7 @@ export function renderMinutes(data, style) {
       ? `<ul>${it.points.map(p => `<li>${esc(p)}</li>`).join('')}</ul>` : '';
     return `
       <div class="mn-topic">
-        <div class="mn-topic-title">${iconSvg(ICONS.discussions)} ${esc(it.topic || '議題')}${it.speaker ? `　<span class="mn-tag speaker">🗣 ${esc(it.speaker)}</span>` : ''}</div>
+        <div class="mn-topic-title">${iconSvg(ICONS.discussions)} ${esc(it.topic || t('mn-topic-default'))}${it.speaker ? `　<span class="mn-tag speaker">🗣 ${esc(it.speaker)}</span>` : ''}</div>
         ${points}
       </div>`;
   }).join('');
@@ -125,11 +126,11 @@ export function renderMinutes(data, style) {
   const body = [
     header,
     summary,
-    section('decisions', ICONS.decisions, '決定事項', decisions, (d.decisions || []).length),
-    section('todos', ICONS.todos, 'ToDo・宿題', todos, (d.todos || []).length),
-    section('issues', ICONS.issues, '課題・懸念', issues, (d.issues || []).length),
-    section('discussions', ICONS.discussions, '議論の流れ', discussions, (d.discussions || []).length),
-    `<div class="mn-footnote">AI により自動生成された議事録です。内容は必ずご確認ください。 — 28 Tools</div>`,
+    section('decisions', ICONS.decisions, t('mn-sec-decisions'), decisions, (d.decisions || []).length),
+    section('todos', ICONS.todos, t('mn-sec-todos'), todos, (d.todos || []).length),
+    section('issues', ICONS.issues, t('mn-sec-issues'), issues, (d.issues || []).length),
+    section('discussions', ICONS.discussions, t('mn-sec-discussions'), discussions, (d.discussions || []).length),
+    `<div class="mn-footnote">${t('mn-footnote')}</div>`,
   ].join('\n');
 
   return body;
@@ -180,31 +181,31 @@ export function minutesToText(data) {
   const d = data || {};
   const meta = d.meta || {};
   const lines = [];
-  lines.push(`【${meta.title || '打合せ議事録'}】`);
-  if (meta.date) lines.push(`日時: ${meta.date}`);
-  if (meta.location) lines.push(`場所: ${meta.location}`);
-  if (meta.project) lines.push(`案件: ${meta.project}`);
-  if (Array.isArray(meta.attendees) && meta.attendees.length) lines.push(`出席: ${meta.attendees.join('、')}`);
+  lines.push(`【${meta.title || t('mn-default-title')}】`);
+  if (meta.date) lines.push(`${t('txt-date')}: ${meta.date}`);
+  if (meta.location) lines.push(`${t('txt-location')}: ${meta.location}`);
+  if (meta.project) lines.push(`${t('txt-project')}: ${meta.project}`);
+  if (Array.isArray(meta.attendees) && meta.attendees.length) lines.push(`${t('txt-attendees')}: ${meta.attendees.join('、')}`);
   lines.push('');
-  if (d.summary) { lines.push('■ 概要'); lines.push(d.summary); lines.push(''); }
+  if (d.summary) { lines.push(`■ ${t('txt-overview')}`); lines.push(d.summary); lines.push(''); }
 
   const sec = (title, arr, fmt) => {
     lines.push(`■ ${title}`);
-    if (!arr || !arr.length) { lines.push('（該当なし）'); }
+    if (!arr || !arr.length) { lines.push(t('mn-empty')); }
     else arr.forEach((it, i) => lines.push(`${i + 1}. ${fmt(it)}`));
     lines.push('');
   };
-  sec('決定事項', d.decisions, it => it.text + (it.speaker ? `（${it.speaker}）` : ''));
-  sec('ToDo・宿題', d.todos, it => it.text
-    + (it.assignee ? `［担当:${it.assignee}］` : '') + (it.due ? `［期限:${it.due}］` : ''));
-  sec('課題・懸念', d.issues, it => it.text + (it.speaker ? `（${it.speaker}）` : ''));
-  lines.push('■ 議論の流れ');
-  if (!d.discussions || !d.discussions.length) lines.push('（該当なし）');
+  sec(t('mn-sec-decisions'), d.decisions, it => it.text + (it.speaker ? `（${it.speaker}）` : ''));
+  sec(t('mn-sec-todos'), d.todos, it => it.text
+    + (it.assignee ? `［${t('txt-assignee')}:${it.assignee}］` : '') + (it.due ? `［${t('txt-due')}:${it.due}］` : ''));
+  sec(t('mn-sec-issues'), d.issues, it => it.text + (it.speaker ? `（${it.speaker}）` : ''));
+  lines.push(`■ ${t('mn-sec-discussions')}`);
+  if (!d.discussions || !d.discussions.length) lines.push(t('mn-empty'));
   else d.discussions.forEach(it => {
-    lines.push(`・${it.topic || '議題'}${it.speaker ? `（${it.speaker}）` : ''}`);
+    lines.push(`・${it.topic || t('mn-topic-default')}${it.speaker ? `（${it.speaker}）` : ''}`);
     (it.points || []).forEach(p => lines.push(`    - ${p}`));
   });
   lines.push('');
-  lines.push('— AI により自動生成 (28 Tools)');
+  lines.push(t('txt-footer'));
   return lines.join('\n');
 }
