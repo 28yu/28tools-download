@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>AI イラスト議事録 - 28 Tools</title>
+<title>AI議事録 自動作成 - 28 Tools</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- 限定公開ガード: パスワード保護（ダウンロードと共通の '28tools'）。
@@ -29,11 +29,11 @@
 
 <link rel="icon" type="image/png" href="../../images/site-icons/favicon-28.png">
 <link rel="canonical" href="https://28tools.com/ai-minutes/web/">
-<meta name="description" content="建築現場の打合せ音声と資料から、AI がイラスト付き議事録を自動作成。Whisper による文字起こしはブラウザ完結。高精度版は自分の無料 Gemini API キーを利用（開発者のアカウントは不使用）。">
+<meta name="description" content="打合せ音声と資料から、AI が議事録を自動作成。文字起こしはブラウザ完結。高精度版は自分の無料 Gemini API キーを利用（開発者のアカウントは不使用）。">
 
 <!-- OGP -->
-<meta property="og:title" content="AI イラスト議事録 - 28 Tools">
-<meta property="og:description" content="建築現場の打合せ音声と資料から、AI がイラスト付き議事録を自動作成。Whisper による文字起こしはブラウザ完結。高精度版は自分の無料 Gemini API キーを利用。">
+<meta property="og:title" content="AI議事録 自動作成 - 28 Tools">
+<meta property="og:description" content="打合せ音声と資料から、AI が議事録を自動作成。文字起こしはブラウザ完結。高精度版は自分の無料 Gemini API キーを利用。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://28tools.com/ai-minutes/web/">
 <meta property="og:image" content="https://28tools.com/images/ogp-image.png">
@@ -42,8 +42,8 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI イラスト議事録 - 28 Tools">
-<meta name="twitter:description" content="建築現場の打合せ音声と資料から、AI がイラスト付き議事録を自動作成。ブラウザ完結＋任意の無料 Gemini キー対応。">
+<meta name="twitter:title" content="AI議事録 自動作成 - 28 Tools">
+<meta name="twitter:description" content="打合せ音声と資料から、AI が議事録を自動作成。ブラウザ完結＋任意の無料 Gemini キー対応。">
 <meta name="twitter:image" content="https://28tools.com/images/ogp-image.png">
 
 <!-- Google tag (gtag.js) -->
@@ -82,12 +82,12 @@
   <nav class="breadcrumb">
     <a href="../../index.html" data-lang-key="breadcrumb-home">ホーム</a>
     <span class="separator">›</span>
-    <span>AI イラスト議事録</span>
+    <span>AI議事録 自動作成</span>
   </nav>
 
   <main class="tool-main">
-  <h2 class="page-title" data-lang-key="aimin-title">AI イラスト議事録</h2>
-  <p class="page-description" data-lang-key="aimin-desc">建築現場の打合せ音声と資料から、AI がイラスト付き議事録を自動作成 — 文字起こしはブラウザ完結。高精度版はあなた自身の無料 Gemini API キーを利用します。</p>
+  <h2 class="page-title" data-lang-key="aimin-title">AI議事録 自動作成</h2>
+  <p class="page-description" data-lang-key="aimin-desc">打合せ音声と資料から、AI が議事録を自動作成 — 文字起こしはブラウザ完結。高精度版はあなた自身の無料 Gemini API キーを利用します。</p>
 
   <div class="privacy-notice" data-lang-key="aimin-privacy">
     🔒 <strong>プライバシーについて</strong> —
@@ -198,15 +198,15 @@
 
   <!-- ========== STEP 3: スタイル & 実行 ========== -->
   <section class="panel">
-    <div class="panel-title"><span class="step">3</span><span data-lang-key="aimin-step3">イラストのスタイルを選んで作成</span></div>
+    <div class="panel-title"><span class="step">3</span><span data-lang-key="aimin-step3">スタイルを選んで作成</span></div>
 
     <div class="style-toggle" id="style-toggle">
       <button type="button" class="style-btn active" data-style="figure" data-lang-key="aimin-style-figure">📊 図解スタイル</button>
-      <button type="button" class="style-btn" data-style="hand" data-lang-key="aimin-style-hand">✏️ 手描き風スタイル</button>
+      <button type="button" class="style-btn" data-style="mindmap" data-lang-key="aimin-style-mindmap">🧠 マインドマップ</button>
     </div>
 
     <div class="actions">
-      <button class="btn-primary" id="generate-btn" data-lang-key="aimin-generate">🪄 イラスト議事録を作成</button>
+      <button class="btn-primary" id="generate-btn" data-lang-key="aimin-generate">🪄 議事録を作成</button>
       <span class="meta-summary" id="input-summary"></span>
     </div>
 
@@ -248,9 +248,8 @@
   </div>
 </footer>
 
-<!-- アイコン (図解スタイル) / 手描き (手描き風スタイル) -->
+<!-- アイコン (図解スタイル用) -->
 <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/roughjs@4.6.6/bundled/rough.js"></script>
 
 <!-- 共通サイト JS (ヘッダー/サイドバーの includes 読み込みと言語切替) -->
 <script src="../../js/main.js"></script>

@@ -936,9 +936,9 @@ function initTranslations() {
             zh: '从结构图PDF（梁/柱列表）自动提取符号、截面尺寸和材质并生成Excel。直接对接Revit族类型创建。'
         },
         'index-category-ai-minutes-desc': {
-            ja: '打合せ音声と資料から、AI がイラスト付き議事録を自動作成。文字起こしはブラウザ完結、高精度版は無料 Gemini キー対応。',
-            en: 'AI auto-generates illustrated meeting minutes from audio and materials. Transcription runs in-browser; high-accuracy mode uses a free Gemini key.',
-            zh: '从会议音频和资料中，AI自动生成带插图的会议记录。转写在浏览器内完成，高精度版支持免费Gemini密钥。'
+            ja: '打合せ音声と資料から、AI が議事録を自動作成。文字起こしはブラウザ完結、高精度版は無料 Gemini キー対応。',
+            en: 'AI auto-generates meeting minutes from audio and materials. Transcription runs in-browser; high-accuracy mode uses a free Gemini key.',
+            zh: '从会议音频和资料中，AI自动生成会议记录。转写在浏览器内完成，高精度版支持免费Gemini密钥。'
         },
         'index-category-news-desc': {
             ja: 'BIM・Revit・建築業界の最新ニュースを自動収集。業界トレンドを毎日チェック。（準備中）',
@@ -7478,17 +7478,17 @@ translations.filledRegion = {
         }
     };
 
-    // AI イラスト議事録ツール
+    // AI議事録 自動作成ツール
     translations.aiMinutesPage = {
         'aimin-title': {
-            ja: 'AI イラスト議事録',
-            en: 'AI Illustrated Minutes',
-            zh: 'AI 图解会议记录'
+            ja: 'AI議事録 自動作成',
+            en: 'AI Minutes — Auto Generate',
+            zh: 'AI会议记录 自动生成'
         },
         'aimin-desc': {
-            ja: '建築現場の打合せ音声と資料から、AI がイラスト付き議事録を自動作成 — 文字起こしはブラウザ完結。高精度版はあなた自身の無料 Gemini API キーを利用します。',
-            en: 'AI auto-generates illustrated minutes from construction meeting audio and materials — transcription runs in your browser. The high-accuracy mode uses your own free Gemini API key.',
-            zh: '从建筑现场的会议音频和资料中，AI 自动生成带插图的会议记录 — 转写在浏览器内完成。高精度版使用您自己的免费 Gemini API 密钥。'
+            ja: '打合せ音声と資料から、AI が議事録を自動作成 — 文字起こしはブラウザ完結。高精度版はあなた自身の無料 Gemini API キーを利用します。',
+            en: 'From meeting audio and materials, AI auto-generates minutes — transcription runs in your browser. The high-accuracy mode uses your own free Gemini API key.',
+            zh: '从会议音频和资料中，AI 自动生成会议记录 — 转写在浏览器内完成。高精度版使用您自己的免费 Gemini API 密钥。'
         },
         'aimin-privacy': {
             ja: '🔒 <strong>プライバシーについて</strong> — 音声の文字起こし（簡易版）と議事録の図解化は<strong>あなたのブラウザ内のみ</strong>で行われ、サーバへ送信されません。<br>高精度版で「Gemini」を使う場合は、音声・資料が<strong>Google のサーバへ送信</strong>されます。無料枠の API は入力データが品質改善に利用される可能性があるため、<strong>機密性の高い打合せでは送信内容にご注意ください</strong>。',
@@ -7511,9 +7511,9 @@ translations.filledRegion = {
             zh: '选择处理方法'
         },
         'aimin-step3': {
-            ja: 'イラストのスタイルを選んで作成',
-            en: 'Choose an illustration style and generate',
-            zh: '选择插图样式并生成'
+            ja: 'スタイルを選んで作成',
+            en: 'Choose a style and generate',
+            zh: '选择样式并生成'
         },
         'aimin-audio-label': {
             ja: '🎙️ 打合せ音声 <span class="opt">（任意）</span>',
@@ -7600,15 +7600,15 @@ translations.filledRegion = {
             en: '📊 Diagram style',
             zh: '📊 图解样式'
         },
-        'aimin-style-hand': {
-            ja: '✏️ 手描き風スタイル',
-            en: '✏️ Hand-drawn style',
-            zh: '✏️ 手绘风格'
+        'aimin-style-mindmap': {
+            ja: '🧠 マインドマップ',
+            en: '🧠 Mind map',
+            zh: '🧠 思维导图'
         },
         'aimin-generate': {
-            ja: '🪄 イラスト議事録を作成',
-            en: '🪄 Generate illustrated minutes',
-            zh: '🪄 生成图解会议记录'
+            ja: '🪄 議事録を作成',
+            en: '🪄 Generate minutes',
+            zh: '🪄 生成会议记录'
         },
         'aimin-output-title': {
             ja: '📋 議事録プレビュー',

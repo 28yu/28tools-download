@@ -1,5 +1,5 @@
 /* ============================================================
-   app.js — AI イラスト議事録 オーケストレーション
+   app.js — AI議事録 自動作成 オーケストレーション
    入力 (音声 / 資料 / 文字起こし) → 処理 (Gemini or ブラウザ) → 描画 (2 スタイル)
    ============================================================ */
 import { generateWithGemini } from './lib/gemini.js';
@@ -382,11 +382,11 @@ function setupOutputActions() {
     if (!state.lastData) return;
     const css = document.querySelector('link[href="./minutes.css"]');
     const node = $('minutes-output').cloneNode(true);
-    // Rough.js の SVG はクローンに含まれるのでそのまま使える
+    // マインドマップの SVG もクローンに含まれるのでそのまま使える
     const html = `<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8">
 <title>${(state.lastData.meta?.title) || '議事録'}</title>
 <style>${MINUTES_INLINE_CSS}</style></head>
-<body><div class="minutes-output ${state.style === 'hand' ? 'style-hand' : 'style-figure'}">${node.innerHTML}</div></body></html>`;
+<body><div class="minutes-output ${state.style === 'mindmap' ? 'style-mindmap' : 'style-figure'}">${node.innerHTML}</div></body></html>`;
     const blob = new Blob([html], { type: 'text/html' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
@@ -398,8 +398,7 @@ function setupOutputActions() {
 // HTML 保存用の最小インライン CSS (アイコンは絵文字でフォールバック)
 const MINUTES_INLINE_CSS = `
 body{font-family:'Noto Sans JP',sans-serif;background:#f4f6f8;margin:0;padding:24px;color:#2c3e50}
-.minutes-output{max-width:820px;margin:0 auto;background:#fff;border-radius:16px;padding:36px;box-shadow:0 2px 10px rgba(0,0,0,.1)}
-.minutes-output.style-hand{background:#fffef9}
+.minutes-output{max-width:1000px;margin:0 auto;background:#fff;border-radius:16px;padding:36px;box-shadow:0 2px 10px rgba(0,0,0,.1)}
 .mn-header{text-align:center;margin-bottom:28px;border-bottom:2px solid #ecf0f1;padding-bottom:20px}
 .mn-title{font-size:1.7rem;margin:0 0 12px}
 .mn-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;font-size:.9rem;color:#34495e}
@@ -413,7 +412,9 @@ body{font-family:'Noto Sans JP',sans-serif;background:#f4f6f8;margin:0;padding:2
 .mn-tag{font-size:.78rem;padding:2px 10px;border-radius:999px;background:#ecf0f1;color:#34495e}
 .mn-topic{margin-bottom:14px}.mn-topic-title{font-weight:600;margin-bottom:6px}
 .mn-topic ul{margin:0;padding-left:1.3em;color:#34495e;line-height:1.75}
-.mn-empty{color:#95a5a6}.svg,svg{display:none}
+.mn-empty{color:#95a5a6}.style-figure svg{display:none}
+.mn-mm-meta{text-align:center;color:#34495e;font-size:.9rem;margin-bottom:12px}
+.mn-mindmap-wrap{overflow-x:auto}
 .mn-footnote{margin-top:28px;padding-top:16px;border-top:1px dashed #ecf0f1;font-size:.8rem;color:#95a5a6;text-align:center}
 `;
 

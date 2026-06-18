@@ -1,5 +1,5 @@
 /* ============================================================
-   AI イラスト議事録 — ツール固有スタイル
+   AI議事録 自動作成 — ツール固有スタイル
    ヘッダー/サイドバー/パンくず/フッターは css/style.css が提供。
    ここでは tool 固有 (panel, dropzone, mode-card, minutes-output 等) のみ。
    ============================================================ */
@@ -402,26 +402,21 @@
 }
 
 /* ============================================================
-   手描き風スタイル
+   マインドマップ スタイル
    ============================================================ */
-.minutes-output.style-hand {
-  font-family: 'Yomogi', 'Noto Sans JP', sans-serif;
-  background: #fffef9;
+.mn-mindmap { width: 100%; }
+.mn-mm-meta {
+  text-align: center;
+  color: var(--steel-blue);
+  font-size: 0.9rem;
+  margin-bottom: 14px;
 }
-.minutes-output.style-hand .mn-title,
-.minutes-output.style-hand .mn-section-head,
-.minutes-output.style-hand .mn-card-text,
-.minutes-output.style-hand .mn-topic-title { font-family: 'Yomogi', 'Noto Sans JP', sans-serif; }
-.minutes-output.style-hand .mn-card {
-  position: relative; border: none; background: transparent;
+.mn-mindmap-wrap {
+  width: 100%;
+  overflow-x: auto;   /* 小さい画面では横スクロール */
+  text-align: center;
 }
-.minutes-output.style-hand .mn-card > .rough-bg {
-  position: absolute; inset: 0; z-index: 0; pointer-events: none;
-}
-.minutes-output.style-hand .mn-card > .mn-card-ico,
-.minutes-output.style-hand .mn-card > .mn-card-body { position: relative; z-index: 1; }
-.minutes-output.style-hand .mn-summary { background: transparent; position: relative; }
-.minutes-output.style-hand .mn-header { border-bottom: none; }
+.mn-mindmap-wrap svg { display: block; margin: 0 auto; }
 
 /* ============================================================
    レスポンシブ
