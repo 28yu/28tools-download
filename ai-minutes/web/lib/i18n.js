@@ -96,6 +96,7 @@ const DICT = {
   'g-err-network':  { ja: 'ネットワークエラー: Gemini に接続できませんでした。', en: 'Network error: could not connect to Gemini.', zh: '网络错误：无法连接到 Gemini。' },
   'g-err-invalid-key':{ ja: 'API キーが無効です。Google AI Studio のキーを確認してください。', en: 'Invalid API key. Check your key in Google AI Studio.', zh: 'API 密钥无效。请在 Google AI Studio 确认密钥。' },
   'g-err-rate':     { ja: '無料枠のレート制限に達しました。しばらく待って再実行してください。', en: 'Free-tier rate limit reached. Wait a while and try again.', zh: '已达免费额度速率限制。请稍后重试。' },
+  'g-err-overloaded':{ ja: 'Gemini が混雑しています（高負荷）。自動で数回再試行しましたが失敗しました。少し待って再実行してください。', en: 'Gemini is busy (high demand). Auto-retried a few times but failed. Please wait a bit and try again.', zh: 'Gemini 繁忙（高负载）。已自动重试数次仍失败。请稍后重试。' },
   'g-err-api':      { ja: 'Gemini API エラー ({status}): {detail}', en: 'Gemini API error ({status}): {detail}', zh: 'Gemini API 错误（{status}）：{detail}' },
   'g-err-no-response':{ ja: 'Gemini から有効な応答が得られませんでした (理由: {reason})。', en: 'No valid response from Gemini (reason: {reason}).', zh: '未从 Gemini 获得有效响应（原因：{reason}）。' },
   'g-err-json':     { ja: 'Gemini の応答を JSON として解釈できませんでした。', en: 'Could not parse Gemini\'s response as JSON.', zh: '无法将 Gemini 的响应解析为 JSON。' },

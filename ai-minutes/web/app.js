@@ -355,10 +355,11 @@ async function generate() {
 
     setProgress(100);
     state.lastData = data;
-    // 翻訳キャッシュをリセットし、生成時の言語の版として元データを登録
-    state.translatedByLang = { [getLang()]: data };
-    renderOutput(data);
+    // 翻訳キャッシュをリセットし、「中身の言語」を判定して元データを登録
+    // (UI 言語と中身の言語は異なる。例: UI=英語 でも会議は日本語)
+    state.translatedByLang = { [detectContentLang(data)]: data };
     showStatus(t('st-done'));
+    renderOutput(); // 現在の UI 言語に合わせて表示 (必要なら翻訳)
   } catch (err) {
     console.error(err);
     log('Error: ' + err.message);
@@ -368,9 +369,17 @@ async function generate() {
   }
 }
 
-function renderOutput(data) {
+// 議事録データの「中身の言語」を判定 (かな→ja, 漢字のみ→zh, それ以外→en)
+function detectContentLang(data) {
+  const s = JSON.stringify(data || {});
+  if (/[぀-ヿ]/.test(s)) return 'ja';  // ひらがな/カタカナ
+  if (/[一-鿿]/.test(s)) return 'zh';  // 漢字のみ
+  return 'en';
+}
+
+function renderOutput() {
   $('output-section').style.display = 'block';
-  mountMinutes($('minutes-output'), data, state.style);
+  renderMinutesForCurrentLang(); // 現在の UI 言語で表示 (未翻訳かつキーがあれば翻訳)
   $('output-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 

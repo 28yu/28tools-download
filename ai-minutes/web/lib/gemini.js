@@ -286,18 +286,27 @@ export async function generateWithGemini(input, onLog = () => {}) {
 
 /**
  * generateContent を呼び、JSON を解釈して返す共通処理。
+ * 503/500 (一時的な高負荷) はバックオフ付きで自動リトライする。
  */
 async function requestJson(apiKey, reqBody) {
-  let resp;
-  try {
-    resp = await fetch(ENDPOINT(MODEL, apiKey), {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(reqBody),
-    });
-  } catch (e) {
-    throw new Error(t('g-err-network'));
+  let resp = null;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      resp = await fetch(ENDPOINT(MODEL, apiKey), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(reqBody),
+      });
+    } catch (e) {
+      resp = null; // ネットワークエラー → リトライ対象
+    }
+    if (resp && resp.ok) break;
+    const retryable = !resp || resp.status === 503 || resp.status === 500;
+    if (!retryable || attempt === 2) break;
+    await new Promise(r => setTimeout(r, 2000 * (attempt + 1))); // 2s, 4s
   }
+
+  if (!resp) throw new Error(t('g-err-network'));
 
   if (!resp.ok) {
     let detail = '';
@@ -307,6 +316,9 @@ async function requestJson(apiKey, reqBody) {
     }
     if (resp.status === 429) {
       throw new Error(t('g-err-rate'));
+    }
+    if (resp.status === 503 || resp.status === 500) {
+      throw new Error(t('g-err-overloaded'));
     }
     throw new Error(t('g-err-api', { status: resp.status, detail: detail || resp.statusText }));
   }
