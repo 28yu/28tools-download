@@ -75,6 +75,14 @@ const DICT = {
   'btn-copy':   { ja: '📋 テキストでコピー', en: '📋 Copy as text', zh: '📋 复制为文本' },
   'btn-copied': { ja: '✅ コピーしました', en: '✅ Copied', zh: '✅ 已复制' },
 
+  // ---------- 議事録の翻訳 (言語切替時) ----------
+  'tl-translating': { ja: '議事録を{lang}に翻訳中...', en: 'Translating minutes to {lang}...', zh: '正在将会议记录翻译为{lang}...' },
+  'tl-done':        { ja: '✅ {lang}に翻訳しました', en: '✅ Translated to {lang}', zh: '✅ 已翻译为{lang}' },
+  'tl-needkey':     { ja: '※ 内容の翻訳には高精度版(Gemini)のAPIキーが必要です。見出しのみ翻訳しました。', en: '* Translating the content requires a Gemini API key. Only the labels were translated.', zh: '※ 翻译内容需要 Gemini API 密钥。仅翻译了标题。' },
+  'tl-lang-ja':     { ja: '日本語', en: 'Japanese', zh: '日语' },
+  'tl-lang-en':     { ja: '英語', en: 'English', zh: '英语' },
+  'tl-lang-zh':     { ja: '中国語', en: 'Chinese', zh: '中文' },
+
   // ---------- gemini.js ----------
   'g-encoding-audio':    { ja: '音声をエンコード中...', en: 'Encoding audio...', zh: '正在编码音频...' },
   'g-uploading':         { ja: '{name} をアップロード中... (大きいファイルは時間がかかります)', en: 'Uploading {name}... (large files take time)', zh: '正在上传 {name}...（大文件需要时间）' },

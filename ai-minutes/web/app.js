@@ -2,10 +2,10 @@
    app.js — AI議事録 自動作成 オーケストレーション
    入力 (音声 / 資料 / 文字起こし) → 処理 (Gemini or ブラウザ) → 描画 (2 スタイル)
    ============================================================ */
-import { generateWithGemini } from './lib/gemini.js';
+import { generateWithGemini, translateMinutes } from './lib/gemini.js';
 import { transcribeAudio, structureHeuristically } from './lib/transcribe.js';
 import { mountMinutes, minutesToText } from './lib/render.js';
-import { t, setLang } from './lib/i18n.js';
+import { t, setLang, getLang } from './lib/i18n.js';
 import { MicRecorder, MicTester, listMicrophones, onDeviceChange, formatDuration } from './lib/recorder.js';
 
 const $ = (id) => document.getElementById(id);
@@ -23,6 +23,8 @@ const state = {
   style: 'figure',
   lastData: null,
   recordedDuration: null, // 録音由来なら秒数 (それ以外は null)
+  translatedByLang: {},   // 言語コード → 翻訳済み議事録データ (キャッシュ)
+  translating: false,
 };
 
 const recorder = new MicRecorder();
@@ -255,6 +257,11 @@ function setupApiKey() {
   remember.addEventListener('change', persist);
 }
 
+// 現在の言語で表示すべき議事録データ (翻訳済みがあればそれ、なければ元データ)
+function currentData() {
+  return state.translatedByLang[getLang()] || state.lastData;
+}
+
 /* ---------- スタイル切替 ---------- */
 function setupStyleToggle() {
   $('style-toggle').addEventListener('click', (e) => {
@@ -264,7 +271,7 @@ function setupStyleToggle() {
     btn.classList.add('active');
     state.style = btn.dataset.style;
     if (state.lastData) {
-      mountMinutes($('minutes-output'), state.lastData, state.style);
+      mountMinutes($('minutes-output'), currentData(), state.style);
     }
   });
 }
@@ -348,6 +355,8 @@ async function generate() {
 
     setProgress(100);
     state.lastData = data;
+    // 翻訳キャッシュをリセットし、生成時の言語の版として元データを登録
+    state.translatedByLang = { [getLang()]: data };
     renderOutput(data);
     showStatus(t('st-done'));
   } catch (err) {
@@ -365,12 +374,54 @@ function renderOutput(data) {
   $('output-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
+/* ---------- 言語切替時の議事録の翻訳 ---------- */
+// 現在の言語に合わせて議事録を表示する。未翻訳かつ Gemini キーがあれば翻訳する。
+async function renderMinutesForCurrentLang() {
+  if (!state.lastData) return;
+  const lang = getLang();
+
+  // キャッシュ済み (生成時の言語 or 既に翻訳済み) ならそのまま描画
+  if (state.translatedByLang[lang]) {
+    mountMinutes($('minutes-output'), state.translatedByLang[lang], state.style);
+    return;
+  }
+
+  const apiKey = $('apikey-input').value.trim();
+  if (!apiKey) {
+    // キー無し: 見出しだけ翻訳 (中身は元のまま)
+    mountMinutes($('minutes-output'), state.lastData, state.style);
+    log(t('tl-needkey'));
+    return;
+  }
+
+  // Gemini で内容を翻訳
+  const langLabel = t('tl-lang-' + lang);
+  if (state.translating) return;
+  state.translating = true;
+  showStatus(t('tl-translating', { lang: langLabel }));
+  // まず見出しだけ即時反映 (体感を良く)
+  mountMinutes($('minutes-output'), state.lastData, state.style);
+  try {
+    const translated = await translateMinutes(apiKey, state.lastData, lang);
+    state.translatedByLang[lang] = translated;
+    if (getLang() === lang) { // 翻訳中にさらに切替えられていなければ反映
+      mountMinutes($('minutes-output'), translated, state.style);
+      showStatus(t('tl-done', { lang: langLabel }));
+    }
+  } catch (err) {
+    console.error(err);
+    showStatus('❌ ' + err.message);
+  } finally {
+    state.translating = false;
+  }
+}
+
 /* ---------- 出力アクション ---------- */
 function setupOutputActions() {
   $('copy-btn').addEventListener('click', async () => {
     if (!state.lastData) return;
     try {
-      await navigator.clipboard.writeText(minutesToText(state.lastData));
+      await navigator.clipboard.writeText(minutesToText(currentData()));
       $('copy-btn').textContent = t('btn-copied');
       setTimeout(() => { $('copy-btn').textContent = t('btn-copy'); }, 1800);
     } catch (e) { alert(t('al-copy-fail')); }
@@ -380,11 +431,10 @@ function setupOutputActions() {
 
   $('html-btn').addEventListener('click', () => {
     if (!state.lastData) return;
-    const css = document.querySelector('link[href="./minutes.css"]');
     const node = $('minutes-output').cloneNode(true);
     // マインドマップの SVG もクローンに含まれるのでそのまま使える
     const html = `<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8">
-<title>${(state.lastData.meta?.title) || '議事録'}</title>
+<title>${(currentData().meta?.title) || '議事録'}</title>
 <style>${MINUTES_INLINE_CSS}</style></head>
 <body><div class="minutes-output ${state.style === 'mindmap' ? 'style-mindmap' : 'style-figure'}">${node.innerHTML}</div></body></html>`;
     const blob = new Blob([html], { type: 'text/html' });
@@ -429,7 +479,7 @@ function applyDynamicLang() {
   populateMics();
   updateSummary();
   if (state.lastData) {
-    mountMinutes($('minutes-output'), state.lastData, state.style);
+    renderMinutesForCurrentLang();
   }
 }
 
