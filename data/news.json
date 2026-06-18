@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T02:49:12.725482",
+  "lastUpdated": "2026-06-18T02:44:33.930924",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -10,6 +10,26 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "【2026年版】建設ニュースのおすすめ情報源8選｜最新ニュース・事故情報・法改正を効率よく追う方法",
+      "link": "https://news.build-app.jp/article/41050/",
+      "description": "「建設ニュースをチェックしたいけれど、媒体が多すぎて何を見ればよいかわからない」「法改正や事故情報を見逃したくない」と悩んでいないでしょうか......",
+      "publishedDate": "Wed, 17 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/46845d903e39d555893bcd85874275f2-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【独自調査】BIM確認申請、理解層は8割超が支持、非認知層はほぼ支持せず",
+      "link": "https://news.build-app.jp/article/41023/",
+      "description": "野原グループのBuildApp総合研究所(所在：東京都新宿 区、代表：山梶真司)は、BIM確認申請（BIM図面審査）に対して全国の建設従事者......",
+      "publishedDate": "Wed, 17 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/XLm1qqr0TZRICT41677691748_1677691764-130x82.jpg",
+      "language": "ja"
     },
     {
       "title": "住民説明会はなぜ、炎上するのか？｜建築紛争の構造的必然を解剖する",
@@ -102,16 +122,6 @@
       "language": "en"
     },
     {
-      "title": "建設現場のCO2算定サービス「TansoMiru」安藤ハザマの現場で集計作業を約90％削減",
-      "link": "https://news.build-app.jp/article/40876/",
-      "description": "株式会社リバスタ（本社：東京都江東区、代表取締役：高橋巧、以下 リバスタ）は、株式会社安藤・間（本社：東京都港区、代表取締役社長：国谷一彦、......",
-      "publishedDate": "Thu, 11 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/10/AdobeStock_697706193-130x63.jpeg",
-      "language": "ja"
-    },
-    {
       "title": "The buildingSMART Implementers Assembly, February 2026 Event Report",
       "link": "https://www.buildingsmart.org/the-buildingsmart-implementers-assembly-february-2026-event-report/",
       "description": "The latest buildingSMART Implementers Assembly, hosted by Bentley in their Exton (PA) office, brought together the buildingSMART implementers community for two days of focused discussion and practical...",
@@ -159,16 +169,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp-eyecatch-1200x630-under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "建物に看板を設置する前に｜建築確認・屋外広告物・施工管理の確認ポイント",
-      "link": "https://news.build-app.jp/article/40938/",
-      "description": "看板は、店舗や施設の外観を印象づける設備です。ただし、建物に取り付ける場合は、デザインや価格だけで決めると申請漏れや施工不良につながるケース......",
-      "publishedDate": "Sun, 14 Jun 2026 09:59:04 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/34694609_m-130x86.jpg",
       "language": "ja"
     },
     {
