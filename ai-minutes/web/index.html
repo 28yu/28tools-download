@@ -11,7 +11,14 @@
 <script>
 (function () {
   try { if (sessionStorage.getItem('tool-unlocked-ai-minutes') === 'yes') return; } catch (e) {}
-  var pw = window.prompt('このツールは限定公開です。パスワードを入力してください：');
+  var lang = 'ja';
+  try { lang = localStorage.getItem('28tools-language') || 'ja'; } catch (e) {}
+  var msg = {
+    ja: 'このツールは限定公開です。パスワードを入力してください：',
+    en: 'This tool is in limited release. Please enter the password:',
+    zh: '此工具为限定公开。请输入密码：'
+  };
+  var pw = window.prompt(msg[lang] || msg.ja);
   if (pw === '28tools') {
     try { sessionStorage.setItem('tool-unlocked-ai-minutes', 'yes'); } catch (e) {}
   } else {
@@ -79,10 +86,10 @@
   </nav>
 
   <main class="tool-main">
-  <h2 class="page-title">AI イラスト議事録</h2>
-  <p class="page-description">建築現場の打合せ音声と資料から、AI がイラスト付き議事録を自動作成 — 文字起こしはブラウザ完結。高精度版はあなた自身の無料 Gemini API キーを利用します。</p>
+  <h2 class="page-title" data-lang-key="aimin-title">AI イラスト議事録</h2>
+  <p class="page-description" data-lang-key="aimin-desc">建築現場の打合せ音声と資料から、AI がイラスト付き議事録を自動作成 — 文字起こしはブラウザ完結。高精度版はあなた自身の無料 Gemini API キーを利用します。</p>
 
-  <div class="privacy-notice">
+  <div class="privacy-notice" data-lang-key="aimin-privacy">
     🔒 <strong>プライバシーについて</strong> —
     音声の文字起こし（簡易版）と議事録の図解化は<strong>あなたのブラウザ内のみ</strong>で行われ、サーバへ送信されません。
     <br>
@@ -90,35 +97,35 @@
     無料枠の API は入力データが品質改善に利用される可能性があるため、<strong>機密性の高い打合せでは送信内容にご注意ください</strong>。
   </div>
 
-  <div class="accuracy-notice">
+  <div class="accuracy-notice" data-lang-key="aimin-accuracy">
     ⚠️ <strong>自動作成は完璧ではありません</strong> — 音声の聞き取りや内容の分類には誤りが含まれます。
     出力後にプレビュー上で内容を確認・編集してから保存してください。図面の寸法・記号の正確な転記は保証対象外です。
   </div>
 
   <!-- ========== STEP 1: 入力 ========== -->
   <section class="panel">
-    <div class="panel-title"><span class="step">1</span>打合せの素材を入力</div>
+    <div class="panel-title"><span class="step">1</span><span data-lang-key="aimin-step1">打合せの素材を入力</span></div>
 
     <div class="input-grid">
       <!-- 音声 -->
       <div class="input-col">
-        <label class="input-label">🎙️ 打合せ音声 <span class="opt">（任意）</span></label>
+        <label class="input-label" data-lang-key="aimin-audio-label">🎙️ 打合せ音声 <span class="opt">（任意）</span></label>
         <label class="dropzone compact" id="audio-dropzone">
           <input type="file" id="audio-input" accept="audio/*">
           <span class="dropzone-icon">🎙️</span>
           <span class="dropzone-title" id="audio-dz-title">音声ファイルを選択</span>
-          <span class="dropzone-sub">mp3 / m4a / wav など</span>
+          <span class="dropzone-sub" data-lang-key="aimin-audio-sub">mp3 / m4a / wav など</span>
         </label>
       </div>
 
       <!-- 資料 -->
       <div class="input-col">
-        <label class="input-label">📐 打合せ資料 <span class="opt">（任意・複数可）</span></label>
+        <label class="input-label" data-lang-key="aimin-material-label">📐 打合せ資料 <span class="opt">（任意・複数可）</span></label>
         <label class="dropzone compact" id="material-dropzone">
           <input type="file" id="material-input" accept="image/*" multiple>
           <span class="dropzone-icon">📐</span>
           <span class="dropzone-title" id="material-dz-title">図面・資料の画像を選択</span>
-          <span class="dropzone-sub">png / jpg（高精度版のみ解析）</span>
+          <span class="dropzone-sub" data-lang-key="aimin-material-sub">png / jpg（高精度版のみ解析）</span>
         </label>
         <div class="thumb-row" id="material-thumbs"></div>
       </div>
@@ -126,21 +133,21 @@
 
     <!-- 文字起こしテキスト（任意・貼り付け） -->
     <div class="transcript-block">
-      <label class="input-label">📝 文字起こしテキスト <span class="opt">（任意・既にある場合は貼り付け）</span></label>
-      <textarea id="transcript-input" rows="4" placeholder="既に文字起こし済みのテキストがあれば、ここに貼り付けると音声処理を省略できます。"></textarea>
+      <label class="input-label" data-lang-key="aimin-transcript-label">📝 文字起こしテキスト <span class="opt">（任意・既にある場合は貼り付け）</span></label>
+      <textarea id="transcript-input" rows="4" data-lang-placeholder="aimin-transcript-ph" placeholder="既に文字起こし済みのテキストがあれば、ここに貼り付けると音声処理を省略できます。"></textarea>
     </div>
   </section>
 
   <!-- ========== STEP 2: 処理方法 ========== -->
   <section class="panel">
-    <div class="panel-title"><span class="step">2</span>処理方法を選ぶ</div>
+    <div class="panel-title"><span class="step">2</span><span data-lang-key="aimin-step2">処理方法を選ぶ</span></div>
 
     <div class="mode-cards">
       <label class="mode-card">
         <input type="radio" name="mode" value="browser">
         <div class="mode-card-inner">
-          <div class="mode-card-head">🖥️ 簡易版（ブラウザ完結）</div>
-          <div class="mode-card-desc">
+          <div class="mode-card-head" data-lang-key="aimin-mode-browser-head">🖥️ 簡易版（ブラウザ完結）</div>
+          <div class="mode-card-desc" data-lang-key="aimin-mode-browser-desc">
             Whisper で文字起こし＋キーワードで自動分類。<strong>完全無料・送信なし</strong>。
             資料画像の解析は不可。精度は控えめ。
           </div>
@@ -150,8 +157,8 @@
       <label class="mode-card recommended">
         <input type="radio" name="mode" value="gemini" checked>
         <div class="mode-card-inner">
-          <div class="mode-card-head">✨ 高精度版（Gemini）<span class="badge">推奨</span></div>
-          <div class="mode-card-desc">
+          <div class="mode-card-head"><span data-lang-key="aimin-mode-gemini-head">✨ 高精度版（Gemini）</span><span class="badge" data-lang-key="aimin-badge">推奨</span></div>
+          <div class="mode-card-desc" data-lang-key="aimin-mode-gemini-desc">
             音声と資料を同時にAIが理解。発言者の推定や資料の参照も。
             <strong>あなた自身の無料 API キー</strong>を使用します。
           </div>
@@ -161,15 +168,15 @@
 
     <!-- Gemini キー入力 -->
     <div class="apikey-block" id="apikey-block">
-      <label class="input-label">🔑 Gemini API キー</label>
+      <label class="input-label" data-lang-key="aimin-apikey-label">🔑 Gemini API キー</label>
       <div class="apikey-row">
-        <input type="password" id="apikey-input" placeholder="AIza... （Google AI Studio で無料取得）" autocomplete="off">
+        <input type="password" id="apikey-input" data-lang-placeholder="aimin-apikey-ph" placeholder="AIza... （Google AI Studio で無料取得）" autocomplete="off">
         <button type="button" class="btn-ghost" id="apikey-toggle" title="表示/非表示">👁️</button>
       </div>
       <label class="apikey-remember">
-        <input type="checkbox" id="apikey-remember"> このブラウザに保存する（localStorage）
+        <input type="checkbox" id="apikey-remember"> <span data-lang-key="aimin-apikey-remember">このブラウザに保存する（localStorage）</span>
       </label>
-      <p class="apikey-help">
+      <p class="apikey-help" data-lang-key="aimin-apikey-help">
         キーは<strong>この端末のブラウザにのみ</strong>保存され、28tools のサーバへは送られません。
         取得方法 → <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a>（無料）
       </p>
@@ -178,15 +185,15 @@
 
   <!-- ========== STEP 3: スタイル & 実行 ========== -->
   <section class="panel">
-    <div class="panel-title"><span class="step">3</span>イラストのスタイルを選んで作成</div>
+    <div class="panel-title"><span class="step">3</span><span data-lang-key="aimin-step3">イラストのスタイルを選んで作成</span></div>
 
     <div class="style-toggle" id="style-toggle">
-      <button type="button" class="style-btn active" data-style="figure">📊 図解スタイル</button>
-      <button type="button" class="style-btn" data-style="hand">✏️ 手描き風スタイル</button>
+      <button type="button" class="style-btn active" data-style="figure" data-lang-key="aimin-style-figure">📊 図解スタイル</button>
+      <button type="button" class="style-btn" data-style="hand" data-lang-key="aimin-style-hand">✏️ 手描き風スタイル</button>
     </div>
 
     <div class="actions">
-      <button class="btn-primary" id="generate-btn">🪄 イラスト議事録を作成</button>
+      <button class="btn-primary" id="generate-btn" data-lang-key="aimin-generate">🪄 イラスト議事録を作成</button>
       <span class="meta-summary" id="input-summary"></span>
     </div>
 
@@ -200,11 +207,11 @@
   <!-- ========== 出力 ========== -->
   <section id="output-section" style="display:none">
     <div class="output-toolbar">
-      <div class="output-title">📋 議事録プレビュー</div>
+      <div class="output-title" data-lang-key="aimin-output-title">📋 議事録プレビュー</div>
       <div class="output-actions">
         <button class="btn-ghost" id="copy-btn">📋 テキストでコピー</button>
-        <button class="btn-ghost" id="html-btn">💾 HTML 保存</button>
-        <button class="btn-primary slim" id="print-btn">🖨️ 印刷 / PDF</button>
+        <button class="btn-ghost" id="html-btn" data-lang-key="aimin-btn-html">💾 HTML 保存</button>
+        <button class="btn-primary slim" id="print-btn" data-lang-key="aimin-btn-print">🖨️ 印刷 / PDF</button>
       </div>
     </div>
     <div id="minutes-output" class="minutes-output"></div>

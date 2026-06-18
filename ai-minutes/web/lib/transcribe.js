@@ -4,6 +4,7 @@
    - 構造化: LLM を使わずキーワードヒューリスティクスで分類
      → 完全無料・送信なしだが精度は控えめ ("簡易版" と明示)
    ============================================================ */
+import { t } from './i18n.js';
 
 // Transformers.js (ESM) を CDN から動的 import。初回のみモデルを DL。
 const TRANSFORMERS_CDN = 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.1.2';
@@ -22,7 +23,7 @@ async function getPipeline(onProgress) {
     const asr = await pipeline('automatic-speech-recognition', ASR_MODEL, {
       progress_callback: (p) => {
         if (p.status === 'progress' && p.file && typeof p.progress === 'number') {
-          onProgress(`モデル取得中 ${p.file} ${p.progress.toFixed(0)}%`, p.progress);
+          onProgress(t('tr-model', { file: p.file, pct: p.progress.toFixed(0) }), p.progress);
         }
       },
     });
@@ -55,13 +56,13 @@ async function decodeAudio(file) {
  * @returns {Promise<string>}
  */
 export async function transcribeAudio(file, onLog = () => {}, onProgress = () => {}) {
-  onLog('文字起こしエンジンを準備中... (初回はモデル DL に時間がかかります)');
+  onLog(t('tr-prepare'));
   const asr = await getPipeline((msg, pct) => { onLog(msg); onProgress(pct); });
 
-  onLog('音声をデコード中...');
+  onLog(t('tr-decoding'));
   const audio = await decodeAudio(file);
 
-  onLog('文字起こし中... (長い音声ほど時間がかかります)');
+  onLog(t('tr-transcribing'));
   const result = await asr(audio, {
     language: 'japanese',
     task: 'transcribe',
@@ -70,7 +71,7 @@ export async function transcribeAudio(file, onLog = () => {}, onProgress = () =>
     return_timestamps: false,
   });
   const text = (result && result.text ? result.text : '').trim();
-  onLog(`文字起こし完了 (${text.length} 文字)`);
+  onLog(t('tr-done', { n: text.length }));
   return text;
 }
 
@@ -114,15 +115,15 @@ export function structureHeuristically(transcript, meta = {}) {
   const rest = sentences.filter((_, i) => !used.has(i));
   const points = rest.slice(0, 12);
   const discussions = points.length
-    ? [{ topic: '打合せ内容', points }]
+    ? [{ topic: t('tr-topic'), points }]
     : [];
 
   // ごく簡易なサマリ: 先頭数文を連結
   const summary = sentences.slice(0, 3).join(' ').slice(0, 200);
 
   return {
-    meta: { title: meta.title || '打合せ議事録', ...meta },
-    summary: summary || '（自動要約なし）',
+    meta: { title: meta.title || t('mn-default-title'), ...meta },
+    summary: summary || t('tr-no-summary'),
     decisions,
     todos,
     issues,

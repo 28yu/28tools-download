@@ -318,6 +318,8 @@ function changeLanguage(lang) {
     saveLanguagePreference(lang);
     updateLanguageButton();
     updateAllContent();
+    // 動的に生成されたコンテンツ (例: AI議事録の出力) が再翻訳できるよう通知
+    try { window.dispatchEvent(new CustomEvent('28tools-langchange', { detail: lang })); } catch (e) {}
 }
 
 // ========================================
@@ -7476,9 +7478,154 @@ translations.filledRegion = {
         }
     };
 
+    // AI イラスト議事録ツール
+    translations.aiMinutesPage = {
+        'aimin-title': {
+            ja: 'AI イラスト議事録',
+            en: 'AI Illustrated Minutes',
+            zh: 'AI 图解会议记录'
+        },
+        'aimin-desc': {
+            ja: '建築現場の打合せ音声と資料から、AI がイラスト付き議事録を自動作成 — 文字起こしはブラウザ完結。高精度版はあなた自身の無料 Gemini API キーを利用します。',
+            en: 'AI auto-generates illustrated minutes from construction meeting audio and materials — transcription runs in your browser. The high-accuracy mode uses your own free Gemini API key.',
+            zh: '从建筑现场的会议音频和资料中，AI 自动生成带插图的会议记录 — 转写在浏览器内完成。高精度版使用您自己的免费 Gemini API 密钥。'
+        },
+        'aimin-privacy': {
+            ja: '🔒 <strong>プライバシーについて</strong> — 音声の文字起こし（簡易版）と議事録の図解化は<strong>あなたのブラウザ内のみ</strong>で行われ、サーバへ送信されません。<br>高精度版で「Gemini」を使う場合は、音声・資料が<strong>Google のサーバへ送信</strong>されます。無料枠の API は入力データが品質改善に利用される可能性があるため、<strong>機密性の高い打合せでは送信内容にご注意ください</strong>。',
+            en: '🔒 <strong>About privacy</strong> — Audio transcription (simple mode) and the illustration of minutes run <strong>only inside your browser</strong> and are not sent to any server.<br>When using "Gemini" in high-accuracy mode, audio and materials are <strong>sent to Google\'s servers</strong>. Free-tier APIs may use input data for quality improvement, so <strong>please be careful about what you send for confidential meetings</strong>.',
+            zh: '🔒 <strong>关于隐私</strong> — 音频转写（简易版）和会议记录的图解化<strong>仅在您的浏览器内</strong>进行，不会发送到服务器。<br>在高精度版中使用「Gemini」时，音频和资料会<strong>发送到 Google 的服务器</strong>。免费额度的 API 可能会将输入数据用于质量改进，因此<strong>对于机密性较高的会议，请注意发送的内容</strong>。'
+        },
+        'aimin-accuracy': {
+            ja: '⚠️ <strong>自動作成は完璧ではありません</strong> — 音声の聞き取りや内容の分類には誤りが含まれます。出力後にプレビュー上で内容を確認・編集してから保存してください。図面の寸法・記号の正確な転記は保証対象外です。',
+            en: '⚠️ <strong>Automatic generation is not perfect</strong> — Audio recognition and content classification may contain errors. After output, please review and edit the content in the preview before saving. Accurate transcription of drawing dimensions and symbols is not guaranteed.',
+            zh: '⚠️ <strong>自动生成并不完美</strong> — 音频识别和内容分类可能包含错误。输出后请在预览中确认并编辑内容后再保存。图纸尺寸和符号的准确转录不在保证范围内。'
+        },
+        'aimin-step1': {
+            ja: '打合せの素材を入力',
+            en: 'Enter meeting materials',
+            zh: '输入会议素材'
+        },
+        'aimin-step2': {
+            ja: '処理方法を選ぶ',
+            en: 'Choose a processing method',
+            zh: '选择处理方法'
+        },
+        'aimin-step3': {
+            ja: 'イラストのスタイルを選んで作成',
+            en: 'Choose an illustration style and generate',
+            zh: '选择插图样式并生成'
+        },
+        'aimin-audio-label': {
+            ja: '🎙️ 打合せ音声 <span class="opt">（任意）</span>',
+            en: '🎙️ Meeting audio <span class="opt">(optional)</span>',
+            zh: '🎙️ 会议音频 <span class="opt">（可选）</span>'
+        },
+        'aimin-audio-sub': {
+            ja: 'mp3 / m4a / wav など',
+            en: 'mp3 / m4a / wav, etc.',
+            zh: 'mp3 / m4a / wav 等'
+        },
+        'aimin-material-label': {
+            ja: '📐 打合せ資料 <span class="opt">（任意・複数可）</span>',
+            en: '📐 Meeting materials <span class="opt">(optional, multiple)</span>',
+            zh: '📐 会议资料 <span class="opt">（可选，可多个）</span>'
+        },
+        'aimin-material-sub': {
+            ja: 'png / jpg（高精度版のみ解析）',
+            en: 'png / jpg (analyzed in high-accuracy mode only)',
+            zh: 'png / jpg（仅高精度版分析）'
+        },
+        'aimin-transcript-label': {
+            ja: '📝 文字起こしテキスト <span class="opt">（任意・既にある場合は貼り付け）</span>',
+            en: '📝 Transcript text <span class="opt">(optional, paste if you already have one)</span>',
+            zh: '📝 转写文本 <span class="opt">（可选，若已有可粘贴）</span>'
+        },
+        'aimin-transcript-ph': {
+            ja: '既に文字起こし済みのテキストがあれば、ここに貼り付けると音声処理を省略できます。',
+            en: 'If you already have a transcript, paste it here to skip audio processing.',
+            zh: '如果已有转写好的文本，粘贴到此处即可跳过音频处理。'
+        },
+        'aimin-mode-browser-head': {
+            ja: '🖥️ 簡易版（ブラウザ完結）',
+            en: '🖥️ Simple mode (in-browser)',
+            zh: '🖥️ 简易版（浏览器内完成）'
+        },
+        'aimin-mode-browser-desc': {
+            ja: 'Whisper で文字起こし＋キーワードで自動分類。<strong>完全無料・送信なし</strong>。資料画像の解析は不可。精度は控えめ。',
+            en: 'Transcribes with Whisper and auto-classifies by keywords. <strong>Completely free, no upload</strong>. Cannot analyze material images. Modest accuracy.',
+            zh: '用 Whisper 转写＋按关键词自动分类。<strong>完全免费、不上传</strong>。无法分析资料图像。精度一般。'
+        },
+        'aimin-mode-gemini-head': {
+            ja: '✨ 高精度版（Gemini）',
+            en: '✨ High-accuracy mode (Gemini)',
+            zh: '✨ 高精度版（Gemini）'
+        },
+        'aimin-badge': {
+            ja: '推奨',
+            en: 'Recommended',
+            zh: '推荐'
+        },
+        'aimin-mode-gemini-desc': {
+            ja: '音声と資料を同時にAIが理解。発言者の推定や資料の参照も。<strong>あなた自身の無料 API キー</strong>を使用します。',
+            en: 'AI understands audio and materials together — including speaker estimation and material references. Uses <strong>your own free API key</strong>.',
+            zh: 'AI 同时理解音频和资料，包括发言者推定和资料引用。使用<strong>您自己的免费 API 密钥</strong>。'
+        },
+        'aimin-apikey-label': {
+            ja: '🔑 Gemini API キー',
+            en: '🔑 Gemini API key',
+            zh: '🔑 Gemini API 密钥'
+        },
+        'aimin-apikey-ph': {
+            ja: 'AIza... （Google AI Studio で無料取得）',
+            en: 'AIza... (get it free at Google AI Studio)',
+            zh: 'AIza...（在 Google AI Studio 免费获取）'
+        },
+        'aimin-apikey-remember': {
+            ja: 'このブラウザに保存する（localStorage）',
+            en: 'Save in this browser (localStorage)',
+            zh: '保存在此浏览器中（localStorage）'
+        },
+        'aimin-apikey-help': {
+            ja: 'キーは<strong>この端末のブラウザにのみ</strong>保存され、28tools のサーバへは送られません。取得方法 → <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a>（無料）',
+            en: 'The key is saved <strong>only in this device\'s browser</strong> and is never sent to 28tools servers. How to get one → <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a> (free)',
+            zh: '密钥<strong>仅保存在本设备的浏览器中</strong>，不会发送到 28tools 的服务器。获取方法 → <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a>（免费）'
+        },
+        'aimin-style-figure': {
+            ja: '📊 図解スタイル',
+            en: '📊 Diagram style',
+            zh: '📊 图解样式'
+        },
+        'aimin-style-hand': {
+            ja: '✏️ 手描き風スタイル',
+            en: '✏️ Hand-drawn style',
+            zh: '✏️ 手绘风格'
+        },
+        'aimin-generate': {
+            ja: '🪄 イラスト議事録を作成',
+            en: '🪄 Generate illustrated minutes',
+            zh: '🪄 生成图解会议记录'
+        },
+        'aimin-output-title': {
+            ja: '📋 議事録プレビュー',
+            en: '📋 Minutes preview',
+            zh: '📋 会议记录预览'
+        },
+        'aimin-btn-html': {
+            ja: '💾 HTML 保存',
+            en: '💾 Save HTML',
+            zh: '💾 保存 HTML'
+        },
+        'aimin-btn-print': {
+            ja: '🖨️ 印刷 / PDF',
+            en: '🖨️ Print / PDF',
+            zh: '🖨️ 打印 / PDF'
+        }
+    };
+
     // 全翻訳をマージ
     Object.assign(translations,
         translations.common,
+        translations.aiMinutesPage,
         translations.sections,
         translations.indexPage,
         translations.installGuide,

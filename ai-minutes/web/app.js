@@ -5,9 +5,16 @@
 import { generateWithGemini } from './lib/gemini.js';
 import { transcribeAudio, structureHeuristically } from './lib/transcribe.js';
 import { mountMinutes, minutesToText } from './lib/render.js';
+import { t, setLang } from './lib/i18n.js';
 
 const $ = (id) => document.getElementById(id);
 const APIKEY_STORE = 'ai-minutes-gemini-key';
+
+// js/main.js と同じ言語設定を参照（タイミングに依存しないよう localStorage を直接読む）
+function detectLang() {
+  try { return localStorage.getItem('28tools-language') || 'ja'; }
+  catch (e) { return 'ja'; }
+}
 
 const state = {
   audioFile: null,
@@ -20,48 +27,48 @@ const state = {
 function setupAudioInput() {
   const dz = $('audio-dropzone');
   const input = $('audio-input');
-  const title = $('audio-dz-title');
 
   input.addEventListener('change', () => {
     state.audioFile = input.files[0] || null;
-    if (state.audioFile) {
-      title.textContent = `🎙️ ${state.audioFile.name}`;
-      dz.classList.add('has-file');
-    } else {
-      title.textContent = '音声ファイルを選択';
-      dz.classList.remove('has-file');
-    }
+    dz.classList.toggle('has-file', !!state.audioFile);
+    applyAudioTitle();
     updateSummary();
   });
   setupDragDrop(dz, input);
+}
+
+function applyAudioTitle() {
+  $('audio-dz-title').textContent = state.audioFile
+    ? t('dz-audio-selected', { name: state.audioFile.name })
+    : t('dz-audio-default');
 }
 
 /* ---------- 入力: 資料画像 ---------- */
 function setupMaterialInput() {
   const dz = $('material-dropzone');
   const input = $('material-input');
-  const title = $('material-dz-title');
   const thumbs = $('material-thumbs');
 
   input.addEventListener('change', () => {
     state.materialFiles = Array.from(input.files || []);
     thumbs.innerHTML = '';
-    if (state.materialFiles.length) {
-      title.textContent = `📐 ${state.materialFiles.length} 枚の資料`;
-      dz.classList.add('has-file');
-      state.materialFiles.forEach(f => {
-        const img = document.createElement('img');
-        img.src = URL.createObjectURL(f);
-        img.alt = f.name;
-        thumbs.appendChild(img);
-      });
-    } else {
-      title.textContent = '図面・資料の画像を選択';
-      dz.classList.remove('has-file');
-    }
+    dz.classList.toggle('has-file', state.materialFiles.length > 0);
+    state.materialFiles.forEach(f => {
+      const img = document.createElement('img');
+      img.src = URL.createObjectURL(f);
+      img.alt = f.name;
+      thumbs.appendChild(img);
+    });
+    applyMaterialTitle();
     updateSummary();
   });
   setupDragDrop(dz, input);
+}
+
+function applyMaterialTitle() {
+  $('material-dz-title').textContent = state.materialFiles.length
+    ? t('dz-material-selected', { n: state.materialFiles.length })
+    : t('dz-material-default');
 }
 
 function setupDragDrop(dz, input) {
@@ -130,11 +137,12 @@ function setupStyleToggle() {
 /* ---------- 入力サマリ ---------- */
 function updateSummary() {
   const parts = [];
-  if (state.audioFile) parts.push('音声1');
-  if (state.materialFiles.length) parts.push(`資料${state.materialFiles.length}`);
-  if ($('transcript-input').value.trim()) parts.push('文字起こし');
+  if (state.audioFile) parts.push(t('sum-audio'));
+  if (state.materialFiles.length) parts.push(t('sum-material', { n: state.materialFiles.length }));
+  if ($('transcript-input').value.trim()) parts.push(t('sum-transcript'));
+  const mode = getMode() === 'gemini' ? t('mode-gemini') : t('mode-simple');
   $('input-summary').textContent = parts.length
-    ? `入力: ${parts.join(' / ')}（${getMode() === 'gemini' ? 'Gemini' : '簡易版'}）`
+    ? t('sum-template', { parts: parts.join(' / '), mode })
     : '';
 }
 
@@ -162,24 +170,24 @@ async function generate() {
   const mode = getMode();
 
   if (!state.audioFile && !state.materialFiles.length && !transcript.trim()) {
-    alert('音声・資料・文字起こしのいずれかを入力してください。');
+    alert(t('al-need-input'));
     return;
   }
 
   btn.disabled = true;
   logEl.textContent = '';
   setProgress(0);
-  showStatus('処理を開始しています...');
+  showStatus(t('st-start'));
 
   try {
     let data;
     if (mode === 'gemini') {
       const apiKey = $('apikey-input').value.trim();
       if (!apiKey) {
-        alert('高精度版（Gemini）には API キーが必要です。\n簡易版を選ぶか、キーを入力してください。');
+        alert(t('al-need-key'));
         return;
       }
-      showStatus('Gemini で解析中...');
+      showStatus(t('st-gemini'));
       setProgress(20);
       data = await generateWithGemini(
         { apiKey, audioFile: state.audioFile, materialFiles: state.materialFiles, transcript },
@@ -189,16 +197,16 @@ async function generate() {
     } else {
       // 簡易版 (ブラウザ完結)
       if (state.materialFiles.length) {
-        log('※ 簡易版では資料画像は解析されません（高精度版をご利用ください）。');
+        log(t('log-simple-no-image'));
       }
       let fullText = transcript.trim();
       if (state.audioFile) {
-        showStatus('ブラウザ内で文字起こし中...');
+        showStatus(t('st-transcribing'));
         const asrText = await transcribeAudio(state.audioFile, log, (p) => setProgress(10 + p * 0.7));
         fullText = (fullText ? fullText + '\n' : '') + asrText;
       }
-      if (!fullText) throw new Error('文字起こし結果が空でした。');
-      showStatus('内容を分類中...');
+      if (!fullText) throw new Error(t('tr-err-empty'));
+      showStatus(t('st-classifying'));
       setProgress(90);
       data = structureHeuristically(fullText);
     }
@@ -206,10 +214,10 @@ async function generate() {
     setProgress(100);
     state.lastData = data;
     renderOutput(data);
-    showStatus('✅ 議事録を作成しました。内容を確認してください。');
+    showStatus(t('st-done'));
   } catch (err) {
     console.error(err);
-    log('エラー: ' + err.message);
+    log('Error: ' + err.message);
     showStatus('❌ ' + err.message);
   } finally {
     btn.disabled = false;
@@ -228,9 +236,9 @@ function setupOutputActions() {
     if (!state.lastData) return;
     try {
       await navigator.clipboard.writeText(minutesToText(state.lastData));
-      $('copy-btn').textContent = '✅ コピーしました';
-      setTimeout(() => { $('copy-btn').textContent = '📋 テキストでコピー'; }, 1800);
-    } catch (e) { alert('コピーに失敗しました。'); }
+      $('copy-btn').textContent = t('btn-copied');
+      setTimeout(() => { $('copy-btn').textContent = t('btn-copy'); }, 1800);
+    } catch (e) { alert(t('al-copy-fail')); }
   });
 
   $('print-btn').addEventListener('click', () => window.print());
@@ -274,8 +282,21 @@ body{font-family:'Noto Sans JP',sans-serif;background:#f4f6f8;margin:0;padding:2
 .mn-footnote{margin-top:28px;padding-top:16px;border-top:1px dashed #ecf0f1;font-size:.8rem;color:#95a5a6;text-align:center}
 `;
 
+/* ---------- 言語適用 ---------- */
+// JS が管理する動的テキスト (data-lang-key 非対象) を現在の言語で再描画する。
+function applyDynamicLang() {
+  applyAudioTitle();
+  applyMaterialTitle();
+  $('copy-btn').textContent = t('btn-copy');
+  updateSummary();
+  if (state.lastData) {
+    mountMinutes($('minutes-output'), state.lastData, state.style);
+  }
+}
+
 /* ---------- init ---------- */
 function init() {
+  setLang(detectLang());
   setupAudioInput();
   setupMaterialInput();
   setupModeSwitch();
@@ -284,6 +305,14 @@ function init() {
   setupOutputActions();
   $('generate-btn').addEventListener('click', generate);
   $('transcript-input').addEventListener('input', updateSummary);
+
+  // 言語切替 (js/main.js の changeLanguage が dispatch) に追従
+  window.addEventListener('28tools-langchange', (e) => {
+    setLang((e && e.detail) || detectLang());
+    applyDynamicLang();
+  });
+
+  applyDynamicLang();
 }
 
 if (document.readyState === 'loading') {
