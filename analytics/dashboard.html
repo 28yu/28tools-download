@@ -97,7 +97,8 @@
 
   /* Raw data */
   .raw-section { margin-top: 20px; }
-  .raw-table-wrap { max-height: 300px; overflow-y: auto; border-radius: 8px; border: 1px solid var(--border); }
+  .raw-table-wrap { max-height: 300px; overflow: auto; border-radius: 8px; border: 1px solid var(--border); }
+  .raw-table { min-width: max-content; }
   .raw-table { width: 100%; border-collapse: collapse; font-size: 12px; }
   .raw-table th { background: var(--bg); padding: 6px 10px; text-align: left; color: var(--muted); position: sticky; top: 0; z-index: 1; }
   .raw-table td { padding: 5px 10px; border-top: 1px solid var(--border); }
@@ -113,12 +114,15 @@
   @media (max-width: 768px) {
     .table-grid { grid-template-columns: 1fr; }
     .chart-grid { grid-template-columns: 1fr; }
-    .tab-pane { padding: 16px; }
+    .tab-pane { padding: 16px; max-width: 100%; overflow-x: hidden; }
     header { padding: 12px 16px; }
     .tabs { padding: 0 8px; }
     .tab-btn { padding: 12px 14px; }
     .kpi-row { gap: 12px; }
     .kpi-value { font-size: 24px; }
+    /* Keep wide tables inside their card instead of overflowing the screen */
+    .chart-full, .chart-card { overflow-x: auto; }
+    .data-table { min-width: max-content; }
   }
   @media (max-width: 560px) {
     .kpi-row { grid-template-columns: 1fr 1fr; }
@@ -966,6 +970,7 @@ function renderTool(pvData) {
 // ---- Tab switch ----
 let toolRendered = false;
 function switchTab(tab) {
+  try { localStorage.setItem('28tools_active_tab', tab); } catch(_) {}
   document.querySelectorAll('.tab-btn').forEach((b,i) => b.classList.toggle('active', (i===0&&tab==='dl')||(i===1&&tab==='pv')||(i===2&&tab==='tool')));
   document.getElementById('tab-dl').classList.toggle('active', tab==='dl');
   document.getElementById('tab-pv').classList.toggle('active', tab==='pv');
@@ -1055,6 +1060,10 @@ async function init() {
     if (!allPV.length) {
       document.querySelector('[onclick="switchTab(\'pv\')"]').title = 'データなし（ページビュー計測は設定後に反映）';
     }
+    // リロード時は前回開いていたタブを復元（更新でダウンロードに戻らないように）
+    let savedTab = 'dl';
+    try { savedTab = localStorage.getItem('28tools_active_tab') || 'dl'; } catch(_) {}
+    if (['pv','tool'].includes(savedTab)) switchTab(savedTab);
   } catch (e) {
     loading.style.display = 'none';
     console.error(e);
