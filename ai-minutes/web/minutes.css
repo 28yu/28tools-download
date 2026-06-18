@@ -131,6 +131,34 @@
 }
 .dropzone-sub { font-size: 0.82rem; color: var(--disabled-gray); display: block; }
 
+/* ---------- マイク選択 / テスト ---------- */
+.mic-controls { display: flex; align-items: center; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.mic-select {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid var(--light-concrete);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: var(--concrete-gray);
+  background: var(--glass-white);
+}
+.mic-select:focus { outline: 2px solid var(--blueprint-blue); outline-offset: -1px; }
+.mic-meter {
+  height: 10px;
+  background: var(--light-concrete);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.mic-meter-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--architect-green), #f1c40f 70%, #e74c3c);
+  transition: width 0.08s linear;
+}
+
 /* ---------- 録音 ---------- */
 .record-controls { display: flex; align-items: center; gap: 12px; margin-top: 10px; flex-wrap: wrap; }
 .record-btn {
