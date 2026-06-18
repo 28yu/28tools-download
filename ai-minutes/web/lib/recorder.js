@@ -9,6 +9,76 @@
    ============================================================ */
 import { t } from './i18n.js';
 
+/** deviceId 指定があれば exact 指定、なければ既定マイク。 */
+function micConstraint(deviceId) {
+  return deviceId ? { deviceId: { exact: deviceId } } : true;
+}
+
+/** 接続されている音声入力デバイス一覧。label は許可後にのみ取得できる。 */
+export async function listMicrophones() {
+  if (!navigator.mediaDevices || !navigator.mediaDevices.enumerateDevices) return [];
+  const devices = await navigator.mediaDevices.enumerateDevices();
+  return devices
+    .filter(d => d.kind === 'audioinput')
+    .map(d => ({ deviceId: d.deviceId, label: d.label }));
+}
+
+/** デバイスの抜き差しを監視 (cb を呼ぶ)。 */
+export function onDeviceChange(cb) {
+  if (navigator.mediaDevices && 'ondevicechange' in navigator.mediaDevices) {
+    navigator.mediaDevices.addEventListener('devicechange', cb);
+  }
+}
+
+/* ============================================================
+   MicTester — マイク入力レベルのリアルタイム測定 (テスト用)
+   AnalyserNode で RMS を算出し 0..1 を onLevel に流す。録音はしない。
+   ============================================================ */
+export class MicTester {
+  constructor() { this.stream = null; this.ctx = null; this._raf = null; this._running = false; }
+
+  get isActive() { return this._running; }
+
+  async start(deviceId, onLevel) {
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+      throw new Error(t('rec-err-unsupported'));
+    }
+    try {
+      this.stream = await navigator.mediaDevices.getUserMedia({ audio: micConstraint(deviceId) });
+    } catch (e) {
+      if (e && (e.name === 'NotAllowedError' || e.name === 'SecurityError')) throw new Error(t('rec-err-denied'));
+      if (e && (e.name === 'NotFoundError' || e.name === 'DevicesNotFoundError')) throw new Error(t('rec-err-nomic'));
+      throw new Error(t('rec-err-generic'));
+    }
+    const Ctx = window.AudioContext || window.webkitAudioContext;
+    this.ctx = new Ctx();
+    const src = this.ctx.createMediaStreamSource(this.stream);
+    this.analyser = this.ctx.createAnalyser();
+    this.analyser.fftSize = 512;
+    src.connect(this.analyser);
+    const data = new Uint8Array(this.analyser.fftSize);
+    this._running = true;
+    const loop = () => {
+      if (!this._running) return;
+      this.analyser.getByteTimeDomainData(data);
+      let sum = 0;
+      for (let i = 0; i < data.length; i++) { const v = (data[i] - 128) / 128; sum += v * v; }
+      const rms = Math.sqrt(sum / data.length);
+      onLevel(Math.min(1, rms * 2.8)); // 体感に合わせてスケール
+      this._raf = requestAnimationFrame(loop);
+    };
+    loop();
+  }
+
+  stop() {
+    this._running = false;
+    if (this._raf) { cancelAnimationFrame(this._raf); this._raf = null; }
+    if (this.stream) { this.stream.getTracks().forEach(tr => tr.stop()); this.stream = null; }
+    if (this.ctx && this.ctx.close) { try { this.ctx.close(); } catch (e) {} }
+    this.ctx = null;
+  }
+}
+
 export class MicRecorder {
   constructor() {
     this.stream = null;
@@ -22,12 +92,12 @@ export class MicRecorder {
     return !!this.recorder && this.recorder.state === 'recording';
   }
 
-  async start(onTick) {
+  async start(onTick, deviceId) {
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.MediaRecorder) {
       throw new Error(t('rec-err-unsupported'));
     }
     try {
-      this.stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      this.stream = await navigator.mediaDevices.getUserMedia({ audio: micConstraint(deviceId) });
     } catch (e) {
       if (e && (e.name === 'NotAllowedError' || e.name === 'SecurityError')) throw new Error(t('rec-err-denied'));
       if (e && (e.name === 'NotFoundError' || e.name === 'DevicesNotFoundError')) throw new Error(t('rec-err-nomic'));

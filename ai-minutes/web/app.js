@@ -6,7 +6,7 @@ import { generateWithGemini } from './lib/gemini.js';
 import { transcribeAudio, structureHeuristically } from './lib/transcribe.js';
 import { mountMinutes, minutesToText } from './lib/render.js';
 import { t, setLang } from './lib/i18n.js';
-import { MicRecorder, formatDuration } from './lib/recorder.js';
+import { MicRecorder, MicTester, listMicrophones, onDeviceChange, formatDuration } from './lib/recorder.js';
 
 const $ = (id) => document.getElementById(id);
 const APIKEY_STORE = 'ai-minutes-gemini-key';
@@ -26,7 +26,61 @@ const state = {
 };
 
 const recorder = new MicRecorder();
+const tester = new MicTester();
 let _previewUrl = null;
+
+const getSelectedDeviceId = () => $('mic-select').value || undefined;
+
+/* ---------- マイク選択 ---------- */
+async function populateMics() {
+  const sel = $('mic-select');
+  let mics = [];
+  try { mics = await listMicrophones(); } catch (e) { mics = []; }
+  const prev = sel.value;
+  sel.innerHTML = '';
+  const def = document.createElement('option');
+  def.value = '';
+  def.textContent = t('mic-default');
+  sel.appendChild(def);
+  mics.forEach((m, i) => {
+    const o = document.createElement('option');
+    o.value = m.deviceId;
+    o.textContent = m.label || t('mic-label-n', { n: i + 1 });
+    sel.appendChild(o);
+  });
+  if (prev && [...sel.options].some(o => o.value === prev)) sel.value = prev;
+}
+
+/* ---------- マイクテスト (レベルメーター) ---------- */
+function setupMicTest() {
+  const btn = $('mic-test-btn');
+  const bar = $('mic-meter-bar');
+  btn.addEventListener('click', async () => {
+    if (tester.isActive) { stopMicTest(); return; }
+    try {
+      await tester.start(getSelectedDeviceId(), (level) => {
+        bar.style.width = (level * 100).toFixed(0) + '%';
+      });
+      $('mic-meter').style.display = 'block';
+      btn.textContent = t('mic-test-stop');
+      btn.classList.add('recording');
+      $('record-status').textContent = t('mic-test-hint');
+      await populateMics(); // 許可後にラベルが取れる
+    } catch (err) {
+      console.error(err);
+      $('record-status').textContent = '❌ ' + err.message;
+    }
+  });
+}
+
+function stopMicTest() {
+  tester.stop();
+  $('mic-meter').style.display = 'none';
+  $('mic-meter-bar').style.width = '0';
+  $('mic-test-btn').textContent = t('mic-test');
+  $('mic-test-btn').classList.remove('recording');
+  if (!recorder.isRecording) $('record-status').textContent = '';
+}
 
 /* ---------- 入力: 音声 (ファイル) ---------- */
 function setupAudioInput() {
@@ -80,14 +134,16 @@ function setupRecorder() {
       return;
     }
 
-    // 録音開始
+    // 録音開始 (テスト中なら止めてから)
+    if (tester.isActive) stopMicTest();
     try {
       await recorder.start((sec) => {
         lastTickSec = sec;
         status.textContent = t('rec-recording', { time: formatDuration(sec) });
-      });
+      }, getSelectedDeviceId());
       btn.classList.add('recording');
       btn.textContent = t('rec-stop');
+      populateMics(); // 許可後にラベルが取れる
     } catch (err) {
       console.error(err);
       status.textContent = '❌ ' + err.message;
@@ -368,6 +424,8 @@ function applyDynamicLang() {
   applyMaterialTitle();
   $('copy-btn').textContent = t('btn-copy');
   if (!recorder.isRecording) $('record-btn').textContent = t('rec-start');
+  if (!tester.isActive) $('mic-test-btn').textContent = t('mic-test');
+  populateMics();
   updateSummary();
   if (state.lastData) {
     mountMinutes($('minutes-output'), state.lastData, state.style);
@@ -379,6 +437,9 @@ function init() {
   setLang(detectLang());
   setupAudioInput();
   setupRecorder();
+  setupMicTest();
+  populateMics();
+  onDeviceChange(populateMics);
   setupMaterialInput();
   setupModeSwitch();
   setupApiKey();

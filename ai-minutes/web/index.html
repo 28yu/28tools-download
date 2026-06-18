@@ -116,6 +116,13 @@
           <span class="dropzone-title" id="audio-dz-title">音声ファイルを選択</span>
           <span class="dropzone-sub" data-lang-key="aimin-audio-sub">mp3 / m4a / wav など</span>
         </label>
+        <div class="mic-controls">
+          <select id="mic-select" class="mic-select" aria-label="マイク選択"></select>
+          <button type="button" class="record-btn" id="mic-test-btn">🔊 マイクをテスト</button>
+        </div>
+        <div class="mic-meter" id="mic-meter" style="display:none">
+          <div class="mic-meter-bar" id="mic-meter-bar"></div>
+        </div>
         <div class="record-controls">
           <button type="button" class="record-btn" id="record-btn">🎤 マイクで録音</button>
           <span class="record-status" id="record-status"></span>

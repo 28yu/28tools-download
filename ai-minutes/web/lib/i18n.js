@@ -42,6 +42,11 @@ const DICT = {
   'rec-err-denied': { ja: 'マイクの使用が許可されませんでした。ブラウザの設定で許可してください。', en: 'Microphone access was denied. Please allow it in your browser settings.', zh: '麦克风使用被拒绝。请在浏览器设置中允许。' },
   'rec-err-nomic':  { ja: 'マイクが見つかりませんでした。', en: 'No microphone was found.', zh: '未找到麦克风。' },
   'rec-err-generic':{ ja: '録音に失敗しました。', en: 'Recording failed.', zh: '录音失败。' },
+  'mic-default':    { ja: '既定のマイク', en: 'Default microphone', zh: '默认麦克风' },
+  'mic-label-n':    { ja: 'マイク {n}', en: 'Microphone {n}', zh: '麦克风 {n}' },
+  'mic-test':       { ja: '🔊 マイクをテスト', en: '🔊 Test mic', zh: '🔊 测试麦克风' },
+  'mic-test-stop':  { ja: '⏹ テスト停止', en: '⏹ Stop test', zh: '⏹ 停止测试' },
+  'mic-test-hint':  { ja: '話しかけるとバーが動けばOKです', en: 'Speak — if the bar moves, it works', zh: '说话时指示条移动即正常' },
 
   // ---------- input summary ----------
   'sum-audio':      { ja: '音声', en: 'Audio', zh: '音频' },
