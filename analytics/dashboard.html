@@ -433,6 +433,8 @@ let pvSelectedDate = '', toolSelectedDate = '';
 
 // ---- GA4 history → synthetic PV events ----
 // ga4_history 行を pageviews 互換オブジェクトに展開する
+// GA4 は未取得値を '(not set)' で返すため null に正規化する
+function ga4Clean(v) { return (v && v !== '(not set)') ? v : null; }
 function ga4ToEvents(ga4Rows) {
   const events = [];
   ga4Rows.forEach(r => {
@@ -447,9 +449,9 @@ function ga4ToEvents(ga4Rows) {
         referrer: null,
         country: r.country || null,
         city: null,
-        os: r.os || null,
-        browser: r.browser || null,
-        lang: r.lang || null,
+        os: ga4Clean(r.os),
+        browser: ga4Clean(r.browser),
+        lang: ga4Clean(r.lang),
         session_id: r.date + '_' + i,
         _ga4: true,
         _weight: r.views / n,
@@ -750,7 +752,7 @@ function renderPV(data) {
 
   // Browser chart（combined）
   const brRaw = {};
-  combined.forEach(r => { const k = r.browser||'Unknown'; brRaw[k]=(brRaw[k]||0)+(r._weight||1); });
+  combined.forEach(r => { const k = r.browser||'不明'; brRaw[k]=(brRaw[k]||0)+(r._weight||1); });
   const brE = sortedEntries(brRaw);
   makeChart('pv-browser-chart', 'doughnut', brE.map(e=>e[0]), [{
     data: brE.map(e=>Math.round(e[1])), backgroundColor: PALETTE, borderWidth: 0,
@@ -758,7 +760,7 @@ function renderPV(data) {
 
   // OS chart（combined）
   const osRaw = {};
-  combined.forEach(r => { const k = r.os||'Unknown'; osRaw[k]=(osRaw[k]||0)+(r._weight||1); });
+  combined.forEach(r => { const k = r.os||'不明'; osRaw[k]=(osRaw[k]||0)+(r._weight||1); });
   const osE = sortedEntries(osRaw);
   makeChart('pv-os-chart', 'doughnut', osE.map(e=>e[0]), [{
     data: osE.map(e=>Math.round(e[1])), backgroundColor: PALETTE, borderWidth: 0,
@@ -1129,7 +1131,7 @@ async function init() {
       Promise.all([
         supaFetch('downloads', 'ts,version,revit,country,city,os'),
         supaFetch('pageviews',  'ts,page,referrer,country,city,os,browser,lang,session_id').catch(() => []),
-        supaFetch('ga4_history', 'date,page,country,device_category,source,medium,views,sessions,users,new_users,engaged_sessions,avg_engagement_sec,bounce_rate', 'date.desc').catch(() => []),
+        supaFetch('ga4_history', '*', 'date.desc').catch(() => []),
       ]),
       fetchGitHubDL(),
     ]);

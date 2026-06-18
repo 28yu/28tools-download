@@ -119,13 +119,18 @@
     <div class="step-desc" style="margin-bottom:12px">
       Supabase の <a href="https://supabase.com/dashboard" target="_blank">SQL Editor</a> で以下を実行してください。
     </div>
-    <pre id="sql-code">-- ga4_history テーブル作成（全指標対応版）
+    <pre id="sql-code">-- ga4_history テーブル作成（browser / OS 対応版）
+-- ※すでに旧テーブルがある場合は、先頭の DROP のコメントを外して実行してください
+--   （ga4_history は GA4 から再同期できるためデータは失われません）
+-- DROP TABLE IF EXISTS ga4_history;
 CREATE TABLE IF NOT EXISTS ga4_history (
   id bigserial PRIMARY KEY,
   date date NOT NULL,
   page text,
   country text,
   device_category text,
+  browser text,
+  os text,
   source text,
   medium text,
   views integer DEFAULT 0,
@@ -136,7 +141,7 @@ CREATE TABLE IF NOT EXISTS ga4_history (
   avg_engagement_sec float DEFAULT 0,
   bounce_rate float DEFAULT 0,
   synced_at timestamptz DEFAULT now(),
-  UNIQUE(date, page, country, device_category, source, medium)
+  UNIQUE(date, page, country, device_category, browser, os, source, medium)
 );
 
 CREATE INDEX IF NOT EXISTS ga4_hist_date ON ga4_history (date);
@@ -151,6 +156,7 @@ GRANT SELECT ON public.ga4_history TO anon;
 GRANT SELECT ON public.ga4_history TO authenticated;
 GRANT ALL ON public.ga4_history TO service_role;
 GRANT ALL ON SEQUENCE public.ga4_history_id_seq TO service_role;</pre>
+    <div class="note" style="margin-top:12px">💡 ブラウザ別・OS別グラフを正しく表示するには <code>browser</code> / <code>os</code> 列が必要です。旧テーブルがある場合は上記 <code>DROP TABLE</code> のコメントを外して作り直し、後述の <code>syncHistorical</code> を再実行してください。</div>
     <button class="btn btn-sm" onclick="copyText('sql-code')">SQLをコピー</button>
   </div>
 
@@ -270,6 +276,8 @@ function _syncDateRange(p, startDate, endDate) {
         { name: 'deviceCategory' },
         { name: 'sessionSource' },
         { name: 'sessionMedium' },
+        { name: 'browser' },
+        { name: 'operatingSystem' },
       ],
       metrics: [
         { name: 'screenPageViews' },
@@ -295,6 +303,8 @@ function _syncDateRange(p, startDate, endDate) {
         device_category:   row.dimensionValues[3].value || null,
         source:            row.dimensionValues[4].value || null,
         medium:            row.dimensionValues[5].value || null,
+        browser:           row.dimensionValues[6].value || null,
+        os:                row.dimensionValues[7].value || null,
         views:             parseInt(row.metricValues[0].value) || 0,
         sessions:          parseInt(row.metricValues[1].value) || 0,
         users:             parseInt(row.metricValues[2].value) || 0,
