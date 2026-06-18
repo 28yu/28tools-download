@@ -60,6 +60,9 @@ const DICT = {
 
   // ---------- gemini.js ----------
   'g-encoding-audio':    { ja: '音声をエンコード中...', en: 'Encoding audio...', zh: '正在编码音频...' },
+  'g-uploading':         { ja: '{name} をアップロード中... (大きいファイルは時間がかかります)', en: 'Uploading {name}... (large files take time)', zh: '正在上传 {name}...（大文件需要时间）' },
+  'g-processing':        { ja: 'アップロードしたファイルを処理中...', en: 'Processing the uploaded file...', zh: '正在处理已上传的文件...' },
+  'g-err-upload':        { ja: 'ファイルのアップロードに失敗しました。時間をおいて再試行してください。', en: 'File upload failed. Please try again later.', zh: '文件上传失败。请稍后重试。' },
   'g-encoding-material': { ja: '資料 {i}/{n} をエンコード中...', en: 'Encoding material {i}/{n}...', zh: '正在编码资料 {i}/{n}...' },
   'g-sending':           { ja: 'Gemini に送信中... (音声が長いほど時間がかかります)', en: 'Sending to Gemini... (longer audio takes more time)', zh: '正在发送到 Gemini...（音频越长耗时越久）' },
   'g-err-no-key':   { ja: 'Gemini API キーが入力されていません。', en: 'No Gemini API key was entered.', zh: '未输入 Gemini API 密钥。' },

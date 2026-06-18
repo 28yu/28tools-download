@@ -9,11 +9,68 @@ import { t } from './i18n.js';
 
 // 無料枠で使えるマルチモーダル対応モデル。
 const MODEL = 'gemini-2.5-flash';
+const API_BASE = 'https://generativelanguage.googleapis.com';
 const ENDPOINT = (model, key) =>
-  `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(key)}`;
+  `${API_BASE}/v1beta/models/${model}:generateContent?key=${encodeURIComponent(key)}`;
 
-// インライン送信の安全上限 (リクエスト全体で ~20MB)。超える場合は呼び出し側で警告。
-export const INLINE_LIMIT_BYTES = 18 * 1024 * 1024;
+// インライン送信(base64 を本文に同梱)の安全上限。リクエスト全体で ~20MB の制約があるため、
+// これを超えるファイルは Files API でアップロードして URI 参照に切り替える(実質的な容量制限なし)。
+export const INLINE_LIMIT_BYTES = 15 * 1024 * 1024;
+
+/**
+ * Gemini Files API でファイルをアップロードし、{ mimeType, fileUri } を返す。
+ * resumable upload プロトコルを使用 (ブラウザから直接, CORS 対応)。
+ * 音声等は ACTIVE になるまで PROCESSING のため、状態をポーリングする。
+ */
+async function uploadViaFilesApi(apiKey, file, onLog) {
+  onLog(t('g-uploading', { name: file.name || 'file' }));
+  const mime = file.type || 'application/octet-stream';
+
+  // 1) アップロード開始 (resumable セッションを作成)
+  const startResp = await fetch(`${API_BASE}/upload/v1beta/files?key=${encodeURIComponent(apiKey)}`, {
+    method: 'POST',
+    headers: {
+      'X-Goog-Upload-Protocol': 'resumable',
+      'X-Goog-Upload-Command': 'start',
+      'X-Goog-Upload-Header-Content-Length': String(file.size),
+      'X-Goog-Upload-Header-Content-Type': mime,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ file: { display_name: file.name || 'upload' } }),
+  });
+  if (!startResp.ok) throw new Error(t('g-err-upload'));
+  const uploadUrl = startResp.headers.get('X-Goog-Upload-URL');
+  if (!uploadUrl) throw new Error(t('g-err-upload'));
+
+  // 2) バイト本体をアップロード＆finalize
+  const upResp = await fetch(uploadUrl, {
+    method: 'POST',
+    headers: {
+      'X-Goog-Upload-Offset': '0',
+      'X-Goog-Upload-Command': 'upload, finalize',
+      'Content-Type': mime,
+    },
+    body: file,
+  });
+  if (!upResp.ok) throw new Error(t('g-err-upload'));
+  let info = await upResp.json();
+  let f = info.file;
+  if (!f || !f.name) throw new Error(t('g-err-upload'));
+
+  // 3) ACTIVE になるまでポーリング (音声/動画は PROCESSING 経由)
+  let tries = 0;
+  while (f.state === 'PROCESSING' && tries < 90) {
+    onLog(t('g-processing'));
+    await new Promise(r => setTimeout(r, 2000));
+    const st = await fetch(`${API_BASE}/v1beta/${f.name}?key=${encodeURIComponent(apiKey)}`);
+    if (!st.ok) break;
+    f = await st.json();
+    tries++;
+  }
+  if (f.state === 'FAILED') throw new Error(t('g-err-upload'));
+
+  return { mimeType: f.mimeType || mime, fileUri: f.uri };
+}
 
 const PROMPT = `あなたは建築・建設現場の打合せ議事録を作成する専門アシスタントです。
 入力された「打合せ音声」「打合せ資料(図面・画像)」「文字起こしテキスト」を総合的に理解し、
@@ -116,12 +173,14 @@ export async function generateWithGemini(input, onLog = () => {}) {
   const { apiKey, audioFile, materialFiles = [], transcript } = input;
   if (!apiKey) throw new Error(t('g-err-no-key'));
 
-  // インライン総量チェック
-  let totalBytes = (audioFile ? audioFile.size : 0)
-    + materialFiles.reduce((s, f) => s + f.size, 0);
-  if (totalBytes > INLINE_LIMIT_BYTES) {
-    throw new Error(t('g-err-too-large', { mb: (totalBytes / 1048576).toFixed(1) }));
+  if (!transcript?.trim() && !audioFile && materialFiles.length === 0) {
+    throw new Error(t('g-err-need-input'));
   }
+
+  // 合計が小さければ高速なインライン送信、大きければ Files API へ自動切替 (容量制限なし)。
+  const totalBytes = (audioFile ? audioFile.size : 0)
+    + materialFiles.reduce((s, f) => s + f.size, 0);
+  const useFilesApi = totalBytes > INLINE_LIMIT_BYTES;
 
   const parts = [{ text: PROMPT }];
 
@@ -129,24 +188,25 @@ export async function generateWithGemini(input, onLog = () => {}) {
     parts.push({ text: `\n【文字起こしテキスト】\n${transcript.trim()}` });
   }
 
+  // 添付ファイルを part に変換 (インライン or Files API)
+  const addFile = async (file, defaultMime) => {
+    if (useFilesApi) {
+      const fileData = await uploadViaFilesApi(apiKey, file, onLog);
+      return { fileData };
+    }
+    const b64 = await fileToBase64(file);
+    return { inlineData: { mimeType: file.type || defaultMime, data: b64 } };
+  };
+
   if (audioFile) {
-    onLog(t('g-encoding-audio'));
-    const b64 = await fileToBase64(audioFile);
-    parts.push({
-      inlineData: { mimeType: audioFile.type || 'audio/mpeg', data: b64 },
-    });
+    if (!useFilesApi) onLog(t('g-encoding-audio'));
+    parts.push(await addFile(audioFile, 'audio/mpeg'));
   }
 
   for (let i = 0; i < materialFiles.length; i++) {
-    onLog(t('g-encoding-material', { i: i + 1, n: materialFiles.length }));
-    const f = materialFiles[i];
-    const b64 = await fileToBase64(f);
+    if (!useFilesApi) onLog(t('g-encoding-material', { i: i + 1, n: materialFiles.length }));
     parts.push({ text: `\n【資料${i + 1}】` });
-    parts.push({ inlineData: { mimeType: f.type || 'image/png', data: b64 } });
-  }
-
-  if (!transcript?.trim() && !audioFile && materialFiles.length === 0) {
-    throw new Error(t('g-err-need-input'));
+    parts.push(await addFile(materialFiles[i], 'image/png'));
   }
 
   const reqBody = {
