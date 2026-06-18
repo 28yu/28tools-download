@@ -387,6 +387,13 @@ function getCountryFlag(nameOrCode) {
   return code ? codeToFlag(code) : '🌏';
 }
 
+// 国名(GA4: 'Japan')と国コード(Supabase: 'JP')が混在するため ISO コードに正規化してから集計する
+function toCountryCode(nameOrCode) {
+  if (!nameOrCode) return null;
+  if (nameOrCode.length === 2) return nameOrCode.toUpperCase();
+  return COUNTRY_NAME_TO_CODE[nameOrCode] || nameOrCode;
+}
+
 // Keep FLAGS for backward compat (used in some places with 2-letter codes)
 const FLAGS = new Proxy({}, { get: (_, k) => codeToFlag(k) });
 
@@ -682,7 +689,7 @@ function renderPV(data) {
   document.getElementById('kpi-pv-week').textContent  = filterByDays(data, 7).length;
   document.getElementById('kpi-pv-month').textContent = filterByDays(data, 30).length;
   document.getElementById('kpi-pv-month-label').textContent = now.getFullYear() + '年' + (now.getMonth()+1) + '月';
-  document.getElementById('kpi-pv-countries').textContent = new Set(combined.map(r=>r.country).filter(Boolean)).size;
+  document.getElementById('kpi-pv-countries').textContent = new Set(combined.map(r=>toCountryCode(r.country)).filter(Boolean)).size;
 
   // GA4 集計指標：直帰率・平均滞在時間
   let totalSess = 0, wBounce = 0, wEngage = 0;
@@ -772,10 +779,10 @@ function renderPV(data) {
     data: hourBins, backgroundColor: '#fbbf24', borderRadius: 2,
   }], { plugins: { legend: { display: false } } });
 
-  // Country table（GA4実データ + Supabase）
+  // Country table（GA4実データ + Supabase）— 国コードに正規化して JP/Japan の重複をまとめる
   const countryRaw = {};
-  data.forEach(r => { if (r.country) countryRaw[r.country]=(countryRaw[r.country]||0)+1; });
-  allGA4.forEach(r => { if (r.country) countryRaw[r.country]=(countryRaw[r.country]||0)+(r.views||0); });
+  data.forEach(r => { const c = toCountryCode(r.country); if (c) countryRaw[c]=(countryRaw[c]||0)+1; });
+  allGA4.forEach(r => { const c = toCountryCode(r.country); if (c) countryRaw[c]=(countryRaw[c]||0)+(r.views||0); });
   renderCountryTableRaw('pv-country-table', countryRaw);
 
   const rawBody = document.getElementById('pv-raw-body');
