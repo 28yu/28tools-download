@@ -1,28 +1,6 @@
 {
-  "lastUpdated": "2026-06-17T06:13:33.179955",
+  "lastUpdated": "2026-06-18T05:56:39.481244",
   "articles": [
-    {
-      "title": "Reachy Mini goes fully local",
-      "titleJa": "Reachy Mini は完全にローカルになります",
-      "link": "https://huggingface.co/blog/local-reachy-mini-conversation",
-      "description": "...",
-      "publishedDate": "Wed, 27 May 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
-      "titleJa": "ハブ バケットを使用した 1 兆個のパラメータの送信: TRL でのデルタ ウェイト同期",
-      "link": "https://huggingface.co/blog/delta-weight-sync",
-      "description": "...",
-      "publishedDate": "Wed, 27 May 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
-      "language": "en"
-    },
     {
       "title": "We’re announcing new community investments in Missouri.",
       "titleJa": "私たちはミズーリ州での新たなコミュニティ投資を発表します。",
@@ -57,6 +35,138 @@
       "language": "en"
     },
     {
+      "title": "MolmoMotion: Language-guided 3D motion forecasting",
+      "titleJa": "MolmoMotion: 言語ガイドによる 3D モーション予測",
+      "link": "https://huggingface.co/blog/allenai/molmomotion",
+      "description": "...",
+      "publishedDate": "Wed, 17 Jun 2026 15:26:44 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/wdq3AFZcDZAekGTb16VDy.png",
+      "language": "en"
+    },
+    {
+      "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
+      "titleJa": "新しい研究では、当社の医療 AI である AMIE が健康状態の管理にどのように役立つかを示しています。",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/",
+      "description": "Research in “Nature” shows our conversational AI system matches primary care physicians in complex disease management....",
+      "publishedDate": "Wed, 17 Jun 2026 15:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AMIE_Mx_Nature_Social_Visual_Va.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "AI受託開発とは？おすすめ会社10選や費用相場・導入の流れを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/ai-contract-development/",
+      "description": "AIを活用して業務を効率化したいものの、「自社にノウハウがない」「何から始めればいいかわからない」と悩む企業担当者は少なくありません。実際、帝国データバンクが2026年3月に1万312社を対象に実施した調査でも、AI導入 [...]...",
+      "publishedDate": "Wed, 17 Jun 2026 13:20:58 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-contract-development_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Sakana Marlinとは？Sakana AIのVirtual CSOが数週間のリサーチを数時間で完遂する仕組みを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/sakana-marlin/",
+      "description": "2026年6月、Sakana AIから新たな自律型リサーチエージェントが発表されました。 今回登場した「Sakana Marlin」は、CSO（最高戦略責任者）とそのチームが数週間を費やすような本格的な戦略リサーチを引き [...]...",
+      "publishedDate": "Wed, 17 Jun 2026 12:20:29 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Sakana-Marlin_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "The Download: a reality check for geoengineering and the science of interoception",
+      "titleJa": "ダウンロード: 地球工学と相互受容科学の現実性確認",
+      "link": "https://www.technologyreview.com/2026/06/17/1139200/the-download-solar-geoengineering-interoception/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Hacking the atmosphere: geoengineering gets a real...",
+      "publishedDate": "Wed, 17 Jun 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2022/02/T1042.png?w=2234",
+      "language": "en"
+    },
+    {
+      "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
+      "titleJa": "Hugging Face Hub から Strands Agents と LeRobot を使用したロボット ハードウェアまで",
+      "link": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
+      "description": "...",
+      "publishedDate": "Wed, 17 Jun 2026 10:18:05 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6a1dc0f2b4238bb17ff94794/qvSGZ0tZsgr4U4BCx_bVX.png",
+      "language": "en"
+    },
+    {
+      "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
+      "titleJa": "ほぼ自律的な AI 化学者が医薬化学における困難な反応を改善する",
+      "link": "https://openai.com/index/ai-chemist-improves-reaction",
+      "description": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research....",
+      "publishedDate": "Wed, 17 Jun 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "GLM-5.2: Built for Long-Horizon Tasks",
+      "titleJa": "GLM-5.2: 長期的なタスク向けに構築",
+      "link": "https://huggingface.co/blog/zai-org/glm-52-blog",
+      "description": "...",
+      "publishedDate": "Wed, 17 Jun 2026 09:01:25 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/67066ea38a79951d7b8d4195/iaTHtYOBgeY0C3Xx3vymr.png",
+      "language": "en"
+    },
+    {
+      "title": "Entrepreneurs in Nairobi make the case for going solar",
+      "titleJa": "ナイロビの起業家が太陽光発電の導入を主張",
+      "link": "https://www.technologyreview.com/2026/06/17/1138600/entrepreneurs-nairobi-case-for-going-solar/",
+      "description": "Most of Kenya’s power grid runs on renewables. But with 25% of communities lacking centralized electricity, the nation is looking to off-grid solar to hit its goal of delivering universal electricity ...",
+      "publishedDate": "Wed, 17 Jun 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/map-nairobi.jpg?w=2000",
+      "language": "en"
+    },
+    {
+      "title": "Hacking the atmosphere: Geoengineering gets a reality check",
+      "titleJa": "大気をハッキング: 地球工学が現実性をチェックする",
+      "link": "https://www.technologyreview.com/2026/06/17/1138743/hacking-atmosphere-geoengineering-reality-check/",
+      "description": "Jim Franke pulls away the cover page of a presentation on the wraparound desk in his office, revealing an illustration of an odd-­looking aircraft with massive wings stretching out from a stubby fusel...",
+      "publishedDate": "Wed, 17 Jun 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/David-Keith-1.jpg?w=1494",
+      "language": "en"
+    },
+    {
+      "title": "Grok APIとは？料金・モデル・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/grok-api/",
+      "description": "「Grok APIとは何ができるのか」「料金はいくらかかるのか」「どうやって始めればいいのか」 自社のアプリやシステムに生成AIを組み込もうとすると、まずこの3つが気になるのではないでしょうか。Grok APIは、イーロ [...] The post Grok APIとは？料金・モデル・使い方を徹底解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 17 Jun 2026 06:42:07 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/grok-api_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "イレブンラボ、十印の企業向け多言語吹き替えサービスにAI音声技術を提供開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/elevenlabs-toin-ai-audio-dubbing/",
+      "description": "イレブンラボは企業向け翻訳サービスの十印と業務提携し、十印が展開する多言語吹き替え支援サービスに、AI音声技術の提供を開始しました。 このニュースのポイント イレブンラボと企業向け翻訳提供の十印が、多言語吹き替え支援サー [...] The post イレブンラボ、十印の企業向け多言語吹き替えサービスにAI音声技術を提供開始 first appeared on AIポータルメディアAIsmiley...",
+      "publishedDate": "Wed, 17 Jun 2026 06:31:12 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/elevenlabseye.png",
+      "language": "ja"
+    },
+    {
       "title": "Claude Codeのサブエージェントとは？使い方やうまく動かないときの原因・対策も紹介",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/claude-code-sub-agent/",
@@ -77,6 +187,28 @@
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/CaudeOptingOut.png",
       "language": "ja"
+    },
+    {
+      "title": "Introducing LifeSciBench",
+      "titleJa": "LifeSciBench の紹介",
+      "link": "https://openai.com/index/introducing-life-sci-bench",
+      "description": "Introducing LifeSciBench, an expert-authored, expert-reviewed benchmark for evaluating how AI systems handle real-world life science research tasks and decisions....",
+      "publishedDate": "Wed, 17 Jun 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Agentic Resource Discovery: Let agents search",
+      "titleJa": "エージェントのリソース検出: エージェントに検索させます",
+      "link": "https://huggingface.co/blog/agentic-resource-discovery-launch",
+      "description": "...",
+      "publishedDate": "Wed, 17 Jun 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/agentic-resource-discovery-launch/thumbnail.png",
+      "language": "en"
     },
     {
       "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
@@ -153,17 +285,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_Mode_US.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "New ways to create and get things done in Google Workspace",
-      "titleJa": "Google Workspace で物事を作成し実行する新しい方法",
-      "link": "https://blog.google/products-and-platforms/products/workspace/workspace-updates/",
-      "description": "Google Workspace...",
-      "publishedDate": "Tue, 19 May 2026 17:45:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GoogleWorkspace-IO.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -244,50 +365,6 @@
       "language": "ja"
     },
     {
-      "title": "レノボ、FIFAワールドカップ2026にAIインフラ提供。遅延5秒未満の配信や選手の3Dアバターで大会支援",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/lenovo-fifa-worldcup-2026-ai/",
-      "description": "レノボは、FIFAワールドカップ2026にAIインフラを提供しています。大会運営・ファン・出場チームへの多角的なAI支援が可能になりました。 このニュースのポイント レノボ、FIFAワールドカップ2026にAIインフラを [...] The post レノボ、FIFAワールドカップ2026にAIインフラ提供。遅延5秒未満の配信や選手の3Dアバターで大会支援 first appeared on AI...",
-      "publishedDate": "Tue, 16 Jun 2026 05:29:50 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/lenovoeye.png",
-      "language": "ja"
-    },
-    {
-      "title": "キヤノンMJとキヤノンITS、愛媛県でAIによる農作業判断支援サービスの実装検証を開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/canon-bind-vision/",
-      "description": "キヤノンMJとキヤノンITSは、農地の画像や気象・土壌などの環境データをAIで整理・可視化し、日々の作業判断や技術継承を支援するサービスの実装検証を愛媛県にて開始しました。 このニュースのポイント キヤノンMJとキヤノン [...] The post キヤノンMJとキヤノンITS、愛媛県でAIによる農作業判断支援サービスの実装検証を開始 first appeared on AIポータルメディアAI...",
-      "publishedDate": "Tue, 16 Jun 2026 05:19:51 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/canonAI.png",
-      "language": "ja"
-    },
-    {
-      "title": "生成AI時代における検索エンジンの利用実態調査。全体の約6割以上が検索エンジンを利用",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/nyle-genai-seachengine-survey/",
-      "description": "マーケティング支援を行うナイルは、生成AIが普及する現在の情報収集行動を探るため、「検索エンジンの利用実態調査」を実施しました。 このニュースのポイント 生成AI時代でも約6割が調べものの際に検索エンジンを利用 信頼性の [...] The post 生成AI時代における検索エンジンの利用実態調査。全体の約6割以上が検索エンジンを利用 first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Tue, 16 Jun 2026 05:06:35 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/kensakuengin.png",
-      "language": "ja"
-    },
-    {
-      "title": "【開催速報】「AI博覧会 Nagoya 2026」本日より開幕！名古屋・東海エリアの「現場DX」を加速する2日間がスタート",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-hakurankai-nagoya2026-event-report/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年6月16日（火）・17日（水）の2日間、名古屋コンベンションホールにて「AI博覧会 Nagoya 2026」を開催しており [...] The post 【開催速報】「AI博覧会 Nagoya 2026」本日より開幕！名古屋・東海エリアの「現場DX」を加速する2日間がスタート first appear...",
-      "publishedDate": "Tue, 16 Jun 2026 04:53:34 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ai-hakurankai-nagoya2026-event-report_000.png",
-      "language": "ja"
-    },
-    {
       "title": "【GLM-5.2】Fable 5停止の翌日に緊急公開！100万トークン対応コーディングモデルを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/glm-5-2/",
@@ -296,17 +373,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GLM-5.2-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Grokの制限とは？画像（動画）生成・種類・解除方法・料金を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/grok-limit/",
-      "description": "「Grokを使っていたら急に止まってしまった」「無料だとどこまで使えるの？」「制限を解除する方法はある？」 Grokを使い始めると、こうした疑問にぶつかる方は少なくありません。Grokには会話や画像・動画の生成について、 [...] The post Grokの制限とは？画像（動画）生成・種類・解除方法・料金を徹底解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 16 Jun 2026 03:13:06 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/grok-limit_ic.webp",
       "language": "ja"
     },
     {
@@ -354,17 +420,6 @@
       "language": "en"
     },
     {
-      "title": "Industrial policy for the Intelligence Age",
-      "titleJa": "インテリジェンス時代の産業政策",
-      "link": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
-      "description": "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves....",
-      "publishedDate": "Tue, 09 Jun 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "Migrating Your GitHub CI to Hugging Face Jobs",
       "titleJa": "GitHub CI を Hugging Face ジョブに移行する",
       "link": "https://huggingface.co/blog/github-ci-hf-jobs",
@@ -398,70 +453,59 @@
       "language": "en"
     },
     {
-      "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
-      "titleJa": "バージニア州における当社の新たなコミュニティへの投資は、地元の雇用をサポートし、エネルギーの手頃な価格を拡大します。",
-      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
-      "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
-      "publishedDate": "Thu, 11 Jun 2026 20:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "How an astrophysicist uses Codex to help simulate black holes",
-      "titleJa": "天体物理学者がコーデックスを使用してブラック ホールのシミュレーションを支援する方法",
-      "link": "https://openai.com/index/using-codex-to-simulate-black-holes",
-      "description": "Discover how astrophysicist Chi-kwan Chan uses Codex to build black hole simulations, helping scientists study extreme physics and test Einstein’s theory of general relativity....",
-      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "OpenAI to acquire Ona",
-      "titleJa": "OpenAIがOnaを買収へ",
-      "link": "https://openai.com/index/openai-to-acquire-ona",
-      "description": "OpenAI plans to acquire Ona to expand Codex with secure, persistent cloud environments, enabling long-running AI agents across enterprise workflows....",
-      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "BBVA puts AI at the core of banking with OpenAI",
-      "titleJa": "BBVA は OpenAI を使用して AI を銀行業務の中核に据えます",
-      "link": "https://openai.com/index/bbva",
-      "description": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide....",
-      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
-      "titleJa": "信頼できる AI エコシステムを確保するための欧州の取り組みを支援",
-      "link": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
-      "description": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content....",
-      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP",
-      "titleJa": "PyTorch でのプロファイリング (パート 2): nn.Linear から融合 MLP まで",
-      "link": "https://huggingface.co/blog/torch-mlp-fusion",
-      "description": "...",
-      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
+      "title": "AIエージェント開発方法！具体的な手順・おすすめツールを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/ai-agent-development/",
+      "description": "みなさん！業務を自動でこなしてくれる「AIエージェント」がついに、開発・実用化可能な段階にまで進歩してきています。とはいえ、「本当に業務で使えるの？」「開発費用や期間はどれくらい？」と不安に感じる方も多いはず。 というこ [...]...",
+      "publishedDate": "Thu, 18 Jun 2026 03:46:57 +0000",
+      "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/torch-mlp-fusion/thumbnail.png",
-      "language": "en"
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/01/ai-agent-development_2601-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "「AI博覧会 Nagoya 2026」の来場者数が目標の倍となる6,453名を記録！名古屋・東海エリア初開催、ものづくりの現場で進むAI実装への熱気広がる",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-hakurankai-nagoya2026-event-report02/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年6月16日（火）・17日（水）の2日間、名古屋コンベンションホールにて「AI博覧会 Nagoya 2026」を開催しました [...] The post 「AI博覧会 Nagoya 2026」の来場者数が目標の倍となる6,453名を記録！名古屋・東海エリア初開催、ものづくりの現場で進むAI実装への熱気...",
+      "publishedDate": "Thu, 18 Jun 2026 03:00:03 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ai-hakurankai-nagoya2026-event-report2_0000.png",
+      "language": "ja"
+    },
+    {
+      "title": "Grok Imagine Video 1.5とは？xAIの最新画像to動画AIモデルの特徴・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/grok-imagine-video-1-5/",
+      "description": "2026年6月、xAIから最新のimage-to-videoモデルが公開されました。 今回登場した「Grok Imagine Video 1.5」は、静止画を起点に自然な動きを持つ動画を生成するimage-to-vide [...]...",
+      "publishedDate": "Thu, 18 Jun 2026 02:41:33 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Grok-Imagine-Video-1.5-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Grokの会話履歴や画像生成はバレる？原因とバレない設定・対策を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/grok-found/",
+      "description": "X（旧Twitter）のAI機能「Grok（グロック）」を使っていて、「自分の検索や質問が他人にバレないか」「フォロワーに履歴が見られていないか」と不安になったことはありませんか。 さらに、Grokで作った画像や動画が「 [...] The post Grokの会話履歴や画像生成はバレる？原因とバレない設定・対策を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Thu, 18 Jun 2026 02:27:37 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/grok-found_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claudeの文字数制限はどれくらい？入力・出力の上限や対処法を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-character-limit/",
+      "description": "「Claudeで長文を作成していたら途中で止まってしまった」「資料を読み込ませたら、急に制限が表示された」。このように、Claudeを使用していて困ったことはありませんか？ こうした制限に関する問題は、多くのClaude [...] The post Claudeの文字数制限はどれくらい？入力・出力の上限や対処法を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Thu, 18 Jun 2026 01:13:13 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ClaudeMain.png",
+      "language": "ja"
     },
     {
       "title": "Fusion APIとは？複数AIモデルを組み合わせてフロンティア性能を超えるOpenRouterの新機能を徹底解説",
@@ -497,17 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "生成AIでインフォグラフィックは作成可能！無料での作り方やおすすめAIツールをまとめて解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/generating-ai-infographics/",
-      "description": "生成AIを活用したデザイン制作が広がるなか、インフォグラフィックの作成にもAIを活用する企業や担当者が増えています。ChatGPTやClaudeなどの生成AIは、文章整理やコード生成、ビジュアル作成支援などに活用できます [...]...",
-      "publishedDate": "Sat, 13 Jun 2026 13:38:55 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Generating-AI-infographics_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "【Gemini-SQL2】BIRDベンチマーク80%超えの衝撃！Googleの最新Text-to-SQL技術を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/gemini-sql2/",
@@ -519,36 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "Geminiのオプトアウトのやり方は？アクティビティをオフにして情報漏えいを防ぐ方法を解説",
+      "title": "あなたのAWSのコストの問題がどこにあるか、AIが教えてくれる「AWS FinOps Agent」パブリックプレビュー開始",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/gemini-opt-out/",
-      "description": "Geminiでは、「Gemini App アクティビティ」をオフにすることで、入力内容がAIモデル改善に利用される範囲を制限できます。とはいえ、「オプトアウトすると何が変わるの？」「設定すれば機密情報を入力しても大丈夫？ [...]...",
-      "publishedDate": "Fri, 12 Jun 2026 12:19:13 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/awsaiaws_finops_agent.html",
+      "description": "Amazon Web Services（AWS）は、使用中のAWSのコストに関する質問や、コストに異常が発生した場合にその原因を調査して特定してくれる「AWS FinOps Agent」のパブリックプレビュー開始を発表しました。 AWSはそ......",
+      "publishedDate": "2026-06-17T15:49:03Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Gemini-Opt-out_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Geminiアプリのアンインストール方法！iPhone・Android別の手順と削除できないときの対処法",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/uninstalling-officemini/",
-      "description": "Geminiは、Googleが提供しているAIアシスタントアプリです。Androidでは、Googleアシスタントの代替AIアシスタントとしてGeminiが案内・設定されるケースがあります。「勝手に入っていた」「削除ボタ [...]...",
-      "publishedDate": "Fri, 12 Jun 2026 11:50:14 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Uninstalling-Officemini_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【DiffusionGemma】テキスト生成が4倍速に！Googleの拡散型オープンモデルの仕組み・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/diffusiongemma/",
-      "description": "2026年6月11日、Google DeepMindはテキスト拡散ベースの実験的オープンモデル「DiffusionGemma」を公開しました！ トークンを1つずつ生成する従来のLLMとは根本的に異なり、256トークンのブ [...]...",
-      "publishedDate": "Fri, 12 Jun 2026 00:19:33 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_DiffusionGemma-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/awsfinopsagent-pv01.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/coreutils4windows-build2026.png",
-      "language": "ja"
-    },
-    {
-      "title": "Rust製の高速なJavaScriptバンドラ「Rolldown」がバージョン1.0に到達。ビルドツールVite 8.0で採用",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/rustjavascriptrolldown10vite_80.html",
-      "description": "Rutで書かれたオープンソースの高速なJavaSriptバンドラ「Rolldown」がバージョン1.0に到達しました。 esbuildの高速性とRollupの拡張性を兼ね備える Rolldownは長年にわたり人気を維持してきたJavaScr......",
-      "publishedDate": "2026-06-01T15:04:50Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/rolldown10ga.png",
       "language": "ja"
     }
   ]
