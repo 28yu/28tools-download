@@ -279,6 +279,15 @@ export async function generateWithGemini(input, onLog = () => {}) {
   };
 
   onLog(t('g-sending'));
+  const data = await requestJson(apiKey, reqBody);
+  data.meta = data.meta || {};
+  return data;
+}
+
+/**
+ * generateContent を呼び、JSON を解釈して返す共通処理。
+ */
+async function requestJson(apiKey, reqBody) {
   let resp;
   try {
     resp = await fetch(ENDPOINT(MODEL, apiKey), {
@@ -312,12 +321,42 @@ export async function generateWithGemini(input, onLog = () => {}) {
 
   const data = parseJsonLoose(text);
   if (data == null) {
-    // 修復しても壊れている場合: 出力長超過なら専用メッセージ
     if (reason === 'MAX_TOKENS') throw new Error(t('g-err-maxtokens'));
     throw new Error(t('g-err-json') + (reason && reason !== 'STOP' ? ` (${reason})` : ''));
   }
-
-  // meta が無い場合の保険
-  data.meta = data.meta || {};
   return data;
+}
+
+const LANG_NAMES = { ja: '日本語', en: 'English', zh: '简体中文' };
+
+/**
+ * 生成済みの議事録 JSON を指定言語に翻訳する (構造・キーは保持)。
+ * @param {string} apiKey
+ * @param {Object} data 既存の議事録データ
+ * @param {string} targetLang 'ja' | 'en' | 'zh'
+ */
+export async function translateMinutes(apiKey, data, targetLang) {
+  if (!apiKey) throw new Error(t('g-err-no-key'));
+  const langName = LANG_NAMES[targetLang] || targetLang;
+  const prompt = `次の議事録 JSON を ${langName} に翻訳してください。
+- JSON の構造とキーは一切変更しない。
+- 人が読むテキスト値(title, summary, text, speaker, assignee, due, topic, points, location, project, attendees)のみ翻訳する。
+- 項目の追加・削除・並べ替えはしない。固有名詞・寸法・記号は無理に訳さない。
+- すでに ${langName} の箇所はそのままでよい。
+出力は JSON のみ。`;
+
+  const reqBody = {
+    contents: [{ role: 'user', parts: [{ text: prompt }, { text: JSON.stringify(data) }] }],
+    generationConfig: {
+      temperature: 0.1,
+      responseMimeType: 'application/json',
+      responseSchema: SCHEMA,
+      maxOutputTokens: 65536,
+      thinkingConfig: { thinkingBudget: 0 },
+    },
+  };
+
+  const out = await requestJson(apiKey, reqBody);
+  out.meta = out.meta || data.meta || {};
+  return out;
 }
