@@ -16,6 +16,8 @@ import urllib.error
 import urllib.parse
 import time
 
+from news_static import inject_static_news
+
 # RSSフィードソース
 RSS_FEEDS = [
     # 英語ソース
@@ -311,8 +313,9 @@ def main():
     print(f"  📊 日本語: {len(ja_articles)}件 / 海外: {len(foreign_articles)}件")
 
     # JSONとして出力
+    last_updated = datetime.utcnow().isoformat()
     output = {
-        'lastUpdated': datetime.utcnow().isoformat(),
+        'lastUpdated': last_updated,
         'articles': combined
     }
 
@@ -320,6 +323,9 @@ def main():
         json.dump(output, f, ensure_ascii=False, indent=2)
 
     print(f"✓ Saved {len(combined)} articles to data/ai-news.json")
+
+    # ai-news.html の静的領域に最新記事を焼き込む（案A・SEO/AdSense 対策）
+    inject_static_news('ai-news.html', combined, last_updated, ai=True)
 
 if __name__ == '__main__':
     main()
