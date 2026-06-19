@@ -119,7 +119,7 @@ async function main() {
   const failures = [];
 
   console.log(
-    `Source: ${SRC_DIR ? `local dir ${SRC_DIR}` : REMOTE_BASE}\n` +
+    `Source: ${SRC_DIR ? `local dir ${SRC_DIR}` : `${RAW_BASE} (fallback: ${PAGES_BASE})`}\n` +
       `Scanning ${files.length} files in ${MANUAL_DIR}\n`
   );
 
