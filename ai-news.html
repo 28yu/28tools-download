@@ -58,7 +58,7 @@
         <div class="news-update-info">
             <span class="update-icon">🔄</span>
             <span data-lang-key="ai-news-update-label">最終更新:</span>
-            <span id="last-update-time">読み込み中...</span>
+            <span id="last-update-time">2026/06/19</span>
             <span class="update-note" data-lang-key="ai-news-update-note">（毎日自動更新）</span>
         </div>
 
@@ -73,11 +73,280 @@
 
         <!-- ニュースカードコンテナ -->
         <div id="news-container" class="news-grid">
-            <!-- JavaScriptで動的に生成 -->
-            <div class="loading-message">
-                <span class="loading-spinner">⏳</span>
-                <p data-lang-key="ai-news-loading">ニュースを読み込み中...</p>
-            </div>
+            <!-- 静的領域: .github/scripts (fetch_ai_rss.py + news_static.py) が自動生成。手動編集しない。
+                 生HTML単体で記事が読めるようにし、JS(ai-news.js)がロード時に同データで上書きする。 -->
+            <!-- NEWS_STATIC_START : .github/scripts が自動生成。手動編集しない -->
+<article class="news-card" data-category="general">
+    <div class="news-card-thumbnail "><img src="https://aismiley.co.jp/wp-content/uploads/2026/06/claude-code-openclaw_ic.webp" alt="Claude CodeとOpenClawの違いとは？使い分け・連携方法・セキュリティ面の注意点を解説" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category general">AI全般</span></div>
+        <h3 class="news-card-title"><a href="https://aismiley.co.jp/ai_news/claude-code-openclaw/" target="_blank" rel="noopener noreferrer">Claude CodeとOpenClawの違いとは？使い分け・連携方法・セキュリティ面の注意点を解説</a></h3>
+        <p class="news-card-description">AIコーディングツールの選択肢が増える中、AnthropicのClaudeとチャットベースの開発支援ツールはどちらも開発を効率化する強力なツールですが、その役割や得意分野は大きく異なります。 この記事では、両者の違いを整 [...] The post Claude CodeとOpenClawの違いとは？使い分け・連携方法・セキュリティ面の注意点を解説 first appeared on AIポータ...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/19</span><span class="news-card-source">AIsmiley</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://weel.co.jp/wp-content/uploads/hallucination_2606-1024x576.webp" alt="ハルシネーションとは？事例で学ぶ生成AIの誤回答と対策" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://weel.co.jp/media/hallucination" target="_blank" rel="noopener noreferrer">ハルシネーションとは？事例で学ぶ生成AIの誤回答と対策</a></h3>
+        <p class="news-card-description">生成AIに潜む「ハルシネーション」というリスクをご存じでしょうか？ ハルシネーションとは、生成AIがもっともらしく事実とは異なる情報を出力してしまう現象のことで、一般に「AIの嘘」としても知られています。こちらは生成AI [...]...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/18</span><span class="news-card-source">WEEL</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="general">
+    <div class="news-card-thumbnail "><img src="https://aismiley.co.jp/wp-content/uploads/2026/05/170.png" alt="Gemini Omniの正体を徹底解剖！世界モデルが変える動画制作の未来" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category general">AI全般</span></div>
+        <h3 class="news-card-title"><a href="https://aismiley.co.jp/ai_news/gemini-omni/" target="_blank" rel="noopener noreferrer">Gemini Omniの正体を徹底解剖！世界モデルが変える動画制作の未来</a></h3>
+        <p class="news-card-description">「動画生成AIを使ってみたけど、思った通りの映像にならない…」「プロっぽい動画を作りたいけど、動画編集ソフトの操作を覚える時間がない…」。Google I/O 2026で発表された「Gemini Omni」は、そんな悩み [...] The post Gemini Omniの正体を徹底解剖！世界モデルが変える動画制作の未来 first appeared on AIポータルメディアAIsmiley....</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/18</span><span class="news-card-source">AIsmiley</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="general">
+    <div class="news-card-thumbnail "><img src="https://aismiley.co.jp/wp-content/uploads/2026/06/sakanaaieye.png" alt="Sakana AI、初の商用プロダクトとなるビジネス向け自律型リサーチアシスタント「Sakana Marlin」提供開始" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category general">AI全般</span></div>
+        <h3 class="news-card-title"><a href="https://aismiley.co.jp/ai_news/sakana-ai-sakana-marlin-release/" target="_blank" rel="noopener noreferrer">Sakana AI、初の商用プロダクトとなるビジネス向け自律型リサーチアシスタント「Sakana Marlin」提供開始</a></h3>
+        <p class="news-card-description">Sakana AIは、同社初の商用プロダクトとなるビジネス向けの自律型リサーチアシスタント「Sakana Marlin」の提供を開始しました。調査テーマを指示するだけで、最大約8時間にわたり自律的にリサーチを遂行し、構造 [...] The post Sakana AI、初の商用プロダクトとなるビジネス向け自律型リサーチアシスタント「Sakana Marlin」提供開始 first appeare...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/18</span><span class="news-card-source">AIsmiley</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://weel.co.jp/wp-content/uploads/gen-ai-dev-environment_2606-1024x576.webp" alt="AI開発環境とは？種類・選び方とおすすめツール5選を徹底解説" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://weel.co.jp/media/gen-ai-dev-environment" target="_blank" rel="noopener noreferrer">AI開発環境とは？種類・選び方とおすすめツール5選を徹底解説</a></h3>
+        <p class="news-card-description">AI開発に必要な環境や開発の流れについて解説します。AI開発におすすめのツールもご紹介するので、自社でAI開発を行いたい方におすすめの記事です。 続きを読む...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/18</span><span class="news-card-source">WEEL</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://weel.co.jp/wp-content/uploads/2025/01/ai-agent-development_2601-1024x576.webp" alt="AIエージェント開発方法！具体的な手順・おすすめツールを徹底解説" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://weel.co.jp/media/ai-agent-development/" target="_blank" rel="noopener noreferrer">AIエージェント開発方法！具体的な手順・おすすめツールを徹底解説</a></h3>
+        <p class="news-card-description">みなさん！業務を自動でこなしてくれる「AIエージェント」がついに、開発・実用化可能な段階にまで進歩してきています。とはいえ、「本当に業務で使えるの？」「開発費用や期間はどれくらい？」と不安に感じる方も多いはず。 というこ [...]...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/18</span><span class="news-card-source">WEEL</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="general">
+    <div class="news-card-thumbnail "><img src="https://aismiley.co.jp/wp-content/uploads/2026/06/ai-hakurankai-nagoya2026-event-report2_0000.png" alt="「AI博覧会 Nagoya 2026」の来場者数が目標の倍となる6,453名を記録！名古屋・東海エリア初開催、ものづくりの現場で進むAI実装への熱気広がる" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category general">AI全般</span></div>
+        <h3 class="news-card-title"><a href="https://aismiley.co.jp/ai_news/ai-hakurankai-nagoya2026-event-report02/" target="_blank" rel="noopener noreferrer">「AI博覧会 Nagoya 2026」の来場者数が目標の倍となる6,453名を記録！名古屋・東海エリア初開催、ものづくりの現場で進むAI実装への熱気広がる</a></h3>
+        <p class="news-card-description">国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年6月16日（火）・17日（水）の2日間、名古屋コンベンションホールにて「AI博覧会 Nagoya 2026」を開催しました [...] The post 「AI博覧会 Nagoya 2026」の来場者数が目標の倍となる6,453名を記録！名古屋・東海エリア初開催、ものづくりの現場で進むAI実装への熱気...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/18</span><span class="news-card-source">AIsmiley</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://weel.co.jp/wp-content/uploads/AIモン_Grok-Imagine-Video-1.5-1024x576.webp" alt="Grok Imagine Video 1.5とは？xAIの最新画像to動画AIモデルの特徴・使い方を徹底解説" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://weel.co.jp/media/tech/grok-imagine-video-1-5/" target="_blank" rel="noopener noreferrer">Grok Imagine Video 1.5とは？xAIの最新画像to動画AIモデルの特徴・使い方を徹底解説</a></h3>
+        <p class="news-card-description">2026年6月、xAIから最新のimage-to-videoモデルが公開されました。 今回登場した「Grok Imagine Video 1.5」は、静止画を起点に自然な動きを持つ動画を生成するimage-to-vide [...]...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/18</span><span class="news-card-source">WEEL</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="general">
+    <div class="news-card-thumbnail "><img src="https://aismiley.co.jp/wp-content/uploads/2026/06/grok-found_ic.webp" alt="Grokの会話履歴や画像生成はバレる？原因とバレない設定・対策を解説" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category general">AI全般</span></div>
+        <h3 class="news-card-title"><a href="https://aismiley.co.jp/ai_news/grok-found/" target="_blank" rel="noopener noreferrer">Grokの会話履歴や画像生成はバレる？原因とバレない設定・対策を解説</a></h3>
+        <p class="news-card-description">X（旧Twitter）のAI機能「Grok（グロック）」を使っていて、「自分の検索や質問が他人にバレないか」「フォロワーに履歴が見られていないか」と不安になったことはありませんか。 さらに、Grokで作った画像や動画が「 [...] The post Grokの会話履歴や画像生成はバレる？原因とバレない設定・対策を解説 first appeared on AIポータルメディアAIsmiley....</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/18</span><span class="news-card-source">AIsmiley</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="general">
+    <div class="news-card-thumbnail "><img src="https://aismiley.co.jp/wp-content/uploads/2026/06/ClaudeMain.png" alt="Claudeの文字数制限はどれくらい？入力・出力の上限や対処法を解説" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category general">AI全般</span></div>
+        <h3 class="news-card-title"><a href="https://aismiley.co.jp/ai_news/claude-character-limit/" target="_blank" rel="noopener noreferrer">Claudeの文字数制限はどれくらい？入力・出力の上限や対処法を解説</a></h3>
+        <p class="news-card-description">「Claudeで長文を作成していたら途中で止まってしまった」「資料を読み込ませたら、急に制限が表示された」。このように、Claudeを使用していて困ったことはありませんか？ こうした制限に関する問題は、多くのClaude [...] The post Claudeの文字数制限はどれくらい？入力・出力の上限や対処法を解説 first appeared on AIポータルメディアAIsmiley....</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/18</span><span class="news-card-source">AIsmiley</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://weel.co.jp/wp-content/uploads/AI-contract-development_2606-1024x576.webp" alt="AI受託開発とは？おすすめ会社10選や費用相場・導入の流れを徹底解説" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://weel.co.jp/media/ai-contract-development/" target="_blank" rel="noopener noreferrer">AI受託開発とは？おすすめ会社10選や費用相場・導入の流れを徹底解説</a></h3>
+        <p class="news-card-description">AIを活用して業務を効率化したいものの、「自社にノウハウがない」「何から始めればいいかわからない」と悩む企業担当者は少なくありません。実際、帝国データバンクが2026年3月に1万312社を対象に実施した調査でも、AI導入 [...]...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/17</span><span class="news-card-source">WEEL</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://weel.co.jp/wp-content/uploads/Sakana-Marlin_2606-1024x576.webp" alt="Sakana Marlinとは？Sakana AIのVirtual CSOが数週間のリサーチを数時間で完遂する仕組みを徹底解説" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://weel.co.jp/media/innovator/sakana-marlin/" target="_blank" rel="noopener noreferrer">Sakana Marlinとは？Sakana AIのVirtual CSOが数週間のリサーチを数時間で完遂する仕組みを徹底解説</a></h3>
+        <p class="news-card-description">2026年6月、Sakana AIから新たな自律型リサーチエージェントが発表されました。 今回登場した「Sakana Marlin」は、CSO（最高戦略責任者）とそのチームが数週間を費やすような本格的な戦略リサーチを引き [...]...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/17</span><span class="news-card-source">WEEL</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="general">
+    <div class="news-card-thumbnail "><img src="https://aismiley.co.jp/wp-content/uploads/2026/06/grok-api_ic.webp" alt="Grok APIとは？料金・モデル・使い方を徹底解説" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category general">AI全般</span></div>
+        <h3 class="news-card-title"><a href="https://aismiley.co.jp/ai_news/grok-api/" target="_blank" rel="noopener noreferrer">Grok APIとは？料金・モデル・使い方を徹底解説</a></h3>
+        <p class="news-card-description">「Grok APIとは何ができるのか」「料金はいくらかかるのか」「どうやって始めればいいのか」 自社のアプリやシステムに生成AIを組み込もうとすると、まずこの3つが気になるのではないでしょうか。Grok APIは、イーロ [...] The post Grok APIとは？料金・モデル・使い方を徹底解説 first appeared on AIポータルメディアAIsmiley....</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/17</span><span class="news-card-source">AIsmiley</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="general">
+    <div class="news-card-thumbnail "><img src="https://aismiley.co.jp/wp-content/uploads/2026/06/elevenlabseye.png" alt="イレブンラボ、十印の企業向け多言語吹き替えサービスにAI音声技術を提供開始" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category general">AI全般</span></div>
+        <h3 class="news-card-title"><a href="https://aismiley.co.jp/ai_news/elevenlabs-toin-ai-audio-dubbing/" target="_blank" rel="noopener noreferrer">イレブンラボ、十印の企業向け多言語吹き替えサービスにAI音声技術を提供開始</a></h3>
+        <p class="news-card-description">イレブンラボは企業向け翻訳サービスの十印と業務提携し、十印が展開する多言語吹き替え支援サービスに、AI音声技術の提供を開始しました。 このニュースのポイント イレブンラボと企業向け翻訳提供の十印が、多言語吹き替え支援サー [...] The post イレブンラボ、十印の企業向け多言語吹き替えサービスにAI音声技術を提供開始 first appeared on AIポータルメディアAIsmiley...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/17</span><span class="news-card-source">AIsmiley</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="general">
+    <div class="news-card-thumbnail "><img src="https://aismiley.co.jp/wp-content/uploads/2026/06/ClaudeCode.png" alt="Claude Codeのサブエージェントとは？使い方やうまく動かないときの原因・対策も紹介" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category general">AI全般</span></div>
+        <h3 class="news-card-title"><a href="https://aismiley.co.jp/ai_news/claude-code-sub-agent/" target="_blank" rel="noopener noreferrer">Claude Codeのサブエージェントとは？使い方やうまく動かないときの原因・対策も紹介</a></h3>
+        <p class="news-card-description">Claude Codeのサブエージェント機能を使いこなせば、複雑なタスクを役割ごとに分担させて効率的に処理できるようになります。 この記事では、サブエージェントの基本的な仕組みから実際の作成手順、そしてチーム開発での安全 [...] The post Claude Codeのサブエージェントとは？使い方やうまく動かないときの原因・対策も紹介 first appeared on AIポータルメディア...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/17</span><span class="news-card-source">AIsmiley</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="general">
+    <div class="news-card-thumbnail "><img src="https://aismiley.co.jp/wp-content/uploads/2026/06/CaudeOptingOut.png" alt="Claudeのオプトアウト設定手順｜PC・スマホ別のやり方や安全に使用する方法を解説" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category general">AI全般</span></div>
+        <h3 class="news-card-title"><a href="https://aismiley.co.jp/ai_news/claude-optout/" target="_blank" rel="noopener noreferrer">Claudeのオプトアウト設定手順｜PC・スマホ別のやり方や安全に使用する方法を解説</a></h3>
+        <p class="news-card-description">Claudeを業務で使う際は、入力した内容がAIの学習に使われるのか気になる方も多いでしょう。特に個人向けプランを業務で使う場合は、設定の状態によってチャットやコーディングセッションがモデル改善に使われる可能性があるため [...] The post Claudeのオプトアウト設定手順｜PC・スマホ別のやり方や安全に使用する方法を解説 first appeared on AIポータルメディアAIs...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/17</span><span class="news-card-source">AIsmiley</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://weel.co.jp/wp-content/uploads/llm-rag_2606-1024x576.webp" alt="LLMとRAGの違いとは？仕組みや導入のやり方・活用シーンを徹底解説" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://weel.co.jp/media/llm-rag/" target="_blank" rel="noopener noreferrer">LLMとRAGの違いとは？仕組みや導入のやり方・活用シーンを徹底解説</a></h3>
+        <p class="news-card-description">LLMとRAGはどちらも生成AIを活用する上で頻繁に耳にする言葉ですが、役割は同じではありません。LLMは文章生成や要約を担うモデルで、RAGは社内文書などを検索して回答に反映する仕組みです。 生成AIベースの会話アシス [...]...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/16</span><span class="news-card-source">WEEL</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://weel.co.jp/wp-content/uploads/AIモン_GLM-5.2-1024x576.webp" alt="【GLM-5.2】Fable 5停止の翌日に緊急公開！100万トークン対応コーディングモデルを徹底解説" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://weel.co.jp/media/tech/glm-5-2/" target="_blank" rel="noopener noreferrer">【GLM-5.2】Fable 5停止の翌日に緊急公開！100万トークン対応コーディングモデルを徹底解説</a></h3>
+        <p class="news-card-description">2026年6月13日、中国のAI企業Z.aiが、100万トークンのコンテキストに対応するコーディング特化のフラッグシップモデル「GLM-5.2」を発表しました！ 2026年6月16日時点で公式Xの投稿には8,200件以上 [...]...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/16</span><span class="news-card-source">WEEL</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://weel.co.jp/wp-content/uploads/AIモン_Gemini-SQL2-1024x576.webp" alt="【Gemini-SQL2】BIRDベンチマーク80%超えの衝撃！Googleの最新Text-to-SQL技術を徹底解説" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://weel.co.jp/media/tech/gemini-sql2/" target="_blank" rel="noopener noreferrer">【Gemini-SQL2】BIRDベンチマーク80%超えの衝撃！Googleの最新Text-to-SQL技術を徹底解説</a></h3>
+        <p class="news-card-description">2026年6月13日、Google Researchは自然言語からSQLクエリを自動生成するText-to-SQL技術「Gemini-SQL2」を発表しました。 BIRDベンチマークのシングルモデル部門において実行精度8 [...]...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/15</span><span class="news-card-source">WEEL</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://weel.co.jp/wp-content/uploads/AIモン_Fusion-API-1024x576.webp" alt="Fusion APIとは？複数AIモデルを組み合わせてフロンティア性能を超えるOpenRouterの新機能を徹底解説" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://weel.co.jp/media/tech/fusion-api/" target="_blank" rel="noopener noreferrer">Fusion APIとは？複数AIモデルを組み合わせてフロンティア性能を超えるOpenRouterの新機能を徹底解説</a></h3>
+        <p class="news-card-description">2026年6月、OpenRouterから新たなAIモデルが発表されました。 今回登場した「Fusion API」は、複数のAIモデルをパネル形式で並列実行し、ジャッジモデルが各回答を統合分析することで単一モデルの限界を超 [...]...</p>
+        <div class="news-card-meta"><span class="news-card-date">2026/06/14</span><span class="news-card-source">WEEL</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://www.publickey1.jp/2026/awsfinopsagent-pv01.png" alt="あなたのAWSのコストの問題がどこにあるか、AIが教えてくれる「AWS FinOps Agent」パブリックプレビュー開始" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://www.publickey1.jp/blog/26/awsaiaws_finops_agent.html" target="_blank" rel="noopener noreferrer">あなたのAWSのコストの問題がどこにあるか、AIが教えてくれる「AWS FinOps Agent」パブリックプレビュー開始</a></h3>
+        <p class="news-card-description">Amazon Web Services（AWS）は、使用中のAWSのコストに関する質問や、コストに異常が発生した場合にその原因を調査して特定してくれる「AWS FinOps Agent」のパブリックプレビュー開始を発表しました。 AWSはそ......</p>
+        <div class="news-card-meta"><span class="news-card-date">2026-06-17T15:49:03Z</span><span class="news-card-source">Publickey</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://www.publickey1.jp/2026/gitlab-nextgen-switch01.jpg" alt="GitLab、AIエージェント向けの次世代Git互換ソースコード管理サービス「Project Switch」発表。最大で50倍高速かつ半分のトークンで利用可能に" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://www.publickey1.jp/blog/26/gitlabaigitproject_switch50.html" target="_blank" rel="noopener noreferrer">GitLab、AIエージェント向けの次世代Git互換ソースコード管理サービス「Project Switch」発表。最大で50倍高速かつ半分のトークンで利用可能に</a></h3>
+        <p class="news-card-description">GitLabは6月10日にロンドンで開催したイベント「GitLab Transcend」で、AIエージェント向けの次世代Git互換ソースコード管理サービス「Project Switch」を発表しました。 GitLabやGitHubが提供する......</p>
+        <div class="news-card-meta"><span class="news-card-date">2026-06-16T18:05:15Z</span><span class="news-card-source">Publickey</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://www.publickey1.jp/2026/HKdu4sUXYAISq51.jpg" alt="Stack Overflow、AIエージェント同士が掲示板で技術情報を共有する「Stack Overflow for Agents」ベータ公開" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://www.publickey1.jp/blog/26/stack_overflowaistack_overflow_for_agents.html" target="_blank" rel="noopener noreferrer">Stack Overflow、AIエージェント同士が掲示板で技術情報を共有する「Stack Overflow for Agents」ベータ公開</a></h3>
+        <p class="news-card-description">Stack Overflowは、AIエージェント同士がオープンな掲示板の上で技術的な解決策などの情報を共有する新サービス「Stack Overflow for Agents」をベータ版として提供開始したことを明らかにしました。 What i......</p>
+        <div class="news-card-meta"><span class="news-card-date">2026-06-15T15:46:43Z</span><span class="news-card-source">Publickey</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://www.publickey1.jp/2026/wasi-p3-ga01.png" alt="WASI 0.3が正式版に。WebAssembly Componentの非同期処理が共通基盤に" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://www.publickey1.jp/blog/26/wasi_03webassembly_component.html" target="_blank" rel="noopener noreferrer">WASI 0.3が正式版に。WebAssembly Componentの非同期処理が共通基盤に</a></h3>
+        <p class="news-card-description">WebAssembly関連仕様の標準化を行っているByteCode Allianceは、WebAssemblyを基盤としたコンポーネントモデルの最新仕様「WASI 0.3」（WebAssembly System Interface Prev......</p>
+        <div class="news-card-meta"><span class="news-card-date">2026-06-14T15:24:47Z</span><span class="news-card-source">Publickey</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://www.publickey1.jp/2026/gartner-aiagent-65ide.png" alt="2027年までにAIエージェントでコーディングを行うチームの65％が、IDEが必要不可欠だとは考えなくなる。ガートナーの予想" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://www.publickey1.jp/blog/26/2027ai65ide.html" target="_blank" rel="noopener noreferrer">2027年までにAIエージェントでコーディングを行うチームの65％が、IDEが必要不可欠だとは考えなくなる。ガートナーの予想</a></h3>
+        <p class="news-card-description">調査会社のガートナーは、エンタープライズ市場におけるAIコーディングエージェント市場が、拡大と競争再編の新たな段階に突入したとし、それに関する予想を発表しました。 AIによる支援を用いたコーディング作業は、当初はVisual Studio ......</p>
+        <div class="news-card-meta"><span class="news-card-date">2026-06-14T15:23:43Z</span><span class="news-card-source">Publickey</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://www.publickey1.jp/2026/macos-container-machine1001.jpg" alt="Apple、macOS上にLinuxコンテナを統合する新機能「Container machine」バージョン1.0リリース" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://www.publickey1.jp/blog/26/applemacoslinuxcontainer_machine10.html" target="_blank" rel="noopener noreferrer">Apple、macOS上にLinuxコンテナを統合する新機能「Container machine」バージョン1.0リリース</a></h3>
+        <p class="news-card-description">Appleは日本時間6月9日未明に開催した開発者向けの年次イベント「WWDC26」で、macOSに統合された形でLinuxコンテナを起動し、利用できる新機能「Container machine」バージョン1.0のリリースを発表しました。 C......</p>
+        <div class="news-card-meta"><span class="news-card-date">2026-06-10T15:29:34Z</span><span class="news-card-source">Publickey</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://www.publickey1.jp/2026/zIK0rSP9.jpg" alt="Cloudflare、従業員やアプリごとにAIの利用上限額を設定できるCloudflare AI Gatewayの新機能を発表" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://www.publickey1.jp/blog/26/cloudflareaicloudflare_ai_gateway.html" target="_blank" rel="noopener noreferrer">Cloudflare、従業員やアプリごとにAIの利用上限額を設定できるCloudflare AI Gatewayの新機能を発表</a></h3>
+        <p class="news-card-description">Cloudflareは、同社が提供するサービス「Cloudflare AI Gateway」の新機能として、全社でAIベンダのAPIキーを共有して使用していても、従業員やアプリごとに毎月のAIの利用料の上限額を設定できる[新機能を発表しまし......</p>
+        <div class="news-card-meta"><span class="news-card-date">2026-06-09T15:55:18Z</span><span class="news-card-source">Publickey</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://www.publickey1.jp/2026/ubuntu-workshop-la01.png" alt="Ubuntu、サンドボックス化された開発環境をコマンド一発で構築。新機能「Workshop」リリース" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://www.publickey1.jp/blog/26/ubuntuworkshop.html" target="_blank" rel="noopener noreferrer">Ubuntu、サンドボックス化された開発環境をコマンド一発で構築。新機能「Workshop」リリース</a></h3>
+        <p class="news-card-description">Ubuntuの開発元であるCanonicalは、AIエージェントなどに適したサンドボックス化された開発環境をコマンド一発で構築できる新機能「Workshop」をリリースしました。 Today we announced Workshop – ......</p>
+        <div class="news-card-meta"><span class="news-card-date">2026-06-08T15:43:33Z</span><span class="news-card-source">Publickey</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://www.publickey1.jp/2026/HJ-PoB8WgAA8ZUX.jpg" alt="CloudflareがViteやRolldownの開発元であるVoidZeroの買収を発表。これでAstroとViteがCloudflareの傘下に" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://www.publickey1.jp/blog/26/cloudflareviterolldownvoidzeroastrovitecloudflare.html" target="_blank" rel="noopener noreferrer">CloudflareがViteやRolldownの開発元であるVoidZeroの買収を発表。これでAstroとViteがCloudflareの傘下に</a></h3>
+        <p class="news-card-description">Cloudflareは、JavaScriptで人気のビルドツール「Vite」やバンドルツール「Rolldown」の開発元であるVoidZeroの買収を発表しました（Cloudflareの発表、VoidZeroの発表）。 Today, Voi......</p>
+        <div class="news-card-meta"><span class="news-card-date">2026-06-07T15:26:45Z</span><span class="news-card-source">Publickey</span></div>
+    </div>
+</article>
+<article class="news-card" data-category="tools">
+    <div class="news-card-thumbnail "><img src="https://www.publickey1.jp/2026/azurelinux40pv.png" alt="マイクロソフト独自のLinuxディストリビューション「Azure Linux 4.0」パブリックプレビュー開始。Azureに最適化、WSLでも利用可能に" loading="lazy"></div>
+    <div class="news-card-body">
+        <div class="news-card-badges"><span class="news-card-category tools">AIツール</span></div>
+        <h3 class="news-card-title"><a href="https://www.publickey1.jp/blog/26/linuxazure_linux_40azurewsl.html" target="_blank" rel="noopener noreferrer">マイクロソフト独自のLinuxディストリビューション「Azure Linux 4.0」パブリックプレビュー開始。Azureに最適化、WSLでも利用可能に</a></h3>
+        <p class="news-card-description">マイクロソフトは同社が独自に構築したLinuxディストリビューション「Azure Linux 4.0」のパブリックプレビューを発表しました。 Azure Linux 4.0はFedora由来のRPMベースのLinuxディストリビューションで......</p>
+        <div class="news-card-meta"><span class="news-card-date">2026-06-07T15:21:33Z</span><span class="news-card-source">Publickey</span></div>
+    </div>
+</article>
+            <!-- NEWS_STATIC_END -->
         </div>
 
         <!-- 静的コンテンツ（SEO用・JSが実行されない場合のフォールバック） -->

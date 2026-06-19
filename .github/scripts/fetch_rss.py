@@ -10,6 +10,8 @@ from datetime import datetime
 import sys
 import re
 
+from news_static import inject_static_news
+
 # RSSフィードソース
 RSS_FEEDS = [
     # 英語ソース
@@ -206,8 +208,9 @@ def main():
     all_articles = all_articles[:50]
 
     # JSONとして出力
+    last_updated = datetime.utcnow().isoformat()
     output = {
-        'lastUpdated': datetime.utcnow().isoformat(),
+        'lastUpdated': last_updated,
         'articles': all_articles
     }
 
@@ -215,6 +218,9 @@ def main():
         json.dump(output, f, ensure_ascii=False, indent=2)
 
     print(f"✓ Saved {len(all_articles)} articles to data/news.json")
+
+    # news.html の静的領域に最新記事を焼き込む（案A・SEO/AdSense 対策）
+    inject_static_news('news.html', all_articles, last_updated, ai=False)
 
 if __name__ == '__main__':
     main()
