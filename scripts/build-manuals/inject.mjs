@@ -34,7 +34,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, '..', '..');
 const MANUAL_DIR = path.join(REPO_ROOT, 'manual');
 
-const REMOTE_BASE = 'https://28yu.github.io/Revit-Add-ins/Features/';
+// 取得元（既定）。raw を優先し、github.io をフォールバックにする:
+//  - raw: アドインリポジトリの main/Docs/Features を直接読む。GitHub Pages の
+//    再ビルド待ち（数分）を挟まないため、repository_dispatch による即時反映でも
+//    比較的新しい内容を取得できる。
+//  - pages: アドイン側がディレクトリ構成（Docs/Features）を変えても動くよう、
+//    公開済みの「契約 URL」をフォールバックとして残す。
+const RAW_BASE = 'https://raw.githubusercontent.com/28yu/Revit-Add-ins/main/Docs/Features/';
+const PAGES_BASE = 'https://28yu.github.io/Revit-Add-ins/Features/';
 const SRC_DIR = process.env.MANUAL_SRC_DIR
   ? path.resolve(process.env.MANUAL_SRC_DIR)
   : null;
@@ -86,10 +93,19 @@ async function loadMarkdown(featureId) {
     const file = path.join(SRC_DIR, `${featureId}.md`);
     return await readFile(file, 'utf8');
   }
-  const url = REMOTE_BASE + encodeURIComponent(featureId) + '.md';
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
-  return await res.text();
+  const name = encodeURIComponent(featureId) + '.md';
+  let lastErr;
+  for (const base of [RAW_BASE, PAGES_BASE]) {
+    const url = base + name;
+    try {
+      const res = await fetch(url, { headers: { 'Cache-Control': 'no-cache' } });
+      if (res.ok) return await res.text();
+      lastErr = new Error(`HTTP ${res.status} for ${url}`);
+    } catch (e) {
+      lastErr = e;
+    }
+  }
+  throw lastErr;
 }
 
 async function main() {
