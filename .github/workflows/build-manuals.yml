@@ -11,6 +11,10 @@ on:
     # 毎日 UTC 18:00（JST 03:00）。アドイン側 Markdown の更新を取り込む安全網。
     - cron: '0 18 * * *'
   workflow_dispatch: {}  # 手動実行（更新を即時反映したいとき）
+  repository_dispatch:
+    # アドイン開発リポジトリ（28yu/Revit-Add-ins）の notify-site.yml から
+    # Docs/Features/** が更新された際に送られるイベントを受信して即時再ビルドする。
+    types: [manuals-updated]
 
 permissions:
   contents: write
