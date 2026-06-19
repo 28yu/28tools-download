@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T05:56:39.481244",
+  "lastUpdated": "2026-06-19T06:21:39.311714",
   "articles": [
     {
       "title": "We’re announcing new community investments in Missouri.",
@@ -207,7 +207,7 @@
       "publishedDate": "Wed, 17 Jun 2026 00:00:00 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/agentic-resource-discovery-launch/thumbnail.png",
+      "thumbnail": "https://huggingface.co/blog/assets/agentic-resource-discovery-launch/thumbnail_.png",
       "language": "en"
     },
     {
@@ -227,17 +227,6 @@
       "link": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
       "description": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT....",
       "publishedDate": "Wed, 10 Jun 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "From data to decisions: how LSEG is scaling trusted AI",
-      "titleJa": "データから意思決定まで: LSEG が信頼できる AI をどのように拡張するか",
-      "link": "https://openai.com/index/lseg",
-      "description": "See how LSEG uses OpenAI to scale trusted AI across its global business, accelerating insights, shrinking release cycles, and empowering 4,000 employees....",
-      "publishedDate": "Wed, 10 Jun 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -321,17 +310,6 @@
       "language": "en"
     },
     {
-      "title": "NEC・Anthropicと金融8社が連携。AI活用による金融分野の価値創出と社会実装へ取り組み開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/nec-anthropic-finance-cooperation/",
-      "description": "NECとAnthropic、MS&#38;ADなど金融8社は、AI活用による新たな価値創出に向けた共創を開始します。 このニュースのポイント NEC・Anthropicと金融8社が連携し、AI活用による共創を開始 MS&#038; [...] The post NEC・Anthropicと金融8社が連携。AI活用による金融分野の価値創出と社会実装へ取り組み開始 first appeared on ...",
-      "publishedDate": "Tue, 16 Jun 2026 09:02:36 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/neceye01.png",
-      "language": "ja"
-    },
-    {
       "title": "Want to get a data center online quickly? Give it some flex.",
       "titleJa": "データセンターをすぐにオンラインにしたいですか?ある程度の柔軟性を与えてください。",
       "link": "https://www.technologyreview.com/2026/06/16/1138591/data-center-online-quickly-electric-grid-flex/",
@@ -341,28 +319,6 @@
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/26-05-27-MIT-TECH-01-Interior-1-FIN-cmyk_1.jpg?w=1425",
       "language": "en"
-    },
-    {
-      "title": "メルカリ、GENIACに採択。40億件以上の出品データで日本独自のAI基盤開発に着手",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/mercari-geniac-ai_model-development-project/",
-      "description": "メルカリは「GENIAC」において「Generative Retrieval技術を用いた二次流通市場向け高精度検索・推薦基盤モデルの開発」が採択されたと発表しました。メルカリの研究開発組織「R4D」が中心となり、日本独自 [...] The post メルカリ、GENIACに採択。40億件以上の出品データで日本独自のAI基盤開発に着手 first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Tue, 16 Jun 2026 08:16:08 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/mercari-nedo-geniac.png",
-      "language": "ja"
-    },
-    {
-      "title": "VisaとOpenAIが戦略的提携。AIエージェントによる安全なVisa決済が可能に",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/visa-openai-partnership/",
-      "description": "VisaはOpenAIとの戦略的提携を発表しました。同社のグローバルネットワークや認証情報管理機能、セキュリティインフラをOpenAIへ提供し、次世代のデジタル環境における安全なVisa決済を可能にします。 このニュース [...] The post VisaとOpenAIが戦略的提携。AIエージェントによる安全なVisa決済が可能に first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Tue, 16 Jun 2026 05:35:55 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/Visa-OpenAI-AI-Commerce.png",
-      "language": "ja"
     },
     {
       "title": "【GLM-5.2】Fable 5停止の翌日に緊急公開！100万トークン対応コーディングモデルを徹底解説",
@@ -387,17 +343,6 @@
       "language": "en"
     },
     {
-      "title": "How engineers at Nextdoor use Codex to build without limits",
-      "titleJa": "Nextdoor のエンジニアが Codex を使用して制限なく構築する方法",
-      "link": "https://openai.com/index/nextdoor",
-      "description": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes....",
-      "publishedDate": "Tue, 09 Jun 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
       "titleJa": "エージェントが 2 つのハグ顔スペースを連鎖させて 3D パリ ギャラリーを構築した方法",
       "link": "https://huggingface.co/blog/mishig/spaces-agents-md",
@@ -406,17 +351,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/60a551a34ecc5d054c8ad93e/0tamlKpAvO3lZEklNmwHT.png",
-      "language": "en"
-    },
-    {
-      "title": "What Codex unlocks for Notion",
-      "titleJa": "Codex が Notion のロックを解除するもの",
-      "link": "https://openai.com/index/notion",
-      "description": "How Notion uses Codex to one-shot specs, build AI Voice Input for the web, and multiply engineering power across small teams....",
-      "publishedDate": "Tue, 09 Jun 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -431,17 +365,6 @@
       "language": "en"
     },
     {
-      "title": "Holo3.1: Fast & Local Computer Use Agents",
-      "titleJa": "Holo3.1: 高速かつローカルなコンピューター使用エージェント",
-      "link": "https://huggingface.co/blog/Hcompany/holo31",
-      "description": "...",
-      "publishedDate": "Tue, 02 Jun 2026 14:13:23 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Hcompany/holo31.png",
-      "language": "en"
-    },
-    {
       "title": "Catch up on 12 major I/O 2026 moments",
       "titleJa": "2026 年の 12 の主要な I/O の瞬間をキャッチアップ",
       "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
@@ -451,6 +374,94 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
       "language": "en"
+    },
+    {
+      "title": "MosaicLeaks: Can your research agent keep a secret?",
+      "titleJa": "MosaicLeaks: あなたの研究エージェントは秘密を守ることができますか?",
+      "link": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
+      "description": "...",
+      "publishedDate": "Thu, 18 Jun 2026 18:13:13 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/680ba1729f7688275d2ce0f4/hGCO4pOyJjijLPCbRT07v.webp",
+      "language": "en"
+    },
+    {
+      "title": "New usage analytics and updated spend controls for enterprises",
+      "titleJa": "企業向けの新しい使用状況分析と最新の支出管理",
+      "link": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+      "description": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence....",
+      "publishedDate": "Thu, 18 Jun 2026 17:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The Download: a new hunt for dark matter and Kenya’s case for going solar",
+      "titleJa": "ダウンロード: 暗黒物質の新たな探索とケニアの太陽光発電推進の主張",
+      "link": "https://www.technologyreview.com/2026/06/18/1139261/the-download-dark-matter-hunt-kenya-solar-power/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The search for dark matter has been blown wide ope...",
+      "publishedDate": "Thu, 18 Jun 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2022/08/SO22_techgender-01SC.jpeg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "Improving health intelligence in ChatGPT",
+      "titleJa": "ChatGPT での健康インテリジェンスの向上",
+      "link": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+      "description": "Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations....",
+      "publishedDate": "Thu, 18 Jun 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "ハルシネーションとは？事例で学ぶ生成AIの誤回答と対策",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/hallucination",
+      "description": "生成AIに潜む「ハルシネーション」というリスクをご存じでしょうか？ ハルシネーションとは、生成AIがもっともらしく事実とは異なる情報を出力してしまう現象のことで、一般に「AIの嘘」としても知られています。こちらは生成AI [...]...",
+      "publishedDate": "Thu, 18 Jun 2026 08:15:22 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/hallucination_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Gemini Omniの正体を徹底解剖！世界モデルが変える動画制作の未来",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/gemini-omni/",
+      "description": "「動画生成AIを使ってみたけど、思った通りの映像にならない…」「プロっぽい動画を作りたいけど、動画編集ソフトの操作を覚える時間がない…」。Google I/O 2026で発表された「Gemini Omni」は、そんな悩み [...] The post Gemini Omniの正体を徹底解剖！世界モデルが変える動画制作の未来 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Thu, 18 Jun 2026 08:07:50 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/170.png",
+      "language": "ja"
+    },
+    {
+      "title": "Sakana AI、初の商用プロダクトとなるビジネス向け自律型リサーチアシスタント「Sakana Marlin」提供開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/sakana-ai-sakana-marlin-release/",
+      "description": "Sakana AIは、同社初の商用プロダクトとなるビジネス向けの自律型リサーチアシスタント「Sakana Marlin」の提供を開始しました。調査テーマを指示するだけで、最大約8時間にわたり自律的にリサーチを遂行し、構造 [...] The post Sakana AI、初の商用プロダクトとなるビジネス向け自律型リサーチアシスタント「Sakana Marlin」提供開始 first appeare...",
+      "publishedDate": "Thu, 18 Jun 2026 07:27:09 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/sakanaaieye.png",
+      "language": "ja"
+    },
+    {
+      "title": "AI開発環境とは？種類・選び方とおすすめツール5選を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/gen-ai-dev-environment",
+      "description": "AI開発に必要な環境や開発の流れについて解説します。AI開発におすすめのツールもご紹介するので、自社でAI開発を行いたい方におすすめの記事です。 続きを読む...",
+      "publishedDate": "Thu, 18 Jun 2026 06:07:06 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/gen-ai-dev-environment_2606-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "AIエージェント開発方法！具体的な手順・おすすめツールを徹底解説",
@@ -519,28 +530,6 @@
       "language": "ja"
     },
     {
-      "title": "Stable Diffusionプロンプト（呪文）大全！コピペOK＆高品質画像を作るコツの完全保存版",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/stable-diffusion-spell/",
-      "description": "AI美少女を生成しようとしても、なかなか思ったとおりのクオリティにならない...という問題に直面していませんか？Stable Diffusionで生成する画像のクオリティを上げるには、使用するプロンプト（呪文）や [...]...",
-      "publishedDate": "Sun, 14 Jun 2026 16:08:18 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/stable-diffusion-spell_2604-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Claudeのオプトアウトとは？学習させない設定手順と注意点を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/clautil-optout/",
-      "description": "Claudeには、入力した会話データをAIモデルの学習に利用させないための「オプトアウト」設定があります。業務でClaudeを利用する企業担当者や、個人情報を扱う方は設定内容を確認しておくことが重要です。 ただし、Cla [...]...",
-      "publishedDate": "Sat, 13 Jun 2026 15:05:36 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Clautil-Optout_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "【Gemini-SQL2】BIRDベンチマーク80%超えの衝撃！Googleの最新Text-to-SQL技術を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/gemini-sql2/",
@@ -549,6 +538,17 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-SQL2-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claude CodeとOpenClawの違いとは？使い分け・連携方法・セキュリティ面の注意点を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-code-openclaw/",
+      "description": "AIコーディングツールの選択肢が増える中、AnthropicのClaudeとチャットベースの開発支援ツールはどちらも開発を効率化する強力なツールですが、その役割や得意分野は大きく異なります。 この記事では、両者の違いを整 [...] The post Claude CodeとOpenClawの違いとは？使い分け・連携方法・セキュリティ面の注意点を解説 first appeared on AIポータ...",
+      "publishedDate": "Fri, 19 Jun 2026 01:53:35 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-code-openclaw_ic.webp",
       "language": "ja"
     },
     {
