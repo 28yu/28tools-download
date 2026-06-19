@@ -1051,4 +1051,87 @@ Claude Code on the web 環境では outbound network policy により
 ユーザの F12 スクショ 1 枚で原因が即座に判明することが多いので、
 ライブ検証の代替として積極的に依頼する。
 
+---
+
+## 2026/06 セッションで得た知見 — アクセス解析ダッシュボード & GA4自動化
+
+### 構成概要
+
+社内向けアクセス解析ダッシュボード (`analytics/`)。ダークテーマの単一HTML SPA。
+
+| ファイル | 役割 |
+|---|---|
+| `analytics/dashboard.html` | ダッシュボード本体。Supabase + GitHub Releases + GA4履歴 をマージして「ダウンロード / ページビュー / ツール利用」の3タブで可視化 (Chart.js) |
+| `analytics/ga4-import.html` | GA4 → Supabase 連携の設定手順ページ (SQL / 旧Apps Scriptコードの掲示) |
+| `.github/workflows/ga4-sync.yml` | **GA4 → Supabase 自動同期** (cron + 手動) |
+| `scripts/ga4-sync/sync.mjs` | 同期スクリプト本体 (Node ESM, `@google-analytics/data`) |
+
+**データソース3種**:
+1. **Supabase** (`downloads` / `pageviews` テーブル) — `js/main.js` の `logPageview()` / `logToolEvent()` が sendBeacon で記録 (リアルタイム計測)
+2. **GitHub Releases API** — DL累計 (日別不可、累計のみ)
+3. **GA4履歴** (`ga4_history` テーブル) — 歴史データ・直帰率・滞在時間・デバイス・流入元
+
+ダッシュボードは Supabase の **Publishable(anon) key** をブラウザ localStorage に保存して読む (`28tools_anon_key`)。書き込みは一切しない (読み取り専用)。
+
+### ツール利用イベント (`/_event/<key>`)
+
+`logToolEvent(key)` が `pageviews` テーブルに `page = '/_event/<key>'` で記録。集計は `dashboard.html` の `TOOL_EVENT_LABELS` / `TOOL_EVENT_COLORS` で定義。
+
+| key | 発火箇所 |
+|---|---|
+| `hatch-download` | `js/hatch.js` |
+| `pdf-compare-run` | `pdf_compare.html` |
+| `pdf-excel-load` / `pdf-excel-export` | `pdf-to-excel/web/app.js` |
+| `minutes-create` | `ai-minutes/web/app.js` (議事録生成成功時, 2026/06追加) |
+
+新ツールの計測を足すときは **①ツール側で `logToolEvent('新key')` ②`TOOL_EVENT_LABELS`/`TOOL_EVENT_COLORS` に追加 ③KPIカード・日別テーブル列・推移系列を追加** の3点セット。
+
+### ダッシュボードのUI/集計の要点 (2026/06改修)
+
+- **モバイル横幅**: 広いテーブルは `chart-full`/`chart-card { overflow-x:auto }` + `data-table { min-width:max-content }` で**カード内スクロール**に収める (ページ全体を広げない)
+- **タブ保持**: `localStorage['28tools_active_tab']` でリロード後も同じタブを復元
+- **PV推移/ツール推移の「1日」**: ローリング24hではなく **指定日のJST 0〜23時**。日付ピッカー (`pv-date`/`tool-date`) で過去日も選択可。JSTヘルパー `todayJST()`/`jstDateStr()`/`jstHour()`
+- **国名の正規化**: GA4は国名 (`Japan`)、Supabaseは国コード (`JP`) のため `toCountryCode()` で**ISOコードに統一**してから集計 (日本が2行に割れる問題の対策)
+- **GA4の `(not set)`**: `ga4Clean()` で null 化 → ブラウザ/OS の「不明」に集約
+
+### GA4 → Supabase 同期: Apps Script から GitHub Actions へ移行 (重要)
+
+**背景**: 旧構成は Googleスプレッドシート + Apps Script で、設定 (GA4プロパティID / service_roleキー) を **Script Properties に手作業保存**していた。これが事故の温床:
+- 新コードを貼り替えて `saveConfig` を**ダミー値のまま実行**すると、本物の設定が `123456789` 等で**上書きされ全同期が停止**する。スマホでは Apps Script 自体を編集・実行できない (拡張機能→Apps Scriptが無い)。
+
+**新構成 (GitHub Actions)**:
+- `.github/workflows/ga4-sync.yml`: cron `0 17 * * *` (JST 02:00) + `workflow_dispatch` (`start_date`/`end_date` でバックフィル)
+- `scripts/ga4-sync/sync.mjs`: GA4 Data API → `ga4_history` に upsert。`on_conflict` を**テーブルのUNIQUE制約と完全一致**させ (`date,page,country,device_category,browser,os,source,medium`)、再実行が冪等
+- 取得ディメンション: `date, pagePath, country, deviceCategory, sessionSource, sessionMedium, browser, operatingSystem` / メトリクス7種
+
+**必要なGitHub Secrets** (リポジトリ Settings → Secrets → Actions):
+| 名前 | 中身 |
+|---|---|
+| `GA4_PROPERTY_ID` | GA4プロパティID (数字。GA4→管理→プロパティ設定) |
+| `GA4_SA_KEY` | GCPサービスアカウントのJSON鍵 (全文) |
+| `SUPABASE_SERVICE_KEY` | Supabaseの secret key (`sb_secret_...`) または旧 service_role JWT |
+
+`SUPABASE_URL` は repo variable (`vars.SUPABASE_URL`)、未設定なら公開URLをデフォルト使用。
+
+**初回セットアップ (ユーザ操作・1回のみ)**:
+1. GCPでサービスアカウント作成 + **Analytics Data API 有効化** + JSON鍵DL
+2. そのサービスアカウントのメールを **GA4プロパティに「閲覧者」**で追加
+3. 上記3 Secrets を登録
+
+**バックフィル実行**: Actions → 「GA4 → Supabase 同期」→ Run workflow → `start_date=2020-01-01`。
+⚠️ **workflow_dispatch の起動は GitHub MCP 権限では 403** (`Resource not accessible by integration`)。起動だけはユーザに依頼し、**ログ確認/監視はMCPで可能** (`actions_list` / `get_job_logs`)。
+
+### `ga4_history` テーブルスキーマ (browser/OS対応版)
+
+```
+UNIQUE(date, page, country, device_category, browser, os, source, medium)
+```
+列: date, page, country, device_category, **browser, os**, source, medium, views, sessions, users, new_users, engaged_sessions, avg_engagement_sec, bounce_rate。
+旧テーブルに browser/os が無い場合は **作り直し** (`DROP TABLE` → `CREATE`) してから `syncHistorical`/バックフィルを再実行 (GA4から再取得できるのでデータ消失なし)。ダッシュボード側は `ga4_history` を `select=*` で取得 (列追加前でも400にならない前方互換)。
+
+### 環境メモ
+
+- このリポジトリは `claude/*` ブランチへの push で **GitHub Actions が自動でPR作成＋自動マージ** (`auto-merge.yml`)。手動マージ不要で main に入り GitHub Pages へデプロイされる。
+- Supabase MCP は**別アカウント (dodeca-dev) に接続**されており、本番の解析プロジェクト (`clyfrkwuajbauqxvrfyf` / 28yu's Project) は操作できない。SQLはユーザにSQL Editorで実行してもらう。
+
 
