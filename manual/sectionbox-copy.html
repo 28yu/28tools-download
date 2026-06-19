@@ -67,7 +67,60 @@
         <!-- 機能概要 -->
 
         <!-- マニュアル本文（Markdown 動的読み込み） -->
-        <article id="md-content" class="md-content">読み込み中...</article>
+        <article id="md-content" class="md-content" data-baked="true">
+        <!-- AUTO-GENERATED: 本文は scripts/build-manuals により Revit-Add-ins/Features/SectionBoxCopy.md から焼き込み。手動編集しないこと -->
+<h1>切断ボックス コピー＆ペースト 使い方ガイド</h1>
+<p>3Dビューのセクションボックス（切断ボックス）の範囲をコピーして、別の3Dビューに貼り付ける機能です。同じ切り取り範囲を複数の3Dビューで共有したい場合に便利です。</p>
+<hr>
+<h2>できること</h2>
+<ul>
+<li>ある3Dビューの<strong>セクションボックスの範囲</strong>を記録し、別の3Dビューに適用します</li>
+<li>ペースト先でセクションボックスが無効になっている場合は、<strong>自動的に有効化</strong>してから範囲を適用します</li>
+</ul>
+<hr>
+<h2>実行手順</h2>
+<h3>▶ ステップ1: 切断ボックスをコピー</h3>
+<ol>
+<li>コピーしたいセクションボックスが設定された<strong>3Dビューをアクティブ</strong>にする</li>
+<li>リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>SBコピー</strong>」をクリック</li>
+</ol>
+<p>セクションボックスの範囲情報がメモリに保存されます。</p>
+<h3>▶ ステップ2: 切断ボックスをペースト</h3>
+<ol>
+<li>範囲を適用したい<strong>別の3Dビューをアクティブ</strong>にする</li>
+<li>リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>SBペースト</strong>」をクリック</li>
+</ol>
+<p>コピーしたセクションボックスの範囲が適用されます。</p>
+<blockquote>
+<p>💡 セクションボックスが無効な3Dビューにペーストしても、自動的に有効化されます。</p>
+</blockquote>
+<hr>
+<h2>注意事項</h2>
+<ul>
+<li>3Dビュー同士でのみ使用できます</li>
+<li>コピー元のビューで<strong>セクションボックスが有効</strong>になっていないとコピーできません</li>
+<li>コピーした情報は<strong>Revitを閉じると消えます</strong>（セッション内のみ有効）</li>
+</ul>
+<hr>
+<h2>トラブルシューティング</h2>
+<h3>コピーしたのに範囲が適用されない</h3>
+<ul>
+<li>コピー元のビューでセクションボックスが<strong>有効</strong>になっているか確認してください</li>
+<li>ペースト先が<strong>3Dビュー</strong>になっているか確認してください</li>
+</ul>
+<h3>ペースト後にモデルが見えなくなった</h3>
+<ul>
+<li>セクションボックスの範囲外にモデルがある場合、見えなくなります</li>
+<li>「セクションボックス」チェックをオフにして範囲を確認・調整してください</li>
+</ul>
+<hr>
+<h2>関連機能</h2>
+<ul>
+<li><a href="./ViewCopy3D.md">3Dビュー視点 コピー＆ペースト</a> — 3Dビューのカメラ位置・向きをコピー</li>
+<li><a href="./CropBoxCopy.md">トリミング領域 コピー＆ペースト</a> — 平面図・断面図などのトリミング領域をコピー</li>
+<li><a href="./ViewportPosition.md">ビューポート位置 コピー＆ペースト</a> — シート上のビューポート位置をコピー</li>
+</ul>
+        </article>
 
         <div class="manual-navigation">
             <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
@@ -122,21 +175,13 @@
     <script>
     (function() {
         var FEATURE_ID = 'SectionBoxCopy';
-        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
         var el = document.getElementById('md-content');
-
+        if (!el || el.getAttribute('data-baked') === 'true') return; // 本文はビルド時に焼き込み済み
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
         fetch(MD_URL)
-            .then(function(r) {
-                if (!r.ok) throw new Error('HTTP ' + r.status);
-                return r.text();
-            })
-            .then(function(md) {
-                el.innerHTML = marked.parse(md);
-            })
-            .catch(function(e) {
-                el.innerHTML = '<p style="color:#c0392b">マニュアルの読み込みに失敗しました。<br>URL: ' + MD_URL + '</p>';
-                console.error(e);
-            });
+            .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+            .then(function(md) { if (window.marked) el.innerHTML = window.marked.parse(md); })
+            .catch(function(e) { console.error(e); });
     })();
     </script>
 </body>

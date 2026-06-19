@@ -67,7 +67,61 @@
         <!-- 機能概要 -->
 
         <!-- マニュアル本文（Markdown 動的読み込み） -->
-        <article id="md-content" class="md-content">読み込み中...</article>
+        <article id="md-content" class="md-content" data-baked="true">
+        <!-- AUTO-GENERATED: 本文は scripts/build-manuals により Revit-Add-ins/Features/CropBoxCopy.md から焼き込み。手動編集しないこと -->
+<h1>トリミング領域 コピー＆ペースト 使い方ガイド</h1>
+<p>ビューのトリミング領域（クロップボックス）をコピーして、別のビューに貼り付ける機能です。同じ表示範囲を複数のビューで揃えるのに便利です。</p>
+<hr>
+<h2>できること</h2>
+<ul>
+<li>ビューのトリミング領域（範囲・形状）を記録し、別のビューに適用します</li>
+<li>ペースト先でトリミングが無効になっている場合は、<strong>自動的に有効化</strong>してから適用します</li>
+</ul>
+<hr>
+<h2>実行手順</h2>
+<h3>▶ ステップ1: トリミング領域をコピー</h3>
+<ol>
+<li>コピーしたいトリミング領域が設定された<strong>ビューをアクティブ</strong>にする</li>
+<li>リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>トリミングコピー</strong>」をクリック</li>
+</ol>
+<p>トリミング領域の情報がメモリに保存されます。</p>
+<h3>▶ ステップ2: トリミング領域をペースト</h3>
+<ol>
+<li>同じトリミング範囲を適用したい<strong>別のビューをアクティブ</strong>にする</li>
+<li>リボン「<strong>28 Tools</strong>」タブ →「<strong>ビュー</strong>」パネル →「<strong>トリミングペースト</strong>」をクリック</li>
+</ol>
+<p>コピーしたトリミング領域が適用されます。</p>
+<blockquote>
+<p>💡 トリミングが無効なビューにペーストしても、自動的に有効化されます。</p>
+</blockquote>
+<hr>
+<h2>注意事項</h2>
+<ul>
+<li><strong>同じスケール・同じ参照レベル</strong>のビュー間でコピーすると最も正確に一致します</li>
+<li>スケールや参照レベルが異なるビュー間では、表示範囲がずれる場合があります</li>
+<li>コピーした情報は<strong>Revitを閉じると消えます</strong>（セッション内のみ有効）</li>
+<li>3Dビューのセクションボックスのコピーは「<strong>SBコピー / SBペースト</strong>」を使用してください</li>
+</ul>
+<hr>
+<h2>トラブルシューティング</h2>
+<h3>ペースト後に表示範囲がずれている</h3>
+<ul>
+<li>コピー元とペースト先のビューが<strong>同じスケールと参照レベル</strong>を持つか確認してください</li>
+<li>断面図・立面図など向きが異なるビュー間では意図した通りにならない場合があります</li>
+</ul>
+<h3>ペーストしても変化がない</h3>
+<ul>
+<li>「<strong>トリミングコピー</strong>」を先に実行しているか確認してください</li>
+<li>ビューテンプレートで制御されているビューでは変更できない場合があります</li>
+</ul>
+<hr>
+<h2>関連機能</h2>
+<ul>
+<li><a href="./ViewCopy3D.md">3Dビュー視点 コピー＆ペースト</a> — 3Dビューのカメラ位置・向きをコピー</li>
+<li><a href="./SectionBoxCopy.md">切断ボックス コピー＆ペースト</a> — 3Dビューのセクションボックス範囲をコピー</li>
+<li><a href="./ViewportPosition.md">ビューポート位置 コピー＆ペースト</a> — シート上のビューポート位置をコピー</li>
+</ul>
+        </article>
 
         <div class="manual-navigation">
             <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
@@ -122,21 +176,13 @@
     <script>
     (function() {
         var FEATURE_ID = 'CropBoxCopy';
-        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
         var el = document.getElementById('md-content');
-
+        if (!el || el.getAttribute('data-baked') === 'true') return; // 本文はビルド時に焼き込み済み
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
         fetch(MD_URL)
-            .then(function(r) {
-                if (!r.ok) throw new Error('HTTP ' + r.status);
-                return r.text();
-            })
-            .then(function(md) {
-                el.innerHTML = marked.parse(md);
-            })
-            .catch(function(e) {
-                el.innerHTML = '<p style="color:#c0392b">マニュアルの読み込みに失敗しました。<br>URL: ' + MD_URL + '</p>';
-                console.error(e);
-            });
+            .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+            .then(function(md) { if (window.marked) el.innerHTML = window.marked.parse(md); })
+            .catch(function(e) { console.error(e); });
     })();
     </script>
 </body>

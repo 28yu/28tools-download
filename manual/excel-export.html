@@ -67,7 +67,133 @@
         <!-- 機能概要 -->
 
         <!-- マニュアル本文（Markdown 動的読み込み） -->
-        <article id="md-content" class="md-content">読み込み中...</article>
+        <article id="md-content" class="md-content" data-baked="true">
+        <!-- AUTO-GENERATED: 本文は scripts/build-manuals により Revit-Add-ins/Features/ExcelExport.md から焼き込み。手動編集しないこと -->
+<h1>EXCELエクスポート 使い方ガイド</h1>
+<p>Revit要素のパラメータ値をExcelファイル（.xlsx）に書き出す機能です。パラメータの一括確認・納品用の数量書き出しに活用できます。</p>
+<hr>
+<h2>できること</h2>
+<ul>
+<li>Revit要素の<strong>パラメータ値をExcelに書き出し</strong>ます</li>
+<li>エクスポート範囲を<strong>プロジェクト全体 / アクティブビュー / 選択要素</strong>から選べます</li>
+<li>インスタンスパラメータ・タイプパラメータの両方に対応しています</li>
+<li>通り芯・レベル・シートなどの注釈カテゴリにも対応しています</li>
+<li>前回の設定（カテゴリ・パラメータ選択）を自動復元します</li>
+</ul>
+<hr>
+<h2>実行手順</h2>
+<h3>▶ ステップ1: コマンドの起動</h3>
+<p>リボン「<strong>28 Tools</strong>」タブ →「<strong>データ</strong>」パネル →「<strong>EXCELエクスポート</strong>」ボタンをクリックします。</p>
+<h3>▶ ステップ2: エクスポート範囲の選択</h3>
+<p>スコープ選択ダイアログが表示されます。</p>
+<table>
+<thead>
+<tr>
+<th>選択肢</th>
+<th>対象</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>プロジェクト全体</strong></td>
+<td>プロジェクト内のすべての要素</td>
+</tr>
+<tr>
+<td><strong>アクティブビュー</strong></td>
+<td>現在表示中のビューに存在する要素のみ</td>
+</tr>
+<tr>
+<td><strong>選択要素</strong></td>
+<td>事前に選択しておいた要素のみ</td>
+</tr>
+</tbody></table>
+<h3>▶ ステップ3: カテゴリとパラメータの選択</h3>
+<p>設定ダイアログが開きます。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>カテゴリ一覧</strong></td>
+<td>エクスポートしたいカテゴリにチェックを入れる（検索ボックスで絞り込み可）</td>
+</tr>
+<tr>
+<td><strong>パラメータ一覧</strong></td>
+<td>各カテゴリでエクスポートするパラメータを選択</td>
+</tr>
+<tr>
+<td><strong>カテゴリ別シート</strong></td>
+<td>カテゴリごとに別シートへ出力（デフォルト）</td>
+</tr>
+<tr>
+<td><strong>シート統合</strong></td>
+<td>全カテゴリを1枚の「データ」シートにまとめて出力</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>💡 前回の設定は自動的に復元されます。毎回同じ設定で出力する場合は2回目以降の操作が省略できます。</p>
+</blockquote>
+<h3>▶ ステップ4: ファイルを保存</h3>
+<p>「<strong>エクスポート</strong>」ボタンをクリックし、保存先とファイル名を指定します。</p>
+<hr>
+<h2>出力されるExcelの形式</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>シート構成</strong></td>
+<td>カテゴリ別シート（デフォルト）、またはシート統合モードで1シート</td>
+</tr>
+<tr>
+<td><strong>ヘッダー行</strong></td>
+<td>要素ID | カテゴリ | パラメータ名...</td>
+</tr>
+<tr>
+<td><strong>パラメータ接頭辞</strong></td>
+<td><code>I-</code>（インスタンスパラメータ）/ <code>T-</code>（タイプパラメータ）</td>
+</tr>
+<tr>
+<td><strong>ヘッダー色</strong></td>
+<td>緑（RGB: 155, 187, 89）＋白文字</td>
+</tr>
+<tr>
+<td><strong>フォント</strong></td>
+<td>ＭＳ 明朝</td>
+</tr>
+<tr>
+<td><strong>数値</strong></td>
+<td>数値型で保存（文字列ではない）</td>
+</tr>
+<tr>
+<td><strong>オートフィルタ</strong></td>
+<td>自動設定済み</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>トラブルシューティング</h2>
+<h3>カテゴリが一覧に表示されない</h3>
+<ul>
+<li>アクティブビューやスコープに要素が存在しない場合、そのカテゴリは表示されません</li>
+<li><strong>プロジェクト全体</strong>スコープで実行するとより多くのカテゴリが表示されます</li>
+</ul>
+<h3>通り芯・レベルなどの注釈要素が表示されない</h3>
+<ul>
+<li>アクティブビューに通り芯・レベルが表示されている状態でエクスポートすると一覧に表示されます</li>
+<li>プロジェクト全体スコープでも対応しています</li>
+</ul>
+<hr>
+<h2>関連機能</h2>
+<ul>
+<li><a href="./ExcelImport.md">EXCELインポート</a> — エクスポートしたファイルをRevitに一括反映</li>
+<li><a href="./FormworkCalculator.md">型枠数量算出</a> — 構造要素の型枠面積を自動算出してExcelに出力</li>
+</ul>
+        </article>
 
         <div class="manual-navigation">
             <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
@@ -122,21 +248,13 @@
     <script>
     (function() {
         var FEATURE_ID = 'ExcelExport';
-        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
         var el = document.getElementById('md-content');
-
+        if (!el || el.getAttribute('data-baked') === 'true') return; // 本文はビルド時に焼き込み済み
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
         fetch(MD_URL)
-            .then(function(r) {
-                if (!r.ok) throw new Error('HTTP ' + r.status);
-                return r.text();
-            })
-            .then(function(md) {
-                el.innerHTML = marked.parse(md);
-            })
-            .catch(function(e) {
-                el.innerHTML = '<p style="color:#c0392b">マニュアルの読み込みに失敗しました。<br>URL: ' + MD_URL + '</p>';
-                console.error(e);
-            });
+            .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+            .then(function(md) { if (window.marked) el.innerHTML = window.marked.parse(md); })
+            .catch(function(e) { console.error(e); });
     })();
     </script>
 </body>

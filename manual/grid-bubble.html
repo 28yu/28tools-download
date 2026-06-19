@@ -67,7 +67,113 @@
         <!-- 機能概要 -->
 
         <!-- マニュアル本文（Markdown 動的読み込み） -->
-        <article id="md-content" class="md-content">読み込み中...</article>
+        <article id="md-content" class="md-content" data-baked="true">
+        <!-- AUTO-GENERATED: 本文は scripts/build-manuals により Revit-Add-ins/Features/GridBubble.md から焼き込み。手動編集しないこと -->
+<h1>通り芯・レベル 符号表示切替 使い方ガイド</h1>
+<p>通り芯（グリッド）とレベルの符号（バブル）表示を、ワンクリックで切り替える機能です。<strong>事前に通り芯・レベルを選択していればその要素のみ</strong>、選択していなければ<strong>ビュー内の全要素</strong>が対象になります。</p>
+<hr>
+<h2>できること</h2>
+<ul>
+<li>選択中の通り芯・レベル（または未選択時はビュー内の全要素）の符号表示を一括で切り替えます</li>
+<li>3つのモードから選択できます：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ボタン</th>
+<th>動作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>両端表示</strong></td>
+<td>通り芯・レベルの両端に符号を表示する</td>
+</tr>
+<tr>
+<td><strong>左/上のみ</strong></td>
+<td>左端（縦通り芯）または上端（横通り芯・レベル）のみ符号を表示する</td>
+</tr>
+<tr>
+<td><strong>右/下のみ</strong></td>
+<td>右端（縦通り芯）または下端（横通り芯・レベル）のみ符号を表示する</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>実行できるビュー</h2>
+<table>
+<thead>
+<tr>
+<th>ビュー種別</th>
+<th align="center">対応</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>平面ビュー</strong></td>
+<td align="center">◯</td>
+</tr>
+<tr>
+<td><strong>天井伏図</strong></td>
+<td align="center">◯</td>
+</tr>
+<tr>
+<td><strong>構造伏図</strong></td>
+<td align="center">◯</td>
+</tr>
+<tr>
+<td><strong>断面図</strong></td>
+<td align="center">◯</td>
+</tr>
+<tr>
+<td><strong>立面図</strong></td>
+<td align="center">◯</td>
+</tr>
+<tr>
+<td>3Dビュー</td>
+<td align="center">×</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>実行手順</h2>
+<h3>▶ ステップ1: 対象ビューを開く</h3>
+<p>符号表示を変更したいビューをアクティブにします。</p>
+<h3>▶ ステップ2:（任意）対象を選択する</h3>
+<p>特定の通り芯・レベルのみ切り替えたい場合は、ビュー上で<strong>対象の通り芯・レベルを選択</strong>しておきます。</p>
+<ul>
+<li>何も選択しない場合 → <strong>ビュー内のすべての通り芯・レベル</strong>が対象</li>
+<li>通り芯・レベルを選択した場合 → <strong>選択したものだけ</strong>が対象</li>
+<li>選択範囲に通り芯・レベル以外の要素（壁・梁等）が混ざっていても問題ありません。通り芯・レベルだけが処理対象になります</li>
+</ul>
+<h3>▶ ステップ3: ボタンをクリック</h3>
+<p>リボン「<strong>28 Tools</strong>」タブ →「<strong>通り芯・レベル</strong>」パネルの3つのボタンから目的のものをクリックします。</p>
+<ul>
+<li><strong>両端表示</strong> — 通り芯・レベルの両端すべてに符号を表示</li>
+<li><strong>左/上のみ</strong> — 片側（左端・上端）のみ表示</li>
+<li><strong>右/下のみ</strong> — 片側（右端・下端）のみ表示</li>
+</ul>
+<p>ダイアログは表示されません。クリックすると即座に反映されます。</p>
+<blockquote>
+<p>💡 <strong>使い分けのコツ</strong>: 一部だけ符号位置を変えたいとき（例: 北側の通り芯だけ右端表示にしたい）は事前選択、ビュー全体を揃えたいときは未選択でクリックがおすすめです。</p>
+</blockquote>
+<hr>
+<h2>トラブルシューティング</h2>
+<h3>クリックしても変化がない</h3>
+<ul>
+<li>ビュー内に通り芯・レベルが<strong>表示されているか</strong>確認してください（フィルタやビュー設定で非表示になっていませんか？）</li>
+<li>すでに指定したモードになっている場合、見た目は変わりません</li>
+</ul>
+<h3>リンクモデルの通り芯・レベルが変わらない</h3>
+<ul>
+<li>リンクファイル内の通り芯・レベルは編集対象外です。ホストモデルの通り芯・レベルのみ変更されます</li>
+</ul>
+<h3>一部の通り芯・レベルだけ変更したい</h3>
+<ul>
+<li>ボタンをクリックする<strong>前に対象の通り芯・レベルを選択</strong>してから実行してください。選択した要素のみが切り替わります</li>
+</ul>
+<hr>
+<h2>関連機能</h2>
+<ul>
+<li><a href="./ViewportPosition.md">ビューポート位置 コピー＆ペースト</a> — シート上のビューポート位置を他のシートに合わせる</li>
+</ul>
+        </article>
 
         <div class="manual-navigation">
             <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
@@ -122,21 +228,13 @@
     <script>
     (function() {
         var FEATURE_ID = 'GridBubble';
-        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
         var el = document.getElementById('md-content');
-
+        if (!el || el.getAttribute('data-baked') === 'true') return; // 本文はビルド時に焼き込み済み
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
         fetch(MD_URL)
-            .then(function(r) {
-                if (!r.ok) throw new Error('HTTP ' + r.status);
-                return r.text();
-            })
-            .then(function(md) {
-                el.innerHTML = marked.parse(md);
-            })
-            .catch(function(e) {
-                el.innerHTML = '<p style="color:#c0392b">マニュアルの読み込みに失敗しました。<br>URL: ' + MD_URL + '</p>';
-                console.error(e);
-            });
+            .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+            .then(function(md) { if (window.marked) el.innerHTML = window.marked.parse(md); })
+            .catch(function(e) { console.error(e); });
     })();
     </script>
 </body>

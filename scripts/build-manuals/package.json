@@ -1,0 +1,13 @@
+{
+  "name": "build-manuals",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Revit-Add-ins の Markdown マニュアルを 28tools.com の静的 HTML に焼き込むビルドスクリプト",
+  "scripts": {
+    "build": "node inject.mjs"
+  },
+  "dependencies": {
+    "marked": "^12.0.0"
+  }
+}

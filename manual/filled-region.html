@@ -67,7 +67,123 @@
         <!-- 機能概要 -->
 
         <!-- マニュアル本文（Markdown 動的読み込み） -->
-        <article id="md-content" class="md-content">読み込み中...</article>
+        <article id="md-content" class="md-content" data-baked="true">
+        <!-- AUTO-GENERATED: 本文は scripts/build-manuals により Revit-Add-ins/Features/FilledRegionSplitMerge.md から焼き込み。手動編集しないこと -->
+<h1>塗潰し領域 分割/統合 使い方ガイド</h1>
+<p>複数エリアを持つ塗潰し領域を個別の領域に分割したり、複数の塗潰し領域を1つにまとめたりする機能です。</p>
+<hr>
+<h2>できること</h2>
+<ul>
+<li><strong>分割</strong>: 2つ以上のエリア（境界ループ）を持つ塗潰し領域を、エリアごとに独立した領域へ分割します</li>
+<li><strong>統合</strong>: 複数の塗潰し領域を1つの領域にまとめます。重なり合っている領域も、ブーリアン和算で正しく統合されます</li>
+<li>平面図・断面図・立面図・製図ビューなど、塗潰し領域を作成できるすべてのビューで使用できます</li>
+</ul>
+<hr>
+<h2>実行前の準備</h2>
+<h3>対象要素を選択する</h3>
+<p>コマンド実行前に、ビュー上で塗潰し領域を選択しておきます。</p>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>選択内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>分割</strong></td>
+<td>2つ以上のエリアを含む塗潰し領域を1つ選択</td>
+</tr>
+<tr>
+<td><strong>統合</strong></td>
+<td>統合したい塗潰し領域を2つ以上選択</td>
+</tr>
+<tr>
+<td><strong>両方</strong></td>
+<td>複数エリアを持つ領域 ＋ 他の領域を混在して選択</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>💡 事前選択なしでコマンドを実行すると、「塗潰し領域を選択してください」というメッセージが表示されます。</p>
+</blockquote>
+<hr>
+<h2>実行手順</h2>
+<h3>▶ ステップ1: コマンドの起動</h3>
+<ol>
+<li>ビュー上で対象の塗潰し領域を選択する</li>
+<li>リボン「<strong>28 Tools</strong>」タブ →「<strong>注釈・詳細</strong>」パネル →「<strong>領域 分割/統合</strong>」ボタンをクリック</li>
+</ol>
+<h3>▶ ステップ2: 操作を選択</h3>
+<p>ダイアログ「<strong>塗潰し領域 分割/統合</strong>」が開きます。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>分割</strong></td>
+<td>選択した領域を各エリアごとに独立した領域へ分割します（選択した領域が2つ以上のエリアを持つ場合のみ有効）</td>
+</tr>
+<tr>
+<td><strong>統合</strong></td>
+<td>選択した複数の領域を1つにまとめます（2つ以上の領域を選択している場合のみ有効）</td>
+</tr>
+</tbody></table>
+<p>選択内容によって有効/無効が自動的に切り替わります。</p>
+<h3>▶ ステップ3: 塗潰しパターンを選択（統合時のみ）</h3>
+<p>「<strong>統合</strong>」を選んだ場合、統合後に使用する<strong>塗潰しパターン</strong>をドロップダウンから選択します。</p>
+<blockquote>
+<p>💡 選択した領域がすべて同じパターンを使用している場合、そのパターンがデフォルトで選択されます。</p>
+</blockquote>
+<h3>▶ ステップ4: OKをクリック</h3>
+<p>「<strong>OK</strong>」をクリックすると処理が実行されます。処理完了後、作成された領域数がメッセージで表示されます。</p>
+<hr>
+<h2>出力結果</h2>
+<h3>分割の場合</h3>
+<ul>
+<li>元の塗潰し領域は削除され、エリア数と同じ数の独立した塗潰し領域が作成されます</li>
+<li>各領域は元と同じ塗潰しパターンを引き継ぎます</li>
+</ul>
+<h3>統合の場合</h3>
+<ul>
+<li>元のすべての塗潰し領域は削除され、1つの塗潰し領域が作成されます</li>
+<li>重なり合っている領域はブーリアン和算により正しく結合されます（重なり部分が「穴」になりません）</li>
+<li>離れた位置にある領域は、1つの領域内の複数エリアとしてまとめられます</li>
+</ul>
+<hr>
+<h2>トラブルシューティング</h2>
+<h3>「塗潰し領域を選択してください」と表示される</h3>
+<ul>
+<li>ビュー上で塗潰し領域（FilledRegion）を選択してからコマンドを実行してください</li>
+<li>塗潰し領域以外の要素（壁・床など）のみを選択している場合も同じメッセージが表示されます</li>
+</ul>
+<h3>「分割」がグレーアウトして選択できない</h3>
+<ul>
+<li>選択した領域が<strong>エリアを1つしか持っていない</strong>場合、分割はできません</li>
+<li>複数のエリアを持つ塗潰し領域（2つ以上の境界ループを含む領域）を選択してください</li>
+</ul>
+<h3>「統合」がグレーアウトして選択できない</h3>
+<ul>
+<li><strong>1つの領域しか選択していない</strong>場合、統合はできません</li>
+<li>2つ以上の塗潰し領域を複数選択してください</li>
+</ul>
+<h3>異なるビューの塗潰し領域を統合したい</h3>
+<ul>
+<li>塗潰し領域はビューに固有の要素のため、<strong>異なるビューの領域を統合することはできません</strong></li>
+<li>同じビュー内の領域のみ統合できます</li>
+</ul>
+<h3>統合後に意図しない形状になる</h3>
+<ul>
+<li>重なり合っていない領域を統合した場合、複数エリアを持つ1つの領域になります。見た目には変化がない場合があります</li>
+<li>ブーリアン和算の処理に失敗した場合、通常の複数ループ統合にフォールバックします</li>
+</ul>
+<hr>
+<h2>関連機能</h2>
+<ul>
+<li><a href="./FireProtection.md">耐火被覆色分け</a> — 梁・柱の耐火被覆範囲を塗潰し領域で色分け表示</li>
+</ul>
+        </article>
 
         <div class="manual-navigation">
             <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
@@ -122,21 +238,13 @@
     <script>
     (function() {
         var FEATURE_ID = 'FilledRegionSplitMerge';
-        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
         var el = document.getElementById('md-content');
-
+        if (!el || el.getAttribute('data-baked') === 'true') return; // 本文はビルド時に焼き込み済み
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
         fetch(MD_URL)
-            .then(function(r) {
-                if (!r.ok) throw new Error('HTTP ' + r.status);
-                return r.text();
-            })
-            .then(function(md) {
-                el.innerHTML = marked.parse(md);
-            })
-            .catch(function(e) {
-                el.innerHTML = '<p style="color:#c0392b">マニュアルの読み込みに失敗しました。<br>URL: ' + MD_URL + '</p>';
-                console.error(e);
-            });
+            .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+            .then(function(md) { if (window.marked) el.innerHTML = window.marked.parse(md); })
+            .catch(function(e) { console.error(e); });
     })();
     </script>
 </body>

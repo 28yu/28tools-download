@@ -67,7 +67,111 @@
         <!-- 機能概要 -->
 
         <!-- マニュアル本文（Markdown 動的読み込み） -->
-        <article id="md-content" class="md-content">読み込み中...</article>
+        <article id="md-content" class="md-content" data-baked="true">
+        <!-- AUTO-GENERATED: 本文は scripts/build-manuals により Revit-Add-ins/Features/ExcelImport.md から焼き込み。手動編集しないこと -->
+<h1>EXCELインポート 使い方ガイド</h1>
+<p>Excelで編集したパラメータ値をRevitに一括反映する機能です。EXCELエクスポートで書き出したファイルをそのまま使用できます。</p>
+<hr>
+<h2>できること</h2>
+<ul>
+<li>Excelで編集した値を<strong>Revitに一括インポート</strong>します</li>
+<li>インポート前に<strong>変更内容をプレビュー</strong>で確認できます</li>
+<li>インポート後に<strong>成功・失敗をExcelのセルに色付き</strong>でフィードバックします</li>
+<li>開いているExcelファイルを<strong>自動検出</strong>してリスト表示します</li>
+</ul>
+<hr>
+<h2>実行手順</h2>
+<h3>▶ ステップ1: コマンドの起動</h3>
+<p>リボン「<strong>28 Tools</strong>」タブ →「<strong>データ</strong>」パネル →「<strong>EXCELインポート</strong>」ボタンをクリックします。</p>
+<h3>▶ ステップ2: Excelファイルの選択</h3>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>操作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>開いているファイルから選ぶ</strong></td>
+<td>現在開いているExcelファイルが自動検出されてリスト表示される</td>
+</tr>
+<tr>
+<td><strong>ファイルを参照</strong></td>
+<td>「参照」ボタンからファイルダイアログでファイルを選ぶ</td>
+</tr>
+<tr>
+<td><strong>ドラッグ＆ドロップ</strong></td>
+<td>ダイアログ上にExcelファイルをドラッグする</td>
+</tr>
+</tbody></table>
+<h3>▶ ステップ3: 変更内容のプレビュー確認</h3>
+<p>プレビューダイアログに<strong>変更が発生する行のみ</strong>が一覧表示されます。</p>
+<ul>
+<li>読み取り専用パラメータ（Revitが自動計算する値）は非表示</li>
+<li>変更前の値と変更後の値を並べて確認できます</li>
+</ul>
+<blockquote>
+<p>💡 <strong>空セルはスキップされます。</strong> ExcelのセルをDeleteキーで消しても、その値がRevitから削除されることはありません。</p>
+</blockquote>
+<h3>▶ ステップ4: インポート実行</h3>
+<p>「<strong>インポート実行</strong>」ボタンをクリックします。処理完了後、Revitに変更が反映されます。</p>
+<hr>
+<h2>インポート後のフィードバック</h2>
+<p>インポートが完了すると、Excelファイルの該当セルに色付きフィードバックが追加されます。</p>
+<table>
+<thead>
+<tr>
+<th>状態</th>
+<th>表示</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>インポート成功</strong></td>
+<td>セルのテキストが<strong>青字・太字</strong></td>
+</tr>
+<tr>
+<td><strong>インポート失敗</strong></td>
+<td>セルのテキストが<strong>赤字・太字</strong></td>
+</tr>
+</tbody></table>
+<p>各シートの末尾列に凡例が自動追記されます。</p>
+<pre><code>(*青字はインポート成功、赤字はインポート失敗)
+</code></pre>
+<blockquote>
+<p>💡 ExcelがRevitと同時に開いている場合は、Excel COM経由でセル書式が直接反映されます。Excelが閉じている場合はファイルに直接書き込まれます。</p>
+</blockquote>
+<hr>
+<h2>注意事項</h2>
+<ul>
+<li><strong>空セル（空欄）はスキップ</strong>されます。値を消したい場合は空欄ではなく明示的な値を入力してください</li>
+<li><strong>読み取り専用パラメータ</strong>（長さ・面積などRevitが自動計算するパラメータ）はインポートできません</li>
+<li><strong>要素IDが一致しない</strong>場合は反映されません（異なるプロジェクトで書き出したファイルを使用しないでください）</li>
+<li>シート統合モードでエクスポートしたファイルでは、対象カテゴリに存在しないパラメータの列が空欄になりますが、インポート時は空欄セルをスキップするため問題ありません</li>
+</ul>
+<hr>
+<h2>トラブルシューティング</h2>
+<h3>「ファイルが開けません」と表示される</h3>
+<ul>
+<li>ExcelがそのファイルをExclusiveロックで開いている場合があります</li>
+<li>ExcelでファイルをTrustedとして開き直すか、Excelをいったん閉じてから試みてください</li>
+</ul>
+<h3>「インポートできないパラメータがあります」と表示される</h3>
+<ul>
+<li>長さ・面積などRevitが自動計算するパラメータは読み取り専用のためインポートできません</li>
+<li>プレビュー画面では読み取り専用パラメータは非表示になっています</li>
+</ul>
+<h3>プレビューに変更行が表示されない</h3>
+<ul>
+<li>ExcelとRevit上の現在値が同じ場合、変更なしと判定されプレビューに表示されません</li>
+<li>値を変更してから再度インポートを実行してください</li>
+</ul>
+<hr>
+<h2>関連機能</h2>
+<ul>
+<li><a href="./ExcelExport.md">EXCELエクスポート</a> — Revitのパラメータ値をExcelに書き出す</li>
+<li><a href="./FormworkCalculator.md">型枠数量算出</a> — 構造要素の型枠面積を自動算出してExcelに出力</li>
+</ul>
+        </article>
 
         <div class="manual-navigation">
             <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
@@ -122,21 +226,13 @@
     <script>
     (function() {
         var FEATURE_ID = 'ExcelImport';
-        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
         var el = document.getElementById('md-content');
-
+        if (!el || el.getAttribute('data-baked') === 'true') return; // 本文はビルド時に焼き込み済み
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
         fetch(MD_URL)
-            .then(function(r) {
-                if (!r.ok) throw new Error('HTTP ' + r.status);
-                return r.text();
-            })
-            .then(function(md) {
-                el.innerHTML = marked.parse(md);
-            })
-            .catch(function(e) {
-                el.innerHTML = '<p style="color:#c0392b">マニュアルの読み込みに失敗しました。<br>URL: ' + MD_URL + '</p>';
-                console.error(e);
-            });
+            .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+            .then(function(md) { if (window.marked) el.innerHTML = window.marked.parse(md); })
+            .catch(function(e) { console.error(e); });
     })();
     </script>
 </body>
