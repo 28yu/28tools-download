@@ -1,0 +1,13 @@
+{
+  "name": "ga4-sync",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "GA4 Data API から Supabase ga4_history へ同期する GitHub Actions 用スクリプト",
+  "scripts": {
+    "start": "node sync.mjs"
+  },
+  "dependencies": {
+    "@google-analytics/data": "^4.7.0"
+  }
+}
