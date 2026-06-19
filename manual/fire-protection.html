@@ -67,7 +67,245 @@
         <!-- 機能概要 -->
 
         <!-- マニュアル本文（Markdown 動的読み込み） -->
-        <article id="md-content" class="md-content">読み込み中...</article>
+        <article id="md-content" class="md-content" data-baked="true">
+        <!-- AUTO-GENERATED: 本文は scripts/build-manuals により Revit-Add-ins/Features/FireProtection.md から焼き込み。手動編集しないこと -->
+<h1>耐火被覆色分け 使い方ガイド</h1>
+<p>梁・柱の耐火被覆を種類別に色分け塗潰しで表示し、凡例も自動作成する機能です。</p>
+<hr>
+<h2>できること</h2>
+<ul>
+<li>平面・天伏・構造伏・断面ビューに配置されている <strong>梁・柱の耐火被覆範囲</strong> を、種類別に色分けされた塗潰し領域として自動作成します</li>
+<li><strong>凡例（製図ビュー）</strong> が自動作成され、シート上で実行した場合はシート右上に自動配置されます</li>
+<li>1枚のシートに配置されている <strong>複数のビューを一括処理</strong> できます</li>
+</ul>
+<hr>
+<h2>実行できるビュー</h2>
+<table>
+<thead>
+<tr>
+<th>ビュー種別</th>
+<th align="center">対応</th>
+<th>動作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>平面ビュー</strong></td>
+<td align="center">◯</td>
+<td>梁＋柱を色分け</td>
+</tr>
+<tr>
+<td><strong>天井伏図</strong></td>
+<td align="center">◯</td>
+<td>梁＋柱を色分け</td>
+</tr>
+<tr>
+<td><strong>構造伏図</strong></td>
+<td align="center">◯</td>
+<td>梁＋柱を色分け</td>
+</tr>
+<tr>
+<td><strong>断面図</strong></td>
+<td align="center">◯</td>
+<td>梁のみ色分け</td>
+</tr>
+<tr>
+<td><strong>シート</strong></td>
+<td align="center">◯</td>
+<td>配置されている上記ビューを <strong>一括処理</strong>＋凡例自動配置</td>
+</tr>
+<tr>
+<td>その他（3D・立面など）</td>
+<td align="center">×</td>
+<td>実行不可</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>💡 <strong>おすすめは「シート上で実行」</strong> — 複数ビューを一度に処理し、凡例も自動でレイアウトされます。</p>
+</blockquote>
+<hr>
+<h2>実行前の準備</h2>
+<h3>1. 耐火被覆のパラメータを設定する</h3>
+<p>梁・柱のインスタンスまたはタイプに、<strong>耐火被覆の種類を識別するパラメータ</strong> を設定しておきます。</p>
+<ul>
+<li>パラメータ名は <strong>「耐火被覆」を含む名前</strong> が自動検出されます<ul>
+<li>例: <code>耐火被覆</code>、<code>耐火被覆種類</code>、<code>耐火被覆仕様</code>、<code>耐火被覆_仕様</code> など</li>
+</ul>
+</li>
+<li>値は種類ごとに統一した文字列にしてください<ul>
+<li>例: <code>1時間耐火</code>、<code>2時間耐火</code>、<code>半湿式吹付</code>、<code>巻付け 厚45</code> など</li>
+</ul>
+</li>
+<li>同じ種類の梁・柱には <strong>同じ値</strong> を入力（値が同じものが同じ色になります）</li>
+</ul>
+<h3>2. 梁・柱ファミリを確認する</h3>
+<ul>
+<li>構造フレーム（梁）と構造柱のカテゴリの要素が対象です</li>
+<li>ビュー上で要素が表示されている必要があります（非表示・フィルタで隠れている要素は対象外）</li>
+</ul>
+<h3>3. ビューテンプレート</h3>
+<ul>
+<li>ビューテンプレートが設定されているビューでは塗潰し領域を配置できないため、コマンド実行時に <strong>「テンプレートを解除しますか？」</strong> という確認が出ます</li>
+<li>「はい」で解除して進めるか、事前に解除しておいてください</li>
+</ul>
+<hr>
+<h2>実行手順</h2>
+<h3>▶ ステップ1: コマンドの起動</h3>
+<ol>
+<li>対象のビューまたはシートを開く</li>
+<li>リボン「<strong>28 Tools</strong>」タブ →「<strong>色分け</strong>」パネル →「<strong>耐火被覆色分け</strong>」ボタンをクリック</li>
+</ol>
+<h3>▶ ステップ2: パラメータと色を設定</h3>
+<p>ダイアログ「<strong>STEP 1/3 — 基本設定</strong>」が開きます。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>耐火被覆パラメータ</strong></td>
+<td>自動検出されたパラメータを選択（複数候補がある場合）</td>
+</tr>
+<tr>
+<td><strong>検出された耐火被覆の種類</strong></td>
+<td>ビュー内で見つかった種類の一覧。色を自動割り当て（クリックで変更可能）</td>
+</tr>
+<tr>
+<td><strong>塗潰し領域のオフセット設定</strong></td>
+<td>梁・柱の周囲に何mmはみ出して塗潰すかを指定</td>
+</tr>
+<tr>
+<td>・<strong>共通オフセット</strong></td>
+<td>全種類で同じ値</td>
+</tr>
+<tr>
+<td>・<strong>種類ごとに個別オフセット</strong></td>
+<td>種類別に個別の値を指定</td>
+</tr>
+</tbody></table>
+<h3>▶ ステップ3: 柱の設定（平面・天伏・構造伏のみ）</h3>
+<p>ダイアログ「<strong>STEP 2/3 — 柱設定</strong>」が開きます（断面のみの場合はスキップされます）。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>柱A（外寸）</strong></td>
+<td>柱の外周から被覆外面までの距離 mm</td>
+</tr>
+<tr>
+<td><strong>柱B（被覆厚）</strong></td>
+<td>被覆の厚み mm</td>
+</tr>
+</tbody></table>
+<p>柱は「枠型（内側に空洞のある被覆形状）」として塗潰し領域が作成されます。</p>
+<h3>▶ ステップ4: 表示設定と実行</h3>
+<p>ダイアログ「<strong>STEP 3/3 — 表示・確認</strong>」が開きます。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>線種</strong></td>
+<td>塗潰し領域の境界線の種類</td>
+</tr>
+<tr>
+<td><strong>塗りパターン</strong></td>
+<td>塗潰しパターン（通常は「Solid fill」または「中実」）</td>
+</tr>
+<tr>
+<td><strong>文字タイプ</strong></td>
+<td>凡例に使用するテキストノートのタイプ</td>
+</tr>
+<tr>
+<td><strong>既存の「耐火被覆_」塗潰領域・凡例を上書きする</strong></td>
+<td>再実行時にチェック推奨（既存を削除して再生成）</td>
+</tr>
+</tbody></table>
+<p>「<strong>処理概要</strong>」で対象ビュー数・種類数を確認し、「<strong>実行</strong>」ボタンをクリックします。</p>
+<hr>
+<h2>出力結果</h2>
+<p>実行後、以下が自動作成されます。</p>
+<h3>1. 塗潰し領域（FilledRegion）</h3>
+<p>各ビューの梁・柱の周囲に、種類別の色で塗潰し領域が配置されます。</p>
+<ul>
+<li>塗潰しタイプ名: <code>耐火被覆_{種類名}</code>（梁）/ <code>耐火被覆_柱_{種類名}</code>（柱）</li>
+<li>種類が同じ要素は同じ色</li>
+</ul>
+<h3>2. 凡例（製図ビュー）</h3>
+<p><code>耐火被覆色分け凡例</code> という名前の <strong>製図ビュー</strong> が自動作成されます。</p>
+<ul>
+<li>タイトル「◎耐火被覆仕様凡例」</li>
+<li>各種類の色四角＋名称</li>
+<li>柱の枠型サンプル</li>
+<li>注記（耐火被覆不要範囲・半湿式吹付ロックウール工法の例外範囲など）</li>
+</ul>
+<h3>3. シート上での凡例自動配置</h3>
+<p><strong>シートで実行した場合のみ</strong>、上記凡例がシートの <strong>右上角</strong> にビューポートとして自動配置されます。</p>
+<blockquote>
+<p>💡 配置位置が気に入らない場合は、Revit上でビューポートを掴んで移動できます。</p>
+</blockquote>
+<hr>
+<h2>再実行・上書きについて</h2>
+<p>設定を変更して再実行したい場合：</p>
+<ol>
+<li>ダイアログのSTEP 3で <strong>「既存の『耐火被覆_』塗潰領域・凡例を上書きする」</strong> にチェック</li>
+<li>「実行」をクリック</li>
+</ol>
+<p>→ 既存の塗潰し領域・凡例ビューが削除され、新しい設定で再作成されます。</p>
+<hr>
+<h2>トラブルシューティング</h2>
+<h3>「ビュー内に梁または柱が見つかりません」と表示される</h3>
+<ul>
+<li>ビュー上で梁・柱が <strong>表示されている</strong> か確認してください（フィルタや非表示で隠れていませんか？）</li>
+<li>構造フレーム（梁）/ 構造柱のカテゴリで配置されているか確認</li>
+</ul>
+<h3>「耐火被覆」を含むパラメータが見つかりません」と表示される</h3>
+<ul>
+<li>梁・柱の <strong>インスタンスまたはタイプパラメータ</strong> に「耐火被覆」を含む名前のパラメータを追加してください</li>
+<li>共有パラメータ・プロジェクトパラメータどちらでも可</li>
+</ul>
+<h3>検出された種類が想定と違う</h3>
+<ul>
+<li>パラメータの値に <strong>タイプミス・全角半角混在・空白の差</strong> がないか確認</li>
+<li>パラメータ値が空の要素は色分け対象外</li>
+</ul>
+<h3>凡例がシートからはみ出す</h3>
+<ul>
+<li>種類数が多い場合や注記文字サイズが大きい場合、凡例サイズが推定より大きくなることがあります</li>
+<li>Revit上で凡例ビューポートを手動で移動してください</li>
+</ul>
+<h3>同じ色が複数の種類に使われている</h3>
+<ul>
+<li>種類が13以上ある場合、色のバリエーションを増やすため明度違いの色になります</li>
+<li>ダイアログ「検出された耐火被覆の種類」セクションで色四角をクリックして手動変更できます</li>
+</ul>
+<h3>ビューテンプレートがある</h3>
+<ul>
+<li>実行時に解除確認ダイアログが出ます。「はい」で一時的に解除します</li>
+<li>元に戻したい場合は、実行後に手動でテンプレートを再設定してください</li>
+</ul>
+<hr>
+<h2>ヒント・コツ</h2>
+<ul>
+<li><strong>シートで実行が最も効率的</strong> — 平面・断面など複数ビューを一括処理＋凡例も自動配置</li>
+<li><strong>再実行時は必ず「上書き」にチェック</strong> — 旧データが残ったままだと重なって見づらくなります</li>
+<li><strong>色の自動割り当て</strong> はパステル系（梁）／ビビッド系（柱）を使い分け、最大12種類まで独立した色を保証</li>
+<li><strong>凡例の位置調整</strong> は Revit 上で通常のビューポート移動操作で行えます</li>
+</ul>
+<hr>
+<h2>関連機能</h2>
+<ul>
+<li><a href="./BeamLevelColor.md">梁レベル色分け</a> — 梁天端（平面・構造伏図）または梁下端（天井伏図）をレベルで色分け</li>
+</ul>
+        </article>
 
         <div class="manual-navigation">
             <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
@@ -122,21 +360,13 @@
     <script>
     (function() {
         var FEATURE_ID = 'FireProtection';
-        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
         var el = document.getElementById('md-content');
-
+        if (!el || el.getAttribute('data-baked') === 'true') return; // 本文はビルド時に焼き込み済み
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
         fetch(MD_URL)
-            .then(function(r) {
-                if (!r.ok) throw new Error('HTTP ' + r.status);
-                return r.text();
-            })
-            .then(function(md) {
-                el.innerHTML = marked.parse(md);
-            })
-            .catch(function(e) {
-                el.innerHTML = '<p style="color:#c0392b">マニュアルの読み込みに失敗しました。<br>URL: ' + MD_URL + '</p>';
-                console.error(e);
-            });
+            .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+            .then(function(md) { if (window.marked) el.innerHTML = window.marked.parse(md); })
+            .catch(function(e) { console.error(e); });
     })();
     </script>
 </body>

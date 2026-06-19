@@ -1,0 +1,52 @@
+name: Build Manuals (bake Markdown into HTML)
+
+# manual/*.html の本文を、アドイン開発リポジトリ（28yu/Revit-Add-ins）の
+# Markdown からビルド時に焼き込み、静的 HTML として配信する。
+# 目的: 実行時 fetch だと生 HTML が空（「読み込み中...」）になり、
+#       AdSense / 検索エンジンが本文を読めない問題の解消。
+# 執筆の単一ソースはアドイン開発リポジトリのまま。
+
+on:
+  schedule:
+    # 毎日 UTC 18:00（JST 03:00）。アドイン側 Markdown の更新を取り込む安全網。
+    - cron: '0 18 * * *'
+  workflow_dispatch: {}  # 手動実行（更新を即時反映したいとき）
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-manuals
+  cancel-in-progress: false
+
+jobs:
+  bake:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: scripts/build-manuals
+        run: npm install --no-audit --no-fund
+
+      - name: Bake manuals
+        # 取得元は既定の https://28yu.github.io/Revit-Add-ins/Features/<ID>.md
+        run: node scripts/build-manuals/inject.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          if [ -n "$(git status --porcelain manual/)" ]; then
+            git add manual/*.html
+            git commit -m "chore(manuals): refresh baked manual content from Revit-Add-ins [skip ci]"
+            git push
+          else
+            echo "No manual content changes."
+          fi
