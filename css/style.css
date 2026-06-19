@@ -1412,13 +1412,6 @@ h1.main-title,
     border-color: var(--architect-green);
 }
 
-.category-card.family::before {
-    background: var(--construction-orange);
-}
-.category-card.family:hover {
-    border-color: var(--construction-orange);
-}
-
 .category-card.templates::before {
     background: var(--blueprint-blue);
 }
@@ -1753,11 +1746,6 @@ h1.main-title,
     color: var(--architect-green);
 }
 
-.sidebar-item.active.family {
-    background: rgba(230, 126, 34, 0.12);
-    border-color: var(--construction-orange);
-    color: var(--construction-orange);
-}
 
 .sidebar-item.active.hatch {
     background: rgba(52, 152, 219, 0.12);
@@ -2187,34 +2175,8 @@ h1.main-title,
 }
 
 /* ==========================================
-   ファミリページ
+   カテゴリカード（共通）
    ========================================== */
-
-/* ファミリカテゴリグリッド */
-.family-categories-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 24px;
-    margin-top: 32px;
-    margin-bottom: 48px;
-}
-
-/* ファミリカテゴリカード */
-.family-category-card {
-    background: white;
-    border-radius: 12px;
-    padding: 32px 24px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
-    position: relative;
-}
-
-.family-category-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
 
 /* カテゴリアイコン */
 .category-icon {
@@ -2330,15 +2292,6 @@ h1.main-title,
 
 /* レスポンシブ（モバイル） */
 @media (max-width: 768px) {
-    .family-categories-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .family-category-card {
-        padding: 24px 20px;
-    }
-
     .category-icon {
         width: 56px;
         height: 56px;

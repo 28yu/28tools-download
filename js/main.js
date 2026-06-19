@@ -353,11 +353,6 @@ function initTranslations() {
             ja: 'Revit アドイン',
             en: 'Revit Add-ins',
             zh: 'Revit 插件'
-        },
-        'family-breadcrumb': {
-            ja: 'Revitファミリライブラリ',
-            en: 'Revit Family Library',
-            zh: 'Revit族库'
         }
     };
 
@@ -760,11 +755,6 @@ function initTranslations() {
             en: 'Add-ins',
             zh: '插件'
         },
-        'index-tab-family': {
-            ja: 'ファミリ',
-            en: 'Family',
-            zh: '族'
-        },
         'index-tab-hatch': {
             ja: '塗潰し',
             en: 'Hatch',
@@ -809,11 +799,6 @@ function initTranslations() {
             ja: '詳細・ダウンロード →',
             en: 'Details & Download →',
             zh: '详情与下载 →'
-        },
-        'index-family-title': {
-            ja: 'ファミリ',
-            en: 'Family',
-            zh: '族'
         },
         'index-coming-soon': {
             ja: '準備中',
@@ -914,11 +899,6 @@ function initTranslations() {
             ja: 'Revit 2021-2026 対応の無料アドイン。6つの便利機能をインストール不要ですぐに利用できます。',
             en: 'Free add-ins compatible with Revit 2021-2026. 6 convenient features ready to use without installation.',
             zh: '兼容Revit 2021-2026的免费插件。6个便捷功能无需安装即可使用。'
-        },
-        'index-category-family-desc': {
-            ja: '高品質なRevitファミリライブラリ。実務で使える豊富なファミリを無料でダウンロード。（準備中）',
-            en: 'High-quality Revit family library. Download a rich collection of practical families for free. (Coming Soon)',
-            zh: '高质量的Revit族库。免费下载丰富的实用族。（即将推出）'
         },
         'index-category-hatch-desc': {
             ja: 'Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。6種類のパターンに対応。',
@@ -7329,122 +7309,6 @@ translations.filledRegion = {
         }
     };
 
-    // ========================================
-    // ファミリページ
-    // ========================================
-    translations.familyPage = {
-        'family-page-title': {
-            ja: 'Revitファミリライブラリ',
-            en: 'Revit Family Library',
-            zh: 'Revit族库'
-        },
-        'family-page-description': {
-            ja: '建築、構造、設備、家具など、実務で使えるRevitファミリをカテゴリ別に整理。すべて無料でダウンロードできます。',
-            en: 'Architecture, structure, MEP, furniture and more - Revit families organized by category. All free to download.',
-            zh: '建筑、结构、机电、家具等实用Revit族，按类别整理。全部免费下载。'
-        },
-        'family-cat-architecture': {
-            ja: '建築',
-            en: 'Architecture',
-            zh: '建筑'
-        },
-        'family-cat-architecture-desc': {
-            ja: 'ドア、窓、壁、床、天井など',
-            en: 'Doors, windows, walls, floors, ceilings, etc.',
-            zh: '门、窗、墙、楼板、天花板等'
-        },
-        'family-cat-structure': {
-            ja: '構造',
-            en: 'Structure',
-            zh: '结构'
-        },
-        'family-cat-structure-desc': {
-            ja: '柱、梁、基礎、鉄骨部材など',
-            en: 'Columns, beams, foundations, steel members, etc.',
-            zh: '柱、梁、基础、钢构件等'
-        },
-        'family-cat-mep': {
-            ja: '設備（MEP）',
-            en: 'MEP',
-            zh: '机电设备（MEP）'
-        },
-        'family-cat-mep-desc': {
-            ja: '配管、ダクト、電気設備など',
-            en: 'Pipes, ducts, electrical equipment, etc.',
-            zh: '管道、风管、电气设备等'
-        },
-        'family-cat-furniture': {
-            ja: '家具',
-            en: 'Furniture',
-            zh: '家具'
-        },
-        'family-cat-furniture-desc': {
-            ja: '机、椅子、キャビネット、棚など',
-            en: 'Desks, chairs, cabinets, shelves, etc.',
-            zh: '桌子、椅子、柜子、货架等'
-        },
-        'family-cat-plumbing': {
-            ja: '衛生器具',
-            en: 'Plumbing Fixtures',
-            zh: '卫浴设备'
-        },
-        'family-cat-plumbing-desc': {
-            ja: 'トイレ、洗面台、浴槽など',
-            en: 'Toilets, sinks, bathtubs, etc.',
-            zh: '马桶、洗脸盆、浴缸等'
-        },
-        'family-cat-lighting': {
-            ja: '照明器具',
-            en: 'Lighting Fixtures',
-            zh: '照明设备'
-        },
-        'family-cat-lighting-desc': {
-            ja: 'ダウンライト、ペンダント、間接照明など',
-            en: 'Downlights, pendants, indirect lighting, etc.',
-            zh: '筒灯、吊灯、间接照明等'
-        },
-        'family-cat-site': {
-            ja: '外構',
-            en: 'Site',
-            zh: '场地'
-        },
-        'family-cat-site-desc': {
-            ja: '植栽、フェンス、舗装、サインなど',
-            en: 'Planting, fences, paving, signage, etc.',
-            zh: '绿化、围栏、铺装、标识等'
-        },
-        'family-cat-specialty': {
-            ja: '特殊',
-            en: 'Specialty',
-            zh: '特殊'
-        },
-        'family-cat-specialty-desc': {
-            ja: '注釈、タグ、詳細アイテムなど',
-            en: 'Annotations, tags, detail items, etc.',
-            zh: '注释、标记、详图项目等'
-        },
-        'family-badge-coming-soon': {
-            ja: '準備中',
-            en: 'Coming Soon',
-            zh: '准备中'
-        },
-        'family-badge-available': {
-            ja: '利用可能',
-            en: 'Available',
-            zh: '可用'
-        },
-        'family-info-title': {
-            ja: '📢 ファミリライブラリについて',
-            en: '📢 About Family Library',
-            zh: '📢 关于族库'
-        },
-        'family-info-content': {
-            ja: '現在、各カテゴリのファミリを準備中です。順次公開していく予定ですので、しばらくお待ちください。\nリクエストやご要望がありましたら、お問い合わせフォームからお気軽にご連絡ください。',
-            en: 'We are currently preparing families for each category. They will be released gradually, so please stay tuned.\nIf you have any requests or suggestions, please feel free to contact us through the contact form.',
-            zh: '目前正在准备各类别的族。我们将逐步发布，请耐心等待。\n如有任何需求或建议，请随时通过联系表单与我们联系。'
-        }
-    };
-
     translations.featuresPage = {
         'features-breadcrumb': {
             ja: '機能一覧',
@@ -7659,7 +7523,6 @@ translations.filledRegion = {
         translations.termsPage,
         translations.newsPage,
         translations.aiNewsPage,
-        translations.familyPage,
         translations.featuresPage
     );
     
