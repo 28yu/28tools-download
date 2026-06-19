@@ -1,0 +1,48 @@
+name: GA4 → Supabase 同期
+
+on:
+  schedule:
+    # 毎日 UTC 17:00 = JST 02:00 に昨日分を同期
+    - cron: '0 17 * * *'
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: '開始日 YYYY-MM-DD（空なら昨日）。過去全取得は 2020-01-01'
+        required: false
+        default: ''
+      end_date:
+        description: '終了日 YYYY-MM-DD または yesterday（空なら昨日）'
+        required: false
+        default: ''
+
+# 同時実行を防ぐ（手動バックフィルと日次が重ならないように）
+concurrency:
+  group: ga4-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: scripts/ga4-sync
+        run: npm install
+
+      - name: Run GA4 sync
+        working-directory: scripts/ga4-sync
+        env:
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GA4_SA_KEY: ${{ secrets.GA4_SA_KEY }}
+          SUPABASE_URL: ${{ vars.SUPABASE_URL || 'https://clyfrkwuajbauqxvrfyf.supabase.co' }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          START_DATE: ${{ github.event.inputs.start_date }}
+          END_DATE: ${{ github.event.inputs.end_date }}
+        run: node sync.mjs
