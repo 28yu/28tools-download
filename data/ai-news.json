@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T06:21:39.311714",
+  "lastUpdated": "2026-06-20T05:16:07.672550",
   "articles": [
     {
       "title": "We’re announcing new community investments in Missouri.",
@@ -167,28 +167,6 @@
       "language": "ja"
     },
     {
-      "title": "Claude Codeのサブエージェントとは？使い方やうまく動かないときの原因・対策も紹介",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-code-sub-agent/",
-      "description": "Claude Codeのサブエージェント機能を使いこなせば、複雑なタスクを役割ごとに分担させて効率的に処理できるようになります。 この記事では、サブエージェントの基本的な仕組みから実際の作成手順、そしてチーム開発での安全 [...] The post Claude Codeのサブエージェントとは？使い方やうまく動かないときの原因・対策も紹介 first appeared on AIポータルメディア...",
-      "publishedDate": "Wed, 17 Jun 2026 01:48:36 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ClaudeCode.png",
-      "language": "ja"
-    },
-    {
-      "title": "Claudeのオプトアウト設定手順｜PC・スマホ別のやり方や安全に使用する方法を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-optout/",
-      "description": "Claudeを業務で使う際は、入力した内容がAIの学習に使われるのか気になる方も多いでしょう。特に個人向けプランを業務で使う場合は、設定の状態によってチャットやコーディングセッションがモデル改善に使われる可能性があるため [...] The post Claudeのオプトアウト設定手順｜PC・スマホ別のやり方や安全に使用する方法を解説 first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Wed, 17 Jun 2026 01:42:47 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/CaudeOptingOut.png",
-      "language": "ja"
-    },
-    {
       "title": "Introducing LifeSciBench",
       "titleJa": "LifeSciBench の紹介",
       "link": "https://openai.com/index/introducing-life-sci-bench",
@@ -277,17 +255,6 @@
       "language": "en"
     },
     {
-      "title": "Exclusive eBook: How AI is becoming the next military advisor",
-      "titleJa": "独占電子書籍: AI はどのようにして次の軍事顧問になるのか",
-      "link": "https://www.technologyreview.com/2026/06/16/1138905/exclusive-ebook-how-ai-is-becoming-the-next-military-advisor/",
-      "description": "A collection of stories about how militaries are using AI models to make decisions. This subscriber-only eBook is a package of six stories that were originally published in MIT Technology Review betwe...",
-      "publishedDate": "Tue, 16 Jun 2026 20:35:02 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/1.png?w=2000",
-      "language": "en"
-    },
-    {
       "title": "LLMとRAGの違いとは？仕組みや導入のやり方・活用シーンを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/llm-rag/",
@@ -297,28 +264,6 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/llm-rag_2606-1024x576.webp",
       "language": "ja"
-    },
-    {
-      "title": "The Download: the first brain implant power user and South Korea’s AI obsession",
-      "titleJa": "ダウンロード: 初の脳インプラント能力者と韓国の AI への執着",
-      "link": "https://www.technologyreview.com/2026/06/16/1139010/the-download-brain-implant-power-user-bci-south-korea-ai-obsession/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. This man with ALS is the first “power user” of a b...",
-      "publishedDate": "Tue, 16 Jun 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2022/10/ND22_altruism_ELON_thumb.jpeg?w=1821",
-      "language": "en"
-    },
-    {
-      "title": "Want to get a data center online quickly? Give it some flex.",
-      "titleJa": "データセンターをすぐにオンラインにしたいですか?ある程度の柔軟性を与えてください。",
-      "link": "https://www.technologyreview.com/2026/06/16/1138591/data-center-online-quickly-electric-grid-flex/",
-      "description": "At the end of a tense and scoreless first half of a soccer match between the English men’s team and rival Germany, millions of Brits let out a collective sigh and did what they so often do in moments ...",
-      "publishedDate": "Tue, 16 Jun 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/26-05-27-MIT-TECH-01-Interior-1-FIN-cmyk_1.jpg?w=1425",
-      "language": "en"
     },
     {
       "title": "【GLM-5.2】Fable 5停止の翌日に緊急公開！100万トークン対応コーディングモデルを徹底解説",
@@ -420,6 +365,28 @@
       "language": "en"
     },
     {
+      "title": "Geoengineering still faces major practical challenges",
+      "titleJa": "地球工学は依然として大きな現実的な課題に直面しています",
+      "link": "https://www.technologyreview.com/2026/06/18/1139227/geoengineering-engineering-challenges/",
+      "description": "Solar geoengineering is often portrayed as a sort of emergency brake. Something along the lines of Pull in case of climate emergency to scatter light-reflecting particles to bounce sunlight out of the...",
+      "publishedDate": "Thu, 18 Jun 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/Iris-IR-1-at-altitude.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "The search for dark matter has been blown wide open",
+      "titleJa": "暗黒物質の探索は大きく開かれた",
+      "link": "https://www.technologyreview.com/2026/06/18/1138755/search-for-dark-matter-blown-wide-open/",
+      "description": "Underneath an Apennine massif, below the Jinping Mountains of Sichuan, and at the bottom of a South Dakota mine, there is a cosmic hunt afoot. Isolated deep beneath these rocky shields, massive detect...",
+      "publishedDate": "Thu, 18 Jun 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/GettyImages-184384453_FINAL.png?w=2000",
+      "language": "en"
+    },
+    {
       "title": "ハルシネーションとは？事例で学ぶ生成AIの誤回答と対策",
       "titleJa": null,
       "link": "https://weel.co.jp/media/hallucination",
@@ -440,6 +407,17 @@
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/170.png",
       "language": "ja"
+    },
+    {
+      "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+      "titleJa": "AI を使用して医師が子供に影響を与える希少な遺伝性疾患を診断できるようにする",
+      "link": "https://openai.com/index/diagnose-rare-childhood-diseases",
+      "description": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases....",
+      "publishedDate": "Thu, 18 Jun 2026 08:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "Sakana AI、初の商用プロダクトとなるビジネス向け自律型リサーチアシスタント「Sakana Marlin」提供開始",
@@ -519,25 +497,47 @@
       "language": "ja"
     },
     {
-      "title": "Fusion APIとは？複数AIモデルを組み合わせてフロンティア性能を超えるOpenRouterの新機能を徹底解説",
+      "title": "【Claude Code Artifacts】コーディング作業をライブページ化！チーム共有を変える新機能の使い方・料金・活用シーンを徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/fusion-api/",
-      "description": "2026年6月、OpenRouterから新たなAIモデルが発表されました。 今回登場した「Fusion API」は、複数のAIモデルをパネル形式で並列実行し、ジャッジモデルが各回答を統合分析することで単一モデルの限界を超 [...]...",
-      "publishedDate": "Sun, 14 Jun 2026 16:38:37 +0000",
+      "link": "https://weel.co.jp/media/tech/claude-code-artifacts/",
+      "description": "2026年6月19日、AnthropicがClaude Codeの新機能「Artifacts」を公開しました！ これまでClaude Codeでの作業結果をチームへ共有するには、ターミナルの出力をコピーしたり、スクリーン [...]...",
+      "publishedDate": "Fri, 19 Jun 2026 12:05:07 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Fusion-API-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-Artifacts_2606-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "【Gemini-SQL2】BIRDベンチマーク80%超えの衝撃！Googleの最新Text-to-SQL技術を徹底解説",
+      "title": "AI導入の調査・比較で失敗しない！自社に最適なAIツール・開発会社の選び方を徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gemini-sql2/",
-      "description": "2026年6月13日、Google Researchは自然言語からSQLクエリを自動生成するText-to-SQL技術「Gemini-SQL2」を発表しました。 BIRDベンチマークのシングルモデル部門において実行精度8 [...]...",
-      "publishedDate": "Mon, 15 Jun 2026 11:45:47 +0000",
+      "link": "https://weel.co.jp/media/ai-introduction/",
+      "description": "生成AIを導入したいけれど、ツールや開発会社が多すぎて、どれを選べばいいかわからない…と悩んでいませんか？ 実は、AIの調査・比較フェーズで失敗する企業の多くは、目的が曖昧なまま調査を始めたり、コストだけで判断してしまっ [...]...",
+      "publishedDate": "Fri, 19 Jun 2026 11:09:53 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-SQL2-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/ai-introduction_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "クラダシ「Claude」を全社展開。特有業務の自動化の推進およびAI活用ポリシーを策定",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/kuradashi-claude-ai-policy/",
+      "description": "クラダシは、生成AI「Claude」を全社展開したと発表しました。これにより、独自業務の自動化を推進します。また、AI活用に伴うリスクに対応するため「クラダシグループAI活用基本ポリシー」を策定し、公表しました。 このニ [...] The post クラダシ「Claude」を全社展開。特有業務の自動化の推進およびAI活用ポリシーを策定 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Fri, 19 Jun 2026 08:04:27 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/kuradashi-Claude-ai-policy.png",
+      "language": "ja"
+    },
+    {
+      "title": "日米欧中韓の五大特許庁、東京で五庁長官会合を開催。AI分野の新たな協力方針に合意",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ip5-heads-of-office-meeting-ai/",
+      "description": "日米欧中韓の五大特許庁は、東京で第19回日米欧中韓五大特許庁長官会合を開催し、AI分野を中心とした新たな五庁協力について合意しました。 このニュースのポイント 日米欧中韓の五大特許庁がAI分野における新たな協力の方向性で [...] The post 日米欧中韓の五大特許庁、東京で五庁長官会合を開催。AI分野の新たな協力方針に合意 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Fri, 19 Jun 2026 07:18:41 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/IP5-Heads-PPH.png",
       "language": "ja"
     },
     {
@@ -614,7 +614,7 @@
       "publishedDate": "2026-06-10T15:29:34Z",
       "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/macos-container-machine1001.jpg",
+      "thumbnail": null,
       "language": "ja"
     },
     {
