@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T03:30:57.109013",
+  "lastUpdated": "2026-06-20T02:34:12.198605",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -72,6 +72,16 @@
       "language": "en"
     },
     {
+      "title": "Opus 4.8とFable 5、性能差はどこで開くのか？",
+      "link": "https://axconstdx.com/2026/06/16/opus-4-8%e3%81%a8fable-5%e3%80%81%e6%80%a7%e8%83%bd%e5%b7%ae%e3%81%af%e3%81%a9%e3%81%93%e3%81%a7%e9%96%8b%e3%81%8f%e3%81%ae%e3%81%8b%ef%bc%9f/?utm_source=rss&utm_medium=rss&utm_campaign=opus-4-8%25e3%2581%25a8fable-5%25e3%2580%2581%25e6%2580%25a7%25e8%2583%25bd%25e5%25b7%25ae%25e3%2581%25af%25e3%2581%25a9%25e3%2581%2593%25e3%2581%25a7%25e9%2596%258b%25e3%2581%258f%25e3%2581%25ae%25e3%2581%258b%25ef%25bc%259f",
+      "description": "「点数が高いAIを選べば失敗しない」——そう信じてきた方ほど、選択の落とし穴にはまりやすい時代が来ています。上位AIが横並びになったいま、本当の実力は難しい課題でしか見えません。この記事を読めば、数字に惑わされず、現場で [...] <p>The post Opus 4.8とFable 5、性能差はどこで開くのか？ first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Tue, 16 Jun 2026 08:00:59 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp-eyecatch_1200x630_under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
       "title": "The first buildingSMART openBIM Hackathon in Porto is complete",
       "link": "https://www.buildingsmart.org/the-first-buildingsmart-openbim-hackathon-in-porto-is-complete/",
       "description": "The first buildingSMART openBIM Hackathon is complete - and it delivered more than expected. Over 50 hours, 47 participants across 9 teams worked under real pressure to build solutions that work in pr...",
@@ -128,7 +138,17 @@
       "publishedDate": "Thu, 18 Jun 2026 07:06:35 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/image-15-130x53.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/15b9637cdd7b98854da5395d7b21eb47-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "ARES CADアドイン開発で言語選びを誤ると後悔する3つの理由",
+      "link": "https://axconstdx.com/2026/06/18/ares-cad%e3%82%a2%e3%83%89%e3%82%a4%e3%83%b3%e9%96%8b%e7%99%ba%e3%81%a7%e8%a8%80%e8%aa%9e%e9%81%b8%e3%81%b3%e3%82%92%e8%aa%a4%e3%82%8b%e3%81%a8%e5%be%8c%e6%82%94%e3%81%99%e3%82%8b3%e3%81%a4%e3%81%ae/?utm_source=rss&utm_medium=rss&utm_campaign=ares-cad%25e3%2582%25a2%25e3%2583%2589%25e3%2582%25a4%25e3%2583%25b3%25e9%2596%258b%25e7%2599%25ba%25e3%2581%25a7%25e8%25a8%2580%25e8%25aa%259e%25e9%2581%25b8%25e3%2581%25b3%25e3%2582%2592%25e8%25aa%25a4%25e3%2582%258b%25e3%2581%25a8%25e5%25be%258c%25e6%2582%2594%25e3%2581%2599%25e3%2582%258b3%25e3%2581%25a4%25e3%2581%25ae",
+      "description": "「どの言語を選べばいいのか、さっぱりわからない」——ARES CADのアドイン開発を始めようとした瞬間、そう頭を抱えた経験はありませんか。言語選びを一度誤ると、開発の途中で大規模なやり直しが発生します。この記事を読めば、 [...] <p>The post ARES CADアドイン開発で言語選びを誤ると後悔する3つの理由 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Thu, 18 Jun 2026 06:09:20 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/ares_eyecatch_1200x630_100kb-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -162,6 +182,46 @@
       "language": "en"
     },
     {
+      "title": "Fable 5の価格はOpus 4.8の2倍、それでも勝つ企業の条件",
+      "link": "https://axconstdx.com/2026/06/14/fable-5%e3%81%ae%e4%be%a1%e6%a0%bc%e3%81%afopus-4-8%e3%81%ae2%e5%80%8d%e3%80%81%e3%81%9d%e3%82%8c%e3%81%a7%e3%82%82%e5%8b%9d%e3%81%a4%e4%bc%81%e6%a5%ad%e3%81%ae%e6%9d%a1%e4%bb%b6/?utm_source=rss&utm_medium=rss&utm_campaign=fable-5%25e3%2581%25ae%25e4%25be%25a1%25e6%25a0%25bc%25e3%2581%25afopus-4-8%25e3%2581%25ae2%25e5%2580%258d%25e3%2580%2581%25e3%2581%259d%25e3%2582%258c%25e3%2581%25a7%25e3%2582%2582%25e5%258b%259d%25e3%2581%25a4%25e4%25bc%2581%25e6%25a5%25ad%25e3%2581%25ae%25e6%259d%25a1%25e4%25bb%25b6",
+      "description": "「価格が高いから、うちでは使えない」——そう判断した瞬間、あなたの組織は大きな機会を手放しているかもしれません。価格の見方を変えるだけで、最強モデルは手の届く存在になります。本記事を読めば、コストの正しい測り方と、予算に [...] <p>The post Fable 5の価格はOpus 4.8の2倍、それでも勝つ企業の条件 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sun, 14 Jun 2026 13:30:27 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp-eyecatch-1200x630-under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Claude「Fable 5」停止、復旧はいつ?日本が遅れる理由",
+      "link": "https://axconstdx.com/2026/06/14/claude%e3%80%8cfable-5%e3%80%8d%e5%81%9c%e6%ad%a2%e3%80%81%e5%be%a9%e6%97%a7%e3%81%af%e3%81%84%e3%81%a4%e6%97%a5%e6%9c%ac%e3%81%8c%e9%81%85%e3%82%8c%e3%82%8b%e7%90%86%e7%94%b1/?utm_source=rss&utm_medium=rss&utm_campaign=claude%25e3%2580%258cfable-5%25e3%2580%258d%25e5%2581%259c%25e6%25ad%25a2%25e3%2580%2581%25e5%25be%25a9%25e6%2597%25a7%25e3%2581%25af%25e3%2581%2584%25e3%2581%25a4%25e6%2597%25a5%25e6%259c%25ac%25e3%2581%258c%25e9%2581%2585%25e3%2582%258c%25e3%2582%258b%25e7%2590%2586%25e7%2594%25b1",
+      "description": "使えると思っていたAIが、突然使えなくなる——そんな時代が、静かに始まっています。Claude Fable 5の停止は、AIツールの「当たり前」が一夜で覆る現実を突きつけました。この記事を読めば、何が起きたのか、いつ戻る [...] <p>The post Claude「Fable 5」停止、復旧はいつ?日本が遅れる理由 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sun, 14 Jun 2026 06:23:41 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/fable5_eyecatch_1200x630_under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Fable 5、米輸出規制で世界同時停止の衝撃",
+      "link": "https://axconstdx.com/2026/06/13/claude-fable-5%e3%80%81%e7%b1%b3%e8%bc%b8%e5%87%ba%e8%a6%8f%e5%88%b6%e3%81%a7%e4%b8%96%e7%95%8c%e5%90%8c%e6%99%82%e5%81%9c%e6%ad%a2%e3%81%ae%e8%a1%9d%e6%92%83/?utm_source=rss&utm_medium=rss&utm_campaign=claude-fable-5%25e3%2580%2581%25e7%25b1%25b3%25e8%25bc%25b8%25e5%2587%25ba%25e8%25a6%258f%25e5%2588%25b6%25e3%2581%25a7%25e4%25b8%2596%25e7%2595%258c%25e5%2590%258c%25e6%2599%2582%25e5%2581%259c%25e6%25ad%25a2%25e3%2581%25ae%25e8%25a1%259d%25e6%2592%2583",
+      "description": "ある朝、いつものAIが突然使えなくなったら、あなたはどうしますか。Claude Fable 5の世界同時停止は、決して他人事ではありません。なぜ止まり、いつ戻るのか。この記事を読めば、その理由と、今すぐ取るべき備えがはっ [...] <p>The post Claude Fable 5、米輸出規制で世界同時停止の衝撃 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sat, 13 Jun 2026 13:36:53 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630_under100kb-5-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "実は同じ—Fable 5とMythos 5、性能は同一で何が違う",
+      "link": "https://axconstdx.com/2026/06/13/%e5%ae%9f%e3%81%af%e5%90%8c%e3%81%98-fable-5%e3%81%a8mythos-5%e3%80%81%e6%80%a7%e8%83%bd%e3%81%af%e5%90%8c%e4%b8%80%e3%81%a7%e4%bd%95%e3%81%8c%e9%81%95%e3%81%86/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%25ae%259f%25e3%2581%25af%25e5%2590%258c%25e3%2581%2598-fable-5%25e3%2581%25a8mythos-5%25e3%2580%2581%25e6%2580%25a7%25e8%2583%25bd%25e3%2581%25af%25e5%2590%258c%25e4%25b8%2580%25e3%2581%25a7%25e4%25bd%2595%25e3%2581%258c%25e9%2581%2595%25e3%2581%2586",
+      "description": "Fable 5とMythos 5、名前が二つもあって戸惑っていませんか。じつはこの二つ、中身はまったく同じモデルなのです。違いはたった一つ、安全のための対策があるかどうかだけ。その理由まで知れば、最先端の力をもう迷わず、 [...] <p>The post 実は同じ—Fable 5とMythos 5、性能は同一で何が違う first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sat, 13 Jun 2026 08:13:40 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630_under100kb-4-1024x538.jpg",
+      "language": "ja"
+    },
+    {
       "title": "DfMAシンポジウムvol.2 －リア・ローディングからの脱却－_開催レポート【第1回】|GBTRCセンター長 / 芝浦工業大学教授　蟹澤 宏剛　登壇／東洋大学准教授　田澤 周平　登壇",
       "link": "https://news.build-app.jp/article/40889/",
       "description": "日本の建設産業では、施工直前まで変更を受け入れ、現場で細部を調整しながら品質を高めてきました。いわば、後工程に多くの負荷を寄せるリア・ローデ......",
@@ -169,6 +229,26 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/daad6175f16d8e986a28d1a78e925654-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "Claudeのモデル切り替えで損してない？キャッシュの落とし穴",
+      "link": "https://axconstdx.com/2026/06/16/claude%e3%81%ae%e3%83%a2%e3%83%87%e3%83%ab%e5%88%87%e3%82%8a%e6%9b%bf%e3%81%88%e3%81%a7%e6%90%8d%e3%81%97%e3%81%a6%e3%81%aa%e3%81%84%ef%bc%9f%e3%82%ad%e3%83%a3%e3%83%83%e3%82%b7%e3%83%a5%e3%81%ae/?utm_source=rss&utm_medium=rss&utm_campaign=claude%25e3%2581%25ae%25e3%2583%25a2%25e3%2583%2587%25e3%2583%25ab%25e5%2588%2587%25e3%2582%258a%25e6%259b%25bf%25e3%2581%2588%25e3%2581%25a7%25e6%2590%258d%25e3%2581%2597%25e3%2581%25a6%25e3%2581%25aa%25e3%2581%2584%25ef%25bc%259f%25e3%2582%25ad%25e3%2583%25a3%25e3%2583%2583%25e3%2582%25b7%25e3%2583%25a5%25e3%2581%25ae",
+      "description": "会話のとちゅうでAIのモデルを切り替えると、おもわぬコスト増につながることがあります。かぎを握るのがプロンプトキャッシュというしくみです。 おもい作業は高性能モデル、かるい質問は安価なモデルへ。この使い分けは合理的に見え [...] <p>The post Claudeのモデル切り替えで損してない？キャッシュの落とし穴 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Mon, 15 Jun 2026 20:53:24 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp-eyecatch_1200x630_under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "勉強を舐め、潮目に乗った経営者に、経営改革は絶対に無理な理由",
+      "link": "https://axconstdx.com/2026/06/15/%e5%8b%89%e5%bc%b7%e3%82%92%e8%88%90%e3%82%81%e3%80%81%e6%bd%ae%e7%9b%ae%e3%81%ab%e4%b9%97%e3%81%a3%e3%81%9f%e7%b5%8c%e5%96%b6%e8%80%85%e3%81%ab%e3%80%81%e7%b5%8c%e5%96%b6%e6%94%b9%e9%9d%a9%e3%81%af/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%258b%2589%25e5%25bc%25b7%25e3%2582%2592%25e8%2588%2590%25e3%2582%2581%25e3%2580%2581%25e6%25bd%25ae%25e7%259b%25ae%25e3%2581%25ab%25e4%25b9%2597%25e3%2581%25a3%25e3%2581%259f%25e7%25b5%258c%25e5%2596%25b6%25e8%2580%2585%25e3%2581%25ab%25e3%2580%2581%25e7%25b5%258c%25e5%2596%25b6%25e6%2594%25b9%25e9%259d%25a9%25e3%2581%25af",
+      "description": "「最近、勉強する気力が落ちてきた」「他社の成功事例に乗っかればいい」——そう感じた瞬間が、経営者にとって最も危険な分岐点かもしれません。学びを手放すと、改革の力は静かに、しかし確実に失われていきます。この記事では、その理 [...] <p>The post 勉強を舐め、潮目に乗った経営者に、経営改革は絶対に無理な理由 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Mon, 15 Jun 2026 05:43:23 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630_under100kb-6-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -200,6 +280,26 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "ARESカスタマイズ開発とは？設計自動化の費用と進め方を解説",
+      "link": "https://axconstdx.com/2026/06/20/ares%e3%82%ab%e3%82%b9%e3%82%bf%e3%83%9e%e3%82%a4%e3%82%ba%e9%96%8b%e7%99%ba%e3%81%a8%e3%81%af%ef%bc%9f%e8%a8%ad%e8%a8%88%e8%87%aa%e5%8b%95%e5%8c%96%e3%81%ae%e8%b2%bb%e7%94%a8%e3%81%a8%e9%80%b2/?utm_source=rss&utm_medium=rss&utm_campaign=ares%25e3%2582%25ab%25e3%2582%25b9%25e3%2582%25bf%25e3%2583%259e%25e3%2582%25a4%25e3%2582%25ba%25e9%2596%258b%25e7%2599%25ba%25e3%2581%25a8%25e3%2581%25af%25ef%25bc%259f%25e8%25a8%25ad%25e8%25a8%2588%25e8%2587%25aa%25e5%258b%2595%25e5%258c%2596%25e3%2581%25ae%25e8%25b2%25bb%25e7%2594%25a8%25e3%2581%25a8%25e9%2580%25b2",
+      "description": "毎日の作図で「この作業、自動化できないか」と感じる場面は多いはずです。ARESはDWG互換でありながら、C#やLISPによる高度な拡張に対応します。低コストで設計の効率を大きく高められる点が強みです。本記事ではARESカ [...] <p>The post ARESカスタマイズ開発とは？設計自動化の費用と進め方を解説 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Fri, 19 Jun 2026 20:29:30 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/ares_custom_development_1200x630_under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Anthropic幹部が明言、Fable 5は数日以内に再開へ",
+      "link": "https://axconstdx.com/2026/06/19/anthropic%e5%b9%b9%e9%83%a8%e3%81%8c%e6%98%8e%e8%a8%80%e3%80%81fable-5%e3%81%af%e6%95%b0%e6%97%a5%e4%bb%a5%e5%86%85%e3%81%ab%e5%86%8d%e9%96%8b%e3%81%b8/?utm_source=rss&utm_medium=rss&utm_campaign=anthropic%25e5%25b9%25b9%25e9%2583%25a8%25e3%2581%258c%25e6%2598%258e%25e8%25a8%2580%25e3%2580%2581fable-5%25e3%2581%25af%25e6%2595%25b0%25e6%2597%25a5%25e4%25bb%25a5%25e5%2586%2585%25e3%2581%25ab%25e5%2586%258d%25e9%2596%258b%25e3%2581%25b8",
+      "description": "突然の利用停止に、戸惑った方も多いはずです。実は幹部自身が再開の見通しを語っていました。止まった理由と再開の条件を知れば、不安が安心に変わります。 はじめに 米国の規制によって、AnthropicのFable 5とMyt [...] <p>The post Anthropic幹部が明言、Fable 5は数日以内に再開へ first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Fri, 19 Jun 2026 04:10:57 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630_under100kb-7-1024x538.jpg",
+      "language": "ja"
     }
   ]
 }
