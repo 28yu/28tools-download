@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T02:34:12.198605",
+  "lastUpdated": "2026-06-21T02:49:39.920774",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -202,6 +202,16 @@
       "language": "ja"
     },
     {
+      "title": "「言葉で穴を開けて」Fusion MCPがCAD設計を変える日",
+      "link": "https://axconstdx.com/2026/06/21/%e3%80%8c%e8%a8%80%e8%91%89%e3%81%a7%e7%a9%b4%e3%82%92%e9%96%8b%e3%81%91%e3%81%a6%e3%80%8dfusion-mcp%e3%81%8ccad%e8%a8%ad%e8%a8%88%e3%82%92%e5%a4%89%e3%81%88%e3%82%8b%e6%97%a5/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2580%258c%25e8%25a8%2580%25e8%2591%2589%25e3%2581%25a7%25e7%25a9%25b4%25e3%2582%2592%25e9%2596%258b%25e3%2581%2591%25e3%2581%25a6%25e3%2580%258dfusion-mcp%25e3%2581%258ccad%25e8%25a8%25ad%25e8%25a8%2588%25e3%2582%2592%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b%25e6%2597%25a5",
+      "description": "マウス操作に時間を奪われ、頭の中の理想と手の中の図面がずれていく。そんな経験はありませんか。Claude×Fusion MCPは、言葉で語るだけで設計が形になる、新しい働き方への第一歩です。 はじめに CADを言葉で動か [...] <p>The post 「言葉で穴を開けて」Fusion MCPがCAD設計を変える日 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sat, 20 Jun 2026 23:30:50 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630_under100kb-8-1024x538.jpg",
+      "language": "ja"
+    },
+    {
       "title": "Claude Fable 5、米輸出規制で世界同時停止の衝撃",
       "link": "https://axconstdx.com/2026/06/13/claude-fable-5%e3%80%81%e7%b1%b3%e8%bc%b8%e5%87%ba%e8%a6%8f%e5%88%b6%e3%81%a7%e4%b8%96%e7%95%8c%e5%90%8c%e6%99%82%e5%81%9c%e6%ad%a2%e3%81%ae%e8%a1%9d%e6%92%83/?utm_source=rss&utm_medium=rss&utm_campaign=claude-fable-5%25e3%2580%2581%25e7%25b1%25b3%25e8%25bc%25b8%25e5%2587%25ba%25e8%25a6%258f%25e5%2588%25b6%25e3%2581%25a7%25e4%25b8%2596%25e7%2595%258c%25e5%2590%258c%25e6%2599%2582%25e5%2581%259c%25e6%25ad%25a2%25e3%2581%25ae%25e8%25a1%259d%25e6%2592%2583",
       "description": "ある朝、いつものAIが突然使えなくなったら、あなたはどうしますか。Claude Fable 5の世界同時停止は、決して他人事ではありません。なぜ止まり、いつ戻るのか。この記事を読めば、その理由と、今すぐ取るべき備えがはっ [...] <p>The post Claude Fable 5、米輸出規制で世界同時停止の衝撃 first appeared on 生成AIと建設DX.</p>...",
@@ -209,16 +219,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630_under100kb-5-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "実は同じ—Fable 5とMythos 5、性能は同一で何が違う",
-      "link": "https://axconstdx.com/2026/06/13/%e5%ae%9f%e3%81%af%e5%90%8c%e3%81%98-fable-5%e3%81%a8mythos-5%e3%80%81%e6%80%a7%e8%83%bd%e3%81%af%e5%90%8c%e4%b8%80%e3%81%a7%e4%bd%95%e3%81%8c%e9%81%95%e3%81%86/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%25ae%259f%25e3%2581%25af%25e5%2590%258c%25e3%2581%2598-fable-5%25e3%2581%25a8mythos-5%25e3%2580%2581%25e6%2580%25a7%25e8%2583%25bd%25e3%2581%25af%25e5%2590%258c%25e4%25b8%2580%25e3%2581%25a7%25e4%25bd%2595%25e3%2581%258c%25e9%2581%2595%25e3%2581%2586",
-      "description": "Fable 5とMythos 5、名前が二つもあって戸惑っていませんか。じつはこの二つ、中身はまったく同じモデルなのです。違いはたった一つ、安全のための対策があるかどうかだけ。その理由まで知れば、最先端の力をもう迷わず、 [...] <p>The post 実は同じ—Fable 5とMythos 5、性能は同一で何が違う first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sat, 13 Jun 2026 08:13:40 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630_under100kb-4-1024x538.jpg",
       "language": "ja"
     },
     {
