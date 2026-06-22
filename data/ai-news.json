@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T06:03:20.449273",
+  "lastUpdated": "2026-06-22T06:30:55.312065",
   "articles": [
     {
       "title": "We’re announcing new community investments in Missouri.",
@@ -55,28 +55,6 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AMIE_Mx_Nature_Social_Visual_Va.max-600x600.format-webp.webp",
       "language": "en"
-    },
-    {
-      "title": "AI受託開発とは？おすすめ会社10選や費用相場・導入の流れを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/ai-contract-development/",
-      "description": "AIを活用して業務を効率化したいものの、「自社にノウハウがない」「何から始めればいいかわからない」と悩む企業担当者は少なくありません。実際、帝国データバンクが2026年3月に1万312社を対象に実施した調査でも、AI導入 [...]...",
-      "publishedDate": "Wed, 17 Jun 2026 13:20:58 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-contract-development_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Sakana Marlinとは？Sakana AIのVirtual CSOが数週間のリサーチを数時間で完遂する仕組みを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/sakana-marlin/",
-      "description": "2026年6月、Sakana AIから新たな自律型リサーチエージェントが発表されました。 今回登場した「Sakana Marlin」は、CSO（最高戦略責任者）とそのチームが数週間を費やすような本格的な戦略リサーチを引き [...]...",
-      "publishedDate": "Wed, 17 Jun 2026 12:20:29 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Sakana-Marlin_2606-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "The Download: a reality check for geoengineering and the science of interoception",
@@ -145,28 +123,6 @@
       "language": "en"
     },
     {
-      "title": "Grok APIとは？料金・モデル・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/grok-api/",
-      "description": "「Grok APIとは何ができるのか」「料金はいくらかかるのか」「どうやって始めればいいのか」 自社のアプリやシステムに生成AIを組み込もうとすると、まずこの3つが気になるのではないでしょうか。Grok APIは、イーロ [...] The post Grok APIとは？料金・モデル・使い方を徹底解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 17 Jun 2026 06:42:07 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/grok-api_ic.webp",
-      "language": "ja"
-    },
-    {
-      "title": "イレブンラボ、十印の企業向け多言語吹き替えサービスにAI音声技術を提供開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/elevenlabs-toin-ai-audio-dubbing/",
-      "description": "イレブンラボは企業向け翻訳サービスの十印と業務提携し、十印が展開する多言語吹き替え支援サービスに、AI音声技術の提供を開始しました。 このニュースのポイント イレブンラボと企業向け翻訳提供の十印が、多言語吹き替え支援サー [...] The post イレブンラボ、十印の企業向け多言語吹き替えサービスにAI音声技術を提供開始 first appeared on AIポータルメディアAIsmiley...",
-      "publishedDate": "Wed, 17 Jun 2026 06:31:12 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/elevenlabseye.png",
-      "language": "ja"
-    },
-    {
       "title": "Introducing LifeSciBench",
       "titleJa": "LifeSciBench の紹介",
       "link": "https://openai.com/index/introducing-life-sci-bench",
@@ -194,17 +150,6 @@
       "link": "https://openai.com/index/openai-on-oracle-cloud",
       "description": "Access OpenAI models and Codex through Oracle Cloud, using existing commitments to build and deploy AI with enterprise security and governance....",
       "publishedDate": "Wed, 10 Jun 2026 20:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "PRC-linked influence operations are targeting AI debates in the US",
-      "titleJa": "中国関連の影響力作戦が米国のAI議論を標的にしている",
-      "link": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
-      "description": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT....",
-      "publishedDate": "Wed, 10 Jun 2026 12:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -253,28 +198,6 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_Mode_US.max-600x600.format-webp.webp",
       "language": "en"
-    },
-    {
-      "title": "LLMとRAGの違いとは？仕組みや導入のやり方・活用シーンを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/llm-rag/",
-      "description": "LLMとRAGはどちらも生成AIを活用する上で頻繁に耳にする言葉ですが、役割は同じではありません。LLMは文章生成や要約を担うモデルで、RAGは社内文書などを検索して回答に反映する仕組みです。 生成AIベースの会話アシス [...]...",
-      "publishedDate": "Tue, 16 Jun 2026 13:56:56 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/llm-rag_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【GLM-5.2】Fable 5停止の翌日に緊急公開！100万トークン対応コーディングモデルを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/glm-5-2/",
-      "description": "2026年6月13日、中国のAI企業Z.aiが、100万トークンのコンテキストに対応するコーディング特化のフラッグシップモデル「GLM-5.2」を発表しました！ 2026年6月16日時点で公式Xの投稿には8,200件以上 [...]...",
-      "publishedDate": "Tue, 16 Jun 2026 03:51:29 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GLM-5.2-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "Predicting model behavior before release by simulating deployment",
@@ -497,6 +420,83 @@
       "language": "ja"
     },
     {
+      "title": "Beyond LoRA: Can you beat the most popular fine-tuning technique?",
+      "titleJa": "LoRA を超えて: 最も人気のある微調整テクニックに勝つことができますか?",
+      "link": "https://huggingface.co/blog/peft-beyond-lora",
+      "description": "...",
+      "publishedDate": "Thu, 18 Jun 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/peft-beyond-lora/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "動画の文字起こしを自動化できるAIツール12選！活用シーンや選び方、注意点もわかりやすく紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/video-transcription/",
+      "description": "動画に字幕を手軽に付けたい、ウェビナーや社内会議をテキスト化して社内共有したいなど、動画の文字起こしニーズが急速に高まっています。生成AIの進化によって、従来の手作業とは比較にならないほど短時間かつ高精度に、しかも無料か [...]...",
+      "publishedDate": "Sun, 21 Jun 2026 15:32:43 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/video-transcription_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTの会話履歴とは？履歴検索や保存方法、他人にバレないようにする方法を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/chatgpt-conversation-history/",
+      "description": "ChatGPTでは、過去の会話履歴を自動保存できるだけでなく、キーワード検索で以前のチャットを探すことも可能です。「昔の会話をもう一度見たい」「過去の回答を検索したい」と感じたことがある方も多いのではないでしょうか。 こ [...]...",
+      "publishedDate": "Sun, 21 Jun 2026 14:58:37 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-conversation-history_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIツールおすすめ28選！種類・料金・目的別の選び方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/gen-ai-service/",
+      "description": "業務効率化のために生成AIツールを調べても、候補が多すぎてどれを選べばいいかわからず、ツール選びに迷う担当者は多いです。文章・画像・動画・音声・コード・音楽生成・リサーチなどのカテゴリでツールが続々と登場しており、無料プ [...]...",
+      "publishedDate": "Sun, 21 Jun 2026 13:48:34 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/gen-ai-service_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AI OCRとは？情報システム部門が知るべき導入メリットとおすすめツールを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/generation-ai-ocr",
+      "description": "請求書、注文書、契約書、申込書など、企業には紙やPDFで届く文書が今も多く残っています。情報システム部門では、入力作業の削減だけでなく、既存システムとの連携、セキュリティ、運用定着まで考えた文書処理の仕組みづくりが求めら [...]...",
+      "publishedDate": "Mon, 22 Jun 2026 03:31:19 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/generation-ai-ocr_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "WEB雑誌「ビジネスAI活用スキル習得ガイド」～AIを「ツール」から「戦力」へ。業務効率化につながる人材育成のポイントをご紹介！～",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/aiskillswebmagazine/",
+      "description": "AIポータルメディア「AIsmiley」は、この度、AI導入推進の一環として、“教育・AI人材育成”のユースケースやサービスの特長をまとめた「ビジネスAI活用スキル習得ガイド」をリリースしました。 本資料では、教育・AI [...] The post WEB雑誌「ビジネスAI活用スキル習得ガイド」～AIを「ツール」から「戦力」へ。業務効率化につながる人材育成のポイントをご紹介！～ first ap...",
+      "publishedDate": "Mon, 22 Jun 2026 03:00:32 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/1099_1200x628.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "トークンとは？生成AI・暗号資産・セキュリティ上の意味を図解付きで解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-token/",
+      "description": "「トークンとは何だろう」と検索しても、説明がバラバラで戸惑った経験はないでしょうか。 「トークン」は、使われる分野によって意味が大きく変わる言葉です。生成AIのトークンとは何か、暗号資産（仮想通貨）のトークンとどう違うの [...] The post トークンとは？生成AI・暗号資産・セキュリティ上の意味を図解付きで解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 22 Jun 2026 02:39:02 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/what-is-token_ic.webp",
+      "language": "ja"
+    },
+    {
       "title": "【Claude Code Artifacts】コーディング作業をライブページ化！チーム共有を変える新機能の使い方・料金・活用シーンを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/claude-code-artifacts/",
@@ -549,6 +549,28 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-code-openclaw_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AWS、コードだけでなくインフラ構成とビジネスコンテキストも理解した上で脆弱性を推論する「AWS Contiuum」発表。特定のAIモデルに依存せず",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/awsaws_contiuumai.html",
+      "description": "Amazon Web Services（AWS）は、コードをスキャンするだけでなく、インフラ構成やアクセス許可、ネットワークトポロジーそしてビジネス上の優先事項やドキュメントなどの非構造化データなどをコンテキストとして活用し、システムの脆弱......",
+      "publishedDate": "2026-06-21T15:26:18Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/awscontinuum-code-pv01.png",
+      "language": "ja"
+    },
+    {
+      "title": "AWS、AIエージェントがリポジトリを自動スキャンして技術的負債を指摘してくれる「AWS Transform – continuous modernization」プレビュー公開",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/awsaiaws_transform_continuous_modernization.html",
+      "description": "Amazon Web Services（AWS）は、AIエージェントがコードリポジトリを継続的に自動スキャンし、サポートが終了したライブラリやフレームワークなどを始めとする技術的負債を検出し、優先順位をつけて報告あるいは修正のためのプルリク......",
+      "publishedDate": "2026-06-21T15:24:42Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/awsgtransform-continuousmodernization-pv01.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/mxc-build2026-01.png",
-      "language": "ja"
-    },
-    {
-      "title": "［速報］Windows上でLinuxコンテナの作成や実行ができる「WSL containers」発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/windowslinuxwsl_containers.html",
-      "description": "マイクロソフトは、日本時間6月3日未明に開幕した年次イベント「Microsoft Build 2026」で、Windows上でLinuxコンテナの作成や実行、操作などを実現するWSL（Windows Subsystem for Linux）......",
-      "publishedDate": "2026-06-02T17:27:08Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/wslcontainers-build2026.png",
-      "language": "ja"
-    },
-    {
-      "title": "［速報］マイクロソフト、UNIX系コマンドをWindowsに移植「Coreutils for Windows」一般公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/unixwindowscoreutils_for_window.html",
-      "description": "マイクロソフトは、日本時間6月3日未明に開幕した年次イベント「Microsoft Build 2026」で、UNIX系の基本的なコマンド群をWindowsに移植した「Coreutils for Windows」の一般公開を発表しました。 C......",
-      "publishedDate": "2026-06-02T16:58:57Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/coreutils4windows-build2026.png",
       "language": "ja"
     }
   ]
