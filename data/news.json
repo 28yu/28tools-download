@@ -1,76 +1,6 @@
 {
-  "lastUpdated": "2026-06-21T02:49:39.920774",
+  "lastUpdated": "2026-06-22T02:54:30.077505",
   "articles": [
-    {
-      "title": "buildingSMART International announces that Céline Bent has left the organisation",
-      "link": "https://www.buildingsmart.org/buildingsmart-international-announces-that-celine-bent-has-left-the-organisation/",
-      "description": "London, U.K. – January 28th, 2026 — buildingSMART International (bSI) announces that Céline Bent has left the organisation. bSI commented that “it is with our regrets to announce that Céline has... Th...",
-      "publishedDate": "Wed, 28 Jan 2026 10:40:44 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "【2026年版】建設ニュースのおすすめ情報源8選｜最新ニュース・事故情報・法改正を効率よく追う方法",
-      "link": "https://news.build-app.jp/article/41050/",
-      "description": "「建設ニュースをチェックしたいけれど、媒体が多すぎて何を見ればよいかわからない」「法改正や事故情報を見逃したくない」と悩んでいないでしょうか......",
-      "publishedDate": "Wed, 17 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/46845d903e39d555893bcd85874275f2-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "【独自調査】BIM確認申請、理解層は8割超が支持、非認知層はほぼ支持せず",
-      "link": "https://news.build-app.jp/article/41023/",
-      "description": "野原グループのBuildApp総合研究所(所在：東京都新宿 区、代表：山梶真司)は、BIM確認申請（BIM図面審査）に対して全国の建設従事者......",
-      "publishedDate": "Wed, 17 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/XLm1qqr0TZRICT41677691748_1677691764-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大林組、「高車管理」「高車キーレスシステム」の全社標準利用を決定",
-      "link": "https://news.build-app.jp/article/40956/",
-      "description": "概要 朝日興産（社長：吉田智憲）は、主要顧客である大林組（代表取締役社長兼CEO：佐藤俊美）が、当社の建設現場施工管理サービス 位置プラス®......",
-      "publishedDate": "Tue, 16 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/08/MicrosoftTeams-image-203-130x87.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "WBGT（暑さ指数）の見方を解説｜値・予報の確認方法を分かりやすく【現場の暑さ対策】",
-      "link": "https://news.build-app.jp/article/40968/",
-      "description": "WBGTとは「暑さ指数」をあらわす値で、現場の暑さ対策に必要不可欠なデータです。環境省のサイトやアプリから、誰でも簡単に確認できます。 この......",
-      "publishedDate": "Tue, 16 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/a518e9928c0fc92eceaf4de29b6366bc-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "住民説明会はなぜ、炎上するのか？｜建築紛争の構造的必然を解剖する",
-      "link": "https://news.build-app.jp/article/40637/",
-      "description": "とあるビル建設の住民説明会──。始まる前から、結末はほぼ決まっている。 資料は分厚い。スクリーンには図面が映し出される。事業者の担当者は「法......",
-      "publishedDate": "Tue, 16 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/20260617-2_hiramaya-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Christina Hvid Steps Down from buildingSMART International Board of Directors",
-      "link": "https://www.buildingsmart.org/christina-hvid-resigned-from-the-board/",
-      "description": "London, U.K. – June 9th, 2026 — buildingSMART International (bSI) announces that Christina Hvid resigned from the Board of Directors on 9 June 2026. We extend our sincere thanks to Christina... The po...",
-      "publishedDate": "Tue, 16 Jun 2026 09:56:56 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
     {
       "title": "Opus 4.8とFable 5、性能差はどこで開くのか？",
       "link": "https://axconstdx.com/2026/06/16/opus-4-8%e3%81%a8fable-5%e3%80%81%e6%80%a7%e8%83%bd%e5%b7%ae%e3%81%af%e3%81%a9%e3%81%93%e3%81%a7%e9%96%8b%e3%81%8f%e3%81%ae%e3%81%8b%ef%bc%9f/?utm_source=rss&utm_medium=rss&utm_campaign=opus-4-8%25e3%2581%25a8fable-5%25e3%2580%2581%25e6%2580%25a7%25e8%2583%25bd%25e5%25b7%25ae%25e3%2581%25af%25e3%2581%25a9%25e3%2581%2593%25e3%2581%25a7%25e9%2596%258b%25e3%2581%258f%25e3%2581%25ae%25e3%2581%258b%25ef%25bc%259f",
@@ -82,66 +12,6 @@
       "language": "ja"
     },
     {
-      "title": "The first buildingSMART openBIM Hackathon in Porto is complete",
-      "link": "https://www.buildingsmart.org/the-first-buildingsmart-openbim-hackathon-in-porto-is-complete/",
-      "description": "The first buildingSMART openBIM Hackathon is complete - and it delivered more than expected. Over 50 hours, 47 participants across 9 teams worked under real pressure to build solutions that work in pr...",
-      "publishedDate": "Tue, 14 Apr 2026 15:05:06 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "buildingSMART International Appoints Aidan Mercer as Managing Director",
-      "link": "https://www.buildingsmart.org/buildingsmart-international-appoints-aidan-mercer-as-managing-director/",
-      "description": "London, U.K. – April 30th, 2026 — The Board of buildingSMART International (bSI) is pleased to announce the appointment of Aidan Mercer as Managing Director (MD), effective 1 May 2026.... The post bui...",
-      "publishedDate": "Thu, 30 Apr 2026 09:56:12 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "DfMAシンポジウムvol.2 －リア・ローディングからの脱却－_開催レポート【第2回】|株式会社安藤・間建築事業本部 BIM推進部 施工BIMグループ 岩倉巧、長田開気",
-      "link": "https://news.build-app.jp/article/40994/",
-      "description": "人手不足や時間外労働規制を背景に、日本の建設産業では、現場に負荷が集中する従来のリア・ローディング型のプロセスからの転換が求められています。......",
-      "publishedDate": "Thu, 18 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/66a4ecf73eee35f8773ab7559be2c814-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "ecoroと清水建設、次世代物流インフラ「自動物流道路」の社会実装に向け共同実証を実施",
-      "link": "https://news.build-app.jp/article/41026/",
-      "description": "ecoro株式会社（本社：神奈川県横浜市／代表取締役：西平美侑、以下「ecoro」）および清水建設株式会社（本社：東京都中央区／代表取締役社......",
-      "publishedDate": "Thu, 18 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/03/AdobeStock_484106480-130x87.jpeg",
-      "language": "ja"
-    },
-    {
-      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第五回)｜深堀り取材【毎月3回更新】",
-      "link": "https://news.build-app.jp/article/40943/",
-      "description": "ACIMUS(千代田区:代表取締役CEO菊池光貴)では、生成AIと対話することによってBIMモデルを作成できるChatBIM「ACIMUS（......",
-      "publishedDate": "Thu, 18 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/ec6eb7a4151400edbc77a8d3705ec294-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "みなとみらいの新ランドマーク｜横浜コネクトスクエア、横浜シンフォステージ",
-      "link": "https://news.build-app.jp/article/41080/",
-      "description": "トレンドワード：横浜コネクトスクエア、横浜シンフォステージ 横浜・みなとみらいエリアでは、近年も大規模な再開発が続いています。その中でも注目......",
-      "publishedDate": "Thu, 18 Jun 2026 07:06:35 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/15b9637cdd7b98854da5395d7b21eb47-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "ARES CADアドイン開発で言語選びを誤ると後悔する3つの理由",
       "link": "https://axconstdx.com/2026/06/18/ares-cad%e3%82%a2%e3%83%89%e3%82%a4%e3%83%b3%e9%96%8b%e7%99%ba%e3%81%a7%e8%a8%80%e8%aa%9e%e9%81%b8%e3%81%b3%e3%82%92%e8%aa%a4%e3%82%8b%e3%81%a8%e5%be%8c%e6%82%94%e3%81%99%e3%82%8b3%e3%81%a4%e3%81%ae/?utm_source=rss&utm_medium=rss&utm_campaign=ares-cad%25e3%2582%25a2%25e3%2583%2589%25e3%2582%25a4%25e3%2583%25b3%25e9%2596%258b%25e7%2599%25ba%25e3%2581%25a7%25e8%25a8%2580%25e8%25aa%259e%25e9%2581%25b8%25e3%2581%25b3%25e3%2582%2592%25e8%25aa%25a4%25e3%2582%258b%25e3%2581%25a8%25e5%25be%258c%25e6%2582%2594%25e3%2581%2599%25e3%2582%258b3%25e3%2581%25a4%25e3%2581%25ae",
       "description": "「どの言語を選べばいいのか、さっぱりわからない」——ARES CADのアドイン開発を始めようとした瞬間、そう頭を抱えた経験はありませんか。言語選びを一度誤ると、開発の途中で大規模なやり直しが発生します。この記事を読めば、 [...] <p>The post ARES CADアドイン開発で言語選びを誤ると後悔する3つの理由 first appeared on 生成AIと建設DX.</p>...",
@@ -150,36 +20,6 @@
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/ares_eyecatch_1200x630_100kb-1024x538.jpg",
       "language": "ja"
-    },
-    {
-      "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
-      "link": "https://www.buildingsmart.org/industry-insights-embracing-challenges-and-opportunities-of-using-openbim-for-increasing-efficiency-in-the-construction-process/",
-      "description": "Read about Construction Industry leaders perspective on embracing challenges and opportunities of using openBIM for increasing efficiency: Link The post Industry Insights “Embracing Challenges and Opp...",
-      "publishedDate": "Thu, 16 Apr 2026 12:30:14 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "We are looking for feedback on your experience with IDS",
-      "link": "https://www.buildingsmart.org/we-are-looking-for-feedback-on-your-experience-with-ids/",
-      "description": "Information Delivery Specification (IDS) marks its second anniversary this June, and we want to hear from the community - especially IDS users and implementers. Share your feedback on what works... Th...",
-      "publishedDate": "Thu, 14 May 2026 10:13:46 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The buildingSMART Implementers Assembly, February 2026 Event Report",
-      "link": "https://www.buildingsmart.org/the-buildingsmart-implementers-assembly-february-2026-event-report/",
-      "description": "The latest buildingSMART Implementers Assembly, hosted by Bentley in their Exton (PA) office, brought together the buildingSMART implementers community for two days of focused discussion and practical...",
-      "publishedDate": "Thu, 09 Apr 2026 11:11:07 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "Fable 5の価格はOpus 4.8の2倍、それでも勝つ企業の条件",
@@ -222,16 +62,6 @@
       "language": "ja"
     },
     {
-      "title": "DfMAシンポジウムvol.2 －リア・ローディングからの脱却－_開催レポート【第1回】|GBTRCセンター長 / 芝浦工業大学教授　蟹澤 宏剛　登壇／東洋大学准教授　田澤 周平　登壇",
-      "link": "https://news.build-app.jp/article/40889/",
-      "description": "日本の建設産業では、施工直前まで変更を受け入れ、現場で細部を調整しながら品質を高めてきました。いわば、後工程に多くの負荷を寄せるリア・ローデ......",
-      "publishedDate": "Mon, 15 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/daad6175f16d8e986a28d1a78e925654-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "Claudeのモデル切り替えで損してない？キャッシュの落とし穴",
       "link": "https://axconstdx.com/2026/06/16/claude%e3%81%ae%e3%83%a2%e3%83%87%e3%83%ab%e5%88%87%e3%82%8a%e6%9b%bf%e3%81%88%e3%81%a7%e6%90%8d%e3%81%97%e3%81%a6%e3%81%aa%e3%81%84%ef%bc%9f%e3%82%ad%e3%83%a3%e3%83%83%e3%82%b7%e3%83%a5%e3%81%ae/?utm_source=rss&utm_medium=rss&utm_campaign=claude%25e3%2581%25ae%25e3%2583%25a2%25e3%2583%2587%25e3%2583%25ab%25e5%2588%2587%25e3%2582%258a%25e6%259b%25bf%25e3%2581%2588%25e3%2581%25a7%25e6%2590%258d%25e3%2581%2597%25e3%2581%25a6%25e3%2581%25aa%25e3%2581%2584%25ef%25bc%259f%25e3%2582%25ad%25e3%2583%25a3%25e3%2583%2583%25e3%2582%25b7%25e3%2583%25a5%25e3%2581%25ae",
       "description": "会話のとちゅうでAIのモデルを切り替えると、おもわぬコスト増につながることがあります。かぎを握るのがプロンプトキャッシュというしくみです。 おもい作業は高性能モデル、かるい質問は安価なモデルへ。この使い分けは合理的に見え [...] <p>The post Claudeのモデル切り替えで損してない？キャッシュの落とし穴 first appeared on 生成AIと建設DX.</p>...",
@@ -250,36 +80,6 @@
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630_under100kb-6-1024x538.jpg",
       "language": "ja"
-    },
-    {
-      "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
-      "link": "https://www.buildingsmart.org/buildingsmart-brazil-has-been-formally-approved-as-a-full-chapter/",
-      "description": "London, U.K. – March 27th, 2026 — buildingSMART International (bSI) is pleased to announce that buildingSMART Brazil has been formally approved by the Board to become a Full Chapter, effective March.....",
-      "publishedDate": "Fri, 27 Mar 2026 10:19:53 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Alfred Waschl Steps Down from buildingSMART International Board of Directors",
-      "link": "https://www.buildingsmart.org/alfred-waschl-resigned-from-the-board/",
-      "description": "London, U.K. – February 27th, 2026 — buildingSMART International (bSI) announces that Alfred Waschl resigned from the Board of Directors on 29 January 2026. Due to ill health, Alfred previously steppe...",
-      "publishedDate": "Fri, 27 Feb 2026 09:21:11 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Key Outcomes from the Domain Leadership Conference in Zurich",
-      "link": "https://www.buildingsmart.org/key-outcomes-from-the-domain-leadership-conference-in-zurich/",
-      "description": "The recent Domain Leadership Conference held in Zurich on 4 &#38; 5 February marked an important moment for buildingSMART International. bSI Domains are membership-led, pro bono programmes representin...",
-      "publishedDate": "Fri, 20 Mar 2026 10:06:51 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "ARESカスタマイズ開発とは？設計自動化の費用と進め方を解説",
