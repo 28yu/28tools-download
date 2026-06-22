@@ -5970,6 +5970,26 @@ translations.filledRegion = {
             en: '📥 Save all pages as PDF',
             zh: '📥 保存全部页面为PDF'
         },
+        'pdf-compare-quality': {
+            ja: '保存画質',
+            en: 'Export quality',
+            zh: '导出画质'
+        },
+        'pdf-compare-quality-standard': {
+            ja: '標準 (216dpi)',
+            en: 'Standard (216dpi)',
+            zh: '标准 (216dpi)'
+        },
+        'pdf-compare-quality-high': {
+            ja: '高画質 (300dpi)',
+            en: 'High (300dpi)',
+            zh: '高画质 (300dpi)'
+        },
+        'pdf-compare-quality-max': {
+            ja: '最高画質 (600dpi)',
+            en: 'Maximum (600dpi)',
+            zh: '最高画质 (600dpi)'
+        },
         'pdf-compare-status-select': {
             ja: 'PDFを2つ選択してください',
             en: 'Please select two PDFs',
