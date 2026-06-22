@@ -71,6 +71,11 @@
   .ctrl-label { font-size: 12px; color: #777; }
 
   input[type=range] { width: 110px; accent-color: #1a1a1a; }
+  select#quality {
+    padding: 5px 8px; font-size: 13px;
+    border: 1px solid #ddd; border-radius: 6px;
+    background: #fff; color: #1a1a1a; cursor: pointer;
+  }
   input[type=number] {
     width: 52px; padding: 4px 8px; font-size: 13px;
     border: 1px solid #ddd; border-radius: 6px;
@@ -237,6 +242,14 @@
       <input type="range" id="opacity" min="20" max="100" value="65" step="1">
       <span class="val-display" id="opacityVal">65%</span>
     </div>
+    <div class="ctrl-group">
+      <span class="ctrl-label" data-lang-key="pdf-compare-quality">保存画質</span>
+      <select id="quality">
+        <option value="216" data-lang-key="pdf-compare-quality-standard">標準 (216dpi)</option>
+        <option value="300" selected data-lang-key="pdf-compare-quality-high">高画質 (300dpi)</option>
+        <option value="600" data-lang-key="pdf-compare-quality-max">最高画質 (600dpi)</option>
+      </select>
+    </div>
     <div class="ctrl-buttons">
       <button id="compareBtn" class="btn-compare" onclick="runCompareAll()" disabled data-lang-key="pdf-compare-run">比較実行</button>
       <button id="downloadBtn" class="btn-download" onclick="downloadAllPages()" style="display:none" data-lang-key="pdf-compare-download">📥 全ページPDF保存</button>
@@ -370,6 +383,7 @@ const pdfI18n = {
     allDone: '全 {0} ページの比較完了 — ページボタンで切り替えできます',
     pdfExporting: '{0} / {1} ページをPDF化中...',
     pdfExportProgress: '{0} / {1} ページPDF化中',
+    pdfExportTile: '{0} / {1} ページ（タイル {2}/{3}）を高画質化中...',
     pdfExportDone: '全 {0} ページのダウンロード完了',
     done: '完了',
     pxDiff: '{0} px 差分',
@@ -392,6 +406,7 @@ const pdfI18n = {
     allDone: 'All {0} pages compared — use page buttons to navigate',
     pdfExporting: 'Exporting page {0} / {1} to PDF...',
     pdfExportProgress: 'Exporting {0} / {1}',
+    pdfExportTile: 'Rendering page {0} / {1} (tile {2}/{3}) at high resolution...',
     pdfExportDone: 'All {0} pages downloaded',
     done: 'Done',
     pxDiff: '{0} px diff',
@@ -414,6 +429,7 @@ const pdfI18n = {
     allDone: '全部 {0} 页比较完成 — 使用页面按钮切换',
     pdfExporting: '正在导出第 {0} / {1} 页为PDF...',
     pdfExportProgress: '导出中 {0} / {1}',
+    pdfExportTile: '正在高画质处理第 {0} / {1} 页（图块 {2}/{3}）...',
     pdfExportDone: '全部 {0} 页下载完成',
     done: '完成',
     pxDiff: '{0} px 差异',
@@ -521,6 +537,105 @@ async function buildDiffCanvas(pageNum, scale, opacity, bgThresh) {
   ctx.fillStyle = '#ffffff';
   ctx.fillRect(0, 0, w, h);
   ctx.putImageData(outImg, 0, 0);
+  return { canvas: out, diffCount, total };
+}
+
+// ---- 高画質ダウンロード用：タイル分割で差分キャンバスを構築 ----
+// 1ページを TILE×TILE のブロックに分けて描画・分類・合成する。
+// これによりブラウザのキャンバス上限／メモリ上限を回避し、
+// 大判図面でも 300〜600dpi の高解像度出力ができる。
+// 4分類の配色ロジックは buildDiffCanvas と完全に同一。
+async function buildDiffCanvasTiled(pageNum, scale, opacity, bgThresh, onTile) {
+  const diffThresh = 20;
+  const TILE = 2048;
+
+  const page1 = await pdf1.getPage(pageNum);
+  const page2 = await pdf2.getPage(pageNum);
+  const vp1 = page1.getViewport({ scale });
+  const vp2 = page2.getViewport({ scale });
+  const w = Math.max(Math.round(vp1.width),  Math.round(vp2.width));
+  const h = Math.max(Math.round(vp1.height), Math.round(vp2.height));
+
+  const out = document.createElement('canvas');
+  out.width = w; out.height = h;
+  const octx = out.getContext('2d');
+  octx.fillStyle = '#ffffff';
+  octx.fillRect(0, 0, w, h);
+
+  const alpha = Math.round(255 * opacity);
+  const total = w * h;
+  let diffCount = 0;
+
+  // タイル用の再利用キャンバス
+  const t1 = document.createElement('canvas');
+  const t2 = document.createElement('canvas');
+  const tctx1 = t1.getContext('2d');
+  const tctx2 = t2.getContext('2d');
+
+  const cols = Math.ceil(w / TILE);
+  const rows = Math.ceil(h / TILE);
+  const tileTotal = cols * rows;
+  let tileIndex = 0;
+
+  for (let ty = 0; ty < rows; ty++) {
+    for (let tx = 0; tx < cols; tx++) {
+      const ox = tx * TILE, oy = ty * TILE;
+      const tw = Math.min(TILE, w - ox);
+      const th = Math.min(TILE, h - oy);
+
+      t1.width = tw; t1.height = th;
+      t2.width = tw; t2.height = th;
+      tctx1.fillStyle = '#ffffff'; tctx1.fillRect(0, 0, tw, th);
+      tctx2.fillStyle = '#ffffff'; tctx2.fillRect(0, 0, tw, th);
+
+      // このタイル領域だけを描画（原点を -ox,-oy 平行移動）
+      await page1.render({ canvasContext: tctx1, viewport: vp1, transform: [1, 0, 0, 1, -ox, -oy] }).promise;
+      await page2.render({ canvasContext: tctx2, viewport: vp2, transform: [1, 0, 0, 1, -ox, -oy] }).promise;
+
+      const d1 = tctx1.getImageData(0, 0, tw, th).data;
+      const d2 = tctx2.getImageData(0, 0, tw, th).data;
+      const outImg = tctx1.createImageData(tw, th);
+      const od = outImg.data;
+      const tpx = tw * th;
+
+      for (let i = 0; i < tpx; i++) {
+        const idx = i * 4;
+        const r1=d1[idx], g1=d1[idx+1], b1=d1[idx+2];
+        const r2=d2[idx], g2=d2[idx+1], b2=d2[idx+2];
+        const lum1 = r1*0.299 + g1*0.587 + b1*0.114;
+        const lum2 = r2*0.299 + g2*0.587 + b2*0.114;
+        const isBg1 = (r1 >= bgThresh && g1 >= bgThresh && b1 >= bgThresh);
+        const isBg2 = (r2 >= bgThresh && g2 >= bgThresh && b2 >= bgThresh);
+
+        if (isBg1 && isBg2) {
+          od[idx]=255; od[idx+1]=255; od[idx+2]=255; od[idx+3]=255;
+          continue;
+        }
+        const diff = Math.abs(lum1 - lum2);
+        if (diff > diffThresh) {
+          diffCount++;
+          if (!isBg1 && isBg2)      { od[idx]=25;  od[idx+1]=85;  od[idx+2]=210; od[idx+3]=alpha; }
+          else if (isBg1 && !isBg2) { od[idx]=210; od[idx+1]=35;  od[idx+2]=35;  od[idx+3]=alpha; }
+          else if (lum1 < lum2)     { od[idx]=25;  od[idx+1]=85;  od[idx+2]=210; od[idx+3]=alpha; }
+          else                       { od[idx]=210; od[idx+1]=35;  od[idx+2]=35;  od[idx+3]=alpha; }
+        } else {
+          od[idx]=160; od[idx+1]=160; od[idx+2]=160; od[idx+3]=255;
+        }
+      }
+
+      // タイル結果を出力キャンバスの該当位置へ合成（t1 をスクラッチに再利用）
+      tctx1.putImageData(outImg, 0, 0);
+      octx.drawImage(t1, ox, oy);
+
+      tileIndex++;
+      if (onTile) onTile(tileIndex, tileTotal);
+      await new Promise(r => setTimeout(r, 0));
+    }
+  }
+
+  // メモリ解放を促す
+  t1.width = t1.height = 0;
+  t2.width = t2.height = 0;
   return { canvas: out, diffCount, total };
 }
 
@@ -712,15 +827,17 @@ async function runCompareAll() {
   }
 }
 
-// ---- 全ページPDF出力 ----
+// ---- 全ページPDF出力（高画質・タイル分割） ----
+// 保存画質セレクタ（216/300/600dpi）で解像度を指定。
+// 大判ページはブラウザのキャンバス上限を超えないよう自動で解像度を丸める。
+const MAX_OUTPUT_PIXELS = 180000000; // 約1.8億px（Chromeの約2.68億px上限に安全マージン）
+
 async function downloadAllPages() {
   if (!pdf1 || !pdf2) return;
 
-  const opacity  = parseInt(document.getElementById('opacity').value) / 100;
-  const bgThresh = 230;
-  const scale    = 3.0;
-  const DPI      = 72;
-  const PX_TO_MM = 25.4 / DPI;
+  const opacity   = parseInt(document.getElementById('opacity').value) / 100;
+  const bgThresh  = 230;
+  const targetDPI = parseInt(document.getElementById('quality').value) || 300;
 
   document.getElementById('downloadBtn').disabled = true;
   document.getElementById('compareBtn').disabled  = true;
@@ -733,9 +850,27 @@ async function downloadAllPages() {
       setStatus(t('pdfExporting', p, totalPages));
       setProgress(p - 1, totalPages, t('pdfExportProgress', p, totalPages));
 
-      const entry = await buildDiffCanvas(p, scale, opacity, bgThresh);
-      const wMm   = entry.canvas.width  * PX_TO_MM;
-      const hMm   = entry.canvas.height * PX_TO_MM;
+      // ページの実寸（PDFポイント, scale=1）から目標解像度を算出
+      const baseVp = (await pdf1.getPage(p)).getViewport({ scale: 1 });
+      let scale = targetDPI / 72;
+      const estPixels = (baseVp.width * scale) * (baseVp.height * scale);
+      if (estPixels > MAX_OUTPUT_PIXELS) {
+        // 大判ページは上限内に収まるよう解像度を縮退
+        scale *= Math.sqrt(MAX_OUTPUT_PIXELS / estPixels);
+      }
+      const effDPI = scale * 72;
+
+      const entry = await buildDiffCanvasTiled(
+        p, scale, opacity, bgThresh,
+        (ti, tt) => {
+          const frac = (p - 1 + ti / tt) / totalPages;
+          setProgress(frac, 1, t('pdfExportTile', p, totalPages, ti, tt));
+        }
+      );
+
+      // 実効DPIから正しい物理ページ寸法(mm)を算出 → 印刷時も正確
+      const wMm = entry.canvas.width  / effDPI * 25.4;
+      const hMm = entry.canvas.height / effDPI * 25.4;
       const dataUrl = entry.canvas.toDataURL('image/png');
 
       if (p === 1) {
@@ -743,12 +878,15 @@ async function downloadAllPages() {
           orientation: wMm > hMm ? 'landscape' : 'portrait',
           unit: 'mm',
           format: [wMm, hMm],
-          compress: false
+          compress: true   // FlateDecode（可逆圧縮）— 画質劣化なしでファイルサイズ削減
         });
       } else {
         doc.addPage([wMm, hMm], wMm > hMm ? 'landscape' : 'portrait');
       }
-      doc.addImage(dataUrl, 'PNG', 0, 0, wMm, hMm, undefined, 'NONE');
+      doc.addImage(dataUrl, 'PNG', 0, 0, wMm, hMm, undefined, 'FAST');
+
+      // 出力キャンバスのメモリ解放を促す
+      entry.canvas.width = entry.canvas.height = 0;
       await new Promise(r => setTimeout(r, 0));
     }
 
