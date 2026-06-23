@@ -1190,4 +1190,58 @@ UNIQUE(date, page, country, device_category, browser, os, source, medium)
 - このリポジトリは `claude/*` ブランチへの push で **GitHub Actions が自動でPR作成＋自動マージ** (`auto-merge.yml`)。手動マージ不要で main に入り GitHub Pages へデプロイされる。
 - Supabase MCP は**別アカウント (dodeca-dev) に接続**されており、本番の解析プロジェクト (`clyfrkwuajbauqxvrfyf` / 28yu's Project) は操作できない。SQLはユーザにSQL Editorで実行してもらう。
 
+---
+
+## 2026/06 セッションで得た知見 — PDF比較ツール（`pdf_compare.html`）の画質向上＆プレビュー操作
+
+PDF比較ツールは**完結型の単一ファイル**（`pdf_compare.html` にUI/CSS/JSすべて内包）。
+翻訳は2系統あるので注意：
+- **UIラベル** … `data-lang-key` 属性 ＋ `js/main.js` の `translations`（`pdf-compare-*` キー）
+- **JS実行時メッセージ** … ファイル内の `pdfI18n` オブジェクト（ja/en/zh、`t(key, ...args)` で展開）
+
+### ① ダウンロードPDFの高画質化（タイル分割レンダリング）
+
+**背景**: 旧 `downloadAllPages()` は `scale=3.0` 固定（約216dpi）で、しかも `devicePixelRatio`
+未適用のため**画面プレビューより低画質**だった。さらにページ寸法を `width_px × 25.4/72` で算出して
+おり**物理サイズが約3倍**にずれていた（DPIの意味が曖昧）。
+
+**重要な原理**: 「共通=グレー／旧=青／新=赤」の配色は**全ピクセルを4分類して塗り替える**処理なので
+**本質的にラスター**。ベクター維持とは両立しない → **画質＝解像度（DPI）**に集約される。
+この配色こそツールの主機能なので**絶対に変えない**前提で解像度だけ上げる方針。
+
+**実装** (`buildDiffCanvasTiled()` を新設):
+- 1ページを **2048×2048 のタイル**に分割し、タイルごとに「描画→4分類→合成」。
+  → ブラウザのキャンバス上限（Chrome 約2.68億px）・メモリ上限を回避し、**A1大判でも300〜600dpi**到達。
+- pdf.js の `render({ ..., transform: [1,0,0,1,-ox,-oy] })` でタイル領域だけを描画（原点平行移動）。
+- 分類ロジックは既存 `buildDiffCanvas()` と**一字一句同一**（配色を変えないため）。
+- **保存画質セレクタ** `#quality`（216 / 300既定 / 600 dpi）を追加。`scale = targetDPI/72`。
+- **適応的上限** `MAX_OUTPUT_PIXELS = 180000000`。超過ページは `scale *= sqrt(MAX/est)` で自動縮退。
+- 物理寸法は**実効DPIから算出** `wMm = canvas.width / effDPI * 25.4`（印刷も正確）。
+- PNGは**可逆**のまま（`addImage(..., 'FAST')` ＋ jsPDF `compress:true`）＝画質劣化なしでサイズ削減。
+- ⚠️ **プレビュー側 (`buildDiffCanvas` / `showPage`) は従来通り**（`scale 3×dpr`）。
+  ダウンロードだけ高解像度パスを通す（プレビュー全ページ高解像度キャッシュはメモリ過大なので避けた）。
+
+### ② 差分プレビューの拡大・パン（枠サイズは不変）
+
+**要件**: 比較実行後のプレビューを拡大したり、ドラッグでつかんで動かして細部確認したい。
+ただし**プレビューセクションの枠サイズは変えない**こと。
+
+**実装** (`pdf_compare.html` 末尾の IIFE `setupPreviewZoom()`):
+- キャンバスを `.canvas-viewport`（`overflow:hidden` 固定枠）で包み、
+  中の `#resultCanvas` に `transform: translate(tx,ty) scale(z)`（`transform-origin:0 0`）を当てる。
+  → **ズーム1倍＝従来と完全に同一表示**、枠外にはみ出さない（枠サイズ不変）。
+- 操作：**ホイール=カーソル基点ズーム** / **ドラッグ=パン** / **ダブルクリック=リセット** /
+  **＋−⟳ボタン**（枠右上オーバーレイ） / **タッチ=ピンチ＋ドラッグ**（Pointer Events＋`touch-action:none`）。
+- ズーム範囲 `MIN_Z=1`〜`MAX_Z=8`。1倍未満不可（余白が出ない）。パンは端でクランプ。
+- `window.resetPreviewZoom()` を公開し、**ページ切替・比較実行のたびに自動リセット**
+  （`showPage` と `runCompareAll` の描画直後で呼ぶ）。
+- プレビューは元々高解像度なので、拡大しても細部がくっきり見える（再計算不要、`pageCache` 利用）。
+- ツールチップは `pdfI18n` の `zoomIn`/`zoomOut`/`zoomReset` で言語連動。
+
+### ③ トップページ新着・おすすめへの追記
+
+`index.html` の `.news-list` **先頭**に 2026/6・`PDF` タグの項目を追加
+（リンク先 `pdf_compare.html`）。翻訳キー `index-news-pdf-compare-v2`（ja/en/zh）を `js/main.js` に追加。
+新着は**日付の新しい順**で先頭挿入する。
+
 
