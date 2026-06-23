@@ -955,6 +955,11 @@ function initTranslations() {
             en: 'PDF Compare Tool Released — Highlight differences between two PDFs in browser',
             zh: 'PDF比较工具发布 — 在浏览器中以彩色显示两个PDF的差异'
         },
+        'index-news-pdf-compare-v2': {
+            ja: 'PDF 比較ツール 改善 — 保存PDFを高画質化、差分プレビューを拡大・移動できるように',
+            en: 'PDF Compare Tool Improved — Higher-quality exported PDF and zoom/pan on the diff preview',
+            zh: 'PDF比较工具改进 — 提升导出PDF画质，差异预览支持缩放与拖动'
+        },
         'index-news-ai-news': {
             ja: 'AIニュースページ 公開 — AI・LLMの最新トレンドを毎日配信',
             en: 'AI News Page Launched — Daily AI & LLM trend updates',
