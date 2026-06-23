@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T06:30:55.312065",
+  "lastUpdated": "2026-06-23T05:02:34.054903",
   "articles": [
     {
       "title": "We’re announcing new community investments in Missouri.",
@@ -57,17 +57,6 @@
       "language": "en"
     },
     {
-      "title": "The Download: a reality check for geoengineering and the science of interoception",
-      "titleJa": "ダウンロード: 地球工学と相互受容科学の現実性確認",
-      "link": "https://www.technologyreview.com/2026/06/17/1139200/the-download-solar-geoengineering-interoception/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Hacking the atmosphere: geoengineering gets a real...",
-      "publishedDate": "Wed, 17 Jun 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2022/02/T1042.png?w=2234",
-      "language": "en"
-    },
-    {
       "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
       "titleJa": "Hugging Face Hub から Strands Agents と LeRobot を使用したロボット ハードウェアまで",
       "link": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
@@ -101,28 +90,6 @@
       "language": "en"
     },
     {
-      "title": "Entrepreneurs in Nairobi make the case for going solar",
-      "titleJa": "ナイロビの起業家が太陽光発電の導入を主張",
-      "link": "https://www.technologyreview.com/2026/06/17/1138600/entrepreneurs-nairobi-case-for-going-solar/",
-      "description": "Most of Kenya’s power grid runs on renewables. But with 25% of communities lacking centralized electricity, the nation is looking to off-grid solar to hit its goal of delivering universal electricity ...",
-      "publishedDate": "Wed, 17 Jun 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/map-nairobi.jpg?w=2000",
-      "language": "en"
-    },
-    {
-      "title": "Hacking the atmosphere: Geoengineering gets a reality check",
-      "titleJa": "大気をハッキング: 地球工学が現実性をチェックする",
-      "link": "https://www.technologyreview.com/2026/06/17/1138743/hacking-atmosphere-geoengineering-reality-check/",
-      "description": "Jim Franke pulls away the cover page of a presentation on the wraparound desk in his office, revealing an illustration of an odd-­looking aircraft with massive wings stretching out from a stubby fusel...",
-      "publishedDate": "Wed, 17 Jun 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/David-Keith-1.jpg?w=1494",
-      "language": "en"
-    },
-    {
       "title": "Introducing LifeSciBench",
       "titleJa": "LifeSciBench の紹介",
       "link": "https://openai.com/index/introducing-life-sci-bench",
@@ -142,17 +109,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/agentic-resource-discovery-launch/thumbnail_.png",
-      "language": "en"
-    },
-    {
-      "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
-      "titleJa": "Oracle クラウド コミットメントを通じて OpenAI モデルと Codex にアクセス",
-      "link": "https://openai.com/index/openai-on-oracle-cloud",
-      "description": "Access OpenAI models and Codex through Oracle Cloud, using existing commitments to build and deploy AI with enterprise security and governance....",
-      "publishedDate": "Wed, 10 Jun 2026 20:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -178,15 +134,37 @@
       "language": "en"
     },
     {
-      "title": "Adding MCP Tools to Reachy Mini",
-      "titleJa": "MCP ツールを Reachy Mini に追加する",
-      "link": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
-      "description": "...",
-      "publishedDate": "Wed, 03 Jun 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
+      "title": "Sakana Fuguとは？Sakana AIのマルチエージェント統合AIモデルを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/sakana-fugu/",
+      "description": "2026年6月、Sakana AIから新たなオーケストレーションが公開されました。 今回発表された「Sakana Fugu」は、単一のAIモデルではなく、複数のフロンティアLLMをチームとして動かす学習型オーケストレータ [...]...",
+      "publishedDate": "Tue, 23 Jun 2026 02:56:02 +0000",
+      "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/adding-mcp-tools-to-reachy-mini/reachy_mini_remote_spaces_thumbnail.png",
-      "language": "en"
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Sakana-Fugu_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【GPT-5.5-Cyber】OpenAIのサイバー防御特化モデルの性能・使い方・Daybreak構想を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/gpt-5-5-cyber/",
+      "description": "2026年6月23日、OpenAIはサイバーセキュリティ防御プラットフォーム「Daybreak」の大幅拡張を発表し、サイバー防御に特化したAIモデル「GPT-5.5-Cyber」のフルバージョンを公開しました！ 同時にC [...]...",
+      "publishedDate": "Tue, 23 Jun 2026 02:45:42 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-5.5-Cyber-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIの種類と特徴一覧を比較解説！使い分けや代表的なサービスもまとめてみた",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/gen-ai-kind-list",
+      "description": "生成AIは誰でも手軽に使えて便利なツールとして今では多くの方が利用していますが、ChatGPTやGeminiなど主要な生成AIしか使ったことがない人も多いでしょう。生成AIには文章や画像、動画など10以上のカテゴリーがあ [...]...",
+      "publishedDate": "Tue, 23 Jun 2026 00:34:22 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/gen-ai-kind-list_2606-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "How AI Mode is changing the way people search in the U.S.",
@@ -310,17 +288,6 @@
       "language": "en"
     },
     {
-      "title": "ハルシネーションとは？事例で学ぶ生成AIの誤回答と対策",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/hallucination",
-      "description": "生成AIに潜む「ハルシネーション」というリスクをご存じでしょうか？ ハルシネーションとは、生成AIがもっともらしく事実とは異なる情報を出力してしまう現象のことで、一般に「AIの嘘」としても知られています。こちらは生成AI [...]...",
-      "publishedDate": "Thu, 18 Jun 2026 08:15:22 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/hallucination_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Gemini Omniの正体を徹底解剖！世界モデルが変える動画制作の未来",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/gemini-omni/",
@@ -354,28 +321,6 @@
       "language": "ja"
     },
     {
-      "title": "AI開発環境とは？種類・選び方とおすすめツール5選を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/gen-ai-dev-environment",
-      "description": "AI開発に必要な環境や開発の流れについて解説します。AI開発におすすめのツールもご紹介するので、自社でAI開発を行いたい方におすすめの記事です。 続きを読む...",
-      "publishedDate": "Thu, 18 Jun 2026 06:07:06 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/gen-ai-dev-environment_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "AIエージェント開発方法！具体的な手順・おすすめツールを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/ai-agent-development/",
-      "description": "みなさん！業務を自動でこなしてくれる「AIエージェント」がついに、開発・実用化可能な段階にまで進歩してきています。とはいえ、「本当に業務で使えるの？」「開発費用や期間はどれくらい？」と不安に感じる方も多いはず。 というこ [...]...",
-      "publishedDate": "Thu, 18 Jun 2026 03:46:57 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/01/ai-agent-development_2601-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "「AI博覧会 Nagoya 2026」の来場者数が目標の倍となる6,453名を記録！名古屋・東海エリア初開催、ものづくりの現場で進むAI実装への熱気広がる",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/ai-hakurankai-nagoya2026-event-report02/",
@@ -387,39 +332,6 @@
       "language": "ja"
     },
     {
-      "title": "Grok Imagine Video 1.5とは？xAIの最新画像to動画AIモデルの特徴・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/grok-imagine-video-1-5/",
-      "description": "2026年6月、xAIから最新のimage-to-videoモデルが公開されました。 今回登場した「Grok Imagine Video 1.5」は、静止画を起点に自然な動きを持つ動画を生成するimage-to-vide [...]...",
-      "publishedDate": "Thu, 18 Jun 2026 02:41:33 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Grok-Imagine-Video-1.5-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Grokの会話履歴や画像生成はバレる？原因とバレない設定・対策を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/grok-found/",
-      "description": "X（旧Twitter）のAI機能「Grok（グロック）」を使っていて、「自分の検索や質問が他人にバレないか」「フォロワーに履歴が見られていないか」と不安になったことはありませんか。 さらに、Grokで作った画像や動画が「 [...] The post Grokの会話履歴や画像生成はバレる？原因とバレない設定・対策を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 18 Jun 2026 02:27:37 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/grok-found_ic.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Claudeの文字数制限はどれくらい？入力・出力の上限や対処法を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-character-limit/",
-      "description": "「Claudeで長文を作成していたら途中で止まってしまった」「資料を読み込ませたら、急に制限が表示された」。このように、Claudeを使用していて困ったことはありませんか？ こうした制限に関する問題は、多くのClaude [...] The post Claudeの文字数制限はどれくらい？入力・出力の上限や対処法を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 18 Jun 2026 01:13:13 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ClaudeMain.png",
-      "language": "ja"
-    },
-    {
       "title": "Beyond LoRA: Can you beat the most popular fine-tuning technique?",
       "titleJa": "LoRA を超えて: 最も人気のある微調整テクニックに勝つことができますか?",
       "link": "https://huggingface.co/blog/peft-beyond-lora",
@@ -428,6 +340,61 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/peft-beyond-lora/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+      "titleJa": "エージェントとしては十分ですか？独自のツールでオープンモデルのベンチマークを行う",
+      "link": "https://huggingface.co/blog/is-it-agentic-enough",
+      "description": "...",
+      "publishedDate": "Thu, 18 Jun 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/is-it-agentic-enough/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
+      "titleJa": "バージニア州における当社の新たなコミュニティへの投資は、地元の雇用をサポートし、エネルギーの手頃な価格を拡大します。",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
+      "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
+      "publishedDate": "Thu, 11 Jun 2026 20:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "OpenAI to acquire Ona",
+      "titleJa": "OpenAIがOnaを買収へ",
+      "link": "https://openai.com/index/openai-to-acquire-ona",
+      "description": "OpenAI plans to acquire Ona to expand Codex with secure, persistent cloud environments, enabling long-running AI agents across enterprise workflows....",
+      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
+      "titleJa": "信頼できる AI エコシステムを確保するためのヨーロッパの取り組みを支援",
+      "link": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+      "description": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content....",
+      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP",
+      "titleJa": "PyTorch でのプロファイリング (パート 2): nn.Linear から融合 MLP まで",
+      "link": "https://huggingface.co/blog/torch-mlp-fusion",
+      "description": "...",
+      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/torch-mlp-fusion/thumbnail.png",
       "language": "en"
     },
     {
@@ -461,6 +428,50 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/gen-ai-service_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "無料で使える動画生成AIツールおすすめ11選！日本語対応・商用利用の可否も解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/videogen-tool-free/",
+      "description": "テキストや画像を入力するだけで動画を作成できる動画生成AIが急速に普及しています。近年は無料で利用できるサービスも増えたことで、SNS投稿や広告動画、プレゼン資料の作成など幅広い用途で活用されるようになりました。 一方で [...]...",
+      "publishedDate": "Mon, 22 Jun 2026 12:42:55 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/videogen-tool-free_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Palmier Pro】AIエージェントが直接タイムラインを編集できる次世代動画エディタを徹底解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/palmier-pro/",
+      "description": "2026年6月18日、Y Combinator出身のスタートアップPalmier社が、AI時代に特化した動画編集ソフト「Palmier Pro」をオープンソースで公開しました！ 従来のAI動画制作では「RunwayやHi [...]...",
+      "publishedDate": "Mon, 22 Jun 2026 08:54:38 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Palmier-Pro-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "デンソーテン、独自の埋め込みモデル学習技術により車載エッジでRAGを省メモリ化",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/densoten-rag-onboard-hmi-ai/",
+      "description": "デンソーテンは、車載エッジデバイス上でRAGを省メモリで実行できる生成AI技術を開発しました。独自の埋め込みモデル学習技術により、ベクトルデータベースの省サイズ化を実現しています。 このニュースのポイント デンソーテンが [...] The post デンソーテン、独自の埋め込みモデル学習技術により車載エッジでRAGを省メモリ化 first appeared on AIポータルメディアAIsmil...",
+      "publishedDate": "Mon, 22 Jun 2026 08:46:22 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/DENSOTEN-RAG-AI.png",
+      "language": "ja"
+    },
+    {
+      "title": "ヒマラヤ、AI副店長「アイダ つなぐ」を全店配属。顧客満足向上を目指す",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/himaraya-ai-deputy-manager/",
+      "description": "ヒマラヤはTHAが提供する「AI社長」を活用し、AI副店長「アイダ つなぐ」を全店に配属しました。創業50年で培った「お客様第一主義」の理念や知見を継承し、接客価値の向上と業務効率化を推進します。 このニュースのポイント [...] The post ヒマラヤ、AI副店長「アイダ つなぐ」を全店配属。顧客満足向上を目指す first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 22 Jun 2026 08:26:04 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/himaraya-ai-president-1.png",
       "language": "ja"
     },
     {
@@ -508,17 +519,6 @@
       "language": "ja"
     },
     {
-      "title": "AI導入の調査・比較で失敗しない！自社に最適なAIツール・開発会社の選び方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/ai-introduction/",
-      "description": "生成AIを導入したいけれど、ツールや開発会社が多すぎて、どれを選べばいいかわからない…と悩んでいませんか？ 実は、AIの調査・比較フェーズで失敗する企業の多くは、目的が曖昧なまま調査を始めたり、コストだけで判断してしまっ [...]...",
-      "publishedDate": "Fri, 19 Jun 2026 11:09:53 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/ai-introduction_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "クラダシ「Claude」を全社展開。特有業務の自動化の推進およびAI活用ポリシーを策定",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/kuradashi-claude-ai-policy/",
@@ -549,6 +549,17 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-code-openclaw_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "GitHub、AIによる雑なプルリクエストを抑制へ。ユーザー当たりのプルリクエスト数の上限を設定できる新機能導入",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/githubai_1.html",
+      "description": "GitHubは、ユーザーに対してプルリクエスト数の上限を設定できる新機能の導入を発表しました。 Pull requests are easier to open than ever, but every review still takes......",
+      "publishedDate": "2026-06-22T15:14:38Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/pullrequestlimit2606.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/7mai-models-build2026.png",
-      "language": "ja"
-    },
-    {
-      "title": "［速報］マイクロソフト、AIエージェントのためのカスタマイズ可能な分離環境「Microsoft Execution Containers （MXC）」発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/aimicrosoft_execution_containers_mxc.html",
-      "description": "マイクロソフトは、日本時間6月3日未明に開幕した年次イベント「Microsoft Build 2026」で、AIエージェントのためのカスタマイズ可能な分離環境「Microsoft Execution Containers （MXC）」を発表......",
-      "publishedDate": "2026-06-02T18:20:20Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/mxc-build2026-01.png",
       "language": "ja"
     }
   ]
