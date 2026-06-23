@@ -175,7 +175,34 @@
   .canvas-wrap { flex: 1; min-width: 260px; }
   .canvas-wrap-label { font-size: 11px; color: #999; margin-bottom: 6px; letter-spacing: 0.04em; text-transform: uppercase; }
 
-  #resultCanvas { width: 100%; display: block; border: 1px solid #e0e0e0; border-radius: 8px; background: #ffffff; }
+  #resultCanvas {
+    width: 100%; display: block;
+    transform-origin: 0 0; will-change: transform;
+  }
+
+  /* 差分プレビューのズーム／パン用ビューポート */
+  .canvas-viewport {
+    position: relative; overflow: hidden;
+    border: 1px solid #e0e0e0; border-radius: 8px; background: #ffffff;
+    line-height: 0; touch-action: none; cursor: default;
+  }
+  .canvas-viewport.grabbing { cursor: grabbing; }
+
+  .zoom-controls {
+    position: absolute; top: 8px; right: 8px; z-index: 5;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .zoom-btn {
+    width: 32px; height: 32px; padding: 0;
+    font-size: 17px; font-weight: 600; line-height: 1;
+    color: #1a1a1a; background: rgba(255,255,255,0.92);
+    border: 1px solid #ddd; border-radius: 7px; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .zoom-btn:hover { background: #fff; border-color: #999; }
+  .zoom-btn:active { transform: scale(0.94); }
 
   .sidebar { width: 170px; flex-shrink: 0; }
   .legend { background: #fff; border: 1px solid #e8e8e8; border-radius: 10px; padding: 14px; margin-bottom: 12px; }
@@ -284,7 +311,14 @@
   <div class="result-area">
     <div class="canvas-wrap">
       <div class="canvas-wrap-label" id="previewLabel" data-lang-key="pdf-compare-preview">差分プレビュー</div>
-      <canvas id="resultCanvas"></canvas>
+      <div class="canvas-viewport" id="canvasViewport">
+        <canvas id="resultCanvas"></canvas>
+        <div class="zoom-controls">
+          <button class="zoom-btn" id="zoomInBtn" aria-label="Zoom in">+</button>
+          <button class="zoom-btn" id="zoomOutBtn" aria-label="Zoom out">&minus;</button>
+          <button class="zoom-btn" id="zoomResetBtn" aria-label="Reset zoom">⟳</button>
+        </div>
+      </div>
     </div>
     <div class="sidebar">
       <div class="legend">
@@ -387,7 +421,10 @@ const pdfI18n = {
     pdfExportDone: '全 {0} ページのダウンロード完了',
     done: '完了',
     pxDiff: '{0} px 差分',
-    error: 'エラー: {0}'
+    error: 'エラー: {0}',
+    zoomIn: '拡大',
+    zoomOut: '縮小',
+    zoomReset: '等倍に戻す'
   },
   en: {
     selectPdf: 'Please select a PDF file',
@@ -410,7 +447,10 @@ const pdfI18n = {
     pdfExportDone: 'All {0} pages downloaded',
     done: 'Done',
     pxDiff: '{0} px diff',
-    error: 'Error: {0}'
+    error: 'Error: {0}',
+    zoomIn: 'Zoom in',
+    zoomOut: 'Zoom out',
+    zoomReset: 'Reset zoom'
   },
   zh: {
     selectPdf: '请选择PDF文件',
@@ -433,7 +473,10 @@ const pdfI18n = {
     pdfExportDone: '全部 {0} 页下载完成',
     done: '完成',
     pxDiff: '{0} px 差异',
-    error: '错误: {0}'
+    error: '错误: {0}',
+    zoomIn: '放大',
+    zoomOut: '缩小',
+    zoomReset: '恢复原始大小'
   }
 };
 
@@ -760,6 +803,7 @@ async function showPage(pageNum) {
     out.height = entry.canvas.height;
     const ctx = out.getContext('2d');
     ctx.drawImage(entry.canvas, 0, 0);
+    if (window.resetPreviewZoom) window.resetPreviewZoom();
 
     const pct = ((entry.diffCount / entry.total) * 100).toFixed(2);
     document.getElementById('diffPercent').textContent = pct;
@@ -799,6 +843,7 @@ async function runCompareAll() {
     out.width  = first.canvas.width;
     out.height = first.canvas.height;
     out.getContext('2d').drawImage(first.canvas, 0, 0);
+    if (window.resetPreviewZoom) window.resetPreviewZoom();
 
     const pct0 = ((first.diffCount / first.total) * 100).toFixed(2);
     document.getElementById('diffPercent').textContent = pct0;
@@ -902,6 +947,109 @@ async function downloadAllPages() {
     document.getElementById('compareBtn').disabled  = false;
   }
 }
+
+// ---- 差分プレビューのズーム／パン ----
+// ビューポート枠のサイズは変えず、中のキャンバスに transform を当てて
+// 拡大（ホイール／ピンチ／±ボタン）とパン（ドラッグ）を実現する。
+(function setupPreviewZoom() {
+  const viewport = document.getElementById('canvasViewport');
+  const canvas   = document.getElementById('resultCanvas');
+  if (!viewport || !canvas) return;
+
+  const MIN_Z = 1, MAX_Z = 8;
+  let z = 1, tx = 0, ty = 0;
+  const pointers = new Map();
+  let panLast = null, pinchStartDist = 0, pinchStartZ = 1, pinchMid = { x: 0, y: 0 };
+
+  function clampPan() {
+    const vw = viewport.clientWidth, vh = viewport.clientHeight;
+    if (z <= MIN_Z) { z = MIN_Z; tx = 0; ty = 0; return; }
+    const minTx = vw * (1 - z), minTy = vh * (1 - z);
+    tx = Math.min(0, Math.max(minTx, tx));
+    ty = Math.min(0, Math.max(minTy, ty));
+  }
+  function apply() {
+    clampPan();
+    canvas.style.transform = `translate(${tx}px, ${ty}px) scale(${z})`;
+    viewport.style.cursor = z > MIN_Z ? 'grab' : 'default';
+  }
+  // ページ切替時に外部から呼ぶ
+  window.resetPreviewZoom = function () { z = 1; tx = 0; ty = 0; apply(); };
+
+  // (cx,cy)=ビューポート内座標 を中心に factor 倍ズーム
+  function zoomAt(cx, cy, factor) {
+    const nz = Math.min(MAX_Z, Math.max(MIN_Z, z * factor));
+    const lx = (cx - tx) / z, ly = (cy - ty) / z;
+    z = nz;
+    tx = cx - z * lx; ty = cy - z * ly;
+    apply();
+  }
+
+  viewport.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const r = viewport.getBoundingClientRect();
+    zoomAt(e.clientX - r.left, e.clientY - r.top, e.deltaY < 0 ? 1.15 : 1 / 1.15);
+  }, { passive: false });
+
+  viewport.addEventListener('dblclick', (e) => { e.preventDefault(); window.resetPreviewZoom(); });
+
+  viewport.addEventListener('pointerdown', (e) => {
+    if (e.target.closest('.zoom-controls')) return; // ボタンはドラッグ対象外
+    viewport.setPointerCapture(e.pointerId);
+    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (pointers.size === 1) {
+      panLast = { x: e.clientX, y: e.clientY };
+      if (z > MIN_Z) viewport.classList.add('grabbing');
+    } else if (pointers.size === 2) {
+      const p = [...pointers.values()];
+      pinchStartDist = Math.hypot(p[0].x - p[1].x, p[0].y - p[1].y) || 1;
+      pinchStartZ = z;
+      const r = viewport.getBoundingClientRect();
+      pinchMid = { x: (p[0].x + p[1].x) / 2 - r.left, y: (p[0].y + p[1].y) / 2 - r.top };
+    }
+  });
+
+  viewport.addEventListener('pointermove', (e) => {
+    if (!pointers.has(e.pointerId)) return;
+    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (pointers.size === 2) {
+      const p = [...pointers.values()];
+      const dist = Math.hypot(p[0].x - p[1].x, p[0].y - p[1].y) || 1;
+      const targetZ = Math.min(MAX_Z, Math.max(MIN_Z, pinchStartZ * (dist / pinchStartDist)));
+      const lx = (pinchMid.x - tx) / z, ly = (pinchMid.y - ty) / z;
+      z = targetZ;
+      tx = pinchMid.x - z * lx; ty = pinchMid.y - z * ly;
+      apply();
+    } else if (pointers.size === 1 && panLast && z > MIN_Z) {
+      tx += e.clientX - panLast.x;
+      ty += e.clientY - panLast.y;
+      panLast = { x: e.clientX, y: e.clientY };
+      apply();
+    }
+  });
+
+  function endPointer(e) {
+    pointers.delete(e.pointerId);
+    if (pointers.size < 2) pinchStartDist = 0;
+    if (pointers.size === 0) { panLast = null; viewport.classList.remove('grabbing'); }
+    else { const p = [...pointers.values()][0]; panLast = { x: p.x, y: p.y }; }
+  }
+  viewport.addEventListener('pointerup', endPointer);
+  viewport.addEventListener('pointercancel', endPointer);
+
+  const center = () => ({ cx: viewport.clientWidth / 2, cy: viewport.clientHeight / 2 });
+  const zin  = document.getElementById('zoomInBtn');
+  const zout = document.getElementById('zoomOutBtn');
+  const zrst = document.getElementById('zoomResetBtn');
+  zin.addEventListener('click',  () => { const c = center(); zoomAt(c.cx, c.cy, 1.4); });
+  zout.addEventListener('click', () => { const c = center(); zoomAt(c.cx, c.cy, 1 / 1.4); });
+  zrst.addEventListener('click', () => window.resetPreviewZoom());
+
+  // ツールチップ（言語連動）
+  zin.title  = t('zoomIn');
+  zout.title = t('zoomOut');
+  zrst.title = t('zoomReset');
+})();
 </script>
 </body>
 </html>
