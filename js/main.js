@@ -6,7 +6,7 @@
 // includes/header.html と includes/sidebar.html を fetch() するときの
 // クエリ文字列。includes/* を編集したらここをインクリメントする。
 // (CDN edge cache が古いインクルードを返す問題への対処)
-const INCLUDES_VERSION = '20260624-1';
+const INCLUDES_VERSION = '20260624-2';
 
 // グローバル変数
 let currentLanguage = 'ja';
