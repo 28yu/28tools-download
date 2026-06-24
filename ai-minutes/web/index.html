@@ -5,28 +5,6 @@
 <title>AI議事録 自動作成 - 28 Tools</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- 限定公開ガード: パスワード保護（ダウンロードと共通の '28tools'）。
-     カード経由で解錠済み(sessionStorage)ならスキップ。直接URLアクセスもここで保護する。
-     ※ ページ描画前にブロックするため自己完結のインラインスクリプトにしている。 -->
-<script>
-(function () {
-  try { if (sessionStorage.getItem('tool-unlocked-ai-minutes') === 'yes') return; } catch (e) {}
-  var lang = 'ja';
-  try { lang = localStorage.getItem('28tools-language') || 'ja'; } catch (e) {}
-  var msg = {
-    ja: 'このツールは限定公開です。パスワードを入力してください：',
-    en: 'This tool is in limited release. Please enter the password:',
-    zh: '此工具为限定公开。请输入密码：'
-  };
-  var pw = window.prompt(msg[lang] || msg.ja);
-  if (pw === '28tools') {
-    try { sessionStorage.setItem('tool-unlocked-ai-minutes', 'yes'); } catch (e) {}
-  } else {
-    window.location.replace('../../index.html');
-  }
-})();
-</script>
-
 <link rel="icon" type="image/png" href="../../images/site-icons/favicon-28.png">
 <link rel="canonical" href="https://28tools.com/ai-minutes/web/">
 <meta name="description" content="打合せ音声と資料から、AI が議事録を自動作成。文字起こしはブラウザ完結。高精度版は自分の無料 Gemini API キーを利用（開発者のアカウントは不使用）。">
