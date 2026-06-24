@@ -1,9 +1,42 @@
 {
-  "lastUpdated": "2026-06-23T05:02:34.054903",
+  "lastUpdated": "2026-06-24T05:03:34.699361",
   "articles": [
     {
+      "title": "PLaMo 3.0 Primeとは？国産フルスクラッチAIの性能・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/plamo-3-0-prime/",
+      "description": "2026年6月22日、Preferred Networks（PFN）は、国産生成AI基盤モデルの最新版「PLaMo 3.0 Prime」をリリースしました！ 「じっくり考える」Reasoningモデルと「すぐに答える」N [...]...",
+      "publishedDate": "Wed, 24 Jun 2026 03:20:01 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_PLaMo-3.0-Prime-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "GPT-Realtime-2とは？OpenAI新音声3モデルの違い・料金・使い分けを徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/gpt-realtime2-translate-whisper/",
+      "description": "OpenAIは2026年5月、Realtime API向けに音声インテリジェンスを大きく前進させる新モデル3種を一挙に公開しました。 中核となる「GPT-Realtime-2」はGPT-5クラスの推論能力を備えた音声対話 [...] The post GPT-Realtime-2とは？OpenAI新音声3モデルの違い・料金・使い分けを徹底解説 first appeared on AIポータルメディ...",
+      "publishedDate": "Wed, 24 Jun 2026 01:13:24 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/gptrealtime2.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "FDEとは？AI導入を現場に定着させる役割・他職種との違い・スキル",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/fde-forward-deployed-engineer/",
+      "description": "AIツールや生成AIを導入したものの、PoC（Proof of Concept：本格導入の前に行う試験的な検証）の段階で止まってしまう。あるいは導入したのに現場で使われない。こうした状態に心当たりのある担当者は少なくない [...] The post FDEとは？AI導入を現場に定着させる役割・他職種との違い・スキル first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 24 Jun 2026 01:11:21 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/fde.jpg",
+      "language": "ja"
+    },
+    {
       "title": "We’re announcing new community investments in Missouri.",
-      "titleJa": "私たちはミズーリ州における新たなコミュニティへの投資を発表します。",
+      "titleJa": "私たちはミズーリ州での新たなコミュニティ投資を発表します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
       "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
       "publishedDate": "Wed, 20 May 2026 20:40:00 +0000",
@@ -123,15 +156,224 @@
       "language": "en"
     },
     {
-      "title": "Direct Preference Optimization Beyond Chatbots",
-      "titleJa": "チャットボットを超えた直接的な好みの最適化",
-      "link": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+      "title": "Heads in the game",
+      "titleJa": "ゲームのヘッズ",
+      "link": "https://www.technologyreview.com/2026/06/23/1138214/heads-in-the-game/",
+      "description": "The Argentina v. France final of the 2022 Men’s World Cup in Qatar was shaping up to be one of the most epic games in soccer history. With just 12 minutes remaining in the extra time added to the game...",
+      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/JA26-sports-03.jpg?w=1377",
+      "language": "en"
+    },
+    {
+      "title": "Super Mario is mathier than you think",
+      "titleJa": "スーパーマリオはあなたが思っているよりも数学的です",
+      "link": "https://www.technologyreview.com/2026/06/23/1138262/super-mario-is-mathier-than-you-think/",
+      "description": "Here’s a problem you probably didn’t solve in school: You’re an ambitious young plumber from Brooklyn in a world inhabited by violent human-size mushrooms called Goombas. The love of your life has bee...",
+      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/demaine.jpg?w=1473",
+      "language": "en"
+    },
+    {
+      "title": "A man of many words",
+      "titleJa": "言葉が多い人",
+      "link": "https://www.technologyreview.com/2026/06/23/1138267/a-man-of-many-words/",
+      "description": "Brian Sietsema has a favorite word. It’s somewhat surprising that he can choose just one. He’s the person spellers rely on to confirm pronunciations and answer questions about the roots of the words t...",
+      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/FrMark.jpg?w=2450",
+      "language": "en"
+    },
+    {
+      "title": "Sharing a love for calculus",
+      "titleJa": "微積分への愛を共有する",
+      "link": "https://www.technologyreview.com/2026/06/23/1138271/sharing-a-love-for-calculus/",
+      "description": "The national conversation about the value of education is currently dominated by speculation about the risks and positive potential of AI.&#160; Whatever your own perspective on that debate, I hope yo...",
+      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/08/MIT_Sally_Kornbluth_034.jpeg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Stand Up for Research, Innovation, and Education",
+      "titleJa": "研究、イノベーション、教育のために立ち上がる",
+      "link": "https://www.technologyreview.com/2026/06/23/1138274/stand-up-for-research-innovation-and-education-6/",
+      "description": "Right now, MIT alumni and friends are voicing their support for: America’s scientific and technological leadership Merit-based admissions and affordable education Advances that increase US health, sec...",
+      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/08/standup2.jpeg?w=693",
+      "language": "en"
+    },
+    {
+      "title": "Ultrasound imaging turns a robot hand into a skillful mimic",
+      "titleJa": "超音波画像診断によりロボットハンドが熟練した模倣者に変わる",
+      "link": "https://www.technologyreview.com/2026/06/23/1138279/ultrasound-imaging-turns-a-robot-hand-into-a-skillful-mimic/",
+      "description": "Our hands are the nimblest parts of our bodies, coordinating 34 muscles, 27 joints, and over 100 tendons and ligaments to perform countless nuanced movements and gestures. So far, robots have been not...",
+      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/MIT-Hand-Tracker-02-press.jpg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "Reinventing the zipper",
+      "titleJa": "ジッパーの再発明",
+      "link": "https://www.technologyreview.com/2026/06/23/1138282/reinventing-the-zipper/",
+      "description": "With an adaptable fastener designed at CSAIL, pitching a tent or adjusting the cast for a broken bone could be almost as easy as zipping your coat. The researchers, led by associate professor Stefanie...",
+      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/MIT-News-YZipper.png?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Engineered “mini livers” could be injected as an alternative to transplantation",
+      "titleJa": "移植の代替として、人工的に作られた「ミニ肝臓」を注射できる可能性がある",
+      "link": "https://www.technologyreview.com/2026/06/23/1138285/engineered-mini-livers-could-be-injected-as-an-alternative-to-transplantation/",
+      "description": "A technology developed by Professor Sangeeta Bhatia, SM ’93, PhD ’97, and colleagues could offer new hope to the thousands of Americans with chronic liver disease who are waiting for an organ transpla...",
+      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/MIT-injectable-liver-01-press.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Plants appear to detect the patter of falling rain",
+      "titleJa": "植物は降る雨のパターンを感知しているようです",
+      "link": "https://www.technologyreview.com/2026/06/23/1138288/plants-appear-to-detect-the-patter-of-falling-rain/",
+      "description": "MIT engineers have found the first direct evidence that plant seeds can sense sounds in nature: Rice submerged in shallow water germinated 30% to 40% more quickly when exposed to vibrations from water...",
+      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/MIT-SeedSound-01-press.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "A breath test could diagnose pneumonia in minutes",
+      "titleJa": "呼気検査で肺炎を数分で診断できる",
+      "link": "https://www.technologyreview.com/2026/06/23/1138291/a-breath-test-could-diagnose-pneumonia-in-minutes/",
+      "description": "With a test being developed at MIT, diagnosing pneumonia and other lung conditions could someday be as easy as breathing into a tube.&#160; The test, dubbed PlasmoSniff, is a portable, chip-scale sens...",
+      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/MIT-PlasmoSniff-02-press.jpg?w=2500",
+      "language": "en"
+    },
+    {
+      "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
+      "titleJa": "GPT-5 は免疫学者デリヤ・ウヌトマズ氏の 3 年来の謎の解決にどのように役立ったか",
+      "link": "https://openai.com/index/gpt-5-immunology-mystery",
+      "description": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research....",
+      "publishedDate": "Tue, 23 Jun 2026 17:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Helping build shared standards for advanced AI",
+      "titleJa": "高度な AI の共有標準の構築を支援",
+      "link": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+      "description": "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation....",
+      "publishedDate": "Tue, 23 Jun 2026 13:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Build real agentic apps using CUGA: two dozen working examples on a lightweight harness",
+      "titleJa": "CUGA を使用して実際のエージェント アプリを構築する: 軽量ハーネスでの 24 個の動作例",
+      "link": "https://huggingface.co/blog/ibm-research/cuga-apps",
       "description": "...",
-      "publishedDate": "Wed, 03 Jun 2026 12:55:11 GMT",
+      "publishedDate": "Tue, 23 Jun 2026 12:51:55 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots.png",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/649d9ad1500fd8d51a675a93/p9JwFYkZS7fB9g2PMFMft.png",
       "language": "en"
+    },
+    {
+      "title": "清水建設、鉄筋の加工・組立作業に「フィジカルAI」導入。スイスMESH AG社に出資し自動化を推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/shimizu-corp-physical-ai-mesh-ag/",
+      "description": "清水建設は、ロボットアームの自動制御ソフトウェアを保有するスイス・MESH AG社に出資しました。両社の協業により、建設生産プロセスの一部に「フィジカルAI」を導入します。 このニュースのポイント 清水建設、スイス・ME [...] The post 清水建設、鉄筋の加工・組立作業に「フィジカルAI」導入。スイスMESH AG社に出資し自動化を推進 first appeared on AIポータル...",
+      "publishedDate": "Tue, 23 Jun 2026 09:14:30 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/shimizucorpeye.png",
+      "language": "ja"
+    },
+    {
+      "title": "SpaceX、ナスダックで最大規模のIPOを実施。AIベンチャー統合による軌道上データセンター構想",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/spacex-nasdaq-ipo-ai/",
+      "description": "SpaceXは、ナスダック証券取引所にて新規株式公開（IPO）を実施し、1株150ドルで取引を開始しました。同社は今年初めにAIベンチャーを統合しており、今後は衛星ネットワークとAIを組み合わせた「軌道上AIデータセンタ [...] The post SpaceX、ナスダックで最大規模のIPOを実施。AIベンチャー統合による軌道上データセンター構想 first appeared on AIポータル...",
+      "publishedDate": "Tue, 23 Jun 2026 09:11:05 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/spacexnasdaqeye.png",
+      "language": "ja"
+    },
+    {
+      "title": "豊島区、区役所本庁舎でAIアバターによる窓口無人対応の実証実験を開始。来庁者問い合わせに自動で応答",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/toshima-city-ai-avatar-field-test/",
+      "description": "豊島区は、区役所本庁舎において、AIアバターによる窓口の無人対応の実証実験を6月15日から開始しました。デジタルサイネージに投影されたAIアバターが、来庁者からの問い合わせに自動で応答します。 このニュースのポイント 豊 [...] The post 豊島区、区役所本庁舎でAIアバターによる窓口無人対応の実証実験を開始。来庁者問い合わせに自動で応答 first appeared on AIポータル...",
+      "publishedDate": "Tue, 23 Jun 2026 08:42:53 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/toshimacityeye.png",
+      "language": "ja"
+    },
+    {
+      "title": "ソフトバンクG、OpenAI技術活用のサイバーセキュリティー対策ソリューション提供開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/softbank-patching-as-a-service/",
+      "description": "ソフトバンクグループは、OpenAIの技術を活用したサイバーセキュリティー対策ソリューション「Patching as a Service」の提供を開始します。 このニュースのポイント ソフトバンクG、OpenAI技術を活 [...] The post ソフトバンクG、OpenAI技術活用のサイバーセキュリティー対策ソリューション提供開始 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Tue, 23 Jun 2026 08:28:15 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/softbankpatchingasaserviceeye.png",
+      "language": "ja"
+    },
+    {
+      "title": "インフォマティクス、自治体向け「GC Navi」にAIチャット機能を追加。自然な対話と地図連動で住民対応の負荷を軽減",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/gis-gcnavi-aichat-localgovernment/",
+      "description": "インフォマティクスは、自治体向け公開型GIS「GC Navi」において、独自開発の生成AIチャット機能をオプション提供します。住民からの問い合わせに対し、AIが会話形式で回答し、関連情報を地図上に表示できるのが特徴です。 [...] The post インフォマティクス、自治体向け「GC Navi」にAIチャット機能を追加。自然な対話と地図連動で住民対応の負荷を軽減 first appeared ...",
+      "publishedDate": "Tue, 23 Jun 2026 08:22:32 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/gcnaviaichat1.png",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Opus 4.8とは？4.7からの進化点・新機能・料金を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-opus-4-8/",
+      "description": "Anthropicは2026年5月28日、Opusシリーズの最新モデル「Claude Opus 4.8」を公開しました。ベンチマーク全般での性能向上に加えて、自らの作業の不確実性を申告する「正直さ」や長時間タスクの自走な [...] The post Claude Opus 4.8とは？4.7からの進化点・新機能・料金を徹底解説 first appeared on AIポータルメディアAIsmil...",
+      "publishedDate": "Tue, 23 Jun 2026 06:28:16 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claudeopus48main.png",
+      "language": "ja"
+    },
+    {
+      "title": "Siri AIとは？対応機種や提供時期・できることを完全解説【WWDC26】",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/siri-ai-wwdc26-apple/",
+      "description": "2026年6月8日にApple本社で開催されたWWDC26にて、刷新版アシスタント「Siri AI」が発表されました。同社のパーソナルインテリジェンス基盤「Apple Intelligence」に、画面内容の理解や個人デ [...] The post Siri AIとは？対応機種や提供時期・できることを完全解説【WWDC26】 first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Tue, 23 Jun 2026 06:13:05 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/siriaimain.png",
+      "language": "ja"
     },
     {
       "title": "Sakana Fuguとは？Sakana AIのマルチエージェント統合AIモデルを徹底解説",
@@ -167,6 +409,39 @@
       "language": "ja"
     },
     {
+      "title": "How Omio is building the future of conversational travel",
+      "titleJa": "Omio は会話型旅行の未来をどのように構築しているか",
+      "link": "https://openai.com/index/omio",
+      "description": "Discover how Omio uses OpenAI to power conversational travel experiences, accelerate product development, and transform into an AI-native company....",
+      "publishedDate": "Tue, 23 Jun 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Shipping huggingface_hub every week with AI, open tools, and a human in the loop",
+      "titleJa": "AI、オープンツール、そして人間が関与した状態で、huggingface_hub を毎週出荷します",
+      "link": "https://huggingface.co/blog/huggingface-hub-release-ci",
+      "description": "...",
+      "publishedDate": "Tue, 23 Jun 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/huggingface-hub-release-ci/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js",
+      "titleJa": "Transformers.js で提案された Cross-Origin Storage API を実験する",
+      "link": "https://huggingface.co/blog/cross-origin-storage",
+      "description": "...",
+      "publishedDate": "Tue, 23 Jun 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/cross-origin-storage/thumbnail.jpg",
+      "language": "en"
+    },
+    {
       "title": "How AI Mode is changing the way people search in the U.S.",
       "titleJa": "AI モードが米国の人々の検索方法をどのように変えるか",
       "link": "https://blog.google/products-and-platforms/products/search/ai-mode-us-insights/",
@@ -197,204 +472,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/60a551a34ecc5d054c8ad93e/0tamlKpAvO3lZEklNmwHT.png",
-      "language": "en"
-    },
-    {
-      "title": "Migrating Your GitHub CI to Hugging Face Jobs",
-      "titleJa": "GitHub CI を Hugging Face ジョブに移行する",
-      "link": "https://huggingface.co/blog/github-ci-hf-jobs",
-      "description": "...",
-      "publishedDate": "Tue, 09 Jun 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/github-ci-hf-jobs/thumbnail.gif",
-      "language": "en"
-    },
-    {
-      "title": "Catch up on 12 major I/O 2026 moments",
-      "titleJa": "2026 年の 12 の主要な I/O の瞬間をキャッチアップ",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
-      "description": "The colorful I/O logo against a black background, surrounded by stills from the I/O keynote...",
-      "publishedDate": "Thu, 28 May 2026 15:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "MosaicLeaks: Can your research agent keep a secret?",
-      "titleJa": "MosaicLeaks: あなたの研究エージェントは秘密を守ることができますか?",
-      "link": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
-      "description": "...",
-      "publishedDate": "Thu, 18 Jun 2026 18:13:13 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/680ba1729f7688275d2ce0f4/hGCO4pOyJjijLPCbRT07v.webp",
-      "language": "en"
-    },
-    {
-      "title": "New usage analytics and updated spend controls for enterprises",
-      "titleJa": "企業向けの新しい使用状況分析と最新の支出管理",
-      "link": "https://openai.com/index/chatgpt-enterprise-spend-controls",
-      "description": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence....",
-      "publishedDate": "Thu, 18 Jun 2026 17:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The Download: a new hunt for dark matter and Kenya’s case for going solar",
-      "titleJa": "ダウンロード: 暗黒物質の新たな探索とケニアの太陽光発電推進の主張",
-      "link": "https://www.technologyreview.com/2026/06/18/1139261/the-download-dark-matter-hunt-kenya-solar-power/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The search for dark matter has been blown wide ope...",
-      "publishedDate": "Thu, 18 Jun 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2022/08/SO22_techgender-01SC.jpeg?w=3000",
-      "language": "en"
-    },
-    {
-      "title": "Improving health intelligence in ChatGPT",
-      "titleJa": "ChatGPT での健康インテリジェンスの向上",
-      "link": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
-      "description": "Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations....",
-      "publishedDate": "Thu, 18 Jun 2026 11:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Geoengineering still faces major practical challenges",
-      "titleJa": "地球工学は依然として大きな現実的な課題に直面しています",
-      "link": "https://www.technologyreview.com/2026/06/18/1139227/geoengineering-engineering-challenges/",
-      "description": "Solar geoengineering is often portrayed as a sort of emergency brake. Something along the lines of Pull in case of climate emergency to scatter light-reflecting particles to bounce sunlight out of the...",
-      "publishedDate": "Thu, 18 Jun 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/Iris-IR-1-at-altitude.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "The search for dark matter has been blown wide open",
-      "titleJa": "暗黒物質の探索は大きく開かれた",
-      "link": "https://www.technologyreview.com/2026/06/18/1138755/search-for-dark-matter-blown-wide-open/",
-      "description": "Underneath an Apennine massif, below the Jinping Mountains of Sichuan, and at the bottom of a South Dakota mine, there is a cosmic hunt afoot. Isolated deep beneath these rocky shields, massive detect...",
-      "publishedDate": "Thu, 18 Jun 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/GettyImages-184384453_FINAL.png?w=2000",
-      "language": "en"
-    },
-    {
-      "title": "Gemini Omniの正体を徹底解剖！世界モデルが変える動画制作の未来",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gemini-omni/",
-      "description": "「動画生成AIを使ってみたけど、思った通りの映像にならない…」「プロっぽい動画を作りたいけど、動画編集ソフトの操作を覚える時間がない…」。Google I/O 2026で発表された「Gemini Omni」は、そんな悩み [...] The post Gemini Omniの正体を徹底解剖！世界モデルが変える動画制作の未来 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 18 Jun 2026 08:07:50 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/170.png",
-      "language": "ja"
-    },
-    {
-      "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
-      "titleJa": "AI を使用して医師が子供に影響を与える希少な遺伝性疾患を診断できるようにする",
-      "link": "https://openai.com/index/diagnose-rare-childhood-diseases",
-      "description": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases....",
-      "publishedDate": "Thu, 18 Jun 2026 08:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Sakana AI、初の商用プロダクトとなるビジネス向け自律型リサーチアシスタント「Sakana Marlin」提供開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sakana-ai-sakana-marlin-release/",
-      "description": "Sakana AIは、同社初の商用プロダクトとなるビジネス向けの自律型リサーチアシスタント「Sakana Marlin」の提供を開始しました。調査テーマを指示するだけで、最大約8時間にわたり自律的にリサーチを遂行し、構造 [...] The post Sakana AI、初の商用プロダクトとなるビジネス向け自律型リサーチアシスタント「Sakana Marlin」提供開始 first appeare...",
-      "publishedDate": "Thu, 18 Jun 2026 07:27:09 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/sakanaaieye.png",
-      "language": "ja"
-    },
-    {
-      "title": "「AI博覧会 Nagoya 2026」の来場者数が目標の倍となる6,453名を記録！名古屋・東海エリア初開催、ものづくりの現場で進むAI実装への熱気広がる",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-hakurankai-nagoya2026-event-report02/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年6月16日（火）・17日（水）の2日間、名古屋コンベンションホールにて「AI博覧会 Nagoya 2026」を開催しました [...] The post 「AI博覧会 Nagoya 2026」の来場者数が目標の倍となる6,453名を記録！名古屋・東海エリア初開催、ものづくりの現場で進むAI実装への熱気...",
-      "publishedDate": "Thu, 18 Jun 2026 03:00:03 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ai-hakurankai-nagoya2026-event-report2_0000.png",
-      "language": "ja"
-    },
-    {
-      "title": "Beyond LoRA: Can you beat the most popular fine-tuning technique?",
-      "titleJa": "LoRA を超えて: 最も人気のある微調整テクニックに勝つことができますか?",
-      "link": "https://huggingface.co/blog/peft-beyond-lora",
-      "description": "...",
-      "publishedDate": "Thu, 18 Jun 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/peft-beyond-lora/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Is it agentic enough? Benchmarking open models on your own tooling",
-      "titleJa": "エージェントとしては十分ですか？独自のツールでオープンモデルのベンチマークを行う",
-      "link": "https://huggingface.co/blog/is-it-agentic-enough",
-      "description": "...",
-      "publishedDate": "Thu, 18 Jun 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/is-it-agentic-enough/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
-      "titleJa": "バージニア州における当社の新たなコミュニティへの投資は、地元の雇用をサポートし、エネルギーの手頃な価格を拡大します。",
-      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
-      "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
-      "publishedDate": "Thu, 11 Jun 2026 20:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "OpenAI to acquire Ona",
-      "titleJa": "OpenAIがOnaを買収へ",
-      "link": "https://openai.com/index/openai-to-acquire-ona",
-      "description": "OpenAI plans to acquire Ona to expand Codex with secure, persistent cloud environments, enabling long-running AI agents across enterprise workflows....",
-      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
-      "titleJa": "信頼できる AI エコシステムを確保するためのヨーロッパの取り組みを支援",
-      "link": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
-      "description": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content....",
-      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP",
-      "titleJa": "PyTorch でのプロファイリング (パート 2): nn.Linear から融合 MLP まで",
-      "link": "https://huggingface.co/blog/torch-mlp-fusion",
-      "description": "...",
-      "publishedDate": "Thu, 11 Jun 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/torch-mlp-fusion/thumbnail.png",
       "language": "en"
     },
     {
@@ -464,17 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "ヒマラヤ、AI副店長「アイダ つなぐ」を全店配属。顧客満足向上を目指す",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/himaraya-ai-deputy-manager/",
-      "description": "ヒマラヤはTHAが提供する「AI社長」を活用し、AI副店長「アイダ つなぐ」を全店に配属しました。創業50年で培った「お客様第一主義」の理念や知見を継承し、接客価値の向上と業務効率化を推進します。 このニュースのポイント [...] The post ヒマラヤ、AI副店長「アイダ つなぐ」を全店配属。顧客満足向上を目指す first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 22 Jun 2026 08:26:04 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/himaraya-ai-president-1.png",
-      "language": "ja"
-    },
-    {
       "title": "生成AI OCRとは？情報システム部門が知るべき導入メリットとおすすめツールを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/generation-ai-ocr",
@@ -486,69 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "WEB雑誌「ビジネスAI活用スキル習得ガイド」～AIを「ツール」から「戦力」へ。業務効率化につながる人材育成のポイントをご紹介！～",
+      "title": "TypeScriptコンパイラをGo言語に移植することで10倍速にしたTypeScript 7.0リリース候補版が登場",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aiskillswebmagazine/",
-      "description": "AIポータルメディア「AIsmiley」は、この度、AI導入推進の一環として、“教育・AI人材育成”のユースケースやサービスの特長をまとめた「ビジネスAI活用スキル習得ガイド」をリリースしました。 本資料では、教育・AI [...] The post WEB雑誌「ビジネスAI活用スキル習得ガイド」～AIを「ツール」から「戦力」へ。業務効率化につながる人材育成のポイントをご紹介！～ first ap...",
-      "publishedDate": "Mon, 22 Jun 2026 03:00:32 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/1099_1200x628.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "トークンとは？生成AI・暗号資産・セキュリティ上の意味を図解付きで解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-token/",
-      "description": "「トークンとは何だろう」と検索しても、説明がバラバラで戸惑った経験はないでしょうか。 「トークン」は、使われる分野によって意味が大きく変わる言葉です。生成AIのトークンとは何か、暗号資産（仮想通貨）のトークンとどう違うの [...] The post トークンとは？生成AI・暗号資産・セキュリティ上の意味を図解付きで解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 22 Jun 2026 02:39:02 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/what-is-token_ic.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Claude Code Artifacts】コーディング作業をライブページ化！チーム共有を変える新機能の使い方・料金・活用シーンを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code-artifacts/",
-      "description": "2026年6月19日、AnthropicがClaude Codeの新機能「Artifacts」を公開しました！ これまでClaude Codeでの作業結果をチームへ共有するには、ターミナルの出力をコピーしたり、スクリーン [...]...",
-      "publishedDate": "Fri, 19 Jun 2026 12:05:07 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/typescriptgo10typescript_70.html",
+      "description": "マイクロソフトは、TypeScriptをGo言語に移植した最初のバージョンとなる「TypeScript 7.0」リリース候補版のリリースを発表しました。 TypeScript 7's Release Candidate is now......",
+      "publishedDate": "2026-06-23T15:29:40Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-Artifacts_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "クラダシ「Claude」を全社展開。特有業務の自動化の推進およびAI活用ポリシーを策定",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kuradashi-claude-ai-policy/",
-      "description": "クラダシは、生成AI「Claude」を全社展開したと発表しました。これにより、独自業務の自動化を推進します。また、AI活用に伴うリスクに対応するため「クラダシグループAI活用基本ポリシー」を策定し、公表しました。 このニ [...] The post クラダシ「Claude」を全社展開。特有業務の自動化の推進およびAI活用ポリシーを策定 first appeared on AIポータルメディアAI...",
-      "publishedDate": "Fri, 19 Jun 2026 08:04:27 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/kuradashi-Claude-ai-policy.png",
-      "language": "ja"
-    },
-    {
-      "title": "日米欧中韓の五大特許庁、東京で五庁長官会合を開催。AI分野の新たな協力方針に合意",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ip5-heads-of-office-meeting-ai/",
-      "description": "日米欧中韓の五大特許庁は、東京で第19回日米欧中韓五大特許庁長官会合を開催し、AI分野を中心とした新たな五庁協力について合意しました。 このニュースのポイント 日米欧中韓の五大特許庁がAI分野における新たな協力の方向性で [...] The post 日米欧中韓の五大特許庁、東京で五庁長官会合を開催。AI分野の新たな協力方針に合意 first appeared on AIポータルメディアAIsmi...",
-      "publishedDate": "Fri, 19 Jun 2026 07:18:41 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/IP5-Heads-PPH.png",
-      "language": "ja"
-    },
-    {
-      "title": "Claude CodeとOpenClawの違いとは？使い分け・連携方法・セキュリティ面の注意点を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-code-openclaw/",
-      "description": "AIコーディングツールの選択肢が増える中、AnthropicのClaudeとチャットベースの開発支援ツールはどちらも開発を効率化する強力なツールですが、その役割や得意分野は大きく異なります。 この記事では、両者の違いを整 [...] The post Claude CodeとOpenClawの違いとは？使い分け・連携方法・セキュリティ面の注意点を解説 first appeared on AIポータ...",
-      "publishedDate": "Fri, 19 Jun 2026 01:53:35 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claude-code-openclaw_ic.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/YVp5l29m.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/windevskills-build2026.png",
-      "language": "ja"
-    },
-    {
-      "title": "［速報］マイクロソフト、自社開発した7つのAIモデル「Microsoft AI Models」を発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/7aimicrosoft_ai_models.html",
-      "description": "マイクロソフトは、日本時間6月3日未明に開幕した年次イベント「Microsoft Build 2026」で、自社開発した7つのAIモデル群「Microsoft AI Models」を発表しました。 MAI-Thinking-1 Micro......",
-      "publishedDate": "2026-06-02T18:40:20Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/7mai-models-build2026.png",
       "language": "ja"
     }
   ]
