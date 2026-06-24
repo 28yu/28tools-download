@@ -115,18 +115,10 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- マニュアル - 梁天端色分け -->
+  <!-- マニュアル - 梁レベル色分け（旧 beam-top-color / beam-bottom-color を統合） -->
   <url>
-    <loc>https://28tools.com/manual/beam-top-color.html</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- マニュアル - 梁下端色分け -->
-  <url>
-    <loc>https://28tools.com/manual/beam-bottom-color.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://28tools.com/manual/beam-level-color.html</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
