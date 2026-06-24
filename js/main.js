@@ -6,7 +6,7 @@
 // includes/header.html と includes/sidebar.html を fetch() するときの
 // クエリ文字列。includes/* を編集したらここをインクリメントする。
 // (CDN edge cache が古いインクルードを返す問題への対処)
-const INCLUDES_VERSION = '20260618-2';
+const INCLUDES_VERSION = '20260624-1';
 
 // グローバル変数
 let currentLanguage = 'ja';
@@ -771,9 +771,9 @@ function initTranslations() {
             zh: 'Excel提取'
         },
         'index-tab-ai-minutes': {
-            ja: 'AI議事録',
-            en: 'AI Minutes',
-            zh: 'AI会议记录'
+            ja: '議事録作成',
+            en: 'Meeting Minutes',
+            zh: '会议记录'
         },
         'index-tab-knowledge': {
             ja: 'BIMニュース',
