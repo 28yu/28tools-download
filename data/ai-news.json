@@ -1,6 +1,116 @@
 {
-  "lastUpdated": "2026-06-24T05:03:34.699361",
+  "lastUpdated": "2026-06-25T05:07:01.318421",
   "articles": [
+    {
+      "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
+      "titleJa": "NVIDIA NeMo AutoModel によるトランスフォーマーの微調整の加速",
+      "link": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel",
+      "description": "...",
+      "publishedDate": "Wed, 24 Jun 2026 16:00:13 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/690d0a6c2c5acfe0e1f4777d/1N4GjIYBsZ6RCReRx_qBB.png",
+      "language": "en"
+    },
+    {
+      "title": "Europe’s extreme heat is shutting down power plants",
+      "titleJa": "ヨーロッパの猛暑で発電所が停止中",
+      "link": "https://www.technologyreview.com/2026/06/24/1139676/europe-heat-power-plants/",
+      "description": "Europe is in the middle of a record-breaking heat wave, and the grid is being pushed to its limits as people turn to fans and air-conditioning to try to stay cool. Some power plants won’t be online to...",
+      "publishedDate": "Wed, 24 Jun 2026 15:25:28 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/260623_Powerplantsheat.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "The Download: introducing the Engineering issue",
+      "titleJa": "ダウンロード: エンジニアリングの問題の紹介",
+      "link": "https://www.technologyreview.com/2026/06/24/1139658/the-download-introducing-engineering-issue/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Introducing: the Engineering issue We can’t fix ev...",
+      "publishedDate": "Wed, 24 Jun 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2019/12/gamingaddictioneyesthumbnail-9.jpg?w=1000",
+      "language": "en"
+    },
+    {
+      "title": "Stripe, Anthropic, and OpenAI are backing an effort to stop respiratory infections",
+      "titleJa": "Stripe、Anthropic、OpenAI は呼吸器感染症を阻止する取り組みを支援しています",
+      "link": "https://www.technologyreview.com/2026/06/24/1139621/stripe-anthropic-and-openai-are-backing-an-effort-to-stop-respiratory-infections/",
+      "description": "The common cold comes for us all—often more than once a year. And there is no way to prevent it. The best you can do is take vitamin C and stay away from people with the sniffles. Now the payment comp...",
+      "publishedDate": "Wed, 24 Jun 2026 12:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/260623_respiratorydisease.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "The emergence of the web data infrastructure layer for AI",
+      "titleJa": "AI 用の Web データ インフラストラクチャ層の出現",
+      "link": "https://www.technologyreview.com/2026/06/24/1139202/the-emergence-of-the-web-data-infrastructure-layer-for-ai/",
+      "description": "AI is booming. New use cases are emerging each day. To capitalize on the technology’s potential, enterprises require data at scale. In many cases, though, the relevant information is blocked or unstru...",
+      "publishedDate": "Wed, 24 Jun 2026 11:59:54 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/iStock-1714934690.jpg",
+      "language": "en"
+    },
+    {
+      "title": "This flying solar-powered platform could deliver better internet from the air",
+      "titleJa": "この空飛ぶ太陽光発電プラットフォームは、空からより優れたインターネットを提供できる可能性がある",
+      "link": "https://www.technologyreview.com/2026/06/24/1138771/solar-powered-platform-delivers-better-internet/",
+      "description": "As soon as August, a giant silver bullet will cut its way through the dry air of the southwestern US and cross the Pacific to reach the coast of Japan.&#160; Once there, the roughly 200-foot-long craf...",
+      "publishedDate": "Wed, 24 Jun 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/Sceye-HAPS-4.jpg?w=2990",
+      "language": "en"
+    },
+    {
+      "title": "All challenges big and small",
+      "titleJa": "大小を問わずすべての課題",
+      "link": "https://www.technologyreview.com/2026/06/24/1138853/editors-letter-july-2026/",
+      "description": "When I was 18, I skipped my high school graduation and headed to Kuwait. It was 1991, the first Gulf War had just ended, and the country was in complete chaos. There was little to no electricity, asid...",
+      "publishedDate": "Wed, 24 Jun 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2021/09/mat_final.png?w=1000",
+      "language": "en"
+    },
+    {
+      "title": "生成AIの最新比較表！無料と有料の判断軸も網羅！おすすめ生成AIサービスの特徴や料金を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/chatgpt-bard-bingai/",
+      "description": "生成AIは文章・画像・動画・音声・音楽・コードの生成など、さまざまな用途に対応するサービスが増加しています。そのため「種類が多すぎて何を選べばいいかわからない」と感じる方も多いのではないでしょうか。 この記事では、用途別 [...]...",
+      "publishedDate": "Wed, 24 Jun 2026 07:34:10 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-bard-bingai_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "CopilotとChatGPTの違いとは？料金・機能・選び方を徹底比較",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/copilot-chatgpt-difference/",
+      "description": "「CopilotとChatGPTは何が違うのか」「自社が導入するならどちらを選ぶべきか」と迷っていませんか。どちらも文章作成やデータ分析に使える生成AIですが、提供元も得意分野も異なります。 さらに2026年は、両者の料 [...] The post CopilotとChatGPTの違いとは？料金・機能・選び方を徹底比較 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 24 Jun 2026 06:41:01 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/copilot-chatgpt-difference_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+      "titleJa": "OpenAI と Broadcom が LLM に最適化された推論チップを発表",
+      "link": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "description": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems....",
+      "publishedDate": "Wed, 24 Jun 2026 06:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
     {
       "title": "PLaMo 3.0 Primeとは？国産フルスクラッチAIの性能・料金・使い方を徹底解説",
       "titleJa": null,
@@ -13,26 +123,59 @@
       "language": "ja"
     },
     {
-      "title": "GPT-Realtime-2とは？OpenAI新音声3モデルの違い・料金・使い分けを徹底解説",
+      "title": "Genki Global Dining Concepts、全生け簀へのAI給餌機導入で国産真鯛の安定供給を強化",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gpt-realtime2-translate-whisper/",
-      "description": "OpenAIは2026年5月、Realtime API向けに音声インテリジェンスを大きく前進させる新モデル3種を一挙に公開しました。 中核となる「GPT-Realtime-2」はGPT-5クラスの推論能力を備えた音声対話 [...] The post GPT-Realtime-2とは？OpenAI新音声3モデルの違い・料金・使い分けを徹底解説 first appeared on AIポータルメディ...",
-      "publishedDate": "Wed, 24 Jun 2026 01:13:24 +0000",
+      "link": "https://aismiley.co.jp/ai_news/genki-gdc-ai-aquaculture/",
+      "description": "Genki Global Dining Conceptsは、AI搭載スマート給餌機「UMITRON CELL®」を7月末までに南伊勢町の全生け簀へ導入します。品質の安定や飼料コストの削減を図り、真鯛の安定供給を強化します [...] The post Genki Global Dining Concepts、全生け簀へのAI給餌機導入で国産真鯛の安定供給を強化 first appeared on ...",
+      "publishedDate": "Wed, 24 Jun 2026 03:19:00 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/gptrealtime2.jpg",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/genki-gdc-ai-aquaculture4.png",
       "language": "ja"
     },
     {
-      "title": "FDEとは？AI導入を現場に定着させる役割・他職種との違い・スキル",
+      "title": "三菱重工とPFNが業務提携。ミッションクリティカル領域の国産AI技術の共同開発へ",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/fde-forward-deployed-engineer/",
-      "description": "AIツールや生成AIを導入したものの、PoC（Proof of Concept：本格導入の前に行う試験的な検証）の段階で止まってしまう。あるいは導入したのに現場で使われない。こうした状態に心当たりのある担当者は少なくない [...] The post FDEとは？AI導入を現場に定着させる役割・他職種との違い・スキル first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 24 Jun 2026 01:11:21 +0000",
+      "link": "https://aismiley.co.jp/ai_news/mhi-pfn-ai-alliance/",
+      "description": "三菱重工とPFNは、ミッションクリティカルな機械・システムの知能化に向け、最先端AI技術の共同開発に関する業務提携契約を締結しました。自律型AIを活用した開発の検討を行い、2026年度内には資本業務提携の締結を目指します [...] The post 三菱重工とPFNが業務提携。ミッションクリティカル領域の国産AI技術の共同開発へ first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Wed, 24 Jun 2026 03:06:51 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/fde.jpg",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/mhi-pfn-ai-alliance-eye.png",
       "language": "ja"
+    },
+    {
+      "title": "Copilot Notebookとは？使い方・料金・NotebookLMとの違いを解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/copilot-notebook/",
+      "description": "「社内の資料がバラバラで、探すのが面倒」「生成AIに自社資料を読ませたいが、関係ないWeb情報を混ぜた不正確な回答に困っている」 そんなDX推進・情報システム担当者の悩みを解決するのが「Copilot Notebook」 [...] The post Copilot Notebookとは？使い方・料金・NotebookLMとの違いを解説 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Wed, 24 Jun 2026 01:51:53 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/copilot-notebook_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Copilot無料版でできることは？有料版との違い・使い方を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/copilot-free/",
+      "description": "「Copilotの無料版でどこまでできるの？」「有料版とは何が違う？」「業務で使っても安全？」 Microsoftの生成AI「Copilot（コパイロット）」を使い始めるとき、こうした疑問を持つ方は多いのではないでしょう [...] The post Copilot無料版でできることは？有料版との違い・使い方を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 24 Jun 2026 01:51:19 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/copilot-free_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Introducing the FFASR Leaderboard: Benchmarking ASR in the Real World",
+      "titleJa": "FFASR リーダーボードの紹介: 現実世界での ASR のベンチマーク",
+      "link": "https://huggingface.co/blog/ffasr-leaderboard",
+      "description": "...",
+      "publishedDate": "Wed, 24 Jun 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/ffasr-leaderboard/thumbnail.png",
+      "language": "en"
     },
     {
       "title": "We’re announcing new community investments in Missouri.",
@@ -200,72 +343,6 @@
       "language": "en"
     },
     {
-      "title": "Stand Up for Research, Innovation, and Education",
-      "titleJa": "研究、イノベーション、教育のために立ち上がる",
-      "link": "https://www.technologyreview.com/2026/06/23/1138274/stand-up-for-research-innovation-and-education-6/",
-      "description": "Right now, MIT alumni and friends are voicing their support for: America’s scientific and technological leadership Merit-based admissions and affordable education Advances that increase US health, sec...",
-      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/08/standup2.jpeg?w=693",
-      "language": "en"
-    },
-    {
-      "title": "Ultrasound imaging turns a robot hand into a skillful mimic",
-      "titleJa": "超音波画像診断によりロボットハンドが熟練した模倣者に変わる",
-      "link": "https://www.technologyreview.com/2026/06/23/1138279/ultrasound-imaging-turns-a-robot-hand-into-a-skillful-mimic/",
-      "description": "Our hands are the nimblest parts of our bodies, coordinating 34 muscles, 27 joints, and over 100 tendons and ligaments to perform countless nuanced movements and gestures. So far, robots have been not...",
-      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/MIT-Hand-Tracker-02-press.jpg?w=3000",
-      "language": "en"
-    },
-    {
-      "title": "Reinventing the zipper",
-      "titleJa": "ジッパーの再発明",
-      "link": "https://www.technologyreview.com/2026/06/23/1138282/reinventing-the-zipper/",
-      "description": "With an adaptable fastener designed at CSAIL, pitching a tent or adjusting the cast for a broken bone could be almost as easy as zipping your coat. The researchers, led by associate professor Stefanie...",
-      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/MIT-News-YZipper.png?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Engineered “mini livers” could be injected as an alternative to transplantation",
-      "titleJa": "移植の代替として、人工的に作られた「ミニ肝臓」を注射できる可能性がある",
-      "link": "https://www.technologyreview.com/2026/06/23/1138285/engineered-mini-livers-could-be-injected-as-an-alternative-to-transplantation/",
-      "description": "A technology developed by Professor Sangeeta Bhatia, SM ’93, PhD ’97, and colleagues could offer new hope to the thousands of Americans with chronic liver disease who are waiting for an organ transpla...",
-      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/MIT-injectable-liver-01-press.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Plants appear to detect the patter of falling rain",
-      "titleJa": "植物は降る雨のパターンを感知しているようです",
-      "link": "https://www.technologyreview.com/2026/06/23/1138288/plants-appear-to-detect-the-patter-of-falling-rain/",
-      "description": "MIT engineers have found the first direct evidence that plant seeds can sense sounds in nature: Rice submerged in shallow water germinated 30% to 40% more quickly when exposed to vibrations from water...",
-      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/MIT-SeedSound-01-press.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "A breath test could diagnose pneumonia in minutes",
-      "titleJa": "呼気検査で肺炎を数分で診断できる",
-      "link": "https://www.technologyreview.com/2026/06/23/1138291/a-breath-test-could-diagnose-pneumonia-in-minutes/",
-      "description": "With a test being developed at MIT, diagnosing pneumonia and other lung conditions could someday be as easy as breathing into a tube.&#160; The test, dubbed PlasmoSniff, is a portable, chip-scale sens...",
-      "publishedDate": "Tue, 23 Jun 2026 21:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/MIT-PlasmoSniff-02-press.jpg?w=2500",
-      "language": "en"
-    },
-    {
       "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
       "titleJa": "GPT-5 は免疫学者デリヤ・ウヌトマズ氏の 3 年来の謎の解決にどのように役立ったか",
       "link": "https://openai.com/index/gpt-5-immunology-mystery",
@@ -297,83 +374,6 @@
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/649d9ad1500fd8d51a675a93/p9JwFYkZS7fB9g2PMFMft.png",
       "language": "en"
-    },
-    {
-      "title": "清水建設、鉄筋の加工・組立作業に「フィジカルAI」導入。スイスMESH AG社に出資し自動化を推進",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/shimizu-corp-physical-ai-mesh-ag/",
-      "description": "清水建設は、ロボットアームの自動制御ソフトウェアを保有するスイス・MESH AG社に出資しました。両社の協業により、建設生産プロセスの一部に「フィジカルAI」を導入します。 このニュースのポイント 清水建設、スイス・ME [...] The post 清水建設、鉄筋の加工・組立作業に「フィジカルAI」導入。スイスMESH AG社に出資し自動化を推進 first appeared on AIポータル...",
-      "publishedDate": "Tue, 23 Jun 2026 09:14:30 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/shimizucorpeye.png",
-      "language": "ja"
-    },
-    {
-      "title": "SpaceX、ナスダックで最大規模のIPOを実施。AIベンチャー統合による軌道上データセンター構想",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/spacex-nasdaq-ipo-ai/",
-      "description": "SpaceXは、ナスダック証券取引所にて新規株式公開（IPO）を実施し、1株150ドルで取引を開始しました。同社は今年初めにAIベンチャーを統合しており、今後は衛星ネットワークとAIを組み合わせた「軌道上AIデータセンタ [...] The post SpaceX、ナスダックで最大規模のIPOを実施。AIベンチャー統合による軌道上データセンター構想 first appeared on AIポータル...",
-      "publishedDate": "Tue, 23 Jun 2026 09:11:05 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/spacexnasdaqeye.png",
-      "language": "ja"
-    },
-    {
-      "title": "豊島区、区役所本庁舎でAIアバターによる窓口無人対応の実証実験を開始。来庁者問い合わせに自動で応答",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/toshima-city-ai-avatar-field-test/",
-      "description": "豊島区は、区役所本庁舎において、AIアバターによる窓口の無人対応の実証実験を6月15日から開始しました。デジタルサイネージに投影されたAIアバターが、来庁者からの問い合わせに自動で応答します。 このニュースのポイント 豊 [...] The post 豊島区、区役所本庁舎でAIアバターによる窓口無人対応の実証実験を開始。来庁者問い合わせに自動で応答 first appeared on AIポータル...",
-      "publishedDate": "Tue, 23 Jun 2026 08:42:53 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/toshimacityeye.png",
-      "language": "ja"
-    },
-    {
-      "title": "ソフトバンクG、OpenAI技術活用のサイバーセキュリティー対策ソリューション提供開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/softbank-patching-as-a-service/",
-      "description": "ソフトバンクグループは、OpenAIの技術を活用したサイバーセキュリティー対策ソリューション「Patching as a Service」の提供を開始します。 このニュースのポイント ソフトバンクG、OpenAI技術を活 [...] The post ソフトバンクG、OpenAI技術活用のサイバーセキュリティー対策ソリューション提供開始 first appeared on AIポータルメディアAI...",
-      "publishedDate": "Tue, 23 Jun 2026 08:28:15 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/softbankpatchingasaserviceeye.png",
-      "language": "ja"
-    },
-    {
-      "title": "インフォマティクス、自治体向け「GC Navi」にAIチャット機能を追加。自然な対話と地図連動で住民対応の負荷を軽減",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gis-gcnavi-aichat-localgovernment/",
-      "description": "インフォマティクスは、自治体向け公開型GIS「GC Navi」において、独自開発の生成AIチャット機能をオプション提供します。住民からの問い合わせに対し、AIが会話形式で回答し、関連情報を地図上に表示できるのが特徴です。 [...] The post インフォマティクス、自治体向け「GC Navi」にAIチャット機能を追加。自然な対話と地図連動で住民対応の負荷を軽減 first appeared ...",
-      "publishedDate": "Tue, 23 Jun 2026 08:22:32 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/gcnaviaichat1.png",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Opus 4.8とは？4.7からの進化点・新機能・料金を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-opus-4-8/",
-      "description": "Anthropicは2026年5月28日、Opusシリーズの最新モデル「Claude Opus 4.8」を公開しました。ベンチマーク全般での性能向上に加えて、自らの作業の不確実性を申告する「正直さ」や長時間タスクの自走な [...] The post Claude Opus 4.8とは？4.7からの進化点・新機能・料金を徹底解説 first appeared on AIポータルメディアAIsmil...",
-      "publishedDate": "Tue, 23 Jun 2026 06:28:16 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/claudeopus48main.png",
-      "language": "ja"
-    },
-    {
-      "title": "Siri AIとは？対応機種や提供時期・できることを完全解説【WWDC26】",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/siri-ai-wwdc26-apple/",
-      "description": "2026年6月8日にApple本社で開催されたWWDC26にて、刷新版アシスタント「Siri AI」が発表されました。同社のパーソナルインテリジェンス基盤「Apple Intelligence」に、画面内容の理解や個人デ [...] The post Siri AIとは？対応機種や提供時期・できることを完全解説【WWDC26】 first appeared on AIポータルメディアAIsmile...",
-      "publishedDate": "Tue, 23 Jun 2026 06:13:05 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/siriaimain.png",
-      "language": "ja"
     },
     {
       "title": "Sakana Fuguとは？Sakana AIのマルチエージェント統合AIモデルを徹底解説",
@@ -442,69 +442,80 @@
       "language": "en"
     },
     {
-      "title": "How AI Mode is changing the way people search in the U.S.",
-      "titleJa": "AI モードが米国の人々の検索方法をどのように変えるか",
-      "link": "https://blog.google/products-and-platforms/products/search/ai-mode-us-insights/",
-      "description": "A graphic features the text \"How people are using AI Mode in the U.S.\" surrounded by colorful, stylized illustrations of a pencil, planet, banana, gift box, cursor, gamepad, and lipstick on a light bl...",
-      "publishedDate": "Tue, 19 May 2026 17:45:00 +0000",
-      "source": "Google AI Blog",
+      "title": "生成AIで議事録作成を効率化！おすすめ無料・有料ツール20選と選び方や注意点を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/gen-ai-minutes",
+      "description": "生成AIは、文章作成や情報整理などさまざまな業務の効率化に役立つ技術ですが、近年では議事録作成にも活用されています。生成AI議事録ツールを使えば、会議中に細かくメモを取ったり、録音した音声を聞き直しながら手作業で議事録を [...]...",
+      "publishedDate": "Thu, 25 Jun 2026 04:44:09 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/gen-ai-minutes_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Preferred Networks、国産生成AI基盤モデル「PLaMo 3.0 Prime」を正式提供開始。",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/plamo-3-0-prime-release/",
+      "description": "Preferred Networks（PFN）は、国産生成AI基盤モデル「PLaMo 3.0 Prime」の正式提供開始を発表しました。NICTとの共同研究で得られた事前学習モデルをベースに開発され、企業利用における実用 [...] The post Preferred Networks、国産生成AI基盤モデル「PLaMo 3.0 Prime」を正式提供開始。 first appeared on ...",
+      "publishedDate": "Thu, 25 Jun 2026 03:09:03 +0000",
+      "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_Mode_US.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Predicting model behavior before release by simulating deployment",
-      "titleJa": "デプロイメントをシミュレートすることでリリース前にモデルの動作を予測する",
-      "link": "https://openai.com/index/deployment-simulation",
-      "description": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy....",
-      "publishedDate": "Tue, 16 Jun 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
-      "titleJa": "エージェントが 2 つのハグ顔スペースを連鎖させて 3D パリ ギャラリーを構築した方法",
-      "link": "https://huggingface.co/blog/mishig/spaces-agents-md",
-      "description": "...",
-      "publishedDate": "Tue, 09 Jun 2026 10:46:19 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/60a551a34ecc5d054c8ad93e/0tamlKpAvO3lZEklNmwHT.png",
-      "language": "en"
-    },
-    {
-      "title": "動画の文字起こしを自動化できるAIツール12選！活用シーンや選び方、注意点もわかりやすく紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/video-transcription/",
-      "description": "動画に字幕を手軽に付けたい、ウェビナーや社内会議をテキスト化して社内共有したいなど、動画の文字起こしニーズが急速に高まっています。生成AIの進化によって、従来の手作業とは比較にならないほど短時間かつ高精度に、しかも無料か [...]...",
-      "publishedDate": "Sun, 21 Jun 2026 15:32:43 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/video-transcription_2606-1024x576.webp",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/PLaMo-3.0-Prime-Release.png",
       "language": "ja"
     },
     {
-      "title": "ChatGPTの会話履歴とは？履歴検索や保存方法、他人にバレないようにする方法を解説",
+      "title": "Sakana AI、マルチエージェント基盤「Sakana Fugu」提供開始。一部ベンチマークで「Fable 5」「Mythos Preview」と同等性能",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chatgpt-conversation-history/",
-      "description": "ChatGPTでは、過去の会話履歴を自動保存できるだけでなく、キーワード検索で以前のチャットを探すことも可能です。「昔の会話をもう一度見たい」「過去の回答を検索したい」と感じたことがある方も多いのではないでしょうか。 こ [...]...",
-      "publishedDate": "Sun, 21 Jun 2026 14:58:37 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-conversation-history_2606-1024x576.webp",
+      "link": "https://aismiley.co.jp/ai_news/sakana-ai-sakana-fugu-release/",
+      "description": "Sakana AIは、複数のAIモデルを単一の基盤として提供する新モデル「Sakana Fugu」の提供を開始しました。上位モデルの「Fugu Ultra」は、一部ベンチマークで「Fable 5」「Mythos Prev [...] The post Sakana AI、マルチエージェント基盤「Sakana Fugu」提供開始。一部ベンチマークで「Fable 5」「Mythos Preview」と...",
+      "publishedDate": "Thu, 25 Jun 2026 02:54:23 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/sakanafugueye.png",
       "language": "ja"
     },
     {
-      "title": "生成AIツールおすすめ28選！種類・料金・目的別の選び方を徹底解説",
+      "title": "LiDAR（ライダー）とは？仕組み・種類から活用事例・最新動向までわかりやすく解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/gen-ai-service/",
-      "description": "業務効率化のために生成AIツールを調べても、候補が多すぎてどれを選べばいいかわからず、ツール選びに迷う担当者は多いです。文章・画像・動画・音声・コード・音楽生成・リサーチなどのカテゴリでツールが続々と登場しており、無料プ [...]...",
-      "publishedDate": "Sun, 21 Jun 2026 13:48:34 +0000",
+      "link": "https://aismiley.co.jp/ai_news/lidar-core-technology-2026/",
+      "description": "自動運転やiPhoneのカメラ機能などで耳にする機会が増えた「LiDAR（ライダー）」。「名前は知っているけれど、今のビジネスや生活にどう役立つのかピンとこない」という方も多いのではないでしょうか。 LiDARとは、光で [...] The post LiDAR（ライダー）とは？仕組み・種類から活用事例・最新動向までわかりやすく解説 first appeared on AIポータルメディアAIsm...",
+      "publishedDate": "Thu, 25 Jun 2026 01:58:36 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/lidar.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Tagとは？Slackに常駐するAIチームメイトの使い方・料金・活用シーンを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-tag/",
+      "description": "2026年6月24日、Anthropicがチーム向けの新機能「Claude Tag」をベータ公開しました！ これまでのClaude CodeやCoworkは、基本的に「一人のユーザーが一つのタスクに取り組む」スタイルでし [...]...",
+      "publishedDate": "Thu, 25 Jun 2026 01:48:50 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/gen-ai-service_2606-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Tag_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Copilotエージェントとは？できること・種類・作り方からセキュリティ・必要ライセンスまで徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/copilot-agents-microsoft-365/",
+      "description": "「CopilotとCopilotエージェントって何が違うの？」と疑問に思っていませんか？ 本記事では、通常版やチャットボットとの決定的な違いから、ノーコードでの作り方、情報漏洩を防ぐセキュリティ対策、ライセンス費用までを [...] The post Copilotエージェントとは？できること・種類・作り方からセキュリティ・必要ライセンスまで徹底解説 first appeared on AIポータ...",
+      "publishedDate": "Thu, 25 Jun 2026 01:12:55 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/CopilotAgent.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "建設・不動産向けAIサービスカオスマップを公開！–施工管理から不動産業務まで122製品を掲載–",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/construction-property-ai-chaosmap/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、建設・不動産業界の生産性向上やDX推進を支援するAIソリューションをまとめた「建設・不動産向けAIサービスカオスマップ」を2026年 [...] The post 建設・不動産向けAIサービスカオスマップを公開！–施工管理から不動産業務まで122製品を掲載– first appeared on AIポータルメデ...",
+      "publishedDate": "Thu, 25 Jun 2026 01:00:38 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/construction-property-ai-chaosmap_00.png",
       "language": "ja"
     },
     {
@@ -530,17 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "デンソーテン、独自の埋め込みモデル学習技術により車載エッジでRAGを省メモリ化",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/densoten-rag-onboard-hmi-ai/",
-      "description": "デンソーテンは、車載エッジデバイス上でRAGを省メモリで実行できる生成AI技術を開発しました。独自の埋め込みモデル学習技術により、ベクトルデータベースの省サイズ化を実現しています。 このニュースのポイント デンソーテンが [...] The post デンソーテン、独自の埋め込みモデル学習技術により車載エッジでRAGを省メモリ化 first appeared on AIポータルメディアAIsmil...",
-      "publishedDate": "Mon, 22 Jun 2026 08:46:22 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/DENSOTEN-RAG-AI.png",
-      "language": "ja"
-    },
-    {
       "title": "生成AI OCRとは？情報システム部門が知るべき導入メリットとおすすめツールを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/generation-ai-ocr",
@@ -549,6 +549,17 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/generation-ai-ocr_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AWS Lambda MicroVMs登場。サーバレスの手軽さでステートフルかつ隔離された実行環境を提供",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/aws_lambda_microvms.html",
+      "description": "Amazon Web Servicesは、AWS Lambda上で一時的にステートフルな実行環境をMicroVMによって安全に隔離された状態で用意できる新サービス「AWS Lambda Micro VMs」を発表しました。 AWS Lamb......",
+      "publishedDate": "2026-06-24T15:40:24Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/awslambda-microvms-ann.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/azurelinux40pv.png",
-      "language": "ja"
-    },
-    {
-      "title": "マイクロソフト、AIエージェントにWindowsアプリ開発の知識を与える「Windows Development Skills」を一般提供開始",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/aiwindowswindows_development_skills.html",
-      "description": "マイクロソフトは日本時間6月3日未明に開幕した年次イベント「Microsoft Build 2026」で、AIエージェントにWindowsアプリ開発のライフサイクル全体に関する知識を与える「Windows Development Skill......",
-      "publishedDate": "2026-06-03T15:11:06Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/windevskills-build2026.png",
       "language": "ja"
     }
   ]
