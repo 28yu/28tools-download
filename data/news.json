@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T02:28:47.818581",
+  "lastUpdated": "2026-06-25T02:30:22.137001",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -10,6 +10,66 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "大林組、BIM図面審査対応の確認申請を複数案件で提出、3Dモデル活用し申請・審査を実施",
+      "link": "https://news.build-app.jp/article/41170/",
+      "description": "大林組（本社：東京都港区、社長：佐藤俊美）は、国土交通省が推進する建築確認におけるBIM図面審査制度への対応として、指定確認検査機関や構造適......",
+      "publishedDate": "Wed, 24 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/01/AdobeStock_240970580-2-130x87.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、建設工事受注動態統計4月分公表、民間・公共とも減少し総額32.3％減",
+      "link": "https://news.build-app.jp/article/41178/",
+      "description": "国土交通省は令和8年5月29日、建設工事受注動態統計調査（大手50社調査）の令和8年4月分を公表しました。令和8年4月の受注総額は1兆4,3......",
+      "publishedDate": "Wed, 24 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/33863440_m-130x95.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "根切りとは？意味・種類・施工手順をわかりやすく解説｜床付け・根入れとの違いも紹介",
+      "link": "https://news.build-app.jp/article/41181/",
+      "description": "建築や土木の現場で「根切り」という言葉を聞いたものの、「掘削と何が違うのか」「床付けや根入れとの違いがわからない」と感じていないでしょうか。......",
+      "publishedDate": "Wed, 24 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/2ac54835e711e81884ac0c477242bb91-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "ジール、清水建設の大規模データを高速処理する高度なデータ活用基盤構築を支援",
+      "link": "https://news.build-app.jp/article/41155/",
+      "description": "アバントグループで、デジタルトランスフォーメーション（以下「DX」）推進事業を展開する株式会社ジール（本社：東京都品川区、代表取締役社長：沼......",
+      "publishedDate": "Wed, 24 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/d2d3ca514ee8d0f0a1f73cc3d0eed088-130x60.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "DfMAシンポジウムvol.2 －リア・ローディングからの脱却－_開催レポート【第4回】|株式会社カワトT.P.C 代表取締役会長 川戸俊彦、新規開発担当 田中聡",
+      "link": "https://news.build-app.jp/article/41130/",
+      "description": "人手不足や時間外労働規制を背景に、日本の建設産業では、現場に負荷が集中する従来のリア・ローディング型のプロセスからの転換が求められています。......",
+      "publishedDate": "Wed, 24 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/66a4ecf73eee35f8773ab7559be2c814-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "大成建設がT-ジェット工法を改良、アスベスト除去で2カ所同時施工と効率2倍を実現",
+      "link": "https://news.build-app.jp/article/41168/",
+      "description": "大成建設は2026年5月28日、アスベスト含有吹付材をウォータージェットで除去する独自工法「T-ジェット工法」について、装置性能の大幅な向上......",
+      "publishedDate": "Tue, 23 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/23398670_m-130x98.jpg",
+      "language": "ja"
     },
     {
       "title": "大林組、自動充電ポート付きドローンの遠隔運航レベル3.5飛行と点群データ生成の自動化に成功",
@@ -82,16 +142,6 @@
       "language": "en"
     },
     {
-      "title": "建設物価調査会とは？｜役割・建設物価・経済調査会との違いをわかりやすく解説",
-      "link": "https://news.build-app.jp/article/41126/",
-      "description": "建設物価調査会について調べているものの、「どのような団体なのかよくわからない」「積算資料や建設物価とどう関係しているのか知りたい」と感じてい......",
-      "publishedDate": "Thu, 18 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/8aaf3d445cde9569d844d932c3fbaf60-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "ARES CADアドイン開発で言語選びを誤ると後悔する3つの理由",
       "link": "https://axconstdx.com/2026/06/18/ares-cad%e3%82%a2%e3%83%89%e3%82%a4%e3%83%b3%e9%96%8b%e7%99%ba%e3%81%a7%e8%a8%80%e8%aa%9e%e9%81%b8%e3%81%b3%e3%82%92%e8%aa%a4%e3%82%8b%e3%81%a8%e5%be%8c%e6%82%94%e3%81%99%e3%82%8b3%e3%81%a4%e3%81%ae/?utm_source=rss&utm_medium=rss&utm_campaign=ares-cad%25e3%2582%25a2%25e3%2583%2589%25e3%2582%25a4%25e3%2583%25b3%25e9%2596%258b%25e7%2599%25ba%25e3%2581%25a7%25e8%25a8%2580%25e8%25aa%259e%25e9%2581%25b8%25e3%2581%25b3%25e3%2582%2592%25e8%25aa%25a4%25e3%2582%258b%25e3%2581%25a8%25e5%25be%258c%25e6%2582%2594%25e3%2581%2599%25e3%2582%258b3%25e3%2581%25a4%25e3%2581%25ae",
       "description": "「どの言語を選べばいいのか、さっぱりわからない」——ARES CADのアドイン開発を始めようとした瞬間、そう頭を抱えた経験はありませんか。言語選びを一度誤ると、開発の途中で大規模なやり直しが発生します。この記事を読めば、 [...] <p>The post ARES CADアドイン開発で言語選びを誤ると後悔する3つの理由 first appeared on 生成AIと建設DX.</p>...",
@@ -132,26 +182,6 @@
       "language": "en"
     },
     {
-      "title": "スパイダープラス、大手総合建設会社の鴻池組と「仕上検査音声入力AI機能」を共同開発",
-      "link": "https://news.build-app.jp/article/41028/",
-      "description": "建設DXサービス「SPIDER+」を開発・販売するスパイダープラス株式会社は、大手総合建設会社である株式会社鴻池組と共同で、仕上検査（※1）......",
-      "publishedDate": "Sun, 21 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/09/p1kRrsFuPLaOd3G1661993808_1661993827-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新版】建設キャリアアップシステムとは？事業者登録・費用・現場運用・導入事例を解説",
-      "link": "https://news.build-app.jp/article/41117/",
-      "description": "建設キャリアアップシステムは、建設技能者の資格や就業履歴を蓄積する仕組みです。略称としてCCUSとも呼ばれます。事業者が導入する場合は、登録......",
-      "publishedDate": "Sun, 21 Jun 2026 13:54:38 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/4798369_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "「言葉で穴を開けて」Fusion MCPがCAD設計を変える日",
       "link": "https://axconstdx.com/2026/06/21/%e3%80%8c%e8%a8%80%e8%91%89%e3%81%a7%e7%a9%b4%e3%82%92%e9%96%8b%e3%81%91%e3%81%a6%e3%80%8dfusion-mcp%e3%81%8ccad%e8%a8%ad%e8%a8%88%e3%82%92%e5%a4%89%e3%81%88%e3%82%8b%e6%97%a5/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2580%258c%25e8%25a8%2580%25e8%2591%2589%25e3%2581%25a7%25e7%25a9%25b4%25e3%2582%2592%25e9%2596%258b%25e3%2581%2591%25e3%2581%25a6%25e3%2580%258dfusion-mcp%25e3%2581%258ccad%25e8%25a8%25ad%25e8%25a8%2588%25e3%2582%2592%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b%25e6%2597%25a5",
       "description": "マウス操作に時間を奪われ、頭の中の理想と手の中の図面がずれていく。そんな経験はありませんか。Claude×Fusion MCPは、言葉で語るだけで設計が形になる、新しい働き方への第一歩です。 はじめに CADを言葉で動か [...] <p>The post 「言葉で穴を開けて」Fusion MCPがCAD設計を変える日 first appeared on 生成AIと建設DX.</p>...",
@@ -172,33 +202,13 @@
       "language": "ja"
     },
     {
-      "title": "【大林組】液化水素冷熱の安定回収を可能とするシンプルな熱交換技術を開発",
-      "link": "https://news.build-app.jp/article/41143/",
-      "description": "株式会社大林組（本社：東京都港区、社長：佐藤俊美）は、岩谷産業株式会社（本社：大阪・東京、社長：間島寬）と共同で、国内有数の水素エネルギーの......",
+      "title": "国土交通省、4月新設住宅着工戸数62,569戸、前年同月比11.4％増で6か月ぶり増加",
+      "link": "https://news.build-app.jp/article/41175/",
+      "description": "国土交通省は令和8年5月29日、建築着工統計調査報告（令和8年4月分）を公表しました。全国における建築物の着工動態をまとめたこの統計によると......",
       "publishedDate": "Mon, 22 Jun 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/809uDWknnpUwU651641950054-130x73.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "DfMAシンポジウムvol.2 －リア・ローディングからの脱却－_開催レポート【第3回】|株式会社長谷工コーポレーション エンジニアリング事業部 DX推進室 室長 中野達也",
-      "link": "https://news.build-app.jp/article/41030/",
-      "description": "人手不足や時間外労働規制を背景に、日本の建設産業では、現場に負荷が集中する従来のリア・ローディング型のプロセスからの転換が求められています。......",
-      "publishedDate": "Mon, 22 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/2a648b94be9c126f2ffc380bf656e0a5-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "東急歌舞伎町タワー ｜「映画館の上にホテル」を実現した清水建設の施工技術を解説",
-      "link": "https://news.build-app.jp/article/41063/",
-      "description": "トレンドワード：東急歌舞伎町タワー&#160; 東急歌舞伎町タワーは、歌舞伎町の新しいシンボルとして計画された、国内最大級のエンターテインメ......",
-      "publishedDate": "Mon, 22 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/a86d81680d41edb3b4a2bb771d205cc9-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/07/image-1-130x87.jpeg",
       "language": "ja"
     },
     {
@@ -219,16 +229,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630_under100KB-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "保護中: テスト【2026年版】ファン付き作業服のおすすめランキング｜現場で選ばれるモデルと失敗しない選び方",
-      "link": "https://news.build-app.jp/article/41134/",
-      "description": "この投稿はパスワードで保護されているため抜粋文はありません。...",
-      "publishedDate": "Mon, 22 Jun 2026 05:10:01 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": null,
       "language": "ja"
     },
     {
