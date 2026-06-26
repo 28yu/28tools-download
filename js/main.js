@@ -935,16 +935,6 @@ function initTranslations() {
             en: 'Auto-collect the latest AI, ML & LLM news. Check AI trends daily.',
             zh: '自动收集AI、机器学习和LLM的最新新闻。每天查看AI趋势。'
         },
-        'index-tab-test': {
-            ja: 'テスト',
-            en: 'Test',
-            zh: '测试'
-        },
-        'index-category-test-desc': {
-            ja: '動作確認用のテストページです。',
-            en: 'A test page for verifying behavior.',
-            zh: '用于验证功能的测试页面。'
-        },
         'index-news-title': {
             ja: '新着・おすすめ',
             en: 'News & Featured',
@@ -7275,30 +7265,6 @@ translations.filledRegion = {
         }
     };
 
-    // テストページ
-    translations.testPage = {
-        'test-breadcrumb': {
-            ja: 'テストページ',
-            en: 'Test Page',
-            zh: '测试页面'
-        },
-        'test-title': {
-            ja: 'テストページ',
-            en: 'Test Page',
-            zh: '测试页面'
-        },
-        'test-subtitle': {
-            ja: '動作確認用のテストページです。',
-            en: 'A test page for verifying behavior.',
-            zh: '用于验证功能的测试页面。'
-        },
-        'test-body': {
-            ja: 'このページは表示・ナビゲーション・多言語切り替えの動作確認に使用するテストページです。',
-            en: 'This is a test page used to verify display, navigation, and language switching behavior.',
-            zh: '本页面用于验证显示、导航和多语言切换功能。'
-        }
-    };
-
     // AIニュースページ
     translations.aiNewsPage = {
         'ai-news-breadcrumb': {
@@ -7549,8 +7515,7 @@ translations.filledRegion = {
         translations.aboutPage,
         translations.termsPage,
         translations.newsPage,
-        translations.aiNewsPage,
-        translations.testPage
+        translations.aiNewsPage
     );
     
     console.log('📚 Translations initialized (v7.3 - サポート情報・インストール手順の汎用化)');
