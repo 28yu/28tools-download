@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T05:10:27.736691",
+  "lastUpdated": "2026-06-27T04:54:55.735305",
   "articles": [
     {
       "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
@@ -47,35 +47,13 @@
     },
     {
       "title": "The emergence of the web data infrastructure layer for AI",
-      "titleJa": "AI用のWebデータインフラストラクチャ層の出現",
+      "titleJa": "AI 用の Web データ インフラストラクチャ層の出現",
       "link": "https://www.technologyreview.com/2026/06/24/1139202/the-emergence-of-the-web-data-infrastructure-layer-for-ai/",
       "description": "AI is booming. New use cases are emerging each day. To capitalize on the technology’s potential, enterprises require data at scale. In many cases, though, the relevant information is blocked or unstru...",
       "publishedDate": "Wed, 24 Jun 2026 11:59:54 +0000",
       "source": "MIT Technology Review",
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/iStock-1714934690.jpg",
-      "language": "en"
-    },
-    {
-      "title": "This flying solar-powered platform could deliver better internet from the air",
-      "titleJa": "この空飛ぶ太陽光発電プラットフォームは、より優れたインターネットを空から提供できる可能性がある",
-      "link": "https://www.technologyreview.com/2026/06/24/1138771/solar-powered-platform-delivers-better-internet/",
-      "description": "As soon as August, a giant silver bullet will cut its way through the dry air of the southwestern US and cross the Pacific to reach the coast of Japan.&#160; Once there, the roughly 200-foot-long craf...",
-      "publishedDate": "Wed, 24 Jun 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/Sceye-HAPS-4.jpg?w=2990",
-      "language": "en"
-    },
-    {
-      "title": "All challenges big and small",
-      "titleJa": "大小を問わずすべての課題",
-      "link": "https://www.technologyreview.com/2026/06/24/1138853/editors-letter-july-2026/",
-      "description": "When I was 18, I skipped my high school graduation and headed to Kuwait. It was 1991, the first Gulf War had just ended, and the country was in complete chaos. There was little to no electricity, asid...",
-      "publishedDate": "Wed, 24 Jun 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2021/09/mat_final.png?w=1000",
       "language": "en"
     },
     {
@@ -124,7 +102,7 @@
     },
     {
       "title": "We’re announcing new community investments in Missouri.",
-      "titleJa": "私たちはミズーリ州での新たなコミュニティ投資を発表します。",
+      "titleJa": "私たちはミズーリ州における新たなコミュニティへの投資を発表します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
       "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
       "publishedDate": "Wed, 20 May 2026 20:40:00 +0000",
@@ -266,17 +244,6 @@
       "language": "en"
     },
     {
-      "title": "Sakana Fuguとは？Sakana AIのマルチエージェント統合AIモデルを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/sakana-fugu/",
-      "description": "2026年6月、Sakana AIから新たなオーケストレーションが公開されました。 今回発表された「Sakana Fugu」は、単一のAIモデルではなく、複数のフロンティアLLMをチームとして動かす学習型オーケストレータ [...]...",
-      "publishedDate": "Tue, 23 Jun 2026 02:56:02 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Sakana-Fugu_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "How Omio is building the future of conversational travel",
       "titleJa": "Omio は会話型旅行の未来をどのように構築しているか",
       "link": "https://openai.com/index/omio",
@@ -307,17 +274,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/cross-origin-storage/thumbnail.jpg",
-      "language": "en"
-    },
-    {
-      "title": "Predicting model behavior before release by simulating deployment",
-      "titleJa": "デプロイメントをシミュレートすることでリリース前にモデルの動作を予測する",
-      "link": "https://openai.com/index/deployment-simulation",
-      "description": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy....",
-      "publishedDate": "Tue, 16 Jun 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -387,6 +343,17 @@
       "language": "ja"
     },
     {
+      "title": "The Download: Europe’s heat wave hits the grid, and IBM’s chip targets Moore’s Law",
+      "titleJa": "ダウンロード: ヨーロッパの熱波が電力網を襲い、IBMのチップはムーアの法則をターゲットにしている",
+      "link": "https://www.technologyreview.com/2026/06/25/1139738/the-download-europe-heat-wave-ibm-chip-moores-law/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Europe’s extreme heat is shutting down power plant...",
+      "publishedDate": "Thu, 25 Jun 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2021/08/SO21_TR_20210804-personal-0001-thumb.jpg?w=2509",
+      "language": "en"
+    },
+    {
       "title": "自律型AIエージェント完全ガイド！業務が激変するAIツール17選を徹底比較",
       "titleJa": null,
       "link": "https://weel.co.jp/media/autonomous-ai-agent/",
@@ -396,6 +363,28 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/autonomous-ai-agent_2606-1024x576.webp",
       "language": "ja"
+    },
+    {
+      "title": "What Europe’s heat wave means for the power grid",
+      "titleJa": "ヨーロッパの熱波が電力網に与える影響",
+      "link": "https://www.technologyreview.com/2026/06/25/1139690/europe-heat-wave-grid/",
+      "description": "It’s been hard to look away from headlines about the European heat wave this week. Temperatures are breaking records across the continent, and the weather is threatening lives, shutting down schools, ...",
+      "publishedDate": "Thu, 25 Jun 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/260623_extremeheat.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "IBM has unveiled chip technology that could help extend Moore’s Law another decade",
+      "titleJa": "IBM、ムーアの法則をさらに10年延長するのに役立つ可能性のあるチップ技術を発表",
+      "link": "https://www.technologyreview.com/2026/06/25/1139696/ibm-unveils-sub1nm-chip/",
+      "description": "IBM has built a new prototype chip with around 100 billion transistors on an area the size of a fingernail, which is twice the density of the company’s previous state-of-the-art technology announced i...",
+      "publishedDate": "Thu, 25 Jun 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/260623_sub-1nmnodechip.jpg?resize=1200,600",
+      "language": "en"
     },
     {
       "title": "カゴメなど5者、AI選果機の共同開発と実証の成果を発表。トマトの廃棄ロスを30％低減",
@@ -442,28 +431,6 @@
       "language": "ja"
     },
     {
-      "title": "Google Cloud、Nano Banana 2とNano Banana Proの一般提供を開始。動画の内容に合った画像を生成",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/google_cloud-nano-banana-2-pro/",
-      "description": "Google Cloudが「Nano Banana 2」と「Nano Banana Pro」の一般提供を開始しました。高品質な画像生成・編集機能をアプリへ統合できるほか、動画の内容に合うサムネイルや図解画像を生成できます [...] The post Google Cloud、Nano Banana 2とNano Banana Proの一般提供を開始。動画の内容に合った画像を生成 first ap...",
-      "publishedDate": "Thu, 25 Jun 2026 08:43:48 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/202606-nano-banana-2-pro-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "Microsoft、「Copilot Cowork」一般提供を開始。「Claude Cowork」より平均30〜40％低コスト",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/microsoft-copilot-cowork-ga/",
-      "description": "Microsoftは、自律型AIエージェント「Copilot Cowork」の一般提供を開始しました。「Claude Cowork」と比較して平均30〜40％低コストで、新たにコスト管理機能やプラグインを拡充しています。 [...] The post Microsoft、「Copilot Cowork」一般提供を開始。「Claude Cowork」より平均30〜40％低コスト first appe...",
-      "publishedDate": "Thu, 25 Jun 2026 08:40:53 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/copilotcoworkeye.png",
-      "language": "ja"
-    },
-    {
       "title": "【GPT-5.5 Instant】ユーザーの意図理解が強化されたモデルの性能・使い方・活用シーンまでを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/gpt-5-5-instant/",
@@ -497,28 +464,6 @@
       "language": "ja"
     },
     {
-      "title": "Preferred Networks、国産生成AI基盤モデル「PLaMo 3.0 Prime」を正式提供開始。",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/plamo-3-0-prime-release/",
-      "description": "Preferred Networks（PFN）は、国産生成AI基盤モデル「PLaMo 3.0 Prime」の正式提供開始を発表しました。NICTとの共同研究で得られた事前学習モデルをベースに開発され、企業利用における実用 [...] The post Preferred Networks、国産生成AI基盤モデル「PLaMo 3.0 Prime」を正式提供開始。 first appeared on ...",
-      "publishedDate": "Thu, 25 Jun 2026 03:09:03 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/PLaMo-3.0-Prime-Release.png",
-      "language": "ja"
-    },
-    {
-      "title": "Sakana AI、マルチエージェント基盤「Sakana Fugu」提供開始。一部ベンチマークで「Fable 5」「Mythos Preview」と同等性能",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sakana-ai-sakana-fugu-release/",
-      "description": "Sakana AIは、複数のAIモデルを単一の基盤として提供する新モデル「Sakana Fugu」の提供を開始しました。上位モデルの「Fugu Ultra」は、一部ベンチマークで「Fable 5」「Mythos Prev [...] The post Sakana AI、マルチエージェント基盤「Sakana Fugu」提供開始。一部ベンチマークで「Fable 5」「Mythos Preview」と...",
-      "publishedDate": "Thu, 25 Jun 2026 02:54:23 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/sakanafugueye.png",
-      "language": "ja"
-    },
-    {
       "title": "Claude Tagとは？Slackに常駐するAIチームメイトの使い方・料金・活用シーンを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/claude-tag/",
@@ -527,6 +472,61 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Tag_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【GPT-5.6】Sol・Terra・Lunaの3モデル構成！OpenAI史上最強の次世代AIファミリーを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/gpt-5-6/",
+      "description": "2026年6月27日、OpenAIは次世代AIモデルファミリー「GPT-5.6」の限定プレビューを公開しました！ GPT-5.6は、最上位フラグシップの「Sol」、日常業務向けのバランス型「Terra」、高速・低コストの [...]...",
+      "publishedDate": "Sat, 27 Jun 2026 04:05:08 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-5.6-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ブロックチェーンとは？仕組み・種類・活用事例をわかりやすく解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-blockchain/",
+      "description": "「ブロックチェーン」という言葉はよく聞くものの、その仕組みを説明できる方は多くありません。「仮想通貨と何が違うのか」「自社のDXに関係があるのか」と疑問に感じている方もいるでしょう。 本記事では、ブロックチェーンとは何か [...] The post ブロックチェーンとは？仕組み・種類・活用事例をわかりやすく解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 26 Jun 2026 07:25:47 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/blockchain_ic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "2026年上半期トレンドワードランキングをPR TIMESが公開。「AI」が初の総合1位、「フィジカルAI」は前年比46倍超",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/prtimes-2026-first-half-ranking-ai/",
+      "description": "プレスリリース配信サービス「PR TIMES」は、2026年上半期に投稿された記事を対象にデータ分析を行い、各種ランキングを発表しました。 このニュースのポイント 「AI」が初の総合1位、急上昇ランキングはトップ3をAI [...] The post 2026年上半期トレンドワードランキングをPR TIMESが公開。「AI」が初の総合1位、「フィジカルAI」は前年比46倍超 first appea...",
+      "publishedDate": "Fri, 26 Jun 2026 06:44:57 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/prtimes2026firsthalfeye.png",
+      "language": "ja"
+    },
+    {
+      "title": "NECとJR東日本、「みどりの窓口AI対応サービス」の実現に向け実証実験を実施",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/nec-jr-midori-ai/",
+      "description": "NECとJR東日本は「みどりの窓口AI対応サービス」実現に向けた実証実験を2026年7月に実施します。音声対話で顧客の要望を自動整理し係員へ連携することで、きっぷ購入のスムーズ化を検証します。 このニュースのポイント N [...] The post NECとJR東日本、「みどりの窓口AI対応サービス」の実現に向け実証実験を実施 first appeared on AIポータルメディアAIsmil...",
+      "publishedDate": "Fri, 26 Jun 2026 06:31:28 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/nec-jr-midori-ai-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "Amazon、欧州の物流へ100億ユーロ以上を投資。AIとロボットの活用で人材を支援し配送を迅速化",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/amazon-europe-robotics-investment/",
+      "description": "Amazonは、先端ロボット技術を導入して欧州の物流センターを拡大させ、雇用を拡大します。また超高速配送オプションを拡大し、従業員の教育・研修プログラムに10億ドルを投資します。 このニュースのポイント Amazonは、 [...] The post Amazon、欧州の物流へ100億ユーロ以上を投資。AIとロボットの活用で人材を支援し配送を迅速化 first appeared on AIポータル...",
+      "publishedDate": "Fri, 26 Jun 2026 06:31:17 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/amazon-europe-robotics-investment-eye.png",
       "language": "ja"
     },
     {
