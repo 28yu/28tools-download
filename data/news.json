@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T02:32:45.970801",
+  "lastUpdated": "2026-06-27T02:26:25.964852",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -22,16 +22,6 @@
       "language": "ja"
     },
     {
-      "title": "国土交通省、建設工事受注動態統計4月分公表、民間・公共とも減少し総額32.3％減",
-      "link": "https://news.build-app.jp/article/41178/",
-      "description": "国土交通省は令和8年5月29日、建設工事受注動態統計調査（大手50社調査）の令和8年4月分を公表しました。令和8年4月の受注総額は1兆4,3......",
-      "publishedDate": "Wed, 24 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/33863440_m-130x95.jpg",
-      "language": "ja"
-    },
-    {
       "title": "ジール、清水建設の大規模データを高速処理する高度なデータ活用基盤構築を支援",
       "link": "https://news.build-app.jp/article/41155/",
       "description": "アバントグループで、デジタルトランスフォーメーション（以下「DX」）推進事業を展開する株式会社ジール（本社：東京都品川区、代表取締役社長：沼......",
@@ -48,7 +38,17 @@
       "publishedDate": "Wed, 24 Jun 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/66a4ecf73eee35f8773ab7559be2c814-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/42c7300c73ca395b2e59d3f7eed19c17-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、建設工事受注動態統計4月分公表、民間・公共とも減少し総額32.3％減",
+      "link": "https://news.build-app.jp/article/41178/",
+      "description": "国土交通省は令和8年5月29日、建設工事受注動態統計調査（大手50社調査）の令和8年4月分を公表しました。令和8年4月の受注総額は1兆4,3......",
+      "publishedDate": "Wed, 24 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/33863440_m-130x95.jpg",
       "language": "ja"
     },
     {
@@ -112,16 +112,6 @@
       "language": "en"
     },
     {
-      "title": "Opus 4.8とFable 5、性能差はどこで開くのか？",
-      "link": "https://axconstdx.com/2026/06/16/opus-4-8%e3%81%a8fable-5%e3%80%81%e6%80%a7%e8%83%bd%e5%b7%ae%e3%81%af%e3%81%a9%e3%81%93%e3%81%a7%e9%96%8b%e3%81%8f%e3%81%ae%e3%81%8b%ef%bc%9f/?utm_source=rss&utm_medium=rss&utm_campaign=opus-4-8%25e3%2581%25a8fable-5%25e3%2580%2581%25e6%2580%25a7%25e8%2583%25bd%25e5%25b7%25ae%25e3%2581%25af%25e3%2581%25a9%25e3%2581%2593%25e3%2581%25a7%25e9%2596%258b%25e3%2581%258f%25e3%2581%25ae%25e3%2581%258b%25ef%25bc%259f",
-      "description": "「点数が高いAIを選べば失敗しない」——そう信じてきた方ほど、選択の落とし穴にはまりやすい時代が来ています。上位AIが横並びになったいま、本当の実力は難しい課題でしか見えません。この記事を読めば、数字に惑わされず、現場で [...] <p>The post Opus 4.8とFable 5、性能差はどこで開くのか？ first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Tue, 16 Jun 2026 08:00:59 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp-eyecatch_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "The first buildingSMART openBIM Hackathon in Porto is complete",
       "link": "https://www.buildingsmart.org/the-first-buildingsmart-openbim-hackathon-in-porto-is-complete/",
       "description": "The first buildingSMART openBIM Hackathon is complete - and it delivered more than expected. Over 50 hours, 47 participants across 9 teams worked under real pressure to build solutions that work in pr...",
@@ -140,6 +130,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "【2026年版】フォークリフト免許（技能講習・特別教育）の取得方法を徹底解説｜費用・日数・資格の違いまで",
+      "link": "https://news.build-app.jp/article/41264/",
+      "description": "建設業や建材・資材業界、物流、製造業などへの転職を考えている方の中には、「フォークリフト免許はいくらかかるのか」「何日で取れるのか」「自分は......",
+      "publishedDate": "Thu, 25 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/722731f8fcfe4ed220c4c7b943477039-130x82.png",
+      "language": "ja"
     },
     {
       "title": "Makuakeで目標1319％達成！清水建設と共同開発したアシストスーツが一般発売を開始！",
@@ -212,16 +212,6 @@
       "language": "ja"
     },
     {
-      "title": "【2026年版】熱中症対策とは？｜企業がやるべき義務化対応・WBGT管理・現場DX活用法を解説",
-      "link": "https://news.build-app.jp/article/41149/",
-      "description": "建設現場や工場、倉庫などで働く従業員の熱中症対策について、「何を実施すれば法令対応になるのかわからない」「ファン付き作業服や塩飴を配布してい......",
-      "publishedDate": "Mon, 22 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/651cb4ed9a3a0c74d9caa8dfc1b0dd88-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "Claude Fable停止後の生成AI選び方｜2026年6月最新比較",
       "link": "https://axconstdx.com/2026/06/22/claude-fable%e5%81%9c%e6%ad%a2%e5%be%8c%e3%81%ae%e7%94%9f%e6%88%90ai%e9%81%b8%e3%81%b3%e6%96%b9%ef%bd%9c2026%e5%b9%b46%e6%9c%88%e6%9c%80%e6%96%b0%e6%af%94%e8%bc%83/?utm_source=rss&utm_medium=rss&utm_campaign=claude-fable%25e5%2581%259c%25e6%25ad%25a2%25e5%25be%258c%25e3%2581%25ae%25e7%2594%259f%25e6%2588%2590ai%25e9%2581%25b8%25e3%2581%25b3%25e6%2596%25b9%25ef%25bd%259c2026%25e5%25b9%25b46%25e6%259c%2588%25e6%259c%2580%25e6%2596%25b0%25e6%25af%2594%25e8%25bc%2583",
       "description": "もし今お使いのAIが突然使えなくなったら、あなたの仕事は止まってしまいませんか。実はその不安はすでに現実のものとなっています。本記事ではSWE-Bench Proという確かなベンチマークをもとに主要モデルを比較しました。 [...] <p>The post Claude Fable停止後の生成AI選び方｜2026年6月最新比較 first appeared on 生成AIと建設DX.</p>...",
@@ -260,6 +250,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "BIM-to-DWG自動化で転記ゼロへ、ARES 2027の正体",
+      "link": "https://axconstdx.com/2026/06/26/bim-to-dwg%e8%87%aa%e5%8b%95%e5%8c%96%e3%81%a7%e8%bb%a2%e8%a8%98%e3%82%bc%e3%83%ad%e3%81%b8%e3%80%81ares-2027%e3%81%ae%e6%ad%a3%e4%bd%93/?utm_source=rss&utm_medium=rss&utm_campaign=bim-to-dwg%25e8%2587%25aa%25e5%258b%2595%25e5%258c%2596%25e3%2581%25a7%25e8%25bb%25a2%25e8%25a8%2598%25e3%2582%25bc%25e3%2583%25ad%25e3%2581%25b8%25e3%2580%2581ares-2027%25e3%2581%25ae%25e6%25ad%25a3%25e4%25bd%2593",
+      "description": "BIMを導入したのに、現場の図面は今もDWGで止まっていませんか。設計と現場が分断したまま、転記の手間や手戻りが静かに積み重なり、いつまでも「DXが進んだ実感」が持てない。そんな悩みを抱える方も多いはずです。AIとクラウ [...] <p>The post BIM-to-DWG自動化で転記ゼロへ、ARES 2027の正体 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Fri, 26 Jun 2026 14:15:21 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/ares_2027_eyecatch_1200x630_under100kb-1024x538.jpg",
+      "language": "ja"
     },
     {
       "title": "ARES Commander 2027、開くのが20%速くなった理由とは",
