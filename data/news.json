@@ -1,16 +1,6 @@
 {
-  "lastUpdated": "2026-06-27T02:26:25.964852",
+  "lastUpdated": "2026-06-28T02:38:17.404826",
   "articles": [
-    {
-      "title": "buildingSMART International announces that Céline Bent has left the organisation",
-      "link": "https://www.buildingsmart.org/buildingsmart-international-announces-that-celine-bent-has-left-the-organisation/",
-      "description": "London, U.K. – January 28th, 2026 — buildingSMART International (bSI) announces that Céline Bent has left the organisation. bSI commented that “it is with our regrets to announce that Céline has... Th...",
-      "publishedDate": "Wed, 28 Jan 2026 10:40:44 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
     {
       "title": "大林組、BIM図面審査対応の確認申請を複数案件で提出、3Dモデル活用し申請・審査を実施",
       "link": "https://news.build-app.jp/article/41170/",
@@ -102,36 +92,6 @@
       "language": "ja"
     },
     {
-      "title": "Christina Hvid Steps Down from buildingSMART International Board of Directors",
-      "link": "https://www.buildingsmart.org/christina-hvid-resigned-from-the-board/",
-      "description": "London, U.K. – June 9th, 2026 — buildingSMART International (bSI) announces that Christina Hvid resigned from the Board of Directors on 9 June 2026. We extend our sincere thanks to Christina... The po...",
-      "publishedDate": "Tue, 16 Jun 2026 09:56:56 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The first buildingSMART openBIM Hackathon in Porto is complete",
-      "link": "https://www.buildingsmart.org/the-first-buildingsmart-openbim-hackathon-in-porto-is-complete/",
-      "description": "The first buildingSMART openBIM Hackathon is complete - and it delivered more than expected. Over 50 hours, 47 participants across 9 teams worked under real pressure to build solutions that work in pr...",
-      "publishedDate": "Tue, 14 Apr 2026 15:05:06 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "buildingSMART International Appoints Aidan Mercer as Managing Director",
-      "link": "https://www.buildingsmart.org/buildingsmart-international-appoints-aidan-mercer-as-managing-director/",
-      "description": "London, U.K. – April 30th, 2026 — The Board of buildingSMART International (bSI) is pleased to announce the appointment of Aidan Mercer as Managing Director (MD), effective 1 May 2026.... The post bui...",
-      "publishedDate": "Thu, 30 Apr 2026 09:56:12 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "【2026年版】フォークリフト免許（技能講習・特別教育）の取得方法を徹底解説｜費用・日数・資格の違いまで",
       "link": "https://news.build-app.jp/article/41264/",
       "description": "建設業や建材・資材業界、物流、製造業などへの転職を考えている方の中には、「フォークリフト免許はいくらかかるのか」「何日で取れるのか」「自分は......",
@@ -162,44 +122,14 @@
       "language": "ja"
     },
     {
-      "title": "ARES CADアドイン開発で言語選びを誤ると後悔する3つの理由",
-      "link": "https://axconstdx.com/2026/06/18/ares-cad%e3%82%a2%e3%83%89%e3%82%a4%e3%83%b3%e9%96%8b%e7%99%ba%e3%81%a7%e8%a8%80%e8%aa%9e%e9%81%b8%e3%81%b3%e3%82%92%e8%aa%a4%e3%82%8b%e3%81%a8%e5%be%8c%e6%82%94%e3%81%99%e3%82%8b3%e3%81%a4%e3%81%ae/?utm_source=rss&utm_medium=rss&utm_campaign=ares-cad%25e3%2582%25a2%25e3%2583%2589%25e3%2582%25a4%25e3%2583%25b3%25e9%2596%258b%25e7%2599%25ba%25e3%2581%25a7%25e8%25a8%2580%25e8%25aa%259e%25e9%2581%25b8%25e3%2581%25b3%25e3%2582%2592%25e8%25aa%25a4%25e3%2582%258b%25e3%2581%25a8%25e5%25be%258c%25e6%2582%2594%25e3%2581%2599%25e3%2582%258b3%25e3%2581%25a4%25e3%2581%25ae",
-      "description": "「どの言語を選べばいいのか、さっぱりわからない」——ARES CADのアドイン開発を始めようとした瞬間、そう頭を抱えた経験はありませんか。言語選びを一度誤ると、開発の途中で大規模なやり直しが発生します。この記事を読めば、 [...] <p>The post ARES CADアドイン開発で言語選びを誤ると後悔する3つの理由 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Thu, 18 Jun 2026 06:09:20 +0000",
+      "title": "Fable 5はいつ戻る？Anthropicと米政府の協議が大詰めへ",
+      "link": "https://axconstdx.com/2026/06/28/fable-5%e3%81%af%e3%81%84%e3%81%a4%e6%88%bb%e3%82%8b%ef%bc%9fanthropic%e3%81%a8%e7%b1%b3%e6%94%bf%e5%ba%9c%e3%81%ae%e5%8d%94%e8%ad%b0%e3%81%8c%e5%a4%a7%e8%a9%b0%e3%82%81%e3%81%b8/?utm_source=rss&utm_medium=rss&utm_campaign=fable-5%25e3%2581%25af%25e3%2581%2584%25e3%2581%25a4%25e6%2588%25bb%25e3%2582%258b%25ef%25bc%259fanthropic%25e3%2581%25a8%25e7%25b1%25b3%25e6%2594%25bf%25e5%25ba%259c%25e3%2581%25ae%25e5%258d%2594%25e8%25ad%25b0%25e3%2581%258c%25e5%25a4%25a7%25e8%25a9%25b0%25e3%2582%2581%25e3%2581%25b8",
+      "description": "昨日まで当たり前に使えていたAIが、ある朝とつぜん止まる。Fable 5のユーザーが味わったその衝撃は、決して他人事ではありません。本記事では停止の真相から復旧の最新見通し、いま取るべき具体的な備えまでをひとつの流れで整 [...] <p>The post Fable 5はいつ戻る？Anthropicと米政府の協議が大詰めへ first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sat, 27 Jun 2026 21:25:03 +0000",
       "source": "生成AIと建設DX",
       "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/ares_eyecatch_1200x630_100kb-1024x538.jpg",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/fable5_eyecatch_1200x630_under100kb-1-1024x538.jpg",
       "language": "ja"
-    },
-    {
-      "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
-      "link": "https://www.buildingsmart.org/industry-insights-embracing-challenges-and-opportunities-of-using-openbim-for-increasing-efficiency-in-the-construction-process/",
-      "description": "Read about Construction Industry leaders perspective on embracing challenges and opportunities of using openBIM for increasing efficiency: Link The post Industry Insights “Embracing Challenges and Opp...",
-      "publishedDate": "Thu, 16 Apr 2026 12:30:14 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "We are looking for feedback on your experience with IDS",
-      "link": "https://www.buildingsmart.org/we-are-looking-for-feedback-on-your-experience-with-ids/",
-      "description": "Information Delivery Specification (IDS) marks its second anniversary this June, and we want to hear from the community - especially IDS users and implementers. Share your feedback on what works... Th...",
-      "publishedDate": "Thu, 14 May 2026 10:13:46 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The buildingSMART Implementers Assembly, February 2026 Event Report",
-      "link": "https://www.buildingsmart.org/the-buildingsmart-implementers-assembly-february-2026-event-report/",
-      "description": "The latest buildingSMART Implementers Assembly, hosted by Bentley in their Exton (PA) office, brought together the buildingSMART implementers community for two days of focused discussion and practical...",
-      "publishedDate": "Thu, 09 Apr 2026 11:11:07 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "「言葉で穴を開けて」Fusion MCPがCAD設計を変える日",
@@ -232,26 +162,6 @@
       "language": "ja"
     },
     {
-      "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
-      "link": "https://www.buildingsmart.org/buildingsmart-brazil-has-been-formally-approved-as-a-full-chapter/",
-      "description": "London, U.K. – March 27th, 2026 — buildingSMART International (bSI) is pleased to announce that buildingSMART Brazil has been formally approved by the Board to become a Full Chapter, effective March.....",
-      "publishedDate": "Fri, 27 Mar 2026 10:19:53 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Alfred Waschl Steps Down from buildingSMART International Board of Directors",
-      "link": "https://www.buildingsmart.org/alfred-waschl-resigned-from-the-board/",
-      "description": "London, U.K. – February 27th, 2026 — buildingSMART International (bSI) announces that Alfred Waschl resigned from the Board of Directors on 29 January 2026. Due to ill health, Alfred previously steppe...",
-      "publishedDate": "Fri, 27 Feb 2026 09:21:11 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "BIM-to-DWG自動化で転記ゼロへ、ARES 2027の正体",
       "link": "https://axconstdx.com/2026/06/26/bim-to-dwg%e8%87%aa%e5%8b%95%e5%8c%96%e3%81%a7%e8%bb%a2%e8%a8%98%e3%82%bc%e3%83%ad%e3%81%b8%e3%80%81ares-2027%e3%81%ae%e6%ad%a3%e4%bd%93/?utm_source=rss&utm_medium=rss&utm_campaign=bim-to-dwg%25e8%2587%25aa%25e5%258b%2595%25e5%258c%2596%25e3%2581%25a7%25e8%25bb%25a2%25e8%25a8%2598%25e3%2582%25bc%25e3%2583%25ad%25e3%2581%25b8%25e3%2580%2581ares-2027%25e3%2581%25ae%25e6%25ad%25a3%25e4%25bd%2593",
       "description": "BIMを導入したのに、現場の図面は今もDWGで止まっていませんか。設計と現場が分断したまま、転記の手間や手戻りが静かに積み重なり、いつまでも「DXが進んだ実感」が持てない。そんな悩みを抱える方も多いはずです。AIとクラウ [...] <p>The post BIM-to-DWG自動化で転記ゼロへ、ARES 2027の正体 first appeared on 生成AIと建設DX.</p>...",
@@ -270,16 +180,6 @@
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630_under100kb-9-1024x538.jpg",
       "language": "ja"
-    },
-    {
-      "title": "Key Outcomes from the Domain Leadership Conference in Zurich",
-      "link": "https://www.buildingsmart.org/key-outcomes-from-the-domain-leadership-conference-in-zurich/",
-      "description": "The recent Domain Leadership Conference held in Zurich on 4 &#38; 5 February marked an important moment for buildingSMART International. bSI Domains are membership-led, pro bono programmes representin...",
-      "publishedDate": "Fri, 20 Mar 2026 10:06:51 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "ARESカスタマイズ開発とは？設計自動化の費用と進め方を解説",
