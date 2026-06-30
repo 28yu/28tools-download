@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T02:38:31.245939",
+  "lastUpdated": "2026-06-30T02:33:11.208414",
   "articles": [
     {
       "title": "buildingSMART International announces that Céline Bent has left the organisation",
@@ -12,36 +12,6 @@
       "language": "en"
     },
     {
-      "title": "ジール、清水建設の大規模データを高速処理する高度なデータ活用基盤構築を支援",
-      "link": "https://news.build-app.jp/article/41155/",
-      "description": "アバントグループで、デジタルトランスフォーメーション（以下「DX」）推進事業を展開する株式会社ジール（本社：東京都品川区、代表取締役社長：沼......",
-      "publishedDate": "Wed, 24 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/d2d3ca514ee8d0f0a1f73cc3d0eed088-130x60.jpeg",
-      "language": "ja"
-    },
-    {
-      "title": "DfMAシンポジウムvol.2 －リア・ローディングからの脱却－_開催レポート【第4回】|株式会社カワトT.P.C 代表取締役会長 川戸俊彦、新規開発担当 田中聡",
-      "link": "https://news.build-app.jp/article/41130/",
-      "description": "人手不足や時間外労働規制を背景に、日本の建設産業では、現場に負荷が集中する従来のリア・ローディング型のプロセスからの転換が求められています。......",
-      "publishedDate": "Wed, 24 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/42c7300c73ca395b2e59d3f7eed19c17-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "根切りとは？意味・種類・施工手順をわかりやすく解説｜床付け・根入れとの違いも紹介",
-      "link": "https://news.build-app.jp/article/41181/",
-      "description": "建築や土木の現場で「根切り」という言葉を聞いたものの、「掘削と何が違うのか」「床付けや根入れとの違いがわからない」と感じていないでしょうか。......",
-      "publishedDate": "Wed, 24 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/2ac54835e711e81884ac0c477242bb91-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "国土交通省、建設工事受注動態統計4月分公表、民間・公共とも減少し総額32.3％減",
       "link": "https://news.build-app.jp/article/41178/",
       "description": "国土交通省は令和8年5月29日、建設工事受注動態統計調査（大手50社調査）の令和8年4月分を公表しました。令和8年4月の受注総額は1兆4,3......",
@@ -49,16 +19,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/33863440_m-130x95.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大林組、BIM図面審査対応の確認申請を複数案件で提出、3Dモデル活用し申請・審査を実施",
-      "link": "https://news.build-app.jp/article/41170/",
-      "description": "大林組（本社：東京都港区、社長：佐藤俊美）は、国土交通省が推進する建築確認におけるBIM図面審査制度への対応として、指定確認検査機関や構造適......",
-      "publishedDate": "Wed, 24 Jun 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/01/AdobeStock_240970580-2-130x87.jpeg",
       "language": "ja"
     },
     {
@@ -222,6 +182,56 @@
       "language": "ja"
     },
     {
+      "title": "デジタル化が実務と直結する状況の中でBIM援用の進捗と成果を広く公開する事例が続く｜深堀り取材【毎月3回更新】",
+      "link": "https://news.build-app.jp/article/41201/",
+      "description": "建築確認申請での「BIM図面審査」が開始されるなど、建設業におけるBIM援用の状況も日々の実務にどのように直結させるのかという段階に入ったと......",
+      "publishedDate": "Mon, 29 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/08058e6e913ab33264dd4537c0dc96d9-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "三田ガーデンヒルズ｜45億円でも売れる「住めるアート」とは？港区最大級分譲マンションを解説",
+      "link": "https://news.build-app.jp/article/41185/",
+      "description": "トレンドワード：三田ガーデンヒルズ 三田ガーデンヒルズは、港区三田の旧逓信省簡易保険局庁舎跡地に建設された、総戸数1,002戸の大規模高級マ......",
+      "publishedDate": "Mon, 29 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/e62915b24184cd7dcb97d870e5675eba-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "DfMAシンポジウムvol.2 －リア・ローディングからの脱却－_開催レポート【第5回】| 野原グループ株式会社 グループCSO 山﨑 芳治",
+      "link": "https://news.build-app.jp/article/41223/",
+      "description": "人手不足や時間外労働規制を背景に、日本の建設産業では、現場に負荷が集中する従来のリア・ローディング型のプロセスからの転換が求められています。......",
+      "publishedDate": "Mon, 29 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/1b4691016428ec56db69135809cb33cc-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "建設現場の熱中症死傷者が過去最多を更新　IoT気象観測で「人に頼らない安全管理」へ",
+      "link": "https://news.build-app.jp/article/41246/",
+      "description": "建設現場における熱中症による死傷者数が、止まりません。厚生労働省が2026年5月に公表した令和7年の確定値によると、2025年の職場熱中症死......",
+      "publishedDate": "Mon, 29 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/05/nUButEUV9gc3TM81652703883-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ARES Trinityとは？図面遅延ゼロへ導く三位一体CAD術",
+      "link": "https://axconstdx.com/2026/06/29/ares-trinity%e3%81%a8%e3%81%af%ef%bc%9f%e5%9b%b3%e9%9d%a2%e9%81%85%e5%bb%b6%e3%82%bc%e3%83%ad%e3%81%b8%e5%b0%8e%e3%81%8f%e4%b8%89%e4%bd%8d%e4%b8%80%e4%bd%93cad%e8%a1%93/?utm_source=rss&utm_medium=rss&utm_campaign=ares-trinity%25e3%2581%25a8%25e3%2581%25af%25ef%25bc%259f%25e5%259b%25b3%25e9%259d%25a2%25e9%2581%2585%25e5%25bb%25b6%25e3%2582%25bc%25e3%2583%25ad%25e3%2581%25b8%25e5%25b0%258e%25e3%2581%258f%25e4%25b8%2589%25e4%25bd%258d%25e4%25b8%2580%25e4%25bd%2593cad%25e8%25a1%2593",
+      "description": "その図面、本当に最新でしょうか。建設プロジェクトが重なるほど、現場とオフィスの認識のずれは見えないところで広がっていきます。デスクトップとクラウドとモバイルを一つに束ねるCADプラットフォーム「ARES Trinity」 [...] <p>The post ARES Trinityとは？図面遅延ゼロへ導く三位一体CAD術 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Mon, 29 Jun 2026 11:11:13 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/ares_trinity_1200x630_under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
       "title": "相鉄・東急直通線「新横浜線」｜路線図や乗り換え時間まとめ",
       "link": "https://news.build-app.jp/article/41272/",
       "description": "トレンドワード：相鉄・東急直通線「新横浜線」 相鉄・東急直通線「新横浜線」は、2023年3月に開業した首都圏の新たな鉄道ネットワークです。相......",
@@ -239,16 +249,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eye_catch_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "点群が”話す”時代へ。PointLLMが変える3D理解",
-      "link": "https://axconstdx.com/2026/06/22/%e7%82%b9%e7%be%a4%e3%81%8c%e8%a9%b1%e3%81%99%e6%99%82%e4%bb%a3%e3%81%b8%e3%80%82pointllm%e3%81%8c%e5%a4%89%e3%81%88%e3%82%8b3d%e7%90%86%e8%a7%a3/?utm_source=rss&utm_medium=rss&utm_campaign=%25e7%2582%25b9%25e7%25be%25a4%25e3%2581%258c%25e8%25a9%25b1%25e3%2581%2599%25e6%2599%2582%25e4%25bb%25a3%25e3%2581%25b8%25e3%2580%2582pointllm%25e3%2581%258c%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b3d%25e7%2590%2586%25e8%25a7%25a3",
-      "description": "点群データを前に、ため息をついた経験はありませんか。 膨大な情報を読み解く手間に、現場は悩まされてきました。 そんな悩みに、ひとつの答えが見えてきています。 PointLLMという技術は、点群に言葉で問いかけられる未来を [...] <p>The post 点群が&#8221;話す&#8221;時代へ。PointLLMが変える3D理解 first appeared on 生成AIと建設DX.</p...",
-      "publishedDate": "Mon, 22 Jun 2026 06:18:11 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630_under100KB-1-1024x538.jpg",
       "language": "ja"
     },
     {
