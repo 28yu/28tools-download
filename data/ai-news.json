@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T05:52:40.836581",
+  "lastUpdated": "2026-06-30T05:05:00.101752",
   "articles": [
     {
       "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
@@ -21,39 +21,6 @@
       "source": "MIT Technology Review",
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/260623_Powerplantsheat.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "The Download: introducing the Engineering issue",
-      "titleJa": "ダウンロード: エンジニアリングの問題の紹介",
-      "link": "https://www.technologyreview.com/2026/06/24/1139658/the-download-introducing-engineering-issue/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Introducing: the Engineering issue We can’t fix ev...",
-      "publishedDate": "Wed, 24 Jun 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2019/12/gamingaddictioneyesthumbnail-9.jpg?w=1000",
-      "language": "en"
-    },
-    {
-      "title": "Stripe, Anthropic, and OpenAI are backing an effort to stop respiratory infections",
-      "titleJa": "Stripe、Anthropic、OpenAI は呼吸器感染症を阻止する取り組みを支援しています",
-      "link": "https://www.technologyreview.com/2026/06/24/1139621/stripe-anthropic-and-openai-are-backing-an-effort-to-stop-respiratory-infections/",
-      "description": "The common cold comes for us all—often more than once a year. And there is no way to prevent it. The best you can do is take vitamin C and stay away from people with the sniffles. Now the payment comp...",
-      "publishedDate": "Wed, 24 Jun 2026 12:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/260623_respiratorydisease.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "The emergence of the web data infrastructure layer for AI",
-      "titleJa": "AI 用の Web データ インフラストラクチャ層の出現",
-      "link": "https://www.technologyreview.com/2026/06/24/1139202/the-emergence-of-the-web-data-infrastructure-layer-for-ai/",
-      "description": "AI is booming. New use cases are emerging each day. To capitalize on the technology’s potential, enterprises require data at scale. In many cases, though, the relevant information is blocked or unstru...",
-      "publishedDate": "Wed, 24 Jun 2026 11:59:54 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/iStock-1714934690.jpg",
       "language": "en"
     },
     {
@@ -101,17 +68,6 @@
       "language": "en"
     },
     {
-      "title": "A new experiment brings better group meetings to Google Beam",
-      "titleJa": "新しい実験により、Google Beam でのグループ会議が改善されました",
-      "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-beam-group-meetings/",
-      "description": "A small group meeting featuring two in-room participants and three participants on-screen....",
-      "publishedDate": "Wed, 20 May 2026 16:45:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screenshot_2026-05-15_at_4.21.2.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
       "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
       "titleJa": "新しい研究では、当社の医療 AI である AMIE が健康状態の管理にどのように役立つかを示しています。",
       "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/",
@@ -131,17 +87,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6a1dc0f2b4238bb17ff94794/qvSGZ0tZsgr4U4BCx_bVX.png",
-      "language": "en"
-    },
-    {
-      "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
-      "titleJa": "ほぼ自律的な AI 化学者が医薬化学における困難な反応を改善する",
-      "link": "https://openai.com/index/ai-chemist-improves-reaction",
-      "description": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research....",
-      "publishedDate": "Wed, 17 Jun 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -255,17 +200,6 @@
       "language": "en"
     },
     {
-      "title": "Which tokens does a hybrid model predict better?",
-      "titleJa": "ハイブリッド モデルはどのトークンをより良く予測しますか?",
-      "link": "https://huggingface.co/blog/allenai/hybrid-token-prediction",
-      "description": "...",
-      "publishedDate": "Thu, 25 Jun 2026 16:11:42 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/F1-AlOdxpdaxe6a5BXuU7.png",
-      "language": "en"
-    },
-    {
       "title": "Our latest Google Finance upgrades, including a new app",
       "titleJa": "新しいアプリを含む最新の Google Finance アップグレード",
       "link": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/",
@@ -321,17 +255,6 @@
       "language": "en"
     },
     {
-      "title": "カゴメなど5者、AI選果機の共同開発と実証の成果を発表。トマトの廃棄ロスを30％低減",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kagome-ai-tomato-consortium/",
-      "description": "カゴメなどの5者は、生鮮トマトの品質不良による廃棄ロス削減を目指し、AI選果機の共同開発と、そのデータを活用した最適な栽培・流通モデルの構築の実証成果を発表しました。 このニュースのポイント カゴメなど5者が、生鮮トマト [...] The post カゴメなど5者、AI選果機の共同開発と実証の成果を発表。トマトの廃棄ロスを30％低減 first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Thu, 25 Jun 2026 09:16:35 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/KAGOME-AI-Tomato-Consortium.png",
-      "language": "ja"
-    },
-    {
       "title": "How agents are transforming work",
       "titleJa": "エージェントが仕事をどのように変革しているか",
       "link": "https://openai.com/index/how-agents-are-transforming-work",
@@ -340,6 +263,72 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "MosaicLeaks: Can your research agent keep a secret?",
+      "titleJa": "MosaicLeaks: あなたの研究エージェントは秘密を守ることができますか?",
+      "link": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
+      "description": "...",
+      "publishedDate": "Thu, 18 Jun 2026 18:13:13 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/680ba1729f7688275d2ce0f4/hGCO4pOyJjijLPCbRT07v.webp",
+      "language": "en"
+    },
+    {
+      "title": "New usage analytics and updated spend controls for enterprises",
+      "titleJa": "企業向けの新しい使用状況分析と最新の支出管理",
+      "link": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+      "description": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence....",
+      "publishedDate": "Thu, 18 Jun 2026 17:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Improving health intelligence in ChatGPT",
+      "titleJa": "ChatGPT での健康インテリジェンスの向上",
+      "link": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+      "description": "Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations....",
+      "publishedDate": "Thu, 18 Jun 2026 11:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+      "titleJa": "AI を使用して医師が子供に影響を与える希少な遺伝性疾患を診断できるようにする",
+      "link": "https://openai.com/index/diagnose-rare-childhood-diseases",
+      "description": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases....",
+      "publishedDate": "Thu, 18 Jun 2026 08:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Beyond LoRA: Can you beat the most popular fine-tuning technique?",
+      "titleJa": "LoRA を超えて: 最も人気のある微調整テクニックに勝つことができますか?",
+      "link": "https://huggingface.co/blog/peft-beyond-lora",
+      "description": "...",
+      "publishedDate": "Thu, 18 Jun 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/peft-beyond-lora/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+      "titleJa": "エージェントとしては十分ですか？独自のツールでオープンモデルのベンチマークを行う",
+      "link": "https://huggingface.co/blog/is-it-agentic-enough",
+      "description": "...",
+      "publishedDate": "Thu, 18 Jun 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/is-it-agentic-enough/thumbnail.png",
       "language": "en"
     },
     {
@@ -398,7 +387,7 @@
       "language": "ja"
     },
     {
-      "title": "【使わないと損！】おすすめAI検索エンジン10選！メリットや注意点、キーワード検索との違いを解説",
+      "title": "調べ物に使えるAI検索おすすめ10選！検索AIの比較・メリット・注意点を解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/generative-ai-search/",
       "description": "2026年現在、インターネットの情報検索は大きな転換期を迎えています。 Googleの検索結果にAI要約が表示される「AI Overviews」が200以上の国と地域に拡大し、ChatGPTやPerplexityといった [...]...",
@@ -431,14 +420,69 @@
       "language": "ja"
     },
     {
-      "title": "RAGとは？図解付きでわかりやすい！仕組みやメリット・注意点・導入事例を徹底解説",
+      "title": "【Qwen-AgentWorld】GPT-5.4超えのスコアを叩き出した言語世界モデルを徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/company-data-rag/",
-      "description": "多くの企業が業務効率化のために生成AIを導入していますが、一般的な情報だけでは自社特有の業務や規則に対応できない場合が多くあります。 そこで注目されているのが、自社データを生成AIに追加するRAG（Retrieval-A [...]...",
-      "publishedDate": "Sat, 27 Jun 2026 14:11:49 +0000",
+      "link": "https://weel.co.jp/media/tech/qwen-agentworld/",
+      "description": "2026年6月24日、アリババのQwenチームがAIエージェントの環境そのものをシミュレートする新しいモデル「Qwen-AgentWorld」を公開しました！ 従来のLLMは「次のトークン（単語）を予測する」ことを目的に [...]...",
+      "publishedDate": "Mon, 29 Jun 2026 11:29:41 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/RAG_2606-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen-AgentWorld-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "TIS、面接評価AIをワールドインテックに提供。独自の音声解析技術により、面接振り返り時間を15％削減",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/tis-interview-evaluation-ai/",
+      "description": "TISは、商談領域での音声解析技術を活用した面接評価AIをワールドインテックに提供しました。合格基準や判断根拠の明確化と面接後の業務負荷の削減を目指します。 このニュースのポイント TIS、独自の音声解析技術活用の面接評 [...] The post TIS、面接評価AIをワールドインテックに提供。独自の音声解析技術により、面接振り返り時間を15％削減 first appeared on AIポー...",
+      "publishedDate": "Mon, 29 Jun 2026 08:33:37 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/TIS-world-intec.png",
+      "language": "ja"
+    },
+    {
+      "title": "AI insideと橋本ホールディングス、DX・AI事業包括連携協定を締結。建設業から地域のAIインフラ創出を目指す",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-inside-hashimotohd-agreement/",
+      "description": "AI insideと橋本ホールディングスは、建設業および地域社会におけるAI活用モデルの創出と展開を目的としたDX・AI事業包括連携協定を締結しました。 このニュースのポイント AI insideと橋本ホールディングスが [...] The post AI insideと橋本ホールディングス、DX・AI事業包括連携協定を締結。建設業から地域のAIインフラ創出を目指す first appeared ...",
+      "publishedDate": "Mon, 29 Jun 2026 08:11:09 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/AI-inside-hashimotogumi-agreement-001.png",
+      "language": "ja"
+    },
+    {
+      "title": "ポケモンカードAIエージェント開発コンテスト「ポケカABC」開催。松尾研・ポケモン・HEROZが共催",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/matsuo-pokemon-heroz-ai-agent/",
+      "description": "松尾研究所は、ポケモンおよびHEROZと共催で、ポケモンカードゲームを題材としたAIエージェント開発コンテスト「ポケモンカードゲーム AI Battle Challenge（ポケカABC）」を開催します。 このニュースの [...] The post ポケモンカードAIエージェント開発コンテスト「ポケカABC」開催。松尾研・ポケモン・HEROZが共催 first appeared on AIポータ...",
+      "publishedDate": "Mon, 29 Jun 2026 08:02:39 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/Pokemon-TCG-Matsuo-institute-HEROZ-AI-Agent.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI、グローバルパートナープログラム「OpenAI Partner Network」発表。2026年末までに認定コンサルタントを30万人育成",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-partner-network-consultant/",
+      "description": "OpenAIは、企業のAIソリューションの構築や導入を支援するグローバルパートナープログラム「OpenAI Partner Network」を発表しました。1億5,000万ドルを投資し、2026年末までに30万人の認定コ [...] The post OpenAI、グローバルパートナープログラム「OpenAI Partner Network」発表。2026年末までに認定コンサルタントを30万人育成...",
+      "publishedDate": "Mon, 29 Jun 2026 07:52:19 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/OpeAIPartnerNetworkeye.png",
+      "language": "ja"
+    },
+    {
+      "title": "Copilot API完全ガイド｜機能・料金・導入手順をわかりやすく解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/copilot-api/",
+      "description": "「Copilot API」を調べると、Microsoft 365の情報とGitHubの情報が混ざって出てきて、混乱した経験はないでしょうか。実は「Copilot API」と呼ばれるものには、大きく2つの種類があります。 [...] The post Copilot API完全ガイド｜機能・料金・導入手順をわかりやすく解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 29 Jun 2026 05:53:08 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/copilot-api.webp",
       "language": "ja"
     },
     {
@@ -508,47 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "NECとJR東日本、「みどりの窓口AI対応サービス」の実現に向け実証実験を実施",
+      "title": "クアルコムがPythonライクな新言語「Mojo」開発元のModular社買収を発表。AIデータセンター市場へ本格参入",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/nec-jr-midori-ai/",
-      "description": "NECとJR東日本は「みどりの窓口AI対応サービス」実現に向けた実証実験を2026年7月に実施します。音声対話で顧客の要望を自動整理し係員へ連携することで、きっぷ購入のスムーズ化を検証します。 このニュースのポイント N [...] The post NECとJR東日本、「みどりの窓口AI対応サービス」の実現に向け実証実験を実施 first appeared on AIポータルメディアAIsmil...",
-      "publishedDate": "Fri, 26 Jun 2026 06:31:28 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/nec-jr-midori-ai-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "Amazon、欧州の物流へ100億ユーロ以上を投資。AIとロボットの活用で人材を支援し配送を迅速化",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/amazon-europe-robotics-investment/",
-      "description": "Amazonは、先端ロボット技術を導入して欧州の物流センターを拡大させ、雇用を拡大します。また超高速配送オプションを拡大し、従業員の教育・研修プログラムに10億ドルを投資します。 このニュースのポイント Amazonは、 [...] The post Amazon、欧州の物流へ100億ユーロ以上を投資。AIとロボットの活用で人材を支援し配送を迅速化 first appeared on AIポータル...",
-      "publishedDate": "Fri, 26 Jun 2026 06:31:17 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/amazon-europe-robotics-investment-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "【CES 2026完全まとめ】AI実装がもたらす5つの最新トレンドと受賞例",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ces-2026-latest-trends/",
-      "description": "AIをはじめとする最新テクノロジーの今を一望できるイベントとして注目されたCES 2026。2026年1月にアメリカ・ラスベガスで開催され、出展企業4,100社超・来場者148,392人と、コロナ禍以降で最大規模での開催 [...] The post 【CES 2026完全まとめ】AI実装がもたらす5つの最新トレンドと受賞例 first appeared on AIポータルメディアAIsmiley...",
-      "publishedDate": "Fri, 26 Jun 2026 01:49:19 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/ces.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "VLA（Vision-Language-Action）モデルとは？仕組み・VLMとの違い・主要モデルを解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/vla-vision-language-action/",
-      "description": "工場や物流倉庫で稼働するロボットは、決められた作業を正確に繰り返すことを得意としてきました。一方で、置かれた物の位置が少しずれただけで止まってしまう、新しい作業のたびに専門家による細かな設定が必要になるといった制約が残っ [...] The post VLA（Vision-Language-Action）モデルとは？仕組み・VLMとの違い・主要モデルを解説 first appeared on AI...",
-      "publishedDate": "Fri, 26 Jun 2026 01:46:07 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/vla.jpg",
+      "link": "https://www.publickey1.jp/blog/26/pythonmojomodularai.html",
+      "description": "スマートフォン用のSoC（System-on-a-Chip）や各種通信機器向けの半導体事業などで知られるクアルコムテクノロジーズ社（以下、クアルコム）は、AI処理の高速化を目指すPythonライクな新言語「Mojo」の開発元であるModul......",
+      "publishedDate": "2026-06-29T15:33:20Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/qualcomm-modular-acq.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/ubuntu-workshop-la01.png",
-      "language": "ja"
-    },
-    {
-      "title": "CloudflareがViteやRolldownの開発元であるVoidZeroの買収を発表。これでAstroとViteがCloudflareの傘下に",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/cloudflareviterolldownvoidzeroastrovitecloudflare.html",
-      "description": "Cloudflareは、JavaScriptで人気のビルドツール「Vite」やバンドルツール「Rolldown」の開発元であるVoidZeroの買収を発表しました（Cloudflareの発表、VoidZeroの発表）。 Today, Voi......",
-      "publishedDate": "2026-06-07T15:26:45Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HJ-PoB8WgAA8ZUX.jpg",
       "language": "ja"
     }
   ]
