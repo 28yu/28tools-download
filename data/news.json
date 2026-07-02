@@ -1,15 +1,65 @@
 {
-  "lastUpdated": "2026-07-01T02:41:31.402503",
+  "lastUpdated": "2026-07-02T02:28:40.093677",
   "articles": [
     {
-      "title": "buildingSMART International announces that Céline Bent has left the organisation",
-      "link": "https://www.buildingsmart.org/buildingsmart-international-announces-that-celine-bent-has-left-the-organisation/",
-      "description": "London, U.K. – January 28th, 2026 — buildingSMART International (bSI) announces that Céline Bent has left the organisation. bSI commented that “it is with our regrets to announce that Céline has... Th...",
-      "publishedDate": "Wed, 28 Jan 2026 10:40:44 +0000",
-      "source": "buildingSMART International",
+      "title": "【2026年版】石綿作業主任者とは？｜仕事内容・取得方法・費用・合格率をわかりやすく解説",
+      "link": "https://news.build-app.jp/article/41361/",
+      "description": "建物の解体や改修工事に携わるなかで、「石綿作業主任者は誰が取得すればよいのか」「特別教育との違いがわからない」と悩んでいないでしょうか。 近......",
+      "publishedDate": "Wed, 01 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/bfd398d6cf07e6ae70a6d42bfc6e4ba6-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、2026年4月の建設総合統計を公表、出来高総計は民間・公共とも前年同月比増",
+      "link": "https://news.build-app.jp/article/41383/",
+      "description": "国土交通省は2026年6月19日、2026年4月分の「建設総合統計」を公表しました。4月の出来高総計は4兆8,444億円で、前年同月に比べて......",
+      "publishedDate": "Wed, 01 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/2f760e711ac8b114e18b1e699f99b1bb-130x89.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "大和ハウス工業、CDP評価でサプライヤー連携分野の最高評価に7年連続選定",
+      "link": "https://news.build-app.jp/article/41393/",
+      "description": "大和ハウス工業（本社：大阪市、社長：大友浩嗣氏）が、国際的な環境評価機関CDPが実施する「サプライヤーエンゲージメント評価」において、最も高......",
+      "publishedDate": "Wed, 01 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/da6a408b1fd43836ce64f29fc09f33d1-130x87.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "竹中工務店参画のツミカサネ、小径木再生の合板ブランド「NOITA」決定し木曽で稼働へ",
+      "link": "https://news.build-app.jp/article/41374/",
+      "description": "長野県の木曽地域で、これまで使い道が限られていた細い木材を生かす取り組みが進められています。株式会社竹中工務店が参画する株式会社ツミカサネと......",
+      "publishedDate": "Wed, 01 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33863440_m-130x95.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "日本でFable 5が復活｜停止から再開までを解説",
+      "link": "https://axconstdx.com/2026/07/02/%e6%97%a5%e6%9c%ac%e3%81%a7fable-5%e3%81%8c%e5%be%a9%e6%b4%bb%ef%bd%9c%e5%81%9c%e6%ad%a2%e3%81%8b%e3%82%89%e5%86%8d%e9%96%8b%e3%81%be%e3%81%a7%e3%82%92%e8%a7%a3%e8%aa%ac/?utm_source=rss&utm_medium=rss&utm_campaign=%25e6%2597%25a5%25e6%259c%25ac%25e3%2581%25a7fable-5%25e3%2581%258c%25e5%25be%25a9%25e6%25b4%25bb%25ef%25bd%259c%25e5%2581%259c%25e6%25ad%25a2%25e3%2581%258b%25e3%2582%2589%25e5%2586%258d%25e9%2596%258b%25e3%2581%25be%25e3%2581%25a7%25e3%2582%2592%25e8%25a7%25a3%25e8%25aa%25ac",
+      "description": "発表からわずか3日でとまったClaude Fable 5が、7月1日にもどってきました。日本の利用者も、ふたたびこの最上位モデルをつかえます。なぜとまり、どうやってもどってきたのでしょう。この記事では、いきさつと再開の条 [...] <p>The post 日本でFable 5が復活｜停止から再開までを解説 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Wed, 01 Jul 2026 20:44:45 +0000",
+      "source": "生成AIと建設DX",
       "category": "bim",
-      "thumbnail": null,
-      "language": "en"
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-under100kb-3-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Claude最上位モデルが復活。輸出規制、18日で解除に",
+      "link": "https://axconstdx.com/2026/07/01/claude%e6%9c%80%e4%b8%8a%e4%bd%8d%e3%83%a2%e3%83%87%e3%83%ab%e3%81%8c%e5%be%a9%e6%b4%bb%e3%80%82%e8%bc%b8%e5%87%ba%e8%a6%8f%e5%88%b6%e3%80%8118%e6%97%a5%e3%81%a7%e8%a7%a3%e9%99%a4%e3%81%ab/?utm_source=rss&utm_medium=rss&utm_campaign=claude%25e6%259c%2580%25e4%25b8%258a%25e4%25bd%258d%25e3%2583%25a2%25e3%2583%2587%25e3%2583%25ab%25e3%2581%258c%25e5%25be%25a9%25e6%25b4%25bb%25e3%2580%2582%25e8%25bc%25b8%25e5%2587%25ba%25e8%25a6%258f%25e5%2588%25b6%25e3%2580%258118%25e6%2597%25a5%25e3%2581%25a7%25e8%25a7%25a3%25e9%2599%25a4%25e3%2581%25ab",
+      "description": "ある日突然、頼りにしていたAIが使えなくなったら、あなたの仕事はどうなるでしょうか。Fable 5とMythos 5に実際に起きたのが、まさにそんな18日間でした。なぜ規制は解けたのか、その裏には何があったのか。読み終え [...] <p>The post Claude最上位モデルが復活。輸出規制、18日で解除に first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Wed, 01 Jul 2026 12:05:43 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100kb-11-1024x538.jpg",
+      "language": "ja"
     },
     {
       "title": "Claude Sonnet 5完全ガイド：性能・料金・使い分け",
@@ -19,6 +69,36 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/claude-sonnet-5-eyecatch-1200x630-1-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "日本の建築・土木業界はなぜ、「職人」を制度的に消そうとしているのか？",
+      "link": "https://news.build-app.jp/article/40964/",
+      "description": "建設業における「職人文化」──。それが静かに終わっていく。 ひとつひとつは穏当な改革として提示され、正当な理由を伴い、誰も悪者にならない形で......",
+      "publishedDate": "Tue, 30 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/20260701_hirayama-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "竹中工務店が耐震補強用コンクリートブロック開発、CO2約120％削減で実証適用へ",
+      "link": "https://news.build-app.jp/article/41372/",
+      "description": "竹中工務店は、鹿島建設やデンカと共同で、コンクリートをつくる際に出る二酸化炭素（CO2）を減らす技術の開発を進めています。今回、その技術を活......",
+      "publishedDate": "Tue, 30 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/05/22558650_m-130x98.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大和ハウス工業など11社、HARUMI FLAGがULI国際不動産賞を受賞",
+      "link": "https://news.build-app.jp/article/41391/",
+      "description": "晴海五丁目西地区の再開発事業に参加する特定建築者11社は、東京都内最大規模の複合開発「HARUMI FLAG」が、不動産・都市開発の分野で高......",
+      "publishedDate": "Tue, 30 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/d2d3ca514ee8d0f0a1f73cc3d0eed088-130x60.jpeg",
       "language": "ja"
     },
     {
@@ -32,74 +112,24 @@
       "language": "ja"
     },
     {
-      "title": "Christina Hvid Steps Down from buildingSMART International Board of Directors",
-      "link": "https://www.buildingsmart.org/christina-hvid-resigned-from-the-board/",
-      "description": "London, U.K. – June 9th, 2026 — buildingSMART International (bSI) announces that Christina Hvid resigned from the Board of Directors on 9 June 2026. We extend our sincere thanks to Christina... The po...",
-      "publishedDate": "Tue, 16 Jun 2026 09:56:56 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The first buildingSMART openBIM Hackathon in Porto is complete",
-      "link": "https://www.buildingsmart.org/the-first-buildingsmart-openbim-hackathon-in-porto-is-complete/",
-      "description": "The first buildingSMART openBIM Hackathon is complete - and it delivered more than expected. Over 50 hours, 47 participants across 9 teams worked under real pressure to build solutions that work in pr...",
-      "publishedDate": "Tue, 14 Apr 2026 15:05:06 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "buildingSMART International Appoints Aidan Mercer as Managing Director",
-      "link": "https://www.buildingsmart.org/buildingsmart-international-appoints-aidan-mercer-as-managing-director/",
-      "description": "London, U.K. – April 30th, 2026 — The Board of buildingSMART International (bSI) is pleased to announce the appointment of Aidan Mercer as Managing Director (MD), effective 1 May 2026.... The post bui...",
-      "publishedDate": "Thu, 30 Apr 2026 09:56:12 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "図面を描き直す手間ゼロへ、ARES CADのBIM Reload機能",
-      "link": "https://axconstdx.com/2026/06/25/%e5%9b%b3%e9%9d%a2%e3%82%92%e6%8f%8f%e3%81%8d%e7%9b%b4%e3%81%99%e6%89%8b%e9%96%93%e3%82%bc%e3%83%ad%e3%81%b8%e3%80%81ares-cad%e3%81%aebim-reload%e6%a9%9f%e8%83%bd/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%259b%25b3%25e9%259d%25a2%25e3%2582%2592%25e6%258f%258f%25e3%2581%258d%25e7%259b%25b4%25e3%2581%2599%25e6%2589%258b%25e9%2596%2593%25e3%2582%25bc%25e3%2583%25ad%25e3%2581%25b8%25e3%2580%2581ares-cad%25e3%2581%25aebim-reload%25e6%25a9%259f%25e8%2583%25bd",
-      "description": "図面を直すたび、心がすり減っていませんか。BIMの変更が入るたびに注釈をやり直す作業は、現場の時間と気力を確実に奪っています。ARES CADのBIM Reloadなら、寸法やラベルを保ったまま図面を最新化できるのです。 [...] <p>The post 図面を描き直す手間ゼロへ、ARES CADのBIM Reload機能 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Thu, 25 Jun 2026 06:01:38 +0000",
+      "title": "ARES Neoとは何か、図面作成が激変する新サービスの正体",
+      "link": "https://axconstdx.com/2026/07/02/ares-neo%e3%81%a8%e3%81%af%e4%bd%95%e3%81%8b%e3%80%81%e5%9b%b3%e9%9d%a2%e4%bd%9c%e6%88%90%e3%81%8c%e6%bf%80%e5%a4%89%e3%81%99%e3%82%8b%e6%96%b0%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%81%ae%e6%ad%a3/?utm_source=rss&utm_medium=rss&utm_campaign=ares-neo%25e3%2581%25a8%25e3%2581%25af%25e4%25bd%2595%25e3%2581%258b%25e3%2580%2581%25e5%259b%25b3%25e9%259d%25a2%25e4%25bd%259c%25e6%2588%2590%25e3%2581%258c%25e6%25bf%2580%25e5%25a4%2589%25e3%2581%2599%25e3%2582%258b%25e6%2596%25b0%25e3%2582%25b5%25e3%2583%25bc%25e3%2583%2593%25e3%2582%25b9%25e3%2581%25ae%25e6%25ad%25a3",
+      "description": "Revitでの図面作成に追われ、残業が一向に減らないと感じていませんか。その負担は、あなたの努力不足ではなく、仕組みそのものの問題かもしれません。ARES Neoは、そんな停滞を自動化で解消しようとする新サービスです。仕 [...] <p>The post ARES Neoとは何か、図面作成が激変する新サービスの正体 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Thu, 02 Jul 2026 01:50:19 +0000",
       "source": "生成AIと建設DX",
       "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp-eyecatch_1200x630_under100kb-1-1024x538.jpg",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/ares_neo_1200x630_under100kb-1024x538.jpg",
       "language": "ja"
     },
     {
-      "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
-      "link": "https://www.buildingsmart.org/industry-insights-embracing-challenges-and-opportunities-of-using-openbim-for-increasing-efficiency-in-the-construction-process/",
-      "description": "Read about Construction Industry leaders perspective on embracing challenges and opportunities of using openBIM for increasing efficiency: Link The post Industry Insights “Embracing Challenges and Opp...",
-      "publishedDate": "Thu, 16 Apr 2026 12:30:14 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "We are looking for feedback on your experience with IDS",
-      "link": "https://www.buildingsmart.org/we-are-looking-for-feedback-on-your-experience-with-ids/",
-      "description": "Information Delivery Specification (IDS) marks its second anniversary this June, and we want to hear from the community - especially IDS users and implementers. Share your feedback on what works... Th...",
-      "publishedDate": "Thu, 14 May 2026 10:13:46 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The buildingSMART Implementers Assembly, February 2026 Event Report",
-      "link": "https://www.buildingsmart.org/the-buildingsmart-implementers-assembly-february-2026-event-report/",
-      "description": "The latest buildingSMART Implementers Assembly, hosted by Bentley in their Exton (PA) office, brought together the buildingSMART implementers community for two days of focused discussion and practical...",
-      "publishedDate": "Thu, 09 Apr 2026 11:11:07 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
+      "title": "CORDER、積算特化のAIプラットフォームをリリースし見積精度向上と原価最適化を支援",
+      "link": "https://news.build-app.jp/article/41349/",
+      "description": "東京都渋谷区に本社を置く株式会社CORDER（代表取締役：田邊健人氏）は2026年7月1日、建設業の収益性を大きく左右する積算業務に特化した......",
+      "publishedDate": "Thu, 02 Jul 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/corder-sekisan-ai-platform-130x72.png",
+      "language": "ja"
     },
     {
       "title": "ARES Mapとは？CADとGISを一体化する新発想ハイブリッド",
@@ -142,6 +172,26 @@
       "language": "ja"
     },
     {
+      "title": "DfMAシンポジウムvol.2 －リア・ローディングからの脱却－_開催レポート【第5回】| 野原グループ株式会社 グループCSO 山﨑 芳治",
+      "link": "https://news.build-app.jp/article/41223/",
+      "description": "人手不足や時間外労働規制を背景に、日本の建設産業では、現場に負荷が集中する従来のリア・ローディング型のプロセスからの転換が求められています。......",
+      "publishedDate": "Mon, 29 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/1b4691016428ec56db69135809cb33cc-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、4月の建設関連統計を公表、受注高や住宅着工、工事費の動向明らかに",
+      "link": "https://news.build-app.jp/article/41380/",
+      "description": "2026年４月分の建設関連統計が国土交通省より公表されました。建設工事の受注状況や新設住宅の着工動向など、日本の建設業界を取り巻く最新の数字......",
+      "publishedDate": "Mon, 29 Jun 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2024/11/dc833089971aeca3a13823ba8902eefd-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "ARES Trinityとは？図面遅延ゼロへ導く三位一体CAD術",
       "link": "https://axconstdx.com/2026/06/29/ares-trinity%e3%81%a8%e3%81%af%ef%bc%9f%e5%9b%b3%e9%9d%a2%e9%81%85%e5%bb%b6%e3%82%bc%e3%83%ad%e3%81%b8%e5%b0%8e%e3%81%8f%e4%b8%89%e4%bd%8d%e4%b8%80%e4%bd%93cad%e8%a1%93/?utm_source=rss&utm_medium=rss&utm_campaign=ares-trinity%25e3%2581%25a8%25e3%2581%25af%25ef%25bc%259f%25e5%259b%25b3%25e9%259d%25a2%25e9%2581%2585%25e5%25bb%25b6%25e3%2582%25bc%25e3%2583%25ad%25e3%2581%25b8%25e5%25b0%258e%25e3%2581%258f%25e4%25b8%2589%25e4%25bd%258d%25e4%25b8%2580%25e4%25bd%2593cad%25e8%25a1%2593",
       "description": "その図面、本当に最新でしょうか。建設プロジェクトが重なるほど、現場とオフィスの認識のずれは見えないところで広がっていきます。デスクトップとクラウドとモバイルを一つに束ねるCADプラットフォーム「ARES Trinity」 [...] <p>The post ARES Trinityとは？図面遅延ゼロへ導く三位一体CAD術 first appeared on 生成AIと建設DX.</p>...",
@@ -150,56 +200,6 @@
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/ares_trinity_1200x630_under100kb-1024x538.jpg",
       "language": "ja"
-    },
-    {
-      "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
-      "link": "https://www.buildingsmart.org/buildingsmart-brazil-has-been-formally-approved-as-a-full-chapter/",
-      "description": "London, U.K. – March 27th, 2026 — buildingSMART International (bSI) is pleased to announce that buildingSMART Brazil has been formally approved by the Board to become a Full Chapter, effective March.....",
-      "publishedDate": "Fri, 27 Mar 2026 10:19:53 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Alfred Waschl Steps Down from buildingSMART International Board of Directors",
-      "link": "https://www.buildingsmart.org/alfred-waschl-resigned-from-the-board/",
-      "description": "London, U.K. – February 27th, 2026 — buildingSMART International (bSI) announces that Alfred Waschl resigned from the Board of Directors on 29 January 2026. Due to ill health, Alfred previously steppe...",
-      "publishedDate": "Fri, 27 Feb 2026 09:21:11 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "BIM-to-DWG自動化で転記ゼロへ、ARES 2027の正体",
-      "link": "https://axconstdx.com/2026/06/26/bim-to-dwg%e8%87%aa%e5%8b%95%e5%8c%96%e3%81%a7%e8%bb%a2%e8%a8%98%e3%82%bc%e3%83%ad%e3%81%b8%e3%80%81ares-2027%e3%81%ae%e6%ad%a3%e4%bd%93/?utm_source=rss&utm_medium=rss&utm_campaign=bim-to-dwg%25e8%2587%25aa%25e5%258b%2595%25e5%258c%2596%25e3%2581%25a7%25e8%25bb%25a2%25e8%25a8%2598%25e3%2582%25bc%25e3%2583%25ad%25e3%2581%25b8%25e3%2580%2581ares-2027%25e3%2581%25ae%25e6%25ad%25a3%25e4%25bd%2593",
-      "description": "BIMを導入したのに、現場の図面は今もDWGで止まっていませんか。設計と現場が分断したまま、転記の手間や手戻りが静かに積み重なり、いつまでも「DXが進んだ実感」が持てない。そんな悩みを抱える方も多いはずです。AIとクラウ [...] <p>The post BIM-to-DWG自動化で転記ゼロへ、ARES 2027の正体 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Fri, 26 Jun 2026 14:15:21 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/ares_2027_eyecatch_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ARES Commander 2027、開くのが20%速くなった理由とは",
-      "link": "https://axconstdx.com/2026/06/26/ares-commander-2027%e3%80%81%e9%96%8b%e3%81%8f%e3%81%ae%e3%81%8c20%e9%80%9f%e3%81%8f%e3%81%aa%e3%81%a3%e3%81%9f%e7%90%86%e7%94%b1%e3%81%a8%e3%81%af/?utm_source=rss&utm_medium=rss&utm_campaign=ares-commander-2027%25e3%2580%2581%25e9%2596%258b%25e3%2581%258f%25e3%2581%25ae%25e3%2581%258c20%25e9%2580%259f%25e3%2581%258f%25e3%2581%25aa%25e3%2581%25a3%25e3%2581%259f%25e7%2590%2586%25e7%2594%25b1%25e3%2581%25a8%25e3%2581%25af",
-      "description": "おおきな図面を開くたび時間を奪われる。そんな小さなストレスが、実は一日の生産性を静かに削っているのかもしれません。ARES Commander 2027は、ひらく・コピー・保存という基本操作を大幅に高速化し、待ち時間その [...] <p>The post ARES Commander 2027、開くのが20%速くなった理由とは first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Fri, 26 Jun 2026 00:27:47 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630_under100kb-9-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Key Outcomes from the Domain Leadership Conference in Zurich",
-      "link": "https://www.buildingsmart.org/key-outcomes-from-the-domain-leadership-conference-in-zurich/",
-      "description": "The recent Domain Leadership Conference held in Zurich on 4 &#38; 5 February marked an important moment for buildingSMART International. bSI Domains are membership-led, pro bono programmes representin...",
-      "publishedDate": "Fri, 20 Mar 2026 10:06:51 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
     }
   ]
 }
