@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T04:58:27.970289",
+  "lastUpdated": "2026-07-03T04:42:38.314363",
   "articles": [
     {
       "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
@@ -145,61 +145,6 @@
       "language": "ja"
     },
     {
-      "title": "GPT-5.6とは？進化点や活用方法・従来のモデルとの違いを徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gpt-5-6/",
-      "description": "次々と登場する新しいAIモデル。「GPT-5.6の噂は聞くけれど、結局自分の業務がどう変わるのか、本当に今のモデルから乗り換える価値があるのか分からない」と焦りを感じていませんか？ 本記事では、GPT-5.6の基本概要か [...] The post GPT-5.6とは？進化点や活用方法・従来のモデルとの違いを徹底解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 01 Jul 2026 05:13:39 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gpt5.6.png",
-      "language": "ja"
-    },
-    {
-      "title": "Google Workspace Studioで実現する、AI時代の業務ルーティン──AIが裏で勝手に働き出す「イベント駆動型」の自動化",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/google-workspace-studio-ai-routine/",
-      "description": "本記事は、2026年6月16日〜17日に開催された「AI博覧会 Nagoya 2026」内のセッション『Google Workspace Studioで実現するAI時代の業務ルーティン』を基に解説したものです。 「定型業 [...] The post Google Workspace Studioで実現する、AI時代の業務ルーティン──AIが裏で勝手に働き出す「イベント駆動型」の自動化 first...",
-      "publishedDate": "Wed, 01 Jul 2026 05:00:27 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/Google-Workspace-Studio-ai-business-routine.png",
-      "language": "ja"
-    },
-    {
-      "title": "NTT、LVLMの推論根拠を説明できるマルチモーダルXAI技術を確立。追加学習コストなしで運用可能",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/lvlm-explainable-ai/",
-      "description": "NTTが、LVLMの推論根拠を説明できるマルチモーダルXAI技術を確立しました。追加学習不要なデコーディング制御により、根拠に沿った高精度な出力をスムーズに実現します。 このニュースのポイント NTTは、LVLMの推論に [...] The post NTT、LVLMの推論根拠を説明できるマルチモーダルXAI技術を確立。追加学習コストなしで運用可能 first appeared on AIポータル...",
-      "publishedDate": "Wed, 01 Jul 2026 03:16:14 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/lvlm-explainable-ai-eye3.png",
-      "language": "ja"
-    },
-    {
-      "title": "買物での生成AI利用調査結果を発表。生成AIの回答信頼度はレビューを上回る51.7%",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/generative-ai-shopping-survey/",
-      "description": "博報堂買物研究所が「AIショッパー調査」の結果を発表しました。生成AIの信頼度がレビューを超え、6割が購入の最終判断もAIに任せたいと回答するなど、購買行動におけるAIの定着が明らかになりました。 このニュースのポイント [...] The post 買物での生成AI利用調査結果を発表。生成AIの回答信頼度はレビューを上回る51.7% first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Wed, 01 Jul 2026 02:27:06 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/generative-ai-shopping-survey-eye2.png",
-      "language": "ja"
-    },
-    {
-      "title": "ガウシアンスプラッティング（3DGS）の始め方・仕組みとは？商用ツールや活用事例を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gaussian-splatting-3dgs/",
-      "description": "「ガウシアンスプラッティング」や「3DGS」という言葉を、3D・XR・AI関連のニュースで目にする機会が増えています。写真から現実に近い3D空間を軽快に閲覧できる形で再現する技術として、建設・不動産・映像・ロボティクスな [...] The post ガウシアンスプラッティング（3DGS）の始め方・仕組みとは？商用ツールや活用事例を解説 first appeared on AIポータルメディアAI...",
-      "publishedDate": "Wed, 01 Jul 2026 01:40:29 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/gaussiansplatting.jpg",
-      "language": "ja"
-    },
-    {
       "title": "Hugging Face and Cerebras bring Gemma 4 to real-time voice AI",
       "titleJa": "ハグフェイスとセレブラスが Gemma 4 にリアルタイム音声 AI をもたらす",
       "link": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
@@ -278,7 +223,7 @@
     },
     {
       "title": "Agriculture is ready for AI, but its data isn’t",
-      "titleJa": "農業は AI の準備ができていますが、そのデータはまだ準備ができていません",
+      "titleJa": "農業は AI に対応する準備ができていますが、そのデータはまだ準備ができていません",
       "link": "https://www.technologyreview.com/2026/06/30/1139513/agriculture-is-ready-for-ai-but-its-data-isnt/",
       "description": "Artificial intelligence is transforming what is possible in agriculture, but industry leaders should be wary of investing in AI without first laying the groundwork.&#160; The use cases are promising, ...",
       "publishedDate": "Tue, 30 Jun 2026 12:00:00 +0000",
@@ -296,28 +241,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/google-colaboratory_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Building tech in the world’s secret R&D hub",
-      "titleJa": "世界の秘密の研究開発拠点でテクノロジーを構築する",
-      "link": "https://www.technologyreview.com/2026/06/30/1139661/building-tech-in-the-worlds-secret-rd-hub/",
-      "description": "Apple. Anthropic. Disney Research. Google. Meta. Microsoft. NVIDIA. OpenAI. Few places outside Silicon Valley can claim R&#38;D hubs from all of these companies. Fewer still are concentrated in a city...",
-      "publishedDate": "Tue, 30 Jun 2026 10:23:30 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/GZA-Big-Tech-Map-MIIT-Review_with-Focus-Lense.png",
-      "language": "en"
-    },
-    {
-      "title": "SeaArtとは？無料で使える画像生成AIの使い方・料金・動画生成まで解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/seaart/",
-      "description": "Stable DiffusionやMidjourneyなど、画像生成AIには多くの選択肢があります。一方で、無料で使えても操作が難しかったり、使いやすくても本格的に使うには課金が必要だったりと、初心者やライトユーザーには [...]...",
-      "publishedDate": "Tue, 30 Jun 2026 09:12:18 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/seaart_2606-1024x576.webp",
       "language": "ja"
     },
     {
@@ -341,28 +264,6 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Generated_Image_k2dxu1k2.max-600x600.format-webp.webp",
       "language": "en"
-    },
-    {
-      "title": "ファクトチェックも生成AIを使えば効率的にできる！具体的な方法やツール、注意点を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/fact-checking-ai/",
-      "description": "昨今の情報社会では世の中に情報が溢れすぎていることもあり、意図せず誤情報や誤解を招くような情報を発信してしまうことで大きなトラブルに発展することも少なくありません。そうならないためにもファクトチェックは必要不可欠ですが、 [...]...",
-      "publishedDate": "Tue, 30 Jun 2026 05:46:20 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/fact-checking-ai_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Google AI Plusは個人利用に最適！他AIとの違いやその他プランとの比較・料金までまとめて解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/google-ai-plus/",
-      "description": "生成AIがプライベートや業務中など、日常的に使われるようになり多くのAIサービスが誕生しています。 しかし、個人的に使うにはオーバースペックだったり料金が高いといった理由で、導入を見送る方も少なくないでしょう。そんな方に [...]...",
-      "publishedDate": "Tue, 30 Jun 2026 05:26:15 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/google-ai-plus_2606-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "Inside Genebench-Pro",
@@ -486,6 +387,83 @@
       "language": "en"
     },
     {
+      "title": "How agents are transforming work",
+      "titleJa": "エージェントが仕事をどのように変革しているか",
+      "link": "https://openai.com/index/how-agents-are-transforming-work",
+      "description": "A new OpenAI research paper shows how AI agents are transforming work, enabling longer, more complex tasks and expanding productivity across roles....",
+      "publishedDate": "Thu, 25 Jun 2026 02:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "【AI運用フェーズ】導入後が本当の勝負！成功に導くポイントと全体プロセスを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/ai-operations-phase/",
+      "description": "AIを導入したものの、期待通りの効果が出ないと悩んでいませんか？実は、こうした悩みは多くの企業に共通しています。2026年の帝国データバンクの調査によると、生成AI活用の課題として、「専門人材・ノウハウ不足（41.3%） [...]...",
+      "publishedDate": "Thu, 02 Jul 2026 08:29:42 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-Operations-Phase_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AI導入フェーズとは！失敗しないためのポイントを整理！社内フロー・費用相場・注意点も解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/ai-implementation-phase/",
+      "description": "AIを社内に導入したいけれど「どんな手順で・どのくらいの時間と費用がかかるのか」がわからず迷っていませんか？AI導入フェーズは社内導入の重要な工程で、進め方を誤ると「導入したのに使われない」ということになります。 この記 [...]...",
+      "publishedDate": "Thu, 02 Jul 2026 07:24:51 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-Implementation-Phase_2606-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "防除研究所、AIクマ検知システムの実地検証を開始。広域的な実証検証体制の構築を加速",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/bojo-ai-bear-detection-test/",
+      "description": "防除研究所は、AIクマ検知システムなどの実地検証を秋田県や福島県、岐阜県で開始しました。東北・中部地域を中心とした広域的な実証体制を構築し、地域に合わせたクマ対策により安全な地域づくりを目指します。 このニュースのポイン [...] The post 防除研究所、AIクマ検知システムの実地検証を開始。広域的な実証検証体制の構築を加速 first appeared on AIポータルメディアAIsm...",
+      "publishedDate": "Thu, 02 Jul 2026 07:19:45 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/bojo-ai-bear-detection-test-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "Anthropic、新モデル「Claude Sonnet 5」発表。「Opus 4.8」に迫る性能を低価格で実現",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/anthropic-claude-sonnet-5-release/",
+      "description": "Anthropicは、新モデル「Claude Sonnet 5」を発表しました。計画の立案やブラウザなどのツール使用において、より高度な自律動作を実現しています。 このニュースのポイント Anthropic、高い自律性を [...] The post Anthropic、新モデル「Claude Sonnet 5」発表。「Opus 4.8」に迫る性能を低価格で実現 first appeared on...",
+      "publishedDate": "Thu, 02 Jul 2026 07:08:26 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/ClaudeSonnet5eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI、初の独自設計AIチップ「Jalapeño」を発表。Broadcomとの共同開発基盤の第1弾",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-broadcom-jalapeno/",
+      "description": "OpenAIは、Broadcomと共同開発した独自設計AIチップ「Jalapeño」を発表しました。LLMの推論に特化してゼロから設計されたアクセラレーターであり、両社が複数世代にわたり共同開発する計算基盤の第1弾となり [...] The post OpenAI、初の独自設計AIチップ「Jalapeño」を発表。Broadcomとの共同開発基盤の第1弾 first appeared on AIポ...",
+      "publishedDate": "Thu, 02 Jul 2026 06:47:08 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/OpenAI-Broadcom-Jalapeno.png",
+      "language": "ja"
+    },
+    {
+      "title": "Gemini Omni Flashとは？Googleの動画生成・編集AIモデルの特徴・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/gemini-omni-flash/",
+      "description": "2026年6月、Googleから新たな動画生成・編集AIモデルが発表されました。 今回登場した「Gemini Omni Flash」は、Geminiのマルチモーダル推論と動画生成・編集を融合させた新しいAIモデルです。テ [...]...",
+      "publishedDate": "Thu, 02 Jul 2026 05:59:26 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-Omni-Flash-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "自動運転レベルとは？0〜5の定義・対応車種・実用化へのロードマップをわかりやすく解説",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/autonomous-driving-level/",
@@ -530,25 +508,58 @@
       "language": "ja"
     },
     {
-      "title": "【Qwen-AgentWorld】GPT-5.4超えのスコアを叩き出した言語世界モデルを徹底解説",
+      "title": "VSCode AIエージェント比較！使い方・料金・業務導入の注意点を検証",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwen-agentworld/",
-      "description": "2026年6月24日、アリババのQwenチームがAIエージェントの環境そのものをシミュレートする新しいモデル「Qwen-AgentWorld」を公開しました！ 従来のLLMは「次のトークン（単語）を予測する」ことを目的に [...]...",
-      "publishedDate": "Mon, 29 Jun 2026 11:29:41 +0000",
+      "link": "https://weel.co.jp/media/tech/vscode-ai-agent/",
+      "description": "VSCodeのAIエージェントは、自然言語の指示でファイル編集やコマンド実行まで支援する開発機能です。無料で試せるのか、業務コードに使って安全なのか迷う方も多いでしょう。 本記事では、GitHub Copilot Age [...]...",
+      "publishedDate": "Fri, 03 Jul 2026 04:35:55 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen-AgentWorld-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/vscode-ai-agent_2607-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "ChatGPT Images 2.0とは？OpenAIの画像生成AIの特徴・使い方・活用事例を徹底解説",
+      "title": "【Claude Science】科学研究を1つのアプリに統合するAnthropicのAIワークベンチを徹底解説！",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/chatgpt-images-2.0/",
-      "description": "2026年4月、OpenAIから新たな画像生成モデルが登場しました。 今回発表された「ChatGPT Images 2.0」は、従来の画像生成AIの延長ではなく、「アイデアをそのまま視覚化する」ことにフォーカスした次世代 [...]...",
-      "publishedDate": "Mon, 29 Jun 2026 00:02:51 +0000",
+      "link": "https://weel.co.jp/media/tech/claude-science/",
+      "description": "2026年7月1日、Anthropicが科学研究向けの新アプリ「Claude Science」をベータ版として公開しました！ Claude Codeがソフトウェア開発の現場を大きく変えたように、Claude Scienc [...]...",
+      "publishedDate": "Fri, 03 Jul 2026 03:22:35 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_ChatGPT-Images-2.0-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Science-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【完全版】Claudeアーティファクト(Artifacts)の使い方・ビジネス活用法・プロンプト例",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-artifacts-2026/",
+      "description": "「Claudeのアーティファクト機能って何がすごいの？」「ChatGPTとどう違うの？」と疑問を抱いていませんか？ アーティファクト（Artifacts）を活用すれば、プログラミングの知識が一切なくても、動くWebアプリ [...] The post 【完全版】Claudeアーティファクト(Artifacts)の使い方・ビジネス活用法・プロンプト例 first appeared on AIポータル...",
+      "publishedDate": "Fri, 03 Jul 2026 02:54:35 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/claudeartifacts.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Lumada（ルマーダ）とは？日立の強み・導入事例とAIで進化する「Lumada 3.0」を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/lumada-3-0-dx/",
+      "description": "自社の経営課題を解決するためにDXを進めたいものの、デジタル技術をどのように活用すればよいかわからず悩んでいるDX推進担当者の方も多いのではないでしょうか。 汎用的なデジタルツールだけでは、自社の業務や現場の課題に合わな [...] The post Lumada（ルマーダ）とは？日立の強み・導入事例とAIで進化する「Lumada 3.0」を徹底解説 first appeared on AIポータ...",
+      "publishedDate": "Fri, 03 Jul 2026 01:35:46 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/lumada.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "UNIX系コマンドをWindowsに移植／macOS上にLinuxコンテナを統合／Ubuntu、開発環境をコマンド一発で構築ほか、2026年6月の人気記事",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/unixwindowsmacoslinuxubuntu20266.html",
+      "description": "枕は一度買えばずっと使えるものと思っていたのですが、どうやらへたってきたりつぶれてきたりしたら買い換えた方がいいらしい、ということを最近知りました。今使ってる枕、一体何年使ってきたんだ……。 というわけで今、新しい枕を買うべくネットやお店で......",
+      "publishedDate": "2026-07-02T15:34:09Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/fbico_pblky.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/HKdu4sUXYAISq51.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "WASI 0.3が正式版に。WebAssembly Componentの非同期処理が共通基盤に",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/wasi_03webassembly_component.html",
-      "description": "WebAssembly関連仕様の標準化を行っているByteCode Allianceは、WebAssemblyを基盤としたコンポーネントモデルの最新仕様「WASI 0.3」（WebAssembly System Interface Prev......",
-      "publishedDate": "2026-06-14T15:24:47Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/wasi-p3-ga01.png",
       "language": "ja"
     }
   ]
