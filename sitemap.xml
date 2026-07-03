@@ -184,6 +184,14 @@
     <priority>0.4</priority>
   </url>
 
+  <!-- Tips: 使い方ガイド一覧 -->
+  <url>
+    <loc>https://28tools.com/tips/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Tips: ハッチングパターンの作り方 -->
   <url>
     <loc>https://28tools.com/tips/revit-hatch-pattern.html</loc>
