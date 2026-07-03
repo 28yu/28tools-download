@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>図面PDFを比較して差分を見つける方法｜無料ツールで重ね合わせ - 28 Tools</title>
+    <link rel="icon" type="image/png" href="../images/site-icons/favicon-28.png">
+    <link rel="canonical" href="https://28tools.com/tips/pdf-compare-guide.html">
+    <meta name="description" content="2つの図面PDFを重ね合わせて変更点を見つける方法を解説。共通=グレー・旧=青・新=赤で差分を色分け表示する無料ツールの使い方を、拡大・パン操作や高画質ダウンロードまで紹介します。">
+    <meta property="og:title" content="図面PDFを比較して差分を見つける方法｜無料ツールで重ね合わせ">
+    <meta property="og:description" content="2つの図面PDFを重ね合わせ、変更点を色分けで一目で確認できる無料ツールの使い方を解説。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://28tools.com/tips/pdf-compare-guide.html">
+    <meta property="og:image" content="https://28tools.com/images/ogp-image.png">
+    <meta property="og:site_name" content="28 Tools">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="図面PDFを比較して差分を見つける方法｜無料ツールで重ね合わせ">
+    <meta name="twitter:description" content="2つの図面PDFを重ね合わせ、変更点を色分けで一目で確認できる無料ツールの使い方を解説。">
+    <meta name="twitter:image" content="https://28tools.com/images/ogp-image.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197151217236924"
+         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/manual.css">
+    <link rel="stylesheet" href="../css/features.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- 構造化データ: パンくず -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://28tools.com/" },
+        { "@type": "ListItem", "position": 2, "name": "PDF比較ツール", "item": "https://28tools.com/pdf_compare.html" },
+        { "@type": "ListItem", "position": 3, "name": "図面PDFを比較する方法", "item": "https://28tools.com/tips/pdf-compare-guide.html" }
+      ]
+    }
+    </script>
+
+    <!-- 構造化データ: HowTo -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "図面PDFを無料ツールで比較する手順",
+      "description": "ブラウザ完結の無料ツールで2つの図面PDFを重ね合わせ、変更点を色分けで確認する手順。",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "2つのPDFを選ぶ", "text": "比較したい旧図・新図の2つのPDFを選択します。" },
+        { "@type": "HowToStep", "position": 2, "name": "比較を実行する", "text": "比較ボタンを押すと、2枚が重ね合わされて差分が色分けされます。" },
+        { "@type": "HowToStep", "position": 3, "name": "色分け結果を確認する", "text": "共通はグレー、旧図だけの線は青、新図だけの線は赤で表示されます。" },
+        { "@type": "HowToStep", "position": 4, "name": "高画質でダウンロードする", "text": "必要に応じて結果を高解像度PDFとして保存します。" }
+      ]
+    }
+    </script>
+
+    <!-- 構造化データ: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "本当に無料で使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい、完全無料です。会員登録も不要で、ブラウザだけで完結します。" } },
+        { "@type": "Question", "name": "PDFは外部にアップロードされますか？", "acceptedAnswer": { "@type": "Answer", "text": "いいえ。比較処理はすべてブラウザ内で行われ、PDFがサーバーに送信されることはありません。" } },
+        { "@type": "Question", "name": "複数ページのPDFも比較できますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。複数ページのPDFに対応し、ページごとに比較結果を確認できます。" } },
+        { "@type": "Question", "name": "差分の色分けは何を表していますか？", "acceptedAnswer": { "@type": "Answer", "text": "共通部分はグレー、旧図だけにある線は青、新図だけにある線は赤で表示されます。" } }
+      ]
+    }
+    </script>
+</head>
+<body class="manual-page">
+    <!-- 共通ヘッダー -->
+    <div id="header-container"></div>
+
+    <!-- サイドバーナビゲーション -->
+    <div id="sidebar-container"></div>
+
+    <!-- 記事コンテンツ -->
+    <div class="manual-container">
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <a href="../index.html" data-lang-key="breadcrumb-home">ホーム</a>
+            <span class="separator">›</span>
+            <a href="../pdf_compare.html" data-lang-key="tips-pdf-breadcrumb-tool">PDF比較ツール</a>
+            <span class="separator">›</span>
+            <span data-lang-key="tips-pdf-breadcrumb-current">図面PDFを比較する方法</span>
+        </nav>
+
+        <!-- 記事タイトル -->
+        <div class="manual-header">
+            <div class="icon-wrapper">
+                <img src="../images/portal/icon-hatch.png" alt="PDF比較" class="feature-icon">
+            </div>
+            <h1 class="manual-title" data-lang-key="tips-pdf-title">図面PDFを比較して差分を見つける方法</h1>
+            <p class="manual-subtitle" data-lang-key="tips-pdf-subtitle">無料ツールで2つの図面を重ね、変更点を色分けで確認</p>
+        </div>
+
+        <!-- 本文 -->
+        <article class="md-content">
+            <p data-lang-key="tips-pdf-intro">図面の改訂前後を比べて「どこが変わったのか」を探すのは、目視だと見落としが起きがちです。この記事では、<strong>2つの図面PDFを重ね合わせ、変更点を色分けで一目で確認できる無料ツール</strong>の使い方を解説します。インストール不要・完全ブラウザ完結で、PDFは外部に送信されません。</p>
+
+            <hr>
+
+            <h2 data-lang-key="tips-pdf-h2-what">図面PDFの比較とは</h2>
+            <p data-lang-key="tips-pdf-what-p">2枚の図面PDF（例：旧図と新図）を<strong>ぴったり重ね合わせ</strong>、線の増減を色分けして表示することで、改訂箇所や変更点をひと目で把握する方法です。承認前のチェックや、施工図の変更点確認に役立ちます。</p>
+
+            <h2 data-lang-key="tips-pdf-h2-why">手作業での比較が大変な理由</h2>
+            <ul>
+                <li data-lang-key="tips-pdf-why-li1"><strong>目視では見落としが多い</strong>：線1本の追加・削除や寸法の微修正は、並べて見ても気づきにくい。</li>
+                <li data-lang-key="tips-pdf-why-li2"><strong>重ね合わせの位置合わせが面倒</strong>：印刷して透かして見る、画像編集ソフトで重ねる、といった作業は手間がかかる。</li>
+                <li data-lang-key="tips-pdf-why-li3"><strong>変更点の共有がしにくい</strong>：「ここが変わった」を口頭やメモで伝えると齟齬が生まれやすい。</li>
+            </ul>
+
+            <h2 data-lang-key="tips-pdf-h2-steps">無料ツールで図面PDFを比較する手順</h2>
+            <p data-lang-key="tips-pdf-steps-p">28 Tools の<strong>PDF比較ツール</strong>は、2つのPDFを選ぶだけで差分を色分け表示します。基本の流れは次の4ステップです。</p>
+            <ol>
+                <li data-lang-key="tips-pdf-step1"><strong>2つのPDFを選ぶ</strong> — 旧図・新図の2ファイルを指定</li>
+                <li data-lang-key="tips-pdf-step2"><strong>比較を実行</strong> — ボタンひとつで自動的に重ね合わせ</li>
+                <li data-lang-key="tips-pdf-step3"><strong>色分け結果を確認</strong> — 変更点が色で浮かび上がる</li>
+                <li data-lang-key="tips-pdf-step4"><strong>高画質でダウンロード</strong> — 結果を高解像度PDFで保存（216/300/600dpi）</li>
+            </ol>
+
+            <p style="text-align:center; margin:2rem 0;">
+                <a href="../pdf_compare.html" class="nav-button" style="display:inline-block;" data-lang-key="tips-pdf-cta1">🔍 PDF比較ツールを開く（無料）</a>
+            </p>
+
+            <h2 data-lang-key="tips-pdf-h2-color">色分けの意味</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-lang-key="tips-pdf-th-color">色</th>
+                        <th data-lang-key="tips-pdf-th-meaning">意味</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-lang-key="tips-pdf-color-gray"><strong>グレー</strong></td><td data-lang-key="tips-pdf-color-gray-mean">共通部分（両方の図面に存在＝変わっていない）</td></tr>
+                    <tr><td data-lang-key="tips-pdf-color-blue"><strong>青</strong></td><td data-lang-key="tips-pdf-color-blue-mean">旧図だけにある線（削除された部分）</td></tr>
+                    <tr><td data-lang-key="tips-pdf-color-red"><strong>赤</strong></td><td data-lang-key="tips-pdf-color-red-mean">新図だけにある線（追加された部分）</td></tr>
+                </tbody>
+            </table>
+            <blockquote>
+                <p data-lang-key="tips-pdf-color-note">💡 「赤＝追加、青＝削除」と覚えると直感的です。グレーのまま残っている部分は変更されていません。</p>
+            </blockquote>
+
+            <h2 data-lang-key="tips-pdf-h2-zoom">プレビューの拡大・パンで細部確認</h2>
+            <p data-lang-key="tips-pdf-zoom-p">比較結果はプレビュー上で<strong>拡大・ドラッグ移動（パン）</strong>ができます。ホイールでカーソル位置を中心にズーム、ドラッグで移動、ダブルクリックでリセット。細かい寸法の変更や小さな記号の差分も、拡大してくっきり確認できます。</p>
+
+            <h2 data-lang-key="tips-pdf-h2-usecase">こんな場面で使える</h2>
+            <ul>
+                <li data-lang-key="tips-pdf-usecase-li1"><strong>改訂チェック</strong> — Rev.前後で本当に意図した箇所だけが変わっているかを確認</li>
+                <li data-lang-key="tips-pdf-usecase-li2"><strong>承認前の差分確認</strong> — 提出図と修正版の違いを漏れなく把握</li>
+                <li data-lang-key="tips-pdf-usecase-li3"><strong>施工図の変更点把握</strong> — 支給図の更新でどこが変わったかを素早く共有</li>
+            </ul>
+
+            <h2 data-lang-key="tips-pdf-h2-faq">よくある質問（FAQ）</h2>
+            <h3 data-lang-key="tips-pdf-faq-q1">本当に無料で使えますか？</h3>
+            <p data-lang-key="tips-pdf-faq-a1">はい、完全無料です。会員登録も不要で、ブラウザだけで完結します。</p>
+            <h3 data-lang-key="tips-pdf-faq-q2">PDFは外部にアップロードされますか？</h3>
+            <p data-lang-key="tips-pdf-faq-a2">いいえ。比較処理はすべてブラウザ内で行われ、PDFがサーバーに送信されることはありません。</p>
+            <h3 data-lang-key="tips-pdf-faq-q3">複数ページのPDFも比較できますか？</h3>
+            <p data-lang-key="tips-pdf-faq-a3">はい。複数ページのPDFに対応し、ページごとに比較結果を確認できます。</p>
+            <h3 data-lang-key="tips-pdf-faq-q4">差分の色分けは何を表していますか？</h3>
+            <p data-lang-key="tips-pdf-faq-a4">共通部分はグレー、旧図だけにある線は青、新図だけにある線は赤で表示されます。</p>
+
+            <h2 data-lang-key="tips-pdf-h2-summary">まとめ・関連ツール</h2>
+            <p data-lang-key="tips-pdf-summary-p">図面PDFの比較は、無料ツールを使えば2ファイルを選ぶだけで変更点を色分け表示できます。目視での見落としを防ぎ、変更点の共有もスムーズになります。改訂チェックや承認前の確認にぜひご活用ください。</p>
+            <ul>
+                <li data-lang-key="tips-pdf-related1"><a href="../pdf_compare.html">PDF比較ツール</a> — 2つの図面PDFの差分を色分けで比較</li>
+                <li data-lang-key="tips-pdf-related2"><a href="../hatch.html">ハッチングパターン作成ツール</a> — Revit / AutoCAD 用の .pat をブラウザで作成</li>
+                <li data-lang-key="tips-pdf-related3"><a href="../addins.html">Revit アドイン（無料）</a> — 作図を効率化する 28 Tools のアドイン</li>
+            </ul>
+
+            <p style="text-align:center; margin:2rem 0;">
+                <a href="../pdf_compare.html" class="nav-button" style="display:inline-block;" data-lang-key="tips-pdf-cta2">🔍 いますぐ図面PDFを比較する（無料）</a>
+            </p>
+        </article>
+
+        <div class="manual-navigation">
+            <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
+                ← ホームに戻る
+            </a>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <!-- SNSシェアボタン -->
+            <div class="share-buttons">
+                <p class="share-text" data-lang-key="footer-share">このページをシェア：</p>
+                <div class="share-icons">
+                    <a href="#" class="share-btn twitter" data-sns="twitter" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn facebook" data-sns="facebook" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn line" data-sns="line" aria-label="LINE">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn hatena" data-sns="hatena" aria-label="はてなブックマーク">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.47 0C22.42 0 24 1.58 24 3.53v16.94c0 1.95-1.58 3.53-3.53 3.53H3.53C1.58 24 0 22.42 0 20.47V3.53C0 1.58 1.58 0 3.53 0h16.94zM7.708 5.522H5.522v7.827c0 1.283.818 2.006 2.118 2.006s2.117-.723 2.117-2.006V5.522H7.708zm10.7 6.2c0-1.345-.696-2.285-2.02-2.585.897-.38 1.527-1.104 1.527-2.198 0-1.72-1.33-2.417-3.292-2.417H11.97v10.016h2.754c1.864 0 3.685-.65 3.685-2.815zm-4.175-1.35h1.29c.696 0 1.13.354 1.13.952 0 .597-.434.95-1.13.95h-1.29V10.37zm0-3.23h1.113c.57 0 1.017.315 1.017.87 0 .552-.447.866-1.017.866h-1.114V7.142zm-8.17 10.29c.91 0 1.616.71 1.616 1.62 0 .907-.707 1.616-1.616 1.616-.91 0-1.616-.71-1.616-1.617s.707-1.62 1.616-1.62z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="site-footer-links">
+                <a href="../about.html" data-lang-key="footer-about">運営者情報</a>
+                <span class="footer-divider">|</span>
+                <a href="../contact.html" data-lang-key="footer-contact">お問い合わせ</a>
+                <span class="footer-divider">|</span>
+                <a href="../privacy.html" data-lang-key="footer-privacy">プライバシーポリシー</a>
+                <span class="footer-divider">|</span>
+                <a href="../terms.html" data-lang-key="footer-terms">利用規約</a>
+            </div>
+            <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
