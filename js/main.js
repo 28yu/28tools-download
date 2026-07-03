@@ -6,7 +6,7 @@
 // includes/header.html と includes/sidebar.html を fetch() するときの
 // クエリ文字列。includes/* を編集したらここをインクリメントする。
 // (CDN edge cache が古いインクルードを返す問題への対処)
-const INCLUDES_VERSION = '20260626-1';
+const INCLUDES_VERSION = '20260703-1';
 
 // グローバル変数
 let currentLanguage = 'ja';
@@ -8239,10 +8239,53 @@ translations.tipsGrid = {
     }
 };
 
+translations.tipsNav = {
+    'index-tab-tips': {
+        ja: '使い方ガイド', en: 'Guides', zh: '使用指南'
+    },
+    'index-category-tips-desc': {
+        ja: 'Revit・AutoCAD の作図を効率化する使い方ガイド（Tips）。ハッチング作成・PDF比較・符号一括切替などのノウハウ。',
+        en: 'Guides (Tips) to speed up drafting in Revit and AutoCAD: making hatch patterns, comparing PDFs, bulk bubble toggling, and more.',
+        zh: '提升 Revit・AutoCAD 绘图效率的使用指南（Tips）：制作填充图案、比较 PDF、批量切换符号等。'
+    },
+    'tips-index-breadcrumb': {
+        ja: '使い方ガイド', en: 'Guides', zh: '使用指南'
+    },
+    'tips-index-title': {
+        ja: '使い方ガイド（Tips）', en: 'Guides (Tips)', zh: '使用指南（Tips）'
+    },
+    'tips-index-subtitle': {
+        ja: 'Revit・AutoCAD の作図を効率化するノウハウ集',
+        en: 'Know-how to speed up drafting in Revit and AutoCAD',
+        zh: '提升 Revit・AutoCAD 绘图效率的实用技巧集'
+    },
+    'tips-index-intro': {
+        ja: '28 Tools の各ツール・アドインの使い方や、作図を効率化するコツをまとめた記事の一覧です。気になるテーマから読んでみてください。',
+        en: 'A list of articles on how to use each 28 Tools tool/add-in and tips to speed up your drafting. Start with whichever topic interests you.',
+        zh: '汇总了 28 Tools 各工具/插件的使用方法以及提升绘图效率技巧的文章列表。请从感兴趣的主题开始阅读。'
+    },
+    'tips-index-card-hatch-desc': {
+        ja: '斜線・網掛け・目地・RC などの .pat ファイルを無料ツールで作成する手順。',
+        en: 'How to create .pat files (diagonal, crosshatch, joints, RC, etc.) with a free tool.',
+        zh: '用免费工具制作斜线、交叉线、接缝、RC 等 .pat 文件的步骤。'
+    },
+    'tips-index-card-pdf-desc': {
+        ja: '2つの図面PDFを重ね、共通=グレー・旧=青・新=赤で変更点を確認する方法。',
+        en: 'Overlay two drawing PDFs and see changes as common = gray, old = blue, new = red.',
+        zh: '叠加两张图纸 PDF，以共同=灰、旧=蓝、新=红确认变更点的方法。'
+    },
+    'tips-index-card-grid-desc': {
+        ja: '無料アドインで通り芯・レベルの符号（バブル）表示をワンクリック一括切替。',
+        en: 'Toggle grid/level bubble visibility in bulk with one click using a free add-in.',
+        zh: '用免费插件一键批量切换轴网/标高符号（气泡）显示。'
+    }
+};
+
     Object.assign(translations,
         translations.tipsHatch,
         translations.tipsPdf,
         translations.tipsGrid,
+        translations.tipsNav,
         translations.common,
         translations.aiMinutesPage,
         translations.sections,
