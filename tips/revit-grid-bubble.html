@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revitで通り芯・レベルの符号を一括で表示/非表示にする方法｜無料アドイン - 28 Tools</title>
+    <link rel="icon" type="image/png" href="../images/site-icons/favicon-28.png">
+    <link rel="canonical" href="https://28tools.com/tips/revit-grid-bubble.html">
+    <meta name="description" content="Revitで通り芯（グリッド）やレベルの符号（バブル）を1本ずつ切り替えるのは大変。無料アドインを使って両端・片側の符号表示をワンクリックで一括切替する方法を解説します。">
+    <meta property="og:title" content="Revitで通り芯・レベルの符号を一括で表示/非表示にする方法｜無料アドイン">
+    <meta property="og:description" content="通り芯・レベルの符号（バブル）表示を無料アドインでワンクリック一括切替する方法を解説。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://28tools.com/tips/revit-grid-bubble.html">
+    <meta property="og:image" content="https://28tools.com/images/ogp-image.png">
+    <meta property="og:site_name" content="28 Tools">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Revitで通り芯・レベルの符号を一括で表示/非表示にする方法｜無料アドイン">
+    <meta name="twitter:description" content="通り芯・レベルの符号（バブル）表示を無料アドインでワンクリック一括切替する方法を解説。">
+    <meta name="twitter:image" content="https://28tools.com/images/ogp-image.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197151217236924"
+         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/manual.css">
+    <link rel="stylesheet" href="../css/features.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- 構造化データ: パンくず -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://28tools.com/" },
+        { "@type": "ListItem", "position": 2, "name": "アドイン", "item": "https://28tools.com/addins.html" },
+        { "@type": "ListItem", "position": 3, "name": "通り芯・レベルの符号を一括切替する方法", "item": "https://28tools.com/tips/revit-grid-bubble.html" }
+      ]
+    }
+    </script>
+
+    <!-- 構造化データ: HowTo -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Revitで通り芯・レベルの符号を一括切替する手順",
+      "description": "無料アドインを使って通り芯・レベルの符号（バブル）表示をワンクリックで一括切替する手順。",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "無料アドインを導入する", "text": "28 ToolsのRevitアドインをダウンロードしてインストールします。" },
+        { "@type": "HowToStep", "position": 2, "name": "対象のビューを開く", "text": "通り芯・レベルが表示されている平面・断面などのビューを開きます。" },
+        { "@type": "HowToStep", "position": 3, "name": "必要なら対象を選択する", "text": "特定の通り芯だけを対象にしたい場合は事前に選択します。未選択ならビュー内の全要素が対象です。" },
+        { "@type": "HowToStep", "position": 4, "name": "モードを選んで一括切替する", "text": "両端表示・左上のみ・右下のみからモードを選ぶと、符号表示が一括で切り替わります。" }
+      ]
+    }
+    </script>
+
+    <!-- 構造化データ: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "アドインは無料ですか？", "acceptedAnswer": { "@type": "Answer", "text": "はい、無料でダウンロードして使えます。Revit 2021〜2026に対応しています。" } },
+        { "@type": "Question", "name": "どのビューで使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "平面図・天井伏図・構造伏図・断面図など、通り芯やレベルが表示されるビューで使えます。" } },
+        { "@type": "Question", "name": "特定の通り芯だけ切り替えできますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。事前に通り芯・レベルを選択しておくとその要素のみ、未選択ならビュー内の全要素が対象になります。" } },
+        { "@type": "Question", "name": "符号を左側だけ表示することもできますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。両端表示・左/上のみ・右/下のみの3モードから選べます。" } }
+      ]
+    }
+    </script>
+</head>
+<body class="manual-page">
+    <!-- 共通ヘッダー -->
+    <div id="header-container"></div>
+
+    <!-- サイドバーナビゲーション -->
+    <div id="sidebar-container"></div>
+
+    <!-- 記事コンテンツ -->
+    <div class="manual-container">
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <a href="../index.html" data-lang-key="breadcrumb-home">ホーム</a>
+            <span class="separator">›</span>
+            <a href="../addins.html" data-lang-key="breadcrumb-addins">アドイン</a>
+            <span class="separator">›</span>
+            <span data-lang-key="tips-grid-breadcrumb-current">通り芯・レベルの符号を一括切替する方法</span>
+        </nav>
+
+        <!-- 記事タイトル -->
+        <div class="manual-header">
+            <div class="icon-wrapper">
+                <img src="../images/portal/icon-addon.png" alt="Revitアドイン" class="feature-icon">
+            </div>
+            <h1 class="manual-title" data-lang-key="tips-grid-title">Revitで通り芯・レベルの符号を一括で表示/非表示にする方法</h1>
+            <p class="manual-subtitle" data-lang-key="tips-grid-subtitle">無料アドインで符号（バブル）表示をワンクリック一括切替</p>
+        </div>
+
+        <!-- 本文 -->
+        <article class="md-content">
+            <p data-lang-key="tips-grid-intro">Revit で通り芯（グリッド）やレベルの<strong>符号（バブル）</strong>を、ビューごとに1本ずつ表示/非表示にしていませんか？図面ごとに片側だけ出したい・両端出したい、という調整は手作業だと地味に時間がかかります。この記事では、<strong>無料アドインで符号表示をワンクリックで一括切替する方法</strong>を解説します。</p>
+
+            <hr>
+
+            <h2 data-lang-key="tips-grid-h2-what">通り芯・レベルの「符号（バブル）」とは</h2>
+            <p data-lang-key="tips-grid-what-p">通り芯やレベルの端に表示される<strong>丸い符号（バブル）</strong>のことです。X1・Y1・GL・1FL といった記号を示します。図面の種類やレイアウトによって、両端に出したり片側だけに出したりを使い分けます。</p>
+
+            <h2 data-lang-key="tips-grid-h2-why">1本ずつ切り替えるのが大変な理由</h2>
+            <ul>
+                <li data-lang-key="tips-grid-why-li1"><strong>本数が多い</strong>：通り芯が数十本ある図面では、1本ずつ端部のチェックボックスを操作するのは非常に手間。</li>
+                <li data-lang-key="tips-grid-why-li2"><strong>ビューごとにやり直し</strong>：平面・断面など、ビューが変わるたびに同じ作業を繰り返すことになる。</li>
+                <li data-lang-key="tips-grid-why-li3"><strong>片側表示の統一が面倒</strong>：「左だけ」「下だけ」に揃えたいとき、手作業だと抜け漏れが出やすい。</li>
+            </ul>
+
+            <h2 data-lang-key="tips-grid-h2-steps">無料アドインで一括切替する手順</h2>
+            <p data-lang-key="tips-grid-steps-p">28 Tools の Revit アドインには、通り芯・レベルの符号表示をワンクリックで切り替える機能があります。基本の流れは次の4ステップです。</p>
+            <ol>
+                <li data-lang-key="tips-grid-step1"><strong>無料アドインを導入</strong> — 28 Tools のアドインをダウンロードしてインストール</li>
+                <li data-lang-key="tips-grid-step2"><strong>対象のビューを開く</strong> — 通り芯・レベルが表示された平面・断面などを開く</li>
+                <li data-lang-key="tips-grid-step3"><strong>必要なら対象を選択</strong> — 特定の通り芯だけ変えたい場合は事前選択（未選択ならビュー全体）</li>
+                <li data-lang-key="tips-grid-step4"><strong>モードを選んで一括切替</strong> — 両端／左上のみ／右下のみを選ぶと符号表示が一括で切り替わる</li>
+            </ol>
+
+            <p style="text-align:center; margin:2rem 0;">
+                <a href="../addins.html" class="nav-button" style="display:inline-block;" data-lang-key="tips-grid-cta1">⬇️ 無料アドインをダウンロード</a>
+            </p>
+
+            <h2 data-lang-key="tips-grid-h2-modes">3つの表示モード</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-lang-key="tips-grid-th-mode">モード</th>
+                        <th data-lang-key="tips-grid-th-desc">動作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-lang-key="tips-grid-mode-both"><strong>両端表示</strong></td><td data-lang-key="tips-grid-mode-both-desc">通り芯・レベルの両端に符号を表示</td></tr>
+                    <tr><td data-lang-key="tips-grid-mode-left"><strong>左/上のみ</strong></td><td data-lang-key="tips-grid-mode-left-desc">左端（縦通り芯）または上端（横通り芯・レベル）のみに表示</td></tr>
+                    <tr><td data-lang-key="tips-grid-mode-right"><strong>右/下のみ</strong></td><td data-lang-key="tips-grid-mode-right-desc">右端（縦通り芯）または下端（横通り芯・レベル）のみに表示</td></tr>
+                </tbody>
+            </table>
+            <blockquote>
+                <p data-lang-key="tips-grid-modes-note">💡 事前に通り芯・レベルを選択していればその要素のみ、選択していなければビュー内の全要素が対象になります。</p>
+            </blockquote>
+
+            <h2 data-lang-key="tips-grid-h2-usecase">こんな場面で使える</h2>
+            <ul>
+                <li data-lang-key="tips-grid-usecase-li1"><strong>提出図の体裁を整える</strong> — 図面枠に合わせて符号を片側だけに揃える</li>
+                <li data-lang-key="tips-grid-usecase-li2"><strong>ビューを量産するとき</strong> — 平面・断面を大量に作る際、符号表示を一括で統一</li>
+                <li data-lang-key="tips-grid-usecase-li3"><strong>符号が邪魔なとき</strong> — 検討中は両端OFF、仕上げ時に必要な側だけON、といった切り替え</li>
+            </ul>
+
+            <h2 data-lang-key="tips-grid-h2-faq">よくある質問（FAQ）</h2>
+            <h3 data-lang-key="tips-grid-faq-q1">アドインは無料ですか？</h3>
+            <p data-lang-key="tips-grid-faq-a1">はい、無料でダウンロードして使えます。Revit 2021〜2026に対応しています。</p>
+            <h3 data-lang-key="tips-grid-faq-q2">どのビューで使えますか？</h3>
+            <p data-lang-key="tips-grid-faq-a2">平面図・天井伏図・構造伏図・断面図など、通り芯やレベルが表示されるビューで使えます。</p>
+            <h3 data-lang-key="tips-grid-faq-q3">特定の通り芯だけ切り替えできますか？</h3>
+            <p data-lang-key="tips-grid-faq-a3">はい。事前に通り芯・レベルを選択しておくとその要素のみ、未選択ならビュー内の全要素が対象になります。</p>
+            <h3 data-lang-key="tips-grid-faq-q4">符号を左側だけ表示することもできますか？</h3>
+            <p data-lang-key="tips-grid-faq-a4">はい。両端表示・左/上のみ・右/下のみの3モードから選べます。</p>
+
+            <h2 data-lang-key="tips-grid-h2-summary">まとめ・関連リンク</h2>
+            <p data-lang-key="tips-grid-summary-p">通り芯・レベルの符号表示は、無料アドインを使えばビュー内の全要素または選択要素をワンクリックで一括切替できます。片側だけの表示統一も一発。図面の体裁調整やビューの量産がぐっと楽になります。詳しい使い方は機能マニュアルをご覧ください。</p>
+            <ul>
+                <li data-lang-key="tips-grid-related1"><a href="../addins.html">Revit アドイン（無料）</a> — 符号ON/OFF を含む 28 Tools の各機能</li>
+                <li data-lang-key="tips-grid-related2"><a href="../manual/grid-bubble.html">符号ON/OFF 機能マニュアル</a> — 詳しい使い方と対応ビュー</li>
+                <li data-lang-key="tips-grid-related3"><a href="../hatch.html">ハッチングパターン作成ツール</a> — Revit / AutoCAD 用の .pat をブラウザで作成</li>
+            </ul>
+
+            <p style="text-align:center; margin:2rem 0;">
+                <a href="../addins.html" class="nav-button" style="display:inline-block;" data-lang-key="tips-grid-cta2">⬇️ いますぐ無料アドインを試す</a>
+            </p>
+        </article>
+
+        <div class="manual-navigation">
+            <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
+                ← ホームに戻る
+            </a>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <!-- SNSシェアボタン -->
+            <div class="share-buttons">
+                <p class="share-text" data-lang-key="footer-share">このページをシェア：</p>
+                <div class="share-icons">
+                    <a href="#" class="share-btn twitter" data-sns="twitter" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn facebook" data-sns="facebook" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn line" data-sns="line" aria-label="LINE">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn hatena" data-sns="hatena" aria-label="はてなブックマーク">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.47 0C22.42 0 24 1.58 24 3.53v16.94c0 1.95-1.58 3.53-3.53 3.53H3.53C1.58 24 0 22.42 0 20.47V3.53C0 1.58 1.58 0 3.53 0h16.94zM7.708 5.522H5.522v7.827c0 1.283.818 2.006 2.118 2.006s2.117-.723 2.117-2.006V5.522H7.708zm10.7 6.2c0-1.345-.696-2.285-2.02-2.585.897-.38 1.527-1.104 1.527-2.198 0-1.72-1.33-2.417-3.292-2.417H11.97v10.016h2.754c1.864 0 3.685-.65 3.685-2.815zm-4.175-1.35h1.29c.696 0 1.13.354 1.13.952 0 .597-.434.95-1.13.95h-1.29V10.37zm0-3.23h1.113c.57 0 1.017.315 1.017.87 0 .552-.447.866-1.017.866h-1.114V7.142zm-8.17 10.29c.91 0 1.616.71 1.616 1.62 0 .907-.707 1.616-1.616 1.616-.91 0-1.616-.71-1.616-1.617s.707-1.62 1.616-1.62z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="site-footer-links">
+                <a href="../about.html" data-lang-key="footer-about">運営者情報</a>
+                <span class="footer-divider">|</span>
+                <a href="../contact.html" data-lang-key="footer-contact">お問い合わせ</a>
+                <span class="footer-divider">|</span>
+                <a href="../privacy.html" data-lang-key="footer-privacy">プライバシーポリシー</a>
+                <span class="footer-divider">|</span>
+                <a href="../terms.html" data-lang-key="footer-terms">利用規約</a>
+            </div>
+            <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

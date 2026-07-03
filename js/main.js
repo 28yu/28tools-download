@@ -7800,11 +7800,449 @@ translations.tipsHatch = {
         ja: '🎨 いますぐハッチングパターンを作成する（無料）',
         en: '🎨 Create a hatch pattern now (free)',
         zh: '🎨 立即制作填充图案（免费）'
+    },
+    'tips-hatch-guide-link': {
+        ja: '📖 使い方をもっと詳しく：<a href="tips/revit-hatch-pattern.html">Revit・AutoCADのハッチングパターン(.pat)の作り方</a>',
+        en: '📖 Learn more: <a href="tips/revit-hatch-pattern.html">How to Make Hatch Patterns (.pat) for Revit &amp; AutoCAD</a>',
+        zh: '📖 了解更多：<a href="tips/revit-hatch-pattern.html">Revit・AutoCAD 填充图案(.pat)的制作方法</a>'
+    }
+};
+
+translations.tipsPdf = {
+    'tips-pdf-breadcrumb-tool': {
+        ja: 'PDF比較ツール', en: 'PDF Compare Tool', zh: 'PDF 比较工具'
+    },
+    'tips-pdf-breadcrumb-current': {
+        ja: '図面PDFを比較する方法', en: 'How to Compare Drawing PDFs', zh: '图纸 PDF 的比较方法'
+    },
+    'tips-pdf-title': {
+        ja: '図面PDFを比較して差分を見つける方法',
+        en: 'How to Compare Drawing PDFs and Spot the Differences',
+        zh: '比较图纸 PDF 并找出差异的方法'
+    },
+    'tips-pdf-subtitle': {
+        ja: '無料ツールで2つの図面を重ね、変更点を色分けで確認',
+        en: 'Overlay two drawings with a free tool and see changes color-coded',
+        zh: '用免费工具叠加两张图纸，用颜色区分查看变更点'
+    },
+    'tips-pdf-intro': {
+        ja: '図面の改訂前後を比べて「どこが変わったのか」を探すのは、目視だと見落としが起きがちです。この記事では、<strong>2つの図面PDFを重ね合わせ、変更点を色分けで一目で確認できる無料ツール</strong>の使い方を解説します。インストール不要・完全ブラウザ完結で、PDFは外部に送信されません。',
+        en: 'Comparing a drawing before and after a revision to find "what changed" is error-prone by eye. This article explains how to use a <strong>free tool that overlays two drawing PDFs and shows the changes color-coded at a glance</strong>. No installation is needed, it runs entirely in your browser, and your PDFs are never sent anywhere.',
+        zh: '通过目视比较图纸修订前后以查找“哪里发生了变化”很容易漏看。本文讲解如何使用<strong>叠加两张图纸 PDF、用颜色一目了然地显示变更点的免费工具</strong>。无需安装，完全在浏览器中完成，且 PDF 不会发送到外部。'
+    },
+    'tips-pdf-h2-what': {
+        ja: '図面PDFの比較とは', en: 'What is drawing PDF comparison?', zh: '什么是图纸 PDF 比较'
+    },
+    'tips-pdf-what-p': {
+        ja: '2枚の図面PDF（例：旧図と新図）を<strong>ぴったり重ね合わせ</strong>、線の増減を色分けして表示することで、改訂箇所や変更点をひと目で把握する方法です。承認前のチェックや、施工図の変更点確認に役立ちます。',
+        en: 'It is a method of <strong>overlaying two drawing PDFs</strong> (e.g. old and new) exactly and color-coding added and removed lines, so you can grasp revisions and changes at a glance. It helps with pre-approval checks and reviewing changes in construction drawings.',
+        zh: '将两张图纸 PDF（例如旧图与新图）<strong>精确叠加</strong>，并对线条的增减进行颜色区分显示，从而一目了然地掌握修订处和变更点。有助于审批前检查和确认施工图的变更点。'
+    },
+    'tips-pdf-h2-why': {
+        ja: '手作業での比較が大変な理由', en: 'Why manual comparison is hard', zh: '手动比较为何很麻烦'
+    },
+    'tips-pdf-why-li1': {
+        ja: '<strong>目視では見落としが多い</strong>：線1本の追加・削除や寸法の微修正は、並べて見ても気づきにくい。',
+        en: '<strong>Easy to miss by eye</strong>: adding or removing a single line, or a tiny dimension change, is hard to notice even side by side.',
+        zh: '<strong>目视容易漏看</strong>：增删一条线或微调尺寸，即使并排查看也不易发现。'
+    },
+    'tips-pdf-why-li2': {
+        ja: '<strong>重ね合わせの位置合わせが面倒</strong>：印刷して透かして見る、画像編集ソフトで重ねる、といった作業は手間がかかる。',
+        en: '<strong>Aligning overlays is tedious</strong>: printing and holding up to the light, or overlaying in image-editing software, takes effort.',
+        zh: '<strong>叠加对位很麻烦</strong>：打印后透光查看，或用图像编辑软件叠加，都很费工夫。'
+    },
+    'tips-pdf-why-li3': {
+        ja: '<strong>変更点の共有がしにくい</strong>：「ここが変わった」を口頭やメモで伝えると齟齬が生まれやすい。',
+        en: '<strong>Hard to share changes</strong>: conveying "this changed" verbally or by note easily leads to misunderstandings.',
+        zh: '<strong>变更点难以共享</strong>：用口头或便条传达“这里变了”容易产生误解。'
+    },
+    'tips-pdf-h2-steps': {
+        ja: '無料ツールで図面PDFを比較する手順',
+        en: 'Steps to compare drawing PDFs with the free tool',
+        zh: '用免费工具比较图纸 PDF 的步骤'
+    },
+    'tips-pdf-steps-p': {
+        ja: '28 Tools の<strong>PDF比較ツール</strong>は、2つのPDFを選ぶだけで差分を色分け表示します。基本の流れは次の4ステップです。',
+        en: 'The 28 Tools <strong>PDF Compare Tool</strong> color-codes differences just by choosing two PDFs. The basic flow is four steps:',
+        zh: '28 Tools 的 <strong>PDF 比较工具</strong>只需选择两个 PDF 即可用颜色显示差异。基本流程为以下 4 步：'
+    },
+    'tips-pdf-step1': {
+        ja: '<strong>2つのPDFを選ぶ</strong> — 旧図・新図の2ファイルを指定',
+        en: '<strong>Choose two PDFs</strong> — specify the old and new drawing files',
+        zh: '<strong>选择两个 PDF</strong> — 指定旧图、新图两个文件'
+    },
+    'tips-pdf-step2': {
+        ja: '<strong>比較を実行</strong> — ボタンひとつで自動的に重ね合わせ',
+        en: '<strong>Run the comparison</strong> — overlay automatically with one button',
+        zh: '<strong>执行比较</strong> — 一键自动叠加'
+    },
+    'tips-pdf-step3': {
+        ja: '<strong>色分け結果を確認</strong> — 変更点が色で浮かび上がる',
+        en: '<strong>Check the color-coded result</strong> — changes stand out in color',
+        zh: '<strong>确认颜色区分结果</strong> — 变更点以颜色凸显'
+    },
+    'tips-pdf-step4': {
+        ja: '<strong>高画質でダウンロード</strong> — 結果を高解像度PDFで保存（216/300/600dpi）',
+        en: '<strong>Download in high quality</strong> — save the result as a high-resolution PDF (216/300/600 dpi)',
+        zh: '<strong>高画质下载</strong> — 将结果保存为高分辨率 PDF（216/300/600dpi）'
+    },
+    'tips-pdf-cta1': {
+        ja: '🔍 PDF比較ツールを開く（無料）',
+        en: '🔍 Open the PDF Compare Tool (free)',
+        zh: '🔍 打开 PDF 比较工具（免费）'
+    },
+    'tips-pdf-h2-color': {
+        ja: '色分けの意味', en: 'What the colors mean', zh: '颜色的含义'
+    },
+    'tips-pdf-th-color': {
+        ja: '色', en: 'Color', zh: '颜色'
+    },
+    'tips-pdf-th-meaning': {
+        ja: '意味', en: 'Meaning', zh: '含义'
+    },
+    'tips-pdf-color-gray': {
+        ja: '<strong>グレー</strong>', en: '<strong>Gray</strong>', zh: '<strong>灰色</strong>'
+    },
+    'tips-pdf-color-gray-mean': {
+        ja: '共通部分（両方の図面に存在＝変わっていない）',
+        en: 'Common parts (present in both drawings = unchanged)',
+        zh: '共同部分（两张图纸都存在＝未变更）'
+    },
+    'tips-pdf-color-blue': {
+        ja: '<strong>青</strong>', en: '<strong>Blue</strong>', zh: '<strong>蓝色</strong>'
+    },
+    'tips-pdf-color-blue-mean': {
+        ja: '旧図だけにある線（削除された部分）',
+        en: 'Lines only in the old drawing (removed parts)',
+        zh: '仅存在于旧图的线（被删除的部分）'
+    },
+    'tips-pdf-color-red': {
+        ja: '<strong>赤</strong>', en: '<strong>Red</strong>', zh: '<strong>红色</strong>'
+    },
+    'tips-pdf-color-red-mean': {
+        ja: '新図だけにある線（追加された部分）',
+        en: 'Lines only in the new drawing (added parts)',
+        zh: '仅存在于新图的线（新增的部分）'
+    },
+    'tips-pdf-color-note': {
+        ja: '💡 「赤＝追加、青＝削除」と覚えると直感的です。グレーのまま残っている部分は変更されていません。',
+        en: '💡 Remember "red = added, blue = removed" for an intuitive read. Parts that stay gray are unchanged.',
+        zh: '💡 记住“红＝新增、蓝＝删除”会很直观。保持灰色的部分未发生变更。'
+    },
+    'tips-pdf-h2-zoom': {
+        ja: 'プレビューの拡大・パンで細部確認',
+        en: 'Zoom and pan the preview for detail',
+        zh: '通过预览的放大・平移查看细节'
+    },
+    'tips-pdf-zoom-p': {
+        ja: '比較結果はプレビュー上で<strong>拡大・ドラッグ移動（パン）</strong>ができます。ホイールでカーソル位置を中心にズーム、ドラッグで移動、ダブルクリックでリセット。細かい寸法の変更や小さな記号の差分も、拡大してくっきり確認できます。',
+        en: 'You can <strong>zoom and drag (pan)</strong> the comparison result in the preview. Use the wheel to zoom around the cursor, drag to move, and double-click to reset. Even small dimension changes or tiny symbol differences can be checked clearly when zoomed in.',
+        zh: '比较结果可在预览中<strong>放大・拖动（平移）</strong>。用滚轮以光标位置为中心缩放，拖动移动，双击重置。即使是细小的尺寸变更或微小符号差异，放大后也能清晰确认。'
+    },
+    'tips-pdf-h2-usecase': {
+        ja: 'こんな場面で使える', en: 'When it is useful', zh: '适用场景'
+    },
+    'tips-pdf-usecase-li1': {
+        ja: '<strong>改訂チェック</strong> — Rev.前後で本当に意図した箇所だけが変わっているかを確認',
+        en: '<strong>Revision check</strong> — confirm that only the intended parts changed between revisions',
+        zh: '<strong>修订检查</strong> — 确认修订前后是否只有预期的部分发生了变化'
+    },
+    'tips-pdf-usecase-li2': {
+        ja: '<strong>承認前の差分確認</strong> — 提出図と修正版の違いを漏れなく把握',
+        en: '<strong>Pre-approval diff check</strong> — grasp every difference between the submitted and revised drawings',
+        zh: '<strong>审批前差异确认</strong> — 无遗漏地掌握提交图与修改版的差异'
+    },
+    'tips-pdf-usecase-li3': {
+        ja: '<strong>施工図の変更点把握</strong> — 支給図の更新でどこが変わったかを素早く共有',
+        en: '<strong>Tracking construction drawing changes</strong> — quickly share what changed when issued drawings are updated',
+        zh: '<strong>掌握施工图变更点</strong> — 在提供图更新时快速共享哪里发生了变化'
+    },
+    'tips-pdf-h2-faq': {
+        ja: 'よくある質問（FAQ）', en: 'Frequently Asked Questions (FAQ)', zh: '常见问题（FAQ）'
+    },
+    'tips-pdf-faq-q1': {
+        ja: '本当に無料で使えますか？', en: 'Is it really free to use?', zh: '真的可以免费使用吗？'
+    },
+    'tips-pdf-faq-a1': {
+        ja: 'はい、完全無料です。会員登録も不要で、ブラウザだけで完結します。',
+        en: 'Yes, it is completely free. No sign-up is required, and everything runs in your browser.',
+        zh: '是的，完全免费。无需注册，全部在浏览器中完成。'
+    },
+    'tips-pdf-faq-q2': {
+        ja: 'PDFは外部にアップロードされますか？', en: 'Are the PDFs uploaded externally?', zh: 'PDF 会被上传到外部吗？'
+    },
+    'tips-pdf-faq-a2': {
+        ja: 'いいえ。比較処理はすべてブラウザ内で行われ、PDFがサーバーに送信されることはありません。',
+        en: 'No. All comparison happens in your browser; PDFs are never sent to any server.',
+        zh: '不会。比较处理全部在浏览器中进行，PDF 不会发送到任何服务器。'
+    },
+    'tips-pdf-faq-q3': {
+        ja: '複数ページのPDFも比較できますか？', en: 'Can multi-page PDFs be compared?', zh: '可以比较多页 PDF 吗？'
+    },
+    'tips-pdf-faq-a3': {
+        ja: 'はい。複数ページのPDFに対応し、ページごとに比較結果を確認できます。',
+        en: 'Yes. Multi-page PDFs are supported, and you can check the comparison result page by page.',
+        zh: '可以。支持多页 PDF，并可逐页查看比较结果。'
+    },
+    'tips-pdf-faq-q4': {
+        ja: '差分の色分けは何を表していますか？', en: 'What does the color-coding represent?', zh: '差异的颜色区分代表什么？'
+    },
+    'tips-pdf-faq-a4': {
+        ja: '共通部分はグレー、旧図だけにある線は青、新図だけにある線は赤で表示されます。',
+        en: 'Common parts are gray, lines only in the old drawing are blue, and lines only in the new drawing are red.',
+        zh: '共同部分为灰色，仅在旧图中的线为蓝色，仅在新图中的线为红色。'
+    },
+    'tips-pdf-h2-summary': {
+        ja: 'まとめ・関連ツール', en: 'Summary & related tools', zh: '总结・相关工具'
+    },
+    'tips-pdf-summary-p': {
+        ja: '図面PDFの比較は、無料ツールを使えば2ファイルを選ぶだけで変更点を色分け表示できます。目視での見落としを防ぎ、変更点の共有もスムーズになります。改訂チェックや承認前の確認にぜひご活用ください。',
+        en: 'With a free tool, comparing drawing PDFs takes just two files to color-code the changes. It prevents oversights by eye and makes sharing changes smooth. Use it for revision checks and pre-approval reviews.',
+        zh: '使用免费工具，比较图纸 PDF 只需选择两个文件即可用颜色显示变更点。可防止目视漏看，并让变更点的共享更顺畅。欢迎用于修订检查和审批前确认。'
+    },
+    'tips-pdf-related1': {
+        ja: '<a href="../pdf_compare.html">PDF比較ツール</a> — 2つの図面PDFの差分を色分けで比較',
+        en: '<a href="../pdf_compare.html">PDF Compare Tool</a> — compare two drawing PDFs with color-coded differences',
+        zh: '<a href="../pdf_compare.html">PDF 比较工具</a> — 用颜色区分比较两张图纸 PDF 的差异'
+    },
+    'tips-pdf-related2': {
+        ja: '<a href="../hatch.html">ハッチングパターン作成ツール</a> — Revit / AutoCAD 用の .pat をブラウザで作成',
+        en: '<a href="../hatch.html">Hatch Pattern Maker</a> — create .pat files for Revit / AutoCAD in your browser',
+        zh: '<a href="../hatch.html">填充图案制作工具</a> — 在浏览器中制作 Revit / AutoCAD 用的 .pat'
+    },
+    'tips-pdf-related3': {
+        ja: '<a href="../addins.html">Revit アドイン（無料）</a> — 作図を効率化する 28 Tools のアドイン',
+        en: '<a href="../addins.html">Revit Add-ins (free)</a> — 28 Tools add-ins that speed up drafting',
+        zh: '<a href="../addins.html">Revit 插件（免费）</a> — 提升绘图效率的 28 Tools 插件'
+    },
+    'tips-pdf-cta2': {
+        ja: '🔍 いますぐ図面PDFを比較する（無料）',
+        en: '🔍 Compare drawing PDFs now (free)',
+        zh: '🔍 立即比较图纸 PDF（免费）'
+    },
+    'tips-pdf-guide-link': {
+        ja: '📖 使い方をもっと詳しく：<a href="tips/pdf-compare-guide.html">図面PDFを比較して差分を見つける方法</a>',
+        en: '📖 Learn more: <a href="tips/pdf-compare-guide.html">How to Compare Drawing PDFs and Spot the Differences</a>',
+        zh: '📖 了解更多：<a href="tips/pdf-compare-guide.html">比较图纸 PDF 并找出差异的方法</a>'
+    }
+};
+
+translations.tipsGrid = {
+    'tips-grid-breadcrumb-current': {
+        ja: '通り芯・レベルの符号を一括切替する方法',
+        en: 'How to Toggle Grid/Level Bubbles in Bulk',
+        zh: '批量切换轴网/标高符号的方法'
+    },
+    'tips-grid-title': {
+        ja: 'Revitで通り芯・レベルの符号を一括で表示/非表示にする方法',
+        en: 'How to Show/Hide Grid and Level Bubbles in Bulk in Revit',
+        zh: '在 Revit 中批量显示/隐藏轴网和标高符号的方法'
+    },
+    'tips-grid-subtitle': {
+        ja: '無料アドインで符号（バブル）表示をワンクリック一括切替',
+        en: 'Toggle bubble visibility in one click with a free add-in',
+        zh: '用免费插件一键批量切换符号（气泡）显示'
+    },
+    'tips-grid-intro': {
+        ja: 'Revit で通り芯（グリッド）やレベルの<strong>符号（バブル）</strong>を、ビューごとに1本ずつ表示/非表示にしていませんか？図面ごとに片側だけ出したい・両端出したい、という調整は手作業だと地味に時間がかかります。この記事では、<strong>無料アドインで符号表示をワンクリックで一括切替する方法</strong>を解説します。',
+        en: 'Do you show/hide the <strong>bubbles</strong> of grids and levels one by one in each Revit view? Adjusting them to show on one side or both sides per drawing is quietly time-consuming when done by hand. This article explains <strong>how to toggle bubble visibility in bulk with one click using a free add-in</strong>.',
+        zh: '在 Revit 中，你是否在每个视图里逐条显示/隐藏轴网和标高的<strong>符号（气泡）</strong>？针对每张图纸调整为仅单侧或两端显示，手动操作其实很费时间。本文讲解<strong>如何用免费插件一键批量切换符号显示</strong>。'
+    },
+    'tips-grid-h2-what': {
+        ja: '通り芯・レベルの「符号（バブル）」とは',
+        en: 'What are grid/level bubbles?',
+        zh: '什么是轴网/标高的“符号（气泡）”'
+    },
+    'tips-grid-what-p': {
+        ja: '通り芯やレベルの端に表示される<strong>丸い符号（バブル）</strong>のことです。X1・Y1・GL・1FL といった記号を示します。図面の種類やレイアウトによって、両端に出したり片側だけに出したりを使い分けます。',
+        en: 'These are the <strong>round bubbles</strong> shown at the ends of grids and levels, displaying labels like X1, Y1, GL, or 1FL. Depending on the drawing type and layout, you show them at both ends or on just one side.',
+        zh: '指显示在轴网和标高端部的<strong>圆形符号（气泡）</strong>，用于标示 X1・Y1・GL・1FL 等记号。根据图纸类型和布局，可分别在两端或仅单侧显示。'
+    },
+    'tips-grid-h2-why': {
+        ja: '1本ずつ切り替えるのが大変な理由',
+        en: 'Why toggling one by one is painful',
+        zh: '逐条切换为何很麻烦'
+    },
+    'tips-grid-why-li1': {
+        ja: '<strong>本数が多い</strong>：通り芯が数十本ある図面では、1本ずつ端部のチェックボックスを操作するのは非常に手間。',
+        en: '<strong>Many grids</strong>: with dozens of grids in a drawing, toggling the end checkbox one by one is very tedious.',
+        zh: '<strong>数量多</strong>：图纸中有数十条轴网时，逐条操作端部复选框非常费事。'
+    },
+    'tips-grid-why-li2': {
+        ja: '<strong>ビューごとにやり直し</strong>：平面・断面など、ビューが変わるたびに同じ作業を繰り返すことになる。',
+        en: '<strong>Repeat per view</strong>: you redo the same work every time the view changes (plans, sections, etc.).',
+        zh: '<strong>每个视图都要重来</strong>：平面、剖面等，每次切换视图都要重复同样的操作。'
+    },
+    'tips-grid-why-li3': {
+        ja: '<strong>片側表示の統一が面倒</strong>：「左だけ」「下だけ」に揃えたいとき、手作業だと抜け漏れが出やすい。',
+        en: '<strong>Hard to unify one-side display</strong>: aligning everything to "left only" or "bottom only" by hand easily leaves omissions.',
+        zh: '<strong>单侧显示统一麻烦</strong>：想统一为“仅左”或“仅下”时，手动操作容易遗漏。'
+    },
+    'tips-grid-h2-steps': {
+        ja: '無料アドインで一括切替する手順',
+        en: 'Steps to toggle in bulk with the free add-in',
+        zh: '用免费插件批量切换的步骤'
+    },
+    'tips-grid-steps-p': {
+        ja: '28 Tools の Revit アドインには、通り芯・レベルの符号表示をワンクリックで切り替える機能があります。基本の流れは次の4ステップです。',
+        en: 'The 28 Tools Revit add-in includes a feature to toggle grid/level bubble visibility in one click. The basic flow is four steps:',
+        zh: '28 Tools 的 Revit 插件包含一键切换轴网/标高符号显示的功能。基本流程为以下 4 步：'
+    },
+    'tips-grid-step1': {
+        ja: '<strong>無料アドインを導入</strong> — 28 Tools のアドインをダウンロードしてインストール',
+        en: '<strong>Install the free add-in</strong> — download and install the 28 Tools add-in',
+        zh: '<strong>安装免费插件</strong> — 下载并安装 28 Tools 插件'
+    },
+    'tips-grid-step2': {
+        ja: '<strong>対象のビューを開く</strong> — 通り芯・レベルが表示された平面・断面などを開く',
+        en: '<strong>Open the target view</strong> — open a plan, section, etc. where grids/levels are shown',
+        zh: '<strong>打开目标视图</strong> — 打开显示轴网/标高的平面、剖面等'
+    },
+    'tips-grid-step3': {
+        ja: '<strong>必要なら対象を選択</strong> — 特定の通り芯だけ変えたい場合は事前選択（未選択ならビュー全体）',
+        en: '<strong>Select targets if needed</strong> — pre-select specific grids to change only those (otherwise the whole view)',
+        zh: '<strong>如需则选择对象</strong> — 想只改特定轴网时先选择（未选择则为整个视图）'
+    },
+    'tips-grid-step4': {
+        ja: '<strong>モードを選んで一括切替</strong> — 両端／左上のみ／右下のみを選ぶと符号表示が一括で切り替わる',
+        en: '<strong>Pick a mode to toggle in bulk</strong> — choose both ends / left-top only / right-bottom only to switch all at once',
+        zh: '<strong>选择模式批量切换</strong> — 选择两端／仅左上／仅右下即可一次性切换符号显示'
+    },
+    'tips-grid-cta1': {
+        ja: '⬇️ 無料アドインをダウンロード',
+        en: '⬇️ Download the free add-in',
+        zh: '⬇️ 下载免费插件'
+    },
+    'tips-grid-h2-modes': {
+        ja: '3つの表示モード', en: 'Three display modes', zh: '三种显示模式'
+    },
+    'tips-grid-th-mode': {
+        ja: 'モード', en: 'Mode', zh: '模式'
+    },
+    'tips-grid-th-desc': {
+        ja: '動作', en: 'Behavior', zh: '动作'
+    },
+    'tips-grid-mode-both': {
+        ja: '<strong>両端表示</strong>', en: '<strong>Both ends</strong>', zh: '<strong>两端显示</strong>'
+    },
+    'tips-grid-mode-both-desc': {
+        ja: '通り芯・レベルの両端に符号を表示',
+        en: 'Show bubbles at both ends of grids and levels',
+        zh: '在轴网和标高的两端显示符号'
+    },
+    'tips-grid-mode-left': {
+        ja: '<strong>左/上のみ</strong>', en: '<strong>Left/Top only</strong>', zh: '<strong>仅左/上</strong>'
+    },
+    'tips-grid-mode-left-desc': {
+        ja: '左端（縦通り芯）または上端（横通り芯・レベル）のみに表示',
+        en: 'Show only at the left end (vertical grids) or top end (horizontal grids/levels)',
+        zh: '仅在左端（竖向轴网）或上端（横向轴网/标高）显示'
+    },
+    'tips-grid-mode-right': {
+        ja: '<strong>右/下のみ</strong>', en: '<strong>Right/Bottom only</strong>', zh: '<strong>仅右/下</strong>'
+    },
+    'tips-grid-mode-right-desc': {
+        ja: '右端（縦通り芯）または下端（横通り芯・レベル）のみに表示',
+        en: 'Show only at the right end (vertical grids) or bottom end (horizontal grids/levels)',
+        zh: '仅在右端（竖向轴网）或下端（横向轴网/标高）显示'
+    },
+    'tips-grid-modes-note': {
+        ja: '💡 事前に通り芯・レベルを選択していればその要素のみ、選択していなければビュー内の全要素が対象になります。',
+        en: '💡 If grids/levels are pre-selected, only those are affected; otherwise all elements in the view are targeted.',
+        zh: '💡 若预先选择了轴网/标高则仅对其生效，否则针对视图内所有元素。'
+    },
+    'tips-grid-h2-usecase': {
+        ja: 'こんな場面で使える', en: 'When it is useful', zh: '适用场景'
+    },
+    'tips-grid-usecase-li1': {
+        ja: '<strong>提出図の体裁を整える</strong> — 図面枠に合わせて符号を片側だけに揃える',
+        en: '<strong>Tidy up submission drawings</strong> — align bubbles to one side to fit the title block',
+        zh: '<strong>整理提交图的版面</strong> — 配合图框将符号统一到单侧'
+    },
+    'tips-grid-usecase-li2': {
+        ja: '<strong>ビューを量産するとき</strong> — 平面・断面を大量に作る際、符号表示を一括で統一',
+        en: '<strong>When mass-producing views</strong> — unify bubble display in bulk while creating many plans/sections',
+        zh: '<strong>批量生成视图时</strong> — 在大量制作平面/剖面时批量统一符号显示'
+    },
+    'tips-grid-usecase-li3': {
+        ja: '<strong>符号が邪魔なとき</strong> — 検討中は両端OFF、仕上げ時に必要な側だけON、といった切り替え',
+        en: '<strong>When bubbles are in the way</strong> — turn both off while studying, then on only where needed for finishing',
+        zh: '<strong>符号碍事时</strong> — 研究阶段两端关闭，收尾时仅开启需要的一侧'
+    },
+    'tips-grid-h2-faq': {
+        ja: 'よくある質問（FAQ）', en: 'Frequently Asked Questions (FAQ)', zh: '常见问题（FAQ）'
+    },
+    'tips-grid-faq-q1': {
+        ja: 'アドインは無料ですか？', en: 'Is the add-in free?', zh: '插件是免费的吗？'
+    },
+    'tips-grid-faq-a1': {
+        ja: 'はい、無料でダウンロードして使えます。Revit 2021〜2026に対応しています。',
+        en: 'Yes, you can download and use it for free. It supports Revit 2021–2026.',
+        zh: '是的，可免费下载使用。支持 Revit 2021～2026。'
+    },
+    'tips-grid-faq-q2': {
+        ja: 'どのビューで使えますか？', en: 'Which views does it work in?', zh: '可在哪些视图中使用？'
+    },
+    'tips-grid-faq-a2': {
+        ja: '平面図・天井伏図・構造伏図・断面図など、通り芯やレベルが表示されるビューで使えます。',
+        en: 'It works in views where grids or levels are shown, such as floor plans, reflected ceiling plans, structural plans, and sections.',
+        zh: '可用于显示轴网或标高的视图，如平面图、天花板平面图、结构平面图、剖面图等。'
+    },
+    'tips-grid-faq-q3': {
+        ja: '特定の通り芯だけ切り替えできますか？', en: 'Can I toggle only specific grids?', zh: '可以只切换特定轴网吗？'
+    },
+    'tips-grid-faq-a3': {
+        ja: 'はい。事前に通り芯・レベルを選択しておくとその要素のみ、未選択ならビュー内の全要素が対象になります。',
+        en: 'Yes. If you pre-select grids/levels, only those are affected; otherwise all elements in the view are targeted.',
+        zh: '可以。若预先选择了轴网/标高则仅对其生效，未选择则针对视图内所有元素。'
+    },
+    'tips-grid-faq-q4': {
+        ja: '符号を左側だけ表示することもできますか？', en: 'Can I show bubbles on only the left side?', zh: '可以只在左侧显示符号吗？'
+    },
+    'tips-grid-faq-a4': {
+        ja: 'はい。両端表示・左/上のみ・右/下のみの3モードから選べます。',
+        en: 'Yes. You can choose from three modes: both ends, left/top only, and right/bottom only.',
+        zh: '可以。可从三种模式中选择：两端、仅左/上、仅右/下。'
+    },
+    'tips-grid-h2-summary': {
+        ja: 'まとめ・関連リンク', en: 'Summary & related links', zh: '总结・相关链接'
+    },
+    'tips-grid-summary-p': {
+        ja: '通り芯・レベルの符号表示は、無料アドインを使えばビュー内の全要素または選択要素をワンクリックで一括切替できます。片側だけの表示統一も一発。図面の体裁調整やビューの量産がぐっと楽になります。詳しい使い方は機能マニュアルをご覧ください。',
+        en: 'With a free add-in, you can toggle grid/level bubbles for all or selected elements in a view with one click. Unifying one-side display is instant too. It makes tidying drawings and mass-producing views much easier. See the feature manual for detailed usage.',
+        zh: '使用免费插件，可一键批量切换视图内所有或选中元素的轴网/标高符号显示。统一单侧显示也一步到位，让整理图纸和批量生成视图更轻松。详细用法请参阅功能手册。'
+    },
+    'tips-grid-related1': {
+        ja: '<a href="../addins.html">Revit アドイン（無料）</a> — 符号ON/OFF を含む 28 Tools の各機能',
+        en: '<a href="../addins.html">Revit Add-ins (free)</a> — 28 Tools features including bubble toggle',
+        zh: '<a href="../addins.html">Revit 插件（免费）</a> — 包含符号开关在内的 28 Tools 各功能'
+    },
+    'tips-grid-related2': {
+        ja: '<a href="../manual/grid-bubble.html">符号ON/OFF 機能マニュアル</a> — 詳しい使い方と対応ビュー',
+        en: '<a href="../manual/grid-bubble.html">Bubble Toggle Manual</a> — detailed usage and supported views',
+        zh: '<a href="../manual/grid-bubble.html">符号开关功能手册</a> — 详细用法与支持的视图'
+    },
+    'tips-grid-related3': {
+        ja: '<a href="../hatch.html">ハッチングパターン作成ツール</a> — Revit / AutoCAD 用の .pat をブラウザで作成',
+        en: '<a href="../hatch.html">Hatch Pattern Maker</a> — create .pat files for Revit / AutoCAD in your browser',
+        zh: '<a href="../hatch.html">填充图案制作工具</a> — 在浏览器中制作 Revit / AutoCAD 用的 .pat'
+    },
+    'tips-grid-cta2': {
+        ja: '⬇️ いますぐ無料アドインを試す',
+        en: '⬇️ Try the free add-in now',
+        zh: '⬇️ 立即试用免费插件'
+    },
+    'tips-grid-guide-link': {
+        ja: '📖 使い方ガイド：<a href="tips/revit-grid-bubble.html">通り芯・レベルの符号を一括で切り替える方法</a>',
+        en: '📖 Guide: <a href="tips/revit-grid-bubble.html">How to Show/Hide Grid and Level Bubbles in Bulk</a>',
+        zh: '📖 使用指南：<a href="tips/revit-grid-bubble.html">批量显示/隐藏轴网和标高符号的方法</a>'
     }
 };
 
     Object.assign(translations,
         translations.tipsHatch,
+        translations.tipsPdf,
+        translations.tipsGrid,
         translations.common,
         translations.aiMinutesPage,
         translations.sections,
