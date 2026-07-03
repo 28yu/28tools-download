@@ -7485,7 +7485,326 @@ translations.filledRegion = {
     };
 
     // 全翻訳をマージ
+translations.tipsHatch = {
+    'tips-hatch-breadcrumb-tool': {
+        ja: 'ハッチングパターン作成ツール',
+        en: 'Hatch Pattern Maker',
+        zh: '填充图案制作工具'
+    },
+    'tips-hatch-breadcrumb-current': {
+        ja: 'ハッチングパターン(.pat)の作り方',
+        en: 'How to Make Hatch Patterns (.pat)',
+        zh: '填充图案(.pat)的制作方法'
+    },
+    'tips-hatch-title': {
+        ja: 'Revit・AutoCADのハッチングパターン(.pat)の作り方',
+        en: 'How to Make Hatch Patterns (.pat) for Revit & AutoCAD',
+        zh: 'Revit・AutoCAD 填充图案(.pat)的制作方法'
+    },
+    'tips-hatch-subtitle': {
+        ja: '無料ツールで斜線・網掛け・目地パターンを簡単に作成',
+        en: 'Easily create diagonal, crosshatch, and joint patterns with a free tool',
+        zh: '用免费工具轻松制作斜线、交叉线、接缝图案'
+    },
+    'tips-hatch-intro': {
+        ja: 'Revit や AutoCAD でオリジナルの<strong>ハッチング（塗りつぶし）パターン</strong>を使いたいのに、<code>.pat</code> ファイルを手書きするのは難しい……という方向けの記事です。ここでは、<strong>無料のブラウザツールで簡単に .pat ファイルを作る方法</strong>を、Revit・AutoCAD への取り込み手順まで含めて解説します。インストール不要・完全ブラウザ完結です。',
+        en: 'This article is for anyone who wants to use an original <strong>hatch (fill) pattern</strong> in Revit or AutoCAD but finds hand-writing a <code>.pat</code> file difficult. Here we explain <strong>how to easily create a .pat file with a free browser tool</strong>, including how to import it into Revit and AutoCAD. No installation is needed — it runs entirely in your browser.',
+        zh: '本文面向想在 Revit 或 AutoCAD 中使用原创<strong>填充图案</strong>、却觉得手写 <code>.pat</code> 文件很困难的用户。这里将讲解<strong>如何用免费的浏览器工具轻松制作 .pat 文件</strong>，并包含导入 Revit・AutoCAD 的步骤。无需安装，完全在浏览器中完成。'
+    },
+    'tips-hatch-h2-what': {
+        ja: 'ハッチングパターンと .pat ファイルとは',
+        en: 'What are hatch patterns and .pat files?',
+        zh: '什么是填充图案和 .pat 文件'
+    },
+    'tips-hatch-what-p': {
+        ja: '「<code>.pat</code>」ファイルは、斜線・網掛け・目地などの<strong>塗りつぶしパターンを定義するテキストファイル</strong>です。Revit と AutoCAD の両方で読み込めます。',
+        en: 'A <code>.pat</code> file is a <strong>text file that defines fill patterns</strong> such as diagonal lines, crosshatch, and joints. It can be loaded by both Revit and AutoCAD.',
+        zh: '<code>.pat</code> 文件是<strong>定义填充图案的文本文件</strong>，例如斜线、交叉线、接缝等。Revit 和 AutoCAD 都可以读取。'
+    },
+    'tips-hatch-what-li-revit': {
+        ja: '<strong>Revit</strong>：塗りつぶしパターンとして読み込みます。パターンには「モデル（実寸）」と「製図（尺度依存）」の2種類があります。',
+        en: '<strong>Revit</strong>: Loaded as a fill pattern. There are two types — "Model" (real size) and "Drafting" (scale-dependent).',
+        zh: '<strong>Revit</strong>：作为填充图案读取。图案有“模型（实际尺寸）”和“绘图（依赖比例）”两种。'
+    },
+    'tips-hatch-what-li-autocad': {
+        ja: '<strong>AutoCAD</strong>：ハッチングコマンドで使うパターンとして読み込みます。',
+        en: '<strong>AutoCAD</strong>: Loaded as a pattern for use with the hatch command.',
+        zh: '<strong>AutoCAD</strong>：作为填充命令使用的图案读取。'
+    },
+    'tips-hatch-h2-why': {
+        ja: '.pat を手書きすると大変な理由',
+        en: 'Why writing .pat by hand is hard',
+        zh: '手写 .pat 文件为何很麻烦'
+    },
+    'tips-hatch-why-p': {
+        ja: '.pat の中身は、線ごとに「角度・原点・オフセット・破線パターン」を数値で並べた形式です。手書きだと次のような落とし穴があります。',
+        en: 'A .pat file lists, for each line, its angle, origin, offset, and dash pattern as numbers. Writing it by hand has these pitfalls:',
+        zh: '.pat 文件的内容是为每条线以数值排列“角度・原点・偏移・虚线样式”的格式。手写会有以下陷阱：'
+    },
+    'tips-hatch-why-li1': {
+        ja: '<strong>角度・間隔・デルタ値の計算が面倒</strong>：特に目地（芋目地・馬目地）は複数の線を正確にずらして定義する必要があります。',
+        en: '<strong>Calculating angles, spacing, and delta values is tedious</strong>: joint patterns (stack bond / running bond) in particular require multiple lines to be offset precisely.',
+        zh: '<strong>角度・间距・偏移值的计算很麻烦</strong>：尤其是接缝（错缝/顺缝）需要将多条线精确错开来定义。'
+    },
+    'tips-hatch-why-li2': {
+        ja: '<strong>文字コードの問題</strong>：日本語のパターン名を使うと、Shift-JIS でないと Revit / AutoCAD で文字化けします。',
+        en: '<strong>Character encoding issues</strong>: if you use non-ASCII pattern names, they can become garbled in Revit / AutoCAD unless encoded correctly.',
+        zh: '<strong>字符编码问题</strong>：使用非 ASCII 图案名称时，若编码不当会在 Revit / AutoCAD 中出现乱码。'
+    },
+    'tips-hatch-why-li3': {
+        ja: '<strong>単位・尺度の勘違い</strong>：モデルパターンと製図パターンの違いを間違えると、想定と違うサイズで表示されます。',
+        en: '<strong>Unit / scale confusion</strong>: mixing up model and drafting patterns results in a size different from what you expect.',
+        zh: '<strong>单位・比例的误解</strong>：搞错模型图案与绘图图案的区别，会以与预期不同的尺寸显示。'
+    },
+    'tips-hatch-why-p2': {
+        ja: 'これらを自動でやってくれるのが、次に紹介する無料ツールです。',
+        en: 'The free tool introduced below handles all of this automatically.',
+        zh: '接下来介绍的免费工具能自动完成这些工作。'
+    },
+    'tips-hatch-h2-steps': {
+        ja: '無料ツールでハッチングパターンを作る手順',
+        en: 'Steps to make a hatch pattern with the free tool',
+        zh: '用免费工具制作填充图案的步骤'
+    },
+    'tips-hatch-steps-p': {
+        ja: '28 Tools の<strong>ハッチングパターン作成ツール</strong>は、設定を選ぶだけで .pat ファイルを生成できます。基本の流れは次の4ステップです。',
+        en: 'The 28 Tools <strong>Hatch Pattern Maker</strong> generates a .pat file just by choosing settings. The basic flow is four steps:',
+        zh: '28 Tools 的<strong>填充图案制作工具</strong>只需选择设置即可生成 .pat 文件。基本流程为以下 4 步：'
+    },
+    'tips-hatch-step1': {
+        ja: '<strong>パターンの種類を選ぶ</strong> — 斜線・網掛け・ドット・芋目地・馬目地・RC から選択',
+        en: '<strong>Choose the pattern type</strong> — diagonal, crosshatch, dot, stack bond, running bond, or RC',
+        zh: '<strong>选择图案类型</strong> — 从斜线、交叉线、点、错缝、顺缝、RC 中选择'
+    },
+    'tips-hatch-step2': {
+        ja: '<strong>角度・間隔などを設定</strong> — 選んだパターンに応じた項目を入力',
+        en: '<strong>Set angle, spacing, etc.</strong> — enter the fields for the chosen pattern',
+        zh: '<strong>设置角度・间距等</strong> — 输入所选图案对应的项目'
+    },
+    'tips-hatch-step3': {
+        ja: '<strong>プレビューで確認</strong> — 画面上で仕上がりをその場でチェック',
+        en: '<strong>Check the preview</strong> — verify the result on screen instantly',
+        zh: '<strong>预览确认</strong> — 在画面上即时检查效果'
+    },
+    'tips-hatch-step4': {
+        ja: '<strong>ダウンロード</strong> — Revit（モデル/製図）または AutoCAD 形式で出力',
+        en: '<strong>Download</strong> — export in Revit (model/drafting) or AutoCAD format',
+        zh: '<strong>下载</strong> — 以 Revit（模型/绘图）或 AutoCAD 格式输出'
+    },
+    'tips-hatch-cta1': {
+        ja: '🎨 ハッチングパターン作成ツールを開く（無料）',
+        en: '🎨 Open the Hatch Pattern Maker (free)',
+        zh: '🎨 打开填充图案制作工具（免费）'
+    },
+    'tips-hatch-h3-types': {
+        ja: '作成できるパターンの種類',
+        en: 'Pattern types you can create',
+        zh: '可制作的图案类型'
+    },
+    'tips-hatch-th-pattern': {
+        ja: 'パターン',
+        en: 'Pattern',
+        zh: '图案'
+    },
+    'tips-hatch-th-setting': {
+        ja: '主な設定項目',
+        en: 'Main settings',
+        zh: '主要设置项'
+    },
+    'tips-hatch-type-diagonal': {
+        ja: '<strong>斜線</strong>',
+        en: '<strong>Diagonal</strong>',
+        zh: '<strong>斜线</strong>'
+    },
+    'tips-hatch-type-diagonal-set': {
+        ja: '角度・間隔・破線設定',
+        en: 'Angle, spacing, dash settings',
+        zh: '角度・间距・虚线设置'
+    },
+    'tips-hatch-type-cross': {
+        ja: '<strong>網掛け</strong>',
+        en: '<strong>Crosshatch</strong>',
+        zh: '<strong>交叉线</strong>'
+    },
+    'tips-hatch-type-cross-set': {
+        ja: '角度・間隔・破線設定',
+        en: 'Angle, spacing, dash settings',
+        zh: '角度・间距・虚线设置'
+    },
+    'tips-hatch-type-dot': {
+        ja: '<strong>ドット</strong>',
+        en: '<strong>Dot</strong>',
+        zh: '<strong>点</strong>'
+    },
+    'tips-hatch-type-dot-set': {
+        ja: '間隔・ドットサイズ',
+        en: 'Spacing, dot size',
+        zh: '间距・点大小'
+    },
+    'tips-hatch-type-grid': {
+        ja: '<strong>芋目地</strong>',
+        en: '<strong>Stack bond</strong>',
+        zh: '<strong>错缝（对缝）</strong>'
+    },
+    'tips-hatch-type-grid-set': {
+        ja: 'X・Y・目地の有無・目地X・目地Y',
+        en: 'X, Y, joint on/off, joint X, joint Y',
+        zh: 'X・Y・是否有缝・缝X・缝Y'
+    },
+    'tips-hatch-type-brick': {
+        ja: '<strong>馬目地</strong>',
+        en: '<strong>Running bond</strong>',
+        zh: '<strong>顺缝（错位）</strong>'
+    },
+    'tips-hatch-type-brick-set': {
+        ja: 'X・Y・目地の有無・目地X・目地Y（1/2 オフセット）',
+        en: 'X, Y, joint on/off, joint X, joint Y (1/2 offset)',
+        zh: 'X・Y・是否有缝・缝X・缝Y（1/2 偏移）'
+    },
+    'tips-hatch-type-rc': {
+        ja: '<strong>RC（コンクリート）</strong>',
+        en: '<strong>RC (concrete)</strong>',
+        zh: '<strong>RC（混凝土）</strong>'
+    },
+    'tips-hatch-type-rc-set': {
+        ja: '線内間隔・グループ間隔',
+        en: 'Inner line spacing, group spacing',
+        zh: '线内间距・组间距'
+    },
+    'tips-hatch-note-jp': {
+        ja: '💡 パターン名は<strong>日本語対応</strong>（例：<code>芋目地_100x100</code>）。Shift-JIS で出力されるため Revit / AutoCAD でも文字化けしません。',
+        en: '💡 Pattern names support <strong>multibyte characters</strong> (e.g. <code>芋目地_100x100</code>). They are output in Shift-JIS, so they never become garbled in Revit / AutoCAD.',
+        zh: '💡 图案名称<strong>支持多字节字符</strong>（例如 <code>芋目地_100x100</code>）。以 Shift-JIS 输出，因此在 Revit / AutoCAD 中不会乱码。'
+    },
+    'tips-hatch-h2-revit': {
+        ja: 'Revit への取り込み方法',
+        en: 'How to import into Revit',
+        zh: '导入 Revit 的方法'
+    },
+    'tips-hatch-revit-step1': {
+        ja: 'ツールで <strong>Revit（モデル または 製図）</strong> を選んで .pat をダウンロード',
+        en: 'In the tool, select <strong>Revit (model or drafting)</strong> and download the .pat',
+        zh: '在工具中选择 <strong>Revit（模型或绘图）</strong> 并下载 .pat'
+    },
+    'tips-hatch-revit-step2': {
+        ja: 'Revit の「管理」→「その他の設定」→「塗りつぶしパターン」を開く',
+        en: 'In Revit, open Manage → Additional Settings → Fill Patterns',
+        zh: '在 Revit 中打开“管理”→“其他设置”→“填充样式”'
+    },
+    'tips-hatch-revit-step3': {
+        ja: '「新規作成」→「カスタム」→ ダウンロードした .pat をインポート',
+        en: 'Choose New → Custom → import the downloaded .pat',
+        zh: '选择“新建”→“自定义”→ 导入下载的 .pat'
+    },
+    'tips-hatch-revit-step4': {
+        ja: '取り込んだパターンを塗りつぶし領域や材料に割り当て',
+        en: 'Assign the imported pattern to filled regions or materials',
+        zh: '将导入的图案分配给填充区域或材质'
+    },
+    'tips-hatch-revit-note': {
+        ja: '💡 <strong>モデルパターン</strong>は実寸（原寸）で表示され、<strong>製図パターン</strong>はビュー尺度に依存します。用途に合わせて選んでください。',
+        en: '💡 <strong>Model patterns</strong> display at real size, while <strong>drafting patterns</strong> depend on the view scale. Choose based on your use case.',
+        zh: '💡 <strong>模型图案</strong>以实际尺寸显示，<strong>绘图图案</strong>依赖视图比例。请根据用途选择。'
+    },
+    'tips-hatch-h2-autocad': {
+        ja: 'AutoCAD への取り込み方法',
+        en: 'How to import into AutoCAD',
+        zh: '导入 AutoCAD 的方法'
+    },
+    'tips-hatch-autocad-step1': {
+        ja: 'ツールで <strong>AutoCAD</strong> 形式を選んで .pat をダウンロード',
+        en: 'In the tool, select <strong>AutoCAD</strong> format and download the .pat',
+        zh: '在工具中选择 <strong>AutoCAD</strong> 格式并下载 .pat'
+    },
+    'tips-hatch-autocad-step2': {
+        ja: '.pat ファイルを AutoCAD のサポートファイル検索パス内のフォルダに配置',
+        en: 'Place the .pat file in a folder within the AutoCAD support file search path',
+        zh: '将 .pat 文件放入 AutoCAD 支持文件搜索路径内的文件夹'
+    },
+    'tips-hatch-autocad-step3': {
+        ja: 'ハッチングコマンドで「ユーザー定義」→ 追加したパターン名を選択',
+        en: 'In the hatch command, choose "Custom" → select the added pattern name',
+        zh: '在填充命令中选择“用户定义”→ 选择添加的图案名称'
+    },
+    'tips-hatch-h2-faq': {
+        ja: 'よくある質問（FAQ）',
+        en: 'Frequently Asked Questions (FAQ)',
+        zh: '常见问题（FAQ）'
+    },
+    'tips-hatch-faq-q1': {
+        ja: '本当に無料で使えますか？',
+        en: 'Is it really free to use?',
+        zh: '真的可以免费使用吗？'
+    },
+    'tips-hatch-faq-a1': {
+        ja: 'はい、完全無料です。会員登録も不要で、ブラウザだけで完結します。',
+        en: 'Yes, it is completely free. No sign-up is required, and everything runs in your browser.',
+        zh: '是的，完全免费。无需注册，全部在浏览器中完成。'
+    },
+    'tips-hatch-faq-q2': {
+        ja: '作成したファイルやデータは外部に送信されますか？',
+        en: 'Are the created files or data sent externally?',
+        zh: '制作的文件或数据会被发送到外部吗？'
+    },
+    'tips-hatch-faq-a2': {
+        ja: 'いいえ。パターン生成はすべてブラウザ内で行われ、サーバーへのアップロードや送信は一切ありません。',
+        en: 'No. Pattern generation happens entirely in your browser; nothing is uploaded or sent to any server.',
+        zh: '不会。图案生成全部在浏览器中进行，不会上传或发送到任何服务器。'
+    },
+    'tips-hatch-faq-q3': {
+        ja: '日本語のパターン名は文字化けしませんか？',
+        en: 'Will non-ASCII pattern names become garbled?',
+        zh: '非 ASCII 图案名称会乱码吗？'
+    },
+    'tips-hatch-faq-a3': {
+        ja: 'Revit・AutoCAD が期待する Shift-JIS でエンコードして出力するため、日本語のパターン名でも文字化けしません。',
+        en: 'The output is encoded in Shift-JIS as Revit and AutoCAD expect, so pattern names do not become garbled.',
+        zh: '按照 Revit・AutoCAD 期望的 Shift-JIS 编码输出，因此图案名称不会乱码。'
+    },
+    'tips-hatch-faq-q4': {
+        ja: '対応している Revit のバージョンは？',
+        en: 'Which Revit versions are supported?',
+        zh: '支持哪些 Revit 版本？'
+    },
+    'tips-hatch-faq-a4': {
+        ja: '.pat は標準フォーマットのため、Revit 2021〜2026 を含む各バージョンで利用できます。AutoCAD にも対応しています。',
+        en: 'Since .pat is a standard format, it works with all versions including Revit 2021–2026. AutoCAD is also supported.',
+        zh: '.pat 是标准格式，因此可用于包括 Revit 2021～2026 在内的各版本，同样支持 AutoCAD。'
+    },
+    'tips-hatch-h2-summary': {
+        ja: 'まとめ・関連ツール',
+        en: 'Summary & related tools',
+        zh: '总结・相关工具'
+    },
+    'tips-hatch-summary-p': {
+        ja: 'ハッチングパターン（.pat）は、無料ツールを使えば計算も文字コードも気にせず数クリックで作成できます。Revit・AutoCAD のどちらでもそのまま使えるので、作図の効率化にぜひご活用ください。',
+        en: 'With a free tool, you can create hatch patterns (.pat) in a few clicks without worrying about calculations or character encoding. They work as-is in both Revit and AutoCAD, so use them to speed up your drafting.',
+        zh: '使用免费工具，无需担心计算和字符编码，只需几次点击即可制作填充图案（.pat）。在 Revit・AutoCAD 中都可直接使用，欢迎用于提升绘图效率。'
+    },
+    'tips-hatch-related1': {
+        ja: '<a href="../hatch.html">ハッチングパターン作成ツール</a> — 斜線・目地・RC などの .pat をブラウザで作成',
+        en: '<a href="../hatch.html">Hatch Pattern Maker</a> — create .pat files (diagonal, joints, RC, etc.) in your browser',
+        zh: '<a href="../hatch.html">填充图案制作工具</a> — 在浏览器中制作斜线、接缝、RC 等 .pat 文件'
+    },
+    'tips-hatch-related2': {
+        ja: '<a href="../pdf_compare.html">PDF比較ツール</a> — 図面PDFの差分を色分けで比較',
+        en: '<a href="../pdf_compare.html">PDF Compare Tool</a> — compare drawing PDFs with color-coded differences',
+        zh: '<a href="../pdf_compare.html">PDF 比较工具</a> — 用颜色区分比较图纸 PDF 的差异'
+    },
+    'tips-hatch-related3': {
+        ja: '<a href="../addins.html">Revit アドイン（無料）</a> — 作図を効率化する 28 Tools のアドイン',
+        en: '<a href="../addins.html">Revit Add-ins (free)</a> — 28 Tools add-ins that speed up drafting',
+        zh: '<a href="../addins.html">Revit 插件（免费）</a> — 提升绘图效率的 28 Tools 插件'
+    },
+    'tips-hatch-cta2': {
+        ja: '🎨 いますぐハッチングパターンを作成する（無料）',
+        en: '🎨 Create a hatch pattern now (free)',
+        zh: '🎨 立即制作填充图案（免费）'
+    }
+};
+
     Object.assign(translations,
+        translations.tipsHatch,
         translations.common,
         translations.aiMinutesPage,
         translations.sections,

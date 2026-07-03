@@ -96,9 +96,9 @@
         <nav class="breadcrumb">
             <a href="../index.html" data-lang-key="breadcrumb-home">ホーム</a>
             <span class="separator">›</span>
-            <a href="../hatch.html">ハッチングパターン作成ツール</a>
+            <a href="../hatch.html" data-lang-key="tips-hatch-breadcrumb-tool">ハッチングパターン作成ツール</a>
             <span class="separator">›</span>
-            <span>ハッチングパターン(.pat)の作り方</span>
+            <span data-lang-key="tips-hatch-breadcrumb-current">ハッチングパターン(.pat)の作り方</span>
         </nav>
 
         <!-- 記事タイトル -->
@@ -106,104 +106,104 @@
             <div class="icon-wrapper">
                 <img src="../images/portal/icon-hatch.png" alt="ハッチングパターン作成" class="feature-icon">
             </div>
-            <h1 class="manual-title">Revit・AutoCADのハッチングパターン(.pat)の作り方</h1>
-            <p class="manual-subtitle">無料ツールで斜線・網掛け・目地パターンを簡単に作成</p>
+            <h1 class="manual-title" data-lang-key="tips-hatch-title">Revit・AutoCADのハッチングパターン(.pat)の作り方</h1>
+            <p class="manual-subtitle" data-lang-key="tips-hatch-subtitle">無料ツールで斜線・網掛け・目地パターンを簡単に作成</p>
         </div>
 
         <!-- 本文 -->
         <article class="md-content">
-            <p>Revit や AutoCAD でオリジナルの<strong>ハッチング（塗りつぶし）パターン</strong>を使いたいのに、<code>.pat</code> ファイルを手書きするのは難しい……という方向けの記事です。ここでは、<strong>無料のブラウザツールで簡単に .pat ファイルを作る方法</strong>を、Revit・AutoCAD への取り込み手順まで含めて解説します。インストール不要・完全ブラウザ完結です。</p>
+            <p data-lang-key="tips-hatch-intro">Revit や AutoCAD でオリジナルの<strong>ハッチング（塗りつぶし）パターン</strong>を使いたいのに、<code>.pat</code> ファイルを手書きするのは難しい……という方向けの記事です。ここでは、<strong>無料のブラウザツールで簡単に .pat ファイルを作る方法</strong>を、Revit・AutoCAD への取り込み手順まで含めて解説します。インストール不要・完全ブラウザ完結です。</p>
 
             <hr>
 
-            <h2>ハッチングパターンと .pat ファイルとは</h2>
-            <p><code>.pat</code> ファイルは、斜線・網掛け・目地などの<strong>塗りつぶしパターンを定義するテキストファイル</strong>です。Revit と AutoCAD の両方で読み込めます。</p>
+            <h2 data-lang-key="tips-hatch-h2-what">ハッチングパターンと .pat ファイルとは</h2>
+            <p data-lang-key="tips-hatch-what-p">「<code>.pat</code>」ファイルは、斜線・網掛け・目地などの<strong>塗りつぶしパターンを定義するテキストファイル</strong>です。Revit と AutoCAD の両方で読み込めます。</p>
             <ul>
-                <li><strong>Revit</strong>：塗りつぶしパターンとして読み込みます。パターンには「モデル（実寸）」と「製図（尺度依存）」の2種類があります。</li>
-                <li><strong>AutoCAD</strong>：ハッチングコマンドで使うパターンとして読み込みます。</li>
+                <li data-lang-key="tips-hatch-what-li-revit"><strong>Revit</strong>：塗りつぶしパターンとして読み込みます。パターンには「モデル（実寸）」と「製図（尺度依存）」の2種類があります。</li>
+                <li data-lang-key="tips-hatch-what-li-autocad"><strong>AutoCAD</strong>：ハッチングコマンドで使うパターンとして読み込みます。</li>
             </ul>
 
-            <h2>.pat を手書きすると大変な理由</h2>
-            <p>.pat の中身は、線ごとに「角度・原点・オフセット・破線パターン」を数値で並べた形式です。手書きだと次のような落とし穴があります。</p>
+            <h2 data-lang-key="tips-hatch-h2-why">.pat を手書きすると大変な理由</h2>
+            <p data-lang-key="tips-hatch-why-p">.pat の中身は、線ごとに「角度・原点・オフセット・破線パターン」を数値で並べた形式です。手書きだと次のような落とし穴があります。</p>
             <ul>
-                <li><strong>角度・間隔・デルタ値の計算が面倒</strong>：特に目地（芋目地・馬目地）は複数の線を正確にずらして定義する必要があります。</li>
-                <li><strong>文字コードの問題</strong>：日本語のパターン名を使うと、Shift-JIS でないと Revit / AutoCAD で文字化けします。</li>
-                <li><strong>単位・尺度の勘違い</strong>：モデルパターンと製図パターンの違いを間違えると、想定と違うサイズで表示されます。</li>
+                <li data-lang-key="tips-hatch-why-li1"><strong>角度・間隔・デルタ値の計算が面倒</strong>：特に目地（芋目地・馬目地）は複数の線を正確にずらして定義する必要があります。</li>
+                <li data-lang-key="tips-hatch-why-li2"><strong>文字コードの問題</strong>：日本語のパターン名を使うと、Shift-JIS でないと Revit / AutoCAD で文字化けします。</li>
+                <li data-lang-key="tips-hatch-why-li3"><strong>単位・尺度の勘違い</strong>：モデルパターンと製図パターンの違いを間違えると、想定と違うサイズで表示されます。</li>
             </ul>
-            <p>これらを自動でやってくれるのが、次に紹介する無料ツールです。</p>
+            <p data-lang-key="tips-hatch-why-p2">これらを自動でやってくれるのが、次に紹介する無料ツールです。</p>
 
-            <h2>無料ツールでハッチングパターンを作る手順</h2>
-            <p>28 Tools の<strong>ハッチングパターン作成ツール</strong>は、設定を選ぶだけで .pat ファイルを生成できます。基本の流れは次の4ステップです。</p>
+            <h2 data-lang-key="tips-hatch-h2-steps">無料ツールでハッチングパターンを作る手順</h2>
+            <p data-lang-key="tips-hatch-steps-p">28 Tools の<strong>ハッチングパターン作成ツール</strong>は、設定を選ぶだけで .pat ファイルを生成できます。基本の流れは次の4ステップです。</p>
             <ol>
-                <li><strong>パターンの種類を選ぶ</strong> — 斜線・網掛け・ドット・芋目地・馬目地・RC から選択</li>
-                <li><strong>角度・間隔などを設定</strong> — 選んだパターンに応じた項目を入力</li>
-                <li><strong>プレビューで確認</strong> — 画面上で仕上がりをその場でチェック</li>
-                <li><strong>ダウンロード</strong> — Revit（モデル/製図）または AutoCAD 形式で出力</li>
+                <li data-lang-key="tips-hatch-step1"><strong>パターンの種類を選ぶ</strong> — 斜線・網掛け・ドット・芋目地・馬目地・RC から選択</li>
+                <li data-lang-key="tips-hatch-step2"><strong>角度・間隔などを設定</strong> — 選んだパターンに応じた項目を入力</li>
+                <li data-lang-key="tips-hatch-step3"><strong>プレビューで確認</strong> — 画面上で仕上がりをその場でチェック</li>
+                <li data-lang-key="tips-hatch-step4"><strong>ダウンロード</strong> — Revit（モデル/製図）または AutoCAD 形式で出力</li>
             </ol>
 
             <p style="text-align:center; margin:2rem 0;">
-                <a href="../hatch.html" class="nav-button" style="display:inline-block;">🎨 ハッチングパターン作成ツールを開く（無料）</a>
+                <a href="../hatch.html" class="nav-button" style="display:inline-block;" data-lang-key="tips-hatch-cta1">🎨 ハッチングパターン作成ツールを開く（無料）</a>
             </p>
 
-            <h3>作成できるパターンの種類</h3>
+            <h3 data-lang-key="tips-hatch-h3-types">作成できるパターンの種類</h3>
             <table>
                 <thead>
                     <tr>
-                        <th>パターン</th>
-                        <th>主な設定項目</th>
+                        <th data-lang-key="tips-hatch-th-pattern">パターン</th>
+                        <th data-lang-key="tips-hatch-th-setting">主な設定項目</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td><strong>斜線</strong></td><td>角度・間隔・破線設定</td></tr>
-                    <tr><td><strong>網掛け</strong></td><td>角度・間隔・破線設定</td></tr>
-                    <tr><td><strong>ドット</strong></td><td>間隔・ドットサイズ</td></tr>
-                    <tr><td><strong>芋目地</strong></td><td>X・Y・目地の有無・目地X・目地Y</td></tr>
-                    <tr><td><strong>馬目地</strong></td><td>X・Y・目地の有無・目地X・目地Y（1/2 オフセット）</td></tr>
-                    <tr><td><strong>RC（コンクリート）</strong></td><td>線内間隔・グループ間隔</td></tr>
+                    <tr><td data-lang-key="tips-hatch-type-diagonal"><strong>斜線</strong></td><td data-lang-key="tips-hatch-type-diagonal-set">角度・間隔・破線設定</td></tr>
+                    <tr><td data-lang-key="tips-hatch-type-cross"><strong>網掛け</strong></td><td data-lang-key="tips-hatch-type-cross-set">角度・間隔・破線設定</td></tr>
+                    <tr><td data-lang-key="tips-hatch-type-dot"><strong>ドット</strong></td><td data-lang-key="tips-hatch-type-dot-set">間隔・ドットサイズ</td></tr>
+                    <tr><td data-lang-key="tips-hatch-type-grid"><strong>芋目地</strong></td><td data-lang-key="tips-hatch-type-grid-set">X・Y・目地の有無・目地X・目地Y</td></tr>
+                    <tr><td data-lang-key="tips-hatch-type-brick"><strong>馬目地</strong></td><td data-lang-key="tips-hatch-type-brick-set">X・Y・目地の有無・目地X・目地Y（1/2 オフセット）</td></tr>
+                    <tr><td data-lang-key="tips-hatch-type-rc"><strong>RC（コンクリート）</strong></td><td data-lang-key="tips-hatch-type-rc-set">線内間隔・グループ間隔</td></tr>
                 </tbody>
             </table>
             <blockquote>
-                <p>💡 パターン名は<strong>日本語対応</strong>（例：<code>芋目地_100x100</code>）。Shift-JIS で出力されるため Revit / AutoCAD でも文字化けしません。</p>
+                <p data-lang-key="tips-hatch-note-jp">💡 パターン名は<strong>日本語対応</strong>（例：<code>芋目地_100x100</code>）。Shift-JIS で出力されるため Revit / AutoCAD でも文字化けしません。</p>
             </blockquote>
 
-            <h2>Revit への取り込み方法</h2>
+            <h2 data-lang-key="tips-hatch-h2-revit">Revit への取り込み方法</h2>
             <ol>
-                <li>ツールで <strong>Revit（モデル または 製図）</strong> を選んで .pat をダウンロード</li>
-                <li>Revit の「管理」→「その他の設定」→「塗りつぶしパターン」を開く</li>
-                <li>「新規作成」→「カスタム」→ ダウンロードした .pat をインポート</li>
-                <li>取り込んだパターンを塗りつぶし領域や材料に割り当て</li>
+                <li data-lang-key="tips-hatch-revit-step1">ツールで <strong>Revit（モデル または 製図）</strong> を選んで .pat をダウンロード</li>
+                <li data-lang-key="tips-hatch-revit-step2">Revit の「管理」→「その他の設定」→「塗りつぶしパターン」を開く</li>
+                <li data-lang-key="tips-hatch-revit-step3">「新規作成」→「カスタム」→ ダウンロードした .pat をインポート</li>
+                <li data-lang-key="tips-hatch-revit-step4">取り込んだパターンを塗りつぶし領域や材料に割り当て</li>
             </ol>
             <blockquote>
-                <p>💡 <strong>モデルパターン</strong>は実寸（原寸）で表示され、<strong>製図パターン</strong>はビュー尺度に依存します。用途に合わせて選んでください。</p>
+                <p data-lang-key="tips-hatch-revit-note">💡 <strong>モデルパターン</strong>は実寸（原寸）で表示され、<strong>製図パターン</strong>はビュー尺度に依存します。用途に合わせて選んでください。</p>
             </blockquote>
 
-            <h2>AutoCAD への取り込み方法</h2>
+            <h2 data-lang-key="tips-hatch-h2-autocad">AutoCAD への取り込み方法</h2>
             <ol>
-                <li>ツールで <strong>AutoCAD</strong> 形式を選んで .pat をダウンロード</li>
-                <li>.pat ファイルを AutoCAD のサポートファイル検索パス内のフォルダに配置</li>
-                <li>ハッチングコマンドで「ユーザー定義」→ 追加したパターン名を選択</li>
+                <li data-lang-key="tips-hatch-autocad-step1">ツールで <strong>AutoCAD</strong> 形式を選んで .pat をダウンロード</li>
+                <li data-lang-key="tips-hatch-autocad-step2">.pat ファイルを AutoCAD のサポートファイル検索パス内のフォルダに配置</li>
+                <li data-lang-key="tips-hatch-autocad-step3">ハッチングコマンドで「ユーザー定義」→ 追加したパターン名を選択</li>
             </ol>
 
-            <h2>よくある質問（FAQ）</h2>
-            <h3>本当に無料で使えますか？</h3>
-            <p>はい、完全無料です。会員登録も不要で、ブラウザだけで完結します。</p>
-            <h3>作成したファイルやデータは外部に送信されますか？</h3>
-            <p>いいえ。パターン生成はすべてブラウザ内で行われ、サーバーへのアップロードや送信は一切ありません。</p>
-            <h3>日本語のパターン名は文字化けしませんか？</h3>
-            <p>Revit・AutoCAD が期待する Shift-JIS でエンコードして出力するため、日本語のパターン名でも文字化けしません。</p>
-            <h3>対応している Revit のバージョンは？</h3>
-            <p>.pat は標準フォーマットのため、Revit 2021〜2026 を含む各バージョンで利用できます。AutoCAD にも対応しています。</p>
+            <h2 data-lang-key="tips-hatch-h2-faq">よくある質問（FAQ）</h2>
+            <h3 data-lang-key="tips-hatch-faq-q1">本当に無料で使えますか？</h3>
+            <p data-lang-key="tips-hatch-faq-a1">はい、完全無料です。会員登録も不要で、ブラウザだけで完結します。</p>
+            <h3 data-lang-key="tips-hatch-faq-q2">作成したファイルやデータは外部に送信されますか？</h3>
+            <p data-lang-key="tips-hatch-faq-a2">いいえ。パターン生成はすべてブラウザ内で行われ、サーバーへのアップロードや送信は一切ありません。</p>
+            <h3 data-lang-key="tips-hatch-faq-q3">日本語のパターン名は文字化けしませんか？</h3>
+            <p data-lang-key="tips-hatch-faq-a3">Revit・AutoCAD が期待する Shift-JIS でエンコードして出力するため、日本語のパターン名でも文字化けしません。</p>
+            <h3 data-lang-key="tips-hatch-faq-q4">対応している Revit のバージョンは？</h3>
+            <p data-lang-key="tips-hatch-faq-a4">.pat は標準フォーマットのため、Revit 2021〜2026 を含む各バージョンで利用できます。AutoCAD にも対応しています。</p>
 
-            <h2>まとめ・関連ツール</h2>
-            <p>ハッチングパターン（.pat）は、無料ツールを使えば計算も文字コードも気にせず数クリックで作成できます。Revit・AutoCAD のどちらでもそのまま使えるので、作図の効率化にぜひご活用ください。</p>
+            <h2 data-lang-key="tips-hatch-h2-summary">まとめ・関連ツール</h2>
+            <p data-lang-key="tips-hatch-summary-p">ハッチングパターン（.pat）は、無料ツールを使えば計算も文字コードも気にせず数クリックで作成できます。Revit・AutoCAD のどちらでもそのまま使えるので、作図の効率化にぜひご活用ください。</p>
             <ul>
-                <li><a href="../hatch.html">ハッチングパターン作成ツール</a> — 斜線・目地・RC などの .pat をブラウザで作成</li>
-                <li><a href="../pdf_compare.html">PDF比較ツール</a> — 図面PDFの差分を色分けで比較</li>
-                <li><a href="../addins.html">Revit アドイン（無料）</a> — 作図を効率化する 28 Tools のアドイン</li>
+                <li data-lang-key="tips-hatch-related1"><a href="../hatch.html">ハッチングパターン作成ツール</a> — 斜線・目地・RC などの .pat をブラウザで作成</li>
+                <li data-lang-key="tips-hatch-related2"><a href="../pdf_compare.html">PDF比較ツール</a> — 図面PDFの差分を色分けで比較</li>
+                <li data-lang-key="tips-hatch-related3"><a href="../addins.html">Revit アドイン（無料）</a> — 作図を効率化する 28 Tools のアドイン</li>
             </ul>
 
             <p style="text-align:center; margin:2rem 0;">
-                <a href="../hatch.html" class="nav-button" style="display:inline-block;">🎨 いますぐハッチングパターンを作成する（無料）</a>
+                <a href="../hatch.html" class="nav-button" style="display:inline-block;" data-lang-key="tips-hatch-cta2">🎨 いますぐハッチングパターンを作成する（無料）</a>
             </p>
         </article>
 
