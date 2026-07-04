@@ -8408,6 +8408,11 @@ translations.tipsNav = {
         ja: '無料アドインで通り芯・レベルの符号（バブル）表示をワンクリック一括切替。',
         en: 'Toggle grid/level bubble visibility in bulk with one click using a free add-in.',
         zh: '用免费插件一键批量切换轴网/标高符号（气泡）显示。'
+    },
+    'tips-index-card-sheet-desc': {
+        ja: '無料アドインで図枠を指定し、複数のシートをまとめて一括作成する手順。',
+        en: 'Steps to create multiple sheets at once by specifying a title block, with a free add-in.',
+        zh: '用免费插件指定图框，批量创建多张图纸的步骤。'
     }
 };
 
@@ -8524,12 +8529,189 @@ translations.toolAbout = {
     }
 };
 
+translations.tipsSheet = {
+    'tips-sheet-breadcrumb-current': {
+        ja: 'シートを一括作成する方法', en: 'How to Create Sheets in Bulk', zh: '批量创建图纸的方法'
+    },
+    'tips-sheet-title': {
+        ja: 'Revitでシートを一括作成する方法', en: 'How to Create Sheets in Bulk in Revit', zh: '在 Revit 中批量创建图纸的方法'
+    },
+    'tips-sheet-subtitle': {
+        ja: '無料アドインで図枠を指定して複数シートをまとめて作成',
+        en: 'Create multiple sheets at once by choosing a title block, with a free add-in',
+        zh: '用免费插件指定图框，批量创建多张图纸'
+    },
+    'tips-sheet-intro': {
+        ja: 'Revit でシートを作るとき、「シートを新規作成 → タイトルブロックを選ぶ → 番号と名前を入力」を<strong>1枚ずつ繰り返していませんか？</strong>枚数が多いと、この作業だけでかなりの時間がかかります。この記事では、<strong>無料アドインで複数のシートを一括作成する方法</strong>を解説します。',
+        en: 'When creating sheets in Revit, do you <strong>repeat "new sheet → choose title block → enter number and name" one by one?</strong> With many sheets, this alone takes a lot of time. This article explains <strong>how to create multiple sheets at once with a free add-in</strong>.',
+        zh: '在 Revit 中创建图纸时，你是否<strong>逐张重复“新建图纸→选择标题栏→输入编号和名称”？</strong>数量多时，仅此就很耗时。本文讲解<strong>如何用免费插件批量创建多张图纸</strong>。'
+    },
+    'tips-sheet-h2-why': {
+        ja: '1枚ずつ作るのが大変な理由', en: 'Why creating them one by one is painful', zh: '逐张创建为何很麻烦'
+    },
+    'tips-sheet-why-li1': {
+        ja: '<strong>手数が多い</strong>：シート1枚ごとに「新規作成→図枠選択→番号入力→名前入力」の操作が必要。',
+        en: '<strong>Many steps</strong>: each sheet needs "new → choose title block → enter number → enter name".',
+        zh: '<strong>操作步骤多</strong>：每张图纸都要“新建→选择图框→输入编号→输入名称”。'
+    },
+    'tips-sheet-why-li2': {
+        ja: '<strong>番号・名前の付け間違い</strong>：手入力を繰り返すと、連番のミスや表記ゆれが起きやすい。',
+        en: '<strong>Numbering/naming mistakes</strong>: repeated manual entry easily causes sequence errors and inconsistent notation.',
+        zh: '<strong>编号/名称易出错</strong>：反复手动输入容易造成连号错误和表述不一致。'
+    },
+    'tips-sheet-why-li3': {
+        ja: '<strong>枚数が多いほど時間を圧迫</strong>：数十枚規模になると、シート作成だけで作業時間を大きく消費する。',
+        en: '<strong>More sheets, more time</strong>: at dozens of sheets, sheet creation alone consumes a lot of working time.',
+        zh: '<strong>数量越多越耗时</strong>：达到数十张时，仅创建图纸就会大量占用工作时间。'
+    },
+    'tips-sheet-h2-steps': {
+        ja: '無料アドインで一括作成する手順', en: 'Steps to create in bulk with the free add-in', zh: '用免费插件批量创建的步骤'
+    },
+    'tips-sheet-steps-p': {
+        ja: '28 Tools の Revit アドインには、図枠を指定してシートをまとめて作成する機能があります。基本の流れは次の4ステップです。',
+        en: 'The 28 Tools Revit add-in includes a feature to create sheets in bulk by specifying a title block. The basic flow is four steps:',
+        zh: '28 Tools 的 Revit 插件包含通过指定图框批量创建图纸的功能。基本流程为以下 4 步：'
+    },
+    'tips-sheet-step1': {
+        ja: '<strong>無料アドインを導入</strong> — 28 Tools のアドインをダウンロードしてインストール',
+        en: '<strong>Install the free add-in</strong> — download and install the 28 Tools add-in',
+        zh: '<strong>安装免费插件</strong> — 下载并安装 28 Tools 插件'
+    },
+    'tips-sheet-step2': {
+        ja: '<strong>図枠（タイトルブロック）を選ぶ</strong> — 作成するシートに使うタイトルブロックを選択',
+        en: '<strong>Choose the title block</strong> — select the title block to use for the sheets',
+        zh: '<strong>选择图框（标题栏）</strong> — 选择用于图纸的标题栏'
+    },
+    'tips-sheet-step3': {
+        ja: '<strong>シート番号・シート名を指定</strong> — 作成したいシートを一覧で指定',
+        en: '<strong>Specify sheet numbers and names</strong> — list the sheets you want to create',
+        zh: '<strong>指定图纸编号和名称</strong> — 以列表形式指定要创建的图纸'
+    },
+    'tips-sheet-step4': {
+        ja: '<strong>一括作成を実行</strong> — 指定した分のシートがまとめて作成される',
+        en: '<strong>Run bulk creation</strong> — all the specified sheets are created at once',
+        zh: '<strong>执行批量创建</strong> — 一次性创建所指定的全部图纸'
+    },
+    'tips-sheet-cta1': {
+        ja: '⬇️ 無料アドインをダウンロード', en: '⬇️ Download the free add-in', zh: '⬇️ 下载免费插件'
+    },
+    'tips-sheet-h2-install': {
+        ja: 'アドインの導入方法', en: 'How to install the add-in', zh: '插件的安装方法'
+    },
+    'tips-sheet-install-p': {
+        ja: 'この機能は 28 Tools の Revit アドインに含まれています。<a href="../addins.html">アドインページ</a>から、お使いの Revit のバージョン（2021〜2026）に合ったファイルをダウンロードしてインストールしてください。インストール後、リボンに「28 Tools」タブが追加されます。',
+        en: 'This feature is included in the 28 Tools Revit add-in. Download the file matching your Revit version (2021–2026) from the <a href="../addins.html">add-ins page</a> and install it. After installation, a "28 Tools" tab is added to the ribbon.',
+        zh: '此功能包含在 28 Tools 的 Revit 插件中。请从<a href="../addins.html">插件页面</a>下载与您的 Revit 版本（2021～2026）匹配的文件并安装。安装后，功能区会新增“28 Tools”选项卡。'
+    },
+    'tips-sheet-h2-tips': {
+        ja: 'もっと便利に使うヒント', en: 'Tips to use it more effectively', zh: '更方便使用的技巧'
+    },
+    'tips-sheet-tip1': {
+        ja: '<strong>命名ルールを先に決める</strong> — シート番号の付け方（例：A-01, A-02…）を決めてから一括作成すると整理しやすい。',
+        en: '<strong>Decide a naming rule first</strong> — settle the numbering scheme (e.g. A-01, A-02...) before bulk creation for easier organization.',
+        zh: '<strong>先确定命名规则</strong> — 先定好编号方式（例如 A-01、A-02…）再批量创建，便于整理。'
+    },
+    'tips-sheet-tip2': {
+        ja: '<strong>タイトルブロックは事前に読み込む</strong> — 使いたい図枠ファミリをプロジェクトに読み込んでおくと選択がスムーズ。',
+        en: '<strong>Load title blocks in advance</strong> — loading the title block family into the project first makes selection smooth.',
+        zh: '<strong>提前载入标题栏</strong> — 先将所需图框族载入项目，选择时更顺畅。'
+    },
+    'tips-sheet-tip3': {
+        ja: '<strong>作成後の割付とセット運用</strong> — 一括作成でシートの器を用意し、ビューの割付は続けて行うと効率的。',
+        en: '<strong>Pair with view placement</strong> — use bulk creation to prepare the sheets, then place views right after for efficiency.',
+        zh: '<strong>与视图布置配套</strong> — 用批量创建准备好图纸容器，紧接着布置视图更高效。'
+    },
+    'tips-sheet-h2-trouble': {
+        ja: 'うまく作成できないときは', en: 'If creation does not work', zh: '当无法创建时'
+    },
+    'tips-sheet-tr-th-symptom': { ja: '症状', en: 'Symptom', zh: '症状' },
+    'tips-sheet-tr-th-action': { ja: '対処', en: 'Action', zh: '处理方法' },
+    'tips-sheet-tr1-s': {
+        ja: '図枠が選択肢に出てこない', en: 'The title block is not listed', zh: '图框未出现在选项中'
+    },
+    'tips-sheet-tr1-a': {
+        ja: 'タイトルブロックファミリがプロジェクトに読み込まれているか確認してください。',
+        en: 'Check that the title block family is loaded into the project.',
+        zh: '请确认标题栏族是否已载入项目。'
+    },
+    'tips-sheet-tr2-s': {
+        ja: 'シート番号が重複してエラーになる', en: 'An error occurs due to duplicate sheet numbers', zh: '因图纸编号重复而出错'
+    },
+    'tips-sheet-tr2-a': {
+        ja: '既存シートと同じ番号は使えません。重複しない番号を指定してください。',
+        en: 'You cannot reuse an existing sheet number. Specify numbers that do not duplicate.',
+        zh: '不能使用与现有图纸相同的编号。请指定不重复的编号。'
+    },
+    'tips-sheet-tr3-s': {
+        ja: '作成したシートが見当たらない', en: 'I cannot find the created sheets', zh: '找不到已创建的图纸'
+    },
+    'tips-sheet-tr3-a': {
+        ja: 'プロジェクトブラウザの「シート」ツリーを確認してください。番号順に並んでいます。',
+        en: 'Check the "Sheets" tree in the Project Browser. They are listed in number order.',
+        zh: '请查看项目浏览器的“图纸”树，按编号顺序排列。'
+    },
+    'tips-sheet-h2-faq': {
+        ja: 'よくある質問（FAQ）', en: 'Frequently Asked Questions (FAQ)', zh: '常见问题（FAQ）'
+    },
+    'tips-sheet-faq-q1': { ja: 'アドインは無料ですか？', en: 'Is the add-in free?', zh: '插件是免费的吗？' },
+    'tips-sheet-faq-a1': {
+        ja: 'はい、無料でダウンロードして使えます。Revit 2021〜2026に対応しています。',
+        en: 'Yes, you can download and use it for free. It supports Revit 2021–2026.',
+        zh: '是的，可免费下载使用。支持 Revit 2021～2026。'
+    },
+    'tips-sheet-faq-q2': { ja: '何枚まで一括作成できますか？', en: 'How many sheets can I create at once?', zh: '一次能批量创建多少张？' },
+    'tips-sheet-faq-a2': {
+        ja: '指定した数のシートをまとめて作成できます。多数のシートも一度の操作で作成可能です。',
+        en: 'You can create as many sheets as you specify. Even many sheets can be created in a single operation.',
+        zh: '可一次性创建所指定数量的图纸。即使数量很多也能一次操作完成。'
+    },
+    'tips-sheet-faq-q3': { ja: '作成後にシート番号や名前は変更できますか？', en: 'Can I change sheet numbers or names afterward?', zh: '创建后可以更改编号或名称吗？' },
+    'tips-sheet-faq-a3': {
+        ja: 'はい。作成後もRevitの通常操作でシート番号・シート名を編集できます。',
+        en: 'Yes. You can edit sheet numbers and names with normal Revit operations after creation.',
+        zh: '可以。创建后仍可通过 Revit 的常规操作编辑图纸编号和名称。'
+    },
+    'tips-sheet-faq-q4': { ja: '任意のタイトルブロックを使えますか？', en: 'Can I use any title block?', zh: '可以使用任意标题栏吗？' },
+    'tips-sheet-faq-a4': {
+        ja: 'はい。プロジェクトに読み込まれているタイトルブロックファミリを選んで作成できます。',
+        en: 'Yes. You can choose any title block family loaded in the project.',
+        zh: '可以。可选择项目中已载入的任意标题栏族进行创建。'
+    },
+    'tips-sheet-h2-summary': {
+        ja: 'まとめ・関連リンク', en: 'Summary & related links', zh: '总结・相关链接'
+    },
+    'tips-sheet-summary-p': {
+        ja: 'シートの一括作成は、無料アドインを使えば図枠を選んで番号・名前を指定するだけで、複数のシートをまとめて用意できます。1枚ずつの繰り返し作業から解放され、番号の付け間違いも防げます。詳しい使い方は機能マニュアルをご覧ください。',
+        en: 'With a free add-in, bulk sheet creation lets you prepare multiple sheets just by choosing a title block and specifying numbers and names. It frees you from repetitive one-by-one work and prevents numbering mistakes. See the feature manual for detailed usage.',
+        zh: '使用免费插件，批量创建图纸只需选择图框并指定编号和名称，即可一次性准备多张图纸。摆脱逐张的重复劳动，并防止编号错误。详细用法请参阅功能手册。'
+    },
+    'tips-sheet-related1': {
+        ja: '<a href="../addins.html">Revit アドイン（無料）</a> — シート一括作成を含む 28 Tools の各機能',
+        en: '<a href="../addins.html">Revit Add-ins (free)</a> — 28 Tools features including bulk sheet creation',
+        zh: '<a href="../addins.html">Revit 插件（免费）</a> — 包含批量创建图纸在内的 28 Tools 各功能'
+    },
+    'tips-sheet-related2': {
+        ja: '<a href="../manual/sheet-creation.html">シート一括作成 機能マニュアル</a> — 詳しい使い方',
+        en: '<a href="../manual/sheet-creation.html">Bulk Sheet Creation Manual</a> — detailed usage',
+        zh: '<a href="../manual/sheet-creation.html">批量创建图纸功能手册</a> — 详细用法'
+    },
+    'tips-sheet-related3': {
+        ja: '<a href="revit-grid-bubble.html">通り芯・レベルの符号を一括切替する方法</a> — シート作成前の体裁調整に',
+        en: '<a href="revit-grid-bubble.html">How to Toggle Grid/Level Bubbles in Bulk</a> — for tidying up before creating sheets',
+        zh: '<a href="revit-grid-bubble.html">批量切换轴网/标高符号的方法</a> — 用于创建图纸前的版面整理'
+    },
+    'tips-sheet-cta2': {
+        ja: '⬇️ いますぐ無料アドインを試す', en: '⬇️ Try the free add-in now', zh: '⬇️ 立即试用免费插件'
+    }
+};
+
     Object.assign(translations,
         translations.tipsHatch,
         translations.tipsPdf,
         translations.tipsGrid,
         translations.tipsNav,
         translations.toolAbout,
+        translations.tipsSheet,
         translations.common,
         translations.aiMinutesPage,
         translations.sections,
