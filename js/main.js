@@ -8020,6 +8020,77 @@ translations.tipsPdf = {
         en: '🔍 Compare drawing PDFs now (free)',
         zh: '🔍 立即比较图纸 PDF（免费）'
     },
+    'tips-pdf-h2-tips': {
+        ja: 'きれいに比較するためのPDF書き出しのコツ',
+        en: 'Tips for exporting PDFs that compare cleanly',
+        zh: '导出便于清晰比较的 PDF 的技巧'
+    },
+    'tips-pdf-tips-p': {
+        ja: '比較の精度は、元のPDFの作り方でほぼ決まります。次のポイントを押さえると、余計な差分が出にくくなります。',
+        en: 'Comparison accuracy is mostly determined by how the source PDFs are made. Keeping the following points in mind reduces spurious differences.',
+        zh: '比较的精度基本上取决于源 PDF 的制作方式。注意以下要点可减少多余的差异。'
+    },
+    'tips-pdf-tip1': {
+        ja: '<strong>同じ縮尺で出力する</strong> — 縮尺が違うと図面全体がズレて、ほぼ全面が差分として表示されてしまいます。',
+        en: '<strong>Export at the same scale</strong> — different scales shift the whole drawing, showing almost everything as a difference.',
+        zh: '<strong>以相同比例导出</strong> — 比例不同会使整张图纸错位，几乎全部显示为差异。'
+    },
+    'tips-pdf-tip2': {
+        ja: '<strong>用紙サイズ・原点を揃える</strong> — 余白や原点が違うと全体が平行移動し、位置ズレの差分が出ます。旧図・新図は同じ用紙設定で書き出してください。',
+        en: '<strong>Match paper size and origin</strong> — different margins or origins shift everything, producing position-offset differences. Export the old and new drawings with the same paper settings.',
+        zh: '<strong>统一纸张尺寸与原点</strong> — 页边距或原点不同会使整体平移，产生位置偏移差异。请以相同的纸张设置导出旧图与新图。'
+    },
+    'tips-pdf-tip3': {
+        ja: '<strong>ベクターPDFで出力する</strong> — ラスタ（画像化）より線の輪郭がくっきりし、微細な差分も正確に検出できます。',
+        en: '<strong>Export as vector PDF</strong> — line edges are sharper than raster (image) output, so even tiny differences are detected accurately.',
+        zh: '<strong>以矢量 PDF 导出</strong> — 线条轮廓比栅格（图像化）更清晰，能准确检测细微差异。'
+    },
+    'tips-pdf-tip4': {
+        ja: '<strong>回転・反転をかけない</strong> — 一方だけ回転していると重なりません。向きを揃えて出力します。',
+        en: '<strong>Do not rotate or flip</strong> — if only one is rotated, they will not overlap. Export with the same orientation.',
+        zh: '<strong>不要旋转或翻转</strong> — 若只有一方被旋转则无法重叠。请以相同方向导出。'
+    },
+    'tips-pdf-h2-trouble': {
+        ja: 'うまく差分が出ないときは', en: 'If differences do not show correctly', zh: '当差异显示不正确时'
+    },
+    'tips-pdf-tr-th-symptom': {
+        ja: '症状', en: 'Symptom', zh: '症状'
+    },
+    'tips-pdf-tr-th-action': {
+        ja: '対処', en: 'Action', zh: '处理方法'
+    },
+    'tips-pdf-tr1-s': {
+        ja: '全体が赤青だらけになる', en: 'The whole page is full of red and blue', zh: '整页都是红蓝色'
+    },
+    'tips-pdf-tr1-a': {
+        ja: '縮尺が一致していません。旧図・新図を同じ縮尺で出力し直してください。',
+        en: 'The scales do not match. Re-export the old and new drawings at the same scale.',
+        zh: '比例不一致。请以相同比例重新导出旧图与新图。'
+    },
+    'tips-pdf-tr2-s': {
+        ja: '全体が少しズレて重なる', en: 'Everything overlaps but slightly offset', zh: '整体重叠但略有偏移'
+    },
+    'tips-pdf-tr2-a': {
+        ja: '用紙サイズ・原点・余白の違いが原因です。同じ用紙設定で書き出してください。',
+        en: 'Caused by differences in paper size, origin, or margins. Export with the same paper settings.',
+        zh: '由纸张尺寸、原点或页边距的差异引起。请以相同的纸张设置导出。'
+    },
+    'tips-pdf-tr3-s': {
+        ja: '差分がまったく出ない', en: 'No differences appear at all', zh: '完全不显示差异'
+    },
+    'tips-pdf-tr3-a': {
+        ja: '同じファイルを2つ選んでいないか確認してください。',
+        en: 'Check that you have not selected the same file twice.',
+        zh: '请确认是否选择了同一个文件两次。'
+    },
+    'tips-pdf-tr4-s': {
+        ja: '細部がつぶれて見えない', en: 'Fine details are blurred', zh: '细节模糊看不清'
+    },
+    'tips-pdf-tr4-a': {
+        ja: '保存画質を上げる（300/600dpi）か、プレビューを拡大して確認します。',
+        en: 'Raise the save quality (300/600 dpi) or zoom in on the preview to check.',
+        zh: '提高保存画质（300/600dpi），或放大预览进行确认。'
+    },
     'tips-pdf-guide-link': {
         ja: '📖 使い方をもっと詳しく：<a href="tips/pdf-compare-guide.html">図面PDFを比較して差分を見つける方法</a>',
         en: '📖 Learn more: <a href="tips/pdf-compare-guide.html">How to Compare Drawing PDFs and Spot the Differences</a>',
@@ -8231,6 +8302,65 @@ translations.tipsGrid = {
         ja: '⬇️ いますぐ無料アドインを試す',
         en: '⬇️ Try the free add-in now',
         zh: '⬇️ 立即试用免费插件'
+    },
+    'tips-grid-h2-install': {
+        ja: 'アドインの導入方法', en: 'How to install the add-in', zh: '插件的安装方法'
+    },
+    'tips-grid-install-p': {
+        ja: 'この機能は 28 Tools の Revit アドインに含まれています。<a href="../addins.html">アドインページ</a>から、お使いの Revit のバージョン（2021〜2026）に合ったファイルをダウンロードしてインストールしてください。インストール後、リボンに「28 Tools」タブが追加されます。',
+        en: 'This feature is included in the 28 Tools Revit add-in. Download the file matching your Revit version (2021–2026) from the <a href="../addins.html">add-ins page</a> and install it. After installation, a "28 Tools" tab is added to the ribbon.',
+        zh: '此功能包含在 28 Tools 的 Revit 插件中。请从<a href="../addins.html">插件页面</a>下载与您的 Revit 版本（2021～2026）匹配的文件并安装。安装后，功能区会新增“28 Tools”选项卡。'
+    },
+    'tips-grid-h2-tips': {
+        ja: 'もっと便利に使うヒント', en: 'Tips to use it more effectively', zh: '更方便使用的技巧'
+    },
+    'tips-grid-tip1': {
+        ja: '<strong>レベルにも同じ操作が効く</strong> — 断面・立面のレベル符号も同じモードで一括切替できます。',
+        en: '<strong>Works on levels too</strong> — level bubbles in sections and elevations can be toggled in bulk with the same modes.',
+        zh: '<strong>对标高同样有效</strong> — 剖面・立面的标高符号也可用相同模式批量切换。'
+    },
+    'tips-grid-tip2': {
+        ja: '<strong>範囲を選んで部分適用</strong> — 一部の通り芯だけ選択してから実行すれば、その要素だけを切り替えられます。',
+        en: '<strong>Apply partially by selection</strong> — select only some grids first to toggle just those elements.',
+        zh: '<strong>选择范围以局部应用</strong> — 先只选择部分轴网再执行，即可只切换这些元素。'
+    },
+    'tips-grid-tip3': {
+        ja: '<strong>ビュー量産の直前に一括で統一</strong> — シート作成前にまとめて片側表示へ揃えておくと、体裁が整った状態でレイアウトできます。',
+        en: '<strong>Unify in bulk before mass-producing views</strong> — aligning to one-side display before creating sheets lets you lay out with a tidy appearance.',
+        zh: '<strong>批量生成视图前统一切换</strong> — 在创建图纸前统一为单侧显示，可在版面整洁的状态下布局。'
+    },
+    'tips-grid-h2-trouble': {
+        ja: '切り替わらないときは', en: 'If it does not toggle', zh: '当无法切换时'
+    },
+    'tips-grid-tr-th-symptom': {
+        ja: '症状', en: 'Symptom', zh: '症状'
+    },
+    'tips-grid-tr-th-action': {
+        ja: '対処', en: 'Action', zh: '处理方法'
+    },
+    'tips-grid-tr1-s': {
+        ja: 'ボタンを押しても変わらない', en: 'Nothing changes when I click the button', zh: '点击按钮后没有变化'
+    },
+    'tips-grid-tr1-a': {
+        ja: '対応ビューか確認してください。平面・天伏・構造伏・断面が対象で、3D・立面などは対象外です。',
+        en: 'Check that the view is supported. Floor plans, ceiling plans, structural plans, and sections are supported; 3D, elevations, etc. are not.',
+        zh: '请确认是否为支持的视图。平面、天花板平面、结构平面、剖面为支持对象；3D、立面等不支持。'
+    },
+    'tips-grid-tr2-s': {
+        ja: '一部の通り芯だけ変わらない', en: 'Only some grids do not change', zh: '只有部分轴网没有变化'
+    },
+    'tips-grid-tr2-a': {
+        ja: 'その要素がフィルタや非表示で隠れていないか、選択範囲から外れていないか確認します。',
+        en: 'Check that the element is not hidden by a filter or hide, and is not excluded from your selection.',
+        zh: '请确认该元素是否被过滤器或隐藏所遮挡，或是否被排除在所选范围之外。'
+    },
+    'tips-grid-tr3-s': {
+        ja: 'ビューテンプレートでロックされている', en: 'Locked by a view template', zh: '被视图样板锁定'
+    },
+    'tips-grid-tr3-a': {
+        ja: 'テンプレート側で表示が制御されている場合があります。テンプレートの設定を確認してください。',
+        en: 'Display may be controlled by the view template. Check the template settings.',
+        zh: '显示可能由视图样板控制。请检查样板的设置。'
     },
     'tips-grid-guide-link': {
         ja: '📖 使い方ガイド：<a href="tips/revit-grid-bubble.html">通り芯・レベルの符号を一括で切り替える方法</a>',
