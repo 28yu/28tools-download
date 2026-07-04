@@ -8411,11 +8411,125 @@ translations.tipsNav = {
     }
 };
 
+translations.toolAbout = {
+    'hatch-about-h2': {
+        ja: 'ハッチングパターン作成ツールについて',
+        en: 'About the Hatch Pattern Maker',
+        zh: '关于填充图案制作工具'
+    },
+    'hatch-about-p': {
+        ja: '「ハッチングパターン作成ツール」は、Revit・AutoCAD で使える塗りつぶしパターン（.patファイル）をブラウザだけで作成できる無料ツールです。ファイルのアップロードやサーバー送信は一切なく、すべてブラウザ内で処理が完結します。',
+        en: 'The Hatch Pattern Maker is a free tool that creates fill patterns (.pat files) for Revit and AutoCAD entirely in your browser. Nothing is uploaded or sent to a server — all processing happens locally in the browser.',
+        zh: '“填充图案制作工具”是一款免费工具，可完全在浏览器中制作用于 Revit・AutoCAD 的填充图案（.pat 文件）。不会上传文件或发送到服务器，所有处理都在浏览器内完成。'
+    },
+    'hatch-about-h3-can': {
+        ja: 'このツールでできること', en: 'What you can do', zh: '本工具可实现的功能'
+    },
+    'hatch-about-can1': {
+        ja: '斜線・網掛け・ドット・芋目地・馬目地・RC（コンクリート）の6種類のパターンに対応',
+        en: 'Supports six pattern types: diagonal, crosshatch, dot, stack bond, running bond, and RC (concrete)',
+        zh: '支持斜线、交叉线、点、错缝、顺缝、RC（混凝土）六种图案'
+    },
+    'hatch-about-can2': {
+        ja: '角度・間隔・目地サイズなどを指定し、プレビューを見ながら調整',
+        en: 'Set angle, spacing, joint size, and more while adjusting with a live preview',
+        zh: '设置角度、间距、接缝尺寸等，并通过预览进行调整'
+    },
+    'hatch-about-can3': {
+        ja: 'Revit 用（モデル／製図）と AutoCAD 用の形式で出力',
+        en: 'Export in Revit (model/drafting) and AutoCAD formats',
+        zh: '以 Revit（模型/绘图）和 AutoCAD 格式导出'
+    },
+    'hatch-about-can4': {
+        ja: '日本語のパターン名に対応（Shift-JIS で出力するため文字化けしません）',
+        en: 'Supports multibyte pattern names (output in Shift-JIS, so no garbled text)',
+        zh: '支持多字节图案名称（以 Shift-JIS 输出，不会乱码）'
+    },
+    'hatch-about-h3-use': {
+        ja: '活用シーン', en: 'Use cases', zh: '应用场景'
+    },
+    'hatch-about-use1': {
+        ja: '独自の仕上げ・材料表現に合わせたハッチングを用意したいとき',
+        en: 'When you need hatching tailored to a specific finish or material representation',
+        zh: '当需要配合特定饰面或材料表现的填充时'
+    },
+    'hatch-about-use2': {
+        ja: '既製のパターンに無い目地割り（タイル・レンガ）を作図したいとき',
+        en: 'When you need joint layouts (tile, brick) not found in preset patterns',
+        zh: '当需要绘制现成图案中没有的接缝分割（瓷砖、砖块）时'
+    },
+    'hatch-about-use3': {
+        ja: 'RC 断面や地盤などの表現パターンをすばやく用意したいとき',
+        en: 'When you need to quickly prepare patterns for RC sections, ground, etc.',
+        zh: '当需要快速准备 RC 剖面、地基等表现图案时'
+    },
+    'hatch-about-guide': {
+        ja: '📖 詳しい作り方は<a href="tips/revit-hatch-pattern.html">Revit・AutoCADのハッチングパターン(.pat)の作り方</a>で解説しています。',
+        en: '📖 See <a href="tips/revit-hatch-pattern.html">How to Make Hatch Patterns (.pat) for Revit &amp; AutoCAD</a> for detailed steps.',
+        zh: '📖 详细制作方法请参阅<a href="tips/revit-hatch-pattern.html">Revit・AutoCAD 填充图案(.pat)的制作方法</a>。'
+    },
+    'pdf-about-h2': {
+        ja: 'PDF比較ツールについて', en: 'About the PDF Compare Tool', zh: '关于 PDF 比较工具'
+    },
+    'pdf-about-p': {
+        ja: '「PDF比較ツール」は、2つの図面PDFを重ね合わせ、変更点を色分けで表示できる無料ツールです。PDFはサーバーに送信されず、すべてブラウザ内で処理されるため安全に比較できます。',
+        en: 'The PDF Compare Tool is a free tool that overlays two drawing PDFs and shows changes color-coded. PDFs are never sent to a server — everything is processed in your browser, so comparison is secure.',
+        zh: '“PDF 比较工具”是一款免费工具，可叠加两张图纸 PDF 并用颜色显示变更点。PDF 不会发送到服务器，全部在浏览器内处理，比较安全。'
+    },
+    'pdf-about-h3-can': {
+        ja: 'このツールでできること', en: 'What you can do', zh: '本工具可实现的功能'
+    },
+    'pdf-about-can1': {
+        ja: '共通部分＝グレー、旧図だけの線＝青、新図だけの線＝赤で差分を色分け表示',
+        en: 'Color-codes differences: common = gray, old-only lines = blue, new-only lines = red',
+        zh: '用颜色区分差异：共同部分＝灰、仅旧图的线＝蓝、仅新图的线＝红'
+    },
+    'pdf-about-can2': {
+        ja: '複数ページのPDFに対応し、ページごとに差分を確認',
+        en: 'Supports multi-page PDFs and lets you check differences page by page',
+        zh: '支持多页 PDF，可逐页确认差异'
+    },
+    'pdf-about-can3': {
+        ja: '結果を高解像度PDF（216／300／600dpi）でダウンロード',
+        en: 'Download the result as a high-resolution PDF (216/300/600 dpi)',
+        zh: '将结果以高分辨率 PDF（216/300/600dpi）下载'
+    },
+    'pdf-about-can4': {
+        ja: 'プレビューを拡大・ドラッグ移動して細部まで確認',
+        en: 'Zoom and drag the preview to check fine details',
+        zh: '放大并拖动预览以确认细节'
+    },
+    'pdf-about-h3-use': {
+        ja: '活用シーン', en: 'Use cases', zh: '应用场景'
+    },
+    'pdf-about-use1': {
+        ja: '改訂前後の図面でどこが変わったかを確認したいとき',
+        en: 'When you want to see what changed between drawing revisions',
+        zh: '当想确认图纸修订前后哪里发生变化时'
+    },
+    'pdf-about-use2': {
+        ja: '承認前に提出図と修正版の差分を漏れなくチェックしたいとき',
+        en: 'When you want to check every difference between submitted and revised drawings before approval',
+        zh: '当想在审批前无遗漏地检查提交图与修改版的差异时'
+    },
+    'pdf-about-use3': {
+        ja: '支給図の更新点をすばやく共有したいとき',
+        en: 'When you want to quickly share updates in issued drawings',
+        zh: '当想快速共享提供图的更新点时'
+    },
+    'pdf-about-guide': {
+        ja: '📖 詳しい使い方は<a href="tips/pdf-compare-guide.html">図面PDFを比較して差分を見つける方法</a>で解説しています。',
+        en: '📖 See <a href="tips/pdf-compare-guide.html">How to Compare Drawing PDFs and Spot the Differences</a> for detailed usage.',
+        zh: '📖 详细用法请参阅<a href="tips/pdf-compare-guide.html">比较图纸 PDF 并找出差异的方法</a>。'
+    }
+};
+
     Object.assign(translations,
         translations.tipsHatch,
         translations.tipsPdf,
         translations.tipsGrid,
         translations.tipsNav,
+        translations.toolAbout,
         translations.common,
         translations.aiMinutesPage,
         translations.sections,
