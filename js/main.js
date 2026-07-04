@@ -8413,6 +8413,11 @@ translations.tipsNav = {
         ja: '無料アドインで図枠を指定し、複数のシートをまとめて一括作成する手順。',
         en: 'Steps to create multiple sheets at once by specifying a title block, with a free add-in.',
         zh: '用免费插件指定图框，批量创建多张图纸的步骤。'
+    },
+    'tips-index-card-excel-desc': {
+        ja: '構造図PDFから梁・柱の符号・断面寸法・材質を自動抽出してExcel化する手順。',
+        en: 'Steps to auto-extract beam/column marks, section sizes, and materials from structural PDFs into Excel.',
+        zh: '从结构图 PDF 自动提取梁/柱的符号、截面尺寸、材质并生成 Excel 的步骤。'
     }
 };
 
@@ -8705,6 +8710,132 @@ translations.tipsSheet = {
     }
 };
 
+translations.tipsExcel = {
+    'tips-excel-breadcrumb-tool': { ja: 'Excel抽出ツール', en: 'Excel Extraction Tool', zh: 'Excel 提取工具' },
+    'tips-excel-breadcrumb-current': { ja: '構造図PDFをExcelに変換する方法', en: 'How to Convert Structural PDFs to Excel', zh: '将结构图 PDF 转换为 Excel 的方法' },
+    'tips-excel-title': { ja: '構造図PDFをExcelに変換する方法', en: 'How to Convert Structural Drawing PDFs to Excel', zh: '将结构图 PDF 转换为 Excel 的方法' },
+    'tips-excel-subtitle': {
+        ja: '無料ツールで梁・柱リストの符号・断面寸法・材質を自動抽出',
+        en: 'Auto-extract marks, section sizes, and materials from beam/column lists with a free tool',
+        zh: '用免费工具自动提取梁/柱列表的符号、截面尺寸、材质'
+    },
+    'tips-excel-intro': {
+        ja: '構造図の梁リスト・柱リストを見ながら、符号や断面寸法を<strong>1つずつExcelに手入力していませんか？</strong>数が多いと時間がかかるうえ、転記ミスも起きがちです。この記事では、<strong>構造図PDFから梁・柱の情報を自動抽出してExcel化する無料ツール</strong>の使い方を解説します。ブラウザ完結で、PDFは外部に送信されません。',
+        en: 'Do you <strong>type marks and section sizes into Excel one by one</strong> while looking at beam and column lists in structural drawings? With many items it takes time and transcription errors creep in. This article explains how to use a <strong>free tool that auto-extracts beam/column information from structural PDFs into Excel</strong>. It runs entirely in your browser and PDFs are never sent anywhere.',
+        zh: '你是否一边看结构图的梁列表、柱列表，一边<strong>逐个将符号和截面尺寸手动输入 Excel？</strong>数量多时既耗时又易出现转录错误。本文讲解如何使用<strong>从结构图 PDF 自动提取梁/柱信息并生成 Excel 的免费工具</strong>。完全在浏览器中运行，PDF 不会发送到外部。'
+    },
+    'tips-excel-h2-what': { ja: 'このツールでできること', en: 'What this tool can do', zh: '本工具可实现的功能' },
+    'tips-excel-what-p': {
+        ja: '構造図（基礎大梁・大梁・小梁・柱などのリスト）のPDFを読み込み、<strong>符号・断面寸法・材質</strong>を自動で抽出して、Excelの表に整理します。Revit のファミリタイプ作成など、次工程のための下ごしらえに使えます。',
+        en: 'It reads a structural drawing PDF (lists of foundation girders, girders, beams, columns, etc.) and automatically extracts <strong>marks, section sizes, and materials</strong>, organizing them into an Excel table. Useful for preparing data for next steps such as creating Revit family types.',
+        zh: '读取结构图（基础大梁、大梁、小梁、柱等列表）的 PDF，自动提取<strong>符号、截面尺寸、材质</strong>并整理成 Excel 表格。可用于为创建 Revit 族类型等后续工序做准备。'
+    },
+    'tips-excel-h2-why': { ja: '手入力が大変な理由', en: 'Why manual entry is hard', zh: '手动输入为何很麻烦' },
+    'tips-excel-why-li1': {
+        ja: '<strong>数が多い</strong>：梁・柱の符号は1つの図面でも多数あり、1件ずつの転記は時間がかかる。',
+        en: '<strong>Many items</strong>: even one drawing has many beam/column marks, and transcribing them one by one takes time.',
+        zh: '<strong>数量多</strong>：即使一张图纸也有大量梁/柱符号，逐条转录很耗时。'
+    },
+    'tips-excel-why-li2': {
+        ja: '<strong>転記ミスが起きやすい</strong>：寸法や板厚の数字を手で写すと、桁の間違いや読み違いが混入しやすい。',
+        en: '<strong>Prone to transcription errors</strong>: copying dimension and thickness numbers by hand easily introduces digit or reading mistakes.',
+        zh: '<strong>易出现转录错误</strong>：手动抄写尺寸和板厚数字容易混入位数错误或读错。'
+    },
+    'tips-excel-why-li3': {
+        ja: '<strong>形式を整える手間</strong>：後工程で使える表の形にまとめ直すのも意外と手間がかかる。',
+        en: '<strong>Effort to format</strong>: reorganizing into a table usable in later steps is surprisingly time-consuming.',
+        zh: '<strong>整理格式费工</strong>：将其重新整理成后续工序可用的表格也意外地费工。'
+    },
+    'tips-excel-h2-steps': { ja: '無料ツールでExcel化する手順', en: 'Steps to convert to Excel with the free tool', zh: '用免费工具生成 Excel 的步骤' },
+    'tips-excel-steps-p': {
+        ja: '28 Tools の<strong>Excel抽出ツール</strong>は、構造図PDFを開くだけで梁・柱の情報を読み取ります。基本の流れは次の4ステップです。',
+        en: 'The 28 Tools <strong>Excel Extraction Tool</strong> reads beam/column information just by opening a structural PDF. The basic flow is four steps:',
+        zh: '28 Tools 的 <strong>Excel 提取工具</strong>只需打开结构图 PDF 即可读取梁/柱信息。基本流程为以下 4 步：'
+    },
+    'tips-excel-step1': { ja: '<strong>PDFを開く</strong> — 構造図（梁・柱リスト）のPDFを指定', en: '<strong>Open the PDF</strong> — select the structural drawing (beam/column list) PDF', zh: '<strong>打开 PDF</strong> — 指定结构图（梁/柱列表）PDF' },
+    'tips-excel-step2': { ja: '<strong>自動抽出</strong> — 符号・断面寸法・材質などを自動で読み取り', en: '<strong>Auto-extract</strong> — marks, section sizes, materials, etc. are read automatically', zh: '<strong>自动提取</strong> — 自动读取符号、截面尺寸、材质等' },
+    'tips-excel-step3': { ja: '<strong>内容を確認・修正</strong> — 読み取り結果をチェックし、必要に応じて手直し', en: '<strong>Check and fix</strong> — review the results and correct as needed', zh: '<strong>确认并修正</strong> — 检查读取结果并按需修改' },
+    'tips-excel-step4': { ja: '<strong>Excelに出力</strong> — 整理した表をExcelファイルとして保存', en: '<strong>Export to Excel</strong> — save the organized table as an Excel file', zh: '<strong>导出到 Excel</strong> — 将整理好的表格保存为 Excel 文件' },
+    'tips-excel-cta1': { ja: '📊 Excel抽出ツールを開く（無料）', en: '📊 Open the Excel Extraction Tool (free)', zh: '📊 打开 Excel 提取工具（免费）' },
+    'tips-excel-h2-items': { ja: '抽出できる主な項目', en: 'Main items that can be extracted', zh: '可提取的主要项目' },
+    'tips-excel-it-th-item': { ja: '項目', en: 'Item', zh: '项目' },
+    'tips-excel-it-th-content': { ja: '内容', en: 'Content', zh: '内容' },
+    'tips-excel-it1-i': { ja: '符号', en: 'Mark', zh: '符号' },
+    'tips-excel-it1-c': { ja: 'G1・B1・C1 などの部材符号', en: 'Member marks such as G1, B1, C1', zh: 'G1、B1、C1 等构件符号' },
+    'tips-excel-it2-i': { ja: '断面寸法', en: 'Section size', zh: '截面尺寸' },
+    'tips-excel-it2-c': { ja: 'H形鋼の H×B×tw×tf、角形鋼管の寸法など', en: 'H×B×tw×tf for H-section steel, dimensions for square steel tubes, etc.', zh: 'H 型钢的 H×B×tw×tf、方形钢管尺寸等' },
+    'tips-excel-it3-i': { ja: '材質', en: 'Material', zh: '材质' },
+    'tips-excel-it3-c': { ja: 'SN400・SS400 などの鋼材種別', en: 'Steel grades such as SN400, SS400', zh: 'SN400、SS400 等钢材种类' },
+    'tips-excel-h2-tips': { ja: '抽出精度を上げるコツ', en: 'Tips to improve extraction accuracy', zh: '提高提取精度的技巧' },
+    'tips-excel-tip1': {
+        ja: '<strong>文字が文字として埋め込まれたPDFを使う</strong> — アウトライン化・画像化されたPDFよりも、テキストが生きているPDFの方が正確に読み取れます。',
+        en: '<strong>Use PDFs with real embedded text</strong> — PDFs where text is live read more accurately than outlined or rasterized ones.',
+        zh: '<strong>使用文字以文本形式嵌入的 PDF</strong> — 相比轮廓化或图像化的 PDF，文本有效的 PDF 读取更准确。'
+    },
+    'tips-excel-tip2': {
+        ja: '<strong>高解像度で書き出す</strong> — 低解像度・強い圧縮のPDFは文字がつぶれ、読み取り誤りの原因になります。',
+        en: '<strong>Export at high resolution</strong> — low-resolution or heavily compressed PDFs blur the text and cause misreads.',
+        zh: '<strong>以高分辨率导出</strong> — 低分辨率或强压缩的 PDF 会使文字模糊，导致读取错误。'
+    },
+    'tips-excel-tip3': {
+        ja: '<strong>出力後は必ず確認する</strong> — 自動抽出は下ごしらえです。桁数や板厚など重要な数値は目視で確認してから使ってください。',
+        en: '<strong>Always verify after export</strong> — auto-extraction is a starting point. Visually check important values like digit counts and thicknesses before use.',
+        zh: '<strong>导出后务必确认</strong> — 自动提取只是准备工作。位数、板厚等重要数值请目视确认后再使用。'
+    },
+    'tips-excel-h2-trouble': { ja: 'うまく抽出できないときは', en: 'If extraction does not work', zh: '当无法正常提取时' },
+    'tips-excel-tr-th-symptom': { ja: '症状', en: 'Symptom', zh: '症状' },
+    'tips-excel-tr-th-action': { ja: '対処', en: 'Action', zh: '处理方法' },
+    'tips-excel-tr1-s': { ja: '文字がほとんど読み取れない', en: 'Almost no text is read', zh: '几乎读取不到文字' },
+    'tips-excel-tr1-a': {
+        ja: '画像化・アウトライン化されたPDFの可能性があります。テキストが埋め込まれた高品質PDFで書き出し直してください。',
+        en: 'The PDF may be rasterized or outlined. Re-export a high-quality PDF with embedded text.',
+        zh: '该 PDF 可能是图像化或轮廓化的。请重新导出嵌入文本的高质量 PDF。'
+    },
+    'tips-excel-tr2-s': { ja: '寸法の桁がずれる', en: 'Dimension digits are off', zh: '尺寸位数出错' },
+    'tips-excel-tr2-a': {
+        ja: 'OCRの読み違いです。出力前に該当箇所を修正してください。高解像度PDFにすると改善することがあります。',
+        en: 'An OCR misread. Fix the affected cells before export. Using a higher-resolution PDF may help.',
+        zh: 'OCR 读错所致。请在导出前修正相应位置。使用更高分辨率的 PDF 可能会改善。'
+    },
+    'tips-excel-tr3-s': { ja: '一部の行が抜ける', en: 'Some rows are missing', zh: '部分行缺失' },
+    'tips-excel-tr3-a': {
+        ja: 'レイアウトが複雑な表では取りこぼしが出ることがあります。抜けた行は手入力で補ってください。',
+        en: 'Complex table layouts can cause omissions. Fill in missing rows manually.',
+        zh: '布局复杂的表格可能出现遗漏。请手动补充缺失的行。'
+    },
+    'tips-excel-h2-faq': { ja: 'よくある質問（FAQ）', en: 'Frequently Asked Questions (FAQ)', zh: '常见问题（FAQ）' },
+    'tips-excel-faq-q1': { ja: '本当に無料で使えますか？', en: 'Is it really free to use?', zh: '真的可以免费使用吗？' },
+    'tips-excel-faq-a1': { ja: 'はい、完全無料です。会員登録も不要で、ブラウザだけで完結します。', en: 'Yes, it is completely free. No sign-up is required, and everything runs in your browser.', zh: '是的，完全免费。无需注册，全部在浏览器中完成。' },
+    'tips-excel-faq-q2': { ja: 'PDFは外部にアップロードされますか？', en: 'Are the PDFs uploaded externally?', zh: 'PDF 会被上传到外部吗？' },
+    'tips-excel-faq-a2': { ja: 'いいえ。抽出処理はすべてブラウザ内で行われ、PDFがサーバーに送信されることはありません。', en: 'No. All extraction happens in your browser; PDFs are never sent to any server.', zh: '不会。提取处理全部在浏览器中进行，PDF 不会发送到任何服务器。' },
+    'tips-excel-faq-q3': { ja: 'どんな項目を抽出できますか？', en: 'What items can be extracted?', zh: '可以提取哪些项目？' },
+    'tips-excel-faq-a3': { ja: '梁・柱の符号、断面寸法、材質などを抽出してExcelに整理します。', en: 'It extracts beam/column marks, section sizes, materials, and more, organized into Excel.', zh: '提取梁/柱的符号、截面尺寸、材质等并整理到 Excel。' },
+    'tips-excel-faq-q4': { ja: '抽出結果は必ず正確ですか？', en: 'Are the results always accurate?', zh: '提取结果一定准确吗？' },
+    'tips-excel-faq-a4': { ja: 'OCRを利用するため、PDFの品質によっては読み取り誤りが出ることがあります。出力前に内容を確認・修正してご利用ください。', en: 'Because it uses OCR, misreads can occur depending on PDF quality. Please review and correct the content before export.', zh: '由于使用 OCR，视 PDF 质量可能出现读取错误。请在导出前确认并修正内容。' },
+    'tips-excel-h2-summary': { ja: 'まとめ・関連リンク', en: 'Summary & related links', zh: '总结・相关链接' },
+    'tips-excel-summary-p': {
+        ja: '構造図PDFのExcel化は、無料ツールを使えばPDFを開くだけで梁・柱の符号・断面寸法・材質を自動抽出できます。手入力の転記ミスを減らし、次工程の下ごしらえを効率化できます。OCRの特性上、出力前の確認だけは忘れずに行ってください。',
+        en: 'With a free tool, converting structural PDFs to Excel auto-extracts beam/column marks, section sizes, and materials just by opening the PDF. It reduces manual transcription errors and streamlines prep for the next step. Given OCR characteristics, just be sure to verify before export.',
+        zh: '使用免费工具，将结构图 PDF 生成 Excel 只需打开 PDF 即可自动提取梁/柱的符号、截面尺寸、材质。可减少手动转录错误，提升后续工序准备的效率。鉴于 OCR 特性，请务必在导出前进行确认。'
+    },
+    'tips-excel-related1': {
+        ja: '<a href="../pdf-to-excel/web/">Excel抽出ツール</a> — 構造図PDFから梁・柱リストを自動抽出',
+        en: '<a href="../pdf-to-excel/web/">Excel Extraction Tool</a> — auto-extract beam/column lists from structural PDFs',
+        zh: '<a href="../pdf-to-excel/web/">Excel 提取工具</a> — 从结构图 PDF 自动提取梁/柱列表'
+    },
+    'tips-excel-related2': {
+        ja: '<a href="../pdf_compare.html">PDF比較ツール</a> — 図面PDFの差分を色分けで比較',
+        en: '<a href="../pdf_compare.html">PDF Compare Tool</a> — compare drawing PDFs with color-coded differences',
+        zh: '<a href="../pdf_compare.html">PDF 比较工具</a> — 用颜色区分比较图纸 PDF 的差异'
+    },
+    'tips-excel-related3': {
+        ja: '<a href="../addins.html">Revit アドイン（無料）</a> — 作図を効率化する 28 Tools のアドイン',
+        en: '<a href="../addins.html">Revit Add-ins (free)</a> — 28 Tools add-ins that speed up drafting',
+        zh: '<a href="../addins.html">Revit 插件（免费）</a> — 提升绘图效率的 28 Tools 插件'
+    },
+    'tips-excel-cta2': { ja: '📊 いますぐ構造図PDFをExcel化する（無料）', en: '📊 Convert a structural PDF to Excel now (free)', zh: '📊 立即将结构图 PDF 生成 Excel（免费）' }
+};
+
     Object.assign(translations,
         translations.tipsHatch,
         translations.tipsPdf,
@@ -8712,6 +8843,7 @@ translations.tipsSheet = {
         translations.tipsNav,
         translations.toolAbout,
         translations.tipsSheet,
+        translations.tipsExcel,
         translations.common,
         translations.aiMinutesPage,
         translations.sections,
