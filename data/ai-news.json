@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T04:42:38.314363",
+  "lastUpdated": "2026-07-04T04:36:10.895884",
   "articles": [
     {
       "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
@@ -101,17 +101,6 @@
       "language": "en"
     },
     {
-      "title": "Noetraと産総研、NEDO「AIロボット・フィジカルAIを見据えたマルチモーダル基盤モデル開発事業」に採択",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/noetra-aist-project-nedo-adoption/",
-      "description": "Noetraと産総研が提案した「実世界ネイティブに資するフィジカルAI基盤技術の研究開発」が、NEDOの「AIロボット・フィジカルAIを見据えたマルチモーダル基盤モデル開発事業」の公募に採択されました。 このニュースのポ [...] The post Noetraと産総研、NEDO「AIロボット・フィジカルAIを見据えたマルチモーダル基盤モデル開発事業」に採択 first appeared on ...",
-      "publishedDate": "Wed, 01 Jul 2026 09:06:28 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/noetraeye3.png",
-      "language": "ja"
-    },
-    {
       "title": "Nano Banana 2 Liteとは？Googleの最速・最安画像生成AIの特徴・料金・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/nano-banana-2-lite/",
@@ -131,17 +120,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Sonnet-5-1-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Sonnet 5とは？性能・料金・Sonnet 4.6との違いを徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-sonnet-5/",
-      "description": "Anthropicは2026年6月30日（現地時間）、AIモデル「Claude Sonnet 5」を発表しました。同社は本モデルを「これまでで最もエージェント的なSonnet」と位置づけており、上位モデル「Claude [...] The post Claude Sonnet 5とは？性能・料金・Sonnet 4.6との違いを徹底解説 first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Wed, 01 Jul 2026 05:17:39 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/claude-sonnet-5_ic.webp",
       "language": "ja"
     },
     {
@@ -189,17 +167,6 @@
       "language": "en"
     },
     {
-      "title": "Roundtables: Longevity’s Next Frontier: “Reprogramming” Your Body",
-      "titleJa": "ラウンドテーブル: 長寿の次のフロンティア: 身体の「再プログラミング」",
-      "link": "https://www.technologyreview.com/2026/06/30/1139958/roundtables-longevitys-next-frontier-reprogramming-your-body/",
-      "description": "Listen to the session or watch below Billions of dollars are flooding into efforts to reverse aging as scientists explore ways to return cells to a younger state. But how far off are these experimenta...",
-      "publishedDate": "Tue, 30 Jun 2026 17:36:48 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/thumbnail-Test.png?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "Why Specialization Is Inevitable",
       "titleJa": "なぜ専門化が避けられないのか",
       "link": "https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable",
@@ -209,39 +176,6 @@
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/69d815b52c6db28cfdfdd422/Av4v9_l94sEUj-etRFOLb.png",
       "language": "en"
-    },
-    {
-      "title": "The Download: AI “coworkers” and stratospheric internet",
-      "titleJa": "ダウンロード: AI の「同僚」と成層圏のインターネット",
-      "link": "https://www.technologyreview.com/2026/06/30/1139954/the-download-ai-agents-coworkers-solar-powered-internet/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. AI agents are not your “coworkers” Imagine coming ...",
-      "publishedDate": "Tue, 30 Jun 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/02/GettyImages-183068979.jpeg?w=3000",
-      "language": "en"
-    },
-    {
-      "title": "Agriculture is ready for AI, but its data isn’t",
-      "titleJa": "農業は AI に対応する準備ができていますが、そのデータはまだ準備ができていません",
-      "link": "https://www.technologyreview.com/2026/06/30/1139513/agriculture-is-ready-for-ai-but-its-data-isnt/",
-      "description": "Artificial intelligence is transforming what is possible in agriculture, but industry leaders should be wary of investing in AI without first laying the groundwork.&#160; The use cases are promising, ...",
-      "publishedDate": "Tue, 30 Jun 2026 12:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/Reltio-iStock-2279127589.jpg?w=2309",
-      "language": "en"
-    },
-    {
-      "title": "Google Colaboratoryとは？インストール不要で使えるPython実行ツールを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/google-colaboratory/",
-      "description": "プログラミングや機械学習を始めたいと思っても、Pythonの環境構築や高性能PCの準備でつまずく方は少なくありません。Google Colaboratory（グーグル コラボラトリー）なら、ブラウザ上でPythonを実行 [...]...",
-      "publishedDate": "Tue, 30 Jun 2026 10:23:44 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/google-colaboratory_2606-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "How ChatGPT adoption has expanded",
@@ -398,6 +332,39 @@
       "language": "en"
     },
     {
+      "title": "MosaicLeaks: Can your research agent keep a secret?",
+      "titleJa": "MosaicLeaks: あなたの研究エージェントは秘密を守ることができますか?",
+      "link": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
+      "description": "...",
+      "publishedDate": "Thu, 18 Jun 2026 18:13:13 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/680ba1729f7688275d2ce0f4/hGCO4pOyJjijLPCbRT07v.webp",
+      "language": "en"
+    },
+    {
+      "title": "Beyond LoRA: Can you beat the most popular fine-tuning technique?",
+      "titleJa": "LoRA を超えて: 最も人気のある微調整テクニックに勝つことができますか?",
+      "link": "https://huggingface.co/blog/peft-beyond-lora",
+      "description": "...",
+      "publishedDate": "Thu, 18 Jun 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/peft-beyond-lora/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+      "titleJa": "エージェントとしては十分ですか？独自のツールでオープンモデルのベンチマークを行う",
+      "link": "https://huggingface.co/blog/is-it-agentic-enough",
+      "description": "...",
+      "publishedDate": "Thu, 18 Jun 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/is-it-agentic-enough/thumbnail.png",
+      "language": "en"
+    },
+    {
       "title": "【AI運用フェーズ】導入後が本当の勝負！成功に導くポイントと全体プロセスを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/ai-operations-phase/",
@@ -475,28 +442,6 @@
       "language": "ja"
     },
     {
-      "title": "ADAS（先進運転支援システム）とは？自動運転との違いや機能・義務化の流れまでわかりやすく解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/adas-automatic-brake-driver/",
-      "description": "新型車のカタログや自動車のニュースで「ADAS」という言葉を目にする機会が増えています。読み方や意味がわからないまま、なんとなく「安全に関する装備らしい」と受け止めている方も多いのではないでしょうか。 ADASは、自動ブ [...] The post ADAS（先進運転支援システム）とは？自動運転との違いや機能・義務化の流れまでわかりやすく解説 first appeared on AIポータルメデ...",
-      "publishedDate": "Thu, 02 Jul 2026 01:33:38 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/adas.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "アイスマイリー、7/8（水）から3日間「バックオフィス World 2026 夏 東京」に出展　ブース予約でAmazonギフト1,500円分プレゼント！",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/back-office-world-2026-summer-tokyo/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年7月8日（水）～10日（金）に東京ビッグサイトにて開催される「バックオフィス World 2026 夏 東京」にブース出展 [...] The post アイスマイリー、7/8（水）から3日間「バックオフィス World 2026 夏 東京」に出展 ブース予約でAmazonギフト1,500円分プレゼン...",
-      "publishedDate": "Thu, 02 Jul 2026 01:00:41 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/OGP_EXPO27_BK.jpg",
-      "language": "ja"
-    },
-    {
       "title": "Voice Agent Builderとは？xAIのノーコードで音声AIエージェントを作れるプラットフォームの使い方・料金を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/voice-agent-builder/",
@@ -505,6 +450,61 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Voice-Agent-Builder-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AIエージェントおすすめサービス9選を厳選解説！選び方もわかりやすく解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/recommended-ai-agents/",
+      "description": "近年、多くの企業が業務効率化や生産性向上を目的にAI活用を進めています。その中でも特に注目を集めているのが「AIエージェント」です。 しかし、「AIエージェントとは何か？」「ChatGPTとは何が違うのか？」「実際にどの [...]...",
+      "publishedDate": "Fri, 03 Jul 2026 12:14:29 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-contract-development_2606-1-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ソフトバンク、株主総会で新AI戦略を発表。次世代社会インフラ構築でAIの社会実装を推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/softbank-40th-general-meeting-ai/",
+      "description": "ソフトバンクは、第40回定時株主総会でAIの社会実装を推進する新たな成長戦略を発表しました。AIサーバー製造事業への参入やNeoクラウド事業の展開を通じ、次世代の社会インフラ構築を加速させる方針です。 このニュースのポイ [...] The post ソフトバンク、株主総会で新AI戦略を発表。次世代社会インフラ構築でAIの社会実装を推進 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Fri, 03 Jul 2026 08:07:50 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/softbank-40th-general-meeting-ai-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "Anthropic、米政府の輸出規制解除により「Fable 5」と「Mythos 5」の提供を再開",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/anthropic-fable-5-mythos-5-resume/",
+      "description": "Anthropicは、米政府による輸出規制の解除を受け、AIモデル「Fable 5」と「Mythos 5」の提供を再開しました。 このニュースのポイント Anthropicが米政府による輸出規制の解除を受け、「Fable [...] The post Anthropic、米政府の輸出規制解除により「Fable 5」と「Mythos 5」の提供を再開 first appeared on AIポータル...",
+      "publishedDate": "Fri, 03 Jul 2026 08:02:31 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/Redeploying-Fable-5.png",
+      "language": "ja"
+    },
+    {
+      "title": "静岡県藤枝市、全国初となる国産生成AIの公共活用実証実施。ソフトバンクと共同で窓口対応での有用性検証",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/fujieda-city-softbank-ai-demo/",
+      "description": "藤枝市は、国産生成AIの公共部門での活用について、ソフトバンクと共同で実証事業を実施することを発表しました。両者はプロジェクト協定を締結し、9月より実証を開始する予定です。 このニュースのポイント 藤枝市とソフトバンクが [...] The post 静岡県藤枝市、全国初となる国産生成AIの公共活用実証実施。ソフトバンクと共同で窓口対応での有用性検証 first appeared on AIポータ...",
+      "publishedDate": "Fri, 03 Jul 2026 07:55:27 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/fujiedacitysbeye.png",
+      "language": "ja"
+    },
+    {
+      "title": "ヒューマンリソシア、派遣スタッフへの生成AI研修開始。全3回の実践型オリジナル研修",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/human-resocia-ai-original-training/",
+      "description": "ヒューマンリソシアは、事務派遣スタッフ向けの生成AI活用スキル習得を支援するオリジナル研修「Gen-Pro Light（ジェンプロ ライト）」の提供を開始しました。 このニュースのポイント ヒューマンリソシアが、派遣スタ [...] The post ヒューマンリソシア、派遣スタッフへの生成AI研修開始。全3回の実践型オリジナル研修 first appeared on AIポータルメディアAIsm...",
+      "publishedDate": "Fri, 03 Jul 2026 07:55:08 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/humanresocia-Gen-Pro-Light.png",
       "language": "ja"
     },
     {
