@@ -1,6 +1,16 @@
 {
-  "lastUpdated": "2026-07-04T02:03:55.371818",
+  "lastUpdated": "2026-07-05T02:10:08.170194",
   "articles": [
+    {
+      "title": "竹中工務店参画のツミカサネ、小径木再生の合板ブランド「NOITA」決定し木曽で稼働へ",
+      "link": "https://news.build-app.jp/article/41374/",
+      "description": "長野県の木曽地域で、これまで使い道が限られていた細い木材を生かす取り組みが進められています。株式会社竹中工務店が参画する株式会社ツミカサネと......",
+      "publishedDate": "Wed, 01 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/02/33863440_m-130x95.jpg",
+      "language": "ja"
+    },
     {
       "title": "日本でFable 5が復活｜停止から再開までを解説",
       "link": "https://axconstdx.com/2026/07/02/%e6%97%a5%e6%9c%ac%e3%81%a7fable-5%e3%81%8c%e5%be%a9%e6%b4%bb%ef%bd%9c%e5%81%9c%e6%ad%a2%e3%81%8b%e3%82%89%e5%86%8d%e9%96%8b%e3%81%be%e3%81%a7%e3%82%92%e8%a7%a3%e8%aa%ac/?utm_source=rss&utm_medium=rss&utm_campaign=%25e6%2597%25a5%25e6%259c%25ac%25e3%2581%25a7fable-5%25e3%2581%258c%25e5%25be%25a9%25e6%25b4%25bb%25ef%25bd%259c%25e5%2581%259c%25e6%25ad%25a2%25e3%2581%258b%25e3%2582%2589%25e5%2586%258d%25e9%2596%258b%25e3%2581%25be%25e3%2581%25a7%25e3%2582%2592%25e8%25a7%25a3%25e8%25aa%25ac",
@@ -32,16 +42,6 @@
       "language": "ja"
     },
     {
-      "title": "GeneXusから生成AIへ──セゾンが「内製化」を捨てなかった理由",
-      "link": "https://axconstdx.com/2026/06/30/genexus%e3%81%8b%e3%82%89%e7%94%9f%e6%88%90ai%e3%81%b8%e2%94%80%e2%94%80%e3%82%bb%e3%82%be%e3%83%b3%e3%81%8c%e3%80%8c%e5%86%85%e8%a3%bd%e5%8c%96%e3%80%8d%e3%82%92%e6%8d%a8%e3%81%a6%e3%81%aa%e3%81%8b/?utm_source=rss&utm_medium=rss&utm_campaign=genexus%25e3%2581%258b%25e3%2582%2589%25e7%2594%259f%25e6%2588%2590ai%25e3%2581%25b8%25e2%2594%2580%25e2%2594%2580%25e3%2582%25bb%25e3%2582%25be%25e3%2583%25b3%25e3%2581%258c%25e3%2580%258c%25e5%2586%2585%25e8%25a3%25bd%25e5%258c%2596%25e3%2580%258d%25e3%2582%2592%25e6%258d%25a8%25e3%2581%25a6%25e3%2581%25aa%25e3%2581%258b",
-      "description": "AIを導入したのに、なぜか現場に根づかない。そんな焦りを感じていませんか。じつはその差を分けるのは、技術力ではなく、たった一つの古い習慣だったのです。30年にわたり内製にこだわってきたセゾングループの歩みをたどれば、自社 [...] <p>The post GeneXusから生成AIへ──セゾンが「内製化」を捨てなかった理由 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Tue, 30 Jun 2026 02:36:52 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/wp_eyecatch_1200x630_under100kb-10-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "Claude Fable 5が突然Opusに変わる本当の理由",
       "link": "https://axconstdx.com/2026/07/03/claude-fable-5%e3%81%8c%e7%aa%81%e7%84%b6opus%e3%81%ab%e5%a4%89%e3%82%8f%e3%82%8b%e6%9c%ac%e5%bd%93%e3%81%ae%e7%90%86%e7%94%b1/?utm_source=rss&utm_medium=rss&utm_campaign=claude-fable-5%25e3%2581%258c%25e7%25aa%2581%25e7%2584%25b6opus%25e3%2581%25ab%25e5%25a4%2589%25e3%2582%258f%25e3%2582%258b%25e6%259c%25ac%25e5%25bd%2593%25e3%2581%25ae%25e7%2590%2586%25e7%2594%25b1",
       "description": "気づけば会話の途中で「モデルが切り替わりました」と表示され、心当たりもなく戸惑った経験はありませんか。実はそこには、AIの強すぎる力を安全に使いこなすための、きちんとした理由が確かに隠されているのです。仕組みさえ理解して [...] <p>The post Claude Fable 5が突然Opusに変わる本当の理由 first appeared on 生成AIと建設DX.</p>...",
@@ -49,6 +49,56 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大成建設、CO2収支マイナスコンクリート活用の天然石材調内装材を開発し什器に適用",
+      "link": "https://news.build-app.jp/article/41376/",
+      "description": "大成建設株式会社は、製造の過程でCO2を固定し、CO2収支をマイナスにできる特殊なコンクリート技術を使い、天然石のような風合いを持つ新しい建......",
+      "publishedDate": "Thu, 02 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/04/23398670_m-130x98.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大和ハウス工業、札幌新さっぽろ駅周辺の複合開発が都市計画学会賞計画設計賞受賞",
+      "link": "https://news.build-app.jp/article/41395/",
+      "description": "札幌市厚別区で進められてきた大規模な街づくりが、専門家の間で高く評価されました。大和ハウス工業株式会社（本社：大阪市、社長：大友浩嗣氏）は、......",
+      "publishedDate": "Thu, 02 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/07/image-130x87.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "DfMAシンポジウムvol.2 －リア・ローディングからの脱却－_開催レポート【第6回】| 前田建設工業株式会社 建築生産技術部 担当部長 曽根巨充、東京電機大学教授 小笠原正豊、株式会社ヴィック 代表取締役社長 渡辺健児",
+      "link": "https://news.build-app.jp/article/41228/",
+      "description": "人手不足や時間外労働規制を背景に、日本の建設産業では、現場に負荷が集中する従来のリア・ローディング型のプロセスからの転換が求められています。......",
+      "publishedDate": "Thu, 02 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/d32509507023adc0a66081f8c465276a-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新】ヒヤリハット事例20選｜ネタ切れしない見つけ方・報告書の書き方まで解説",
+      "link": "https://news.build-app.jp/article/41364/",
+      "description": "「毎月ヒヤリハットを提出しているけれど、ネタ切れしてしまう」「どこまで報告すべきなのか判断に迷う」と悩んでいないでしょうか。 ヒヤリハットは......",
+      "publishedDate": "Thu, 02 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/f8b23e67a33ee6dfadccfbd17a1226e1-1-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "大和ハウス工業など6社、千葉市西千葉に約12,000㎡の広場開業、2027年春のまちびらきへ",
+      "link": "https://news.build-app.jp/article/41397/",
+      "description": "千葉市稲毛区の千葉大学西千葉キャンパス跡地で進められている大規模まちづくり事業において、新たな広場が姿を現しました。 2026年7月1日、約......",
+      "publishedDate": "Thu, 02 Jul 2026 05:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/nishichiba-campus-park-130x91.jpg",
       "language": "ja"
     },
     {
@@ -72,13 +122,53 @@
       "language": "ja"
     },
     {
-      "title": "ARES Trinityとは？図面遅延ゼロへ導く三位一体CAD術",
-      "link": "https://axconstdx.com/2026/06/29/ares-trinity%e3%81%a8%e3%81%af%ef%bc%9f%e5%9b%b3%e9%9d%a2%e9%81%85%e5%bb%b6%e3%82%bc%e3%83%ad%e3%81%b8%e5%b0%8e%e3%81%8f%e4%b8%89%e4%bd%8d%e4%b8%80%e4%bd%93cad%e8%a1%93/?utm_source=rss&utm_medium=rss&utm_campaign=ares-trinity%25e3%2581%25a8%25e3%2581%25af%25ef%25bc%259f%25e5%259b%25b3%25e9%259d%25a2%25e9%2581%2585%25e5%25bb%25b6%25e3%2582%25bc%25e3%2583%25ad%25e3%2581%25b8%25e5%25b0%258e%25e3%2581%258f%25e4%25b8%2589%25e4%25bd%258d%25e4%25b8%2580%25e4%25bd%2593cad%25e8%25a1%2593",
-      "description": "その図面、本当に最新でしょうか。建設プロジェクトが重なるほど、現場とオフィスの認識のずれは見えないところで広がっていきます。デスクトップとクラウドとモバイルを一つに束ねるCADプラットフォーム「ARES Trinity」 [...] <p>The post ARES Trinityとは？図面遅延ゼロへ導く三位一体CAD術 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Mon, 29 Jun 2026 11:11:13 +0000",
+      "title": "CORDER、積算特化のAIプラットフォームをリリースし見積精度向上と原価最適化を支援",
+      "link": "https://news.build-app.jp/article/41349/",
+      "description": "東京都渋谷区に本社を置く株式会社CORDER（代表取締役：田邊健人氏）は2026年7月1日、建設業の収益性を大きく左右する積算業務に特化した......",
+      "publishedDate": "Thu, 02 Jul 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/corder-sekisan-ai-platform-130x72.png",
+      "language": "ja"
+    },
+    {
+      "title": "図面遅延ゼロへ、いまARES CADが選ばれる3つの理由",
+      "link": "https://axconstdx.com/2026/07/05/%e5%9b%b3%e9%9d%a2%e9%81%85%e5%bb%b6%e3%82%bc%e3%83%ad%e3%81%b8%e3%80%81%e3%81%84%e3%81%beares-cad%e3%81%8c%e9%81%b8%e3%81%b0%e3%82%8c%e3%82%8b3%e3%81%a4%e3%81%ae%e7%90%86%e7%94%b1/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%259b%25b3%25e9%259d%25a2%25e9%2581%2585%25e5%25bb%25b6%25e3%2582%25bc%25e3%2583%25ad%25e3%2581%25b8%25e3%2580%2581%25e3%2581%2584%25e3%2581%25beares-cad%25e3%2581%258c%25e9%2581%25b8%25e3%2581%25b0%25e3%2582%258c%25e3%2582%258b3%25e3%2581%25a4%25e3%2581%25ae%25e7%2590%2586%25e7%2594%25b1",
+      "description": "AutoCADの高額なライセンスと、現場・設計間の図面ズレに悩む企業は多くあります。この課題を根本から解決するCADが「ARES CAD」です。本記事では、乗り換え判断から導入ステップまで、必要なすべてを解説します。 は [...] <p>The post 図面遅延ゼロへ、いまARES CADが選ばれる3つの理由 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sat, 04 Jul 2026 19:09:26 +0000",
       "source": "生成AIと建設DX",
       "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/06/ares_trinity_1200x630_under100kb-1024x538.jpg",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100kb-1-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Robert Graebert氏が明かす、ARES CADの真価",
+      "link": "https://axconstdx.com/2026/07/04/robert-graebert%e6%b0%8f%e3%81%8c%e6%98%8e%e3%81%8b%e3%81%99%e3%80%81ares-cad%e3%81%ae%e7%9c%9f%e4%be%a1/?utm_source=rss&utm_medium=rss&utm_campaign=robert-graebert%25e6%25b0%258f%25e3%2581%258c%25e6%2598%258e%25e3%2581%258b%25e3%2581%2599%25e3%2580%2581ares-cad%25e3%2581%25ae%25e7%259c%259f%25e4%25be%25a1",
+      "description": "BIMやCADをどう使えばいいのか、迷っていませんか。本記事では、ARES CADを率いるRobert Graebert氏への取材をもとにお届けします。クラウドやAIがCADの役割をどう変えるのか、老朽ビルの改修が抱える [...] <p>The post Robert Graebert氏が明かす、ARES CADの真価 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sat, 04 Jul 2026 09:59:45 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/ares_cad_eyecatch_1200x630_under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大成建設、子ども向け技術体験イベントに出展し災害復旧支援車両と月面居住VRを展示",
+      "link": "https://news.build-app.jp/article/41378/",
+      "description": "子どもたちが社会を支える技術や仕事に触れられる体験型イベントが、神奈川県相模原市で開催されました。大成建設（社長：相川善郎）は、東海旅客鉄道......",
+      "publishedDate": "Fri, 03 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/11/AdobeStock_89916155-130x87.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、4月の建設工事受注高を公表、総額10兆9,966億円で前年比7.4％増",
+      "link": "https://news.build-app.jp/article/41386/",
+      "description": "国土交通省が公表した最新の建設工事受注動態統計調査によると、令和8年4月の建設工事受注高は10兆9,966億円となりました。前の月は減少して......",
+      "publishedDate": "Fri, 03 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/image-15-130x53.jpg",
       "language": "ja"
     },
     {
@@ -99,6 +189,16 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/ares_cad_automation_1200x630_under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "三菱商事、鉄筋ミルシート電子管理システム「Mill-Box」の建設現場導入が200現場を突破",
+      "link": "https://news.build-app.jp/article/41412/",
+      "description": "三菱商事株式会社のマテリアルソリューショングループ産業素材DXチームは、クラウド型のミルシート電子管理システム「Mill-Box（ミルボック......",
+      "publishedDate": "Fri, 03 Jul 2026 00:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/mill_box_200_sites-130x98.webp",
       "language": "ja"
     }
   ]
