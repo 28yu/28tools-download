@@ -208,22 +208,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Tips: 通り芯・レベルの符号を一括切替 -->
-  <url>
-    <loc>https://28tools.com/tips/revit-grid-bubble.html</loc>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Tips: シートを一括作成する方法 -->
-  <url>
-    <loc>https://28tools.com/tips/revit-sheet-creation.html</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
   <!-- Tips: 構造図PDFをExcelに変換する方法 -->
   <url>
     <loc>https://28tools.com/tips/pdf-to-excel-guide.html</loc>
