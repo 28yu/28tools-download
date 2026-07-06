@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-05T04:57:56.689757",
+  "lastUpdated": "2026-07-06T05:13:09.689566",
   "articles": [
     {
       "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
@@ -58,7 +58,7 @@
     },
     {
       "title": "The latest AI news we announced in June 2026",
-      "titleJa": "2026年6月に発表したAI最新ニュース",
+      "titleJa": "2026 年 6 月に発表された AI の最新ニュース",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
       "description": "June Pixel Drop hero...",
       "publishedDate": "Wed, 01 Jul 2026 18:15:00 +0000",
@@ -132,17 +132,6 @@
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/cerebras-gemma4-voice-ai/thumbnail.png",
       "language": "en"
-    },
-    {
-      "title": "AI開発フェーズとは？全体プロセス・費用・スケジュール・失敗しない進め方を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/ai-development-phase/",
-      "description": "AI活用への関心が高まる中、「AI開発に挑戦したいが、何から始めればいいかわからない」という声が多く聞かれるようになりました。AI開発は、一般的なシステム開発とは異なる反復型のプロセスです。業務課題の定義・データ収集・モ [...]...",
-      "publishedDate": "Tue, 30 Jun 2026 23:04:30 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/ai-introduction_2606-1-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "Claude Science is Anthropic’s newest flagship product",
@@ -256,7 +245,7 @@
     },
     {
       "title": "Helping build shared standards for advanced AI",
-      "titleJa": "高度な AI の共通標準の構築を支援",
+      "titleJa": "高度な AI の共有標準の構築を支援",
       "link": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
       "description": "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation....",
       "publishedDate": "Tue, 23 Jun 2026 13:00:00 GMT",
@@ -354,14 +343,14 @@
       "language": "en"
     },
     {
-      "title": "Is it agentic enough? Benchmarking open models on your own tooling",
-      "titleJa": "エージェントとしては十分ですか？独自のツールでオープンモデルのベンチマークを行う",
-      "link": "https://huggingface.co/blog/is-it-agentic-enough",
-      "description": "...",
-      "publishedDate": "Thu, 18 Jun 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/is-it-agentic-enough/thumbnail.png",
+      "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
+      "titleJa": "バージニア州における当社の新たなコミュニティへの投資は、地元の雇用をサポートし、エネルギーの手頃な価格を拡大します。",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
+      "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
+      "publishedDate": "Thu, 11 Jun 2026 20:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -409,17 +398,6 @@
       "language": "ja"
     },
     {
-      "title": "OpenAI、初の独自設計AIチップ「Jalapeño」を発表。Broadcomとの共同開発基盤の第1弾",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-broadcom-jalapeno/",
-      "description": "OpenAIは、Broadcomと共同開発した独自設計AIチップ「Jalapeño」を発表しました。LLMの推論に特化してゼロから設計されたアクセラレーターであり、両社が複数世代にわたり共同開発する計算基盤の第1弾となり [...] The post OpenAI、初の独自設計AIチップ「Jalapeño」を発表。Broadcomとの共同開発基盤の第1弾 first appeared on AIポ...",
-      "publishedDate": "Thu, 02 Jul 2026 06:47:08 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/OpenAI-Broadcom-Jalapeno.png",
-      "language": "ja"
-    },
-    {
       "title": "Gemini Omni Flashとは？Googleの動画生成・編集AIモデルの特徴・料金・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/gemini-omni-flash/",
@@ -431,17 +409,6 @@
       "language": "ja"
     },
     {
-      "title": "自動運転レベルとは？0〜5の定義・対応車種・実用化へのロードマップをわかりやすく解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/autonomous-driving-level/",
-      "description": "「自動運転にはレベルがあると聞くけれど、結局どこまで自動なのかわからない」「自分が乗っている車や、気になっている車種はどのレベルなのか知りたい」。そう感じている方は少なくありません。 自動運転レベルとは、運転のどこまでを [...] The post 自動運転レベルとは？0〜5の定義・対応車種・実用化へのロードマップをわかりやすく解説 first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Thu, 02 Jul 2026 01:43:03 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/autonomousdrivinglevel.jpg",
-      "language": "ja"
-    },
-    {
       "title": "Voice Agent Builderとは？xAIのノーコードで音声AIエージェントを作れるプラットフォームの使い方・料金を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/voice-agent-builder/",
@@ -450,6 +417,39 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Voice-Agent-Builder-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【ZCode】GLM-5.2搭載のAIコーディング環境！使い方・料金・活用シーンを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/zcode/",
+      "description": "2026年7月2日、中国のAI企業Z.ai（旧Zhipu AI）はAIコーディング環境「ZCode」を公開しました！ ZCodeは、同社のフラッグシップモデルGLM-5.2を中核に据え、コードの計画・実装・レビュー・デプ [...]...",
+      "publishedDate": "Sun, 05 Jul 2026 06:54:43 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_ZCode-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTよりすごいAIおすすめ比較！無料で使える類似サービス一覧",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-compare-other-services-free/",
+      "description": "「ChatGPTの文章はなんだか機械っぽい」「最新のニュースについて聞いても答えてくれない」と不満を感じていませんか？実は今、ChatGPTのような汎用的なAIだけでなく「長文の執筆」や「最新情報のリサーチ」「スライド作 [...] The post ChatGPTよりすごいAIおすすめ比較！無料で使える類似サービス一覧 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 06 Jul 2026 01:49:32 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/compareotherservices.png",
+      "language": "ja"
+    },
+    {
+      "title": "Gemini 3.5 Flashとは？性能・料金・APIの使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/gemini-3-5-flash-2026/",
+      "description": "Googleが2026年5月に発表した「Gemini 3.5 Flash」は、従来のFlashモデルの常識を覆す存在として注目されています。 本記事では性能・料金・使い方を整理し、一般ユーザーから開発者まで、それぞれの活 [...] The post Gemini 3.5 Flashとは？性能・料金・APIの使い方を徹底解説 first appeared on AIポータルメディアAIsmiley...",
+      "publishedDate": "Mon, 06 Jul 2026 01:21:07 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gemini35flashic.webp",
       "language": "ja"
     },
     {
@@ -549,6 +549,28 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/lumada.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "プログラミングのためのBGMや環境音など。仕事や勉強の邪魔にならない無料で使えそうな音源集。2026年版",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/bgm2026.html",
+      "description": "在宅で仕事や勉強をしている時間が増えてくると、ずっと無音だと寂しい気がして、できれば仕事の邪魔にならないBGMや環境音があるといいなあ、と思ったことはありませんか？ 今年も、そうした音源を独自にピックアップした記事の2026年版を紹介しまし......",
+      "publishedDate": "2026-07-05T15:52:01Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/bgm4programming2026.png",
+      "language": "ja"
+    },
+    {
+      "title": "ブロードコムによるVMware製品抱き合わせ販売疑惑、独占禁止法違反と認定されず。公正取引委員会が調査を終了",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/vmware_9.html",
+      "description": "公正取引委員会は、ブロードコムに対する独占禁止法違反の調査を、違反に認定するに足る事実が認められなかったとして終了すると発表しました。 VMware製品、ライセンス変更により事実上の大幅値上げ ブロードコムは2023年にVMwareを買収。......",
+      "publishedDate": "2026-07-05T15:11:34Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/broadcom-vmware-antitrust01.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/awsfinopsagent-pv01.png",
-      "language": "ja"
-    },
-    {
-      "title": "GitLab、AIエージェント向けの次世代Git互換ソースコード管理サービス「Project Switch」発表。最大で50倍高速かつ半分のトークンで利用可能に",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/gitlabaigitproject_switch50.html",
-      "description": "GitLabは6月10日にロンドンで開催したイベント「GitLab Transcend」で、AIエージェント向けの次世代Git互換ソースコード管理サービス「Project Switch」を発表しました。 GitLabやGitHubが提供する......",
-      "publishedDate": "2026-06-16T18:05:15Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/gitlab-nextgen-switch01.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Stack Overflow、AIエージェント同士が掲示板で技術情報を共有する「Stack Overflow for Agents」ベータ公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/stack_overflowaistack_overflow_for_agents.html",
-      "description": "Stack Overflowは、AIエージェント同士がオープンな掲示板の上で技術的な解決策などの情報を共有する新サービス「Stack Overflow for Agents」をベータ版として提供開始したことを明らかにしました。 What i......",
-      "publishedDate": "2026-06-15T15:46:43Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HKdu4sUXYAISq51.jpg",
       "language": "ja"
     }
   ]
