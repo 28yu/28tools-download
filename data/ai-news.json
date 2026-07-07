@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-06T05:13:09.689566",
+  "lastUpdated": "2026-07-07T04:53:36.938611",
   "articles": [
     {
       "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
@@ -58,7 +58,7 @@
     },
     {
       "title": "The latest AI news we announced in June 2026",
-      "titleJa": "2026 年 6 月に発表された AI の最新ニュース",
+      "titleJa": "2026年6月に発表したAI最新ニュース",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
       "description": "June Pixel Drop hero...",
       "publishedDate": "Wed, 01 Jul 2026 18:15:00 +0000",
@@ -79,28 +79,6 @@
       "language": "en"
     },
     {
-      "title": "LLMs are stuck in a groupthink groove. This startup is trying to get them out.",
-      "titleJa": "LLM は集団思考の溝にはまってしまいます。このスタートアップは彼らを追い出そうとしている。",
-      "link": "https://www.technologyreview.com/2026/07/01/1140003/llms-are-stuck-in-a-groupthink-rut-this-startup-is-trying-to-get-them-out/",
-      "description": "Let’s start with a game. Open up your chatbot of choice—Claude, ChatGPT, Gemini—and type “Give me a random number between 1 and 10.” You’re going to get 7. Almost always. Now type “Another” and you’ll...",
-      "publishedDate": "Wed, 01 Jul 2026 14:35:16 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/260626_LLMhallucinations.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "The Download: Anthropic launches Claude Science, and California’s carbon manure math",
-      "titleJa": "ダウンロード: Anthropic が Claude Science とカリフォルニアの炭素肥料の計算を開始",
-      "link": "https://www.technologyreview.com/2026/07/01/1139996/the-download-anthropic-claude-science-california-carbon-manure/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Claude Science is Anthropic’s newest flagship prod...",
-      "publishedDate": "Wed, 01 Jul 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/02/Selman-MIT-pill-resize.jpeg?w=3000",
-      "language": "en"
-    },
-    {
       "title": "Nano Banana 2 Liteとは？Googleの最速・最安画像生成AIの特徴・料金・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/nano-banana-2-lite/",
@@ -112,17 +90,6 @@
       "language": "ja"
     },
     {
-      "title": "【Claude Sonnet 5】Opus 4.8に迫る性能を低コストで実現したモデルの使い方・料金を徹底解説！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-sonnet-5/",
-      "description": "2026年7月1日、Anthropicが新モデル「Claude Sonnet 5」を公開しました！ これまでのSonnetシリーズは、コストパフォーマンスに優れた中位モデルとしてエンジニアやビジネスユーザーに支持されてき [...]...",
-      "publishedDate": "Wed, 01 Jul 2026 07:00:16 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Sonnet-5-1-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Hugging Face and Cerebras bring Gemma 4 to real-time voice AI",
       "titleJa": "ハグフェイスとセレブラスが Gemma 4 にリアルタイム音声 AI をもたらす",
       "link": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
@@ -131,17 +98,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/cerebras-gemma4-voice-ai/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Claude Science is Anthropic’s newest flagship product",
-      "titleJa": "Claude Science は Anthropic の最新の主力製品です",
-      "link": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
-      "description": "At an event for pharmaceutical executives, biotech founders, and researchers on Tuesday, Anthropic announced Claude Science, a major new product intended to support scientific research in the same way...",
-      "publishedDate": "Tue, 30 Jun 2026 21:50:04 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/claude-science3a.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -189,10 +145,10 @@
       "language": "en"
     },
     {
-      "title": "Inside Genebench-Pro",
-      "titleJa": "Genebench-Pro の内部",
-      "link": "https://openai.com/index/genebench-pro/case-studies",
-      "description": "...",
+      "title": "Core dump epidemiology: fixing an 18-year-old bug",
+      "titleJa": "コアダンプ疫学: 18 年前のバグを修正",
+      "link": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+      "description": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug....",
       "publishedDate": "Tue, 30 Jun 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -211,10 +167,10 @@
       "language": "en"
     },
     {
-      "title": "Core dump epidemiology: fixing an 18-year-old bug",
-      "titleJa": "コアダンプ疫学: 18 年前のバグを修正",
-      "link": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
-      "description": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug....",
+      "title": "Inside Genebench-Pro",
+      "titleJa": "Genebench-Pro の内部",
+      "link": "https://openai.com/index/genebench-pro/case-studies",
+      "description": "...",
       "publishedDate": "Tue, 30 Jun 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -245,7 +201,7 @@
     },
     {
       "title": "Helping build shared standards for advanced AI",
-      "titleJa": "高度な AI の共有標準の構築を支援",
+      "titleJa": "高度な AI の共通標準の構築を支援",
       "link": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
       "description": "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation....",
       "publishedDate": "Tue, 23 Jun 2026 13:00:00 GMT",
@@ -288,6 +244,17 @@
       "language": "en"
     },
     {
+      "title": "LeRobot v0.6.0: Imagine, Evaluate, Improve",
+      "titleJa": "LeRobot v0.6.0: 想像し、評価し、改善する",
+      "link": "https://huggingface.co/blog/lerobot-release-v060",
+      "description": "...",
+      "publishedDate": "Tue, 07 Jul 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/lerobot-release-v060/thumbnail.png",
+      "language": "en"
+    },
+    {
       "title": "Catch up on 12 major I/O 2026 moments",
       "titleJa": "2026 年の 12 の主要な I/O の瞬間をキャッチアップ",
       "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
@@ -321,28 +288,6 @@
       "language": "en"
     },
     {
-      "title": "MosaicLeaks: Can your research agent keep a secret?",
-      "titleJa": "MosaicLeaks: あなたの研究エージェントは秘密を守ることができますか?",
-      "link": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
-      "description": "...",
-      "publishedDate": "Thu, 18 Jun 2026 18:13:13 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/680ba1729f7688275d2ce0f4/hGCO4pOyJjijLPCbRT07v.webp",
-      "language": "en"
-    },
-    {
-      "title": "Beyond LoRA: Can you beat the most popular fine-tuning technique?",
-      "titleJa": "LoRA を超えて: 最も人気のある微調整テクニックに勝つことができますか?",
-      "link": "https://huggingface.co/blog/peft-beyond-lora",
-      "description": "...",
-      "publishedDate": "Thu, 18 Jun 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/peft-beyond-lora/thumbnail.png",
-      "language": "en"
-    },
-    {
       "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
       "titleJa": "バージニア州における当社の新たなコミュニティへの投資は、地元の雇用をサポートし、エネルギーの手頃な価格を拡大します。",
       "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
@@ -351,6 +296,50 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Achieving operational excellence with AI",
+      "titleJa": "AI でオペレーショナル エクセレンスを実現",
+      "link": "https://www.technologyreview.com/2026/07/02/1140045/achieving-operational-excellence-with-ai/",
+      "description": "Frameworks like Lean Six Sigma and business process management (BPM) first gained traction because they promised clarity in the chaos—a structured way to bring order to messy, sprawling operations. Le...",
+      "publishedDate": "Thu, 02 Jul 2026 15:37:08 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/MIT_TP2_2026_V9_Cover.png?w=1555",
+      "language": "en"
+    },
+    {
+      "title": "Teaching AI to run with the turbines",
+      "titleJa": "AI にタービンで動作するよう教える",
+      "link": "https://www.technologyreview.com/2026/07/02/1138433/teaching-ai-to-run-with-the-turbines/",
+      "description": "Artificial intelligence may have captured the public imagination through chatbots and image generators, but some of its most consequential use cases are unfolding far from consumer-facing tools. In in...",
+      "publishedDate": "Thu, 02 Jul 2026 12:51:44 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/Andrew-Melouney.png?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "The Download: a startup has a solution for AI’s groupthink problem",
+      "titleJa": "ダウンロード: 新興企業が AI の集団思考問題の解決策を見つけた",
+      "link": "https://www.technologyreview.com/2026/07/02/1140027/the-download-ai-groupthink-llms/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. LLMs are stuck in a groupthink groove. This startu...",
+      "publishedDate": "Thu, 02 Jul 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/260626_LLMhallucinations.jpg?fit=2128,1196",
+      "language": "en"
+    },
+    {
+      "title": "Why California’s carbon manure math doesn’t add up",
+      "titleJa": "カリフォルニアの炭素肥料の計算が合わない理由",
+      "link": "https://www.technologyreview.com/2026/07/02/1139981/why-californias-carbon-manure-math-doesnt-add-up/",
+      "description": "Something stinks in California’s climate policies. Years ago, the state set up a system that pays cattle farmers across the country to turn the methane emitted from cattle manure into natural gas, enc...",
+      "publishedDate": "Thu, 02 Jul 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/260624_spark_cows.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -373,28 +362,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-Implementation-Phase_2606-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "防除研究所、AIクマ検知システムの実地検証を開始。広域的な実証検証体制の構築を加速",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/bojo-ai-bear-detection-test/",
-      "description": "防除研究所は、AIクマ検知システムなどの実地検証を秋田県や福島県、岐阜県で開始しました。東北・中部地域を中心とした広域的な実証体制を構築し、地域に合わせたクマ対策により安全な地域づくりを目指します。 このニュースのポイン [...] The post 防除研究所、AIクマ検知システムの実地検証を開始。広域的な実証検証体制の構築を加速 first appeared on AIポータルメディアAIsm...",
-      "publishedDate": "Thu, 02 Jul 2026 07:19:45 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/bojo-ai-bear-detection-test-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "Anthropic、新モデル「Claude Sonnet 5」発表。「Opus 4.8」に迫る性能を低価格で実現",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/anthropic-claude-sonnet-5-release/",
-      "description": "Anthropicは、新モデル「Claude Sonnet 5」を発表しました。計画の立案やブラウザなどのツール使用において、より高度な自律動作を実現しています。 このニュースのポイント Anthropic、高い自律性を [...] The post Anthropic、新モデル「Claude Sonnet 5」発表。「Opus 4.8」に迫る性能を低価格で実現 first appeared on...",
-      "publishedDate": "Thu, 02 Jul 2026 07:08:26 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/ClaudeSonnet5eye.png",
       "language": "ja"
     },
     {
@@ -428,6 +395,72 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_ZCode-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Fastlane】「Claude for Social Media」と話題のAIショート動画マーケツールの使い方・活用法・注意点を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/fastlane/",
+      "description": "Fastlaneは、WebサイトのURLを入力するだけで自社プロダクトの短尺動画を大量に自動生成し、TikTok・Instagram Reels・YouTube Shortsへワンクリックで投稿までできるAIマーケティン [...]...",
+      "publishedDate": "Mon, 06 Jul 2026 10:32:01 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Fastlane-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "MASC、ヒューマノイドロボット「Unitree G1」導入。「くらしき空⾶ぶクルマ展⽰場」で実証運⽤開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/masc-unitree-g1-kurashiki-demo/",
+      "description": "MASCは、ヒューマノイドロボット「Unitree G1」を導入しました。「くらしき空⾶ぶクルマ展⽰場」において展示・実証運⽤を開始し、来場者向け案内・対話体験や空⾶ぶクルマ・ドローンに関する情報提供などで活用します。 [...] The post MASC、ヒューマノイドロボット「Unitree G1」導入。「くらしき空⾶ぶクルマ展⽰場」で実証運⽤開始 first appeared on AIポ...",
+      "publishedDate": "Mon, 06 Jul 2026 09:09:07 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/mascUnitreeG1eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "パナソニック、業界初AI料理パートナー「Bistroアシスタント」の自動調理鍋への対応を開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/panasonic-bistro-assistant/",
+      "description": "パナソニックは、AI料理パートナー「Bistroアシスタント」に新機能を追加しプランを拡充します。業界初、自動調理鍋「オートクッカー ビストロ」と連携します。 このニュースのポイント パナソニック、ユーザーとの対話を通じ [...] The post パナソニック、業界初AI料理パートナー「Bistroアシスタント」の自動調理鍋への対応を開始 first appeared on AIポータルメディ...",
+      "publishedDate": "Mon, 06 Jul 2026 08:54:54 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/panasonic-bistro-assistant.png",
+      "language": "ja"
+    },
+    {
+      "title": "北海道エアポート、ターンアラウンド管理システム「ApronAI」を新千歳空港の国際線8スポットに導入",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/hokkaido-airports-apronai-introduction/",
+      "description": "北海道エアポートは、新千歳空港の国際線8スポットを対象に、AIターンアラウンド管理システム「ApronAI」を導入しました。 このニュースのポイント 北海道エアポートが、新千歳空港の国際線8スポットにターンアラウンド管理 [...] The post 北海道エアポート、ターンアラウンド管理システム「ApronAI」を新千歳空港の国際線8スポットに導入 first appeared on AIポータ...",
+      "publishedDate": "Mon, 06 Jul 2026 08:54:02 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/hokkaido-airports-ApronAI-introduction　2.png",
+      "language": "ja"
+    },
+    {
+      "title": "AVITAのAIロープレ「アバトレ」、日本調剤の薬局全国768店舗に導入。店舗従業員の接客トレーニングに活用",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/aivita-nihon-chouzai-ai-rollplay/",
+      "description": "AVITAのAIロープレサービス「アバトレ」が、日本調剤の薬局全国768店舗に導入されました。店舗従業員向けの接客トレーニングに活用されます。 このニュースのポイント AVITAのAIロープレサービス「アバトレ」、日本調 [...] The post AVITAのAIロープレ「アバトレ」、日本調剤の薬局全国768店舗に導入。店舗従業員の接客トレーニングに活用 first appeared on A...",
+      "publishedDate": "Mon, 06 Jul 2026 08:53:15 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/AIVITA-NIHON-CHOUZAI-avatar-training.png",
+      "language": "ja"
+    },
+    {
+      "title": "インフキュリオンの「Winvoice」がMCP対応。請求書カード払いサービスとして国内初",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/infcurion-winvoice-mcp-launch/",
+      "description": "インフキュリオンの請求書支払いプラットフォーム「Winvoice」がMCPに対応しました。AIエージェントとの対話だけで請求書のアップロードや支払予約申請などが可能になるβ版機能を提供します。 このニュースのポイント イ [...] The post インフキュリオンの「Winvoice」がMCP対応。請求書カード払いサービスとして国内初 first appeared on AIポータルメディアA...",
+      "publishedDate": "Mon, 06 Jul 2026 08:42:05 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/winvoice-model-context-protocol.png",
       "language": "ja"
     },
     {
@@ -497,17 +530,6 @@
       "language": "ja"
     },
     {
-      "title": "ヒューマンリソシア、派遣スタッフへの生成AI研修開始。全3回の実践型オリジナル研修",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/human-resocia-ai-original-training/",
-      "description": "ヒューマンリソシアは、事務派遣スタッフ向けの生成AI活用スキル習得を支援するオリジナル研修「Gen-Pro Light（ジェンプロ ライト）」の提供を開始しました。 このニュースのポイント ヒューマンリソシアが、派遣スタ [...] The post ヒューマンリソシア、派遣スタッフへの生成AI研修開始。全3回の実践型オリジナル研修 first appeared on AIポータルメディアAIsm...",
-      "publishedDate": "Fri, 03 Jul 2026 07:55:08 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/humanresocia-Gen-Pro-Light.png",
-      "language": "ja"
-    },
-    {
       "title": "VSCode AIエージェント比較！使い方・料金・業務導入の注意点を検証",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/vscode-ai-agent/",
@@ -530,25 +552,25 @@
       "language": "ja"
     },
     {
-      "title": "【完全版】Claudeアーティファクト(Artifacts)の使い方・ビジネス活用法・プロンプト例",
+      "title": "Apple、次期macOS 27でSwift言語をシステムカーネル開発に採用。メモリ安全な言語として",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-artifacts-2026/",
-      "description": "「Claudeのアーティファクト機能って何がすごいの？」「ChatGPTとどう違うの？」と疑問を抱いていませんか？ アーティファクト（Artifacts）を活用すれば、プログラミングの知識が一切なくても、動くWebアプリ [...] The post 【完全版】Claudeアーティファクト(Artifacts)の使い方・ビジネス活用法・プロンプト例 first appeared on AIポータル...",
-      "publishedDate": "Fri, 03 Jul 2026 02:54:35 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/claudeartifacts.jpg",
+      "link": "https://www.publickey1.jp/blog/26/applemacos_27swift.html",
+      "description": "Appleは次期macOS 27 Golden Gateから、Swift言語をシステムカーネルの開発に採用することを明らかにしました。 これは先月に行われたWWDC26ですでに表明されており、7月2日付けのSwiftのブログ「What's ......",
+      "publishedDate": "2026-07-06T15:11:01Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/swift-systemkernel02.png",
       "language": "ja"
     },
     {
-      "title": "Lumada（ルマーダ）とは？日立の強み・導入事例とAIで進化する「Lumada 3.0」を徹底解説",
+      "title": "MCPにエンタープライズ向け新機能、アクセスを一括管理できる「Enterprise-Managed Authorization（EMA）extension」が安定版として利用可能に",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/lumada-3-0-dx/",
-      "description": "自社の経営課題を解決するためにDXを進めたいものの、デジタル技術をどのように活用すればよいかわからず悩んでいるDX推進担当者の方も多いのではないでしょうか。 汎用的なデジタルツールだけでは、自社の業務や現場の課題に合わな [...] The post Lumada（ルマーダ）とは？日立の強み・導入事例とAIで進化する「Lumada 3.0」を徹底解説 first appeared on AIポータ...",
-      "publishedDate": "Fri, 03 Jul 2026 01:35:46 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/lumada.jpg",
+      "link": "https://www.publickey1.jp/blog/26/mcpenterprise-managed_authorizationemaextension.html",
+      "description": "生成AIとツールとの接続プロトコルとしてLinux Foundation傘下で標準化と機能拡張が進められているMCP（Model Context Protocol）の企業向けの新機能「Enterprise-Managed Authoriza......",
+      "publishedDate": "2026-07-06T15:08:16Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/mcp-ema-la02.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/awscontinuum-code-pv01.png",
-      "language": "ja"
-    },
-    {
-      "title": "AWS、AIエージェントがリポジトリを自動スキャンして技術的負債を指摘してくれる「AWS Transform – continuous modernization」プレビュー公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/awsaiaws_transform_continuous_modernization.html",
-      "description": "Amazon Web Services（AWS）は、AIエージェントがコードリポジトリを継続的に自動スキャンし、サポートが終了したライブラリやフレームワークなどを始めとする技術的負債を検出し、優先順位をつけて報告あるいは修正のためのプルリク......",
-      "publishedDate": "2026-06-21T15:24:42Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/awsgtransform-continuousmodernization-pv01.png",
-      "language": "ja"
-    },
-    {
-      "title": "あなたのAWSのコストの問題がどこにあるか、AIが教えてくれる「AWS FinOps Agent」パブリックプレビュー開始",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/awsaiaws_finops_agent.html",
-      "description": "Amazon Web Services（AWS）は、使用中のAWSのコストに関する質問や、コストに異常が発生した場合にその原因を調査して特定してくれる「AWS FinOps Agent」のパブリックプレビュー開始を発表しました。 AWSはそ......",
-      "publishedDate": "2026-06-17T15:49:03Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/awsfinopsagent-pv01.png",
       "language": "ja"
     }
   ]
