@@ -8631,8 +8631,11 @@ function getDownloadMessage(key) {
 //   https://28tools.com/?notrack=1   → この端末を計測から除外（ブラウザに記憶）
 //   https://28tools.com/?notrack=0   → 除外を解除
 //   https://28tools.com/?notrack=status → 現在の状態を表示
+//   https://28tools.com/?whoami       → この端末のフィンガープリント（画面/UA等）を表示
 // フラグは localStorage に保存され、以降その端末では PV/DL/ツールイベントを一切送信しない。
 // ※ブラウザのデータを消すとフラグも消えるため、その場合は再設定が必要（GAアドオンと同じ制約）。
+// GA4 は IP を保持しないため、過去データの除外は「端末フィンガープリント一致」で行う。
+// ?whoami で各端末の screen / userAgent を表示 → DB の pageviews.ua / screen と一致する行を特定できる。
 // ========================================
 const NOTRACK_KEY = '28tools_no_track';
 
@@ -8641,14 +8644,29 @@ function isTrackingDisabled() {
     catch (e) { return false; }
 }
 
+// この端末のフィンガープリント（サーバ側 pageviews 行と突き合わせるための情報）
+function deviceFingerprintText() {
+    const scr = (screen.width + 'x' + screen.height);
+    return 'この端末の識別情報（過去データ除外の照合用）:\n\n'
+         + '■ 画面(screen): ' + scr + '\n'
+         + '■ 言語(lang): ' + (navigator.language || '-') + '\n'
+         + '■ UA: ' + navigator.userAgent + '\n\n'
+         + 'この画面をスクリーンショットして開発者に送ってください。';
+}
+
 (function handleNotrackParam() {
     try {
-        const p = new URLSearchParams(location.search).get('notrack');
+        const params = new URLSearchParams(location.search);
+        if (params.has('whoami')) {
+            alert(deviceFingerprintText());
+            return;
+        }
+        const p = params.get('notrack');
         if (p === null) return;
         if (p === '1' || p === 'on' || p === 'true') {
             localStorage.setItem(NOTRACK_KEY, '1');
             console.info('[28tools] この端末はアクセス計測から除外されました（notrack=on）');
-            alert('この端末を 28 Tools のアクセス計測から除外しました。\n（解除するには URL に ?notrack=0 を付けてアクセスしてください）');
+            alert('この端末を 28 Tools のアクセス計測から除外しました。\n（解除するには URL に ?notrack=0 を付けてアクセスしてください）\n\n' + deviceFingerprintText());
         } else if (p === '0' || p === 'off' || p === 'false') {
             localStorage.removeItem(NOTRACK_KEY);
             console.info('[28tools] この端末のアクセス計測除外を解除しました（notrack=off）');
