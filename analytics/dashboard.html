@@ -169,7 +169,10 @@
   </div>
 
   <div class="chart-full">
-    <div class="chart-title">DL推移 <span style="font-size:11px;font-weight:400;color:var(--muted);text-transform:none">— Supabase 計測分のみ（累計40件はGitHub集計のため日別データなし）</span></div>
+    <div class="chart-head">
+      <div class="chart-title" style="margin-bottom:0">DL推移 <span style="font-size:11px;font-weight:400;color:var(--muted);text-transform:none">— Supabase 計測分のみ（累計40件はGitHub集計のため日別データなし）</span></div>
+      <div class="chart-total"><span class="chart-total-label">期間合計</span> <strong id="dl-total-val">-</strong> 件</div>
+    </div>
     <div class="period-btns" id="dl-period-btns">
       <button class="period-btn" data-period="1">1日</button>
       <button class="period-btn" data-period="7">1週間</button>
@@ -300,7 +303,10 @@
   </div>
 
   <div class="chart-full">
-    <div class="chart-title">ツール利用推移</div>
+    <div class="chart-head">
+      <div class="chart-title" style="margin-bottom:0">ツール利用推移</div>
+      <div class="chart-total"><span class="chart-total-label">期間合計</span> <strong id="tool-total-val">-</strong> 回</div>
+    </div>
     <div class="period-btns" id="tool-period-btns">
       <button class="period-btn" data-period="1">1日</button>
       <button class="period-btn" data-period="7">1週間</button>
@@ -551,6 +557,7 @@ function renderTrendChart(canvasId, data, days, label, color) {
       byHour[hourJST]++;
     });
     const labels = Array.from({length:24}, (_,i) => i + ':00');
+    if (canvasId === 'trend-chart') setChartTotal('dl-total-val', byHour.reduce((a,b)=>a+b,0));
     makeChart(canvasId, 'bar', labels, [{
       label: label + '（時間別）',
       data: byHour,
@@ -564,6 +571,7 @@ function renderTrendChart(canvasId, data, days, label, color) {
   const byDay = {};
   filtered.forEach(r => { const d = r.ts.slice(0,10); byDay[d] = (byDay[d]||0)+1; });
   const sorted = Object.keys(byDay).sort();
+  if (canvasId === 'trend-chart') setChartTotal('dl-total-val', filtered.length);
   makeChart(canvasId, 'line', sorted, [{
     label,
     data: sorted.map(d => byDay[d]),
@@ -864,11 +872,12 @@ function renderPVTrendChart(combined, days) {
   }], { plugins: { legend: { display: false } } });
 }
 
-// PV推移チャートの「期間合計」表示を更新
-function setPVTotal(total) {
-  const el = document.getElementById('pv-total-val');
+// 推移チャートの「期間合計」表示を更新（PV / DL / ツール利用 共通）
+function setChartTotal(elId, total) {
+  const el = document.getElementById(elId);
   if (el) el.textContent = Math.round(total).toLocaleString();
 }
+function setPVTotal(total) { setChartTotal('pv-total-val', total); }
 
 function renderCountryTableRaw(tableId, countryRaw) {
   const entries = sortedEntries(countryRaw, 10);
@@ -1066,6 +1075,8 @@ function renderToolTrendChart(days) {
     labels = dayList.map(d => d.slice(5));
     datasets = TOOL_EVENT_KEYS.map(k => ({ label: TOOL_EVENT_LABELS[k], data: dayList.map(d => (byDay[d] || {})[k] || 0), backgroundColor: TOOL_EVENT_COLORS[k] }));
   }
+  const toolTotal = datasets.reduce((s, ds) => s + ds.data.reduce((a, b) => a + b, 0), 0);
+  setChartTotal('tool-total-val', toolTotal);
   if (charts.toolTrend) charts.toolTrend.destroy();
   charts.toolTrend = new Chart(document.getElementById('tool-trend-chart'), {
     type: 'bar',
