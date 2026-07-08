@@ -73,6 +73,10 @@
   .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); transition: border-color .18s ease, box-shadow .18s ease; }
   .chart-card:hover { border-color: #353a49; box-shadow: var(--shadow-hover); }
   .chart-title { font-size: 13px; font-weight: 600; color: var(--muted); margin-bottom: 16px; text-transform: uppercase; letter-spacing: .5px; }
+  .chart-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+  .chart-total { font-size: 13px; color: var(--muted); white-space: nowrap; }
+  .chart-total strong { font-size: 20px; font-weight: 700; color: var(--text); margin: 0 2px; }
+  .chart-total-label { text-transform: uppercase; letter-spacing: .5px; font-size: 11px; }
   .chart-wrap { position: relative; }
 
   /* Full-width */
@@ -222,7 +226,10 @@
   </div>
 
   <div class="chart-full">
-    <div class="chart-title">PV推移</div>
+    <div class="chart-head">
+      <div class="chart-title" style="margin-bottom:0">PV推移</div>
+      <div class="chart-total" id="pv-total-box"><span class="chart-total-label">期間合計</span> <strong id="pv-total-val">-</strong> PV</div>
+    </div>
     <div class="period-btns" id="pv-period-btns">
       <button class="period-btn" data-period="1">1日</button>
       <button class="period-btn" data-period="7">1週間</button>
@@ -821,6 +828,7 @@ function renderPVTrendChart(combined, days) {
       byHour[jstHour(r.ts)]++;
     });
     const labels = Array.from({length:24}, (_,i) => i + ':00');
+    setPVTotal(byHour.reduce((a,b)=>a+b,0));
     makeChart('pv-trend-chart', 'bar', labels, [{
       label: 'PV数（' + sel + '）',
       data: byHour,
@@ -845,6 +853,7 @@ function renderPVTrendChart(combined, days) {
     byDay[r.date] = (byDay[r.date]||0) + (r.views||0);
   });
   const sorted = Object.keys(byDay).sort();
+  setPVTotal(sorted.reduce((s,d)=>s+byDay[d],0));
   makeChart('pv-trend-chart', 'line', sorted, [{
     label: 'PV数',
     data: sorted.map(d => byDay[d]),
@@ -853,6 +862,12 @@ function renderPVTrendChart(combined, days) {
     fill: true, tension: 0.3,
     pointRadius: sorted.length > 60 ? 0 : 3,
   }], { plugins: { legend: { display: false } } });
+}
+
+// PV推移チャートの「期間合計」表示を更新
+function setPVTotal(total) {
+  const el = document.getElementById('pv-total-val');
+  if (el) el.textContent = Math.round(total).toLocaleString();
 }
 
 function renderCountryTableRaw(tableId, countryRaw) {
