@@ -102,6 +102,11 @@
   .date-input { background: var(--border); border: 1px solid transparent; color: var(--text); padding: 4px 11px; border-radius: 20px; cursor: pointer; font-size: 12px; font-family: inherit; color-scheme: light; transition: border-color .15s ease; }
   .date-input:hover { border-color: #b8c0c8; }
   .date-input.hidden { display: none; }
+  .date-nav { display: inline-flex; align-items: center; gap: 4px; }
+  .date-nav.hidden { display: none; }
+  .date-arrow { background: var(--border); border: 1px solid transparent; color: var(--muted); width: 26px; height: 26px; padding: 0; border-radius: 50%; cursor: pointer; font-size: 15px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; transition: all .15s ease; }
+  .date-arrow:hover { color: var(--text); border-color: #b8c0c8; }
+  .date-arrow:disabled { opacity: .35; cursor: default; }
 
   /* Raw data */
   .raw-section { margin-top: 20px; }
@@ -180,6 +185,11 @@
       <button class="period-btn" data-period="90">90日</button>
       <button class="period-btn" data-period="365">1年</button>
       <button class="period-btn" data-period="0">全期間</button>
+      <span class="date-nav hidden" id="dl-date-nav">
+        <button class="date-arrow" data-target="dl" data-dir="-1" title="前日">‹</button>
+        <input type="date" id="dl-date" class="date-input" title="表示する日を選択">
+        <button class="date-arrow" data-target="dl" data-dir="1" title="翌日">›</button>
+      </span>
     </div>
     <div class="chart-wrap" style="height:220px"><canvas id="trend-chart"></canvas></div>
   </div>
@@ -240,7 +250,11 @@
       <button class="period-btn" data-period="90">90日</button>
       <button class="period-btn" data-period="365">1年</button>
       <button class="period-btn" data-period="0">全期間</button>
-      <input type="date" id="pv-date" class="date-input hidden" title="表示する日を選択">
+      <span class="date-nav hidden" id="pv-date-nav">
+        <button class="date-arrow" data-target="pv" data-dir="-1" title="前日">‹</button>
+        <input type="date" id="pv-date" class="date-input" title="表示する日を選択">
+        <button class="date-arrow" data-target="pv" data-dir="1" title="翌日">›</button>
+      </span>
     </div>
     <div class="chart-wrap" style="height:220px"><canvas id="pv-trend-chart"></canvas></div>
   </div>
@@ -314,7 +328,11 @@
       <button class="period-btn" data-period="90">90日</button>
       <button class="period-btn" data-period="365">1年</button>
       <button class="period-btn" data-period="0">全期間</button>
-      <input type="date" id="tool-date" class="date-input hidden" title="表示する日を選択">
+      <span class="date-nav hidden" id="tool-date-nav">
+        <button class="date-arrow" data-target="tool" data-dir="-1" title="前日">‹</button>
+        <input type="date" id="tool-date" class="date-input" title="表示する日を選択">
+        <button class="date-arrow" data-target="tool" data-dir="1" title="翌日">›</button>
+      </span>
     </div>
     <div class="chart-wrap" style="height:260px"><canvas id="tool-trend-chart"></canvas></div>
   </div>
@@ -443,7 +461,7 @@ let allDL = [], allPV = [], allGA4 = [];
 let ghStats = null;
 let charts = {};
 let activeDLPeriod = 30, activePVPeriod = 30, activeToolPeriod = 30;
-let pvSelectedDate = '', toolSelectedDate = '';
+let pvSelectedDate = '', toolSelectedDate = '', dlSelectedDate = '';
 
 // ---- GA4 history → synthetic PV events ----
 // ga4_history 行を pageviews 互換オブジェクトに展開する
@@ -548,18 +566,17 @@ function makeChart(id, type, labels, datasets, opts = {}) {
 
 function renderTrendChart(canvasId, data, days, label, color) {
   if (days === 1) {
+    // 指定日（既定=当日）の 0〜23時(JST)で集計
+    const sel = (canvasId === 'trend-chart' ? dlSelectedDate : '') || todayJST();
     const byHour = Array(24).fill(0);
-    const cutoff = Date.now() - 86400000;
     data.forEach(r => {
-      const t = new Date(r.ts);
-      if (t.getTime() < cutoff) return;
-      const hourJST = (t.getUTCHours() + 9) % 24;
-      byHour[hourJST]++;
+      if (jstDateStr(r.ts) !== sel) return;
+      byHour[jstHour(r.ts)]++;
     });
     const labels = Array.from({length:24}, (_,i) => i + ':00');
     if (canvasId === 'trend-chart') setChartTotal('dl-total-val', byHour.reduce((a,b)=>a+b,0));
     makeChart(canvasId, 'bar', labels, [{
-      label: label + '（時間別）',
+      label: label + '（' + sel + '）',
       data: byHour,
       backgroundColor: color.replace(')', ',.7)').replace('rgb','rgba') || 'rgba(79,142,247,.7)',
       borderColor: color,
@@ -922,17 +939,26 @@ document.querySelectorAll('#dl-period-btns .period-btn').forEach(btn => {
     document.querySelectorAll('#dl-period-btns .period-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     activeDLPeriod = parseInt(btn.dataset.period);
+    const nav = document.getElementById('dl-date-nav'), di = document.getElementById('dl-date');
+    if (activeDLPeriod === 1) { nav.classList.remove('hidden'); dlSelectedDate = di.value || todayJST(); di.value = dlSelectedDate; }
+    else nav.classList.add('hidden');
     renderTrendChart('trend-chart', allDL, activeDLPeriod, 'DL数', '#4f8ef7');
   });
+});
+document.getElementById('dl-date').addEventListener('change', e => {
+  dlSelectedDate = e.target.value || todayJST();
+  activeDLPeriod = 1;
+  document.querySelectorAll('#dl-period-btns .period-btn').forEach(b => b.classList.toggle('active', b.dataset.period === '1'));
+  renderTrendChart('trend-chart', allDL, 1, 'DL数', '#4f8ef7');
 });
 document.querySelectorAll('#pv-period-btns .period-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('#pv-period-btns .period-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     activePVPeriod = parseInt(btn.dataset.period);
-    const di = document.getElementById('pv-date');
-    if (activePVPeriod === 1) { di.classList.remove('hidden'); pvSelectedDate = di.value || todayJST(); di.value = pvSelectedDate; }
-    else di.classList.add('hidden');
+    const nav = document.getElementById('pv-date-nav'), di = document.getElementById('pv-date');
+    if (activePVPeriod === 1) { nav.classList.remove('hidden'); pvSelectedDate = di.value || todayJST(); di.value = pvSelectedDate; }
+    else nav.classList.add('hidden');
     renderPVTrendChart([...ga4ToEvents(allGA4), ...allPV], activePVPeriod);
   });
 });
@@ -949,9 +975,9 @@ document.querySelectorAll('#tool-period-btns .period-btn').forEach(btn => {
     document.querySelectorAll('#tool-period-btns .period-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     activeToolPeriod = parseInt(btn.dataset.period);
-    const di = document.getElementById('tool-date');
-    if (activeToolPeriod === 1) { di.classList.remove('hidden'); toolSelectedDate = di.value || todayJST(); di.value = toolSelectedDate; }
-    else di.classList.add('hidden');
+    const nav = document.getElementById('tool-date-nav'), di = document.getElementById('tool-date');
+    if (activeToolPeriod === 1) { nav.classList.remove('hidden'); toolSelectedDate = di.value || todayJST(); di.value = toolSelectedDate; }
+    else nav.classList.add('hidden');
     renderToolTrendChart(activeToolPeriod);
   });
 });
@@ -960,6 +986,21 @@ document.getElementById('tool-date').addEventListener('change', e => {
   activeToolPeriod = 1;
   document.querySelectorAll('#tool-period-btns .period-btn').forEach(b => b.classList.toggle('active', b.dataset.period === '1'));
   renderToolTrendChart(1);
+});
+
+// 日付ピッカー左右の矢印で 1 日ずつ移動（DL/PV/ツール共通、翌日は当日JSTでクランプ）
+document.querySelectorAll('.date-arrow').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const input = document.getElementById(btn.dataset.target + '-date');
+    if (!input) return;
+    const cur = input.value || todayJST();
+    const d = new Date(cur + 'T00:00:00Z');
+    d.setUTCDate(d.getUTCDate() + parseInt(btn.dataset.dir));
+    let next = d.toISOString().slice(0, 10);
+    if (next > todayJST()) next = todayJST();
+    input.value = next;
+    input.dispatchEvent(new Event('change'));
+  });
 });
 
 // ---- Tool event helpers ----
@@ -1185,7 +1226,8 @@ async function init() {
     const today = todayJST();
     pvSelectedDate = pvSelectedDate || today;
     toolSelectedDate = toolSelectedDate || today;
-    ['pv-date','tool-date'].forEach(id => {
+    dlSelectedDate = dlSelectedDate || today;
+    ['pv-date','tool-date','dl-date'].forEach(id => {
       const el = document.getElementById(id);
       if (el) { el.max = today; if (!el.value) el.value = today; }
     });
