@@ -218,6 +218,7 @@
     <div class="kpi purple"><div class="kpi-label">直帰率</div><div class="kpi-value" id="kpi-pv-bounce">-</div><div class="kpi-sub">GA4データ</div></div>
     <div class="kpi blue"><div class="kpi-label">平均滞在時間</div><div class="kpi-value" id="kpi-pv-engage">-</div><div class="kpi-sub">GA4データ</div></div>
     <div class="kpi green"><div class="kpi-label">利用国数</div><div class="kpi-value" id="kpi-pv-countries">-</div><div class="kpi-sub">ユニーク国</div></div>
+    <div class="kpi purple"><div class="kpi-label">X経由の訪問</div><div class="kpi-value" id="kpi-pv-x">-</div><div class="kpi-sub">t.co/x.com/utm含む</div></div>
   </div>
 
   <div class="chart-full">
@@ -723,6 +724,12 @@ function renderPV(data) {
   const pvGrandTotal = Object.values(pageLabeled).reduce((s,v)=>s+v,0);
   renderRankTable('pv-page-table', sortedEntries(pageLabeled, 10), pvGrandTotal, 'green');
 
+  // X（Twitter）経由の訪問 KPI：Supabase referrer + GA4 source(t.co/x.com/twitter/utm_source=x) を合算
+  const xSupa = data.filter(r => isXSource(r.referrer)).length;
+  const xGA4  = allGA4.reduce((s, r) => s + (isXSource(r.source) ? (r.views || 0) : 0), 0);
+  const xEl = document.getElementById('kpi-pv-x');
+  if (xEl) xEl.textContent = (xSupa + xGA4).toLocaleString();
+
   // Referrer ranking（Supabase のみ）
   const refRaw = count(data.map(r => ({ ...r, ref: cleanRef(r.referrer) })), 'ref');
   renderRankTable('pv-ref-table', sortedEntries(refRaw, 10), data.length || 1, '');
@@ -874,6 +881,15 @@ function cleanRef(ref) {
     const u = new URL(ref);
     return u.hostname.replace(/^www\./, '');
   } catch { return ref.slice(0, 40); }
+}
+
+// X（Twitter）由来の referrer / GA4 source を判定。
+// referrer は "https://t.co/..." のような完全URL、GA4 source は "x" / "t.co" / "twitter" 等。
+function isXSource(s) {
+  if (!s) return false;
+  const t = String(s).toLowerCase();
+  return t === 'x' || t.includes('t.co') || t.includes('x.com') ||
+         t.includes('twitter') || t.includes('utm_source=x');
 }
 
 // ---- Period buttons ----
