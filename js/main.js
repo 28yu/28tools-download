@@ -8625,12 +8625,47 @@ function getDownloadMessage(key) {
     return downloadConfig.messages[currentLanguage]?.[key] || downloadConfig.messages['ja'][key];
 }
 
+// ========================================
+// アクセス計測のオプトアウト（自分の端末を集計から除外）
+// GA4 の「内部トラフィック除外 / オプトアウトアドオン」と同じ考え方で、端末ごとに1回だけ設定する。
+//   https://28tools.com/?notrack=1   → この端末を計測から除外（ブラウザに記憶）
+//   https://28tools.com/?notrack=0   → 除外を解除
+//   https://28tools.com/?notrack=status → 現在の状態を表示
+// フラグは localStorage に保存され、以降その端末では PV/DL/ツールイベントを一切送信しない。
+// ※ブラウザのデータを消すとフラグも消えるため、その場合は再設定が必要（GAアドオンと同じ制約）。
+// ========================================
+const NOTRACK_KEY = '28tools_no_track';
+
+function isTrackingDisabled() {
+    try { return localStorage.getItem(NOTRACK_KEY) === '1'; }
+    catch (e) { return false; }
+}
+
+(function handleNotrackParam() {
+    try {
+        const p = new URLSearchParams(location.search).get('notrack');
+        if (p === null) return;
+        if (p === '1' || p === 'on' || p === 'true') {
+            localStorage.setItem(NOTRACK_KEY, '1');
+            console.info('[28tools] この端末はアクセス計測から除外されました（notrack=on）');
+            alert('この端末を 28 Tools のアクセス計測から除外しました。\n（解除するには URL に ?notrack=0 を付けてアクセスしてください）');
+        } else if (p === '0' || p === 'off' || p === 'false') {
+            localStorage.removeItem(NOTRACK_KEY);
+            console.info('[28tools] この端末のアクセス計測除外を解除しました（notrack=off）');
+            alert('この端末のアクセス計測の除外を解除しました。');
+        } else if (p === 'status') {
+            alert('この端末のアクセス計測: ' + (isTrackingDisabled() ? '除外中（計測されません）' : '有効（計測されます）'));
+        }
+    } catch (e) {}
+})();
+
 // パスワード保護ダウンロード関数
 // ダウンロード統計の記録（Cloudflare Worker → Supabase）
 // 国・OS・時刻はWorker側で自動付与。ここではバージョン情報のみ送信する。
 const DOWNLOAD_LOG_ENDPOINT = 'https://28tools-dl.tsuha.workers.dev';
 
 function logDownload(version, url) {
+    if (isTrackingDisabled()) return;
     try {
         // "revit2024" → "2024"
         const revitMatch = String(version).match(/(\d{4})/);
@@ -8677,6 +8712,7 @@ function getOrCreateSessionId() {
 }
 
 function logPageview() {
+    if (isTrackingDisabled()) return;
     try {
         const payload = JSON.stringify({
             page: location.pathname,
@@ -8702,6 +8738,7 @@ if (document.readyState === 'loading') {
 
 // ツール操作イベントを pageviews テーブルに記録（page = /_event/<type>）
 function logToolEvent(eventType) {
+    if (isTrackingDisabled()) return;
     try {
         const payload = JSON.stringify({
             page: '/_event/' + eventType,
