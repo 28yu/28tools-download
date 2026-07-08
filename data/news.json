@@ -1,14 +1,44 @@
 {
-  "lastUpdated": "2026-07-07T02:10:41.940633",
+  "lastUpdated": "2026-07-08T01:51:13.510021",
   "articles": [
     {
-      "title": "DfMAシンポジウムvol.2 －リア・ローディングからの脱却－_開催レポート【第6回】| 前田建設工業株式会社 建築生産技術部 担当部長 曽根巨充、東京電機大学教授 小笠原正豊、株式会社ヴィック 代表取締役社長 渡辺健児 登壇",
-      "link": "https://news.build-app.jp/article/41228/",
-      "description": "人手不足や時間外労働規制を背景に、日本の建設産業では、現場に負荷が集中する従来のリア・ローディング型のプロセスからの転換が求められています。......",
-      "publishedDate": "Thu, 02 Jul 2026 22:00:00 +0000",
+      "title": "大林組、Copilot StudioでBIM問い合わせ対応AIエージェントを構築",
+      "link": "https://news.build-app.jp/article/41455/",
+      "description": "株式会社大林組は、BIMソフト「Revit」に関する社内問い合わせを自動化する「コンシェルジュ型AIエージェント」を構築しました。開発を手掛......",
+      "publishedDate": "Wed, 08 Jul 2026 01:30:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/d32509507023adc0a66081f8c465276a-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/copilot_studio_bim_ai-130x73.webp",
+      "language": "ja"
+    },
+    {
+      "title": "黒川紀章とアスタナが映し出す都市計画の光と影｜カザフスタンの新首都の現実と建築家の射程との乖離",
+      "link": "https://news.build-app.jp/article/40990/",
+      "description": "カザフスタンのステップに聳える人工都市アスタナ。その青と金に輝く未来的なスカイラインは、1998年の国際コンペで勝利を収めた日本人建築家・黒......",
+      "publishedDate": "Tue, 07 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/20260708_hirayama-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "BuddyBoard、図面上の修正指示をAIが一括検知するAI指摘リストベータ版を提供開始",
+      "link": "https://news.build-app.jp/article/41451/",
+      "description": "図面チェックの現場では、設計事務所やゼネコンの担当者が図面にペンで書き込まれた修正指示を一枚ずつ目視で拾い集め、指摘内容を整理する作業に多く......",
+      "publishedDate": "Tue, 07 Jul 2026 07:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/buddyboard_ai_comment_list-130x90.webp",
+      "language": "ja"
+    },
+    {
+      "title": "竹中工務店と爽美、技能工の手書き図をAIが解析しボード加工用CADを自動生成するシステム開発",
+      "link": "https://news.build-app.jp/article/41447/",
+      "description": "竹中工務店（社長：丁野成人氏）と爽美（大阪市北区、社長：小野田拓也氏）は、建築内装の仕上げ材であるボード材を加工する自動加工機「i-Bow2......",
+      "publishedDate": "Tue, 07 Jul 2026 05:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/ai_ibow2_board_processing-130x63.jpg",
       "language": "ja"
     },
     {
@@ -92,16 +122,6 @@
       "language": "ja"
     },
     {
-      "title": "建退共（建設業退職金共済）とは？｜仕組み・対象者・掛金・退職金のもらい方まで解説",
-      "link": "https://news.build-app.jp/article/41439/",
-      "description": "建退共（建設業退職金共済）について、対象者や掛金の仕組み、退職金の計算方法、加入・請求手続きなどが複雑で、制度を理解できないとお悩みの方も多......",
-      "publishedDate": "Mon, 06 Jul 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/435092521749eb14fadd92348d858c66-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "【2025年義務化】建設現場の熱中症対策｜管理者・作業者が今すぐできる予防・対応・セルフチェック",
       "link": "https://news.build-app.jp/article/41313/",
       "description": "職場で発生した熱中症のうち、もっとも多いのは建設現場です。（出典：厚生労働省「働く人の今すぐ使える熱中症ガイド」） 2025年からは熱中症対......",
@@ -109,6 +129,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/779691c7a2a7e4371e782a58e0628acb-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "建退共（建設業退職金共済）とは？｜仕組み・対象者・掛金・退職金のもらい方まで解説",
+      "link": "https://news.build-app.jp/article/41439/",
+      "description": "建退共（建設業退職金共済）について、対象者や掛金の仕組み、退職金の計算方法、加入・請求手続きなどが複雑で、制度を理解できないとお悩みの方も多......",
+      "publishedDate": "Mon, 06 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/435092521749eb14fadd92348d858c66-130x82.png",
       "language": "ja"
     },
     {
@@ -162,26 +192,6 @@
       "language": "ja"
     },
     {
-      "title": "国土交通省、4月の建設工事受注高を公表、総額10兆9,966億円で前年比7.4％増",
-      "link": "https://news.build-app.jp/article/41386/",
-      "description": "国土交通省が公表した最新の建設工事受注動態統計調査によると、令和8年4月の建設工事受注高は10兆9,966億円となりました。前の月は減少して......",
-      "publishedDate": "Fri, 03 Jul 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/image-15-130x53.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大成建設、子ども向け技術体験イベントに出展し災害復旧支援車両と月面居住VRを展示",
-      "link": "https://news.build-app.jp/article/41378/",
-      "description": "子どもたちが社会を支える技術や仕事に触れられる体験型イベントが、神奈川県相模原市で開催されました。大成建設（社長：相川善郎）は、東海旅客鉄道......",
-      "publishedDate": "Fri, 03 Jul 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/11/AdobeStock_89916155-130x87.jpeg",
-      "language": "ja"
-    },
-    {
       "title": "BIMワークフロー：要件定義から施工・維持管理まで、成功する3つのフェーズを完全解説",
       "link": "https://axconstdx.com/2026/07/04/bim%e3%83%af%e3%83%bc%e3%82%af%e3%83%95%e3%83%ad%e3%83%bc%ef%bc%9a%e8%a6%81%e4%bb%b6%e5%ae%9a%e7%be%a9%e3%81%8b%e3%82%89%e6%96%bd%e5%b7%a5%e3%83%bb%e7%b6%ad%e6%8c%81%e7%ae%a1%e7%90%86%e3%81%be/?utm_source=rss&utm_medium=rss&utm_campaign=bim%25e3%2583%25af%25e3%2583%25bc%25e3%2582%25af%25e3%2583%2595%25e3%2583%25ad%25e3%2583%25bc%25ef%25bc%259a%25e8%25a6%2581%25e4%25bb%25b6%25e5%25ae%259a%25e7%25be%25a9%25e3%2581%258b%25e3%2582%2589%25e6%2596%25bd%25e5%25b7%25a5%25e3%2583%25bb%25e7%25b6%25ad%25e6%258c%2581%25e7%25ae%25a1%25e7%2590%2586%25e3%2581%25be",
       "description": "BIM導入で失敗する企業の多くは、ツールを買っただけで終わっています。本記事では、要件定義から施工・維持管理まで一貫したワークフロー設計の全体像を明かし、あなたの組織が確実に成果を生み出すための実践的で具体的なロードマッ [...] <p>The post BIMワークフロー：要件定義から施工・維持管理まで、成功する3つのフェーズを完全解説 first appeared on 生成AIと建設DX....",
@@ -189,16 +199,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/bim_success_3phases_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "三菱商事、鉄筋ミルシート電子管理システム「Mill-Box」の建設現場導入が200現場を突破",
-      "link": "https://news.build-app.jp/article/41412/",
-      "description": "三菱商事株式会社のマテリアルソリューショングループ産業素材DXチームは、クラウド型のミルシート電子管理システム「Mill-Box（ミルボック......",
-      "publishedDate": "Fri, 03 Jul 2026 00:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/mill_box_200_sites-130x98.webp",
       "language": "ja"
     }
   ]
