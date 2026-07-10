@@ -34,7 +34,7 @@
 ```
 Revitの「地味だけど時間を溶かす作業」を無料ツールで潰していきます🛠️
 
-✅アドイン13機能（Revit2021〜2026全対応）
+✅Revitアドイン（対応バージョン幅広く）
 ✅ハッチ(.pat)作成
 ✅図面PDF比較
 ✅構造図PDF→Excel
@@ -48,7 +48,7 @@ https://28tools.com/?utm_source=x&utm_medium=social
 ### 火 12:15｜トップ紹介（No.1）
 
 ```
-Revitの作図を時短する無料ツールを公開してます🛠️ アドイン13機能＋ブラウザ完結のWeb工具（ハッチ作成/PDF比較/PDF→Excel）。インストール不要で今すぐ使えるものも。まずはこちら👇
+Revitの作図を時短する無料ツールを公開してます🛠️ アドイン＆ブラウザツール（ハッチ作成/PDF比較/PDF→Excel）。インストール不要で今すぐ使えるものも。まずはこちら👇
 https://28tools.com/?utm_source=x&utm_medium=social
 #Revit #BIM #作図効率化
 ```
@@ -140,7 +140,7 @@ https://28tools.com/manual/view-copy.html?utm_source=x&utm_medium=social
 ### 水 8:00｜アドイン全体（No.2）
 
 ```
-28ToolsのRevitアドイン、13機能を無料配布中。符号ON/OFF・シート一括作成・視点コピペ・部屋タグ自動配置・型枠数量算出ほか。Revit2021〜2026すべて対応です👇
+28ToolsのRevitアドインを無料配布中。符号ON/OFF・シート一括作成・視点コピペ・部屋タグ自動配置・型枠数量算出ほか。対応バージョンも幅広いです👇
 https://28tools.com/addins.html?utm_source=x&utm_medium=social
 #Revit #Revitアドイン #BIM
 ```
