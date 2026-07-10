@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-09T04:54:44.484099",
+  "lastUpdated": "2026-07-10T04:53:21.619076",
   "articles": [
     {
       "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
@@ -10,17 +10,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/690d0a6c2c5acfe0e1f4777d/1N4GjIYBsZ6RCReRx_qBB.png",
-      "language": "en"
-    },
-    {
-      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
-      "titleJa": "OpenAI と Broadcom が LLM に最適化された推論チップを発表",
-      "link": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-      "description": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems....",
-      "publishedDate": "Wed, 24 Jun 2026 06:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -109,50 +98,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Muse-Image／Muse-Video-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "JR西日本、業界初対話型AIロールプレイング「PeopleX AIロープレ」を導入",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/westjr-peoplex-ai-role-playing/",
-      "description": "JR西日本は、鉄道業界で初めてPeopleXが提供する対話型AIロールプレイング「PeopleX AIロープレ」を導入しました。 このニュースのポイント JR西日本、業界初対話型AIロープレサービス「PeopleX AI [...] The post JR西日本、業界初対話型AIロールプレイング「PeopleX AIロープレ」を導入 first appeared on AIポータルメディアAIsm...",
-      "publishedDate": "Wed, 08 Jul 2026 07:43:34 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/westJR-PeopleX.png",
-      "language": "ja"
-    },
-    {
-      "title": "伊藤忠商事・伊藤忠テクノソリューションズ・豆蔵が業務提携。フィジカルAIの社会実装を推進",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/itochu-ctc-mamezou-partnership/",
-      "description": "伊藤忠商事・CTC・豆蔵の3社は業務提携契約を締結しました。各社の顧客基盤や技術力を生かし、フィジカルAIの社会実装を推進するとともに、構想策定から導入・運用までを一体で支援する体制を強化します。 このニュースのポイント [...] The post 伊藤忠商事・伊藤忠テクノソリューションズ・豆蔵が業務提携。フィジカルAIの社会実装を推進 first appeared on AIポータルメディアA...",
-      "publishedDate": "Wed, 08 Jul 2026 07:37:14 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/Itochu-CTC-Mamezou-Business-partnership.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTのパーソナライズとは？設定のやり方と活用例を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-personalization/",
-      "description": "ChatGPTは初期設定のままだと、毎回自分の職業や好みを説明し直す必要があります。「パーソナライズ設定」を一度行えば、話し方のトーンや回答形式を自分仕様に固定でき、説明の手間を省けます。本記事では、設定手順から職種別の [...] The post ChatGPTのパーソナライズとは？設定のやり方と活用例を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 08 Jul 2026 01:43:04 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/chatgpt-personalization_ic.webp",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTのメールアドレス変更方法と変更できない場合の対処法",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-email-address-change/",
-      "description": "ChatGPTに登録したメールアドレスは、2026年に追加された機能を使えば自分で変更できます。本記事では、ログイン方式ごとの変更手順を画面操作の順番で説明し、変更オプションが出てこない場合の原因と対処法も合わせて紹介し [...] The post ChatGPTのメールアドレス変更方法と変更できない場合の対処法 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 08 Jul 2026 01:41:54 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gptemailmain.png",
       "language": "ja"
     },
     {
@@ -277,10 +222,10 @@
       "language": "en"
     },
     {
-      "title": "Inside Genebench-Pro",
-      "titleJa": "Genebench-Pro の内部",
-      "link": "https://openai.com/index/genebench-pro/case-studies",
-      "description": "...",
+      "title": "Core dump epidemiology: fixing an 18-year-old bug",
+      "titleJa": "コアダンプ疫学: 18 年前のバグを修正",
+      "link": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+      "description": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug....",
       "publishedDate": "Tue, 30 Jun 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -288,10 +233,10 @@
       "language": "en"
     },
     {
-      "title": "Core dump epidemiology: fixing an 18-year-old bug",
-      "titleJa": "コアダンプ疫学: 18 年前のバグを修正",
-      "link": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
-      "description": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug....",
+      "title": "Inside Genebench-Pro",
+      "titleJa": "Genebench-Pro の内部",
+      "link": "https://openai.com/index/genebench-pro/case-studies",
+      "description": "...",
       "publishedDate": "Tue, 30 Jun 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -387,6 +332,17 @@
       "language": "en"
     },
     {
+      "title": "MUFG aims to become AI-native with OpenAI",
+      "titleJa": "MUFG は OpenAI で AI ネイティブを目指す",
+      "link": "https://openai.com/index/mufg",
+      "description": "MUFG uses ChatGPT Enterprise to build an AI-native organization, improve workflows, and deliver new AI-powered financial services at scale....",
+      "publishedDate": "Tue, 07 Jul 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "Australian Payments Plus moves faster with ChatGPT and Codex",
       "titleJa": "Australian Payments Plus は ChatGPT と Codex でより迅速に移行します",
       "link": "https://openai.com/index/australian-payments-plus",
@@ -396,6 +352,94 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "Manus（マヌスAI）とは？どこの国のAI？できることを解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/manus/",
+      "description": "2025年3月5日、中国のスタートアップチームが、自律型汎用AIエージェント「Manus」をリリースしました！ 自律型AIエージェントと聞くとなんとなく凄そうですが、「実際にどんなことができるの？」と疑問に思っている方も [...]...",
+      "publishedDate": "Thu, 09 Jul 2026 09:22:13 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/01/manus_2602-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "LINEヤフー、「LINE」新機能「Agent i in chat」発表。トークルーム内でAIエージェントが会話を支援",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/line-yahoo-agent-in-chat/",
+      "description": "LINEヤフーは、コミュニケーションアプリ「LINE」トークルーム内でAIエージェントを呼び出せる新機能「Agent i in chat」を発表しました。2026年内に提供予定です。 このニュースのポイント 「LINE」 [...] The post LINEヤフー、「LINE」新機能「Agent i in chat」発表。トークルーム内でAIエージェントが会話を支援 first appeared...",
+      "publishedDate": "Thu, 09 Jul 2026 08:44:06 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/lineAgent-iinChatmain.png",
+      "language": "ja"
+    },
+    {
+      "title": "Sakana AI、「Sakana Chat」に翻訳機能を追加。翻訳・添削・質疑機能を搭載し日本語らしさを実現",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/sakana-chat-translate-release/",
+      "description": "Sakana AIは、同社のチャットサービス「Sakana Chat」に日本語・英語・中国語の双方向翻訳に対応した新機能「Sakana Translate」を追加しました。日本仕様モデル「Namazu」を翻訳エンジンに採 [...] The post Sakana AI、「Sakana Chat」に翻訳機能を追加。翻訳・添削・質疑機能を搭載し日本語らしさを実現 first appeared on ...",
+      "publishedDate": "Thu, 09 Jul 2026 08:43:54 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/SakanaTranslatemain.png",
+      "language": "ja"
+    },
+    {
+      "title": "Microsoft、AI変革支援の新組織「Microsoft Frontier Company」発表。25億ドル投資、6000名現場配置",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/microsoft-frontier-company-ai/",
+      "description": "Microsoftは、AIによる変革を支援する新しい事業組織「Microsoft Frontier Company」を発表しました。25億ドルを投資し、6000名を現場に配置してAIシステムの共同設計などを推進します。 [...] The post Microsoft、AI変革支援の新組織「Microsoft Frontier Company」発表。25億ドル投資、6000名現場配置 first ...",
+      "publishedDate": "Thu, 09 Jul 2026 08:43:40 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/MicrosoftFrontierCompanyeye.png",
+      "language": "ja"
+    },
+    {
+      "title": "リコーとライズ・コンサルティング・グループ、AI実装・活用を一貫支援する新会社「リコーAIコンサルティング」を設立",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ricoh-ai-consulting-incorporation/",
+      "description": "リコーとライズ・コンサルティング・グループは、企業の経営課題解決に向け、AX（AIトランスフォーメーション）の実現を支援する新会社「リコーAIコンサルティング株式会社」を設立しました。 このニュースのポイント リコーとラ [...] The post リコーとライズ・コンサルティング・グループ、AI実装・活用を一貫支援する新会社「リコーAIコンサルティング」を設立 first appeared o...",
+      "publishedDate": "Thu, 09 Jul 2026 08:34:28 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/RICOH-RISE-CONSULTING-incorporation.png",
+      "language": "ja"
+    },
+    {
+      "title": "LINEヤフー、Yahoo!ニュースにおけるコメント欄の論点をAIが分析・整理する「ヤフコメまとめ」を提供",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/line-yahoo-comment-organize/",
+      "description": "LINEヤフーは、Yahoo!ニュースのコメント欄で、生成AIが論点を分析・整理する「ヤフコメまとめ」の提供を開始しました。コメント要約機能を拡充し、論点の可視化や意見の傾向把握を支援します。 このニュースのポイント Y [...] The post LINEヤフー、Yahoo!ニュースにおけるコメント欄の論点をAIが分析・整理する「ヤフコメまとめ」を提供 first appeared on AI...",
+      "publishedDate": "Thu, 09 Jul 2026 08:28:35 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/yahoo-news.png",
+      "language": "ja"
+    },
+    {
+      "title": "Copilot（コパイロット）とは？無料版でできること・有料版との違いを解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/copilot-free/",
+      "description": "日々、ハイスピードで進化を続ける生成AI。「情報が多すぎて何から手を付けたら良いのか分からない」「無料で本当に使えるツールはあるの？」など、疑問や悩みは尽きませんよね。 そんな方におすすめなのが、Microsoftが提供 [...]...",
+      "publishedDate": "Thu, 09 Jul 2026 07:48:36 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/copilot-free_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Animagine XL 3.0とは？活用事例8選を紹介！使い方やアニメ画像を実際に生成した検証結果も解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/animaginexl3-usage-example/",
+      "description": "Cagliostro Research Labが、拡散モデルベースのText-to-Imageの画像生成モデル「Animagine XL 3.0」を公開。このAIツールを使うことで、テキスト指示から高画質なアニメ画像を、 [...]...",
+      "publishedDate": "Thu, 09 Jul 2026 07:17:34 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Animagine-xl-3.0_2607-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "Claude音声会話の使い方をとにかくわかりやすく解説！注意点や使ってみた所感も網羅",
@@ -420,61 +464,6 @@
       "language": "ja"
     },
     {
-      "title": "Grokは無料でどこまで使える？有料プランや他AIとの違いを解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/grok-free/",
-      "description": "「Grokを使ってみたら、無料で画像が作れない…」「回数制限の仕組みがよく分からない」とお悩みではないでしょうか。ネット上には古い情報も多く、今のGrokを無料でどこまで使えるのか迷いやすい状況です。 実は2026年のア [...] The post Grokは無料でどこまで使える？有料プランや他AIとの違いを解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 09 Jul 2026 03:38:33 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/grokfreeic2.webp",
-      "language": "ja"
-    },
-    {
-      "title": "「AI博覧会 Summer 2026」新宿住友ビル 三角広場にて8月26日・27日に開催～国産AIで日本のAI導入を推進。LLMからフィジカルAI・ロボットまで幅広く出展～",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-hakurankai-summer-2026/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年8月26日（水）・27日（木）の2日間、新宿住友ビル 三角広場にて「AI博覧会 Summer 2026」を開催します。今回 [...] The post 「AI博覧会 Summer 2026」新宿住友ビル 三角広場にて8月26日・27日に開催～国産AIで日本のAI導入を推進。LLMからフィジカルAI・...",
-      "publishedDate": "Thu, 09 Jul 2026 02:00:21 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/ogpsummer2026.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTで動画作成する方法とは？無料ツールや編集活用を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-video-creation/",
-      "description": "動画作成は専門スキルが必要だと思われがちですが、ChatGPTを使えば企画から台本、画像素材までを自分の手で短時間に整えられます。本記事は、動画作成の外注コストや作業時間を抑えたい中小企業の担当者や個人クリエイターに向け [...] The post ChatGPTで動画作成する方法とは？無料ツールや編集活用を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 09 Jul 2026 01:48:42 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gptvideocreation.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPT「制限に達しました」の意味と解除・回避方法を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-limit-solution/",
-      "description": "ChatGPTで「制限に達しました」と表示され、作業の手が止まった経験がある方は少なくないでしょう。本記事では制限の種類とプランごとの違い、適切な対処法、さらに制限中に役立つ代替AIサービスまで解説します。日常的にCha [...] The post ChatGPT「制限に達しました」の意味と解除・回避方法を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 09 Jul 2026 01:48:03 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/chatgptlimitmain.png",
-      "language": "ja"
-    },
-    {
-      "title": "アイスマイリー、7/22（水）から3日間「AI World 2026 夏 東京」に出展　ブース予約でAmazonギフト1,500円分プレゼント！",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-world-2026-summer-tokyo/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年7月22日（水）～24日（金）に幕張メッセにて開催される「AI World 2026 夏 東京」にブース出展をします。 ブ [...] The post アイスマイリー、7/22（水）から3日間「AI World 2026 夏 東京」に出展 ブース予約でAmazonギフト1,500円分プレゼント！ f...",
-      "publishedDate": "Thu, 09 Jul 2026 01:00:31 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/EXPO_Main.png",
-      "language": "ja"
-    },
-    {
       "title": "【GPT-Live】AIとの音声会話が本物に近づく！OpenAI最新のフルデュプレックス音声モデルの使い方・仕組み・料金を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/gpt-live/",
@@ -483,17 +472,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-Live-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【AI運用フェーズ】導入後が本当の勝負！成功に導くポイントと全体プロセスを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/ai-operations-phase/",
-      "description": "AIを導入したものの、期待通りの効果が出ないと悩んでいませんか？実は、こうした悩みは多くの企業に共通しています。2026年の帝国データバンクの調査によると、生成AI活用の課題として、「専門人材・ノウハウ不足（41.3%） [...]...",
-      "publishedDate": "Thu, 02 Jul 2026 08:29:42 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-Operations-Phase_2606-1024x576.webp",
       "language": "ja"
     },
     {
@@ -519,36 +497,69 @@
       "language": "ja"
     },
     {
-      "title": "AIエージェントおすすめサービス9選を厳選解説！選び方もわかりやすく解説",
+      "title": "アイスマイリー、 7/29（水）から3日間「イプロスAI 2026 夏」にブース出展。来場登録・実来場でAmazonギフト500円分プレゼント！",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/recommended-ai-agents/",
-      "description": "近年、多くの企業が業務効率化や生産性向上を目的にAI活用を進めています。その中でも特に注目を集めているのが「AIエージェント」です。 しかし、「AIエージェントとは何か？」「ChatGPTとは何が違うのか？」「実際にどの [...]...",
-      "publishedDate": "Fri, 03 Jul 2026 12:14:29 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-contract-development_2606-1-1024x576.webp",
+      "link": "https://aismiley.co.jp/ai_news/ipros-ai-expo-2026-summer/",
+      "description": "AIsmileyとAIsmiley Communityは、2026年7月29日（水）～7月31日（金）に有明GYM-EXにて開催の「イプロスAI」にブースを出展します。 来場登録＋実来場で500円分のAmazonギフトカ [...] The post アイスマイリー、 7/29（水）から3日間「イプロスAI 2026 夏」にブース出展。来場登録・実来場でAmazonギフト500円分プレゼント！ f...",
+      "publishedDate": "Fri, 10 Jul 2026 04:00:01 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ipros-main-1.png",
       "language": "ja"
     },
     {
-      "title": "VSCode AIエージェント比較！使い方・料金・業務導入の注意点を検証",
+      "title": "「AI-OCR業界別・ユースケース集」を公開！「脱・手入力」を実現する小売・物流・医療など6業界の成功事例と導入時のポイントを紹介",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/vscode-ai-agent/",
-      "description": "VSCodeのAIエージェントは、自然言語の指示でファイル編集やコマンド実行まで支援する開発機能です。無料で試せるのか、業務コードに使って安全なのか迷う方も多いでしょう。 本記事では、GitHub Copilot Age [...]...",
-      "publishedDate": "Fri, 03 Jul 2026 04:35:55 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/vscode-ai-agent_2607-1024x576.webp",
+      "link": "https://aismiley.co.jp/ai_news/ai-ocr-guide/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、請求書や伝票などの「脱・手入力」を実現する実践的な資料「AI-OCR業界別・ユースケース集」を、2026年7月10日（金）に公開しま [...] The post 「AI-OCR業界別・ユースケース集」を公開！「脱・手入力」を実現する小売・物流・医療など6業界の成功事例と導入時のポイントを紹介 first ap...",
+      "publishedDate": "Fri, 10 Jul 2026 03:00:37 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/ai-ocr-guide_00.png",
       "language": "ja"
     },
     {
-      "title": "【Claude Science】科学研究を1つのアプリに統合するAnthropicのAIワークベンチを徹底解説！",
+      "title": "ChatGPTをログインなしで使う方法と制限・安全性を解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-science/",
-      "description": "2026年7月1日、Anthropicが科学研究向けの新アプリ「Claude Science」をベータ版として公開しました！ Claude Codeがソフトウェア開発の現場を大きく変えたように、Claude Scienc [...]...",
-      "publishedDate": "Fri, 03 Jul 2026 03:22:35 +0000",
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-not-login-openai/",
+      "description": "ChatGPTはアカウント登録なしでも試せます。本記事では、ログインなしで使う具体的な手順と利用できる範囲、安全に使うための注意点、使えなくなったときの対処法まで分かりやすく解説します。これからAIを試したい方や、アカウ [...] The post ChatGPTをログインなしで使う方法と制限・安全性を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 10 Jul 2026 01:33:45 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/chatgptnotloginic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIで財務業務が変わる！活用事例やプロンプト、メリット＆注意点を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/generation-ai-financial-operations/",
+      "description": "経理・財務部門において、日々のデータ入力や書類の確認作業に追われ、本来注力すべき分析業務に時間が割けないと悩む担当者は少なくありません。そうした中、生成AIを活用して業務を効率化する企業が増えています。 この記事では、生 [...]...",
+      "publishedDate": "Fri, 10 Jul 2026 01:25:37 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Science-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Generation-AI-financial-operations_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPT音声会話の使い方とは？無料・有料の制限や活用例を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-voice-conversation/",
+      "description": "ChatGPTに話しかけるだけでAIと音声でやり取りできる「音声会話」機能があります。 本記事では、音声会話の仕組みや始め方、無料版・有料版の利用条件の違い、語学学習や面接練習などの具体的な活用例まで分かりやすく解説しま [...] The post ChatGPT音声会話の使い方とは？無料・有料の制限や活用例を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 10 Jul 2026 01:24:28 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/chatgptvoiceconversationic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "JavaScriptランタイムのBun、Claude Fable 5を11日間稼働させてZigからRustへの移植を実現。Claudeをどう使ったのか？",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/javascriptbunclaude_fable_511zigrustclaude.html",
+      "description": "JavaScriptランタイム「Bun」の作者であるJarred Sumner氏は、7月8日付けで公開したBun公式ブログの記事「Rewriting Bun in Rust | Bun Blog」で、約53万5000行のZig言語のコードを......",
+      "publishedDate": "2026-07-09T15:47:05Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/qFZWff4P.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/HLrDgmTaIAA5eaw.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "AWS Lambda MicroVMs登場。サーバレスの手軽さでステートフルかつ隔離された実行環境を提供",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/aws_lambda_microvms.html",
-      "description": "Amazon Web Servicesは、AWS Lambda上で一時的にステートフルな実行環境をMicroVMによって安全に隔離された状態で用意できる新サービス「AWS Lambda Micro VMs」を発表しました。 AWS Lamb......",
-      "publishedDate": "2026-06-24T15:40:24Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/awslambda-microvms-ann.png",
       "language": "ja"
     }
   ]
