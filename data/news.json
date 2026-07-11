@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T02:02:39.275833",
+  "lastUpdated": "2026-07-11T01:49:50.789693",
   "articles": [
     {
       "title": "【2026年版】酸素欠乏危険作業主任者とは？｜仕事内容・取得方法・合格率・特別教育との違いを解説",
@@ -19,16 +19,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/copilot_studio_bim_ai-130x73.webp",
-      "language": "ja"
-    },
-    {
-      "title": "黒川紀章とアスタナが映し出す都市計画の光と影｜カザフスタンの新首都の現実と建築家の射程との乖離",
-      "link": "https://news.build-app.jp/article/40990/",
-      "description": "カザフスタンのステップに聳える人工都市アスタナ。その青と金に輝く未来的なスカイラインは、1998年の国際コンペで勝利を収めた日本人建築家・黒......",
-      "publishedDate": "Tue, 07 Jul 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/20260708_hirayama-130x82.jpg",
       "language": "ja"
     },
     {
@@ -132,46 +122,6 @@
       "language": "ja"
     },
     {
-      "title": "Grok 4.5の公開日はいつ？Opus超え発言の裏側を徹底予測",
-      "link": "https://axconstdx.com/2026/07/05/grok-4-5%e3%81%ae%e5%85%ac%e9%96%8b%e6%97%a5%e3%81%af%e3%81%84%e3%81%a4%ef%bc%9fopus%e8%b6%85%e3%81%88%e7%99%ba%e8%a8%80%e3%81%ae%e8%a3%8f%e5%81%b4%e3%82%92%e5%be%b9%e5%ba%95%e4%ba%88%e6%b8%ac/?utm_source=rss&utm_medium=rss&utm_campaign=grok-4-5%25e3%2581%25ae%25e5%2585%25ac%25e9%2596%258b%25e6%2597%25a5%25e3%2581%25af%25e3%2581%2584%25e3%2581%25a4%25ef%25bc%259fopus%25e8%25b6%2585%25e3%2581%2588%25e7%2599%25ba%25e8%25a8%2580%25e3%2581%25ae%25e8%25a3%258f%25e5%2581%25b4%25e3%2582%2592%25e5%25be%25b9%25e5%25ba%2595%25e4%25ba%2588%25e6%25b8%25ac",
-      "description": "2026年6月28日、イーロン・マスク氏がGrok 4.5の存在を明かしました。SpaceXとTeslaでの社内テストは始まったものの、一般公開日はまだ示されていません。本記事では、発表内容と過去のふるまいをもとに、公開 [...] <p>The post Grok 4.5の公開日はいつ？Opus超え発言の裏側を徹底予測 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sun, 05 Jul 2026 11:02:34 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/grok45_release_prediction_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "AutoCAD代替でコスト半減？ARES Standardの現実",
-      "link": "https://axconstdx.com/2026/07/05/autocad%e4%bb%a3%e6%9b%bf%e3%81%a7%e3%82%b3%e3%82%b9%e3%83%88%e5%8d%8a%e6%b8%9b%ef%bc%9fares-standard%e3%81%ae%e7%8f%be%e5%ae%9f/?utm_source=rss&utm_medium=rss&utm_campaign=autocad%25e4%25bb%25a3%25e6%259b%25bf%25e3%2581%25a7%25e3%2582%25b3%25e3%2582%25b9%25e3%2583%2588%25e5%258d%258a%25e6%25b8%259b%25ef%25bc%259fares-standard%25e3%2581%25ae%25e7%258f%25be%25e5%25ae%259f",
-      "description": "2D図面業務の予算が課題ですか？ARES Standardは永久ライセンス税込93,500円で、2年目以降は年間22,000円程度です。AutoCADの半分以下の継続コストで、DWGネイティブ対応の互換性も高く、建設・製 [...] <p>The post AutoCAD代替でコスト半減？ARES Standardの現実 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sun, 05 Jul 2026 07:20:29 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-under100kb-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "FDE育成のガイドラインを完全解説、3つの力で半年独り立ち",
-      "link": "https://axconstdx.com/2026/07/05/fde%e8%82%b2%e6%88%90%e3%81%ae%e3%82%ac%e3%82%a4%e3%83%89%e3%83%a9%e3%82%a4%e3%83%b3%e3%82%92%e5%ae%8c%e5%85%a8%e8%a7%a3%e8%aa%ac%e3%80%813%e3%81%a4%e3%81%ae%e5%8a%9b%e3%81%a7%e5%8d%8a%e5%b9%b4/?utm_source=rss&utm_medium=rss&utm_campaign=fde%25e8%2582%25b2%25e6%2588%2590%25e3%2581%25ae%25e3%2582%25ac%25e3%2582%25a4%25e3%2583%2589%25e3%2583%25a9%25e3%2582%25a4%25e3%2583%25b3%25e3%2582%2592%25e5%25ae%258c%25e5%2585%25a8%25e8%25a7%25a3%25e8%25aa%25ac%25e3%2580%25813%25e3%2581%25a4%25e3%2581%25ae%25e5%258a%259b%25e3%2581%25a7%25e5%258d%258a%25e5%25b9%25b4",
-      "description": "AI導入の鍵を握る人材が足りない。経営層の誰もが実感する焦燥感です。その人材、実は市場にはほぼ存在しません。ならば自社で育てるしかないのです。この記事では、采配者が知るべき育成の全手順を、実践的なステップで明かします。 [...] <p>The post FDE育成のガイドラインを完全解説、3つの力で半年独り立ち first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sun, 05 Jul 2026 03:29:33 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/fde_roadmap_under_100kb-1024x538.webp",
-      "language": "ja"
-    },
-    {
-      "title": "図面遅延ゼロへ、いまARES CADが選ばれる3つの理由",
-      "link": "https://axconstdx.com/2026/07/05/%e5%9b%b3%e9%9d%a2%e9%81%85%e5%bb%b6%e3%82%bc%e3%83%ad%e3%81%b8%e3%80%81%e3%81%84%e3%81%beares-cad%e3%81%8c%e9%81%b8%e3%81%b0%e3%82%8c%e3%82%8b3%e3%81%a4%e3%81%ae%e7%90%86%e7%94%b1/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%259b%25b3%25e9%259d%25a2%25e9%2581%2585%25e5%25bb%25b6%25e3%2582%25bc%25e3%2583%25ad%25e3%2581%25b8%25e3%2580%2581%25e3%2581%2584%25e3%2581%25beares-cad%25e3%2581%258c%25e9%2581%25b8%25e3%2581%25b0%25e3%2582%258c%25e3%2582%258b3%25e3%2581%25a4%25e3%2581%25ae%25e7%2590%2586%25e7%2594%25b1",
-      "description": "AutoCADの高額なライセンスと、現場・設計間の図面ズレに悩む企業は多くあります。この課題を根本から解決するCADが「ARES CAD」です。本記事では、乗り換え判断から導入ステップまで、必要なすべてを解説します。 は [...] <p>The post 図面遅延ゼロへ、いまARES CADが選ばれる3つの理由 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sat, 04 Jul 2026 19:09:26 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100kb-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "間取り画像からDXF自動生成|Claude＋ezdxfで図面デジタル化を実現する方法",
       "link": "https://axconstdx.com/2026/07/06/%e9%96%93%e5%8f%96%e3%82%8a%e7%94%bb%e5%83%8f%e3%81%8b%e3%82%89dxf%e8%87%aa%e5%8b%95%e7%94%9f%e6%88%90claude%ef%bc%8bezdxf%e3%81%a7%e5%9b%b3%e9%9d%a2%e3%83%87%e3%82%b8%e3%82%bf%e3%83%ab%e5%8c%96/?utm_source=rss&utm_medium=rss&utm_campaign=%25e9%2596%2593%25e5%258f%2596%25e3%2582%258a%25e7%2594%25bb%25e5%2583%258f%25e3%2581%258b%25e3%2582%2589dxf%25e8%2587%25aa%25e5%258b%2595%25e7%2594%259f%25e6%2588%2590claude%25ef%25bc%258bezdxf%25e3%2581%25a7%25e5%259b%25b3%25e9%259d%25a2%25e3%2583%2587%25e3%2582%25b8%25e3%2582%25bf%25e3%2583%25ab%25e5%258c%2596",
       "description": "スキャンした間取り画像を見つめながら「これをCADデータにしないといけない…」とため息をついていませんか？ 外注は高い、手作業は遅い、でもデジタル化は必須—建築現場のこのジレンマは終わりです。本記事が解説するのは、寸法記 [...] <p>The post 間取り画像からDXF自動生成|Claude＋ezdxfで図面デジタル化を実現する方法 first appeared on 生成AIと建設DX....",
@@ -189,6 +139,56 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/sakana_translate_ogp_under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "なぜGoogle27年で世界インフラに？AIが切り拓く検索の未来",
+      "link": "https://axconstdx.com/2026/07/10/%e3%81%aa%e3%81%9cgoogle27%e5%b9%b4%e3%81%a7%e4%b8%96%e7%95%8c%e3%82%a4%e3%83%b3%e3%83%95%e3%83%a9%e3%81%ab%ef%bc%9fai%e3%81%8c%e5%88%87%e3%82%8a%e6%8b%93%e3%81%8f%e6%a4%9c%e7%b4%a2%e3%81%ae%e6%9c%aa/?utm_source=rss&utm_medium=rss&utm_campaign=%25e3%2581%25aa%25e3%2581%259cgoogle27%25e5%25b9%25b4%25e3%2581%25a7%25e4%25b8%2596%25e7%2595%258c%25e3%2582%25a4%25e3%2583%25b3%25e3%2583%2595%25e3%2583%25a9%25e3%2581%25ab%25ef%25bc%259fai%25e3%2581%258c%25e5%2588%2587%25e3%2582%258a%25e6%258b%2593%25e3%2581%258f%25e6%25a4%259c%25e7%25b4%25a2%25e3%2581%25ae%25e6%259c%25aa",
+      "description": "毎日、何気なく使っているGoogleの検索ボックス。しかし、世界中の人々が依存するこの巨大なインフラがどのように成長し、AIの時代にどう変わろうとしているかを理解している人は、意外と少ないもの。この記事では、27年間の軌 [...] <p>The post なぜGoogle27年で世界インフラに？AIが切り拓く検索の未来 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Fri, 10 Jul 2026 13:22:44 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/google_27years_1200x630_under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "GPT-5.6で「あなたの仕事」は何が変わるか",
+      "link": "https://axconstdx.com/2026/07/10/gpt-5-6%e3%81%a7%e3%80%8c%e3%81%82%e3%81%aa%e3%81%9f%e3%81%ae%e4%bb%95%e4%ba%8b%e3%80%8d%e3%81%af%e4%bd%95%e3%81%8c%e5%a4%89%e3%82%8f%e3%82%8b%e3%81%8b/?utm_source=rss&utm_medium=rss&utm_campaign=gpt-5-6%25e3%2581%25a7%25e3%2580%258c%25e3%2581%2582%25e3%2581%25aa%25e3%2581%259f%25e3%2581%25ae%25e4%25bb%2595%25e4%25ba%258b%25e3%2580%258d%25e3%2581%25af%25e4%25bd%2595%25e3%2581%258c%25e5%25a4%2589%25e3%2582%258f%25e3%2582%258b%25e3%2581%258b",
+      "description": "毎日、数時間を費やす『資料修正』『数字確認』『調整作業』。その退屈な繰り返しから、あなたを解放するAIが、もう間もなく日常へ浸透していきます。本記事では、このような業務効率化を実現するGPT-5.6の活用方法を、多くの企 [...] <p>The post GPT-5.6で「あなたの仕事」は何が変わるか first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Fri, 10 Jul 2026 11:18:19 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100KB-2-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "GPT-5.6 Solが有力な理由｜Claude Fable 5との決定的な差",
+      "link": "https://axconstdx.com/2026/07/10/gpt-5-6-sol%e3%81%8c%e6%9c%89%e5%8a%9b%e3%81%aa%e7%90%86%e7%94%b1%ef%bd%9cclaude-fable-5%e3%81%a8%e3%81%ae%e6%b1%ba%e5%ae%9a%e7%9a%84%e3%81%aa%e5%b7%ae/?utm_source=rss&utm_medium=rss&utm_campaign=gpt-5-6-sol%25e3%2581%258c%25e6%259c%2589%25e5%258a%259b%25e3%2581%25aa%25e7%2590%2586%25e7%2594%25b1%25ef%25bd%259cclaude-fable-5%25e3%2581%25a8%25e3%2581%25ae%25e6%25b1%25ba%25e5%25ae%259a%25e7%259a%2584%25e3%2581%25aa%25e5%25b7%25ae",
+      "description": "「どちらを選べば失敗しないのか」——AI導入を決断する瞬間、多くの企業が迷います。本記事では、性能だけでなく、実務での選択肢を数値と事例で明確にし、あなたの判断を後押しします。 はじめに 2026年、企業のAI導入担当者 [...] <p>The post GPT-5.6 Solが有力な理由｜Claude Fable 5との決定的な差 first appeared on 生成AIと建設DX.</p...",
+      "publishedDate": "Fri, 10 Jul 2026 09:28:56 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-1-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPT Sitesが変える2026年のWeb制作：誰もが制作者に",
+      "link": "https://axconstdx.com/2026/07/10/chatgpt-sites%e3%81%8c%e5%a4%89%e3%81%88%e3%82%8b2026%e5%b9%b4%e3%81%aeweb%e5%88%b6%e4%bd%9c%ef%bc%9a%e8%aa%b0%e3%82%82%e3%81%8c%e5%88%b6%e4%bd%9c%e8%80%85%e3%81%ab/?utm_source=rss&utm_medium=rss&utm_campaign=chatgpt-sites%25e3%2581%258c%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b2026%25e5%25b9%25b4%25e3%2581%25aeweb%25e5%2588%25b6%25e4%25bd%259c%25ef%25bc%259a%25e8%25aa%25b0%25e3%2582%2582%25e3%2581%258c%25e5%2588%25b6%25e4%25bd%259c%25e8%2580%2585%25e3%2581%25ab",
+      "description": "あなたのデジタル戦略は「プログラマー不足」「高い制作費」で止まっていませんか？2026年7月、その常識が覆ります。ChatGPT Sitesなら会話形式だけで企業サイトから業務システムまで数日で実装でき、予算も人員も最小 [...] <p>The post ChatGPT Sitesが変える2026年のWeb制作：誰もが制作者に first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Fri, 10 Jul 2026 06:26:46 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/chatgpt-sites-1200x630-1-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "西松建設ら4社、CO₂排出量を7割削減するアルカリ活性材料コンクリートの量産化技術を開発",
+      "link": "https://news.build-app.jp/article/41503/",
+      "description": "西松建設は、宇都宮大学、JFEスチール株式会社、共和コンクリート工業株式会社との共同研究により、セメントを使わない低炭素コンクリート「アルカ......",
+      "publishedDate": "Fri, 10 Jul 2026 03:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/aam_concrete_mass_production-130x62.jpg",
       "language": "ja"
     },
     {
