@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-11T01:49:50.789693",
+  "lastUpdated": "2026-07-12T01:52:08.610855",
   "articles": [
     {
       "title": "【2026年版】酸素欠乏危険作業主任者とは？｜仕事内容・取得方法・合格率・特別教育との違いを解説",
@@ -102,23 +102,33 @@
       "language": "ja"
     },
     {
-      "title": "confBuildとは？AI×パラメトリック設計で営業・設計・製造を一体化",
-      "link": "https://axconstdx.com/2026/07/06/confbuild%e3%81%a8%e3%81%af%ef%bc%9faix%e3%83%91%e3%83%a9%e3%83%a1%e3%83%88%e3%83%aa%e3%83%83%e3%82%af%e8%a8%ad%e8%a8%88%e3%81%a7%e5%96%b6%e6%a5%ad%e3%83%bb%e8%a8%ad%e8%a8%88%e3%83%bb%e8%a3%bd/?utm_source=rss&utm_medium=rss&utm_campaign=confbuild%25e3%2581%25a8%25e3%2581%25af%25ef%25bc%259faix%25e3%2583%2591%25e3%2583%25a9%25e3%2583%25a1%25e3%2583%2588%25e3%2583%25aa%25e3%2583%2583%25e3%2582%25af%25e8%25a8%25ad%25e8%25a8%2588%25e3%2581%25a7%25e5%2596%25b6%25e6%25a5%25ad%25e3%2583%25bb%25e8%25a8%25ad%25e8%25a8%2588%25e3%2583%25bb%25e8%25a3%25bd",
-      "description": "営業現場で「もっと素早く提案できたら」と歯がゆい思いをしていませんか？カスタマイズ需要が高い製品ほど、設計の重さが営業の足を引っ張り、成約までのリードタイムが長くなるのが現実です。しかし、生成AIとパラメトリック設計を組 [...] <p>The post confBuildとは？AI×パラメトリック設計で営業・設計・製造を一体化 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sun, 05 Jul 2026 22:20:59 +0000",
+      "title": "凡人でも10倍の生産性。生成AIで1ヶ月が2日に",
+      "link": "https://axconstdx.com/2026/07/11/%e5%87%a1%e4%ba%ba%e3%81%a7%e3%82%8210%e5%80%8d%e3%81%ae%e7%94%9f%e7%94%a3%e6%80%a7%e3%80%82%e7%94%9f%e6%88%90ai%e3%81%a71%e3%83%b6%e6%9c%88%e3%81%8c2%e6%97%a5%e3%81%ab/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%2587%25a1%25e4%25ba%25ba%25e3%2581%25a7%25e3%2582%258210%25e5%2580%258d%25e3%2581%25ae%25e7%2594%259f%25e7%2594%25a3%25e6%2580%25a7%25e3%2580%2582%25e7%2594%259f%25e6%2588%2590ai%25e3%2581%25a71%25e3%2583%25b6%25e6%259c%2588%25e3%2581%258c2%25e6%2597%25a5%25e3%2581%25ab",
+      "description": "有名大学を出ていない、平凡なシステムエンジニアが、生成AIで人生が変わった。1ヶ月の仕事が2日で終わり、品質も上がった。その秘訣は、学歴でも才能でもなく、4つの仕組みを知っているかどうか。実現可能な方法を、今からあなたも [...] <p>The post 凡人でも10倍の生産性。生成AIで1ヶ月が2日に first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sat, 11 Jul 2026 10:26:27 +0000",
       "source": "生成AIと建設DX",
       "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100kb-4-1024x538.jpg",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-under100KB-4-1024x538.jpg",
       "language": "ja"
     },
     {
-      "title": "SWE-bench Pro でAIコーディング能力を測る：Fable 5が80%超の理由",
-      "link": "https://axconstdx.com/2026/07/06/swe-bench-pro-%e3%81%a7ai%e3%82%b3%e3%83%bc%e3%83%87%e3%82%a3%e3%83%b3%e3%82%b0%e8%83%bd%e5%8a%9b%e3%82%92%e6%b8%ac%e3%82%8b%ef%bc%9afable-5%e3%81%8c80%e8%b6%85%e3%81%ae%e7%90%86%e7%94%b1/?utm_source=rss&utm_medium=rss&utm_campaign=swe-bench-pro-%25e3%2581%25a7ai%25e3%2582%25b3%25e3%2583%25bc%25e3%2583%2587%25e3%2582%25a3%25e3%2583%25b3%25e3%2582%25b0%25e8%2583%25bd%25e5%258a%259b%25e3%2582%2592%25e6%25b8%25ac%25e3%2582%258b%25ef%25bc%259afable-5%25e3%2581%258c80%25e8%25b6%2585%25e3%2581%25ae%25e7%2590%2586%25e7%2594%25b1",
-      "description": "最新のAIベンチマークは80%超を記録しながら、なぜ現場導入は失敗するのか。実は「スコアの高さ」と「実務での成果」は別物です。この記事では、生成AIのモデル選定で失敗しないための判断基準と、自社に最適なAIを見極める方法 [...] <p>The post SWE-bench Pro でAIコーディング能力を測る：Fable 5が80%超の理由 first appeared on 生成AIと建設D...",
-      "publishedDate": "Sun, 05 Jul 2026 19:00:58 +0000",
+      "title": "AI時代の働き方が今、変わる—ChatGPT Workの衝撃",
+      "link": "https://axconstdx.com/2026/07/11/ai%e6%99%82%e4%bb%a3%e3%81%ae%e5%83%8d%e3%81%8d%e6%96%b9%e3%81%8c%e4%bb%8a%e3%80%81%e5%a4%89%e3%82%8f%e3%82%8b-chatgpt-work%e3%81%ae%e8%a1%9d%e6%92%83/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e6%2599%2582%25e4%25bb%25a3%25e3%2581%25ae%25e5%2583%258d%25e3%2581%258d%25e6%2596%25b9%25e3%2581%258c%25e4%25bb%258a%25e3%2580%2581%25e5%25a4%2589%25e3%2582%258f%25e3%2582%258b-chatgpt-work%25e3%2581%25ae%25e8%25a1%259d%25e6%2592%2583",
+      "description": "あなたの毎日の仕事のうち、何割が「やるべきだけど、正直やりたくない作業」で占められていますか？ChatGPT Workの登場により、その答えが根本から変わろうとしています。本記事では、仕事を完成させるまでをAIが担当する [...] <p>The post AI時代の働き方が今、変わる—ChatGPT Workの衝撃 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sat, 11 Jul 2026 08:03:09 +0000",
       "source": "生成AIと建設DX",
       "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100kb-3-1024x538.jpg",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100kb-7-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIアイドルは誰が作っているのか",
+      "link": "https://axconstdx.com/2026/07/11/%e7%94%9f%e6%88%90ai%e3%82%a2%e3%82%a4%e3%83%89%e3%83%ab%e3%81%af%e8%aa%b0%e3%81%8c%e4%bd%9c%e3%81%a3%e3%81%a6%e3%81%84%e3%82%8b%e3%81%ae%e3%81%8b/?utm_source=rss&utm_medium=rss&utm_campaign=%25e7%2594%259f%25e6%2588%2590ai%25e3%2582%25a2%25e3%2582%25a4%25e3%2583%2589%25e3%2583%25ab%25e3%2581%25af%25e8%25aa%25b0%25e3%2581%258c%25e4%25bd%259c%25e3%2581%25a3%25e3%2581%25a6%25e3%2581%2584%25e3%2582%258b%25e3%2581%25ae%25e3%2581%258b",
+      "description": "生成AIアイドルは、画像・映像・音声・楽曲をAIで自動生成するデジタル芸能人です。 2024年以降、韓国や日本のエンタメ業界で急速に広がり始めており、従来のCGキャラクターとの違いが注目されています。 本記事では、生成A [...] <p>The post 生成AIアイドルは誰が作っているのか first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sat, 11 Jul 2026 04:48:16 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-1-1-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -129,16 +139,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-under100kb-2-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "日本語に特化した翻訳AI「Sakana Translate」で多言語対応を効率化",
-      "link": "https://axconstdx.com/2026/07/06/%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%81%ab%e7%89%b9%e5%8c%96%e3%81%97%e3%81%9f%e7%bf%bb%e8%a8%b3ai%e3%80%8csakana-translate%e3%80%8d%e3%81%a7%e5%a4%9a%e8%a8%80%e8%aa%9e%e5%af%be%e5%bf%9c%e3%82%92%e5%8a%b9/?utm_source=rss&utm_medium=rss&utm_campaign=%25e6%2597%25a5%25e6%259c%25ac%25e8%25aa%259e%25e3%2581%25ab%25e7%2589%25b9%25e5%258c%2596%25e3%2581%2597%25e3%2581%259f%25e7%25bf%25bb%25e8%25a8%25b3ai%25e3%2580%258csakana-translate%25e3%2580%258d%25e3%2581%25a7%25e5%25a4%259a%25e8%25a8%2580%25e8%25aa%259e%25e5%25af%25be%25e5%25bf%259c%25e3%2582%2592%25e5%258a%25b9",
-      "description": "英語メールの敬語がぎこちなく見える、翻訳した資料から日本文化の温度感が伝わらない。そうした悩みは、無料で今すぐ解決できます。日本語の奥深さを理解したAIが、あなたの言葉を正確に世界へ届けます。 はじめに 英語や中国語の文 [...] <p>The post 日本語に特化した翻訳AI「Sakana Translate」で多言語対応を効率化 first appeared on 生成AIと建設DX.</...",
-      "publishedDate": "Mon, 06 Jul 2026 08:07:00 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/sakana_translate_ogp_under100kb-1024x538.jpg",
       "language": "ja"
     },
     {
