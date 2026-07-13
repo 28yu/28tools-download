@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-12T04:26:09.961682",
+  "lastUpdated": "2026-07-13T04:31:23.726636",
   "articles": [
     {
       "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
@@ -113,7 +113,7 @@
     },
     {
       "title": "The latest AI news we announced in June 2026",
-      "titleJa": "2026年6月に発表したAI最新ニュース",
+      "titleJa": "2026 年 6 月に発表された AI の最新ニュース",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
       "description": "June Pixel Drop hero...",
       "publishedDate": "Wed, 01 Jul 2026 18:15:00 +0000",
@@ -365,14 +365,14 @@
       "language": "ja"
     },
     {
-      "title": "Claude音声会話の使い方をとにかくわかりやすく解説！注意点や使ってみた所感も網羅",
+      "title": "AIエージェントは無料で使えるのか？おすすめ7選と選び方・注意点を企業担当者向けに解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/claude-voice-conversation/",
-      "description": "Claudeは、テキスト入力だけでなく音声でAIと会話できる「音声会話（Voice Mode）」に対応しています。スマートフォンアプリやブラウザから利用でき、マイクボタンをタップして話しかけるだけでClaudeと対話でき [...]...",
-      "publishedDate": "Thu, 09 Jul 2026 04:16:46 +0000",
+      "link": "https://weel.co.jp/media/innovator/free-ai-agents/",
+      "description": "AIエージェントは、情報収集や資料作成、定型業務の自動化などを自律的に進められるAIツールです。近年は無料で利用できるサービスも増えており、コストをかけずに業務効率化を試せるようになりました。 とはいえ、「無料でも実用的 [...]...",
+      "publishedDate": "Sun, 12 Jul 2026 14:03:24 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Voice-Conversation_2606-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Free-AI-agents_2606-1024x576.webp",
       "language": "ja"
     },
     {
@@ -395,6 +395,61 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_ChatGPT-Work-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "GPT-Liveとは？OpenAI最新音声モデルの仕組み・使い方・料金を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-gpt-live/",
+      "description": "GPT-Liveは、OpenAIが2026年7月8日に発表した新世代の音声モデルです。聞きながら話せるフルデュプレックス構造の仕組み、Advanced Voice Modeとの違い、プラン別の料金と提供範囲、法人利用の可 [...] The post GPT-Liveとは？OpenAI最新音声モデルの仕組み・使い方・料金を解説 first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Mon, 13 Jul 2026 03:20:11 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gptlivemain.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTでスライド作成する方法とプロンプトのコツを徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-create-slide-presentations/",
+      "description": "ChatGPTでスライド作成をしてみたいけれど、何から手を付ければよいか分からない方は多いのではないでしょうか。 本記事では構成案の作り方から具体的なプロンプト例、仕上げのチェックポイントまで順番に解説します。資料作成に [...] The post ChatGPTでスライド作成する方法とプロンプトのコツを徹底解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 13 Jul 2026 02:05:48 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gptslidepresentations.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTで写真加工・イラスト生成のやり方とプロンプトを解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-photo-illustration-explanation/",
+      "description": "ChatGPTを使うと、手持ちの写真をイラスト風に変えたり、ゼロから画像を作ったりする作業が、文章の指示だけで完結します。 本記事では、操作の手順からプロンプトの工夫、利用時の注意点まで、初めて触る方にも分かるように紹介 [...] The post ChatGPTで写真加工・イラスト生成のやり方とプロンプトを解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 13 Jul 2026 01:46:54 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/chatgptphotoillustrationic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claudeを日本語で使う方法｜Web・アプリ・Codeの設定を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-japanese/",
+      "description": "「Claudeは日本語に対応しているのか」「日本語にするために設定は必要あるのか」。Claudeを使い始めた方から、このような声をよく聞きます。 結論からお伝えすると、Claudeは日本語の入出力に標準対応しており、多く [...] The post Claudeを日本語で使う方法｜Web・アプリ・Codeの設定を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 13 Jul 2026 01:28:22 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/claudejapaneseic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【7月29日開催】AIエージェントサミットSummer2026",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/20260729webinar/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年7月29日（水）12時からAIエージェントをテーマにサミットを開催いたします。 本イベントでは、今最も注目される「自律型A [...] The post 【7月29日開催】AIエージェントサミットSummer2026 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 13 Jul 2026 01:00:37 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/1120_1200x628_5.jpg",
       "language": "ja"
     },
     {
@@ -486,50 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "Claudeは画像生成ができない？最新機能と代替手段を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-image-generation/",
-      "description": "「ChatGPTやGeminiでは画像生成できるけどClaudeはできるの？」と疑問を抱いている方も多いのではないでしょうか。 実は2026年、Claudeのビジュアル機能は大きく変わりました。写真・イラストの生成こそで [...] The post Claudeは画像生成ができない？最新機能と代替手段を徹底解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 10 Jul 2026 05:58:52 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/claudeimagegenerationic.webp",
-      "language": "ja"
-    },
-    {
-      "title": "アイスマイリー、 7/29（水）から3日間「イプロスAI 2026 夏」にブース出展。来場登録・実来場でAmazonギフト500円分プレゼント！",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ipros-ai-expo-2026-summer/",
-      "description": "AIsmileyとAIsmiley Communityは、2026年7月29日（水）～7月31日（金）に有明GYM-EXにて開催の「イプロスAI」にブースを出展します。 来場登録＋実来場で500円分のAmazonギフトカ [...] The post アイスマイリー、 7/29（水）から3日間「イプロスAI 2026 夏」にブース出展。来場登録・実来場でAmazonギフト500円分プレゼント！ f...",
-      "publishedDate": "Fri, 10 Jul 2026 04:00:01 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ipros-main-1.png",
-      "language": "ja"
-    },
-    {
-      "title": "「AI-OCR業界別・ユースケース集」を公開！「脱・手入力」を実現する小売・物流・医療など6業界の成功事例と導入時のポイントを紹介",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-ocr-guide/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、請求書や伝票などの「脱・手入力」を実現する実践的な資料「AI-OCR業界別・ユースケース集」を、2026年7月10日（金）に公開しま [...] The post 「AI-OCR業界別・ユースケース集」を公開！「脱・手入力」を実現する小売・物流・医療など6業界の成功事例と導入時のポイントを紹介 first ap...",
-      "publishedDate": "Fri, 10 Jul 2026 03:00:37 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/ai-ocr-guide_00.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTをログインなしで使う方法と制限・安全性を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-not-login-openai/",
-      "description": "ChatGPTはアカウント登録なしでも試せます。本記事では、ログインなしで使う具体的な手順と利用できる範囲、安全に使うための注意点、使えなくなったときの対処法まで分かりやすく解説します。これからAIを試したい方や、アカウ [...] The post ChatGPTをログインなしで使う方法と制限・安全性を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 10 Jul 2026 01:33:45 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/chatgptnotloginic.webp",
-      "language": "ja"
-    },
-    {
       "title": "生成AIで財務業務が変わる！活用事例やプロンプト、メリット＆注意点を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/generation-ai-financial-operations/",
@@ -541,14 +552,25 @@
       "language": "ja"
     },
     {
-      "title": "ChatGPT音声会話の使い方とは？無料・有料の制限や活用例を解説",
+      "title": "IT系上場企業の平均年収を業種別にみてみた 2026年版［後編］ ～ ソフトウェア／サービス系、SI／システム開発系、クラウド／通信キャリア系企業",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-voice-conversation/",
-      "description": "ChatGPTに話しかけるだけでAIと音声でやり取りできる「音声会話」機能があります。 本記事では、音声会話の仕組みや始め方、無料版・有料版の利用条件の違い、語学学習や面接練習などの具体的な活用例まで分かりやすく解説しま [...] The post ChatGPT音声会話の使い方とは？無料・有料の制限や活用例を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 10 Jul 2026 01:24:28 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/chatgptvoiceconversationic.webp",
+      "link": "https://www.publickey1.jp/blog/26/it_2026_si.html",
+      "description": "IT系企業で平均年収が高いのは、勢いのあるネットベンチャー系企業なのか、それとも伝統的なSIerなのでしょうか。毎年恒例の記事を今年も公開します。 上場企業は毎年「有価証券報告書」の発行を義務づけられており、そこには従業員の人数や平均年齢......",
+      "publishedDate": "2026-07-12T15:17:12Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/nensyu2026.png",
+      "language": "ja"
+    },
+    {
+      "title": "IT系上場企業の平均年収を業種別にみてみた 2026年版［前編］ ～ ネットベンチャー、ゲーム、メディア系",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/it_2026_1.html",
+      "description": "IT系企業で平均年収が高いのは、勢いのあるネットベンチャー系企業なのか、それとも伝統的なSIerなのでしょうか。毎年恒例の記事を今年も公開します。 上場企業は毎年「有価証券報告書」の発行を義務づけられており、そこには従業員の人数や平均年齢......",
+      "publishedDate": "2026-07-12T15:02:28Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/nensyu2026.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/wslcontainers-publicpreview.png",
-      "language": "ja"
-    },
-    {
-      "title": "クアルコムがPythonライクな新言語「Mojo」開発元のModular社買収を発表。AIデータセンター市場へ本格参入",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/pythonmojomodularai.html",
-      "description": "スマートフォン用のSoC（System-on-a-Chip）や各種通信機器向けの半導体事業などで知られるクアルコムテクノロジーズ社（以下、クアルコム）は、AI処理の高速化を目指すPythonライクな新言語「Mojo」の開発元であるModul......",
-      "publishedDate": "2026-06-29T15:33:20Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/qualcomm-modular-acq.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Deno 2.9正式リリース。起動が2倍速、消費メモリは半分に。WebViewを用いたデスクトップアプリが作れる「Deno Desktop」など",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/deno_292webviewdeno_desktop.html",
-      "description": "JavaScript/TypeScriptランタイムのDenoを開発するDeno Landは、Deno 2.9正式版をリリースしました。 Deno 2.9は起動を2倍速にするなどの性能面での大幅向上や、Denoを基盤にJavaScriptや......",
-      "publishedDate": "2026-06-28T15:15:39Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HLrDgmTaIAA5eaw.jpg",
       "language": "ja"
     }
   ]
