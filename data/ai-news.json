@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-13T04:31:23.726636",
+  "lastUpdated": "2026-07-14T03:57:44.954591",
   "articles": [
     {
       "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
@@ -189,17 +189,6 @@
       "language": "en"
     },
     {
-      "title": "Core dump epidemiology: fixing an 18-year-old bug",
-      "titleJa": "コアダンプ疫学: 18 年前のバグを修正",
-      "link": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
-      "description": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug....",
-      "publishedDate": "Tue, 30 Jun 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "Introducing GeneBench-Pro",
       "titleJa": "GeneBench-Pro の紹介",
       "link": "https://openai.com/index/introducing-genebench-pro",
@@ -233,6 +222,28 @@
       "language": "en"
     },
     {
+      "title": "ChatGPTの育て方とは？自分好みに育てる方法とコツを解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-how-to-grow/",
+      "description": "ChatGPTは使い方次第で、回答の精度や相性が大きく変わります。本記事では、カスタム指示やメモリ機能を使ってChatGPTを自分仕様に育てる具体的な方法と、成長を加速させるコツを紹介します。ChatGPTを「毎回説明し [...] The post ChatGPTの育て方とは？自分好みに育てる方法とコツを解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Tue, 14 Jul 2026 00:51:25 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gpthowtogrow.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTカスタム指示のおすすめ設定例と効果的な書き方を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-custom-instructions/",
+      "description": "ChatGPTの「カスタム指示」は、AIからの回答スタイルを一度の設定で済ませられる便利な機能です。本記事では、PC・スマホ別の設定手順から、目的別のおすすめ設定例、反映されないときの対処法まで、初めて設定する方にも分か [...] The post ChatGPTカスタム指示のおすすめ設定例と効果的な書き方を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Tue, 14 Jul 2026 00:50:32 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/custominstructionsmain.png",
+      "language": "ja"
+    },
+    {
       "title": "From Hugging Face to Amazon SageMaker Studio in one click",
       "titleJa": "ワンクリックで顔のハグから Amazon SageMaker Studio へ",
       "link": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
@@ -263,28 +274,6 @@
       "source": "MIT Technology Review",
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/02/MIT-Tech-Review_Evo-Genetics_thumb.jpg?w=2978",
-      "language": "en"
-    },
-    {
-      "title": "The foundational elements of AI architecture that IT leaders need to scale",
-      "titleJa": "IT リーダーが拡張する必要がある AI アーキテクチャの基本要素",
-      "link": "https://www.technologyreview.com/2026/07/07/1139413/the-foundational-elements-of-ai-architecture-that-it-leaders-need-to-scale/",
-      "description": "With the rapid progress of AI capabilities and the move to agentic systems, organizations are expanding their use cases as the technology continues to grow. That constant evolution also introduces ris...",
-      "publishedDate": "Tue, 07 Jul 2026 11:10:52 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/06/iStock-2216481617.jpg",
-      "language": "en"
-    },
-    {
-      "title": "Why worms (and microbes) are catching on as a manure pollution solution",
-      "titleJa": "なぜミミズ（および微生物）が肥料汚染の解決策として注目を集めているのか",
-      "link": "https://www.technologyreview.com/2026/07/07/1140142/why-worms-and-microbes-are-catching-on-as-a-manure-pollution-solution/",
-      "description": "Anthony Agueda, a third-generation California dairy farmer, pulls a rake through a bed of dark, wet wood chips on his family’s land in Hickman, a tiny town in the state’s agricultural heartland. He re...",
-      "publishedDate": "Tue, 07 Jul 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/20260319-vermi-017_bddae2.jpg?w=2667",
       "language": "en"
     },
     {
@@ -332,6 +321,39 @@
       "language": "en"
     },
     {
+      "title": "LeRobot v0.6.0: Imagine, Evaluate, Improve",
+      "titleJa": "LeRobot v0.6.0: 想像し、評価し、改善する",
+      "link": "https://huggingface.co/blog/lerobot-release-v060",
+      "description": "...",
+      "publishedDate": "Tue, 07 Jul 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/lerobot-release-v060/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Our latest Google Finance upgrades, including a new app",
+      "titleJa": "新しいアプリを含む最新の Google Finance アップグレード",
+      "link": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/",
+      "description": "The Google Finance logo, surrounded by elements of the user interface...",
+      "publishedDate": "Thu, 25 Jun 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Finance_blog_image_June_.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
+      "titleJa": "バージニア州における当社の新たなコミュニティへの投資は、地元の雇用をサポートし、エネルギーの手頃な価格を拡大します。",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
+      "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
+      "publishedDate": "Thu, 11 Jun 2026 20:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
       "title": "Manus（マヌスAI）とは？どこの国のAI？できることを解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/manus/",
@@ -340,28 +362,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/01/manus_2602-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Copilot（コパイロット）とは？無料版でできること・有料版との違いを解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/copilot-free/",
-      "description": "日々、ハイスピードで進化を続ける生成AI。「情報が多すぎて何から手を付けたら良いのか分からない」「無料で本当に使えるツールはあるの？」など、疑問や悩みは尽きませんよね。 そんな方におすすめなのが、Microsoftが提供 [...]...",
-      "publishedDate": "Thu, 09 Jul 2026 07:48:36 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/copilot-free_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Animagine XL 3.0とは？活用事例8選を紹介！使い方やアニメ画像を実際に生成した検証結果も解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/animaginexl3-usage-example/",
-      "description": "Cagliostro Research Labが、拡散モデルベースのText-to-Imageの画像生成モデル「Animagine XL 3.0」を公開。このAIツールを使うことで、テキスト指示から高画質なアニメ画像を、 [...]...",
-      "publishedDate": "Thu, 09 Jul 2026 07:17:34 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Animagine-xl-3.0_2607-1024x576.webp",
       "language": "ja"
     },
     {
@@ -395,6 +395,61 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_ChatGPT-Work-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTに障害が発生したら？確認方法とおすすめ代替AI3選を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/chatgpt-outage/",
+      "description": "「ChatGPTが突然使えなくなった」「エラーが表示されて回答が返ってこない」「これって自分の環境の問題？それとも障害？」と悩んでいませんか。ChatGPTは非常に便利な生成AIですが、サーバー障害やシステムトラブルによ [...]...",
+      "publishedDate": "Mon, 13 Jul 2026 13:16:44 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/ChatGPT-Outage_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "X MCPとは？XのAPIをAIから直接使える公式サーバーの使い方・料金・注意点を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/x-mcp/",
+      "description": "X MCPは、XのAPIをAIツールから直接呼び出せる公式のMCPサーバーで2026年6月30日に正式公開されました。 とはいえ「どうやって使うの？」「自社の業務にどう活かせる？」と疑問に思う方も多いのではないでしょうか [...]...",
+      "publishedDate": "Mon, 13 Jul 2026 10:39:04 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/X-MCP_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI、新世代音声モデル「GPT-Live」公開。全二重アーキテクチャ搭載で自然な音声対話を実現",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-gpt-live-release/",
+      "description": "OpenAIは、人間とAIの音声対話をより自然にする新世代の音声モデル「GPT-Live」を公開しました。全二重アーキテクチャ（フルデュプレックス）による継続的な対話処理を採用し、より自然な会話を実現します。 このニュー [...] The post OpenAI、新世代音声モデル「GPT-Live」公開。全二重アーキテクチャ搭載で自然な音声対話を実現 first appeared on AIポー...",
+      "publishedDate": "Mon, 13 Jul 2026 08:13:29 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/OpenAI-GPT-Live-Release.png",
+      "language": "ja"
+    },
+    {
+      "title": "ぐるなび、AIアプリ「UMAME!」新機能を提供開始。今の気分から最適なお店を瞬時に提案",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/gnavi-umame-ai-agent-release/",
+      "description": "ぐるなびは、AIエージェントアプリ「UMAME!」で今の気分から飲食店を瞬時に提案する新機能を提供開始しました。地図連動のUIやコレクション機能も備え、外出先での店探しの時間を大幅に短縮します。 このニュースのポイント [...] The post ぐるなび、AIアプリ「UMAME!」新機能を提供開始。今の気分から最適なお店を瞬時に提案 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Mon, 13 Jul 2026 08:08:29 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gnavi-umame-ai-agent-release1.png",
+      "language": "ja"
+    },
+    {
+      "title": "高校生の生成AI活用に関する意識調査を実施。恋愛・人間関係の相談相手は生成AIが44.2%で1位",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/teens-relationship-advice-ai/",
+      "description": "塾選ジャーナルは、高校生104人を対象に生成AIの利用実態調査を実施しました。恋愛・人間関係の相談で生成AIが44.2%と首位になる一方、進路では大人を頼るなど内容に応じた使い分けが見られます。 このニュースのポイント [...] The post 高校生の生成AI活用に関する意識調査を実施。恋愛・人間関係の相談相手は生成AIが44.2%で1位 first appeared on AIポータルメデ...",
+      "publishedDate": "Mon, 13 Jul 2026 07:57:14 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/teens-relationship-advice-ai-eye.png",
       "language": "ja"
     },
     {
@@ -464,39 +519,6 @@
       "language": "ja"
     },
     {
-      "title": "ChatGPT Workとは？機能・料金・使い方、Codexとの違いを徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-work-guide/",
-      "description": "OpenAIが2026年7月9日に発表した「ChatGPT Work」は、回答を得るだけのチャット機能ではありません。指示を出すだけで、情報収集からスライドや表などの「完成物」作成までを自律的に進めてくれます。 本記事で [...] The post ChatGPT Workとは？機能・料金・使い方、Codexとの違いを徹底解説 first appeared on AIポータルメディアAIsmil...",
-      "publishedDate": "Fri, 10 Jul 2026 07:20:20 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/chatgptworkguideic.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Noahlogy、シードラウンドで総額1.5億円を調達。海事産業のAIネイティブ化を加速",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/noahlogy-funding-ai-agent/",
-      "description": "Noahlogyは、ANRIをリード投資家、ブーストキャピタルをフォロー投資家とするシードラウンドで、総額1.5億円を調達しました。 このニュースのポイント Noahlogy、シードラウンドにてANRIとBoost Ca [...] The post Noahlogy、シードラウンドで総額1.5億円を調達。海事産業のAIネイティブ化を加速 first appeared on AIポータルメディアA...",
-      "publishedDate": "Fri, 10 Jul 2026 07:06:28 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/Noahlogy-ANRI-Boost-Capital-funding.png",
-      "language": "ja"
-    },
-    {
-      "title": "近畿大学病院など4者、リアルワールドデータとLLMを用いた共同研究を開始。治験候補患者抽出の精度向上と効率化を図る",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/clinical-trial-llm-joint-research/",
-      "description": "近畿大学病院、中外製薬、NTT、NTTデータは、リアルワールドデータとLLMを活用し、治験候補患者の抽出精度と業務効率を検証する共同研究を開始しました。 このニュースのポイント 近畿大学病院・中外製薬・NTT・NTTデー [...] The post 近畿大学病院など4者、リアルワールドデータとLLMを用いた共同研究を開始。治験候補患者抽出の精度向上と効率化を図る first appeared o...",
-      "publishedDate": "Fri, 10 Jul 2026 06:51:31 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/kindai-univer-city-chugai-NTT-NTTData.png",
-      "language": "ja"
-    },
-    {
       "title": "GPT-5.6とは？Sol・Terra・Lunaの特徴・料金・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/gpt-5-6/",
@@ -519,28 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "KUMON、AI活用学習サービスのatama plusをグループ化。教室のグローバル展開や指導者支援を推進",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kumon-atamaplus-ai-edtech/",
-      "description": "公文教育研究会（KUMON）は、AIを活用した学習サービスを展開するatama plusの全株式を取得し、グループ化しました。両社の技術力と知見を融合し、グローバル展開する公文式教室や指導者へのより効果的なサポートの実現 [...] The post KUMON、AI活用学習サービスのatama plusをグループ化。教室のグローバル展開や指導者支援を推進 first appeared on AI...",
-      "publishedDate": "Fri, 10 Jul 2026 06:14:57 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/kumonatamaplusmain.png",
-      "language": "ja"
-    },
-    {
-      "title": "Grok 4.5とは？性能・料金・使い方・他社モデルとの違いを解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/grok-4-5-guide/",
-      "description": "Grokの新モデル「Grok 4.5」が2026年7月8日に公開されました。多数のメディアでも取り上げられており、「どんなモデルなのか」「ClaudeやGPTと何が違うのか」「自社でも使えるのか」といった疑問を持った方も [...] The post Grok 4.5とは？性能・料金・使い方・他社モデルとの違いを解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 10 Jul 2026 06:02:11 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/grok45guideic2.webp",
-      "language": "ja"
-    },
-    {
       "title": "生成AIで財務業務が変わる！活用事例やプロンプト、メリット＆注意点を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/generation-ai-financial-operations/",
@@ -549,6 +549,28 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Generation-AI-financial-operations_2607-1-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Google Cloud、生成AIのコードを瞬時に隔離して安全に実行できる「Cloud Runサンドボックス」パブリックプレビュー",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/google_cloudaicloud_run.html",
+      "description": "Google Cloudは、生成AIによる信頼できないコードの実行を安全に隔離して実行できる環境を瞬時に起動させることができる「Cloud Run Sandboxes」（以下、Cloud Runサンドボックス）をパブリックプレビューとして公......",
+      "publishedDate": "2026-07-13T15:50:52Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/cloudrun-sandboxes-pp.png",
+      "language": "ja"
+    },
+    {
+      "title": "さくらのクラウドで、3つの国内開発された大規模言語モデルの試用を開始、デジタル庁がガバメントAI「源内」用に評価",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/3ai.html",
+      "description": "デジタル庁は、国内開発された3つの大規模言語モデルの試用をさくらのクラウド上で開始すると発表しました。 これはデジタル庁が中心となって進めている、行政業務の効率化や住民サービスの向上のために整備を進めているガバメントAI「源内」（げんない）......",
+      "publishedDate": "2026-07-13T15:48:50Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/sakura-gennai-traial202607.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/bixftXdS.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "GoogleユーザーのIPv6利用率がついに50％を超えたことが判明",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/googleipv650.html",
-      "description": "Googleが提供しているサービスを利用するユーザーのうち、IPv6を使用している割合を示す「Google IPv6」のページで、IPv6の割合が今年（2026年）3月に50％を超えていたことが分かりました。 公開されたグラフによると最初に......",
-      "publishedDate": "2026-06-30T15:51:42Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/google-ipv6-users-50p01.png",
-      "language": "ja"
-    },
-    {
-      "title": "Windows上でLinuxコンテナが動く「WSL Containers」がパブリックプレビュー。Windowsファイルへのアクセスが2倍高速に",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/windowslinuxwsl_containerswindows2.html",
-      "description": "マイクロソフトは、WSL（Windows Subsystem for Linux）の新機能としてWindows上でLinuxコンテナが動く「WSL Containers」のパブリックプレビューを公開しました。 WindowsにはWindow......",
-      "publishedDate": "2026-06-30T15:45:51Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/wslcontainers-publicpreview.png",
       "language": "ja"
     }
   ]
