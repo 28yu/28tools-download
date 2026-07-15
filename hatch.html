@@ -305,7 +305,10 @@
                         <canvas id="preview-canvas" width="200" height="200"></canvas>
                     </div>
                     <div class="preview-info">
-                        <span id="preview-info-text" data-lang-key="hatch-preview-info">パターンをプレビュー中...</span>
+                        <!-- 表示内容は hatch.js の updatePreviewInfo() が管理（ファイル名を表示言語で表示）。
+                             data-lang-key は付けない: 付けると header/sidebar 非同期読込後の
+                             updateAllContent() がファイル名表記をプレースホルダーで上書きしてしまうため。 -->
+                        <span id="preview-info-text">パターンをプレビュー中...</span>
                     </div>
                 </div>
             </div>
