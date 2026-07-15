@@ -781,18 +781,19 @@ document.addEventListener('DOMContentLoaded', function() {
         const dashGap = parseFloat(document.getElementById('diagonal-dash-gap').value) || 3;
 
         let lines = '';
-        const scale = isModel ? 1 : 25.4; // mm to inches for drafting
+        // 値は選択された単位（ヘッダーの ;%UNITS= と一致）でそのまま出力する。
+        // Revit はモデル／製図いずれも ;%UNITS で宣言した単位で数値を解釈するため換算は不要。
 
         if (dashType === 'none') {
             // 実線
-            lines += `${angle}, 0, 0, 0, ${spacing / scale}\n`;
+            lines += `${angle}, 0, 0, 0, ${spacing}\n`;
         } else if (dashType === 'all') {
             // 全て破線
-            lines += `${angle}, 0, 0, 0, ${spacing / scale}, ${dashLength / scale}, -${dashGap / scale}\n`;
+            lines += `${angle}, 0, 0, 0, ${spacing}, ${dashLength}, -${dashGap}\n`;
         } else if (dashType === 'alternate') {
             // 一本おき
-            lines += `${angle}, 0, 0, 0, ${(spacing * 2) / scale}\n`;
-            lines += `${angle}, 0, ${spacing / scale}, 0, ${(spacing * 2) / scale}, ${dashLength / scale}, -${dashGap / scale}\n`;
+            lines += `${angle}, 0, 0, 0, ${spacing * 2}\n`;
+            lines += `${angle}, 0, ${spacing}, 0, ${spacing * 2}, ${dashLength}, -${dashGap}\n`;
         }
 
         return lines;
@@ -807,16 +808,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const dashGap = parseFloat(document.getElementById('crosshatch-dash-gap').value) || 3;
 
         let lines = '';
-        const scale = isModel ? 1 : 25.4;
+        // 値は選択された単位（ヘッダーの ;%UNITS= と一致）でそのまま出力する（換算なし）。
 
         [angle, angle + 90].forEach(ang => {
             if (dashType === 'none') {
-                lines += `${ang}, 0, 0, 0, ${spacing / scale}\n`;
+                lines += `${ang}, 0, 0, 0, ${spacing}\n`;
             } else if (dashType === 'all') {
-                lines += `${ang}, 0, 0, 0, ${spacing / scale}, ${dashLength / scale}, -${dashGap / scale}\n`;
+                lines += `${ang}, 0, 0, 0, ${spacing}, ${dashLength}, -${dashGap}\n`;
             } else if (dashType === 'alternate') {
-                lines += `${ang}, 0, 0, 0, ${(spacing * 2) / scale}\n`;
-                lines += `${ang}, 0, ${spacing / scale}, 0, ${(spacing * 2) / scale}, ${dashLength / scale}, -${dashGap / scale}\n`;
+                lines += `${ang}, 0, 0, 0, ${spacing * 2}\n`;
+                lines += `${ang}, 0, ${spacing}, 0, ${spacing * 2}, ${dashLength}, -${dashGap}\n`;
             }
         });
 
@@ -828,11 +829,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const spacing = parseFloat(document.getElementById('dot-spacing').value) || 10;
         const dotSize = parseFloat(document.getElementById('dot-size').value) || 1;
 
-        const scale = isModel ? 1 : 25.4;
-
+        // 値は選択された単位（ヘッダーの ;%UNITS= と一致）でそのまま出力する（換算なし）。
         // ドットは短い線で表現
         let lines = '';
-        lines += `0,0,0,${spacing / scale},${spacing / scale},${dotSize / scale},-${(spacing - dotSize) / scale}\n`;
+        lines += `0,0,0,${spacing},${spacing},${dotSize},-${spacing - dotSize}\n`;
 
         return lines;
     }
@@ -845,13 +845,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const groutX = groutEnabled ? (parseFloat(document.getElementById('tile-grid-grout-x').value) || 5) : 0;
         const groutY = groutEnabled ? (parseFloat(document.getElementById('tile-grid-grout-y').value) || 5) : 0;
 
-        const scale = isModel ? 1 : 25.4;
-        const totalW = (width + groutX) / scale;
-        const totalH = (height + groutY) / scale;
-        const w = width / scale;
-        const h = height / scale;
-        const gx = groutX / scale;
-        const gy = groutY / scale;
+        // 値は選択された単位（ヘッダーの ;%UNITS= と一致）でそのまま出力する（換算なし）。
+        const totalW = width + groutX;
+        const totalH = height + groutY;
+        const w = width;
+        const h = height;
+        const gx = groutX;
+        const gy = groutY;
         const halfGx = gx / 2;
         const halfGy = gy / 2;
 
@@ -881,13 +881,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const groutX = groutEnabled ? (parseFloat(document.getElementById('tile-brick-grout-x').value) || 5) : 0;
         const groutY = groutEnabled ? (parseFloat(document.getElementById('tile-brick-grout-y').value) || 5) : 0;
 
-        const scale = isModel ? 1 : 25.4;
-        const totalW = (width + groutX) / scale;
-        const totalH = (height + groutY) / scale;
-        const w = width / scale;
-        const h = height / scale;
-        const gx = groutX / scale;
-        const gy = groutY / scale;
+        // 値は選択された単位（ヘッダーの ;%UNITS= と一致）でそのまま出力する（換算なし）。
+        const totalW = width + groutX;
+        const totalH = height + groutY;
+        const w = width;
+        const h = height;
+        const gx = groutX;
+        const gy = groutY;
         const halfGx = gx / 2;
         const halfGy = gy / 2;
         const halfTotalW = totalW / 2;
@@ -917,9 +917,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const innerSpacing = parseFloat(document.getElementById('rc-inner-spacing').value) || 2;
         const outerSpacing = parseFloat(document.getElementById('rc-outer-spacing').value) || 15;
 
-        const scale = isModel ? 1 : 25.4;
-        const inner = innerSpacing / scale;
-        const totalSpacing = (innerSpacing * 2 + outerSpacing) / scale;
+        // 値は選択された単位（ヘッダーの ;%UNITS= と一致）でそのまま出力する（換算なし）。
+        const inner = innerSpacing;
+        const totalSpacing = innerSpacing * 2 + outerSpacing;
 
         let lines = '';
         // 3本の斜線
