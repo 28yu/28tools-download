@@ -69,6 +69,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const tileGridGroutEnabled = document.getElementById('tile-grid-grout-enabled');
     const tileBrickGroutEnabled = document.getElementById('tile-brick-grout-enabled');
 
+    // パターン種類名（表示言語ごと）。ファイル名はここから多言語で組み立てる。
+    // init() が呼ばれる前に初期化しておく必要がある（TDZ 回避）。
+    const TYPE_NAMES = {
+        ja: {
+            'diagonal': '斜線', 'crosshatch': '網掛け', 'dot': 'ドット',
+            'tile-grid': '芋目地', 'tile-brick': '馬目地', 'rc-concrete': '3本線'
+        },
+        en: {
+            'diagonal': 'Diagonal', 'crosshatch': 'Crosshatch', 'dot': 'Dot',
+            'tile-grid': 'Grid', 'tile-brick': 'Brick', 'rc-concrete': '3Lines'
+        },
+        zh: {
+            'diagonal': '斜线', 'crosshatch': '网格线', 'dot': '点',
+            'tile-grid': '网格', 'tile-brick': '砖砌', 'rc-concrete': '三线'
+        }
+    };
+
     // 初期化
     init();
 
@@ -714,13 +731,18 @@ document.addEventListener('DOMContentLoaded', function() {
     function updatePreviewInfo() {
         const format = outputFormatSelect.value;
         const patternName = generateAutoPatternName();
+        const L = {
+            ja: { file: 'ファイル名', out: '出力', model: 'モデル', drafting: '製図' },
+            en: { file: 'File', out: 'Output', model: 'Model', drafting: 'Drafting' },
+            zh: { file: '文件名', out: '输出', model: '模型', drafting: '制图' }
+        }[getCurrentLang()];
 
-        let info = `ファイル名: ${patternName}.pat`;
-        info += ` | 出力: ${format === 'revit' ? 'Revit' : 'AutoCAD'}`;
+        let info = `${L.file}: ${patternName}.pat`;
+        info += ` | ${L.out}: ${format === 'revit' ? 'Revit' : 'AutoCAD'}`;
 
         if (format === 'revit') {
             const revitType = document.getElementById('revit-pattern-type').value;
-            info += ` (${revitType === 'model' ? 'モデル' : '製図'})`;
+            info += ` (${revitType === 'model' ? L.model : L.drafting})`;
         }
 
         previewInfoText.textContent = info;
@@ -943,22 +965,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         return lines;
     }
-
-    // パターン種類名（表示言語ごと）。ファイル名はここから多言語で組み立てる。
-    const TYPE_NAMES = {
-        ja: {
-            'diagonal': '斜線', 'crosshatch': '網掛け', 'dot': 'ドット',
-            'tile-grid': '芋目地', 'tile-brick': '馬目地', 'rc-concrete': '3本線'
-        },
-        en: {
-            'diagonal': 'Diagonal', 'crosshatch': 'Crosshatch', 'dot': 'Dot',
-            'tile-grid': 'Grid', 'tile-brick': 'Brick', 'rc-concrete': '3Lines'
-        },
-        zh: {
-            'diagonal': '斜线', 'crosshatch': '网格线', 'dot': '点',
-            'tile-grid': '网格', 'tile-brick': '砖砌', 'rc-concrete': '三线'
-        }
-    };
 
     // 現在の表示言語（main.js が公開する window.currentLanguage）。未対応時は ja。
     function getCurrentLang() {
