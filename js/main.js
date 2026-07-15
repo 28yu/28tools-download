@@ -6105,6 +6105,21 @@ translations.filledRegion = {
             en: '3 Lines',
             zh: '三线'
         },
+        'hatch-type-two-line': {
+            ja: '2本線',
+            en: '2 Lines',
+            zh: '两线'
+        },
+        'hatch-type-horizontal': {
+            ja: '平行線',
+            en: 'Horizontal',
+            zh: '水平线'
+        },
+        'hatch-type-vertical': {
+            ja: '垂直線',
+            en: 'Vertical',
+            zh: '垂直线'
+        },
         'hatch-angle': {
             ja: '角度 (°)',
             en: 'Angle (°)',
@@ -8156,9 +8171,9 @@ translations.toolAbout = {
         ja: 'このツールでできること', en: 'What you can do', zh: '本工具可实现的功能'
     },
     'hatch-about-can1': {
-        ja: '斜線・網掛け・ドット・芋目地・馬目地・3本線の6種類のパターンに対応',
-        en: 'Supports six pattern types: diagonal, crosshatch, dot, stack bond, running bond, and 3 lines',
-        zh: '支持斜线、交叉线、点、错缝、顺缝、三线六种图案'
+        ja: '斜線・網掛け・ドット・芋目地・馬目地・3本線・2本線・平行線・垂直線の9種類のパターンに対応',
+        en: 'Supports nine pattern types: diagonal, crosshatch, dot, stack bond, running bond, 3 lines, 2 lines, horizontal, and vertical',
+        zh: '支持斜线、交叉线、点、错缝、顺缝、三线、两线、水平线、垂直线九种图案'
     },
     'hatch-about-can2': {
         ja: '角度・間隔・目地サイズなどを指定し、プレビューを見ながら調整',

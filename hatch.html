@@ -6,11 +6,11 @@
     <title>ハッチングパターン自動作成 - 28 Tools</title>
     <link rel="icon" type="image/png" href="images/site-icons/favicon-28.png">
     <link rel="canonical" href="https://28tools.com/hatch.html">
-    <meta name="description" content="Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。斜線、網掛け、ドット、芋目地、馬目地、RCなど6種類のパターンに対応。">
+    <meta name="description" content="Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。斜線、網掛け、ドット、芋目地、馬目地、3本線など9種類のパターンに対応。">
 
     <!-- OGP (Open Graph Protocol) -->
     <meta property="og:title" content="塗潰し（ハッチング）パターン自動作成 - 28 Tools">
-    <meta property="og:description" content="Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。斜線、網掛け、ドット、芋目地、馬目地、RCなど6種類のパターンに対応。">
+    <meta property="og:description" content="Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。斜線、網掛け、ドット、芋目地、馬目地、3本線など9種類のパターンに対応。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://28tools.com/hatch.html">
     <meta property="og:image" content="https://28tools.com/images/ogp-image.png">
@@ -20,7 +20,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="塗潰し（ハッチング）パターン自動作成 - 28 Tools">
-    <meta name="twitter:description" content="Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。斜線、網掛け、ドット、芋目地、馬目地、RCなど6種類のパターンに対応。">
+    <meta name="twitter:description" content="Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。斜線、網掛け、ドット、芋目地、馬目地、3本線など9種類のパターンに対応。">
     <meta name="twitter:image" content="https://28tools.com/images/ogp-image.png">
 
     <!-- Google tag (gtag.js) -->
@@ -92,6 +92,18 @@
                             <div class="pattern-type-item" data-type="rc-concrete">
                                 <canvas class="pattern-thumbnail" data-pattern="rc-concrete" width="40" height="40"></canvas>
                                 <span class="pattern-type-name" data-lang-key="hatch-type-rc">3本線</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="two-line">
+                                <canvas class="pattern-thumbnail" data-pattern="two-line" width="40" height="40"></canvas>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-two-line">2本線</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="horizontal">
+                                <canvas class="pattern-thumbnail" data-pattern="horizontal" width="40" height="40"></canvas>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-horizontal">平行線</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="vertical">
+                                <canvas class="pattern-thumbnail" data-pattern="vertical" width="40" height="40"></canvas>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-vertical">垂直線</span>
                             </div>
                         </div>
                         <input type="hidden" id="pattern-type" value="diagonal">
@@ -256,6 +268,80 @@
                                 <div class="setting-group compact">
                                     <label class="setting-label" data-lang-key="hatch-group-spacing">グループ間隔 (mm)</label>
                                     <input type="number" id="rc-outer-spacing" class="setting-input" value="15" min="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2本線設定 -->
+                        <div id="settings-two-line" class="pattern-specific-settings" style="display: none;">
+                            <div class="setting-row">
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-angle">角度 (°)</label>
+                                    <input type="number" id="two-line-angle" class="setting-input" value="45" min="0" max="360">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-inner-spacing">線内間隔 (mm)</label>
+                                    <input type="number" id="two-line-inner-spacing" class="setting-input" value="2" min="0.5" step="0.5">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-group-spacing">グループ間隔 (mm)</label>
+                                    <input type="number" id="two-line-outer-spacing" class="setting-input" value="15" min="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 平行線設定（横線・角度なし） -->
+                        <div id="settings-horizontal" class="pattern-specific-settings" style="display: none;">
+                            <div class="setting-row">
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-spacing">間隔 (mm)</label>
+                                    <input type="number" id="horizontal-spacing" class="setting-input" value="10" min="1">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-dash-type">破線設定</label>
+                                    <select id="horizontal-dash-type" class="setting-select">
+                                        <option value="none" data-lang-key="hatch-dash-solid">実線</option>
+                                        <option value="alternate" data-lang-key="hatch-dash-alternate">一本おき</option>
+                                        <option value="all" data-lang-key="hatch-dash-all">全て破線</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="setting-row horizontal-dash-settings" style="display: none;">
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-dash-length">破線長さ (mm)</label>
+                                    <input type="number" id="horizontal-dash-length" class="setting-input" value="5" min="1">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-dash-gap">破線間隔 (mm)</label>
+                                    <input type="number" id="horizontal-dash-gap" class="setting-input" value="3" min="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 垂直線設定（縦線・角度なし） -->
+                        <div id="settings-vertical" class="pattern-specific-settings" style="display: none;">
+                            <div class="setting-row">
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-spacing">間隔 (mm)</label>
+                                    <input type="number" id="vertical-spacing" class="setting-input" value="10" min="1">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-dash-type">破線設定</label>
+                                    <select id="vertical-dash-type" class="setting-select">
+                                        <option value="none" data-lang-key="hatch-dash-solid">実線</option>
+                                        <option value="alternate" data-lang-key="hatch-dash-alternate">一本おき</option>
+                                        <option value="all" data-lang-key="hatch-dash-all">全て破線</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="setting-row vertical-dash-settings" style="display: none;">
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-dash-length">破線長さ (mm)</label>
+                                    <input type="number" id="vertical-dash-length" class="setting-input" value="5" min="1">
+                                </div>
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-dash-gap">破線間隔 (mm)</label>
+                                    <input type="number" id="vertical-dash-gap" class="setting-input" value="3" min="1">
                                 </div>
                             </div>
                         </div>
