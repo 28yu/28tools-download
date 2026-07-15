@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14T03:57:44.954591",
+  "lastUpdated": "2026-07-15T03:59:07.650125",
   "articles": [
     {
       "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
@@ -11,6 +11,28 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AMIE_Mx_Nature_Social_Visual_Va.max-600x600.format-webp.webp",
       "language": "en"
+    },
+    {
+      "title": "GitHub Copilot CLIとは？インストール・使い方・料金を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/github-copilot-cli-ai-agent/",
+      "description": "GitHub Copilot CLIは、ターミナルから直接コード編集やコマンド実行を任せられるコーディングエージェントです。 本記事では、基本的な仕組みからインストール手順、3つの動作モードの使い分け、料金体系、Clau [...] The post GitHub Copilot CLIとは？インストール・使い方・料金を解説 first appeared on AIポータルメディアAIsmiley...",
+      "publishedDate": "Wed, 15 Jul 2026 01:57:54 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/githubcopilotcliic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Copilot Keyboardとは？インストール・設定・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/copilot-keyboard-windows-11/",
+      "description": "Windowsで日本語を打つとき、新語がうまく変換されなかったり、意味を調べるためにブラウザへ移動して集中が切れたりした経験はありませんか。 本記事では、日本マイクロソフト株式会社が2026年4月に正式版を公開した日本語 [...] The post Copilot Keyboardとは？インストール・設定・使い方を徹底解説 first appeared on AIポータルメディアAIsmiley...",
+      "publishedDate": "Wed, 15 Jul 2026 01:51:09 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/copilotkeyboardic.webp",
+      "language": "ja"
     },
     {
       "title": "Data for Agents",
@@ -54,17 +76,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The Download: worms fight pollution, and geoengineering faces reality",
-      "titleJa": "ダウンロード: ワームは汚染と闘い、地球工学は現実に直面する",
-      "link": "https://www.technologyreview.com/2026/07/08/1140216/the-download-worms-manure-pollution-geoengineering-reality-check/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Why worms (and microbes) are catching on as a manu...",
-      "publishedDate": "Wed, 08 Jul 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/02/uber-driver-with-passenger-thumb.jpg?w=3000",
       "language": "en"
     },
     {
@@ -167,17 +178,6 @@
       "language": "en"
     },
     {
-      "title": "How ChatGPT adoption has expanded",
-      "titleJa": "ChatGPT の採用はどのように拡大したか",
-      "link": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-      "description": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages....",
-      "publishedDate": "Tue, 30 Jun 2026 09:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
       "titleJa": "英国の次の時代の生産性を解き放つ: AI の先駆者たちの国を築く",
       "link": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
@@ -186,28 +186,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Generated_Image_k2dxu1k2.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Introducing GeneBench-Pro",
-      "titleJa": "GeneBench-Pro の紹介",
-      "link": "https://openai.com/index/introducing-genebench-pro",
-      "description": "Introducing GeneBench-Pro, a new benchmark testing AI performance in genomics, biology, and scientific research using complex, real-world datasets....",
-      "publishedDate": "Tue, 30 Jun 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Inside Genebench-Pro",
-      "titleJa": "Genebench-Pro の内部",
-      "link": "https://openai.com/index/genebench-pro/case-studies",
-      "description": "...",
-      "publishedDate": "Tue, 30 Jun 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -220,6 +198,94 @@
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/eee_commevals/eee_commevals_banner.png",
       "language": "en"
+    },
+    {
+      "title": "Celebrating 25 years of visual search innovation",
+      "titleJa": "ビジュアル検索のイノベーション 25 年を祝う",
+      "link": "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary/",
+      "description": "Google Images logo surrounded by illustrations of people searching for different images...",
+      "publishedDate": "Tue, 14 Jul 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Images_25th_hero.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "ChatGPTのメモリ機能を使いこなす！仕事が変わる設定・活用法と失敗しない注意点を詳しく解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/chatgpt-memory/",
+      "description": "ChatGPTのメモリ機能は、過去の会話で伝えた好みや前提を記憶し、次の回答へ自動で反映してくれる機能です。 毎回同じ説明を繰り返す手間が省け、使うほど自分の業務に合ったアシスタントへ育っていきます。とはいえ、「保存済み [...]...",
+      "publishedDate": "Tue, 14 Jul 2026 12:59:20 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/ChatGPT-Memory_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "The Download: Claude’s inner workings, and the future of world models",
+      "titleJa": "ダウンロード: クロードの内部構造と世界モデルの未来",
+      "link": "https://www.technologyreview.com/2026/07/14/1140391/the-download-anthropic-claude-internal-thoughts-world-models/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. What Anthropic’s latest AI discovery does—and does...",
+      "publishedDate": "Tue, 14 Jul 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/01/feature-ivf.jpg?fit=1456,818",
+      "language": "en"
+    },
+    {
+      "title": "How to manage AI investments in the agentic era",
+      "titleJa": "エージェント時代の AI 投資を管理する方法",
+      "link": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+      "description": "Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows....",
+      "publishedDate": "Tue, 14 Jul 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Cloverse、アパレル特化型AI「Clovia」提供開始。撮影・プロンプト入力不要でEC着用画像生成、制作時間最大95%削減",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/cloverse-start-offering-clovia/",
+      "description": "Cloverseは、アパレル特化型生成AIシステム「Clovia」の正式版を提供開始しました。商品画像とスタイリングを指定するだけで商用品質のEC着用画像を生成できます。 このニュースのポイント Cloverse、平置き [...] The post Cloverse、アパレル特化型AI「Clovia」提供開始。撮影・プロンプト入力不要でEC着用画像生成、制作時間最大95%削減 first app...",
+      "publishedDate": "Tue, 14 Jul 2026 09:07:10 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/Cloverse-start-offering-Clovia.png",
+      "language": "ja"
+    },
+    {
+      "title": "SpaceXAI、最新モデル「Grok 4.5」を提供開始。コーディング能力とエージェントタスクの性能を強化",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/spacexai-grok-4-5-release/",
+      "description": "SpaceXAIは、AIモデルの最新版「Grok 4.5」の提供を開始しました。推論能力やトークン効率が向上し、コーディングや複雑なエージェントタスクへの対応力が大幅に強化されています。 このニュースのポイント Spac [...] The post SpaceXAI、最新モデル「Grok 4.5」を提供開始。コーディング能力とエージェントタスクの性能を強化 first appeared on A...",
+      "publishedDate": "Tue, 14 Jul 2026 09:07:03 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/SpaceXAI-Grok-4.5-Release.png",
+      "language": "ja"
+    },
+    {
+      "title": "PsiQuantum has a plan to make a massive quantum computer out of light",
+      "titleJa": "PsiQuantumは光から巨大な量子コンピュータを作る計画を持っている",
+      "link": "https://www.technologyreview.com/2026/07/14/1140356/psiquantum-plan-massive-quantum-computer-out-of-light/",
+      "description": "The machine that could change the world will be housed in a room that looks like a data center crossed with an ice cream factory. Inside will be some 100 stainless-steel cabinets, each about six feet ...",
+      "publishedDate": "Tue, 14 Jul 2026 08:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/260126_Mk2_the_third-23.jpg?w=2000",
+      "language": "en"
+    },
+    {
+      "title": "ChatGPTに個人情報を入力してしまった…リスクと対処法・安全な設定まで徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/entering-personal-information-into-chatgpt/",
+      "description": "ChatGPTに顧客名や社内資料を入力してしまい、「これは情報漏洩にあたるのでは」とヒヤリとした。そんな経験はないでしょうか。 情報漏えいリスクは最小限に抑えられます。まずは会話を削除し必要なら社内へ報告する。これが基本 [...]...",
+      "publishedDate": "Tue, 14 Jul 2026 04:47:04 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Entering-personal-information-into-ChatGPT_2607-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "ChatGPTの育て方とは？自分好みに育てる方法とコツを解説",
@@ -244,6 +310,28 @@
       "language": "ja"
     },
     {
+      "title": "How data science teams use ChatGPT Work",
+      "titleJa": "データ サイエンス チームが ChatGPT Work を使用する方法",
+      "link": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+      "description": "See how data science teams can use ChatGPT Work to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs....",
+      "publishedDate": "Tue, 14 Jul 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "How sales teams use ChatGPT Work",
+      "titleJa": "営業チームが ChatGPT Work をどのように使用するか",
+      "link": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
+      "description": "See how sales teams can use ChatGPT Work to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from real work inputs....",
+      "publishedDate": "Tue, 14 Jul 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "From Hugging Face to Amazon SageMaker Studio in one click",
       "titleJa": "ワンクリックで顔のハグから Amazon SageMaker Studio へ",
       "link": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
@@ -263,17 +351,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/688797c1629e0ef013c2556c/Dn2wmfWGM83ZhuQ-C5jPo.png",
-      "language": "en"
-    },
-    {
-      "title": "The Download: your stake in OpenAI, and the Treasury’s AI warning",
-      "titleJa": "ダウンロード: OpenAI へのあなたの賭け金と財務省の AI 警告",
-      "link": "https://www.technologyreview.com/2026/07/07/1140197/the-download-your-openai-stake-treasury-ai-warning/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Your family’s $300 stake in OpenAI Sam Altman’s pr...",
-      "publishedDate": "Tue, 07 Jul 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/02/MIT-Tech-Review_Evo-Genetics_thumb.jpg?w=2978",
       "language": "en"
     },
     {
@@ -341,28 +418,6 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Finance_blog_image_June_.max-600x600.format-webp.webp",
       "language": "en"
-    },
-    {
-      "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
-      "titleJa": "バージニア州における当社の新たなコミュニティへの投資は、地元の雇用をサポートし、エネルギーの手頃な価格を拡大します。",
-      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
-      "description": "We’re helping build the state’s next-generation workforce and investing in energy programs....",
-      "publishedDate": "Thu, 11 Jun 2026 20:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Manus（マヌスAI）とは？どこの国のAI？できることを解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/manus/",
-      "description": "2025年3月5日、中国のスタートアップチームが、自律型汎用AIエージェント「Manus」をリリースしました！ 自律型AIエージェントと聞くとなんとなく凄そうですが、「実際にどんなことができるの？」と疑問に思っている方も [...]...",
-      "publishedDate": "Thu, 09 Jul 2026 09:22:13 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2026/01/manus_2602-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "AIエージェントは無料で使えるのか？おすすめ7選と選び方・注意点を企業担当者向けに解説",
@@ -464,50 +519,6 @@
       "language": "ja"
     },
     {
-      "title": "ChatGPTでスライド作成する方法とプロンプトのコツを徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-create-slide-presentations/",
-      "description": "ChatGPTでスライド作成をしてみたいけれど、何から手を付ければよいか分からない方は多いのではないでしょうか。 本記事では構成案の作り方から具体的なプロンプト例、仕上げのチェックポイントまで順番に解説します。資料作成に [...] The post ChatGPTでスライド作成する方法とプロンプトのコツを徹底解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 13 Jul 2026 02:05:48 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gptslidepresentations.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTで写真加工・イラスト生成のやり方とプロンプトを解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-photo-illustration-explanation/",
-      "description": "ChatGPTを使うと、手持ちの写真をイラスト風に変えたり、ゼロから画像を作ったりする作業が、文章の指示だけで完結します。 本記事では、操作の手順からプロンプトの工夫、利用時の注意点まで、初めて触る方にも分かるように紹介 [...] The post ChatGPTで写真加工・イラスト生成のやり方とプロンプトを解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 13 Jul 2026 01:46:54 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/chatgptphotoillustrationic.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Claudeを日本語で使う方法｜Web・アプリ・Codeの設定を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-japanese/",
-      "description": "「Claudeは日本語に対応しているのか」「日本語にするために設定は必要あるのか」。Claudeを使い始めた方から、このような声をよく聞きます。 結論からお伝えすると、Claudeは日本語の入出力に標準対応しており、多く [...] The post Claudeを日本語で使う方法｜Web・アプリ・Codeの設定を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 13 Jul 2026 01:28:22 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/claudejapaneseic.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【7月29日開催】AIエージェントサミットSummer2026",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/20260729webinar/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年7月29日（水）12時からAIエージェントをテーマにサミットを開催いたします。 本イベントでは、今最も注目される「自律型A [...] The post 【7月29日開催】AIエージェントサミットSummer2026 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 13 Jul 2026 01:00:37 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/1120_1200x628_5.jpg",
-      "language": "ja"
-    },
-    {
       "title": "Gemini Liveとは？Geminiと音声会話する手順と実際に試した所感、注意点を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/gemini-voice-conversation/",
@@ -541,14 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "生成AIで財務業務が変わる！活用事例やプロンプト、メリット＆注意点を徹底解説",
+      "title": "より小さなソフトウェアエンジニアリングチームを、2029年までに60％の組織が本格展開するとの予測、ガートナー",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/generation-ai-financial-operations/",
-      "description": "経理・財務部門において、日々のデータ入力や書類の確認作業に追われ、本来注力すべき分析業務に時間が割けないと悩む担当者は少なくありません。そうした中、生成AIを活用して業務を効率化する企業が増えています。 この記事では、生 [...]...",
-      "publishedDate": "Fri, 10 Jul 2026 01:25:37 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/202960.html",
+      "description": "調査会社のガートナーは、2029年までに60％の組織がより小さなソフトウェアエンジニアリングチームを本格的に展開するだろうとの予測を発表しました。 人間とAIの強みを活かすためのチームの再編成 この背景には、AIの発達によって人間に代わって......",
+      "publishedDate": "2026-07-14T15:51:18Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Generation-AI-financial-operations_2607-1-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/gartner-smallsoftwareengineeringteam.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/ans-launch-intent01.png",
-      "language": "ja"
-    },
-    {
-      "title": "静的サイトジェネレータ「Astro 7.0」正式リリース、ビルドシステムがVite 8/Rolldownに、Rust製コンパイラ採用で高速化",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/astro_70vite_8rolldownrust.html",
-      "description": "静的サイトジェネレータ「Astro」の最新版となる「Astro 7.0」正式版がリリースされました。 Astro 7 is here! A new Rust compiler, a new Rust Markdown/MDX process......",
-      "publishedDate": "2026-07-01T15:01:18Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/bixftXdS.jpg",
       "language": "ja"
     }
   ]
