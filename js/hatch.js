@@ -15,7 +15,8 @@ const ShiftJIS = (function() {
         // 漢字（パターン名で使用）
         '斜': 0x8ECE, '線': 0x90FC, '網': 0x96D4, '掛': 0x8A7C,
         '芋': 0x88F0, '目': 0x96DA, '地': 0x926E, '馬': 0x946E,
-        '本': 0x967B, '平': 0x95BD, '行': 0x8D73, '垂': 0x9082, '直': 0x92BC
+        '本': 0x967B, '平': 0x95BD, '行': 0x8D73, '垂': 0x9082, '直': 0x92BC,
+        '縞': 0x8EC8, '鋼': 0x8D7C, '板': 0x94C2
     };
 
     function encode(str) {
@@ -77,19 +78,63 @@ document.addEventListener('DOMContentLoaded', function() {
         ja: {
             'diagonal': '斜線', 'crosshatch': '網掛け', 'dot': 'ドット',
             'tile-grid': '芋目地', 'tile-brick': '馬目地', 'rc-concrete': '3本線',
-            'two-line': '2本線', 'horizontal': '平行線', 'vertical': '垂直線'
+            'two-line': '2本線', 'horizontal': '平行線', 'vertical': '垂直線',
+            'shima': '縞鋼板'
         },
         en: {
             'diagonal': 'Diagonal', 'crosshatch': 'Crosshatch', 'dot': 'Dot',
             'tile-grid': 'Grid', 'tile-brick': 'Brick', 'rc-concrete': '3Lines',
-            'two-line': '2Lines', 'horizontal': 'Horizontal', 'vertical': 'Vertical'
+            'two-line': '2Lines', 'horizontal': 'Horizontal', 'vertical': 'Vertical',
+            'shima': 'CheckerPlate'
         },
         zh: {
             'diagonal': '斜线', 'crosshatch': '网格线', 'dot': '点',
             'tile-grid': '网格', 'tile-brick': '砖砌', 'rc-concrete': '三线',
-            'two-line': '两线', 'horizontal': '水平线', 'vertical': '垂直线'
+            'two-line': '两线', 'horizontal': '水平线', 'vertical': '垂直线',
+            'shima': '花纹钢板'
         }
     };
+
+    // 縞鋼板（チェッカープレート）の .pat 定義行（アップロードされた規格データ）。
+    // 倍率でスケールして出力する。先頭フィールド(角度)以外を倍率倍する。
+    const SHIMA_LINES = [
+        '90, 0,-1.5, 28,28, 3,-53',
+        '90, 36,-1.5, 28,28, 3,-53',
+        '0, 0,-1.5, 28,28, 36,-20',
+        '0, 0,1.5, 28,28, 36,-20',
+        '8.13010235, 0,1.5, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
+        '8.13010235, 56,1.5, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
+        '8.13010235, 112,1.5, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
+        '-8.13010235, 0,-1.5, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
+        '-8.13010235, 56,-1.5, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
+        '-8.13010235, 112,-1.5, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
+        '8.13010235, 36,-1.5, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
+        '8.13010235, 92,-1.5, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
+        '8.13010235, 148,-1.5, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
+        '-8.13010235, 36,1.5, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
+        '-8.13010235, 92,1.5, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
+        '-8.13010235, 148,1.5, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
+        '0, 8.75,2.75, 28,28, 18.5,-37.5',
+        '0, 8.75,-2.75, 28,28, 18.5,-37.5',
+        '0, 16.5,10, 28,28, 3,-53',
+        '0, 16.5,46, 28,28, 3,-53',
+        '90, 16.5,10, 28,28, 36,-20',
+        '90, 19.5,10, 28,28, 36,-20',
+        '98.13010235, 16.5,10, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
+        '98.13010235, 16.5,66, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
+        '98.13010235, 16.5,122, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
+        '81.86989765, 19.5,10, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
+        '81.86989765, 19.5,66, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
+        '81.86989765, 19.5,122, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
+        '98.13010235, 19.5,46, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
+        '98.13010235, 19.5,102, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
+        '98.13010235, 19.5,158, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
+        '81.86989765, 16.5,46, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
+        '81.86989765, 16.5,102, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
+        '81.86989765, 16.5,158, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
+        '90, 15.25,18.75, 28,28, 18.5,-37.5',
+        '90, 20.75,18.75, 28,28, 18.5,-37.5'
+    ];
 
     // 初期化
     init();
@@ -192,6 +237,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case 'vertical':
                 drawVerticalThumbnail(ctx, width, height);
+                break;
+            case 'shima':
+                drawShimaThumbnail(ctx, width, height);
                 break;
         }
     }
@@ -305,6 +353,30 @@ document.addEventListener('DOMContentLoaded', function() {
             ctx.lineTo(x, h);
         }
         ctx.stroke();
+    }
+
+    // 縞鋼板サムネイル（交互の斜めラグ模様を簡易表現）
+    function drawShimaThumbnail(ctx, w, h) {
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        // 右上がりの短い斜線を格子状に、隣接セルで向きを反転
+        const step = 13;
+        const len = 5;
+        for (let gy = 0; gy < h + step; gy += step) {
+            for (let gx = 0; gx < w + step; gx += step) {
+                const up = ((Math.round(gx / step) + Math.round(gy / step)) % 2) === 0;
+                const cx = gx + step / 2, cy = gy + step / 2;
+                if (up) {
+                    ctx.moveTo(cx - len, cy + len);
+                    ctx.lineTo(cx + len, cy - len);
+                } else {
+                    ctx.moveTo(cx - len, cy - len);
+                    ctx.lineTo(cx + len, cy + len);
+                }
+            }
+        }
+        ctx.stroke();
+        ctx.lineWidth = 1;
     }
 
     // パターン種類選択
@@ -432,6 +504,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case 'vertical':
                 drawVerticalPreview(scale);
+                break;
+            case 'shima':
+                drawShimaPreview(scale);
                 break;
         }
 
@@ -843,6 +918,90 @@ document.addEventListener('DOMContentLoaded', function() {
         ctx.setLineDash([]);
     }
 
+    // 縞鋼板プレビュー（規格 .pat をそのままレンダリング）
+    function drawShimaPreview() {
+        const s = parseFloat(document.getElementById('shima-scale').value) || 1;
+        const families = SHIMA_LINES.map(l => {
+            const n = l.split(',').map(t => parseFloat(t.trim()));
+            return {
+                angle: n[0],
+                x: n[1] * s, y: n[2] * s,
+                dx: n[3] * s, dy: n[4] * s,
+                dash: n.slice(5).map(v => v * s)
+            };
+        });
+        drawPatFamilies(families);
+    }
+
+    // 汎用 .pat ラインファミリ描画。各 family = { angle, x, y, dx(線方向シフト),
+    // dy(垂直間隔), dash[] }。dash は 正=描画 / 負=空白（.pat 準拠）。
+    // 縞鋼板のような複雑パターンを定義どおりプレビューするための共通ルーチン。
+    function drawPatFamilies(families) {
+        const cw = canvas.width, ch = canvas.height;
+        const pxPerMm = 1.8;                    // 実寸(mm)→px（約2タイル分が見える）
+        const centerMmX = 40, centerMmY = 30;   // パターン空間の表示中心(mm)
+        const toPx = (mx, my) => [cw / 2 + (mx - centerMmX) * pxPerMm, ch / 2 - (my - centerMmY) * pxPerMm];
+        const halfDiagMm = Math.sqrt(cw * cw + ch * ch) / 2 / pxPerMm + 5;
+
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(0, 0, cw, ch);
+        ctx.clip();
+        ctx.strokeStyle = '#333333';
+        ctx.lineWidth = 1;
+
+        families.forEach(f => {
+            const rad = f.angle * Math.PI / 180;
+            const ax = Math.cos(rad), ay = Math.sin(rad);   // 線方向
+            const px = -Math.sin(rad), py = Math.cos(rad);  // 垂直方向
+            const period = f.dash.length ? f.dash.reduce((a, v) => a + Math.abs(v), 0) : 0;
+            const stepX = f.dx * ax + f.dy * px;            // 隣接線への移動ベクトル
+            const stepY = f.dx * ay + f.dy * py;
+            const dy = f.dy || 1;
+
+            // 表示中心に最も近い線 n を中心に、必要本数だけ走査
+            const originPerp = (f.x - centerMmX) * px + (f.y - centerMmY) * py;
+            const nCenter = -originPerp / dy;
+            const nSpan = Math.ceil(halfDiagMm / Math.abs(dy)) + 2;
+            const nLo = Math.floor(nCenter) - nSpan;
+            const nHi = Math.ceil(nCenter) + nSpan;
+
+            for (let n = nLo; n <= nHi; n++) {
+                const oxN = f.x + n * stepX;
+                const oyN = f.y + n * stepY;
+                const tc = (centerMmX - oxN) * ax + (centerMmY - oyN) * ay;
+                const tLo = tc - halfDiagMm, tHi = tc + halfDiagMm;
+
+                if (period === 0) {
+                    const [x1, y1] = toPx(oxN + tLo * ax, oyN + tLo * ay);
+                    const [x2, y2] = toPx(oxN + tHi * ax, oyN + tHi * ay);
+                    ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+                    continue;
+                }
+                // 破線: 原点(t=0)からの位相を保って区間を列挙
+                let t = Math.floor(tLo / period) * period;
+                let guard = 0;
+                while (t < tHi && guard++ < 10000) {
+                    for (let di = 0; di < f.dash.length; di++) {
+                        const len = Math.abs(f.dash[di]);
+                        if (len === 0) continue;
+                        if (f.dash[di] > 0) {
+                            const a = Math.max(t, tLo), b = Math.min(t + len, tHi);
+                            if (b > a) {
+                                const [x1, y1] = toPx(oxN + a * ax, oyN + a * ay);
+                                const [x2, y2] = toPx(oxN + b * ax, oyN + b * ay);
+                                ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+                            }
+                        }
+                        t += len;
+                    }
+                }
+            }
+        });
+
+        ctx.restore();
+    }
+
     // プレビュー情報更新
     function updatePreviewInfo() {
         const format = outputFormatSelect.value;
@@ -917,6 +1076,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case 'vertical':
                 patContent += generateVerticalPattern(format, isModel);
+                break;
+            case 'shima':
+                patContent += generateShimaPattern(format, isModel);
                 break;
         }
 
@@ -1099,6 +1261,19 @@ document.addEventListener('DOMContentLoaded', function() {
         return lines;
     }
 
+    // 縞鋼板パターン生成（規格 .pat を倍率でスケールして出力。倍率1は原データ完全再現）
+    function generateShimaPattern(format, isModel) {
+        const s = parseFloat(document.getElementById('shima-scale').value) || 1;
+        if (s === 1) {
+            return SHIMA_LINES.join('\n') + '\n';
+        }
+        // 先頭フィールド(角度)以外を s 倍。浮動小数のノイズは 9 桁に丸めて除去。
+        return SHIMA_LINES.map(l => {
+            const n = l.split(',').map(t => parseFloat(t.trim()));
+            return n.map((v, i) => (i === 0 ? v : +(v * s).toFixed(9))).join(', ');
+        }).join('\n') + '\n';
+    }
+
     // 平行線（横線）パターン生成
     function generateHorizontalPattern(format, isModel) {
         const spacing = parseFloat(document.getElementById('horizontal-spacing').value) || 10;
@@ -1209,6 +1384,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case 'vertical':
                 params.push(document.getElementById('vertical-spacing').value || '10');
+                break;
+            case 'shima':
+                params.push(document.getElementById('shima-scale').value || '1');
                 break;
         }
         return params;

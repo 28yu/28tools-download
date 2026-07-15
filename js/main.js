@@ -6120,6 +6120,21 @@ translations.filledRegion = {
             en: 'Vertical',
             zh: '垂直线'
         },
+        'hatch-type-shima': {
+            ja: '縞鋼板',
+            en: 'Checker Plate',
+            zh: '花纹钢板'
+        },
+        'hatch-scale': {
+            ja: '倍率 (×)',
+            en: 'Scale (×)',
+            zh: '倍率 (×)'
+        },
+        'hatch-shima-note': {
+            ja: '※ 規格の縞鋼板パターン。倍率で全体サイズを調整できます（1 = 実寸）。',
+            en: '* Standard checker plate pattern. Use scale to resize the whole pattern (1 = actual size).',
+            zh: '※ 标准花纹钢板图案。可用倍率调整整体大小（1 = 实际尺寸）。'
+        },
         'hatch-angle': {
             ja: '角度 (°)',
             en: 'Angle (°)',
@@ -8171,9 +8186,9 @@ translations.toolAbout = {
         ja: 'このツールでできること', en: 'What you can do', zh: '本工具可实现的功能'
     },
     'hatch-about-can1': {
-        ja: '斜線・網掛け・ドット・芋目地・馬目地・3本線・2本線・平行線・垂直線の9種類のパターンに対応',
-        en: 'Supports nine pattern types: diagonal, crosshatch, dot, stack bond, running bond, 3 lines, 2 lines, horizontal, and vertical',
-        zh: '支持斜线、交叉线、点、错缝、顺缝、三线、两线、水平线、垂直线九种图案'
+        ja: '斜線・網掛け・ドット・芋目地・馬目地・3本線・2本線・平行線・垂直線・縞鋼板の10種類のパターンに対応',
+        en: 'Supports ten pattern types: diagonal, crosshatch, dot, stack bond, running bond, 3 lines, 2 lines, horizontal, vertical, and checker plate',
+        zh: '支持斜线、交叉线、点、错缝、顺缝、三线、两线、水平线、垂直线、花纹钢板十种图案'
     },
     'hatch-about-can2': {
         ja: '角度・間隔・目地サイズなどを指定し、プレビューを見ながら調整',
