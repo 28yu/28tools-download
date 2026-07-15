@@ -14,7 +14,8 @@ const ShiftJIS = (function() {
         'ド': 0x8368, 'ッ': 0x8362, 'ト': 0x8367,
         // 漢字（パターン名で使用）
         '斜': 0x8ED2, '線': 0x90FC, '網': 0x96D4, '掛': 0x8A7C,
-        '芋': 0x88F0, '目': 0x96DA, '地': 0x926E, '馬': 0x946E
+        '芋': 0x88F0, '目': 0x96DA, '地': 0x926E, '馬': 0x946E,
+        '本': 0x967B
     };
 
     function encode(str) {
@@ -106,6 +107,9 @@ document.addEventListener('DOMContentLoaded', function() {
             el.addEventListener('change', updatePreview);
             el.addEventListener('input', updatePreview);
         });
+
+        // 言語切替時にプレビュー情報（ファイル名は表示言語に追従）を更新
+        window.addEventListener('28tools-langchange', updatePreview);
 
         // サムネイル描画
         drawAllThumbnails();
@@ -674,13 +678,13 @@ document.addEventListener('DOMContentLoaded', function() {
     function drawRCConcretePreview(scale) {
         const innerSpacing = parseFloat(document.getElementById('rc-inner-spacing').value) || 2;
         const outerSpacing = parseFloat(document.getElementById('rc-outer-spacing').value) || 15;
+        const angle = parseFloat(document.getElementById('rc-angle').value) || 45;
 
         const innerPx = innerSpacing * scale;
         const outerPx = outerSpacing * scale;
         const groupWidth = innerPx * 2; // 3本線のグループ幅
         const totalSpacing = groupWidth + outerPx;
 
-        const angle = 45;
         const rad = angle * Math.PI / 180;
         const diagonal = Math.sqrt(canvas.width * canvas.width + canvas.height * canvas.height);
 
@@ -726,8 +730,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function generatePatternFile() {
         const type = patternTypeInput.value;
         const format = outputFormatSelect.value;
-        // 日本語パターン名を使用（Shift-JISエンコードで互換性確保）
-        const name = generateAutoPatternName();
+        // .pat 内の *パターン名（Shift-JISで表現できる名前。zh は ASCII にフォールバック）
+        const name = generatePatternDefName();
         const patternUnit = document.getElementById('pattern-unit').value;
         const isModel = format === 'revit' && document.getElementById('revit-pattern-type').value === 'model';
 
@@ -916,47 +920,67 @@ document.addEventListener('DOMContentLoaded', function() {
     function generateRCConcretePattern(format, isModel) {
         const innerSpacing = parseFloat(document.getElementById('rc-inner-spacing').value) || 2;
         const outerSpacing = parseFloat(document.getElementById('rc-outer-spacing').value) || 15;
+        const angle = parseFloat(document.getElementById('rc-angle').value) || 45;
 
         // 値は選択された単位（ヘッダーの ;%UNITS= と一致）でそのまま出力する（換算なし）。
         const inner = innerSpacing;
         const totalSpacing = innerSpacing * 2 + outerSpacing;
 
+        // 3本の線を「線に対して垂直」にずらす。原点を法線方向(-sinθ, cosθ)へ
+        // inner ずつ移動させることで、角度が 0〜90° 何度でも 3 本が等間隔でグループ化される
+        // （y 原点だけをずらす旧方式は 90° 付近で 3 本が重なってしまうため不可）。
+        const rad = angle * Math.PI / 180;
+        const nx = -Math.sin(rad); // 法線方向の x 成分
+        const ny = Math.cos(rad);  // 法線方向の y 成分
+        const round = v => Math.round(v * 1e6) / 1e6;
+
         let lines = '';
-        // 3本の斜線
-        lines += `45, 0, 0, 0, ${totalSpacing}\n`;
-        lines += `45, 0, ${inner}, 0, ${totalSpacing}\n`;
-        lines += `45, 0, ${inner * 2}, 0, ${totalSpacing}\n`;
+        for (let k = 0; k < 3; k++) {
+            const ox = round(nx * inner * k);
+            const oy = round(ny * inner * k);
+            lines += `${angle}, ${ox}, ${oy}, 0, ${totalSpacing}\n`;
+        }
 
         return lines;
     }
 
-    // パターン名自動生成（日本語：ファイル名用）
+    // パターン種類名（表示言語ごと）。ファイル名はここから多言語で組み立てる。
+    const TYPE_NAMES = {
+        ja: {
+            'diagonal': '斜線', 'crosshatch': '網掛け', 'dot': 'ドット',
+            'tile-grid': '芋目地', 'tile-brick': '馬目地', 'rc-concrete': '3本線'
+        },
+        en: {
+            'diagonal': 'Diagonal', 'crosshatch': 'Crosshatch', 'dot': 'Dot',
+            'tile-grid': 'Grid', 'tile-brick': 'Brick', 'rc-concrete': '3Lines'
+        },
+        zh: {
+            'diagonal': '斜线', 'crosshatch': '网格线', 'dot': '点',
+            'tile-grid': '网格', 'tile-brick': '砖砌', 'rc-concrete': '三线'
+        }
+    };
+
+    // 現在の表示言語（main.js が公開する window.currentLanguage）。未対応時は ja。
+    function getCurrentLang() {
+        const lang = (typeof window !== 'undefined') ? window.currentLanguage : 'ja';
+        return TYPE_NAMES[lang] ? lang : 'ja';
+    }
+
+    // パターン名自動生成（ダウンロードファイル名用：表示言語に追従）
     function generateAutoPatternName() {
         const type = patternTypeInput.value;
-        const typeNames = {
-            'diagonal': '斜線',
-            'crosshatch': '網掛け',
-            'dot': 'ドット',
-            'tile-grid': '芋目地',
-            'tile-brick': '馬目地',
-            'rc-concrete': 'RC'
-        };
-        const typeName = typeNames[type] || type;
+        const lang = getCurrentLang();
+        const typeName = TYPE_NAMES[lang][type] || TYPE_NAMES.ja[type] || type;
         return `${typeName}_${getPatternParams().join('x')}`;
     }
 
-    // パターン名自動生成（ASCII：.patファイル内容用）
-    function generateAsciiPatternName() {
+    // .patファイル内の *パターン名 用（Shift-JISで表現できる名前に限定）。
+    // 中国語簡体字は Shift-JIS に無いため、英語(ASCII)名にフォールバックする。
+    function generatePatternDefName() {
         const type = patternTypeInput.value;
-        const typeNames = {
-            'diagonal': 'DIAGONAL',
-            'crosshatch': 'CROSSHATCH',
-            'dot': 'DOT',
-            'tile-grid': 'TILE_GRID',
-            'tile-brick': 'TILE_BRICK',
-            'rc-concrete': 'RC'
-        };
-        const typeName = typeNames[type] || type.toUpperCase();
+        const lang = getCurrentLang();
+        const safeLang = (lang === 'zh') ? 'en' : lang;
+        const typeName = TYPE_NAMES[safeLang][type] || TYPE_NAMES.ja[type] || type;
         return `${typeName}_${getPatternParams().join('x')}`;
     }
 
@@ -994,6 +1018,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 break;
             case 'rc-concrete':
+                params.push(document.getElementById('rc-angle').value || '45');
                 params.push(document.getElementById('rc-inner-spacing').value || '2');
                 params.push(document.getElementById('rc-outer-spacing').value || '15');
                 break;

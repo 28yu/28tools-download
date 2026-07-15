@@ -91,7 +91,7 @@
                             </div>
                             <div class="pattern-type-item" data-type="rc-concrete">
                                 <canvas class="pattern-thumbnail" data-pattern="rc-concrete" width="40" height="40"></canvas>
-                                <span class="pattern-type-name" data-lang-key="hatch-type-rc">RC</span>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-rc">3本線</span>
                             </div>
                         </div>
                         <input type="hidden" id="pattern-type" value="diagonal">
@@ -242,9 +242,13 @@
                             <p class="setting-note" data-lang-key="hatch-offset-note">※ ずらし量は1/2固定</p>
                         </div>
 
-                        <!-- RCコンクリート設定 -->
+                        <!-- 3本線設定 -->
                         <div id="settings-rc-concrete" class="pattern-specific-settings" style="display: none;">
                             <div class="setting-row">
+                                <div class="setting-group compact">
+                                    <label class="setting-label" data-lang-key="hatch-angle">角度 (°)</label>
+                                    <input type="number" id="rc-angle" class="setting-input" value="45" min="0" max="360">
+                                </div>
                                 <div class="setting-group compact">
                                     <label class="setting-label" data-lang-key="hatch-inner-spacing">線内間隔 (mm)</label>
                                     <input type="number" id="rc-inner-spacing" class="setting-input" value="2" min="0.5" step="0.5">
