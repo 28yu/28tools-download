@@ -13,9 +13,9 @@ const ShiftJIS = (function() {
         // カタカナ
         'ド': 0x8368, 'ッ': 0x8362, 'ト': 0x8367,
         // 漢字（パターン名で使用）
-        '斜': 0x8ED2, '線': 0x90FC, '網': 0x96D4, '掛': 0x8A7C,
+        '斜': 0x8ECE, '線': 0x90FC, '網': 0x96D4, '掛': 0x8A7C,
         '芋': 0x88F0, '目': 0x96DA, '地': 0x926E, '馬': 0x946E,
-        '本': 0x967B
+        '本': 0x967B, '平': 0x95BD, '行': 0x8D73, '垂': 0x9082, '直': 0x92BC
     };
 
     function encode(str) {
@@ -64,6 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // 破線設定の表示切り替え
     const diagonalDashType = document.getElementById('diagonal-dash-type');
     const crosshatchDashType = document.getElementById('crosshatch-dash-type');
+    const horizontalDashType = document.getElementById('horizontal-dash-type');
+    const verticalDashType = document.getElementById('vertical-dash-type');
 
     // 目地チェックボックス
     const tileGridGroutEnabled = document.getElementById('tile-grid-grout-enabled');
@@ -74,15 +76,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const TYPE_NAMES = {
         ja: {
             'diagonal': '斜線', 'crosshatch': '網掛け', 'dot': 'ドット',
-            'tile-grid': '芋目地', 'tile-brick': '馬目地', 'rc-concrete': '3本線'
+            'tile-grid': '芋目地', 'tile-brick': '馬目地', 'rc-concrete': '3本線',
+            'two-line': '2本線', 'horizontal': '平行線', 'vertical': '垂直線'
         },
         en: {
             'diagonal': 'Diagonal', 'crosshatch': 'Crosshatch', 'dot': 'Dot',
-            'tile-grid': 'Grid', 'tile-brick': 'Brick', 'rc-concrete': '3Lines'
+            'tile-grid': 'Grid', 'tile-brick': 'Brick', 'rc-concrete': '3Lines',
+            'two-line': '2Lines', 'horizontal': 'Horizontal', 'vertical': 'Vertical'
         },
         zh: {
             'diagonal': '斜线', 'crosshatch': '网格线', 'dot': '点',
-            'tile-grid': '网格', 'tile-brick': '砖砌', 'rc-concrete': '三线'
+            'tile-grid': '网格', 'tile-brick': '砖砌', 'rc-concrete': '三线',
+            'two-line': '两线', 'horizontal': '水平线', 'vertical': '垂直线'
         }
     };
 
@@ -109,6 +114,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         crosshatchDashType.addEventListener('change', function() {
             toggleDashSettings('crosshatch', this.value);
+        });
+        horizontalDashType.addEventListener('change', function() {
+            toggleDashSettings('horizontal', this.value);
+        });
+        verticalDashType.addEventListener('change', function() {
+            toggleDashSettings('vertical', this.value);
         });
 
         // 目地チェックボックスの変更
@@ -172,6 +183,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case 'rc-concrete':
                 drawRCConcreteThumbnail(ctx, width, height);
+                break;
+            case 'two-line':
+                drawTwoLineThumbnail(ctx, width, height);
+                break;
+            case 'horizontal':
+                drawHorizontalThumbnail(ctx, width, height);
+                break;
+            case 'vertical':
+                drawVerticalThumbnail(ctx, width, height);
                 break;
         }
     }
@@ -243,17 +263,46 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function drawRCConcreteThumbnail(ctx, w, h) {
+        drawGroupedLinesThumbnail(ctx, w, h, 3);
+    }
+
+    function drawTwoLineThumbnail(ctx, w, h) {
+        drawGroupedLinesThumbnail(ctx, w, h, 2);
+    }
+
+    // 2本線・3本線の共通サムネイル（count 本を1グループにした斜線）
+    function drawGroupedLinesThumbnail(ctx, w, h, count) {
         const innerSpacing = 2;
         const groupSpacing = 10;
         ctx.beginPath();
         let pos = 0;
         while (pos < w + h) {
-            for (let i = 0; i < 3; i++) {
+            for (let i = 0; i < count; i++) {
                 const offset = pos + i * innerSpacing;
                 ctx.moveTo(offset, 0);
                 ctx.lineTo(offset - h * 0.7, h);
             }
-            pos += innerSpacing * 2 + groupSpacing;
+            pos += innerSpacing * (count - 1) + groupSpacing;
+        }
+        ctx.stroke();
+    }
+
+    function drawHorizontalThumbnail(ctx, w, h) {
+        const spacing = 6;
+        ctx.beginPath();
+        for (let y = spacing; y < h; y += spacing) {
+            ctx.moveTo(0, y);
+            ctx.lineTo(w, y);
+        }
+        ctx.stroke();
+    }
+
+    function drawVerticalThumbnail(ctx, w, h) {
+        const spacing = 6;
+        ctx.beginPath();
+        for (let x = spacing; x < w; x += spacing) {
+            ctx.moveTo(x, 0);
+            ctx.lineTo(x, h);
         }
         ctx.stroke();
     }
@@ -374,6 +423,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case 'rc-concrete':
                 drawRCConcretePreview(scale);
+                break;
+            case 'two-line':
+                drawTwoLinePreview(scale);
+                break;
+            case 'horizontal':
+                drawHorizontalPreview(scale);
+                break;
+            case 'vertical':
+                drawVerticalPreview(scale);
                 break;
         }
 
@@ -691,16 +749,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // RCコンクリートプレビュー
+    // 3本線プレビュー
     function drawRCConcretePreview(scale) {
         const innerSpacing = parseFloat(document.getElementById('rc-inner-spacing').value) || 2;
         const outerSpacing = parseFloat(document.getElementById('rc-outer-spacing').value) || 15;
         const angle = parseFloat(document.getElementById('rc-angle').value) || 45;
+        drawGroupedLinesPreview(scale, angle, innerSpacing, outerSpacing, 3);
+    }
 
+    // 2本線プレビュー
+    function drawTwoLinePreview(scale) {
+        const innerSpacing = parseFloat(document.getElementById('two-line-inner-spacing').value) || 2;
+        const outerSpacing = parseFloat(document.getElementById('two-line-outer-spacing').value) || 15;
+        const angle = parseFloat(document.getElementById('two-line-angle').value) || 45;
+        drawGroupedLinesPreview(scale, angle, innerSpacing, outerSpacing, 2);
+    }
+
+    // 2本線・3本線の共通プレビュー（count 本を1グループにして繰り返す）
+    function drawGroupedLinesPreview(scale, angle, innerSpacing, outerSpacing, count) {
         const innerPx = innerSpacing * scale;
         const outerPx = outerSpacing * scale;
-        const groupWidth = innerPx * 2; // 3本線のグループ幅
-        const totalSpacing = groupWidth + outerPx;
+        const totalSpacing = innerPx * (count - 1) + outerPx;
 
         const rad = angle * Math.PI / 180;
         const diagonal = Math.sqrt(canvas.width * canvas.width + canvas.height * canvas.height);
@@ -713,9 +782,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         for (let g = -numGroups; g <= numGroups; g++) {
             const baseY = g * totalSpacing;
-
-            // 3本線を描画
-            for (let i = 0; i < 3; i++) {
+            for (let i = 0; i < count; i++) {
                 const y = baseY + i * innerPx;
                 ctx.beginPath();
                 ctx.moveTo(-diagonal, y);
@@ -725,6 +792,55 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         ctx.restore();
+    }
+
+    // 平行線（横線）プレビュー
+    function drawHorizontalPreview(scale) {
+        const spacing = parseFloat(document.getElementById('horizontal-spacing').value) || 10;
+        const dashType = document.getElementById('horizontal-dash-type').value;
+        const dashLength = parseFloat(document.getElementById('horizontal-dash-length').value) || 5;
+        const dashGap = parseFloat(document.getElementById('horizontal-dash-gap').value) || 3;
+        drawLineFamilyPreview(scale, 0, spacing, dashType, dashLength, dashGap);
+    }
+
+    // 垂直線（縦線）プレビュー
+    function drawVerticalPreview(scale) {
+        const spacing = parseFloat(document.getElementById('vertical-spacing').value) || 10;
+        const dashType = document.getElementById('vertical-dash-type').value;
+        const dashLength = parseFloat(document.getElementById('vertical-dash-length').value) || 5;
+        const dashGap = parseFloat(document.getElementById('vertical-dash-gap').value) || 3;
+        drawLineFamilyPreview(scale, 90, spacing, dashType, dashLength, dashGap);
+    }
+
+    // 一方向の平行線プレビュー（角度固定の平行線・垂直線で共用）
+    function drawLineFamilyPreview(scale, angle, spacing, dashType, dashLength, dashGap) {
+        const spacingPx = spacing * scale;
+        const rad = angle * Math.PI / 180;
+        const diagonal = Math.sqrt(canvas.width * canvas.width + canvas.height * canvas.height);
+        const numLines = Math.ceil(diagonal / spacingPx) * 2;
+
+        ctx.save();
+        ctx.translate(canvas.width / 2, canvas.height / 2);
+        ctx.rotate(rad);
+
+        for (let i = -numLines; i <= numLines; i++) {
+            const y = i * spacingPx;
+            const isDashed = dashType === 'all' || (dashType === 'alternate' && i % 2 === 0);
+
+            if (isDashed && dashType !== 'none') {
+                ctx.setLineDash([dashLength * scale, dashGap * scale]);
+            } else {
+                ctx.setLineDash([]);
+            }
+
+            ctx.beginPath();
+            ctx.moveTo(-diagonal, y);
+            ctx.lineTo(diagonal, y);
+            ctx.stroke();
+        }
+
+        ctx.restore();
+        ctx.setLineDash([]);
     }
 
     // プレビュー情報更新
@@ -792,6 +908,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case 'rc-concrete':
                 patContent += generateRCConcretePattern(format, isModel);
+                break;
+            case 'two-line':
+                patContent += generateTwoLinePattern(format, isModel);
+                break;
+            case 'horizontal':
+                patContent += generateHorizontalPattern(format, isModel);
+                break;
+            case 'vertical':
+                patContent += generateVerticalPattern(format, isModel);
                 break;
         }
 
@@ -938,31 +1063,77 @@ document.addEventListener('DOMContentLoaded', function() {
         return lines;
     }
 
-    // RCコンクリートパターン生成
+    // 3本線パターン生成
     function generateRCConcretePattern(format, isModel) {
         const innerSpacing = parseFloat(document.getElementById('rc-inner-spacing').value) || 2;
         const outerSpacing = parseFloat(document.getElementById('rc-outer-spacing').value) || 15;
         const angle = parseFloat(document.getElementById('rc-angle').value) || 45;
+        return buildGroupedLines(angle, innerSpacing, outerSpacing, 3);
+    }
 
-        // 値は選択された単位（ヘッダーの ;%UNITS= と一致）でそのまま出力する（換算なし）。
-        const inner = innerSpacing;
-        const totalSpacing = innerSpacing * 2 + outerSpacing;
+    // 2本線パターン生成
+    function generateTwoLinePattern(format, isModel) {
+        const innerSpacing = parseFloat(document.getElementById('two-line-inner-spacing').value) || 2;
+        const outerSpacing = parseFloat(document.getElementById('two-line-outer-spacing').value) || 15;
+        const angle = parseFloat(document.getElementById('two-line-angle').value) || 45;
+        return buildGroupedLines(angle, innerSpacing, outerSpacing, 2);
+    }
 
-        // 3本の線を「線に対して垂直」にずらす。原点を法線方向(-sinθ, cosθ)へ
-        // inner ずつ移動させることで、角度が 0〜90° 何度でも 3 本が等間隔でグループ化される
-        // （y 原点だけをずらす旧方式は 90° 付近で 3 本が重なってしまうため不可）。
+    // 2本線・3本線の共通生成。count 本を「線に対して垂直」に inner ずつずらして
+    // 1グループにし、グループ間は outer 空ける。原点を法線方向(-sinθ, cosθ)へ動かすので
+    // 角度 0〜90° 何度でも等間隔にグループ化される（y原点だけずらす方式は90°付近で重なる）。
+    // 値は選択された単位（ヘッダーの ;%UNITS= と一致）でそのまま出力する（換算なし）。
+    function buildGroupedLines(angle, inner, outer, count) {
+        const totalSpacing = inner * (count - 1) + outer;
         const rad = angle * Math.PI / 180;
         const nx = -Math.sin(rad); // 法線方向の x 成分
         const ny = Math.cos(rad);  // 法線方向の y 成分
         const round = v => Math.round(v * 1e6) / 1e6;
 
         let lines = '';
-        for (let k = 0; k < 3; k++) {
+        for (let k = 0; k < count; k++) {
             const ox = round(nx * inner * k);
             const oy = round(ny * inner * k);
             lines += `${angle}, ${ox}, ${oy}, 0, ${totalSpacing}\n`;
         }
+        return lines;
+    }
 
+    // 平行線（横線）パターン生成
+    function generateHorizontalPattern(format, isModel) {
+        const spacing = parseFloat(document.getElementById('horizontal-spacing').value) || 10;
+        const dashType = document.getElementById('horizontal-dash-type').value;
+        const dashLength = parseFloat(document.getElementById('horizontal-dash-length').value) || 5;
+        const dashGap = parseFloat(document.getElementById('horizontal-dash-gap').value) || 3;
+        return buildLinePattern(0, spacing, dashType, dashLength, dashGap);
+    }
+
+    // 垂直線（縦線）パターン生成
+    function generateVerticalPattern(format, isModel) {
+        const spacing = parseFloat(document.getElementById('vertical-spacing').value) || 10;
+        const dashType = document.getElementById('vertical-dash-type').value;
+        const dashLength = parseFloat(document.getElementById('vertical-dash-length').value) || 5;
+        const dashGap = parseFloat(document.getElementById('vertical-dash-gap').value) || 3;
+        return buildLinePattern(90, spacing, dashType, dashLength, dashGap);
+    }
+
+    // 角度固定の平行線を .pat 化（平行線・垂直線で共用）。
+    // 「一本おき」の 2 本目は角度に依らず等間隔になるよう法線方向へ spacing ずらす。
+    // 値は選択された単位（ヘッダーの ;%UNITS= と一致）でそのまま出力する（換算なし）。
+    function buildLinePattern(angle, spacing, dashType, dashLength, dashGap) {
+        let lines = '';
+        if (dashType === 'none') {
+            lines += `${angle}, 0, 0, 0, ${spacing}\n`;
+        } else if (dashType === 'all') {
+            lines += `${angle}, 0, 0, 0, ${spacing}, ${dashLength}, -${dashGap}\n`;
+        } else if (dashType === 'alternate') {
+            const rad = angle * Math.PI / 180;
+            const round = v => Math.round(v * 1e6) / 1e6;
+            const ox = round(-Math.sin(rad) * spacing);
+            const oy = round(Math.cos(rad) * spacing);
+            lines += `${angle}, 0, 0, 0, ${spacing * 2}\n`;
+            lines += `${angle}, ${ox}, ${oy}, 0, ${spacing * 2}, ${dashLength}, -${dashGap}\n`;
+        }
         return lines;
     }
 
@@ -1027,6 +1198,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 params.push(document.getElementById('rc-angle').value || '45');
                 params.push(document.getElementById('rc-inner-spacing').value || '2');
                 params.push(document.getElementById('rc-outer-spacing').value || '15');
+                break;
+            case 'two-line':
+                params.push(document.getElementById('two-line-angle').value || '45');
+                params.push(document.getElementById('two-line-inner-spacing').value || '2');
+                params.push(document.getElementById('two-line-outer-spacing').value || '15');
+                break;
+            case 'horizontal':
+                params.push(document.getElementById('horizontal-spacing').value || '10');
+                break;
+            case 'vertical':
+                params.push(document.getElementById('vertical-spacing').value || '10');
                 break;
         }
         return params;
