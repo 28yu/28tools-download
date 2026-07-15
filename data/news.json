@@ -1,14 +1,44 @@
 {
-  "lastUpdated": "2026-07-14T01:41:45.014242",
+  "lastUpdated": "2026-07-15T01:27:42.906875",
   "articles": [
     {
-      "title": "一人親方とは？やめとけと言われる真相や保険制度・年収事情まで徹底解説",
-      "link": "https://news.build-app.jp/article/34800/",
-      "description": "一人親方とは、企業に縛られず、自由に工事業務に従事できる働き方です。しかし、具体的にどのような仕事をする人を指すのかわからない、年収がどれく......",
-      "publishedDate": "Thu, 09 Jul 2026 22:00:00 +0000",
+      "title": "仙台第一生命ビル建替計画新築工事｜黒から白へ、50年で変遷したオフィスビルの在り方とは",
+      "link": "https://news.build-app.jp/article/41549/",
+      "description": "トレンドワード：仙台第一生命ビル建替計画新築工事 仙台第一生命ビル建替計画新築工事は、竣工から55年が経過した、仙台第一生命ビルの建て替え工......",
+      "publishedDate": "Tue, 14 Jul 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/0fa4905e678e17c6071741275252d96b-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/image-11-1-130x70.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Fable 5とGPT-5.6 Solの役割分担で、AI利用コストを40%削減する方法",
+      "link": "https://axconstdx.com/2026/07/14/fable-5%e3%81%a8gpt-5-6-sol%e3%81%ae%e5%bd%b9%e5%89%b2%e5%88%86%e6%8b%85%e3%81%a7%e3%80%81ai%e5%88%a9%e7%94%a8%e3%82%b3%e3%82%b9%e3%83%88%e3%82%9240%e5%89%8a%e6%b8%9b%e3%81%99%e3%82%8b%e6%96%b9/?utm_source=rss&utm_medium=rss&utm_campaign=fable-5%25e3%2581%25a8gpt-5-6-sol%25e3%2581%25ae%25e5%25bd%25b9%25e5%2589%25b2%25e5%2588%2586%25e6%258b%2585%25e3%2581%25a7%25e3%2580%2581ai%25e5%2588%25a9%25e7%2594%25a8%25e3%2582%25b3%25e3%2582%25b9%25e3%2583%2588%25e3%2582%259240%25e5%2589%258a%25e6%25b8%259b%25e3%2581%2599%25e3%2582%258b%25e6%2596%25b9",
+      "description": "「高性能AIは使いたいけど、コストが膨らみ続ける」—建設・製造業のIT担当者なら、この悩みは他人事ではありません。実は、2つのAIを役割分担させ、JSONで連携させるだけで、品質を落とさずにコストを40%削減できる方法が [...] <p>The post Fable 5とGPT-5.6 Solの役割分担で、AI利用コストを40%削減する方法 first appeared on 生成AIと建設DX...",
+      "publishedDate": "Tue, 14 Jul 2026 05:26:33 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-under100KB-1-1-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "鹿島建設とタカムラ建設、CO2吸収コンクリート床版を建築構造部材として国内初適用を実現",
+      "link": "https://news.build-app.jp/article/41590/",
+      "description": "鹿島建設株式会社とタカムラ建設株式会社は、コンクリートの製造過程で排出される二酸化炭素よりも吸収・固定する量が多い「カーボンネガティブコンク......",
+      "publishedDate": "Tue, 14 Jul 2026 04:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/cuco_suicom_half_prestressed-130x46.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "熊谷組、天井クレーンの吊荷直下を可視化しAIで作業員を検知する安全システムを独自開発",
+      "link": "https://news.build-app.jp/article/41578/",
+      "description": "株式会社熊谷組は、屋内で稼働する天井クレーンの吊荷直下の状況をリアルタイムに可視化し、作業員の立ち入りを検知して警告する新たな安全システムを......",
+      "publishedDate": "Tue, 14 Jul 2026 02:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/kumagaigumi_overhead_crane-130x61.png",
       "language": "ja"
     },
     {
@@ -22,33 +52,13 @@
       "language": "ja"
     },
     {
-      "title": "清水建設、国内建設業界に先駆けてAIロボットによる現場巡回と塗装作業の実証を開始",
-      "link": "https://news.build-app.jp/article/41496/",
-      "description": "清水建設は、建設現場での人手不足を補い、生産性と安全性を高めることを狙って、AIロボットを現場に取り入れる取り組みを始めました。 人に代わっ......",
-      "publishedDate": "Thu, 09 Jul 2026 08:00:00 +0000",
+      "title": "一人親方とは？やめとけと言われる真相や保険制度・年収事情まで徹底解説",
+      "link": "https://news.build-app.jp/article/34800/",
+      "description": "一人親方とは、企業に縛られず、自由に工事業務に従事できる働き方です。しかし、具体的にどのような仕事をする人を指すのかわからない、年収がどれく......",
+      "publishedDate": "Thu, 09 Jul 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/ai_robot_construction-130x73.png",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年度版】熱中症労働災害事例から学ぶ現場の安全対策",
-      "link": "https://news.build-app.jp/article/41476/",
-      "description": "トレンドワード：熱中症による労働災害事例 近年、猛暑の影響により、職場で発生する熱中症による労働災害は増加しています。とくに建設業は、炎天下......",
-      "publishedDate": "Thu, 09 Jul 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/2c4484aabe73127fdf7236d6eaf0bed8-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "熊谷組、EARTHBRAINの生成AI安全支援アプリ導入、過去の事故事例で現場管理を高度化",
-      "link": "https://news.build-app.jp/article/41471/",
-      "description": "株式会社熊谷組は、株式会社EARTHBRAINが手がける「安全支援アプリ」を導入し、同社が施工を担う建設現場での運用を開始しました。 生成A......",
-      "publishedDate": "Thu, 09 Jul 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/kumagaigumi_ai_safety-130x57.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/0fa4905e678e17c6071741275252d96b-130x82.png",
       "language": "ja"
     },
     {
@@ -169,16 +179,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPT Sitesが変える2026年のWeb制作：誰もが制作者に",
-      "link": "https://axconstdx.com/2026/07/10/chatgpt-sites%e3%81%8c%e5%a4%89%e3%81%88%e3%82%8b2026%e5%b9%b4%e3%81%aeweb%e5%88%b6%e4%bd%9c%ef%bc%9a%e8%aa%b0%e3%82%82%e3%81%8c%e5%88%b6%e4%bd%9c%e8%80%85%e3%81%ab/?utm_source=rss&utm_medium=rss&utm_campaign=chatgpt-sites%25e3%2581%258c%25e5%25a4%2589%25e3%2581%2588%25e3%2582%258b2026%25e5%25b9%25b4%25e3%2581%25aeweb%25e5%2588%25b6%25e4%25bd%259c%25ef%25bc%259a%25e8%25aa%25b0%25e3%2582%2582%25e3%2581%258c%25e5%2588%25b6%25e4%25bd%259c%25e8%2580%2585%25e3%2581%25ab",
-      "description": "あなたのデジタル戦略は「プログラマー不足」「高い制作費」で止まっていませんか？2026年7月、その常識が覆ります。ChatGPT Sitesなら会話形式だけで企業サイトから業務システムまで数日で実装でき、予算も人員も最小 [...] <p>The post ChatGPT Sitesが変える2026年のWeb制作：誰もが制作者に first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Fri, 10 Jul 2026 06:26:46 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/chatgpt-sites-1200x630-1-1024x538.jpg",
       "language": "ja"
     },
     {
