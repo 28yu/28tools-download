@@ -6101,9 +6101,9 @@ translations.filledRegion = {
             zh: '砖砌'
         },
         'hatch-type-rc': {
-            ja: 'RC',
-            en: 'RC',
-            zh: 'RC'
+            ja: '3本線',
+            en: '3 Lines',
+            zh: '三线'
         },
         'hatch-angle': {
             ja: '角度 (°)',
@@ -8156,9 +8156,9 @@ translations.toolAbout = {
         ja: 'このツールでできること', en: 'What you can do', zh: '本工具可实现的功能'
     },
     'hatch-about-can1': {
-        ja: '斜線・網掛け・ドット・芋目地・馬目地・RC（コンクリート）の6種類のパターンに対応',
-        en: 'Supports six pattern types: diagonal, crosshatch, dot, stack bond, running bond, and RC (concrete)',
-        zh: '支持斜线、交叉线、点、错缝、顺缝、RC（混凝土）六种图案'
+        ja: '斜線・網掛け・ドット・芋目地・馬目地・3本線の6種類のパターンに対応',
+        en: 'Supports six pattern types: diagonal, crosshatch, dot, stack bond, running bond, and 3 lines',
+        zh: '支持斜线、交叉线、点、错缝、顺缝、三线六种图案'
     },
     'hatch-about-can2': {
         ja: '角度・間隔・目地サイズなどを指定し、プレビューを見ながら調整',
