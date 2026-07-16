@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-07-15T01:27:42.906875",
+  "lastUpdated": "2026-07-16T01:48:19.083737",
   "articles": [
+    {
+      "title": "GISって何？地図に情報を重ねるだけで判断が変わる",
+      "link": "https://axconstdx.com/2026/07/15/gis%e3%81%a3%e3%81%a6%e4%bd%95%ef%bc%9f%e5%9c%b0%e5%9b%b3%e3%81%ab%e6%83%85%e5%a0%b1%e3%82%92%e9%87%8d%e3%81%ad%e3%82%8b%e3%81%a0%e3%81%91%e3%81%a7%e5%88%a4%e6%96%ad%e3%81%8c%e5%a4%89%e3%82%8f/?utm_source=rss&utm_medium=rss&utm_campaign=gis%25e3%2581%25a3%25e3%2581%25a6%25e4%25bd%2595%25ef%25bc%259f%25e5%259c%25b0%25e5%259b%25b3%25e3%2581%25ab%25e6%2583%2585%25e5%25a0%25b1%25e3%2582%2592%25e9%2587%258d%25e3%2581%25ad%25e3%2582%258b%25e3%2581%25a0%25e3%2581%2591%25e3%2581%25a7%25e5%2588%25a4%25e6%2596%25ad%25e3%2581%258c%25e5%25a4%2589%25e3%2582%258f",
+      "description": "あなたが毎日直面する「どこにあるのか」という判断を、データドリブンに変える仕組みがGISです。都市計画や防災、物流の現場では、すでにGISなしでは戦略が立てられません。Google マップなどの地図アプリではできない、複 [...] <p>The post GISって何？地図に情報を重ねるだけで判断が変わる first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Wed, 15 Jul 2026 11:02:21 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100kb-10-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ARES CommanderのBIM機能",
+      "link": "https://axconstdx.com/2026/07/15/ares-commander%e3%81%aebim%e6%a9%9f%e8%83%bd/?utm_source=rss&utm_medium=rss&utm_campaign=ares-commander%25e3%2581%25aebim%25e6%25a9%259f%25e8%2583%25bd",
+      "description": "BIMモデルが更新されるたびに図面の注釈を打ち直し、寸法もラベルも消えて同じ作業を繰り返していませんか。そんな徒労感からARES CADの「リロード」機能は解放してくれますので、本記事でその仕組みを一緒に見ていきましょう [...] <p>The post ARES CommanderのBIM機能 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Wed, 15 Jul 2026 07:53:29 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-2-1024x538.jpg",
+      "language": "ja"
+    },
     {
       "title": "仙台第一生命ビル建替計画新築工事｜黒から白へ、50年で変遷したオフィスビルの在り方とは",
       "link": "https://news.build-app.jp/article/41549/",
@@ -8,7 +28,7 @@
       "publishedDate": "Tue, 14 Jul 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/image-11-1-130x70.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/571ee8bf2cf647fdb169c136058d22fd-130x82.png",
       "language": "ja"
     },
     {
@@ -49,16 +69,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/a4d8f8f19ade6f08d1f1fce7e19bde50-1-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "一人親方とは？やめとけと言われる真相や保険制度・年収事情まで徹底解説",
-      "link": "https://news.build-app.jp/article/34800/",
-      "description": "一人親方とは、企業に縛られず、自由に工事業務に従事できる働き方です。しかし、具体的にどのような仕事をする人を指すのかわからない、年収がどれく......",
-      "publishedDate": "Thu, 09 Jul 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/0fa4905e678e17c6071741275252d96b-130x82.png",
       "language": "ja"
     },
     {
@@ -122,6 +132,16 @@
       "language": "ja"
     },
     {
+      "title": "竣工とは？完成・引渡しとの違いや竣工日の意味を初心者向けに解説",
+      "link": "https://news.build-app.jp/article/41612/",
+      "description": "建築や住宅購入について調べていると、「竣工（しゅんこう）」という言葉を目にする機会があります。しかし、「完成とは何が違うの？」「引渡しとは別......",
+      "publishedDate": "Mon, 13 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/4fcddd0580654e9676bb314b18b5fbea-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "IFCファイルとは？BIMデータ交換の仕組みを解説",
       "link": "https://axconstdx.com/2026/07/13/ifc%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%81%a8%e3%81%af%ef%bc%9fbim%e3%83%87%e3%83%bc%e3%82%bf%e4%ba%a4%e6%8f%9b%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%82%92%e8%a7%a3%e8%aa%ac/?utm_source=rss&utm_medium=rss&utm_campaign=ifc%25e3%2583%2595%25e3%2582%25a1%25e3%2582%25a4%25e3%2583%25ab%25e3%2581%25a8%25e3%2581%25af%25ef%25bc%259fbim%25e3%2583%2587%25e3%2583%25bc%25e3%2582%25bf%25e4%25ba%25a4%25e6%258f%259b%25e3%2581%25ae%25e4%25bb%2595%25e7%25b5%2584%25e3%2581%25bf%25e3%2582%2592%25e8%25a7%25a3%25e8%25aa%25ac",
       "description": "BIMソフト間でデータが「うまく繋がらない」「形式が合わない」という悩みは、実は根本的な理由から生まれています。その答えが、このリード文で明かされる「IFC」という共通言語の仕組みです。本記事を読み終わる頃、あなたはST [...] <p>The post IFCファイルとは？BIMデータ交換の仕組みを解説 first appeared on 生成AIと建設DX.</p>...",
@@ -159,26 +179,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/google_27years_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "GPT-5.6で「あなたの仕事」は何が変わるか",
-      "link": "https://axconstdx.com/2026/07/10/gpt-5-6%e3%81%a7%e3%80%8c%e3%81%82%e3%81%aa%e3%81%9f%e3%81%ae%e4%bb%95%e4%ba%8b%e3%80%8d%e3%81%af%e4%bd%95%e3%81%8c%e5%a4%89%e3%82%8f%e3%82%8b%e3%81%8b/?utm_source=rss&utm_medium=rss&utm_campaign=gpt-5-6%25e3%2581%25a7%25e3%2580%258c%25e3%2581%2582%25e3%2581%25aa%25e3%2581%259f%25e3%2581%25ae%25e4%25bb%2595%25e4%25ba%258b%25e3%2580%258d%25e3%2581%25af%25e4%25bd%2595%25e3%2581%258c%25e5%25a4%2589%25e3%2582%258f%25e3%2582%258b%25e3%2581%258b",
-      "description": "毎日、数時間を費やす『資料修正』『数字確認』『調整作業』。その退屈な繰り返しから、あなたを解放するAIが、もう間もなく日常へ浸透していきます。本記事では、このような業務効率化を実現するGPT-5.6の活用方法を、多くの企 [...] <p>The post GPT-5.6で「あなたの仕事」は何が変わるか first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Fri, 10 Jul 2026 11:18:19 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100KB-2-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "GPT-5.6 Solが有力な理由｜Claude Fable 5との決定的な差",
-      "link": "https://axconstdx.com/2026/07/10/gpt-5-6-sol%e3%81%8c%e6%9c%89%e5%8a%9b%e3%81%aa%e7%90%86%e7%94%b1%ef%bd%9cclaude-fable-5%e3%81%a8%e3%81%ae%e6%b1%ba%e5%ae%9a%e7%9a%84%e3%81%aa%e5%b7%ae/?utm_source=rss&utm_medium=rss&utm_campaign=gpt-5-6-sol%25e3%2581%258c%25e6%259c%2589%25e5%258a%259b%25e3%2581%25aa%25e7%2590%2586%25e7%2594%25b1%25ef%25bd%259cclaude-fable-5%25e3%2581%25a8%25e3%2581%25ae%25e6%25b1%25ba%25e5%25ae%259a%25e7%259a%2584%25e3%2581%25aa%25e5%25b7%25ae",
-      "description": "「どちらを選べば失敗しないのか」——AI導入を決断する瞬間、多くの企業が迷います。本記事では、性能だけでなく、実務での選択肢を数値と事例で明確にし、あなたの判断を後押しします。 はじめに 2026年、企業のAI導入担当者 [...] <p>The post GPT-5.6 Solが有力な理由｜Claude Fable 5との決定的な差 first appeared on 生成AIと建設DX.</p...",
-      "publishedDate": "Fri, 10 Jul 2026 09:28:56 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-1-1024x538.jpg",
       "language": "ja"
     },
     {
