@@ -6,11 +6,11 @@
     <title>ハッチングパターン自動作成 - 28 Tools</title>
     <link rel="icon" type="image/png" href="images/site-icons/favicon-28.png">
     <link rel="canonical" href="https://28tools.com/hatch.html">
-    <meta name="description" content="Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。斜線、網掛け、ドット、芋目地、馬目地、3本線など10種類のパターンに対応。">
+    <meta name="description" content="Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。斜線、網掛け、ドット、芋目地、馬目地、3本線など15種類のパターンに対応。">
 
     <!-- OGP (Open Graph Protocol) -->
     <meta property="og:title" content="塗潰し（ハッチング）パターン自動作成 - 28 Tools">
-    <meta property="og:description" content="Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。斜線、網掛け、ドット、芋目地、馬目地、3本線など10種類のパターンに対応。">
+    <meta property="og:description" content="Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。斜線、網掛け、ドット、芋目地、馬目地、3本線など15種類のパターンに対応。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://28tools.com/hatch.html">
     <meta property="og:image" content="https://28tools.com/images/ogp-image.png">
@@ -20,7 +20,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="塗潰し（ハッチング）パターン自動作成 - 28 Tools">
-    <meta name="twitter:description" content="Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。斜線、網掛け、ドット、芋目地、馬目地、3本線など10種類のパターンに対応。">
+    <meta name="twitter:description" content="Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。斜線、網掛け、ドット、芋目地、馬目地、3本線など15種類のパターンに対応。">
     <meta name="twitter:image" content="https://28tools.com/images/ogp-image.png">
 
     <!-- Google tag (gtag.js) -->
@@ -108,6 +108,26 @@
                             <div class="pattern-type-item" data-type="shima">
                                 <canvas class="pattern-thumbnail" data-pattern="shima" width="40" height="40"></canvas>
                                 <span class="pattern-type-name" data-lang-key="hatch-type-shima">縞鋼板</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="zigzag">
+                                <canvas class="pattern-thumbnail" data-pattern="zigzag" width="40" height="40"></canvas>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-zigzag">ギザギザ</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="gravel">
+                                <canvas class="pattern-thumbnail" data-pattern="gravel" width="40" height="40"></canvas>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-gravel">砂利</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="sand">
+                                <canvas class="pattern-thumbnail" data-pattern="sand" width="40" height="40"></canvas>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-sand">砂</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="jiban">
+                                <canvas class="pattern-thumbnail" data-pattern="jiban" width="40" height="40"></canvas>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-jiban">地盤</span>
+                            </div>
+                            <div class="pattern-type-item" data-type="concrete">
+                                <canvas class="pattern-thumbnail" data-pattern="concrete" width="40" height="40"></canvas>
+                                <span class="pattern-type-name" data-lang-key="hatch-type-concrete">コンクリート</span>
                             </div>
                         </div>
                         <input type="hidden" id="pattern-type" value="diagonal">
@@ -350,15 +370,15 @@
                             </div>
                         </div>
 
-                        <!-- 縞鋼板設定（規格パターン・倍率のみ可変） -->
-                        <div id="settings-shima" class="pattern-specific-settings" style="display: none;">
+                        <!-- プリセット（規格パターン）共通設定・倍率のみ可変 -->
+                        <div id="settings-preset" class="pattern-specific-settings" style="display: none;">
                             <div class="setting-row">
                                 <div class="setting-group compact">
                                     <label class="setting-label" data-lang-key="hatch-scale">倍率 (×)</label>
-                                    <input type="number" id="shima-scale" class="setting-input" value="1" min="0.1" step="0.1">
+                                    <input type="number" id="preset-scale" class="setting-input" value="1" min="0.1" step="0.1">
                                 </div>
                             </div>
-                            <p class="setting-note" data-lang-key="hatch-shima-note">※ 規格の縞鋼板パターン。倍率で全体サイズを調整できます（1 = 実寸）。</p>
+                            <p class="setting-note" data-lang-key="hatch-preset-note">※ 規格パターンです。倍率で全体サイズを調整できます（1 = 実寸）。</p>
                         </div>
                     </div>
 
@@ -492,7 +512,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js?v=20260715-1"></script>
-    <script src="js/hatch.js?v=20260715-1"></script>
+    <script src="js/main.js?v=20260715-2"></script>
+    <script src="js/hatch.js?v=20260715-2"></script>
 </body>
 </html>
