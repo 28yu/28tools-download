@@ -16,7 +16,9 @@ const ShiftJIS = (function() {
         '斜': 0x8ECE, '線': 0x90FC, '網': 0x96D4, '掛': 0x8A7C,
         '芋': 0x88F0, '目': 0x96DA, '地': 0x926E, '馬': 0x946E,
         '本': 0x967B, '平': 0x95BD, '行': 0x8D73, '垂': 0x9082, '直': 0x92BC,
-        '縞': 0x8EC8, '鋼': 0x8D7C, '板': 0x94C2
+        '縞': 0x8EC8, '鋼': 0x8D7C, '板': 0x94C2,
+        'ギ': 0x834D, 'ザ': 0x8355, '砂': 0x8DBB, '利': 0x9798, '盤': 0x94D5,
+        'コ': 0x8352, 'ン': 0x8393, 'ク': 0x834E, 'リ': 0x838A, 'ー': 0x815B
     };
 
     function encode(str) {
@@ -79,62 +81,151 @@ document.addEventListener('DOMContentLoaded', function() {
             'diagonal': '斜線', 'crosshatch': '網掛け', 'dot': 'ドット',
             'tile-grid': '芋目地', 'tile-brick': '馬目地', 'rc-concrete': '3本線',
             'two-line': '2本線', 'horizontal': '平行線', 'vertical': '垂直線',
-            'shima': '縞鋼板'
+            'shima': '縞鋼板', 'zigzag': 'ギザギザ', 'gravel': '砂利', 'sand': '砂',
+            'jiban': '地盤', 'concrete': 'コンクリート'
         },
         en: {
             'diagonal': 'Diagonal', 'crosshatch': 'Crosshatch', 'dot': 'Dot',
             'tile-grid': 'Grid', 'tile-brick': 'Brick', 'rc-concrete': '3Lines',
             'two-line': '2Lines', 'horizontal': 'Horizontal', 'vertical': 'Vertical',
-            'shima': 'CheckerPlate'
+            'shima': 'CheckerPlate', 'zigzag': 'Zigzag', 'gravel': 'Gravel', 'sand': 'Sand',
+            'jiban': 'Ground', 'concrete': 'Concrete'
         },
         zh: {
             'diagonal': '斜线', 'crosshatch': '网格线', 'dot': '点',
             'tile-grid': '网格', 'tile-brick': '砖砌', 'rc-concrete': '三线',
             'two-line': '两线', 'horizontal': '水平线', 'vertical': '垂直线',
-            'shima': '花纹钢板'
+            'shima': '花纹钢板', 'zigzag': '锯齿', 'gravel': '砂砾', 'sand': '砂',
+            'jiban': '地基', 'concrete': '混凝土'
         }
     };
 
-    // 縞鋼板（チェッカープレート）の .pat 定義行（アップロードされた規格データ）。
-    // 倍率でスケールして出力する。先頭フィールド(角度)以外を倍率倍する。
-    const SHIMA_LINES = [
-        '90, 0,-1.5, 28,28, 3,-53',
-        '90, 36,-1.5, 28,28, 3,-53',
-        '0, 0,-1.5, 28,28, 36,-20',
-        '0, 0,1.5, 28,28, 36,-20',
-        '8.13010235, 0,1.5, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
-        '8.13010235, 56,1.5, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
-        '8.13010235, 112,1.5, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
-        '-8.13010235, 0,-1.5, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
-        '-8.13010235, 56,-1.5, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
-        '-8.13010235, 112,-1.5, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
-        '8.13010235, 36,-1.5, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
-        '8.13010235, 92,-1.5, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
-        '8.13010235, 148,-1.5, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
-        '-8.13010235, 36,1.5, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
-        '-8.13010235, 92,1.5, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
-        '-8.13010235, 148,1.5, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
-        '0, 8.75,2.75, 28,28, 18.5,-37.5',
-        '0, 8.75,-2.75, 28,28, 18.5,-37.5',
-        '0, 16.5,10, 28,28, 3,-53',
-        '0, 16.5,46, 28,28, 3,-53',
-        '90, 16.5,10, 28,28, 36,-20',
-        '90, 19.5,10, 28,28, 36,-20',
-        '98.13010235, 16.5,10, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
-        '98.13010235, 16.5,66, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
-        '98.13010235, 16.5,122, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
-        '81.86989765, 19.5,10, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
-        '81.86989765, 19.5,66, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
-        '81.86989765, 19.5,122, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
-        '98.13010235, 19.5,46, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
-        '98.13010235, 19.5,102, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
-        '98.13010235, 19.5,158, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
-        '81.86989765, 16.5,46, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
-        '81.86989765, 16.5,102, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
-        '81.86989765, 16.5,158, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
-        '90, 15.25,18.75, 28,28, 18.5,-37.5',
-        '90, 20.75,18.75, 28,28, 18.5,-37.5'
-    ];
+    // プリセット（アップロードされた規格 .pat）。lines は定義行そのまま（倍率1で完全再現）、
+    // tileMm はプレビュー/サムネイルのズーム基準（おおよそのタイル寸法 mm）。
+    const PRESET_PATTERNS = {
+        'shima': { tileMm: 46, lines: [
+            '90, 0,-1.5, 28,28, 3,-53',
+            '90, 36,-1.5, 28,28, 3,-53',
+            '0, 0,-1.5, 28,28, 36,-20',
+            '0, 0,1.5, 28,28, 36,-20',
+            '8.13010235, 0,1.5, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
+            '8.13010235, 56,1.5, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
+            '8.13010235, 112,1.5, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
+            '-8.13010235, 0,-1.5, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
+            '-8.13010235, 56,-1.5, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
+            '-8.13010235, 112,-1.5, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
+            '8.13010235, 36,-1.5, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
+            '8.13010235, 92,-1.5, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
+            '8.13010235, 148,-1.5, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
+            '-8.13010235, 36,1.5, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
+            '-8.13010235, 92,1.5, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
+            '-8.13010235, 148,1.5, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
+            '0, 8.75,2.75, 28,28, 18.5,-37.5',
+            '0, 8.75,-2.75, 28,28, 18.5,-37.5',
+            '0, 16.5,10, 28,28, 3,-53',
+            '0, 16.5,46, 28,28, 3,-53',
+            '90, 16.5,10, 28,28, 36,-20',
+            '90, 19.5,10, 28,28, 36,-20',
+            '98.13010235, 16.5,10, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
+            '98.13010235, 16.5,66, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
+            '98.13010235, 16.5,122, 31.678383797158,23.758787847868, 8.838834764833,-189.1510639674',
+            '81.86989765, 19.5,10, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
+            '81.86989765, 19.5,66, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
+            '81.86989765, 19.5,122, 31.678383797158,-23.758787847868, 8.838834764833,-189.1510639674',
+            '98.13010235, 19.5,46, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
+            '98.13010235, 19.5,102, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
+            '98.13010235, 19.5,158, 31.678383797158,23.758787847868, -189.1510639674,8.838834764833',
+            '81.86989765, 16.5,46, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
+            '81.86989765, 16.5,102, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
+            '81.86989765, 16.5,158, 31.678383797158,-23.758787847868, -189.1510639674,8.838834764833',
+            '90, 15.25,18.75, 28,28, 18.5,-37.5',
+            '90, 20.75,18.75, 28,28, 18.5,-37.5'
+        ] },
+        'zigzag': { tileMm: 8, lines: [
+            '45,0,0,6,2,2,-6',
+            '135,0,0,2,2,2,-6'
+        ] },
+        'gravel': { tileMm: 14, lines: [
+            '228.0128,3.6576,5.08,61.1701342,0.37759132,0.68344288,-67.66096704',
+            '184.9697,3.2004,4.572,-61.17090636,0.2200402,1.17280944,-116.108099',
+            '132.5104,2.032,4.4704,-75.51898536,0.3120644,0.82696304,-81.86944256',
+            '267.2737,0.0508,3.2004,-101.72663424,0.2416302,1.06800904,-105.73287464',
+            '292.8337,0,2.1336,-66.0395428,0.24641556,1.0472674,-103.67961484',
+            '357.2737,0.4064,1.1684,-101.72663424,0.2416302,1.06800904,-105.73287464',
+            '37.6942,1.4732,1.1176,-83.3179944,0.18271744,1.41238732,-139.82623292',
+            '72.2553,2.5908,1.9812,117.28074588,0.19353276,1.33343904,-132.01051068',
+            '121.4296,2.9972,3.2512,77.54246112,0.2408174,1.071626,-106.09109084',
+            '175.2364,2.4384,4.1656,-56.10884892,0.4218686,1.22342656,-59.94787604',
+            '222.3974,1.2192,4.2672,82.69624812,0.16310864,1.58215584,-156.633545',
+            '138.8141,5.08,3.1496,46.8328502,0.47788576,0.54000908,-53.46112752',
+            '171.4692,4.6736,3.5052,-66.81649324,0.25119076,1.02736396,-101.70927588',
+            '225,3.6576,3.6576,3.59210356,3.59210356,0.71841868,-6.46578336',
+            '203.1986,3.302,4.2672,-27.34850512,0.66703448,0.38688264,-38.3012442',
+            '291.8014,2.9464,4.1148,-16.03665068,0.9433306,0.54713124,-26.80950696',
+            '30.9638,3.1496,3.6068,18.2954676,0.87121492,0.88863932,-28.73259684',
+            '161.5651,3.9116,4.064,-11.24505752,1.60643824,0.64257428,-15.42179796',
+            '16.3895,0,4.1148,53.03598232,0.28667964,0.900176,-89.1176526',
+            '70.3462,0.8636,4.3688,-59.45889556,0.34171636,0.75519788,-74.76443264',
+            '293.1986,3.9116,5.08,-27.34850512,0.66703448,0.7737602,-37.91436664',
+            '343.6105,4.2164,4.3688,-53.03598232,0.28667964,0.900176,-89.1176526',
+            '339.444,0,0.9652,-27.35017644,0.59456828,0.8680704,-42.53546992',
+            '294.7751,0.8128,0.6604,-61.38084752,0.35480244,0.72734424,-72.00718644',
+            '66.8014,3.9624,0,27.34850512,0.66703448,0.7737602,-37.91436664',
+            '17.354,4.2672,0.7112,-69.0948072,0.3030474,0.85156548,-84.30475392',
+            '69.444,1.4732,0,-27.35017644,0.59456828,0.4340352,-42.96950512',
+            '101.3099,3.6576,0,20.92167012,0.99626928,0.2590292,-25.64398732',
+            '165.9638,3.6068,0.254,-16.01705204,1.23208288,1.0472674,-19.898106',
+            '186.009,2.5908,0.508,-51.05267412,0.26589736,0.970534,-96.08272884',
+            '303.6901,3.1496,3.1496,-11.27150908,1.408938,0.73264776,-17.58355132',
+            '353.1572,3.556,2.54,86.95536076,0.2017522,1.27911352,-126.63202004',
+            '60.9454,4.826,2.3876,-40.95329884,0.49341532,0.52301648,-51.77878392',
+            '90,5.08,2.8448,5.08,5.08,0.3048,-4.7752',
+            '120.2564,2.4892,0.6604,-40.95463488,0.36566856,0.70573392,-69.8678816',
+            '48.0128,2.1336,1.27,61.1701342,0.37759132,1.36688576,-66.97752416',
+            '0,3.048,2.286,5.08,5.08,1.3208,-3.7592',
+            '325.3048,4.3688,2.286,-62.00847136,0.32128968,0.80321912,-79.51863192',
+            '254.0546,5.0292,1.8288,20.93375036,0.69779388,0.73965816,-36.24330064',
+            '207.646,4.826,1.1176,109.07201452,0.21428456,1.2042902,-119.22492792',
+            '175.4261,3.7592,0.5588,66.23478752,0.20255484,1.27405892,-126.13169592'
+        ] },
+        'sand': { tileMm: 10, lines: [
+            '0,0,0,8.128,2.032,0.33528,-5.76072,0.33528,-5.76072,0.33528,-11.85672,0.33528,-5.76072,0.33528,-3.72872,0.33528,-9.82472',
+            '120,3.048,1.016,8.128,2.032,0.33528,-5.76072,0.33528,-5.76072,0.33528,-11.85672,0.33528,-5.76072,0.33528,-3.72872,0.33528,-9.82472',
+            '240,4.064,5.08,8.128,2.032,0.33528,-5.76072,0.33528,-5.76072,0.33528,-11.85672,0.33528,-5.76072,0.33528,-3.72872,0.33528,-9.82472'
+        ] },
+        'jiban': { tileMm: 8, lines: [
+            '135,0,0,0,3',
+            '135,0.70710678,0.70710678,0,6,3,-3',
+            '135,1.41421356,1.41421356,0,6,3,-3',
+            '135,2.82842712,2.82842712,0,6,0,-3,3,0',
+            '135,3.53553391,3.53553391,0,6,0,-3,3,0',
+            '45,0,0,0,3',
+            '45,0.70710678,3.53553391,0,6,3,-3',
+            '45,1.41421356,2.82842712,0,6,3,-3',
+            '45,2.82842712,1.41421356,0,6,0,-3,3,0',
+            '45,3.53553391,0.70710678,0,6,0,-3,3,0'
+        ] },
+        'concrete': { tileMm: 12, lines: [
+            '50,0,0,4.195826,-5.99226132,0.762,8.382',
+            '355,0,0,-2.07041699,7.49032538,0.6096,6.7056',
+            '100.4514,0.60728022,-0.05313009,5.8222769,-7.05080378,0.64760043,7.12360272',
+            '46.1842,0,2.032,6.293739,-8.98839198,1.143,12.573',
+            '96.6356,0.90359738,1.89186007,8.73341408,-10.5762044,0.97140065,10.68540408',
+            '351.1842,0,2.032,7.86717502,11.23548934,0.9144,10.0584',
+            '21,1.016,1.524,4.195826,-5.99226132,0.762,8.382',
+            '326,1.016,1.524,-2.07041699,7.49032538,0.6096,6.7056',
+            '71.4514,1.52138101,1.18311574,5.8222769,-7.05080378,0.64760043,7.12360272',
+            '37.5,0,0,2.156968,2.608072,0.33528,6.28904,0.33528,6.47192,0.33528,6.39572',
+            '7.5,0,0,3.172968,3.624072,0.33528,3.54584,0.33528,6.13664,0.33528,2.23012',
+            '-32.5,-2.26568,0,4.6973744,2.720848,0.33528,2.20472,0.33528,7.58952,0.33528,10.18032',
+            '-42.5,-3.28168,0,3.6813744,4.752848,0.33528,2.96672,0.33528,4.9276,0.33528,7.13232'
+        ] }
+    };
+
+    // プリセット判定
+    function isPresetType(type) {
+        return Object.prototype.hasOwnProperty.call(PRESET_PATTERNS, type);
+    }
 
     // 初期化
     init();
@@ -210,6 +301,12 @@ document.addEventListener('DOMContentLoaded', function() {
         ctx.strokeStyle = '#333333';
         ctx.lineWidth = 1;
 
+        // プリセット（規格 .pat）は実パターンを縮小レンダリング
+        if (isPresetType(pattern)) {
+            drawPresetThumbnail(ctx, width, height, pattern);
+            return;
+        }
+
         switch (pattern) {
             case 'diagonal':
                 drawDiagonalThumbnail(ctx, width, height);
@@ -237,9 +334,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case 'vertical':
                 drawVerticalThumbnail(ctx, width, height);
-                break;
-            case 'shima':
-                drawShimaThumbnail(ctx, width, height);
                 break;
         }
     }
@@ -355,30 +449,6 @@ document.addEventListener('DOMContentLoaded', function() {
         ctx.stroke();
     }
 
-    // 縞鋼板サムネイル（交互の斜めラグ模様を簡易表現）
-    function drawShimaThumbnail(ctx, w, h) {
-        ctx.lineWidth = 1.5;
-        ctx.beginPath();
-        // 右上がりの短い斜線を格子状に、隣接セルで向きを反転
-        const step = 13;
-        const len = 5;
-        for (let gy = 0; gy < h + step; gy += step) {
-            for (let gx = 0; gx < w + step; gx += step) {
-                const up = ((Math.round(gx / step) + Math.round(gy / step)) % 2) === 0;
-                const cx = gx + step / 2, cy = gy + step / 2;
-                if (up) {
-                    ctx.moveTo(cx - len, cy + len);
-                    ctx.lineTo(cx + len, cy - len);
-                } else {
-                    ctx.moveTo(cx - len, cy - len);
-                    ctx.lineTo(cx + len, cy + len);
-                }
-            }
-        }
-        ctx.stroke();
-        ctx.lineWidth = 1;
-    }
-
     // パターン種類選択
     function selectPatternType(type) {
         // 選択状態の更新
@@ -402,8 +472,8 @@ document.addEventListener('DOMContentLoaded', function() {
             el.style.display = 'none';
         });
 
-        // 選択されたパターンの設定を表示
-        const settingsEl = document.getElementById('settings-' + type);
+        // 選択されたパターンの設定を表示（プリセットは共通の設定パネルを使用）
+        const settingsEl = document.getElementById(isPresetType(type) ? 'settings-preset' : 'settings-' + type);
         if (settingsEl) {
             settingsEl.style.display = 'block';
         }
@@ -477,6 +547,13 @@ document.addEventListener('DOMContentLoaded', function() {
         ctx.strokeStyle = '#333333';
         ctx.lineWidth = 1;
 
+        // プリセット（規格 .pat）は共通レンダラーで描画
+        if (isPresetType(type)) {
+            drawPresetPreview(type);
+            updatePreviewInfo();
+            return;
+        }
+
         switch (type) {
             case 'diagonal':
                 drawDiagonalPreview(scale);
@@ -504,9 +581,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case 'vertical':
                 drawVerticalPreview(scale);
-                break;
-            case 'shima':
-                drawShimaPreview(scale);
                 break;
         }
 
@@ -918,10 +992,10 @@ document.addEventListener('DOMContentLoaded', function() {
         ctx.setLineDash([]);
     }
 
-    // 縞鋼板プレビュー（規格 .pat をそのままレンダリング）
-    function drawShimaPreview() {
-        const s = parseFloat(document.getElementById('shima-scale').value) || 1;
-        const families = SHIMA_LINES.map(l => {
+    // プリセット（規格 .pat）を parse＋倍率スケールして family 配列にする
+    function getPresetFamilies(type) {
+        const s = parseFloat(document.getElementById('preset-scale').value) || 1;
+        return PRESET_PATTERNS[type].lines.map(l => {
             const n = l.split(',').map(t => parseFloat(t.trim()));
             return {
                 angle: n[0],
@@ -930,25 +1004,31 @@ document.addEventListener('DOMContentLoaded', function() {
                 dash: n.slice(5).map(v => v * s)
             };
         });
-        drawPatFamilies(families);
     }
 
-    // 汎用 .pat ラインファミリ描画。各 family = { angle, x, y, dx(線方向シフト),
-    // dy(垂直間隔), dash[] }。dash は 正=描画 / 負=空白（.pat 準拠）。
-    // 縞鋼板のような複雑パターンを定義どおりプレビューするための共通ルーチン。
-    function drawPatFamilies(families) {
-        const cw = canvas.width, ch = canvas.height;
-        const pxPerMm = 1.8;                    // 実寸(mm)→px（約2タイル分が見える）
-        const centerMmX = 40, centerMmY = 30;   // パターン空間の表示中心(mm)
-        const toPx = (mx, my) => [cw / 2 + (mx - centerMmX) * pxPerMm, ch / 2 - (my - centerMmY) * pxPerMm];
-        const halfDiagMm = Math.sqrt(cw * cw + ch * ch) / 2 / pxPerMm + 5;
+    // プリセットプレビュー（メインキャンバスへ規格 .pat をそのままレンダリング）
+    function drawPresetPreview(type) {
+        const s = parseFloat(document.getElementById('preset-scale').value) || 1;
+        const tileMm = PRESET_PATTERNS[type].tileMm * s;   // 倍率でタイルも拡大
+        const pxPerMm = canvas.width / (2.4 * tileMm);      // 約2.4タイル分を表示
+        renderPatFamilies(ctx, canvas.width, canvas.height, getPresetFamilies(type), pxPerMm, 1);
+    }
 
-        ctx.save();
-        ctx.beginPath();
-        ctx.rect(0, 0, cw, ch);
-        ctx.clip();
-        ctx.strokeStyle = '#333333';
-        ctx.lineWidth = 1;
+    // 汎用 .pat ラインファミリ描画。family = { angle, x, y, dx(線方向シフト),
+    // dy(垂直間隔), dash[] }。dash は 正=描画 / 負=空白（.pat 準拠）。
+    // 縞鋼板・砂・砂利など複雑パターンを定義どおり描くための共通ルーチン。
+    // 表示中心はパターン原点(0,0)。targetCtx/W/H/pxPerMm を変えればサムネイルにも流用可。
+    function renderPatFamilies(targetCtx, W, H, families, pxPerMm, lineWidth) {
+        const toPx = (mx, my) => [W / 2 + mx * pxPerMm, H / 2 - my * pxPerMm];
+        const halfDiagMm = Math.sqrt(W * W + H * H) / 2 / pxPerMm + 5;
+        const MAX_LINES = 800; // 過剰描画の安全上限（極小 dy / 極小倍率対策）
+
+        targetCtx.save();
+        targetCtx.beginPath();
+        targetCtx.rect(0, 0, W, H);
+        targetCtx.clip();
+        targetCtx.strokeStyle = '#333333';
+        targetCtx.lineWidth = lineWidth || 1;
 
         families.forEach(f => {
             const rad = f.angle * Math.PI / 180;
@@ -959,23 +1039,24 @@ document.addEventListener('DOMContentLoaded', function() {
             const stepY = f.dx * ay + f.dy * py;
             const dy = f.dy || 1;
 
-            // 表示中心に最も近い線 n を中心に、必要本数だけ走査
-            const originPerp = (f.x - centerMmX) * px + (f.y - centerMmY) * py;
+            // 原点(0,0)に最も近い線 n を中心に、必要本数だけ走査
+            const originPerp = f.x * px + f.y * py;
             const nCenter = -originPerp / dy;
-            const nSpan = Math.ceil(halfDiagMm / Math.abs(dy)) + 2;
+            let nSpan = Math.ceil(halfDiagMm / Math.abs(dy)) + 2;
+            if (nSpan > MAX_LINES) nSpan = MAX_LINES;
             const nLo = Math.floor(nCenter) - nSpan;
             const nHi = Math.ceil(nCenter) + nSpan;
 
             for (let n = nLo; n <= nHi; n++) {
                 const oxN = f.x + n * stepX;
                 const oyN = f.y + n * stepY;
-                const tc = (centerMmX - oxN) * ax + (centerMmY - oyN) * ay;
+                const tc = -(oxN * ax + oyN * ay);
                 const tLo = tc - halfDiagMm, tHi = tc + halfDiagMm;
 
                 if (period === 0) {
                     const [x1, y1] = toPx(oxN + tLo * ax, oyN + tLo * ay);
                     const [x2, y2] = toPx(oxN + tHi * ax, oyN + tHi * ay);
-                    ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+                    targetCtx.beginPath(); targetCtx.moveTo(x1, y1); targetCtx.lineTo(x2, y2); targetCtx.stroke();
                     continue;
                 }
                 // 破線: 原点(t=0)からの位相を保って区間を列挙
@@ -990,7 +1071,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             if (b > a) {
                                 const [x1, y1] = toPx(oxN + a * ax, oyN + a * ay);
                                 const [x2, y2] = toPx(oxN + b * ax, oyN + b * ay);
-                                ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+                                targetCtx.beginPath(); targetCtx.moveTo(x1, y1); targetCtx.lineTo(x2, y2); targetCtx.stroke();
                             }
                         }
                         t += len;
@@ -999,7 +1080,18 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        ctx.restore();
+        targetCtx.restore();
+    }
+
+    // プリセットのサムネイル（実パターンを縮小レンダリング）
+    function drawPresetThumbnail(tctx, w, h, type) {
+        const tileMm = PRESET_PATTERNS[type].tileMm;
+        const pxPerMm = w / (1.4 * tileMm);
+        const families = PRESET_PATTERNS[type].lines.map(l => {
+            const n = l.split(',').map(t => parseFloat(t.trim()));
+            return { angle: n[0], x: n[1], y: n[2], dx: n[3], dy: n[4], dash: n.slice(5) };
+        });
+        renderPatFamilies(tctx, w, h, families, pxPerMm, 1);
     }
 
     // プレビュー情報更新
@@ -1049,6 +1141,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // パターン定義
+        if (isPresetType(type)) {
+            patContent += generatePresetPattern(type);
+            return patContent;
+        }
         switch (type) {
             case 'diagonal':
                 patContent += generateDiagonalPattern(format, isModel);
@@ -1076,9 +1172,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case 'vertical':
                 patContent += generateVerticalPattern(format, isModel);
-                break;
-            case 'shima':
-                patContent += generateShimaPattern(format, isModel);
                 break;
         }
 
@@ -1261,14 +1354,15 @@ document.addEventListener('DOMContentLoaded', function() {
         return lines;
     }
 
-    // 縞鋼板パターン生成（規格 .pat を倍率でスケールして出力。倍率1は原データ完全再現）
-    function generateShimaPattern(format, isModel) {
-        const s = parseFloat(document.getElementById('shima-scale').value) || 1;
+    // プリセット（規格 .pat）生成。倍率でスケールして出力。倍率1は原データ完全再現。
+    function generatePresetPattern(type) {
+        const s = parseFloat(document.getElementById('preset-scale').value) || 1;
+        const lines = PRESET_PATTERNS[type].lines;
         if (s === 1) {
-            return SHIMA_LINES.join('\n') + '\n';
+            return lines.join('\n') + '\n';
         }
         // 先頭フィールド(角度)以外を s 倍。浮動小数のノイズは 9 桁に丸めて除去。
-        return SHIMA_LINES.map(l => {
+        return lines.map(l => {
             const n = l.split(',').map(t => parseFloat(t.trim()));
             return n.map((v, i) => (i === 0 ? v : +(v * s).toFixed(9))).join(', ');
         }).join('\n') + '\n';
@@ -1340,6 +1434,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function getPatternParams() {
         const type = patternTypeInput.value;
         let params = [];
+        if (isPresetType(type)) {
+            params.push(document.getElementById('preset-scale').value || '1');
+            return params;
+        }
         switch (type) {
             case 'diagonal':
                 params.push(document.getElementById('diagonal-angle').value || '45');
@@ -1384,9 +1482,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
             case 'vertical':
                 params.push(document.getElementById('vertical-spacing').value || '10');
-                break;
-            case 'shima':
-                params.push(document.getElementById('shima-scale').value || '1');
                 break;
         }
         return params;
