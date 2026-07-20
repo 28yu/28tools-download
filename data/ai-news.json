@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-19T04:21:54.922170",
+  "lastUpdated": "2026-07-20T04:36:30.084923",
   "articles": [
     {
       "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
@@ -113,7 +113,7 @@
     },
     {
       "title": "Welcome Inkling by Thinking Machines",
-      "titleJa": "Thinking Machines による Inkling へようこそ",
+      "titleJa": "Welcome Inkling by Thinking Machines",
       "link": "https://huggingface.co/blog/thinkingmachines-inkling",
       "description": "...",
       "publishedDate": "Wed, 15 Jul 2026 00:00:00 GMT",
@@ -168,7 +168,7 @@
     },
     {
       "title": "The latest AI news we announced in June 2026",
-      "titleJa": "2026 年 6 月に発表された AI の最新ニュース",
+      "titleJa": "2026年6月に発表したAI最新ニュース",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
       "description": "June Pixel Drop hero...",
       "publishedDate": "Wed, 01 Jul 2026 18:15:00 +0000",
