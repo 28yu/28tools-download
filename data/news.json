@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T02:07:37.310988",
+  "lastUpdated": "2026-07-21T01:50:04.009231",
   "articles": [
     {
       "title": "【2026年版】玉掛け資格とは？｜技能講習・特別教育の違いから費用・取得方法・難易度まで解説",
@@ -32,16 +32,6 @@
       "language": "ja"
     },
     {
-      "title": "仙台第一生命ビル建替計画新築工事｜黒から白へ、50年で変遷したオフィスビルの在り方とは",
-      "link": "https://news.build-app.jp/article/41549/",
-      "description": "トレンドワード：仙台第一生命ビル建替計画新築工事 仙台第一生命ビル建替計画新築工事は、竣工から55年が経過した、仙台第一生命ビルの建て替え工......",
-      "publishedDate": "Tue, 14 Jul 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/571ee8bf2cf647fdb169c136058d22fd-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "Fable 5とGPT-5.6 Solの役割分担で、AI利用コストを40%削減する方法",
       "link": "https://axconstdx.com/2026/07/14/fable-5%e3%81%a8gpt-5-6-sol%e3%81%ae%e5%bd%b9%e5%89%b2%e5%88%86%e6%8b%85%e3%81%a7%e3%80%81ai%e5%88%a9%e7%94%a8%e3%82%b3%e3%82%b9%e3%83%88%e3%82%9240%e5%89%8a%e6%b8%9b%e3%81%99%e3%82%8b%e6%96%b9/?utm_source=rss&utm_medium=rss&utm_campaign=fable-5%25e3%2581%25a8gpt-5-6-sol%25e3%2581%25ae%25e5%25bd%25b9%25e5%2589%25b2%25e5%2588%2586%25e6%258b%2585%25e3%2581%25a7%25e3%2580%2581ai%25e5%2588%25a9%25e7%2594%25a8%25e3%2582%25b3%25e3%2582%25b9%25e3%2583%2588%25e3%2582%259240%25e5%2589%258a%25e6%25b8%259b%25e3%2581%2599%25e3%2582%258b%25e6%2596%25b9",
       "description": "「高性能AIは使いたいけど、コストが膨らみ続ける」—建設・製造業のIT担当者なら、この悩みは他人事ではありません。実は、2つのAIを役割分担させ、JSONで連携させるだけで、品質を落とさずにコストを40%削減できる方法が [...] <p>The post Fable 5とGPT-5.6 Solの役割分担で、AI利用コストを40%削減する方法 first appeared on 生成AIと建設DX...",
@@ -49,16 +39,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-under100KB-1-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "鹿島建設とタカムラ建設、CO2吸収コンクリート床版を建築構造部材として国内初適用を実現",
-      "link": "https://news.build-app.jp/article/41590/",
-      "description": "鹿島建設株式会社とタカムラ建設株式会社は、コンクリートの製造過程で排出される二酸化炭素よりも吸収・固定する量が多い「カーボンネガティブコンク......",
-      "publishedDate": "Tue, 14 Jul 2026 04:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/cuco_suicom_half_prestressed-130x46.jpg",
       "language": "ja"
     },
     {
@@ -169,6 +149,26 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-4-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第七回)｜深堀り取材【毎月3回更新】",
+      "link": "https://news.build-app.jp/article/41573/",
+      "description": "建設業における設計や施工現場のみならず建設後の施設管理においてもAI援用の動きが急速に広がっている。 本稿では、アケボノのAI技術を活用して......",
+      "publishedDate": "Mon, 20 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/e7d825e27ff4c9bbf3c78588a003b5f5-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "建築士資格とは？受験要件の変化と企業の採用・育成ポイント",
+      "link": "https://news.build-app.jp/article/41651/",
+      "description": "建築士資格者の採用が難しく、確認申請や設計監理を一部の社員に頼っている企業は多いのではないでしょうか。 しかし、近年では、建築士試験は受験要......",
+      "publishedDate": "Mon, 20 Jul 2026 14:50:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/32470879_m-130x87.jpg",
       "language": "ja"
     },
     {
