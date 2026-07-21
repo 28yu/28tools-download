@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T04:36:30.084923",
+  "lastUpdated": "2026-07-21T04:16:28.528884",
   "articles": [
     {
       "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
@@ -101,19 +101,8 @@
       "language": "en"
     },
     {
-      "title": "Claude Codeで改行する方法！Mac・Windows別の設定とできない時の対処法を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code-line-break/",
-      "description": "ターミナル上で動くAIコーディング支援ツール「Claude Code」を使っていて、プロンプトの途中で改行できないと戸惑った方は多いのではないでしょうか。 実際にはMac・Windowsのどちらでも、複数行のプロンプトを [...]...",
-      "publishedDate": "Wed, 15 Jul 2026 04:38:00 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-code-line-break_2603-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Welcome Inkling by Thinking Machines",
-      "titleJa": "Welcome Inkling by Thinking Machines",
+      "titleJa": "Thinking Machines による Inkling へようこそ",
       "link": "https://huggingface.co/blog/thinkingmachines-inkling",
       "description": "...",
       "publishedDate": "Wed, 15 Jul 2026 00:00:00 GMT",
@@ -131,17 +120,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/real-world-voiceeq/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Our approach to government and national security partnerships",
-      "titleJa": "政府と国家安全保障のパートナーシップに対する当社のアプローチ",
-      "link": "https://openai.com/index/government-national-security-partnerships",
-      "description": "Learn how OpenAI approaches government and national security partnerships, with principles for responsible AI use, democratic accountability, and public safety....",
-      "publishedDate": "Wed, 08 Jul 2026 13:30:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -168,7 +146,7 @@
     },
     {
       "title": "The latest AI news we announced in June 2026",
-      "titleJa": "2026年6月に発表したAI最新ニュース",
+      "titleJa": "2026 年 6 月に発表された AI の最新ニュース",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
       "description": "June Pixel Drop hero...",
       "publishedDate": "Wed, 01 Jul 2026 18:15:00 +0000",
@@ -200,6 +178,61 @@
       "language": "en"
     },
     {
+      "title": "Grokプロンプトの書き方完全ガイド｜業務で使える例文集と作り方のコツ",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/grok-prompt-guide/",
+      "description": "「Grokをビジネスに導入したものの、ChatGPTと同じプロンプトを入れてしまい、思ったような成果が出ない」。そう悩んでいるDX担当者やマーケティング担当者の方は多いのではないでしょうか。 GrokはX（旧Twitte [...] The post Grokプロンプトの書き方完全ガイド｜業務で使える例文集と作り方のコツ first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Tue, 21 Jul 2026 01:28:59 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/grokpromptguideic.webp",
+      "language": "ja"
+    },
+    {
+      "title": "サイバーセキュリティのAI自動化とは？メリット・セキュリティ戦略を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/cyber-security-ai-automation-2026/",
+      "description": "サイバー攻撃の高度化・巧妙化が進む中、企業のセキュリティ担当者の負担は増大する一方です。「人手不足で監視が追いつかない」「未知の脅威に対応できない」とお悩みではありませんか？ その解決策として今最も注目されているのが、「 [...] The post サイバーセキュリティのAI自動化とは？メリット・セキュリティ戦略を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Tue, 21 Jul 2026 01:16:41 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/cybersecurity.png",
+      "language": "ja"
+    },
+    {
+      "title": "GoogleとA24が挑むAI映画制作の未来！技術革新とクリエイティブの融合",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/google-a24-movie-production/",
+      "description": "近年、生成AIの進化は目覚ましく、ついに映画界の最前線にもその波が押し寄せています。数々の革新的ヒット作を生み出してきた映画制作会社「A24」と、世界のテクノロジーを牽引する「Google」。この2つの巨頭が仕掛ける「A [...] The post GoogleとA24が挑むAI映画制作の未来！技術革新とクリエイティブの融合 first appeared on AIポータルメディアAIsmile...",
+      "publishedDate": "Tue, 21 Jul 2026 01:16:25 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/190.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI Daybreakとは？GPT-5.5と28社が挑むAIサイバー防御の全貌",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-daybreak-2/",
+      "description": "生成AIの急速な進化は、私たちのビジネスを効率化する一方で、サイバー攻撃の高度化・高速化という新たな脅威をもたらしています。AIを武器として使う攻撃者は、人間のセキュリティチームをはるかに上回るスピードで動きます。「これ [...] The post OpenAI Daybreakとは？GPT-5.5と28社が挑むAIサイバー防御の全貌 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Tue, 21 Jul 2026 01:16:11 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/189.png",
+      "language": "ja"
+    },
+    {
+      "title": "Geminiプロンプトの書き方完全ガイド｜4要素の基本とビジネス例文集",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/gemini-prompt/",
+      "description": "「Geminiに指示を出してみたけれど、無難で一般的な回答しか返ってこない」と感じていないでしょうか。実はそれ、Geminiの性能ではなく、プロンプト（指示文）の書き方に原因があるかもしれません。 この記事では、Goog [...] The post Geminiプロンプトの書き方完全ガイド｜4要素の基本とビジネス例文集 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Tue, 21 Jul 2026 01:13:35 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/geminipromptic.webp",
+      "language": "ja"
+    },
+    {
       "title": "Celebrating 25 years of visual search innovation",
       "titleJa": "ビジュアル検索のイノベーション 25 年を祝う",
       "link": "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary/",
@@ -208,28 +241,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Images_25th_hero.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "ChatGPTのメモリ機能を使いこなす！仕事が変わる設定・活用法と失敗しない注意点を詳しく解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chatgpt-memory/",
-      "description": "ChatGPTのメモリ機能は、過去の会話で伝えた好みや前提を記憶し、次の回答へ自動で反映してくれる機能です。 毎回同じ説明を繰り返す手間が省け、使うほど自分の業務に合ったアシスタントへ育っていきます。とはいえ、「保存済み [...]...",
-      "publishedDate": "Tue, 14 Jul 2026 12:59:20 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/ChatGPT-Memory_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "The Download: Claude’s inner workings, and the future of world models",
-      "titleJa": "ダウンロード: クロードの内部構造と世界モデルの未来",
-      "link": "https://www.technologyreview.com/2026/07/14/1140391/the-download-anthropic-claude-internal-thoughts-world-models/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. What Anthropic’s latest AI discovery does—and does...",
-      "publishedDate": "Tue, 14 Jul 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/01/feature-ivf.jpg?fit=1456,818",
       "language": "en"
     },
     {
@@ -242,28 +253,6 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "PsiQuantum has a plan to make a massive quantum computer out of light",
-      "titleJa": "PsiQuantumは光から巨大な量子コンピュータを作る計画を持っている",
-      "link": "https://www.technologyreview.com/2026/07/14/1140356/psiquantum-plan-massive-quantum-computer-out-of-light/",
-      "description": "The machine that could change the world will be housed in a room that looks like a data center crossed with an ice cream factory. Inside will be some 100 stainless-steel cabinets, each about six feet ...",
-      "publishedDate": "Tue, 14 Jul 2026 08:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/260126_Mk2_the_third-23.jpg?w=2000",
-      "language": "en"
-    },
-    {
-      "title": "ChatGPTに個人情報を入力してしまった…リスクと対処法・安全な設定まで徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/entering-personal-information-into-chatgpt/",
-      "description": "ChatGPTに顧客名や社内資料を入力してしまい、「これは情報漏洩にあたるのでは」とヒヤリとした。そんな経験はないでしょうか。 情報漏えいリスクは最小限に抑えられます。まずは会話を削除し必要なら社内へ報告する。これが基本 [...]...",
-      "publishedDate": "Tue, 14 Jul 2026 04:47:04 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Entering-personal-information-into-ChatGPT_2607-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "How sales teams use ChatGPT Work",
@@ -398,26 +387,37 @@
       "language": "ja"
     },
     {
-      "title": "デジタル庁、ガバメントAI「源内」で国産AIの試用開始。「さくらのクラウド」で3種類の基盤モデルを検証",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/digital-gennai-model-trial/",
-      "description": "デジタル庁は、ガバメントAI「源内」の実装に向け、令和8年度の政府共通クラウドサービス「ガバメントクラウド」に選定された「さくらのクラウド」上で、国産AI基盤モデルの試用を開始すると発表しました。 このニュースのポイント [...] The post デジタル庁、ガバメントAI「源内」で国産AIの試用開始。「さくらのクラウド」で3種類の基盤モデルを検証 first appeared on AIポー...",
-      "publishedDate": "Thu, 16 Jul 2026 09:15:59 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/digital-gennai-Foundation-Model-trial.png",
-      "language": "ja"
+      "title": "The Download: OpenAI unveils GPT-Red and heat pumps rise in the US",
+      "titleJa": "ダウンロード: OpenAI が GPT-Red を発表し、米国でヒートポンプが台頭",
+      "link": "https://www.technologyreview.com/2026/07/16/1140600/the-download-openai-unveils-gpt-red-heat-pumps-rise-us/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Meet GPT-Red: an LLM super-hacker OpenAI built to ...",
+      "publishedDate": "Thu, 16 Jul 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/12/bed.jpg?w=2724",
+      "language": "en"
     },
     {
-      "title": "清水建設、AIロボットの研究開発を本格化。現場巡回や塗装作業で実用化に向け実証開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/shimizu-ai-robot-development/",
-      "description": "清水建設は、AIロボット（フィジカルAI）の現場実装に向けた取り組みを開始しました。ヒューマノイドロボットによる現場巡回やロボットアームによる塗装作業の実用化に向けた実証を実施しています。 このニュースのポイント 清水建 [...] The post 清水建設、AIロボットの研究開発を本格化。現場巡回や塗装作業で実用化に向け実証開始 first appeared on AIポータルメディアAIsm...",
-      "publishedDate": "Thu, 16 Jul 2026 09:14:42 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/shimz-ai-robot-construction-main.png",
-      "language": "ja"
+      "title": "Newer Models, Same Advantage",
+      "titleJa": "新しいモデルでも同じ利点",
+      "link": "https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages",
+      "description": "...",
+      "publishedDate": "Thu, 16 Jul 2026 11:49:48 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/69d815b52c6db28cfdfdd422/3HJgWuzAFymnAq6TqEdL7.png",
+      "language": "en"
+    },
+    {
+      "title": "Why heat pumps are still so hot in the US",
+      "titleJa": "なぜ米国ではヒートポンプが依然として人気があるのか",
+      "link": "https://www.technologyreview.com/2026/07/16/1140505/heat-pump-sales-us/",
+      "description": "It feels as if it should be illegal to even think about heating appliances during the height of summer—seriously, these heat waves in New York have been brutal—but we need to talk about heat pumps. Th...",
+      "publishedDate": "Thu, 16 Jul 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/technician-installing-a-modern-air-conditioning-sy-2026-03-20-06-17-16-utc.jpg?resize=1200,600",
+      "language": "en"
     },
     {
       "title": "【Claude Code Artifacts×MCP】外部ツール連携でセッション成果を即共有！MCPコネクタ対応を徹底解説",
@@ -431,25 +431,36 @@
       "language": "ja"
     },
     {
-      "title": "Google Antigravity 2.0とは？機能・料金・導入手順を徹底解説",
+      "title": "Claude Codeのサブエージェントとは？仕組み・作り方・使い方・活用例を徹底解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-antigravity-2-0/",
-      "description": "Google Antigravity 2.0とは、複数のAIエージェントを並列で動かして開発作業を自動化する新たなプラットフォームです。本記事ではv1からの変化点・料金プラン・インストール手順・セキュリティ設定までを解説 [...] The post Google Antigravity 2.0とは？機能・料金・導入手順を徹底解説 first appeared on AIポータルメディアAIsmi...",
-      "publishedDate": "Thu, 16 Jul 2026 03:57:57 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/googleantigravity20ic.webp",
+      "link": "https://weel.co.jp/media/tech/claudecode-subagent/",
+      "description": "Claude Codeを使い込むほど、コンテキストウィンドウの圧迫に悩まされる方は多いのではないでしょうか。 その解決策としてAnthropicが用意しているのが「サブエージェント」です。独自のコンテキストウィンドウ・シ [...]...",
+      "publishedDate": "Mon, 20 Jul 2026 12:36:13 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/claudecode-subagent_2607-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "ChatGPT自己分析プロンプト｜メモリ機能で強みと価値観を言語化",
+      "title": "RAGの評価方法とは？必要な指標・フレームワーク・Ragasでの実践検証を解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-self-analysis-prompt/",
-      "description": "「ChatGPTに自己分析を手伝ってもらいたいけれど、何を聞けばいいか分からない」。そう感じたことはないでしょうか。「AIの回答をどこまで信じていいのか不安」という声もよく聞かれます。 ChatGPTはメモリ機能を活用す [...] The post ChatGPT自己分析プロンプト｜メモリ機能で強みと価値観を言語化 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 16 Jul 2026 02:15:05 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/selfanalysismain.png",
+      "link": "https://weel.co.jp/media/rag-evaluation/",
+      "description": "RAGを業務で使うなら、もっともらしい回答だけで判断してはいけません。必要な文書を取得できているか、回答が検索結果に根拠づけられているかを分けて確認することが重要です。 本記事では、RAG評価の指標と方法、代表的なフレー [...]...",
+      "publishedDate": "Mon, 20 Jul 2026 12:05:06 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/RAG-Evaluation_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "RAGのチャンク化（チャンキング）とは？種類・最適なサイズ・注意点まで徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/rag-chunks/",
+      "description": "近年、多くの企業で生成AIの活用が進む中、自社データなどを活用して回答精度を向上させるRAG（Retrieval-Augmented Generation）を導入している企業も多いでしょう。しかし、RAGを導入したものの [...]...",
+      "publishedDate": "Mon, 20 Jul 2026 06:03:50 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/rag-chunks_2606-1024x576.webp",
       "language": "ja"
     },
     {
@@ -541,14 +552,25 @@
       "language": "ja"
     },
     {
-      "title": "ChatGPTでダイエットを成功させる使い方・プロンプト完全ガイド",
+      "title": "Claude Codeを組織一括でシングルサインオン、チームや個人の費用上限設定、デフォルト設定など可能に、「Claude apps gateway for AWS/Google Cloud」登場",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-diet-5-5-instant/",
-      "description": "「ダイエットが続かない」「ダイエット専用アプリが使いにくい」と悩んでいる方も多いのではないでしょうか。ChatGPTを活用すれば、食事記録やカロリー計算、振り返りをAIに任せながら効率的にダイエットを進められます。 本記 [...] The post ChatGPTでダイエットを成功させる使い方・プロンプト完全ガイド first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 17 Jul 2026 01:36:47 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/chatgptdietic.webp",
+      "link": "https://www.publickey1.jp/blog/26/claude_codeclaude_apps_gateway_for_awsgoogle_cloud.html",
+      "description": "AnthropicのAIコーディングエージェントClaud Codeは非常に人気のあるサービスとして多くの組織で採用され始めています。 Claude Codeは個人で簡単に導入できますが、企業が組織としてClaude Codeを導入する場合......",
+      "publishedDate": "2026-07-20T15:54:57Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/claudegateway401.png",
+      "language": "ja"
+    },
+    {
+      "title": "Rustで書き直されたBun、早くもClaude Codeアプリに本番投入された模様",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/rustbunclaude_code.html",
+      "description": "Claude Codeを用いてわずか11日間でZig言語からRust言語へ移植されたことが話題となっているJavaScriptランタイムのBunですが、そのRust版Bunが早くも7月17日にリリースされたClaude Code v2.1.......",
+      "publishedDate": "2026-07-20T15:52:57Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/HNj_ngGb0AA-I1m.jpg",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/swift-systemkernel02.png",
-      "language": "ja"
-    },
-    {
-      "title": "MCPにエンタープライズ向け新機能、アクセスを一括管理できる「Enterprise-Managed Authorization（EMA）extension」が安定版として利用可能に",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/mcpenterprise-managed_authorizationemaextension.html",
-      "description": "生成AIとツールとの接続プロトコルとしてLinux Foundation傘下で標準化と機能拡張が進められているMCP（Model Context Protocol）の企業向けの新機能「Enterprise-Managed Authoriza......",
-      "publishedDate": "2026-07-06T15:08:16Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/mcp-ema-la02.png",
-      "language": "ja"
-    },
-    {
-      "title": "プログラミングのためのBGMや環境音など。仕事や勉強の邪魔にならない無料で使えそうな音源集。2026年版",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/bgm2026.html",
-      "description": "在宅で仕事や勉強をしている時間が増えてくると、ずっと無音だと寂しい気がして、できれば仕事の邪魔にならないBGMや環境音があるといいなあ、と思ったことはありませんか？ 今年も、そうした音源を独自にピックアップした記事の2026年版を紹介しまし......",
-      "publishedDate": "2026-07-05T15:52:01Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/bgm4programming2026.png",
       "language": "ja"
     }
   ]
