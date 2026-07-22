@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-07-21T01:50:04.009231",
+  "lastUpdated": "2026-07-22T01:51:09.621951",
   "articles": [
     {
-      "title": "【2026年版】玉掛け資格とは？｜技能講習・特別教育の違いから費用・取得方法・難易度まで解説",
-      "link": "https://news.build-app.jp/article/41616/",
-      "description": "建設現場や工場で働くために玉掛け資格の取得を考えているものの、「技能講習と特別教育は何が違うの？」「自分はどちらを取得すればよいの？」「費用......",
-      "publishedDate": "Wed, 15 Jul 2026 22:00:00 +0000",
+      "title": "鹿島が演算工房を子会社化、建設ICTの内製化と自動化施工技術を強化へ、現場対応力を向上",
+      "link": "https://news.build-app.jp/article/41689/",
+      "description": "鹿島建設株式会社（社長：桐生雅文）は、山岳トンネル・シールドトンネルの計測・施工管理システムを手がける株式会社演算工房（京都市上京区、社長：......",
+      "publishedDate": "Wed, 22 Jul 2026 00:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/a5622fec980fe0f5c63d3deefb1bcf0f-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/02/AdobeStock_444319664-scaled-1-130x65.jpeg",
       "language": "ja"
     },
     {
@@ -32,6 +32,36 @@
       "language": "ja"
     },
     {
+      "title": "国土交通省、PLATEAUビジョン2026を公表、都市デジタルツインの新戦略を策定",
+      "link": "https://news.build-app.jp/article/41681/",
+      "description": "国土交通省は、3D都市モデルの整備・活用・オープンデータ化を進める「Project PLATEAU」の今後の方針として、「PLATEAUビジ......",
+      "publishedDate": "Tue, 21 Jul 2026 06:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/plateau-vision-2026-urban-130x53.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、5月の建設出来高は4兆7,998億円、民間・公共とも前年を上回る",
+      "link": "https://news.build-app.jp/article/41676/",
+      "description": "国土交通省は、令和8年（2026年）7月17日、建設総合統計の5月分を取りまとめて公表しました。今回の発表では、全国の建設工事出来高総計が4......",
+      "publishedDate": "Tue, 21 Jul 2026 04:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/construction_output_statistics-130x53.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "保護中: 【2026年】すぐに使える！工事現場の熱中症対策グッズ｜暑さ対策におすすめ",
+      "link": "https://news.build-app.jp/article/41657/",
+      "description": "この投稿はパスワードで保護されているため抜粋文はありません。...",
+      "publishedDate": "Tue, 21 Jul 2026 00:48:07 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/1aa1de407e28401cc61196ba5706fe6b-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "Fable 5とGPT-5.6 Solの役割分担で、AI利用コストを40%削減する方法",
       "link": "https://axconstdx.com/2026/07/14/fable-5%e3%81%a8gpt-5-6-sol%e3%81%ae%e5%bd%b9%e5%89%b2%e5%88%86%e6%8b%85%e3%81%a7%e3%80%81ai%e5%88%a9%e7%94%a8%e3%82%b3%e3%82%b9%e3%83%88%e3%82%9240%e5%89%8a%e6%b8%9b%e3%81%99%e3%82%8b%e6%96%b9/?utm_source=rss&utm_medium=rss&utm_campaign=fable-5%25e3%2581%25a8gpt-5-6-sol%25e3%2581%25ae%25e5%25bd%25b9%25e5%2589%25b2%25e5%2588%2586%25e6%258b%2585%25e3%2581%25a7%25e3%2580%2581ai%25e5%2588%25a9%25e7%2594%25a8%25e3%2582%25b3%25e3%2582%25b9%25e3%2583%2588%25e3%2582%259240%25e5%2589%258a%25e6%25b8%259b%25e3%2581%2599%25e3%2582%258b%25e6%2596%25b9",
       "description": "「高性能AIは使いたいけど、コストが膨らみ続ける」—建設・製造業のIT担当者なら、この悩みは他人事ではありません。実は、2つのAIを役割分担させ、JSONで連携させるだけで、品質を落とさずにコストを40%削減できる方法が [...] <p>The post Fable 5とGPT-5.6 Solの役割分担で、AI利用コストを40%削減する方法 first appeared on 生成AIと建設DX...",
@@ -39,16 +69,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-under100KB-1-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "アルティーリ千葉新アリーナ建設計画｜なぜ幕張？市とチームが目指す2万人規模の再開発を解説",
-      "link": "https://news.build-app.jp/article/41598/",
-      "description": "トレンドワード：アルティーリ千葉新アリーナ建設計画 アルティーリ千葉新アリーナ建設計画は、（仮称）幕張アリーナ計画として、プロバスケットボー......",
-      "publishedDate": "Thu, 16 Jul 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/d6203ca98e105e65a8629e420b26582f-130x82.png",
       "language": "ja"
     },
     {
@@ -69,36 +89,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-3-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大和ハウス工業、国内最大規模の冷凍冷蔵対応マルチテナント型物流施設「DPL大阪南港Ⅰ」を竣工",
-      "link": "https://news.build-app.jp/article/41629/",
-      "description": "大和ハウス工業（本社：大阪市、社長：大友浩嗣氏）は、大阪市住之江区で開発を進めてきた冷凍冷蔵専用のマルチテナント型物流施設「DPL大阪南港Ⅰ......",
-      "publishedDate": "Thu, 16 Jul 2026 05:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/osaka_nanko1_logistics-130x117.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "OBCF（オープンブック・コストプラスフィー契約）とは｜ランプサム契約との違いやメリット・デメリットを解説",
-      "link": "https://news.build-app.jp/article/41527/",
-      "description": "トレンドワード：OBCF（オープンブック・コストプラスフィー契約） 近年、建設業界では資材価格や労務費の高騰が続き、従来のランプサム契約では......",
-      "publishedDate": "Thu, 16 Jul 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/AdobeStock_539334278-130x68.jpeg",
-      "language": "ja"
-    },
-    {
-      "title": "Studio Rack One’s Brain、報告写真の品質差解消アプリを提供開始",
-      "link": "https://news.build-app.jp/article/41622/",
-      "description": "建設現場や店舗運営の現場では、写真の撮り方一つで報告書の質が大きく変わってしまうことがあります。同じ設備を撮っていても、角度や距離が担当者ご......",
-      "publishedDate": "Thu, 16 Jul 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/manual-photo-app-130x73.webp",
       "language": "ja"
     },
     {
@@ -159,6 +149,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/e7d825e27ff4c9bbf3c78588a003b5f5-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新】経審（経営事項審査）とは？｜点数・申請の流れ・費用・必要書類をわかりやすく解説",
+      "link": "https://news.build-app.jp/article/41668/",
+      "description": "「経審とは何？」「公共工事を受注するには必ず受ける必要があるの？」「何点あれば入札に参加できる？」と疑問に感じている方も多いのではないでしょ......",
+      "publishedDate": "Mon, 20 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/3ac389f0987d4e4b17f1a42013d9ac5b-130x82.png",
       "language": "ja"
     },
     {
