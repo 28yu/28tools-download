@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-21T04:16:28.528884",
+  "lastUpdated": "2026-07-22T04:17:48.981771",
   "articles": [
     {
       "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
@@ -35,17 +35,6 @@
       "language": "en"
     },
     {
-      "title": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
-      "titleJa": "GPT-Red をご紹介します: モデルをより安全にするために構築された LLM スーパーハッカー OpenAI",
-      "link": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
-      "description": "OpenAI has built an LLM super-hacker called GPT-Red that it uses as a sparring partner to help its other models boost their defenses against cyberattacks. Last week the company released the latest ver...",
-      "publishedDate": "Wed, 15 Jul 2026 17:09:37 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/spar-red.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "中小企業省力化投資補助金で生成AI導入!対象ツールや申請のコツを解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/small-and-medium-enterprise-labor-saving-investment-subsidy/",
@@ -55,28 +44,6 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Small-and-Medium-Enterprise-Labor-Saving-Investment-Subsidy_2606-1024x576.webp",
       "language": "ja"
-    },
-    {
-      "title": "【Claude for Teachers】米国K-12教師向けにClaude Proが無料開放！全50州の学習基準に対応した教育AI特化ツールを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/claude-for-teachers/",
-      "description": "2026年7月15日、Anthropicは米国K-12（幼稚園〜高校）の教師向け無料AIサービス「Claude for Teachers」を公開しました！ 2025年6月時点のGallup調査では、すでに6割の教師がAI [...]...",
-      "publishedDate": "Wed, 15 Jul 2026 13:17:00 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-for-Teachers_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "The Download: a useful quantum machine and a record-breaking subsea tunnel",
-      "titleJa": "ダウンロード: 便利な量子マシンと記録破りの海底トンネル",
-      "link": "https://www.technologyreview.com/2026/07/15/1140498/the-download-useful-quantum-computer-subsea-tunnel/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. PsiQuantum has a plan to make a massive quantum co...",
-      "publishedDate": "Wed, 15 Jul 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/02/nixon-thumb.jpg?w=3000",
-      "language": "en"
     },
     {
       "title": "The US is advancing AI safety through state and federal action",
@@ -146,7 +113,7 @@
     },
     {
       "title": "The latest AI news we announced in June 2026",
-      "titleJa": "2026 年 6 月に発表された AI の最新ニュース",
+      "titleJa": "2026年6月に発表したAI最新ニュース",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
       "description": "June Pixel Drop hero...",
       "publishedDate": "Wed, 01 Jul 2026 18:15:00 +0000",
@@ -176,6 +143,105 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Generated_Image_k2dxu1k2.max-600x600.format-webp.webp",
       "language": "en"
+    },
+    {
+      "title": "The State of Simulation for Physical AI: An Overview",
+      "titleJa": "物理 AI のシミュレーションの現状: 概要",
+      "link": "https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai",
+      "description": "...",
+      "publishedDate": "Tue, 21 Jul 2026 20:00:27 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6994dc99f850a10f03fd0b21/qW-EiAM1rpPTBCzGK-Cbx.png",
+      "language": "en"
+    },
+    {
+      "title": "Introducing the ChatGPT for small business program",
+      "titleJa": "中小企業向け ChatGPT プログラムの紹介",
+      "link": "https://openai.com/index/introducing-chatgpt-small-business-program",
+      "description": "OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work....",
+      "publishedDate": "Tue, 21 Jul 2026 17:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The Download: Chinese AI divides the White House, and a record copyright payout",
+      "titleJa": "ダウンロード: 中国の AI がホワイトハウスを二分し、記録的な著作権料が支払われる",
+      "link": "https://www.technologyreview.com/2026/07/21/1140685/the-download-chinese-ai-divides-white-house-anthropic-copyright-settlement/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. China’s AI models have Trump’s AI world at war wit...",
+      "publishedDate": "Tue, 21 Jul 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/02/Camera_DSF7816_top.jpg?w=3000",
+      "language": "en"
+    },
+    {
+      "title": "Advancing next-gen AI with materials science innovation",
+      "titleJa": "材料科学のイノベーションで次世代 AI を推進",
+      "link": "https://www.technologyreview.com/2026/07/21/1140602/advancing-next-gen-ai-with-materials-science-innovation/",
+      "description": "The conversation about AI often centers on algorithms, computing power, or huge investments in new semiconductor fabrication plants and hyperscale data centers. But beneath each of these advances is a...",
+      "publishedDate": "Tue, 21 Jul 2026 10:37:34 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/Syensqo-shutterstock_2491787317.jpg?w=1200",
+      "language": "en"
+    },
+    {
+      "title": "ソフトバンクと安川電機、「AIデータセンターGPUクラウド」を活用し、柔軟物体ハンドリングシステムを実証",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/softbank-yasukawa-handling-system/",
+      "description": "ソフトバンクと安川電機は、NVIDIAの技術を活用した「AIデータセンター GPUクラウド」をフィジカルAIの開発基盤として活用し、ワイヤーハーネスを対象とした「柔軟物体ハンドリングシステム」の実証を行いました。 このニ [...] The post ソフトバンクと安川電機、「AIデータセンターGPUクラウド」を活用し、柔軟物体ハンドリングシステムを実証 first appeared on AIポ...",
+      "publishedDate": "Tue, 21 Jul 2026 09:21:31 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/softbank-yasukawa-ai-data-center-gpu-cloud.png",
+      "language": "ja"
+    },
+    {
+      "title": "Anthropic、Slack上で動作する新機能「Claude Tag」発表。チーム利用可能で自律的にタスクを処理",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/anthropic-slack-claude-tag-release/",
+      "description": "Anthropicは、Slack上で自律的にタスクを処理する新機能「Claude Tag」を発表しました。「Claude Enterprise」および「Team」プランを利用している企業向けにベータ版として提供されます。 [...] The post Anthropic、Slack上で動作する新機能「Claude Tag」発表。チーム利用可能で自律的にタスクを処理 first appeared o...",
+      "publishedDate": "Tue, 21 Jul 2026 09:07:36 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ClaudeTageye.png",
+      "language": "ja"
+    },
+    {
+      "title": "Noetra、国産マルチモーダル基盤モデルの研究開発を本格始動。ソニー・SB・NEC・ホンダなどと連携",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/noetra-domestic-multimodal-model/",
+      "description": "Noetraは、ソニーグループやソフトバンク、日本電気、本田技研工業ほかパートナー企業と連携し、国産マルチモーダル基盤モデルの研究開発を本格始動します。 このニュースのポイント Noetraが中核企業や産総研などと連携し [...] The post Noetra、国産マルチモーダル基盤モデルの研究開発を本格始動。ソニー・SB・NEC・ホンダなどと連携 first appeared on AIポー...",
+      "publishedDate": "Tue, 21 Jul 2026 09:06:29 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/noetra-domestic-multimodal-model-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
+      "titleJa": "OpenAI と Hugging Face が提携してモデル評価中のセキュリティ インシデントに対処",
+      "link": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "description": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders....",
+      "publishedDate": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Qwen3.8とは？Fable 5に次ぐと掲げる2.4Tオープンウェイトモデルの実力と使い方",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/qwen3-8/",
+      "description": "2026年7月、アリババのQwenチームから次世代モデル「Qwen3.8」シリーズが発表されました。 今回発表された「Qwen3.8」は、2.4Tパラメータという超大規模スケールを持つ、近日オープンウェイト公開予定の基盤 [...]...",
+      "publishedDate": "Tue, 21 Jul 2026 04:32:38 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.8-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "Grokプロンプトの書き方完全ガイド｜業務で使える例文集と作り方のコツ",
@@ -231,6 +297,28 @@
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/geminipromptic.webp",
       "language": "ja"
+    },
+    {
+      "title": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
+      "titleJa": "David Vélez と Robin Vince が OpenAI Foundation と OpenAI Group PBC の役員に加わります",
+      "link": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
+      "description": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC, bringing global leadership in finance, technology, and governance....",
+      "publishedDate": "Tue, 21 Jul 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Grabette: an open system to record robot-manipulation data",
+      "titleJa": "Grabette: ロボット操作データを記録するオープン システム",
+      "link": "https://huggingface.co/blog/grabette",
+      "description": "...",
+      "publishedDate": "Tue, 21 Jul 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/grabette/thumbnail_grabette.png",
+      "language": "en"
     },
     {
       "title": "Celebrating 25 years of visual search innovation",
@@ -354,28 +442,6 @@
       "language": "en"
     },
     {
-      "title": "Connect more of your apps to Search",
-      "titleJa": "より多くのアプリを検索に接続します",
-      "link": "https://blog.google/products-and-platforms/products/search/connected-apps/",
-      "description": "Connected apps rendering...",
-      "publishedDate": "Thu, 16 Jul 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ConnectedAppshero.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Create, edit and star in videos with two Google Vids updates",
-      "titleJa": "2 つの Google Vids アップデートにより、動画の作成、編集、主演を行うことができます",
-      "link": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
-      "description": "Text \"Gemini Omni and Personal Avatars in Google Vids\" surrounded by various images...",
-      "publishedDate": "Thu, 16 Jul 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/omni-blog-header_OarEe2t.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
       "title": "ChatGPTがエラーばかり！？原因と使えないときの対処法を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/chatgpt-error/",
@@ -385,39 +451,6 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/ChatGPT-error_2607-1024x576.webp",
       "language": "ja"
-    },
-    {
-      "title": "The Download: OpenAI unveils GPT-Red and heat pumps rise in the US",
-      "titleJa": "ダウンロード: OpenAI が GPT-Red を発表し、米国でヒートポンプが台頭",
-      "link": "https://www.technologyreview.com/2026/07/16/1140600/the-download-openai-unveils-gpt-red-heat-pumps-rise-us/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Meet GPT-Red: an LLM super-hacker OpenAI built to ...",
-      "publishedDate": "Thu, 16 Jul 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/12/bed.jpg?w=2724",
-      "language": "en"
-    },
-    {
-      "title": "Newer Models, Same Advantage",
-      "titleJa": "新しいモデルでも同じ利点",
-      "link": "https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages",
-      "description": "...",
-      "publishedDate": "Thu, 16 Jul 2026 11:49:48 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/69d815b52c6db28cfdfdd422/3HJgWuzAFymnAq6TqEdL7.png",
-      "language": "en"
-    },
-    {
-      "title": "Why heat pumps are still so hot in the US",
-      "titleJa": "なぜ米国ではヒートポンプが依然として人気があるのか",
-      "link": "https://www.technologyreview.com/2026/07/16/1140505/heat-pump-sales-us/",
-      "description": "It feels as if it should be illegal to even think about heating appliances during the height of summer—seriously, these heat waves in New York have been brutal—but we need to talk about heat pumps. Th...",
-      "publishedDate": "Thu, 16 Jul 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/technician-installing-a-modern-air-conditioning-sy-2026-03-20-06-17-16-utc.jpg?resize=1200,600",
-      "language": "en"
     },
     {
       "title": "【Claude Code Artifacts×MCP】外部ツール連携でセッション成果を即共有！MCPコネクタ対応を徹底解説",
@@ -508,17 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "ちゅうぎんフィナンシャルグループ、「AI1,000人プロジェクト」を開始。Microsoft 365 Copilot活用で業務変革を推進",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chugin-fc-ai-one-thousand-project/",
-      "description": "ちゅうぎんフィナンシャルグループは、AIを活用した新しい働き方への転換を加速するため「AI1,000人プロジェクト」を開始しました。 このニュースのポイント ちゅうぎんフィナンシャルグループが「AI1,000人プロジェク [...] The post ちゅうぎんフィナンシャルグループ、「AI1,000人プロジェクト」を開始。Microsoft 365 Copilot活用で業務変革を推進 first...",
-      "publishedDate": "Fri, 17 Jul 2026 07:07:27 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/chugin-fc-ai-one-thousand-project.png",
-      "language": "ja"
-    },
-    {
       "title": "【Kimi K3】Claude Fable 5に迫るオープンモデルの性能・仕組み・活用シーンを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/kimi-k3/",
@@ -530,25 +552,25 @@
       "language": "ja"
     },
     {
-      "title": "【8/18開催】製造現場のAI活用実践ウェビナー 紙帳票のデジタル化から故障を未然に防ぐ異常予兆検知AIまで 〜AI-OCRやセンサーデータ活用で実現する製造DX〜",
+      "title": "企業向けでAIツールで成長率トップはAnthropic、アカウント数が最も多いのはMicrosoft 365。Oktaが調査結果を発表",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/20260818webinar/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年8月18日（火）12時から製造現場のAI活用実践ウェビナーを開催します。 製造業のAI導入を阻む最大の要因は、現場の「デー [...] The post 【8/18開催】製造現場のAI活用実践ウェビナー 紙帳票のデジタル化から故障を未然に防ぐ異常予兆検知AIまで 〜AI-OCRやセンサーデータ活用で実...",
-      "publishedDate": "Fri, 17 Jul 2026 02:34:44 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/1123_1200x628_2.jpg",
+      "link": "https://www.publickey1.jp/blog/26/aianthropicmicrosoft_365okta.html",
+      "description": "アイデンティティ管理サービスを提供するOktaは、同社のサービスを用いている2万社以上の匿名化されたアクセスデータに基づく、企業でのAIツール利用実態について調査結果を発表しました。 成長率トップはAnthropic 1つ目の調査結果は、2......",
+      "publishedDate": "2026-07-21T13:51:42Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/okta-aitools-ranking2026-01.png",
       "language": "ja"
     },
     {
-      "title": "ChatGPTの共有リンクとは？作り方から削除・安全な使い方まで解説",
+      "title": "AWS、デプロイ速度が最大4倍になる「AWS CloudFormation Expressモード」を提供開始",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-share-link/",
-      "description": "ChatGPTで得た回答を、上司や同僚、取引先に見せたい場面は多いものです。しかし「共有ボタンがどこにあるか分からない」「リンクを送っても大丈夫なのか不安」と感じる方も少なくありません。ChatGPTには会話を他人に共有 [...] The post ChatGPTの共有リンクとは？作り方から削除・安全な使い方まで解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 17 Jul 2026 02:03:24 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gptsharelinkmain.png",
+      "link": "https://www.publickey1.jp/blog/26/aws4aws_cloudformation_express.html",
+      "description": "Amazon Web Services（AWS）は、デプロイ速度が最大で4倍速になるAWS CloudFormationの新機能「AWS CloudFormation Expressモード」の提供を開始しました。 AWS CloudForm......",
+      "publishedDate": "2026-07-21T13:50:39Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/aws-cloudformation-express-2.jpg",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/postgresql19beta.png",
-      "language": "ja"
-    },
-    {
-      "title": "Visual Studio Code、従量課金制になったGitHub Copilotの使用料を表示可能に（訂正あり）",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/visual_studio_codegithub_copilot.html",
-      "description": "マイクロソフトはVisual Studio Codeの新機能として、GitHub Copilotで消費した費用を表示できるようにしました。 GitHub Copilotは今年（2026年）6月から、生成AIを利用したチャットやAIエージェン......",
-      "publishedDate": "2026-07-07T15:55:48Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/vscode-cousumetokens01.png",
-      "language": "ja"
-    },
-    {
-      "title": "Apple、次期macOS 27でSwift言語をシステムカーネル開発に採用。メモリ安全な言語として",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/applemacos_27swift.html",
-      "description": "Appleは次期macOS 27 Golden Gateから、Swift言語をシステムカーネルの開発に採用することを明らかにしました。 これは先月に行われたWWDC26ですでに表明されており、7月2日付けのSwiftのブログ「What's ......",
-      "publishedDate": "2026-07-06T15:11:01Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/swift-systemkernel02.png",
       "language": "ja"
     }
   ]
