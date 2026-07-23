@@ -1,6 +1,171 @@
 {
-  "lastUpdated": "2026-07-22T04:17:48.981771",
+  "lastUpdated": "2026-07-23T04:16:17.516145",
   "articles": [
+    {
+      "title": "生成AIで社内マニュアル作成を効率化！ChatGPTでの作り方やプロンプトを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/creating-manuals-with-generative-ai/",
+      "description": "「また同じ説明をしている……」「新人向けマニュアルを作りたいけれど時間がない」と悩んでいませんか？生成AIを使えば、1つの指示文からマニュアルの下書きやFAQ作成を始められます。 この記事では、総務・教育担当者向けに、生 [...]...",
+      "publishedDate": "Wed, 22 Jul 2026 13:50:29 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Creating-Manuals-with-Generative-AI_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Building AI infrastructure with the Effingham County community",
+      "titleJa": "エフィンガム郡コミュニティと AI インフラストラクチャを構築する",
+      "link": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+      "description": "OpenAI announces Project Camellia in Effingham County, Georgia, with commitments to responsible energy, community investment, jobs, and access to Codex....",
+      "publishedDate": "Wed, 22 Jul 2026 13:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "How news organizations are using AI to advance their vital missions",
+      "titleJa": "報道機関が重要な任務を推進するために AI をどのように活用しているか",
+      "link": "https://openai.com/index/how-news-organizations-are-using-ai",
+      "description": "News organizations are using AI to strengthen reporting, grow audiences, and improve business operations, with OpenAI tools supporting journalists and publishers worldwide....",
+      "publishedDate": "Wed, 22 Jul 2026 13:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "3 Google updates from Galaxy Unpacked 2026",
+      "titleJa": "Galaxy Unpacked 2026 からの 3 つの Google アップデート",
+      "link": "https://blog.google/products-and-platforms/platforms/android/galaxy-unpacked-2026/",
+      "description": "Gentle Monster glasses, Warby Parker glasses, a prompt asking for the history behind a pictured building, and a prompt asking to book a table at a pictured restaurant...",
+      "publishedDate": "Wed, 22 Jul 2026 13:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Unpacked_hero.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "The Download: NASA’s new space telescope and OpenAI’s autonomous hacker",
+      "titleJa": "ダウンロード: NASA の新しい宇宙望遠鏡と OpenAI の自律型ハッカー",
+      "link": "https://www.technologyreview.com/2026/07/22/1140717/the-download-nasa-space-telescope-openai-hugging-face-hack/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Shape-shifting mirrors on NASA’s new space telesco...",
+      "publishedDate": "Wed, 22 Jul 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/08/MIT-TSMC-2-final-thumb.jpg?w=840",
+      "language": "en"
+    },
+    {
+      "title": "Advancing the next era of national science",
+      "titleJa": "国家科学の次の時代を前進させる",
+      "link": "https://openai.com/index/advancing-the-next-era-of-national-science",
+      "description": "OpenAI outlines its commitment to advancing American science working with the U.S. Department of Energy and national labs to use frontier AI to accelerate discovery....",
+      "publishedDate": "Wed, 22 Jul 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Shape-shifting mirrors on NASA’s new space telescope could unveil Jupiters like our own",
+      "titleJa": "NASAの新しい宇宙望遠鏡の形状変化ミラーは、私たちの木星と同じように姿を現す可能性がある",
+      "link": "https://www.technologyreview.com/2026/07/22/1140701/shape-shifting-mirrors-roman-space-telescope/",
+      "description": "When NASA’s Nancy Grace Roman Space Telescope launches, as early as the end of next month, it will attempt one of astronomy’s most precise disappearing acts to date. The telescope will carry the first...",
+      "publishedDate": "Wed, 22 Jul 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/260708_RomanCoronagraph.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "キリンとファンケル、サプリメント開発を支援する「錠剤設計AI」を共同開発",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/kirin-fancl-pharmaceutical-ai/",
+      "description": "キリンホールディングスとファンケルは、サプリメントの錠剤設計を支援する「錠剤設計AI」を共同開発しました。複数の物性を予測し、開発の効率化と品質向上を目指します。 このニュースのポイント キリンとファンケルが「錠剤設計A [...] The post キリンとファンケル、サプリメント開発を支援する「錠剤設計AI」を共同開発 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 22 Jul 2026 08:53:24 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/KIRIN-FANCL-pharmaceutical-ai-development.png",
+      "language": "ja"
+    },
+    {
+      "title": "ABEJA、JAXAに宇宙船内ロボット向け音声認識システム提供。宇宙空間のフィジカルAI実装を支援",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/abeja-jaxa-intball2-voice/",
+      "description": "ABEJAは、JAXAから委託を受け、自律飛行型カメラロボット向けの音声認識システムを提供しました。国際宇宙ステーション（ISS）の「きぼう」日本実験棟内での軌道上実証において、宇宙飛行士の音声指示通りにロボットを操作す [...] The post ABEJA、JAXAに宇宙船内ロボット向け音声認識システム提供。宇宙空間のフィジカルAI実装を支援 first appeared on AIポータル...",
+      "publishedDate": "Wed, 22 Jul 2026 08:49:42 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/abeja-jaxa-intball2-voice-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "富士通、大規模言語モデルの大幅なコスト削減を実現するアーキテクチャ「PHOTON」開発。Transformerの最大475倍の出力トークン数を持つ",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/fujitsu-development-photon/",
+      "description": "富士通は、大規模言語モデルの大幅なコスト削減を実現するアーキテクチャであるPHOTONを開発しました。主流基盤であるTransformerの最大475倍のマルチクエリー性能を発揮します。 このニュースのポイント 富士通が [...] The post 富士通、大規模言語モデルの大幅なコスト削減を実現するアーキテクチャ「PHOTON」開発。Transformerの最大475倍の出力トークン数を持つ ...",
+      "publishedDate": "Wed, 22 Jul 2026 08:44:29 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/Parallel-Hierarchical-Operation-for-TOp-down.png",
+      "language": "ja"
+    },
+    {
+      "title": "キッセイコムテック、ペーパーレス会議システムに生成AI活用の資料検索・要約機能を搭載。ANAホールディングスの経営会議で導入",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/kic-smartdiscussion-search-summary/",
+      "description": "キッセイコムテックは、会議支援システム「SmartDiscussion」に生成AIを活用した資料検索・要約機能を搭載しました。AIエンジンに「Claude」を採用し、顧客ごとの専用環境での管理により機密情報の安全性を確保 [...] The post キッセイコムテック、ペーパーレス会議システムに生成AI活用の資料検索・要約機能を搭載。ANAホールディングスの経営会議で導入 first appea...",
+      "publishedDate": "Wed, 22 Jul 2026 08:44:18 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/kic-smartdiscussion-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "【Gemini 3.5 Flash Cyber】Google発サイバーセキュリティ特化AIの性能・仕組み・活用シーンを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/gemini-3-5-flash-cyber/",
+      "description": "2026年7月22日、Google DeepMindはサイバーセキュリティに特化した軽量AIモデル「Gemini 3.5 Flash Cyber」を発表しました！ 同日にはGemini 3.6 FlashやGemini [...]...",
+      "publishedDate": "Wed, 22 Jul 2026 05:32:18 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-3.5-Flash-Cyber-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Introducing OpenAI Presence",
+      "titleJa": "OpenAI プレゼンスの紹介",
+      "link": "https://openai.com/index/introducing-openai-presence",
+      "description": "Introducing OpenAI Presence, a proven enterprise AI agent platform that helps organizations deploy trusted voice and chat agents for customer and internal workflows....",
+      "publishedDate": "Wed, 22 Jul 2026 05:30:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "【Gemini 3.6 Flash・3.5 Flash-Lite】トークン効率と低価格を両立したGoogleの最新AIモデルの性能・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/gemini-3-6-flash-3-5-flash-lite/",
+      "description": "2026年7月22日、GoogleはGeminiシリーズの最新モデル「Gemini 3.6 Flash」と「Gemini 3.5 Flash-Lite」を同時に公開しました！ Gemini 3.6 Flashは「ワークホ [...]...",
+      "publishedDate": "Wed, 22 Jul 2026 05:22:35 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-3.6-Flash・Gemini-3.5-Flash-Lite-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+      "titleJa": "NTT データ グループ、Codex を使用してインシデント分析を 30 分に短縮",
+      "link": "https://openai.com/index/ntt-data",
+      "description": "NTT DATA Group uses ChatGPT Enterprise and Codex to help 9,000 employees automate work, cut incident analysis to 30 minutes, and scale secure AI adoption....",
+      "publishedDate": "Wed, 22 Jul 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
     {
       "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
       "titleJa": "新しい研究では、当社の医療 AI である AMIE が健康状態の管理にどのように役立つかを示しています。",
@@ -33,17 +198,6 @@
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/642ee6f6ffd6084c6a620985/ibA2XHLJsqDH9VAL-3ou-.png",
       "language": "en"
-    },
-    {
-      "title": "中小企業省力化投資補助金で生成AI導入!対象ツールや申請のコツを解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/small-and-medium-enterprise-labor-saving-investment-subsidy/",
-      "description": "近年、さまざまな業界で人手不足が深刻な課題となっています。厚生労働省の「労働経済動向調査（令和8年5月）」では、2026年5月時点の正社員等労働者過不足判断D.I.が、調査産業計で+47ポイント、パートタイムで+27ポイ [...]...",
-      "publishedDate": "Wed, 15 Jul 2026 14:09:38 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Small-and-Medium-Enterprise-Labor-Saving-Investment-Subsidy_2606-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "The US is advancing AI safety through state and federal action",
@@ -266,39 +420,6 @@
       "language": "ja"
     },
     {
-      "title": "GoogleとA24が挑むAI映画制作の未来！技術革新とクリエイティブの融合",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/google-a24-movie-production/",
-      "description": "近年、生成AIの進化は目覚ましく、ついに映画界の最前線にもその波が押し寄せています。数々の革新的ヒット作を生み出してきた映画制作会社「A24」と、世界のテクノロジーを牽引する「Google」。この2つの巨頭が仕掛ける「A [...] The post GoogleとA24が挑むAI映画制作の未来！技術革新とクリエイティブの融合 first appeared on AIポータルメディアAIsmile...",
-      "publishedDate": "Tue, 21 Jul 2026 01:16:25 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/190.png",
-      "language": "ja"
-    },
-    {
-      "title": "OpenAI Daybreakとは？GPT-5.5と28社が挑むAIサイバー防御の全貌",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-daybreak-2/",
-      "description": "生成AIの急速な進化は、私たちのビジネスを効率化する一方で、サイバー攻撃の高度化・高速化という新たな脅威をもたらしています。AIを武器として使う攻撃者は、人間のセキュリティチームをはるかに上回るスピードで動きます。「これ [...] The post OpenAI Daybreakとは？GPT-5.5と28社が挑むAIサイバー防御の全貌 first appeared on AIポータルメディアAI...",
-      "publishedDate": "Tue, 21 Jul 2026 01:16:11 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/189.png",
-      "language": "ja"
-    },
-    {
-      "title": "Geminiプロンプトの書き方完全ガイド｜4要素の基本とビジネス例文集",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gemini-prompt/",
-      "description": "「Geminiに指示を出してみたけれど、無難で一般的な回答しか返ってこない」と感じていないでしょうか。実はそれ、Geminiの性能ではなく、プロンプト（指示文）の書き方に原因があるかもしれません。 この記事では、Goog [...] The post Geminiプロンプトの書き方完全ガイド｜4要素の基本とビジネス例文集 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 21 Jul 2026 01:13:35 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/geminipromptic.webp",
-      "language": "ja"
-    },
-    {
       "title": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
       "titleJa": "David Vélez と Robin Vince が OpenAI Foundation と OpenAI Group PBC の役員に加わります",
       "link": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
@@ -343,28 +464,6 @@
       "language": "en"
     },
     {
-      "title": "How sales teams use ChatGPT Work",
-      "titleJa": "営業チームが ChatGPT Work をどのように使用するか",
-      "link": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
-      "description": "See how sales teams can use ChatGPT Work to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from real work inputs....",
-      "publishedDate": "Tue, 14 Jul 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How data science teams use ChatGPT Work",
-      "titleJa": "データ サイエンス チームが ChatGPT Work を使用する方法",
-      "link": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
-      "description": "See how data science teams can use ChatGPT Work to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs....",
-      "publishedDate": "Tue, 14 Jul 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "From Hugging Face to Amazon SageMaker Studio in one click",
       "titleJa": "ワンクリックで顔のハグから Amazon SageMaker Studio へ",
       "link": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
@@ -376,91 +475,25 @@
       "language": "en"
     },
     {
-      "title": "Hugging Face Models on Foundry Managed Compute",
-      "titleJa": "ファウンドリが管理するコンピューティング上のハグ顔モデル",
-      "link": "https://huggingface.co/blog/microsoft/foundry-managed-compute",
-      "description": "...",
-      "publishedDate": "Tue, 07 Jul 2026 15:20:06 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/688797c1629e0ef013c2556c/Dn2wmfWGM83ZhuQ-C5jPo.png",
-      "language": "en"
-    },
-    {
-      "title": "Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more",
-      "titleJa": "Gemini API の管理対象エージェントの拡張: バックグラウンド タスク、リモート MCP など",
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
-      "description": "Managed agents feature bundle launch...",
-      "publishedDate": "Tue, 07 Jul 2026 08:54:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Managed_agents_feature_bundle_l.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Run AI workloads on any cloud, store on Hugging Face: zero-egress storage with SkyPilot",
-      "titleJa": "AI ワークロードを任意のクラウドで実行し、Hugging Face に保存: SkyPilot を使用したゼロエグレス ストレージ",
-      "link": "https://huggingface.co/blog/skypilot-hf-storage",
-      "description": "...",
-      "publishedDate": "Tue, 07 Jul 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/skypilot-hf-storage/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "LeRobot v0.6.0: Imagine, Evaluate, Improve",
-      "titleJa": "LeRobot v0.6.0: 想像し、評価し、改善する",
-      "link": "https://huggingface.co/blog/lerobot-release-v060",
-      "description": "...",
-      "publishedDate": "Tue, 07 Jul 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/lerobot-release-v060/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Our latest Google Finance upgrades, including a new app",
-      "titleJa": "新しいアプリを含む最新の Google Finance アップグレード",
-      "link": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/",
-      "description": "The Google Finance logo, surrounded by elements of the user interface...",
-      "publishedDate": "Thu, 25 Jun 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Finance_blog_image_June_.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Why teens deserve access to safe AI",
-      "titleJa": "なぜ十代の若者が安全な AI にアクセスする価値があるのか",
-      "link": "https://openai.com/index/why-teens-deserve-access-safe-ai",
-      "description": "Learn how OpenAI is making ChatGPT safer for teens with age-appropriate protections, learning tools, parental controls, and expert partnerships....",
-      "publishedDate": "Thu, 16 Jul 2026 16:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "ChatGPTがエラーばかり！？原因と使えないときの対処法を徹底解説",
+      "title": "「AI博覧会 Summer 2026」カンファレンス第1弾スピーカーを発表！二足歩行ヒューマノイドのドーナッツロボティクス、国産LLM「PLaMo」のPreferred Networksが登壇",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chatgpt-error/",
-      "description": "ChatGPTで「Something went wrong」や「Network Error」が表示され、急に使えなくなって困っていませんか？ChatGPTのエラーは、サーバーの混雑や通信環境などが原因で発生することが多く [...]...",
-      "publishedDate": "Thu, 16 Jul 2026 14:33:01 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/ChatGPT-error_2607-1024x576.webp",
+      "link": "https://aismiley.co.jp/ai_news/aihaku-sum2026-1stsp/",
+      "description": "Google・サイバーエージェント・GMOペパボもAI活用の最前線を解説 国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年8月26日（水）・27日（木）の2日間、新宿住友 [...] The post 「AI博覧会 Summer 2026」カンファレンス第1弾スピーカーを発表！二足歩行ヒューマノイドのドーナッツロボティクス、国産LLM「PLaMo」...",
+      "publishedDate": "Thu, 23 Jul 2026 04:00:35 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/aihakurankaisummer_speaker01.png",
       "language": "ja"
     },
     {
-      "title": "【Claude Code Artifacts×MCP】外部ツール連携でセッション成果を即共有！MCPコネクタ対応を徹底解説",
+      "title": "【Qwen-Image-3.0】文字も図表も1枚に収めるアリババの画像生成AIの実力を徹底解説！",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code-artifacts-mcp/",
-      "description": "Claude Code ArtifactsのMCPコネクタ対応は、Anthropicが提供するCLI開発ツール「Claude Code」のセッション成果物に、GitHubやSentry、Jiraなど外部ツールのデータを統 [...]...",
-      "publishedDate": "Thu, 16 Jul 2026 04:13:06 +0000",
+      "link": "https://weel.co.jp/media/tech/qwen-image-3-0/",
+      "description": "2026年7月22日、アリババのAI研究チーム「Qwen」が画像生成AIの第3世代モデル「Qwen-Image-3.0」をリリースしました！ 前世代のQwen-Image-2.0が約1,000トークンだった入力上限を、一 [...]...",
+      "publishedDate": "Thu, 23 Jul 2026 03:05:16 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-Artifacts-MCP_2607-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen-Image-3.0-1024x576.webp",
       "language": "ja"
     },
     {
@@ -519,36 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "ELYZA、三井住友カードで「入会審査自動判定AI」運用開始。従来審査の20％を自動化し対応時間を短縮",
+      "title": "アトラシアン、JiraがAIによる要件定義の自動作成、コンテキストを保持しつつタスクをClaudeやCopilotなどのAIエージェントへアサインなど新機能",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/elyza-smcc-screening-ai/",
-      "description": "ELYZAは、三井住友カードの入会審査業務において、機械学習を活用した「入会審査自動判定AI」の運用を開始しました。担当者が目視対応していた一部の審査プロセスを自動化し、迅速な審査結果通知と業務負担の削減を実現します。 [...] The post ELYZA、三井住友カードで「入会審査自動判定AI」運用開始。従来審査の20％を自動化し対応時間を短縮 first appeared on AIポータ...",
-      "publishedDate": "Fri, 17 Jul 2026 07:09:22 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/elyza-smcc-screening-ai-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "ノーベル賞受賞者16名含む経済学者ら200名超、AIによる経済変革への警告・対応求める声明発表",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/stanford-ai-transformation-economy/",
-      "description": "ノーベル賞受賞者16名を含む200名以上の経済学者・研究者らは、AIによる経済変革への警告と対応を呼びかける声明「We Must Act Now」を発表しました。 このニュースのポイント ノーベル賞受賞者16名を含む20 [...] The post ノーベル賞受賞者16名含む経済学者ら200名超、AIによる経済変革への警告・対応求める声明発表 first appeared on AIポータルメデ...",
-      "publishedDate": "Fri, 17 Jul 2026 07:08:44 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/stanford-Sixteen-Nobel-Laureates-AIs-Economic-Transformation.png",
-      "language": "ja"
-    },
-    {
-      "title": "【Kimi K3】Claude Fable 5に迫るオープンモデルの性能・仕組み・活用シーンを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/kimi-k3/",
-      "description": "2026年7月17日、Moonshot AIは次世代フラッグシップモデル「Kimi K3」を正式に公開しました！ Kimi K3は2.8兆（2.8T）パラメータを持つ世界初の3T級オープンモデルで、コーディングベンチマー [...]...",
-      "publishedDate": "Fri, 17 Jul 2026 05:03:21 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/jiraaiclaudecopilotai.html",
+      "description": "アトラシアンは、プロジェクト管理ツールとして知られるJiraに生成AI機能を組み込み、AIによる要件定義の自動作成、作業すべきタスクの洗い出し、そして各タスクをClaude CodeやGitHub Copilotなどへ割り当てる新機能を発表......",
+      "publishedDate": "2026-07-22T15:35:19Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Kimi-K3-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/jira-planner01.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/multigres-v01.png",
-      "language": "ja"
-    },
-    {
-      "title": "PostgreSQL 19ベータ版が登場。I/Oワーカーの自動スケール、Autovacuumの改善など新機能",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/postgresql_19ioautovacuum.html",
-      "description": "オープンソースのリレーショナルデータベース「PostgreSQL 19」のベータ版が先月（2026年6月）にリリースされています。 PostgreSQLは高い拡張性や信頼性を特徴としており、ITエンジニアのコミュニティであるStackove......",
-      "publishedDate": "2026-07-08T15:31:27Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/postgresql19beta.png",
       "language": "ja"
     }
   ]
