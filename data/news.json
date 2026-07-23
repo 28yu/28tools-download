@@ -1,6 +1,36 @@
 {
-  "lastUpdated": "2026-07-22T01:51:09.621951",
+  "lastUpdated": "2026-07-23T01:56:28.404701",
   "articles": [
+    {
+      "title": "【2026年最新版】建築確認申請が不要な建物とは？10㎡以下・カーポート・小屋・倉庫の基準を徹底解説",
+      "link": "https://news.build-app.jp/article/37964/",
+      "description": "家の庭に「ちょっとした小屋やカーポートをつくりたい」と考えたとき、気になるのが建築確認申請が必要かどうかという点です。 建築確認申請は、建物......",
+      "publishedDate": "Wed, 22 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/11/b3d710fed3dc407b42dc23b1644ace70-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIで間取り図を作ったら、次は何をすべき？DXF変換術",
+      "link": "https://axconstdx.com/2026/07/22/%e7%94%9f%e6%88%90ai%e3%81%a7%e9%96%93%e5%8f%96%e3%82%8a%e5%9b%b3%e3%82%92%e4%bd%9c%e3%81%a3%e3%81%9f%e3%82%89%e3%80%81%e6%ac%a1%e3%81%af%e4%bd%95%e3%82%92%e3%81%99%e3%81%b9%e3%81%8d%ef%bc%9fdxf/?utm_source=rss&utm_medium=rss&utm_campaign=%25e7%2594%259f%25e6%2588%2590ai%25e3%2581%25a7%25e9%2596%2593%25e5%258f%2596%25e3%2582%258a%25e5%259b%25b3%25e3%2582%2592%25e4%25bd%259c%25e3%2581%25a3%25e3%2581%259f%25e3%2582%2589%25e3%2580%2581%25e6%25ac%25a1%25e3%2581%25af%25e4%25bd%2595%25e3%2582%2592%25e3%2581%2599%25e3%2581%25b9%25e3%2581%258d%25ef%25bc%259fdxf",
+      "description": "生成AIで作った間取り図は美しく見えますが、そのままではCADで編集できない壁にぶつかります。本記事では、誰でも実装できるOpenCVやOCR、Pythonを組み合わせた方法で、AIが生成した画像を自由に編集できるDXF [...] <p>The post 生成AIで間取り図を作ったら、次は何をすべき？DXF変換術 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Wed, 22 Jul 2026 08:56:17 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100kb-9-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "CELBIC研究会、環境配慮型BFコンクリートの建設材料技術性能証明を改定",
+      "link": "https://news.build-app.jp/article/41734/",
+      "description": "長谷工コーポレーションを幹事社とする13社で構成されるCELBIC研究会※は、環境に配慮したコンクリート「CELBIC(セルビック)」に関す......",
+      "publishedDate": "Wed, 22 Jul 2026 04:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/celbic_environmental-90x130.jpg",
+      "language": "ja"
+    },
     {
       "title": "鹿島が演算工房を子会社化、建設ICTの内製化と自動化施工技術を強化へ、現場対応力を向上",
       "link": "https://news.build-app.jp/article/41689/",
@@ -59,26 +89,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/1aa1de407e28401cc61196ba5706fe6b-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "Fable 5とGPT-5.6 Solの役割分担で、AI利用コストを40%削減する方法",
-      "link": "https://axconstdx.com/2026/07/14/fable-5%e3%81%a8gpt-5-6-sol%e3%81%ae%e5%bd%b9%e5%89%b2%e5%88%86%e6%8b%85%e3%81%a7%e3%80%81ai%e5%88%a9%e7%94%a8%e3%82%b3%e3%82%b9%e3%83%88%e3%82%9240%e5%89%8a%e6%b8%9b%e3%81%99%e3%82%8b%e6%96%b9/?utm_source=rss&utm_medium=rss&utm_campaign=fable-5%25e3%2581%25a8gpt-5-6-sol%25e3%2581%25ae%25e5%25bd%25b9%25e5%2589%25b2%25e5%2588%2586%25e6%258b%2585%25e3%2581%25a7%25e3%2580%2581ai%25e5%2588%25a9%25e7%2594%25a8%25e3%2582%25b3%25e3%2582%25b9%25e3%2583%2588%25e3%2582%259240%25e5%2589%258a%25e6%25b8%259b%25e3%2581%2599%25e3%2582%258b%25e6%2596%25b9",
-      "description": "「高性能AIは使いたいけど、コストが膨らみ続ける」—建設・製造業のIT担当者なら、この悩みは他人事ではありません。実は、2つのAIを役割分担させ、JSONで連携させるだけで、品質を落とさずにコストを40%削減できる方法が [...] <p>The post Fable 5とGPT-5.6 Solの役割分担で、AI利用コストを40%削減する方法 first appeared on 生成AIと建設DX...",
-      "publishedDate": "Tue, 14 Jul 2026 05:26:33 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-under100KB-1-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年版】有機溶剤作業主任者とは？｜仕事内容・技能講習・受講資格・難易度をわかりやすく解説",
-      "link": "https://news.build-app.jp/article/41619/",
-      "description": "建設現場や工場、塗装業などで「有機溶剤作業主任者」という資格を求められたものの、「どのような資格なの？」「国家資格なの？」「誰でも取得できる......",
-      "publishedDate": "Thu, 16 Jul 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/dad2882c03d603e1ee29bf08e5992f4a-130x82.png",
       "language": "ja"
     },
     {
@@ -189,16 +199,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/taisei_square_hanoi-130x42.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "熊谷組、統合ERP建設WAO導入で契約・請求の電子化99％超を達成、支払期間を約2週間短縮",
-      "link": "https://news.build-app.jp/article/41642/",
-      "description": "熊谷組は、統合型ERP「建設WAO」をすべての工事案件で本格運用し、取引先との契約および請求における電子化率が年間平均で99％を超えたことを......",
-      "publishedDate": "Fri, 17 Jul 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/08/qFpmeS3YnvKoibe1659590131_1659590146-130x82.jpg",
       "language": "ja"
     }
   ]
