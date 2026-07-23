@@ -1705,6 +1705,7 @@ h1.main-title,
 .sidebar-nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
     background: transparent;
