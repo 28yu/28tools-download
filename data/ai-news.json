@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T04:16:17.516145",
+  "lastUpdated": "2026-07-24T04:15:20.023465",
   "articles": [
     {
       "title": "生成AIで社内マニュアル作成を効率化！ChatGPTでの作り方やプロンプトを徹底解説",
@@ -112,17 +112,6 @@
       "language": "ja"
     },
     {
-      "title": "キッセイコムテック、ペーパーレス会議システムに生成AI活用の資料検索・要約機能を搭載。ANAホールディングスの経営会議で導入",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kic-smartdiscussion-search-summary/",
-      "description": "キッセイコムテックは、会議支援システム「SmartDiscussion」に生成AIを活用した資料検索・要約機能を搭載しました。AIエンジンに「Claude」を採用し、顧客ごとの専用環境での管理により機密情報の安全性を確保 [...] The post キッセイコムテック、ペーパーレス会議システムに生成AI活用の資料検索・要約機能を搭載。ANAホールディングスの経営会議で導入 first appea...",
-      "publishedDate": "Wed, 22 Jul 2026 08:44:18 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/kic-smartdiscussion-main.png",
-      "language": "ja"
-    },
-    {
       "title": "【Gemini 3.5 Flash Cyber】Google発サイバーセキュリティ特化AIの性能・仕組み・活用シーンを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/gemini-3-5-flash-cyber/",
@@ -205,17 +194,6 @@
       "link": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
       "description": "OpenAI outlines a “reverse federalism” approach to AI governance, where state laws help build a national framework for safe, democratic AI....",
       "publishedDate": "Wed, 15 Jul 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
-      "titleJa": "GPT-Red: 堅牢性のための自己改善のロックを解除する",
-      "link": "https://openai.com/index/unlocking-self-improvement-gpt-red",
-      "description": "Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness....",
-      "publishedDate": "Wed, 15 Jul 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -343,39 +321,6 @@
       "language": "en"
     },
     {
-      "title": "ソフトバンクと安川電機、「AIデータセンターGPUクラウド」を活用し、柔軟物体ハンドリングシステムを実証",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/softbank-yasukawa-handling-system/",
-      "description": "ソフトバンクと安川電機は、NVIDIAの技術を活用した「AIデータセンター GPUクラウド」をフィジカルAIの開発基盤として活用し、ワイヤーハーネスを対象とした「柔軟物体ハンドリングシステム」の実証を行いました。 このニ [...] The post ソフトバンクと安川電機、「AIデータセンターGPUクラウド」を活用し、柔軟物体ハンドリングシステムを実証 first appeared on AIポ...",
-      "publishedDate": "Tue, 21 Jul 2026 09:21:31 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/softbank-yasukawa-ai-data-center-gpu-cloud.png",
-      "language": "ja"
-    },
-    {
-      "title": "Anthropic、Slack上で動作する新機能「Claude Tag」発表。チーム利用可能で自律的にタスクを処理",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/anthropic-slack-claude-tag-release/",
-      "description": "Anthropicは、Slack上で自律的にタスクを処理する新機能「Claude Tag」を発表しました。「Claude Enterprise」および「Team」プランを利用している企業向けにベータ版として提供されます。 [...] The post Anthropic、Slack上で動作する新機能「Claude Tag」発表。チーム利用可能で自律的にタスクを処理 first appeared o...",
-      "publishedDate": "Tue, 21 Jul 2026 09:07:36 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/ClaudeTageye.png",
-      "language": "ja"
-    },
-    {
-      "title": "Noetra、国産マルチモーダル基盤モデルの研究開発を本格始動。ソニー・SB・NEC・ホンダなどと連携",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/noetra-domestic-multimodal-model/",
-      "description": "Noetraは、ソニーグループやソフトバンク、日本電気、本田技研工業ほかパートナー企業と連携し、国産マルチモーダル基盤モデルの研究開発を本格始動します。 このニュースのポイント Noetraが中核企業や産総研などと連携し [...] The post Noetra、国産マルチモーダル基盤モデルの研究開発を本格始動。ソニー・SB・NEC・ホンダなどと連携 first appeared on AIポー...",
-      "publishedDate": "Tue, 21 Jul 2026 09:06:29 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/noetra-domestic-multimodal-model-main.png",
-      "language": "ja"
-    },
-    {
       "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
       "titleJa": "OpenAI と Hugging Face が提携してモデル評価中のセキュリティ インシデントに対処",
       "link": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
@@ -395,28 +340,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.8-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Grokプロンプトの書き方完全ガイド｜業務で使える例文集と作り方のコツ",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/grok-prompt-guide/",
-      "description": "「Grokをビジネスに導入したものの、ChatGPTと同じプロンプトを入れてしまい、思ったような成果が出ない」。そう悩んでいるDX担当者やマーケティング担当者の方は多いのではないでしょうか。 GrokはX（旧Twitte [...] The post Grokプロンプトの書き方完全ガイド｜業務で使える例文集と作り方のコツ first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 21 Jul 2026 01:28:59 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/grokpromptguideic.webp",
-      "language": "ja"
-    },
-    {
-      "title": "サイバーセキュリティのAI自動化とは？メリット・セキュリティ戦略を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/cyber-security-ai-automation-2026/",
-      "description": "サイバー攻撃の高度化・巧妙化が進む中、企業のセキュリティ担当者の負担は増大する一方です。「人手不足で監視が追いつかない」「未知の脅威に対応できない」とお悩みではありませんか？ その解決策として今最も注目されているのが、「 [...] The post サイバーセキュリティのAI自動化とは？メリット・セキュリティ戦略を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 21 Jul 2026 01:16:41 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/cybersecurity.png",
       "language": "ja"
     },
     {
@@ -453,17 +376,6 @@
       "language": "en"
     },
     {
-      "title": "How to manage AI investments in the agentic era",
-      "titleJa": "エージェント時代の AI 投資を管理する方法",
-      "link": "https://openai.com/index/managing-ai-investments-in-agentic-era",
-      "description": "Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows....",
-      "publishedDate": "Tue, 14 Jul 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "From Hugging Face to Amazon SageMaker Studio in one click",
       "titleJa": "ワンクリックで顔のハグから Amazon SageMaker Studio へ",
       "link": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
@@ -473,6 +385,116 @@
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/68abb71b13d7773ad97e9035/f1nX3dXVmvJcQzJfgfpnJ.webp",
       "language": "en"
+    },
+    {
+      "title": "Hugging Face Models on Foundry Managed Compute",
+      "titleJa": "ファウンドリが管理するコンピューティング上のハグ顔モデル",
+      "link": "https://huggingface.co/blog/microsoft/foundry-managed-compute",
+      "description": "...",
+      "publishedDate": "Tue, 07 Jul 2026 15:20:06 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/688797c1629e0ef013c2556c/Dn2wmfWGM83ZhuQ-C5jPo.png",
+      "language": "en"
+    },
+    {
+      "title": "Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more",
+      "titleJa": "Gemini API の管理対象エージェントの拡張: バックグラウンド タスク、リモート MCP など",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
+      "description": "Managed agents feature bundle launch...",
+      "publishedDate": "Tue, 07 Jul 2026 08:54:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Managed_agents_feature_bundle_l.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Perplexityに学習させない設定手順と情報漏洩を防ぐセキュリティ対策を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/prevent-perplexity-from-using-data-for-training/",
+      "description": "日々のリサーチや文書作成に、最新情報がすぐ手に入るAI検索サービスPerplexity（パープレキシティ）を活用している方は多いのではないでしょうか。ただし、便利さの一方で「仕事の機密データを入力しても大丈夫か」「自分の [...]...",
+      "publishedDate": "Thu, 23 Jul 2026 08:56:15 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Prevent-Perplexity-from-using-data-for-training_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTに聞いてはいけないこと7選！情報漏えいを防ぐNG行為を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/things-you-shouldnt-ask-chatgpt/",
+      "description": "ChatGPTはOpenAIが開発した対話型AIです。文章作成やアイデア出しなど、仕事から日常生活まで幅広い場面で活用されていますが、入力内容によっては情報漏えいなどのリスクがあることをご存じでしょうか？ この記事では、 [...]...",
+      "publishedDate": "Thu, 23 Jul 2026 08:30:13 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Things-You-Shouldnt-Ask-ChatGPT_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "フォーティエンス、財務課題をAIで可視化する「次世代トレジャリー対面型クイック診断」提供開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/fortience-treasury-quick-assessment/",
+      "description": "フォーティエンスコンサルティングは、財務課題を即座に可視化する「次世代トレジャリー対面型クイック診断」の提供を開始しました。生成AIで作成した体験画面で、将来のキャッシュフロー管理の具体像を提示します。 このニュースのポ [...] The post フォーティエンス、財務課題をAIで可視化する「次世代トレジャリー対面型クイック診断」提供開始 first appeared on AIポータルメディ...",
+      "publishedDate": "Thu, 23 Jul 2026 08:16:58 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/fortience-treasury-quick-assessment.png",
+      "language": "ja"
+    },
+    {
+      "title": "町田市、AI活用資源循環モデルの実証実験開始。LINEで写真送るとごみ分別を判定、収集現場のDX化も推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/machida-ai-garbage-separation/",
+      "description": "町田市は、電気通信大学とBorzoi AIの協力により、AI技術を活用した次世代型資源循環モデルの実証実験を開始します。市民向けの直感的な分別を支援し、収集現場のDX化を推進します。 このニュースのポイント 町田市、電通 [...] The post 町田市、AI活用資源循環モデルの実証実験開始。LINEで写真送るとごみ分別を判定、収集現場のDX化も推進 first appeared on AIポ...",
+      "publishedDate": "Thu, 23 Jul 2026 08:13:36 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/machida-ai-garbage-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "みずほFG、金融機関向けAI活用基盤高度化の検討を開始。AIエージェント活用拡大に向けNVIDIA技術を活用",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/mizuho-nvidia-ai-infrastructure/",
+      "description": "みずほフィナンシャルグループは、NVIDIAの技術を活用し、金融機関向けAI活用基盤の高度化に向けた検討を開始しました。高性能な計算基盤の強化とセキュアな実行環境の技術検証を推進し、機密情報を厳格に保護しながら、AIエー [...] The post みずほFG、金融機関向けAI活用基盤高度化の検討を開始。AIエージェント活用拡大に向けNVIDIA技術を活用 first appeared on A...",
+      "publishedDate": "Thu, 23 Jul 2026 08:10:14 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/mizuho-nvidia-ai-infra-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "STATION Ai、製造業向けデータ収集センター設立。フィジカルAIの社会実装を加速",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/station-ai-data-foundry/",
+      "description": "STATION Aiは、製造業におけるフィジカルAIの社会実装を加速させるため、データ収集センター「STATION Ai Data Foundry」を設立しました。2026年12月の稼働開始を目指します。 このニュースの [...] The post STATION Ai、製造業向けデータ収集センター設立。フィジカルAIの社会実装を加速 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Thu, 23 Jul 2026 08:10:04 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/STATIONAI-Date-center.png",
+      "language": "ja"
+    },
+    {
+      "title": "ビジネス職のAI活用調査を実施。AIエージェント化で生産性が上がったのは54%でチャット層の約3.8倍",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-agent-productivity-report/",
+      "description": "GiftXが、「ビジネス職生成AI活用実態調査（2026年版）」の結果を発表しました。AIエージェント化している層の54%は生産性が「明確に上がった」と回答しており、チャット止まり層の3.8倍となりました。 このニュース [...] The post ビジネス職のAI活用調査を実施。AIエージェント化で生産性が上がったのは54%でチャット層の約3.8倍 first appeared on AIポー...",
+      "publishedDate": "Thu, 23 Jul 2026 08:04:51 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/ai-agent-productivity-report-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "AIOpsとは？IT運用の未来を変える仕組みと次世代ツールの選び方",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/aiops-devops-mlops-it/",
+      "description": "クラウドとオンプレミスが混在し、システムが複雑になるほど、運用の現場は膨大なログやアラートへの対応に追われがちです。こうした課題への対策として注目されているのが、AI（人工知能）でIT運用を高度化するAIOpsです。 A [...] The post AIOpsとは？IT運用の未来を変える仕組みと次世代ツールの選び方 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Thu, 23 Jul 2026 07:42:12 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/aiops.jpg",
+      "language": "ja"
     },
     {
       "title": "「AI博覧会 Summer 2026」カンファレンス第1弾スピーカーを発表！二足歩行ヒューマノイドのドーナッツロボティクス、国産LLM「PLaMo」のPreferred Networksが登壇",
@@ -530,25 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "中小企業のAI導入支援とは？費用・補助金・失敗しない会社の選び方を解説",
+      "title": ".NET MAUI、iOS/AndoridのランタイムがMonoからCoreCLRに更新、開発者は動作確認を。.NET 11 Preview 6が公開",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/small-and-medium-sized-enterprises-ai-introduction-support/",
-      "description": "AI導入支援は、中小企業がAIを活用して業務効率化や生産性向上を実現するためのサポートサービスです。とはいえ、「何から始めればいいのかわからない」「導入費用はどのくらいかかるの？」「自社に合った支援会社はどう選べばいい？ [...]...",
-      "publishedDate": "Fri, 17 Jul 2026 12:04:10 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/net_mauiiosandoridmonocoreclrnet_11_preview_6.html",
+      "description": "マイクロソフトは今秋リリース予定の包括的フレームワーク「Microsoft .NET」のプレビュー版となる「Microsoft .NET 11 Preview 6」（以下、.NET Preview 6）を公開しました。 .NET 11 Pr......",
+      "publishedDate": "2026-07-23T18:22:56Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Small-and-medium-sized-enterprises-AI-introduction-support_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "RAG構築とは？仕組み・作り方・社内導入の注意点を実演付きで解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/rag-implementation/",
-      "description": "RAG構築は、社内文書やFAQなどを検索し、その内容をもとに生成AIが回答する仕組みを作る取り組みです。一般的なLLMだけでは、社内規程や最新情報に答えにくい場面があります。 「何から作ればよいのか」「情報漏えいは防げる [...]...",
-      "publishedDate": "Fri, 17 Jul 2026 11:24:08 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/RAG-Implementation_2606-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/HNqor1UWEAAWHL2.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/qFZWff4P.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "PostgreSQLをクラスタ化した分散DBでスケーリングと高可用性を実現する「Multigres v0.1」アルファ版が登場",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/postgresqldbmultigres_v01.html",
-      "description": "PostgreSQLをベースにしたBaaS（Backend as a Service）の「Supabase」を開発し提供しているSupabase社は、複数のPostgreSQLをクラスタ化することでデータベースの水平スケールと高可用性などを......",
-      "publishedDate": "2026-07-08T15:33:17Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/multigres-v01.png",
       "language": "ja"
     }
   ]
