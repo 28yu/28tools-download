@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T01:56:28.404701",
+  "lastUpdated": "2026-07-24T01:52:03.332288",
   "articles": [
     {
       "title": "【2026年最新版】建築確認申請が不要な建物とは？10㎡以下・カーポート・小屋・倉庫の基準を徹底解説",
@@ -9,6 +9,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/11/b3d710fed3dc407b42dc23b1644ace70-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "豊洲「千客万来」を解説｜見所や施設概要",
+      "link": "https://news.build-app.jp/article/41751/",
+      "description": "トレンドワード：豊洲・千客万来 豊洲「千客万来」は、豊洲市場に隣接して整備された商業・観光施設です。施設内には飲食店や物販店が集まる豊洲場外......",
+      "publishedDate": "Wed, 22 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/fd3dfa90735d4766460afadcddcb0c44-130x82.png",
       "language": "ja"
     },
     {
@@ -52,16 +62,6 @@
       "language": "ja"
     },
     {
-      "title": "ARES CommanderのBIM機能",
-      "link": "https://axconstdx.com/2026/07/15/ares-commander%e3%81%aebim%e6%a9%9f%e8%83%bd/?utm_source=rss&utm_medium=rss&utm_campaign=ares-commander%25e3%2581%25aebim%25e6%25a9%259f%25e8%2583%25bd",
-      "description": "BIMモデルが更新されるたびに図面の注釈を打ち直し、寸法もラベルも消えて同じ作業を繰り返していませんか。そんな徒労感からARES CADの「リロード」機能は解放してくれますので、本記事でその仕組みを一緒に見ていきましょう [...] <p>The post ARES CommanderのBIM機能 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Wed, 15 Jul 2026 07:53:29 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-2-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "国土交通省、PLATEAUビジョン2026を公表、都市デジタルツインの新戦略を策定",
       "link": "https://news.build-app.jp/article/41681/",
       "description": "国土交通省は、3D都市モデルの整備・活用・オープンデータ化を進める「Project PLATEAU」の今後の方針として、「PLATEAUビジ......",
@@ -82,13 +82,53 @@
       "language": "ja"
     },
     {
-      "title": "保護中: 【2026年】すぐに使える！工事現場の熱中症対策グッズ｜暑さ対策におすすめ",
-      "link": "https://news.build-app.jp/article/41657/",
-      "description": "この投稿はパスワードで保護されているため抜粋文はありません。...",
-      "publishedDate": "Tue, 21 Jul 2026 00:48:07 +0000",
+      "title": "勾配の計算方法は？｜計算式・角度・パーセント（％）への換算方法をわかりやすく解説",
+      "link": "https://news.build-app.jp/article/41745/",
+      "description": "「勾配はどうやって計算する？」「1/100勾配は何％？」「パーセントを角度にすると何度？」と疑問に感じている方も多いのではないでしょうか。 ......",
+      "publishedDate": "Thu, 23 Jul 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/1aa1de407e28401cc61196ba5706fe6b-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/58f0c2370e823e6d6ce878b56e7f5dbc-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "AIに『完全に』丸投げできる工程設計とは？20年DX経験から解く",
+      "link": "https://axconstdx.com/2026/07/24/ai%e3%81%ab%e3%80%8e%e5%ae%8c%e5%85%a8%e3%81%ab%e3%80%8f%e4%b8%b8%e6%8a%95%e3%81%92%e3%81%a7%e3%81%8d%e3%82%8b%e5%b7%a5%e7%a8%8b%e8%a8%ad%e8%a8%88%e3%81%a8%e3%81%af%ef%bc%9f20%e5%b9%b4dx%e7%b5%8c/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e3%2581%25ab%25e3%2580%258e%25e5%25ae%258c%25e5%2585%25a8%25e3%2581%25ab%25e3%2580%258f%25e4%25b8%25b8%25e6%258a%2595%25e3%2581%2592%25e3%2581%25a7%25e3%2581%258d%25e3%2582%258b%25e5%25b7%25a5%25e7%25a8%258b%25e8%25a8%25ad%25e8%25a8%2588%25e3%2581%25a8%25e3%2581%25af%25ef%25bc%259f20%25e5%25b9%25b4dx%25e7%25b5%258c",
+      "description": "AIに仕事を丸投げしたとき、進捗は進んでいるのに「本当にこれで大丈夫？」という不安が頭から離れない経験はありませんか。でも、一つの「設計法」を身につければ、その不安は消え去り、自信を持ってAIに仕事を任せることができるよ [...] <p>The post AIに『完全に』丸投げできる工程設計とは？20年DX経験から解く first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Thu, 23 Jul 2026 20:51:19 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100KB-12-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "東急建設、プレキャストPC床版向け継手工法TAP-ONEジョイント開発、省力化・省人化を推進",
+      "link": "https://news.build-app.jp/article/41775/",
+      "description": "東急建設（本社：東京都渋谷区、社長：久田浩司氏）は、株式会社安部日鋼工業（本社：岐阜県岐阜市、代表取締役社長：井手口哲朗氏）と共同で、プレキ......",
+      "publishedDate": "Thu, 23 Jul 2026 05:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/tap_one_joint-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "保護中: 【2026年版】ファン付き作業服のおすすめランキング｜現場で選ばれるモデルと失敗しない選び方",
+      "link": "https://news.build-app.jp/article/41708/",
+      "description": "この投稿はパスワードで保護されているため抜粋文はありません。...",
+      "publishedDate": "Thu, 23 Jul 2026 04:43:54 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/1da9a04dea0918f5fdf7e26889bd76d5-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "戸田建設、AIで安全教訓を即座に提示するチャットボットを開発、現場の安全管理を支援",
+      "link": "https://news.build-app.jp/article/41765/",
+      "description": "戸田建設は、株式会社HACARUSの協力を得て、社内に蓄積されてきた膨大な安全・品質情報を、大規模言語モデルを活用した生成AIによって検索・......",
+      "publishedDate": "Thu, 23 Jul 2026 03:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/toda_safety_chatbot-130x52.jpg",
       "language": "ja"
     },
     {
@@ -152,36 +192,6 @@
       "language": "ja"
     },
     {
-      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第七回)｜深堀り取材【毎月3回更新】",
-      "link": "https://news.build-app.jp/article/41573/",
-      "description": "建設業における設計や施工現場のみならず建設後の施設管理においてもAI援用の動きが急速に広がっている。 本稿では、アケボノのAI技術を活用して......",
-      "publishedDate": "Mon, 20 Jul 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/e7d825e27ff4c9bbf3c78588a003b5f5-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新】経審（経営事項審査）とは？｜点数・申請の流れ・費用・必要書類をわかりやすく解説",
-      "link": "https://news.build-app.jp/article/41668/",
-      "description": "「経審とは何？」「公共工事を受注するには必ず受ける必要があるの？」「何点あれば入札に参加できる？」と疑問に感じている方も多いのではないでしょ......",
-      "publishedDate": "Mon, 20 Jul 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/3ac389f0987d4e4b17f1a42013d9ac5b-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "建築士資格とは？受験要件の変化と企業の採用・育成ポイント",
-      "link": "https://news.build-app.jp/article/41651/",
-      "description": "建築士資格者の採用が難しく、確認申請や設計監理を一部の社員に頼っている企業は多いのではないでしょうか。 しかし、近年では、建築士試験は受験要......",
-      "publishedDate": "Mon, 20 Jul 2026 14:50:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/32470879_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "Revitレンダリングの次を選ぶ — 提案資料に最適なツール完全ガイド",
       "link": "https://axconstdx.com/2026/07/17/revit%e3%83%ac%e3%83%b3%e3%83%80%e3%83%aa%e3%83%b3%e3%82%b0%e3%81%ae%e6%ac%a1%e3%82%92%e9%81%b8%e3%81%b6-%e6%8f%90%e6%a1%88%e8%b3%87%e6%96%99%e3%81%ab%e6%9c%80%e9%81%a9%e3%81%aa%e3%83%84/?utm_source=rss&utm_medium=rss&utm_campaign=revit%25e3%2583%25ac%25e3%2583%25b3%25e3%2583%2580%25e3%2583%25aa%25e3%2583%25b3%25e3%2582%25b0%25e3%2581%25ae%25e6%25ac%25a1%25e3%2582%2592%25e9%2581%25b8%25e3%2581%25b6-%25e6%258f%2590%25e6%25a1%2588%25e8%25b3%2587%25e6%2596%2599%25e3%2581%25ab%25e6%259c%2580%25e9%2581%25a9%25e3%2581%25aa%25e3%2583%2584",
       "description": "設計提案で「競争力の差」が最も明確に出る瞬間があります。それは、クライアントがビジュアル資料を見た瞬間。あなたのRevit標準レンダリングで十分だと思っていませんか？実務者が選ぶTwinmotionとD5 Renderで [...] <p>The post Revitレンダリングの次を選ぶ — 提案資料に最適なツール完全ガイド first appeared on 生成AIと建設DX.</p>...",
@@ -189,16 +199,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/revit_rendering_1200x630_under100KB-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大成建設運営の大成スクエアハノイ、LEED O+M認証で最高ランクPlatinumを取得",
-      "link": "https://news.build-app.jp/article/41645/",
-      "description": "大成建設（社長：相川善郎）は、ベトナムの首都ハノイで運営するオフィスビル「TAISEI SQUARE HANOI（大成スクエアハノイ）」につ......",
-      "publishedDate": "Fri, 17 Jul 2026 05:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/taisei_square_hanoi-130x42.jpg",
       "language": "ja"
     }
   ]
