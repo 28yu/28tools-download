@@ -1,16 +1,6 @@
 {
-  "lastUpdated": "2026-07-24T01:52:03.332288",
+  "lastUpdated": "2026-07-25T01:51:43.450583",
   "articles": [
-    {
-      "title": "【2026年最新版】建築確認申請が不要な建物とは？10㎡以下・カーポート・小屋・倉庫の基準を徹底解説",
-      "link": "https://news.build-app.jp/article/37964/",
-      "description": "家の庭に「ちょっとした小屋やカーポートをつくりたい」と考えたとき、気になるのが建築確認申請が必要かどうかという点です。 建築確認申請は、建物......",
-      "publishedDate": "Wed, 22 Jul 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/11/b3d710fed3dc407b42dc23b1644ace70-130x82.png",
-      "language": "ja"
-    },
     {
       "title": "豊洲「千客万来」を解説｜見所や施設概要",
       "link": "https://news.build-app.jp/article/41751/",
@@ -19,6 +9,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/fd3dfa90735d4766460afadcddcb0c44-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新版】建築確認申請が不要な建物とは？10㎡以下・カーポート・小屋・倉庫の基準を徹底解説",
+      "link": "https://news.build-app.jp/article/37964/",
+      "description": "家の庭に「ちょっとした小屋やカーポートをつくりたい」と考えたとき、気になるのが建築確認申請が必要かどうかという点です。 建築確認申請は、建物......",
+      "publishedDate": "Wed, 22 Jul 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/11/b3d710fed3dc407b42dc23b1644ace70-130x82.png",
       "language": "ja"
     },
     {
@@ -62,26 +62,6 @@
       "language": "ja"
     },
     {
-      "title": "国土交通省、PLATEAUビジョン2026を公表、都市デジタルツインの新戦略を策定",
-      "link": "https://news.build-app.jp/article/41681/",
-      "description": "国土交通省は、3D都市モデルの整備・活用・オープンデータ化を進める「Project PLATEAU」の今後の方針として、「PLATEAUビジ......",
-      "publishedDate": "Tue, 21 Jul 2026 06:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/plateau-vision-2026-urban-130x53.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、5月の建設出来高は4兆7,998億円、民間・公共とも前年を上回る",
-      "link": "https://news.build-app.jp/article/41676/",
-      "description": "国土交通省は、令和8年（2026年）7月17日、建設総合統計の5月分を取りまとめて公表しました。今回の発表では、全国の建設工事出来高総計が4......",
-      "publishedDate": "Tue, 21 Jul 2026 04:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/construction_output_statistics-130x53.jpg",
-      "language": "ja"
-    },
-    {
       "title": "勾配の計算方法は？｜計算式・角度・パーセント（％）への換算方法をわかりやすく解説",
       "link": "https://news.build-app.jp/article/41745/",
       "description": "「勾配はどうやって計算する？」「1/100勾配は何％？」「パーセントを角度にすると何度？」と疑問に感じている方も多いのではないでしょうか。 ......",
@@ -92,9 +72,9 @@
       "language": "ja"
     },
     {
-      "title": "AIに『完全に』丸投げできる工程設計とは？20年DX経験から解く",
+      "title": "ChatGPT Workに「丸投げ」できる工程設計とは？20年DX経験から解く",
       "link": "https://axconstdx.com/2026/07/24/ai%e3%81%ab%e3%80%8e%e5%ae%8c%e5%85%a8%e3%81%ab%e3%80%8f%e4%b8%b8%e6%8a%95%e3%81%92%e3%81%a7%e3%81%8d%e3%82%8b%e5%b7%a5%e7%a8%8b%e8%a8%ad%e8%a8%88%e3%81%a8%e3%81%af%ef%bc%9f20%e5%b9%b4dx%e7%b5%8c/?utm_source=rss&utm_medium=rss&utm_campaign=ai%25e3%2581%25ab%25e3%2580%258e%25e5%25ae%258c%25e5%2585%25a8%25e3%2581%25ab%25e3%2580%258f%25e4%25b8%25b8%25e6%258a%2595%25e3%2581%2592%25e3%2581%25a7%25e3%2581%258d%25e3%2582%258b%25e5%25b7%25a5%25e7%25a8%258b%25e8%25a8%25ad%25e8%25a8%2588%25e3%2581%25a8%25e3%2581%25af%25ef%25bc%259f20%25e5%25b9%25b4dx%25e7%25b5%258c",
-      "description": "AIに仕事を丸投げしたとき、進捗は進んでいるのに「本当にこれで大丈夫？」という不安が頭から離れない経験はありませんか。でも、一つの「設計法」を身につければ、その不安は消え去り、自信を持ってAIに仕事を任せることができるよ [...] <p>The post AIに『完全に』丸投げできる工程設計とは？20年DX経験から解く first appeared on 生成AIと建設DX.</p>...",
+      "description": "AIに仕事を丸投げしたとき、進捗は進んでいるのに「本当にこれで大丈夫？」という不安が頭から離れない経験はありませんか。でも、一つの「設計法」を身につければ、その不安は消え去り、自信を持ってAIに仕事を任せることができるよ [...] <p>The post ChatGPT Workに「丸投げ」できる工程設計とは？20年DX経験から解く first appeared on 生成AIと建設DX.</p...",
       "publishedDate": "Thu, 23 Jul 2026 20:51:19 +0000",
       "source": "生成AIと建設DX",
       "category": "bim",
@@ -189,6 +169,26 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-4-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "竹中工務店が病院向け低温給湯システム「ぬく水®」を開発、病院の給湯エネルギーを40%削減",
+      "link": "https://news.build-app.jp/article/41836/",
+      "description": "竹中工務店（社長：丁野成人）は、病院における給湯エネルギーの削減を目的とした低温給湯システム「ぬく水®」を開発しました。今年2月に竣工した小......",
+      "publishedDate": "Fri, 24 Jul 2026 06:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/nukumizu_low_temperature-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "三菱商事のMill-Box、大成建設の大型現場でミルシート管理をDX、書類整理を効率化",
+      "link": "https://news.build-app.jp/article/41832/",
+      "description": "三菱商事株式会社（マテリアルソリューショングループ 産業素材DXチーム）が手がけるクラウド型ミルシート電子管理システム「Mill-Box(ミ......",
+      "publishedDate": "Fri, 24 Jul 2026 04:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/mill-box_taisei_construction-130x98.webp",
       "language": "ja"
     },
     {
