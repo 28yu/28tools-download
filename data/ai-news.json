@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24T04:15:20.023465",
+  "lastUpdated": "2026-07-25T04:12:47.221934",
   "articles": [
     {
       "title": "生成AIで社内マニュアル作成を効率化！ChatGPTでの作り方やプロンプトを徹底解説",
@@ -77,39 +77,6 @@
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/260708_RomanCoronagraph.jpg?resize=1200,600",
       "language": "en"
-    },
-    {
-      "title": "キリンとファンケル、サプリメント開発を支援する「錠剤設計AI」を共同開発",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kirin-fancl-pharmaceutical-ai/",
-      "description": "キリンホールディングスとファンケルは、サプリメントの錠剤設計を支援する「錠剤設計AI」を共同開発しました。複数の物性を予測し、開発の効率化と品質向上を目指します。 このニュースのポイント キリンとファンケルが「錠剤設計A [...] The post キリンとファンケル、サプリメント開発を支援する「錠剤設計AI」を共同開発 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 22 Jul 2026 08:53:24 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/KIRIN-FANCL-pharmaceutical-ai-development.png",
-      "language": "ja"
-    },
-    {
-      "title": "ABEJA、JAXAに宇宙船内ロボット向け音声認識システム提供。宇宙空間のフィジカルAI実装を支援",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/abeja-jaxa-intball2-voice/",
-      "description": "ABEJAは、JAXAから委託を受け、自律飛行型カメラロボット向けの音声認識システムを提供しました。国際宇宙ステーション（ISS）の「きぼう」日本実験棟内での軌道上実証において、宇宙飛行士の音声指示通りにロボットを操作す [...] The post ABEJA、JAXAに宇宙船内ロボット向け音声認識システム提供。宇宙空間のフィジカルAI実装を支援 first appeared on AIポータル...",
-      "publishedDate": "Wed, 22 Jul 2026 08:49:42 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/abeja-jaxa-intball2-voice-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "富士通、大規模言語モデルの大幅なコスト削減を実現するアーキテクチャ「PHOTON」開発。Transformerの最大475倍の出力トークン数を持つ",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/fujitsu-development-photon/",
-      "description": "富士通は、大規模言語モデルの大幅なコスト削減を実現するアーキテクチャであるPHOTONを開発しました。主流基盤であるTransformerの最大475倍のマルチクエリー性能を発揮します。 このニュースのポイント 富士通が [...] The post 富士通、大規模言語モデルの大幅なコスト削減を実現するアーキテクチャ「PHOTON」開発。Transformerの最大475倍の出力トークン数を持つ ...",
-      "publishedDate": "Wed, 22 Jul 2026 08:44:29 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/Parallel-Hierarchical-Operation-for-TOp-down.png",
-      "language": "ja"
     },
     {
       "title": "【Gemini 3.5 Flash Cyber】Google発サイバーセキュリティ特化AIの性能・仕組み・活用シーンを徹底解説",
@@ -453,61 +420,6 @@
       "language": "ja"
     },
     {
-      "title": "みずほFG、金融機関向けAI活用基盤高度化の検討を開始。AIエージェント活用拡大に向けNVIDIA技術を活用",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/mizuho-nvidia-ai-infrastructure/",
-      "description": "みずほフィナンシャルグループは、NVIDIAの技術を活用し、金融機関向けAI活用基盤の高度化に向けた検討を開始しました。高性能な計算基盤の強化とセキュアな実行環境の技術検証を推進し、機密情報を厳格に保護しながら、AIエー [...] The post みずほFG、金融機関向けAI活用基盤高度化の検討を開始。AIエージェント活用拡大に向けNVIDIA技術を活用 first appeared on A...",
-      "publishedDate": "Thu, 23 Jul 2026 08:10:14 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/mizuho-nvidia-ai-infra-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "STATION Ai、製造業向けデータ収集センター設立。フィジカルAIの社会実装を加速",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/station-ai-data-foundry/",
-      "description": "STATION Aiは、製造業におけるフィジカルAIの社会実装を加速させるため、データ収集センター「STATION Ai Data Foundry」を設立しました。2026年12月の稼働開始を目指します。 このニュースの [...] The post STATION Ai、製造業向けデータ収集センター設立。フィジカルAIの社会実装を加速 first appeared on AIポータルメディアAI...",
-      "publishedDate": "Thu, 23 Jul 2026 08:10:04 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/STATIONAI-Date-center.png",
-      "language": "ja"
-    },
-    {
-      "title": "ビジネス職のAI活用調査を実施。AIエージェント化で生産性が上がったのは54%でチャット層の約3.8倍",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-agent-productivity-report/",
-      "description": "GiftXが、「ビジネス職生成AI活用実態調査（2026年版）」の結果を発表しました。AIエージェント化している層の54%は生産性が「明確に上がった」と回答しており、チャット止まり層の3.8倍となりました。 このニュース [...] The post ビジネス職のAI活用調査を実施。AIエージェント化で生産性が上がったのは54%でチャット層の約3.8倍 first appeared on AIポー...",
-      "publishedDate": "Thu, 23 Jul 2026 08:04:51 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/ai-agent-productivity-report-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "AIOpsとは？IT運用の未来を変える仕組みと次世代ツールの選び方",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aiops-devops-mlops-it/",
-      "description": "クラウドとオンプレミスが混在し、システムが複雑になるほど、運用の現場は膨大なログやアラートへの対応に追われがちです。こうした課題への対策として注目されているのが、AI（人工知能）でIT運用を高度化するAIOpsです。 A [...] The post AIOpsとは？IT運用の未来を変える仕組みと次世代ツールの選び方 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 23 Jul 2026 07:42:12 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/aiops.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "「AI博覧会 Summer 2026」カンファレンス第1弾スピーカーを発表！二足歩行ヒューマノイドのドーナッツロボティクス、国産LLM「PLaMo」のPreferred Networksが登壇",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aihaku-sum2026-1stsp/",
-      "description": "Google・サイバーエージェント・GMOペパボもAI活用の最前線を解説 国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年8月26日（水）・27日（木）の2日間、新宿住友 [...] The post 「AI博覧会 Summer 2026」カンファレンス第1弾スピーカーを発表！二足歩行ヒューマノイドのドーナッツロボティクス、国産LLM「PLaMo」...",
-      "publishedDate": "Thu, 23 Jul 2026 04:00:35 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/aihakurankaisummer_speaker01.png",
-      "language": "ja"
-    },
-    {
       "title": "【Qwen-Image-3.0】文字も図表も1枚に収めるアリババの画像生成AIの実力を徹底解説！",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/qwen-image-3-0/",
@@ -519,36 +431,124 @@
       "language": "ja"
     },
     {
-      "title": "Claude Codeのサブエージェントとは？仕組み・作り方・使い方・活用例を徹底解説",
+      "title": "【Claude Opus 5】Fable 5級の知性を半額で実現したモデルの性能・料金・使い方を徹底解説！",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claudecode-subagent/",
-      "description": "Claude Codeを使い込むほど、コンテキストウィンドウの圧迫に悩まされる方は多いのではないでしょうか。 その解決策としてAnthropicが用意しているのが「サブエージェント」です。独自のコンテキストウィンドウ・シ [...]...",
-      "publishedDate": "Mon, 20 Jul 2026 12:36:13 +0000",
+      "link": "https://weel.co.jp/media/tech/claude-opus-5/",
+      "description": "2026年7月25日、Anthropicが新しいAIモデル「Claude Opus 5」の提供を開始しました！ Claude Opus 5は、Anthropicの最上位モデルであるClaude Fable 5に迫る知性を [...]...",
+      "publishedDate": "Sat, 25 Jul 2026 02:01:44 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/claudecode-subagent_2607-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Opus-5-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "RAGの評価方法とは？必要な指標・フレームワーク・Ragasでの実践検証を解説",
+      "title": "Copilotに学習させない方法は？データ利用の仕組みや設定手順を徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/rag-evaluation/",
-      "description": "RAGを業務で使うなら、もっともらしい回答だけで判断してはいけません。必要な文書を取得できているか、回答が検索結果に根拠づけられているかを分けて確認することが重要です。 本記事では、RAG評価の指標と方法、代表的なフレー [...]...",
-      "publishedDate": "Mon, 20 Jul 2026 12:05:06 +0000",
+      "link": "https://weel.co.jp/media/innovator/prevent-copilot-from-learning/",
+      "description": "Copilotは、文章作成や情報収集などをAIがサポートしてくれる便利なサービスです。しかし、「入力した内容がAIの学習に使われるのでは？」「個人情報や仕事のデータを入力しても大丈夫？」と不安に感じている方も多いのではな [...]...",
+      "publishedDate": "Fri, 24 Jul 2026 13:37:19 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/RAG-Evaluation_2607-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Prevent-Copilot-from-learning_2607-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "RAGのチャンク化（チャンキング）とは？種類・最適なサイズ・注意点まで徹底解説",
+      "title": "Copilot APIとは？Microsoft 365とGitHubの違いや使い方、連携方法を解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/rag-chunks/",
-      "description": "近年、多くの企業で生成AIの活用が進む中、自社データなどを活用して回答精度を向上させるRAG（Retrieval-Augmented Generation）を導入している企業も多いでしょう。しかし、RAGを導入したものの [...]...",
-      "publishedDate": "Mon, 20 Jul 2026 06:03:50 +0000",
+      "link": "https://weel.co.jp/media/copilot-api/",
+      "description": "Copilotの機能を自社システムや業務アプリに組み込みたいけれど、Microsoft 365 Copilot APIとGitHub Copilot APIの違いがわからず迷っていませんか？Copilot APIと呼ばれ [...]...",
+      "publishedDate": "Fri, 24 Jul 2026 13:01:16 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/rag-chunks_2606-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Copilot-API_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Muse Videoとは？Meta最新動画生成AIの使い方と競合との比較",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-muse-video/",
+      "description": "Muse Videoは、2026年7月にMetaが発表した最新の動画生成AIです。音声付きで動画を生成でき、Meta関連のプラットフォームやシステムとのシームレスな連携も見込まれています。また、性能面でも発表直後からベン [...] The post Muse Videoとは？Meta最新動画生成AIの使い方と競合との比較 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 24 Jul 2026 07:27:40 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/musevideomain.png",
+      "language": "ja"
+    },
+    {
+      "title": "Muse Imageとは?Metaの新しい画像生成AIの使い方・日本での提供時期",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-muse-image/",
+      "description": "Muse Imageは、Metaが2026年7月7日（米国時間）に公開した新しい画像生成AIです。InstagramやWhatsAppなどMeta社のプラットフォーム内の機能として盛り込まれるなど、創作パートナーとしての [...] The post Muse Imageとは?Metaの新しい画像生成AIの使い方・日本での提供時期 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Fri, 24 Jul 2026 07:26:48 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/museimagemain.png",
+      "language": "ja"
+    },
+    {
+      "title": "Codex MCP完全ガイド：基礎知識から実践的な使い方・ツール連携まで徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/codex-mcp-openai-cli/",
+      "description": "「CodexにGitHubの仕様書やFigmaのデザインを読み込ませるために、毎回テキストをコピペするのが面倒…」と感じていませんか？ OpenAIの「Codex」と、外部ツール連携規格である「MCP」を組み合わせれば、 [...] The post Codex MCP完全ガイド：基礎知識から実践的な使い方・ツール連携まで徹底解説 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Fri, 24 Jul 2026 02:40:38 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/codexmcp.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ルールベースAIとは？機械学習との違いから活用事例・使い分けまで解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/rule-based-ai-rpa-dx/",
+      "description": "判断の根拠をはっきり示し、決められた処理を正確に実行する「ルールベースAI」。生成AIが普及した現在でも、カスタマーサポート、品質管理などの確実性が求められる現場で活躍し続けています。 しかし、「機械学習や生成AI、RP [...] The post ルールベースAIとは？機械学習との違いから活用事例・使い分けまで解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 24 Jul 2026 02:38:53 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/rulebaseda.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "MFS、無料の不動産AI査定サービス「CAPS」提供開始。約450万件の価格データから価値を推定",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/mfs-invase-caps-real-estate-ai/",
+      "description": "MFSは、ユーザーが無料で使える不動産AI査定サービス「CAPS」の提供を開始しました。約450万件のデータを学習したAIにより、誤差率中央値6.1%の高精度な査定を実現します。 このニュースのポイント MFSが、全国の [...] The post MFS、無料の不動産AI査定サービス「CAPS」提供開始。約450万件の価格データから価値を推定 first appeared on AIポータルメ...",
+      "publishedDate": "Fri, 24 Jul 2026 02:00:39 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/caps-real-estate-ai-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "アイスマイリー、8/5（水）から2日間、「AI・人工知能EXPO NEO」にブース出展",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/nextechweek-neo-2026/",
+      "description": "AIsmileyとAIsmiley Communityは、2026年8月5日（水）～8月6日（木）に東京国際フォーラムにて開催の「AI・人工知能EXPO NEO」にブースを出展します。 会場では、最新のAIソリューション [...] The post アイスマイリー、8/5（水）から2日間、「AI・人工知能EXPO NEO」にブース出展 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Fri, 24 Jul 2026 02:00:39 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/ai-nextech-neo-02.png",
+      "language": "ja"
+    },
+    {
+      "title": "つながりAI、横浜市でAI相談サービス「友達AI」実証実験を開始。夏休みの子どもの孤立・SOSに対応",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/yokohama-tomodachi-ai-trial/",
+      "description": "つながりAIは、横浜市で24時間365日対応のAI相談サービス「友達AI」の実証実験を開始しました。AIがチャットで悩みに寄り添い、リスク検知時には関係機関へ連携するハイブリッド型の支援を提供します。 このニュースのポイ [...] The post つながりAI、横浜市でAI相談サービス「友達AI」実証実験を開始。夏休みの子どもの孤立・SOSに対応 first appeared on AIポータ...",
+      "publishedDate": "Fri, 24 Jul 2026 02:00:32 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/yokohama-tomodachi-ai-trial-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "Meta、画像生成モデル「Muse Image」をMeta AIに搭載。文脈を理解し高度な写真編集やデザインに対応",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/meta-ai-muse-debut/",
+      "description": "Metaは、新しい画像生成モデル「Muse Image」をMeta AIに導入しました。自然な言葉で高品質な画像の生成や編集が可能で、追加生成向けの有料プランも提供されます。 このニュースのポイント MetaがMSLが開 [...] The post Meta、画像生成モデル「Muse Image」をMeta AIに搭載。文脈を理解し高度な写真編集やデザインに対応 first appeared o...",
+      "publishedDate": "Fri, 24 Jul 2026 02:00:12 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/meta-ai-muse-debut-eye2.png",
       "language": "ja"
     },
     {
