@@ -126,62 +126,117 @@ function applyAudioTitle() {
   }
 }
 
-/* ---------- 入力: マイク録音 (録音 → 停止 → メモリ内 WAV) ---------- */
-function setupRecorder() {
+/* ---------- 録音（メイン動線: 1 ボタンで開始/停止、停止で自動作成） ----------
+   ・高精度版(Gemini)  → 長時間モード（自動分割・保存・区間ごとに Gemini・結合）
+   ・簡易版(ブラウザ)  → 通常録音し、停止時にブラウザ内で自動作成
+   どちらも「停止したら自動で議事録が最下部に出る」動線に統一。
+*/
+function setupRecord() {
   const btn = $('record-btn');
   const status = $('record-status');
 
   btn.addEventListener('click', async () => {
-    // 長時間モードが ON のときは専用フローに委譲
-    if ($('longrec-enable') && $('longrec-enable').checked) {
-      await handleLongRecClick(btn, status);
-      return;
-    }
-
-    if (recorder.isRecording) {
-      // 停止 → 変換
-      btn.disabled = true;
-      status.textContent = t('rec-converting');
-      try {
-        const file = await recorder.stop();
-        applyRecordedFile(file, lastTickSec);
-        status.textContent = t('rec-done', { time: formatDuration(lastTickSec) });
-      } catch (err) {
-        console.error(err);
-        status.textContent = '❌ ' + err.message;
-      } finally {
-        btn.classList.remove('recording');
-        btn.textContent = t('rec-start');
-        btn.disabled = false;
-      }
-      return;
-    }
-
-    // 録音開始 (テスト中なら止めてから)
-    if (tester.isActive) stopMicTest();
-    try {
-      await recorder.start((sec) => {
-        lastTickSec = sec;
-        status.textContent = t('rec-recording', { time: formatDuration(sec) });
-      }, getSelectedDeviceId());
-      btn.classList.add('recording');
-      btn.textContent = t('rec-stop');
-      populateMics(); // 許可後にラベルが取れる
-    } catch (err) {
-      console.error(err);
-      status.textContent = '❌ ' + err.message;
-    }
+    // --- 停止（動作中のレコーダーに委譲） ---
+    if (segRecorder.isRecording) { await stopGeminiLongRec(btn, status); return; }
+    if (recorder.isRecording)    { await stopSimpleRec(btn, status); return; }
+    // --- 開始（処理方法で分岐） ---
+    if (getMode() === 'gemini') await startGeminiLongRec(btn, status);
+    else                        await startSimpleRec(btn, status);
   });
 }
 
-/* ---------- 長時間モード（自動分割 → 保存 → Gemini → 結合） ---------- */
+// 録音ボタンの見た目（アイコン＋ラベル＋赤色）を切替。
+function setRecBtn(recording) {
+  const ico = $('rec-hero-ico'), label = $('rec-hero-label'), btn = $('record-btn');
+  if (recording) {
+    if (ico) ico.textContent = '🔴';
+    if (label) label.textContent = t('rec-hero-stop');
+    if (btn) btn.classList.add('recording');
+  } else {
+    if (ico) ico.textContent = '🎤';
+    if (label) label.textContent = t('rec-hero-start');
+    if (btn) btn.classList.remove('recording');
+  }
+}
+
+/* ---------- 簡易版（ブラウザ完結）: 通常録音 → 停止で自動作成 ---------- */
+async function startSimpleRec(btn, status) {
+  if (tester.isActive) stopMicTest();
+  try {
+    await recorder.start((sec) => {
+      lastTickSec = sec;
+      status.textContent = t('rec-recording', { time: formatDuration(sec) });
+    }, getSelectedDeviceId());
+    setRecBtn(true);
+    populateMics(); // 許可後にラベルが取れる
+  } catch (err) {
+    console.error(err);
+    status.textContent = '❌ ' + err.message;
+  }
+}
+
+async function stopSimpleRec(btn, status) {
+  btn.disabled = true;
+  status.textContent = t('rec-converting');
+  try {
+    const file = await recorder.stop();
+    applyRecordedFile(file, lastTickSec);
+    status.textContent = t('rec-done', { time: formatDuration(lastTickSec) });
+    await generate(); // 停止したら自動で議事録を作成（最下部に表示）
+  } catch (err) {
+    console.error(err);
+    status.textContent = '❌ ' + err.message;
+  } finally {
+    setRecBtn(false);
+    btn.disabled = false;
+  }
+}
+
+/* ---------- 詳細パネルの補助 UI（処理方法・保存先・セットアップ帯） ---------- */
 function setupLongRec() {
-  const enable = $('longrec-enable');
-  if (!enable) return;
-  const opts = $('longrec-opts');
-  const sync = () => { if (opts) opts.classList.toggle('hidden', !enable.checked); };
-  enable.addEventListener('change', sync);
-  sync();
+  // 記憶済みフォルダを復元して表示（許可はまだ取らない）
+  longrec.saver.loadRemembered().then(updateFolderStatus).catch(() => {});
+  updateFolderStatus();
+
+  // 保存先フォルダの選択/変更（詳細パネル内）
+  const fc = $('folder-choose');
+  if (fc) fc.addEventListener('click', async () => {
+    if (!longrec.saver.supported) { alert(t('lr-folder-unsupported')); return; }
+    try { await longrec.saver.chooseFolder(); } catch (e) { return; /* キャンセル */ }
+    updateFolderStatus();
+  });
+
+  // 「キーを入力」→ 詳細パネルを開いてキー欄にフォーカス
+  const sk = $('setup-open-key');
+  if (sk) sk.addEventListener('click', () => {
+    const adv = $('advanced-panel');
+    if (adv) adv.open = true;
+    const key = $('apikey-input');
+    if (key) { key.focus(); key.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+  });
+
+  // 処理方法の変更でセットアップ帯を出し分け
+  document.querySelectorAll('input[name="mode"]').forEach(r =>
+    r.addEventListener('change', updateSetupStrip));
+
+  updateSetupStrip();
+}
+
+// 高精度版かつ API キー未保存のときだけ、録音ボタン下にセットアップ帯を表示。
+function updateSetupStrip() {
+  const strip = $('setup-strip');
+  if (!strip) return;
+  const needKey = getMode() === 'gemini' && !$('apikey-input').value.trim();
+  strip.classList.toggle('hidden', !needKey);
+}
+
+// 保存先フォルダの表示を更新。
+function updateFolderStatus() {
+  const el = $('folder-status');
+  if (!el) return;
+  if (!longrec.saver.supported) { el.textContent = t('lr-folder-unsupported'); return; }
+  const name = longrec.saver.folderName || longrec.saver.rememberedName;
+  el.textContent = name ? t('lr-folder-current', { name }) : t('lr-folder-none');
 }
 
 // 「デスクトップ_議事録_20260727-1530」のようなセッション接頭辞。
@@ -191,42 +246,46 @@ function sessionLabelNow() {
   return `${t('lr-file-prefix')}_${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}`;
 }
 
-async function handleLongRecClick(btn, status) {
-  // --- 停止 ---
-  if (segRecorder.isRecording) {
-    btn.disabled = true;
-    status.textContent = t('lr-finishing');
-    try {
-      await segRecorder.stop();     // 最後のセグメントを確定
-      await longrec.queue;          // 保存・Gemini 処理の完了を待つ
-      finalizeLongRec();
-    } catch (err) {
-      console.error(err);
-      status.textContent = '❌ ' + err.message;
-    } finally {
-      longrec.active = false;
-      btn.classList.remove('recording');
-      btn.textContent = t('rec-start');
-      btn.disabled = false;
-    }
+// 停止: 最後のセグメントを確定し、全処理の完了を待って最終結合を表示。
+async function stopGeminiLongRec(btn, status) {
+  btn.disabled = true;
+  status.textContent = t('lr-finishing');
+  try {
+    await segRecorder.stop();     // 最後のセグメントを確定
+    await longrec.queue;          // 保存・Gemini 処理の完了を待つ
+    finalizeLongRec();
+  } catch (err) {
+    console.error(err);
+    status.textContent = '❌ ' + err.message;
+  } finally {
+    longrec.active = false;
+    setRecBtn(false);
+    btn.disabled = false;
+  }
+}
+
+// 開始: 高精度版＋キー確認 → 保存先確保 → セグメント録音開始。
+async function startGeminiLongRec(btn, status) {
+  // --- キー必須（無ければ詳細を開いて入力を促す） ---
+  const apiKey = $('apikey-input').value.trim();
+  if (!apiKey) {
+    updateSetupStrip();
+    const adv = $('advanced-panel'); if (adv) adv.open = true;
+    const key = $('apikey-input'); if (key) { key.focus(); key.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    status.textContent = t('lr-need-key-inline');
     return;
   }
 
-  // --- 開始前チェック（全自動なので高精度版＋キー必須） ---
-  if (getMode() !== 'gemini') { alert(t('lr-need-gemini')); return; }
-  const apiKey = $('apikey-input').value.trim();
-  if (!apiKey) { alert(t('al-need-key')); return; }
-
-  // --- 保存先フォルダを選択（クリック直後のユーザー操作が必要） ---
+  // --- 保存先フォルダを確保（記憶済みがあれば許可のみ・無ければ選択） ---
   longrec.saver.reset();
   if (longrec.saver.supported) {
-    try {
-      await longrec.saver.chooseFolder();
-    } catch (e) {
-      // ダイアログをキャンセル → 開始を中止（勝手にダウンロード保存はしない）
-      status.textContent = t('lr-folder-cancel');
-      return;
+    let ok = false;
+    try { ok = await longrec.saver.useRememberedWithPermission(); } catch (e) { ok = false; }
+    if (!ok) {
+      try { await longrec.saver.chooseFolder(); }
+      catch (e) { status.textContent = t('lr-folder-cancel'); return; } // キャンセル → 中止
     }
+    updateFolderStatus();
   }
   longrec.saveMode = longrec.saver.mode;
 
@@ -243,6 +302,7 @@ async function handleLongRecClick(btn, status) {
 
   const panel = $('longrec-panel');
   if (panel) panel.classList.remove('hidden');
+  $('output-section').style.display = 'none'; // 前回の議事録は隠し、停止後に出す
   renderSegmentList();
   logEl.textContent = '';
   showStatus(t('lr-recording-start', {
@@ -266,12 +326,12 @@ async function handleLongRecClick(btn, status) {
       deviceId: getSelectedDeviceId(),
       segmentMs: longrec.intervalMin * 60 * 1000,
     });
-    btn.classList.add('recording');
-    btn.textContent = t('rec-stop');
+    setRecBtn(true);
     populateMics();
   } catch (err) {
     console.error(err);
     longrec.active = false;
+    setRecBtn(false);
     status.textContent = '❌ ' + err.message;
   }
 }
@@ -488,8 +548,10 @@ function setupApiKey() {
     } else {
       localStorage.removeItem(APIKEY_STORE);
     }
+    updateSetupStrip();
   };
   input.addEventListener('change', persist);
+  input.addEventListener('input', updateSetupStrip);
   remember.addEventListener('change', persist);
 }
 
@@ -721,10 +783,13 @@ function applyDynamicLang() {
   applyAudioTitle();
   applyMaterialTitle();
   $('copy-btn').textContent = t('btn-copy');
-  if (!recorder.isRecording && !segRecorder.isRecording) $('record-btn').textContent = t('rec-start');
+  // 録音ボタンのラベル（アイコン＋テキスト構造なので setRecBtn で更新）
+  setRecBtn(recorder.isRecording || segRecorder.isRecording);
   if (!tester.isActive) $('mic-test-btn').textContent = t('mic-test');
   populateMics();
   updateSummary();
+  updateSetupStrip();
+  updateFolderStatus();
   if (longrec.active || longrec.segments.length) renderSegmentList();
   if (state.lastData) {
     renderMinutesForCurrentLang();
@@ -735,7 +800,7 @@ function applyDynamicLang() {
 function init() {
   setLang(detectLang());
   setupAudioInput();
-  setupRecorder();
+  setupRecord();
   setupLongRec();
   setupMicTest();
   populateMics();
