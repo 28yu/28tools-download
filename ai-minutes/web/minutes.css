@@ -145,18 +145,24 @@
   background: var(--glass-white);
 }
 .mic-select:focus { outline: 2px solid var(--blueprint-blue); outline-offset: -1px; }
-.mic-meter {
-  height: 10px;
+/* マイク入力レベルメーター（LED 風の目盛り） */
+.mic-meter { margin-top: 10px; }
+.mic-meter-scale {
+  display: flex; gap: 3px; height: 24px; align-items: stretch;
+  padding: 4px; border-radius: 7px;
   background: var(--light-concrete);
-  border-radius: 5px;
-  overflow: hidden;
-  margin-top: 8px;
 }
-.mic-meter-bar {
-  height: 100%;
-  width: 0;
-  background: linear-gradient(90deg, var(--architect-green), #f1c40f 70%, #e74c3c);
-  transition: width 0.08s linear;
+.mic-seg {
+  flex: 1 1 0; border-radius: 2px;
+  background: rgba(44, 62, 80, 0.12);
+  transition: background 0.06s linear;
+}
+.mic-seg.on { background: var(--architect-green); }
+.mic-seg:nth-child(n+17).on { background: #f1c40f; } /* 約70%以降＝黄 */
+.mic-seg:nth-child(n+21).on { background: #e74c3c; } /* 約85%以降＝赤 */
+.mic-meter-caption {
+  margin-top: 6px; font-size: 0.76rem;
+  color: var(--steel-blue); text-align: center;
 }
 
 /* ---------- 録音 ---------- */
