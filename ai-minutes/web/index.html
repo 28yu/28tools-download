@@ -106,7 +106,31 @@
           <span class="record-status" id="record-status"></span>
         </div>
         <audio id="record-preview" class="record-preview" controls style="display:none"></audio>
-        <p class="record-note" data-lang-key="aimin-record-note">※ 録音データは端末に保存されません（ブラウザのメモリ上で処理）。高精度版では生成時に Google へ送信されます。</p>
+
+        <!-- 長時間モード（10分ごとに自動分割・保存・全自動作成） -->
+        <div class="longrec">
+          <label class="longrec-toggle">
+            <input type="checkbox" id="longrec-enable">
+            <span data-lang-key="aimin-longrec-label">🕒 長時間モード（一定間隔で自動分割・保存して自動作成）</span>
+          </label>
+          <div class="longrec-opts hidden" id="longrec-opts">
+            <label class="longrec-interval-label">
+              <span data-lang-key="aimin-longrec-interval">分割間隔</span>
+              <select id="longrec-interval">
+                <option value="5" data-lang-key="aimin-longrec-5min">5分</option>
+                <option value="10" selected data-lang-key="aimin-longrec-10min">10分</option>
+                <option value="15" data-lang-key="aimin-longrec-15min">15分</option>
+              </select>
+            </label>
+            <p class="longrec-help" data-lang-key="aimin-longrec-help">録音を続けたまま指定間隔ごとに音声を保存し、各区間を高精度版(Gemini)で自動的に議事録化して1本に結合します。開始時に保存先フォルダを選択します（対応ブラウザのみ・非対応時はダウンロード保存）。高精度版の API キーが必要です。</p>
+          </div>
+          <div class="longrec-panel hidden" id="longrec-panel">
+            <div class="longrec-panel-title" data-lang-key="aimin-longrec-segments">分割セグメント</div>
+            <div class="longrec-segments" id="longrec-segments"></div>
+          </div>
+        </div>
+
+        <p class="record-note" data-lang-key="aimin-record-note">※ 通常録音では録音データは端末に保存されません（ブラウザのメモリ上で処理）。長時間モードでは分割した音声を選んだフォルダ／ダウンロードに保存します。高精度版では生成時に Google へ送信されます。</p>
       </div>
 
       <!-- 資料 -->
@@ -230,7 +254,7 @@
 <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
 
 <!-- 共通サイト JS (ヘッダー/サイドバーの includes 読み込みと言語切替) -->
-<script src="../../js/main.js?v=20260715-5"></script>
+<script src="../../js/main.js?v=20260727-1"></script>
 <!-- ツール固有 JS -->
 <script type="module" src="./app.js"></script>
 </body>

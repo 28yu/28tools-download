@@ -184,6 +184,59 @@
 .record-preview { display: block; width: 100%; margin-top: 10px; }
 .record-note { font-size: 0.78rem; color: var(--disabled-gray); line-height: 1.6; margin: 8px 0 0; }
 
+/* ---------- 長時間モード ---------- */
+.longrec {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--light-concrete);
+}
+.longrec-toggle {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.86rem; color: var(--concrete-gray);
+  cursor: pointer; line-height: 1.4;
+}
+.longrec-toggle input { width: 16px; height: 16px; cursor: pointer; flex-shrink: 0; }
+.longrec-opts { margin: 10px 0 0; padding-left: 24px; }
+.longrec-opts.hidden, .longrec-panel.hidden { display: none; }
+.longrec-interval-label {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 0.85rem; color: var(--steel-blue);
+}
+.longrec-interval-label select {
+  padding: 5px 10px; border-radius: 8px;
+  border: 1px solid var(--light-concrete);
+  background: var(--glass-white); color: var(--concrete-gray);
+  font-family: inherit; font-size: 0.85rem; cursor: pointer;
+}
+.longrec-interval-label select:focus { outline: 2px solid var(--blueprint-blue); outline-offset: -1px; }
+.longrec-help {
+  font-size: 0.76rem; color: var(--disabled-gray);
+  line-height: 1.6; margin: 8px 0 0;
+}
+.longrec-panel {
+  margin-top: 12px; padding: 12px 14px;
+  background: rgba(52, 152, 219, 0.05);
+  border: 1px solid var(--light-concrete);
+  border-radius: 10px;
+}
+.longrec-panel-title {
+  font-size: 0.82rem; font-weight: 600;
+  color: var(--concrete-gray); margin-bottom: 8px;
+}
+.longrec-segments { display: flex; flex-direction: column; gap: 6px; }
+.lr-seg-empty { font-size: 0.8rem; color: var(--disabled-gray); margin: 0; }
+.lr-seg {
+  display: flex; align-items: baseline; gap: 8px;
+  font-size: 0.82rem; color: var(--concrete-gray);
+  padding: 4px 0;
+}
+.lr-seg-ico { flex-shrink: 0; }
+.lr-seg-name { font-weight: 500; }
+.lr-seg-status { color: var(--steel-blue); }
+.lr-seg-done .lr-seg-status { color: var(--architect-green); }
+.lr-seg-error .lr-seg-status { color: #e74c3c; }
+.lr-seg-err { font-size: 0.76rem; }
+
 .thumb-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
 .thumb-row img {
   width: 56px; height: 56px; object-fit: cover;

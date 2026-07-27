@@ -7438,9 +7438,9 @@ translations.filledRegion = {
             zh: 'mp3 / m4a / wav 等'
         },
         'aimin-record-note': {
-            ja: '※ 録音データは端末に保存されません（ブラウザのメモリ上で処理）。高精度版では生成時に Google へ送信されます。',
-            en: '* Recordings are not saved on your device (processed in browser memory). In high-accuracy mode they are sent to Google when generating.',
-            zh: '※ 录音数据不会保存在设备上（在浏览器内存中处理）。高精度版在生成时会发送到 Google。'
+            ja: '※ 通常録音では録音データは端末に保存されません（ブラウザのメモリ上で処理）。長時間モードでは分割した音声を選んだフォルダ／ダウンロードに保存します。高精度版では生成時に Google へ送信されます。',
+            en: '* In normal recording, audio is not saved on your device (processed in browser memory). In long-recording mode, the split audio is saved to your chosen folder / downloads. In high-accuracy mode it is sent to Google when generating.',
+            zh: '※ 普通录音不会将录音保存到设备（在浏览器内存中处理）。长时录音模式会把分割后的音频保存到所选文件夹／下载。高精度版在生成时会发送到 Google。'
         },
         'aimin-material-label': {
             ja: '📐 打合せ資料 <span class="opt">（任意・複数可）</span>',
@@ -7536,6 +7536,29 @@ translations.filledRegion = {
             ja: '🖨️ 印刷 / PDF',
             en: '🖨️ Print / PDF',
             zh: '🖨️ 打印 / PDF'
+        },
+        'aimin-longrec-label': {
+            ja: '🕒 長時間モード（一定間隔で自動分割・保存して自動作成）',
+            en: '🕒 Long-recording mode (auto-split & save at intervals, fully automatic)',
+            zh: '🕒 长时录音模式（按间隔自动分割保存并自动生成）'
+        },
+        'aimin-longrec-interval': {
+            ja: '分割間隔',
+            en: 'Split interval',
+            zh: '分割间隔'
+        },
+        'aimin-longrec-5min':  { ja: '5分',  en: '5 min',  zh: '5分钟' },
+        'aimin-longrec-10min': { ja: '10分', en: '10 min', zh: '10分钟' },
+        'aimin-longrec-15min': { ja: '15分', en: '15 min', zh: '15分钟' },
+        'aimin-longrec-help': {
+            ja: '録音を続けたまま指定間隔ごとに音声を保存し、各区間を高精度版(Gemini)で自動的に議事録化して1本に結合します。開始時に保存先フォルダを選択します（対応ブラウザのみ・非対応時はダウンロード保存）。高精度版の API キーが必要です。',
+            en: 'Keeps recording while saving the audio at the chosen interval, auto-generates minutes for each segment with the high-accuracy (Gemini) mode, and merges them into one. You pick a save folder at start (supported browsers only; otherwise it downloads). Requires a Gemini API key.',
+            zh: '在持续录音的同时按指定间隔保存音频，用高精度版(Gemini)自动为每个区间生成会议记录并合并为一份。开始时选择保存文件夹（仅支持的浏览器，否则改为下载保存）。需要 Gemini API 密钥。'
+        },
+        'aimin-longrec-segments': {
+            ja: '分割セグメント',
+            en: 'Segments',
+            zh: '分割片段'
         }
     };
 
