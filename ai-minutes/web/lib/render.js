@@ -18,98 +18,85 @@ const esc = (s) => String(s == null ? '' : s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   .replace(/"/g, '&quot;');
 
-// Lucide アイコン名 (図解スタイルで使用)
-const ICONS = {
-  decisions: 'check-circle-2',
-  todos: 'list-todo',
-  issues: 'alert-triangle',
-  discussions: 'messages-square',
-  decisionItem: 'check',
-  todoItem: 'square-check-big',
-  issueItem: 'alert-circle',
-  calendar: 'calendar',
-  pin: 'map-pin',
-  building: 'building-2',
-  users: 'users',
-};
+// 改行を <br> に (esc 済み文字列に対して使用)
+const nl2br = (s) => esc(s).replace(/\n/g, '<br>');
 
-function iconSvg(name) {
-  // Lucide UMD は data 属性経由で後から createIcons() で差し替える
-  return `<i data-lucide="${esc(name)}"></i>`;
-}
-
-function tag(cls, label, value) {
+// 「ラベル：値」形式の控えめなメタ表記 (アイコンは使わない)
+function metaTag(label, value) {
   if (!value) return '';
-  return `<span class="mn-tag ${cls}">${label}${esc(value)}</span>`;
+  return `<span class="mn-meta-tag"><span class="mn-meta-tag-label">${esc(label)}</span>${esc(value)}</span>`;
 }
 
 function refsTags(refs) {
   if (!Array.isArray(refs)) return '';
-  return refs.filter(Boolean).map(r => `<span class="mn-tag ref">📎 ${esc(r)}</span>`).join('');
+  return refs.filter(Boolean).map(r => metaTag(t('txt-ref'), r)).join('');
 }
 
-function cardItem(iconName, text, tagsHtml) {
+// 番号付きの 1 項目 (アイコンなし・番号バッジ + 本文 + メタ)
+function itemRow(n, text, metaHtml) {
   return `
-    <div class="mn-card">
-      <div class="mn-card-ico">${iconSvg(iconName)}</div>
-      <div class="mn-card-body">
-        <p class="mn-card-text">${esc(text)}</p>
-        ${tagsHtml ? `<div class="mn-tags">${tagsHtml}</div>` : ''}
+    <div class="mn-item">
+      <span class="mn-item-num">${n}</span>
+      <div class="mn-item-body">
+        <p class="mn-item-text">${esc(text)}</p>
+        ${metaHtml ? `<p class="mn-item-meta">${metaHtml}</p>` : ''}
       </div>
     </div>`;
 }
 
-function section(key, headIcon, title, innerHtml, count) {
+function section(key, title, innerHtml, count) {
   if (!innerHtml) {
     innerHtml = `<p class="mn-empty">${t('mn-empty')}</p>`;
   }
   return `
-    <div class="mn-section mn-sec-${key}">
-      <div class="mn-section-head">
-        <span class="mn-ico">${iconSvg(headIcon)}</span>
-        ${esc(title)}${typeof count === 'number' ? t('mn-count', { n: count }) : ''}
-      </div>
+    <section class="mn-section mn-sec-${key}">
+      <h2 class="mn-section-head">
+        <span class="mn-sec-bar"></span>
+        <span class="mn-sec-title">${esc(title)}</span>
+        ${typeof count === 'number' ? `<span class="mn-sec-count">${t('mn-count', { n: count })}</span>` : ''}
+      </h2>
       ${innerHtml}
-    </div>`;
+    </section>`;
 }
 
 export function renderMinutes(data, style) {
   const d = data || {};
   const meta = d.meta || {};
 
-  // --- ヘッダー ---
+  // --- ヘッダー (タイトル + メタを罫線下に) ---
   const metaParts = [];
-  if (meta.date) metaParts.push(`<span>${iconSvg(ICONS.calendar)} ${esc(meta.date)}</span>`);
-  if (meta.location) metaParts.push(`<span>${iconSvg(ICONS.pin)} ${esc(meta.location)}</span>`);
-  if (meta.project) metaParts.push(`<span>${iconSvg(ICONS.building)} ${esc(meta.project)}</span>`);
+  if (meta.date) metaParts.push(metaTag(t('txt-date'), meta.date));
+  if (meta.location) metaParts.push(metaTag(t('txt-location'), meta.location));
+  if (meta.project) metaParts.push(metaTag(t('txt-project'), meta.project));
   if (Array.isArray(meta.attendees) && meta.attendees.length) {
-    metaParts.push(`<span>${iconSvg(ICONS.users)} ${esc(meta.attendees.join('、'))}</span>`);
+    metaParts.push(metaTag(t('txt-attendees'), meta.attendees.join('、')));
   }
   const header = `
-    <div class="mn-header">
+    <header class="mn-header">
       <h1 class="mn-title">${esc(meta.title || t('mn-default-title'))}</h1>
       ${metaParts.length ? `<div class="mn-meta">${metaParts.join('')}</div>` : ''}
-    </div>`;
+    </header>`;
 
-  // --- サマリ ---
+  // --- 概要 (見出し付きセクションとして) ---
   const summary = d.summary
-    ? `<div class="mn-summary">${esc(d.summary)}</div>` : '';
+    ? `<section class="mn-section mn-sec-summary">
+        <h2 class="mn-section-head"><span class="mn-sec-bar"></span><span class="mn-sec-title">${t('txt-overview')}</span></h2>
+        <p class="mn-summary">${nl2br(d.summary)}</p>
+      </section>` : '';
 
   // --- 決定事項 ---
-  const decisions = (d.decisions || []).map(it =>
-    cardItem(ICONS.decisionItem, it.text,
-      tag('speaker', '🗣 ', it.speaker) + refsTags(it.refs))
+  const decisions = (d.decisions || []).map((it, i) =>
+    itemRow(i + 1, it.text, metaTag(t('txt-speaker'), it.speaker) + refsTags(it.refs))
   ).join('');
 
   // --- ToDo ---
-  const todos = (d.todos || []).map(it =>
-    cardItem(ICONS.todoItem, it.text,
-      tag('assignee', '👤 ', it.assignee) + tag('due', '⏰ ', it.due))
+  const todos = (d.todos || []).map((it, i) =>
+    itemRow(i + 1, it.text, metaTag(t('txt-assignee'), it.assignee) + metaTag(t('txt-due'), it.due))
   ).join('');
 
   // --- 課題 ---
-  const issues = (d.issues || []).map(it =>
-    cardItem(ICONS.issueItem, it.text, tag('speaker', '🗣 ', it.speaker))
+  const issues = (d.issues || []).map((it, i) =>
+    itemRow(i + 1, it.text, metaTag(t('txt-speaker'), it.speaker))
   ).join('');
 
   // --- 議論の流れ ---
@@ -118,7 +105,7 @@ export function renderMinutes(data, style) {
       ? `<ul>${it.points.map(p => `<li>${esc(p)}</li>`).join('')}</ul>` : '';
     return `
       <div class="mn-topic">
-        <div class="mn-topic-title">${iconSvg(ICONS.discussions)} ${esc(it.topic || t('mn-topic-default'))}${it.speaker ? `　<span class="mn-tag speaker">🗣 ${esc(it.speaker)}</span>` : ''}</div>
+        <div class="mn-topic-title">${esc(it.topic || t('mn-topic-default'))}${it.speaker ? `<span class="mn-topic-speaker">${esc(t('txt-speaker'))}：${esc(it.speaker)}</span>` : ''}</div>
         ${points}
       </div>`;
   }).join('');
@@ -126,10 +113,10 @@ export function renderMinutes(data, style) {
   const body = [
     header,
     summary,
-    section('decisions', ICONS.decisions, t('mn-sec-decisions'), decisions, (d.decisions || []).length),
-    section('todos', ICONS.todos, t('mn-sec-todos'), todos, (d.todos || []).length),
-    section('issues', ICONS.issues, t('mn-sec-issues'), issues, (d.issues || []).length),
-    section('discussions', ICONS.discussions, t('mn-sec-discussions'), discussions, (d.discussions || []).length),
+    section('decisions', t('mn-sec-decisions'), decisions, (d.decisions || []).length),
+    section('todos', t('mn-sec-todos'), todos, (d.todos || []).length),
+    section('issues', t('mn-sec-issues'), issues, (d.issues || []).length),
+    section('discussions', t('mn-sec-discussions'), discussions, (d.discussions || []).length),
     `<div class="mn-footnote">${t('mn-footnote')}</div>`,
   ].join('\n');
 
@@ -151,11 +138,6 @@ export function mountMinutes(container, data, style) {
   container.innerHTML = renderMinutes(data, style);
   container.classList.add('style-figure');
   container.classList.remove('style-mindmap');
-
-  // 図解スタイル: Lucide アイコンを SVG 化
-  if (window.lucide && typeof window.lucide.createIcons === 'function') {
-    try { window.lucide.createIcons({ attrs: { } }); } catch (e) { /* noop */ }
-  }
 }
 
 /* ============================================================
@@ -170,13 +152,13 @@ export function renderMindMap(data) {
   const title = meta.title || t('mn-default-title');
 
   const cats = [
-    { label: t('mn-sec-decisions'), emoji: '✅', color: '#27ae60',
+    { label: t('mn-sec-decisions'), color: '#27ae60',
       items: (d.decisions || []).map(it => it.text) },
-    { label: t('mn-sec-todos'), emoji: '📋', color: '#3498db',
+    { label: t('mn-sec-todos'), color: '#3498db',
       items: (d.todos || []).map(it => it.text + (it.due ? `（${it.due}）` : '')) },
-    { label: t('mn-sec-issues'), emoji: '⚠️', color: '#e67e22',
+    { label: t('mn-sec-issues'), color: '#e67e22',
       items: (d.issues || []).map(it => it.text) },
-    { label: t('mn-sec-discussions'), emoji: '💬', color: '#34495e',
+    { label: t('mn-sec-discussions'), color: '#34495e',
       items: (d.discussions || []).map(it => it.topic || t('mn-topic-default')) },
   ];
 
@@ -229,7 +211,7 @@ export function renderMindMap(data) {
       // カテゴリノード
       nodes.push(fo(catX, catCY - catH / 2, catW, catH,
         nodeDiv(catW, catH, c.color + '22', c.color,
-          `${c.emoji} ${esc(c.label)}（${c.items.length}）`, 700, 13)));
+          `${esc(c.label)}（${c.items.length}）`, 700, 13)));
       // 項目
       const n = c.items.length;
       const itemsH = n * (itemH + vGap) - vGap;
@@ -250,11 +232,12 @@ export function renderMindMap(data) {
     nodeDiv(centerW, centerH, '#2c3e50', '#2c3e50',
       `<span style="color:#fff;">${esc(title)}</span>`, 700, 14)));
 
-  // メタ情報
+  // メタ情報 (アイコンなし・ラベル付き)
   const metaParts = [];
-  if (meta.date) metaParts.push(`📅 ${esc(meta.date)}`);
-  if (meta.location) metaParts.push(`📍 ${esc(meta.location)}`);
-  if (Array.isArray(meta.attendees) && meta.attendees.length) metaParts.push(`👥 ${esc(meta.attendees.join('、'))}`);
+  if (meta.date) metaParts.push(`${esc(t('txt-date'))}：${esc(meta.date)}`);
+  if (meta.location) metaParts.push(`${esc(t('txt-location'))}：${esc(meta.location)}`);
+  if (meta.project) metaParts.push(`${esc(t('txt-project'))}：${esc(meta.project)}`);
+  if (Array.isArray(meta.attendees) && meta.attendees.length) metaParts.push(`${esc(t('txt-attendees'))}：${esc(meta.attendees.join('、'))}`);
 
   const svg = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg" style="max-width:100%;height:auto;">${paths.join('')}${nodes.join('')}</svg>`;
 
