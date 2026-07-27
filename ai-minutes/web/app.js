@@ -837,10 +837,11 @@ body{font-family:'Noto Sans JP','Yu Gothic',sans-serif;background:#f4f6f8;margin
 .mn-mm-meta{text-align:center;color:var(--s);font-size:.9rem;margin-bottom:12px}
 .mn-mindmap-wrap{overflow-x:auto;text-align:center}.mn-mindmap-wrap svg{max-width:100%;height:auto}
 .mn-footnote{margin-top:30px;padding-top:14px;border-top:1px solid var(--l);font-size:.78rem;color:var(--d);text-align:center}
-@page{size:A4;margin:16mm}
+@page{size:A4;margin:20mm 16mm 16mm}
 @media print{
  body{background:#fff;padding:0}
- .minutes-output{max-width:none;box-shadow:none;border-radius:0;padding:0 8mm;margin:0;font-size:10.6pt;line-height:1.55;color:#000;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .minutes-output{max-width:none;box-shadow:none;border-radius:0;padding:8mm 8mm 8mm;margin:0;font-size:10.6pt;line-height:1.55;color:#000;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .mn-header{margin-top:2mm}
  .mn-title{font-size:16pt}.mn-section-head{font-size:12pt}.mn-section{margin-bottom:18px}
  .mn-section,.mn-item,.mn-topic{break-inside:avoid;page-break-inside:avoid}
  .mn-header,.mn-section-head{break-after:avoid;page-break-after:avoid}

@@ -539,7 +539,7 @@
    四方の余白が全ページに効く（position:absolute は余白が消えるため使わない）。
    ============================================================ */
 @media print {
-  @page { size: A4; margin: 16mm; }
+  @page { size: A4; margin: 20mm 16mm 16mm; } /* 上を厚めに（タイトル上の余白を確保） */
   body { background: #fff !important; }
 
   /* 議事録以外の画面 UI をすべて非表示 */
@@ -553,13 +553,16 @@
   .container { max-width: none !important; margin: 0 !important; padding: 0 !important; }
   .tool-main { padding: 0 !important; margin: 0 !important; }
   #output-section { display: block !important; margin: 0 !important; }
-  /* 左右は @page の余白 + 本文パディングで確実に余白を確保 (印刷ダイアログの余白設定に依存しない) */
+  /* 上下左右とも @page の余白 + 本文パディングで確実に余白を確保
+     (印刷ダイアログの余白設定に依存しない。上はタイトルが詰まらないよう厚め) */
   .minutes-output {
     box-shadow: none !important; border-radius: 0 !important;
-    padding: 0 8mm !important; margin: 0 !important;
+    padding: 8mm 8mm 8mm !important; margin: 0 !important;
     font-size: 10.6pt; line-height: 1.55; color: #000;
     -webkit-print-color-adjust: exact; print-color-adjust: exact;
   }
+  /* タイトルブロック自体にも上の余白を少し持たせる */
+  .mn-header { margin-top: 2mm; }
 
   .mn-title { font-size: 16pt; }
   .mn-section-head { font-size: 12pt; }
