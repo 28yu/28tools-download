@@ -535,20 +535,31 @@
 
 /* ============================================================
    印刷（A4 でバランスよく収まるように）
+   議事録以外の UI を隠し、議事録を通常フローで流すことで @page の
+   四方の余白が全ページに効く（position:absolute は余白が消えるため使わない）。
    ============================================================ */
 @media print {
-  @page { size: A4; margin: 16mm 15mm; }
-  body { background: #fff; }
-  body * { visibility: hidden; }
-  #minutes-output, #minutes-output * { visibility: visible; }
-  #minutes-output {
-    position: absolute; left: 0; top: 0; width: 100%;
+  @page { size: A4; margin: 18mm 16mm; }
+  body { background: #fff !important; }
+
+  /* 議事録以外の画面 UI をすべて非表示 */
+  #header-container, #sidebar-container, .breadcrumb,
+  .page-title, .page-description, .privacy-notice, .accuracy-notice,
+  .record-hero, #advanced-panel, .site-footer, .output-toolbar {
+    display: none !important;
+  }
+
+  /* ラッパーの余白・装飾をリセットして議事録だけを普通に流す */
+  .container { max-width: none !important; margin: 0 !important; padding: 0 !important; }
+  .tool-main { padding: 0 !important; margin: 0 !important; }
+  #output-section { display: block !important; margin: 0 !important; }
+  .minutes-output {
     box-shadow: none !important; border-radius: 0 !important;
     padding: 0 !important; margin: 0 !important;
-    font-size: 10.6pt; line-height: 1.55;
-    color: #000;
+    font-size: 10.6pt; line-height: 1.55; color: #000;
     -webkit-print-color-adjust: exact; print-color-adjust: exact;
   }
+
   .mn-title { font-size: 16pt; }
   .mn-section-head { font-size: 12pt; }
   .mn-section { margin-bottom: 18px; }
