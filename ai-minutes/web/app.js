@@ -6,7 +6,9 @@ import { generateWithGemini, translateMinutes } from './lib/gemini.js';
 import { transcribeAudio, structureHeuristically } from './lib/transcribe.js';
 import { mountMinutes, minutesToText } from './lib/render.js';
 import { t, setLang, getLang } from './lib/i18n.js';
-import { MicRecorder, MicTester, listMicrophones, onDeviceChange, formatDuration } from './lib/recorder.js';
+import { MicRecorder, SegmentedMicRecorder, MicTester, listMicrophones, onDeviceChange, formatDuration } from './lib/recorder.js';
+import { SegmentSaver } from './lib/saver.js';
+import { mergeSegments, segmentLabel } from './lib/merge.js';
 
 const $ = (id) => document.getElementById(id);
 const APIKEY_STORE = 'ai-minutes-gemini-key';
@@ -30,6 +32,19 @@ const state = {
 const recorder = new MicRecorder();
 const tester = new MicTester();
 let _previewUrl = null;
+
+// 長時間モード（10分ごとに自動分割・保存・Gemini処理・結合）の状態
+const segRecorder = new SegmentedMicRecorder();
+const longrec = {
+  active: false,
+  saver: new SegmentSaver(),
+  saveMode: 'download', // 'folder' | 'download'
+  intervalMin: 10,
+  sessionLabel: '',
+  segments: [],         // index → { index, startSec, durationSec, status, data, err }
+  queue: Promise.resolve(), // 保存→Gemini 処理を直列化
+  eventLogged: false,
+};
 
 const getSelectedDeviceId = () => $('mic-select').value || undefined;
 
@@ -117,6 +132,12 @@ function setupRecorder() {
   const status = $('record-status');
 
   btn.addEventListener('click', async () => {
+    // 長時間モードが ON のときは専用フローに委譲
+    if ($('longrec-enable') && $('longrec-enable').checked) {
+      await handleLongRecClick(btn, status);
+      return;
+    }
+
     if (recorder.isRecording) {
       // 停止 → 変換
       btn.disabled = true;
@@ -151,6 +172,221 @@ function setupRecorder() {
       status.textContent = '❌ ' + err.message;
     }
   });
+}
+
+/* ---------- 長時間モード（自動分割 → 保存 → Gemini → 結合） ---------- */
+function setupLongRec() {
+  const enable = $('longrec-enable');
+  if (!enable) return;
+  const opts = $('longrec-opts');
+  const sync = () => { if (opts) opts.classList.toggle('hidden', !enable.checked); };
+  enable.addEventListener('change', sync);
+  sync();
+}
+
+// 「デスクトップ_議事録_20260727-1530」のようなセッション接頭辞。
+function sessionLabelNow() {
+  const d = new Date();
+  const p = (n) => String(n).padStart(2, '0');
+  return `${t('lr-file-prefix')}_${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}`;
+}
+
+async function handleLongRecClick(btn, status) {
+  // --- 停止 ---
+  if (segRecorder.isRecording) {
+    btn.disabled = true;
+    status.textContent = t('lr-finishing');
+    try {
+      await segRecorder.stop();     // 最後のセグメントを確定
+      await longrec.queue;          // 保存・Gemini 処理の完了を待つ
+      finalizeLongRec();
+    } catch (err) {
+      console.error(err);
+      status.textContent = '❌ ' + err.message;
+    } finally {
+      longrec.active = false;
+      btn.classList.remove('recording');
+      btn.textContent = t('rec-start');
+      btn.disabled = false;
+    }
+    return;
+  }
+
+  // --- 開始前チェック（全自動なので高精度版＋キー必須） ---
+  if (getMode() !== 'gemini') { alert(t('lr-need-gemini')); return; }
+  const apiKey = $('apikey-input').value.trim();
+  if (!apiKey) { alert(t('al-need-key')); return; }
+
+  // --- 保存先フォルダを選択（クリック直後のユーザー操作が必要） ---
+  longrec.saver.reset();
+  if (longrec.saver.supported) {
+    try {
+      await longrec.saver.chooseFolder();
+    } catch (e) {
+      // ダイアログをキャンセル → 開始を中止（勝手にダウンロード保存はしない）
+      status.textContent = t('lr-folder-cancel');
+      return;
+    }
+  }
+  longrec.saveMode = longrec.saver.mode;
+
+  // --- 状態リセット & 録音開始 ---
+  if (tester.isActive) stopMicTest();
+  longrec.active = true;
+  longrec.eventLogged = false;
+  longrec.intervalMin = parseInt(($('longrec-interval') || {}).value, 10) || 10;
+  longrec.sessionLabel = sessionLabelNow();
+  longrec.segments = [];
+  longrec.queue = Promise.resolve();
+  state.lastData = null;
+  state.translatedByLang = {};
+
+  const panel = $('longrec-panel');
+  if (panel) panel.classList.remove('hidden');
+  renderSegmentList();
+  logEl.textContent = '';
+  showStatus(t('lr-recording-start', {
+    min: longrec.intervalMin,
+    where: longrec.saveMode === 'folder' ? t('lr-how-folder') : t('lr-how-download'),
+  }));
+  log(t('lr-log-start', {
+    min: longrec.intervalMin,
+    where: longrec.saveMode === 'folder' ? t('lr-how-folder') : t('lr-how-download'),
+  }));
+
+  try {
+    await segRecorder.start({
+      onTick: (sec) => {
+        status.textContent = t('lr-recording', {
+          time: formatDuration(sec),
+          part: longrec.segments.length + 1,
+        });
+      },
+      onSegment: (seg) => onSegmentReady(seg, apiKey),
+      deviceId: getSelectedDeviceId(),
+      segmentMs: longrec.intervalMin * 60 * 1000,
+    });
+    btn.classList.add('recording');
+    btn.textContent = t('rec-stop');
+    populateMics();
+  } catch (err) {
+    console.error(err);
+    longrec.active = false;
+    status.textContent = '❌ ' + err.message;
+  }
+}
+
+// セグメントが確定したら: 音声を保存 → Gemini で議事録化 → 結合して逐次描画。
+function onSegmentReady(seg, apiKey) {
+  const rec = {
+    index: seg.index,
+    startSec: seg.startSec,
+    durationSec: seg.durationSec,
+    status: 'saving',
+    data: null,
+    err: null,
+  };
+  longrec.segments[seg.index] = rec;
+  renderSegmentList();
+
+  if (seg.error || !seg.file) {
+    rec.status = 'error';
+    rec.err = (seg.error && seg.error.message) || t('lr-seg-rec-fail');
+    renderSegmentList();
+    return;
+  }
+
+  const nn = String(seg.index + 1).padStart(2, '0');
+  const named = new File([seg.file], `${longrec.sessionLabel}_part${nn}.wav`, { type: 'audio/wav' });
+
+  // 保存 → 処理を直列化（順序保持・API 競合回避）。区切りは 10 分間隔なので詰まらない。
+  longrec.queue = longrec.queue.then(async () => {
+    // 1) まず音声を確実に保存（Gemini が失敗しても手元に残す安全網）
+    try {
+      const how = await longrec.saver.save(named);
+      log(t('lr-saved', { name: named.name, how: t(how === 'folder' ? 'lr-how-folder' : 'lr-how-download') }));
+    } catch (e) {
+      log(t('lr-save-fail', { name: named.name }));
+    }
+
+    // 2) Gemini で議事録化
+    rec.status = 'processing';
+    renderSegmentList();
+    try {
+      const data = await generateWithGemini(
+        { apiKey, audioFile: named, materialFiles: [], transcript: '' },
+        (m) => log(`[part${nn}] ${m}`)
+      );
+      rec.data = data;
+      rec.status = 'done';
+      if (!longrec.eventLogged && typeof logToolEvent === 'function') {
+        logToolEvent('minutes-create');
+        longrec.eventLogged = true;
+      }
+      renderMergedProgress();
+    } catch (e) {
+      console.error(e);
+      rec.status = 'error';
+      rec.err = e.message;
+      log(t('lr-seg-fail', { n: nn, msg: e.message }));
+    }
+    renderSegmentList();
+  });
+}
+
+// 途中経過をその都度、結合して描画（翻訳はかけず会議の言語のまま）。
+function renderMergedProgress() {
+  const merged = mergeSegments(longrec.segments);
+  if (!merged) return;
+  state.lastData = merged;
+  state.translatedByLang = { [detectContentLang(merged)]: merged };
+  $('output-section').style.display = 'block';
+  mountMinutes($('minutes-output'), merged, state.style);
+}
+
+// 録音停止後の最終処理: 結合結果を確定し、UI 言語に合わせて表示。
+function finalizeLongRec() {
+  const merged = mergeSegments(longrec.segments);
+  const doneCount = longrec.segments.filter(s => s && s.status === 'done').length;
+  const errCount = longrec.segments.filter(s => s && s.status === 'error').length;
+
+  if (!merged) {
+    showStatus(t('lr-none-done'));
+    return;
+  }
+  state.lastData = merged;
+  state.translatedByLang = { [detectContentLang(merged)]: merged };
+  renderOutput(); // UI 言語に合わせて表示（必要なら翻訳）
+  showStatus(errCount
+    ? t('lr-done-with-err', { done: doneCount, err: errCount })
+    : t('lr-all-done', { n: doneCount }));
+}
+
+// セグメントの進捗リストを描画。
+function renderSegmentList() {
+  const box = $('longrec-segments');
+  if (!box) return;
+  const segs = longrec.segments.filter(Boolean);
+  if (!segs.length) {
+    box.innerHTML = `<p class="lr-seg-empty">${t('lr-waiting')}</p>`;
+    return;
+  }
+  const icon = { saving: '💾', processing: '⏳', done: '✅', error: '⚠️' };
+  box.innerHTML = segs.map(s => {
+    const label = segmentLabel(s);
+    const st = t('lr-status-' + s.status);
+    const detail = s.status === 'error' && s.err ? ` <span class="lr-seg-err">(${escapeHtml(s.err)})</span>` : '';
+    return `<div class="lr-seg lr-seg-${s.status}">
+      <span class="lr-seg-ico">${icon[s.status] || '•'}</span>
+      <span class="lr-seg-name">${t('lr-seg-name', { n: s.index + 1, label })}</span>
+      <span class="lr-seg-status">${st}${detail}</span>
+    </div>`;
+  }).join('');
+}
+
+function escapeHtml(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
 let lastTickSec = 0;
@@ -485,10 +721,11 @@ function applyDynamicLang() {
   applyAudioTitle();
   applyMaterialTitle();
   $('copy-btn').textContent = t('btn-copy');
-  if (!recorder.isRecording) $('record-btn').textContent = t('rec-start');
+  if (!recorder.isRecording && !segRecorder.isRecording) $('record-btn').textContent = t('rec-start');
   if (!tester.isActive) $('mic-test-btn').textContent = t('mic-test');
   populateMics();
   updateSummary();
+  if (longrec.active || longrec.segments.length) renderSegmentList();
   if (state.lastData) {
     renderMinutesForCurrentLang();
   }
@@ -499,6 +736,7 @@ function init() {
   setLang(detectLang());
   setupAudioInput();
   setupRecorder();
+  setupLongRec();
   setupMicTest();
   populateMics();
   onDeviceChange(populateMics);

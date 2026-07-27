@@ -100,15 +100,35 @@ Gemini 側は `responseSchema` でこの形を強制している（JSON モー�
 - キーが無ければ本文は元のまま(見出しのみ翻訳)。
 コピー/HTML保存/スタイル切替は `currentData()` を使い、表示中の翻訳版に追従する。
 
+## 長時間モード（自動分割・保存・全自動作成）
+
+1 時間級の打合せ向けに、録音を続けたまま一定間隔で自動分割し、各区間を Gemini で
+自動議事録化して 1 本に結合する。詳細な判断記録は `CHANGELOG.md`（2026-07-27）。
+
+- `lib/recorder.js` の **`SegmentedMicRecorder`**: 間隔ごとに MediaRecorder を stop→即再開し、
+  単独再生可能な区切り（16kHz mono WAV）を作る。マイクは録音中ずっと開いたまま。
+  ⚠️ 古いレコーダーの `onstop` は次セグメント開始後に発火するため、`onstop` 内で
+  `this.recorder=null` にしないこと（次の参照を壊す）。最短間隔は 30 秒でクランプ。
+- `lib/saver.js` の **`SegmentSaver`**: `showDirectoryPicker` でフォルダ直書き込み。
+  非対応時はダウンロードにフォールバック。書き込みは直列化（同一ハンドル競合回避）。
+  フォルダ選択は**クリック直後**（getUserMedia より前）に呼ぶ＝ユーザージェスチャ消費対策。
+- `lib/merge.js` の **`mergeSegments()`**: 追加 AI 呼び出しなしの決定的結合。
+  要約は `【0〜10分】…` の時間帯付き連結、議論トピックは頭に時間帯ラベル。
+- `app.js`: 保存→Gemini を直列化。**保存が安全網**（Gemini 失敗でも音声は残る＝失敗区間だけ再作成可）。
+  全自動なので**高精度版＋API キー必須**。
+
 ## 変更時の注意
 
 - `includes/sidebar.html` を変更した場合は `js/main.js` の `INCLUDES_VERSION` を bump（CDN キャッシュバスト）。
+- `js/main.js` の翻訳（`aimin-*` 等）を変更したら、各ページの `<script src=".../js/main.js?v=...">` の
+  `?v=` を bump（このツールは `ai-minutes/web/index.html` 側）。
 - ナビ項目はサイト 3 箇所（`index.html` インラインサイドバー / カテゴリグリッド / `includes/sidebar.html`）を同時更新（CLAUDE.md 参照）。
 - 新規ツールページの canonical / OGP / GA / AdSense / sitemap 登録は他ページに揃える。
 
 ## 今後の候補
 
-1. Gemini Files API による長時間音声対応
-2. 議事録テンプレート（議題リスト）の事前注入
-3. 出力 Word/Markdown エクスポート
-4. ブラウザ内 LLM（WebLLM）による簡易版の要約強化
+1. ~~Gemini Files API による長時間音声対応~~ → 実装済み（長時間モード, 2026-07）
+2. 長時間モードの結合サマリを最後にもう一度 Gemini で要約し直す（現状は決定的連結）
+3. 議事録テンプレート（議題リスト）の事前注入
+4. 出力 Word/Markdown エクスポート
+5. ブラウザ内 LLM（WebLLM）による簡易版の要約強化
