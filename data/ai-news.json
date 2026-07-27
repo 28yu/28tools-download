@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-26T04:27:31.360084",
+  "lastUpdated": "2026-07-27T04:37:33.046873",
   "articles": [
     {
       "title": "生成AIで社内マニュアル作成を効率化！ChatGPTでの作り方やプロンプトを徹底解説",
@@ -79,39 +79,6 @@
       "language": "en"
     },
     {
-      "title": "キリンとファンケル、サプリメント開発を支援する「錠剤設計AI」を共同開発",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kirin-fancl-pharmaceutical-ai/",
-      "description": "キリンホールディングスとファンケルは、サプリメントの錠剤設計を支援する「錠剤設計AI」を共同開発しました。複数の物性を予測し、開発の効率化と品質向上を目指します。 このニュースのポイント キリンとファンケルが「錠剤設計A [...] The post キリンとファンケル、サプリメント開発を支援する「錠剤設計AI」を共同開発 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 22 Jul 2026 08:53:24 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/KIRIN-FANCL-pharmaceutical-ai-development.png",
-      "language": "ja"
-    },
-    {
-      "title": "ABEJA、JAXAに宇宙船内ロボット向け音声認識システム提供。宇宙空間のフィジカルAI実装を支援",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/abeja-jaxa-intball2-voice/",
-      "description": "ABEJAは、JAXAから委託を受け、自律飛行型カメラロボット向けの音声認識システムを提供しました。国際宇宙ステーション（ISS）の「きぼう」日本実験棟内での軌道上実証において、宇宙飛行士の音声指示通りにロボットを操作す [...] The post ABEJA、JAXAに宇宙船内ロボット向け音声認識システム提供。宇宙空間のフィジカルAI実装を支援 first appeared on AIポータル...",
-      "publishedDate": "Wed, 22 Jul 2026 08:49:42 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/abeja-jaxa-intball2-voice-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "富士通、大規模言語モデルの大幅なコスト削減を実現するアーキテクチャ「PHOTON」開発。Transformerの最大475倍の出力トークン数を持つ",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/fujitsu-development-photon/",
-      "description": "富士通は、大規模言語モデルの大幅なコスト削減を実現するアーキテクチャであるPHOTONを開発しました。主流基盤であるTransformerの最大475倍のマルチクエリー性能を発揮します。 このニュースのポイント 富士通が [...] The post 富士通、大規模言語モデルの大幅なコスト削減を実現するアーキテクチャ「PHOTON」開発。Transformerの最大475倍の出力トークン数を持つ ...",
-      "publishedDate": "Wed, 22 Jul 2026 08:44:29 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/Parallel-Hierarchical-Operation-for-TOp-down.png",
-      "language": "ja"
-    },
-    {
       "title": "【Gemini 3.5 Flash Cyber】Google発サイバーセキュリティ特化AIの性能・仕組み・活用シーンを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/gemini-3-5-flash-cyber/",
@@ -132,17 +99,6 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "【Gemini 3.6 Flash・3.5 Flash-Lite】トークン効率と低価格を両立したGoogleの最新AIモデルの性能・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gemini-3-6-flash-3-5-flash-lite/",
-      "description": "2026年7月22日、GoogleはGeminiシリーズの最新モデル「Gemini 3.6 Flash」と「Gemini 3.5 Flash-Lite」を同時に公開しました！ Gemini 3.6 Flashは「ワークホ [...]...",
-      "publishedDate": "Wed, 22 Jul 2026 05:22:35 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-3.6-Flash・Gemini-3.5-Flash-Lite-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
@@ -332,17 +288,6 @@
       "language": "en"
     },
     {
-      "title": "Qwen3.8とは？Fable 5に次ぐと掲げる2.4Tオープンウェイトモデルの実力と使い方",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwen3-8/",
-      "description": "2026年7月、アリババのQwenチームから次世代モデル「Qwen3.8」シリーズが発表されました。 今回発表された「Qwen3.8」は、2.4Tパラメータという超大規模スケールを持つ、近日オープンウェイト公開予定の基盤 [...]...",
-      "publishedDate": "Tue, 21 Jul 2026 04:32:38 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.8-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
       "titleJa": "David Vélez と Robin Vince が OpenAI Foundation と OpenAI Group PBC の役員に加わります",
       "link": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
@@ -431,83 +376,6 @@
       "language": "ja"
     },
     {
-      "title": "フォーティエンス、財務課題をAIで可視化する「次世代トレジャリー対面型クイック診断」提供開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/fortience-treasury-quick-assessment/",
-      "description": "フォーティエンスコンサルティングは、財務課題を即座に可視化する「次世代トレジャリー対面型クイック診断」の提供を開始しました。生成AIで作成した体験画面で、将来のキャッシュフロー管理の具体像を提示します。 このニュースのポ [...] The post フォーティエンス、財務課題をAIで可視化する「次世代トレジャリー対面型クイック診断」提供開始 first appeared on AIポータルメディ...",
-      "publishedDate": "Thu, 23 Jul 2026 08:16:58 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/fortience-treasury-quick-assessment.png",
-      "language": "ja"
-    },
-    {
-      "title": "町田市、AI活用資源循環モデルの実証実験開始。LINEで写真送るとごみ分別を判定、収集現場のDX化も推進",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/machida-ai-garbage-separation/",
-      "description": "町田市は、電気通信大学とBorzoi AIの協力により、AI技術を活用した次世代型資源循環モデルの実証実験を開始します。市民向けの直感的な分別を支援し、収集現場のDX化を推進します。 このニュースのポイント 町田市、電通 [...] The post 町田市、AI活用資源循環モデルの実証実験開始。LINEで写真送るとごみ分別を判定、収集現場のDX化も推進 first appeared on AIポ...",
-      "publishedDate": "Thu, 23 Jul 2026 08:13:36 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/machida-ai-garbage-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "みずほFG、金融機関向けAI活用基盤高度化の検討を開始。AIエージェント活用拡大に向けNVIDIA技術を活用",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/mizuho-nvidia-ai-infrastructure/",
-      "description": "みずほフィナンシャルグループは、NVIDIAの技術を活用し、金融機関向けAI活用基盤の高度化に向けた検討を開始しました。高性能な計算基盤の強化とセキュアな実行環境の技術検証を推進し、機密情報を厳格に保護しながら、AIエー [...] The post みずほFG、金融機関向けAI活用基盤高度化の検討を開始。AIエージェント活用拡大に向けNVIDIA技術を活用 first appeared on A...",
-      "publishedDate": "Thu, 23 Jul 2026 08:10:14 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/mizuho-nvidia-ai-infra-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "STATION Ai、製造業向けデータ収集センター設立。フィジカルAIの社会実装を加速",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/station-ai-data-foundry/",
-      "description": "STATION Aiは、製造業におけるフィジカルAIの社会実装を加速させるため、データ収集センター「STATION Ai Data Foundry」を設立しました。2026年12月の稼働開始を目指します。 このニュースの [...] The post STATION Ai、製造業向けデータ収集センター設立。フィジカルAIの社会実装を加速 first appeared on AIポータルメディアAI...",
-      "publishedDate": "Thu, 23 Jul 2026 08:10:04 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/STATIONAI-Date-center.png",
-      "language": "ja"
-    },
-    {
-      "title": "ビジネス職のAI活用調査を実施。AIエージェント化で生産性が上がったのは54%でチャット層の約3.8倍",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-agent-productivity-report/",
-      "description": "GiftXが、「ビジネス職生成AI活用実態調査（2026年版）」の結果を発表しました。AIエージェント化している層の54%は生産性が「明確に上がった」と回答しており、チャット止まり層の3.8倍となりました。 このニュース [...] The post ビジネス職のAI活用調査を実施。AIエージェント化で生産性が上がったのは54%でチャット層の約3.8倍 first appeared on AIポー...",
-      "publishedDate": "Thu, 23 Jul 2026 08:04:51 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/ai-agent-productivity-report-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "AIOpsとは？IT運用の未来を変える仕組みと次世代ツールの選び方",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aiops-devops-mlops-it/",
-      "description": "クラウドとオンプレミスが混在し、システムが複雑になるほど、運用の現場は膨大なログやアラートへの対応に追われがちです。こうした課題への対策として注目されているのが、AI（人工知能）でIT運用を高度化するAIOpsです。 A [...] The post AIOpsとは？IT運用の未来を変える仕組みと次世代ツールの選び方 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 23 Jul 2026 07:42:12 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/aiops.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "「AI博覧会 Summer 2026」カンファレンス第1弾スピーカーを発表！二足歩行ヒューマノイドのドーナッツロボティクス、国産LLM「PLaMo」のPreferred Networksが登壇",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aihaku-sum2026-1stsp/",
-      "description": "Google・サイバーエージェント・GMOペパボもAI活用の最前線を解説 国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年8月26日（水）・27日（木）の2日間、新宿住友 [...] The post 「AI博覧会 Summer 2026」カンファレンス第1弾スピーカーを発表！二足歩行ヒューマノイドのドーナッツロボティクス、国産LLM「PLaMo」...",
-      "publishedDate": "Thu, 23 Jul 2026 04:00:35 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/aihakurankaisummer_speaker01.png",
-      "language": "ja"
-    },
-    {
       "title": "【Qwen-Image-3.0】文字も図表も1枚に収めるアリババの画像生成AIの実力を徹底解説！",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/qwen-image-3-0/",
@@ -519,6 +387,17 @@
       "language": "ja"
     },
     {
+      "title": "ChatGPTで写真処理・加工もできる！画像読み込み機能の使い方と活用事例を紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/chatgpt-photo/",
+      "description": "ChatGPTは文章生成以外に何ができるのかと気になっている方も多いのではないでしょうか。実はChatGPTの写真読み込み機能を使うことで、文字起こしやデータ化などによるビジネス支援や調べものなど、幅広い用途に活用できま [...]...",
+      "publishedDate": "Sun, 26 Jul 2026 13:59:00 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/ChatGPT-Photo_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "【Claude Opus 5】Fable 5級の知性を半額で実現したモデルの性能・料金・使い方を徹底解説！",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/claude-opus-5/",
@@ -527,6 +406,61 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Opus-5-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【8/21開催】建設業向けAI戦略ウェビナー！ 図面・積算・設計業務のAI活用から、4Dシミュレーターによる施工計画まで、注目の最新事例をご紹介",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/20260821webinar/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年8月21日（金）12:00より、AIsmiley初となる建設業界に特化した「建設業向けAI戦略ウェビナー」を開催します。 [...] The post 【8/21開催】建設業向けAI戦略ウェビナー！ 図面・積算・設計業務のAI活用から、4Dシミュレーターによる施工計画まで、注目の最新事例をご紹介 fi...",
+      "publishedDate": "Mon, 27 Jul 2026 04:01:32 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/kkg.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Claude CodeとGitHubの連携方法とは？活用例・ソースコード流出の正しい見方まで徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-code-github/",
+      "description": "近年、AIコーディングエージェント「Claude Code」の利用が広がっています。 Claude Codeは、GitHub App・GitHub Actions・PRやIssue上での@claudeメンションといった公 [...]...",
+      "publishedDate": "Mon, 27 Jul 2026 03:36:36 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-GitHub_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "LINEのAI「Agent i」の返信機能とは？使い方・消し方・料金を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/agent-i-reply/",
+      "description": "LINEのトーク画面に「返信を提案」と表示されたり、「Agent i」という文字を見かけたりして、何の機能なのか、勝手に返信が送信されてしまうのではないかと戸惑っていませんか。 実は現在のLINEには、質問や情報収集がで [...] The post LINEのAI「Agent i」の返信機能とは？使い方・消し方・料金を解説 first appeared on AIポータルメディアAIsmiley...",
+      "publishedDate": "Mon, 27 Jul 2026 01:19:58 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/lineaiagentireplies01.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Agent i（旧LINE AI）が邪魔なときの消し方と再表示の方法を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/agent-i-obstacle/",
+      "description": "LINEのメッセージ入力欄の下に表示される「Agent i」が邪魔に感じ、非表示にする方法を探していませんか。Agent iはトーク画面のメニューから非表示にできますが、設定はすべてのトークルームに適用され、非表示期間は [...] The post Agent i（旧LINE AI）が邪魔なときの消し方と再表示の方法を解説 first appeared on AIポータルメディアAIsmiley...",
+      "publishedDate": "Mon, 27 Jul 2026 01:18:12 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/lineaiagentiannoying01.webp",
+      "language": "ja"
+    },
+    {
+      "title": "LINE AIとは？Agent iとの違いやできること、使い方、料金を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-line-ai-agent-i/",
+      "description": "LINEを開いたら、見慣れた「LINE AI」のアイコンが「Agent i」に変わっていて戸惑った方もいるのではないでしょうか。 2026年4月にYahoo! JAPANのAIアシスタントと統合され、「Agent i」と [...] The post LINE AIとは？Agent iとの違いやできること、使い方、料金を解説 first appeared on AIポータルメディアAIsmiley...",
+      "publishedDate": "Mon, 27 Jul 2026 01:17:31 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/lineaiagenti01.webp",
       "language": "ja"
     },
     {
@@ -549,6 +483,94 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Copilot-API_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Muse Videoとは？Meta最新動画生成AIの使い方と競合との比較",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-muse-video/",
+      "description": "Muse Videoは、2026年7月にMetaが発表した最新の動画生成AIです。音声付きで動画を生成でき、Meta関連のプラットフォームやシステムとのシームレスな連携も見込まれています。また、性能面でも発表直後からベン [...] The post Muse Videoとは？Meta最新動画生成AIの使い方と競合との比較 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 24 Jul 2026 07:27:40 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/musevideomain.png",
+      "language": "ja"
+    },
+    {
+      "title": "Muse Imageとは?Metaの新しい画像生成AIの使い方・日本での提供時期",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-muse-image/",
+      "description": "Muse Imageは、Metaが2026年7月7日（米国時間）に公開した新しい画像生成AIです。InstagramやWhatsAppなどMeta社のプラットフォーム内の機能として盛り込まれるなど、創作パートナーとしての [...] The post Muse Imageとは?Metaの新しい画像生成AIの使い方・日本での提供時期 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Fri, 24 Jul 2026 07:26:48 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/museimagemain.png",
+      "language": "ja"
+    },
+    {
+      "title": "Codex MCP完全ガイド：基礎知識から実践的な使い方・ツール連携まで徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/codex-mcp-openai-cli/",
+      "description": "「CodexにGitHubの仕様書やFigmaのデザインを読み込ませるために、毎回テキストをコピペするのが面倒…」と感じていませんか？ OpenAIの「Codex」と、外部ツール連携規格である「MCP」を組み合わせれば、 [...] The post Codex MCP完全ガイド：基礎知識から実践的な使い方・ツール連携まで徹底解説 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Fri, 24 Jul 2026 02:40:38 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/codexmcp.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ルールベースAIとは？機械学習との違いから活用事例・使い分けまで解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/rule-based-ai-rpa-dx/",
+      "description": "判断の根拠をはっきり示し、決められた処理を正確に実行する「ルールベースAI」。生成AIが普及した現在でも、カスタマーサポート、品質管理などの確実性が求められる現場で活躍し続けています。 しかし、「機械学習や生成AI、RP [...] The post ルールベースAIとは？機械学習との違いから活用事例・使い分けまで解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 24 Jul 2026 02:38:53 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/rulebaseda.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "MFS、無料の不動産AI査定サービス「CAPS」提供開始。約450万件の価格データから価値を推定",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/mfs-invase-caps-real-estate-ai/",
+      "description": "MFSは、ユーザーが無料で使える不動産AI査定サービス「CAPS」の提供を開始しました。約450万件のデータを学習したAIにより、誤差率中央値6.1%の高精度な査定を実現します。 このニュースのポイント MFSが、全国の [...] The post MFS、無料の不動産AI査定サービス「CAPS」提供開始。約450万件の価格データから価値を推定 first appeared on AIポータルメ...",
+      "publishedDate": "Fri, 24 Jul 2026 02:00:39 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/caps-real-estate-ai-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "アイスマイリー、8/5（水）から2日間、「AI・人工知能EXPO NEO」にブース出展",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/nextechweek-neo-2026/",
+      "description": "AIsmileyとAIsmiley Communityは、2026年8月5日（水）～8月6日（木）に東京国際フォーラムにて開催の「AI・人工知能EXPO NEO」にブースを出展します。 会場では、最新のAIソリューション [...] The post アイスマイリー、8/5（水）から2日間、「AI・人工知能EXPO NEO」にブース出展 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Fri, 24 Jul 2026 02:00:39 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/ai-nextech-neo-02.png",
+      "language": "ja"
+    },
+    {
+      "title": "MCP仕様が明日アップデート、7月28日版MCPからはステートレスな接続が正式仕様に。GitHub MCPサーバが早くも対応発表",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/mcp728mcpgithub_mcp.html",
+      "description": "AIツールとサービスを接続するための事実上の業界標準となっている通信プロトコルMCP（Model Context Protocol）の7月28日版仕様の登場が目前となっています。 MCPの仕様は継続的にアップデートされ続けており、GitHu......",
+      "publishedDate": "2026-07-26T15:06:36Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/mcp20260728.png",
+      "language": "ja"
+    },
+    {
+      "title": "ゲームエンジン「Unity 7」発表、ランタイム基盤がMonoから.NET CoreCLRへ移行。高速化により、開発画面からほぼ瞬時にプレイモードが起動",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/unity_7mononet_coreclr.html",
+      "description": "Unity社は代表的なゲームエンジンの1つである「Unity」の次世代版となる「Unity 7」を発表しました。 Introducing Unity 7 - built for a faster-moving, more open indu......",
+      "publishedDate": "2026-07-26T15:02:22Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/unity7-ann.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/nensyu2026.png",
-      "language": "ja"
-    },
-    {
-      "title": "IT系上場企業の平均年収を業種別にみてみた 2026年版［前編］ ～ ネットベンチャー、ゲーム、メディア系",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/it_2026_1.html",
-      "description": "IT系企業で平均年収が高いのは、勢いのあるネットベンチャー系企業なのか、それとも伝統的なSIerなのでしょうか。毎年恒例の記事を今年も公開します。 上場企業は毎年「有価証券報告書」の発行を義務づけられており、そこには従業員の人数や平均年齢......",
-      "publishedDate": "2026-07-12T15:02:28Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/nensyu2026.png",
-      "language": "ja"
-    },
-    {
-      "title": "JavaScriptランタイムのBun、Claude Fable 5を11日間稼働させてZigからRustへの移植を実現。Claudeをどう使ったのか？",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/javascriptbunclaude_fable_511zigrustclaude.html",
-      "description": "JavaScriptランタイム「Bun」の作者であるJarred Sumner氏は、7月8日付けで公開したBun公式ブログの記事「Rewriting Bun in Rust | Bun Blog」で、約53万5000行のZig言語のコードを......",
-      "publishedDate": "2026-07-09T15:47:05Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/qFZWff4P.jpg",
       "language": "ja"
     }
   ]
