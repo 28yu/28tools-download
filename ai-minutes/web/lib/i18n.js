@@ -46,7 +46,7 @@ const DICT = {
   'mic-label-n':    { ja: 'マイク {n}', en: 'Microphone {n}', zh: '麦克风 {n}' },
   'mic-test':       { ja: '🔊 マイクをテスト', en: '🔊 Test mic', zh: '🔊 测试麦克风' },
   'mic-test-stop':  { ja: '⏹ テスト停止', en: '⏹ Stop test', zh: '⏹ 停止测试' },
-  'mic-test-hint':  { ja: '話しかけるとバーが動けばOKです', en: 'Speak — if the bar moves, it works', zh: '说话时指示条移动即正常' },
+  'mic-test-hint':  { ja: '話しかけてメーターが動けばOKです', en: 'Speak — if the meter moves, it works', zh: '说话时电平表跳动即正常' },
 
   // ---------- 録音ボタン（メイン） ----------
   'rec-hero-start':   { ja: '録音を開始', en: 'Start recording', zh: '开始录音' },

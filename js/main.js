@@ -7527,6 +7527,11 @@ translations.filledRegion = {
             en: 'Just record your meeting. Minutes are created automatically when you stop.',
             zh: '只需录制会议。停止后自动生成会议记录。'
         },
+        'aimin-mic-meter-caption': {
+            ja: '🎙️ 入力レベル — 話すとメーターが動けばOK',
+            en: '🎙️ Input level — if the meter moves when you speak, it works',
+            zh: '🎙️ 输入电平 — 说话时电平表跳动即正常'
+        },
         'aimin-advanced-title': {
             ja: '⚙️ 詳細・任意入力（処理方法 / API キー / 保存先 / ファイルから作成）',
             en: '⚙️ Advanced / optional (mode / API key / save folder / from a file)',

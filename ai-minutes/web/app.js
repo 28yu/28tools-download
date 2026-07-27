@@ -69,14 +69,40 @@ async function populateMics() {
 }
 
 /* ---------- マイクテスト (レベルメーター) ---------- */
+const MIC_METER_SEGMENTS = 24;
+
+// セグメント（LED 風の目盛り）を一度だけ生成する。
+function buildMicMeter() {
+  const scale = $('mic-meter-scale');
+  if (!scale || scale._built) return;
+  for (let i = 0; i < MIC_METER_SEGMENTS; i++) {
+    const seg = document.createElement('span');
+    seg.className = 'mic-seg';
+    scale.appendChild(seg);
+  }
+  scale._built = true;
+}
+
+// 入力レベル(0..1)に応じてセグメントを点灯。
+function setMicMeterLevel(level) {
+  const scale = $('mic-meter-scale');
+  if (!scale || !scale._built) return;
+  const segs = scale.children;
+  const on = Math.round(Math.max(0, Math.min(1, level)) * segs.length);
+  for (let i = 0; i < segs.length; i++) {
+    segs[i].classList.toggle('on', i < on);
+  }
+}
+
 function setupMicTest() {
   const btn = $('mic-test-btn');
-  const bar = $('mic-meter-bar');
+  buildMicMeter();
   btn.addEventListener('click', async () => {
     if (tester.isActive) { stopMicTest(); return; }
     try {
+      buildMicMeter();
       await tester.start(getSelectedDeviceId(), (level) => {
-        bar.style.width = (level * 100).toFixed(0) + '%';
+        setMicMeterLevel(level);
       });
       $('mic-meter').style.display = 'block';
       btn.textContent = t('mic-test-stop');
@@ -93,7 +119,7 @@ function setupMicTest() {
 function stopMicTest() {
   tester.stop();
   $('mic-meter').style.display = 'none';
-  $('mic-meter-bar').style.width = '0';
+  setMicMeterLevel(0);
   $('mic-test-btn').textContent = t('mic-test');
   $('mic-test-btn').classList.remove('recording');
   if (!recorder.isRecording) $('record-status').textContent = '';
@@ -146,14 +172,15 @@ function setupRecord() {
 }
 
 // 録音ボタンの見た目（アイコン＋ラベル＋赤色）を切替。
+// 待機時は録音マーク（赤丸）、録音中は停止マーク（■）。
 function setRecBtn(recording) {
   const ico = $('rec-hero-ico'), label = $('rec-hero-label'), btn = $('record-btn');
   if (recording) {
-    if (ico) ico.textContent = '🔴';
+    if (ico) ico.textContent = '⏹';
     if (label) label.textContent = t('rec-hero-stop');
     if (btn) btn.classList.add('recording');
   } else {
-    if (ico) ico.textContent = '🎤';
+    if (ico) ico.textContent = '🔴';
     if (label) label.textContent = t('rec-hero-start');
     if (btn) btn.classList.remove('recording');
   }

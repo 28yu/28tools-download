@@ -84,7 +84,7 @@
   <section class="panel record-hero">
     <div class="rec-hero-top">
       <button type="button" class="rec-hero-btn" id="record-btn">
-        <span class="rec-hero-ico" id="rec-hero-ico">🎤</span>
+        <span class="rec-hero-ico" id="rec-hero-ico">🔴</span>
         <span class="rec-hero-label" id="rec-hero-label">録音を開始</span>
       </button>
       <p class="rec-hero-hint" data-lang-key="aimin-rec-hero-hint">打合せを録音するだけ。停止すると自動で議事録ができます。</p>
@@ -96,7 +96,8 @@
       <select id="mic-select" class="mic-select" aria-label="マイク選択"></select>
       <button type="button" class="record-btn mic-test-slim" id="mic-test-btn">🔊 マイクをテスト</button>
       <div class="mic-meter" id="mic-meter" style="display:none">
-        <div class="mic-meter-bar" id="mic-meter-bar"></div>
+        <div class="mic-meter-scale" id="mic-meter-scale" role="meter" aria-label="マイク入力レベル"></div>
+        <div class="mic-meter-caption" data-lang-key="aimin-mic-meter-caption">🎙️ 入力レベル — 話すとメーターが動けばOK</div>
       </div>
     </div>
 
@@ -273,7 +274,7 @@
 <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
 
 <!-- 共通サイト JS (ヘッダー/サイドバーの includes 読み込みと言語切替) -->
-<script src="../../js/main.js?v=20260727-2"></script>
+<script src="../../js/main.js?v=20260727-3"></script>
 <!-- ツール固有 JS -->
 <script type="module" src="./app.js"></script>
 </body>
