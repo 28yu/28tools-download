@@ -184,20 +184,69 @@
 .record-preview { display: block; width: 100%; margin-top: 10px; }
 .record-note { font-size: 0.78rem; color: var(--disabled-gray); line-height: 1.6; margin: 8px 0 0; }
 
-/* ---------- 長時間モード ---------- */
-.longrec {
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px dashed var(--light-concrete);
+/* ---------- 録音ヒーロー（メイン動線） ---------- */
+.record-hero { text-align: center; }
+.rec-hero-top { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.rec-hero-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  min-width: 280px; padding: 22px 40px;
+  border: none; border-radius: 16px; cursor: pointer;
+  background: linear-gradient(135deg, var(--architect-green), var(--blueprint-blue));
+  color: #fff; font-family: inherit; font-size: 1.35rem; font-weight: 700;
+  box-shadow: var(--shadow-medium); transition: all 0.2s ease;
 }
-.longrec-toggle {
-  display: flex; align-items: center; gap: 8px;
-  font-size: 0.86rem; color: var(--concrete-gray);
-  cursor: pointer; line-height: 1.4;
+.rec-hero-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 12px 34px rgba(0,0,0,0.18); }
+.rec-hero-btn:disabled { background: var(--disabled-gray); cursor: not-allowed; transform: none; }
+.rec-hero-ico { font-size: 1.5rem; line-height: 1; }
+.rec-hero-btn.recording {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  animation: rec-pulse 1.4s ease-in-out infinite;
 }
-.longrec-toggle input { width: 16px; height: 16px; cursor: pointer; flex-shrink: 0; }
-.longrec-opts { margin: 10px 0 0; padding-left: 24px; }
-.longrec-opts.hidden, .longrec-panel.hidden { display: none; }
+.rec-hero-hint { margin: 0; font-size: 0.9rem; color: var(--steel-blue); }
+.record-hero .record-status { font-size: 0.9rem; color: var(--concrete-gray); min-height: 1.2em; }
+
+.record-hero .mic-controls.compact {
+  justify-content: center; margin-top: 16px;
+  font-size: 0.82rem;
+}
+.mic-test-slim { padding: 6px 12px !important; font-size: 0.8rem !important; }
+.record-hero .mic-meter { max-width: 320px; margin-left: auto; margin-right: auto; }
+
+/* 初回セットアップ帯 */
+.setup-strip {
+  display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  justify-content: center; margin-top: 16px; padding: 10px 16px;
+  background: rgba(230, 126, 34, 0.08);
+  border: 1px solid rgba(230, 126, 34, 0.35);
+  border-radius: 10px; font-size: 0.84rem; color: var(--concrete-gray);
+}
+.setup-strip.hidden { display: none; }
+
+.record-hero .longrec-panel { text-align: left; max-width: 640px; margin-left: auto; margin-right: auto; }
+.record-hero .status { text-align: left; max-width: 640px; margin-left: auto; margin-right: auto; }
+.record-hero .record-note { margin-top: 16px; }
+
+/* ---------- 詳細・任意入力（折りたたみ） ---------- */
+.advanced { padding: 0; }
+.advanced-summary {
+  list-style: none; cursor: pointer;
+  padding: 20px 32px; font-weight: 600; color: var(--concrete-gray);
+  font-size: 0.98rem; user-select: none;
+}
+.advanced-summary::-webkit-details-marker { display: none; }
+.advanced-summary::before { content: '▸ '; color: var(--blueprint-blue); }
+.advanced[open] .advanced-summary::before { content: '▾ '; }
+.advanced-summary:hover { color: var(--blueprint-blue); }
+.advanced-body { padding: 0 32px 28px; }
+.adv-block { padding-top: 20px; margin-top: 20px; border-top: 1px solid var(--light-concrete); }
+.adv-block:first-child { border-top: none; margin-top: 0; padding-top: 4px; }
+.adv-block-title { font-size: 0.9rem; font-weight: 600; color: var(--concrete-gray); margin-bottom: 12px; }
+.adv-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.folder-row { font-size: 0.85rem; color: var(--steel-blue); }
+.folder-status { color: var(--concrete-gray); font-weight: 500; }
+
+/* ---------- 長時間モード（進捗パネル） ---------- */
+.longrec-panel.hidden { display: none; }
 .longrec-interval-label {
   display: inline-flex; align-items: center; gap: 8px;
   font-size: 0.85rem; color: var(--steel-blue);

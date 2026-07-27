@@ -7518,9 +7518,49 @@ translations.filledRegion = {
             zh: '🧠 思维导图'
         },
         'aimin-generate': {
-            ja: '🪄 議事録を作成',
-            en: '🪄 Generate minutes',
-            zh: '🪄 生成会议记录'
+            ja: '🪄 このファイルから議事録を作成',
+            en: '🪄 Create minutes from this file',
+            zh: '🪄 从此文件生成会议记录'
+        },
+        'aimin-rec-hero-hint': {
+            ja: '打合せを録音するだけ。停止すると自動で議事録ができます。',
+            en: 'Just record your meeting. Minutes are created automatically when you stop.',
+            zh: '只需录制会议。停止后自动生成会议记录。'
+        },
+        'aimin-advanced-title': {
+            ja: '⚙️ 詳細・任意入力（処理方法 / API キー / 保存先 / ファイルから作成）',
+            en: '⚙️ Advanced / optional (mode / API key / save folder / from a file)',
+            zh: '⚙️ 详细・可选（处理方式 / API 密钥 / 保存位置 / 从文件生成）'
+        },
+        'aimin-adv-split': {
+            ja: '分割・保存（高精度版・長時間録音）',
+            en: 'Split & save (high-accuracy, long recording)',
+            zh: '分割・保存（高精度版・长时录音）'
+        },
+        'aimin-adv-fromfile': {
+            ja: '録音せずファイル・資料から作成',
+            en: 'Create from a file / materials (no recording)',
+            zh: '不录音，从文件・资料生成'
+        },
+        'aimin-folder-label': {
+            ja: '保存先フォルダ：',
+            en: 'Save folder:',
+            zh: '保存文件夹：'
+        },
+        'aimin-folder-choose': {
+            ja: '選択 / 変更',
+            en: 'Choose / change',
+            zh: '选择 / 更改'
+        },
+        'aimin-setup-need-key': {
+            ja: '高精度版には無料の Gemini API キーが必要です（初回のみ）。',
+            en: 'High-accuracy mode needs a free Gemini API key (first time only).',
+            zh: '高精度版需要免费的 Gemini API 密钥（仅首次）。'
+        },
+        'aimin-setup-enter-key': {
+            ja: 'キーを入力',
+            en: 'Enter key',
+            zh: '输入密钥'
         },
         'aimin-output-title': {
             ja: '📋 議事録プレビュー',

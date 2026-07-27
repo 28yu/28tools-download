@@ -48,8 +48,16 @@ const DICT = {
   'mic-test-stop':  { ja: '⏹ テスト停止', en: '⏹ Stop test', zh: '⏹ 停止测试' },
   'mic-test-hint':  { ja: '話しかけるとバーが動けばOKです', en: 'Speak — if the bar moves, it works', zh: '说话时指示条移动即正常' },
 
+  // ---------- 録音ボタン（メイン） ----------
+  'rec-hero-start':   { ja: '録音を開始', en: 'Start recording', zh: '开始录音' },
+  'rec-hero-stop':    { ja: '停止して議事録を作成', en: 'Stop & create minutes', zh: '停止并生成会议记录' },
+
   // ---------- 長時間モード (app.js) ----------
   'lr-file-prefix':   { ja: '議事録', en: 'minutes', zh: '会议记录' },
+  'lr-need-key-inline': { ja: '高精度版には API キーが必要です。下の「詳細」にキーを入力してください。', en: 'High-accuracy mode needs an API key. Enter it in "Advanced" below.', zh: '高精度版需要 API 密钥。请在下方“详细”中输入。' },
+  'lr-folder-none':   { ja: '未選択（録音開始時に選びます）', en: 'Not set (chosen when recording starts)', zh: '未选择（录音开始时选择）' },
+  'lr-folder-current':{ ja: '📁 {name}', en: '📁 {name}', zh: '📁 {name}' },
+  'lr-folder-unsupported': { ja: 'このブラウザはフォルダ保存に非対応（ダウンロード保存になります）', en: 'This browser cannot save to a folder (files will download instead)', zh: '此浏览器不支持文件夹保存（将改为下载）' },
   'lr-how-folder':    { ja: '選択フォルダ', en: 'chosen folder', zh: '所选文件夹' },
   'lr-how-download':  { ja: 'ダウンロード', en: 'downloads', zh: '下载' },
   'lr-need-gemini':   { ja: '長時間モードは高精度版（Gemini）専用です。処理方法で「高精度版（Gemini）」を選び、API キーを入力してください。', en: 'Long-recording mode requires the high-accuracy (Gemini) mode. Select it and enter your API key.', zh: '长时录音模式仅支持高精度版（Gemini）。请选择该模式并输入 API 密钥。' },
