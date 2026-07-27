@@ -707,7 +707,30 @@ function detectContentLang(data) {
 function renderOutput() {
   $('output-section').style.display = 'block';
   renderMinutesForCurrentLang(); // 現在の UI 言語で表示 (未翻訳かつキーがあれば翻訳)
+  // 印刷/PDF 保存時の既定ファイル名を「日付_会議名」に (ブラウザは document.title を使う)
+  try { document.title = minutesFileBase(); } catch (e) { /* noop */ }
   $('output-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// 出力ファイル名のベース「YYMMDD_会議名」を作る。
+// 日付は会議情報(meta.date)の年月日、無ければ本日。会議名は議事録タイトル。
+function minutesFileBase() {
+  const meta = (currentData() && currentData().meta) || {};
+  const p2 = (n) => String(n).padStart(2, '0');
+  let ymd = '';
+  const m = String(meta.date || '').match(/(\d{4})[^\d]{1,2}(\d{1,2})[^\d]{1,2}(\d{1,2})/);
+  if (m) {
+    ymd = `${p2(Number(m[1]) % 100)}${p2(Number(m[2]))}${p2(Number(m[3]))}`;
+  } else {
+    const now = new Date();
+    ymd = `${p2(now.getFullYear() % 100)}${p2(now.getMonth() + 1)}${p2(now.getDate())}`;
+  }
+  const name = String(meta.title || t('mn-default-title'))
+    .replace(/[\\/:*?"<>|]/g, '')  // ファイル名に使えない文字を除去
+    .replace(/\s+/g, '')
+    .trim()
+    .slice(0, 80) || t('mn-default-title');
+  return `${ymd}_${name}`;
 }
 
 /* ---------- 言語切替時の議事録の翻訳 ---------- */
@@ -776,7 +799,7 @@ function setupOutputActions() {
     const blob = new Blob([html], { type: 'text/html' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `議事録_${new Date().toISOString().slice(0, 10)}.html`;
+    a.download = `${minutesFileBase()}.html`;
     a.click();
   });
 }
@@ -814,10 +837,10 @@ body{font-family:'Noto Sans JP','Yu Gothic',sans-serif;background:#f4f6f8;margin
 .mn-mm-meta{text-align:center;color:var(--s);font-size:.9rem;margin-bottom:12px}
 .mn-mindmap-wrap{overflow-x:auto;text-align:center}.mn-mindmap-wrap svg{max-width:100%;height:auto}
 .mn-footnote{margin-top:30px;padding-top:14px;border-top:1px solid var(--l);font-size:.78rem;color:var(--d);text-align:center}
-@page{size:A4;margin:18mm 16mm}
+@page{size:A4;margin:16mm}
 @media print{
  body{background:#fff;padding:0}
- .minutes-output{max-width:none;box-shadow:none;border-radius:0;padding:0;font-size:10.6pt;line-height:1.55;color:#000;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .minutes-output{max-width:none;box-shadow:none;border-radius:0;padding:0 8mm;margin:0;font-size:10.6pt;line-height:1.55;color:#000;-webkit-print-color-adjust:exact;print-color-adjust:exact}
  .mn-title{font-size:16pt}.mn-section-head{font-size:12pt}.mn-section{margin-bottom:18px}
  .mn-section,.mn-item,.mn-topic{break-inside:avoid;page-break-inside:avoid}
  .mn-header,.mn-section-head{break-after:avoid;page-break-after:avoid}
