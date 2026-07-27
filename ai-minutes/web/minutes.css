@@ -550,14 +550,15 @@
   }
 
   /* ラッパーの余白・装飾をリセットして議事録だけを普通に流す */
+  html, body { height: auto !important; }
   .container { max-width: none !important; margin: 0 !important; padding: 0 !important; }
   .tool-main { padding: 0 !important; margin: 0 !important; }
-  #output-section { display: block !important; margin: 0 !important; }
-  /* 上下左右とも @page の余白 + 本文パディングで確実に余白を確保
-     (印刷ダイアログの余白設定に依存しない。上はタイトルが詰まらないよう厚め) */
+  #output-section { display: block !important; margin: 0 !important; padding: 0 !important; }
+  /* 上・左右は @page の余白 + 本文パディングで確保（ダイアログ余白設定に依存しない）。
+     下パディングは付けない（末尾の余白がページ境界を超えて白紙ページを生むのを防ぐ）。 */
   .minutes-output {
     box-shadow: none !important; border-radius: 0 !important;
-    padding: 8mm 8mm 8mm !important; margin: 0 !important;
+    padding: 8mm 8mm 0 !important; margin: 0 !important;
     font-size: 10.6pt; line-height: 1.55; color: #000;
     -webkit-print-color-adjust: exact; print-color-adjust: exact;
   }
@@ -567,10 +568,14 @@
   .mn-title { font-size: 16pt; }
   .mn-section-head { font-size: 12pt; }
   .mn-section { margin-bottom: 18px; }
+  /* 末尾要素の余白を消して、白紙ページの発生を防ぐ */
+  .minutes-output > *:last-child { margin-bottom: 0 !important; }
+  .mn-footnote { margin-top: 16px; }
   /* 項目・セクション・トピックはページ途中で分断しない */
   .mn-section, .mn-item, .mn-topic { break-inside: avoid; page-break-inside: avoid; }
   .mn-header, .mn-section-head { break-after: avoid; page-break-after: avoid; }
-  .mn-footnote { break-before: avoid; page-break-before: avoid; }
+  /* 末尾のフットノートで無理にページを送らない（白紙ページ対策） */
+  .mn-footnote { break-before: auto; page-break-before: auto; break-inside: avoid; }
   /* マインドマップはページ幅に収める */
   .mn-mindmap-wrap { overflow: visible; }
   .mn-mindmap-wrap svg { max-width: 100%; height: auto; }
