@@ -441,25 +441,25 @@
   background: var(--glass-white);
   border-radius: 14px;
   box-shadow: var(--shadow-medium);
-  padding: 48px 52px;
+  padding: 40px 46px;
   color: var(--concrete-gray);
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 /* ---- 会議ヘッダー ---- */
-.mn-header { text-align: center; margin: 0 0 30px; padding-bottom: 20px; border-bottom: 2px solid var(--concrete-gray); }
-.mn-title { font-size: 1.7rem; font-weight: 700; color: var(--concrete-gray); margin: 0 0 12px; letter-spacing: .02em; }
-.mn-meta { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 20px; font-size: 0.85rem; color: var(--steel-blue); }
+.mn-header { text-align: center; margin: 0 0 18px; padding-bottom: 14px; border-bottom: 2px solid var(--concrete-gray); }
+.mn-title { font-size: 1.6rem; font-weight: 700; color: var(--concrete-gray); margin: 0 0 8px; letter-spacing: .02em; }
+.mn-meta { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 20px; font-size: 0.85rem; color: var(--steel-blue); }
 .mn-meta-tag { display: inline-flex; align-items: baseline; gap: 6px; }
 .mn-meta-tag-label { font-size: 0.72rem; color: var(--disabled-gray); font-weight: 700; }
 
 /* ---- セクション ---- */
-.mn-section { margin: 0 0 26px; }
+.mn-section { margin: 0 0 16px; }
 .mn-section-head {
   display: flex; align-items: center; gap: 10px;
-  font-size: 1.08rem; font-weight: 700; color: var(--concrete-gray);
-  margin: 0 0 12px; padding-bottom: 8px;
+  font-size: 1.05rem; font-weight: 700; color: var(--concrete-gray);
+  margin: 0 0 6px; padding-bottom: 5px;
   border-bottom: 1px solid var(--light-concrete);
 }
 .mn-sec-bar { width: 5px; height: 1.05em; border-radius: 3px; background: var(--steel-blue); flex-shrink: 0; }
@@ -472,36 +472,36 @@
 .mn-sec-summary     .mn-sec-bar { background: var(--concrete-gray); }
 
 /* ---- 概要 ---- */
-.mn-summary { margin: 0; color: var(--steel-blue); line-height: 1.9; }
+.mn-summary { margin: 0; color: var(--steel-blue); line-height: 1.55; }
 
 /* ---- 項目（番号 + 本文 + メタ）---- */
-.mn-item { display: flex; gap: 12px; align-items: baseline; padding: 9px 0; border-bottom: 1px dotted var(--light-concrete); }
+.mn-item { display: flex; gap: 11px; align-items: baseline; padding: 5px 0; border-bottom: 1px dotted var(--light-concrete); }
 .mn-item:last-child { border-bottom: none; }
 .mn-item-num {
-  flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%;
+  flex-shrink: 0; width: 21px; height: 21px; border-radius: 50%;
   display: inline-flex; align-items: center; justify-content: center;
-  font-size: 0.74rem; font-weight: 700; color: #fff;
+  font-size: 0.72rem; font-weight: 700; color: #fff;
   background: var(--steel-blue);
 }
 .mn-sec-decisions .mn-item-num { background: var(--architect-green); }
 .mn-sec-todos     .mn-item-num { background: var(--blueprint-blue); }
 .mn-sec-issues    .mn-item-num { background: var(--construction-orange); }
 .mn-item-body { flex: 1; min-width: 0; }
-.mn-item-text { color: var(--concrete-gray); line-height: 1.7; margin: 0; }
-.mn-item-meta { margin: 4px 0 0; font-size: 0.8rem; display: flex; flex-wrap: wrap; gap: 3px 16px; }
+.mn-item-text { color: var(--concrete-gray); line-height: 1.5; margin: 0; }
+.mn-item-meta { margin: 2px 0 0; font-size: 0.8rem; display: flex; flex-wrap: wrap; gap: 2px 16px; }
 .mn-item-meta .mn-meta-tag { color: var(--steel-blue); }
 
 /* ---- 議論の流れ ---- */
-.mn-topic { margin: 0 0 12px; padding-left: 12px; border-left: 2px solid var(--light-concrete); }
+.mn-topic { margin: 0 0 8px; padding-left: 12px; border-left: 2px solid var(--light-concrete); }
 .mn-topic:last-child { margin-bottom: 0; }
-.mn-topic-title { font-weight: 600; color: var(--concrete-gray); margin-bottom: 4px; }
+.mn-topic-title { font-weight: 600; color: var(--concrete-gray); margin-bottom: 2px; }
 .mn-topic-speaker { font-size: 0.78rem; font-weight: 500; color: var(--disabled-gray); margin-left: 8px; }
-.mn-topic ul { margin: 0; padding-left: 1.4em; color: var(--steel-blue); line-height: 1.75; }
-.mn-topic li { margin-bottom: 2px; }
+.mn-topic ul { margin: 0; padding-left: 1.4em; color: var(--steel-blue); line-height: 1.5; }
+.mn-topic li { margin-bottom: 1px; }
 
 .mn-empty { color: var(--disabled-gray); font-size: 0.9rem; margin: 0; }
 .mn-footnote {
-  margin-top: 30px; padding-top: 14px; border-top: 1px solid var(--light-concrete);
+  margin-top: 18px; padding-top: 12px; border-top: 1px solid var(--light-concrete);
   font-size: 0.78rem; color: var(--disabled-gray); text-align: center;
 }
 
@@ -539,7 +539,8 @@
    四方の余白が全ページに効く（position:absolute は余白が消えるため使わない）。
    ============================================================ */
 @media print {
-  @page { size: A4; margin: 20mm 16mm 16mm; } /* 上を厚めに（タイトル上の余白を確保） */
+  /* 余白は @page で全ページ共通に。→ 2 ページ目以降も上の余白が同じに保たれる */
+  @page { size: A4; margin: 22mm 18mm; }
   body { background: #fff !important; }
 
   /* 議事録以外の画面 UI をすべて非表示 */
@@ -554,28 +555,27 @@
   .container { max-width: none !important; margin: 0 !important; padding: 0 !important; }
   .tool-main { padding: 0 !important; margin: 0 !important; }
   #output-section { display: block !important; margin: 0 !important; padding: 0 !important; }
-  /* 上・左右は @page の余白 + 本文パディングで確保（ダイアログ余白設定に依存しない）。
-     下パディングは付けない（末尾の余白がページ境界を超えて白紙ページを生むのを防ぐ）。 */
+  /* 上下は @page 余白（全ページ共通）に任せる。左右のみ本文パディングで少し補強。
+     下パディングは付けない（末尾余白がページ境界を超えて白紙ページを生むのを防ぐ）。 */
   .minutes-output {
     box-shadow: none !important; border-radius: 0 !important;
-    padding: 8mm 8mm 0 !important; margin: 0 !important;
-    font-size: 10.6pt; line-height: 1.55; color: #000;
+    padding: 0 6mm !important; margin: 0 !important;
+    font-size: 10.4pt; line-height: 1.4; color: #000;
     -webkit-print-color-adjust: exact; print-color-adjust: exact;
   }
-  /* タイトルブロック自体にも上の余白を少し持たせる */
-  .mn-header { margin-top: 2mm; }
 
-  .mn-title { font-size: 16pt; }
-  .mn-section-head { font-size: 12pt; }
-  .mn-section { margin-bottom: 18px; }
+  .mn-title { font-size: 15pt; }
+  .mn-section-head { font-size: 11.5pt; margin-bottom: 5px; padding-bottom: 4px; }
+  .mn-section { margin-bottom: 12px; }
+  .mn-header { margin-bottom: 14px; padding-bottom: 12px; }
+  .mn-item { padding: 4px 0; }
+  .mn-summary, .mn-item-text, .mn-topic ul { line-height: 1.45; }
   /* 末尾要素の余白を消して、白紙ページの発生を防ぐ */
   .minutes-output > *:last-child { margin-bottom: 0 !important; }
-  .mn-footnote { margin-top: 16px; }
+  .mn-footnote { margin-top: 12px; break-inside: avoid; }
   /* 項目・セクション・トピックはページ途中で分断しない */
   .mn-section, .mn-item, .mn-topic { break-inside: avoid; page-break-inside: avoid; }
   .mn-header, .mn-section-head { break-after: avoid; page-break-after: avoid; }
-  /* 末尾のフットノートで無理にページを送らない（白紙ページ対策） */
-  .mn-footnote { break-before: auto; page-break-before: auto; break-inside: avoid; }
   /* マインドマップはページ幅に収める */
   .mn-mindmap-wrap { overflow: visible; }
   .mn-mindmap-wrap svg { max-width: 100%; height: auto; }
