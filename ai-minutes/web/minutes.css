@@ -539,7 +539,7 @@
    四方の余白が全ページに効く（position:absolute は余白が消えるため使わない）。
    ============================================================ */
 @media print {
-  @page { size: A4; margin: 18mm 16mm; }
+  @page { size: A4; margin: 16mm; }
   body { background: #fff !important; }
 
   /* 議事録以外の画面 UI をすべて非表示 */
@@ -553,9 +553,10 @@
   .container { max-width: none !important; margin: 0 !important; padding: 0 !important; }
   .tool-main { padding: 0 !important; margin: 0 !important; }
   #output-section { display: block !important; margin: 0 !important; }
+  /* 左右は @page の余白 + 本文パディングで確実に余白を確保 (印刷ダイアログの余白設定に依存しない) */
   .minutes-output {
     box-shadow: none !important; border-radius: 0 !important;
-    padding: 0 !important; margin: 0 !important;
+    padding: 0 8mm !important; margin: 0 !important;
     font-size: 10.6pt; line-height: 1.55; color: #000;
     -webkit-print-color-adjust: exact; print-color-adjust: exact;
   }
