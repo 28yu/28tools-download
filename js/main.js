@@ -7567,6 +7567,11 @@ translations.filledRegion = {
             en: 'Enter key',
             zh: '输入密钥'
         },
+        'aimin-transcript-file-btn': {
+            ja: '📄 ファイルから読み込み（.txt / .vtt / .srt / .docx）',
+            en: '📄 Load from file (.txt / .vtt / .srt / .docx)',
+            zh: '📄 从文件读取（.txt / .vtt / .srt / .docx）'
+        },
         'aimin-output-title': {
             ja: '📋 議事録プレビュー',
             en: '📋 Minutes preview',

@@ -113,13 +113,6 @@
       <div class="longrec-segments" id="longrec-segments"></div>
     </div>
 
-    <!-- 進捗（録音・処理状況） -->
-    <div class="status" id="status">
-      <div class="status-msg" id="status-msg">処理中...</div>
-      <div class="progress"><div id="progress-bar" style="width: 0%"></div></div>
-      <div class="log" id="log"></div>
-    </div>
-
     <p class="record-note" data-lang-key="aimin-record-note">※ 通常録音では録音データは端末に保存されません（ブラウザのメモリ上で処理）。長時間モードでは分割した音声を選んだフォルダ／ダウンロードに保存します。高精度版では生成時に Google へ送信されます。</p>
   </section>
 
@@ -223,7 +216,12 @@
 
         <div class="transcript-block">
           <label class="input-label" data-lang-key="aimin-transcript-label">📝 文字起こしテキスト <span class="opt">（任意・既にある場合は貼り付け）</span></label>
-          <textarea id="transcript-input" rows="4" data-lang-placeholder="aimin-transcript-ph" placeholder="既に文字起こし済みのテキストがあれば、ここに貼り付けると音声処理を省略できます。"></textarea>
+          <div class="transcript-file-row">
+            <label class="btn-ghost slim transcript-file-btn" for="transcript-file" data-lang-key="aimin-transcript-file-btn">📄 ファイルから読み込み（.txt / .vtt / .srt / .docx）</label>
+            <input type="file" id="transcript-file" accept=".txt,.vtt,.srt,.docx,text/plain" hidden>
+            <span class="transcript-file-status" id="transcript-file-status"></span>
+          </div>
+          <textarea id="transcript-input" rows="5" data-lang-placeholder="aimin-transcript-ph" placeholder="既に文字起こし済みのテキストがあれば、ここに貼り付けると音声処理を省略できます。"></textarea>
         </div>
 
         <div class="actions">
@@ -234,6 +232,13 @@
 
     </div>
   </details>
+
+  <!-- 進捗（録音・ファイルからの作成の状況を表示） -->
+  <div class="status" id="status">
+    <div class="status-msg" id="status-msg">処理中...</div>
+    <div class="progress"><div id="progress-bar" style="width: 0%"></div></div>
+    <div class="log" id="log"></div>
+  </div>
 
   <!-- ========== 出力（議事録は最下部に自動表示） ========== -->
   <section id="output-section" style="display:none">
@@ -271,7 +276,7 @@
 </footer>
 
 <!-- 共通サイト JS (ヘッダー/サイドバーの includes 読み込みと言語切替) -->
-<script src="../../js/main.js?v=20260727-3"></script>
+<script src="../../js/main.js?v=20260727-4"></script>
 <!-- ツール固有 JS -->
 <script type="module" src="./app.js"></script>
 </body>
