@@ -9,6 +9,7 @@ import { t, setLang, getLang } from './lib/i18n.js';
 import { MicRecorder, SegmentedMicRecorder, MicTester, listMicrophones, onDeviceChange, formatDuration } from './lib/recorder.js';
 import { SegmentSaver } from './lib/saver.js';
 import { mergeSegments, segmentLabel } from './lib/merge.js';
+import { readTranscriptFile } from './lib/transcript-files.js';
 
 const $ = (id) => document.getElementById(id);
 const APIKEY_STORE = 'ai-minutes-gemini-key';
@@ -139,6 +140,32 @@ function setupAudioInput() {
     updateSummary();
   });
   setupDragDrop(dz, input);
+}
+
+/* ---------- 入力: 文字起こしファイル (.txt/.vtt/.srt/.docx) ---------- */
+function setupTranscriptFile() {
+  const input = $('transcript-file');
+  const status = $('transcript-file-status');
+  if (!input) return;
+  input.addEventListener('change', async () => {
+    const file = input.files && input.files[0];
+    if (!file) return;
+    if (status) status.textContent = t('tf-reading', { name: file.name });
+    try {
+      const text = await readTranscriptFile(file);
+      if (!text || !text.trim()) throw new Error(t('tf-empty'));
+      const ta = $('transcript-input');
+      // 既存テキストがあれば追記、無ければ差し込み
+      ta.value = ta.value.trim() ? (ta.value.trim() + '\n' + text) : text;
+      if (status) status.textContent = t('tf-loaded', { name: file.name, n: text.length });
+      updateSummary();
+    } catch (err) {
+      console.error(err);
+      if (status) status.textContent = '⚠️ ' + t('tf-error', { name: file.name });
+    } finally {
+      input.value = ''; // 同じファイルを再選択できるように
+    }
+  });
 }
 
 function applyAudioTitle() {
@@ -645,12 +672,15 @@ async function generate() {
   logEl.textContent = '';
   setProgress(0);
   showStatus(t('st-start'));
+  // 進捗が画面外にならないよう、状況表示を見える位置へスクロール
+  $('status').scrollIntoView({ behavior: 'smooth', block: 'center' });
 
   try {
     let data;
     if (mode === 'gemini') {
       const apiKey = $('apikey-input').value.trim();
       if (!apiKey) {
+        showStatus('❌ ' + t('al-need-key'));
         alert(t('al-need-key'));
         return;
       }
@@ -875,6 +905,7 @@ function applyDynamicLang() {
 function init() {
   setLang(detectLang());
   setupAudioInput();
+  setupTranscriptFile();
   setupRecord();
   setupLongRec();
   setupMicTest();

@@ -89,6 +89,9 @@
 .input-label .opt { font-weight: 400; color: var(--disabled-gray); font-size: 0.82rem; }
 
 .transcript-block { margin-top: 20px; }
+.transcript-file-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 6px 0 8px; }
+.transcript-file-btn { cursor: pointer; }
+.transcript-file-status { font-size: 0.8rem; color: var(--steel-blue); }
 #transcript-input {
   width: 100%;
   box-sizing: border-box;

@@ -80,6 +80,12 @@ const DICT = {
   'lr-status-done':       { ja: '完了', en: 'Done', zh: '完成' },
   'lr-status-error':      { ja: '失敗', en: 'Failed', zh: '失败' },
 
+  // ---------- 文字起こしファイル読み込み ----------
+  'tf-reading': { ja: '📄 {name} を読み込み中...', en: '📄 Reading {name}...', zh: '📄 正在读取 {name}...' },
+  'tf-loaded':  { ja: '✅ {name} を読み込みました（{n}文字）', en: '✅ Loaded {name} ({n} chars)', zh: '✅ 已读取 {name}（{n} 字）' },
+  'tf-empty':   { ja: 'テキストを抽出できませんでした。', en: 'No text could be extracted.', zh: '未能提取文本。' },
+  'tf-error':   { ja: '{name} の読み込みに失敗しました（対応: .txt / .vtt / .srt / .docx）。', en: 'Failed to read {name} (supported: .txt / .vtt / .srt / .docx).', zh: '读取 {name} 失败（支持：.txt / .vtt / .srt / .docx）。' },
+
   // ---------- input summary ----------
   'sum-audio':      { ja: '音声', en: 'Audio', zh: '音频' },
   'sum-material':   { ja: '資料{n}', en: 'Materials{n}', zh: '资料{n}' },
