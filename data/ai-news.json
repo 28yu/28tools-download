@@ -1,6 +1,182 @@
 {
-  "lastUpdated": "2026-07-29T04:13:19.491722",
+  "lastUpdated": "2026-07-30T03:58:05.588296",
   "articles": [
+    {
+      "title": "How an overlooked geothermal plant got a second chance",
+      "titleJa": "見過ごされてきた地熱発電所が二度目のチャンスを掴んだ方法",
+      "link": "https://www.technologyreview.com/2026/07/29/1140896/geothermal-second-chance/",
+      "description": "In June 2024, a small company called Zanskar purchased a geothermal power plant in New Mexico that was failing fast. The water coming from the underground reservoir was getting colder by the day, maki...",
+      "publishedDate": "Wed, 29 Jul 2026 17:58:44 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/Lightning-Dock-NM-Zanskar.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+      "titleJa": "2 つの設定を有効にすることで、ARC-AGI-3 ベンチマークのスコアが 3 倍になった方法",
+      "link": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+      "description": "How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning and enabling compaction....",
+      "publishedDate": "Wed, 29 Jul 2026 15:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The Download: a chip talent battle, and deflating AI hype",
+      "titleJa": "ダウンロード: チップ人材の争いと萎縮する AI の誇大広告",
+      "link": "https://www.technologyreview.com/2026/07/29/1140884/the-download-chip-talent-battle-deflating-ai-hype/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Samsung’s chip workers are jumping ship to rival S...",
+      "publishedDate": "Wed, 29 Jul 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/12/MIT_AI-Hype_1-2-top.jpg?w=840",
+      "language": "en"
+    },
+    {
+      "title": "RAGサービス比較14選！料金・機能・選び方と導入手順を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/rag-service/",
+      "description": "企業内で生成AIの活用が進む中、社内の独自データを参照して回答できるRAGサービスに注目が集まっています。導入すれば問い合わせ対応などを効率化できるためです。 とはいえ、「一般的な生成AIとどう違うの？」「自社に合ったサ [...]...",
+      "publishedDate": "Wed, 29 Jul 2026 11:59:30 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/RAG-Service_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "RAGの活用事例まとめ！導入企業の事例と利用するメリット、注意点を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/rag-use-cases/",
+      "description": "RAG（検索拡張生成）は、AIの回答精度と柔軟性を大幅に高める技術として、今ビジネス現場で急速に注目を集めています。社内データの横断検索やカスタマーサポートの自動化など、多様な業務で圧倒的な成果を上げています。 この記事 [...]...",
+      "publishedDate": "Wed, 29 Jul 2026 11:14:55 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/rag-use-cases_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "DeepRAGとは？不要な検索を抑える仕組みとメリットを解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/about-deeprag/",
+      "description": "従来のRAGは、外部情報を検索して回答に反映することで、LLMのハルシネーションを抑える手法です。一方で、回答に必要のない検索が行われたり、検索結果にノイズが含まれたりする課題もありました。 こうした課題に対応する手法と [...]...",
+      "publishedDate": "Wed, 29 Jul 2026 10:07:59 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/about-deeprag_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
+      "titleJa": "学術研究者向けの ChatGPT で科学的発見を加速する",
+      "link": "https://openai.com/index/chatgpt-for-academic-researchers",
+      "description": "OpenAI is giving 100,000 academic researchers free access to ChatGPT's most advanced AI models to accelerate scientific research, collaboration, and discovery....",
+      "publishedDate": "Wed, 29 Jul 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The AI Hype Index: Unsexy AI",
+      "titleJa": "AI ハイプ インデックス: セクシーではない AI",
+      "link": "https://www.technologyreview.com/2026/07/29/1140795/the-ai-hype-index-unsexy-ai/",
+      "description": "It feels bad enough when an open letter signed by leading economists warns that AI might steal your job. The fact it may soon be better than you at making dinner? Insult to injury. But that’s exactly ...",
+      "publishedDate": "Wed, 29 Jul 2026 08:42:57 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/JUL26-thumb.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "【GPT-Live-Transcribe／GPT-Transcribe】OpenAI最新の文字起こしモデル！仕組み・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/gpt-live-transcribe-gpt-transcribe/",
+      "description": "2026年7月29日、OpenAIは、最新の音声文字起こし専用モデル「GPT-Live-Transcribe／GPT-Transcribe」を公開しました！ これまでOpenAIの文字起こしAPIといえばWhisperや [...]...",
+      "publishedDate": "Wed, 29 Jul 2026 08:30:40 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-Live-Transcribe／GPT-Transcribe-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "京都銀行、AI活用の不正取引検知モデル運用開始。マネー・ローンダリング対策などの実効性を向上",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/kyotobank-ai-fraud-detection/",
+      "description": "京都銀行は、マネー・ローンダリング対策ならびに金融犯罪対策の実効性向上のため、AIを活用した不正取引検知モデルの運用を開始しました。 このニュースのポイント 京都銀行、AIを活用した不正取引検知モデルの運用を開始 保有す [...] The post 京都銀行、AI活用の不正取引検知モデル運用開始。マネー・ローンダリング対策などの実効性を向上 first appeared on AIポータルメディ...",
+      "publishedDate": "Wed, 29 Jul 2026 06:21:49 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/kyotobank-ai-fraud-detection-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "北陸銀行、「ナレッジワークAI商談記録」を導入。商談記録作成の効率化と品質向上を推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/hokugin-ai-business-negotiation/",
+      "description": "北陸銀行が、ナレッジワークの商談記録・解析プロダクト「ナレッジワークAI商談記録」を導入しました。 このニュースのポイント 北陸銀行がAI活用の商談記録・解析プロダクト「ナレッジワークAI商談記録」を導入 声解析による自 [...] The post 北陸銀行、「ナレッジワークAI商談記録」を導入。商談記録作成の効率化と品質向上を推進 first appeared on AIポータルメディアAIs...",
+      "publishedDate": "Wed, 29 Jul 2026 06:21:14 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/knowledgework-hokugin-ai-Business-negotiation.png",
+      "language": "ja"
+    },
+    {
+      "title": "Anthropic、最新AIモデル「Claude Opus 5」発表。「Claude Fable 5」に迫る性能を半額のコストで実現",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/anthropic-claude-opus-5-release/",
+      "description": "Anthropicは、最新AIモデル「Claude Opus 5」を発表しました。従来モデルの「Claude Opus 4.8」と同じコストで「Fable 5」に迫る性能を備えています。 このニュースのポイント Anth [...] The post Anthropic、最新AIモデル「Claude Opus 5」発表。「Claude Fable 5」に迫る性能を半額のコストで実現 first a...",
+      "publishedDate": "Wed, 29 Jul 2026 06:21:05 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/Anthropic-Claude-Opus-5-Release.png",
+      "language": "ja"
+    },
+    {
+      "title": "京王電鉄とNōka.AI、日本初「生物学的推論AI」活用の「奥多摩やまめ養殖最適化プロジェクト」開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/keio-nokaai-aquaculture-ai/",
+      "description": "京王電鉄とNōka.AIは、日本初となる「生物学的推論AI」を活用した「奥多摩やまめ養殖最適化プロジェクト」を開始しました。成長や飼料効率などを科学的に最適化し、ブランド魚の安定的な生産と供給を目指します。 このニュース [...] The post 京王電鉄とNōka.AI、日本初「生物学的推論AI」活用の「奥多摩やまめ養殖最適化プロジェクト」開始 first appeared on AIポータ...",
+      "publishedDate": "Wed, 29 Jul 2026 05:57:30 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/keio-nokaai-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "中国Moonshot AI、世界初3Tクラスオープンモデル「Kimi K3」発表。最先端モデルに迫る性能",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/moonshot-ai-kimi-k3/",
+      "description": "Moonshot AIは、世界初となる3Tクラスのオープンモデル「Kimi K3」を発表しました。2.8兆パラメータを備え、100万トークンのコンテキスト処理や高度なコーディング、視覚的推論機能を実現します。 このニュー [...] The post 中国Moonshot AI、世界初3Tクラスオープンモデル「Kimi K3」発表。最先端モデルに迫る性能 first appeared on AIポ...",
+      "publishedDate": "Wed, 29 Jul 2026 05:57:27 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/moonshot-ai-kimi-k3-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "fireflake、データとAIで農業現場の改善を進めるプラットフォーム「envedded」を提供開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/fireflake-platform-envedded/",
+      "description": "fireflakeは、現場データを蓄積し、AIを活用して現場改善を進めるプラットフォーム「envedded」の提供を開始しました。 このニュースのポイント fireflake、現場データを蓄積し、AIを活用して現場改善を [...] The post fireflake、データとAIで農業現場の改善を進めるプラットフォーム「envedded」を提供開始 first appeared on AIポー...",
+      "publishedDate": "Wed, 29 Jul 2026 05:54:07 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/fireflake-envedded.png",
+      "language": "ja"
+    },
+    {
+      "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
+      "titleJa": "GPT-5.6 がフロンティア インテリジェンスとフロンティア効率をどのように融合するか",
+      "link": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+      "description": "GPT-5.6 improves AI efficiency across models, inference, and agentic workflows, helping deliver more useful intelligence per dollar....",
+      "publishedDate": "Wed, 29 Jul 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
     {
       "title": "Building AI infrastructure with the Effingham County community",
       "titleJa": "エフィンガム郡コミュニティと AI インフラストラクチャを構築する",
@@ -288,61 +464,6 @@
       "language": "en"
     },
     {
-      "title": "富士フイルムBI、複合機の保守プロセスを効率化するAI搭載「統合型保守支援プラットフォーム」開発",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/fujifilmbi-ai-maintenance-platform/",
-      "description": "富士フイルムビジネスイノベーションは、複合機・プリンターにおける保守プロセスの効率化を目指し、AI機能を搭載した「統合型保守支援プラットフォーム」を開発しました。2026年7月より、日本やアジアパシフィック地域、および欧 [...] The post 富士フイルムBI、複合機の保守プロセスを効率化するAI搭載「統合型保守支援プラットフォーム」開発 first appeared on AIポータルメ...",
-      "publishedDate": "Tue, 28 Jul 2026 09:02:03 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/fujifilm-business-innovation-AI-platform.png",
-      "language": "ja"
-    },
-    {
-      "title": "LINE AI Friendsは友だちにバレる？表示の仕組みと対策を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/line-ai-friends-bareru-agent-i/",
-      "description": "LINEの「AI Friends」を使い始めたものの、既存のLINE友だちに知られてしまわないか気になっている方は多いのではないでしょうか。 LINEのAI Friendsを利用した事実が、既存のLINE友だちに自動共有 [...] The post LINE AI Friendsは友だちにバレる？表示の仕組みと対策を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 28 Jul 2026 02:25:11 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/lineaifriendsdetected01.webp",
-      "language": "ja"
-    },
-    {
-      "title": "「カスタマーサポート向けAI活用ガイド」を公開！対応工数削減からCX向上までをAIで実現する業務別ユースケース集",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/cs-ai-guide/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、対応工数の削減と顧客体験（CX）の向上を同時に実現するための実践資料「カスタマーサポート向けAI活用ガイド」を、2026年7月28日 [...] The post 「カスタマーサポート向けAI活用ガイド」を公開！対応工数削減からCX向上までをAIで実現する業務別ユースケース集 first appeared on...",
-      "publishedDate": "Tue, 28 Jul 2026 02:00:50 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/cs-ai-guide_00.png",
-      "language": "ja"
-    },
-    {
-      "title": "「Agent i」機能ガイド｜LINE AIからの変更点や使い方も解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/line-ai-agent-i-function/",
-      "description": "「LINE AI」を探してもLINEの中に見当たらない、突然「Agent i」というボタンが増えたけれど何ができるのか分からない。このように戸惑っている方も少なくはないのではないでしょうか。 「LINE AI」は2026 [...] The post 「Agent i」機能ガイド｜LINE AIからの変更点や使い方も解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 28 Jul 2026 01:57:03 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/lineaiagentifeatures01.webp",
-      "language": "ja"
-    },
-    {
-      "title": "LINE AI Friendsとは？始め方・キャラクター作成・料金を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/line-ai-friends-agent-i/",
-      "description": "LINEのトーク画面にある「AI Friends」というアイコンが気になっている方は多いのではないでしょうか。何ができるサービスか、無料でどこまで使えるかがわからない方もいるはずです。 AI Friendsは、好きなAI [...] The post LINE AI Friendsとは？始め方・キャラクター作成・料金を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 28 Jul 2026 01:51:01 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/lineaifriends01.webp",
-      "language": "ja"
-    },
-    {
       "title": "Introducing the ChatGPT for small business program",
       "titleJa": "中小企業向け ChatGPT プログラムの紹介",
       "link": "https://openai.com/index/introducing-chatgpt-small-business-program",
@@ -365,70 +486,59 @@
       "language": "en"
     },
     {
-      "title": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
-      "titleJa": "David Vélez と Robin Vince が OpenAI Foundation と OpenAI Group PBC の役員に加わります",
-      "link": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
-      "description": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC, bringing global leadership in finance, technology, and governance....",
-      "publishedDate": "Tue, 21 Jul 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Grabette: an open system to record robot-manipulation data",
-      "titleJa": "Grabette: ロボット操作データを記録するオープン システム",
-      "link": "https://huggingface.co/blog/grabette",
-      "description": "...",
-      "publishedDate": "Tue, 21 Jul 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/grabette/thumbnail_grabette.png",
-      "language": "en"
-    },
-    {
-      "title": "Celebrating 25 years of visual search innovation",
-      "titleJa": "ビジュアル検索のイノベーション 25 年を祝う",
-      "link": "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary/",
-      "description": "Google Images logo surrounded by illustrations of people searching for different images...",
-      "publishedDate": "Tue, 14 Jul 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
+      "title": "ChatGPTに顔写真を送ってしまったら？削除できない場合の注意点",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-head-shot/",
+      "description": "ChatGPT（チャットGPT）に顔写真を送ってしまい、「ネットに公開されないか」「悪用されないか」と不安になっていませんか。 通常の非公開チャットに写真を送っただけで、直ちにWeb上へ公開されるわけではありません。まず [...] The post ChatGPTに顔写真を送ってしまったら？削除できない場合の注意点 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Thu, 30 Jul 2026 02:05:11 +0000",
+      "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Images_25th_hero.max-600x600.format-webp.webp",
-      "language": "en"
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gptheadshotmain.png",
+      "language": "ja"
     },
     {
-      "title": "From Hugging Face to Amazon SageMaker Studio in one click",
-      "titleJa": "ワンクリックで顔のハグから Amazon SageMaker Studio へ",
-      "link": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
-      "description": "...",
-      "publishedDate": "Tue, 07 Jul 2026 21:15:33 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/68abb71b13d7773ad97e9035/f1nX3dXVmvJcQzJfgfpnJ.webp",
-      "language": "en"
-    },
-    {
-      "title": "Hugging Face Models on Foundry Managed Compute",
-      "titleJa": "ファウンドリが管理するコンピューティング上のハグ顔モデル",
-      "link": "https://huggingface.co/blog/microsoft/foundry-managed-compute",
-      "description": "...",
-      "publishedDate": "Tue, 07 Jul 2026 15:20:06 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/688797c1629e0ef013c2556c/Dn2wmfWGM83ZhuQ-C5jPo.png",
-      "language": "en"
-    },
-    {
-      "title": "Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more",
-      "titleJa": "Gemini API の管理対象エージェントの拡張: バックグラウンド タスク、リモート MCP など",
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
-      "description": "Managed agents feature bundle launch...",
-      "publishedDate": "Tue, 07 Jul 2026 08:54:00 +0000",
-      "source": "Google AI Blog",
+      "title": "ChatGPT Deep Researchとは？使い方・料金・プロンプトのコツを解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-deep-research/",
+      "description": "ChatGPTの調査AIエージェント機能であるDeep Researchについて、「結局何ができるの？」「料金プランや回数制限はどうなっている？」「メニューに表示されないのはなぜ？」といった疑問を持つ方は多いのではないで [...] The post ChatGPT Deep Researchとは？使い方・料金・プロンプトのコツを解説 first appeared on AIポータルメディアAIs...",
+      "publishedDate": "Thu, 30 Jul 2026 01:59:12 +0000",
+      "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Managed_agents_feature_bundle_l.max-600x600.format-webp.webp",
-      "language": "en"
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gptdeepresearchmain.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTで旅行計画を立てる方法｜コピペOKなプロンプト例",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-travel-plan-prompt/",
+      "description": "旅行の計画を立てようとして、観光地探しや宿泊先の比較に何時間もかけていませんか。行き先の候補出しからスケジュール作成、持ち物リストまで、ChatGPTに相談するだけで数分で叩き台ができあがります。とはいえ「何を聞けばいい [...] The post ChatGPTで旅行計画を立てる方法｜コピペOKなプロンプト例 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Thu, 30 Jul 2026 01:48:07 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/travelplanpromptmain.png",
+      "language": "ja"
+    },
+    {
+      "title": "AIロープレとは？仕組み・メリット・デメリット・費用・選び方まで解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-ai-role-playing/",
+      "description": "ロープレ研修に時間を取られ、指導者によって評価やフィードバックが変わる。こうした悩みを抱える営業・研修担当者は少なくありません。AIロープレなら、AIを顧客役にして時間や場所を選ばず反復練習でき、設定した基準に沿った評価 [...] The post AIロープレとは？仕組み・メリット・デメリット・費用・選び方まで解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Thu, 30 Jul 2026 01:46:44 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/whatisairoleplaying.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ローカルLLM×RAGとは？クラウド型との違い・自作方法・活用例を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/local-llm-rag/",
+      "description": "社内規程や契約書を生成AIで検索・要約したい一方で、外部サービスへのデータ送信には慎重にならざるを得ない企業は少なくありません。その選択肢が、ローカルLLMとRAGを組み合わせる構成です。 本記事では、ローカルLLM×R [...]...",
+      "publishedDate": "Thu, 30 Jul 2026 00:07:48 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/local-llm-rag_2607-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "GraphRAGとは？仕組みやRAGとの違い・メリット・実装方法まで徹底解説",
@@ -442,113 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "LLMとRAGの違いとは？生成AIの回答精度を高める仕組みと企業での活用方法を徹底解説",
+      "title": "KubernetesはAIを動かすプラットフォームに。横浜でKubeCon＋CloudNativeCon Japan 2026が開幕",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/llm-rag/",
-      "description": "LLMとRAGは生成AIでよく使われる技術ですが、「LLMとRAGの違いは？」「RAGはどのような仕組みなのか」「実際のやり方や使い方がわからない」と感じている方も多いのではないでしょうか。 また、社内データを活用した生 [...]...",
-      "publishedDate": "Mon, 27 Jul 2026 15:43:19 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/kubernetesaikubeconcloudnativecon_japan_2026.html",
+      "description": "クラウドネイティブ関連技術におけるIT業界最大のイベント「KubeCon+CloudNativeCon Japan 2026」が昨日（2026年7月29日）、パシフィコ横浜で開幕しました。日本でKubeCon＋CloudNativeConが......",
+      "publishedDate": "2026-07-29T15:02:00Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/llm-rag_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTで動画生成はできる？無料で作る方法と手順、プロンプトを解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chatgpt-movie/",
-      "description": "「動画を作りたいけれど、企画や編集に時間がかかりすぎる……」と悩んでいませんか？実は、ChatGPTを使えばその悩みを一気に解決できます。 まず結論として、ChatGPT単体で動画を直接出力することはできません。しかし、 [...]...",
-      "publishedDate": "Mon, 27 Jul 2026 15:10:20 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-movie_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTにPDFを読み込ませる方法4選！できることや無料版の制限、注意点も解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chatgpt-pdf/",
-      "description": "ChatGPTには、PDFファイルを読み込ませて内容を解析できる機能があります。ボリュームの多い報告書でも「要約して」と指示するだけで、数十秒で要点を把握することができます。 一方、「どうやって読み込ませるの？」「無料版 [...]...",
-      "publishedDate": "Mon, 27 Jul 2026 14:27:01 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/ChatGPT-PDF_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "生成AIの問題点7選！企業が導入前に知るべきリスク・著作権の注意点と解決策を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/issues-with-generative-ai/",
-      "description": "生成AIは業務効率化や生産性向上に大きく貢献する一方、情報漏洩や著作権侵害、ハルシネーション（誤情報）などのリスクも抱えています。そのため、「どのような問題があるのか」「企業はどのような対策を講じるべきか」と気になってい [...]...",
-      "publishedDate": "Mon, 27 Jul 2026 14:05:08 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Creating-Manuals-with-Generative-AI_2607-1-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Mythosとは？Anthropic最強AIの能力・安全性・Project Glasswingを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-mythos-preview/",
-      "description": "Anthropicが2026年6月9日、Claude Mythos Previewの後継モデルである「Claude Mythos 5」を発表しました。Claude Mythosは、Anthropicがサイバーセキュリティ [...]...",
-      "publishedDate": "Mon, 27 Jul 2026 13:16:33 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Mythos-Preview-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Opus 5とは？料金・性能をOpus 4.8やFable 5と比較",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-opus-5/",
-      "description": "Claude Opus 5が発表され、「Opus 4.8とどう変わったのか」「Fable 5やSonnet 5と比べて、性能はどうなのか」と気になっている方も多いのではないでしょうか。 本記事では、Anthropicの公 [...] The post Claude Opus 5とは？料金・性能をOpus 4.8やFable 5と比較 first appeared on AIポータルメディアAIsm...",
-      "publishedDate": "Mon, 27 Jul 2026 06:50:24 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/claudeopus501.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Gemini 3.6 Flashとは？3.5からの進化点・特長・料金比較まで徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gemini-3-6-flash/",
-      "description": "2026年7月21日（現地時間）、Googleが「Gemini」ファミリーの最新モデルとして「Gemini 3.6 Flash」を発表しました。あわせて、軽量・高速版の「Gemini 3.5 Flash-Lite」、サイ [...] The post Gemini 3.6 Flashとは？3.5からの進化点・特長・料金比較まで徹底解説 first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Mon, 27 Jul 2026 06:49:25 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gemini3.6.png",
-      "language": "ja"
-    },
-    {
-      "title": "【8/21開催】建設業向けAI戦略ウェビナー！ 図面・積算・設計業務のAI活用から、4Dシミュレーターによる施工計画まで、注目の最新事例をご紹介",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/20260821webinar/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年8月21日（金）12:00より、AIsmiley初となる建設業界に特化した「建設業向けAI戦略ウェビナー」を開催します。 [...] The post 【8/21開催】建設業向けAI戦略ウェビナー！ 図面・積算・設計業務のAI活用から、4Dシミュレーターによる施工計画まで、注目の最新事例をご紹介 fi...",
-      "publishedDate": "Mon, 27 Jul 2026 04:01:32 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/kkg.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "LINEのAI「Agent i」の返信機能とは？使い方・消し方・料金を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/agent-i-reply/",
-      "description": "LINEのトーク画面に「返信を提案」と表示されたり、「Agent i」という文字を見かけたりして、何の機能なのか、勝手に返信が送信されてしまうのではないかと戸惑っていませんか。 実は現在のLINEには、質問や情報収集がで [...] The post LINEのAI「Agent i」の返信機能とは？使い方・消し方・料金を解説 first appeared on AIポータルメディアAIsmiley...",
-      "publishedDate": "Mon, 27 Jul 2026 01:19:58 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/lineaiagentireplies01.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Agent i（旧LINE AI）が邪魔なときの消し方と再表示の方法を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/agent-i-obstacle/",
-      "description": "LINEのメッセージ入力欄の下に表示される「Agent i」が邪魔に感じ、非表示にする方法を探していませんか。Agent iはトーク画面のメニューから非表示にできますが、設定はすべてのトークルームに適用され、非表示期間は [...] The post Agent i（旧LINE AI）が邪魔なときの消し方と再表示の方法を解説 first appeared on AIポータルメディアAIsmiley...",
-      "publishedDate": "Mon, 27 Jul 2026 01:18:12 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/lineaiagentiannoying01.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/kubeconjapan2026-01.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/HMN_fw1XIAApuCR.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "リアルタイム共同編集が可能なJavaScriptの表計算コンポーネント、メシウスが「SpreadJS」の新バージョンをリリース",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/javascriptspreadjs.html",
-      "description": "メシウス（旧グレープシティ）は、Excelライクな機能とユーザーインターフェイスを備えたJavaScriptの表計算コンポーネント上で、リアルタイムな共同編集を可能にする機能を備えたJavaScriptライブラリ「SpreadJS」の最新版......",
-      "publishedDate": "2026-07-15T15:56:19Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/spradjs-v191.png",
       "language": "ja"
     }
   ]
