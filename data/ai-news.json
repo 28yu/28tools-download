@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-07-30T03:58:05.588296",
+  "lastUpdated": "2026-07-31T04:23:39.617336",
   "articles": [
     {
       "title": "How an overlooked geothermal plant got a second chance",
-      "titleJa": "見過ごされてきた地熱発電所が二度目のチャンスを掴んだ方法",
+      "titleJa": "見過ごされてきた地熱発電所が二度目のチャンスを手に入れた経緯",
       "link": "https://www.technologyreview.com/2026/07/29/1140896/geothermal-second-chance/",
       "description": "In June 2024, a small company called Zanskar purchased a geothermal power plant in New Mexico that was failing fast. The water coming from the underground reservoir was getting colder by the day, maki...",
       "publishedDate": "Wed, 29 Jul 2026 17:58:44 +0000",
@@ -98,72 +98,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-Live-Transcribe／GPT-Transcribe-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "京都銀行、AI活用の不正取引検知モデル運用開始。マネー・ローンダリング対策などの実効性を向上",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kyotobank-ai-fraud-detection/",
-      "description": "京都銀行は、マネー・ローンダリング対策ならびに金融犯罪対策の実効性向上のため、AIを活用した不正取引検知モデルの運用を開始しました。 このニュースのポイント 京都銀行、AIを活用した不正取引検知モデルの運用を開始 保有す [...] The post 京都銀行、AI活用の不正取引検知モデル運用開始。マネー・ローンダリング対策などの実効性を向上 first appeared on AIポータルメディ...",
-      "publishedDate": "Wed, 29 Jul 2026 06:21:49 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/kyotobank-ai-fraud-detection-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "北陸銀行、「ナレッジワークAI商談記録」を導入。商談記録作成の効率化と品質向上を推進",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/hokugin-ai-business-negotiation/",
-      "description": "北陸銀行が、ナレッジワークの商談記録・解析プロダクト「ナレッジワークAI商談記録」を導入しました。 このニュースのポイント 北陸銀行がAI活用の商談記録・解析プロダクト「ナレッジワークAI商談記録」を導入 声解析による自 [...] The post 北陸銀行、「ナレッジワークAI商談記録」を導入。商談記録作成の効率化と品質向上を推進 first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Wed, 29 Jul 2026 06:21:14 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/knowledgework-hokugin-ai-Business-negotiation.png",
-      "language": "ja"
-    },
-    {
-      "title": "Anthropic、最新AIモデル「Claude Opus 5」発表。「Claude Fable 5」に迫る性能を半額のコストで実現",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/anthropic-claude-opus-5-release/",
-      "description": "Anthropicは、最新AIモデル「Claude Opus 5」を発表しました。従来モデルの「Claude Opus 4.8」と同じコストで「Fable 5」に迫る性能を備えています。 このニュースのポイント Anth [...] The post Anthropic、最新AIモデル「Claude Opus 5」発表。「Claude Fable 5」に迫る性能を半額のコストで実現 first a...",
-      "publishedDate": "Wed, 29 Jul 2026 06:21:05 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/Anthropic-Claude-Opus-5-Release.png",
-      "language": "ja"
-    },
-    {
-      "title": "京王電鉄とNōka.AI、日本初「生物学的推論AI」活用の「奥多摩やまめ養殖最適化プロジェクト」開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/keio-nokaai-aquaculture-ai/",
-      "description": "京王電鉄とNōka.AIは、日本初となる「生物学的推論AI」を活用した「奥多摩やまめ養殖最適化プロジェクト」を開始しました。成長や飼料効率などを科学的に最適化し、ブランド魚の安定的な生産と供給を目指します。 このニュース [...] The post 京王電鉄とNōka.AI、日本初「生物学的推論AI」活用の「奥多摩やまめ養殖最適化プロジェクト」開始 first appeared on AIポータ...",
-      "publishedDate": "Wed, 29 Jul 2026 05:57:30 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/keio-nokaai-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "中国Moonshot AI、世界初3Tクラスオープンモデル「Kimi K3」発表。最先端モデルに迫る性能",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/moonshot-ai-kimi-k3/",
-      "description": "Moonshot AIは、世界初となる3Tクラスのオープンモデル「Kimi K3」を発表しました。2.8兆パラメータを備え、100万トークンのコンテキスト処理や高度なコーディング、視覚的推論機能を実現します。 このニュー [...] The post 中国Moonshot AI、世界初3Tクラスオープンモデル「Kimi K3」発表。最先端モデルに迫る性能 first appeared on AIポ...",
-      "publishedDate": "Wed, 29 Jul 2026 05:57:27 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/moonshot-ai-kimi-k3-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "fireflake、データとAIで農業現場の改善を進めるプラットフォーム「envedded」を提供開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/fireflake-platform-envedded/",
-      "description": "fireflakeは、現場データを蓄積し、AIを活用して現場改善を進めるプラットフォーム「envedded」の提供を開始しました。 このニュースのポイント fireflake、現場データを蓄積し、AIを活用して現場改善を [...] The post fireflake、データとAIで農業現場の改善を進めるプラットフォーム「envedded」を提供開始 first appeared on AIポー...",
-      "publishedDate": "Wed, 29 Jul 2026 05:54:07 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/fireflake-envedded.png",
       "language": "ja"
     },
     {
@@ -366,7 +300,7 @@
     },
     {
       "title": "LFM2.5-Encoders for Fast Long-Context Inference on CPU",
-      "titleJa": "CPU 上で高速なロングコンテキスト推論を実現する LFM2.5 エンコーダ",
+      "titleJa": "CPU 上で高速なロングコンテキスト推論を実現する LFM2.5 エンコーダー",
       "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
       "description": "...",
       "publishedDate": "Tue, 28 Jul 2026 15:01:45 GMT",
@@ -384,17 +318,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/05/【RAG-Fusion】LLMのハルシネーションを防ぐRAGの進化版！その効果を徹底検証-1024x576.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "マルチモーダルRAGとは？仕組み・活用事例・実装方法をわかりやすく解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/multimodal-rag/",
-      "description": "マルチモーダルRAGとは、文章だけでなく画像や音声など複数の情報を検索・参照しながら回答を生成できる技術です。従来のRAGでは扱いにくかった複雑なデータにも対応できることから、企業の情報検索や業務支援への活用が期待されて [...]...",
-      "publishedDate": "Tue, 28 Jul 2026 13:11:22 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/multimodal-rag_2607-1024x576.webp",
       "language": "ja"
     },
     {
@@ -431,28 +354,6 @@
       "language": "en"
     },
     {
-      "title": "LangChain×RAGとは？仕組み・実装手順・社内活用例をローカル検証付きで解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/langchain-rag/",
-      "description": "社内規程やFAQを参照する生成AIを作りたくても、「LLMにどのように文書を検索させるのか」「回答をどこまで信頼できるのか」と悩む担当者もいるでしょう。LangChainは、LLM、文書検索、プロンプトなどを接続する開発 [...]...",
-      "publishedDate": "Tue, 28 Jul 2026 11:43:47 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/LangChain-RAG_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "VSCodeでGitHub Copilotを使うときの導入方法！使い方や活用シーン、料金も解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/github-copilot-vscode/",
-      "description": "VSCodeで使えるGitHub Copilotは、コード補完やチャット、Agentによるファイル編集まで利用できる開発支援機能です。導入は簡単ですが、料金体系やAI Credits、社内コードの扱いを誤ると、費用・情報 [...]...",
-      "publishedDate": "Tue, 28 Jul 2026 10:30:13 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/github-copilot-vscode_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Samsung’s chip workers are jumping ship to rival SK Hynix",
       "titleJa": "サムスンのチップ従業員がライバルのSKハイニックスに飛びついている",
       "link": "https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix/",
@@ -486,47 +387,113 @@
       "language": "en"
     },
     {
-      "title": "ChatGPTに顔写真を送ってしまったら？削除できない場合の注意点",
+      "title": "ファインチューニングとは？ChatGPTでのやり方や料金、RAGとの違いを徹底解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-head-shot/",
-      "description": "ChatGPT（チャットGPT）に顔写真を送ってしまい、「ネットに公開されないか」「悪用されないか」と不安になっていませんか。 通常の非公開チャットに写真を送っただけで、直ちにWeb上へ公開されるわけではありません。まず [...] The post ChatGPTに顔写真を送ってしまったら？削除できない場合の注意点 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 30 Jul 2026 02:05:11 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gptheadshotmain.png",
+      "link": "https://weel.co.jp/media/fine-tuning",
+      "description": "ChatGPTをはじめとする生成AIは、幅広い質問に回答できる一方、専門的な業務や自社独自のルールに沿った回答が苦手な場合があります。そこで役立つのが、特定のデータを追加で学習させるファインチューニングです。ファインチュ [...]...",
+      "publishedDate": "Thu, 30 Jul 2026 13:19:51 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/fine-tuning_2607-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "ChatGPT Deep Researchとは？使い方・料金・プロンプトのコツを解説",
+      "title": "Agentic AI（エージェント型AI）とは？AIエージェントや生成AIとの違い、活用事例を解説！",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-deep-research/",
-      "description": "ChatGPTの調査AIエージェント機能であるDeep Researchについて、「結局何ができるの？」「料金プランや回数制限はどうなっている？」「メニューに表示されないのはなぜ？」といった疑問を持つ方は多いのではないで [...] The post ChatGPT Deep Researchとは？使い方・料金・プロンプトのコツを解説 first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Thu, 30 Jul 2026 01:59:12 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gptdeepresearchmain.png",
+      "link": "https://weel.co.jp/media/agent-ai/",
+      "description": "Agentic AI（エージェント型AI）とは、与えられた目標（ゴール）に向かって必要な手順を自分で考え、外部ツールやシステムも使いながらタスクを実行して完了まで進めるAIのことです。 生成AIを活用しながら、自律的に計 [...]...",
+      "publishedDate": "Thu, 30 Jul 2026 12:46:05 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/agent-ai_2607-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "ChatGPTで旅行計画を立てる方法｜コピペOKなプロンプト例",
+      "title": "AIアライメントとは？生成AIの問題・メリット・手法をわかりやすく解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-travel-plan-prompt/",
-      "description": "旅行の計画を立てようとして、観光地探しや宿泊先の比較に何時間もかけていませんか。行き先の候補出しからスケジュール作成、持ち物リストまで、ChatGPTに相談するだけで数分で叩き台ができあがります。とはいえ「何を聞けばいい [...] The post ChatGPTで旅行計画を立てる方法｜コピペOKなプロンプト例 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 30 Jul 2026 01:48:07 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/travelplanpromptmain.png",
+      "link": "https://weel.co.jp/media/innovator/ai-alignment/",
+      "description": "AIアライメントとは、AIの判断や出力を、人間の意図・価値観・社会的なルールに沿うよう調整する考え方です。ChatGPTをはじめとする生成AIが普及する一方で、「AIが指示とは異なる回答を返さないか」「有害な情報を生成し [...]...",
+      "publishedDate": "Thu, 30 Jul 2026 12:16:59 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/ai-alignment_2607-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "AIロープレとは？仕組み・メリット・デメリット・費用・選び方まで解説",
+      "title": "Sakana AI、Fuguオーケストレーションモデルのサイバーセキュリティ特化AI「Fugu-Cyber」を発表",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-ai-role-playing/",
-      "description": "ロープレ研修に時間を取られ、指導者によって評価やフィードバックが変わる。こうした悩みを抱える営業・研修担当者は少なくありません。AIロープレなら、AIを顧客役にして時間や場所を選ばず反復練習でき、設定した基準に沿った評価 [...] The post AIロープレとは？仕組み・メリット・デメリット・費用・選び方まで解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 30 Jul 2026 01:46:44 +0000",
+      "link": "https://aismiley.co.jp/ai_news/sakana-ai-fugu-cyber-release/",
+      "description": "Sakana AIは、企業のサイバー防御における複雑な課題への対応を目的としたAIモデル「Fugu-Cyber」を発表しました。 このニュースのポイント Sakana AI、サイバーセキュリティ特化AIモデル「Fugu- [...] The post Sakana AI、Fuguオーケストレーションモデルのサイバーセキュリティ特化AI「Fugu-Cyber」を発表 first appeared o...",
+      "publishedDate": "Thu, 30 Jul 2026 08:53:59 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/whatisairoleplaying.webp",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/Sakana-AI-orchestration-model-Sakana-Fugu-release.png",
+      "language": "ja"
+    },
+    {
+      "title": "AVITAのAIロープレ「アバトレ」、新潟県労働金庫に導入。職員の対人コミュニケーション訓練に活用",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/aivita-niigata-rokin-avatar/",
+      "description": "AVITAのAIロープレサービス「アバトレ」が、新潟県労働金庫に導入されました。本サービスは、職員教育の環境づくりの一環として、顧客対応をはじめとする対人コミュニケーションの訓練に活用されます。 このニュースのポイント [...] The post AVITAのAIロープレ「アバトレ」、新潟県労働金庫に導入。職員の対人コミュニケーション訓練に活用 first appeared on AIポータルメ...",
+      "publishedDate": "Thu, 30 Jul 2026 08:53:57 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/AIVITA-niigata-rokin-avatar-training.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAIのAIモデルがテスト環境を逸脱。Hugging Faceのインフラへ不正アクセス",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-huggingface-incident/",
+      "description": "OpenAIは、自社のAIモデルが隔離された評価環境を逸脱し、Hugging Faceのインフラを侵害するセキュリティインシデントが発生したことを発表しました。 このニュースのポイント OpenAIのAIモデルが社内評価 [...] The post OpenAIのAIモデルがテスト環境を逸脱。Hugging Faceのインフラへ不正アクセス first appeared on AIポータルメディ...",
+      "publishedDate": "Thu, 30 Jul 2026 08:53:44 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/openai-huggingface-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "Google、「Gemini」新モデル「3.6 Flash」「3.5 Flash-Lite」「3.5 Flash Cyber」発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/google-gemini-new-models/",
+      "description": "Googleは、「Gemini」の新モデル「Gemini 3.6 Flash」「Gemini 3.5 Flash-Lite」「Gemini 3.5 Flash Cyber」の3種を発表しました。従来モデル「Gemini [...] The post Google、「Gemini」新モデル「3.6 Flash」「3.5 Flash-Lite」「3.5 Flash Cyber」発表 first app...",
+      "publishedDate": "Thu, 30 Jul 2026 08:53:26 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/google-gemini-flash-new-models-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "安川電機、「エージェンティック・ロボットシステム」開発。AIロボットが自律的に作業を実行",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/yaskawa-ai-robot-system/",
+      "description": "安川電機は、AIロボットとGoogle DeepMindの生成AIを連携させた「エージェンティック・ロボットシステム」を新たに開発しました。詳細なプログラミングは不要で、ロボット自身が現場状況を判断し、自律的に作業手順を [...] The post 安川電機、「エージェンティック・ロボットシステム」開発。AIロボットが自律的に作業を実行 first appeared on AIポータルメディアA...",
+      "publishedDate": "Thu, 30 Jul 2026 08:53:08 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/yaskawa-ai-robot-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "Google、画像検索25周年に合わせ新たなホーム画面導入、「AI Overviews」に画像生成機能を追加",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/google-images-25th-anniversary/",
+      "description": "Googleは画像検索の25周年に合わせ、新たなホーム画面の導入と「AI Overviews」における画像生成機能の追加を発表しました。 このニュースのポイント Google、画像検索開始25周年に合わせて2つの新機能を [...] The post Google、画像検索25周年に合わせ新たなホーム画面導入、「AI Overviews」に画像生成機能を追加 first appeared on A...",
+      "publishedDate": "Thu, 30 Jul 2026 08:52:51 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/googleimage25th-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "戸田建設、「山岳トンネルAI発破設計システム」開発。装薬量の最適化で暗黙知依存からの脱却を目指す",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/toda-tunnel-ai-blasting-system/",
+      "description": "戸田建設は、切羽精度や岩サイズを予測して装薬量を最適化する「山岳トンネルAI発破設計システム」を開発しました。熟練者のノウハウを形式知化し、現場の安全性や生産性向上を実現します。 このニュースのポイント 戸田建設、切羽精 [...] The post 戸田建設、「山岳トンネルAI発破設計システム」開発。装薬量の最適化で暗黙知依存からの脱却を目指す first appeared on AIポータルメ...",
+      "publishedDate": "Thu, 30 Jul 2026 08:43:45 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/toda-tunnel-ai-blasting-system-eye.png",
       "language": "ja"
     },
     {
@@ -541,14 +508,58 @@
       "language": "ja"
     },
     {
-      "title": "GraphRAGとは？仕組みやRAGとの違い・メリット・実装方法まで徹底解説",
+      "title": "ローカルAIエージェントとは？無料で使える代表ツールと構築方法・メリットを徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/about-graphrag/",
-      "description": "近年、生成AIの活用が広がる中で、企業内の情報や専門的なデータを活用する手段としてRAGが注目されています。しかし、従来のRAGでは複数の情報にまたがる関係性の把握や、膨大なデータ全体を踏まえた回答生成には課題もあります [...]...",
-      "publishedDate": "Mon, 27 Jul 2026 16:07:49 +0000",
+      "link": "https://weel.co.jp/media/localaiagent/",
+      "description": "これまでのAI活用では、「使うほど従量課金がかさむ」「社内データを外部サービスに送りたくない」「通信環境やAPI制限に左右される」といった課題がありました。一方でローカルAIエージェントは、推論そのものを手元の環境で完結 [...]...",
+      "publishedDate": "Fri, 31 Jul 2026 01:43:37 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/04/graphrag-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/local-aiagent_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【インタビュー】全従業員の「生成AI活用の義務化」、その先へ ――LINEヤフーが挑む「AIエージェント化」の現在地",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/lycorp-ai-interview/",
+      "description": "生成AIの企業導入が加速するなか、経営方針として「AIエージェント化の推進」を掲げ、2025年7月には全従業員を対象に業務における「生成AI活用の義務化」を前提とした新しい働き方を発表するなど、全社を挙げたAI活用を推進 [...] The post 【インタビュー】全従業員の「生成AI活用の義務化」、その先へ ――LINEヤフーが挑む「AIエージェント化」の現在地 first appeared ...",
+      "publishedDate": "Fri, 31 Jul 2026 01:30:47 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/lycorp-ai-interview.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTで手相占い｜写真の送り方・プロンプト例と注意点を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-palmistry-prompt-photo/",
+      "description": "「ChatGPTで手相占いを試したいけれど、写真の撮り方や頼み方が分からない」「手のひらの写真を送っても大丈夫？」と迷っていませんか。 本記事では、ChatGPTで手相占いを試す3ステップの手順と、そのままコピペできるプ [...] The post ChatGPTで手相占い｜写真の送り方・プロンプト例と注意点を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 31 Jul 2026 01:15:53 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/palmistryMain.png",
+      "language": "ja"
+    },
+    {
+      "title": "Grokで夢小説を書く方法｜無料版・プロンプト例・口調を保つコツ",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/grok-dream-fiction/",
+      "description": "Grokで夢小説を書いてみたいものの、何を指示すればいいか分からない。推しの口調や呼び方が途中で変わってしまう。長くなると設定が崩れる。そんな悩みを抱えていませんか。 この記事では、Grokの無料版での始め方から、コピペ [...] The post Grokで夢小説を書く方法｜無料版・プロンプト例・口調を保つコツ first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 31 Jul 2026 00:57:25 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/grokdreamfiction01.webp",
+      "language": "ja"
+    },
+    {
+      "title": "JetBrains、AIが少ないトークンでコンテキストを取得しやすく、よりよいコード生成を可能にする「JetBrains Context」発表",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/jetbrainsaijetbrains_context.html",
+      "description": "JetBrainsは、コードリポジトリの上にインテリジェンスなレイヤを構築し、AIエージェントに対して適切なコードのコンテキストを提供することで、AIエージェントによるよりよいコード生成を可能にする新サービス「JetBrains Conte......",
+      "publishedDate": "2026-07-30T17:48:59Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/HNwayFBWIAAItj6.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/dotnet8and9-eol.png",
-      "language": "ja"
-    },
-    {
-      "title": "フロントエンド開発に必要なツールをまとめて統合した「Vite+」、ベータ公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/vite.html",
-      "description": "オープンソースのWebアプリケーションビルドツール「Vite」（ヴィットあるいはヴィート）を開発しているVoidZeroは、ViteをベースとしたJavaScriptアプリケーションのための統合開発ツールチェーン「Vite+」をベータ公開し......",
-      "publishedDate": "2026-07-15T15:59:11Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HMN_fw1XIAApuCR.jpg",
       "language": "ja"
     }
   ]
