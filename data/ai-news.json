@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-07-31T04:23:39.617336",
+  "lastUpdated": "2026-08-01T04:22:30.702196",
   "articles": [
     {
       "title": "How an overlooked geothermal plant got a second chance",
-      "titleJa": "見過ごされてきた地熱発電所が二度目のチャンスを手に入れた経緯",
+      "titleJa": "見過ごされてきた地熱発電所が二度目のチャンスを掴んだ方法",
       "link": "https://www.technologyreview.com/2026/07/29/1140896/geothermal-second-chance/",
       "description": "In June 2024, a small company called Zanskar purchased a geothermal power plant in New Mexico that was failing fast. The water coming from the underground reservoir was getting colder by the day, maki...",
       "publishedDate": "Wed, 29 Jul 2026 17:58:44 +0000",
@@ -57,17 +57,6 @@
       "language": "ja"
     },
     {
-      "title": "DeepRAGとは？不要な検索を抑える仕組みとメリットを解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/about-deeprag/",
-      "description": "従来のRAGは、外部情報を検索して回答に反映することで、LLMのハルシネーションを抑える手法です。一方で、回答に必要のない検索が行われたり、検索結果にノイズが含まれたりする課題もありました。 こうした課題に対応する手法と [...]...",
-      "publishedDate": "Wed, 29 Jul 2026 10:07:59 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/about-deeprag_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
       "titleJa": "学術研究者向けの ChatGPT で科学的発見を加速する",
       "link": "https://openai.com/index/chatgpt-for-academic-researchers",
@@ -88,17 +77,6 @@
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/JUL26-thumb.jpg?resize=1200,600",
       "language": "en"
-    },
-    {
-      "title": "【GPT-Live-Transcribe／GPT-Transcribe】OpenAI最新の文字起こしモデル！仕組み・料金・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gpt-live-transcribe-gpt-transcribe/",
-      "description": "2026年7月29日、OpenAIは、最新の音声文字起こし専用モデル「GPT-Live-Transcribe／GPT-Transcribe」を公開しました！ これまでOpenAIの文字起こしAPIといえばWhisperや [...]...",
-      "publishedDate": "Wed, 29 Jul 2026 08:30:40 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-Live-Transcribe／GPT-Transcribe-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
@@ -150,28 +128,6 @@
       "link": "https://openai.com/index/advancing-the-next-era-of-national-science",
       "description": "OpenAI outlines its commitment to advancing American science working with the U.S. Department of Energy and national labs to use frontier AI to accelerate discovery....",
       "publishedDate": "Wed, 22 Jul 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Introducing OpenAI Presence",
-      "titleJa": "OpenAI プレゼンスの紹介",
-      "link": "https://openai.com/index/introducing-openai-presence",
-      "description": "Introducing OpenAI Presence, a proven enterprise AI agent platform that helps organizations deploy trusted voice and chat agents for customer and internal workflows....",
-      "publishedDate": "Wed, 22 Jul 2026 05:30:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
-      "titleJa": "NTT データ グループ、Codex を使用してインシデント分析を 30 分に短縮",
-      "link": "https://openai.com/index/ntt-data",
-      "description": "NTT DATA Group uses ChatGPT Enterprise and Codex to help 9,000 employees automate work, cut incident analysis to 30 minutes, and scale secure AI adoption....",
-      "publishedDate": "Wed, 22 Jul 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -300,7 +256,7 @@
     },
     {
       "title": "LFM2.5-Encoders for Fast Long-Context Inference on CPU",
-      "titleJa": "CPU 上で高速なロングコンテキスト推論を実現する LFM2.5 エンコーダー",
+      "titleJa": "CPU 上で高速なロングコンテキスト推論を実現する LFM2.5 エンコーダ",
       "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
       "description": "...",
       "publishedDate": "Tue, 28 Jul 2026 15:01:45 GMT",
@@ -308,17 +264,6 @@
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/n-ZhnrOiuWH5rhAFi86lL.png",
       "language": "en"
-    },
-    {
-      "title": "【RAG Fusion】LLMのハルシネーションを防ぐRAGの進化版！その効果を徹底検証",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/ragfusion/",
-      "description": "ITエンジニアのみなさん！生成AIに学習範囲外の知識を与える「RAG Fusion」はご存知ですか？ RAG Fusionは、AIチャットボットに用いられるRAGの進化形。結果を「リランク」でまとめ直すことで、従来型RA [...]...",
-      "publishedDate": "Tue, 28 Jul 2026 14:19:22 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2024/05/【RAG-Fusion】LLMのハルシネーションを防ぐRAGの進化版！その効果を徹底検証-1024x576.jpg",
-      "language": "ja"
     },
     {
       "title": "5 ways AI Mode in Search helps you enjoy the real world",
@@ -365,25 +310,47 @@
       "language": "en"
     },
     {
-      "title": "Introducing the ChatGPT for small business program",
-      "titleJa": "中小企業向け ChatGPT プログラムの紹介",
-      "link": "https://openai.com/index/introducing-chatgpt-small-business-program",
-      "description": "OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work....",
-      "publishedDate": "Tue, 21 Jul 2026 17:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
+      "title": "Grabette: an open system to record robot-manipulation data",
+      "titleJa": "Grabette: ロボット操作データを記録するオープン システム",
+      "link": "https://huggingface.co/blog/grabette",
+      "description": "...",
+      "publishedDate": "Tue, 21 Jul 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/grabette/thumbnail_grabette.png",
       "language": "en"
     },
     {
-      "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
-      "titleJa": "OpenAI と Hugging Face が提携してモデル評価中のセキュリティ インシデントに対処",
-      "link": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
-      "description": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders....",
-      "publishedDate": "Tue, 21 Jul 2026 07:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
+      "title": "Celebrating 25 years of visual search innovation",
+      "titleJa": "ビジュアル検索のイノベーション 25 年を祝う",
+      "link": "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary/",
+      "description": "Google Images logo surrounded by illustrations of people searching for different images...",
+      "publishedDate": "Tue, 14 Jul 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Images_25th_hero.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "From Hugging Face to Amazon SageMaker Studio in one click",
+      "titleJa": "ワンクリックで顔のハグから Amazon SageMaker Studio へ",
+      "link": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
+      "description": "...",
+      "publishedDate": "Tue, 07 Jul 2026 21:15:33 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/68abb71b13d7773ad97e9035/f1nX3dXVmvJcQzJfgfpnJ.webp",
+      "language": "en"
+    },
+    {
+      "title": "Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more",
+      "titleJa": "Gemini API の管理対象エージェントの拡張: バックグラウンド タスク、リモート MCP など",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
+      "description": "Managed agents feature bundle launch...",
+      "publishedDate": "Tue, 07 Jul 2026 08:54:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Managed_agents_feature_bundle_l.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -497,6 +464,39 @@
       "language": "ja"
     },
     {
+      "title": "【インタビュー】全社員が「当たり前に」生成AIを使う会社へ。住友化学が挑む「AIネイティブカンパニー」への道",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/sumitomo-chem-ai-interview/",
+      "description": "生成AIの活用は、いまや一部の先進企業やIT業界にとどまりません。労働人口の減少やグローバル競争の激化を背景に、AIを「特別なツール」から「全社員が当たり前に使う道具」へと組織的に定着させられるかが、企業の競争力を左右す [...] The post 【インタビュー】全社員が「当たり前に」生成AIを使う会社へ。住友化学が挑む「AIネイティブカンパニー」への道 first appeared on A...",
+      "publishedDate": "Thu, 30 Jul 2026 05:20:48 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/sumitomo.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTに顔写真を送ってしまったら？削除できない場合の注意点",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-head-shot/",
+      "description": "ChatGPT（チャットGPT）に顔写真を送ってしまい、「ネットに公開されないか」「悪用されないか」と不安になっていませんか。 通常の非公開チャットに写真を送っただけで、直ちにWeb上へ公開されるわけではありません。まず [...] The post ChatGPTに顔写真を送ってしまったら？削除できない場合の注意点 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Thu, 30 Jul 2026 02:05:11 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gptheadshotmain.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPT Deep Researchとは？使い方・料金・プロンプトのコツを解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-deep-research/",
+      "description": "ChatGPTの調査AIエージェント機能であるDeep Researchについて、「結局何ができるの？」「料金プランや回数制限はどうなっている？」「メニューに表示されないのはなぜ？」といった疑問を持つ方は多いのではないで [...] The post ChatGPT Deep Researchとは？使い方・料金・プロンプトのコツを解説 first appeared on AIポータルメディアAIs...",
+      "publishedDate": "Thu, 30 Jul 2026 01:59:12 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gptdeepresearchmain.png",
+      "language": "ja"
+    },
+    {
       "title": "ローカルLLM×RAGとは？クラウド型との違い・自作方法・活用例を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/local-llm-rag/",
@@ -508,6 +508,39 @@
       "language": "ja"
     },
     {
+      "title": "RAGによるハルシネーション抑制の仕組みと手順！社内データを安全に活かす方法を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/rag-hallucination/",
+      "description": "生成AIはとても便利ですが、事実と異なる情報を正しいかのように答えてしまうハルシネーションが悩みの種です。そこで注目されているのが、社内データを検索して回答を作るRAG（検索拡張生成）という技術です。 この記事では、RA [...]...",
+      "publishedDate": "Fri, 31 Jul 2026 12:13:04 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/RAG-Hallucination_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Codex Security CLI】OpenAI発のAIセキュリティスキャナーCLIの使い方・料金・活用法を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/codex-security-cli/",
+      "description": "2026年7月29日、OpenAIはコードの脆弱性を発見・検証・修正するためのCLIツール「Codex Security CLI」をオープンソースとして公開しました！ OpenAI共同創業者のGreg Brockman氏 [...]...",
+      "publishedDate": "Fri, 31 Jul 2026 10:09:21 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Codex-Security-CLI-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "RLHFとは？生成AIの応答を改善する学習手法の仕組み・メリット・課題を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/rlhf/",
+      "description": "RLHFとは、人間からのフィードバックを使って、生成AIの応答をより自然で人間の意図に沿ったものに改善する学習手法のこと。ChatGPTをはじめとする主要な生成AIモデルの応答品質を支えるコア技術として、広く採用されてい [...]...",
+      "publishedDate": "Fri, 31 Jul 2026 04:28:01 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/RLHF_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "ローカルAIエージェントとは？無料で使える代表ツールと構築方法・メリットを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/localaiagent/",
@@ -515,40 +548,7 @@
       "publishedDate": "Fri, 31 Jul 2026 01:43:37 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/local-aiagent_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【インタビュー】全従業員の「生成AI活用の義務化」、その先へ ――LINEヤフーが挑む「AIエージェント化」の現在地",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/lycorp-ai-interview/",
-      "description": "生成AIの企業導入が加速するなか、経営方針として「AIエージェント化の推進」を掲げ、2025年7月には全従業員を対象に業務における「生成AI活用の義務化」を前提とした新しい働き方を発表するなど、全社を挙げたAI活用を推進 [...] The post 【インタビュー】全従業員の「生成AI活用の義務化」、その先へ ――LINEヤフーが挑む「AIエージェント化」の現在地 first appeared ...",
-      "publishedDate": "Fri, 31 Jul 2026 01:30:47 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/lycorp-ai-interview.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTで手相占い｜写真の送り方・プロンプト例と注意点を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-palmistry-prompt-photo/",
-      "description": "「ChatGPTで手相占いを試したいけれど、写真の撮り方や頼み方が分からない」「手のひらの写真を送っても大丈夫？」と迷っていませんか。 本記事では、ChatGPTで手相占いを試す3ステップの手順と、そのままコピペできるプ [...] The post ChatGPTで手相占い｜写真の送り方・プロンプト例と注意点を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 31 Jul 2026 01:15:53 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/palmistryMain.png",
-      "language": "ja"
-    },
-    {
-      "title": "Grokで夢小説を書く方法｜無料版・プロンプト例・口調を保つコツ",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/grok-dream-fiction/",
-      "description": "Grokで夢小説を書いてみたいものの、何を指示すればいいか分からない。推しの口調や呼び方が途中で変わってしまう。長くなると設定が崩れる。そんな悩みを抱えていませんか。 この記事では、Grokの無料版での始め方から、コピペ [...] The post Grokで夢小説を書く方法｜無料版・プロンプト例・口調を保つコツ first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 31 Jul 2026 00:57:25 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/grokdreamfiction01.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/local-aiagent_2607-4-1024x576.webp",
       "language": "ja"
     },
     {
