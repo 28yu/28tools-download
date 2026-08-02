@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-01T04:22:30.702196",
+  "lastUpdated": "2026-08-02T04:23:59.276436",
   "articles": [
     {
       "title": "How an overlooked geothermal plant got a second chance",
@@ -25,7 +25,7 @@
     },
     {
       "title": "The Download: a chip talent battle, and deflating AI hype",
-      "titleJa": "ダウンロード: チップ人材の争いと萎縮する AI の誇大広告",
+      "titleJa": "ダウンロード: チップ人材の争いと萎縮する AI の誇大宣伝",
       "link": "https://www.technologyreview.com/2026/07/29/1140884/the-download-chip-talent-battle-deflating-ai-hype/",
       "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Samsung’s chip workers are jumping ship to rival S...",
       "publishedDate": "Wed, 29 Jul 2026 12:10:00 +0000",
@@ -123,17 +123,6 @@
       "language": "en"
     },
     {
-      "title": "Advancing the next era of national science",
-      "titleJa": "国家科学の次の時代を前進させる",
-      "link": "https://openai.com/index/advancing-the-next-era-of-national-science",
-      "description": "OpenAI outlines its commitment to advancing American science working with the U.S. Department of Energy and national labs to use frontier AI to accelerate discovery....",
-      "publishedDate": "Wed, 22 Jul 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
       "titleJa": "新しい研究では、当社の医療 AI である AMIE が健康状態の管理にどのように役立つかを示しています。",
       "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/",
@@ -179,7 +168,7 @@
     },
     {
       "title": "Native-speed vLLM transformers modeling backend",
-      "titleJa": "ネイティブ速度の vLLM トランスフォーマー モデリング バックエンド",
+      "titleJa": "ネイティブスピードの vLLM トランスフォーマー モデリング バックエンド",
       "link": "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
       "description": "...",
       "publishedDate": "Wed, 08 Jul 2026 00:00:00 GMT",
@@ -354,6 +343,17 @@
       "language": "en"
     },
     {
+      "title": "Montana’s plan to become an experimental medical hub just pushed forward",
+      "titleJa": "モンタナ州の実験的医療拠点となる計画が前進した",
+      "link": "https://www.technologyreview.com/2026/07/30/1140942/montana-experimental-medical-hub-pushed-forward-right-to-try/",
+      "description": "As of this week in Montana, any biotech company with an experimental drug has a clear path to selling it to consumers. Companies whose drugs have been through preliminary testing—sometimes in as few a...",
+      "publishedDate": "Thu, 30 Jul 2026 17:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/montana-treatments2.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
       "title": "ファインチューニングとは？ChatGPTでのやり方や料金、RAGとの違いを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/fine-tuning",
@@ -431,72 +431,6 @@
       "language": "ja"
     },
     {
-      "title": "安川電機、「エージェンティック・ロボットシステム」開発。AIロボットが自律的に作業を実行",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/yaskawa-ai-robot-system/",
-      "description": "安川電機は、AIロボットとGoogle DeepMindの生成AIを連携させた「エージェンティック・ロボットシステム」を新たに開発しました。詳細なプログラミングは不要で、ロボット自身が現場状況を判断し、自律的に作業手順を [...] The post 安川電機、「エージェンティック・ロボットシステム」開発。AIロボットが自律的に作業を実行 first appeared on AIポータルメディアA...",
-      "publishedDate": "Thu, 30 Jul 2026 08:53:08 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/yaskawa-ai-robot-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "Google、画像検索25周年に合わせ新たなホーム画面導入、「AI Overviews」に画像生成機能を追加",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/google-images-25th-anniversary/",
-      "description": "Googleは画像検索の25周年に合わせ、新たなホーム画面の導入と「AI Overviews」における画像生成機能の追加を発表しました。 このニュースのポイント Google、画像検索開始25周年に合わせて2つの新機能を [...] The post Google、画像検索25周年に合わせ新たなホーム画面導入、「AI Overviews」に画像生成機能を追加 first appeared on A...",
-      "publishedDate": "Thu, 30 Jul 2026 08:52:51 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/googleimage25th-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "戸田建設、「山岳トンネルAI発破設計システム」開発。装薬量の最適化で暗黙知依存からの脱却を目指す",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/toda-tunnel-ai-blasting-system/",
-      "description": "戸田建設は、切羽精度や岩サイズを予測して装薬量を最適化する「山岳トンネルAI発破設計システム」を開発しました。熟練者のノウハウを形式知化し、現場の安全性や生産性向上を実現します。 このニュースのポイント 戸田建設、切羽精 [...] The post 戸田建設、「山岳トンネルAI発破設計システム」開発。装薬量の最適化で暗黙知依存からの脱却を目指す first appeared on AIポータルメ...",
-      "publishedDate": "Thu, 30 Jul 2026 08:43:45 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/toda-tunnel-ai-blasting-system-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "【インタビュー】全社員が「当たり前に」生成AIを使う会社へ。住友化学が挑む「AIネイティブカンパニー」への道",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sumitomo-chem-ai-interview/",
-      "description": "生成AIの活用は、いまや一部の先進企業やIT業界にとどまりません。労働人口の減少やグローバル競争の激化を背景に、AIを「特別なツール」から「全社員が当たり前に使う道具」へと組織的に定着させられるかが、企業の競争力を左右す [...] The post 【インタビュー】全社員が「当たり前に」生成AIを使う会社へ。住友化学が挑む「AIネイティブカンパニー」への道 first appeared on A...",
-      "publishedDate": "Thu, 30 Jul 2026 05:20:48 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/sumitomo.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTに顔写真を送ってしまったら？削除できない場合の注意点",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-head-shot/",
-      "description": "ChatGPT（チャットGPT）に顔写真を送ってしまい、「ネットに公開されないか」「悪用されないか」と不安になっていませんか。 通常の非公開チャットに写真を送っただけで、直ちにWeb上へ公開されるわけではありません。まず [...] The post ChatGPTに顔写真を送ってしまったら？削除できない場合の注意点 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 30 Jul 2026 02:05:11 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gptheadshotmain.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPT Deep Researchとは？使い方・料金・プロンプトのコツを解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-deep-research/",
-      "description": "ChatGPTの調査AIエージェント機能であるDeep Researchについて、「結局何ができるの？」「料金プランや回数制限はどうなっている？」「メニューに表示されないのはなぜ？」といった疑問を持つ方は多いのではないで [...] The post ChatGPT Deep Researchとは？使い方・料金・プロンプトのコツを解説 first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Thu, 30 Jul 2026 01:59:12 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gptdeepresearchmain.png",
-      "language": "ja"
-    },
-    {
       "title": "ローカルLLM×RAGとは？クラウド型との違い・自作方法・活用例を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/local-llm-rag/",
@@ -530,6 +464,39 @@
       "language": "ja"
     },
     {
+      "title": "住宅ローン比較診断サービス「モゲチェック」、AIエージェント連携向けMCPサーバーを公開",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/mfs-mogecheck-ai-agent-mcp/",
+      "description": "MFSは、住宅ローン比較診断サービス「モゲチェック」とAIエージェントの連携を目的としたMCP（Model Context Protocol）サーバーを公開しました。 このニュースのポイント MFS、住宅ローン比較診断サ [...] The post 住宅ローン比較診断サービス「モゲチェック」、AIエージェント連携向けMCPサーバーを公開 first appeared on AIポータルメディアA...",
+      "publishedDate": "Fri, 31 Jul 2026 06:58:19 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/MFS-mogecheck-AI-Agent-MCP-server.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPT広告に31.1%が出稿済みと回答、全体の7割超が出稿に意欲。AIツール広告に関する実態調査結果発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/kwm-chatgpt-ads-research/",
+      "description": "キーワードマーケティングは、ChatGPT広告をはじめとするAIツール広告に関する実態調査を実施しました。ChatGPT広告について「出稿済み」が31.1%で、全体の7割超が出稿に意欲を示していることが明らかになりました [...] The post ChatGPT広告に31.1%が出稿済みと回答、全体の7割超が出稿に意欲。AIツール広告に関する実態調査結果発表 first appeared on...",
+      "publishedDate": "Fri, 31 Jul 2026 06:52:57 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/chatgpt-ads-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "技研製作所、AI活用の自動運転機能を備えた油圧式杭圧入引抜機「サイレントパイラー™ HA400SX」発売",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/giken-ai-silent-piler/",
+      "description": "技研製作所は、AI搭載アプリと連携し、自動運転機能などを備えた油圧式杭圧入引抜機「サイレントパイラー™ HA400SX」を発売しました。AIが最適な設定値を提案し、経験の浅い作業者でも高品質な施工が可能になります。 この [...] The post 技研製作所、AI活用の自動運転機能を備えた油圧式杭圧入引抜機「サイレントパイラー™ HA400SX」発売 first appeared on AIポ...",
+      "publishedDate": "Fri, 31 Jul 2026 06:52:18 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/giken-ai-main.png",
+      "language": "ja"
+    },
+    {
       "title": "RLHFとは？生成AIの応答を改善する学習手法の仕組み・メリット・課題を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/rlhf/",
@@ -549,6 +516,39 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/local-aiagent_2607-4-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【インタビュー】全従業員の「生成AI活用の義務化」、その先へ ――LINEヤフーが挑む「AIエージェント化」の現在地",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/lycorp-ai-interview/",
+      "description": "生成AIの企業導入が加速するなか、経営方針として「AIエージェント化の推進」を掲げ、2025年7月には全従業員を対象に業務における「生成AI活用の義務化」を前提とした新しい働き方を発表するなど、全社を挙げたAI活用を推進 [...] The post 【インタビュー】全従業員の「生成AI活用の義務化」、その先へ ――LINEヤフーが挑む「AIエージェント化」の現在地 first appeared ...",
+      "publishedDate": "Fri, 31 Jul 2026 01:30:47 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/lycorp-ai-interview.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTで手相占い｜写真の送り方・プロンプト例と注意点を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-palmistry-prompt-photo/",
+      "description": "「ChatGPTで手相占いを試したいけれど、写真の撮り方や頼み方が分からない」「手のひらの写真を送っても大丈夫？」と迷っていませんか。 本記事では、ChatGPTで手相占いを試す3ステップの手順と、そのままコピペできるプ [...] The post ChatGPTで手相占い｜写真の送り方・プロンプト例と注意点を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 31 Jul 2026 01:15:53 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/palmistryMain.png",
+      "language": "ja"
+    },
+    {
+      "title": "Grokで夢小説を書く方法｜無料版・プロンプト例・口調を保つコツ",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/grok-dream-fiction/",
+      "description": "Grokで夢小説を書いてみたいものの、何を指示すればいいか分からない。推しの口調や呼び方が途中で変わってしまう。長くなると設定が崩れる。そんな悩みを抱えていませんか。 この記事では、Grokの無料版での始め方から、コピペ [...] The post Grokで夢小説を書く方法｜無料版・プロンプト例・口調を保つコツ first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 31 Jul 2026 00:57:25 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/grokdreamfiction01.webp",
       "language": "ja"
     },
     {
