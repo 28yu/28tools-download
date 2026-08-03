@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02T04:23:59.276436",
+  "lastUpdated": "2026-08-03T04:31:01.281119",
   "articles": [
     {
       "title": "How an overlooked geothermal plant got a second chance",
@@ -43,17 +43,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/RAG-Service_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "RAGの活用事例まとめ！導入企業の事例と利用するメリット、注意点を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/rag-use-cases/",
-      "description": "RAG（検索拡張生成）は、AIの回答精度と柔軟性を大幅に高める技術として、今ビジネス現場で急速に注目を集めています。社内データの横断検索やカスタマーサポートの自動化など、多様な業務で圧倒的な成果を上げています。 この記事 [...]...",
-      "publishedDate": "Wed, 29 Jul 2026 11:14:55 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/rag-use-cases_2607-1024x576.webp",
       "language": "ja"
     },
     {
@@ -168,7 +157,7 @@
     },
     {
       "title": "Native-speed vLLM transformers modeling backend",
-      "titleJa": "ネイティブスピードの vLLM トランスフォーマー モデリング バックエンド",
+      "titleJa": "ネイティブ速度の vLLM トランスフォーマー モデリング バックエンド",
       "link": "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
       "description": "...",
       "publishedDate": "Wed, 08 Jul 2026 00:00:00 GMT",
@@ -245,7 +234,7 @@
     },
     {
       "title": "LFM2.5-Encoders for Fast Long-Context Inference on CPU",
-      "titleJa": "CPU 上で高速なロングコンテキスト推論を実現する LFM2.5 エンコーダ",
+      "titleJa": "CPU 上で高速なロングコンテキスト推論を実現する LFM2.5 エンコーダー",
       "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
       "description": "...",
       "publishedDate": "Tue, 28 Jul 2026 15:01:45 GMT",
@@ -398,39 +387,6 @@
       "language": "ja"
     },
     {
-      "title": "AVITAのAIロープレ「アバトレ」、新潟県労働金庫に導入。職員の対人コミュニケーション訓練に活用",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aivita-niigata-rokin-avatar/",
-      "description": "AVITAのAIロープレサービス「アバトレ」が、新潟県労働金庫に導入されました。本サービスは、職員教育の環境づくりの一環として、顧客対応をはじめとする対人コミュニケーションの訓練に活用されます。 このニュースのポイント [...] The post AVITAのAIロープレ「アバトレ」、新潟県労働金庫に導入。職員の対人コミュニケーション訓練に活用 first appeared on AIポータルメ...",
-      "publishedDate": "Thu, 30 Jul 2026 08:53:57 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/AIVITA-niigata-rokin-avatar-training.png",
-      "language": "ja"
-    },
-    {
-      "title": "OpenAIのAIモデルがテスト環境を逸脱。Hugging Faceのインフラへ不正アクセス",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-huggingface-incident/",
-      "description": "OpenAIは、自社のAIモデルが隔離された評価環境を逸脱し、Hugging Faceのインフラを侵害するセキュリティインシデントが発生したことを発表しました。 このニュースのポイント OpenAIのAIモデルが社内評価 [...] The post OpenAIのAIモデルがテスト環境を逸脱。Hugging Faceのインフラへ不正アクセス first appeared on AIポータルメディ...",
-      "publishedDate": "Thu, 30 Jul 2026 08:53:44 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/openai-huggingface-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "Google、「Gemini」新モデル「3.6 Flash」「3.5 Flash-Lite」「3.5 Flash Cyber」発表",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/google-gemini-new-models/",
-      "description": "Googleは、「Gemini」の新モデル「Gemini 3.6 Flash」「Gemini 3.5 Flash-Lite」「Gemini 3.5 Flash Cyber」の3種を発表しました。従来モデル「Gemini [...] The post Google、「Gemini」新モデル「3.6 Flash」「3.5 Flash-Lite」「3.5 Flash Cyber」発表 first app...",
-      "publishedDate": "Thu, 30 Jul 2026 08:53:26 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/google-gemini-flash-new-models-main.png",
-      "language": "ja"
-    },
-    {
       "title": "ローカルLLM×RAGとは？クラウド型との違い・自作方法・活用例を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/local-llm-rag/",
@@ -439,6 +395,50 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/local-llm-rag_2607-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Seedance 2.5】30秒の映画級AI動画を一発生成！ByteDanceの最新動画生成モデルの性能・使い方・活用シーンを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/seedance-2-5/",
+      "description": "2026年7月31日、ByteDance（TikTok運営元）は最新のAI動画生成モデル「Seedance 2.5」を正式公開しました！ 前モデルであるSeedance 2.0の最大15秒から倍増し、1回の生成で最大30 [...]...",
+      "publishedDate": "Sun, 02 Aug 2026 10:01:15 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Seedance-2.5-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "「AI博覧会 Summer 2026」カンファレンス  第2弾スピーカーを発表！  チームみらい党首 安野貴博氏が「AI時代のDX戦略」を解説。  デジタル庁のガバメントAI、経営・製造・営業のAI活用事例も公開",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/aihaku-sum2026-2ndsp/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年8月26日（水）・27日（木）の2日間、新宿住友ビル 三角広場にて「AI博覧会 Summer 2026」を開催します。 今 [...] The post 「AI博覧会 Summer 2026」カンファレンス 第2弾スピーカーを発表！ チームみらい党首 安野貴博氏が「AI時代のDX戦略」を解説。 デジタ...",
+      "publishedDate": "Mon, 03 Aug 2026 04:00:27 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/image_2026_7_30.png",
+      "language": "ja"
+    },
+    {
+      "title": "Teamsの使い方とは？基本操作・便利機能・生成AI連携を初心者向けに解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/microsoft-teams-plan/",
+      "description": "「Teams会議の参加方法がわからない」「チャットとチームの違いって？」多機能なTeamsは、最初どこを見ればいいか戸惑いがちです。 本記事では、基本画面の見方から会議・チャットの操作、社外の人の招待方法まで、実際の画面 [...] The post Teamsの使い方とは？基本操作・便利機能・生成AI連携を初心者向けに解説 first appeared on AIポータルメディアAIsmiley...",
+      "publishedDate": "Mon, 03 Aug 2026 02:05:45 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/teams.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Codex Skillsの使い方とは？SKILL.mdの書き方からおすすめスキル・Claude Code Skillsとの違いまで解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/codex-skills-md/",
+      "description": "「AIに毎回同じ前提条件を説明するのが面倒…」「メンバーによってコードレビューやテスト自動生成の品質にバラつきがある」開発現場でAIエージェントを活用する際、このような属人化や手間の壁にぶつかっていませんか？ その悩みを [...] The post Codex Skillsの使い方とは？SKILL.mdの書き方からおすすめスキル・Claude Code Skillsとの違いまで解説 first ...",
+      "publishedDate": "Mon, 03 Aug 2026 01:50:44 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/06/codex-skills.jpg",
       "language": "ja"
     },
     {
@@ -549,6 +549,28 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/grokdreamfiction01.webp",
+      "language": "ja"
+    },
+    {
+      "title": "アトラシアン、AI時代の仕事用ブラウザ「Diaブラウザ」のWindows版リリースへ。ウェイトリストへの登録開始",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/aidiawindows.html",
+      "description": "アトラシアンは、現在Mac版がリリースされているDiaブラウザのWindows版を今年の秋にリリースすることを明らかにしました。 Dia for Windows is coming (this fall!) pic.twitter.com/......",
+      "publishedDate": "2026-08-02T15:56:09Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/dia-on-windows-thisfall.png",
+      "language": "ja"
+    },
+    {
+      "title": "日本におけるクラウドネイティブコミュニティの開発者数が約100万人に、CNCFが調査結果を発表",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/100cncf.html",
+      "description": "Kubernetesをはじめとするクラウドネイティブなテクノロジーを推進するCloud Native Computing Foundation（以下、CNCF）とIT分野専門の調査会社であるSlashDataは、日本におけるクラウドネイティ......",
+      "publishedDate": "2026-08-02T15:28:02Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/0lnB2of0.jpg",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/claudegateway401.png",
-      "language": "ja"
-    },
-    {
-      "title": "Rustで書き直されたBun、早くもClaude Codeアプリに本番投入された模様",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/rustbunclaude_code.html",
-      "description": "Claude Codeを用いてわずか11日間でZig言語からRust言語へ移植されたことが話題となっているJavaScriptランタイムのBunですが、そのRust版Bunが早くも7月17日にリリースされたClaude Code v2.1.......",
-      "publishedDate": "2026-07-20T15:52:57Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HNj_ngGb0AA-I1m.jpg",
-      "language": "ja"
-    },
-    {
-      "title": ".NET 8と.NET 9は今年の11月でサポート終了、マイクロソフトが警告",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/net_8net_911.html",
-      "description": "マイクロソフトの包括的なソフトウェアフレームワーク「.NET 8」と「.NET 9」のサポートが今年（2026年）11月10日に終了します。 サポート終了後も.NET 8や.NET 9で開発されたアプリケーションはそのまま動作し、使えなくな......",
-      "publishedDate": "2026-07-16T18:30:28Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/dotnet8and9-eol.png",
       "language": "ja"
     }
   ]
