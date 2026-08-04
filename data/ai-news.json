@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-03T04:31:01.281119",
+  "lastUpdated": "2026-08-04T04:15:20.021032",
   "articles": [
     {
       "title": "How an overlooked geothermal plant got a second chance",
@@ -35,17 +35,6 @@
       "language": "en"
     },
     {
-      "title": "RAGサービス比較14選！料金・機能・選び方と導入手順を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/rag-service/",
-      "description": "企業内で生成AIの活用が進む中、社内の独自データを参照して回答できるRAGサービスに注目が集まっています。導入すれば問い合わせ対応などを効率化できるためです。 とはいえ、「一般的な生成AIとどう違うの？」「自社に合ったサ [...]...",
-      "publishedDate": "Wed, 29 Jul 2026 11:59:30 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/RAG-Service_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
       "titleJa": "学術研究者向けの ChatGPT で科学的発見を加速する",
       "link": "https://openai.com/index/chatgpt-for-academic-researchers",
@@ -57,44 +46,11 @@
       "language": "en"
     },
     {
-      "title": "The AI Hype Index: Unsexy AI",
-      "titleJa": "AI ハイプ インデックス: セクシーではない AI",
-      "link": "https://www.technologyreview.com/2026/07/29/1140795/the-ai-hype-index-unsexy-ai/",
-      "description": "It feels bad enough when an open letter signed by leading economists warns that AI might steal your job. The fact it may soon be better than you at making dinner? Insult to injury. But that’s exactly ...",
-      "publishedDate": "Wed, 29 Jul 2026 08:42:57 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/JUL26-thumb.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
       "titleJa": "GPT-5.6 がフロンティア インテリジェンスとフロンティア効率をどのように融合するか",
       "link": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
       "description": "GPT-5.6 improves AI efficiency across models, inference, and agentic workflows, helping deliver more useful intelligence per dollar....",
       "publishedDate": "Wed, 29 Jul 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Building AI infrastructure with the Effingham County community",
-      "titleJa": "エフィンガム郡コミュニティと AI インフラストラクチャを構築する",
-      "link": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
-      "description": "OpenAI announces Project Camellia in Effingham County, Georgia, with commitments to responsible energy, community investment, jobs, and access to Codex....",
-      "publishedDate": "Wed, 22 Jul 2026 13:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How news organizations are using AI to advance their vital missions",
-      "titleJa": "報道機関が重要な任務を推進するために AI をどのように活用しているか",
-      "link": "https://openai.com/index/how-news-organizations-are-using-ai",
-      "description": "News organizations are using AI to strengthen reporting, grow audiences, and improve business operations, with OpenAI tools supporting journalists and publishers worldwide....",
-      "publishedDate": "Wed, 22 Jul 2026 13:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -168,7 +124,7 @@
     },
     {
       "title": "The latest AI news we announced in June 2026",
-      "titleJa": "2026年6月に発表したAI最新ニュース",
+      "titleJa": "2026 年 6 月に発表された AI の最新ニュース",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
       "description": "June Pixel Drop hero...",
       "publishedDate": "Wed, 01 Jul 2026 18:15:00 +0000",
@@ -266,28 +222,6 @@
       "language": "en"
     },
     {
-      "title": "The Download: OpenAI’s predictable hack, and an AI stock sell-off",
-      "titleJa": "ダウンロード: OpenAI の予測可能なハッキングと AI 株の急落",
-      "link": "https://www.technologyreview.com/2026/07/28/1140868/the-download-openai-hack-ai-stock-sell-off/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. OpenAI called the Hugging Face attack unprecedente...",
-      "publishedDate": "Tue, 28 Jul 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f4c9.png",
-      "language": "en"
-    },
-    {
-      "title": "Samsung’s chip workers are jumping ship to rival SK Hynix",
-      "titleJa": "サムスンのチップ従業員がライバルのSKハイニックスに飛びついている",
-      "link": "https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix/",
-      "description": "Lee, an engineer at Samsung’s semiconductor division, clocks out when his shift ends. He used to work longer hours, going the extra mile to excel at his projects. But lately, he’s been coming straight...",
-      "publishedDate": "Tue, 28 Jul 2026 09:18:57 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/chip-money.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "Grabette: an open system to record robot-manipulation data",
       "titleJa": "Grabette: ロボット操作データを記録するオープン システム",
       "link": "https://huggingface.co/blog/grabette",
@@ -332,6 +266,17 @@
       "language": "en"
     },
     {
+      "title": "Meta AIとは？特徴や使い方、日本での利用状況を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-meta-ai/",
+      "description": "Meta社が開発した対話型AIアシスタント「Meta AI」は、Facebook・Instagram・WhatsAppといった同社のSNSと深く統合された最先端AIです。世界では月間10億人以上が利用しているとされ、日本 [...] The post Meta AIとは？特徴や使い方、日本での利用状況を徹底解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Tue, 04 Aug 2026 03:20:22 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/whatismetaai01.webp",
+      "language": "ja"
+    },
+    {
       "title": "Montana’s plan to become an experimental medical hub just pushed forward",
       "titleJa": "モンタナ州の実験的医療拠点となる計画が前進した",
       "link": "https://www.technologyreview.com/2026/07/30/1140942/montana-experimental-medical-hub-pushed-forward-right-to-try/",
@@ -340,6 +285,17 @@
       "source": "MIT Technology Review",
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/montana-treatments2.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "GPU Management: Why Idle GPUs Are the New Grounded Aircraft",
+      "titleJa": "GPU 管理: アイドル状態の GPU が新しい地上航空機となる理由",
+      "link": "https://huggingface.co/blog/Dharma-AI/gpu-management",
+      "description": "...",
+      "publishedDate": "Thu, 30 Jul 2026 15:09:09 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/69d815b52c6db28cfdfdd422/Ih3Nn6Wc1U_w_QpvEMXRY.png",
       "language": "en"
     },
     {
@@ -376,15 +332,37 @@
       "language": "ja"
     },
     {
-      "title": "Sakana AI、Fuguオーケストレーションモデルのサイバーセキュリティ特化AI「Fugu-Cyber」を発表",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sakana-ai-fugu-cyber-release/",
-      "description": "Sakana AIは、企業のサイバー防御における複雑な課題への対応を目的としたAIモデル「Fugu-Cyber」を発表しました。 このニュースのポイント Sakana AI、サイバーセキュリティ特化AIモデル「Fugu- [...] The post Sakana AI、Fuguオーケストレーションモデルのサイバーセキュリティ特化AI「Fugu-Cyber」を発表 first appeared o...",
-      "publishedDate": "Thu, 30 Jul 2026 08:53:59 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/Sakana-AI-orchestration-model-Sakana-Fugu-release.png",
-      "language": "ja"
+      "title": "The Download: tricking LLMs, and reviving geothermal plants",
+      "titleJa": "ダウンロード: LLM を騙し、地熱発電所を復活させる",
+      "link": "https://www.technologyreview.com/2026/07/30/1140936/the-download-tricking-llms-reviving-geothermal/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A fundamental flaw leaves LLMs strikingly vulnerab...",
+      "publishedDate": "Thu, 30 Jul 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/12/Helsing_CA-1_Europa_design_study_2.jpg?w=840",
+      "language": "en"
+    },
+    {
+      "title": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
+      "titleJa": "根本的な欠陥により、LLM は攻撃に対して著しく脆弱になります",
+      "link": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/",
+      "description": "It is impossible to make large language models fully secure against hacks because of a fundamental flaw in how they work, a team of researchers argue in a paper presented at the International Conferen...",
+      "publishedDate": "Thu, 30 Jul 2026 10:15:19 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/chain-link.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Advancing the price-performance frontier with GPT-5.6",
+      "titleJa": "GPT-5.6 で価格パフォーマンスの最前線を前進",
+      "link": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+      "description": "Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale....",
+      "publishedDate": "Thu, 30 Jul 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "ローカルLLM×RAGとは？クラウド型との違い・自作方法・活用例を徹底解説",
@@ -398,6 +376,17 @@
       "language": "ja"
     },
     {
+      "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
+      "titleJa": "avatarin が GPT-Realtime を使用して 24 時間年中無休の小売代理店を構築した方法",
+      "link": "https://openai.com/index/avatarin",
+      "description": "avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people used the agent and 92% of survey responses were positive....",
+      "publishedDate": "Thu, 30 Jul 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "【Seedance 2.5】30秒の映画級AI動画を一発生成！ByteDanceの最新動画生成モデルの性能・使い方・活用シーンを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/seedance-2-5/",
@@ -406,6 +395,61 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Seedance-2.5-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "プラスアルファ・コンサルティング、「対話型AIキャリアアドバイザー」提供開始。自律型人材の育成を支援",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/plus-alpha-talent-palette/",
+      "description": "プラスアルファ・コンサルティングは、タレントマネジメントシステム「Talent Palette」において「対話型AIキャリアアドバイザー」の提供を開始しました。自律的なキャリア形成を対話形式で支援します。 このニュースの [...] The post プラスアルファ・コンサルティング、「対話型AIキャリアアドバイザー」提供開始。自律型人材の育成を支援 first appeared on AIポータ...",
+      "publishedDate": "Mon, 03 Aug 2026 08:48:10 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/talent-palette.png",
+      "language": "ja"
+    },
+    {
+      "title": "富士ソフト、「Gen.2 AI事業戦略」を発表。共通基盤整備しAIの現場実装力を強化",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/fujisoft-gen-2-business-strategy/",
+      "description": "富士ソフトは、現場でのAI実装力の強化に向け「Gen.2 AI 事業戦略」を発表しました。共通デリバリーモデル「AIアセットファブリック」を2026年中に整備し、新たな競争優位の確立を目指します。 このニュースのポイント [...] The post 富士ソフト、「Gen.2 AI事業戦略」を発表。共通基盤整備しAIの現場実装力を強化 first appeared on AIポータルメディアAIs...",
+      "publishedDate": "Mon, 03 Aug 2026 08:37:19 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/fujisoft.png",
+      "language": "ja"
+    },
+    {
+      "title": "日立製作所、「Claude Mythos Preview」を用いた重要インフラソフトウェアでのセキュリティ検証効果を発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/hitachi-mythos-verification/",
+      "description": "日立製作所は、Anthropicが推進する共同イニシアチブ「Project Glasswing」に参画し、「Claude Mythos Preview」を活用した脆弱性の特定および修正に関する実証成果を発表しました。 こ [...] The post 日立製作所、「Claude Mythos Preview」を用いた重要インフラソフトウェアでのセキュリティ検証効果を発表 first appeare...",
+      "publishedDate": "Mon, 03 Aug 2026 08:31:32 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/hitachi-Anthropic-Mythos-Security-verification.png",
+      "language": "ja"
+    },
+    {
+      "title": "自治体の78.2%が生成AI活用に着手。活用の課題は「職員のリテラシー不足」が82.7%で最多",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/local-government-genai-survey/",
+      "description": "自治体DX推進協議会は、全国の自治体を対象に実施した生成AI活用に関する実態調査の結果を発表しました。78.2%の自治体が生成AI活用に着手している一方で、82.7%が職員のリテラシー不足を主な課題と感じていることが明ら [...] The post 自治体の78.2%が生成AI活用に着手。活用の課題は「職員のリテラシー不足」が82.7%で最多 first appeared on AIポータルメデ...",
+      "publishedDate": "Mon, 03 Aug 2026 08:27:39 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/local-government-genai-survey-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "MiniMax H3とは？タスクとモダリティの境界を超えるオープンモデルの特徴・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/minimax-h3/",
+      "description": "2026年7月、MiniMaxから新しいマルチモーダル生成モデルが発表されました。 今回登場した「MiniMax H3」は、テキスト・画像・動画・音声をひとつの統合されたコンテキストとして理解する汎用マルチモーダル生成モ [...]...",
+      "publishedDate": "Mon, 03 Aug 2026 04:57:58 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_MiniMax-H3-1024x576.webp",
       "language": "ja"
     },
     {
@@ -486,17 +530,6 @@
       "language": "ja"
     },
     {
-      "title": "技研製作所、AI活用の自動運転機能を備えた油圧式杭圧入引抜機「サイレントパイラー™ HA400SX」発売",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/giken-ai-silent-piler/",
-      "description": "技研製作所は、AI搭載アプリと連携し、自動運転機能などを備えた油圧式杭圧入引抜機「サイレントパイラー™ HA400SX」を発売しました。AIが最適な設定値を提案し、経験の浅い作業者でも高品質な施工が可能になります。 この [...] The post 技研製作所、AI活用の自動運転機能を備えた油圧式杭圧入引抜機「サイレントパイラー™ HA400SX」発売 first appeared on AIポ...",
-      "publishedDate": "Fri, 31 Jul 2026 06:52:18 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/giken-ai-main.png",
-      "language": "ja"
-    },
-    {
       "title": "RLHFとは？生成AIの応答を改善する学習手法の仕組み・メリット・課題を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/rlhf/",
@@ -519,36 +552,25 @@
       "language": "ja"
     },
     {
-      "title": "【インタビュー】全従業員の「生成AI活用の義務化」、その先へ ――LINEヤフーが挑む「AIエージェント化」の現在地",
+      "title": "Rust製のフルスタックWebアプリフレームワーク「Topcoat」登場。非同期ランタイム「Tokio」上でサーバサイドレンダリング、ルーティング、コンポーネントライブラリなど",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/lycorp-ai-interview/",
-      "description": "生成AIの企業導入が加速するなか、経営方針として「AIエージェント化の推進」を掲げ、2025年7月には全従業員を対象に業務における「生成AI活用の義務化」を前提とした新しい働き方を発表するなど、全社を挙げたAI活用を推進 [...] The post 【インタビュー】全従業員の「生成AI活用の義務化」、その先へ ――LINEヤフーが挑む「AIエージェント化」の現在地 first appeared ...",
-      "publishedDate": "Fri, 31 Jul 2026 01:30:47 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/lycorp-ai-interview.png",
+      "link": "https://www.publickey1.jp/blog/26/rustwebtopcoattokio.html",
+      "description": "Rust言語の代表的な非同期ランタイムライブラリ「Tokio」の開発チームが、フルスタックのWebアプリケーションフレームワーク「Topcoat」のリリースを発表しました。 下記はTokioの作者でTopcoatの作者でもあるCarl Le......",
+      "publishedDate": "2026-08-03T15:42:58Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/tokio-topcoat-ann01.png",
       "language": "ja"
     },
     {
-      "title": "ChatGPTで手相占い｜写真の送り方・プロンプト例と注意点を解説",
+      "title": "クラウドインフラのシェア、AWSが28％と変わらず、Google Cloudは1ポイント上昇して15％に。市場全体が年42％と過去最高の成長率に。2026年第2四半期、Synergy Research",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-palmistry-prompt-photo/",
-      "description": "「ChatGPTで手相占いを試したいけれど、写真の撮り方や頼み方が分からない」「手のひらの写真を送っても大丈夫？」と迷っていませんか。 本記事では、ChatGPTで手相占いを試す3ステップの手順と、そのままコピペできるプ [...] The post ChatGPTで手相占い｜写真の送り方・プロンプト例と注意点を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 31 Jul 2026 01:15:53 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/palmistryMain.png",
-      "language": "ja"
-    },
-    {
-      "title": "Grokで夢小説を書く方法｜無料版・プロンプト例・口調を保つコツ",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/grok-dream-fiction/",
-      "description": "Grokで夢小説を書いてみたいものの、何を指示すればいいか分からない。推しの口調や呼び方が途中で変わってしまう。長くなると設定が崩れる。そんな悩みを抱えていませんか。 この記事では、Grokの無料版での始め方から、コピペ [...] The post Grokで夢小説を書く方法｜無料版・プロンプト例・口調を保つコツ first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 31 Jul 2026 00:57:25 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/grokdreamfiction01.webp",
+      "link": "https://www.publickey1.jp/blog/26/aws28google_cloud1154220262synergy_research.html",
+      "description": "調査会社のSynergy Research Groupは、グローバルにおける2026年第2四半期のクラウドインフラの市場状況について調査結果を発表しました。 クラウドインフラとは、IaaS、PaaS、ホステッドプライベートクラウドを合わせた......",
+      "publishedDate": "2026-08-03T15:39:50Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/synergy2026q202.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/okta-aitools-ranking2026-01.png",
-      "language": "ja"
-    },
-    {
-      "title": "AWS、デプロイ速度が最大4倍になる「AWS CloudFormation Expressモード」を提供開始",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/aws4aws_cloudformation_express.html",
-      "description": "Amazon Web Services（AWS）は、デプロイ速度が最大で4倍速になるAWS CloudFormationの新機能「AWS CloudFormation Expressモード」の提供を開始しました。 AWS CloudForm......",
-      "publishedDate": "2026-07-21T13:50:39Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/aws-cloudformation-express-2.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Codeを組織一括でシングルサインオン、チームや個人の費用上限設定、デフォルト設定など可能に、「Claude apps gateway for AWS/Google Cloud」登場",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/claude_codeclaude_apps_gateway_for_awsgoogle_cloud.html",
-      "description": "AnthropicのAIコーディングエージェントClaud Codeは非常に人気のあるサービスとして多くの組織で採用され始めています。 Claude Codeは個人で簡単に導入できますが、企業が組織としてClaude Codeを導入する場合......",
-      "publishedDate": "2026-07-20T15:54:57Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/claudegateway401.png",
       "language": "ja"
     }
   ]
