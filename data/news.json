@@ -1,36 +1,6 @@
 {
-  "lastUpdated": "2026-08-03T01:57:22.545831",
+  "lastUpdated": "2026-08-04T01:45:22.856267",
   "articles": [
-    {
-      "title": "中之島三丁目共同開発Ⅳ期計画とは｜木質デザイン木質デザインオフィスが竣工",
-      "link": "https://news.build-app.jp/article/41928/",
-      "description": "トレンドワード：中之島三丁目共同開発IV期計画 大阪・中之島エリアでは、関西電力やダイビルなどによる段階的な再開発として「中之島三丁目共同開......",
-      "publishedDate": "Wed, 29 Jul 2026 23:38:23 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/f209464c34cc74089f57b6df547b3c7c-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "生成AIで間取り図を作ったら、次は何をすべき？DXF変換術",
-      "link": "https://axconstdx.com/2026/07/22/%e7%94%9f%e6%88%90ai%e3%81%a7%e9%96%93%e5%8f%96%e3%82%8a%e5%9b%b3%e3%82%92%e4%bd%9c%e3%81%a3%e3%81%9f%e3%82%89%e3%80%81%e6%ac%a1%e3%81%af%e4%bd%95%e3%82%92%e3%81%99%e3%81%b9%e3%81%8d%ef%bc%9fdxf/",
-      "description": "生成AIで作った間取り図は美しく見えますが、そのままではCADで編集できない壁にぶつかります。本記事では、誰でも実装できるOpenCVやOCR、Pythonを組み合わせた方法で、AIが生成した画像を自由に編集できるDXF [...] <p>The post 生成AIで間取り図を作ったら、次は何をすべき？DXF変換術 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Wed, 22 Jul 2026 08:56:17 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100kb-9-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Scan-To-BIMとは？導入前に知るべき点群活用の基礎とアプリの選定方法",
-      "link": "https://axconstdx.com/2026/07/28/scan-to-bim%e3%81%a8%e3%81%af%ef%bc%9f%e5%b0%8e%e5%85%a5%e5%89%8d%e3%81%ab%e7%9f%a5%e3%82%8b%e3%81%b9%e3%81%8d%e7%82%b9%e7%be%a4%e6%b4%bb%e7%94%a8%e3%81%ae%e5%9f%ba%e7%a4%8e%e3%81%a8%e3%82%a2%e3%83%97/",
-      "description": "既存建物の改修や設備更新では、「図面はあるが、現況と合っているか分からない」という問題が起こりがちです。現地を何度も計測し直した結果、設計変更や施工段階で想定外の干渉が見つかることもあります。 こうした現況把握の精度とス [...] <p>The post Scan-To-BIMとは？導入前に知るべき点群活用の基礎とアプリの選定方法 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Tue, 28 Jul 2026 05:47:44 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/scan-to-bim_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
     {
       "title": "京橋第一生命ビルディング｜建て替え後のテナントやゼネコン情報まとめ",
       "link": "https://news.build-app.jp/article/36430/",
@@ -52,56 +22,6 @@
       "language": "ja"
     },
     {
-      "title": "BMWが約8,000人規模の人員削減へ｜希望退職の背景と影響",
-      "link": "https://axconstdx.com/2026/07/30/bmw%e3%81%8c8000%e4%ba%ba%e3%81%ae%e4%ba%ba%e5%93%a1%e5%89%8a%e6%b8%9b%e3%82%92%e7%99%ba%e8%a1%a8%ef%bd%9c%e8%83%8c%e6%99%af%e3%81%a8%e6%a5%ad%e7%95%8c%e3%81%b8%e3%81%ae%e5%bd%b1%e9%9f%bf%e3%82%92/",
-      "description": "BMWが2027年末までに進める約8,000人規模の希望退職を解説。中国市場の低迷、EV競争、米国関税を背景に、管理・開発部門の合理化と自動車業界への影響を読み解きます。 はじめに BMWが2027年末までに8,000人 [...] <p>The post BMWが約8,000人規模の人員削減へ｜希望退職の背景と影響 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Thu, 30 Jul 2026 13:14:28 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/BMW_1200x630_under100KB-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ARI、EARTHBRAINの建設DX基盤刷新を支援、デザイン先行とAI駆動開発で生産性向上",
-      "link": "https://news.build-app.jp/article/41951/",
-      "description": "ＡＲアドバンストテクノロジ株式会社（東京都渋谷区、代表取締役社長：武内寿憲、以下ARI）は、株式会社EARTHBRAINが手がける建設DXア......",
-      "publishedDate": "Thu, 30 Jul 2026 04:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/earthbrain-smart-construction-130x87.webp",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPT Workに丸投げは危険？50のFAQで解説",
-      "link": "https://axconstdx.com/2026/07/30/chatgpt-work%e3%81%ab%e4%b8%b8%e6%8a%95%e3%81%92%e3%81%af%e5%8d%b1%e9%99%ba%ef%bc%9f50%e3%81%aefaq%e3%81%a7%e8%a7%a3%e8%aa%ac/",
-      "description": "「ChatGPT Workに任せて大丈夫だろうか」——その不安、実はほとんどの導入担当者が抱えています。丸投げすれば思わぬ失敗を招きかねません。本記事を読めば、業務の任せ方から証拠に基づく確認方法、人間が関わるべき境界線 [...] <p>The post ChatGPT Workに丸投げは危険？50のFAQで解説 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Thu, 30 Jul 2026 03:57:53 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-2-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPT Workに「丸投げ」できる工程設計とは？20年DX経験から解く",
-      "link": "https://axconstdx.com/2026/07/24/ai%e3%81%ab%e3%80%8e%e5%ae%8c%e5%85%a8%e3%81%ab%e3%80%8f%e4%b8%b8%e6%8a%95%e3%81%92%e3%81%a7%e3%81%8d%e3%82%8b%e5%b7%a5%e7%a8%8b%e8%a8%ad%e8%a8%88%e3%81%a8%e3%81%af%ef%bc%9f20%e5%b9%b4dx%e7%b5%8c/",
-      "description": "AIに仕事を丸投げしたとき、進捗は進んでいるのに「本当にこれで大丈夫？」という不安が頭から離れない経験はありませんか。でも、一つの「設計法」を身につければ、その不安は消え去り、自信を持ってAIに仕事を任せることができるよ [...] <p>The post ChatGPT Workに「丸投げ」できる工程設計とは？20年DX経験から解く first appeared on 生成AIと建設DX.</p...",
-      "publishedDate": "Thu, 23 Jul 2026 20:51:19 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100KB-12-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "生成AIはコード制作へシフト。文章時代から「ビルド型コンテンツ」への転換",
-      "link": "https://axconstdx.com/2026/07/19/%e7%94%9f%e6%88%90ai%e3%81%af%e3%82%b3%e3%83%bc%e3%83%89%e5%88%b6%e4%bd%9c%e3%81%b8%e3%82%b7%e3%83%95%e3%83%88%e3%80%82%e6%96%87%e7%ab%a0%e6%99%82%e4%bb%a3%e3%81%8b%e3%82%89%e3%80%8c%e3%83%93%e3%83%ab/",
-      "description": "あなたが今、記事を書いている間にも、世界のAIは文章ではなくコードを量産しています。その現実に気づかない企業は、2026年以降、競争力の低下に直面するリスクが高いと考えられます。生き残る側に回るために知っておくべきことが [...] <p>The post 生成AIはコード制作へシフト。文章時代から「ビルド型コンテンツ」への転換 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sun, 19 Jul 2026 14:08:14 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-5-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "一級建築施工管理技士とは？2026年度の受検資格・試験日程・企業での活用を解説",
       "link": "https://news.build-app.jp/article/41982/",
       "description": "一級建築施工管理技士は第一次検定に合格しても、第二次検定へ進める時期は保有資格や実務経験で変わります。 2026年度は新受検資格と旧受検資格......",
@@ -112,43 +32,23 @@
       "language": "ja"
     },
     {
-      "title": "Gemini Sparkとは？24時間働く自律AIエージェントの仕組みと導入時の注意点",
-      "link": "https://axconstdx.com/2026/08/02/gemini-spark%e3%81%a8%e3%81%af%ef%bc%9f24%e6%99%82%e9%96%93%e5%83%8d%e3%81%8f%e8%87%aa%e5%be%8bai%e3%82%a8%e3%83%bc%e3%82%b8%e3%82%a7%e3%83%b3%e3%83%88%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%81%a8/",
-      "description": "生成AIが『働く』から『考える』時代へ進化しました。24時間バックグラウンド稼働するGemini Sparkは、複雑な業務を自動分解・実行する新世代エージェント。仕組みから活用法、導入時の落とし穴まで、判断に必要な全てを [...] <p>The post Gemini Sparkとは？24時間働く自律AIエージェントの仕組みと導入時の注意点 first appeared on 生成AIと建設DX...",
-      "publishedDate": "Sun, 02 Aug 2026 10:43:51 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/gemini-spark_1200x630_under100KB-1024x538.jpg",
+      "title": "国土交通省、6月の新設住宅着工戸数18.6％増、持家・貸家・分譲住宅がそろって増加",
+      "link": "https://news.build-app.jp/article/42001/",
+      "description": "国土交通省は2026年7月31日、建築着工統計調査報告の令和8年6月分を公表しました。全国の新設住宅着工戸数は66,344戸となり、前年同月......",
+      "publishedDate": "Mon, 03 Aug 2026 06:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/new-housing-starts-june-130x79.jpg",
       "language": "ja"
     },
     {
-      "title": "Claude Proユーザー必見｜Fable 5従量化で損しない3つの戦略を全解説",
-      "link": "https://axconstdx.com/2026/07/19/claude-pro%e3%83%a6%e3%83%bc%e3%82%b6%e3%83%bc%e5%bf%85%e8%a6%8b%ef%bd%9cfable-5%e5%be%93%e9%87%8f%e5%8c%96%e3%81%a7%e6%90%8d%e3%81%97%e3%81%aa%e3%81%843%e3%81%a4%e3%81%ae%e6%88%a6%e7%95%a5%e3%82%92/",
-      "description": "7月20日、Proユーザーの運命が分かれます。従量課金に気づかず使い続ければ月額が10倍以上に跳ね上がることも。しかし、補償100ドルを使った1週間の実測なら、自分に最適なプランが確実に見えてきます。本記事は、その判定ロ [...] <p>The post Claude Proユーザー必見｜Fable 5従量化で損しない3つの戦略を全解説 first appeared on 生成AIと建設DX.<...",
-      "publishedDate": "Sat, 18 Jul 2026 22:27:26 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/claude-pro-eyecatch-1200x630-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Scan to BIMのリアル——AI精度の限界とロボット連携、そして中小企業の挑戦",
-      "link": "https://axconstdx.com/2026/08/01/scan-to-bim%e3%81%ae%e3%83%aa%e3%82%a2%e3%83%ab-ai%e7%b2%be%e5%ba%a6%e3%81%ae%e9%99%90%e7%95%8c%e3%81%a8%e3%83%ad%e3%83%9c%e3%83%83%e3%83%88%e9%80%a3%e6%90%ba%e3%80%81%e3%81%9d/",
-      "description": "「完全に自動化されるはず」と思って導入したら、思いのほか人手がかかってしまった——建設現場のDX導入で、こうした肩透かしを食う企業は少なくありません。だからこそ、AIの現実とどう向き合うかが、成功と失敗の分かれ目になりま [...] <p>The post Scan to BIMのリアル——AI精度の限界とロボット連携、そして中小企業の挑戦 first appeared on 生成AIと建設DX....",
-      "publishedDate": "Sat, 01 Aug 2026 09:03:49 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ループで十分？Graph Engineeringが必要になる瞬間",
-      "link": "https://axconstdx.com/2026/07/28/%e3%83%ab%e3%83%bc%e3%83%97%e3%81%a7%e5%8d%81%e5%88%86%ef%bc%9fgraph-engineering%e3%81%8c%e5%bf%85%e8%a6%81%e3%81%ab%e3%81%aa%e3%82%8b%e7%9e%ac%e9%96%93/",
-      "description": "複数のAIを組み合わせる際、個々は優秀でも全体が不安定になる悩みはありませんか？その正体は「AIどうしのつながり方」の設計不足です。本記事では、2026年の新標準となりつつあるGraph Engineeringの判断軸を [...] <p>The post ループで十分？Graph Engineeringが必要になる瞬間 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Mon, 27 Jul 2026 16:41:37 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-1-2-1024x538.jpg",
+      "title": "国土交通省、6月の建設工事受注は公共工事118.5％増、総額も4カ月ぶり増加",
+      "link": "https://news.build-app.jp/article/41997/",
+      "description": "国土交通省が、令和8年6月分の建設工事受注動態統計調査（大手50社対象）の結果をまとめ、7月31日に公表しました。今回の調査では、公共工事が......",
+      "publishedDate": "Mon, 03 Aug 2026 04:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/construction_statistics_june-130x68.jpg",
       "language": "ja"
     },
     {
