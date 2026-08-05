@@ -1,24 +1,84 @@
 {
-  "lastUpdated": "2026-08-04T01:45:22.856267",
+  "lastUpdated": "2026-08-05T01:45:15.736329",
   "articles": [
     {
-      "title": "京橋第一生命ビルディング｜建て替え後のテナントやゼネコン情報まとめ",
-      "link": "https://news.build-app.jp/article/36430/",
-      "description": "トレンドワード：京橋第一生命ビルディングの建て替え 「京橋第一生命ビルディングの建て替え」についてピックアップします。近年、環境配慮や持続可......",
-      "publishedDate": "Thu, 30 Jul 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/07/b4be9771db73068ae49c2d8ab9285bd4-130x82.png",
+      "title": "生成AIで間取り図を作ったら、次は何をすべき？DXF変換術",
+      "link": "https://axconstdx.com/2026/07/22/%e7%94%9f%e6%88%90ai%e3%81%a7%e9%96%93%e5%8f%96%e3%82%8a%e5%9b%b3%e3%82%92%e4%bd%9c%e3%81%a3%e3%81%9f%e3%82%89%e3%80%81%e6%ac%a1%e3%81%af%e4%bd%95%e3%82%92%e3%81%99%e3%81%b9%e3%81%8d%ef%bc%9fdxf/",
+      "description": "生成AIで作った間取り図は美しく見えますが、そのままではCADで編集できない壁にぶつかります。本記事では、誰でも実装できるOpenCVやOCR、Pythonを組み合わせた方法で、AIが生成した画像を自由に編集できるDXF [...] <p>The post 生成AIで間取り図を作ったら、次は何をすべき？DXF変換術 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Wed, 22 Jul 2026 08:56:17 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100kb-9-1024x538.jpg",
       "language": "ja"
     },
     {
-      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第八回)｜深堀り取材【毎月3回更新】",
-      "link": "https://news.build-app.jp/article/41732/",
-      "description": "建築基準法第2条第3号において建築設備とは、「建築物に設ける電気、ガス、給水、排水、換気、暖房、冷房、消火、排煙若しくは汚物処理の設備又は煙......",
-      "publishedDate": "Thu, 30 Jul 2026 22:00:00 +0000",
+      "title": "Scan-To-BIMとは？導入前に知るべき点群活用の基礎とアプリの選定方法",
+      "link": "https://axconstdx.com/2026/07/28/scan-to-bim%e3%81%a8%e3%81%af%ef%bc%9f%e5%b0%8e%e5%85%a5%e5%89%8d%e3%81%ab%e7%9f%a5%e3%82%8b%e3%81%b9%e3%81%8d%e7%82%b9%e7%be%a4%e6%b4%bb%e7%94%a8%e3%81%ae%e5%9f%ba%e7%a4%8e%e3%81%a8%e3%82%a2%e3%83%97/",
+      "description": "既存建物の改修や設備更新では、「図面はあるが、現況と合っているか分からない」という問題が起こりがちです。現地を何度も計測し直した結果、設計変更や施工段階で想定外の干渉が見つかることもあります。 こうした現況把握の精度とス [...] <p>The post Scan-To-BIMとは？導入前に知るべき点群活用の基礎とアプリの選定方法 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Tue, 28 Jul 2026 05:47:44 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/scan-to-bim_1200x630_under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "建設会社・審査機関に現況聴取+課題を抱えながら次を見据え「BIM図面審査」スタート【BIM確認申請特集_前編】",
+      "link": "https://news.build-app.jp/article/41872/",
+      "description": "「BuidApp News」の運営主体である野原グループ株式会社傘下のBuildApp総合研究所では、2026年5月22日～26日の期間、「......",
+      "publishedDate": "Tue, 04 Aug 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/ba530e6ab7962e6fac40f9431f7cc5da-1-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/06a21f766c80656052a5c89bf48a24ae-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPT Plusのスキル機能が使えた！実機検証レポート",
+      "link": "https://axconstdx.com/2026/08/04/chatgpt-plus%e3%81%ae%e3%82%b9%e3%82%ad%e3%83%ab%e6%a9%9f%e8%83%bd%e3%81%8c%e4%bd%bf%e3%81%88%e3%81%9f%ef%bc%81%e5%ae%9f%e6%a9%9f%e6%a4%9c%e8%a8%bc%e3%83%ac%e3%83%9d%e3%83%bc%e3%83%88/",
+      "description": "「Plusプランでは使えないはず」と諦めていませんか。実は2026年8月4日、ChatGPT Plusでスキルが動く様子を実機で確認できました。仕組みから作成手順まで分かれば、自分のアカウントで今すぐ試すべきかを迷わず判 [...] <p>The post ChatGPT Plusのスキル機能が使えた！実機検証レポート first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Tue, 04 Aug 2026 14:46:44 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/eyecatch_1200x630_under100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "アーキット、ダンプトラックを管理するAIダンプキーパーがNETIS活用促進技術に認定",
+      "link": "https://news.build-app.jp/article/42030/",
+      "description": "アーキット合同会社（本社：札幌市）は、自社が開発した建設現場向けシステム「AIダンプキーパー」が、国土交通省の「NETIS活用促進技術認定制......",
+      "publishedDate": "Tue, 04 Aug 2026 04:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/dump-keeper-netis-130x72.webp",
+      "language": "ja"
+    },
+    {
+      "title": "BMWが約8,000人規模の人員削減へ｜希望退職の背景と影響",
+      "link": "https://axconstdx.com/2026/07/30/bmw%e3%81%8c8000%e4%ba%ba%e3%81%ae%e4%ba%ba%e5%93%a1%e5%89%8a%e6%b8%9b%e3%82%92%e7%99%ba%e8%a1%a8%ef%bd%9c%e8%83%8c%e6%99%af%e3%81%a8%e6%a5%ad%e7%95%8c%e3%81%b8%e3%81%ae%e5%bd%b1%e9%9f%bf%e3%82%92/",
+      "description": "BMWが2027年末までに進める約8,000人規模の希望退職を解説。中国市場の低迷、EV競争、米国関税を背景に、管理・開発部門の合理化と自動車業界への影響を読み解きます。 はじめに BMWが2027年末までに8,000人 [...] <p>The post BMWが約8,000人規模の人員削減へ｜希望退職の背景と影響 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Thu, 30 Jul 2026 13:14:28 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/BMW_1200x630_under100KB-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPT Workに丸投げは危険？50のFAQで解説",
+      "link": "https://axconstdx.com/2026/07/30/chatgpt-work%e3%81%ab%e4%b8%b8%e6%8a%95%e3%81%92%e3%81%af%e5%8d%b1%e9%99%ba%ef%bc%9f50%e3%81%aefaq%e3%81%a7%e8%a7%a3%e8%aa%ac/",
+      "description": "「ChatGPT Workに任せて大丈夫だろうか」——その不安、実はほとんどの導入担当者が抱えています。丸投げすれば思わぬ失敗を招きかねません。本記事を読めば、業務の任せ方から証拠に基づく確認方法、人間が関わるべき境界線 [...] <p>The post ChatGPT Workに丸投げは危険？50のFAQで解説 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Thu, 30 Jul 2026 03:57:53 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-2-1-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPT Workに「丸投げ」できる工程設計とは？20年DX経験から解く",
+      "link": "https://axconstdx.com/2026/07/24/ai%e3%81%ab%e3%80%8e%e5%ae%8c%e5%85%a8%e3%81%ab%e3%80%8f%e4%b8%b8%e6%8a%95%e3%81%92%e3%81%a7%e3%81%8d%e3%82%8b%e5%b7%a5%e7%a8%8b%e8%a8%ad%e8%a8%88%e3%81%a8%e3%81%af%ef%bc%9f20%e5%b9%b4dx%e7%b5%8c/",
+      "description": "AIに仕事を丸投げしたとき、進捗は進んでいるのに「本当にこれで大丈夫？」という不安が頭から離れない経験はありませんか。でも、一つの「設計法」を身につければ、その不安は消え去り、自信を持ってAIに仕事を任せることができるよ [...] <p>The post ChatGPT Workに「丸投げ」できる工程設計とは？20年DX経験から解く first appeared on 生成AIと建設DX.</p...",
+      "publishedDate": "Thu, 23 Jul 2026 20:51:19 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100KB-12-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -29,6 +89,46 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/28072040_m-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Gemini Sparkとは？24時間働く自律AIエージェントの仕組みと導入時の注意点",
+      "link": "https://axconstdx.com/2026/08/02/gemini-spark%e3%81%a8%e3%81%af%ef%bc%9f24%e6%99%82%e9%96%93%e5%83%8d%e3%81%8f%e8%87%aa%e5%be%8bai%e3%82%a8%e3%83%bc%e3%82%b8%e3%82%a7%e3%83%b3%e3%83%88%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%81%a8/",
+      "description": "生成AIが『働く』から『考える』時代へ進化しました。24時間バックグラウンド稼働するGemini Sparkは、複雑な業務を自動分解・実行する新世代エージェント。仕組みから活用法、導入時の落とし穴まで、判断に必要な全てを [...] <p>The post Gemini Sparkとは？24時間働く自律AIエージェントの仕組みと導入時の注意点 first appeared on 生成AIと建設DX...",
+      "publishedDate": "Sun, 02 Aug 2026 10:43:51 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/gemini-spark_1200x630_under100KB-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Scan to BIMのリアル——AI精度の限界とロボット連携、そして中小企業の挑戦",
+      "link": "https://axconstdx.com/2026/08/01/scan-to-bim%e3%81%ae%e3%83%aa%e3%82%a2%e3%83%ab-ai%e7%b2%be%e5%ba%a6%e3%81%ae%e9%99%90%e7%95%8c%e3%81%a8%e3%83%ad%e3%83%9c%e3%83%83%e3%83%88%e9%80%a3%e6%90%ba%e3%80%81%e3%81%9d/",
+      "description": "「完全に自動化されるはず」と思って導入したら、思いのほか人手がかかってしまった——建設現場のDX導入で、こうした肩透かしを食う企業は少なくありません。だからこそ、AIの現実とどう向き合うかが、成功と失敗の分かれ目になりま [...] <p>The post Scan to BIMのリアル——AI精度の限界とロボット連携、そして中小企業の挑戦 first appeared on 生成AIと建設DX....",
+      "publishedDate": "Sat, 01 Aug 2026 09:03:49 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630-1-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "ループで十分？Graph Engineeringが必要になる瞬間",
+      "link": "https://axconstdx.com/2026/07/28/%e3%83%ab%e3%83%bc%e3%83%97%e3%81%a7%e5%8d%81%e5%88%86%ef%bc%9fgraph-engineering%e3%81%8c%e5%bf%85%e8%a6%81%e3%81%ab%e3%81%aa%e3%82%8b%e7%9e%ac%e9%96%93/",
+      "description": "複数のAIを組み合わせる際、個々は優秀でも全体が不安定になる悩みはありませんか？その正体は「AIどうしのつながり方」の設計不足です。本記事では、2026年の新標準となりつつあるGraph Engineeringの判断軸を [...] <p>The post ループで十分？Graph Engineeringが必要になる瞬間 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Mon, 27 Jul 2026 16:41:37 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-1-2-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "BIM設計にAIが侵入？建築家の仕事はこれからどうなるのか",
+      "link": "https://axconstdx.com/2026/08/04/bim%e8%a8%ad%e8%a8%88%e3%81%abai%e3%81%8c%e4%be%b5%e5%85%a5%ef%bc%9f%e5%bb%ba%e7%af%89%e5%ae%b6%e3%81%ae%e4%bb%95%e4%ba%8b%e3%81%af%e3%81%93%e3%82%8c%e3%81%8b%e3%82%89%e3%81%a9%e3%81%86%e3%81%aa/",
+      "description": "「AIに仕事を奪われるかもしれない」——そんな漠然とした不安を抱えている建築家の方は少なくないはずです。BIM設計の現場で今まさに起きている変化と、AIと共存しながら自分にしかできない判断力を磨いていく具体的な方法を、こ [...] <p>The post BIM設計にAIが侵入？建築家の仕事はこれからどうなるのか first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Mon, 03 Aug 2026 19:34:09 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/WP_eyecatch_1200x630_under100KB-1024x538.jpg",
       "language": "ja"
     },
     {
