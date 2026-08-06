@@ -1,17 +1,6 @@
 {
-  "lastUpdated": "2026-08-05T04:10:23.788001",
+  "lastUpdated": "2026-08-06T04:13:39.638605",
   "articles": [
-    {
-      "title": "How an overlooked geothermal plant got a second chance",
-      "titleJa": "見過ごされてきた地熱発電所が二度目のチャンスを手に入れた経緯",
-      "link": "https://www.technologyreview.com/2026/07/29/1140896/geothermal-second-chance/",
-      "description": "In June 2024, a small company called Zanskar purchased a geothermal power plant in New Mexico that was failing fast. The water coming from the underground reservoir was getting colder by the day, maki...",
-      "publishedDate": "Wed, 29 Jul 2026 17:58:44 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/Lightning-Dock-NM-Zanskar.jpg?resize=1200,600",
-      "language": "en"
-    },
     {
       "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
       "titleJa": "2 つの設定を有効にすることで、ARC-AGI-3 ベンチマークのスコアが 3 倍になった方法",
@@ -57,10 +46,175 @@
       "language": "en"
     },
     {
+      "title": "Model Routing Is Simple. Until It Isn’t.",
+      "titleJa": "モデルのルーティングは簡単です。それがなくなるまで。",
+      "link": "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt",
+      "description": "...",
+      "publishedDate": "Wed, 15 Jul 2026 17:27:01 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/642ee6f6ffd6084c6a620985/ibA2XHLJsqDH9VAL-3ou-.png",
+      "language": "en"
+    },
+    {
+      "title": "Welcome Inkling by Thinking Machines",
+      "titleJa": "Thinking Machines による Inkling へようこそ",
+      "link": "https://huggingface.co/blog/thinkingmachines-inkling",
+      "description": "...",
+      "publishedDate": "Wed, 15 Jul 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/thinkingmachines-inkling/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Introducing Real World VoiceEQ: Measuring the human quality of voice AI",
+      "titleJa": "Real World VoiceEQ の紹介: 音声 AI の人間性の測定",
+      "link": "https://huggingface.co/blog/real-world-voiceeq",
+      "description": "...",
+      "publishedDate": "Wed, 15 Jul 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/real-world-voiceeq/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Native-speed vLLM transformers modeling backend",
+      "titleJa": "ネイティブ速度の vLLM トランスフォーマー モデリング バックエンド",
+      "link": "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
+      "description": "...",
+      "publishedDate": "Wed, 08 Jul 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/native-speed-vllm-transformers-backend/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Puzzle Corner",
+      "titleJa": "パズルコーナー",
+      "link": "https://www.technologyreview.com/2026/08/05/1141230/puzzle-corner-84/",
+      "description": "Ready for a fresh set of puzzles? Click here for the September/October 2026 Puzzle Corner, brought to you by Michael S. Branicky, ScD ’95, of the Puzzle Corner Puzzle Crew (aka PC2), which also includ...",
+      "publishedDate": "Wed, 05 Aug 2026 14:56:29 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2020/02/puzzle-the-mans-hand-completest20gjo1nw-web-1.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "The Download: NASA’s new telescope and Chinese tech import curbs",
+      "titleJa": "ダウンロード: NASAの新しい望遠鏡と中国の技術輸入制限",
+      "link": "https://www.technologyreview.com/2026/08/05/1141212/the-download-nasa-telescope-chinese-tech-import-curbs/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. NASA’s new dark energy space telescope can also de...",
+      "publishedDate": "Wed, 05 Aug 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/01/vitalist_master.jpg?w=840",
+      "language": "en"
+    },
+    {
+      "title": "DPO（Direct Preference Optimization）とは？RLHFとの違い・仕組み・実装方法まで徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/dpo/",
+      "description": "DPO（Direct Preference Optimization）は、LLMの出力を人間の好みに沿うよう調整するアライメント手法の一つです。従来主流だったRLHF（人間のフィードバックによる強化学習）と比べて、報酬モ [...]...",
+      "publishedDate": "Wed, 05 Aug 2026 10:10:53 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/DPO_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "KDDI、出版・専門メディアと連携した対話型AIサービス「Buffmee」提供開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/kddi-buffmee-ai-service/",
+      "description": "KDDIは、出版や専門メディアから許諾を得たコンテンツを情報源とする対話型AIサービス「Buffmee」の提供を開始しました。許諾を得た約150のコンテンツを情報源とし、7つのボタンで検索や要約を直感的に実行できます。 [...] The post KDDI、出版・専門メディアと連携した対話型AIサービス「Buffmee」提供開始 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Wed, 05 Aug 2026 08:59:46 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/kddi-buffmee-ai-service-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAIの次期主要モデル「Astra」、数学と理論計算機科学の未解決問題を解決・進展",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-astra-math-proof/",
+      "description": "OpenAIは、次期主要モデル「Astra」の社内版を用いて、高次元幾何学や群論などの数学および理論計算機科学における10件の未解決問題を解決、または大幅に進展させたと発表しました。 このニュースのポイント OpenAI [...] The post OpenAIの次期主要モデル「Astra」、数学と理論計算機科学の未解決問題を解決・進展 first appeared on AIポータルメディアA...",
+      "publishedDate": "Wed, 05 Aug 2026 08:59:41 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/openai-astra-math-proof-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "JAPAN AI、LGWAN対応の自治体向けAIサービス「JAPAN AI 行政」提供開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/japan-ai-government-service-launch/",
+      "description": "JAPAN AIは、LGWAN接続環境に対応した地方自治体向けサービス「JAPAN AI 行政」の提供を開始しました。文書作成や庁内ナレッジ検索など、実務における生成AIの活用と業務効率化を支援します。 このニュースのポ [...] The post JAPAN AI、LGWAN対応の自治体向けAIサービス「JAPAN AI 行政」提供開始 first appeared on AIポータルメディア...",
+      "publishedDate": "Wed, 05 Aug 2026 08:59:37 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/japan-ai-government-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "スニフアウト、RAG向けデータ変換サービス「RAG Ready Converter」を正式リリース。アップデートにより変換精度の向上やセキュリティ強化を実現",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/rag-ready-converter-release/",
+      "description": "スニフアウトは、画像・Excel・PowerPoint・PDFなど多様なビジネスファイルを、RAGで高精度に取り扱える「RAG Ready データ」へ変換するサービス「RAG Ready Converter」の正式版を提 [...] The post スニフアウト、RAG向けデータ変換サービス「RAG Ready Converter」を正式リリース。アップデートにより変換精度の向上やセキュリティ強...",
+      "publishedDate": "Wed, 05 Aug 2026 08:30:08 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/sniffout-RAG-Ready-Converter-Official-release.png",
+      "language": "ja"
+    },
+    {
+      "title": "NVIDIAら30社超、AIの安全性向上とセキュリティツール開発を推進する「Open Secure AI Alliance」設立",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/nvidia-open-secure-ai-alliance/",
+      "description": "NVIDIAは、MicrosoftやSpaceXAIなど30社を超える企業・団体と連携し、AI時代のセキュリティ強化を目的とした「Open Secure AI Alliance」を設立しました。 このニュースのポイント [...] The post NVIDIAら30社超、AIの安全性向上とセキュリティツール開発を推進する「Open Secure AI Alliance」設立 first appe...",
+      "publishedDate": "Wed, 05 Aug 2026 08:30:07 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/NVIDIA-Open-Secure-AI-Alliance.png",
+      "language": "ja"
+    },
+    {
+      "title": "コマツとEARTHBRAIN、AIMが戦略提携。日米で建設現場の自律施工ソリューションを推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/komatsu-earthbrain-aim-partnership/",
+      "description": "コマツとその子会社であるEARTHBRAINは、AIMと戦略的パートナーシップを締結しました。日本および米国市場を対象とする、建設現場における自律施工ソリューションの実現を目指します。 このニュースのポイント コマツ・E [...] The post コマツとEARTHBRAIN、AIMが戦略提携。日米で建設現場の自律施工ソリューションを推進 first appeared on AIポータルメディ...",
+      "publishedDate": "Wed, 05 Aug 2026 08:30:04 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/KOMATSU-EARTHBRAIN-AIM-Intelligent-Machines-partnership.png",
+      "language": "ja"
+    },
+    {
+      "title": "NASA’s new dark-energy space telescope can also detect killer asteroids",
+      "titleJa": "NASAの新しいダークエネルギー宇宙望遠鏡は、キラー小惑星も検出できる",
+      "link": "https://www.technologyreview.com/2026/08/05/1141200/nasas-roman-telescope-detect-asteroids/",
+      "description": "At the end of August, NASA is set to launch the Nancy Grace Roman Space Telescope from Kennedy Space Center in Florida. Its goal is to help us better understand how the universe works, from the glue-l...",
+      "publishedDate": "Wed, 05 Aug 2026 08:06:40 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/KSC-20260626-PH-SER01_0007orig.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Claude CodeのTeamプランとは？料金・個人プランとの違い・導入手順を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-code-team/",
+      "description": "Claude Codeを個人で使い始めたあと、次に出てくるのが「チーム全体でどう導入するか」という課題です。 Anthropicが提供する「Claude Code Teamプラン」は、Claude Codeを含むClau [...]...",
+      "publishedDate": "Wed, 05 Aug 2026 04:22:07 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-Team_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "8/28開催【製造業向け】現場改革＆DX推進ウェビナー！AI導入を全社DXにつなげるには？品質不具合の未然防止から全社変革事例まで、成果につながる最新AI活用術",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/20260828webinar/",
-      "description": "AIポータルメディア「AIsmiley」は、2026年8月28日（金）12時から 製造業向け現場改革＆DX推進ウェビナーを開催します。 製造現場の業務効率化や品質向上に向けてAI活用への期待が高まる一方で、現場では「ノウ [...] The post 8/28開催【製造業向け】現場改革＆DX推進ウェビナー！AI導入を全社DXにつなげるには？品質不具合の未然防止から全社変革事例まで、成果につながる最...",
+      "description": "AIポータルメディア「AIsmiley」は、2026年8月28日（金）12時から製造業向け現場改革＆DX推進ウェビナーを開催します。 製造現場の業務効率化や品質向上に向けてAI活用への期待が高まる一方で、現場では「ノウハ [...] The post 8/28開催【製造業向け】現場改革＆DX推進ウェビナー！AI導入を全社DXにつなげるには？品質不具合の未然防止から全社変革事例まで、成果につながる最...",
       "publishedDate": "Wed, 05 Aug 2026 03:40:58 +0000",
       "source": "AIsmiley",
       "category": "general",
@@ -91,7 +245,7 @@
     },
     {
       "title": "The latest AI news we announced in June 2026",
-      "titleJa": "2026 年 6 月に発表された AI の最新ニュース",
+      "titleJa": "2026年6月に発表したAI最新ニュース",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
       "description": "June Pixel Drop hero...",
       "publishedDate": "Wed, 01 Jul 2026 18:15:00 +0000",
@@ -120,6 +274,17 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Generated_Image_k2dxu1k2.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "The OlmoEarth Platform: Geospatial inference at planetary scale",
+      "titleJa": "OlmoEarth プラットフォーム: 惑星規模での地理空間推論",
+      "link": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
+      "description": "...",
+      "publishedDate": "Tue, 28 Jul 2026 16:27:42 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/N27UuRDvcQy4CvmrzRKAE.png",
       "language": "en"
     },
     {
@@ -156,6 +321,17 @@
       "language": "en"
     },
     {
+      "title": "Grabette: an open system to record robot-manipulation data",
+      "titleJa": "Grabette: ロボット操作データを記録するオープン システム",
+      "link": "https://huggingface.co/blog/grabette",
+      "description": "...",
+      "publishedDate": "Tue, 21 Jul 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/grabette/thumbnail_grabette.png",
+      "language": "en"
+    },
+    {
       "title": "Celebrating 25 years of visual search innovation",
       "titleJa": "ビジュアル検索のイノベーション 25 年を祝う",
       "link": "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary/",
@@ -164,6 +340,17 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Images_25th_hero.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "From Hugging Face to Amazon SageMaker Studio in one click",
+      "titleJa": "ワンクリックで顔のハグから Amazon SageMaker Studio へ",
+      "link": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
+      "description": "...",
+      "publishedDate": "Tue, 07 Jul 2026 21:15:33 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/68abb71b13d7773ad97e9035/f1nX3dXVmvJcQzJfgfpnJ.webp",
       "language": "en"
     },
     {
@@ -189,6 +376,17 @@
       "language": "en"
     },
     {
+      "title": "Deploy local agents everywhere with LFM2.5-2.6B",
+      "titleJa": "LFM2.5-2.6B を使用してローカル エージェントをあらゆる場所に展開",
+      "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+      "description": "...",
+      "publishedDate": "Tue, 04 Aug 2026 13:58:29 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/DsoMk3kqhMYedjPiZINKv.png",
+      "language": "en"
+    },
+    {
       "title": "The latest AI news we announced in July 2026",
       "titleJa": "2026年7月に発表したAI最新ニュース",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
@@ -200,7 +398,7 @@
       "language": "en"
     },
     {
-      "title": "The Download: US robot restrictions, and ICE’s DNA grab",
+      "title": "The Download: US robot restrictions and ICE’s DNA grab",
       "titleJa": "ダウンロード: 米国のロボット規制とICEのDNA奪取",
       "link": "https://www.technologyreview.com/2026/08/04/1141098/the-download-robot-restrictions-ice-dna/",
       "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Trump’s AI protectionism has come for robotics —Ja...",
@@ -219,39 +417,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.8-Max-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "日立製作所、システム開発の全工程にAIを適用する基盤「Agentic AI Integration Platform」開発",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/hitachi-agentic-ai-integration/",
-      "description": "日立製作所は、エンタープライズ向けシステムインテグレーションの全工程にAIを全面適用する「Agentic AI Integration Platform」を開発しました。本プラットフォームの適用により、2027年度には構 [...] The post 日立製作所、システム開発の全工程にAIを適用する基盤「Agentic AI Integration Platform」開発 first appear...",
-      "publishedDate": "Tue, 04 Aug 2026 08:45:17 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/hitachi-agentic-ai-integration-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "NABLASの「AI合成音声等による音声なりすましの統合検出技術の開発・実証」が総務省事業に採択",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/nablas-mic-voice-fake-detection/",
-      "description": "NABLASの「AI合成音声等による音声なりすましの統合検出技術の開発・実証」が、総務省の「インターネット上の偽・誤情報等への対策技術の開発・実証事業」に採択されました。 このニュースのポイント NABLASの「AI合成 [...] The post NABLASの「AI合成音声等による音声なりすましの統合検出技術の開発・実証」が総務省事業に採択 first appeared on AIポータルメ...",
-      "publishedDate": "Tue, 04 Aug 2026 08:23:30 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/NABLAS-soumu-AI-voice-Anti-fraud-measures.png",
-      "language": "ja"
-    },
-    {
-      "title": "ロボティクスとは？要素技術から2026年の最新動向・活用事例まで解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/robotics-latest-trends-in-2026/",
-      "description": "ロボティクスは、ロボットの設計から制御までを扱う工学分野であり、いまや製造業だけでなく物流や医療、農業など幅広い現場を支える基盤技術になっています。人手不足や生産性向上といった課題に向き合う企業にとって、避けて通れないテ [...] The post ロボティクスとは？要素技術から2026年の最新動向・活用事例まで解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 04 Aug 2026 06:47:08 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/05/robotics.jpg",
       "language": "ja"
     },
     {
@@ -277,19 +442,8 @@
       "language": "ja"
     },
     {
-      "title": "Meta AIとは？特徴や使い方、日本での利用状況を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-meta-ai/",
-      "description": "Meta社が開発した対話型AIアシスタント「Meta AI」は、Facebook・Instagram・WhatsAppといった同社のSNSと深く統合された最先端AIです。世界では月間10億人以上が利用しているとされ、日本 [...] The post Meta AIとは？特徴や使い方、日本での利用状況を徹底解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 04 Aug 2026 03:20:22 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/whatismetaai01.webp",
-      "language": "ja"
-    },
-    {
       "title": "New ways to learn and teach with ChatGPT Work and Codex",
-      "titleJa": "ChatGPT Work と Codex を使用した新しい学習方法と教える方法",
+      "titleJa": "ChatGPT Work と Codex を使って学び、教えるための新しい方法",
       "link": "https://openai.com/index/learn-teach-chatgpt-work-codex",
       "description": "Explore new education plugins for ChatGPT Work and Codex that help K–12 teachers, college educators, and students learn, teach, research, and build....",
       "publishedDate": "Tue, 04 Aug 2026 00:00:00 GMT",
@@ -310,36 +464,14 @@
       "language": "en"
     },
     {
-      "title": "ファインチューニングとは？ChatGPTでのやり方や料金、RAGとの違いを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/fine-tuning",
-      "description": "ChatGPTをはじめとする生成AIは、幅広い質問に回答できる一方、専門的な業務や自社独自のルールに沿った回答が苦手な場合があります。そこで役立つのが、特定のデータを追加で学習させるファインチューニングです。ファインチュ [...]...",
-      "publishedDate": "Thu, 30 Jul 2026 13:19:51 +0000",
-      "source": "WEEL",
+      "title": "GPU Management: Why Idle GPUs Are the New Grounded Aircraft",
+      "titleJa": "GPU 管理: アイドル状態の GPU が新しい地上航空機となる理由",
+      "link": "https://huggingface.co/blog/Dharma-AI/gpu-management",
+      "description": "...",
+      "publishedDate": "Thu, 30 Jul 2026 15:09:09 GMT",
+      "source": "Hugging Face Blog",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/fine-tuning_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "The Download: tricking LLMs, and reviving geothermal plants",
-      "titleJa": "ダウンロード: LLM を騙し、地熱発電所を復活させる",
-      "link": "https://www.technologyreview.com/2026/07/30/1140936/the-download-tricking-llms-reviving-geothermal/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A fundamental flaw leaves LLMs strikingly vulnerab...",
-      "publishedDate": "Thu, 30 Jul 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/12/Helsing_CA-1_Europa_design_study_2.jpg?w=840",
-      "language": "en"
-    },
-    {
-      "title": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
-      "titleJa": "根本的な欠陥により、LLM は攻撃に対して著しく脆弱になります",
-      "link": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/",
-      "description": "It is impossible to make large language models fully secure against hacks because of a fundamental flaw in how they work, a team of researchers argue in a paper presented at the International Conferen...",
-      "publishedDate": "Thu, 30 Jul 2026 10:15:19 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/chain-link.jpg?resize=1200,600",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/69d815b52c6db28cfdfdd422/Ih3Nn6Wc1U_w_QpvEMXRY.png",
       "language": "en"
     },
     {
@@ -354,48 +486,15 @@
       "language": "en"
     },
     {
-      "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
-      "titleJa": "avatarin が GPT-Realtime を使用して 24 時間年中無休の小売代理店を構築した方法",
-      "link": "https://openai.com/index/avatarin",
-      "description": "avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people used the agent and 92% of survey responses were positive....",
-      "publishedDate": "Thu, 30 Jul 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Our latest Google Finance upgrades, including a new app",
-      "titleJa": "新しいアプリを含む最新の Google Finance アップグレード",
-      "link": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/",
-      "description": "The Google Finance logo, surrounded by elements of the user interface...",
-      "publishedDate": "Thu, 25 Jun 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
+      "title": "「Claude徹底解説」を公開！ChatGPT・Copilot・Gemini・Claudeを機能別／業務別に比較―自社に合う生成AIの選び方がわかる実践ガイド",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-thorough-explanation/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、全社標準の生成AIとは別に現場でClaudeが選ばれている実態を整理し、主要生成AIとの違いと業務別の使い分けをまとめた実践資料「C [...] The post 「Claude徹底解説」を公開！ChatGPT・Copilot・Gemini・Claudeを機能別／業務別に比較―自社に合う生成AIの選び方がわかる...",
+      "publishedDate": "Thu, 06 Aug 2026 01:00:24 +0000",
+      "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Finance_blog_image_June_.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Connect more of your apps to Search",
-      "titleJa": "より多くのアプリを検索に接続します",
-      "link": "https://blog.google/products-and-platforms/products/search/connected-apps/",
-      "description": "Connected apps rendering...",
-      "publishedDate": "Thu, 16 Jul 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ConnectedAppshero.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Create, edit and star in videos with two Google Vids updates",
-      "titleJa": "2 つの Google Vids アップデートにより、動画の作成、編集、主演を行うことができます",
-      "link": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
-      "description": "Text \"Gemini Omni and Personal Avatars in Google Vids\" surrounded by various images...",
-      "publishedDate": "Thu, 16 Jul 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/omni-blog-header_OarEe2t.max-600x600.format-webp.webp",
-      "language": "en"
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/Claude-Explanation-eyecatch1.png",
+      "language": "ja"
     },
     {
       "title": "【Seedance 2.5】30秒の映画級AI動画を一発生成！ByteDanceの最新動画生成モデルの性能・使い方・活用シーンを徹底解説",
@@ -406,94 +505,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Seedance-2.5-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Ten advances in mathematics and theoretical computer science",
-      "titleJa": "数学と理論的コンピューターサイエンスにおける 10 の進歩",
-      "link": "https://openai.com/index/ten-advances-in-mathematics",
-      "description": "OpenAI shares new results on long-standing open problems in mathematics and theoretical computer science, including advances in geometry, cryptography, and complexity....",
-      "publishedDate": "Sat, 01 Aug 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Ask an AI expert: What exactly is the full stack?",
-      "titleJa": "AI の専門家に聞く: フルスタックとは正確には何ですか?",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/full-stack-ai-explainer/",
-      "description": "An illustration depicting a full-stack AI infrastructure against a dark background...",
-      "publishedDate": "Mon, 29 Jun 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Full_Stack.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Apple is getting this wrong",
-      "titleJa": "Appleはこれを誤解している",
-      "link": "https://openai.com/index/apple-is-getting-this-wrong",
-      "description": "OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened....",
-      "publishedDate": "Mon, 03 Aug 2026 22:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Trump’s AI protectionism has come for robotics",
-      "titleJa": "トランプ大統領のAI保護主義はロボットにも波及",
-      "link": "https://www.technologyreview.com/2026/08/03/1141056/trumps-ai-protectionism-has-come-for-robotics/",
-      "description": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&#160;sign up here. Humanoid robots usually elicit more cringe than awe: They...",
-      "publishedDate": "Mon, 03 Aug 2026 18:43:30 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/AP26206077599738.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Inside our 353,000-person vibe coding course",
-      "titleJa": "353,000 人が受講するバイブ コーディング コースの内部",
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/ai-agents-intensive-recap-2026/",
-      "description": "Illustrations of a laptop, an AI spark, messages, code, and a 3-D cube...",
-      "publishedDate": "Mon, 03 Aug 2026 15:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Vibe_coding_course_hero.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "プラスアルファ・コンサルティング、「対話型AIキャリアアドバイザー」提供開始。自律型人材の育成を支援",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/plus-alpha-talent-palette/",
-      "description": "プラスアルファ・コンサルティングは、タレントマネジメントシステム「Talent Palette」において「対話型AIキャリアアドバイザー」の提供を開始しました。自律的なキャリア形成を対話形式で支援します。 このニュースの [...] The post プラスアルファ・コンサルティング、「対話型AIキャリアアドバイザー」提供開始。自律型人材の育成を支援 first appeared on AIポータ...",
-      "publishedDate": "Mon, 03 Aug 2026 08:48:10 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/talent-palette.png",
-      "language": "ja"
-    },
-    {
-      "title": "富士ソフト、「Gen.2 AI事業戦略」を発表。共通基盤整備しAIの現場実装力を強化",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/fujisoft-gen-2-business-strategy/",
-      "description": "富士ソフトは、現場でのAI実装力の強化に向け「Gen.2 AI 事業戦略」を発表しました。共通デリバリーモデル「AIアセットファブリック」を2026年中に整備し、新たな競争優位の確立を目指します。 このニュースのポイント [...] The post 富士ソフト、「Gen.2 AI事業戦略」を発表。共通基盤整備しAIの現場実装力を強化 first appeared on AIポータルメディアAIs...",
-      "publishedDate": "Mon, 03 Aug 2026 08:37:19 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/fujisoft.png",
-      "language": "ja"
-    },
-    {
-      "title": "日立製作所、「Claude Mythos Preview」を用いた重要インフラソフトウェアでのセキュリティ検証効果を発表",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/hitachi-mythos-verification/",
-      "description": "日立製作所は、Anthropicが推進する共同イニシアチブ「Project Glasswing」に参画し、「Claude Mythos Preview」を活用した脆弱性の特定および修正に関する実証成果を発表しました。 こ [...] The post 日立製作所、「Claude Mythos Preview」を用いた重要インフラソフトウェアでのセキュリティ検証効果を発表 first appeare...",
-      "publishedDate": "Mon, 03 Aug 2026 08:31:32 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/hitachi-Anthropic-Mythos-Security-verification.png",
       "language": "ja"
     },
     {
@@ -541,14 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "ローカルAIエージェントとは？無料で使える代表ツールと構築方法・メリットを徹底解説",
+      "title": "npm代替を目指すセキュリティファーストなパッケージマネージャ「vlt」バージョン1.0に到達。npmのミラーレジストリ、プライベートレジストリも提供開始",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/localaiagent/",
-      "description": "これまでのAI活用では、「使うほど従量課金がかさむ」「社内データを外部サービスに送りたくない」「通信環境やAPI制限に左右される」といった課題がありました。一方でローカルAIエージェントは、推論そのものを手元の環境で完結 [...]...",
-      "publishedDate": "Fri, 31 Jul 2026 01:43:37 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/npmvlt10npm.html",
+      "description": "npmに代わる新しいJavaScriptのパッケージシステム「vlt」（vōlt：ボールト）を開発しているvlt technologyは、npm互換のパッケージマネージャ「vlt」がバージョン1.0に到達したことを発表しました。 あわせてn......",
+      "publishedDate": "2026-08-05T18:03:20Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/local-aiagent_2607-4-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/vlt-v10.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/unity7-ann.png",
-      "language": "ja"
-    },
-    {
-      "title": ".NET MAUI、iOS/AndoridのランタイムがMonoからCoreCLRに更新、開発者は動作確認を。.NET 11 Preview 6が公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/net_mauiiosandoridmonocoreclrnet_11_preview_6.html",
-      "description": "マイクロソフトは今秋リリース予定の包括的フレームワーク「Microsoft .NET」のプレビュー版となる「Microsoft .NET 11 Preview 6」（以下、.NET Preview 6）を公開しました。 .NET 11 Pr......",
-      "publishedDate": "2026-07-23T18:22:56Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HNqor1UWEAAWHL2.jpg",
       "language": "ja"
     }
   ]
