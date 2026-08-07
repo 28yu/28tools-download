@@ -1,39 +1,6 @@
 {
-  "lastUpdated": "2026-08-06T04:13:39.638605",
+  "lastUpdated": "2026-08-07T03:50:22.135438",
   "articles": [
-    {
-      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
-      "titleJa": "2 つの設定を有効にすることで、ARC-AGI-3 ベンチマークのスコアが 3 倍になった方法",
-      "link": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
-      "description": "How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning and enabling compaction....",
-      "publishedDate": "Wed, 29 Jul 2026 15:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
-      "titleJa": "学術研究者向けの ChatGPT で科学的発見を加速する",
-      "link": "https://openai.com/index/chatgpt-for-academic-researchers",
-      "description": "OpenAI is giving 100,000 academic researchers free access to ChatGPT's most advanced AI models to accelerate scientific research, collaboration, and discovery....",
-      "publishedDate": "Wed, 29 Jul 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
-      "titleJa": "GPT-5.6 がフロンティア インテリジェンスとフロンティア効率をどのように融合するか",
-      "link": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
-      "description": "GPT-5.6 improves AI efficiency across models, inference, and agentic workflows, helping deliver more useful intelligence per dollar....",
-      "publishedDate": "Wed, 29 Jul 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
     {
       "title": "3 Google updates from Galaxy Unpacked 2026",
       "titleJa": "Galaxy Unpacked 2026 からの 3 つの Google アップデート",
@@ -167,28 +134,6 @@
       "language": "ja"
     },
     {
-      "title": "NVIDIAら30社超、AIの安全性向上とセキュリティツール開発を推進する「Open Secure AI Alliance」設立",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/nvidia-open-secure-ai-alliance/",
-      "description": "NVIDIAは、MicrosoftやSpaceXAIなど30社を超える企業・団体と連携し、AI時代のセキュリティ強化を目的とした「Open Secure AI Alliance」を設立しました。 このニュースのポイント [...] The post NVIDIAら30社超、AIの安全性向上とセキュリティツール開発を推進する「Open Secure AI Alliance」設立 first appe...",
-      "publishedDate": "Wed, 05 Aug 2026 08:30:07 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/NVIDIA-Open-Secure-AI-Alliance.png",
-      "language": "ja"
-    },
-    {
-      "title": "コマツとEARTHBRAIN、AIMが戦略提携。日米で建設現場の自律施工ソリューションを推進",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/komatsu-earthbrain-aim-partnership/",
-      "description": "コマツとその子会社であるEARTHBRAINは、AIMと戦略的パートナーシップを締結しました。日本および米国市場を対象とする、建設現場における自律施工ソリューションの実現を目指します。 このニュースのポイント コマツ・E [...] The post コマツとEARTHBRAIN、AIMが戦略提携。日米で建設現場の自律施工ソリューションを推進 first appeared on AIポータルメディ...",
-      "publishedDate": "Wed, 05 Aug 2026 08:30:04 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/KOMATSU-EARTHBRAIN-AIM-Intelligent-Machines-partnership.png",
-      "language": "ja"
-    },
-    {
       "title": "NASA’s new dark-energy space telescope can also detect killer asteroids",
       "titleJa": "NASAの新しいダークエネルギー宇宙望遠鏡は、キラー小惑星も検出できる",
       "link": "https://www.technologyreview.com/2026/08/05/1141200/nasas-roman-telescope-detect-asteroids/",
@@ -208,39 +153,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-Team_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "8/28開催【製造業向け】現場改革＆DX推進ウェビナー！AI導入を全社DXにつなげるには？品質不具合の未然防止から全社変革事例まで、成果につながる最新AI活用術",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/20260828webinar/",
-      "description": "AIポータルメディア「AIsmiley」は、2026年8月28日（金）12時から製造業向け現場改革＆DX推進ウェビナーを開催します。 製造現場の業務効率化や品質向上に向けてAI活用への期待が高まる一方で、現場では「ノウハ [...] The post 8/28開催【製造業向け】現場改革＆DX推進ウェビナー！AI導入を全社DXにつなげるには？品質不具合の未然防止から全社変革事例まで、成果につながる最...",
-      "publishedDate": "Wed, 05 Aug 2026 03:40:58 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/1157_1200x628.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Microsoft Designerとは？使い方・無料で使える範囲・商用利用時の注意点を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/microsoft-designer-design-tools/",
-      "description": "Microsoft Designer（マイクロソフトデザイナー）とは、Microsoftが提供するAI搭載のデザインツールです。作りたいものを言葉で入力すると、SNS投稿画像・アイキャッチ・簡単なデザイン素材などの案をA [...] The post Microsoft Designerとは？使い方・無料で使える範囲・商用利用時の注意点を徹底解説 first appeared on AIポータルメ...",
-      "publishedDate": "Wed, 05 Aug 2026 01:50:26 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/MicrosoftDesignerMain.png",
-      "language": "ja"
-    },
-    {
-      "title": "【法人向け】Outlook Copilotとは？機能・料金・表示されない時の解決策",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/outlook-copilot-for-corporations/",
-      "description": "Outlookでメール対応や予定調整をしていると、「長いスレッドを短時間で確認したい」「返信文を一から作る負担を減らしたい」と感じることはありませんか。これらの作業負担を軽減するのが、Outlookに組み込まれたCopi [...] The post 【法人向け】Outlook Copilotとは？機能・料金・表示されない時の解決策 first appeared on AIポータルメディアAIsm...",
-      "publishedDate": "Wed, 05 Aug 2026 01:42:56 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/OutlookCopilotMain.png",
       "language": "ja"
     },
     {
@@ -343,17 +255,6 @@
       "language": "en"
     },
     {
-      "title": "From Hugging Face to Amazon SageMaker Studio in one click",
-      "titleJa": "ワンクリックで顔のハグから Amazon SageMaker Studio へ",
-      "link": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
-      "description": "...",
-      "publishedDate": "Tue, 07 Jul 2026 21:15:33 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/68abb71b13d7773ad97e9035/f1nX3dXVmvJcQzJfgfpnJ.webp",
-      "language": "en"
-    },
-    {
       "title": "Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more",
       "titleJa": "Gemini API の管理対象エージェントの拡張: バックグラウンド タスク、リモート MCP など",
       "link": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
@@ -453,17 +354,6 @@
       "language": "en"
     },
     {
-      "title": "Montana’s plan to become an experimental medical hub just pushed forward",
-      "titleJa": "モンタナ州の実験的医療拠点となる計画が前進した",
-      "link": "https://www.technologyreview.com/2026/07/30/1140942/montana-experimental-medical-hub-pushed-forward-right-to-try/",
-      "description": "As of this week in Montana, any biotech company with an experimental drug has a clear path to selling it to consumers. Companies whose drugs have been through preliminary testing—sometimes in as few a...",
-      "publishedDate": "Thu, 30 Jul 2026 17:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/montana-treatments2.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "GPU Management: Why Idle GPUs Are the New Grounded Aircraft",
       "titleJa": "GPU 管理: アイドル状態の GPU が新しい地上航空機となる理由",
       "link": "https://huggingface.co/blog/Dharma-AI/gpu-management",
@@ -484,6 +374,149 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
+      "titleJa": "avatarin が GPT-Realtime を使用して 24 時間年中無休の小売代理店を構築した方法",
+      "link": "https://openai.com/index/avatarin",
+      "description": "avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people used the agent and 92% of survey responses were positive....",
+      "publishedDate": "Thu, 30 Jul 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Our latest Google Finance upgrades, including a new app",
+      "titleJa": "新しいアプリを含む最新の Google Finance アップグレード",
+      "link": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/",
+      "description": "The Google Finance logo, surrounded by elements of the user interface...",
+      "publishedDate": "Thu, 25 Jun 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Finance_blog_image_June_.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Bringing Nunchaku 4-bit Diffusion Inference to Diffusers",
+      "titleJa": "ヌンチャクの 4 ビット拡散推論をディフューザーに導入",
+      "link": "https://huggingface.co/blog/nunchaku-diffusers",
+      "description": "...",
+      "publishedDate": "Thu, 23 Jul 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/nunchaku-diffusers/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Connect more of your apps to Search",
+      "titleJa": "より多くのアプリを検索に接続します",
+      "link": "https://blog.google/products-and-platforms/products/search/connected-apps/",
+      "description": "Connected apps rendering...",
+      "publishedDate": "Thu, 16 Jul 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ConnectedAppshero.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Create, edit and star in videos with two Google Vids updates",
+      "titleJa": "2 つの Google Vids アップデートにより、動画を作成、編集、スターを付けることができます",
+      "link": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
+      "description": "Text \"Gemini Omni and Personal Avatars in Google Vids\" surrounded by various images...",
+      "publishedDate": "Thu, 16 Jul 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/omni-blog-header_OarEe2t.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "RAGの前処理の有無を徹底比較！精度の変化やPDF・表データを扱うときの注意点も解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/preprocessing/",
+      "description": "RAG（Retrieval-Augmented Generation）は、社内文書やマニュアルなどを引用しながら回答できるため、生成AIチャットボットや社内ナレッジ検索システムで広く活用されています。 しかし、文書をその [...]...",
+      "publishedDate": "Thu, 06 Aug 2026 13:37:43 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/preprocessing_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "転移学習とは？ファインチューニングとの違いややり方をわかりやすく解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/transfer-learning/",
+      "description": "転移学習とは、大量のデータで学習済みのモデルを別の目的に転用する手法です。ゼロから作らずに済むため、データが数百枚でも実用的な精度を狙えます。画像分類で使われるMobileNet V2も、140万枚の画像で学習済みです。 [...]...",
+      "publishedDate": "Thu, 06 Aug 2026 11:21:04 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Transfer-learning_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ロボトラック、シリーズAラウンド ファーストクローズでエクイティ52億円を調達。完全自動運転トラックの社会実装に向けた開発・実証を推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/robotruck-funding-physical-ai/",
+      "description": "ロボトラックは、シリーズAラウンドのファーストクローズとして、第三者割当増資により約52億円を調達したと発表しました。今回の調達資金を活用し「国産レベル4自動運転システム」の社会実装に向けた開発および実証体制を強化します [...] The post ロボトラック、シリーズAラウンド ファーストクローズでエクイティ52億円を調達。完全自動運転トラックの社会実装に向けた開発・実証を推進 first ...",
+      "publishedDate": "Thu, 06 Aug 2026 08:36:32 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/robotruck-funding-physical-ai.png",
+      "language": "ja"
+    },
+    {
+      "title": "「ソフトバンク・東北大学 AI for Disaster Science共創研究所」設立。災害デジタルツインと防災AIを融合",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/tohoku-university-softbank/",
+      "description": "東北大学とソフトバンクは「ソフトバンク・東北大学 AI for Disaster Science共創研究所」を設立しました。災害デジタルツインと防災AIを融合させた「AI4DS基盤」を共同開発し、社会実装を推進します。 [...] The post 「ソフトバンク・東北大学 AI for Disaster Science共創研究所」設立。災害デジタルツインと防災AIを融合 first appear...",
+      "publishedDate": "Thu, 06 Aug 2026 08:24:11 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/tohoku-university-softbank.png",
+      "language": "ja"
+    },
+    {
+      "title": "生成AI特許のグローバル動向公開。企業別特許数でソフトバンクが世界首位、全体公開数は前年比約2倍へ急増",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/wipo-genai-patent-trends/",
+      "description": "WIPO（世界知的所有権機関）は、生成AIのグローバル特許動向に関する最新レポートを公開しました。2024年から2025年にかけて生成AI関連の公開特許ファミリー数は約2倍に増加し、企業別特許数ではソフトバンクが世界首位 [...] The post 生成AI特許のグローバル動向公開。企業別特許数でソフトバンクが世界首位、全体公開数は前年比約2倍へ急増 first appeared on AIポー...",
+      "publishedDate": "Thu, 06 Aug 2026 08:24:08 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/wipo-genai-patent-trends-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "Agentforceとは？Salesforce自律型AIの仕組み・機能・料金を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/agentforce-salesforce-agentic-ai/",
+      "description": "Agentforce（エージェントフォース）とは、Salesforceが提供する自律型AIエージェントプラットフォームです。あらかじめ決められたシナリオに沿って応答する従来のチャットボットと異なり、目的を与えるとAIが状 [...] The post Agentforceとは？Salesforce自律型AIの仕組み・機能・料金を解説 first appeared on AIポータルメディアAIsm...",
+      "publishedDate": "Thu, 06 Aug 2026 07:15:07 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/AgentforceMain.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPTでパワポを作成する方法6選！プロンプトも5つ紹介",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-power-point-6-ways/",
+      "description": "「パワポ作成に時間がかかる」「ChatGPTで作ってもデザインがしょぼい」と悩んでいませんか？ 2026年最新の公式アドイン「ChatGPT for PowerPoint」や新機能「ChatGPT Work」を正しく使え [...] The post ChatGPTでパワポを作成する方法6選！プロンプトも5つ紹介 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Thu, 06 Aug 2026 06:18:53 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/ChatgptPowerPoinMain.png",
+      "language": "ja"
+    },
+    {
+      "title": "Perplexity APIとは？APIキー取得方法から実装、他APIとの違いまで詳しく解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/perplexity-api/",
+      "description": "近年、生成AIを自社サービスへ組み込む企業が増えていますが、学習データ以降の最新情報には対応できない点が課題です。そんな課題を解決できるのがPerplexity APIです。Perplexity APIなら、リアルタイム [...]...",
+      "publishedDate": "Thu, 06 Aug 2026 04:33:46 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Perplexity-API_2608-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "「Claude徹底解説」を公開！ChatGPT・Copilot・Gemini・Claudeを機能別／業務別に比較―自社に合う生成AIの選び方がわかる実践ガイド",
@@ -519,36 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "RAGによるハルシネーション抑制の仕組みと手順！社内データを安全に活かす方法を解説",
+      "title": "ミッチェル・ハシモト氏が新会社「Superlogical」を設立、あらゆる仕事に使えるマルチプレクサの開発へ",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/rag-hallucination/",
-      "description": "生成AIはとても便利ですが、事実と異なる情報を正しいかのように答えてしまうハルシネーションが悩みの種です。そこで注目されているのが、社内データを検索して回答を作るRAG（検索拡張生成）という技術です。 この記事では、RA [...]...",
-      "publishedDate": "Fri, 31 Jul 2026 12:13:04 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/superlogical.html",
+      "description": "HashiCorpの共同創業者であり、同社を退社後は個人開発者としてターミナルソフト「Ghostty」の開発を進めていたミッチェル・ハシモト氏が、新会社［Superlogical」の設立を発表しました。 I've started a......",
+      "publishedDate": "2026-08-06T15:26:54Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/RAG-Hallucination_2607-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Codex Security CLI】OpenAI発のAIセキュリティスキャナーCLIの使い方・料金・活用法を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/codex-security-cli/",
-      "description": "2026年7月29日、OpenAIはコードの脆弱性を発見・検証・修正するためのCLIツール「Codex Security CLI」をオープンソースとして公開しました！ OpenAI共同創業者のGreg Brockman氏 [...]...",
-      "publishedDate": "Fri, 31 Jul 2026 10:09:21 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Codex-Security-CLI-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "RLHFとは？生成AIの応答を改善する学習手法の仕組み・メリット・課題を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/rlhf/",
-      "description": "RLHFとは、人間からのフィードバックを使って、生成AIの応答をより自然で人間の意図に沿ったものに改善する学習手法のこと。ChatGPTをはじめとする主要な生成AIモデルの応答品質を支えるコア技術として、広く採用されてい [...]...",
-      "publishedDate": "Fri, 31 Jul 2026 04:28:01 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/RLHF_2607-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/uQ5y6Qvv.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/mcp20260728.png",
-      "language": "ja"
-    },
-    {
-      "title": "ゲームエンジン「Unity 7」発表、ランタイム基盤がMonoから.NET CoreCLRへ移行。高速化により、開発画面からほぼ瞬時にプレイモードが起動",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/unity_7mononet_coreclr.html",
-      "description": "Unity社は代表的なゲームエンジンの1つである「Unity」の次世代版となる「Unity 7」を発表しました。 Introducing Unity 7 - built for a faster-moving, more open indu......",
-      "publishedDate": "2026-07-26T15:02:22Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/unity7-ann.png",
       "language": "ja"
     }
   ]
