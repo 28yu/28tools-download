@@ -1,36 +1,6 @@
 {
-  "lastUpdated": "2026-08-06T01:45:17.437702",
+  "lastUpdated": "2026-08-07T02:12:07.764214",
   "articles": [
-    {
-      "title": "工事現場での熱中症対策の取り組み紹介！（国交省）",
-      "link": "https://news.build-app.jp/article/42061/",
-      "description": "トレンドワード：工事現場での熱中症対策 近年、夏季の猛暑が常態化するなか、工事現場では熱中症による労働災害が深刻な課題となっています。とくに......",
-      "publishedDate": "Wed, 05 Aug 2026 23:02:12 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/AdobeStock_409787645-130x87.jpeg",
-      "language": "ja"
-    },
-    {
-      "title": "排水勾配とは？｜場所別の目安・1/100の計算方法・施工時の注意点を解説",
-      "link": "https://news.build-app.jp/article/42053/",
-      "description": "排水勾配とは、雨水や生活排水などを所定の排水先へ流すために設ける傾斜のことです。排水管をはじめ、道路や駐車場、土間、浴室、屋根、バルコニーな......",
-      "publishedDate": "Wed, 05 Aug 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/ca38907a7e077dca5397953049cb5a31-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "【2026最新】建設DXで熱中症対策はできる？スーパーゼネコン5社の導入事例を解説",
-      "link": "https://news.build-app.jp/article/41988/",
-      "description": "トレンドワード：建設DXによる熱中症対策とは 建設現場の熱中症対策は、個人の体調管理だけでは間に合わない時代になっています。そこで今、大手ゼ......",
-      "publishedDate": "Wed, 05 Aug 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/05/nUButEUV9gc3TM81652703883-130x87.jpg",
-      "language": "ja"
-    },
     {
       "title": "ChatGPT Workとは？10億人向けの設計と残された課題",
       "link": "https://axconstdx.com/2026/08/05/chatgpt-work%e3%81%a8%e3%81%af%ef%bc%9f10%e5%84%84%e4%ba%ba%e5%90%91%e3%81%91%e3%81%ae%e8%a8%ad%e8%a8%88%e3%81%a8%e6%ae%8b%e3%81%95%e3%82%8c%e3%81%9f%e8%aa%b2%e9%a1%8c/",
@@ -39,16 +9,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100kb-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大成建設、福島県田村市の次世代技術実証拠点で雨水循環と舗装技術の本格運用を開始",
-      "link": "https://news.build-app.jp/article/42041/",
-      "description": "大成建設と大成ロテックは、福島県田村市に整備した「大成建設グループ次世代技術実証センター/田村『T-FIELD/TAMURA』」（通称・たむ......",
-      "publishedDate": "Wed, 05 Aug 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/taisei_tfield_tamura-130x69.jpg",
       "language": "ja"
     },
     {
@@ -82,26 +42,6 @@
       "language": "en"
     },
     {
-      "title": "建設会社・審査機関に現況聴取+課題を抱えながら次を見据え「BIM図面審査」スタート【BIM確認申請特集_前編】",
-      "link": "https://news.build-app.jp/article/41872/",
-      "description": "「BuidApp News」の運営主体である野原グループ株式会社傘下のBuildApp総合研究所では、2026年5月22日～26日の期間、「......",
-      "publishedDate": "Tue, 04 Aug 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/06a21f766c80656052a5c89bf48a24ae-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "晴海フラッグとは｜スカイデュオの間取りや価格、現在の状況を解説",
-      "link": "https://news.build-app.jp/article/37158/",
-      "description": "トレンドワード：晴海フラッグ スカイデュオ 2025年10月入居の「晴海フラッグ スカイデュオ」は、東京湾岸エリア最大級の再開発「晴海フラッ......",
-      "publishedDate": "Tue, 04 Aug 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/09/32291ade4f8910db1293acd6b91f277b-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "ChatGPT Plusのスキル機能が使えた！実機検証レポート",
       "link": "https://axconstdx.com/2026/08/04/chatgpt-plus%e3%81%ae%e3%82%b9%e3%82%ad%e3%83%ab%e6%a9%9f%e8%83%bd%e3%81%8c%e4%bd%bf%e3%81%88%e3%81%9f%ef%bc%81%e5%ae%9f%e6%a9%9f%e6%a4%9c%e8%a8%bc%e3%83%ac%e3%83%9d%e3%83%bc%e3%83%88/",
       "description": "「Plusプランでは使えないはず」と諦めていませんか。実は2026年8月4日、ChatGPT Plusでスキルが動く様子を実機で確認できました。仕組みから作成手順まで分かれば、自分のアカウントで今すぐ試すべきかを迷わず判 [...] <p>The post ChatGPT Plusのスキル機能が使えた！実機検証レポート first appeared on 生成AIと建設DX.</p>...",
@@ -109,16 +49,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/eyecatch_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "アーキット、ダンプトラックを管理するAIダンプキーパーがNETIS活用促進技術に認定",
-      "link": "https://news.build-app.jp/article/42030/",
-      "description": "アーキット合同会社（本社：札幌市）は、自社が開発した建設現場向けシステム「AIダンプキーパー」が、国土交通省の「NETIS活用促進技術認定制......",
-      "publishedDate": "Tue, 04 Aug 2026 04:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/dump-keeper-netis-130x72.webp",
       "language": "ja"
     },
     {
@@ -152,16 +82,6 @@
       "language": "en"
     },
     {
-      "title": "ChatGPT Workに「丸投げ」できる工程設計とは？20年DX経験から解く",
-      "link": "https://axconstdx.com/2026/07/24/ai%e3%81%ab%e3%80%8e%e5%ae%8c%e5%85%a8%e3%81%ab%e3%80%8f%e4%b8%b8%e6%8a%95%e3%81%92%e3%81%a7%e3%81%8d%e3%82%8b%e5%b7%a5%e7%a8%8b%e8%a8%ad%e8%a8%88%e3%81%a8%e3%81%af%ef%bc%9f20%e5%b9%b4dx%e7%b5%8c/",
-      "description": "AIに仕事を丸投げしたとき、進捗は進んでいるのに「本当にこれで大丈夫？」という不安が頭から離れない経験はありませんか。でも、一つの「設計法」を身につければ、その不安は消え去り、自信を持ってAIに仕事を任せることができるよ [...] <p>The post ChatGPT Workに「丸投げ」できる工程設計とは？20年DX経験から解く first appeared on 生成AIと建設DX.</p...",
-      "publishedDate": "Thu, 23 Jul 2026 20:51:19 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp_eyecatch_1200x630_under100KB-12-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
       "link": "https://www.buildingsmart.org/industry-insights-embracing-challenges-and-opportunities-of-using-openbim-for-increasing-efficiency-in-the-construction-process/",
       "description": "Read about Construction Industry leaders perspective on embracing challenges and opportunities of using openBIM for increasing efficiency: Link The post Industry Insights “Embracing Challenges and Opp...",
@@ -190,6 +110,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "商用EVバン・ミニバン、2026年に出そろった三つの選択肢",
+      "link": "https://axconstdx.com/2026/08/06/%e5%95%86%e7%94%a8ev%e3%83%90%e3%83%b3%e3%83%bb%e3%83%9f%e3%83%8b%e3%83%90%e3%83%b3%e3%80%812026%e5%b9%b4%e3%81%ab%e5%87%ba%e3%81%9d%e3%82%8d%e3%81%a3%e3%81%9f%e4%b8%89%e3%81%a4%e3%81%ae%e9%81%b8/",
+      "description": "「軽EVでは荷物が積みきれない」——そんな悩みを抱えたまま、決断を先延ばしにしていませんか。2026年、ついに実用的な商用EVバンが3つ出そろい、比較検討できる時代が来ました。本記事を読めば、自社に合う1台と失敗しない導 [...] <p>The post 商用EVバン・ミニバン、2026年に出そろった三つの選択肢 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Thu, 06 Aug 2026 08:11:02 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100KB-2-1024x538.jpg",
+      "language": "ja"
     },
     {
       "title": "Gemini Sparkとは？24時間働く自律AIエージェントの仕組みと導入時の注意点",
@@ -222,16 +152,6 @@
       "language": "ja"
     },
     {
-      "title": "【2026年最新版】二級建築士とは？｜意味ないと言われる理由・受験資格・合格率・難易度・試験日・最短ルートまで完全解説",
-      "link": "https://news.build-app.jp/article/38512/",
-      "description": "二級建築士とは？ 二級建築士は、比較的小規模な建築物の設計・工事監理などを行うための国家資格です。 建築士には一級建築士・二級建築士・木造建......",
-      "publishedDate": "Mon, 03 Aug 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/6c838c48b6fc037792bdcf9bbe35a46e-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "BIM設計にAIが侵入？建築家の仕事はこれからどうなるのか",
       "link": "https://axconstdx.com/2026/08/04/bim%e8%a8%ad%e8%a8%88%e3%81%abai%e3%81%8c%e4%be%b5%e5%85%a5%ef%bc%9f%e5%bb%ba%e7%af%89%e5%ae%b6%e3%81%ae%e4%bb%95%e4%ba%8b%e3%81%af%e3%81%93%e3%82%8c%e3%81%8b%e3%82%89%e3%81%a9%e3%81%86%e3%81%aa/",
       "description": "「AIに仕事を奪われるかもしれない」——そんな漠然とした不安を抱えている建築家の方は少なくないはずです。BIM設計の現場で今まさに起きている変化と、AIと共存しながら自分にしかできない判断力を磨いていく具体的な方法を、こ [...] <p>The post BIM設計にAIが侵入？建築家の仕事はこれからどうなるのか first appeared on 生成AIと建設DX.</p>...",
@@ -239,26 +159,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/WP_eyecatch_1200x630_under100KB-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、6月の新設住宅着工戸数18.6％増、持家・貸家・分譲住宅がそろって増加",
-      "link": "https://news.build-app.jp/article/42001/",
-      "description": "国土交通省は2026年7月31日、建築着工統計調査報告の令和8年6月分を公表しました。全国の新設住宅着工戸数は66,344戸となり、前年同月......",
-      "publishedDate": "Mon, 03 Aug 2026 06:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/new-housing-starts-june-130x79.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、6月の建設工事受注は公共工事118.5％増、総額も4カ月ぶり増加",
-      "link": "https://news.build-app.jp/article/41997/",
-      "description": "国土交通省が、令和8年6月分の建設工事受注動態統計調査（大手50社対象）の結果をまとめ、7月31日に公表しました。今回の調査では、公共工事が......",
-      "publishedDate": "Mon, 03 Aug 2026 04:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/construction_statistics_june-130x68.jpg",
       "language": "ja"
     },
     {
