@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-07T03:50:22.135438",
+  "lastUpdated": "2026-08-08T02:55:09.695278",
   "articles": [
     {
       "title": "3 Google updates from Galaxy Unpacked 2026",
@@ -90,50 +90,6 @@
       "language": "ja"
     },
     {
-      "title": "KDDI、出版・専門メディアと連携した対話型AIサービス「Buffmee」提供開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kddi-buffmee-ai-service/",
-      "description": "KDDIは、出版や専門メディアから許諾を得たコンテンツを情報源とする対話型AIサービス「Buffmee」の提供を開始しました。許諾を得た約150のコンテンツを情報源とし、7つのボタンで検索や要約を直感的に実行できます。 [...] The post KDDI、出版・専門メディアと連携した対話型AIサービス「Buffmee」提供開始 first appeared on AIポータルメディアAIsmi...",
-      "publishedDate": "Wed, 05 Aug 2026 08:59:46 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/kddi-buffmee-ai-service-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "OpenAIの次期主要モデル「Astra」、数学と理論計算機科学の未解決問題を解決・進展",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-astra-math-proof/",
-      "description": "OpenAIは、次期主要モデル「Astra」の社内版を用いて、高次元幾何学や群論などの数学および理論計算機科学における10件の未解決問題を解決、または大幅に進展させたと発表しました。 このニュースのポイント OpenAI [...] The post OpenAIの次期主要モデル「Astra」、数学と理論計算機科学の未解決問題を解決・進展 first appeared on AIポータルメディアA...",
-      "publishedDate": "Wed, 05 Aug 2026 08:59:41 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/openai-astra-math-proof-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "JAPAN AI、LGWAN対応の自治体向けAIサービス「JAPAN AI 行政」提供開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/japan-ai-government-service-launch/",
-      "description": "JAPAN AIは、LGWAN接続環境に対応した地方自治体向けサービス「JAPAN AI 行政」の提供を開始しました。文書作成や庁内ナレッジ検索など、実務における生成AIの活用と業務効率化を支援します。 このニュースのポ [...] The post JAPAN AI、LGWAN対応の自治体向けAIサービス「JAPAN AI 行政」提供開始 first appeared on AIポータルメディア...",
-      "publishedDate": "Wed, 05 Aug 2026 08:59:37 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/japan-ai-government-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "スニフアウト、RAG向けデータ変換サービス「RAG Ready Converter」を正式リリース。アップデートにより変換精度の向上やセキュリティ強化を実現",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/rag-ready-converter-release/",
-      "description": "スニフアウトは、画像・Excel・PowerPoint・PDFなど多様なビジネスファイルを、RAGで高精度に取り扱える「RAG Ready データ」へ変換するサービス「RAG Ready Converter」の正式版を提 [...] The post スニフアウト、RAG向けデータ変換サービス「RAG Ready Converter」を正式リリース。アップデートにより変換精度の向上やセキュリティ強...",
-      "publishedDate": "Wed, 05 Aug 2026 08:30:08 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/sniffout-RAG-Ready-Converter-Official-release.png",
-      "language": "ja"
-    },
-    {
       "title": "NASA’s new dark-energy space telescope can also detect killer asteroids",
       "titleJa": "NASAの新しいダークエネルギー宇宙望遠鏡は、キラー小惑星も検出できる",
       "link": "https://www.technologyreview.com/2026/08/05/1141200/nasas-roman-telescope-detect-asteroids/",
@@ -186,17 +142,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Generated_Image_k2dxu1k2.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "The OlmoEarth Platform: Geospatial inference at planetary scale",
-      "titleJa": "OlmoEarth プラットフォーム: 惑星規模での地理空間推論",
-      "link": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
-      "description": "...",
-      "publishedDate": "Tue, 28 Jul 2026 16:27:42 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/N27UuRDvcQy4CvmrzRKAE.png",
       "language": "en"
     },
     {
@@ -344,7 +289,7 @@
     },
     {
       "title": "New ways to learn and teach with ChatGPT Work and Codex",
-      "titleJa": "ChatGPT Work と Codex を使って学び、教えるための新しい方法",
+      "titleJa": "ChatGPT Work と Codex を使用した新しい学習方法と教える方法",
       "link": "https://openai.com/index/learn-teach-chatgpt-work-codex",
       "description": "Explore new education plugins for ChatGPT Work and Codex that help K–12 teachers, college educators, and students learn, teach, research, and build....",
       "publishedDate": "Tue, 04 Aug 2026 00:00:00 GMT",
@@ -362,28 +307,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/69d815b52c6db28cfdfdd422/Ih3Nn6Wc1U_w_QpvEMXRY.png",
-      "language": "en"
-    },
-    {
-      "title": "Advancing the price-performance frontier with GPT-5.6",
-      "titleJa": "GPT-5.6 で価格パフォーマンスの最前線を前進",
-      "link": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
-      "description": "Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale....",
-      "publishedDate": "Thu, 30 Jul 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
-      "titleJa": "avatarin が GPT-Realtime を使用して 24 時間年中無休の小売代理店を構築した方法",
-      "link": "https://openai.com/index/avatarin",
-      "description": "avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people used the agent and 92% of survey responses were positive....",
-      "publishedDate": "Thu, 30 Jul 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -421,13 +344,35 @@
     },
     {
       "title": "Create, edit and star in videos with two Google Vids updates",
-      "titleJa": "2 つの Google Vids アップデートにより、動画を作成、編集、スターを付けることができます",
+      "titleJa": "2 つの Google Vids アップデートにより、動画の作成、編集、主演を行うことができます",
       "link": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
       "description": "Text \"Gemini Omni and Personal Avatars in Google Vids\" surrounded by various images...",
       "publishedDate": "Thu, 16 Jul 2026 16:00:00 +0000",
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/omni-blog-header_OarEe2t.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Newer Models, Same Advantage",
+      "titleJa": "新しいモデルでも同じ利点",
+      "link": "https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages",
+      "description": "...",
+      "publishedDate": "Thu, 16 Jul 2026 11:49:48 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/69d815b52c6db28cfdfdd422/3HJgWuzAFymnAq6TqEdL7.png",
+      "language": "en"
+    },
+    {
+      "title": "Security incident disclosure — July 2026",
+      "titleJa": "セキュリティインシデントの開示 — 2026 年 7 月",
+      "link": "https://huggingface.co/blog/security-incident-july-2026",
+      "description": "...",
+      "publishedDate": "Thu, 16 Jul 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/security-incident-july-2026/thumbnail.png",
       "language": "en"
     },
     {
@@ -440,6 +385,17 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/preprocessing_2608-1024x576.webp",
       "language": "ja"
+    },
+    {
+      "title": "The Download: Google’s AI shake-up and Meta’s rogue model",
+      "titleJa": "ダウンロード: Google の AI 刷新と Meta の不正モデル",
+      "link": "https://www.technologyreview.com/2026/08/06/1141278/the-download-google-ai-shake-up-meta-rogue-model/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Google’s AI empire is being reshaped. Here’s what’...",
+      "publishedDate": "Thu, 06 Aug 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/04/2_digitalselves_photocredit_JonathanReus.jpg?fit=2128,1196",
+      "language": "en"
     },
     {
       "title": "転移学習とは？ファインチューニングとの違いややり方をわかりやすく解説",
@@ -486,28 +442,6 @@
       "language": "ja"
     },
     {
-      "title": "Agentforceとは？Salesforce自律型AIの仕組み・機能・料金を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/agentforce-salesforce-agentic-ai/",
-      "description": "Agentforce（エージェントフォース）とは、Salesforceが提供する自律型AIエージェントプラットフォームです。あらかじめ決められたシナリオに沿って応答する従来のチャットボットと異なり、目的を与えるとAIが状 [...] The post Agentforceとは？Salesforce自律型AIの仕組み・機能・料金を解説 first appeared on AIポータルメディアAIsm...",
-      "publishedDate": "Thu, 06 Aug 2026 07:15:07 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/AgentforceMain.png",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTでパワポを作成する方法6選！プロンプトも5つ紹介",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-power-point-6-ways/",
-      "description": "「パワポ作成に時間がかかる」「ChatGPTで作ってもデザインがしょぼい」と悩んでいませんか？ 2026年最新の公式アドイン「ChatGPT for PowerPoint」や新機能「ChatGPT Work」を正しく使え [...] The post ChatGPTでパワポを作成する方法6選！プロンプトも5つ紹介 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 06 Aug 2026 06:18:53 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/ChatgptPowerPoinMain.png",
-      "language": "ja"
-    },
-    {
       "title": "Perplexity APIとは？APIキー取得方法から実装、他APIとの違いまで詳しく解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/perplexity-api/",
@@ -519,28 +453,6 @@
       "language": "ja"
     },
     {
-      "title": "「Claude徹底解説」を公開！ChatGPT・Copilot・Gemini・Claudeを機能別／業務別に比較―自社に合う生成AIの選び方がわかる実践ガイド",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-thorough-explanation/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、全社標準の生成AIとは別に現場でClaudeが選ばれている実態を整理し、主要生成AIとの違いと業務別の使い分けをまとめた実践資料「C [...] The post 「Claude徹底解説」を公開！ChatGPT・Copilot・Gemini・Claudeを機能別／業務別に比較―自社に合う生成AIの選び方がわかる...",
-      "publishedDate": "Thu, 06 Aug 2026 01:00:24 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/Claude-Explanation-eyecatch1.png",
-      "language": "ja"
-    },
-    {
-      "title": "【Seedance 2.5】30秒の映画級AI動画を一発生成！ByteDanceの最新動画生成モデルの性能・使い方・活用シーンを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/seedance-2-5/",
-      "description": "2026年7月31日、ByteDance（TikTok運営元）は最新のAI動画生成モデル「Seedance 2.5」を正式公開しました！ 前モデルであるSeedance 2.0の最大15秒から倍増し、1回の生成で最大30 [...]...",
-      "publishedDate": "Sun, 02 Aug 2026 10:01:15 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Seedance-2.5-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "MiniMax H3とは？タスクとモダリティの境界を超えるオープンモデルの特徴・料金・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/minimax-h3/",
@@ -549,6 +461,94 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_MiniMax-H3-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【8/26開催】「導入しただけ」で終わらせない！現場を変えるAI活用ウェビナー　自社に合った業務選定から現場・組織へ定着させる実践ノウハウまで一挙ご紹介！",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/20260826webinar/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年8月26日（水）12時から「AIエージェント・生成AI活用」をテーマとした無料共催ウェビナーを開催します。 生成AIの導入 [...] The post 【8/26開催】「導入しただけ」で終わらせない！現場を変えるAI活用ウェビナー 自社に合った業務選定から現場・組織へ定着させる実践ノウハウまで一挙ご...",
+      "publishedDate": "Fri, 07 Aug 2026 07:50:54 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/1159_1200x628_2.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Preferred Networksが防衛装備庁の実証を受託。国産の生成AIで自衛隊の意思決定を支援",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/pfn-mod-ai-operational-analysis/",
+      "description": "Preferred Networksは、防衛装備庁の実証を受託し、自衛隊の作戦計画立案支援システム開発を開始しました。国産生成AIを活用して多種多様な情報を統合分析し、迅速な意思決定を支援します。 このニュースのポイント [...] The post Preferred Networksが防衛装備庁の実証を受託。国産の生成AIで自衛隊の意思決定を支援 first appeared on AIポータ...",
+      "publishedDate": "Fri, 07 Aug 2026 07:40:55 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/pfn-mod-ai-operational-analysis.png",
+      "language": "ja"
+    },
+    {
+      "title": "電通デジタル、購買行動におけるAI活用実態調査を実施。相談率は約3割で旅行や金融が高水準",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/dentsu-ai-consumer-survey-2026/",
+      "description": "電通デジタルは、生活者の購買におけるAI活用の実態を捉える調査を実施しました。調査の結果、全商品カテゴリーで3割以上の人が購買時にAIへ相談しており、旅行や金融などの高関与カテゴリーで活用が進んでいることが判明しました。 [...] The post 電通デジタル、購買行動におけるAI活用実態調査を実施。相談率は約3割で旅行や金融が高水準 first appeared on AIポータルメディアA...",
+      "publishedDate": "Fri, 07 Aug 2026 07:34:07 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/dentsu-ai-consumer-survey-2026-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "プレイネクストラボ、福岡県宮若市と共同でデジタル庁生成AI「源内」を活用した自治体AX実証実験を開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/playnextlab-gennai-miyawaka-city/",
+      "description": "プレイネクストラボは、福岡県宮若市と共同で、デジタル庁の自治体向け生成AIオープンソース「源内」を活用した自治体AXの実証実験を開始します。職員間のナレッジ共有や人事異動に伴う業務引継ぎの効率化に対する有効性を検証します [...] The post プレイネクストラボ、福岡県宮若市と共同でデジタル庁生成AI「源内」を活用した自治体AX実証実験を開始 first appeared on AIポータ...",
+      "publishedDate": "Fri, 07 Aug 2026 07:30:26 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/playnextlab-gennai-miyawaka-city-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "AIはSEOにどこまで使える？AI時代のSEO対策の方法・メリット・注意点を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-seo-measures-merit/",
+      "description": "「ChatGPTのような生成AIをSEOに使えば、記事制作をもっと速くできるのではないか」と考える担当者もいるでしょう。一方で、AIに任せた記事が検索で評価されるのか、検索評価が下がったりスパムポリシーに抵触したりしない [...] The post AIはSEOにどこまで使える？AI時代のSEO対策の方法・メリット・注意点を解説 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Fri, 07 Aug 2026 06:57:13 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/SEOmain.png",
+      "language": "ja"
+    },
+    {
+      "title": "CAIO（最高AI責任者）とは？役割や必須スキル、日本企業の設置事例を徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/caio-chief-ai-officer/",
+      "description": "生成AIの業務利用が広がるなか、組織内のAI活用を経営レベルで統括する役職として「CAIO（最高AI責任者）」が注目されています。日本では企業・自治体で設置例が公表され、政府でも各府省庁にAI統括責任者（CAIO）を置く [...] The post CAIO（最高AI責任者）とは？役割や必須スキル、日本企業の設置事例を徹底解説 first appeared on AIポータルメディアAIsmil...",
+      "publishedDate": "Fri, 07 Aug 2026 06:55:57 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/CAIOmain.png",
+      "language": "ja"
+    },
+    {
+      "title": "【Agent Plugins】AIエージェント拡張の共通規格が誕生！仕組み・使い方・活用シーンを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/agent-plugins/",
+      "description": "2026年8月7日、OpenAI・Amazon・Microsoft・Cursor・Vercelは、AIエージェント拡張のためのオープンな標準パッケージ規格「Agent Plugins」共同発表しました！ ChatGPTや [...]...",
+      "publishedDate": "Fri, 07 Aug 2026 04:04:22 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Agent-Plugins_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年企業のAI導入・活用に関する調査】AIを組織として導入できている企業は26.8％。AI導入企業の68.0％が、自社でのAI導入・活用は「上手くいっている」と回答",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-adoption-survey-2026/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーとMMD研究所は共同で、予備調査では20歳～69歳の会社員15,161人、本調査では勤務先でAIが組織的に導入されており、かつ自身がその [...] The post 【2026年企業のAI導入・活用に関する調査】AIを組織として導入できている企業は26.8％。AI導入企業の68.0％が、自社でのAI導入・活用は「...",
+      "publishedDate": "Fri, 07 Aug 2026 02:00:07 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/ai-adoption-survey_00.png",
       "language": "ja"
     },
     {
