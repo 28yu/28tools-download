@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-08T00:57:04.270347",
+  "lastUpdated": "2026-08-09T01:02:32.591680",
   "articles": [
     {
       "title": "工事現場での熱中症対策の取り組み紹介！（国交省）",
@@ -32,16 +32,6 @@
       "language": "ja"
     },
     {
-      "title": "ChatGPT Workとは？10億人向けの設計と残された課題",
-      "link": "https://axconstdx.com/2026/08/05/chatgpt-work%e3%81%a8%e3%81%af%ef%bc%9f10%e5%84%84%e4%ba%ba%e5%90%91%e3%81%91%e3%81%ae%e8%a8%ad%e8%a8%88%e3%81%a8%e6%ae%8b%e3%81%95%e3%82%8c%e3%81%9f%e8%aa%b2%e9%a1%8c/",
-      "description": "AIに任せたつもりが、結局は自分で確かめ直している。そんな徒労を感じたことはありませんか。ChatGPT Workは、何を預けてよくて、何を手放してはいけないのか。三週間で1,000万人が使い始めたこの製品の中身から、明 [...] <p>The post ChatGPT Workとは？10億人向けの設計と残された課題 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Wed, 05 Aug 2026 14:32:26 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100kb-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "大成建設、福島県田村市の次世代技術実証拠点で雨水循環と舗装技術の本格運用を開始",
       "link": "https://news.build-app.jp/article/42041/",
       "description": "大成建設と大成ロテックは、福島県田村市に整備した「大成建設グループ次世代技術実証センター/田村『T-FIELD/TAMURA』」（通称・たむ......",
@@ -49,16 +39,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/taisei_tfield_tamura-130x69.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Scan-To-BIMとは？導入前に知るべき点群活用の基礎とアプリの選定方法",
-      "link": "https://axconstdx.com/2026/07/28/scan-to-bim%e3%81%a8%e3%81%af%ef%bc%9f%e5%b0%8e%e5%85%a5%e5%89%8d%e3%81%ab%e7%9f%a5%e3%82%8b%e3%81%b9%e3%81%8d%e7%82%b9%e7%be%a4%e6%b4%bb%e7%94%a8%e3%81%ae%e5%9f%ba%e7%a4%8e%e3%81%a8%e3%82%a2%e3%83%97/",
-      "description": "既存建物の改修や設備更新では、「図面はあるが、現況と合っているか分からない」という問題が起こりがちです。現地を何度も計測し直した結果、設計変更や施工段階で想定外の干渉が見つかることもあります。 こうした現況把握の精度とス [...] <p>The post Scan-To-BIMとは？導入前に知るべき点群活用の基礎とアプリの選定方法 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Tue, 28 Jul 2026 05:47:44 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/scan-to-bim_1200x630_under100kb-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -102,16 +82,6 @@
       "language": "ja"
     },
     {
-      "title": "ChatGPT Plusのスキル機能が使えた！実機検証レポート",
-      "link": "https://axconstdx.com/2026/08/04/chatgpt-plus%e3%81%ae%e3%82%b9%e3%82%ad%e3%83%ab%e6%a9%9f%e8%83%bd%e3%81%8c%e4%bd%bf%e3%81%88%e3%81%9f%ef%bc%81%e5%ae%9f%e6%a9%9f%e6%a4%9c%e8%a8%bc%e3%83%ac%e3%83%9d%e3%83%bc%e3%83%88/",
-      "description": "「Plusプランでは使えないはず」と諦めていませんか。実は2026年8月4日、ChatGPT Plusでスキルが動く様子を実機で確認できました。仕組みから作成手順まで分かれば、自分のアカウントで今すぐ試すべきかを迷わず判 [...] <p>The post ChatGPT Plusのスキル機能が使えた！実機検証レポート first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Tue, 04 Aug 2026 14:46:44 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/eyecatch_1200x630_under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "アーキット、ダンプトラックを管理するAIダンプキーパーがNETIS活用促進技術に認定",
       "link": "https://news.build-app.jp/article/42030/",
       "description": "アーキット合同会社（本社：札幌市）は、自社が開発した建設現場向けシステム「AIダンプキーパー」が、国土交通省の「NETIS活用促進技術認定制......",
@@ -119,26 +89,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/dump-keeper-netis-130x72.webp",
-      "language": "ja"
-    },
-    {
-      "title": "BMWが約8,000人規模の人員削減へ｜希望退職の背景と影響",
-      "link": "https://axconstdx.com/2026/07/30/bmw%e3%81%8c8000%e4%ba%ba%e3%81%ae%e4%ba%ba%e5%93%a1%e5%89%8a%e6%b8%9b%e3%82%92%e7%99%ba%e8%a1%a8%ef%bd%9c%e8%83%8c%e6%99%af%e3%81%a8%e6%a5%ad%e7%95%8c%e3%81%b8%e3%81%ae%e5%bd%b1%e9%9f%bf%e3%82%92/",
-      "description": "BMWが2027年末までに進める約8,000人規模の希望退職を解説。中国市場の低迷、EV競争、米国関税を背景に、管理・開発部門の合理化と自動車業界への影響を読み解きます。 はじめに BMWが2027年末までに8,000人 [...] <p>The post BMWが約8,000人規模の人員削減へ｜希望退職の背景と影響 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Thu, 30 Jul 2026 13:14:28 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/BMW_1200x630_under100KB-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPT Workに丸投げは危険？50のFAQで解説",
-      "link": "https://axconstdx.com/2026/07/30/chatgpt-work%e3%81%ab%e4%b8%b8%e6%8a%95%e3%81%92%e3%81%af%e5%8d%b1%e9%99%ba%ef%bc%9f50%e3%81%aefaq%e3%81%a7%e8%a7%a3%e8%aa%ac/",
-      "description": "「ChatGPT Workに任せて大丈夫だろうか」——その不安、実はほとんどの導入担当者が抱えています。丸投げすれば思わぬ失敗を招きかねません。本記事を読めば、業務の任せ方から証拠に基づく確認方法、人間が関わるべき境界線 [...] <p>The post ChatGPT Workに丸投げは危険？50のFAQで解説 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Thu, 30 Jul 2026 03:57:53 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/07/wp-eyecatch-1200x630-2-1-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -192,16 +142,6 @@
       "language": "ja"
     },
     {
-      "title": "商用EVバン・ミニバン、2026年に出そろった三つの選択肢",
-      "link": "https://axconstdx.com/2026/08/06/%e5%95%86%e7%94%a8ev%e3%83%90%e3%83%b3%e3%83%bb%e3%83%9f%e3%83%8b%e3%83%90%e3%83%b3%e3%80%812026%e5%b9%b4%e3%81%ab%e5%87%ba%e3%81%9d%e3%82%8d%e3%81%a3%e3%81%9f%e4%b8%89%e3%81%a4%e3%81%ae%e9%81%b8/",
-      "description": "「軽EVでは荷物が積みきれない」——そんな悩みを抱えたまま、決断を先延ばしにしていませんか。2026年、ついに実用的な商用EVバンが3つ出そろい、比較検討できる時代が来ました。本記事を読めば、自社に合う1台と失敗しない導 [...] <p>The post 商用EVバン・ミニバン、2026年に出そろった三つの選択肢 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Thu, 06 Aug 2026 08:11:02 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100KB-2-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "西松建設、配筋検査の撮影・整理工数を最大8割削減。TOTTARROWを導入",
       "link": "https://news.build-app.jp/article/42078/",
       "description": "ピクシーダストテクノロジーズ株式会社（東京都中央区、代表取締役会長：落合陽一氏、代表取締役社長：村上泰一郎氏、以下PxDT）は、西松建設株式......",
@@ -209,36 +149,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/rebar_inspection-130x98.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Gemini Sparkとは？24時間働く自律AIエージェントの仕組みと導入時の注意点",
-      "link": "https://axconstdx.com/2026/08/02/gemini-spark%e3%81%a8%e3%81%af%ef%bc%9f24%e6%99%82%e9%96%93%e5%83%8d%e3%81%8f%e8%87%aa%e5%be%8bai%e3%82%a8%e3%83%bc%e3%82%b8%e3%82%a7%e3%83%b3%e3%83%88%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%81%a8/",
-      "description": "生成AIが『働く』から『考える』時代へ進化しました。24時間バックグラウンド稼働するGemini Sparkは、複雑な業務を自動分解・実行する新世代エージェント。仕組みから活用法、導入時の落とし穴まで、判断に必要な全てを [...] <p>The post Gemini Sparkとは？24時間働く自律AIエージェントの仕組みと導入時の注意点 first appeared on 生成AIと建設DX...",
-      "publishedDate": "Sun, 02 Aug 2026 10:43:51 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/gemini-spark_1200x630_under100KB-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Scan to BIMのリアル——AI精度の限界とロボット連携、そして中小企業の挑戦",
-      "link": "https://axconstdx.com/2026/08/01/scan-to-bim%e3%81%ae%e3%83%aa%e3%82%a2%e3%83%ab-ai%e7%b2%be%e5%ba%a6%e3%81%ae%e9%99%90%e7%95%8c%e3%81%a8%e3%83%ad%e3%83%9c%e3%83%83%e3%83%88%e9%80%a3%e6%90%ba%e3%80%81%e3%81%9d/",
-      "description": "「完全に自動化されるはず」と思って導入したら、思いのほか人手がかかってしまった——建設現場のDX導入で、こうした肩透かしを食う企業は少なくありません。だからこそ、AIの現実とどう向き合うかが、成功と失敗の分かれ目になりま [...] <p>The post Scan to BIMのリアル——AI精度の限界とロボット連携、そして中小企業の挑戦 first appeared on 生成AIと建設DX....",
-      "publishedDate": "Sat, 01 Aug 2026 09:03:49 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "BIM設計にAIが侵入？建築家の仕事はこれからどうなるのか",
-      "link": "https://axconstdx.com/2026/08/04/bim%e8%a8%ad%e8%a8%88%e3%81%abai%e3%81%8c%e4%be%b5%e5%85%a5%ef%bc%9f%e5%bb%ba%e7%af%89%e5%ae%b6%e3%81%ae%e4%bb%95%e4%ba%8b%e3%81%af%e3%81%93%e3%82%8c%e3%81%8b%e3%82%89%e3%81%a9%e3%81%86%e3%81%aa/",
-      "description": "「AIに仕事を奪われるかもしれない」——そんな漠然とした不安を抱えている建築家の方は少なくないはずです。BIM設計の現場で今まさに起きている変化と、AIと共存しながら自分にしかできない判断力を磨いていく具体的な方法を、こ [...] <p>The post BIM設計にAIが侵入？建築家の仕事はこれからどうなるのか first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Mon, 03 Aug 2026 19:34:09 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/WP_eyecatch_1200x630_under100KB-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -260,16 +170,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "ChatGPT Workに週次制限。5時間待てば戻る時代ではなくなった",
-      "link": "https://axconstdx.com/2026/08/07/chatgpt-work%e3%81%ab%e9%80%b1%e6%ac%a1%e5%88%b6%e9%99%90%e3%80%825%e6%99%82%e9%96%93%e5%be%85%e3%81%a6%e3%81%b0%e6%88%bb%e3%82%8b%e6%99%82%e4%bb%a3%e3%81%a7%e3%81%af%e3%81%aa%e3%81%8f%e3%81%aa/",
-      "description": "「気づいたらWorkが使えなくなっていた」——そんな戸惑いを感じたことはありませんか。実はこの制限、ただの改悪ではなく、AIとの付き合い方そのものを見直すサインです。仕事の重さを見極め、賢く使い分ける具体的な方法を、今す [...] <p>The post ChatGPT Workに週次制限。5時間待てば戻る時代ではなくなった first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Fri, 07 Aug 2026 06:48:06 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100KB-1-1-1024x538.jpg",
-      "language": "ja"
     },
     {
       "title": "建設経済研究所、2027年度の民間非住宅建設投資は24.1兆円、約3割を占める見通し",
