@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-09T03:03:06.578552",
+  "lastUpdated": "2026-08-10T03:12:31.872443",
   "articles": [
     {
       "title": "3 Google updates from Galaxy Unpacked 2026",
@@ -277,19 +277,8 @@
       "language": "ja"
     },
     {
-      "title": "【Sakana Namazu】日本語特化のLLM APIが登場！概要・料金・使い方・性能を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/sakana-namazu/",
-      "description": "2026年8月3日、Sakana AIは大規模言語モデル「Namazu」をアップデートし、API「Sakana Namazu（サカナ・ナマズ）」として提供を開始しました！ Sakana Namazuは、日本語と日本のビジ [...]...",
-      "publishedDate": "Tue, 04 Aug 2026 04:57:44 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Sakana-Namazu_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "New ways to learn and teach with ChatGPT Work and Codex",
-      "titleJa": "ChatGPT Work と Codex を使用した新しい学習方法と教える方法",
+      "titleJa": "ChatGPT Work と Codex を使って学び、教えるための新しい方法",
       "link": "https://openai.com/index/learn-teach-chatgpt-work-codex",
       "description": "Explore new education plugins for ChatGPT Work and Codex that help K–12 teachers, college educators, and students learn, teach, research, and build....",
       "publishedDate": "Tue, 04 Aug 2026 00:00:00 GMT",
@@ -344,7 +333,7 @@
     },
     {
       "title": "Create, edit and star in videos with two Google Vids updates",
-      "titleJa": "2 つの Google Vids アップデートにより、動画の作成、編集、主演を行うことができます",
+      "titleJa": "2 つの Google Vids アップデートにより、動画を作成、編集、スターを付けることができます",
       "link": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
       "description": "Text \"Gemini Omni and Personal Avatars in Google Vids\" surrounded by various images...",
       "publishedDate": "Thu, 16 Jul 2026 16:00:00 +0000",
@@ -453,14 +442,25 @@
       "language": "ja"
     },
     {
-      "title": "MiniMax H3とは？タスクとモダリティの境界を超えるオープンモデルの特徴・料金・使い方を徹底解説",
+      "title": "LLMのファインチューニングとは？RAGとの違いや活用のコツ、メリット・デメリットを徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/minimax-h3/",
-      "description": "2026年7月、MiniMaxから新しいマルチモーダル生成モデルが発表されました。 今回登場した「MiniMax H3」は、テキスト・画像・動画・音声をひとつの統合されたコンテキストとして理解する汎用マルチモーダル生成モ [...]...",
-      "publishedDate": "Mon, 03 Aug 2026 04:57:58 +0000",
+      "link": "https://weel.co.jp/media/about-llm-finetuning/",
+      "description": "LLM（大規模言語モデル）の性能を業務やサービスに合わせて最適化する方法として、「ファインチューニング」が注目されています。しかし、「RAGとの違いが分からない」「どのようなケースで導入すべきなのか判断できない」という方 [...]...",
+      "publishedDate": "Mon, 10 Aug 2026 02:57:26 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_MiniMax-H3-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/LLM-Fine-tuning_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "マルチエージェントシステム（MAS）とは？仕組み・活用例・Pythonで使える代表ツールを解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/multi-agent-system/",
+      "description": "マルチエージェントシステム（MAS）は、複数のAIエージェントが役割を分担し、必要な情報をやり取りしながら一つの目標に取り組む設計です。単一のAIだけでは扱いにくい、調査・判断・実行が連なる業務で検討されます。 ただし、 [...]...",
+      "publishedDate": "Mon, 10 Aug 2026 02:12:12 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Multi-agent-system_2608-1024x576.webp",
       "language": "ja"
     },
     {
@@ -549,6 +549,17 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/ai-adoption-survey_00.png",
+      "language": "ja"
+    },
+    {
+      "title": "「Agent Plugins 1.0.0」発表、異なるAIエージェント間でもスキルやMCPサーバ設定が共通化へ。マイクロソフト、OpenAI、AWS、Googleらがサポート",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/agent_plugins_100aimcpopenaiawsgoogle.html",
+      "description": "AWS、マイクロソフト、OpenAI、Anysphere、Vercelの各社は、AIエージェントのスキルやMCPサーバの設定を、AIエージェントが異なっていても共有できる業界標準の仕様「Agent Plugins 1.0.0」を発表しました......",
+      "publishedDate": "2026-08-09T15:19:33Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/agentplugins-v100-01.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/awsbuildercenter-sandbox01.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "MCP仕様が明日アップデート、7月28日版MCPからはステートレスな接続が正式仕様に。GitHub MCPサーバが早くも対応発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/mcp728mcpgithub_mcp.html",
-      "description": "AIツールとサービスを接続するための事実上の業界標準となっている通信プロトコルMCP（Model Context Protocol）の7月28日版仕様の登場が目前となっています。 MCPの仕様は継続的にアップデートされ続けており、GitHu......",
-      "publishedDate": "2026-07-26T15:06:36Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/mcp20260728.png",
       "language": "ja"
     }
   ]
