@@ -67,130 +67,81 @@
   <h2 class="page-title" data-lang-key="aimin-title">AI議事録 自動作成</h2>
   <p class="page-description" data-lang-key="aimin-desc">打合せ音声と資料から、AI が議事録を自動作成 — 文字起こしはブラウザ完結。高精度版はあなた自身の無料 Gemini API キーを利用します。</p>
 
-  <div class="privacy-notice" data-lang-key="aimin-privacy">
-    🔒 <strong>プライバシーについて</strong> —
-    音声の文字起こし（簡易版）と議事録の図解化は<strong>あなたのブラウザ内のみ</strong>で行われ、サーバへ送信されません。
-    <br>
-    高精度版で「Gemini」を使う場合は、音声・資料が<strong>Google のサーバへ送信</strong>されます。
-    無料枠の API は入力データが品質改善に利用される可能性があるため、<strong>機密性の高い打合せでは送信内容にご注意ください</strong>。
+  <!-- 注意書き: 普段は1行に畳み、初回訪問時だけ自動で開く -->
+  <div class="notice-line">
+    <span class="notice-dot">●</span>
+    <span data-lang-key="aimin-notice-short">録音データは端末内で処理。AI の生成結果は必ずご確認ください。</span>
+    <button type="button" class="notice-toggle" id="notice-toggle" aria-expanded="false" aria-controls="notice-body" data-lang-key="aimin-notice-more">詳しく</button>
+  </div>
+  <div class="notice-body" id="notice-body">
+    <div class="privacy-notice" data-lang-key="aimin-privacy">
+      🔒 <strong>プライバシーについて</strong> —
+      音声の文字起こし（簡易版）と議事録の図解化は<strong>あなたのブラウザ内のみ</strong>で行われ、サーバへ送信されません。
+      <br>
+      高精度版で「Gemini」を使う場合は、音声・資料が<strong>Google のサーバへ送信</strong>されます。
+      無料枠の API は入力データが品質改善に利用される可能性があるため、<strong>機密性の高い打合せでは送信内容にご注意ください</strong>。
+    </div>
+    <div class="accuracy-notice" data-lang-key="aimin-accuracy">
+      ⚠️ <strong>自動作成は完璧ではありません</strong> — 音声の聞き取りや内容の分類には誤りが含まれます。
+      出力後にプレビュー上で内容を確認・編集してから保存してください。図面の寸法・記号の正確な転記は保証対象外です。
+    </div>
   </div>
 
-  <div class="accuracy-notice" data-lang-key="aimin-accuracy">
-    ⚠️ <strong>自動作成は完璧ではありません</strong> — 音声の聞き取りや内容の分類には誤りが含まれます。
-    出力後にプレビュー上で内容を確認・編集してから保存してください。図面の寸法・記号の正確な転記は保証対象外です。
-  </div>
-
-  <!-- ========== 録音（メイン） ========== -->
-  <section class="panel record-hero">
-    <div class="rec-hero-top">
-      <button type="button" class="rec-hero-btn" id="record-btn">
-        <span class="rec-hero-ico" id="rec-hero-ico">🔴</span>
-        <span class="rec-hero-label" id="rec-hero-label">録音を開始</span>
-      </button>
-      <p class="rec-hero-hint" data-lang-key="aimin-rec-hero-hint">打合せを録音するだけ。停止すると自動で議事録ができます。</p>
-      <span class="record-status" id="record-status"></span>
-    </div>
-
-    <!-- マイク選択・テスト（小さく常時表示） -->
-    <div class="mic-controls compact">
-      <select id="mic-select" class="mic-select" aria-label="マイク選択"></select>
-      <button type="button" class="record-btn mic-test-slim" id="mic-test-btn">🔊 マイクをテスト</button>
-      <div class="mic-meter" id="mic-meter" style="display:none">
-        <div class="mic-meter-scale" id="mic-meter-scale" role="meter" aria-label="マイク入力レベル"></div>
-        <div class="mic-meter-caption" data-lang-key="aimin-mic-meter-caption">🎙️ 入力レベル — 話すとメーターが動けばOK</div>
+  <!-- ========== 入力（録音 / ファイル） ========== -->
+  <section class="panel hero-panel">
+    <div class="hero-seg">
+      <div class="seg" id="input-tabs" role="tablist" aria-label="入力方法">
+        <button type="button" class="seg-btn" role="tab" aria-selected="true" data-tab="rec" data-lang-key="aimin-tab-rec">🎙 録音する</button>
+        <button type="button" class="seg-btn" role="tab" aria-selected="false" data-tab="file" data-lang-key="aimin-tab-file">📁 ファイルから作る</button>
       </div>
     </div>
 
-    <!-- 初回セットアップ帯（キー未保存かつ高精度版のときだけ表示） -->
-    <div class="setup-strip hidden" id="setup-strip">
-      <span data-lang-key="aimin-setup-need-key">高精度版には無料の Gemini API キーが必要です（初回のみ）。</span>
-      <button type="button" class="btn-ghost slim" id="setup-open-key" data-lang-key="aimin-setup-enter-key">キーを入力</button>
+    <!-- 録音 -->
+    <div class="pane active" id="pane-rec">
+      <div class="hero">
+        <button type="button" class="rec-btn" id="record-btn" aria-label="録音を開始">
+          <span class="rec-glyph"></span>
+        </button>
+        <div class="rec-timer" id="rec-timer">00:00</div>
+        <p class="rec-caption" id="rec-caption" data-lang-key="aimin-rec-hero-hint">打合せを録音するだけ。停止すると自動で議事録ができます。</p>
+        <p class="record-status" id="record-status"></p>
+
+        <!-- 現在の設定を隠さない。タップすると該当の設定行が開く -->
+        <div class="chips" id="chips">
+          <button type="button" class="chip" data-open="mode"><span class="led"></span><span data-lang-key="aimin-chip-mode">処理方法</span> <b id="chip-mode-val">高精度版</b></button>
+          <button type="button" class="chip" data-open="mic" id="chip-mic"><span class="led"></span><span data-lang-key="aimin-chip-mic">マイク</span> <b id="chip-mic-val">既定のマイク</b></button>
+          <button type="button" class="chip warn" data-open="key" id="chip-key"><span class="led"></span><span data-lang-key="aimin-chip-key">API キー</span> <b id="chip-key-val">未設定</b></button>
+        </div>
+
+        <!-- 準備が終わるまで実行させず、次の一手だけ示す -->
+        <div class="blocker hidden" id="setup-strip">
+          <span data-lang-key="aimin-setup-need-key">高精度版には無料の Gemini API キーが必要です（初回のみ）。</span>
+          <button type="button" id="setup-open-key" data-lang-key="aimin-setup-enter-key">キーを設定する →</button>
+        </div>
+
+        <!-- 進捗は押したボタンの真下に -->
+        <div class="status" id="status">
+          <div class="status-msg" id="status-msg"></div>
+          <div class="progress"><div id="progress-bar" style="width: 0%"></div></div>
+          <div class="rec-level" id="rec-level" hidden></div>
+          <button type="button" class="log-toggle" id="log-toggle" data-lang-key="aimin-log-show">ログを表示</button>
+          <div class="log" id="log"></div>
+        </div>
+
+        <!-- 長時間モード: 分割セグメントの進捗 -->
+        <div class="longrec-panel hidden" id="longrec-panel">
+          <div class="longrec-panel-title" data-lang-key="aimin-longrec-segments">分割セグメント</div>
+          <div class="longrec-segments" id="longrec-segments"></div>
+        </div>
+
+        <p class="record-note" data-lang-key="aimin-record-note">※ 通常録音では録音データは端末に保存されません（ブラウザのメモリ上で処理）。長時間モードでは分割した音声を選んだフォルダ／ダウンロードに保存します。高精度版では生成時に Google へ送信されます。</p>
+      </div>
     </div>
 
-    <!-- 録音中: 分割セグメントの進捗 -->
-    <div class="longrec-panel hidden" id="longrec-panel">
-      <div class="longrec-panel-title" data-lang-key="aimin-longrec-segments">分割セグメント</div>
-      <div class="longrec-segments" id="longrec-segments"></div>
-    </div>
-
-    <p class="record-note" data-lang-key="aimin-record-note">※ 通常録音では録音データは端末に保存されません（ブラウザのメモリ上で処理）。長時間モードでは分割した音声を選んだフォルダ／ダウンロードに保存します。高精度版では生成時に Google へ送信されます。</p>
-  </section>
-
-  <!-- ========== 詳細・任意入力（折りたたみ） ========== -->
-  <details class="panel advanced" id="advanced-panel">
-    <summary class="advanced-summary" data-lang-key="aimin-advanced-title">⚙️ 詳細・任意入力（処理方法 / API キー / 保存先 / ファイルから作成）</summary>
-    <div class="advanced-body">
-
-      <!-- 処理方法 -->
-      <div class="adv-block">
-        <div class="adv-block-title" data-lang-key="aimin-step2">処理方法を選ぶ</div>
-        <div class="mode-cards">
-          <label class="mode-card">
-            <input type="radio" name="mode" value="browser">
-            <div class="mode-card-inner">
-              <div class="mode-card-head" data-lang-key="aimin-mode-browser-head">🖥️ 簡易版（ブラウザ完結）</div>
-              <div class="mode-card-desc" data-lang-key="aimin-mode-browser-desc">
-                Whisper で文字起こし＋キーワードで自動分類。<strong>完全無料・送信なし</strong>。
-                資料画像の解析は不可。精度は控えめ。
-              </div>
-            </div>
-          </label>
-
-          <label class="mode-card recommended">
-            <input type="radio" name="mode" value="gemini" checked>
-            <div class="mode-card-inner">
-              <div class="mode-card-head"><span data-lang-key="aimin-mode-gemini-head">✨ 高精度版（Gemini）</span><span class="badge" data-lang-key="aimin-badge">推奨</span></div>
-              <div class="mode-card-desc" data-lang-key="aimin-mode-gemini-desc">
-                音声と資料を同時にAIが理解。発言者の推定や資料の参照も。
-                <strong>あなた自身の無料 API キー</strong>を使用します。
-              </div>
-            </div>
-          </label>
-        </div>
-
-        <!-- Gemini キー入力 -->
-        <div class="apikey-block" id="apikey-block">
-          <label class="input-label" data-lang-key="aimin-apikey-label">🔑 Gemini API キー</label>
-          <div class="apikey-row">
-            <input type="password" id="apikey-input" data-lang-placeholder="aimin-apikey-ph" placeholder="AIza... （Google AI Studio で無料取得）" autocomplete="off">
-            <button type="button" class="btn-ghost" id="apikey-toggle" title="表示/非表示">👁️</button>
-          </div>
-          <label class="apikey-remember">
-            <input type="checkbox" id="apikey-remember"> <span data-lang-key="aimin-apikey-remember">このブラウザに保存する（localStorage）</span>
-          </label>
-          <p class="apikey-help" data-lang-key="aimin-apikey-help">
-            キーは<strong>この端末のブラウザにのみ</strong>保存され、28tools のサーバへは送られません。
-            取得方法 → <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a>（無料）
-          </p>
-        </div>
-      </div>
-
-      <!-- 分割・保存（高精度版の長時間録音） -->
-      <div class="adv-block">
-        <div class="adv-block-title" data-lang-key="aimin-adv-split">分割・保存（高精度版・長時間録音）</div>
-        <div class="adv-row">
-          <label class="longrec-interval-label">
-            <span data-lang-key="aimin-longrec-interval">分割間隔</span>
-            <select id="longrec-interval">
-              <option value="5" data-lang-key="aimin-longrec-5min">5分</option>
-              <option value="10" selected data-lang-key="aimin-longrec-10min">10分</option>
-              <option value="15" data-lang-key="aimin-longrec-15min">15分</option>
-            </select>
-          </label>
-        </div>
-        <div class="adv-row folder-row">
-          <span data-lang-key="aimin-folder-label">保存先フォルダ：</span>
-          <span id="folder-status" class="folder-status"></span>
-          <button type="button" class="btn-ghost slim" id="folder-choose" data-lang-key="aimin-folder-choose">選択 / 変更</button>
-        </div>
-        <p class="longrec-help" data-lang-key="aimin-longrec-help">録音を続けたまま指定間隔ごとに音声を保存し、各区間を高精度版(Gemini)で自動的に議事録化して1本に結合します。開始時に保存先フォルダを選択します（対応ブラウザのみ・非対応時はダウンロード保存）。高精度版の API キーが必要です。</p>
-      </div>
-
-      <!-- 録音せずファイルから作成 -->
-      <div class="adv-block">
-        <div class="adv-block-title" data-lang-key="aimin-adv-fromfile">録音せずファイル・資料から作成</div>
+    <!-- ファイルから作る -->
+    <div class="pane" id="pane-file">
+      <div class="file-pane">
         <div class="input-grid">
-          <!-- 音声ファイル -->
           <div class="input-col">
             <label class="input-label" data-lang-key="aimin-audio-label">🎙️ 打合せ音声 <span class="opt">（任意）</span></label>
             <label class="dropzone compact" id="audio-dropzone">
@@ -201,7 +152,6 @@
             </label>
             <audio id="record-preview" class="record-preview" controls style="display:none"></audio>
           </div>
-          <!-- 資料 -->
           <div class="input-col">
             <label class="input-label" data-lang-key="aimin-material-label">📐 打合せ資料 <span class="opt">（任意・複数可）</span></label>
             <label class="dropzone compact" id="material-dropzone">
@@ -225,82 +175,185 @@
         </div>
 
         <div class="actions">
-          <button class="btn-primary" id="generate-btn" data-lang-key="aimin-generate">🪄 このファイルから議事録を作成</button>
           <span class="meta-summary" id="input-summary"></span>
+          <button class="btn-primary" id="generate-btn" data-lang-key="aimin-generate">🪄 このファイルから議事録を作成</button>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 設定（現在値が常に見えるリスト） ========== -->
+  <div class="sec-label" data-lang-key="aimin-settings">設定</div>
+  <section class="panel settings-panel">
+    <div class="rows">
+
+      <div class="row" data-row="mode">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="row-title" data-lang-key="aimin-row-mode">処理方法</span>
+          <span class="row-value"><span id="v-mode">高精度版（Gemini）</span><span class="chev"></span></span>
+        </button>
+        <div class="row-body"><div><div class="row-inner">
+          <div class="mode-cards">
+            <label class="mode-card">
+              <input type="radio" name="mode" value="browser">
+              <div class="mode-card-inner">
+                <div class="mode-card-head" data-lang-key="aimin-mode-browser-head">🖥️ 簡易版（ブラウザ完結）</div>
+                <div class="mode-card-desc" data-lang-key="aimin-mode-browser-desc">
+                  Whisper で文字起こし＋キーワードで自動分類。<strong>完全無料・送信なし</strong>。
+                  資料画像の解析は不可。精度は控えめ。
+                </div>
+              </div>
+            </label>
+            <label class="mode-card recommended">
+              <input type="radio" name="mode" value="gemini" checked>
+              <div class="mode-card-inner">
+                <div class="mode-card-head"><span data-lang-key="aimin-mode-gemini-head">✨ 高精度版（Gemini）</span><span class="badge" data-lang-key="aimin-badge">推奨</span></div>
+                <div class="mode-card-desc" data-lang-key="aimin-mode-gemini-desc">
+                  音声と資料を同時にAIが理解。発言者の推定や資料の参照も。
+                  <strong>あなた自身の無料 API キー</strong>を使用します。
+                </div>
+              </div>
+            </label>
+          </div>
+        </div></div></div>
+      </div>
+
+      <div class="row" data-row="mic">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="row-title" data-lang-key="aimin-row-mic">マイク</span>
+          <span class="row-value"><span id="v-mic">既定のマイク</span><span class="chev"></span></span>
+        </button>
+        <div class="row-body"><div><div class="row-inner">
+          <div class="mic-row">
+            <select id="mic-select" class="mic-select" aria-label="マイク選択"></select>
+            <button type="button" class="btn-ghost slim" id="mic-test-btn">🔊 マイクをテスト</button>
+          </div>
+          <div class="mic-meter" id="mic-meter" style="display:none">
+            <div class="mic-meter-scale" id="mic-meter-scale" role="meter" aria-label="マイク入力レベル"></div>
+            <div class="mic-meter-caption" data-lang-key="aimin-mic-meter-caption">🎙️ 入力レベル — 話すとメーターが動けばOK</div>
+          </div>
+          <p class="row-help" data-lang-key="aimin-mic-help">打合せの前に、音が拾えているか確認できます。テスト中は録音されません。</p>
+        </div></div></div>
+      </div>
+
+      <div class="row" data-row="key" id="apikey-block">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="row-title" data-lang-key="aimin-apikey-label">🔑 Gemini API キー</span>
+          <span class="row-value need"><span id="v-key">未設定</span><span class="chev"></span></span>
+        </button>
+        <div class="row-body"><div><div class="row-inner">
+          <div class="apikey-row">
+            <input type="password" id="apikey-input" data-lang-placeholder="aimin-apikey-ph" placeholder="AIza... （Google AI Studio で無料取得）" autocomplete="off">
+            <button type="button" class="btn-ghost" id="apikey-toggle" title="表示/非表示">👁️</button>
+          </div>
+          <label class="apikey-remember">
+            <input type="checkbox" id="apikey-remember"> <span data-lang-key="aimin-apikey-remember">このブラウザに保存する（localStorage）</span>
+          </label>
+          <p class="apikey-help" data-lang-key="aimin-apikey-help">
+            キーは<strong>この端末のブラウザにのみ</strong>保存され、28tools のサーバへは送られません。
+            取得方法 → <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a>（無料）
+          </p>
+        </div></div></div>
+      </div>
+
+      <div class="row" data-row="long">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="row-title" data-lang-key="aimin-row-long">長時間モード</span>
+          <span class="row-value"><span id="v-long">10分ごとに分割</span><span class="chev"></span></span>
+        </button>
+        <div class="row-body"><div><div class="row-inner">
+          <label class="longrec-interval-label">
+            <span data-lang-key="aimin-longrec-interval">分割間隔</span>
+            <select id="longrec-interval">
+              <option value="5" data-lang-key="aimin-longrec-5min">5分</option>
+              <option value="10" selected data-lang-key="aimin-longrec-10min">10分</option>
+              <option value="15" data-lang-key="aimin-longrec-15min">15分</option>
+            </select>
+          </label>
+          <p class="row-help" data-lang-key="aimin-longrec-help">録音を続けたまま指定間隔ごとに音声を保存し、各区間を高精度版(Gemini)で自動的に議事録化して1本に結合します。開始時に保存先フォルダを選択します（対応ブラウザのみ・非対応時はダウンロード保存）。高精度版の API キーが必要です。</p>
+        </div></div></div>
+      </div>
+
+      <div class="row" data-row="folder">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="row-title" data-lang-key="aimin-row-folder">保存先フォルダ</span>
+          <span class="row-value"><span id="v-folder">未選択</span><span class="chev"></span></span>
+        </button>
+        <div class="row-body"><div><div class="row-inner">
+          <div class="folder-row">
+            <span id="folder-status" class="folder-status"></span>
+            <button type="button" class="btn-ghost slim" id="folder-choose" data-lang-key="aimin-folder-choose">選択 / 変更</button>
+          </div>
+          <p class="row-help" data-lang-key="aimin-folder-help">長時間モードで分割した音声の保存先です。録音の開始時に選ぶこともできます。</p>
+        </div></div></div>
       </div>
 
     </div>
-  </details>
-
-  <!-- 進捗（録音・ファイルからの作成の状況を表示） -->
-  <div class="status" id="status">
-    <div class="status-msg" id="status-msg">処理中...</div>
-    <div class="progress"><div id="progress-bar" style="width: 0%"></div></div>
-    <div class="log" id="log"></div>
-  </div>
+  </section>
 
   <!-- ========== 出力（議事録は最下部に自動表示） ========== -->
   <section id="output-section" style="display:none">
-    <div class="output-toolbar">
-      <div class="output-title" data-lang-key="aimin-output-title">📋 議事録プレビュー</div>
-      <div class="output-actions">
-        <div class="style-toggle" id="style-toggle">
-          <button type="button" class="style-btn active" data-style="figure" data-lang-key="aimin-style-figure">📊 図解スタイル</button>
-          <button type="button" class="style-btn" data-style="mindmap" data-lang-key="aimin-style-mindmap">🧠 マインドマップ</button>
-          <button type="button" class="style-btn" data-style="timeline" data-lang-key="aimin-style-timeline">🕒 タイムライン</button>
-          <button type="button" class="style-btn" data-style="matrix" data-lang-key="aimin-style-matrix">👥 担当者別</button>
+    <div class="sec-label" data-lang-key="aimin-output">出力</div>
+    <div class="panel output-panel">
+      <div class="output-toolbar">
+        <div class="output-title" data-lang-key="aimin-output-title">📋 議事録</div>
+        <div class="seg" id="style-toggle" role="tablist" aria-label="表示スタイル">
+          <button type="button" class="seg-btn style-btn active" role="tab" aria-selected="true" data-style="figure" data-lang-key="aimin-style-figure">図解</button>
+          <button type="button" class="seg-btn style-btn" role="tab" aria-selected="false" data-style="timeline" data-lang-key="aimin-style-timeline">タイムライン</button>
+          <button type="button" class="seg-btn style-btn" role="tab" aria-selected="false" data-style="matrix" data-lang-key="aimin-style-matrix">担当者別</button>
+          <button type="button" class="seg-btn style-btn seg-ai" role="tab" aria-selected="false" data-style="visual" data-lang-key="aimin-style-visual">🍌 ビジュアル資料</button>
         </div>
-        <button class="btn-ghost" id="visual-btn" data-lang-key="aimin-vis-btn">🍌 ビジュアル資料</button>
-        <button class="btn-ghost" id="copy-btn">📋 テキストでコピー</button>
-        <button class="btn-ghost" id="html-btn" data-lang-key="aimin-btn-html">💾 HTML 保存</button>
-        <button class="btn-primary slim" id="print-btn" data-lang-key="aimin-btn-print">🖨️ 印刷 / PDF</button>
+        <div class="menu-wrap">
+          <button type="button" class="btn-ghost slim" id="share-btn" aria-expanded="false" data-lang-key="aimin-share">共有・保存 ▾</button>
+          <div class="menu-pop" id="share-pop" role="menu">
+            <button type="button" role="menuitem" id="copy-btn">📋 テキストでコピー</button>
+            <button type="button" role="menuitem" id="html-btn" data-lang-key="aimin-btn-html">💾 HTML で保存</button>
+            <button type="button" role="menuitem" id="print-btn" data-lang-key="aimin-btn-print">🖨️ 印刷 / PDF</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 議事録本体 -->
+      <div id="minutes-output" class="minutes-output"></div>
+
+      <!-- ビジュアル資料（Gemini 画像モデル）: 明示的に押したときだけ生成する -->
+      <div class="visual-pane hidden" id="visual-panel">
+        <p class="visual-lead" data-lang-key="aimin-vis-desc">
+          議事録の要点から、共有・表紙用の <strong>1 枚絵</strong>を Gemini の画像モデルで作成します。
+          高精度版と<strong>同じ API キー</strong>を使います（画像の無料枠は議事録本体とは別枠です）。
+        </p>
+        <div class="visual-controls">
+          <label class="visual-field">
+            <span data-lang-key="aimin-vis-kind">レイアウト</span>
+            <select id="visual-kind">
+              <option value="poster" data-lang-key="aimin-vis-kind-poster">サマリーポスター（縦）</option>
+              <option value="infographic" selected data-lang-key="aimin-vis-kind-infographic">インフォグラフィック（横）</option>
+              <option value="whiteboard" data-lang-key="aimin-vis-kind-whiteboard">ホワイトボード風（横）</option>
+            </select>
+          </label>
+          <label class="visual-field">
+            <span data-lang-key="aimin-vis-model">画質</span>
+            <select id="visual-model">
+              <option value="flash" data-lang-key="aimin-vis-model-flash">標準（無料枠あり・文字は最小限）</option>
+              <option value="pro" data-lang-key="aimin-vis-model-pro">高品質 Pro（要お支払い設定・文字が正確）</option>
+            </select>
+          </label>
+          <button type="button" class="btn-primary slim" id="visual-run" data-lang-key="aimin-vis-run">画像を生成</button>
+        </div>
+        <p class="visual-note" data-lang-key="aimin-vis-note">
+          ⚠️ 画像内の文字は AI が「描いた」ものなので、誤字や崩れが起こります。正式な記録は議事録本体（テキスト）をご利用ください。
+          高品質 Pro は Google 側で従量課金が発生します。
+        </p>
+        <div class="visual-status" id="visual-status"></div>
+        <figure class="visual-result hidden" id="visual-result">
+          <img id="visual-img" alt="">
+          <figcaption id="visual-caption"></figcaption>
+        </figure>
+        <div class="visual-actions hidden" id="visual-actions">
+          <button type="button" class="btn-ghost slim" id="visual-download">⬇️ 画像を保存</button>
+        </div>
       </div>
     </div>
-
-    <!-- ビジュアル資料（Gemini 画像モデル＝通称ナノバナナ）で 1 枚絵にまとめる -->
-    <div class="visual-panel hidden" id="visual-panel">
-      <div class="visual-panel-head">
-        <span class="visual-panel-title" data-lang-key="aimin-vis-title">🍌 ビジュアル資料を作る（実験機能）</span>
-        <button type="button" class="btn-ghost slim" id="visual-close" title="close">✕</button>
-      </div>
-      <p class="visual-panel-desc" data-lang-key="aimin-vis-desc">
-        議事録の要点から、共有・表紙用の <strong>1 枚絵</strong>を Gemini の画像モデルで作成します。
-        高精度版と<strong>同じ API キー</strong>を使います（画像の無料枠は議事録本体とは別枠です）。
-      </p>
-      <div class="visual-controls">
-        <label class="visual-field">
-          <span data-lang-key="aimin-vis-kind">レイアウト</span>
-          <select id="visual-kind">
-            <option value="poster" data-lang-key="aimin-vis-kind-poster">サマリーポスター（縦）</option>
-            <option value="infographic" data-lang-key="aimin-vis-kind-infographic">インフォグラフィック（横）</option>
-            <option value="whiteboard" data-lang-key="aimin-vis-kind-whiteboard">ホワイトボード風（横）</option>
-          </select>
-        </label>
-        <label class="visual-field">
-          <span data-lang-key="aimin-vis-model">画質</span>
-          <select id="visual-model">
-            <option value="flash" data-lang-key="aimin-vis-model-flash">標準（無料枠あり・文字は最小限）</option>
-            <option value="pro" data-lang-key="aimin-vis-model-pro">高品質 Pro（要お支払い設定・文字が正確）</option>
-          </select>
-        </label>
-        <button type="button" class="btn-primary slim" id="visual-run" data-lang-key="aimin-vis-run">画像を生成</button>
-      </div>
-      <p class="visual-note" data-lang-key="aimin-vis-note">
-        ⚠️ 画像内の文字は AI が「描いた」ものなので、誤字や崩れが起こります。正式な記録は議事録本体（テキスト）をご利用ください。
-        高品質 Pro は Google 側で従量課金が発生します。
-      </p>
-      <div class="visual-status" id="visual-status"></div>
-      <figure class="visual-result hidden" id="visual-result">
-        <img id="visual-img" alt="">
-        <figcaption id="visual-caption"></figcaption>
-      </figure>
-      <div class="visual-actions hidden" id="visual-actions">
-        <button type="button" class="btn-ghost slim" id="visual-download">⬇️ 画像を保存</button>
-      </div>
-    </div>
-
-    <div id="minutes-output" class="minutes-output"></div>
   </section>
 
   </main>
@@ -322,7 +375,7 @@
 </footer>
 
 <!-- 共通サイト JS (ヘッダー/サイドバーの includes 読み込みと言語切替) -->
-<script src="../../js/main.js?v=20260811-1"></script>
+<script src="../../js/main.js?v=20260811-2"></script>
 <!-- ツール固有 JS -->
 <script type="module" src="./app.js"></script>
 </body>

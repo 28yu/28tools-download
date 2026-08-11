@@ -7417,11 +7417,6 @@ translations.filledRegion = {
             en: 'Enter meeting materials',
             zh: '输入会议素材'
         },
-        'aimin-step2': {
-            ja: '処理方法を選ぶ',
-            en: 'Choose a processing method',
-            zh: '选择处理方法'
-        },
         'aimin-step3': {
             ja: 'スタイルを選んで作成',
             en: 'Choose a style and generate',
@@ -7508,34 +7503,109 @@ translations.filledRegion = {
             zh: '密钥<strong>仅保存在本设备的浏览器中</strong>，不会发送到 28tools 的服务器。获取方法 → <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a>（免费）'
         },
         'aimin-style-figure': {
-            ja: '📊 図解スタイル',
-            en: '📊 Diagram style',
-            zh: '📊 图解样式'
+            ja: '図解',
+            en: 'Diagram',
+            zh: '图解'
         },
-        'aimin-style-mindmap': {
-            ja: '🧠 マインドマップ',
-            en: '🧠 Mind map',
-            zh: '🧠 思维导图'
+        'aimin-notice-short': {
+            ja: '録音データは端末内で処理。AI の生成結果は必ずご確認ください。',
+            en: 'Recordings are processed on your device. Always check what the AI produces.',
+            zh: '录音在本机处理。请务必确认 AI 的生成结果。'
         },
-        'aimin-style-timeline': {
-            ja: '🕒 タイムライン',
-            en: '🕒 Timeline',
-            zh: '🕒 时间轴'
+        'aimin-notice-more': {
+            ja: '詳しく',
+            en: 'Details',
+            zh: '详细'
         },
-        'aimin-style-matrix': {
-            ja: '👥 担当者別',
-            en: '👥 By assignee',
-            zh: '👥 按负责人'
+        'aimin-tab-rec': {
+            ja: '🎙 録音する',
+            en: '🎙 Record',
+            zh: '🎙 录音'
         },
-        'aimin-vis-btn': {
+        'aimin-tab-file': {
+            ja: '📁 ファイルから作る',
+            en: '📁 From a file',
+            zh: '📁 从文件生成'
+        },
+        'aimin-chip-mode': {
+            ja: '処理方法',
+            en: 'Mode',
+            zh: '处理方式'
+        },
+        'aimin-chip-mic': {
+            ja: 'マイク',
+            en: 'Mic',
+            zh: '麦克风'
+        },
+        'aimin-chip-key': {
+            ja: 'API キー',
+            en: 'API key',
+            zh: 'API 密钥'
+        },
+        'aimin-settings': {
+            ja: '設定',
+            en: 'Settings',
+            zh: '设置'
+        },
+        'aimin-output': {
+            ja: '出力',
+            en: 'Output',
+            zh: '输出'
+        },
+        'aimin-row-mode': {
+            ja: '処理方法',
+            en: 'Processing mode',
+            zh: '处理方式'
+        },
+        'aimin-row-mic': {
+            ja: 'マイク',
+            en: 'Microphone',
+            zh: '麦克风'
+        },
+        'aimin-row-long': {
+            ja: '長時間モード',
+            en: 'Long-recording mode',
+            zh: '长时录音模式'
+        },
+        'aimin-row-folder': {
+            ja: '保存先フォルダ',
+            en: 'Save folder',
+            zh: '保存文件夹'
+        },
+        'aimin-mic-help': {
+            ja: '打合せの前に、音が拾えているか確認できます。テスト中は録音されません。',
+            en: 'Check that your voice is picked up before the meeting. Nothing is recorded during the test.',
+            zh: '会议前可确认是否能拾音。测试期间不会录音。'
+        },
+        'aimin-folder-help': {
+            ja: '長時間モードで分割した音声の保存先です。録音の開始時に選ぶこともできます。',
+            en: 'Where split audio from long-recording mode is saved. You can also choose it when recording starts.',
+            zh: '长时录音模式下分割音频的保存位置。也可在开始录音时选择。'
+        },
+        'aimin-log-show': {
+            ja: 'ログを表示',
+            en: 'Show log',
+            zh: '显示日志'
+        },
+        'aimin-share': {
+            ja: '共有・保存 ▾',
+            en: 'Share / save ▾',
+            zh: '共享・保存 ▾'
+        },
+        'aimin-style-visual': {
             ja: '🍌 ビジュアル資料',
             en: '🍌 Visual summary',
             zh: '🍌 视觉资料'
         },
-        'aimin-vis-title': {
-            ja: '🍌 ビジュアル資料を作る（実験機能）',
-            en: '🍌 Create a visual summary (experimental)',
-            zh: '🍌 生成视觉资料（实验功能）'
+        'aimin-style-timeline': {
+            ja: 'タイムライン',
+            en: 'Timeline',
+            zh: '时间轴'
+        },
+        'aimin-style-matrix': {
+            ja: '担当者別',
+            en: 'By assignee',
+            zh: '按负责人'
         },
         'aimin-vis-desc': {
             ja: '議事録の要点から、共有・表紙用の <strong>1 枚絵</strong>を Gemini の画像モデルで作成します。高精度版と<strong>同じ API キー</strong>を使います（画像の無料枠は議事録本体とは別枠です）。',
@@ -7602,26 +7672,6 @@ translations.filledRegion = {
             en: '🎙️ Input level — if the meter moves when you speak, it works',
             zh: '🎙️ 输入电平 — 说话时电平表跳动即正常'
         },
-        'aimin-advanced-title': {
-            ja: '⚙️ 詳細・任意入力（処理方法 / API キー / 保存先 / ファイルから作成）',
-            en: '⚙️ Advanced / optional (mode / API key / save folder / from a file)',
-            zh: '⚙️ 详细・可选（处理方式 / API 密钥 / 保存位置 / 从文件生成）'
-        },
-        'aimin-adv-split': {
-            ja: '分割・保存（高精度版・長時間録音）',
-            en: 'Split & save (high-accuracy, long recording)',
-            zh: '分割・保存（高精度版・长时录音）'
-        },
-        'aimin-adv-fromfile': {
-            ja: '録音せずファイル・資料から作成',
-            en: 'Create from a file / materials (no recording)',
-            zh: '不录音，从文件・资料生成'
-        },
-        'aimin-folder-label': {
-            ja: '保存先フォルダ：',
-            en: 'Save folder:',
-            zh: '保存文件夹：'
-        },
         'aimin-folder-choose': {
             ja: '選択 / 変更',
             en: 'Choose / change',
@@ -7643,9 +7693,9 @@ translations.filledRegion = {
             zh: '📄 从文件读取（.txt / .vtt / .srt / .docx）'
         },
         'aimin-output-title': {
-            ja: '📋 議事録プレビュー',
-            en: '📋 Minutes preview',
-            zh: '📋 会议记录预览'
+            ja: '📋 議事録',
+            en: '📋 Minutes',
+            zh: '📋 会议记录'
         },
         'aimin-btn-html': {
             ja: '💾 HTML 保存',
