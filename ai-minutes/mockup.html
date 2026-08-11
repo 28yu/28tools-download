@@ -208,14 +208,17 @@ body {
 }
 .rec-timer.on { display: block; }
 
-/* 状態チップ: 「今どういう設定で録れるか」を隠さない */
+/* 状態チップ: 「今どういう設定で録れるか」を隠さない。
+   タップすると該当する設定行が開く = 状態表示がそのまま近道になる */
 .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 18px; }
 .chip {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 5px 13px; border-radius: 999px;
   background: #f7f9fa; border: 1px solid var(--line);
   font-size: var(--fs-cap); color: var(--steel);
+  font-family: inherit; cursor: pointer;
 }
+.chip:hover { border-color: #cdd6dc; background: #f1f5f7; }
 .chip .led { width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
 .chip.warn { background: rgba(230,126,34,.08); border-color: rgba(230,126,34,.3); color: #b3641a; }
 .chip.warn .led { background: var(--orange); }
@@ -253,6 +256,15 @@ body {
   font-size: .7rem; color: var(--steel); white-space: pre-wrap;
 }
 .log.on { display: block; }
+
+/* マイクテスト */
+.meter {
+  margin-top: 14px; padding: 12px 14px;
+  background: #f7f9fa; border: 1px solid var(--line); border-radius: var(--radius-sm);
+}
+.meter .level { justify-content: flex-start; }
+.meter-hint { font-size: var(--fs-cap); color: var(--steel); margin-top: 8px; }
+.meter.live { border-color: rgba(39,174,96,.4); background: rgba(39,174,96,.05); }
 
 /* ---------- ファイルから作るペイン ---------- */
 .file-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding: 4px 28px 0; }
@@ -362,6 +374,30 @@ input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px
 .menu-sep { height: 1px; background: var(--line); margin: 5px 8px; }
 .menu-note { font-size: var(--fs-micro); color: var(--mute); padding: 4px 12px 8px; }
 
+/* ビジュアル資料タブ: 他が「見え方の切替」なのに対し、これだけ AI 生成を伴う。
+   同じ列に置きつつ、区切り線と色で「性質が違う」ことを示す */
+.seg .seg-ai { position: relative; margin-left: 6px; padding-left: 15px; }
+.seg .seg-ai::before {
+  content: ''; position: absolute; left: 0; top: 6px; bottom: 6px;
+  width: 1px; background: #d5dde2;
+}
+.seg .seg-ai[aria-selected="true"] { color: #b3641a; }
+.seg .seg-ai[aria-selected="true"]::before { opacity: 0; }
+
+.vis-lead { font-size: var(--fs-body); color: var(--steel); margin-bottom: 16px; }
+.vis-controls { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px; }
+.vis-field { display: flex; flex-direction: column; gap: 5px; font-size: var(--fs-cap); color: var(--steel); }
+.vis-note {
+  margin-top: 14px; padding: 9px 13px;
+  background: rgba(230,126,34,.07); border-left: 3px solid var(--orange);
+  border-radius: 0 8px 8px 0; font-size: var(--fs-cap); color: var(--steel); line-height: 1.7;
+}
+.vis-status { margin-top: 12px; font-size: var(--fs-cap); color: var(--steel); min-height: 1.3em; }
+.vis-result { margin-top: 18px; text-align: center; }
+.vis-result svg { max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 14px rgba(44,62,80,.14); }
+.vis-cap { margin-top: 9px; font-size: var(--fs-micro); color: var(--mute); }
+.vis-actions { margin-top: 12px; display: flex; justify-content: center; gap: 10px; }
+
 .out-body { padding: 26px 28px 30px; }
 
 /* 議事録サンプルの描画 (既存 render.js の見た目を踏襲) */
@@ -405,7 +441,6 @@ input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px
 .mn-who li:last-child { border-bottom: none; }
 .mn-due { display: block; font-size: var(--fs-micro); color: var(--orange); }
 .mn-foot { margin-top: 18px; padding-top: 12px; border-top: 1px solid var(--line); font-size: var(--fs-micro); color: var(--mute); text-align: center; }
-.mm-wrap { overflow-x: auto; text-align: center; }
 
 /* ---------- 変更点の注釈 ---------- */
 .anno {
@@ -512,9 +547,9 @@ input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px
         <p class="rec-caption" id="rec-caption">押すと録音開始。停止すると自動で議事録になります。</p>
 
         <div class="chips" id="chips">
-          <span class="chip"><span class="led"></span>高精度版 <b>Gemini</b></span>
-          <span class="chip"><span class="led"></span>マイク <b>既定のマイク</b></span>
-          <span class="chip warn" id="chip-key"><span class="led"></span>API キー <b>未設定</b></span>
+          <button type="button" class="chip" data-open="mode"><span class="led"></span>高精度版 <b>Gemini</b></button>
+          <button type="button" class="chip" data-open="mic" id="chip-mic"><span class="led"></span>マイク <b>既定のマイク</b></button>
+          <button type="button" class="chip warn" data-open="key" id="chip-key"><span class="led"></span>API キー <b>未設定</b></button>
         </div>
 
         <!-- 第2段階: 準備が終わるまで押させず、次の一手だけ示す -->
@@ -559,7 +594,7 @@ input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px
   </section>
 
   <!-- ===== 第2段階: 設定リスト ===== -->
-  <div class="anno"><b>第2段階</b><span>「詳細・任意入力（処理方法 / API キー / 保存先 / ファイルから作成）」の全部入りアコーディオンを解体。現在値が右側に常時見える4行に分け、開かなくても状態が分かるようにする。</span></div>
+  <div class="anno"><b>第2段階</b><span>「詳細・任意入力（処理方法 / API キー / 保存先 / ファイルから作成）」の全部入りアコーディオンを解体。現在値が右側に常時見える5行に分け、開かなくても状態が分かるようにする。マイクの選択とテスト（レベルメーター）もここに独立させ、ボタン直下のチップをタップすると該当の行が開く。</span></div>
 
   <div class="sec-label">設定</div>
   <section class="card">
@@ -580,6 +615,29 @@ input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px
               <p>音声と資料を同時に AI が理解。発言者の推定や資料の参照も。あなた自身の無料 API キーを使用します。</p>
             </div>
           </div>
+        </div></div></div>
+      </div>
+
+      <div class="row" data-row="mic">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="row-title">マイク</span>
+          <span class="row-value" id="v-mic">既定のマイク<span class="chev"></span></span>
+        </button>
+        <div class="row-body"><div><div class="row-inner">
+          <div class="field" style="gap:10px">
+            <select id="mic-select" style="flex:1;min-width:0">
+              <option>既定のマイク</option>
+              <option>MacBook Pro のマイク</option>
+              <option>USB 会議用マイク</option>
+              <option>AirPods Pro</option>
+            </select>
+            <button type="button" class="btn btn-sm" id="mic-test">🎙 テスト</button>
+          </div>
+          <div class="meter" id="mic-meter" hidden>
+            <div class="level" id="mic-level"></div>
+            <p class="meter-hint" id="mic-hint">話してみてください。メーターが動けば録音できます。</p>
+          </div>
+          <p class="help">打合せの前にここで音が拾えているか確認できます。テスト中は録音されません。</p>
         </div></div></div>
       </div>
 
@@ -630,7 +688,7 @@ input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px
 
   <!-- ===== 第3段階: 出力 ===== -->
   <div id="out-section">
-  <div class="anno"><b>第3段階</b><span>横並び7ボタンを2層に整理。左＝見た目の切替（セグメンテッドコントロール）、右＝出力をまとめた「共有・保存」1つ。ツールバーが今後も伸び続けない構造にする。</span></div>
+  <div class="anno"><b>第3段階</b><span>横並び7ボタンを2層に整理。左＝表示の切替（図解・タイムライン・担当者別）に加え、AI が 1 枚絵を作る「ビジュアル資料」を独立したタブとして常時見える位置に。右＝コピー / HTML / 印刷をまとめた「共有・保存」1つ。ツールバーが今後も伸び続けない構造にする。</span></div>
 
   <div class="sec-label">出力</div>
   <section class="card" id="out-card">
@@ -640,7 +698,7 @@ input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px
         <button type="button" role="tab" aria-selected="true"  data-style="figure">図解</button>
         <button type="button" role="tab" aria-selected="false" data-style="timeline">タイムライン</button>
         <button type="button" role="tab" aria-selected="false" data-style="matrix">担当者別</button>
-        <button type="button" role="tab" aria-selected="false" data-style="mindmap">マインドマップ</button>
+        <button type="button" role="tab" aria-selected="false" data-style="visual" class="seg-ai">🍌 ビジュアル資料</button>
       </div>
       <div class="menu-wrap">
         <button type="button" class="btn btn-sm" id="share-btn" aria-expanded="false">共有・保存 ▾</button>
@@ -648,9 +706,6 @@ input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px
           <button type="button" role="menuitem">📋 テキストでコピー</button>
           <button type="button" role="menuitem">💾 HTML で保存</button>
           <button type="button" role="menuitem">🖨 印刷 / PDF</button>
-          <div class="menu-sep"></div>
-          <button type="button" role="menuitem">🍌 ビジュアル資料を作る</button>
-          <p class="menu-note">AI が 1 枚絵を生成します（画像内の文字は要確認）</p>
         </div>
       </div>
     </div>
@@ -732,6 +787,35 @@ input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px
   });
   $('blocker-go').addEventListener('click', () => openRow('key'));
 
+  /* ---------- 状態チップ → 該当する設定行へ ---------- */
+  document.querySelectorAll('.chip[data-open]').forEach(chip => {
+    chip.addEventListener('click', () => openRow(chip.dataset.open));
+  });
+
+  /* ---------- マイク選択とテスト ---------- */
+  let micTimer = null;
+  $('mic-select').addEventListener('change', e => {
+    $('v-mic').childNodes[0].nodeValue = e.target.value;
+    $('chip-mic').querySelector('b').textContent = e.target.value;
+  });
+  $('mic-test').addEventListener('click', () => {
+    const on = !!micTimer;
+    if (on) { stopMicTest(); return; }
+    buildBars($('mic-level'));
+    $('mic-meter').hidden = false;
+    $('mic-meter').classList.add('live');
+    $('mic-test').textContent = '⏹ テストを停止';
+    $('mic-hint').textContent = '話してみてください。メーターが動けば録音できます。';
+    micTimer = setInterval(() => animateBars($('mic-level')), 130);
+  });
+  function stopMicTest() {
+    clearInterval(micTimer); micTimer = null;
+    $('mic-meter').classList.remove('live');
+    $('mic-test').textContent = '🎙 テスト';
+    $('mic-hint').textContent = 'テストを終了しました。';
+    [...$('mic-level').children].forEach(b => { b.style.height = '4px'; b.style.opacity = '.35'; });
+  }
+
   /* ---------- その他の設定 ---------- */
   $('interval').addEventListener('change', e => {
     $('v-long').childNodes[0].nodeValue = e.target.value + 'ごとに分割';
@@ -776,11 +860,17 @@ input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px
     $('log-toggle').textContent = on ? 'ログを隠す' : 'ログを表示';
   });
 
-  function buildLevel() {
-    const el = $('level');
+  function buildBars(el) {
     if (el.childElementCount) return;
     for (let i = 0; i < 28; i++) el.appendChild(document.createElement('i'));
   }
+  function animateBars(el) {
+    [...el.children].forEach(b => {
+      b.style.height = (4 + Math.random() * 20).toFixed(0) + 'px';
+      b.style.opacity = (0.35 + Math.random() * 0.5).toFixed(2);
+    });
+  }
+  function buildLevel() { buildBars($('level')); }
 
   $('rec-btn').addEventListener('click', () => {
     state.recording ? stopRec() : startRec();
@@ -805,12 +895,7 @@ input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px
       state.sec++;
       $('rec-timer').textContent = pad(Math.floor(state.sec / 60)) + ':' + pad(state.sec % 60);
     }, 1000);
-    levelTimer = setInterval(() => {
-      [...$('level').children].forEach(b => {
-        b.style.height = (4 + Math.random() * 20).toFixed(0) + 'px';
-        b.style.opacity = (0.35 + Math.random() * 0.5).toFixed(2);
-      });
-    }, 130);
+    levelTimer = setInterval(() => animateBars($('level')), 130);
   }
 
   function stopRec() {
@@ -934,37 +1019,84 @@ input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px
             item('i', i + 1, it.text, `<i>発言</i>${esc(it.speaker)}`)).join(''))
         + foot();
     },
-    mindmap() {
-      const cats = [
-        { label: '決定事項', color: '#27ae60', items: DATA.decisions.map(d => d.text), right: true, y: 92 },
-        { label: 'ToDo', color: '#3498db', items: DATA.todos.slice(0, 3).map(t => t.text), right: true, y: 248 },
-        { label: '課題', color: '#e67e22', items: DATA.issues.map(i => i.text), right: false, y: 92 },
-        { label: '議論', color: '#34495e', items: DATA.discussions.map(d => d.topic), right: false, y: 226 },
-      ];
-      const W = 860, H = 400, cx = W / 2, cy = H / 2;
-      let s = '';
-      cats.forEach(c => {
-        const catX = c.right ? cx + 96 : cx - 96 - 104;
-        const catCX = catX + 52;
-        s += `<path d="M ${c.right ? cx + 78 : cx - 78} ${cy} C ${cx} ${cy}, ${catCX} ${c.y + 16}, ${c.right ? catX : catX + 104} ${c.y + 16}" fill="none" stroke="${c.color}" stroke-width="2" opacity=".55"/>`;
-        s += `<rect x="${catX}" y="${c.y}" width="104" height="32" rx="10" fill="${c.color}22" stroke="${c.color}" stroke-width="1.6"/>
-              <text x="${catCX}" y="${c.y + 21}" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">${esc(c.label)}（${c.items.length}）</text>`;
-        c.items.forEach((txt, i) => {
-          const iy = c.y + 44 + i * 34;
-          const ix = c.right ? catX + 132 : catX - 132 - 26;
-          const w = 158;
-          s += `<path d="M ${c.right ? catX + 104 : catX} ${c.y + 16} C ${c.right ? catX + 120 : catX - 16} ${c.y + 16}, ${c.right ? ix - 16 : ix + w + 16} ${iy + 13} , ${c.right ? ix : ix + w} ${iy + 13}" fill="none" stroke="${c.color}" stroke-width="1.6" opacity=".45"/>`;
-          s += `<rect x="${ix}" y="${iy}" width="${w}" height="26" rx="8" fill="#fff" stroke="${c.color}88"/>
-                <text x="${ix + w / 2}" y="${iy + 17}" text-anchor="middle" font-size="11" fill="#2c3e50">${esc(txt.length > 13 ? txt.slice(0, 13) + '…' : txt)}</text>`;
-        });
-      });
-      s += `<rect x="${cx - 78}" y="${cy - 22}" width="156" height="44" rx="12" fill="#2c3e50"/>
-            <text x="${cx}" y="${cy + 5}" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">${esc(DATA.meta.title)}</text>`;
-      return head() + `<div class="mm-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="max-width:100%;height:auto">${s}</svg></div>` + foot();
+    visual() {
+      return `
+        <p class="vis-lead">議事録の要点から、共有・表紙用の<b>1 枚絵</b>を AI が作成します。
+        高精度版と同じ API キーを使います（画像の無料枠は議事録本体とは別枠です）。</p>
+        <div class="vis-controls">
+          <label class="vis-field">レイアウト
+            <select id="vis-kind">
+              <option value="poster">サマリーポスター（縦）</option>
+              <option value="info" selected>インフォグラフィック（横）</option>
+              <option value="board">ホワイトボード風（横）</option>
+            </select>
+          </label>
+          <label class="vis-field">画質
+            <select id="vis-model">
+              <option>標準（無料枠あり・文字は最小限）</option>
+              <option>高品質 Pro（要お支払い設定・文字が正確）</option>
+            </select>
+          </label>
+          <button type="button" class="btn btn-primary" id="vis-run">画像を生成</button>
+        </div>
+        <p class="vis-note">⚠️ 画像内の文字は AI が「描いた」ものなので、誤字や崩れが起こります。
+        正式な記録は議事録本体（テキスト）をご利用ください。高品質 Pro は Google 側で従量課金が発生します。</p>
+        <div class="vis-status" id="vis-status"></div>
+        <div id="vis-out"></div>`;
     },
   };
 
   function draw() { $('out-body').innerHTML = RENDER[state.style](); }
+
+  /* ---------- ビジュアル資料の生成 (モック) ---------- */
+  // 実物は Gemini の画像モデルが返す PNG。ここでは「どう見えるか」を示す
+  // ためのサンプル図版を SVG で描いている。
+  function mockPoster() {
+    const box = (x, y, w, h, c, title, lines) => `
+      <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="10" fill="#fff" stroke="${c}" stroke-width="2"/>
+      <rect x="${x}" y="${y}" width="${w}" height="26" rx="10" fill="${c}"/>
+      <rect x="${x}" y="${y + 16}" width="${w}" height="10" fill="${c}"/>
+      <text x="${x + 12}" y="${y + 18}" font-size="13" font-weight="700" fill="#fff">${title}</text>
+      ${lines.map((t, i) => `<text x="${x + 12}" y="${y + 48 + i * 22}" font-size="12" fill="#2c3e50">・${esc(t.length > 20 ? t.slice(0, 20) + '…' : t)}</text>`).join('')}`;
+    return `<svg viewBox="0 0 760 460" width="760" height="460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="生成されたビジュアル資料のサンプル">
+      <rect width="760" height="460" fill="#fff"/>
+      <rect x="0" y="0" width="760" height="76" fill="#2c3e50"/>
+      <text x="32" y="40" font-size="24" font-weight="700" fill="#fff">${esc(DATA.meta.title)}</text>
+      <text x="32" y="62" font-size="13" fill="#aebecd">${esc(DATA.meta.date)}　${esc(DATA.meta.project)}</text>
+      <text x="32" y="112" font-size="13" fill="#34495e">${esc(DATA.summary.slice(0, 46))}</text>
+      ${box(32, 134, 340, 150, '#27ae60', '決定事項', DATA.decisions.map(d => d.text))}
+      ${box(388, 134, 340, 150, '#3498db', 'ToDo', DATA.todos.slice(0, 4).map(t => t.text))}
+      ${box(32, 300, 340, 120, '#e67e22', '課題', DATA.issues.map(i => i.text))}
+      ${box(388, 300, 340, 120, '#34495e', '次回', ['8/25 同時刻', '見積もりの確認'])}
+      <text x="380" y="446" font-size="10" fill="#95a5a6" text-anchor="middle">AI 生成イメージ — 28 Tools</text>
+    </svg>`;
+  }
+
+  $('out-body').addEventListener('click', (e) => {
+    const run = e.target.closest('#vis-run');
+    if (run) { generateVisual(run); return; }
+    if (e.target.closest('#vis-save')) alert('（モックアップ）画像を保存します');
+  });
+
+  function generateVisual(btn) {
+    btn.disabled = true;
+    const label = btn.textContent;
+    btn.textContent = '生成中…';
+    $('vis-status').textContent = '🍌 AI が 1 枚絵を作成しています…（30秒ほどかかります）';
+    $('vis-out').innerHTML = '';
+    setTimeout(() => {
+      btn.disabled = false; btn.textContent = label;
+      $('vis-status').textContent = '✅ ビジュアル資料を作成しました';
+      $('vis-out').innerHTML = `
+        <div class="vis-result">${mockPoster()}
+          <p class="vis-cap">⚠️ AI が描いた画像です。画像内の文字は誤ることがあります（正式な記録は議事録本体をご利用ください）。</p>
+        </div>
+        <div class="vis-actions">
+          <button type="button" class="btn btn-sm" id="vis-save">⬇️ 画像を保存</button>
+          <button type="button" class="btn btn-sm" id="vis-run">🔄 作り直す</button>
+        </div>`;
+    }, 1400);
+  }
 
   document.querySelectorAll('[data-style]').forEach(btn => {
     btn.addEventListener('click', () => {
