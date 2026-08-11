@@ -248,12 +248,58 @@
         <div class="style-toggle" id="style-toggle">
           <button type="button" class="style-btn active" data-style="figure" data-lang-key="aimin-style-figure">📊 図解スタイル</button>
           <button type="button" class="style-btn" data-style="mindmap" data-lang-key="aimin-style-mindmap">🧠 マインドマップ</button>
+          <button type="button" class="style-btn" data-style="timeline" data-lang-key="aimin-style-timeline">🕒 タイムライン</button>
+          <button type="button" class="style-btn" data-style="matrix" data-lang-key="aimin-style-matrix">👥 担当者別</button>
         </div>
+        <button class="btn-ghost" id="visual-btn" data-lang-key="aimin-vis-btn">🍌 ビジュアル資料</button>
         <button class="btn-ghost" id="copy-btn">📋 テキストでコピー</button>
         <button class="btn-ghost" id="html-btn" data-lang-key="aimin-btn-html">💾 HTML 保存</button>
         <button class="btn-primary slim" id="print-btn" data-lang-key="aimin-btn-print">🖨️ 印刷 / PDF</button>
       </div>
     </div>
+
+    <!-- ビジュアル資料（Gemini 画像モデル＝通称ナノバナナ）で 1 枚絵にまとめる -->
+    <div class="visual-panel hidden" id="visual-panel">
+      <div class="visual-panel-head">
+        <span class="visual-panel-title" data-lang-key="aimin-vis-title">🍌 ビジュアル資料を作る（実験機能）</span>
+        <button type="button" class="btn-ghost slim" id="visual-close" title="close">✕</button>
+      </div>
+      <p class="visual-panel-desc" data-lang-key="aimin-vis-desc">
+        議事録の要点から、共有・表紙用の <strong>1 枚絵</strong>を Gemini の画像モデルで作成します。
+        高精度版と<strong>同じ API キー</strong>を使います（画像の無料枠は議事録本体とは別枠です）。
+      </p>
+      <div class="visual-controls">
+        <label class="visual-field">
+          <span data-lang-key="aimin-vis-kind">レイアウト</span>
+          <select id="visual-kind">
+            <option value="poster" data-lang-key="aimin-vis-kind-poster">サマリーポスター（縦）</option>
+            <option value="infographic" data-lang-key="aimin-vis-kind-infographic">インフォグラフィック（横）</option>
+            <option value="whiteboard" data-lang-key="aimin-vis-kind-whiteboard">ホワイトボード風（横）</option>
+          </select>
+        </label>
+        <label class="visual-field">
+          <span data-lang-key="aimin-vis-model">画質</span>
+          <select id="visual-model">
+            <option value="flash" data-lang-key="aimin-vis-model-flash">標準（無料枠あり・文字は最小限）</option>
+            <option value="pro" data-lang-key="aimin-vis-model-pro">高品質 Pro（要お支払い設定・文字が正確）</option>
+          </select>
+        </label>
+        <button type="button" class="btn-primary slim" id="visual-run" data-lang-key="aimin-vis-run">画像を生成</button>
+      </div>
+      <p class="visual-note" data-lang-key="aimin-vis-note">
+        ⚠️ 画像内の文字は AI が「描いた」ものなので、誤字や崩れが起こります。正式な記録は議事録本体（テキスト）をご利用ください。
+        高品質 Pro は Google 側で従量課金が発生します。
+      </p>
+      <div class="visual-status" id="visual-status"></div>
+      <figure class="visual-result hidden" id="visual-result">
+        <img id="visual-img" alt="">
+        <figcaption id="visual-caption"></figcaption>
+      </figure>
+      <div class="visual-actions hidden" id="visual-actions">
+        <button type="button" class="btn-ghost slim" id="visual-download">⬇️ 画像を保存</button>
+      </div>
+    </div>
+
     <div id="minutes-output" class="minutes-output"></div>
   </section>
 
@@ -276,7 +322,7 @@
 </footer>
 
 <!-- 共通サイト JS (ヘッダー/サイドバーの includes 読み込みと言語切替) -->
-<script src="../../js/main.js?v=20260727-4"></script>
+<script src="../../js/main.js?v=20260811-1"></script>
 <!-- ツール固有 JS -->
 <script type="module" src="./app.js"></script>
 </body>

@@ -7517,6 +7517,76 @@ translations.filledRegion = {
             en: '🧠 Mind map',
             zh: '🧠 思维导图'
         },
+        'aimin-style-timeline': {
+            ja: '🕒 タイムライン',
+            en: '🕒 Timeline',
+            zh: '🕒 时间轴'
+        },
+        'aimin-style-matrix': {
+            ja: '👥 担当者別',
+            en: '👥 By assignee',
+            zh: '👥 按负责人'
+        },
+        'aimin-vis-btn': {
+            ja: '🍌 ビジュアル資料',
+            en: '🍌 Visual summary',
+            zh: '🍌 视觉资料'
+        },
+        'aimin-vis-title': {
+            ja: '🍌 ビジュアル資料を作る（実験機能）',
+            en: '🍌 Create a visual summary (experimental)',
+            zh: '🍌 生成视觉资料（实验功能）'
+        },
+        'aimin-vis-desc': {
+            ja: '議事録の要点から、共有・表紙用の <strong>1 枚絵</strong>を Gemini の画像モデルで作成します。高精度版と<strong>同じ API キー</strong>を使います（画像の無料枠は議事録本体とは別枠です）。',
+            en: 'Creates a <strong>single-page visual</strong> from the key points, for sharing or as a cover sheet, using Gemini\'s image model. It uses the <strong>same API key</strong> as high-accuracy mode (image quota is separate from the minutes).',
+            zh: '使用 Gemini 的图像模型，从会议要点生成用于共享或封面的<strong>单页图</strong>。使用与高精度版<strong>相同的 API 密钥</strong>（图像的免费额度与会议记录分开计算）。'
+        },
+        'aimin-vis-kind': {
+            ja: 'レイアウト',
+            en: 'Layout',
+            zh: '版式'
+        },
+        'aimin-vis-kind-poster': {
+            ja: 'サマリーポスター（縦）',
+            en: 'Summary poster (portrait)',
+            zh: '总结海报（纵向）'
+        },
+        'aimin-vis-kind-infographic': {
+            ja: 'インフォグラフィック（横）',
+            en: 'Infographic (landscape)',
+            zh: '信息图（横向）'
+        },
+        'aimin-vis-kind-whiteboard': {
+            ja: 'ホワイトボード風（横）',
+            en: 'Whiteboard style (landscape)',
+            zh: '白板风格（横向）'
+        },
+        'aimin-vis-model': {
+            ja: '画質',
+            en: 'Quality',
+            zh: '画质'
+        },
+        'aimin-vis-model-flash': {
+            ja: '標準（無料枠あり・文字は最小限）',
+            en: 'Standard (free quota, minimal text)',
+            zh: '标准（有免费额度・文字最少）'
+        },
+        'aimin-vis-model-pro': {
+            ja: '高品質 Pro（要お支払い設定・文字が正確）',
+            en: 'High quality Pro (billing required, accurate text)',
+            zh: '高品质 Pro（需启用结算・文字准确）'
+        },
+        'aimin-vis-run': {
+            ja: '画像を生成',
+            en: 'Generate image',
+            zh: '生成图像'
+        },
+        'aimin-vis-note': {
+            ja: '⚠️ 画像内の文字は AI が「描いた」ものなので、誤字や崩れが起こります。正式な記録は議事録本体（テキスト）をご利用ください。高品質 Pro は Google 側で従量課金が発生します。',
+            en: '⚠️ Text inside the image is "drawn" by the AI, so typos and garbled characters can occur. Use the minutes themselves as the official record. The Pro model incurs usage charges on Google\'s side.',
+            zh: '⚠️ 图中的文字由 AI「绘制」，可能出现错字或变形。正式记录请以会议记录正文为准。高品质 Pro 会在 Google 侧产生按量计费。'
+        },
         'aimin-generate': {
             ja: '🪄 このファイルから議事録を作成',
             en: '🪄 Create minutes from this file',

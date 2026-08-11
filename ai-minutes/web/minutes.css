@@ -526,6 +526,181 @@
 .mn-mindmap-wrap svg { display: block; margin: 0 auto; }
 
 /* ============================================================
+   タイムライン スタイル
+   ============================================================ */
+.mn-tl-summary { margin: 0 0 18px; }
+.mn-tl {
+  list-style: none;
+  margin: 0 0 22px;
+  padding: 0 0 0 8px;
+  position: relative;
+}
+.mn-tl-step {
+  position: relative;
+  display: flex;
+  gap: 14px;
+  padding: 0 0 16px;
+}
+/* ドット同士をつなぐ縦線（最後の項目は線を引かない） */
+.mn-tl-step::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 26px;
+  bottom: 0;
+  width: 2px;
+  background: var(--light-concrete);
+}
+.mn-tl-step:last-child { padding-bottom: 0; }
+.mn-tl-step:last-child::before { display: none; }
+.mn-tl-dot {
+  flex-shrink: 0;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 0.78rem; font-weight: 700;
+  color: #fff; background: var(--steel-blue);
+  position: relative; z-index: 1;
+}
+.mn-tl-body { flex: 1; min-width: 0; padding-top: 2px; }
+.mn-tl-topic { font-weight: 600; color: var(--concrete-gray); }
+.mn-tl-speaker {
+  font-size: 0.78rem; font-weight: 500;
+  color: #95a5a6; margin-left: 8px;
+}
+.mn-tl-points {
+  margin: 4px 0 0; padding-left: 1.3em;
+  color: var(--steel-blue); line-height: 1.55;
+}
+.mn-tl-points li { margin-bottom: 2px; }
+
+.mn-tl-conclusion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.mn-tl-card {
+  border: 1px solid var(--light-concrete);
+  border-radius: 10px;
+  padding: 12px 14px;
+  border-top: 3px solid var(--steel-blue);
+}
+.mn-tl-card-decisions { border-top-color: var(--architect-green); }
+.mn-tl-card-todos { border-top-color: var(--blueprint-blue); }
+.mn-tl-card-head {
+  font-weight: 700; font-size: 0.95rem;
+  color: var(--concrete-gray); margin-bottom: 6px;
+  display: flex; align-items: baseline; gap: 8px;
+}
+.mn-tl-card-list { margin: 0; padding-left: 1.2em; line-height: 1.5; }
+.mn-tl-card-list li { margin-bottom: 4px; }
+.mn-tl-tag {
+  display: inline-block;
+  margin-left: 6px; padding: 1px 7px;
+  border-radius: 10px;
+  font-size: 0.74rem;
+  background: var(--light-concrete); color: var(--steel-blue);
+}
+.mn-tl-tag-due { background: #fdf0e3; color: var(--construction-orange); }
+
+/* ============================================================
+   担当者別 (マトリクス) スタイル
+   ============================================================ */
+.mn-mx-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.mn-mx-card {
+  border: 1px solid var(--light-concrete);
+  border-radius: 10px;
+  padding: 12px 14px;
+  border-left: 4px solid var(--blueprint-blue);
+}
+.mn-mx-card-none { border-left-color: #95a5a6; }
+.mn-mx-head {
+  display: flex; align-items: baseline; gap: 8px;
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--light-concrete);
+}
+.mn-mx-who { font-weight: 700; color: var(--concrete-gray); }
+.mn-mx-list { list-style: none; margin: 0; padding: 0; }
+.mn-mx-row {
+  padding: 5px 0;
+  border-bottom: 1px dotted var(--light-concrete);
+  line-height: 1.45;
+}
+.mn-mx-row:last-child { border-bottom: none; }
+.mn-mx-text { display: block; }
+.mn-mx-due {
+  display: inline-block; margin-top: 3px;
+  font-size: 0.76rem; color: var(--construction-orange);
+}
+
+/* ============================================================
+   ビジュアル資料 (Gemini 画像モデル)
+   ============================================================ */
+.visual-panel {
+  background: var(--glass-white);
+  border: 1px solid var(--light-concrete);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+}
+.visual-panel.hidden { display: none; }
+.visual-panel-head {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; margin-bottom: 8px;
+}
+.visual-panel-title { font-weight: 600; color: var(--concrete-gray); }
+.visual-panel-desc {
+  margin: 0 0 12px;
+  font-size: 0.86rem; line-height: 1.6; color: var(--steel-blue);
+}
+.visual-controls {
+  display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px;
+  margin-bottom: 10px;
+}
+.visual-field { display: flex; flex-direction: column; gap: 4px; font-size: 0.82rem; color: var(--steel-blue); }
+.visual-field select {
+  padding: 7px 10px;
+  border: 1px solid var(--light-concrete); border-radius: 8px;
+  background: var(--glass-white); color: var(--concrete-gray);
+  font-size: 0.88rem;
+}
+.visual-field select:focus { outline: 2px solid var(--blueprint-blue); outline-offset: -1px; }
+.visual-note {
+  margin: 0 0 10px;
+  padding: 8px 12px;
+  background: #fdf6ee;
+  border-left: 3px solid var(--construction-orange);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.8rem; line-height: 1.6; color: var(--steel-blue);
+}
+.visual-status { font-size: 0.86rem; color: var(--steel-blue); min-height: 1.2em; }
+.visual-result { margin: 12px 0 0; text-align: center; }
+.visual-result.hidden { display: none; }
+.visual-result img {
+  max-width: 100%; height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+.visual-result figcaption {
+  margin-top: 8px;
+  font-size: 0.78rem; color: #95a5a6;
+}
+.visual-actions { margin-top: 10px; text-align: center; }
+.visual-actions.hidden { display: none; }
+
+/* HTML 保存した議事録に埋め込まれる画像 */
+.mn-visual { margin: 22px 0 0; text-align: center; }
+.mn-visual img { max-width: 100%; height: auto; border-radius: 10px; }
+.mn-visual figcaption { margin-top: 8px; font-size: 0.78rem; color: #95a5a6; }
+
+/* ============================================================
    レスポンシブ
    ============================================================ */
 @media (max-width: 768px) {
@@ -534,6 +709,10 @@
   .minutes-output { padding: 26px 22px; }
   .mn-title { font-size: 1.4rem; }
   .output-toolbar { flex-direction: column; align-items: flex-start; }
+  .mn-tl-conclusion { grid-template-columns: 1fr; }
+  .mn-mx-grid { grid-template-columns: 1fr; }
+  .visual-controls { flex-direction: column; align-items: stretch; }
+  .visual-field select, .visual-controls .btn-primary { width: 100%; }
 }
 
 /* ============================================================
@@ -549,9 +728,19 @@
   /* 議事録以外の画面 UI をすべて非表示 */
   #header-container, #sidebar-container, .breadcrumb,
   .page-title, .page-description, .privacy-notice, .accuracy-notice,
-  .record-hero, #advanced-panel, .site-footer, .output-toolbar {
+  .record-hero, #advanced-panel, .site-footer, .output-toolbar,
+  .visual-panel-head, .visual-panel-desc, .visual-controls,
+  .visual-note, .visual-status, .visual-actions {
     display: none !important;
   }
+
+  /* ビジュアル資料は表紙として 1 ページ目に置き、議事録は次ページから。
+     パネルを閉じている場合 (.hidden) は印刷にも出さない＝画面の見たまま。 */
+  .visual-panel:not(.hidden) {
+    border: none !important; padding: 0 !important; margin: 0 !important;
+  }
+  .visual-result { break-after: page; page-break-after: always; }
+  .visual-result img { box-shadow: none !important; max-height: 245mm; }
 
   /* ラッパーの余白・装飾をリセットして議事録だけを普通に流す */
   html, body { height: auto !important; }
