@@ -194,16 +194,21 @@
 .record-note { font-size: 0.78rem; color: var(--disabled-gray); line-height: 1.6; margin: 8px 0 0; }
 
 /* ---------- 注意書き（普段は1行に畳む） ---------- */
+/* 1 行に収まらない幅（モバイル・英中翻訳）では折り返すので、
+   角丸はピル(999px)にしない — 高さが増えたときにカプセル型に崩れるため。 */
 .notice-line {
-  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
-  margin: 16px 0 18px; padding: 9px 16px;
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  margin: 16px 0 18px; padding: 11px 16px;
   background: rgba(255,255,255,0.6);
-  border: 1px solid var(--light-concrete); border-radius: 999px;
-  font-size: 0.84rem; color: var(--steel-blue);
+  border: 1px solid var(--light-concrete); border-radius: 14px;
+  font-size: 0.84rem; line-height: 1.7; color: var(--steel-blue);
 }
-.notice-dot { color: var(--architect-green); font-size: 0.7rem; }
+.notice-dot { flex-shrink: 0; color: var(--architect-green); font-size: 0.7rem; }
+/* 本文を伸縮させて、点と同じ行に留めたまま内部で折り返す */
+.notice-text { flex: 1 1 220px; min-width: 0; }
 .notice-toggle {
-  margin-left: auto; font: inherit; font-size: 0.84rem;
+  margin-left: auto; flex-shrink: 0;
+  font: inherit; font-size: 0.84rem;
   background: none; border: none; color: var(--blueprint-blue);
   cursor: pointer; padding: 2px 4px;
 }
