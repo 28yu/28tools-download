@@ -23,15 +23,19 @@
 ### 🆕 AI議事録 自動作成ツール (`ai-minutes/web/`)
 **目的**: 打合せ音声・資料から AI が議事録を自動作成するブラウザ完結ツール。
 高精度版は Gemini（ユーザー自身の無料 API キー）、簡易版は Whisper(Transformers.js)。
-図解スタイル / マインドマップで出力、日英中の多言語対応（本文も切替時に翻訳）。
+**4 スタイル**（図解 / マインドマップ / タイムライン / 担当者別）で出力、
+日英中の多言語対応（本文も切替時に翻訳）。
+オプションで **ビジュアル資料**（Gemini 画像モデル＝通称ナノバナナ）の 1 枚絵も生成可能。
 
 **詳細ドキュメント**:
 - `ai-minutes/web/DEVELOPMENT.md` — 技術設計・i18n・既知の制約
 - `ai-minutes/web/CHANGELOG.md` — 実装履歴・判断記録・次フェーズ候補
 - `ai-minutes/web/README.md` — 概要・ローカル起動方法
 
-**現状**: **限定公開（パスワード保護, パス `28tools`）**。`sitemap.xml` 未登録。
-高精度版は動作確認済み。一般公開時はパスワード解除＋sitemap登録＋専用アイコン作成が必要。
+**現状**: **一般公開済み**（パスワード保護は解除済み・`sitemap.xml` 登録済み・
+サイドバー/トップのナビからリンク済み。ソースで確認 2026/08）。
+高精度版は動作確認済み。残タスクは**専用アイコンの作成**（現状 `icon-AI.png` を ai-news と共用）。
+※ 画像生成（ビジュアル資料）の実 API 呼び出しは開発環境にキーが無く未検証。
 
 ## 新しいセッション開始時のテンプレート
 
@@ -1144,6 +1148,7 @@ Claude Code on the web 環境では outbound network policy により
 | `pdf-compare-run` | `pdf_compare.html` |
 | `pdf-excel-load` / `pdf-excel-export` | `pdf-to-excel/web/app.js` |
 | `minutes-create` | `ai-minutes/web/app.js` (議事録生成成功時, 2026/06追加) |
+| `minutes-visual` | `ai-minutes/web/app.js` (ビジュアル資料=画像生成の成功時, 2026/08追加) |
 
 新ツールの計測を足すときは **①ツール側で `logToolEvent('新key')` ②`TOOL_EVENT_LABELS`/`TOOL_EVENT_COLORS` に追加 ③KPIカード・日別テーブル列・推移系列を追加** の3点セット。
 

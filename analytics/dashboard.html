@@ -314,6 +314,7 @@
     <div class="kpi yellow"><div class="kpi-label">PDF→Excel 読込</div><div class="kpi-value" id="kpi-pdf-load">-</div><div class="kpi-sub">PDF読み込み</div></div>
     <div class="kpi purple"><div class="kpi-label">PDF→Excel 書出</div><div class="kpi-value" id="kpi-pdf-export">-</div><div class="kpi-sub">Excel書き出し</div></div>
     <div class="kpi pink"><div class="kpi-label">議事録作成</div><div class="kpi-value" id="kpi-minutes">-</div><div class="kpi-sub">AI議事録</div></div>
+    <div class="kpi blue"><div class="kpi-label">ビジュアル資料</div><div class="kpi-value" id="kpi-minutes-visual">-</div><div class="kpi-sub">AI議事録 画像生成</div></div>
   </div>
 
   <div class="chart-full">
@@ -349,7 +350,7 @@
       <div class="chart-title">日別利用数（直近30日）</div>
       <div class="raw-table-wrap" style="max-height:250px">
         <table class="raw-table">
-          <thead><tr><th>日付</th><th>塗潰し</th><th>PDF比較</th><th>PDF読込</th><th>Excel書出</th><th>議事録</th></tr></thead>
+          <thead><tr><th>日付</th><th>塗潰し</th><th>PDF比較</th><th>PDF読込</th><th>Excel書出</th><th>議事録</th><th>ビジュアル</th></tr></thead>
           <tbody id="tool-daily-table"></tbody>
         </table>
       </div>
@@ -1010,6 +1011,7 @@ const TOOL_EVENT_LABELS = {
   'pdf-excel-load':  'PDF→Excel 読込',
   'pdf-excel-export':'PDF→Excel 書出',
   'minutes-create':  'AI議事録 作成',
+  'minutes-visual':  'AI議事録 ビジュアル資料',
 };
 const TOOL_EVENT_COLORS = {
   'hatch-download':  '#34d399',
@@ -1017,6 +1019,7 @@ const TOOL_EVENT_COLORS = {
   'pdf-excel-load':  '#fbbf24',
   'pdf-excel-export':'#a78bfa',
   'minutes-create':  '#f472b6',
+  'minutes-visual':  '#22d3ee',
 };
 const TOOL_EVENT_KEYS = Object.keys(TOOL_EVENT_LABELS);
 
@@ -1034,6 +1037,7 @@ function renderTool(pvData) {
   document.getElementById('kpi-pdf-load').textContent   = counts['pdf-excel-load'].toLocaleString();
   document.getElementById('kpi-pdf-export').textContent = counts['pdf-excel-export'].toLocaleString();
   document.getElementById('kpi-minutes').textContent    = counts['minutes-create'].toLocaleString();
+  document.getElementById('kpi-minutes-visual').textContent = counts['minutes-visual'].toLocaleString();
 
   // ランキング表
   const total = Object.values(counts).reduce((a,b)=>a+b,0) || 1;
@@ -1076,6 +1080,7 @@ function renderTool(pvData) {
         <td>${d['pdf-excel-load']||0}</td>
         <td>${d['pdf-excel-export']||0}</td>
         <td>${d['minutes-create']||0}</td>
+        <td>${d['minutes-visual']||0}</td>
       </tr>`);
   });
 

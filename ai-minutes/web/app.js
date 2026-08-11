@@ -1,8 +1,8 @@
 /* ============================================================
    app.js — AI議事録 自動作成 オーケストレーション
-   入力 (音声 / 資料 / 文字起こし) → 処理 (Gemini or ブラウザ) → 描画 (2 スタイル)
+   入力 (音声 / 資料 / 文字起こし) → 処理 (Gemini or ブラウザ) → 描画 (4 スタイル)
    ============================================================ */
-import { generateWithGemini, translateMinutes } from './lib/gemini.js';
+import { generateWithGemini, translateMinutes, generateVisualImage } from './lib/gemini.js';
 import { transcribeAudio, structureHeuristically } from './lib/transcribe.js';
 import { mountMinutes, minutesToText } from './lib/render.js';
 import { t, setLang, getLang } from './lib/i18n.js';
@@ -13,6 +13,10 @@ import { readTranscriptFile } from './lib/transcript-files.js';
 
 const $ = (id) => document.getElementById(id);
 const APIKEY_STORE = 'ai-minutes-gemini-key';
+
+// HTML 保存時の埋め込み用エスケープ
+const esc = (s) => String(s == null ? '' : s)
+  .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 // js/main.js と同じ言語設定を参照（タイミングに依存しないよう localStorage を直接読む）
 function detectLang() {
@@ -28,6 +32,7 @@ const state = {
   recordedDuration: null, // 録音由来なら秒数 (それ以外は null)
   translatedByLang: {},   // 言語コード → 翻訳済み議事録データ (キャッシュ)
   translating: false,
+  visual: null,           // 生成済みビジュアル資料 { dataUrl, mimeType }
 };
 
 const recorder = new MicRecorder();
@@ -454,6 +459,7 @@ function renderMergedProgress() {
   if (!merged) return;
   state.lastData = merged;
   state.translatedByLang = { [detectContentLang(merged)]: merged };
+  if (state.visual) resetVisual(); // 内容が更新されたので前回の画像は破棄
   $('output-section').style.display = 'block';
   mountMinutes($('minutes-output'), merged, state.style);
 }
@@ -628,6 +634,92 @@ function setupStyleToggle() {
   });
 }
 
+/* ---------- ビジュアル資料 (Gemini 画像モデル = 通称ナノバナナ) ---------- */
+// 議事録の要点から 1 枚絵を作る。あくまで共有・表紙用の補助資料で、
+// 正式な記録は議事録本体 (テキスト) 側という位置づけ。
+function setupVisual() {
+  const panel = $('visual-panel');
+
+  $('visual-btn').addEventListener('click', () => {
+    panel.classList.toggle('hidden');
+    if (!panel.classList.contains('hidden')) {
+      panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  });
+  $('visual-close').addEventListener('click', () => panel.classList.add('hidden'));
+
+  $('visual-run').addEventListener('click', async () => {
+    if (!state.lastData) return;
+    const apiKey = $('apikey-input').value.trim();
+    if (!apiKey) {
+      $('visual-status').textContent = '❌ ' + t('al-need-key');
+      const key = $('apikey-input');
+      if (key) { key.focus(); key.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+      return;
+    }
+
+    const runBtn = $('visual-run');
+    runBtn.disabled = true;
+    runBtn.textContent = t('vis-btn-running');
+    $('visual-status').textContent = t('vis-generating');
+
+    try {
+      const img = await generateVisualImage({
+        apiKey,
+        data: currentData(),
+        model: $('visual-model').value,
+        kind: $('visual-kind').value,
+        lang: getLang(),
+      }, log);
+
+      state.visual = {
+        dataUrl: `data:${img.mimeType};base64,${img.base64}`,
+        mimeType: img.mimeType,
+      };
+      showVisual();
+      $('visual-status').textContent = t('vis-done');
+      if (typeof logToolEvent === 'function') logToolEvent('minutes-visual');
+    } catch (err) {
+      console.error(err);
+      log('Error: ' + err.message);
+      $('visual-status').textContent = '❌ ' + err.message;
+    } finally {
+      runBtn.disabled = false;
+      runBtn.textContent = t('vis-btn-run');
+    }
+  });
+
+  $('visual-download').addEventListener('click', () => {
+    if (!state.visual) return;
+    const ext = state.visual.mimeType.includes('jpeg') ? 'jpg' : 'png';
+    const a = document.createElement('a');
+    a.href = state.visual.dataUrl;
+    a.download = `${minutesFileBase()}_visual.${ext}`;
+    a.click();
+  });
+}
+
+// 生成済み画像を表示する (言語切替後の再適用にも使う)
+function showVisual() {
+  const has = !!state.visual;
+  $('visual-result').classList.toggle('hidden', !has);
+  $('visual-actions').classList.toggle('hidden', !has);
+  if (!has) return;
+  const img = $('visual-img');
+  img.src = state.visual.dataUrl;
+  img.alt = t('vis-alt');
+  $('visual-caption').textContent = t('vis-caption');
+  $('visual-download').textContent = t('vis-btn-download');
+}
+
+// 新しい議事録ができたら、前回の画像は破棄する (内容が合わなくなるため)
+function resetVisual() {
+  state.visual = null;
+  $('visual-status').textContent = '';
+  $('visual-panel').classList.add('hidden');
+  showVisual();
+}
+
 /* ---------- 入力サマリ ---------- */
 function updateSummary() {
   const parts = [];
@@ -710,6 +802,7 @@ async function generate() {
 
     setProgress(100);
     state.lastData = data;
+    resetVisual(); // 前回のビジュアル資料は内容が合わなくなるので破棄
     // 翻訳キャッシュをリセットし、「中身の言語」を判定して元データを登録
     // (UI 言語と中身の言語は異なる。例: UI=英語 でも会議は日本語)
     state.translatedByLang = { [detectContentLang(data)]: data };
@@ -822,10 +915,14 @@ function setupOutputActions() {
     if (!state.lastData) return;
     const node = $('minutes-output').cloneNode(true);
     // マインドマップの SVG もクローンに含まれるのでそのまま使える
+    // ビジュアル資料があれば data URL のまま埋め込む (1 ファイルで完結させる)
+    const visual = state.visual
+      ? `<figure class="mn-visual"><img src="${state.visual.dataUrl}" alt="${esc(t('vis-alt'))}">
+<figcaption>${esc(t('vis-caption'))}</figcaption></figure>` : '';
     const html = `<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8">
-<title>${(currentData().meta?.title) || '議事録'}</title>
+<title>${esc((currentData().meta?.title) || '議事録')}</title>
 <style>${MINUTES_INLINE_CSS}</style></head>
-<body><div class="minutes-output ${state.style === 'mindmap' ? 'style-mindmap' : 'style-figure'}">${node.innerHTML}</div></body></html>`;
+<body><div class="minutes-output style-${state.style}">${node.innerHTML}${visual}</div></body></html>`;
     const blob = new Blob([html], { type: 'text/html' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
@@ -867,6 +964,36 @@ body{font-family:'Noto Sans JP','Yu Gothic',sans-serif;background:#f4f6f8;margin
 .mn-mm-meta{text-align:center;color:var(--s);font-size:.9rem;margin-bottom:12px}
 .mn-mindmap-wrap{overflow-x:auto;text-align:center}.mn-mindmap-wrap svg{max-width:100%;height:auto}
 .mn-footnote{margin-top:18px;padding-top:12px;border-top:1px solid var(--l);font-size:.78rem;color:var(--d);text-align:center}
+.mn-tl{list-style:none;margin:0 0 22px;padding:0 0 0 8px}
+.mn-tl-step{position:relative;display:flex;gap:14px;padding:0 0 16px}
+.mn-tl-step::before{content:'';position:absolute;left:12px;top:26px;bottom:0;width:2px;background:var(--l)}
+.mn-tl-step:last-child{padding-bottom:0}.mn-tl-step:last-child::before{display:none}
+.mn-tl-dot{flex-shrink:0;width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;color:#fff;background:var(--s);position:relative;z-index:1}
+.mn-tl-body{flex:1;min-width:0;padding-top:2px}
+.mn-tl-topic{font-weight:600;color:var(--c)}
+.mn-tl-speaker{font-size:.78rem;font-weight:500;color:var(--d);margin-left:8px}
+.mn-tl-points{margin:4px 0 0;padding-left:1.3em;color:var(--s);line-height:1.55}
+.mn-tl-summary{margin:0 0 18px}
+.mn-tl-conclusion{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}
+.mn-tl-card{border:1px solid var(--l);border-radius:10px;padding:12px 14px;border-top:3px solid var(--s)}
+.mn-tl-card-decisions{border-top-color:var(--g)}.mn-tl-card-todos{border-top-color:var(--b)}
+.mn-tl-card-head{font-weight:700;font-size:.95rem;color:var(--c);margin-bottom:6px;display:flex;align-items:baseline;gap:8px}
+.mn-tl-card-list{margin:0;padding-left:1.2em;line-height:1.5}.mn-tl-card-list li{margin-bottom:4px}
+.mn-tl-tag{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:10px;font-size:.74rem;background:var(--l);color:var(--s)}
+.mn-tl-tag-due{background:#fdf0e3;color:var(--o)}
+.mn-mx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-bottom:20px}
+.mn-mx-card{border:1px solid var(--l);border-radius:10px;padding:12px 14px;border-left:4px solid var(--b)}
+.mn-mx-card-none{border-left-color:var(--d)}
+.mn-mx-head{display:flex;align-items:baseline;gap:8px;margin-bottom:6px;padding-bottom:5px;border-bottom:1px solid var(--l)}
+.mn-mx-who{font-weight:700;color:var(--c)}
+.mn-mx-list{list-style:none;margin:0;padding:0}
+.mn-mx-row{padding:5px 0;border-bottom:1px dotted var(--l);line-height:1.45}
+.mn-mx-row:last-child{border-bottom:none}
+.mn-mx-text{display:block}
+.mn-mx-due{display:inline-block;margin-top:3px;font-size:.76rem;color:var(--o)}
+.mn-visual{margin:22px 0 0;text-align:center}
+.mn-visual img{max-width:100%;height:auto;border-radius:10px}
+.mn-visual figcaption{margin-top:8px;font-size:.78rem;color:var(--d)}
 @page{size:A4;margin:22mm 18mm}
 @media print{
  html,body{height:auto}
@@ -877,8 +1004,10 @@ body{font-family:'Noto Sans JP','Yu Gothic',sans-serif;background:#f4f6f8;margin
  .mn-summary,.mn-item-text,.mn-topic ul{line-height:1.45}
  .minutes-output>*:last-child{margin-bottom:0}
  .mn-footnote{margin-top:12px}
- .mn-section,.mn-item,.mn-topic{break-inside:avoid;page-break-inside:avoid}
+ .mn-section,.mn-item,.mn-topic,.mn-tl-step,.mn-tl-card,.mn-mx-card{break-inside:avoid;page-break-inside:avoid}
  .mn-header,.mn-section-head{break-after:avoid;page-break-after:avoid}
+ .mn-visual{break-before:page;page-break-before:always}
+ .mn-visual img{max-height:245mm}
 }
 `;
 
@@ -896,6 +1025,7 @@ function applyDynamicLang() {
   updateSetupStrip();
   updateFolderStatus();
   if (longrec.active || longrec.segments.length) renderSegmentList();
+  showVisual(); // 画像のキャプション・保存ボタンのラベルを現在の言語に
   if (state.lastData) {
     renderMinutesForCurrentLang();
   }
@@ -915,6 +1045,7 @@ function init() {
   setupModeSwitch();
   setupApiKey();
   setupStyleToggle();
+  setupVisual();
   setupOutputActions();
   $('generate-btn').addEventListener('click', generate);
   $('transcript-input').addEventListener('input', updateSummary);

@@ -34,12 +34,57 @@ Gemini 側は `responseSchema` でこの形を強制している（JSON モー�
 
 ## スタイル実装
 
-- **図解（figure）**: Lucide アイコン（UMD, `data-lucide` 属性 → `lucide.createIcons()` で SVG 化）＋カードレイアウト。
+出力スタイルは `render.js` の `STYLES` 配列と `mountMinutes()` のディスパッチ表で管理する。
+`index.html` の `.style-btn[data-style]` と 1 対 1 で対応し、コンテナには `style-<名前>` クラスが付く。
+
+**どのスタイルも「入力データにある情報だけ」を並べ替えて見せる**という原則を守ること。
+項目同士の関係（この決定がこの ToDo を生んだ、等）はスキーマに存在しないので、
+推測して線で結んではいけない（事実忠実性が議事録の生命線）。
+
+- **図解（figure）**: 番号バッジ＋カードレイアウト。既定。
+- **マインドマップ（mindmap）**: `renderMindMap()` が SVG を生成（下記）。
+- **タイムライン（timeline）**: `renderTimeline()`。`discussions` を時系列の軸に並べ、
+  その下に「この打合せの結論」として `decisions` / `todos` を 2 カラムのカードで置く。
+  縦線は `.mn-tl-step::before`（最後の項目は非表示）で描画。
+- **担当者別（matrix）**: `renderMatrix()`。`todos` を `assignee` でグルーピングする。
+  assignee が空の ToDo は「未割当」カードに入れる（担当者を推測しない）。
+
+新しいスタイルを足すときは ①`render.js` に描画関数＋`STYLES`/ディスパッチ表
+②`index.html` に `.style-btn` ③`js/main.js` に `aimin-style-*` 翻訳
+④`minutes.css` と `app.js` の `MINUTES_INLINE_CSS` の**両方**に CSS
+（後者は HTML 保存用。片方だけだと保存した HTML が崩れる）。
+
 - **マインドマップ（mindmap）**: `render.js` の `renderMindMap()` が SVG を生成。中央に
   会議タイトル、左右に 4 カテゴリ（決定/ToDo/課題/議論）、その先に各項目ノードを配置し、
   ベジェ曲線で接続する。各ノードは `foreignObject` 内の HTML（インラインスタイルのみ）で
   描画するため、テキスト折返しが効き、HTML 保存／印刷でもそのまま表示できる。
   - ノード高さは固定＋テキスト 2 行クランプにして、実寸測定なしで決定的にレイアウトしている。
+
+## ビジュアル資料（Gemini 画像モデル＝通称「ナノバナナ」）
+
+議事録の要点から 1 枚絵（サマリーポスター／インフォグラフィック／ホワイトボード風）を作る
+オプション機能。`gemini.js` の `generateVisualImage()` ＋ `app.js` の `setupVisual()`。
+
+| 選択肢 | モデル ID | 位置づけ |
+|---|---|---|
+| 標準 | `gemini-2.5-flash-image` | 無料枠あり・高速。**画像内の日本語は崩れやすい**ので、プロンプトで「見出し・キーワードのみ」に抑えている |
+| 高品質 Pro | `gemini-3-pro-image-preview` | 文字レンダリングが強くインフォグラフィック向き。**API 側で課金設定が必要**（無料キーでは 429/403 になる） |
+
+- 呼び出し口は議事録本体と**同じ `generateContent` エンドポイント・同じユーザーキー**。
+  違いは `generationConfig.responseModalities: ['TEXT','IMAGE']` と `imageConfig` だけ。
+  レスポンスの `parts[].inlineData`（base64 PNG）を data URL にして表示する。
+- `imageConfig`（`aspectRatio` / `imageSize`）を受け付けないモデル・API 版があるため、
+  **400 かつメッセージに imageConfig 系の語が含まれる場合は設定を外して 1 回だけ再試行**する。
+- **画像の無料枠は議事録本体（テキスト）とは別枠**。429 は専用メッセージ（`vis-err-rate`）で案内する。
+- 送信するのは**要約済みテキストのみ**（音声・資料は再送しない）。
+- ⚠️ **画像内の文字は「描かれた絵」**なので誤字・脱字が起こりうる。UI とキャプションに
+  必ず注意書きを出し、**正式な記録は議事録本体（テキスト）**という位置づけを崩さないこと。
+  同じ理由で、翻訳（言語切替）では画像を再生成しない（課金・待ち時間が発生するため）。
+- 議事録が更新されたら `resetVisual()` で画像を破棄する（内容と食い違うため）。
+- 印刷／HTML 保存では、画像は**表紙として先頭ページ**に入り、議事録は次ページから始まる
+  （`.visual-result { break-after: page }` / `.mn-visual { break-before: page }`）。
+  パネルを閉じている場合は印刷にも出さない＝画面の見たまま。
+- 計測は `logToolEvent('minutes-visual')`（ダッシュボードの `TOOL_EVENT_LABELS` に登録済み）。
 
 ## 既知の制約・落とし穴
 

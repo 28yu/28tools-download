@@ -374,3 +374,152 @@ export async function translateMinutes(apiKey, data, targetLang) {
   out.meta = out.meta || data.meta || {};
   return out;
 }
+
+/* ============================================================
+   ビジュアル資料生成 (Gemini 画像モデル = 通称「ナノバナナ」)
+   議事録の要点から 1 枚絵のサマリー資料を作る。
+   - flash: gemini-2.5-flash-image  … 無料枠あり・高速。画像内の日本語は崩れやすい
+   - pro  : gemini-3-pro-image-preview … 文字レンダリングが強い。API は課金必要
+   画像内の文字は「描かれた絵」なので誤字が起こりうる。あくまで
+   共有・表紙用の補助資料であり、正式な記録は議事録本体 (テキスト) 側。
+   ============================================================ */
+
+export const IMAGE_MODELS = {
+  flash: { id: 'gemini-2.5-flash-image', free: true },
+  pro: { id: 'gemini-3-pro-image-preview', free: false },
+};
+
+export const VISUAL_KINDS = ['poster', 'infographic', 'whiteboard'];
+
+const ASPECT = { poster: '3:4', infographic: '4:3', whiteboard: '16:9' };
+
+const VISUAL_LANG = { ja: '日本語', en: 'English', zh: '简体中文' };
+
+// 画像に載せる元テキスト。長すぎると破綻するので件数・文字数を絞る。
+function visualSourceText(data, lang) {
+  const d = data || {};
+  const meta = d.meta || {};
+  const cut = (s, n) => String(s || '').replace(/\s+/g, ' ').trim().slice(0, n);
+  const list = (arr, n, fmt) => (arr || []).slice(0, n).map(fmt).filter(Boolean);
+
+  const lines = [];
+  lines.push(`TITLE: ${cut(meta.title, 40) || t('mn-default-title')}`);
+  if (meta.date) lines.push(`DATE: ${cut(meta.date, 30)}`);
+  if (d.summary) lines.push(`SUMMARY: ${cut(d.summary, 160)}`);
+  const push = (label, arr) => { if (arr.length) lines.push(`${label}:\n- ${arr.join('\n- ')}`); };
+  push(t('mn-sec-decisions').toUpperCase(), list(d.decisions, 5, it => cut(it.text, 46)));
+  push(t('mn-sec-todos').toUpperCase(), list(d.todos, 5,
+    it => cut(it.text, 40) + (it.assignee ? ` (${cut(it.assignee, 12)})` : '') + (it.due ? ` [${cut(it.due, 14)}]` : '')));
+  push(t('mn-sec-issues').toUpperCase(), list(d.issues, 4, it => cut(it.text, 40)));
+  push(t('mn-sec-discussions').toUpperCase(), list(d.discussions, 5, it => cut(it.topic, 30)));
+  return lines.join('\n');
+}
+
+const KIND_DIRECTION = {
+  poster: 'A clean one-page summary poster with a strong title band at the top and clearly separated sections below. Flat vector style, generous whitespace, business-document look.',
+  infographic: 'A structured infographic: title header, then boxed sections connected by simple arrows/dividers, with small flat icons next to each section heading. Editorial infographic style.',
+  whiteboard: 'A tidy hand-drawn whiteboard summary: marker-style lettering, hand-drawn boxes, arrows and sticky notes on a white whiteboard surface. Neat and legible, not messy.',
+};
+
+function buildVisualPrompt(kind, data, lang, tier) {
+  const langName = VISUAL_LANG[lang] || VISUAL_LANG.ja;
+  const textPolicy = tier === 'pro'
+    ? `Render every line of the source text below accurately in ${langName}. Reproduce the wording exactly as given — do not paraphrase, translate, shorten or invent any text.`
+    : `Keep on-image text to a minimum: render only short headings and keywords in ${langName}, taken verbatim from the source text. Do not attempt long sentences. Never invent words.`;
+
+  return `Create a single ${kind} image that visually summarizes the meeting minutes below.
+
+STYLE: ${KIND_DIRECTION[kind] || KIND_DIRECTION.poster}
+Palette: deep navy (#2c3e50), blue (#3498db), green (#27ae60), orange (#e67e22) on a white background.
+
+TEXT RULES (critical):
+- ${textPolicy}
+- Use ONLY the information in the source text. Do not add facts, figures, names, dates or logos that are not there.
+- No photorealistic people, no company logos, no watermark-like decorations.
+- Keep the layout uncluttered so every character stays legible.
+
+SOURCE TEXT:
+${visualSourceText(data, lang)}`;
+}
+
+/**
+ * 議事録データから 1 枚のビジュアル資料 (画像) を生成する。
+ * @param {Object} opts { apiKey, data, model:'flash'|'pro', kind, lang }
+ * @returns {Promise<{ mimeType:string, base64:string }>}
+ */
+export async function generateVisualImage(opts, onLog = () => {}) {
+  const { apiKey, data, model = 'flash', kind = 'poster', lang = 'ja' } = opts || {};
+  if (!apiKey) throw new Error(t('g-err-no-key'));
+  if (!data) throw new Error(t('g-err-need-input'));
+
+  const tier = IMAGE_MODELS[model] ? model : 'flash';
+  const modelId = IMAGE_MODELS[tier].id;
+
+  const parts = [{ text: buildVisualPrompt(kind, data, lang, tier) }];
+  const generationConfig = {
+    responseModalities: ['TEXT', 'IMAGE'],
+    imageConfig: {
+      aspectRatio: ASPECT[kind] || '4:3',
+      ...(tier === 'pro' ? { imageSize: '2K' } : {}),
+    },
+  };
+
+  onLog(t('vis-log-sending', { model: modelId }));
+  let json = await requestImage(apiKey, modelId, { contents: [{ role: 'user', parts }], generationConfig }, tier);
+
+  const cand = json?.candidates?.[0];
+  const img = (cand?.content?.parts || []).find(p => p.inlineData?.data);
+  if (!img) {
+    const reason = cand?.finishReason || json?.promptFeedback?.blockReason || '?';
+    throw new Error(t('vis-err-no-image', { reason }));
+  }
+  return { mimeType: img.inlineData.mimeType || 'image/png', base64: img.inlineData.data };
+}
+
+// 画像生成用の POST。503/500 はリトライ、imageConfig 非対応の 400 は設定を外して再試行。
+async function requestImage(apiKey, modelId, reqBody, tier) {
+  let body = reqBody;
+  let triedWithoutConfig = false;
+
+  for (let attempt = 0; attempt < 4; attempt++) {
+    let resp = null;
+    try {
+      resp = await fetch(ENDPOINT(modelId, apiKey), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+    } catch (e) {
+      resp = null; // ネットワークエラー → リトライ
+    }
+
+    if (resp && resp.ok) return resp.json();
+
+    let detail = '';
+    if (resp) { try { const j = await resp.json(); detail = j?.error?.message || ''; } catch (_) {} }
+
+    // imageConfig / responseModalities をモデルが受け付けない場合は外して 1 回だけ再試行
+    if (resp && resp.status === 400 && !triedWithoutConfig && /imageConfig|aspectRatio|imageSize|image_config/i.test(detail)) {
+      triedWithoutConfig = true;
+      body = { ...body, generationConfig: { responseModalities: ['TEXT', 'IMAGE'] } };
+      continue;
+    }
+
+    const retryable = !resp || resp.status === 503 || resp.status === 500;
+    if (retryable && attempt < 3) {
+      await new Promise(r => setTimeout(r, 2000 * (attempt + 1)));
+      continue;
+    }
+
+    if (!resp) throw new Error(t('g-err-network'));
+    if (resp.status === 400 && /API key/i.test(detail)) throw new Error(t('g-err-invalid-key'));
+    if (resp.status === 429) throw new Error(tier === 'pro' ? t('vis-err-billing') : t('vis-err-rate'));
+    if (resp.status === 403 || /billing|billed users|not available|permission|not supported for this model/i.test(detail)) {
+      throw new Error(tier === 'pro' ? t('vis-err-billing') : t('g-err-api', { status: resp.status, detail }));
+    }
+    if (resp.status === 404) throw new Error(t('vis-err-model', { model: modelId }));
+    if (resp.status === 503 || resp.status === 500) throw new Error(t('g-err-overloaded'));
+    throw new Error(t('g-err-api', { status: resp.status, detail: detail || resp.statusText }));
+  }
+  throw new Error(t('g-err-network'));
+}
