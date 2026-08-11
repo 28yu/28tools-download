@@ -191,7 +191,12 @@ const DICT = {
   'vis-alt':          { ja: '議事録のビジュアル資料（AI 生成画像）', en: 'Visual summary of the minutes (AI-generated image)', zh: '会议记录的视觉资料（AI 生成图像）' },
   'vis-caption':      { ja: '⚠️ AI が描いた画像です。画像内の文字は誤ることがあります（正式な記録は議事録本体をご利用ください）。', en: '⚠️ AI-drawn image. Text inside the image may contain errors — use the minutes themselves as the official record.', zh: '⚠️ 由 AI 绘制的图像。图中文字可能有误，正式记录请以会议记录正文为准。' },
   'vis-err-no-image': { ja: '画像が返りませんでした（{reason}）。もう一度お試しください。', en: 'No image was returned ({reason}). Please try again.', zh: '未返回图像（{reason}）。请重试。' },
-  'vis-err-rate':     { ja: '画像生成の無料枠を使い切った可能性があります（画像モデルは議事録本体とは別枠です）。時間をおいて再試行してください。', en: 'The image-generation free quota may be used up (image models have a separate quota from the minutes). Please try again later.', zh: '图像生成的免费额度可能已用尽（图像模型与会议记录使用不同额度）。请稍后重试。' },
+  'vis-err-rate':     { ja: '画像生成の枠に達しました（画像モデルは議事録本体とは別枠です）。1日単位の枠はリセットが太平洋時間の0時＝日本時間の16〜17時ごろです。', en: 'Hit the image-generation limit (image models have a separate quota from the minutes). Daily quotas reset at midnight Pacific time.', zh: '已达到图像生成额度上限（图像模型与会议记录使用不同额度）。每日额度在太平洋时间 0 点重置。' },
+  'vis-err-quota-zero': { ja: 'このキーでは画像モデルの無料枠が 0 のため生成できません（使い切ったのではなく、最初から割り当てが無い状態です）。Google AI Studio / Google Cloud でプロジェクトにお支払い情報を登録し、キーを作り直すと使えるようになります。', en: 'This key has a quota of 0 for the image model — it is not "used up", there is simply no free allocation. Enable billing for the project in Google AI Studio / Google Cloud and create a new key.', zh: '此密钥对图像模型的额度为 0（并非用尽，而是本就没有免费配额）。请在 Google AI Studio / Google Cloud 中为项目启用结算并重新创建密钥。' },
+  'vis-err-retry-in': { ja: '（約{sec}秒後に再試行できます）', en: ' (you can retry in about {sec}s)', zh: '（约 {sec} 秒后可重试）' },
+  'vis-err-quota-id':  { ja: '［枠: {id}］', en: ' [quota: {id}]', zh: '［额度: {id}］' },
+  'vis-err-detail':    { ja: '［詳細: {detail}］', en: ' [detail: {detail}]', zh: '［详情: {detail}］' },
+  'vis-log-retry-simple': { ja: 'このモデルは画像設定（サイズ・比率）に未対応のため、既定設定で再試行します。', en: 'This model does not accept the image config (size/aspect); retrying with defaults.', zh: '该模型不支持图像设置（尺寸/比例），将使用默认设置重试。' },
   'vis-err-billing':  { ja: '高品質版（Nano Banana Pro）はお使いの API キーで利用できません。Google AI Studio でお支払い情報を登録するか、標準版に切り替えてください。', en: 'The Pro model (Nano Banana Pro) is not available for your API key. Enable billing in Google AI Studio, or switch to the standard model.', zh: '您的 API 密钥无法使用高品质版（Nano Banana Pro）。请在 Google AI Studio 中启用结算，或切换为标准版。' },
   'vis-err-model':    { ja: 'このモデル（{model}）はお使いの API キーでは利用できませんでした。標準版に切り替えてお試しください。', en: 'This model ({model}) is not available for your API key. Try the standard model instead.', zh: '您的 API 密钥无法使用该模型（{model}）。请改用标准版。' },
 };

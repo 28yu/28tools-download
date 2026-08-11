@@ -465,7 +465,7 @@ export async function generateVisualImage(opts, onLog = () => {}) {
   };
 
   onLog(t('vis-log-sending', { model: modelId }));
-  let json = await requestImage(apiKey, modelId, { contents: [{ role: 'user', parts }], generationConfig }, tier);
+  let json = await requestImage(apiKey, modelId, { contents: [{ role: 'user', parts }], generationConfig }, tier, onLog);
 
   const cand = json?.candidates?.[0];
   const img = (cand?.content?.parts || []).find(p => p.inlineData?.data);
@@ -476,8 +476,43 @@ export async function generateVisualImage(opts, onLog = () => {}) {
   return { mimeType: img.inlineData.mimeType || 'image/png', base64: img.inlineData.data };
 }
 
+/**
+ * 429 レスポンスから「どの枠に当たったのか」を読み取る。
+ * Google は error.details に QuotaFailure(violations[].quotaId/quotaValue) と
+ * RetryInfo(retryDelay) を入れてくる。ここが分からないと
+ * 「使い切った」のか「そもそも無料枠が 0 のモデル」なのか切り分けられない。
+ */
+function parseQuotaError(err) {
+  const details = Array.isArray(err?.details) ? err.details : [];
+  const quota = details.find(d => /QuotaFailure/i.test(d['@type'] || ''));
+  const retry = details.find(d => /RetryInfo/i.test(d['@type'] || ''));
+  const v = quota?.violations?.[0] || {};
+  const sec = parseInt(String(retry?.retryDelay || '').replace(/[^\d]/g, ''), 10);
+  return {
+    quotaId: v.quotaId || v.quota_id || '',
+    // 無料枠が 0 のモデル (課金必須) は quotaValue が "0" で返る
+    quotaValue: String(v.quotaValue ?? v.quota_value ?? ''),
+    retrySec: Number.isFinite(sec) ? sec : null,
+  };
+}
+
+// 429 を、原因が分かる日本語メッセージに変換する。
+function rateLimitMessage(errObj, tier, detail) {
+  const q = parseQuotaError(errObj);
+  if (q.quotaValue === '0') {
+    // 無料枠 0 = このキー/プロジェクトではそのモデルを無料で使えない
+    return t('vis-err-quota-zero') + (q.quotaId ? t('vis-err-quota-id', { id: q.quotaId }) : '');
+  }
+  if (tier === 'pro') return t('vis-err-billing');
+  let msg = t('vis-err-rate');
+  if (q.retrySec) msg += t('vis-err-retry-in', { sec: q.retrySec });
+  if (q.quotaId) msg += t('vis-err-quota-id', { id: q.quotaId });
+  if (!q.quotaId && detail) msg += t('vis-err-detail', { detail: detail.slice(0, 160) });
+  return msg;
+}
+
 // 画像生成用の POST。503/500 はリトライ、imageConfig 非対応の 400 は設定を外して再試行。
-async function requestImage(apiKey, modelId, reqBody, tier) {
+async function requestImage(apiKey, modelId, reqBody, tier, onLog = () => {}) {
   let body = reqBody;
   let triedWithoutConfig = false;
 
@@ -496,12 +531,21 @@ async function requestImage(apiKey, modelId, reqBody, tier) {
     if (resp && resp.ok) return resp.json();
 
     let detail = '';
-    if (resp) { try { const j = await resp.json(); detail = j?.error?.message || ''; } catch (_) {} }
+    let errObj = null;
+    if (resp) {
+      try { const j = await resp.json(); errObj = j?.error || null; detail = errObj?.message || ''; } catch (_) {}
+      // 原因調査できるよう、API が返した内容をそのままログに残す
+      onLog(`[image API] HTTP ${resp.status} ${detail || resp.statusText}`);
+      if (errObj?.details) {
+        try { onLog('[image API] details: ' + JSON.stringify(errObj.details)); } catch (_) {}
+      }
+    }
 
     // imageConfig / responseModalities をモデルが受け付けない場合は外して 1 回だけ再試行
-    if (resp && resp.status === 400 && !triedWithoutConfig && /imageConfig|aspectRatio|imageSize|image_config/i.test(detail)) {
+    if (resp && resp.status === 400 && !triedWithoutConfig && /imageConfig|aspectRatio|imageSize|image_config|responseModalities/i.test(detail)) {
       triedWithoutConfig = true;
       body = { ...body, generationConfig: { responseModalities: ['TEXT', 'IMAGE'] } };
+      onLog(t('vis-log-retry-simple'));
       continue;
     }
 
@@ -513,7 +557,7 @@ async function requestImage(apiKey, modelId, reqBody, tier) {
 
     if (!resp) throw new Error(t('g-err-network'));
     if (resp.status === 400 && /API key/i.test(detail)) throw new Error(t('g-err-invalid-key'));
-    if (resp.status === 429) throw new Error(tier === 'pro' ? t('vis-err-billing') : t('vis-err-rate'));
+    if (resp.status === 429) throw new Error(rateLimitMessage(errObj, tier, detail));
     if (resp.status === 403 || /billing|billed users|not available|permission|not supported for this model/i.test(detail)) {
       throw new Error(tier === 'pro' ? t('vis-err-billing') : t('g-err-api', { status: resp.status, detail }));
     }

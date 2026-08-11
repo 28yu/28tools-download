@@ -683,6 +683,7 @@ function setupVisual() {
       console.error(err);
       log('Error: ' + err.message);
       $('visual-status').textContent = '❌ ' + err.message;
+      statusEl.classList.add('show'); // API が返した詳細をログで追えるようにする
     } finally {
       runBtn.disabled = false;
       runBtn.textContent = t('vis-btn-run');
