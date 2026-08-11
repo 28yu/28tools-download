@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-10T03:12:31.872443",
+  "lastUpdated": "2026-08-11T03:05:14.393357",
   "articles": [
     {
       "title": "3 Google updates from Galaxy Unpacked 2026",
@@ -32,28 +32,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/thinkingmachines-inkling/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Introducing Real World VoiceEQ: Measuring the human quality of voice AI",
-      "titleJa": "Real World VoiceEQ の紹介: 音声 AI の人間性の測定",
-      "link": "https://huggingface.co/blog/real-world-voiceeq",
-      "description": "...",
-      "publishedDate": "Wed, 15 Jul 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/real-world-voiceeq/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Native-speed vLLM transformers modeling backend",
-      "titleJa": "ネイティブ速度の vLLM トランスフォーマー モデリング バックエンド",
-      "link": "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
-      "description": "...",
-      "publishedDate": "Wed, 08 Jul 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/native-speed-vllm-transformers-backend/thumbnail.png",
       "language": "en"
     },
     {
@@ -99,17 +77,6 @@
       "category": "research",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/KSC-20260626-PH-SER01_0007orig.jpg?resize=1200,600",
       "language": "en"
-    },
-    {
-      "title": "Claude CodeのTeamプランとは？料金・個人プランとの違い・導入手順を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code-team/",
-      "description": "Claude Codeを個人で使い始めたあと、次に出てくるのが「チーム全体でどう導入するか」という課題です。 Anthropicが提供する「Claude Code Teamプラン」は、Claude Codeを含むClau [...]...",
-      "publishedDate": "Wed, 05 Aug 2026 04:22:07 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-Team_2608-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "The latest AI news we announced in June 2026",
@@ -200,6 +167,17 @@
       "language": "en"
     },
     {
+      "title": "【Qwen-MM-Plugins】AIエージェントにマルチモーダル能力を追加！仕組み・使い方・活用シーンを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/qwen-mm-plugins/",
+      "description": "2026年8月10日、Alibaba CloudのQwenチームは、AIエージェントにマルチモーダル機能をプラグインとして追加するためのオープンソース拡張ライブラリ「Qwen-MM-Plugins」を公開しました！ Cl [...]...",
+      "publishedDate": "Tue, 11 Aug 2026 02:42:52 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen-MM-Plugins-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more",
       "titleJa": "Gemini API の管理対象エージェントの拡張: バックグラウンド タスク、リモート MCP など",
       "link": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
@@ -244,41 +222,8 @@
       "language": "en"
     },
     {
-      "title": "The Download: US robot restrictions and ICE’s DNA grab",
-      "titleJa": "ダウンロード: 米国のロボット規制とICEのDNA奪取",
-      "link": "https://www.technologyreview.com/2026/08/04/1141098/the-download-robot-restrictions-ice-dna/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Trump’s AI protectionism has come for robotics —Ja...",
-      "publishedDate": "Tue, 04 Aug 2026 12:14:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f491.png",
-      "language": "en"
-    },
-    {
-      "title": "【Qwen3.8-Max】2.4兆パラメータでフロンティア級の性能を実現したAlibabaの最新AIモデルを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwen3-8-max/",
-      "description": "2026年8月3日、AlibabaはQwenファミリーの最新フラッグシップモデル「Qwen3.8-Max」を正式リリースしました。 総パラメータ数はなんと2.4兆（2.4T）で、アクティブパラメータは950億（95B）。 [...]...",
-      "publishedDate": "Tue, 04 Aug 2026 11:38:39 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.8-Max-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【DeepSeek-V4-Flash】上位モデルを超える再学習の衝撃！エージェント性能・料金・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/deepseek-v4-flash/",
-      "description": "2026年7月31日、中国のAIスタートアップDeepSeekは、大規模言語モデル「DeepSeek-V4-Flash」を公開しました！ アーキテクチャを一切変更せず、ポストトレーニングだけで上位モデルのV4-Proを超 [...]...",
-      "publishedDate": "Tue, 04 Aug 2026 05:34:27 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_DeepSeek-V4-Flash-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "New ways to learn and teach with ChatGPT Work and Codex",
-      "titleJa": "ChatGPT Work と Codex を使って学び、教えるための新しい方法",
+      "titleJa": "ChatGPT Work と Codex を使用した新しい学習方法と教える方法",
       "link": "https://openai.com/index/learn-teach-chatgpt-work-codex",
       "description": "Explore new education plugins for ChatGPT Work and Codex that help K–12 teachers, college educators, and students learn, teach, research, and build....",
       "publishedDate": "Tue, 04 Aug 2026 00:00:00 GMT",
@@ -296,17 +241,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/69d815b52c6db28cfdfdd422/Ih3Nn6Wc1U_w_QpvEMXRY.png",
-      "language": "en"
-    },
-    {
-      "title": "Our latest Google Finance upgrades, including a new app",
-      "titleJa": "新しいアプリを含む最新の Google Finance アップグレード",
-      "link": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/",
-      "description": "The Google Finance logo, surrounded by elements of the user interface...",
-      "publishedDate": "Thu, 25 Jun 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Finance_blog_image_June_.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -333,7 +267,7 @@
     },
     {
       "title": "Create, edit and star in videos with two Google Vids updates",
-      "titleJa": "2 つの Google Vids アップデートにより、動画を作成、編集、スターを付けることができます",
+      "titleJa": "2 つの Google Vids アップデートにより、動画の作成、編集、主演を行うことができます",
       "link": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
       "description": "Text \"Gemini Omni and Personal Avatars in Google Vids\" surrounded by various images...",
       "publishedDate": "Thu, 16 Jul 2026 16:00:00 +0000",
@@ -398,6 +332,17 @@
       "language": "ja"
     },
     {
+      "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
+      "titleJa": "ChatGPT の GPT-5.6 Sol を改善し、無料ユーザー向けに GPT-5.6 Luna へのアクセスを拡大",
+      "link": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "description": "ChatGPT introduces improved GPT-5.6 Sol with better accuracy and consistency, plus expanded access for free users and unlimited everyday chats with GPT-5.6 Luna....",
+      "publishedDate": "Thu, 06 Aug 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "ロボトラック、シリーズAラウンド ファーストクローズでエクイティ52億円を調達。完全自動運転トラックの社会実装に向けた開発・実証を推進",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/robotruck-funding-physical-ai/",
@@ -431,6 +376,17 @@
       "language": "ja"
     },
     {
+      "title": "Working with the American Psychological Association on youth mental health and AI",
+      "titleJa": "青少年のメンタルヘルスと AI に関して米国心理学会と協力",
+      "link": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
+      "description": "OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental health....",
+      "publishedDate": "Thu, 06 Aug 2026 06:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "Perplexity APIとは？APIキー取得方法から実装、他APIとの違いまで詳しく解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/perplexity-api/",
@@ -439,6 +395,50 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Perplexity-API_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "From asking to doing: How the world is putting ChatGPT to work",
+      "titleJa": "依頼から実行へ: 世界は ChatGPT をどのように活用しているか",
+      "link": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work",
+      "description": "New OpenAI Signals data shows how people use ChatGPT worldwide, with country-level insights on adoption, usage trends, and evolving behavior....",
+      "publishedDate": "Thu, 06 Aug 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Baseten on Hugging Face Inference Providers 🔥",
+      "titleJa": "ハグ顔推論プロバイダーのベーステン 🔥",
+      "link": "https://huggingface.co/blog/baseten",
+      "description": "...",
+      "publishedDate": "Thu, 06 Aug 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/inference-providers/welcome-baseten.png",
+      "language": "en"
+    },
+    {
+      "title": "Claude Codeのクロスセッションメッセージングとは？セッション同士がAIだけで会話！使い方・仕組み・活用シーンを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-code-cross-session-messaging/",
+      "description": "2026年8月8日、AnthropicがClaude Codeの新機能「クロスセッションメッセージング（cross-session messaging）」を公開しました！ これまでClaude Codeで複数のセッション [...]...",
+      "publishedDate": "Mon, 10 Aug 2026 11:38:54 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-code-cross-session-messaging_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ハーネスエンジニアリングとは？Claude Codeでも重要なAIエージェント運用設計を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/harness-engineering/",
+      "description": "Claude Codeなどの活用が広がる一方、CLAUDE.mdにルールを書くだけでは、長いタスクやチーム運用を安定させにくい場面もあります。そこで注目されているのが、AIを動かす環境全体を設計するハーネスエンジニアリン [...]...",
+      "publishedDate": "Mon, 10 Aug 2026 11:27:31 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Harness-Engineering_2608-1024x576.webp",
       "language": "ja"
     },
     {
