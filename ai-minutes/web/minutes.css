@@ -528,11 +528,15 @@
 }
 .menu-pop button:hover { background: #f4f7f9; }
 
+/* 出力パネル = 1 枚のカード。ツールバーはその中の帯で、
+   議事録本体は入れ子のカードにしない（旧レイアウトの名残でカードが二重になっていた）。 */
 .output-panel { padding: 0; }
 .minutes-output.hidden { display: none; }
 .output-toolbar {
   display: flex; justify-content: space-between; align-items: center;
-  flex-wrap: wrap; gap: 12px; margin-bottom: 16px;
+  flex-wrap: wrap; gap: 12px;
+  padding: 16px 24px; margin: 0;
+  border-bottom: 1px solid var(--light-concrete);
 }
 .output-title { font-size: 1.2rem; font-weight: 700; color: var(--concrete-gray); }
 .output-actions { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -545,10 +549,7 @@
    番号・色アクセント・余白で構成し、A4 印刷でバランスよく収まる設計。
    ============================================================ */
 .minutes-output {
-  background: var(--glass-white);
-  border-radius: 14px;
-  box-shadow: var(--shadow-medium);
-  padding: 40px 46px;
+  padding: 34px 38px 38px;
   color: var(--concrete-gray);
   font-size: 15px;
   line-height: 1.5;
@@ -734,7 +735,7 @@
    ビジュアル資料 (Gemini 画像モデル)
    ============================================================ */
 /* ビジュアル資料ペイン（出力タブの一つ・議事録本体と入れ替わる） */
-.visual-pane { padding: 26px 32px 30px; }
+.visual-pane { padding: 30px 38px 34px; }
 .visual-pane.hidden { display: none; }
 .visual-lead {
   margin: 0 0 14px;
@@ -786,13 +787,17 @@
 @media (max-width: 768px) {
   .panel { padding: 20px; }
   .input-grid, .mode-cards { grid-template-columns: 1fr; }
-  .minutes-output { padding: 26px 22px; }
+  .minutes-output { padding: 26px 20px 30px; }
   .mn-title { font-size: 1.4rem; }
-  .output-toolbar { flex-direction: column; align-items: flex-start; }
+  .output-toolbar { flex-direction: column; align-items: flex-start; padding: 14px 18px; }
   .hero { padding: 10px 18px 26px; }
   .file-pane { padding: 14px 18px 26px; }
   .row-head, .row-inner { padding-left: 18px; padding-right: 18px; }
-  .seg { max-width: 100%; overflow-x: auto; }
+  /* 4 つのタブは横スクロールにすると気づかれないので折り返す */
+  .seg { max-width: 100%; flex-wrap: wrap; justify-content: center; }
+  .seg-btn { padding: 7px 12px; }
+  .seg .seg-ai { margin-left: 0; padding-left: 12px; }
+  .seg .seg-ai::before { display: none; }
   .menu-pop { right: auto; left: 0; }
   .mn-tl-conclusion { grid-template-columns: 1fr; }
   .mn-mx-grid { grid-template-columns: 1fr; }
