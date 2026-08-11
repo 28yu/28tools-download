@@ -72,37 +72,94 @@ async function populateMics() {
     sel.appendChild(o);
   });
   if (prev && [...sel.options].some(o => o.value === prev)) sel.value = prev;
+  updateMicValue();
 }
 
-/* ---------- マイクテスト (レベルメーター) ---------- */
+// 選択中のマイク名を、設定行の現在値と状態チップに反映する。
+function updateMicValue() {
+  const sel = $('mic-select');
+  if (!sel) return;
+  const label = (sel.selectedOptions[0] && sel.selectedOptions[0].textContent) || t('mic-default');
+  setText('v-mic', label);
+  setText('chip-mic-val', label);
+}
+
+/* ---------- レベルメーター (マイクテスト / 録音中で共用) ---------- */
 const MIC_METER_SEGMENTS = 24;
 
 // セグメント（LED 風の目盛り）を一度だけ生成する。
-function buildMicMeter() {
-  const scale = $('mic-meter-scale');
-  if (!scale || scale._built) return;
+function buildMeter(el) {
+  if (!el || el._built) return;
   for (let i = 0; i < MIC_METER_SEGMENTS; i++) {
     const seg = document.createElement('span');
     seg.className = 'mic-seg';
-    scale.appendChild(seg);
+    el.appendChild(seg);
   }
-  scale._built = true;
+  el._built = true;
 }
 
 // 入力レベル(0..1)に応じてセグメントを点灯。
-function setMicMeterLevel(level) {
-  const scale = $('mic-meter-scale');
-  if (!scale || !scale._built) return;
-  const segs = scale.children;
+function setMeter(el, level) {
+  if (!el || !el._built) return;
+  const segs = el.children;
   const on = Math.round(Math.max(0, Math.min(1, level)) * segs.length);
   for (let i = 0; i < segs.length; i++) {
     segs[i].classList.toggle('on', i < on);
   }
 }
 
+const buildMicMeter = () => buildMeter($('mic-meter-scale'));
+const setMicMeterLevel = (level) => setMeter($('mic-meter-scale'), level);
+
+/* ---------- 録音中の入力レベル ----------
+   録音そのものは MediaRecorder が行う。ここでは同じ MediaStream に
+   AnalyserNode をぶら下げて「今マイクが拾えているか」だけを表示する。
+   取得できない環境ではメーター無しで録音を続ける（失敗させない）。 */
+let recMeter = null;
+function startRecLevel(stream) {
+  stopRecLevel();
+  const el = $('rec-level');
+  if (!el || !stream) return;
+  try {
+    const Ctx = window.AudioContext || window.webkitAudioContext;
+    const ctx = new Ctx();
+    const analyser = ctx.createAnalyser();
+    analyser.fftSize = 512;
+    ctx.createMediaStreamSource(stream).connect(analyser);
+    const data = new Uint8Array(analyser.fftSize);
+    buildMeter(el);
+    el.hidden = false;
+    let raf = 0;
+    const loop = () => {
+      analyser.getByteTimeDomainData(data);
+      let peak = 0;
+      for (let i = 0; i < data.length; i++) {
+        const v = Math.abs(data[i] - 128) / 128;
+        if (v > peak) peak = v;
+      }
+      setMeter(el, Math.min(1, peak * 2.2));
+      raf = requestAnimationFrame(loop);
+    };
+    loop();
+    recMeter = { stop() { cancelAnimationFrame(raf); ctx.close().catch(() => {}); } };
+  } catch (e) {
+    el.hidden = true; // メーターは諦めて録音は続行
+  }
+}
+function stopRecLevel() {
+  if (recMeter) { recMeter.stop(); recMeter = null; }
+  const el = $('rec-level');
+  if (el) { el.hidden = true; setMeter(el, 0); }
+}
+
 function setupMicTest() {
   const btn = $('mic-test-btn');
   buildMicMeter();
+  const sel = $('mic-select');
+  if (sel) sel.addEventListener('change', () => {
+    updateMicValue();
+    if (tester.isActive) stopMicTest(); // 別のマイクに切り替えたらテストは仕切り直す
+  });
   btn.addEventListener('click', async () => {
     if (tester.isActive) { stopMicTest(); return; }
     try {
@@ -203,19 +260,27 @@ function setupRecord() {
   });
 }
 
-// 録音ボタンの見た目（アイコン＋ラベル＋赤色）を切替。
-// 待機時は録音マーク（赤丸）、録音中は停止マーク（■）。
+// 録音ボタンの見た目を切替。待機時は丸（録音）、録音中は四角（停止）。
+// 形は CSS 側 (.rec-btn.recording) が担当し、ここでは状態とラベルだけ扱う。
 function setRecBtn(recording) {
-  const ico = $('rec-hero-ico'), label = $('rec-hero-label'), btn = $('record-btn');
-  if (recording) {
-    if (ico) ico.textContent = '⏹';
-    if (label) label.textContent = t('rec-hero-stop');
-    if (btn) btn.classList.add('recording');
-  } else {
-    if (ico) ico.textContent = '🔴';
-    if (label) label.textContent = t('rec-hero-start');
-    if (btn) btn.classList.remove('recording');
+  const btn = $('record-btn'), cap = $('rec-caption'), timer = $('rec-timer');
+  if (btn) {
+    btn.classList.toggle('recording', recording);
+    btn.setAttribute('aria-label', recording ? t('rec-hero-stop') : t('rec-hero-start'));
   }
+  if (cap) cap.textContent = recording ? t('rec-hero-stop-hint') : t('rec-hero-hint');
+  if (timer) {
+    timer.classList.toggle('on', recording);
+    if (!recording) timer.textContent = formatDuration(0);
+  }
+  if (!recording) stopRecLevel();
+  updateSetupStrip();
+}
+
+// 録音経過時間（大きく表示する方）。
+function setRecTime(sec) {
+  const timer = $('rec-timer');
+  if (timer) timer.textContent = formatDuration(sec);
 }
 
 /* ---------- 簡易版（ブラウザ完結）: 通常録音 → 停止で自動作成 ---------- */
@@ -224,9 +289,11 @@ async function startSimpleRec(btn, status) {
   try {
     await recorder.start((sec) => {
       lastTickSec = sec;
-      status.textContent = t('rec-recording', { time: formatDuration(sec) });
+      setRecTime(sec);
+      status.textContent = t('rec-recording-plain');
     }, getSelectedDeviceId());
     setRecBtn(true);
+    startRecLevel(recorder.stream);
     populateMics(); // 許可後にラベルが取れる
   } catch (err) {
     console.error(err);
@@ -265,37 +332,165 @@ function setupLongRec() {
     updateFolderStatus();
   });
 
-  // 「キーを入力」→ 詳細パネルを開いてキー欄にフォーカス
+  // 「キーを設定する →」→ キーの行を開いて入力欄にフォーカス
   const sk = $('setup-open-key');
-  if (sk) sk.addEventListener('click', () => {
-    const adv = $('advanced-panel');
-    if (adv) adv.open = true;
-    const key = $('apikey-input');
-    if (key) { key.focus(); key.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
-  });
+  if (sk) sk.addEventListener('click', () => openRow('key', true));
 
-  // 処理方法の変更でセットアップ帯を出し分け
+  // 分割間隔の変更を行の現在値に反映
+  const iv = $('longrec-interval');
+  if (iv) iv.addEventListener('change', updateIntervalValue);
+  updateIntervalValue();
+
+  // 処理方法の変更でセットアップ帯・チップを出し分け
   document.querySelectorAll('input[name="mode"]').forEach(r =>
     r.addEventListener('change', updateSetupStrip));
 
   updateSetupStrip();
 }
 
-// 高精度版かつ API キー未保存のときだけ、録音ボタン下にセットアップ帯を表示。
+// 高精度版かつ API キー未入力のときは、実行ボタンを無効にして
+// 「次に何をすればいいか」だけを 1 行で示す（押せるものは必ず動く状態にする）。
 function updateSetupStrip() {
+  const input = $('apikey-input');
+  if (!input) return;
+  const gemini = getMode() === 'gemini';
+  const needKey = gemini && !input.value.trim();
+
   const strip = $('setup-strip');
-  if (!strip) return;
-  const needKey = getMode() === 'gemini' && !$('apikey-input').value.trim();
-  strip.classList.toggle('hidden', !needKey);
+  if (strip) strip.classList.toggle('hidden', !needKey || recorder.isRecording || segRecorder.isRecording);
+
+  const rec = $('record-btn');
+  if (rec) rec.disabled = needKey && !recorder.isRecording && !segRecorder.isRecording;
+  const gen = $('generate-btn');
+  if (gen) gen.disabled = needKey;
+
+  // 状態チップ
+  setText('chip-mode-val', gemini ? t('mode-gemini') : t('mode-simple'));
+  setText('v-mode', gemini ? t('mode-gemini-full') : t('mode-simple-full'));
+  const keyChip = $('chip-key');
+  if (keyChip) {
+    keyChip.classList.toggle('warn', needKey);
+    keyChip.hidden = !gemini;
+  }
+  setText('chip-key-val', input.value.trim() ? t('key-set') : t('key-unset'));
+
+  // 設定行の現在値
+  const keyVal = $('v-key');
+  if (keyVal) {
+    keyVal.textContent = input.value.trim() ? t('key-set') : t('key-unset');
+    const wrap = keyVal.parentElement;
+    if (wrap) {
+      wrap.classList.toggle('need', needKey);
+      wrap.classList.toggle('ok', !!input.value.trim());
+    }
+  }
+}
+
+const setText = (id, text) => { const el = $(id); if (el) el.textContent = text; };
+
+// 分割間隔（長時間モード）の現在値表示。
+function updateIntervalValue() {
+  const sel = $('longrec-interval');
+  if (!sel) return;
+  setText('v-long', t('lr-interval-value', { min: sel.value }));
 }
 
 // 保存先フォルダの表示を更新。
 function updateFolderStatus() {
   const el = $('folder-status');
-  if (!el) return;
-  if (!longrec.saver.supported) { el.textContent = t('lr-folder-unsupported'); return; }
   const name = longrec.saver.folderName || longrec.saver.rememberedName;
-  el.textContent = name ? t('lr-folder-current', { name }) : t('lr-folder-none');
+  const unsupported = !longrec.saver.supported;
+  if (el) {
+    el.textContent = unsupported ? t('lr-folder-unsupported')
+      : (name ? t('lr-folder-current', { name }) : t('lr-folder-none'));
+  }
+  setText('v-folder', unsupported ? t('lr-folder-download') : (name || t('lr-folder-none')));
+}
+
+/* ---------- 注意書き（普段は1行・初回だけ自動で開く） ---------- */
+const NOTICE_SEEN = 'ai-minutes-notice-seen';
+function setupNotice() {
+  const btn = $('notice-toggle'), body = $('notice-body');
+  if (!btn || !body) return;
+
+  const apply = (open) => {
+    body.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', String(open));
+    btn.textContent = open ? t('notice-close') : t('notice-more');
+  };
+  btn.addEventListener('click', () => apply(!body.classList.contains('open')));
+
+  let seen = false;
+  try { seen = localStorage.getItem(NOTICE_SEEN) === '1'; } catch (e) { seen = false; }
+  apply(!seen); // 初回訪問時だけ開いた状態で見せる
+  try { localStorage.setItem(NOTICE_SEEN, '1'); } catch (e) { /* noop */ }
+}
+
+/* ---------- 入力タブ（録音する / ファイルから作る） ---------- */
+function setupInputTabs() {
+  const tabs = $('input-tabs');
+  if (!tabs) return;
+  tabs.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-tab]');
+    if (!btn) return;
+    tabs.querySelectorAll('[data-tab]').forEach(b =>
+      b.setAttribute('aria-selected', String(b === btn)));
+    $('pane-rec').classList.toggle('active', btn.dataset.tab === 'rec');
+    $('pane-file').classList.toggle('active', btn.dataset.tab === 'file');
+  });
+}
+
+/* ---------- 設定リスト（1行ずつ開く・現在値は常に見える） ---------- */
+function setupRows() {
+  document.querySelectorAll('.row-head').forEach(head => {
+    head.addEventListener('click', () => {
+      const row = head.closest('.row');
+      const willOpen = !row.classList.contains('open');
+      closeAllRows();
+      if (willOpen) {
+        row.classList.add('open');
+        head.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // 状態チップ → 対応する設定行へ（表示がそのまま近道になる）
+  document.querySelectorAll('.chip[data-open]').forEach(chip => {
+    chip.addEventListener('click', () => openRow(chip.dataset.open));
+  });
+}
+
+function closeAllRows() {
+  document.querySelectorAll('.row').forEach(r => {
+    r.classList.remove('open');
+    const h = r.querySelector('.row-head');
+    if (h) h.setAttribute('aria-expanded', 'false');
+  });
+}
+
+// 指定の設定行を開いてスクロールする。focusInput=true ならキー入力欄にフォーカス。
+function openRow(name, focusInput) {
+  const row = document.querySelector('.row[data-row="' + name + '"]');
+  if (!row) return;
+  closeAllRows();
+  row.classList.add('open');
+  const head = row.querySelector('.row-head');
+  if (head) head.setAttribute('aria-expanded', 'true');
+  row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  if (focusInput && name === 'key') {
+    const key = $('apikey-input');
+    if (key) setTimeout(() => key.focus(), 260);
+  }
+}
+
+/* ---------- 進捗ログの開閉 ---------- */
+function setupLogToggle() {
+  const btn = $('log-toggle');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    const on = $('log').classList.toggle('open');
+    btn.textContent = on ? t('log-hide') : t('log-show');
+  });
 }
 
 // 「デスクトップ_議事録_20260727-1530」のようなセッション接頭辞。
@@ -329,8 +524,7 @@ async function startGeminiLongRec(btn, status) {
   const apiKey = $('apikey-input').value.trim();
   if (!apiKey) {
     updateSetupStrip();
-    const adv = $('advanced-panel'); if (adv) adv.open = true;
-    const key = $('apikey-input'); if (key) { key.focus(); key.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    openRow('key', true);
     status.textContent = t('lr-need-key-inline');
     return;
   }
@@ -376,16 +570,15 @@ async function startGeminiLongRec(btn, status) {
   try {
     await segRecorder.start({
       onTick: (sec) => {
-        status.textContent = t('lr-recording', {
-          time: formatDuration(sec),
-          part: longrec.segments.length + 1,
-        });
+        setRecTime(sec);
+        status.textContent = t('lr-recording-part', { part: longrec.segments.length + 1 });
       },
       onSegment: (seg) => onSegmentReady(seg, apiKey),
       deviceId: getSelectedDeviceId(),
       segmentMs: longrec.intervalMin * 60 * 1000,
     });
     setRecBtn(true);
+    startRecLevel(segRecorder.stream);
     populateMics();
   } catch (err) {
     console.error(err);
@@ -620,41 +813,55 @@ function currentData() {
   return state.translatedByLang[getLang()] || state.lastData;
 }
 
-/* ---------- スタイル切替 ---------- */
+/* ---------- 表示スタイル切替 ----------
+   figure / timeline / matrix は同じ議事録の見せ方を変えるだけ。
+   visual だけは AI 画像生成を伴うので、切り替えても生成はせず
+   （課金・待ち時間が発生するため）操作パネルを出すだけにする。 */
 function setupStyleToggle() {
   $('style-toggle').addEventListener('click', (e) => {
     const btn = e.target.closest('.style-btn');
     if (!btn) return;
-    document.querySelectorAll('.style-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    state.style = btn.dataset.style;
-    if (state.lastData) {
-      mountMinutes($('minutes-output'), currentData(), state.style);
-    }
+    document.querySelectorAll('.style-btn').forEach(b => {
+      b.classList.toggle('active', b === btn);
+      b.setAttribute('aria-selected', String(b === btn));
+    });
+    applyStyle(btn.dataset.style);
   });
+}
+
+function applyStyle(style) {
+  const visual = style === 'visual';
+  $('visual-panel').classList.toggle('hidden', !visual);
+  $('minutes-output').classList.toggle('hidden', visual);
+  if (visual) return;         // 議事録の描画スタイルは変えない
+  state.style = style;
+  if (state.lastData) mountMinutes($('minutes-output'), currentData(), state.style);
+}
+
+/* ---------- 共有・保存メニュー ---------- */
+function setupShareMenu() {
+  const btn = $('share-btn'), pop = $('share-pop');
+  if (!btn || !pop) return;
+  const close = () => { pop.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); };
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const on = pop.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(on));
+  });
+  pop.addEventListener('click', () => close());  // 項目を選んだら閉じる
+  document.addEventListener('click', close);
 }
 
 /* ---------- ビジュアル資料 (Gemini 画像モデル = 通称ナノバナナ) ---------- */
 // 議事録の要点から 1 枚絵を作る。あくまで共有・表紙用の補助資料で、
 // 正式な記録は議事録本体 (テキスト) 側という位置づけ。
 function setupVisual() {
-  const panel = $('visual-panel');
-
-  $('visual-btn').addEventListener('click', () => {
-    panel.classList.toggle('hidden');
-    if (!panel.classList.contains('hidden')) {
-      panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
-  });
-  $('visual-close').addEventListener('click', () => panel.classList.add('hidden'));
-
   $('visual-run').addEventListener('click', async () => {
     if (!state.lastData) return;
     const apiKey = $('apikey-input').value.trim();
     if (!apiKey) {
       $('visual-status').textContent = '❌ ' + t('al-need-key');
-      const key = $('apikey-input');
-      if (key) { key.focus(); key.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+      openRow('key', true);
       return;
     }
 
@@ -717,8 +924,13 @@ function showVisual() {
 function resetVisual() {
   state.visual = null;
   $('visual-status').textContent = '';
-  $('visual-panel').classList.add('hidden');
   showVisual();
+  // ビジュアル資料タブを開いたまま新しい議事録ができたら、議事録の表示に戻す
+  const visBtn = document.querySelector('.style-btn[data-style="visual"]');
+  if (visBtn && visBtn.classList.contains('active')) {
+    const target = document.querySelector('.style-btn[data-style="' + state.style + '"]');
+    if (target) target.click();
+  }
 }
 
 /* ---------- 入力サマリ ---------- */
@@ -962,8 +1174,6 @@ body{font-family:'Noto Sans JP','Yu Gothic',sans-serif;background:#f4f6f8;margin
 .mn-topic-speaker{font-size:.78rem;font-weight:500;color:var(--d);margin-left:8px}
 .mn-topic ul{margin:0;padding-left:1.4em;color:var(--s);line-height:1.5}.mn-topic li{margin-bottom:1px}
 .mn-empty{color:var(--d);font-size:.9rem;margin:0}
-.mn-mm-meta{text-align:center;color:var(--s);font-size:.9rem;margin-bottom:12px}
-.mn-mindmap-wrap{overflow-x:auto;text-align:center}.mn-mindmap-wrap svg{max-width:100%;height:auto}
 .mn-footnote{margin-top:18px;padding-top:12px;border-top:1px solid var(--l);font-size:.78rem;color:var(--d);text-align:center}
 .mn-tl{list-style:none;margin:0 0 22px;padding:0 0 0 8px}
 .mn-tl-step{position:relative;display:flex;gap:14px;padding:0 0 16px}
@@ -1018,12 +1228,19 @@ function applyDynamicLang() {
   applyAudioTitle();
   applyMaterialTitle();
   $('copy-btn').textContent = t('btn-copy');
-  // 録音ボタンのラベル（アイコン＋テキスト構造なので setRecBtn で更新）
+  // 録音ボタンのラベル・キャプションは setRecBtn で更新
   setRecBtn(recorder.isRecording || segRecorder.isRecording);
   if (!tester.isActive) $('mic-test-btn').textContent = t('mic-test');
+  const logBtn = $('log-toggle');
+  if (logBtn) logBtn.textContent = $('log').classList.contains('open') ? t('log-hide') : t('log-show');
+  const noticeBtn = $('notice-toggle');
+  if (noticeBtn) {
+    noticeBtn.textContent = $('notice-body').classList.contains('open') ? t('notice-close') : t('notice-more');
+  }
   populateMics();
   updateSummary();
   updateSetupStrip();
+  updateIntervalValue();
   updateFolderStatus();
   if (longrec.active || longrec.segments.length) renderSegmentList();
   showVisual(); // 画像のキャプション・保存ボタンのラベルを現在の言語に
@@ -1035,6 +1252,11 @@ function applyDynamicLang() {
 /* ---------- init ---------- */
 function init() {
   setLang(detectLang());
+  setupNotice();
+  setupInputTabs();
+  setupRows();
+  setupLogToggle();
+  setupShareMenu();
   setupAudioInput();
   setupTranscriptFile();
   setupRecord();
