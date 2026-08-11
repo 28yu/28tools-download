@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>AI議事録 UI 改善モックアップ — 28 Tools</title>
+<!-- 本番と同じ書体を使うため、サイトと同じ Google Fonts を読み込む -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<style>
+/* ============================================================
+   28 Tools — AI議事録ページ UI 改善モックアップ
+   配色・書体・線画アイコンは既存サイト (css/style.css) の
+   デザイントークンをそのまま使用。変更したのは
+   「余白・階層・順番」だけ、という提案を可視化するためのファイル。
+   本番サイトが light 固定のため、ここも意図的に light 単一テーマ。
+   ============================================================ */
+:root {
+  /* 既存サイトのトークン (css/style.css :root) */
+  --ink:    #2c3e50;   /* 見出し・本文 */
+  --steel:  #34495e;   /* 副次テキスト */
+  --line:   #ecf0f1;   /* 境界・区切り */
+  --mute:   #95a5a6;   /* 補助テキスト */
+  --blue:   #3498db;   /* 情報・選択 */
+  --green:  #27ae60;   /* 実行・成功 */
+  --orange: #e67e22;   /* 注意 */
+  --surface:#ffffff;
+  --ground: linear-gradient(135deg, #ecf0f1 0%, #f8f9fa 100%);
+
+  /* 提案分: 影を弱め、境界と余白で区切る */
+  --shadow-card: 0 1px 2px rgba(44,62,80,.05), 0 6px 20px rgba(44,62,80,.06);
+  --radius: 16px;
+  --radius-sm: 10px;
+
+  --fs-micro: .72rem;
+  --fs-cap:   .82rem;
+  --fs-body:  .95rem;
+  --fs-sec:   1.05rem;
+  --fs-page:  1.5rem;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont,
+               'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
+  background: var(--ground);
+  background-attachment: fixed;
+  color: var(--ink);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 6px; }
+
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 20px 64px; }
+
+/* ---------- モックアップ操作バー (本番には存在しない) ---------- */
+.mk-bar {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--ink); color: #fff;
+  padding: 10px 20px;
+}
+.mk-bar-inner {
+  max-width: 880px; margin: 0 auto;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px;
+}
+.mk-bar-label {
+  font-size: var(--fs-micro); letter-spacing: .1em; text-transform: uppercase;
+  font-weight: 700; opacity: .7;
+}
+.mk-bar p { font-size: var(--fs-cap); opacity: .85; margin-right: auto; }
+.mk-bar button {
+  font: inherit; font-size: var(--fs-cap);
+  background: rgba(255,255,255,.12); color: #fff;
+  border: 1px solid rgba(255,255,255,.22); border-radius: 999px;
+  padding: 4px 13px; cursor: pointer;
+}
+.mk-bar button:hover { background: rgba(255,255,255,.22); }
+
+/* ---------- サイト共通ヘッダー (既存のまま) ---------- */
+.site-head { text-align: center; padding: 34px 0 6px; }
+.site-title { font-size: 2.6rem; font-weight: 300; letter-spacing: .04em; }
+.site-rule {
+  width: 64px; height: 2px; margin: 10px auto 12px;
+  background: linear-gradient(90deg, var(--green), var(--blue));
+}
+.site-sub { font-size: 1.1rem; color: var(--steel); opacity: .8; }
+
+.nav-strip {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 6px;
+  padding: 20px 0 26px;
+}
+.nav-item {
+  display: flex; align-items: center; gap: 7px;
+  padding: 8px 13px; border-radius: 12px;
+  border: 1px solid transparent;
+  font-size: var(--fs-cap); color: var(--steel); text-decoration: none;
+}
+.nav-item:hover { background: rgba(255,255,255,.7); }
+.nav-item.current {
+  background: var(--surface); border-color: #cfe3f5; color: var(--blue); font-weight: 600;
+}
+.nav-item svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+.crumb { font-size: var(--fs-cap); color: var(--mute); margin-bottom: 14px; }
+.crumb a { color: var(--blue); text-decoration: none; }
+.crumb span { margin: 0 7px; }
+
+.page-title { font-size: var(--fs-page); font-weight: 700; text-wrap: balance; }
+.page-desc { color: var(--steel); font-size: var(--fs-body); margin-top: 4px; }
+
+/* ---------- 提案1: 注意書きは1行に畳む ---------- */
+.notice-line {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  margin: 16px 0 18px; padding: 9px 14px;
+  background: rgba(255,255,255,.6);
+  border: 1px solid var(--line); border-radius: 999px;
+  font-size: var(--fs-cap); color: var(--steel);
+}
+.notice-line .dot { color: var(--green); }
+.notice-toggle {
+  margin-left: auto; font: inherit; font-size: var(--fs-cap);
+  background: none; border: none; color: var(--blue); cursor: pointer; padding: 2px 4px;
+}
+.notice-body { display: none; margin: -8px 0 18px; }
+.notice-body.open { display: grid; gap: 10px; }
+.notice-card {
+  padding: 12px 16px; border-radius: var(--radius-sm);
+  font-size: var(--fs-cap); line-height: 1.75; color: var(--steel);
+  border-left: 3px solid var(--green); background: rgba(39,174,96,.06);
+}
+.notice-card.warn { border-left-color: var(--orange); background: rgba(230,126,34,.07); }
+.notice-card b { color: var(--ink); }
+
+/* ---------- カード共通 ---------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  margin-bottom: 18px;
+}
+.card-pad { padding: 26px 28px; }
+
+.sec-label {
+  font-size: var(--fs-micro); font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--mute);
+  padding: 0 4px 8px;
+}
+
+/* ---------- 提案2: 入口をセグメンテッドコントロールに ---------- */
+.seg {
+  display: inline-flex; padding: 3px; gap: 2px;
+  background: var(--line); border-radius: 12px;
+}
+.seg button {
+  font: inherit; font-size: var(--fs-cap); font-weight: 500;
+  border: none; background: none; color: var(--steel);
+  padding: 7px 16px; border-radius: 9px; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 6px;
+  transition: background .18s ease, color .18s ease;
+}
+.seg button[aria-selected="true"] {
+  background: var(--surface); color: var(--ink); font-weight: 600;
+  box-shadow: 0 1px 3px rgba(44,62,80,.12);
+}
+.hero-seg { display: flex; justify-content: center; padding: 22px 0 4px; }
+
+.pane { display: none; }
+.pane.active { display: block; }
+
+/* ---------- 提案3: 主役の録音ボタンを1画面目に ---------- */
+.hero { text-align: center; padding: 10px 28px 28px; }
+
+.rec-btn {
+  position: relative;
+  width: 116px; height: 116px; border-radius: 50%;
+  border: none; cursor: pointer;
+  background: linear-gradient(160deg, #2ecc71, var(--green));
+  box-shadow: 0 6px 18px rgba(39,174,96,.32);
+  display: inline-grid; place-items: center;
+  transition: transform .15s ease, box-shadow .2s ease;
+}
+.rec-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(39,174,96,.36); }
+.rec-btn:active:not(:disabled) { transform: translateY(0) scale(.98); }
+.rec-btn:disabled { cursor: not-allowed; background: #d7dee3; box-shadow: none; }
+.rec-glyph { width: 30px; height: 30px; border-radius: 50%; background: #fff; }
+.rec-btn.on { background: linear-gradient(160deg, #ef6b5e, #e74c3c); box-shadow: 0 6px 18px rgba(231,76,60,.32); }
+.rec-btn.on .rec-glyph { border-radius: 6px; width: 28px; height: 28px; }
+.rec-btn.on::after {
+  content: ''; position: absolute; inset: -10px;
+  border-radius: 50%; border: 2px solid rgba(231,76,60,.5);
+  animation: pulse 1.8s ease-out infinite;
+}
+@keyframes pulse { 0% { transform: scale(.96); opacity: .9 } 100% { transform: scale(1.14); opacity: 0 } }
+
+.rec-caption { margin-top: 16px; font-size: var(--fs-body); color: var(--steel); }
+.rec-timer {
+  margin-top: 6px; font-size: 1.6rem; font-weight: 600;
+  font-variant-numeric: tabular-nums; letter-spacing: .04em;
+  color: var(--ink); display: none;
+}
+.rec-timer.on { display: block; }
+
+/* 状態チップ: 「今どういう設定で録れるか」を隠さない */
+.chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 18px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 13px; border-radius: 999px;
+  background: #f7f9fa; border: 1px solid var(--line);
+  font-size: var(--fs-cap); color: var(--steel);
+}
+.chip .led { width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
+.chip.warn { background: rgba(230,126,34,.08); border-color: rgba(230,126,34,.3); color: #b3641a; }
+.chip.warn .led { background: var(--orange); }
+.chip b { color: var(--ink); font-weight: 600; }
+
+/* 提案4: 準備が終わるまで押させない → 何をすればいいか1行だけ出す */
+.blocker { margin-top: 16px; font-size: var(--fs-cap); display: none; }
+.blocker.on { display: block; }
+.blocker button {
+  font: inherit; font-size: var(--fs-cap); font-weight: 600;
+  background: none; border: none; color: var(--blue); cursor: pointer;
+  text-decoration: underline; text-underline-offset: 3px;
+}
+
+/* 提案5: 進捗を押したボタンの真下に */
+.progress { display: none; margin: 22px auto 0; max-width: 460px; text-align: left; }
+.progress.on { display: block; }
+.progress-msg { font-size: var(--fs-cap); color: var(--steel); margin-bottom: 7px; }
+.progress-track { height: 5px; border-radius: 3px; background: var(--line); overflow: hidden; }
+.progress-fill {
+  height: 100%; width: 0%; border-radius: 3px;
+  background: linear-gradient(90deg, var(--green), var(--blue));
+  transition: width .4s ease;
+}
+.level { display: flex; align-items: flex-end; justify-content: center; gap: 3px; height: 26px; margin-top: 12px; }
+.level i { width: 3px; background: var(--green); border-radius: 2px; height: 4px; opacity: .55; }
+.log-toggle {
+  margin-top: 10px; font: inherit; font-size: var(--fs-micro);
+  background: none; border: none; color: var(--mute); cursor: pointer; padding: 0;
+}
+.log {
+  display: none; margin-top: 8px; padding: 10px 12px; max-height: 120px; overflow: auto;
+  background: #f7f9fa; border: 1px solid var(--line); border-radius: 8px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .7rem; color: var(--steel); white-space: pre-wrap;
+}
+.log.on { display: block; }
+
+/* ---------- ファイルから作るペイン ---------- */
+.file-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding: 4px 28px 0; }
+.drop {
+  border: 1.5px dashed #cdd6dc; border-radius: var(--radius-sm);
+  padding: 26px 16px; text-align: center; cursor: pointer;
+  background: #fcfdfd; transition: border-color .18s ease, background .18s ease;
+}
+.drop:hover { border-color: var(--blue); background: rgba(52,152,219,.04); }
+.drop-t { font-size: var(--fs-body); font-weight: 500; margin-top: 8px; }
+.drop-s { font-size: var(--fs-micro); color: var(--mute); }
+.ta-block { padding: 14px 28px 26px; }
+.ta-label { font-size: var(--fs-cap); font-weight: 600; margin-bottom: 7px; display: block; }
+.ta-label span { font-weight: 400; color: var(--mute); }
+textarea {
+  width: 100%; min-height: 96px; resize: vertical;
+  font: inherit; font-size: var(--fs-body);
+  padding: 11px 13px; color: var(--ink);
+  border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fcfdfd;
+}
+textarea:focus { outline: 2px solid var(--blue); outline-offset: -1px; }
+
+.btn {
+  font: inherit; font-size: var(--fs-body); font-weight: 600;
+  border-radius: 10px; padding: 10px 20px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+}
+.btn:hover { border-color: #cdd6dc; }
+.btn-primary {
+  background: var(--green); border-color: var(--green); color: #fff;
+}
+.btn-primary:hover { background: #229955; border-color: #229955; }
+.btn-sm { font-size: var(--fs-cap); padding: 7px 14px; }
+
+/* ---------- 提案6: 設定は「現在値が見えるリスト行」に ---------- */
+.rows { padding: 6px 0; }
+.row { border-bottom: 1px solid var(--line); }
+.row:last-child { border-bottom: none; }
+.row-head {
+  width: 100%; font: inherit; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 15px 28px; text-align: left; color: var(--ink);
+}
+.row-head:hover { background: #fbfcfd; }
+.row-title { font-size: var(--fs-body); font-weight: 500; }
+.row-value {
+  margin-left: auto; font-size: var(--fs-cap); color: var(--mute);
+  display: flex; align-items: center; gap: 7px;
+}
+.row-value.ok { color: var(--green); }
+.row-value.need { color: var(--orange); font-weight: 600; }
+.chev { width: 8px; height: 8px; border-right: 1.5px solid #b9c4cc; border-bottom: 1.5px solid #b9c4cc;
+  transform: rotate(-45deg); transition: transform .22s ease; flex-shrink: 0; }
+.row.open .chev { transform: rotate(45deg); }
+.row-body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .25s ease; }
+.row.open .row-body { grid-template-rows: 1fr; }
+.row-body > div { overflow: hidden; }
+.row-inner { padding: 2px 28px 22px; }
+
+.mode-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.mode-card {
+  border: 1.5px solid var(--line); border-radius: var(--radius-sm);
+  padding: 14px 16px; cursor: pointer; background: #fcfdfd;
+}
+.mode-card[aria-checked="true"] { border-color: var(--green); background: rgba(39,174,96,.05); }
+.mode-card h4 { font-size: var(--fs-body); display: flex; align-items: center; gap: 8px; }
+.mode-card p { font-size: var(--fs-cap); color: var(--steel); margin-top: 5px; }
+.badge {
+  font-size: var(--fs-micro); font-weight: 700; color: #fff; background: var(--green);
+  border-radius: 999px; padding: 1px 9px;
+}
+
+.field { display: flex; gap: 8px; align-items: center; }
+input[type="text"], input[type="password"], select {
+  font: inherit; font-size: var(--fs-body); color: var(--ink);
+  padding: 10px 13px; border: 1px solid var(--line); border-radius: 10px;
+  background: #fcfdfd;
+}
+input[type="text"], input[type="password"] { flex: 1; min-width: 0; }
+input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px; }
+.help { font-size: var(--fs-cap); color: var(--mute); margin-top: 9px; line-height: 1.7; }
+.help a { color: var(--blue); }
+.check { display: flex; align-items: center; gap: 7px; font-size: var(--fs-cap); color: var(--steel); margin-top: 10px; }
+
+/* ---------- 提案7: 出力ツールバーを2層に ---------- */
+.out-bar {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding: 16px 20px; border-bottom: 1px solid var(--line);
+}
+.out-title { font-size: var(--fs-sec); font-weight: 600; margin-right: auto; }
+.menu-wrap { position: relative; }
+.menu-pop {
+  position: absolute; right: 0; top: calc(100% + 8px); z-index: 20;
+  min-width: 230px; padding: 6px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(44,62,80,.14);
+  display: none;
+}
+.menu-pop.on { display: block; }
+.menu-pop button {
+  width: 100%; font: inherit; font-size: var(--fs-cap); text-align: left;
+  background: none; border: none; color: var(--ink); cursor: pointer;
+  padding: 9px 12px; border-radius: 8px;
+  display: flex; align-items: center; gap: 9px;
+}
+.menu-pop button:hover { background: #f4f7f9; }
+.menu-sep { height: 1px; background: var(--line); margin: 5px 8px; }
+.menu-note { font-size: var(--fs-micro); color: var(--mute); padding: 4px 12px 8px; }
+
+.out-body { padding: 26px 28px 30px; }
+
+/* 議事録サンプルの描画 (既存 render.js の見た目を踏襲) */
+.mn-header { text-align: center; border-bottom: 2px solid var(--ink); padding-bottom: 13px; margin-bottom: 18px; }
+.mn-title { font-size: 1.3rem; font-weight: 700; }
+.mn-meta { display: flex; flex-wrap: wrap; justify-content: center; gap: 3px 18px; font-size: var(--fs-cap); color: var(--steel); margin-top: 7px; }
+.mn-meta i { font-style: normal; color: var(--mute); font-size: var(--fs-micro); font-weight: 700; margin-right: 5px; }
+.mn-summary { color: var(--steel); font-size: var(--fs-body); margin-bottom: 18px; }
+.mn-sec { margin-bottom: 16px; }
+.mn-sec-head { display: flex; align-items: center; gap: 9px; font-size: var(--fs-sec); font-weight: 700; padding-bottom: 5px; border-bottom: 1px solid var(--line); margin-bottom: 7px; }
+.mn-bar { width: 5px; height: 1em; border-radius: 3px; background: var(--steel); }
+.mn-sec.d .mn-bar { background: var(--green); } .mn-sec.t .mn-bar { background: var(--blue); } .mn-sec.i .mn-bar { background: var(--orange); }
+.mn-cnt { font-size: var(--fs-cap); font-weight: 500; color: var(--mute); }
+.mn-item { display: flex; gap: 11px; padding: 5px 0; border-bottom: 1px dotted var(--line); font-size: var(--fs-body); }
+.mn-item:last-child { border-bottom: none; }
+.mn-num { flex-shrink: 0; width: 21px; height: 21px; border-radius: 50%; background: var(--steel); color: #fff; font-size: .72rem; font-weight: 700; display: grid; place-items: center; margin-top: 3px; }
+.mn-sec.d .mn-num { background: var(--green); } .mn-sec.t .mn-num { background: var(--blue); } .mn-sec.i .mn-num { background: var(--orange); }
+.mn-sub { font-size: var(--fs-cap); color: var(--steel); }
+.mn-sub i { font-style: normal; color: var(--mute); font-size: var(--fs-micro); font-weight: 700; margin-right: 5px; }
+.mn-tl { list-style: none; padding-left: 8px; }
+.mn-step { position: relative; display: flex; gap: 14px; padding-bottom: 16px; }
+.mn-step::before { content: ''; position: absolute; left: 12px; top: 26px; bottom: 0; width: 2px; background: var(--line); }
+.mn-step:last-child { padding-bottom: 0; } .mn-step:last-child::before { display: none; }
+.mn-dot { flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: var(--steel); color: #fff; font-size: .78rem; font-weight: 700; display: grid; place-items: center; position: relative; z-index: 1; }
+.mn-topic { font-weight: 600; }
+.mn-points { margin: 4px 0 0 1.2em; color: var(--steel); font-size: var(--fs-body); }
+.mn-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 12px 0 18px; }
+.mn-card { border: 1px solid var(--line); border-top: 3px solid var(--steel); border-radius: var(--radius-sm); padding: 12px 15px; }
+.mn-card.d { border-top-color: var(--green); } .mn-card.t { border-top-color: var(--blue); }
+.mn-card h4 { font-size: var(--fs-body); display: flex; gap: 8px; align-items: baseline; }
+.mn-card ul { margin: 6px 0 0 1.1em; font-size: var(--fs-body); }
+.mn-card li { margin-bottom: 4px; }
+.tag { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 10px; font-size: var(--fs-micro); background: var(--line); color: var(--steel); }
+.tag.due { background: #fdf0e3; color: var(--orange); }
+.mn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 14px; margin-bottom: 18px; }
+.mn-who { border: 1px solid var(--line); border-left: 4px solid var(--blue); border-radius: var(--radius-sm); padding: 12px 15px; }
+.mn-who.none { border-left-color: var(--mute); }
+.mn-who h4 { font-size: var(--fs-body); padding-bottom: 5px; border-bottom: 1px solid var(--line); display: flex; gap: 8px; align-items: baseline; }
+.mn-who ul { list-style: none; }
+.mn-who li { padding: 5px 0; border-bottom: 1px dotted var(--line); font-size: var(--fs-body); }
+.mn-who li:last-child { border-bottom: none; }
+.mn-due { display: block; font-size: var(--fs-micro); color: var(--orange); }
+.mn-foot { margin-top: 18px; padding-top: 12px; border-top: 1px solid var(--line); font-size: var(--fs-micro); color: var(--mute); text-align: center; }
+.mm-wrap { overflow-x: auto; text-align: center; }
+
+/* ---------- 変更点の注釈 ---------- */
+.anno {
+  display: flex; gap: 10px; align-items: flex-start;
+  margin: 18px 4px 12px; padding: 9px 14px;
+  background: rgba(52,152,219,.06); border: 1px dashed rgba(52,152,219,.35);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-cap); color: var(--steel); line-height: 1.7;
+}
+.anno b { color: var(--blue); white-space: nowrap; }
+
+.foot {
+  background: var(--ink); color: rgba(255,255,255,.75);
+  text-align: center; padding: 26px 20px; font-size: var(--fs-cap);
+}
+.foot a { color: rgba(255,255,255,.85); text-decoration: none; margin: 0 10px; }
+.foot p { margin-top: 8px; font-size: var(--fs-micro); opacity: .6; }
+
+@media (max-width: 720px) {
+  .site-title { font-size: 2.1rem; }
+  .card-pad, .row-head, .row-inner, .out-body { padding-left: 18px; padding-right: 18px; }
+  .hero { padding-left: 18px; padding-right: 18px; }
+  .file-grid, .ta-block { padding-left: 18px; padding-right: 18px; }
+  .file-grid, .mode-cards, .mn-2col { grid-template-columns: 1fr; }
+  .out-bar { padding: 14px 18px; }
+  .seg button { padding: 7px 12px; }
+  .row-value { font-size: var(--fs-micro); }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+</style>
+
+<!-- ===== モックアップ操作バー (本番には存在しません) ===== -->
+<div class="mk-bar">
+  <div class="mk-bar-inner">
+    <span class="mk-bar-label">Mockup</span>
+    <p>UI 改善案の確認用です。本番ツールではありません</p>
+    <button type="button" id="demo-key">API キーを設定済みにする</button>
+    <button type="button" id="demo-out">出力サンプルを表示</button>
+    <button type="button" id="demo-reset">初期状態に戻す</button>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- ===== サイト共通ヘッダー（既存のまま・変更なし） ===== -->
+  <header class="site-head">
+    <div class="site-title">28 Tools</div>
+    <div class="site-rule"></div>
+    <div class="site-sub">Revit 作図サポートツール</div>
+  </header>
+
+  <nav class="nav-strip" aria-label="ツール">
+    <a class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="4" width="20" height="14" rx="1.5"/><path d="M8 21h8M12 18v3M7 8l-2 3 2 3M17 8l2 3-2 3"/></svg>アドイン</a>
+    <a class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 6h20M2 12h20M2 18h20M8 6v6M16 6v6M4 12v6M12 12v6M20 12v6"/></svg>塗潰し</a>
+    <a class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5"/><path d="M8 14h8M8 17h5"/></svg>PDF比較</a>
+    <a class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5"/><path d="M9 13l5 5M14 13l-5 5"/></svg>Excel抽出</a>
+    <a class="nav-item current" href="#" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 3h9l4 4v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M16 3v4h4"/><path d="M9 12h7M9 16h5"/></svg>議事録作成</a>
+    <a class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 17v.01M12 14c0-2 2.2-2.2 2.2-4A2.2 2.2 0 0 0 10 9.2"/></svg>使い方ガイド</a>
+    <a class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h6M7 13h10M7 16h7"/></svg>BIMニュース</a>
+    <a class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="6" y="6" width="12" height="12" rx="1.5"/><path d="M10 3v3M14 3v3M10 18v3M14 18v3M3 10h3M3 14h3M18 10h3M18 14h3"/></svg>AIニュース</a>
+  </nav>
+
+  <div class="crumb"><a href="#">ホーム</a><span>›</span>AI議事録 自動作成</div>
+  <h1 class="page-title">AI議事録 自動作成</h1>
+  <p class="page-desc">打合せ音声と資料から、AI が議事録を自動作成。ブラウザだけで完結します。</p>
+
+  <!-- ===== 第1段階: 注意書きは1行に畳む ===== -->
+  <div class="anno"><b>第1段階</b><span>注意書き2枚（6行）を1行に畳み、初回訪問時だけ自動で開くようにする。情報は消さず、出すタイミングを変える。</span></div>
+
+  <div class="notice-line">
+    <span class="dot">●</span>
+    <span>録音データは端末内で処理。AI の生成結果は必ずご確認ください。</span>
+    <button type="button" class="notice-toggle" id="notice-toggle" aria-expanded="false">詳しく</button>
+  </div>
+  <div class="notice-body" id="notice-body">
+    <div class="notice-card">
+      <b>プライバシーについて</b> — 音声の文字起こし（簡易版）と議事録の図解化は<b>あなたのブラウザ内のみ</b>で行われ、28tools のサーバへは送信されません。高精度版で「Gemini」を使う場合は、音声・資料が Google のサーバへ送信されます。無料枠の API は入力データが品質改善に利用される可能性があるため、機密性の高い打合せでは送信内容にご注意ください。
+    </div>
+    <div class="notice-card warn">
+      <b>自動作成は完璧ではありません</b> — 音声の聞き取りや内容の分類には誤りが含まれます。出力後にプレビュー上で内容を確認・編集してから保存してください。図面の寸法・記号の正確な転記は保証対象外です。
+    </div>
+  </div>
+
+  <!-- ===== 第1・2段階: ヒーロー ===== -->
+  <div class="anno"><b>第1・2段階</b><span>主役の録音ボタンを1画面目へ。入口の「録音する／ファイルから作る」をタブに昇格し、詳細パネルの底から引き上げる。設定状態はボタン直下のチップで常時表示。</span></div>
+
+  <section class="card">
+    <div class="hero-seg">
+      <div class="seg" role="tablist" aria-label="入力方法">
+        <button type="button" role="tab" aria-selected="true" data-tab="rec">🎙 録音する</button>
+        <button type="button" role="tab" aria-selected="false" data-tab="file">📁 ファイルから作る</button>
+      </div>
+    </div>
+
+    <!-- 録音ペイン -->
+    <div class="pane active" id="pane-rec">
+      <div class="hero">
+        <button type="button" class="rec-btn" id="rec-btn" aria-label="録音を開始">
+          <span class="rec-glyph"></span>
+        </button>
+        <div class="rec-timer" id="rec-timer">00:00</div>
+        <p class="rec-caption" id="rec-caption">押すと録音開始。停止すると自動で議事録になります。</p>
+
+        <div class="chips" id="chips">
+          <span class="chip"><span class="led"></span>高精度版 <b>Gemini</b></span>
+          <span class="chip"><span class="led"></span>マイク <b>既定のマイク</b></span>
+          <span class="chip warn" id="chip-key"><span class="led"></span>API キー <b>未設定</b></span>
+        </div>
+
+        <!-- 第2段階: 準備が終わるまで押させず、次の一手だけ示す -->
+        <div class="blocker on" id="blocker">
+          高精度版には API キーが必要です　<button type="button" id="blocker-go">キーを設定する →</button>
+        </div>
+
+        <!-- 第3段階: 進捗を押したボタンの真下に -->
+        <div class="progress" id="progress">
+          <div class="progress-msg" id="progress-msg">録音中…</div>
+          <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+          <div class="level" id="level" hidden></div>
+          <button type="button" class="log-toggle" id="log-toggle">ログを表示</button>
+          <div class="log" id="log"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ファイルから作るペイン -->
+    <div class="pane" id="pane-file">
+      <div class="file-grid">
+        <div class="drop">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7f8c8d" stroke-width="1.4"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+          <div class="drop-t">音声ファイルを選択</div>
+          <div class="drop-s">mp3 / m4a / wav など</div>
+        </div>
+        <div class="drop">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7f8c8d" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 16l5-5 4 4 3-3 6 6"/><circle cx="9" cy="9" r="1.4"/></svg>
+          <div class="drop-t">図面・資料の画像を選択</div>
+          <div class="drop-s">png / jpg（高精度版のみ解析）</div>
+        </div>
+      </div>
+      <div class="ta-block">
+        <label class="ta-label" for="ta">文字起こしテキスト <span>（任意・既にあれば貼り付け）</span></label>
+        <textarea id="ta" placeholder="既に文字起こし済みのテキストがあれば、ここに貼り付けると音声処理を省略できます。"></textarea>
+        <div style="display:flex;gap:10px;align-items:center;margin-top:14px;flex-wrap:wrap">
+          <button type="button" class="btn btn-sm">📄 ファイルから読み込み</button>
+          <button type="button" class="btn btn-primary" id="file-run" style="margin-left:auto">議事録を作成</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 第2段階: 設定リスト ===== -->
+  <div class="anno"><b>第2段階</b><span>「詳細・任意入力（処理方法 / API キー / 保存先 / ファイルから作成）」の全部入りアコーディオンを解体。現在値が右側に常時見える4行に分け、開かなくても状態が分かるようにする。</span></div>
+
+  <div class="sec-label">設定</div>
+  <section class="card">
+    <div class="rows">
+      <div class="row" data-row="mode">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="row-title">処理方法</span>
+          <span class="row-value" id="v-mode">高精度版（Gemini）<span class="chev"></span></span>
+        </button>
+        <div class="row-body"><div><div class="row-inner">
+          <div class="mode-cards">
+            <div class="mode-card" role="radio" tabindex="0" aria-checked="false" data-mode="simple">
+              <h4>簡易版（ブラウザ完結）</h4>
+              <p>Whisper で文字起こし＋キーワードで自動分類。完全無料・送信なし。資料画像の解析は不可。</p>
+            </div>
+            <div class="mode-card" role="radio" tabindex="0" aria-checked="true" data-mode="gemini">
+              <h4>高精度版（Gemini）<span class="badge">推奨</span></h4>
+              <p>音声と資料を同時に AI が理解。発言者の推定や資料の参照も。あなた自身の無料 API キーを使用します。</p>
+            </div>
+          </div>
+        </div></div></div>
+      </div>
+
+      <div class="row" data-row="key">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="row-title">API キー</span>
+          <span class="row-value need" id="v-key">未設定<span class="chev"></span></span>
+        </button>
+        <div class="row-body"><div><div class="row-inner">
+          <div class="field">
+            <input type="password" id="key-input" placeholder="AIza…（Google AI Studio で無料取得）" autocomplete="off">
+            <button type="button" class="btn btn-sm" id="key-eye">👁</button>
+          </div>
+          <label class="check"><input type="checkbox" checked> このブラウザに保存する（localStorage）</label>
+          <p class="help">キーはこの端末のブラウザにのみ保存され、28tools のサーバへは送られません。取得方法 → <a href="#">Google AI Studio</a>（無料）</p>
+        </div></div></div>
+      </div>
+
+      <div class="row" data-row="long">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="row-title">長時間モード</span>
+          <span class="row-value" id="v-long">10分ごとに分割<span class="chev"></span></span>
+        </button>
+        <div class="row-body"><div><div class="row-inner">
+          <div class="field" style="gap:12px">
+            <label style="font-size:.82rem;color:#34495e">分割間隔</label>
+            <select id="interval"><option>5分</option><option selected>10分</option><option>15分</option></select>
+          </div>
+          <p class="help">録音を続けたまま指定間隔ごとに音声を保存し、各区間を高精度版で自動的に議事録化して1本に結合します。</p>
+        </div></div></div>
+      </div>
+
+      <div class="row" data-row="folder">
+        <button type="button" class="row-head" aria-expanded="false">
+          <span class="row-title">保存先フォルダ</span>
+          <span class="row-value" id="v-folder">未選択<span class="chev"></span></span>
+        </button>
+        <div class="row-body"><div><div class="row-inner">
+          <div class="field" style="gap:12px">
+            <button type="button" class="btn btn-sm" id="pick-folder">選択 / 変更</button>
+            <span style="font-size:.82rem;color:#95a5a6" id="folder-note">録音開始時に選ぶこともできます</span>
+          </div>
+          <p class="help">分割した音声の保存先。対応ブラウザのみ・非対応時はダウンロード保存になります。</p>
+        </div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 第3段階: 出力 ===== -->
+  <div id="out-section">
+  <div class="anno"><b>第3段階</b><span>横並び7ボタンを2層に整理。左＝見た目の切替（セグメンテッドコントロール）、右＝出力をまとめた「共有・保存」1つ。ツールバーが今後も伸び続けない構造にする。</span></div>
+
+  <div class="sec-label">出力</div>
+  <section class="card" id="out-card">
+    <div class="out-bar">
+      <span class="out-title">議事録</span>
+      <div class="seg" role="tablist" aria-label="表示スタイル">
+        <button type="button" role="tab" aria-selected="true"  data-style="figure">図解</button>
+        <button type="button" role="tab" aria-selected="false" data-style="timeline">タイムライン</button>
+        <button type="button" role="tab" aria-selected="false" data-style="matrix">担当者別</button>
+        <button type="button" role="tab" aria-selected="false" data-style="mindmap">マインドマップ</button>
+      </div>
+      <div class="menu-wrap">
+        <button type="button" class="btn btn-sm" id="share-btn" aria-expanded="false">共有・保存 ▾</button>
+        <div class="menu-pop" id="share-pop" role="menu">
+          <button type="button" role="menuitem">📋 テキストでコピー</button>
+          <button type="button" role="menuitem">💾 HTML で保存</button>
+          <button type="button" role="menuitem">🖨 印刷 / PDF</button>
+          <div class="menu-sep"></div>
+          <button type="button" role="menuitem">🍌 ビジュアル資料を作る</button>
+          <p class="menu-note">AI が 1 枚絵を生成します（画像内の文字は要確認）</p>
+        </div>
+      </div>
+    </div>
+    <div class="out-body" id="out-body"></div>
+  </section>
+  </div><!-- /#out-section -->
+
+</div>
+
+<footer class="foot">
+  <div><a href="#">運営者情報</a>|<a href="#">お問い合わせ</a>|<a href="#">プライバシーポリシー</a>|<a href="#">利用規約</a></div>
+  <p>© 2026 28 Tools. All rights reserved.　— これは UI 提案モックアップです</p>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  const $ = (id) => document.getElementById(id);
+  const state = { tab: 'rec', mode: 'gemini', key: '', recording: false, sec: 0, style: 'figure' };
+  let timer = null, levelTimer = null;
+
+  /* ---------- 注意書きの折りたたみ ---------- */
+  $('notice-toggle').addEventListener('click', () => {
+    const open = $('notice-body').classList.toggle('open');
+    $('notice-toggle').setAttribute('aria-expanded', String(open));
+    $('notice-toggle').textContent = open ? '閉じる' : '詳しく';
+  });
+
+  /* ---------- 入口タブ ---------- */
+  document.querySelectorAll('[data-tab]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.tab = btn.dataset.tab;
+      document.querySelectorAll('[data-tab]').forEach(b =>
+        b.setAttribute('aria-selected', String(b === btn)));
+      $('pane-rec').classList.toggle('active', state.tab === 'rec');
+      $('pane-file').classList.toggle('active', state.tab === 'file');
+    });
+  });
+
+  /* ---------- 設定リスト行の開閉 (1つずつ) ---------- */
+  document.querySelectorAll('.row-head').forEach(head => {
+    head.addEventListener('click', () => {
+      const row = head.closest('.row');
+      const open = !row.classList.contains('open');
+      document.querySelectorAll('.row').forEach(r => {
+        r.classList.remove('open');
+        r.querySelector('.row-head').setAttribute('aria-expanded', 'false');
+      });
+      if (open) { row.classList.add('open'); head.setAttribute('aria-expanded', 'true'); }
+    });
+  });
+
+  function openRow(name) {
+    const row = document.querySelector('.row[data-row="' + name + '"]');
+    if (!row) return;
+    row.querySelector('.row-head').click();
+    row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  /* ---------- 処理方法 ---------- */
+  document.querySelectorAll('.mode-card').forEach(card => {
+    const pick = () => {
+      state.mode = card.dataset.mode;
+      document.querySelectorAll('.mode-card').forEach(c =>
+        c.setAttribute('aria-checked', String(c === card)));
+      $('v-mode').childNodes[0].nodeValue =
+        state.mode === 'gemini' ? '高精度版（Gemini）' : '簡易版（ブラウザ完結）';
+      sync();
+    };
+    card.addEventListener('click', pick);
+    card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); } });
+  });
+
+  /* ---------- API キー ---------- */
+  $('key-input').addEventListener('input', e => { state.key = e.target.value.trim(); sync(); });
+  $('key-eye').addEventListener('click', () => {
+    const el = $('key-input');
+    el.type = el.type === 'password' ? 'text' : 'password';
+  });
+  $('blocker-go').addEventListener('click', () => openRow('key'));
+
+  /* ---------- その他の設定 ---------- */
+  $('interval').addEventListener('change', e => {
+    $('v-long').childNodes[0].nodeValue = e.target.value + 'ごとに分割';
+  });
+  $('pick-folder').addEventListener('click', () => {
+    $('v-folder').childNodes[0].nodeValue = '打合せ録音';
+    $('v-folder').classList.add('ok');
+    $('folder-note').textContent = '「打合せ録音」を選択中';
+  });
+
+  /* ---------- 状態の同期 (チップ・ボタンの有効/無効) ---------- */
+  function sync() {
+    const needsKey = state.mode === 'gemini' && !state.key;
+    const chip = $('chip-key');
+    chip.classList.toggle('warn', needsKey);
+    chip.querySelector('b').textContent = needsKey ? '未設定' : '設定済み';
+    chip.style.display = state.mode === 'gemini' ? '' : 'none';
+
+    $('chips').firstElementChild.querySelector('b').textContent =
+      state.mode === 'gemini' ? 'Gemini' : 'ブラウザ完結';
+
+    const v = $('v-key');
+    v.childNodes[0].nodeValue = state.key ? '設定済み ✓' : '未設定';
+    v.classList.toggle('need', needsKey);
+    v.classList.toggle('ok', !!state.key);
+
+    $('blocker').classList.toggle('on', needsKey && !state.recording);
+    $('rec-btn').disabled = needsKey;
+    $('file-run').disabled = needsKey;
+  }
+
+  /* ---------- 録音のシミュレーション ---------- */
+  const pad = n => String(n).padStart(2, '0');
+  function logLine(s) {
+    const el = $('log');
+    const now = new Date().toLocaleTimeString('ja-JP', { hour12: false });
+    el.textContent += '[' + now + '] ' + s + '\n';
+    el.scrollTop = el.scrollHeight;
+  }
+  $('log-toggle').addEventListener('click', () => {
+    const on = $('log').classList.toggle('on');
+    $('log-toggle').textContent = on ? 'ログを隠す' : 'ログを表示';
+  });
+
+  function buildLevel() {
+    const el = $('level');
+    if (el.childElementCount) return;
+    for (let i = 0; i < 28; i++) el.appendChild(document.createElement('i'));
+  }
+
+  $('rec-btn').addEventListener('click', () => {
+    state.recording ? stopRec() : startRec();
+  });
+
+  function startRec() {
+    state.recording = true; state.sec = 0;
+    buildLevel();
+    $('rec-btn').classList.add('on');
+    $('rec-btn').setAttribute('aria-label', '録音を停止');
+    $('rec-timer').classList.add('on');
+    $('rec-timer').textContent = '00:00';
+    $('rec-caption').textContent = 'もう一度押すと停止し、議事録の作成が始まります。';
+    $('blocker').classList.remove('on');
+    $('progress').classList.add('on');
+    $('progress-msg').textContent = '録音中… 10分ごとに自動保存します';
+    $('progress-fill').style.width = '0%';
+    $('level').hidden = false;
+    logLine('録音を開始しました');
+
+    timer = setInterval(() => {
+      state.sec++;
+      $('rec-timer').textContent = pad(Math.floor(state.sec / 60)) + ':' + pad(state.sec % 60);
+    }, 1000);
+    levelTimer = setInterval(() => {
+      [...$('level').children].forEach(b => {
+        b.style.height = (4 + Math.random() * 20).toFixed(0) + 'px';
+        b.style.opacity = (0.35 + Math.random() * 0.5).toFixed(2);
+      });
+    }, 130);
+  }
+
+  function stopRec() {
+    state.recording = false;
+    clearInterval(timer); clearInterval(levelTimer);
+    $('rec-btn').classList.remove('on');
+    $('rec-btn').setAttribute('aria-label', '録音を開始');
+    $('rec-timer').classList.remove('on');
+    $('rec-caption').textContent = '押すと録音開始。停止すると自動で議事録になります。';
+    $('level').hidden = true;
+    logLine('録音を停止しました（' + state.sec + '秒）');
+    runProgress();
+  }
+
+  $('file-run').addEventListener('click', () => {
+    $('progress').classList.add('on');
+    $('pane-rec').classList.add('active');
+    runProgress();
+  });
+
+  function runProgress() {
+    const steps = [
+      [15, '音声を送信しています…'],
+      [45, 'AI が内容を理解しています…'],
+      [75, '議事録を組み立てています…'],
+      [100, '完成しました'],
+    ];
+    let i = 0;
+    $('progress').classList.add('on');
+    const tick = () => {
+      if (i >= steps.length) { showOutput(); return; }
+      const [pct, msg] = steps[i++];
+      $('progress-fill').style.width = pct + '%';
+      $('progress-msg').textContent = msg;
+      logLine(msg);
+      setTimeout(tick, 700);
+    };
+    tick();
+  }
+
+  /* ---------- 出力サンプル ---------- */
+  const DATA = {
+    meta: { title: '第3回 定例打合せ', date: '2026-08-11', location: '本社 会議室A', project: '○○ビル 新築工事', attendees: ['話者A', '話者B', '話者C'] },
+    summary: '工程の遅れと外装材の変更について確認し、次回までの対応を決めた。追加の見積もりは来週提出予定。',
+    decisions: [
+      { text: '外装材はB案に変更する', speaker: '話者A', ref: '資料1' },
+      { text: '着工日は9月1日で確定', speaker: '話者B' },
+    ],
+    todos: [
+      { text: '変更後の見積もりを提出', who: '話者B', due: '8/18' },
+      { text: '近隣説明会の日程調整', who: '話者C', due: '8/20' },
+      { text: '施工図の差し替え', who: '話者B' },
+      { text: '議事録を共有する' },
+    ],
+    issues: [{ text: '資材の納期が読めない', speaker: '話者C' }],
+    discussions: [
+      { topic: '工程の遅れについて', speaker: '話者A', points: ['先週の雨で2日遅延', '人員追加で吸収可能'] },
+      { topic: '外装材の変更', speaker: '話者B', points: ['A案はコスト超過', 'B案は納期に余裕あり'] },
+      { topic: '次回の予定', points: ['8/25 同時刻'] },
+    ],
+  };
+
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const head = () => `<div class="mn-header"><div class="mn-title">${esc(DATA.meta.title)}</div>
+    <div class="mn-meta">
+      <span><i>日時</i>${esc(DATA.meta.date)}</span><span><i>場所</i>${esc(DATA.meta.location)}</span>
+      <span><i>案件</i>${esc(DATA.meta.project)}</span><span><i>出席</i>${DATA.meta.attendees.map(esc).join('、')}</span>
+    </div></div>`;
+  const foot = () => `<div class="mn-foot">AI により自動生成された議事録です。内容は必ずご確認ください。 — 28 Tools</div>`;
+  const sec = (cls, title, n, inner) => `<section class="mn-sec ${cls}">
+      <h3 class="mn-sec-head"><span class="mn-bar"></span>${esc(title)}<span class="mn-cnt">（${n}件）</span></h3>${inner}</section>`;
+  const item = (cls, i, text, sub) => `<div class="mn-item"><span class="mn-num">${i}</span>
+      <div><div>${esc(text)}</div>${sub ? `<div class="mn-sub">${sub}</div>` : ''}</div></div>`;
+
+  const RENDER = {
+    figure() {
+      return head()
+        + `<p class="mn-summary">${esc(DATA.summary)}</p>`
+        + sec('d', '決定事項', DATA.decisions.length, DATA.decisions.map((it, i) =>
+            item('d', i + 1, it.text, `<i>発言</i>${esc(it.speaker)}` + (it.ref ? `　<i>資料</i>${esc(it.ref)}` : ''))).join(''))
+        + sec('t', 'ToDo・宿題', DATA.todos.length, DATA.todos.map((it, i) =>
+            item('t', i + 1, it.text, [it.who ? `<i>担当</i>${esc(it.who)}` : '', it.due ? `<i>期限</i>${esc(it.due)}` : ''].filter(Boolean).join('　'))).join(''))
+        + sec('i', '課題・懸念', DATA.issues.length, DATA.issues.map((it, i) =>
+            item('i', i + 1, it.text, `<i>発言</i>${esc(it.speaker)}`)).join(''))
+        + sec('', '議論の流れ', DATA.discussions.length, DATA.discussions.map(d =>
+            `<div style="margin-bottom:9px"><div class="mn-topic">${esc(d.topic)}</div>
+             <ul class="mn-points">${d.points.map(p => `<li>${esc(p)}</li>`).join('')}</ul></div>`).join(''))
+        + foot();
+    },
+    timeline() {
+      return head()
+        + `<p class="mn-summary">${esc(DATA.summary)}</p>`
+        + `<h3 class="mn-sec-head"><span class="mn-bar"></span>議論の流れ（時系列）</h3>
+           <ol class="mn-tl">${DATA.discussions.map((d, i) => `
+             <li class="mn-step"><span class="mn-dot">${i + 1}</span>
+               <div><div class="mn-topic">${esc(d.topic)}${d.speaker ? `<span class="tag">${esc(d.speaker)}</span>` : ''}</div>
+               <ul class="mn-points">${d.points.map(p => `<li>${esc(p)}</li>`).join('')}</ul></div></li>`).join('')}</ol>`
+        + `<h3 class="mn-sec-head" style="margin-top:18px"><span class="mn-bar"></span>この打合せの結論</h3>
+           <div class="mn-2col">
+             <div class="mn-card d"><h4>決定事項<span class="mn-cnt">（${DATA.decisions.length}件）</span></h4>
+               <ul>${DATA.decisions.map(it => `<li>${esc(it.text)}<span class="tag">${esc(it.speaker)}</span></li>`).join('')}</ul></div>
+             <div class="mn-card t"><h4>ToDo・宿題<span class="mn-cnt">（${DATA.todos.length}件）</span></h4>
+               <ul>${DATA.todos.map(it => `<li>${esc(it.text)}${it.who ? `<span class="tag">${esc(it.who)}</span>` : ''}${it.due ? `<span class="tag due">${esc(it.due)}</span>` : ''}</li>`).join('')}</ul></div>
+           </div>`
+        + sec('i', '課題・懸念', DATA.issues.length, DATA.issues.map((it, i) =>
+            item('i', i + 1, it.text, `<i>発言</i>${esc(it.speaker)}`)).join(''))
+        + foot();
+    },
+    matrix() {
+      const groups = {};
+      DATA.todos.forEach(t => { const k = t.who || '未割当'; (groups[k] = groups[k] || []).push(t); });
+      return head()
+        + `<p class="mn-summary">${esc(DATA.summary)}</p>`
+        + `<h3 class="mn-sec-head"><span class="mn-bar"></span>担当者別 ToDo</h3>
+           <div class="mn-grid">${Object.entries(groups).map(([who, list]) => `
+             <div class="mn-who${who === '未割当' ? ' none' : ''}"><h4>${esc(who)}<span class="mn-cnt">（${list.length}件）</span></h4>
+               <ul>${list.map(t => `<li>${esc(t.text)}${t.due ? `<span class="mn-due">期限：${esc(t.due)}</span>` : ''}</li>`).join('')}</ul></div>`).join('')}</div>`
+        + sec('d', '決定事項', DATA.decisions.length, DATA.decisions.map((it, i) =>
+            item('d', i + 1, it.text, `<i>発言</i>${esc(it.speaker)}`)).join(''))
+        + sec('i', '課題・懸念', DATA.issues.length, DATA.issues.map((it, i) =>
+            item('i', i + 1, it.text, `<i>発言</i>${esc(it.speaker)}`)).join(''))
+        + foot();
+    },
+    mindmap() {
+      const cats = [
+        { label: '決定事項', color: '#27ae60', items: DATA.decisions.map(d => d.text), right: true, y: 92 },
+        { label: 'ToDo', color: '#3498db', items: DATA.todos.slice(0, 3).map(t => t.text), right: true, y: 248 },
+        { label: '課題', color: '#e67e22', items: DATA.issues.map(i => i.text), right: false, y: 92 },
+        { label: '議論', color: '#34495e', items: DATA.discussions.map(d => d.topic), right: false, y: 226 },
+      ];
+      const W = 860, H = 400, cx = W / 2, cy = H / 2;
+      let s = '';
+      cats.forEach(c => {
+        const catX = c.right ? cx + 96 : cx - 96 - 104;
+        const catCX = catX + 52;
+        s += `<path d="M ${c.right ? cx + 78 : cx - 78} ${cy} C ${cx} ${cy}, ${catCX} ${c.y + 16}, ${c.right ? catX : catX + 104} ${c.y + 16}" fill="none" stroke="${c.color}" stroke-width="2" opacity=".55"/>`;
+        s += `<rect x="${catX}" y="${c.y}" width="104" height="32" rx="10" fill="${c.color}22" stroke="${c.color}" stroke-width="1.6"/>
+              <text x="${catCX}" y="${c.y + 21}" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">${esc(c.label)}（${c.items.length}）</text>`;
+        c.items.forEach((txt, i) => {
+          const iy = c.y + 44 + i * 34;
+          const ix = c.right ? catX + 132 : catX - 132 - 26;
+          const w = 158;
+          s += `<path d="M ${c.right ? catX + 104 : catX} ${c.y + 16} C ${c.right ? catX + 120 : catX - 16} ${c.y + 16}, ${c.right ? ix - 16 : ix + w + 16} ${iy + 13} , ${c.right ? ix : ix + w} ${iy + 13}" fill="none" stroke="${c.color}" stroke-width="1.6" opacity=".45"/>`;
+          s += `<rect x="${ix}" y="${iy}" width="${w}" height="26" rx="8" fill="#fff" stroke="${c.color}88"/>
+                <text x="${ix + w / 2}" y="${iy + 17}" text-anchor="middle" font-size="11" fill="#2c3e50">${esc(txt.length > 13 ? txt.slice(0, 13) + '…' : txt)}</text>`;
+        });
+      });
+      s += `<rect x="${cx - 78}" y="${cy - 22}" width="156" height="44" rx="12" fill="#2c3e50"/>
+            <text x="${cx}" y="${cy + 5}" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">${esc(DATA.meta.title)}</text>`;
+      return head() + `<div class="mm-wrap"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="max-width:100%;height:auto">${s}</svg></div>` + foot();
+    },
+  };
+
+  function draw() { $('out-body').innerHTML = RENDER[state.style](); }
+
+  document.querySelectorAll('[data-style]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.style = btn.dataset.style;
+      document.querySelectorAll('[data-style]').forEach(b =>
+        b.setAttribute('aria-selected', String(b === btn)));
+      draw();
+    });
+  });
+
+  /* ---------- 共有メニュー ---------- */
+  $('share-btn').addEventListener('click', e => {
+    e.stopPropagation();
+    const on = $('share-pop').classList.toggle('on');
+    $('share-btn').setAttribute('aria-expanded', String(on));
+  });
+  document.addEventListener('click', () => {
+    $('share-pop').classList.remove('on');
+    $('share-btn').setAttribute('aria-expanded', 'false');
+  });
+  $('share-pop').addEventListener('click', e => e.stopPropagation());
+
+  /* ---------- 出力の表示 ---------- */
+  function showOutput(scroll) {
+    $('out-section').style.display = '';
+    draw();
+    if (scroll !== false) $('out-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  /* ---------- モックアップ操作 ---------- */
+  $('demo-key').addEventListener('click', () => {
+    $('key-input').value = 'AIzaSyDEMO-mockup-key-0000000000';
+    state.key = $('key-input').value; sync();
+  });
+  $('demo-out').addEventListener('click', () => showOutput());
+  $('demo-reset').addEventListener('click', () => {
+    if (state.recording) stopRecSilently();
+    $('key-input').value = ''; state.key = ''; state.style = 'figure';
+    document.querySelectorAll('[data-style]').forEach(b =>
+      b.setAttribute('aria-selected', String(b.dataset.style === 'figure')));
+    $('progress').classList.remove('on');
+    $('log').textContent = '';
+    $('out-section').style.display = 'none';
+    document.querySelectorAll('.row').forEach(r => r.classList.remove('open'));
+    sync();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  function stopRecSilently() {
+    state.recording = false; clearInterval(timer); clearInterval(levelTimer);
+    $('rec-btn').classList.remove('on'); $('rec-timer').classList.remove('on'); $('level').hidden = true;
+  }
+
+  /* ---------- 初期化 ---------- */
+  $('out-section').style.display = 'none';
+  sync();
+})();
+</script>
+</body>
+</html>
