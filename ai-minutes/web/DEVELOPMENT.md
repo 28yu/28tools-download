@@ -193,6 +193,9 @@ Gemini 側は `responseSchema` でこの形を強制している（JSON モー�
 - `includes/sidebar.html` を変更した場合は `js/main.js` の `INCLUDES_VERSION` を bump（CDN キャッシュバスト）。
 - `js/main.js` の翻訳（`aimin-*` 等）を変更したら、各ページの `<script src=".../js/main.js?v=...">` の
   `?v=` を bump（このツールは `ai-minutes/web/index.html` 側）。
+- **`minutes.css` を変更したら `index.html` の `./minutes.css?v=...` を bump**。
+  GitHub Pages の CDN（Fastly, TTL ~10分）とブラウザキャッシュで古い CSS が残り、
+  「直したはずのレイアウトが直らない」事故になる。
 - ナビ項目はサイト 3 箇所（`index.html` インラインサイドバー / カテゴリグリッド / `includes/sidebar.html`）を同時更新（CLAUDE.md 参照）。
 - 新規ツールページの canonical / OGP / GA / AdSense / sitemap 登録は他ページに揃える。
 

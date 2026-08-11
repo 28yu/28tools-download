@@ -798,11 +798,19 @@
   .hero { padding: 10px 18px 26px; }
   .file-pane { padding: 14px 18px 26px; }
   .row-head, .row-inner { padding-left: 18px; padding-right: 18px; }
-  /* 4 つのタブは横スクロールにすると気づかれないので折り返す */
-  .seg { max-width: 100%; flex-wrap: wrap; justify-content: center; }
-  .seg-btn { padding: 7px 12px; }
-  .seg .seg-ai { margin-left: 0; padding-left: 12px; }
-  .seg .seg-ai::before { display: none; }
+  .seg { max-width: 100%; }
+  .seg-btn { padding: 8px 10px; font-size: 0.8rem; }
+
+  /* 入力タブ(2つ)は幅いっぱいの2分割にする。折り返して2段になると
+     セグメンテッドコントロールに見えず、壊れて見えるため。 */
+  .hero-seg { padding: 18px 16px 4px; }
+  #input-tabs { display: flex; width: 100%; }
+  #input-tabs .seg-btn { flex: 1 1 0; min-width: 0; justify-content: center; }
+
+  /* 出力タブ(4つ)は 1 行に入らないので折り返す（横スクロールは気づかれない） */
+  #style-toggle { flex-wrap: wrap; justify-content: center; }
+  #style-toggle .seg-ai { margin-left: 0; padding-left: 10px; }
+  #style-toggle .seg-ai::before { display: none; }
   .menu-pop { right: auto; left: 0; }
   .mn-tl-conclusion { grid-template-columns: 1fr; }
   .mn-mx-grid { grid-template-columns: 1fr; }
