@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-08-12T01:09:00.654319",
+  "lastUpdated": "2026-08-13T01:10:53.731557",
   "articles": [
+    {
+      "title": "AIに仕事を持たせる時代｜生成AI活用の4段階と業務設計",
+      "link": "https://axconstdx.com/2026/08/12/ai%e3%81%ab%e4%bb%95%e4%ba%8b%e3%82%92%e6%8c%81%e3%81%9f%e3%81%9b%e3%82%8b%e6%99%82%e4%bb%a3%ef%bd%9c%e7%94%9f%e6%88%90ai%e6%b4%bb%e7%94%a8%e3%81%ae4%e6%ae%b5%e9%9a%8e%e3%81%a8%e6%a5%ad%e5%8b%99/",
+      "description": "「AIに指示を出したのに、思った通りに動いてくれない」——そう感じたことはありませんか。実はその原因、AIの性能ではなく仕事の任せ方にあります。業務を正しく分解し、AIに渡す範囲を見極める発想を身につければ、あなたの仕事 [...] <p>The post AIに仕事を持たせる時代｜生成AI活用の4段階と業務設計 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Wed, 12 Aug 2026 13:14:36 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/2b4f9ed910784ce44b1c082e1050dcdf-1024x539.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Gemini SparkとChatGPT Workの違いは3つ",
+      "link": "https://axconstdx.com/2026/08/12/gemini-spark%e3%81%a8chatgpt-work%e3%81%ae%e9%81%95%e3%81%84%e3%81%af3%e3%81%a4/",
+      "description": "「エージェントAIって結局何が違うの?」そんな疑問にモヤモヤしていませんか。Gemini SparkとChatGPT Workは似ているようで、設計の重心が大きく異なります。稼働スタイル・連携領域・設計思想という3つの視 [...] <p>The post Gemini SparkとChatGPT Workの違いは3つ first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Wed, 12 Aug 2026 06:48:24 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100kb-1-2-1024x538.jpg",
+      "language": "ja"
+    },
     {
       "title": "工事現場での熱中症対策の取り組み紹介！（国交省）",
       "link": "https://news.build-app.jp/article/42061/",
@@ -152,16 +172,6 @@
       "language": "ja"
     },
     {
-      "title": "商用EVバン・ミニバン、2026年に出そろった三つの選択肢",
-      "link": "https://axconstdx.com/2026/08/06/%e5%95%86%e7%94%a8ev%e3%83%90%e3%83%b3%e3%83%bb%e3%83%9f%e3%83%8b%e3%83%90%e3%83%b3%e3%80%812026%e5%b9%b4%e3%81%ab%e5%87%ba%e3%81%9d%e3%82%8d%e3%81%a3%e3%81%9f%e4%b8%89%e3%81%a4%e3%81%ae%e9%81%b8/",
-      "description": "「軽EVでは荷物が積みきれない」——そんな悩みを抱えたまま、決断を先延ばしにしていませんか。2026年、ついに実用的な商用EVバンが3つ出そろい、比較検討できる時代が来ました。本記事を読めば、自社に合う1台と失敗しない導 [...] <p>The post 商用EVバン・ミニバン、2026年に出そろった三つの選択肢 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Thu, 06 Aug 2026 08:11:02 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100KB-2-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "西松建設、配筋検査の撮影・整理工数を最大8割削減。TOTTARROWを導入",
       "link": "https://news.build-app.jp/article/42078/",
       "description": "ピクシーダストテクノロジーズ株式会社（東京都中央区、代表取締役会長：落合陽一氏、代表取締役社長：村上泰一郎氏、以下PxDT）は、西松建設株式......",
@@ -260,16 +270,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "ChatGPT Workに週次制限。5時間待てば戻る時代ではなくなった",
-      "link": "https://axconstdx.com/2026/08/07/chatgpt-work%e3%81%ab%e9%80%b1%e6%ac%a1%e5%88%b6%e9%99%90%e3%80%825%e6%99%82%e9%96%93%e5%be%85%e3%81%a6%e3%81%b0%e6%88%bb%e3%82%8b%e6%99%82%e4%bb%a3%e3%81%a7%e3%81%af%e3%81%aa%e3%81%8f%e3%81%aa/",
-      "description": "「気づいたらWorkが使えなくなっていた」——そんな戸惑いを感じたことはありませんか。実はこの制限、ただの改悪ではなく、AIとの付き合い方そのものを見直すサインです。仕事の重さを見極め、賢く使い分ける具体的な方法を、今す [...] <p>The post ChatGPT Workに週次制限。5時間待てば戻る時代ではなくなった first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Fri, 07 Aug 2026 06:48:06 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100KB-1-1-1024x538.jpg",
-      "language": "ja"
     },
     {
       "title": "建設経済研究所、2027年度の民間非住宅建設投資は24.1兆円、約3割を占める見通し",
