@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T03:23:56.602277",
+  "lastUpdated": "2026-08-13T03:27:30.812020",
   "articles": [
     {
       "title": "3 Google updates from Galaxy Unpacked 2026",
@@ -24,6 +24,171 @@
       "language": "en"
     },
     {
+      "title": "Scientists just created female clones of male mice",
+      "titleJa": "科学者たちは雄マウスの雌クローンを作成したところだ",
+      "link": "https://www.technologyreview.com/2026/08/12/1141768/scientists-just-created-female-clones-of-male-mice/",
+      "description": "Scientists have deliberately turned male mouse embryos into females for the first time. A team based in Japan used a CRISPR-based approach to remove the Y chromosome from male cells and create female ...",
+      "publishedDate": "Wed, 12 Aug 2026 18:59:48 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/Cloned-mice.jpg",
+      "language": "en"
+    },
+    {
+      "title": "Scaling AI agents with trustworthy data",
+      "titleJa": "信頼できるデータを使用して AI エージェントを拡張する",
+      "link": "https://www.technologyreview.com/2026/08/12/1141032/scaling-ai-agents-with-trustworthy-data/",
+      "description": "Business and technology leaders need no convincing that the time of agentic AI is here. Organizations are rapidly adopting agents, and few executives doubt the technology’s potential to transform work...",
+      "publishedDate": "Wed, 12 Aug 2026 16:51:57 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/Google-Report-2026-cover.png",
+      "language": "en"
+    },
+    {
+      "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
+      "titleJa": "OlmoEarth エンベディングの紹介: ダウンストリーム分析のための OlmoEarth Studio からのカスタム エンベディング エクスポート",
+      "link": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+      "description": "...",
+      "publishedDate": "Wed, 12 Aug 2026 16:14:36 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/u9KR_QjSYF7mJIbRE3Ni8.jpeg",
+      "language": "en"
+    },
+    {
+      "title": "LFM2.5-VL-3B for Better and Faster Vision Capabilities for the Edge",
+      "titleJa": "LFM2.5-VL-3B によるエッジ向けのより優れた高速ビジョン機能",
+      "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
+      "description": "...",
+      "publishedDate": "Wed, 12 Aug 2026 14:00:51 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/apldbDPIJWZeODX1g9iFV.png",
+      "language": "en"
+    },
+    {
+      "title": "The Download: our 35 young innovators and the “censorship-industrial complex”",
+      "titleJa": "ダウンロード: 35 人の若いイノベーターと「検閲と産業の複合体」",
+      "link": "https://www.technologyreview.com/2026/08/12/1141714/the-download-innovators-under-35-censorship-industrial-complex/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How we picked 35 of the world’s top young scientis...",
+      "publishedDate": "Wed, 12 Aug 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/06/opener_thumb.jpg?w=840",
+      "language": "en"
+    },
+    {
+      "title": "How we picked 35 of the world’s top young scientists and engineers",
+      "titleJa": "世界のトップの若手科学者とエンジニア 35 人をどのように選出したか",
+      "link": "https://www.technologyreview.com/2026/08/12/1141605/2026-innovators-under-35-top-young-scientists-engineers/",
+      "description": "Next month, on September 8, MIT Technology Review will reveal its 2026 list of Innovators Under 35, recognizing 35 young people from around the world who are doing groundbreaking scientific work and b...",
+      "publishedDate": "Wed, 12 Aug 2026 09:08:40 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/martincic-2026-35-35-intro-essay.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "From assistance to execution: How enterprises put AI to work",
+      "titleJa": "支援から実行まで: 企業が AI を活用する方法",
+      "link": "https://openai.com/index/how-enterprises-put-ai-to-work",
+      "description": "OpenAI research reveals how enterprises are adopting agentic AI, using ChatGPT and Codex, and how frontier firms are pulling ahead in AI adoption....",
+      "publishedDate": "Wed, 12 Aug 2026 06:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "メディア掲載とは？意味・メリット・掲載される5つの方法を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-media-coverage/",
+      "description": "「自社の商品や取り組みをメディアに掲載してもらいたいが、何から始めればよいか分からない」。そう悩んでいませんか。メディア掲載には、記者・編集部の判断による取材記事のほか、プレスリリースや記事広告、業界ポータルへの製品掲載 [...] The post メディア掲載とは？意味・メリット・掲載される5つの方法を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 12 Aug 2026 05:51:53 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/whatismediacoverage01.webp",
+      "language": "ja"
+    },
+    {
+      "title": "OAuthとは？仕組み・認証との違い・危険性と対策をわかりやすく解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-oauth/",
+      "description": "「Googleでログイン」や「カレンダーへのアクセスを許可」と表示されたとき、裏側では認証と認可という別の仕組みが動いています。OAuthは、パスワードを連携先へ渡さず、必要なデータへのアクセス権だけを委ねる認可の標準仕 [...] The post OAuthとは？仕組み・認証との違い・危険性と対策をわかりやすく解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 12 Aug 2026 05:51:50 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/whatisoauth01.webp",
+      "language": "ja"
+    },
+    {
+      "title": "シャドーAIとは？企業が知るべき6つのリスクと5つの対策",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-shadow-ai/",
+      "description": "「従業員が個人アカウントの生成AIに顧客情報を入力していないか」「AIツールの利用を全面禁止すべきか」と悩む企業は少なくありません。 シャドーAIとは、企業が把握・承認していないAIツールを、従業員が業務で利用する行為ま [...] The post シャドーAIとは？企業が知るべき6つのリスクと5つの対策 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 12 Aug 2026 05:50:10 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/whatisshadowai01.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AIリテラシーとは？意味・必要性・企業での高め方をわかりやすく解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-ai-literacy/",
+      "description": "生成AIの業務利用が広がる一方で、「社員がどの生成AIを使っているか会社が把握していない」「誤情報や情報漏洩をどう防げばよいかわからない」と悩む企業も少なくありません。安全にAIを活用するために欠かせないのが、AIの特性 [...] The post AIリテラシーとは？意味・必要性・企業での高め方をわかりやすく解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 12 Aug 2026 05:50:00 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/whatisailiteracy01.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ABEJA、AI国際規格「ISO/IEC 42001」認証を取得。国際基準のガバナンスでAI実運用を支援",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/abeja-iso42001-certification/",
+      "description": "ABEJAは、AIマネジメントシステムにおける最新の国際規格「ISO/IEC 42001」認証を取得しました。国際基準に適合したガバナンス体制のもと、ミッションクリティカルな業務におけるAI活用を支援します。 このニュー [...] The post ABEJA、AI国際規格「ISO/IEC 42001」認証を取得。国際基準のガバナンスでAI実運用を支援 first appeared on AIポ...",
+      "publishedDate": "Wed, 12 Aug 2026 02:20:57 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/abeja-iso42001-certification.png",
+      "language": "ja"
+    },
+    {
+      "title": "Google「AIによる概要」の影響を調査。検索1位維持でもクリック率が半年で6割以上低下",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ahrefs-ai-overviews-ctr-japan/",
+      "description": "Ahrefsは、Googleの「AIによる概要」が検索1位のクリック率に与える影響の最新調査結果を発表しました。CTR低下率は日本で−62.7%に達し、わずか6ヶ月で24.7%悪化しています。 このニュースのポイント A [...] The post Google「AIによる概要」の影響を調査。検索1位維持でもクリック率が半年で6割以上低下 first appeared on AIポータルメディア...",
+      "publishedDate": "Wed, 12 Aug 2026 02:00:35 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/ahrefs-ai-overviews-ctr-japan-eye2-1.png",
+      "language": "ja"
+    },
+    {
+      "title": "フィジカル AI・国産 LLM が集結！「AI 博覧会 Summer 2026」注目出展社を発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/aiexposummer2026-featuredexhibitors1/",
+      "description": "～災害現場での活用が期待されるロボットや特許技術搭載のヒューマノイド、異常検知 AI も出展。新宿住友ビル 三角広場にて 8 月 26 日・27 日開催～ 国内最大級のAIポータルメディア「AIsmiley」を運営する株 [...] The post フィジカル AI・国産 LLM が集結！「AI 博覧会 Summer 2026」注目出展社を発表 first appeared on AIポータルメ...",
+      "publishedDate": "Wed, 12 Aug 2026 02:00:25 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/gazou44.png",
+      "language": "ja"
+    },
+    {
+      "title": "京都銀行、AIによる「粉飾検知モデル」を運用開始。過去の財務データからリスクを定量化",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/kyotobank-ai-fraud-detection-model/",
+      "description": "京都銀行は、AIを活用し企業の粉飾決算リスクを定量化する「粉飾検知モデル」の運用を開始しました。過去の粉飾事例や大量の財務データをAI分析することで、与信管理の高度化やリスク管理業務の効率化を目指します。 このニュースの [...] The post 京都銀行、AIによる「粉飾検知モデル」を運用開始。過去の財務データからリスクを定量化 first appeared on AIポータルメディアAIs...",
+      "publishedDate": "Wed, 12 Aug 2026 01:46:17 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/kyotobank-ai-financial-fraud-detection.png",
+      "language": "ja"
+    },
+    {
       "title": "テラドローン、AI迎撃ドローン「Terra A1 Autonomous」の市場展開を開始。AIによる標的補足・自律航行・自律追尾が可能",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/terradrone-terra-a1-autonomous/",
@@ -35,14 +200,14 @@
       "language": "ja"
     },
     {
-      "title": "Puzzle Corner",
-      "titleJa": "パズルコーナー",
-      "link": "https://www.technologyreview.com/2026/08/05/1141230/puzzle-corner-84/",
-      "description": "Ready for a fresh set of puzzles? Click here for the September/October 2026 Puzzle Corner, brought to you by Michael S. Branicky, ScD ’95, of the Puzzle Corner Puzzle Crew (aka PC2), which also includ...",
-      "publishedDate": "Wed, 05 Aug 2026 14:56:29 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2020/02/puzzle-the-mans-hand-completest20gjo1nw-web-1.jpg?resize=1200,600",
+      "title": "How RingCentral builds AI-native work from engineering to ops",
+      "titleJa": "RingCentral がエンジニアリングから運用まで AI ネイティブの作業を構築する方法",
+      "link": "https://openai.com/index/ringcentral",
+      "description": "See how RingCentral uses ChatGPT Work and Codex to accelerate AI product development and centralize operational intelligence across engineering and operations....",
+      "publishedDate": "Wed, 12 Aug 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -134,7 +299,7 @@
       "language": "en"
     },
     {
-      "title": "How the “censorship-industrial complex” is changing the Internet and US policy",
+      "title": "How the “censorship-industrial complex” is changing the internet and US policy",
       "titleJa": "「検閲と産業の複合体」がインターネットと米国の政策をどのように変えているか",
       "link": "https://www.technologyreview.com/2026/08/11/1141635/how-the-censorship-industrial-complex-is-changing-the-internet-and-us-policy/",
       "description": "I first heard the term “censorship-industrial complex” on April 15, 2025.&#160; That’s when I got the tip that a small office in the U.S. State Department, which focused on monitoring and countering f...",
@@ -233,17 +398,6 @@
       "language": "en"
     },
     {
-      "title": "Deploy local agents everywhere with LFM2.5-2.6B",
-      "titleJa": "LFM2.5-2.6B を使用してローカル エージェントをあらゆる場所に展開",
-      "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
-      "description": "...",
-      "publishedDate": "Tue, 04 Aug 2026 13:58:29 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/DsoMk3kqhMYedjPiZINKv.png",
-      "language": "en"
-    },
-    {
       "title": "The latest AI news we announced in July 2026",
       "titleJa": "2026年7月に発表したAI最新ニュース",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
@@ -299,26 +453,26 @@
       "language": "en"
     },
     {
-      "title": "Newer Models, Same Advantage",
-      "titleJa": "新しいモデルでも同じ利点",
-      "link": "https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages",
-      "description": "...",
-      "publishedDate": "Thu, 16 Jul 2026 11:49:48 GMT",
-      "source": "Hugging Face Blog",
+      "title": "【Grok 4.6】GPT-5.6 Solに匹敵するフロンティアモデル！性能・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/grok-4-6/",
+      "description": "2026年8月13日、SpaceXAI（旧xAI）が新モデル「Grok 4.6」を公開しました！ 前モデルのGrok 4.5から約1か月というハイペースでのリリースとなり、AIコミュニティで大きな反響を呼んでいます。長時 [...]...",
+      "publishedDate": "Thu, 13 Aug 2026 02:44:40 +0000",
+      "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/69d815b52c6db28cfdfdd422/3HJgWuzAFymnAq6TqEdL7.png",
-      "language": "en"
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Grok-4.6-1024x576.webp",
+      "language": "ja"
     },
     {
-      "title": "Security incident disclosure — July 2026",
-      "titleJa": "セキュリティインシデントの開示 — 2026 年 7 月",
-      "link": "https://huggingface.co/blog/security-incident-july-2026",
-      "description": "...",
-      "publishedDate": "Thu, 16 Jul 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
+      "title": "【Import from another agent】Claude CodeやCursorの設定をChatGPTにワンクリック移行！使い方・仕組み・活用シーンを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/import-from-another-agent/",
+      "description": "Import from another agentは、OpenAIが2026年8月12日に公開したClaude Code・Cursor・Claude Coworkの開発環境をChatGPTやCodexへ移行できる公式イン [...]...",
+      "publishedDate": "Thu, 13 Aug 2026 01:52:01 +0000",
+      "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/security-incident-july-2026/thumbnail.png",
-      "language": "en"
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Import-from-another-agent_2608-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "RAGの前処理の有無を徹底比較！精度の変化やPDF・表データを扱うときの注意点も解説",
@@ -330,94 +484,6 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/preprocessing_2608-1024x576.webp",
       "language": "ja"
-    },
-    {
-      "title": "The Download: Google’s AI shake-up and Meta’s rogue model",
-      "titleJa": "ダウンロード: Google の AI 刷新と Meta の不正モデル",
-      "link": "https://www.technologyreview.com/2026/08/06/1141278/the-download-google-ai-shake-up-meta-rogue-model/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Google’s AI empire is being reshaped. Here’s what’...",
-      "publishedDate": "Thu, 06 Aug 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/04/2_digitalselves_photocredit_JonathanReus.jpg?fit=2128,1196",
-      "language": "en"
-    },
-    {
-      "title": "転移学習とは？ファインチューニングとの違いややり方をわかりやすく解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/transfer-learning/",
-      "description": "転移学習とは、大量のデータで学習済みのモデルを別の目的に転用する手法です。ゼロから作らずに済むため、データが数百枚でも実用的な精度を狙えます。画像分類で使われるMobileNet V2も、140万枚の画像で学習済みです。 [...]...",
-      "publishedDate": "Thu, 06 Aug 2026 11:21:04 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Transfer-learning_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
-      "titleJa": "ChatGPT の GPT-5.6 Sol を改善し、無料ユーザー向けに GPT-5.6 Luna へのアクセスを拡大",
-      "link": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
-      "description": "ChatGPT introduces improved GPT-5.6 Sol with better accuracy and consistency, plus expanded access for free users and unlimited everyday chats with GPT-5.6 Luna....",
-      "publishedDate": "Thu, 06 Aug 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "ロボトラック、シリーズAラウンド ファーストクローズでエクイティ52億円を調達。完全自動運転トラックの社会実装に向けた開発・実証を推進",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/robotruck-funding-physical-ai/",
-      "description": "ロボトラックは、シリーズAラウンドのファーストクローズとして、第三者割当増資により約52億円を調達したと発表しました。今回の調達資金を活用し「国産レベル4自動運転システム」の社会実装に向けた開発および実証体制を強化します [...] The post ロボトラック、シリーズAラウンド ファーストクローズでエクイティ52億円を調達。完全自動運転トラックの社会実装に向けた開発・実証を推進 first ...",
-      "publishedDate": "Thu, 06 Aug 2026 08:36:32 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/robotruck-funding-physical-ai.png",
-      "language": "ja"
-    },
-    {
-      "title": "「ソフトバンク・東北大学 AI for Disaster Science共創研究所」設立。災害デジタルツインと防災AIを融合",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/tohoku-university-softbank/",
-      "description": "東北大学とソフトバンクは「ソフトバンク・東北大学 AI for Disaster Science共創研究所」を設立しました。災害デジタルツインと防災AIを融合させた「AI4DS基盤」を共同開発し、社会実装を推進します。 [...] The post 「ソフトバンク・東北大学 AI for Disaster Science共創研究所」設立。災害デジタルツインと防災AIを融合 first appear...",
-      "publishedDate": "Thu, 06 Aug 2026 08:24:11 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/tohoku-university-softbank.png",
-      "language": "ja"
-    },
-    {
-      "title": "Working with the American Psychological Association on youth mental health and AI",
-      "titleJa": "青少年のメンタルヘルスと AI に関して米国心理学会と協力",
-      "link": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
-      "description": "OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental health....",
-      "publishedDate": "Thu, 06 Aug 2026 06:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Perplexity APIとは？APIキー取得方法から実装、他APIとの違いまで詳しく解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/perplexity-api/",
-      "description": "近年、生成AIを自社サービスへ組み込む企業が増えていますが、学習データ以降の最新情報には対応できない点が課題です。そんな課題を解決できるのがPerplexity APIです。Perplexity APIなら、リアルタイム [...]...",
-      "publishedDate": "Thu, 06 Aug 2026 04:33:46 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Perplexity-API_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "From asking to doing: How the world is putting ChatGPT to work",
-      "titleJa": "依頼から実行へ: 世界は ChatGPT をどのように活用しているか",
-      "link": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work",
-      "description": "New OpenAI Signals data shows how people use ChatGPT worldwide, with country-level insights on adoption, usage trends, and evolving behavior....",
-      "publishedDate": "Thu, 06 Aug 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "Claude Codeのクロスセッションメッセージングとは？セッション同士がAIだけで会話！使い方・仕組み・活用シーンを徹底解説",
@@ -475,61 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "Preferred Networksが防衛装備庁の実証を受託。国産の生成AIで自衛隊の意思決定を支援",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/pfn-mod-ai-operational-analysis/",
-      "description": "Preferred Networksは、防衛装備庁の実証を受託し、自衛隊の作戦計画立案支援システム開発を開始しました。国産生成AIを活用して多種多様な情報を統合分析し、迅速な意思決定を支援します。 このニュースのポイント [...] The post Preferred Networksが防衛装備庁の実証を受託。国産の生成AIで自衛隊の意思決定を支援 first appeared on AIポータ...",
-      "publishedDate": "Fri, 07 Aug 2026 07:40:55 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/pfn-mod-ai-operational-analysis.png",
-      "language": "ja"
-    },
-    {
-      "title": "電通デジタル、購買行動におけるAI活用実態調査を実施。相談率は約3割で旅行や金融が高水準",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/dentsu-ai-consumer-survey-2026/",
-      "description": "電通デジタルは、生活者の購買におけるAI活用の実態を捉える調査を実施しました。調査の結果、全商品カテゴリーで3割以上の人が購買時にAIへ相談しており、旅行や金融などの高関与カテゴリーで活用が進んでいることが判明しました。 [...] The post 電通デジタル、購買行動におけるAI活用実態調査を実施。相談率は約3割で旅行や金融が高水準 first appeared on AIポータルメディアA...",
-      "publishedDate": "Fri, 07 Aug 2026 07:34:07 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/dentsu-ai-consumer-survey-2026-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "プレイネクストラボ、福岡県宮若市と共同でデジタル庁生成AI「源内」を活用した自治体AX実証実験を開始",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/playnextlab-gennai-miyawaka-city/",
-      "description": "プレイネクストラボは、福岡県宮若市と共同で、デジタル庁の自治体向け生成AIオープンソース「源内」を活用した自治体AXの実証実験を開始します。職員間のナレッジ共有や人事異動に伴う業務引継ぎの効率化に対する有効性を検証します [...] The post プレイネクストラボ、福岡県宮若市と共同でデジタル庁生成AI「源内」を活用した自治体AX実証実験を開始 first appeared on AIポータ...",
-      "publishedDate": "Fri, 07 Aug 2026 07:30:26 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/playnextlab-gennai-miyawaka-city-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "AIはSEOにどこまで使える？AI時代のSEO対策の方法・メリット・注意点を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-seo-measures-merit/",
-      "description": "「ChatGPTのような生成AIをSEOに使えば、記事制作をもっと速くできるのではないか」と考える担当者もいるでしょう。一方で、AIに任せた記事が検索で評価されるのか、検索評価が下がったりスパムポリシーに抵触したりしない [...] The post AIはSEOにどこまで使える？AI時代のSEO対策の方法・メリット・注意点を解説 first appeared on AIポータルメディアAIsmi...",
-      "publishedDate": "Fri, 07 Aug 2026 06:57:13 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/SEOmain.png",
-      "language": "ja"
-    },
-    {
-      "title": "CAIO（最高AI責任者）とは？役割や必須スキル、日本企業の設置事例を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/caio-chief-ai-officer/",
-      "description": "生成AIの業務利用が広がるなか、組織内のAI活用を経営レベルで統括する役職として「CAIO（最高AI責任者）」が注目されています。日本では企業・自治体で設置例が公表され、政府でも各府省庁にAI統括責任者（CAIO）を置く [...] The post CAIO（最高AI責任者）とは？役割や必須スキル、日本企業の設置事例を徹底解説 first appeared on AIポータルメディアAIsmil...",
-      "publishedDate": "Fri, 07 Aug 2026 06:55:57 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/CAIOmain.png",
-      "language": "ja"
-    },
-    {
       "title": "【Agent Plugins】AIエージェント拡張の共通規格が誕生！仕組み・使い方・活用シーンを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/agent-plugins/",
@@ -538,17 +549,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Agent-Plugins_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年企業のAI導入・活用に関する調査】AIを組織として導入できている企業は26.8％。AI導入企業の68.0％が、自社でのAI導入・活用は「上手くいっている」と回答",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-adoption-survey-2026/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーとMMD研究所は共同で、予備調査では20歳～69歳の会社員15,161人、本調査では勤務先でAIが組織的に導入されており、かつ自身がその [...] The post 【2026年企業のAI導入・活用に関する調査】AIを組織として導入できている企業は26.8％。AI導入企業の68.0％が、自社でのAI導入・活用は「...",
-      "publishedDate": "Fri, 07 Aug 2026 02:00:07 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/ai-adoption-survey_00.png",
       "language": "ja"
     },
     {
