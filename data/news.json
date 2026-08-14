@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-13T01:10:53.731557",
+  "lastUpdated": "2026-08-14T01:09:31.045358",
   "articles": [
     {
       "title": "AIに仕事を持たせる時代｜生成AI活用の4段階と業務設計",
@@ -62,26 +62,6 @@
       "language": "ja"
     },
     {
-      "title": "Christina Hvid Steps Down from buildingSMART International Board of Directors",
-      "link": "https://www.buildingsmart.org/christina-hvid-resigned-from-the-board/",
-      "description": "London, U.K. – June 9th, 2026 — buildingSMART International (bSI) announces that Christina Hvid resigned from the Board of Directors on 9 June 2026. We extend our sincere thanks to Christina... The po...",
-      "publishedDate": "Tue, 16 Jun 2026 09:56:56 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The first buildingSMART openBIM Hackathon in Porto is complete",
-      "link": "https://www.buildingsmart.org/the-first-buildingsmart-openbim-hackathon-in-porto-is-complete/",
-      "description": "The first buildingSMART openBIM Hackathon is complete - and it delivered more than expected. Over 50 hours, 47 participants across 9 teams worked under real pressure to build solutions that work in pr...",
-      "publishedDate": "Tue, 14 Apr 2026 15:05:06 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "そのIFC、本当に使えますか？品質管理3層の実務術",
       "link": "https://axconstdx.com/2026/08/12/%e3%81%9d%e3%81%aeifc%e3%80%81%e6%9c%ac%e5%bd%93%e3%81%ab%e4%bd%bf%e3%81%88%e3%81%be%e3%81%99%e3%81%8b%ef%bc%9f%e5%93%81%e8%b3%aa%e7%ae%a1%e7%90%863%e5%b1%a4%e3%81%ae%e5%ae%9f%e5%8b%99%e8%a1%93/",
       "description": "IFCを無事に書き出せたその瞬間、思わずほっと安心していませんか。実はその油断こそが、竣工後の維持管理段階で情報不足に気づき、大きな手戻りを招く落とし穴なのです。本記事を読めば、IFCを本当に使える状態へ導く品質管理の考 [...] <p>The post そのIFC、本当に使えますか？品質管理3層の実務術 first appeared on 生成AIと建設DX.</p>...",
@@ -102,9 +82,9 @@
       "language": "ja"
     },
     {
-      "title": "点群データをBIMに変換する方法｜ReCap・Revitで進めるScan to BIM【2026年版】",
+      "title": "ReCap→Revitで点群をBIM化する4手順｜RCP/RCS・座標・LOD・QA/QC【2026年版】",
       "link": "https://axconstdx.com/2026/08/11/%e7%82%b9%e7%be%a4%e3%83%87%e3%83%bc%e3%82%bf%e3%82%92bim%e3%81%ab%e5%a4%89%e6%8f%9b%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95%ef%bd%9crecap%e3%83%bbrevit%e3%81%a7%e9%80%b2%e3%82%81%e3%82%8bscan-to-bim/",
-      "description": "点群データを取り込んでも、なぜかBIMモデルにならない。そんなもどかしさを感じたことはありませんか。Scan to BIMは単純なファイル変換ではなく「意味づけ」の作業です。本記事を読めば、手戻りなく迷わず進められる具体 [...] <p>The post 点群データをBIMに変換する方法｜ReCap・Revitで進めるScan to BIM【2026年版】 first appeared on 生...",
+      "description": "「点群をRevitに読み込めば、すぐBIMになる」と思っていませんか。実際のScan to BIMは、それほど単純ではありません。基本フローは「LAS／E57 → ReCap → RCP／RCS → Revit → QA [...] <p>The post ReCap→Revitで点群をBIM化する4手順｜RCP/RCS・座標・LOD・QA/QC【2026年版】 first appeared on...",
       "publishedDate": "Tue, 11 Aug 2026 05:05:01 +0000",
       "source": "生成AIと建設DX",
       "category": "bim",
@@ -120,46 +100,6 @@
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/09/32291ade4f8910db1293acd6b91f277b-130x82.png",
       "language": "ja"
-    },
-    {
-      "title": "buildingSMART International Appoints Aidan Mercer as Managing Director",
-      "link": "https://www.buildingsmart.org/buildingsmart-international-appoints-aidan-mercer-as-managing-director/",
-      "description": "London, U.K. – April 30th, 2026 — The Board of buildingSMART International (bSI) is pleased to announce the appointment of Aidan Mercer as Managing Director (MD), effective 1 May 2026.... The post bui...",
-      "publishedDate": "Thu, 30 Apr 2026 09:56:12 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
-      "link": "https://www.buildingsmart.org/industry-insights-embracing-challenges-and-opportunities-of-using-openbim-for-increasing-efficiency-in-the-construction-process/",
-      "description": "Read about Construction Industry leaders perspective on embracing challenges and opportunities of using openBIM for increasing efficiency: Link The post Industry Insights “Embracing Challenges and Opp...",
-      "publishedDate": "Thu, 16 Apr 2026 12:30:14 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "We are looking for feedback on your experience with IDS",
-      "link": "https://www.buildingsmart.org/we-are-looking-for-feedback-on-your-experience-with-ids/",
-      "description": "Information Delivery Specification (IDS) marks its second anniversary this June, and we want to hear from the community - especially IDS users and implementers. Share your feedback on what works... Th...",
-      "publishedDate": "Thu, 14 May 2026 10:13:46 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The buildingSMART Implementers Assembly, February 2026 Event Report",
-      "link": "https://www.buildingsmart.org/the-buildingsmart-implementers-assembly-february-2026-event-report/",
-      "description": "The latest buildingSMART Implementers Assembly, hosted by Bentley in their Exton (PA) office, brought together the buildingSMART implementers community for two days of focused discussion and practical...",
-      "publishedDate": "Thu, 09 Apr 2026 11:11:07 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "着工とは？いつから？｜施工・着手・竣工との違いや工事の流れをわかりやすく解説",
@@ -252,26 +192,6 @@
       "language": "ja"
     },
     {
-      "title": "buildingSMART International Announces Outcomes of 2026 International Council AGM",
-      "link": "https://www.buildingsmart.org/buildingsmart-international-announces-outcomes-of-2026-international-council-agm/",
-      "description": "London, U.K. – August 10th, 2026 — buildingSMART International (bSI) is pleased to announce the resolutions passed at the Annual General Meeting of the International Council, which concluded on 6 Augu...",
-      "publishedDate": "Mon, 10 Aug 2026 08:22:03 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
-      "link": "https://www.buildingsmart.org/buildingsmart-brazil-has-been-formally-approved-as-a-full-chapter/",
-      "description": "London, U.K. – March 27th, 2026 — buildingSMART International (bSI) is pleased to announce that buildingSMART Brazil has been formally approved by the Board to become a Full Chapter, effective March.....",
-      "publishedDate": "Fri, 27 Mar 2026 10:19:53 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "建設経済研究所、2027年度の民間非住宅建設投資は24.1兆円、約3割を占める見通し",
       "link": "https://news.build-app.jp/article/42088/",
       "description": "一般財団法人建設経済研究所と一般財団法人経済調査会経済調査研究所は、2026年7月27日に「建設経済モデルによる建設投資の見通し」を公表しま......",
@@ -280,26 +200,6 @@
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/nonresidential_construction-130x73.jpg",
       "language": "ja"
-    },
-    {
-      "title": "IFC 4.4 Integration for ISO Submission approval voting",
-      "link": "https://www.buildingsmart.org/ifc-4-4-integration-for-iso-submission-approval-voting/",
-      "description": "Vote closing date: 21 Aug 2026 Project plan: Link The IFC 4.4 Integration for ISO Submission has been submitted to the Standards Committee for voting to proceed. The post IFC 4.4 Integration for ISO S...",
-      "publishedDate": "Fri, 03 Jul 2026 12:36:12 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "IFC X Core & Modularisation Final Project Plan voting",
-      "link": "https://www.buildingsmart.org/ifc-x-core-modularisation-final-project-plan-voting/",
-      "description": "Vote closing date: 7 Aug 2026 Project plan: Link The IFC X Core &#38; Modularisation Final Project Plan has been sent to the Standards Committee for voting as Standards Proposal. The post IFC X Core &...",
-      "publishedDate": "Fri, 03 Jul 2026 12:30:53 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
     }
   ]
 }
