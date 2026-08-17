@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-16T02:21:56.593223",
+  "lastUpdated": "2026-08-17T02:20:19.420218",
   "articles": [
     {
       "title": "3 Google updates from Galaxy Unpacked 2026",
@@ -76,28 +76,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/whatisshadowai01.webp",
-      "language": "ja"
-    },
-    {
-      "title": "AIリテラシーとは？意味・必要性・企業での高め方をわかりやすく解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-ai-literacy/",
-      "description": "生成AIの業務利用が広がる一方で、「社員がどの生成AIを使っているか会社が把握していない」「誤情報や情報漏洩をどう防げばよいかわからない」と悩む企業も少なくありません。安全にAIを活用するために欠かせないのが、AIの特性 [...] The post AIリテラシーとは？意味・必要性・企業での高め方をわかりやすく解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 12 Aug 2026 05:50:00 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/whatisailiteracy01.webp",
-      "language": "ja"
-    },
-    {
-      "title": "ABEJA、AI国際規格「ISO/IEC 42001」認証を取得。国際基準のガバナンスでAI実運用を支援",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/abeja-iso42001-certification/",
-      "description": "ABEJAは、AIマネジメントシステムにおける最新の国際規格「ISO/IEC 42001」認証を取得しました。国際基準に適合したガバナンス体制のもと、ミッションクリティカルな業務におけるAI活用を支援します。 このニュー [...] The post ABEJA、AI国際規格「ISO/IEC 42001」認証を取得。国際基準のガバナンスでAI実運用を支援 first appeared on AIポ...",
-      "publishedDate": "Wed, 12 Aug 2026 02:20:57 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/abeja-iso42001-certification.png",
       "language": "ja"
     },
     {
@@ -464,6 +442,39 @@
       "language": "ja"
     },
     {
+      "title": "【GLM-5.3】コーディング性能50%向上！Z.aiのオープンウェイトAIモデルの性能・使い方・活用シーンを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/glm-5-3/",
+      "description": "2026年8月14日、中国のAI企業Z.ai（旧Zhipu AI）が次世代大規模言語モデル「GLM-5.3」をリリースしました！ GLM-5.3は、前世代のGLM-5.2と同じベースモデルを採用しながら、ポストトレーニン [...]...",
+      "publishedDate": "Sun, 16 Aug 2026 04:08:29 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GLM-5.3-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIの種類とは？7つの分類ごとの特徴と代表サービスを徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/types-of-generative-ai/",
+      "description": "生成AIには文章・画像・動画・音声・コードなど、対象ごとに異なる種類が存在します。 本記事では、生成AIを7つの分類に整理したうえで、なかでも代表サービスと料金プランを比較しやすいテキスト・画像・動画・音声/音楽・コード [...] The post 生成AIの種類とは？7つの分類ごとの特徴と代表サービスを徹底解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 17 Aug 2026 01:38:02 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/typesofgenerativeai.png",
+      "language": "ja"
+    },
+    {
+      "title": "WEB雑誌「導入成功事例10選 」 ― 製造・小売業からIT・金融まで現場で成果を生むAI活用ユースケースを一挙紹介 ―",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/implementation_casestudy_2026/",
+      "description": "AIポータルメディア「AIsmiley」は、この度、AI導入推進の一環として、WEB雑誌「導入成功事例10選」― 製造・小売業からIT・金融まで現場で成果を生むAI活用ユースケースを一挙紹介 ―」をリリースしました。 本 [...] The post WEB雑誌「導入成功事例10選 」 ― 製造・小売業からIT・金融まで現場で成果を生むAI活用ユースケースを一挙紹介 ― first appeare...",
+      "publishedDate": "Mon, 17 Aug 2026 01:00:46 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/1149_1200x628_2.jpg",
+      "language": "ja"
+    },
+    {
       "title": "Claude Codeのクロスセッションメッセージングとは？セッション同士がAIだけで会話！使い方・仕組み・活用シーンを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/claude-code-cross-session-messaging/",
@@ -483,17 +494,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Harness-Engineering_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "LLMのファインチューニングとは？RAGとの違いや活用のコツ、メリット・デメリットを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/about-llm-finetuning/",
-      "description": "LLM（大規模言語モデル）の性能を業務やサービスに合わせて最適化する方法として、「ファインチューニング」が注目されています。しかし、「RAGとの違いが分からない」「どのようなケースで導入すべきなのか判断できない」という方 [...]...",
-      "publishedDate": "Mon, 10 Aug 2026 02:57:26 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/LLM-Fine-tuning_2608-1024x576.webp",
       "language": "ja"
     },
     {
@@ -549,6 +549,39 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Reinforcement-learning_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "タブもテーマも拡張機能もないAI専用の超軽量ヘッドレスブラウザ「Kitesurf」、Cloudflareが発表",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/aikitesurfcloudflare.html",
+      "description": "CloudflareはAIエージェントによる操作専用のヘッドレスなWebブラウザ「Kitesurf」を発表しました。 現在ベータ版として公開されています。 Kitesurfは主にRust言語で記述されWebAssemblyにコンパイルされた......",
+      "publishedDate": "2026-08-16T15:10:13Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/sc72alsx.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Zed開発チームが「Delta」発表。人間とAIの全対話とコード変更履歴をコンテキストとして保存共有するコラボレーションツール",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/zeddeltaai.html",
+      "description": "オープンソースとして開発されている高速なコードエディタ「Zed」の開発チームは、人間の開発チームとAIエージェントの議論や対話内容とコードの変更履歴をすべて共有し、コンテキストとして保存できる「Delta」を発表しました。 Today we......",
+      "publishedDate": "2026-08-16T15:05:36Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/HPinQArWMAAjnbT.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "無料で使える「Delphi 13 Community Edtion」提供開始。Windows x86/Arm、Mac、iOS、Androidのネイティブアプリなど開発可能",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/delphi_13_community_edtionwindows_x86armmaciosandroid.html",
+      "description": "米エンバカデロ・テクノロジーズは、無料で使える統合開発環境「Delphi 13 Community Edtion」の提供開始を発表しました。 Delphi 13 Community Edition is now available!The ......",
+      "publishedDate": "2026-08-16T15:01:16Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/nXPZxAOr.png",
       "language": "ja"
     },
     {
@@ -681,39 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/kubeconjapan2026-01.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Google Cloud、AIが自律的にコードの脆弱性検出からサンドボックス内でのリスク検証、修正までを自動実行。「CodeMender」プレビュー公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/google_cloudaicodemender.html",
-      "description": "Google Cloudは、コードの脆弱性の検出、リスクの検証と報告、修正までを自律的に実行するAIエージェント「CodeMender」のプレビュー公開を発表しました。 複雑な脆弱性まで発見し、サンドボックス内でリスク検証 CodeMend......",
-      "publishedDate": "2026-07-28T15:54:06Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/codemender-pv01.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "SaaSにおけるUI開発のよくある課題とその解決方法、教えます［PR］",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/saasuipr.html",
-      "description": ".jetform-wrapper { border: 2px solid #ccc; /* 枠線 / padding: 20px; / 内側の余白 / border-radius: 12p......",
-      "publishedDate": "2026-07-27T15:43:49Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/saas-komatta-thumbnail03.png",
-      "language": "ja"
-    },
-    {
-      "title": "Vercel、TypeScriptをC言語に変換してからネイティブな実行ファイルにコンパイルする「scriptc」、オープンソースで公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/verceltypescriptcscriptc.html",
-      "description": "Webアプリケーションのホスティングサービス「Vercel」で知られるVercel社は、Node.jsで実行可能なTypeScriptコードを、変更することなく同じ機能を備えたネイティブな実行ファイルにコンパイルするコンパイラ「script......",
-      "publishedDate": "2026-07-27T15:20:00Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/scriptc-ann01.jpg",
       "language": "ja"
     }
   ]
