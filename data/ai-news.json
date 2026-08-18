@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T02:20:19.420218",
+  "lastUpdated": "2026-08-18T02:16:30.844254",
   "articles": [
     {
       "title": "3 Google updates from Galaxy Unpacked 2026",
@@ -46,39 +46,6 @@
       "language": "en"
     },
     {
-      "title": "メディア掲載とは？意味・メリット・掲載される5つの方法を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-media-coverage/",
-      "description": "「自社の商品や取り組みをメディアに掲載してもらいたいが、何から始めればよいか分からない」。そう悩んでいませんか。メディア掲載には、記者・編集部の判断による取材記事のほか、プレスリリースや記事広告、業界ポータルへの製品掲載 [...] The post メディア掲載とは？意味・メリット・掲載される5つの方法を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 12 Aug 2026 05:51:53 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/whatismediacoverage01.webp",
-      "language": "ja"
-    },
-    {
-      "title": "OAuthとは？仕組み・認証との違い・危険性と対策をわかりやすく解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-oauth/",
-      "description": "「Googleでログイン」や「カレンダーへのアクセスを許可」と表示されたとき、裏側では認証と認可という別の仕組みが動いています。OAuthは、パスワードを連携先へ渡さず、必要なデータへのアクセス権だけを委ねる認可の標準仕 [...] The post OAuthとは？仕組み・認証との違い・危険性と対策をわかりやすく解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 12 Aug 2026 05:51:50 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/whatisoauth01.webp",
-      "language": "ja"
-    },
-    {
-      "title": "シャドーAIとは？企業が知るべき6つのリスクと5つの対策",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-shadow-ai/",
-      "description": "「従業員が個人アカウントの生成AIに顧客情報を入力していないか」「AIツールの利用を全面禁止すべきか」と悩む企業は少なくありません。 シャドーAIとは、企業が把握・承認していないAIツールを、従業員が業務で利用する行為ま [...] The post シャドーAIとは？企業が知るべき6つのリスクと5つの対策 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Wed, 12 Aug 2026 05:50:10 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/whatisshadowai01.webp",
-      "language": "ja"
-    },
-    {
       "title": "How RingCentral builds AI-native work from engineering to ops",
       "titleJa": "RingCentral がエンジニアリングから運用まで AI ネイティブの作業を構築する方法",
       "link": "https://openai.com/index/ringcentral",
@@ -98,17 +65,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/260701_ICYMI-June-AI_Thumb.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "New York City educators and industry leaders gathered at Google’s offices to shape the future of AI in classrooms.",
-      "titleJa": "ニューヨーク市の教育者と業界リーダーが Google のオフィスに集まり、教室における AI の未来を形作りました。",
-      "link": "https://blog.google/products-and-platforms/products/education/nyc-ai-summit/",
-      "description": "Google, the New York Jobs CEO Council and Urban Assembly hosted an AI summit for 150 education and industry leaders....",
-      "publishedDate": "Wed, 01 Jul 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Summit_Photo_1.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -145,15 +101,15 @@
       "language": "en"
     },
     {
-      "title": "Grabette: an open system to record robot-manipulation data",
-      "titleJa": "Grabette: ロボット操作データを記録するオープン システム",
-      "link": "https://huggingface.co/blog/grabette",
-      "description": "...",
-      "publishedDate": "Tue, 21 Jul 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/grabette/thumbnail_grabette.png",
-      "language": "en"
+      "title": "「AI博覧会 Summer 2026」カンファレンス 第3弾スピーカーを発表！ AIで成果を出せる日本企業はわずか9%—国産AI「Noetra」の挑戦から、大手企業の全社導入、行政DXまで、AI活用の”リアル”を公開",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/aihaku-sum2026-3rdsp/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年8月26日（水）・27日（木）の2日間、新宿住友ビル 三角広場にて「AI博覧会 Summer 2026」を開催します。 今 [...] The post 「AI博覧会 Summer 2026」カンファレンス 第3弾スピーカーを発表！ AIで成果を出せる日本企業はわずか9%—国産AI「Noetra」の挑...",
+      "publishedDate": "Tue, 18 Aug 2026 02:00:18 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/AIHAKU1.png",
+      "language": "ja"
     },
     {
       "title": "Celebrating 25 years of visual search innovation",
@@ -179,7 +135,7 @@
     },
     {
       "title": "Thinking of ACE? We Can Do It with Fewer Tokens",
-      "titleJa": "エースについて考えていますか?少ないトークンで実現できる",
+      "titleJa": "エースについて考えていますか？少ないトークンで実現できる",
       "link": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
       "description": "...",
       "publishedDate": "Tue, 11 Aug 2026 13:37:10 GMT",
@@ -187,17 +143,6 @@
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6435a1131860001f144239ea/G2z5bU66FNnhBf_UhSNij.jpeg",
       "language": "en"
-    },
-    {
-      "title": "【Muse Glimmer】Meta発の30Bオープンモデル！ローカルPCで動くAIエージェントの性能・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/muse-glimmer/",
-      "description": "2026年8月10日、Metaはローカル環境で動作するオープンウェイトのAIモデル「Muse Glimmer」を公開しました！ Muse Glimmerは、300億パラメータながら4bit量子化で24GB VRAMのGP [...]...",
-      "publishedDate": "Tue, 11 Aug 2026 10:42:25 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Muse-Glimmer-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "Testing ads in ChatGPT",
@@ -220,17 +165,6 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "【Qwen-MM-Plugins】AIエージェントにマルチモーダル能力を追加！仕組み・使い方・活用シーンを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwen-mm-plugins/",
-      "description": "2026年8月10日、Alibaba CloudのQwenチームは、AIエージェントにマルチモーダル機能をプラグインとして追加するためのオープンソース拡張ライブラリ「Qwen-MM-Plugins」を公開しました！ Cl [...]...",
-      "publishedDate": "Tue, 11 Aug 2026 02:42:52 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen-MM-Plugins-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more",
@@ -289,7 +223,7 @@
     },
     {
       "title": "Create, edit and star in videos with two Google Vids updates",
-      "titleJa": "2 つの Google Vids アップデートにより、動画の作成、編集、主演を行うことができます",
+      "titleJa": "2 つの Google Vids アップデートにより、動画を作成、編集、スターを付けることができます",
       "link": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
       "description": "Text \"Gemini Omni and Personal Avatars in Google Vids\" surrounded by various images...",
       "publishedDate": "Thu, 16 Jul 2026 16:00:00 +0000",
@@ -343,28 +277,6 @@
       "language": "en"
     },
     {
-      "title": "Flock is tightening its rules in response to a growing surveillance backlash",
-      "titleJa": "フロックは監視に対する反発の高まりに応えて規則を強化している",
-      "link": "https://www.technologyreview.com/2026/08/13/1141904/flock-is-tightening-its-rules-in-response-to-a-growing-surveillance-backlash/",
-      "description": "The police-tech giant Flock is announcing today that it will change officers’ access to its nationwide network of license plate readers, in an apparent effort to quell a growing backlash and win back ...",
-      "publishedDate": "Thu, 13 Aug 2026 13:41:10 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/AP26039248966381.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "The Download: kids’ thoughts on AI, and female clones of male mice",
-      "titleJa": "ダウンロード: AI と雄マウスの雌クローンについての子供たちの考え",
-      "link": "https://www.technologyreview.com/2026/08/13/1141896/the-download-kids-thoughts-on-ai-female-clones-male-mice/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How kids feel about AI, in their own words —Jen Sw...",
-      "publishedDate": "Thu, 13 Aug 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/06/AP204983464165-SCtop.jpg?fit=1920,1280",
-      "language": "en"
-    },
-    {
       "title": "The builder’s guide to GPT‑5.6",
       "titleJa": "GPT-5.6 ビルダーズ ガイド",
       "link": "https://openai.com/index/builders-guide-to-gpt-5-6",
@@ -387,26 +299,15 @@
       "language": "en"
     },
     {
-      "title": "Grok 4.6とは？性能・料金・使い方・導入前の注意点を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-grok-4-6/",
-      "description": "Grok 4.6は、SpaceXAIが2026年8月12日に公開したAIモデルです。コーディングや長時間のエージェントタスク、知識労働に重点を置いています。「性能はどれくらいか」「料金はいくらか」「自社で導入して問題ない [...] The post Grok 4.6とは？性能・料金・使い方・導入前の注意点を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 13 Aug 2026 07:53:43 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/whatisgrok4601.webp",
-      "language": "ja"
-    },
-    {
-      "title": "AI面接とは？企業向けサービス比較・選び方・法規制を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-ai-interview/",
-      "description": "AI面接を活用すれば、面接日程の調整や一次選考の負担を軽減できます。一方で、AIが担当する工程と、人が最終判断する工程は、導入前に明確にしておくことが重要です。候補者への説明方法や、録画・音声データの管理方法もあわせて確 [...] The post AI面接とは？企業向けサービス比較・選び方・法規制を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 13 Aug 2026 02:49:38 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/whatisaiinterview01.webp",
-      "language": "ja"
+      "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+      "titleJa": "OpenAI、ダリ・ラジク氏を最高収益責任者に任命",
+      "link": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+      "description": "OpenAI appoints Dali Rajic as Chief Revenue Officer to lead its global revenue organization and help businesses realize the full value of AI....",
+      "publishedDate": "Thu, 13 Aug 2026 09:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "【Grok 4.6】GPT-5.6 Solに匹敵するフロンティアモデル！性能・料金・使い方を徹底解説",
@@ -417,17 +318,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Grok-4.6-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "GPT Transcribeとは？料金・精度・使い方を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-gpt-transcribe/",
-      "description": "OpenAIは2026年7月28日（米国時間）、音声文字起こしの新モデル「GPT Transcribe」「GPT Live Transcribe」を発表しました。「2つのモデルは何が違うのか」「料金はいくらか」と気になっ [...] The post GPT Transcribeとは？料金・精度・使い方を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 13 Aug 2026 02:43:15 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gpttranscribemain.png",
       "language": "ja"
     },
     {
@@ -442,6 +332,28 @@
       "language": "ja"
     },
     {
+      "title": "What We Learned by Reproducing 2,200 papers from ICML",
+      "titleJa": "ICML の 2,200 件の論文を再現して学んだこと",
+      "link": "https://huggingface.co/blog/icml-2026-open-reproductions",
+      "description": "...",
+      "publishedDate": "Thu, 13 Aug 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/icml-2026-open-reproductions/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Baseten on Hugging Face Inference Providers 🔥",
+      "titleJa": "ハグ顔推論プロバイダーのベーステン 🔥",
+      "link": "https://huggingface.co/blog/baseten",
+      "description": "...",
+      "publishedDate": "Thu, 06 Aug 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/inference-providers/welcome-baseten.png",
+      "language": "en"
+    },
+    {
       "title": "【GLM-5.3】コーディング性能50%向上！Z.aiのオープンウェイトAIモデルの性能・使い方・活用シーンを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/glm-5-3/",
@@ -453,47 +365,157 @@
       "language": "ja"
     },
     {
-      "title": "生成AIの種類とは？7つの分類ごとの特徴と代表サービスを徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/types-of-generative-ai/",
-      "description": "生成AIには文章・画像・動画・音声・コードなど、対象ごとに異なる種類が存在します。 本記事では、生成AIを7つの分類に整理したうえで、なかでも代表サービスと料金プランを比較しやすいテキスト・画像・動画・音声/音楽・コード [...] The post 生成AIの種類とは？7つの分類ごとの特徴と代表サービスを徹底解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Mon, 17 Aug 2026 01:38:02 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/typesofgenerativeai.png",
-      "language": "ja"
+      "title": "NVIDIA Cosmos-H-Dreams: Bringing Real-Time Generative Simulation to Surgical Robotics",
+      "titleJa": "NVIDIA Cosmos-H-Dreams: 手術ロボット工学にリアルタイムの生成シミュレーションを導入",
+      "link": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+      "description": "...",
+      "publishedDate": "Mon, 27 Jul 2026 09:32:20 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/68c1279544f671330c604f4c/Cj0RZwvOSUhFGFEFKgyDw.png",
+      "language": "en"
     },
     {
-      "title": "WEB雑誌「導入成功事例10選 」 ― 製造・小売業からIT・金融まで現場で成果を生むAI活用ユースケースを一挙紹介 ―",
+      "title": "Codexのリセット権が購入可能に？利用上限をリセットする手順と配布タイミングを解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/implementation_casestudy_2026/",
-      "description": "AIポータルメディア「AIsmiley」は、この度、AI導入推進の一環として、WEB雑誌「導入成功事例10選」― 製造・小売業からIT・金融まで現場で成果を生むAI活用ユースケースを一挙紹介 ―」をリリースしました。 本 [...] The post WEB雑誌「導入成功事例10選 」 ― 製造・小売業からIT・金融まで現場で成果を生むAI活用ユースケースを一挙紹介 ― first appeare...",
-      "publishedDate": "Mon, 17 Aug 2026 01:00:46 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/1149_1200x628_2.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Codeのクロスセッションメッセージングとは？セッション同士がAIだけで会話！使い方・仕組み・活用シーンを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code-cross-session-messaging/",
-      "description": "2026年8月8日、AnthropicがClaude Codeの新機能「クロスセッションメッセージング（cross-session messaging）」を公開しました！ これまでClaude Codeで複数のセッション [...]...",
-      "publishedDate": "Mon, 10 Aug 2026 11:38:54 +0000",
+      "link": "https://weel.co.jp/media/innovator/codex-reset/",
+      "description": "2026年8月、OpenAIのコーディングエージェント「Codex」に、利用上限をその場で解除する新しい選択肢が現れました。 話題になっているのは「購入できるリセット権」。5時間枠や週次枠を使い切っても、リセットを1回消 [...]...",
+      "publishedDate": "Mon, 17 Aug 2026 13:55:44 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-code-cross-session-messaging_2608-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/codex-reset_2608-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "ハーネスエンジニアリングとは？Claude Codeでも重要なAIエージェント運用設計を解説",
+      "title": "ChatGPTの支払い方法を徹底解説！確認・変更手順や支払いできない原因も紹介",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/harness-engineering/",
-      "description": "Claude Codeなどの活用が広がる一方、CLAUDE.mdにルールを書くだけでは、長いタスクやチーム運用を安定させにくい場面もあります。そこで注目されているのが、AIを動かす環境全体を設計するハーネスエンジニアリン [...]...",
-      "publishedDate": "Mon, 10 Aug 2026 11:27:31 +0000",
+      "link": "https://weel.co.jp/media/innovator/chatgpt-payment/",
+      "description": "ChatGPTをWeb版から契約する場合、使用できるのはクレジットカードとデビットカードの2種類のみです。しかし、なかには「PayPayは使えないの？」「カードが弾かれる」と困っている方もいるでしょう。 この記事では、具 [...]...",
+      "publishedDate": "Mon, 17 Aug 2026 13:45:05 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Harness-Engineering_2608-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/ChatGPT-payment_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【無料・登録不要】AI画像生成サイトおすすめ9選！安全な使い方と著作権リスクを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/free-ai-image-generation/",
+      "description": "AI画像生成サイトは、文章を入力するだけで数秒で理想の画像を自動作成できるツールです。オリジナル画像の作成時間を短縮できるので、大きな注目を集めています。とはいえ「どれを選べばいい？」「無料で使える？」と迷う方も多いはず [...]...",
+      "publishedDate": "Mon, 17 Aug 2026 11:02:10 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Free-AI-Image-Generation_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "日本ディープラーニング協会、AIガバナンス体制を審査する第三者認証制度「C認証」を創設",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/jdla-c-certification-ai-governance/",
+      "description": "JDLAは、企業等のAIガバナンス体制を第三者として審査・認証する新制度「C認証」を創設しました。本認証制度により、組織が安心・安全にAIを運用するための基盤づくりを支援します。 このニュースのポイント 日本ディープラー [...] The post 日本ディープラーニング協会、AIガバナンス体制を審査する第三者認証制度「C認証」を創設 first appeared on AIポータルメディアAI...",
+      "publishedDate": "Mon, 17 Aug 2026 07:40:12 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/jdla-c-certification.jpg-1.png",
+      "language": "ja"
+    },
+    {
+      "title": "大分県、AI活用による次世代の組織づくりを支援する「DAIB」設立。県内事業者と専門家をマッチング",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/oita-daib-ai-platform/",
+      "description": "大分県は、AIやロボティクスといった先端デジタル技術を活用し、県内事業者の課題解決を支援するプラットフォーム「DAIB」を設立しました。専門家と事業者をマッチングし、人とAIが協働する次世代型の組織づくりを目指します。 [...] The post 大分県、AI活用による次世代の組織づくりを支援する「DAIB」設立。県内事業者と専門家をマッチング first appeared on AIポータルメ...",
+      "publishedDate": "Mon, 17 Aug 2026 07:37:12 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/oita-daib-ai-platform-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "Anthropic、「Claude」モデル評価中の外部不正アクセス事象3件を公表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/anthropic-cybersecurity-incidents/",
+      "description": "Anthropicは、サイバーセキュリティ評価中に「Claude」モデルが評価環境を逸脱し、外部のシステムにアクセスした3件の事象を公表しました。 このニュースのポイント Anthropic、サイバーセキュリティ評価中に [...] The post Anthropic、「Claude」モデル評価中の外部不正アクセス事象3件を公表 first appeared on AIポータルメディアAIsmi...",
+      "publishedDate": "Mon, 17 Aug 2026 07:37:07 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/anthropic-cybersecurity-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "セブン＆アイなど6社、戦略的パートナーシップに合意。AI活用で次世代顧客体験・生活インフラ共創目指す",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/seven-eleven-strategic-partnership/",
+      "description": "セブン＆アイ・ホールディングスなどは、リアルとデジタルを融合させた次世代の顧客体験および次世代生活インフラの共創に向けて、ソフトバンクなど4社と戦略的パートナーシップに合意しました。 このニュースのポイント セブン＆アイ [...] The post セブン＆アイなど6社、戦略的パートナーシップに合意。AI活用で次世代顧客体験・生活インフラ共創目指す first appeared on AIポータ...",
+      "publishedDate": "Mon, 17 Aug 2026 07:20:19 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/seven-eleven2.png",
+      "language": "ja"
+    },
+    {
+      "title": "博報堂DYホールディングスなど4社、「人間中心のAIコンソーシアム」設立。健全なAIの社会実装を推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/human-centered-ai-consortium/",
+      "description": "博報堂DYホールディングス、日立製作所、GMOペパボ、スマートガバナンスの4社は、社会における健全なAIの活用推進を目的とした「人間中心のAIコンソーシアム」を共同で設立しました。 このニュースのポイント 博報堂DYホー [...] The post 博報堂DYホールディングスなど4社、「人間中心のAIコンソーシアム」設立。健全なAIの社会実装を推進 first appeared on AIポータ...",
+      "publishedDate": "Mon, 17 Aug 2026 07:12:44 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/human-centered-ai-consortium.png",
+      "language": "ja"
+    },
+    {
+      "title": "GitHub Copilot Businessとは？他プランとの違い・導入手順を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/github-copilot-business/",
+      "description": "GitHub Copilot Businessは、企業やチームで生成AIコーディング支援を安全に運用できる組織向けプランです。料金は1ユーザー月額19ドルで、1,900 AI Creditsが付属します。とはいえ「個人向 [...]...",
+      "publishedDate": "Mon, 17 Aug 2026 05:36:45 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/GitHub-Copilot-Business_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Gemini 3.7 Flashとは？3.6との違い・料金・性能を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/gemini-3-7-flash/",
+      "description": "Gemini 3.7 Flashは、Googleが2026年8月に発表したFlashシリーズの最新モデルです。前バージョンのGemini 3.6 Flashからわずか3週間というスピードで投入されました。「また検証が必要 [...] The post Gemini 3.7 Flashとは？3.6との違い・料金・性能を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 17 Aug 2026 05:33:09 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/gemini37flash01.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Geminiカスタム指示のおすすめ8選｜Gemとの違いを解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/gemini-custom-instructions/",
+      "description": "Geminiに「カスタム指示」を設定すると、口調や出力形式などの前提を毎回入力しなくても、自分に合った回答を得やすくなります。とはいえ「何を書けばいいか分からない」「会社のアカウントでも使えるのか」と迷う方も少なくありま [...] The post Geminiカスタム指示のおすすめ8選｜Gemとの違いを解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 17 Aug 2026 02:50:02 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/geminicustommain.png",
+      "language": "ja"
+    },
+    {
+      "title": "生成AI無料おすすめツール7選｜用途別の選び方と商用利用まで解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/generative-ai-recommended-tools/",
+      "description": "生成AIを無料で使いたいものの、「どのツールを選べばよいか」「無料でどこまでできるのか」「仕事で使っても大丈夫なのか」と迷う人は多いはずです。 本記事では、テキスト・画像・動画の用途別におすすめの無料生成AIツール7選と [...] The post 生成AI無料おすすめツール7選｜用途別の選び方と商用利用まで解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 17 Aug 2026 02:26:12 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/generativeaitools.png",
+      "language": "ja"
+    },
+    {
+      "title": "スライド作成AIで資料作成を効率化！おすすめ生成AIツール比較",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/slide-ai-create-materials/",
+      "description": "プロンプトを入力するだけで構成からデザインまで自動生成できる「スライド作成AI」は、資料づくりに時間を割けない社会人にとって頼れる存在です。 本記事では、仕組みとメリット、選び方、代表的なツールの特徴を具体的に紹介します [...] The post スライド作成AIで資料作成を効率化！おすすめ生成AIツール比較 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Mon, 17 Aug 2026 02:22:38 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/aicreatematerials.png",
       "language": "ja"
     },
     {
@@ -505,28 +527,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Overfitting_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Grokで画像編集する方法｜X・アプリ別の使い方、プロンプトのコツを解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/grok-creative-image/",
-      "description": "近年、生成AIの画像編集は急速に広がっており、イーロン・マスク氏が率いるxAIによるGrokも例外ではありません。Grokの画像編集機能を使いこなせるようになると、SNS用の素材作成や業務のビジュアル作成がぐっと効率化す [...] The post Grokで画像編集する方法｜X・アプリ別の使い方、プロンプトのコツを解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 14 Aug 2026 07:33:23 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/grokcreativeimage01.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Grokの動画生成とは｜料金・使い方・商用利用・プロンプトのコツを解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/grok-create-movie/",
-      "description": "Grokの動画生成を使ってみたいものの、料金や使い方、どこまで商用利用できるのかが分からず迷っている、ということはありませんか。 本記事では、Grokの動画生成機能の基本仕様から料金、設定項目、注意点までを整理し、これか [...] The post Grokの動画生成とは｜料金・使い方・商用利用・プロンプトのコツを解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Fri, 14 Aug 2026 07:33:22 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/grokcreatemovie01.webp",
       "language": "ja"
     },
     {
@@ -549,6 +549,39 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Reinforcement-learning_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "事例で学ぶ、SaaSの開発を加速しつつプロダクト品質も引き上げる上手な方法とは？［PR］",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/saaspr_1.html",
+      "description": ".jetform-wrapper { border: 2px solid #ccc; /* 枠線 / padding: 20px; / 内側の余白 / border-radius: 12p......",
+      "publishedDate": "2026-08-17T15:46:49Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/saas-komatta-thumbnail02.png",
+      "language": "ja"
+    },
+    {
+      "title": "Visual Studio Code 1.133正式リリース。プロンプトを見失わない固定スクロール、ローカルHTMLファイルの自動リロード、ClaudeとCopilotの混在可能など新機能",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/visual_studio_code_1133htmlclaudecopilot.html",
+      "description": "マイクロソフトはオープンソースで開発されているコードエディタの最新版「Visual Studio Code 1.133」（以下、VS Code 1.133）の正式リリースを発表しました。 The latest @code release b......",
+      "publishedDate": "2026-08-17T15:42:34Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/HPidRiCXQAEGSPk.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Pythonライクで高速な「Mojo言語」がバージョン1.0に到達、今後はコンパイラをオープンソース化すると表明",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/pythonmojo10.html",
+      "description": "Modular社は、AIを高速に実行することを目指したPythonライクなプログラミング言語「Mojo」がバージョン1.0に到達したことを発表しました。 Mojo 1.0 is here.Since we open-sourced the ......",
+      "publishedDate": "2026-08-17T15:40:38Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/Pex8OnGM.jpg",
       "language": "ja"
     },
     {
@@ -681,39 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/dia-on-windows-thisfall.png",
-      "language": "ja"
-    },
-    {
-      "title": "日本におけるクラウドネイティブコミュニティの開発者数が約100万人に、CNCFが調査結果を発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/100cncf.html",
-      "description": "Kubernetesをはじめとするクラウドネイティブなテクノロジーを推進するCloud Native Computing Foundation（以下、CNCF）とIT分野専門の調査会社であるSlashDataは、日本におけるクラウドネイティ......",
-      "publishedDate": "2026-08-02T15:28:02Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/0lnB2of0.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "JetBrains、AIが少ないトークンでコンテキストを取得しやすく、よりよいコード生成を可能にする「JetBrains Context」発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/jetbrainsaijetbrains_context.html",
-      "description": "JetBrainsは、コードリポジトリの上にインテリジェンスなレイヤを構築し、AIエージェントに対して適切なコードのコンテキストを提供することで、AIエージェントによるよりよいコード生成を可能にする新サービス「JetBrains Conte......",
-      "publishedDate": "2026-07-30T17:48:59Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HNwayFBWIAAItj6.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "KubernetesはAIを動かすプラットフォームに。横浜でKubeCon＋CloudNativeCon Japan 2026が開幕",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/kubernetesaikubeconcloudnativecon_japan_2026.html",
-      "description": "クラウドネイティブ関連技術におけるIT業界最大のイベント「KubeCon+CloudNativeCon Japan 2026」が昨日（2026年7月29日）、パシフィコ横浜で開幕しました。日本でKubeCon＋CloudNativeConが......",
-      "publishedDate": "2026-07-29T15:02:00Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/kubeconjapan2026-01.jpg",
       "language": "ja"
     }
   ]
