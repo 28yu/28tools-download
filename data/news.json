@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-18T00:41:41.516678",
+  "lastUpdated": "2026-08-19T00:41:52.130895",
   "articles": [
     {
       "title": "フォークリフト免許の費用はいくら？｜普通免許あり・なしの料金相場や安く取る方法を解説",
@@ -29,6 +29,46 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100kb-1-2-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "BIM図面審査は本当に普及するのか―地方の現状と2029年BIMデータ審査への課題【BIM確認申請特集_後編】",
+      "link": "https://news.build-app.jp/article/41895/",
+      "description": "前編では、吉川建設と大林組の事例を通じて、BIM図面審査の実践状況や運用効果を紹介した。申請業務の効率化や図面整合性の向上など、制度の可能性......",
+      "publishedDate": "Tue, 18 Aug 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/d279a4c294dc34a142ce5c6a5bf12138-130x82.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Claude CoworkがWEB版でも利用可能に",
+      "link": "https://axconstdx.com/2026/08/18/claude-cowork%e3%81%8cweb%e7%89%88%e3%81%a7%e3%82%82%e5%88%a9%e7%94%a8%e5%8f%af%e8%83%bd%e3%81%ab/",
+      "description": "「外出先でも仕事を進めたいのに、PCの前を離れられない」——そんなもどかしさを感じたことはありませんか。ClaudeのAIエージェントCoworkがWeb版・モバイル版にも対応し、PCを閉じても作業は止まらない時代がやっ [...] <p>The post Claude CoworkがWEB版でも利用可能に first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Tue, 18 Aug 2026 11:36:44 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/claude_cowork_ogp_under100kb-1024x537.webp",
+      "language": "ja"
+    },
+    {
+      "title": "東急建設、ドローンポートと3D点群生成を自動連携しデータ処理工数を50％削減",
+      "link": "https://news.build-app.jp/article/42174/",
+      "description": "東急建設株式会社は、KDDI株式会社、KDDIスマートドローン株式会社と共同で、ドローンポートと3D点群生成システムを連携させた自動化の実証......",
+      "publishedDate": "Tue, 18 Aug 2026 06:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/drone_port_3dpoint-130x51.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、6月の建設総合出来高5兆444億円で前年比5.8％増、民間・公共ともに増加",
+      "link": "https://news.build-app.jp/article/42170/",
+      "description": "国土交通省は令和8年8月17日、6月分の建設総合統計を公表しました。建設総合統計は、全国で実施された建設工事の出来高を月ごとに集計したもので......",
+      "publishedDate": "Tue, 18 Aug 2026 04:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/construction_statistics_japan-130x52.jpg",
       "language": "ja"
     },
     {
@@ -152,26 +192,6 @@
       "language": "ja"
     },
     {
-      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第九回)｜深堀り取材【毎月3回更新】",
-      "link": "https://news.build-app.jp/article/42013/",
-      "description": "現実世界をデジタル空間上に取り込み、再現し、多様な目的に援用する技術の普及が急速に進んでいる。それら効率的にデジタルツインを実現する際に威力......",
-      "publishedDate": "Sun, 09 Aug 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/291bc1c1aa4e7381df477654bbe437aa-1-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年版】 防水工事とは？種類・費用相場・耐用年数と選び方",
-      "link": "https://news.build-app.jp/article/42100/",
-      "description": "防水工事は、同じ施工面積でも既存層の状態や立上りの納まりによって原価が変わります。注目したいのは工法ごとの平場単価よりも、見積時の施工条件と......",
-      "publishedDate": "Sun, 09 Aug 2026 15:05:03 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/34841844_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "「指示するAI」から「働くAI」へ ― Gemini Sparkの正体",
       "link": "https://axconstdx.com/2026/08/09/%e3%80%8c%e6%8c%87%e7%a4%ba%e3%81%99%e3%82%8bai%e3%80%8d%e3%81%8b%e3%82%89%e3%80%8c%e5%83%8d%e3%81%8fai%e3%80%8d%e3%81%b8-%e2%80%95-gemini-spark%e3%81%ae%e6%ad%a3%e4%bd%93/",
       "description": "AIに指示するたび、次の作業は自分でやる。そんなもどかしさを感じたことはありませんか。Google発の新エージェント「Gemini Spark」は、目標を伝えるだけで作業まで自らこなす「働くAI」へ進化しました。仕組みと [...] <p>The post 「指示するAI」から「働くAI」へ ― Gemini Sparkの正体 first appeared on 生成AIと建設DX.</p>...",
@@ -199,16 +219,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100KB-2-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Revitカスタマイズ8選｜API・Dynamo・MCPの違い",
-      "link": "https://axconstdx.com/2026/08/09/revit%e3%82%ab%e3%82%b9%e3%82%bf%e3%83%9e%e3%82%a4%e3%82%ba8%e9%81%b8%ef%bd%9capi%e3%83%bbdynamo%e3%83%bbmcp%e3%81%ae%e9%81%95%e3%81%84/",
-      "description": "Revitをもっと使いやすくしたいと思っても、DynamoやAPI、MCPなど選択肢が増え、何から手を付けるべきか迷いやすくなっています。この記事では、8つのカスタマイズ方法の違いと向いている場面を整理し、自社や自分の業 [...] <p>The post Revitカスタマイズ8選｜API・Dynamo・MCPの違い first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sun, 09 Aug 2026 00:48:42 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/revit_customize_1200x630_under100kb-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -270,16 +280,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "建設経済研究所、2027年度の民間非住宅建設投資は24.1兆円、約3割を占める見通し",
-      "link": "https://news.build-app.jp/article/42088/",
-      "description": "一般財団法人建設経済研究所と一般財団法人経済調査会経済調査研究所は、2026年7月27日に「建設経済モデルによる建設投資の見通し」を公表しま......",
-      "publishedDate": "Fri, 07 Aug 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/nonresidential_construction-130x73.jpg",
-      "language": "ja"
     },
     {
       "title": "IFC 4.4 Integration for ISO Submission approval voting",
