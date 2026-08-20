@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-19T02:19:20.702267",
+  "lastUpdated": "2026-08-20T02:18:12.040937",
   "articles": [
     {
       "title": "3 Google updates from Galaxy Unpacked 2026",
@@ -11,6 +11,149 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Unpacked_hero.max-600x600.format-webp.webp",
       "language": "en"
+    },
+    {
+      "title": "Offering Zero Data Retention for frontier models",
+      "titleJa": "フロンティアモデル向けにゼロデータ保持を提供",
+      "link": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+      "description": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy....",
+      "publishedDate": "Wed, 19 Aug 2026 19:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "5 new ways to level up your learning with Search",
+      "titleJa": "検索を使って学習をレベルアップする 5 つの新しい方法",
+      "link": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
+      "description": "an illustrated image with icons and phrasing like \"Add Notebook\" and \"Ask Google\"...",
+      "publishedDate": "Wed, 19 Aug 2026 19:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_header_2_JwwDb02.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "LFM2.5 Q4\\_0 Checkpoints from Quantization-Aware Distillation",
+      "titleJa": "LFM2.5 Q4\\_0 量子化対応蒸留によるチェックポイント",
+      "link": "https://huggingface.co/blog/LiquidAI/qad",
+      "description": "...",
+      "publishedDate": "Wed, 19 Aug 2026 13:48:49 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/PYy1cufo9frwFjiHZLq2S.png",
+      "language": "en"
+    },
+    {
+      "title": "The Download: AI’s self-improvement problem, and what’s driving the heat",
+      "titleJa": "ダウンロード: AI の自己改善の問題とその熱を引き起こしているもの",
+      "link": "https://www.technologyreview.com/2026/08/19/1140195/the-download-ai-recursive-self-improvement-problem-heatwave-causes/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. AI’s recursive self-improvement might not come so ...",
+      "publishedDate": "Wed, 19 Aug 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/10/ND25-Hanna-01b.jpg?fit=1920,1280",
+      "language": "en"
+    },
+    {
+      "title": "生成AIプログラミングとは？活用できる工程・おすすめツール・注意点を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/generative-ai-programming/",
+      "description": "生成AIプログラミングは、要件定義・設計・実装・テスト・運用・保守まで、プログラミング全体のさまざまな工程を支援できる技術です。近年は、開発効率の向上や品質改善を目的に、企業の開発現場でも活用されています。 とはいえ、「 [...]...",
+      "publishedDate": "Wed, 19 Aug 2026 10:42:32 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Generative-AI-Programming_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "CerebrasとOpenAI、GPT-5.6 Solの推論を毎秒最大750トークンで処理する「Ultrafast Mode」を発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/cerebras-openai-ultrafast-mode/",
+      "description": "CerebrasとOpenAIは、AIモデル「GPT-5.6 Sol」を高速に推論できる「Ultrafast Mode」を発表しました。Cerebrasの基盤上で動作し、毎秒最大750出力トークンを実現します。 このニュ [...] The post CerebrasとOpenAI、GPT-5.6 Solの推論を毎秒最大750トークンで処理する「Ultrafast Mode」を発表 first a...",
+      "publishedDate": "Wed, 19 Aug 2026 09:23:54 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/Cerebras-OpenAI-GPT‑5.6-Ultrafast-mode.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI、「GPT-5.6 Sol」の回答をアップデートし、無料とGoユーザーのデフォルトモデルを「GPT‑5.6 Luna」に更新",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-sol-update-luna-default/",
+      "description": "OpenAIは、ChatGPT PlusとPro向けの「GPT-5.6 Sol」をアップデートしました。回答の簡潔さや事実の信頼性を高めています。また、無料・Goユーザー向けのデフォルトモデルを「GPT-5.6 Luna [...] The post OpenAI、「GPT-5.6 Sol」の回答をアップデートし、無料とGoユーザーのデフォルトモデルを「GPT‑5.6 Luna」に更新 first...",
+      "publishedDate": "Wed, 19 Aug 2026 09:23:37 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/GPT‑5.6-Sol-update.png",
+      "language": "ja"
+    },
+    {
+      "title": "Anthropic、Claudeの電子透かし導入と仕組みを公表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/anthropic-claude-watermark/",
+      "description": "Anthropicは、AIモデル「Claude」が生成するテキストに、電子透かしを付与する仕組みを公表しました。EU AI Actへの準拠が目的で、Google DeepMindの「SynthID-Text」を基にした方 [...] The post Anthropic、Claudeの電子透かし導入と仕組みを公表 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Wed, 19 Aug 2026 09:15:23 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/anthropic-claude-watermark.png",
+      "language": "ja"
+    },
+    {
+      "title": "Child-monitoring apps might need a reboot",
+      "titleJa": "児童監視アプリは再起動が必要な場合があります",
+      "link": "https://www.technologyreview.com/2026/08/19/1141623/child-monitoring-apps-need-reboot/",
+      "description": "Pam Wisniewski’s digital adolescence showed her the best and the worst of the internet. At 14, she left an abusive home, where she’d been isolated in a fifth-wheel trailer at the end of a seven-­mile ...",
+      "publishedDate": "Wed, 19 Aug 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/MIT-Teh-Review-Illu1-FINAL-send.jpg?w=840",
+      "language": "en"
+    },
+    {
+      "title": "Replit expands access to software creation with GPT-5.6 Luna",
+      "titleJa": "Replit、GPT-5.6 Luna によるソフトウェア作成へのアクセスを拡大",
+      "link": "https://openai.com/index/replit",
+      "description": "Replit introduces Free Mode, powered by GPT-5.6 Luna, so anyone can turn ideas into working software without worrying about token costs....",
+      "publishedDate": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "【Cursor Origin】GitHubに代わるAIエージェント時代のコードホスティングを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/cursor-origin/",
+      "description": "2026年8月18日、AIコーディングツールの代名詞ともいえるCursorが、自前のコードホスティングプラットフォーム「Origin」の初期ベータ版をリリースしました！ Originは単なるGitHubのクローンではなく [...]...",
+      "publishedDate": "Wed, 19 Aug 2026 05:56:07 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Cursor-Origin_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "MCP対応おすすめプラットフォーム一覧！Slack・GitHub・Notionなど主要サービスの対応状況まとめ",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/mcp-platform/",
+      "description": "AIと外部ツールをシームレスに接続する標準規格として注目を集めるMCP（Model Context Protocol）。SlackやGitHub、Googleなどの主要サービスが公式サーバーを提供し、業務自動化のインフラ [...]...",
+      "publishedDate": "Wed, 19 Aug 2026 04:00:09 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/mcp-platform_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Claude Code /design skill】ターミナルからUIデザインを生成・実装まで一気通貫できる新スキルを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-code-design-skill/",
+      "description": "2026年8月18日、AnthropicがClaude Codeの新スキル「/design skill」をリサーチプレビューとして公開しました！ 「デザインを作って、選んで、そのまま実装する」という一連の流れを、ターミナ [...]...",
+      "publishedDate": "Wed, 19 Aug 2026 02:48:55 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-design-skill_2608-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "AIエージェント最前線カオスマップを公開！-業務・業界別から開発基盤・導入支援まで118製品を掲載-",
@@ -68,17 +211,6 @@
       "language": "ja"
     },
     {
-      "title": "Copilot Chatとは？Microsoft 365での使い方と料金を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-copilot-chat/",
-      "description": "「無料でAIチャットを業務に使いたいけれど、どの機能まで追加費用なしで使えるのかわからない」と悩んでいませんか。 この記事では、Microsoft 365に追加料金なしで含まれるCopilot Chatの機能・料金・使い [...] The post Copilot Chatとは？Microsoft 365での使い方と料金を解説 first appeared on AIポータルメディアAIsmil...",
-      "publishedDate": "Wed, 19 Aug 2026 00:52:50 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/copilotchatmain.png",
-      "language": "ja"
-    },
-    {
       "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
       "titleJa": "OlmoEarth エンベディングの紹介: ダウンストリーム分析のための OlmoEarth Studio からのカスタム エンベディング エクスポート",
       "link": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
@@ -87,50 +219,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/u9KR_QjSYF7mJIbRE3Ni8.jpeg",
-      "language": "en"
-    },
-    {
-      "title": "LFM2.5-VL-3B for Better and Faster Vision Capabilities for the Edge",
-      "titleJa": "LFM2.5-VL-3B for Better and Faster Vision Capabilities for the Edge",
-      "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b",
-      "description": "...",
-      "publishedDate": "Wed, 12 Aug 2026 14:00:51 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/apldbDPIJWZeODX1g9iFV.png",
-      "language": "en"
-    },
-    {
-      "title": "From assistance to execution: How enterprises put AI to work",
-      "titleJa": "支援から実行まで: 企業が AI を活用する方法",
-      "link": "https://openai.com/index/how-enterprises-put-ai-to-work",
-      "description": "OpenAI research reveals how enterprises are adopting agentic AI, using ChatGPT and Codex, and how frontier firms are pulling ahead in AI adoption....",
-      "publishedDate": "Wed, 12 Aug 2026 06:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How RingCentral builds AI-native work from engineering to ops",
-      "titleJa": "RingCentral がエンジニアリングから運用まで AI ネイティブの作業を構築する方法",
-      "link": "https://openai.com/index/ringcentral",
-      "description": "See how RingCentral uses ChatGPT Work and Codex to accelerate AI product development and centralize operational intelligence across engineering and operations....",
-      "publishedDate": "Wed, 12 Aug 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The latest AI news we announced in June 2026",
-      "titleJa": "2026年6月に発表したAI最新ニュース",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
-      "description": "June Pixel Drop hero...",
-      "publishedDate": "Wed, 01 Jul 2026 18:15:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/260701_ICYMI-June-AI_Thumb.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -187,6 +275,17 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/mcp-server-list_2608-1024x576.webp",
       "language": "ja"
+    },
+    {
+      "title": "ChatGPT Ads expands across Europe",
+      "titleJa": "ChatGPT 広告がヨーロッパ全土に拡大",
+      "link": "https://openai.com/index/chatgpt-ads-expands-across-europe",
+      "description": "ChatGPT Ads is expanding to 31 European markets. Learn how advertisers can reach people as they explore, compare options, and make decisions....",
+      "publishedDate": "Tue, 18 Aug 2026 22:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "Strengthening democratic oversight in national security",
@@ -277,17 +376,6 @@
       "language": "en"
     },
     {
-      "title": "OpenAIの次期AIモデル「Astra」、サイバー能力で「重大」レベルに到達の可能性",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-astra-cyber-security/",
-      "description": "OpenAIは、近日公開予定の次期AIモデル「Astra」のサイバー能力について「重大」レベルに達している可能性を排除できないと公表しました。これに伴い、安全対策の堅牢性テストを拡大し、より厳格なセキュリティ管理策を導入 [...] The post OpenAIの次期AIモデル「Astra」、サイバー能力で「重大」レベルに到達の可能性 first appeared on AIポータルメディアAI...",
-      "publishedDate": "Tue, 18 Aug 2026 09:26:17 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/openai-astra-cyber-security-eye.png",
-      "language": "ja"
-    },
-    {
       "title": "The role of the astronaut is in flux",
       "titleJa": "宇宙飛行士の役割は流動的である",
       "link": "https://www.technologyreview.com/2026/08/18/1141614/book-review-astronaut-role-in-flux/",
@@ -330,39 +418,6 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "Copilotのログイン方法を解説｜種類別の入口と使い方も紹介",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/copilot-how-to-login/",
-      "description": "「Copilotを使いたいのに、どこからログインすればいいのか分からない」と感じていませんか。 本記事では、ブラウザ・Windows・スマホアプリといったデバイス別のログイン手順から、個人向け・法人向けで異なる入口の見分 [...] The post Copilotのログイン方法を解説｜種類別の入口と使い方も紹介 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 18 Aug 2026 05:24:36 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/copilotloginmain.png",
-      "language": "ja"
-    },
-    {
-      "title": "Geminiに学習させない設定方法｜デメリット・有料版・APIの違いを解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gemini-not-study/",
-      "description": "Geminiに入力した内容をAIの学習に使われないようにしたい方に向けて、設定手順と注意点をまとめました。個人利用・業務利用・API利用のどれを選べばよいかが先にわかるよう、まず利用パターンごとの違いを表で整理します。 [...] The post Geminiに学習させない設定方法｜デメリット・有料版・APIの違いを解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 18 Aug 2026 05:08:45 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/gemininotstudy01.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Geminiのログイン・ログインなしで使用する方法を徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gemini-login-pc-phone/",
-      "description": "Googleの生成AI「Gemini」を使いたいものの、ログイン方法や、ログインなしでどこまで使えるのかわからず戸惑っていませんか。 本記事では、PC・スマホでのログイン手順、ログインなしで使う方法、ログインできないとき [...] The post Geminiのログイン・ログインなしで使用する方法を徹底解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Tue, 18 Aug 2026 04:02:48 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/geminilogin01.webp",
-      "language": "ja"
     },
     {
       "title": "How NVIDIA scales expertise with ChatGPT Work",
@@ -409,17 +464,6 @@
       "language": "en"
     },
     {
-      "title": "Testing ads in ChatGPT",
-      "titleJa": "ChatGPT での広告のテスト",
-      "link": "https://openai.com/index/testing-ads-in-chatgpt",
-      "description": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control....",
-      "publishedDate": "Tue, 11 Aug 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more",
       "titleJa": "Gemini API の管理対象エージェントの拡張: バックグラウンド タスク、リモート MCP など",
       "link": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
@@ -453,6 +497,28 @@
       "language": "en"
     },
     {
+      "title": "「AI博覧会 Fukuoka 2026」 博多国際展示場＆カンファレンスセンターにて 9月30日・10月1日に開催 ～福岡で初開催！地元企業登壇のカンファレンスや注目AI製品が多数出展～",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-hakurankai-fukuoka-2026/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年9月30日（水）・10月1日（木）の2日間、博多国際展示場＆カンファレンスセンターにて「AI博覧会 Fukuoka 202 [...] The post 「AI博覧会 Fukuoka 2026」 博多国際展示場＆カンファレンスセンターにて 9月30日・10月1日に開催 ～福岡で初開催！地元企業登壇のカ...",
+      "publishedDate": "Thu, 20 Aug 2026 00:53:38 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/banner_2026fukuoka_330x160.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "アトラックラボ、「ロボットAIプラットフォーム」を開発。行動前に複数の未来を予測し、安全性と有効性の高い行動を選択",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/attraclab-robot-ai-platform/",
+      "description": "アトラックラボは、LLMを活用したAI自律制御システム「AT-SYNAPSE」を中核とし、行動前に複数の未来を予測して行動を選択する「ロボットAIプラットフォーム」を開発しました。 このニュースのポイント アトラックラボ [...] The post アトラックラボ、「ロボットAIプラットフォーム」を開発。行動前に複数の未来を予測し、安全性と有効性の高い行動を選択 first appeared o...",
+      "publishedDate": "Thu, 20 Aug 2026 00:13:22 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/attraclab-robot-ai-platform-4.png",
+      "language": "ja"
+    },
+    {
       "title": "Connect more of your apps to Search",
       "titleJa": "より多くのアプリを検索に接続します",
       "link": "https://blog.google/products-and-platforms/products/search/connected-apps/",
@@ -462,39 +528,6 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ConnectedAppshero.max-600x600.format-webp.webp",
       "language": "en"
-    },
-    {
-      "title": "Create, edit and star in videos with two Google Vids updates",
-      "titleJa": "2 つの Google Vids アップデートにより、動画の作成、編集、主演を行うことができます",
-      "link": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
-      "description": "Text \"Gemini Omni and Personal Avatars in Google Vids\" surrounded by various images...",
-      "publishedDate": "Thu, 16 Jul 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/omni-blog-header_OarEe2t.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
-      "titleJa": "Strands Agent、LeRobot、Hugging Face Storage Buckets を使用して 1 か所から記録、トレーニング、導入を行う",
-      "link": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
-      "description": "...",
-      "publishedDate": "Thu, 13 Aug 2026 17:16:04 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6a1dc0f2b4238bb17ff94794/St00mBynNYpgz93MpL17G.png",
-      "language": "en"
-    },
-    {
-      "title": "【GLM-5.3】コーディング性能50%向上！Z.aiのオープンウェイトAIモデルの性能・使い方・活用シーンを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/glm-5-3/",
-      "description": "2026年8月14日、中国のAI企業Z.ai（旧Zhipu AI）が次世代大規模言語モデル「GLM-5.3」をリリースしました！ GLM-5.3は、前世代のGLM-5.2と同じベースモデルを採用しながら、ポストトレーニン [...]...",
-      "publishedDate": "Sun, 16 Aug 2026 04:08:29 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GLM-5.3-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "Codexのリセット権が購入可能に？利用上限をリセットする手順と配布タイミングを解説",
@@ -519,36 +552,25 @@
       "language": "ja"
     },
     {
-      "title": "【無料・登録不要】AI画像生成サイトおすすめ9選！安全な使い方と著作権リスクを徹底解説",
+      "title": "Docker社、コンテナ向けの高性能な新ハイパーバイザ「Docker VMM」パブリックベータ公開",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/free-ai-image-generation/",
-      "description": "AI画像生成サイトは、文章を入力するだけで数秒で理想の画像を自動作成できるツールです。オリジナル画像の作成時間を短縮できるので、大きな注目を集めています。とはいえ「どれを選べばいい？」「無料で使える？」と迷う方も多いはず [...]...",
-      "publishedDate": "Mon, 17 Aug 2026 11:02:10 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/dockerdocker_vmm.html",
+      "description": "Docker社は独自開発したコンテナ向けの高性能な新ハイパーバイザ「Docker VMM」をパブリックベータとして公開しました。WindowsとmacOSに対応した最新の「Docker Desktop v4.86」で利用可能です。 Toda......",
+      "publishedDate": "2026-08-19T17:43:24Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Free-AI-Image-Generation_2608-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/HPitkMkXwAAFr9C.jpg",
       "language": "ja"
     },
     {
-      "title": "GitHub Copilot Businessとは？他プランとの違い・導入手順を解説",
+      "title": "Pythonライクな新言語「Mojo」がオープンソースで公開、コンパイラやツールチェーンなど。Windows版の開発も表明",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/github-copilot-business/",
-      "description": "GitHub Copilot Businessは、企業やチームで生成AIコーディング支援を安全に運用できる組織向けプランです。料金は1ユーザー月額19ドルで、1,900 AI Creditsが付属します。とはいえ「個人向 [...]...",
-      "publishedDate": "Mon, 17 Aug 2026 05:36:45 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/pythonmojowindows.html",
+      "description": "Pythonライクな新言語「Mojo」の開発元であるModular社は、Mojoをオープンソースとして公開したことを、同社主催のイベント「ModCon 2026」で発表しました。 具体的にはMojoのコンパイラとツールチェーンがGitHub......",
+      "publishedDate": "2026-08-19T15:40:43Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/GitHub-Copilot-Business_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "過学習（オーバーフィッティング）の基礎知識！原因・見分け方と対策を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/overfitting/",
-      "description": "機械学習モデルを運用する際、手元のデータでは高精度なのに本番では使えないと悩んだことはありませんか？訓練データの特徴やノイズまで過度に学習してしまう過学習（オーバーフィッティング）が原因かもしれません。 実務で使えるAI [...]...",
-      "publishedDate": "Fri, 14 Aug 2026 10:47:19 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Overfitting_2608-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/HQBIfmRbgAM8evP.jpg",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/vlt-v10.png",
-      "language": "ja"
-    },
-    {
-      "title": "1Password、ダッシュボードから組織のAI支出状況を表示する新機能。ClaudeやCursor、ChatGPTなど複数AIにI対応",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/1passwordaiclaudecursorchatgptaii.html",
-      "description": "1Passwordは、単一のダッシュボード画面からAnthropicのCalude、OpenAIのChatGPT、AnysphereのCursorなど複数のAIサービスに対する支出状況をリアルタイムに表示、管理できる新機能を発表しました。 ......",
-      "publishedDate": "2026-08-04T15:38:32Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/1password-ai-consumption03.png",
-      "language": "ja"
-    },
-    {
-      "title": "アプリが遅い原因をAIがトレースログから分析してくれる「Windows Performance Analyzer MCP」（WPA MCP）、マイクロソフトがプレビュー公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/aiwindows_performance_analyzer_mcpwpa_mcp.html",
-      "description": "マイクロソフトは、Windowsアプリケーションが遅くなる原因の調査分析をAIに依頼できるツール「Windows Performance Analyzer MCP」（WPA MCP）のアーリープレビューを発表しました。 GitHub Cop......",
-      "publishedDate": "2026-08-04T15:36:16Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/wpa-mcp-ep01.png",
       "language": "ja"
     }
   ]
