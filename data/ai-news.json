@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21T02:24:11.056772",
+  "lastUpdated": "2026-08-22T02:16:33.257325",
   "articles": [
     {
       "title": "3 Google updates from Galaxy Unpacked 2026",
@@ -55,17 +55,6 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Generative-AI-Programming_2608-1024x576.webp",
       "language": "ja"
-    },
-    {
-      "title": "Child-monitoring apps might need a reboot",
-      "titleJa": "児童監視アプリは再起動が必要な場合があります",
-      "link": "https://www.technologyreview.com/2026/08/19/1141623/child-monitoring-apps-need-reboot/",
-      "description": "Pam Wisniewski’s digital adolescence showed her the best and the worst of the internet. At 14, she left an abusive home, where she’d been isolated in a fifth-wheel trailer at the end of a seven-­mile ...",
-      "publishedDate": "Wed, 19 Aug 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/MIT-Teh-Review-Illu1-FINAL-send.jpg?w=840",
-      "language": "en"
     },
     {
       "title": "Replit expands access to software creation with GPT-5.6 Luna",
@@ -156,28 +145,6 @@
       "language": "en"
     },
     {
-      "title": "Model Context Protocol（MCP）とは？生成AIをつなぐ仕組みでClaudeをSlackやGitHubと連携してみた",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/model-context-protocol/",
-      "description": "2024年11月の公開以降、AnthropicのModel Context Protocol(MCP)は「AI×外部ツール連携」の事実上の共通のレイヤーとして急速に広がっています。現在は公式サイト／仕様／SDK／多数のサ [...]...",
-      "publishedDate": "Tue, 18 Aug 2026 23:46:12 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Model-Context-Protocol_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "おすすめMCPサーバー一覧！カテゴリー別の用途・特徴、注意点を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/mcp-server-list/",
-      "description": "MCPサーバーは、生成AIとデータベースやGitHub、Slackなどの外部サービスを連携し、自然言語でさまざまな操作を行える仕組みです。とはいえ、「どのMCPサーバーを選べばよいの？」「用途ごとの違いがわからない」と悩 [...]...",
-      "publishedDate": "Tue, 18 Aug 2026 22:55:51 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/mcp-server-list_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "ChatGPT Ads expands across Europe",
       "titleJa": "ChatGPT 広告がヨーロッパ全土に拡大",
       "link": "https://openai.com/index/chatgpt-ads-expands-across-europe",
@@ -211,28 +178,6 @@
       "language": "en"
     },
     {
-      "title": "The Download: how people really use AI, and Flock’s design choices",
-      "titleJa": "ダウンロード: 人々が AI を実際にどのように使用しているか、および Flock の設計上の選択",
-      "link": "https://www.technologyreview.com/2026/08/18/1142229/the-download-how-people-use-ai-flock-cameras-design/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. We still don’t know how people are really using AI...",
-      "publishedDate": "Tue, 18 Aug 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/06/DSF3850.jpg?w=840",
-      "language": "en"
-    },
-    {
-      "title": "AI開発の要件定義とは？精度要件・データ要件・要件定義書の項目を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/requirements-definition-for-ai-development/",
-      "description": "AI開発の要件定義は、通常のシステム開発で決める機能・画面・性能に加えて、AIの精度とデータの扱いまで合意する作業です。特に生成AIのような確率的なAIでは、入力データ・モデル・プロンプト・推論設定などによって出力が変わ [...]...",
-      "publishedDate": "Tue, 18 Aug 2026 11:29:31 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/requirements-definition-for-ai-development_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Partnering with CodeAI to prepare the first AI generation",
       "titleJa": "CodeAI と提携して第一世代の AI を準備",
       "link": "https://openai.com/index/partnering-with-codeai",
@@ -245,7 +190,7 @@
     },
     {
       "title": "Pacing model development in an era of cyber-critical capabilities",
-      "titleJa": "サイバークリティカルな機能の時代におけるモデル開発のペース調整",
+      "titleJa": "サイバー クリティカルな機能の時代におけるモデル開発のペース調整",
       "link": "https://openai.com/index/pacing-model-development-cyber-capabilities",
       "description": "OpenAI is strengthening monitoring, alignment, and security for frontier AI models. See how new safeguards are guiding the pace of model development....",
       "publishedDate": "Tue, 18 Aug 2026 11:00:00 GMT",
@@ -263,28 +208,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "We still don’t know how people are really using AI",
-      "titleJa": "人々が実際に AI をどのように利用しているのかはまだわかりません",
-      "link": "https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/",
-      "description": "AI companies like Anthropic and OpenAI regularly publish reports on how people are using products like Claude and ChatGPT, but they only release the data they want us to see, AI researchers say.&#160;...",
-      "publishedDate": "Tue, 18 Aug 2026 10:06:43 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/arm-around2.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "The role of the astronaut is in flux",
-      "titleJa": "宇宙飛行士の役割は流動的である",
-      "link": "https://www.technologyreview.com/2026/08/18/1141614/book-review-astronaut-role-in-flux/",
-      "description": "When the four astronauts on board NASA’s Artemis II swung around the moon earlier this year, they set a new record for the farthest humans have ever ventured from Earth, surpassing the distance set by...",
-      "publishedDate": "Tue, 18 Aug 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/books.weibel-edited.jpg",
       "language": "en"
     },
     {
@@ -420,6 +343,17 @@
       "language": "ja"
     },
     {
+      "title": "The Download: polycrisis support networks and a hydrogen gold rush",
+      "titleJa": "ダウンロード: ポリクライシス支援ネットワークと水素ゴールドラッシュ",
+      "link": "https://www.technologyreview.com/2026/08/20/1142579/the-download-polycrisis-support-networks-underground-hydrogen-gold-rush/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Support networks aim to help kids through the poly...",
+      "publishedDate": "Thu, 20 Aug 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/10/MIT_Opener_final2.jpg?fit=2128,1196",
+      "language": "en"
+    },
+    {
       "title": "llama.cppとは？GGUF・Ollamaとの違いからインストール・使い方・量子化まで解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/lama-cpp/",
@@ -442,6 +376,28 @@
       "language": "ja"
     },
     {
+      "title": "The next big thing in hydrogen could be underground",
+      "titleJa": "水素の次に大きなものは地下にあるかもしれない",
+      "link": "https://www.technologyreview.com/2026/08/20/1142512/geologic-hydrogen-hunt/",
+      "description": "There’s a hunt for new sources of hydrogen, and the gas (or at least the right conditions to make it) could be hiding beneath our feet. Hydrogen can be used as a fuel in everything from large trucks t...",
+      "publishedDate": "Thu, 20 Aug 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/AP23296765945738.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Unlocking hidden revenue streams with market models",
+      "titleJa": "マーケットモデルで隠れた収益源を解き放つ",
+      "link": "https://www.technologyreview.com/2026/08/20/1142070/unlocking-hidden-revenue-streams-with-market-models/",
+      "description": "Each day, an airline transports tens of thousands of passengers on hundreds of flights. Often these are not straightforward point-to-point routes, with passengers requiring multiple connections. The a...",
+      "publishedDate": "Thu, 20 Aug 2026 09:47:22 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/MIT_Fetcherr-COVERV9_81426.png?w=840",
+      "language": "en"
+    },
+    {
       "title": "Sakana AI、「Sakana Chat」をアップデート。新モデル追加と自律的なコード実行・資料作成を実現",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/sakana-ai-chat-fugu-code-execution/",
@@ -451,6 +407,17 @@
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/sakana-ai-fugu-code-execution-eye.png",
       "language": "ja"
+    },
+    {
+      "title": "Support networks aim to help kids through the polycrisis",
+      "titleJa": "サポート ネットワークは、ポリクライシスを乗り越える子供たちを支援することを目的としています",
+      "link": "https://www.technologyreview.com/2026/08/20/1141686/support-networks-help-kids-polycrisis/",
+      "description": "Sometime in the late 2000s, Pim Sullivan-Tailyour was sitting in the back of a car, headed toward her great-grandmother’s tiny town in the south of Thailand. She watched big mountains pass by out the ...",
+      "publishedDate": "Thu, 20 Aug 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/Paris-France_Vinci.jpg?w=840",
+      "language": "en"
     },
     {
       "title": "AIによる購買・決済に関する実態調査を実施。日常利用は進むもAI決済への利用意向は2.2%",
@@ -486,69 +453,102 @@
       "language": "ja"
     },
     {
-      "title": "GMOグループと米Anthropicが戦略的パートナーシップ契約を締結。Claudeの徹底活用でAI基盤を強化",
+      "title": "生成AIで運用保守はどう変わる？活用シーン・費用相場・導入ステップを徹底解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gmo-anthropic-partnership/",
-      "description": "GMOグループと米Anthropicが、戦略的パートナーシップ契約を締結しました。サイバー攻撃対策へのAI適用やGMOグループ内での活用を進め、安全なAI活用基盤を整備します。 このニュースのポイント GMOグループと米 [...] The post GMOグループと米Anthropicが戦略的パートナーシップ契約を締結。Claudeの徹底活用でAI基盤を強化 first appeared on ...",
-      "publishedDate": "Thu, 20 Aug 2026 08:47:32 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/gmo-anthropic-partnership.png",
+      "link": "https://weel.co.jp/media/ai-generation-a-conservative-approach/",
+      "description": "IT運用保守の現場で、生成AIの活用が急速に広がっています。監視・障害対応・問い合わせ対応といった業務に生成AIを組み込むことで、担当者の判断を速くし、対応品質を平準化する取り組みが各社で進められています。 これまでのI [...]...",
+      "publishedDate": "Fri, 21 Aug 2026 11:19:44 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/ai-generation-a-conservative-approach_2608-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "KDDI、Google AI Futures Fundと協力し国内AIスタートアップ支援プログラムを開始",
+      "title": "FAISSとは？Pythonでの実装手順・インデックスの選び方・RAG連携まで解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kddi-google-ai-startup-support/",
-      "description": "KDDIはGoogle AI Futures Fundと協力し、国内スタートアップを対象とした協調支援プログラムを開始しました。両社による資金提供に加え、専門的な技術支援などが提供され、AIを活用したプロダクトの開発と高 [...] The post KDDI、Google AI Futures Fundと協力し国内AIスタートアップ支援プログラムを開始 first appeared on AIポ...",
-      "publishedDate": "Thu, 20 Aug 2026 08:46:59 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/kddi-google-main.png",
+      "link": "https://weel.co.jp/media/tech/faiss/",
+      "description": "FAISS（ファイス）は、大量のベクトルデータから類似するベクトルを高速に検索できるオープンソースライブラリです。Meta AI（旧Facebook AI）が開発・公開しており、RAG（検索拡張生成）の文書検索やレコメン [...]...",
+      "publishedDate": "Fri, 21 Aug 2026 11:05:44 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/FAISS_2608-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "日本経済の未来を担うフィジカルAI・国産LLMが集結！ 「AI博覧会 Summer 2026」いよいよ開幕！",
+      "title": "NTTドコモビジネスとエクサウィザーズ、重要データを安全に活用できる「クローズドAIエージェント」開発",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-hakurankai-summer-2026-02/",
-      "description": "～国内初展示の産業用ヒューマノイドなどを展示する「フィジカルAI・ロボットゾーン」が見どころ、新宿住友ビル 三角広場にて8月26日・27日開催～ 国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイ [...] The post 日本経済の未来を担うフィジカルAI・国産LLMが集結！ 「AI博覧会 Summer 2026」いよいよ開幕！ first appeared on A...",
-      "publishedDate": "Thu, 20 Aug 2026 05:00:01 +0000",
+      "link": "https://aismiley.co.jp/ai_news/docomo-exawizards-closed-ai-agent/",
+      "description": "NTTドコモビジネスとエクサウィザーズは、企業の重要データを安全に活用できる専用環境「クローズドAIエージェント」を共同開発し、提供を開始しました。 このニュースのポイント NTTドコモビジネスとエクサウィザーズ、企業の [...] The post NTTドコモビジネスとエクサウィザーズ、重要データを安全に活用できる「クローズドAIエージェント」開発 first appeared on AIポー...",
+      "publishedDate": "Fri, 21 Aug 2026 09:31:06 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/image_2026_8_19-1.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/NTT-docomo-Business-EXAWIZARDS-closed-AI-Agent.png",
       "language": "ja"
     },
     {
-      "title": "AI相談とは？無料で使えるおすすめアプリ・相談方法・危険性を解説",
+      "title": "ハンズ、独自のAI接客サービス提供開始。スタッフの知識を集積し対話形式で商品を提案",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-ai-consultation/",
-      "description": "「最近ChatGPTに悩みを打ち明けている」という声が増えています。本記事では、AI相談でできることと向いていないこと、無料で使えるアプリの選び方、知っておくべき危険性までをまとめて解説します。仕事や人間関係の悩みを一人 [...] The post AI相談とは？無料で使えるおすすめアプリ・相談方法・危険性を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 20 Aug 2026 02:43:35 +0000",
+      "link": "https://aismiley.co.jp/ai_news/hands-ai-customer-service/",
+      "description": "ハンズは、自社独自のナレッジを集積したAI接客サービスの提供を開始しました。これに伴い、お助けAIキャラクター「てて丸」（見習中）がデビューしました。 このニュースのポイント ハンズ、独自のナレッジを集積したAI接客サー [...] The post ハンズ、独自のAI接客サービス提供開始。スタッフの知識を集積し対話形式で商品を提案 first appeared on AIポータルメディアAIsm...",
+      "publishedDate": "Fri, 21 Aug 2026 09:17:45 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/aiconsultation01.webp",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/handstetemarueye.png",
       "language": "ja"
     },
     {
-      "title": "Claude Code Hooksとは？設定方法と使い方・通知の実例を解説",
+      "title": "デジタルガレージとDGビジネステクノロジー、国内初のエージェンティックコマース最適化トータルソリューション「DG Agentic One™」を提供開始",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-code-hooks/",
-      "description": "Claude Codeには、ファイル編集後の自動フォーマットや危険なコマンドの実行前ブロックなど、指定したタイミングで処理を確実に実行できるHooksという機能があります。本記事では、Hooksの仕組みから設定方法、代表 [...] The post Claude Code Hooksとは？設定方法と使い方・通知の実例を解説 first appeared on AIポータルメディアAIsmiley...",
-      "publishedDate": "Thu, 20 Aug 2026 02:36:17 +0000",
+      "link": "https://aismiley.co.jp/ai_news/digital-garage-dg-agentic-one/",
+      "description": "デジタルガレージとDGビジネステクノロジーは、国内初となるエージェンティックコマース最適化トータルソリューション「DG Agentic One™」の提供を開始しました。 このニュースのポイント デジタルガレージとDGビジ [...] The post デジタルガレージとDGビジネステクノロジー、国内初のエージェンティックコマース最適化トータルソリューション「DG Agentic One™」を提供開...",
+      "publishedDate": "Fri, 21 Aug 2026 08:42:33 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/claudecodehooks01.webp",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/DG-Agentic-One.png",
       "language": "ja"
     },
     {
-      "title": "Claude in Excelとは？料金・使い方・インストール方法を解説",
+      "title": "【Exa in Codex & ChatGPT】ライブWeb検索を追加するExaプラグインの使い方・活用法を徹底解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-in-excel/",
-      "description": "「Excelの複雑な数式やエラーの原因が分からず、作業に時間がかかっている」と感じていませんか。本記事では、AnthropicのAI「Claude」をExcel上で直接使えるアドイン「Claude in Excel」につ [...] The post Claude in Excelとは？料金・使い方・インストール方法を解説 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 20 Aug 2026 02:15:28 +0000",
+      "link": "https://weel.co.jp/media/tech/exa-in-codex-chatgpt/",
+      "description": "2026年8月21日、AI検索インフラ企業のExa LabsはCodexとChatGPTの両方で使えるプラグイン「Exa in Codex &#38; ChatGPT」を公開しました！ Codexでコードを書いている最中 [...]...",
+      "publishedDate": "Fri, 21 Aug 2026 05:36:56 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Exa-in-Codex-ChatGPT-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AIアシスタントとは？仕組み・種類・選び方とAIエージェントの違い",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-ai-assistant/",
+      "description": "AIアシスタントは、文章作成や情報検索、議事録の要約などを支援し、企業の業務効率化に活用されています。一方、ChatGPTやGemini、Copilotなど選択肢が増え、AIエージェントとの違いやセキュリティ、導入の判断 [...] The post AIアシスタントとは？仕組み・種類・選び方とAIエージェントの違い first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 21 Aug 2026 05:28:56 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/claudeinexcel01.webp",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/whatisaiassist01.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Geminiダイエットのやり方｜無料でできるプロンプト例と注意点を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/gemini-diet/",
+      "description": "「食事の記録が続かない」「毎回カロリーを調べるのが面倒」。ダイエットで、こう感じたことはありませんか。そんなときに補助役として使えるのが、Googleの生成AI「Gemini」です。 Geminiに食事の内容や写真を送る [...] The post Geminiダイエットのやり方｜無料でできるプロンプト例と注意点を解説 first appeared on AIポータルメディアAIsmiley....",
+      "publishedDate": "Fri, 21 Aug 2026 05:16:48 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/geminidiet01.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Code Auto Modeとは？仕組み・設定方法・安全性を詳しく解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-code-auto-mode/",
+      "description": "Claude Codeを使っていて、コマンドを実行するたびに承認を求められ、長時間のタスクを任せにくいと感じたことはないでしょうか。 かといって、承認をすべて省略する「bypassPermissions」には、セキュリテ [...] The post Claude Code Auto Modeとは？仕組み・設定方法・安全性を詳しく解説 first appeared on AIポータルメディアAIs...",
+      "publishedDate": "Fri, 21 Aug 2026 05:15:45 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/automodemain.png",
       "language": "ja"
     },
     {
