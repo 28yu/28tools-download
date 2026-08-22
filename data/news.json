@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21T00:47:08.866893",
+  "lastUpdated": "2026-08-22T00:44:15.762515",
   "articles": [
     {
       "title": "AIに仕事を持たせる時代｜生成AI活用の4段階と業務設計",
@@ -132,26 +132,6 @@
       "language": "ja"
     },
     {
-      "title": "AI開発のSingularityで求められる3つの力とは",
-      "link": "https://axconstdx.com/2026/08/09/ai%e9%96%8b%e7%99%ba%e3%81%aesingularity%e3%81%a7%e6%b1%82%e3%82%81%e3%82%89%e3%82%8c%e3%82%8b3%e3%81%a4%e3%81%ae%e5%8a%9b%e3%81%a8%e3%81%af/",
-      "description": "「もうコードは書けなくてもいい」——そう言われて、焦りを感じていませんか。AIエージェントが数分で千行のコードを生み出す今、エンジニアの価値そのものが問われています。指揮者へと役割が変わる時代に、本当に磨くべき3つの力を [...] <p>The post AI開発のSingularityで求められる3つの力とは first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sun, 09 Aug 2026 12:07:02 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100KB-3-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ChatGPTのPython機能とは？できることと使い方を初心者向けに解説",
-      "link": "https://axconstdx.com/2026/08/09/chatgpt%e3%81%aepython%e6%a9%9f%e8%83%bd%e3%81%a8%e3%81%af%ef%bc%9f%e3%81%a7%e3%81%8d%e3%82%8b%e3%81%93%e3%81%a8%e3%81%a8%e4%bd%bf%e3%81%84%e6%96%b9%e3%82%92%e5%88%9d%e5%bf%83%e8%80%85%e5%90%91/",
-      "description": "「Pythonなんて自分には無理」と諦めていませんか。実はChatGPTに頼むだけで、計算もグラフ作成も驚くほど簡単にこなせます。ただし、美しい結果を鵜呑みにすると、思わぬ落とし穴が待っています。実証データをもとに、安心 [...] <p>The post ChatGPTのPython機能とは？できることと使い方を初心者向けに解説 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sun, 09 Aug 2026 04:39:04 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100KB-2-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "なぜスマホにLiDARが必要なのか？〜PixelのAI路線とiPhone「データ思想」の決定的な違い〜",
       "link": "https://axconstdx.com/2026/08/18/%e3%81%aa%e3%81%9c%e3%82%b9%e3%83%9e%e3%83%9b%e3%81%ablidar%e3%81%8c%e5%bf%85%e8%a6%81%e3%81%aa%e3%81%ae%e3%81%8b%ef%bc%9f%e3%80%9cpixel%e3%81%aeai%e8%b7%af%e7%b7%9a%e3%81%a8iphone%e3%80%8c%e3%83%87/",
       "description": "毎日ポケットに入れているスマホが、あなたの部屋や持ち物の情報をどこまで、どう扱っているか考えたことはありますか。実はLiDARという小さなセンサー一つに、AppleとGoogleの対照的な企業姿勢が凝縮されています。読み [...] <p>The post なぜスマホにLiDARが必要なのか？〜PixelのAI路線とiPhone「データ思想」の決定的な違い〜 first appeared on 生...",
@@ -180,6 +160,26 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "日本SI業界2030年——人月モデル崩壊は本当か",
+      "link": "https://axconstdx.com/2026/08/21/%e6%97%a5%e6%9c%acsi%e6%a5%ad%e7%95%8c2030%e5%b9%b4-%e4%ba%ba%e6%9c%88%e3%83%a2%e3%83%87%e3%83%ab%e5%b4%a9%e5%a3%8a%e3%81%af%e6%9c%ac%e5%bd%93%e3%81%8b/",
+      "description": "「2030年、業界は半分になる」という言葉に、胸がざわついた方も多いはずです。でも本当に消えるのは会社ではなく、人月という古い契約の形かもしれません。今こそ、自社の立ち位置を見つめ直すときです。 はじめに 「2030年、 [...] <p>The post 日本SI業界2030年——人月モデル崩壊は本当か first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Fri, 21 Aug 2026 10:41:49 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/japan-si-industry-2030-ogp-under-100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Anthropicが編集者に4000万円提示、AI企業の本気",
+      "link": "https://axconstdx.com/2026/08/21/anthropic%e3%81%8c%e7%b7%a8%e9%9b%86%e8%80%85%e3%81%ab4000%e4%b8%87%e5%86%86%e6%8f%90%e7%a4%ba%e3%80%81ai%e4%bc%81%e6%a5%ad%e3%81%ae%e6%9c%ac%e6%b0%97/",
+      "description": "「AIに仕事を奪われるかもしれない」——そんな不安を感じたことはありませんか。実はいま、AI企業ほど人間の編集者に破格の年収を提示しています。Anthropicが示した金額は4000万円超。AI時代に本当に価値が高まる仕 [...] <p>The post Anthropicが編集者に4000万円提示、AI企業の本気 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Fri, 21 Aug 2026 02:03:49 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/anthropic_editor_ogp_under_100kb-1024x512.jpg",
+      "language": "ja"
     },
     {
       "title": "IFC 4.4 Integration for ISO Submission approval voting",
