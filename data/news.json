@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-08-22T00:44:15.762515",
+  "lastUpdated": "2026-08-23T00:45:17.145139",
   "articles": [
+    {
+      "title": "建設リサイクル法の対象工事は何？対象資材・届出義務を解説｜対象外・違反事例も【2026年版】",
+      "link": "https://news.build-app.jp/article/36572/",
+      "description": "近年、建設現場では廃棄物の再利用や適正処理が強く求められています。そして、その中心となる法律が「建設リサイクル法（建設工事に係る資材の再資源......",
+      "publishedDate": "Wed, 19 Aug 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/08/1705f5840981bd63594024dc823db181-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "コムシス情報システム、AI配筋検査サービスAIJO配筋王で格子状ダブル配筋の現地検証を実施",
+      "link": "https://news.build-app.jp/article/42198/",
+      "description": "日本コムシス株式会社とグループ会社のコムシス情報システム株式会社は、日本コムシスが福島県浪江町で手がける陸上養殖プラント新設工事の土間部配筋......",
+      "publishedDate": "Wed, 19 Aug 2026 05:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/aijo_rebar_inspection-130x94.webp",
+      "language": "ja"
+    },
     {
       "title": "AIに仕事を持たせる時代｜生成AI活用の4段階と業務設計",
       "link": "https://axconstdx.com/2026/08/12/ai%e3%81%ab%e4%bb%95%e4%ba%8b%e3%82%92%e6%8c%81%e3%81%9f%e3%81%9b%e3%82%8b%e6%99%82%e4%bb%a3%ef%bd%9c%e7%94%9f%e6%88%90ai%e6%b4%bb%e7%94%a8%e3%81%ae4%e6%ae%b5%e9%9a%8e%e3%81%a8%e6%a5%ad%e5%8b%99/",
@@ -92,6 +112,66 @@
       "language": "en"
     },
     {
+      "title": "施工管理はやめとけと言われる理由7選｜きつい実態や後悔しない会社選びも解説",
+      "link": "https://news.build-app.jp/article/42248/",
+      "description": "「施工管理はやめとけと言われるけれど、本当にきつい？」「未経験から施工管理になるのはやめた方がいい？」と不安に感じている方も多いのではないで......",
+      "publishedDate": "Thu, 20 Aug 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/1331c4a5534d58914e394c3df2584c3d-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "シティタワーズ上板橋イースト／セントラルとは｜再開発で何ができる？",
+      "link": "https://news.build-app.jp/article/42213/",
+      "description": "トレンドワード：シティタワーズ上板橋イースト／セントラル 上板橋駅南口では、大規模な再開発が進められています。東街区と中街区には「シティタワ......",
+      "publishedDate": "Thu, 20 Aug 2026 07:03:05 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/b2d78b3b50887d5e3c52a0df0da5caf5-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "建設DX展［大阪］取材記事を9月上旬公開予定！ゼネコン向け最新DXトレンドをレポート",
+      "link": "https://news.build-app.jp/article/42122/",
+      "description": "2026年8月26日（水）～28日（金）に開催される「建設DX展［大阪］」は、建設業界のDXをテーマとした専門展示会です。当サイトでは会場を......",
+      "publishedDate": "Thu, 20 Aug 2026 06:41:51 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/AdobeStock_419991382-130x73.jpeg",
+      "language": "ja"
+    },
+    {
+      "title": "KK Generation、図面から自動でBIMを作るAIで生成AI比2倍以上のスコアを実現",
+      "link": "https://news.build-app.jp/article/42236/",
+      "description": "建設図面をもとにBIMモデルを自動生成するAIサービスを手がける株式会社KK Generation（KKG）は、自社の「BIM生成AI」につ......",
+      "publishedDate": "Thu, 20 Aug 2026 05:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/bim-generation-ai-130x73.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年版】ファン付き作業服のおすすめランキング｜現場で選ばれるモデルと失敗しない選び方",
+      "link": "https://news.build-app.jp/article/42185/",
+      "description": "トレンドワード：ファン付き作業服 夏場の建設現場では、厳しい暑さによる熱中症対策が重要です。近年は、衣服内に風を送り込んで汗の蒸発を促す「フ......",
+      "publishedDate": "Thu, 20 Aug 2026 03:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/1da9a04dea0918f5fdf7e26889bd76d5-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "Tektome、大林組の設計初期における法令・条例調査にAIエージェントを試験導入し工数削減",
+      "link": "https://news.build-app.jp/article/42230/",
+      "description": "建設特化のAIソリューションを手がけるTektome株式会社は、株式会社大林組に対し、建設分野に特化したエージェント知能基盤「Tektome......",
+      "publishedDate": "Thu, 20 Aug 2026 03:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/tektome_obayashi_aiagent-130x91.webp",
+      "language": "ja"
+    },
+    {
       "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
       "link": "https://www.buildingsmart.org/industry-insights-embracing-challenges-and-opportunities-of-using-openbim-for-increasing-efficiency-in-the-construction-process/",
       "description": "Read about Construction Industry leaders perspective on embracing challenges and opportunities of using openBIM for increasing efficiency: Link The post Industry Insights “Embracing Challenges and Opp...",
@@ -122,13 +202,13 @@
       "language": "en"
     },
     {
-      "title": "「指示するAI」から「働くAI」へ ― Gemini Sparkの正体",
-      "link": "https://axconstdx.com/2026/08/09/%e3%80%8c%e6%8c%87%e7%a4%ba%e3%81%99%e3%82%8bai%e3%80%8d%e3%81%8b%e3%82%89%e3%80%8c%e5%83%8d%e3%81%8fai%e3%80%8d%e3%81%b8-%e2%80%95-gemini-spark%e3%81%ae%e6%ad%a3%e4%bd%93/",
-      "description": "AIに指示するたび、次の作業は自分でやる。そんなもどかしさを感じたことはありませんか。Google発の新エージェント「Gemini Spark」は、目標を伝えるだけで作業まで自らこなす「働くAI」へ進化しました。仕組みと [...] <p>The post 「指示するAI」から「働くAI」へ ― Gemini Sparkの正体 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Sun, 09 Aug 2026 13:24:57 +0000",
+      "title": "CMMI AIMとは？AI導入企業が組織力を高める方法",
+      "link": "https://axconstdx.com/2026/08/23/cmmi-aim%e3%81%a8%e3%81%af%ef%bc%9fai%e5%b0%8e%e5%85%a5%e4%bc%81%e6%a5%ad%e3%81%8c%e7%b5%84%e7%b9%94%e5%8a%9b%e3%82%92%e9%ab%98%e3%82%81%e3%82%8b%e6%96%b9%e6%b3%95/",
+      "description": "AIを導入したのに、なぜか成果が担当者一人だけに留まり、組織の力になっていない。そんなもどかしさを感じたことはありませんか。本記事では、その属人化を断ち切り、AI活用を組織の実力へと変えていく成熟度モデル「CMMI AI [...] <p>The post CMMI AIMとは？AI導入企業が組織力を高める方法 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Sat, 22 Aug 2026 21:32:35 +0000",
       "source": "生成AIと建設DX",
       "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/gemini_spark_100kb-1024x585.jpg",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/CMMI_AIM_OGP_under_100KB-1-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -169,6 +249,26 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/japan-si-industry-2030-ogp-under-100kb-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "大林組、生成AIで設計初期の法令調査・要件整理業務を効率化し所要時間67%短縮",
+      "link": "https://news.build-app.jp/article/42256/",
+      "description": "建設プロジェクトの設計現場では、法令や条例の確認作業に多くの時間を取られがちです。株式会社大林組（本社：東京都港区、社長：佐藤俊美）は、設計......",
+      "publishedDate": "Fri, 21 Aug 2026 05:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/generative_ailaw-130x60.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "鹿島建設と竹中工務店、萩原工業の3社が建設現場の防炎シートで水平リサイクル実証",
+      "link": "https://news.build-app.jp/article/42251/",
+      "description": "鹿島建設株式会社と株式会社竹中工務店、萩原工業株式会社の3社は、建設現場で使われる防炎シートを対象に、水平リサイクルの実証事業をスタートしま......",
+      "publishedDate": "Fri, 21 Aug 2026 03:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/fireproof_recycling-130x96.jpg",
       "language": "ja"
     },
     {
