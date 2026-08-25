@@ -22,8 +22,10 @@ exclude:
   - README.md
   - netlify.toml
 
-  # 開発用ドキュメント / 集客・戦略メモ
+  # 開発用ドキュメント
   - docs/
+
+  # 集客・戦略メモ（中身は Notion へ移設済み。再作成された場合の安全網として残す）
   - marketing/
   - promotion/
 
