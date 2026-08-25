@@ -389,19 +389,27 @@ PRが作成されると、Netlifyが自動でプレビュー環境を構築し�
 
 **対応バージョン**: Revit 2021, 2022, 2023, 2024, 2025, 2026（全バージョン利用可能）
 
-**現在のバージョン**: v2.0.0（2026/03更新）
+**現在のバージョン**: v2.1.2（2026/08 時点で `releases/latest` が返すタグ）
 
-**GitHub Releases構成**:
-| タグ名 | アセットファイル名 |
-|--------|-------------------|
-| `v2.0.0-Revit2021` | `28Tools_Revit2021_v2.0.zip` |
-| `v2.0.0-Revit2022` | `28Tools_Revit2022_v2.0.zip` |
-| `v2.0.0-Revit2023` | `28Tools_Revit2023_v2.0.zip` |
-| `v2.0.0-Revit2024` | `28Tools_Revit2024_v2.0.zip` |
-| `v2.0.0-Revit2025` | `28Tools_Revit2025_v2.0.zip` |
-| `v2.0.0-Revit2026` | `28Tools_Revit2026_v2.0.zip` |
+**ダウンロードは合言葉なしで開始する**（2026/08〜）。以前は `js/main.js` に平文で
+書かれた合言葉を `prompt()` で照合していたが、ソースを見れば誰でも読めるうえ、
+配布物の ZIP は GitHub Releases の公開 URL から直接取得できるため、
+認証として機能していなかった。認知拡大を優先して撤廃した。
 
-**旧バージョン（v1.0.0）のリリースもGitHub上に残存**（タグ: `v1.0.0-Revit20**`）
+**ダウンロード URL は自動取得**。`js/main.js` 冒頭で
+`https://api.github.com/repos/28yu/28tools-download/releases/latest` を fetch し、
+アセット名を `28Tools_Revit(\d{4})` で照合して `downloadConfig.urls['revit2024']` の形に
+組み立てる。**リリースを公開すればサイト側の変更なしで新バージョンが配信される。**
+
+**タグ構成**:
+| 世代 | タグの付け方 | 例 |
+|---|---|---|
+| 現行（v2.0 以降） | **1リリース＝1タグに全6アセット** | `v2.1.2` → `28Tools_Revit2021_v2.1.2.zip` 〜 `..._Revit2026_v2.1.2.zip` |
+| 旧（v1.0.0） | Revit バージョンごとに別タグ | `v1.0.0-Revit2024` → `28Tools_Revit2024.zip` |
+
+⚠️ **アセットは必ず 6 バージョン分そろえて公開すること**。`releases/latest` に含まれない
+Revit バージョンは `downloadConfig.urls` に載らず、ボタンが「このバージョンはまだ
+利用できません」になる。
 
 **ダウンロードURL形式**:
 ```
@@ -412,17 +420,16 @@ https://github.com/28yu/28tools-download/releases/download/{タグ名}/{ファ�
 ```bash
 # 全リリースの一覧（GitHub API）
 curl -s https://api.github.com/repos/28yu/28tools-download/releases | jq '.[].assets[] | {name, download_count}'
-
-# GitHub CLIが使える場合
-gh release list
-gh release view v2.0.0-Revit2024
 ```
+※ `gh` CLI はこの開発環境では利用不可。
+※ サイト経由のDLは Supabase の `downloads` テーブルにも記録される（`analytics/dashboard.html` で可視化）。
 
 **バージョンアップ時の対応**:
-1. 新しいタグでGitHub Releaseを作成（全6バージョン分）
-2. `main.js`の`downloadConfig.urls`を新URLに更新
-3. `addins.html`のインストール手順内のバージョン表記を更新
-3. `addins.html`のバージョンタブの表示を更新
+1. 新しいタグで GitHub Release を作成し、**全6バージョンの ZIP を添付**する
+2. `addins.html` のインストール手順内のバージョン表記を更新
+3. `addins.html` のバージョンタブの表示を更新
+
+※ `js/main.js` の URL 更新は**不要**（`releases/latest` から自動取得するため）。
 
 ## ハッチングパターン作成ツール（hatch.html）
 
@@ -574,7 +581,8 @@ AdSense / 検索エンジンが本文を読めず「低品質コンテンツ」�
   既存の JS 描画はそのまま残してよい（静的＝クローラー/初期表示用、JS＝動的更新用）。
 - 完了後に **AdSense へ再申請**する（本番反映を確認してから）。
 
-**今回スコープ外（今後対応）**: `ai-minutes`（パスワード保護中。改善完了後に解除＋AdSense整理）。
+**今回スコープ外（当時）**: `ai-minutes`（当時はパスワード保護中）。
+※ その後 **一般公開済み**（パスワード保護は解除、`sitemap.xml` 登録済み）。
 
 ### テストリポジトリの廃止
 
@@ -1343,6 +1351,12 @@ Claude Code on the web（remote_mobile セッション）で **Notion への書�
 - ⚠️ **Bash は承認不要で通る**。壊れた承認カードを避けたいファイル書き込み（特に `.claude/settings.json`）は
   `Write` ツールではなく **Bash の heredoc** で書くと確実。
 
+### ✅ 解消済み（2026/08 実機確認）
+
+`.claude/settings.json` の事前許可がコミットされている状態で、リモートセッションから
+`notion-create-pages` が**承認カードなしで成功**することを確認（7ページ作成）。
+layer1・layer2 とも現在は通る。以下は経緯の記録として残す。
+
 ### 恒久対策（このセッションで実施済み）
 - **`.claude/settings.json`（コミット済み）** に Notion 書き込み系ツールの `permissions.allow` を追加。
   → 以後のどのリモートセッションでも **layer1 のカード崩壊は起きない**（コミットで毎コンテナに乗る）。
@@ -1355,3 +1369,60 @@ Notion コネクタのサーバ側同意は **claude.ai の設定に紐づく**�
 3. 以後はアカウントに同意が保存され、リモートセッションからの書き込みも通るようになる。
 
 → 手っ取り早く**内容を Notion に入れるだけ**なら、その PC セッションでそのまま転記するのが最短。
+
+---
+
+## 2026/08 セッションで得た知見 — 情報公開範囲の見直し & パスワード廃止
+
+### GitHub Pages は「リポジトリの中身をそのまま配信する」（重要な誤解ポイント）
+
+リポジトリを private にしても、**Pages が公開するファイルは変わらない**。
+つまり `28tools.com/CLAUDE.md` のような開発メモの露出は、**リポジトリの公開設定とは別問題**。
+
+**対策 = `_config.yml`（Jekyll の `exclude`）**。これで配信対象から外す。
+
+- 除外済み: `CLAUDE.md` / `README.md` / `netlify.toml` / `docs/` / `scripts/` /
+  各ツールの `CHANGELOG.md` `DEVELOPMENT.md` `README.md`
+- **`analytics/` は除外しない**（除外すると自分もダッシュボードを開けなくなる）
+- ⚠️ **Netlify は Jekyll を実行しない**（`netlify.toml` が `publish="."`）。
+  Netlify プレビューを復活させる場合は `netlify.toml` 側にも除外設定が必要。
+- ⚠️ `_config.yml` を足す前に、HTML/JS に Liquid 構文（`{{ }}` `{% %}`）が無いことを確認する。
+  あると Jekyll が誤処理する。2026/08 時点では 0 件。
+
+### 各リポジトリの公開状態（調査済み）
+
+| リポジトリ | 状態 |
+|---|---|
+| `28yu/28tools-download` | public（GitHub Free では private から Pages を公開できないため、private 化には GitHub Pro が必要） |
+| `28yu/revit-add-ins` | public |
+
+`revit-add-ins` を private にすると `scripts/build-manuals/inject.mjs` が壊れる
+（`raw.githubusercontent.com` と `28yu.github.io` の公開 URL 前提のため）。
+Contents API + トークン認証への改修が必要。**焼き込み済みの既存ページは静的 HTML なので
+private 化してもサイトは壊れず、次回ビルドが失敗するだけ**＝慌てず改修できる。
+
+### ダウンロードのパスワードを廃止
+
+`js/main.js` の `downloadConfig.password`（平文）と `prompt()` 照合を撤去し、
+`downloadWithPassword()` → **`startDownload()`** にリネーム。未使用だった
+限定公開ロック（`data-locked` / `setupLockedLinks` / `LOCKED_TOOL_KEY`）も削除。
+
+- DL 統計の記録（`logDownload` → Cloudflare Worker → Supabase）は**維持**
+- 「このバージョンはまだ利用できません」の案内は**維持**
+- Playwright で検証済み: パスワード入力なしで DL 開始／統計ビーコン送信／主要4ページ JS エラー 0
+
+**次の検討事項（未実装）**: DL 自体は無条件のまま、完了後に「更新のお知らせを受け取る（任意）」
+フォームを置く案。氏名+メールを**必須**にすると、個人情報保護法上の義務（安全管理措置・
+開示/削除請求対応・漏えい時の報告義務）が発生し、DL 到達率も落ちるため見送った。
+名簿を作る場合は **Supabase の RLS で anon の SELECT を完全禁止**すること
+（`analytics/dashboard.html` は anon key をブラウザに置く方式なので、そのまま個人情報を
+同じ流儀で読ませてはいけない）。
+
+### 焼き込みマニュアルの `.md` リンク 404 を修正
+
+アドイン側 Markdown は `Features/` 配下の MD 同士を相対リンク（`./SectionBoxCopy.md`）
+しているが、サイトに MD は無いため焼き込み後のリンクが全て 404 だった（25 箇所）。
+`inject.mjs` に FEATURE_ID → HTML の対応表を持たせ、焼き込み時に書き換える。
+
+- アンカー（`#section`）は保持。対応ページが無い ID はリンクを維持して警告（誤誘導の防止）
+- 冪等性を確認済み（再実行で差分なし）
