@@ -56,6 +56,32 @@ const FEATURE_ID_RE = /var\s+FEATURE_ID\s*=\s*'([^']+)'/;
 // <article id="md-content" ...>...</article> の中身を差し替える
 const ARTICLE_RE = /<article id="md-content"[^>]*>[\s\S]*?<\/article>/;
 
+// 焼き込み本文中の Markdown 相対リンク（例: ./SectionBoxCopy.md）を検出する。
+// アドイン側の MD は Features/ 配下の MD 同士を相対リンクしているが、サイトには
+// MD を配置していないため、そのまま焼き込むと 404 になる（実際に発生していた）。
+// 末尾のアンカー（#section）は保持する。
+const MD_LINK_RE = /href="([^"]*?)([A-Za-z0-9_-]+)\.md(#[^"]*)?"/g;
+
+// MD リンクを、同じ FEATURE_ID を持つサイト内のマニュアルページへ書き換える。
+// 対応表に無い ID（サイトに未掲載の機能など）はリンクを維持したまま警告を出す。
+// 黙って書き換えると誤ったページへ誘導するため、解決できないものは触らない。
+function rewriteFeatureLinks(html, featureToPage, pageName) {
+  const unresolved = [];
+  const out = html.replace(MD_LINK_RE, (whole, _dir, id, hash) => {
+    const page = featureToPage.get(id);
+    if (!page) {
+      unresolved.push(id);
+      return whole;
+    }
+    return `href="${page}${hash || ''}"`;
+  });
+  if (unresolved.length) {
+    const ids = [...new Set(unresolved)].join(', ');
+    console.warn(`  ! ${pageName}: サイト内に対応ページが無い .md リンク → そのまま維持: ${ids}`);
+  }
+  return out;
+}
+
 // 実行時 fetch を行っていた IIFE スクリプトブロック（焼き込み済みなら短絡する版に置換）
 const RUNTIME_SCRIPT_RE = /<script>\s*\(function\s*\(\)\s*\{[\s\S]*?var\s+FEATURE_ID[\s\S]*?\}\)\(\);?\s*<\/script>/;
 
@@ -123,6 +149,15 @@ async function main() {
       `Scanning ${files.length} files in ${MANUAL_DIR}\n`
   );
 
+  // 本文を焼き込む前に、FEATURE_ID → HTML ファイル名 の対応表を作る。
+  // 本文中の MD リンクをサイト内ページへ張り替えるために使う。
+  const featureToPage = new Map();
+  for (const name of files) {
+    const m = (await readFile(path.join(MANUAL_DIR, name), 'utf8')).match(FEATURE_ID_RE);
+    if (m) featureToPage.set(m[1], name);
+  }
+  console.log(`FEATURE_ID → ページ対応表: ${featureToPage.size} 件\n`);
+
   for (const name of files) {
     const filePath = path.join(MANUAL_DIR, name);
     let src = await readFile(filePath, 'utf8');
@@ -152,7 +187,7 @@ async function main() {
       continue;
     }
 
-    const html = marked.parse(md);
+    const html = rewriteFeatureLinks(marked.parse(md), featureToPage, name);
     const next = src
       .replace(ARTICLE_RE, () => buildArticle(featureId, html))
       .replace(RUNTIME_SCRIPT_RE, () => buildRuntimeScript(featureId));
