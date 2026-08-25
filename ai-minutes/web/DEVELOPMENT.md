@@ -133,7 +133,6 @@ Gemini 側は `responseSchema` でこの形を強制している（JSON モー�
   `setLang()` → 動的テキスト再適用 → 議事録があれば再レンダリングする。
 - 初期言語は `localStorage['28tools-language']` を直接読む (`detectLang()`)。
   main.js の DOMContentLoaded 順序に依存しないため。
-- ページガード (head のパスワード prompt) も `localStorage` の言語で文言を出し分け。
 - **Gemini が生成する議事録の本文は会議言語のまま** (ラベルのみ多言語化)。
   日本語音声を機械翻訳しない方針 (誤訳リスク回避)。
 - 文字列を追加するときは: 静的なら main.js + `data-lang-key`、

@@ -14,33 +14,24 @@ window.currentLanguage = currentLanguage; // news.jsから参照できるよう�
 const translations = {};
 
 // ========================================
-// パスワード保護ダウンロード設定
+// ダウンロード設定
 // ========================================
 
 const downloadConfig = {
-    // パスワード設定
-    password: '28tools',
-    
     // ダウンロードURL（GitHub APIから自動取得）
     urls: {},
     
     // 多言語メッセージ
     messages: {
         ja: {
-            promptMessage: 'ダウンロードにはパスワードが必要です。\nパスワードを入力してください：',
-            invalidPassword: 'パスワードが正しくありません。',
             notAvailable: 'このバージョンはまだ利用できません。',
             downloadStarted: 'ダウンロードを開始します...'
         },
         en: {
-            promptMessage: 'Password is required to download.\nPlease enter the password:',
-            invalidPassword: 'Invalid password.',
             notAvailable: 'This version is not available yet.',
             downloadStarted: 'Starting download...'
         },
         zh: {
-            promptMessage: '下载需要密码。\n请输入密码：',
-            invalidPassword: '密码错误。',
             notAvailable: '此版本尚未提供。',
             downloadStarted: '开始下载...'
         }
@@ -90,9 +81,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // ダウンロードボタンの初期化
     setupDownloadButtons();
-
-    // 限定公開ツールのパスワードロック (data-locked リンク)
-    setupLockedLinks();
 
     // SNSシェアボタンの初期化
     initSocialShare();
@@ -8667,7 +8655,7 @@ translations.tipsExcel = {
         translations.aiNewsPage
     );
     
-    console.log('📚 Translations initialized (v7.3 - サポート情報・インストール手順の汎用化)');
+    console.log('📚 Translations initialized (v7.4 - ダウンロードのパスワード廃止)');
 }
 
 // ========================================
@@ -8865,7 +8853,7 @@ function closeModal(modalId) {
 window.closeModal = closeModal;
 
 // ========================================
-// 11. パスワード保護ダウンロード機能
+// 11. ダウンロード機能
 // ========================================
 
 // ダウンロードメッセージを取得
@@ -8925,7 +8913,6 @@ function deviceFingerprintText() {
     } catch (e) {}
 })();
 
-// パスワード保護ダウンロード関数
 // ダウンロード統計の記録（Cloudflare Worker → Supabase）
 // 国・OS・時刻はWorker側で自動付与。ここではバージョン情報のみ送信する。
 const DOWNLOAD_LOG_ENDPOINT = 'https://28tools-dl.tsuha.workers.dev';
@@ -9020,83 +9007,30 @@ function logToolEvent(eventType) {
     } catch (e) {}
 }
 
-function downloadWithPassword(version) {
+// ダウンロードを開始する
+// 2026/08: パスワードゲートを廃止。js/main.js に平文で置かれた合言葉は認証として
+// 機能しておらず（ソースを見れば誰でも読める）、配布物の ZIP も GitHub Releases の
+// 公開 URL から直接取得できるため、実態は「摩擦」だけだった。認知拡大を優先して撤廃。
+function startDownload(version) {
     console.log(`📥 Download requested: ${version}`);
-    
+
     const url = downloadConfig.urls[version];
-    
+
     // URLが設定されていない場合
     if (!url) {
         alert(getDownloadMessage('notAvailable'));
         return;
     }
-    
-    // パスワード入力ダイアログ
-    const userPassword = prompt(getDownloadMessage('promptMessage'));
-    
-    // キャンセルされた場合
-    if (userPassword === null) {
-        console.log('📥 Download cancelled by user');
-        return;
-    }
-    
-    // パスワード検証
-    if (userPassword === downloadConfig.password) {
-        // 正しいパスワード → ダウンロード開始
-        console.log(`✅ Password correct, starting download: ${version}`);
-        // ダウンロード統計を記録（失敗してもDLには影響しない）
-        logDownload(version, url);
-        window.location.href = url;
-    } else {
-        // 間違ったパスワード
-        console.log('❌ Invalid password');
-        alert(getDownloadMessage('invalidPassword'));
-    }
+
+    // ダウンロード統計を記録（失敗してもDLには影響しない）
+    logDownload(version, url);
+    window.location.href = url;
 }
 
 // 準備中メッセージを表示する関数
 function showNotAvailableMessage() {
     console.log('⏳ Version not available');
     alert(getDownloadMessage('notAvailable'));
-}
-
-// ========================================
-// 限定公開ツールのパスワードロック
-// パスワードはダウンロードと共通 (downloadConfig.password = '28tools')
-// ========================================
-// data-locked="true" を付けたリンク (カード/サイドバー) のクリックを保護する。
-// 解錠状態は sessionStorage に保存し、ツールページ側のガードと共有する。
-const LOCKED_TOOL_KEY = 'tool-unlocked-ai-minutes';
-
-function isLockedToolUnlocked() {
-    try { return sessionStorage.getItem(LOCKED_TOOL_KEY) === 'yes'; }
-    catch (e) { return false; }
-}
-
-function requestLockedToolAccess() {
-    if (isLockedToolUnlocked()) return true;
-    const pw = prompt(getDownloadMessage('promptMessage'));
-    if (pw === null) return false; // キャンセル
-    if (pw === downloadConfig.password) {
-        try { sessionStorage.setItem(LOCKED_TOOL_KEY, 'yes'); } catch (e) {}
-        return true;
-    }
-    alert(getDownloadMessage('invalidPassword'));
-    return false;
-}
-
-// サイドバー等は後から fetch で挿入されるため、document への委譲で捕捉する。
-function setupLockedLinks() {
-    document.addEventListener('click', function(e) {
-        const link = e.target.closest('a[data-locked="true"]');
-        if (!link) return;
-        if (isLockedToolUnlocked()) return; // 解錠済みは素通り
-        e.preventDefault();
-        e.stopPropagation();
-        if (requestLockedToolAccess()) {
-            window.location.href = link.getAttribute('href');
-        }
-    }, true); // capture: 他のクリックハンドラより先に実行
 }
 
 // ダウンロードボタンの初期化
@@ -9115,7 +9049,7 @@ function setupDownloadButtons() {
 
             if (version) {
                 // ダウンロード開始
-                downloadWithPassword(version);
+                startDownload(version);
             }
         });
     });
@@ -9124,7 +9058,7 @@ function setupDownloadButtons() {
 }
 
 // グローバルに公開（onclick属性用）
-window.downloadWithPassword = downloadWithPassword;
+window.startDownload = startDownload;
 window.showNotAvailableMessage = showNotAvailableMessage;
 
 // ========================================
@@ -9190,7 +9124,7 @@ window.debug28Tools = {
     openModal: (id) => openModal(id),
     closeModal: (id) => closeModal(id),
     downloadConfig: () => downloadConfig,
-    downloadWithPassword: (version) => downloadWithPassword(version)
+    startDownload: (version) => startDownload(version)
 };
 
-console.log('✅ 28 Tools Download Center - JavaScript loaded successfully (v7.3 - サポート情報・インストール手順の汎用化)');
+console.log('✅ 28 Tools Download Center - JavaScript loaded successfully (v7.4 - ダウンロードのパスワード廃止)');
