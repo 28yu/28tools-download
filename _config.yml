@@ -1,0 +1,41 @@
+# GitHub Pages (Jekyll) 設定
+#
+# 目的: 開発用ドキュメントをサイト (28tools.com) の配信対象から除外する。
+#
+# 背景:
+#   GitHub Pages は「リポジトリの中身をそのまま公開する」仕組みのため、
+#   何もしないと https://28tools.com/CLAUDE.md のように開発メモが
+#   誰でも読める状態になる。ここで除外指定して配信を止める。
+#
+# 注意:
+#   - これは「サイトからの配信」を止めるだけ。リポジトリが public な限り
+#     GitHub 上では引き続き閲覧できる。機密性の高い情報 (戦略・個人情報) は
+#     そもそもリポジトリに置かず Notion 側で管理すること。
+#   - Netlify は Jekyll を実行しない (netlify.toml が publish="." のため)。
+#     Netlify プレビューを復活させる場合は netlify.toml 側にも除外設定が必要。
+#   - exclude はディレクトリ単位で指定すると配下すべてが消えるため、
+#     ツール本体を含むディレクトリ (pdf-to-excel/ 等) はファイル単位で指定する。
+
+exclude:
+  # 開発ガイド・リポジトリ設定
+  - CLAUDE.md
+  - README.md
+  - netlify.toml
+
+  # 開発用ドキュメント / 集客・戦略メモ
+  - docs/
+  - marketing/
+  - promotion/
+
+  # CI 用スクリプト (サイトからは参照されない)
+  - scripts/
+
+  # 各ツールの開発ドキュメント (ツール本体は配信を維持する)
+  - ai-minutes/web/CHANGELOG.md
+  - ai-minutes/web/DEVELOPMENT.md
+  - ai-minutes/web/README.md
+  - pdf-to-excel/prototype/README.md
+  - pdf-to-excel/src/README.md
+  - pdf-to-excel/web/CHANGELOG.md
+  - pdf-to-excel/web/DEVELOPMENT.md
+  - pdf-to-excel/web/README.md
