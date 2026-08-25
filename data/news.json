@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T00:43:33.773431",
+  "lastUpdated": "2026-08-25T00:43:13.658998",
   "articles": [
     {
       "title": "AIに仕事を持たせる時代｜生成AI活用の4段階と業務設計",
@@ -122,16 +122,6 @@
       "language": "ja"
     },
     {
-      "title": "【2026年版】ファン付き作業服のおすすめランキング｜現場で選ばれるモデルと失敗しない選び方",
-      "link": "https://news.build-app.jp/article/42185/",
-      "description": "トレンドワード：ファン付き作業服 夏場の建設現場では、厳しい暑さによる熱中症対策が重要です。近年は、衣服内に風を送り込んで汗の蒸発を促す「フ......",
-      "publishedDate": "Thu, 20 Aug 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/07/1da9a04dea0918f5fdf7e26889bd76d5-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
       "link": "https://www.buildingsmart.org/industry-insights-embracing-challenges-and-opportunities-of-using-openbim-for-increasing-efficiency-in-the-construction-process/",
       "description": "Read about Construction Industry leaders perspective on embracing challenges and opportunities of using openBIM for increasing efficiency: Link The post Industry Insights “Embracing Challenges and Opp...",
@@ -209,6 +199,16 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/CMMI_AIM_OGP_under_100KB-1-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "renueと丸紅、数量拾いAIアプリを共同開発、作業時間を最大12時間から約10分に短縮",
+      "link": "https://news.build-app.jp/article/42318/",
+      "description": "静岡県島田市の土木建設会社・株式会社丸紅と、AIコンサルティング企業の株式会社renue（本社：東京都港区）が共同開発したAIアプリの取り組......",
+      "publishedDate": "Mon, 24 Aug 2026 06:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/renue_ai_takeoff-130x68.webp",
       "language": "ja"
     },
     {
