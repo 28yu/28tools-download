@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T00:43:13.658998",
+  "lastUpdated": "2026-08-26T00:44:12.439768",
   "articles": [
     {
       "title": "AIに仕事を持たせる時代｜生成AI活用の4段階と業務設計",
@@ -19,6 +19,26 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100kb-1-2-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "戸田建設、施設情報を一元化するクラウドRAKU-PLATの有償トライアル開始",
+      "link": "https://news.build-app.jp/article/42330/",
+      "description": "戸田建設株式会社（本社：東京都中央区、社長：大谷清介氏）は、施設管理業務に関するクラウドサービス「RAKU-PLAT（ラクプラット）」につい......",
+      "publishedDate": "Tue, 25 Aug 2026 09:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/raku_facility_management-130x81.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、砂防関係事業の遠隔・自動施工推進で中間とりまとめを公表、生産性向上目指す",
+      "link": "https://news.build-app.jp/article/42326/",
+      "description": "国土交通省は令和8年8月24日、「砂防関係事業における遠隔・自動施工の推進検討委員会」の中間とりまとめを公表しました。土砂災害から人々の命や......",
+      "publishedDate": "Tue, 25 Aug 2026 07:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/809uDWknnpUwU651641950054-130x73.jpg",
       "language": "ja"
     },
     {
@@ -99,26 +119,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/b2d78b3b50887d5e3c52a0df0da5caf5-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "建設DX展［大阪］取材記事を9月上旬公開予定！ゼネコン向け最新DXトレンドをレポート",
-      "link": "https://news.build-app.jp/article/42122/",
-      "description": "2026年8月26日（水）～28日（金）に開催される「建設DX展［大阪］」は、建設業界のDXをテーマとした専門展示会です。当サイトでは会場を......",
-      "publishedDate": "Thu, 20 Aug 2026 06:41:51 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/AdobeStock_419991382-130x73.jpeg",
-      "language": "ja"
-    },
-    {
-      "title": "KK Generation、図面から自動でBIMを作るAIで生成AI比2倍以上のスコアを実現",
-      "link": "https://news.build-app.jp/article/42236/",
-      "description": "建設図面をもとにBIMモデルを自動生成するAIサービスを手がける株式会社KK Generation（KKG）は、自社の「BIM生成AI」につ......",
-      "publishedDate": "Thu, 20 Aug 2026 05:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/bim-generation-ai-130x73.webp",
       "language": "ja"
     },
     {
