@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-08-26T00:44:12.439768",
+  "lastUpdated": "2026-08-27T05:53:48.846239",
   "articles": [
+    {
+      "title": "国土交通省、7月の建設技能労働者不足率1.2%に拡大、前月比0.2ポイント増",
+      "link": "https://news.build-app.jp/article/42365/",
+      "description": "国土交通省は8月25日、建設技能労働者の需給状況をまとめた「建設労働需給調査結果（令和8年7月分調査）」を公表しました。今回の結果からは、建......",
+      "publishedDate": "Wed, 26 Aug 2026 06:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/supply_demand_survey-130x63.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、8月の主要建設資材需給・価格動向調査の結果でH形鋼のみやや上昇と公表",
+      "link": "https://news.build-app.jp/article/42361/",
+      "description": "国土交通省は、令和8年8月1日から5日にかけて実施した「主要建設資材需給・価格動向調査」の結果を公表しました。生コンクリートや鋼材、木材など......",
+      "publishedDate": "Wed, 26 Aug 2026 04:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/09/zKnsdMguwAtYmbD1662569778_1662569810-130x82.jpg",
+      "language": "ja"
+    },
     {
       "title": "AIに仕事を持たせる時代｜生成AI活用の4段階と業務設計",
       "link": "https://axconstdx.com/2026/08/12/ai%e3%81%ab%e4%bb%95%e4%ba%8b%e3%82%92%e6%8c%81%e3%81%9f%e3%81%9b%e3%82%8b%e6%99%82%e4%bb%a3%ef%bd%9c%e7%94%9f%e6%88%90ai%e6%b4%bb%e7%94%a8%e3%81%ae4%e6%ae%b5%e9%9a%8e%e3%81%a8%e6%a5%ad%e5%8b%99/",
@@ -102,26 +122,6 @@
       "language": "en"
     },
     {
-      "title": "施工管理はやめとけと言われる理由7選｜きつい実態や後悔しない会社選びも解説",
-      "link": "https://news.build-app.jp/article/42248/",
-      "description": "「施工管理はやめとけと言われるけれど、本当にきつい？」「未経験から施工管理になるのはやめた方がいい？」と不安に感じている方も多いのではないで......",
-      "publishedDate": "Thu, 20 Aug 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/1331c4a5534d58914e394c3df2584c3d-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "シティタワーズ上板橋イースト／セントラルとは｜再開発で何ができる？",
-      "link": "https://news.build-app.jp/article/42213/",
-      "description": "トレンドワード：シティタワーズ上板橋イースト／セントラル 上板橋駅南口では、大規模な再開発が進められています。東街区と中街区には「シティタワ......",
-      "publishedDate": "Thu, 20 Aug 2026 07:03:05 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/b2d78b3b50887d5e3c52a0df0da5caf5-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
       "link": "https://www.buildingsmart.org/industry-insights-embracing-challenges-and-opportunities-of-using-openbim-for-increasing-efficiency-in-the-construction-process/",
       "description": "Read about Construction Industry leaders perspective on embracing challenges and opportunities of using openBIM for increasing efficiency: Link The post Industry Insights “Embracing Challenges and Opp...",
@@ -202,6 +202,16 @@
       "language": "ja"
     },
     {
+      "title": "アニメとコスプレのまちづくり｜消滅可能性都市からの脱却、東池袋一丁目地区第一種市街地再開発",
+      "link": "https://news.build-app.jp/article/42284/",
+      "description": "池袋を世界に誇る「アニメとコスプレのまち」へ 池袋ウエストゲートパーク、乙女ロードなど、オタクの聖地とも言われるスポットが集まる池袋で、大き......",
+      "publishedDate": "Mon, 24 Aug 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/289b8202fabd93ca74a143610ab403a7-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "renueと丸紅、数量拾いAIアプリを共同開発、作業時間を最大12時間から約10分に短縮",
       "link": "https://news.build-app.jp/article/42318/",
       "description": "静岡県島田市の土木建設会社・株式会社丸紅と、AIコンサルティング企業の株式会社renue（本社：東京都港区）が共同開発したAIアプリの取り組......",
@@ -259,16 +269,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/generative_ailaw-130x60.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "鹿島建設と竹中工務店、萩原工業の3社が建設現場の防炎シートで水平リサイクル実証",
-      "link": "https://news.build-app.jp/article/42251/",
-      "description": "鹿島建設株式会社と株式会社竹中工務店、萩原工業株式会社の3社は、建設現場で使われる防炎シートを対象に、水平リサイクルの実証事業をスタートしま......",
-      "publishedDate": "Fri, 21 Aug 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/fireproof_recycling-130x96.jpg",
       "language": "ja"
     },
     {
