@@ -1,6 +1,16 @@
 {
-  "lastUpdated": "2026-08-27T05:53:48.846239",
+  "lastUpdated": "2026-08-28T08:05:29.712692",
   "articles": [
+    {
+      "title": "玉掛け合図一覧｜ゴーヘイ・スラー、手・声・無線の正しい方法",
+      "link": "https://news.build-app.jp/article/42397/",
+      "description": "玉掛け合図とは、つり荷の巻上げや移動、停止などをクレーン運転者へ伝える合図です。 手、旗、声、無線などの方法がありますが、現場で合図を統一し......",
+      "publishedDate": "Wed, 26 Aug 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/8602e0d671eba3664cdde64bce803b18-130x82.png",
+      "language": "ja"
+    },
     {
       "title": "国土交通省、7月の建設技能労働者不足率1.2%に拡大、前月比0.2ポイント増",
       "link": "https://news.build-app.jp/article/42365/",
@@ -29,16 +39,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/2b4f9ed910784ce44b1c082e1050dcdf-1024x539.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Gemini SparkとChatGPT Workの違いは3つ",
-      "link": "https://axconstdx.com/2026/08/12/gemini-spark%e3%81%a8chatgpt-work%e3%81%ae%e9%81%95%e3%81%84%e3%81%af3%e3%81%a4/",
-      "description": "「エージェントAIって結局何が違うの?」そんな疑問にモヤモヤしていませんか。Gemini SparkとChatGPT Workは似ているようで、設計の重心が大きく異なります。稼働スタイル・連携領域・設計思想という3つの視 [...] <p>The post Gemini SparkとChatGPT Workの違いは3つ first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Wed, 12 Aug 2026 06:48:24 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100kb-1-2-1024x538.jpg",
       "language": "ja"
     },
     {
@@ -92,26 +92,6 @@
       "language": "en"
     },
     {
-      "title": "そのIFC、本当に使えますか？品質管理3層の実務術",
-      "link": "https://axconstdx.com/2026/08/12/%e3%81%9d%e3%81%aeifc%e3%80%81%e6%9c%ac%e5%bd%93%e3%81%ab%e4%bd%bf%e3%81%88%e3%81%be%e3%81%99%e3%81%8b%ef%bc%9f%e5%93%81%e8%b3%aa%e7%ae%a1%e7%90%863%e5%b1%a4%e3%81%ae%e5%ae%9f%e5%8b%99%e8%a1%93/",
-      "description": "IFCを無事に書き出せたその瞬間、思わずほっと安心していませんか。実はその油断こそが、竣工後の維持管理段階で情報不足に気づき、大きな手戻りを招く落とし穴なのです。本記事を読めば、IFCを本当に使える状態へ導く品質管理の考 [...] <p>The post そのIFC、本当に使えますか？品質管理3層の実務術 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Tue, 11 Aug 2026 22:05:31 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp-eyecatch-1200x630-under100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "既存建物の図面と現況のズレ、BIM化で今すぐ解消",
-      "link": "https://axconstdx.com/2026/08/11/%e6%97%a2%e5%ad%98%e5%bb%ba%e7%89%a9%e3%81%ae%e5%9b%b3%e9%9d%a2%e3%81%a8%e7%8f%be%e6%b3%81%e3%81%ae%e3%82%ba%e3%83%ac%e3%80%81bim%e5%8c%96%e3%81%a7%e4%bb%8a%e3%81%99%e3%81%90%e8%a7%a3%e6%b6%88/",
-      "description": "既存建物の図面と現況のズレは、3Dレーザースキャンで取得した点群データをもとに現況BIMを作成するScan to BIMによって解消できます。 古い竣工図や改修履歴だけでは把握できない梁・配管・壁・設備の実位置を3次元で [...] <p>The post 既存建物の図面と現況のズレ、BIM化で今すぐ解消 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Tue, 11 Aug 2026 09:34:40 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/wp_eyecatch_1200x630_under100KB-5-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "buildingSMART International Appoints Aidan Mercer as Managing Director",
       "link": "https://www.buildingsmart.org/buildingsmart-international-appoints-aidan-mercer-as-managing-director/",
       "description": "London, U.K. – April 30th, 2026 — The Board of buildingSMART International (bSI) is pleased to announce the appointment of Aidan Mercer as Managing Director (MD), effective 1 May 2026.... The post bui...",
@@ -120,6 +100,66 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "グランドシティタワー池袋｜なぜ人気？「値下げしないすみふ」の豊島区最大級タワマンの資産価値",
+      "link": "https://news.build-app.jp/article/42349/",
+      "description": "グランドシティタワー池袋（南池袋二丁目C地区第一種市街地再開発事業 北街区） 住友不動産は「値下げしない」販売戦略により、周辺不動産の価格形......",
+      "publishedDate": "Thu, 27 Aug 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/5d33f013f9f086624e26c13590e6e431-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "BIM補助金9月30日締切、AI活用で建設DXが動く2026年",
+      "link": "https://axconstdx.com/2026/08/27/bim%e8%a3%9c%e5%8a%a9%e9%87%919%e6%9c%8830%e6%97%a5%e7%b7%a0%e5%88%87%e3%80%81ai%e6%b4%bb%e7%94%a8%e3%81%a7%e5%bb%ba%e8%a8%addx%e3%81%8c%e5%8b%95%e3%81%8f2026%e5%b9%b4/",
+      "description": "「うちはまだ大丈夫」と思っていた制度が、静かに原則化へと動き出しています。補助金の締切、AIによる劇的な時短、iPhone1台で完結するBIM化——知らないまま9月を迎えるか、今日から動くかで、来年の景色は大きく変わりま [...] <p>The post BIM補助金9月30日締切、AI活用で建設DXが動く2026年 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Thu, 27 Aug 2026 12:24:47 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/bim_dx_2026_web_optimized-1024x538.webp",
+      "language": "ja"
+    },
+    {
+      "title": "レガシーシステムもAIが操作。Claude in Chrome本格始動",
+      "link": "https://axconstdx.com/2026/08/27/%e3%83%ac%e3%82%ac%e3%82%b7%e3%83%bc%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%82%82ai%e3%81%8c%e6%93%8d%e4%bd%9c%e3%80%82claude-in-chrome%e6%9c%ac%e6%a0%bc%e5%a7%8b%e5%8b%95/",
+      "description": "古いシステムだからと、AI活用を諦めていませんか。ベンダーポータルもCADツールも、実はブラウザさえあればAIに任せられる時代が、2026年8月26日に本格的に始まりました。開発費をかけずに、現場の負担を確実に減らせる理 [...] <p>The post レガシーシステムもAIが操作。Claude in Chrome本格始動 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Thu, 27 Aug 2026 11:20:16 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/legacy_ai_browser_ogp_1200x630-1024x538.webp",
+      "language": "ja"
+    },
+    {
+      "title": "大成建設ら3社、360度カメラドローンで排水管路を点検、作業員の立入りなしで安全に調査",
+      "link": "https://news.build-app.jp/article/42377/",
+      "description": "大成建設株式会社は、成和リニューアルワークス株式会社、JP Drone株式会社とともに、360度カメラを搭載したドローンを用いた新しい管路点......",
+      "publishedDate": "Thu, 27 Aug 2026 09:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/drone_pipe_inspection-130x73.png",
+      "language": "ja"
+    },
+    {
+      "title": "あなたの仕事の70%消える？Cloud Browser衝撃",
+      "link": "https://axconstdx.com/2026/08/27/%e3%81%82%e3%81%aa%e3%81%9f%e3%81%ae%e4%bb%95%e4%ba%8b%e3%81%ae70%e6%b6%88%e3%81%88%e3%82%8b%ef%bc%9fcloud-browser%e8%a1%9d%e6%92%83/",
+      "description": "「気づいたら自分の仕事がなくなっていた」——そんな漠然とした不安を抱えたことはありませんか。実はAIが最初に奪うのは仕事そのものではなく、ログインや転記といった日々の面倒な「操作」だけです。その本当の線引きを知れば、漠然 [...] <p>The post あなたの仕事の70%消える？Cloud Browser衝撃 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Thu, 27 Aug 2026 09:14:55 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/cloud-browser-70percent-ogp-1200x630-1-1024x538.webp",
+      "language": "ja"
+    },
+    {
+      "title": "富士通が東急建設・北野建設とFTP再開発現場で建設工程管理支援AIの実証実験を開始",
+      "link": "https://news.build-app.jp/article/42374/",
+      "description": "富士通株式会社は、東急建設株式会社および北野建設株式会社と共同で、建設現場の工程やタスクの抜け漏れリスクを減らすAIの実証実験に乗り出しまし......",
+      "publishedDate": "Thu, 27 Aug 2026 08:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/fujitsu_construction_ai-130x68.jpg",
+      "language": "ja"
     },
     {
       "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
@@ -152,36 +192,6 @@
       "language": "en"
     },
     {
-      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第十回)｜深堀り取材【毎月3回更新】",
-      "link": "https://news.build-app.jp/article/42262/",
-      "description": "本稿でも繰り返し、報告しているように、建設業においてもAIの援用範囲は多方面へと急速な拡がりをみせている。今回は、工事の進行を逐次的に時間軸......",
-      "publishedDate": "Sun, 23 Aug 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/ac4a18f6c7977c675888d1b983676199-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新】労働安全衛生法の改正点｜建設業の違反率・労災推移・現場対応を解説",
-      "link": "https://news.build-app.jp/article/42314/",
-      "description": "死亡者が減っていても、建設現場の安全管理を後回しにはできません。2025年の建設業では214人が労働災害で死亡し、全産業の死亡者700人の約......",
-      "publishedDate": "Sun, 23 Aug 2026 16:34:01 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/32904502_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新】砕石価格の相場と推移｜種類別の用途・選び方・見積方法を解説",
-      "link": "https://news.build-app.jp/article/42309/",
-      "description": "砕石は、同じ数量を発注しても現場到着時の原価が変わりやすい資材です。材料単価が安くても、採石場からの距離や車両条件によって運賃が上乗せされま......",
-      "publishedDate": "Sun, 23 Aug 2026 16:21:51 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/34619791_m-130x97.jpg",
-      "language": "ja"
-    },
-    {
       "title": "PLATEAUとは？3D都市モデルを業務の判断に活かす方法",
       "link": "https://axconstdx.com/2026/08/23/plateau%e3%81%a8%e3%81%af%ef%bc%9f3d%e9%83%bd%e5%b8%82%e3%83%a2%e3%83%87%e3%83%ab%e3%82%92%e6%a5%ad%e5%8b%99%e3%81%ae%e5%88%a4%e6%96%ad%e3%81%ab%e6%b4%bb%e3%81%8b%e3%81%99%e6%96%b9%e6%b3%95/",
       "description": "PLATEAUを立派な3D地図だと眺めるだけで満足していませんか。実はその使い方では、都市データが持つ本当の力の半分も引き出せていません。開発協議や施工計画で見落としを防ぎ、関係者の判断をそろえる基盤として活かす方法を、 [...] <p>The post PLATEAUとは？3D都市モデルを業務の判断に活かす方法 first appeared on 生成AIと建設DX.</p>...",
@@ -202,23 +212,13 @@
       "language": "ja"
     },
     {
-      "title": "アニメとコスプレのまちづくり｜消滅可能性都市からの脱却、東池袋一丁目地区第一種市街地再開発",
-      "link": "https://news.build-app.jp/article/42284/",
-      "description": "池袋を世界に誇る「アニメとコスプレのまち」へ 池袋ウエストゲートパーク、乙女ロードなど、オタクの聖地とも言われるスポットが集まる池袋で、大き......",
+      "title": "2級建築施工管理技士とは？｜仕事内容・受検資格・難易度・取得メリットを解説",
+      "link": "https://news.build-app.jp/article/42392/",
+      "description": "建築工事の現場で、工程・品質・安全などを管理する施工管理。その知識と能力を証明する国家資格が「建築施工管理技士」です。 なかでも2級建築施工......",
       "publishedDate": "Mon, 24 Aug 2026 22:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/289b8202fabd93ca74a143610ab403a7-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "renueと丸紅、数量拾いAIアプリを共同開発、作業時間を最大12時間から約10分に短縮",
-      "link": "https://news.build-app.jp/article/42318/",
-      "description": "静岡県島田市の土木建設会社・株式会社丸紅と、AIコンサルティング企業の株式会社renue（本社：東京都港区）が共同開発したAIアプリの取り組......",
-      "publishedDate": "Mon, 24 Aug 2026 06:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/renue_ai_takeoff-130x68.webp",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/70c8084f9184da384cbb34ff9e772ecc-130x82.png",
       "language": "ja"
     },
     {
@@ -242,6 +242,16 @@
       "language": "en"
     },
     {
+      "title": "大林組、PLATEAU活用し風環境解析を約500倍高速化する環境設計プラットフォームを開発",
+      "link": "https://news.build-app.jp/article/42382/",
+      "description": "大林組は、3D都市モデル「PLATEAU」を活用し、建物建設に伴う風や景観への影響を設計者自身が手軽に予測・評価できる環境設計プラットフォー......",
+      "publishedDate": "Fri, 28 Aug 2026 05:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/archipalette_plateau-130x94.webp",
+      "language": "ja"
+    },
+    {
       "title": "buildingSMART Brazil has been formally approved as a Full Chapter",
       "link": "https://www.buildingsmart.org/buildingsmart-brazil-has-been-formally-approved-as-a-full-chapter/",
       "description": "London, U.K. – March 27th, 2026 — buildingSMART International (bSI) is pleased to announce that buildingSMART Brazil has been formally approved by the Board to become a Full Chapter, effective March.....",
@@ -259,16 +269,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/japan-si-industry-2030-ogp-under-100kb-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "大林組、生成AIで設計初期の法令調査・要件整理業務を効率化し所要時間67%短縮",
-      "link": "https://news.build-app.jp/article/42256/",
-      "description": "建設プロジェクトの設計現場では、法令や条例の確認作業に多くの時間を取られがちです。株式会社大林組（本社：東京都港区、社長：佐藤俊美）は、設計......",
-      "publishedDate": "Fri, 21 Aug 2026 05:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/generative_ailaw-130x60.jpg",
       "language": "ja"
     },
     {
