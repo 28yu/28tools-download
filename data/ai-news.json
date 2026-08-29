@@ -1,28 +1,6 @@
 {
-  "lastUpdated": "2026-08-28T12:33:28.781963",
+  "lastUpdated": "2026-08-29T07:42:51.277593",
   "articles": [
-    {
-      "title": "生成AIの最新比較表！無料と有料の判断軸も網羅！おすすめ生成AIサービスの特徴や料金を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chatgpt-bard-bingai/",
-      "description": "生成AIは、文章作成や画像生成にとどまらず、動画・音声・音楽・ソースコードの生成や高度なリサーチまで、幅広い用途で実用化が進んでいます。「ツールが多すぎてどれを選べばいいかわからない」「有料プランに移行すべきか迷う」と感 [...]...",
-      "publishedDate": "Wed, 26 Aug 2026 22:57:10 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/chatgpt-bard-bingai_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "日本企業の生成AIビジネス活用事例41選まとめ！業務を大幅に改善させた面白い使い方を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/case-studies-of-japanese-companies/",
-      "description": "近年、生成AIはあらゆる業界の業務基盤として急速に定着しつつあります。PwC Japanの生成AIに関する実態調査によると、日本企業における生成AIの活用率（導入・検討中を含む）は8割を超え、組織的に生成AIを活用する企 [...]...",
-      "publishedDate": "Wed, 26 Aug 2026 22:11:20 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/case-studies-of-japanese-companies_2608-1024x576.webp",
-      "language": "ja"
-    },
     {
       "title": "The inside story on why OpenAI agents hacked Hugging Face",
       "titleJa": "The inside story on why OpenAI agents hacked Hugging Face",
@@ -46,10 +24,10 @@
       "language": "en"
     },
     {
-      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
-      "titleJa": "Bringing ChatGPT for Teachers to more U.S. school districts",
-      "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
-      "description": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff....",
+      "title": "Learning never stops: How AI makes learning continuous",
+      "titleJa": "Learning never stops: How AI makes learning continuous",
+      "link": "https://openai.com/index/learning-never-stops",
+      "description": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom....",
       "publishedDate": "Wed, 26 Aug 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -57,10 +35,10 @@
       "language": "en"
     },
     {
-      "title": "Learning never stops: How AI makes learning continuous",
-      "titleJa": "Learning never stops: How AI makes learning continuous",
-      "link": "https://openai.com/index/learning-never-stops",
-      "description": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom....",
+      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+      "titleJa": "Bringing ChatGPT for Teachers to more U.S. school districts",
+      "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+      "description": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff....",
       "publishedDate": "Wed, 26 Aug 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -200,17 +178,6 @@
       "language": "en"
     },
     {
-      "title": "Addressing a sticking point in sustainable adhesives",
-      "titleJa": "Addressing a sticking point in sustainable adhesives",
-      "link": "https://www.technologyreview.com/2026/08/25/1140902/addressing-a-sticking-point-in-sustainable-adhesives/",
-      "description": "Petroleum-based adhesives are everywhere: bonding the wood and drywall in a construction project, holding together the joints of furniture, and even sticking labels to otherwise recyclable containers....",
-      "publishedDate": "Tue, 25 Aug 2026 21:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/Ferreira_photoKort-Duce_Dynamic-Tech-Media-thumb.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "5 ways to upgrade your home decor with Google Search",
       "titleJa": "5 ways to upgrade your home decor with Google Search",
       "link": "https://blog.google/products-and-platforms/products/search/home-decor-tips/",
@@ -332,17 +299,6 @@
       "language": "en"
     },
     {
-      "title": "Thinking of ACE? We Can Do It with Fewer Tokens",
-      "titleJa": "Thinking of ACE? We Can Do It with Fewer Tokens",
-      "link": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
-      "description": "...",
-      "publishedDate": "Tue, 11 Aug 2026 13:37:10 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6435a1131860001f144239ea/G2z5bU66FNnhBf_UhSNij.jpeg",
-      "language": "en"
-    },
-    {
       "title": "The latest AI news we announced in July 2026",
       "titleJa": "The latest AI news we announced in July 2026",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
@@ -351,6 +307,28 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/July_AI_Recap_still.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "A startup claims it’s found a drug to make your blood young",
+      "titleJa": "A startup claims it’s found a drug to make your blood young",
+      "link": "https://www.technologyreview.com/2026/08/27/1143037/startup-claims-its-found-a-drug-to-make-your-blood-young/",
+      "description": "I knew I’d officially become a “longevity influencer” this month when a company called Generation Lab reached out to offer me the chance to write about—and even receive—their new rejuvenation treatmen...",
+      "publishedDate": "Thu, 27 Aug 2026 19:48:13 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/260824_youngblood_v2.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "3 new ways to plan and book travel in Search",
+      "titleJa": "3 new ways to plan and book travel in Search",
+      "link": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
+      "description": "Graphic depicting new travel features for AI Mode in Search...",
+      "publishedDate": "Thu, 27 Aug 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Travel_Blog_Hero_8.27.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -431,14 +409,36 @@
       "language": "ja"
     },
     {
-      "title": "【Gemini 3.5 Transcribe】Googleの最新音声認識モデル！WER 2.6%の精度・料金・使い方を徹底解説",
+      "title": "【生成AI×業務効率化】仕事の生産性を高めたいならこれを使え！自動化の鬼になれるAIツールを紹介",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gemini-3-5-transcribe/",
-      "description": "2026年8月27日、GoogleはGeminiシリーズの最新音声認識モデル「Gemini 3.5 Transcribe」をパブリックプレビューとして公開しました！ 従来の音声認識モデルが苦手としてきたバックグラウンドノ [...]...",
-      "publishedDate": "Thu, 27 Aug 2026 02:35:01 +0000",
+      "link": "https://weel.co.jp/media/gen-ai-optimization/",
+      "description": "あなたの会社では、生成AIで業務効率化を行っていますか？まだ活用していないという方は、少し危機感を持った方がよいかもしれません。 総務省が2026年7月に公表した「令和8年版情報通信白書」によると、1つ以上の業務で生成A [...]...",
+      "publishedDate": "Fri, 28 Aug 2026 19:24:05 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-3.5-Transcribe-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/gen-ai-optimization_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIによる教育業界の業務DX化！効率化と授業品質UPが狙える活用法や現場の導入事例を紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/education-industry-issues/",
+      "description": "「教員の数は減っているのに、多様化する子どもたちへのきめ細やかな対応が求められる……」「既存の指導要領に上乗せして、デジタル社会を踏まえたカリキュラムを組まなくてはいけない……」など、目まぐるしい令和の教育現場にお悩みの [...]...",
+      "publishedDate": "Fri, 28 Aug 2026 17:56:46 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/education-industry-issues_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIを用いた法務業務とは？導入メリットや注意点、弁護士への影響を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/generative-ai-legal-affairs/",
+      "description": "生成AIは、契約書のたたき台作成・レビュー支援・法律文書の要約など、法務業務の負担を減らす手段として活用が広がっています。一方で、「AIが弁護士の仕事を奪うのでは」「機密情報を入力して大丈夫なのか」と不安を感じる方もいる [...]...",
+      "publishedDate": "Fri, 28 Aug 2026 17:15:38 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/generative-ai-legal-affairs_2608-1024x576.webp",
       "language": "ja"
     },
     {
