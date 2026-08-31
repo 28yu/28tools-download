@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-08-30T06:18:02.443558",
+  "lastUpdated": "2026-08-31T06:44:51.822737",
   "articles": [
     {
       "title": "The inside story on why OpenAI agents hacked Hugging Face",
-      "titleJa": "OpenAI エージェントが Hugging Face をハッキングした理由に関する裏話",
+      "titleJa": "The inside story on why OpenAI agents hacked Hugging Face",
       "link": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
       "description": "The models responsible for last month’s agent hack of Hugging Face had been inadvertently trained to cheat and to communicate with each other, according to an OpenAI technical report released today. T...",
       "publishedDate": "Wed, 26 Aug 2026 19:00:00 +0000",
@@ -14,7 +14,7 @@
     },
     {
       "title": "The Download: the Kids issue arrives, and Bill Gates reveals his AI fears",
-      "titleJa": "「ダウンロード: キッズ」号が到着、ビル・ゲイツ氏が AI への懸念を明かす",
+      "titleJa": "The Download: the Kids issue arrives, and Bill Gates reveals his AI fears",
       "link": "https://www.technologyreview.com/2026/08/26/1143000/the-download-kids-issue-launch-bill-gates-ai-fears/",
       "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Introducing: the Kids issue If the desire to limit...",
       "publishedDate": "Wed, 26 Aug 2026 12:10:00 +0000",
@@ -25,7 +25,7 @@
     },
     {
       "title": "Learning never stops: How AI makes learning continuous",
-      "titleJa": "学習は決して止まらない: AI が学習を継続的に行う方法",
+      "titleJa": "Learning never stops: How AI makes learning continuous",
       "link": "https://openai.com/index/learning-never-stops",
       "description": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom....",
       "publishedDate": "Wed, 26 Aug 2026 10:00:00 GMT",
@@ -36,7 +36,7 @@
     },
     {
       "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
-      "titleJa": "教師向け ChatGPT を米国のより多くの学区に導入",
+      "titleJa": "Bringing ChatGPT for Teachers to more U.S. school districts",
       "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
       "description": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff....",
       "publishedDate": "Wed, 26 Aug 2026 10:00:00 GMT",
@@ -47,7 +47,7 @@
     },
     {
       "title": "Raised on AI",
-      "titleJa": "AIで育った",
+      "titleJa": "Raised on AI",
       "link": "https://www.technologyreview.com/2026/08/26/1141949/editors-letter-september-2026/",
       "description": "When my oldest child was born, I immediately set up Gmail and Twitter accounts in her name. I broadly announced her birth online and proceeded to plaster her photo across all sorts of platforms. In sh...",
       "publishedDate": "Wed, 26 Aug 2026 09:00:00 +0000",
@@ -58,7 +58,7 @@
     },
     {
       "title": "AI models flub these intelligence tests. Can you fare any better?",
-      "titleJa": "AI モデルはこれらの知能テストに失敗します。もっとうまくやっていけるでしょうか？",
+      "titleJa": "AI models flub these intelligence tests. Can you fare any better?",
       "link": "https://www.technologyreview.com/2026/08/26/1141952/puzzles-ai-models-flub-these-tests/",
       "description": "Puzzles and games have been central to AI development since the very beginning. Just as we humans like to test our smarts with crosswords or logic puzzles, developers can test how far models have adva...",
       "publishedDate": "Wed, 26 Aug 2026 09:00:00 +0000",
@@ -69,7 +69,7 @@
     },
     {
       "title": "Bill Gates says we’ve passed AI’s danger thresholds. Now what?",
-      "titleJa": "ビル・ゲイツ氏は、私たちはAIの危険閾値を超えたと述べています。さて、何でしょうか？",
+      "titleJa": "Bill Gates says we’ve passed AI’s danger thresholds. Now what?",
       "link": "https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/",
       "description": "It’s a glorious day in Kirkland, Washington, an affluent Seattle suburb on the eastern shore of Lake Washington. The temperature is in the mid-80s, and the sky is incapable of being any more blue. The...",
       "publishedDate": "Wed, 26 Aug 2026 07:01:00 +0000",
@@ -80,7 +80,7 @@
     },
     {
       "title": "The Hugging Face incident and the road ahead",
-      "titleJa": "ハグフェイス事件とこれからの道のり",
+      "titleJa": "The Hugging Face incident and the road ahead",
       "link": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
       "description": "OpenAI shares findings from the Hugging Face security incident and the steps we’re taking to strengthen AI model security, monitoring, and alignment....",
       "publishedDate": "Wed, 26 Aug 2026 00:00:00 GMT",
@@ -91,7 +91,7 @@
     },
     {
       "title": "How loveholidays is making everyone a builder with Codex",
-      "titleJa": "Loveholidays が Codex で誰もがビルダーになれる仕組み",
+      "titleJa": "How loveholidays is making everyone a builder with Codex",
       "link": "https://openai.com/index/loveholidays",
       "description": "Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster....",
       "publishedDate": "Wed, 26 Aug 2026 00:00:00 GMT",
@@ -102,7 +102,7 @@
     },
     {
       "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
-      "titleJa": "センテンストランスフォーマーを使用したマルチベクトル埋め込みモデルのトレーニングと微調整",
+      "titleJa": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
       "link": "https://huggingface.co/blog/train-multi-vector-encoder",
       "description": "...",
       "publishedDate": "Wed, 26 Aug 2026 00:00:00 GMT",
@@ -113,7 +113,7 @@
     },
     {
       "title": "3 Google updates from Galaxy Unpacked 2026",
-      "titleJa": "Galaxy Unpacked 2026 からの 3 つの Google アップデート",
+      "titleJa": "3 Google updates from Galaxy Unpacked 2026",
       "link": "https://blog.google/products-and-platforms/platforms/android/galaxy-unpacked-2026/",
       "description": "Gentle Monster glasses, Warby Parker glasses, a prompt asking for the history behind a pictured building, and a prompt asking to book a table at a pictured restaurant...",
       "publishedDate": "Wed, 22 Jul 2026 13:00:00 +0000",
@@ -124,7 +124,7 @@
     },
     {
       "title": "5 new ways to level up your learning with Search",
-      "titleJa": "検索を使って学習をレベルアップする 5 つの新しい方法",
+      "titleJa": "5 new ways to level up your learning with Search",
       "link": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
       "description": "an illustrated image with icons and phrasing like \"Add Notebook\" and \"Ask Google\"...",
       "publishedDate": "Wed, 19 Aug 2026 19:00:00 +0000",
@@ -135,7 +135,7 @@
     },
     {
       "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
-      "titleJa": "OlmoEarth エンベディングの紹介: ダウンストリーム分析のための OlmoEarth Studio からのカスタム エンベディング エクスポート",
+      "titleJa": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
       "link": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
       "description": "...",
       "publishedDate": "Wed, 12 Aug 2026 16:14:36 GMT",
@@ -146,7 +146,7 @@
     },
     {
       "title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
-      "titleJa": "Gemini API 管理エージェント: 3.6 フラッシュ、フックなど",
+      "titleJa": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
       "link": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
       "description": "Managed Agents Gemini 3.6 Flash, Hooks and Triggers...",
       "publishedDate": "Tue, 28 Jul 2026 16:00:00 +0000",
@@ -157,7 +157,7 @@
     },
     {
       "title": "5 ways AI Mode in Search helps you enjoy the real world",
-      "titleJa": "検索の AI モードが現実世界を楽しむ 5 つの方法",
+      "titleJa": "5 ways AI Mode in Search helps you enjoy the real world",
       "link": "https://blog.google/products-and-platforms/products/search/ai-mode-real-world-tips/",
       "description": "Illustration of a black magnifying glass in a white circle on green grass surrounded by items related to fun activities like tennis and games...",
       "publishedDate": "Tue, 28 Jul 2026 13:00:00 +0000",
@@ -168,7 +168,7 @@
     },
     {
       "title": "5 ways to host the ultimate dinner party with Google Search",
-      "titleJa": "Google 検索を使って究極のディナー パーティーを主催する 5 つの方法",
+      "titleJa": "5 ways to host the ultimate dinner party with Google Search",
       "link": "https://blog.google/products-and-platforms/products/search/dinner-party-hosting-tips/",
       "description": "An illustrated black magnifying glass with a sparkle in a white circle surrounded by a dinner party tablescape...",
       "publishedDate": "Tue, 28 Jul 2026 13:00:00 +0000",
@@ -179,7 +179,7 @@
     },
     {
       "title": "5 ways to upgrade your home decor with Google Search",
-      "titleJa": "Google 検索で家の装飾をアップグレードする 5 つの方法",
+      "titleJa": "5 ways to upgrade your home decor with Google Search",
       "link": "https://blog.google/products-and-platforms/products/search/home-decor-tips/",
       "description": "Illustration of ombre rainbow furniture items like a sofa, lamp, and chair against a purple background...",
       "publishedDate": "Tue, 25 Aug 2026 16:00:00 +0000",
@@ -190,7 +190,7 @@
     },
     {
       "title": "Granite 4.2 LLMs: How They're Built",
-      "titleJa": "Granite 4.2 LLM: 構築方法",
+      "titleJa": "Granite 4.2 LLMs: How They're Built",
       "link": "https://huggingface.co/blog/ibm-granite/granite-4-2",
       "description": "...",
       "publishedDate": "Tue, 25 Aug 2026 15:14:14 GMT",
@@ -201,7 +201,7 @@
     },
     {
       "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-      "titleJa": "量子化対応ヒーリング: 完全精度のオリジナルを上回る圧縮 4 ビット モデル",
+      "titleJa": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
       "link": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
       "description": "...",
       "publishedDate": "Tue, 25 Aug 2026 11:39:24 GMT",
@@ -212,7 +212,7 @@
     },
     {
       "title": "The full stack behind abundant intelligence",
-      "titleJa": "豊富なインテリジェンスの背後にあるフルスタック",
+      "titleJa": "The full stack behind abundant intelligence",
       "link": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
       "description": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost....",
       "publishedDate": "Tue, 25 Aug 2026 07:05:00 GMT",
@@ -223,7 +223,7 @@
     },
     {
       "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-      "titleJa": "Halapeño の最初の結果は、AI 推論における業界をリードする速度と効率を示しています",
+      "titleJa": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
       "link": "https://openai.com/index/jalapeno-first-results",
       "description": "Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher throughput and lower latency for modern models....",
       "publishedDate": "Tue, 25 Aug 2026 07:00:00 GMT",
@@ -234,7 +234,7 @@
     },
     {
       "title": "Disrupting a new covert influence campaign from Russia",
-      "titleJa": "ロシアによる新たな秘密の影響力キャンペーンを妨害する",
+      "titleJa": "Disrupting a new covert influence campaign from Russia",
       "link": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
       "description": "OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West....",
       "publishedDate": "Tue, 25 Aug 2026 00:00:00 GMT",
@@ -245,7 +245,7 @@
     },
     {
       "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
-      "titleJa": "ChatGPT Work および Codex 用の管理プラグインの紹介",
+      "titleJa": "Introducing the Admin plugin for ChatGPT Work and Codex",
       "link": "https://openai.com/index/introducing-admin-plugin",
       "description": "Use the Admin plugin for ChatGPT Work and Codex to analyze workspace usage, manage members and permissions, adjust limits, and act on admin requests....",
       "publishedDate": "Tue, 25 Aug 2026 00:00:00 GMT",
@@ -256,7 +256,7 @@
     },
     {
       "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
-      "titleJa": "配線、実行、展開: Gradio の AI ワークフロー",
+      "titleJa": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
       "link": "https://huggingface.co/blog/gradio-workflow-guide",
       "description": "...",
       "publishedDate": "Tue, 25 Aug 2026 00:00:00 GMT",
@@ -267,7 +267,7 @@
     },
     {
       "title": "How Much Memory Does Your Agent Actually Need?",
-      "titleJa": "エージェントが実際に必要とするメモリの量はどれくらいですか?",
+      "titleJa": "How Much Memory Does Your Agent Actually Need?",
       "link": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
       "description": "...",
       "publishedDate": "Tue, 18 Aug 2026 18:09:38 GMT",
@@ -278,7 +278,7 @@
     },
     {
       "title": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
-      "titleJa": "文トランスフォーマーを使用したマルチベクトル (遅延インタラクション) 埋め込みモデル",
+      "titleJa": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
       "link": "https://huggingface.co/blog/multi-vector-encoder",
       "description": "...",
       "publishedDate": "Tue, 18 Aug 2026 00:00:00 GMT",
@@ -289,7 +289,7 @@
     },
     {
       "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
-      "titleJa": "当社の研究用医療 AI システムである AMIE は、この種のものとしては初めての研究でリアルタイムの臨床ビデオ相談機能を実証しました。",
+      "titleJa": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
       "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
       "description": "AMIE promotional video...",
       "publishedDate": "Tue, 11 Aug 2026 17:00:00 +0000",
@@ -300,7 +300,7 @@
     },
     {
       "title": "The latest AI news we announced in July 2026",
-      "titleJa": "2026年7月に発表したAI最新ニュース",
+      "titleJa": "The latest AI news we announced in July 2026",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
       "description": "July AI recap header...",
       "publishedDate": "Tue, 04 Aug 2026 13:00:00 +0000",
@@ -311,7 +311,7 @@
     },
     {
       "title": "A startup claims it’s found a drug to make your blood young",
-      "titleJa": "血液を若くする薬を発見したと新興企業が主張",
+      "titleJa": "A startup claims it’s found a drug to make your blood young",
       "link": "https://www.technologyreview.com/2026/08/27/1143037/startup-claims-its-found-a-drug-to-make-your-blood-young/",
       "description": "I knew I’d officially become a “longevity influencer” this month when a company called Generation Lab reached out to offer me the chance to write about—and even receive—their new rejuvenation treatmen...",
       "publishedDate": "Thu, 27 Aug 2026 19:48:13 +0000",
@@ -322,7 +322,7 @@
     },
     {
       "title": "3 new ways to plan and book travel in Search",
-      "titleJa": "検索で旅行を計画し予約する 3 つの新しい方法",
+      "titleJa": "3 new ways to plan and book travel in Search",
       "link": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
       "description": "Graphic depicting new travel features for AI Mode in Search...",
       "publishedDate": "Thu, 27 Aug 2026 16:00:00 +0000",
@@ -330,17 +330,6 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Travel_Blog_Hero_8.27.max-600x600.format-webp.webp",
       "language": "en"
-    },
-    {
-      "title": "生成AIの使い方を初心者向けに解説！今日からできるビジネス・仕事での活用方法も紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/how-to-use-generative-ai-for-beginners/",
-      "description": "生成AIの使い方は、アカウントを作り、やってほしいことを言葉で入力し、出てきた結果を確認するだけの3ステップです。専門知識もソフトのインストールも要りません。とはいえ「何から手をつければいい？」「仕事で使って平気なの？」 [...]...",
-      "publishedDate": "Thu, 27 Aug 2026 11:26:52 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/how-to-use-generative-ai-for-beginners_2608-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "BYOAIとは？シャドーAIとの違い・企業の利用許可基準を解説",
@@ -365,14 +354,58 @@
       "language": "ja"
     },
     {
-      "title": "GPT-5.6-Cyberとは？GPT-5.5との違いと日本への影響",
+      "title": "【生成AI×RPA】職場で神扱いされるAIを活用した業務自動化の方法",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-gpt-5-6-cyber/",
-      "description": "GPT-5.6-Cyberは、OpenAIが2026年8月10日に発表したサイバーセキュリティ特化型のAIモデルです。「攻撃にも使えるAIをなぜ公開するのか」「自社は利用できるのか」と疑問に思う方も多いのではないでしょう [...] The post GPT-5.6-Cyberとは？GPT-5.5との違いと日本への影響 first appeared on AIポータルメディアAIsmiley....",
-      "publishedDate": "Thu, 27 Aug 2026 02:57:14 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/gpt56cyber.png",
+      "link": "https://weel.co.jp/media/gen-ai-rpa/",
+      "description": "みなさんの会社では、DX（デジタルトランスフォーメーション）が進んでいますか？DXの一環で、定型業務を自動化する「RPA」を導入されている企業様は多いはず。ですが、「生成AI×RPA」を取り入れている企業様はまだ少ないの [...]...",
+      "publishedDate": "Sun, 30 Aug 2026 15:39:55 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/gen-ai-rpa_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Model Hardware Standardとは？AIエージェントが実験機器を操作するAnthropicの新規格を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/mhs/",
+      "description": "2026年8月、AnthropicからAIエージェントが物理デバイスを操作するための新しい規格が公開されました。 今回発表された「Model Hardware Standard（MHS）」は、AIエージェントが実験機器や [...]...",
+      "publishedDate": "Sun, 30 Aug 2026 14:44:02 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Model-Hardware-Standard_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIを使った営業DX支援！活用事例9選・効率化のコツを解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/sales/",
+      "description": "営業DXという言葉を聞いて、「結局、何をどこまで変えることなのか」と迷っていませんか。名刺管理をクラウドにする、日報をWebで入力する。こうしたIT化は営業DXの入口にすぎません。生成AIをうまく使えば営業活動が円滑でス [...]...",
+      "publishedDate": "Sun, 30 Aug 2026 14:27:37 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/sales_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ディープラーニングとは？仕組みや種類、活用シーンをわかりやすく解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/deep-learning/",
+      "description": "ディープラーニング（深層学習）とは、人間の脳の神経回路をまねたニューラルネットワークを何層も重ね、大量のデータから特徴を自動で学び取るAI技術です。とはいえ「AIや機械学習と何が違うの？」「生成AIとどういう関係があるの [...]...",
+      "publishedDate": "Sun, 30 Aug 2026 12:58:19 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Deep-learning_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "コンテキストエンジニアリングとは？プロンプトとの違いや実践方法を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/context-engineering/",
+      "description": "コンテキストエンジニアリングとは、AIが目的に合った回答を出せるように、指示・会話履歴・外部データなどの情報全体を設計・管理する技術です。プロンプトを工夫しても回答が安定しない場合、原因は指示文ではなく、AIへ渡す情報の [...]...",
+      "publishedDate": "Sun, 30 Aug 2026 12:44:35 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Context-Engineering_2608-1024x576.webp",
       "language": "ja"
     },
     {
@@ -409,6 +442,17 @@
       "language": "ja"
     },
     {
+      "title": "「AI博覧会 Fukuoka 2026」カンファレンス 第1弾スピーカーを発表！工藤公康氏が語るAI・データ時代のリーダー像。九州電力、JR九州、LINEヤフーコミュニケーションズのAI活用事例も",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/aihaku-fukuoka2026-1stsp/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年9月30日（水）・10月1日（木）の2日間、博多国際展示場＆カンファレンスセンターにて「AI博覧会 Fukuoka 202 [...] The post 「AI博覧会 Fukuoka 2026」カンファレンス 第1弾スピーカーを発表！工藤公康氏が語るAI・データ時代のリーダー像。九州電力、JR九州、L...",
+      "publishedDate": "Mon, 31 Aug 2026 05:00:40 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/fukuoka2026-1stsp000.png",
+      "language": "ja"
+    },
+    {
       "title": "【生成AI×業務効率化】仕事の生産性を高めたいならこれを使え！自動化の鬼になれるAIツールを紹介",
       "titleJa": null,
       "link": "https://weel.co.jp/media/gen-ai-optimization/",
@@ -428,28 +472,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/education-industry-issues_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "生成AIを用いた法務業務とは？導入メリットや注意点、弁護士への影響を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/generative-ai-legal-affairs/",
-      "description": "生成AIは、契約書のたたき台作成・レビュー支援・法律文書の要約など、法務業務の負担を減らす手段として活用が広がっています。一方で、「AIが弁護士の仕事を奪うのでは」「機密情報を入力して大丈夫なのか」と不安を感じる方もいる [...]...",
-      "publishedDate": "Fri, 28 Aug 2026 17:15:38 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/generative-ai-legal-affairs_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "AI導入・AI研修に使える助成金・補助金まとめ！申請の流れや注意点、採択されやすくするコツを解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/ai-grants-and-subsidies/",
-      "description": "AIツールの導入や社員向けAI研修を進めたいものの、予算の確保に悩んでいる企業も多いでしょう。AI導入には経済産業省系の補助金、AI研修には厚生労働省系の助成金を活用できる可能性があります。 2026年度は、旧IT導入補 [...]...",
-      "publishedDate": "Fri, 28 Aug 2026 11:16:09 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-Grants-and-Subsidies_2608-1024x576.webp",
       "language": "ja"
     },
     {
@@ -508,28 +530,6 @@
       "language": "ja"
     },
     {
-      "title": "【GLM-5.3-Flash】正体はOx Alpha！Claude Opus 4.8に迫る性能のオープンモデルの使い方・料金・性能を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/glm-5-3-flash/",
-      "description": "2026年8月26日、中国のAI企業Z.ai（旧Zhipu AI）が、GLM-5シリーズの最新モデル「GLM-5.3-Flash」を正式にリリースしました！ 実はこのモデル、約1週間前から「Ox Alpha」という匿名モ [...]...",
-      "publishedDate": "Fri, 28 Aug 2026 01:46:58 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GLM-5.3-Flash-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Gemini Omni 1.1 Flash】4K動画生成＆40秒シーン拡張が可能になったGoogleの最新動画生成AIの使い方・料金を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gemini-omni-1-1-flash/",
-      "description": "Gemini Omni 1.1 Flashは、Googleが2026年8月28日に公開した動画生成・編集向けマルチモーダルAIモデルです！ 2026年5月のGoogle I/Oで初代Gemini Omni Flashが発 [...]...",
-      "publishedDate": "Fri, 28 Aug 2026 01:29:21 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-Omni-1.1-Flash-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "GLM-5.3とは？GLM-5.2との違い・性能・料金・使い方を分かりやすく解説",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/what-is-glm-5-3/",
@@ -549,6 +549,17 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/claudefortunetelling01.webp",
+      "language": "ja"
+    },
+    {
+      "title": "JetBrains、Mac上で動作するコーディングエージェント「Junie Local」提供開始。Claude Sonnet 4.5と同等の能力、RTX5909対応も開発中",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/jetbrainsmacjunie_localclaude_sonnet_45rtx5909.html",
+      "description": "JetBrainsは、ローカルで動作するAIコーディングエージェント「Junie Local」の提供開始を発表しました。 Junie Localはその名称の通り完全にローカルマシン上で動作し、API使用料やモデル使用料などは一切不要。ソフト......",
+      "publishedDate": "2026-08-30T15:07:47Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/HQfo5eBWAAAWhrP.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/HPidRiCXQAEGSPk.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Pythonライクで高速な「Mojo言語」がバージョン1.0に到達、今後はコンパイラをオープンソース化すると表明",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/pythonmojo10.html",
-      "description": "Modular社は、AIを高速に実行することを目指したPythonライクなプログラミング言語「Mojo」がバージョン1.0に到達したことを発表しました。 Mojo 1.0 is here.Since we open-sourced the ......",
-      "publishedDate": "2026-08-17T15:40:38Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/Pex8OnGM.jpg",
       "language": "ja"
     }
   ]
