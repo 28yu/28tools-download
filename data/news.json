@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30T02:35:24.195258",
+  "lastUpdated": "2026-08-31T02:29:40.137394",
   "articles": [
     {
       "title": "玉掛け合図一覧｜ゴーヘイ・スラー、手・声・無線の正しい方法",
@@ -192,6 +192,16 @@
       "language": "en"
     },
     {
+      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第十一回)｜深堀り取材【毎月3回更新】",
+      "link": "https://news.build-app.jp/article/42339/",
+      "description": "ソフトウェアやデジタル環境のみに存在する従来のAIとは異なり、物理的な世界で稼働し、相互作用する人工知能システムを指すフィジカルAI(Phy......",
+      "publishedDate": "Sun, 30 Aug 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/2e825d93f6bd1a064c27cff47627abc6-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "PLATEAUとは？3D都市モデルを業務の判断に活かす方法",
       "link": "https://axconstdx.com/2026/08/23/plateau%e3%81%a8%e3%81%af%ef%bc%9f3d%e9%83%bd%e5%b8%82%e3%83%a2%e3%83%87%e3%83%ab%e3%82%92%e6%a5%ad%e5%8b%99%e3%81%ae%e5%88%a4%e6%96%ad%e3%81%ab%e6%b4%bb%e3%81%8b%e3%81%99%e6%96%b9%e6%b3%95/",
       "description": "PLATEAUを立派な3D地図だと眺めるだけで満足していませんか。実はその使い方では、都市データが持つ本当の力の半分も引き出せていません。開発協議や施工計画で見落としを防ぎ、関係者の判断をそろえる基盤として活かす方法を、 [...] <p>The post PLATEAUとは？3D都市モデルを業務の判断に活かす方法 first appeared on 生成AIと建設DX.</p>...",
@@ -209,16 +219,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/CMMI_AIM_OGP_under_100KB-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "2級建築施工管理技士とは？｜仕事内容・受検資格・難易度・取得メリットを解説",
-      "link": "https://news.build-app.jp/article/42392/",
-      "description": "建築工事の現場で、工程・品質・安全などを管理する施工管理。その知識と能力を証明する国家資格が「建築施工管理技士」です。 なかでも2級建築施工......",
-      "publishedDate": "Mon, 24 Aug 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/70c8084f9184da384cbb34ff9e772ecc-130x82.png",
       "language": "ja"
     },
     {
