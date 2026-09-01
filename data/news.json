@@ -1,66 +1,6 @@
 {
-  "lastUpdated": "2026-08-31T02:29:40.137394",
+  "lastUpdated": "2026-09-01T02:44:31.845967",
   "articles": [
-    {
-      "title": "玉掛け合図一覧｜ゴーヘイ・スラー、手・声・無線の正しい方法",
-      "link": "https://news.build-app.jp/article/42397/",
-      "description": "玉掛け合図とは、つり荷の巻上げや移動、停止などをクレーン運転者へ伝える合図です。 手、旗、声、無線などの方法がありますが、現場で合図を統一し......",
-      "publishedDate": "Wed, 26 Aug 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/8602e0d671eba3664cdde64bce803b18-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、7月の建設技能労働者不足率1.2%に拡大、前月比0.2ポイント増",
-      "link": "https://news.build-app.jp/article/42365/",
-      "description": "国土交通省は8月25日、建設技能労働者の需給状況をまとめた「建設労働需給調査結果（令和8年7月分調査）」を公表しました。今回の結果からは、建......",
-      "publishedDate": "Wed, 26 Aug 2026 06:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/supply_demand_survey-130x63.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、8月の主要建設資材需給・価格動向調査の結果でH形鋼のみやや上昇と公表",
-      "link": "https://news.build-app.jp/article/42361/",
-      "description": "国土交通省は、令和8年8月1日から5日にかけて実施した「主要建設資材需給・価格動向調査」の結果を公表しました。生コンクリートや鋼材、木材など......",
-      "publishedDate": "Wed, 26 Aug 2026 04:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/09/zKnsdMguwAtYmbD1662569778_1662569810-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "AIに仕事を持たせる時代｜生成AI活用の4段階と業務設計",
-      "link": "https://axconstdx.com/2026/08/12/ai%e3%81%ab%e4%bb%95%e4%ba%8b%e3%82%92%e6%8c%81%e3%81%9f%e3%81%9b%e3%82%8b%e6%99%82%e4%bb%a3%ef%bd%9c%e7%94%9f%e6%88%90ai%e6%b4%bb%e7%94%a8%e3%81%ae4%e6%ae%b5%e9%9a%8e%e3%81%a8%e6%a5%ad%e5%8b%99/",
-      "description": "「AIに指示を出したのに、思った通りに動いてくれない」——そう感じたことはありませんか。実はその原因、AIの性能ではなく仕事の任せ方にあります。業務を正しく分解し、AIに渡す範囲を見極める発想を身につければ、あなたの仕事 [...] <p>The post AIに仕事を持たせる時代｜生成AI活用の4段階と業務設計 first appeared on 生成AIと建設DX.</p>...",
-      "publishedDate": "Wed, 12 Aug 2026 13:14:36 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/2b4f9ed910784ce44b1c082e1050dcdf-1024x539.webp",
-      "language": "ja"
-    },
-    {
-      "title": "戸田建設、施設情報を一元化するクラウドRAKU-PLATの有償トライアル開始",
-      "link": "https://news.build-app.jp/article/42330/",
-      "description": "戸田建設株式会社（本社：東京都中央区、社長：大谷清介氏）は、施設管理業務に関するクラウドサービス「RAKU-PLAT（ラクプラット）」につい......",
-      "publishedDate": "Tue, 25 Aug 2026 09:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/raku_facility_management-130x81.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、砂防関係事業の遠隔・自動施工推進で中間とりまとめを公表、生産性向上目指す",
-      "link": "https://news.build-app.jp/article/42326/",
-      "description": "国土交通省は令和8年8月24日、「砂防関係事業における遠隔・自動施工の推進検討委員会」の中間とりまとめを公表しました。土砂災害から人々の命や......",
-      "publishedDate": "Tue, 25 Aug 2026 07:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/01/809uDWknnpUwU651641950054-130x73.jpg",
-      "language": "ja"
-    },
     {
       "title": "Claude CoworkがWEB版でも利用可能に",
       "link": "https://axconstdx.com/2026/08/18/claude-cowork%e3%81%8cweb%e7%89%88%e3%81%a7%e3%82%82%e5%88%a9%e7%94%a8%e5%8f%af%e8%83%bd%e3%81%ab/",
@@ -90,6 +30,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "国土交通省、令和8年7月の新設住宅着工が前年比8.2％増 分譲マンションが大幅に増加",
+      "link": "https://news.build-app.jp/article/42419/",
+      "description": "国土交通省は8月31日、令和8年7月分の建築着工統計調査の結果を政府統計の総合窓口「e-Stat」で公表しました。全国の新設住宅着工戸数は6......",
+      "publishedDate": "Tue, 01 Sep 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/housing_construction-130x74.jpg",
+      "language": "ja"
     },
     {
       "title": "buildingSMART International Appoints Aidan Mercer as Managing Director",
@@ -219,6 +169,56 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/CMMI_AIM_OGP_under_100KB-1-1024x538.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "国交省予算8.8兆円要求、4つの注目ポイントを解説",
+      "link": "https://axconstdx.com/2026/09/01/%e5%9b%bd%e4%ba%a4%e7%9c%81%e4%ba%88%e7%ae%978-8%e5%85%86%e5%86%86%e8%a6%81%e6%b1%82%e3%80%814%e3%81%a4%e3%81%ae%e6%b3%a8%e7%9b%ae%e3%83%9d%e3%82%a4%e3%83%b3%e3%83%88%e3%82%92%e8%a7%a3%e8%aa%ac/",
+      "description": "「人手が足りないのに、仕事は減らない」——そんな現場の悩みに、国は本気で向き合おうとしています。令和9年度の国交省予算8.8兆円には、防災からAI活用まで、あなたの仕事の未来を左右する4つのヒントが隠れています。数字の裏 [...] <p>The post 国交省予算8.8兆円要求、4つの注目ポイントを解説 first appeared on 生成AIと建設DX.</p>...",
+      "publishedDate": "Mon, 31 Aug 2026 23:41:51 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/09/kokkominsho_budget_8_8trillion_ogp_1200x630-1024x538.webp",
+      "language": "ja"
+    },
+    {
+      "title": "buildingSMART Japan(bSJ)が10月6日から8日までbuildingSMART International Summit Tokyo 2026開催",
+      "link": "https://news.build-app.jp/article/42347/",
+      "description": "buildingSMART Japan(bSJ)では、来る10月6日から8日までの日程で羽田空港第3ターミナルに隣接するBellesalle......",
+      "publishedDate": "Mon, 31 Aug 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/5e987288584b3a1a0f94df3b781eeb87-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新】2級施工管理技士の受検資格｜7分野の取得条件・実務経験を解説",
+      "link": "https://news.build-app.jp/article/42414/",
+      "description": "2級施工管理技士の確保は、現場の技術者配置と受注計画をを大きく左右するものです。一方で、第一次検定に合格しただけでは2級施工管理技士を名乗れ......",
+      "publishedDate": "Mon, 31 Aug 2026 14:18:22 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/35048217_m-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "竹中工務店、2026年度中間決算は連結減収増益、工事・開発利益の改善で営業利益25.9％増",
+      "link": "https://news.build-app.jp/article/42409/",
+      "description": "株式会社竹中工務店は2026年8月28日、2026年度（第89期）中間決算概要と当期業績見通しを発表しました。中間期の連結業績は減収となった......",
+      "publishedDate": "Mon, 31 Aug 2026 05:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/takenaka_2026_interim-130x80.png",
+      "language": "ja"
+    },
+    {
+      "title": "鹿島建設と三菱電機、快適性を保ちつつ節電要請30分で目標削減量の±10％に制御",
+      "link": "https://news.build-app.jp/article/42402/",
+      "description": "鹿島建設と三菱電機は、節電要請に応じて建物の電力消費を自動で最適に制御する新たなシステムを共同で開発しました。電力会社側と建物側それぞれの需......",
+      "publishedDate": "Mon, 31 Aug 2026 03:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/demand_response_building-130x73.jpg",
       "language": "ja"
     },
     {
