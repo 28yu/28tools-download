@@ -1,39 +1,6 @@
 {
-  "lastUpdated": "2026-09-01T06:04:43.667114",
+  "lastUpdated": "2026-09-02T05:30:30.098233",
   "articles": [
-    {
-      "title": "The inside story on why OpenAI agents hacked Hugging Face",
-      "titleJa": "OpenAI エージェントが Hugging Face をハッキングした理由に関する裏話",
-      "link": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
-      "description": "The models responsible for last month’s agent hack of Hugging Face had been inadvertently trained to cheat and to communicate with each other, according to an OpenAI technical report released today. T...",
-      "publishedDate": "Wed, 26 Aug 2026 19:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/openai-misalign.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "The Download: the Kids issue arrives, and Bill Gates reveals his AI fears",
-      "titleJa": "「ダウンロード: キッズ」号が到着、ビル・ゲイツ氏が AI への懸念を明かす",
-      "link": "https://www.technologyreview.com/2026/08/26/1143000/the-download-kids-issue-launch-bill-gates-ai-fears/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Introducing: the Kids issue If the desire to limit...",
-      "publishedDate": "Wed, 26 Aug 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/mirror-dna.webp?w=840",
-      "language": "en"
-    },
-    {
-      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
-      "titleJa": "教師向け ChatGPT を米国のより多くの学区に導入",
-      "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
-      "description": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff....",
-      "publishedDate": "Wed, 26 Aug 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
     {
       "title": "Learning never stops: How AI makes learning continuous",
       "titleJa": "学習は決して止まらない: AI が学習を継続的に行う方法",
@@ -46,25 +13,14 @@
       "language": "en"
     },
     {
-      "title": "Raised on AI",
-      "titleJa": "AIで育った",
-      "link": "https://www.technologyreview.com/2026/08/26/1141949/editors-letter-september-2026/",
-      "description": "When my oldest child was born, I immediately set up Gmail and Twitter accounts in her name. I broadly announced her birth online and proceeded to plaster her photo across all sorts of platforms. In sh...",
-      "publishedDate": "Wed, 26 Aug 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/06/mat_debrief.png?w=840",
-      "language": "en"
-    },
-    {
-      "title": "AI models flub these intelligence tests. Can you fare any better?",
-      "titleJa": "AI モデルはこれらの知能テストに失敗します。もっとうまくやっていけるでしょうか？",
-      "link": "https://www.technologyreview.com/2026/08/26/1141952/puzzles-ai-models-flub-these-tests/",
-      "description": "Puzzles and games have been central to AI development since the very beginning. Just as we humans like to test our smarts with crosswords or logic puzzles, developers can test how far models have adva...",
-      "publishedDate": "Wed, 26 Aug 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/vincentkilbride-mit-technology-review-ai-puzzles.jpg?resize=1200,600",
+      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+      "titleJa": "教師向け ChatGPT を米国のより多くの学区に導入",
+      "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+      "description": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff....",
+      "publishedDate": "Wed, 26 Aug 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -123,15 +79,15 @@
       "language": "en"
     },
     {
-      "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
-      "titleJa": "OlmoEarth エンベディングの紹介: ダウンストリーム分析のための OlmoEarth Studio からのカスタム エンベディング エクスポート",
-      "link": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
-      "description": "...",
-      "publishedDate": "Wed, 12 Aug 2026 16:14:36 GMT",
-      "source": "Hugging Face Blog",
+      "title": "【Claude Fable 5.1】科学研究もコーディングも圧倒！Anthropic最強モデルの性能・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-fable-5-1/",
+      "description": "2026年9月2日、Anthropicが新モデル「Claude Fable 5.1」を公開しました！ 前モデルのClaude Fable 5が登場してからわずか約3か月というスピードでのアップデートとなり、Anthrop [...]...",
+      "publishedDate": "Wed, 02 Sep 2026 00:28:03 +0000",
+      "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/u9KR_QjSYF7mJIbRE3Ni8.jpeg",
-      "language": "en"
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Fable-5.1-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
@@ -145,17 +101,6 @@
       "language": "en"
     },
     {
-      "title": "5 ways AI Mode in Search helps you enjoy the real world",
-      "titleJa": "検索の AI モードが現実世界を楽しむ 5 つの方法",
-      "link": "https://blog.google/products-and-platforms/products/search/ai-mode-real-world-tips/",
-      "description": "Illustration of a black magnifying glass in a white circle on green grass surrounded by items related to fun activities like tennis and games...",
-      "publishedDate": "Tue, 28 Jul 2026 13:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_Mode_real_world.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
       "title": "5 ways to host the ultimate dinner party with Google Search",
       "titleJa": "Google 検索を使って究極のディナー パーティーを主催する 5 つの方法",
       "link": "https://blog.google/products-and-platforms/products/search/dinner-party-hosting-tips/",
@@ -164,6 +109,17 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Dinner_parties.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "5 ways AI Mode in Search helps you enjoy the real world",
+      "titleJa": "検索の AI モードが現実世界を楽しむ 5 つの方法",
+      "link": "https://blog.google/products-and-platforms/products/search/ai-mode-real-world-tips/",
+      "description": "Illustration of a black magnifying glass in a white circle on green grass surrounded by items related to fun activities like tennis and games...",
+      "publishedDate": "Tue, 28 Jul 2026 13:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_Mode_real_world.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -197,50 +153,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/2DSE26PMq2hJqKqEDOLIn.png",
-      "language": "en"
-    },
-    {
-      "title": "The full stack behind abundant intelligence",
-      "titleJa": "豊富なインテリジェンスの背後にあるフルスタック",
-      "link": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
-      "description": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost....",
-      "publishedDate": "Tue, 25 Aug 2026 07:05:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-      "titleJa": "Halapeño の最初の結果は、AI 推論における業界をリードする速度と効率を示しています",
-      "link": "https://openai.com/index/jalapeno-first-results",
-      "description": "Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher throughput and lower latency for modern models....",
-      "publishedDate": "Tue, 25 Aug 2026 07:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Disrupting a new covert influence campaign from Russia",
-      "titleJa": "ロシアによる新たな秘密の影響力キャンペーンを妨害する",
-      "link": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
-      "description": "OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West....",
-      "publishedDate": "Tue, 25 Aug 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
-      "titleJa": "ChatGPT Work および Codex 用の管理プラグインの紹介",
-      "link": "https://openai.com/index/introducing-admin-plugin",
-      "description": "Use the Admin plugin for ChatGPT Work and Codex to analyze workspace usage, manage members and permissions, adjust limits, and act on admin requests....",
-      "publishedDate": "Tue, 25 Aug 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -299,6 +211,160 @@
       "language": "en"
     },
     {
+      "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
+      "titleJa": "BenchMIRT: LLM ベンチマークは実際に何を測定していますか?",
+      "link": "https://huggingface.co/blog/allenai/benchmirt",
+      "description": "...",
+      "publishedDate": "Tue, 01 Sep 2026 21:39:07 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/c_Rnu4DRj6Djxk1IT0gKu.png",
+      "language": "en"
+    },
+    {
+      "title": "The latest AI news we announced in August 2026",
+      "titleJa": "2026年8月に発表したAI最新ニュース",
+      "link": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
+      "description": "Transitioning cards: 1. Text \"Gemini 3.7 Flash\" next to the Gemini logo icon; 2. a photo of a pixel phone; 3. Google Gemini logo above the text \"Claim your student plan for 1 year at no cost\"...",
+      "publishedDate": "Tue, 01 Sep 2026 20:45:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/August_AI_Recap_social.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "How AI plotted an interstellar journey to Alpha Centauri",
+      "titleJa": "AI はどのようにしてケンタウリ座アルファ星への星間旅行を計画したか",
+      "link": "https://www.technologyreview.com/2026/09/01/1143247/ai-interstellar-journey-alpha-centauri/",
+      "description": "A nonprofit organization called the Fermi Explorer Mission announced today that it intends to launch a spacecraft to our nearest star system by the end of 2029.&#160; It’s a hugely ambitious mission—i...",
+      "publishedDate": "Tue, 01 Sep 2026 19:10:36 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/centauri-route2.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "How AI-native companies turn workflows into operating capability",
+      "titleJa": "AI ネイティブ企業がワークフローを運用能力に変える方法",
+      "link": "https://openai.com/index/ai-native-company-workflows",
+      "description": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply....",
+      "publishedDate": "Tue, 01 Sep 2026 17:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Try Google Pics: Easy image creation and editing in Google Workspace",
+      "titleJa": "Google Pics をお試しください: Google Workspace で簡単に画像を作成、編集できます",
+      "link": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
+      "description": "Collage of images created by Google Pics, with the text \"Say hello to Google Pics\" on top...",
+      "publishedDate": "Tue, 01 Sep 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GooglePics_Hero.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Making the AI-powered case for legacy modernization",
+      "titleJa": "AI を活用したレガシーのモダナイゼーションを主張する",
+      "link": "https://www.technologyreview.com/2026/09/01/1142180/making-the-ai-powered-case-for-legacy-modernization/",
+      "description": "For years, legacy technology has been a problem companies knew they needed to solve, but one they often struggled to tackle. The cost, complexity, and risk of replacing business-critical systems could...",
+      "publishedDate": "Tue, 01 Sep 2026 14:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/Asifa-Sherazi-Sanjeev-Tripathi-v2.png?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Path to Astra: critical capabilities and frontier safeguards",
+      "titleJa": "アストラへの道: 重要な能力とフロンティアの安全対策",
+      "link": "https://openai.com/index/path-to-astra",
+      "description": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release....",
+      "publishedDate": "Tue, 01 Sep 2026 13:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The Download: engineered microbes for crops, and OpenAI’s culture problem",
+      "titleJa": "ダウンロード: 作物用に作られた微生物と OpenAI の培養問題",
+      "link": "https://www.technologyreview.com/2026/09/01/1143199/the-download-engineered-microbes-openai-safety-culture/",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How engineered microbes could help feed the world’...",
+      "publishedDate": "Tue, 01 Sep 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/MIT_TR_Uri_Moaz-177-thumb.jpg?w=840",
+      "language": "en"
+    },
+    {
+      "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+      "titleJa": "医療機関は EHR と追加の業界データを ChatGPT に接続できるようになりました",
+      "link": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+      "description": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research, and more....",
+      "publishedDate": "Tue, 01 Sep 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "How engineered microbes could help feed the world’s crops",
+      "titleJa": "遺伝子操作された微生物はどのようにして世界の作物に栄養を与えることができるのか",
+      "link": "https://www.technologyreview.com/2026/09/01/1143195/microbe-fertilizer-switch-bioworks/",
+      "description": "Fertilizer is crucial for the global food supply, but making it uses a lot of energy and produces a lot of emissions. Some companies hope microbes can help. A growing body of research shows that seedi...",
+      "publishedDate": "Tue, 01 Sep 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/IMG_9577-2.jpg?w=840",
+      "language": "en"
+    },
+    {
+      "title": "Marsdy、シリーズAで4億円の資金調達。生成AIと人の協調による非定型業務の自動化を推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/marsdy-series-a-funding/",
+      "description": "DXソリューション「AutoDate」を提供するMarsdyは、シリーズAラウンドで4億円の資金調達を実施しました。研究開発や専門家チームの拡充などを通じ、生成AIと人の協調による非定型業務の自動化を加速させます。 この [...] The post Marsdy、シリーズAで4億円の資金調達。生成AIと人の協調による非定型業務の自動化を推進 first appeared on AIポータルメディ...",
+      "publishedDate": "Tue, 01 Sep 2026 08:59:57 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/marsdy-series-a-funding-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "NVIDIA、米オハイオ州でOpenAI向けAI拠点を確保。建設・運営を担うSB Energyへ15億ドル出資",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/nvidia-sbenergy-ohio/",
+      "description": "NVIDIAは、米国オハイオ州にて、NVIDIA製AIコンピュート専用の大規模なAI拠点を確保しました。施設建設・運営を担うSB Energyへの15億ドルの出資を通じ、AIインフラの構築を加速させます。 このニュースの [...] The post NVIDIA、米オハイオ州でOpenAI向けAI拠点を確保。建設・運営を担うSB Energyへ15億ドル出資 first appeared on ...",
+      "publishedDate": "Tue, 01 Sep 2026 08:59:47 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/nvidia-sbenergy-ohio-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "パナソニック エレクトリックワークス、「MORPHONE」にAI翻訳を搭載。1人で32言語対応を実現",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/morphone-realtime-ai-translation/",
+      "description": "パナソニック エレクトリックワークスは、音声ガイド配信サービス「MORPHONE」にリアルタイムAI翻訳機能を搭載しました。ガイド1人で32言語に対応し、最大99名への多言語同時配信を可能にします。 このニュースのポイン [...] The post パナソニック エレクトリックワークス、「MORPHONE」にAI翻訳を搭載。1人で32言語対応を実現 first appeared on AIポータ...",
+      "publishedDate": "Tue, 01 Sep 2026 08:50:24 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/morphone-realtime-ai-translation.png",
+      "language": "ja"
+    },
+    {
+      "title": "SWITCHBOT、ウェアラブルAIアシスタント発売開始。会話の文字起こしから要約・ToDo抽出まで実行",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/switchbot-ai-mind-clip/",
+      "description": "SWITCHBOTは、会話やアイデアを記録し、AIが文字起こしからToDo抽出まで自動で行うウェアラブルAIアシスタント「SwitchBot AIマインドクリップ」を発売しました。 このニュースのポイント SWITCHB [...] The post SWITCHBOT、ウェアラブルAIアシスタント発売開始。会話の文字起こしから要約・ToDo抽出まで実行 first appeared on AIポ...",
+      "publishedDate": "Tue, 01 Sep 2026 08:49:12 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/switchbot-ai-mind-clip-main.png",
+      "language": "ja"
+    },
+    {
       "title": "【Qwen3.8-Flash】学習コスト9分の1でOpus 4.6超えの衝撃！Qwen4アーキテクチャ先行モデルの性能・使い方・活用シーンまでを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/qwen3-8-flash/",
@@ -321,36 +387,25 @@
       "language": "ja"
     },
     {
-      "title": "A startup claims it’s found a drug to make your blood young",
-      "titleJa": "血液を若くする薬を発見したと新興企業が主張",
-      "link": "https://www.technologyreview.com/2026/08/27/1143037/startup-claims-its-found-a-drug-to-make-your-blood-young/",
-      "description": "I knew I’d officially become a “longevity influencer” this month when a company called Generation Lab reached out to offer me the chance to write about—and even receive—their new rejuvenation treatmen...",
-      "publishedDate": "Thu, 27 Aug 2026 19:48:13 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/260824_youngblood_v2.jpg?resize=1200,600",
+      "title": "How law firm Gilbert + Tobin governs and scales AI with OpenAI",
+      "titleJa": "法律事務所ギルバート + トービンが OpenAI を使用して AI をどのように管理し、拡張するか",
+      "link": "https://openai.com/index/gilbert-tobin",
+      "description": "See how Gilbert + Tobin combines CEO-led commitment, rigorous governance, and human accountability to scale ChatGPT Enterprise and Codex across the firm....",
+      "publishedDate": "Tue, 01 Sep 2026 01:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
-      "title": "3 new ways to plan and book travel in Search",
-      "titleJa": "検索で旅行を計画し予約する 3 つの新しい方法",
-      "link": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
-      "description": "Graphic depicting new travel features for AI Mode in Search...",
-      "publishedDate": "Thu, 27 Aug 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Travel_Blog_Hero_8.27.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "The Download: inside OpenAI’s Hugging Face hack, and a new EV takes on the US",
-      "titleJa": "ダウンロード: OpenAI の Hugging Face ハックの内部、および新しい EV が米国に挑む",
-      "link": "https://www.technologyreview.com/2026/08/27/1143033/the-download-openai-hugging-face-hack-slate-truck-ev/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The inside story on why OpenAI agents hacked Huggi...",
-      "publishedDate": "Thu, 27 Aug 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/GettyImages-546444524.webp?w=840",
+      "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
+      "titleJa": "@huggingface/kernels の紹介: ローカル AI 用の 200 以上の WebGPU カーネル",
+      "link": "https://huggingface.co/blog/webgpu-kernels",
+      "description": "...",
+      "publishedDate": "Tue, 01 Sep 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/webgpu-kernels/thumbnail.png",
       "language": "en"
     },
     {
@@ -497,58 +552,36 @@
       "language": "ja"
     },
     {
-      "title": "Sakana AI、防衛省と「総合分析業務におけるAI機能の調査・実証」に関する契約締結。情報力を抜本的強化",
+      "title": "ClaudeにSalesforceを統合した「Claudeforce」、AnthropicとSalesforceが発表。Claudeから営業データ分析や顧客対応を実現",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sakana-ai-mod-defense-analysis/",
-      "description": "Sakana AIは、防衛省と「総合分析業務に必要なAI機能の調査・実証」に関する契約を締結しました。情報収集の効率化、分析能力の向上、体系的な情報管理を通じて、日本の防衛における情報力の強化を推進します。 このニュース [...] The post Sakana AI、防衛省と「総合分析業務におけるAI機能の調査・実証」に関する契約締結。情報力を抜本的強化 first appeared on A...",
-      "publishedDate": "Mon, 31 Aug 2026 09:03:27 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/sakana-ai-mod-defense-analysis-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "NEC、業務自動化AIエージェント「NEC cotomi Agent」販売開始。Microsoft Marketplaceで展開",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/nec-cotomi-agent-microsoft/",
-      "description": "NECは、デジタル業務を自動化するAIエージェント「NEC cotomi Agent」を、Microsoft Marketplaceで販売開始しました。Microsoft製品との統合により、業務変革を加速させます。 この [...] The post NEC、業務自動化AIエージェント「NEC cotomi Agent」販売開始。Microsoft Marketplaceで展開 first app...",
-      "publishedDate": "Mon, 31 Aug 2026 08:53:36 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/neccotomiAgent-1.png",
-      "language": "ja"
-    },
-    {
-      "title": "Unslothとは？ローカルでLLMの実行・学習ができるオープンソースアプリの特徴・料金・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/unsloth/",
-      "description": "2026年8月、Unslothからローカル環境でAIモデルを実行・学習できるデスクトップアプリが公開されました。 今回登場した「Unsloth Desktop」は、モデルの実行と学習の両方を1つのアプリでこなす初のローカ [...]...",
-      "publishedDate": "Mon, 31 Aug 2026 07:43:29 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/claudesalesforceclaudeforceanthropicsalesforceclaude.html",
+      "description": "SalesforceとAnthropicが「Claudeforce」を発表しました。 第一弾となる「Salesforce in Claude」では、Claudeの画面からプロンプトを入力するだけで、Salesforceのデータやワークフロー......",
+      "publishedDate": "2026-09-02T02:43:59Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Unsloth-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/claudeforce-ann03.jpg",
       "language": "ja"
     },
     {
-      "title": "「AI博覧会 Fukuoka 2026」カンファレンス 第1弾スピーカーを発表！工藤公康氏が語るAI・データ時代のリーダー像。九州電力、JR九州、LINEヤフーコミュニケーションズのAI活用事例も",
+      "title": "AIエージェントがRedshiftを操作してDWH構築や集計分析など可能に、Amazon RedshiftがAgent Toolkit for AWSと統合",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aihaku-fukuoka2026-1stsp/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年9月30日（水）・10月1日（木）の2日間、博多国際展示場＆カンファレンスセンターにて「AI博覧会 Fukuoka 202 [...] The post 「AI博覧会 Fukuoka 2026」カンファレンス 第1弾スピーカーを発表！工藤公康氏が語るAI・データ時代のリーダー像。九州電力、JR九州、L...",
-      "publishedDate": "Mon, 31 Aug 2026 05:00:40 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/fukuoka2026-1stsp000.png",
+      "link": "https://www.publickey1.jp/blog/26/airedshiftdwhamazon_redshiftagent_toolkit_for_aws.html",
+      "description": "Amazon Web Services（AWS）は、同社がフルマネージドで提供するデータウェアハウスサービス「Amazon Redshift」が、Agent Toolkit for AWSと統合されたことを明らかにしました。 Agent T......",
+      "publishedDate": "2026-09-01T15:07:04Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/redshift-agenttool4aws-in.jpg",
       "language": "ja"
     },
     {
-      "title": "北九州市、フィジカルAIの社会実装を推進する「北九州市フィジカルAI共生都市戦略」を策定",
+      "title": "VS Code上で開発のセカンドオピニオンを別のAIエージェントから得られる「Rubber Duck」機能が実験的実装",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kitakyushu-physical-ai-city/",
-      "description": "北九州市は、フィジカルAIの社会実装を計画的かつ強力に推進する「北九州市フィジカルAI共生都市戦略」を策定しました。社会実装を起点に研究開発や事業化、産業集積へとつなげ、市民生活を含む幅広い分野での活用を進めます。 この [...] The post 北九州市、フィジカルAIの社会実装を推進する「北九州市フィジカルAI共生都市戦略」を策定 first appeared on AIポータルメディアA...",
-      "publishedDate": "Fri, 28 Aug 2026 09:11:33 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/kitakyushu-physical-ai-city-main.png",
+      "link": "https://www.publickey1.jp/blog/26/vs_codeairubber_duck.html",
+      "description": "オープンソースで開発されているコードエディタ「Visual Studio Code」（以下、VS Code）の最新版となる「VS Code 1.135」で、開発に関するセカンドオピニオンをメインのAIエージェントとは別のAIエージェントに依......",
+      "publishedDate": "2026-09-01T15:01:52Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/cTUP77ru.jpg",
       "language": "ja"
     },
     {
@@ -681,39 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/HQBIfmRbgAM8evP.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "コードからDockerfile不要でOCIコンテナをビルド。「Cloud Native Buildpacks」が十分成熟したとしてCNCFの卒業プロジェクトに",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/dockerfileocicloud_native_buildpackscncf.html",
-      "description": "Cloud Native Computing Foundation（CNCF）は、アプリケーションのソースコードから直接OCIコンテナメージを構築するツールである「Cloud Native Buildpacks」が十分成熟したとして、卒業プ......",
-      "publishedDate": "2026-08-18T16:03:06Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/VxvqycYF.png",
-      "language": "ja"
-    },
-    {
-      "title": "Google、AIモデルをコンパイルして暗号データを復号せずに扱えるように変換する「HEIR」発表。完全準同型暗号を利用し、AIでのセキュリティやプライバシー保護など実現へ",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/googleaiheirai.html",
-      "description": "Googleは、完全準同型暗号を利用したAIモデル用のオープンソースコンパイラ「HEIR」を発表しました。 AIモデルをコンパイルする「HEIR」 HEIRはAIモデル用のコンパイラとツールチェーンであり、これを用いて学習済みAIモデルのP......",
-      "publishedDate": "2026-08-18T15:55:25Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/heir-google-ann01.png",
-      "language": "ja"
-    },
-    {
-      "title": "AIエージェント時代のGitホスティングサービス「Origin」、Cursorが発表。Cursorとの統合、コマンドラインでの操作、GitHubとの同期など提供",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/aigitorigincursorcursorgithub.html",
-      "description": "AIコードエディタのCursorなどを提供するAnysphereは、Gitに対応したコードホスティングサービス「Origin」を発表しました。 Origin, our code hosting platform, is now live.I......",
-      "publishedDate": "2026-08-18T15:43:29Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/cursor-origin-pb01.png",
       "language": "ja"
     }
   ]
