@@ -1,6 +1,36 @@
 {
-  "lastUpdated": "2026-09-02T02:07:22.785517",
+  "lastUpdated": "2026-09-03T02:10:53.655719",
   "articles": [
+    {
+      "title": "【2026年版】建築基準法第22条区域とは？｜屋根・外壁の制限や調べ方をわかりやすく解説",
+      "link": "https://news.build-app.jp/article/37893/",
+      "description": "建築物を建てる際、防火地域・準防火地域以外でも、屋根などに一定の防火性能が求められる地域があります。そのひとつが「建築基準法第22条区域（法......",
+      "publishedDate": "Wed, 02 Sep 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/10/e3db13663ae1f4014964fcc86eccd9ac-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省の2026年度建設投資見通し、総額81兆4700億円で前年度比2.9%増",
+      "link": "https://news.build-app.jp/article/42447/",
+      "description": "国土交通省は、2026年度（令和8年度）の建設投資見通しを取りまとめ、公表しました。全体の投資額は81兆4700億円に達する見込みで、前年度......",
+      "publishedDate": "Wed, 02 Sep 2026 03:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/investment_outlook_2026-130x72.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "清水建設、2026年3月期連結売上高2兆578億円、純利益606億円増の1,266億円に",
+      "link": "https://news.build-app.jp/article/42437/",
+      "description": "清水建設は2026年9月、2025年度（2026年3月期）の連結決算概要を公表しました。売上高・利益ともに前期を上回り、増収増益を確保してい......",
+      "publishedDate": "Wed, 02 Sep 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/shimizu-financial-results-130x89.jpg",
+      "language": "ja"
+    },
     {
       "title": "Claude CoworkがWEB版でも利用可能に",
       "link": "https://axconstdx.com/2026/08/18/claude-cowork%e3%81%8cweb%e7%89%88%e3%81%a7%e3%82%82%e5%88%a9%e7%94%a8%e5%8f%af%e8%83%bd%e3%81%ab/",
@@ -49,6 +79,26 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/09/drawing_ai_5stages_web_1200x628-1024x536.webp",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、7月の建設工事受注総額13.4％減　民間工事は5カ月連続の減少に",
+      "link": "https://news.build-app.jp/article/42425/",
+      "description": "国土交通省は令和8年8月31日、建設工事受注動態統計調査の結果を公表しました。7月の受注総額は前年同月比13.4％減となり、2カ月ぶりの減少......",
+      "publishedDate": "Tue, 01 Sep 2026 03:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/construction_statistics-130x68.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、令和8年7月の新設住宅着工が前年比8.2％増 分譲マンションが大幅に増加",
+      "link": "https://news.build-app.jp/article/42419/",
+      "description": "国土交通省は8月31日、令和8年7月分の建築着工統計調査の結果を政府統計の総合窓口「e-Stat」で公表しました。全国の新設住宅着工戸数は6......",
+      "publishedDate": "Tue, 01 Sep 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/housing_construction-130x74.jpg",
       "language": "ja"
     },
     {
@@ -112,6 +162,16 @@
       "language": "en"
     },
     {
+      "title": "日本HP、建設業向けクラウド型図面管理サービス提供開始、製図作業時間を最大80％削減",
+      "link": "https://news.build-app.jp/article/42471/",
+      "description": "日本HPは、建築・エンジニアリング・建設業界のプロフェッショナル向けに、クラウド型プロジェクト管理サービス「HP Build Workspa......",
+      "publishedDate": "Thu, 03 Sep 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/hp-build-workspace-130x112.jpg",
+      "language": "ja"
+    },
+    {
       "title": "PLATEAUとは？3D都市モデルを業務の判断に活かす方法",
       "link": "https://axconstdx.com/2026/08/23/plateau%e3%81%a8%e3%81%af%ef%bc%9f3d%e9%83%bd%e5%b8%82%e3%83%a2%e3%83%87%e3%83%ab%e3%82%92%e6%a5%ad%e5%8b%99%e3%81%ae%e5%88%a4%e6%96%ad%e3%81%ab%e6%b4%bb%e3%81%8b%e3%81%99%e6%96%b9%e6%b3%95/",
       "description": "PLATEAUを立派な3D地図だと眺めるだけで満足していませんか。実はその使い方では、都市データが持つ本当の力の半分も引き出せていません。開発協議や施工計画で見落としを防ぎ、関係者の判断をそろえる基盤として活かす方法を、 [...] <p>The post PLATEAUとは？3D都市モデルを業務の判断に活かす方法 first appeared on 生成AIと建設DX.</p>...",
@@ -139,6 +199,46 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/09/kokkominsho_budget_8_8trillion_ogp_1200x630-1024x538.webp",
+      "language": "ja"
+    },
+    {
+      "title": "buildingSMART Japan(bSJ)が10月6日から8日までbuildingSMART International Summit Tokyo 2026開催",
+      "link": "https://news.build-app.jp/article/42347/",
+      "description": "buildingSMART Japan(bSJ)では、来る10月6日から8日までの日程で羽田空港第3ターミナルに隣接するBellesalle......",
+      "publishedDate": "Mon, 31 Aug 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/5e987288584b3a1a0f94df3b781eeb87-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "再下請負通知書とは？｜書き方・記入例と電子化のメリットを解説",
+      "link": "https://news.build-app.jp/article/42432/",
+      "description": "建設工事で元請会社から再下請負通知書の提出を求められたものの、「誰が作成するのか」「どの欄に誰の情報を書くのか」と迷う方も多いのではないでし......",
+      "publishedDate": "Mon, 31 Aug 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/9c06040ffe961ae8278bd507ce60d833-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新】2級施工管理技士の受検資格｜7分野の取得条件・実務経験を解説",
+      "link": "https://news.build-app.jp/article/42414/",
+      "description": "2級施工管理技士の確保は、現場の技術者配置と受注計画をを大きく左右するものです。一方で、第一次検定に合格しただけでは2級施工管理技士を名乗れ......",
+      "publishedDate": "Mon, 31 Aug 2026 14:18:22 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/35048217_m-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "竹中工務店、2026年度中間決算は連結減収増益、工事・開発利益の改善で営業利益25.9％増",
+      "link": "https://news.build-app.jp/article/42409/",
+      "description": "株式会社竹中工務店は2026年8月28日、2026年度（第89期）中間決算概要と当期業績見通しを発表しました。中間期の連結業績は減収となった......",
+      "publishedDate": "Mon, 31 Aug 2026 05:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/takenaka_2026_interim-130x80.png",
       "language": "ja"
     },
     {
