@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03T02:10:53.655719",
+  "lastUpdated": "2026-09-04T02:07:09.238068",
   "articles": [
     {
       "title": "【2026年版】建築基準法第22条区域とは？｜屋根・外壁の制限や調べ方をわかりやすく解説",
@@ -162,6 +162,16 @@
       "language": "en"
     },
     {
+      "title": "大成建設、既存ビルへIoTセンサーを後付け、obniz Nowとの連携で設備データを見える化",
+      "link": "https://news.build-app.jp/article/42443/",
+      "description": "大成建設株式会社は、クラウド型の建物統合管理プラットフォーム「LifeCycleOS®」を、株式会社obnizが手がけるIoTサービス「ob......",
+      "publishedDate": "Thu, 03 Sep 2026 03:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/taisei_building_iot-130x68.jpg",
+      "language": "ja"
+    },
+    {
       "title": "日本HP、建設業向けクラウド型図面管理サービス提供開始、製図作業時間を最大80％削減",
       "link": "https://news.build-app.jp/article/42471/",
       "description": "日本HPは、建築・エンジニアリング・建設業界のプロフェッショナル向けに、クラウド型プロジェクト管理サービス「HP Build Workspa......",
@@ -222,26 +232,6 @@
       "language": "ja"
     },
     {
-      "title": "【2026年最新】2級施工管理技士の受検資格｜7分野の取得条件・実務経験を解説",
-      "link": "https://news.build-app.jp/article/42414/",
-      "description": "2級施工管理技士の確保は、現場の技術者配置と受注計画をを大きく左右するものです。一方で、第一次検定に合格しただけでは2級施工管理技士を名乗れ......",
-      "publishedDate": "Mon, 31 Aug 2026 14:18:22 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/35048217_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "竹中工務店、2026年度中間決算は連結減収増益、工事・開発利益の改善で営業利益25.9％増",
-      "link": "https://news.build-app.jp/article/42409/",
-      "description": "株式会社竹中工務店は2026年8月28日、2026年度（第89期）中間決算概要と当期業績見通しを発表しました。中間期の連結業績は減収となった......",
-      "publishedDate": "Mon, 31 Aug 2026 05:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/08/takenaka_2026_interim-130x80.png",
-      "language": "ja"
-    },
-    {
       "title": "buildingSMART International Announces Outcomes of 2026 International Council AGM",
       "link": "https://www.buildingsmart.org/buildingsmart-international-announces-outcomes-of-2026-international-council-agm/",
       "description": "London, U.K. – August 10th, 2026 — buildingSMART International (bSI) is pleased to announce the resolutions passed at the Annual General Meeting of the International Council, which concluded on 6 Augu...",
@@ -279,6 +269,16 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/anthropic_editor_ogp_under_100kb-1024x512.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "戸田建設、爆薬装填ロボットTo-RIGGERで山岳トンネル発破作業の無人化に前進",
+      "link": "https://news.build-app.jp/article/42478/",
+      "description": "戸田建設は、UP設計コンサルタント、HCI、虎乃門建設機械の協力を得て開発した爆薬装填ロボット「To-RIGGER&#x2122;（トリガー......",
+      "publishedDate": "Fri, 04 Sep 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/explosive_to_rigger-130x111.jpg",
       "language": "ja"
     },
     {
