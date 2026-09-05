@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T02:07:09.238068",
+  "lastUpdated": "2026-09-05T02:07:22.315589",
   "articles": [
     {
       "title": "【2026年版】建築基準法第22条区域とは？｜屋根・外壁の制限や調べ方をわかりやすく解説",
@@ -52,16 +52,6 @@
       "language": "en"
     },
     {
-      "title": "The first buildingSMART openBIM Hackathon in Porto is complete",
-      "link": "https://www.buildingsmart.org/the-first-buildingsmart-openbim-hackathon-in-porto-is-complete/",
-      "description": "The first buildingSMART openBIM Hackathon is complete - and it delivered more than expected. Over 50 hours, 47 participants across 9 teams worked under real pressure to build solutions that work in pr...",
-      "publishedDate": "Tue, 14 Apr 2026 15:05:06 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "buildingSMART International Announces Finalists for the 2026 openBIM® Awards",
       "link": "https://www.buildingsmart.org/buildingsmart-international-announces-finalists-for-the-2026-openbim-awards/",
       "description": "London, U.K. – September 1, 2026 — buildingSMART International is pleased to announce the finalists for the buildingSMART openBIM® Awards 2026, recognising outstanding projects, research and technolog...",
@@ -102,16 +92,6 @@
       "language": "ja"
     },
     {
-      "title": "buildingSMART International Appoints Aidan Mercer as Managing Director",
-      "link": "https://www.buildingsmart.org/buildingsmart-international-appoints-aidan-mercer-as-managing-director/",
-      "description": "London, U.K. – April 30th, 2026 — The Board of buildingSMART International (bSI) is pleased to announce the appointment of Aidan Mercer as Managing Director (MD), effective 1 May 2026.... The post bui...",
-      "publishedDate": "Thu, 30 Apr 2026 09:56:12 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "BIM補助金9月30日締切、AI活用で建設DXが動く2026年",
       "link": "https://axconstdx.com/2026/08/27/bim%e8%a3%9c%e5%8a%a9%e9%87%919%e6%9c%8830%e6%97%a5%e7%b7%a0%e5%88%87%e3%80%81ai%e6%b4%bb%e7%94%a8%e3%81%a7%e5%bb%ba%e8%a8%addx%e3%81%8c%e5%8b%95%e3%81%8f2026%e5%b9%b4/",
       "description": "「うちはまだ大丈夫」と思っていた制度が、静かに原則化へと動き出しています。補助金の締切、AIによる劇的な時短、iPhone1台で完結するBIM化——知らないまま9月を迎えるか、今日から動くかで、来年の景色は大きく変わりま [...] <p>The post BIM補助金9月30日締切、AI活用で建設DXが動く2026年 first appeared on 生成AIと建設DX.</p>...",
@@ -140,26 +120,6 @@
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/cloud-browser-70percent-ogp-1200x630-1-1024x538.webp",
       "language": "ja"
-    },
-    {
-      "title": "Industry Insights “Embracing Challenges and Opportunities of using openBIM® for Increasing Efficiency in the Construction Process”",
-      "link": "https://www.buildingsmart.org/industry-insights-embracing-challenges-and-opportunities-of-using-openbim-for-increasing-efficiency-in-the-construction-process/",
-      "description": "Read about Construction Industry leaders perspective on embracing challenges and opportunities of using openBIM for increasing efficiency: Link The post Industry Insights “Embracing Challenges and Opp...",
-      "publishedDate": "Thu, 16 Apr 2026 12:30:14 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "We are looking for feedback on your experience with IDS",
-      "link": "https://www.buildingsmart.org/we-are-looking-for-feedback-on-your-experience-with-ids/",
-      "description": "Information Delivery Specification (IDS) marks its second anniversary this June, and we want to hear from the community - especially IDS users and implementers. Share your feedback on what works... Th...",
-      "publishedDate": "Thu, 14 May 2026 10:13:46 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "大成建設、既存ビルへIoTセンサーを後付け、obniz Nowとの連携で設備データを見える化",
@@ -270,6 +230,46 @@
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/anthropic_editor_ogp_under_100kb-1024x512.jpg",
       "language": "ja"
+    },
+    {
+      "title": "IFC 4.4 Integration Plan for ISO voting results",
+      "link": "https://www.buildingsmart.org/ifc-4-4-integration-plan-for-iso-voting-results/",
+      "description": "Report: LinkOutcome report: Link The voting for IFC 4.4 integration for ISO Project plan closed at midnight – 12 UTC on 21 August 2026. Voting ResultsYes 50No 4Percentage in favour... The post IFC 4.4...",
+      "publishedDate": "Fri, 04 Sep 2026 09:19:02 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "IFC X Core & Modularisation Final Project Plan voting results",
+      "link": "https://www.buildingsmart.org/ifc-x-core-modularisation-final-project-plan-voting-results/",
+      "description": "Report: LinkOutcome report: Link The vote on the IFC X Core &#038; Modularisation Final Project Plan closed at midnight UTC minus 12 hours on 7 August 2026. The voting results... The post IFC X Core &...",
+      "publishedDate": "Fri, 04 Sep 2026 09:18:52 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "High Reliability Interoperability for Railway Stations HIRS voting",
+      "link": "https://www.buildingsmart.org/high-reliability-interoperability-for-railway-stations-hirs-voting/",
+      "description": "Vote closing date: 23 Oct 2026Report: Link Project SummaryAlthough IFC 4.3 has improved railway data interoperability through the IfcRailDomain, it does not fully represent the complexity, functional ...",
+      "publishedDate": "Fri, 04 Sep 2026 08:40:06 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Immersed Tunnel Project Plan out for voting",
+      "link": "https://www.buildingsmart.org/immersed-tunnel-project-plan-out-for-voting/",
+      "description": "Vote closing date: 23 Aug 2026Report: Link Project SummaryImmersed tunnel projects are a unique and complex subset of maritime infrastructure, requiring precise coordination across disciplines, techno...",
+      "publishedDate": "Fri, 04 Sep 2026 08:39:56 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "戸田建設、爆薬装填ロボットTo-RIGGERで山岳トンネル発破作業の無人化に前進",
