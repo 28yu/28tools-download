@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T05:36:14.407302",
+  "lastUpdated": "2026-09-05T05:19:59.639694",
   "articles": [
     {
       "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
@@ -266,17 +266,6 @@
       "language": "en"
     },
     {
-      "title": "The Download: engineered microbes for crops, and OpenAI’s culture problem",
-      "titleJa": "ダウンロード: 作物用に作られた微生物と OpenAI の培養問題",
-      "link": "https://www.technologyreview.com/2026/09/01/1143199/the-download-engineered-microbes-openai-safety-culture/",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How engineered microbes could help feed the world’...",
-      "publishedDate": "Tue, 01 Sep 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/MIT_TR_Uri_Moaz-177-thumb.jpg?w=840",
-      "language": "en"
-    },
-    {
       "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
       "titleJa": "医療機関は EHR と追加の業界データを ChatGPT に接続できるようになりました",
       "link": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
@@ -285,17 +274,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How engineered microbes could help feed the world’s crops",
-      "titleJa": "遺伝子操作された微生物はどのようにして世界の作物に栄養を与えることができるのか",
-      "link": "https://www.technologyreview.com/2026/09/01/1143195/microbe-fertilizer-switch-bioworks/",
-      "description": "Fertilizer is crucial for the global food supply, but making it uses a lot of energy and produces a lot of emissions. Some companies hope microbes can help. A growing body of research shows that seedi...",
-      "publishedDate": "Tue, 01 Sep 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/IMG_9577-2.jpg?w=840",
       "language": "en"
     },
     {
@@ -333,7 +311,7 @@
     },
     {
       "title": "3 new ways to plan and book travel in Search",
-      "titleJa": "検索で旅行を計画および予約する 3 つの新しい方法",
+      "titleJa": "検索で旅行を計画し予約する 3 つの新しい方法",
       "link": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
       "description": "Graphic depicting new travel features for AI Mode in Search...",
       "publishedDate": "Thu, 27 Aug 2026 16:00:00 +0000",
@@ -343,11 +321,33 @@
       "language": "en"
     },
     {
-      "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
-      "titleJa": "より良い答え、より広い思考: ChatGPT と批判的思考トレーニングから学生が得られるもの",
-      "link": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
-      "description": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment....",
-      "publishedDate": "Thu, 27 Aug 2026 09:00:00 GMT",
+      "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
+      "titleJa": "LFM2.5-DSpark による最大 3.2 倍の高速推論",
+      "link": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "description": "...",
+      "publishedDate": "Thu, 20 Aug 2026 16:52:57 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/ZMoThfdqzAz8cbxweVQfO.gif",
+      "language": "en"
+    },
+    {
+      "title": "Bring your spreadsheet data to life with Sheets canvas",
+      "titleJa": "スプレッドシート キャンバスでスプレッドシート データに命を吹き込む",
+      "link": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
+      "description": "The video shows Sheets canvas in action....",
+      "publishedDate": "Thu, 13 Aug 2026 16:45:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Sheets_canvas-blog-header-2784x.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+      "titleJa": "最前線の防御者のための夜明け: 重要なサービスの保護に 10 億ドル",
+      "link": "https://openai.com/index/daybreak-for-frontline-defenders",
+      "description": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services....",
+      "publishedDate": "Thu, 03 Sep 2026 13:15:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -442,17 +442,6 @@
       "language": "ja"
     },
     {
-      "title": "Grok Voice Think Fast 2.0とは？特徴や使い方を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/grok-voice-think-fast-2-0/",
-      "description": "2026年7月29日、xAI社は音声対話AIモデルの最新版「Grok Voice Think Fast 2.0」を発表しました。前モデルからわずか3か月というスピードでのメジャーアップデートとなり、応答速度・文字起こし精 [...] The post Grok Voice Think Fast 2.0とは？特徴や使い方を解説 first appeared on AIポータルメディアAIsmiley...",
-      "publishedDate": "Thu, 03 Sep 2026 01:07:13 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/ChatGPT-Image-2026年8月6日-11_15_01.png",
-      "language": "ja"
-    },
-    {
       "title": "【Wan 3.0】30秒動画を一発生成！アリババの最新動画生成AIの性能・使い方・料金を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/wan-3-0/",
@@ -494,6 +483,17 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Sakana-AI_2608-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ウィルグループ、北海道旭川市の買物公園でエッジAIカメラによる人流解析・分析の実証実験を開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/willgroup-edge-ai-camera/",
+      "description": "ウィルグループは、北海道旭川市が取り組む買物公園の広場化実証実験において、エッジAIカメラを活用した人流解析・分析の実証実験を開始しました。通行人数や滞在傾向に加え、推定年代・性別などの属性情報を含む人流データを取得し、 [...] The post ウィルグループ、北海道旭川市の買物公園でエッジAIカメラによる人流解析・分析の実証実験を開始 first appeared on AIポータルメディ...",
+      "publishedDate": "Fri, 04 Sep 2026 08:02:17 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/willgroup-main.png",
       "language": "ja"
     },
     {
