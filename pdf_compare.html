@@ -355,14 +355,6 @@
   </div>
 
   <!-- ツール解説（初訪問者・検索向け。リピーターは読み飛ばしOK） -->
-  <style>
-  .tool-about{max-width:900px;margin:2.5rem auto 0;padding:1.6rem 16px 0;border-top:1px solid rgba(0,0,0,0.08);line-height:1.85;opacity:0.92;}
-  .tool-about h2{font-size:1.3rem;margin:0 0 .8rem;}
-  .tool-about h3{font-size:1.05rem;margin:1.4rem 0 .5rem;}
-  .tool-about ul{padding-left:1.3em;margin:.4rem 0;}
-  .tool-about li{margin:.3rem 0;}
-  .tool-about p{margin:.6rem 0;}
-  </style>
   <section class="tool-about">
       <h2 data-lang-key="pdf-about-h2">PDF比較ツールについて</h2>
       <p data-lang-key="pdf-about-p">「PDF比較ツール」は、2つの図面PDFを重ね合わせ、変更点を色分けで表示できる無料ツールです。PDFはサーバーに送信されず、すべてブラウザ内で処理されるため安全に比較できます。</p>
@@ -379,6 +371,26 @@
           <li data-lang-key="pdf-about-use2">承認前に提出図と修正版の差分を漏れなくチェックしたいとき</li>
           <li data-lang-key="pdf-about-use3">支給図の更新点をすばやく共有したいとき</li>
       </ul>
+      <h3 data-lang-key="pdf-about-h3-steps">使い方</h3>
+      <ol>
+          <li data-lang-key="pdf-about-step1">「比較元 PDF」に旧版を、「比較先 PDF」に新版をドロップします（枠をクリックしてファイル選択もできます）。</li>
+          <li data-lang-key="pdf-about-step2">「比較実行」を押すと、2つのPDFを重ね合わせて差分を色分けします。</li>
+          <li data-lang-key="pdf-about-step3">ページ番号のボタンで各ページを確認します。差分のあるページは赤い枠で示されます。</li>
+          <li data-lang-key="pdf-about-step4">「全ページPDF保存」で結果を保存します。画質は 216 / 300 / 600dpi から選べます。</li>
+      </ol>
+      <h3 data-lang-key="pdf-about-h3-faq">よくある質問</h3>
+      <dl>
+          <dt data-lang-key="pdf-faq-q1">アップロードしたPDFはサーバーに送信されますか？</dt>
+          <dd data-lang-key="pdf-faq-a1">送信されません。ファイルの読み込みから差分の計算まで、すべてお使いのブラウザ内で完結します。社外秘の図面でもそのままご利用いただけます。</dd>
+          <dt data-lang-key="pdf-faq-q2">ページ数の違うPDF同士でも比較できますか？</dt>
+          <dd data-lang-key="pdf-faq-a2">比較できますが、対象は<strong>両方に共通するページ数まで</strong>です。たとえば10ページと12ページのPDFなら1〜10ページ目が比較され、残りの2ページは対象外になります。</dd>
+          <dt data-lang-key="pdf-faq-q3">図面全体が赤や青で塗りつぶされてしまいます。</dt>
+          <dd data-lang-key="pdf-faq-a3">2つのPDFで用紙サイズや図面の位置がずれていると、全体が差分として検出されます。CADから書き出すときに用紙サイズ・尺度・原点をそろえてください。用紙サイズが違う場合は左上を基準に重ね合わせます。</dd>
+          <dt data-lang-key="pdf-faq-q4">差分が見づらいときはどうすればいいですか？</dt>
+          <dd data-lang-key="pdf-faq-a4">「差分の不透明度」を上げると差分の色が濃くなります。プレビューはマウスホイールで拡大、ドラッグで移動でき、ダブルクリックで元の表示に戻ります。</dd>
+          <dt data-lang-key="pdf-faq-q5">大判図面（A1・A0）でも使えますか？</dt>
+          <dd data-lang-key="pdf-faq-a5">使えます。大きなページは内部で分割して処理するため、A1・A0 でも 600dpi での保存が可能です。ページ数が多い場合は比較に時間がかかることがあります。</dd>
+      </dl>
       <p data-lang-key="pdf-about-guide">📖 詳しい使い方は<a href="tips/pdf-compare-guide.html">図面PDFを比較して差分を見つける方法</a>で解説しています。</p>
   </section>
   </main>

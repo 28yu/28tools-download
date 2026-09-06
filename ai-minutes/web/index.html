@@ -357,6 +357,45 @@
     </div>
   </section>
 
+  <!-- ツール解説（初訪問者・検索向け） -->
+  <section class="tool-about">
+    <h2 data-lang-key="min-about-h2">AI議事録 自動作成ツールについて</h2>
+    <p data-lang-key="min-about-p">打合せの録音や配布資料から、議事録の下書きを自動で作成する無料ツールです。決定事項・課題・次のアクションを整理した形にまとめるので、会議直後の「書き起こしから議事録を作る」作業を短縮できます。ブラウザだけで動き、会員登録は不要です。</p>
+
+    <h3 data-lang-key="min-about-h3-can">このツールでできること</h3>
+    <ul>
+      <li data-lang-key="min-about-can1">音声ファイルの文字起こしと、議事録としての要約・整理</li>
+      <li data-lang-key="min-about-can2">4つの形式で出力（図解 / マインドマップ / タイムライン / 担当者別）</li>
+      <li data-lang-key="min-about-can3">日本語・英語・中国語の切り替え（切り替え時に本文も翻訳）</li>
+      <li data-lang-key="min-about-can4">打合せ内容を1枚にまとめたビジュアル資料の生成（任意）</li>
+    </ul>
+
+    <h3 data-lang-key="min-about-h3-modes">2つのモード</h3>
+    <ul>
+      <li data-lang-key="min-about-mode1"><strong>簡易版</strong>: 文字起こしをブラウザ内で行います。音声は外部に送信されませんが、精度は高精度版に劣ります。</li>
+      <li data-lang-key="min-about-mode2"><strong>高精度版</strong>: ご自身で取得した Google Gemini の API キーを使います。精度は上がりますが、音声・資料は Google のサーバーへ送信されます。</li>
+    </ul>
+
+    <h3 data-lang-key="min-about-h3-steps">使い方</h3>
+    <ol>
+      <li data-lang-key="min-about-step1">打合せの録音ファイル（と、あれば資料）を選びます。</li>
+      <li data-lang-key="min-about-step2">簡易版か高精度版かを選びます。高精度版を使う場合は Gemini の API キーを入力します。</li>
+      <li data-lang-key="min-about-step3">「議事録を作成」を押すと、文字起こしと要約が行われます。</li>
+      <li data-lang-key="min-about-step4">出力形式を切り替えて見やすい形を選び、内容を確認・修正して保存します。</li>
+    </ol>
+
+    <h3 data-lang-key="min-about-h3-faq">よくある質問</h3>
+    <dl>
+      <dt data-lang-key="min-faq-q1">録音した音声はどこかに送信されますか？</dt>
+      <dd data-lang-key="min-faq-a1">簡易版はブラウザ内だけで処理し、送信しません。高精度版は Google の Gemini へ送信されます。取り扱いに注意が必要な会議では簡易版をお使いください。</dd>
+      <dt data-lang-key="min-faq-q2">API キーは保存されますか？</dt>
+      <dd data-lang-key="min-faq-a2">キーはお使いのブラウザ内に保持されるだけで、当サイトのサーバーへは送信されません。共用パソコンでお使いの場合は、利用後にブラウザのデータを消去してください。</dd>
+      <dt data-lang-key="min-faq-q3">料金はかかりますか？</dt>
+      <dd data-lang-key="min-faq-a3">本ツールは無料です。高精度版で使う Gemini の API キーも無料枠の範囲であれば費用はかかりませんが、上限や条件は Google 側の規定に従います。</dd>
+      <dt data-lang-key="min-faq-q4">生成された議事録はそのまま使えますか？</dt>
+      <dd data-lang-key="min-faq-a4">AI の出力には誤りが含まれることがあります。決定事項・数値・担当者名などは必ずご自身で確認してから配布してください。</dd>
+    </dl>
+  </section>
   </main>
 </div><!-- /.container -->
 

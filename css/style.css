@@ -2307,3 +2307,46 @@ h1.main-title,
         padding: 20px;
     }
 }
+
+/* ============================================
+   ツール解説セクション
+   各ツールページ下部の「概要 / できること / 使い方 / FAQ」。
+   以前は hatch.html と pdf_compare.html に同じ内容を
+   インライン <style> で二重に持っていたのでここへ集約した。
+   ============================================ */
+.tool-about {
+    max-width: 900px;
+    margin: 2.5rem auto 0;
+    padding: 1.6rem 16px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    line-height: 1.85;
+    opacity: 0.92;
+}
+.tool-about h2 { font-size: 1.3rem; margin: 0 0 .8rem; }
+.tool-about h3 { font-size: 1.05rem; margin: 1.4rem 0 .5rem; }
+.tool-about ul,
+.tool-about ol { padding-left: 1.4em; margin: .4rem 0; }
+.tool-about li { margin: .3rem 0; }
+.tool-about p  { margin: .6rem 0; }
+
+/* よくある質問（Q&A） */
+.tool-about dl { margin: .4rem 0; }
+.tool-about dt {
+    font-weight: 600;
+    margin: 1rem 0 .2rem;
+}
+.tool-about dt::before {
+    content: 'Q. ';
+    color: var(--blueprint-blue);
+}
+.tool-about dd { margin: 0 0 .2rem 1.3em; }
+.tool-about dd::before {
+    content: 'A. ';
+    color: var(--architect-green);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .tool-about { margin-top: 2rem; padding-top: 1.2rem; }
+    .tool-about h2 { font-size: 1.15rem; }
+}

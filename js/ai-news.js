@@ -195,19 +195,27 @@ function escapeAiHtml(text) {
 function stripAiHtml(html) {
     if (!html) return '';
 
-    let text = html.replace(/<[^>]*>/g, '');
-    text = text.replace(/&[a-z]+;/gi, ' ');
-    text = text.replace(/&#\d+;/g, ' ');
-
+    // ⚠️ 順序が重要: 先にエンティティを復号してからタグを削除する。
+    // 逆順にすると、フィードが二重エスケープした `&lt;p&gt;` がタグ削除をすり抜け、
+    // 復号後に `<p>` という「文字」として本文に残ってしまう。
+    let text = String(html);
     try {
-        const textarea = document.createElement('textarea');
-        textarea.innerHTML = text;
-        text = textarea.value;
+        const ta = document.createElement('textarea');
+        for (let i = 0; i < 3; i++) {           // 二重エスケープにも対応
+            ta.innerHTML = text;
+            const decoded = ta.value;
+            if (decoded === text) break;
+            text = decoded;
+        }
     } catch (e) {
         console.warn('Failed to decode HTML entities:', e);
     }
 
+    text = text.replace(/<[^>]*>/g, ' ');       // 復号後にタグを削除
     text = text.replace(/\s+/g, ' ').trim();
+
+    // RSS フィード側の定型フッター（"The post ... first appeared on ..."）を落とす
+    text = text.replace(/\s*The post\s+[\s\S]*?\s+(?:first appeared on|appeared first on)\s+[^.]*\.?(?:\s*(?:\.{3}|\u2026))?\s*$/, '').trim();
 
     const maxLength = 150;
     if (text.length > maxLength) {

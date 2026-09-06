@@ -8487,6 +8487,155 @@ translations.toolAbout = {
         ja: '📖 詳しい使い方は<a href="tips/pdf-compare-guide.html">図面PDFを比較して差分を見つける方法</a>で解説しています。',
         en: '📖 See <a href="tips/pdf-compare-guide.html">How to Compare Drawing PDFs and Spot the Differences</a> for detailed usage.',
         zh: '📖 详细用法请参阅<a href="tips/pdf-compare-guide.html">比较图纸 PDF 并找出差异的方法</a>。'
+    },
+
+    // ── ハッチング: 目地の入力ラベル（従来 未定義で日本語のままだった）──
+    'hatch-x': { ja: 'X (mm)', en: 'X (mm)', zh: 'X (mm)' },
+    'hatch-y': { ja: 'Y (mm)', en: 'Y (mm)', zh: 'Y (mm)' },
+    'hatch-grout-x': { ja: '目地X (mm)', en: 'Joint X (mm)', zh: '接缝 X (mm)' },
+    'hatch-grout-y': { ja: '目地Y (mm)', en: 'Joint Y (mm)', zh: '接缝 Y (mm)' },
+
+    // ── ハッチング: 使い方 ──
+    'hatch-about-h3-steps': { ja: '使い方', en: 'How to use', zh: '使用方法' },
+    'hatch-about-step1': {
+        ja: '「パターン種類」から作りたいパターンを選びます。',
+        en: 'Pick the pattern you want from "Pattern type".',
+        zh: '从“图案种类”中选择要制作的图案。'
+    },
+    'hatch-about-step2': {
+        ja: '角度・間隔・目地サイズなどを入力します。右のプレビューが即座に更新されるので、仕上がりを見ながら調整できます。',
+        en: 'Enter angle, spacing, joint size and so on. The preview updates instantly, so you can adjust while seeing the result.',
+        zh: '输入角度、间距、接缝尺寸等。右侧预览会即时更新，可以边看效果边调整。'
+    },
+    'hatch-about-step3': {
+        ja: '「出力形式」を選びます。Revit の場合はさらに「モデル」（実寸で表示）か「製図」（図面スケールに追従）かを選びます。',
+        en: 'Choose the output format. For Revit, also choose "Model" (real-world size) or "Drafting" (follows the view scale).',
+        zh: '选择“输出格式”。Revit 还需选择“模型”（按实际尺寸显示）或“制图”（跟随图纸比例）。'
+    },
+    'hatch-about-step4': {
+        ja: 'ダウンロードボタンを押すと .pat ファイルが保存されます。パターン名は設定値から自動で付きます（例: 芋目地_100x100x5x5）。',
+        en: 'Press the download button to save the .pat file. The pattern name is generated from your settings (e.g. Stack_bond_100x100x5x5).',
+        zh: '点击下载按钮即可保存 .pat 文件。图案名称会根据设置自动生成（例：芋目地_100x100x5x5）。'
+    },
+    'hatch-about-step5': {
+        ja: 'Revit では［管理］タブ →［追加設定］→［塗りつぶしパターン］→［新規作成］→［カスタム］→［参照］で読み込みます。',
+        en: 'In Revit, load it from Manage tab → Additional Settings → Fill Patterns → New → Custom → Browse.',
+        zh: '在 Revit 中通过［管理］选项卡 →［其他设置］→［填充样式］→［新建］→［自定义］→［浏览］导入。'
+    },
+    'hatch-about-h3-faq': { ja: 'よくある質問', en: 'FAQ', zh: '常见问题' },
+    'hatch-faq-q1': {
+        ja: '「モデル」と「製図」はどう違いますか？',
+        en: 'What is the difference between "Model" and "Drafting"?',
+        zh: '“模型”和“制图”有什么区别？'
+    },
+    'hatch-faq-a1': {
+        ja: 'モデルパターンは実寸で表示されるため、図面の縮尺を変えても現実の寸法どおりの間隔で表示されます。製図パターンは紙の上での見た目が一定になり、縮尺に追従します。タイルや目地など「実際の寸法」を表したいときはモデル、ハッチング表現として使いたいときは製図を選びます。',
+        en: 'A model pattern is drawn at real-world size, so the spacing stays true to the actual dimensions no matter the view scale. A drafting pattern keeps a constant look on paper and follows the view scale. Use model patterns for real dimensions such as tiles and joints, and drafting patterns for graphic hatching.',
+        zh: '模型样式按实际尺寸显示，即使更改图纸比例，间距也保持真实尺寸。制图样式在图纸上的外观固定，会跟随比例变化。表示瓷砖、接缝等“实际尺寸”时选模型，作为填充表现时选制图。'
+    },
+    'hatch-faq-q2': {
+        ja: 'パターン名に日本語は使えますか？',
+        en: 'Can I use Japanese characters in the pattern name?',
+        zh: '图案名称可以使用日文吗？'
+    },
+    'hatch-faq-a2': {
+        ja: '使えます。Revit・AutoCAD は Windows 環境で Shift-JIS を前提としているため、本ツールは .pat ファイルを Shift-JIS で書き出します。日本語のパターン名でも文字化けしません。',
+        en: 'Yes. Revit and AutoCAD expect Shift-JIS on Windows, so this tool writes .pat files in Shift-JIS. Japanese pattern names will not be garbled.',
+        zh: '可以。Revit・AutoCAD 在 Windows 环境下以 Shift-JIS 为前提，因此本工具以 Shift-JIS 输出 .pat 文件，日文图案名不会乱码。'
+    },
+    'hatch-faq-q3': {
+        ja: 'AutoCAD でも使えますか？',
+        en: 'Does it work with AutoCAD?',
+        zh: '也能用于 AutoCAD 吗？'
+    },
+    'hatch-faq-a3': {
+        ja: '使えます。「出力形式」で AutoCAD を選ぶと標準の .pat 形式で書き出します。AutoCAD の [ハッチング] コマンド →［パターン］→［ユーザー定義］／カスタムパターンから読み込んでください。',
+        en: 'Yes. Choose AutoCAD as the output format and the file is written in the standard .pat format. Load it from the HATCH command → Pattern → User defined / custom pattern.',
+        zh: '可以。在“输出格式”中选择 AutoCAD，即以标准 .pat 格式输出。请通过 AutoCAD 的 [图案填充] 命令 →［图案］→［用户定义］／自定义图案导入。'
+    },
+    'hatch-faq-q4': {
+        ja: 'ファイルはサーバーに送信されますか？',
+        en: 'Are files sent to a server?',
+        zh: '文件会发送到服务器吗？'
+    },
+    'hatch-faq-a4': {
+        ja: '送信されません。パターンの生成もファイルの書き出しもすべてブラウザ内で行われます。会員登録も不要です。',
+        en: 'No. Both pattern generation and file export happen entirely in your browser. No sign-up is required.',
+        zh: '不会。图案生成和文件导出全部在浏览器内完成，也无需注册。'
+    },
+
+    // ── PDF比較: 使い方 ──
+    'pdf-about-h3-steps': { ja: '使い方', en: 'How to use', zh: '使用方法' },
+    'pdf-about-step1': {
+        ja: '「比較元 PDF」に旧版を、「比較先 PDF」に新版をドロップします（枠をクリックしてファイル選択もできます）。',
+        en: 'Drop the older PDF on "Source PDF" and the newer one on "Target PDF" (you can also click the box to pick a file).',
+        zh: '将旧版拖到“比较源 PDF”，新版拖到“比较目标 PDF”（也可点击框选择文件）。'
+    },
+    'pdf-about-step2': {
+        ja: '「比較実行」を押すと、2つのPDFを重ね合わせて差分を色分けします。',
+        en: 'Press "Compare" to overlay the two PDFs and colour-code the differences.',
+        zh: '点击“执行比较”，即可叠加两个 PDF 并用颜色区分差异。'
+    },
+    'pdf-about-step3': {
+        ja: 'ページ番号のボタンで各ページを確認します。差分のあるページは赤い枠で示されます。',
+        en: 'Use the page buttons to review each page. Pages with differences are outlined in red.',
+        zh: '通过页码按钮查看各页。有差异的页面会以红框标示。'
+    },
+    'pdf-about-step4': {
+        ja: '「全ページPDF保存」で結果を保存します。画質は 216 / 300 / 600dpi から選べます。',
+        en: 'Use "Save all pages as PDF" to export the result. Quality can be 216 / 300 / 600 dpi.',
+        zh: '通过“保存全部页面为 PDF”导出结果。画质可选 216 / 300 / 600dpi。'
+    },
+    'pdf-about-h3-faq': { ja: 'よくある質問', en: 'FAQ', zh: '常见问题' },
+    'pdf-faq-q1': {
+        ja: 'アップロードしたPDFはサーバーに送信されますか？',
+        en: 'Are the PDFs sent to a server?',
+        zh: '上传的 PDF 会发送到服务器吗？'
+    },
+    'pdf-faq-a1': {
+        ja: '送信されません。ファイルの読み込みから差分の計算まで、すべてお使いのブラウザ内で完結します。社外秘の図面でもそのままご利用いただけます。',
+        en: 'No. Everything from reading the files to computing the differences happens in your browser, so confidential drawings can be compared safely.',
+        zh: '不会。从读取文件到计算差异全部在浏览器内完成，涉密图纸也可放心使用。'
+    },
+    'pdf-faq-q2': {
+        ja: 'ページ数の違うPDF同士でも比較できますか？',
+        en: 'Can I compare PDFs with different page counts?',
+        zh: '页数不同的 PDF 也能比较吗？'
+    },
+    'pdf-faq-a2': {
+        ja: '比較できますが、対象は<strong>両方に共通するページ数まで</strong>です。たとえば10ページと12ページのPDFなら1〜10ページ目が比較され、残りの2ページは対象外になります。',
+        en: 'Yes, but only <strong>up to the number of pages both files share</strong>. For a 10-page and a 12-page PDF, pages 1–10 are compared and the remaining 2 pages are skipped.',
+        zh: '可以，但仅比较<strong>两者共有的页数</strong>。例如 10 页与 12 页的 PDF，会比较第 1〜10 页，其余 2 页不在比较范围内。'
+    },
+    'pdf-faq-q3': {
+        ja: '図面全体が赤や青で塗りつぶされてしまいます。',
+        en: 'The whole drawing turns red or blue.',
+        zh: '整张图纸被涂成红色或蓝色。'
+    },
+    'pdf-faq-a3': {
+        ja: '2つのPDFで用紙サイズや図面の位置がずれていると、全体が差分として検出されます。CADから書き出すときに用紙サイズ・尺度・原点をそろえてください。用紙サイズが違う場合は左上を基準に重ね合わせます。',
+        en: 'If the sheet size or drawing position differs between the two PDFs, everything is detected as a difference. Match the sheet size, scale and origin when exporting from CAD. When sheet sizes differ, the pages are aligned at the top-left corner.',
+        zh: '若两个 PDF 的纸张尺寸或图纸位置不一致，整体都会被判定为差异。请在从 CAD 导出时统一纸张尺寸、比例和原点。纸张尺寸不同时，以左上角为基准叠加。'
+    },
+    'pdf-faq-q4': {
+        ja: '差分が見づらいときはどうすればいいですか？',
+        en: 'What if the differences are hard to see?',
+        zh: '差异不易辨认时该怎么办？'
+    },
+    'pdf-faq-a4': {
+        ja: '「差分の不透明度」を上げると差分の色が濃くなります。プレビューはマウスホイールで拡大、ドラッグで移動でき、ダブルクリックで元の表示に戻ります。',
+        en: 'Raise "Difference opacity" to deepen the colours. You can zoom the preview with the mouse wheel, pan by dragging, and double-click to reset.',
+        zh: '调高“差异不透明度”可加深颜色。预览可用鼠标滚轮缩放、拖拽平移，双击可恢复原始显示。'
+    },
+    'pdf-faq-q5': {
+        ja: '大判図面（A1・A0）でも使えますか？',
+        en: 'Does it work with large-format drawings (A1 / A0)?',
+        zh: '大幅面图纸（A1・A0）也能使用吗？'
+    },
+    'pdf-faq-a5': {
+        ja: '使えます。大きなページは内部で分割して処理するため、A1・A0 でも 600dpi での保存が可能です。ページ数が多い場合は比較に時間がかかることがあります。',
+        en: 'Yes. Large pages are processed in tiles internally, so A1 and A0 can still be saved at 600 dpi. Comparing many pages may take a while.',
+        zh: '可以。大页面在内部分块处理，因此 A1・A0 也能以 600dpi 保存。页数较多时比较会花费一些时间。'
     }
 };
 
@@ -8617,11 +8766,223 @@ translations.tipsExcel = {
     'tips-excel-cta2': { ja: '📊 いますぐ構造図PDFをExcel化する（無料）', en: '📊 Convert a structural PDF to Excel now (free)', zh: '📊 立即将结构图 PDF 生成 Excel（免费）' }
 };
 
+// PDF→Excel / AI議事録 / Tips一覧 のツール解説セクション
+translations.toolAboutTools = {
+    // ── PDF → Excel 構造図抽出 ──
+    'p2e-about-h2': {
+        ja: 'PDF → Excel 構造図抽出ツールについて',
+        en: 'About the PDF to Excel Structural Extractor',
+        zh: '关于 PDF → Excel 结构图提取工具'
+    },
+    'p2e-about-p': {
+        ja: '構造図の梁リスト・柱リストの PDF から、符号・断面寸法・鋼材種別などを読み取り、Excel（.xlsx）に書き出す無料ツールです。Revit のファミリタイプを一括作成するための元データづくりを想定しています。PDF はサーバーへ送信されず、読み取りから Excel の生成まですべてブラウザ内で完結します。',
+        en: 'A free tool that reads marks, section dimensions and steel grades from beam and column schedules in structural PDFs and writes them out as Excel (.xlsx). It is meant for preparing source data to batch-create Revit family types. PDFs are never sent to a server — reading and Excel generation both happen entirely in your browser.',
+        zh: '这是一款免费工具，可从结构图的梁表、柱表 PDF 中读取编号、截面尺寸、钢材种类等信息，并导出为 Excel（.xlsx）。适用于为批量创建 Revit 族类型准备原始数据。PDF 不会发送到服务器，读取与 Excel 生成全部在浏览器内完成。'
+    },
+    'p2e-about-h3-can': { ja: 'このツールでできること', en: 'What you can do', zh: '本工具可实现的功能' },
+    'p2e-about-can1': {
+        ja: '基礎大梁・大梁・小梁・柱のリストから符号と断面情報を自動で抽出',
+        en: 'Automatically extract marks and section data from foundation girder, girder, beam and column schedules',
+        zh: '从基础大梁、大梁、小梁、柱的表格中自动提取编号与截面信息'
+    },
+    'p2e-about-can2': {
+        ja: '文字情報を持つ PDF はそのまま読み取り、画像だけの PDF は OCR で読み取り',
+        en: 'Read text-based PDFs directly, and image-only PDFs via OCR',
+        zh: '含文字信息的 PDF 直接读取，纯图像 PDF 通过 OCR 读取'
+    },
+    'p2e-about-can3': {
+        ja: 'H形鋼は JIS G 3192 の規格表と照合し、読み取れなかった寸法を補完',
+        en: 'Cross-check H-sections against the JIS G 3192 tables to fill in dimensions that could not be read',
+        zh: 'H 型钢会与 JIS G 3192 规格表比对，补全未能读取的尺寸'
+    },
+    'p2e-about-can4': {
+        ja: '抽出結果を画面で確認・修正してから Excel としてダウンロード',
+        en: 'Review and correct the results on screen before downloading the Excel file',
+        zh: '可在画面上确认、修改提取结果后再下载 Excel'
+    },
+    'p2e-about-h3-steps': { ja: '使い方', en: 'How to use', zh: '使用方法' },
+    'p2e-about-step1': {
+        ja: '構造図の PDF を画面にドロップします（クリックしてファイル選択もできます）。',
+        en: 'Drop a structural PDF onto the page (you can also click to pick a file).',
+        zh: '将结构图 PDF 拖放到画面上（也可点击选择文件）。'
+    },
+    'p2e-about-step2': {
+        ja: '読み取りが終わると、部材の種類ごとにタブが分かれて一覧表示されます。',
+        en: 'When reading finishes, results are listed in tabs by member type.',
+        zh: '读取完成后，会按构件种类分标签页列出结果。'
+    },
+    'p2e-about-step3': {
+        ja: '内容を確認します。読み取り漏れや誤りがあればその場で直せます。',
+        en: 'Check the contents. Anything missed or misread can be fixed on the spot.',
+        zh: '确认内容。如有遗漏或错误可当场修改。'
+    },
+    'p2e-about-step4': {
+        ja: '「Excel ダウンロード」で .xlsx として保存します。',
+        en: 'Use "Download Excel" to save it as an .xlsx file.',
+        zh: '通过“下载 Excel”保存为 .xlsx 文件。'
+    },
+    'p2e-about-h3-quality': { ja: '読み取り精度を上げるコツ', en: 'Tips for better accuracy', zh: '提高读取精度的技巧' },
+    'p2e-about-quality-p': {
+        ja: 'いちばん効くのは「PDF の作り方」です。CAD や Revit から PDF を書き出すときに、次の設定にすると文字情報がそのまま残り、OCR を通さずに高い精度で読み取れます。',
+        en: 'What matters most is how the PDF is produced. Exporting from CAD or Revit with the settings below keeps the text intact, so it can be read accurately without OCR.',
+        zh: '最关键的是“PDF 的生成方式”。从 CAD 或 Revit 导出 PDF 时采用以下设置，文字信息会被保留，无需 OCR 即可高精度读取。'
+    },
+    'p2e-about-quality1': {
+        ja: '用紙サイズは Screen ではなく、元の図面サイズ（A1・A3 など）にする',
+        en: 'Set the paper size to the original sheet size (A1, A3, …) rather than Screen',
+        zh: '纸张尺寸设为原图纸尺寸（A1、A3 等），而非 Screen'
+    },
+    'p2e-about-quality2': {
+        ja: 'フォントは「デバイスフォントと代替」ではなく「ソフトフォントとしてダウンロード」にする',
+        en: 'Choose "Download as Softfont" instead of "Substitute with Device Fonts"',
+        zh: '字体选择“作为软字体下载”，而非“用设备字体替代”'
+    },
+    'p2e-about-quality3': {
+        ja: 'PDF 設定は「標準」ではなく「高品質印刷」または「プレス品質」にする',
+        en: 'Use "High Quality Print" or "Press Quality" instead of "Standard"',
+        zh: 'PDF 设置选择“高质量打印”或“印刷质量”，而非“标准”'
+    },
+    'p2e-about-quality4': {
+        ja: '文字をアウトライン化（図形化）して書き出さない',
+        en: 'Do not convert text to outlines when exporting',
+        zh: '导出时不要将文字转换为轮廓（图形化）'
+    },
+    'p2e-about-h3-faq': { ja: 'よくある質問', en: 'FAQ', zh: '常见问题' },
+    'p2e-faq-q1': { ja: 'PDF はサーバーに送信されますか？', en: 'Is the PDF sent to a server?', zh: 'PDF 会发送到服务器吗？' },
+    'p2e-faq-a1': {
+        ja: '送信されません。読み取りも Excel の生成もすべてブラウザ内で行われます。画像だけの PDF を開いたときにかぎり、文字認識用のプログラムとデータ（約 40MB）を初回だけ読み込みます（以降はキャッシュされます）。',
+        en: 'No. Reading and Excel generation both happen in your browser. Only when you open an image-only PDF does it load the text-recognition engine and data (about 40 MB) once, after which it is cached.',
+        zh: '不会。读取与 Excel 生成均在浏览器内完成。仅当打开纯图像 PDF 时，才会首次加载文字识别程序与数据（约 40MB），之后会被缓存。'
+    },
+    'p2e-faq-q2': { ja: '読み取れない部材があります。', en: 'Some members are not recognised.', zh: '有些构件无法读取。' },
+    'p2e-faq-a2': {
+        ja: '画像として書き出された PDF や、文字が細い・つぶれている PDF では読み落としが起こります。上記の「読み取り精度を上げるコツ」に沿って PDF を作り直すと大きく改善します。読み落とした行は画面上で追記できます。',
+        en: 'PDFs exported as images, or with thin or blurred text, can be missed. Re-exporting the PDF as described in "Tips for better accuracy" improves this a lot. Missing rows can be added manually on screen.',
+        zh: '以图像形式导出的 PDF，或文字过细、模糊的 PDF 容易漏读。按上文“提高读取精度的技巧”重新生成 PDF 会有明显改善。漏读的行可在画面上手动补充。'
+    },
+    'p2e-faq-q3': { ja: '角形鋼管の板厚が空欄になります。', en: 'The plate thickness of square tubes is blank.', zh: '方钢管的板厚为空白。' },
+    'p2e-faq-a3': {
+        ja: 'H形鋼は寸法が規格で決まっているため自動補完できますが、角形鋼管は同じ外形寸法に複数の板厚があるため、誤った値を入れないようあえて補完していません。板厚は図面を見て入力してください。',
+        en: 'H-sections can be auto-completed because their dimensions are standardised, but square tubes come in several thicknesses for the same outside dimensions, so the tool deliberately leaves it blank rather than guessing. Please enter the thickness from the drawing.',
+        zh: 'H 型钢尺寸有规格可循，因此可自动补全；而方钢管同一外形尺寸对应多种板厚，为避免填入错误值，工具刻意不做补全。请对照图纸输入板厚。'
+    },
+    'p2e-faq-q4': { ja: '出力した Excel はそのまま Revit に取り込めますか？', en: 'Can the Excel file be imported into Revit directly?', zh: '导出的 Excel 能直接导入 Revit 吗？' },
+    'p2e-faq-a4': {
+        ja: 'Excel はファミリタイプ作成用の元データです。取り込みには Revit 側のアドインや Dynamo など、タイプを一括作成する仕組みが別途必要です。',
+        en: 'The Excel file is source data for creating family types. Importing it requires a separate mechanism on the Revit side, such as an add-in or Dynamo, to create the types in bulk.',
+        zh: 'Excel 是用于创建族类型的原始数据。导入时还需要 Revit 端的插件或 Dynamo 等批量创建类型的机制。'
+    },
+    'p2e-about-guide': {
+        ja: '📖 詳しい手順は<a href="../../tips/pdf-to-excel-guide.html">構造図PDFをExcelに変換する方法</a>で解説しています。',
+        en: '📖 See <a href="../../tips/pdf-to-excel-guide.html">How to Convert Structural PDFs to Excel</a> for detailed steps.',
+        zh: '📖 详细步骤请参阅<a href="../../tips/pdf-to-excel-guide.html">将结构图 PDF 转换为 Excel 的方法</a>。'
+    },
+
+    // ── AI議事録 ──
+    'min-about-h2': { ja: 'AI議事録 自動作成ツールについて', en: 'About the AI Meeting Minutes tool', zh: '关于 AI 会议纪要自动生成工具' },
+    'min-about-p': {
+        ja: '打合せの録音や配布資料から、議事録の下書きを自動で作成する無料ツールです。決定事項・課題・次のアクションを整理した形にまとめるので、会議直後の「書き起こしから議事録を作る」作業を短縮できます。ブラウザだけで動き、会員登録は不要です。',
+        en: 'A free tool that drafts meeting minutes automatically from a recording and handouts. It organises decisions, open issues and next actions, cutting the work of turning a transcript into minutes right after a meeting. It runs in the browser and needs no sign-up.',
+        zh: '这是一款免费工具，可根据会议录音和分发资料自动生成会议纪要草稿。它会整理决议事项、课题和后续行动，缩短会后“从语音转写整理成纪要”的工作。仅需浏览器即可运行，无需注册。'
+    },
+    'min-about-h3-can': { ja: 'このツールでできること', en: 'What you can do', zh: '本工具可实现的功能' },
+    'min-about-can1': {
+        ja: '音声ファイルの文字起こしと、議事録としての要約・整理',
+        en: 'Transcribe an audio file and summarise it into structured minutes',
+        zh: '对音频文件进行转写，并整理归纳为会议纪要'
+    },
+    'min-about-can2': {
+        ja: '4つの形式で出力（図解 / マインドマップ / タイムライン / 担当者別）',
+        en: 'Output in four formats: diagram, mind map, timeline and by-owner',
+        zh: '支持四种输出形式（图解／思维导图／时间线／按负责人）'
+    },
+    'min-about-can3': {
+        ja: '日本語・英語・中国語の切り替え（切り替え時に本文も翻訳）',
+        en: 'Switch between Japanese, English and Chinese — the body text is translated too',
+        zh: '可在日语、英语、中文之间切换（切换时正文也会翻译）'
+    },
+    'min-about-can4': {
+        ja: '打合せ内容を1枚にまとめたビジュアル資料の生成（任意）',
+        en: 'Optionally generate a one-page visual summary of the meeting',
+        zh: '可选生成将会议内容汇总于一页的可视化资料'
+    },
+    'min-about-h3-modes': { ja: '2つのモード', en: 'Two modes', zh: '两种模式' },
+    'min-about-mode1': {
+        ja: '<strong>簡易版</strong>: 文字起こしをブラウザ内で行います。音声は外部に送信されませんが、精度は高精度版に劣ります。',
+        en: '<strong>Basic</strong>: transcription runs inside the browser. Audio is never sent anywhere, but accuracy is lower than the high-accuracy mode.',
+        zh: '<strong>简易版</strong>：转写在浏览器内进行。音频不会外发，但精度低于高精度版。'
+    },
+    'min-about-mode2': {
+        ja: '<strong>高精度版</strong>: ご自身で取得した Google Gemini の API キーを使います。精度は上がりますが、音声・資料は Google のサーバーへ送信されます。',
+        en: '<strong>High accuracy</strong>: uses your own Google Gemini API key. Accuracy improves, but audio and documents are sent to Google servers.',
+        zh: '<strong>高精度版</strong>：使用您自行获取的 Google Gemini API 密钥。精度更高，但音频与资料会发送到 Google 服务器。'
+    },
+    'min-about-h3-steps': { ja: '使い方', en: 'How to use', zh: '使用方法' },
+    'min-about-step1': {
+        ja: '打合せの録音ファイル（と、あれば資料）を選びます。',
+        en: 'Choose the meeting recording (and any handouts).',
+        zh: '选择会议录音文件（如有资料也一并选择）。'
+    },
+    'min-about-step2': {
+        ja: '簡易版か高精度版かを選びます。高精度版を使う場合は Gemini の API キーを入力します。',
+        en: 'Pick basic or high-accuracy mode. For high accuracy, enter your Gemini API key.',
+        zh: '选择简易版或高精度版。使用高精度版时需输入 Gemini API 密钥。'
+    },
+    'min-about-step3': {
+        ja: '「議事録を作成」を押すと、文字起こしと要約が行われます。',
+        en: 'Press "Create minutes" to run transcription and summarisation.',
+        zh: '点击“生成会议纪要”，即开始转写与归纳。'
+    },
+    'min-about-step4': {
+        ja: '出力形式を切り替えて見やすい形を選び、内容を確認・修正して保存します。',
+        en: 'Switch output formats to find the clearest one, then review, edit and save.',
+        zh: '切换输出形式选择易读的版本，确认、修改后保存。'
+    },
+    'min-about-h3-faq': { ja: 'よくある質問', en: 'FAQ', zh: '常见问题' },
+    'min-faq-q1': { ja: '録音した音声はどこかに送信されますか？', en: 'Is the recorded audio sent anywhere?', zh: '录制的音频会被发送到某处吗？' },
+    'min-faq-a1': {
+        ja: '簡易版はブラウザ内だけで処理し、送信しません。高精度版は Google の Gemini へ送信されます。取り扱いに注意が必要な会議では簡易版をお使いください。',
+        en: 'The basic mode processes everything in your browser and sends nothing. The high-accuracy mode sends data to Google Gemini. Use the basic mode for sensitive meetings.',
+        zh: '简易版仅在浏览器内处理，不会发送。高精度版会发送至 Google Gemini。涉及敏感内容的会议请使用简易版。'
+    },
+    'min-faq-q2': { ja: 'API キーは保存されますか？', en: 'Is my API key stored?', zh: 'API 密钥会被保存吗？' },
+    'min-faq-a2': {
+        ja: 'キーはお使いのブラウザ内に保持されるだけで、当サイトのサーバーへは送信されません。共用パソコンでお使いの場合は、利用後にブラウザのデータを消去してください。',
+        en: 'The key is kept only in your browser and is never sent to our servers. On a shared computer, clear your browser data after use.',
+        zh: '密钥仅保存在您的浏览器内，不会发送到本站服务器。在公用电脑上使用后，请清除浏览器数据。'
+    },
+    'min-faq-q3': { ja: '料金はかかりますか？', en: 'Does it cost anything?', zh: '需要付费吗？' },
+    'min-faq-a3': {
+        ja: '本ツールは無料です。高精度版で使う Gemini の API キーも無料枠の範囲であれば費用はかかりませんが、上限や条件は Google 側の規定に従います。',
+        en: 'The tool itself is free. The Gemini API key used in high-accuracy mode is also free within its free tier, but the limits and terms are set by Google.',
+        zh: '本工具免费。高精度版所用的 Gemini API 密钥在免费额度内也不产生费用，但上限与条件以 Google 的规定为准。'
+    },
+    'min-faq-q4': { ja: '生成された議事録はそのまま使えますか？', en: 'Can I use the generated minutes as-is?', zh: '生成的会议纪要可以直接使用吗？' },
+    'min-faq-a4': {
+        ja: 'AI の出力には誤りが含まれることがあります。決定事項・数値・担当者名などは必ずご自身で確認してから配布してください。',
+        en: 'AI output can contain mistakes. Always check decisions, figures and names yourself before circulating the minutes.',
+        zh: 'AI 的输出可能包含错误。请务必自行核对决议事项、数值、负责人姓名等内容后再分发。'
+    },
+
+    // ── Tips 一覧ページの導入文 ──
+    'tips-index-intro2': {
+        ja: '建築・構造の実務では、ハッチングパターンを1つ作る、改訂図の差分を確認する、構造図の断面リストを拾い直す——といった「手を動かせば終わるが、地味に時間を取られる作業」が積み重なります。ここでは、そうした作業を短縮するための具体的な手順を、実際の画面に沿って解説しています。',
+        en: 'In day-to-day architectural and structural work, small jobs pile up: making one hatch pattern, checking what changed in a revised drawing, re-reading a section schedule. Each is straightforward but quietly eats time. These guides walk through concrete steps to shorten that work, following the actual screens.',
+        zh: '在建筑与结构的实务中，制作一个填充图案、确认修订图的差异、重新读取结构图的截面表——这类“动手就能完成、却悄悄耗费时间”的工作不断累积。本栏目沿着实际操作画面，讲解缩短这些工作的具体步骤。'
+    },
+    'tips-index-intro3': {
+        ja: '紹介しているツールはいずれもブラウザだけで動き、インストールも会員登録も不要です。ファイルはお使いのパソコンの中だけで処理され、サーバーへ送信されません。',
+        en: 'Every tool introduced here runs in the browser alone — no installation, no sign-up. Files are processed only on your own computer and are never sent to a server.',
+        zh: '这里介绍的工具均仅需浏览器即可运行，无需安装、无需注册。文件仅在您自己的电脑中处理，不会发送到服务器。'
+    }
+};
+
     Object.assign(translations,
         translations.tipsHatch,
         translations.tipsPdf,
         translations.tipsNav,
         translations.toolAbout,
+        translations.toolAboutTools,
         translations.tipsExcel,
         translations.common,
         translations.aiMinutesPage,
