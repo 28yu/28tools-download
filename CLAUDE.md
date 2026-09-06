@@ -280,7 +280,11 @@ PRが作成されると、Netlifyが自動でプレビュー環境を構築し�
 ### Google AdSense（2026/04/10 設置）
 
 - **パブリッシャーID**: `ca-pub-9197151217236924`（`ads.txt` で公開している値）
-- **設置範囲**: 全ページの `<head>` にスクリプト設置済み
+- **設置範囲**: 主要ページの `<head>` に設置済み。
+  ※ `news.html` / `ai-news.html` は**意図的に未設置**（他サイトの RSS 要約を並べたページで
+  `noindex, nofollow` を付けているため、広告在庫にも審査対象にも含めない）。
+  `manual/beam-top-color.html` / `beam-bottom-color.html` は
+  `beam-level-color.html` への meta refresh リダイレクトのみのため不要。
 - **`ads.txt`**: プロジェクトルートに設置済み（2026/07）。内容は1行
   `google.com, pub-9197151217236924, DIRECT, f08c47fec0942fa0`。
   - ※ `ads.txt` は**審査の合否には影響しない**（承認後の広告配信・収益化に必要）。
@@ -1570,3 +1574,82 @@ Run workflow でバックフィル）を追記した。
 |---|---|
 | 累計PV | **2,620** = GA4(〜2026-06-02) 1,096 + 計測 1,524（ボット248件除外） |
 | 今月PV | 118（JST 暦月） |
+
+---
+
+## 2026/09 セッション — AdSense 再申請に向けたサイト点検
+
+### 前提の整理（詳細な審査履歴は Notion「運営メモ」）
+
+- 却下は 2026/04/19・05/06・05/16 の**3回**で、いずれも **2026/06 の低品質コンテンツ対策より前**。
+- AdSense 管理画面の［サイト］ページは「**有用性の低いコンテンツ**」＝ *修正待ち*。
+  **「審査をリクエスト」を押さない限り再審査は始まらない**（放置しても進まない）。
+- Notion に「再審査までの残タスク」として書かれていた
+  **`news.html` / `ai-news.html` の静的書き出しは 2026/08 に実装済み**。
+  あわせて両ページには `noindex, nofollow` が入っている。
+
+### 今回見つかった問題と対応
+
+| # | 問題 | 対応 |
+|---|---|---|
+| A | ニュース2ページで `<p>The post ... first appeared on ...</p>` が**文字として表示**されていた（20記事中10件） | `strip_html_tags` の処理順を修正（下記） |
+| B | 主要ツールページの本文が極端に少ない（PDF比較 783字 / PDF→Excel 522字 / Tips一覧 399字） | 「使い方」「よくある質問」を追記（下記） |
+| C | `hatch.html` の説明が「6種類のパターン」のまま（実際は15種類） | 実態に合わせて修正 |
+| D | `hatch-x` / `hatch-y` / `hatch-grout-x` / `hatch-grout-y` の翻訳が未定義 | ja/en/zh を追加 |
+
+### A. RSS 要約の処理順バグ（重要）
+
+`strip_html_tags()` が **「タグ除去 → エンティティ復号」** の順だった。
+フィードが二重エスケープしている場合（`&lt;p&gt;`）、タグ除去をすり抜けたあとに復号され、
+`<p>` が**本文の文字として残る**。
+
+→ **「復号 → タグ除去」** の順に修正し、共通関数 `news_static.clean_summary()` に集約。
+あわせて RSS の定型フッター（`The post ... first appeared on ...`）も除去する。
+
+- 実装: `.github/scripts/news_static.py` の `clean_summary()`
+- `fetch_rss.py` / `fetch_ai_rss.py` の `strip_html_tags()` はこれを呼ぶだけの薄いラッパに
+- `js/news.js` / `js/ai-news.js` の `stripHtml()` / `stripAiHtml()` も同じ順序に修正
+  （**JS 側を直さないと、静的HTMLを直しても描画時に上書きされて元に戻る**）
+- 既存の `data/news.json` / `data/ai-news.json` の説明文も一括で整形済み
+
+⚠️ **HTML を含みうる外部テキストを扱うときは「復号 → タグ除去」の順**。逆にすると必ずすり抜ける。
+
+### B. ツール解説セクション（`.tool-about`）
+
+`hatch.html` / `pdf_compare.html` にあった `.tool-about` を拡張し、
+`pdf-to-excel/web/` / `ai-minutes/web/` / `tips/index.html` にも追加した。
+構成は **概要 → できること → 使い方（番号付き） → よくある質問（`<dl>`）**。
+
+- CSS は各ページのインライン `<style>` に**二重定義**されていたので `css/style.css` に集約
+  （`.tool-about` と Q&A 用の `dt::before` / `dd::before`）
+- 翻訳は `translations.toolAbout`（既存）と `translations.toolAboutTools`（新規）に
+  ja/en/zh すべて追加。`Object.assign` にも登録済み
+- 文字数: PDF比較 783→1,496 / PDF→Excel 522→1,777 / AI議事録 1,864→2,793 / Tips一覧 399→614
+
+⚠️ **FAQ に書く挙動は必ずコードで確認してから書く**こと。今回も
+`totalPages = Math.min(pdf1.numPages, pdf2.numPages)` を読んで
+「共通するページ数までしか比較しない」と正しく記述した（推測で書くと誤情報になる）。
+
+### 翻訳漏れの検証コマンド
+
+```bash
+python3 - <<'PY'
+import re, glob
+src = open('js/main.js', encoding='utf-8').read()
+defined = set(re.findall(r"'([A-Za-z][A-Za-z0-9-]*)':\s*\{\s*\n?\s*ja:", src))
+for f in sorted(set(glob.glob('*.html'))|set(glob.glob('*/*.html'))|set(glob.glob('*/*/*.html'))):
+    if f.startswith(('analytics/','includes/')): continue
+    keys = re.findall(r'data-lang-key="([^"]+)"', open(f,encoding='utf-8').read())
+    miss = [k for k in dict.fromkeys(keys) if k not in defined]
+    if miss: print(f, len(miss), miss[:8])
+PY
+```
+
+### 再申請の手順（本番反映を確認してから）
+
+1. https://www.google.com/adsense/ →［サイト］→ `28tools.com`
+2. 表示されているポリシー違反の内容を**そのままメモする**（却下メールには理由が書かれない）
+3. 「問題を修正しました」→「**審査をリクエスト**」
+4. 結果は `saboten829@gmail.com` に届く。数日〜2週間程度
+
+⚠️ 却下された場合、メール本文は定型文なので**必ず管理画面［サイト］の文言を確認**すること。

@@ -441,20 +441,12 @@
                 </p>
             </div>
             <!-- ツール解説（初訪問者・検索向け。リピーターは読み飛ばしOK） -->
-            <style>
-            .tool-about{max-width:900px;margin:2.5rem auto 0;padding:1.6rem 16px 0;border-top:1px solid rgba(0,0,0,0.08);line-height:1.85;opacity:0.92;}
-            .tool-about h2{font-size:1.3rem;margin:0 0 .8rem;}
-            .tool-about h3{font-size:1.05rem;margin:1.4rem 0 .5rem;}
-            .tool-about ul{padding-left:1.3em;margin:.4rem 0;}
-            .tool-about li{margin:.3rem 0;}
-            .tool-about p{margin:.6rem 0;}
-            </style>
             <section class="tool-about">
                 <h2 data-lang-key="hatch-about-h2">ハッチングパターン作成ツールについて</h2>
                 <p data-lang-key="hatch-about-p">「ハッチングパターン作成ツール」は、Revit・AutoCAD で使える塗りつぶしパターン（.patファイル）をブラウザだけで作成できる無料ツールです。ファイルのアップロードやサーバー送信は一切なく、すべてブラウザ内で処理が完結します。</p>
                 <h3 data-lang-key="hatch-about-h3-can">このツールでできること</h3>
                 <ul>
-                    <li data-lang-key="hatch-about-can1">斜線・網掛け・ドット・芋目地・馬目地・RC（コンクリート）の6種類のパターンに対応</li>
+                    <li data-lang-key="hatch-about-can1">斜線・網掛け・ドット・芋目地・馬目地・平行線・垂直線・縞鋼板・砂利・砂・地盤・コンクリートなど15種類のパターンに対応</li>
                     <li data-lang-key="hatch-about-can2">角度・間隔・目地サイズなどを指定し、プレビューを見ながら調整</li>
                     <li data-lang-key="hatch-about-can3">Revit 用（モデル／製図）と AutoCAD 用の形式で出力</li>
                     <li data-lang-key="hatch-about-can4">日本語のパターン名に対応（Shift-JIS で出力するため文字化けしません）</li>
@@ -465,6 +457,25 @@
                     <li data-lang-key="hatch-about-use2">既製のパターンに無い目地割り（タイル・レンガ）を作図したいとき</li>
                     <li data-lang-key="hatch-about-use3">RC 断面や地盤などの表現パターンをすばやく用意したいとき</li>
                 </ul>
+                <h3 data-lang-key="hatch-about-h3-steps">使い方</h3>
+                <ol>
+                    <li data-lang-key="hatch-about-step1">「パターン種類」から作りたいパターンを選びます。</li>
+                    <li data-lang-key="hatch-about-step2">角度・間隔・目地サイズなどを入力します。右のプレビューが即座に更新されるので、仕上がりを見ながら調整できます。</li>
+                    <li data-lang-key="hatch-about-step3">「出力形式」を選びます。Revit の場合はさらに「モデル」（実寸で表示）か「製図」（図面スケールに追従）かを選びます。</li>
+                    <li data-lang-key="hatch-about-step4">ダウンロードボタンを押すと .pat ファイルが保存されます。パターン名は設定値から自動で付きます（例: 芋目地_100x100x5x5）。</li>
+                    <li data-lang-key="hatch-about-step5">Revit では［管理］タブ →［追加設定］→［塗りつぶしパターン］→［新規作成］→［カスタム］→［参照］で読み込みます。</li>
+                </ol>
+                <h3 data-lang-key="hatch-about-h3-faq">よくある質問</h3>
+                <dl>
+                    <dt data-lang-key="hatch-faq-q1">「モデル」と「製図」はどう違いますか？</dt>
+                    <dd data-lang-key="hatch-faq-a1">モデルパターンは実寸で表示されるため、図面の縮尺を変えても現実の寸法どおりの間隔で表示されます。製図パターンは紙の上での見た目が一定になり、縮尺に追従します。タイルや目地など「実際の寸法」を表したいときはモデル、ハッチング表現として使いたいときは製図を選びます。</dd>
+                    <dt data-lang-key="hatch-faq-q2">パターン名に日本語は使えますか？</dt>
+                    <dd data-lang-key="hatch-faq-a2">使えます。Revit・AutoCAD は Windows 環境で Shift-JIS を前提としているため、本ツールは .pat ファイルを Shift-JIS で書き出します。日本語のパターン名でも文字化けしません。</dd>
+                    <dt data-lang-key="hatch-faq-q3">AutoCAD でも使えますか？</dt>
+                    <dd data-lang-key="hatch-faq-a3">使えます。「出力形式」で AutoCAD を選ぶと標準の .pat 形式で書き出します。AutoCAD の [ハッチング] コマンド →［パターン］→［ユーザー定義］／カスタムパターンから読み込んでください。</dd>
+                    <dt data-lang-key="hatch-faq-q4">ファイルはサーバーに送信されますか？</dt>
+                    <dd data-lang-key="hatch-faq-a4">送信されません。パターンの生成もファイルの書き出しもすべてブラウザ内で行われます。会員登録も不要です。</dd>
+                </dl>
                 <p data-lang-key="hatch-about-guide">📖 詳しい作り方は<a href="tips/revit-hatch-pattern.html">Revit・AutoCADのハッチングパターン(.pat)の作り方</a>で解説しています。</p>
             </section>
         </main>

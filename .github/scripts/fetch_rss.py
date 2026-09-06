@@ -10,7 +10,7 @@ from datetime import datetime
 import sys
 import re
 
-from news_static import inject_static_news
+from news_static import inject_static_news, clean_summary
 
 # RSSフィードソース
 RSS_FEEDS = [
@@ -77,25 +77,8 @@ RSS_FEEDS = [
 ]
 
 def strip_html_tags(html):
-    """HTMLタグを削除してプレーンテキストを返す"""
-    if not html:
-        return ''
-
-    # HTMLタグを削除
-    text = re.sub(r'<[^>]*>', '', html)
-
-    # HTMLエンティティをデコード
-    text = text.replace('&nbsp;', ' ')
-    text = text.replace('&amp;', '&')
-    text = text.replace('&lt;', '<')
-    text = text.replace('&gt;', '>')
-    text = text.replace('&quot;', '"')
-    text = text.replace('&#8230;', '...')
-
-    # 余分な空白を削除
-    text = re.sub(r'\s+', ' ', text).strip()
-
-    return text
+    """HTMLタグを削除してプレーンテキストを返す（実体は news_static.clean_summary）"""
+    return clean_summary(html)
 
 def detect_language(text):
     """テキストから言語を検出（簡易版）"""
@@ -125,7 +108,7 @@ def fetch_feed(feed_config):
             raw_description = entry.get('summary', entry.get('description', ''))
 
             # HTMLタグを削除してプレーンテキストのみ抽出
-            description = strip_html_tags(raw_description)[:200] + '...'
+            description = clean_summary(raw_description, limit=200)
 
             # 言語を検出（フィード設定に基づくか、タイトルから自動検出）
             language = feed_config.get('language', detect_language(title))

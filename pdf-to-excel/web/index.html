@@ -386,6 +386,49 @@
     <button class="btn-primary" id="download-btn">📥 Excel ダウンロード (.xlsx)</button>
     <span class="meta-summary" id="result-summary"></span>
   </div>
+  <!-- ツール解説（初訪問者・検索向け） -->
+  <section class="tool-about">
+    <h2 data-lang-key="p2e-about-h2">PDF → Excel 構造図抽出ツールについて</h2>
+    <p data-lang-key="p2e-about-p">構造図の梁リスト・柱リストの PDF から、符号・断面寸法・鋼材種別などを読み取り、Excel（.xlsx）に書き出す無料ツールです。Revit のファミリタイプを一括作成するための元データづくりを想定しています。PDF はサーバーへ送信されず、読み取りから Excel の生成まですべてブラウザ内で完結します。</p>
+
+    <h3 data-lang-key="p2e-about-h3-can">このツールでできること</h3>
+    <ul>
+      <li data-lang-key="p2e-about-can1">基礎大梁・大梁・小梁・柱のリストから符号と断面情報を自動で抽出</li>
+      <li data-lang-key="p2e-about-can2">文字情報を持つ PDF はそのまま読み取り、画像だけの PDF は OCR で読み取り</li>
+      <li data-lang-key="p2e-about-can3">H形鋼は JIS G 3192 の規格表と照合し、読み取れなかった寸法を補完</li>
+      <li data-lang-key="p2e-about-can4">抽出結果を画面で確認・修正してから Excel としてダウンロード</li>
+    </ul>
+
+    <h3 data-lang-key="p2e-about-h3-steps">使い方</h3>
+    <ol>
+      <li data-lang-key="p2e-about-step1">構造図の PDF を画面にドロップします（クリックしてファイル選択もできます）。</li>
+      <li data-lang-key="p2e-about-step2">読み取りが終わると、部材の種類ごとにタブが分かれて一覧表示されます。</li>
+      <li data-lang-key="p2e-about-step3">内容を確認します。読み取り漏れや誤りがあればその場で直せます。</li>
+      <li data-lang-key="p2e-about-step4">「Excel ダウンロード」で .xlsx として保存します。</li>
+    </ol>
+
+    <h3 data-lang-key="p2e-about-h3-quality">読み取り精度を上げるコツ</h3>
+    <p data-lang-key="p2e-about-quality-p">いちばん効くのは「PDF の作り方」です。CAD や Revit から PDF を書き出すときに、次の設定にすると文字情報がそのまま残り、OCR を通さずに高い精度で読み取れます。</p>
+    <ul>
+      <li data-lang-key="p2e-about-quality1">用紙サイズは Screen ではなく、元の図面サイズ（A1・A3 など）にする</li>
+      <li data-lang-key="p2e-about-quality2">フォントは「デバイスフォントと代替」ではなく「ソフトフォントとしてダウンロード」にする</li>
+      <li data-lang-key="p2e-about-quality3">PDF 設定は「標準」ではなく「高品質印刷」または「プレス品質」にする</li>
+      <li data-lang-key="p2e-about-quality4">文字をアウトライン化（図形化）して書き出さない</li>
+    </ul>
+
+    <h3 data-lang-key="p2e-about-h3-faq">よくある質問</h3>
+    <dl>
+      <dt data-lang-key="p2e-faq-q1">PDF はサーバーに送信されますか？</dt>
+      <dd data-lang-key="p2e-faq-a1">送信されません。読み取りも Excel の生成もすべてブラウザ内で行われます。画像だけの PDF を開いたときにかぎり、文字認識用のプログラムとデータ（約 40MB）を初回だけ読み込みます（以降はキャッシュされます）。</dd>
+      <dt data-lang-key="p2e-faq-q2">読み取れない部材があります。</dt>
+      <dd data-lang-key="p2e-faq-a2">画像として書き出された PDF や、文字が細い・つぶれている PDF では読み落としが起こります。上記の「読み取り精度を上げるコツ」に沿って PDF を作り直すと大きく改善します。読み落とした行は画面上で追記できます。</dd>
+      <dt data-lang-key="p2e-faq-q3">角形鋼管の板厚が空欄になります。</dt>
+      <dd data-lang-key="p2e-faq-a3">H形鋼は寸法が規格で決まっているため自動補完できますが、角形鋼管は同じ外形寸法に複数の板厚があるため、誤った値を入れないようあえて補完していません。板厚は図面を見て入力してください。</dd>
+      <dt data-lang-key="p2e-faq-q4">出力した Excel はそのまま Revit に取り込めますか？</dt>
+      <dd data-lang-key="p2e-faq-a4">Excel はファミリタイプ作成用の元データです。取り込みには Revit 側のアドインや Dynamo など、タイプを一括作成する仕組みが別途必要です。</dd>
+    </dl>
+    <p data-lang-key="p2e-about-guide">📖 詳しい手順は<a href="../../tips/pdf-to-excel-guide.html">構造図PDFをExcelに変換する方法</a>で解説しています。</p>
+  </section>
   </main>
 </div><!-- /.container -->
 

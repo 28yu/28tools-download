@@ -16,7 +16,7 @@ import urllib.error
 import urllib.parse
 import time
 
-from news_static import inject_static_news
+from news_static import inject_static_news, clean_summary
 
 # RSSフィードソース
 RSS_FEEDS = [
@@ -94,22 +94,8 @@ RSS_FEEDS = [
 USER_AGENT = 'Mozilla/5.0 (compatible; 28ToolsBot/1.0)'
 
 def strip_html_tags(html):
-    """HTMLタグを削除してプレーンテキストを返す"""
-    if not html:
-        return ''
-
-    text = re.sub(r'<[^>]*>', '', html)
-
-    text = text.replace('&nbsp;', ' ')
-    text = text.replace('&amp;', '&')
-    text = text.replace('&lt;', '<')
-    text = text.replace('&gt;', '>')
-    text = text.replace('&quot;', '"')
-    text = text.replace('&#8230;', '...')
-
-    text = re.sub(r'\s+', ' ', text).strip()
-
-    return text
+    """HTMLタグを削除してプレーンテキストを返す（実体は news_static.clean_summary）"""
+    return clean_summary(html)
 
 def detect_language(text):
     """テキストから言語を検出（簡易版）"""
@@ -241,7 +227,7 @@ def fetch_feed(feed_config):
             title = entry.get('title', 'No Title')
             raw_description = entry.get('summary', entry.get('description', ''))
 
-            description = strip_html_tags(raw_description)[:200] + '...'
+            description = clean_summary(raw_description, limit=200)
 
             language = feed_config.get('language', detect_language(title))
 

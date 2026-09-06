@@ -45,6 +45,44 @@ def _esc(text):
     return html_lib.escape(text or '', quote=True)
 
 
+# RSS 本文に紛れ込むフィード側の定型フッター（WordPress の Yoast/RSS footer 等）
+# ※ 既存データは 200 字カット後の「...」が末尾に付いているので、
+#    定型文の後ろに省略記号があってもマッチするようにしておく。
+_ELLIPSIS = r'(?:\s*(?:\.{3}|…))?\s*$'
+_FEED_BOILERPLATE = re.compile(
+    r'\s*The post\s+.*?\s+(?:first appeared on|appeared first on)\s+[^.]*\.?' + _ELLIPSIS
+    + r'|\s*記事\s*「.*?」\s*は.*?最初に登場しました。?' + _ELLIPSIS,
+    re.S,
+)
+
+
+def clean_summary(raw, limit=None):
+    """RSS の summary/description をプレーンテキストにする。
+
+    ⚠️ 順序が重要。以前は「タグ除去 → エンティティ復号」の順だったため、
+    フィード側が二重エスケープしている場合（`&lt;p&gt;`）にタグ除去をすり抜け、
+    復号後に `<p>` という*文字*として本文に残り、ページ上に
+    「<p>The post ... first appeared on ...</p>」がそのまま表示されていた。
+    復号を先に、タグ除去を後に行う。
+    """
+    if not raw:
+        return ''
+    text = str(raw)
+    # 二重エスケープ (&amp;lt;p&amp;gt;) にも耐えるよう、変化しなくなるまで復号する
+    for _ in range(3):
+        decoded = html_lib.unescape(text)
+        if decoded == text:
+            break
+        text = decoded
+    text = re.sub(r'<[^>]*>', ' ', text)          # タグ除去（復号後なので取りこぼさない）
+    text = text.replace('\u00a0', ' ')
+    text = re.sub(r'\s+', ' ', text).strip()
+    text = _FEED_BOILERPLATE.sub('', text).strip()
+    if limit and len(text) > limit:
+        text = text[:limit].rstrip() + '...'
+    return text
+
+
 def _fmt_published(date_string):
     """RSS の publishedDate (RFC822) を YYYY/MM/DD へ"""
     if not date_string:
@@ -93,7 +131,8 @@ def _card_html(article, category_labels, ai=False):
         thumb_inner = '<div class="no-image"></div>'
         thumb_class = 'no-image'
 
-    description = _esc((article.get('description') or '').strip())
+    # 既存 JSON に壊れた説明文が残っていても、焼き込み時にもう一度きれいにする
+    description = _esc(clean_summary(article.get('description')))
     link = _esc(article.get('link', ''))
     date = _fmt_published(article.get('publishedDate'))
     source = _esc(article.get('source', ''))
