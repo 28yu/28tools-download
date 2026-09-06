@@ -225,7 +225,9 @@
 <!-- ===== ページビュー タブ ===== -->
 <div id="tab-pv" class="tab-pane">
   <div id="ga4-notice" style="display:none;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 16px;margin-bottom:16px;font-size:12px;color:var(--muted)">
-    📜 GA4 歴史データを含む <span id="ga4-count" style="color:var(--accent);font-weight:600"></span> PV
+    📜 自前計測を始める前の期間は GA4 の記録
+    <span id="ga4-count" style="color:var(--accent);font-weight:600"></span> PV を使用
+    （<span id="ga4-cutover"></span> 以降は自前計測。同じアクセスを二重に数えないよう期間で切り分けています）
     — <a href="ga4-import.html" style="color:var(--accent)">連携設定</a>
   </div>
   <div class="kpi-row">
@@ -459,6 +461,11 @@ const PAGE_LABELS = {
 };
 
 let allDL = [], allPV = [], allGA4 = [];
+// allPV から派生する集計用データ（init() で組み立てる）
+//  allPVReal    : ツール操作イベント(/_event/*)を除いた「本当のページビュー」だけの配列
+//  ga4Legacy    : 自前計測が始まる前の期間の GA4 行だけ（重複期間を二重に数えないため）
+//  measStartDate: 自前計測(Supabase)の最初の日 (JST, 'YYYY-MM-DD')
+let allPVReal = [], ga4Legacy = [], measStartDate = '';
 let ghStats = null;
 let charts = {};
 let activeDLPeriod = 30, activePVPeriod = 30, activeToolPeriod = 30;
@@ -514,17 +521,35 @@ async function fetchGitHubDL() {
 }
 
 // ---- Supabase fetch ----
+// ⚠️ Supabase(PostgREST) は プロジェクト設定の「Max rows」（既定 1000）で
+//    1リクエストの返却行数を強制的に打ち切る。`limit=10000` を付けても 1000 件で
+//    頭打ちになり、テーブルが 1000 行を超えた時点で「累計PVが増えない」状態になる
+//    （新しい行が入るたびに古い行が押し出され、件数が 1000 のまま固定されるため）。
+//    → 1000 件ずつオフセットを進めて全件取得する。
+const SUPA_PAGE_SIZE = 1000;
+const SUPA_MAX_ROWS  = 500000;  // 暴走防止の安全弁
 async function supaFetch(table, select, orderBy = 'ts.desc') {
-  const res = await fetch(
-    `${SUPABASE_URL}/rest/v1/${table}?select=${select}&order=${orderBy}&limit=10000`,
-    { headers: { apikey: SUPABASE_ANON, Authorization: 'Bearer ' + SUPABASE_ANON } }
-  );
-  if (!res.ok) {
-    let detail = '';
-    try { const j = await res.json(); detail = j.message || j.hint || JSON.stringify(j); } catch(_) {}
-    throw new Error('HTTP ' + res.status + (detail ? ': ' + detail : ''));
+  // 並び順の値が同じ行があるとページ間で取りこぼし/重複が起きるため、id を第2キーにする
+  const order = orderBy + ',id.desc';
+  const all = [];
+  while (all.length < SUPA_MAX_ROWS) {
+    const offset = all.length;
+    const res = await fetch(
+      `${SUPABASE_URL}/rest/v1/${table}?select=${select}&order=${order}&limit=${SUPA_PAGE_SIZE}&offset=${offset}`,
+      { headers: { apikey: SUPABASE_ANON, Authorization: 'Bearer ' + SUPABASE_ANON } }
+    );
+    if (!res.ok) {
+      let detail = '';
+      try { const j = await res.json(); detail = j.message || j.hint || JSON.stringify(j); } catch(_) {}
+      throw new Error('HTTP ' + res.status + (detail ? ': ' + detail : ''));
+    }
+    const rows = await res.json();
+    // サーバ側の Max rows が SUPA_PAGE_SIZE より小さくても正しく進むよう、
+    // 「次の offset = 取得済み件数」で回す。0 件が返ったら終わり。
+    if (!rows.length) break;
+    all.push(...rows);
   }
-  return res.json();
+  return all;
 }
 
 // ---- Helpers ----
@@ -706,25 +731,34 @@ function renderDL(data) {
 // ---- Pageview tab ----
 function renderPV(data) {
   // GA4 歴史データを合成イベントに展開してマージ
-  const ga4Events = ga4ToEvents(allGA4);
+  // ※ 自前計測と期間が重なる分（ga4Legacy で除外済み）は足さない＝二重計上の防止
+  const ga4Events = ga4ToEvents(ga4Legacy);
   const combined = [...ga4Events, ...data];
 
-  // GA4 データの実際の PV 合計（重み付き）
-  const ga4TotalPV = allGA4.reduce((s, r) => s + (r.views || 0), 0);
+  // GA4 データの実際の PV 合計（自前計測の開始日より前の分だけ）
+  const ga4TotalPV = ga4Legacy.reduce((s, r) => s + (r.views || 0), 0);
   const ga4Notice = document.getElementById('ga4-notice');
   if (ga4TotalPV > 0) {
     ga4Notice.style.display = 'block';
     document.getElementById('ga4-count').textContent = ga4TotalPV.toLocaleString();
+    const cutEl = document.getElementById('ga4-cutover');
+    if (cutEl) cutEl.textContent = measStartDate || '-';
   }
 
   const total = combined.length;
-  const now = new Date();
-  // 累計PV: GA4実PV数 + Supabase実件数
+  // 累計PV: 「計測開始より前の GA4」＋「自前計測の実PV件数」
+  //   data は /_event/* を除いた本当のページビューのみ（init で分離済み）
   document.getElementById('kpi-pv-total').textContent = (ga4TotalPV + data.length).toLocaleString();
-  document.getElementById('kpi-pv-total-sub').textContent = ga4TotalPV > 0 ? `GA4(${ga4TotalPV.toLocaleString()}) + 計測(${data.length})` : '計測分のみ';
-  document.getElementById('kpi-pv-week').textContent  = filterByDays(data, 7).length;
-  document.getElementById('kpi-pv-month').textContent = filterByDays(data, 30).length;
-  document.getElementById('kpi-pv-month-label').textContent = now.getFullYear() + '年' + (now.getMonth()+1) + '月';
+  document.getElementById('kpi-pv-total-sub').textContent = ga4TotalPV > 0
+    ? `GA4(〜${measStartDate}) ${ga4TotalPV.toLocaleString()} + 計測 ${data.length.toLocaleString()}`
+    : '計測分のみ';
+  document.getElementById('kpi-pv-week').textContent  = filterByDays(data, 7).length.toLocaleString();
+  // 今月PV: JST の暦月（1日〜今日）で数える ※以前は「直近30日」を今月と表示していた
+  const monthPrefix = todayJST().slice(0, 7);
+  document.getElementById('kpi-pv-month').textContent =
+    data.filter(r => jstDateStr(r.ts).startsWith(monthPrefix)).length.toLocaleString();
+  document.getElementById('kpi-pv-month-label').textContent =
+    monthPrefix.slice(0,4) + '年' + Number(monthPrefix.slice(5,7)) + '月';
   document.getElementById('kpi-pv-countries').textContent = new Set(combined.map(r=>toCountryCode(r.country)).filter(Boolean)).size;
 
   // GA4 集計指標：直帰率・平均滞在時間
@@ -742,14 +776,14 @@ function renderPV(data) {
   }
 
   // GA4 歴史データのトレンドも含めて表示
-  renderPVTrendChart(combined, activePVPeriod);
+  renderPVTrendChart(activePVPeriod);
 
   // Page ranking（GA4実データの views を合算）
   const pageRaw = {};
   // Supabase の実データ
   data.forEach(r => { const k = r.page || '(not set)'; pageRaw[k] = (pageRaw[k]||0)+1; });
-  // GA4 歴史データ（実PV数で合算）
-  allGA4.forEach(r => { const k = r.page || '(not set)'; pageRaw[k] = (pageRaw[k]||0)+(r.views||0); });
+  // GA4 歴史データ（実PV数で合算・重複しない期間のみ）
+  ga4Legacy.forEach(r => { const k = r.page || '(not set)'; pageRaw[k] = (pageRaw[k]||0)+(r.views||0); });
   const pageLabeled = {};
   for (const [k, v] of Object.entries(pageRaw)) {
     pageLabeled[PAGE_LABELS[k] || k] = (pageLabeled[PAGE_LABELS[k] || k] || 0) + v;
@@ -759,7 +793,7 @@ function renderPV(data) {
 
   // X（Twitter）経由の訪問 KPI：Supabase referrer + GA4 source(t.co/x.com/twitter/utm_source=x) を合算
   const xSupa = data.filter(r => isXSource(r.referrer)).length;
-  const xGA4  = allGA4.reduce((s, r) => s + (isXSource(r.source) ? (r.views || 0) : 0), 0);
+  const xGA4  = ga4Legacy.reduce((s, r) => s + (isXSource(r.source) ? (r.views || 0) : 0), 0);
   const xEl = document.getElementById('kpi-pv-x');
   if (xEl) xEl.textContent = (xSupa + xGA4).toLocaleString();
 
@@ -824,7 +858,7 @@ function renderPV(data) {
   // Country table（GA4実データ + Supabase）— 国コードに正規化して JP/Japan の重複をまとめる
   const countryRaw = {};
   data.forEach(r => { const c = toCountryCode(r.country); if (c) countryRaw[c]=(countryRaw[c]||0)+1; });
-  allGA4.forEach(r => { const c = toCountryCode(r.country); if (c) countryRaw[c]=(countryRaw[c]||0)+(r.views||0); });
+  ga4Legacy.forEach(r => { const c = toCountryCode(r.country); if (c) countryRaw[c]=(countryRaw[c]||0)+(r.views||0); });
   renderCountryTableRaw('pv-country-table', countryRaw);
 
   const rawBody = document.getElementById('pv-raw-body');
@@ -844,12 +878,12 @@ function renderPV(data) {
   });
 }
 
-function renderPVTrendChart(combined, days) {
+function renderPVTrendChart(days) {
   if (days === 1) {
     // 1日選択時: 指定日（既定=当日）の 0〜23時(JST)で集計 — Supabaseデータのみ（GA4は日次のみ）
     const sel = pvSelectedDate || todayJST();
     const byHour = Array(24).fill(0);
-    allPV.forEach(r => {
+    allPVReal.forEach(r => {
       if (jstDateStr(r.ts) !== sel) return;
       byHour[jstHour(r.ts)]++;
     });
@@ -866,15 +900,18 @@ function renderPVTrendChart(combined, days) {
   }
 
   // GA4 歴史（実PV重み）+ Supabase（1イベント=1PV）を日別に集計
+  // ・日付は JST で切る（`ts.slice(0,10)` は UTC 日付なので JST 0〜9時が前日に混ざる）
+  // ・ツール操作イベント(/_event/*)は除外
+  // ・GA4 は自前計測の開始日より前の分だけ（重複期間の二重計上を防ぐ）
   const byDay = {};
-  // Supabase
-  allPV.forEach(r => {
+  // Supabase（自前計測）
+  allPVReal.forEach(r => {
     if (days && Date.now() - new Date(r.ts).getTime() > days * 86400000) return;
-    const d = r.ts.slice(0,10);
+    const d = jstDateStr(r.ts);
     byDay[d] = (byDay[d]||0) + 1;
   });
   // GA4（実views数を使う）
-  allGA4.forEach(r => {
+  ga4Legacy.forEach(r => {
     if (days && Date.now() - new Date(r.date).getTime() > days * 86400000) return;
     byDay[r.date] = (byDay[r.date]||0) + (r.views||0);
   });
@@ -960,14 +997,14 @@ document.querySelectorAll('#pv-period-btns .period-btn').forEach(btn => {
     const nav = document.getElementById('pv-date-nav'), di = document.getElementById('pv-date');
     if (activePVPeriod === 1) { nav.classList.remove('hidden'); pvSelectedDate = di.value || todayJST(); di.value = pvSelectedDate; }
     else nav.classList.add('hidden');
-    renderPVTrendChart([...ga4ToEvents(allGA4), ...allPV], activePVPeriod);
+    renderPVTrendChart(activePVPeriod);
   });
 });
 document.getElementById('pv-date').addEventListener('change', e => {
   pvSelectedDate = e.target.value || todayJST();
   activePVPeriod = 1;
   document.querySelectorAll('#pv-period-btns .period-btn').forEach(b => b.classList.toggle('active', b.dataset.period === '1'));
-  renderPVTrendChart([...ga4ToEvents(allGA4), ...allPV], 1);
+  renderPVTrendChart(1);
 });
 
 // ツール利用推移の期間切替（PV推移と同仕様）
@@ -1146,7 +1183,7 @@ function switchTab(tab) {
   document.getElementById('tab-dl').classList.toggle('active', tab==='dl');
   document.getElementById('tab-pv').classList.toggle('active', tab==='pv');
   document.getElementById('tab-tool').classList.toggle('active', tab==='tool');
-  if (tab==='pv' && (allPV.length || allGA4.length)) renderPV(allPV);
+  if (tab==='pv' && (allPVReal.length || allGA4.length)) renderPV(allPVReal);
   if (tab==='tool' && allPV.length) { renderTool(allPV); toolRendered=true; }
 }
 
@@ -1223,6 +1260,18 @@ async function init() {
       ]),
       fetchGitHubDL(),
     ]);
+    // ── 集計用の派生データを作る（PV の数え方の要）────────────────
+    // (1) ツール操作イベント（page='/_event/*'）は「ページを見た」記録ではないので
+    //     ページビューの集計からは外す。ツールタブ側だけで使う。
+    allPVReal = allPV.filter(r => !String(r.page || '').startsWith('/_event/'));
+    // (2) GA4 と自前計測は「同じアクセス」を両方が記録している。単純に足すと
+    //     重なっている期間が丸ごと二重計上になる。自前計測が始まった日を境に、
+    //     それより前は GA4、それ以降は自前計測、と期間で切り分けて合算する。
+    measStartDate = allPVReal.length
+      ? allPVReal.reduce((min, r) => { const d = jstDateStr(r.ts); return d < min ? d : min; }, '9999-12-31')
+      : '';
+    ga4Legacy = measStartDate ? allGA4.filter(r => r.date < measStartDate) : allGA4;
+
     loading.style.display = 'none';
     document.getElementById('tab-dl').classList.add('active');
     document.getElementById('last-updated').textContent = '最終更新: ' + new Date().toLocaleTimeString('ja-JP') + ' ';
