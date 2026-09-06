@@ -98,15 +98,32 @@
 <!-- ========== 自動同期タブ ========== -->
 <div id="tab-auto" class="tab-pane active">
 
+  <div class="section" style="border:1px solid #f59e0b;background:rgba(245,158,11,.08)">
+    <div class="section-title" style="color:#f59e0b">⚠️ このページの Apps Script 手順は「旧方式」です</div>
+    <p style="font-size:13px;line-height:1.8">
+      現在の GA4 → Supabase 同期は <strong>GitHub Actions</strong> で動いています
+      （<code>.github/workflows/ga4-sync.yml</code> ＋ <code>scripts/ga4-sync/sync.mjs</code>、毎日 JST 02:00）。<br>
+      <strong>以下の Apps Script の手順はもう実行しないでください。</strong>
+      スプレッドシート側の設定を上書きすると、過去に同期が止まる事故が起きています。
+    </p>
+    <p style="font-size:13px;line-height:1.8;margin-top:10px">
+      いま必要な設定は、リポジトリの <strong>Settings → Secrets and variables → Actions</strong> に登録する次の3つだけです：
+      <code>GA4_PROPERTY_ID</code> / <code>GA4_SA_KEY</code> / <code>SUPABASE_SERVICE_KEY</code><br>
+      過去分の取り込み（バックフィル）は
+      <strong>Actions →「GA4 → Supabase 同期」→ Run workflow</strong> で <code>start_date</code> を指定して実行します。<br>
+      以下の内容は、SQL のテーブル定義など参考用として残しています。
+    </p>
+  </div>
+
   <div class="section">
-    <div class="section-title">仕組み</div>
+    <div class="section-title">仕組み（現行）</div>
     <p style="color:var(--muted);font-size:13px;line-height:1.7">
-      Google Apps Script が毎日 GA4 Data API からデータを取得し、Supabase の <code>ga4_history</code> テーブルに自動書き込みします。<br>
+      GitHub Actions が毎日 GA4 Data API からデータを取得し、Supabase の <code>ga4_history</code> テーブルに自動書き込みします。<br>
       ダッシュボードは Supabase から読み取るだけなので、設定後は何もしなくても毎日更新されます。
     </p>
     <div style="display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;font-size:13px;color:var(--muted)">
       <span>GA4</span>
-      <span style="color:var(--accent)">→ Apps Script（毎日自動）→</span>
+      <span style="color:var(--accent)">→ GitHub Actions（毎日 JST 02:00）→</span>
       <span>Supabase</span>
       <span style="color:var(--accent)">→</span>
       <span>ダッシュボード</span>

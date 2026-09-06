@@ -1488,3 +1488,85 @@ PV 集計は `allPVReal`、ツールタブは従来どおり `allPV` を使う�
 | 今月PV | 直近30日の件数（ラベルは「2026年9月」） | JST の**暦月**で 131 |
 
 「今月PV」はラベルが年月なのに中身が直近30日だったため、**JST の暦月**に修正した。
+
+## 2026/09 セッション（続き）— ダッシュボード全体の点検で見つかった誤り
+
+累計PVの修正後、`analytics/` 全体を点検して以下も修正した。
+
+### ⑤ 国旗が表示されない（Windows）
+
+`🇯🇵` のような**絵文字の国旗は Windows の標準フォント（Segoe UI Emoji）に字形が無い**。
+ブラウザは代わりに「地域指示子」2文字（＝ JP という文字）を描画するため、**旗が出ない**。
+Mac/iPhone では出るので気付きにくい。
+
+**対策**: `flagHtml()` で **画像**（`https://flagcdn.com/w40/<code>.png`）を表示し、
+画像が読めなかったときだけ `onerror` で絵文字にフォールバックする。
+CSS クラスは `.flag-img` / `.flag-emoji`。
+
+### ⑥ 国名の表記ゆれで同じ国が2行に分裂
+
+GA4 は国名（`Japan`）、自前計測は国コード（`JP`）を返すため `COUNTRY_NAME_TO_CODE` で
+変換していたが、**静的な対応表なので取りこぼしが出る**。実際 `Türkiye`（GA4 は Turkey から改称）
+`Seychelles` `Comoros` が表に無く、`TR` と別行になっていた。
+
+**対策**:
+- `Intl.DisplayNames(['en'])` で **全 ISO コード(AA〜ZZ)の英語名→コード逆引き表を実行時に生成**（`NAME_TO_CODE_AUTO`）。表のメンテが不要になる。
+- 表記ゆれ用に `COUNTRY_NAME_ALIASES`（`Türkiye`/`Turkey` → `TR` など）を併用。
+- 日本語の国名も `Intl.DisplayNames(['ja'])` から取得（`countryLabel()`）。以前は 28 か国しか
+  日本語名が無く、それ以外は `IR` のような生コード表示だった。
+- GA4 の `(not set)` は国として1行を占めていたので `NON_COUNTRY` で除外。
+  Cloudflare の `T1`（Tor 経由）は `SPECIAL_COUNTRY_LABELS` で表示名を付与。
+
+### ⑦ ページランキングに生パスが並んでいた（`PAGE_LABELS` の抜け）
+
+`/pdf_compare.html`（PV上位4位）・`/ai-minutes/web/`・`/pdf-to-excel/web/`・`/tips/*`・
+`/manual/beam-level-color.html` が `PAGE_LABELS` 未登録で、パスのまま表示されていた。
+さらに `/ai-minutes/web` と `/ai-minutes/web/`、`/pdf-to-excel/web/index.html` のような
+**表記違いが別行に分裂**していた。
+
+**対策**: ラベルを追加し、`normalizePagePath()` で
+「クエリ/ハッシュ除去 → `/index.html` を `/` に → 拡張子なしは末尾スラッシュ付きに」寄せる。
+`/hatch` `/addins` `/pdf_compare` は `PAGE_PATH_ALIASES` で `.html` 版に統合。
+
+⚠️ **新しいページを追加したら `PAGE_LABELS` にも登録する**こと。
+
+### ⑧ クローラーの巡回が PV に混ざっていた（約13%）
+
+`pageviews` の 1,772 件中 **248 件が bingbot / HeadlessChrome / AhrefsBot 等**だった。
+GA4 は既知ボットを自動除外するので、自前計測だけが常に多く出る原因にもなっていた。
+
+**対策**: `pageviews` の取得列に `ua` を追加し、`isBotUA()`（`BOT_UA_RE`）で除外。
+除外件数は累計PVカードのサブ表示に出る。
+※ 本来は Cloudflare Worker 側で弾くのが理想（DBに入れない）。今回はダッシュボード側で対応。
+
+### ⑨ ダウンロード推移グラフも UTC 日付だった
+
+PV 側と同じ `r.ts.slice(0,10)` バグが `renderTrendChart()`（DLタブ）にも残っていた → JST に統一。
+DL の「今月」も PV と同じく直近30日だったので暦月に統一。
+
+### ⑩ 国別テーブルの割合の分母が「上位10件の合計」だった
+
+`renderCountryTableRaw()` が上位10件だけを分母にしていたため、**11位以下がいても常に合計100%**に
+なっていた。全国合計を分母に修正。DL タブの国別表も同じ関数に統合（従来は正規化なしで別実装）。
+
+### ⑪ 生データ表が HTML エスケープされていなかった
+
+`referrer` / `page` / `city` などは **誰でも任意の文字列をビーコン送信できる**のに、
+`insertAdjacentHTML` にそのまま埋め込んでいた（保存型 XSS になりうる）。
+`esc()` を追加して全て通すようにした。
+
+⚠️ **`insertAdjacentHTML` / テンプレートリテラルに DB の値を埋めるときは必ず `esc()` を通す**こと。
+
+### ⑫ `analytics/ga4-import.html` の手順が旧方式のまま
+
+GA4 同期は GitHub Actions に移行済みなのに、ページは **Apps Script の設定手順**を案内していた。
+この手順どおりに操作すると同期が止まる事故が過去に起きているため、
+冒頭に「旧方式・実行しないこと」の警告と、現行手順（Actions の Secrets 3つ／
+Run workflow でバックフィル）を追記した。
+
+### 修正後の想定値（2026-09-06 時点）
+
+| 項目 | 値 |
+|---|---|
+| 累計PV | **2,620** = GA4(〜2026-06-02) 1,096 + 計測 1,524（ボット248件除外） |
+| 今月PV | 118（JST 暦月） |

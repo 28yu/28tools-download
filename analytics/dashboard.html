@@ -54,6 +54,10 @@
   @keyframes spin { to { transform: rotate(360deg); } }
   #error-msg { display: none; text-align: center; padding: 40px 24px; color: var(--red); }
 
+  /* 国旗（Windows は絵文字の国旗を描画できないため画像で表示する） */
+  .flag-img { width: 20px; height: 15px; object-fit: cover; border-radius: 2px; vertical-align: -2px; margin-right: 4px; box-shadow: 0 0 0 1px rgba(0,0,0,.12); }
+  .flag-emoji { margin-right: 4px; }
+
   /* KPI cards */
   .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px; margin-bottom: 24px; }
   .kpi { position: relative; background: linear-gradient(180deg, var(--surface-2), var(--surface)); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; box-shadow: var(--shadow); overflow: hidden; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
@@ -413,24 +417,91 @@ const COUNTRY_NAME_TO_CODE = {
   'Vietnam':'VN','Zimbabwe':'ZW',
 };
 
-function getCountryFlag(nameOrCode) {
-  if (!nameOrCode) return '🌏';
-  // Already a 2-letter code
-  if (nameOrCode.length === 2) return codeToFlag(nameOrCode);
-  // Full country name → look up code
-  const code = COUNTRY_NAME_TO_CODE[nameOrCode];
-  return code ? codeToFlag(code) : '🌏';
-}
+// GA4 の国名は表記が変わることがある（例: Turkey → Türkiye）。静的な対応表だけだと
+// 取りこぼして「TR」と別の行に分裂するため、ブラウザ内蔵の Intl.DisplayNames で
+// 全 ISO コード(AA〜ZZ)の英語名を引き、英語名→コードの逆引き表を実行時に生成する。
+const NAME_TO_CODE_AUTO = (() => {
+  const m = {};
+  try {
+    const en = new Intl.DisplayNames(['en'], { type: 'region' });
+    for (let a = 65; a <= 90; a++) for (let b = 65; b <= 90; b++) {
+      const code = String.fromCharCode(a, b);
+      let name;
+      try { name = en.of(code); } catch (_) { continue; }
+      if (name && name !== code && !(name in m)) m[name] = code;
+    }
+  } catch (_) { /* Intl 未対応ブラウザは静的表のみで動く */ }
+  return m;
+})();
+// 表記ゆれ・GA4 独自表記の別名
+const COUNTRY_NAME_ALIASES = {
+  'Türkiye':'TR', 'Turkey':'TR', 'Czechia':'CZ', 'Czech Republic':'CZ',
+  'South Korea':'KR', 'North Korea':'KP', 'Myanmar (Burma)':'MM',
+  'Bosnia & Herzegovina':'BA', 'Trinidad & Tobago':'TT', 'Macau':'MO',
+  'Hong Kong':'HK', 'United States':'US', 'United Kingdom':'GB',
+};
+// 国として集計しない値（GA4 の未取得値・Cloudflare の特殊コード）
+const NON_COUNTRY = { '(not set)':1, '(other)':1, 'Unknown':1, 'XX':1, 'ZZ':1 };
+// 国コードではない特殊値の表示名
+const SPECIAL_COUNTRY_LABELS = { 'T1': 'Tor経由（国不明）' };
+// 日本語の国名は Intl.DisplayNames から取得（対応表のメンテ不要）
+const REGION_NAMES_JA = (() => {
+  try { return new Intl.DisplayNames(['ja'], { type: 'region' }); } catch (_) { return null; }
+})();
 
 // 国名(GA4: 'Japan')と国コード(Supabase: 'JP')が混在するため ISO コードに正規化してから集計する
 function toCountryCode(nameOrCode) {
   if (!nameOrCode) return null;
-  if (nameOrCode.length === 2) return nameOrCode.toUpperCase();
-  return COUNTRY_NAME_TO_CODE[nameOrCode] || nameOrCode;
+  const s = String(nameOrCode).trim();
+  if (!s || NON_COUNTRY[s]) return null;
+  if (/^[A-Za-z]{2}$/.test(s)) return s.toUpperCase();
+  return COUNTRY_NAME_TO_CODE[s] || COUNTRY_NAME_ALIASES[s] || NAME_TO_CODE_AUTO[s] || s;
 }
 
-// Keep FLAGS for backward compat (used in some places with 2-letter codes)
-const FLAGS = new Proxy({}, { get: (_, k) => codeToFlag(k) });
+// 国コード → 日本語表示名
+function countryLabel(code) {
+  if (!code) return '不明';
+  const c = String(code);
+  if (SPECIAL_COUNTRY_LABELS[c]) return SPECIAL_COUNTRY_LABELS[c];
+  if (!/^[A-Z]{2}$/.test(c)) return c;   // 未知の国名などはそのまま出す
+  if (COUNTRY_NAMES[c]) return COUNTRY_NAMES[c];
+  try { const n = REGION_NAMES_JA && REGION_NAMES_JA.of(c); if (n && n !== c) return n; } catch (_) {}
+  return c;
+}
+
+// 国旗の表示。
+// ⚠️ 🇯🇵 のような「絵文字の国旗」は Windows の標準フォントに字形が無く、
+//    ブラウザが2文字のアルファベット（JP）として描画してしまう＝旗が出ない。
+//    そのため画像で表示し、画像が読めなかったときだけ絵文字にフォールバックする。
+function flagHtml(nameOrCode) {
+  const code = toCountryCode(nameOrCode);
+  const c = String(code || '').toLowerCase();
+  if (!/^[a-z]{2}$/.test(c)) return '<span class="flag-emoji">🌏</span>';
+  return '<img class="flag-img" src="https://flagcdn.com/w40/' + c + '.png"' +
+         ' alt="" width="20" height="15" loading="lazy"' +
+         ' data-fb="' + codeToFlag(c) + '" onerror="flagFallback(this)">';
+}
+// 画像が読めないとき（オフライン等）は絵文字に差し替える
+function flagFallback(img) {
+  const span = document.createElement('span');
+  span.className = 'flag-emoji';
+  span.textContent = img.dataset.fb || '🌏';
+  img.replaceWith(span);
+}
+window.flagFallback = flagFallback;
+
+// HTML エスケープ。referrer / page / city などは外部から任意の文字列を
+// ビーコン送信できてしまうため、innerHTML に差し込む前に必ず通す。
+function esc(v) {
+  return String(v == null ? '' : v).replace(/[&<>"']/g,
+    c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+}
+
+// クローラー/自動ブラウザの判定。
+// GA4 は既知のボットを自動除外するが、自前計測(sendBeacon)は素通しなので
+// bingbot や HeadlessChrome の巡回がそのまま PV に混ざる。
+const BOT_UA_RE = /bot\b|bot\/|crawl|spider|slurp|headless|phantom|puppeteer|playwright|lighthouse|pingdom|uptime|curl\/|wget|python-requests|axios|okhttp|facebookexternalhit|externalagent|embedly|preview/i;
+function isBotUA(ua) { return !!ua && BOT_UA_RE.test(ua); }
 
 const PAGE_LABELS = {
   '/': 'トップ',
@@ -457,15 +528,54 @@ const PAGE_LABELS = {
   '/manual/filled-region.html': 'マニュアル: 塗り潰し',
   '/manual/fire-protection.html': 'マニュアル: 耐火被覆',
   '/manual/formwork-calculator.html': 'マニュアル: 型枠',
+  '/manual/beam-level-color.html': 'マニュアル: 梁レベル色分け',
   '/analytics/dashboard.html': 'ダッシュボード',
+  // ── ツールページ（未登録のため生パスで表示されていた）──
+  '/pdf_compare.html': 'PDF比較ツール',
+  '/pdf-to-excel/web/': 'PDF→Excel ツール',
+  '/ai-minutes/web/': 'AI議事録ツール',
+  // ── Tips ──
+  '/tips/': 'Tips: 一覧',
+  '/tips/revit-hatch-pattern.html': 'Tips: ハッチングパターンの作り方',
+  '/tips/pdf-compare-guide.html': 'Tips: 図面PDFの比較',
+  '/tips/pdf-to-excel-guide.html': 'Tips: 構造図PDF→Excel',
+  // ── 既に削除したページ（過去データの表示用）──
+  '/family.html': '（削除済）ファミリ',
+  '/manual.html': '（削除済）マニュアル一覧',
+  '/features.html': '（削除済）機能一覧',
 };
+
+// 同じページが別のパスで記録されることがあるので、表示前に1つに寄せる。
+//   例) '/index.html' と '/'、'/ai-minutes/web' と '/ai-minutes/web/'、
+//       '/pdf-to-excel/web/index.html'、クエリ付き '/hatch.html?x=1'
+// これをしないとページランキングで同じページが複数行に分裂する。
+const PAGE_PATH_ALIASES = {
+  '/hatch': '/hatch.html',
+  '/addins': '/addins.html',
+  '/pdf_compare': '/pdf_compare.html',
+};
+function normalizePagePath(page) {
+  let s = String(page || '').split('?')[0].split('#')[0];
+  if (!s) return '(不明)';
+  s = s.replace(/\/index\.html$/, '/');       // /foo/index.html → /foo/
+  if (s === '') s = '/';
+  if (PAGE_PATH_ALIASES[s]) return PAGE_PATH_ALIASES[s];
+  // 拡張子が無いパスは末尾スラッシュ付きに寄せる（/ai-minutes/web → /ai-minutes/web/）
+  if (s.length > 1 && !s.endsWith('/') && !/\.[a-z0-9]+$/i.test(s)) s += '/';
+  return s;
+}
+function pageLabel(page) {
+  const norm = normalizePagePath(page);
+  return PAGE_LABELS[norm] || norm;
+}
 
 let allDL = [], allPV = [], allGA4 = [];
 // allPV から派生する集計用データ（init() で組み立てる）
 //  allPVReal    : ツール操作イベント(/_event/*)を除いた「本当のページビュー」だけの配列
 //  ga4Legacy    : 自前計測が始まる前の期間の GA4 行だけ（重複期間を二重に数えないため）
 //  measStartDate: 自前計測(Supabase)の最初の日 (JST, 'YYYY-MM-DD')
-let allPVReal = [], ga4Legacy = [], measStartDate = '';
+//  botExcluded  : クローラー判定で除外した件数（表示用）
+let allPVReal = [], ga4Legacy = [], measStartDate = '', botExcluded = 0;
 let ghStats = null;
 let charts = {};
 let activeDLPeriod = 30, activePVPeriod = 30, activeToolPeriod = 30;
@@ -590,6 +700,15 @@ function makeChart(id, type, labels, datasets, opts = {}) {
   });
 }
 
+// '#4f8ef7' のような HEX に .replace(')', ...) は効かないので、
+// 透明度付きの色は HEX → rgba() に変換して作る
+function withAlpha(color, alpha) {
+  const m = /^#([0-9a-f]{6})$/i.exec(String(color).trim());
+  if (!m) return color;
+  const n = parseInt(m[1], 16);
+  return `rgba(${(n>>16)&255},${(n>>8)&255},${n&255},${alpha})`;
+}
+
 function renderTrendChart(canvasId, data, days, label, color) {
   if (days === 1) {
     // 指定日（既定=当日）の 0〜23時(JST)で集計
@@ -604,7 +723,7 @@ function renderTrendChart(canvasId, data, days, label, color) {
     makeChart(canvasId, 'bar', labels, [{
       label: label + '（' + sel + '）',
       data: byHour,
-      backgroundColor: color.replace(')', ',.7)').replace('rgb','rgba') || 'rgba(79,142,247,.7)',
+      backgroundColor: withAlpha(color, .7),
       borderColor: color,
       borderWidth: 1,
     }], { plugins: { legend: { display: false } } });
@@ -612,37 +731,25 @@ function renderTrendChart(canvasId, data, days, label, color) {
   }
   const filtered = filterByDays(data, days);
   const byDay = {};
-  filtered.forEach(r => { const d = r.ts.slice(0,10); byDay[d] = (byDay[d]||0)+1; });
+  // ⚠️ r.ts.slice(0,10) は UTC 日付。JST 0〜9時の記録が前日に入ってしまうため jstDateStr を使う
+  filtered.forEach(r => { const d = jstDateStr(r.ts); byDay[d] = (byDay[d]||0)+1; });
   const sorted = Object.keys(byDay).sort();
   if (canvasId === 'trend-chart') setChartTotal('dl-total-val', filtered.length);
   makeChart(canvasId, 'line', sorted, [{
     label,
     data: sorted.map(d => byDay[d]),
     borderColor: color,
-    backgroundColor: color.replace(')', ',.12)').replace('rgb','rgba'),
+    backgroundColor: withAlpha(color, .12),
     fill: true, tension: 0.3,
     pointRadius: sorted.length > 60 ? 0 : 3,
   }], { plugins: { legend: { display: false } } });
 }
 
-function renderCountryTable(tableId, data, countKey) {
-  const total = data.length || 1;
-  const entries = sortedEntries(count(data, 'country'), 10);
-  const maxCnt = entries[0]?.[1] || 1;
-  const tbody = document.querySelector(`#${tableId} tbody`);
-  tbody.innerHTML = '';
-  entries.forEach(([code, cnt], i) => {
-    const pct = ((cnt / total) * 100).toFixed(1);
-    const barW = Math.max(4, Math.round((cnt / maxCnt) * 120));
-    tbody.insertAdjacentHTML('beforeend', `
-      <tr>
-        <td style="color:var(--muted)">${i+1}</td>
-        <td>${getCountryFlag(code)} ${COUNTRY_NAMES[code]||COUNTRY_NAMES[COUNTRY_NAME_TO_CODE[code]]||code} <span style="color:var(--muted);font-size:11px">(${COUNTRY_NAME_TO_CODE[code]||code})</span></td>
-        <td style="font-weight:600">${cnt}</td>
-        <td style="color:var(--muted)">${pct}%</td>
-        <td><div class="mini-bar" style="width:${barW}px"></div></td>
-      </tr>`);
-  });
+function renderCountryTable(tableId, data, barColor) {
+  // 国コードに正規化してから集計（DL も PV と同じ扱いにする）
+  const raw = {};
+  data.forEach(r => { const c = toCountryCode(r.country); if (c) raw[c] = (raw[c]||0)+1; });
+  renderCountryTableRaw(tableId, raw, barColor);
 }
 
 function renderRankTable(tableId, entries, total, barColor) {
@@ -655,7 +762,7 @@ function renderRankTable(tableId, entries, total, barColor) {
     tbody.insertAdjacentHTML('beforeend', `
       <tr>
         <td style="color:var(--muted)">${i+1}</td>
-        <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${label}">${label}</td>
+        <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc(label)}">${esc(label)}</td>
         <td style="font-weight:600">${cnt}</td>
         <td style="color:var(--muted)">${pct}%</td>
         <td><div class="mini-bar ${barColor}" style="width:${barW}px"></div></td>
@@ -665,7 +772,6 @@ function renderRankTable(tableId, entries, total, barColor) {
 
 // ---- Download tab ----
 function renderDL(data) {
-  const now = new Date();
   // GitHub 全期間累計
   if (ghStats) {
     document.getElementById('kpi-total').textContent = ghStats.total.toLocaleString();
@@ -673,12 +779,16 @@ function renderDL(data) {
     document.getElementById('kpi-total').textContent = '取得中...';
   }
   // Supabase 計測分
-  document.getElementById('kpi-tracked').textContent = data.length;
-  document.getElementById('kpi-week').textContent  = filterByDays(data, 7).length;
-  const mData = filterByDays(data, 30);
-  document.getElementById('kpi-month').textContent = mData.length;
-  document.getElementById('kpi-month-label').textContent = now.getFullYear() + '年' + (now.getMonth()+1) + '月';
-  document.getElementById('kpi-countries').textContent = new Set(data.map(r=>r.country).filter(Boolean)).size;
+  document.getElementById('kpi-tracked').textContent = data.length.toLocaleString();
+  document.getElementById('kpi-week').textContent  = filterByDays(data, 7).length.toLocaleString();
+  // 今月DL: JST の暦月（1日〜今日）。以前は「直近30日」を年月ラベルで表示していた
+  const monthPrefix = todayJST().slice(0, 7);
+  document.getElementById('kpi-month').textContent =
+    data.filter(r => jstDateStr(r.ts).startsWith(monthPrefix)).length.toLocaleString();
+  document.getElementById('kpi-month-label').textContent =
+    monthPrefix.slice(0,4) + '年' + Number(monthPrefix.slice(5,7)) + '月';
+  document.getElementById('kpi-countries').textContent =
+    new Set(data.map(r => toCountryCode(r.country)).filter(Boolean)).size;
   // Revit別は GitHub 集計を優先、なければ Supabase
   if (ghStats && Object.keys(ghStats.byRevit).length) {
     const topRevit = sortedEntries(ghStats.byRevit)[0];
@@ -713,7 +823,7 @@ function renderDL(data) {
     data: hourBins, backgroundColor: '#34d399', borderRadius: 2,
   }], { plugins: { legend: { display: false } } });
 
-  renderCountryTable('dl-country-table', data, 'country');
+  renderCountryTable('dl-country-table', data, '');
 
   const rawBody = document.getElementById('dl-raw-body');
   rawBody.innerHTML = '';
@@ -721,9 +831,9 @@ function renderDL(data) {
     const jst = new Date(new Date(r.ts).getTime() + 9*3600000);
     const fmt = jst.toISOString().replace('T',' ').slice(0,16);
     rawBody.insertAdjacentHTML('beforeend', `<tr>
-      <td>${fmt}</td><td>${r.version||'-'}</td><td>${r.revit||'-'}</td>
-      <td>${getCountryFlag(r.country)+' '+(r.country||'-')}</td>
-      <td>${r.city||'-'}</td><td>${r.os||'-'}</td>
+      <td>${fmt}</td><td>${esc(r.version)||'-'}</td><td>${esc(r.revit)||'-'}</td>
+      <td>${flagHtml(r.country)}${esc(countryLabel(toCountryCode(r.country)))}</td>
+      <td>${esc(r.city)||'-'}</td><td>${esc(r.os)||'-'}</td>
     </tr>`);
   });
 }
@@ -749,9 +859,9 @@ function renderPV(data) {
   // 累計PV: 「計測開始より前の GA4」＋「自前計測の実PV件数」
   //   data は /_event/* を除いた本当のページビューのみ（init で分離済み）
   document.getElementById('kpi-pv-total').textContent = (ga4TotalPV + data.length).toLocaleString();
-  document.getElementById('kpi-pv-total-sub').textContent = ga4TotalPV > 0
+  document.getElementById('kpi-pv-total-sub').textContent = (ga4TotalPV > 0
     ? `GA4(〜${measStartDate}) ${ga4TotalPV.toLocaleString()} + 計測 ${data.length.toLocaleString()}`
-    : '計測分のみ';
+    : '計測分のみ') + (botExcluded ? ` / ボット${botExcluded.toLocaleString()}件除外` : '');
   document.getElementById('kpi-pv-week').textContent  = filterByDays(data, 7).length.toLocaleString();
   // 今月PV: JST の暦月（1日〜今日）で数える ※以前は「直近30日」を今月と表示していた
   const monthPrefix = todayJST().slice(0, 7);
@@ -781,12 +891,13 @@ function renderPV(data) {
   // Page ranking（GA4実データの views を合算）
   const pageRaw = {};
   // Supabase の実データ
-  data.forEach(r => { const k = r.page || '(not set)'; pageRaw[k] = (pageRaw[k]||0)+1; });
+  data.forEach(r => { const k = normalizePagePath(r.page); pageRaw[k] = (pageRaw[k]||0)+1; });
   // GA4 歴史データ（実PV数で合算・重複しない期間のみ）
-  ga4Legacy.forEach(r => { const k = r.page || '(not set)'; pageRaw[k] = (pageRaw[k]||0)+(r.views||0); });
+  ga4Legacy.forEach(r => { const k = normalizePagePath(r.page); pageRaw[k] = (pageRaw[k]||0)+(r.views||0); });
   const pageLabeled = {};
   for (const [k, v] of Object.entries(pageRaw)) {
-    pageLabeled[PAGE_LABELS[k] || k] = (pageLabeled[PAGE_LABELS[k] || k] || 0) + v;
+    const lbl = PAGE_LABELS[k] || k;
+    pageLabeled[lbl] = (pageLabeled[lbl] || 0) + v;
   }
   const pvGrandTotal = Object.values(pageLabeled).reduce((s,v)=>s+v,0);
   renderRankTable('pv-page-table', sortedEntries(pageLabeled, 10), pvGrandTotal, 'green');
@@ -859,7 +970,7 @@ function renderPV(data) {
   const countryRaw = {};
   data.forEach(r => { const c = toCountryCode(r.country); if (c) countryRaw[c]=(countryRaw[c]||0)+1; });
   ga4Legacy.forEach(r => { const c = toCountryCode(r.country); if (c) countryRaw[c]=(countryRaw[c]||0)+(r.views||0); });
-  renderCountryTableRaw('pv-country-table', countryRaw);
+  renderCountryTableRaw('pv-country-table', countryRaw, 'green');
 
   const rawBody = document.getElementById('pv-raw-body');
   rawBody.innerHTML = '';
@@ -868,12 +979,12 @@ function renderPV(data) {
     const fmt = jst.toISOString().replace('T',' ').slice(0,16);
     rawBody.insertAdjacentHTML('beforeend', `<tr>
       <td>${fmt}</td>
-      <td title="${r.page||''}">${PAGE_LABELS[r.page] || (r.page||'-')}</td>
-      <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">${cleanRef(r.referrer)}</td>
-      <td>${getCountryFlag(r.country)+' '+(r.country||'-')}</td>
-      <td>${r.city||'-'}</td>
-      <td>${r.browser||'-'}</td>
-      <td>${r.os||'-'}</td>
+      <td title="${esc(r.page)}">${esc(pageLabel(r.page))}</td>
+      <td style="max-width:120px;overflow:hidden;text-overflow:ellipsis">${esc(cleanRef(r.referrer))}</td>
+      <td>${flagHtml(r.country)}${esc(countryLabel(toCountryCode(r.country)))}</td>
+      <td>${esc(r.city)||'-'}</td>
+      <td>${esc(r.browser)||'-'}</td>
+      <td>${esc(r.os)||'-'}</td>
     </tr>`);
   });
 }
@@ -934,9 +1045,10 @@ function setChartTotal(elId, total) {
 }
 function setPVTotal(total) { setChartTotal('pv-total-val', total); }
 
-function renderCountryTableRaw(tableId, countryRaw) {
+function renderCountryTableRaw(tableId, countryRaw, barColor = 'green') {
   const entries = sortedEntries(countryRaw, 10);
-  const grandTotal = entries.reduce((s,[,v])=>s+v, 0) || 1;
+  // 割合の分母は「全国合計」。上位10件の合計にすると常に100%になってしまう。
+  const grandTotal = Object.values(countryRaw).reduce((s,v)=>s+v, 0) || 1;
   const maxCnt = entries[0]?.[1] || 1;
   const tbody = document.querySelector(`#${tableId} tbody`);
   tbody.innerHTML = '';
@@ -946,10 +1058,10 @@ function renderCountryTableRaw(tableId, countryRaw) {
     tbody.insertAdjacentHTML('beforeend', `
       <tr>
         <td style="color:var(--muted)">${i+1}</td>
-        <td>${getCountryFlag(code)} ${COUNTRY_NAMES[code]||COUNTRY_NAMES[COUNTRY_NAME_TO_CODE[code]]||code} <span style="color:var(--muted);font-size:11px">(${COUNTRY_NAME_TO_CODE[code]||code})</span></td>
+        <td>${flagHtml(code)}${esc(countryLabel(code))} <span style="color:var(--muted);font-size:11px">(${esc(code)})</span></td>
         <td style="font-weight:600">${cnt.toLocaleString()}</td>
         <td style="color:var(--muted)">${pct}%</td>
-        <td><div class="mini-bar green" style="width:${barW}px"></div></td>
+        <td><div class="mini-bar ${barColor}" style="width:${barW}px"></div></td>
       </tr>`);
   });
 }
@@ -1255,7 +1367,7 @@ async function init() {
     [[allDL, allPV, allGA4], ghStats] = await Promise.all([
       Promise.all([
         supaFetch('downloads', 'ts,version,revit,country,city,os'),
-        supaFetch('pageviews',  'ts,page,referrer,country,city,os,browser,lang,session_id').catch(() => []),
+        supaFetch('pageviews',  'ts,page,referrer,country,city,os,browser,lang,session_id,ua').catch(() => []),
         supaFetch('ga4_history', '*', 'date.desc').catch(() => []),
       ]),
       fetchGitHubDL(),
@@ -1263,8 +1375,13 @@ async function init() {
     // ── 集計用の派生データを作る（PV の数え方の要）────────────────
     // (1) ツール操作イベント（page='/_event/*'）は「ページを見た」記録ではないので
     //     ページビューの集計からは外す。ツールタブ側だけで使う。
-    allPVReal = allPV.filter(r => !String(r.page || '').startsWith('/_event/'));
-    // (2) GA4 と自前計測は「同じアクセス」を両方が記録している。単純に足すと
+    const pvNoEvent = allPV.filter(r => !String(r.page || '').startsWith('/_event/'));
+    // (2) クローラー/自動ブラウザ（bingbot・HeadlessChrome 等）を除外。
+    //     GA4 は既知ボットを自動で弾くが自前計測は素通しなので、除外しないと
+    //     GA4 より一貫して多い数字になり、両者を比較できなくなる。
+    allPVReal = pvNoEvent.filter(r => !isBotUA(r.ua));
+    botExcluded = pvNoEvent.length - allPVReal.length;
+    // (3) GA4 と自前計測は「同じアクセス」を両方が記録している。単純に足すと
     //     重なっている期間が丸ごと二重計上になる。自前計測が始まった日を境に、
     //     それより前は GA4、それ以降は自前計測、と期間で切り分けて合算する。
     measStartDate = allPVReal.length
