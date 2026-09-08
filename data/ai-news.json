@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-07T05:45:46.963716",
+  "lastUpdated": "2026-09-08T05:40:36.762016",
   "articles": [
     {
       "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
@@ -178,6 +178,28 @@
       "language": "en"
     },
     {
+      "title": "失敗しないローコード開発とは？ノーコードとの違い・費用・ツールの選び方",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/low-code-development/",
+      "description": "「システムの内製化を任されたが、ローコード開発とノーコード開発の線引きがわからない」「いくらかかり、どこまで作れるのかがわからないと社内で説明できない」。情報システム部門・DX推進担当・業務部門で内製化を命じられた担当者 […]",
+      "publishedDate": "Tue, 08 Sep 2026 01:29:50 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/LowCodeMain.png",
+      "language": "ja"
+    },
+    {
+      "title": "ChatGPT Enterpriseとは？機能・料金・Businessプランとの違いを解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-enterprise-openai-2026/",
+      "description": "ChatGPT Enterpriseは、OpenAIが一般企業向けに提供する、契約ベースの上位プランです。個人向けプランを人数分そろえるサービスではなく、企業のIT環境の一部として、利用者・権限・データ・費用を組織で管理 […]",
+      "publishedDate": "Tue, 08 Sep 2026 01:27:18 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/ChatGPTEnterpriseMain.png",
+      "language": "ja"
+    },
+    {
       "title": "The latest AI news we announced in July 2026",
       "titleJa": "2026年7月に発表したAI最新ニュース",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
@@ -244,17 +266,6 @@
       "language": "en"
     },
     {
-      "title": "Making the AI-powered case for legacy modernization",
-      "titleJa": "AI を活用したレガシーのモダナイゼーションを主張する",
-      "link": "https://www.technologyreview.com/2026/09/01/1142180/making-the-ai-powered-case-for-legacy-modernization/",
-      "description": "For years, legacy technology has been a problem companies knew they needed to solve, but one they often struggled to tackle. The cost, complexity, and risk of replacing business-critical systems could...",
-      "publishedDate": "Tue, 01 Sep 2026 14:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/Asifa-Sherazi-Sanjeev-Tripathi-v2.png?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "Path to Astra: critical capabilities and frontier safeguards",
       "titleJa": "アストラへの道: 重要な能力とフロンティアの安全対策",
       "link": "https://openai.com/index/path-to-astra",
@@ -311,7 +322,7 @@
     },
     {
       "title": "3 new ways to plan and book travel in Search",
-      "titleJa": "検索で旅行を計画および予約する 3 つの新しい方法",
+      "titleJa": "検索で旅行を計画し予約する 3 つの新しい方法",
       "link": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
       "description": "Graphic depicting new travel features for AI Mode in Search",
       "publishedDate": "Thu, 27 Aug 2026 16:00:00 +0000",
@@ -354,6 +365,17 @@
       "language": "en"
     },
     {
+      "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+      "titleJa": "NeoMME: 効率的なマルチモーダルネイティブの多言語エンコーダー",
+      "link": "https://huggingface.co/blog/Hcompany/neomme",
+      "description": "",
+      "publishedDate": "Thu, 03 Sep 2026 13:13:48 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6264f9655f6f2e14d6ac981c/GJ6FUbgFpq1x8RNOqzmz-.webp",
+      "language": "en"
+    },
+    {
       "title": "Google、AIによる飛行機雲回避プロジェクトを発表。航空機による気候影響を空域規模で削減",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/google-operation-blue-skies/",
@@ -376,28 +398,6 @@
       "language": "ja"
     },
     {
-      "title": "Anthropic、最新AIモデル「Claude Fable 5.1」と「Claude Mythos 5.1」を発表。科学研究能力の強化やコスト効率の向上を実現",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/anthropic-fable-5-1-mythos-5-1/",
-      "description": "Anthropicは、最新AIモデル「Claude Fable 5.1」と「Claude Mythos 5.1」を発表しました。コーディングや知識労働、科学研究などの能力を高めたほか、セーフガードによる介入の削減やコスト […]",
-      "publishedDate": "Thu, 03 Sep 2026 09:04:25 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/Anthropic-Claude-Fable-5.1-Claude-Mythos-5.1-Release.png",
-      "language": "ja"
-    },
-    {
-      "title": "GPT-5.6 Sol Ultrafastとは？14倍速の仕組み・利用条件・API比較を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gpt-5-6-sol-ultrafast/",
-      "description": "「AIに質問してから答えが返ってくるまでの待ち時間が長く、体験を損なっている」——チャットボットやリアルタイム音声対話を開発している方であれば、一度はこの課題に直面したことがあるのではないでしょうか。高性能なモデルほど応 […]",
-      "publishedDate": "Thu, 03 Sep 2026 02:18:09 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/gpt56solultrafast.png",
-      "language": "ja"
-    },
-    {
       "title": "【Gemini 3.8 Flash】6週間で3度目のFlash更新！Flashなのにフロンティア級の性能・料金・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/gemini-3-8-flash/",
@@ -406,39 +406,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-3.8-Flash-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "MAI-Image-2.5とは？特徴・使い方・類似ツールとの違いを紹介",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/mai-image-2-5/",
-      "description": "MAI-Imageは、Microsoftが自社で開発する画像生成AIです。2026年6月に公開された最新版のMAI-Image-2.5では、テキストから画像を生成する機能に加え、既存画像に手を加える画像編集にも対応しまし […]",
-      "publishedDate": "Thu, 03 Sep 2026 01:29:11 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/MAIImageMain.png",
-      "language": "ja"
-    },
-    {
-      "title": "SeaArt（シーアート）とは？ビジネスで使える機能・料金・安全な商用利用のチェックリスト",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-seaart/",
-      "description": "SeaArt（シーアート）は、テキストや画像をもとにイラストや写真風の画像を作れる画像生成AIです。無料で試せて日本語にも対応しているため、画像生成を始めたい個人から、SNSやマーケティングの担当者まで、幅広く関心を集め […]",
-      "publishedDate": "Thu, 03 Sep 2026 01:28:11 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/SeaArtMain.png",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Academyとは？費用・日本語対応・使い方や学習手順を解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-academy/",
-      "description": "Claudeを業務や開発で使いこなしたいものの、「Claude Academyは無料で使える？」「日本語で学べる？」「具体的な学習手順がわからない」と迷っていませんか。 Claude Academyは、Anthropic […]",
-      "publishedDate": "Thu, 03 Sep 2026 01:07:49 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/claudeacademy.png",
       "language": "ja"
     },
     {
@@ -475,14 +442,58 @@
       "language": "ja"
     },
     {
-      "title": "Stable Diffusionで使える「Civitai」とは？使い方・モデルの選び方・安全なダウンロード方法まで徹底解説",
+      "title": "GPT-6 Astraとは？OpenAIが初めてCritical級サイバー能力と認定した最新モデルの特徴・料金・安全対策を徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/civitai/",
-      "description": "突然ですが、みなさんはStable Diffusionの可能性を広げる「Civitai」についてご存知でしょうか。 CivitaiにはStable Diffusionで使用できるAIモデルが多数共有されており、ダウンロー […]",
-      "publishedDate": "Mon, 31 Aug 2026 12:55:59 +0000",
+      "link": "https://weel.co.jp/media/tech/astra/",
+      "description": "2026年9月、OpenAIから新たなフロンティアモデル「GPT-6 Astra」が正式にリリースされました。今回発表された「GPT-6 Astra」は、OpenAIがPreparedness Framework（準備態 […]",
+      "publishedDate": "Mon, 07 Sep 2026 13:27:50 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Civitai_2608-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Astra-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Lyria 3.5】Googleの最新音楽生成AIの性能・料金・使い方を徹底解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/lyria-3-5/",
+      "description": "2026年9月5日、Googleは音楽生成AIモデル「Lyria 3.5」をGeminiアプリ・Gemini API・Google AI Studioで全世界に公開しました。テキストプロンプトを入力するだけで、ボーカル付 […]",
+      "publishedDate": "Mon, 07 Sep 2026 08:49:20 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Lyria-3.5-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI、新モデル「GPT-6 Astra」発表。サイバーセキュリティ能力が大幅向上し「Critical」水準に到達",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-gpt6-astra-cybersecurity/",
+      "description": "OpenAIは、新モデル「GPT-6 Astra」を発表しました。コンピュータ操作や専門業務、コーディングなどで高い性能を発揮するほか、サイバーセキュリティ能力が大幅に向上しました。 このニュースのポイント OpenAI […]",
+      "publishedDate": "Mon, 07 Sep 2026 08:26:59 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/gpt6-astra-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "GPT-6 Astraとは？進化点・旧モデル比較からビジネス活用法まで徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/gpt-6-astra/",
+      "description": "「AIに指示を出したら、あとは資料作成もPC操作も丸ごと任せられたら――」。そんな理想を現実に近づけたのが、OpenAIが2026年9月3日に発表した最新の最上位モデル「GPT-6 Astra（ジーピーティー6 アストラ […]",
+      "publishedDate": "Mon, 07 Sep 2026 07:25:03 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/gpt6ic.png",
+      "language": "ja"
+    },
+    {
+      "title": "人手不足、人材の多国籍化に対応する製品をはじめとした 多様なAIソリューションが福岡に集結！福岡初開催「AI博覧会 Fukuoka 2026」注目出展社を発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/aihaku-fukuoka2026-02/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年9月30日（水）・10月1日（木）の2日間、博多国際展示場＆カンファレンスセンターにて「AI博覧会 Fukuoka 202 […]",
+      "publishedDate": "Mon, 07 Sep 2026 05:00:35 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/AI博覧会-Fukuoka-2026-pickup2.png",
       "language": "ja"
     },
     {
@@ -494,17 +505,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/willgroup-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "GPT-6 Astraとは？OpenAIが初めてCritical級サイバー能力と認定した最新モデルの特徴・料金・安全対策を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/astra/",
-      "description": "2026年9月、OpenAIから新たなフロンティアモデル「GPT-6 Astra」が正式にリリースされました。 今回発表された「GPT-6 Astra」は、OpenAIがPreparedness Framework（準備 […]",
-      "publishedDate": "Fri, 04 Sep 2026 02:35:15 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Astra-1024x576.webp",
       "language": "ja"
     },
     {
@@ -549,6 +549,28 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Commerce-Agents-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "巨大オンラインゲーム「EVE Online」。ゲームを支える240万行のPython 2.7のコードをPython 3へ移行すると発表",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/eve_online240python_27python_3.html",
+      "description": "宇宙を舞台にした世界最大級の大規模オンラインゲーム「EVE Online」が、ゲームを支える240万行のPythonコードをPython 3に移行すると発表しました。 We have officially started our codeb...",
+      "publishedDate": "2026-09-08T14:28:02Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/HQlh51SXYAAfQ-1.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "HTMX 4.0正式リリース。内部実装がXHRからfetchに移行しStreaming HTMLが可能に、属性はデフォルトで子要素に継承されないように変更など",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/htmx_40xhrfetchstreaming_html.html",
+      "description": "HTMLに属性を追加するだけで、Webページにサーバと連動した動的なアプリケーションの機能を追加できるJavaScriptライブラリ「HTMX」の最新バージョンとなる「HTMX 4.0」正式版のリリースが発表されました。 very happ...",
+      "publishedDate": "2026-09-07T15:39:27Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/HQz9DFibMAA3CVF.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/omacom-foundation-la.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "JetBrains、Mac上で動作するコーディングエージェント「Junie Local」提供開始。Claude Sonnet 4.5と同等の能力、RTX5090対応も開発中",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/jetbrainsmacjunie_localclaude_sonnet_45rtx5909.html",
-      "description": "JetBrainsは、ローカルで動作するAIコーディングエージェント「Junie Local」の提供開始を発表しました。 Junie Localはその名称の通り完全にローカルマシン上で動作し、API使用料やモデル使用料などは一切不要。ソフト...",
-      "publishedDate": "2026-08-30T15:07:47Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HQfo5eBWAAAWhrP.png",
-      "language": "ja"
-    },
-    {
-      "title": "DuckDBの開発元であるDuckLabsがAWS子会社になると発表。DuckDBはオープンソースのMITライセンスを維持",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/duckdbducklabsawsduckdbmit.html",
-      "description": "DuckDBの開発元であるDuckLabsは、来月（2026年9月）初旬にAWSの子会社となる予定であることを発表しました（DuckLabsの発表。AWSの発表） Today, @ducklabs_com is joining @awscl...",
-      "publishedDate": "2026-08-27T15:55:49Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HQpnZd-aYAE2K9g.jpg",
       "language": "ja"
     }
   ]
