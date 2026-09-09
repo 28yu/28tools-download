@@ -1,24 +1,14 @@
 {
-  "lastUpdated": "2026-09-08T02:11:33.219795",
+  "lastUpdated": "2026-09-09T02:15:27.484863",
   "articles": [
     {
-      "title": "【2026年版】建築基準法第22条区域とは？｜屋根・外壁の制限や調べ方をわかりやすく解説",
-      "link": "https://news.build-app.jp/article/37893/",
-      "description": "建築物を建てる際、防火地域・準防火地域以外でも、屋根などに一定の防火性能が求められる地域があります。そのひとつが「建築基準法第22条区域（法...",
-      "publishedDate": "Wed, 02 Sep 2026 22:00:00 +0000",
+      "title": "東急建設とNTTソノリティ、音声AIでKY活動をデータ化して安全管理を効率化する取り組み",
+      "link": "https://news.build-app.jp/article/42529/",
+      "description": "建設現場の朝礼で欠かせない危険予知（KY）活動が、音声とAIの力で新しい形に変わろうとしています。東急建設株式会社とNTTソノリティ株式会社...",
+      "publishedDate": "Wed, 09 Sep 2026 01:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/10/e3db13663ae1f4014964fcc86eccd9ac-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省の2026年度建設投資見通し、総額81兆4700億円で前年度比2.9%増",
-      "link": "https://news.build-app.jp/article/42447/",
-      "description": "国土交通省は、2026年度（令和8年度）の建設投資見通しを取りまとめ、公表しました。全体の投資額は81兆4700億円に達する見込みで、前年度...",
-      "publishedDate": "Wed, 02 Sep 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/investment_outlook_2026-130x72.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/voice_ky_safety-130x74.png",
       "language": "ja"
     },
     {
@@ -30,6 +20,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "大成建設、施工データ活用と自動化技術で土木現場の効率化を目指すT-iDRIVE X始動",
+      "link": "https://news.build-app.jp/article/42512/",
+      "description": "大成建設株式会社(社長:相川善郎)は、土木分野における施工データの活用と自動化・機械化技術を横断的にまとめる次世代施工管理ブランド「T-iD...",
+      "publishedDate": "Tue, 08 Sep 2026 03:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/t-idrive-x-construction-130x130.png",
+      "language": "ja"
     },
     {
       "title": "前田建設工業、鉄筋BIMアトアレで納まり検討時間を最大90％短縮し米国際会議で講演",
@@ -112,16 +112,6 @@
       "language": "ja"
     },
     {
-      "title": "日本HP、建設業向けクラウド型図面管理サービス提供開始、製図作業時間を最大80％削減",
-      "link": "https://news.build-app.jp/article/42471/",
-      "description": "日本HPは、建築・エンジニアリング・建設業界のプロフェッショナル向けに、クラウド型プロジェクト管理サービス「HP Build Workspa...",
-      "publishedDate": "Thu, 03 Sep 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/hp-build-workspace-130x112.jpg",
-      "language": "ja"
-    },
-    {
       "title": "PLATEAUとは？3D都市モデルを業務の判断に活かす方法",
       "link": "https://axconstdx.com/2026/08/23/plateau%e3%81%a8%e3%81%af%ef%bc%9f3d%e9%83%bd%e5%b8%82%e3%83%a2%e3%83%87%e3%83%ab%e3%82%92%e6%a5%ad%e5%8b%99%e3%81%ae%e5%88%a4%e6%96%ad%e3%81%ab%e6%b4%bb%e3%81%8b%e3%81%99%e6%96%b9%e6%b3%95/",
       "description": "PLATEAUを立派な3D地図だと眺めるだけで満足していませんか。実はその使い方では、都市データが持つ本当の力の半分も引き出せていません。開発協議や施工計画で見落としを防ぎ、関係者の判断をそろえる基盤として活かす方法を、 […]",
@@ -180,6 +170,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "施工管理に向いている人の特徴7選｜未経験者が適性を判断する方法",
+      "link": "https://news.build-app.jp/article/42523/",
+      "description": "施工管理は、工事が予定どおり進むように、現場全体を管理する仕事です。職人や協力会社、施主、設計担当者など、さまざまな関係者と連携しながら、品...",
+      "publishedDate": "Mon, 07 Sep 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/26c78ab81c5f5f141fef89c87160c4f2-130x82.png",
+      "language": "ja"
     },
     {
       "title": "鹿島建設、三笠ぽんべつダムで土工総合管理システムを実証し施工・品質データを一元可視化",
