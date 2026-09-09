@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-09-08T05:40:36.762016",
+  "lastUpdated": "2026-09-09T05:46:33.147634",
   "articles": [
     {
       "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
-      "titleJa": "センテンストランスフォーマーを使用したマルチベクトル埋め込みモデルのトレーニングと微調整",
+      "titleJa": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
       "link": "https://huggingface.co/blog/train-multi-vector-encoder",
       "description": "",
       "publishedDate": "Wed, 26 Aug 2026 00:00:00 GMT",
@@ -14,7 +14,7 @@
     },
     {
       "title": "5 new ways to level up your learning with Search",
-      "titleJa": "検索を使って学習をレベルアップする 5 つの新しい方法",
+      "titleJa": "5 new ways to level up your learning with Search",
       "link": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
       "description": "an illustrated image with icons and phrasing like \"Add Notebook\" and \"Ask Google\"",
       "publishedDate": "Wed, 19 Aug 2026 19:00:00 +0000",
@@ -24,8 +24,30 @@
       "language": "en"
     },
     {
+      "title": "What OpenAI’s latest controversy tells us about the future of math",
+      "titleJa": "What OpenAI’s latest controversy tells us about the future of math",
+      "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
+      "description": "OpenAI’s latest mathematical milestone has quickly become mired in controversy. Today, the company announced that its agents have solved one of the Millennium Prize Problems, some of the most importan...",
+      "publishedDate": "Wed, 09 Sep 2026 03:10:08 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/math-2c.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "【ChatGPT Images 2.5】50%高速化と手描きSketch機能搭載！OpenAI最新画像生成モデルの使い方・料金・活用シーンを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/chatgpt-images-2-5/",
+      "description": "OpenAIが2026年9月9日、画像生成モデルの最新版「ChatGPT Images 2.5」を公開しました！ 毎週30億枚以上の画像がChatGPTとGPT-Imageモデルを通じて生成されているなか、今回のアップデ […]",
+      "publishedDate": "Wed, 09 Sep 2026 02:48:50 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_ChatGPT-Images-2.5-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "Proactive cyber defense for governments and enterprises",
-      "titleJa": "政府および企業向けのプロアクティブなサイバー防御",
+      "titleJa": "Proactive cyber defense for governments and enterprises",
       "link": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
       "description": "Introducing Fairwind Program",
       "publishedDate": "Wed, 02 Sep 2026 15:40:00 +0000",
@@ -35,47 +57,14 @@
       "language": "en"
     },
     {
-      "title": "Facilitating AI integration with simplicity at scale",
-      "titleJa": "大規模な簡素化により AI 統合を促進",
-      "link": "https://www.technologyreview.com/2026/09/02/1142879/facilitating-ai-integration-with-simplicity-at-scale/",
-      "description": "As companies scale, the technology supporting operations can become a liability just as quickly as it becomes an asset. Disconnected systems, site-specific tools, spreadsheets, and manual workarounds...",
-      "publishedDate": "Wed, 02 Sep 2026 14:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/MITTRI-SAP-Jabil-podcast-social-card-V2.png?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "Real-Time Intelligence with IBM Time Series Models on Confluent",
-      "titleJa": "Confluent 上の IBM Time Series モデルによるリアルタイム インテリジェンス",
+      "titleJa": "Real-Time Intelligence with IBM Time Series Models on Confluent",
       "link": "https://huggingface.co/blog/ibm-research/real-time-intelligence",
       "description": "",
       "publishedDate": "Wed, 02 Sep 2026 13:49:14 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/1oB5vm47VNu42diDOsp0p.png",
-      "language": "en"
-    },
-    {
-      "title": "The Download: AI puzzles and a path to our nearest star system",
-      "titleJa": "ダウンロード: AI パズルと最も近い星系への道",
-      "link": "https://www.technologyreview.com/2026/09/02/1143283/the-download-ai-puzzles-alpha-centauri-mission/",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI models flub these intelligence tests. Can you fare any bett...",
-      "publishedDate": "Wed, 02 Sep 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/06/HyIron-Feb-2025-dji-3.edit_.jpg?w=840",
-      "language": "en"
-    },
-    {
-      "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
-      "titleJa": "ATV ビッグ エア ツアーは、ChatGPT を使用して 3 日間の作業を 3 時間に短縮しました",
-      "link": "https://openai.com/index/atv-big-air-tour",
-      "description": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes.",
-      "publishedDate": "Wed, 02 Sep 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -91,7 +80,7 @@
     },
     {
       "title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
-      "titleJa": "Gemini API 管理エージェント: 3.6 フラッシュ、フックなど",
+      "titleJa": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
       "link": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
       "description": "Managed Agents Gemini 3.6 Flash, Hooks and Triggers",
       "publishedDate": "Tue, 28 Jul 2026 16:00:00 +0000",
@@ -102,7 +91,7 @@
     },
     {
       "title": "5 ways to host the ultimate dinner party with Google Search",
-      "titleJa": "Google 検索を使って究極のディナー パーティーを主催する 5 つの方法",
+      "titleJa": "5 ways to host the ultimate dinner party with Google Search",
       "link": "https://blog.google/products-and-platforms/products/search/dinner-party-hosting-tips/",
       "description": "An illustrated black magnifying glass with a sparkle in a white circle surrounded by a dinner party tablescape",
       "publishedDate": "Tue, 28 Jul 2026 13:00:00 +0000",
@@ -113,7 +102,7 @@
     },
     {
       "title": "5 ways AI Mode in Search helps you enjoy the real world",
-      "titleJa": "検索の AI モードが現実世界を楽しむ 5 つの方法",
+      "titleJa": "5 ways AI Mode in Search helps you enjoy the real world",
       "link": "https://blog.google/products-and-platforms/products/search/ai-mode-real-world-tips/",
       "description": "Illustration of a black magnifying glass in a white circle on green grass surrounded by items related to fun activities like tennis and games",
       "publishedDate": "Tue, 28 Jul 2026 13:00:00 +0000",
@@ -124,7 +113,7 @@
     },
     {
       "title": "5 ways to upgrade your home decor with Google Search",
-      "titleJa": "Google 検索で家の装飾をアップグレードする 5 つの方法",
+      "titleJa": "5 ways to upgrade your home decor with Google Search",
       "link": "https://blog.google/products-and-platforms/products/search/home-decor-tips/",
       "description": "Illustration of ombre rainbow furniture items like a sofa, lamp, and chair against a purple background",
       "publishedDate": "Tue, 25 Aug 2026 16:00:00 +0000",
@@ -135,7 +124,7 @@
     },
     {
       "title": "Granite 4.2 LLMs: How They're Built",
-      "titleJa": "Granite 4.2 LLM: 構築方法",
+      "titleJa": "Granite 4.2 LLMs: How They're Built",
       "link": "https://huggingface.co/blog/ibm-granite/granite-4-2",
       "description": "",
       "publishedDate": "Tue, 25 Aug 2026 15:14:14 GMT",
@@ -146,7 +135,7 @@
     },
     {
       "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-      "titleJa": "量子化対応ヒーリング: 完全精度のオリジナルを上回る圧縮 4 ビット モデル",
+      "titleJa": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
       "link": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
       "description": "",
       "publishedDate": "Tue, 25 Aug 2026 11:39:24 GMT",
@@ -157,7 +146,7 @@
     },
     {
       "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
-      "titleJa": "配線、実行、展開: Gradio の AI ワークフロー",
+      "titleJa": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
       "link": "https://huggingface.co/blog/gradio-workflow-guide",
       "description": "",
       "publishedDate": "Tue, 25 Aug 2026 00:00:00 GMT",
@@ -168,7 +157,7 @@
     },
     {
       "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
-      "titleJa": "当社の研究用医療 AI システムである AMIE は、この種のものとしては初めての研究でリアルタイムの臨床ビデオ相談機能を実証しました。",
+      "titleJa": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
       "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
       "description": "AMIE promotional video",
       "publishedDate": "Tue, 11 Aug 2026 17:00:00 +0000",
@@ -176,6 +165,160 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIME_SIZZLE_THUMBNAIL.Aug10.max-600x600.format-webp.webp",
       "language": "en"
+    },
+    {
+      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+      "titleJa": "How GPT-5.6 Sol helps run quantum computing experiments",
+      "link": "https://openai.com/index/codex-quantum-computing-experiments",
+      "description": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
+      "publishedDate": "Tue, 08 Sep 2026 17:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
+      "titleJa": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
+      "link": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+      "description": "",
+      "publishedDate": "Tue, 08 Sep 2026 14:23:07 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/HuauFbdznYW4fNQh8j4Tp.png",
+      "language": "en"
+    },
+    {
+      "title": "The Work Now Within Reach",
+      "titleJa": "The Work Now Within Reach",
+      "link": "https://openai.com/index/the-work-now-within-reach",
+      "description": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
+      "publishedDate": "Tue, 08 Sep 2026 13:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The Download: our 35 Innovators Under 35 this year",
+      "titleJa": "The Download: our 35 Innovators Under 35 this year",
+      "link": "https://www.technologyreview.com/2026/09/08/1143615/the-download-35-innovators-under-35-spiderwebs-measuring-nature/",
+      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Introducing our 35 Innovators Under 35 list for 2026 What will...",
+      "publishedDate": "Tue, 08 Sep 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/custom-story/1116327/images/recirc-1.png",
+      "language": "en"
+    },
+    {
+      "title": "Introducing ChatGPT Images 2.5",
+      "titleJa": "Introducing ChatGPT Images 2.5",
+      "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "description": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
+      "publishedDate": "Tue, 08 Sep 2026 11:30:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "This founder is teaching chips how to recycle (their energy)",
+      "titleJa": "This founder is teaching chips how to recycle (their energy)",
+      "link": "https://www.technologyreview.com/2026/09/08/1142079/hannah-earley-computer-chips-recycle-energy/",
+      "description": "Throughout the history of the computer chip, engineers have treated waste heat as an inevitable cost of a calculation. Hannah Earley, however, thinks it’s a design choice. Earley, 31, is cofounder and...",
+      "publishedDate": "Tue, 08 Sep 2026 10:36:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/Hannah-0G6A8202-2.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "This AI entrepreneur is developing agents that can plan ahead for the unexpected",
+      "titleJa": "This AI entrepreneur is developing agents that can plan ahead for the unexpected",
+      "link": "https://www.technologyreview.com/2026/09/08/1142088/danijar-hafner-developing-plan-ahead-agents/",
+      "description": "Danijar Hafner’s office in San Francisco’s SoMa district sits mostly empty. His brand-new startup is still in stealth mode and doesn’t even have its name on the door. On the day I visit, there’s only...",
+      "publishedDate": "Tue, 08 Sep 2026 10:34:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/Danijar-0G6A8052-2.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "This founder is making cheaper, cleaner steel",
+      "titleJa": "This founder is making cheaper, cleaner steel",
+      "link": "https://www.technologyreview.com/2026/09/08/1142094/laureen-meroueh-makes-cheaper-cleaner-steel/",
+      "description": "The steel industry isn’t exactly known for innovation. Very little has changed about purifying iron ore since the process was invented and commercialized in the 1850s. The majority of steelmakers melt...",
+      "publishedDate": "Tue, 08 Sep 2026 10:33:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/DSF3499-thumb.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "This geneticist’s age-reversal tech could help restore sight",
+      "titleJa": "This geneticist’s age-reversal tech could help restore sight",
+      "link": "https://www.technologyreview.com/2026/09/08/1142074/yuancheng-ryan-lu-age-reversal-tech-restores-sight/",
+      "description": "Yuancheng (Ryan) Lu is obsessed with aging. And with eyes. As he steps outside the Whitehead Institute in Cambridge, Massachusetts, his aviator glasses darken automatically in the sun. Age-related bli...",
+      "publishedDate": "Tue, 08 Sep 2026 10:32:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/733-MITtech-Ryan-RTF-0318.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "On the Navier–Stokes Millennium Prize Problem",
+      "titleJa": "On the Navier–Stokes Millennium Prize Problem",
+      "link": "https://openai.com/index/navier-stokes-solution",
+      "description": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
+      "publishedDate": "Tue, 08 Sep 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Funding grants for new research into AI and teen development",
+      "titleJa": "Funding grants for new research into AI and teen development",
+      "link": "https://openai.com/index/teen-development-research-grants",
+      "description": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+      "publishedDate": "Tue, 08 Sep 2026 09:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "NTT、AI活用の自律成膜基盤で人が理解・転用できる半導体成膜ルールを創出。β-Ga₂O₃のスパッタ法として世界初の単結晶薄膜実現",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ntt-autonomous-film-deposition/",
+      "description": "NTTは、AIとロボット技術を活用することで薄膜成長のプロセスを自律的に最適化し、得られたデータを人が理解しやすい「成膜ルール」へと変換する「解釈可能な自律成膜」を実証しました。成膜から評価までの実験サイクルが従来の約3 […]",
+      "publishedDate": "Tue, 08 Sep 2026 08:43:18 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/ntt-autonomous-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "仕事の相談相手「生成AI」は日本で約1割、米国では約3割で「同僚」上回る。AIと仕事に関する日米実態調査",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/indeed-recruit-partners-ai-survey/",
+      "description": "インディードリクルートパートナーズは、日米の就業者20,608人を対象に「AIと仕事に関する日米実態調査」を実施しました。米国では仕事の悩みを最初に相談する相手として「生成AI」が約3割を占め「同僚」を上回る結果となりま […]",
+      "publishedDate": "Tue, 08 Sep 2026 08:43:14 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/indeed-survey-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "GPT-6 Astraのスライド生成とは？活用事例10選を紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/gpt-6-astra-slide-generation/",
+      "description": "GPT 6 Astraは、PowerPointやGoogleスライドなどの資料作成にも活用できるAIモデルです。既存のテンプレートを生かした資料作成だけでなく、編集可能なスライドや3Dを取り入れた表現など、さまざまな活用 […]",
+      "publishedDate": "Tue, 08 Sep 2026 08:42:37 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/GPT-6-Astra-Slide-Generation_2609-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "失敗しないローコード開発とは？ノーコードとの違い・費用・ツールの選び方",
@@ -200,8 +343,30 @@
       "language": "ja"
     },
     {
+      "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+      "titleJa": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+      "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+      "description": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+      "publishedDate": "Tue, 08 Sep 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "1Password increases engineering productivity 21% with Codex",
+      "titleJa": "1Password increases engineering productivity 21% with Codex",
+      "link": "https://openai.com/index/1password",
+      "description": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.",
+      "publishedDate": "Tue, 08 Sep 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "The latest AI news we announced in July 2026",
-      "titleJa": "2026年7月に発表したAI最新ニュース",
+      "titleJa": "The latest AI news we announced in July 2026",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
       "description": "July AI recap header",
       "publishedDate": "Tue, 04 Aug 2026 13:00:00 +0000",
@@ -212,7 +377,7 @@
     },
     {
       "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
-      "titleJa": "BenchMIRT: LLM ベンチマークは実際に何を測定していますか?",
+      "titleJa": "BenchMIRT: What are LLM benchmarks actually measuring?",
       "link": "https://huggingface.co/blog/allenai/benchmirt",
       "description": "",
       "publishedDate": "Tue, 01 Sep 2026 21:39:07 GMT",
@@ -223,7 +388,7 @@
     },
     {
       "title": "The latest AI news we announced in August 2026",
-      "titleJa": "2026年8月に発表したAI最新ニュース",
+      "titleJa": "The latest AI news we announced in August 2026",
       "link": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
       "description": "Transitioning cards: 1. Text \"Gemini 3.7 Flash\" next to the Gemini logo icon; 2. a photo of a pixel phone; 3. Google Gemini logo above the text \"Claim your student plan for 1 year at no cost\"",
       "publishedDate": "Tue, 01 Sep 2026 20:45:00 +0000",
@@ -233,58 +398,14 @@
       "language": "en"
     },
     {
-      "title": "How AI plotted an interstellar journey to Alpha Centauri",
-      "titleJa": "AI はどのようにしてケンタウリ座アルファ星への星間旅行を計画したか",
-      "link": "https://www.technologyreview.com/2026/09/01/1143247/ai-interstellar-journey-alpha-centauri/",
-      "description": "A nonprofit organization called the Fermi Explorer Mission announced today that it intends to launch a spacecraft to our nearest star system by the end of 2029. It’s a hugely ambitious mission—if all...",
-      "publishedDate": "Tue, 01 Sep 2026 19:10:36 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/centauri-route2.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "How AI-native companies turn workflows into operating capability",
-      "titleJa": "AI ネイティブ企業がワークフローを運用能力に変える方法",
-      "link": "https://openai.com/index/ai-native-company-workflows",
-      "description": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
-      "publishedDate": "Tue, 01 Sep 2026 17:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "Try Google Pics: Easy image creation and editing in Google Workspace",
-      "titleJa": "Google Pics をお試しください: Google Workspace で簡単に画像を作成、編集できます",
+      "titleJa": "Try Google Pics: Easy image creation and editing in Google Workspace",
       "link": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
       "description": "Collage of images created by Google Pics, with the text \"Say hello to Google Pics\" on top",
       "publishedDate": "Tue, 01 Sep 2026 16:00:00 +0000",
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GooglePics_Hero.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Path to Astra: critical capabilities and frontier safeguards",
-      "titleJa": "アストラへの道: 重要な能力とフロンティアの安全対策",
-      "link": "https://openai.com/index/path-to-astra",
-      "description": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release.",
-      "publishedDate": "Tue, 01 Sep 2026 13:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
-      "titleJa": "医療機関は EHR と追加の業界データを ChatGPT に接続できるようになりました",
-      "link": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
-      "description": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research, and more.",
-      "publishedDate": "Tue, 01 Sep 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -296,105 +417,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.8-Flash-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "How law firm Gilbert + Tobin governs and scales AI with OpenAI",
-      "titleJa": "法律事務所ギルバート + トービンが OpenAI を使用して AI をどのように管理し、拡張するか",
-      "link": "https://openai.com/index/gilbert-tobin",
-      "description": "See how Gilbert + Tobin combines CEO-led commitment, rigorous governance, and human accountability to scale ChatGPT Enterprise and Codex across the firm.",
-      "publishedDate": "Tue, 01 Sep 2026 01:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
-      "titleJa": "@huggingface/kernels の紹介: ローカル AI 用の 200 以上の WebGPU カーネル",
-      "link": "https://huggingface.co/blog/webgpu-kernels",
-      "description": "",
-      "publishedDate": "Tue, 01 Sep 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/webgpu-kernels/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "3 new ways to plan and book travel in Search",
-      "titleJa": "検索で旅行を計画し予約する 3 つの新しい方法",
-      "link": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
-      "description": "Graphic depicting new travel features for AI Mode in Search",
-      "publishedDate": "Thu, 27 Aug 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Travel_Blog_Hero_8.27.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
-      "titleJa": "LFM2.5-DSpark による最大 3.2 倍の高速推論",
-      "link": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
-      "description": "",
-      "publishedDate": "Thu, 20 Aug 2026 16:52:57 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/ZMoThfdqzAz8cbxweVQfO.gif",
-      "language": "en"
-    },
-    {
-      "title": "Bring your spreadsheet data to life with Sheets canvas",
-      "titleJa": "スプレッドシート キャンバスでスプレッドシート データに命を吹き込む",
-      "link": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
-      "description": "The video shows Sheets canvas in action.",
-      "publishedDate": "Thu, 13 Aug 2026 16:45:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Sheets_canvas-blog-header-2784x.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
-      "titleJa": "最前線の防御者のための夜明け: 重要なサービスの保護に 10 億ドル",
-      "link": "https://openai.com/index/daybreak-for-frontline-defenders",
-      "description": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
-      "publishedDate": "Thu, 03 Sep 2026 13:15:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
-      "titleJa": "NeoMME: 効率的なマルチモーダルネイティブの多言語エンコーダー",
-      "link": "https://huggingface.co/blog/Hcompany/neomme",
-      "description": "",
-      "publishedDate": "Thu, 03 Sep 2026 13:13:48 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6264f9655f6f2e14d6ac981c/GJ6FUbgFpq1x8RNOqzmz-.webp",
-      "language": "en"
-    },
-    {
-      "title": "Google、AIによる飛行機雲回避プロジェクトを発表。航空機による気候影響を空域規模で削減",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/google-operation-blue-skies/",
-      "description": "Googleは、イギリス政府や航空業界のリーダー達と共同でAIを活用し、航空機による気候影響の軽減を目指す実証プログラム「Operation Blue Skies」を開始すると発表しました。 このニュースのポイント Go […]",
-      "publishedDate": "Thu, 03 Sep 2026 09:07:31 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/google-operation-blue-skies.png",
-      "language": "ja"
-    },
-    {
-      "title": "Astemo、ティアフォーと連携深化。E2E型自動運転AIモデルの実用化に向け、AI開発基盤の構築や「IoVプラットフォーム」の高度化を図る",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/astemo-tier4-end-to-end/",
-      "description": "Astemoは、自社の量産や車載化ノウハウとティアフォーの自動運転やAI開発技術を組み合わせ、SDVの開発基盤としてAstemoが構築を推進するIoVのさらなる高度化を進めます。 このニュースのポイント Astemo、自 […]",
-      "publishedDate": "Thu, 03 Sep 2026 09:07:27 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/Astemo.png",
       "language": "ja"
     },
     {
@@ -417,28 +439,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/generative-ai-in-manufacturing-case-studies_2608-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Wan 3.0】30秒動画を一発生成！アリババの最新動画生成AIの性能・使い方・料金を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/wan-3-0/",
-      "description": "2026年8月24日、Alibaba（アリババ）は動画生成AIの最新モデル「Wan 3.0」を正式リリースしました！ 「テキストを入力するだけで30秒の映像が出てくる」と聞くと驚くかもしれませんが、Wan 3.0はそれだ […]",
-      "publishedDate": "Mon, 31 Aug 2026 14:16:35 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Wan-3.0-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "生成AIのトークンとは？仕組み・料金への影響からコストを抑える節約術まで完全ガイド",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/token/",
-      "description": "ChatGPTなどの生成AIを使う際によく見かけるトークンという言葉。普段なじみのある文字数とは何が違うのか、料金や利用制限にどう影響するのか疑問に思う方も多いでしょう。トークンとは、生成AIがテキストを処理する際に使う […]",
-      "publishedDate": "Mon, 31 Aug 2026 13:40:01 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/token_2608-1024x576.webp",
       "language": "ja"
     },
     {
@@ -549,6 +549,17 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Commerce-Agents-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Amazon Linuxが4年ぶりにメジャーバージョンアップ、「Amazon Linux 2027」パブリックプレビュー。SELinuxがデフォルトで強制モードに",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/amazon_linux4amazon_linux_2027selinux.html",
+      "description": "Amazon Web Services（AWS）は、AWSに最適化されたLinux OSの4年ぶりとなるメジャーバージョンアップ「Amazon Linux 2027」をパブリックプレビューとしてリリースしました。 現時点の正式版はAmazo...",
+      "publishedDate": "2026-09-08T15:54:55Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/amazonlinux2027preview.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/6Gk-i12w.png",
-      "language": "ja"
-    },
-    {
-      "title": "DHH氏が「Omacom Foundation」を設立、Omarchy推進によるLinuxデスクトップの本格普及を目指す。マイケル・デル、ジャック・ドーシーら著名人も出資",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/dhhomacom_foundationomarchylinux.html",
-      "description": "DHH氏が開発したデスクトップ向けLinux「Omarchy」を推進するための団体「Omacom Foundation」が設立されました。 Omacomは「おまかせコンピューティング」の略 Omacom Foundationの「Omacom...",
-      "publishedDate": "2026-08-31T15:46:24Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/omacom-foundation-la.jpg",
       "language": "ja"
     }
   ]
