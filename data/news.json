@@ -1,6 +1,16 @@
 {
-  "lastUpdated": "2026-09-09T02:15:27.484863",
+  "lastUpdated": "2026-09-10T02:13:46.755576",
   "articles": [
+    {
+      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第十二回)｜深堀り取材【毎月3回更新】",
+      "link": "https://news.build-app.jp/article/42501/",
+      "description": "建築物の室内環境(温度・湿度・CO₂濃度など)を制御するなど主要な内部機能を担う設備領域におけるAI援用の事例を報告する。 新菱冷熱工業(新...",
+      "publishedDate": "Wed, 09 Sep 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/625cb5b834c1558508d69373dbebf00d-130x82.png",
+      "language": "ja"
+    },
     {
       "title": "東急建設とNTTソノリティ、音声AIでKY活動をデータ化して安全管理を効率化する取り組み",
       "link": "https://news.build-app.jp/article/42529/",
@@ -20,6 +30,26 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "【2029年竣工予定】（仮称）日本生命五反田ビル新築工事｜大林組施工のオフィスビルを解説",
+      "link": "https://news.build-app.jp/article/42545/",
+      "description": "（仮称）日本生命 五反田ビル新築工事とは 現在、五反田の日本生命ビル跡地では、（仮称）日本生命五反田ビル新築工事が始まっています。この記事で...",
+      "publishedDate": "Tue, 08 Sep 2026 22:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/497b3b400af730dd516de83d944aaaa1-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "プラウドタワー池袋とは｜再開発マンションの特徴を解説",
+      "link": "https://news.build-app.jp/article/42533/",
+      "description": "トレンドワード：プラウドタワー池袋 池袋駅から徒歩圏内、東池袋駅とはペデストリアンデッキで直結する「プラウドタワー池袋」は、池袋再開発エリア...",
+      "publishedDate": "Tue, 08 Sep 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/df8861d496ce5410738a0c32eaf8658a-130x82.png",
+      "language": "ja"
     },
     {
       "title": "大成建設、施工データ活用と自動化技術で土木現場の効率化を目指すT-iDRIVE X始動",
@@ -92,23 +122,13 @@
       "language": "ja"
     },
     {
-      "title": "酸欠とは？何パーセントから危険？｜建設現場での症状・原因・対策を解説",
-      "link": "https://news.build-app.jp/article/42497/",
-      "description": "マンホールやピット、タンクなどで行う作業には、酸欠（酸素欠乏）の危険があります。酸素濃度の低下は目やにおいでは判別できず、気づいたときには自...",
-      "publishedDate": "Thu, 03 Sep 2026 22:00:00 +0000",
+      "title": "BuddyBoard、紙図面の手書き修正指示をAIが読み取りリスト化する新機能を提供開始",
+      "link": "https://news.build-app.jp/article/42559/",
+      "description": "株式会社BuddyBoard（愛知県名古屋市瑞穂区、代表取締役：小坂来造）は、図面ナレッジプラットフォーム「BuddyBoard」の新機能と...",
+      "publishedDate": "Thu, 10 Sep 2026 01:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/10/e3db13663ae1f4014964fcc86eccd9ac-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "大成建設、既存ビルへIoTセンサーを後付け、obniz Nowとの連携で設備データを見える化",
-      "link": "https://news.build-app.jp/article/42443/",
-      "description": "大成建設株式会社は、クラウド型の建物統合管理プラットフォーム「LifeCycleOS®」を、株式会社obnizが手がけるIoTサービス「ob...",
-      "publishedDate": "Thu, 03 Sep 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/taisei_building_iot-130x68.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/buddyboard_aiscan-130x87.webp",
       "language": "ja"
     },
     {
@@ -119,16 +139,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/plateau-ogp-1024x536.webp",
-      "language": "ja"
-    },
-    {
-      "title": "（仮称）SMBC九段プロジェクト｜三井住友銀行の本部にふさわしい環境配慮ビル",
-      "link": "https://news.build-app.jp/article/42458/",
-      "description": "（仮称）SMBC九段プロジェクトとは （仮称）SMBC九段プロジェクトは、SMBCグループの本部となる環境配慮ビルです。三井住友銀行の本部ビ...",
-      "publishedDate": "Sun, 06 Sep 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/5e7bd82f552a5b83e98e85f60e980f46-130x82.png",
       "language": "ja"
     },
     {
@@ -270,16 +280,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "戸田建設、爆薬装填ロボットTo-RIGGERで山岳トンネル発破作業の無人化に前進",
-      "link": "https://news.build-app.jp/article/42478/",
-      "description": "戸田建設は、UP設計コンサルタント、HCI、虎乃門建設機械の協力を得て開発した爆薬装填ロボット「To-RIGGER™（トリガー...",
-      "publishedDate": "Fri, 04 Sep 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/explosive_to_rigger-130x111.jpg",
-      "language": "ja"
     },
     {
       "title": "IFC 4.4 Integration for ISO Submission approval voting",
