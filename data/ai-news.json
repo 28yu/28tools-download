@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-10T05:40:58.988719",
+  "lastUpdated": "2026-09-11T05:40:20.797141",
   "articles": [
     {
       "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
@@ -178,28 +178,6 @@
       "language": "en"
     },
     {
-      "title": "【Claude Fable 5.1】科学研究もコーディングも圧倒！Anthropic最強モデルの性能・料金・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-fable-5-1/",
-      "description": "2026年9月2日、Anthropicが新モデル「Claude Fable 5.1」を公開しました！ 前モデルのClaude Fable 5が登場してからわずか約3か月というスピードでのアップデートとなり、Anthrop […]",
-      "publishedDate": "Wed, 02 Sep 2026 00:28:03 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Fable-5.1-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
-      "titleJa": "Gemini API 管理エージェント: 3.6 フラッシュ、フックなど",
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
-      "description": "Managed Agents Gemini 3.6 Flash, Hooks and Triggers",
-      "publishedDate": "Tue, 28 Jul 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/unnamed_2_vNnOv20.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
       "title": "5 ways to upgrade your home decor with Google Search",
       "titleJa": "Google 検索で家の装飾をアップグレードする 5 つの方法",
       "link": "https://blog.google/products-and-platforms/products/search/home-decor-tips/",
@@ -288,17 +266,6 @@
       "language": "en"
     },
     {
-      "title": "The Download: our 35 Innovators Under 35 this year",
-      "titleJa": "ダウンロード: 今年の 35 歳未満のイノベーター 35 人",
-      "link": "https://www.technologyreview.com/2026/09/08/1143615/the-download-35-innovators-under-35-spiderwebs-measuring-nature/",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Introducing our 35 Innovators Under 35 list for 2026 What will...",
-      "publishedDate": "Tue, 08 Sep 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/custom-story/1116327/images/recirc-1.png",
-      "language": "en"
-    },
-    {
       "title": "Introducing ChatGPT Images 2.5",
       "titleJa": "ChatGPT イメージ 2.5 の紹介",
       "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
@@ -307,50 +274,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "This founder is teaching chips how to recycle (their energy)",
-      "titleJa": "この創設者はチップに（エネルギーを）リサイクルする方法を教えています",
-      "link": "https://www.technologyreview.com/2026/09/08/1142079/hannah-earley-computer-chips-recycle-energy/",
-      "description": "Throughout the history of the computer chip, engineers have treated waste heat as an inevitable cost of a calculation. Hannah Earley, however, thinks it’s a design choice. Earley, 31, is cofounder and...",
-      "publishedDate": "Tue, 08 Sep 2026 10:36:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/Hannah-0G6A8202-2.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "This AI entrepreneur is developing agents that can plan ahead for the unexpected",
-      "titleJa": "この AI 起業家は、予期せぬ事態に備えて事前に計画できるエージェントを開発しています",
-      "link": "https://www.technologyreview.com/2026/09/08/1142088/danijar-hafner-developing-plan-ahead-agents/",
-      "description": "Danijar Hafner’s office in San Francisco’s SoMa district sits mostly empty. His brand-new startup is still in stealth mode and doesn’t even have its name on the door. On the day I visit, there’s only...",
-      "publishedDate": "Tue, 08 Sep 2026 10:34:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/Danijar-0G6A8052-2.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "This founder is making cheaper, cleaner steel",
-      "titleJa": "この創設者はより安価でクリーンな鋼を製造しています",
-      "link": "https://www.technologyreview.com/2026/09/08/1142094/laureen-meroueh-makes-cheaper-cleaner-steel/",
-      "description": "The steel industry isn’t exactly known for innovation. Very little has changed about purifying iron ore since the process was invented and commercialized in the 1850s. The majority of steelmakers melt...",
-      "publishedDate": "Tue, 08 Sep 2026 10:33:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/DSF3499-thumb.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "This geneticist’s age-reversal tech could help restore sight",
-      "titleJa": "この遺伝学者の年齢逆転技術は視力の回復に役立つ可能性がある",
-      "link": "https://www.technologyreview.com/2026/09/08/1142074/yuancheng-ryan-lu-age-reversal-tech-restores-sight/",
-      "description": "Yuancheng (Ryan) Lu is obsessed with aging. And with eyes. As he steps outside the Whitehead Institute in Cambridge, Massachusetts, his aviator glasses darken automatically in the sun. Age-related bli...",
-      "publishedDate": "Tue, 08 Sep 2026 10:32:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/733-MITtech-Ryan-RTF-0318.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -376,28 +299,6 @@
       "language": "en"
     },
     {
-      "title": "NTT、AI活用の自律成膜基盤で人が理解・転用できる半導体成膜ルールを創出。β-Ga₂O₃のスパッタ法として世界初の単結晶薄膜実現",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ntt-autonomous-film-deposition/",
-      "description": "NTTは、AIとロボット技術を活用することで薄膜成長のプロセスを自律的に最適化し、得られたデータを人が理解しやすい「成膜ルール」へと変換する「解釈可能な自律成膜」を実証しました。成膜から評価までの実験サイクルが従来の約3 […]",
-      "publishedDate": "Tue, 08 Sep 2026 08:43:18 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/ntt-autonomous-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "仕事の相談相手「生成AI」は日本で約1割、米国では約3割で「同僚」上回る。AIと仕事に関する日米実態調査",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/indeed-recruit-partners-ai-survey/",
-      "description": "インディードリクルートパートナーズは、日米の就業者20,608人を対象に「AIと仕事に関する日米実態調査」を実施しました。米国では仕事の悩みを最初に相談する相手として「生成AI」が約3割を占め「同僚」を上回る結果となりま […]",
-      "publishedDate": "Tue, 08 Sep 2026 08:43:14 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/indeed-survey-main.png",
-      "language": "ja"
-    },
-    {
       "title": "GPT-6 Astraのスライド生成とは？活用事例10選を紹介",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/gpt-6-astra-slide-generation/",
@@ -409,36 +310,179 @@
       "language": "ja"
     },
     {
-      "title": "失敗しないローコード開発とは？ノーコードとの違い・費用・ツールの選び方",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/low-code-development/",
-      "description": "「システムの内製化を任されたが、ローコード開発とノーコード開発の線引きがわからない」「いくらかかり、どこまで作れるのかがわからないと社内で説明できない」。情報システム部門・DX推進担当・業務部門で内製化を命じられた担当者 […]",
-      "publishedDate": "Tue, 08 Sep 2026 01:29:50 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/LowCodeMain.png",
-      "language": "ja"
+      "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+      "titleJa": "OpenAI、教室からニュース編集室までジャーナリズムをサポートする取り組みを拡大",
+      "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+      "description": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+      "publishedDate": "Tue, 08 Sep 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
     },
     {
-      "title": "ChatGPT Enterpriseとは？機能・料金・Businessプランとの違いを解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/chatgpt-enterprise-openai-2026/",
-      "description": "ChatGPT Enterpriseは、OpenAIが一般企業向けに提供する、契約ベースの上位プランです。個人向けプランを人数分そろえるサービスではなく、企業のIT環境の一部として、利用者・権限・データ・費用を組織で管理 […]",
-      "publishedDate": "Tue, 08 Sep 2026 01:27:18 +0000",
-      "source": "AIsmiley",
+      "title": "The latest AI news we announced in July 2026",
+      "titleJa": "2026年7月に発表したAI最新ニュース",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
+      "description": "July AI recap header",
+      "publishedDate": "Tue, 04 Aug 2026 13:00:00 +0000",
+      "source": "Google AI Blog",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/ChatGPTEnterpriseMain.png",
-      "language": "ja"
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/July_AI_Recap_still.max-600x600.format-webp.webp",
+      "language": "en"
     },
     {
-      "title": "【Qwen3.8-Flash】学習コスト9分の1でOpus 4.6超えの衝撃！Qwen4アーキテクチャ先行モデルの性能・使い方・活用シーンまでを徹底解説",
+      "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
+      "titleJa": "BenchMIRT: LLM ベンチマークは実際に何を測定していますか?",
+      "link": "https://huggingface.co/blog/allenai/benchmirt",
+      "description": "",
+      "publishedDate": "Tue, 01 Sep 2026 21:39:07 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/c_Rnu4DRj6Djxk1IT0gKu.png",
+      "language": "en"
+    },
+    {
+      "title": "The latest AI news we announced in August 2026",
+      "titleJa": "2026年8月に発表したAI最新ニュース",
+      "link": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
+      "description": "Transitioning cards: 1. Text \"Gemini 3.7 Flash\" next to the Gemini logo icon; 2. a photo of a pixel phone; 3. Google Gemini logo above the text \"Claim your student plan for 1 year at no cost\"",
+      "publishedDate": "Tue, 01 Sep 2026 20:45:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/August_AI_Recap_social.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Try Google Pics: Easy image creation and editing in Google Workspace",
+      "titleJa": "Google Pics をお試しください: Google Workspace で簡単に画像を作成、編集できます",
+      "link": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
+      "description": "Collage of images created by Google Pics, with the text \"Say hello to Google Pics\" on top",
+      "publishedDate": "Tue, 01 Sep 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GooglePics_Hero.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
+      "titleJa": "@huggingface/kernels の紹介: ローカル AI 用の 200 以上の WebGPU カーネル",
+      "link": "https://huggingface.co/blog/webgpu-kernels",
+      "description": "",
+      "publishedDate": "Tue, 01 Sep 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/webgpu-kernels/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "機械学習とは？仕組みやAI・ディープラーニングとの違い、活用例をわかりやすく解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwen3-8-flash/",
-      "description": "2026年8月26日、アリババのQwenチームが次世代モデル「Qwen3.8-Flash」を公開しました！ Qwen公式の発表によれば、Qwen3.8-Flashは来たるQwen4ファミリーのアーキテクチャを先取りした新 […]",
-      "publishedDate": "Tue, 01 Sep 2026 03:33:31 +0000",
+      "link": "https://weel.co.jp/media/innovator/machine-learning/",
+      "description": "機械学習は、身の回りのビジネスシーンですでに幅広く使われている技術です。需要予測や製品の外観検査、音声の文字起こしなど、データをもとに未来の数値や分類を導き出す場面で活躍しています。一方で、AIやディープラーニング、生成 […]",
+      "publishedDate": "Thu, 10 Sep 2026 22:11:38 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.8-Flash-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Machine-learning_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIコンサルティング企業のおすすめ10選！費用相場や選び方も徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/generation-ai-consulting/",
+      "description": "生成AIコンサルティングは、企業の課題に合わせて生成AIの導入戦略の策定から開発・実装、運用までを支援するサービスです。 IT専門調査会社 IDC Japan 株式会社の発表によると、国内AI市場の支出額は2025年の2 […]",
+      "publishedDate": "Thu, 10 Sep 2026 21:36:47 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/generation-ai-consulting_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "なぜ今「AI蒸留」が注目されるのか？コスト削減・軽量化を実現する仕組みと活用事例を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/ai-distillation/",
+      "description": "生成AIを活用したいものの、高性能なAIほど計算コストが高く導入しづらいと悩んではいませんか？そんな課題を解決する技術がAI蒸留（知識蒸留）です。巨大なAIの頭脳を小さなモデルへ効率よく引き継がせる技術で、DeepSee […]",
+      "publishedDate": "Thu, 10 Sep 2026 13:07:20 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-Distillation_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Muse Spark 1.3とは？Metaの自律型AIエージェントの仕組み・特徴・安全性・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/muse-spark-1-3/",
+      "description": "2026年9月、MetaからエージェントとコーディングのためのAIモデルが公開されました。 今回公開された「Muse Spark 1.3」は、長時間にわたる自律的な作業（long-horizon agentic work […]",
+      "publishedDate": "Thu, 10 Sep 2026 08:32:32 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Muse-Spark-1.3-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ABEJA、JR東日本と「TAKANAWA GATEWAY CITY」でフィジカルAI実証開始。館内物流デリバリー自動化へ",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/abeja-jreast-robot-delivery/",
+      "description": "ABEJAはJR東日本と連携し、大規模開発エリア「TAKANAWA GATEWAY CITY」でフィジカルAIを用いた実証プロジェクトを開始しました。人間の動きを模倣学習した双腕ロボットにより、デリバリーロボットへの荷物 […]",
+      "publishedDate": "Thu, 10 Sep 2026 08:31:44 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/abeja-jreast-takanawa-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI、自社初の推論チップ「Jalapeño」の性能向上を発表。電力効率1.9倍・応答速度最大3.6倍を実証",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-jalapeno-chip-performance/",
+      "description": "OpenAIは、自社開発の推論専用チップ「Jalapeño」のテスト結果を発表しました。ワット当たり処理量1.5～1.9倍、エンドツーエンドのレイテンシ最大3.6倍低減を達成し、2026年内に自社インフラへ導入する予定で […]",
+      "publishedDate": "Thu, 10 Sep 2026 08:18:46 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/openai-jalapeno-ai-chip-performance-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "OKI、生成AIを活用した「議事プロAI」開発。議事録作成から顧客の課題分析・対策案提示を一元化",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/oki-giji-pro-ai-announcement/",
+      "description": "OKIは、生成AIを活用した課題分析AI「議事プロAI」を開発しました。議事録に過去データや公開情報、専門家の知見などを組み合わせることで、顧客の課題分析から対策案の提示まで行います。 このニュースのポイント OKIが議 […]",
+      "publishedDate": "Thu, 10 Sep 2026 06:56:59 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/oki-giji-pro-ai-announcement.png",
+      "language": "ja"
+    },
+    {
+      "title": "Indeed、求人原稿の改善提案を届ける「Indeed PLUS AIアシスタント」提供開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/indeed-plus-ai-assistant/",
+      "description": "Indeedは採用企業向けに、求職者の行動データや他社求人に関するデータを分析し、求人原稿の改善提案を届ける新機能「Indeed PLUS AIアシスタント」の提供を開始しました。 このニュースのポイント Indeed、 […]",
+      "publishedDate": "Thu, 10 Sep 2026 06:56:56 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/indeed.png",
+      "language": "ja"
+    },
+    {
+      "title": "日野自動車、「AI搭載型乗合バス 車内事故防止システム」の実証実験へシステム提供",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/hino-accident-prevention-system/",
+      "description": "日野自動車は、日本バス協会が実施する「AI搭載型乗合バス 車内事故防止システム」の実証実験へシステムを提供します。AIを活用し、運転士の負担軽減と乗客の安全性向上を目指します。 このニュースのポイント 日野自動車、日本バ […]",
+      "publishedDate": "Thu, 10 Sep 2026 06:21:30 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/hino.png",
+      "language": "ja"
+    },
+    {
+      "title": "島津製作所、AIが化合物の関連文献を検索・解析し分析条件を提案する「Methodintelligence for LC」発売",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/simazu-methodintelligence-for-lc/",
+      "description": "島津製作所は、液体クロマトグラフ（LC）の分析条件をAIで提案するクラウドサービス「Methodintelligence for LC」を発売しました。4,000万件を超える文献情報をAIが解析し、化合物の分析条件を提案 […]",
+      "publishedDate": "Thu, 10 Sep 2026 06:19:40 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/Simazu-Methodintelligence-for-LC-001.png",
       "language": "ja"
     },
     {
@@ -450,17 +494,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/fukuoka2026-2ndsp000.png",
-      "language": "ja"
-    },
-    {
-      "title": "【Gemini 3.8 Flash】6週間で3度目のFlash更新！Flashなのにフロンティア級の性能・料金・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gemini-3-8-flash/",
-      "description": "2026年9月3日、GoogleはGeminiシリーズの最新モデル「Gemini 3.8 Flash」を公開しました！ わずか3週間前にリリースされた3.7 Flashに続く更新で、6週間で3回目のFlashリリースとい […]",
-      "publishedDate": "Thu, 03 Sep 2026 01:57:23 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-3.8-Flash-1024x576.webp",
       "language": "ja"
     },
     {
@@ -497,58 +530,36 @@
       "language": "ja"
     },
     {
-      "title": "OpenAI、新モデル「GPT-6 Astra」発表。サイバーセキュリティ能力が大幅向上し「Critical」水準に到達",
+      "title": "Claude Mythos 5.1とは？最上位モデルの特徴・活用法・提供形態を徹底解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-gpt6-astra-cybersecurity/",
-      "description": "OpenAIは、新モデル「GPT-6 Astra」を発表しました。コンピュータ操作や専門業務、コーディングなどで高い性能を発揮するほか、サイバーセキュリティ能力が大幅に向上しました。 このニュースのポイント OpenAI […]",
-      "publishedDate": "Mon, 07 Sep 2026 08:26:59 +0000",
+      "link": "https://aismiley.co.jp/ai_news/claude-mythos-5-1/",
+      "description": "Anthropicが2026年9月に発表した最上位AIモデル「Claude Mythos 5.1」が、AI業界で大きな注目を集めています。しかし「名前は聞いたことがあるが、一般的なClaudeとは何が違うのか分からない」 […]",
+      "publishedDate": "Fri, 11 Sep 2026 05:15:20 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/gpt6-astra-main.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/Claudemythos5.1.png",
       "language": "ja"
     },
     {
-      "title": "GPT-6 Astraとは？進化点・旧モデル比較からビジネス活用法まで徹底解説",
+      "title": "GPT-6 AstraとClaude Fable 5.1の性能を比較してみた！料金・ベンチマーク・実測で徹底検証",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gpt-6-astra/",
-      "description": "「AIに指示を出したら、あとは資料作成もPC操作も丸ごと任せられたら――」。そんな理想を現実に近づけたのが、OpenAIが2026年9月3日に発表した最新の最上位モデル「GPT-6 Astra（ジーピーティー6 アストラ […]",
-      "publishedDate": "Mon, 07 Sep 2026 07:25:03 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/gpt6ic.png",
-      "language": "ja"
-    },
-    {
-      "title": "人手不足、人材の多国籍化に対応する製品をはじめとした 多様なAIソリューションが福岡に集結！福岡初開催「AI博覧会 Fukuoka 2026」注目出展社を発表",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aihaku-fukuoka2026-02/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年9月30日（水）・10月1日（木）の2日間、博多国際展示場＆カンファレンスセンターにて「AI博覧会 Fukuoka 202 […]",
-      "publishedDate": "Mon, 07 Sep 2026 05:00:35 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/AI博覧会-Fukuoka-2026-pickup2.png",
-      "language": "ja"
-    },
-    {
-      "title": "【Agentic Video Understanding】動画解析の常識が変わる！Geminiのトークン消費88%削減を実現するAI動画理解機能を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/agentic-video-understanding/",
-      "description": "Agentic Video Understandingは、Googleが2026年9月2日に公開したGeminiモデル向けの新しい動画解析機能です。 従来の動画解析では、1秒に1フレームという固定レートで全フレームを読み […]",
-      "publishedDate": "Fri, 04 Sep 2026 01:59:43 +0000",
+      "link": "https://weel.co.jp/media/innovator/astro-fable5-1/",
+      "description": "2026年9月、OpenAIから最新フロンティアモデル「GPT-6 Astra」が正式にリリースされました。 対するAnthropicの最上位モデル「Claude Fable 5.1」とは、API料金が入力$10・出力$ […]",
+      "publishedDate": "Fri, 11 Sep 2026 03:58:19 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Agentic-Video-Understanding-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/astro-fable5-1_2609-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "【Claude Commerce Agents】オンラインショッピングを変革するAnthropicのオープンソースAIエージェントを徹底解説",
+      "title": ".NET 11リリース候補版が登場。.NETランタイムが非同期ネイティブ対応、プロセッサ数の上限がなくなる、AOTコンパイラによるネイティブバイナリの高速化など",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-commerce-agents/",
-      "description": "Anthropicが2026年9月3日、EC事業者やマーケットプレイス運営者向けのAIエージェント開発キット「Claude Commerce Agents」をオープンソースで公開しました！ Claudeを活用したショッピ […]",
-      "publishedDate": "Fri, 04 Sep 2026 00:08:50 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/net_11netaot.html",
+      "description": "マイクロソフトは同社の包括的なアプリケーションフレームワークの次期版となる「.NET 11」の最初のリリース候補版となる「.NET 11 Release Candidate 1」を発表しました。 〰️ SAVE THE DATE 〰️.NE...",
+      "publishedDate": "2026-09-10T15:42:50Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Commerce-Agents-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/HRu6DQBWoAAdv0t.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/claudeforce-ann03.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "AIエージェントがRedshiftを操作してDWH構築や集計分析など可能に、Amazon RedshiftがAgent Toolkit for AWSと統合",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/airedshiftdwhamazon_redshiftagent_toolkit_for_aws.html",
-      "description": "Amazon Web Services（AWS）は、同社がフルマネージドで提供するデータウェアハウスサービス「Amazon Redshift」が、Agent Toolkit for AWSと統合されたことを明らかにしました。 Agent T...",
-      "publishedDate": "2026-09-01T15:07:04Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/redshift-agenttool4aws-in.jpg",
       "language": "ja"
     }
   ]
