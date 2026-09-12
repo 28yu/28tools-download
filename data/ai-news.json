@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-11T05:40:20.797141",
+  "lastUpdated": "2026-09-12T05:28:18.646580",
   "articles": [
     {
       "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
@@ -98,61 +98,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Batteries just broke another record in the US",
-      "titleJa": "バッテリーは米国で新たな記録を更新しました",
-      "link": "https://www.technologyreview.com/2026/09/09/1143680/batteries-us-record/",
-      "description": "Battery installations hit a new record in the US in the second quarter of 2026. In total, 20.2 gigawatt-hours of new capacity came online, according to a new report. That’s enough to supply the daily...",
-      "publishedDate": "Wed, 09 Sep 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/GettyImages-1926227948.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "OKI、生成AIを活用した新システム「CTstage AIコンシェルジュ」開発",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/oki-ctstage-ai-concierge/",
-      "description": "OKIは、生成AIの活用でお問い合わせの応対品質向上と運用負荷軽減を図る、次世代コンタクトセンターシステムの新商品「CTstage AIコンシェルジュ」を開発しました。 このニュースのポイント OKI、AIを活用した次世 […]",
-      "publishedDate": "Wed, 09 Sep 2026 08:48:56 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/OKI.png",
-      "language": "ja"
-    },
-    {
-      "title": "住友商事、全国19空港でAIを活用した設備の保守点検・業務高度化の実証実験を開始。共同利用型のソリューションを構築",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sumito-ai-airport-maintenance/",
-      "description": "住友商事は、全国19空港と連携し、AIを活用した空港設備の保守点検や運営業務の高度化に向けた実証実験を開始しました。複数の空港事業者による共同の開発・利用を前提としたソリューションを開発し、導入・運用コストの抑制を図りま […]",
-      "publishedDate": "Wed, 09 Sep 2026 08:48:51 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/sumito-ai-airport-Maintenance-inspection.png",
-      "language": "ja"
-    },
-    {
-      "title": "Understanding the thermal ceiling in portable power",
-      "titleJa": "ポータブル電源の熱上限を理解する",
-      "link": "https://www.technologyreview.com/2026/09/09/1143279/understanding-the-thermal-ceiling-in-portable-power/",
-      "description": "Plug a phone into a modern charger and the first 10 minutes are impressive. The next 20 are not. This is not a defect. It’s the connected device protecting itself. As temperature rises during charging...",
-      "publishedDate": "Wed, 09 Sep 2026 08:18:13 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/Anker_US_DTC_no-copy_683x382px.jpg",
-      "language": "en"
-    },
-    {
-      "title": "What OpenAI’s latest controversy tells us about the future of math",
-      "titleJa": "OpenAI の最新の論争が数学の未来について語ること",
-      "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
-      "description": "OpenAI’s latest mathematical milestone has quickly become mired in controversy. Today, the company announced that its agents have solved one of the Millennium Prize Problems, some of the most importan...",
-      "publishedDate": "Wed, 09 Sep 2026 03:10:08 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/math-2c.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -277,28 +222,6 @@
       "language": "en"
     },
     {
-      "title": "On the Navier–Stokes Millennium Prize Problem",
-      "titleJa": "ナビエ・ストークスのミレニアム賞問題について",
-      "link": "https://openai.com/index/navier-stokes-solution",
-      "description": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
-      "publishedDate": "Tue, 08 Sep 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Funding grants for new research into AI and teen development",
-      "titleJa": "AI と青少年の発達に関する新しい研究への助成金の提供",
-      "link": "https://openai.com/index/teen-development-research-grants",
-      "description": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
-      "publishedDate": "Tue, 08 Sep 2026 09:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "GPT-6 Astraのスライド生成とは？活用事例10選を紹介",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/gpt-6-astra-slide-generation/",
@@ -308,17 +231,6 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/GPT-6-Astra-Slide-Generation_2609-1024x576.webp",
       "language": "ja"
-    },
-    {
-      "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
-      "titleJa": "OpenAI、教室からニュース編集室までジャーナリズムをサポートする取り組みを拡大",
-      "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
-      "description": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
-      "publishedDate": "Tue, 08 Sep 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "The latest AI news we announced in July 2026",
@@ -376,6 +288,28 @@
       "language": "en"
     },
     {
+      "title": "3 new ways to plan and book travel in Search",
+      "titleJa": "検索で旅行を計画および予約する 3 つの新しい方法",
+      "link": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
+      "description": "Graphic depicting new travel features for AI Mode in Search",
+      "publishedDate": "Thu, 27 Aug 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Travel_Blog_Hero_8.27.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Bring your spreadsheet data to life with Sheets canvas",
+      "titleJa": "スプレッドシート キャンバスでスプレッドシート データに命を吹き込む",
+      "link": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
+      "description": "The video shows Sheets canvas in action.",
+      "publishedDate": "Thu, 13 Aug 2026 16:45:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Sheets_canvas-blog-header-2784x.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
       "title": "機械学習とは？仕組みやAI・ディープラーニングとの違い、活用例をわかりやすく解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/machine-learning/",
@@ -398,6 +332,39 @@
       "language": "ja"
     },
     {
+      "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+      "titleJa": "研究者が Codex と ChatGPT を使用して新しい抗菌分子を探索する方法",
+      "link": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+      "description": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.",
+      "publishedDate": "Thu, 10 Sep 2026 16:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "3 ways to prep for your next big race with Search",
+      "titleJa": "検索を使用して次の大きなレースに備える 3 つの方法",
+      "link": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+      "description": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
+      "publishedDate": "Thu, 10 Sep 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Race_Running_Tips.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Now everyone can put data to work",
+      "titleJa": "誰もがデータを活用できるようになりました",
+      "link": "https://openai.com/index/put-data-to-work",
+      "description": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
+      "publishedDate": "Thu, 10 Sep 2026 15:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "なぜ今「AI蒸留」が注目されるのか？コスト削減・軽量化を実現する仕組みと活用事例を解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/ai-distillation/",
@@ -407,6 +374,17 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-Distillation_2609-1024x576.webp",
       "language": "ja"
+    },
+    {
+      "title": "The Download: a “God-driven” cryptocurrency and a solar engineering roadmap",
+      "titleJa": "ダウンロード: 「神主導の」暗号通貨と太陽光発電工学のロードマップ",
+      "link": "https://www.technologyreview.com/2026/09/10/1143828/the-download-christian-cryptocurrency-scandal-solar-engineering-roadmap/",
+      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. God told them to sell crypto. Their investors lost everything....",
+      "publishedDate": "Thu, 10 Sep 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/North_Pole_Expedition_MIT_Tech_Rev_TimK_002top.jpg?fit=1920,1280",
+      "language": "en"
     },
     {
       "title": "Muse Spark 1.3とは？Metaの自律型AIエージェントの仕組み・特徴・安全性・使い方を徹底解説",
@@ -497,14 +475,14 @@
       "language": "ja"
     },
     {
-      "title": "生成AIの製造業活用事例10選！メリット・導入ステップ・注意点まで徹底解説",
+      "title": "【Data Agent in ChatGPT Work】SQLなしで社内データを分析！OpenAIの新エージェントの使い方・料金・活用シーンを徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/generative-ai-in-manufacturing-case-studies/",
-      "description": "製造業における生成AI・AIエージェント・フィジカルAIの企業活用事例10選を紹介。導入メリットや注意点、導入ステップまで解説します。",
-      "publishedDate": "Sun, 06 Sep 2026 21:32:55 +0000",
+      "link": "https://weel.co.jp/media/innovator/data-agent-in-chatgpt-work/",
+      "description": "Data Agent in ChatGPT Workは、OpenAIが2026年9月11日に公開した社内データ分析に特化した新しいAIエージェントです。SQLやBIツールの操作スキルがなくても、チャットで質問するだけで社 […]",
+      "publishedDate": "Sat, 12 Sep 2026 04:15:32 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/generative-ai-in-manufacturing-case-studies_2608-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Data-Agent-in-ChatGPT-Work_2609-1024x576.webp",
       "language": "ja"
     },
     {
@@ -527,6 +505,28 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Lyria-3.5-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "NVIDIAがHugging Faceを買収へ。オープンモデルプラットフォームを強化",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/nvidia-acquires-hugging-face/",
+      "description": "NVIDIAは、Hugging Faceを買収することに合意したと発表しました。買収額は129億3030万ドルです。買収後も、Hugging Faceはオープンプラットフォームとして存続し、開発者はモデルやクラウドなどを […]",
+      "publishedDate": "Fri, 11 Sep 2026 08:33:38 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/nvidia-huggingface-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "LINEヤフー、「Agent i」でAIとの対話の文脈に応じた広告配信を拡大。新たな顧客接点を創出",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/line-yahoo-agent-i-advertising/",
+      "description": "LINEヤフーは、AIエージェント「Agent i」において、AIとの対話の文脈に応じた広告配信を拡大し、広告主向け課金を開始しました。AIとの対話の文脈に応じて、ユーザーのニーズに合った選択肢を本エージェントが提示する […]",
+      "publishedDate": "Fri, 11 Sep 2026 08:00:29 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/line-yahoo-Agent-i-Advertising-expansion.png",
       "language": "ja"
     },
     {
