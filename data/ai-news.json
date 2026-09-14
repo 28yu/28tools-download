@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-09-13T05:43:34.312434",
+  "lastUpdated": "2026-09-14T05:53:25.703483",
   "articles": [
     {
       "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
-      "titleJa": "センテンストランスフォーマーを使用したマルチベクトル埋め込みモデルのトレーニングと微調整",
+      "titleJa": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
       "link": "https://huggingface.co/blog/train-multi-vector-encoder",
       "description": "",
       "publishedDate": "Wed, 26 Aug 2026 00:00:00 GMT",
@@ -14,7 +14,7 @@
     },
     {
       "title": "5 new ways to level up your learning with Search",
-      "titleJa": "検索を使って学習をレベルアップする 5 つの新しい方法",
+      "titleJa": "5 new ways to level up your learning with Search",
       "link": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
       "description": "an illustrated image with icons and phrasing like \"Add Notebook\" and \"Ask Google\"",
       "publishedDate": "Wed, 19 Aug 2026 19:00:00 +0000",
@@ -25,7 +25,7 @@
     },
     {
       "title": "Paul Christiano joins OpenAI Foundation Board",
-      "titleJa": "ポール・クリスティアーノが OpenAI Foundation 理事会に参加",
+      "titleJa": "Paul Christiano joins OpenAI Foundation Board",
       "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
       "description": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
       "publishedDate": "Wed, 09 Sep 2026 17:00:00 GMT",
@@ -36,7 +36,7 @@
     },
     {
       "title": "Get ready for the game with new football features in Search",
-      "titleJa": "検索の新しいサッカー機能で試合に備えましょう",
+      "titleJa": "Get ready for the game with new football features in Search",
       "link": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
       "description": "An illustrated graphic set against a vibrant green background featuring American football elements, including a gold trophy, a blue helmet, a silver whistle, a football, a mini scoreboard, and play di...",
       "publishedDate": "Wed, 09 Sep 2026 16:00:00 +0000",
@@ -47,7 +47,7 @@
     },
     {
       "title": "Recreating a 70-year love story frame by frame",
-      "titleJa": "70年にわたる愛の物語を一コマ一コマ再現",
+      "titleJa": "Recreating a 70-year love story frame by frame",
       "link": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
       "description": "An elderly couple sitting in a movie theater. Overlayed are \"Teulluride Film Festival\" and \"Love, Rendered\"",
       "publishedDate": "Wed, 09 Sep 2026 16:00:00 +0000",
@@ -58,7 +58,7 @@
     },
     {
       "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-      "titleJa": "IBM、商用向けライセンス付きのSOTA Granite Time Series PatchTST-FM-r2モデルをリリース",
+      "titleJa": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
       "link": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
       "description": "",
       "publishedDate": "Wed, 09 Sep 2026 15:36:24 GMT",
@@ -69,7 +69,7 @@
     },
     {
       "title": "The AI policy window is open. We need to act.",
-      "titleJa": "AI ポリシー ウィンドウが開きます。私たちは行動する必要があります。",
+      "titleJa": "The AI policy window is open. We need to act.",
       "link": "https://openai.com/index/ai-policy-window",
       "description": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
       "publishedDate": "Wed, 09 Sep 2026 13:00:00 GMT",
@@ -80,7 +80,7 @@
     },
     {
       "title": "The Download: OpenAI’s turning point for math and a battery record",
-      "titleJa": "ダウンロード: OpenAI の数学とバッテリー記録のターニングポイント",
+      "titleJa": "The Download: OpenAI’s turning point for math and a battery record",
       "link": "https://www.technologyreview.com/2026/09/09/1143767/the-download-openai-math-future-battery-record/",
       "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. What OpenAI’s latest controversy tells us about the future of...",
       "publishedDate": "Wed, 09 Sep 2026 12:10:00 +0000",
@@ -91,7 +91,7 @@
     },
     {
       "title": "GPT-6 Astra: The next generation in intelligence for work",
-      "titleJa": "GPT-6 アストラ: 仕事のための次世代インテリジェンス",
+      "titleJa": "GPT-6 Astra: The next generation in intelligence for work",
       "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
       "description": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
       "publishedDate": "Wed, 09 Sep 2026 11:00:00 GMT",
@@ -113,7 +113,7 @@
     },
     {
       "title": "Proactive cyber defense for governments and enterprises",
-      "titleJa": "政府および企業向けのプロアクティブなサイバー防御",
+      "titleJa": "Proactive cyber defense for governments and enterprises",
       "link": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
       "description": "Introducing Fairwind Program",
       "publishedDate": "Wed, 02 Sep 2026 15:40:00 +0000",
@@ -124,7 +124,7 @@
     },
     {
       "title": "5 ways to upgrade your home decor with Google Search",
-      "titleJa": "Google 検索で家の装飾をアップグレードする 5 つの方法",
+      "titleJa": "5 ways to upgrade your home decor with Google Search",
       "link": "https://blog.google/products-and-platforms/products/search/home-decor-tips/",
       "description": "Illustration of ombre rainbow furniture items like a sofa, lamp, and chair against a purple background",
       "publishedDate": "Tue, 25 Aug 2026 16:00:00 +0000",
@@ -135,7 +135,7 @@
     },
     {
       "title": "Granite 4.2 LLMs: How They're Built",
-      "titleJa": "Granite 4.2 LLM: 構築方法",
+      "titleJa": "Granite 4.2 LLMs: How They're Built",
       "link": "https://huggingface.co/blog/ibm-granite/granite-4-2",
       "description": "",
       "publishedDate": "Tue, 25 Aug 2026 15:14:14 GMT",
@@ -146,7 +146,7 @@
     },
     {
       "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-      "titleJa": "量子化対応ヒーリング: 完全精度のオリジナルを上回る圧縮 4 ビット モデル",
+      "titleJa": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
       "link": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
       "description": "",
       "publishedDate": "Tue, 25 Aug 2026 11:39:24 GMT",
@@ -157,7 +157,7 @@
     },
     {
       "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
-      "titleJa": "配線、実行、展開: Gradio の AI ワークフロー",
+      "titleJa": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
       "link": "https://huggingface.co/blog/gradio-workflow-guide",
       "description": "",
       "publishedDate": "Tue, 25 Aug 2026 00:00:00 GMT",
@@ -168,7 +168,7 @@
     },
     {
       "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
-      "titleJa": "当社の研究用医療 AI システムである AMIE は、この種のものとしては初めての研究でリアルタイムの臨床ビデオ相談機能を実証しました。",
+      "titleJa": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
       "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
       "description": "AMIE promotional video",
       "publishedDate": "Tue, 11 Aug 2026 17:00:00 +0000",
@@ -179,7 +179,7 @@
     },
     {
       "title": "How GPT-5.6 Sol helps run quantum computing experiments",
-      "titleJa": "GPT-5.6 Sol が量子コンピューティング実験の実行にどのように役立つか",
+      "titleJa": "How GPT-5.6 Sol helps run quantum computing experiments",
       "link": "https://openai.com/index/codex-quantum-computing-experiments",
       "description": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
       "publishedDate": "Tue, 08 Sep 2026 17:00:00 GMT",
@@ -190,7 +190,7 @@
     },
     {
       "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
-      "titleJa": "誰のための安全?トピック全体ではなく、トピックの適切なサブセットを拒否する",
+      "titleJa": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
       "link": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
       "description": "",
       "publishedDate": "Tue, 08 Sep 2026 14:23:07 GMT",
@@ -201,7 +201,7 @@
     },
     {
       "title": "The Work Now Within Reach",
-      "titleJa": "今すぐ手の届く仕事",
+      "titleJa": "The Work Now Within Reach",
       "link": "https://openai.com/index/the-work-now-within-reach",
       "description": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
       "publishedDate": "Tue, 08 Sep 2026 13:00:00 GMT",
@@ -212,7 +212,7 @@
     },
     {
       "title": "Introducing ChatGPT Images 2.5",
-      "titleJa": "ChatGPT イメージ 2.5 の紹介",
+      "titleJa": "Introducing ChatGPT Images 2.5",
       "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
       "description": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
       "publishedDate": "Tue, 08 Sep 2026 11:30:00 GMT",
@@ -234,7 +234,7 @@
     },
     {
       "title": "The latest AI news we announced in July 2026",
-      "titleJa": "2026年7月に発表したAI最新ニュース",
+      "titleJa": "The latest AI news we announced in July 2026",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
       "description": "July AI recap header",
       "publishedDate": "Tue, 04 Aug 2026 13:00:00 +0000",
@@ -245,7 +245,7 @@
     },
     {
       "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
-      "titleJa": "BenchMIRT: LLM ベンチマークは実際に何を測定していますか?",
+      "titleJa": "BenchMIRT: What are LLM benchmarks actually measuring?",
       "link": "https://huggingface.co/blog/allenai/benchmirt",
       "description": "",
       "publishedDate": "Tue, 01 Sep 2026 21:39:07 GMT",
@@ -256,7 +256,7 @@
     },
     {
       "title": "The latest AI news we announced in August 2026",
-      "titleJa": "2026年8月に発表したAI最新ニュース",
+      "titleJa": "The latest AI news we announced in August 2026",
       "link": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
       "description": "Transitioning cards: 1. Text \"Gemini 3.7 Flash\" next to the Gemini logo icon; 2. a photo of a pixel phone; 3. Google Gemini logo above the text \"Claim your student plan for 1 year at no cost\"",
       "publishedDate": "Tue, 01 Sep 2026 20:45:00 +0000",
@@ -267,7 +267,7 @@
     },
     {
       "title": "Try Google Pics: Easy image creation and editing in Google Workspace",
-      "titleJa": "Google Pics をお試しください: Google Workspace で簡単に画像を作成、編集できます",
+      "titleJa": "Try Google Pics: Easy image creation and editing in Google Workspace",
       "link": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
       "description": "Collage of images created by Google Pics, with the text \"Say hello to Google Pics\" on top",
       "publishedDate": "Tue, 01 Sep 2026 16:00:00 +0000",
@@ -278,7 +278,7 @@
     },
     {
       "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
-      "titleJa": "@huggingface/kernels の紹介: ローカル AI 用の 200 以上の WebGPU カーネル",
+      "titleJa": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
       "link": "https://huggingface.co/blog/webgpu-kernels",
       "description": "",
       "publishedDate": "Tue, 01 Sep 2026 00:00:00 GMT",
@@ -289,7 +289,7 @@
     },
     {
       "title": "3 new ways to plan and book travel in Search",
-      "titleJa": "検索で旅行を計画および予約する 3 つの新しい方法",
+      "titleJa": "3 new ways to plan and book travel in Search",
       "link": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
       "description": "Graphic depicting new travel features for AI Mode in Search",
       "publishedDate": "Thu, 27 Aug 2026 16:00:00 +0000",
@@ -300,7 +300,7 @@
     },
     {
       "title": "Bring your spreadsheet data to life with Sheets canvas",
-      "titleJa": "スプレッドシート キャンバスでスプレッドシート データに命を吹き込む",
+      "titleJa": "Bring your spreadsheet data to life with Sheets canvas",
       "link": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
       "description": "The video shows Sheets canvas in action.",
       "publishedDate": "Thu, 13 Aug 2026 16:45:00 +0000",
@@ -333,7 +333,7 @@
     },
     {
       "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
-      "titleJa": "研究者が Codex と ChatGPT を使用して新しい抗菌分子を探索する方法",
+      "titleJa": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
       "link": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
       "description": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.",
       "publishedDate": "Thu, 10 Sep 2026 16:00:00 GMT",
@@ -344,7 +344,7 @@
     },
     {
       "title": "3 ways to prep for your next big race with Search",
-      "titleJa": "検索を使用して次の大きなレースに備える 3 つの方法",
+      "titleJa": "3 ways to prep for your next big race with Search",
       "link": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
       "description": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
       "publishedDate": "Thu, 10 Sep 2026 16:00:00 +0000",
@@ -355,7 +355,7 @@
     },
     {
       "title": "Now everyone can put data to work",
-      "titleJa": "誰もがデータを活用できるようになりました",
+      "titleJa": "Now everyone can put data to work",
       "link": "https://openai.com/index/put-data-to-work",
       "description": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
       "publishedDate": "Thu, 10 Sep 2026 15:00:00 GMT",
@@ -377,7 +377,7 @@
     },
     {
       "title": "The Download: a “God-driven” cryptocurrency and a solar engineering roadmap",
-      "titleJa": "ダウンロード: 「神主導の」暗号通貨と太陽光発電工学のロードマップ",
+      "titleJa": "The Download: a “God-driven” cryptocurrency and a solar engineering roadmap",
       "link": "https://www.technologyreview.com/2026/09/10/1143828/the-download-christian-cryptocurrency-scandal-solar-engineering-roadmap/",
       "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. God told them to sell crypto. Their investors lost everything....",
       "publishedDate": "Thu, 10 Sep 2026 12:10:00 +0000",
@@ -486,6 +486,17 @@
       "language": "ja"
     },
     {
+      "title": "【Fugu Max・Fugu Ultra v2】Fable 5超えのスコアを叩き出した日本発オーケストレーションAIの性能・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/fugu-max-fugu-ultra-v2/",
+      "description": "2026年9月11日、日本発のAIスタートアップSakana AIがSakana Fuguの最新モデル「Fugu Max」と「Fugu Ultra v2」を同時にリリースしました！Sakana AI CEO・David […]",
+      "publishedDate": "Mon, 14 Sep 2026 04:01:52 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Fugu-Max・Fugu-Ultra-v2-1-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "GPT-6 Astraとは？OpenAIが初めてCritical級サイバー能力と認定した最新モデルの特徴・料金・安全対策を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/astra/",
@@ -494,17 +505,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Astra-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Lyria 3.5】Googleの最新音楽生成AIの性能・料金・使い方を徹底解説！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/lyria-3-5/",
-      "description": "2026年9月5日、Googleは音楽生成AIモデル「Lyria 3.5」をGeminiアプリ・Gemini API・Google AI Studioで全世界に公開しました。テキストプロンプトを入力するだけで、ボーカル付 […]",
-      "publishedDate": "Mon, 07 Sep 2026 08:49:20 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Lyria-3.5-1024x576.webp",
       "language": "ja"
     },
     {
@@ -549,6 +549,39 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/astro-fable5-1_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "マイクロソフトがRust言語をC++/C#/TSに並ぶ社内のTier 1言語にしたことを明らかに。Windowsネイティブな社内の開発環境と統合",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/rustcctstier_1.html",
+      "description": "マイクロソフト社内において、Rust言語がC++/C#/TypeScriptに並ぶTier 1言語になったことが明らかになりました。 マイクロソフトの開発部門でRustツールチームのプリンシパルエンジニア Victor Ciura氏がRus...",
+      "publishedDate": "2026-09-13T15:27:57Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/ms-rust-tier1.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "AIのせいでエンジニアの75％を解雇したCSSフレームワークのTailwind、Shopifyによる買収を発表。今後も安定的な開発を維持すると",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/ai75csstailwindshopify.html",
+      "description": "CSSフレームワーク「Tailwind CSS」の開発元であるTailwind Labsは、ECサイト構築サービスを提供しているShopifyによって買収されると発表しました。 下記はTailwindの作者であるAdam Wathan氏によ...",
+      "publishedDate": "2026-09-13T15:20:00Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/HRx2QG7aoAEAhna.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "TailscaleのVPNにAIエージェントを組み込める「Aperture」正式リリース。AIによるTailscaleやノードの操作も可能に",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/tailscalevpnaiapertureaitailscale.html",
+      "description": "メッシュ型のVPNサービスを提供するTailscaleは、AIゲートウェイサービス「Aperture」の正式リリースを発表しました。 Aperture is officially GA.Give AI agents the models, ...",
+      "publishedDate": "2026-09-13T15:08:50Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/HQqrtHdWQAA9MSg.jpg",
       "language": "ja"
     },
     {
@@ -681,39 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/aws-cloudquestv2-05.png",
-      "language": "ja"
-    },
-    {
-      "title": "AWSとAzureが最大100Gbpsでの相互接続を開始。これでAWSはAzure、Google Cloud、Oracle Cloudとのマルチクラウドをサポート",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/awsazure100gbpsawsazuregoogle_cloudoracle_cloud.html",
-      "description": "Amzon Web Services（AWS）とマイクロソフトは、両社が協力してAWSとMicrosoft Azureを最大100Gbpsの高速な閉域網で相互接続することを発表しました（AWSの発表、マイクロソフトの発表）。 両社ともにプレ...",
-      "publishedDate": "2026-09-02T15:53:23Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HRIvbV_X0AAwQpO.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ボットの振る舞いを動的に学習して防御を改善し続ける、「Adaptive Intelligence」ボット検出エンジン、Cloudflareが発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/adaptive_intelligencecloudflare.html",
-      "description": "Cloudflareは、ボットの侵入手段を同社のネットワーク全体から動的に学習し、防御を継続的に改善し続ける「Adaptive Intelligence」という仕組みを採用した新しいボット検出エンジンを発表しました。 Cloudflare&...",
-      "publishedDate": "2026-09-02T15:48:38Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/9TS1MPg4.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "ClaudeにSalesforceを統合した「Claudeforce」、AnthropicとSalesforceが発表。Claudeから営業データ分析や顧客対応を実現",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/claudesalesforceclaudeforceanthropicsalesforceclaude.html",
-      "description": "SalesforceとAnthropicが「Claudeforce」を発表しました。 第一弾となる「Salesforce in Claude」では、Claudeの画面からプロンプトを入力するだけで、Salesforceのデータやワークフロー...",
-      "publishedDate": "2026-09-02T02:43:59Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/claudeforce-ann03.jpg",
       "language": "ja"
     }
   ]
