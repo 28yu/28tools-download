@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-13T02:13:05.629184",
+  "lastUpdated": "2026-09-14T02:31:03.860145",
   "articles": [
     {
       "title": "【2026年最新】建築確認済証とは？｜検査済証との違いは？いつ・どこでもらえる？ない場合や再発行まで解説",
@@ -40,16 +40,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "【2029年竣工予定】（仮称）日本生命五反田ビル新築工事｜大林組施工のオフィスビルを解説",
-      "link": "https://news.build-app.jp/article/42545/",
-      "description": "（仮称）日本生命 五反田ビル新築工事とは 現在、五反田の日本生命ビル跡地では、（仮称）日本生命五反田ビル新築工事が始まっています。この記事で...",
-      "publishedDate": "Tue, 08 Sep 2026 22:30:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/497b3b400af730dd516de83d944aaaa1-130x82.png",
-      "language": "ja"
     },
     {
       "title": "buildingSMART International Announces Finalists for the 2026 openBIM® Awards",
@@ -102,16 +92,6 @@
       "language": "ja"
     },
     {
-      "title": "土量計算の方法を解説｜地山・ほぐし・締固め・残土を実例で計算",
-      "link": "https://news.build-app.jp/article/42622/",
-      "description": "土量計算では、掘削前の「地山土量」、掘削後の「ほぐし土量」、転圧後の「締固め土量」を区別して考える必要があります。 たとえ同じ土であっても、...",
-      "publishedDate": "Thu, 10 Sep 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/16b850ebd8106160796ff91f86413553-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "【前編】建設DX展大阪で見えた2026年の建設DXトレンド",
       "link": "https://news.build-app.jp/article/42516/",
       "description": "2026年8月26日（水）～28日（金）に開催された建設DX展［大阪］は、建設業界のDXをテーマとした専門展示会です。当サイトでは会場を取材...",
@@ -119,6 +99,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/46e88a454e37c0341781a606bc5369ae-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "土量計算の方法を解説｜地山・ほぐし・締固め・残土を実例で計算",
+      "link": "https://news.build-app.jp/article/42622/",
+      "description": "土量計算では、掘削前の「地山土量」、掘削後の「ほぐし土量」、転圧後の「締固め土量」を区別して考える必要があります。 たとえ同じ土であっても、...",
+      "publishedDate": "Thu, 10 Sep 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/16b850ebd8106160796ff91f86413553-130x82.png",
       "language": "ja"
     },
     {
@@ -179,6 +169,16 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/09/kokkominsho_budget_8_8trillion_ogp_1200x630-1024x538.webp",
+      "language": "ja"
+    },
+    {
+      "title": "鹿島、三菱電機エンジニアリングと移動式AI配筋検査システム開発、立会検査時間70％減",
+      "link": "https://news.build-app.jp/article/42667/",
+      "description": "鹿島は、三菱電機エンジニアリングと共同で移動式AI配筋検査システムを開発し、大阪市内で進むなにわ筋線の工事に初めて導入しました。 大深度掘削...",
+      "publishedDate": "Mon, 14 Sep 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/mobile_rebar_inspection-130x64.png",
       "language": "ja"
     },
     {
