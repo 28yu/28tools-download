@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-09-14T05:53:25.703483",
+  "lastUpdated": "2026-09-15T05:55:57.964474",
   "articles": [
     {
       "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
-      "titleJa": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+      "titleJa": "センテンストランスフォーマーを使用したマルチベクトル埋め込みモデルのトレーニングと微調整",
       "link": "https://huggingface.co/blog/train-multi-vector-encoder",
       "description": "",
       "publishedDate": "Wed, 26 Aug 2026 00:00:00 GMT",
@@ -14,7 +14,7 @@
     },
     {
       "title": "5 new ways to level up your learning with Search",
-      "titleJa": "5 new ways to level up your learning with Search",
+      "titleJa": "検索を使って学習をレベルアップする 5 つの新しい方法",
       "link": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
       "description": "an illustrated image with icons and phrasing like \"Add Notebook\" and \"Ask Google\"",
       "publishedDate": "Wed, 19 Aug 2026 19:00:00 +0000",
@@ -25,7 +25,7 @@
     },
     {
       "title": "Paul Christiano joins OpenAI Foundation Board",
-      "titleJa": "Paul Christiano joins OpenAI Foundation Board",
+      "titleJa": "ポール・クリスティアーノが OpenAI Foundation 理事会に参加",
       "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
       "description": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
       "publishedDate": "Wed, 09 Sep 2026 17:00:00 GMT",
@@ -36,7 +36,7 @@
     },
     {
       "title": "Get ready for the game with new football features in Search",
-      "titleJa": "Get ready for the game with new football features in Search",
+      "titleJa": "検索の新しいサッカー機能で試合に備えましょう",
       "link": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
       "description": "An illustrated graphic set against a vibrant green background featuring American football elements, including a gold trophy, a blue helmet, a silver whistle, a football, a mini scoreboard, and play di...",
       "publishedDate": "Wed, 09 Sep 2026 16:00:00 +0000",
@@ -47,7 +47,7 @@
     },
     {
       "title": "Recreating a 70-year love story frame by frame",
-      "titleJa": "Recreating a 70-year love story frame by frame",
+      "titleJa": "70年にわたる愛の物語を一コマ一コマ再現",
       "link": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
       "description": "An elderly couple sitting in a movie theater. Overlayed are \"Teulluride Film Festival\" and \"Love, Rendered\"",
       "publishedDate": "Wed, 09 Sep 2026 16:00:00 +0000",
@@ -58,7 +58,7 @@
     },
     {
       "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-      "titleJa": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
+      "titleJa": "IBM、商用向けライセンス付きのSOTA Granite Time Series PatchTST-FM-r2モデルをリリース",
       "link": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
       "description": "",
       "publishedDate": "Wed, 09 Sep 2026 15:36:24 GMT",
@@ -69,7 +69,7 @@
     },
     {
       "title": "The AI policy window is open. We need to act.",
-      "titleJa": "The AI policy window is open. We need to act.",
+      "titleJa": "AI ポリシー ウィンドウが開きます。私たちは行動する必要があります。",
       "link": "https://openai.com/index/ai-policy-window",
       "description": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
       "publishedDate": "Wed, 09 Sep 2026 13:00:00 GMT",
@@ -79,19 +79,8 @@
       "language": "en"
     },
     {
-      "title": "The Download: OpenAI’s turning point for math and a battery record",
-      "titleJa": "The Download: OpenAI’s turning point for math and a battery record",
-      "link": "https://www.technologyreview.com/2026/09/09/1143767/the-download-openai-math-future-battery-record/",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. What OpenAI’s latest controversy tells us about the future of...",
-      "publishedDate": "Wed, 09 Sep 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/Hoeckele-deepfake-01-top.jpg?fit=2880,1920",
-      "language": "en"
-    },
-    {
       "title": "GPT-6 Astra: The next generation in intelligence for work",
-      "titleJa": "GPT-6 Astra: The next generation in intelligence for work",
+      "titleJa": "GPT-6 アストラ: 仕事のための次世代インテリジェンス",
       "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
       "description": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
       "publishedDate": "Wed, 09 Sep 2026 11:00:00 GMT",
@@ -101,19 +90,8 @@
       "language": "en"
     },
     {
-      "title": "【ChatGPT Images 2.5】50%高速化と手描きSketch機能搭載！OpenAI最新画像生成モデルの使い方・料金・活用シーンを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/chatgpt-images-2-5/",
-      "description": "OpenAIが2026年9月9日、画像生成モデルの最新版「ChatGPT Images 2.5」を公開しました！ 毎週30億枚以上の画像がChatGPTとGPT-Imageモデルを通じて生成されているなか、今回のアップデ […]",
-      "publishedDate": "Wed, 09 Sep 2026 02:48:50 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_ChatGPT-Images-2.5-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Proactive cyber defense for governments and enterprises",
-      "titleJa": "Proactive cyber defense for governments and enterprises",
+      "titleJa": "政府および企業向けのプロアクティブなサイバー防御",
       "link": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
       "description": "Introducing Fairwind Program",
       "publishedDate": "Wed, 02 Sep 2026 15:40:00 +0000",
@@ -124,7 +102,7 @@
     },
     {
       "title": "5 ways to upgrade your home decor with Google Search",
-      "titleJa": "5 ways to upgrade your home decor with Google Search",
+      "titleJa": "Google 検索で家の装飾をアップグレードする 5 つの方法",
       "link": "https://blog.google/products-and-platforms/products/search/home-decor-tips/",
       "description": "Illustration of ombre rainbow furniture items like a sofa, lamp, and chair against a purple background",
       "publishedDate": "Tue, 25 Aug 2026 16:00:00 +0000",
@@ -135,7 +113,7 @@
     },
     {
       "title": "Granite 4.2 LLMs: How They're Built",
-      "titleJa": "Granite 4.2 LLMs: How They're Built",
+      "titleJa": "Granite 4.2 LLM: 構築方法",
       "link": "https://huggingface.co/blog/ibm-granite/granite-4-2",
       "description": "",
       "publishedDate": "Tue, 25 Aug 2026 15:14:14 GMT",
@@ -146,7 +124,7 @@
     },
     {
       "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-      "titleJa": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
+      "titleJa": "量子化対応ヒーリング: 完全精度のオリジナルを上回る圧縮 4 ビット モデル",
       "link": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
       "description": "",
       "publishedDate": "Tue, 25 Aug 2026 11:39:24 GMT",
@@ -157,7 +135,7 @@
     },
     {
       "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
-      "titleJa": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
+      "titleJa": "配線、実行、展開: Gradio の AI ワークフロー",
       "link": "https://huggingface.co/blog/gradio-workflow-guide",
       "description": "",
       "publishedDate": "Tue, 25 Aug 2026 00:00:00 GMT",
@@ -167,8 +145,19 @@
       "language": "en"
     },
     {
+      "title": "「AI導入白書 2026」を公開！企業調査と住友化学・LINEヤフー・ディップの事例から読み解くAI導入成功の条件",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-adoption-report-2026/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、MMD研究所との共同調査をもとに、企業のAI導入・活用状況や、成果につなげるための意思決定・定着のポイントをまとめた「AI導入白書 […]",
+      "publishedDate": "Tue, 15 Sep 2026 02:00:03 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/ai-adoption-report-2026_000.png",
+      "language": "ja"
+    },
+    {
       "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
-      "titleJa": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
+      "titleJa": "当社の研究用医療 AI システムである AMIE は、この種のものとしては初めての研究でリアルタイムの臨床ビデオ相談機能を実証しました。",
       "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
       "description": "AMIE promotional video",
       "publishedDate": "Tue, 11 Aug 2026 17:00:00 +0000",
@@ -179,7 +168,7 @@
     },
     {
       "title": "How GPT-5.6 Sol helps run quantum computing experiments",
-      "titleJa": "How GPT-5.6 Sol helps run quantum computing experiments",
+      "titleJa": "GPT-5.6 Sol が量子コンピューティング実験の実行にどのように役立つか",
       "link": "https://openai.com/index/codex-quantum-computing-experiments",
       "description": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
       "publishedDate": "Tue, 08 Sep 2026 17:00:00 GMT",
@@ -190,7 +179,7 @@
     },
     {
       "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
-      "titleJa": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
+      "titleJa": "誰のための安全?トピック全体ではなく、トピックの適切なサブセットを拒否する",
       "link": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
       "description": "",
       "publishedDate": "Tue, 08 Sep 2026 14:23:07 GMT",
@@ -201,7 +190,7 @@
     },
     {
       "title": "The Work Now Within Reach",
-      "titleJa": "The Work Now Within Reach",
+      "titleJa": "今すぐ手の届く仕事",
       "link": "https://openai.com/index/the-work-now-within-reach",
       "description": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
       "publishedDate": "Tue, 08 Sep 2026 13:00:00 GMT",
@@ -211,41 +200,8 @@
       "language": "en"
     },
     {
-      "title": "Introducing ChatGPT Images 2.5",
-      "titleJa": "Introducing ChatGPT Images 2.5",
-      "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
-      "description": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
-      "publishedDate": "Tue, 08 Sep 2026 11:30:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "GPT-6 Astraのスライド生成とは？活用事例10選を紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/gpt-6-astra-slide-generation/",
-      "description": "GPT 6 Astraは、PowerPointやGoogleスライドなどの資料作成にも活用できるAIモデルです。既存のテンプレートを生かした資料作成だけでなく、編集可能なスライドや3Dを取り入れた表現など、さまざまな活用 […]",
-      "publishedDate": "Tue, 08 Sep 2026 08:42:37 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/GPT-6-Astra-Slide-Generation_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "The latest AI news we announced in July 2026",
-      "titleJa": "The latest AI news we announced in July 2026",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
-      "description": "July AI recap header",
-      "publishedDate": "Tue, 04 Aug 2026 13:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/July_AI_Recap_still.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
       "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
-      "titleJa": "BenchMIRT: What are LLM benchmarks actually measuring?",
+      "titleJa": "BenchMIRT: LLM ベンチマークは実際に何を測定していますか?",
       "link": "https://huggingface.co/blog/allenai/benchmirt",
       "description": "",
       "publishedDate": "Tue, 01 Sep 2026 21:39:07 GMT",
@@ -256,7 +212,7 @@
     },
     {
       "title": "The latest AI news we announced in August 2026",
-      "titleJa": "The latest AI news we announced in August 2026",
+      "titleJa": "2026年8月に発表したAI最新ニュース",
       "link": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
       "description": "Transitioning cards: 1. Text \"Gemini 3.7 Flash\" next to the Gemini logo icon; 2. a photo of a pixel phone; 3. Google Gemini logo above the text \"Claim your student plan for 1 year at no cost\"",
       "publishedDate": "Tue, 01 Sep 2026 20:45:00 +0000",
@@ -267,7 +223,7 @@
     },
     {
       "title": "Try Google Pics: Easy image creation and editing in Google Workspace",
-      "titleJa": "Try Google Pics: Easy image creation and editing in Google Workspace",
+      "titleJa": "Google Pics をお試しください: Google Workspace で簡単に画像を作成、編集できます",
       "link": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
       "description": "Collage of images created by Google Pics, with the text \"Say hello to Google Pics\" on top",
       "publishedDate": "Tue, 01 Sep 2026 16:00:00 +0000",
@@ -278,7 +234,7 @@
     },
     {
       "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
-      "titleJa": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
+      "titleJa": "@huggingface/kernels の紹介: ローカル AI 用の 200 以上の WebGPU カーネル",
       "link": "https://huggingface.co/blog/webgpu-kernels",
       "description": "",
       "publishedDate": "Tue, 01 Sep 2026 00:00:00 GMT",
@@ -289,7 +245,7 @@
     },
     {
       "title": "3 new ways to plan and book travel in Search",
-      "titleJa": "3 new ways to plan and book travel in Search",
+      "titleJa": "検索で旅行を計画および予約する 3 つの新しい方法",
       "link": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
       "description": "Graphic depicting new travel features for AI Mode in Search",
       "publishedDate": "Thu, 27 Aug 2026 16:00:00 +0000",
@@ -300,7 +256,7 @@
     },
     {
       "title": "Bring your spreadsheet data to life with Sheets canvas",
-      "titleJa": "Bring your spreadsheet data to life with Sheets canvas",
+      "titleJa": "スプレッドシート キャンバスでスプレッドシート データに命を吹き込む",
       "link": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
       "description": "The video shows Sheets canvas in action.",
       "publishedDate": "Thu, 13 Aug 2026 16:45:00 +0000",
@@ -333,7 +289,7 @@
     },
     {
       "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
-      "titleJa": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+      "titleJa": "研究者が Codex と ChatGPT を使用して新しい抗菌分子を探索する方法",
       "link": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
       "description": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.",
       "publishedDate": "Thu, 10 Sep 2026 16:00:00 GMT",
@@ -344,7 +300,7 @@
     },
     {
       "title": "3 ways to prep for your next big race with Search",
-      "titleJa": "3 ways to prep for your next big race with Search",
+      "titleJa": "検索を使用して次の大きなレースに備える 3 つの方法",
       "link": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
       "description": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
       "publishedDate": "Thu, 10 Sep 2026 16:00:00 +0000",
@@ -355,7 +311,7 @@
     },
     {
       "title": "Now everyone can put data to work",
-      "titleJa": "Now everyone can put data to work",
+      "titleJa": "誰もがデータを活用できるようになりました",
       "link": "https://openai.com/index/put-data-to-work",
       "description": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
       "publishedDate": "Thu, 10 Sep 2026 15:00:00 GMT",
@@ -377,7 +333,7 @@
     },
     {
       "title": "The Download: a “God-driven” cryptocurrency and a solar engineering roadmap",
-      "titleJa": "The Download: a “God-driven” cryptocurrency and a solar engineering roadmap",
+      "titleJa": "ダウンロード: 「神主導の」暗号通貨と太陽光発電工学のロードマップ",
       "link": "https://www.technologyreview.com/2026/09/10/1143828/the-download-christian-cryptocurrency-scandal-solar-engineering-roadmap/",
       "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. God told them to sell crypto. Their investors lost everything....",
       "publishedDate": "Thu, 10 Sep 2026 12:10:00 +0000",
@@ -387,15 +343,26 @@
       "language": "en"
     },
     {
-      "title": "Muse Spark 1.3とは？Metaの自律型AIエージェントの仕組み・特徴・安全性・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/muse-spark-1-3/",
-      "description": "2026年9月、MetaからエージェントとコーディングのためのAIモデルが公開されました。 今回公開された「Muse Spark 1.3」は、長時間にわたる自律的な作業（long-horizon agentic work […]",
-      "publishedDate": "Thu, 10 Sep 2026 08:32:32 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Muse-Spark-1.3-1024x576.webp",
-      "language": "ja"
+      "title": "Powering AI is an architecture problem",
+      "titleJa": "AI の強化はアーキテクチャの問題です",
+      "link": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
+      "description": "On July 22, 2026, a transmission line fault in Ashburn, Virginia—the heart of the world’s largest data center cluster—knocked more than 3 gigawatts of load off the grid in seconds. And it wasn’t the f...",
+      "publishedDate": "Thu, 10 Sep 2026 11:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/ON-contributed-image.jpg?w=840",
+      "language": "en"
+    },
+    {
+      "title": "This road map could help us decide whether to deploy solar geoengineering",
+      "titleJa": "このロードマップは、太陽地球工学を導入するかどうかを決定するのに役立つ可能性があります",
+      "link": "https://www.technologyreview.com/2026/09/10/1143804/this-road-map-could-help-us-decide-whether-to-deploy-solar-geoengineering/",
+      "description": "A San Francisco nonprofit has published a detailed road map of the experiments, studies, and infrastructure that it says would be needed to make informed decisions about the use of solar geoengineerin...",
+      "publishedDate": "Thu, 10 Sep 2026 11:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/sky-roadmap2a.jpg?resize=1200,600",
+      "language": "en"
     },
     {
       "title": "ABEJA、JR東日本と「TAKANAWA GATEWAY CITY」でフィジカルAI実証開始。館内物流デリバリー自動化へ",
@@ -420,6 +387,17 @@
       "language": "ja"
     },
     {
+      "title": "Introducing ChatGPT for Financial Services",
+      "titleJa": "金融サービス向け ChatGPT の紹介",
+      "link": "https://openai.com/index/introducing-chatgpt-financial-services",
+      "description": "Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, and client-ready materials.",
+      "publishedDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "OKI、生成AIを活用した「議事プロAI」開発。議事録作成から顧客の課題分析・対策案提示を一元化",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/oki-giji-pro-ai-announcement/",
@@ -442,39 +420,6 @@
       "language": "ja"
     },
     {
-      "title": "日野自動車、「AI搭載型乗合バス 車内事故防止システム」の実証実験へシステム提供",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/hino-accident-prevention-system/",
-      "description": "日野自動車は、日本バス協会が実施する「AI搭載型乗合バス 車内事故防止システム」の実証実験へシステムを提供します。AIを活用し、運転士の負担軽減と乗客の安全性向上を目指します。 このニュースのポイント 日野自動車、日本バ […]",
-      "publishedDate": "Thu, 10 Sep 2026 06:21:30 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/hino.png",
-      "language": "ja"
-    },
-    {
-      "title": "島津製作所、AIが化合物の関連文献を検索・解析し分析条件を提案する「Methodintelligence for LC」発売",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/simazu-methodintelligence-for-lc/",
-      "description": "島津製作所は、液体クロマトグラフ（LC）の分析条件をAIで提案するクラウドサービス「Methodintelligence for LC」を発売しました。4,000万件を超える文献情報をAIが解析し、化合物の分析条件を提案 […]",
-      "publishedDate": "Thu, 10 Sep 2026 06:19:40 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/Simazu-Methodintelligence-for-LC-001.png",
-      "language": "ja"
-    },
-    {
-      "title": "「AI博覧会 Fukuoka 2026」カンファレンス 第2弾スピーカーを発表！デンソー九州が製造業AIの現場実装を解説。北九州市のAIエージェント活用、医療・採用・経営の実践知を公開",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aihaku-fukuoka2026-2ndsp/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年9月30日（水）・10月1日（木）の2日間、博多国際展示場＆カンファレンスセンターにて「AI博覧会 Fukuoka 202 […]",
-      "publishedDate": "Thu, 10 Sep 2026 02:00:24 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/fukuoka2026-2ndsp000.png",
-      "language": "ja"
-    },
-    {
       "title": "【Data Agent in ChatGPT Work】SQLなしで社内データを分析！OpenAIの新エージェントの使い方・料金・活用シーンを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/data-agent-in-chatgpt-work/",
@@ -486,6 +431,72 @@
       "language": "ja"
     },
     {
+      "title": "AI開発会社おすすめ13社を比較！生成AIに強い企業の選び方も解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/ai-development-company/",
+      "description": "生成AIを自社の業務に取り入れたいと思っても、開発会社ごとの得意分野や支援範囲が分からず、どこに相談すべきか迷う方も多いでしょう。AI開発会社によって、PoCから本開発、運用まで対応できる範囲は異なります。 この記事では […]",
+      "publishedDate": "Mon, 14 Sep 2026 13:49:32 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/ai-development-company_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Semantic Kernelとは？仕組みや使い方、料金までわかりやすく解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/semantic-kernel/",
+      "description": "Semantic Kernelは、生成AIと社内システムをつなぎ、目的に応じて業務機能を実行するAIエージェントを開発するためのOSSです。モデル呼び出し、社内APIの実行、データ検索を共通の構成で管理できる点が特徴です […]",
+      "publishedDate": "Mon, 14 Sep 2026 11:52:35 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Semantic-Kernel_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AI導入のPoC止まりとは？原因と抜け出す進め方をわかりやすく解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/stalled-at-the-poc-stage/",
+      "description": "PoC止まりとは、生成AIやAIエージェントの実証実験を終えたのに、本番導入へ進めないまま足踏みしている状態です。「PoCはやったが、その先に進めない」「何から手をつければいいのかわからない」と悩んでいる方も多いのではな […]",
+      "publishedDate": "Mon, 14 Sep 2026 11:19:32 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Stalled-at-the-PoC-stage_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "伊藤忠テクノソリューションズ、カスタマーサポートのAI導入有効性を診断する「CTC-AINAVI」提供開始",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ctc-ainavi-ai-launch/",
+      "description": "伊藤忠テクノソリューションズ（CTC）は、カスタマーサポート業務におけるAIオペレータの導入・活用を支援するアセスメントサービス「CTC-AINAVI」の提供を開始しました。企業が保有する問い合わせや応対履歴などのデータ […]",
+      "publishedDate": "Mon, 14 Sep 2026 09:15:29 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/itochu-CTC-AINAVI.png",
+      "language": "ja"
+    },
+    {
+      "title": "タイミーとZEALS、共創パートナーシップを締結。フィジカルAI時代に必要となる新たなスポットワークを検討",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/timee-zeals-physical-ai/",
+      "description": "タイミーとZEALSは、フィジカルAI時代に必要となる新たなスポットワークの創出に向け、共創パートナーシップを締結しました。ヒューマノイドロボットの学習・改善に必要な現実世界のデータ収集や、ロボットの導入・運用を支える業 […]",
+      "publishedDate": "Mon, 14 Sep 2026 09:15:26 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/Timee-ZEALS-Physical-AI-partnership.png",
+      "language": "ja"
+    },
+    {
+      "title": "CoT（Chain of Thought）とは？仕組み・種類・プロンプトでの使い方を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/chain-of-thought/",
+      "description": "複雑な問題を段階ごとに整理できるため、CoTを使うと計算や分析の精度を高めやすくなります。一方で、「どのAIでも効果があるのか」「業務ではどう指示すればよいのか」と迷う方もいるでしょう。 この記事では、CoTの仕組み・種 […]",
+      "publishedDate": "Mon, 14 Sep 2026 08:40:47 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Chain-of-Thought_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "【Fugu Max・Fugu Ultra v2】Fable 5超えのスコアを叩き出した日本発オーケストレーションAIの性能・料金・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/fugu-max-fugu-ultra-v2/",
@@ -494,17 +505,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Fugu-Max・Fugu-Ultra-v2-1-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "GPT-6 Astraとは？OpenAIが初めてCritical級サイバー能力と認定した最新モデルの特徴・料金・安全対策を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/astra/",
-      "description": "2026年9月、OpenAIから新たなフロンティアモデル「GPT-6 Astra」が正式にリリースされました。今回発表された「GPT-6 Astra」は、OpenAIがPreparedness Framework（準備態 […]",
-      "publishedDate": "Mon, 07 Sep 2026 13:27:50 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Astra-1024x576.webp",
       "language": "ja"
     },
     {
@@ -549,6 +549,28 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/astro-fable5-1_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AnthropicのMCP共同作者が来日、基調講演で語るこれからのMCP注力領域。AGNTCon＋MCPCon Japan 2026",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/anthropicmcpmcpagntconmcpcon_japan_2026.html",
+      "description": "AIエージェントおよびMCP（Model Context Protocol）を主題としたイベント「AGNTCon＋MCPCon Japan 2026」が9月10日に東京渋谷のイベントホールで開催されました。主催はLinux Foundati...",
+      "publishedDate": "2026-09-14T15:55:18Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/mcpandconnectivity01.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAIやAnthropicなどAIベンダごとのAPIの違いを吸収し統合する「Agent Router」、Linux Foundation傘下で業界標準へ",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/openaianthropicapiagent_routerlinux_foundation.html",
+      "description": "MCPやAGENTS.md、Agent2AgentプロトコルなどのAIエージェントに関する関連技術の標準化推進や開発などを行うLinux Foundation傘下のAgentic AI Foundation（AAIF）は、オープンソースとし...",
+      "publishedDate": "2026-09-14T15:51:16Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/HR0EGYVWAAUUQRC.jpg",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/webtermlearn-ann01.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "AWS、新たな太平洋海底ケーブル「Sta'O'Nuk」発表。420Tbps、2029年に稼働へ。集中リスク排除のため新たな陸揚げ拠点を採用",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/awsstaonuk420tbps2029.html",
-      "description": "Amazon Web Services（AWS）は、日本と米国を結ぶ新たな海底ケーブル「Sta'O'Nuk」を発表しました。2029年に稼働開始予定です。 海底ケーブルは20ペアの光ファイバーで構成され、420Tbpsの帯域を提供します。 ...",
-      "publishedDate": "2026-09-03T01:59:39Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/staonuk-ann01.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "AWSをゲームで学べる「AWS Cloud Quest」に新バージョン「AWS Cloud Quest 2.0」登場！ AIによるバーチャル顧客と対話し、要件を聞き出して正しくソリューションに落とし込め",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/awsaws_cloud_questaws_cloud_quest_20_ai.html",
-      "description": "Amazon Web Services（AWS）は、3DオープンワールドでAWSを学べるオンラインゲーム「AWS Cloud Quest」の新バージョン「AWS Cloud Quest 2.0」の提供を開始しました。 AWS Cloud Q...",
-      "publishedDate": "2026-09-02T15:55:28Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/aws-cloudquestv2-05.png",
       "language": "ja"
     }
   ]
