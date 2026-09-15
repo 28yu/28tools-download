@@ -1,36 +1,6 @@
 {
-  "lastUpdated": "2026-09-14T02:31:03.860145",
+  "lastUpdated": "2026-09-15T02:35:02.737834",
   "articles": [
-    {
-      "title": "【2026年最新】建築確認済証とは？｜検査済証との違いは？いつ・どこでもらえる？ない場合や再発行まで解説",
-      "link": "https://news.build-app.jp/article/37024/",
-      "description": "家を建てる際や不動産取引の場面でよく出てくるのが「建築確認済証」という言葉です。しかし「いつもらえるの？」「市役所で発行されるの？」「ないと...",
-      "publishedDate": "Wed, 09 Sep 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/09/41428e9df62b020a96ae6eaeaeb56074-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第十二回)｜深堀り取材【毎月3回更新】",
-      "link": "https://news.build-app.jp/article/42501/",
-      "description": "建築物の室内環境(温度・湿度・CO₂濃度など)を制御するなど主要な内部機能を担う設備領域におけるAI援用の事例を報告する。 新菱冷熱工業(新...",
-      "publishedDate": "Wed, 09 Sep 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/625cb5b834c1558508d69373dbebf00d-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "東急建設とNTTソノリティ、音声AIでKY活動をデータ化して安全管理を効率化する取り組み",
-      "link": "https://news.build-app.jp/article/42529/",
-      "description": "建設現場の朝礼で欠かせない危険予知（KY）活動が、音声とAIの力で新しい形に変わろうとしています。東急建設株式会社とNTTソノリティ株式会社...",
-      "publishedDate": "Wed, 09 Sep 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/voice_ky_safety-130x74.png",
-      "language": "ja"
-    },
     {
       "title": "Christina Hvid Steps Down from buildingSMART International Board of Directors",
       "link": "https://www.buildingsmart.org/christina-hvid-resigned-from-the-board/",
@@ -40,6 +10,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "安藤ハザマ、L is Bと共同でdirect×PayPay連携のヒヤリハット報告ボットを開発",
+      "link": "https://news.build-app.jp/article/42699/",
+      "description": "建設業は労働集約型の産業であり、日々変化する作業環境の中で労働災害の発生件数が全産業の中でも高い水準にあります。とりわけ死亡災害の割合は全体...",
+      "publishedDate": "Tue, 15 Sep 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/hiyarihat_report_bot-130x68.png",
+      "language": "ja"
     },
     {
       "title": "buildingSMART International Announces Finalists for the 2026 openBIM® Awards",
@@ -92,16 +72,6 @@
       "language": "ja"
     },
     {
-      "title": "【前編】建設DX展大阪で見えた2026年の建設DXトレンド",
-      "link": "https://news.build-app.jp/article/42516/",
-      "description": "2026年8月26日（水）～28日（金）に開催された建設DX展［大阪］は、建設業界のDXをテーマとした専門展示会です。当サイトでは会場を取材...",
-      "publishedDate": "Thu, 10 Sep 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/46e88a454e37c0341781a606bc5369ae-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "土量計算の方法を解説｜地山・ほぐし・締固め・残土を実例で計算",
       "link": "https://news.build-app.jp/article/42622/",
       "description": "土量計算では、掘削前の「地山土量」、掘削後の「ほぐし土量」、転圧後の「締固め土量」を区別して考える必要があります。 たとえ同じ土であっても、...",
@@ -109,6 +79,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/16b850ebd8106160796ff91f86413553-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【前編】建設DX展大阪で見えた2026年の建設DXトレンド",
+      "link": "https://news.build-app.jp/article/42516/",
+      "description": "2026年8月26日（水）～28日（金）に開催された建設DX展［大阪］は、建設業界のDXをテーマとした専門展示会です。当サイトでは会場を取材...",
+      "publishedDate": "Thu, 10 Sep 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/46e88a454e37c0341781a606bc5369ae-130x82.png",
       "language": "ja"
     },
     {
@@ -169,6 +149,26 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/09/kokkominsho_budget_8_8trillion_ogp_1200x630-1024x538.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新】測量士とは？仕事内容・資格取得条件・難易度・年収を解説",
+      "link": "https://news.build-app.jp/article/42665/",
+      "description": "測量士を確保すると、外注している測量業務をどこまで社内で担えるのでしょうか。資格取得の条件と実際に担当できる業務は別であり、測量士補との役割...",
+      "publishedDate": "Mon, 14 Sep 2026 17:44:19 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/22290278_m-130x84.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "【2026年最新】CCUSとは？建設キャリアアップシステムの費用・登録方法・活用事例",
+      "link": "https://news.build-app.jp/article/42690/",
+      "description": "CCUSは、カードを発行して終わる制度ではありません。登録費用を払っても、現場で履歴が記録されなければ能力評価や手当の根拠には使えません。2...",
+      "publishedDate": "Mon, 14 Sep 2026 17:38:38 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/31517965_m-130x87.jpg",
       "language": "ja"
     },
     {
