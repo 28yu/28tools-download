@@ -6,7 +6,7 @@
 // includes/header.html と includes/sidebar.html を fetch() するときの
 // クエリ文字列。includes/* を編集したらここをインクリメントする。
 // (CDN edge cache が古いインクルードを返す問題への対処)
-const INCLUDES_VERSION = '20260703-1';
+const INCLUDES_VERSION = '20260916-1';
 
 // グローバル変数
 let currentLanguage = 'ja';
@@ -7897,13 +7897,29 @@ translations.tipsHatch = {
         en: 'X, Y, joint on/off, joint X, joint Y (1/2 offset)',
         zh: 'X・Y・是否有缝・缝X・缝Y（1/2 偏移）'
     },
+    'tips-hatch-type-two': { ja: '<strong>2本線</strong>', en: '<strong>Double line</strong>', zh: '<strong>双线</strong>' },
+    'tips-hatch-type-two-set': { ja: '角度・線内間隔・グループ間隔', en: 'Angle, inner spacing, group spacing', zh: '角度、线内间距、组间距' },
+    'tips-hatch-type-horiz': { ja: '<strong>平行線</strong>', en: '<strong>Horizontal lines</strong>', zh: '<strong>平行线</strong>' },
+    'tips-hatch-type-horiz-set': { ja: '間隔・破線設定', en: 'Spacing, dash settings', zh: '间距、虚线设置' },
+    'tips-hatch-type-vert': { ja: '<strong>垂直線</strong>', en: '<strong>Vertical lines</strong>', zh: '<strong>垂直线</strong>' },
+    'tips-hatch-type-vert-set': { ja: '間隔・破線設定', en: 'Spacing, dash settings', zh: '间距、虚线设置' },
+    'tips-hatch-type-preset': {
+        ja: '<strong>縞鋼板・ギザギザ・砂利・砂・地盤・コンクリート</strong>',
+        en: '<strong>Checker plate, zigzag, gravel, sand, ground, concrete</strong>',
+        zh: '<strong>花纹钢板、锯齿、砾石、砂、地基、混凝土</strong>'
+    },
+    'tips-hatch-type-preset-set': {
+        ja: '倍率（×）のみ。あらかじめ定義済みの意匠パターン',
+        en: 'Scale (×) only — predefined graphic patterns',
+        zh: '仅倍率（×）。预先定义好的意匠图案'
+    },
     'tips-hatch-type-rc': {
-        ja: '<strong>RC（コンクリート）</strong>',
+        ja: '<strong>3本線（RC断面）</strong>',
         en: '<strong>RC (concrete)</strong>',
         zh: '<strong>RC（混凝土）</strong>'
     },
     'tips-hatch-type-rc-set': {
-        ja: '線内間隔・グループ間隔',
+        ja: '角度・線内間隔・グループ間隔',
         en: 'Inner line spacing, group spacing',
         zh: '线内间距・组间距'
     },
