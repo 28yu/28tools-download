@@ -1,6 +1,16 @@
 {
-  "lastUpdated": "2026-09-15T02:35:02.737834",
+  "lastUpdated": "2026-09-16T02:29:26.711814",
   "articles": [
+    {
+      "title": "国土交通省が令和8年都道府県地価調査を公表、全用途平均は5年連続上昇し商業地は上昇幅拡大",
+      "link": "https://news.build-app.jp/article/42711/",
+      "description": "国土交通省は令和8年9月15日、令和8年都道府県地価調査の結果を公表しました。全国21,466地点を対象に、令和8年7月1日時点の1平方メー...",
+      "publishedDate": "Wed, 16 Sep 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/XLm1qqr0TZRICT41677691748_1677691764-130x82.jpg",
+      "language": "ja"
+    },
     {
       "title": "Christina Hvid Steps Down from buildingSMART International Board of Directors",
       "link": "https://www.buildingsmart.org/christina-hvid-resigned-from-the-board/",
@@ -102,16 +112,6 @@
       "language": "ja"
     },
     {
-      "title": "BuddyBoard、紙図面の手書き修正指示をAIが読み取りリスト化する新機能を提供開始",
-      "link": "https://news.build-app.jp/article/42559/",
-      "description": "株式会社BuddyBoard（愛知県名古屋市瑞穂区、代表取締役：小坂来造）は、図面ナレッジプラットフォーム「BuddyBoard」の新機能と...",
-      "publishedDate": "Thu, 10 Sep 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/buddyboard_aiscan-130x87.webp",
-      "language": "ja"
-    },
-    {
       "title": "PLATEAUとは？3D都市モデルを業務の判断に活かす方法",
       "link": "https://axconstdx.com/2026/08/23/plateau%e3%81%a8%e3%81%af%ef%bc%9f3d%e9%83%bd%e5%b8%82%e3%83%a2%e3%83%87%e3%83%ab%e3%82%92%e6%a5%ad%e5%8b%99%e3%81%ae%e5%88%a4%e6%96%ad%e3%81%ab%e6%b4%bb%e3%81%8b%e3%81%99%e6%96%b9%e6%b3%95/",
       "description": "PLATEAUを立派な3D地図だと眺めるだけで満足していませんか。実はその使い方では、都市データが持つ本当の力の半分も引き出せていません。開発協議や施工計画で見落としを防ぎ、関係者の判断をそろえる基盤として活かす方法を、 […]",
@@ -152,6 +152,16 @@
       "language": "ja"
     },
     {
+      "title": "コンクリートの養生期間は何日？｜気温別の目安と車・型枠の判断ポイント",
+      "link": "https://news.build-app.jp/article/42723/",
+      "description": "コンクリートの湿潤養生期間は、普通ポルトランドセメントを使う場合、日平均気温が15℃以上の場合、5日が標準的な目安です。ただし、気温が低い場...",
+      "publishedDate": "Mon, 14 Sep 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/a8e60415ea96f969b2ca6dcc6c015384-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "【2026年最新】測量士とは？仕事内容・資格取得条件・難易度・年収を解説",
       "link": "https://news.build-app.jp/article/42665/",
       "description": "測量士を確保すると、外注している測量業務をどこまで社内で担えるのでしょうか。資格取得の条件と実際に担当できる業務は別であり、測量士補との役割...",
@@ -159,16 +169,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/22290278_m-130x84.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新】CCUSとは？建設キャリアアップシステムの費用・登録方法・活用事例",
-      "link": "https://news.build-app.jp/article/42690/",
-      "description": "CCUSは、カードを発行して終わる制度ではありません。登録費用を払っても、現場で履歴が記録されなければ能力評価や手当の根拠には使えません。2...",
-      "publishedDate": "Mon, 14 Sep 2026 17:38:38 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/31517965_m-130x87.jpg",
       "language": "ja"
     },
     {
