@@ -1,16 +1,6 @@
 {
-  "lastUpdated": "2026-09-16T02:29:26.711814",
+  "lastUpdated": "2026-09-17T02:35:42.021767",
   "articles": [
-    {
-      "title": "国土交通省が令和8年都道府県地価調査を公表、全用途平均は5年連続上昇し商業地は上昇幅拡大",
-      "link": "https://news.build-app.jp/article/42711/",
-      "description": "国土交通省は令和8年9月15日、令和8年都道府県地価調査の結果を公表しました。全国21,466地点を対象に、令和8年7月1日時点の1平方メー...",
-      "publishedDate": "Wed, 16 Sep 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/XLm1qqr0TZRICT41677691748_1677691764-130x82.jpg",
-      "language": "ja"
-    },
     {
       "title": "Christina Hvid Steps Down from buildingSMART International Board of Directors",
       "link": "https://www.buildingsmart.org/christina-hvid-resigned-from-the-board/",
@@ -20,16 +10,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "安藤ハザマ、L is Bと共同でdirect×PayPay連携のヒヤリハット報告ボットを開発",
-      "link": "https://news.build-app.jp/article/42699/",
-      "description": "建設業は労働集約型の産業であり、日々変化する作業環境の中で労働災害の発生件数が全産業の中でも高い水準にあります。とりわけ死亡災害の割合は全体...",
-      "publishedDate": "Tue, 15 Sep 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/hiyarihat_report_bot-130x68.png",
-      "language": "ja"
     },
     {
       "title": "buildingSMART International Announces Finalists for the 2026 openBIM® Awards",
@@ -82,36 +62,6 @@
       "language": "ja"
     },
     {
-      "title": "土量計算の方法を解説｜地山・ほぐし・締固め・残土を実例で計算",
-      "link": "https://news.build-app.jp/article/42622/",
-      "description": "土量計算では、掘削前の「地山土量」、掘削後の「ほぐし土量」、転圧後の「締固め土量」を区別して考える必要があります。 たとえ同じ土であっても、...",
-      "publishedDate": "Thu, 10 Sep 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/16b850ebd8106160796ff91f86413553-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "【前編】建設DX展大阪で見えた2026年の建設DXトレンド",
-      "link": "https://news.build-app.jp/article/42516/",
-      "description": "2026年8月26日（水）～28日（金）に開催された建設DX展［大阪］は、建設業界のDXをテーマとした専門展示会です。当サイトでは会場を取材...",
-      "publishedDate": "Thu, 10 Sep 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/46e88a454e37c0341781a606bc5369ae-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新】シーリング工事の単価相場｜価格動向・材料選定・DX活用を解説",
-      "link": "https://news.build-app.jp/article/42600/",
-      "description": "シーリング工事は、見積単価だけを比べると、予算を超過する可能性があります。目地寸法や撤去範囲が違えば、同じ施工延長でも材料の使用量と必要な人...",
-      "publishedDate": "Thu, 10 Sep 2026 13:57:37 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/29195196_m-130x86.jpg",
-      "language": "ja"
-    },
-    {
       "title": "PLATEAUとは？3D都市モデルを業務の判断に活かす方法",
       "link": "https://axconstdx.com/2026/08/23/plateau%e3%81%a8%e3%81%af%ef%bc%9f3d%e9%83%bd%e5%b8%82%e3%83%a2%e3%83%87%e3%83%ab%e3%82%92%e6%a5%ad%e5%8b%99%e3%81%ae%e5%88%a4%e6%96%ad%e3%81%ab%e6%b4%bb%e3%81%8b%e3%81%99%e6%96%b9%e6%b3%95/",
       "description": "PLATEAUを立派な3D地図だと眺めるだけで満足していませんか。実はその使い方では、都市データが持つ本当の力の半分も引き出せていません。開発協議や施工計画で見落としを防ぎ、関係者の判断をそろえる基盤として活かす方法を、 […]",
@@ -152,36 +102,6 @@
       "language": "ja"
     },
     {
-      "title": "コンクリートの養生期間は何日？｜気温別の目安と車・型枠の判断ポイント",
-      "link": "https://news.build-app.jp/article/42723/",
-      "description": "コンクリートの湿潤養生期間は、普通ポルトランドセメントを使う場合、日平均気温が15℃以上の場合、5日が標準的な目安です。ただし、気温が低い場...",
-      "publishedDate": "Mon, 14 Sep 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/a8e60415ea96f969b2ca6dcc6c015384-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新】測量士とは？仕事内容・資格取得条件・難易度・年収を解説",
-      "link": "https://news.build-app.jp/article/42665/",
-      "description": "測量士を確保すると、外注している測量業務をどこまで社内で担えるのでしょうか。資格取得の条件と実際に担当できる業務は別であり、測量士補との役割...",
-      "publishedDate": "Mon, 14 Sep 2026 17:44:19 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/22290278_m-130x84.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "鹿島、三菱電機エンジニアリングと移動式AI配筋検査システム開発、立会検査時間70％減",
-      "link": "https://news.build-app.jp/article/42667/",
-      "description": "鹿島は、三菱電機エンジニアリングと共同で移動式AI配筋検査システムを開発し、大阪市内で進むなにわ筋線の工事に初めて導入しました。 大深度掘削...",
-      "publishedDate": "Mon, 14 Sep 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/mobile_rebar_inspection-130x64.png",
-      "language": "ja"
-    },
-    {
       "title": "buildingSMART International Announces Outcomes of 2026 International Council AGM",
       "link": "https://www.buildingsmart.org/buildingsmart-international-announces-outcomes-of-2026-international-council-agm/",
       "description": "London, U.K. – August 10th, 2026 — buildingSMART International (bSI) is pleased to announce the resolutions passed at the Annual General Meeting of the International Council, which concluded on 6 Augu...",
@@ -219,26 +139,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/anthropic_editor_ogp_under_100kb-1024x512.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、7月の建設工事受注高は10兆9,346億円で前年比2.9%増、4カ月連続の増加",
-      "link": "https://news.build-app.jp/article/42610/",
-      "description": "国土交通省は9月10日、令和8年7月分の建設工事受注動態統計調査報告を公表しました。この調査は、全国の建設業者が公共機関や民間企業から受け取...",
-      "publishedDate": "Fri, 11 Sep 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/construction_july2026-130x77.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、リフォーム・リニューアル調査を公表、令和8年度第1四半期受注高は22.8％増",
-      "link": "https://news.build-app.jp/article/42606/",
-      "description": "国土交通省は、令和8年度第1四半期に元請けとして受注した建築物のリフォーム・リニューアル工事について、調査結果をまとめて公表しました。 全国...",
-      "publishedDate": "Fri, 11 Sep 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/renovation_survey-130x117.jpg",
       "language": "ja"
     },
     {
