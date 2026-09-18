@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-17T05:50:24.242669",
+  "lastUpdated": "2026-09-18T05:36:45.696769",
   "articles": [
     {
       "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
@@ -10,17 +10,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "5 new ways to level up your learning with Search",
-      "titleJa": "検索を使って学習をレベルアップする 5 つの新しい方法",
-      "link": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
-      "description": "an illustrated image with icons and phrasing like \"Add Notebook\" and \"Ask Google\"",
-      "publishedDate": "Wed, 19 Aug 2026 19:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_header_2_JwwDb02.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -186,28 +175,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/07/csurvey0.png",
-      "language": "ja"
-    },
-    {
-      "title": "【10月15日開催】”危険” “異変” を見逃さない！　　　製造現場のDXを加速するAI活用ウェビナー　　　　　　　　設備の異常予兆検知から外観検査・欠陥検出まで〜映像データ・センサーデータの活用/導入事例をご紹介〜",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/1015webinar/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年10月15日（木）12時から製造業DXをテーマにウェビナーを開催します。 製造現場では、生産性・品質・安全性の向上に向けて […]",
-      "publishedDate": "Wed, 16 Sep 2026 01:42:34 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/1169_1200x628_3.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "アイスマイリー、9/30（水）から3日間「産業DX総合展 2026 夏 東京」に出展　ブース予約でAmazonギフト1,500円分プレゼント！",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/expo-industrial-dx-tokyo/",
-      "description": "AIsmileyとAIsmiley Communityは、2026年9月30日（水）～10月2日（金）に東京ビッグサイトにて開催される「産業DX総合展 2026 夏 東京」にブース出展をします。 ブース予約でAmazon […]",
-      "publishedDate": "Wed, 16 Sep 2026 01:00:04 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/Top.png",
       "language": "ja"
     },
     {
@@ -409,17 +376,6 @@
       "language": "en"
     },
     {
-      "title": "GMO AIR、国内初の人型ロボット専用保守車両「GMOヒューマノイド救急車」を導入",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gmo-air-gmo-humanoid-ambulance/",
-      "description": "GMO AI&ロボティクス商事は、国内で初めて人型ロボット専用の保守車両「GMOヒューマノイド救急車」を2026年9月に導入します。 このニュースのポイント GMO AIR、人型ロボットの故障・トラブル時に駆けつ […]",
-      "publishedDate": "Tue, 15 Sep 2026 09:17:13 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/GMO.png",
-      "language": "ja"
-    },
-    {
       "title": "主要LLMのAPI料金比較！試算結果や選び方、コスト削減のテクニックを解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/llm-api-pricing-comparison/",
@@ -475,6 +431,61 @@
       "language": "en"
     },
     {
+      "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
+      "titleJa": "@huggingface/kernels の紹介: ローカル AI 用の 200 以上の WebGPU カーネル",
+      "link": "https://huggingface.co/blog/webgpu-kernels",
+      "description": "",
+      "publishedDate": "Tue, 01 Sep 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/webgpu-kernels/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "ソニー銀行と富士通、勘定系システム開発への生成AI適用開始。開発期間を30％短縮",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/fujitsu-sonybank-generative-ai/",
+      "description": "ソニー銀行と富士通は、勘定系システムの実開発プロセスに生成AIを本格適用しました。システム開発の設計書やソースコードなどをAIが工程横断で活用する仕組みを構築し、開発期間を従来比で30％短縮しています。 このニュースのポ […]",
+      "publishedDate": "Thu, 17 Sep 2026 09:19:06 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/fujitsu-sonybank.png",
+      "language": "ja"
+    },
+    {
+      "title": "KDDIのロボット基盤モデルの研究開発がGENIACに採択。フィジカルAIの社会実装を加速",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/kddi-robot-foundation-model-geniac/",
+      "description": "KDDIは「小売物流業等の現場業務を代替するロボット基盤モデルの研究開発」において、国家プロジェクト「GENIAC」に採択されたことを発表しました。従業員専用のローソン店舗で作業者目線のデータを収集し、ロボット制御の実証 […]",
+      "publishedDate": "Thu, 17 Sep 2026 09:14:45 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/kddi.png",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Codeの週間利用制限とは？2026年9月の変更内容・プラン別影響・回避策を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/weekly-usage-limits-for-claude-code/",
+      "description": "Claude Codeの週間利用制限は、2026年9月14日から臨時増量前の通常枠より25%引き上げられました。しかし、50%増量の臨時措置が終了したため、直前と比べると使える枠は約16.7%減っています。 「上限が増え […]",
+      "publishedDate": "Thu, 17 Sep 2026 07:21:22 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/weekly-usage-limits-for-claude-code_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【インタビュー】出展社数1,100社！関西最大級の製造業展示会「第29回 ものづくり ワールド［大阪］」～「現場課題の解決」を見据えた商談の場～",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/interview-monodukuri-osaka-vol29/",
+      "description": "国際産業見本市の主催・企画・運営における業界最大手のRX Japan 合同会社は、2026年10月7日（水）～9日（金）の3日間、インテックス大阪にて「第29回 ものづくり ワールド［大阪］」を開催します。 IT、DX製 […]",
+      "publishedDate": "Thu, 17 Sep 2026 06:00:24 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/manufacturingworldosaka202601.png",
+      "language": "ja"
+    },
+    {
       "title": "【アーカイブ配信スタート！】AI博覧会 Summer 2026ーフィジカルAI・国産LLMなど最新AIの社会実装が詰まったカンファレンスを公開ー",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/ai-hakurankai_2026_summer_archive/",
@@ -519,36 +530,36 @@
       "language": "ja"
     },
     {
-      "title": "Semantic Kernelとは？仕組みや使い方、料金までわかりやすく解説",
+      "title": "製造業界の課題も生成AIが解決！企業の活用事例を含め課題の解決方法を解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/semantic-kernel/",
-      "description": "Semantic Kernelは、生成AIと社内システムをつなぎ、目的に応じて業務機能を実行するAIエージェントを開発するためのOSSです。モデル呼び出し、社内APIの実行、データ検索を共通の構成で管理できる点が特徴です […]",
-      "publishedDate": "Mon, 14 Sep 2026 11:52:35 +0000",
+      "link": "https://weel.co.jp/media/manufacturing-issues/",
+      "description": "近年の世界情勢の影響もあり、製造業は様々な重要な課題に直面しています。システム的な課題や、そしてグローバル化に伴う言語の壁などに悩まされている方も多いのではないでしょうか？一方で、生成AIの導入は急速に進んでいます。製造 […]",
+      "publishedDate": "Fri, 18 Sep 2026 05:31:05 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Semantic-Kernel_2609-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/manufacturing-issues_2609-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "AI導入のPoC止まりとは？原因と抜け出す進め方をわかりやすく解説",
+      "title": "生成AIで見積作成を効率化する方法とメリット、おすすめのツールを解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/stalled-at-the-poc-stage/",
-      "description": "PoC止まりとは、生成AIやAIエージェントの実証実験を終えたのに、本番導入へ進めないまま足踏みしている状態です。「PoCはやったが、その先に進めない」「何から手をつければいいのかわからない」と悩んでいる方も多いのではな […]",
-      "publishedDate": "Mon, 14 Sep 2026 11:19:32 +0000",
+      "link": "https://weel.co.jp/media/genai-estimate/",
+      "description": "「見積作成に時間がかかる」「担当者によって金額がぶれる」「過去の見積を探すだけで半日つぶれる」。BtoBの現場でよく聞く悩みですが、生成AIを使えばこの3つはまとめて解消に近づけられます。 生成AIは、依頼内容の整理、過 […]",
+      "publishedDate": "Fri, 18 Sep 2026 04:52:12 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Stalled-at-the-PoC-stage_2609-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/genai-estimate_2609-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "CoT（Chain of Thought）とは？仕組み・種類・プロンプトでの使い方を解説",
+      "title": "PlanetScale、PostgreSQLのシャーディングを自動化して1億1800万QPSを達成。新DBサービス「Neki」をプレビュー公開",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/chain-of-thought/",
-      "description": "複雑な問題を段階ごとに整理できるため、CoTを使うと計算や分析の精度を高めやすくなります。一方で、「どのAIでも効果があるのか」「業務ではどう指示すればよいのか」と迷う方もいるでしょう。 この記事では、CoTの仕組み・種 […]",
-      "publishedDate": "Mon, 14 Sep 2026 08:40:47 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/planetscalepostgresql11800qpsdbneki.html",
+      "description": "データベースサービスを提供しているPlanetScaleは、PostgreSQLのシャーディングを自動化してスケーラブルなデータベースサービスを提供する「Neki」をプレビュー公開しました。 118,538,803 queries per ...",
+      "publishedDate": "2026-09-17T15:59:39Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Chain-of-Thought_2609-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/OTbhcqsx.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/HQlh51SXYAAfQ-1.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "HTMX 4.0正式リリース。内部実装がXHRからfetchに移行しStreaming HTMLが可能に、属性はデフォルトで子要素に継承されないように変更など",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/htmx_40xhrfetchstreaming_html.html",
-      "description": "HTMLに属性を追加するだけで、Webページにサーバと連動した動的なアプリケーションの機能を追加できるJavaScriptライブラリ「HTMX」の最新バージョンとなる「HTMX 4.0」正式版のリリースが発表されました。 very happ...",
-      "publishedDate": "2026-09-07T15:39:27Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HQz9DFibMAA3CVF.png",
       "language": "ja"
     }
   ]
