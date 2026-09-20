@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-19T05:32:57.614931",
+  "lastUpdated": "2026-09-20T05:48:20.015668",
   "articles": [
     {
       "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
@@ -299,17 +299,6 @@
       "language": "en"
     },
     {
-      "title": "システムプロンプトとは？書き方の4ステップとChatGPT・Claudeでの設定方法をコピペ例つきで解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/system-prompt/",
-      "description": "「ChatGPTに毎回同じ前提を説明するのが面倒」と感じたことはないでしょうか。回答の質が毎回バラつく、という悩みもよく聞きます。そこで役立つのがシステムプロンプトです。 この記事では、システムプロンプトの意味やユーザー […]",
-      "publishedDate": "Tue, 15 Sep 2026 11:16:14 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/System-Prompt_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
       "titleJa": "誰のための安全?トピック全体ではなく、トピックの適切なサブセットを拒否する",
       "link": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
@@ -461,6 +450,17 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/fukuoka2026-3rdsp000.png",
+      "language": "ja"
+    },
+    {
+      "title": "【Qwen3.8-Omni-Flash】音声・映像を理解してタスクまで実行するアリババの次世代オムニモーダルAIを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/qwen3-8-omni-flash/",
+      "description": "2026年9月18日、アリババのQwenチームが次世代オムニモーダルモデル「Qwen3.8-Omni-Flash」を公開しました！ このモデルは、テキスト・画像・音声・動画の4種類の入力をネイティブに処理し、内容の理解か […]",
+      "publishedDate": "Sat, 19 Sep 2026 09:54:04 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.8-Omni-Flash-1024x576.webp",
       "language": "ja"
     },
     {
