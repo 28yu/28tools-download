@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-20T02:30:39.673768",
+  "lastUpdated": "2026-09-21T02:28:44.423325",
   "articles": [
     {
       "title": "【2027】パークタワー大阪堂島浜｜三井不動産グループ初のホテル・マンション複合開発を解説",
@@ -42,6 +42,16 @@
       "language": "ja"
     },
     {
+      "title": "Christina Hvid Steps Down from buildingSMART International Board of Directors",
+      "link": "https://www.buildingsmart.org/christina-hvid-resigned-from-the-board/",
+      "description": "London, U.K. – June 9th, 2026 — buildingSMART International (bSI) announces that Christina Hvid resigned from the Board of Directors on 9 June 2026. We extend our sincere thanks to Christina…",
+      "publishedDate": "Tue, 16 Jun 2026 09:56:56 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "安藤ハザマ、L is Bと共同でdirect×PayPay連携のヒヤリハット報告ボットを開発",
       "link": "https://news.build-app.jp/article/42699/",
       "description": "建設業は労働集約型の産業であり、日々変化する作業環境の中で労働災害の発生件数が全産業の中でも高い水準にあります。とりわけ死亡災害の割合は全体...",
@@ -50,6 +60,16 @@
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/hiyarihat_report_bot-130x68.png",
       "language": "ja"
+    },
+    {
+      "title": "buildingSMART International Announces Finalists for the 2026 openBIM® Awards",
+      "link": "https://www.buildingsmart.org/buildingsmart-international-announces-finalists-for-the-2026-openbim-awards/",
+      "description": "London, U.K. – September 1, 2026 — buildingSMART International is pleased to announce the finalists for the buildingSMART openBIM® Awards 2026, recognising outstanding projects, research and technolog...",
+      "publishedDate": "Tue, 01 Sep 2026 14:37:40 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "大量の図面をAIで活用する方法｜図面管理からナレッジ化まで5段階で解説",
@@ -172,6 +192,26 @@
       "language": "ja"
     },
     {
+      "title": "buildingSMART International Announces Outcomes of 2026 International Council AGM",
+      "link": "https://www.buildingsmart.org/buildingsmart-international-announces-outcomes-of-2026-international-council-agm/",
+      "description": "London, U.K. – August 10th, 2026 — buildingSMART International (bSI) is pleased to announce the resolutions passed at the Annual General Meeting of the International Council, which concluded on 6 Augu...",
+      "publishedDate": "Mon, 10 Aug 2026 08:22:03 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "IFCX – Core & Modularisation Project Update",
+      "link": "https://www.buildingsmart.org/ifcx-core-modularisation-project-update/",
+      "description": "London, U.K. – 26 August, 2026 — buildingSMART International (bSI) is pleased to announce that the IFCX – Core & Modularisation final project plan has successfully passed through the next phase…",
+      "publishedDate": "Fri, 28 Aug 2026 12:59:12 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "日本SI業界2030年——人月モデル崩壊は本当か",
       "link": "https://axconstdx.com/2026/08/21/%e6%97%a5%e6%9c%acsi%e6%a5%ad%e7%95%8c2030%e5%b9%b4-%e4%ba%ba%e6%9c%88%e3%83%a2%e3%83%87%e3%83%ab%e5%b4%a9%e5%a3%8a%e3%81%af%e6%9c%ac%e5%bd%93%e3%81%8b/",
       "description": "「2030年、業界は半分になる」という言葉に、胸がざわついた方も多いはずです。でも本当に消えるのは会社ではなく、人月という古い契約の形かもしれません。今こそ、自社の立ち位置を見つめ直すときです。 はじめに 「2030年、 […]",
@@ -200,6 +240,66 @@
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/construction_statistics809-130x51.jpg",
       "language": "ja"
+    },
+    {
+      "title": "IFC 4.4 Integration Plan for ISO voting results",
+      "link": "https://www.buildingsmart.org/ifc-4-4-integration-plan-for-iso-voting-results/",
+      "description": "Report: LinkOutcome report: Link The voting for IFC 4.4 integration for ISO Project plan closed at midnight – 12 UTC on 21 August 2026. Voting ResultsYes 50No 4Percentage in favour…",
+      "publishedDate": "Fri, 04 Sep 2026 09:19:02 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "IFC X Core & Modularisation Final Project Plan voting results",
+      "link": "https://www.buildingsmart.org/ifc-x-core-modularisation-final-project-plan-voting-results/",
+      "description": "Report: LinkOutcome report: Link The vote on the IFC X Core & Modularisation Final Project Plan closed at midnight UTC minus 12 hours on 7 August 2026. The voting results…",
+      "publishedDate": "Fri, 04 Sep 2026 09:18:52 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "High Reliability Interoperability for Railway Stations HIRS voting",
+      "link": "https://www.buildingsmart.org/high-reliability-interoperability-for-railway-stations-hirs-voting/",
+      "description": "Vote closing date: 23 Oct 2026Report: Link Project SummaryAlthough IFC 4.3 has improved railway data interoperability through the IfcRailDomain, it does not fully represent the complexity, functional...",
+      "publishedDate": "Fri, 04 Sep 2026 08:40:06 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Immersed Tunnel Project Plan out for voting",
+      "link": "https://www.buildingsmart.org/immersed-tunnel-project-plan-out-for-voting/",
+      "description": "Vote closing date: 23 Aug 2026Report: Link Project SummaryImmersed tunnel projects are a unique and complex subset of maritime infrastructure, requiring precise coordination across disciplines, techno...",
+      "publishedDate": "Fri, 04 Sep 2026 08:39:56 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "IFC 4.4 Integration for ISO Submission approval voting",
+      "link": "https://www.buildingsmart.org/ifc-4-4-integration-for-iso-submission-approval-voting/",
+      "description": "Vote closing date: 21 Aug 2026 Project plan: Link The IFC 4.4 Integration for ISO Submission has been submitted to the Standards Committee for voting to proceed.",
+      "publishedDate": "Fri, 03 Jul 2026 12:36:12 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "IFC X Core & Modularisation Final Project Plan voting",
+      "link": "https://www.buildingsmart.org/ifc-x-core-modularisation-final-project-plan-voting/",
+      "description": "Vote closing date: 7 Aug 2026 Project plan: Link The IFC X Core & Modularisation Final Project Plan has been sent to the Standards Committee for voting as Standards Proposal.",
+      "publishedDate": "Fri, 03 Jul 2026 12:30:53 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     }
   ]
 }
