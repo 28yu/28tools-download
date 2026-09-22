@@ -1,16 +1,6 @@
 {
-  "lastUpdated": "2026-09-21T02:28:44.423325",
+  "lastUpdated": "2026-09-22T02:31:33.646746",
   "articles": [
-    {
-      "title": "【2027】パークタワー大阪堂島浜｜三井不動産グループ初のホテル・マンション複合開発を解説",
-      "link": "https://news.build-app.jp/article/42749/",
-      "description": "パークタワー大阪堂島浜とは 大阪で、高さ約161m、40階建ての複合施設が建設中です。（仮称）大阪市北区堂島浜二丁目計画で計画されている建築...",
-      "publishedDate": "Wed, 16 Sep 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/c7ebeee721bd75ac4c2f4370de997ce6-130x82.png",
-      "language": "ja"
-    },
     {
       "title": "危険予知活動（KY活動）とは？｜建設現場での進め方・4ラウンド法・例文を解説",
       "link": "https://news.build-app.jp/article/42726/",
@@ -19,6 +9,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/5c57278478eddabe42d239e8c5682d89-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【2027】パークタワー大阪堂島浜｜三井不動産グループ初のホテル・マンション複合開発を解説",
+      "link": "https://news.build-app.jp/article/42749/",
+      "description": "パークタワー大阪堂島浜とは 大阪で、高さ約161m、40階建ての複合施設が建設中です。（仮称）大阪市北区堂島浜二丁目計画で計画されている建築...",
+      "publishedDate": "Wed, 16 Sep 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/c7ebeee721bd75ac4c2f4370de997ce6-130x82.png",
       "language": "ja"
     },
     {
@@ -40,16 +40,6 @@
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/XLm1qqr0TZRICT41677691748_1677691764-130x82.jpg",
       "language": "ja"
-    },
-    {
-      "title": "Christina Hvid Steps Down from buildingSMART International Board of Directors",
-      "link": "https://www.buildingsmart.org/christina-hvid-resigned-from-the-board/",
-      "description": "London, U.K. – June 9th, 2026 — buildingSMART International (bSI) announces that Christina Hvid resigned from the Board of Directors on 9 June 2026. We extend our sincere thanks to Christina…",
-      "publishedDate": "Tue, 16 Jun 2026 09:56:56 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "安藤ハザマ、L is Bと共同でdirect×PayPay連携のヒヤリハット報告ボットを開発",
@@ -112,16 +102,6 @@
       "language": "ja"
     },
     {
-      "title": "【中編】建設DX展で見つけた注目DXサービス｜3Dプリンタを活用した型枠技術_株式会社 DigitalArchi／手軽に活用できる3Dスキャンアプリ_nat株式会社",
-      "link": "https://news.build-app.jp/article/42519/",
-      "description": "2026年8月26日（水）～28日（金）に開催された建設DX展［大阪］は、建設業界のDXをテーマとした専門展示会です。当サイトでは会場を取材...",
-      "publishedDate": "Thu, 17 Sep 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/63b72d44bd8aba7f6ed13542abf0a425-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "【2026年版】土間コンクリートとは？｜費用相場・施工手順・厚みの基準までプロが解説",
       "link": "https://news.build-app.jp/article/35394/",
       "description": "土間コンクリートは、住宅の駐車場・庭・玄関アプローチなどで広く使われる舗装手法です。しかし、「費用はいくらかかるのか」「駐車場にはどれくらい...",
@@ -129,6 +109,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/05/8d25848c8758bc6fc472c489da3a85a4-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【中編】建設DX展で見つけた注目DXサービス｜3Dプリンタを活用した型枠技術_株式会社 DigitalArchi／手軽に活用できる3Dスキャンアプリ_nat株式会社",
+      "link": "https://news.build-app.jp/article/42519/",
+      "description": "2026年8月26日（水）～28日（金）に開催された建設DX展［大阪］は、建設業界のDXをテーマとした専門展示会です。当サイトでは会場を取材...",
+      "publishedDate": "Thu, 17 Sep 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/63b72d44bd8aba7f6ed13542abf0a425-130x82.png",
       "language": "ja"
     },
     {
@@ -190,6 +180,16 @@
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/09/kokkominsho_budget_8_8trillion_ogp_1200x630-1024x538.webp",
       "language": "ja"
+    },
+    {
+      "title": "IDS survey results",
+      "link": "https://www.buildingsmart.org/ids-survey-results-2026/",
+      "description": "IDS survey results: users confirm the value of IDS 1.0 and call for IDS 1.1 and software certification buildingSMART International has completed a community survey on the Information Delivery Specific...",
+      "publishedDate": "Mon, 21 Sep 2026 10:25:40 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "buildingSMART International Announces Outcomes of 2026 International Council AGM",
