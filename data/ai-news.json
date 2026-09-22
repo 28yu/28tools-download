@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-21T05:58:05.815569",
+  "lastUpdated": "2026-09-22T05:55:12.460399",
   "articles": [
     {
       "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
@@ -35,17 +35,6 @@
       "language": "en"
     },
     {
-      "title": "Meet a mouse whose brain cortex is made up of human cells",
-      "titleJa": "脳皮質が人間の細胞で構成されているマウスを紹介します",
-      "link": "https://www.technologyreview.com/2026/09/16/1144210/meet-a-mouse-whose-brain-cortex-is-made-up-of-human-cells/",
-      "description": "Multiple cameras tracked a mouse as it wandered around a small arena. A computer charted its position and speed, leaving Pong-like traces on a monitor. The reason to watch this rodent so carefully? Ne...",
-      "publishedDate": "Wed, 16 Sep 2026 15:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/260915_HumanBrainTissueMice.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "Reimagining advertising with AI",
       "titleJa": "AI で広告を再考する",
       "link": "https://openai.com/index/reimagining-advertising-with-ai",
@@ -54,28 +43,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Building the materials foundation for AI",
-      "titleJa": "AI のための材料基盤の構築",
-      "link": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/",
-      "description": "The AI boom is becoming a materials challenge. As AI pushes computing into new territory, the materials behind that infrastructure are becoming just as crucial as the algorithms running on it. Semicon...",
-      "publishedDate": "Wed, 16 Sep 2026 12:47:34 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/Mike-Finelli-business-lab.png?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "The Download: AI’s trillion-dollar gamble and OpenAI’s biology data bid",
-      "titleJa": "ダウンロード: AI の数兆ドル規模のギャンブルと OpenAI の生物学データ入札",
-      "link": "https://www.technologyreview.com/2026/09/16/1144205/the-download-ai-trillion-dollar-build-openai-biological-data/",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. What’s at stake in AI’s trillion-dollar gamble When Jessica Wa...",
-      "publishedDate": "Wed, 16 Sep 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/08/golden-shield-3-top.jpg?fit=19998,746",
       "language": "en"
     },
     {
@@ -102,7 +69,7 @@
     },
     {
       "title": "How workers are unlocking new ways of working",
-      "titleJa": "労働者はどのようにして新しい働き方を実現しているのか",
+      "titleJa": "労働者はどのようにして新しい働き方を解放しているのか",
       "link": "https://openai.com/index/unlocking-new-ways-of-working",
       "description": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
       "publishedDate": "Wed, 16 Sep 2026 09:00:00 GMT",
@@ -178,26 +145,15 @@
       "language": "en"
     },
     {
-      "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
-      "titleJa": "配線、実行、展開: Gradio の AI ワークフロー",
-      "link": "https://huggingface.co/blog/gradio-workflow-guide",
-      "description": "",
-      "publishedDate": "Tue, 25 Aug 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
+      "title": "AG-UIとは？AIエージェントとUIを繋ぐ新プロトコルの仕組みと実装方法を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/ag-ui/",
+      "description": "AG-UIは、AIエージェントとフロントエンドの通信を標準化するオープンなイベントベースのプロトコルです。公開は2025年5月、GitHubのスターは約15,900（2026年9月時点）。UIを作るツールではなく、接続を […]",
+      "publishedDate": "Tue, 22 Sep 2026 02:54:59 +0000",
+      "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/gradio-workflow-guide/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Roundtables: Could AI really kill us all?",
-      "titleJa": "ラウンドテーブル: AI は本当に私たち全員を殺すことができるのでしょうか?",
-      "link": "https://www.technologyreview.com/2026/09/15/1143936/roundtables-will-ai-really-kill-us-all/",
-      "description": "Listen to the session or watch below Employees at the world’s leading AI labs are saying there’s a real possibility that advanced AI could destroy humanity. Are they right? Or is this more scaremonger...",
-      "publishedDate": "Tue, 15 Sep 2026 17:47:51 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/September.26_Roundtables-Assets-2.png?resize=1200,600",
-      "language": "en"
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AG-UI_2609-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "Your Agent Aced the Task. Will It Do It Again?",
@@ -252,28 +208,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ATLAS-hero.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "The Download: AI doomers, whistleblowing agents, and de-aged livers",
-      "titleJa": "ダウンロード: AI の破滅者、内部告発者、老化した肝臓",
-      "link": "https://www.technologyreview.com/2026/09/15/1144141/the-download-ai-extinction-whistleblowing-agents-donated-livers/",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The AI industry has taken a doomer turn. What now? AI chiefs D...",
-      "publishedDate": "Tue, 15 Sep 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/04/skin.spread.jpg?w=840",
-      "language": "en"
-    },
-    {
-      "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
-      "titleJa": "誰のための安全?トピック全体ではなく、トピックの適切なサブセットを拒否する",
-      "link": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
-      "description": "",
-      "publishedDate": "Tue, 08 Sep 2026 14:23:07 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/HuauFbdznYW4fNQh8j4Tp.png",
       "language": "en"
     },
     {
@@ -343,6 +277,28 @@
       "language": "en"
     },
     {
+      "title": "How Cooley is accelerating IPO work with ChatGPT",
+      "titleJa": "Cooley は ChatGPT を使用して IPO 作業をどのように加速しているか",
+      "link": "https://openai.com/index/cooley-gopublic",
+      "description": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most.",
+      "publishedDate": "Thu, 17 Sep 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Meet the innovators under 35 shaping climate tech",
+      "titleJa": "気候変動テクノロジーを形成する 35 歳未満のイノベーターを紹介します",
+      "link": "https://www.technologyreview.com/2026/09/17/1144251/innovators-shaping-climate-tech/",
+      "description": "Each year, the editorial team at MIT Technology Review puts together a list of 35 innovators under 35—a group of researchers, inventors, and other young minds worth following. The team worked on the n...",
+      "publishedDate": "Thu, 17 Sep 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/260915_thespark_climate35ers.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
       "title": "ソニー銀行と富士通、勘定系システム開発への生成AI適用開始。開発期間を30％短縮",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/fujitsu-sonybank-generative-ai/",
@@ -396,6 +352,61 @@
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/fukuoka2026-3rdsp000.png",
       "language": "ja"
+    },
+    {
+      "title": "Introducing Astra for Law",
+      "titleJa": "アストラ・フォー・ローの紹介",
+      "link": "https://openai.com/index/astra-for-law",
+      "description": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work.",
+      "publishedDate": "Thu, 17 Sep 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "3 ways to prep for your next big race with Search",
+      "titleJa": "検索を使用して次の大きなレースに備える 3 つの方法",
+      "link": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+      "description": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
+      "publishedDate": "Thu, 10 Sep 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Race_Running_Tips.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+      "titleJa": "HF ジョブ全体で LoRA を使用した非同期 GRPO: バケット、プロキシ、NCCL なし",
+      "link": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+      "description": "",
+      "publishedDate": "Thu, 10 Sep 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/asyncgrpo-lora-hfjobs/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+      "titleJa": "Gradio ワークフローを使用して AUTOMATIC1111 を再構築する",
+      "link": "https://huggingface.co/blog/gradio-workflow-1111",
+      "description": "",
+      "publishedDate": "Thu, 10 Sep 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/gradio-workflow1111/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+      "titleJa": "NeoMME: 効率的なマルチモーダルネイティブの多言語エンコーダー",
+      "link": "https://huggingface.co/blog/Hcompany/neomme",
+      "description": "",
+      "publishedDate": "Thu, 03 Sep 2026 13:13:48 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6264f9655f6f2e14d6ac981c/GJ6FUbgFpq1x8RNOqzmz-.webp",
+      "language": "en"
     },
     {
       "title": "Stable Diffusionのおすすめ神モデル16選！リアル系AI美女・アニメに強いモデル一覧",
@@ -464,25 +475,36 @@
       "language": "ja"
     },
     {
-      "title": "ハイブリッドAIとは？クラウド×ローカルAIの仕組み・メリットを実機検証で解説",
+      "title": "【Claude Code AGENTS.md対応】ついにClaude Codeが業界標準に歩み寄り！仕組み・使い方・活用シーンを徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/hybrid-ai/",
-      "description": "ハイブリッドAIとは、クラウドAIとローカルAIを、データの機密度や用途に応じて使い分け・組み合わせる仕組みのことです。生成AIの業務活用が広がる一方で、「APIの利用コストが想定以上に膨らんでいる」「社内の機密情報をク […]",
-      "publishedDate": "Fri, 18 Sep 2026 12:22:38 +0000",
+      "link": "https://weel.co.jp/media/tech/claude-code-agents-md/",
+      "description": "2026年9月19日、AnthropicがClaude Codeにおける「AGENTS.md」のネイティブサポートを発表しました！ これまで、Claude Codeだけが業界標準のAGENTS.mdを読み込めず、開発者は […]",
+      "publishedDate": "Mon, 21 Sep 2026 06:46:19 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/hybrid-ai_2609-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-AGENTS.md_2609-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "Jevとは？LLMの193倍速い「判断だけのAI」System One Modelの仕組み・料金・使い方を徹底解説",
+      "title": "Projects in Claude Codeとは？スレッドで並列作業するAnthropicの新プロジェクト機能を徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/jev/",
-      "description": "2026年9月、米サンフランシスコのTypeSafe AIから初の公開AIモデルが発表されました。 今回登場した「Jev」は、人と対話するのではなくソフトウェアの内部で判断だけを下すという新しい発想のAIモデルです。自由 […]",
-      "publishedDate": "Fri, 18 Sep 2026 11:39:58 +0000",
+      "link": "https://weel.co.jp/media/tech/projects-in-claude-code/",
+      "description": "2026年9月、Anthropicから刷新されたClaudeのプロジェクト機能が発表されました。 今回の刷新は「Projects redesigned: from folder to conversation」というタイ […]",
+      "publishedDate": "Mon, 21 Sep 2026 06:31:15 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Jev_2609-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Projects-in-Claude-Code_2609-1-1-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Qwen-Image-2.1】7Bで透過画像も生成できるAlibabaの最新画像生成AIの使い方・性能を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/qwen-image-2-1/",
+      "description": "2026年9月20日、Alibabaの生成AIチーム「Qwen」が、画像生成AI「Qwen-Image-2.1」をオープンウェイトとして公開しました！ Qwen-Imageシリーズの最新モデルとなるこのモデルは、画像の「 […]",
+      "publishedDate": "Mon, 21 Sep 2026 06:05:37 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen-Image-2.1-1-1024x576.webp",
       "language": "ja"
     },
     {
@@ -527,28 +549,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/tesla-japan-cybercab-robotaxi-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "製造業界の課題も生成AIが解決！企業の活用事例を含め課題の解決方法を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/manufacturing-issues/",
-      "description": "近年の世界情勢の影響もあり、製造業は様々な重要な課題に直面しています。システム的な課題や、そしてグローバル化に伴う言語の壁などに悩まされている方も多いのではないでしょうか？一方で、生成AIの導入は急速に進んでいます。製造 […]",
-      "publishedDate": "Fri, 18 Sep 2026 05:31:05 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/manufacturing-issues_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "生成AIで見積作成を効率化する方法とメリット、おすすめのツールを解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/genai-estimate/",
-      "description": "「見積作成に時間がかかる」「担当者によって金額がぶれる」「過去の見積を探すだけで半日つぶれる」。BtoBの現場でよく聞く悩みですが、生成AIを使えばこの3つはまとめて解消に近づけられます。 生成AIは、依頼内容の整理、過 […]",
-      "publishedDate": "Fri, 18 Sep 2026 04:52:12 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/genai-estimate_2609-1024x576.webp",
       "language": "ja"
     },
     {
