@@ -1,28 +1,6 @@
 {
-  "lastUpdated": "2026-09-22T05:55:12.460399",
+  "lastUpdated": "2026-09-23T05:34:36.131902",
   "articles": [
-    {
-      "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
-      "titleJa": "センテンストランスフォーマーを使用したマルチベクトル埋め込みモデルのトレーニングと微調整",
-      "link": "https://huggingface.co/blog/train-multi-vector-encoder",
-      "description": "",
-      "publishedDate": "Wed, 26 Aug 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Our framework for reporting model misalignment",
-      "titleJa": "モデルの不整合を報告するためのフレームワーク",
-      "link": "https://openai.com/index/model-misalignment-reporting-framework",
-      "description": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
-      "publishedDate": "Wed, 16 Sep 2026 17:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
     {
       "title": "Helping older adults use AI in everyday life",
       "titleJa": "高齢者の日常生活での AI 活用を支援する",
@@ -51,28 +29,6 @@
       "link": "https://openai.com/index/hex-gpt-6-astra",
       "description": "GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share.",
       "publishedDate": "Wed, 16 Sep 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How to connect AI usage to business value",
-      "titleJa": "AIの活用をビジネス価値に結びつける方法",
-      "link": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-      "description": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes.",
-      "publishedDate": "Wed, 16 Sep 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How workers are unlocking new ways of working",
-      "titleJa": "労働者はどのようにして新しい働き方を解放しているのか",
-      "link": "https://openai.com/index/unlocking-new-ways-of-working",
-      "description": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
-      "publishedDate": "Wed, 16 Sep 2026 09:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -123,26 +79,92 @@
       "language": "en"
     },
     {
-      "title": "Granite 4.2 LLMs: How They're Built",
-      "titleJa": "Granite 4.2 LLM: 構築方法",
-      "link": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-      "description": "",
-      "publishedDate": "Tue, 25 Aug 2026 15:14:14 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/65cc2c288ebd392213e58899/XHWV2L_wZsFe3ekksCgvQ.webp",
+      "title": "Better prompt caching for GPT-6",
+      "titleJa": "GPT-6 のプロンプト キャッシュの改善",
+      "link": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "description": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
+      "publishedDate": "Tue, 22 Sep 2026 21:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
-      "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-      "titleJa": "量子化対応ヒーリング: 完全精度のオリジナルを上回る圧縮 4 ビット モデル",
-      "link": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
-      "description": "",
-      "publishedDate": "Tue, 25 Aug 2026 11:39:24 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/2DSE26PMq2hJqKqEDOLIn.png",
+      "title": "Introducing GPT-6 Sol and Luna",
+      "titleJa": "GPT-6 ソルとルナの紹介",
+      "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "description": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
+      "publishedDate": "Tue, 22 Sep 2026 18:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "Roundtables: The Deadly Failures of The Virtual Border Wall",
+      "titleJa": "ラウンドテーブル: 仮想国境の壁の致命的な失敗",
+      "link": "https://www.technologyreview.com/2026/09/22/1144890/roundtables-the-deadly-failures-of-the-virtual-border-wall/",
+      "description": "The US has spent billions building a “virtual wall” of surveillance towers along its southern border over the past 25 years, promising they will help detect and apprehend border crossers and save live...",
+      "publishedDate": "Tue, 22 Sep 2026 13:42:05 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/IMG_6949.png?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "The Download: why AI’s latest breakthroughs and fears may be more hype than reality",
+      "titleJa": "ダウンロード: AI の最新の進歩と懸念が現実よりも誇大広告である可能性がある理由",
+      "link": "https://www.technologyreview.com/2026/09/22/1144910/the-download-dont-believe-ai-hype/",
+      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Don’t be fooled by this summer of AI hype —Timnit Gebru, execu...",
+      "publishedDate": "Tue, 22 Sep 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/12/Armada-high-res.jpg?fit=1456,818",
+      "language": "en"
+    },
+    {
+      "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+      "titleJa": "GPT‑6 Astra で研究時間とコストを並行して半分に削減",
+      "link": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+      "description": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
+      "publishedDate": "Tue, 22 Sep 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Don’t be fooled by this summer of AI hype",
+      "titleJa": "この夏の AI の誇大宣伝に騙されないでください",
+      "link": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype/",
+      "description": "It’s been a busy few months for AI hype. At the end of April, Anthropic claimed that its model Claude Mythos is better at finding software vulnerabilities than most security experts. Then we had the O...",
+      "publishedDate": "Tue, 22 Sep 2026 11:04:51 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/summer-hype2.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "WebMCPとは？AIエージェント向けブラウザ標準の仕組み・特徴・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/webmcp/",
+      "description": "2026年5月、GoogleからAIエージェント向けの新しいブラウザAPIが発表されました。 今回登場した「WebMCP（Web Model Context Protocol）」は、ウェブサイト自身がAIエージェントへの […]",
+      "publishedDate": "Tue, 22 Sep 2026 09:39:37 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/WebMCP_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Grok 4.7】SpaceXデータで鍛えたSpaceXAIの最強コーディングモデルの性能・使い方・料金を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/grok-4-7/",
+      "description": "2026年9月22日、SpaceXAIはGrokシリーズの最新モデル「Grok 4.7」をリリースしました！Grok 4.7は、前モデルGrok 4.6からわずか約1か月というスピードでのリリースとなり、SpaceXAI […]",
+      "publishedDate": "Tue, 22 Sep 2026 08:48:10 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Grok-4.7-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "AG-UIとは？AIエージェントとUIを繋ぐ新プロトコルの仕組みと実装方法を解説",
@@ -154,6 +176,50 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AG-UI_2609-1024x576.webp",
       "language": "ja"
+    },
+    {
+      "title": "Priorities and principles for effective third party assessments",
+      "titleJa": "効果的な第三者評価のための優先順位と原則",
+      "link": "https://openai.com/index/priorities-principles-third-party-assessments",
+      "description": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
+      "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+      "titleJa": "英国 AISI と EvalEval がどのようにベンチマーク結果を再現可能にしているか",
+      "link": "https://huggingface.co/blog/evaleval-aisi",
+      "description": "",
+      "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/evaleval-aisi/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Transformers now runs llama.cpp quants",
+      "titleJa": "Transformers は llama.cpp クォントを実行するようになりました",
+      "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "description": "",
+      "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/transformers_llama_cpp_quants/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+      "titleJa": "oMLX の作成者兼メンテナーである Jun Kim が Hugging Face に参加して MLX コミュニティをサポート",
+      "link": "https://huggingface.co/blog/omlx",
+      "description": "",
+      "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/omlx/omlx-hf.jpg",
+      "language": "en"
     },
     {
       "title": "Your Agent Aced the Task. Will It Do It Again?",
@@ -266,17 +332,6 @@
       "language": "en"
     },
     {
-      "title": "The Download: mice with part-human brains and climate tech innovators",
-      "titleJa": "ダウンロード: 部分的に人間の脳を持つマウスと気候変動技術のイノベーター",
-      "link": "https://www.technologyreview.com/2026/09/17/1144314/the-download-mice-part-human-brains-climate-tech-innovators/",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Meet a mouse whose brain cortex is made up of human cells Mult...",
-      "publishedDate": "Thu, 17 Sep 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/12/digitaltwins-FF_01-main_1-e1733955050501.jpg?fit=2560,1706",
-      "language": "en"
-    },
-    {
       "title": "How Cooley is accelerating IPO work with ChatGPT",
       "titleJa": "Cooley は ChatGPT を使用して IPO 作業をどのように加速しているか",
       "link": "https://openai.com/index/cooley-gopublic",
@@ -285,17 +340,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Meet the innovators under 35 shaping climate tech",
-      "titleJa": "気候変動テクノロジーを形成する 35 歳未満のイノベーターを紹介します",
-      "link": "https://www.technologyreview.com/2026/09/17/1144251/innovators-shaping-climate-tech/",
-      "description": "Each year, the editorial team at MIT Technology Review puts together a list of 35 innovators under 35—a group of researchers, inventors, and other young minds worth following. The team worked on the n...",
-      "publishedDate": "Thu, 17 Sep 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/260915_thespark_climate35ers.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -387,28 +431,6 @@
       "language": "en"
     },
     {
-      "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-      "titleJa": "Gradio ワークフローを使用して AUTOMATIC1111 を再構築する",
-      "link": "https://huggingface.co/blog/gradio-workflow-1111",
-      "description": "",
-      "publishedDate": "Thu, 10 Sep 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/gradio-workflow1111/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
-      "titleJa": "NeoMME: 効率的なマルチモーダルネイティブの多言語エンコーダー",
-      "link": "https://huggingface.co/blog/Hcompany/neomme",
-      "description": "",
-      "publishedDate": "Thu, 03 Sep 2026 13:13:48 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6264f9655f6f2e14d6ac981c/GJ6FUbgFpq1x8RNOqzmz-.webp",
-      "language": "en"
-    },
-    {
       "title": "Stable Diffusionのおすすめ神モデル16選！リアル系AI美女・アニメに強いモデル一覧",
       "titleJa": null,
       "link": "https://weel.co.jp/media/stable-diffusion-model/",
@@ -450,28 +472,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/01/about-fal-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "全世界の男子待望！生成AIでエロはどこまで可能？ハイパーポルノの仕組みと法的リスクを解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/hyperporno-dig/",
-      "description": "生成AIが急速に普及するなかで、「生成AIでエロ表現可能？」「どこまでが許されて、何が危険なの？」と不安や疑問を感じる人も増えています。実際、性的表現をめぐる生成AIは、技術の進化とともに規約・法令・社会的議論も大きく動 […]",
-      "publishedDate": "Sun, 20 Sep 2026 17:51:29 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/2025/11/hyperporno-dig_2602-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Qwen3.8-Omni-Flash】音声・映像を理解してタスクまで実行するアリババの次世代オムニモーダルAIを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwen3-8-omni-flash/",
-      "description": "2026年9月18日、アリババのQwenチームが次世代オムニモーダルモデル「Qwen3.8-Omni-Flash」を公開しました！ このモデルは、テキスト・画像・音声・動画の4種類の入力をネイティブに処理し、内容の理解か […]",
-      "publishedDate": "Sat, 19 Sep 2026 09:54:04 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen3.8-Omni-Flash-1024x576.webp",
       "language": "ja"
     },
     {
