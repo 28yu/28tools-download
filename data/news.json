@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-22T02:31:33.646746",
+  "lastUpdated": "2026-09-23T02:31:49.088828",
   "articles": [
     {
       "title": "危険予知活動（KY活動）とは？｜建設現場での進め方・4ラウンド法・例文を解説",
@@ -42,14 +42,24 @@
       "language": "ja"
     },
     {
-      "title": "安藤ハザマ、L is Bと共同でdirect×PayPay連携のヒヤリハット報告ボットを開発",
-      "link": "https://news.build-app.jp/article/42699/",
-      "description": "建設業は労働集約型の産業であり、日々変化する作業環境の中で労働災害の発生件数が全産業の中でも高い水準にあります。とりわけ死亡災害の割合は全体...",
-      "publishedDate": "Tue, 15 Sep 2026 01:00:00 +0000",
+      "title": "【2026年最新】フルハーネスの義務化はどう変わった？建設現場の特別教育・点検・一人親方対応を解説",
+      "link": "https://news.build-app.jp/article/42781/",
+      "description": "フルハーネスを全員に配っても、作業に合わないランヤードでは安全を確保できません。フック位置との組み合わせによって落下距離が変わるためです。特...",
+      "publishedDate": "Tue, 22 Sep 2026 10:40:37 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/hiyarihat_report_bot-130x68.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/35277192_m-130x87.jpg",
       "language": "ja"
+    },
+    {
+      "title": "High & Medium Voltage Power transmission & distribution Project Plan out for voting.",
+      "link": "https://www.buildingsmart.org/high-medium-voltage-power-transmission-distribution-project-plan-out-for-voting/",
+      "description": "Vote closing date: 13 Nov 2026Report: Link This project investigates how openBIM can support high and medium voltage power transmission and distribution infrastructure across the asset lifecycle. It w...",
+      "publishedDate": "Tue, 22 Sep 2026 10:10:39 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "buildingSMART International Announces Finalists for the 2026 openBIM® Awards",
@@ -274,7 +284,7 @@
     {
       "title": "Immersed Tunnel Project Plan out for voting",
       "link": "https://www.buildingsmart.org/immersed-tunnel-project-plan-out-for-voting/",
-      "description": "Vote closing date: 23 Aug 2026Report: Link Project SummaryImmersed tunnel projects are a unique and complex subset of maritime infrastructure, requiring precise coordination across disciplines, techno...",
+      "description": "Vote closing date: 27 Oct 2026Report: Link Project SummaryImmersed tunnel projects are a unique and complex subset of maritime infrastructure, requiring precise coordination across disciplines, techno...",
       "publishedDate": "Fri, 04 Sep 2026 08:39:56 +0000",
       "source": "buildingSMART International",
       "category": "bim",
@@ -286,16 +296,6 @@
       "link": "https://www.buildingsmart.org/ifc-4-4-integration-for-iso-submission-approval-voting/",
       "description": "Vote closing date: 21 Aug 2026 Project plan: Link The IFC 4.4 Integration for ISO Submission has been submitted to the Standards Committee for voting to proceed.",
       "publishedDate": "Fri, 03 Jul 2026 12:36:12 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "IFC X Core & Modularisation Final Project Plan voting",
-      "link": "https://www.buildingsmart.org/ifc-x-core-modularisation-final-project-plan-voting/",
-      "description": "Vote closing date: 7 Aug 2026 Project plan: Link The IFC X Core & Modularisation Final Project Plan has been sent to the Standards Committee for voting as Standards Proposal.",
-      "publishedDate": "Fri, 03 Jul 2026 12:30:53 +0000",
       "source": "buildingSMART International",
       "category": "bim",
       "thumbnail": null,
