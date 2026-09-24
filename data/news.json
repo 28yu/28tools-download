@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23T02:31:49.088828",
+  "lastUpdated": "2026-09-24T02:20:55.848171",
   "articles": [
     {
       "title": "危険予知活動（KY活動）とは？｜建設現場での進め方・4ラウンド法・例文を解説",
@@ -29,16 +29,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/asuene_co2_management-130x50.webp",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省が令和8年都道府県地価調査を公表、全用途平均は5年連続上昇し商業地は上昇幅拡大",
-      "link": "https://news.build-app.jp/article/42711/",
-      "description": "国土交通省は令和8年9月15日、令和8年都道府県地価調査の結果を公表しました。全国21,466地点を対象に、令和8年7月1日時点の1平方メー...",
-      "publishedDate": "Wed, 16 Sep 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2023/03/XLm1qqr0TZRICT41677691748_1677691764-130x82.jpg",
       "language": "ja"
     },
     {
@@ -109,6 +99,16 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/cloud-browser-70percent-ogp-1200x630-1-1024x538.webp",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省、2029年春開始のBIMデータ審査導入へ向け基本構想を策定し審査方法を整理",
+      "link": "https://news.build-app.jp/article/42787/",
+      "description": "国土交通省は、2029年春の導入を目指す「BIMデータ審査」について、基本構想を取りまとめました。BIMデータ審査は、2026年4月に始まっ...",
+      "publishedDate": "Thu, 24 Sep 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/bim_review_mlit-130x74.jpg",
       "language": "ja"
     },
     {
