@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-24T05:54:57.166952",
+  "lastUpdated": "2026-09-25T05:55:35.362140",
   "articles": [
     {
       "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
@@ -267,7 +267,7 @@
     },
     {
       "title": "The Download: why AI’s latest breakthroughs and fears may be more hype than reality",
-      "titleJa": "ダウンロード: AI の最新の進歩と懸念が現実よりも誇大広告である可能性がある理由",
+      "titleJa": "ダウンロード: AI の最新の進歩と恐怖が現実よりも誇大広告である可能性がある理由",
       "link": "https://www.technologyreview.com/2026/09/22/1144910/the-download-dont-believe-ai-hype/",
       "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Don’t be fooled by this summer of AI hype —Timnit Gebru, execu...",
       "publishedDate": "Tue, 22 Sep 2026 12:10:00 +0000",
@@ -387,6 +387,50 @@
       "language": "en"
     },
     {
+      "title": "小学生の約半数が生成AI利用経験も、夏休みの宿題では58.6%が使わない選択。考える力への影響を不安視",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/corocoro-ai-homework-survey/",
+      "description": "株式会社小学館の「月刊コロコロコミック」が、小学1～6年生の読者752人を対象に生成AIの利用実態を調査しました。50.4%の小学生がAIの利用経験を持つ一方、63.0%が考える力への影響を不安視しています。 このニュー […]",
+      "publishedDate": "Thu, 24 Sep 2026 09:25:12 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/corocoro-ai-homework-survey-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "転職活動者の26%が生成AIで企業情報を収集。利用率は口コミサイトの2倍超、事業内容や評判を重視",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/job-change-ai-survey/",
+      "description": "Iteraが会社員5,000名を対象に、転職活動におけるAI活用状況を調査しました。転職活動者の26%が生成AIで企業情報を調べており、 最も多かった内容は「企業の事業内容・評判」 でした。 このニュースのポイント 株式 […]",
+      "publishedDate": "Thu, 24 Sep 2026 09:14:29 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/job-change-ai-survey-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "国内初の自動運転レベル4「完全無人走行」商用タクシー運行へ。GO・Waymo・日本交通、2027年中目指す",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/go-waymo-nihonkotsu-autonomous-taxi/",
+      "description": "GO、Waymo、日本交通は、東京における自動運転タクシーの商用化に向けた戦略的パートナーシップに合意しました。2027年中に、東京で国内初となる自動運転レベル4の完全無人タクシーの商用運行を目指します。 このニュースの […]",
+      "publishedDate": "Thu, 24 Sep 2026 09:12:25 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/go-waymo-nihonkotsu-autonomous-taxi.png",
+      "language": "ja"
+    },
+    {
+      "title": "【GPT-6 Sol / Luna】API価格が半額に！GPT-6 Astraの技術を継承した新モデルの性能・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/gpt-6-sol-luna/",
+      "description": "2026年9月23日、OpenAIはGPT-6ファミリーの新モデル「GPT-6 Sol」と「GPT-6 Luna」を公開しました！ 同月初めに登場したフラッグシップモデル「GPT-6 Astra」と同様の手法で訓練されて […]",
+      "publishedDate": "Thu, 24 Sep 2026 08:39:38 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-6-Sol-and-Luna-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "Gemini 3.8 Flash TTSとは？Googleの最も表現力豊かな音声生成AIの特徴・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/gemini-3-8-flash-tts/",
@@ -420,91 +464,47 @@
       "language": "ja"
     },
     {
-      "title": "ソニー銀行と富士通、勘定系システム開発への生成AI適用開始。開発期間を30％短縮",
+      "title": "Claude Opus 5.5 vs GPT-6 Astra vs Sol｜日本ユーザーの本音比較「結局どれをメインにする？」",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/fujitsu-sonybank-generative-ai/",
-      "description": "ソニー銀行と富士通は、勘定系システムの実開発プロセスに生成AIを本格適用しました。システム開発の設計書やソースコードなどをAIが工程横断で活用する仕組みを構築し、開発期間を従来比で30％短縮しています。 このニュースのポ […]",
-      "publishedDate": "Thu, 17 Sep 2026 09:19:06 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/fujitsu-sonybank.png",
-      "language": "ja"
-    },
-    {
-      "title": "KDDIのロボット基盤モデルの研究開発がGENIACに採択。フィジカルAIの社会実装を加速",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/kddi-robot-foundation-model-geniac/",
-      "description": "KDDIは「小売物流業等の現場業務を代替するロボット基盤モデルの研究開発」において、国家プロジェクト「GENIAC」に採択されたことを発表しました。従業員専用のローソン店舗で作業者目線のデータを収集し、ロボット制御の実証 […]",
-      "publishedDate": "Thu, 17 Sep 2026 09:14:45 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/kddi.png",
-      "language": "ja"
-    },
-    {
-      "title": "【インタビュー】出展社数1,100社！関西最大級の製造業展示会「第29回 ものづくり ワールド［大阪］」～「現場課題の解決」を見据えた商談の場～",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/interview-monodukuri-osaka-vol29/",
-      "description": "国際産業見本市の主催・企画・運営における業界最大手のRX Japan 合同会社は、2026年10月7日（水）～9日（金）の3日間、インテックス大阪にて「第29回 ものづくり ワールド［大阪］」を開催します。 IT、DX製 […]",
-      "publishedDate": "Thu, 17 Sep 2026 06:00:24 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/manufacturingworldosaka202601.png",
-      "language": "ja"
-    },
-    {
-      "title": "【アーカイブ配信スタート！】AI博覧会 Summer 2026ーフィジカルAI・国産LLMなど最新AIの社会実装が詰まったカンファレンスを公開ー",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-hakurankai_2026_summer_archive/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年8月26日（水）・27日（木）の2日間にわたり開催した「AI博覧会 Summer 2026」のカンファレンスのアーカイブ配 […]",
-      "publishedDate": "Thu, 17 Sep 2026 04:00:00 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/aihakurankai2026summerarchive00.png",
-      "language": "ja"
-    },
-    {
-      "title": "「AI博覧会 Fukuoka 2026」カンファレンス第3弾スピーカーを発表！大分・佐賀のAI支援機関、福岡発GMOペパボが登壇。情報流出を防ぐAIリスク対策や、地方のIT人材不足を突破する組織定着ノウハウを一挙公開",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aihaku-fukuoka2026-3rdsp/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年9月30日（水）・10月1日（木）の2日間、博多国際展示場＆カンファレンスセンターにて「AI博覧会 Fukuoka 202 […]",
-      "publishedDate": "Thu, 17 Sep 2026 02:00:23 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/fukuoka2026-3rdsp000.png",
-      "language": "ja"
-    },
-    {
-      "title": "【Claude Code AGENTS.md対応】ついにClaude Codeが業界標準に歩み寄り！仕組み・使い方・活用シーンを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code-agents-md/",
-      "description": "2026年9月19日、AnthropicがClaude Codeにおける「AGENTS.md」のネイティブサポートを発表しました！ これまで、Claude Codeだけが業界標準のAGENTS.mdを読み込めず、開発者は […]",
-      "publishedDate": "Mon, 21 Sep 2026 06:46:19 +0000",
+      "link": "https://weel.co.jp/media/tech/opus-5-5-vs-gpt-6-astra-vs-sol/",
+      "description": "2026年9月、AIモデル競争がかつてないほど激化しています。9月4日にOpenAIがフラグシップのGPT-6 Astraをリリースし、わずか19日後の9月23日にはAnthropicがClaude Opus 5.5を公 […]",
+      "publishedDate": "Fri, 25 Sep 2026 05:22:30 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-AGENTS.md_2609-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/opus-5-5-vs-gpt-6-astra-vs-sol_2609-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "Projects in Claude Codeとは？スレッドで並列作業するAnthropicの新プロジェクト機能を徹底解説",
+      "title": "アイスマイリー、10/7（水）から3日間、第29回 ものづくり ワールド [大阪]内、「製造業DX展」にブース出展",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/projects-in-claude-code/",
-      "description": "2026年9月、Anthropicから刷新されたClaudeのプロジェクト機能が発表されました。 今回の刷新は「Projects redesigned: from folder to conversation」というタイ […]",
-      "publishedDate": "Mon, 21 Sep 2026 06:31:15 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Projects-in-Claude-Code_2609-1-1-1024x576.webp",
+      "link": "https://aismiley.co.jp/ai_news/monodukuri-world-osaka-no29/",
+      "description": "AIsmileyとAIsmiley Communityは、2026年10月7日（水）～10月9日（金）にインテックス大阪にて開催の第29回 ものづくり ワールド [大阪]内、「製造業DX展」にブースを出展します。 会場で […]",
+      "publishedDate": "Fri, 25 Sep 2026 04:00:51 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/mdwosakavol29.png",
       "language": "ja"
     },
     {
-      "title": "【Qwen-Image-2.1】7Bで透過画像も生成できるAlibabaの最新画像生成AIの使い方・性能を徹底解説",
+      "title": "Claude Opus 5.5でゲームは作れる？Xで話題の事例・プロンプト例・注意点を徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/qwen-image-2-1/",
-      "description": "2026年9月20日、Alibabaの生成AIチーム「Qwen」が、画像生成AI「Qwen-Image-2.1」をオープンウェイトとして公開しました！ Qwen-Imageシリーズの最新モデルとなるこのモデルは、画像の「 […]",
-      "publishedDate": "Mon, 21 Sep 2026 06:05:37 +0000",
+      "link": "https://weel.co.jp/media/innovator/claude-opus-5-5-game/",
+      "description": "2026年9月、AnthropicからClaudeシリーズの新たなAIモデルが登場しました。 今回登場した「Claude Opus 5.5」は、長時間の自律的なコーディングを得意とする最新モデルです。リリース直後からXで […]",
+      "publishedDate": "Fri, 25 Sep 2026 02:18:01 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Qwen-Image-2.1-1-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-opus-5-5-game_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "「ローカルLLM・オンプレ生成AIサービス選定チェックリスト」を公開！クラウド利用が難しい企業向けに導入方式・RAG・主要6サービスを比較",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/local-llm-onprem-checklist/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、クラウド型生成AIの利用に制約がある企業向けに、導入方式やサービス選定のポイントを整理した「ローカルLLM・オンプレ生成AIサービス […]",
+      "publishedDate": "Fri, 25 Sep 2026 02:00:03 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/local-llm-onprem_0001.png",
       "language": "ja"
     },
     {
@@ -552,7 +552,18 @@
       "language": "ja"
     },
     {
-      "title": "Cloudflare、Python Wrokersを正式サービスに。PythonでWebサイトの構築、データベース接続、オブジェクトストレージ操作など",
+      "title": "Go言語で書かれた高速なIDE「Rune」、オープンソースで公開。ターミナルとコマンドプロンプト中心の開発環境、複数リモートノードをローカルのように操作可能",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/goiderune.html",
+      "description": "開発ツールベンダのUnstablebuildは、Go言語製のIDE「Rune」をオープンソースで公開したことを発表しました。 Runeの画面 RuneはGo言語によるネイティブアプリケーションとして提供される高速なIDEです。GPUによる描...",
+      "publishedDate": "2026-09-24T15:45:08Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/rune-oss01.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Cloudflare、Python Workersを正式サービスに。PythonでWebサイトの構築、データベース接続、オブジェクトストレージ操作など",
       "titleJa": null,
       "link": "https://www.publickey1.jp/blog/26/cloudflarepython_wrokerspythonweb.html",
       "description": "Cloudflareは、同社のサーバレス実行基盤上でPythonを実行できる「Python Workers」が正式サービスになったことを発表しました。 JavaScriptによるサーバレス実行基盤のCloudflare Workers上でW...",
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/nxplugin4aws02.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "AWS、自然言語でデータ分析アプリを構築可能に、「Amazon Quick」に新機能",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/awsamazon_quick.html",
-      "description": "Amazon Web Services（AWS）は、データ分析プラットフォーム「Amazon Quick」の新機能として、データ分析と表示を行うカスタムアプリケーションを自然言語の指示だけで構築できる新機能を発表しました。 Amazon Q...",
-      "publishedDate": "2026-09-09T15:27:47Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/amazonquick-app-bynaturallanguage.jpg",
       "language": "ja"
     }
   ]
