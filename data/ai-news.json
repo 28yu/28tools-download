@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-25T05:55:35.362140",
+  "lastUpdated": "2026-09-26T05:55:59.418924",
   "articles": [
     {
       "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
@@ -266,17 +266,6 @@
       "language": "en"
     },
     {
-      "title": "The Download: why AI’s latest breakthroughs and fears may be more hype than reality",
-      "titleJa": "ダウンロード: AI の最新の進歩と恐怖が現実よりも誇大広告である可能性がある理由",
-      "link": "https://www.technologyreview.com/2026/09/22/1144910/the-download-dont-believe-ai-hype/",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Don’t be fooled by this summer of AI hype —Timnit Gebru, execu...",
-      "publishedDate": "Tue, 22 Sep 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/12/Armada-high-res.jpg?fit=1456,818",
-      "language": "en"
-    },
-    {
       "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
       "titleJa": "GPT‑6 Astra で研究時間とコストを並行して半分に削減",
       "link": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
@@ -285,17 +274,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Don’t be fooled by this summer of AI hype",
-      "titleJa": "この夏の AI の誇大宣伝に騙されないでください",
-      "link": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype/",
-      "description": "It’s been a busy few months for AI hype. At the end of April, Anthropic claimed that its model Claude Mythos is better at finding software vulnerabilities than most security experts. Then we had the O...",
-      "publishedDate": "Tue, 22 Sep 2026 11:04:51 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/summer-hype2.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -318,17 +296,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Grok-4.7-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "AG-UIとは？AIエージェントとUIを繋ぐ新プロトコルの仕組みと実装方法を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/ag-ui/",
-      "description": "AG-UIは、AIエージェントとフロントエンドの通信を標準化するオープンなイベントベースのプロトコルです。公開は2025年5月、GitHubのスターは約15,900（2026年9月時点）。UIを作るツールではなく、接続を […]",
-      "publishedDate": "Tue, 22 Sep 2026 02:54:59 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AG-UI_2609-1024x576.webp",
       "language": "ja"
     },
     {
@@ -377,13 +344,35 @@
     },
     {
       "title": "Your Agent Aced the Task. Will It Do It Again?",
-      "titleJa": "あなたのエージェントはタスクを完了しました。またやりますか?",
+      "titleJa": "あなたのエージェントがタスクを完了しました。またやりますか?",
       "link": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
       "description": "",
       "publishedDate": "Tue, 15 Sep 2026 16:00:44 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6435a1131860001f144239ea/dI5J2sSc3TSprk9VB4EVJ.jpeg",
+      "language": "en"
+    },
+    {
+      "title": "AI for Societal Impact",
+      "titleJa": "社会的影響をもたらす AI",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
+      "description": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI.",
+      "publishedDate": "Tue, 15 Sep 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Health_Header.gif",
+      "language": "en"
+    },
+    {
+      "title": "Building AI to accelerate science and improve lives",
+      "titleJa": "AI を構築して科学を加速し、生活を改善する",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+      "description": "B-roll showing diverse environments and people, including a teacher and students in a classroom and a patient with a doctor",
+      "publishedDate": "Tue, 15 Sep 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SocialShare_hD2gcAw.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -464,6 +453,50 @@
       "language": "ja"
     },
     {
+      "title": "【投資をムダにしない】生成AIのROIを最大化する方法！投資対効果の考え方や計算方法も紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/generative-ai-roi/",
+      "description": "生成AIの導入が進む一方、「PoC止まりで本番化しない」「費用対効果が不透明」と経営層から厳しく問われるケースが増えています。ツール代などの表面的な費用だけでなく、人件費や教育費を含めた総所有コスト（TCO）を把握し、工 […]",
+      "publishedDate": "Fri, 25 Sep 2026 07:48:23 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/generative-ai-roi_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "富士通、国産次世代CPUとサーバを2026年11月から販売開始。AI推論性能向上と省電力化を実現",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/fujitsu-monaka-server/",
+      "description": "富士通は、国内で設計・開発した次世代CPU「FUJITSU-MONAKA」および国産サーバ「Fujitsu MONAKA Server」の販売を2026年11月より開始します。世界水準のAI推論性能と省電力を両立し、AI […]",
+      "publishedDate": "Fri, 25 Sep 2026 07:34:50 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/fujitsu-monaka-server.png",
+      "language": "ja"
+    },
+    {
+      "title": "ファナック、産業用ロボットのフィジカルAIシステム「AI溶接エージェント」開発。溶接条件とロボット動作を自動生成",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/fanuc-ai-welding-agent/",
+      "description": "ファナックは、産業用ロボットのフィジカルAIシステム「AI溶接エージェント」を開発しました。図面を読み取って溶接条件やロボットの動作を自動生成し、設定・教示作業なしでの実溶接を実現します。 このニュースのポイント ファナ […]",
+      "publishedDate": "Fri, 25 Sep 2026 07:25:59 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/fanuc-welding-agent-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "Anthropic、新モデル「Claude Opus 5.5」提供開始。従来比コスト4割減で高性能なコーディング・知識労働を実現",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/anthropic-claude-opus-5-5/",
+      "description": "Anthropicは、新モデルファミリー「Claude 5.5」の第一弾となる「Claude Opus 5.5」の提供を開始しました。エージェント型コーディングや知識作業向けの性能向上を図りながら、従来モデル「Opus […]",
+      "publishedDate": "Fri, 25 Sep 2026 07:25:38 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/anthropic-claude-opus-main.png",
+      "language": "ja"
+    },
+    {
       "title": "Claude Opus 5.5 vs GPT-6 Astra vs Sol｜日本ユーザーの本音比較「結局どれをメインにする？」",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/opus-5-5-vs-gpt-6-astra-vs-sol/",
@@ -516,39 +549,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/pkshabootheye.png",
-      "language": "ja"
-    },
-    {
-      "title": "りそな銀行、AI活用の新たなテレビ窓口サービス開始。書類記入なくし手続き時間の半減を目指す",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/resona-ai-tv-counter/",
-      "description": "りそな銀行と埼玉りそな銀行は、オペレーターとAIを組み合わせた新たなテレビ窓口サービスを開始しました。オペレーターとの会話を通じてAIが手続きを支援し、顧客は書類への記入なしで手続きが完了します。従来平均約30分かかって […]",
-      "publishedDate": "Fri, 18 Sep 2026 06:40:35 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/resona-ai-tv-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "ABEJA、シンガポールにAI事業子会社を設立。ASEAN、グローバルサウス諸国での展開を加速",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/abeja-singapore-ai-subsidiary/",
-      "description": "ABEJAは、シンガポールに100%出資子会社を設立する旨を決議しました。現地の企業や政府などと連携し、グローバルサウス諸国におけるAI・Physical AI事業の拡大と機能拡充を目指します。 このニュースのポイント […]",
-      "publishedDate": "Fri, 18 Sep 2026 06:31:58 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/abeja-singapore-ai-subsidiary-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "Tesla Japan、無人タクシー用車両「Cybercab」を日本初公開。東京・大阪・名古屋の4会場で展示",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/tesla-japan-cybercab-robotaxi/",
-      "description": "Tesla Japanは、無人タクシー用車両「Cybercab」を日本で初公開すると発表しました。東京・大阪・名古屋の4会場での展示により、テスラのテクノロジーと取り組みを直接体感できる機会を提供します。 このニュースの […]",
-      "publishedDate": "Fri, 18 Sep 2026 06:30:55 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/tesla-japan-cybercab-robotaxi-eye.png",
       "language": "ja"
     },
     {
