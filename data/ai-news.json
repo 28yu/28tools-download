@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-26T05:55:59.418924",
+  "lastUpdated": "2026-09-27T06:21:32.615682",
   "articles": [
     {
       "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
@@ -25,7 +25,7 @@
     },
     {
       "title": "A congressional representative just proposed killing America’s border tower program",
-      "titleJa": "議会議員がアメリカの国境タワー計画を中止することを提案したばかり",
+      "titleJa": "議会議員がアメリカの国境タワー計画を廃止することを提案したばかり",
       "link": "https://www.technologyreview.com/2026/09/23/1145002/a-congressional-representative-just-proposed-killing-americas-border-tower-program/",
       "description": "Delia Ramirez, a Democratic US representative from Illinois, has announced a plan to introduce new legislation to terminate the surveillance tower program along the US southern border. The announcemen...",
       "publishedDate": "Wed, 23 Sep 2026 17:10:11 +0000",
@@ -135,7 +135,7 @@
     },
     {
       "title": "Smart glasses are already causing havoc in India",
-      "titleJa": "スマートグラスはインドですでに大混乱を引き起こしている",
+      "titleJa": "インドではスマートグラスがすでに大混乱を引き起こしている",
       "link": "https://www.technologyreview.com/2026/09/23/1144953/smart-glasses-havoc-india/",
       "description": "Shubnam was packing boxes for a move into a new home when their friend sent them an Instagram video. The footage had only been up for a few hours, but it was days old, recorded at a Delhi protest this...",
       "publishedDate": "Wed, 23 Sep 2026 09:00:00 +0000",
@@ -333,7 +333,7 @@
     },
     {
       "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-      "titleJa": "oMLX の作成者兼メンテナーである Jun Kim が Hugging Face に参加して MLX コミュニティをサポート",
+      "titleJa": "oMLX 作成者兼メンテナーの Jun Kim が Hugging Face に参加して MLX コミュニティをサポート",
       "link": "https://huggingface.co/blog/omlx",
       "description": "",
       "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
@@ -344,7 +344,7 @@
     },
     {
       "title": "Your Agent Aced the Task. Will It Do It Again?",
-      "titleJa": "あなたのエージェントがタスクを完了しました。またやりますか?",
+      "titleJa": "あなたのエージェントはタスクを完了しました。またやりますか?",
       "link": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
       "description": "",
       "publishedDate": "Tue, 15 Sep 2026 16:00:44 GMT",
