@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-28T06:23:02.745640",
+  "lastUpdated": "2026-09-29T06:38:14.002869",
   "articles": [
     {
       "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
@@ -57,21 +57,10 @@
       "language": "en"
     },
     {
-      "title": "The Download: India’s smart glasses menace and AI’s trillion-dollar gamble",
-      "titleJa": "ダウンロード: インドのスマートグラスの脅威と AI の 1 兆ドル規模のギャンブル",
-      "link": "https://www.technologyreview.com/2026/09/23/1144966/the-download-india-smart-glasses-ai-trillion-dollar-gamble/",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Smart glasses are already causing havoc in India When Shubnam...",
-      "publishedDate": "Wed, 23 Sep 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/PainChek-Montage-3-edited.jpg",
-      "language": "en"
-    },
-    {
-      "title": "Sam Altman’s remarks at the United Nations Security Council",
-      "titleJa": "国連安全保障理事会でのサム・アルトマン氏の発言",
-      "link": "https://openai.com/index/sam-altman-un-security-council-remarks",
-      "description": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "titleJa": "Ringg の AI エージェントは OpenAI を使用して顧客通話の最大 65% を解決します",
+      "link": "https://openai.com/index/ringg",
+      "description": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
       "publishedDate": "Wed, 23 Sep 2026 12:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -101,10 +90,10 @@
       "language": "en"
     },
     {
-      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "titleJa": "Ringg の AI エージェントは OpenAI を使用して顧客通話の最大 65% を解決します",
-      "link": "https://openai.com/index/ringg",
-      "description": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+      "title": "Sam Altman’s remarks at the United Nations Security Council",
+      "titleJa": "国連安全保障理事会でのサム・アルトマン氏の発言",
+      "link": "https://openai.com/index/sam-altman-un-security-council-remarks",
+      "description": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
       "publishedDate": "Wed, 23 Sep 2026 12:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -121,39 +110,6 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "The AI Hype Index: AI loves cheating",
-      "titleJa": "AI 誇大宣伝指数: AI は不正行為が大好きです",
-      "link": "https://www.technologyreview.com/2026/09/23/1144940/ai-hype-index-ai-loves-cheating/",
-      "description": "Brace yourself: It turns out AI is being optimized for cheating. OpenAI’s agents hacked into Hugging Face to get the answers to a cybersecurity test. Next, they solved a prestigious math problem (or j...",
-      "publishedDate": "Wed, 23 Sep 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/09-Hype-thumb.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Smart glasses are already causing havoc in India",
-      "titleJa": "インドではスマートグラスがすでに大混乱を引き起こしている",
-      "link": "https://www.technologyreview.com/2026/09/23/1144953/smart-glasses-havoc-india/",
-      "description": "Shubnam was packing boxes for a move into a new home when their friend sent them an Instagram video. The footage had only been up for a few hours, but it was days old, recorded at a Delhi protest this...",
-      "publishedDate": "Wed, 23 Sep 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/260824_metaindia.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Genspark APIとは？キー取得・料金からClaude Code連携まで解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/genspark-api/",
-      "description": "Genspark APIは、検索・クロール・画像生成などの機能をプログラムから呼び出せる公式の仕組みです。自作のコードに組み込む使い方もあれば、Claude Codeのようなエージェントから呼び出す方法もあります。 とは […]",
-      "publishedDate": "Wed, 23 Sep 2026 07:34:29 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Genspark-API_2609-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
@@ -222,59 +178,37 @@
       "language": "en"
     },
     {
-      "title": "Better prompt caching for GPT-6",
-      "titleJa": "GPT-6 のプロンプト キャッシュの改善",
-      "link": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-      "description": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
-      "publishedDate": "Tue, 22 Sep 2026 21:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
+      "title": "Eleven v4とは？ElevenLabs最新音声AIの性能・料金・使い方とTurboとの違いを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/eleven-v4/",
+      "description": "Eleven v4 & Eleven v4 Turboは、ElevenLabsが2026年9月28日に公開した、同社史上もっとも感情表現が豊かな音声合成モデルです。台本に[whispers]や[laughs]とい […]",
+      "publishedDate": "Tue, 29 Sep 2026 02:21:32 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Eleven-v4-1024x576.webp",
+      "language": "ja"
     },
     {
-      "title": "Introducing GPT-6 Sol and Luna",
-      "titleJa": "GPT-6 ソルとルナの紹介",
-      "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-      "description": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
-      "publishedDate": "Tue, 22 Sep 2026 18:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
+      "title": "「Claude対応 生成AI研修・リスキリングサービス比較ガイド」を公開！自社に合う研修タイプの選び方と主要6サービスを整理",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-training-reskilling-guide/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、法人向けの生成AI研修・AIリスキリングの比較に役立つ「Claude対応 生成AI研修・リスキリングサービス比較ガイド」を、2026 […]",
+      "publishedDate": "Tue, 29 Sep 2026 02:00:24 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/ai-training-reskilling-guide000_0.png",
+      "language": "ja"
     },
     {
-      "title": "Roundtables: The Deadly Failures of The Virtual Border Wall",
-      "titleJa": "ラウンドテーブル: 仮想国境の壁の致命的な失敗",
-      "link": "https://www.technologyreview.com/2026/09/22/1144890/roundtables-the-deadly-failures-of-the-virtual-border-wall/",
-      "description": "The US has spent billions building a “virtual wall” of surveillance towers along its southern border over the past 25 years, promising they will help detect and apprehend border crossers and save live...",
-      "publishedDate": "Tue, 22 Sep 2026 13:42:05 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/IMG_6949.png?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-      "titleJa": "GPT‑6 Astra で研究時間とコストを並行して半分に削減",
-      "link": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-      "description": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
-      "publishedDate": "Tue, 22 Sep 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Priorities and principles for effective third party assessments",
-      "titleJa": "効果的な第三者評価のための優先順位と原則",
-      "link": "https://openai.com/index/priorities-principles-third-party-assessments",
-      "description": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
-      "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
+      "title": "【Claude Sonnet 5.5】Opus 5.5に迫る性能を半額で！特徴・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-sonnet-5-5/",
+      "description": "日本時間2026年9月29日未明、AnthropicがClaude 5.5ファミリーの第2弾となる「Claude Sonnet 5.5」を公開しました！Claude Sonnet 5.5は、Sonnet 5と同じ料金のま […]",
+      "publishedDate": "Tue, 29 Sep 2026 01:50:24 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Sonnet-5.5-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
@@ -343,102 +277,201 @@
       "language": "en"
     },
     {
-      "title": "小学生の約半数が生成AI利用経験も、夏休みの宿題では58.6%が使わない選択。考える力への影響を不安視",
+      "title": "AI for everyone in every language",
+      "titleJa": "あらゆる言語のあらゆる人のための AI",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+      "description": "Animation of several words in different languages slowly zooming past",
+      "publishedDate": "Tue, 15 Sep 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_languages_blog_social.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "New insights from Google’s AI & Economy ATLAS",
+      "titleJa": "Google の AI と経済 ATLAS からの新しい洞察",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026/",
+      "description": "Text \"AI & Economy Atlas v1.0 2026\" with the Google G and a spinning globe illustration",
+      "publishedDate": "Tue, 15 Sep 2026 13:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ATLAS-hero.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+      "titleJa": "LFM2.5-VL-DSpark によるビジョン言語モデルの高速化",
+      "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+      "description": "",
+      "publishedDate": "Thu, 24 Sep 2026 14:08:57 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/WgfT8N8Xyb6lBxSif7XLO.gif",
+      "language": "en"
+    },
+    {
+      "title": "The Download: a bid to scrap the virtual wall and AI hits Climate Week",
+      "titleJa": "ダウンロード: 仮想の壁を廃止し、AI が気候変動週間に打撃を与える入札",
+      "link": "https://www.technologyreview.com/2026/09/24/1145064/the-download-bid-scrap-virtual-wall-ai-climate-week/",
+      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. A congressional representative just proposed killing America’s...",
+      "publishedDate": "Thu, 24 Sep 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/10/miotke_MIT_1.jpg?fit=2128,1196",
+      "language": "en"
+    },
+    {
+      "title": "AI is dominating the conversation at Climate Week",
+      "titleJa": "AI が気候変動週間の話題を独占",
+      "link": "https://www.technologyreview.com/2026/09/24/1145048/ai-climate-week/",
+      "description": "This week, world leaders descended on Manhattan for the UN General Assembly. It’s also New York Climate Week—investors, policymakers, advocates, and journalists are colliding at panels, talks, and fan...",
+      "publishedDate": "Thu, 24 Sep 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/AP26265505951804.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Making global data easier to explore",
+      "titleJa": "グローバル データの探索を容易にする",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
+      "description": "UN System Data Commons Data webpage",
+      "publishedDate": "Thu, 17 Sep 2026 20:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/data-commons.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "3 ways to prep for your next big race with Search",
+      "titleJa": "検索を使用して次の大きなレースに備える 3 つの方法",
+      "link": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+      "description": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
+      "publishedDate": "Thu, 10 Sep 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Race_Running_Tips.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+      "titleJa": "HF ジョブ全体で LoRA を使用した非同期 GRPO: バケット、プロキシ、NCCL なし",
+      "link": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+      "description": "",
+      "publishedDate": "Thu, 10 Sep 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/asyncgrpo-lora-hfjobs/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "企画書作成に使えるAIツールおすすめ11選｜提案書作成にも対応",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/corocoro-ai-homework-survey/",
-      "description": "株式会社小学館の「月刊コロコロコミック」が、小学1～6年生の読者752人を対象に生成AIの利用実態を調査しました。50.4%の小学生がAIの利用経験を持つ一方、63.0%が考える力への影響を不安視しています。 このニュー […]",
-      "publishedDate": "Thu, 24 Sep 2026 09:25:12 +0000",
+      "link": "https://weel.co.jp/media/generative-ai-proposal/",
+      "description": "企画書の作成で悩んではいませんか？近年の生成AI技術の進化により、企画書作成は単なる文章の下書きにとどまらず、市場リサーチから骨子作成、さらにはプレゼンスライドの自動生成やデータ分析まで一気通貫で効率化できる段階へと突入 […]",
+      "publishedDate": "Mon, 28 Sep 2026 23:22:57 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/generative-ai-proposal_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Googleコードwiki（Code Wiki）自動更新の仕組みと使い方を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/code-wiki/",
+      "description": "Code Wikiはリポジトリ全体のソースコードを自動解析し、構成図やAPI情報を整理した最新のWikiを生成・保持します。従来の静的ツールとは異なり、コードが書き換わるたびにWikiもリアルタイムで自動同期される点が最 […]",
+      "publishedDate": "Mon, 28 Sep 2026 21:54:30 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/code-wiki_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "登録不要で使えるAIツール14選！無料で今すぐ使える方法を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/no-registration-required/",
+      "description": "登録不要の生成AIツールなら、アカウントを新規作成する手間をかけず、無料ですぐにAIを試せます。 とはいえ、「本当にログインなしで使える？」「無料でどこまで利用できる？」と疑問に思う方も多いのではないでしょうか。 この記 […]",
+      "publishedDate": "Mon, 28 Sep 2026 21:21:02 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/no-registration-required_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "生成AIで属人化を解消する方法5選！この人しかできない仕事をなくす！導入事例とロードマップも徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/personalization/",
+      "description": "「特定の担当者が休むと業務が止まる」などの業務の属人化は、組織の成長や生産性を阻害する大きな原因となります。属人化を放置すると、業務のブラックボックス化や離職リスクが高まり、トラブルの温床にもなりかねません。 この記事で […]",
+      "publishedDate": "Mon, 28 Sep 2026 11:52:56 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/personalization_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Code Ultraplanとは？2026年8月に廃止！代替手段を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-code-ultraplan/",
+      "description": "【重要】Claude Code Ultraplanは2026年08月04日をもって提供終了しました。/ultraplanコマンド、ultraplanキーワードトリガー、ローカルプランからの引き継ぎオプションは全て廃止され […]",
+      "publishedDate": "Mon, 28 Sep 2026 11:17:02 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Code-Ultraplan-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Microsoft Copilotの限界とは？できないことを実際に検証して解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/microsoft-copilot-limitations/",
+      "description": "Microsoft Copilotは、プランに応じてWord・Excel・Teamsなど日々の業務と連携できる生成AIです。便利な一方で、「思ったように動かない」「制限に当たった」と感じている情報システム部門やDX推進担 […]",
+      "publishedDate": "Mon, 28 Sep 2026 09:32:28 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Microsoft-Copilot-Limitations_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "イレブンラボ、ユニバーサル ミュージック グループと戦略的提携に合意。AI音楽制作プラットフォームを共同開発",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/elevenlab-umg-strategic-alliance/",
+      "description": "イレブンラボは、ユニバーサル ミュージック グループと複数年にわたるライセンス契約および戦略的協業に合意しました。本提携の第一弾として、ライセンス許諾を得た楽曲とアーティストの参加を土台とするAI音楽制作プラットフォーム […]",
+      "publishedDate": "Mon, 28 Sep 2026 07:41:03 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/corocoro-ai-homework-survey-eye.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/elevenlab-Universal-Music-Group-strategic-alliance.png",
       "language": "ja"
     },
     {
-      "title": "転職活動者の26%が生成AIで企業情報を収集。利用率は口コミサイトの2倍超、事業内容や評判を重視",
+      "title": "キャディ、総額177億円を調達。製造業AIデータプラットフォームの米国提供を開始し事業展開を加速",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/job-change-ai-survey/",
-      "description": "Iteraが会社員5,000名を対象に、転職活動におけるAI活用状況を調査しました。転職活動者の26%が生成AIで企業情報を調べており、 最も多かった内容は「企業の事業内容・評判」 でした。 このニュースのポイント 株式 […]",
-      "publishedDate": "Thu, 24 Sep 2026 09:14:29 +0000",
+      "link": "https://aismiley.co.jp/ai_news/caddi-series-d-funding/",
+      "description": "キャディは、シリーズDラウンドにおいて総額177億円の資金調達を実施しました。これにより累計エクイティ調達額は363.1億円、企業価値は1820億円となります。次世代版「製造業AIデータプラットフォームCADDi」の米国 […]",
+      "publishedDate": "Mon, 28 Sep 2026 07:41:01 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/job-change-ai-survey-eye.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/caddi.png",
       "language": "ja"
     },
     {
-      "title": "国内初の自動運転レベル4「完全無人走行」商用タクシー運行へ。GO・Waymo・日本交通、2027年中目指す",
+      "title": "生成AI導入の優先順位の決め方｜評価軸と検証（PoC）で失敗しない選び方を解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/go-waymo-nihonkotsu-autonomous-taxi/",
-      "description": "GO、Waymo、日本交通は、東京における自動運転タクシーの商用化に向けた戦略的パートナーシップに合意しました。2027年中に、東京で国内初となる自動運転レベル4の完全無人タクシーの商用運行を目指します。 このニュースの […]",
-      "publishedDate": "Thu, 24 Sep 2026 09:12:25 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/go-waymo-nihonkotsu-autonomous-taxi.png",
-      "language": "ja"
-    },
-    {
-      "title": "【GPT-6 Sol / Luna】API価格が半額に！GPT-6 Astraの技術を継承した新モデルの性能・料金・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gpt-6-sol-luna/",
-      "description": "2026年9月23日、OpenAIはGPT-6ファミリーの新モデル「GPT-6 Sol」と「GPT-6 Luna」を公開しました！ 同月初めに登場したフラッグシップモデル「GPT-6 Astra」と同様の手法で訓練されて […]",
-      "publishedDate": "Thu, 24 Sep 2026 08:39:38 +0000",
+      "link": "https://weel.co.jp/media/priorities-for-generative-ai-implementation/",
+      "description": "生成AI導入の優先順位は、日々の作業負担と判断の難しさ、誤りの影響を整理し、小規模な検証で確かめると決めやすくなります。ただし、生成AIは導入するだけで業務全体が効率化されるわけではありません。 本記事では、最初に取り組 […]",
+      "publishedDate": "Mon, 28 Sep 2026 07:13:00 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-6-Sol-and-Luna-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Priorities-for-Generative-AI-Implementation_2609-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "Gemini 3.8 Flash TTSとは？Googleの最も表現力豊かな音声生成AIの特徴・使い方を徹底解説",
+      "title": "オンデバイスAIとは？メリット・デメリットとCopilot+ PCでの実践検証",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gemini-3-8-flash-tts/",
-      "description": "2026年9月、Googleから新たな音声生成モデルが発表されました。 今回登場した「Gemini 3.8 Flash TTS」は、自然言語のプロンプトだけでキャラクターの声をゼロから設計し、1行ごとに演技を指示できるテ […]",
-      "publishedDate": "Thu, 24 Sep 2026 03:41:30 +0000",
+      "link": "https://weel.co.jp/media/on-device-ai/",
+      "description": "オンデバイスAIとは、クラウドにデータを送らず、スマホやPCなど端末そのものの中でAI処理を行う仕組みのことです。ChatGPTやGeminiのようなクラウド型の生成AIがサーバーとの通信を前提としているのに対し、オンデ […]",
+      "publishedDate": "Mon, 28 Sep 2026 06:42:48 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-3.8-Flash-TTS-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Opus 5.5とは？Fable 5.1級の性能をOpus 5比40%低コストで使えるAnthropic最新モデルを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-opus-5-5/",
-      "description": "2026年9月、Anthropicから新たなモデルが発表されました。 今回登場した「Claude Opus 5.5」は、新しいClaude 5.5ファミリーの第1弾となるモデルです。多くの業務で上位モデルClaude F […]",
-      "publishedDate": "Thu, 24 Sep 2026 01:23:56 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Opus-5.5-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "WEELのAIエージェント開発を紹介！サービスの特徴や料金、開発実績を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/weel-ai-agent-development/",
-      "description": "AIエージェントを導入したくても、「自社の業務に合うのかわからない」「導入しても成果につながるのか不安」と感じる企業担当者も多いでしょう。WEELでは、コンテンツ制作時間を1件5〜6時間から2〜3時間へ短縮した実績があり […]",
-      "publishedDate": "Sun, 27 Sep 2026 15:34:14 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/weel-ai-agent-development_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "生成AI時代の情シス活用！おすすめサービス10選も紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/servicelist/",
-      "description": "近年、生成AIの普及により、情報システム部門（情シス）の業務にも大きな変化が生まれています。問い合わせ対応やデータ分析、システム運用などにAIを活用すれば、業務効率化や担当者の負担軽減が期待できます。 とはいえ、「情シス […]",
-      "publishedDate": "Sun, 27 Sep 2026 15:12:41 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/servicelist_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "生成AIとは？仕組みやできること、従来AIとの違い・企業導入事例をわかりやすく解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/generative-ai/",
-      "description": "本記事では、生成AIの種類や仕組み、できることを解説します。 生成AIにはChatGPTやMidjourneyなど、多岐にわたるものがあります。 他にもどんな生成AIがあるのか、それらの仕組みも併せて知りたいという方に、おすすめの記事です。 続きを読む",
-      "publishedDate": "Sun, 27 Sep 2026 14:32:04 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/generative-ai_2609-1-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/on-device-ai_2609-1024x576.webp",
       "language": "ja"
     },
     {
@@ -461,17 +494,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/1176_1200x628_4.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "【投資をムダにしない】生成AIのROIを最大化する方法！投資対効果の考え方や計算方法も紹介",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/generative-ai-roi/",
-      "description": "生成AIの導入が進む一方、「PoC止まりで本番化しない」「費用対効果が不透明」と経営層から厳しく問われるケースが増えています。ツール代などの表面的な費用だけでなく、人件費や教育費を含めた総所有コスト（TCO）を把握し、工 […]",
-      "publishedDate": "Fri, 25 Sep 2026 07:48:23 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/generative-ai-roi_2609-1024x576.webp",
       "language": "ja"
     },
     {
@@ -508,17 +530,6 @@
       "language": "ja"
     },
     {
-      "title": "Claude Opus 5.5 vs GPT-6 Astra vs Sol｜日本ユーザーの本音比較「結局どれをメインにする？」",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/opus-5-5-vs-gpt-6-astra-vs-sol/",
-      "description": "2026年9月、AIモデル競争がかつてないほど激化しています。9月4日にOpenAIがフラグシップのGPT-6 Astraをリリースし、わずか19日後の9月23日にはAnthropicがClaude Opus 5.5を公 […]",
-      "publishedDate": "Fri, 25 Sep 2026 05:22:30 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/opus-5-5-vs-gpt-6-astra-vs-sol_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "アイスマイリー、10/7（水）から3日間、第29回 ものづくり ワールド [大阪]内、「製造業DX展」にブース出展",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/monodukuri-world-osaka-no29/",
@@ -530,17 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "Claude Opus 5.5でゲームは作れる？Xで話題の事例・プロンプト例・注意点を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/claude-opus-5-5-game/",
-      "description": "2026年9月、AnthropicからClaudeシリーズの新たなAIモデルが登場しました。 今回登場した「Claude Opus 5.5」は、長時間の自律的なコーディングを得意とする最新モデルです。リリース直後からXで […]",
-      "publishedDate": "Fri, 25 Sep 2026 02:18:01 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-opus-5-5-game_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "「ローカルLLM・オンプレ生成AIサービス選定チェックリスト」を公開！クラウド利用が難しい企業向けに導入方式・RAG・主要6サービスを比較",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/local-llm-onprem-checklist/",
@@ -549,6 +549,17 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/local-llm-onprem_0001.png",
+      "language": "ja"
+    },
+    {
+      "title": "AWS、AIエージェントを自作できるツール「Strandsハーネス」をオープンソースで公開。特定のLLMに依存せず入れ替え可能、任意のコンテナ環境にデプロイ",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/awsaistrandsllm.html",
+      "description": "Amazon Web Services（AWS）は、GPTやClaude、Gemini、Ollamaなど主要なLLMやLLMランタイムを基にした高性能なAIエージェントを簡単に自作できるツール「Strandsハーネス」をオープンソースで公開...",
+      "publishedDate": "2026-09-28T15:01:25Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/F420bYCD.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/HRx2QG7aoAEAhna.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "TailscaleのVPNにAIエージェントを組み込める「Aperture」正式リリース。AIによるTailscaleやノードの操作も可能に",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/tailscalevpnaiapertureaitailscale.html",
-      "description": "メッシュ型のVPNサービスを提供するTailscaleは、AIゲートウェイサービス「Aperture」の正式リリースを発表しました。 Aperture is officially GA.Give AI agents the models, ...",
-      "publishedDate": "2026-09-13T15:08:50Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HQqrtHdWQAA9MSg.jpg",
       "language": "ja"
     }
   ]
