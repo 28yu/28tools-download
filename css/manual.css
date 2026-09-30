@@ -690,3 +690,32 @@
         padding: 40px 15px;
     }
 }
+
+/* ============================================
+   tips 記事のスクリーンショット (figure)
+   画像がまだ無いうちは img の onerror で figure ごと消えるので、
+   記事を先に公開してスクショを後から足していける運用にしている。
+   ============================================ */
+.manual-page .tips-figure {
+    margin: 1.8rem 0;
+    text-align: center;
+}
+.manual-page .tips-figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #dfe4ea;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(44, 62, 80, .08);
+}
+.manual-page .tips-figure figcaption {
+    margin-top: .6rem;
+    font-size: .85rem;
+    color: var(--concrete-gray);
+    opacity: .75;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .manual-page .tips-figure { margin: 1.2rem 0; }
+    .manual-page .tips-figure figcaption { font-size: .8rem; }
+}
