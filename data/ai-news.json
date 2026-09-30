@@ -1,16 +1,104 @@
 {
-  "lastUpdated": "2026-09-29T06:38:14.002869",
+  "lastUpdated": "2026-09-30T06:21:08.501006",
   "articles": [
     {
-      "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
-      "titleJa": "NVIDIA Warp と MjWarp を使用してロボット工学のシミュレーションと学習ワークフローを高速化する方法",
-      "link": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
-      "description": "",
-      "publishedDate": "Wed, 23 Sep 2026 18:41:40 GMT",
-      "source": "Hugging Face Blog",
+      "title": "Hugging Face（ハギングフェイス）とは？使い方・商用利用・主要機能",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/hugging-face/",
+      "description": "Hugging Faceは、世界中で公開されているAIモデルやデータセットを探し、実際の開発に取り込めるプラットフォームです。一方で、モデルごとにライセンスや必要な実行環境が異なるため、一覧を見るだけでは選び方に迷うこと […]",
+      "publishedDate": "Wed, 30 Sep 2026 06:15:20 +0000",
+      "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6994dc99f850a10f03fd0b21/rQ6tGCJEaH16bQQ8X4M8b.png",
-      "language": "en"
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Hugging-Face_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Krea AI（クレアAI）の使い方を徹底解説！商用利用・アップスケール方法まで",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/krea-ai/",
+      "description": "画像や動画を生成できるAIツールは数多くありますが、Krea AIは、画像生成や動画生成、リアルタイム編集などを1つのプラットフォームで利用できるAIクリエイティブツールです。複数の生成モデルや編集機能を組み合わせながら […]",
+      "publishedDate": "Wed, 30 Sep 2026 05:54:53 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Krea-AI_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Antigravity 2.0とは？エージェントファーストで開発が激変！Googleツールの使い方・料金・特徴を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/antigravity-2-0/",
+      "description": "2026年5月、GoogleからAIエージェントファーストの開発プラットフォーム「Antigravity 2.0」が発表されました。Antigravity 2.0は、複数のAIエージェントを動かして開発を進められる、Go […]",
+      "publishedDate": "Wed, 30 Sep 2026 05:32:38 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Antigravity-2.0-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "全世界の男子待望！生成AIでエロはどこまで可能？ハイパーポルノの仕組みと法的リスクを解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/hyperporno-dig/",
+      "description": "生成AIの進化により、性的な画像や動画も技術的には作れるようになりました。ただし、技術的に作れることと、規約や法律上許されることは別です。実在人物の無断加工や未成年を性的に描写する表現は、重大な権利侵害や違法行為につなが […]",
+      "publishedDate": "Wed, 30 Sep 2026 04:14:06 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/hyperporno-dig_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AGI（汎用人工知能）とは？人間を超えるAIはいつ現れるのか！従来AI・ASIとの違いを徹底解説！",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/agi/",
+      "description": "2026年9月3日、OpenAIは「GPT-6 Astra」を発表し、社長のGreg Brockman氏は「AGI時代へようこそ」と語りました。AGI（汎用人工知能）とは、人間のように幅広い課題を状況に応じて判断できるA […]",
+      "publishedDate": "Wed, 30 Sep 2026 03:47:52 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AGI_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "LM Studioとは？もうクラウドに頼らない！ローカルで動くAIの導入ステップを解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/lm-studio/",
+      "description": "LM Studioは、パソコン上でAIモデルを動かせるデスクトップアプリです。モデル取得後は、入力内容や添付文書を外部のAIサービスへ送らずに利用できます。 とはいえ、「必要なスペックは？」「業務でも無料？」「Ollam […]",
+      "publishedDate": "Wed, 30 Sep 2026 03:03:05 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/LM-Studio_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "LoRAの仕組み・使い方を解説！Stable Diffusionへの導入方法や活用事例も紹介",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/lora/",
+      "description": "画像生成AIを使っていると、「同じキャラクターを安定して生成したい」「自社の商品やブランドに合った画像を作りたい」など思うことが多々ありますが、通常の画像生成AIではこうした細かな調整が難しい場合があります。LoRAは、 […]",
+      "publishedDate": "Wed, 30 Sep 2026 02:44:54 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/LoRA_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【GPT-6.1 Sol】Astra級の性能を5分の1の価格で！性能・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/gpt-6-1-sol/",
+      "description": "2026年9月30日、OpenAIが新モデル「GPT-6.1 Sol」を公開しました！ GPT-6.1 Solは、2026年9月22日に登場したGPT-6 Solを、わずか1週間で大きく底上げしたアップデート版です。コー […]",
+      "publishedDate": "Wed, 30 Sep 2026 01:38:41 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_GPT-6.1-Sol-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Magnific AI（マグニフィック）とは？できることや料金、商用利用について解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/magnificai/",
+      "description": "AIを活用した画像生成や編集、動画制作などが身近になり、さまざまなAIツールが登場しています。その中でも注目されているのが、画像・動画・音声・3Dコンテンツの作成や編集ができる「Magnific AI」です。もともとは画 […]",
+      "publishedDate": "Wed, 30 Sep 2026 01:26:39 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Magnific-AI_2609-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "Google Beam expands with new regions, partners, and customers",
@@ -21,17 +109,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Beam_hero.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "A congressional representative just proposed killing America’s border tower program",
-      "titleJa": "議会議員がアメリカの国境タワー計画を中止することを提案したばかり",
-      "link": "https://www.technologyreview.com/2026/09/23/1145002/a-congressional-representative-just-proposed-killing-americas-border-tower-program/",
-      "description": "Delia Ramirez, a Democratic US representative from Illinois, has announced a plan to introduce new legislation to terminate the surveillance tower program along the US southern border. The announcemen...",
-      "publishedDate": "Wed, 23 Sep 2026 17:10:11 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/2026-07-22_BT_0663.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -57,10 +134,10 @@
       "language": "en"
     },
     {
-      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "titleJa": "Ringg の AI エージェントは OpenAI を使用して顧客通話の最大 65% を解決します",
-      "link": "https://openai.com/index/ringg",
-      "description": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+      "title": "Sam Altman’s remarks at the United Nations Security Council",
+      "titleJa": "国連安全保障理事会でのサム・アルトマン氏の発言",
+      "link": "https://openai.com/index/sam-altman-un-security-council-remarks",
+      "description": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
       "publishedDate": "Wed, 23 Sep 2026 12:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -79,66 +156,22 @@
       "language": "en"
     },
     {
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "titleJa": "Ringg の AI エージェントは OpenAI を使用して顧客通話の最大 65% を解決します",
+      "link": "https://openai.com/index/ringg",
+      "description": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+      "publishedDate": "Wed, 23 Sep 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "How invideo improves color grading 3x with GPT‑6 Astra",
       "titleJa": "GPT‑6 Astra を使用して invideo がカラー グレーディングを 3 倍改善する方法",
       "link": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
       "description": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.",
       "publishedDate": "Wed, 23 Sep 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Sam Altman’s remarks at the United Nations Security Council",
-      "titleJa": "国連安全保障理事会でのサム・アルトマン氏の発言",
-      "link": "https://openai.com/index/sam-altman-un-security-council-remarks",
-      "description": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
-      "publishedDate": "Wed, 23 Sep 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Introducing MentalHealthBench",
-      "titleJa": "MentalHealthBench の紹介",
-      "link": "https://openai.com/index/introducing-mentalhealthbench",
-      "description": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations.",
-      "publishedDate": "Wed, 23 Sep 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
-      "titleJa": "ChatGPT Ads が東南アジアと台湾に拡大",
-      "link": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
-      "description": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.",
-      "publishedDate": "Wed, 23 Sep 2026 02:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
-      "titleJa": "Airbnb、GPT-6 Astra および OpenAI フロンティア モデルへのアクセスを拡大",
-      "link": "https://openai.com/index/airbnb-gpt-6-astra",
-      "description": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.",
-      "publishedDate": "Wed, 23 Sep 2026 01:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
-      "titleJa": "Grab と OpenAI は東南アジアに実践的な AI スキルをもたらします",
-      "link": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
-      "description": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.",
-      "publishedDate": "Wed, 23 Sep 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -178,15 +211,92 @@
       "language": "en"
     },
     {
-      "title": "Eleven v4とは？ElevenLabs最新音声AIの性能・料金・使い方とTurboとの違いを徹底解説",
+      "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+      "titleJa": "NVIDIA Kumo Tabular が表形式予測の精度と効率の新たなフロンティアを確立",
+      "link": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "description": "",
+      "publishedDate": "Tue, 29 Sep 2026 15:30:38 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/684040a5de1ad7f4fcec9508/HyVlq-3d7EVj_M-m_TfHJ.png",
+      "language": "en"
+    },
+    {
+      "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+      "titleJa": "事実だけでなくソースを正しく把握する: MCP エージェント向けのソース認識検証",
+      "link": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "description": "",
+      "publishedDate": "Tue, 29 Sep 2026 13:07:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/phhhj_BLOJbvnTFhVaZ5y.png",
+      "language": "en"
+    },
+    {
+      "title": "The Download: climate tech companies to watch and AI’s discovery problem",
+      "titleJa": "ダウンロード: 注目すべき気候変動テクノロジー企業と AI の発見の問題",
+      "link": "https://www.technologyreview.com/2026/09/29/1145249/the-download-climate-tech-ai-scientific-discovery/",
+      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Coming soon: our 2026 list of Climate Tech Companies to Watch...",
+      "publishedDate": "Tue, 29 Sep 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/260511-drug-manufacturing-space-hero.jpg?fit=2128,1196",
+      "language": "en"
+    },
+    {
+      "title": "Copilot+PCとは？できることや必要性・実機検証まで徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/eleven-v4/",
-      "description": "Eleven v4 & Eleven v4 Turboは、ElevenLabsが2026年9月28日に公開した、同社史上もっとも感情表現が豊かな音声合成モデルです。台本に[whispers]や[laughs]とい […]",
-      "publishedDate": "Tue, 29 Sep 2026 02:21:32 +0000",
+      "link": "https://weel.co.jp/media/copilotpc/",
+      "description": "Copilot+ PCは、40TOPS以上のNPU（AI処理専用の演算装置）を積み、AI機能を端末の中で動かせるWindows PCです。 とはいえ、「NPUって何？」「買い替えるなら選ぶべき？」と迷っている方も多いので […]",
+      "publishedDate": "Tue, 29 Sep 2026 11:52:42 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Eleven-v4-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/CopilotPC_2609-1024x576.webp",
       "language": "ja"
+    },
+    {
+      "title": "Coming soon: Our 2026 list of Climate Tech Companies to Watch",
+      "titleJa": "近日公開予定: 2026 年に注目すべき気候変動テクノロジー企業リスト",
+      "link": "https://www.technologyreview.com/2026/09/29/1145183/2026-climate-tech-companies-to-watch-preview/",
+      "description": "Earlier this month, the UN announced the planet will tip past 1.5 ˚C of warming, “likely within the next few years,” squashing any lingering hope that nations would cut emissions fast enough to achiev...",
+      "publishedDate": "Tue, 29 Sep 2026 11:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/CT10-batterypacks.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Making AI an asset, not an expense",
+      "titleJa": "AIを費用ではなく資産にする",
+      "link": "https://www.technologyreview.com/2026/09/29/1145186/making-ai-an-asset-not-an-expense/",
+      "description": "When customers talk about AI costs, the conversation usually starts with token prices and ends with access to the latest, most capable model in the cloud. Do they always need that level of capability?...",
+      "publishedDate": "Tue, 29 Sep 2026 10:43:45 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/Cheri-blog.jpg?w=840",
+      "language": "en"
+    },
+    {
+      "title": "Introducing GPT-6.1 Sol",
+      "titleJa": "GPT-6.1 ソルの紹介",
+      "link": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "description": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
+      "publishedDate": "Tue, 29 Sep 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "DevDay 2026 Recap",
+      "titleJa": "DevDay 2026 の概要",
+      "link": "https://openai.com/index/devday-2026-recap",
+      "description": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
+      "publishedDate": "Tue, 29 Sep 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "「Claude対応 生成AI研修・リスキリングサービス比較ガイド」を公開！自社に合う研修タイプの選び方と主要6サービスを整理",
@@ -200,15 +310,15 @@
       "language": "ja"
     },
     {
-      "title": "【Claude Sonnet 5.5】Opus 5.5に迫る性能を半額で！特徴・料金・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-sonnet-5-5/",
-      "description": "日本時間2026年9月29日未明、AnthropicがClaude 5.5ファミリーの第2弾となる「Claude Sonnet 5.5」を公開しました！Claude Sonnet 5.5は、Sonnet 5と同じ料金のま […]",
-      "publishedDate": "Tue, 29 Sep 2026 01:50:24 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Sonnet-5.5-1024x576.webp",
-      "language": "ja"
+      "title": "Introducing dots",
+      "titleJa": "ドットの紹介",
+      "link": "https://openai.com/index/introducing-dots",
+      "description": "Dots by OpenAI are proactive assistants that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.",
+      "publishedDate": "Tue, 29 Sep 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
@@ -234,7 +344,7 @@
     },
     {
       "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-      "titleJa": "oMLX の作成者兼メンテナーである Jun Kim が Hugging Face に参加して MLX コミュニティをサポート",
+      "titleJa": "oMLX 作成者兼メンテナーの Jun Kim が Hugging Face に参加して MLX コミュニティをサポート",
       "link": "https://huggingface.co/blog/omlx",
       "description": "",
       "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
@@ -310,28 +420,6 @@
       "language": "en"
     },
     {
-      "title": "The Download: a bid to scrap the virtual wall and AI hits Climate Week",
-      "titleJa": "ダウンロード: 仮想の壁を廃止し、AI が気候変動週間に打撃を与える入札",
-      "link": "https://www.technologyreview.com/2026/09/24/1145064/the-download-bid-scrap-virtual-wall-ai-climate-week/",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. A congressional representative just proposed killing America’s...",
-      "publishedDate": "Thu, 24 Sep 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2024/10/miotke_MIT_1.jpg?fit=2128,1196",
-      "language": "en"
-    },
-    {
-      "title": "AI is dominating the conversation at Climate Week",
-      "titleJa": "AI が気候変動週間の話題を独占",
-      "link": "https://www.technologyreview.com/2026/09/24/1145048/ai-climate-week/",
-      "description": "This week, world leaders descended on Manhattan for the UN General Assembly. It’s also New York Climate Week—investors, policymakers, advocates, and journalists are colliding at panels, talks, and fan...",
-      "publishedDate": "Thu, 24 Sep 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/AP26265505951804.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "Making global data easier to explore",
       "titleJa": "グローバル データの探索を容易にする",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
@@ -365,72 +453,6 @@
       "language": "en"
     },
     {
-      "title": "企画書作成に使えるAIツールおすすめ11選｜提案書作成にも対応",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/generative-ai-proposal/",
-      "description": "企画書の作成で悩んではいませんか？近年の生成AI技術の進化により、企画書作成は単なる文章の下書きにとどまらず、市場リサーチから骨子作成、さらにはプレゼンスライドの自動生成やデータ分析まで一気通貫で効率化できる段階へと突入 […]",
-      "publishedDate": "Mon, 28 Sep 2026 23:22:57 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/generative-ai-proposal_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Googleコードwiki（Code Wiki）自動更新の仕組みと使い方を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/code-wiki/",
-      "description": "Code Wikiはリポジトリ全体のソースコードを自動解析し、構成図やAPI情報を整理した最新のWikiを生成・保持します。従来の静的ツールとは異なり、コードが書き換わるたびにWikiもリアルタイムで自動同期される点が最 […]",
-      "publishedDate": "Mon, 28 Sep 2026 21:54:30 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/code-wiki_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "登録不要で使えるAIツール14選！無料で今すぐ使える方法を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/no-registration-required/",
-      "description": "登録不要の生成AIツールなら、アカウントを新規作成する手間をかけず、無料ですぐにAIを試せます。 とはいえ、「本当にログインなしで使える？」「無料でどこまで利用できる？」と疑問に思う方も多いのではないでしょうか。 この記 […]",
-      "publishedDate": "Mon, 28 Sep 2026 21:21:02 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/no-registration-required_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "生成AIで属人化を解消する方法5選！この人しかできない仕事をなくす！導入事例とロードマップも徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/personalization/",
-      "description": "「特定の担当者が休むと業務が止まる」などの業務の属人化は、組織の成長や生産性を阻害する大きな原因となります。属人化を放置すると、業務のブラックボックス化や離職リスクが高まり、トラブルの温床にもなりかねません。 この記事で […]",
-      "publishedDate": "Mon, 28 Sep 2026 11:52:56 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/personalization_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Code Ultraplanとは？2026年8月に廃止！代替手段を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code-ultraplan/",
-      "description": "【重要】Claude Code Ultraplanは2026年08月04日をもって提供終了しました。/ultraplanコマンド、ultraplanキーワードトリガー、ローカルプランからの引き継ぎオプションは全て廃止され […]",
-      "publishedDate": "Mon, 28 Sep 2026 11:17:02 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Claude-Code-Ultraplan-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Microsoft Copilotの限界とは？できないことを実際に検証して解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/microsoft-copilot-limitations/",
-      "description": "Microsoft Copilotは、プランに応じてWord・Excel・Teamsなど日々の業務と連携できる生成AIです。便利な一方で、「思ったように動かない」「制限に当たった」と感じている情報システム部門やDX推進担 […]",
-      "publishedDate": "Mon, 28 Sep 2026 09:32:28 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Microsoft-Copilot-Limitations_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "イレブンラボ、ユニバーサル ミュージック グループと戦略的提携に合意。AI音楽制作プラットフォームを共同開発",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/elevenlab-umg-strategic-alliance/",
@@ -450,28 +472,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/caddi.png",
-      "language": "ja"
-    },
-    {
-      "title": "生成AI導入の優先順位の決め方｜評価軸と検証（PoC）で失敗しない選び方を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/priorities-for-generative-ai-implementation/",
-      "description": "生成AI導入の優先順位は、日々の作業負担と判断の難しさ、誤りの影響を整理し、小規模な検証で確かめると決めやすくなります。ただし、生成AIは導入するだけで業務全体が効率化されるわけではありません。 本記事では、最初に取り組 […]",
-      "publishedDate": "Mon, 28 Sep 2026 07:13:00 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Priorities-for-Generative-AI-Implementation_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "オンデバイスAIとは？メリット・デメリットとCopilot+ PCでの実践検証",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/on-device-ai/",
-      "description": "オンデバイスAIとは、クラウドにデータを送らず、スマホやPCなど端末そのものの中でAI処理を行う仕組みのことです。ChatGPTやGeminiのようなクラウド型の生成AIがサーバーとの通信を前提としているのに対し、オンデ […]",
-      "publishedDate": "Mon, 28 Sep 2026 06:42:48 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/on-device-ai_2609-1024x576.webp",
       "language": "ja"
     },
     {
@@ -549,6 +549,39 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/local-llm-onprem_0001.png",
+      "language": "ja"
+    },
+    {
+      "title": "WindowsでLinuxコンテナの作成や実行を可能にする「WSL Containers」正式リリース。コマンドラインとAPIから利用可能",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/windowslinuxwsl_containersapi.html",
+      "description": "マイクロソフトはWSL（Windows Subsystem for Linux）の新機能として、WindowsでLinuxコンテナの作成や実行を可能にする「WSL Containers」の正式リリースを発表しました（発表ブログ、アーキテクチ...",
+      "publishedDate": "2026-09-30T02:43:18Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/xYARDFsE.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Google Cloud、AIエージェントからの大量アクセスをPostgreSQLのプライマリDBから切り離せる「PostgreSQL for agents in AlloyDB」発表",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/google_cloudaipostgresqldbpostgresql_for_agents_in_alloydb.html",
+      "description": "Google Cloudは、本番環境で動作しているPostgreSQLの処理に影響を与えないよう、AIエージェントからの読み取りワークロード用にサンドボックス化されたPostgreSQLのデータベースインスタンスを数秒でプロビジョニングする...",
+      "publishedDate": "2026-09-29T15:46:18Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/HS_UTriXIAAofjv.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "コーディングエージェントにGoogle Cloudの専門知識とツールを組み込む「Google Cloud Developer Plugin for AI Coding Agents」発表",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/google_cloudgoogle_cloud_developer_plugin_for_ai_coding_agents.html",
+      "description": "Google Cloudは、Claude CodeなどのコーディングエージェントにGoogle Cloudの専門知識とツールなどを組み込める「Google Cloud Developer Plugin for AI Coding Agent...",
+      "publishedDate": "2026-09-29T15:44:15Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/googlecloud-developer-plugin-10.png",
       "language": "ja"
     },
     {
@@ -681,39 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/mcpandconnectivity01.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "OpenAIやAnthropicなどAIベンダごとのAPIの違いを吸収し統合する「Agent Router」、Linux Foundation傘下で業界標準へ",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/openaianthropicapiagent_routerlinux_foundation.html",
-      "description": "MCPやAGENTS.md、Agent2AgentプロトコルなどのAIエージェントに関する関連技術の標準化推進や開発などを行うLinux Foundation傘下のAgentic AI Foundation（AAIF）は、オープンソースとし...",
-      "publishedDate": "2026-09-14T15:51:16Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HR0EGYVWAAUUQRC.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "マイクロソフトがRust言語をC++/C#/TSに並ぶ社内のTier 1言語にしたことを明らかに。Windowsネイティブな社内の開発環境と統合",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/rustcctstier_1.html",
-      "description": "マイクロソフト社内において、Rust言語がC++/C#/TypeScriptに並ぶTier 1言語になったことが明らかになりました。 マイクロソフトの開発部門でRustツールチームのプリンシパルエンジニア Victor Ciura氏がRus...",
-      "publishedDate": "2026-09-13T15:27:57Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/ms-rust-tier1.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "AIのせいでエンジニアの75％を解雇したCSSフレームワークのTailwind、Shopifyによる買収を発表。今後も安定的な開発を維持すると",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/ai75csstailwindshopify.html",
-      "description": "CSSフレームワーク「Tailwind CSS」の開発元であるTailwind Labsは、ECサイト構築サービスを提供しているShopifyによって買収されると発表しました。 下記はTailwindの作者であるAdam Wathan氏によ...",
-      "publishedDate": "2026-09-13T15:20:00Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HRx2QG7aoAEAhna.jpg",
       "language": "ja"
     }
   ]
