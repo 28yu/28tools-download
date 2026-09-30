@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revitクラウドモデルの重大なエラー｜修復ファイルから作業を復旧する方法 - 28 Tools</title>
+    <link rel="icon" type="image/png" href="../images/site-icons/favicon-28.png">
+    <link rel="canonical" href="https://28tools.com/tips/revit-cloud-model-recovery.html">
+    <meta name="description" content="Revitのクラウドモデル(BIM 360/ACC)で重大なエラーが発生し、修復ファイルがデスクトップに保存されたときの復旧方法。修復ファイルをそのまま同期できない理由と、リンクを壊さずに作業を取り戻す手順を実例で解説します。">
+    <meta property="og:title" content="Revitクラウドモデルの重大なエラー｜修復ファイルから作業を復旧する方法">
+    <meta property="og:description" content="修復ファイルをそのまま中央モデルへ同期できない理由と、リンクモデルを壊さずに復旧する手順を実例で解説。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://28tools.com/tips/revit-cloud-model-recovery.html">
+    <meta property="og:image" content="https://28tools.com/images/ogp-image.png">
+    <meta property="og:site_name" content="28 Tools">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Revitクラウドモデルの重大なエラー｜修復ファイルから作業を復旧する方法">
+    <meta name="twitter:description" content="修復ファイルをそのまま同期できない理由と、リンクを壊さずに復旧する手順を実例で解説。">
+    <meta name="twitter:image" content="https://28tools.com/images/ogp-image.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197151217236924"
+         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/manual.css">
+    <link rel="stylesheet" href="../css/features.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- 構造化データ: パンくず -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://28tools.com/" },
+        { "@type": "ListItem", "position": 2, "name": "使い方ガイド", "item": "https://28tools.com/tips/" },
+        { "@type": "ListItem", "position": 3, "name": "クラウドモデルの重大なエラーから復旧する", "item": "https://28tools.com/tips/revit-cloud-model-recovery.html" }
+      ]
+    }
+    </script>
+
+    <!-- 構造化データ: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "修復ファイルを開いてそのまま中央モデルと同期できますか？",
+          "acceptedAnswer": { "@type": "Answer", "text": "できません。クラウドワークシェアリングで作られた修復ファイルは、クラウドとの紐付けを失った単独のモデルとして保存されるため、元のクラウドモデルへの同期先を持っていません。" }
+        },
+        {
+          "@type": "Question",
+          "name": "修復ファイルから新しいクラウドモデルを作って置き換えてもよいですか？",
+          "acceptedAnswer": { "@type": "Answer", "text": "同じ名前・同じ保存先にしても、Revit からは別のモデルとして扱われるためリンクが外れます。リンク先の要素を参照していたタグや寸法は失われるので、リンクモデルが多い場合は慎重に判断してください。" }
+        },
+        {
+          "@type": "Question",
+          "name": "エラー直前にローカル保存できていた場合はどうなりますか？",
+          "acceptedAnswer": { "@type": "Answer", "text": "元のクラウドモデルを開き直したときに、未同期の変更を保持したまま開ける場合があります。まずこれを試すのが最短です。" }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="manual-page">
+
+<div class="manual-container">
+
+    <!-- 共有ヘッダー -->
+    <div id="header-container"></div>
+
+    <!-- サイドバーナビゲーション -->
+    <div id="sidebar-container"></div>
+
+    <div class="manual-content">
+
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <a href="../index.html" data-lang-key="breadcrumb-home">ホーム</a>
+            <span class="separator">›</span>
+            <a href="./" data-lang-key="tips-index-title">使い方ガイド（Tips）</a>
+            <span class="separator">›</span>
+            <span data-lang-key="rec-breadcrumb-current">クラウドモデルの重大なエラーから復旧する</span>
+        </nav>
+
+        <!-- 記事タイトル -->
+        <div class="manual-header">
+            <div class="icon-wrapper">
+                <img src="../images/site-icons/icon-practical.png" alt="使い方ガイド" class="feature-icon">
+            </div>
+            <h1 class="manual-title" data-lang-key="rec-title">Revitクラウドモデルの重大なエラーから、デスクトップの修復ファイルで作業を復旧する</h1>
+            <p class="manual-subtitle" data-lang-key="rec-subtitle">修復ファイルがそのまま同期できない理由と、リンクを壊さない復旧手順</p>
+        </div>
+
+        <!-- 本文 -->
+        <article class="md-content">
+
+            <p data-lang-key="rec-intro1">クラウドワークシェアリング（BIM 360 / Autodesk Construction Cloud）でモデルを編集している最中に、突然 <strong>「重大なエラーが発生しました」</strong> というダイアログが出て Revit が終了する。このとき Revit は、終了の直前に「編集中の内容を<strong>修復ファイル</strong>として保存しますか」と尋ねてきます。指示どおり保存すると、多くの場合デスクトップに <code>.rvt</code> ファイルが残ります。</p>
+
+            <p data-lang-key="rec-intro2">問題はここからです。作業内容はデスクトップの修復ファイルの中にある。一方クラウド上のモデルは、<strong>最後に同期した時点のまま</strong>。数時間分の作業が宙に浮いた状態になります。「この修復ファイルをクラウドへ反映したい」と考えて開いてみても、<strong>「中央モデルと同期」の同期先がありません。</strong></p>
+
+            <p data-lang-key="rec-intro3">この記事は、筆者が実際にこの状況に遭遇し、<strong>リンクモデルを壊さずに復旧した</strong>ときの記録です。同じ場面で判断を迷っている方の参考になれば幸いです。</p>
+
+            <figure class="tips-figure">
+                <img src="../images/tips/revit-cloud-model-recovery/01-fatal-error-dialog.png" alt="Revitの重大なエラーダイアログ" loading="lazy" onerror="this.closest('.tips-figure').remove()">
+                <figcaption data-lang-key="rec-fig1">作業中に突然表示されるエラーダイアログ。この直後に修復ファイルの保存を求められる</figcaption>
+            </figure>
+
+            <figure class="tips-figure">
+                <img src="../images/tips/revit-cloud-model-recovery/02-save-recovery-file.png" alt="修復ファイルの保存先を指定する画面" loading="lazy" onerror="this.closest('.tips-figure').remove()">
+                <figcaption data-lang-key="rec-fig2">修復ファイルの保存先を指定する画面。<strong>ここで保存先のパスを控えておく</strong>と、あとで探し回らずに済む</figcaption>
+            </figure>
+
+            <hr>
+
+            <h2 data-lang-key="rec-h2-first">まず落ち着いて、3つ確認する</h2>
+            <p data-lang-key="rec-first-p">復旧方法を選ぶ前に、次の3点を確認してください。とくに3番目が、その後の手間を大きく左右します。</p>
+            <ol class="prep-list">
+                <li>
+                    <h4 data-lang-key="rec-first-1-h">修復ファイルがどこに保存されたか</h4>
+                    <p data-lang-key="rec-first-1-p">保存先はエラー時のダイアログで指定した場所です。既定ではデスクトップになっていることが多いです。<strong>見つけたらすぐ別フォルダにコピーして退避</strong>してください。この先の作業中に、うっかり上書きしたり消したりすると取り返しがつきません。</p>
+                </li>
+                <li>
+                    <h4 data-lang-key="rec-first-2-h">クラウドモデルが今どの時点か</h4>
+                    <p data-lang-key="rec-first-2-p">自分が最後に同期した時点が基準ですが、<strong>他のメンバーがその後に同期していれば、モデルはさらに進んでいます</strong>。「自分の作業だけを戻せばよい」とは限らないので、共同編集者に状況を共有しておきます。</p>
+                </li>
+                <li>
+                    <h4 data-lang-key="rec-first-3-h">エラー直前に「ローカル保存」が成功していたか</h4>
+                    <p data-lang-key="rec-first-3-p">ここが分岐点です。同期（中央モデルと同期）は失敗していても、<strong>ローカルへの保存だけは通っていた</strong>ことがあります。その場合は後述のいちばん簡単な方法が使えます。</p>
+                </li>
+            </ol>
+
+            <figure class="tips-figure">
+                <img src="../images/tips/revit-cloud-model-recovery/03-recovery-file-on-desktop.png" alt="デスクトップに保存された修復ファイル" loading="lazy" onerror="this.closest('.tips-figure').remove()">
+                <figcaption data-lang-key="rec-fig3">デスクトップに残された修復ファイル。まずコピーを取って退避する</figcaption>
+            </figure>
+
+            <hr>
+
+            <h2 data-lang-key="rec-h2-terms">前提：「中央モデル」と「クラウドモデル」は別物</h2>
+            <p data-lang-key="rec-terms-p">この話題は用語が混ざりやすいので、先に整理します。ワークシェアリングには2つの方式があり、<strong>修復ファイルの扱いが違います</strong>。</p>
+            <table class="info-table">
+                <thead>
+                    <tr>
+                        <th data-lang-key="rec-terms-th1">項目</th>
+                        <th data-lang-key="rec-terms-th2">ファイルベースのワークシェアリング</th>
+                        <th data-lang-key="rec-terms-th3">クラウドワークシェアリング</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-lang-key="rec-terms-r1">中央の置き場所</td>
+                        <td data-lang-key="rec-terms-r1a">社内サーバーの共有フォルダ</td>
+                        <td data-lang-key="rec-terms-r1b">BIM 360 / Autodesk Construction Cloud</td>
+                    </tr>
+                    <tr>
+                        <td data-lang-key="rec-terms-r2">呼び方</td>
+                        <td data-lang-key="rec-terms-r2a">中央モデル（中央ファイル）</td>
+                        <td data-lang-key="rec-terms-r2b">クラウドモデル</td>
+                    </tr>
+                    <tr>
+                        <td data-lang-key="rec-terms-r3">手元のファイル</td>
+                        <td data-lang-key="rec-terms-r3a">ローカルファイル（.rvt）</td>
+                        <td data-lang-key="rec-terms-r3b">ローカルキャッシュ</td>
+                    </tr>
+                    <tr>
+                        <td data-lang-key="rec-terms-r4">修復ファイルと中央の紐付け</td>
+                        <td data-lang-key="rec-terms-r4a">中央ファイルのパスを保持していることがある</td>
+                        <td data-lang-key="rec-terms-r4b"><strong>紐付けが切れる</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <blockquote>
+                <p data-lang-key="rec-terms-note">💡 この記事で扱うのは<strong>クラウドワークシェアリング</strong>のケースです。社内サーバー上の中央ファイルを使っている場合は、事情が異なります。</p>
+            </blockquote>
+
+            <h2 data-lang-key="rec-h2-why">なぜ修復ファイルをそのまま同期できないのか</h2>
+            <p data-lang-key="rec-why-p1">クラウドワークシェアリングで作られた修復ファイルは、<strong>クラウドとの紐付けを失った単独のモデル</strong>として保存されます。中に入っているのは間違いなくあなたの作業内容ですが、<strong>「どのクラウドモデルから派生したものか」という情報を持っていません</strong>。</p>
+            <p data-lang-key="rec-why-p2">Revit から見ると、修復ファイルと元のクラウドモデルは<strong>まったく別のプロジェクト</strong>です。だから「中央モデルと同期」を押しても、同期する相手が存在しません。</p>
+            <p data-lang-key="rec-why-p3">「デスクトップにデータは残っているのだから、上書きすれば済むはず」と考えたくなりますが、<strong>Revit のワークシェアリングはファイルの上書きではなく、要素ごとの差分のやり取り</strong>で成り立っています。紐付けが切れた時点で、その仕組みには乗れなくなります。</p>
+
+            <figure class="tips-figure">
+                <img src="../images/tips/revit-cloud-model-recovery/05-no-sync-target.png" alt="修復ファイルには同期先がない" loading="lazy" onerror="this.closest('.tips-figure').remove()">
+                <figcaption data-lang-key="rec-fig5">修復ファイル側には、元のクラウドモデルへの同期先が存在しない</figcaption>
+            </figure>
+
+            <hr>
+
+            <h2 data-lang-key="rec-h2-options">復旧の選択肢は3つ</h2>
+
+            <div class="step-box">
+                <h3 data-lang-key="rec-opt0-h">選択肢0：未同期の変更を保持したまま開ける場合（最初に試す）</h3>
+                <p data-lang-key="rec-opt0-p1">エラー直前に<strong>ローカルへの保存まで成功していた</strong>場合、元のクラウドモデルを開き直したときに「手元のデータのほうが新しい」と Revit 側が判断し、<strong>未同期の変更を保持したまま開く</strong>選択肢が提示されることがあります。</p>
+                <p data-lang-key="rec-opt0-p2">これが出たら、いちばん被害が小さい道です。保持して開いたうえで内容を確認し、問題なければそのまま同期すれば復旧完了です。<strong>他の方法を試す前に、必ずこれを確認してください。</strong></p>
+            </div>
+
+            <figure class="tips-figure">
+                <img src="../images/tips/revit-cloud-model-recovery/04-open-keep-changes.png" alt="変更を保持してモデルを開く選択肢" loading="lazy" onerror="this.closest('.tips-figure').remove()">
+                <figcaption data-lang-key="rec-fig4">未同期の変更を保持したまま開けるときの表示。出たら迷わずこちらを選ぶ</figcaption>
+            </figure>
+
+            <div class="step-box">
+                <h3 data-lang-key="rec-opt1-h">選択肢1：元のクラウドモデルを開き直し、修復ファイルを見ながら作業を再現する</h3>
+                <p data-lang-key="rec-opt1-p">修復ファイルは<strong>参照用</strong>と割り切り、元のクラウドモデルに対して同じ作業をやり直す方法です。地道ですが、<strong>モデルの構造とリンクには一切手を触れない</strong>ので、副作用がありません。未同期の作業量に比例して時間がかかります。</p>
+            </div>
+
+            <div class="step-box">
+                <h3 data-lang-key="rec-opt2-h">選択肢2：修復ファイルから新しいクラウドモデルを作り、元と置き換える</h3>
+                <p data-lang-key="rec-opt2-p">修復ファイルをクラウドにアップロードして新しいクラウドモデルとし、元のモデルと入れ替える方法です。<strong>作業内容はそのまま残る</strong>という大きな利点があります。ただし、次に述べる代償があります。</p>
+            </div>
+
+            <hr>
+
+            <h2 data-lang-key="rec-h2-links">なぜ「作り直し」を選ばなかったか — リンクが外れるという代償</h2>
+            <p data-lang-key="rec-links-p1">一見すると選択肢2がきれいです。作業をやり直さなくて済むのですから。筆者も最初はこちらを検討しました。しかし、<strong>リンクモデルを多数抱えたプロジェクトでは危険</strong>だと判断して見送りました。</p>
+            <p data-lang-key="rec-links-p2">理由は、<strong>クラウドモデルのリンクが「フォルダ階層＋ファイル名」だけで管理されていない</strong>ことです。クラウドモデルにはそれぞれ固有の識別情報があり、リンクはそれを頼りに結び付いています。</p>
+            <p data-lang-key="rec-links-p3">つまり、<strong>まったく同じ名前で、まったく同じ場所に新しいクラウドモデルを作って置き換えても、Revit から見れば「別のモデル」</strong>です。リンクは外れます。</p>
+
+            <h3 data-lang-key="rec-links-h3">リンクが外れると何が失われるか</h3>
+            <table class="info-table">
+                <thead>
+                    <tr>
+                        <th data-lang-key="rec-links-th1">失われるもの</th>
+                        <th data-lang-key="rec-links-th2">確度</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-lang-key="rec-links-r1">リンク先の要素を参照していた<strong>タグ</strong></td>
+                        <td data-lang-key="rec-links-r1b">確実に失われる</td>
+                    </tr>
+                    <tr>
+                        <td data-lang-key="rec-links-r2">リンク先の要素を参照していた<strong>寸法</strong></td>
+                        <td data-lang-key="rec-links-r2b">確実に失われる</td>
+                    </tr>
+                    <tr>
+                        <td data-lang-key="rec-links-r3">「リンクビュー別」で表示を指定していた<strong>ビュー設定</strong></td>
+                        <td data-lang-key="rec-links-r3b">失われる恐れがある（筆者は未検証）</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="notes-box warning">
+                <p data-lang-key="rec-links-warn">⚠️ タグと寸法は、<strong>参照先を見失った時点で消えます</strong>。しかも「消えた」という警告が図面のあちこちに出るわけではないので、<strong>気づかないまま出図してしまう危険</strong>があります。リンクを張り直しても、いったん消えたタグ・寸法は自動では戻りません。</p>
+            </div>
+
+            <h3 data-lang-key="rec-links-h3b">どちらを選ぶかの目安</h3>
+            <table class="info-table">
+                <thead>
+                    <tr>
+                        <th data-lang-key="rec-choose-th1">状況</th>
+                        <th data-lang-key="rec-choose-th2">向いている方法</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-lang-key="rec-choose-r1">リンクモデルが無い／ごく少数</td>
+                        <td data-lang-key="rec-choose-r1b">選択肢2（作り直し）も現実的</td>
+                    </tr>
+                    <tr>
+                        <td data-lang-key="rec-choose-r2">リンクが多い／タグ・寸法を多用している</td>
+                        <td data-lang-key="rec-choose-r2b">選択肢1（作業の再現）</td>
+                    </tr>
+                    <tr>
+                        <td data-lang-key="rec-choose-r3">未同期の作業量が数時間以内</td>
+                        <td data-lang-key="rec-choose-r3b">選択肢1（結果的に早い）</td>
+                    </tr>
+                    <tr>
+                        <td data-lang-key="rec-choose-r4">未同期の作業量が膨大</td>
+                        <td data-lang-key="rec-choose-r4b">選択肢2を検討（リンク・タグ・寸法の復旧を覚悟する）</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p data-lang-key="rec-links-p4">筆者のケースはリンクモデルが多数あったため、<strong>選択肢1</strong>を採りました。決め手は作業量の比較ではなく、<strong>「やり直す時間は読めるが、リンク・タグ・寸法を復旧する時間は読めない」</strong>という点です。出図が迫っている状況で、終わりの見えない復旧作業に入るのは避けたいところでした。</p>
+
+            <figure class="tips-figure">
+                <img src="../images/tips/revit-cloud-model-recovery/06-manage-links.png" alt="リンクを管理でリンクの状態を確認" loading="lazy" onerror="this.closest('.tips-figure').remove()">
+                <figcaption data-lang-key="rec-fig6">「管理」→「リンクを管理」でリンクの状態を確認できる</figcaption>
+            </figure>
+
+            <hr>
+
+            <h2 data-lang-key="rec-h2-steps">実際の手順（選択肢1で復旧する）</h2>
+
+            <div class="step-box">
+                <h3 data-lang-key="rec-step1-h">ステップ1：修復ファイルを退避し、参照用として開く</h3>
+                <p data-lang-key="rec-step1-p1">デスクトップの修復ファイルを作業用フォルダにコピーします。<strong>原本には触らない</strong>のが鉄則です。</p>
+                <p data-lang-key="rec-step1-p2">コピーしたほうを開いて、参照用にします。<strong>誤って編集しないよう、開いたら触らない</strong>と決めておくと安全です。元のクラウドモデルと見比べるので、可能ならディスプレイを2台使うか、Revit をもう1つ起動して並べると作業が進みます。</p>
+            </div>
+
+            <div class="step-box">
+                <h3 data-lang-key="rec-step2-h">ステップ2：何をやり直すのかを洗い出す</h3>
+                <p data-lang-key="rec-step2-p1">記憶だけを頼りにすると必ず漏れます。次のような方法で機械的に差分を拾うと確実です。</p>
+                <ul>
+                    <li data-lang-key="rec-step2-li1"><strong>集計表を両方で開いて見比べる</strong> — 要素の増減が数で分かるので、追加・削除の見落としを防げます</li>
+                    <li data-lang-key="rec-step2-li2"><strong>触ったビュー・階を書き出す</strong> — 先に紙やメモに列挙してから作業に入ります</li>
+                    <li data-lang-key="rec-step2-li3"><strong>図面を並べて目視で比較する</strong> — 両方から同じビューを PDF に書き出せば、差分を重ねて確認できます</li>
+                </ul>
+            </div>
+
+            <figure class="tips-figure">
+                <img src="../images/tips/revit-cloud-model-recovery/07-compare-schedules.png" alt="集計表を並べて差分を確認" loading="lazy" onerror="this.closest('.tips-figure').remove()">
+                <figcaption data-lang-key="rec-fig7">集計表を両方で出して見比べると、要素の増減を数で追える</figcaption>
+            </figure>
+
+            <p data-lang-key="rec-step2-tool">💡 同じビューを両方から PDF に書き出しておけば、<a href="../pdf_compare.html">PDF比較ツール</a>で重ね合わせて差分を色分け表示できます。目視で追うより確実です。</p>
+
+            <div class="step-box">
+                <h3 data-lang-key="rec-step3-h">ステップ3：元のクラウドモデルを開いて作業を再現する</h3>
+                <p data-lang-key="rec-step3-p">洗い出したリストに沿って作業を再現します。ここで<strong>元のモデル側に他のメンバーの変更が入っていないか</strong>も確認しておきます。入っていれば、その上に自分の作業を重ねる形になります。</p>
+            </div>
+
+            <div class="step-box">
+                <h3 data-lang-key="rec-step4-h">ステップ4：こまめに同期する</h3>
+                <p data-lang-key="rec-step4-p">復旧作業の最中にもう一度落ちたら目も当てられません。<strong>ひと区切りついたら同期</strong>を徹底します。同じエラーが再発する場合は、モデル自体に問題を抱えている可能性があるので、監査（開くときの「監査」オプション）も検討してください。</p>
+            </div>
+
+            <figure class="tips-figure">
+                <img src="../images/tips/revit-cloud-model-recovery/08-sync-with-central.png" alt="中央モデルと同期を実行" loading="lazy" onerror="this.closest('.tips-figure').remove()">
+                <figcaption data-lang-key="rec-fig8">復旧できたら同期。以降もひと区切りごとに同期する習慣をつける</figcaption>
+            </figure>
+
+            <hr>
+
+            <h2 data-lang-key="rec-h2-prevent">同じ目に遭わないために</h2>
+            <p data-lang-key="rec-prevent-p">この経験から、運用として次の5つを決めました。どれも当たり前のことですが、痛い目に遭うまでは徹底できていませんでした。</p>
+            <ol class="prep-list">
+                <li>
+                    <h4 data-lang-key="rec-prev-1-h">同期の間隔を短くする</h4>
+                    <p data-lang-key="rec-prev-1-p">「切りのいいところまで」ではなく、<strong>30分〜1時間で機械的に同期</strong>します。失うのは最大でもその時間分です。</p>
+                </li>
+                <li>
+                    <h4 data-lang-key="rec-prev-2-h">重い操作の前後で必ず同期する</h4>
+                    <p data-lang-key="rec-prev-2-p">大量のコピー、リンクの読み込み・入れ替え、一括変更などの前後は<strong>落ちやすい</strong>タイミングです。着手前に同期しておけば、最悪でもその直前まで戻れます。</p>
+                </li>
+                <li>
+                    <h4 data-lang-key="rec-prev-3-h">「ローカルファイルへ保存」を習慣にする</h4>
+                    <p data-lang-key="rec-prev-3-p">同期ほど重くないので、こまめに実行できます。<strong>ローカル保存が通っていれば「選択肢0」が使える</strong>可能性が出てきます。これが効くかどうかで復旧の手間が桁違いに変わります。</p>
+                </li>
+                <li>
+                    <h4 data-lang-key="rec-prev-4-h">エラーが出たら、必ず修復ファイルを保存する</h4>
+                    <p data-lang-key="rec-prev-4-p">動揺してダイアログを閉じてしまうと、作業内容は完全に失われます。<strong>保存先のパスも控えておく</strong>と、後で探し回らずに済みます。</p>
+                </li>
+                <li>
+                    <h4 data-lang-key="rec-prev-5-h">クラウド側のバージョン履歴を把握しておく</h4>
+                    <p data-lang-key="rec-prev-5-p">BIM 360 / Autodesk Construction Cloud にはバージョン履歴があり、過去の状態に戻すことができます。<strong>今回の目的（新しい作業を反映する）とは逆方向</strong>ですが、「モデルが壊れた」ときの逃げ道として、どこから辿れるかを普段から知っておくと安心です。</p>
+                </li>
+            </ol>
+
+            <hr>
+
+            <h2 data-lang-key="rec-h2-summary">まとめ</h2>
+            <ul>
+                <li data-lang-key="rec-sum1">クラウドワークシェアリングの修復ファイルは、<strong>クラウドとの紐付けを失った単独のモデル</strong>。そのままでは元のクラウドモデルへ同期できない</li>
+                <li data-lang-key="rec-sum2">まず<strong>「未同期の変更を保持したまま開けるか」</strong>を確認する。これが使えれば最短で終わる</li>
+                <li data-lang-key="rec-sum3">修復ファイルから<strong>作り直して置き換えるとリンクが外れ</strong>、リンク先を参照していたタグ・寸法が失われる</li>
+                <li data-lang-key="rec-sum4">リンクモデルが多いプロジェクトでは、<strong>作業をやり直すほうが結果的に早く、確実</strong>なことが多い</li>
+                <li data-lang-key="rec-sum5">最大の防御は<strong>同期の間隔を短くすること</strong>。失う時間を、あらかじめ自分で決めておく</li>
+            </ul>
+
+            <div class="notes-box warning">
+                <p data-lang-key="rec-disclaimer">⚠️ この記事は筆者が実際に遭遇した事例をもとにした記録です。Revit のバージョンやプロジェクトの構成によって挙動が異なる場合があります。<strong>重要なモデルを操作する前には必ずバックアップを取り</strong>、判断に迷う場合は Autodesk のサポート情報（「修復不可能なエラー」「クラウド モデル 復元」などで検索）もあわせてご確認ください。表中の「未検証」と記した項目は、筆者が実地で確認できていない推測です。</p>
+            </div>
+
+            <h2 data-lang-key="rec-h2-faq">よくある質問</h2>
+
+            <h3 data-lang-key="rec-faq-q1">修復ファイルを開いて「名前を付けて保存」でクラウドに保存すれば、同期できますか？</h3>
+            <p data-lang-key="rec-faq-a1">それは<strong>新しいクラウドモデルを作る操作</strong>（選択肢2）になります。元のクラウドモデルが更新されるわけではありません。同じ名前・同じ場所に保存しても別のモデルとして扱われるため、リンクの張り直しが発生します。</p>
+
+            <h3 data-lang-key="rec-faq-q2">リンクが外れたかどうかは、どう確認しますか？</h3>
+            <p data-lang-key="rec-faq-a2">「管理」→「リンクを管理」でリンクの状態を確認します。あわせて、<strong>タグや寸法が消えていないかを主要なビューで目視確認</strong>してください。リンクの状態が正常に見えても、いったん参照を失ったタグ・寸法は戻っていません。</p>
+
+            <h3 data-lang-key="rec-faq-q3">未同期の作業がどれくらいあるか、事前に分かりますか？</h3>
+            <p data-lang-key="rec-faq-a3">正確には分かりません。最後に同期した時刻は確認できますが、その間にどれだけ作業したかは自分の記憶に頼ることになります。<strong>だからこそ、同期の間隔を短く保つことが最大の防御</strong>になります。</p>
+
+            <h3 data-lang-key="rec-faq-q4">社内サーバーの中央ファイルを使っている場合も同じですか？</h3>
+            <p data-lang-key="rec-faq-a4">事情が異なります。ファイルベースのワークシェアリングでは、修復ファイルが中央ファイルのパス情報を保持していることがあり、対処の選択肢が変わります。この記事は<strong>クラウドワークシェアリング（BIM 360 / ACC）</strong>のケースを扱っています。</p>
+
+            <hr>
+
+            <h2 data-lang-key="rec-h2-related">関連ページ</h2>
+            <ul>
+                <li data-lang-key="rec-rel1"><a href="../pdf_compare.html">PDF比較ツール</a> — 復旧前後の図面を重ねて、差分を色分けで確認できます（無料・ブラウザ完結）</li>
+                <li data-lang-key="rec-rel2"><a href="pdf-compare-guide.html">図面PDFを比較して差分を見つける方法</a> — 重ね合わせの手順と色分けの読み方</li>
+                <li data-lang-key="rec-rel3"><a href="../addins.html">28 Tools アドイン（無料）</a> — 作図を効率化する Revit アドイン</li>
+            </ul>
+
+            <div class="manual-navigation">
+                <a href="./" class="nav-button" data-lang-key="rec-back-tips">← 使い方ガイド一覧へ</a>
+            </div>
+
+        </article>
+    </div>
+</div>
+
+<!-- フッター -->
+<footer class="site-footer">
+    <div class="site-footer-content">
+        <div class="site-footer-links">
+            <a href="../about.html" data-lang-key="footer-about">運営者情報</a>
+            <span class="footer-divider">|</span>
+            <a href="../contact.html" data-lang-key="footer-contact">お問い合わせ</a>
+            <span class="footer-divider">|</span>
+            <a href="../privacy.html" data-lang-key="footer-privacy">プライバシーポリシー</a>
+            <span class="footer-divider">|</span>
+            <a href="../terms.html" data-lang-key="footer-terms">利用規約</a>
+        </div>
+        <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

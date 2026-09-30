@@ -32,6 +32,10 @@ exclude:
   # CI 用スクリプト (サイトからは参照されない)
   - scripts/
 
+  # tips 記事用スクショの運用メモ (画像本体は配信を維持する)
+  - images/tips/README.md
+  - images/tips/revit-cloud-model-recovery/README.md
+
   # 各ツールの開発ドキュメント (ツール本体は配信を維持する)
   - ai-minutes/web/CHANGELOG.md
   - ai-minutes/web/DEVELOPMENT.md

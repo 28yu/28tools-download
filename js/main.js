@@ -8993,12 +8993,420 @@ translations.toolAboutTools = {
     }
 };
 
+// tips/revit-cloud-model-recovery.html — クラウドモデルの重大なエラーからの復旧
+translations.recoveryArticle = {
+    'tips-index-card-recovery-title': {
+        ja: 'Revitクラウドモデルの重大なエラーから作業を復旧する',
+        en: 'Recovering your work after a fatal error in a Revit cloud model',
+        zh: '从 Revit 云模型的重大错误中恢复工作'
+    },
+    'tips-index-card-recovery-desc': {
+        ja: 'デスクトップに保存された修復ファイルがそのまま同期できない理由と、リンクを壊さない復旧手順。',
+        en: 'Why the recovery file left on your desktop cannot simply be synchronized, and how to recover without breaking your links.',
+        zh: '保存在桌面的修复文件为何无法直接同步，以及不破坏链接的恢复步骤。'
+    },
+    'rec-breadcrumb-current': {
+        ja: 'クラウドモデルの重大なエラーから復旧する',
+        en: 'Recovering from a fatal error in a cloud model',
+        zh: '从云模型的重大错误中恢复'
+    },
+    'rec-title': {
+        ja: 'Revitクラウドモデルの重大なエラーから、デスクトップの修復ファイルで作業を復旧する',
+        en: 'Recovering your work from the desktop recovery file after a fatal error in a Revit cloud model',
+        zh: '通过桌面上的修复文件，从 Revit 云模型的重大错误中恢复工作'
+    },
+    'rec-subtitle': {
+        ja: '修復ファイルがそのまま同期できない理由と、リンクを壊さない復旧手順',
+        en: 'Why the recovery file cannot simply be synchronized, and how to recover without breaking your links',
+        zh: '修复文件为何无法直接同步，以及不破坏链接的恢复步骤'
+    },
+    'rec-intro1': {
+        ja: 'クラウドワークシェアリング（BIM 360 / Autodesk Construction Cloud）でモデルを編集している最中に、突然 <strong>「重大なエラーが発生しました」</strong> というダイアログが出て Revit が終了する。このとき Revit は、終了の直前に「編集中の内容を<strong>修復ファイル</strong>として保存しますか」と尋ねてきます。指示どおり保存すると、多くの場合デスクトップに <code>.rvt</code> ファイルが残ります。',
+        en: 'You are editing a model in cloud worksharing (BIM 360 / Autodesk Construction Cloud) when a dialog suddenly announces <strong>a fatal error</strong> and Revit shuts down. Just before closing, Revit asks whether to save your work in progress as a <strong>recovery file</strong>. If you say yes, an <code>.rvt</code> file is usually left on your desktop.',
+        zh: '在云协作（BIM 360 / Autodesk Construction Cloud）中编辑模型时，突然弹出<strong>“发生了严重错误”</strong>对话框，Revit 随即关闭。关闭前 Revit 会询问是否将正在编辑的内容保存为<strong>修复文件</strong>。若选择保存，通常会在桌面上留下一个 <code>.rvt</code> 文件。'
+    },
+    'rec-intro2': {
+        ja: '問題はここからです。作業内容はデスクトップの修復ファイルの中にある。一方クラウド上のモデルは、<strong>最後に同期した時点のまま</strong>。数時間分の作業が宙に浮いた状態になります。「この修復ファイルをクラウドへ反映したい」と考えて開いてみても、<strong>「中央モデルと同期」の同期先がありません。</strong>',
+        en: 'The problem starts here. Your work lives inside the recovery file on the desktop, while the model in the cloud is still <strong>exactly as it was at your last synchronization</strong>. Hours of work are left in limbo. And when you open the recovery file hoping to push it back to the cloud, <strong>there is no target for "Synchronize with Central".</strong>',
+        zh: '问题由此开始。工作内容在桌面的修复文件中，而云端模型仍停留在<strong>最后一次同步时的状态</strong>，数小时的工作悬在半空。当你打开修复文件想把它反映到云端时，会发现<strong>“与中心文件同步”根本没有同步目标。</strong>'
+    },
+    'rec-intro3': {
+        ja: 'この記事は、筆者が実際にこの状況に遭遇し、<strong>リンクモデルを壊さずに復旧した</strong>ときの記録です。同じ場面で判断を迷っている方の参考になれば幸いです。',
+        en: 'This article is a record of how the author actually faced this situation and <strong>recovered without breaking the linked models</strong>. I hope it helps anyone weighing the same decision.',
+        zh: '本文是笔者实际遇到这一情况，并<strong>在不破坏链接模型的前提下完成恢复</strong>的记录。希望能为面临同样抉择的人提供参考。'
+    },
+    'rec-fig1': {
+        ja: '作業中に突然表示されるエラーダイアログ。この直後に修復ファイルの保存を求められる',
+        en: 'The error dialog that appears out of nowhere. Right after this, Revit offers to save a recovery file',
+        zh: '作业中突然弹出的错误对话框。紧接着会提示保存修复文件'
+    },
+    'rec-fig2': {
+        ja: '修復ファイルの保存先を指定する画面。<strong>ここで保存先のパスを控えておく</strong>と、あとで探し回らずに済む',
+        en: 'The dialog for choosing where to save the recovery file. <strong>Note the path here</strong> and you will not have to hunt for it later',
+        zh: '指定修复文件保存位置的界面。<strong>在此记下保存路径</strong>，事后便不必四处翻找'
+    },
+    'rec-h2-first': { ja: 'まず落ち着いて、3つ確認する', en: 'First, calm down and check three things', zh: '首先冷静下来，确认三件事' },
+    'rec-first-p': {
+        ja: '復旧方法を選ぶ前に、次の3点を確認してください。とくに3番目が、その後の手間を大きく左右します。',
+        en: 'Before choosing a recovery route, check the following three points. The third one in particular decides how much work lies ahead.',
+        zh: '在选择恢复方法之前，请确认以下三点。尤其是第三点，将极大影响之后的工作量。'
+    },
+    'rec-first-1-h': { ja: '修復ファイルがどこに保存されたか', en: 'Where the recovery file was saved', zh: '修复文件保存在哪里' },
+    'rec-first-1-p': {
+        ja: '保存先はエラー時のダイアログで指定した場所です。既定ではデスクトップになっていることが多いです。<strong>見つけたらすぐ別フォルダにコピーして退避</strong>してください。この先の作業中に、うっかり上書きしたり消したりすると取り返しがつきません。',
+        en: 'It is wherever you pointed the dialog at when the error occurred — most often the desktop by default. <strong>As soon as you find it, copy it to a separate folder</strong>. If you overwrite or delete it during the recovery work, there is no way back.',
+        zh: '保存位置就是出错时对话框中指定的位置，默认多为桌面。<strong>找到后请立即复制到其他文件夹备份</strong>。若在后续操作中不慎覆盖或删除，将无法挽回。'
+    },
+    'rec-first-2-h': { ja: 'クラウドモデルが今どの時点か', en: 'Where the cloud model currently stands', zh: '云模型目前处于哪个时间点' },
+    'rec-first-2-p': {
+        ja: '自分が最後に同期した時点が基準ですが、<strong>他のメンバーがその後に同期していれば、モデルはさらに進んでいます</strong>。「自分の作業だけを戻せばよい」とは限らないので、共同編集者に状況を共有しておきます。',
+        en: 'Your last synchronization is the baseline, but <strong>if other members have synchronized since then, the model has moved on</strong>. It is not necessarily a matter of restoring only your own work, so tell your collaborators what happened.',
+        zh: '以自己最后一次同步为基准，但<strong>如果其他成员之后进行过同步，模型已经继续前进</strong>。未必只是“把自己的工作补回来”那么简单，因此要与协作者共享情况。'
+    },
+    'rec-first-3-h': { ja: 'エラー直前に「ローカル保存」が成功していたか', en: 'Whether the last local save succeeded', zh: '出错前“本地保存”是否成功' },
+    'rec-first-3-p': {
+        ja: 'ここが分岐点です。同期（中央モデルと同期）は失敗していても、<strong>ローカルへの保存だけは通っていた</strong>ことがあります。その場合は後述のいちばん簡単な方法が使えます。',
+        en: 'This is the fork in the road. Even if the synchronization failed, <strong>the save to your local copy may still have gone through</strong>. If it did, the simplest route described below becomes available.',
+        zh: '这是分岔点。即使同步（与中心文件同步）失败，<strong>本地保存也可能已经成功</strong>。若是如此，就可以使用后文介绍的最简单方法。'
+    },
+    'rec-fig3': {
+        ja: 'デスクトップに残された修復ファイル。まずコピーを取って退避する',
+        en: 'The recovery file left on the desktop. Copy it somewhere safe before doing anything else',
+        zh: '留在桌面上的修复文件。先复制一份备份'
+    },
+    'rec-h2-terms': { ja: '前提：「中央モデル」と「クラウドモデル」は別物', en: 'Background: a central model and a cloud model are not the same thing', zh: '前提：“中心模型”与“云模型”是两回事' },
+    'rec-terms-p': {
+        ja: 'この話題は用語が混ざりやすいので、先に整理します。ワークシェアリングには2つの方式があり、<strong>修復ファイルの扱いが違います</strong>。',
+        en: 'The terminology gets tangled easily, so let us sort it out first. There are two worksharing methods, and <strong>they treat the recovery file differently</strong>.',
+        zh: '这个话题的术语容易混淆，先做个梳理。协作方式有两种，<strong>它们对修复文件的处理并不相同</strong>。'
+    },
+    'rec-terms-th1': { ja: '項目', en: 'Item', zh: '项目' },
+    'rec-terms-th2': { ja: 'ファイルベースのワークシェアリング', en: 'File-based worksharing', zh: '基于文件的协作' },
+    'rec-terms-th3': { ja: 'クラウドワークシェアリング', en: 'Cloud worksharing', zh: '云协作' },
+    'rec-terms-r1': { ja: '中央の置き場所', en: 'Where the central lives', zh: '中心文件的位置' },
+    'rec-terms-r1a': { ja: '社内サーバーの共有フォルダ', en: 'A shared folder on an in-house server', zh: '公司服务器的共享文件夹' },
+    'rec-terms-r1b': { ja: 'BIM 360 / Autodesk Construction Cloud', en: 'BIM 360 / Autodesk Construction Cloud', zh: 'BIM 360 / Autodesk Construction Cloud' },
+    'rec-terms-r2': { ja: '呼び方', en: 'What it is called', zh: '称呼' },
+    'rec-terms-r2a': { ja: '中央モデル（中央ファイル）', en: 'Central model (central file)', zh: '中心模型（中心文件）' },
+    'rec-terms-r2b': { ja: 'クラウドモデル', en: 'Cloud model', zh: '云模型' },
+    'rec-terms-r3': { ja: '手元のファイル', en: 'What you hold locally', zh: '本地的文件' },
+    'rec-terms-r3a': { ja: 'ローカルファイル（.rvt）', en: 'A local file (.rvt)', zh: '本地文件（.rvt）' },
+    'rec-terms-r3b': { ja: 'ローカルキャッシュ', en: 'A local cache', zh: '本地缓存' },
+    'rec-terms-r4': { ja: '修復ファイルと中央の紐付け', en: 'Link between recovery file and central', zh: '修复文件与中心的关联' },
+    'rec-terms-r4a': { ja: '中央ファイルのパスを保持していることがある', en: 'May retain the path to the central file', zh: '可能保留中心文件的路径' },
+    'rec-terms-r4b': { ja: '<strong>紐付けが切れる</strong>', en: '<strong>The link is severed</strong>', zh: '<strong>关联会断开</strong>' },
+    'rec-terms-note': {
+        ja: '💡 この記事で扱うのは<strong>クラウドワークシェアリング</strong>のケースです。社内サーバー上の中央ファイルを使っている場合は、事情が異なります。',
+        en: '💡 This article deals with the <strong>cloud worksharing</strong> case. If you use a central file on an in-house server, the situation is different.',
+        zh: '💡 本文讨论的是<strong>云协作</strong>的情况。若使用公司服务器上的中心文件，情况有所不同。'
+    },
+    'rec-h2-why': { ja: 'なぜ修復ファイルをそのまま同期できないのか', en: 'Why the recovery file cannot simply be synchronized', zh: '修复文件为何无法直接同步' },
+    'rec-why-p1': {
+        ja: 'クラウドワークシェアリングで作られた修復ファイルは、<strong>クラウドとの紐付けを失った単独のモデル</strong>として保存されます。中に入っているのは間違いなくあなたの作業内容ですが、<strong>「どのクラウドモデルから派生したものか」という情報を持っていません</strong>。',
+        en: 'A recovery file produced under cloud worksharing is saved as <strong>a standalone model that has lost its tie to the cloud</strong>. What is inside is unquestionably your work, but <strong>it carries no record of which cloud model it came from</strong>.',
+        zh: '云协作下生成的修复文件，会作为<strong>失去与云端关联的独立模型</strong>保存。其中的内容确实是你的工作成果，但<strong>它不携带“源自哪个云模型”的信息</strong>。'
+    },
+    'rec-why-p2': {
+        ja: 'Revit から見ると、修復ファイルと元のクラウドモデルは<strong>まったく別のプロジェクト</strong>です。だから「中央モデルと同期」を押しても、同期する相手が存在しません。',
+        en: 'As far as Revit is concerned, the recovery file and the original cloud model are <strong>entirely different projects</strong>. That is why pressing "Synchronize with Central" finds nothing to synchronize with.',
+        zh: '在 Revit 看来，修复文件与原云模型是<strong>完全不同的项目</strong>。因此点击“与中心文件同步”时，根本不存在同步对象。'
+    },
+    'rec-why-p3': {
+        ja: '「デスクトップにデータは残っているのだから、上書きすれば済むはず」と考えたくなりますが、<strong>Revit のワークシェアリングはファイルの上書きではなく、要素ごとの差分のやり取り</strong>で成り立っています。紐付けが切れた時点で、その仕組みには乗れなくなります。',
+        en: 'It is tempting to think "the data is right there on my desktop, so surely I can just overwrite it." But <strong>Revit worksharing is not file overwriting; it exchanges differences element by element</strong>. Once the tie is severed, that mechanism is no longer available to you.',
+        zh: '人们很容易认为“数据就在桌面上，直接覆盖不就行了”。但<strong>Revit 的协作机制并非文件覆盖，而是逐个图元交换差异</strong>。一旦关联断开，就无法再使用这一机制。'
+    },
+    'rec-fig5': {
+        ja: '修復ファイル側には、元のクラウドモデルへの同期先が存在しない',
+        en: 'On the recovery file side, there is no synchronization target pointing back to the original cloud model',
+        zh: '修复文件一侧不存在指向原云模型的同步目标'
+    },
+    'rec-h2-options': { ja: '復旧の選択肢は3つ', en: 'Three ways to recover', zh: '恢复方案有三种' },
+    'rec-opt0-h': {
+        ja: '選択肢0：未同期の変更を保持したまま開ける場合（最初に試す）',
+        en: 'Option 0: when you can open the model keeping unsynchronized changes (try this first)',
+        zh: '方案 0：可以保留未同步更改打开模型时（先试这个）'
+    },
+    'rec-opt0-p1': {
+        ja: 'エラー直前に<strong>ローカルへの保存まで成功していた</strong>場合、元のクラウドモデルを開き直したときに「手元のデータのほうが新しい」と Revit 側が判断し、<strong>未同期の変更を保持したまま開く</strong>選択肢が提示されることがあります。',
+        en: 'If <strong>the save to your local copy succeeded</strong> just before the error, Revit may recognise that your local data is newer when you reopen the original cloud model, and offer to <strong>open it keeping the unsynchronized changes</strong>.',
+        zh: '若出错前<strong>本地保存已成功</strong>，重新打开原云模型时 Revit 可能判断“本地数据更新”，并提示<strong>保留未同步更改打开</strong>的选项。'
+    },
+    'rec-opt0-p2': {
+        ja: 'これが出たら、いちばん被害が小さい道です。保持して開いたうえで内容を確認し、問題なければそのまま同期すれば復旧完了です。<strong>他の方法を試す前に、必ずこれを確認してください。</strong>',
+        en: 'If you see this, it is by far the least damaging path. Open while keeping the changes, check the contents, and if all is well simply synchronize — recovery done. <strong>Always check for this before trying anything else.</strong>',
+        zh: '如果出现该提示，这是损失最小的路径。保留更改打开后确认内容，无误即可直接同步完成恢复。<strong>在尝试其他方法之前，务必先确认这一点。</strong>'
+    },
+    'rec-fig4': {
+        ja: '未同期の変更を保持したまま開けるときの表示。出たら迷わずこちらを選ぶ',
+        en: 'The prompt shown when unsynchronized changes can be kept. If it appears, take it without hesitation',
+        zh: '可保留未同步更改时的提示。出现时请毫不犹豫地选择它'
+    },
+    'rec-opt1-h': {
+        ja: '選択肢1：元のクラウドモデルを開き直し、修復ファイルを見ながら作業を再現する',
+        en: 'Option 1: reopen the original cloud model and redo the work while referring to the recovery file',
+        zh: '方案 1：重新打开原云模型，参照修复文件重做工作'
+    },
+    'rec-opt1-p': {
+        ja: '修復ファイルは<strong>参照用</strong>と割り切り、元のクラウドモデルに対して同じ作業をやり直す方法です。地道ですが、<strong>モデルの構造とリンクには一切手を触れない</strong>ので、副作用がありません。未同期の作業量に比例して時間がかかります。',
+        en: 'Treat the recovery file purely as <strong>a reference</strong> and redo the same work on the original cloud model. It is laborious, but <strong>it touches neither the model structure nor the links</strong>, so there are no side effects. The time it takes is proportional to how much work was unsynchronized.',
+        zh: '把修复文件仅当作<strong>参照</strong>，在原云模型上重做同样的工作。虽然费力，但<strong>完全不触及模型结构与链接</strong>，没有副作用。耗时与未同步的工作量成正比。'
+    },
+    'rec-opt2-h': {
+        ja: '選択肢2：修復ファイルから新しいクラウドモデルを作り、元と置き換える',
+        en: 'Option 2: create a new cloud model from the recovery file and replace the original',
+        zh: '方案 2：用修复文件创建新的云模型，替换原有模型'
+    },
+    'rec-opt2-p': {
+        ja: '修復ファイルをクラウドにアップロードして新しいクラウドモデルとし、元のモデルと入れ替える方法です。<strong>作業内容はそのまま残る</strong>という大きな利点があります。ただし、次に述べる代償があります。',
+        en: 'Upload the recovery file to the cloud as a new cloud model and swap it in for the original. The big advantage is that <strong>your work survives intact</strong>. There is, however, a price — described next.',
+        zh: '把修复文件上传到云端作为新的云模型，并替换原模型。最大的优点是<strong>工作内容原封不动地保留</strong>。但也有下文所述的代价。'
+    },
+    'rec-h2-links': {
+        ja: 'なぜ「作り直し」を選ばなかったか — リンクが外れるという代償',
+        en: 'Why I did not rebuild — the price is broken links',
+        zh: '为何没有选择“重建” —— 代价是链接断开'
+    },
+    'rec-links-p1': {
+        ja: '一見すると選択肢2がきれいです。作業をやり直さなくて済むのですから。筆者も最初はこちらを検討しました。しかし、<strong>リンクモデルを多数抱えたプロジェクトでは危険</strong>だと判断して見送りました。',
+        en: 'At first glance Option 2 looks cleaner — no work to redo. I considered it first too, but decided against it because <strong>it is dangerous in a project carrying many linked models</strong>.',
+        zh: '乍看之下方案 2 更干净，因为不必重做工作。笔者最初也考虑过，但判断<strong>在拥有大量链接模型的项目中很危险</strong>，因而放弃。'
+    },
+    'rec-links-p2': {
+        ja: '理由は、<strong>クラウドモデルのリンクが「フォルダ階層＋ファイル名」だけで管理されていない</strong>ことです。クラウドモデルにはそれぞれ固有の識別情報があり、リンクはそれを頼りに結び付いています。',
+        en: 'The reason is that <strong>links between cloud models are not managed by folder path and file name alone</strong>. Each cloud model carries its own identifier, and links are bound to that identifier.',
+        zh: '原因在于，<strong>云模型的链接并非仅凭“文件夹层级＋文件名”来管理</strong>。每个云模型都有各自的标识信息，链接正是依靠它建立关联。'
+    },
+    'rec-links-p3': {
+        ja: 'つまり、<strong>まったく同じ名前で、まったく同じ場所に新しいクラウドモデルを作って置き換えても、Revit から見れば「別のモデル」</strong>です。リンクは外れます。',
+        en: 'In other words, <strong>even if you create the new cloud model with exactly the same name in exactly the same location, Revit still sees "a different model"</strong>. The links break.',
+        zh: '也就是说，<strong>即使以完全相同的名称、在完全相同的位置创建新的云模型并替换，在 Revit 看来仍是“另一个模型”</strong>。链接会断开。'
+    },
+    'rec-links-h3': { ja: 'リンクが外れると何が失われるか', en: 'What you lose when links break', zh: '链接断开会失去什么' },
+    'rec-links-th1': { ja: '失われるもの', en: 'What is lost', zh: '失去的内容' },
+    'rec-links-th2': { ja: '確度', en: 'Certainty', zh: '确定程度' },
+    'rec-links-r1': { ja: 'リンク先の要素を参照していた<strong>タグ</strong>', en: '<strong>Tags</strong> that referenced elements in the link', zh: '引用链接图元的<strong>标记</strong>' },
+    'rec-links-r1b': { ja: '確実に失われる', en: 'Certainly lost', zh: '必定失去' },
+    'rec-links-r2': { ja: 'リンク先の要素を参照していた<strong>寸法</strong>', en: '<strong>Dimensions</strong> that referenced elements in the link', zh: '引用链接图元的<strong>尺寸标注</strong>' },
+    'rec-links-r2b': { ja: '確実に失われる', en: 'Certainly lost', zh: '必定失去' },
+    'rec-links-r3': { ja: '「リンクビュー別」で表示を指定していた<strong>ビュー設定</strong>', en: '<strong>View settings</strong> configured "by linked view"', zh: '按“链接视图”指定显示的<strong>视图设置</strong>' },
+    'rec-links-r3b': { ja: '失われる恐れがある（筆者は未検証）', en: 'May be lost (not verified by the author)', zh: '可能失去（笔者未验证）' },
+    'rec-links-warn': {
+        ja: '⚠️ タグと寸法は、<strong>参照先を見失った時点で消えます</strong>。しかも「消えた」という警告が図面のあちこちに出るわけではないので、<strong>気づかないまま出図してしまう危険</strong>があります。リンクを張り直しても、いったん消えたタグ・寸法は自動では戻りません。',
+        en: '⚠️ Tags and dimensions <strong>vanish the moment they lose their reference</strong>. There is no warning plastered across the drawing, so <strong>you risk issuing sheets without noticing</strong>. Re-establishing the link does not bring back tags and dimensions that have already gone.',
+        zh: '⚠️ 标记和尺寸标注会在<strong>失去引用对象的瞬间消失</strong>。而且图纸上不会到处显示“已消失”的警告，因此<strong>存在毫无察觉就出图的风险</strong>。即使重新建立链接，已经消失的标记和尺寸也不会自动恢复。'
+    },
+    'rec-links-h3b': { ja: 'どちらを選ぶかの目安', en: 'How to choose between them', zh: '如何选择的判断标准' },
+    'rec-choose-th1': { ja: '状況', en: 'Situation', zh: '情况' },
+    'rec-choose-th2': { ja: '向いている方法', en: 'Suitable approach', zh: '适合的方法' },
+    'rec-choose-r1': { ja: 'リンクモデルが無い／ごく少数', en: 'No linked models, or very few', zh: '没有链接模型／数量极少' },
+    'rec-choose-r1b': { ja: '選択肢2（作り直し）も現実的', en: 'Option 2 (rebuild) is realistic', zh: '方案 2（重建）也现实可行' },
+    'rec-choose-r2': { ja: 'リンクが多い／タグ・寸法を多用している', en: 'Many links, or heavy use of tags and dimensions', zh: '链接多／大量使用标记与尺寸' },
+    'rec-choose-r2b': { ja: '選択肢1（作業の再現）', en: 'Option 1 (redo the work)', zh: '方案 1（重做工作）' },
+    'rec-choose-r3': { ja: '未同期の作業量が数時間以内', en: 'A few hours of unsynchronized work at most', zh: '未同步的工作量在数小时以内' },
+    'rec-choose-r3b': { ja: '選択肢1（結果的に早い）', en: 'Option 1 (faster in the end)', zh: '方案 1（结果更快）' },
+    'rec-choose-r4': { ja: '未同期の作業量が膨大', en: 'An enormous amount of unsynchronized work', zh: '未同步的工作量极其庞大' },
+    'rec-choose-r4b': {
+        ja: '選択肢2を検討（リンク・タグ・寸法の復旧を覚悟する）',
+        en: 'Consider Option 2 (be ready to restore links, tags and dimensions)',
+        zh: '考虑方案 2（做好恢复链接、标记、尺寸的心理准备）'
+    },
+    'rec-links-p4': {
+        ja: '筆者のケースはリンクモデルが多数あったため、<strong>選択肢1</strong>を採りました。決め手は作業量の比較ではなく、<strong>「やり直す時間は読めるが、リンク・タグ・寸法を復旧する時間は読めない」</strong>という点です。出図が迫っている状況で、終わりの見えない復旧作業に入るのは避けたいところでした。',
+        en: 'My project had many linked models, so I took <strong>Option 1</strong>. The deciding factor was not the amount of work but this: <strong>redoing the work takes a predictable amount of time, whereas restoring links, tags and dimensions does not</strong>. With an issue date looming, I did not want to start work whose end I could not see.',
+        zh: '笔者的项目有大量链接模型，因此选择了<strong>方案 1</strong>。决定因素不是工作量的比较，而是<strong>“重做的时间可以预估，而恢复链接、标记、尺寸的时间无法预估”</strong>。在出图临近的情况下，实在不想开始一项看不到尽头的恢复工作。'
+    },
+    'rec-fig6': {
+        ja: '「管理」→「リンクを管理」でリンクの状態を確認できる',
+        en: 'Manage → Manage Links lets you check the state of each link',
+        zh: '通过“管理”→“管理链接”可确认链接状态'
+    }
+};
+
+translations.recoveryArticle2 = {
+    'rec-h2-steps': { ja: '実際の手順（選択肢1で復旧する）', en: 'The actual procedure (recovering with Option 1)', zh: '实际步骤（用方案 1 恢复）' },
+    'rec-step1-h': { ja: 'ステップ1：修復ファイルを退避し、参照用として開く', en: 'Step 1: set the recovery file aside and open it for reference', zh: '步骤 1：备份修复文件，并作为参照打开' },
+    'rec-step1-p1': {
+        ja: 'デスクトップの修復ファイルを作業用フォルダにコピーします。<strong>原本には触らない</strong>のが鉄則です。',
+        en: 'Copy the recovery file from the desktop into a working folder. The iron rule is <strong>never touch the original</strong>.',
+        zh: '把桌面上的修复文件复制到工作文件夹。<strong>绝不动原件</strong>是铁律。'
+    },
+    'rec-step1-p2': {
+        ja: 'コピーしたほうを開いて、参照用にします。<strong>誤って編集しないよう、開いたら触らない</strong>と決めておくと安全です。元のクラウドモデルと見比べるので、可能ならディスプレイを2台使うか、Revit をもう1つ起動して並べると作業が進みます。',
+        en: 'Open the copy and use it purely for reference. It is safer to decide up front that <strong>once opened, you will not touch it</strong>. You will be comparing it against the original cloud model, so two monitors — or a second instance of Revit side by side — will speed things up considerably.',
+        zh: '打开复制件作为参照。事先决定<strong>“打开后就不再操作”</strong>会更安全。由于要与原云模型对照，如果条件允许，使用双显示器或再启动一个 Revit 并排摆放，效率会高得多。'
+    },
+    'rec-step2-h': { ja: 'ステップ2：何をやり直すのかを洗い出す', en: 'Step 2: work out exactly what has to be redone', zh: '步骤 2：梳理出到底要重做什么' },
+    'rec-step2-p1': {
+        ja: '記憶だけを頼りにすると必ず漏れます。次のような方法で機械的に差分を拾うと確実です。',
+        en: 'Relying on memory alone guarantees that something will slip through. Pick up the differences mechanically instead.',
+        zh: '仅凭记忆必然会有遗漏。用下列方法机械地找出差异才可靠。'
+    },
+    'rec-step2-li1': {
+        ja: '<strong>集計表を両方で開いて見比べる</strong> — 要素の増減が数で分かるので、追加・削除の見落としを防げます',
+        en: '<strong>Open the same schedule in both files and compare</strong> — counts reveal what was added or removed, so nothing slips past',
+        zh: '<strong>在两边都打开明细表进行对照</strong> —— 图元增减以数字呈现，可防止漏掉新增与删除'
+    },
+    'rec-step2-li2': {
+        ja: '<strong>触ったビュー・階を書き出す</strong> — 先に紙やメモに列挙してから作業に入ります',
+        en: '<strong>List the views and levels you touched</strong> — write them down before you start working',
+        zh: '<strong>写出动过的视图与楼层</strong> —— 先在纸上或备忘录中列出，再开始作业'
+    },
+    'rec-step2-li3': {
+        ja: '<strong>図面を並べて目視で比較する</strong> — 両方から同じビューを PDF に書き出せば、差分を重ねて確認できます',
+        en: '<strong>Compare the sheets side by side</strong> — export the same view to PDF from both files and you can overlay the differences',
+        zh: '<strong>并排目视比较图纸</strong> —— 从两边导出相同视图的 PDF，即可叠加确认差异'
+    },
+    'rec-fig7': {
+        ja: '集計表を両方で出して見比べると、要素の増減を数で追える',
+        en: 'Opening the same schedule in both files lets you track additions and deletions by the numbers',
+        zh: '在两边打开明细表对照，可以用数字追踪图元的增减'
+    },
+    'rec-step2-tool': {
+        ja: '💡 同じビューを両方から PDF に書き出しておけば、<a href="../pdf_compare.html">PDF比較ツール</a>で重ね合わせて差分を色分け表示できます。目視で追うより確実です。',
+        en: '💡 Export the same view to PDF from both files and the <a href="../pdf_compare.html">PDF Compare Tool</a> will overlay them and colour-code the differences — far more reliable than chasing them by eye.',
+        zh: '💡 从两边导出相同视图的 PDF 后，可用 <a href="../pdf_compare.html">PDF 比较工具</a>叠加并用颜色标出差异，比肉眼查找可靠得多。'
+    },
+    'rec-step3-h': { ja: 'ステップ3：元のクラウドモデルを開いて作業を再現する', en: 'Step 3: open the original cloud model and redo the work', zh: '步骤 3：打开原云模型并重做工作' },
+    'rec-step3-p': {
+        ja: '洗い出したリストに沿って作業を再現します。ここで<strong>元のモデル側に他のメンバーの変更が入っていないか</strong>も確認しておきます。入っていれば、その上に自分の作業を重ねる形になります。',
+        en: 'Work through the list you made. Check at this point <strong>whether other members have made changes to the original model</strong>. If they have, your work goes on top of theirs.',
+        zh: '按照梳理出的清单重做工作。此时也要确认<strong>原模型中是否已有其他成员的修改</strong>。若有，你的工作就要叠加在其之上。'
+    },
+    'rec-step4-h': { ja: 'ステップ4：こまめに同期する', en: 'Step 4: synchronize often', zh: '步骤 4：勤同步' },
+    'rec-step4-p': {
+        ja: '復旧作業の最中にもう一度落ちたら目も当てられません。<strong>ひと区切りついたら同期</strong>を徹底します。同じエラーが再発する場合は、モデル自体に問題を抱えている可能性があるので、監査（開くときの「監査」オプション）も検討してください。',
+        en: 'Crashing again in the middle of recovery does not bear thinking about. <strong>Synchronize at every natural break.</strong> If the same error keeps coming back, the model itself may be carrying a problem — consider opening it with the Audit option.',
+        zh: '在恢复过程中再次崩溃将不堪设想。<strong>每告一段落就同步</strong>，务必坚持。若同一错误反复出现，模型本身可能存在问题，可考虑使用打开时的“审核”选项。'
+    },
+    'rec-fig8': {
+        ja: '復旧できたら同期。以降もひと区切りごとに同期する習慣をつける',
+        en: 'Synchronize once recovered — and make a habit of doing so at every break from then on',
+        zh: '恢复后立即同步。此后也要养成每告一段落就同步的习惯'
+    },
+    'rec-h2-prevent': { ja: '同じ目に遭わないために', en: 'How to avoid going through this again', zh: '为了不再遭遇同样的事' },
+    'rec-prevent-p': {
+        ja: 'この経験から、運用として次の5つを決めました。どれも当たり前のことですが、痛い目に遭うまでは徹底できていませんでした。',
+        en: 'After this experience I settled on five working rules. None of them is clever — but I had not been keeping to them until it hurt.',
+        zh: '经过这次经历，我确定了以下五条操作规则。都是理所当然的事，但在吃苦头之前一直没能坚持。'
+    },
+    'rec-prev-1-h': { ja: '同期の間隔を短くする', en: 'Shorten the interval between synchronizations', zh: '缩短同步的间隔' },
+    'rec-prev-1-p': {
+        ja: '「切りのいいところまで」ではなく、<strong>30分〜1時間で機械的に同期</strong>します。失うのは最大でもその時間分です。',
+        en: 'Not "when I reach a good stopping point" but <strong>mechanically, every 30 to 60 minutes</strong>. That caps what you can lose.',
+        zh: '不是“做到告一段落再说”，而是<strong>每 30 分钟到 1 小时机械地同步一次</strong>。最多也只会损失那段时间的工作。'
+    },
+    'rec-prev-2-h': { ja: '重い操作の前後で必ず同期する', en: 'Always synchronize before and after heavy operations', zh: '在繁重操作前后务必同步' },
+    'rec-prev-2-p': {
+        ja: '大量のコピー、リンクの読み込み・入れ替え、一括変更などの前後は<strong>落ちやすい</strong>タイミングです。着手前に同期しておけば、最悪でもその直前まで戻れます。',
+        en: 'Bulk copying, loading or swapping links, mass edits — these are the moments when Revit is <strong>most likely to fall over</strong>. Synchronize before you start and, at worst, you fall back to that point.',
+        zh: '大量复制、载入或替换链接、批量修改等操作前后，是<strong>最容易崩溃</strong>的时机。着手前先同步，最坏也只会退回到那一刻。'
+    },
+    'rec-prev-3-h': { ja: '「ローカルファイルへ保存」を習慣にする', en: 'Make "Save to local file" a habit', zh: '养成“保存到本地文件”的习惯' },
+    'rec-prev-3-p': {
+        ja: '同期ほど重くないので、こまめに実行できます。<strong>ローカル保存が通っていれば「選択肢0」が使える</strong>可能性が出てきます。これが効くかどうかで復旧の手間が桁違いに変わります。',
+        en: 'It is far lighter than a full synchronization, so you can do it frequently. <strong>If the local save went through, Option 0 becomes available</strong> — and whether it does changes the recovery effort by an order of magnitude.',
+        zh: '它比同步轻得多，可以频繁执行。<strong>只要本地保存成功，就有可能使用“方案 0”</strong>。这一点是否奏效，会让恢复的工作量相差一个数量级。'
+    },
+    'rec-prev-4-h': { ja: 'エラーが出たら、必ず修復ファイルを保存する', en: 'When the error appears, always save the recovery file', zh: '出现错误时，务必保存修复文件' },
+    'rec-prev-4-p': {
+        ja: '動揺してダイアログを閉じてしまうと、作業内容は完全に失われます。<strong>保存先のパスも控えておく</strong>と、後で探し回らずに済みます。',
+        en: 'Panicking and dismissing the dialog loses your work completely. <strong>Note down the save path too</strong>, and you will not have to hunt for it afterwards.',
+        zh: '若因慌乱关闭对话框，工作内容将彻底丢失。<strong>顺便记下保存路径</strong>，事后就不必四处翻找。'
+    },
+    'rec-prev-5-h': { ja: 'クラウド側のバージョン履歴を把握しておく', en: 'Know where the cloud version history lives', zh: '掌握云端的版本历史' },
+    'rec-prev-5-p': {
+        ja: 'BIM 360 / Autodesk Construction Cloud にはバージョン履歴があり、過去の状態に戻すことができます。<strong>今回の目的（新しい作業を反映する）とは逆方向</strong>ですが、「モデルが壊れた」ときの逃げ道として、どこから辿れるかを普段から知っておくと安心です。',
+        en: 'BIM 360 / Autodesk Construction Cloud keeps a version history you can roll back to. That is <strong>the opposite direction from what we wanted here</strong> (pushing new work up), but as an escape route when a model goes bad, it pays to know where to find it before you need it.',
+        zh: 'BIM 360 / Autodesk Construction Cloud 保有版本历史，可以回退到过去的状态。这与本次的目的（把新工作反映上去）<strong>方向相反</strong>，但作为“模型损坏”时的退路，平时就知道从哪里查看会更安心。'
+    },
+    'rec-h2-summary': { ja: 'まとめ', en: 'Summary', zh: '总结' },
+    'rec-sum1': {
+        ja: 'クラウドワークシェアリングの修復ファイルは、<strong>クラウドとの紐付けを失った単独のモデル</strong>。そのままでは元のクラウドモデルへ同期できない',
+        en: 'A recovery file from cloud worksharing is <strong>a standalone model that has lost its tie to the cloud</strong>, and cannot be synchronized back to the original as it stands',
+        zh: '云协作的修复文件是<strong>失去与云端关联的独立模型</strong>，无法直接同步回原云模型'
+    },
+    'rec-sum2': {
+        ja: 'まず<strong>「未同期の変更を保持したまま開けるか」</strong>を確認する。これが使えれば最短で終わる',
+        en: 'First check whether you can <strong>open the model keeping the unsynchronized changes</strong>. If you can, you are done in minutes',
+        zh: '首先确认能否<strong>保留未同步更改打开模型</strong>。若可行，这是最短的路径'
+    },
+    'rec-sum3': {
+        ja: '修復ファイルから<strong>作り直して置き換えるとリンクが外れ</strong>、リンク先を参照していたタグ・寸法が失われる',
+        en: '<strong>Rebuilding from the recovery file and replacing the original breaks the links</strong>, and the tags and dimensions that referenced them are lost',
+        zh: '<strong>用修复文件重建并替换会导致链接断开</strong>，引用链接的标记与尺寸将丢失'
+    },
+    'rec-sum4': {
+        ja: 'リンクモデルが多いプロジェクトでは、<strong>作業をやり直すほうが結果的に早く、確実</strong>なことが多い',
+        en: 'In a project with many linked models, <strong>redoing the work is usually faster and safer in the end</strong>',
+        zh: '在链接模型众多的项目中，<strong>重做工作往往反而更快、更可靠</strong>'
+    },
+    'rec-sum5': {
+        ja: '最大の防御は<strong>同期の間隔を短くすること</strong>。失う時間を、あらかじめ自分で決めておく',
+        en: 'The best defence is <strong>a short synchronization interval</strong> — decide in advance how much time you are willing to lose',
+        zh: '最好的防御是<strong>缩短同步间隔</strong>。事先决定自己愿意损失多少时间'
+    },
+    'rec-disclaimer': {
+        ja: '⚠️ この記事は筆者が実際に遭遇した事例をもとにした記録です。Revit のバージョンやプロジェクトの構成によって挙動が異なる場合があります。<strong>重要なモデルを操作する前には必ずバックアップを取り</strong>、判断に迷う場合は Autodesk のサポート情報（「修復不可能なエラー」「クラウド モデル 復元」などで検索）もあわせてご確認ください。表中の「未検証」と記した項目は、筆者が実地で確認できていない推測です。',
+        en: '⚠️ This article records a case the author actually encountered. Behaviour may differ depending on your Revit version and project setup. <strong>Always take a backup before operating on an important model</strong>, and when in doubt consult Autodesk support material as well (search for terms such as "unrecoverable error" or "restore cloud model"). Items marked "not verified" in the tables are the author’s inference, not something confirmed in practice.',
+        zh: '⚠️ 本文是基于笔者实际遭遇的案例所作的记录。根据 Revit 版本与项目构成，行为可能有所不同。<strong>操作重要模型前务必先备份</strong>，判断困难时请一并查阅 Autodesk 的支持信息（可用“不可恢复的错误”“恢复云模型”等关键词检索）。表中标注“未验证”的项目，是笔者尚未实地确认的推测。'
+    },
+    'rec-h2-faq': { ja: 'よくある質問', en: 'FAQ', zh: '常见问题' },
+    'rec-faq-q1': {
+        ja: '修復ファイルを開いて「名前を付けて保存」でクラウドに保存すれば、同期できますか？',
+        en: 'If I open the recovery file and "Save As" to the cloud, can I then synchronize?',
+        zh: '打开修复文件后用“另存为”保存到云端，就能同步吗？'
+    },
+    'rec-faq-a1': {
+        ja: 'それは<strong>新しいクラウドモデルを作る操作</strong>（選択肢2）になります。元のクラウドモデルが更新されるわけではありません。同じ名前・同じ場所に保存しても別のモデルとして扱われるため、リンクの張り直しが発生します。',
+        en: 'That is <strong>the act of creating a new cloud model</strong> (Option 2). It does not update the original. Even saved under the same name in the same place it is treated as a different model, so the links have to be re-established.',
+        zh: '那属于<strong>创建新云模型的操作</strong>（方案 2），并不会更新原云模型。即使以相同名称保存到相同位置，也会被视为另一个模型，因此需要重新建立链接。'
+    },
+    'rec-faq-q2': { ja: 'リンクが外れたかどうかは、どう確認しますか？', en: 'How can I tell whether a link has broken?', zh: '如何确认链接是否断开？' },
+    'rec-faq-a2': {
+        ja: '「管理」→「リンクを管理」でリンクの状態を確認します。あわせて、<strong>タグや寸法が消えていないかを主要なビューで目視確認</strong>してください。リンクの状態が正常に見えても、いったん参照を失ったタグ・寸法は戻っていません。',
+        en: 'Check the state of each link under Manage → Manage Links. Alongside that, <strong>visually check your key views for missing tags and dimensions</strong>. Even when the links look healthy, anything that already lost its reference has not come back.',
+        zh: '通过“管理”→“管理链接”确认各链接的状态。同时请<strong>在主要视图中目视检查标记与尺寸是否消失</strong>。即使链接状态看起来正常，一旦失去引用的标记与尺寸也不会自行恢复。'
+    },
+    'rec-faq-q3': { ja: '未同期の作業がどれくらいあるか、事前に分かりますか？', en: 'Can I tell in advance how much unsynchronized work I have?', zh: '能事先知道有多少未同步的工作吗？' },
+    'rec-faq-a3': {
+        ja: '正確には分かりません。最後に同期した時刻は確認できますが、その間にどれだけ作業したかは自分の記憶に頼ることになります。<strong>だからこそ、同期の間隔を短く保つことが最大の防御</strong>になります。',
+        en: 'Not precisely. You can see when you last synchronized, but how much you did since then comes down to memory. <strong>Which is exactly why keeping the interval short is the best defence.</strong>',
+        zh: '无法精确得知。可以查看最后一次同步的时间，但期间做了多少工作只能靠记忆。<strong>正因如此，保持较短的同步间隔才是最好的防御。</strong>'
+    },
+    'rec-faq-q4': { ja: '社内サーバーの中央ファイルを使っている場合も同じですか？', en: 'Does the same apply when using a central file on an in-house server?', zh: '使用公司服务器上的中心文件时也一样吗？' },
+    'rec-faq-a4': {
+        ja: '事情が異なります。ファイルベースのワークシェアリングでは、修復ファイルが中央ファイルのパス情報を保持していることがあり、対処の選択肢が変わります。この記事は<strong>クラウドワークシェアリング（BIM 360 / ACC）</strong>のケースを扱っています。',
+        en: 'The situation differs. Under file-based worksharing the recovery file may retain the path to the central file, which changes your options. This article covers the <strong>cloud worksharing (BIM 360 / ACC)</strong> case.',
+        zh: '情况有所不同。在基于文件的协作中，修复文件可能保留中心文件的路径信息，应对方案会有变化。本文讨论的是<strong>云协作（BIM 360 / ACC）</strong>的情况。'
+    },
+    'rec-h2-related': { ja: '関連ページ', en: 'Related pages', zh: '相关页面' },
+    'rec-rel1': {
+        ja: '<a href="../pdf_compare.html">PDF比較ツール</a> — 復旧前後の図面を重ねて、差分を色分けで確認できます（無料・ブラウザ完結）',
+        en: '<a href="../pdf_compare.html">PDF Compare Tool</a> — overlay the sheets from before and after recovery and see the differences colour-coded (free, entirely in your browser)',
+        zh: '<a href="../pdf_compare.html">PDF 比较工具</a> —— 叠加恢复前后的图纸，用颜色确认差异（免费、浏览器内完成）'
+    },
+    'rec-rel2': {
+        ja: '<a href="pdf-compare-guide.html">図面PDFを比較して差分を見つける方法</a> — 重ね合わせの手順と色分けの読み方',
+        en: '<a href="pdf-compare-guide.html">How to compare drawing PDFs and spot the differences</a> — the overlay procedure and how to read the colours',
+        zh: '<a href="pdf-compare-guide.html">比较图纸 PDF 并找出差异的方法</a> —— 叠加步骤与颜色的解读方式'
+    },
+    'rec-rel3': {
+        ja: '<a href="../addins.html">28 Tools アドイン（無料）</a> — 作図を効率化する Revit アドイン',
+        en: '<a href="../addins.html">28 Tools add-ins (free)</a> — Revit add-ins that speed up drafting',
+        zh: '<a href="../addins.html">28 Tools 插件（免费）</a> —— 提升绘图效率的 Revit 插件'
+    },
+    'rec-back-tips': { ja: '← 使い方ガイド一覧へ', en: '← Back to the guide index', zh: '← 返回使用指南列表' }
+};
+
     Object.assign(translations,
         translations.tipsHatch,
         translations.tipsPdf,
         translations.tipsNav,
         translations.toolAbout,
         translations.toolAboutTools,
+        translations.recoveryArticle,
+        translations.recoveryArticle2,
         translations.tipsExcel,
         translations.common,
         translations.aiMinutesPage,
