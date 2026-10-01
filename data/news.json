@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30T03:07:13.669552",
+  "lastUpdated": "2026-10-01T03:13:50.959595",
   "articles": [
     {
       "title": "Malme、お弁当注文アプリ「もぐぽち」で大成建設の現場事務の負担を軽減した事例を公開",
@@ -112,23 +112,23 @@
       "language": "ja"
     },
     {
-      "title": "建築基準法の道路とは？42条の種類・2m接道義務・私道の扱い・調べ方をわかりやすく解説【2026年版】",
-      "link": "https://news.build-app.jp/article/36460/",
-      "description": "土地に家を建てられるかどうかは、その土地が「建築基準法上の道路」に接しているかどうかで決まります。見た目が立派な舗装道路でも、法律上の道路で...",
-      "publishedDate": "Thu, 24 Sep 2026 22:00:00 +0000",
+      "title": "国土交通省が8月の建設受注を公表、受注額1兆4,388億円で公共工事の大幅増が下支え",
+      "link": "https://news.build-app.jp/article/42899/",
+      "description": "国土交通省は2026年9月30日、令和8年8月分の建設工事受注動態統計調査(大手50社調査)の結果を公表しました。受注総額は前年の同じ月を下...",
+      "publishedDate": "Thu, 01 Oct 2026 03:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/07/23e78856b6f8d418c320c5cb3bf4beeb-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/11/YTTMuY3TMcqZ14f1669058236_1669058261-130x82.jpg",
       "language": "ja"
     },
     {
-      "title": "【2026年最新】主任技術者とは？資格要件・専任基準・監理技術者との違いを解説",
-      "link": "https://news.build-app.jp/article/42828/",
-      "description": "主任技術者を配置すれば足りる工事でも、下請契約の総額が増えると監理技術者への変更が必要です。請負金額が基準を超えれば、現場ごとの専任も求めら...",
-      "publishedDate": "Sun, 27 Sep 2026 05:28:12 +0000",
+      "title": "国土交通省が令和8年8月分の建築着工統計を公表、新設住宅は前年同月比6.1％増の63,974戸",
+      "link": "https://news.build-app.jp/article/42894/",
+      "description": "国土交通省は令和8年9月30日、建築着工統計調査の令和8年8月分を政府統計の総合窓口「e-Stat」で公表しました。8月の新設住宅着工戸数は...",
+      "publishedDate": "Thu, 01 Oct 2026 01:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/35285703_m-130x95.jpg",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/housing_statistics_august-130x74.jpg",
       "language": "ja"
     },
     {
@@ -182,6 +182,16 @@
       "language": "ja"
     },
     {
+      "title": "【2026年最新版】建設業法第2条第1項とは？｜建設工事の定義・別表第一29業種・修繕工事の扱いをわかりやすく解説",
+      "link": "https://news.build-app.jp/article/38489/",
+      "description": "建設業に関わる実務で、必ず登場するのが「建設業法第2条第1項」です。しかし、「どこまでが建設工事に当たるのか」「修繕工事は対象なのか」「許可...",
+      "publishedDate": "Mon, 28 Sep 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/826bc26d512b2ae6934c1cd89c956ef2-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "国土交通省が公表、建設技能労働者の8月不足率1.3%に拡大 関東で人手不足が顕著に",
       "link": "https://news.build-app.jp/article/42836/",
       "description": "国土交通省は、建設現場で働く技能労働者の需給状況をまとめた「建設労働需給調査結果」の令和8年8月分を公表しました。型わく工や左官、電工など建...",
@@ -230,16 +240,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "シーティーエス、担い手不足の建設現場向けにAIエージェント「SAPマインド」提供開始",
-      "link": "https://news.build-app.jp/article/42816/",
-      "description": "建設ICTの専門企業である株式会社シーティーエス（本社：長野県上田市、代表取締役 社長執行役員：横島連、以下CTS）は、2026年10月1日...",
-      "publishedDate": "Fri, 25 Sep 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/sapmind_aiagent-130x87.webp",
-      "language": "ja"
     },
     {
       "title": "日本SI業界2030年——人月モデル崩壊は本当か",
