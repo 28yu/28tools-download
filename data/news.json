@@ -1,6 +1,16 @@
 {
-  "lastUpdated": "2026-10-01T03:13:50.959595",
+  "lastUpdated": "2026-10-02T03:15:12.833098",
   "articles": [
+    {
+      "title": "コンクリート打設とは？｜手順・時間制限・注意点を建設コンサルタントが解説",
+      "link": "https://news.build-app.jp/article/42901/",
+      "description": "コンクリート打設は、構造物の強度と耐久性を決める、やり直しのきかない工程です。 そこでこの記事では、JASS 5（建築工事標準仕様書）と土木...",
+      "publishedDate": "Wed, 30 Sep 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/905e5db1f554b88886ca874a69e2a871-130x82.png",
+      "language": "ja"
+    },
     {
       "title": "Malme、お弁当注文アプリ「もぐぽち」で大成建設の現場事務の負担を軽減した事例を公開",
       "link": "https://news.build-app.jp/article/42870/",
@@ -22,16 +32,6 @@
       "language": "ja"
     },
     {
-      "title": "【後編】ゼネコン目線で見る注目展示3選｜専用アプリ不要のDX化サービス_株式会社 Arch／図面特化AI技術_株式会社KK Generation／暗黙知や業務ノウハウをデジタル化_株式会社Arent",
-      "link": "https://news.build-app.jp/article/42521/",
-      "description": "2026年8月26日（水）～28日（金）に開催された建設DX展［大阪］は、建設業界のDXをテーマとした専門展示会です。当サイトでは会場を取材...",
-      "publishedDate": "Tue, 29 Sep 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/7767e13893873d60f48a31daff151f7e-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡(第十四回)/技能継承にAIを活用する大和ハウス工業と設計初期業務を効率化する大林組の事例｜深堀り取材【毎月3回更新】",
       "link": "https://news.build-app.jp/article/42804/",
       "description": "建設業における生成AIの援用が加速化しているのと合わせて援用の高度化が進行している。当初は、人手の削減や作業効率の改善を目的としていたが、直...",
@@ -39,6 +39,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/3d852e7065945b02ae2c79cbecb80fc8-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【後編】ゼネコン目線で見る注目展示3選｜専用アプリ不要のDX化サービス_株式会社 Arch／図面特化AI技術_株式会社KK Generation／暗黙知や業務ノウハウをデジタル化_株式会社Arent",
+      "link": "https://news.build-app.jp/article/42521/",
+      "description": "2026年8月26日（水）～28日（金）に開催された建設DX展［大阪］は、建設業界のDXをテーマとした専門展示会です。当サイトでは会場を取材...",
+      "publishedDate": "Tue, 29 Sep 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/7767e13893873d60f48a31daff151f7e-130x82.png",
       "language": "ja"
     },
     {
@@ -192,26 +202,6 @@
       "language": "ja"
     },
     {
-      "title": "国土交通省が公表、建設技能労働者の8月不足率1.3%に拡大 関東で人手不足が顕著に",
-      "link": "https://news.build-app.jp/article/42836/",
-      "description": "国土交通省は、建設現場で働く技能労働者の需給状況をまとめた「建設労働需給調査結果」の令和8年8月分を公表しました。型わく工や左官、電工など建...",
-      "publishedDate": "Mon, 28 Sep 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/shortage_august2026-130x64.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、9月の主要建設資材需給・価格動向調査で全対象資材の横ばいと均衡を確認",
-      "link": "https://news.build-app.jp/article/42833/",
-      "description": "国土交通省は2026年9月25日、主要建設資材需給・価格動向調査（令和8年9月1日〜5日に実施）の結果を公表しました。生コンクリートや鋼材、...",
-      "publishedDate": "Mon, 28 Sep 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/04/rF1zZ6TSxbh4E141650892123-130x87.jpg",
-      "language": "ja"
-    },
-    {
       "title": "IDS survey results",
       "link": "https://www.buildingsmart.org/ids-survey-results-2026/",
       "description": "IDS survey results: users confirm the value of IDS 1.0 and call for IDS 1.1 and software certification buildingSMART International has completed a community survey on the Information Delivery Specific...",
@@ -300,6 +290,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "奥村組が日本初の実用免震ビルを揺らす、竣工40年で積層ゴムの性能を実測し長期変化を検証",
+      "link": "https://news.build-app.jp/article/42926/",
+      "description": "奥村組は、1986年に竣工した日本初の実用免震ビル「奥村組技術研究所管理棟」を実際に揺らし、免震装置の性能変化を調べる「自由振動実験」を20...",
+      "publishedDate": "Fri, 02 Oct 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/seismic_isolation_experiment-130x48.png",
+      "language": "ja"
     }
   ]
 }
