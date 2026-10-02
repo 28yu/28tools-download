@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-01T06:56:32.834878",
+  "lastUpdated": "2026-10-02T06:46:57.698865",
   "articles": [
     {
       "title": "The Download: OpenAI’s chief research officer explains its hacking response",
@@ -167,50 +167,6 @@
       "language": "ja"
     },
     {
-      "title": "Antigravity 2.0とは？エージェントファーストで開発が激変！Googleツールの使い方・料金・特徴を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/antigravity-2-0/",
-      "description": "2026年5月、GoogleからAIエージェントファーストの開発プラットフォーム「Antigravity 2.0」が発表されました。Antigravity 2.0は、複数のAIエージェントを動かして開発を進められる、Go […]",
-      "publishedDate": "Wed, 30 Sep 2026 05:32:38 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Antigravity-2.0-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【開催速報】「AI博覧会 Fukuoka 2026」が開幕！初開催の福岡に最新AIソリューションが集結",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aihaku-fukuoka2026-report01/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年9月30日（水）・10月1日（木）の2日間、博多国際展示場＆カンファレンスセンターにて「AI博覧会 Fukuoka 202 […]",
-      "publishedDate": "Wed, 30 Sep 2026 05:31:32 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/fukuoka2026-report01_000.png",
-      "language": "ja"
-    },
-    {
-      "title": "全世界の男子待望！生成AIでエロはどこまで可能？ハイパーポルノの仕組みと法的リスクを解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/hyperporno-dig/",
-      "description": "生成AIの進化により、性的な画像や動画も技術的には作れるようになりました。ただし、技術的に作れることと、規約や法律上許されることは別です。実在人物の無断加工や未成年を性的に描写する表現は、重大な権利侵害や違法行為につなが […]",
-      "publishedDate": "Wed, 30 Sep 2026 04:14:06 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/hyperporno-dig_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "AGI（汎用人工知能）とは？人間を超えるAIはいつ現れるのか！従来AI・ASIとの違いを徹底解説！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/agi/",
-      "description": "2026年9月3日、OpenAIは「GPT-6 Astra」を発表し、社長のGreg Brockman氏は「AGI時代へようこそ」と語りました。AGI（汎用人工知能）とは、人間のように幅広い課題を状況に応じて判断できるA […]",
-      "publishedDate": "Wed, 30 Sep 2026 03:47:52 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AGI_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
       "titleJa": "Open TTS Leaderboard: 多言語テキスト読み上げおよび音声クローン作成のスケーラブルな評価",
       "link": "https://huggingface.co/blog/open-tts-leaderboard",
@@ -238,39 +194,6 @@
       "link": "https://openai.com/index/two-years-of-openai-academy",
       "description": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
       "publishedDate": "Wed, 23 Sep 2026 16:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-      "titleJa": "OpenAI、民間防衛のためにサイバーアクセスをウクライナに拡大",
-      "link": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-      "description": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
-      "publishedDate": "Wed, 23 Sep 2026 13:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How invideo improves color grading 3x with GPT‑6 Astra",
-      "titleJa": "GPT‑6 Astra を使用して invideo がカラー グレーディングを 3 倍改善する方法",
-      "link": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
-      "description": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.",
-      "publishedDate": "Wed, 23 Sep 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "titleJa": "Ringg の AI エージェントは OpenAI を使用して顧客通話の最大 65% を解決します",
-      "link": "https://openai.com/index/ringg",
-      "description": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
-      "publishedDate": "Wed, 23 Sep 2026 12:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -387,17 +310,6 @@
       "language": "en"
     },
     {
-      "title": "「Claude対応 生成AI研修・リスキリングサービス比較ガイド」を公開！自社に合う研修タイプの選び方と主要6サービスを整理",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-training-reskilling-guide/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、法人向けの生成AI研修・AIリスキリングの比較に役立つ「Claude対応 生成AI研修・リスキリングサービス比較ガイド」を、2026 […]",
-      "publishedDate": "Tue, 29 Sep 2026 02:00:24 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/ai-training-reskilling-guide000_0.png",
-      "language": "ja"
-    },
-    {
       "title": "Introducing dots",
       "titleJa": "ドットの紹介",
       "link": "https://openai.com/index/introducing-dots",
@@ -432,7 +344,7 @@
     },
     {
       "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-      "titleJa": "oMLX 作成者兼メンテナーの Jun Kim が Hugging Face に参加して MLX コミュニティをサポート",
+      "titleJa": "oMLX の作成者兼メンテナーである Jun Kim が Hugging Face に参加して MLX コミュニティをサポート",
       "link": "https://huggingface.co/blog/omlx",
       "description": "",
       "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
@@ -508,47 +420,146 @@
       "language": "en"
     },
     {
-      "title": "イレブンラボ、ユニバーサル ミュージック グループと戦略的提携に合意。AI音楽制作プラットフォームを共同開発",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/elevenlab-umg-strategic-alliance/",
-      "description": "イレブンラボは、ユニバーサル ミュージック グループと複数年にわたるライセンス契約および戦略的協業に合意しました。本提携の第一弾として、ライセンス許諾を得た楽曲とアーティストの参加を土台とするAI音楽制作プラットフォーム […]",
-      "publishedDate": "Mon, 28 Sep 2026 07:41:03 +0000",
-      "source": "AIsmiley",
+      "title": "Making global data easier to explore",
+      "titleJa": "グローバル データの探索を容易にする",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
+      "description": "UN System Data Commons Data webpage",
+      "publishedDate": "Thu, 17 Sep 2026 20:00:00 +0000",
+      "source": "Google AI Blog",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/elevenlab-Universal-Music-Group-strategic-alliance.png",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/data-commons.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "3 ways to prep for your next big race with Search",
+      "titleJa": "検索を使用して次の大きなレースに備える 3 つの方法",
+      "link": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+      "description": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
+      "publishedDate": "Thu, 10 Sep 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Race_Running_Tips.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+      "titleJa": "HF ジョブ全体で LoRA を使用した非同期 GRPO: バケット、プロキシ、NCCL なし",
+      "link": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+      "description": "",
+      "publishedDate": "Thu, 10 Sep 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/asyncgrpo-lora-hfjobs/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "ローカルSLMとは？メリット・導入手順・代表モデルの性能を徹底検証",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/rocal-slm/",
+      "description": "「生成AIを使いたいけれど、社内の情報をクラウドに送るのは不安」という企業は少なくありません。そこで選択肢になるのがローカルSLMです。社内の機器の中だけで動かすため、情報漏洩リスクを抑えながら生成AIを業務に活用できま […]",
+      "publishedDate": "Thu, 01 Oct 2026 07:30:34 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Local-SLM_26010-1-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "キャディ、総額177億円を調達。製造業AIデータプラットフォームの米国提供を開始し事業展開を加速",
+      "title": "Sakana AI、複数モデルを連携するオーケストレーション技術で「Fugu Max」と「Fugu Ultra v2」をリリース",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/caddi-series-d-funding/",
-      "description": "キャディは、シリーズDラウンドにおいて総額177億円の資金調達を実施しました。これにより累計エクイティ調達額は363.1億円、企業価値は1820億円となります。次世代版「製造業AIデータプラットフォームCADDi」の米国 […]",
-      "publishedDate": "Mon, 28 Sep 2026 07:41:01 +0000",
+      "link": "https://aismiley.co.jp/ai_news/fugu-max-ultra-v2-summary/",
+      "description": "Sakana AIは、オーケストレーション技術を活用し「Fugu Max」と「Fugu Ultra v2」をリリースしました。「Fugu Max」はより低いコストで高い性能を実現し、「Fugu Ultra v2」は複雑な […]",
+      "publishedDate": "Thu, 01 Oct 2026 07:23:30 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/caddi.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/fugu-max-ultra-v2-summary-eye.png",
       "language": "ja"
     },
     {
-      "title": "【10/9開催】AIベンダー向け「AIサービスをもっと届ける。リード獲得・商談創出・認知拡大につながるAIsmiley活用説明会　第1回」",
+      "title": "OpenAI、高コスト効率の新モデル「GPT-6.1 Sol」発表。Astraに迫る性能を5分の1の価格で提供",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/20261009informationsession/",
-      "description": "AIポータルメディア「AIsmiley」は、2026年10月9日（金）12時からAIベンダー企業の皆様に向けて、認知拡大からリード獲得、商談創出までにつなげるAIsmileyの活用法をご紹介します。 AI市場の拡大に伴い […]",
-      "publishedDate": "Mon, 28 Sep 2026 05:14:26 +0000",
+      "link": "https://aismiley.co.jp/ai_news/openai-gpt-sol-release/",
+      "description": "OpenAIは、Astraに迫る性能を5分の1の価格で提供する新モデル「GPT-6.1 Sol」を発表しました。従来モデルの「GPT-6 Sol」から幅広いタスクで性能を向上させており、開発者は同じ予算でより高性能なAI […]",
+      "publishedDate": "Thu, 01 Oct 2026 07:20:25 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/1177_1200x628_2-1.jpg",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/GPT-6.1-sol.png",
       "language": "ja"
     },
     {
-      "title": "【10/23開催】製造業AIサミット2026秋 社内データ活用、ノウハウ継承、品質リスク未然防止ー 製造現場のAI実装における課題と具体策を紹介！",
+      "title": "【Gemini 4 Argon】出力100万トークンに対応したGoogleの新フロンティアモデルを徹底解説！",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/20261023webinar/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年10月23日（金）12時から「製造業AIサミット2026 秋」を開催します。 製造現場において熟練技術の継承や品質リスクの […]",
-      "publishedDate": "Mon, 28 Sep 2026 01:27:16 +0000",
+      "link": "https://weel.co.jp/media/tech/gemini-4-argon/",
+      "description": "2026年10月1日、Googleが新たなフロンティアモデル「Gemini 4 Argon」を発表しました！Gemini 4 Argonは、複雑で長期にわたる業務フローでも深い推論を持続できるように設計されたモデルです。 […]",
+      "publishedDate": "Thu, 01 Oct 2026 07:00:05 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-4-Argon-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "「シニア・プレシニアの商品・サービス購買行動調査」結果発表。3割がAI接客に「抵抗なし」",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/dentsu-senior-ai-survey/",
+      "description": "電通と電通ダイレクトは「電通シニアラボ」を調査主体として、直近3か月以内に通販か店頭で特定の商品を購入した全国の50〜79歳を対象に「シニア・プレシニアの商品・サービス購買行動調査」を行いました。 このニュースのポイント […]",
+      "publishedDate": "Fri, 02 Oct 2026 06:33:36 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/1176_1200x628_4.jpg",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/dentsu.png",
+      "language": "ja"
+    },
+    {
+      "title": "Anthropic「Claude Sonnet 5.5」提供開始。処理速度が30%以上向上し最大30%低コスト化",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/claude-sonnet-5-5/",
+      "description": "Anthropicは、次世代モデル「Claude Sonnet 5.5」の提供を開始しました。前モデルと比較して処理速度が30%以上速く、最大30%のコストを削減しています。 このニュースのポイント Anthropic「 […]",
+      "publishedDate": "Fri, 02 Oct 2026 06:33:22 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/Antropic.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI、常時稼働の自律型AIエージェント「dots」提供開始。専用クラウドで24時間の作業を支援",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/openai-dots-autonomous-agent/",
+      "description": "OpenAIは、常時稼働するAIエージェント「dots」の提供を開始しました。専用のクラウドコンピューターを使い、ユーザーからのフィードバックを通じて好みや求める仕事の質を学習しながら、日々の業務を支援します。 このニュ […]",
+      "publishedDate": "Fri, 02 Oct 2026 06:31:14 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/openai-dots-autonomous-agent.png",
+      "language": "ja"
+    },
+    {
+      "title": "Grok Botとは？料金・使い方・OpenAI dotsとの違いを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/grok-bot/",
+      "description": "2026年8月12日、SpaceXAIがAIチームメイト「Grok Bot」をベータ公開しました！ Grok Botは、チャットで仕事を頼むと自分専用のクラウドコンピュータでアプリにサインインし、作業を最後まで終わらせて […]",
+      "publishedDate": "Fri, 02 Oct 2026 05:19:28 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Grok-Bot-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "福岡に5,238名が来場！「AI博覧会 Fukuoka 2026」熱気あふれる2日間をレポート",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/aihaku-fukuoka2026-report02/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年9月30日（水）・10月1日（木）の2日間、博多国際展示場＆カンファレンスセンターにて「AI博覧会 Fukuoka 202 […]",
+      "publishedDate": "Fri, 02 Oct 2026 01:00:08 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/aihaku-fukuoka2026-report02-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "Google Cloud、ローカルマシンにインストールできる大規模分散型マルチモデルDB「Spanner Omni」正式版リリースを発表",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/google_clouddbspanner_omni.html",
+      "description": "Google Cloudは、大規模分散データベースとしてリレーショナルモデルだけでなくグラフ型やキーバリュー型、ベクトル検索、テキスト検索などのマルチモデルに対応したデータベースソフトウェア「Spanner Omni」の正式版リリースを発表...",
+      "publishedDate": "2026-10-01T18:28:43Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/HTeyU_NXUAAtdwR.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/HR3vB7EWAAATcBI.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "「Java 27」正式リリース。全環境でG1 GCがデフォルトに、TLS 1.3用に耐量子暗号のハイブリッドキー交換など新機能",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/java_27g1_gctls_13.html",
-      "description": "オラクルはJavaの最新バージョン「Java 27」正式版をリリースしました。 Java 27 is now available! #Java27 #JDK27 #OpenJDK Download now: https://t.co/0Zw...",
-      "publishedDate": "2026-09-15T15:52:17Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HSNG61fW8AAplLU.jpg",
       "language": "ja"
     }
   ]
