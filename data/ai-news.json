@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-02T06:46:57.698865",
+  "lastUpdated": "2026-10-03T06:06:26.231629",
   "articles": [
     {
       "title": "The Download: OpenAI’s chief research officer explains its hacking response",
@@ -25,7 +25,7 @@
     },
     {
       "title": "“We’re not going to shoot ourselves in the foot” over hack fallout, says OpenAI’s chief research officer",
-      "titleJa": "OpenAIの最高研究責任者はハッキング被害について「自分たちの足を撃つつもりはない」と語る",
+      "titleJa": "OpenAIの最高研究責任者、ハッキング被害について「自分たちの足を撃つつもりはない」と語る",
       "link": "https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer/",
       "description": "Two months after the bombshell news that a swarm of its agents had broken their containment and hacked into the computers of the AI company Hugging Face, OpenAI is still putting out fires. A steady dr...",
       "publishedDate": "Wed, 30 Sep 2026 10:40:30 +0000",
@@ -156,17 +156,6 @@
       "language": "ja"
     },
     {
-      "title": "Krea AI（クレアAI）の使い方を徹底解説！商用利用・アップスケール方法まで",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/krea-ai/",
-      "description": "画像や動画を生成できるAIツールは数多くありますが、Krea AIは、画像生成や動画生成、リアルタイム編集などを1つのプラットフォームで利用できるAIクリエイティブツールです。複数の生成モデルや編集機能を組み合わせながら […]",
-      "publishedDate": "Wed, 30 Sep 2026 05:54:53 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Krea-AI_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
       "titleJa": "Open TTS Leaderboard: 多言語テキスト読み上げおよび音声クローン作成のスケーラブルな評価",
       "link": "https://huggingface.co/blog/open-tts-leaderboard",
@@ -189,17 +178,6 @@
       "language": "en"
     },
     {
-      "title": "Two years of OpenAI Academy",
-      "titleJa": "2 年間の OpenAI アカデミー",
-      "link": "https://openai.com/index/two-years-of-openai-academy",
-      "description": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
-      "publishedDate": "Wed, 23 Sep 2026 16:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "Get ready for the game with new football features in Search",
       "titleJa": "検索の新しいサッカー機能で試合に備えましょう",
       "link": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
@@ -219,17 +197,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/LOVE_RENDERED_HERO_BLOG_SANS_LO.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Proactive cyber defense for governments and enterprises",
-      "titleJa": "政府および企業向けのプロアクティブなサイバー防御",
-      "link": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
-      "description": "Introducing Fairwind Program",
-      "publishedDate": "Wed, 02 Sep 2026 15:40:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-8__fairwind-program__b.max-600x600.format-webp.webp",
       "language": "en"
     },
     {
@@ -266,32 +233,10 @@
       "language": "en"
     },
     {
-      "title": "Coming soon: Our 2026 list of Climate Tech Companies to Watch",
-      "titleJa": "近日公開予定: 2026 年に注目すべき気候変動テクノロジー企業リスト",
-      "link": "https://www.technologyreview.com/2026/09/29/1145183/2026-climate-tech-companies-to-watch-preview/",
-      "description": "Earlier this month, the UN announced the planet will tip past 1.5 ˚C of warming, “likely within the next few years,” squashing any lingering hope that nations would cut emissions fast enough to achiev...",
-      "publishedDate": "Tue, 29 Sep 2026 11:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/CT10-batterypacks.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Making AI an asset, not an expense",
-      "titleJa": "AI を費用ではなく資産にする",
-      "link": "https://www.technologyreview.com/2026/09/29/1145186/making-ai-an-asset-not-an-expense/",
-      "description": "When customers talk about AI costs, the conversation usually starts with token prices and ends with access to the latest, most capable model in the cloud. Do they always need that level of capability?...",
-      "publishedDate": "Tue, 29 Sep 2026 10:43:45 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/Cheri-blog.jpg?w=840",
-      "language": "en"
-    },
-    {
-      "title": "Introducing GPT-6.1 Sol",
-      "titleJa": "GPT-6.1 ソルの紹介",
-      "link": "https://openai.com/index/introducing-gpt-6-1-sol",
-      "description": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
+      "title": "DevDay 2026 Recap",
+      "titleJa": "DevDay 2026 の概要",
+      "link": "https://openai.com/index/devday-2026-recap",
+      "description": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
       "publishedDate": "Tue, 29 Sep 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -299,10 +244,10 @@
       "language": "en"
     },
     {
-      "title": "DevDay 2026 Recap",
-      "titleJa": "DevDay 2026 の概要",
-      "link": "https://openai.com/index/devday-2026-recap",
-      "description": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
+      "title": "Introducing GPT-6.1 Sol",
+      "titleJa": "GPT-6.1 ソルの紹介",
+      "link": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "description": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
       "publishedDate": "Tue, 29 Sep 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
@@ -344,7 +289,7 @@
     },
     {
       "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-      "titleJa": "oMLX の作成者兼メンテナーである Jun Kim が Hugging Face に参加して MLX コミュニティをサポート",
+      "titleJa": "oMLX 作成者兼メンテナーの Jun Kim が Hugging Face に参加して MLX コミュニティをサポート",
       "link": "https://huggingface.co/blog/omlx",
       "description": "",
       "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
@@ -453,6 +398,50 @@
       "language": "en"
     },
     {
+      "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+      "titleJa": "Gradio ワークフローを使用して AUTOMATIC1111 を再構築する",
+      "link": "https://huggingface.co/blog/gradio-workflow-1111",
+      "description": "",
+      "publishedDate": "Thu, 10 Sep 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://huggingface.co/blog/assets/gradio-workflow1111/thumbnail.png",
+      "language": "en"
+    },
+    {
+      "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+      "titleJa": "NeoMME: 効率的なマルチモーダルネイティブの多言語エンコーダー",
+      "link": "https://huggingface.co/blog/Hcompany/neomme",
+      "description": "",
+      "publishedDate": "Thu, 03 Sep 2026 13:13:48 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6264f9655f6f2e14d6ac981c/GJ6FUbgFpq1x8RNOqzmz-.webp",
+      "language": "en"
+    },
+    {
+      "title": "The eternal complement",
+      "titleJa": "永遠の補完物",
+      "link": "https://openai.com/index/the-eternal-complement",
+      "description": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
+      "publishedDate": "Thu, 01 Oct 2026 17:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "How Albertsons Companies is reimagining retail from the inside out",
+      "titleJa": "Albertsons Companies は小売業をどのように内側から外側まで再考しているのか",
+      "link": "https://openai.com/index/albertsons-reimagining-retail",
+      "description": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+      "publishedDate": "Thu, 01 Oct 2026 16:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
       "title": "ローカルSLMとは？メリット・導入手順・代表モデルの性能を徹底検証",
       "titleJa": null,
       "link": "https://weel.co.jp/media/rocal-slm/",
@@ -494,6 +483,17 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-4-Argon-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claudeのリセット権とは？利用上限を自分で回復できる新機能の使い方・注意点を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/claude-reset/",
+      "description": "2026年9月、AnthropicのClaudeに、利用上限を自分で回復できる新しい仕組みが登場しました。今回配布された「Claudeのリセット権」は、5時間ごとの利用上限や週間の利用上限を、ユーザー自身が好きなタイミン […]",
+      "publishedDate": "Fri, 02 Oct 2026 13:27:03 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-reset_26010-1024x576.webp",
       "language": "ja"
     },
     {
