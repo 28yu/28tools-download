@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-02T03:15:12.833098",
+  "lastUpdated": "2026-10-03T03:00:56.556184",
   "articles": [
     {
       "title": "コンクリート打設とは？｜手順・時間制限・注意点を建設コンサルタントが解説",
@@ -122,6 +122,16 @@
       "language": "ja"
     },
     {
+      "title": "建設現場の仮設トイレ｜設置義務・快適トイレの基準・レンタルと購入の費用比較",
+      "link": "https://news.build-app.jp/article/42940/",
+      "description": "建設現場の仮設トイレは、「とりあえず1台置いておけばいい」と考えられがちな設備です。しかし、労働安全衛生規則ではトイレの設置数に基準がありま...",
+      "publishedDate": "Thu, 01 Oct 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/390d0e03d67a849651f093af295a41a3-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "国土交通省が8月の建設受注を公表、受注額1兆4,388億円で公共工事の大幅増が下支え",
       "link": "https://news.build-app.jp/article/42899/",
       "description": "国土交通省は2026年9月30日、令和8年8月分の建設工事受注動態統計調査(大手50社調査)の結果を公表しました。受注総額は前年の同じ月を下...",
@@ -189,16 +199,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/09/kokkominsho_budget_8_8trillion_ogp_1200x630-1024x538.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【2026年最新版】建設業法第2条第1項とは？｜建設工事の定義・別表第一29業種・修繕工事の扱いをわかりやすく解説",
-      "link": "https://news.build-app.jp/article/38489/",
-      "description": "建設業に関わる実務で、必ず登場するのが「建設業法第2条第1項」です。しかし、「どこまでが建設工事に当たるのか」「修繕工事は対象なのか」「許可...",
-      "publishedDate": "Mon, 28 Sep 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/12/826bc26d512b2ae6934c1cd89c956ef2-130x82.png",
       "language": "ja"
     },
     {
