@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-03T06:06:26.231629",
+  "lastUpdated": "2026-10-04T06:39:46.139378",
   "articles": [
     {
       "title": "The Download: OpenAI’s chief research officer explains its hacking response",
@@ -409,17 +409,6 @@
       "language": "en"
     },
     {
-      "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
-      "titleJa": "NeoMME: 効率的なマルチモーダルネイティブの多言語エンコーダー",
-      "link": "https://huggingface.co/blog/Hcompany/neomme",
-      "description": "",
-      "publishedDate": "Thu, 03 Sep 2026 13:13:48 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6264f9655f6f2e14d6ac981c/GJ6FUbgFpq1x8RNOqzmz-.webp",
-      "language": "en"
-    },
-    {
       "title": "The eternal complement",
       "titleJa": "永遠の補完物",
       "link": "https://openai.com/index/the-eternal-complement",
@@ -432,13 +421,24 @@
     },
     {
       "title": "How Albertsons Companies is reimagining retail from the inside out",
-      "titleJa": "Albertsons Companies は小売業をどのように内側から外側まで再考しているのか",
+      "titleJa": "Albertsons Companies が小売業をどのように内側から再考しているか",
       "link": "https://openai.com/index/albertsons-reimagining-retail",
       "description": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
       "publishedDate": "Thu, 01 Oct 2026 16:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The Download: AI “mind-reading” and creative uses for small batteries",
+      "titleJa": "ダウンロード: AI の「読心」と小型バッテリーの創造的な使用法",
+      "link": "https://www.technologyreview.com/2026/10/01/1145592/the-download-ai-mind-reading-small-batteries/",
+      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. An AI “mind-reading” tool can reconstruct what you’re looking...",
+      "publishedDate": "Thu, 01 Oct 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/07/Asteroid_Redamonti_7.2.25.jpg?fit=2128,1196",
       "language": "en"
     },
     {
