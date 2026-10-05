@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-04T06:39:46.139378",
+  "lastUpdated": "2026-10-05T06:36:53.083170",
   "articles": [
     {
       "title": "The Download: OpenAI’s chief research officer explains its hacking response",
@@ -25,7 +25,7 @@
     },
     {
       "title": "“We’re not going to shoot ourselves in the foot” over hack fallout, says OpenAI’s chief research officer",
-      "titleJa": "OpenAIの最高研究責任者、ハッキング被害について「自分たちの足を撃つつもりはない」と語る",
+      "titleJa": "OpenAIの最高研究責任者はハッキング被害について「自分たちの足を撃つつもりはない」と語る",
       "link": "https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer/",
       "description": "Two months after the bombshell news that a swarm of its agents had broken their containment and hacked into the computers of the AI company Hugging Face, OpenAI is still putting out fires. A steady dr...",
       "publishedDate": "Wed, 30 Sep 2026 10:40:30 +0000",
@@ -68,17 +68,6 @@
       "language": "ja"
     },
     {
-      "title": "RAGとは？図解付きでわかりやすい！仕組みやメリット・注意点・導入事例を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/company-data-rag/",
-      "description": "多くの企業が業務効率化のために生成AIを導入していますが、一般的な情報だけでは自社特有の業務や規則に対応できない場合が多くあります。 そこで注目されているのが、自社データを生成AIに追加するRAG（Retrieval-A […]",
-      "publishedDate": "Wed, 30 Sep 2026 10:03:58 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/RAG_2609-1-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Helping small businesses put AI to work",
       "titleJa": "中小企業の AI 活用を支援",
       "link": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
@@ -88,17 +77,6 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "自立型AIエージェントとは？仕組み・種類・使い方・活用事例をわかりやすく解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/ai-agent/",
-      "description": "AIエージェントとは、ゴールを伝えるだけでAIが自ら手順を考え、ツールを使いこなしながら作業を完了させる仕組みです。2026年7月にOpenAIが自律型AIエージェント「ChatGPT Work」を発表したポストは、2万 […]",
-      "publishedDate": "Wed, 30 Sep 2026 09:44:03 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/ai-agent_2609-1-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "OpenAI、「GPT-6 Sol」および「GPT-6 Luna」の提供を開始。コスト半減と高度な専門作業の両立を実現",
@@ -131,28 +109,6 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/mw-living-home-launch-geniac-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "大日本印刷、自動運転導入支援「AI駆動型アセスメント」開始。長崎県で実証に活用",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/dnp-driving-ai-assessment/",
-      "description": "大日本印刷は、自動運転車の社会実装に向けて、導入検討に必要な情報を提供する「AI駆動型アセスメント」を開始しました。車両の走行映像などの実走行データをもとに、危険場面や地域ごとの特徴などを分析します。 このニュースのポイ […]",
-      "publishedDate": "Wed, 30 Sep 2026 06:17:41 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/dnp.png",
-      "language": "ja"
-    },
-    {
-      "title": "Hugging Face（ハギングフェイス）とは？使い方・商用利用・主要機能",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/hugging-face/",
-      "description": "Hugging Faceは、世界中で公開されているAIモデルやデータセットを探し、実際の開発に取り込めるプラットフォームです。一方で、モデルごとにライセンスや必要な実行環境が異なるため、一覧を見るだけでは選び方に迷うこと […]",
-      "publishedDate": "Wed, 30 Sep 2026 06:15:20 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Hugging-Face_2609-1024x576.webp",
       "language": "ja"
     },
     {
@@ -219,17 +175,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/phhhj_BLOJbvnTFhVaZ5y.png",
-      "language": "en"
-    },
-    {
-      "title": "The Download: climate tech companies to watch and AI’s discovery problem",
-      "titleJa": "ダウンロード: 注目すべき気候変動テクノロジー企業と AI の発見の問題",
-      "link": "https://www.technologyreview.com/2026/09/29/1145249/the-download-climate-tech-ai-scientific-discovery/",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Coming soon: our 2026 list of Climate Tech Companies to Watch...",
-      "publishedDate": "Tue, 29 Sep 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/05/260511-drug-manufacturing-space-hero.jpg?fit=2128,1196",
       "language": "en"
     },
     {
@@ -442,6 +387,17 @@
       "language": "en"
     },
     {
+      "title": "An AI “mind-reading” tool can reconstruct what you’re looking at from a brain scan",
+      "titleJa": "AI「読心」ツールは、脳スキャンから見ているものを再構築できる",
+      "link": "https://www.technologyreview.com/2026/10/01/1145588/ai-mind-reading-reconstructs-what-youre-looking-at/",
+      "description": "A new AI tool can guess what you’re looking at just by analyzing your brain scans—and re-create that image with remarkable precision. It can go the other way, too, and predict a person’s brain activit...",
+      "publishedDate": "Thu, 01 Oct 2026 10:32:24 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/brain-image-output.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
       "title": "ローカルSLMとは？メリット・導入手順・代表モデルの性能を徹底検証",
       "titleJa": null,
       "link": "https://weel.co.jp/media/rocal-slm/",
@@ -483,6 +439,50 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-4-Argon-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Opus 5.5は建築で使える？Xで話題の3Dモデリング・図面読み取り事例と試し方を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/claude-opus-5-5-architecture/",
+      "description": "2026年9月、AnthropicからClaudeシリーズの新たなAIモデルが登場しました。 今回登場した「Claude Opus 5.5」は、長時間の自律的なコーディングを得意とする最新モデルです。リリース直後からXで […]",
+      "publishedDate": "Sun, 04 Oct 2026 19:48:28 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-opus-5-5-architecture_26010-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Code modsとは？自分専用の機能を追加できる新しい拡張の仕組み・作り方・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/claude-code-mods/",
+      "description": "2026年10月、AnthropicからClaude Codeを自分好みに拡張できる新しい仕組みが紹介されました。 今回登場した「Claude Code mods」は、Claude Codeのセッション内で動く小さなJa […]",
+      "publishedDate": "Sun, 04 Oct 2026 12:13:32 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-mods_26010-1-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【OpenDots】OpenAI dotsのOSS版！使い方・料金・ライセンスを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/opendots/",
+      "description": "2026年10月2日、CopilotKitがOpenAIのdotsをオープンソースで再現したテンプレート「OpenDots」を公開しました！OpenAIのdotsは、専用のクラウドコンピューターを持ち、チャットを閉じたあ […]",
+      "publishedDate": "Sun, 04 Oct 2026 11:29:15 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_OpenDots-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "WEB雑誌「AI博覧会 Summer 2026 特集号」 注目の出展企業6社をピックアップ！",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/aihakusummer2026_specialissue/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年8月26日(水)・27日(木)に開催された「AI博覧会 Summer 2026」の特集号を公開しました。 本資料では、出展 […]",
+      "publishedDate": "Mon, 05 Oct 2026 03:45:30 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/1180_1200x628.jpg",
       "language": "ja"
     },
     {
@@ -549,6 +549,28 @@
       "source": "AIsmiley",
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/aihaku-fukuoka2026-report02-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "世界中のソフトウェア開発者の実態を調べた「State of Devs 2026」公開。何歳？ 年収は？ モニタは何枚？ AIにどのくらいコードを書かせている？ 趣味は？ など集計結果",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/state_of_devs_2026_ai.html",
+      "description": "IT関連の各種調査を行っているプロジェクトDevographicsは、世界中のソフトウェア開発者の実態などをアンケートで調査した「State of Devs 2026」の結果を公開しました。 ここでは全体の結果から興味深いところをいくつか抜...",
+      "publishedDate": "2026-10-04T15:59:31Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/stateofdevops2026-01.png",
+      "language": "ja"
+    },
+    {
+      "title": "Supabase、1サーバあたり数百万ものSQLiteをホストする「Turso」買収を発表。AIエージェントで加速するDB需要に対応",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/supabase1sqlitetursoaidb.html",
+      "description": "PostgreSQLをベースにしたデータベースサービス「Supabase」などを提供しているSupabaseは、SQLiteをベースとしたデータベースサービスを提供する「Turso」を買収したことを発表しました。 Turso is join...",
+      "publishedDate": "2026-10-04T15:56:27Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/HTo1Om6aAAAYQKJ.jpg",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/OTbhcqsx.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Devinが仮想環境でmacOSの提供開始。Macの実機不要でDevinがコード生成、テスト、デバッグ、実行、AppStore配信前のベータ公開まで実行",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/devinmacosmacdevinappstore.html",
-      "description": "コーディングAIエージェントを提供するDevinが、Devinがホストする仮想環境内でのmacOSの提供を開始しました。 Devinはこれまで仮想環境内でUbuntu LinuxおよびWindowsを提供しており、ここにmacOSが加わりま...",
-      "publishedDate": "2026-09-16T16:00:51Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/devin-macos-04.png",
-      "language": "ja"
-    },
-    {
-      "title": "Android、パスキーをパスワードマネージャ間で転送可能に。Googleパスワードマネージャ、1Password、Bitwarden、Dashlaneなどが対応",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/androidgoogle1passwordbitwardendashlane.html",
-      "description": "Googleは、Android上で利用可能なパスワードマネージャの間で、パスキーの転送を可能にしたと発表しました。 これにより、例えばGoogleパスワードマネージャに登録したパスキーを1PasswordやBitwardenなどの他のパスワ...",
-      "publishedDate": "2026-09-16T15:51:54Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HR3vB7EWAAATcBI.jpg",
       "language": "ja"
     }
   ]
