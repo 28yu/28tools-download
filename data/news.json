@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-04T03:30:03.258691",
+  "lastUpdated": "2026-10-05T03:09:28.767322",
   "articles": [
     {
       "title": "コンクリート打設とは？｜手順・時間制限・注意点を建設コンサルタントが解説",
@@ -49,16 +49,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/7767e13893873d60f48a31daff151f7e-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "清水建設、現場内物流のムダをデジタル化で排除する建設物流DXシステムを開発・運用開始",
-      "link": "https://news.build-app.jp/article/42859/",
-      "description": "清水建設は、建設現場の中で生じる物流のムダをデジタル化とクラウド化によって取り除く「建設物流DXシステム」を開発しました。資機材を運ぶ車両の...",
-      "publishedDate": "Tue, 29 Sep 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/shimz_logisticsdx-130x88.jpg",
       "language": "ja"
     },
     {
@@ -220,6 +210,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "熊谷組、脚線付電気雷管を使う親ダイを実トンネルで実証、切羽近傍への立ち入りなしで装薬可能",
+      "link": "https://news.build-app.jp/article/42976/",
+      "description": "株式会社熊谷組は、一般的な脚線付きの電気雷管を使い、親ダイを機械で装填する装置を開発しました。同社がすでに開発している爆薬の遠隔装填システム...",
+      "publishedDate": "Mon, 05 Oct 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/mountain_tunnel_automation-130x40.png",
+      "language": "ja"
     },
     {
       "title": "IFCX – Core & Modularisation Project Update",
