@@ -1,17 +1,6 @@
 {
-  "lastUpdated": "2026-10-05T06:36:53.083170",
+  "lastUpdated": "2026-10-06T07:16:08.621137",
   "articles": [
-    {
-      "title": "The Download: OpenAI’s chief research officer explains its hacking response",
-      "titleJa": "ダウンロード: OpenAI の最高研究責任者がハッキング対応について説明",
-      "link": "https://www.technologyreview.com/2026/09/30/1145350/the-download-openai-chief-research-officer-hacking-response/",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. “We’re not going to shoot ourselves in the foot” over hack fal...",
-      "publishedDate": "Wed, 30 Sep 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/04/MIT_TR_Uri_Moaz-177-thumb.jpg?w=840",
-      "language": "en"
-    },
     {
       "title": "Claude Opus 5.5でAI MV作成！プロ級MVを自動生成する手順やツール、実践結果を解説",
       "titleJa": null,
@@ -22,17 +11,6 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/How-to-Create-an-AI-Music-Video-with-Opus-5.5_2609-1024x576.webp",
       "language": "ja"
-    },
-    {
-      "title": "“We’re not going to shoot ourselves in the foot” over hack fallout, says OpenAI’s chief research officer",
-      "titleJa": "OpenAIの最高研究責任者はハッキング被害について「自分たちの足を撃つつもりはない」と語る",
-      "link": "https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer/",
-      "description": "Two months after the bombshell news that a swarm of its agents had broken their containment and hacked into the computers of the AI company Hugging Face, OpenAI is still putting out fires. A steady dr...",
-      "publishedDate": "Wed, 30 Sep 2026 10:40:30 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/AP26167311184201.jpg?resize=1200,600",
-      "language": "en"
     },
     {
       "title": "Disrupting a coordinated model-distillation campaign",
@@ -46,28 +24,6 @@
       "language": "en"
     },
     {
-      "title": "【Decisions API】OpenAIの判断専用APIとは？Jevとの違い・料金・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/decisions-api/",
-      "description": "2026年9月30日、OpenAIが開発者向けカンファレンス「DevDay 2026」で、判断に特化した新しいAPI「Decisions API」を発表しました！ Decisions APIは、開発者があらかじめ決めた質 […]",
-      "publishedDate": "Wed, 30 Sep 2026 10:26:09 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Decisions-API-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【dots】OpenAIの常時稼働AIエージェントとは？使い方・料金・安全性を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/dots/",
-      "description": "OpenAIが2026年9月30日に発表したdotsは、話しかけていない間も仕事を進めてくれる常時稼働型のAIエージェントです。 発表を告げたサム・アルトマン氏のXポストは、2026年9月30日時点で100万回以上も表示 […]",
-      "publishedDate": "Wed, 30 Sep 2026 10:15:01 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_dots-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Helping small businesses put AI to work",
       "titleJa": "中小企業の AI 活用を支援",
       "link": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
@@ -77,39 +33,6 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "OpenAI、「GPT-6 Sol」および「GPT-6 Luna」の提供を開始。コスト半減と高度な専門作業の両立を実現",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-gpt-6-sol-luna/",
-      "description": "OpenAIは、「GPT-6 Sol」と「GPT-6 Luna」の提供を開始しました。「GPT-6 Astra」と同等の手法で学習した高速で低価格なモデルで、API価格は「GPT-5.6 Sol」および「GPT-5.6 […]",
-      "publishedDate": "Wed, 30 Sep 2026 07:17:16 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/openai-gpt6-sol-luna.png",
-      "language": "ja"
-    },
-    {
-      "title": "Amazon Ads、OpenAIとの提携を発表。ChatGPTを利用したAmazon Adsキャンペーンの拡張が可能に",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/amazon-ads-chatgpt-partnership/",
-      "description": "Amazon Adsは、ChatGPTでの広告展開を支援するため、OpenAIとのパートナーシップを発表しました。広告主はChatGPT上の会話型広告体験を利用して、同社のキャンペーンを拡張できます。 このニュースのポイ […]",
-      "publishedDate": "Wed, 30 Sep 2026 07:17:15 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/amazon-ads-chatgpt-partnership-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "MW、建築・AI・ロボットを融合した「Living Home」初公開。フィジカルAIを活用した次世代住宅開発へ",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/mw-living-home-robot/",
-      "description": "MWは、建築・AI・ロボティクスを融合した住宅プロダクト「MW Living Home」の構想と全体像を初公開しました。住宅ロボット基盤モデルの研究開発は、経済産業省・NEDOの「GENIAC」に採択されています。 この […]",
-      "publishedDate": "Wed, 30 Sep 2026 06:17:42 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/mw-living-home-launch-geniac-eye.png",
-      "language": "ja"
     },
     {
       "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
@@ -299,6 +222,50 @@
       "language": "en"
     },
     {
+      "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
+      "titleJa": "ファルコン首長国連邦: LLM が方言、文化、ニュアンスを学ぶとき",
+      "link": "https://huggingface.co/blog/tiiuae/falcon-emirati",
+      "description": "",
+      "publishedDate": "Tue, 06 Oct 2026 06:44:39 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/659bc8a7b0f43ed69f0b2300/MJHJMYW3O4CkLvXvn7DOp.png",
+      "language": "en"
+    },
+    {
+      "title": "フォレンジックとは？種類・調査手順・費用相場とAI活用まで解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-forensic-ransomware/",
+      "description": "社内のPCがランサムウェアに感染した、あるいは退職予定の社員による機密データの持ち出しが疑われる━このようなインシデント発生時に、デジタル機器の痕跡から「いつ・誰が・何をしたか」を法的に有効な形で突き止める手法が「フォレ […]",
+      "publishedDate": "Tue, 06 Oct 2026 02:24:13 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/forensic.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenClawとは？ChatGPTとの違い・料金・安全な導入手順まで解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-open-claw/",
+      "description": "「面倒なPC作業をAIに丸投げできたら…」と思ったことはありませんか？OpenClaw（オープンクロー）はSlackやDiscordから指示するだけで、あなたのPCを自律的に操作するオープンソースAIエージェントです。 […]",
+      "publishedDate": "Tue, 06 Oct 2026 02:22:25 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/OpenClaw.png",
+      "language": "ja"
+    },
+    {
+      "title": "【10/30開催ウェビナー】「使われない生成AI」をゼロにする！プロセス再設計×人材育成で実現する全社定着　～人とAIの役割分担から、現場業務への組み込み、研修・エージェント活用事例まで一挙公開～",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/20261030webinar/",
+      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年10月30日（金）12時からAIの全社活用、現場業務への組み込みをテーマにウェビナーを開催します。 生成AIを導入しながら […]",
+      "publishedDate": "Tue, 06 Oct 2026 01:00:32 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/1179_1200x628_4.jpg",
+      "language": "ja"
+    },
+    {
       "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
       "titleJa": "LFM2.5-VL-DSpark によるビジョン言語モデルの高速化",
       "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
@@ -329,28 +296,6 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Race_Running_Tips.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
-      "titleJa": "HF ジョブ全体で LoRA を使用した非同期 GRPO: バケット、プロキシ、NCCL なし",
-      "link": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
-      "description": "",
-      "publishedDate": "Thu, 10 Sep 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/asyncgrpo-lora-hfjobs/thumbnail.png",
-      "language": "en"
-    },
-    {
-      "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-      "titleJa": "Gradio ワークフローを使用して AUTOMATIC1111 を再構築する",
-      "link": "https://huggingface.co/blog/gradio-workflow-1111",
-      "description": "",
-      "publishedDate": "Thu, 10 Sep 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://huggingface.co/blog/assets/gradio-workflow1111/thumbnail.png",
       "language": "en"
     },
     {
@@ -387,17 +332,6 @@
       "language": "en"
     },
     {
-      "title": "An AI “mind-reading” tool can reconstruct what you’re looking at from a brain scan",
-      "titleJa": "AI「読心」ツールは、脳スキャンから見ているものを再構築できる",
-      "link": "https://www.technologyreview.com/2026/10/01/1145588/ai-mind-reading-reconstructs-what-youre-looking-at/",
-      "description": "A new AI tool can guess what you’re looking at just by analyzing your brain scans—and re-create that image with remarkable precision. It can go the other way, too, and predict a person’s brain activit...",
-      "publishedDate": "Thu, 01 Oct 2026 10:32:24 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/brain-image-output.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "ローカルSLMとは？メリット・導入手順・代表モデルの性能を徹底検証",
       "titleJa": null,
       "link": "https://weel.co.jp/media/rocal-slm/",
@@ -406,28 +340,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Local-SLM_26010-1-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Sakana AI、複数モデルを連携するオーケストレーション技術で「Fugu Max」と「Fugu Ultra v2」をリリース",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/fugu-max-ultra-v2-summary/",
-      "description": "Sakana AIは、オーケストレーション技術を活用し「Fugu Max」と「Fugu Ultra v2」をリリースしました。「Fugu Max」はより低いコストで高い性能を実現し、「Fugu Ultra v2」は複雑な […]",
-      "publishedDate": "Thu, 01 Oct 2026 07:23:30 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/fugu-max-ultra-v2-summary-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "OpenAI、高コスト効率の新モデル「GPT-6.1 Sol」発表。Astraに迫る性能を5分の1の価格で提供",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-gpt-sol-release/",
-      "description": "OpenAIは、Astraに迫る性能を5分の1の価格で提供する新モデル「GPT-6.1 Sol」を発表しました。従来モデルの「GPT-6 Sol」から幅広いタスクで性能を向上させており、開発者は同じ予算でより高性能なAI […]",
-      "publishedDate": "Thu, 01 Oct 2026 07:20:25 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/GPT-6.1-sol.png",
       "language": "ja"
     },
     {
@@ -440,6 +352,17 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-4-Argon-1024x576.webp",
       "language": "ja"
+    },
+    {
+      "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+      "titleJa": "The Den は、ChatGPT Work を使用して、成長のために週 10 ～ 15 時間を確保しています",
+      "link": "https://openai.com/index/the-den-family-social",
+      "description": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
+      "publishedDate": "Thu, 01 Oct 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "Claude Opus 5.5は建築で使える？Xで話題の3Dモデリング・図面読み取り事例と試し方を解説",
@@ -472,6 +395,116 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_OpenDots-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "The Agent Said It Was Done. The Database Disagreed.",
+      "titleJa": "エージェントはそれは終わったと言いました。データベースは同意しませんでした。",
+      "link": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "description": "",
+      "publishedDate": "Sat, 03 Oct 2026 22:56:48 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/64b8491203124195cd795cad/NStwJm1AafDELVsU4KGwS.png",
+      "language": "en"
+    },
+    {
+      "title": "How we will do better for Australia",
+      "titleJa": "オーストラリアのためにどうすればより良くなれるか",
+      "link": "https://openai.com/index/how-we-will-do-better-for-australia",
+      "description": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+      "publishedDate": "Mon, 28 Sep 2026 19:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Towards safety cases for frontier AI training",
+      "titleJa": "フロンティアAIトレーニングの安全事例に向けて",
+      "link": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "description": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents",
+      "publishedDate": "Mon, 28 Sep 2026 19:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "【Clef】Cloudflare初の判断モデルとは？Jevとの違い・性能・料金・使い方を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/clef/",
+      "description": "2026年10月2日、Cloudflareが自社で学習させた判断モデル「Clef」と軽量版の「Clef-flash」を公開しました！Clefは文章を書く代わりに、「この問い合わせは緊急か」「どのチームが担当すべきか」とい […]",
+      "publishedDate": "Mon, 05 Oct 2026 10:16:33 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Clef_26010-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【You should Know】Claude Codeの見落としを防ぐ組み込みModとは？仕組み・使い方・料金を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/you-should-know/",
+      "description": "You should Knowは、Claude Codeの作業中に見落としやすい情報を拾い上げて知らせてくれる組み込みプラグインです！Claudeが長いタスクを進める裏でサイドエージェントが出力を見守り、気づくべきことを […]",
+      "publishedDate": "Mon, 05 Oct 2026 09:51:48 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/You-should-Know_26010-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AI inside、Wanderlustを連結子会社化。大型AI案件への対応体制を拡大",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-inside-wanderlust-subsidiary/",
+      "description": "AI insideは、Wanderlustを2026年10月より連結子会社化することを発表しました。両社の技術・支援力を組み合わせ、大型化・高度化するAI活用案件への対応体制を拡大します。 このニュースのポイント AI […]",
+      "publishedDate": "Mon, 05 Oct 2026 08:31:18 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/ai-inside-wanderlust-subsidiary.png",
+      "language": "ja"
+    },
+    {
+      "title": "Sakana AI、「現代AIの父」ユルゲン・シュミットフーバー博士のチーフ・サイエンティフィック・アドバイザー就任を発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/sakana-ai-schmidhuber/",
+      "description": "Sakana AIは、ユルゲン・シュミットフーバー氏がチーフ・サイエンティフィック・アドバイザーとして参画すると発表しました。同氏の知見を活かし、世界モデルやフィジカルAIの開発を牽引するほか、新設のRSI Labの舵取 […]",
+      "publishedDate": "Mon, 05 Oct 2026 08:31:15 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/Sakana-AI-Schmidhuber-Chief-Scientific-Advisor-Participation.png",
+      "language": "ja"
+    },
+    {
+      "title": "東大研究チーム、盆栽AIプラットフォーム「JinShari」の先端機能を発表。生成AIを用いた美意識の言語化で日本文化理解を促進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/jinshari-bonsai-ai/",
+      "description": "東大大学院の研究チームは、盆栽AIプラットフォーム「JinShari」の先端機能を第10回世界盆栽大会で発表しました。また、生成AIを用いて盆栽の美意識を客観的な言葉として本プラットフォーム実装する研究プロジェクトの資金 […]",
+      "publishedDate": "Mon, 05 Oct 2026 08:29:43 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/jinshari-bonsai-ai-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "TOPPANと八雲町、AIによるクマ検知・通報自動化システムの実証開始。職員の初動負荷を軽減",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/toppan-yakumo-posre-demonstration/",
+      "description": "TOPPANと八雲町は、AI画像解析によるクマ出没の検知・通報と対応状況の一元管理に向けた実証実験を開始しました。2026年9月18日から11月30日まで八雲町内で実施し、クマの早期発見や職員への迅速な情報連携、獣害対策 […]",
+      "publishedDate": "Mon, 05 Oct 2026 08:24:33 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/TOPPAN-yakumo-PosRe-Demonstration-experiment.png",
+      "language": "ja"
+    },
+    {
+      "title": "日本テクトシステムズの認知機能セルフチェックアプリ搭載音声AIモデル、独立検証で高いMCI判別精度を実証",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/nippon-tect-onsei-pro-mci-ai/",
+      "description": "日本テクトシステムズは、認知機能セルフチェックアプリ「ONSEI Pro」に搭載された音声AIモデルの独立検証を実施し、高いMCI判別精度を実証しました。専門職の立ち会いを必要としない高い汎化性能も示されています。 この […]",
+      "publishedDate": "Mon, 05 Oct 2026 08:24:30 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/onsei-pro.png",
       "language": "ja"
     },
     {
@@ -508,28 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "Anthropic「Claude Sonnet 5.5」提供開始。処理速度が30%以上向上し最大30%低コスト化",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/claude-sonnet-5-5/",
-      "description": "Anthropicは、次世代モデル「Claude Sonnet 5.5」の提供を開始しました。前モデルと比較して処理速度が30%以上速く、最大30%のコストを削減しています。 このニュースのポイント Anthropic「 […]",
-      "publishedDate": "Fri, 02 Oct 2026 06:33:22 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/Antropic.png",
-      "language": "ja"
-    },
-    {
-      "title": "OpenAI、常時稼働の自律型AIエージェント「dots」提供開始。専用クラウドで24時間の作業を支援",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/openai-dots-autonomous-agent/",
-      "description": "OpenAIは、常時稼働するAIエージェント「dots」の提供を開始しました。専用のクラウドコンピューターを使い、ユーザーからのフィードバックを通じて好みや求める仕事の質を学習しながら、日々の業務を支援します。 このニュ […]",
-      "publishedDate": "Fri, 02 Oct 2026 06:31:14 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/openai-dots-autonomous-agent.png",
-      "language": "ja"
-    },
-    {
       "title": "Grok Botとは？料金・使い方・OpenAI dotsとの違いを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/grok-bot/",
@@ -541,14 +552,25 @@
       "language": "ja"
     },
     {
-      "title": "福岡に5,238名が来場！「AI博覧会 Fukuoka 2026」熱気あふれる2日間をレポート",
+      "title": "Cloudflare ContainersがAIエージェント向けに刷新。起動が6倍速、ファイルシステムのスナップショット機能など",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aihaku-fukuoka2026-report02/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年9月30日（水）・10月1日（木）の2日間、博多国際展示場＆カンファレンスセンターにて「AI博覧会 Fukuoka 202 […]",
-      "publishedDate": "Fri, 02 Oct 2026 01:00:08 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/aihaku-fukuoka2026-report02-main.png",
+      "link": "https://www.publickey1.jp/blog/26/cloudflare_containersai6.html",
+      "description": "Cloudflareは、同社のエッジロケーションでコンテナ型仮想マシンを実行可能にする「Cloudflare Containers」をAIエージェント向けに刷新したことを発表しました。 これまでよりも起動速度が6倍となり、環境構築が容易にな...",
+      "publishedDate": "2026-10-05T15:29:53Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/khG1vezC.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "Google、サンドボックス型コンテナランタイムの「gVisor」をCNCFに寄贈したと発表",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/googlegvisorcncf.html",
+      "description": "Googleはサンドボックス型コンテナランタイムの「gVisor」をCloud Native Computing Foundation（CNCF）に寄贈したことを発表しました。 gVisorはコンテナ型仮想マシンの業界標準であるOCI（Op...",
+      "publishedDate": "2026-10-05T15:27:19Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/gvisor2cncf.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/OQ1Z-11O.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Codeが「AGENTS.md」に対応。CLAUDE.mdが存在しない場合、自動的に読み込み",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/claude_codeagentsmdclaudemd.html",
-      "description": "Anthropicは、Claude Codeの9月18日付けアップデートClaude Code 2.1.277で「AGENTS.md」の読み込みに対応したことを明らかにしました。 以下のように説明されています。 Added AGENTS...",
-      "publishedDate": "2026-09-23T15:23:11Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/claudecode-agentsmd.png",
-      "language": "ja"
-    },
-    {
-      "title": "PlanetScale、PostgreSQLのシャーディングを自動化して1億1800万QPSを達成。新DBサービス「Neki」をプレビュー公開",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/planetscalepostgresql11800qpsdbneki.html",
-      "description": "データベースサービスを提供しているPlanetScaleは、PostgreSQLのシャーディングを自動化してスケーラブルなデータベースサービスを提供する「Neki」をプレビュー公開しました。 118,538,803 queries per ...",
-      "publishedDate": "2026-09-17T15:59:39Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/OTbhcqsx.jpg",
       "language": "ja"
     }
   ]
