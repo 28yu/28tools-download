@@ -1,24 +1,24 @@
 {
-  "lastUpdated": "2026-10-06T03:58:26.300820",
+  "lastUpdated": "2026-10-07T03:25:49.391454",
   "articles": [
     {
-      "title": "コンクリート打設とは？｜手順・時間制限・注意点を建設コンサルタントが解説",
-      "link": "https://news.build-app.jp/article/42901/",
-      "description": "コンクリート打設は、構造物の強度と耐久性を決める、やり直しのきかない工程です。 そこでこの記事では、JASS 5（建築工事標準仕様書）と土木...",
-      "publishedDate": "Wed, 30 Sep 2026 22:00:00 +0000",
+      "title": "Nefront、清水建設と共創した巡回・点検支援サービス「巡回GO」を正式リリース",
+      "link": "https://news.build-app.jp/article/43067/",
+      "description": "株式会社Nefront（本社：東京都渋谷区、代表取締役CEO：今村翔太）は、清水建設株式会社と共に開発・改善を進めてきた巡回・点検支援サービ...",
+      "publishedDate": "Wed, 07 Oct 2026 03:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/905e5db1f554b88886ca874a69e2a871-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/nefront_junkai_go-130x73.webp",
       "language": "ja"
     },
     {
-      "title": "Malme、お弁当注文アプリ「もぐぽち」で大成建設の現場事務の負担を軽減した事例を公開",
-      "link": "https://news.build-app.jp/article/42870/",
-      "description": "土木分野のITサービスを手がけるMalme（東京都新宿区、代表取締役：高取佑）は、大成建設のお弁当注文アプリ「もぐぽち」の導入事例を公開しま...",
-      "publishedDate": "Wed, 30 Sep 2026 03:00:00 +0000",
+      "title": "国土交通省、改正建築士法の一部を令和9年4月1日に施行、設計・工事監理契約を全面的に書面化",
+      "link": "https://news.build-app.jp/article/43063/",
+      "description": "国土交通省は令和8年10月6日、改正建築士法の一部について、施行日を定める政令などが閣議決定されたと発表しました。 建築士が行う設計や工事監...",
+      "publishedDate": "Wed, 07 Oct 2026 01:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/malme_taiseki_mogupochi-130x73.webp",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/98e9d3fb51f39d2bc11d2fb6fdc6f3d6-130x87.jpeg",
       "language": "ja"
     },
     {
@@ -30,6 +30,26 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "【2026年版】コンクリート桝（ます）とは？｜種類・サイズ規格・価格相場・施工方法をプロが徹底解説",
+      "link": "https://news.build-app.jp/article/35574/",
+      "description": "水たまりやゴミの滞留などによって起こる「排水トラブル」を根本から解決したいときに役立つのが「コンクリート桝（ます）」です。しかし、どのような...",
+      "publishedDate": "Tue, 06 Oct 2026 06:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/06/369d573570de641161db412170229a0d-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "パークタワー渋谷笹塚｜笹塚駅南口東地区開発計画のまちづくり構想で資産価値は変わる？",
+      "link": "https://news.build-app.jp/article/42993/",
+      "description": "ササ・ハツ・ハタの新しいまちづくり「パークタワー渋谷笹塚」 「ササ・ハツ・ハタ」をご存知でしょうか？渋谷区の「笹塚・幡ヶ谷・初台」地区の愛称...",
+      "publishedDate": "Tue, 06 Oct 2026 04:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/daf82376127faddc87c173c85c84b2f8-130x82.png",
+      "language": "ja"
     },
     {
       "title": "熊谷組、国内初のスーパーホットコラムへの現場溶接ロボット適用で省人化と品質安定化を推進",
@@ -109,26 +129,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/390d0e03d67a849651f093af295a41a3-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省が8月の建設受注を公表、受注額1兆4,388億円で公共工事の大幅増が下支え",
-      "link": "https://news.build-app.jp/article/42899/",
-      "description": "国土交通省は2026年9月30日、令和8年8月分の建設工事受注動態統計調査(大手50社調査)の結果を公表しました。受注総額は前年の同じ月を下...",
-      "publishedDate": "Thu, 01 Oct 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2022/11/YTTMuY3TMcqZ14f1669058236_1669058261-130x82.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省が令和8年8月分の建築着工統計を公表、新設住宅は前年同月比6.1％増の63,974戸",
-      "link": "https://news.build-app.jp/article/42894/",
-      "description": "国土交通省は令和8年9月30日、建築着工統計調査の令和8年8月分を政府統計の総合窓口「e-Stat」で公表しました。8月の新設住宅着工戸数は...",
-      "publishedDate": "Thu, 01 Oct 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/housing_statistics_august-130x74.jpg",
       "language": "ja"
     },
     {
