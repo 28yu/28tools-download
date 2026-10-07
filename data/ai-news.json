@@ -1,17 +1,6 @@
 {
-  "lastUpdated": "2026-10-06T07:16:08.621137",
+  "lastUpdated": "2026-10-07T06:54:43.699649",
   "articles": [
-    {
-      "title": "Claude Opus 5.5でAI MV作成！プロ級MVを自動生成する手順やツール、実践結果を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/how-to-create-an-ai-music-video-with-opus-5.5/",
-      "description": "2026年9月22日に公開されたClaude Opus 5.5を監督役に据えると、Sunoの曲を使ったMV制作の大半を生成AIに任せられます。筆者は2分55秒の曲に18カットの映像と文字PVを付け、MiniMaxの実費1 […]",
-      "publishedDate": "Wed, 30 Sep 2026 10:58:42 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/How-to-Create-an-AI-Music-Video-with-Opus-5.5_2609-1024x576.webp",
-      "language": "ja"
-    },
     {
       "title": "Disrupting a coordinated model-distillation campaign",
       "titleJa": "調整されたモデル抽出キャンペーンを妨害する",
@@ -79,6 +68,17 @@
       "language": "en"
     },
     {
+      "title": "【Nano Banana 2.1】画像単価半額のGoogle最新モデルの性能・料金・使い方を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/nano-banana-2-1/",
+      "description": "2026年10月7日、Googleが画像生成・編集モデル「Nano Banana 2.1」を公開しました！ Nano Banana 2.1は、Nano Banana 2をベースにデザイン品質・マスク編集・被写体の一貫性を […]",
+      "publishedDate": "Wed, 07 Oct 2026 00:58:03 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Nano-Banana-2.1-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
       "titleJa": "NVIDIA Kumo Tabular が表形式予測の精度と効率の新たなフロンティアを確立",
       "link": "https://huggingface.co/blog/nvidia/kumo-tabular",
@@ -101,17 +101,6 @@
       "language": "en"
     },
     {
-      "title": "DevDay 2026 Recap",
-      "titleJa": "DevDay 2026 の概要",
-      "link": "https://openai.com/index/devday-2026-recap",
-      "description": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
-      "publishedDate": "Tue, 29 Sep 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "Introducing GPT-6.1 Sol",
       "titleJa": "GPT-6.1 ソルの紹介",
       "link": "https://openai.com/index/introducing-gpt-6-1-sol",
@@ -123,11 +112,11 @@
       "language": "en"
     },
     {
-      "title": "Introducing dots",
-      "titleJa": "ドットの紹介",
-      "link": "https://openai.com/index/introducing-dots",
-      "description": "Dots by OpenAI are proactive assistants that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.",
-      "publishedDate": "Tue, 29 Sep 2026 00:00:00 GMT",
+      "title": "DevDay 2026 Recap",
+      "titleJa": "DevDay 2026 の概要",
+      "link": "https://openai.com/index/devday-2026-recap",
+      "description": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
+      "publishedDate": "Tue, 29 Sep 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -222,15 +211,202 @@
       "language": "en"
     },
     {
-      "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
-      "titleJa": "ファルコン首長国連邦: LLM が方言、文化、ニュアンスを学ぶとき",
-      "link": "https://huggingface.co/blog/tiiuae/falcon-emirati",
-      "description": "",
-      "publishedDate": "Tue, 06 Oct 2026 06:44:39 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/659bc8a7b0f43ed69f0b2300/MJHJMYW3O4CkLvXvn7DOp.png",
+      "title": "Weight-loss drugs show signs of slowing biological aging, say drugmakers",
+      "titleJa": "製薬会社によると、減量薬には生物学的老化を遅らせる兆候が見られる",
+      "link": "https://www.technologyreview.com/2026/10/06/1145836/weight-loss-drugs-glp1-lilly-novo-aging-clocks/",
+      "description": "Popular weight-loss drugs may do more than help people shed pounds. They might also melt away the years. Drug giants Eli Lilly and Novo Nordisk say patients taking their drugs age less quickly, accord...",
+      "publishedDate": "Tue, 06 Oct 2026 16:40:36 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/silo-clock2.jpg?resize=1200,600",
       "language": "en"
+    },
+    {
+      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+      "titleJa": "アトラシアンと OpenAI がパートナーシップを拡大し、企業の知識を行動に移す",
+      "link": "https://openai.com/index/atlassian-partnership",
+      "description": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
+      "publishedDate": "Tue, 06 Oct 2026 16:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The Download: 10 climate tech companies to watch",
+      "titleJa": "ダウンロード: 注目すべき気候変動テクノロジー企業 10 社",
+      "link": "https://www.technologyreview.com/2026/10/06/1145796/the-download-10-climate-tech-companies-to-watch/",
+      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. 10 climate tech companies to watch Each year, MIT Technology R...",
+      "publishedDate": "Tue, 06 Oct 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/photo-BASEd3.jpg?fit=2128,1196",
+      "language": "en"
+    },
+    {
+      "title": "How Jump Trading is scaling quant research with ChatGPT",
+      "titleJa": "Jump Trading が ChatGPT を使用してクオンツ調査をどのように拡張しているか",
+      "link": "https://openai.com/index/jump-trading",
+      "description": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
+      "publishedDate": "Tue, 06 Oct 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Sharing AI progress in mathematics",
+      "titleJa": "数学における AI の進歩を共有する",
+      "link": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "description": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
+      "publishedDate": "Tue, 06 Oct 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "MiniMax APIとは？料金・使い方・実践検証を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/minimax-api/",
+      "description": "MiniMax APIは、テキスト・画像・動画・音声の生成を1つのキーで呼び出せるサービスです。開発元は2026年1月に香港上場した中国のAI企業で、入力単価は100万トークンあたり0.3ドルです。 とはいえ「日本から使 […]",
+      "publishedDate": "Tue, 06 Oct 2026 11:43:26 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Use-cases-for-dots_26010-1-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAI DevDayとは？2026年の発表まとめとGPT-6.1 Solの注目ポイントを解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/openai-devday-2025/",
+      "description": "OpenAI DevDayは、OpenAIが新モデルや開発ツールを発表する開発者向けイベントです。2026年は現地時間9月29日にサンフランシスコで開催され、GPT-6.1 Sol・dots・Decisions APIな […]",
+      "publishedDate": "Tue, 06 Oct 2026 11:19:41 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/OpenAI-DevDay_2609-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "2026 Climate Tech Companies to Watch",
+      "titleJa": "2026 年に注目すべき気候変動テクノロジー企業",
+      "link": "https://www.technologyreview.com/2026/10/06/1143800/2026-climate-tech-companies-to-watch/",
+      "description": "",
+      "publishedDate": "Tue, 06 Oct 2026 10:35:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/MITTR-CT1026-Thumbnail.png?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Here’s how our climate team picked 10 promising companies to watch",
+      "titleJa": "私たちの気候変動チームが注目すべき有望企業 10 社をどのように選んだかは次のとおりです",
+      "link": "https://www.technologyreview.com/2026/10/06/1144978/2026-climate-tech-companies-to-watch-how-we-chose/",
+      "description": "As the team at MIT Technology Review set out to choose companies for this year’s edition of our annual list of Climate Tech Companies to Watch, the challenge felt more daunting than any year since we...",
+      "publishedDate": "Tue, 06 Oct 2026 10:35:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/GettyImages-1321505097.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "WeLion New Energy and its semi-solid-state batteries",
+      "titleJa": "WeLion New Energyとその半固体電池",
+      "link": "https://www.technologyreview.com/2026/10/06/1144987/2026-climate-tech-companies-to-watch-welion-semi-solid-state-batteries/",
+      "description": "WeLion New Energy is on a quest to make safer, better batteries. The company’s semi-solid-state cells could improve safety and offer greater energy density than lithium-ion batteries to power electric...",
+      "publishedDate": "Tue, 06 Oct 2026 10:35:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/AP26190018414663.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Form Energy and its iron batteries",
+      "titleJa": "Form Energyとその鉄電池",
+      "link": "https://www.technologyreview.com/2026/10/06/1145020/2026-climate-tech-companies-to-watch-form-energy-iron-batteries/",
+      "description": "Form Energy is building iron-based batteries that can store energy for multiple days. The company is ramping up supply at its factory and signing deals for commercial projects. New solar and wind inst...",
+      "publishedDate": "Tue, 06 Oct 2026 10:35:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/Form-Energy-team-members-working-in-Form-Factory-1.jpg?w=840",
+      "language": "en"
+    },
+    {
+      "title": "X-energy and its helium-cooled nuclear reactors",
+      "titleJa": "X-energy とそのヘリウム冷却原子炉",
+      "link": "https://www.technologyreview.com/2026/10/06/1145025/2026-climate-tech-companies-to-watch-x-energy-helium-cooled-nuclear-reactors/",
+      "description": "X-energy is developing small modular reactors to satisfy some of the planet’s most power-hungry users: industrial manufacturers that need high temperatures to produce billions of tons of concrete, pla...",
+      "publishedDate": "Tue, 06 Oct 2026 10:35:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/DJI_20260824135059_0984_D.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Energy Dome and its carbon dioxide batteries",
+      "titleJa": "エナジードームとその二酸化炭素電池",
+      "link": "https://www.technologyreview.com/2026/10/06/1145032/2026-climate-tech-companies-to-watch-energy-dome-carbon-dioxide-batteries/",
+      "description": "There’s a growing need for long-duration storage to meet energy demand and balance out renewables on the grid. Energy Dome uses compressed carbon dioxide gas in its massive grid batteries, which can d...",
+      "publishedDate": "Tue, 06 Oct 2026 10:35:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/CO2BP-header.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Brimstone and its one-stop process for making cleaner cement and critical minerals",
+      "titleJa": "ブリムストーンと、よりクリーンなセメントと重要な鉱物を製造するためのワンストッププロセス",
+      "link": "https://www.technologyreview.com/2026/10/06/1145172/2026-climate-tech-companies-to-watch-brimstone-one-stop-process-making-cleaner-cement-critical-minerals/",
+      "description": "Brimstone is making strides on two industrial problems, reducing the emissions from cement and providing a way to produce more critical minerals within the US. If the company can do both, with the sam...",
+      "publishedDate": "Tue, 06 Oct 2026 10:35:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/Brimstone-Finals-0238.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "Highlanders、GENIACに採択。自動車製造の位置合わせ工程向けに国産フィジカルAI基盤モデルを開発",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/highlanders-physical-ai-humanoid/",
+      "description": "Highlandersは、経済産業省とNEDOが推進する国家プロジェクト「GENIAC」に採択され、国産フィジカルAI基盤モデルの研究開発を開始しました。国産ヒューマノイド「N」と組み合わせることで、工程の自動化や、労働 […]",
+      "publishedDate": "Tue, 06 Oct 2026 09:17:08 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/highlanders.png",
+      "language": "ja"
+    },
+    {
+      "title": "メルカリ、AIが写真から商品を推定する「持ち物査定」機能を提供開始。相場価格の目安を即時提示し出品まで支援",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/mercari-ai-item-appraisal-feature/",
+      "description": "メルカリは、フリマアプリ「メルカリ」で、手元にある商品の相場価格の目安をAIが提示する「持ち物査定」機能の提供を開始しました。商品を撮影またはバーコードを読み取ることで査定でき、結果画面からそのまま出品準備に進めます。 […]",
+      "publishedDate": "Tue, 06 Oct 2026 09:16:03 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/mercari-ai-item-appraisal-feature.png",
+      "language": "ja"
+    },
+    {
+      "title": "OpenAIのdotsの活用事例！Xで話題の使い方・失敗例を解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/use-cases-for-dots/",
+      "description": "2026年9月、OpenAIからChatGPTの新たなAIエージェントが発表されました。 今回発表された「dots（ドッツ）」は、会話を閉じたあとも動き続け、頼まれる前に気づいたことを知らせてくれる常時稼働型のエージェン […]",
+      "publishedDate": "Tue, 06 Oct 2026 09:11:11 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Use-cases-for-dots_26010-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "アイスマイリー、10/13（火）から4日間「CEATEC 2026」にブース出展 in幕張メッセ",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ceatec_2026/",
+      "description": "AIsmileyとAIsmiley Communityは、2026年10月13日（火）～10月16日（金）に幕張メッセにて開催の「CEATEC 2026」にブースを出展します。 会場では、最新のAIソリューションやニュー […]",
+      "publishedDate": "Tue, 06 Oct 2026 07:00:12 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/CEATEC2026.png",
+      "language": "ja"
     },
     {
       "title": "フォレンジックとは？種類・調査手順・費用相場とAI活用まで解説",
@@ -266,105 +442,6 @@
       "language": "ja"
     },
     {
-      "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
-      "titleJa": "LFM2.5-VL-DSpark によるビジョン言語モデルの高速化",
-      "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-      "description": "",
-      "publishedDate": "Thu, 24 Sep 2026 14:08:57 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/WgfT8N8Xyb6lBxSif7XLO.gif",
-      "language": "en"
-    },
-    {
-      "title": "Making global data easier to explore",
-      "titleJa": "グローバル データの探索を容易にする",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
-      "description": "UN System Data Commons Data webpage",
-      "publishedDate": "Thu, 17 Sep 2026 20:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/data-commons.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "3 ways to prep for your next big race with Search",
-      "titleJa": "検索を使用して次の大きなレースに備える 3 つの方法",
-      "link": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
-      "description": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
-      "publishedDate": "Thu, 10 Sep 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Race_Running_Tips.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "The eternal complement",
-      "titleJa": "永遠の補完物",
-      "link": "https://openai.com/index/the-eternal-complement",
-      "description": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
-      "publishedDate": "Thu, 01 Oct 2026 17:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How Albertsons Companies is reimagining retail from the inside out",
-      "titleJa": "Albertsons Companies が小売業をどのように内側から再考しているか",
-      "link": "https://openai.com/index/albertsons-reimagining-retail",
-      "description": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
-      "publishedDate": "Thu, 01 Oct 2026 16:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The Download: AI “mind-reading” and creative uses for small batteries",
-      "titleJa": "ダウンロード: AI の「読心」と小型バッテリーの創造的な使用法",
-      "link": "https://www.technologyreview.com/2026/10/01/1145592/the-download-ai-mind-reading-small-batteries/",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. An AI “mind-reading” tool can reconstruct what you’re looking...",
-      "publishedDate": "Thu, 01 Oct 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2025/07/Asteroid_Redamonti_7.2.25.jpg?fit=2128,1196",
-      "language": "en"
-    },
-    {
-      "title": "ローカルSLMとは？メリット・導入手順・代表モデルの性能を徹底検証",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/rocal-slm/",
-      "description": "「生成AIを使いたいけれど、社内の情報をクラウドに送るのは不安」という企業は少なくありません。そこで選択肢になるのがローカルSLMです。社内の機器の中だけで動かすため、情報漏洩リスクを抑えながら生成AIを業務に活用できま […]",
-      "publishedDate": "Thu, 01 Oct 2026 07:30:34 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Local-SLM_26010-1-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Gemini 4 Argon】出力100万トークンに対応したGoogleの新フロンティアモデルを徹底解説！",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/gemini-4-argon/",
-      "description": "2026年10月1日、Googleが新たなフロンティアモデル「Gemini 4 Argon」を発表しました！Gemini 4 Argonは、複雑で長期にわたる業務フローでも深い推論を持続できるように設計されたモデルです。 […]",
-      "publishedDate": "Thu, 01 Oct 2026 07:00:05 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Gemini-4-Argon-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
-      "titleJa": "The Den は、ChatGPT Work を使用して、成長のために週 10 ～ 15 時間を確保しています",
-      "link": "https://openai.com/index/the-den-family-social",
-      "description": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
-      "publishedDate": "Thu, 01 Oct 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
       "title": "Claude Opus 5.5は建築で使える？Xで話題の3Dモデリング・図面読み取り事例と試し方を解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/claude-opus-5-5-architecture/",
@@ -396,39 +473,6 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_OpenDots-1024x576.webp",
       "language": "ja"
-    },
-    {
-      "title": "The Agent Said It Was Done. The Database Disagreed.",
-      "titleJa": "エージェントはそれは終わったと言いました。データベースは同意しませんでした。",
-      "link": "https://huggingface.co/blog/microsoft/thinkingbox",
-      "description": "",
-      "publishedDate": "Sat, 03 Oct 2026 22:56:48 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/64b8491203124195cd795cad/NStwJm1AafDELVsU4KGwS.png",
-      "language": "en"
-    },
-    {
-      "title": "How we will do better for Australia",
-      "titleJa": "オーストラリアのためにどうすればより良くなれるか",
-      "link": "https://openai.com/index/how-we-will-do-better-for-australia",
-      "description": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
-      "publishedDate": "Mon, 28 Sep 2026 19:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Towards safety cases for frontier AI training",
-      "titleJa": "フロンティアAIトレーニングの安全事例に向けて",
-      "link": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
-      "description": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents",
-      "publishedDate": "Mon, 28 Sep 2026 19:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
     },
     {
       "title": "【Clef】Cloudflare初の判断モデルとは？Jevとの違い・性能・料金・使い方を徹底解説",
@@ -497,28 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "日本テクトシステムズの認知機能セルフチェックアプリ搭載音声AIモデル、独立検証で高いMCI判別精度を実証",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/nippon-tect-onsei-pro-mci-ai/",
-      "description": "日本テクトシステムズは、認知機能セルフチェックアプリ「ONSEI Pro」に搭載された音声AIモデルの独立検証を実施し、高いMCI判別精度を実証しました。専門職の立ち会いを必要としない高い汎化性能も示されています。 この […]",
-      "publishedDate": "Mon, 05 Oct 2026 08:24:30 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/onsei-pro.png",
-      "language": "ja"
-    },
-    {
-      "title": "WEB雑誌「AI博覧会 Summer 2026 特集号」 注目の出展企業6社をピックアップ！",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/aihakusummer2026_specialissue/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年8月26日(水)・27日(木)に開催された「AI博覧会 Summer 2026」の特集号を公開しました。 本資料では、出展 […]",
-      "publishedDate": "Mon, 05 Oct 2026 03:45:30 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/1180_1200x628.jpg",
-      "language": "ja"
-    },
-    {
       "title": "Claudeのリセット権とは？利用上限を自分で回復できる新機能の使い方・注意点を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/claude-reset/",
@@ -530,25 +552,25 @@
       "language": "ja"
     },
     {
-      "title": "「シニア・プレシニアの商品・サービス購買行動調査」結果発表。3割がAI接客に「抵抗なし」",
+      "title": "マイクロソフト、VS CodeにAIモデルのオーケストレーションで高品質低コストなAIを実現する「HydraFusion」をプレビュー実装",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/dentsu-senior-ai-survey/",
-      "description": "電通と電通ダイレクトは「電通シニアラボ」を調査主体として、直近3か月以内に通販か店頭で特定の商品を購入した全国の50〜79歳を対象に「シニア・プレシニアの商品・サービス購買行動調査」を行いました。 このニュースのポイント […]",
-      "publishedDate": "Fri, 02 Oct 2026 06:33:36 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/dentsu.png",
+      "link": "https://www.publickey1.jp/blog/26/vs_codeaiaihydrafusion.html",
+      "description": "マイクロソフトは9月30日付けでリリースされたVisual Studio Code 1.140（以下、VS Code）で、複数のAIベンダから提供されているAIモデルをオーケストレーションすることでより高品質で低コストを実現するという「Hy...",
+      "publishedDate": "2026-10-06T15:47:53Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/vscode-hydrafusion-rp.png",
       "language": "ja"
     },
     {
-      "title": "Grok Botとは？料金・使い方・OpenAI dotsとの違いを徹底解説",
+      "title": "FDE（フォワードデプロイドエンジニアリング）によって開発されたAIエージェントの7割は使われず、FDEの名前で単なるコンサルティングが販売されるようになる危険が高まるとガートナーが予測",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/grok-bot/",
-      "description": "2026年8月12日、SpaceXAIがAIチームメイト「Grok Bot」をベータ公開しました！ Grok Botは、チャットで仕事を頼むと自分専用のクラウドコンピュータでアプリにサインインし、作業を最後まで終わらせて […]",
-      "publishedDate": "Fri, 02 Oct 2026 05:19:28 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/fdeai7fde.html",
+      "description": "米調査会社のガートナーは、ベンダーのFDE（フォワードデプロイドエンジニアあるいはフォワードデプロイドエンジニアリング）によって開発されたAIエージェントの70％が2028年までに企業に使われずに放棄されるだろう（Gartner Predi...",
+      "publishedDate": "2026-10-06T15:43:31Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_Grok-Bot-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/gartner-fde-washing.png",
       "language": "ja"
     },
     {
@@ -692,28 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/copilot-managed-runtime-pp01.png",
-      "language": "ja"
-    },
-    {
-      "title": "Go言語で書かれた高速なIDE「Rune」、オープンソースで公開。ターミナルとコマンドプロンプト中心の開発環境、複数リモートノードをローカルのように操作可能",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/goiderune.html",
-      "description": "開発ツールベンダのUnstablebuildは、Go言語製のIDE「Rune」をオープンソースで公開したことを発表しました。 Runeの画面 RuneはGo言語によるネイティブアプリケーションとして提供される高速なIDEです。GPUによる描...",
-      "publishedDate": "2026-09-24T15:45:08Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/rune-oss01.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Cloudflare、Python Workersを正式サービスに。PythonでWebサイトの構築、データベース接続、オブジェクトストレージ操作など",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/cloudflarepython_wrokerspythonweb.html",
-      "description": "Cloudflareは、同社のサーバレス実行基盤上でPythonを実行できる「Python Workers」が正式サービスになったことを発表しました。 JavaScriptによるサーバレス実行基盤のCloudflare Workers上でW...",
-      "publishedDate": "2026-09-23T15:26:46Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/OQ1Z-11O.jpg",
       "language": "ja"
     }
   ]
