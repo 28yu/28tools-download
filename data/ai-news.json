@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-07T06:54:43.699649",
+  "lastUpdated": "2026-10-08T07:03:08.178758",
   "articles": [
     {
       "title": "Disrupting a coordinated model-distillation campaign",
@@ -7,17 +7,6 @@
       "link": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
       "description": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
       "publishedDate": "Wed, 30 Sep 2026 10:30:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Helping small businesses put AI to work",
-      "titleJa": "中小企業の AI 活用を支援",
-      "link": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
-      "description": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
-      "publishedDate": "Wed, 30 Sep 2026 10:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -57,14 +46,124 @@
       "language": "en"
     },
     {
-      "title": "Recreating a 70-year love story frame by frame",
-      "titleJa": "70年にわたる愛の物語を一コマ一コマ再現",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
-      "description": "An elderly couple sitting in a movie theater. Overlayed are \"Teulluride Film Festival\" and \"Love, Rendered\"",
-      "publishedDate": "Wed, 09 Sep 2026 16:00:00 +0000",
+      "title": "Multimodal open d1 decision models for the edge",
+      "titleJa": "エッジ向けのマルチモーダルオープン d1 意思決定モデル",
+      "link": "https://huggingface.co/blog/LiquidAI/open-d1",
+      "description": "",
+      "publishedDate": "Wed, 07 Oct 2026 16:54:33 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/hLsllw4zhC04cVGiV69v0.png",
+      "language": "en"
+    },
+    {
+      "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
+      "titleJa": "1 つのモデルファミリー、2 つのゴールドレベルの結果: IOI および IMO 向けの Nemotron の微調整",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+      "description": "",
+      "publishedDate": "Wed, 07 Oct 2026 12:45:31 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/67b8b0096c3182e96bf6cea1/zB6BNaB-3tiCCsnOo7gik.png",
+      "language": "en"
+    },
+    {
+      "title": "The Download: weight-loss drugs slowing aging and carbon dioxide batteries",
+      "titleJa": "ダウンロード: 老化を遅らせる減量薬と二酸化炭素バッテリー",
+      "link": "https://www.technologyreview.com/2026/10/07/1145895/the-download-weight-loss-drugs-slow-aging-carbon-dioxide-batteries/",
+      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Weight-loss drugs show signs of slowing biological aging, say...",
+      "publishedDate": "Wed, 07 Oct 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/01/Photo-2_AbsolicsInc.jpg?fit=2128,1196",
+      "language": "en"
+    },
+    {
+      "title": "Helping teens learn, plan, and shape the future of AI",
+      "titleJa": "十代の若者たちが AI の未来を学び、計画し、形作るのを支援する",
+      "link": "https://openai.com/index/teens-learn-and-plan",
+      "description": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+      "publishedDate": "Wed, 07 Oct 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Introducing Playground: Create and play custom games",
+      "titleJa": "Playground の紹介: カスタム ゲームを作成してプレイする",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+      "description": "Overview of Playground",
+      "publishedDate": "Wed, 07 Oct 2026 12:00:00 +0000",
       "source": "Google AI Blog",
       "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/LOVE_RENDERED_HERO_BLOG_SANS_LO.max-600x600.format-webp.webp",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/THUMBNAIL_BLOG.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Google、新モデル「Gemini 4 Argon」発表。出力トークン上限を100万に拡大、複雑なワークフローに対応",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/google-gemini-4-argon-release/",
+      "description": "Googleは、新しいフロンティアモデル「Gemini 4 Argon」を発表しました。出力トークン上限を100万に拡大し、複雑なワークフロー全体にわたって深い推論を持続できるように構築されています。 このニュースのポイ […]",
+      "publishedDate": "Wed, 07 Oct 2026 08:32:41 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/gemini-argon-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "スニフアウト、「AIガイドライン策定支援」を提供開始。企業の生成AIやAIエージェントの安全な活用を支援",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/sniffout-ai-guideline-support/",
+      "description": "スニフアウトは、企業向けに生成AIやAIエージェントの安全な活用に向けたルール・ガイドラインの策定を支援する「AIガイドライン策定支援」の提供を開始しました。企業ごとの利用状況やツールに合わせてガイドラインを作成し、社内 […]",
+      "publishedDate": "Wed, 07 Oct 2026 08:32:31 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/sniffout-ai-guideline-support.png",
+      "language": "ja"
+    },
+    {
+      "title": "北大とニトリ、大規模マルチモーダルモデル（LMM）でインテリアのスタイルを定量化。現状と理想のギャップも提示",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/hokudai-nitori-ai-interior-style/",
+      "description": "北大とニトリは、大規模マルチモーダルモデル（LMM）を用いて、部屋の写真や理想のイメージからインテリアのスタイルを定量化する技術を開発しました。インテリアのスタイルを数値化し、現状と理想の差を示します。 このニュースのポ […]",
+      "publishedDate": "Wed, 07 Oct 2026 08:32:26 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/hokudai-nitori-ai-interior-style.png",
+      "language": "ja"
+    },
+    {
+      "title": "日立製作所とファナック、フィジカルAI実装のパートナーシップを締結。製造現場における作業の自律化を推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/hitachi-fanuc-physical-ai/",
+      "description": "日立とファナックは、フィジカルAI実装の共同事業化に向けた戦略的パートナーシップを締結しました。日立のAI技術とファナックの産業用ロボットを組み合わせた共同実証を推進します。 このニュースのポイント 日立とファナック、A […]",
+      "publishedDate": "Wed, 07 Oct 2026 08:32:22 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/hitachi-fanuc.png",
+      "language": "ja"
+    },
+    {
+      "title": "Microsoft、Copilotの3つの新機能発表。アプリ構築や自律的なタスク実行が可能に",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/microsoft-copilot-new-features/",
+      "description": "Microsoftは、AIアシスタント「Copilot」において「Home」「Code」「Autopilot」の3つの新機能を追加したと発表しました。利用者の作業状況に応じたサポートや、自然言語によるアプリ構築、自律的な […]",
+      "publishedDate": "Wed, 07 Oct 2026 08:31:51 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/microsoft.png",
+      "language": "ja"
+    },
+    {
+      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+      "titleJa": "ラディソン ホテル グループ、ホテル検索を ChatGPT に導入",
+      "link": "https://openai.com/index/radisson",
+      "description": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+      "publishedDate": "Wed, 07 Oct 2026 07:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -79,14 +178,14 @@
       "language": "ja"
     },
     {
-      "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-      "titleJa": "NVIDIA Kumo Tabular が表形式予測の精度と効率の新たなフロンティアを確立",
-      "link": "https://huggingface.co/blog/nvidia/kumo-tabular",
-      "description": "",
-      "publishedDate": "Tue, 29 Sep 2026 15:30:38 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/684040a5de1ad7f4fcec9508/HyVlq-3d7EVj_M-m_TfHJ.png",
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "titleJa": "GPT-6 とすべての人のためのインテリジェント UI",
+      "link": "https://openai.com/index/gpt-6-for-everyone",
+      "description": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
+      "publishedDate": "Wed, 07 Oct 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -98,28 +197,6 @@
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/phhhj_BLOJbvnTFhVaZ5y.png",
-      "language": "en"
-    },
-    {
-      "title": "Introducing GPT-6.1 Sol",
-      "titleJa": "GPT-6.1 ソルの紹介",
-      "link": "https://openai.com/index/introducing-gpt-6-1-sol",
-      "description": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
-      "publishedDate": "Tue, 29 Sep 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "DevDay 2026 Recap",
-      "titleJa": "DevDay 2026 の概要",
-      "link": "https://openai.com/index/devday-2026-recap",
-      "description": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
-      "publishedDate": "Tue, 29 Sep 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
       "language": "en"
     },
     {
@@ -343,50 +420,6 @@
       "language": "en"
     },
     {
-      "title": "Energy Dome and its carbon dioxide batteries",
-      "titleJa": "エナジードームとその二酸化炭素電池",
-      "link": "https://www.technologyreview.com/2026/10/06/1145032/2026-climate-tech-companies-to-watch-energy-dome-carbon-dioxide-batteries/",
-      "description": "There’s a growing need for long-duration storage to meet energy demand and balance out renewables on the grid. Energy Dome uses compressed carbon dioxide gas in its massive grid batteries, which can d...",
-      "publishedDate": "Tue, 06 Oct 2026 10:35:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/CO2BP-header.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Brimstone and its one-stop process for making cleaner cement and critical minerals",
-      "titleJa": "ブリムストーンと、よりクリーンなセメントと重要な鉱物を製造するためのワンストッププロセス",
-      "link": "https://www.technologyreview.com/2026/10/06/1145172/2026-climate-tech-companies-to-watch-brimstone-one-stop-process-making-cleaner-cement-critical-minerals/",
-      "description": "Brimstone is making strides on two industrial problems, reducing the emissions from cement and providing a way to produce more critical minerals within the US. If the company can do both, with the sam...",
-      "publishedDate": "Tue, 06 Oct 2026 10:35:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/Brimstone-Finals-0238.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Highlanders、GENIACに採択。自動車製造の位置合わせ工程向けに国産フィジカルAI基盤モデルを開発",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/highlanders-physical-ai-humanoid/",
-      "description": "Highlandersは、経済産業省とNEDOが推進する国家プロジェクト「GENIAC」に採択され、国産フィジカルAI基盤モデルの研究開発を開始しました。国産ヒューマノイド「N」と組み合わせることで、工程の自動化や、労働 […]",
-      "publishedDate": "Tue, 06 Oct 2026 09:17:08 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/highlanders.png",
-      "language": "ja"
-    },
-    {
-      "title": "メルカリ、AIが写真から商品を推定する「持ち物査定」機能を提供開始。相場価格の目安を即時提示し出品まで支援",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/mercari-ai-item-appraisal-feature/",
-      "description": "メルカリは、フリマアプリ「メルカリ」で、手元にある商品の相場価格の目安をAIが提示する「持ち物査定」機能の提供を開始しました。商品を撮影またはバーコードを読み取ることで査定でき、結果画面からそのまま出品準備に進めます。 […]",
-      "publishedDate": "Tue, 06 Oct 2026 09:16:03 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/mercari-ai-item-appraisal-feature.png",
-      "language": "ja"
-    },
-    {
       "title": "OpenAIのdotsの活用事例！Xで話題の使い方・失敗例を解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/use-cases-for-dots/",
@@ -398,47 +431,80 @@
       "language": "ja"
     },
     {
-      "title": "アイスマイリー、10/13（火）から4日間「CEATEC 2026」にブース出展 in幕張メッセ",
+      "title": "日立、フィジカルAIの安全運用に向けたガードレール技術を開発。過度な停止を89%削減",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ceatec_2026/",
-      "description": "AIsmileyとAIsmiley Communityは、2026年10月13日（火）～10月16日（金）に幕張メッセにて開催の「CEATEC 2026」にブースを出展します。 会場では、最新のAIソリューションやニュー […]",
-      "publishedDate": "Tue, 06 Oct 2026 07:00:12 +0000",
+      "link": "https://aismiley.co.jp/ai_news/hitachi-physical-ai-guardrail/",
+      "description": "日立は、社会インフラにおけるフィジカルAIの安全運用に向けたガードレール技術を開発しました。設計時の安全分析から実行時の制御指令監視・補正まで一貫して支援し、過度な停止を89%削減できることを確認しました。 このニュース […]",
+      "publishedDate": "Thu, 08 Oct 2026 06:59:41 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/CEATEC2026.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/hitachi-physical-ai-guardrail-eye.png",
       "language": "ja"
     },
     {
-      "title": "フォレンジックとは？種類・調査手順・費用相場とAI活用まで解説",
+      "title": "組み込みAI（生成AI）の活用事例！スマホ・車載・産業機器の最新動向と検証結果を解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-forensic-ransomware/",
-      "description": "社内のPCがランサムウェアに感染した、あるいは退職予定の社員による機密データの持ち出しが疑われる━このようなインシデント発生時に、デジタル機器の痕跡から「いつ・誰が・何をしたか」を法的に有効な形で突き止める手法が「フォレ […]",
-      "publishedDate": "Tue, 06 Oct 2026 02:24:13 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/forensic.png",
+      "link": "https://weel.co.jp/media/tech/embedded-ai-use-cases/",
+      "description": "組み込みAIは、AIモデルを端末や機器側に搭載し、入力に対する判断や生成をその場で行う仕組みです。この処理を「推論」と呼びます。本記事では、従来の物体検知・異常検知ではなく、生成AIの大規模言語モデル（LLM）や小型言語 […]",
+      "publishedDate": "Thu, 08 Oct 2026 06:54:50 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Embedded-AI-Use-Cases_26010-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "OpenClawとは？ChatGPTとの違い・料金・安全な導入手順まで解説",
+      "title": "Gemini 4 Argonとは？性能・100万出力・料金・いつ使える？",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/what-is-open-claw/",
-      "description": "「面倒なPC作業をAIに丸投げできたら…」と思ったことはありませんか？OpenClaw（オープンクロー）はSlackやDiscordから指示するだけで、あなたのPCを自律的に操作するオープンソースAIエージェントです。 […]",
-      "publishedDate": "Tue, 06 Oct 2026 02:22:25 +0000",
+      "link": "https://aismiley.co.jp/ai_news/gemini-4-argon/",
+      "description": "Googleの最新フロンティアモデル「Gemini 4 Argon」が、2026年9月30日（米国時間）に発表されました。コーディング、金融・法務などの専門業務、サイバーセキュリティ防御を強みとするモデルです。 「Gem […]",
+      "publishedDate": "Thu, 08 Oct 2026 02:30:05 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/OpenClaw.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/Gemini4Argon.png",
       "language": "ja"
     },
     {
-      "title": "【10/30開催ウェビナー】「使われない生成AI」をゼロにする！プロセス再設計×人材育成で実現する全社定着　～人とAIの役割分担から、現場業務への組み込み、研修・エージェント活用事例まで一挙公開～",
+      "title": "【Claude Haiku 5.5】Haiku 4.5比75%安い最速モデルの性能・料金・使い方を徹底解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/20261030webinar/",
-      "description": "国内最大級のAIポータルメディア「AIsmiley」を運営する株式会社アイスマイリーは、2026年10月30日（金）12時からAIの全社活用、現場業務への組み込みをテーマにウェビナーを開催します。 生成AIを導入しながら […]",
-      "publishedDate": "Tue, 06 Oct 2026 01:00:32 +0000",
+      "link": "https://weel.co.jp/media/tech/claude-haiku-5-5/",
+      "description": "2026年10月8日、Anthropicは同社史上もっとも安くて速い小型モデル「Claude Haiku 5.5」を発表しました！ Haiku 4.5と比べて平均で約75%安く動くうえ、知識労働やPC操作のスコアは前モデ […]",
+      "publishedDate": "Thu, 08 Oct 2026 01:41:27 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Haiku-5.5-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【次世代の自動化】RPAとAIエージェントの違いとは？使い分けから連携パターンまで",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/rpa-aiagent-automation/",
+      "description": "AI技術が急速に進化するなか、すでにRPAを運用している企業では、新たな自動化の方針を決めかねて検討がストップしてしまうケースが増えています。稼働中のロボットを止めるわけにもいかず、現場の担当者は判断に迷っているのではな […]",
+      "publishedDate": "Thu, 08 Oct 2026 01:04:57 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/1179_1200x628_4.jpg",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/RpaAIagent.png",
+      "language": "ja"
+    },
+    {
+      "title": "グラウンディングとは？生成AIの回答精度を高める仕組みとRAGとの違い",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/grounding-rag-generation-ai/",
+      "description": "企業での生成AI活用が進むにつれ、もっともらしい嘘（ハルシネーション）を防ぐ手法として「グラウンディング（Grounding）」が注目を集めています。 しかし、技術文書を読んでも説明が難解で、「RAG（検索拡張生成）とは […]",
+      "publishedDate": "Thu, 08 Oct 2026 01:04:22 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/Grounding.png",
+      "language": "ja"
+    },
+    {
+      "title": "アイスマイリー、10/21（水）から3日間、「Japan DX & AX Week 秋 2026」にブース出展",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/japan-dx-ax-autumn-2026/",
+      "description": "AIsmileyとAIsmiley Communityは、2026年10月21日（水）～10月23日（金）に幕張メッセにて開催の「Japan DX & AX Week 秋 2026」にブースを出展します。 会場で […]",
+      "publishedDate": "Thu, 08 Oct 2026 01:00:50 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/EyeCatch.png",
       "language": "ja"
     },
     {
@@ -464,17 +530,6 @@
       "language": "ja"
     },
     {
-      "title": "【OpenDots】OpenAI dotsのOSS版！使い方・料金・ライセンスを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/opendots/",
-      "description": "2026年10月2日、CopilotKitがOpenAIのdotsをオープンソースで再現したテンプレート「OpenDots」を公開しました！OpenAIのdotsは、専用のクラウドコンピューターを持ち、チャットを閉じたあ […]",
-      "publishedDate": "Sun, 04 Oct 2026 11:29:15 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/AIモン_OpenDots-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "【Clef】Cloudflare初の判断モデルとは？Jevとの違い・性能・料金・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/clef/",
@@ -497,58 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "AI inside、Wanderlustを連結子会社化。大型AI案件への対応体制を拡大",
+      "title": "AWS、DuckDBをAurora PostgreSQLに統合。ETL不要で直接データレイクを読み取り可能にしたと発表",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-inside-wanderlust-subsidiary/",
-      "description": "AI insideは、Wanderlustを2026年10月より連結子会社化することを発表しました。両社の技術・支援力を組み合わせ、大型化・高度化するAI活用案件への対応体制を拡大します。 このニュースのポイント AI […]",
-      "publishedDate": "Mon, 05 Oct 2026 08:31:18 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/ai-inside-wanderlust-subsidiary.png",
-      "language": "ja"
-    },
-    {
-      "title": "Sakana AI、「現代AIの父」ユルゲン・シュミットフーバー博士のチーフ・サイエンティフィック・アドバイザー就任を発表",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sakana-ai-schmidhuber/",
-      "description": "Sakana AIは、ユルゲン・シュミットフーバー氏がチーフ・サイエンティフィック・アドバイザーとして参画すると発表しました。同氏の知見を活かし、世界モデルやフィジカルAIの開発を牽引するほか、新設のRSI Labの舵取 […]",
-      "publishedDate": "Mon, 05 Oct 2026 08:31:15 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/Sakana-AI-Schmidhuber-Chief-Scientific-Advisor-Participation.png",
-      "language": "ja"
-    },
-    {
-      "title": "東大研究チーム、盆栽AIプラットフォーム「JinShari」の先端機能を発表。生成AIを用いた美意識の言語化で日本文化理解を促進",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/jinshari-bonsai-ai/",
-      "description": "東大大学院の研究チームは、盆栽AIプラットフォーム「JinShari」の先端機能を第10回世界盆栽大会で発表しました。また、生成AIを用いて盆栽の美意識を客観的な言葉として本プラットフォーム実装する研究プロジェクトの資金 […]",
-      "publishedDate": "Mon, 05 Oct 2026 08:29:43 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/jinshari-bonsai-ai-eye.png",
-      "language": "ja"
-    },
-    {
-      "title": "TOPPANと八雲町、AIによるクマ検知・通報自動化システムの実証開始。職員の初動負荷を軽減",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/toppan-yakumo-posre-demonstration/",
-      "description": "TOPPANと八雲町は、AI画像解析によるクマ出没の検知・通報と対応状況の一元管理に向けた実証実験を開始しました。2026年9月18日から11月30日まで八雲町内で実施し、クマの早期発見や職員への迅速な情報連携、獣害対策 […]",
-      "publishedDate": "Mon, 05 Oct 2026 08:24:33 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/TOPPAN-yakumo-PosRe-Demonstration-experiment.png",
-      "language": "ja"
-    },
-    {
-      "title": "Claudeのリセット権とは？利用上限を自分で回復できる新機能の使い方・注意点を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/claude-reset/",
-      "description": "2026年9月、AnthropicのClaudeに、利用上限を自分で回復できる新しい仕組みが登場しました。今回配布された「Claudeのリセット権」は、5時間ごとの利用上限や週間の利用上限を、ユーザー自身が好きなタイミン […]",
-      "publishedDate": "Fri, 02 Oct 2026 13:27:03 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/awsduckdbaurora_postgresqletl.html",
+      "description": "Amazon Web Services（AWS）は、Amazon Aurora PostgreSQLにDuckDBを統合し、Apache Icebergなどで構築したデータレイクのデータを直接読み取って処理できるようになったことを発表しまし...",
+      "publishedDate": "2026-10-07T15:59:06Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-reset_26010-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/HTgqiiqaQAAH1MK.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/docker-cloud-sandboxes-la.png",
-      "language": "ja"
-    },
-    {
-      "title": "マイクロソフト、企業内アプリの実行基盤「Copilot Managed Runtime」プレビュー公開。Microsoft 365と同じテナント内でコード実行、管理者による集中管理も",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/copilot_managed_runtimemicrosoft_365.html",
-      "description": "マイクロソフトは、AIコーディングエージェントのMicrosoft Copilotなどで開発した社内アプリケーションを実行するためのセキュアな基盤「Copilot Managed Runtime」をパブリックプレビューとして公開しました。 ...",
-      "publishedDate": "2026-09-27T15:59:50Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/copilot-managed-runtime-pp01.png",
       "language": "ja"
     }
   ]
