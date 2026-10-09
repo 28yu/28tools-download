@@ -1,36 +1,6 @@
 {
-  "lastUpdated": "2026-10-08T03:40:49.327178",
+  "lastUpdated": "2026-10-09T03:48:20.286962",
   "articles": [
-    {
-      "title": "敷鉄板（しきてっぱん）とは？｜使用シーン・基準とサイズ・重さ早見表、積算数量の出し方",
-      "link": "https://news.build-app.jp/article/43100/",
-      "description": "工事現場で、重機の通り道やクレーンの足元に敷かれている大きな鋼板が「敷鉄板」です。 最もよく使われる5×10サイズ・厚さ22mmでも、1枚あ...",
-      "publishedDate": "Wed, 07 Oct 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/54331dacccd50c9077437a0f5ca83ffa-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "Nefront、清水建設と共創した巡回・点検支援サービス「巡回GO」を正式リリース",
-      "link": "https://news.build-app.jp/article/43067/",
-      "description": "株式会社Nefront（本社：東京都渋谷区、代表取締役CEO：今村翔太）は、清水建設株式会社と共に開発・改善を進めてきた巡回・点検支援サービ...",
-      "publishedDate": "Wed, 07 Oct 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/nefront_junkai_go-130x73.webp",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省、改正建築士法の一部を令和9年4月1日に施行、設計・工事監理契約を全面的に書面化",
-      "link": "https://news.build-app.jp/article/43063/",
-      "description": "国土交通省は令和8年10月6日、改正建築士法の一部について、施行日を定める政令などが閣議決定されたと発表しました。 建築士が行う設計や工事監...",
-      "publishedDate": "Wed, 07 Oct 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/06/98e9d3fb51f39d2bc11d2fb6fdc6f3d6-130x87.jpeg",
-      "language": "ja"
-    },
     {
       "title": "High & Medium Voltage Power transmission & distribution Project Plan out for voting.",
       "link": "https://www.buildingsmart.org/high-medium-voltage-power-transmission-distribution-project-plan-out-for-voting/",
@@ -40,46 +10,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "【2026年版】コンクリート桝（ます）とは？｜種類・サイズ規格・価格相場・施工方法をプロが徹底解説",
-      "link": "https://news.build-app.jp/article/35574/",
-      "description": "水たまりやゴミの滞留などによって起こる「排水トラブル」を根本から解決したいときに役立つのが「コンクリート桝（ます）」です。しかし、どのような...",
-      "publishedDate": "Tue, 06 Oct 2026 06:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2025/06/369d573570de641161db412170229a0d-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "パークタワー渋谷笹塚｜笹塚駅南口東地区開発計画のまちづくり構想で資産価値は変わる？",
-      "link": "https://news.build-app.jp/article/42993/",
-      "description": "ササ・ハツ・ハタの新しいまちづくり「パークタワー渋谷笹塚」 「ササ・ハツ・ハタ」をご存知でしょうか？渋谷区の「笹塚・幡ヶ谷・初台」地区の愛称...",
-      "publishedDate": "Tue, 06 Oct 2026 04:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/daf82376127faddc87c173c85c84b2f8-130x82.png",
-      "language": "ja"
-    },
-    {
-      "title": "熊谷組、国内初のスーパーホットコラムへの現場溶接ロボット適用で省人化と品質安定化を推進",
-      "link": "https://news.build-app.jp/article/43025/",
-      "description": "熊谷組は、建築現場での鉄骨溶接作業の省人化や省力化、施工品質の安定を目的に開発と検証を重ねてきた現場溶接ロボットを、熱間成形角形鋼管「スーパ...",
-      "publishedDate": "Tue, 06 Oct 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/welding_superhotcolumn-130x98.png",
-      "language": "ja"
-    },
-    {
-      "title": "清水建設が施設管理ソリューションde大工を提供開始、建物情報の一元管理と技術支援を一体で提供",
-      "link": "https://news.build-app.jp/article/43020/",
-      "description": "清水建設（社長：新村達也）は2026年10月1日、建物を所有するオーナーや、企業の施設管理部門・部署を総合的に支えるソリューション「de大工...",
-      "publishedDate": "Tue, 06 Oct 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/dedaiku-facility-130x62.jpg",
-      "language": "ja"
     },
     {
       "title": "buildingSMART International Announces Finalists for the 2026 openBIM® Awards",
@@ -129,26 +59,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/cloud-browser-70percent-ogp-1200x630-1-1024x538.webp",
-      "language": "ja"
-    },
-    {
-      "title": "アーリーリフレクション、BIMSTOKのAI検索を点検・異常・修繕履歴まで拡大し情報検索を効率化",
-      "link": "https://news.build-app.jp/article/43094/",
-      "description": "アーリーリフレクション（東京都千代田区、代表取締役：田中喜之）は、BIM/CIM施設管理クラウド「BIMSTOK」のAIアシスタント機能を2...",
-      "publishedDate": "Thu, 08 Oct 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/bimstok_maintenance_search-130x73.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "戸田建設、IoT潅水装置の土壌センサー制御で屋上緑化の年間潅水量を84.2%削減",
-      "link": "https://news.build-app.jp/article/43089/",
-      "description": "戸田建設は、BH株式会社との共同研究として、茨城県つくば市の筑波技術研究所で屋上緑化の水やりを見直す実証を行いました。使用したのは、土壌の水...",
-      "publishedDate": "Thu, 08 Oct 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/irrigation_rooftop_greenery-130x58.png",
       "language": "ja"
     },
     {
@@ -220,16 +130,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "インフラを守る点検会社を、DXで支えたい。TRASSが橋梁点検の効率化に挑む理由 【前編】",
-      "link": "https://news.build-app.jp/article/42880/",
-      "description": "橋梁をはじめとするインフラの維持管理では、点検業務の重要性が高まる一方で、現場記録の整理や写真管理、成果品作成など、多くの手作業が依然として...",
-      "publishedDate": "Mon, 05 Oct 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/1005_thumbnail_part1-130x82.png",
-      "language": "ja"
     },
     {
       "title": "IFCX – Core & Modularisation Project Update",
