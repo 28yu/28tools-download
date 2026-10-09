@@ -1,17 +1,6 @@
 {
-  "lastUpdated": "2026-10-08T07:03:08.178758",
+  "lastUpdated": "2026-10-09T07:11:21.431594",
   "articles": [
-    {
-      "title": "Disrupting a coordinated model-distillation campaign",
-      "titleJa": "調整されたモデル抽出キャンペーンを妨害する",
-      "link": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-      "description": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
-      "publishedDate": "Wed, 30 Sep 2026 10:30:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
     {
       "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
       "titleJa": "Open TTS Leaderboard: 多言語テキスト読み上げおよび音声クローン作成のスケーラブルな評価",
@@ -57,6 +46,17 @@
       "language": "en"
     },
     {
+      "title": "Introducing Falcon ASR",
+      "titleJa": "ファルコン ASR の紹介",
+      "link": "https://huggingface.co/blog/tiiuae/falcon-asr",
+      "description": "",
+      "publishedDate": "Wed, 07 Oct 2026 13:21:03 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/671a3e44cf97dc64441e170a/bJ2aGPIX6WLWagE10j5y3.png",
+      "language": "en"
+    },
+    {
       "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
       "titleJa": "1 つのモデルファミリー、2 つのゴールドレベルの結果: IOI および IMO 向けの Nemotron の微調整",
       "link": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
@@ -99,61 +99,6 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/THUMBNAIL_BLOG.max-600x600.format-webp.webp",
       "language": "en"
-    },
-    {
-      "title": "Google、新モデル「Gemini 4 Argon」発表。出力トークン上限を100万に拡大、複雑なワークフローに対応",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/google-gemini-4-argon-release/",
-      "description": "Googleは、新しいフロンティアモデル「Gemini 4 Argon」を発表しました。出力トークン上限を100万に拡大し、複雑なワークフロー全体にわたって深い推論を持続できるように構築されています。 このニュースのポイ […]",
-      "publishedDate": "Wed, 07 Oct 2026 08:32:41 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/gemini-argon-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "スニフアウト、「AIガイドライン策定支援」を提供開始。企業の生成AIやAIエージェントの安全な活用を支援",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/sniffout-ai-guideline-support/",
-      "description": "スニフアウトは、企業向けに生成AIやAIエージェントの安全な活用に向けたルール・ガイドラインの策定を支援する「AIガイドライン策定支援」の提供を開始しました。企業ごとの利用状況やツールに合わせてガイドラインを作成し、社内 […]",
-      "publishedDate": "Wed, 07 Oct 2026 08:32:31 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/sniffout-ai-guideline-support.png",
-      "language": "ja"
-    },
-    {
-      "title": "北大とニトリ、大規模マルチモーダルモデル（LMM）でインテリアのスタイルを定量化。現状と理想のギャップも提示",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/hokudai-nitori-ai-interior-style/",
-      "description": "北大とニトリは、大規模マルチモーダルモデル（LMM）を用いて、部屋の写真や理想のイメージからインテリアのスタイルを定量化する技術を開発しました。インテリアのスタイルを数値化し、現状と理想の差を示します。 このニュースのポ […]",
-      "publishedDate": "Wed, 07 Oct 2026 08:32:26 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/hokudai-nitori-ai-interior-style.png",
-      "language": "ja"
-    },
-    {
-      "title": "日立製作所とファナック、フィジカルAI実装のパートナーシップを締結。製造現場における作業の自律化を推進",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/hitachi-fanuc-physical-ai/",
-      "description": "日立とファナックは、フィジカルAI実装の共同事業化に向けた戦略的パートナーシップを締結しました。日立のAI技術とファナックの産業用ロボットを組み合わせた共同実証を推進します。 このニュースのポイント 日立とファナック、A […]",
-      "publishedDate": "Wed, 07 Oct 2026 08:32:22 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/hitachi-fanuc.png",
-      "language": "ja"
-    },
-    {
-      "title": "Microsoft、Copilotの3つの新機能発表。アプリ構築や自律的なタスク実行が可能に",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/microsoft-copilot-new-features/",
-      "description": "Microsoftは、AIアシスタント「Copilot」において「Home」「Code」「Autopilot」の3つの新機能を追加したと発表しました。利用者の作業状況に応じたサポートや、自然言語によるアプリ構築、自律的な […]",
-      "publishedDate": "Wed, 07 Oct 2026 08:31:51 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/microsoft.png",
-      "language": "ja"
     },
     {
       "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
@@ -223,24 +168,13 @@
     },
     {
       "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-      "titleJa": "oMLX 作成者兼メンテナーの Jun Kim が Hugging Face に参加して MLX コミュニティをサポート",
+      "titleJa": "oMLX の作成者兼メンテナーである Jun Kim が Hugging Face に参加して MLX コミュニティをサポート",
       "link": "https://huggingface.co/blog/omlx",
       "description": "",
       "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
       "source": "Hugging Face Blog",
       "category": "tools",
       "thumbnail": "https://huggingface.co/blog/assets/omlx/omlx-hf.jpg",
-      "language": "en"
-    },
-    {
-      "title": "Your Agent Aced the Task. Will It Do It Again?",
-      "titleJa": "あなたのエージェントはタスクを完了しました。またやりますか?",
-      "link": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
-      "description": "",
-      "publishedDate": "Tue, 15 Sep 2026 16:00:44 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/6435a1131860001f144239ea/dI5J2sSc3TSprk9VB4EVJ.jpeg",
       "language": "en"
     },
     {
@@ -387,36 +321,14 @@
       "language": "en"
     },
     {
-      "title": "WeLion New Energy and its semi-solid-state batteries",
-      "titleJa": "WeLion New Energyとその半固体電池",
-      "link": "https://www.technologyreview.com/2026/10/06/1144987/2026-climate-tech-companies-to-watch-welion-semi-solid-state-batteries/",
-      "description": "WeLion New Energy is on a quest to make safer, better batteries. The company’s semi-solid-state cells could improve safety and offer greater energy density than lithium-ion batteries to power electric...",
-      "publishedDate": "Tue, 06 Oct 2026 10:35:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/AP26190018414663.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Form Energy and its iron batteries",
-      "titleJa": "Form Energyとその鉄電池",
-      "link": "https://www.technologyreview.com/2026/10/06/1145020/2026-climate-tech-companies-to-watch-form-energy-iron-batteries/",
-      "description": "Form Energy is building iron-based batteries that can store energy for multiple days. The company is ramping up supply at its factory and signing deals for commercial projects. New solar and wind inst...",
-      "publishedDate": "Tue, 06 Oct 2026 10:35:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/Form-Energy-team-members-working-in-Form-Factory-1.jpg?w=840",
-      "language": "en"
-    },
-    {
-      "title": "X-energy and its helium-cooled nuclear reactors",
-      "titleJa": "X-energy とそのヘリウム冷却原子炉",
-      "link": "https://www.technologyreview.com/2026/10/06/1145025/2026-climate-tech-companies-to-watch-x-energy-helium-cooled-nuclear-reactors/",
-      "description": "X-energy is developing small modular reactors to satisfy some of the planet’s most power-hungry users: industrial manufacturers that need high temperatures to produce billions of tons of concrete, pla...",
-      "publishedDate": "Tue, 06 Oct 2026 10:35:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/DJI_20260824135059_0984_D.jpg?resize=1200,600",
+      "title": "Advancing computer use with Ironclad",
+      "titleJa": "Ironclad によるコンピュータの利用の促進",
+      "link": "https://openai.com/index/advancing-computer-use-with-ironclad",
+      "description": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+      "publishedDate": "Tue, 06 Oct 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
       "language": "en"
     },
     {
@@ -431,14 +343,135 @@
       "language": "ja"
     },
     {
-      "title": "日立、フィジカルAIの安全運用に向けたガードレール技術を開発。過度な停止を89%削減",
+      "title": "Making global data easier to explore",
+      "titleJa": "グローバル データの探索を容易にする",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
+      "description": "UN System Data Commons Data webpage",
+      "publishedDate": "Thu, 17 Sep 2026 20:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/data-commons.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "3 ways to prep for your next big race with Search",
+      "titleJa": "検索を使用して次の大きなレースに備える 3 つの方法",
+      "link": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+      "description": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
+      "publishedDate": "Thu, 10 Sep 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Race_Running_Tips.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "titleJa": "Oracle が ChatGPT と Codex を使用して数日の作業を数分に短縮する方法",
+      "link": "https://openai.com/index/oracle",
+      "description": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+      "publishedDate": "Thu, 08 Oct 2026 16:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "AIプログラム自動生成とは？おすすめツール比較・無料で使う方法を徹底解説",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/hitachi-physical-ai-guardrail/",
-      "description": "日立は、社会インフラにおけるフィジカルAIの安全運用に向けたガードレール技術を開発しました。設計時の安全分析から実行時の制御指令監視・補正まで一貫して支援し、過度な停止を89%削減できることを確認しました。 このニュース […]",
-      "publishedDate": "Thu, 08 Oct 2026 06:59:41 +0000",
+      "link": "https://weel.co.jp/media/automatic-ai-program-generation/",
+      "description": "AIプログラム自動生成は、文章で指示するだけで生成AIがプログラムを書いてくれる仕組みです。GitHubの調査では、GitHub Copilotを使った開発者は、使わなかった開発者より同じタスクを55%速く完了したという […]",
+      "publishedDate": "Thu, 08 Oct 2026 13:25:30 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Automatic-AI-Program-Generation_26010-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "「AI検索」会社員の半数以上が利用、7割以上が今後の利用増加を予想。AI検索利用実態調査結果発表",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/neutralworks-ai-search-survey/",
+      "description": "ニュートラルワークスは、会社員300名を対象に「AI検索利用実態調査」を実施しました。半数以上がAI検索を利用しており、そのうち7割以上が今後利用頻度が増えると回答しています。 このニュースのポイント 会社員300名を対 […]",
+      "publishedDate": "Thu, 08 Oct 2026 09:14:25 +0000",
       "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/hitachi-physical-ai-guardrail-eye.png",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/neutral-works.png",
+      "language": "ja"
+    },
+    {
+      "title": "JAPAN AI、企業向けAIプラットフォームの外部連携を47種に拡大。分散する情報の横断的な活用を支援",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/japan-ai-saas-integration/",
+      "description": "JAPAN AIは、企業向けAIプラットフォーム「JAPAN AI」において、外部SaaSツール40種と公的サービス・データ7種の計47種と連携したと発表しました。複数のサービスに分散した情報を「JAPAN AI」から参 […]",
+      "publishedDate": "Thu, 08 Oct 2026 09:03:22 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/japan-ai-saas-integration.png",
+      "language": "ja"
+    },
+    {
+      "title": "AMD、空間知能モデル開発のWorld Labsを買収。次世代AIインフラ構築とオープンAIエコシステムの拡大推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/amd-acquire-world-labs/",
+      "description": "AMDは、空間知能の研究を進めるWorld Labsを買収する最終合意に達したと発表しました。世界トップクラスの研究チームを迎え入れ、次世代AIインフラの構築とオープンAIエコシステムの拡大を推進します。 このニュースの […]",
+      "publishedDate": "Thu, 08 Oct 2026 08:55:12 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/AMD-world-labs.png",
+      "language": "ja"
+    },
+    {
+      "title": "日立、AIエージェント活用「脆弱性・パッチ探索分析レポートサービス」提供開始。脆弱性対応の迅速化を実現",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/vulnerability-patch-analysis/",
+      "description": "日立は、AIエージェントを活用した「脆弱性・パッチ探索分析レポートサービス」の提供を開始しました。AIエージェントがシステムへの影響分析や対応優先度の判断を支援することで、サイバー攻撃に対する脆弱性対応の迅速化を実現しま […]",
+      "publishedDate": "Thu, 08 Oct 2026 08:55:09 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/hitachi-HMA-X-Cyber.png",
+      "language": "ja"
+    },
+    {
+      "title": "SMBCコンシューマーファイナンス、生成AIチャットで返済相談を行う「AIアシスタント」提供開始。貸金業で国内初",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/smbc-cf-ai-assistant/",
+      "description": "SMBCコンシューマーファイナンスは、生成AIとの対話を通じて返済に関する相談や受付を行える「AIアシスタント」の提供を開始しました。顧客は24時間365日、自身のタイミングでチャットから返済予定の確認や受付までを進める […]",
+      "publishedDate": "Thu, 08 Oct 2026 08:55:07 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/SMBC.png",
+      "language": "ja"
+    },
+    {
+      "title": "NVIDIA、AIエージェント保護基盤「Open Agent Safety Platform」発表。テストから展開までのセキュリティを強化",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/nvidia-open-agent-safety/",
+      "description": "NVIDIAは、AIエージェントのテストから展開までのセキュリティを強化する「Open Agent Safety Platform」を発表しました。AIエコシステムの各業界をリードする企業と連携し、エージェント導入の安全 […]",
+      "publishedDate": "Thu, 08 Oct 2026 08:55:03 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/NVIDIA-Open-Agent-Safety-Platform.png",
+      "language": "ja"
+    },
+    {
+      "title": "トグルホールディングス、10月30日に東京証券取引所グロース市場へ新規上場",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/toggle-holdings-ipo-approval/",
+      "description": "トグルホールディングスは、東京証券取引所グロース市場への新規上場が承認されたことを発表しました。上場日は2026年10月30日予定で、調達資金は人材採用・育成、M&A、連結子会社への投融資に充当予定です。 このニ […]",
+      "publishedDate": "Thu, 08 Oct 2026 08:47:59 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/toggle-holdings-ipo-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "TechShareと伊予鉄グループ、資本業務提携で基本合意。四国・中国地方でフィジカルAIの実装を推進",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/techshare-iyotetsu-robotics-ai/",
+      "description": "TechShareと伊予鉄グループは、資本業務提携に関する基本合意書を締結しました。両社の強みを掛け合わせ、四国・中国地方を中心にヒューマノイドロボットや四足歩行ロボットなどの現場導入を支援し、フィジカルAIの新たな実装 […]",
+      "publishedDate": "Thu, 08 Oct 2026 08:47:36 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/techshare-iyotetsu-main.png",
       "language": "ja"
     },
     {
@@ -453,17 +486,6 @@
       "language": "ja"
     },
     {
-      "title": "Gemini 4 Argonとは？性能・100万出力・料金・いつ使える？",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/gemini-4-argon/",
-      "description": "Googleの最新フロンティアモデル「Gemini 4 Argon」が、2026年9月30日（米国時間）に発表されました。コーディング、金融・法務などの専門業務、サイバーセキュリティ防御を強みとするモデルです。 「Gem […]",
-      "publishedDate": "Thu, 08 Oct 2026 02:30:05 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/Gemini4Argon.png",
-      "language": "ja"
-    },
-    {
       "title": "【Claude Haiku 5.5】Haiku 4.5比75%安い最速モデルの性能・料金・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/claude-haiku-5-5/",
@@ -472,61 +494,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Haiku-5.5-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【次世代の自動化】RPAとAIエージェントの違いとは？使い分けから連携パターンまで",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/rpa-aiagent-automation/",
-      "description": "AI技術が急速に進化するなか、すでにRPAを運用している企業では、新たな自動化の方針を決めかねて検討がストップしてしまうケースが増えています。稼働中のロボットを止めるわけにもいかず、現場の担当者は判断に迷っているのではな […]",
-      "publishedDate": "Thu, 08 Oct 2026 01:04:57 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/RpaAIagent.png",
-      "language": "ja"
-    },
-    {
-      "title": "グラウンディングとは？生成AIの回答精度を高める仕組みとRAGとの違い",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/grounding-rag-generation-ai/",
-      "description": "企業での生成AI活用が進むにつれ、もっともらしい嘘（ハルシネーション）を防ぐ手法として「グラウンディング（Grounding）」が注目を集めています。 しかし、技術文書を読んでも説明が難解で、「RAG（検索拡張生成）とは […]",
-      "publishedDate": "Thu, 08 Oct 2026 01:04:22 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/Grounding.png",
-      "language": "ja"
-    },
-    {
-      "title": "アイスマイリー、10/21（水）から3日間、「Japan DX & AX Week 秋 2026」にブース出展",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/japan-dx-ax-autumn-2026/",
-      "description": "AIsmileyとAIsmiley Communityは、2026年10月21日（水）～10月23日（金）に幕張メッセにて開催の「Japan DX & AX Week 秋 2026」にブースを出展します。 会場で […]",
-      "publishedDate": "Thu, 08 Oct 2026 01:00:50 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/EyeCatch.png",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Opus 5.5は建築で使える？Xで話題の3Dモデリング・図面読み取り事例と試し方を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/claude-opus-5-5-architecture/",
-      "description": "2026年9月、AnthropicからClaudeシリーズの新たなAIモデルが登場しました。 今回登場した「Claude Opus 5.5」は、長時間の自律的なコーディングを得意とする最新モデルです。リリース直後からXで […]",
-      "publishedDate": "Sun, 04 Oct 2026 19:48:28 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/claude-opus-5-5-architecture_26010-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Code modsとは？自分専用の機能を追加できる新しい拡張の仕組み・作り方・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-code-mods/",
-      "description": "2026年10月、AnthropicからClaude Codeを自分好みに拡張できる新しい仕組みが紹介されました。 今回登場した「Claude Code mods」は、Claude Codeのセッション内で動く小さなJa […]",
-      "publishedDate": "Sun, 04 Oct 2026 12:13:32 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Code-mods_26010-1-1024x576.webp",
       "language": "ja"
     },
     {
@@ -549,6 +516,50 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/You-should-Know_26010-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Claude Motionとは？資料やグラフを短いアニメーション動画に変えるAnthropicの新機能を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/claude-motion/",
+      "description": "2026年10月、AnthropicからClaudeの新機能が発表されました。 今回登場した「Claude Motion」は、レポートやグラフ、製品の説明を短いアニメーションに変える新しい機能です。動画生成モデルを使わず […]",
+      "publishedDate": "Fri, 09 Oct 2026 05:38:10 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Motion_26010-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "ループエンジニアリングとは？ハーネスとの違いと自動化の設計手法",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/loop-engineering-harness/",
+      "description": "「AIエージェントを導入したのに、結局自分がプロンプトを打ち続けている……」 エージェントの処理がいくら高速でも、人間が「次の指示」を出すボトルネックになっていては、真の自動化とは言えません。 2026年、この“プロンプ […]",
+      "publishedDate": "Fri, 09 Oct 2026 01:45:37 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/LoopPngineering.png",
+      "language": "ja"
+    },
+    {
+      "title": "AIの品質ばらつきを防ぐ「ハーネスエンジニアリング」とは？構成要素から導入手順まで徹底解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/harness-engineering-2026/",
+      "description": "AIコーディングエージェントを個人で使う分には成果が出るのに、チームで使うと品質がばらつく━同じ指示を出しても、セッションが変われば書き方が変わり、前回の決定は引き継がれません。AIモデルを最新版に入れ替えるだけでは、こ […]",
+      "publishedDate": "Fri, 09 Oct 2026 01:45:33 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/HarnessEngineering.png",
+      "language": "ja"
+    },
+    {
+      "title": "さくらインターネット、GPU専有によりトークン消費量を気にせず定額で利用できる「さくらのAI Engineプライベートエディション」提供開始を発表",
+      "titleJa": null,
+      "link": "https://www.publickey1.jp/blog/26/gpuai_engine.html",
+      "description": "さくらインターネットは、GPUサーバ上で基盤モデルを展開しマネージドサービスとして提供する「さくらのAI Engine」を、企業がGPUを専有して使える「さくらのAI Engine プライベートエディション」の提供開始を発表しました。 お知...",
+      "publishedDate": "2026-10-08T15:49:01Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/sakura-aiengine-private-la.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/F420bYCD.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "「Docker Cloud Sandboxes」発表、AIエージェント向けサンドボックスをローカルとクラウド間で自由に移動可能に",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/docker_cloud_snadboxesai.html",
-      "description": "Docker社はAIエージェント向けのサンドボックス環境をクラウド上で提供する「Docker Cloud Sandboxes」を発表しました。 同社はすでにローカルで動作するサンドボックス環境の「Docker Sandboxes」を今年（2...",
-      "publishedDate": "2026-09-27T16:02:18Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/docker-cloud-sandboxes-la.png",
       "language": "ja"
     }
   ]
