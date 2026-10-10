@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-09T07:11:21.431594",
+  "lastUpdated": "2026-10-10T06:45:09.054255",
   "articles": [
     {
       "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
@@ -168,7 +168,7 @@
     },
     {
       "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-      "titleJa": "oMLX の作成者兼メンテナーである Jun Kim が Hugging Face に参加して MLX コミュニティをサポート",
+      "titleJa": "oMLX 作成者兼メンテナーの Jun Kim が Hugging Face に参加して MLX コミュニティをサポート",
       "link": "https://huggingface.co/blog/omlx",
       "description": "",
       "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
@@ -222,17 +222,6 @@
       "language": "en"
     },
     {
-      "title": "Weight-loss drugs show signs of slowing biological aging, say drugmakers",
-      "titleJa": "製薬会社によると、減量薬には生物学的老化を遅らせる兆候が見られる",
-      "link": "https://www.technologyreview.com/2026/10/06/1145836/weight-loss-drugs-glp1-lilly-novo-aging-clocks/",
-      "description": "Popular weight-loss drugs may do more than help people shed pounds. They might also melt away the years. Drug giants Eli Lilly and Novo Nordisk say patients taking their drugs age less quickly, accord...",
-      "publishedDate": "Tue, 06 Oct 2026 16:40:36 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/silo-clock2.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
       "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
       "titleJa": "アトラシアンと OpenAI がパートナーシップを拡大し、企業の知識を行動に移す",
       "link": "https://openai.com/index/atlassian-partnership",
@@ -241,17 +230,6 @@
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "The Download: 10 climate tech companies to watch",
-      "titleJa": "ダウンロード: 注目すべき気候変動テクノロジー企業 10 社",
-      "link": "https://www.technologyreview.com/2026/10/06/1145796/the-download-10-climate-tech-companies-to-watch/",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. 10 climate tech companies to watch Each year, MIT Technology R...",
-      "publishedDate": "Tue, 06 Oct 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/photo-BASEd3.jpg?fit=2128,1196",
       "language": "en"
     },
     {
@@ -297,28 +275,6 @@
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/OpenAI-DevDay_2609-1024x576.webp",
       "language": "ja"
-    },
-    {
-      "title": "2026 Climate Tech Companies to Watch",
-      "titleJa": "2026 年に注目すべき気候変動テクノロジー企業",
-      "link": "https://www.technologyreview.com/2026/10/06/1143800/2026-climate-tech-companies-to-watch/",
-      "description": "",
-      "publishedDate": "Tue, 06 Oct 2026 10:35:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/MITTR-CT1026-Thumbnail.png?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "Here’s how our climate team picked 10 promising companies to watch",
-      "titleJa": "私たちの気候変動チームが注目すべき有望企業 10 社をどのように選んだかは次のとおりです",
-      "link": "https://www.technologyreview.com/2026/10/06/1144978/2026-climate-tech-companies-to-watch-how-we-chose/",
-      "description": "As the team at MIT Technology Review set out to choose companies for this year’s edition of our annual list of Climate Tech Companies to Watch, the challenge felt more daunting than any year since we...",
-      "publishedDate": "Tue, 06 Oct 2026 10:35:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/GettyImages-1321505097.jpg?resize=1200,600",
-      "language": "en"
     },
     {
       "title": "Advancing computer use with Ironclad",
@@ -387,6 +343,50 @@
       "language": "ja"
     },
     {
+      "title": "The Download: AI roadblocks for humanoids and portable rubber dams",
+      "titleJa": "ダウンロード: ヒューマノイドとポータブルラバーダムのための AI の障害",
+      "link": "https://www.technologyreview.com/2026/10/08/1146045/the-download-ai-roadblocks-humanoids-portable-rubber-dams/",
+      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI breakthroughs in robotics won’t change your life any time s...",
+      "publishedDate": "Thu, 08 Oct 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/12/pohoiki-springs-neuromorphic-1-16x9.jpg.rendition.intel_.web_.1920.1080.jpg?fit=2128,1196",
+      "language": "en"
+    },
+    {
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "titleJa": "Polo AI は、OpenAI を使用してクリエイティブなアイデアをキャンペーンに変換します",
+      "link": "https://openai.com/index/pollo-ai",
+      "description": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+      "publishedDate": "Thu, 08 Oct 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "LegalOn halves Codex costs while maintaining development speed",
+      "titleJa": "LegalOn は開発スピードを維持しながら Codex コストを半減",
+      "link": "https://openai.com/index/legalon-halves-codex-costs",
+      "description": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+      "publishedDate": "Thu, 08 Oct 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "Why we’re watching these climate tech companies",
+      "titleJa": "私たちがこれらの気候変動テクノロジー企業に注目する理由",
+      "link": "https://www.technologyreview.com/2026/10/08/1145920/climate-tech-companies-list/",
+      "description": "This week, we released our 2026 version of our Climate Tech Companies to Watch list. It’s an annual project that the MIT Technology Review team puts together. Our goal is to highlight some of the prom...",
+      "publishedDate": "Thu, 08 Oct 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/Image-2.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
       "title": "「AI検索」会社員の半数以上が利用、7割以上が今後の利用増加を予想。AI検索利用実態調査結果発表",
       "titleJa": null,
       "link": "https://aismiley.co.jp/ai_news/neutralworks-ai-search-survey/",
@@ -442,39 +442,6 @@
       "language": "ja"
     },
     {
-      "title": "NVIDIA、AIエージェント保護基盤「Open Agent Safety Platform」発表。テストから展開までのセキュリティを強化",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/nvidia-open-agent-safety/",
-      "description": "NVIDIAは、AIエージェントのテストから展開までのセキュリティを強化する「Open Agent Safety Platform」を発表しました。AIエコシステムの各業界をリードする企業と連携し、エージェント導入の安全 […]",
-      "publishedDate": "Thu, 08 Oct 2026 08:55:03 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/NVIDIA-Open-Agent-Safety-Platform.png",
-      "language": "ja"
-    },
-    {
-      "title": "トグルホールディングス、10月30日に東京証券取引所グロース市場へ新規上場",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/toggle-holdings-ipo-approval/",
-      "description": "トグルホールディングスは、東京証券取引所グロース市場への新規上場が承認されたことを発表しました。上場日は2026年10月30日予定で、調達資金は人材採用・育成、M&A、連結子会社への投融資に充当予定です。 このニ […]",
-      "publishedDate": "Thu, 08 Oct 2026 08:47:59 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/toggle-holdings-ipo-main.png",
-      "language": "ja"
-    },
-    {
-      "title": "TechShareと伊予鉄グループ、資本業務提携で基本合意。四国・中国地方でフィジカルAIの実装を推進",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/techshare-iyotetsu-robotics-ai/",
-      "description": "TechShareと伊予鉄グループは、資本業務提携に関する基本合意書を締結しました。両社の強みを掛け合わせ、四国・中国地方を中心にヒューマノイドロボットや四足歩行ロボットなどの現場導入を支援し、フィジカルAIの新たな実装 […]",
-      "publishedDate": "Thu, 08 Oct 2026 08:47:36 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/techshare-iyotetsu-main.png",
-      "language": "ja"
-    },
-    {
       "title": "組み込みAI（生成AI）の活用事例！スマホ・車載・産業機器の最新動向と検証結果を解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/embedded-ai-use-cases/",
@@ -516,6 +483,39 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/You-should-Know_26010-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AI inside、AI-OCR中心から全社AI基盤へ進化する新しい「DX Suite」発表。2026年11月提供開始予定",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ai-inside-new-dx-suite/",
+      "description": "AI insideは、10月6日に開催した自社イベント「AI inside Conference （AIIC）2026」で新しい「DX Suite」をはじめとする新製品を発表しました。従来のAI-OCRを中心としたサービ […]",
+      "publishedDate": "Fri, 09 Oct 2026 09:17:06 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/ai-inside-dx-suite-main2.png",
+      "language": "ja"
+    },
+    {
+      "title": "豊田自動織機、金属の破面解析をAI活用で自動化。解析時間を最大90％短縮",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/toyota-shokki-fracture-automated-analysis/",
+      "description": "豊田自動織機は、AIを活用して金属の破面解析を自動化する技術を開発しました。熟練技術者の解析データを学習したAIと電子顕微鏡の自動操作技術を組み合わせ、観察箇所の特定から破損原因の推定、報告書作成までを自動化します。 こ […]",
+      "publishedDate": "Fri, 09 Oct 2026 09:17:04 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/toyota-shokki-fracture-automated-analysis.png",
+      "language": "ja"
+    },
+    {
+      "title": "Anthropic「Cyber Verification Program」を拡充。AIでサイバー防衛を強化",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/cyber-verification-program/",
+      "description": "Anthropicは、セキュリティ専門家向けの「Cyber Verification Program」を拡充しました。用途に応じた3つのアクセス階層を設け、業務範囲に合わせて選択可能です。 このニュースのポイント Ant […]",
+      "publishedDate": "Fri, 09 Oct 2026 09:11:33 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/Anthropic-CVP.png",
       "language": "ja"
     },
     {
