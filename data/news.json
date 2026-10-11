@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-10T03:28:58.451066",
+  "lastUpdated": "2026-10-11T03:02:13.131080",
   "articles": [
     {
       "title": "敷鉄板（しきてっぱん）とは？｜使用シーン・基準とサイズ・重さ早見表、積算数量の出し方",
@@ -162,6 +162,16 @@
       "language": "ja"
     },
     {
+      "title": "Intelligent UIでSaaSは不要に？価値が残る3領域",
+      "link": "https://axconstdx.com/2026/10/11/intelligent-ui%e3%81%a7saas%e3%81%af%e4%b8%8d%e8%a6%81%e3%81%ab%ef%bc%9f%e4%be%a1%e5%80%a4%e3%81%8c%e6%ae%8b%e3%82%8b3%e9%a0%98%e5%9f%9f/",
+      "description": "ChatGPTが計算ツールや割り勘アプリを、頼まれたその場で作るようになりました。「AIに画面を付けただけ」のサービスは、いよいよ存在意義を問われます。Intelligent UIがSaaS事業者や中小企業に突きつける変 […]",
+      "publishedDate": "Sun, 11 Oct 2026 02:00:37 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/10/intelligent_ui_saas_ogp-1024x538.webp",
+      "language": "ja"
+    },
+    {
       "title": "LiDAR機器7選比較｜Scan to BIMで失敗しない選び方",
       "link": "https://axconstdx.com/2026/09/06/lidar%e6%a9%9f%e5%99%a87%e9%81%b8%e6%af%94%e8%bc%83%ef%bd%9cscan-to-bim%e3%81%a7%e5%a4%b1%e6%95%97%e3%81%97%e3%81%aa%e3%81%84%e9%81%b8%e3%81%b3%e6%96%b9/",
       "description": "「とりあえず高性能なLiDARを買えば安心」——そう思って選んだ機器が、いざ現場で使えなかったら悔やんでも悔やみきれません。実は用途と精度レンジさえ見極めれば、無駄な投資も現場での手戻りも防げます。この記事を読めば、あな […]",
@@ -220,16 +230,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "日本SI業界2030年——人月モデル崩壊は本当か",
-      "link": "https://axconstdx.com/2026/08/21/%e6%97%a5%e6%9c%acsi%e6%a5%ad%e7%95%8c2030%e5%b9%b4-%e4%ba%ba%e6%9c%88%e3%83%a2%e3%83%87%e3%83%ab%e5%b4%a9%e5%a3%8a%e3%81%af%e6%9c%ac%e5%bd%93%e3%81%8b/",
-      "description": "「2030年、業界は半分になる」という言葉に、胸がざわついた方も多いはずです。でも本当に消えるのは会社ではなく、人月という古い契約の形かもしれません。今こそ、自社の立ち位置を見つめ直すときです。 はじめに 「2030年、 […]",
-      "publishedDate": "Fri, 21 Aug 2026 10:41:49 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/japan-si-industry-2030-ogp-under-100kb-1024x538.jpg",
-      "language": "ja"
     },
     {
       "title": "熊谷組・住友林業JVが銀座の木挽ビルホテル計画に着工、国交省の木造事業で先導枠に採択",
