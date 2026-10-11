@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-10-10T06:45:09.054255",
+  "lastUpdated": "2026-10-11T06:52:39.911673",
   "articles": [
     {
       "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-      "titleJa": "Open TTS Leaderboard: 多言語テキスト読み上げおよび音声クローン作成のスケーラブルな評価",
+      "titleJa": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
       "link": "https://huggingface.co/blog/open-tts-leaderboard",
       "description": "",
       "publishedDate": "Wed, 30 Sep 2026 00:00:00 GMT",
@@ -14,7 +14,7 @@
     },
     {
       "title": "Google Beam expands with new regions, partners, and customers",
-      "titleJa": "Google Beam が新たな地域、パートナー、顧客とともに拡大",
+      "titleJa": "Google Beam expands with new regions, partners, and customers",
       "link": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
       "description": "Google Beam promotional animation",
       "publishedDate": "Wed, 23 Sep 2026 18:00:00 +0000",
@@ -25,7 +25,7 @@
     },
     {
       "title": "Get ready for the game with new football features in Search",
-      "titleJa": "検索の新しいサッカー機能で試合に備えましょう",
+      "titleJa": "Get ready for the game with new football features in Search",
       "link": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
       "description": "An illustrated graphic set against a vibrant green background featuring American football elements, including a gold trophy, a blue helmet, a silver whistle, a football, a mini scoreboard, and play di...",
       "publishedDate": "Wed, 09 Sep 2026 16:00:00 +0000",
@@ -36,7 +36,7 @@
     },
     {
       "title": "Multimodal open d1 decision models for the edge",
-      "titleJa": "エッジ向けのマルチモーダルオープン d1 意思決定モデル",
+      "titleJa": "Multimodal open d1 decision models for the edge",
       "link": "https://huggingface.co/blog/LiquidAI/open-d1",
       "description": "",
       "publishedDate": "Wed, 07 Oct 2026 16:54:33 GMT",
@@ -47,7 +47,7 @@
     },
     {
       "title": "Introducing Falcon ASR",
-      "titleJa": "ファルコン ASR の紹介",
+      "titleJa": "Introducing Falcon ASR",
       "link": "https://huggingface.co/blog/tiiuae/falcon-asr",
       "description": "",
       "publishedDate": "Wed, 07 Oct 2026 13:21:03 GMT",
@@ -58,7 +58,7 @@
     },
     {
       "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
-      "titleJa": "1 つのモデルファミリー、2 つのゴールドレベルの結果: IOI および IMO 向けの Nemotron の微調整",
+      "titleJa": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
       "link": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
       "description": "",
       "publishedDate": "Wed, 07 Oct 2026 12:45:31 GMT",
@@ -69,7 +69,7 @@
     },
     {
       "title": "The Download: weight-loss drugs slowing aging and carbon dioxide batteries",
-      "titleJa": "ダウンロード: 老化を遅らせる減量薬と二酸化炭素バッテリー",
+      "titleJa": "The Download: weight-loss drugs slowing aging and carbon dioxide batteries",
       "link": "https://www.technologyreview.com/2026/10/07/1145895/the-download-weight-loss-drugs-slow-aging-carbon-dioxide-batteries/",
       "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Weight-loss drugs show signs of slowing biological aging, say...",
       "publishedDate": "Wed, 07 Oct 2026 12:10:00 +0000",
@@ -80,7 +80,7 @@
     },
     {
       "title": "Helping teens learn, plan, and shape the future of AI",
-      "titleJa": "十代の若者たちが AI の未来を学び、計画し、形作るのを支援する",
+      "titleJa": "Helping teens learn, plan, and shape the future of AI",
       "link": "https://openai.com/index/teens-learn-and-plan",
       "description": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
       "publishedDate": "Wed, 07 Oct 2026 12:00:00 GMT",
@@ -91,7 +91,7 @@
     },
     {
       "title": "Introducing Playground: Create and play custom games",
-      "titleJa": "Playground の紹介: カスタム ゲームを作成してプレイする",
+      "titleJa": "Introducing Playground: Create and play custom games",
       "link": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
       "description": "Overview of Playground",
       "publishedDate": "Wed, 07 Oct 2026 12:00:00 +0000",
@@ -102,7 +102,7 @@
     },
     {
       "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
-      "titleJa": "ラディソン ホテル グループ、ホテル検索を ChatGPT に導入",
+      "titleJa": "Radisson Hotel Group brings hotel discovery into ChatGPT",
       "link": "https://openai.com/index/radisson",
       "description": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
       "publishedDate": "Wed, 07 Oct 2026 07:00:00 GMT",
@@ -124,7 +124,7 @@
     },
     {
       "title": "GPT-6 and Intelligent UI for everyone",
-      "titleJa": "GPT-6 とすべての人のためのインテリジェント UI",
+      "titleJa": "GPT-6 and Intelligent UI for everyone",
       "link": "https://openai.com/index/gpt-6-for-everyone",
       "description": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
       "publishedDate": "Wed, 07 Oct 2026 00:00:00 GMT",
@@ -135,7 +135,7 @@
     },
     {
       "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
-      "titleJa": "事実だけでなくソースを正しく把握する: MCP エージェント向けのソース認識検証",
+      "titleJa": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
       "link": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
       "description": "",
       "publishedDate": "Tue, 29 Sep 2026 13:07:00 GMT",
@@ -146,7 +146,7 @@
     },
     {
       "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
-      "titleJa": "英国 AISI と EvalEval がどのようにベンチマーク結果を再現可能にしているか",
+      "titleJa": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
       "link": "https://huggingface.co/blog/evaleval-aisi",
       "description": "",
       "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
@@ -157,7 +157,7 @@
     },
     {
       "title": "Transformers now runs llama.cpp quants",
-      "titleJa": "Transformers は llama.cpp クォントを実行するようになりました",
+      "titleJa": "Transformers now runs llama.cpp quants",
       "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
       "description": "",
       "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
@@ -168,7 +168,7 @@
     },
     {
       "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-      "titleJa": "oMLX 作成者兼メンテナーの Jun Kim が Hugging Face に参加して MLX コミュニティをサポート",
+      "titleJa": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
       "link": "https://huggingface.co/blog/omlx",
       "description": "",
       "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
@@ -179,7 +179,7 @@
     },
     {
       "title": "AI for Societal Impact",
-      "titleJa": "社会的影響をもたらす AI",
+      "titleJa": "AI for Societal Impact",
       "link": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
       "description": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI.",
       "publishedDate": "Tue, 15 Sep 2026 16:00:00 +0000",
@@ -190,7 +190,7 @@
     },
     {
       "title": "Building AI to accelerate science and improve lives",
-      "titleJa": "AI を構築して科学を加速し、生活を改善する",
+      "titleJa": "Building AI to accelerate science and improve lives",
       "link": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
       "description": "B-roll showing diverse environments and people, including a teacher and students in a classroom and a patient with a doctor",
       "publishedDate": "Tue, 15 Sep 2026 16:00:00 +0000",
@@ -201,7 +201,7 @@
     },
     {
       "title": "AI for everyone in every language",
-      "titleJa": "あらゆる言語のあらゆる人のための AI",
+      "titleJa": "AI for everyone in every language",
       "link": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
       "description": "Animation of several words in different languages slowly zooming past",
       "publishedDate": "Tue, 15 Sep 2026 16:00:00 +0000",
@@ -212,7 +212,7 @@
     },
     {
       "title": "New insights from Google’s AI & Economy ATLAS",
-      "titleJa": "Google の AI と経済 ATLAS からの新しい洞察",
+      "titleJa": "New insights from Google’s AI & Economy ATLAS",
       "link": "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026/",
       "description": "Text \"AI & Economy Atlas v1.0 2026\" with the Google G and a spinning globe illustration",
       "publishedDate": "Tue, 15 Sep 2026 13:00:00 +0000",
@@ -223,7 +223,7 @@
     },
     {
       "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-      "titleJa": "アトラシアンと OpenAI がパートナーシップを拡大し、企業の知識を行動に移す",
+      "titleJa": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
       "link": "https://openai.com/index/atlassian-partnership",
       "description": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
       "publishedDate": "Tue, 06 Oct 2026 16:00:00 GMT",
@@ -234,7 +234,7 @@
     },
     {
       "title": "How Jump Trading is scaling quant research with ChatGPT",
-      "titleJa": "Jump Trading が ChatGPT を使用してクオンツ調査をどのように拡張しているか",
+      "titleJa": "How Jump Trading is scaling quant research with ChatGPT",
       "link": "https://openai.com/index/jump-trading",
       "description": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
       "publishedDate": "Tue, 06 Oct 2026 12:00:00 GMT",
@@ -245,7 +245,7 @@
     },
     {
       "title": "Sharing AI progress in mathematics",
-      "titleJa": "数学における AI の進歩を共有する",
+      "titleJa": "Sharing AI progress in mathematics",
       "link": "https://openai.com/index/sharing-ai-progress-in-mathematics",
       "description": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
       "publishedDate": "Tue, 06 Oct 2026 12:00:00 GMT",
@@ -278,7 +278,7 @@
     },
     {
       "title": "Advancing computer use with Ironclad",
-      "titleJa": "Ironclad によるコンピュータの利用の促進",
+      "titleJa": "Advancing computer use with Ironclad",
       "link": "https://openai.com/index/advancing-computer-use-with-ironclad",
       "description": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
       "publishedDate": "Tue, 06 Oct 2026 10:00:00 GMT",
@@ -300,7 +300,7 @@
     },
     {
       "title": "Making global data easier to explore",
-      "titleJa": "グローバル データの探索を容易にする",
+      "titleJa": "Making global data easier to explore",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
       "description": "UN System Data Commons Data webpage",
       "publishedDate": "Thu, 17 Sep 2026 20:00:00 +0000",
@@ -311,7 +311,7 @@
     },
     {
       "title": "3 ways to prep for your next big race with Search",
-      "titleJa": "検索を使用して次の大きなレースに備える 3 つの方法",
+      "titleJa": "3 ways to prep for your next big race with Search",
       "link": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
       "description": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
       "publishedDate": "Thu, 10 Sep 2026 16:00:00 +0000",
@@ -322,7 +322,7 @@
     },
     {
       "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
-      "titleJa": "Oracle が ChatGPT と Codex を使用して数日の作業を数分に短縮する方法",
+      "titleJa": "How Oracle turns days of work into minutes with ChatGPT and Codex",
       "link": "https://openai.com/index/oracle",
       "description": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
       "publishedDate": "Thu, 08 Oct 2026 16:00:00 GMT",
@@ -344,7 +344,7 @@
     },
     {
       "title": "The Download: AI roadblocks for humanoids and portable rubber dams",
-      "titleJa": "ダウンロード: ヒューマノイドとポータブルラバーダムのための AI の障害",
+      "titleJa": "The Download: AI roadblocks for humanoids and portable rubber dams",
       "link": "https://www.technologyreview.com/2026/10/08/1146045/the-download-ai-roadblocks-humanoids-portable-rubber-dams/",
       "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI breakthroughs in robotics won’t change your life any time s...",
       "publishedDate": "Thu, 08 Oct 2026 12:10:00 +0000",
@@ -355,7 +355,7 @@
     },
     {
       "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
-      "titleJa": "Polo AI は、OpenAI を使用してクリエイティブなアイデアをキャンペーンに変換します",
+      "titleJa": "Pollo AI turns creative ideas into campaigns with OpenAI",
       "link": "https://openai.com/index/pollo-ai",
       "description": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
       "publishedDate": "Thu, 08 Oct 2026 12:00:00 GMT",
@@ -366,7 +366,7 @@
     },
     {
       "title": "LegalOn halves Codex costs while maintaining development speed",
-      "titleJa": "LegalOn は開発スピードを維持しながら Codex コストを半減",
+      "titleJa": "LegalOn halves Codex costs while maintaining development speed",
       "link": "https://openai.com/index/legalon-halves-codex-costs",
       "description": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
       "publishedDate": "Thu, 08 Oct 2026 12:00:00 GMT",
@@ -377,7 +377,7 @@
     },
     {
       "title": "Why we’re watching these climate tech companies",
-      "titleJa": "私たちがこれらの気候変動テクノロジー企業に注目する理由",
+      "titleJa": "Why we’re watching these climate tech companies",
       "link": "https://www.technologyreview.com/2026/10/08/1145920/climate-tech-companies-list/",
       "description": "This week, we released our 2026 version of our Climate Tech Companies to Watch list. It’s an annual project that the MIT Technology Review team puts together. Our goal is to highlight some of the prom...",
       "publishedDate": "Thu, 08 Oct 2026 10:00:00 +0000",
@@ -464,6 +464,17 @@
       "language": "ja"
     },
     {
+      "title": "Claude Dashboardsとは？話しかけるだけで社内データが生きたダッシュボードに！使い方・料金・活用シーンを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/claude-dashboards/",
+      "description": "2026年10月9日、Anthropicがデータ基盤につなぐだけで更新され続けるダッシュボードを作れる「Claude Dashboards」をベータ公開しました！ 「今四半期の売上を地域別に見たい」と頼むだけで、Clau […]",
+      "publishedDate": "Sat, 10 Oct 2026 12:49:05 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Dashboards_26010-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "【Clef】Cloudflare初の判断モデルとは？Jevとの違い・性能・料金・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/clef/",
@@ -472,17 +483,6 @@
       "source": "WEEL",
       "category": "tools",
       "thumbnail": "https://weel.co.jp/wp-content/uploads/Clef_26010-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【You should Know】Claude Codeの見落としを防ぐ組み込みModとは？仕組み・使い方・料金を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/you-should-know/",
-      "description": "You should Knowは、Claude Codeの作業中に見落としやすい情報を拾い上げて知らせてくれる組み込みプラグインです！Claudeが長いタスクを進める裏でサイドエージェントが出力を見守り、気づくべきことを […]",
-      "publishedDate": "Mon, 05 Oct 2026 09:51:48 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/You-should-Know_26010-1024x576.webp",
       "language": "ja"
     },
     {
