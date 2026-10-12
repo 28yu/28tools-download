@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-11T06:52:39.911673",
+  "lastUpdated": "2026-10-12T07:01:59.276075",
   "articles": [
     {
       "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
@@ -255,28 +255,6 @@
       "language": "en"
     },
     {
-      "title": "MiniMax APIとは？料金・使い方・実践検証を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/minimax-api/",
-      "description": "MiniMax APIは、テキスト・画像・動画・音声の生成を1つのキーで呼び出せるサービスです。開発元は2026年1月に香港上場した中国のAI企業で、入力単価は100万トークンあたり0.3ドルです。 とはいえ「日本から使 […]",
-      "publishedDate": "Tue, 06 Oct 2026 11:43:26 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Use-cases-for-dots_26010-1-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "OpenAI DevDayとは？2026年の発表まとめとGPT-6.1 Solの注目ポイントを解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/openai-devday-2025/",
-      "description": "OpenAI DevDayは、OpenAIが新モデルや開発ツールを発表する開発者向けイベントです。2026年は現地時間9月29日にサンフランシスコで開催され、GPT-6.1 Sol・dots・Decisions APIな […]",
-      "publishedDate": "Tue, 06 Oct 2026 11:19:41 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/OpenAI-DevDay_2609-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Advancing computer use with Ironclad",
       "titleJa": "Advancing computer use with Ironclad",
       "link": "https://openai.com/index/advancing-computer-use-with-ironclad",
@@ -286,17 +264,6 @@
       "category": "llm",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "OpenAIのdotsの活用事例！Xで話題の使い方・失敗例を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/use-cases-for-dots/",
-      "description": "2026年9月、OpenAIからChatGPTの新たなAIエージェントが発表されました。 今回発表された「dots（ドッツ）」は、会話を閉じたあとも動き続け、頼まれる前に気づいたことを知らせてくれる常時稼働型のエージェン […]",
-      "publishedDate": "Tue, 06 Oct 2026 09:11:11 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Use-cases-for-dots_26010-1024x576.webp",
-      "language": "ja"
     },
     {
       "title": "Making global data easier to explore",
@@ -464,6 +431,39 @@
       "language": "ja"
     },
     {
+      "title": "Qdrantとは？Docker・Pythonでの使い方や料金をわかりやすく解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/qdrant/",
+      "description": "Qdrantは、文章や画像をベクトルと呼ばれる数値データに変換し、そのベクトルを保存・検索するデータベースです。ソースコードが公開されたオープンソースで、社内検索や、資料を生成AIの回答に生かすRAG（検索拡張生成）に利 […]",
+      "publishedDate": "Sun, 11 Oct 2026 12:21:14 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Qdrant_26010-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Microsoft-Decision-1とは？判断特化AIの使い方や性能を検証！Jevとの違いも解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/microsoft-decision-1/",
+      "description": "Microsoft-Decision-1は、Microsoftが2026年10月に発表した判断専用のAIモデルです。文章ではなく選択肢ごとの確率を返す仕組みで、公式発表ではGPT-6 Solの約35倍速いとされています。 […]",
+      "publishedDate": "Sun, 11 Oct 2026 10:25:17 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Microsoft-Decision-1_26010-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【Qwen-Image-2.1-Turbo】わずか8ステップで2K画像を生成！Alibaba最新モデルの使い方・料金・ライセンスを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/tech/qwen-image-2-1-turbo/",
+      "description": "2026年10月9日、AlibabaのQwenチームが画像生成・編集モデル「Qwen-Image-2.1-Turbo」を公開しました！ 通常40ステップかかる生成処理を、たった8ステップで完了させる高速版として登場したモ […]",
+      "publishedDate": "Sun, 11 Oct 2026 09:33:14 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Qwen-Image-2.1-Turbo-1024x576.webp",
+      "language": "ja"
+    },
+    {
       "title": "Claude Dashboardsとは？話しかけるだけで社内データが生きたダッシュボードに！使い方・料金・活用シーンを徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/claude-dashboards/",
@@ -475,14 +475,14 @@
       "language": "ja"
     },
     {
-      "title": "【Clef】Cloudflare初の判断モデルとは？Jevとの違い・性能・料金・使い方を徹底解説",
+      "title": "Geminiエージェントとは？Googleの業務用AI！使い方・料金・Claude選択まで徹底解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/clef/",
-      "description": "2026年10月2日、Cloudflareが自社で学習させた判断モデル「Clef」と軽量版の「Clef-flash」を公開しました！Clefは文章を書く代わりに、「この問い合わせは緊急か」「どのチームが担当すべきか」とい […]",
-      "publishedDate": "Mon, 05 Oct 2026 10:16:33 +0000",
+      "link": "https://weel.co.jp/media/tech/gemini-agent/",
+      "description": "Geminiエージェントは、目的を伝えるだけで調査から資料作成までを引き受ける、Google Cloudの業務用AIエージェントです。発表イベントには700社以上の顧客が集まり、大きな注目を集めました。 とはいえ、「何が […]",
+      "publishedDate": "Mon, 12 Oct 2026 04:43:56 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Clef_26010-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Geminiエージェント-1024x576.webp",
       "language": "ja"
     },
     {
