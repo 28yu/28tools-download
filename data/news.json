@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-12T03:27:26.326217",
+  "lastUpdated": "2026-10-13T04:39:53.495062",
   "articles": [
     {
       "title": "High & Medium Voltage Power transmission & distribution Project Plan out for voting.",
@@ -10,6 +10,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "大成建設、鹿児島東西道路のシールドトンネルに環境配慮コンクリート初適用、製造CO2約7割減",
+      "link": "https://news.build-app.jp/article/43172/",
+      "description": "大成建設は2026年9月30日、CO2排出量を大幅に減らせる環境配慮コンクリート「T-eConcrete/セメント・ゼロ型」を、国土交通省九...",
+      "publishedDate": "Tue, 13 Oct 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/teconcrete-shield-tunnel-130x97.jpg",
+      "language": "ja"
     },
     {
       "title": "buildingSMART International Announces Finalists for the 2026 openBIM® Awards",
@@ -62,6 +72,16 @@
       "language": "ja"
     },
     {
+      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡：高速生成する技術を開発_NEC／「LightningBIM AI Agent」大型アップデート_Arent｜深堀り取材【毎月3回更新】",
+      "link": "https://news.build-app.jp/article/43030/",
+      "description": "BIMによる様々な建物3次元モデルを対象とした生成AIの援用がよりリアルな現場領域に拡がりをみせている。 本稿では、独自AIによって高精細な...",
+      "publishedDate": "Thu, 08 Oct 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/61dd7ebd071450e0bf243086e0bca501-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "原則禁止から利用率44%へ。清水建設の生成AI、3年の逆転劇",
       "link": "https://axconstdx.com/2026/09/27/%e5%8e%9f%e5%89%87%e7%a6%81%e6%ad%a2%e3%81%8b%e3%82%89%e5%88%a9%e7%94%a8%e7%8e%8744%e3%81%b8%e3%80%82%e6%b8%85%e6%b0%b4%e5%bb%ba%e8%a8%ad%e3%81%ae%e7%94%9f%e6%88%90ai%e3%80%813%e5%b9%b4%e3%81%ae/",
       "description": "「生成AIは危ない」と慎重だった会社ほど、いま出遅れを感じていないでしょうか。3年前にAIを原則禁止とした清水建設は、社員の4割超が使う企業に変わりました。どこでつまずき、何を変えて乗り越えたのか。公式発表と報道をもとに […]",
@@ -102,16 +122,6 @@
       "language": "ja"
     },
     {
-      "title": "CMMI AIMとは？AI導入企業が組織力を高める方法",
-      "link": "https://axconstdx.com/2026/08/23/cmmi-aim%e3%81%a8%e3%81%af%ef%bc%9fai%e5%b0%8e%e5%85%a5%e4%bc%81%e6%a5%ad%e3%81%8c%e7%b5%84%e7%b9%94%e5%8a%9b%e3%82%92%e9%ab%98%e3%82%81%e3%82%8b%e6%96%b9%e6%b3%95/",
-      "description": "AIを導入したのに、なぜか成果が担当者一人だけに留まり、組織の力になっていない。そんなもどかしさを感じたことはありませんか。本記事では、その属人化を断ち切り、AI活用を組織の実力へと変えていく成熟度モデル「CMMI AI […]",
-      "publishedDate": "Sat, 22 Aug 2026 21:32:35 +0000",
-      "source": "生成AIと建設DX",
-      "category": "bim",
-      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/CMMI_AIM_OGP_under_100KB-1-1024x538.jpg",
-      "language": "ja"
-    },
-    {
       "title": "国交省予算8.8兆円要求、4つの注目ポイントを解説",
       "link": "https://axconstdx.com/2026/09/01/%e5%9b%bd%e4%ba%a4%e7%9c%81%e4%ba%88%e7%ae%978-8%e5%85%86%e5%86%86%e8%a6%81%e6%b1%82%e3%80%814%e3%81%a4%e3%81%ae%e6%b3%a8%e7%9b%ae%e3%83%9d%e3%82%a4%e3%83%b3%e3%83%88%e3%82%92%e8%a7%a3%e8%aa%ac/",
       "description": "「人手が足りないのに、仕事は減らない」——そんな現場の悩みに、国は本気で向き合おうとしています。令和9年度の国交省予算8.8兆円には、防災からAI活用まで、あなたの仕事の未来を左右する4つのヒントが隠れています。数字の裏 […]",
@@ -126,6 +136,86 @@
       "link": "https://www.buildingsmart.org/ids-survey-results-2026/",
       "description": "IDS survey results: users confirm the value of IDS 1.0 and call for IDS 1.1 and software certification buildingSMART International has completed a community survey on the Information Delivery Specific...",
       "publishedDate": "Mon, 21 Sep 2026 10:25:40 +0000",
+      "source": "buildingSMART International",
+      "category": "bim",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "無料のオープンソース3D CAD「SolidCraft」が話題。Fusion風でAI操作にも対応",
+      "link": "https://axconstdx.com/2026/10/13/%e7%84%a1%e6%96%99%e3%81%ae%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%82%bd%e3%83%bc%e3%82%b93d-cad%e3%80%8csolidcraft%e3%80%8d%e3%81%8c%e8%a9%b1%e9%a1%8c%e3%80%82fusion%e9%a2%a8%e3%81%a7ai%e6%93%8d/",
+      "description": "SolidCraftは、個人開発者のbherbruck氏が2026年10月にGitHubで公開した、無料のオープンソース3D CADです。Rustで実装され、Autodesk Fusionに近い操作感を目指しています。デ […]",
+      "publishedDate": "Mon, 12 Oct 2026 22:39:01 +0000",
+      "source": "生成AIと建設DX",
+      "category": "bim",
+      "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/10/solidcraft_ogp_1200x630-1024x538.webp",
+      "language": "ja"
+    },
+    {
+      "title": "【建設・建築DX EXPO 2026 夏 東京】AI活用の鍵は「現場データの資産化」 大林組・Arent・オプライゾンがPROCOLLA開発の舞台裏を語る",
+      "link": "https://news.build-app.jp/article/42949/",
+      "description": "「建設・建築DX EXPO 2026 夏 東京」で行われた特別講演「AI活用の鍵は、現場データの資産化にある。」では、株式会社大林組 ビジネ...",
+      "publishedDate": "Mon, 12 Oct 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/9ec90bad61db847d4767f193d2c59b4c-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "インフラを守る点検会社を、DXで支えたい。TRASS代表・越智氏が描く維持管理DXの将来像 【後編】",
+      "link": "https://news.build-app.jp/article/42886/",
+      "description": "橋梁点検の現場では、紙や転記作業の削減だけでなく、経験豊富な技術者の減少や働き方の改善といった課題も顕在化しています。TRASS株式会社は、...",
+      "publishedDate": "Mon, 12 Oct 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/1005_thumbnail_part2-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "【建設・建築DX EXPO 2026夏 東京】AIで建設業務を支援、株式会社Arentを取材",
+      "link": "https://news.build-app.jp/article/42945/",
+      "description": "「建設・建築DX EXPO 2026 夏 東京」の株式会社Arentブースでは、設計、施工、維持管理に関わるSaaSプロダクトが紹介されまし...",
+      "publishedDate": "Mon, 12 Oct 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/Arent_DX-EXPO-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "高所作業車の資格｜10mの区分・取得費用・講習時間と2026年の変更点",
+      "link": "https://news.build-app.jp/article/43157/",
+      "description": "高所作業車の資格は、車両の最大作業床の高さで選ばれます。10m以上は技能講習、2m以上10m未満は特別教育が必要です。 12mまで上がる車両...",
+      "publishedDate": "Mon, 12 Oct 2026 14:50:07 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/3686554_m-98x130.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "施工管理とは？仕事内容・4大管理と5大管理の違い・資格とDX事例",
+      "link": "https://news.build-app.jp/article/43159/",
+      "description": "施工管理は、工事の工程と品質を管理し、安全と予算を確保しながら完成へ導く業務です。設計変更があれば、工程だけでなく発注数量や検査項目も更新し...",
+      "publishedDate": "Mon, 12 Oct 2026 14:44:07 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/32470875_m-130x87.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "鉄筋とは？種類・規格・価格相場と鉄筋工事の管理ポイント【2026年】",
+      "link": "https://news.build-app.jp/article/43161/",
+      "description": "鉄筋の発注額は、トン単価だけでは比較できません。鋼種と径に加え、加工や搬入の条件をそろえる必要があります。 本記事では、材料価格と工事費の違...",
+      "publishedDate": "Mon, 12 Oct 2026 14:40:53 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/33473709_m-130x98.jpg",
+      "language": "ja"
+    },
+    {
+      "title": "The buildingSMART openBIM Awards 2026 – Winners Announced",
+      "link": "https://www.buildingsmart.org/the-buildingsmart-openbim-awards-2026-winners-announced/",
+      "description": "Tokyo, Japan – October 12, 2026 The winners of the buildingSMART openBIM Awards 2026 were announced during a celebratory ceremony on Thursday 8 October, as part of the closing plenary…",
+      "publishedDate": "Mon, 12 Oct 2026 11:47:41 +0000",
       "source": "buildingSMART International",
       "category": "bim",
       "thumbnail": null,
@@ -150,6 +240,26 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "熊谷組・住友林業JVが銀座の木挽ビルホテル計画に着工、国交省の木造事業で先導枠に採択",
+      "link": "https://news.build-app.jp/article/43132/",
+      "description": "熊谷組は、日鉄興和不動産が東京都中央区銀座七丁目で進める「（仮称）木挽ビルホテル計画」について、2026年10月に新築工事へ着手すると発表し...",
+      "publishedDate": "Fri, 09 Oct 2026 03:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/kobiki-hotel-hybrid-130x79.png",
+      "language": "ja"
+    },
+    {
+      "title": "国土交通省が舗装省令を25年ぶりに改正、性能保持想定期間の導入などで長寿命化を促進",
+      "link": "https://news.build-app.jp/article/43128/",
+      "description": "国土交通省は2026年9月30日、道路舗装に関する二つの基準の見直しを発表しました。対象は「車道及び側帯の舗装の構造の基準に関する省令」と「...",
+      "publishedDate": "Fri, 09 Oct 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/road-pavement-standard-130x66.jpg",
+      "language": "ja"
     },
     {
       "title": "IFC 4.4 Integration Plan for ISO voting results",
@@ -186,16 +296,6 @@
       "link": "https://www.buildingsmart.org/immersed-tunnel-project-plan-out-for-voting/",
       "description": "Vote closing date: 27 Oct 2026Report: Link Project SummaryImmersed tunnel projects are a unique and complex subset of maritime infrastructure, requiring precise coordination across disciplines, techno...",
       "publishedDate": "Fri, 04 Sep 2026 08:39:56 +0000",
-      "source": "buildingSMART International",
-      "category": "bim",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "IFC 4.4 Integration for ISO Submission approval voting",
-      "link": "https://www.buildingsmart.org/ifc-4-4-integration-for-iso-submission-approval-voting/",
-      "description": "Vote closing date: 21 Aug 2026 Project plan: Link The IFC 4.4 Integration for ISO Submission has been submitted to the Standards Committee for voting to proceed.",
-      "publishedDate": "Fri, 03 Jul 2026 12:36:12 +0000",
       "source": "buildingSMART International",
       "category": "bim",
       "thumbnail": null,
