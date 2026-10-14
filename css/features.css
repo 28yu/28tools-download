@@ -100,20 +100,6 @@
     color: var(--text-primary, #2c3e50);
 }
 
-/* ---- 新機能バッジ ---- */
-.feature-new-badge {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    background: var(--construction-orange, #e67e22);
-    color: #fff;
-    font-size: 10px;
-    font-weight: 700;
-    padding: 2px 6px;
-    border-radius: 4px;
-    letter-spacing: 0.5px;
-}
-
 /* ---- manual.html: Markdown コンテンツ ---- */
 .md-content {
     max-width: 800px;
