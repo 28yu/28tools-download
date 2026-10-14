@@ -1,6 +1,16 @@
 {
-  "lastUpdated": "2026-10-13T04:39:53.495062",
+  "lastUpdated": "2026-10-14T02:48:55.846050",
   "articles": [
+    {
+      "title": "国土交通省、8月の建設工事受注高は8.6%増で5か月連続増加、設備工事業は24か月連続増",
+      "link": "https://news.build-app.jp/article/43200/",
+      "description": "国土交通省は2026年10月13日、建設工事受注動態統計調査の令和8年8月分を公表しました。8月の受注高は9兆9,578億円で、前年の同じ月...",
+      "publishedDate": "Wed, 14 Oct 2026 01:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/construction_august_2026-130x77.jpg",
+      "language": "ja"
+    },
     {
       "title": "High & Medium Voltage Power transmission & distribution Project Plan out for voting.",
       "link": "https://www.buildingsmart.org/high-medium-voltage-power-transmission-distribution-project-plan-out-for-voting/",
@@ -10,6 +20,16 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
+    },
+    {
+      "title": "保護中: 【建設・建築DX EXPO 2026 夏 東京】BIMとAIで建築生産はどう変わる？ 長谷工コーポレーションと久米設計が示した実践と課題",
+      "link": "https://news.build-app.jp/article/43058/",
+      "description": "この投稿はパスワードで保護されているため抜粋文はありません。",
+      "publishedDate": "Tue, 13 Oct 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/2ed22b93c6593da91fa73d4e9055edf2-130x82.png",
+      "language": "ja"
     },
     {
       "title": "大成建設、鹿児島東西道路のシールドトンネルに環境配慮コンクリート初適用、製造CO2約7割減",
@@ -69,16 +89,6 @@
       "source": "生成AIと建設DX",
       "category": "bim",
       "thumbnail": "https://axconstdx.com/wp-content/uploads/2026/08/cloud-browser-70percent-ogp-1200x630-1-1024x538.webp",
-      "language": "ja"
-    },
-    {
-      "title": "急速に発展する建設分野での生成AI援用の現在地を多分野に渡り追跡：高速生成する技術を開発_NEC／「LightningBIM AI Agent」大型アップデート_Arent｜深堀り取材【毎月3回更新】",
-      "link": "https://news.build-app.jp/article/43030/",
-      "description": "BIMによる様々な建物3次元モデルを対象とした生成AIの援用がよりリアルな現場領域に拡がりをみせている。 本稿では、独自AIによって高精細な...",
-      "publishedDate": "Thu, 08 Oct 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/61dd7ebd071450e0bf243086e0bca501-130x82.png",
       "language": "ja"
     },
     {
@@ -142,6 +152,26 @@
       "language": "en"
     },
     {
+      "title": "車両系建設機械とは？｜6種類の一覧と必要な資格、現場で守るべきルールを解説【2026年版】",
+      "link": "https://news.build-app.jp/article/43196/",
+      "description": "車両系建設機械とは、労働安全衛生法施行令で定められた「動力を用い、不特定の場所に自走できる建設機械」のことです。 運転に必要な資格は、機体質...",
+      "publishedDate": "Mon, 12 Oct 2026 23:30:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/394e44e3e8809e8bf3ef239628d0ac5d-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "関内駅前港町地区第一種市街地再開発事業とは｜概要やメリットを解説",
+      "link": "https://news.build-app.jp/article/43183/",
+      "description": "トレンドワード：関内駅前港町地区第一種市街地再開発事業 横浜市の関内駅前では、駅周辺の都市機能を更新する「関内駅前第一種市街地再開発事業」が...",
+      "publishedDate": "Mon, 12 Oct 2026 23:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/2acc21ee446f6e14784795e4e853e996-130x82.png",
+      "language": "ja"
+    },
+    {
       "title": "無料のオープンソース3D CAD「SolidCraft」が話題。Fusion風でAI操作にも対応",
       "link": "https://axconstdx.com/2026/10/13/%e7%84%a1%e6%96%99%e3%81%ae%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%82%bd%e3%83%bc%e3%82%b93d-cad%e3%80%8csolidcraft%e3%80%8d%e3%81%8c%e8%a9%b1%e9%a1%8c%e3%80%82fusion%e9%a2%a8%e3%81%a7ai%e6%93%8d/",
       "description": "SolidCraftは、個人開発者のbherbruck氏が2026年10月にGitHubで公開した、無料のオープンソース3D CADです。Rustで実装され、Autodesk Fusionに近い操作感を目指しています。デ […]",
@@ -162,16 +192,6 @@
       "language": "ja"
     },
     {
-      "title": "インフラを守る点検会社を、DXで支えたい。TRASS代表・越智氏が描く維持管理DXの将来像 【後編】",
-      "link": "https://news.build-app.jp/article/42886/",
-      "description": "橋梁点検の現場では、紙や転記作業の削減だけでなく、経験豊富な技術者の減少や働き方の改善といった課題も顕在化しています。TRASS株式会社は、...",
-      "publishedDate": "Mon, 12 Oct 2026 22:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/1005_thumbnail_part2-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "【建設・建築DX EXPO 2026夏 東京】AIで建設業務を支援、株式会社Arentを取材",
       "link": "https://news.build-app.jp/article/42945/",
       "description": "「建設・建築DX EXPO 2026 夏 東京」の株式会社Arentブースでは、設計、施工、維持管理に関わるSaaSプロダクトが紹介されまし...",
@@ -179,6 +199,16 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/Arent_DX-EXPO-130x82.png",
+      "language": "ja"
+    },
+    {
+      "title": "インフラを守る点検会社を、DXで支えたい。TRASS代表・越智氏が描く維持管理DXの将来像 【後編】",
+      "link": "https://news.build-app.jp/article/42886/",
+      "description": "橋梁点検の現場では、紙や転記作業の削減だけでなく、経験豊富な技術者の減少や働き方の改善といった課題も顕在化しています。TRASS株式会社は、...",
+      "publishedDate": "Mon, 12 Oct 2026 22:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/09/1005_thumbnail_part2-130x82.png",
       "language": "ja"
     },
     {
@@ -199,16 +229,6 @@
       "source": "BuildApp News",
       "category": "architecture",
       "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/32470875_m-130x87.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "鉄筋とは？種類・規格・価格相場と鉄筋工事の管理ポイント【2026年】",
-      "link": "https://news.build-app.jp/article/43161/",
-      "description": "鉄筋の発注額は、トン単価だけでは比較できません。鋼種と径に加え、加工や搬入の条件をそろえる必要があります。 本記事では、材料価格と工事費の違...",
-      "publishedDate": "Mon, 12 Oct 2026 14:40:53 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/33473709_m-130x98.jpg",
       "language": "ja"
     },
     {
@@ -240,26 +260,6 @@
       "category": "bim",
       "thumbnail": null,
       "language": "en"
-    },
-    {
-      "title": "熊谷組・住友林業JVが銀座の木挽ビルホテル計画に着工、国交省の木造事業で先導枠に採択",
-      "link": "https://news.build-app.jp/article/43132/",
-      "description": "熊谷組は、日鉄興和不動産が東京都中央区銀座七丁目で進める「（仮称）木挽ビルホテル計画」について、2026年10月に新築工事へ着手すると発表し...",
-      "publishedDate": "Fri, 09 Oct 2026 03:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/kobiki-hotel-hybrid-130x79.png",
-      "language": "ja"
-    },
-    {
-      "title": "国土交通省が舗装省令を25年ぶりに改正、性能保持想定期間の導入などで長寿命化を促進",
-      "link": "https://news.build-app.jp/article/43128/",
-      "description": "国土交通省は2026年9月30日、道路舗装に関する二つの基準の見直しを発表しました。対象は「車道及び側帯の舗装の構造の基準に関する省令」と「...",
-      "publishedDate": "Fri, 09 Oct 2026 01:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/road-pavement-standard-130x66.jpg",
-      "language": "ja"
     },
     {
       "title": "IFC 4.4 Integration Plan for ISO voting results",
