@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パラメータ整理 - 28 Tools マニュアル</title>
+    <link rel="icon" type="image/png" href="../images/site-icons/favicon-28.png">
+    <link rel="canonical" href="https://28tools.com/manual/parameter-cleanup.html">
+    <meta name="description" content="Revitプロジェクト内のプロジェクト・共有・グローバルパラメータを一覧表示し、同名パラメータの特定、値の有無の確認、未使用パラメータの削除を行う無料アドインの使い方マニュアル。">
+    <meta property="og:title" content="パラメータ整理 - 28 Tools マニュアル">
+    <meta property="og:description" content="Revitプロジェクト内のプロジェクト・共有・グローバルパラメータを一覧表示し、同名パラメータの特定、値の有無の確認、未使用パラメータの削除を行う無料アドインの使い方マニュアル。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://28tools.com/manual/parameter-cleanup.html">
+    <meta property="og:image" content="https://28tools.com/images/ogp-image.png">
+    <meta property="og:site_name" content="28 Tools">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197151217236924"
+         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/manual.css">
+    <link rel="stylesheet" href="../css/features.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="manual-page">
+    <!-- 共通ヘッダー -->
+    <div id="header-container"></div>
+
+    <!-- サイドバーナビゲーション -->
+    <div id="sidebar-container"></div>
+
+    <!-- マニュアルコンテンツ -->
+    <div class="manual-container">
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <a href="../index.html" data-lang-key="breadcrumb-home">ホーム</a>
+            <span class="separator">›</span>
+            <a href="../addins.html" data-lang-key="breadcrumb-addins">アドイン</a>
+            <span class="separator">›</span>
+            <span data-lang-key="manual-parameter-cleanup-title">パラメータ整理</span>
+        </nav>
+
+        <!-- 機能タイトル -->
+        <div class="manual-header">
+            <div class="icon-wrapper">
+                <img src="../images/revit-icons/parameter_cleanup.png" alt="Parameter Cleanup Icon" class="feature-icon">
+            </div>
+            <h1 class="manual-title" data-lang-key="manual-parameter-cleanup-title">パラメータ整理</h1>
+            <p class="manual-subtitle" data-lang-key="manual-parameter-cleanup-subtitle">同名パラメータの特定・値の有無確認・未使用パラメータの削除</p>
+        </div>
+
+        <!-- 機能概要 -->
+
+        <!-- マニュアル本文（Markdown 動的読み込み） -->
+        <article id="md-content" class="md-content" data-baked="true">
+        <!-- AUTO-GENERATED: 本文は scripts/build-manuals により Revit-Add-ins/Features/ParameterCleanup.md から焼き込み。手動編集しないこと -->
+<h1>パラメータ整理（未使用パラメータ削除）</h1>
+<p>プロジェクト内の削除可能なパラメータを一覧表示し、<strong>同名パラメータの特定</strong>・<strong>値の有無の確認</strong>・<strong>不要（未使用）パラメータの削除</strong>を行う機能です。</p>
+<p>長年運用したモデルには、他プロジェクトからのコピーやファミリ読み込み、共有パラメータの追加などで、<strong>同じ名前のパラメータが重複</strong>したり、<strong>値が一度も入力されていない不要なパラメータ</strong>が溜まっていきます。本機能はそれらを洗い出し、まとめて削除できます。</p>
+<h2>対象パラメータ</h2>
+<p>「ユーザーが削除できるすべてのパラメータ」を対象とします。</p>
+<table>
+<thead>
+<tr>
+<th>種別</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>プロジェクト</td>
+<td>非共有のプロジェクトパラメータ</td>
+</tr>
+<tr>
+<td>共有</td>
+<td>共有パラメータ（プロジェクトにバインド済み／ファミリ用に読込済み）</td>
+</tr>
+<tr>
+<td>グローバル</td>
+<td>グローバルパラメータ</td>
+</tr>
+</tbody></table>
+<p>※ Revit 標準の組み込み（Built-in）パラメータは削除できないため、一覧には表示されません。
+※ ファミリ<strong>内部の定義そのもの</strong>（ファミリエディタで作る非共有パラメータ）は別ドキュメント側の管理のため対象外です。ただし、ファミリ内部で使われている<strong>共有パラメータ</strong>はファミリ読み込み時にプロジェクトへ登録されるため一覧に現れ、削除も可能です（＝下記の「バインドなし」問題）。</p>
+<h2>⚠️ 「バインドなし」パラメータの値も必ず確認します（改善済み）</h2>
+<h3>「バインドなし」とは</h3>
+<p>Revit の「プロジェクトパラメータ」は <code>ParameterBindings</code>（パラメータ↔カテゴリの結び付け）で管理されます。
+一方、<strong>ファミリ内部で定義された共有パラメータ</strong>は、そのファミリを読み込むとプロジェクトに
+<code>SharedParameterElement</code> として登録されますが、<strong>プロジェクトパラメータとしてはバインドされません</strong>。
+これが一覧で「バインドなし」と表示されていたものです（ご認識のとおりです）。</p>
+<h3>何が問題だったか</h3>
+<p>旧バージョンは「バインドされたカテゴリの要素」だけを走査して値の有無を判定していたため、
+バインドがないパラメータは<strong>走査対象カテゴリが分からず判定をスキップ</strong>し、
+「バインドなし＝判定不能」と表示していました。しかし実際には、そのパラメータは
+ファミリのインスタンス／タイプ上に<strong>実在し値も入っています</strong>。
+このため「バインドなしだから不要だろう」と削除して<strong>値ごと失う事故</strong>が起き得ました。</p>
+<h3>改善内容：値は読み取れます</h3>
+<p>バインドの有無に関係なく、要素側から実際の値を読み取るようにしました。</p>
+<ol>
+<li>モデルを <strong>1 回だけ</strong>走査し、「どの要素・タイプがどのパラメータを保持しているか」を索引化します
+（インスタンスはタイプ単位、タイプはファミリ単位でグループ化し、代表要素 1 つだけパラメータを列挙）。</li>
+<li>その索引を使って、対象パラメータを<strong>実際に保持している要素だけ</strong>を走査し、値を読み取ります
+（共有パラメータは GUID、非共有は Definition で取得。どちらも効かない場合のみ <code>Parameters</code> 列挙にフォールバック）。</li>
+</ol>
+<p>この結果、値の列は次の 3 状態に分かれます。</p>
+<table>
+<thead>
+<tr>
+<th>表示</th>
+<th>意味</th>
+<th>削除の安全性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>値あり</strong>（緑）</td>
+<td>値が入った要素が 1 件以上ある</td>
+<td>❌ 削除すると値が失われる</td>
+</tr>
+<tr>
+<td><strong>空</strong>（橙）</td>
+<td>パラメータを保持する要素はあるが、どれも値が未入力</td>
+<td>⭕ 値の損失なし</td>
+</tr>
+<tr>
+<td><strong>未使用</strong>（赤）</td>
+<td>どの要素・タイプもこのパラメータを保持していない（定義だけが残っている）</td>
+<td>⭕ 値の損失なし</td>
+</tr>
+</tbody></table>
+<p>さらに「<strong>使用箇所</strong>」列に、そのパラメータを保持している要素数とカテゴリの内訳を表示します
+（ツールチップにはファミリ名・要素 ID・実際の値の例も表示）。</p>
+<h3>安全装置</h3>
+<ul>
+<li><strong>「未使用を全選択」</strong> ボタンは、値の確認が終わっていない状態では動作しません。
+また選択されるのは「未使用」（＝どの要素も保持していない）だけです。
+以前の「バインドなしを全選択」は、値を持つファミリ内パラメータまで巻き込むため廃止しました。</li>
+<li>削除時、選択に <strong>「値あり」または「未確認」</strong> が含まれていると、対象名と保持要素数を列挙した
+<strong>警告ダイアログ</strong>が出ます（既定は「いいえ」）。</li>
+<li>削除中に Revit が出した警告文はモーダル表示せずに<strong>記録し、削除結果ダイアログでまとめて通知</strong>します。</li>
+</ul>
+<h3>それでも残る制約</h3>
+<ul>
+<li>バインドなしのパラメータを削除すると、そのパラメータを使うファミリを<strong>再読み込みするまで</strong>
+プロジェクト側の定義は復活しません。値は失われます。判定結果が「値あり」のものは削除しないでください。</li>
+<li>ビューフィルタ・タグ・数式からの参照は API の制約で検出できません（後述）。</li>
+</ul>
+<h2>使い方</h2>
+<ol>
+<li>リボン <strong>28 Tools ＞ パラメータ ＞ パラメータ整理</strong> をクリックします。</li>
+<li>ダイアログにプロジェクト内の削除可能なパラメータが一覧表示されます。<ul>
+<li><strong>同名のパラメータ</strong>はオレンジ色で強調表示されます。</li>
+<li>「同名のみ」チェックで重複パラメータだけに絞り込めます。</li>
+</ul>
+</li>
+<li>ダイアログを開くと<strong>自動で</strong>値の有無を判定します（<strong>「値の有無を確認」</strong> ボタンで再実行できます）。<ul>
+<li>判定中は進捗バーが表示され、<strong>「中止」</strong> でいつでも中断できます。</li>
+<li>結果は一番右の <strong>「値」列</strong> に「値あり」（緑）／「空」（橙）／「未使用」（赤）で表示されます。</li>
+<li><strong>「使用箇所」列</strong>に、そのパラメータを保持している要素数とカテゴリ内訳が表示されます。</li>
+<li>確認完了後、下部に <strong>「値あり ◯件 / 空 ◯件 / 未使用 ◯件」</strong> のサマリーが表示されます。</li>
+</ul>
+</li>
+<li>削除したいパラメータの「選択」チェックを入れます。<ul>
+<li><strong>「空を全選択」</strong>／<strong>「未使用を全選択」</strong> ボタンで、該当状態のパラメータを一括選択できます（いずれも値の確認が完了している必要があります）。</li>
+<li>一覧の下の <strong>「全選択」／「選択解除」</strong> ボタンは、フィルターで<strong>表示中の行だけ</strong>を対象に選択/解除します。</li>
+</ul>
+</li>
+<li><strong>「選択したパラメータを削除」</strong> を押し、確認ダイアログで <strong>はい</strong> を選ぶと削除が実行されます。</li>
+</ol>
+<h2>大容量モデルでのフリーズ対策</h2>
+<p>Revit API はシングルスレッドのため、値の有無判定を全モデルに対して行うと処理が重くなります。本機能は次の設計でフリーズを回避しています。</p>
+<ul>
+<li><strong>索引は1回だけ</strong>: モデル全体の走査は「使用箇所の索引化」1回のみ。索引は全パラメータで共有するため、パラメータ数が増えても走査回数は増えません。</li>
+<li><strong>代表要素方式</strong>: パラメータの列挙は「タイプごと（インスタンス）」「ファミリごと（タイプ）」の代表要素 1 つだけに対して行います（数千回で済みます）。</li>
+<li><strong>走査量の最小化</strong>: 値判定は、そのパラメータを実際に保持しているグループの要素だけを対象にします。</li>
+<li><strong>早期終了</strong>: 値が1件でも見つかった時点でそのパラメータの判定を打ち切ります。</li>
+<li><strong>進捗表示と中止</strong>: 一定件数ごとに画面へ制御を返すため、進捗バーの更新と「中止」ボタンが常に反応します。</li>
+</ul>
+<h2>値の有無の判定について</h2>
+<ul>
+<li><strong>文字列パラメータ</strong>: 空白のみ・未入力は「空」と判定します。</li>
+<li><strong>ElementId パラメータ</strong>: 無効な参照は「空」と判定します。</li>
+<li><strong>数値・整数（Yes/No 等）パラメータ</strong>: 常に値を持つ扱いとし、安全側で「値あり」と判定します（誤って数値パラメータを削除候補にしないため）。</li>
+<li><strong>グローバルパラメータ</strong>: 現在値を表示します（自動での未使用判定は行いません）。</li>
+<li><strong>バインドの有無は判定に影響しません</strong>: プロジェクトパラメータとしてバインドされていなくても、要素が保持していれば値を読み取って判定します。</li>
+</ul>
+<h2>並べ替え・絞り込み（Excel風フィルター）</h2>
+<p>各列見出しの右にある「<strong>▾</strong>」ボタンをクリックすると、Excel のオートフィルターと同様のメニューが開きます。</p>
+<ul>
+<li><strong>昇順で並べ替え／降順で並べ替え</strong></li>
+<li><strong>値のチェックリスト</strong>：表示したい値だけにチェックを付けて絞り込み。「(すべて選択)」で一括切替、検索ボックスで値を絞り込み可能。</li>
+<li><strong>OK</strong> で適用、<strong>クリア</strong> でその列のフィルター解除。</li>
+<li>フィルターが掛かっている列は「▾」が青い「▼」に変わります。</li>
+</ul>
+<p>上部の「検索」「同名のみ」「種別」フィルターとも併用できます。</p>
+<h2>パラメータグループの表示</h2>
+<p>「<strong>パラメータグループ</strong>」列に、各パラメータが属するグループ（プロパティパレットの見出し。例:「寸法」「識別情報」「その他」）を表示します。</p>
+<ul>
+<li>グループ名は <strong>Revit 本体の表示言語</strong>で表示されます（日本語版 Revit なら「寸法」、英語版なら「Dimensions」）。</li>
+<li>列見出しの「▾」から、特定のグループだけに絞り込めます。</li>
+<li>上部の「検索」欄は、パラメータ名に加えて<strong>グループ名でも一致</strong>します。</li>
+</ul>
+<h2>集計表参照の表示</h2>
+<p>「<strong>集計表参照</strong>」列には、そのパラメータを<strong>集計表（スケジュール）のフィールドで使用している集計表名</strong>が表示されます（列挙時に自動取得。全要素走査ではないため軽量です）。削除前に「どの集計表で使われているか」を確認できます。</p>
+<p>⚠️ この列が<strong>空でも「どこからも参照されていない」とは限りません</strong>。以下は Revit API の制約により検出対象外です：</p>
+<ul>
+<li><strong>ビューフィルタ</strong>: API がフィルタ規則から参照パラメータを確実に取得できないため未対応</li>
+<li><strong>タグ・数式</strong>: 参照情報がファミリ文書内にあり、全ファミリを開く必要があるため（重く実質不可）未対応</li>
+</ul>
+<p>このため、削除前の警告ダイアログは引き続き表示されます。</p>
+<h2>⚠️ 削除時の注意</h2>
+<ul>
+<li>削除は <strong>元に戻せません</strong>（Undo 前提ではありません）。</li>
+<li>パラメータの値が空でも、<strong>ビューフィルタ・集計表・タグ・数式</strong> などから参照されている場合があります。それらを削除すると機能しなくなることがあるため、削除前に必ず内容をご確認ください。</li>
+<li>「値あり」と判定されたパラメータは、たとえ「バインドなし（ファミリ内）」であっても<strong>削除しないでください</strong>。要素に入力済みの値が失われます。</li>
+<li>心配な場合は、事前にモデルのバックアップ（別名保存）を取ってから実行してください。</li>
+</ul>
+        </article>
+
+        <div class="manual-navigation">
+            <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
+                ← ホームに戻る
+            </a>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <!-- SNSシェアボタン -->
+            <div class="share-buttons">
+                <p class="share-text" data-lang-key="footer-share">このページをシェア：</p>
+                <div class="share-icons">
+                    <a href="#" class="share-btn twitter" data-sns="twitter" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn facebook" data-sns="facebook" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn line" data-sns="line" aria-label="LINE">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn hatena" data-sns="hatena" aria-label="はてなブックマーク">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.47 0C22.42 0 24 1.58 24 3.53v16.94c0 1.95-1.58 3.53-3.53 3.53H3.53C1.58 24 0 22.42 0 20.47V3.53C0 1.58 1.58 0 3.53 0h16.94zM7.708 5.522H5.522v7.827c0 1.283.818 2.006 2.118 2.006s2.117-.723 2.117-2.006V5.522H7.708zm10.7 6.2c0-1.345-.696-2.285-2.02-2.585.897-.38 1.527-1.104 1.527-2.198 0-1.72-1.33-2.417-3.292-2.417H11.97v10.016h2.754c1.864 0 3.685-.65 3.685-2.815zm-4.175-1.35h1.29c.696 0 1.13.354 1.13.952 0 .597-.434.95-1.13.95h-1.29V10.37zm0-3.23h1.113c.57 0 1.017.315 1.017.87 0 .552-.447.866-1.017.866h-1.114V7.142zm-8.17 10.29c.91 0 1.616.71 1.616 1.62 0 .907-.707 1.616-1.616 1.616-.91 0-1.616-.71-1.616-1.617s.707-1.62 1.616-1.62z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="site-footer-links">
+                <a href="../about.html" data-lang-key="footer-about">運営者情報</a>
+                <span class="footer-divider">|</span>
+                <a href="../contact.html" data-lang-key="footer-contact">お問い合わせ</a>
+                <span class="footer-divider">|</span>
+                <a href="../privacy.html" data-lang-key="footer-privacy">プライバシーポリシー</a>
+                <span class="footer-divider">|</span>
+                <a href="../terms.html" data-lang-key="footer-terms">利用規約</a>
+            </div>
+            <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=20260715-5"></script>
+    <script>
+    (function() {
+        var FEATURE_ID = 'ParameterCleanup';
+        var el = document.getElementById('md-content');
+        if (!el || el.getAttribute('data-baked') === 'true') return; // 本文はビルド時に焼き込み済み
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
+        fetch(MD_URL)
+            .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+            .then(function(md) { if (window.marked) el.innerHTML = window.marked.parse(md); })
+            .catch(function(e) { console.error(e); });
+    })();
+    </script>
+</body>
+</html>

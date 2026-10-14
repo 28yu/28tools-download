@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWGレイヤ表示設定の移行 - 28 Tools マニュアル</title>
+    <link rel="icon" type="image/png" href="../images/site-icons/favicon-28.png">
+    <link rel="canonical" href="https://28tools.com/manual/dwg-layer-transfer.html">
+    <meta name="description" content="Revitの表示/グラフィックスの上書き（読み込みカテゴリ）で設定したDWGレイヤの表示/非表示・線の色・線幅・線種・ハーフトーンを、開いている別のモデルへ直接移行する無料アドインの使い方マニュアル。">
+    <meta property="og:title" content="DWGレイヤ表示設定の移行 - 28 Tools マニュアル">
+    <meta property="og:description" content="Revitの表示/グラフィックスの上書き（読み込みカテゴリ）で設定したDWGレイヤの表示/非表示・線の色・線幅・線種・ハーフトーンを、開いている別のモデルへ直接移行する無料アドインの使い方マニュアル。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://28tools.com/manual/dwg-layer-transfer.html">
+    <meta property="og:image" content="https://28tools.com/images/ogp-image.png">
+    <meta property="og:site_name" content="28 Tools">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197151217236924"
+         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/manual.css">
+    <link rel="stylesheet" href="../css/features.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="manual-page">
+    <!-- 共通ヘッダー -->
+    <div id="header-container"></div>
+
+    <!-- サイドバーナビゲーション -->
+    <div id="sidebar-container"></div>
+
+    <!-- マニュアルコンテンツ -->
+    <div class="manual-container">
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <a href="../index.html" data-lang-key="breadcrumb-home">ホーム</a>
+            <span class="separator">›</span>
+            <a href="../addins.html" data-lang-key="breadcrumb-addins">アドイン</a>
+            <span class="separator">›</span>
+            <span data-lang-key="manual-dwg-layer-transfer-title">DWGレイヤ表示設定の移行</span>
+        </nav>
+
+        <!-- 機能タイトル -->
+        <div class="manual-header">
+            <div class="icon-wrapper">
+                <img src="../images/revit-icons/dwg_layer_transfer.png" alt="DWG Layer Transfer Icon" class="feature-icon">
+            </div>
+            <h1 class="manual-title" data-lang-key="manual-dwg-layer-transfer-title">DWGレイヤ表示設定の移行</h1>
+            <p class="manual-subtitle" data-lang-key="manual-dwg-layer-transfer-subtitle">DWGのレイヤ表示設定（V/G）を開いている別モデルへ直接コピー</p>
+        </div>
+
+        <!-- 機能概要 -->
+
+        <!-- マニュアル本文（Markdown 動的読み込み） -->
+        <article id="md-content" class="md-content" data-baked="true">
+        <!-- AUTO-GENERATED: 本文は scripts/build-manuals により Revit-Add-ins/Features/DwgLayerTransfer.md から焼き込み。手動編集しないこと -->
+<h1>DWGレイヤ表示設定の移行</h1>
+<p>Revit に読み込み／リンクした <strong>DWG のレイヤごとの表示設定</strong> を、開いている<strong>別の Revit モデルへそのまま移行</strong>する機能です。</p>
+<p>表示/グラフィックスの上書き（V/G）ダイアログの <strong>「読み込みカテゴリ」タブ</strong> で設定した内容 —— レイヤの表示/非表示、線の色・線幅・線種、ハーフトーン —— が対象です。</p>
+<p>同じ DWG を使う別モデルや、モデルを分割したときに、レイヤの表示設定を一つずつ手作業でやり直す必要がなくなります。</p>
+<h2>Revit 標準機能との違い</h2>
+<table>
+<thead>
+<tr>
+<th>設定の場所</th>
+<th>Revit 標準</th>
+<th>本機能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>オブジェクトスタイル ＞ 読み込まれたオブジェクト（モデル全体）</td>
+<td>「プロジェクト標準の転送」で移せる</td>
+<td>対象外</td>
+</tr>
+<tr>
+<td><strong>表示/グラフィックスの上書き ＞ 読み込みカテゴリ（ビュー単位）</strong></td>
+<td><strong>移せない</strong></td>
+<td><strong>対象</strong></td>
+</tr>
+</tbody></table>
+<p>ビュー単位の V/G はプロジェクト標準の転送では移せないため、本機能はそこを補います。</p>
+<h2>前提条件</h2>
+<ul>
+<li><strong>移行元・移行先の両方のモデルを Revit で開いておく</strong>こと。Excel などの中間ファイルは使いません。</li>
+<li><strong>移行先モデルにも同じ DWG が読み込み／リンクされている</strong>こと。
+DWG のレイヤは Revit が DWG を読み込んだときに自動生成するもので、後から作ることはできません。DWG が入っていないモデルには設定だけを流し込めません。</li>
+</ul>
+<h2>画面構成</h2>
+<pre><code>┌──────────────────────────────────────────┐
+│ 移行元モデル / 移行先モデル / 反映先の単位                  │
+├─────────────────────┬────────────────────┤
+│ 移行元モデル データ情報      │ 移行先モデル データ情報      │
+│  ① 読み取り元のビューを選択   │  ③ 反映するビューを選択（複数可）│
+│  ② このビューにある DWG を選択 │  ④ 反映先の DWG を選択（複数可）│
+└─────────────────────┴────────────────────┘
+</code></pre>
+<p>左で「どのビューの、どの DWG の設定を読み取るか」を決め、右で「どのビューの、どの DWG に反映するか」を決めます。</p>
+<p><strong>移行元は常にビュー単位です。</strong> 上部の「反映先の単位」は右側（移行先）にだけ効きます。</p>
+<h2>使い方</h2>
+<ol>
+<li><p><strong>移行先</strong>のモデル（設定を反映したい側）をアクティブにします。</p>
+</li>
+<li><p>リボン <strong>28 Tools ＞ シート・ビュー ＞ DWG表示移行</strong> をクリックします。</p>
+</li>
+<li><p>ダイアログ上部で設定します。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>移行元モデル</td>
+<td>開いている他のモデルから、設定のコピー元を選びます</td>
+</tr>
+<tr>
+<td>移行先モデル</td>
+<td>アクティブなモデル（固定・表示のみ）</td>
+</tr>
+<tr>
+<td>反映先の単位</td>
+<td>右側の一覧を <strong>ビュー</strong> / <strong>ビューテンプレート</strong> のどちらで出すか（既定はビュー）。ビューを選んでおけば、テンプレート制御下のビューは自動でテンプレートへ振り替わります</td>
+</tr>
+</tbody></table>
+</li>
+<li><p><strong>① 左のビュー一覧</strong>から読み取り元のビューを選びます。検索欄で絞り込めます。</p>
+</li>
+<li><p><strong>② その下の DWG 一覧</strong>から読み取り元の DWG を選びます。</p>
+<ul>
+<li>ここに並ぶのは、<strong>選択したビューにある DWG だけ</strong>です。モデルに読み込み／リンクした DWG（全ビューに現れるもの）に加え、そのビューにだけ貼り付けた DWG（<strong>このビュー専用</strong>と表示）が対象になります。</li>
+<li>各行の右に「◯レイヤ / 設定 △」と出ます。△ が、そのビューでそのDWGに実際に効いている設定の件数です。設定があるものが上に並び、自動で選択されます。</li>
+</ul>
+</li>
+<li><p><strong>③ 右のビュー一覧</strong>で、反映先のビューにチェックを入れます。<strong>複数選択できます。</strong></p>
+<ul>
+<li>左でビューを選ぶと、同名の移行先ビューが自動でチェックされます。</li>
+<li>「全選択」「選択解除」は、検索で<strong>表示中の行だけ</strong>を対象にします。</li>
+<li>ビューテンプレートが割り当てられているビューは、状態列に「テンプレート「◯◯」が割当済み（書き込み先はこちらになります）」と出ます。</li>
+<li><strong>書き込み先が意図したテンプレートかどうか、ここで必ず確認してください。</strong> ビュー名が似ていても割り当てテンプレートが違うことがあります。実行後の結果ダイアログにも実際の書き込み先名を表示します。</li>
+</ul>
+</li>
+<li><p><strong>④ 反映先の DWG</strong> にチェックを入れます。<strong>複数選択できます。</strong></p>
+<ul>
+<li>同名の DWG が自動でチェックされます。同名が無ければ、レイヤ名の一致数が最も多いものが選ばれます。</li>
+<li>自動選択が意図と違う場合は、チェックを付け替えてください。同じレイヤ構成の DWG が複数ある場合は、まとめて選べます。</li>
+<li>各行の右の「◯レイヤ / 一致 △」で、読み取り元のレイヤがいくつ一致するか確認できます。</li>
+</ul>
+</li>
+<li><p>画面下部のサマリで内容を確認し、<strong>「設定を移行」</strong> を押します。確認ダイアログで <strong>はい</strong> を選ぶと反映されます。</p>
+</li>
+</ol>
+<h2>DWG の表示設定は 2 段構え</h2>
+<p>Revit では DWG レイヤの見た目が 2 か所で決まります。<strong>片方だけ移しても表示は揃いません。</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>場所</th>
+<th>効く範囲</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>基準値</strong></td>
+<td>管理 ＞ オブジェクトスタイル ＞ 読み込みオブジェクト</td>
+<td>モデル全体</td>
+</tr>
+<tr>
+<td><strong>上書き</strong></td>
+<td>ビューの V/G ＞ 読み込みカテゴリ</td>
+<td>そのビューだけ（基準値への<strong>差分</strong>）</td>
+</tr>
+</tbody></table>
+<p>V/G は「上書きした項目」しか持ちません。上書きしていないレイヤの見た目は基準値で決まるため、モデル間で基準値が違えば V/G を完全に一致させても表示は揃いません。</p>
+<p>本機能は既定では <strong>V/G だけ</strong>を移行します。基準値も揃えたい場合は、上部の「オブジェクトスタイル（線の色・太さ・線種）も揃える」にチェックを入れてください。</p>
+<p>⚠️ <strong>オブジェクトスタイルはモデル全体に効きます。</strong> 選んだビューだけの変更ではなく、そのDWGを表示している<strong>すべてのビューの見た目が変わります</strong>。既定でオフにしているのはこのためです。実行前の確認ダイアログでも警告します。</p>
+<p>意図しない変更をしてしまった場合は <strong>Ctrl+Z</strong> で元に戻せます。</p>
+<h2>移行される項目</h2>
+<h3>ビューの V/G（選んだビューのみ）</h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>表示 / 非表示</td>
+<td>レイヤごとの表示チェック</td>
+</tr>
+<tr>
+<td>投影線 / 切断線</td>
+<td>色・線幅・線種</td>
+</tr>
+<tr>
+<td>サーフェス パターン</td>
+<td>前景・背景（パターン・色・表示）</td>
+</tr>
+<tr>
+<td>切断 パターン</td>
+<td>前景・背景（パターン・色・表示）</td>
+</tr>
+<tr>
+<td>透明度</td>
+<td>0〜100</td>
+</tr>
+<tr>
+<td>ハーフトーン</td>
+<td>オン / オフ</td>
+</tr>
+<tr>
+<td>詳細レベル</td>
+<td>粗い / 中間 / 詳細</td>
+</tr>
+</tbody></table>
+<p><code>OverrideGraphicSettings</code> が持つ項目をすべて移します。<strong>移す項目を絞り込むと、絞った項目に設定が入っていた場合に「移行したのに変わらない」状態になる</strong>ため、間引きはしません。</p>
+<h3>オブジェクトスタイル（モデル全体）</h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>線の色</td>
+<td>レイヤごとの色</td>
+</tr>
+<tr>
+<td>線の太さ</td>
+<td>投影・切断</td>
+</tr>
+<tr>
+<td>線種</td>
+<td>投影・切断</td>
+</tr>
+</tbody></table>
+<p>DWG 本体（親カテゴリ）の設定も同時に移行します。</p>
+<h3>「そっくりそのまま同じ状態にする」動作です</h3>
+<p>本機能は選んだレイヤの設定を<strong>丸ごとミラーリング</strong>します。移行元で何も設定していない（既定のままの）レイヤは、<strong>移行先でも既定に戻ります</strong>。</p>
+<p>移行元と移行先で表示状態を完全に一致させるための仕様です。そのため、結果ダイアログに出る件数は「設定を書き込んだレイヤの数」であり、一覧の「設定数」列（＝既定から変えてあるレイヤの数）とは一致しません。</p>
+<h2>なぜ移行元は「ビュー」だけなのか</h2>
+<p>ビューテンプレートの V/G は、<strong>「読み込み」カテゴリの「含める」チェックが外れている</strong>ことがあります。その場合、DWG の表示設定はテンプレートではなく<strong>ビューのプロパティ側（V/G 設定）で個別に</strong>持たれています。</p>
+<p>テンプレートを読み取り元にすると、この個別設定を取りこぼします。一方、<strong>ビューを読み取り元にすれば、テンプレート由来か個別設定かに関係なく「そのビューで実際に効いている値」が取れます。</strong></p>
+<p>そのため移行元は常にビュー単位に固定しています。テンプレートで管理しているモデルでも、そのテンプレートを使っているビューを1つ選べば同じ結果になります。</p>
+<h2>「反映先の単位」の選び方</h2>
+<p>こちらは書き込み先の選択なので、運用に合わせて選びます。</p>
+<ul>
+<li><strong>ビュー</strong>（既定）
+選んだビューに直接書き込みます。ビュー個別に V/G を設定している場合はこちら。</li>
+<li><strong>ビューテンプレート</strong>
+テンプレート運用が徹底されているモデル向け。テンプレートを直せば、それを使う全ビューに一度で反映されます。</li>
+</ul>
+<h3>テンプレート制御下のビューは自動でテンプレートへ書き込みます</h3>
+<p>Revit の仕様上、<strong>ビューテンプレートが「読み込みカテゴリ」の V/G を制御しているビューは、ビュー側から直接変更できません</strong>。</p>
+<p>本機能はこれを事前に判定し、該当するビューを選んだ場合は<strong>書き込み先をそのビューテンプレートへ自動で振り替えます</strong>。単位を切り替え直す必要はありません。状態列に振り替え先のテンプレート名が表示されます。</p>
+<ul>
+<li>同じテンプレートを使うビューを複数選んでも、<strong>テンプレートへの書き込みは 1 回</strong>にまとめられます。</li>
+<li><strong>そのテンプレートを使っている他のビューにも反映されます。</strong> 実行前の確認ダイアログに、何件のビューがどれだけのテンプレートへ振り替えられるかを表示します。</li>
+<li>テンプレートに制御されていないビューは、これまでどおりビューへ直接書き込みます。</li>
+<li>振り替えるかどうかは<strong>事前の判定ではなく、実際にビューへ書き込んで効いたかどうか</strong>で決めています。書けたつもりで何も変わらない、という状態が起きないようにするためです。そのため、事前の確認ダイアログに出なかったビューがテンプレートへ振り替わることもあります。実際の内訳は結果ダイアログに出ます。</li>
+</ul>
+<p>逆に、反映先の単位を <strong>ビューテンプレート</strong> にした際に、<strong>そのテンプレートが「読み込みカテゴリ」を制御していない</strong>場合は警告を表示し、その行は選べません。設定を書き込んでもビューには反映されないため、先にテンプレート側で V/G の「読み込み」に含めるチェックを入れてください。</p>
+<h2>名前による照合について</h2>
+<p>ElementId はモデル間で意味を持たないため、照合はすべて<strong>名前</strong>で行っています。</p>
+<table>
+<thead>
+<tr>
+<th>対象</th>
+<th>照合方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DWG</td>
+<td>一覧から<strong>手動で選択</strong>（同名を自動選択、無ければ一致レイヤ数が最多のもの）</td>
+</tr>
+<tr>
+<td>ビュー / ビューテンプレート</td>
+<td>一覧から<strong>手動で選択</strong>（同名を自動チェック）</td>
+</tr>
+<tr>
+<td>レイヤ</td>
+<td>サブカテゴリ名の一致（自動）</td>
+</tr>
+<tr>
+<td>線種</td>
+<td>線種名の一致（自動）</td>
+</tr>
+</tbody></table>
+<p>DWG とビューは一覧から選ぶ形なので、名前が違っていても問題なく対応付けられます。レイヤと線種だけは名前の完全一致で自動照合します。</p>
+<p>移行先で解決できなかったものは、実行後の結果ダイアログに一覧で表示されます。</p>
+<ul>
+<li><strong>見つからなかったレイヤ</strong> — 移行先の DWG に同名のレイヤがない。そのレイヤの設定はスキップされます。</li>
+<li><strong>存在しない線種</strong> — 移行先に同名の線種がない。線種だけが既定のまま（色・線幅は反映）になります。移行先に同名の線種を作ってから再実行すれば解決します。</li>
+</ul>
+<h2>うまく反映されないときは</h2>
+<p>結果ダイアログに理由を出しています。まずそこを確認してください。</p>
+<table>
+<thead>
+<tr>
+<th>表示</th>
+<th>意味と対処</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>移行元の「このビュー × この DWG」には、既定から変更された設定がありませんでした</td>
+<td>移行元が既定のままです。DWG 一覧の「設定 ◯」が 1 以上のものを選んでください</td>
+</tr>
+<tr>
+<td>移行先の DWG に見つからなかったレイヤ</td>
+<td>レイヤ名が一致していません。移行先に同じ DWG を読み込み／リンクしてください</td>
+</tr>
+<tr>
+<td>反映できなかったビュー</td>
+<td>ビューにもビューテンプレートにも書き込めなかったものです。件数と理由が出ます</td>
+</tr>
+</tbody></table>
+<p>さらに詳しい経過は <code>C:\temp\Tools28_debug.txt</code> に記録しています。ビューごとに「反映 / 未反映 / 失敗」の件数とエラー内容が残るので、原因の切り分けに使ってください。</p>
+<h2>注意事項</h2>
+<ul>
+<li><strong>移行先ビューの現在の設定は上書きされます。</strong> 実行後に <strong>Ctrl+Z</strong> で元に戻せます。</li>
+<li>ラインワークツールで個別に変更した線の色などは、Revit API から取得・設定できないため移行できません（レイヤ単位の設定は移行できます）。</li>
+<li>移行元・移行先のどちらもリンクモデルではなく、Revit で直接開いているモデルである必要があります。</li>
+<li>移行元モデルは読み取りのみで、変更されません。</li>
+</ul>
+<h2>関連機能</h2>
+<ul>
+<li><strong>フィルタ整理</strong> — ビューで使うフィルタの一覧・整理。</li>
+<li><strong>テンプレート整理</strong> — ビューテンプレートの使用状況確認・整理。</li>
+</ul>
+        </article>
+
+        <div class="manual-navigation">
+            <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
+                ← ホームに戻る
+            </a>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <!-- SNSシェアボタン -->
+            <div class="share-buttons">
+                <p class="share-text" data-lang-key="footer-share">このページをシェア：</p>
+                <div class="share-icons">
+                    <a href="#" class="share-btn twitter" data-sns="twitter" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn facebook" data-sns="facebook" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn line" data-sns="line" aria-label="LINE">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn hatena" data-sns="hatena" aria-label="はてなブックマーク">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.47 0C22.42 0 24 1.58 24 3.53v16.94c0 1.95-1.58 3.53-3.53 3.53H3.53C1.58 24 0 22.42 0 20.47V3.53C0 1.58 1.58 0 3.53 0h16.94zM7.708 5.522H5.522v7.827c0 1.283.818 2.006 2.118 2.006s2.117-.723 2.117-2.006V5.522H7.708zm10.7 6.2c0-1.345-.696-2.285-2.02-2.585.897-.38 1.527-1.104 1.527-2.198 0-1.72-1.33-2.417-3.292-2.417H11.97v10.016h2.754c1.864 0 3.685-.65 3.685-2.815zm-4.175-1.35h1.29c.696 0 1.13.354 1.13.952 0 .597-.434.95-1.13.95h-1.29V10.37zm0-3.23h1.113c.57 0 1.017.315 1.017.87 0 .552-.447.866-1.017.866h-1.114V7.142zm-8.17 10.29c.91 0 1.616.71 1.616 1.62 0 .907-.707 1.616-1.616 1.616-.91 0-1.616-.71-1.616-1.617s.707-1.62 1.616-1.62z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="site-footer-links">
+                <a href="../about.html" data-lang-key="footer-about">運営者情報</a>
+                <span class="footer-divider">|</span>
+                <a href="../contact.html" data-lang-key="footer-contact">お問い合わせ</a>
+                <span class="footer-divider">|</span>
+                <a href="../privacy.html" data-lang-key="footer-privacy">プライバシーポリシー</a>
+                <span class="footer-divider">|</span>
+                <a href="../terms.html" data-lang-key="footer-terms">利用規約</a>
+            </div>
+            <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=20260715-5"></script>
+    <script>
+    (function() {
+        var FEATURE_ID = 'DwgLayerTransfer';
+        var el = document.getElementById('md-content');
+        if (!el || el.getAttribute('data-baked') === 'true') return; // 本文はビルド時に焼き込み済み
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
+        fetch(MD_URL)
+            .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+            .then(function(md) { if (window.marked) el.innerHTML = window.marked.parse(md); })
+            .catch(function(e) { console.error(e); });
+    })();
+    </script>
+</body>
+</html>
