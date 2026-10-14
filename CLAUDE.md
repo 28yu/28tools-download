@@ -1722,3 +1722,32 @@ CSS は `css/manual.css` 末尾の `.tips-figure`。
 実務記事は推測を断定で書くとそれ自体が低品質コンテンツになるため、この方針を維持すること。
 
 これにより Tips のオリジナル記事は **3本 5,140字 → 4本 10,644字** になった。
+
+---
+
+## 2026/10 セッション — Revit アドイン v2.6 公開（インストーラ化・新機能10ページ）
+
+| 対応 | 内容 |
+|---|---|
+| ダウンロード | バージョン別ボタン6個 → **インストーラ1本のボタン**（`data-version="setup"`）。詳細は上の「Revitアドイン配布」 |
+| 手順モーダル | インストール（4ステップ）／アンインストール（設定→アプリ）／サポートを新方式に書き換え |
+| 新機能ページ | `manual/` に10ページ追加（fill-pattern-io / parameter-cleanup / room-3d-color / auto-backup / dwg-layer-transfer / filter-management / view-template-management / generic-model-merge / parameter-value-replace / parameter-value-move）。本文は焼き込み |
+| カード | `addins.html` の機能カードを**リボンのパネル順**に並べ替え、新機能10枚に NEW バッジ（`.feature-new-badge` を style.css へ移動）。翻訳は `translations.featuresV26` |
+| アイコン | 新機能9個は元が 32px だったため 96px で描き直し（アドイン側 `Resources/Icons/DesignConcept/draw_v26_icons_96.py`） |
+| リボン画像 | `images/screenshots/revit-ribbon-preview.png` を差し替え（1746×125。他社アドイン「Enscape」のタブは画像編集で除去）。768px 以下は横スクロール |
+| トップ | 新着に `index-news-v26`、アドイン説明を「23機能」に修正 |
+
+**公開の段取り（再利用できる手順）**:
+1. アドイン側 CI が両リポジトリに**下書きリリース**を作る（`releases/latest` に出ないのでサイトは旧版のまま）
+2. サイトの変更は `claude/*` に push すると即本番になるため、**別ブランチに退避**して待つ
+3. 下書きから exe を実機でダウンロードし、ブラウザ警告の有無を確認
+4. 両リポジトリで「Publish release」（Claude のセッションからはリリース編集が 403 で不可 → ユーザ操作）
+5. 直後にサイトを `claude/*` へ push（main が進んでいたら rebase してから）
+
+⚠️ 公開→サイト push の間の数分は、旧サイトのボタンが新アセット名を見つけられず「利用できません」になる。
+
+**未対応・注意**:
+- ダウンロード記録はインストーラ1本のため `revit` 列が null（Revit バージョン別の内訳は取れない）
+- 中国語の「署名なしのアドイン」ダイアログ名は実物未確認（英語表記を併記して補っている）
+- `index-addins-badge`（6機能）・`.version-tab` CSS・`initVersionTabs()` は未使用のまま残っている
+
