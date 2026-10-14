@@ -9399,7 +9399,219 @@ translations.recoveryArticle2 = {
     'rec-back-tips': { ja: '← 使い方ガイド一覧へ', en: '← Back to the guide index', zh: '← 返回使用指南列表' }
 };
 
+    // ========================================
+    // v2.6 追加機能（アドイン一覧カード＋マニュアル見出し）
+    // ========================================
+    translations.featuresV26 = {
+        'feature-new-badge': {
+            ja: 'NEW',
+            en: 'NEW',
+            zh: '新'
+        },
+        'feature-filter-management-title': {
+            ja: 'フィルタ整理',
+            en: 'Filter Cleanup',
+            zh: '过滤器整理'
+        },
+        'feature-filter-management-desc': {
+            ja: 'フィルタの使用ビューを確認しながら名前変更・削除',
+            en: 'Check which views use each filter, then rename or delete',
+            zh: '查看过滤器的使用视图并重命名・删除'
+        },
+        'manual-filter-management-title': {
+            ja: 'フィルタ整理',
+            en: 'Filter Cleanup',
+            zh: '过滤器整理'
+        },
+        'manual-filter-management-subtitle': {
+            ja: 'フィルタの使用ビューを確認しながら名前変更・削除',
+            en: 'Check which views use each filter, then rename or delete',
+            zh: '查看过滤器的使用视图并重命名・删除'
+        },
+        'feature-view-template-management-title': {
+            ja: 'テンプレート整理',
+            en: 'View Template Cleanup',
+            zh: '视图样板整理'
+        },
+        'feature-view-template-management-desc': {
+            ja: 'ビューテンプレートの適用ビューを確認しながら名前変更・削除',
+            en: 'Check which views use each view template, then rename or delete',
+            zh: '查看视图样板的应用视图并重命名・删除'
+        },
+        'manual-view-template-management-title': {
+            ja: 'テンプレート整理',
+            en: 'View Template Cleanup',
+            zh: '视图样板整理'
+        },
+        'manual-view-template-management-subtitle': {
+            ja: 'ビューテンプレートの適用ビューを確認しながら名前変更・削除',
+            en: 'Check which views use each view template, then rename or delete',
+            zh: '查看视图样板的应用视图并重命名・删除'
+        },
+        'feature-dwg-layer-transfer-title': {
+            ja: 'DWGレイヤ表示設定の移行',
+            en: 'Transfer DWG Layer Display Settings',
+            zh: 'DWG图层显示设置迁移'
+        },
+        'feature-dwg-layer-transfer-desc': {
+            ja: 'DWGのレイヤ表示設定（V/G）を開いている別モデルへ直接コピー',
+            en: 'Copy per-view DWG layer visibility/graphics settings directly to another open model',
+            zh: '将DWG图层的可见性/图形设置直接复制到另一个打开的模型'
+        },
+        'manual-dwg-layer-transfer-title': {
+            ja: 'DWGレイヤ表示設定の移行',
+            en: 'Transfer DWG Layer Display Settings',
+            zh: 'DWG图层显示设置迁移'
+        },
+        'manual-dwg-layer-transfer-subtitle': {
+            ja: 'DWGのレイヤ表示設定（V/G）を開いている別モデルへ直接コピー',
+            en: 'Copy per-view DWG layer visibility/graphics settings directly to another open model',
+            zh: '将DWG图层的可见性/图形设置直接复制到另一个打开的模型'
+        },
+        'feature-room-3d-color-title': {
+            ja: '部屋3D色分け',
+            en: 'Room 3D Color',
+            zh: '房间3D配色'
+        },
+        'feature-room-3d-color-desc': {
+            ja: '部屋の立体を生成し3Dビューで用途・階などごとに色分け',
+            en: 'Generate room solids and color-code them in a 3D view by name, level and more',
+            zh: '生成房间实体并在3D视图中按名称、标高等配色'
+        },
+        'manual-room-3d-color-title': {
+            ja: '部屋3D色分け',
+            en: 'Room 3D Color',
+            zh: '房间3D配色'
+        },
+        'manual-room-3d-color-subtitle': {
+            ja: '部屋の立体を生成し3Dビューで用途・階などごとに色分け',
+            en: 'Generate room solids and color-code them in a 3D view by name, level and more',
+            zh: '生成房间实体并在3D视图中按名称、标高等配色'
+        },
+        'feature-fill-pattern-io-title': {
+            ja: '塗潰しパターン入出力',
+            en: 'Fill Pattern Import/Export',
+            zh: '填充图案导入导出'
+        },
+        'feature-fill-pattern-io-desc': {
+            ja: '塗り潰しパターンを .pat ファイルへ書き出し・読み込み',
+            en: 'Export fill patterns to .pat files and import them back',
+            zh: '将填充图案导出为 .pat 文件并导入'
+        },
+        'manual-fill-pattern-io-title': {
+            ja: '塗潰しパターン入出力',
+            en: 'Fill Pattern Import/Export',
+            zh: '填充图案导入导出'
+        },
+        'manual-fill-pattern-io-subtitle': {
+            ja: '塗り潰しパターンを .pat ファイルへ書き出し・読み込み',
+            en: 'Export fill patterns to .pat files and import them back',
+            zh: '将填充图案导出为 .pat 文件并导入'
+        },
+        'feature-generic-model-merge-title': {
+            ja: '一般モデル化',
+            en: 'Merge to Generic Model',
+            zh: '合并为常规模型'
+        },
+        'feature-generic-model-merge-desc': {
+            ja: '3Dビューに見えている複数要素の形状を1つの一般モデルにまとめる',
+            en: 'Combine the shapes of elements visible in a 3D view into one generic model',
+            zh: '将3D视图中可见的多个图元形状合并为一个常规模型'
+        },
+        'manual-generic-model-merge-title': {
+            ja: '一般モデル化',
+            en: 'Merge to Generic Model',
+            zh: '合并为常规模型'
+        },
+        'manual-generic-model-merge-subtitle': {
+            ja: '3Dビューに見えている複数要素の形状を1つの一般モデルにまとめる',
+            en: 'Combine the shapes of elements visible in a 3D view into one generic model',
+            zh: '将3D视图中可见的多个图元形状合并为一个常规模型'
+        },
+        'feature-parameter-cleanup-title': {
+            ja: 'パラメータ整理',
+            en: 'Parameter Cleanup',
+            zh: '参数整理'
+        },
+        'feature-parameter-cleanup-desc': {
+            ja: '同名パラメータの特定・値の有無確認・未使用パラメータの削除',
+            en: 'Find duplicate-named parameters, check for values and delete unused ones',
+            zh: '识别同名参数、确认是否有值并删除未使用参数'
+        },
+        'manual-parameter-cleanup-title': {
+            ja: 'パラメータ整理',
+            en: 'Parameter Cleanup',
+            zh: '参数整理'
+        },
+        'manual-parameter-cleanup-subtitle': {
+            ja: '同名パラメータの特定・値の有無確認・未使用パラメータの削除',
+            en: 'Find duplicate-named parameters, check for values and delete unused ones',
+            zh: '识别同名参数、确认是否有值并删除未使用参数'
+        },
+        'feature-parameter-value-replace-title': {
+            ja: 'パラメータ値の一括置換',
+            en: 'Replace Parameter Values',
+            zh: '参数值批量替换'
+        },
+        'feature-parameter-value-replace-desc': {
+            ja: '文字パラメータの値をモデル全体で一括置換・削除',
+            en: 'Replace or clear text parameter values across the whole model',
+            zh: '在整个模型中批量替换或删除文字参数值'
+        },
+        'manual-parameter-value-replace-title': {
+            ja: 'パラメータ値の一括置換',
+            en: 'Replace Parameter Values',
+            zh: '参数值批量替换'
+        },
+        'manual-parameter-value-replace-subtitle': {
+            ja: '文字パラメータの値をモデル全体で一括置換・削除',
+            en: 'Replace or clear text parameter values across the whole model',
+            zh: '在整个模型中批量替换或删除文字参数值'
+        },
+        'feature-parameter-value-move-title': {
+            ja: 'パラメータ値の移動',
+            en: 'Move Parameter Values',
+            zh: '参数值移动'
+        },
+        'feature-parameter-value-move-desc': {
+            ja: '同名でグループ違いのパラメータ間で値を要素ごとに移動',
+            en: 'Move values between same-name parameters in different groups, element by element',
+            zh: '在同名但分组不同的参数之间逐个图元移动值'
+        },
+        'manual-parameter-value-move-title': {
+            ja: 'パラメータ値の移動',
+            en: 'Move Parameter Values',
+            zh: '参数值移动'
+        },
+        'manual-parameter-value-move-subtitle': {
+            ja: '同名でグループ違いのパラメータ間で値を要素ごとに移動',
+            en: 'Move values between same-name parameters in different groups, element by element',
+            zh: '在同名但分组不同的参数之间逐个图元移动值'
+        },
+        'feature-auto-backup-title': {
+            ja: '自動バックアップ',
+            en: 'Auto Backup',
+            zh: '自动备份'
+        },
+        'feature-auto-backup-desc': {
+            ja: '作業中のモデルを一定間隔で自動バックアップ（世代管理・中央同期対応）',
+            en: 'Automatically back up the open model at set intervals (with generations and central sync)',
+            zh: '按固定间隔自动备份当前模型（支持版本数管理与同步到中心）'
+        },
+        'manual-auto-backup-title': {
+            ja: '自動バックアップ',
+            en: 'Auto Backup',
+            zh: '自动备份'
+        },
+        'manual-auto-backup-subtitle': {
+            ja: '作業中のモデルを一定間隔で自動バックアップ（世代管理・中央同期対応）',
+            en: 'Automatically back up the open model at set intervals (with generations and central sync)',
+            zh: '按固定间隔自动备份当前模型（支持版本数管理与同步到中心）'
+        }
+    };
+
     Object.assign(translations,
+        translations.featuresV26,
         translations.tipsHatch,
         translations.tipsPdf,
         translations.tipsNav,

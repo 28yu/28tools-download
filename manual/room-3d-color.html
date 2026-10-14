@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>部屋3D色分け - 28 Tools マニュアル</title>
+    <link rel="icon" type="image/png" href="../images/site-icons/favicon-28.png">
+    <link rel="canonical" href="https://28tools.com/manual/room-3d-color.html">
+    <meta name="description" content="Revitの部屋から立体（DirectShape）を自動生成し、専用の3Dビューで部屋名・レベル・パラメータ値などごとに色分け表示、凡例も自動作成できる無料アドインの使い方マニュアル。">
+    <meta property="og:title" content="部屋3D色分け - 28 Tools マニュアル">
+    <meta property="og:description" content="Revitの部屋から立体（DirectShape）を自動生成し、専用の3Dビューで部屋名・レベル・パラメータ値などごとに色分け表示、凡例も自動作成できる無料アドインの使い方マニュアル。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://28tools.com/manual/room-3d-color.html">
+    <meta property="og:image" content="https://28tools.com/images/ogp-image.png">
+    <meta property="og:site_name" content="28 Tools">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197151217236924"
+         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/manual.css">
+    <link rel="stylesheet" href="../css/features.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="manual-page">
+    <!-- 共通ヘッダー -->
+    <div id="header-container"></div>
+
+    <!-- サイドバーナビゲーション -->
+    <div id="sidebar-container"></div>
+
+    <!-- マニュアルコンテンツ -->
+    <div class="manual-container">
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <a href="../index.html" data-lang-key="breadcrumb-home">ホーム</a>
+            <span class="separator">›</span>
+            <a href="../addins.html" data-lang-key="breadcrumb-addins">アドイン</a>
+            <span class="separator">›</span>
+            <span data-lang-key="manual-room-3d-color-title">部屋3D色分け</span>
+        </nav>
+
+        <!-- 機能タイトル -->
+        <div class="manual-header">
+            <div class="icon-wrapper">
+                <img src="../images/revit-icons/room_3d_color.png" alt="Room 3D Color Icon" class="feature-icon">
+            </div>
+            <h1 class="manual-title" data-lang-key="manual-room-3d-color-title">部屋3D色分け</h1>
+            <p class="manual-subtitle" data-lang-key="manual-room-3d-color-subtitle">部屋の立体を生成し3Dビューで用途・階などごとに色分け</p>
+        </div>
+
+        <!-- 機能概要 -->
+
+        <!-- マニュアル本文（Markdown 動的読み込み） -->
+        <article id="md-content" class="md-content" data-baked="true">
+        <!-- AUTO-GENERATED: 本文は scripts/build-manuals により Revit-Add-ins/Features/Room3DColor.md から焼き込み。手動編集しないこと -->
+<h1>部屋 3D 色分け 使い方ガイド</h1>
+<p>部屋（Room）の立体形状を生成し、<strong>3D ビューで部屋のみを表示して色分け</strong>する機能です。用途別・階別などで部屋を色分けした立体を、プレゼンや検討用に手軽に作成できます。</p>
+<hr>
+<h2>できること</h2>
+<ul>
+<li>モデル内の<strong>配置済みの部屋（Room）から立体（ソリッド）を自動生成</strong>します</li>
+<li>生成した立体を<strong>専用の3Dビューで、部屋だけを表示</strong>します（他のカテゴリは非表示）</li>
+<li>以下の基準から<strong>色分けの方法をダイアログで選択</strong>できます<ul>
+<li><strong>部屋名ごと</strong> … 同じ部屋名（用途）を同色に</li>
+<li><strong>レベル（階）ごと</strong> … 階ごとに色を変える</li>
+<li><strong>指定パラメータの値ごと</strong> … 部門など任意のパラメータ値で色分け</li>
+<li><strong>部屋ごとに個別</strong> … 1部屋=1色ですべて区別</li>
+<li><strong>すべて（全部屋を同色）</strong> … 全部屋を1グループ・1色で表示</li>
+</ul>
+</li>
+<li>各グループの色は<strong>プレビューの色見本をクリックして変更</strong>できます</li>
+<li>生成した立体の<strong>輪郭線は薄いグレー・最細</strong>で表示し、色面を主役にします</li>
+<li>各立体の**「マーク」パラメータに対象部屋の要素ID**を書き込むため、立体と元の部屋を追跡できます</li>
+<li>色分けの<strong>凡例（製図ビュー）を自動作成</strong>できます</li>
+</ul>
+<hr>
+<h2>仕組み（Revit の仕様について）</h2>
+<p>Revit では、<strong>部屋（Room）は 3D ビューに標準では表示されません</strong>（面・タグは平面/断面ビュー用です）。</p>
+<p>そのため本機能では、各部屋の閉じた立体形状（<code>Room.GetClosedShell</code>）から <strong>DirectShape（汎用モデル）</strong> を生成し、それを 3D ビューに表示・色分けします。生成された立体は「汎用モデル」カテゴリのモデル要素としてモデルに残ります。</p>
+<hr>
+<h2>実行前の準備</h2>
+<ul>
+<li>モデルに<strong>部屋（Room）が配置</strong>されていること（面積を持つこと）を確認してください</li>
+<li>部屋区画線のみで囲まれていない（非囲繞）部屋は立体を生成できずスキップされます</li>
+<li><strong>面積・体積の計算設定で「体積」が無効</strong>の場合、本機能が自動で有効化します</li>
+</ul>
+<blockquote>
+<p>⚠️ 「体積計算」を有効にすると、Revit 全体で体積計算が有効になります（モデルのパフォーマンスに影響する場合があります）。</p>
+</blockquote>
+<hr>
+<h2>実行手順</h2>
+<ol>
+<li>28 Tools タブ →「注釈・詳細」パネル →「<strong>部屋3D色分け</strong>」をクリック</li>
+<li>ダイアログで <strong>色分け基準</strong> を選択<ul>
+<li>「指定パラメータの値ごと」を選んだ場合は、続けて <strong>対象パラメータ</strong> を選択</li>
+</ul>
+</li>
+<li><strong>グループと色</strong> のプレビューで、必要に応じて色見本をクリックして色を調整</li>
+<li><strong>出力設定</strong> を確認<ul>
+<li>作成する3Dビュー名（既定: <code>部屋3D色分け</code>）</li>
+<li>ワークセット名（ワークシェアモデルのみ有効。既定: <code>部屋3D色分け</code>）</li>
+<li>既存の部屋色分けソリッドを削除して作り直すか</li>
+<li>凡例を作成するか</li>
+</ul>
+</li>
+<li>「<strong>実行</strong>」をクリック</li>
+<li>生成された専用3Dビューが自動的に開きます</li>
+</ol>
+<hr>
+<h2>生成物</h2>
+<table>
+<thead>
+<tr>
+<th>生成物</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>部屋の立体</strong></td>
+<td>各部屋の DirectShape（汎用モデル）。コメントに識別マーカー、<strong>マークに対象部屋の要素ID</strong>が付きます</td>
+</tr>
+<tr>
+<td><strong>専用3Dビュー</strong></td>
+<td>部屋の立体のみを表示（他カテゴリ非表示）・色分け適用済み</td>
+</tr>
+<tr>
+<td><strong>凡例ビュー</strong>（任意）</td>
+<td>グループ名・部屋数・色見本を一覧した製図ビュー</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>表示制御（ワークセット）</h2>
+<p>生成した部屋の立体は<strong>専用の3Dビューにだけ表示され、他のビューには現れない</strong>ように制御します。</p>
+<table>
+<thead>
+<tr>
+<th>モデルの種別</th>
+<th>制御方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>ワークシェアあり</strong></td>
+<td>専用ワークセット「<strong>部屋3D色分け</strong>」を作成し、生成した立体をそこへ配置。ワークセットの既定の表示を「非表示」にし、専用3Dビューでのみ表示します</td>
+</tr>
+<tr>
+<td><strong>ワークシェアなし</strong>（ワークセット未使用）</td>
+<td>ワークセットが使えないため、生成した立体を<strong>専用ビュー以外の全ビューで要素単位で非表示</strong>にして同等の動作にします</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>💡 ワークシェアなしモデルの場合、この処理<strong>以降に新規作成したビュー</strong>では立体が表示されることがあります。その場合はビューで手動非表示にするか、本機能を再実行してください。</p>
+</blockquote>
+<hr>
+<h2>再実行について</h2>
+<ul>
+<li>「既存の部屋色分けソリッドを削除して作り直す」を有効にすると、前回生成した部屋立体（識別マーカー付き）を削除してから作り直します</li>
+<li>同名の3Dビュー・凡例ビューがある場合は、削除して再作成します</li>
+</ul>
+<hr>
+<h2>注意事項</h2>
+<ul>
+<li>生成される立体は「汎用モデル」カテゴリのモデル要素です。不要になったら3Dビュー上で削除するか、再実行時の削除オプションで整理してください</li>
+<li>立体を生成できなかった部屋（非囲繞・体積0など）は色分け対象から除外され、完了メッセージに件数が表示されます</li>
+</ul>
+        </article>
+
+        <div class="manual-navigation">
+            <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
+                ← ホームに戻る
+            </a>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <!-- SNSシェアボタン -->
+            <div class="share-buttons">
+                <p class="share-text" data-lang-key="footer-share">このページをシェア：</p>
+                <div class="share-icons">
+                    <a href="#" class="share-btn twitter" data-sns="twitter" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn facebook" data-sns="facebook" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn line" data-sns="line" aria-label="LINE">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn hatena" data-sns="hatena" aria-label="はてなブックマーク">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.47 0C22.42 0 24 1.58 24 3.53v16.94c0 1.95-1.58 3.53-3.53 3.53H3.53C1.58 24 0 22.42 0 20.47V3.53C0 1.58 1.58 0 3.53 0h16.94zM7.708 5.522H5.522v7.827c0 1.283.818 2.006 2.118 2.006s2.117-.723 2.117-2.006V5.522H7.708zm10.7 6.2c0-1.345-.696-2.285-2.02-2.585.897-.38 1.527-1.104 1.527-2.198 0-1.72-1.33-2.417-3.292-2.417H11.97v10.016h2.754c1.864 0 3.685-.65 3.685-2.815zm-4.175-1.35h1.29c.696 0 1.13.354 1.13.952 0 .597-.434.95-1.13.95h-1.29V10.37zm0-3.23h1.113c.57 0 1.017.315 1.017.87 0 .552-.447.866-1.017.866h-1.114V7.142zm-8.17 10.29c.91 0 1.616.71 1.616 1.62 0 .907-.707 1.616-1.616 1.616-.91 0-1.616-.71-1.616-1.617s.707-1.62 1.616-1.62z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="site-footer-links">
+                <a href="../about.html" data-lang-key="footer-about">運営者情報</a>
+                <span class="footer-divider">|</span>
+                <a href="../contact.html" data-lang-key="footer-contact">お問い合わせ</a>
+                <span class="footer-divider">|</span>
+                <a href="../privacy.html" data-lang-key="footer-privacy">プライバシーポリシー</a>
+                <span class="footer-divider">|</span>
+                <a href="../terms.html" data-lang-key="footer-terms">利用規約</a>
+            </div>
+            <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=20260715-5"></script>
+    <script>
+    (function() {
+        var FEATURE_ID = 'Room3DColor';
+        var el = document.getElementById('md-content');
+        if (!el || el.getAttribute('data-baked') === 'true') return; // 本文はビルド時に焼き込み済み
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
+        fetch(MD_URL)
+            .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+            .then(function(md) { if (window.marked) el.innerHTML = window.marked.parse(md); })
+            .catch(function(e) { console.error(e); });
+    })();
+    </script>
+</body>
+</html>

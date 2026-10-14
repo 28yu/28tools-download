@@ -152,6 +152,86 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- マニュアル - フィルタ整理 -->
+  <url>
+    <loc>https://28tools.com/manual/filter-management.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - テンプレート整理 -->
+  <url>
+    <loc>https://28tools.com/manual/view-template-management.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - DWGレイヤ表示設定の移行 -->
+  <url>
+    <loc>https://28tools.com/manual/dwg-layer-transfer.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - 部屋3D色分け -->
+  <url>
+    <loc>https://28tools.com/manual/room-3d-color.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - 塗潰しパターン入出力 -->
+  <url>
+    <loc>https://28tools.com/manual/fill-pattern-io.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - 一般モデル化 -->
+  <url>
+    <loc>https://28tools.com/manual/generic-model-merge.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - パラメータ整理 -->
+  <url>
+    <loc>https://28tools.com/manual/parameter-cleanup.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - パラメータ値の一括置換 -->
+  <url>
+    <loc>https://28tools.com/manual/parameter-value-replace.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - パラメータ値の移動 -->
+  <url>
+    <loc>https://28tools.com/manual/parameter-value-move.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- マニュアル - 自動バックアップ -->
+  <url>
+    <loc>https://28tools.com/manual/auto-backup.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- 運営者情報 -->
   <url>
     <loc>https://28tools.com/about.html</loc>
