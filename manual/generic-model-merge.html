@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一般モデル化 - 28 Tools マニュアル</title>
+    <link rel="icon" type="image/png" href="../images/site-icons/favicon-28.png">
+    <link rel="canonical" href="https://28tools.com/manual/generic-model-merge.html">
+    <meta name="description" content="Revitの3Dビューに表示されている壁・床・柱・梁などの形状を読み取り、ダイレクトシェイプまたは一般モデルファミリ（.rfa）として1つのかたまりにまとめる無料アドインの使い方マニュアル。">
+    <meta property="og:title" content="一般モデル化 - 28 Tools マニュアル">
+    <meta property="og:description" content="Revitの3Dビューに表示されている壁・床・柱・梁などの形状を読み取り、ダイレクトシェイプまたは一般モデルファミリ（.rfa）として1つのかたまりにまとめる無料アドインの使い方マニュアル。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://28tools.com/manual/generic-model-merge.html">
+    <meta property="og:image" content="https://28tools.com/images/ogp-image.png">
+    <meta property="og:site_name" content="28 Tools">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCT2B2NJ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TXCT2B2NJ6');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9197151217236924"
+         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/manual.css">
+    <link rel="stylesheet" href="../css/features.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="manual-page">
+    <!-- 共通ヘッダー -->
+    <div id="header-container"></div>
+
+    <!-- サイドバーナビゲーション -->
+    <div id="sidebar-container"></div>
+
+    <!-- マニュアルコンテンツ -->
+    <div class="manual-container">
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <a href="../index.html" data-lang-key="breadcrumb-home">ホーム</a>
+            <span class="separator">›</span>
+            <a href="../addins.html" data-lang-key="breadcrumb-addins">アドイン</a>
+            <span class="separator">›</span>
+            <span data-lang-key="manual-generic-model-merge-title">一般モデル化</span>
+        </nav>
+
+        <!-- 機能タイトル -->
+        <div class="manual-header">
+            <div class="icon-wrapper">
+                <img src="../images/revit-icons/generic_model_merge.png" alt="Generic Model Merge Icon" class="feature-icon">
+            </div>
+            <h1 class="manual-title" data-lang-key="manual-generic-model-merge-title">一般モデル化</h1>
+            <p class="manual-subtitle" data-lang-key="manual-generic-model-merge-subtitle">3Dビューに見えている複数要素の形状を1つの一般モデルにまとめる</p>
+        </div>
+
+        <!-- 機能概要 -->
+
+        <!-- マニュアル本文（Markdown 動的読み込み） -->
+        <article id="md-content" class="md-content" data-baked="true">
+        <!-- AUTO-GENERATED: 本文は scripts/build-manuals により Revit-Add-ins/Features/GenericModelMerge.md から焼き込み。手動編集しないこと -->
+<h1>一般モデル化（複数要素の形状を1つにまとめる）</h1>
+<p>3Dビューに表示されている<strong>さまざまなカテゴリの要素</strong>（壁・床・柱・梁・一般モデル など）から形状を読み取り、<strong>一つの一般モデルのかたまり</strong>を作成する機能です。</p>
+<p>出力形式は目的に応じて 2 種類から選べます。</p>
+<ul>
+<li><strong>ダイレクトシェイプ</strong> — このプロジェクトの中に直接かたまりを置く。手軽で速い。</li>
+<li><strong>一般モデルファミリ (.rfa)</strong> — ファミリファイルを作って読み込む。他のモデルへ持ち出せる。</li>
+</ul>
+<h2>使いどころ</h2>
+<ul>
+<li>複雑な躯体・設備の集合体を、<strong>軽い1つのオブジェクト</strong>にまとめて他部門へ渡したい</li>
+<li>作り込んだ部位を、<strong>編集されない固まり</strong>として固定したい</li>
+<li>検討モデル一式を、<strong>1つの一般モデル</strong>として別プロジェクトへ持ち出したい（ファミリ出力）</li>
+</ul>
+<h2>使い方</h2>
+<h3>1. 3Dビューで範囲を決める</h3>
+<p>本機能は <strong>3Dビュー専用</strong> です。平面・断面ビューでは実行できません。</p>
+<p>対象になるのは「<strong>そのビューに見えている要素</strong>」です。したがって実行前に、</p>
+<ul>
+<li><strong>セクションボックス</strong>で範囲を切る</li>
+<li><strong>ビューフィルタ</strong>や<strong>要素の非表示</strong>で不要なものを消す</li>
+</ul>
+<p>といった、いつもの3Dビューの操作で対象範囲を絞り込んでおきます。見えているものがそのまま対象になるので、<strong>画面で見えている状態＝処理される範囲</strong>です。</p>
+<h3>2. リボンから実行</h3>
+<p>リボン <strong>28 Tools ＞ モデル ＞ 一般モデル化</strong> をクリックします。</p>
+<h3>3. 対象カテゴリを選ぶ（左側）</h3>
+<p>ビュー内で見つかったカテゴリが、<strong>要素数つき</strong>で一覧表示されます（初期状態はすべてチェック）。不要なカテゴリのチェックを外して対象を絞り込みます。</p>
+<blockquote>
+<p>カテゴリ名は Revit が返す実際の名前をそのまま表示します（Revit のバージョン・言語によって名前が異なる場合があるため、独自の翻訳は行いません）。</p>
+</blockquote>
+<h3>4. どの形式で作るか（①）</h3>
+<table>
+<thead>
+<tr>
+<th>選択肢</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>ダイレクトシェイプで作る</strong></td>
+<td>プロジェクトの中に直接、形状のかたまりを置きます。ファイルは増えず、すぐ出来上がります。ただしファミリではないため、形を後から編集したり他のモデルへ持ち出したりはできません。</td>
+</tr>
+<tr>
+<td><strong>一般モデルファミリ (.rfa) で作る</strong></td>
+<td>ファミリファイルを作成し、このプロジェクトへ読み込み・配置します。保存先はこのあと聞かれます。他のモデルでも使い回せ、ファミリエディタで編集できます。作成にはやや時間がかかります。</td>
+</tr>
+</tbody></table>
+<h3>5. どうやって一つにまとめるか（②）</h3>
+<table>
+<thead>
+<tr>
+<th>選択肢</th>
+<th>内容</th>
+<th>向いている場面</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>形はそのまま、要素だけ一つにする</strong>（おすすめ）</td>
+<td>元の形状をそのまま持ったまま、Revit 上の「要素」としてだけ一つにまとめます。ブーリアン演算をしないので<strong>失敗しません</strong>。</td>
+<td>まずはこれ。重なりを気にせず、とにかく1つにまとめたいとき</td>
+</tr>
+<tr>
+<td><strong>すべてつなげて一つの形にする</strong></td>
+<td>重なり・接触部分を溶かし合わせ、本当に単一の形状にします。断面がきれいにつながり、体積も正しくなります。</td>
+<td>断面表示や体積が正確であることが重要なとき</td>
+</tr>
+<tr>
+<td><strong>くっついているものだけつなげる</strong></td>
+<td>触れ合っている要素どうしだけを溶かし合わせ、離れているものは別々の形のまま同じ一般モデルに入れます。</td>
+<td>柱・梁など連続した部分だけ一体化したいとき</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>「つなげる」を選んだ場合、複雑な形状ではまれに結合できないことがあります。その場合でも<strong>形状を捨てずに元の形のまま残し</strong>、結果ダイアログでその個数をお知らせします（黙って形が欠けることはありません）。</p>
+</blockquote>
+<h3>6. 仕上がりの設定（③）</h3>
+<ul>
+<li><strong>材質</strong> — 作成した一般モデル全体にこの材質を割り当てます。元の要素の材質は引き継ぎません。</li>
+<li><strong>名前</strong> — 作成する要素（ファミリ出力の場合はファミリ）の名前です。ファミリ出力では .rfa のファイル名の初期値にもなります。</li>
+<li><strong>元になった要素をこのビューで非表示にする</strong>（初期 ON） — 元の要素は<strong>削除されません</strong>。このビューで見えなくなるだけなので、他のビューやモデルには影響しません。重ねて見比べたいときはチェックを外してください。</li>
+</ul>
+<h3>7. 実行</h3>
+<p><strong>「一般モデルを作成」</strong> をクリックします。ファミリ出力を選んだ場合は、続けて .rfa の保存先を指定します。</p>
+<p>完了後、処理結果（作成した形状数・非表示にした要素数・対象外になった要素数など）がダイアログで表示されます。</p>
+<h2>仕様・注意事項</h2>
+<h3>対象にならない要素</h3>
+<ul>
+<li><strong>立体形状（ソリッド）を持たない要素</strong> — 通り芯、レベル、参照面、モデル線分など。処理時に自動で除外され、その個数が結果ダイアログに表示されます。</li>
+<li><strong>注釈・ビュー固有の要素</strong> — 寸法、タグ、詳細線分など。カテゴリ一覧にも表示されません。</li>
+<li><strong>リンクモデル（RVTリンク）</strong> — 現バージョンでは対象外です。カテゴリ一覧にも表示されません。リンク内の要素をまとめたい場合は、あらかじめリンクをバインド（結合）してからご利用ください。</li>
+</ul>
+<h3>材質の扱い</h3>
+<p>出力形式によって材質の適用方法が異なります。</p>
+<table>
+<thead>
+<tr>
+<th>出力形式</th>
+<th>方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>一般モデルファミリ</td>
+<td><code>FreeFormElement</code> の材質パラメータに直接設定します。確実に反映されます。</td>
+</tr>
+<tr>
+<td>ダイレクトシェイプ</td>
+<td>Revit API にはダイレクトシェイプの材質を直接差し替える手段がないため、作成後に<strong>全面をペイント</strong>して単一材質にします。面数が極端に多い場合（20,000面超）は時間がかかるため材質の適用を見送り、その旨を結果ダイアログでお知らせします。<strong>形状は常に正確に作成されます。</strong></td>
+</tr>
+</tbody></table>
+<h3>ファミリテンプレートについて</h3>
+<p>ファミリ出力では、Revit の一般モデル用ファミリテンプレート（<code>.rft</code>）を使用します。Revit の設定フォルダから自動で探しますが、言語・地域によっては見つからないことがあります。その場合はファイル選択ダイアログが表示されるので、手動で <code>.rft</code> を指定してください。</p>
+<h3>位置</h3>
+<p>作成した一般モデルは、<strong>元の要素と同じ位置</strong>に重なって作成されます（ファミリ出力の場合も、形状の座標をそのまま持ち込んで原点に配置するため位置は変わりません）。</p>
+<h3>元に戻す</h3>
+<p>作成・非表示はすべて 1 つのトランザクションで行われるため、<strong>Ctrl + Z 一回で実行前の状態に戻せます</strong>。</p>
+<h2>トラブルシューティング</h2>
+<table>
+<thead>
+<tr>
+<th>症状</th>
+<th>原因・対処</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>「この機能は3Dビューで実行してください」と表示される</td>
+<td>平面・断面・シート等で実行しています。3Dビューをアクティブにしてください。</td>
+</tr>
+<tr>
+<td>「このビューに対象となるモデル要素が見つかりませんでした」</td>
+<td>セクションボックスやフィルタで要素がすべて除外されています。ビューの表示状態を確認してください。</td>
+</tr>
+<tr>
+<td>「立体形状を読み取れませんでした」</td>
+<td>通り芯・レベルなど立体を持たない要素だけが選択されています。壁・床・柱などのカテゴリにチェックを入れてください。</td>
+</tr>
+<tr>
+<td>つなげられなかった形状がある</td>
+<td>複雑な形状同士のブーリアン演算に Revit が失敗した場合です。形状は元のまま残っているので欠落はありません。「形はそのまま、要素だけ一つにする」を選ぶと確実です。</td>
+</tr>
+<tr>
+<td>「作成した一般モデルに形状が含まれていなかったため、処理を取り消しました」と表示される</td>
+<td>何らかの理由で形状の作成に失敗しています。<strong>モデルは実行前の状態のまま</strong>なので、そのまま再実行できます。メッセージ内の Revit のエラー文言と <code>C:\temp\Tools28_debug.txt</code> をご確認ください。</td>
+</tr>
+<tr>
+<td>処理に時間がかかる</td>
+<td>対象要素数・面数に比例します。3,000要素を超える場合は事前に確認ダイアログが出ます。セクションボックスで範囲を絞ると速くなります。</td>
+</tr>
+</tbody></table>
+<h2>関連ログ</h2>
+<p>診断ログは <code>C:\temp\Tools28_debug.txt</code> に <code>[CMD:GenericModelMerge]</code> のタグで出力されます。</p>
+        </article>
+
+        <div class="manual-navigation">
+            <a href="../index.html" class="nav-button" data-lang-key="back-to-home">
+                ← ホームに戻る
+            </a>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="site-footer-content">
+            <!-- SNSシェアボタン -->
+            <div class="share-buttons">
+                <p class="share-text" data-lang-key="footer-share">このページをシェア：</p>
+                <div class="share-icons">
+                    <a href="#" class="share-btn twitter" data-sns="twitter" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn facebook" data-sns="facebook" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn line" data-sns="line" aria-label="LINE">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn hatena" data-sns="hatena" aria-label="はてなブックマーク">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.47 0C22.42 0 24 1.58 24 3.53v16.94c0 1.95-1.58 3.53-3.53 3.53H3.53C1.58 24 0 22.42 0 20.47V3.53C0 1.58 1.58 0 3.53 0h16.94zM7.708 5.522H5.522v7.827c0 1.283.818 2.006 2.118 2.006s2.117-.723 2.117-2.006V5.522H7.708zm10.7 6.2c0-1.345-.696-2.285-2.02-2.585.897-.38 1.527-1.104 1.527-2.198 0-1.72-1.33-2.417-3.292-2.417H11.97v10.016h2.754c1.864 0 3.685-.65 3.685-2.815zm-4.175-1.35h1.29c.696 0 1.13.354 1.13.952 0 .597-.434.95-1.13.95h-1.29V10.37zm0-3.23h1.113c.57 0 1.017.315 1.017.87 0 .552-.447.866-1.017.866h-1.114V7.142zm-8.17 10.29c.91 0 1.616.71 1.616 1.62 0 .907-.707 1.616-1.616 1.616-.91 0-1.616-.71-1.616-1.617s.707-1.62 1.616-1.62z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="site-footer-links">
+                <a href="../about.html" data-lang-key="footer-about">運営者情報</a>
+                <span class="footer-divider">|</span>
+                <a href="../contact.html" data-lang-key="footer-contact">お問い合わせ</a>
+                <span class="footer-divider">|</span>
+                <a href="../privacy.html" data-lang-key="footer-privacy">プライバシーポリシー</a>
+                <span class="footer-divider">|</span>
+                <a href="../terms.html" data-lang-key="footer-terms">利用規約</a>
+            </div>
+            <p class="site-footer-copyright">© 2026 28 Tools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=20260715-5"></script>
+    <script>
+    (function() {
+        var FEATURE_ID = 'GenericModelMerge';
+        var el = document.getElementById('md-content');
+        if (!el || el.getAttribute('data-baked') === 'true') return; // 本文はビルド時に焼き込み済み
+        var MD_URL = 'https://28yu.github.io/Revit-Add-ins/Features/' + FEATURE_ID + '.md';
+        fetch(MD_URL)
+            .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+            .then(function(md) { if (window.marked) el.innerHTML = window.marked.parse(md); })
+            .catch(function(e) { console.error(e); });
+    })();
+    </script>
+</body>
+</html>

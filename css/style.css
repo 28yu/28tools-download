@@ -320,6 +320,22 @@ h1.main-title,
     transform: scaleX(1);
 }
 
+/* 新機能バッジ（機能一覧カード右上） */
+.feature-new-badge {
+    z-index: 1;
+    line-height: 1.4;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: var(--construction-orange, #e67e22);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
 .feature-icon {
     margin-bottom: 14px;
 }
@@ -542,6 +558,78 @@ h1.main-title,
 
 .download-text {
     font-weight: 500;
+}
+
+/* 全バージョン共通インストーラー（v2.6〜） */
+.setup-card {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.setup-support {
+    font-size: 1rem;
+    color: var(--concrete-gray);
+    line-height: 1.7;
+    margin: 0 0 12px;
+}
+
+.setup-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px 12px;
+    margin: 0 0 16px;
+}
+
+.setup-version {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+    background: var(--architect-green);
+    padding: 2px 10px;
+    border-radius: 12px;
+}
+
+.setup-version:empty {
+    display: none;
+}
+
+.setup-filename {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: var(--steel-blue);
+    word-break: break-all;
+}
+
+.download-btn.setup-download-btn {
+    width: auto;
+    min-width: 260px;
+    max-width: 100%;
+    padding: 14px 32px;
+    font-size: 1.05rem;
+}
+
+.download-btn.setup-download-btn .download-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.setup-note {
+    font-size: 0.8rem;
+    color: var(--steel-blue);
+    opacity: 0.8;
+    margin: 14px 0 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+    .download-btn.setup-download-btn {
+        width: 100%;
+        min-width: 0;
+    }
 }
 
 /* ==========================================
@@ -1030,8 +1118,18 @@ h1.main-title,
         font-size: 1rem;
     }
     
+    /* リボン画像は横長（約14:1）なので、狭い画面では縮小せず横スクロールで読めるようにする */
+    .ribbon-image-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        text-align: left;
+    }
+
     .ribbon-image {
         border-radius: 6px;
+        max-width: none;
+        width: auto;
+        height: 100px;
     }
     
     .features-container {

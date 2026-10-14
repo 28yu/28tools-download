@@ -393,27 +393,51 @@ PRが作成されると、Netlifyが自動でプレビュー環境を構築し�
 
 **対応バージョン**: Revit 2021, 2022, 2023, 2024, 2025, 2026（全バージョン利用可能）
 
-**現在のバージョン**: v2.1.2（2026/08 時点で `releases/latest` が返すタグ）
+**現在のバージョン**: v2.6（2026/10〜。配布物は全バージョン共通のインストーラー `28Tools_Setup_v2.6.exe` 1 本）
+
+**配布形式（v2.6〜）**: Inno Setup で作った**署名なし**のインストーラー 1 本で
+Revit 2021〜2026 をまとめて扱う（アドイン開発リポジトリの `Installer/28Tools.iss`）。
+v2.1.2 以前は Revit バージョン別の ZIP（install.bat / uninstall.bat 同梱）だった。
+- インストール先: `C:\ProgramData\Autodesk\Revit\Addins\<ver>\Tools28.addin` と `...\<ver>\28Tools\*.dll`
+- 手順: ダブルクリック →（SmartScreen「WindowsによってPCが保護されました」なら「詳細情報」→「実行」）
+  → UAC「はい」→ 言語選択 → Revit バージョンにチェック（インストール済みは既定でチェック）→ インストール。
+  Revit 起動中は終了を求められる（再試行／キャンセル）
+- 初回の Revit 起動で「セキュリティ - 署名なしのアドイン」→「常にロード」
+- アンインストール: Windows 設定 → アプリ →「28 Tools (Revit Add-in)」（全バージョン分を削除）。
+  install.bat で入れた旧版は一覧に出ない（手動削除か、新インストーラーで上書き後にアンインストール）
+- 旧版の上から上書きインストールしてよい（旧ファイルはインストーラーが削除する）
+- 利用者向けの手順は `addins.html` のインストール／アンインストール／サポートの各モーダルに書いてある
 
 **ダウンロードは合言葉なしで開始する**（2026/08〜）。以前は `js/main.js` に平文で
 書かれた合言葉を `prompt()` で照合していたが、ソースを見れば誰でも読めるうえ、
-配布物の ZIP は GitHub Releases の公開 URL から直接取得できるため、
+配布物は GitHub Releases の公開 URL から直接取得できるため、
 認証として機能していなかった。認知拡大を優先して撤廃した。
 
 **ダウンロード URL は自動取得**。`js/main.js` 冒頭で
 `https://api.github.com/repos/28yu/28tools-download/releases/latest` を fetch し、
-アセット名を `28Tools_Revit(\d{4})` で照合して `downloadConfig.urls['revit2024']` の形に
-組み立てる。**リリースを公開すればサイト側の変更なしで新バージョンが配信される。**
+アセット名を `^28Tools_Setup_v([\d.]+)\.exe$` で照合して
+`downloadConfig.urls.setup`（URL）と `downloadConfig.latestVersion`（例 `'2.6'`）に入れる。
+`addins.html` のボタンは `data-version="setup"` の 1 個だけ。
+取得後に `applyLatestVersion()` が `#latest-version`（`v2.6`）と `.latest-filename`
+（`28Tools_Setup_v2.6.exe`）を埋める。
+旧形式 `28Tools_Revit(\d{4})` → `downloadConfig.urls['revit2024']` の対応付けも保険として残している。
+**リリースを公開すればサイト側の変更なしで新バージョンが配信される。**
 
 **タグ構成**:
 | 世代 | タグの付け方 | 例 |
 |---|---|---|
-| 現行（v2.0 以降） | **1リリース＝1タグに全6アセット** | `v2.1.2` → `28Tools_Revit2021_v2.1.2.zip` 〜 `..._Revit2026_v2.1.2.zip` |
+| 現行（v2.6 以降） | **1リリース＝1タグにインストーラー exe 1 本** | `v2.6` → `28Tools_Setup_v2.6.exe` |
+| 旧（v2.0〜v2.1.2） | 1リリース＝1タグに Revit バージョン別 ZIP 6 本 | `v2.1.2` → `28Tools_Revit2021_v2.1.2.zip` 〜 `..._Revit2026_v2.1.2.zip` |
 | 旧（v1.0.0） | Revit バージョンごとに別タグ | `v1.0.0-Revit2024` → `28Tools_Revit2024.zip` |
 
-⚠️ **アセットは必ず 6 バージョン分そろえて公開すること**。`releases/latest` に含まれない
-Revit バージョンは `downloadConfig.urls` に載らず、ボタンが「このバージョンはまだ
+⚠️ **アセット名は `28Tools_Setup_v<バージョン>.exe` の形を守ること**。名前が正規表現に
+合わないと `downloadConfig.urls.setup` が空になり、ボタンが「このバージョンはまだ
 利用できません」になる。
+
+⚠️ **リリースは下書き（Draft）で作られ、公開（Publish release）するまで `releases/latest` に出ない**。
+アドイン開発リポジトリの CI が Revit-Add-ins と 28tools-download の両方に下書きを作るので、
+exe を実機で確認（SmartScreen の表示など）してから**両方**で「Publish release」を押す。
+公開した時点でサイトのボタンが新バージョンを指す。
 
 **ダウンロードURL形式**:
 ```
@@ -429,11 +453,12 @@ curl -s https://api.github.com/repos/28yu/28tools-download/releases | jq '.[].as
 ※ サイト経由のDLは Supabase の `downloads` テーブルにも記録される（`analytics/dashboard.html` で可視化）。
 
 **バージョンアップ時の対応**:
-1. 新しいタグで GitHub Release を作成し、**全6バージョンの ZIP を添付**する
-2. `addins.html` のインストール手順内のバージョン表記を更新
-3. `addins.html` のバージョンタブの表示を更新
+1. GitHub Release（`28Tools_Setup_v<バージョン>.exe` を添付）の下書きを確認して**公開**する
+2. 機能数が変わったら `addins.html` の機能カード・meta description、
+   `install-step4-available`（「全N機能が利用可能」）の翻訳、`index.html` の説明文を更新
+3. `index.html` の新着・おすすめにリリース告知を追加（`index-news-v<番号>` キー）
 
-※ `js/main.js` の URL 更新は**不要**（`releases/latest` から自動取得するため）。
+※ `js/main.js` の URL・バージョン表記の更新は**不要**（`releases/latest` から自動取得するため）。
 
 ## ハッチングパターン作成ツール（hatch.html）
 
