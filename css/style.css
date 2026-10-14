@@ -320,6 +320,22 @@ h1.main-title,
     transform: scaleX(1);
 }
 
+/* 新機能バッジ（機能一覧カード右上） */
+.feature-new-badge {
+    z-index: 1;
+    line-height: 1.4;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: var(--construction-orange, #e67e22);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
 .feature-icon {
     margin-bottom: 14px;
 }
@@ -1030,8 +1046,18 @@ h1.main-title,
         font-size: 1rem;
     }
     
+    /* リボン画像は横長（約14:1）なので、狭い画面では縮小せず横スクロールで読めるようにする */
+    .ribbon-image-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        text-align: left;
+    }
+
     .ribbon-image {
         border-radius: 6px;
+        max-width: none;
+        width: auto;
+        height: 100px;
     }
     
     .features-container {
