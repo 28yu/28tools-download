@@ -39,17 +39,47 @@ const downloadConfig = {
 };
 
 // 最新リリースのダウンロードURLを自動取得
+// v2.6〜: 全バージョン共通のインストーラー 1 本（28Tools_Setup_vX.X.exe）を
+// downloadConfig.urls.setup に入れる。旧形式（28Tools_Revit20XX_*.zip）の
+// 対応付けは、万一 ZIP を添付したリリースが latest になった場合の保険として残す。
 fetch('https://api.github.com/repos/28yu/28tools-download/releases/latest')
     .then(res => res.json())
     .then(release => {
-        release.assets.forEach(asset => {
+        (release.assets || []).forEach(asset => {
+            const setup = asset.name.match(/^28Tools_Setup_v([\d.]+)\.exe$/);
+            if (setup) {
+                downloadConfig.urls.setup = asset.browser_download_url;
+                downloadConfig.latestVersion = setup[1];
+                downloadConfig.setupFileName = asset.name;
+                return;
+            }
             const match = asset.name.match(/28Tools_Revit(\d{4})/);
             if (match) {
                 downloadConfig.urls['revit' + match[1]] = asset.browser_download_url;
             }
         });
+        // DOMContentLoaded の前後どちらで取得が終わっても表示できるようにする
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', applyLatestVersion);
+        } else {
+            applyLatestVersion();
+        }
     })
     .catch(err => console.error('Failed to fetch download URLs:', err));
+
+// 最新バージョン番号とファイル名をページに反映する
+// - #latest-version         → "v2.6"
+// - .latest-filename（複数可）→ "28Tools_Setup_v2.6.exe"
+function applyLatestVersion() {
+    const v = downloadConfig.latestVersion;
+    if (!v) return;
+    const label = document.getElementById('latest-version');
+    if (label) label.textContent = 'v' + v;
+    const fileName = downloadConfig.setupFileName || ('28Tools_Setup_v' + v + '.exe');
+    document.querySelectorAll('.latest-filename').forEach(el => {
+        el.textContent = fileName;
+    });
+}
 
 // ========================================
 // 1. 初期化処理
@@ -652,60 +682,25 @@ function initTranslations() {
             en: 'Auto-calculate formwork area from RC structures, output to Excel/schedules/3D views',
             zh: '从RC结构自动计算模板面积并输出到Excel、明细表和3D视图'
         },
-        'version-title': {
-            ja: 'Revitバージョンを選択',
-            en: 'Select Revit Version',
-            zh: '选择Revit版本'
-        },
-        'version-2021': {
-            ja: 'Revit 2021',
-            en: 'Revit 2021',
-            zh: 'Revit 2021'
-        },
-        'version-2022': {
-            ja: 'Revit 2022',
-            en: 'Revit 2022',
-            zh: 'Revit 2022'
-        },
-        'version-2023': {
-            ja: 'Revit 2023',
-            en: 'Revit 2023',
-            zh: 'Revit 2023'
-        },
-        'version-2024': {
-            ja: 'Revit 2024',
-            en: 'Revit 2024',
-            zh: 'Revit 2024'
-        },
-        'version-2025': {
-            ja: 'Revit 2025',
-            en: 'Revit 2025',
-            zh: 'Revit 2025'
-        },
-        'version-2026': {
-            ja: 'Revit 2026',
-            en: 'Revit 2026',
-            zh: 'Revit 2026'
-        },
-        'version-status-available': {
-            ja: '利用可能',
-            en: 'Available',
-            zh: '可用'
-        },
         'download-btn': {
             ja: 'ダウンロード',
             en: 'Download',
             zh: '下载'
         },
-        'version-status-development': {
-            ja: '開発中',
-            en: 'In Development',
-            zh: '开发中'
+        'setup-title': {
+            ja: '28 Tools インストーラー',
+            en: '28 Tools Installer',
+            zh: '28 Tools 安装程序'
         },
-        'version-status-planned': {
-            ja: '計画中',
-            en: 'Planned',
-            zh: '计划中'
+        'setup-support': {
+            ja: 'Revit 2021 / 2022 / 2023 / 2024 / 2025 / 2026 対応（1つのファイルで全バージョン）',
+            en: 'Supports Revit 2021 / 2022 / 2023 / 2024 / 2025 / 2026 (one file for all versions)',
+            zh: '支持 Revit 2021 / 2022 / 2023 / 2024 / 2025 / 2026（一个文件涵盖所有版本）'
+        },
+        'setup-note': {
+            ja: 'Windows 用インストーラー（.exe）です。導入方法は下の「インストール手順」をご覧ください。',
+            en: 'Windows installer (.exe). See "Installation Guide" below for how to install.',
+            zh: 'Windows 安装程序（.exe）。安装方法请参阅下方的"安装指南"。'
         },
         'footer-title': {
             ja: 'サポート',
@@ -884,9 +879,9 @@ function initTranslations() {
             zh: '以兼容 Revit 2021–2026 全版本的免费插件为核心，同时提供填充图案创建工具、PDF 比较工具以及 BIM 与 AI 行业新闻，以简洁易用的方式，只提供现场真正需要的功能。'
         },
         'index-category-addon-desc': {
-            ja: 'Revit 2021-2026 対応の無料アドイン。6つの便利機能をインストール不要ですぐに利用できます。',
-            en: 'Free add-ins compatible with Revit 2021-2026. 6 convenient features ready to use without installation.',
-            zh: '兼容Revit 2021-2026的免费插件。6个便捷功能无需安装即可使用。'
+            ja: 'Revit 2021-2026 対応の無料アドイン。23の便利機能を、インストーラーひとつで導入できます。',
+            en: 'Free add-ins for Revit 2021-2026. Install all 23 handy features with a single installer.',
+            zh: '兼容Revit 2021-2026的免费插件。只需一个安装程序即可安装全部23个便捷功能。'
         },
         'index-category-hatch-desc': {
             ja: 'Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。6種類のパターンに対応。',
@@ -927,6 +922,11 @@ function initTranslations() {
             ja: '新着・おすすめ',
             en: 'News & Featured',
             zh: '最新动态'
+        },
+        'index-news-v26': {
+            ja: '28 Tools v2.6 リリース — 新機能10個を追加、インストーラーで簡単インストール（全23機能）',
+            en: '28 Tools v2.6 Released — 10 new features and easy setup with a single installer (23 features in total)',
+            zh: '28 Tools v2.6 发布 — 新增10项功能，使用安装程序轻松安装（共23项功能）'
         },
         'index-news-v212': {
             ja: '28 Tools v2.1.2 リリース — 型枠数量算出の不具合を修正',
@@ -1019,15 +1019,10 @@ function initTranslations() {
             en: 'Download',
             zh: '下载'
         },
-        'install-step1-button': {
-            ja: 'ボタン:',
-            en: 'Button:',
-            zh: '按钮:'
-        },
         'install-step1-download': {
-            ja: '対応するバージョンをダウンロード',
-            en: 'Download the corresponding version',
-            zh: '下载对应的版本'
+            ja: 'このページの「ダウンロード」ボタンからインストーラーを保存します（Revit 2021〜2026 共通の1ファイル）。',
+            en: 'Save the installer using the "Download" button on this page (one file for Revit 2021–2026).',
+            zh: '通过本页的"下载"按钮保存安装程序（Revit 2021–2026 通用的一个文件）。'
         },
         'install-step1-save': {
             ja: '保存先:',
@@ -1035,9 +1030,9 @@ function initTranslations() {
             zh: '保存位置:'
         },
         'install-step1-auto': {
-            ja: 'フォルダ（自動）',
-            en: 'Folder (Automatic)',
-            zh: '文件夹（自动）'
+            ja: 'Downloads フォルダ（自動）',
+            en: 'Downloads folder (automatic)',
+            zh: 'Downloads 文件夹（自动）'
         },
         'install-step1-file': {
             ja: 'ファイル:',
@@ -1045,54 +1040,59 @@ function initTranslations() {
             zh: '文件:'
         },
         'install-step2-title': {
-            ja: '解凍',
-            en: 'Extract',
-            zh: '解压'
+            ja: '実行',
+            en: 'Run',
+            zh: '运行'
         },
         'install-step2-action': {
-            ja: 'ZIP ファイルをダブルクリック',
-            en: 'Double-click the ZIP file',
-            zh: '双击 ZIP 文件'
+            ja: 'ダウンロードしたインストーラー（.exe）をダブルクリックします。',
+            en: 'Double-click the downloaded installer (.exe).',
+            zh: '双击下载的安装程序（.exe）。'
         },
-        'install-step2-action2': {
-            ja: '右クリック → 「すべて展開」',
-            en: 'Right-click → "Extract All"',
-            zh: '右键点击 → "全部提取"'
+        'install-step2-smartscreen': {
+            ja: '青い画面「WindowsによってPCが保護されました」が表示された場合は、<strong>「詳細情報」</strong>→<strong>「実行」</strong>をクリックしてください。',
+            en: 'If a blue screen saying "Windows protected your PC" appears, click <strong>"More info"</strong> → <strong>"Run anyway"</strong>.',
+            zh: '如果出现蓝色画面"Windows 已保护你的电脑"，请点击<strong>"更多信息"</strong>→<strong>"仍要运行"</strong>。'
         },
-        'install-step2-folder': {
-            ja: '自動的にフォルダが生成:',
-            en: 'Folder is automatically generated:',
-            zh: '自动生成文件夹:'
+        'install-step2-smartscreen-why': {
+            ja: 'インストーラーにデジタル署名をしていないため、この確認が表示されることがあります。',
+            en: 'This prompt may appear because the installer is not digitally signed.',
+            zh: '由于安装程序没有数字签名，可能会显示此提示。'
         },
         'install-step3-title': {
             ja: 'インストール',
             en: 'Install',
             zh: '安装'
         },
-        'install-step3-action': {
-            ja: 'install.bat を右クリック',
-            en: 'Right-click install.bat',
-            zh: '右键点击 install.bat'
+        'install-step3-uac': {
+            ja: '「ユーザーアカウント制御」の確認で<strong>「はい」</strong>をクリック',
+            en: 'Click <strong>"Yes"</strong> in the "User Account Control" prompt',
+            zh: '在"用户账户控制"提示中点击<strong>"是"</strong>'
         },
-        'install-step3-admin': {
-            ja: '「管理者として実行」を選択',
-            en: 'Select "Run as administrator"',
-            zh: '选择"以管理员身份运行"'
+        'install-step3-lang': {
+            ja: 'セットアップの言語（日本語 / English / 中文）を選択',
+            en: 'Choose the setup language (日本語 / English / 中文)',
+            zh: '选择安装语言（日本語 / English / 中文）'
         },
-        'install-step3-follow': {
-            ja: '画面に従ってインストール完了',
-            en: 'Follow on-screen instructions to complete',
-            zh: '按照屏幕上的说明完成安装'
+        'install-step3-select': {
+            ja: '使用している Revit のバージョンにチェック（インストール済みの Revit には自動でチェックが入ります）',
+            en: 'Check the Revit versions you use (installed versions are checked automatically)',
+            zh: '勾选您使用的 Revit 版本（已安装的 Revit 会自动勾选）'
+        },
+        'install-step3-run': {
+            ja: '<strong>「インストール」</strong>をクリックして完了',
+            en: 'Click <strong>"Install"</strong> to finish',
+            zh: '点击<strong>"安装"</strong>完成'
+        },
+        'install-step3-revit-running': {
+            ja: '※ Revit が起動している場合は終了を求められます。Revit を終了してから「再試行」をクリックしてください。',
+            en: '※ If Revit is running, you will be asked to close it. Close Revit and then click "Retry".',
+            zh: '※ 如果 Revit 正在运行，会提示您关闭。请关闭 Revit 后点击"重试"。'
         },
         'install-step3-location': {
             ja: 'ファイルが以下に配置される:',
             en: 'Files are placed in:',
             zh: '文件放置在:'
-        },
-        'install-step3-required': {
-            ja: '必須',
-            en: 'Required',
-            zh: '必需'
         },
         'install-step4-title': {
             ja: '動作確認',
@@ -1104,50 +1104,40 @@ function initTranslations() {
             en: 'Launch Revit',
             zh: '启动 Revit'
         },
+        'install-step4-security': {
+            ja: '「セキュリティ - 署名なしのアドイン」の確認が表示されたら<strong>「常にロード」</strong>を選択',
+            en: 'If the "Security - Unsigned Add-In" prompt appears, choose <strong>"Always Load"</strong>',
+            zh: '如果出现"安全 - 未签名的附加模块"提示，请选择<strong>"总是载入"</strong>（Always Load）'
+        },
         'install-step4-ribbon': {
             ja: 'リボンに「28 Tools」タブが表示',
             en: '"28 Tools" tab appears in ribbon',
             zh: '功能区中显示"28 Tools"选项卡'
         },
         'install-step4-available': {
-            ja: '全12機能が利用可能',
-            en: 'All 12 features available',
-            zh: '所有 12 个功能都可用'
+            ja: '全23機能が利用可能',
+            en: 'All 23 features available',
+            zh: '所有 23 个功能均可使用'
         },
-        'install-step5-title': {
-            ja: 'ダウンロードファイルの削除 ✅',
-            en: 'Delete Download Files ✅',
-            zh: '删除下载文件 ✅'
+        'install-update-badge': {
+            ja: '更新',
+            en: 'Update',
+            zh: '更新'
         },
-        'install-step5-zip': {
-            ja: '❌ ZIP ファイルを削除:',
-            en: '❌ Delete ZIP file:',
-            zh: '❌ 删除 ZIP 文件:'
+        'install-update-title': {
+            ja: '新しいバージョンへの更新',
+            en: 'Updating to a New Version',
+            zh: '更新到新版本'
         },
-        'install-step5-folder': {
-            ja: '❌ 解凍フォルダを削除:',
-            en: '❌ Delete extracted folder:',
-            zh: '❌ 删除解压文件夹:'
+        'install-update-desc': {
+            ja: '新しいバージョンが出たら、同じ手順でインストーラーを実行するだけで上書き更新できます（先にアンインストールする必要はありません）。',
+            en: 'When a new version is released, just run the new installer with the same steps to update in place (no need to uninstall first).',
+            zh: '发布新版本时，只需按相同步骤运行安装程序即可覆盖更新（无需先卸载）。'
         },
-        'install-step5-reason': {
-            ja: '理由:',
-            en: 'Reason:',
-            zh: '原因:'
-        },
-        'install-step5-reason1': {
-            ja: '実際に動作するファイルは Addins フォルダに配置済み',
-            en: 'Working files are already placed in Addins folder',
-            zh: '实际文件已放置在 Addins 文件夹中'
-        },
-        'install-step5-reason2': {
-            ja: 'これらはインストール用の一時的なファイル',
-            en: 'These are temporary installation files',
-            zh: '这些是临时安装文件'
-        },
-        'install-step5-reason3': {
-            ja: 'ディスク容量の節約',
-            en: 'Save disk space',
-            zh: '节省磁盘空间'
+        'install-update-legacy': {
+            ja: '旧版（ZIP で配布していた v2.1.2 以前を install.bat で導入したもの）の上からそのままインストールしても問題ありません。旧版のファイルはインストーラーが自動で削除します。',
+            en: 'You can install directly over an old version (v2.1.2 or earlier, distributed as ZIP and installed with install.bat). The installer removes the old files automatically.',
+            zh: '可以直接覆盖安装旧版本（以 ZIP 发布、通过 install.bat 安装的 v2.1.2 及更早版本）。安装程序会自动删除旧版本的文件。'
         }
     };
 
@@ -1161,29 +1151,29 @@ function initTranslations() {
             zh: '卸载'
         },
         'uninstall-step1': {
-            ja: '方法 1: 自動アンインストール（推奨）',
-            en: 'Method 1: Automatic Uninstall (Recommended)',
-            zh: '方法 1: 自动卸载（推荐）'
+            ja: '方法 1: Windows の「アプリ」からアンインストール（推奨）',
+            en: 'Method 1: Uninstall from Windows "Apps" (Recommended)',
+            zh: '方法 1: 从 Windows"应用"中卸载（推荐）'
         },
         'uninstall-step1-desc': {
-            ja: 'ダウンロード時に含まれていた uninstall.bat を実行します。',
-            en: 'Run the uninstall.bat included in the download.',
-            zh: '运行下载中包含的 uninstall.bat。'
+            ja: 'インストーラーで導入した場合はこちら。全バージョン分がまとめて削除されます。',
+            en: 'Use this if you installed with the installer. All Revit versions are removed at once.',
+            zh: '适用于通过安装程序安装的情况。所有版本将一并删除。'
         },
         'uninstall-step1-1': {
-            ja: 'uninstall.bat を右クリック',
-            en: 'Right-click uninstall.bat',
-            zh: '右键点击 uninstall.bat'
+            ja: 'Windows の「設定」→「アプリ」→「インストールされているアプリ」を開く',
+            en: 'Open Windows "Settings" → "Apps" → "Installed apps"',
+            zh: '打开 Windows"设置"→"应用"→"已安装的应用"'
         },
         'uninstall-step1-2': {
-            ja: '「管理者として実行」を選択',
-            en: 'Select "Run as administrator"',
-            zh: '选择"以管理员身份运行"'
+            ja: '一覧から「28 Tools (Revit Add-in)」を探す',
+            en: 'Find "28 Tools (Revit Add-in)" in the list',
+            zh: '在列表中找到"28 Tools (Revit Add-in)"'
         },
         'uninstall-step1-3': {
-            ja: '画面に従ってアンインストール完了',
-            en: 'Follow on-screen instructions to complete',
-            zh: '按照屏幕上的说明完成卸载'
+            ja: '「アンインストール」を選択（Windows 11 では右端の「…」から）',
+            en: 'Select "Uninstall" (on Windows 11, from the "…" menu on the right)',
+            zh: '选择"卸载"（Windows 11 中从右侧的"…"菜单）'
         },
         'uninstall-step2': {
             ja: '方法 2: 手動削除',
@@ -1191,14 +1181,34 @@ function initTranslations() {
             zh: '方法 2: 手动删除'
         },
         'uninstall-step2-desc': {
-            ja: '以下のフォルダから手動で削除します。',
-            en: 'Manually delete from the following folder.',
-            zh: '从以下文件夹中手动删除。'
+            ja: 'Revit を終了してから、各バージョンの以下のフォルダを開きます。',
+            en: 'Close Revit, then open the following folder for each version.',
+            zh: '关闭 Revit 后，打开各版本的以下文件夹。'
         },
         'uninstall-step2-delete': {
-            ja: '以下のファイルを削除:',
-            en: 'Delete the following files:',
-            zh: '删除以下文件:'
+            ja: '以下を削除:',
+            en: 'Delete the following:',
+            zh: '删除以下内容:'
+        },
+        'uninstall-item-file': {
+            ja: '（ファイル）',
+            en: '(file)',
+            zh: '（文件）'
+        },
+        'uninstall-item-folder': {
+            ja: '（フォルダごと）',
+            en: '(entire folder)',
+            zh: '（整个文件夹）'
+        },
+        'uninstall-item-legacy-dll': {
+            ja: '（旧版で 20** フォルダの直下にある場合のみ）',
+            en: '(only if an old version placed it directly in the 20** folder)',
+            zh: '（仅当旧版本将其直接放在 20** 文件夹中时）'
+        },
+        'uninstall-legacy': {
+            ja: '※ v2.1.2 以前を install.bat で導入した場合は、「アプリ」の一覧に表示されません。方法 2 で削除するか、新しいインストーラーで上書きインストールしてから方法 1 で削除してください。',
+            en: '※ If you installed v2.1.2 or earlier with install.bat, it does not appear in "Apps". Remove it with Method 2, or install the new installer over it and then use Method 1.',
+            zh: '※ 如果通过 install.bat 安装了 v2.1.2 及更早版本，它不会出现在"应用"列表中。请使用方法 2 删除，或用新安装程序覆盖安装后再使用方法 1 卸载。'
         },
         'uninstall-note': {
             ja: '※ Revit を再起動すると変更が反映されます',
@@ -1227,9 +1237,9 @@ function initTranslations() {
             zh: 'Q: 安装不成功'
         },
         'support-a1': {
-            ja: 'A: 以下をご確認ください:\n• install.bat を「管理者として実行」していますか？\n• Revit が起動していないか確認してください\n• ウイルス対策ソフトがブロックしていないか確認してください',
-            en: 'A: Please check the following:\n• Are you running install.bat "as administrator"?\n• Make sure Revit is not running\n• Check if antivirus software is blocking it',
-            zh: 'A: 请检查以下内容:\n• 您是否以"管理员身份运行"install.bat？\n• 确保 Revit 未在运行\n• 检查防病毒软件是否正在阻止'
+            ja: 'A: 以下をご確認ください:<br>• 青い画面「WindowsによってPCが保護されました」が出た場合は「詳細情報」→「実行」で続行できます<br>• 「ユーザーアカウント制御」で「はい」を選んでいますか？（管理者権限が必要です）<br>• Revit を終了してから実行してください<br>• ウイルス対策ソフトがブロックしていないか確認してください',
+            en: 'A: Please check the following:<br>• If a blue "Windows protected your PC" screen appears, click "More info" → "Run anyway" to continue<br>• Did you click "Yes" in the "User Account Control" prompt? (Administrator rights are required)<br>• Close Revit before running the installer<br>• Check if antivirus software is blocking it',
+            zh: 'A: 请检查以下内容:<br>• 如果出现蓝色画面"Windows 已保护你的电脑"，请点击"更多信息"→"仍要运行"继续<br>• 是否在"用户账户控制"中选择了"是"？（需要管理员权限）<br>• 请先关闭 Revit 再运行安装程序<br>• 检查防病毒软件是否正在阻止'
         },
         'support-q2': {
             ja: 'Q: リボンに「28 Tools」が表示されません',
@@ -1237,9 +1247,9 @@ function initTranslations() {
             zh: 'Q: 功能区中没有显示"28 Tools"选项卡'
         },
         'support-a2': {
-            ja: 'A: Revit を再起動してください。それでも表示されない場合は:\n• verify.bat を実行して診断してください\n• インストール手順を再度実施してください',
-            en: 'A: Restart Revit. If it still does not appear:\n• Run verify.bat to diagnose\n• Re-run the installation steps',
-            zh: 'A: 重新启动 Revit。如果仍未显示:\n• 运行 verify.bat 进行诊断\n• 重新执行安装步骤'
+            ja: 'A: Revit を再起動してください。それでも表示されない場合は:<br>• 起動時の「署名なしのアドイン」の確認で「常にロード」を選択してください<br>• インストール時に、使用している Revit のバージョンにチェックが入っていたか確認し、インストーラーを再実行してください',
+            en: 'A: Restart Revit. If it still does not appear:<br>• Choose "Always Load" in the "Unsigned Add-In" prompt at startup<br>• Make sure the Revit version you use was checked during installation, and run the installer again',
+            zh: 'A: 重新启动 Revit。如果仍未显示:<br>• 在启动时的"未签名的附加模块"提示中选择"总是载入"<br>• 确认安装时已勾选您使用的 Revit 版本，然后重新运行安装程序'
         },
         'support-q3': {
             ja: 'Q: 複数のRevitバージョンを使用しています',
@@ -1247,9 +1257,9 @@ function initTranslations() {
             zh: 'Q: 我使用多个 Revit 版本'
         },
         'support-a3': {
-            ja: 'A: 各バージョンに対応したパッケージをそれぞれインストールしてください。\n例: Revit 2021 版と Revit 2024 版を同時にインストール可能です',
-            en: 'A: Install the package for each version separately.\nExample: You can install both Revit 2021 and 2024 versions',
-            zh: 'A: 为每个版本分别安装软件包。\n例如: 可以同时安装 Revit 2021 和 2024 版本'
+            ja: 'A: 1つのインストーラーで Revit 2021〜2026 に対応しています。インストール時の画面で、使用するバージョンすべてにチェックを入れてください。後から追加する場合もインストーラーを再実行するだけです。',
+            en: 'A: One installer supports Revit 2021–2026. Check every version you use on the installer screen. To add a version later, just run the installer again.',
+            zh: 'A: 一个安装程序即支持 Revit 2021–2026。请在安装画面中勾选您使用的所有版本。之后要添加版本时，只需重新运行安装程序。'
         },
         'support-contact': {
             ja: 'ご不明な点',
@@ -1257,9 +1267,9 @@ function initTranslations() {
             zh: '问题'
         },
         'support-contact-form': {
-            ja: '今後、問い合わせフォームで対応予定です。',
-            en: 'A contact form will be provided in the future.',
-            zh: '我们计划在未来提供联系表单。'
+            ja: '<a href="contact.html">お問い合わせフォーム</a>よりご連絡ください。',
+            en: 'Please contact us via the <a href="contact.html">contact form</a>.',
+            zh: '请通过<a href="contact.html">联系表单</a>与我们联系。'
         }
     };
 
