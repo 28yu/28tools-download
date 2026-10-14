@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T07:26:38.213979",
+  "lastUpdated": "2026-10-14T05:54:19.760932",
   "articles": [
     {
       "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
@@ -24,26 +24,70 @@
       "language": "en"
     },
     {
-      "title": "Get ready for the game with new football features in Search",
-      "titleJa": "検索の新しいサッカー機能で試合に備えましょう",
-      "link": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
-      "description": "An illustrated graphic set against a vibrant green background featuring American football elements, including a gold trophy, a blue helmet, a silver whistle, a football, a mini scoreboard, and play di...",
-      "publishedDate": "Wed, 09 Sep 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
+      "title": "ZOZO、独自データ×AIの新機能「似合うルーム」を提供開始。診断からバーチャル試着までを一括で",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/wear-ai-styling-niauroom/",
+      "description": "ZOZOは、ファッションアプリ「WEAR」にて、独自データとAI技術を活用した新機能「似合うルーム」の提供を開始しました。診断と提案、試着をシームレスに提供し、服選びをサポートします。 このニュースのポイント ZOZO、 […]",
+      "publishedDate": "Wed, 14 Oct 2026 05:45:56 +0000",
+      "source": "AIsmiley",
       "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Football_on_Search_blog_header.max-600x600.format-webp.webp",
-      "language": "en"
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/wear-ai-styling-niauroom-eye.png",
+      "language": "ja"
     },
     {
-      "title": "Multimodal open d1 decision models for the edge",
-      "titleJa": "エッジ向けのマルチモーダルオープン d1 意思決定モデル",
-      "link": "https://huggingface.co/blog/LiquidAI/open-d1",
-      "description": "",
-      "publishedDate": "Wed, 07 Oct 2026 16:54:33 GMT",
-      "source": "Hugging Face Blog",
-      "category": "tools",
-      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/hLsllw4zhC04cVGiV69v0.png",
-      "language": "en"
+      "title": "Google Cloud、業務向け汎用AI「Geminiエージェント」発表。Google Workspaceの内部で直接機能",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/google-cloud-gemini-agent/",
+      "description": "Google Cloudは、業務向けの汎用的なAI「Geminiエージェント」を発表しました。単一のプロンプトから質問回答、画像作成、コード記述などを自律的に処理し、完成した成果物を直接業務システムに反映します。 このニ […]",
+      "publishedDate": "Wed, 14 Oct 2026 05:45:22 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/google-cloud-gemini-agent.png",
+      "language": "ja"
+    },
+    {
+      "title": "ソフトバンクグループ、OpenAIへ100億ドルを追加出資。持分比率が約13%に到達",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/softbank-openai-investment-add/",
+      "description": "ソフトバンクグループが、OpenAIへ100億米ドルの最終追加出資を実行しました。これにより総額300億米ドルの追加出資が完了し、累計出資額は646億米ドル、持分比率は約13%となりました。 このニュースのポイント ソフ […]",
+      "publishedDate": "Wed, 14 Oct 2026 05:44:55 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/softbank-openai-investment-add-eye2.png",
+      "language": "ja"
+    },
+    {
+      "title": "ｕｇｏ、国産セミヒューマノイド「ugo Nova」発表。フィジカルAIのロボット基盤モデル開発に活用可能",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ugo-nova-announcement/",
+      "description": "ｕｇｏは、国産セミヒューマノイド「ugo Nova」を発表しました。人と同じ空間で実際に動くことで人の作業を学習データへ変換し、フィジカルAIのロボット基盤モデル開発を後押しします。 このニュースのポイント ｕｇｏが国産 […]",
+      "publishedDate": "Wed, 14 Oct 2026 05:44:52 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/ugo-nova-announcement-eye.png",
+      "language": "ja"
+    },
+    {
+      "title": "MS Skill Recorderとは？使い方・料金・RPAとの違いも詳しく解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/ms-skill-recorder/",
+      "description": "MS Skill Recorder とは、PC画面を一度録画するだけで、AIエージェント用の手順書を自動生成できるアプリです。Microsoft が 2026年7月29日に公開したオープンソースソフトウェアで、これまで人 […]",
+      "publishedDate": "Wed, 14 Oct 2026 01:23:41 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/msskillrecorder.png",
+      "language": "ja"
+    },
+    {
+      "title": "Grok Imagine Image 2.0とは？特徴・使い方・料金・商用利用まで解説【2026年8月】",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/grok-imagine-image-2/",
+      "description": "xAI（現SpaceXAI）は2026年8月、画像生成・編集モデル「Grok Imagine Image 2.0」をリリースしました。従来のモデルに比べて、指示への忠実さや文字描画の精度、部分編集機能が強化され、公開時点 […]",
+      "publishedDate": "Wed, 14 Oct 2026 01:23:26 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/GrokImagineImage.png",
+      "language": "ja"
     },
     {
       "title": "Introducing Falcon ASR",
@@ -135,7 +179,7 @@
     },
     {
       "title": "Transformers now runs llama.cpp quants",
-      "titleJa": "Transformers は llama.cpp クォントを実行するようになりました",
+      "titleJa": "Transformers now runs llama.cpp quants",
       "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
       "description": "",
       "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
@@ -197,6 +241,94 @@
       "source": "Google AI Blog",
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ATLAS-hero.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "titleJa": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "link": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "description": "",
+      "publishedDate": "Tue, 13 Oct 2026 17:05:48 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/YxGx9U6yV6_mumklCyMsE.png",
+      "language": "en"
+    },
+    {
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "titleJa": "Gemini 4 Argon: 最も困難な問題を解決するために構築されました",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "description": "TBD",
+      "publishedDate": "Tue, 13 Oct 2026 16:00:00 +0000",
+      "source": "Google AI Blog",
+      "category": "general",
+      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon__blog-header__27.max-600x600.format-webp.webp",
+      "language": "en"
+    },
+    {
+      "title": "SFTとは？教師ありファインチューニングの仕組み・実践方法をわかりやすく解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/sft/",
+      "description": "SFT（Supervised Fine-Tuning）とは、事前学習を終えたAIモデルに正解例を含むデータを追加学習させ、期待どおりの受け答えができるようにする手法です。LLMのポストトレーニングで使われる代表的な手法で […]",
+      "publishedDate": "Tue, 13 Oct 2026 12:28:45 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/SFT_26010-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "titleJa": "ヒッグスフィールド氏は AI ビデオを 1 分から 10 分以上まで撮影",
+      "link": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "description": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+      "publishedDate": "Tue, 13 Oct 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The Download: open model trade-offs and geothermal power’s promise",
+      "titleJa": "ダウンロード: オープンモデルのトレードオフと地熱発電の約束",
+      "link": "https://www.technologyreview.com/2026/10/13/1146382/the-download-open-models-trade-offs-geothermal-power/",
+      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Open models have real benefits. Do they outweigh the risks? An...",
+      "publishedDate": "Tue, 13 Oct 2026 12:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/05/identity-distortion3.jpeg?fit=1456,818",
+      "language": "en"
+    },
+    {
+      "title": "Open models have real benefits. Do they outweigh the risks?",
+      "titleJa": "オープン モデルには実際の利点があります。それらはリスクを上回りますか?",
+      "link": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+      "description": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next. You can read more from the series here. Late last...",
+      "publishedDate": "Tue, 13 Oct 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/260915_openaimodels.jpg?resize=1200,600",
+      "language": "en"
+    },
+    {
+      "title": "AI基盤とは？構築の進め方・選び方・注意点まで徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/ai-foundation/",
+      "description": "生成AIや機械学習の業務活用を本格化させるうえで、成果を大きく左右するのが「AI基盤」の整備です。どれほど優れたAIモデルを導入しても、土台となるデータ基盤が整っていなければ、回答の精度や運用効率は安定しません。 本記事 […]",
+      "publishedDate": "Tue, 13 Oct 2026 09:56:29 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/AI-foundation_26010-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "AI labs are buying data from dead startups to train their models",
+      "titleJa": "AI ラボはモデルをトレーニングするために、消滅したスタートアップからデータを購入しています",
+      "link": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+      "description": "When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm...",
+      "publishedDate": "Tue, 13 Oct 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/AI-Death_Redamonti_MIT-thumb.jpg?resize=1200,600",
       "language": "en"
     },
     {
@@ -332,99 +464,11 @@
       "language": "ja"
     },
     {
-      "title": "The Download: AI roadblocks for humanoids and portable rubber dams",
-      "titleJa": "ダウンロード: ヒューマノイドとポータブルラバーダムのための AI の障害",
-      "link": "https://www.technologyreview.com/2026/10/08/1146045/the-download-ai-roadblocks-humanoids-portable-rubber-dams/",
-      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI breakthroughs in robotics won’t change your life any time s...",
-      "publishedDate": "Thu, 08 Oct 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/12/pohoiki-springs-neuromorphic-1-16x9.jpg.rendition.intel_.web_.1920.1080.jpg?fit=2128,1196",
-      "language": "en"
-    },
-    {
       "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
       "titleJa": "Polo AI は、OpenAI を使用してクリエイティブなアイデアをキャンペーンに変換します",
       "link": "https://openai.com/index/pollo-ai",
       "description": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
       "publishedDate": "Thu, 08 Oct 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "LegalOn halves Codex costs while maintaining development speed",
-      "titleJa": "LegalOn は開発スピードを維持しながら Codex コストを半減",
-      "link": "https://openai.com/index/legalon-halves-codex-costs",
-      "description": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
-      "publishedDate": "Thu, 08 Oct 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Why we’re watching these climate tech companies",
-      "titleJa": "私たちがこれらの気候変動テクノロジー企業に注目する理由",
-      "link": "https://www.technologyreview.com/2026/10/08/1145920/climate-tech-companies-list/",
-      "description": "This week, we released our 2026 version of our Climate Tech Companies to Watch list. It’s an annual project that the MIT Technology Review team puts together. Our goal is to highlight some of the prom...",
-      "publishedDate": "Thu, 08 Oct 2026 10:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "research",
-      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/Image-2.jpg?resize=1200,600",
-      "language": "en"
-    },
-    {
-      "title": "「AI検索」会社員の半数以上が利用、7割以上が今後の利用増加を予想。AI検索利用実態調査結果発表",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/neutralworks-ai-search-survey/",
-      "description": "ニュートラルワークスは、会社員300名を対象に「AI検索利用実態調査」を実施しました。半数以上がAI検索を利用しており、そのうち7割以上が今後利用頻度が増えると回答しています。 このニュースのポイント 会社員300名を対 […]",
-      "publishedDate": "Thu, 08 Oct 2026 09:14:25 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/neutral-works.png",
-      "language": "ja"
-    },
-    {
-      "title": "JAPAN AI、企業向けAIプラットフォームの外部連携を47種に拡大。分散する情報の横断的な活用を支援",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/japan-ai-saas-integration/",
-      "description": "JAPAN AIは、企業向けAIプラットフォーム「JAPAN AI」において、外部SaaSツール40種と公的サービス・データ7種の計47種と連携したと発表しました。複数のサービスに分散した情報を「JAPAN AI」から参 […]",
-      "publishedDate": "Thu, 08 Oct 2026 09:03:22 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/japan-ai-saas-integration.png",
-      "language": "ja"
-    },
-    {
-      "title": "組み込みAI（生成AI）の活用事例！スマホ・車載・産業機器の最新動向と検証結果を解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/embedded-ai-use-cases/",
-      "description": "組み込みAIは、AIモデルを端末や機器側に搭載し、入力に対する判断や生成をその場で行う仕組みです。この処理を「推論」と呼びます。本記事では、従来の物体検知・異常検知ではなく、生成AIの大規模言語モデル（LLM）や小型言語 […]",
-      "publishedDate": "Thu, 08 Oct 2026 06:54:50 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Embedded-AI-Use-Cases_26010-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "【Claude Haiku 5.5】Haiku 4.5比75%安い最速モデルの性能・料金・使い方を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/tech/claude-haiku-5-5/",
-      "description": "2026年10月8日、Anthropicは同社史上もっとも安くて速い小型モデル「Claude Haiku 5.5」を発表しました！ Haiku 4.5と比べて平均で約75%安く動くうえ、知識労働やPC操作のスコアは前モデ […]",
-      "publishedDate": "Thu, 08 Oct 2026 01:41:27 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Haiku-5.5-1024x576.webp",
-      "language": "ja"
-    },
-    {
-      "title": "Disrupting AI-enabled “false front” operations",
-      "titleJa": "AI を活用した「偽の戦線」作戦を破壊する",
-      "link": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
-      "description": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
-      "publishedDate": "Thu, 08 Oct 2026 00:00:00 GMT",
       "source": "OpenAI Blog",
       "category": "llm",
       "thumbnail": null,
@@ -497,28 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "豊田自動織機、金属の破面解析をAI活用で自動化。解析時間を最大90％短縮",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/toyota-shokki-fracture-automated-analysis/",
-      "description": "豊田自動織機は、AIを活用して金属の破面解析を自動化する技術を開発しました。熟練技術者の解析データを学習したAIと電子顕微鏡の自動操作技術を組み合わせ、観察箇所の特定から破損原因の推定、報告書作成までを自動化します。 こ […]",
-      "publishedDate": "Fri, 09 Oct 2026 09:17:04 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/toyota-shokki-fracture-automated-analysis.png",
-      "language": "ja"
-    },
-    {
-      "title": "Anthropic「Cyber Verification Program」を拡充。AIでサイバー防衛を強化",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/cyber-verification-program/",
-      "description": "Anthropicは、セキュリティ専門家向けの「Cyber Verification Program」を拡充しました。用途に応じた3つのアクセス階層を設け、業務範囲に合わせて選択可能です。 このニュースのポイント Ant […]",
-      "publishedDate": "Fri, 09 Oct 2026 09:11:33 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/Anthropic-CVP.png",
-      "language": "ja"
-    },
-    {
       "title": "Claude Motionとは？資料やグラフを短いアニメーション動画に変えるAnthropicの新機能を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/innovator/claude-motion/",
@@ -530,25 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "ループエンジニアリングとは？ハーネスとの違いと自動化の設計手法",
+      "title": "Webアプリフレームワークの「SvelteKit 3」正式リリース。設定をViteに集約、型安全やエラー処理の改善など",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/loop-engineering-harness/",
-      "description": "「AIエージェントを導入したのに、結局自分がプロンプトを打ち続けている……」 エージェントの処理がいくら高速でも、人間が「次の指示」を出すボトルネックになっていては、真の自動化とは言えません。 2026年、この“プロンプ […]",
-      "publishedDate": "Fri, 09 Oct 2026 01:45:37 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/LoopPngineering.png",
-      "language": "ja"
-    },
-    {
-      "title": "AIの品質ばらつきを防ぐ「ハーネスエンジニアリング」とは？構成要素から導入手順まで徹底解説",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/harness-engineering-2026/",
-      "description": "AIコーディングエージェントを個人で使う分には成果が出るのに、チームで使うと品質がばらつく━同じ指示を出しても、セッションが変われば書き方が変わり、前回の決定は引き継がれません。AIモデルを最新版に入れ替えるだけでは、こ […]",
-      "publishedDate": "Fri, 09 Oct 2026 01:45:33 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/HarnessEngineering.png",
+      "link": "https://www.publickey1.jp/blog/26/websveltekit_3vite.html",
+      "description": "Webアプリケーションフレームワーク「SvelteKit 3」正式版がリリースされました。 SvelteKitは、Web UIフレームワークの「Svelte」とビルドツールの「Vite」を基盤とし、ルーティング、サーバサイドレンダリング（S...",
+      "publishedDate": "2026-10-13T15:26:33Z",
+      "source": "Publickey",
+      "category": "tools",
+      "thumbnail": "https://www.publickey1.jp/2026/myznxQe8.jpg",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/xYARDFsE.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "Google Cloud、AIエージェントからの大量アクセスをPostgreSQLのプライマリDBから切り離せる「PostgreSQL for agents in AlloyDB」発表",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/google_cloudaipostgresqldbpostgresql_for_agents_in_alloydb.html",
-      "description": "Google Cloudは、本番環境で動作しているPostgreSQLの処理に影響を与えないよう、AIエージェントからの読み取りワークロード用にサンドボックス化されたPostgreSQLのデータベースインスタンスを数秒でプロビジョニングする...",
-      "publishedDate": "2026-09-29T15:46:18Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/HS_UTriXIAAofjv.jpg",
       "language": "ja"
     }
   ]
