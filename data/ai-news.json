@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14T05:54:19.760932",
+  "lastUpdated": "2026-10-15T05:38:06.821252",
   "articles": [
     {
       "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
@@ -22,6 +22,116 @@
       "category": "general",
       "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Beam_hero.max-600x600.format-webp.webp",
       "language": "en"
+    },
+    {
+      "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
+      "titleJa": "HiRO-ACEv2: わずかなコストで異常気象を 3 km の解像度でシミュレート",
+      "link": "https://huggingface.co/blog/allenai/hiro-acev2",
+      "description": "",
+      "publishedDate": "Wed, 14 Oct 2026 16:12:42 GMT",
+      "source": "Hugging Face Blog",
+      "category": "tools",
+      "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40iX4_sxA.png",
+      "language": "en"
+    },
+    {
+      "title": "The Download: faking blood and the future of batteries",
+      "titleJa": "ダウンロード: 偽造血液と電池の未来",
+      "link": "https://www.technologyreview.com/2026/10/14/1146452/the-download-military-fake-blood-future-batteries/",
+      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The US military’s race to make fake blood In February 2007, a...",
+      "publishedDate": "Wed, 14 Oct 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/03/crawl-data2.jpg?fit=2128,1196",
+      "language": "en"
+    },
+    {
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "titleJa": "Amp により、OpenAI モデルを使用して AI エージェントがコードを超えて動作できるようになります",
+      "link": "https://openai.com/index/amp-beyond-coding",
+      "description": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
+      "publishedDate": "Wed, 14 Oct 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "SentinelOne cuts malware analysis from weeks to hours",
+      "titleJa": "SentinelOne はマルウェア分析を数週間から数時間に短縮します",
+      "link": "https://openai.com/index/sentinelone",
+      "description": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
+      "publishedDate": "Wed, 14 Oct 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "The US military’s race to make fake blood",
+      "titleJa": "米軍による偽血液製造競争",
+      "link": "https://www.technologyreview.com/2026/10/14/1145807/us-military-race-to-make-fake-blood/",
+      "description": "Its call sign was Morphine 1-2. In February 2007, the hulking dual-­rotor casualty evacuation helicopter had just flown three wounded soldiers to a field hospital in Balad, north of Baghdad, when anot...",
+      "publishedDate": "Wed, 14 Oct 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "research",
+      "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/240611-KaloCyte-synthetic-blood-181.jpg",
+      "language": "en"
+    },
+    {
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "titleJa": "Third Moment Research が 10,000 人のエージェントを 36 時間以上実行する方法",
+      "link": "https://openai.com/index/third-moment-research",
+      "description": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
+      "publishedDate": "Wed, 14 Oct 2026 07:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "How Block is building AI-powered security with OpenAI technology",
+      "titleJa": "Block は OpenAI テクノロジーを使用して AI を活用したセキュリティをどのように構築しているか",
+      "link": "https://openai.com/index/block-ai-powered-security",
+      "description": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
+      "publishedDate": "Wed, 14 Oct 2026 07:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
+    },
+    {
+      "title": "dotsのSlack連携とは？OpenAIの常時稼働エージェントをSlackで使う方法・設定・注意点を徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/dots-slack/",
+      "description": "2026年9月、OpenAIから常時稼働型のAIエージェントが発表されました。 今回登場した「dots」は、GPT-6 Astraを搭載し、専用のクラウドコンピューターを使って24時間いつでも作業を進めるエージェントです […]",
+      "publishedDate": "Wed, 14 Oct 2026 06:46:15 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/dots-Slack_26010-1024x576.webp",
+      "language": "ja"
+    },
+    {
+      "title": "Google DeepMind、画像生成・編集の新モデル「Nano Banana 2.1」公開。図解作成や複数言語の文字描画を高精度化",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/deepmind-nano-banana-model/",
+      "description": "Google DeepMindは、画像生成・編集の新モデル「Nano Banana 2.1」を公開しました。最大100万トークンの入力処理が可能で、ポスターや図解向けのテキスト生成、複数言語の文字描画などに対応します。 […]",
+      "publishedDate": "Wed, 14 Oct 2026 06:23:50 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/nano-banana-2.1-main.png",
+      "language": "ja"
+    },
+    {
+      "title": "Grok BotのX連携とは？できること・使い方・料金・dotsとの違いを徹底解説",
+      "titleJa": null,
+      "link": "https://weel.co.jp/media/innovator/grok-bot-x/",
+      "description": "Grok BotのX連携は、Xアカウントを連携しなくても、Grok BotがXの公開投稿を検索・閲覧・監視できる機能です。2026年10月8日に、Grok Botの公式アカウントで発表されました。 とはいえ、「Xアカウン […]",
+      "publishedDate": "Wed, 14 Oct 2026 05:54:54 +0000",
+      "source": "WEEL",
+      "category": "tools",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/Grok-Bot-X_26010-1024x576.webp",
+      "language": "ja"
     },
     {
       "title": "ZOZO、独自データ×AIの新機能「似合うルーム」を提供開始。診断からバーチャル試着までを一括で",
@@ -88,6 +198,17 @@
       "category": "general",
       "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/GrokImagineImage.png",
       "language": "ja"
+    },
+    {
+      "title": "The EU’s next chapter in AI is agentic",
+      "titleJa": "AI における EU の次の章はエージェント的です",
+      "link": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+      "description": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
+      "publishedDate": "Wed, 14 Oct 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "llm",
+      "thumbnail": null,
+      "language": "en"
     },
     {
       "title": "Introducing Falcon ASR",
@@ -179,7 +300,7 @@
     },
     {
       "title": "Transformers now runs llama.cpp quants",
-      "titleJa": "Transformers now runs llama.cpp quants",
+      "titleJa": "Transformers は llama.cpp クォントを実行するようになりました",
       "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
       "description": "",
       "publishedDate": "Tue, 22 Sep 2026 00:00:00 GMT",
@@ -245,7 +366,7 @@
     },
     {
       "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
-      "titleJa": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "titleJa": "LFM2.5-24B-A2B を使用してデバイス上でプライベート エージェントを高速に実行",
       "link": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
       "description": "",
       "publishedDate": "Tue, 13 Oct 2026 17:05:48 GMT",
@@ -343,28 +464,6 @@
       "language": "ja"
     },
     {
-      "title": "ココナラ、Acrosstudioを子会社化。「AIカンパニー」を始動し、法人向けAIコンサル・AI開発事業に本格参入",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/coconala-acrosstudio-ai-company/",
-      "description": "ココナラは、AI実装型コンサルティングファームのAcrosstudioを子会社化し、法人向けのAI支援を担う「AIカンパニー」を始動しました。Acrosstudioを「AIカンパニー」の中核に据え、法人向けのAIコンサル […]",
-      "publishedDate": "Tue, 13 Oct 2026 05:07:20 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/coconala-acrosstudio-ai-company.png",
-      "language": "ja"
-    },
-    {
-      "title": "2026年デジタル化・AI導入補助金を解説！IT導入補助金との違い・採択のコツ",
-      "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/digitization-2026-dx/",
-      "description": "「AI導入の予算が下りない…」とお悩みの担当者様へ。最大450万円が支給される国の補助金が強力な味方になります。 2026年、旧「IT導入補助金」は「デジタル化・AI導入補助金」に刷新され、AIツールの対象要件や賃上げル […]",
-      "publishedDate": "Tue, 13 Oct 2026 02:05:23 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/09/2026DX.png",
-      "language": "ja"
-    },
-    {
       "title": "【EmbeddingGemma 2】スマホで動くGoogleのマルチモーダル埋め込みモデルの性能・使い方を徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/embeddinggemma-2/",
@@ -376,103 +475,37 @@
       "language": "ja"
     },
     {
-      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-      "titleJa": "アトラシアンと OpenAI がパートナーシップを拡大し、企業の知識を行動に移す",
-      "link": "https://openai.com/index/atlassian-partnership",
-      "description": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
-      "publishedDate": "Tue, 06 Oct 2026 16:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "How Jump Trading is scaling quant research with ChatGPT",
-      "titleJa": "Jump Trading が ChatGPT を使用してクオンツ調査をどのように拡張しているか",
-      "link": "https://openai.com/index/jump-trading",
-      "description": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
-      "publishedDate": "Tue, 06 Oct 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Sharing AI progress in mathematics",
-      "titleJa": "数学における AI の進歩を共有する",
-      "link": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-      "description": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
-      "publishedDate": "Tue, 06 Oct 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Advancing computer use with Ironclad",
-      "titleJa": "Ironclad によるコンピュータの利用の促進",
-      "link": "https://openai.com/index/advancing-computer-use-with-ironclad",
-      "description": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
-      "publishedDate": "Tue, 06 Oct 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "Making global data easier to explore",
-      "titleJa": "グローバル データの探索を容易にする",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
-      "description": "UN System Data Commons Data webpage",
-      "publishedDate": "Thu, 17 Sep 2026 20:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/data-commons.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "3 ways to prep for your next big race with Search",
-      "titleJa": "検索を使用して次の大きなレースに備える 3 つの方法",
-      "link": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
-      "description": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
-      "publishedDate": "Thu, 10 Sep 2026 16:00:00 +0000",
-      "source": "Google AI Blog",
-      "category": "general",
-      "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Race_Running_Tips.max-600x600.format-webp.webp",
-      "language": "en"
-    },
-    {
-      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
-      "titleJa": "Oracle が ChatGPT と Codex を使用して数日の作業を数分に短縮する方法",
-      "link": "https://openai.com/index/oracle",
-      "description": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
-      "publishedDate": "Thu, 08 Oct 2026 16:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
-    },
-    {
-      "title": "AIプログラム自動生成とは？おすすめツール比較・無料で使う方法を徹底解説",
+      "title": "XAI（説明可能なAI）とは？意味・代表的な手法・活用シーンをわかりやすく解説",
       "titleJa": null,
-      "link": "https://weel.co.jp/media/automatic-ai-program-generation/",
-      "description": "AIプログラム自動生成は、文章で指示するだけで生成AIがプログラムを書いてくれる仕組みです。GitHubの調査では、GitHub Copilotを使った開発者は、使わなかった開発者より同じタスクを55%速く完了したという […]",
-      "publishedDate": "Thu, 08 Oct 2026 13:25:30 +0000",
+      "link": "https://weel.co.jp/media/innovator/xai/",
+      "description": "XAI（Explainable AI）とは、AIモデルがどのような根拠でその判断や予測を導き出したのかを、人間が理解できる形で示す技術です。とはいえ、「AIの答えは合っていそうだけど、なぜそう判断したのかわからない」と感 […]",
+      "publishedDate": "Thu, 15 Oct 2026 05:30:43 +0000",
       "source": "WEEL",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Automatic-AI-Program-Generation_26010-1024x576.webp",
+      "thumbnail": "https://weel.co.jp/wp-content/uploads/XAI_26010-1024x576.webp",
       "language": "ja"
     },
     {
-      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
-      "titleJa": "Polo AI は、OpenAI を使用してクリエイティブなアイデアをキャンペーンに変換します",
-      "link": "https://openai.com/index/pollo-ai",
-      "description": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
-      "publishedDate": "Thu, 08 Oct 2026 12:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "llm",
-      "thumbnail": null,
-      "language": "en"
+      "title": "ChatGPTで家計簿をつける方法｜Financesも解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/chatgpt-kakeibo/",
+      "description": "「家計簿をつけても続かない」「入力した数字をどう見直せばいいかわからない」――そんな悩みには、ChatGPTを家計管理の補助に使う方法があります。日々の支出を自然な言葉で整理したり、月ごとの支出を分析したり、予算の見直し […]",
+      "publishedDate": "Thu, 15 Oct 2026 01:49:53 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/gptkakeibo.png",
+      "language": "ja"
+    },
+    {
+      "title": "「ChatGPT for Teens」とは？対象年齢・安全機能・保護者設定を解説",
+      "titleJa": null,
+      "link": "https://aismiley.co.jp/ai_news/what-is-chatgpt-for-teens/",
+      "description": "OpenAIは2026年8月18日（現地時間）、13〜17歳向けの新体験「ChatGPT for Teens」を発表しました。 対象年齢や自動判定の仕組みはどうなっているのか、通常版と何が違うのか、保護者はどんな設定がで […]",
+      "publishedDate": "Thu, 15 Oct 2026 01:49:49 +0000",
+      "source": "AIsmiley",
+      "category": "general",
+      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/08/gptforteens.png",
+      "language": "ja"
     },
     {
       "title": "Qdrantとは？Docker・Pythonでの使い方や料金をわかりやすく解説",
@@ -508,17 +541,6 @@
       "language": "ja"
     },
     {
-      "title": "Claude Dashboardsとは？話しかけるだけで社内データが生きたダッシュボードに！使い方・料金・活用シーンを徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/claude-dashboards/",
-      "description": "2026年10月9日、Anthropicがデータ基盤につなぐだけで更新され続けるダッシュボードを作れる「Claude Dashboards」をベータ公開しました！ 「今四半期の売上を地域別に見たい」と頼むだけで、Clau […]",
-      "publishedDate": "Sat, 10 Oct 2026 12:49:05 +0000",
-      "source": "WEEL",
-      "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Dashboards_26010-1024x576.webp",
-      "language": "ja"
-    },
-    {
       "title": "Geminiエージェントとは？Googleの業務用AI！使い方・料金・Claude選択まで徹底解説",
       "titleJa": null,
       "link": "https://weel.co.jp/media/tech/gemini-agent/",
@@ -530,25 +552,14 @@
       "language": "ja"
     },
     {
-      "title": "AI inside、AI-OCR中心から全社AI基盤へ進化する新しい「DX Suite」発表。2026年11月提供開始予定",
+      "title": "Windows上でAIエージェントの実行を安全に隔離する「Microsoft Execution Containers」（MXC）正式リリース。ファイルやネットワークなどの境界を柔軟にカスタマイズ",
       "titleJa": null,
-      "link": "https://aismiley.co.jp/ai_news/ai-inside-new-dx-suite/",
-      "description": "AI insideは、10月6日に開催した自社イベント「AI inside Conference （AIIC）2026」で新しい「DX Suite」をはじめとする新製品を発表しました。従来のAI-OCRを中心としたサービ […]",
-      "publishedDate": "Fri, 09 Oct 2026 09:17:06 +0000",
-      "source": "AIsmiley",
-      "category": "general",
-      "thumbnail": "https://aismiley.co.jp/wp-content/uploads/2026/10/ai-inside-dx-suite-main2.png",
-      "language": "ja"
-    },
-    {
-      "title": "Claude Motionとは？資料やグラフを短いアニメーション動画に変えるAnthropicの新機能を徹底解説",
-      "titleJa": null,
-      "link": "https://weel.co.jp/media/innovator/claude-motion/",
-      "description": "2026年10月、AnthropicからClaudeの新機能が発表されました。 今回登場した「Claude Motion」は、レポートやグラフ、製品の説明を短いアニメーションに変える新しい機能です。動画生成モデルを使わず […]",
-      "publishedDate": "Fri, 09 Oct 2026 05:38:10 +0000",
-      "source": "WEEL",
+      "link": "https://www.publickey1.jp/blog/26/windowsaimicrosoft_execution_containersmxc.html",
+      "description": "マイクロソフトはWindows 11上でAIエージェントを安全に動かすための隔離環境「Microsoft Execution Containers」（以下、MXC）の正式リリースを発表しました。 MXC is now GA on Windo...",
+      "publishedDate": "2026-10-14T15:57:19Z",
+      "source": "Publickey",
       "category": "tools",
-      "thumbnail": "https://weel.co.jp/wp-content/uploads/Claude-Motion_26010-1024x576.webp",
+      "thumbnail": "https://www.publickey1.jp/2026/mxc-ga01.png",
       "language": "ja"
     },
     {
@@ -703,17 +714,6 @@
       "source": "Publickey",
       "category": "tools",
       "thumbnail": "https://www.publickey1.jp/2026/jHszd6iu.jpg",
-      "language": "ja"
-    },
-    {
-      "title": "WindowsでLinuxコンテナの作成や実行を可能にする「WSL Containers」正式リリース。コマンドラインとAPIから利用可能",
-      "titleJa": null,
-      "link": "https://www.publickey1.jp/blog/26/windowslinuxwsl_containersapi.html",
-      "description": "マイクロソフトはWSL（Windows Subsystem for Linux）の新機能として、WindowsでLinuxコンテナの作成や実行を可能にする「WSL Containers」の正式リリースを発表しました（発表ブログ、アーキテクチ...",
-      "publishedDate": "2026-09-30T02:43:18Z",
-      "source": "Publickey",
-      "category": "tools",
-      "thumbnail": "https://www.publickey1.jp/2026/xYARDFsE.jpg",
       "language": "ja"
     }
   ]
