@@ -169,17 +169,18 @@
 <!-- ===== ダウンロード タブ ===== -->
 <div id="tab-dl" class="tab-pane active">
   <div class="kpi-row">
-    <div class="kpi blue"><div class="kpi-label">累計DL（全期間）</div><div class="kpi-value" id="kpi-total">-</div><div class="kpi-sub">GitHub 全リリース合計 ※日別不明</div></div>
+    <div class="kpi blue"><div class="kpi-label">累計DL（全期間）</div><div class="kpi-value" id="kpi-total">-</div><div class="kpi-sub" id="kpi-total-sub">GitHub 配布物の合計 ※日別不明</div></div>
     <div class="kpi purple"><div class="kpi-label">計測DL（推移あり）</div><div class="kpi-value" id="kpi-tracked">-</div><div class="kpi-sub" id="kpi-tracked-sub">計測開始後のみグラフ表示</div></div>
     <div class="kpi green"><div class="kpi-label">今月</div><div class="kpi-value" id="kpi-month">-</div><div class="kpi-sub" id="kpi-month-label">-</div></div>
     <div class="kpi yellow"><div class="kpi-label">今週</div><div class="kpi-value" id="kpi-week">-</div><div class="kpi-sub">直近7日</div></div>
     <div class="kpi blue"><div class="kpi-label">利用国数</div><div class="kpi-value" id="kpi-countries">-</div><div class="kpi-sub">ユニーク国</div></div>
-    <div class="kpi green"><div class="kpi-label">最人気Revit</div><div class="kpi-value" id="kpi-top-revit">-</div><div class="kpi-sub">最多DLバージョン</div></div>
+    <div class="kpi green"><div class="kpi-label" id="kpi-latest-label">最新版のDL</div><div class="kpi-value" id="kpi-latest">-</div><div class="kpi-sub" id="kpi-latest-sub">-</div></div>
+    <div class="kpi purple"><div class="kpi-label">DL率（アドインページ）</div><div class="kpi-value" id="kpi-dl-rate">-</div><div class="kpi-sub" id="kpi-dl-rate-sub">直近30日</div></div>
   </div>
 
   <div class="chart-full">
     <div class="chart-head">
-      <div class="chart-title" style="margin-bottom:0">DL推移 <span style="font-size:11px;font-weight:400;color:var(--muted);text-transform:none">— Supabase 計測分のみ（累計40件はGitHub集計のため日別データなし）</span></div>
+      <div class="chart-title" style="margin-bottom:0">DL推移 <span style="font-size:11px;font-weight:400;color:var(--muted);text-transform:none">— サイトのボタンから計測した分のみ（GitHub の累計は日別が分からないため含まない）。赤い点線はリリース日</span></div>
       <div class="chart-total"><span class="chart-total-label">期間合計</span> <strong id="dl-total-val">-</strong> 件</div>
     </div>
     <div class="period-btns" id="dl-period-btns">
@@ -199,8 +200,8 @@
   </div>
 
   <div class="chart-grid">
-    <div class="chart-card"><div class="chart-title">アドインバージョン別</div><div class="chart-wrap" style="height:220px"><canvas id="version-chart"></canvas></div></div>
-    <div class="chart-card"><div class="chart-title">Revitバージョン別</div><div class="chart-wrap" style="height:220px"><canvas id="revit-chart"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">アドインバージョン別（サイト計測）</div><div class="chart-wrap" style="height:220px"><canvas id="version-chart"></canvas></div></div>
+    <div class="chart-card"><div class="chart-title">リリース別（GitHub 累計）</div><div class="chart-wrap" style="height:220px"><canvas id="release-chart"></canvas></div></div>
     <div class="chart-card"><div class="chart-title">OS別</div><div class="chart-wrap" style="height:220px"><canvas id="dl-os-chart"></canvas></div></div>
     <div class="chart-card"><div class="chart-title">時間帯別（JST）</div><div class="chart-wrap" style="height:220px"><canvas id="dl-hour-chart"></canvas></div></div>
   </div>
@@ -246,7 +247,7 @@
 
   <div class="chart-full">
     <div class="chart-head">
-      <div class="chart-title" style="margin-bottom:0">PV推移</div>
+      <div class="chart-title" style="margin-bottom:0">PV推移 <span style="font-size:11px;font-weight:400;color:var(--muted);text-transform:none">— 赤い点線はアドインのリリース日</span></div>
       <div class="chart-total" id="pv-total-box"><span class="chart-total-label">期間合計</span> <strong id="pv-total-val">-</strong> PV</div>
     </div>
     <div class="period-btns" id="pv-period-btns">
@@ -280,6 +281,14 @@
         <tbody></tbody>
       </table>
     </div>
+  </div>
+
+  <div class="chart-full" style="margin-top:20px">
+    <div class="chart-title">マニュアル別の閲覧（機能ごと） <span style="font-size:11px;font-weight:400;color:var(--muted);text-transform:none">— どの機能に関心が集まっているか。閲覧0のページも表示</span></div>
+    <table class="data-table" id="pv-manual-table">
+      <thead><tr><th>#</th><th>機能</th><th>全期間</th><th>直近30日</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
   </div>
 
   <div class="chart-grid" style="margin-top:20px">
@@ -523,12 +532,26 @@ const PAGE_LABELS = {
   '/manual/excel-export.html': 'マニュアル: Excelエクスポート',
   '/manual/excel-import.html': 'マニュアル: Excelインポート',
   '/manual/room-tag.html': 'マニュアル: 室タグ',
-  '/manual/beam-top-color.html': 'マニュアル: 梁天端',
-  '/manual/beam-bottom-color.html': 'マニュアル: 梁底',
+  // 旧URL（beam-level-color.html へ転送するだけのページ）。同じ行にまとめる
+  '/manual/beam-top-color.html': 'マニュアル: 梁レベル色分け',
+  '/manual/beam-bottom-color.html': 'マニュアル: 梁レベル色分け',
   '/manual/filled-region.html': 'マニュアル: 塗り潰し',
   '/manual/fire-protection.html': 'マニュアル: 耐火被覆',
   '/manual/formwork-calculator.html': 'マニュアル: 型枠',
   '/manual/beam-level-color.html': 'マニュアル: 梁レベル色分け',
+  // ── v2.6（2026/10）で追加した機能 ──
+  '/manual/room-3d-color.html': 'マニュアル: 部屋3D色分け',
+  '/manual/fill-pattern-io.html': 'マニュアル: 塗潰しパターン入出力',
+  '/manual/parameter-cleanup.html': 'マニュアル: パラメータ整理',
+  '/manual/parameter-value-replace.html': 'マニュアル: パラメータ値の一括置換',
+  '/manual/parameter-value-move.html': 'マニュアル: パラメータ値の移動',
+  '/manual/filter-management.html': 'マニュアル: フィルタ整理',
+  '/manual/view-template-management.html': 'マニュアル: テンプレート整理',
+  '/manual/dwg-layer-transfer.html': 'マニュアル: DWGレイヤ表示設定の移行',
+  '/manual/generic-model-merge.html': 'マニュアル: 一般モデル化',
+  '/manual/auto-backup.html': 'マニュアル: 自動バックアップ',
+  // ── v2.7（2026/10）で追加した機能 ──
+  '/manual/realtime-render.html': 'マニュアル: リアルタイムレンダリング',
   '/analytics/dashboard.html': 'ダッシュボード',
   // ── ツールページ（未登録のため生パスで表示されていた）──
   '/pdf_compare.html': 'PDF比較ツール',
@@ -539,6 +562,7 @@ const PAGE_LABELS = {
   '/tips/revit-hatch-pattern.html': 'Tips: ハッチングパターンの作り方',
   '/tips/pdf-compare-guide.html': 'Tips: 図面PDFの比較',
   '/tips/pdf-to-excel-guide.html': 'Tips: 構造図PDF→Excel',
+  '/tips/revit-cloud-model-recovery.html': 'Tips: クラウドモデルの復旧',
   // ── 既に削除したページ（過去データの表示用）──
   '/family.html': '（削除済）ファミリ',
   '/manual.html': '（削除済）マニュアル一覧',
@@ -612,23 +636,108 @@ function ga4ToEvents(ga4Rows) {
 }
 
 // ---- GitHub Releases download count ----
+// 配布物のファイル名。これ以外（開発用の ares-spike-dev の zip や latest-build.txt など）は数えない。
+//   v2.6〜: 全バージョン共通のインストーラ 28Tools_Setup_v2.7.exe
+//   〜v2.1.2: Revit バージョン別の ZIP 28Tools_Revit2024_v2.1.2.zip / 28Tools_Revit2024.zip
+const DIST_ASSET_RE = /^28Tools_(Setup_v[\d.]+\.exe|Revit\d{4}(_v[\d.]+)?\.zip)$/;
+// 配布しているリポジトリ。サイトのボタンは 28tools-download を指すが、
+// アドイン開発リポジトリのリリース画面から直接落とす人もいるので両方を足す。
+const RELEASE_REPOS = ['28yu/28tools-download', '28yu/Revit-Add-ins'];
+
+// 'v2.7.2' と 'v2.10' を数字として比べる（文字列比較だと v2.10 < v2.7 になる）
+function compareVersion(a, b) {
+  const pa = String(a).replace(/^v/, '').split('.').map(Number);
+  const pb = String(b).replace(/^v/, '').split('.').map(Number);
+  for (let i = 0; i < Math.max(pa.length, pb.length); i++) {
+    const d = (pa[i] || 0) - (pb[i] || 0);
+    if (d) return d;
+  }
+  return 0;
+}
+
 async function fetchGitHubDL() {
   try {
-    const res = await fetch('https://api.github.com/repos/28yu/28tools-download/releases?per_page=100');
-    if (!res.ok) return null;
-    const releases = await res.json();
-    let total = 0;
-    const byRevit = {};
-    releases.forEach(rel => {
-      rel.assets.forEach(a => {
-        total += a.download_count;
-        const m = a.name.match(/Revit(\d{4})/);
-        if (m) byRevit[m[1]] = (byRevit[m[1]] || 0) + a.download_count;
+    const lists = await Promise.all(RELEASE_REPOS.map(repo =>
+      fetch(`https://api.github.com/repos/${repo}/releases?per_page=100`)
+        .then(r => r.ok ? r.json() : []).catch(() => [])));
+    let total = 0, installerTotal = 0, zipTotal = 0;
+    const byRevit = {};     // 旧 ZIP 時代（〜v2.1.2）の Revit バージョン別
+    const byRelease = {};   // リリース（タグ）別。v1.0.0-Revit2024 のような旧タグは v1.0.0 にまとめる
+    const releaseDates = {};// グラフに印を付けるリリース日（JST）
+    lists.flat().forEach(rel => {
+      if (!rel || rel.draft) return;
+      const tag = String(rel.tag_name || '').replace(/-Revit\d{4}$/, '');
+      if (/^v\d+(\.\d+)*$/.test(tag) && rel.published_at) {
+        const d = jstDateStr(rel.published_at);
+        if (!releaseDates[tag] || d < releaseDates[tag]) releaseDates[tag] = d;
+      }
+      (rel.assets || []).forEach(a => {
+        if (!DIST_ASSET_RE.test(a.name)) return;
+        const n = a.download_count || 0;
+        total += n;
+        byRelease[tag] = (byRelease[tag] || 0) + n;
+        if (/\.exe$/.test(a.name)) installerTotal += n;
+        else {
+          zipTotal += n;
+          const m = a.name.match(/Revit(\d{4})/);
+          if (m) byRevit[m[1]] = (byRevit[m[1]] || 0) + n;
+        }
       });
     });
-    return { total, byRevit };
+    // 最新版 = インストーラのあるリリースのうち一番新しいバージョン
+    const installerTags = Object.keys(releaseDates).filter(t => compareVersion(t, 'v2.6') >= 0).sort(compareVersion);
+    const latestTag = installerTags[installerTags.length - 1] || '';
+    const releases = Object.entries(releaseDates)
+      .map(([tag, date]) => ({ tag, date }))
+      .sort((x, y) => x.date < y.date ? -1 : 1);
+    return { total, installerTotal, zipTotal, byRevit, byRelease, latestTag,
+             latestCount: byRelease[latestTag] || 0, releases };
   } catch { return null; }
 }
+
+// ---- リリース日の縦線（PV推移・DL推移のグラフに重ねる）----
+// 日付ラベルの折れ線グラフで、リリース日（その日にデータが無ければ次のデータのある日）に
+// 点線と「v2.7」などの札を描く。公開の前後でアクセスがどう変わったかを見るため。
+const releaseMarkerPlugin = {
+  id: 'releaseMarkers',
+  afterDatasetsDraw(chart, args, opts) {
+    const rels = opts && opts.list;
+    const labels = chart.data.labels || [];
+    if (!rels || !rels.length || !labels.length) return;
+    const { ctx, chartArea: area, scales: { x } } = chart;
+    // 同じ位置に重なる札は1つにまとめる（同じ日に v2.7 / v2.7.1 / v2.7.2 を出した場合など）
+    const byIndex = {};
+    rels.forEach(r => {
+      if (r.date < labels[0] || r.date > labels[labels.length - 1]) return;
+      const i = labels.findIndex(l => l >= r.date);
+      if (i < 0) return;
+      (byIndex[i] = byIndex[i] || []).push(r.tag);
+    });
+    Object.values(byIndex).forEach(tags => tags.sort(compareVersion));
+    ctx.save();
+    // 近い日付の札どうしが重ならないよう、前の札に近いときは1段下げる
+    let lastPx = -Infinity, row = 0;
+    Object.entries(byIndex).sort((p, q) => Number(p[0]) - Number(q[0])).forEach(([i, tags]) => {
+      const px = x.getPixelForValue(Number(i));
+      row = (px - lastPx < 150) ? row + 1 : 0;
+      lastPx = px;
+      ctx.strokeStyle = 'rgba(248,113,113,.8)';
+      ctx.setLineDash([4, 3]);
+      ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(px, area.top); ctx.lineTo(px, area.bottom); ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = '#f87171';
+      ctx.font = '10px sans-serif';
+      ctx.textAlign = px > area.right - 60 ? 'right' : 'left';
+      const text = tags.length > 1 ? `${tags[0]}〜${tags[tags.length - 1].replace(/^v/, '')}` : tags[0];
+      ctx.fillText(text, px + (ctx.textAlign === 'left' ? 3 : -3), area.top + 10 + row * 12);
+    });
+    ctx.restore();
+  },
+};
+Chart.register(releaseMarkerPlugin);
+// options.plugins.releaseMarkers に渡す値（GitHub が取れなかったときは空で、線を描かない）
+function releaseMarkerList() { return { list: (ghStats && ghStats.releases) || [] }; }
 
 // ---- Supabase fetch ----
 // ⚠️ Supabase(PostgREST) は プロジェクト設定の「Max rows」（既定 1000）で
@@ -742,7 +851,7 @@ function renderTrendChart(canvasId, data, days, label, color) {
     backgroundColor: withAlpha(color, .12),
     fill: true, tension: 0.3,
     pointRadius: sorted.length > 60 ? 0 : 3,
-  }], { plugins: { legend: { display: false } } });
+  }], { plugins: { legend: { display: false }, releaseMarkers: releaseMarkerList() } });
 }
 
 function renderCountryTable(tableId, data, barColor) {
@@ -789,14 +898,23 @@ function renderDL(data) {
     monthPrefix.slice(0,4) + '年' + Number(monthPrefix.slice(5,7)) + '月';
   document.getElementById('kpi-countries').textContent =
     new Set(data.map(r => toCountryCode(r.country)).filter(Boolean)).size;
-  // Revit別は GitHub 集計を優先、なければ Supabase
-  if (ghStats && Object.keys(ghStats.byRevit).length) {
-    const topRevit = sortedEntries(ghStats.byRevit)[0];
-    document.getElementById('kpi-top-revit').textContent = topRevit ? topRevit[0] : '-';
-  } else {
-    const topRevit = sortedEntries(count(data, 'revit'))[0];
-    document.getElementById('kpi-top-revit').textContent = topRevit ? topRevit[0] : '-';
+  // 最新版のDL: GitHub の回数（反映が少し遅れる）と、サイトのボタンで計測した回数を並べる
+  //   ※ 以前の「最人気Revit」はインストーラ化（v2.6〜）で Revit バージョンが分からなくなったため廃止
+  if (ghStats && ghStats.latestTag) {
+    const tracked = data.filter(r => r.version === ghStats.latestTag).length;
+    document.getElementById('kpi-latest-label').textContent = '最新版 ' + ghStats.latestTag + ' のDL';
+    document.getElementById('kpi-latest').textContent = ghStats.latestCount.toLocaleString();
+    document.getElementById('kpi-latest-sub').textContent = `GitHub集計 / サイト計測 ${tracked}件`;
   }
+  if (ghStats) {
+    document.getElementById('kpi-total-sub').textContent =
+      `インストーラ ${ghStats.installerTotal.toLocaleString()} + 旧ZIP ${ghStats.zipTotal.toLocaleString()}（日別不明）`;
+  }
+  // DL率: アドインページを見た回数のうち、ダウンロードボタンが押された割合（直近30日・ボット除外）
+  const addinsPV = filterByDays(allPVReal, 30).filter(r => normalizePagePath(r.page) === '/addins.html').length;
+  const dl30 = filterByDays(data, 30).length;
+  document.getElementById('kpi-dl-rate').textContent = addinsPV ? (dl30 / addinsPV * 100).toFixed(1) + '%' : '-';
+  document.getElementById('kpi-dl-rate-sub').textContent = `直近30日: DL ${dl30} / 閲覧 ${addinsPV}`;
 
   renderTrendChart('trend-chart', data, activeDLPeriod, 'DL数', '#4f8ef7');
 
@@ -805,12 +923,14 @@ function renderDL(data) {
     data: verE.map(e=>e[1]), backgroundColor: PALETTE, borderWidth: 0,
   }], { plugins: { legend: { position: 'right', labels: { color: '#8892a4', font: { size: 11 } } } } });
 
-  // Revitバージョン別: GitHub累計データを優先使用
-  const revitSource = (ghStats && Object.keys(ghStats.byRevit).length) ? ghStats.byRevit : count(data, 'revit');
-  const revitE = sortedEntries(revitSource);
-  makeChart('revit-chart', 'bar', revitE.map(e=>'Revit '+e[0]), [{
-    data: revitE.map(e=>e[1]), backgroundColor: '#4f8ef7', borderRadius: 4,
-  }], { plugins: { legend: { display: false } } });
+  // リリース別（GitHub 累計）: 新しい順に左から。インストーラ（v2.6〜）と旧ZIPで色を分ける
+  const relE = ghStats ? Object.entries(ghStats.byRelease).sort((x, y) => compareVersion(y[0], x[0])) : [];
+  makeChart('release-chart', 'bar', relE.map(e => e[0]), [{
+    data: relE.map(e => e[1]),
+    backgroundColor: relE.map(e => compareVersion(e[0], 'v2.6') >= 0 ? '#4f8ef7' : '#8892a4'),
+    borderRadius: 4,
+  }], { plugins: { legend: { display: false },
+        tooltip: { callbacks: { afterLabel: c => compareVersion(c.label, 'v2.6') >= 0 ? 'インストーラ' : '旧ZIP（Revit別）' } } } });
 
   const osE = sortedEntries(count(data, 'os'));
   makeChart('dl-os-chart', 'doughnut', osE.map(e=>e[0]), [{
@@ -901,6 +1021,7 @@ function renderPV(data) {
   }
   const pvGrandTotal = Object.values(pageLabeled).reduce((s,v)=>s+v,0);
   renderRankTable('pv-page-table', sortedEntries(pageLabeled, 10), pvGrandTotal, 'green');
+  renderManualTable(pageLabeled, data);
 
   // X（Twitter）経由の訪問 KPI：Supabase referrer + GA4 source(t.co/x.com/twitter/utm_source=x) を合算
   const xSupa = data.filter(r => isXSource(r.referrer)).length;
@@ -989,6 +1110,37 @@ function renderPV(data) {
   });
 }
 
+// マニュアル（/manual/*）だけを機能ごとに並べる。PAGE_LABELS に登録したマニュアルは閲覧0でも行を出す
+// （新機能のマニュアルが読まれていないことに気付けるように）
+function renderManualTable(pageLabeled, data) {
+  const MANUAL_PREFIX = 'マニュアル: ';
+  const allTime = {};
+  Object.entries(PAGE_LABELS).forEach(([path, lbl]) => {
+    if (path.startsWith('/manual/')) allTime[lbl] = 0;
+  });
+  Object.entries(pageLabeled).forEach(([lbl, v]) => { if (lbl.startsWith(MANUAL_PREFIX)) allTime[lbl] = v; });
+  const recent = {};
+  filterByDays(data, 30).forEach(r => {
+    const lbl = pageLabel(r.page);
+    if (lbl.startsWith(MANUAL_PREFIX)) recent[lbl] = (recent[lbl] || 0) + 1;
+  });
+  const rows = Object.entries(allTime).sort((x, y) => (y[1] - x[1]) || ((recent[y[0]] || 0) - (recent[x[0]] || 0)));
+  const maxCnt = rows[0]?.[1] || 1;
+  const tbody = document.querySelector('#pv-manual-table tbody');
+  tbody.innerHTML = '';
+  rows.forEach(([lbl, cnt], i) => {
+    const barW = cnt ? Math.max(4, Math.round(cnt / maxCnt * 100)) : 0;
+    tbody.insertAdjacentHTML('beforeend', `
+      <tr>
+        <td style="color:var(--muted)">${i + 1}</td>
+        <td>${esc(lbl.slice(MANUAL_PREFIX.length))}</td>
+        <td style="font-weight:600">${cnt}</td>
+        <td style="color:var(--muted)">${recent[lbl] || 0}</td>
+        <td>${barW ? `<div class="mini-bar green" style="width:${barW}px"></div>` : ''}</td>
+      </tr>`);
+  });
+}
+
 function renderPVTrendChart(days) {
   if (days === 1) {
     // 1日選択時: 指定日（既定=当日）の 0〜23時(JST)で集計 — Supabaseデータのみ（GA4は日次のみ）
@@ -1035,7 +1187,7 @@ function renderPVTrendChart(days) {
     backgroundColor: 'rgba(52,211,153,.12)',
     fill: true, tension: 0.3,
     pointRadius: sorted.length > 60 ? 0 : 3,
-  }], { plugins: { legend: { display: false } } });
+  }], { plugins: { legend: { display: false }, releaseMarkers: releaseMarkerList() } });
 }
 
 // 推移チャートの「期間合計」表示を更新（PV / DL / ツール利用 共通）
@@ -1372,6 +1524,8 @@ async function init() {
       ]),
       fetchGitHubDL(),
     ]);
+    // 計測を始めたときの動作確認用の行（version='test'）は本物のダウンロードではないので除く
+    allDL = allDL.filter(r => r.version !== 'test');
     // ── 集計用の派生データを作る（PV の数え方の要）────────────────
     // (1) ツール操作イベント（page='/_event/*'）は「ページを見た」記録ではないので
     //     ページビューの集計からは外す。ツールタブ側だけで使う。
