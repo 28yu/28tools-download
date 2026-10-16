@@ -1,15 +1,15 @@
 name: X 自動投稿
 
 # Notion の「X 自動投稿キュー」で「承認」にチェックが入った投稿を、
-# 投稿予定の日時を過ぎたら1件ずつ X に投稿する。
-# 承認されていない投稿は投稿しない。詳細は scripts/x-post/post.mjs。
+# 無料の予約投稿サービス Buffer に投稿予定の日時で予約する（X への投稿は Buffer が行う）。
+# 承認されていない投稿は予約しない。詳細は scripts/x-post/post.mjs。
 on:
   schedule:
     - cron: '7 * * * *'   # 毎時7分（混雑する0分を避ける）
   workflow_dispatch:
     inputs:
       dry_run:
-        description: '1 にすると X へは送らず、対象と文字数だけ表示する'
+        description: '1 にすると Buffer へは送らず、対象と文字数だけ表示する'
         required: false
         default: '0'
 
@@ -29,13 +29,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Post approved queue item to X
+      - name: Schedule approved queue items on Buffer
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           X_QUEUE_DATA_SOURCE_ID: 82b41701-2e95-4beb-9025-c02b9784f9a7
-          X_API_KEY: ${{ secrets.X_API_KEY }}
-          X_API_SECRET: ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID }}
           DRY_RUN: ${{ github.event.inputs.dry_run || '0' }}
         run: node scripts/x-post/post.mjs

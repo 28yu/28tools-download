@@ -1830,25 +1830,33 @@ v2.7 公開の当日（2026/10/16）に、アドインの不具合修正版を v
 
 ### マニュアルのスクショ（Revit Peeler 方式）
 「どこをクリックすると何ができるか」を**画面のスクショ**で見せ、文章は最小限にする。
+参考にした Revit Peeler（revitpeeler.com）は1記事 約360字・画像4枚で、**1手順＝1〜2文＋スクショ1枚＋画像の下に操作内容の短い説明**という書き方。
 - 画像はアドイン側 `Docs/Features/images/<機能ID>/` に置き、MD に `![説明](./images/<機能ID>/01-copy.png)` と書く
 - `inject.mjs` が焼き込み時に画像をサイト側 `images/manual/` へコピーし、`<figure class="manual-shot">`（説明文つき）に変換する
 - **画像がまだ無い枠は焼き込み時に自動で外す**（壊れた画像や「準備中」を出さない）。先に枠だけ書いておける
 - 撮り方・撮影リストはアドイン側 `Docs/Features/images/README.md`
 - `build-manuals.yml` は `images/manual/` もコミットする
 
-### X 自動投稿（運営者は確認するだけ）
+### X 自動投稿（運営者は確認するだけ・無料）
+X API は新規登録だと従量課金（無料枠なし）のため、**無料の予約投稿サービス Buffer を経由**する。X への投稿そのものは Buffer が行う。
+
 | 役割 | 担当 |
 |---|---|
 | 下書き作成 | Claude（定期実行の Claude セッション）が Notion の「X 自動投稿キュー」に追加 |
 | 確認 | 運営者が Notion で本文を読み、**「承認」にチェック** |
-| 投稿 | `.github/workflows/x-post.yml`（毎時7分）→ `scripts/x-post/post.mjs` が X API で投稿し、投稿URLを Notion に書き戻す |
+| 予約 | `.github/workflows/x-post.yml`（毎時7分）→ `scripts/x-post/post.mjs` が承認済みを Buffer に予約（状態=予約済み） |
+| 投稿 | Buffer が投稿予定の日時に X へ投稿。スクリプトが結果を確認し、状態=投稿済み・投稿URLを Notion に書き戻す |
 
-- キュー: Notion「28tools 開発ハブ」配下「X 自動投稿キュー」（data source `82b41701-2e95-4beb-9025-c02b9784f9a7`）
-- 安全策: 承認なしは投稿しない／1回1件まで／投稿前に「処理中」を書いて二重投稿を防ぐ／280（X換算）超えはエラー
-- Secrets: `NOTION_TOKEN`（Notion の内部インテグレーション。キューの DB に接続を許可すること）、
-  `X_API_KEY` / `X_API_SECRET` / `X_ACCESS_TOKEN` / `X_ACCESS_TOKEN_SECRET`（X Developer の App。**Read and write** 権限で発行）
-- Secrets が無いうちは何もせず正常終了する。手動実行で `dry_run=1` にすると、X へ送らず対象と文字数だけ表示する
-- ⚠️ X API は従量課金（2026 時点。新規の無料枠なし。リンク付き投稿は1件あたりの単価が高い）。金額は X の料金ページで確認
+- キュー: Notion「28tools 開発ハブ」配下「X 自動投稿キュー」（data source `82b41701-2e95-4beb-9025-c02b9784f9a7`）。
+  状態は 下書き → 予約済み → 投稿済み（失敗時はエラー）。`Buffer ID` 列は自動で入る
+- Buffer API: GraphQL `https://api.buffer.com`（`Authorization: Bearer <APIキー>`）。`createPost`（`mode: customScheduled` ＋ `dueAt`）で予約、`post(input:{id})` の `status` / `externalLink` で結果確認。
+  クエリは公開スキーマ（認証なしの introspection で取得可）に対して検証済み（2026/10）
+- 安全策: 承認なしは予約しない／予約前に「処理中」を書いて二重予約を防ぐ／予定を過ぎてから承認されたものは「すぐ投稿」で1回1件まで／280（X換算）超えはエラー／Buffer の予約上限に当たったら下書きに戻して次回再挑戦
+- Secrets: `NOTION_TOKEN`（Notion の内部インテグレーション。キューの DB に接続を許可）、`BUFFER_API_KEY`。
+  `BUFFER_CHANNEL_ID` は任意（未設定なら Buffer に連携した X のチャンネルを自動で探す。X が2つ以上あるときは必須）
+- Secrets が無いうちは何もせず正常終了する。手動実行で `dry_run=1` にすると、Buffer へ送らず対象と文字数だけ表示する
+- ⚠️ Buffer 無料プランの上限（同時に予約できる数・月間 API リクエスト数）の範囲で使う。Buffer API は必要なときだけ呼ぶ実装にしてある
+- この開発環境から Buffer に接続するには、環境のネットワーク設定で `api.buffer.com` / `developers.buffer.com` の許可が必要（2026/10 に許可済み）。Node の fetch はプロキシを通らないので、手元の確認は curl で行う
 
 ### 再申請の目安
 スクショを主要マニュアルに入れ、X 経由で訪問が増えてきてから（最低 2〜4 週間後）。
