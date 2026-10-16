@@ -29,6 +29,9 @@ exclude:
   - marketing/
   - promotion/
 
+  # SNS 共有用画像 (OGP) を作るときの下書きページ。サイトからはリンクされていない
+  - ogp-template.html
+
   # CI 用スクリプト (サイトからは参照されない)
   - scripts/
 

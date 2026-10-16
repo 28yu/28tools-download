@@ -1768,3 +1768,29 @@ CSS は `css/manual.css` 末尾の `.tips-figure`。
 
 公開の段取りは v2.6 と同じ（下書きリリース → 実機確認 → 両リポジトリで Publish → サイトを `claude/*` へ push）。
 サイトの変更は公開まで `release-prep/v2.7` ブランチ（自動マージ対象外）に退避していた。
+
+---
+
+## 2026/10 セッション — アナリティクスをインストーラ化・新機能に合わせて更新
+
+`analytics/dashboard.html` を v2.6〜v2.7.2 の変化に追従させた。
+
+| 対応 | 内容 |
+|---|---|
+| ダウンロード記録の確認 | インストーラでは `revit` が null になるが、Worker は受け付けて記録される（2026-10-16 に v2.7.2 で実機確認） |
+| GitHub の DL 集計 | 配布物（`28Tools_Setup_v*.exe` と旧 `28Tools_Revit*.zip`）だけを数える `DIST_ASSET_RE`。開発用の `ares-spike-dev` などは除外。**28tools-download と Revit-Add-ins の両方**のリリースを合算 |
+| KPI | 「最人気Revit」→「最新版 vX のDL」（GitHub 集計＋サイト計測）。「DL率（アドインページ）」＝直近30日の DL ÷ `/addins.html` の閲覧（ボット除外）を追加 |
+| グラフ | 「Revitバージョン別」→「リリース別（GitHub 累計）」。インストーラ（v2.6〜）は青、旧ZIPは灰色 |
+| リリース日の縦線 | PV推移・DL推移の折れ線に赤い点線（`releaseMarkerPlugin`）。日付は GitHub の `published_at`（JST）。近い日付の札は段をずらす |
+| マニュアル別の閲覧 | PV タブに機能ごとの表（全期間／直近30日）。`PAGE_LABELS` の `/manual/*` は閲覧0でも行を出す |
+| ページ名 | v2.6/v2.7 のマニュアル11ページと Tips「クラウドモデルの復旧」を `PAGE_LABELS` に追加。旧URLの梁天端/梁下端は「梁レベル色分け」にまとめた |
+| `_config.yml` | `ogp-template.html`（OGP 画像用の下書き）を配信対象から除外 |
+
+⚠️ **新しいマニュアル・ページを追加したら `PAGE_LABELS` にも登録する**（登録しないとランキングで生のパス表示になり、マニュアル別の表にも出ない）。マニュアルは `'マニュアル: 機能名'` の形にすること（表はこの接頭辞で拾う）。
+
+⚠️ **リリースを出したら確認すること**: 最新版の KPI は「v2.6 以降でいちばん新しいタグ」を自動で選ぶので変更不要。ただし配布ファイル名を変える場合は `DIST_ASSET_RE` も直す。
+
+**検証のしかた（Claude 環境）**: この環境からは Supabase と cdn.jsdelivr.net に直接つながらない。Playwright で
+Supabase の応答を手元の JSON に、Chart.js を `npm pack chart.js@4` したファイルに差し替えて表示を確認した（GitHub API はつながる）。
+
+`downloads` の id=1（version=`test`、2026-05-31）は計測開始時のテスト行。ダッシュボードの読み込み時に除外している（DB からは消していない）。
