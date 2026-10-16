@@ -1,0 +1,41 @@
+name: X 自動投稿
+
+# Notion の「X 自動投稿キュー」で「承認」にチェックが入った投稿を、
+# 投稿予定の日時を過ぎたら1件ずつ X に投稿する。
+# 承認されていない投稿は投稿しない。詳細は scripts/x-post/post.mjs。
+on:
+  schedule:
+    - cron: '7 * * * *'   # 毎時7分（混雑する0分を避ける）
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '1 にすると X へは送らず、対象と文字数だけ表示する'
+        required: false
+        default: '0'
+
+concurrency:
+  group: x-post
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Post approved queue item to X
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          X_QUEUE_DATA_SOURCE_ID: 82b41701-2e95-4beb-9025-c02b9784f9a7
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || '0' }}
+        run: node scripts/x-post/post.mjs

@@ -47,8 +47,9 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          if [ -n "$(git status --porcelain manual/)" ]; then
+          if [ -n "$(git status --porcelain manual/ images/manual/)" ]; then
             git add manual/*.html
+            if [ -d images/manual ]; then git add images/manual/; fi
             git commit -m "chore(manuals): refresh baked manual content from Revit-Add-ins [skip ci]"
             git push
           else

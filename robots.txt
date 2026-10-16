@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+# 社内用の解析画面（一般の閲覧者向けではないため検索対象から外す）
+Disallow: /analytics/
 
 Sitemap: https://28tools.com/sitemap.xml
