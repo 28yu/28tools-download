@@ -393,7 +393,7 @@ PRが作成されると、Netlifyが自動でプレビュー環境を構築し�
 
 **対応バージョン**: Revit 2021, 2022, 2023, 2024, 2025, 2026（全バージョン利用可能）
 
-**現在のバージョン**: v2.6（2026/10〜。配布物は全バージョン共通のインストーラー `28Tools_Setup_v2.6.exe` 1 本）
+**現在のバージョン**: v2.7（2026/10〜。配布物は全バージョン共通のインストーラー `28Tools_Setup_v2.7.exe` 1 本）
 
 **配布形式（v2.6〜）**: Inno Setup で作った**署名なし**のインストーラー 1 本で
 Revit 2021〜2026 をまとめて扱う（アドイン開発リポジトリの `Installer/28Tools.iss`）。
@@ -1751,3 +1751,19 @@ CSS は `css/manual.css` 末尾の `.tips-figure`。
 - 中国語の「署名なしのアドイン」ダイアログ名は実物未確認（英語表記を併記して補っている）
 - `index-addins-badge`（6機能）・`.version-tab` CSS・`initVersionTabs()` は未使用のまま残っている
 
+
+---
+
+## 2026/10 セッション — Revit アドイン v2.7 公開（リアルタイムレンダリング）
+
+| 対応 | 内容 |
+|---|---|
+| 新機能ページ | `manual/realtime-render.html`（FEATURE_ID `RealtimeRender`、本文は焼き込み） |
+| カード | `addins.html` の「一般モデル化」の次（リボンのパネル順＝モデル → レンダリング → データ）に NEW 付きで追加。翻訳は `translations.featuresV26` 内の `feature-realtime-render-*` / `manual-realtime-render-*` |
+| アイコン | `images/revit-icons/realtime_render.png`（アドイン側 `Resources/Icons/realtime_render.png` と同じ 96px） |
+| 機能数 | 23 → **24**（`index.html` / `addins.html` の meta・JSON-LD、`index-category-addon-desc`、`install-step4-available`） |
+| トップ | 新着に `index-news-v27`（リンク先はマニュアルページ） |
+| sitemap | `manual/realtime-render.html` を追加 |
+
+公開の段取りは v2.6 と同じ（下書きリリース → 実機確認 → 両リポジトリで Publish → サイトを `claude/*` へ push）。
+サイトの変更は公開まで `release-prep/v2.7` ブランチ（自動マージ対象外）に退避していた。
