@@ -879,9 +879,9 @@ function initTranslations() {
             zh: '以兼容 Revit 2021–2026 全版本的免费插件为核心，同时提供填充图案创建工具、PDF 比较工具以及 BIM 与 AI 行业新闻，以简洁易用的方式，只提供现场真正需要的功能。'
         },
         'index-category-addon-desc': {
-            ja: 'Revit 2021-2026 対応の無料アドイン。23の便利機能を、インストーラーひとつで導入できます。',
-            en: 'Free add-ins for Revit 2021-2026. Install all 23 handy features with a single installer.',
-            zh: '兼容Revit 2021-2026的免费插件。只需一个安装程序即可安装全部23个便捷功能。'
+            ja: 'Revit 2021-2026 対応の無料アドイン。24の便利機能を、インストーラーひとつで導入できます。',
+            en: 'Free add-ins for Revit 2021-2026. Install all 24 handy features with a single installer.',
+            zh: '兼容Revit 2021-2026的免费插件。只需一个安装程序即可安装全部24个便捷功能。'
         },
         'index-category-hatch-desc': {
             ja: 'Revit/AutoCAD用のハッチングパターンファイル（.pat）を簡単作成。6種類のパターンに対応。',
@@ -922,6 +922,11 @@ function initTranslations() {
             ja: '新着・おすすめ',
             en: 'News & Featured',
             zh: '最新动态'
+        },
+        'index-news-v27': {
+            ja: '28 Tools v2.7 リリース — 新機能「リアルタイムレンダリング」を追加（全24機能）',
+            en: '28 Tools v2.7 Released — New Real-time Rendering feature (24 features in total)',
+            zh: '28 Tools v2.7 发布 — 新增“实时渲染”功能（共24项功能）'
         },
         'index-news-v26': {
             ja: '28 Tools v2.6 リリース — 新機能10個を追加、インストーラーで簡単インストール（全23機能）',
@@ -1115,9 +1120,9 @@ function initTranslations() {
             zh: '功能区中显示"28 Tools"选项卡'
         },
         'install-step4-available': {
-            ja: '全23機能が利用可能',
-            en: 'All 23 features available',
-            zh: '所有 23 个功能均可使用'
+            ja: '全24機能が利用可能',
+            en: 'All 24 features available',
+            zh: '所有 24 个功能均可使用'
         },
         'install-update-badge': {
             ja: '更新',
@@ -9537,6 +9542,26 @@ translations.recoveryArticle2 = {
             ja: '3Dビューに見えている複数要素の形状を1つの一般モデルにまとめる',
             en: 'Combine the shapes of elements visible in a 3D view into one generic model',
             zh: '将3D视图中可见的多个图元形状合并为一个常规模型'
+        },
+        'feature-realtime-render-title': {
+            ja: 'リアルタイムレンダリング',
+            en: 'Real-time Rendering',
+            zh: '实时渲染'
+        },
+        'feature-realtime-render-desc': {
+            ja: '3DビューをGPUレイトレーシングで描画し、歩き回りながら確認・書き出し',
+            en: 'Render 3D views with GPU ray tracing, walk through them and export images',
+            zh: '使用GPU光线追踪渲染3D视图，可边漫游边查看并导出'
+        },
+        'manual-realtime-render-title': {
+            ja: 'リアルタイムレンダリング',
+            en: 'Real-time Rendering',
+            zh: '实时渲染'
+        },
+        'manual-realtime-render-subtitle': {
+            ja: '3DビューをGPUレイトレーシングで描画し、歩き回りながら確認・書き出し',
+            en: 'Render 3D views with GPU ray tracing, walk through them and export images',
+            zh: '使用GPU光线追踪渲染3D视图，可边漫游边查看并导出'
         },
         'feature-parameter-cleanup-title': {
             ja: 'パラメータ整理',
