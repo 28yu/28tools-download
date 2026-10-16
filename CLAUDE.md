@@ -1764,6 +1764,7 @@ CSS は `css/manual.css` 末尾の `.tips-figure`。
 | 機能数 | 23 → **24**（`index.html` / `addins.html` の meta・JSON-LD、`index-category-addon-desc`、`install-step4-available`） |
 | トップ | 新着に `index-news-v27`（リンク先はマニュアルページ） |
 | sitemap | `manual/realtime-render.html` を追加 |
+| リボン画像 | 「モデル」と「Excel連携」の間に「レンダリング」パネルを合成（1746→1830px。ボタン名は IPA Pゴシック 12px で描画）。キャッシュ対策で `?v=20261016` を付けた |
 
 公開の段取りは v2.6 と同じ（下書きリリース → 実機確認 → 両リポジトリで Publish → サイトを `claude/*` へ push）。
 サイトの変更は公開まで `release-prep/v2.7` ブランチ（自動マージ対象外）に退避していた。
