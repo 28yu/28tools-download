@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-15T02:27:49.861703",
+  "lastUpdated": "2026-10-16T02:22:07.427908",
   "articles": [
     {
       "title": "【大林組×Beyont】BIMの問い合わせ対応をAIエージェントで効率化｜建設DXをAIで加速",
@@ -102,6 +102,16 @@
       "language": "ja"
     },
     {
+      "title": "奥村組とイクシス、スマホで断熱材の厚さ不足を可視化する「でこぼこスキャン」を共同開発",
+      "link": "https://news.build-app.jp/article/43224/",
+      "description": "奥村組（本社：大阪市阿倍野区）とイクシス（本社：神奈川県川崎市）は、吹付け断熱材の表面にある凸凹を可視化するシステム「でこぼこスキャンTM」...",
+      "publishedDate": "Thu, 15 Oct 2026 03:00:00 +0000",
+      "source": "BuildApp News",
+      "category": "architecture",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/dekoboko-scan-lidar-130x64.png",
+      "language": "ja"
+    },
+    {
       "title": "国土交通省、公共事業のピュア型ＣＭ方式の活用実態調査を公表、導入実績は建築・土木とも増加",
       "link": "https://news.build-app.jp/article/43219/",
       "description": "国土交通省は2026年9月30日、「公共事業におけるピュア型ＣＭ方式活用実態調査（令和８年度）」の結果を発表しました。 調査には、一般社団法...",
@@ -172,16 +182,6 @@
       "language": "ja"
     },
     {
-      "title": "関内駅前港町地区第一種市街地再開発事業とは｜概要やメリットを解説",
-      "link": "https://news.build-app.jp/article/43183/",
-      "description": "トレンドワード：関内駅前港町地区第一種市街地再開発事業 横浜市の関内駅前では、駅周辺の都市機能を更新する「関内駅前第一種市街地再開発事業」が...",
-      "publishedDate": "Mon, 12 Oct 2026 23:00:00 +0000",
-      "source": "BuildApp News",
-      "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/2acc21ee446f6e14784795e4e853e996-130x82.png",
-      "language": "ja"
-    },
-    {
       "title": "無料のオープンソース3D CAD「SolidCraft」が話題。Fusion風でAI操作にも対応",
       "link": "https://axconstdx.com/2026/10/13/%e7%84%a1%e6%96%99%e3%81%ae%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%82%bd%e3%83%bc%e3%82%b93d-cad%e3%80%8csolidcraft%e3%80%8d%e3%81%8c%e8%a9%b1%e9%a1%8c%e3%80%82fusion%e9%a2%a8%e3%81%a7ai%e6%93%8d/",
       "description": "SolidCraftは、個人開発者のbherbruck氏が2026年10月にGitHubで公開した、無料のオープンソース3D CADです。Rustで実装され、Autodesk Fusionに近い操作感を目指しています。デ […]",
@@ -192,13 +192,13 @@
       "language": "ja"
     },
     {
-      "title": "【建設・建築DX EXPO 2026夏 東京】AIで建設業務を支援、株式会社Arentを取材",
-      "link": "https://news.build-app.jp/article/42945/",
-      "description": "「建設・建築DX EXPO 2026 夏 東京」の株式会社Arentブースでは、設計、施工、維持管理に関わるSaaSプロダクトが紹介されまし...",
-      "publishedDate": "Mon, 12 Oct 2026 22:00:00 +0000",
+      "title": "西松建設がXR施工管理支援システムを更新、AR表示誤差を30cm以内から15cm以内に縮小",
+      "link": "https://news.build-app.jp/article/43271/",
+      "description": "西松建設は2026年10月15日、株式会社ホロラボ（東京都品川区、代表取締役CEO：中村 薫）と共同で、施工可視化・ドローン操縦支援システム...",
+      "publishedDate": "Fri, 16 Oct 2026 01:00:00 +0000",
       "source": "BuildApp News",
       "category": "architecture",
-      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/Arent_DX-EXPO-130x82.png",
+      "thumbnail": "https://news.build-app.jp/wp/wp-content/uploads/2026/10/xr-drone-cim-130x67.png",
       "language": "ja"
     }
   ]
