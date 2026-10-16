@@ -1378,6 +1378,12 @@ Claude Code on the web（remote_mobile セッション）で **Notion への書�
 - ⚠️ **Bash は承認不要で通る**。壊れた承認カードを避けたいファイル書き込み（特に `.claude/settings.json`）は
   `Write` ツールではなく **Bash の heredoc** で書くと確実。
 
+### ⚠️ 2つのリポジトリを1つのセッションで使うと、この許可設定は読まれない（2026/10 判明）
+`.claude/settings.json` の `permissions.allow` は、**リポジトリが1つだけのセッション**でしか読まれない
+（28tools-download と Revit-Add-ins を両方つないだセッションでは、Notion 書き込みのたびに確認が出る）。
+- 対策①: 2リポジトリのセッションでは、入力欄の横のモード切替で **Auto** を選ぶ（組織で許可されている場合のみ表示）
+- 対策②: どちらか片方だけのセッションで作業する。同じ許可は **Revit-Add-ins の `.claude/settings.json` にも追加済み**
+
 ### ✅ 解消済み（2026/08 実機確認）
 
 `.claude/settings.json` の事前許可がコミットされている状態で、リモートセッションから
