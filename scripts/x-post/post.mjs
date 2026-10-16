@@ -219,7 +219,7 @@ async function scheduleApproved() {
     }
     if (result.__typename === 'PostActionSuccess') {
       await updatePage(page.id, { status: '予約済み', error: '', bufferId: result.post.id });
-      console.log(`  → Buffer に${result.immediate ? 'すぐ投稿で' : ''}予約しました (${result.post.id})`);
+      console.log(`  → Buffer に${result.immediate ? 'すぐ投稿で' : ''}予約しました (${result.post.id} / Buffer 側の投稿予定 ${result.post.dueAt || '不明'} / 状態 ${result.post.status})`);
       if (result.immediate) immediateUsed = true;
     } else if (/LimitReached/.test(result.__typename)) {
       await updatePage(page.id, { status: '下書き', error: `Buffer の予約数の上限です。次の実行で再挑戦します（${result.message}）` });
@@ -244,7 +244,7 @@ async function syncResults() {
       if (!DRY_RUN) await updatePage(page.id, { status: 'エラー', error: 'Buffer に予約が見つかりません（Buffer 側で削除された可能性）' });
       continue;
     }
-    console.log(`- ${id}: ${post.status}`);
+    console.log(`- ${id}: ${post.status}${post.sentAt ? ` (送信 ${post.sentAt})` : ''}`);
     if (DRY_RUN) continue;
     if (post.status === 'sent') {
       await updatePage(page.id, { status: '投稿済み', url: post.externalLink || null, error: '' });
