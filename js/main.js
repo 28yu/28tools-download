@@ -10,7 +10,7 @@ const INCLUDES_VERSION = '20260916-1';
 
 // グローバル変数
 let currentLanguage = 'ja';
-window.currentLanguage = currentLanguage; // news.jsから参照できるようにグローバル公開
+window.currentLanguage = currentLanguage; // 各ツールのJSから参照できるようにグローバル公開
 const translations = {};
 
 // ========================================
@@ -758,11 +758,6 @@ function initTranslations() {
             en: 'Meeting Minutes',
             zh: '会议记录'
         },
-        'index-tab-knowledge': {
-            ja: 'BIMニュース',
-            en: 'BIM News',
-            zh: 'BIM新闻'
-        },
         'index-addins-title': {
             ja: 'アドイン',
             en: 'Add-ins',
@@ -843,26 +838,6 @@ function initTranslations() {
             en: 'Go to Pattern Creator →',
             zh: '前往图案创建工具 →'
         },
-        'index-knowledge-title': {
-            ja: 'BIMニュース',
-            en: 'BIM News',
-            zh: 'BIM新闻'
-        },
-        'index-knowledge-badge': {
-            ja: 'BIM業界ニュース 利用可能',
-            en: 'BIM Industry News Available',
-            zh: 'BIM行业新闻可用'
-        },
-        'index-knowledge-desc': {
-            ja: 'BIM・Revit・建築業界の最新ニュースを自動収集。毎日更新されます。',
-            en: 'Auto-collected latest news from BIM, Revit & Architecture industry. Updated daily.',
-            zh: '自动收集BIM、Revit和建筑行业的最新新闻。每天更新。'
-        },
-        'index-knowledge-action': {
-            ja: 'ニュース一覧へ →',
-            en: 'View News →',
-            zh: '查看新闻 →'
-        },
         'index-overview-title': {
             ja: '28 Tools について',
             en: 'About 28 Tools',
@@ -874,9 +849,9 @@ function initTranslations() {
             zh: '28 Tools 是面向使用 BIM 和 Revit 的建筑专业人员的工作支持平台。'
         },
         'index-overview-desc-2': {
-            ja: 'Revit 2021〜2026 全バージョン対応の無料アドインを中心に、ハッチングパターン作成ツール、PDF 比較ツール、BIM・AI 業界ニュースなどを公開。現場で本当に必要な機能だけを、シンプルに使える形で提供します。',
-            en: 'Centered on free add-ins compatible with all Revit versions (2021–2026), we also offer a hatching pattern creator, a PDF comparison tool, and BIM & AI industry news — delivering only what you truly need on site, in a simple, easy-to-use form.',
-            zh: '以兼容 Revit 2021–2026 全版本的免费插件为核心，同时提供填充图案创建工具、PDF 比较工具以及 BIM 与 AI 行业新闻，以简洁易用的方式，只提供现场真正需要的功能。'
+            ja: 'Revit 2021〜2026 全バージョン対応の無料アドインを中心に、ハッチングパターン作成ツール、PDF 比較ツール、構造図の Excel 化、AI 議事録作成などを公開。現場で本当に必要な機能だけを、シンプルに使える形で提供します。',
+            en: 'Centered on free add-ins compatible with all Revit versions (2021–2026), we also offer a hatching pattern creator, a PDF comparison tool, structural drawing to Excel conversion, and AI meeting minutes — delivering only what you truly need on site, in a simple, easy-to-use form.',
+            zh: '以兼容 Revit 2021–2026 全版本的免费插件为核心，同时提供填充图案创建工具、PDF 比较工具、结构图转 Excel 以及 AI 会议记录生成，以简洁易用的方式，只提供现场真正需要的功能。'
         },
         'index-category-addon-desc': {
             ja: 'Revit 2021-2026 対応の無料アドイン。24の便利機能を、インストーラーひとつで導入できます。',
@@ -902,21 +877,6 @@ function initTranslations() {
             ja: '打合せ音声と資料から、AI が議事録を自動作成。文字起こしはブラウザ完結、高精度版は無料 Gemini キー対応。',
             en: 'AI auto-generates meeting minutes from audio and materials. Transcription runs in-browser; high-accuracy mode uses a free Gemini key.',
             zh: '从会议音频和资料中，AI自动生成会议记录。转写在浏览器内完成，高精度版支持免费Gemini密钥。'
-        },
-        'index-category-news-desc': {
-            ja: 'BIM・Revit・建築業界の最新ニュースを自動収集。業界トレンドを毎日チェック。（準備中）',
-            en: 'Auto-collect the latest news from BIM, Revit, and architecture industries. Check industry trends daily. (Coming Soon)',
-            zh: '自动收集BIM、Revit和建筑行业的最新新闻。每天查看行业趋势。（即将推出）'
-        },
-        'index-tab-ai-news': {
-            ja: 'AIニュース',
-            en: 'AI News',
-            zh: 'AI新闻'
-        },
-        'index-category-ai-news-desc': {
-            ja: 'AI・機械学習・LLMの最新ニュースを自動収集。AIトレンドを毎日チェック。',
-            en: 'Auto-collect the latest AI, ML & LLM news. Check AI trends daily.',
-            zh: '自动收集AI、机器学习和LLM的最新新闻。每天查看AI趋势。'
         },
         'index-news-title': {
             ja: '新着・おすすめ',
@@ -952,11 +912,6 @@ function initTranslations() {
             ja: 'PDF 比較ツール 改善 — 保存PDFを高画質化、差分プレビューを拡大・移動できるように',
             en: 'PDF Compare Tool Improved — Higher-quality exported PDF and zoom/pan on the diff preview',
             zh: 'PDF比较工具改进 — 提升导出PDF画质，差异预览支持缩放与拖动'
-        },
-        'index-news-ai-news': {
-            ja: 'AIニュースページ 公開 — AI・LLMの最新トレンドを毎日配信',
-            en: 'AI News Page Launched — Daily AI & LLM trend updates',
-            zh: 'AI新闻页面上线 — 每日AI与LLM最新趋势'
         },
         'index-news-v2': {
             ja: '28 Tools v2.0 リリース - 新機能追加・Revit 2021~2026 対応',
@@ -7254,143 +7209,6 @@ translations.filledRegion = {
         }
     };
 
-    // BIM業界ニュースページ
-    translations.newsPage = {
-        'news-breadcrumb': {
-            ja: 'BIM業界ニュース',
-            en: 'BIM Industry News',
-            zh: 'BIM行业新闻'
-        },
-        'news-title': {
-            ja: 'BIM業界ニュース',
-            en: 'BIM Industry News',
-            zh: 'BIM行业新闻'
-        },
-        'news-subtitle': {
-            ja: '最新のBIM・Revit・建築業界情報',
-            en: 'Latest BIM, Revit & Architecture News',
-            zh: '最新的BIM、Revit和建筑行业信息'
-        },
-        'news-update-label': {
-            ja: '最終更新:',
-            en: 'Last Updated:',
-            zh: '最后更新:'
-        },
-        'news-update-note': {
-            ja: '（毎日自動更新）',
-            en: '(Auto-updated daily)',
-            zh: '（每天自动更新）'
-        },
-        'news-filter-all': {
-            ja: 'すべて',
-            en: 'All',
-            zh: '全部'
-        },
-        'news-filter-bim': {
-            ja: 'BIM全般',
-            en: 'BIM General',
-            zh: 'BIM综合'
-        },
-        'news-filter-revit': {
-            ja: 'Revit',
-            en: 'Revit',
-            zh: 'Revit'
-        },
-        'news-filter-software': {
-            ja: 'ソフトウェア',
-            en: 'Software',
-            zh: '软件'
-        },
-        'news-filter-architecture': {
-            ja: '建築・設計',
-            en: 'Architecture',
-            zh: '建筑设计'
-        },
-        'news-loading': {
-            ja: 'ニュースを読み込み中...',
-            en: 'Loading news...',
-            zh: '正在加载新闻...'
-        },
-        'news-error': {
-            ja: 'ニュースの読み込みに失敗しました。しばらくしてから再度お試しください。',
-            en: 'Failed to load news. Please try again later.',
-            zh: '新闻加载失败。请稍后再试。'
-        },
-        'news-empty': {
-            ja: '該当するニュースがありません。',
-            en: 'No news found.',
-            zh: '未找到相关新闻。'
-        }
-    };
-
-    // AIニュースページ
-    translations.aiNewsPage = {
-        'ai-news-breadcrumb': {
-            ja: 'AIニュース',
-            en: 'AI News',
-            zh: 'AI新闻'
-        },
-        'ai-news-title': {
-            ja: 'AIニュース',
-            en: 'AI News',
-            zh: 'AI新闻'
-        },
-        'ai-news-subtitle': {
-            ja: '最新のAI・機械学習・LLM情報',
-            en: 'Latest AI, Machine Learning & LLM News',
-            zh: '最新的AI、机器学习和LLM信息'
-        },
-        'ai-news-update-label': {
-            ja: '最終更新:',
-            en: 'Last Updated:',
-            zh: '最后更新:'
-        },
-        'ai-news-update-note': {
-            ja: '（毎日自動更新）',
-            en: '(Auto-updated daily)',
-            zh: '（每天自动更新）'
-        },
-        'ai-news-filter-all': {
-            ja: 'すべて',
-            en: 'All',
-            zh: '全部'
-        },
-        'ai-news-filter-general': {
-            ja: 'AI全般',
-            en: 'AI General',
-            zh: 'AI综合'
-        },
-        'ai-news-filter-llm': {
-            ja: 'LLM',
-            en: 'LLM',
-            zh: 'LLM'
-        },
-        'ai-news-filter-tools': {
-            ja: 'AIツール',
-            en: 'AI Tools',
-            zh: 'AI工具'
-        },
-        'ai-news-filter-research': {
-            ja: '研究・開発',
-            en: 'Research',
-            zh: '研究开发'
-        },
-        'ai-news-loading': {
-            ja: 'ニュースを読み込み中...',
-            en: 'Loading news...',
-            zh: '正在加载新闻...'
-        },
-        'ai-news-error': {
-            ja: 'ニュースの読み込みに失敗しました。しばらくしてから再度お試しください。',
-            en: 'Failed to load news. Please try again later.',
-            zh: '新闻加载失败。请稍后再试。'
-        },
-        'ai-news-empty': {
-            ja: '該当するニュースがありません。',
-            en: 'No news found.',
-            zh: '未找到相关新闻。'
-        }
-    };
 
 
     // AI議事録 自動作成ツール
@@ -8247,9 +8065,9 @@ translations.tipsPdf = {
         ja: '複数ページのPDFも比較できますか？', en: 'Can multi-page PDFs be compared?', zh: '可以比较多页 PDF 吗？'
     },
     'tips-pdf-faq-a3': {
-        ja: 'はい。複数ページのPDFに対応し、ページごとに比較結果を確認できます。',
-        en: 'Yes. Multi-page PDFs are supported, and you can check the comparison result page by page.',
-        zh: '可以。支持多页 PDF，并可逐页查看比较结果。'
+        ja: 'はい。ページごとに比較結果を確認できます。ページ数が違う場合は、両方に共通するページ数までが対象です。',
+        en: 'Yes. You can check the result page by page. If the page counts differ, only the pages both files have are compared.',
+        zh: '可以。可逐页查看比较结果。页数不同时，只比较两者共有的页数。'
     },
     'tips-pdf-faq-q4': {
         ja: '差分の色分けは何を表していますか？', en: 'What does the color-coding represent?', zh: '差异的颜色区分代表什么？'
@@ -8442,24 +8260,6 @@ translations.toolAbout = {
         en: 'Supports multibyte pattern names (output in Shift-JIS, so no garbled text)',
         zh: '支持多字节图案名称（以 Shift-JIS 输出，不会乱码）'
     },
-    'hatch-about-h3-use': {
-        ja: '活用シーン', en: 'Use cases', zh: '应用场景'
-    },
-    'hatch-about-use1': {
-        ja: '独自の仕上げ・材料表現に合わせたハッチングを用意したいとき',
-        en: 'When you need hatching tailored to a specific finish or material representation',
-        zh: '当需要配合特定饰面或材料表现的填充时'
-    },
-    'hatch-about-use2': {
-        ja: '既製のパターンに無い目地割り（タイル・レンガ）を作図したいとき',
-        en: 'When you need joint layouts (tile, brick) not found in preset patterns',
-        zh: '当需要绘制现成图案中没有的接缝分割（瓷砖、砖块）时'
-    },
-    'hatch-about-use3': {
-        ja: 'RC 断面や地盤などの表現パターンをすばやく用意したいとき',
-        en: 'When you need to quickly prepare patterns for RC sections, ground, etc.',
-        zh: '当需要快速准备 RC 剖面、地基等表现图案时'
-    },
     'hatch-about-guide': {
         ja: '📖 詳しい作り方は<a href="tips/revit-hatch-pattern.html">Revit・AutoCADのハッチングパターン(.pat)の作り方</a>で解説しています。',
         en: '📖 See <a href="tips/revit-hatch-pattern.html">How to Make Hatch Patterns (.pat) for Revit &amp; AutoCAD</a> for detailed steps.',
@@ -8496,24 +8296,6 @@ translations.toolAbout = {
         en: 'Zoom and drag the preview to check fine details',
         zh: '放大并拖动预览以确认细节'
     },
-    'pdf-about-h3-use': {
-        ja: '活用シーン', en: 'Use cases', zh: '应用场景'
-    },
-    'pdf-about-use1': {
-        ja: '改訂前後の図面でどこが変わったかを確認したいとき',
-        en: 'When you want to see what changed between drawing revisions',
-        zh: '当想确认图纸修订前后哪里发生变化时'
-    },
-    'pdf-about-use2': {
-        ja: '承認前に提出図と修正版の差分を漏れなくチェックしたいとき',
-        en: 'When you want to check every difference between submitted and revised drawings before approval',
-        zh: '当想在审批前无遗漏地检查提交图与修改版的差异时'
-    },
-    'pdf-about-use3': {
-        ja: '支給図の更新点をすばやく共有したいとき',
-        en: 'When you want to quickly share updates in issued drawings',
-        zh: '当想快速共享提供图的更新点时'
-    },
     'pdf-about-guide': {
         ja: '📖 詳しい使い方は<a href="tips/pdf-compare-guide.html">図面PDFを比較して差分を見つける方法</a>で解説しています。',
         en: '📖 See <a href="tips/pdf-compare-guide.html">How to Compare Drawing PDFs and Spot the Differences</a> for detailed usage.',
@@ -8527,147 +8309,8 @@ translations.toolAbout = {
     'hatch-grout-y': { ja: '目地Y (mm)', en: 'Joint Y (mm)', zh: '接缝 Y (mm)' },
 
     // ── ハッチング: 使い方 ──
-    'hatch-about-h3-steps': { ja: '使い方', en: 'How to use', zh: '使用方法' },
-    'hatch-about-step1': {
-        ja: '「パターン種類」から作りたいパターンを選びます。',
-        en: 'Pick the pattern you want from "Pattern type".',
-        zh: '从“图案种类”中选择要制作的图案。'
-    },
-    'hatch-about-step2': {
-        ja: '角度・間隔・目地サイズなどを入力します。右のプレビューが即座に更新されるので、仕上がりを見ながら調整できます。',
-        en: 'Enter angle, spacing, joint size and so on. The preview updates instantly, so you can adjust while seeing the result.',
-        zh: '输入角度、间距、接缝尺寸等。右侧预览会即时更新，可以边看效果边调整。'
-    },
-    'hatch-about-step3': {
-        ja: '「出力形式」を選びます。Revit の場合はさらに「モデル」（実寸で表示）か「製図」（図面スケールに追従）かを選びます。',
-        en: 'Choose the output format. For Revit, also choose "Model" (real-world size) or "Drafting" (follows the view scale).',
-        zh: '选择“输出格式”。Revit 还需选择“模型”（按实际尺寸显示）或“制图”（跟随图纸比例）。'
-    },
-    'hatch-about-step4': {
-        ja: 'ダウンロードボタンを押すと .pat ファイルが保存されます。パターン名は設定値から自動で付きます（例: 芋目地_100x100x5x5）。',
-        en: 'Press the download button to save the .pat file. The pattern name is generated from your settings (e.g. Stack_bond_100x100x5x5).',
-        zh: '点击下载按钮即可保存 .pat 文件。图案名称会根据设置自动生成（例：芋目地_100x100x5x5）。'
-    },
-    'hatch-about-step5': {
-        ja: 'Revit では［管理］タブ →［追加設定］→［塗りつぶしパターン］→［新規作成］→［カスタム］→［参照］で読み込みます。',
-        en: 'In Revit, load it from Manage tab → Additional Settings → Fill Patterns → New → Custom → Browse.',
-        zh: '在 Revit 中通过［管理］选项卡 →［其他设置］→［填充样式］→［新建］→［自定义］→［浏览］导入。'
-    },
-    'hatch-about-h3-faq': { ja: 'よくある質問', en: 'FAQ', zh: '常见问题' },
-    'hatch-faq-q1': {
-        ja: '「モデル」と「製図」はどう違いますか？',
-        en: 'What is the difference between "Model" and "Drafting"?',
-        zh: '“模型”和“制图”有什么区别？'
-    },
-    'hatch-faq-a1': {
-        ja: 'モデルパターンは実寸で表示されるため、図面の縮尺を変えても現実の寸法どおりの間隔で表示されます。製図パターンは紙の上での見た目が一定になり、縮尺に追従します。タイルや目地など「実際の寸法」を表したいときはモデル、ハッチング表現として使いたいときは製図を選びます。',
-        en: 'A model pattern is drawn at real-world size, so the spacing stays true to the actual dimensions no matter the view scale. A drafting pattern keeps a constant look on paper and follows the view scale. Use model patterns for real dimensions such as tiles and joints, and drafting patterns for graphic hatching.',
-        zh: '模型样式按实际尺寸显示，即使更改图纸比例，间距也保持真实尺寸。制图样式在图纸上的外观固定，会跟随比例变化。表示瓷砖、接缝等“实际尺寸”时选模型，作为填充表现时选制图。'
-    },
-    'hatch-faq-q2': {
-        ja: 'パターン名に日本語は使えますか？',
-        en: 'Can I use Japanese characters in the pattern name?',
-        zh: '图案名称可以使用日文吗？'
-    },
-    'hatch-faq-a2': {
-        ja: '使えます。Revit・AutoCAD は Windows 環境で Shift-JIS を前提としているため、本ツールは .pat ファイルを Shift-JIS で書き出します。日本語のパターン名でも文字化けしません。',
-        en: 'Yes. Revit and AutoCAD expect Shift-JIS on Windows, so this tool writes .pat files in Shift-JIS. Japanese pattern names will not be garbled.',
-        zh: '可以。Revit・AutoCAD 在 Windows 环境下以 Shift-JIS 为前提，因此本工具以 Shift-JIS 输出 .pat 文件，日文图案名不会乱码。'
-    },
-    'hatch-faq-q3': {
-        ja: 'AutoCAD でも使えますか？',
-        en: 'Does it work with AutoCAD?',
-        zh: '也能用于 AutoCAD 吗？'
-    },
-    'hatch-faq-a3': {
-        ja: '使えます。「出力形式」で AutoCAD を選ぶと標準の .pat 形式で書き出します。AutoCAD の [ハッチング] コマンド →［パターン］→［ユーザー定義］／カスタムパターンから読み込んでください。',
-        en: 'Yes. Choose AutoCAD as the output format and the file is written in the standard .pat format. Load it from the HATCH command → Pattern → User defined / custom pattern.',
-        zh: '可以。在“输出格式”中选择 AutoCAD，即以标准 .pat 格式输出。请通过 AutoCAD 的 [图案填充] 命令 →［图案］→［用户定义］／自定义图案导入。'
-    },
-    'hatch-faq-q4': {
-        ja: 'ファイルはサーバーに送信されますか？',
-        en: 'Are files sent to a server?',
-        zh: '文件会发送到服务器吗？'
-    },
-    'hatch-faq-a4': {
-        ja: '送信されません。パターンの生成もファイルの書き出しもすべてブラウザ内で行われます。会員登録も不要です。',
-        en: 'No. Both pattern generation and file export happen entirely in your browser. No sign-up is required.',
-        zh: '不会。图案生成和文件导出全部在浏览器内完成，也无需注册。'
-    },
 
     // ── PDF比較: 使い方 ──
-    'pdf-about-h3-steps': { ja: '使い方', en: 'How to use', zh: '使用方法' },
-    'pdf-about-step1': {
-        ja: '「比較元 PDF」に旧版を、「比較先 PDF」に新版をドロップします（枠をクリックしてファイル選択もできます）。',
-        en: 'Drop the older PDF on "Source PDF" and the newer one on "Target PDF" (you can also click the box to pick a file).',
-        zh: '将旧版拖到“比较源 PDF”，新版拖到“比较目标 PDF”（也可点击框选择文件）。'
-    },
-    'pdf-about-step2': {
-        ja: '「比較実行」を押すと、2つのPDFを重ね合わせて差分を色分けします。',
-        en: 'Press "Compare" to overlay the two PDFs and colour-code the differences.',
-        zh: '点击“执行比较”，即可叠加两个 PDF 并用颜色区分差异。'
-    },
-    'pdf-about-step3': {
-        ja: 'ページ番号のボタンで各ページを確認します。差分のあるページは赤い枠で示されます。',
-        en: 'Use the page buttons to review each page. Pages with differences are outlined in red.',
-        zh: '通过页码按钮查看各页。有差异的页面会以红框标示。'
-    },
-    'pdf-about-step4': {
-        ja: '「全ページPDF保存」で結果を保存します。画質は 216 / 300 / 600dpi から選べます。',
-        en: 'Use "Save all pages as PDF" to export the result. Quality can be 216 / 300 / 600 dpi.',
-        zh: '通过“保存全部页面为 PDF”导出结果。画质可选 216 / 300 / 600dpi。'
-    },
-    'pdf-about-h3-faq': { ja: 'よくある質問', en: 'FAQ', zh: '常见问题' },
-    'pdf-faq-q1': {
-        ja: 'アップロードしたPDFはサーバーに送信されますか？',
-        en: 'Are the PDFs sent to a server?',
-        zh: '上传的 PDF 会发送到服务器吗？'
-    },
-    'pdf-faq-a1': {
-        ja: '送信されません。ファイルの読み込みから差分の計算まで、すべてお使いのブラウザ内で完結します。社外秘の図面でもそのままご利用いただけます。',
-        en: 'No. Everything from reading the files to computing the differences happens in your browser, so confidential drawings can be compared safely.',
-        zh: '不会。从读取文件到计算差异全部在浏览器内完成，涉密图纸也可放心使用。'
-    },
-    'pdf-faq-q2': {
-        ja: 'ページ数の違うPDF同士でも比較できますか？',
-        en: 'Can I compare PDFs with different page counts?',
-        zh: '页数不同的 PDF 也能比较吗？'
-    },
-    'pdf-faq-a2': {
-        ja: '比較できますが、対象は<strong>両方に共通するページ数まで</strong>です。たとえば10ページと12ページのPDFなら1〜10ページ目が比較され、残りの2ページは対象外になります。',
-        en: 'Yes, but only <strong>up to the number of pages both files share</strong>. For a 10-page and a 12-page PDF, pages 1–10 are compared and the remaining 2 pages are skipped.',
-        zh: '可以，但仅比较<strong>两者共有的页数</strong>。例如 10 页与 12 页的 PDF，会比较第 1〜10 页，其余 2 页不在比较范围内。'
-    },
-    'pdf-faq-q3': {
-        ja: '図面全体が赤や青で塗りつぶされてしまいます。',
-        en: 'The whole drawing turns red or blue.',
-        zh: '整张图纸被涂成红色或蓝色。'
-    },
-    'pdf-faq-a3': {
-        ja: '2つのPDFで用紙サイズや図面の位置がずれていると、全体が差分として検出されます。CADから書き出すときに用紙サイズ・尺度・原点をそろえてください。用紙サイズが違う場合は左上を基準に重ね合わせます。',
-        en: 'If the sheet size or drawing position differs between the two PDFs, everything is detected as a difference. Match the sheet size, scale and origin when exporting from CAD. When sheet sizes differ, the pages are aligned at the top-left corner.',
-        zh: '若两个 PDF 的纸张尺寸或图纸位置不一致，整体都会被判定为差异。请在从 CAD 导出时统一纸张尺寸、比例和原点。纸张尺寸不同时，以左上角为基准叠加。'
-    },
-    'pdf-faq-q4': {
-        ja: '差分が見づらいときはどうすればいいですか？',
-        en: 'What if the differences are hard to see?',
-        zh: '差异不易辨认时该怎么办？'
-    },
-    'pdf-faq-a4': {
-        ja: '「差分の不透明度」を上げると差分の色が濃くなります。プレビューはマウスホイールで拡大、ドラッグで移動でき、ダブルクリックで元の表示に戻ります。',
-        en: 'Raise "Difference opacity" to deepen the colours. You can zoom the preview with the mouse wheel, pan by dragging, and double-click to reset.',
-        zh: '调高“差异不透明度”可加深颜色。预览可用鼠标滚轮缩放、拖拽平移，双击可恢复原始显示。'
-    },
-    'pdf-faq-q5': {
-        ja: '大判図面（A1・A0）でも使えますか？',
-        en: 'Does it work with large-format drawings (A1 / A0)?',
-        zh: '大幅面图纸（A1・A0）也能使用吗？'
-    },
-    'pdf-faq-a5': {
-        ja: '使えます。大きなページは内部で分割して処理するため、A1・A0 でも 600dpi での保存が可能です。ページ数が多い場合は比較に時間がかかることがあります。',
-        en: 'Yes. Large pages are processed in tiles internally, so A1 and A0 can still be saved at 600 dpi. Comparing many pages may take a while.',
-        zh: '可以。大页面在内部分块处理，因此 A1・A0 也能以 600dpi 保存。页数较多时比较会花费一些时间。'
-    }
 };
 
 
@@ -8830,78 +8473,6 @@ translations.toolAboutTools = {
         ja: '抽出結果を画面で確認・修正してから Excel としてダウンロード',
         en: 'Review and correct the results on screen before downloading the Excel file',
         zh: '可在画面上确认、修改提取结果后再下载 Excel'
-    },
-    'p2e-about-h3-steps': { ja: '使い方', en: 'How to use', zh: '使用方法' },
-    'p2e-about-step1': {
-        ja: '構造図の PDF を画面にドロップします（クリックしてファイル選択もできます）。',
-        en: 'Drop a structural PDF onto the page (you can also click to pick a file).',
-        zh: '将结构图 PDF 拖放到画面上（也可点击选择文件）。'
-    },
-    'p2e-about-step2': {
-        ja: '読み取りが終わると、部材の種類ごとにタブが分かれて一覧表示されます。',
-        en: 'When reading finishes, results are listed in tabs by member type.',
-        zh: '读取完成后，会按构件种类分标签页列出结果。'
-    },
-    'p2e-about-step3': {
-        ja: '内容を確認します。読み取り漏れや誤りがあればその場で直せます。',
-        en: 'Check the contents. Anything missed or misread can be fixed on the spot.',
-        zh: '确认内容。如有遗漏或错误可当场修改。'
-    },
-    'p2e-about-step4': {
-        ja: '「Excel ダウンロード」で .xlsx として保存します。',
-        en: 'Use "Download Excel" to save it as an .xlsx file.',
-        zh: '通过“下载 Excel”保存为 .xlsx 文件。'
-    },
-    'p2e-about-h3-quality': { ja: '読み取り精度を上げるコツ', en: 'Tips for better accuracy', zh: '提高读取精度的技巧' },
-    'p2e-about-quality-p': {
-        ja: 'いちばん効くのは「PDF の作り方」です。CAD や Revit から PDF を書き出すときに、次の設定にすると文字情報がそのまま残り、OCR を通さずに高い精度で読み取れます。',
-        en: 'What matters most is how the PDF is produced. Exporting from CAD or Revit with the settings below keeps the text intact, so it can be read accurately without OCR.',
-        zh: '最关键的是“PDF 的生成方式”。从 CAD 或 Revit 导出 PDF 时采用以下设置，文字信息会被保留，无需 OCR 即可高精度读取。'
-    },
-    'p2e-about-quality1': {
-        ja: '用紙サイズは Screen ではなく、元の図面サイズ（A1・A3 など）にする',
-        en: 'Set the paper size to the original sheet size (A1, A3, …) rather than Screen',
-        zh: '纸张尺寸设为原图纸尺寸（A1、A3 等），而非 Screen'
-    },
-    'p2e-about-quality2': {
-        ja: 'フォントは「デバイスフォントと代替」ではなく「ソフトフォントとしてダウンロード」にする',
-        en: 'Choose "Download as Softfont" instead of "Substitute with Device Fonts"',
-        zh: '字体选择“作为软字体下载”，而非“用设备字体替代”'
-    },
-    'p2e-about-quality3': {
-        ja: 'PDF 設定は「標準」ではなく「高品質印刷」または「プレス品質」にする',
-        en: 'Use "High Quality Print" or "Press Quality" instead of "Standard"',
-        zh: 'PDF 设置选择“高质量打印”或“印刷质量”，而非“标准”'
-    },
-    'p2e-about-quality4': {
-        ja: '文字をアウトライン化（図形化）して書き出さない',
-        en: 'Do not convert text to outlines when exporting',
-        zh: '导出时不要将文字转换为轮廓（图形化）'
-    },
-    'p2e-about-h3-faq': { ja: 'よくある質問', en: 'FAQ', zh: '常见问题' },
-    'p2e-faq-q1': { ja: 'PDF はサーバーに送信されますか？', en: 'Is the PDF sent to a server?', zh: 'PDF 会发送到服务器吗？' },
-    'p2e-faq-a1': {
-        ja: '送信されません。読み取りも Excel の生成もすべてブラウザ内で行われます。画像だけの PDF を開いたときにかぎり、文字認識用のプログラムとデータ（約 40MB）を初回だけ読み込みます（以降はキャッシュされます）。',
-        en: 'No. Reading and Excel generation both happen in your browser. Only when you open an image-only PDF does it load the text-recognition engine and data (about 40 MB) once, after which it is cached.',
-        zh: '不会。读取与 Excel 生成均在浏览器内完成。仅当打开纯图像 PDF 时，才会首次加载文字识别程序与数据（约 40MB），之后会被缓存。'
-    },
-    'p2e-faq-q2': { ja: '読み取れない部材があります。', en: 'Some members are not recognised.', zh: '有些构件无法读取。' },
-    'p2e-faq-a2': {
-        ja: '画像として書き出された PDF や、文字が細い・つぶれている PDF では読み落としが起こります。上記の「読み取り精度を上げるコツ」に沿って PDF を作り直すと大きく改善します。読み落とした行は画面上で追記できます。',
-        en: 'PDFs exported as images, or with thin or blurred text, can be missed. Re-exporting the PDF as described in "Tips for better accuracy" improves this a lot. Missing rows can be added manually on screen.',
-        zh: '以图像形式导出的 PDF，或文字过细、模糊的 PDF 容易漏读。按上文“提高读取精度的技巧”重新生成 PDF 会有明显改善。漏读的行可在画面上手动补充。'
-    },
-    'p2e-faq-q3': { ja: '角形鋼管の板厚が空欄になります。', en: 'The plate thickness of square tubes is blank.', zh: '方钢管的板厚为空白。' },
-    'p2e-faq-a3': {
-        ja: 'H形鋼は寸法が規格で決まっているため自動補完できますが、角形鋼管は同じ外形寸法に複数の板厚があるため、誤った値を入れないようあえて補完していません。板厚は図面を見て入力してください。',
-        en: 'H-sections can be auto-completed because their dimensions are standardised, but square tubes come in several thicknesses for the same outside dimensions, so the tool deliberately leaves it blank rather than guessing. Please enter the thickness from the drawing.',
-        zh: 'H 型钢尺寸有规格可循，因此可自动补全；而方钢管同一外形尺寸对应多种板厚，为避免填入错误值，工具刻意不做补全。请对照图纸输入板厚。'
-    },
-    'p2e-faq-q4': { ja: '出力した Excel はそのまま Revit に取り込めますか？', en: 'Can the Excel file be imported into Revit directly?', zh: '导出的 Excel 能直接导入 Revit 吗？' },
-    'p2e-faq-a4': {
-        ja: 'Excel はファミリタイプ作成用の元データです。取り込みには Revit 側のアドインや Dynamo など、タイプを一括作成する仕組みが別途必要です。',
-        en: 'The Excel file is source data for creating family types. Importing it requires a separate mechanism on the Revit side, such as an add-in or Dynamo, to create the types in bulk.',
-        zh: 'Excel 是用于创建族类型的原始数据。导入时还需要 Revit 端的插件或 Dynamo 等批量创建类型的机制。'
     },
     'p2e-about-guide': {
         ja: '📖 詳しい手順は<a href="../../tips/pdf-to-excel-guide.html">構造図PDFをExcelに変換する方法</a>で解説しています。',
@@ -9682,9 +9253,7 @@ translations.recoveryArticle2 = {
         translations.privacyPage,
         translations.contactPage,
         translations.aboutPage,
-        translations.termsPage,
-        translations.newsPage,
-        translations.aiNewsPage
+        translations.termsPage
     );
     
     console.log('📚 Translations initialized (v7.4 - ダウンロードのパスワード廃止)');

@@ -25,7 +25,7 @@
  *   - FEATURE_ID を持たないページ（手書きの静的マニュアル）はスキップする
  */
 
-import { readFile, writeFile, readdir } from 'node:fs/promises';
+import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { marked } from 'marked';
@@ -79,6 +79,52 @@ function rewriteFeatureLinks(html, featureToPage, pageName) {
     const ids = [...new Set(unresolved)].join(', ');
     console.warn(`  ! ${pageName}: サイト内に対応ページが無い .md リンク → そのまま維持: ${ids}`);
   }
+  return out;
+}
+
+// ---- スクリーンショット -------------------------------------------------
+// アドイン側の MD は画像を Features/images/<FEATURE_ID>/xx.png に置き、
+//   ![ここをクリック](./images/ViewCopy3D/01-copy.png)
+// のように書く。焼き込み時に次のことを行う:
+//   1. 画像をこのリポジトリの images/manual/... にコピー（同じドメインで配信するため）
+//   2. <p><img></p> を <figure class="manual-shot"> ＋ 説明文（alt）に変換
+//   3. 画像がまだ無いものは本文から外す（壊れた画像や「準備中」を出さない）
+// これにより MD に先に画像の枠を書いておき、スクショは後から足していける。
+const IMG_PARA_RE = /<p>\s*<img src="(?:\.\/)?images\/([^"]+)" alt="([^"]*)"\s*\/?>\s*<\/p>/g;
+const SITE_IMG_DIR = path.join(REPO_ROOT, 'images', 'manual');
+
+async function loadImage(rel) {
+  if (SRC_DIR) {
+    try { return await readFile(path.join(SRC_DIR, 'images', rel)); } catch { return null; }
+  }
+  try {
+    const res = await fetch(RAW_BASE + 'images/' + rel.split('/').map(encodeURIComponent).join('/'));
+    if (!res.ok) return null;
+    return Buffer.from(await res.arrayBuffer());
+  } catch { return null; }
+}
+
+async function bakeImages(html, pageName) {
+  const found = [...html.matchAll(IMG_PARA_RE)];
+  const missing = [];
+  let out = html;
+  for (const [whole, rel, alt] of found) {
+    if (rel.includes('..')) { missing.push(rel); out = out.replace(whole, ''); continue; }
+    const buf = await loadImage(rel);
+    if (!buf) { missing.push(rel); out = out.replace(whole, ''); continue; }
+    const dest = path.join(SITE_IMG_DIR, rel);
+    let same = false;
+    try { same = Buffer.compare(await readFile(dest), buf) === 0; } catch {}
+    if (!same) {
+      await mkdir(path.dirname(dest), { recursive: true });
+      await writeFile(dest, buf);
+    }
+    const fig =
+      `<figure class="manual-shot"><img src="../images/manual/${rel}" alt="${alt}" loading="lazy">` +
+      (alt ? `<figcaption>${alt}</figcaption>` : '') + '</figure>';
+    out = out.replace(whole, fig);
+  }
+  if (missing.length) console.log(`  - ${pageName}: 画像がまだ無いので省略 ${missing.length} 件`);
   return out;
 }
 
@@ -187,7 +233,8 @@ async function main() {
       continue;
     }
 
-    const html = rewriteFeatureLinks(marked.parse(md), featureToPage, name);
+    const html = await bakeImages(
+      rewriteFeatureLinks(marked.parse(md), featureToPage, name), name);
     const next = src
       .replace(ARTICLE_RE, () => buildArticle(featureId, html))
       .replace(RUNTIME_SCRIPT_RE, () => buildRuntimeScript(featureId));

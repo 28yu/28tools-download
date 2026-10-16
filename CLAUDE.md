@@ -281,7 +281,7 @@ PRが作成されると、Netlifyが自動でプレビュー環境を構築し�
 
 - **パブリッシャーID**: `ca-pub-9197151217236924`（`ads.txt` で公開している値）
 - **設置範囲**: 主要ページの `<head>` に設置済み。
-  ※ `news.html` / `ai-news.html` は**意図的に未設置**（他サイトの RSS 要約を並べたページで
+  ※ （2026/10 にニュース2ページは廃止済み）`news.html` / `ai-news.html` は**意図的に未設置**だった（他サイトの RSS 要約を並べたページで
   `noindex, nofollow` を付けているため、広告在庫にも審査対象にも含めない）。
   `manual/beam-top-color.html` / `beam-bottom-color.html` は
   `beam-level-color.html` への meta refresh リダイレクトのみのため不要。
@@ -323,8 +323,6 @@ PRが作成されると、Netlifyが自動でプレビュー環境を構築し�
 ├── addins.html         # アドインダウンロードページ
 ├── hatch.html          # ハッチングパターン作成ツール
 ├── pdf_compare.html    # PDF比較ツール
-├── news.html           # BIM業界ニュース
-├── ai-news.html        # AIニュース
 ├── js/
 │   ├── main.js         # メインJS（多言語対応・共通機能）
 │   └── hatch.js        # ハッチングパターン作成ツール専用JS
@@ -600,7 +598,7 @@ AdSense / 検索エンジンが本文を読めず「低品質コンテンツ」�
 **⚠️ 用語の注意**: `manual/*.html`（フォルダ内13ページ＝個別マニュアル, 焼き込みで解決済み）と
 `manual.html`（ルート単体ファイル＝旧ハブ, 削除済み）は**別物**。混同しないこと。
 
-**残タスク（次セッション）**: `news.html` / `ai-news.html` の「読み込み中...」改善。
+**（2026/10 追記: ニュース2ページは廃止したので以下は過去の記録）** 残タスク（当時）: `news.html` / `ai-news.html` の「読み込み中...」改善。
 - この2ページはサイドバー（`includes/sidebar.html`）からリンクされ**クローラーが到達する**ため対応価値あり。
 - データソース: `data/news.json` / `data/ai-news.json`（`.github/workflows/update-news.yml`＝`fetch_rss.py`、`update-ai-news.yml`＝`fetch_ai_rss.py` が cron 更新）。
 - 本文は JS で `#news-container` に描画。生 HTML は「読み込み中...」＋簡易 `<noscript>` のみ。
@@ -1811,3 +1809,46 @@ v2.7 公開の当日（2026/10/16）に、アドインの不具合修正版を v
 ⚠️ **パッチ版の新着の扱い**: 新機能が無い修正版なら、直前の新着の版数だけ書き換えるのが基本。
 新機能を含む場合や、前回の告知から日が空いた場合は、新しい `index-news-v<番号>` を先頭に追加する。
 
+
+
+---
+
+## 2026/10 セッション — AdSense 対策（文字数を「減らす」方針）
+
+### 経緯
+- 9/6 の再申請も **9/16 に却下**（理由は同じ「有用性の低いコンテンツ」）。7/4 にも却下メールが来ていた。計5回。
+- 運営者の方針: **文字数を増やすと使いにくくなるので絶対に増やさない。むしろ減らす。**
+  価値は「文章」ではなく「画面のスクショ」「ツールそのもの」「実際の利用」で示す。
+
+### 実施した対応
+| 対応 | 内容 |
+|---|---|
+| ニュース2ページを廃止 | `news.html` / `ai-news.html` と JS・CSS・`data/*.json`・RSS 取得の Actions（`update-news.yml` / `update-ai-news.yml` / `.github/scripts/`）・翻訳を削除。他サイトの RSS 要約＝転載コンテンツは審査で不利なため |
+| 解析画面を検索対象外に | `robots.txt` に `Disallow: /analytics/`、`analytics/*.html` に `noindex, nofollow` |
+| 短いマニュアル4本を短縮 | 視点／切断ボックス／トリミング領域／ビューポート位置（784〜1,119字 → 310〜458字）。アドイン側 `Docs/Features/*.md` を書き直し。**旧版のボタン名が実際のリボン表記と違っていた**（例:「SBコピー」→ 実際は「切断ボックス コピー」）のも修正 |
+| ツールページの説明を短縮 | PDF比較・塗潰し・PDF→Excel の `.tool-about` を「概要＋できること＋Tips 記事へのリンク」だけに（使い方・FAQ は Tips 記事が担当）。消えた情報のうち Tips に無かった「ページ数が違うときは共通ページまで」は Tips の FAQ に移した |
+
+### マニュアルのスクショ（Revit Peeler 方式）
+「どこをクリックすると何ができるか」を**画面のスクショ**で見せ、文章は最小限にする。
+- 画像はアドイン側 `Docs/Features/images/<機能ID>/` に置き、MD に `![説明](./images/<機能ID>/01-copy.png)` と書く
+- `inject.mjs` が焼き込み時に画像をサイト側 `images/manual/` へコピーし、`<figure class="manual-shot">`（説明文つき）に変換する
+- **画像がまだ無い枠は焼き込み時に自動で外す**（壊れた画像や「準備中」を出さない）。先に枠だけ書いておける
+- 撮り方・撮影リストはアドイン側 `Docs/Features/images/README.md`
+- `build-manuals.yml` は `images/manual/` もコミットする
+
+### X 自動投稿（運営者は確認するだけ）
+| 役割 | 担当 |
+|---|---|
+| 下書き作成 | Claude（定期実行の Claude セッション）が Notion の「X 自動投稿キュー」に追加 |
+| 確認 | 運営者が Notion で本文を読み、**「承認」にチェック** |
+| 投稿 | `.github/workflows/x-post.yml`（毎時7分）→ `scripts/x-post/post.mjs` が X API で投稿し、投稿URLを Notion に書き戻す |
+
+- キュー: Notion「28tools 開発ハブ」配下「X 自動投稿キュー」（data source `82b41701-2e95-4beb-9025-c02b9784f9a7`）
+- 安全策: 承認なしは投稿しない／1回1件まで／投稿前に「処理中」を書いて二重投稿を防ぐ／280（X換算）超えはエラー
+- Secrets: `NOTION_TOKEN`（Notion の内部インテグレーション。キューの DB に接続を許可すること）、
+  `X_API_KEY` / `X_API_SECRET` / `X_ACCESS_TOKEN` / `X_ACCESS_TOKEN_SECRET`（X Developer の App。**Read and write** 権限で発行）
+- Secrets が無いうちは何もせず正常終了する。手動実行で `dry_run=1` にすると、X へ送らず対象と文字数だけ表示する
+- ⚠️ X API は従量課金（2026 時点。新規の無料枠なし。リンク付き投稿は1件あたりの単価が高い）。金額は X の料金ページで確認
+
+### 再申請の目安
+スクショを主要マニュアルに入れ、X 経由で訪問が増えてきてから（最低 2〜4 週間後）。
