@@ -924,9 +924,9 @@ function initTranslations() {
             zh: '最新动态'
         },
         'index-news-v27': {
-            ja: '28 Tools v2.7 リリース — 新機能「リアルタイムレンダリング」を追加（全24機能）',
-            en: '28 Tools v2.7 Released — New Real-time Rendering feature (24 features in total)',
-            zh: '28 Tools v2.7 发布 — 新增“实时渲染”功能（共24项功能）'
+            ja: '28 Tools v2.7.1 リリース — 新機能「リアルタイムレンダリング」を追加（全24機能）',
+            en: '28 Tools v2.7.1 Released — New Real-time Rendering feature (24 features in total)',
+            zh: '28 Tools v2.7.1 发布 — 新增“实时渲染”功能（共24项功能）'
         },
         'index-news-v26': {
             ja: '28 Tools v2.6 リリース — 新機能10個を追加、インストーラーで簡単インストール（全23機能）',
