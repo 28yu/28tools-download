@@ -69,26 +69,45 @@
         <!-- マニュアル本文（Markdown 動的読み込み） -->
         <article id="md-content" class="md-content" data-baked="true">
         <!-- AUTO-GENERATED: 本文は scripts/build-manuals により Revit-Add-ins/Features/ViewCopy3D.md から焼き込み。手動編集しないこと -->
-<h1>3Dビュー視点 コピー＆ペースト</h1>
+<h1>3Dビュー 視点合わせ</h1>
 <p>3Dビューのカメラ位置と向きを、別の3Dビューにそのまま写します。</p>
 
 <hr>
 <h2>使い方</h2>
-<h3>1. 視点をコピー</h3>
-<p>コピー元の3Dビューを開き、「<strong>28 Tools</strong>」タブ →「<strong>3Dビュー</strong>」パネル →「<strong>視点コピー</strong>」をクリック。</p>
+<p>操作は Revit の「タイプ プロパティを一致」（MA）と同じ感覚です。</p>
+<h3>1. コピー元で押す</h3>
+<p>コピー元の3Dビューを開き、「<strong>28 Tools</strong>」タブ →「<strong>3Dビュー</strong>」パネル →「<strong>視点合わせ</strong>」をクリック。視点を覚え、<strong>カーソルの横に印</strong>が出ます。</p>
 
-<h3>2. 視点をペースト</h3>
-<p>貼り付け先の3Dビューを開き、「<strong>視点ペースト</strong>」をクリック。</p>
+<h3>2. 合わせたいビューで押す</h3>
+<p>印が出ている間に、合わせたい3Dビューを開いて「<strong>視点合わせ</strong>」をクリックすると、すぐに貼られます。続けてほかのビューにも貼れます。</p>
 
-<blockquote>
-<p>💡 プロジェクトブラウザで3Dビューを<strong>複数選択</strong>してからペーストすると、まとめて適用できます。</p>
-</blockquote>
+<table>
+<thead>
+<tr>
+<th>こんなとき</th>
+<th>操作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>何枚もの3Dビューにまとめて貼る</td>
+<td>プロジェクトブラウザで3Dビューを複数選んでからボタンを押す</td>
+</tr>
+<tr>
+<td>視点と切断ボックスを一度に貼る</td>
+<td>「視点合わせ」と「切断ボックス合わせ」を両方押して印を2つ出してから、合わせたいビューでどちらかを押す</td>
+</tr>
+<tr>
+<td>コピーを取りやめる</td>
+<td><strong>Esc</strong>（印が消えます）</td>
+</tr>
+</tbody></table>
 <hr>
 <h2>注意</h2>
 <ul>
 <li>3Dビュー同士でのみ使えます（パース・アイソメどちらも可）</li>
 <li>コピー内容は Revit を閉じると消えます</li>
-<li>切断ボックスの範囲は写りません → <a href="sectionbox-copy.html">切断ボックス コピー＆ペースト</a></li>
+<li>貼った視点は Ctrl+Z で元に戻せます（そのあとの Ctrl+Y のやり直しはできません）</li>
+<li>切断ボックスの範囲は写りません → <a href="sectionbox-copy.html">切断ボックス合わせ</a></li>
 </ul>
         </article>
 

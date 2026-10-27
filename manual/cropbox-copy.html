@@ -69,26 +69,41 @@
         <!-- マニュアル本文（Markdown 動的読み込み） -->
         <article id="md-content" class="md-content" data-baked="true">
         <!-- AUTO-GENERATED: 本文は scripts/build-manuals により Revit-Add-ins/Features/CropBoxCopy.md から焼き込み。手動編集しないこと -->
-<h1>トリミング領域 コピー＆ペースト</h1>
+<h1>トリミング領域合わせ</h1>
 <p>ビューのトリミング領域（表示範囲）を、別のビューにそのまま写します。各階の平面図の範囲をそろえるときに使います。</p>
 
 <hr>
 <h2>使い方</h2>
-<h3>1. トリミング領域をコピー</h3>
-<p>コピー元のビューを開き、「<strong>28 Tools</strong>」タブ →「<strong>シート・ビュー</strong>」パネル →「<strong>領域コピー</strong>」をクリック。</p>
+<p>操作は Revit の「タイプ プロパティを一致」（MA）と同じ感覚です。</p>
+<h3>1. コピー元で押す</h3>
+<p>コピー元のビューを開き、「<strong>28 Tools</strong>」タブ →「<strong>シート・ビュー</strong>」パネル →「<strong>トリミング領域合わせ</strong>」をクリック。トリミング領域を覚え、<strong>カーソルの横に印</strong>が出ます。</p>
 
-<h3>2. トリミング領域をペースト</h3>
-<p>貼り付け先のビューを開き、「<strong>領域ペースト</strong>」をクリック。</p>
+<h3>2. 合わせたいビューで押す</h3>
+<p>印が出ている間に、合わせたいビューを開いて「<strong>トリミング領域合わせ</strong>」をクリックすると、すぐに貼られます。続けてほかのビューにも貼れます。</p>
 
-<blockquote>
-<p>💡 プロジェクトブラウザでビューを<strong>複数選択</strong>してからペーストすると、まとめて適用できます。</p>
-</blockquote>
+<table>
+<thead>
+<tr>
+<th>こんなとき</th>
+<th>操作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>何枚ものビューにまとめて貼る</td>
+<td>プロジェクトブラウザでビューを複数選んでからボタンを押す</td>
+</tr>
+<tr>
+<td>コピーを取りやめる</td>
+<td><strong>Esc</strong>（印が消えます）</td>
+</tr>
+</tbody></table>
 <hr>
 <h2>注意</h2>
 <ul>
 <li>使えるビュー：平面図・天井伏図・断面図・立面図・詳細図・3Dビュー</li>
 <li>トリミングのオン／オフと枠の表示もコピー元に合わせます</li>
 <li>スケールや向きが違うビュー同士では、範囲がずれることがあります</li>
+<li>貼ったトリミング領域は Ctrl+Z で元に戻せます</li>
 <li>コピー内容は Revit を閉じると消えます</li>
 </ul>
         </article>
