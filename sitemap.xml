@@ -64,7 +64,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- マニュアル - 3D視点コピペ -->
+  <!-- マニュアル - 視点合わせ -->
   <url>
     <loc>https://28tools.com/manual/view-copy.html</loc>
     <lastmod>2026-04-10</lastmod>
@@ -72,7 +72,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- マニュアル - 切断ボックスコピペ -->
+  <!-- マニュアル - 切断ボックス合わせ -->
   <url>
     <loc>https://28tools.com/manual/sectionbox-copy.html</loc>
     <lastmod>2026-04-10</lastmod>
@@ -80,7 +80,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- マニュアル - ビューポート位置コピペ -->
+  <!-- マニュアル - ビューポート位置合わせ -->
   <url>
     <loc>https://28tools.com/manual/viewport-position.html</loc>
     <lastmod>2026-04-10</lastmod>
@@ -88,7 +88,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- マニュアル - トリミング領域コピペ -->
+  <!-- マニュアル - トリミング領域合わせ -->
   <url>
     <loc>https://28tools.com/manual/cropbox-copy.html</loc>
     <lastmod>2026-04-10</lastmod>

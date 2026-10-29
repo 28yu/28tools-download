@@ -553,44 +553,44 @@ function initTranslations() {
             zh: '使用指定的标题栏一次创建多个图纸'
         },
         'feature-view-title': {
-            ja: '3D視点コピペ',
-            en: '3D View Copy & Paste',
-            zh: '3D视点复制粘贴'
+            ja: '視点合わせ',
+            en: 'Match View',
+            zh: '匹配视角'
         },
         'feature-view-desc': {
             ja: '3Dビューの視点を他のビューに反映',
-            en: 'Copy and paste 3D view orientation',
-            zh: '将3D视图的视点复制并粘贴'
+            en: 'Match the 3D view orientation to other views',
+            zh: '将3D视图的视点匹配到其他视图'
         },
         'feature-section-title': {
-            ja: '切断ボックスコピペ',
-            en: 'Section Box Copy & Paste',
-            zh: '剖切框复制粘贴'
+            ja: '切断ボックス合わせ',
+            en: 'Match Section Box',
+            zh: '匹配剖面框'
         },
         'feature-section-desc': {
             ja: '3Dビューの切断ボックス範囲を反映',
-            en: 'Copy and paste section box range',
-            zh: '复制并粘贴剖切框范围'
+            en: 'Match the section box range to other 3D views',
+            zh: '将剖切框范围匹配到其他3D视图'
         },
         'feature-viewport-title': {
-            ja: 'ビューポート位置コピペ',
-            en: 'Viewport Position Copy & Paste',
-            zh: '视口位置复制粘贴'
+            ja: 'ビューポート位置合わせ',
+            en: 'Align Viewports',
+            zh: '对齐视口'
         },
         'feature-viewport-desc': {
             ja: 'シート上のビューポート位置を反映',
-            en: 'Copy and paste viewport positions',
-            zh: '复制并粘贴视口位置'
+            en: 'Align viewport positions across sheets',
+            zh: '在图纸之间对齐视口位置'
         },
         'feature-crop-title': {
-            ja: 'トリミング領域コピペ',
-            en: 'Crop Region Copy & Paste',
-            zh: '裁剪区域复制粘贴'
+            ja: 'トリミング領域合わせ',
+            en: 'Match Crop Region',
+            zh: '匹配裁剪区域'
         },
         'feature-crop-desc': {
             ja: 'ビューのトリミング領域を反映',
-            en: 'Copy and paste crop regions',
-            zh: '复制并粘贴裁剪区域'
+            en: 'Match crop regions to other views',
+            zh: '将裁剪区域匹配到其他视图'
         },
         'feature-room-tag-title': {
             ja: '部屋タグ自動配置',
@@ -882,6 +882,11 @@ function initTranslations() {
             ja: '新着・おすすめ',
             en: 'News & Featured',
             zh: '最新动态'
+        },
+        'index-news-v28': {
+            ja: '28 Tools v2.8 リリース — ビューの「〜合わせ」を1ボタンに（AutoCAD の MA と同じ操作）、梁レベル色分けで梁タグ表記に対応、リアルタイムレンダリングに表示の設定を追加',
+            en: '28 Tools v2.8 Released — View "Match" tools are now one button (like AutoCAD\'s MA); Beam Level Color Code supports beam tags; Real-time Rendering adds display settings',
+            zh: '28 Tools v2.8 发布 — 视图“匹配”工具合并为一个按钮（与 AutoCAD 的 MA 操作相同），梁标高颜色区分支持梁标记，实时渲染新增显示设置'
         },
         'index-news-v27': {
             ja: '28 Tools v2.7.2 リリース — 新機能「リアルタイムレンダリング」を追加（全24機能）',
@@ -1419,7 +1424,7 @@ translations.gridBubble = {
     },
     'manual-grid-bubble-related-viewport': {
         ja: 'ビューポート位置 コピー＆ペースト — シート上のビューポート位置を他のシートに合わせる',
-        en: 'Viewport Position Copy & Paste — Match viewport positions across sheets',
+        en: 'Align Viewports — Match viewport positions across sheets',
         zh: '视口位置 复制＆粘贴 — 将图纸上的视口位置与其他图纸对齐'
     }
 };
@@ -1580,24 +1585,24 @@ translations.sheetCreation = {
     },
     'manual-sheet-creation-related-viewport': {
         ja: 'ビューポート位置 コピー＆ペースト — 作成したシートのビューポート位置を他のシートに合わせる',
-        en: 'Viewport Position Copy & Paste — Match viewport positions of created sheets to other sheets',
+        en: 'Align Viewports — Match viewport positions of created sheets to other sheets',
         zh: '视口位置 复制＆粘贴 — 将创建图纸的视口位置与其他图纸对齐'
     }
 };
 
     // ========================================
-    // view-copy.html (3D視点コピペ)
+    // view-copy.html (視点合わせ)
     // ========================================
 translations.viewCopy = {
     'manual-view-copy-title': {
-        ja: '3D視点コピペ',
-        en: '3D View Point Copy & Paste',
-        zh: '三维视点复制粘贴'
+        ja: '視点合わせ',
+        en: 'Match View',
+        zh: '匹配视角'
     },
     'manual-view-copy-subtitle': {
-        ja: '3Dビューの視点を他のビューにコピー＆ペースト',
-        en: 'Copy and paste the camera viewpoint between 3D views',
-        zh: '将三维视图的视点复制粘贴到其他视图'
+        ja: '3Dビューの視点を別の3Dビューに合わせる',
+        en: 'Match the camera viewpoint of other 3D views',
+        zh: '将其他三维视图的视点匹配为相同'
     },
     'manual-view-copy-overview': {
         ja: '3Dビューのカメラ位置・向きをコピーして、別の3Dビューに貼り付ける機能です。複数の3Dビューで視点を揃えたい場合に便利です。',
@@ -1690,35 +1695,35 @@ translations.viewCopy = {
         zh: '请确认粘贴目标是否为活动的<strong>三维视图</strong>'
     },
     'manual-view-copy-related-sectionbox': {
-        ja: '切断ボックス コピー＆ペースト — 3Dビューのセクションボックス範囲をコピー',
-        en: 'Section Box Copy & Paste — Copy the section box range of a 3D view',
+        ja: '切断ボックス合わせ — 3Dビューのセクションボックス範囲をコピー',
+        en: 'Match Section Box — Copy the section box range of a 3D view',
         zh: '切断框 复制＆粘贴 — 复制三维视图的切断框范围'
     },
     'manual-view-copy-related-cropbox': {
-        ja: 'トリミング領域 コピー＆ペースト — 平面図・断面図などのトリミング領域をコピー',
-        en: 'Crop Region Copy & Paste — Copy the crop region of floor plans, sections, etc.',
+        ja: 'トリミング領域合わせ — 平面図・断面図などのトリミング領域をコピー',
+        en: 'Match Crop Region — Copy the crop region of floor plans, sections, etc.',
         zh: '裁剪区域 复制＆粘贴 — 复制平面图、剖面图等的裁剪区域'
     },
     'manual-view-copy-related-viewport': {
         ja: 'ビューポート位置 コピー＆ペースト — シート上のビューポート位置をコピー',
-        en: 'Viewport Position Copy & Paste — Copy the viewport position on a sheet',
+        en: 'Align Viewports — Copy the viewport position on a sheet',
         zh: '视口位置 复制＆粘贴 — 复制图纸上的视口位置'
     }
 };
 
     // ========================================
-    // sectionbox-copy.html (切断ボックスコピペ)
+    // sectionbox-copy.html (切断ボックス合わせ)
     // ========================================
 translations.sectionboxCopy = {
     'manual-sectionbox-copy-title': {
-        ja: '切断ボックスコピペ',
-        en: 'Section Box Copy & Paste',
-        zh: '切断框复制粘贴'
+        ja: '切断ボックス合わせ',
+        en: 'Match Section Box',
+        zh: '匹配剖面框'
     },
     'manual-sectionbox-copy-subtitle': {
-        ja: '3Dビューの切断ボックス範囲をコピー＆ペースト',
-        en: 'Copy and paste the section box range between 3D views',
-        zh: '在三维视图之间复制粘贴切断框范围'
+        ja: '3Dビューの切断ボックス範囲を別の3Dビューに合わせる',
+        en: 'Match the section box range of other 3D views',
+        zh: '在三维视图之间匹配剖面框范围'
     },
     'manual-sectionbox-copy-overview': {
         ja: '3Dビューのセクションボックス（切断ボックス）の範囲をコピーして、別の3Dビューに貼り付ける機能です。同じ切り取り範囲を複数の3Dビューで共有したい場合に便利です。',
@@ -1826,35 +1831,35 @@ translations.sectionboxCopy = {
         zh: '请关闭"剖面框"复选框以确认和调整范围'
     },
     'manual-sectionbox-copy-related-viewcopy': {
-        ja: '3Dビュー視点 コピー＆ペースト — 3Dビューのカメラ位置・向きをコピー',
-        en: '3D View Point Copy & Paste — Copy the camera position and orientation of a 3D view',
+        ja: '視点合わせ — 3Dビューのカメラ位置・向きをコピー',
+        en: 'Match View — Copy the camera position and orientation of a 3D view',
         zh: '三维视点 复制＆粘贴 — 复制三维视图的相机位置和方向'
     },
     'manual-sectionbox-copy-related-cropbox': {
-        ja: 'トリミング領域 コピー＆ペースト — 平面図・断面図などのトリミング領域をコピー',
-        en: 'Crop Region Copy & Paste — Copy the crop region of floor plans, sections, etc.',
+        ja: 'トリミング領域合わせ — 平面図・断面図などのトリミング領域をコピー',
+        en: 'Match Crop Region — Copy the crop region of floor plans, sections, etc.',
         zh: '裁剪区域 复制＆粘贴 — 复制平面图、剖面图等的裁剪区域'
     },
     'manual-sectionbox-copy-related-viewport': {
         ja: 'ビューポート位置 コピー＆ペースト — シート上のビューポート位置をコピー',
-        en: 'Viewport Position Copy & Paste — Copy the viewport position on a sheet',
+        en: 'Align Viewports — Copy the viewport position on a sheet',
         zh: '视口位置 复制＆粘贴 — 复制图纸上的视口位置'
     }
 };
 
     // ========================================
-    // viewport-position.html (ビューポート位置コピペ)
+    // viewport-position.html (ビューポート位置合わせ)
     // ========================================
 translations.viewportPosition = {
     'manual-viewport-position-title': {
-        ja: 'ビューポート位置コピペ',
-        en: 'Viewport Position Copy & Paste',
-        zh: '视口位置复制粘贴'
+        ja: 'ビューポート位置合わせ',
+        en: 'Align Viewports',
+        zh: '对齐视口'
     },
     'manual-viewport-pos-subtitle': {
-        ja: 'シート上のビューポート位置をコピー＆ペースト',
-        en: 'Copy & paste viewport positions on sheets',
-        zh: '复制并粘贴图纸上的视口位置'
+        ja: 'シート上のビューポート位置を他のシートにそろえる',
+        en: 'Align viewport positions across sheets',
+        zh: '在图纸之间对齐视口位置'
     },
     'manual-viewport-pos-overview': {
         ja: 'シート上のビューポート位置をコピーして、他のシートの同名ビューポートに自動的に貼り付ける機能です。複数のシートで同じビュー（例: 各階の平面図）を同じ位置に揃えたいときに便利です。',
@@ -2012,9 +2017,9 @@ translations.viewportPosition = {
         zh: '相关功能'
     },
     'manual-viewport-pos-related1': {
-        ja: '3Dビュー視点 コピー＆ペースト',
-        en: '3D View Camera Copy & Paste',
-        zh: '3D视图视角复制粘贴'
+        ja: '視点合わせ',
+        en: 'Match View',
+        zh: '匹配视角'
     },
     'manual-viewport-pos-related1-desc': {
         ja: '3Dビューのカメラ位置・向きをコピー',
@@ -2022,9 +2027,9 @@ translations.viewportPosition = {
         zh: '复制3D视图的摄像机位置和方向'
     },
     'manual-viewport-pos-related2': {
-        ja: '切断ボックス コピー＆ペースト',
-        en: 'Section Box Copy & Paste',
-        zh: '剖面框复制粘贴'
+        ja: '切断ボックス合わせ',
+        en: 'Match Section Box',
+        zh: '匹配剖面框'
     },
     'manual-viewport-pos-related2-desc': {
         ja: '3Dビューのセクションボックス範囲をコピー',
@@ -2032,9 +2037,9 @@ translations.viewportPosition = {
         zh: '复制3D视图的剖面框范围'
     },
     'manual-viewport-pos-related3': {
-        ja: 'トリミング領域 コピー＆ペースト',
-        en: 'Crop Region Copy & Paste',
-        zh: '裁剪区域复制粘贴'
+        ja: 'トリミング領域合わせ',
+        en: 'Match Crop Region',
+        zh: '匹配裁剪区域'
     },
     'manual-viewport-pos-related3-desc': {
         ja: 'ビューのトリミング領域をコピー',
@@ -2099,18 +2104,18 @@ translations.viewportPosition = {
 };
 
     // ========================================
-    // cropbox-copy.html (トリミング領域コピペ)
+    // cropbox-copy.html (トリミング領域合わせ)
     // ========================================
 translations.cropboxCopy = {
     'manual-cropbox-copy-title': {
-        ja: 'トリミング領域コピペ',
-        en: 'Crop Region Copy & Paste',
-        zh: '裁剪区域复制粘贴'
+        ja: 'トリミング領域合わせ',
+        en: 'Match Crop Region',
+        zh: '匹配裁剪区域'
     },
     'manual-cropbox-copy-subtitle': {
-        ja: 'ビューのトリミング領域をコピー＆ペースト',
-        en: 'Copy & paste view crop regions',
-        zh: '复制并粘贴视图的裁剪区域'
+        ja: 'ビューのトリミング領域を別のビューに合わせる',
+        en: 'Match crop regions of other views',
+        zh: '匹配其他视图的裁剪区域'
     },
     'section-overview': {
         ja: '機能概要',
@@ -2253,9 +2258,9 @@ translations.cropboxCopy = {
         zh: '相关功能'
     },
     'manual-cropbox-copy-related1': {
-        ja: '3Dビュー視点 コピー＆ペースト',
-        en: '3D View Camera Copy & Paste',
-        zh: '3D视图视角复制粘贴'
+        ja: '視点合わせ',
+        en: 'Match View',
+        zh: '匹配视角'
     },
     'manual-cropbox-copy-related1-desc': {
         ja: '3Dビューのカメラ位置・向きをコピー',
@@ -2263,9 +2268,9 @@ translations.cropboxCopy = {
         zh: '复制3D视图的摄像机位置和方向'
     },
     'manual-cropbox-copy-related2': {
-        ja: '切断ボックス コピー＆ペースト',
-        en: 'Section Box Copy & Paste',
-        zh: '剖面框复制粘贴'
+        ja: '切断ボックス合わせ',
+        en: 'Match Section Box',
+        zh: '匹配剖面框'
     },
     'manual-cropbox-copy-related2-desc': {
         ja: '3Dビューのセクションボックス範囲をコピー',
@@ -2274,8 +2279,8 @@ translations.cropboxCopy = {
     },
     'manual-cropbox-copy-related3': {
         ja: 'ビューポート位置 コピー＆ペースト',
-        en: 'Viewport Position Copy & Paste',
-        zh: '视口位置复制粘贴'
+        en: 'Align Viewports',
+        zh: '对齐视口'
     },
     'manual-cropbox-copy-related3-desc': {
         ja: 'シート上のビューポート位置をコピー',
@@ -6802,24 +6807,24 @@ translations.filledRegion = {
             zh: '批量创建图纸 - 使用指定的标题栏一次创建多个图纸'
         },
         'about-tool3': {
-            ja: '3D視点コピペ - 3Dビューの視点を他のビューに反映',
-            en: '3D View Copy & Paste - Copy and paste 3D view orientation to other views',
-            zh: '3D视点复制粘贴 - 将3D视图视角复制并粘贴到其他视图'
+            ja: '視点合わせ - 3Dビューの視点を他のビューに反映',
+            en: 'Match View - Copy and paste 3D view orientation to other views',
+            zh: '匹配视角 - 将3D视图视角复制并粘贴到其他视图'
         },
         'about-tool4': {
-            ja: '切断ボックスコピペ - 3Dビューの切断ボックス範囲を反映',
-            en: 'Section Box Copy & Paste - Copy and paste 3D view section box range',
-            zh: '剖切框复制粘贴 - 复制并粘贴剖切框范围'
+            ja: '切断ボックス合わせ - 3Dビューの切断ボックス範囲を反映',
+            en: 'Match Section Box - Copy and paste 3D view section box range',
+            zh: '匹配剖面框 - 复制并粘贴剖切框范围'
         },
         'about-tool5': {
-            ja: 'ビューポート位置コピペ - シート上のビューポート位置を反映',
-            en: 'Viewport Position Copy & Paste - Copy and paste viewport positions on sheets',
-            zh: '视口位置复制粘贴 - 复制并粘贴视口位置'
+            ja: 'ビューポート位置合わせ - シート上のビューポート位置を反映',
+            en: 'Align Viewports - Copy and paste viewport positions on sheets',
+            zh: '对齐视口 - 复制并粘贴视口位置'
         },
         'about-tool6': {
-            ja: 'トリミング領域コピペ - ビューのトリミング領域を反映',
-            en: 'Crop Region Copy & Paste - Copy and paste view crop regions',
-            zh: '裁剪区域复制粘贴 - 复制并粘贴裁剪区域'
+            ja: 'トリミング領域合わせ - ビューのトリミング領域を反映',
+            en: 'Match Crop Region - Copy and paste view crop regions',
+            zh: '匹配裁剪区域 - 复制并粘贴裁剪区域'
         },
         'about-tool7': {
             ja: '部屋タグ自動配置 - ビューポートの部屋情報からタグを一括自動配置',
