@@ -257,6 +257,8 @@ function setupRecord() {
   const status = $('record-status');
 
   btn.addEventListener('click', async () => {
+    // --- API キー未設定（高精度版）: 録音せず、案内を見せる ---
+    if (btn.classList.contains('needs-key')) { showSetupStrip(); return; }
     // --- 停止（動作中のレコーダーに委譲） ---
     if (segRecorder.isRecording) { await stopGeminiLongRec(btn, status); return; }
     if (recorder.isRecording)    { await stopSimpleRec(btn, status); return; }
@@ -264,6 +266,16 @@ function setupRecord() {
     if (getMode() === 'gemini') await startGeminiLongRec(btn, status);
     else                        await startSimpleRec(btn, status);
   });
+}
+
+// キー未設定の案内を画面に入れて、目立たせる。
+function showSetupStrip() {
+  const strip = $('setup-strip');
+  if (!strip) return;
+  strip.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  strip.classList.remove('flash');
+  void strip.offsetWidth; // アニメーションを毎回やり直すため
+  strip.classList.add('flash');
 }
 
 // 録音ボタンの見た目を切替。待機時は丸（録音）、録音中は四角（停止）。
@@ -365,8 +377,14 @@ function updateSetupStrip() {
   const strip = $('setup-strip');
   if (strip) strip.classList.toggle('hidden', !needKey || recorder.isRecording || segRecorder.isRecording);
 
+  // 録音ボタンは disabled にしない（disabled だと押しても何も起きず、理由が分からない）。
+  // 見た目だけ灰色にし、押されたらキー入力の案内へ移動する（setupRecord）。
   const rec = $('record-btn');
-  if (rec) rec.disabled = needKey && !recorder.isRecording && !segRecorder.isRecording;
+  if (rec) {
+    const blocked = needKey && !recorder.isRecording && !segRecorder.isRecording;
+    rec.classList.toggle('needs-key', blocked);
+    rec.setAttribute('aria-disabled', blocked ? 'true' : 'false');
+  }
   const gen = $('generate-btn');
   if (gen) gen.disabled = needKey;
 
@@ -779,6 +797,10 @@ function setupDragDrop(dz, input) {
 /* ---------- 処理モード切替 ---------- */
 function setupModeSwitch() {
   const block = $('apikey-block');
+  if (LOCAL_AI_ENABLED) {
+    const r = document.querySelector('input[name="mode"][value="browser"]');
+    if (r) r.checked = true;
+  }
   document.querySelectorAll('input[name="mode"]').forEach(r => {
     r.addEventListener('change', () => {
       block.classList.toggle('hidden', getMode() !== 'gemini');

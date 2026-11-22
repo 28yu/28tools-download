@@ -260,7 +260,9 @@
 }
 .rec-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(39,174,96,0.36); }
 .rec-btn:active:not(:disabled) { transform: translateY(0) scale(0.98); }
-.rec-btn:disabled { cursor: not-allowed; background: #d7dee3; box-shadow: none; }
+.rec-btn:disabled,
+.rec-btn.needs-key { cursor: not-allowed; background: #d7dee3; box-shadow: none; }
+.rec-btn.needs-key:hover, .rec-btn.needs-key:active { transform: none; box-shadow: none; }
 .rec-glyph {
   width: 30px; height: 30px; border-radius: 50%; background: #fff;
   transition: border-radius 0.2s ease, width 0.2s ease, height 0.2s ease;
@@ -307,6 +309,8 @@
   border-radius: 10px; font-size: 0.84rem; color: var(--concrete-gray);
 }
 .blocker.hidden { display: none; }
+@keyframes blocker-flash { 0%, 100% { box-shadow: none; } 30%, 70% { box-shadow: 0 0 0 4px rgba(243,156,18,0.45); } }
+.blocker.flash { animation: blocker-flash 1.2s ease 2; }
 .blocker button {
   font: inherit; font-size: 0.84rem; font-weight: 600;
   background: none; border: none; color: var(--blueprint-blue);
