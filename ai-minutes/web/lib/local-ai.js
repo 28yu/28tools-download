@@ -395,7 +395,12 @@ export async function structureWithLocalAI(transcript, opts = {}) {
       results.push({ title: '', summary: '', ...h });
     }
   }
-  if (fallbacks === chunks.length) throw new Error(t('la-err-all'));
+  if (fallbacks === chunks.length) {
+    // GPU が途中で止まった場合などに備え、次回は AI を読み込み直す
+    if (runner.name === 'webllm') { _webllmEngine = null; _webllmModelId = null; }
+    if (runner.name === 'chrome') { _chromePrime = null; _chromePrimeLang = null; }
+    throw new Error(t('la-err-all'));
+  }
   if (fallbacks) onLog(t('la-chunk-fallback', { n: fallbacks }));
 
   const merged = mergeChunkResults(results);
