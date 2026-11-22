@@ -10,6 +10,12 @@ import { MicRecorder, SegmentedMicRecorder, MicTester, listMicrophones, onDevice
 import { SegmentSaver } from './lib/saver.js';
 import { mergeSegments, segmentLabel } from './lib/merge.js';
 import { readTranscriptFile } from './lib/transcript-files.js';
+import { structureWithLocalAI, primeChromeAI, detectLocalAI, detectTextLang } from './lib/local-ai.js';
+
+// 端末内 AI（試作）は URL に ?localai=1 を付けたときだけ有効にする。
+// 本番の利用者には従来どおりの簡易版（キーワード分類）が出る。
+const LOCAL_AI_ENABLED = new URLSearchParams(location.search).has('localai');
+const LOCAL_AI_STORE = 'ai-minutes-local-ai-engine';
 
 const $ = (id) => document.getElementById(id);
 const APIKEY_STORE = 'ai-minutes-gemini-key';
@@ -780,7 +786,67 @@ function setupModeSwitch() {
     });
   });
   block.classList.toggle('hidden', getMode() !== 'gemini');
+  setupLocalAIOptions();
 }
+
+/* ---------- 端末内 AI の選択（試作・?localai=1 のときだけ） ---------- */
+function setupLocalAIOptions() {
+  if (!LOCAL_AI_ENABLED) return;
+  const cards = document.querySelector('.mode-cards');
+  if (!cards || $('local-ai-opts')) return;
+  const box = document.createElement('div');
+  box.id = 'local-ai-opts';
+  box.className = 'local-ai-opts';
+  box.innerHTML = `
+    <label class="local-ai-label" for="local-ai-engine" id="local-ai-title"></label>
+    <select id="local-ai-engine" class="local-ai-select">
+      <option value="auto"></option>
+      <option value="quality"></option>
+      <option value="light"></option>
+      <option value="keyword"></option>
+    </select>
+    <p class="local-ai-status" id="local-ai-status"></p>
+    <p class="local-ai-note" id="local-ai-note"></p>`;
+  cards.insertAdjacentElement('afterend', box);
+
+  const sel = $('local-ai-engine');
+  try { const v = localStorage.getItem(LOCAL_AI_STORE); if (v) sel.value = v; } catch (e) { /* noop */ }
+  sel.addEventListener('change', () => {
+    try { localStorage.setItem(LOCAL_AI_STORE, sel.value); } catch (e) { /* noop */ }
+  });
+
+  const toggle = () => box.classList.toggle('hidden', getMode() !== 'browser');
+  document.querySelectorAll('input[name="mode"]').forEach(r => r.addEventListener('change', toggle));
+  toggle();
+  applyLocalAILang();
+}
+
+let _localAIDetect = null;
+function applyLocalAILang() {
+  if (!$('local-ai-opts')) return;
+  setText('local-ai-title', t('la-opt-title'));
+  setText('local-ai-note', t('la-opt-note'));
+  const sel = $('local-ai-engine');
+  ['auto', 'quality', 'light', 'keyword'].forEach((v, i) => { sel.options[i].textContent = t('la-opt-' + v); });
+
+  const status = $('local-ai-status');
+  status.textContent = t('la-detect-wait');
+  if (!_localAIDetect) _localAIDetect = detectLocalAI('ja');
+  _localAIDetect.then(({ chrome, webgpu }) => {
+    const lines = [];
+    if (chrome === 'available') lines.push(t('la-detect-chrome'));
+    else if (chrome === 'downloadable' || chrome === 'downloading') lines.push(t('la-detect-chrome-dl'));
+    if (webgpu) lines.push(t('la-detect-webgpu'));
+    status.textContent = lines.length ? lines.join(' / ') : t('la-detect-none');
+  });
+}
+
+function getLocalAIEngine() {
+  if (!LOCAL_AI_ENABLED) return 'keyword';
+  const sel = $('local-ai-engine');
+  return sel ? sel.value : 'auto';
+}
+
 const getMode = () => document.querySelector('input[name="mode"]:checked').value;
 
 /* ---------- API キー ---------- */
@@ -973,6 +1039,12 @@ async function generate() {
     return;
   }
 
+  // Chrome 内蔵 AI の初回ダウンロードは「クリック直後」でないと許可されないため、
+  // 文字起こしより先にセッション作成だけ始めておく。
+  if (mode !== 'gemini' && getLocalAIEngine() === 'auto') {
+    primeChromeAI(transcript.trim() ? detectTextLang(transcript) : 'ja', log);
+  }
+
   btn.disabled = true;
   logEl.textContent = '';
   setProgress(0);
@@ -1008,9 +1080,29 @@ async function generate() {
         fullText = (fullText ? fullText + '\n' : '') + asrText;
       }
       if (!fullText) throw new Error(t('tr-err-empty'));
-      showStatus(t('st-classifying'));
-      setProgress(90);
-      data = structureHeuristically(fullText);
+      data = null;
+      const engine = getLocalAIEngine();
+      if (engine !== 'keyword') {
+        showStatus(t('st-local-ai'));
+        const base = state.audioFile ? 80 : 10;
+        try {
+          const res = await structureWithLocalAI(fullText, {
+            engine,
+            onLog: log,
+            onProgress: (p) => setProgress(base + p * (95 - base) / 100),
+          });
+          if (res) data = res.data;
+          else log(t('la-unavailable'));
+        } catch (e) {
+          console.error(e);
+          log(t('la-failed', { msg: e.message }));
+        }
+      }
+      if (!data) {
+        showStatus(t('st-classifying'));
+        setProgress(90);
+        data = structureHeuristically(fullText);
+      }
     }
 
     setProgress(100);
@@ -1277,6 +1369,7 @@ function init() {
   window.addEventListener('28tools-langchange', (e) => {
     setLang((e && e.detail) || detectLang());
     applyDynamicLang();
+    applyLocalAILang();
   });
 
   applyDynamicLang();

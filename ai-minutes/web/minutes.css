@@ -449,6 +449,17 @@
   display: flex; align-items: center; gap: 8px;
 }
 .mode-card-desc { font-size: 0.85rem; color: var(--steel-blue); line-height: 1.6; }
+/* 端末内 AI の選択（試作・?localai=1 のときだけ表示） */
+.local-ai-opts {
+  margin-top: 14px; padding: 12px 14px;
+  border: 1px dashed var(--light-concrete); border-radius: 10px;
+  background: var(--glass-white);
+}
+.local-ai-opts.hidden { display: none; }
+.local-ai-label { display: block; font-weight: 700; color: var(--concrete-gray); font-size: 0.9rem; margin-bottom: 6px; }
+.local-ai-select { width: 100%; max-width: 100%; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--light-concrete); font-size: 0.9rem; background: #fff; }
+.local-ai-status { margin: 8px 0 0; font-size: 0.85rem; color: var(--concrete-gray); }
+.local-ai-note { margin: 4px 0 0; font-size: 0.8rem; color: var(--steel-blue); line-height: 1.6; }
 .badge {
   background: linear-gradient(135deg, var(--architect-green), var(--blueprint-blue));
   color: #fff; font-size: 0.7rem; padding: 2px 8px; border-radius: 999px; font-weight: 700;
