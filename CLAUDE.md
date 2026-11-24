@@ -1909,3 +1909,24 @@ X API は新規登録だと従量課金（無料枠なし）のため、**無料
 | アイコン | `images/revit-icons/viewport_match.png` / `view_match.png` / `sectionbox_match.png` を追加（アドイン側 `Resources/Icons/` と同じもの）。トリミング領域は `cropbox_copy.png` のまま |
 | トップ | 新着に `index-news-v28` |
 | 機能数 | 24 のまま（新機能なし） |
+
+---
+
+## 2026/11 セッション — セキュリティ対策と不正アクセスの記録
+
+| 対応 | 内容 |
+|--|--|
+| A. 外部プログラムの改ざん検知（SRI） | CDN の `<script>` に `integrity`（中身の指紋）を付けた。`marked`（マニュアル24ページ）は版数なしの最新版を読んでいたので **`marked@12.0.2` に固定**（焼き込み用 `scripts/build-manuals` と同じ 12 系）。dashboard の Chart.js は `4.5.1` に固定。ExcelJS・Tesseract の動的読み込みにも `s.integrity` を付けた |
+| B. CSP | 全ページの `<meta charset>` 直後に `object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io; upgrade-insecure-requests` |
+| C. 自動処理 | 全ワークフローの `actions/checkout` / `setup-node` を**コミット SHA で固定**。`ga4-sync.yml` に `permissions: contents: read`、書き込まないジョブは `persist-credentials: false`。`npm install` → `npm ci`（`scripts/ga4-sync/package-lock.json` を追加）。`auto-merge.yml` はブランチ名を `run:` に直接埋め込まず環境変数で渡す |
+| D. 不要ファイル | `temp/keeper.exe`（旧 Python 版 19MB）を削除。C# 版 `temp/keeper/` は残した |
+| E. 解析画面のログイン化 | `analytics/dashboard.html` を Supabase Auth（メール＋パスワード）に。読み取りは `admins` 名簿の人だけ（RLS）。旧「Anon Key を入力」方式は廃止 |
+| ③ 記録 | 表 `security_events` ＋関数 `log_security_event`。`js/main.js`「セキュリティ監視」（許可外ホストからのスクリプト・CSP 違反）、`404.html`（攻撃の下見・リンク切れ）、ログイン成功/失敗を記録。解析画面「🛡 セキュリティ」タブで表示 |
+
+- DB の設定は `scripts/security/`（1→2→3 の SQL と README）。**Supabase MCP（Supabase-28tools）は読み取り専用**なので、SQL はユーザーに SQL Editor で実行してもらう
+- ブラウザに置く鍵は `sb_publishable_...`（公開してよい鍵）。`js/main.js` と `404.html` と `dashboard.html` に書いてある
+- ⚠️ **新しい外部ライブラリ・サービスを使い始めたら**、`js/main.js` の `ALLOWED_SCRIPT_HOSTS` に追加する（しないと「許可外のプログラム」として記録され続ける）。CDN の `<script>` を追加するときは版数を固定して `integrity` を付ける
+  （指紋の計算: `curl -s <URL> | openssl dgst -sha384 -binary | base64 -w0` → `sha384-...`。cdnjs は `https://api.cdnjs.com/libraries/<名前>/<版>?fields=sri` に公式値がある）
+- ⚠️ `script-src`（読み込み先の制限）は CSP に**入れていない**。AdSense は読み込み先のドメインが変わるため、Google もドメインの列挙を推奨していない。代わりに「セキュリティ監視」で記録して見張る方式
+- 記録は `28tools.com` 上でだけ送る（ローカル・プレビューでは送らない）
+- PostgreSQL 16 がこの開発環境に入っているので、SQL は手元の DB（auth.users / auth.uid() / anon・authenticated ロールを模擬）で動作確認できる

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io; upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>ページが見つかりません - 28 Tools</title>
+    <link rel="icon" type="image/png" href="/images/site-icons/favicon-28.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .nf-wrap { max-width: 560px; margin: 80px auto; padding: 0 16px; text-align: center; }
+        .nf-code { font-size: 4rem; font-weight: 700; color: var(--blueprint-blue, #1f3a5f); margin: 0; }
+        .nf-wrap p { line-height: 1.8; }
+        .nf-wrap a { display: inline-block; margin-top: 16px; }
+    </style>
+</head>
+<body>
+    <main class="nf-wrap">
+        <p class="nf-code">404</p>
+        <h1>ページが見つかりません</h1>
+        <p>お探しのページは移動または削除された可能性があります。<br>
+           Page not found. / 找不到该页面。</p>
+        <a href="/">← 28 Tools のトップへ / Home</a>
+    </main>
+    <script>
+    // 存在しないページへのアクセスを記録する（解析画面の「セキュリティ」タブ）。
+    // 攻撃の下見でよく狙われる場所は probe、それ以外（リンク切れなど）は not_found。
+    // 記録先と鍵は js/main.js の「セキュリティ監視」と同じ。
+    (function () {
+        try {
+            if (['28tools.com', 'www.28tools.com'].indexOf(location.hostname) < 0) return;
+            var path = location.pathname + location.search;
+            var PROBE = /(wp-|wordpress|xmlrpc|\.php|\.env|\.git|\.aws|\.ssh|\.sql|\.bak|\.zip$|phpmyadmin|\/admin|cgi-bin|\/vendor\/|actuator|server-status|\/config|\/backup|\/\.)/i;
+            fetch('https://clyfrkwuajbauqxvrfyf.supabase.co/rest/v1/rpc/log_security_event', {
+                method: 'POST',
+                keepalive: true,
+                headers: { 'Content-Type': 'application/json', apikey: 'sb_publishable_rNShSVEwPcMVS2-aoi16Xw_VE9skQkm' },
+                body: JSON.stringify({
+                    p_kind: PROBE.test(path) ? 'probe' : 'not_found',
+                    p_page: location.pathname.slice(0, 300),
+                    p_detail: (location.search ? 'query=' + location.search.slice(0, 300) + ' ' : '') + 'referrer=' + (document.referrer || '-')
+                })
+            }).catch(function () {});
+        } catch (e) {}
+    })();
+    </script>
+</body>
+</html>

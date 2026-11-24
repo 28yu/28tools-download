@@ -15,27 +15,27 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
           fetch-depth: 0
 
       - name: Check if PR exists
         id: check-pr
         run: |
-          PR_EXISTS=$(gh pr list --head "${{ github.ref_name }}" --json number --jq 'length')
+          PR_EXISTS=$(gh pr list --head "$BRANCH_NAME" --json number --jq 'length')
           echo "pr_exists=$PR_EXISTS" >> $GITHUB_OUTPUT
           if [ "$PR_EXISTS" != "0" ]; then
-            PR_NUMBER=$(gh pr list --head "${{ github.ref_name }}" --json number --jq '.[0].number')
+            PR_NUMBER=$(gh pr list --head "$BRANCH_NAME" --json number --jq '.[0].number')
             echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: ${{ github.ref_name }}
 
       - name: Create PR
         id: create-pr
         if: steps.check-pr.outputs.pr_exists == '0'
         run: |
-          BRANCH_NAME="${{ github.ref_name }}"
           TITLE="Auto-merge: ${BRANCH_NAME}"
 
           PR_URL=$(gh pr create \
@@ -49,14 +49,15 @@ jobs:
           echo "Created PR #$PR_NUMBER"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: ${{ github.ref_name }}
 
       - name: Auto-merge PR
         run: |
           # PR番号を取得
-          if [ -n "${{ steps.create-pr.outputs.pr_number }}" ]; then
-            PR_NUMBER="${{ steps.create-pr.outputs.pr_number }}"
+          if [ -n "$CREATED_PR" ]; then
+            PR_NUMBER="$CREATED_PR"
           else
-            PR_NUMBER="${{ steps.check-pr.outputs.pr_number }}"
+            PR_NUMBER="$EXISTING_PR"
           fi
 
           if [ -z "$PR_NUMBER" ]; then
@@ -71,3 +72,5 @@ jobs:
           echo "PR #$PR_NUMBER merged successfully"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CREATED_PR: ${{ steps.create-pr.outputs.pr_number }}
+          EXISTING_PR: ${{ steps.check-pr.outputs.pr_number }}

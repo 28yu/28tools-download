@@ -2,10 +2,11 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io; upgrade-insecure-requests">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>28 Tools Analytics</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js" integrity="sha384-jb8JQMbMoBUzgWatfe6COACi2ljcDdZQ2OxczGA3bGNeWe+6DChMTBJemed7ZnvJ" crossorigin="anonymous"></script>
 <style>
   :root {
     --bg: #ecf0f1;
@@ -53,6 +54,14 @@
   #loading { text-align: center; padding: 80px 24px; font-size: 15px; color: var(--muted); }
   #loading::before { content: ''; display: block; width: 28px; height: 28px; margin: 0 auto 16px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
+  .kpi.red .kpi-value { color: var(--red); } .kpi.red::before { background: var(--red); }
+  #sec-banner { display:none; margin:12px 24px 0; padding:12px 16px; border-radius:8px; background:#fff4e5; border:1px solid #f0b46b; color:#8a4b00; font-size:13px; line-height:1.6; }
+  .sec-kind { display:inline-block; padding:2px 8px; border-radius:10px; font-size:11px; font-weight:600; white-space:nowrap; background:#eef2f7; color:#33475b; }
+  .sec-kind.k-probe, .sec-kind.k-login_failed, .sec-kind.k-unexpected_script { background:#fdecea; color:#b03a2e; }
+  .sec-kind.k-csp_violation { background:#fff4e5; color:#8a4b00; }
+  .sec-kind.k-login_success { background:#e8f6ef; color:#1e7e4f; }
+  .sec-detail { max-width:420px; word-break:break-all; font-family:monospace; font-size:11px; }
+  .auth-input { width:100%; background:#f7f9fb; border:1px solid var(--border); border-radius:6px; padding:10px 12px; color:var(--text); font-size:13px; outline:none; margin-bottom:10px; }
   #error-msg { display: none; text-align: center; padding: 40px 24px; color: var(--red); }
 
   /* 国旗（Windows は絵文字の国旗を描画できないため画像で表示する） */
@@ -161,9 +170,11 @@
     <button class="tab-btn active" onclick="switchTab('dl')">📥 ダウンロード</button>
     <button class="tab-btn" onclick="switchTab('pv')">👁 ページビュー</button>
     <button class="tab-btn" onclick="switchTab('tool')">🔧 ツール利用</button>
+    <button class="tab-btn" onclick="switchTab('sec')">🛡 セキュリティ</button>
   </nav>
 </div>
 
+<div id="sec-banner"></div>
 <div id="loading">データを読み込んでいます...</div>
 <div id="error-msg"></div>
 
@@ -374,13 +385,110 @@
   </div>
 </div>
 
+<!-- ===== セキュリティ タブ ===== -->
+<div id="tab-sec" class="tab-pane">
+  <div class="kpi-row">
+    <div class="kpi red"><div class="kpi-label">直近24時間の記録</div><div class="kpi-value" id="kpi-sec-24h">-</div><div class="kpi-sub">回数の合計</div></div>
+    <div class="kpi yellow"><div class="kpi-label">直近7日の記録</div><div class="kpi-value" id="kpi-sec-7d">-</div><div class="kpi-sub">回数の合計</div></div>
+    <div class="kpi red"><div class="kpi-label">攻撃の下見（30日）</div><div class="kpi-value" id="kpi-sec-probe">-</div><div class="kpi-sub">/wp-admin・/.env など</div></div>
+    <div class="kpi purple"><div class="kpi-label">ログイン失敗（30日）</div><div class="kpi-value" id="kpi-sec-loginfail">-</div><div class="kpi-sub">この解析画面</div></div>
+    <div class="kpi green"><div class="kpi-label">最後のログイン</div><div class="kpi-value" id="kpi-sec-lastlogin" style="font-size:16px">-</div><div class="kpi-sub" id="kpi-sec-lastlogin-sub">-</div></div>
+  </div>
+  <div class="chart-full">
+    <h3>記録の一覧（新しい順・最大300件）</h3>
+    <p style="color:var(--muted);font-size:12px;line-height:1.7;margin:4px 0 12px">
+      同じ内容は1時間ごとに1行へまとめ、「回数」で数えています。IP アドレスは末尾を伏せています。<br>
+      <b>許可外のプログラム</b>＝サイトが読み込む予定のない場所からプログラムが読み込まれた（改ざん・広告・<u>閲覧者のブラウザ拡張機能</u>のいずれか。同じ内容が多数の人で出ていたら要確認）／
+      <b>読み込みブロック</b>＝禁止している読み込み・送信をブラウザが止めた／
+      <b>攻撃の下見</b>＝攻撃でよく狙われる場所へのアクセス（このサイトには存在しないので被害はない）／
+      <b>存在しないページ</b>＝リンク切れなど
+    </p>
+    <table class="data-table">
+      <thead><tr><th>最後に起きた日時</th><th>種類</th><th>回数</th><th>ページ</th><th>内容</th><th>国</th><th>IP（伏せ字）</th><th>ブラウザ</th></tr></thead>
+      <tbody id="sec-table"><tr><td colspan="8" style="color:var(--muted)">読み込み中...</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
 <script>
 const SUPABASE_URL = 'https://clyfrkwuajbauqxvrfyf.supabase.co';
-let SUPABASE_ANON  = localStorage.getItem('28tools_anon_key') || '';
+// ブラウザ用の「公開してよい鍵」。これだけではデータは読めない
+// （読み取りは「ログイン」＋「管理者の名簿 admins」で制限。scripts/security/*.sql）
+const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_rNShSVEwPcMVS2-aoi16Xw_VE9skQkm';
+const AUTH_STORE = '28tools_auth';
+let authSession = null;   // { access_token, refresh_token, expires_at, email }
+let publicReadOpen = false; // 移行途中で「誰でも読める」許可が残っているか
+// 旧方式（キーを入力して保存）の名残は消す
+try { localStorage.removeItem('28tools_anon_key'); } catch(_) {}
 
-if (location.search.includes('reset')) {
-  localStorage.removeItem('28tools_anon_key');
-  SUPABASE_ANON = '';
+function loadSession() { try { return JSON.parse(localStorage.getItem(AUTH_STORE) || 'null'); } catch(_) { return null; } }
+function saveSession(sess) {
+  authSession = sess;
+  try { sess ? localStorage.setItem(AUTH_STORE, JSON.stringify(sess)) : localStorage.removeItem(AUTH_STORE); } catch(_) {}
+}
+async function authToken(grant, body) {
+  const res = await fetch(`${SUPABASE_URL}/auth/v1/token?grant_type=${grant}`, {
+    method: 'POST',
+    headers: { apikey: SUPABASE_PUBLISHABLE_KEY, 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+  const j = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(j.error_description || j.msg || j.message || ('HTTP ' + res.status));
+  return { access_token: j.access_token, refresh_token: j.refresh_token,
+           expires_at: Date.now() + (j.expires_in || 3600) * 1000, email: (j.user && j.user.email) || '' };
+}
+let refreshing = null;
+async function getAccessToken() {
+  if (!authSession) return null;
+  if (Date.now() < authSession.expires_at - 60000) return authSession.access_token;
+  // 期限切れ間近なら更新（同時に何本も更新しないよう1本にまとめる）
+  if (!refreshing) {
+    refreshing = authToken('refresh_token', { refresh_token: authSession.refresh_token })
+      .then(s => { saveSession(Object.assign(s, { email: s.email || authSession.email })); })
+      .catch(() => { saveSession(null); })
+      .finally(() => { refreshing = null; });
+  }
+  await refreshing;
+  return authSession ? authSession.access_token : null;
+}
+async function supaHeaders() {
+  const h = { apikey: SUPABASE_PUBLISHABLE_KEY };
+  const t = await getAccessToken();
+  if (t) h.Authorization = 'Bearer ' + t;
+  return h;
+}
+async function supaRpc(fn, args) {
+  const h = await supaHeaders();
+  h['Content-Type'] = 'application/json';
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/${fn}`, { method: 'POST', headers: h, body: JSON.stringify(args || {}) });
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  const txt = await res.text();
+  return txt ? JSON.parse(txt) : null;
+}
+function logSec(kind, detail) {
+  supaRpc('log_security_event', { p_kind: kind, p_page: location.pathname, p_detail: detail || null }).catch(() => {});
+}
+// メールアドレスは伏せて記録する（例: a***@example.com）
+function maskEmail(e) {
+  const m = String(e || '').match(/^(.)[^@]*(@.*)?$/);
+  return m ? m[1] + '***' + (m[2] || '') : '';
+}
+// ログインしていない状態で訪問記録が読めるか（＝誰でも読める状態か）
+async function checkPublicRead() {
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/downloads?select=id&limit=1`, { headers: { apikey: SUPABASE_PUBLISHABLE_KEY } });
+    if (!res.ok) return false;
+    return (await res.json()).length > 0;
+  } catch(_) { return false; }
+}
+function showSecBanner(html) {
+  const b = document.getElementById('sec-banner');
+  if (!html) { b.style.display = 'none'; return; }
+  b.innerHTML = html; b.style.display = 'block';
+}
+
+if (location.search.includes('reset') || location.search.includes('logout')) {
+  saveSession(null);
   history.replaceState(null, '', location.pathname);
 }
 
@@ -752,11 +860,12 @@ async function supaFetch(table, select, orderBy = 'ts.desc') {
   // 並び順の値が同じ行があるとページ間で取りこぼし/重複が起きるため、id を第2キーにする
   const order = orderBy + ',id.desc';
   const all = [];
+  const headers = await supaHeaders();
   while (all.length < SUPA_MAX_ROWS) {
     const offset = all.length;
     const res = await fetch(
       `${SUPABASE_URL}/rest/v1/${table}?select=${select}&order=${order}&limit=${SUPA_PAGE_SIZE}&offset=${offset}`,
-      { headers: { apikey: SUPABASE_ANON, Authorization: 'Bearer ' + SUPABASE_ANON } }
+      { headers }
     );
     if (!res.ok) {
       let detail = '';
@@ -1444,10 +1553,12 @@ function renderToolTrendChart(days) {
 let toolRendered = false;
 function switchTab(tab) {
   try { localStorage.setItem('28tools_active_tab', tab); } catch(_) {}
-  document.querySelectorAll('.tab-btn').forEach((b,i) => b.classList.toggle('active', (i===0&&tab==='dl')||(i===1&&tab==='pv')||(i===2&&tab==='tool')));
+  document.querySelectorAll('.tab-btn').forEach((b,i) => b.classList.toggle('active', ['dl','pv','tool','sec'][i] === tab));
   document.getElementById('tab-dl').classList.toggle('active', tab==='dl');
   document.getElementById('tab-pv').classList.toggle('active', tab==='pv');
   document.getElementById('tab-tool').classList.toggle('active', tab==='tool');
+  document.getElementById('tab-sec').classList.toggle('active', tab==='sec');
+  if (tab==='sec') { if (secLoaded) renderSecurity(); else loadSecurity(); }
   if (tab==='pv' && (allPVReal.length || allGA4.length)) renderPV(allPVReal);
   if (tab==='tool' && allPV.length) { renderTool(allPV); toolRendered=true; }
 }
@@ -1460,51 +1571,120 @@ function toggleRaw(wrapId, btn) {
   btn.textContent = (visible ? '▶' : '▼') + ' 生データを表示';
 }
 
-// ---- Key modal ----
-function showKeyModal(msg) {
+// ---- Login ----
+function showLoginModal(msg) {
+  if (document.getElementById('login-overlay')) return;
+  document.getElementById('loading').style.display = 'none';
   const overlay = document.createElement('div');
+  overlay.id = 'login-overlay';
   overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;z-index:999';
-  const storedHint = localStorage.getItem('28tools_anon_key');
-  const hintHtml = storedHint
-    ? `<p style="color:#b7791f;font-size:11px;margin-bottom:10px;word-break:break-all">現在保存中: ${storedHint.slice(0,20)}…${storedHint.slice(-8)} (${storedHint.length}文字)</p>`
-    : '';
   overlay.innerHTML = `
-    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:32px;width:480px;max-width:90vw;box-shadow:var(--shadow-hover)">
-      <h2 style="font-size:16px;margin-bottom:8px">🔑 Supabase Anon Key</h2>
-      <p style="color:var(--muted);font-size:13px;margin-bottom:12px">${msg}</p>
-      ${hintHtml}
-      <input id="key-input" type="text" placeholder="sb_publishable_xxxx... または eyJhbG..." autocomplete="off"
-        style="width:100%;background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:10px 12px;color:var(--text);font-size:12px;font-family:monospace;outline:none;margin-bottom:8px">
-      <p style="color:var(--muted);font-size:11px;margin-bottom:12px">Supabase → Project Settings → API → <strong style="color:var(--text)">Publishable key</strong></p>
+    <form id="login-form" style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:32px;width:420px;max-width:90vw;box-shadow:var(--shadow-hover)">
+      <h2 style="font-size:16px;margin-bottom:8px">🔒 解析画面にログイン</h2>
+      <p style="color:var(--muted);font-size:13px;margin-bottom:14px;line-height:1.6">${msg || '運営者のアカウントでログインしてください。'}</p>
+      <input id="login-email" class="auth-input" type="email" placeholder="メールアドレス" autocomplete="username" required>
+      <input id="login-pass" class="auth-input" type="password" placeholder="パスワード" autocomplete="current-password" required>
+      <p id="login-err" style="color:var(--red);font-size:12px;min-height:18px;margin-bottom:8px"></p>
       <div style="display:flex;gap:8px;justify-content:flex-end">
-        <button id="key-cancel" style="background:none;border:1px solid var(--border);color:var(--muted);padding:8px 16px;border-radius:6px;cursor:pointer">キャンセル</button>
-        <button id="key-save" style="background:var(--accent);border:none;color:#fff;padding:8px 16px;border-radius:6px;cursor:pointer;font-weight:600">保存して読み込む</button>
+        ${publicReadOpen ? '<button id="login-close" type="button" style="background:none;border:1px solid var(--border);color:var(--muted);padding:8px 16px;border-radius:6px;cursor:pointer">閉じる</button>' : ''}
+        <button id="login-btn" type="submit" style="background:var(--accent);border:none;color:#fff;padding:8px 20px;border-radius:6px;cursor:pointer;font-weight:600">ログイン</button>
       </div>
-    </div>`;
+    </form>`;
   document.body.appendChild(overlay);
-  document.getElementById('key-input').focus();
-  document.getElementById('key-cancel').onclick = () => {
-    overlay.remove();
-    document.getElementById('loading').textContent = 'キャンセルしました。';
+  document.getElementById('login-email').focus();
+  const closeBtn = document.getElementById('login-close');
+  if (closeBtn) closeBtn.onclick = () => overlay.remove();
+  document.getElementById('login-form').onsubmit = async (ev) => {
+    ev.preventDefault();
+    const email = document.getElementById('login-email').value.trim();
+    const pass  = document.getElementById('login-pass').value;
+    const btn = document.getElementById('login-btn');
+    const err = document.getElementById('login-err');
+    btn.disabled = true; err.textContent = '確認しています...';
+    try {
+      saveSession(await authToken('password', { email, password: pass }));
+      logSec('login_success', maskEmail(email));
+      overlay.remove();
+      await start();
+    } catch (e) {
+      logSec('login_failed', maskEmail(email));
+      err.textContent = /invalid login credentials/i.test(e.message)
+        ? 'メールアドレスかパスワードが違います。'
+        : 'ログインできませんでした（' + e.message + '）';
+      btn.disabled = false;
+    }
   };
-  document.getElementById('key-save').onclick = async () => {
-    const val = document.getElementById('key-input').value.trim();
-    if (!val) return;
-    SUPABASE_ANON = val;
-    localStorage.setItem('28tools_anon_key', val);
-    overlay.remove();
-    await init();
-  };
+}
+
+async function logout() {
+  try {
+    const t = await getAccessToken();
+    if (t) await fetch(`${SUPABASE_URL}/auth/v1/logout`, { method: 'POST', headers: { apikey: SUPABASE_PUBLISHABLE_KEY, Authorization: 'Bearer ' + t } });
+  } catch(_) {}
+  saveSession(null);
+  location.reload();
 }
 
 function addResetButton() {
   if (document.getElementById('key-reset-btn')) return;
   const btn = document.createElement('button');
   btn.id = 'key-reset-btn';
-  btn.textContent = '🔑 キー変更';
+  btn.textContent = authSession ? '🔓 ログアウト（' + (authSession.email || '') + '）' : '🔒 ログイン';
   btn.style.cssText = 'background:none;border:1px solid var(--border);color:var(--muted);padding:4px 10px;border-radius:6px;cursor:pointer;font-size:11px';
-  btn.onclick = () => { localStorage.removeItem('28tools_anon_key'); SUPABASE_ANON = ''; showKeyModal('新しい Anon Key を入力してください。'); };
+  btn.onclick = () => authSession ? logout() : showLoginModal();
   document.getElementById('last-updated').appendChild(btn);
+}
+
+// ---- Security tab ----
+const SEC_KIND_LABELS = {
+  unexpected_script: '許可外のプログラム',
+  csp_violation:     '読み込みブロック',
+  probe:             '攻撃の下見',
+  not_found:         '存在しないページ',
+  login_failed:      'ログイン失敗',
+  login_success:     'ログイン成功',
+};
+let allSec = [];
+let secLoaded = false;
+async function loadSecurity() {
+  const tbody = document.getElementById('sec-table');
+  try {
+    allSec = await supaFetch('security_events', '*', 'last_seen.desc');
+    secLoaded = true;
+  } catch (e) {
+    tbody.innerHTML = `<tr><td colspan="8" style="color:var(--muted)">記録を読めませんでした（${esc(e.message)}）。scripts/security/1-setup.sql が未実行の可能性があります。</td></tr>`;
+    return;
+  }
+  renderSecurity();
+}
+function renderSecurity() {
+  const now = Date.now();
+  const sumHits = (rows) => rows.reduce((a, r) => a + (r.hits || 1), 0);
+  const since = (ms) => allSec.filter(r => now - new Date(r.last_seen).getTime() <= ms);
+  const d30 = since(30 * 86400000);
+  document.getElementById('kpi-sec-24h').textContent = sumHits(since(86400000)).toLocaleString();
+  document.getElementById('kpi-sec-7d').textContent  = sumHits(since(7 * 86400000)).toLocaleString();
+  document.getElementById('kpi-sec-probe').textContent     = sumHits(d30.filter(r => r.kind === 'probe')).toLocaleString();
+  document.getElementById('kpi-sec-loginfail').textContent = sumHits(d30.filter(r => r.kind === 'login_failed')).toLocaleString();
+  const lastLogin = allSec.find(r => r.kind === 'login_success');
+  document.getElementById('kpi-sec-lastlogin').textContent = lastLogin ? new Date(lastLogin.last_seen).toLocaleString('ja-JP') : '-';
+  document.getElementById('kpi-sec-lastlogin-sub').textContent = lastLogin ? [countryLabel(toCountryCode(lastLogin.country) || lastLogin.country || ''), lastLogin.ip_masked].filter(Boolean).join(' / ') : '記録なし';
+  const tbody = document.getElementById('sec-table');
+  if (!allSec.length) {
+    tbody.innerHTML = '<tr><td colspan="8" style="color:var(--muted)">まだ記録はありません。</td></tr>';
+    return;
+  }
+  tbody.innerHTML = allSec.slice(0, 300).map(r => `
+    <tr>
+      <td style="white-space:nowrap">${esc(new Date(r.last_seen).toLocaleString('ja-JP'))}</td>
+      <td><span class="sec-kind k-${esc(r.kind)}">${esc(SEC_KIND_LABELS[r.kind] || r.kind)}</span></td>
+      <td style="text-align:right">${esc(r.hits)}</td>
+      <td class="sec-detail">${esc(r.page)}</td>
+      <td class="sec-detail">${esc(r.detail)}</td>
+      <td>${esc(r.country)}</td>
+      <td style="font-family:monospace;font-size:11px">${esc(r.ip_masked)}</td>
+      <td class="sec-detail" title="${esc(r.ua)}">${esc(String(r.ua || '').slice(0, 60))}</td>
+    </tr>`).join('');
 }
 
 // ---- Init ----
@@ -1516,6 +1696,8 @@ async function init() {
   errMsg.style.display = 'none';
   document.getElementById('tab-dl').classList.remove('active');
   document.getElementById('tab-pv').classList.remove('active');
+  document.getElementById('tab-sec').classList.remove('active');
+  secLoaded = false;
   try {
     [[allDL, allPV, allGA4], ghStats] = await Promise.all([
       Promise.all([
@@ -1564,14 +1746,13 @@ async function init() {
     // リロード時は前回開いていたタブを復元（更新でダウンロードに戻らないように）
     let savedTab = 'dl';
     try { savedTab = localStorage.getItem('28tools_active_tab') || 'dl'; } catch(_) {}
-    if (['pv','tool'].includes(savedTab)) switchTab(savedTab);
+    if (['pv','tool','sec'].includes(savedTab)) switchTab(savedTab);
   } catch (e) {
     loading.style.display = 'none';
     console.error(e);
     if (e.message.includes('401')) {
-      localStorage.removeItem('28tools_anon_key');
-      SUPABASE_ANON = '';
-      showKeyModal('認証エラー (401)。正しい <strong>Publishable key</strong> を入力してください。<br><small style="color:#f87171">' + e.message + '</small>');
+      saveSession(null);
+      showLoginModal('ログインの有効期限が切れました。もう一度ログインしてください。');
     } else {
       errMsg.textContent = 'エラー: ' + e.message;
       errMsg.style.display = 'block';
@@ -1579,14 +1760,27 @@ async function init() {
   }
 }
 
-(async () => {
-  if (!SUPABASE_ANON) {
-    document.getElementById('loading').style.display = 'none';
-    showKeyModal('Supabase の <strong>Publishable key（anon key）</strong> を入力してください。<br>ブラウザに保存されるため、次回以降は不要です。');
-  } else {
-    await init();
+async function start() {
+  authSession = authSession || loadSession();
+  if (authSession && !(await getAccessToken())) authSession = null; // 更新に失敗＝ログアウト扱い
+  publicReadOpen = await checkPublicRead();
+  if (!authSession && !publicReadOpen) { showLoginModal(); return; }
+  if (authSession) {
+    let admin = false;
+    try { admin = await supaRpc('is_admin'); } catch(_) {}
+    if (!admin && !publicReadOpen) {
+      showLoginModal('このアカウントは管理者の名簿に入っていません（scripts/security/2-add-admin.sql）。');
+      return;
+    }
   }
-})();
+  showSecBanner(publicReadOpen
+    ? '⚠ <b>訪問記録がまだ「誰でも読める」状態です。</b>' + (authSession
+        ? 'ログインできたので、Supabase の SQL Editor で <code>scripts/security/3-close-public-read.sql</code> を実行して閉じてください。'
+        : 'Supabase で <code>scripts/security/</code> の手順（1→2→3）を進めてください。右上の「ログイン」から管理者アカウントで入れます。')
+    : '');
+  await init();
+}
+start();
 </script>
 </body>
 </html>

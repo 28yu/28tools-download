@@ -20,6 +20,9 @@ async function loadTesseract() {
   await new Promise((resolve, reject) => {
     const s = document.createElement('script');
     s.src = 'https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';
+    // 改ざん検知（SRI）: CDN の中身が変わっていたら読み込まない
+    s.integrity = 'sha384-GJqSu7vueQ9qN0E9yLPb3Wtpd7OrgK8KmYzC8T1IysG1bcvxvIO4qtYR/D3A991F';
+    s.crossOrigin = 'anonymous';
     s.onload = resolve;
     s.onerror = reject;
     document.head.appendChild(s);

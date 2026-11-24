@@ -15,6 +15,9 @@ async function loadExcelJs() {
     if (window.ExcelJS) return resolve(window.ExcelJS);
     const s = document.createElement('script');
     s.src = 'https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js';
+    // 改ざん検知（SRI）: CDN の中身が変わっていたら読み込まない
+    s.integrity = 'sha384-Pqp51FUN2/qzfxZxBCtF0stpc9ONI6MYZpVqmo8m20SoaQCzf+arZvACkLkirlPz';
+    s.crossOrigin = 'anonymous';
     s.onload = () => resolve(window.ExcelJS);
     s.onerror = reject;
     document.head.appendChild(s);
