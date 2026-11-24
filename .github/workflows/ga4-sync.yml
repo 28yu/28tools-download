@@ -15,6 +15,10 @@ on:
         required: false
         default: ''
 
+# 最小権限: このワークフローはリポジトリを読むだけ（書き込み権限は渡さない）
+permissions:
+  contents: read
+
 # 同時実行を防ぐ（手動バックフィルと日次が重ならないように）
 concurrency:
   group: ga4-sync
@@ -25,16 +29,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '20'
 
       - name: Install dependencies
         working-directory: scripts/ga4-sync
-        run: npm install
+        run: npm ci --no-audit --no-fund
 
       - name: Run GA4 sync
         working-directory: scripts/ga4-sync

@@ -6444,6 +6444,11 @@ translations.filledRegion = {
             en: 'Responding to inquiries',
             zh: '回复咨询'
         },
+        'privacy-purpose-item5': {
+            ja: '不正アクセスの検知・防止（不審なアクセスがあった場合に限り、匿名化したIPアドレス・ブラウザの種類・アクセス先を記録します）',
+            en: 'Detecting and preventing unauthorized access (only when suspicious access occurs, we record the anonymized IP address, browser type and the page accessed)',
+            zh: '检测和防止非法访问（仅在出现可疑访问时，记录匿名化的IP地址、浏览器类型和访问页面）'
+        },
         'privacy-section-thirdparty': {
             ja: '第三者への情報提供',
             en: 'Third-Party Disclosure',
@@ -6490,9 +6495,9 @@ translations.filledRegion = {
             zh: '有关本隐私政策的咨询，请通过联系页面与我们联系。'
         },
         'privacy-lastupdate': {
-            ja: '最終更新日：2026年1月27日',
-            en: 'Last updated: January 27, 2026',
-            zh: '最后更新：2026年1月27日'
+            ja: '最終更新日：2026年11月24日',
+            en: 'Last updated: November 24, 2026',
+            zh: '最后更新：2026年11月24日'
         }
     };
 
@@ -9612,6 +9617,71 @@ function logToolEvent(eventType) {
         }
     } catch (e) {}
 }
+
+// ===== セキュリティ監視（2026/11）=====
+// サイトで「普段は起きないこと」が起きたら Supabase の security_events に記録する。
+// 解析画面（analytics/dashboard.html）の「セキュリティ」タブで見られる。
+//   unexpected_script … 許可していない場所からプログラムが読み込まれた（改ざんの兆候）
+//   csp_violation     … ページの CSP（読み込み・送信の禁止ルール）にブラウザが違反を検知した
+//   not_found / probe … 存在しないページへのアクセス（404.html から呼ぶ）
+// 記録は Supabase の関数 log_security_event 経由のみ（scripts/security/1-setup.sql）。
+// この鍵は「公開してよい鍵」で、記録の書き込み（関数の実行）しかできない。
+const SECURITY_LOG_URL = 'https://clyfrkwuajbauqxvrfyf.supabase.co/rest/v1/rpc/log_security_event';
+const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_rNShSVEwPcMVS2-aoi16Xw_VE9skQkm';
+const SECURITY_LOG_HOSTS = ['28tools.com', 'www.28tools.com']; // 開発中・プレビューでは送らない
+
+const _secSent = new Set();
+function logSecurityEvent(kind, detail) {
+    try {
+        if (!SECURITY_LOG_HOSTS.includes(location.hostname)) return;
+        const d = String(detail || '').slice(0, 1000);
+        const key = kind + '|' + d;
+        if (_secSent.has(key) || _secSent.size >= 10) return; // 1ページで同じ内容は1回・最大10件
+        _secSent.add(key);
+        fetch(SECURITY_LOG_URL, {
+            method: 'POST',
+            keepalive: true,
+            headers: { 'Content-Type': 'application/json', apikey: SUPABASE_PUBLISHABLE_KEY },
+            body: JSON.stringify({ p_kind: kind, p_page: location.pathname, p_detail: d || null }),
+        }).catch(() => {});
+    } catch (e) {}
+}
+window.logSecurityEvent = logSecurityEvent;
+
+// サイトがプログラムを読み込んでよい場所（ドメインの末尾で判定）
+// 新しい外部ライブラリ・サービスを使い始めたら、ここに追加する
+const ALLOWED_SCRIPT_HOSTS = [
+    'cdn.jsdelivr.net', 'cdnjs.cloudflare.com', 'unpkg.com', 'esm.run', 'esm.sh',
+    'googletagmanager.com', 'google-analytics.com',                     // Google アナリティクス
+    'googlesyndication.com', 'doubleclick.net', 'googleadservices.com', // AdSense
+    'adtrafficquality.google', 'gstatic.com', 'googleapis.com',
+    'huggingface.co',                                                    // AI議事録（簡易版・端末内AI）
+];
+function isAllowedScriptHost(host) {
+    if (!host || host === location.hostname) return true;
+    if (/(^|\.)google\.[a-z.]+$/.test(host)) return true; // www.google.com / adservice.google.co.jp など
+    return ALLOWED_SCRIPT_HOSTS.some(h => host === h || host.endsWith('.' + h));
+}
+function checkScriptEntry(entry) {
+    try {
+        if (entry.initiatorType !== 'script') return;
+        const u = new URL(entry.name, location.href);
+        if (!/^https?:$/.test(u.protocol)) return;          // 拡張機能（chrome-extension:// 等）は対象外
+        if (isAllowedScriptHost(u.hostname)) return;
+        logSecurityEvent('unexpected_script', u.origin + u.pathname);
+    } catch (e) {}
+}
+try {
+    if (window.PerformanceObserver) {
+        const po = new PerformanceObserver(list => list.getEntries().forEach(checkScriptEntry));
+        po.observe({ type: 'resource', buffered: true }); // buffered: このファイルより前の読み込みも確認する
+    }
+} catch (e) {}
+
+// CSP 違反（ページの <meta http-equiv="Content-Security-Policy"> で禁止したことが起きた）
+document.addEventListener('securitypolicyviolation', function (e) {
+    logSecurityEvent('csp_violation', (e.effectiveDirective || e.violatedDirective || '') + ' ' + (e.blockedURI || ''));
+});
 
 // ダウンロードを開始する
 // 2026/08: パスワードゲートを廃止。js/main.js に平文で置かれた合言葉は認証として
